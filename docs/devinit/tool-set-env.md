@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 7bb545a8e8713159d6833f0ed8d8c2b8784095e1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862843"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959765"
 ---
 # <a name="set-env"></a>set-env
 
 L' `set-env` outil peut être utilisé pour définir des variables d’environnement à utiliser dans le processus actuel. Les variables d’environnement sont définies uniquement dans le processus actuel et seront utilisées par d’autres `devinit` outils si elles s’exécutent dans ce processus.
 
-Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente les mêmes limitations que cette API. Pour plus d’informations, consultez la [documentation](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1) de `Environment.SetEnvironment` .
+Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente les mêmes limitations que cette API. Pour plus d’informations, consultez la [documentation](/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true) de `Environment.SetEnvironment` .
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 | Nom                                         | Type   | Obligatoire | Valeur                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|

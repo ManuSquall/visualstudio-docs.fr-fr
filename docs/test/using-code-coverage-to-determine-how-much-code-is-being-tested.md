@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585598"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959773"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -32,7 +32,7 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 ::: moniker-end
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
@@ -272,7 +272,7 @@ Vous pouvez exercer davantage de contrôle sur les assemblys et les éléments s
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analyse de la couverture du code dans Azure Pipelines
 
-Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec les tests des autres membres de l’équipe. Il est utile d’analyser la couverture du code dans Azure Pipelines, car cela permet d’obtenir l’image la plus récente et la plus complète possible de la couverture sur la totalité du projet. Cette analyse comporte également des tests système automatisés et d’autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement. Pour plus d’informations, voir [Exécuter des tests unitaires avec des builds](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
+Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec les tests des autres membres de l’équipe. Il est utile d’analyser la couverture du code dans Azure Pipelines, car cela permet d’obtenir l’image la plus récente et la plus complète possible de la couverture sur la totalité du projet. Cette analyse comporte également des tests système automatisés et d’autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement. Pour plus d’informations, voir [Exécuter des tests unitaires avec des builds](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analyser la couverture du code depuis la ligne de commande
 

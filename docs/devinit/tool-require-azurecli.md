@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 22029dc101cd73fee3933c5c63587f2f7222e640
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3f9fbec93d9c27ae7bdcb6ea44f59debb2a03a14
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860846"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959812"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
-L' `require-azurecli` outil est utilisé pour installer le [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest) via le Azure CLI msi.
+L' `require-azurecli` outil est utilisé pour installer le [Azure CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true) via le Azure CLI msi.
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 

@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a14830e39cf39f0228fcb0e468df779f35f08ebe
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 1b5c3c478f275dac7512c4b3ada9871fe69b0f0e
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860721"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959792"
 ---
 # <a name="require-mssql"></a>require-mssql
 
 L' `require-mssql` outil est utilisé pour installer [Microsoft SQL Server édition développeur 2019](https://www.microsoft.com/sql-server/application-development) à partir de l’aide de l’ISO de MS SQL Server. SQL Server sera disponible sur `localhost` l’authentification Windows intégrée. SQL Server sera accessible avec la chaîne de connexion `"Server=localhost;Integrated Security=true;"` .
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
@@ -36,7 +36,7 @@ Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’out
 
 La `input` propriété peut être une chaîne avec l’une des deux valeurs suivantes :
 
-| Valeur     | Description                              |
+| Value     | Description                              |
 |-----------|------------------------------------------|
 | installer   | Installe SQL Server.                     |
 | uninstall | Désinstalle toutes les installations de SQL Server. |
@@ -51,7 +51,7 @@ Le comportement par défaut de l' `require-mssql` outil consiste à installer SQ
 
 ### <a name="builtin-options"></a>Options builtin
 
-L' `require-mssql` outil définit un certain nombre d’arguments de ligne de commande du programme d’installation pour s’assurer que le programme d’installation peut s’exécuter sans écran. Ces arguments sont répertoriés ci-dessous et leur documentation est disponible dans la [documentation d’installation de SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?preserve-view=true&view=sql-server-ver15).
+L' `require-mssql` outil définit un certain nombre d’arguments de ligne de commande du programme d’installation pour s’assurer que le programme d’installation peut s’exécuter sans écran. Ces arguments sont répertoriés ci-dessous et leur documentation est disponible dans la [documentation d’installation de SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
 
 | Nom                                                               | Description |
 |--------------------------------------------------------------------|-------------|

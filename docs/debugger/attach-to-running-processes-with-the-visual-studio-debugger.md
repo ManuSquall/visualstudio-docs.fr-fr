@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249218"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959859"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 
@@ -182,16 +182,16 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 3. Sélectionnez **Rechercher...** pour définir la **cible de connexion** via la boîte de dialogue **Sélectionner un conteneur d’ancrage** .
 
     Vous pouvez déboguer un processus de conteneur de l’ancrage localement ou à distance.
-    
+
     **Pour déboguer un processus de conteneur d’ancrage localement :**
     1. Définissez l’ordinateur hôte de l’interface de commande de l' **arrimeur** sur l' **ordinateur local**.
     1. Sélectionnez un conteneur en cours d’exécution auquel effectuer l’attachement dans la liste et appuyez sur **OK**.
-    
+
     ![Menu Sélectionner le conteneur de l’ancrage](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
- 
+
     **P. Pour déboguer un processus de conteneur d’ancrage à distance :**
-    
-    > [!NOTE] 
+
+    > [!NOTE]
     > Il existe deux options pour la connexion à distance à un processus en cours d’exécution dans un conteneur d’ancrage. La première option, pour utiliser SSH, est idéale si vous n’avez pas installé les outils de l’outil d’ancrage sur votre ordinateur local.  Si vous avez installé les outils de l’outil d’amarrage localement et que vous disposez d’un démon de station d’accueil configuré pour accepter les demandes distantes, essayez la deuxième option, à l’aide d’un démon de station d’accueil.
 
     1. ***Pour vous connecter à une machine distante via SSH :***
@@ -205,7 +205,7 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 
 4. Choisissez le processus de conteneur correspondant dans la liste des **processus disponibles** , puis sélectionnez **attacher** pour démarrer le débogage de votre processus de conteneur C# dans Visual Studio.
 
-    ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete.png "Menu attacher de l’Ancreur Linux terminé")    
+    ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete.png "Menu attacher de l’Ancreur Linux terminé")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Attacher à un processus en cours d’exécution sur un conteneur d’ancrage Windows
 
@@ -225,14 +225,14 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 
     > [!IMPORTANT]
     > Le processus cible doit avoir la même architecture de processeur que le conteneur Windows de l’Arrimateur sur lequel il s’exécute.
-    
+
    La définition de la cible sur un conteneur distant via SSH n’est pas disponible et ne peut être effectuée qu’à l’aide d’un démon de station d’accueil.
-    
+
     ***Pour définir la cible sur un conteneur distant exécutant un processus via un [démon d’ancrage](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-    1. Spécifiez l’adresse du démon (par exemple, via TCP, IP, etc.) sous hôte de l' **ordinateur de point de connexion (facultatif)** , puis cliquez sur le lien Actualiser. 
+    1. Spécifiez l’adresse du démon (par exemple, via TCP, IP, etc.) sous hôte de l' **ordinateur de point de connexion (facultatif)** , puis cliquez sur le lien Actualiser.
 
     1. Sélectionnez un conteneur en cours d’exécution auquel effectuer l’attachement après avoir réussi à vous connecter au démon, puis cliquez sur OK.
-    
+
 4. Choisissez le processus de conteneur correspondant dans la liste des **processus disponibles** , puis sélectionnez **attacher** pour démarrer le débogage de votre processus de conteneur C#.
 
     ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete-windows.png "Menu attacher de l’Ancreur Windows terminé")
@@ -263,7 +263,7 @@ Pour sélectionner rapidement un processus en cours d’exécution à attacher, 
 |Scénario|Méthode de débogage|Nom du processus|Notes et liens|
 |-|-|-|-|
 |Débogage à distance ASP.NET 4 ou 4,5 sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*w3wp.exe*|Voir [débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*w3wp.exe* ou *dotnet.exe*|À compter de .NET Core 3, le processus de *w3wp.exe* est utilisé pour le [modèle d’hébergement dans l’application](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)par défaut. Pour le déploiement d’applications, consultez [publier sur IIS](/aspnet/core/host-and-deploy/iis/). Pour plus d’informations, consultez [ASP.net Core du débogage distant sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach) .|
+|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*w3wp.exe* ou *dotnet.exe*|À compter de .NET Core 3, le processus de *w3wp.exe* est utilisé pour le [modèle d’hébergement dans l’application](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)par défaut. Pour le déploiement d’applications, consultez [publier sur IIS](/aspnet/core/host-and-deploy/iis/). Pour plus d’informations, consultez [ASP.net Core du débogage distant sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach) .|
 |Déboguer le script côté client sur un serveur IIS local, pour les types d’applications pris en charge |Utiliser l' **attachement au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe*ou *iexplore.exe*|Le débogage de script doit être activé. Pour Chrome, vous devez également exécuter chrome en mode débogage ( `chrome.exe --remote-debugging-port=9222` de type à partir d’une ligne de commande) et sélectionner **JavaScript (chrome)** dans le champ **attacher à** .|
 |Déboguer une application C#, Visual Basic ou C++ sur l’ordinateur local|Utiliser le débogage standard (**F5**) ou l' **attachement au processus**|*\<appname>. exe*|Dans la plupart des scénarios, utilisez le débogage standard et non l' **attachement au processus**.|
 |Débogage à distance d’une application de bureau Windows|outils de contrôle à distance.|N/A| Voir [Déboguer à distance une application C# ou Visual Basic](../debugger/remote-debugging-csharp.md) , ou [Déboguer à distance une application C++](../debugger/remote-debugging-cpp.md)|

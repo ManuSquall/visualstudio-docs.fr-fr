@@ -1,6 +1,7 @@
 ---
 title: Utiliser la liste des tâches
-ms.date: 11/04/2016
+description: Découvrez comment l’Liste des tâches dans Visual Studio peut vous aider à suivre et à utiliser des commentaires de code plus efficacement.
+ms.date: 10/12/2020
 ms.topic: how-to
 f1_keywords:
 - TaskListWindow
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781008"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959800"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -64,12 +65,12 @@ Un commentaire dans votre code, précédé d'un marqueur de commentaire et d'un 
 
 Étant donné que `TODO` est un jeton prédéfini, ce commentaire s’affiche comme une tâche `TODO` dans la liste.
 
-> [!NOTE]
-> Les jetons par défaut sont uniquement disponibles pour les langages C/C++, C# et VB.
-
 ### <a name="custom-tokens"></a>Jetons personnalisés
 
 Par défaut, Visual Studio inclut les jetons suivants : `HACK`, `TODO`, `UNDONE` et `UnresolvedMergeConflict`. Ils ne respectent pas la casse. Vous pouvez également créer vos propres jetons personnalisés.
+
+> [!NOTE]
+> Les jetons par défaut sont disponibles uniquement pour les langages C/C++, C# et VB. Pour créer vos propres jetons pour d’autres langages de programmation, procédez comme suit.
 
 Pour créer un jeton personnalisé :
 
