@@ -1,5 +1,6 @@
 ---
 title: Journal des modifications (Visual Studio Tools pour Unity, Windows) | Microsoft Docs
+description: Affichez le journal des modifications pour Outils Visual Studio pour Unity, Windows. Consultez les modifications de version 1.0.0.0 à 4.7.0.0 et au-delà.
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87471517"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039436"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 
@@ -1668,7 +1669,7 @@ Publication : 25 mars 2013
 
 - Simplifier le débogage à distance en supprimant la nécessité de configurer un dossier partagé sur Unity. Maintenant, vous devez simplement avoir accès à votre projet Unity à partir de Windows.
 
-- Installer un profil Unity personnalisé comme profil cible .net standard. Corrige tous les faux positifs que ReSharper peut afficher.
+- Installez un profil Unity personnalisé en tant que profil cible .NET standard. Corrige tous les faux positifs que ReSharper peut afficher.
 
 - Contourner un bogue du moteur de script Unity, afin que le débogueur ne s’arrête pas sur les threads non correctement inscrits.
 
@@ -1678,7 +1679,7 @@ Publication : 25 mars 2013
 
 ### <a name="bug-fixes"></a>Résolution des bogues
 
-- Correction de notre profil .net personnalisé
+- Correction de notre profil .NET personnalisé
 
 - Correction de l’intégration de thèmes, qui résout les problèmes avec le thème foncé Visual Studio 2012.
 
@@ -1751,7 +1752,7 @@ Publication : 3 janvier 2013
 
 - Correction d’une exception susceptible de se produire lors de l’évaluation d’expressions UnityScript et Boo.
 
-- Correction d’une régression dans laquelle la modification du niveau de l’API .NET dans Unity ne déclenche pas une mise à jour des fichiers projet.
+- Correction d’une régression dans laquelle la modification du niveau d’API .NET dans Unity ne déclenche pas une mise à jour des fichiers projet.
 
 - Correction d’un problème d’API où le code utilisateur ne peut participer au Gestionnaire de rappel du journal.
 
@@ -1776,7 +1777,7 @@ Publication : 28 novembre 2012
 
 - Correction de la régression dans l’arrière-plan de l’Explorateur de projets Unity dans Visual Studio 2012.
 
-- Correction de la génération de projet pour les utilisateurs du profil .net complet.
+- Correction de la génération de projet pour les utilisateurs du profil .NET complet.
 
 - Correction de la génération de projet pour les utilisateurs de la cible Web.
 

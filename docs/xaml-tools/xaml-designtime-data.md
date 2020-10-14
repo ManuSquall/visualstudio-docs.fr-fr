@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659412"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039909"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -136,11 +136,48 @@ xmlns:models="clr-namespace:Cities.Models"
 
 L’avantage ici est que vous pouvez lier vos contrôles à une version statique au moment du design de votre modèle.
 
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>Utiliser des données au moment du design avec des types et des propriétés personnalisés
+
+Par défaut, cette fonctionnalité fonctionne uniquement avec les propriétés et les contrôles de plateforme. Dans cette section, nous allons passer en revue les étapes nécessaires pour vous permettre d’utiliser vos propres contrôles personnalisés comme contrôles au moment de la conception. Il y a trois exigences pour l’activer :
+
+- Un espace de noms xmlns personnalisé 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- Version au moment du design de votre espace de noms. Pour ce faire, il suffit d’ajouter/Design à la fin.
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- Ajout de votre préfixe au moment du design à MC : Ignorable
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+Après avoir suivi toutes ces étapes, vous pouvez utiliser votre `myDesignTimeControls` préfixe pour créer vos contrôles au moment du Design.
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>Création d’un espace de noms xmlns personnalisé
+
+Pour créer un espace de noms xmlns personnalisé dans WPF .NET Core, vous devez mapper votre espace de noms XML personnalisé à l’espace de noms CLR dans lequel se trouvent vos contrôles. Pour ce faire, vous pouvez ajouter l' `XmlnsDefinition` attribut de niveau assembly dans votre `AssemblyInfo.cs` fichier. Le fichier se trouve dans la hiérarchie racine de votre projet.
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
+
 ## <a name="troubleshooting"></a>Dépannage
 
 Si vous rencontrez un problème qui n’est pas mentionné dans cette section, faites-le nous savoir en utilisant l’outil [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) .
 
-### <a name="requirements"></a>Spécifications
+### <a name="requirements"></a>Configuration requise
 
 - Les données au moment du design nécessitent Visual Studio 2019 version [16,7](/visualstudio/releases/2019/release-notes) ou ultérieure.
 

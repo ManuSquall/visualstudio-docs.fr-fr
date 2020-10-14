@@ -1,5 +1,6 @@
 ---
 title: Utilisation de .NET 4.x dans Unity
+description: Découvrez comment utiliser .NET 4. x dans Unity. Activez le runtime de script .NET 4. x. Tirez parti de la compatibilité avec .NET. Passez en revue les nouvelles fonctionnalités de syntaxe et de langage.
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
@@ -8,12 +9,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 06efbe9d346cbbe8b9e81d95be257742b659cf8f
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508975"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039844"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
 
@@ -38,7 +39,7 @@ Pour activer le runtime de script .NET 4.x, effectuez les étapes suivantes :
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Choix entre les profils .NET 4.x et .NET Standard 2.0
 
-Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings (**Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)**). Nous avons deux options :
+Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings (**Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)**). Deux options s’offrent à vous :
 
 * **.NET Standard 2,0**. Ce profil correspond au [profil .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publié par .NET Foundation. Unity recommande .NET Standard 2.0 pour les nouveaux projets. Il est plus petit que .NET 4.x, ce qui est avantageux pour les plateformes limitées en taille. De plus, Unity s’est engagé à prendre en charge ce profil sur toutes les plateformes prises en charge par Unity.
 

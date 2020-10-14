@@ -1,5 +1,6 @@
 ---
 title: Application Lifecycle Management (ALM) avec les applications Unity | Microsoft Docs
+description: Comprendre la gestion du cycle de vie des applications (ALM) avec les applications Unity. Passez en revue les outils agile, le modèle, le code, la génération, le test et l’amélioration de la qualité du code.
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7b4c4dfdb8e603d7dda2ebd55c4382e57414de25
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928028"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039922"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps avec les applications Unity
 
@@ -30,7 +31,7 @@ Lien de référence : [À propos des outils agiles et de la gestion de projet ag
 
 Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Gérer les backlogs et les sprints|Oui||
 |Suivi du travail|Oui||
@@ -44,7 +45,7 @@ Lien de référence : **[Analyser et modéliser l’architecture](../modeling/an
 
 Commentaire général : bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou qu’elles utilisent des langages .NET tels que C#, elles opèrent selon un modèle d’application traditionnel avec des hiérarchies d’objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Diagrammes de séquence|Non||
 |Graphiques de dépendance|Non||
@@ -57,7 +58,7 @@ Commentaire général : bien que ces fonctionnalités de conception soient ind�
 
 ## <a name="code"></a>Code
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |[Utiliser Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) ou Azure Repos|Oui|Les projets Unity se résument à une collection de fichiers qui peuvent être placés dans des systèmes de gestion de version comme n’importe quel autre projet. Toutefois, vous devez prendre en compte certaines considérations particulières décrites après le tableau ci-dessous.|
 |[Bien démarrer avec Git dans Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|Oui|Consultez les remarques après le tableau.|
@@ -77,7 +78,7 @@ Considérations particulières sur la gestion de version avec Unity :
 
 Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Version locale de Team Foundation Server (TFS)|Possible|Les projets Unity sont créés via l'environnement Unity et non via le système de génération de Visual Studio (la génération dans Visual Studio Tools pour Unity entraîne la compilation des scripts, mais ne produit pas de fichier exécutable). Comme il est possible de [générer des projets Unity à partir de la ligne de commande](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentation Unity), il est possible de configurer un processus MSBuild sur un serveur TFS pour exécuter les commandes Unity appropriées, à condition que Unity lui-même soit installé sur cet ordinateur.<br /><br /> Unity propose également [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), qui surveille un dépôt Git ou SVN, et exécute des builds périodiques. Pour l’instant, il ne fonctionne pas avec TFVC ou Azure DevOps Services.|
 |Serveur de builds local lié à Azure DevOps Services|Possible|Dans les mêmes conditions que ci-dessus, il est également possible de diriger des builds déclenchées via Azure DevOps Services pour utiliser un ordinateur TFS local. Pour obtenir des instructions, consultez [agents de build et de mise en version](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true) .|
@@ -87,7 +88,7 @@ Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vst
 
 ## <a name="test"></a>Test
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Planification de tests, création de cas de test et organisation de suites de tests|Oui||
 |Test manuel|Oui||
@@ -100,7 +101,7 @@ Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vst
 
 Lien de référence : ** [améliorer la qualité du code](../test/improve-code-quality.md)**
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |[Analyser la qualité du code managé](../code-quality/code-analysis-for-managed-code-overview.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
 |[Rechercher du code dupliqué à l’aide de la détection de clone de code](/previous-versions/hh205279(v=vs.140))|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
@@ -112,7 +113,7 @@ Lien de référence : ** [améliorer la qualité du code](../test/improve-code-
 
 Lien de référence : [Générer et mettre en production dans Azure Pipelines et TFS](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Gérer les processus de publication des versions|Oui||
 |Déploiement sur des serveurs pour le chargement de version test via des scripts|Oui||
@@ -122,6 +123,6 @@ Lien de référence : [Générer et mettre en production dans Azure Pipelines et
 
 Lien de référence : **[Analyser avec HockeyApp](https://www.hockeyapp.net/features/)**
 
-|Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Analyse des incidents, télémétrie et distribution des bêta|Oui|HockeyApp est particulièrement utile pour gérer la distribution des bêta et obtenir des rapports d’incidents.<br /><br /> Pour la télémétrie des scripts C#, il est possible d’utiliser n’importe quel framework d’analytique à condition qu’il s’exécute sur la version de .NET utilisée par Unity. Toutefois, cette solution permet l'analyse seulement dans les scripts de jeu et pas plus profondément dans le moteur Unity. Il n’existe aucun plug-in pour Application Insights, mais des plug-ins sont disponibles pour d’autres solutions d’analyse, par exemple [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) et [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Les services tels que Unity Analytics qui comprennent la nature d'un projet Unity fournissent bien entendu une analyse beaucoup plus explicite que les frameworks génériques.|

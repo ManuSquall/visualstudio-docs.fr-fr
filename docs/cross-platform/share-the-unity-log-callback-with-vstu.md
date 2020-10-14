@@ -1,5 +1,6 @@
 ---
 title: Partager le rappel de journal Unity avec VSTU | Microsoft Docs
+description: Partagez votre rappel de journal Unity avec celui qui est inscrit auprès de Outils Visual Studio pour Unity (VSTU) pour diffuser sa console vers Visual Studio.
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dc54c51f078e5b800a9cc9f2de687db7b1fa0387
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88abc27ad757487ae8f65b8bbb66d4dfee9791cc
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815042"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039870"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Partager le rappel de journal Unity avec VSTU
 Visual Studio Tools pour Unity enregistre un rappel de journal avec Unity pour pouvoir diffuser sa console vers Visual Studio. Si vos scripts de l'éditeur enregistrent également un rappel de journal avec Unity, le rappel VSTU peut interférer avec votre rappel.  Pour éviter ce risque, utilisez l'événement `VisualStudioIntegration.LogCallback` pour coopérer avec VSTU.

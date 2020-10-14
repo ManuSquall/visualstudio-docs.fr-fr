@@ -1,5 +1,6 @@
 ---
 title: Programmation de Visual Studio Tools pour Unity | Microsoft Docs
+description: Consultez des exemples de programmation à l’aide de l’API Outils Visual Studio pour Unity (VSTU). Personnaliser les fichiers projet créés par VSTU. Partager le rappel de journal Unity avec VSTU.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0372cfd110df77867a683b27b17f92cd70ba75aa
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62818213"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039883"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Programmer Visual Studio Tools pour Unity
 Dans cette section, vous trouverez des exemples de l'utilisation de l'API Visual Studio Tools pour Unity.

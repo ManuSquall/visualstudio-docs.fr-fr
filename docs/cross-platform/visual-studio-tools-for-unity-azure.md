@@ -1,5 +1,6 @@
 ---
 title: Programmation avec Visual Studio Tools pour Unity et Azure | Microsoft Docs
+description: Programme avec Outils Visual Studio pour Unity et Azure. Azure fournit une solution évolutive pour le stockage des données de télémétrie et d’autres données de jeu dans le Cloud.
 ms.custom: ''
 ms.date: 12/18/2017
 ms.reviewer: crdun
@@ -12,12 +13,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: e9a07a7f04cae433803d012302555821fc851075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5be430b4a59dd4aa36945555f6553f321b9d50c0
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916827"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039818"
 ---
 # <a name="program-with-unity-and-azure"></a>Programmer avec Unity et Azure
 

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a22e0f5a20050e62aa9978c40f2189c82ca3071c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352326"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039797"
 ---
 # <a name="devinit-commands"></a>commandes devinit
 
@@ -34,10 +34,38 @@ Options facultatives pour la `devinit init` commande.
 
 | Argument             | Obligatoire | Description                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file           | Non       | Chemin d’accès à la _.devinit.jssur_ le fichier.                                         |
+| -f,--file            | Non       | Chemin d’accès à la _.devinit.jssur_ le fichier.                                         |
 | --erreur-action       | Non       | Spécifie comment gérer les erreurs. Options : arrêter, ignorer, continuer (par défaut).|
 | -v,--commentaires         | Non       | Émet une sortie détaillée.                                                      |
 | -n,--à sec         | Non       | Série sèche.                                                                  |
+
+#### <a name="--file-argument"></a>--argument de fichier
+
+Spécifie le chemin d’accès à la _devinit.jssur_ le fichier. Si--file n’est pas spécifié, nous rechercherons un fichier par défaut aux emplacements suivants :
+
+* {Current-Directory} \\.devinit.js
+* {Current-Directory} \\devinit.js
+* {Current-Directory} \\ . devinit \\.devinit.js
+* {Current-Directory} \\ . devinit \\devinit.js
+* {Current-Directory} \\ devinit \\.devinit.js
+* {Current-Directory} \\ devinit \\devinit.js
+* {Current-Directory} \\ . devcontainer \\.devinit.js
+* {Current-Directory} \\ . devcontainer \\devinit.js
+
+> [!NOTE]
+> Si plusieurs fichiers par défaut sont trouvés, devinit utilise le fichier qui apparaît en premier dans la liste ci-dessus.
+
+#### <a name="--error-action-argument"></a>--erreur-argument d’action
+
+Voir [ci-dessous](#options-for-run).
+
+#### <a name="--verbose-switch"></a>--commutateur détaillé
+
+Voir [ci-dessous](#options-for-run).
+
+#### <a name="--dry-run-switch"></a>--commutateur à exécution à sec
+
+Voir [ci-dessous](#options-for-run).
 
 ## <a name="run"></a>Exécuter
 
@@ -51,23 +79,14 @@ Exécute l’outil spécifique, les paramètres sont répertoriés ci-dessous. C
 
 Options de la `devinit run` commande.
 
-| Argument                                  | Obligatoire | Description                                                                          |
-|-------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| outil-t,--                                 | Oui      | Obligatoire. Nom de l'outil.                                                             |
-| -i,--entrée                                | Non       | Valeur d’entrée de l’outil. Par exemple, un nom de fichier, un package ou un nom.                           |
-| --erreur-action                            | Non       | Spécifie comment gérer les erreurs d’outil : arrêter, ignorer, continuer. La valeur par défaut consiste à arrêter. |
-| -v,--commentaires                              | Non       | Émet une sortie détaillée.                                                                 |
-| -n,--à sec                              | Non       | Série sèche.                                                                             |
-| --&lt;arg1 &gt; &lt; Arg2 &gt; &lt; argN&gt;  | Non       | Arguments de ligne de commande supplémentaires pour l’outil.                                       |
-
-#### <a name="--file-argument"></a>--argument de fichier
-
-Spécifie le chemin d’accès à la _devinit.jssur le fichier. Si – file n’est pas spécifié, nous recherchons un fichier par défaut aux emplacements suivants :
-
-* {Current-Directory} \\.devinit.js
-* {Current-Directory} \\ . devinit \\.devinit.js
-
-Les chemins d’accès sans le début du `.` répertoire ou du nom de fichier correspondent également.
+| Argument                                      | Obligatoire | Description                                                                          |
+|-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
+| outil-t,--                                     | Oui      | Obligatoire. Nom de l'outil.                                                             |
+| -i,--entrée                                    | Non       | Valeur d’entrée de l’outil. Par exemple, un nom de fichier, un package ou un nom.                     |
+| --erreur-action                                | Non       | Spécifie comment gérer les erreurs d’outil : arrêter, ignorer, continuer. La valeur par défaut consiste à arrêter. |
+| -v,--commentaires                                  | Non       | Émet une sortie détaillée.                                                                 |
+| -n,--à sec                                  | Non       | Série sèche.                                                                             |
+| --&lt;arg1 &gt; &lt; Arg2 &gt; ... &lt; argN&gt;  | Non       | Arguments de ligne de commande supplémentaires pour l’outil.                                       |
 
 #### <a name="--error-action-argument"></a>--erreur-argument d’action
 
@@ -79,13 +98,13 @@ Spécifie l’action à entreprendre si un outil retourne un code de sortie diff
 | ignore   | Continuer le traitement d’autres outils après l’émission d’un avertissement vers la sortie standard. Le code de sortie du processus DevInit doit toujours être égal à zéro (réussite). Le `ignore` paramètre ignore toutes les erreurs.                                                                                                      |
 | stop     | Envoie une erreur à l’erreur standard et arrête les outils de traitement. Le code de sortie de devinit.exe est différent de zéro (échec). Cela est similaire à l’action continuer l’erreur, mais le traitement s’arrête à la première erreur rencontrée. `stop` est l’action d’erreur par défaut pour toutes les commandes, à l’exception de init. |
 
-#### <a name="--dry-run-switch"></a>--commutateur à exécution à sec
-
-Commandes de l’outil ECHO qui sont exécutées, mais n’exécutent aucun outil. 
-
 #### <a name="--verbose-switch"></a>--commutateur détaillé
 
 Émet la sortie détaillée vers la sortie standard. Si l’outil à exécuter prend en charge une option détaillée, propage le commutateur détaillé à l’outil.
+
+#### <a name="--dry-run-switch"></a>--commutateur à exécution à sec
+
+Commandes de l’outil ECHO qui sont exécutées, mais n’exécutent aucun outil.
 
 #### <a name="additional-command-line-arguments"></a>Arguments de ligne de commande supplémentaires
 
