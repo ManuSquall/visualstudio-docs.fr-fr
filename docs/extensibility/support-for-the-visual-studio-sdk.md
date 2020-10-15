@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b10e4b211bb1a187f51f95aa6eb78d2de451516
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699644"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099373"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
 Plusieurs options de support sont disponibles pour les clients qui ont des questions sur la façon d’étendre l’environnement de développement intégré (IDE) de Visual Studio.
@@ -30,7 +30,7 @@ Plusieurs options de support sont disponibles pour les clients qui ont des quest
  Les membres de l’équipe de développement Visual Studio et d’autres développeurs qui étendent Visual Studio participent souvent au groupe de discussion Microsoft. public. vstudio. Extensibility. Ce groupe de discussion est un groupe de discussion géré. Si vous êtes abonné à MSDN Universal, veillez à enregistrer un alias de non-spam pour permettre à Microsoft de répondre.
 
 ### <a name="msdn-forums"></a>Forums MSDN
- Les [Forums MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) offrent une autre façon de discuter avec les pairs et les experts. L’interface utilisateur graphique (IU) des forums est conçue pour faciliter leur utilisation par rapport aux groupes de discussion. Le [Forum sur l’extensibilité de Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) est un bon point de départ pour rechercher des réponses aux questions d’extensibilité. Recherchez toujours avant de poser une question, car quelqu’un d’autre a peut-être déjà posé la même question.
+ Les [Forums MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) offrent une autre façon de discuter avec les pairs et les experts. L’interface utilisateur graphique (IU) des forums est conçue pour faciliter leur utilisation par rapport aux groupes de discussion. Le [Forum sur l’extensibilité de Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) est un bon point de départ pour rechercher des réponses aux questions d’extensibilité. Recherchez toujours avant de poser une question, car quelqu’un d’autre a peut-être déjà posé la même question.
 
 ### <a name="visual-studio-gallery"></a>Galerie Visual Studio
  Le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) est l’emplacement des extensions et des exemples de code. Vous pouvez trouver des outils qui améliorent votre productivité et votre expérience utilisateur avec Visual Studio, des exemples d’applications qui montrent comment utiliser les VSPackages et le Managed Extensibility Framework (MEF), ainsi que d’autres types d’exemples.

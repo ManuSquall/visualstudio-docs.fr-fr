@@ -8,19 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe6811f4deaa5958b050a8f93f74e48e2dc73f38
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4e9aea22a63f2eee8f83ee597ed11c90df7f6b1a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809287"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099399"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Vue d’ensemble des agents de test et des contrôleurs de test pour l’exécution de tests de charge
 
 Visual Studio peut utiliser des ordinateurs physiques ou des machines virtuelles pour générer une charge simulée pour votre application. Ces ordinateurs doivent être configurés comme un contrôleur de test unique, et un ou plusieurs agents de test. Vous pouvez utiliser le contrôleur de test et les agents de test pour générer une charge supérieure à celle qu'un seul ordinateur peut générer à lui seul.
 
 > [!NOTE]
-> Vous pouvez également utiliser le test de charge cloud pour fournir des machines virtuelles qui génèrent la charge de nombreux utilisateurs accédant simultanément à votre site web. Toutefois, l’utilisation du contrôleur de test/de l’installation de l’agent de test sur des ordinateurs virtuels hébergés dans le Cloud n’est pas prise en charge. Découvrez plus d’informations sur les tests de charge basés sur le cloud dans [Exécuter des tests de charge avec Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> Vous pouvez également utiliser le test de charge cloud pour fournir des machines virtuelles qui génèrent la charge de nombreux utilisateurs accédant simultanément à votre site web. Toutefois, l’utilisation du contrôleur de test/de l’installation de l’agent de test sur des ordinateurs virtuels hébergés dans le Cloud n’est pas prise en charge. Découvrez plus d’informations sur les tests de charge basés sur le cloud dans [Exécuter des tests de charge avec Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

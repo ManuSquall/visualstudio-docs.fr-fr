@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286191"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099386"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Lancement du développement d’extensions Visual Studio
 
@@ -91,7 +91,7 @@ Dans la pratique, nous avons découvert que les fonctionnalités que la plupart 
 ## <a name="how-can-i-distribute-my-extension"></a>Comment distribuer mon extension ?
  Vous pouvez installer votre extension sur un autre ordinateur ou l’envoyer à vos amis sous la forme d’un fichier. vsix, que vous installez en double-cliquant dessus. Vous trouverez plus d’informations sur les packages VSIX dans la publication d' [Extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Vous pouvez également publier votre extension sur le Visual Studio Marketplace, ce qui la rend visible pour un grand nombre de clients Visual Studio. Pour obtenir un exemple d’empaquetage d’une extension sur la place de marché, consultez [procédure pas à pas : publication d’une extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Pour plus d’informations sur ce que vous devez faire pour publier sur Marketplace, consultez [produits et extensions pour Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Vous pouvez également publier votre extension sur le Visual Studio Marketplace, ce qui la rend visible pour un grand nombre de clients Visual Studio. Pour obtenir un exemple d’empaquetage d’une extension sur la place de marché, consultez [procédure pas à pas : publication d’une extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Pour plus d’informations sur ce que vous devez faire pour publier sur Marketplace, consultez [produits et extensions pour Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
 ## <a name="see-also"></a>Voir aussi
 

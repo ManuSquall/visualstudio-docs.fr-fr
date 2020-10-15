@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289194"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099269"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -47,7 +47,7 @@ Le Microsoft Build Engine est une plateforme de création d’applications. Ce m
 Vous pouvez écrire du code dans l'IDE de Visual Studio, mais les générations s'exécutent à l'aide de MSBuild. Vous pouvez également générer du code dans l’IDE sur un ordinateur de développement, mais exécuter MSBuild à partir de la ligne de commande pour générer le code intégré à partir de plusieurs développeurs. Vous pouvez également utiliser l' [interface de ligne de commande (CLI) .net Core](/dotnet/core/tools/), qui utilise MSBuild, pour générer des projets .net core.
 
 > [!NOTE]
-> Vous pouvez utiliser Azure Pipelines pour compiler, tester et déployer automatiquement votre application. Votre système de génération peut automatiquement exécuter des générations lorsque les développeurs archivent du code (par exemple, dans le cadre d'une stratégie continue d'intégration) ou selon une planification (par exemple, une build nocturne de test de vérification de build). Azure Pipelines compile votre code à l’aide de MSBuild. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+> Vous pouvez utiliser Azure Pipelines pour compiler, tester et déployer automatiquement votre application. Votre système de génération peut automatiquement exécuter des générations lorsque les développeurs archivent du code (par exemple, dans le cadre d'une stratégie continue d'intégration) ou selon une planification (par exemple, une build nocturne de test de vérification de build). Azure Pipelines compile votre code à l’aide de MSBuild. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
 Cet article fournit une vue d’ensemble de MSBuild. Pour un didacticiel d’introduction, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
