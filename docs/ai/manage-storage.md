@@ -1,5 +1,7 @@
 ---
 title: Parcourir le stockage pour charger des données
+description: Découvrez comment vous pouvez parcourir tout le stockage sur l’ordinateur distant ou le partage de fichiers Azure pour activer le téléchargement de données ou le téléchargement de modèles et de journaux.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ebee353261ba49f6677a0f96db68b7e8d46d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371610"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099204"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Parcourir le stockage pour charger des données ou télécharger des modèles et des journaux
 

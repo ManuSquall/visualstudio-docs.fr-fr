@@ -5,14 +5,14 @@ ms.topic: include
 ms.assetid: 9109bf1e-f725-439d-a870-13741e0dbc90
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 09/30/2020
+ms.date: 10/13/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: ca1f71a16b0d597c3cd4606150bde9618cfbdca9
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838351"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157886"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Comment utiliser mes avantages ?
 
@@ -22,18 +22,4 @@ Pour chaque avantage disponible dans le portail des abonnés, nous proposons des
 
 Consultez notre documentation pour [en savoir plus](../../../../whats-new-in-subscriptions.md) (cliquez sur « Abonnements » dans le volet de navigation de gauche, puis choisissez « Avantages »).
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus de configuration Visual Studio avec GitHub Enterprise ? 
 
-Les abonnements Visual Studio avec GitHub Enterprise sont gérés en deux parties :  
-- Abonnement Visual Studio (Enterprise ou Professional)  
-- GitHub Enterprise  
-
-Si vous êtes titulaire d’un abonnement Visual Studio avec GitHub, vous recevez un e-mail vous informant que votre administrateur d’abonnements Visual Studio vous a attribué un abonnement. À ce stade, vous pouvez voir les avantages qu’offrent les abonnements sur <https://my.visualstudio.com/benefits>. Ils comprennent l’avantage GitHub Enterprise. 
-
-GitHub Enterprise est géré par un administrateur GitHub, séparément des abonnements Visual Studio. Lorsque votre société a configuré un compte GitHub Enterprise, vous recevez un e-mail de GitHub vous notifiant que votre abonnement Visual Studio a été lié et que la vignette de l’avantage va être mise à jour. La configuration de ce compte peut prendre un certain temps et dépend de votre entreprise effectuant le processus de configuration. Une fois que vous avez reçu cet e-mail, vous pouvez contacter l’administrateur d’organisation GitHub approprié pour demander une invitation à son organisation et/ou dépôt. 
-
-Quand une invitation est envoyée par votre administrateur d’organisation GitHub, vous recevez un e-mail de GitHub et la vignette de l’avantage est de nouveau mise à jour. 
-
-Une fois que vous acceptez l’invitation de l’organisation GitHub, la vignette de l’avantage sur <https://my.visualstudio.com/benefits> passe de « En attente » à « Activé » et vous pouvez maintenant commencer à utiliser GitHub Enterprise. 
-
-[Découvrez en détail](../../../../access-github.md) le processus de configuration de GitHub Enterprise. 

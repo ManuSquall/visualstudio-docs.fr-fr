@@ -1,5 +1,7 @@
 ---
 title: Générer, page du Concepteur de projets (C#)
+description: Découvrez comment utiliser la page générer du concepteur de projet dans Visual Studio pour spécifier les propriétés de configuration de build du projet.
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419222"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136873"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 
@@ -119,7 +121,7 @@ Les paramètres suivants sont utilisés pour spécifier quels avertissements son
 > [!TIP]
 > Si vous ne souhaitez pas que les avertissements de l’analyse du code soient traités comme des erreurs, consultez [FAQ sur l’analyse du code](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
-## <a name="output"></a>Output
+## <a name="output"></a>Sortie
 
 Les paramètres suivants sont utilisés pour configurer les options de sortie pour le processus de génération.
 

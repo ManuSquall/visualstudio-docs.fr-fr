@@ -1,5 +1,7 @@
 ---
 title: Page Compiler, Concepteur de projets (Visual Basic)
+description: Découvrez comment spécifier des instructions de compilation dans Visual Studio. Vous pouvez également spécifier dans cette page les options avancées du compilateur et les événements pré-build ou post-build.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284315"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136626"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
 

@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290430"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136860"
 ---
 # <a name="how-msbuild-builds-projects"></a>Comment MSBuild génère des projets
 
@@ -50,7 +50,7 @@ Les projets .NET Core importent la version du kit de développement logiciel (SD
 
 Cette section explique comment ces fichiers d’entrée sont traités et analysés pour produire des objets en mémoire qui déterminent ce qui sera généré.
 
-L’objectif de la phase d’évaluation est de créer les structures d’objets en mémoire en fonction des fichiers XML d’entrée et de l’environnement local. La phase d’évaluation est constituée de cinq passages qui traitent les fichiers d’entrée tels que les fichiers XML du projet ou, ainsi que les fichiers XML importés, généralement nommés en tant que fichiers *. props* ou *. targets* , selon qu’ils ont principalement défini des propriétés ou défini des cibles de génération. Chaque passe génère une partie des objets en mémoire qui sont ensuite utilisés dans la phase d’exécution pour générer les projets, mais aucune action de génération réelle n’a lieu pendant la phase d’évaluation. Au sein de chaque passe, les éléments sont traités dans l’ordre dans lequel ils apparaissent.
+L’objectif de la phase d’évaluation est de créer les structures d’objets en mémoire en fonction des fichiers XML d’entrée et de l’environnement local. La phase d’évaluation est constituée de six passages qui traitent les fichiers d’entrée tels que les fichiers XML du projet ou, ainsi que les fichiers XML importés, généralement nommés en tant que fichiers *. props* ou *. targets* , selon qu’ils ont principalement défini des propriétés ou défini des cibles de génération. Chaque passe génère une partie des objets en mémoire qui sont ensuite utilisés dans la phase d’exécution pour générer les projets, mais aucune action de génération réelle n’a lieu pendant la phase d’évaluation. Au sein de chaque passe, les éléments sont traités dans l’ordre dans lequel ils apparaissent.
 
 Les passes de la phase d’évaluation sont les suivantes :
 

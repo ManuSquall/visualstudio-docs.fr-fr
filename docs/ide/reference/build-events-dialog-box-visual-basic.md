@@ -1,5 +1,7 @@
 ---
 title: Événements de build, boîte de dialogue (Visual Basic)
+description: Découvrez comment vous pouvez utiliser la boîte de dialogue événements de build pour spécifier des instructions de configuration de build et les conditions dans lesquelles les événements pré-build ou postérieurs à la génération sont exécutés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42b7837dd5253d29ecbd0085ae6159a981fcf15c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461450"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136639"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Événements de build, boîte de dialogue (Visual Basic)
 

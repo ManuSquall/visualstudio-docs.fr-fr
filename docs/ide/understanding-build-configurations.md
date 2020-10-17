@@ -1,5 +1,7 @@
 ---
 title: Présentation des configurations de build
+description: Découvrez comment vous avez besoin de configurations de build lorsque vous devez générer vos projets avec des paramètres différents dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -26,12 +28,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77904163"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136678"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
@@ -48,7 +50,7 @@ Vous pouvez créer vos propres configurations de build au niveau de la solution 
 
 Pour créer, sélectionner, modifier ou supprimer une configuration, vous pouvez utiliser le **Gestionnaire de configurations**. Pour l’ouvrir, dans la barre de menus, choisissez **générer**  >  **Configuration Manager**, ou tapez simplement **configuration** dans la zone de recherche. Vous pouvez également utiliser la liste **Configurations de solutions** dans la barre d’outils **Standard** pour sélectionner une configuration ou ouvrir le **Gestionnaire de configurations**.
 
-![Configuration Manager](media/understanding-build-configurations/config-manager.png)
+![Gestionnaire de configuration](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Si vous ne trouvez pas de paramètres de configuration de solution dans la barre d’outils et que vous ne pouvez pas accéder au **Configuration Manager**, les [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] paramètres de développement peuvent être appliqués. Pour plus d’informations, consultez [Guide pratique pour gérer les configurations de build en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).

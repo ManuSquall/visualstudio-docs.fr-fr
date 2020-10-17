@@ -1,5 +1,7 @@
 ---
 title: Paramètres de génération avancés, boîte de dialogue (C#)
+description: Découvrez comment vous pouvez utiliser Visual Studio pour spécifier les propriétés de configuration de build avancées du projet.
+ms.custom: SEO-VS-2020
 ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418845"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136743"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de génération avancés, boîte de dialogue (C#)
 
@@ -56,7 +58,7 @@ Spécifie si une instruction arithmétique entière hors de portée des mots cl�
 
 Spécifie si mscorlib.dll doit être importé dans votre programme, en définissant l’intégralité de l’espace de noms <xref:System>. Cochez cette case pour définir ou créer vos propres objets et espaces de noms <xref:System>. Pour plus d’informations, consultez [/nostdlib (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
-## <a name="output"></a>Output
+## <a name="output"></a>Sortie
 
 Les options suivantes permettent de spécifier des options de sortie avancées.
 
@@ -76,7 +78,7 @@ Indique le type d'informations de débogage générées par le compilateur. Pour
 
    Active le débogage du code source lorsque le programme est démarré dans le débogueur, mais affiche uniquement un assembleur quand le programme en cours d’exécution est attaché au débogueur.
 
-- **portable**
+- **portatif**
 
    Génère un fichier .PDB, un fichier de symboles portable non spécifique à la plateforme qui fournit d’autres outils, notamment des débogueurs, des informations sur les éléments dans le fichier exécutable principal et la façon dont il a été produit. Pour plus d’informations, consultez [PDB portable](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
 

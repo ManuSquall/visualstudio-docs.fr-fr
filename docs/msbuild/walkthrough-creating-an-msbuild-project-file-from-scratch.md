@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331206ee59c7cd05dd4871c422bd6b1a7ff85419
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037697"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136691"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : créer un fichier projet MSBuild en partant de zéro
 
@@ -239,13 +239,13 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)$(AssemblyName).exe" />`
 >
 > est mieux que
 >
 > `<OutputPath>Bin</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>Tester les propriétés de build
 
@@ -467,11 +467,11 @@ L’exemple suivant montre un fichier projet qui compile une application Visual 
 </Project>
 ```
 
-## <a name="whats-next"></a>Et ensuite ?
+## <a name="whats-next"></a>Quelle est l’étape suivante ?
 
  Visual Studio peut faire automatiquement la plus grande partie du travail qui est montré dans cette procédure pas à pas. Pour découvrir comment utiliser Visual Studio pour créer, modifier, générer et tester des fichiers projet MSBuild, consultez la [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)

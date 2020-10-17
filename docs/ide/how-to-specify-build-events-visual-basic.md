@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour spécifier des événements de build (Visual Basic)
+description: Découvrez comment les événements de build dans Visual Basic peuvent être utilisés pour exécuter des scripts, des macros ou d’autres actions dans le cadre du processus de compilation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283968"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136925"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Guide pratique pour spécifier des événements de build (Visual Basic)
 
@@ -63,7 +65,7 @@ La procédure suivante indique comment définir la version minimale du système 
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Pour créer une commande .exe afin de modifier le manifeste d’application
 
-1. Créez une application console pour la commande. Dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
+1. Créez une application console pour la commande. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application console**. Nommez le projet `ChangeOSVersionVB`.
 
@@ -126,7 +128,7 @@ La procédure suivante indique comment définir la version minimale du système 
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Pour appeler un événement post-build afin de modifier le manifeste d’application
 
-1. Créez une application Windows pour le projet à publier. Dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
+1. Créez une application Windows pour le projet à publier. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Bureau Windows**, puis le modèle **Application Windows Forms**. Nommez le projet `VBWinApp`.
 3. Après avoir sélectionné le projet dans l’**Explorateur de solutions**, dans le menu **Projet**, cliquez sur **Propriétés**.

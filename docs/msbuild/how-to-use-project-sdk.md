@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76826469"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136834"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Guide pratique pour utiliser les kits SDK de projet MSBuild
 
@@ -66,9 +66,6 @@ Il existe trois manières de référencer un kit SDK de projet :
     </Project>
     ```
 
-    > [!NOTE]
-    > C’est actuellement le seul moyen possible de faire référence à un kit SDK de projet dans Visual Studio pour Mac.
-
 - Utilisez l'élément `<Sdk/>` de niveau supérieur :
 
     ```xml
@@ -107,7 +104,7 @@ Lors de l’évaluation de l’importation, MSBuild résout dynamiquement le che
 
    Ce programme de résolution n’est actif que si vous avez spécifié une version facultative. Il peut être utilisé pour n’importe quel kit de développement logiciel (SDK) de projet personnalisé.
    
-- Un programme de résolution de l’interface CLI .NET qui résout les kits de développement logiciel installés avec l' [interface CLI .net](/dotnet/core/tools/).
+- Un programme de résolution du kit de développement logiciel (SDK) .NET qui résout les SDK MSBuild installés avec le [Kit de développement logiciel (SDK) .net](/dotnet/core/sdk/).
 
    Ce programme de résolution localise les kits de développement logiciel (SDK) de projet tels que `Microsoft.NET.Sdk` et `Microsoft.NET.Sdk.Web` qui font partie du produit.
    

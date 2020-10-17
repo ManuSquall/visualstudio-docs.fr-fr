@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour configurer des projets et cibler des plateformes
+description: Découvrez comment Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, y compris les plateformes 64 bits.
+ms.custom: SEO-VS-2020
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a58b60e23bf08fb86a8dd7bc09d760085b6ea25f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 323d118b73649c8c23d9b4a2e3ace2fd2fc6fdea
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284597"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136756"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets et cibler des plateformes
 

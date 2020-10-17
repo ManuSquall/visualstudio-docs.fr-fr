@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425392"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136912"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 
@@ -81,9 +81,15 @@ Représente une référence à un autre projet. `ProjectReference` les élément
 |Nom des métadonnées de l’élément|Description|
 |---------------|-----------------|
 |Nom|Chaîne facultative. Nom complet de la référence.|
-|Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|
-|Package|Chaîne facultative. Chemin d'accès du fichier projet référencé.|
+|GlobalPropertiesToRemove|`string[]` optionnel. Noms des propriétés à supprimer lors de la génération du projet référencé, par exemple `RuntimeIdentifier;PackOnBuild` . Vide par défaut.|
+|Project|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|
+|OutputItemType|Chaîne facultative. Type d’élément dans lequel émettre des sorties cibles. La valeur par défaut est vide. Si les métadonnées de référence ont la valeur « true » (valeur par défaut), les sorties cibles deviennent des références pour le compilateur.|
 |ReferenceOutputAssembly|Valeur booléenne facultative. Si sa valeur est `false`, n’inclut pas la sortie du projet référencé comme [Référence](#reference) de ce projet, mais fait quand même en sorte que l’autre projet se génère avant celui-ci. La valeur par défaut est `true`.|
+|SetConfiguration|Chaîne facultative. Définit la propriété globale `Configuration` pour le projet référencé, par exemple `Configuration=Release` .|
+|SetPlatform|Chaîne facultative. Définit la propriété globale `Platform` pour le projet référencé, par exemple `Platform=AnyCPU` .|
+|SetTargetFramework|Chaîne facultative. Définit la propriété globale `TargetFramework` pour le projet référencé, par exemple `TargetFramework=netstandard2.0` .|
+|SkipGetTargetFrameworkProperties|Valeur booléenne facultative. Si `true` , génère le projet référencé sans négocier la valeur la plus compatible `TargetFramework` . La valeur par défaut est `false`.|
+|Cibles|`string[]` optionnel. Liste de cibles séparées par des points-virgules dans les projets référencés qui doivent être générés. La valeur par défaut est la valeur `$(ProjectReferenceBuildTargets)` qui est vide par défaut, ce qui indique les cibles par défaut.|
 
 ### <a name="compile"></a>Compiler
 
@@ -112,7 +118,7 @@ Représente les ressources à incorporer dans l'assembly généré.
 | CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 | LogicalName | Chaîne obligatoire. Nom logique de la ressource incorporée. |
 
-### <a name="content"></a>Content
+### <a name="content"></a>Contenu
 
 Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuvent être incorporés ou publiés en même temps.
 
@@ -128,7 +134,7 @@ Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuv
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
 | CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 
-### <a name="none"></a>None
+### <a name="none"></a>Aucun
 
 Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
 

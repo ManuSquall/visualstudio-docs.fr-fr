@@ -1,5 +1,6 @@
 ---
 title: Boîte de dialogue ligne de commande de l’événement pré-build-après génération
+description: Découvrez comment vous pouvez créer des événements avant ou après la génération directement dans la zone d’édition, ou comment vous pouvez sélectionner des macros pré-build et postérieures à la génération dans la liste des macros disponibles.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -35,12 +36,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9ec2acb6802c19b48ba6254fb0a8812935d400
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 538b6c0dc3a163936e04a85b374a239d43e46e8e
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038359"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136808"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
 

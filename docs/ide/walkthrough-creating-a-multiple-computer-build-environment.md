@@ -1,5 +1,6 @@
 ---
 title: Créer un environnement de build sur plusieurs ordinateurs
+description: Créez un environnement de build dans votre organisation en installant Visual Studio sur un ordinateur hôte, puis en copiant différents fichiers et paramètres sur un autre ordinateur.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038424"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136951"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs
 
@@ -25,7 +26,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
 Ce document ne confère pas de droits pour redistribuer le logiciel en externe ou pour fournir des environnements de build à des tiers.
 
-> Clause d'exclusion de responsabilité<br /><br /> Ce document est fourni « en l’état ». Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et les points de vue exprimés dans ce document, y compris les URL et autres références à des sites web, peuvent être modifiés sans préavis. Microsoft exclut toute garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez les risques liés à leur utilisation.<br /><br /> Ce document ne vous fournit aucun droit légal de propriété intellectuelle de tout produit Microsoft. Vous pouvez copier le présent document pour une utilisation interne à des fins de référence.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.
+> Clause d'exclusion de responsabilité<br /><br /> Ce document est fourni « en l’état ». Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et les points de vue exprimés dans ce document, y compris les URL et autres références à des sites web, peuvent être modifiés sans préavis. Microsoft ne donne aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez les risques liés à leur utilisation.<br /><br /> Ce document ne vous fournit aucun droit légal de propriété intellectuelle de tout produit Microsoft. Vous pouvez copier le présent document pour une utilisation interne à des fins de référence.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.
 
 Cette procédure pas à pas a été validée sur les systèmes d’exploitation suivants :
 
@@ -193,7 +194,7 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
 Vous devez créer des entrées de Registre pour configurer des paramètres pour MSBuild.
 
-1. Identifiez le dossier parent des entrées du Registre. Toutes les entrées du Registre sont créées sous la même clé parente. Sur un ordinateur x86, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Sur un ordinateur x64, la clé parente est **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence à la clé parente sous la forme %RegistryRoot%.
+1. Identifiez le dossier parent des entrées du Registre. Toutes les entrées du Registre sont créées sous la même clé parente. Sur un ordinateur x86, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Sur un ordinateur x64, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence à la clé parente sous la forme %RegistryRoot%.
 
     > [!NOTE]
     > Si l’architecture de votre ordinateur hôte diffère de celle de votre ordinateur de build, veillez à utiliser la clé parente appropriée sur chaque ordinateur. Cela est particulièrement important si vous automatisez le processus d’exportation.
@@ -340,7 +341,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -350,7 +351,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 

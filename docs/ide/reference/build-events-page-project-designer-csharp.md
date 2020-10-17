@@ -1,5 +1,7 @@
 ---
 title: Événements de build, page du Concepteur de projets (C#)
+description: Découvrez comment spécifier des instructions de configuration de Build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419053"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136847"
 ---
 # <a name="build-events-page-project-designer-c"></a>Événements de build, page du Concepteur de projets (C#)
 

@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour spécifier des événements de build (C#)
+description: Découvrez comment utiliser des événements de build pour spécifier les commandes qui s’exécutent avant le démarrage de la génération ou une fois la génération terminée.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283994"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136938"
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
 
@@ -56,7 +58,7 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
    > [!NOTE]
    > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement postbuild (fichier *.exe.manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour définir la version minimale du système d’exploitation, la commande modifie la section `<dependentOS>` du manifeste :
 
