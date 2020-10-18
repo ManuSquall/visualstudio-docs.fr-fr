@@ -1,5 +1,7 @@
 ---
 title: Présentation des plateformes de build
+description: Découvrez comment vous pouvez stocker différentes versions des propriétés de solution et de projet qui s’appliquent à différentes plateformes cibles dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115062"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136652"
 ---
 # <a name="understand-build-platforms"></a>Présentation des plateformes de build
 

@@ -2,7 +2,7 @@
 title: Utiliser Visual Studio sans souris
 titleSuffix: ''
 description: Découvrez comment naviguer et écrire du code dans l’environnement de développement intégré (IDE) Visual Studio en utilisant uniquement le clavier.
-ms.date: 05/10/2019
+ms.date: 10/16/2020
 ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770231"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92156559"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 
@@ -37,13 +37,13 @@ Pour obtenir la liste complète des touches de raccourci de commande de Visual S
 ::: moniker-end
 
 > [!NOTE]
-> Selon vos paramètres ou l’édition de Visual Studio que vous utilisez, les boîtes de dialogue et les commandes de menu que vous voyez peuvent différer de celles qui sont décrites dans l’aide. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
+> Selon vos paramètres ou l’édition de Visual Studio que vous utilisez, les boîtes de dialogue et les commandes de menu que vous voyez peuvent différer de celles qui sont décrites dans l’aide. Pour modifier vos paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Contrôles de boîte à outils
 
 Pour ajouter un contrôle sur la boîte à outils à un formulaire ou concepteur sans utiliser la souris :
 
-1. Dans la barre de menus, choisissez **Afficher**la  >  **boîte à outils**.
+1. Dans la barre de menus, sélectionnez **Afficher**la  >  **boîte à outils**.
 
 2. Utilisez les touches **CTRL** + **haut** ou **CTRL** + **bas** pour vous déplacer parmi les sections de l’onglet **boîte à outils** .
 
@@ -71,9 +71,9 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
 ## <a name="navigate-between-windows-and-files"></a>Naviguer entre fenêtres et fichiers
 
-- Pour vous déplacer entre des fichiers dans un éditeur ou un concepteur **Ctrl**, choisissez le + raccourci clavier de l'**onglet** Ctrl pour afficher le navigateur IDE avec les **fichiers actifs** sélectionnés. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
+- Pour vous déplacer entre des fichiers dans un éditeur ou un concepteur **Ctrl**, utilisez le + raccourci clavier de l'**onglet** Ctrl pour afficher le navigateur IDE avec les **fichiers actifs** sélectionnés. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
 
-- Pour vous déplacer parmi les fenêtres d’outils ancrées, choisissez le raccourci clavier **ALT** + **F7** pour afficher le navigateur IDE avec les **fenêtres d’outils actives** sélectionnées. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
+- Pour vous déplacer parmi les fenêtres d’outils ancrées, utilisez le raccourci clavier **ALT** + **F7** pour afficher le navigateur IDE avec les **fenêtres d’outils actives** sélectionnées. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
 
 ## <a name="move-and-dock-tool-windows"></a>Déplacer et ancrer les fenêtres Outil
 
@@ -81,7 +81,7 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
 2. Dans le menu **Fenêtre**, sélectionnez l’option **Ancrable**.
 
-3. Appuyez sur **ALT** + **espace**, puis choisissez **déplacer**.
+3. Appuyez sur **ALT** + **espace**, puis sélectionnez **déplacer**.
 
    Le losange d’ancrage s’affiche.
 

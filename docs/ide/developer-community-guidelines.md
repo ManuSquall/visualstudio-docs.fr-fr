@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810117"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116148"
 ---
 # <a name="developer-community-guidelines"></a>Consignes Developer Community
 
@@ -59,11 +59,13 @@ Le triage d’un problème est un processus à plusieurs étapes qui est réalis
 
 Une fois que vous signalez un problème, les états indiquent où en est votre envoi dans son cycle de vie. Au fur et à mesure que vos commentaires sont examinés par les équipes de produit Visual Studio, ils sont définis avec un état approprié. Suivez la progression de vos rapports de problèmes en référençant les [États et le Forum aux questions](./report-a-problem.md).
 
+### <a name="prioritizing-which-issues-to-fix"></a>Définition de la priorité des problèmes à résoudre
+
+Nous ne pouvons pas résoudre tout le problème signalé. Certaines sont trop coûteuses à corriger, certaines peuvent régresser d’autres fonctionnalités, et certaines peuvent avoir un impact trop faible. Nous comprenons que cela peut vous être utile si vous avez pris le temps de nous envoyer un rapport de problème. Nous y sommes là, que ce soit dans ce projet ou dans d’autres. Si un problème a été fermé et que vous avez le sentiment que nous n’avons pas satisfait, vous pouvez clarifier votre cas d’utilisation et demander le problème à réactiver pour une autre passe. À ce stade, nous pouvons vous demander des informations supplémentaires.
+
+### <a name="missing-important-information"></a>Informations importantes manquantes
+
 Lorsqu’il manque des informations importantes dans un problème, nous attribuons l’état _plus_ d’informations. Nous nous penchons sur le problème avec les informations spécifiques dont nous avons besoin et vous recevrez une notification par courrier électronique. Si nous ne recevons pas les informations dans les sept jours, nous vous enverrons un rappel. Après cela, nous fermons le ticket au bout de 14 jours d’inactivité.
-
-### <a name="wont-fix-bugs"></a>Ne corrigera pas les bogues
-
-Nous fermons certains bogues lorsqu’il y a un équilibre coût-bénéfice négatif. Par exemple, si le correctif est tellement complexe, il risque de régression pour de nombreux utilisateurs, la résolution peut ne pas être raisonnable. Quand nous fermons un bogue comme celui-ci, nous expliquons pourquoi nous le faisons.
 
 ### <a name="other-product"></a>Autre produit
 
