@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 1563efb15f98720352a25eec59c8eca045f77ddc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91025042"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92210903"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -91,12 +91,9 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Liste des membres Visual Studio](../media/intellisense-list-members.png)
 
-- Zone de recherche
+- [Recherche Visual Studio](../../ide/visual-studio-search.md)
 
-   La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La zone de recherche est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Quand vous commencez à taper le nom d’un élément que vous recherchez, Visual Studio affiche des résultats qui vous mènent exactement où vous devez accéder. Pour ajouter des fonctionnalités à Visual Studio, par exemple la prise en charge d’un langage de programmation supplémentaire, la zone de recherche fournit des résultats qui ouvrent Visual Studio Installer afin d’installer une charge de travail ou un composant spécifique.
-
-   > [!TIP]
-   > Appuyez sur **CTRL** + **Q** comme raccourci vers la zone de recherche.
+   La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La recherche Visual Studio (**CTRL** + **Q**) est un excellent moyen de trouver rapidement les fonctionnalités et le code de l’IDE à un seul endroit.
 
    ::: moniker range="vs-2017"
 
@@ -109,6 +106,8 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
    ::: moniker range="vs-2019"
 
    ![Zone de recherche dans Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+
+    Pour plus d’informations et de conseils sur la productivité, consultez [comment utiliser la recherche Visual Studio](../../ide/visual-studio-search.md).
 
    ::: moniker-end
 

@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507954"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197476"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Didacticiel : étendre une application console C# simple
 
@@ -120,9 +120,10 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Référencer des bibliothèques .NET : écrire dans un journal
 
-1. Supposons que vous souhaitez maintenant ajouter un journal de toutes les opérations et l’écrire dans un fichier texte. La `Trace` classe .NET fournit cette fonctionnalité. (C’est également utile pour les techniques de débogage d’impression de base.)  La classe trace se trouve dans System. Diagnostics. par conséquent, commencez par ajouter une directive using :
+1. Supposons que vous souhaitez maintenant ajouter un journal de toutes les opérations et l’écrire dans un fichier texte. La `Trace` classe .NET fournit cette fonctionnalité. (C’est également utile pour les techniques de débogage d’impression de base.)  La classe trace se trouve dans System. Diagnostics, et nous aurons besoin de classes System.IO comme `StreamWriter` , commencez par ajouter les directives using :
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -217,7 +218,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
    Le package est téléchargé et ajouté à votre projet et une nouvelle entrée s’affiche dans le nœud Références de **Explorateur de solutions**.
 
-1. Ajoutez une directive using pour l' Newtonsoft.Jsdu package au début de *CalculatorLibrary.cs*.
+1. Ajoutez une directive using pour System.IO et Newtonsoft.Jssur le package au début de *CalculatorLibrary.cs*.
 
    ```csharp
    using Newtonsoft.Json;
@@ -307,7 +308,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
         }
    ```
 
-1. Générez et exécutez l’application, et une fois que vous avez terminé d’entrer quelques opérations, fermez l’application correctement à l’aide de la commande « n ».  À présent, ouvrez le fichier consolelog.jssur et vous devriez voir un résultat semblable à ce qui suit :
+1. Générez et exécutez l’application, et une fois que vous avez terminé d’entrer quelques opérations, fermez l’application correctement à l’aide de la commande « n ».  À présent, ouvrez le fichier calculatorlog.jssur et vous devriez voir un résultat semblable à ce qui suit :
 
    ```json
    {
