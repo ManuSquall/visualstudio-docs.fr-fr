@@ -1,7 +1,6 @@
 ---
 title: Rechercher et remplacer du texte, et sélection avec signes insertion multiples
-description: Découvrez comment utiliser la fonctionnalité Rechercher et remplacer dans l’éditeur de code Visual Studio.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298574"
+ms.locfileid: "92334192"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 
@@ -123,9 +122,9 @@ Utilisez les touches et actions suivantes pour les comportements de la sélectio
 |**CTRL** + **ALT** + double-clic|Ajouter une sélection de mot secondaire|
 |**CTRL** + **ALT** + clic + glisser-déplacer|Ajouter une sélection secondaire|
 |**MAJ** + **ALT** + **.**|Ajouter le prochain texte correspondant en tant que sélection|
-|**CTRL** + **MAJ** + **ALT** + **,**|Ajouter tout le texte correspondant en tant que sélections|
+|**MAJ** + **ALT** + **;**|Ajouter tout le texte correspondant en tant que sélections|
 |**MAJ** + **ALT** + **,**|Supprimer la dernière occurrence sélectionnée|
-|**CTRL** + **MAJ** + **ALT** + **.**|Ignorer la prochaine occurrence correspondante|
+|**MAJ** + **ALT**+**/**|Ignorer la prochaine occurrence correspondante|
 |**Alt** + clic|Ajouter une sélection de zone|
 |**Échap** ou clic|Effacer toutes les sélections|
 

@@ -2,18 +2,18 @@
 title: Nouvelle expérience Git dans Visual Studio (préversion)
 titleSuffix: ''
 description: En savoir plus sur la nouvelle expérience git intégrée dans Visual Studio 2019
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082055"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334205"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nouvelle expérience Git dans Visual Studio (préversion)
 
@@ -98,7 +98,7 @@ Visual Studio facilite également la validation et la synchronisation d’un cli
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
 > [!TIP]
-> Vous pouvez associer l’élément de travail Azure DevOps à une validation à l’aide du caractère « # » si vous êtes connecté au référentiel Azure DevOps. Vous pouvez connecter votre référentiel Azure DevOps via Team Explorer > gérer les connexions
+> Vous pouvez associer l’élément de travail Azure DevOps à une validation en utilisant le caractère « # » si vous êtes connecté au référentiel Azure DevOps. Vous pouvez connecter votre référentiel Azure DevOps via **Team Explorer**  >  **gérer les connexions**.
 
 ### <a name="select-an-existing-branch"></a>Sélectionner une branche existante
 
@@ -191,7 +191,7 @@ Restez informé. Nous mettrons à jour cette page à mesure que nous continuons 
 > [!IMPORTANT]
 > Si vous avez une suggestion pour nous, faites-le nous savoir ! Nous apprécions l’occasion de vous contacter en cas de décisions de conception via le portail de la [**communauté des développeurs**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 - [La nouvelle vidéo git Experience](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) sur Channel 9 et [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Nouvelles mises à jour intéressantes de l’expérience git dans le billet de blog Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
