@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be233ce8730879c2f0406ec9cc180685992c6bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 908a224feb9f6ad463ae14812b3a8550bf932e35
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544935"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298553"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Éditions de Visual Studio prises en charge pour le SDK de visualisation et de modélisation
 
@@ -28,7 +28,7 @@ Pour définir un DSL, vous devez avoir installé les composants suivants :
 |Produit|Télécharger le lien|
 |-|-|
 |Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
-|Kit de développement logiciel Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Kit de développement logiciel Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true)|
 |Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)|
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -50,4 +50,4 @@ Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

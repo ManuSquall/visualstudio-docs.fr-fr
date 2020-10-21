@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039909"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298478"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -138,7 +138,7 @@ L’avantage ici est que vous pouvez lier vos contrôles à une version statique
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Utiliser des données au moment du design avec des types et des propriétés personnalisés
 
-Par défaut, cette fonctionnalité fonctionne uniquement avec les propriétés et les contrôles de plateforme. Dans cette section, nous allons passer en revue les étapes nécessaires pour vous permettre d’utiliser vos propres contrôles personnalisés comme contrôles au moment de la conception. Il y a trois exigences pour l’activer :
+Par défaut, cette fonctionnalité fonctionne uniquement avec les propriétés et les contrôles de plateforme. Dans cette section, nous allons passer en revue les étapes nécessaires pour vous permettre d’utiliser vos propres contrôles personnalisés comme contrôles au moment de la conception, une nouvelle fonctionnalité disponible pour les clients qui utilisent Visual Studio 2019 preview version [16,8](/visualstudio/releases/2019/preview-notes) ou ultérieure. Il y a trois exigences pour l’activer :
 
 - Un espace de noms xmlns personnalisé 
 

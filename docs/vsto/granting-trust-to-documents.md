@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d245ddf00e4005b763bcd4437d3f8c18d05291e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986041"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298621"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder un niveau de confiance à des documents
   Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l'application : il convient de signer les manifestes à l'aide d'un certificat ou de cliquer sur l'invite d'approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.
@@ -41,7 +41,7 @@ ms.locfileid: "72986041"
 
 - Le document lui-même est approuvé en utilisant les emplacements approuvés. Toutefois, des autorisations supplémentaires sont requises pour approuver la personnalisation. Vous pouvez accorder une confiance totale à la personnalisation en signant les manifestes à l’aide d’un certificat, en cliquant sur l’invite d’approbation ou en installant la solution Office dans le répertoire *Program Files* .
 
-- Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d’informations, consultez [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d’informations, consultez [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
 ## <a name="see-also"></a>Voir aussi
 - [Accorder un niveau de confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md)

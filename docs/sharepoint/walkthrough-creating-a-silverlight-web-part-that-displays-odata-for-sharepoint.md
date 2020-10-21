@@ -1,5 +1,6 @@
 ---
 title: Créer un composant WebPart Silverlight affichant OData pour SharePoint
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017170"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298504"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart Silverlight qui affiche OData pour SharePoint
   SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData. svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche les informations de liste d’annonces SharePoint à l’aide de ListData. svc. Pour plus d’informations, consultez [interface REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) et [Open Data Protocol](https://www.odata.org/).
@@ -68,7 +69,7 @@ ms.locfileid: "86017170"
 
 #### <a name="to-customize-the-silverlight-application"></a>Pour personnaliser l’application Silverlight
 
-1. Ajoutez une référence d’assembly à System. Windows. Data dans l’application Silverlight. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Ajoutez une référence d’assembly à System. Windows. Data dans l’application Silverlight. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](/previous-versions/wkze6zky(v=vs.140)).
 
 2. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour **références**, puis choisissez **Ajouter une référence de service**.
 

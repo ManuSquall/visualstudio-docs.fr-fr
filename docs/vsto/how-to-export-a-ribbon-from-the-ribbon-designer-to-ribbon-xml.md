@@ -1,5 +1,6 @@
 ---
 title: 'Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543466"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298438"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML
   L’élément **Ruban (concepteur visuel)** ne prend pas en charge tous les types possibles de personnalisation du ruban. Pour personnaliser le ruban de manière avancée, vous pouvez exporter le ruban du concepteur vers le ruban XML et modifier directement le code XML.

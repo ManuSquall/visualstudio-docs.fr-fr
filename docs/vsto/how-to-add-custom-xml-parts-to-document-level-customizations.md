@@ -1,5 +1,6 @@
 ---
 title: 'Comment : ajouter des parties XML personnalisées aux personnalisations au niveau du document'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92148a6f084a4cc04b4587781e750e4fd0df133f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74bceeeabdaa46e6c1a35b5ab76de6a180d16d53
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538331"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298447"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Comment : ajouter des parties XML personnalisées aux personnalisations au niveau du document
   Vous pouvez stocker des données XML dans un classeur Microsoft Office Excel ou un document Microsoft Office Word en créant une partie XML personnalisée dans une personnalisation au niveau du document. Pour plus d’informations, consultez [vue d’ensemble des parties XML personnalisées](../vsto/custom-xml-parts-overview.md).

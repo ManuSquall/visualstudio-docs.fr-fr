@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dccff7206aa9ef71596816d34a863695a10aff6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416547"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298512"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Améliorer les performances d’un complément VSTO
   Vous pouvez offrir aux utilisateurs une meilleure expérience. En effet, en optimisant les compléments VSTO que vous créez pour les applications Office, vous pouvez leur permettre d’être plus rapides pour démarrer, arrêter, ouvrir des éléments et exécuter d’autres tâches. Si vous créez un complément VSTO pour Outlook, vous pouvez également réduire les risques de désactivation du complément VSTO en raison de performances insuffisantes. Pour améliorer les performances du complément VSTO, vous pouvez implémenter les stratégies suivantes :
@@ -115,6 +115,6 @@ ms.locfileid: "79416547"
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Compléments VSTO de chargement à la demande](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
-- [Delay-loading the CLR in Office Add-ins](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
+- [Compléments VSTO de chargement à la demande](/archive/blogs/andreww/demand-loading-vsto-add-ins)
+- [Delay-loading the CLR in Office Add-ins](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
 - [Créer des compléments VSTO pour Office à l'aide de Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)

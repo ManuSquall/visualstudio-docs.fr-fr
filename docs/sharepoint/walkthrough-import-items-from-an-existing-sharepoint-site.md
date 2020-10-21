@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : importer des éléments à partir d’un site SharePoint existant | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017117"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298639"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procédure pas à pas : importer des éléments à partir d’un site SharePoint existant
   Cette procédure pas à pas montre comment importer des éléments à partir d’un site SharePoint existant dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.

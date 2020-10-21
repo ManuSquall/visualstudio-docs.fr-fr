@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536784"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298747"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de débogage à distance sur IIS dans Azure dans Visual Studio
 
@@ -96,7 +96,7 @@ Dans Visual Studio, vous pouvez rapidement publier et déboguer votre applicatio
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-    C’est tout ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
+    Et voilà ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> Débogage à distance ASP.NET Core sur une machine virtuelle Azure
 
@@ -255,7 +255,7 @@ Téléchargez la version des outils de contrôle à distance qui correspond à v
 
 6. Tapez la première lettre de votre nom de processus pour trouver rapidement votre application.
 
-    * Si vous utilisez le [modèle d’hébergement in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) sur IIS, sélectionnez le processus de **w3wp.exe** approprié. À compter de .NET Core 3, il s’agit de la valeur par défaut.
+    * Si vous utilisez le [modèle d’hébergement in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) sur IIS, sélectionnez le processus de **w3wp.exe** approprié. À compter de .NET Core 3, il s’agit de la valeur par défaut.
 
     * Dans le cas contraire, sélectionnez le processus de **dotnet.exe** . (Il s’agit du modèle d’hébergement out-of-process.)
 

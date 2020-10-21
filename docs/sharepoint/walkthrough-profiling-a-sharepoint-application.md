@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017101"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298634"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procédure pas à pas : profilage d’une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L'application d'exemple est un récepteur d'événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d'événements de fonctionnalité. Le profileur Visual Studio vous permet de localiser et d’éliminer la partie la plus coûteuse (la plus lente) du projet, également appelée *chemin réactif*.
@@ -275,4 +275,4 @@ ms.locfileid: "86017101"
 ## <a name="see-also"></a>Voir aussi
 - [Présentation de la session de performance](../profiling/performance-session-overview.md)
 - [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)
-- [Rechercher les goulots d’étranglement d’application avec le profileur Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Rechercher les goulots d’étranglement d’application avec le profileur Visual Studio](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

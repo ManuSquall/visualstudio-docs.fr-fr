@@ -24,7 +24,7 @@ ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311051"
+ms.locfileid: "92298728"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Débogage à distance d’un projet C# ou Visual Basic dans Visual Studio
 Pour déboguer une application Visual Studio qui a été déployée sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous avez déployé votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis exécutez votre application.

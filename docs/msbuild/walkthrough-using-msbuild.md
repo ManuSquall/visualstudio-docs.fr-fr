@@ -1,6 +1,7 @@
 ---
-title: 'Procédure pas à pas : utilisation de MSBuild | Microsoft Docs'
-ms.date: 03/20/2019
+title: Utiliser MSBuild
+description: Découvrez les différentes parties d’un fichier projet MSBuild, y compris les éléments, les métadonnées d’élément, les propriétés, les cibles et les tâches.
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.custom: contperfq2
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91134816"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298544"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : utiliser MSBuild
 
@@ -29,6 +30,24 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
 - utiliser des éléments de génération.
 
 Vous pouvez exécuter MSBuild à partir de Visual Studio ou à partir de la **fenêtre commande**. Dans cette procédure pas à pas, vous créez un fichier projet MSBuild à l’aide de Visual Studio. Vous modifiez le fichier projet dans Visual Studio et utilisez la **fenêtre Commande** pour générer le projet et examiner les résultats.
+
+## <a name="install-msbuild"></a>Installer MSBuild
+
+::: moniker range="vs-2017"
+
+Si vous disposez de Visual Studio, MSBuild est déjà installé. Pour installer MSBuild 15 sur un système qui ne dispose pas de Visual Studio, accédez à [téléchargements plus anciens de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/), développez **Visual Studio 2017** , puis choisissez le bouton **Télécharger** . Si vous disposez d’un abonnement Visual Studio, connectez-vous et recherchez le lien pour télécharger la dernière version des **outils de génération pour Visual Studio 2017**. Si vous n’avez pas d’abonnement Visual Studio, vous pouvez toujours installer la dernière version des outils de génération. Sur cette page, utilisez le sélecteur de version pour basculer vers la version 2019 de la page et suivez les instructions d’installation.
+::: moniker-end
+
+::: moniker range="vs-2019"
+Si vous disposez de Visual Studio, MSBuild est déjà installé. Avec Visual Studio 2019, il est installé dans le dossier d’installation de Visual Studio. Pour une installation par défaut classique sur Windows 10, MSBuild.exe se trouve sous le dossier d’installation dans *MSBuild\Current\Bin*.
+
+Pour installer MSBuild sur un système qui ne dispose pas de Visual Studio, accédez à [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) et faites défiler jusqu’à **tous les téléchargements**, puis développez **outils pour Visual Studio 2019**. Installez les **outils de génération pour Visual Studio 2019**, qui incluent MSBuild, ou installez le [Kit SDK .net Core](/dotnet/core/sdk#acquiring-the-net-core-sdk).
+
+Dans le programme d’installation, assurez-vous que les outils MSBuild pour les charges de travail que vous utilisez sont sélectionnés, puis choisissez **installer**.
+
+![Installation de MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+::: moniker-end
 
 ## <a name="create-an-msbuild-project"></a>Création d’un projet MSBuild
 
@@ -100,7 +119,7 @@ La cible par défaut n’est pas définie dans le fichier projet. Au lieu de cel
 
 Les fichiers importés sont insérés dans le fichier projet partout où ils sont référencés.
 
-Dans projcts de style SDK, vous ne voyez pas cet élément import, car l’attribut SDK entraîne l’importation implicite de ce fichier.
+Dans les projets de type SDK, vous ne voyez pas cet élément import, car l’attribut SDK entraîne l’importation implicite de ce fichier.
 
 MSBuild effectue le suivi des cibles d’une génération et garantit que chaque cible est générée une seule fois.
 
@@ -193,7 +212,7 @@ Exécutez MSBuild à partir de **l’Invite de commandes développeur** pour Vis
 
  définit la propriété nommée TargetFrameworkVersion, en lui donnant la valeur de chaîne « v 4.5 ».
 
- Les propriétés de génération peuvent être redéfinies à tout moment. If
+ Les propriétés de génération peuvent être redéfinies à tout moment. Si
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -230,7 +249,7 @@ Utilisez cette syntaxe pour examiner certaines propriétés du fichier projet.
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-1. Analyser la sortie. Vous devez observer ces deux lignes (votre version .NET Framework peut varier) :
+1. Examinez la sortie. Vous devez observer ces deux lignes (votre version .NET Framework peut varier) :
 
     ::: moniker range=">=vs-2019"
 
@@ -281,7 +300,7 @@ Il est possible de définir des propriétés en ligne de commande à l’aide du
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-1. Analyser la sortie. Vous devez normalement voir cette ligne :
+1. Examinez la sortie. Vous devez normalement voir cette ligne :
 
     ```output
     Configuration is Release.
@@ -311,7 +330,7 @@ Modifiez la tâche Message pour afficher la valeur de la propriété Configurati
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-1. Analyser la sortie. Vous devez normalement voir cette ligne :
+1. Examinez la sortie. Vous devez normalement voir cette ligne :
 
     ```output
     $(Configuration) is "Debug"
@@ -375,7 +394,7 @@ Utilisez cette syntaxe pour examiner le type d’élément Compile dans le fichi
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-1. Analyser la sortie. Vous devez normalement observer cette longue ligne :
+1. Examinez la sortie. Vous devez normalement observer cette longue ligne :
 
     ```
     Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
@@ -407,7 +426,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Analyser la sortie. Vous devez normalement voir ces lignes :
+4. Examinez la sortie. Vous devez normalement voir ces lignes :
 
     ```
     Compile item type contains Form1.cs
@@ -488,7 +507,7 @@ n’exclut pas le fichier *Form1.cs*, qui a été ajouté dans l’élément ite
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-5. Analyser la sortie. Vous devez normalement voir cette ligne :
+5. Examinez la sortie. Vous devez normalement voir cette ligne :
 
     ```
     XFiles item type contains Form1.cs;Program.cs;Properties/Resources.resx
@@ -530,7 +549,7 @@ n’exclut pas le fichier *Form1.cs*, qui a été ajouté dans l’élément ite
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Analyser la sortie. Vous devez normalement voir ces lignes :
+4. Examinez la sortie. Vous devez normalement voir ces lignes :
 
     ```output
     Compile.DependentUpon:
@@ -561,7 +580,7 @@ Notez que l’expression « Compile.DependentUpon » apparaît plusieurs fois.
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Analyser la sortie. Vous devez normalement voir ces lignes :
+4. Examinez la sortie. Vous devez normalement voir ces lignes :
 
     ```output
     Compile Filename: Form1
@@ -600,7 +619,7 @@ Par exemple, une liste d’éléments de fichiers sources peut être transformé
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Analyser la sortie. Vous devez normalement voir cette ligne :
+4. Examinez la sortie. Vous devez normalement voir cette ligne :
 
     ```output
     Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak

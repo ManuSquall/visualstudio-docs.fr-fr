@@ -9,16 +9,17 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283162"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92298220"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Déboguer des applications dans un conteneur d’ancrage local
 
-Visual Studio offre un moyen cohérent de développer des conteneurs d’ancrage et de valider votre application localement. Vous pouvez exécuter et déboguer vos applications dans des conteneurs Linux ou Windows qui s’exécutent sur votre bureau Windows local avec Dockr, et vous n’êtes pas obligé de redémarrer le conteneur chaque fois que vous apportez une modification au code.
+Visual Studio offre un moyen cohérent de développer des conteneurs d’ancrage et de valider votre application localement.
+Vous pouvez exécuter et déboguer vos applications dans des conteneurs Linux ou Windows qui s’exécutent sur votre bureau Windows local avec Dockr, et vous n’êtes pas obligé de redémarrer le conteneur chaque fois que vous apportez une modification au code.
 
 Cet article explique comment utiliser Visual Studio pour démarrer une application dans un conteneur d’ancrage local, apporter des modifications, puis actualiser le navigateur pour voir les modifications. Cet article vous montre également comment définir des points d’arrêt pour le débogage des applications en conteneur. Les types de projets pris en charge incluent .NET Framework et les applications Web et de console .NET Core. Dans cet article, nous utilisons ASP.NET Core applications Web et les applications de la console .NET Framework.
 
@@ -40,7 +41,7 @@ Pour déboguer des applications dans un conteneur d’ancrage local, les outils 
 
 ::: moniker-end
 
-Pour exécuter des conteneurs de l’arrimeur localement, vous devez disposer d’un client Dockr local. Vous pouvez utiliser la [boîte à outils](https://www.docker.com/products/docker-toolbox)de l’ancrage, qui nécessite la désactivation d’Hyper-V. Vous pouvez également utiliser [docker pour Windows](https://www.docker.com/get-docker), qui utilise Hyper-V et requiert Windows 10.
+Pour exécuter des conteneurs de l’arrimeur localement, vous devez disposer d’un client Dockr local. Vous pouvez utiliser [docker pour Windows](https://www.docker.com/get-docker), qui utilise Hyper-V et requiert Windows 10.
 
 Les conteneurs d’ancrage sont disponibles pour les projets .NET Framework et .NET Core. Examinons ces deux exemples. Tout d’abord, nous examinons une application Web .NET Core. Ensuite, nous examinons une application console .NET Framework.
 
@@ -65,18 +66,18 @@ Pour effectuer une itération rapide des modifications, vous pouvez démarrer vo
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
-    
+
     public void ConfigureServices(IServiceCollection services)
     {
         IMvcBuilder builder = services.AddRazorPages();
-    
+
     #if DEBUG
         if (Env.IsDevelopment())
         {
             builder.AddRazorRuntimeCompilation();
         }
     #endif
-    
+
         // code omitted for brevity
     }
     ```
@@ -91,7 +92,7 @@ Pour effectuer une itération rapide des modifications, vous pouvez démarrer vo
     }
     ```
 
-   Pour plus d’informations, consultez la rubrique [compilation de fichiers Razor dans ASP.net Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
+   Pour plus d’informations, consultez la rubrique [compilation de fichiers Razor dans ASP.net Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true).
 
 1. Définissez **configuration** de la solution à **Déboguer**. Ensuite, appuyez sur **CTRL** + **F5** pour générer votre image d’ancrage et l’exécuter localement.
 
@@ -169,7 +170,7 @@ Pour plus d’informations, consultez [comment Visual Studio génère des applic
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>En savoir plus sur Docker avec Visual Studio, Windows et Azure
 
-* En savoir plus sur le [développement de conteneurs avec Visual Studio](/visualstudio/containers).
+* En savoir plus sur le [développement de conteneurs avec Visual Studio](./index.yml).
 * Pour générer et déployer un conteneur d’ancrage, consultez [intégration de l’amarrage pour Azure pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
 * Pour obtenir un index des articles Windows Server et nano Server, consultez les [informations relatives au conteneur Windows](/virtualization/windowscontainers/).
 * Découvrez [Azure Kubernetes service](https://azure.microsoft.com/services/kubernetes-service/) et consultez la [documentation du service Azure Kubernetes](/azure/aks).

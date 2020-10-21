@@ -1,5 +1,6 @@
 ---
 title: Rechercher et remplacer du texte, et sélection avec signes insertion multiples
+description: Découvrez comment utiliser la fonctionnalité Rechercher et remplacer dans l’éditeur de code Visual Studio.
 ms.date: 08/14/2018
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590343"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298574"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 
@@ -130,7 +131,7 @@ Utilisez les touches et actions suivantes pour les comportements de la sélectio
 
 Certaines des commandes sont également disponibles dans le menu **Edition**, sous **Signes insertion multiples** :
 
-![Menu volant Signes insertion multiples dans Visual Studio](media/edit-menu-multiple-carets.png)
+:::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Capture d’écran du menu volant des signes insertion multiple dans Visual Studio":::
 
 ## <a name="see-also"></a>Voir aussi
 

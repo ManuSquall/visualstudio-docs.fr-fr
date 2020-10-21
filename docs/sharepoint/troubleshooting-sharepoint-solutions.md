@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661885"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298398"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Résoudre les problèmes des solutions SharePoint
-  Les problèmes ou alertes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide du [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de solutions de flux de travail SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Les problèmes ou alertes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide du [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de solutions de flux de travail SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restrictions de jeton dans les composants Visual Web part sandbox
  Les composants Visual WebPart de solutions bac à sable ne peuvent pas traiter les jetons standard, tels que $SPUrl, que le runtime SharePoint prend en charge. Par conséquent, l'URL n'est pas résolue et vous ne pouvez pas avoir d'aperçu du contenu en mode Design du concepteur de composants Visual WebPart si vous y faites référence directement dans un élément de script, tel que dans l'exemple suivant :

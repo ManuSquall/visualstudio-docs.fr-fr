@@ -1,5 +1,6 @@
 ---
-title: 'Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer dans Visual Studio | Microsoft Docs'
+title: 'Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015695"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298033"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer dans Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer
+
   Cette procédure pas à pas montre comment importer un flux de travail réutilisable créé dans SharePoint Designer 2010 dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet de flux de travail SharePoint.
 
  Les flux de travail créés dans SharePoint Designer, ou les *flux de travail déclaratifs*, consistent en des [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instructions au lieu de code. SharePoint Designer 2010 présente des *flux de travail réutilisables*, qui sont des flux de travail déclaratifs portables qui peuvent être utilisés par différentes listes dans les sites SharePoint.
@@ -186,7 +188,7 @@ ms.locfileid: "86015695"
 
      La liste s’affiche immédiatement lorsque vous déboguez le projet.
 
-11. Étant donné que le modèle de **flux de travail SharePoint 2010 d’importation réutilisable** n’importe pas les valeurs de propriété d’association pour le flux de travail importé, vous devez les entrer. Pour cela :
+11. Étant donné que le modèle de **flux de travail SharePoint 2010 d’importation réutilisable** n’importe pas les valeurs de propriété d’association pour le flux de travail importé, vous devez les entrer. Pour ce faire :
 
     1. Dans **Explorateur de solutions**, choisissez le nœud **SPD_Workflow_TestFT** .
 

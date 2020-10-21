@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951182"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298462"
 ---
 # <a name="custom-document-properties-overview"></a>Vue d’ensemble des propriétés de document personnalisées
 
@@ -30,7 +30,7 @@ Quand vous générez un projet au niveau du document, Visual Studio ajoute deux 
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="_assemblyname"></a>\_NomAssembly
+## <a name="_assemblyname"></a>\_AssemblyName
 
 Cette propriété contient le CLSID d’une interface dans le composant chargeur de solution Office de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . La valeur du CLSID est 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B. Vous ne devez jamais modifier cette valeur.
 
@@ -55,5 +55,5 @@ Cette propriété contient une chaîne qui fournit des détails sur le manifeste
 - [Architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
 - [Manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Comment : publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Comment : publier une solution Office à l’aide de ClickOnce](/previous-versions/bb386095(v=vs.110))
 - [Comment : créer et modifier des propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)

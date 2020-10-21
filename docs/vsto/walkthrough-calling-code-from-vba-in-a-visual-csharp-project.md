@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839666"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297942"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procédure pas à pas : appel de code à partir de VBA dans un projet Visual C#
   Cette procédure pas à pas montre comment appeler une méthode dans une personnalisation au niveau du document pour Microsoft Office Excel à partir du code VBA (Visual Basic pour Applications) du classeur. Cette procédure comporte trois étapes de base : l'ajout d'une méthode dans la classe d'élément hôte `Sheet1` , l'exposition de la méthode au code VBA dans le classeur, puis l'appel de la méthode à partir du code VBA dans le classeur.
@@ -66,7 +66,7 @@ ms.locfileid: "90839666"
 
 1. Démarrez Excel.
 
-2. Enregistrez le document actif en tant que **classeur Excel prenant en charge les macros ( \* . xlsm)** avec le nom **ClasseurAvecVBA**. dans un emplacement approprié, tel que le Bureau.
+2. Enregistrez le document actif en tant que **classeur Excel Macro-Enabled ( \* . xlsm)** nommé **ClasseurAvecVBA**. dans un emplacement approprié, tel que le Bureau.
 
 3. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
@@ -161,7 +161,7 @@ ms.locfileid: "90839666"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Ajoutez la méthode suivante à la classe `Sheet1`. Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .
+3. Ajoutez la méthode suivante à la classe `Sheet1`. Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 

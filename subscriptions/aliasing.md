@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: La connexion peut échouer si des alias ou des noms conviviaux sont utilisés.
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006213"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298184"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à des abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
@@ -33,10 +33,10 @@ Une incompatibilité de nom UPN peut être rencontrée quand une société a une
 
 1. Connectez https://my.visualstudio.com/subscriptions -vous à à l’aide de l’adresse de connexion mentionnée dans votre e-mail d’affectation d’abonnement.
 
-2. Vérifiez que l’adresse e-mail de connexion indiquée en haut à droite de la page correspond à celle que vous avez utilisée pour vous connecter.  Si ce n’est pas le cas, votre nom d’utilisateur principal ne correspond pas et vous ne pourrez pas afficher votre abonnement. 
+2. Cliquez sur votre nom dans le coin supérieur droit de la page.  Votre profil s’ouvre.  Vérifiez que l’adresse e-mail de connexion indiquée dans votre profil correspond à celle que vous avez utilisée pour vous connecter.  Si ce n’est pas le cas, votre nom d’utilisateur principal ne correspond pas et vous ne pourrez pas afficher votre abonnement. 
 
 > [!div class="mx-imgBorder"]
-> ![Adresse de messagerie de connexion](_img//aliasing/sign-in-email.png "Assurez-vous que l’adresse de messagerie affichée dans le coin supérieur droit correspond à celle que vous utilisez pour vous connecter.")
+> ![Adresse de messagerie de connexion](_img//aliasing/sign-in-email.png "Assurez-vous que l’adresse de messagerie affichée dans votre profil correspond à celle que vous utilisez pour vous connecter.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Correction d’une incompatibilité UPN
 

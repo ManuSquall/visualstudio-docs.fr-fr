@@ -14,19 +14,19 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: fe2927a7a863b3825a680096da44afa6d68f1cba
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149193"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298694"
 ---
-### <a name="supported-operating-systems"></a>Systèmes d'exploitation pris en charge  
+### <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge  
 
 L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suivants :  
   
-- Windows 10 (pas le téléphone)
+- Windows 10 (pas téléphone)
   
-- Windows 8 ou 8.1 (pas le téléphone)
+- Windows 8 ou 8,1 (pas téléphone)
   
 - Windows 7 Service Pack 1  
 
@@ -37,7 +37,7 @@ L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suiv
 - Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1
 
 > [!NOTE]
-> Windows Phone requiert une connexion USB pour déboguer (il ne nécessite pas les outils à distance).
+> Windows Phone nécessite une connexion USB pour déboguer (il ne nécessite pas les outils de contrôle à distance).
   
 ### <a name="supported-hardware-configurations"></a>Configurations matérielles prises en charge  
   
@@ -45,7 +45,7 @@ L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suiv
   
 - 1 Go de RAM (1,5 Go s’il s’agit d’une machine virtuelle)  
   
-- 1 Go d’espace disque disponible  
+- 1 Go d'espace disque disponible  
   
 - Disque dur 5 400 tours/min  
   
@@ -53,4 +53,4 @@ L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suiv
   
 ### <a name="network-configuration"></a>Configuration réseau  
 
-L’ordinateur distant et l’ordinateur Visual Studio doivent être connectés sur un réseau, un groupe de travail, un groupe résidentiel ou directement connectés à l’aide d’un câble Ethernet. Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles.
+L’ordinateur distant et l’ordinateur Visual Studio doivent être connectés sur un réseau, un groupe de travail, un groupe résidentiel ou directement connectés à l’aide d’un câble Ethernet. Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Le débogage sur une connexion à latence élevée ou à faible bande passante, tel qu’Internet à distance ou sur Internet dans les différents pays, n’est pas recommandé et peut échouer ou être trop lent.

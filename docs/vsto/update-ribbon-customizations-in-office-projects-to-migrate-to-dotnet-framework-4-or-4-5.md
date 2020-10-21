@@ -1,5 +1,6 @@
 ---
-title: Mettre à jour les personnalisations de ruban dans les projets Office migrés vers .NET Framework 4, 4,5
+title: Mettre à jour les personnalisations du ruban migrées vers .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254349"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298602"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour les personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou le .NET Framework 4,5
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Mettre à jour les personnalisations du ruban migrées vers .NET Framework 4,5
+
   Si votre projet contient une personnalisation de ruban qui a été créée à l’aide de l’élément de projet **Ruban (concepteur visuel)** , vous devez apporter les modifications suivantes à votre code de projet si la version cible de .NET Framework est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.
 
 - Modifiez le code de ruban généré.
@@ -123,7 +125,7 @@ ms.locfileid: "71254349"
 \<CodeContentPlaceHolder>10 </CodeContentPlaceHolder> 
  \<CodeContentPlaceHolder> 11 </CodeContentPlaceHolder> le tableau suivant répertorie les contrôles que vous pouvez créer par programmation et la méthode à utiliser pour créer les contrôles dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure.
 
-|Contrôler|Méthode RibbonFactory à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|
+|Control|Méthode RibbonFactory à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|
 |-------------| - |
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|
