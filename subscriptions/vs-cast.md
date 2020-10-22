@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005948"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353367"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
 Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insights critiques. Avec la diffusion en surbrillance, les abonnés Visual Studio peuvent analyser rapidement le code source de leur application pour identifier la préparation du Cloud de leurs applications en vue d’une migration vers Azure et surveiller la progression de leur application pendant et après une migration.
@@ -26,14 +26,14 @@ Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insig
 2. Recherchez la vignette de l’avantage CAST Highlight dans la catégorie « Outils », puis cliquez sur **Obtenir un code**.
 
    > [!div class="mx-imgBorder"]
-   > ![Vignette de l’avantage CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![Vignette de l’avantage CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Cliquez sur « recevoir le code » dans la vignette de l’avantage de la mise en surbrillance du CAST pour commencer.")
 
 0. Vous recevez un message vous informant que votre code a été récupéré.  Cliquez sur **Activer**. (Si vous choisissez de ne pas procéder à l’activation à ce stade, vous pouvez toujours revenir à la vignette de CAST Highlight dans le portail de l’abonnement.  Le lien « Obtenir un code » devient « Activer ». Cliquez sur ce lien pour reprendre le processus d’activation.)
 
 0. Vous êtes alors redirigé vers la page de CAST Highlight où vous pouvez explorer les fonctionnalités de votre abonnement.  Quand vous êtes prêt à créer votre compte, indiquez simplement vos informations de contact dans le formulaire web et cliquez sur **Envoyer**.
 
     > [!div class="mx-imgBorder"]
-    > ![Page de destination de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![Page de destination de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png "Indiquez vos informations personnelles pour activer votre abonnement de conversion.")
 
    > [!NOTE]
    > Les activations de l’avantage CAST Highlight sont limitées à dix par organisation.  Si les dix activations de votre organisation sont déjà utilisées, vous ne pouvez pas activer l’avantage CAST Highlight et vous recevez un e-mail accompagné d’informations.

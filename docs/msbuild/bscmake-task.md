@@ -1,5 +1,7 @@
 ---
 title: BscMake, tâche | Microsoft Docs
+description: En savoir plus sur BscMake, qui a inclus l’outil Microsoft Browse information Maintenance Utility bscmake.exe. L’IDE de Visual Studio n’utilise plus BscMake.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7618d7e4e16de151c296d66a0c5798475f7ca43
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634511"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353276"
 ---
 # <a name="bscmake-task"></a>BscMake, tâche
 

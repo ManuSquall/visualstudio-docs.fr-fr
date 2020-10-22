@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Découvrez l’avantage Concierge Chat inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006317"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353380"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat dans les abonnements Visual Studio
 Le service Concierge Chat vous aide à rechercher des informations sur les produits et de la documentation technique. Il vous permet également d’utiliser les avantages liés à votre abonnement Visual Studio.
@@ -25,7 +25,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 
 2. Recherchez la vignette Concierge Chat dans la section Support de la page des avantages, puis cliquez sur **Démarrer une conversation**.
     > [!div class="mx-imgBorder"]
-    > ![Vignette de Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Vignette de Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Cliquez sur « discuter maintenant » pour lancer une nouvelle session de conversation.")
 
 3. Cliquez sur **Continuer**.
 
@@ -33,7 +33,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 
 5. La conversation démarre dès qu’un agent est disponible.
     > [!div class="mx-imgBorder"]
-    > ![Concierge Chat, Session](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Concierge Chat, Session](_img/vs-concierge-chat/vs-concierge-chat-session.png "La fenêtre session de conversation s’affiche lorsqu’un agent rejoint la session.")
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |

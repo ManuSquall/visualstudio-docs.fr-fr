@@ -1,5 +1,7 @@
 ---
 title: Génération parallèle de plusieurs projets avec MSBuild | Microsoft Docs
+description: Découvrez les paramètres MSBuild que vous pouvez utiliser pour générer plus rapidement plusieurs projets en les exécutant en parallèle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634498"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353237"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Générer plusieurs projets en parallèle avec MSBuild
 

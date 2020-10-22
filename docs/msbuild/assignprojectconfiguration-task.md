@@ -1,5 +1,7 @@
 ---
 title: Tâche AssignProjectConfiguration | Microsoft Docs
+description: Utilisez la tâche MSBuild AssignProjectConfiguration pour accepter une liste de chaînes de configuration et les assigner aux projets spécifiés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508520"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353393"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration, tâche
 

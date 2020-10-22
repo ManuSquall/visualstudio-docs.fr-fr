@@ -1,5 +1,7 @@
 ---
 title: Comment MSBuild génère des projets
+description: Découvrez comment MSBuild traite vos fichiers projet, s’ils sont appelés à partir de Visual Studio ou à partir d’une ligne de commande ou d’un script.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136860"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353250"
 ---
 # <a name="how-msbuild-builds-projects"></a>Comment MSBuild génère des projets
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: Informations destinées aux fournisseurs de solutions cloud concernant l’achat et la gestion d’abonnements cloud Visual Studio pour vos clients.
-ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006226"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353263"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.microsoft.com/cloud-solution-provider) peuvent acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional pour leurs clients.
@@ -47,7 +47,7 @@ Toute personne ayant un [accès Propriétaire ou Contributeur](https://na01.safe
 >[!NOTE]
 > Vous devez suivre ces étapes chaque fois que vous achetez des abonnements Visual Studio en tant que fournisseur de solutions Cloud. À l’heure actuelle, il n’existe aucune API pour automatiser l’achat.
 
-Après avoir confirmé l’achat, vous pouvez choisir **Gérer** pour affecter des abonnements aux utilisateurs finaux de votre client.  Vous pouvez également accéder au portail d’administration des abonnements à partir de l’Espace partenaires en choisissant **Gestion des services**.  À partir de là, consultez les étapes ou la vidéo ci-dessous.
+Après avoir confirmé l’achat, vous pouvez choisir **Gérer** pour affecter des abonnements aux utilisateurs finaux de votre client.  Vous pouvez également accéder au portail d’administration des abonnements à partir de l’espace partenaires en choisissant **gestion des services**.  À partir de là, consultez les étapes ou la vidéo ci-dessous.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Comment gérer les abonnements cloud Visual Studio pour votre client
 
@@ -69,7 +69,7 @@ Pour voir les tarifs de Visual Studio pour les partenaires CSP, connectez-vous �
 
 Voici comment interpréter les différents éléments de cette feuille de calcul :
 
-| Catégorie du compteur    |   Nom                 |  Unités                                |           De quoi s’agit-il ?                          |
+| Catégorie du compteur    |   Name                 |  Unités                                |           De quoi s’agit-il ?                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Entreprise             |  Abonnement                         | Abonnement mensuel à Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Abonnement                         | Abonnement mensuel à Visual Studio Professional |

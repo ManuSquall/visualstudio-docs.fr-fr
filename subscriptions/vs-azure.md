@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/28/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Découvrez comment activer l’offre Azure DevTest pour les crédits individuels inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91003844"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353094"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure est votre bac à sable personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
@@ -22,23 +22,23 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 
 2. Recherchez la vignette Azure dans la section outils de la page avantages, puis sélectionnez **activer** le lien en bas de la vignette de l’avantage.
    > [!div class="mx-imgBorder"]
-   > ![Vignette Azure](_img/vs-azure/vs-azure-tile.png)
+   > ![Vignette Azure](_img/vs-azure/vs-azure-tile.png "Cliquez sur le bouton « Activer » sur la vignette Azure pour commencer.")
 
 3. Si vous n’avez pas d’abonnement Azure, vous êtes invité à renseigner les informations requises pour créer votre abonnement Azure.  La première étape consiste à fournir vos informations personnelles, puis à sélectionner **suivant**.
    > [!div class="mx-imgBorder"]
-   > ![Inscription à Azure](_img/vs-azure/vs-azure-about-you.png)
+   > ![Inscription à Azure](_img/vs-azure/vs-azure-about-you.png "Ajoutez vos coordonnées personnelles à votre abonnement Azure.")
 
 4. Ensuite, vous devez vérifier votre identité à l’aide d’un code de vérification simple. Indiquez votre numéro de téléphone et indiquez si vous souhaitez recevoir le code par SMS ou par téléphone.  Entrez le code que vous recevez, puis sélectionnez **vérifier le code**.   
    > [!div class="mx-imgBorder"]
-   > ![Préparation d’Azure](_img/vs-azure/vs-azure-identity.png)
+   > ![Préparation d’Azure](_img/vs-azure/vs-azure-identity.png "Demandez un code de vérification, puis entrez-le pour continuer.")
 
 5. Pour l’étape finale, cochez la case pour accepter les termes du contrat, puis sélectionnez s' **inscrire**.  C’est tout !
    > [!div class="mx-imgBorder"]
-   > ![Préparation d’Azure](_img/vs-azure/vs-azure-agreement.png)
+   > ![Inscription Azure](_img/vs-azure/vs-azure-agreement.png "Cliquez sur le bouton « s’inscrire » pour terminer la création de votre abonnement Azure.")
 
 0. Le Centre de démarrage rapide du tableau de bord Azure se charge.  
    > [!div class="mx-imgBorder"]
-   > ![Tableau de bord Azure](_img/vs-azure/vs-azure-quick-start.png) 
+   > ![Tableau de bord Azure](_img/vs-azure/vs-azure-quick-start.png "Une fois votre abonnement Azure créé, vous êtes redirigé vers le Portail Azure.") 
 
 0. Ajoutez un signet à la [portail Azure](https://portal.azure.com) pour un accès facile à l’avenir.
 

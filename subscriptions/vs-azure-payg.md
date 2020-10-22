@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 04/15/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Découvrez comment créer votre compte Azure avec paiement à l’utilisation.
-ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4071b16c56e67bdd86ba95f2ff982758cd23e150
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005071"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353181"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Abonnements Azure DevTest avec paiement à l’accès
 Collaborez avec votre équipe dans le cloud.  Créez plusieurs abonnements Dev/Test - Paiement à l’utilisation, pour vous permettre de collaborer avec d’autres abonnés tout en garantissant une séparation entre les équipes et les environnements.  Vous bénéficiez de tarifs horaires préférentiels exclusifs pour les droits d’utilisation Dev/Test et cloud des logiciels de votre abonnement sur Azure.
@@ -20,7 +20,7 @@ Collaborez avec votre équipe dans le cloud.  Créez plusieurs abonnements Dev/T
 ## <a name="set-up-a-subscription"></a>Configurer un abonnement
 1. Pour utiliser votre avantage d’abonnement Azure de paiement à l’utilisation, connectez-vous à, [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) puis cliquez sur le lien **activer** en bas de la vignette de l’avantage.
    > [!div class="mx-imgBorder"]
-   > ![Vignette d’Azure PAYG](_img/vs-azure-payg/vs-azure-payg-tile.png)
+   > ![Vignette d’Azure PAYG](_img/vs-azure-payg/vs-azure-payg-tile.png "Pour commencer, cliquez sur activer sur la vignette abonnement de paiement à l’accès DevTest.")
 
 2. Si vous avez déjà activé un compte Azure dans le cadre de vos avantages d’abonnement (par exemple, si vous avez un abonnement d’entreprise et que vous avez activé votre crédit individuel Azure DevTest mensuel de $150), passez à l’étape 5.
 

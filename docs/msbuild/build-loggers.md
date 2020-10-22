@@ -1,5 +1,7 @@
 ---
 title: Enregistreurs d’événements de génération | Microsoft Docs
+description: Utilisez les enregistreurs d’événements MSBuild pour gérer et personnaliser la sortie de votre génération et afficher des messages, des erreurs ou des avertissements en réponse à des événements de build spécifiques.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634524"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353198"
 ---
 # <a name="build-loggers"></a>Enregistreurs d’événements de génération
 
@@ -64,7 +66,7 @@ La ligne de commande suivante génère le projet avec le même enregistreur d’
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
 ### <a name="description"></a>Description
 
@@ -74,7 +76,7 @@ L’exemple suivant contient le code complet pour l’enregistreur d’événeme
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
 ### <a name="description"></a>Description
 
