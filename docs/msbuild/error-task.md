@@ -1,5 +1,7 @@
 ---
 title: Tâche Error | Microsoft Docs
+description: Utilisez la tâche d’erreur MSBuild pour arrêter une génération et consigner une erreur en fonction d’une instruction conditionnelle évaluée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634225"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436647"
 ---
 # <a name="error-task"></a>Erreur (tâche)
 
@@ -40,7 +42,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Error` .
 | `HelpKeyword` | Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’erreur. |
 | `Text` | Paramètre `String` facultatif.<br /><br /> Texte d’erreur que MSBuild enregistre si le `Condition` paramètre a la valeur `true` . |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 La `Error` tâche permet aux projets MSBuild d’émettre du texte d’erreur dans les journaux et d’arrêter l’exécution de la génération.
 

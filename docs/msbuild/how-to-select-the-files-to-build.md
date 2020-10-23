@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour sélectionner des fichiers dans une build | Microsoft Docs
+description: Découvrez comment sélectionner les fichiers à générer dans le fichier projet MSBuild en répertoriant chaque fichier séparément ou en utilisant des caractères génériques.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633809"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436194"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
 
@@ -35,7 +37,7 @@ Pour inclure des fichiers pour une build, ceux-ci doivent être inclus dans une 
 
     `<CSFile Include="form1.cs"/>`
 
-    ou
+    or
 
     `<VBFile Include="form1.vb"/>`
 
@@ -48,7 +50,7 @@ Pour inclure des fichiers pour une build, ceux-ci doivent être inclus dans une 
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
-    ou
+    or
 
     `<VBFile Include="form1.vb;form2.vb"/>`
 
@@ -82,7 +84,7 @@ Les exemples suivants s’appuient sur un projet qui contient des fichiers graph
 
     `Include="Images\**\*jpgs\*.*"`
 
-    ou
+    or
 
     `Include="Images\**\*jpgs\*"`
 
@@ -96,7 +98,7 @@ Dans un fichier projet, vous pouvez utiliser la notation @() dans les tâches p
 
     `<CSC Sources="@(CSFile)">...</CSC>`
 
-    ou
+    or
 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
@@ -105,7 +107,7 @@ Dans un fichier projet, vous pouvez utiliser la notation @() dans les tâches p
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
 L’exemple de code suivant affiche un projet qui inclut séparément tous les fichiers d’entrée.
 
@@ -140,7 +142,7 @@ L’exemple de code suivant affiche un projet qui inclut séparément tous les f
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
 L’exemple de code suivant utilise un caractère générique pour inclure tous les fichiers *.cs*.
 

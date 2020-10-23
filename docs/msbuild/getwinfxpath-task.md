@@ -1,5 +1,7 @@
 ---
 title: GetWinFXPath, tâche | Microsoft Docs
+description: Découvrez comment utiliser la tâche GetWinFXPath MSBuild, qui retourne le répertoire du Runtime .NET actuel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633965"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436770"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath, tâche
 
@@ -37,7 +39,7 @@ La <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> tâche retourne le réperto
 | `WinFXNativePath` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le chemin d’accès au Runtime .NET natif. |
 | `WinFXWowPath` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le chemin d’accès aux assemblys .NET dans le module **Windows sur windows** 32 bits sur les systèmes 64 bits. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  Si la tâche <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> s’exécute sur un processeur 64 bits, le paramètre **WinFXPath** a comme valeur le chemin stocké dans le paramètre **WinFXWowPath** ; sinon, le paramètre **WinFXPath** a comme valeur le chemin stocké dans le paramètre **WinFXNativePath**.
 
@@ -63,6 +65,6 @@ La <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> tâche retourne le réperto
 
 - [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

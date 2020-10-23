@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour utiliser la même cible dans plusieurs fichiers projet | Microsoft Docs
+description: Découvrez comment enregistrer une cible dans un fichier projet MSBuild et l’importer dans un autre projet qui doit utiliser la cible.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255576"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436058"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
 
@@ -83,7 +85,7 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 
 3. Définissez dans le fichier projet toutes les propriétés et tous les éléments qui doivent remplacer les définitions par défaut des propriétés et des éléments dans le projet importé.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
  L’exemple de code suivant montre le fichier *MyCommon. targets* que le deuxième exemple de code importe. Le fichier *. targets* évalue les propriétés du projet importateur pour configurer la Build.
 
@@ -102,7 +104,7 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
  L’exemple de code suivant importe le fichier *MyCommon. targets* .
 

@@ -1,5 +1,7 @@
 ---
 title: Exec, tâche | Microsoft Docs
+description: En savoir plus sur l’utilisation de la tâche MSBuild Exec pour exécuter un programme ou une commande spécifique à l’aide des arguments spécifiés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288921"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436738"
 ---
 # <a name="exec-task"></a>Exec (tâche)
 
@@ -51,7 +53,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Exec`.
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Cette tâche est utile quand une tâche MSBuild spécifique pour le travail que vous souhaitez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
 

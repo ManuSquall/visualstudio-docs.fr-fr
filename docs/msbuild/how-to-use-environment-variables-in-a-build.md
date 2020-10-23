@@ -1,5 +1,7 @@
 ---
 title: 'Comment : utiliser des variables d’environnement dans une génération | Microsoft Docs'
+description: Apprenez à accéder aux variables d’environnement dans les fichiers projet MSBuild et utilisez des variables d’environnement pour définir des options de génération sans modifier le fichier projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac100427c653a785d1e562b807f7bd4a001ae6ff
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633783"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436173"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Guide pratique pour utiliser des variables d’environnement dans une build
 

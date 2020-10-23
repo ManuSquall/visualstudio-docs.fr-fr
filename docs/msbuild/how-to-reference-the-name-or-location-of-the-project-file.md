@@ -1,5 +1,6 @@
 ---
 title: Référencer le nom ou l’emplacement du fichier projet
+description: Découvrez comment utiliser les propriétés réservées MSBuild pour référencer le nom ou l’emplacement du fichier projet sans avoir à créer vos propres propriétés.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036455"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436340"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Guide pratique pour référencer le nom ou l’emplacement du fichier projet
 
@@ -49,7 +50,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 > [!NOTE]
 > Les propriétés réservées ne peuvent pas être redéfinies dans le fichier projet.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
  L’exemple de fichier projet suivant référence le nom du projet en tant que propriété réservée pour spécifier le nom de la sortie.
 
@@ -78,7 +79,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
  L’exemple de fichier projet suivant utilise la propriété réservée `MSBuildProjectDirectory` pour créer le chemin complet à un fichier à l’emplacement du fichier projet.
 

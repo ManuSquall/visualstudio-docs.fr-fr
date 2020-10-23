@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006330"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435886"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
@@ -22,7 +22,7 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
 
 2. Recherchez la vignette de l’avantage DataCamp dans la catégorie « Développement professionnel », puis cliquez sur **Activer**.
    > [!div class="mx-imgBorder"]
-   > ![Vignette de l’avantage DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![Vignette de l’avantage DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png "Cliquez sur Activer pour commencer.")
 
 3. Dans la page DataCamp, vous pouvez créer un compte.  Vous pouvez choisir d’entrer une adresse e-mail et un mot de passe, ou de vous connecter avec des comptes Facebook, LinkedIn ou Google existants.  Une fois que vous avez fourni vos informations de connexion, cliquez sur **Get Started** (Démarrer).
 
@@ -36,25 +36,25 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
 
    Cliquez simplement sur le parcours de votre choix pour commencer.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp, Choisir un parcours](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![DataCamp, Choisir un parcours](_img/vs-datacamp/vs-datacamp-choose-path.png "Choisissez un parcours d’apprentissage qui vous intéresse.")
 
 5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **je ne suis pas sûr.  Montrez-moi tous les parcours de carrière** pour créer un chemin plus large.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp, Compétences en science des données](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![DataCamp, Compétences en science des données](_img/vs-datacamp/vs-datacamp-datascience.png "Cliquez sur «je ne suis pas sûr.  Afficher tous les parcours de carrière pour afficher la liste complète.")
 
 6. Selon le parcours et les options que vous avez sélectionnés, vous voyez une sélection de parcours professionnels.  Cliquez sur le bouton **Enroll** (Inscription) pour le parcours de votre choix.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp, Parcours professionnel](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![DataCamp, Parcours professionnel](_img/vs-datacamp/vs-datacamp-all-tracks.png "Cliquez sur le bouton « inscrire » sur le chemin d’accès sélectionné pour commencer.")
 
-7. Une fois que vous êtes inscrit à votre parcours, le premier cours de celui-ci s’ouvre.  Vous voyez un didacticiel expliquant comment interagir avec le cours, notamment la navigation et la réalisation des exercices du cours.
+7. Une fois que vous avez inscrit votre formation, le premier cours de ce suivi s’ouvre.  Vous voyez un didacticiel expliquant comment interagir avec le cours, notamment la navigation et la réalisation des exercices du cours.
 
    > [!div class="mx-imgBorder"]
-   > ![DataCamp, Prise en main](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![DataCamp, Prise en main](_img/vs-datacamp/vs-datacamp-getting-started.png "Regardez le didacticiel pour apprendre à parcourir les cours.")
 
 Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine session.  Visitez simplement [https://www.datacamp.com](https://www.datacamp.com) et connectez-vous.  Vous voyez votre tableau de bord et vous pouvez reprendre votre formation là où vous l’avez interrompue. Cliquez simplement sur **Continue Track** (Continuer le parcours).
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp : Continuer la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp : Continuer la formation](_img/vs-datacamp/vs-datacamp-continue-training.png "Cliquez sur « Continuer la formation » pour reprendre l’apprentissage à tout moment.")
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |

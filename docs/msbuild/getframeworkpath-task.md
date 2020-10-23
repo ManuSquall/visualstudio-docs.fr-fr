@@ -1,5 +1,7 @@
 ---
 title: GetFrameworkPath, tâche | Microsoft Docs
+description: Découvrez comment utiliser la tâche MSBuild GetFrameworkPath, pour récupérer le chemin d’accès aux assemblys .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634004"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436834"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (tâche)
 
@@ -43,7 +45,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkPath` .
 |`FrameworkVersion40Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin des assemblys du .NET Framework version 4.0, s’ils existent. Sinon, retourne `null`.|
 |`Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin des assemblys de la version la plus récente du .NET Framework, s’ils sont disponibles. Sinon, retourne `null`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Si plusieurs versions de la .NET Framework sont installées, cette tâche retourne la version sur laquelle MSBuild est conçu pour s’exécuter.
 

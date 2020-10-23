@@ -1,5 +1,7 @@
 ---
 title: GenerateDeploymentManifest, tâche | Microsoft Docs
+description: Apprenez à utiliser la tâche MSBuild GenerateDeploymentManifest pour générer un manifeste de déploiement ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca55f3eeb9b3119b27e67dcb0255f8386c521af6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634069"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436456"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (tâche)
 
@@ -49,7 +51,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateDeploymentMa
 | `MinimumRequiredVersion` | Paramètre `String` facultatif.<br /><br /> Indique si l’utilisateur peut ignorer la mise à jour. Si l’utilisateur a une version antérieure à la version minimale requise, il ne pourra pas ignorer la mise à jour. Cette entrée s’applique uniquement quand le paramètre `Install` a la valeur `true`. |
 | `OutputManifest` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le nom du fichier manifeste de sortie généré. Si vous ne spécifiez pas ce paramètre, le nom du fichier de sortie est déduit de l’identité du manifeste généré. |
 | `Platform` | Paramètre `String` facultatif.<br /><br /> Spécifie la plateforme cible de l’application. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> La valeur par défaut est `AnyCPU`. |
-| `Product` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l’application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’identité du manifeste généré. Ce nom est utilisé pour le nom du raccourci dans le menu **Démarrer** et fait partie du nom qui apparaît dans la boîte de dialogue **Ajout/suppression de programmes** . |
+| `Product` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l'application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’identité du manifeste généré. Ce nom est utilisé pour le nom du raccourci dans le menu **Démarrer** et fait partie du nom qui apparaît dans la boîte de dialogue **Ajout/suppression de programmes** . |
 | `Publisher` | Paramètre `String` facultatif.<br /><br /> Spécifie l’éditeur de l’application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’utilisateur enregistré ou de l’identité du manifeste généré. Ce nom est utilisé pour le nom du dossier dans le menu **Démarrer** et fait partie du nom qui apparaît dans la boîte de dialogue **Ajout/suppression de programmes** . |
 | `SuiteNamel` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom du dossier dans le menu **Démarrer** dans lequel l’application se trouve après le déploiement ClickOnce. |
 | `SupportUrl` | Paramètre `String` facultatif.<br /><br /> Spécifie le lien qui apparaît dans la boîte de dialogue **Ajout/suppression de programmes** pour l’application. La valeur spécifiée doit être un chemin URL ou UNC complet. |
@@ -60,7 +62,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateDeploymentMa
 | `UpdateMode` | Paramètre `String` facultatif.<br /><br /> Indique si les mises à jour doivent être vérifiées au premier plan avant de démarrer l’application, ou en arrière-plan pendant l’exécution de l’application. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> La valeur par défaut de ce paramètre est `Background`. Ce paramètre s’applique uniquement quand les paramètres `Install` et `UpdateEnabled` ont tous deux la valeur `true`. |
 | `UpdateUnit` | Paramètre `String` facultatif.<br /><br /> Spécifie les unités pour le paramètre `UpdateInterval`. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Ce paramètre s’applique uniquement quand les paramètres `Install` et `UpdateEnabled` ont tous deux la valeur `true`. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste des paramètres de la classe Task, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
 

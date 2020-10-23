@@ -1,5 +1,7 @@
 ---
 title: 'Comment : utiliser des caractères spéciaux d’échappement dans MSBuild | Microsoft Docs'
+description: Découvrez comment échapper des caractères spéciaux afin de pouvoir utiliser ces caractères en tant que littéraux dans les fichiers projet MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 923c517653c42dd0362b398c420c99454ccf4034
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633874"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436414"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Guide pratique pour utiliser des caractères spéciaux d’échappement dans MSBuild
 

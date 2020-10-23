@@ -1,5 +1,7 @@
 ---
 title: Tâche GetOutputFileName | Microsoft Docs
+description: Utilisez la tâche d’assistance GetOutputFileName de MSBuild pour spécifier les options de nom de fichier de sortie pour cl.exe et d’autres outils.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb4670bb84b151332951608f7b20ef5ea44e59a3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593289"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436789"
 ---
 # <a name="getoutputfilename-task"></a>Tâche GetOutputFileName
 

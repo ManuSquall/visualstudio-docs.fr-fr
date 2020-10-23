@@ -1,5 +1,7 @@
 ---
 title: FindAppConfigFile, tâche | Microsoft Docs
+description: Apprenez à utiliser la tâche MSBuild FindAppConfigFile pour rechercher le fichier app.config, le cas échéant, dans les listes fournies.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c54f3c222588cd13711c832d12f7598f0cc5e223
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d186a72bcc7af18671c279ff392de066b6fd9fee
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634173"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435686"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile (tâche)
 
-Recherche le fichier *app.config*, le cas échéant, dans les listes fournies.
+Recherche le fichier *app.config* , le cas échéant, dans les listes fournies.
 
 ## <a name="parameters"></a>Paramètres
 
@@ -38,7 +40,7 @@ Recherche le fichier *app.config*, le cas échéant, dans les listes fournies.
 |`SecondaryList`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie la liste secondaire dans laquelle effectuer les recherches.|
 |`TargetPath`|Paramètre `String` requis.<br /><br /> Spécifie la valeur à ajouter en tant que métadonnées.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

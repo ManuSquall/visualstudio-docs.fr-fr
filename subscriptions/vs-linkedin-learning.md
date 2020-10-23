@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/06/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805888"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435849"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -27,7 +27,7 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 2. Recherchez la vignette LinkedIn Learning dans la catégorie Formation, puis cliquez sur le lien **Obtenir un code**.
    > [!div class="mx-imgBorder"]
-   > ![Vignette de l’avantage LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![Vignette de l’avantage LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png "Cliquez sur obtenir du code pour revendiquer votre code et commencer.")
 
 3. Si vous avez déjà un compte LinkedIn et que vous êtes connecté automatiquement, vous êtes immédiatement dirigé vers la page d’activation de l’avantage LinkedIn Learning.  Si vous avez un compte LinkedIn mais que vous n’êtes pas connecté automatiquement, entrez simplement votre nom d’utilisateur et votre mot de passe, puis cliquez sur **S’identifier**.  Passez à [cette étape](#activate-your-offer) pour activer votre offre.
 
@@ -57,15 +57,15 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 ### <a name="activate-your-offer"></a>Activer votre offre
 15. Maintenant que vous vous êtes connecté à votre compte LinkedIn ou que vous en avez créé un, vous êtes prêt à activer votre abonnement Premium et à profiter de LinkedIn Learning.  Cliquez sur **Activer votre offre**.
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Activer](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![LinkedIn Learning, Activer](_img/vs-linkedin/vs-linkedin-Activate1.png "Cliquez sur « activer votre offre » pour commencer à apprendre.")
 
 16. Vous pouvez commencer à explorer les compétences qui vous intéressent.  Choisissez dans la liste des recommandations, recherchez d’autres compétences, ou cliquez sur **Skip** (Ignorer) pour continuer sans choisir des compétences.
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Compétences](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![LinkedIn Learning, Compétences](_img/vs-linkedin/vs-linkedin-skills.png "Choisissez les compétences que vous souhaitez explorer.")
 
 17. Vous avez activé avec succès votre offre d’abonnement Premium, et vous pouvez désormais utiliser LinkedIn Learning ainsi que tous les avantages du service Premium !
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Accueil](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![LinkedIn Learning, Accueil](_img/vs-linkedin/vs-linkedin-learning-home.png "Bienvenue dans LinkedIn Premium avec LinkedIn Learning !")
 
 ## <a name="eligibility"></a>Éligibilité
 
@@ -75,9 +75,9 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 | Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  NA         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | NA         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 
 <sup>1</sup>  *exclut : NFR, les partenaires de l’industrie Visual Studio, les Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (plus précieux Professional), RD (Regional Director).  Services de & de logiciel MCT.*
 

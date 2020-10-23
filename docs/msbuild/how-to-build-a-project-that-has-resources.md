@@ -1,5 +1,7 @@
 ---
 title: 'Comment : générer un projet qui dispose de ressources | Microsoft Docs'
+description: Découvrez comment créer un projet qui a des ressources et comment compiler des ressources à l’aide de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633952"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436686"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Guide pratique pour générer un projet qui a des ressources
 
@@ -38,7 +40,7 @@ La bibliothèque de tâches courantes qui est fournie avec MSBuild comprend une 
 
 4. Utilisez l’élément créé à partir de l’élément `Output` en tant qu’entrée d’une autre tâche.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
 L’exemple de code suivant montre comment l’élément `Output` spécifie que l’attribut `OutputResources` de la tâche `GenerateResource` contient les fichiers de ressources compilés *alpha.resources* et *beta.resources* et que ces deux fichiers sont placés dans la liste d’éléments `Resources`. En identifiant ces fichiers *.resources* comme collection d’éléments du même nom, vous pouvez les utiliser facilement comme entrées d’une autre tâche, par exemple la tâche [Csc](../msbuild/csc-task.md).
 
@@ -55,7 +57,7 @@ Cette tâche revient à utiliser le commutateur **/compiler** pour [Resgen.exe](
 </GenerateResource>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
 L’exemple de projet suivant contient deux tâches : la tâche `GenerateResource` permet de compiler les ressources, et la tâche `Csc` permet de compiler les fichiers de code source et les fichiers de ressources compilés. Les fichiers de ressources compilés par la tâche `GenerateResource` sont stockés dans l’élément `Resources` et transmis à la tâche `Csc`.
 

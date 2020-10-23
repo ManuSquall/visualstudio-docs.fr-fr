@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour configurer les cibles et les tâches | Microsoft Docs
+description: Découvrez comment définir des tâches MSBuild sélectionnées pour qu’elles s’exécutent dans l’environnement ciblé, quel que soit l’environnement de l’ordinateur de développement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31537ea44e5c49a4fd98229a5886ca99a1464409
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288895"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435765"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 

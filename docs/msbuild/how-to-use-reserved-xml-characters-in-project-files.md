@@ -1,5 +1,7 @@
 ---
 title: 'Comment : utiliser des caractères XML réservés dans les fichiers projet | Microsoft Docs'
+description: Découvrez comment remplacer des caractères XML réservés par des entités nommées correspondantes dans les fichiers projet MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f98044378b717536c42f25f5033b072ac3680675
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633770"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436085"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Guide pratique pour utiliser des caractères XML réservés dans les fichiers projet
 
@@ -75,5 +77,5 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

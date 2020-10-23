@@ -1,18 +1,18 @@
 ---
-title: Avantage WhiteSource Bolt | Microsoft Docs
+title: WhiteSource Bolt dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005699"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435991"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -24,11 +24,11 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 
 2. Recherchez la vignette WhiteSource Bolt dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.
    > [!div class="mx-imgBorder"]
-   > ![Vignette de l’avantage WhiteSource](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![Vignette de l’avantage WhiteSource](_img/vs-whitesource/vs-whitesource-tile.png "Cliquez sur « obtient le code » dans la vignette du boulon WhiteSource pour commencer.")
 
 3. Vous recevez une notification contenant votre code d’activation.  **Copiez le code dans votre Presse-papiers**, puis cliquez sur **Activer**.
    > [!div class="mx-imgBorder"]
-   > ![Code de l’avantage WhiteSource](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![Code de l’avantage WhiteSource](_img/vs-whitesource/vs-whitesource-code.png "Copiez le code dans le presse-papiers, puis cliquez sur Activer.")
 
 4. Dans la page **Activer votre compte**, cliquez sur le lien d’**installation** à l’étape 1.
 5. Cliquez sur **L’obtenir gratuitement** dans Visual Studio Marketplace.

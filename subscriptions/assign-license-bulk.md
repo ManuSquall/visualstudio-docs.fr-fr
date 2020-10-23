@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022408"
+ms.locfileid: "92435869"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -119,6 +119,8 @@ Regardez cette vidéo ou lisez la suite pour en savoir plus sur l’ajout d’ab
 
 > [!NOTE]
 > Si vous avez déjà attribué des abonnements individuellement à des utilisateurs qui sont ajoutés par la suite dans le cadre d’un groupe de Azure AD, ils sont ajoutés dans le cadre du groupe et ne sont plus répertoriés individuellement. Toutefois, si l’abonnement individuel est destiné à un niveau d’abonnement différent, il aura deux abonnements.  Exemple : si un utilisateur dispose d’un abonnement Visual Studio Professional individuel et s’il est membre d’un groupe auquel vous affectez des abonnements Visual Studio Enterprise, il disposera des deux.  
+>
+> Si vous supprimez un abonné d’un groupe de Azure Active Directory auquel des abonnements ont été attribués, la mise à jour peut prendre jusqu’à 24 heures pour être reflétée dans le portail d’administration. 
 
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions

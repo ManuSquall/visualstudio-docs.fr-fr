@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour afficher une liste d’éléments séparés par des virgules | Microsoft Docs
+description: Découvrez comment utiliser MSBuild pour afficher une liste d’éléments séparés par des virgules, ou pour spécifier d’autres chaînes de séparation pour une liste d’éléments.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633900"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436424"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Guide pratique pour afficher une liste d’éléments séparés par des virgules
 
@@ -71,5 +73,5 @@ Pour cet exemple, la commande équivalente de ligne de commande est la suivante�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Éléments](../msbuild/msbuild-items.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 03/26/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005024"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435789"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -27,33 +27,33 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 
 2. Recherchez la vignette Power BI Pro dans la section Outils de la page Avantages. Cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Vous recevez une notification confirmant l’envoi du code.  Cliquez sur **Activer**.
    > [!div class="mx-imgBorder"]
-   > ![Vignette de l’avantage Power BI Pro](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Vignette de l’avantage Power BI Pro](_img/vs-pbi/vs-pbi-tile.png "Dans la vignette Power BI Pro, cliquez sur « recevoir le code », puis sur « Activer » pour commencer.")
 
 3. Vous avez peut-être déjà un compte si vous avez activé certains autres avantages de l’abonnement, par exemple Microsoft 365 abonnement développeur ou Enterprise Mobility + Security.  Si effectivement vous avez un compte, vous avez le choix d’ajouter votre abonnement Power BI Pro à ce compte ou de vous inscrire pour créer un autre compte.  Nous vous recommandons vivement d’ajouter l’abonnement à votre compte existant pour pouvoir accéder à vos divers avantages à l’aide d’un identifiant utilisateur unique.
    > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Compte existant](_img/vs-pbi/vs-pbi-existing-account.png)
+   > ![Avantage Power BI Pro, Compte existant](_img/vs-pbi/vs-pbi-existing-account.png "Ajoutez Power BI Pro à votre compte existant, si vous en avez un.")
 
 4. Pour créer un compte, entrez vos coordonnées, puis cliquez sur **Suivant**.
 
 5. Créez ensuite votre identifiant utilisateur et votre mot de passe.  Si vous avez déjà un compte et que vous en créez un autre, vous devez spécifier un nom de société différent de celui que vous avez utilisé pour le compte existant.  Cliquez sur **Créer mon compte**.
    > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Créer un UserID](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
+   > ![Avantage Power BI Pro, Créer un UserID](_img/vs-pbi/vs-pbi-create-user-id-cropped.png "Pour les nouveaux comptes, entrez un ID d’utilisateur et un mot de passe.")
 
 6. Pour prouver que le compte est bien créé par une personne réelle, vous êtes invité à entrer un code de confirmation.  Entrez un numéro de téléphone et choisissez si vous souhaitez recevoir votre code via un appel téléphonique ou un SMS.  Cliquez sur **Envoyer un SMS** ou **M’appeler**.
    > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Vous n’êtes pas un robot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
+   > ![Avantage Power BI Pro, Vous n’êtes pas un robot](_img/vs-pbi/vs-pbi-robot1-cropped.png "Choisissez « m’envoyer un SMS » ou « m’appeler » pour recevoir votre code de confirmation.")
 
 7. Entrez le code reçu, puis cliquez sur **Suivant**.
 
 8. Entrez vos coordonnées, puis cliquez sur **Suivant**.
    > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Coordonnées](_img/vs-pbi/vs-pbi-contact-cropped.png)
+   > ![Avantage Power BI Pro, Coordonnées](_img/vs-pbi/vs-pbi-contact-cropped.png "Indiquez vos coordonnées pour votre compte.")
 
 9. La page suivante confirme que votre abonnement Power BI Pro Developer (MSDN) coûte 0,00 €.  Cliquez sur **Suivant**.
 
 10. Pour finir, vous devez entrer certaines informations de paiement.  Ne vous inquiétez pas. Aucun montant ne sera prélevé sur votre compte.  Notez que le prix est toujours de 0,00 €.  Vous pouvez choisir une carte de paiement, un compte bancaire ou une facture comme mode de paiement.  Si vous choisissez **Facture**, vous pouvez être invité à indiquer les raisons pour lesquelles vous préférez ce mode de paiement.  Entrez les informations demandées pour le mode de paiement choisi, puis cliquez sur **Passer commande**.
     > [!div class="mx-imgBorder"]
-    > ![Avantage Power BI Pro, Coordonnées](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
+    > ![Informations sur l’paymant des avantages Power BI Pro](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png "Choisissez votre mode de paiement.  N’oubliez pas que cette offre ne vous sera pas facturée.")
 
 11. La page suivante confirme que vous êtes prêt à commencer à utiliser Power BI Pro.  Cette page contient un lien pour accéder à la page de connexion.  Nous vous recommandons d’enregistrer le lien vers la page de connexion, ainsi que votre identifiant utilisateur.  (Vous recevrez également un e-mail de bienvenue à l’adresse que vous avez fournie lors de la configuration du compte.)  Vous pouvez également voir une fenêtre Assistant Microsoft 365 automatisée, que vous pouvez utiliser si vous avez des questions.  Cliquez sur **Démarrer** pour continuer.
 
@@ -91,7 +91,7 @@ R : Oui, vous pouvez l’utiliser dans un environnement de production, avec deu
 - Cet avantage Power BI Pro ne peut pas être utilisé sur des locataires de type Secteur public.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q : Lorsque j’essaie d’activer Power BI Pro, j’obtiens un message m’indiquant que je dispose déjà d’un compte dans le cadre professionnel.  Puis-je continuer à utiliser l’avantage ?
-R : Oui.  Le message indique que vous êtes connecté à un domaine qui a déjà des locataires Microsoft 365 actifs sur lesquels vous n’êtes pas administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez en être l’administrateur.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
+R : Oui.  Le message indique que vous êtes connecté à un domaine qui a déjà des locataires Microsoft 365 actifs sur lesquels vous n’êtes pas administrateur.  Pour ajouter Power BI Pro à un locataire, vous devez être administrateur sur ce locataire.  Si ce n’est pas le cas, suivez les étapes ci-dessous pour créer votre propre locataire.
 1. Lorsque vous voyez le message qui vous indique que vous disposez déjà d’un compte dans le cadre professionnel, cliquez sur **Créer un compte**.
 
 2. Dans l’écran suivant, entrez vos informations de contact, puis cliquez sur **Suivant**.

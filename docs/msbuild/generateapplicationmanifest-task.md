@@ -1,5 +1,7 @@
 ---
 title: Tâche GenerateApplicationManifest | Microsoft Docs
+description: Utilisez la tâche MSBuild GenerateApplicationManifest pour générer un manifeste d’application ClickOnce ou un manifeste natif.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634095"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436556"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (tâche)
 
@@ -55,7 +57,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateApplicationM
 | `OSVersion` | Paramètre `String` facultatif.<br /><br /> Spécifie la version minimale de système d’exploitation requise par l’application. Par exemple, la valeur 5.1.2600.0 indique le système d’exploitation Windows XP. Si ce paramètre n’est pas spécifié, la valeur 4.10.0.0 est utilisée ; celle-ci représente Windows 98 Deuxième Édition, le système d’exploitation minimal pris en charge par le .NET Framework. Si la tâche génère un manifeste natif, cette entrée est ignorée. |
 | `OutputManifest` | Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le nom du fichier manifeste de sortie généré. Si vous ne spécifiez pas ce paramètre, le nom du fichier de sortie est déduit de l’identité du manifeste généré. |
 | `Platform` | Paramètre `String` facultatif.<br /><br /> Spécifie la plateforme cible de l’application. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Si ce paramètre n’est pas spécifié, la tâche sélectionne par défaut `AnyCPU`. |
-| `Product` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l’application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’identité du manifeste généré. Ce nom est utilisé pour le nom du raccourci dans le menu **Démarrer** et fait partie du nom qui apparaît dans la boîte de dialogue **Ajout/suppression de programmes** . |
+| `Product` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l'application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’identité du manifeste généré. Ce nom est utilisé pour le nom du raccourci dans le menu **Démarrer** et fait partie du nom qui apparaît dans la boîte de dialogue **Ajout/suppression de programmes** . |
 | `Publisher` | Paramètre `String` facultatif.<br /><br /> Spécifie l’éditeur de l’application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’utilisateur enregistré ou de l’identité du manifeste généré. Ce nom est utilisé pour le nom du dossier dans le menu **Démarrer** et fait partie du nom qui apparaît dans la boîte de dialogue **Ajout/suppression de programmes** . |
 | `RequiresMinimumFramework35SP1` | Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est true, l’application requiert .NET Framework 3.5 SP1 ou une version plus récente. |
 | `TargetCulture` | Paramètre `String` facultatif.<br /><br /> Identifie la culture de l’application et spécifie le champ `Language` de l’identité d’assembly pour le manifeste généré. Si ce paramètre n’est pas spécifié, il est supposé que l’application est indifférente quant à la culture. |
@@ -66,7 +68,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateApplicationM
 | `TrustInfoFile` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Indique un document XML qui définit la sécurité de l’application. L’élément racine dans le document XML doit être un nœud trustInfo dans l’espace de noms asmv2. Si la tâche génère un manifeste natif, ce paramètre est ignoré. |
 | `UseApplicationTrust` | Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est true, les propriétés `Product`, `Publisher` et `SupportUrl` sont écrites dans le manifeste de l’application. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste des paramètres de la classe Task, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
 
@@ -84,7 +86,7 @@ Les entrées des dépendances et des fichiers peuvent être complétées par des
 |`TargetPath`|Spécifie comment le chemin doit être défini dans le manifeste généré. Cet attribut est valide pour tous les fichiers. Si cet attribut n’est pas spécifié, la spécification d’élément est utilisée. Cet attribut est valide pour tous les fichiers et dépendances dont `DependencyType` a la valeur `Install`.|
 |`IsDataFile`|Valeur de métadonnées `Boolean` qui indique si le fichier est un fichier de données. Un fichier de données est spécial dans la mesure où il est migré entre des mises à jour de l’application. Ces métadonnées sont uniquement valides pour les fichiers. `False` est la valeur par défaut.|
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
 Cet exemple utilise la `GenerateApplicationManifest` tâche pour générer un manifeste d’application ClickOnce et la `GenerateDeploymentManifest` tâche pour générer un manifeste de déploiement pour une application avec un assembly unique. Il utilise ensuite la tâche `SignFile` pour signer les manifestes.
 
@@ -138,7 +140,7 @@ Cela illustre le scénario de génération de manifeste le plus simple possible 
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
 Cet exemple utilise les `GenerateApplicationManifest` `GenerateDeploymentManifest` tâches et pour générer des manifestes d’application et de déploiement ClickOnce pour une application avec un assembly unique, en spécifiant le nom et l’identité des manifestes.
 
@@ -199,7 +201,7 @@ Cet exemple est semblable à l’exemple précédent, si ce n’est que le nom e
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-3"></a>Exemple 3
 
 Cet exemple utilise les `GenerateApplicationManifest` `GenerateDeploymentManifest` tâches et pour générer des manifestes d’application et de déploiement ClickOnce pour une application avec plusieurs fichiers et assemblys.
 
@@ -318,7 +320,7 @@ Cet exemple utilise les `GenerateApplicationManifest` `GenerateDeploymentManifes
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-4"></a>Exemple 4
 
 Cet exemple utilise la tâche `GenerateApplicationManifest` pour générer un manifeste natif de l’application *Test.exe*, en référençant le composant natif *Alpha.dll* et un composant COM isolé *Bravo.dll*.
 

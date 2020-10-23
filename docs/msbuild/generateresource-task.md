@@ -1,5 +1,7 @@
 ---
 title: GenerateResource, tâche | Microsoft Docs
+description: Utilisez la tâche MSBuild GenerateResource pour effectuer une conversion entre des fichiers. txt ou. resx et common language runtime fichiers. resources binaires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634056"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436879"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tâche)
 
@@ -44,7 +46,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateResource` .
 |`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit une valeur booléenne qui spécifie s’il faut créer un [AppDomain](/dotnet/api/system.appdomain) pour évaluer les fichiers de ressources (*. resx*) (true) ou pour créer un [AppDomain](/dotnet/api/system.appdomain) uniquement lorsque les fichiers de ressources font référence à l’assembly d’un utilisateur (false).|
 |`OutputResources`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le nom des fichiers générés, comme les fichiers *.resources*. Si vous ne spécifiez pas de nom, le nom du fichier d’entrée correspondant est utilisé et le fichier *. Resources* créé est placé dans le répertoire qui contient le fichier d’entrée.|
 |`PublicClass`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, crée une classe de ressource fortement typée en tant que classe publique.|
-|`References`|Paramètre `String[]` facultatif.<br /><br /> Références à partir desquelles charger les types dans les fichiers *.resx*. Les éléments de données de fichiers *.resx* peuvent avoir un type .NET. Quand le fichier *. resx* est lu, il doit être résolu. En règle générale, on utilise pour cela des règles de chargement de type standard. Si vous fournissez des assemblys dans `References`, ils sont prioritaires.<br /><br /> Ce paramètre n’est pas obligatoire pour les ressources fortement typées.|
+|`References`|Paramètre `String[]` facultatif.<br /><br /> Références à partir desquelles charger les types dans les fichiers *.resx*. les éléments de données de fichier *. resx* peuvent avoir un type .net. Quand le fichier *. resx* est lu, il doit être résolu. En règle générale, on utilise pour cela des règles de chargement de type standard. Si vous fournissez des assemblys dans `References`, ils sont prioritaires.<br /><br /> Ce paramètre n’est pas obligatoire pour les ressources fortement typées.|
 |`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin d’accès aux outils du kit de développement logiciel (SDK), par exemple *resgen.exe*.|
 |`Sources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments à convertir. Les éléments passés à ce paramètre doivent avoir l’une des extensions de fichier suivantes :<br /><br /> -   *.txt* : spécifie l’extension d’un fichier texte à convertir. Les fichiers texte ne peuvent comporter que des ressources de chaîne.<br />-   *.resx* : spécifie l’extension d’un fichier de ressources XML à convertir.<br />-   *.restext* : spécifie le même format que *.txt*. Cette autre extension est utile si vous voulez distinguer clairement les fichiers sources qui contiennent des ressources d’autres fichiers sources dans votre processus de génération.<br />-   *.resources* : spécifie l’extension d’un fichier de ressources à convertir.|
 |`StateFile`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le chemin d’un fichier cache facultatif qui sert à accélérer la vérification des dépendances des liens dans les fichiers d’entrée *.resx*.|
@@ -62,7 +64,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateResource` .
 |`TrackFileAccess`|Paramètre <xref:System.Boolean> facultatif.<br /><br /> Si la valeur est true, le répertoire du fichier d’entrée est utilisé pour résoudre les chemins de fichiers relatifs.|
 |`UseSourcePath`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, indique que le répertoire du fichier d’entrée doit être utilisé pour résoudre les chemins de fichiers relatifs.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Étant donné que les fichiers *.resx* peuvent contenir des liens vers d’autres fichiers de ressources, il ne suffit pas de simplement comparer les horodatages des fichiers *.resx* et *.resources* pour savoir si les sorties sont à jour. Au lieu de cela, la tâche `GenerateResource` suit les liens figurant dans les fichiers *.resx* et vérifie aussi les horodatages des fichiers liés. Cela signifie qu’en général vous ne devez pas utiliser d’attributs `Inputs` et `Outputs` sur la cible contenant la tâche `GenerateResource`, car elle risque dans ce cas d’être ignorée alors qu’elle doit être exécutée.
 

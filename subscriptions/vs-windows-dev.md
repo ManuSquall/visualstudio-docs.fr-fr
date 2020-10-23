@@ -2,17 +2,17 @@
 title: Avantage du compte de développeur Windows dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005380"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435825"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -25,10 +25,10 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Recherchez la vignette du compte de développeur Windows dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.  Copiez le code dans le presse-papiers, puis cliquez sur **activer**.
    > [!div class="mx-imgBorder"]
-   > ![Vignette de l’avantage Compte de développeur Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
+   > ![Vignette de l’avantage Compte de développeur Windows](_img/vs-windows-dev/vs-windows-dev-tile.png "Cliquez sur « recevoir le code » dans la vignette compte de développeur Windows, puis cliquez sur « Activer ».")
 3. Sur le [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) site, vous pouvez commencer le processus d’inscription.  Cliquez sur **S’inscrire** pour continuer.
    > [!div class="mx-imgBorder"]
-   > ![Avantage Compte de développeur Windows, Inscription](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
+   > ![Avantage Compte de développeur Windows, Inscription](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png "Cliquez sur « s’inscrire » pour créer votre compte.")
 4. Connectez-vous à votre abonnement.  Si vous avez plusieurs comptes, choisissez celui qui est associé à votre abonnement Enterprise.
 0. Entrez votre adresse e-mail, sélectionnez votre langue par défaut, puis cliquez sur **Enregistrer**.
 5. Dans la page suivante, sélectionnez le pays ou la région où vous vivez ou bien où se trouve votre entreprise, puis cliquez sur **Suivant**.
