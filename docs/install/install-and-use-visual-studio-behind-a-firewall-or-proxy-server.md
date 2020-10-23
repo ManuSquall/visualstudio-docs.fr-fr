@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800240"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467633"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -65,7 +65,7 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 
 #### <a name="non-microsoft-domains"></a>Domaines non-Microsoft
 
-| Domaine | Installe ces charges de travail |
+| Domain | Installe ces charges de travail |
 | - | - |
 | archive.apache.org | Développement mobile avec JavaScript (Cordova) |
 | cocos2d-x.org | Développement de jeux avec C++ (Cocos) |
@@ -98,7 +98,7 @@ Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous 
 | Projet IA <br>Intégration | az861674.vo.msecnd.net | 443<br> | Permet de configurer de nouveaux projets pour envoyer des données d’utilisation à votre compte Application Insights enregistré |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Permet de fournir des informations dans l’éditeur relatives à la dernière mise à jour d’un fichier, à la chronologie des modifications, aux éléments de travail auxquels sont associées des modifications, aux auteurs et bien plus encore |
 | Expérimental <br>activation des fonctionnalités | visualstudio-devdiv-c2s.msedge.net | 80 | Permet d’activer de nouvelles fonctionnalités expérimentales ou des modifications de fonctionnalités |
-| « Badge » d’identité <br>(nom d'utilisateur et avatar)<br>and <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
+| « Badge » d’identité <br>(nom d'utilisateur et avatar)<br>et <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
 | Paramètres distants | az700632.vo.msecnd.net | 443 | Permet de désactiver des extensions qui sont connues pour poser des problèmes dans Visual Studio |
 | Outils Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Utilisé pour les scénarios de magasin d’applications Windows |
 | JSON Schema (Schéma JSON) <br>Découverte <br><br>JSON Schema (Schéma JSON) <br>Définition<br><br>JSON Schema (Schéma JSON) <br>La prise en charge de <br>Ressources Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Permet de détecter et de télécharger des schémas JSON que l’utilisateur peut utiliser lors de la modification des documents JSON <br><br>Permet d’obtenir le schéma de validation de métadonnées pour JSON<br><br>Permet d’obtenir le schéma actuel pour les modèles de déploiement Azure Resource Manager |
@@ -134,11 +134,11 @@ Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous 
 | Communauté des développeurs | sendvsfeedback2.azurewebsites.net/api | https/443 | Utilisé pour appeler les API de l’outil commentaires de la communauté des développeurs (mes problèmes, recherche, vote, commentaire, envoyer, télécharger, reprendre) |
 | Intellicode | \*. intellicode.vsengsaas.visualstudio.com | https/443 | Utilisé pour appeler les API Intellicode |
 | Live Share | \*. liveshare.vsengsaas.visualstudio.com| https/443 | Utilisé pour appeler des API Live Share |
-| Visual Studio Codespaces | \*. online.visualstudio.com | https/443 | Utilisé pour appeler les API Visual Studio Codespaces |
+| GitHub Codespaces | \*. online.visualstudio.com | https/443 | Utilisé pour appeler les API Codespaces GitHub |
 | Acquisition de type automatique JavaScript | registry.npmjs.org | https/443 | Utilisé pour installer les définitions de type de machine à écrire pour fournir IntelliSense pour les bibliothèques JavaScript populaires |
 | Service de gestion des licences des abonnements Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licences/ClientRights | https/443 | Licences pour l’activation en ligne |
 | Débogueur | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon. \* . Téléchargé<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Utilisé pour le téléchargement des bits du débogueur pour le débogage .NET Core sur UNIX/macOS via SSH <br><br>2. <br>Utilisé pour le téléchargement des bits du débogueur pour le débogage du conteneur d’ancrage Windows distant<br><br> 3. utilisé pour le pas à pas source du .NET Framework <br><br> 4. <br>(Si l’utilisateur choisit l’utilisateur) Utilisé pour télécharger les symboles publiés sur le serveur de symboles nuget.org.<br><br> 5. (si user OPTS) utilisé pour télécharger des symboles et des binaires MS, peut également être nécessaire pour déboguer le code managé dans les dumps |
-| Visual Studio Codespaces| \*. online.visualstudio.com | https/443 | Utilisé pour appeler les API Visual Studio Codespaces |
+| GitHub Codespaces| \*. online.visualstudio.com | https/443 | Utilisé pour appeler les API Codespaces GitHub |
 | Publication d’applications Android Xamarin | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Utilisé pour interagir avec Google Play Store service afin de publier/télécharger des applications Android Xamarin directement à partir de Visual Studio. |
 | Azure Container Registry | *.azurecr.io | https/443 | Accès aux registres de conteneurs hébergés sur Azure, pour la configuration des pipelines CICD |
 | | | | |

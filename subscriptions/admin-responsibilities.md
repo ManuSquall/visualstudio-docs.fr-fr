@@ -1,21 +1,21 @@
 ---
-title: Responsabilités des administrateurs | Visual Studio Marketplace
+title: Responsabilités de l’administrateur dans les abonnements Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 09/03/2019
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Découvrez les responsabilités des administrateurs des abonnements.
-ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: En savoir plus sur les responsabilités des administrateurs d’abonnements.
+ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006135"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467464"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
-En tant qu’administrateur, vous pouvez gérer les abonnements de votre organisation.  Le rôle d’administrateur a également la responsabilité de vérifier que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article présente les responsabilités, les avantages et les limitations du rôle d’administrateur.
+# <a name="overview-of-admin-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
+En tant qu’administrateur, vous pouvez gérer les abonnements de votre organisation.  Le rôle d’administrateur assume également des responsabilités pour s’assurer que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article décrit les responsabilités, les avantages et les limitations du rôle d’administrateur.
 
 ## <a name="roles--responsibilities"></a>Rôles et responsabilités
 Un administrateur des abonnements Visual Studio a quatre responsabilités principales :
@@ -43,7 +43,7 @@ Les abonnements Visual Studio permettent aux développeurs d’installer et d’
 - [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-En savoir plus sur les responsabilités des administrateurs :
+En savoir plus sur les responsabilités pour les administrateurs :
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
 - [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
 - [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)

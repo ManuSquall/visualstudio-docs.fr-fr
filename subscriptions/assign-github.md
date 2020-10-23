@@ -1,18 +1,18 @@
 ---
 title: Offre Visual Studio + GitHub Enterprise | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 09/29/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Gestion des abonnements dans l’offre Visual Studio + GitHub Enterprise
-ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584124"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467581"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gérer des abonnements Visual Studio avec GitHub Enterprise
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
@@ -32,15 +32,15 @@ Pour plus d’informations sur la gestion des abonnements Visual Studio, consult
 > [!Important]
 > Si les abonnements Visual Studio avec GitHub Enterprise sont affectés par les administrateurs des abonnements Visual Studio sans achat préalable, GitHub ne sera pas informé que vous souhaitez créer un compte GitHub Enterprise.  **Un achat d’au moins un** L’abonnement Visual Studio avec GitHub Enterprise doit être effectué avant l’attribution des abonnements.
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus d’installation de Visual Studio avec GitHub Enterprise ?
-GitHub Enterprise est configuré et géré séparément des abonnements Visual Studio. À la suite de Visual Studio avec GitHub Enterprise Purchase, un processus de configuration d’un compte GitHub Enterprise est lancé en parallèle avec (mais distinct de) établissant un accord dans [Manage.VisualStudio.com](https://manage.visualstudio.com). L’établissement de ce compte GitHub Enterprise peut prendre un certain temps. 
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus de configuration Visual Studio avec GitHub Enterprise ?
+GitHub Enterprise est configuré et géré séparément des abonnements Visual Studio. À la suite de Visual Studio avec GitHub Enterprise Purchase, un processus de configuration d’un compte GitHub Enterprise est lancé en parallèle avec (mais distinct de) établissant un accord dans [Manage.VisualStudio.com](https://manage.visualstudio.com). La création de ce compte GitHub Enterprise peut prendre un certain temps. 
 
-Une fois que votre société a configuré un compte GitHub Enterprise, les abonnés qui ont reçu Visual Studio avec les abonnements GitHub Enterprise recevront un courrier électronique de GitHub les avertissant que leurs abonnements Visual Studio ont été liés. Une fois que les abonnés reçoivent cet e-mail, ils peuvent contacter l’administrateur de leur organisation GitHub pour qu’ils reçoivent une invitation à l’organisation appropriée.
+Une fois que votre société a configuré un compte GitHub Enterprise, les abonnés à qui ont été attribués des abonnements Visual Studio avec GitHub Enterprise reçoivent un e-mail de GitHub les notifiant que leurs abonnements Visual Studio ont été liés. Une fois que les abonnés reçoivent cet e-mail, ils peuvent contacter l’administrateur de leur organisation GitHub pour qu’ils reçoivent une invitation à l’organisation appropriée.
 
 Pour plus d’informations sur l’installation de GitHub Enterprise, veuillez vous référer à la documentation de l' [abonné](access-github.md).   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Gérer des abonnements GitHub Enterprise
-Quand des abonnements GitHub Enterprise sont achetés, GitHub travaille en partenariat avec les clients pour les aider à créer et à configurer les organisations qui accéderont à GitHub, et à identifier les administrateurs.  Ces derniers reçoivent alors une notification indiquant qu’ils ont été définis en tant qu’administrateurs.  
+Une fois les abonnements GitHub Enterprise achetés, GitHub partenaires avec les clients vous aide à créer et à configurer les organisations qui accéderont à GitHub et à identifier les administrateurs.  Ces administrateurs reçoivent ensuite une notification leur indiquant qu’ils ont été configurés en tant qu’administrateurs.  
 
 Étant donné que ce processus est plus complexe, il peut falloir plusieurs jours après l’achat des abonnements pour que les organisations et les administrateurs soient entièrement configurés.
 

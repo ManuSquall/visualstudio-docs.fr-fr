@@ -3,15 +3,15 @@ title: Assigner des GUID spécifiques à des abonnés Visual Studio | Microsoft 
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent avoir un GUID d’abonnement spécifique aux abonnés
-ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022477"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467477"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Affecter des abonnements spécifiques dans le portail d’administration des abonnements Visual Studio
 

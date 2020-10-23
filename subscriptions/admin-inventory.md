@@ -1,23 +1,23 @@
 ---
-title: Inventaire des environnements de préproduction | Visual Studio Marketplace
+title: Inventaire de pré-production dans l’abonnement Visual Studio | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 03/06/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Découvrir en quoi consiste la responsabilité des administrateurs pour l’exécution des inventaires de préproduction
-ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: En savoir plus sur la responsabilité des administrateurs pour effectuer des inventaires de pré-production
+ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004155"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467425"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventaire de l’environnement de préproduction
 Les abonnements Visual Studio simplifient la gestion des actifs en comptant les utilisateurs plutôt que les appareils.
 
-Les administrateurs Visual Studio doivent attribuer les abonnements Visual Studio à des **personnes spécifiques nommées**. Les conventions de nommage telles que Dev1, Dev2 ou l’utilisation de noms d’équipes tels que « FeatureTeam » ne sont **pas autorisées**.
+Les administrateurs Visual Studio doivent attribuer des abonnements Visual Studio à **des personnes spécifiques nommées**. Les conventions de nommage telles que Dev1, Dev2 ou l’utilisation de noms d’équipes tels que « FeatureTeam » ne sont **pas autorisées**.
 
 Voici plusieurs façons de simplifier l’inventaire de votre environnement de préproduction :
 - Vérifiez vos attributions d’utilisateurs. Microsoft fournit un site web appelé [portail d’administration Visual Studio](https://manage.visualstudio.com/) pour vous aider à effectuer le suivi des attributions d’abonnements Visual Studio.
@@ -37,7 +37,7 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 - [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-En savoir plus sur les responsabilités des administrateurs :
+En savoir plus sur les responsabilités pour les administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
 - [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
 - [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)

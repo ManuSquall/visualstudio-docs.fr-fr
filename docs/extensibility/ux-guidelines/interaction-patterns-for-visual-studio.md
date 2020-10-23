@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184404"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467646"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Modèles d’interaction pour Visual Studio
 ## <a name="overview"></a>Vue d’ensemble
  Un modèle de conception, en général, est le cœur d’une conception qui peut être appliqué dans des situations spécifiques pour résoudre des problèmes avec des ensembles de contraintes similaires. Les concepteurs de fonctionnalités et de systèmes utilisent ces modèles de conception comme points de départ, qui peuvent ensuite être adaptés à leur situation spécifique.
 
- Visual Studio dispose d’une bibliothèque de modèles d’interaction courants qui doivent être pris en compte lors de la création de nouvelles fonctionnalités. Il existe deux contextes principaux pour nos modèles de conception : client Visual Studio (devenv) et Visual Studio Codespaces (anciennement Visual Studio Online). Pour certains problèmes de conception, il existe un modèle omniprésent qui fonctionne bien dans toutes les situations. Toutefois, dans de nombreux cas, la solution peut être différente pour l’interface utilisateur qui est présentée dans un navigateur et celle qui est hébergée sur une application cliente.
+ Visual Studio dispose d’une bibliothèque de modèles d’interaction courants qui doivent être pris en compte lors de la création de nouvelles fonctionnalités. Il existe deux contextes principaux pour nos modèles de conception : client Visual Studio (devenv) et GitHub Codespaces (anciennement Visual Studio Online). Pour certains problèmes de conception, il existe un modèle omniprésent qui fonctionne bien dans toutes les situations. Toutefois, dans de nombreux cas, la solution peut être différente pour l’interface utilisateur qui est présentée dans un navigateur et celle qui est hébergée sur une application cliente.
 
 ### <a name="visual-studio-client-pattern-types"></a>Types de modèles du client Visual Studio
 
@@ -40,7 +40,7 @@ ms.locfileid: "84184404"
 
   - [Interactions entre les fenêtres](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
-  - [Fenêtres d’outil](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
+  - [Fenêtres outil](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
   - [Conventions de l’éditeur de document](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 

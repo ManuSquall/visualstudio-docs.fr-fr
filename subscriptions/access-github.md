@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 09/28/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: En savoir plus sur l’accès à GitHub Enterprise dans le cadre des abonnements Visual Studio
-ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584153"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467516"
 ---
 # <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio avec abonnements GitHub Enterprise
 
@@ -33,7 +33,7 @@ Visual Studio Enterprise, Visual Studio Professional et GitHub Enterprise seront
 
 Pour en savoir plus sur les avantages et les options, visitez le site <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus d’installation de Visual Studio avec GitHub Enterprise ?
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus de configuration Visual Studio avec GitHub Enterprise ?
 
 Les abonnements Visual Studio avec GitHub Enterprise sont gérés en deux parties :
 1. Abonnement Visual Studio (Enterprise ou Professional)
@@ -44,12 +44,12 @@ Quand vous êtes affecté à un abonnement Visual Studio avec GitHub, vous recev
    > [!div class="mx-imgBorder"]
    > ![Installation du compte Enterprise en attente GitHub Enterprise](_img/access-github/pending-account-setup.png "Votre organisation doit d’abord configurer un compte d’entreprise.")  
 
-GitHub Enterprise est géré par un administrateur GitHub séparément des abonnements Visual Studio.  Lorsque votre société a configuré un compte GitHub Enterprise, vous recevrez un e-mail de GitHub vous informant que votre abonnement Visual Studio a été lié et que la vignette de l’avantage sera mise à jour comme indiqué ci-dessous.  La configuration de ce compte peut prendre un certain temps et dépend de votre entreprise qui termine le processus d’installation. Une fois que vous avez reçu l’e-mail, vous pouvez contacter l’administrateur de l’organisation GitHub appropriée pour demander une invitation à son organisation et/ou référentiel.  
+GitHub Enterprise est géré par un administrateur GitHub séparément des abonnements Visual Studio.  Lorsque votre société a configuré un compte GitHub Enterprise, vous recevrez un e-mail de GitHub vous informant que votre abonnement Visual Studio a été lié et que la vignette de l’avantage sera mise à jour comme indiqué ci-dessous.  La configuration de ce compte peut prendre un certain temps et dépend de votre entreprise effectuant le processus de configuration. Une fois que vous avez reçu l’e-mail, vous pouvez contacter l’administrateur de l’organisation GitHub appropriée pour demander une invitation à son organisation et/ou référentiel.  
 
    > [!div class="mx-imgBorder"]
    > ![Invitation GitHub en attente GitHub Enterprise](_img/access-github/pending-invite.png "Contactez votre administrateur GitHub pour demander une invitation à une organisation GitHub.")  
 
-Quand une invitation est envoyée par votre administrateur d’organisation GitHub, vous recevez un message électronique de GitHub et la vignette d’avantage est à nouveau mise à jour :
+Quand une invitation est envoyée par l’administrateur de votre organisation GitHub, vous recevez un e-mail de GitHub et la vignette d’avantage est de nouveau mise à jour :
 
    > [!div class="mx-imgBorder"]
    > ![Acceptation d’invitation en attente GitHub Enterprise](_img/access-github/pending-acceptance.png "Acceptez l’invitation que vous recevez dans le message électronique de GitHub")  
@@ -75,7 +75,7 @@ Si vous débutez avec GitHub, voici quelques ressources utiles :
 ## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="q--where-is-my-github-subscription"></a>Q : où se trouve mon abonnement GitHub ?
-R : le processus de configuration d’un compte GitHub Enterprise peut prendre un certain temps.  Si vous ne recevez aucune réponse passé un délai d’attente, vous pouvez contacter votre administrateur GitHub.  Il est possible que votre administrateur travaille encore dessus ou qu’il ait choisi de ne pas créer de compte GitHub Enterprise. 
+R : le processus de configuration d’un compte GitHub Enterprise peut prendre un certain temps.  Si vous avez attendu et que vous n’avez rien entendu, vous souhaiterez peut-être contacter votre administrateur GitHub.  Il est possible que votre administrateur travaille encore dessus ou qu’il ait choisi de ne pas créer de compte GitHub Enterprise. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>Q : puis-je obtenir les avantages de l’abonnement Visual Studio complet ?
 R : en plus de GitHub Enterprise, vous bénéficiez de tous les avantages d’un abonnement Visual Studio standard, notamment les téléchargements de logiciels, les services Cloud, le support technique et les avantages des partenaires, comme vous le feriez si l’abonnement a été acheté séparément.

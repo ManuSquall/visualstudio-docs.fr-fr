@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817266"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467555"
 ---
 # <a name="xaml-errors-and-warnings"></a>Erreurs et avertissements XAML
 
@@ -23,11 +23,14 @@ Lors de la création de XAML, Visual Studio analyse le code au fur et à mesure 
 
 Dans les coulisses, plusieurs outils analysent le code XAML en parallèle. Les erreurs XAML sont classées dans l’une des trois catégories suivantes, en fonction de l’outil qui a détecté l’erreur :
 
-|**Erreur détectée par**|**Format de code d’erreur**|
-| - |-----------------|
-|Service de langage XAML (éditeur XAML)|XLSxxxx|
-|Concepteur XAML|XDGxxxx|
-|Modifier et continuer XAML|XECxxxx|
+|**Erreur détectée par**|**Format de code d’erreur**|**Version de Visual Studio**|
+| - |-----------------| - |
+|Service de langage XAML (éditeur XAML)|XLSxxxx| Toutes les versions |
+|Concepteur XAML|XDGxxxx| Toutes les versions | 
+|Modifier & Continuer pour le code XAML|XECxxxx| Visual Studio 2019 version 16,1 ou antérieure |
+|Rechargement à chaud XAML | XHRxxxx | Visual Studio 2019 version 16,2 ou ultérieure |
+
+Pour plus d’informations sur la repersonnalisation de la modification XAML & continuer en tant que rechargement à chaud XAML, consultez nos [notes de publication](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
 
 > [!Note]
 > Les erreurs ou avertissements n’ont pas tous un code correspondant. Ces erreurs sont généralement des erreurs du concepteur XAML.
