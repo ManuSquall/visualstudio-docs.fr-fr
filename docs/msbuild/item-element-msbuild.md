@@ -1,5 +1,7 @@
 ---
 title: Item, élément (MSBuild) | Microsoft Docs
+description: Découvrez comment MSBuild utilise l’élément Item pour contenir un élément défini par l’utilisateur et ses métadonnées. Chaque élément doit être un enfant d’un élément ItemGroup.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289012"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904648"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
 
@@ -99,7 +101,7 @@ Les éléments `Item` définissent les entrées du système de génération et s
 
 L’utilisation de la notation @ ( \<myType> ) permet d’étendre une collection d’éléments de type \<myType> dans une liste de chaînes délimitées par des points-virgules, et de la passer à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe @(\<myType>, '\<separator>').
 
-Le moteur MSBuild peut évaluer des caractères génériques tels que `*` et `?` et des caractères génériques récursifs, tels que * / \* \* / \* . cs*. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Le moteur MSBuild peut évaluer des caractères génériques tels que `*` et `?` et des caractères génériques récursifs, tels que */ \* \* / \* . cs* . Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Exemples
 

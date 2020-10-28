@@ -1,6 +1,6 @@
 ---
 title: Éléments MSBuild | Microsoft Docs
-description: Utiliser l’attribut MSBuild Include d’ItemGroup pour spécifier les fichiers à inclure dans une build
+description: Découvrez comment utiliser l’attribut include de MSBuild de ItemGroup pour spécifier les fichiers à inclure dans une build.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247583"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904506"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
 
@@ -35,7 +35,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>
 ```
 
- L’élément *file2.cs* ne remplace pas l’élément *file1.cs*; au lieu de cela, le nom de fichier est ajouté à la liste de valeurs pour le `Compile` type d’élément.
+ L’élément *file2.cs* ne remplace pas l’élément *file1.cs* ; au lieu de cela, le nom de fichier est ajouté à la liste de valeurs pour le `Compile` type d’élément.
 
  Le code XML suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut `Include`. Notez que les noms de fichiers sont séparés par un point-virgule.
 
@@ -89,7 +89,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 
 ## <a name="use-the-exclude-attribute"></a>Utiliser l’attribut Exclude
 
- Les éléments Item peuvent contenir l’attribut `Exclude` qui exclut des éléments spécifiques (fichiers) du type d’élément. L’attribut `Exclude` est généralement utilisé avec des caractères génériques. Par exemple, le code XML suivant ajoute tous les fichiers *.cs* du répertoire au type d’élément CSFile, à l’exception du fichier *DoNotBuild.cs*.
+ Les éléments Item peuvent contenir l’attribut `Exclude` qui exclut des éléments spécifiques (fichiers) du type d’élément. L’attribut `Exclude` est généralement utilisé avec des caractères génériques. Par exemple, le code XML suivant ajoute tous les fichiers *.cs* du répertoire au type d’élément CSFile, à l’exception du fichier *DoNotBuild.cs* .
 
 ```xml
 <ItemGroup>
@@ -97,7 +97,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 </ItemGroup>
 ```
 
- L’attribut `Exclude` affecte uniquement les éléments qui sont ajoutés par l’attribut `Include` dans l’élément Item qui les contient. L’exemple suivant n’exclut pas le fichier *Form1.cs*, qui a été ajouté dans l’élément item précédent.
+ L’attribut `Exclude` affecte uniquement les éléments qui sont ajoutés par l’attribut `Include` dans l’élément Item qui les contient. L’exemple suivant n’exclut pas le fichier *Form1.cs* , qui a été ajouté dans l’élément item précédent.
 
 ```xml
 <Compile Include="*.cs" />

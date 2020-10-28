@@ -1,5 +1,7 @@
 ---
 title: MSBuild | Microsoft Docs
+description: Découvrez comment la plateforme Microsoft Build Engine (MSBuild) fournit un fichier projet avec un schéma XML pour contrôler les builds.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099269"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904519"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Le Microsoft Build Engine est une plateforme de création d’applications. Ce moteur, également appelé MSBuild, fournit un schéma XML pour un fichier projet qui contrôle la manière dont la plateforme de génération traite et génère les logiciels. Visual Studio utilise MSBuild, mais MSBuild ne dépend pas de Visual Studio. En appelant *msbuild.exe* sur votre fichier projet ou solution, vous pouvez orchestrer et générer des produits dans les environnements où Visual Studio n’est pas installé.
 
- Visual Studio utilise MSBuild pour charger et générer des projets managés. Les fichiers projet de Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* et autres) contiennent du code XML MSBuild qui s’exécute lors de la génération d’un projet avec l’environnement IDE. Les projets Visual Studio importent tous les paramètres et processus de génération nécessaires pour effectuer le travail de développement classique, mais vous pouvez les développer ou les modifier à partir de Visual Studio ou en utilisant un éditeur XML.
+ Visual Studio utilise MSBuild pour charger et générer des projets managés. Les fichiers projet de Visual Studio ( *.csproj* , *.vbproj* , *.vcxproj* et autres) contiennent du code XML MSBuild qui s’exécute lors de la génération d’un projet avec l’environnement IDE. Les projets Visual Studio importent tous les paramètres et processus de génération nécessaires pour effectuer le travail de développement classique, mais vous pouvez les développer ou les modifier à partir de Visual Studio ou en utilisant un éditeur XML.
 
  Pour plus d’informations sur MSBuild pour C++, consultez [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -53,7 +55,7 @@ Cet article fournit une vue d’ensemble de MSBuild. Pour un didacticiel d’int
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Utiliser MSBuild dans une invite de commandes
 
- Pour exécuter MSBuild à partir d’une invite de commandes, transmettez un fichier projet à *MSBuild.exe*, ainsi que les options de ligne de commande appropriées. Les options de ligne de commande vous permettent de définir des propriétés, d'exécuter des cibles spécifiques et de définir d'autres options qui contrôlent le processus de génération. Par exemple, la syntaxe de ligne de commande suivante permet de générer le fichier *MyProj.proj* avec la propriété `Configuration` définie sur `Debug`.
+ Pour exécuter MSBuild à partir d’une invite de commandes, transmettez un fichier projet à *MSBuild.exe* , ainsi que les options de ligne de commande appropriées. Les options de ligne de commande vous permettent de définir des propriétés, d'exécuter des cibles spécifiques et de définir d'autres options qui contrôlent le processus de génération. Par exemple, la syntaxe de ligne de commande suivante permet de générer le fichier *MyProj.proj* avec la propriété `Configuration` définie sur `Debug`.
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -168,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - Vous pouvez cibler des frameworks autres que .NET Framework, par exemple Silverlight.
 
-- Vous pouvez cibler un *profil Framework*, qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.
+- Vous pouvez cibler un *profil Framework* , qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.
 
 - Si un Service Pack pour la version actuelle de .NET Framework est libéré, vous pouvez le cibler.
 
@@ -178,7 +180,7 @@ Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../m
 
 ## <a name="see-also"></a>Voir aussi
 
-| Titre | Description |
+| Intitulé | Description |
 | - | - |
 | [Procédure pas à pas : Créer un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte. |
 | [Procédure pas à pas : Utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md) | Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio. |
@@ -193,7 +195,7 @@ Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../m
 | [Comment MSBuild génère des projets](build-process-overview.md) | Décrit le processus de génération interne utilisé dans MSBuild |
 | [Ressources supplémentaires](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Répertorie les ressources de communauté et de prise en charge pour des informations supplémentaires sur MSBuild. |
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 
 - [Référence MSBuild](../msbuild/msbuild-reference.md)\
  Renvoie aux rubriques contenant les informations de référence.

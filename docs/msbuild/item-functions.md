@@ -1,5 +1,7 @@
 ---
 title: Fonctions d’élément | Microsoft Docs
+description: Découvrez comment le code MSBuild dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94b94ef7b17633ab78f7eb91f61dd67ea2c8021d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82586882"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904636"
 ---
 # <a name="item-functions"></a>fonctions d'élément
 

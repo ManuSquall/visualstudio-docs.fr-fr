@@ -1,5 +1,7 @@
 ---
 title: Concepts avancés de MSBuild | Microsoft Docs
+description: Consultez des liens vers des articles qui expliquent comment utiliser des techniques avancées pour améliorer les builds que vous exécutez à l’aide de MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58974778be615f2b0455f5b65a1c392035265425
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289285"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903469"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concepts avancés de MSBuild
 
@@ -23,7 +25,7 @@ Les documents dans cette section décrivent comment utiliser des techniques avan
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Traitement par lot](../msbuild/msbuild-batching.md)|Décrit comment générer en tâche de fond des cibles et des tâches basées sur des métadonnées d'élément.|
 |[Transformations](../msbuild/msbuild-transforms.md)|Explique comment utiliser des transformations pour activer l'analyse de dépendance.|

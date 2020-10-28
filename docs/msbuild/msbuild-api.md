@@ -1,5 +1,7 @@
 ---
 title: API MSBuild | Microsoft Docs
+description: En savoir plus sur la surface d’API publique fournie par MSBuild pour permettre à votre programme d’effectuer des builds et d’inspecter des projets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87ee95c4027d0513c78d3ce0386cf31d47baf94
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 34628f08c8860771b07d8e2544c79ad23eba18cf
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862682"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903566"
 ---
 # <a name="use-the-msbuild-api"></a>Utiliser l’API MSBuild
 
@@ -41,7 +43,7 @@ Vous pouvez trouver la documentation de l’API MSBuild en utilisant le navigate
 | [Microsoft. Build. Evaluation. Context](/dotnet/api/Microsoft.Build.Evaluation.Context?view=msbuild-15&preserve-view=true) | Tous | Contient la `EvaluationContext` classe utilisée pour stocker l’état d’évaluation entre les appels. |
 | [Microsoft. Build. exceptions](/dotnet/api/Microsoft.Build.Exceptions?view=msbuild-15&preserve-view=true) | Tous | Contient les types d'exceptions susceptibles d'être levés pendant le processus de génération. |
 | [Microsoft.Build.Execution](/dotnet/api/Microsoft.Build.Execution?view=msbuild-15&preserve-view=true) | Tous | Contient les types que le modèle objet MSBuild utilise pour générer des projets. |
-| [Microsoft.Build.Framework](/dotnet/api/Microsoft.Build.Framework?view=msbuild-15&preserve-view=true) | Tous | Contient les types qui définissent comment les tâches et les journaux interagissent avec le moteur MSBuild.|
+| [Microsoft.Build.Framework](/dotnet/api/Microsoft.Build.Framework?view=msbuild-15&preserve-view=true) | Tous | Contient les types qui définissent comment les tâches et les enregistreurs d’événements interagissent avec le moteur MSBuild.|
 | [Microsoft. Build. Framework. Profiler](/dotnet/api/Microsoft.Build.Framework.Profiler?view=msbuild-15&preserve-view=true) | Tous | Contient les types qui prennent en charge le profilage des performances. |
 | [Microsoft. Build. Framework. XamlTypes](/dotnet/api/Microsoft.Build.Framework.XamlTypes?view=msbuild-15&preserve-view=true) | .NET Framework uniquement | Contient des classes utilisées pour représenter des types XAML analysés à partir de fichiers, de règles et d’autres sources. |
 | [Microsoft. Build. globbing](/dotnet/api/Microsoft.Build.Globbing?view=msbuild-15&preserve-view=true) | Tous | Contient des classes qui prennent en charge le traitement de caractères génériques. |
@@ -49,7 +51,7 @@ Vous pouvez trouver la documentation de l’API MSBuild en utilisant le navigate
 | [Microsoft. Build. Graph](/dotnet/api/Microsoft.Build.Graph?view=msbuild-15&preserve-view=true) | Tous | Contient des types qui prennent en charge le `-graph` commutateur MSBuild. |
 | [Microsoft.Build.Logging](/dotnet/api/Microsoft.Build.Logging?view=msbuild-15&preserve-view=true) | Tous | Contient les types utilisés pour l'enregistrement de la progression d'une build. |
 | [Microsoft. Build. ObjectModelRemoting](/dotnet/api/Microsoft.Build.ObjectModelRemoting?view=msbuild-15&preserve-view=true) | Tous | Contient des types qui prennent en charge la communication à distance dans MSBuild. |
-| [Microsoft.Build.Tasks](/dotnet/api/Microsoft.Build.Tasks?view=msbuild-15&preserve-view=true) | Tous | Contient l’implémentation de toutes les tâches expédiées avec MSBuild. |
+| [Microsoft.Build.Tasks](/dotnet/api/Microsoft.Build.Tasks?view=msbuild-15&preserve-view=true) | Tous | Contient l’implémentation de toutes les tâches livrées avec MSBuild. |
 | [Microsoft. Build. Tasks. Deployment. Bootstrapper](/dotnet/api/Microsoft.Build.Tasks.Deployment.Bootstrapper?view=msbuild-15&preserve-view=true) | .NET Framework uniquement | Contient des classes utilisées en interne par MSBuild. |
 | [Microsoft.Build.Tasks.Deployment.ManifestUtilities](/dotnet/api/Microsoft.Build.Tasks.Deployment.ManifestUtilities?view=msbuild-15&preserve-view=true) | .NET Framework uniquement | Contient des classes utilisées par MSBuild.|
 | [Microsoft. Build. Tasks. Hosting](/dotnet/api/Microsoft.Build.Tasks.Hosting?view=msbuild-15&preserve-view=true) | Tous | Contient des classes utilisées en interne par MSBuild. |
@@ -65,7 +67,7 @@ Vous pouvez trouver la documentation de l’API MSBuild en utilisant le navigate
 | [Microsoft. Build. Evaluation. Context](/dotnet/api/Microsoft.Build.Evaluation.Context?view=msbuild-16&preserve-view=true) | Tous | Contient la `EvaluationContext` classe utilisée pour stocker l’état d’évaluation entre les appels. |
 | [Microsoft. Build. exceptions](/dotnet/api/Microsoft.Build.Exceptions?view=msbuild-16&preserve-view=true) | Tous | Contient les types d'exceptions susceptibles d'être levés pendant le processus de génération. |
 | [Microsoft.Build.Execution](/dotnet/api/Microsoft.Build.Execution?view=msbuild-16&preserve-view=true) | Tous | Contient les types que le modèle objet MSBuild utilise pour générer des projets. |
-| [Microsoft.Build.Framework](/dotnet/api/Microsoft.Build.Framework?view=msbuild-16&preserve-view=true) | Tous | Contient les types qui définissent comment les tâches et les journaux interagissent avec le moteur MSBuild.|
+| [Microsoft.Build.Framework](/dotnet/api/Microsoft.Build.Framework?view=msbuild-16&preserve-view=true) | Tous | Contient les types qui définissent comment les tâches et les enregistreurs d’événements interagissent avec le moteur MSBuild.|
 | [Microsoft. Build. Framework. Profiler](/dotnet/api/Microsoft.Build.Framework.Profiler?view=msbuild-16&preserve-view=true) | Tous | Contient les types qui prennent en charge le profilage des performances. |
 | [Microsoft. Build. Framework. XamlTypes](/dotnet/api/Microsoft.Build.Framework.XamlTypes?view=msbuild-16&preserve-view=true) | .NET Framework uniquement | Contient des classes utilisées pour représenter des types XAML analysés à partir de fichiers, de règles et d’autres sources. |
 | [Microsoft. Build. globbing](/dotnet/api/Microsoft.Build.Globbing?view=msbuild-16&preserve-view=true) | Tous | Contient des classes qui prennent en charge le traitement de caractères génériques. |
@@ -73,7 +75,7 @@ Vous pouvez trouver la documentation de l’API MSBuild en utilisant le navigate
 | [Microsoft. Build. Graph](/dotnet/api/Microsoft.Build.Graph?view=msbuild-16&preserve-view=true) | Tous | Contient des types qui prennent en charge le `-graph` commutateur MSBuild. |
 | [Microsoft.Build.Logging](/dotnet/api/Microsoft.Build.Logging?view=msbuild-16&preserve-view=true) | Tous | Contient les types utilisés pour l'enregistrement de la progression d'une build. |
 | [Microsoft. Build. ObjectModelRemoting](/dotnet/api/Microsoft.Build.ObjectModelRemoting?view=msbuild-16&preserve-view=true) | Tous | Contient des types qui prennent en charge la communication à distance dans MSBuild. |
-| [Microsoft.Build.Tasks](/dotnet/api/Microsoft.Build.Tasks?view=msbuild-16&preserve-view=true) | Tous | Contient l’implémentation de toutes les tâches expédiées avec MSBuild. |
+| [Microsoft.Build.Tasks](/dotnet/api/Microsoft.Build.Tasks?view=msbuild-16&preserve-view=true) | Tous | Contient l’implémentation de toutes les tâches livrées avec MSBuild. |
 | [Microsoft. Build. Tasks. Deployment. Bootstrapper](/dotnet/api/Microsoft.Build.Tasks.Deployment.Bootstrapper?view=msbuild-16&preserve-view=true) | .NET Framework uniquement | Contient des classes utilisées en interne par MSBuild. |
 | [Microsoft.Build.Tasks.Deployment.ManifestUtilities](/dotnet/api/Microsoft.Build.Tasks.Deployment.ManifestUtilities?view=msbuild-16&preserve-view=true) | .NET Framework uniquement | Contient des classes utilisées par MSBuild.|
 | [Microsoft. Build. Tasks. Hosting](/dotnet/api/Microsoft.Build.Tasks.Hosting?view=msbuild-16&preserve-view=true) | Tous | Contient des classes utilisées en interne par MSBuild. |

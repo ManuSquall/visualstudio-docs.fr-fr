@@ -6,16 +6,16 @@ manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
-description: Découvrez comment contacter l’administrateur de votre abonnement pour obtenir de l’aide concernant sur des questions ou des problèmes.
-ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: Découvrez comment contacter votre administrateur d’abonnement pour obtenir de l’aide concernant des questions ou des problèmes.
+ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005686"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904525"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
-Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre établissement scolaire, il est probable qu’il vous a été attribué par un administrateur d’abonnements.  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
+# <a name="get-assistance-from-your-subscriptions-admin"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
+Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre école, il est probable qu’il vous a été attribué par un administrateur d’abonnements ou par un « administrateur ».  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
 
 Compte tenu de la taille et de la complexité de nombreuses organisations, vous pouvez ne pas savoir qui est votre administrateur : il peut donc être difficile de savoir où obtenir de l’aide.  Nous avons ajouté une nouvelle fonctionnalité au portail des abonnés pour vous aider à contacter votre administrateur.   
 
@@ -27,7 +27,7 @@ Compte tenu de la taille et de la complexité de nombreuses organisations, vous 
    > ![Contacter mon administrateur](_img/contact-my-admin/contact-my-admin-button.png "Sélectionnez le bouton contacter mon administrateur, entrez votre message, puis sélectionnez Envoyer.")
 4. Entrez le message destiné à votre administrateur.
 5. Si vous souhaitez recevoir une copie du message envoyé à votre administrateur, activez la case à cocher **m’envoyer une copie** . 
-6. Enfin, sélectionnez **Envoyer**.
+6. Enfin, sélectionnez **Envoyer** .
 
 > [!NOTE]
 > **Super administrateurs :**  Pour définir l’adresse de messagerie à laquelle les demandes « contacter mon administrateur » sont envoyées, spécifiez cette adresse dans les préférences de l' [accord](admin-prefs.md#contact-email-address).

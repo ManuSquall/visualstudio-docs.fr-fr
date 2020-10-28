@@ -1,18 +1,18 @@
 ---
 title: Offre Azure Accord Entreprise DevTest
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/23/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: Découvrez comment tirer parti des tarifs spéciaux d’Azure DevTest disponibles pour les clients disposant d’un contrat entreprise
-ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005738"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904465"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offre Azure Accord Entreprise DevTest
 
@@ -32,14 +32,14 @@ Pour activer les offres :
 0. Pointez sur le nom du compte. 
 0. Cliquez sur l’icône de **modification** (crayon) à l’extrême droite. 
 0. Cliquez sur la case à cocher **dev/test** .
-0. Cliquez sur **Enregistrer**.
+0. Cliquez sur **Enregistrer** .
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Créer des abonnements individuels au sein du compte
 Chaque abonné sur le compte peut créer un abonnement en procédant comme suit :
 1. Connectez-vous à [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Choisissez l’offre de **Enterprise dev/test** .
 0. Activez la case à cocher pour confirmer que l’abonnement est régi par le Accord Entreprise. 
-0. Cliquez sur **Achat**.  (Avec cette offre, vous n’achetez rien en fait.)
+0. Cliquez sur **Achat** .  (Avec cette offre, vous n’achetez rien en fait.)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

@@ -1,5 +1,7 @@
 ---
 title: Métadonnées d’éléments dans le traitement par lots des cibles | Microsoft Docs
+description: Découvrez comment MSBuild utilise les métadonnées d’élément dans le traitement par lots de cibles pour effectuer une analyse des dépendances sur les entrées et les sorties d’une cible de génération.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0436402aa4000841a278497af697985c3a50c812
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633666"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904611"
 ---
 # <a name="item-metadata-in-target-batching"></a>Métadonnées d’élément dans le traitement par lots des cibles
 

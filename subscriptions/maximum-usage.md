@@ -1,21 +1,21 @@
 ---
-title: Utiliser la fonctionnalité d’utilisation maximale dans le portail d’administration
+title: Utiliser la fonctionnalité utilisation maximale dans les abonnements Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Découvrir comment afficher le nombre maximal d’abonnements attribués dans le portail d’administration
-ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022167"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904490"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utiliser la fonctionnalité utilisation maximale pour suivre le nombre d’abonnements affectés
-Une nouvelle fonctionnalité du portail d’administration des abonnements Visual Studio vous permet de suivre le nombre d’abonnements que vous avez achetés et attribués. Elle permet également d’identifier le nombre maximal d’abonnements de chaque niveau que vous avez attribués au cours de l’année précédente et pendant la durée de votre ou vos contrats. 
+Une nouvelle fonctionnalité du portail d’administration des abonnements Visual Studio vous permet de suivre le nombre d’abonnements que vous avez achetés et attribués, et identifie le nombre maximal d’abonnements de chaque niveau que vous avez attribué, au cours de l’année précédente et Pendant toute la durée de votre ou vos accords. 
 
 ## <a name="maximum-usage-overview"></a>Vue d’ensemble de l’utilisation maximale
 Regardez la vidéo ou lisez pour savoir comment utiliser la fonctionnalité utilisation maximale. 
@@ -55,5 +55,5 @@ R : les informations de la vue d’ensemble indiquent les attributions *actuell
 - [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-- Si vous avez des questions sur les attributions d’abonnements ou d’autres aspects du portail d’administration, contactez https://visualstudio.microsoft.com/subscriptions/support/ pour obtenir de l’aide. 
+- Si vous avez des questions sur les affectations d’abonnements ou d’autres aspects du portail d’administration, contactez https://visualstudio.microsoft.com/subscriptions/support/ pour obtenir de l’aide. 
 - Découvrez plus d’informations sur la procédure à suivre si vous attribuez plus d’abonnements que ce que avez acheté : ceci est désigné sous le nom de [surallocation](handle-overclaimed-license.md).

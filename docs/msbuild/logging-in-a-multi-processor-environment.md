@@ -1,5 +1,7 @@
 ---
 title: Journalisation dans un environnement multiprocesseur | Microsoft Docs
+description: Découvrez comment MSBuild fournit un enregistreur d’événements prenant en charge plusieurs processeurs et permet la création de « journaux de transfert » personnalisés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633562"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904372"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Journalisation dans un environnement multiprocesseur
 
@@ -30,7 +32,7 @@ Vous pouvez améliorer l’efficacité de la journalisation en créant un journa
 
 ### <a name="central-logging-model"></a>Modèle de journalisation centralisé
 
-Pour les générations multiprocesseurs, MSBuild utilise un « modèle de journalisation centralisé ». Dans le modèle de journalisation centralisée, une instance de *MSBuild.exe* agit comme processus de génération principal, ou « nœud central ». Les instances secondaires de *MSBuild.exe*, ou « nœuds secondaires », sont attachées au nœud central. Tous les journaux ILogger attachés au nœud central sont appelés « journaux centraux » et les journaux attachés à des nœuds secondaires sont appelés « journaux secondaires ».
+Pour les générations multiprocesseurs, MSBuild utilise un « modèle de journalisation centralisé ». Dans le modèle de journalisation centralisée, une instance de *MSBuild.exe* agit comme processus de génération principal, ou « nœud central ». Les instances secondaires de *MSBuild.exe* , ou « nœuds secondaires », sont attachées au nœud central. Tous les journaux ILogger attachés au nœud central sont appelés « journaux centraux » et les journaux attachés à des nœuds secondaires sont appelés « journaux secondaires ».
 
 Quand une génération se produit, les journaux secondaires routent leur trafic vers les journaux centraux. Comme les événements proviennent de plusieurs nœuds secondaires, les données arrivent au nœud central simultanément mais entrelacés. Pour résoudre les références d’événement à projet et d’événement à cible, les arguments des événements incluent des informations de contexte d’événement de génération supplémentaires.
 

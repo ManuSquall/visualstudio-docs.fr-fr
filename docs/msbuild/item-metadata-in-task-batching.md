@@ -1,5 +1,7 @@
 ---
 title: Métadonnées d’éléments dans le traitement par lots de tâches | Microsoft Docs
+description: Découvrez comment MSBuild utilise des métadonnées d’élément dans le traitement par lots de tâches pour diviser des listes d’éléments en différentes catégories, ou lots, et exécuter une tâche une fois avec chaque lot.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288986"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903724"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’élément dans le traitement par lots des tâches
 
@@ -229,4 +231,4 @@ Items in ExampColl: Item2;Item5
 - [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Traitement par lot](../msbuild/msbuild-batching.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)

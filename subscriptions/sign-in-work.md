@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Découvrez comment vous connecter à vos abonnements Visual Studio avec votre compte professionnel ou scolaire.
-ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005805"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903379"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Connexion à vos abonnements Visual Studio avec votre compte professionnel ou scolaire 
 
@@ -28,7 +28,7 @@ Cet article décrit les étapes à suivre pour vous connecter avec une adresse e
    > [!NOTE]
    > Cette adresse est également indiquée dans le message de bienvenue à l’abonné que vous avez reçu. Si vous avez des difficultés à localiser l’e-mail de bienvenue, vérifiez votre dossier de courrier indésirable.
 
-3. Cliquez sur **Continuer**.
+3. Cliquez sur **Continuer** .
 4. Vous êtes redirigé vers la page de connexion de votre entreprise.
 5. Saisissez votre mot de passe.
 6. Cliquer sur **se connecter**
@@ -46,7 +46,7 @@ Vous pouvez également voir votre abonnement actuellement sélectionné dans le 
    > [!NOTE]
    > Cette adresse est également indiquée dans la lettre de bienvenue envoyée à l’abonné. Si vous n’avez pas reçu la lettre de bienvenue, vérifiez qu’elle n’est pas dans le dossier de courrier indésirable
 
-3. Cliquez sur **Continuer**.
+3. Cliquez sur **Continuer** .
 4. Vous allez être redirigé vers une page de sélection.
     - Sélectionnez **Compte professionnel ou scolaire** si l’abonnement est attribué à un compte « professionnel ou scolaire » qui est associé à un locataire Azure Active Directory (AAD).
     - Sélectionnez **personnel** si l’abonnement est associé à une adresse de messagerie d’entreprise, mais qu’il a également été converti en compte Microsoft « personnel » (MSA).
@@ -54,10 +54,10 @@ Vous pouvez également voir votre abonnement actuellement sélectionné dans le 
         > [!NOTE]
         > C’est le cas pour de nombreux abonnés qui ont utilisé des abonnements Visual Studio (anciennement MSDN) par le passé.
 
-    - Si un chemin d’accès échoue, essayez l’autre.  Il est possible que les administrateurs des abonnements aient modifié votre abonnement.
+    - Si un chemin d’accès échoue, essayez l’autre.  Les administrateurs d’abonnements ont peut-être modifié votre abonnement.
 
 5. Saisissez votre mot de passe.
-6. Cliquez sur **Se connecter**.
+6. Cliquez sur **Se connecter** .
 7. À ce stade, la page « Avantages » doit être affichée.
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions

@@ -1,5 +1,7 @@
 ---
 title: MarkupCompilePass1, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche MarkupCompilePass1 pour convertir les fichiers projet XAML non localisables au format binaire compilé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a847f096edf5e42623cb2cb32cf4fd871a89aad7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 775884692963da226947a8fac524a8bd440d6c8d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633510"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904267"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1, tâche
 
@@ -33,10 +35,10 @@ La <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> tâche convertit les 
 | Paramètre | Description |
 | - | - |
 | `AllGeneratedFiles` | Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Contient une liste complète des fichiers qui sont générés par la tâche <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>. |
-| `AlwaysCompileMarkupFilesInSeparateDomain` | Paramètre **booléen** facultatif.<br /><br /> Indique si la tâche doit être exécutée dans un <xref:System.AppDomain> séparé. Si ce paramètre retourne la **valeur false**, la tâche s’exécute dans le même <xref:System.AppDomain> que MSBuild et s’exécute plus rapidement. Si le paramètre retourne la **valeur true**, la tâche s’exécute dans une seconde <xref:System.AppDomain> qui est isolée de MSBuild et s’exécute plus lentement. |
+| `AlwaysCompileMarkupFilesInSeparateDomain` | Paramètre **booléen** facultatif.<br /><br /> Indique si la tâche doit être exécutée dans un <xref:System.AppDomain> séparé. Si ce paramètre retourne la **valeur false** , la tâche s’exécute dans le même <xref:System.AppDomain> que MSBuild et s’exécute plus rapidement. Si le paramètre retourne la **valeur true** , la tâche s’exécute dans une seconde <xref:System.AppDomain> qui est isolée de MSBuild et s’exécute plus lentement. |
 | `ApplicationMarkup` | Paramètre **ITaskItem []** facultatif.<br /><br /> Spécifie le nom du fichier XAML de définition d’application. |
-| `AssembliesGeneratedDuringBuild` | Paramètre **String []** facultatif.<br /><br /> Spécifie des références à des assemblys qui changent pendant le processus de génération. Par exemple, une solution Visual Studio peut contenir un projet qui référence la sortie compilée d’un autre projet. Dans ce cas, la sortie compilée du deuxième projet peut être ajoutée au paramètre **AssembliesGeneratedDuringBuild**.<br /><br /> Remarque : Le paramètre **AssembliesGeneratedDuringBuild** doit contenir des références au jeu complet des assemblys générés par une solution de génération. |
-| `AssemblyName` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le nom court de l’assembly généré pour un projet. Par exemple, si un projet génère un fichier exécutable Windows dont le nom est *WinExeAssembly.exe*, le paramètre **AssemblyName** a la valeur **WinExeAssembly**. |
+| `AssembliesGeneratedDuringBuild` | Paramètre **String []** facultatif.<br /><br /> Spécifie des références à des assemblys qui changent pendant le processus de génération. Par exemple, une solution Visual Studio peut contenir un projet qui référence la sortie compilée d’un autre projet. Dans ce cas, la sortie compilée du deuxième projet peut être ajoutée au paramètre **AssembliesGeneratedDuringBuild** .<br /><br /> Remarque : Le paramètre **AssembliesGeneratedDuringBuild** doit contenir des références au jeu complet des assemblys générés par une solution de génération. |
+| `AssemblyName` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le nom court de l’assembly généré pour un projet. Par exemple, si un projet génère un fichier exécutable Windows dont le nom est *WinExeAssembly.exe* , le paramètre **AssemblyName** a la valeur **WinExeAssembly** . |
 | `AssemblyPublicKeyToken` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie le jeton de clé publique de l’assembly. |
 | `AssemblyVersion` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie le numéro de version de l’assembly. |
 | `ContentFiles` | Paramètre **ITaskItem []** facultatif.<br /><br /> Spécifie la liste des fichiers de contenu libre. |
@@ -45,13 +47,13 @@ La <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> tâche convertit les 
 | `GeneratedBamlFiles` | Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Contient la liste des fichiers générés au format binaire XAML. |
 | `GeneratedCodeFiles` | Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Contient la liste des fichiers de code managé générés. |
 | `GeneratedLocalizationFiles` | Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Contient la liste des fichiers de localisation qui ont été générés pour chaque fichier XAML localisable. |
-| `HostInBrowser` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie si l’assembly généré est une application de navigateur XAML (XBAP). Les options valides sont **true** et **false**. Si **true**, du code est généré pour prendre en charge l’hébergement de navigateur. |
+| `HostInBrowser` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie si l’assembly généré est une application de navigateur XAML (XBAP). Les options valides sont **true** et **false** . Si **true** , du code est généré pour prendre en charge l’hébergement de navigateur. |
 | `KnownReferencePaths` | Paramètre **String []** facultatif.<br /><br /> Spécifie des références à des assemblys qui ne changent pas pendant le processus de génération. Comprend les assemblys qui se trouvent dans le Global Assembly Cache (GAC), dans un répertoire d’installation .NET, et ainsi de suite. |
-| `Language` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le langage managé pris en charge par le compilateur. Les options valides sont **C#**, **VB**, **JScript** et **C++**. |
+| `Language` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le langage managé pris en charge par le compilateur. Les options valides sont **C#** , **VB** , **JScript** et **C++** . |
 | `LanguageSourceExtension` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie l’extension ajoutée à l’extension du fichier de code managé généré :<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Si le paramètre **LanguageSourceExtension** n’est pas défini avec une valeur spécifique, l’extension de nom de fichier source par défaut pour une langue est utilisée : *. vb* pour Visual Basic, *. CSharp* pour C#. |
-| `LocalizationDirectivesToLocFile` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie comment générer des informations de localisation pour chaque fichier XAML source. Les options valides sont **None**, **CommentsOnly** et **All**. |
+| `LocalizationDirectivesToLocFile` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie comment générer des informations de localisation pour chaque fichier XAML source. Les options valides sont **None** , **CommentsOnly** et **All** . |
 | `OutputPath` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le répertoire dans lequel les fichiers de code managé générés et les fichiers de format binaire XAML sont générés. |
-| `OutputType` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le type d’assembly généré par un projet. Les options valides sont **winexe**, **exe**, **library** et **netmodule**. |
+| `OutputType` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le type d’assembly généré par un projet. Les options valides sont **winexe** , **exe** , **library** et **netmodule** . |
 | `PageMarkup` | Paramètre **ITaskItem []** facultatif.<br /><br /> Spécifie une liste de fichiers XAML à traiter. |
 | `References` | Paramètre **ITaskItem []** facultatif.<br /><br /> Spécifie la liste des références des fichiers aux assemblys qui contiennent les types utilisés dans les fichiers XAML. |
 | `RequirePass2ForMainAssembly` | Paramètre de sortie **Boolean** facultatif.<br /><br /> Indique si le projet contient des fichiers XAML non localisables qui référencent des types locaux incorporés dans l’assembly principal. |
@@ -59,11 +61,11 @@ La <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> tâche convertit les 
 | `RootNamespace` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie l’espace de noms racine pour les classes qui se trouvent dans le projet. **RootNamespace** est également utilisé comme espace de noms par défaut d’un fichier de code managé généré lorsque le fichier XAML correspondant n’inclut pas l' `x:Class` attribut. |
 | `SourceCodeFiles` | Paramètre **ITaskItem []** facultatif.<br /><br /> Spécifie la liste des fichiers de code pour le projet actuel. La liste n’inclut pas les fichiers de code managé générés propres au langage. |
 | `UICulture` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie l’assembly satellite pour la culture d’interface utilisateur dans laquelle les fichiers de format binaire XAML générés sont incorporés. Si **UICulture** n’est pas défini, les fichiers de format binaire XAML générés sont incorporés dans l’assembly principal. |
-| `XAMLDebuggingInformation` | Paramètre **booléen** facultatif.<br /><br /> Quand la **valeur est true**, les informations de diagnostic sont générées et incluses dans le XAML compilé afin d’aider au débogage. |
+| `XAMLDebuggingInformation` | Paramètre **booléen** facultatif.<br /><br /> Quand la **valeur est true** , les informations de diagnostic sont générées et incluses dans le XAML compilé afin d’aider au débogage. |
 
 ## <a name="remarks"></a>Notes
 
-<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>En général, la tâche compile du XAML au format binaire et génère des fichiers de code. Si un fichier XAML contient des références à des types définis dans le même projet, sa compilation au format binaire est différée par **MarkupCompilePass1** à une deuxième passe de compilation du balisage (**MarkupCompilePass2**). La compilation de ces fichiers doit être différée car ils doivent attendre que les types référencés définis localement soient compilés. Toutefois, si un fichier XAML a un `x:Class` attribut, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> génère le fichier de code spécifique au langage correspondant.
+<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>En général, la tâche compile du XAML au format binaire et génère des fichiers de code. Si un fichier XAML contient des références à des types définis dans le même projet, sa compilation au format binaire est différée par **MarkupCompilePass1** à une deuxième passe de compilation du balisage ( **MarkupCompilePass2** ). La compilation de ces fichiers doit être différée car ils doivent attendre que les types référencés définis localement soient compilés. Toutefois, si un fichier XAML a un `x:Class` attribut, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> génère le fichier de code spécifique au langage correspondant.
 
 Un fichier XAML peut être localisé s’il contient des éléments qui utilisent l' `x:Uid` attribut :
 
@@ -123,7 +125,7 @@ L’exemple suivant montre comment convertir trois fichiers XAML de *page* en fi
 
 - [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Référence des tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Référence des tâches MSBuild](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
 - [Vue d’ensemble des applications de navigateur XAML WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

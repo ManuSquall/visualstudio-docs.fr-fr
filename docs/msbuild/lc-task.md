@@ -1,5 +1,7 @@
 ---
 title: LC, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche LC pour encapsuler LC.exe, qui génère un fichier. License à partir d’un fichier. licx.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70c996d5a8d1d4bf296a395bfb64ead6eba1bb01
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167395"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903583"
 ---
 # <a name="lc-task"></a>LC (tâche)
 
-Encapsule *LC.exe*, qui génère un fichier *.license* à partir d’un fichier *.licx*. Pour plus d’informations sur *LC.exe*, consultez [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).
+Encapsule *LC.exe* , qui génère un fichier *.license* à partir d’un fichier *.licx* . Pour plus d’informations sur *LC.exe* , consultez [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>Paramètres
 
@@ -39,9 +41,9 @@ Le tableau ci-dessous décrit les paramètres de la tâche `LC`.
 |`NoLogo`|Paramètre `Boolean` facultatif.<br /><br /> Supprime l'affichage de la bannière de démarrage Microsoft.|
 |`OutputDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire où placer les fichiers *.licenses* de sortie.|
 |`OutputLicense`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le nom du fichier *. licenses* . Si vous ne spécifiez pas de nom, le nom du fichier *. licx* est utilisé et le fichier *. licenses* est placé dans le répertoire qui contient le fichier *. licx* .|
-|`ReferencedAssemblies`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les composants référencés à charger lors de la génération du fichier *.license*.|
-|`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin d’accès aux outils du kit de développement logiciel (SDK), par exemple *resgen.exe*.|
-|`Sources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments contenant les composants sous licence à inclure dans le fichier *.licenses*. Pour plus d’informations, consultez la documentation pour l’indicateur `/complist` dans [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).|
+|`ReferencedAssemblies`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les composants référencés à charger lors de la génération du fichier *.license* .|
+|`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin d’accès aux outils du kit de développement logiciel (SDK), par exemple *resgen.exe* .|
+|`Sources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments contenant les composants sous licence à inclure dans le fichier *.licenses* . Pour plus d’informations, consultez la documentation pour l’indicateur `/complist` dans [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

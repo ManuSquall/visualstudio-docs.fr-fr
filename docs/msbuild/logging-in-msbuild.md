@@ -1,5 +1,7 @@
 ---
 title: Journalisation dans MSBuild | Microsoft Docs
+description: Découvrez comment la journalisation MSBuild fournit un moyen de surveiller la progression de la génération en capturant les événements de build, les messages, les avertissements et les erreurs dans un fichier journal.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633549"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904333"
 ---
 # <a name="logging-in-msbuild"></a>Journalisation dans MSBuild
 
 La journalisation vous permet de surveiller la progression d’une génération. Elle capture dans un fichier journal les événements, messages, avertissements et erreurs liés à la génération.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 - [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Découvrez les problèmes qui peuvent se produire lors de la connexion aux abonnements Visual Studio.
-ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005275"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903446"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problèmes de connexion aux abonnements Visual Studio
 Pour utiliser votre abonnement Visual Studio, vous devez tout d’abord vous connecter.  En fonction de votre abonnement, vous l’aurez peut-être configuré avec un compte Microsoft (MSA) ou une identité Azure Active Directory (AAD).  Cet article décrit certains problèmes que vous pouvez rencontrer lors de la connexion à votre abonnement.
@@ -32,12 +32,12 @@ La situation est particulièrement déroutante pour les utilisateurs qui ont deu
 Si vous tentez de vous inscrire à une application consommateur Microsoft avec une adresse e-mail professionnelle ou scolaire, vous recevez le message ci-dessous.
 
    > [!div class="mx-imgBorder"]
-   > ![Impossible de créer un compte avec une adresse e-mail professionnelle](_img/sign-in-issues/cannot-use-work-email.png)
+   > ![Impossible de créer un compte avec une adresse e-mail professionnelle](_img/sign-in-issues/cannot-use-work-email.png "Fournissez un nom d’utilisateur et un mot de passe pour créer votre compte.")
 
 Toutefois, si vous tentez de vous inscrire à une application consommateur Microsoft qui prend en charge les comptes personnels et professionnels/scolaires, vous devriez recevoir ce message :
 
    > [!div class="mx-imgBorder"]
-   > ![Comptes professionnels/scolaires pris en charge](_img/sign-in-issues/existing-account.png)
+   > ![Comptes professionnels/scolaires pris en charge](_img/sign-in-issues/existing-account.png "Vous ne pouvez pas vous inscrire ici avec une adresse e-mail professionnelle ou scolaire...")
 
 ### <a name="are-existing-accounts-affected"></a>Les comptes existants sont-ils affectés ?
 Le bloc d’inscription décrit ici empêche uniquement la création de nouveaux comptes. Il n’a aucun impact sur les utilisateurs qui ont déjà un compte Microsoft avec une adresse e-mail professionnelle/scolaire. Si vous êtes déjà dans cette situation, nous avons simplifié le renommage de compte Microsoft personnel. Cet [article du support technique](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) fournit des instructions pas à pas simples. L’attribution d’un nouveau nom à votre compte Microsoft personnel consiste à modifier le nom d’utilisateur et n’a aucun impact sur votre adresse de messagerie professionnelle ou sur la façon dont vous vous connectez aux services professionnels tels que Microsoft 365. Cela n’affecte pas non plus vos informations personnelles, mais change uniquement la façon de vous y connecter. Vous pouvez utiliser une autre adresse e-mail (personnelle), obtenir une nouvelle adresse e-mail @outlook.com auprès de Microsoft, ou utiliser votre numéro de téléphone comme nouveau nom d’utilisateur.
@@ -61,7 +61,7 @@ L’utilisation d’alias fait référence aux utilisateurs qui emploient des id
 Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa connexion active (comme JohnD@contoso.com), mais les utilisateurs accèdent à leurs comptes de messagerie à l’aide d’alias ou de noms conviviaux (comme John.Doe@contoso.com). Pour de nombreux clients qui gèrent leurs abonnements à travers le Centre de gestion des licences en volume (VLSC), cela peut se traduire par un échec de la connexion, car l’adresse e-mail fournie (John.Doe@contoso.com) ne correspond pas à l’adresse d’annuaire (JohnD@contoso.com) requise pour une authentification correcte via l’option « Compte professionnel ou scolaire ».
 
 ### <a name="what-options-do-i-have"></a>Quelles sont les options dont je dispose ?
-En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise. Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action. 
+Du point de vue de l’abonné, il est important de commencer par travailler avec votre administrateur pour comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur devra peut-être mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) à l’aide de votre adresse e-mail d’entreprise. Avant de suivre les étapes de création d’un MSA, contactez votre administrateur en ce qui concerne les stratégies ou problèmes liés à l’exécution de cette action. 
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

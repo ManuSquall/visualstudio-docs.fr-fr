@@ -1,5 +1,5 @@
 ---
-title: Gestion des grandes équipes et des fournisseurs externes | Visual Studio Marketplace
+title: Gestion des grandes équipes et des sous-traitants dans les abonnements Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
@@ -7,15 +7,15 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: En savoir plus sur la responsabilité des administrateurs pour gérer les abonnements pour les équipes de grande taille, ainsi que pour les prestataires externes.
-ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005559"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904669"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
-Les administrateurs d’abonnements Visual Studio sont chargés de garantir que chaque utilisateur qui interagit avec les logiciels sous licence Visual Studio dispose des licences appropriées avec son propre abonnement Visual Studio.
+Les administrateurs des abonnements Visual Studio sont chargés de s’assurer que chaque utilisateur qui interagit avec les logiciels sous licence Visual Studio possède une licence appropriée avec son propre abonnement Visual Studio.
 
 ## <a name="internal-teams"></a>Équipes internes
 En général, les organisations logicielles modernes incluent des parties prenantes issues de plusieurs groupes. Identifiez les contacts de chaque groupe qui peuvent vous aider à effectuer le suivi de l’inventaire des utilisateurs et des modifications.
@@ -41,7 +41,7 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 - [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-En savoir plus sur les responsabilités des administrateurs :
+En savoir plus sur les responsabilités pour les administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
 - [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)

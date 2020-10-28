@@ -1,5 +1,7 @@
 ---
 title: Élément ItemGroup (MSBuild) | Microsoft Docs
+description: En savoir plus sur l’élément MSBuild ItemGroup, qui contient un jeu d’éléments d’élément définis par l’utilisateur. Chaque élément doit être un enfant d’un ItemGroup.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288973"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903618"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup, élément (MSBuild)
 

@@ -1,25 +1,25 @@
 ---
-title: E-mails personnels affichés dans VLSC
+title: Courriers électroniques personnels pour les abonnements Visual Studio dans VLSC
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/22/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022648"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904258"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio : pourquoi les comptes personnels s’affichent-ils pour mes abonnés ?
-Une fois que les sociétés ont migré du centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio, les administrateurs ont été surpris de trouver que l’adresse de messagerie de connexion pour certains abonnés affiche une adresse e-mail personnelle comme Hotmail ou Outlook.  
+Une fois que les sociétés ont migré du centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio, les administrateurs ont été surpris de trouver que l’adresse de messagerie de connexion pour certains abonnés affiche une adresse de messagerie personnelle comme Hotmail ou Outlook.  
 
-## <a name="cause"></a>Cause
-Ceci est dû à des processus de connexion qui ont été associés à l’expérience héritée pour les abonnés MSDN. Les utilisateurs ont été migrés du centre de gestion des licences en volume (VLSC) vers le portail d’administration des abonnements Visual Studio sans modifications. Les administrateurs ignoraient peut-être que des utilisateurs utilisaient des comptes personnels pour accéder aux avantages de leurs abonnements. Avant les migrations des abonnés Visual Studio, qui se sont terminées en 2016, deux actions étaient nécessaires pour pouvoir utiliser un abonnement de Visual Studio :
-1. L’administrateur « attribuait » l’abonnement à un abonné spécifique, à l’aide de son adresse e-mail professionnelle ou scolaire.
+## <a name="cause"></a>Cause :
+Ceci est dû à des processus de connexion qui ont été associés à l’expérience héritée pour les abonnés MSDN. Les utilisateurs ont été migrés du centre de gestion des licences en volume (VLSC) vers le portail d’administration des abonnements Visual Studio sans modifications. Les administrateurs n’ont peut-être pas conscience que les utilisateurs utilisaient des comptes personnels pour accéder aux avantages de leur abonnement. Avant les migrations des abonnés Visual Studio, qui se sont terminées en 2016, deux actions étaient nécessaires pour pouvoir utiliser un abonnement de Visual Studio :
+1. L’administrateur a « affecté » l’abonnement à un abonné individuel à l’aide de son adresse e-mail professionnelle ou scolaire.
 2. L’abonné « activait » l’abonnement.
 
 Au cours du processus d’activation de l’abonné, un compte Microsoft (MSA) était nécessaire pour se connecter. Si l’abonné ne cherchait pas à définir son compte professionnel ou scolaire (par exemple, tasha@contoso.com) en tant que compte MSA, il pouvait créer un compte MSA ou en utiliser un existant. C’est la raison pour laquelle son « adresse e-mail de connexion » était différente de son « adresse e-mail attribuée ».

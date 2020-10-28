@@ -1,18 +1,18 @@
 ---
-title: Utilisation des clés de produit | Microsoft Docs
+title: Utilisation des clés de produit dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 09/18/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
-ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005844"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903991"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -33,7 +33,7 @@ Si vous avez demandé toutes les clés de produit disponibles dans le cadre de v
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versions commercialisées et de licence en volume des produits
 Les abonnements Visual Studio offrent différentes versions commercialisées et de licence en volume des produits Microsoft. Certains produits proposés dans la page Téléchargements sont disponibles uniquement dans leur version commercialisée ou uniquement dans leur version de licence en volume, alors que d’autres produits sont disponibles dans les deux versions. En règle générale, les produits nécessitant une activation, comme Windows, Windows Server et les produits clients Office, sont proposés uniquement dans leur version commercialisée à partir de la page Téléchargements.
 
-Les clients du programme de licence en volume peuvent également télécharger les logiciels dans le Centre de gestion des licences en volume pour obtenir les versions de type licence en volume des produits (et les clés de produit correspondantes).  L'accès au centre VSLC est géré par des administrateurs désignés au sein de l’organisation du client.
+Les clients du programme de licence en volume peuvent également télécharger les logiciels dans le Centre de gestion des licences en volume pour obtenir les versions de type licence en volume des produits (et les clés de produit correspondantes).  L’accès à VLSC est géré par des administrateurs désignés au sein de l’organisation du client.
 
 ## <a name="daily-product-key-claim-limits"></a>Nombre maximal de demandes de clés de produit par jour.
 Microsoft s’engage à protéger l’intégrité du programme d’abonnement Visual Studio et la valeur des logiciels et avantages reçus par les abonnés légitimes du programme. En contrepartie, Microsoft a mis en place des limites quotidiennes de demandes de clés pour les abonnements Visual Studio. L’objectif est de limiter le nombre de clés pouvant être demandées par jour et par abonnement.

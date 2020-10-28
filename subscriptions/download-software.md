@@ -1,23 +1,23 @@
 ---
 title: Téléchargement de logiciels inclus dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 07/29/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 description: Découvrir comment localiser et télécharger des logiciels Microsoft inclus dans des abonnements Visual Studio
-ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005598"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903630"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Téléchargement de logiciels inclus dans les abonnements Visual Studio
 En fonction de votre abonnement Visual Studio, de nombreux logiciels Microsoft sont peut-être à votre disposition.  Cet article explique comment localiser et télécharger les logiciels dont vous avez besoin pour tirer le meilleur parti de votre abonnement. 
 
-Seuls les téléchargements inclus dans votre abonnement s’affichent dans la page [Téléchargements](https://my.visualstudio.com/downloads/featured).  Si vous avez plusieurs abonnements ou que vous êtes membre de plusieurs programmes, les téléchargements indiqués correspondent à l’**abonnement du niveau le plus élevé** que vous possédez, même si vous consultez actuellement un autre abonnement.  Par exemple, si vous avez un abonnement Visual Studio Enterprise et un abonnement Visual Studio Professional à la fois associés au même ID de connexion, les téléchargements affichés sont ceux inclus dans l’abonnement entreprise, même si vous affichez actuellement les avantages de votre abonnement professionnel.  
+Seuls les téléchargements inclus dans votre abonnement s’affichent dans la page [Téléchargements](https://my.visualstudio.com/downloads/featured).  Si vous avez plusieurs abonnements ou que vous êtes membre de plusieurs programmes, les téléchargements indiqués correspondent à l’ **abonnement du niveau le plus élevé** que vous possédez, même si vous consultez actuellement un autre abonnement.  Par exemple, si vous avez un abonnement Visual Studio Enterprise et un abonnement Visual Studio Professional à la fois associés au même ID de connexion, les téléchargements affichés sont ceux inclus dans l’abonnement entreprise, même si vous affichez actuellement les avantages de votre abonnement professionnel.  
 
 Si votre abonnement est fourni par votre entreprise ou votre établissement scolaire, l’administrateur de votre abonnement contrôle si vous avez accès aux téléchargements. La désactivation de l’accès aux téléchargements désactive également l’accès aux clés de produit. Si vous n’avez pas accès aux téléchargements et clés de produit et que vous en avez besoin, [Contactez votre administrateur](contact-my-admin.md).
 

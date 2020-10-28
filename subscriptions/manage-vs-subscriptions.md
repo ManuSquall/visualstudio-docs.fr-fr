@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005896"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904680"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -57,7 +57,7 @@ Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans l
 
 ## <a name="transferring-subscriptions"></a>Réattribution d’abonnements
 
-Si votre abonnement acheté dans le cadre d’un programme de licence en volume Microsoft doit être réattribué à un autre utilisateur de l’organisation, vous devez demander à votre administrateur d’effectuer cette opération.
+Si votre abonnement a été acheté par le biais du programme de licence en volume Microsoft et que vous devez le réattribuer à une autre personne au sein de l’organisation, votre administrateur devra le faire pour vous.
 Pour réattribuer des abonnements de versions commercialisées de produits, contactez le service client. Les abonnements gratuits ou « interdits à la revente » ne peuvent pas être réattribués.
 
 ## <a name="managing-my-profile"></a>Gestion de votre profil
@@ -70,8 +70,8 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 
 1. Sélectionnez votre nom dans l’angle supérieur droit du portail de l’abonné.
 2. Sélectionnez le bouton **modifier le profil** .
-3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences** , vous pouvez sélectionner la langue, les modèles de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur par défaut.
-4. Une fois les modifications finalisées, sélectionnez **Enregistrer**.
+3. Sous l’onglet **À propos de** , vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences** , vous pouvez sélectionner la langue, les modèles de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur par défaut.
+4. Une fois les modifications finalisées, sélectionnez **Enregistrer** .
 5. Sélectionnez le bouton **précédent** de votre navigateur pour revenir à la page des avantages.
 
 ### <a name="setting-communications-preferences"></a>Définition des préférences de communication
@@ -89,8 +89,8 @@ Pour ajouter un autre compte :
 
 1. Connectez-vous au [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs) à l’aide de votre compte Microsoft (MSA).
 2. Sélectionnez l'onglet **Abonnements** .
-3. Sous **Liens connexes**, choisissez **Ajouter un autre compte**.
-4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis sélectionnez **Ajouter**.
+3. Sous **Liens connexes** , choisissez **Ajouter un autre compte** .
+4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis sélectionnez **Ajouter** .
 
 Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en sélectionnant l’onglet **abonnements** et en choisissant l’option appropriée dans la section **liens connexes** .
 

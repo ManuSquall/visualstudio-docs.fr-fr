@@ -1,5 +1,7 @@
 ---
 title: Tâche MIDL | Microsoft Docs
+description: En savoir plus sur la tâche MIDL MSBuild, qui encapsule l’outil compilateur Microsoft Interface Definition Language (MIDL), midl.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,20 +28,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633471"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903846"
 ---
 # <a name="midl-task"></a>MIDL (tâche)
 
-Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language), *midl.exe*. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference).
+Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language), *midl.exe* . Pour plus d’informations, consultez [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-après décrit les paramètres de la tâche **MIDL**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
+ Le tableau ci-après décrit les paramètres de la tâche **MIDL** . La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
 - **AdditionalIncludeDirectories**
 
@@ -143,7 +145,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Si `true`, vérifie que les valeurs enum sont comprises dans une plage autorisée.
 
-     Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande (**/?**) de *midl.exe*.
+     Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande ( **/?** ) de *midl.exe* .
 
 - **ErrorCheckRefPointers**
 
@@ -203,7 +205,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre **booléen** facultatif.
 
-     Si la valeur est `true`, aucun fichier bibliothèque de types (*.tlb*) n’est généré.
+     Si la valeur est `true`, aucun fichier bibliothèque de types ( *.tlb* ) n’est généré.
 
      Pour plus d’informations, consultez l’option **/notlb** dans la page [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -219,7 +221,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre **booléen** facultatif.
 
-     Si `true`, la tâche MIDL effectue des recherches uniquement dans les répertoires spécifiés à l’aide du commutateur **AdditionalIncludeDirectories**, et ignore le répertoire actuel ainsi que les répertoires spécifiés par la variable d’environnement INCLUDE.
+     Si `true`, la tâche MIDL effectue des recherches uniquement dans les répertoires spécifiés à l’aide du commutateur **AdditionalIncludeDirectories** , et ignore le répertoire actuel ainsi que les répertoires spécifiés par la variable d’environnement INCLUDE.
 
      Pour plus d’informations, consultez l’option **/no_def_idir** dans la page [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -235,7 +237,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre **Entier** facultatif.
 
-     Spécifie l’*identificateur de paramètres régionaux* qui permet d’utiliser des caractères internationaux dans les fichiers d’entrée, les noms de fichier et les chemins d’accès aux répertoires. Spécifiez un identificateur de paramètres régionaux décimaux.
+     Spécifie l’ *identificateur de paramètres régionaux* qui permet d’utiliser des caractères internationaux dans les fichiers d’entrée, les noms de fichier et les chemins d’accès aux répertoires. Spécifiez un identificateur de paramètres régionaux décimaux.
 
      Pour plus d’informations, consultez l’option **/lcid** dans la page [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference). Consultez également [Identificateurs de paramètres régionaux](/windows/desktop/intl/locale-identifiers).
 
@@ -259,7 +261,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre **String []** facultatif.
 
-     Spécifie un ou plusieurs *définitions*, autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]*.
+     Spécifie un ou plusieurs *définitions* , autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]* .
 
      Pour plus d’informations, consultez l’option **/D** dans la page [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference). Reportez-vous également au paramètre **UndefinePreprocessorDefinitions** de ce tableau.
 
@@ -297,7 +299,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre de **chaîne** facultatif.
 
-     Spécifie l’alignement (*niveau de compression*) des structures sur le système cible.
+     Spécifie l’alignement ( *niveau de compression* ) des structures sur le système cible.
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
@@ -309,7 +311,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
     |**4**|**/Zp4**|
     |**8**|**/Zp8**|
 
-     Pour plus d’informations, consultez l’option **/Zp** dans la page [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference). L’option **/Zp** est équivalente à l’option **/pack** et à l’ancienne option **/align**.
+     Pour plus d’informations, consultez l’option **/Zp** dans la page [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference). L’option **/Zp** est équivalente à l’option **/pack** et à l’ancienne option **/align** .
 
 - **SuppressCompilerWarnings**
 
@@ -403,7 +405,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre de **chaîne** facultatif.
 
-     Spécifie la gravité (*niveau d’avertissement*) des avertissements à émettre. Aucun avertissement n’est émis pour la valeur 0. Un avertissement est émis si son niveau est numériquement inférieur ou égal à la valeur spécifiée.
+     Spécifie la gravité ( *niveau d’avertissement* ) des avertissements à émettre. Aucun avertissement n’est émis pour la valeur 0. Un avertissement est émis si son niveau est numériquement inférieur ou égal à la valeur spécifiée.
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 

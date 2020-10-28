@@ -1,5 +1,7 @@
 ---
 title: Élément ItemDefinitionGroup (MSBuild) | Microsoft Docs
+description: Découvrez comment MSBuild utilise l’élément ItemDefinitionGroup pour définir un ensemble de définitions d’élément, des valeurs de métadonnées qui sont appliquées à tous les éléments du projet.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3fff9848ac82cd56d1052d135646954527debd5
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633627"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903709"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup, élément (MSBuild)
 

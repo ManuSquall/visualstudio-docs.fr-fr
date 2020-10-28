@@ -1,5 +1,7 @@
 ---
 title: Builds incrémentielles | Microsoft Docs
+description: En savoir plus sur les builds incrémentielles MSBuild, qui sont optimisées pour que les fichiers de sortie à jour ne soient pas exécutés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633718"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904597"
 ---
 # <a name="incremental-builds"></a>builds incrémentiels
 
@@ -38,7 +40,7 @@ Les correspondances « 1 à 1 » sont généralement produites par des transform
 </Target>
 ```
 
-Le jeu de fichiers représenté par le type d’élément `Compile` est copié dans un répertoire de sauvegarde. Les fichiers de sauvegarde ont l’extension de nom de fichier *.bak*. Si les fichiers représentés par le type d’élément `Compile`, ou les fichiers de sauvegarde correspondants, ne sont pas supprimés ou modifiés après l’exécution de la cible de sauvegarde, celle-ci est ignorée dans les builds suivantes.
+Le jeu de fichiers représenté par le type d’élément `Compile` est copié dans un répertoire de sauvegarde. Les fichiers de sauvegarde ont l’extension de nom de fichier *.bak* . Si les fichiers représentés par le type d’élément `Compile`, ou les fichiers de sauvegarde correspondants, ne sont pas supprimés ou modifiés après l’exécution de la cible de sauvegarde, celle-ci est ignorée dans les builds suivantes.
 
 ## <a name="output-inference"></a>Inférence de sortie
 
