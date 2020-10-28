@@ -1,5 +1,7 @@
 ---
 title: Choose, élément (MSBuild) | Microsoft Docs
+description: Utilisez l’élément Choose MSBuild pour évaluer les éléments enfants et sélectionnez un jeu d’éléments ItemGroup ou PropertyGroup à évaluer.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ad83bc215c70389dbb9383e1cb9562b99be7106
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634472"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796626"
 ---
 # <a name="choose-element-msbuild"></a>Choose, élément (MSBuild)
 
@@ -59,7 +61,7 @@ ms.locfileid: "77634472"
 |Élément|Description|
 |-------------|-----------------|
 |[Dispose](../msbuild/otherwise-element-msbuild.md)|Élément facultatif.<br /><br /> Spécifie le bloc de code `PropertyGroup` et les éléments `ItemGroup` à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. Un élément `Choose` peut ne contenir aucun élément `Otherwise` ou en contenir un seul qui doit figurer en dernière position.|
-|[Lorsque le répertoire](../msbuild/when-element-msbuild.md)|Élément requis.<br /><br /> Spécifie un bloc de code que l’élément `Choose` peut sélectionner. Un élément `Choose` peut contenir un ou plusieurs éléments `When`.|
+|[À](../msbuild/when-element-msbuild.md)|Élément requis.<br /><br /> Spécifie un bloc de code que l’élément `Choose` peut sélectionner. Un élément `Choose` peut contenir un ou plusieurs éléments `When`.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -67,7 +69,7 @@ ms.locfileid: "77634472"
 | - | - |
 | [Dispose](../msbuild/otherwise-element-msbuild.md) | Spécifie le bloc de code à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
-| [Lorsque le répertoire](../msbuild/when-element-msbuild.md) | Spécifie un bloc de code que l’élément `Choose` peut sélectionner. |
+| [À](../msbuild/when-element-msbuild.md) | Spécifie un bloc de code que l’élément `Choose` peut sélectionner. |
 
 ## <a name="remarks"></a>Notes
 

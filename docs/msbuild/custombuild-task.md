@@ -1,5 +1,7 @@
 ---
 title: Tâche CustomBuild | Microsoft Docs
+description: Cet article décrit la tâche CustomBuild MSBuild, qui est utilisée par MSBuild pour prendre en charge la personnalisation du processus de génération C++.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 640c1e6ae286b45f8700709829140093452a9491
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595343"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796548"
 ---
 # <a name="custombuild-task"></a>Tâche CustomBuild
 
@@ -30,7 +32,7 @@ Encapsule l’outil compilateur Microsoft C++, cmd.exe. Cette classe est dériv�
 
 ## <a name="parameters"></a>Paramètres
 
-Le tableau ci-dessous décrit les paramètres de la tâche **CustomBuild**.
+Le tableau ci-dessous décrit les paramètres de la tâche **CustomBuild** .
 
 |Paramètre|Description|
 |---------------|-----------------|

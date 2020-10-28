@@ -1,42 +1,44 @@
 ---
 title: Animer des objets dans le concepteur XAML
 titleSuffix: Blend for Visual Studio
+description: Apprenez à créer une animation dans Blend pour Visual Studio à l’aide d’un Storyboard avec une chronologie et des images clés pour animer un objet dans Concepteur XAML.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2019
 ms.topic: how-to
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e568b5e19d7d5f8034ba2bd3b96e3b6968c4b5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c1c4100921430daa0faa0daba3c3c3f5328fb3d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328496"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796327"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animer des objets dans le concepteur XAML
 
 Blend pour Visual Studio vous permet de créer facilement des animations courtes qui déplacent les objets, ou les font apparaître ou disparaître en fondu, par exemple.
 
-Pour créer une animation, vous avez besoin d’un *plan conceptuel*. Un storyboard contient une ou plusieurs *chronologies*. Définissez des *images clés* sur une chronologie pour représenter les modifications apportées aux propriétés. Ensuite, au moment d’exécuter l’animation, Blend pour Visual Studio interpole les modifications apportées aux propriétés au cours de la période désignée. Il en résulte une transition en douceur. Vous pouvez animer n'importe quelle propriété appartenant à un objet, y compris les propriétés non visuelles.
+Pour créer une animation, vous avez besoin d’un *plan conceptuel* . Un storyboard contient une ou plusieurs *chronologies* . Définissez des *images clés* sur une chronologie pour représenter les modifications apportées aux propriétés. Ensuite, au moment d’exécuter l’animation, Blend pour Visual Studio interpole les modifications apportées aux propriétés au cours de la période désignée. Il en résulte une transition en douceur. Vous pouvez animer n'importe quelle propriété appartenant à un objet, y compris les propriétés non visuelles.
 
-Les illustrations suivantes montrent un plan conceptuel nommé **Storyboard1**. La chronologie contient des images clés qui représentent les positions X et Y d'un rectangle. Quand cette animation s'exécute, le rectangle se déplace en douceur d'une position à un autre.
+Les illustrations suivantes montrent un plan conceptuel nommé **Storyboard1** . La chronologie contient des images clés qui représentent les positions X et Y d'un rectangle. Quand cette animation s'exécute, le rectangle se déplace en douceur d'une position à un autre.
 
 ![Plan conceptuel de l’animation dans Blend pour Visual Studio](media/storyboard-timeline.png)
 
 ## <a name="create-an-animation"></a>Créer une animation
 
-1. Pour créer un plan conceptuel, sélectionnez le bouton **Options du plan conceptuel** dans la fenêtre **Objets et chronologie**, puis sélectionnez **Nouveau**.
+1. Pour créer un plan conceptuel, sélectionnez le bouton **Options du plan conceptuel** dans la fenêtre **Objets et chronologie** , puis sélectionnez **Nouveau** .
 
    ![Ajouter un plan conceptuel dans Blend pour Visual Studio](media/new-storyboard.png)
 
-2. Dans la boîte de dialogue **Créer une ressource de plan conceptuel**, entrez un nom pour le plan conceptuel.
+2. Dans la boîte de dialogue **Créer une ressource de plan conceptuel** , entrez un nom pour le plan conceptuel.
 
 3. Dans la panneau **Composants** du mode Création, ajoutez un rectangle en bas à gauche de la page.
 
    ![Rectangle dans le panneau Composants du concepteur XAML](media/add-rectangle.PNG)
 
-4. Dans la fenêtre **Objets et chronologie**, déplacez le pointeur de couleur jaune sur **3** secondes.
+4. Dans la fenêtre **Objets et chronologie** , déplacez le pointeur de couleur jaune sur **3** secondes.
 
    ![Indicateur de temps dans la chronologie](media/timeline-indicator.PNG)
 

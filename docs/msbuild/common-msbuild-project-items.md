@@ -1,5 +1,7 @@
 ---
 title: Éléments communs des projets MSBuild | Microsoft Docs
+description: En savoir plus sur les éléments de projet MSBuild courants. Les éléments sont des références nommées à un ou plusieurs fichiers et ont des métadonnées telles que des noms de fichiers, des chemins d’accès et des numéros de version.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136912"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796392"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 
-Dans MSBuild, un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Tous les types de projets dans Visual Studio ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd*.
+Dans MSBuild, un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Tous les types de projets dans Visual Studio ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd* .
 
 ## <a name="common-items"></a>Éléments communs
 
@@ -41,7 +43,7 @@ Représente une référence (managée) d'assembly dans le projet.
 |FusionName|Chaîne facultative. Spécifie le nom de fusion simple ou fort de l'élément.<br /><br /> La présence de cet attribut peut faire gagner du temps, car il vous évite d'ouvrir le fichier d'assembly pour obtenir le nom de fusion.|
 |SpecificVersion|Valeur booléenne facultative. Indique si seule la version figurant dans le nom de fusion doit être référencée.|
 |Alias|Chaîne facultative. Alias éventuels de la référence.|
-|Privées|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
+|Privé|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -82,7 +84,7 @@ Représente une référence à un autre projet. `ProjectReference` les élément
 |---------------|-----------------|
 |Nom|Chaîne facultative. Nom complet de la référence.|
 |GlobalPropertiesToRemove|`string[]` optionnel. Noms des propriétés à supprimer lors de la génération du projet référencé, par exemple `RuntimeIdentifier;PackOnBuild` . Vide par défaut.|
-|Project|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|
+|Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|
 |OutputItemType|Chaîne facultative. Type d’élément dans lequel émettre des sorties cibles. La valeur par défaut est vide. Si les métadonnées de référence ont la valeur « true » (valeur par défaut), les sorties cibles deviennent des références pour le compilateur.|
 |ReferenceOutputAssembly|Valeur booléenne facultative. Si sa valeur est `false`, n’inclut pas la sortie du projet référencé comme [Référence](#reference) de ce projet, mais fait quand même en sorte que l’autre projet se génère avant celui-ci. La valeur par défaut est `true`.|
 |SetConfiguration|Chaîne facultative. Définit la propriété globale `Configuration` pour le projet référencé, par exemple `Configuration=Release` .|
@@ -134,7 +136,7 @@ Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuv
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
 | CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 
-### <a name="none"></a>Aucun
+### <a name="none"></a>None
 
 Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
 

@@ -1,18 +1,20 @@
 ---
 title: Concevoir du code XAML dans Visual Studio et dans Blend pour Visual Studio
 titleSuffix: ''
+description: Découvrez les fonctionnalités des outils de conception visuelle dans Visual Studio et Blend pour Visual Studio pour générer une interface utilisateur et des expériences en XAML.
+ms.custom: SEO-VS-2020
 ms.date: 02/28/2020
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: eb18a2face5d9f1831bec35379a423f272c3e6ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649822"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796704"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio
 

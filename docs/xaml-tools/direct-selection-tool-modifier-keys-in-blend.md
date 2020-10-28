@@ -1,6 +1,8 @@
 ---
 title: Touches de modification de l’outil Sélection directe
 titleSuffix: Blend for Visual Studio
+description: En savoir plus sur les raccourcis clavier dans l’outil Sélection directe dans Blend pour Visual Studio que vous pouvez utiliser pour modifier la forme d’un tracé existant.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfb98ae063824b29bc3bb8719a034defdeec5293
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332312"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796691"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Sélection directe dans Blend pour Visual Studio
 
-Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l’outil **Sélection directe**![outil Sélection directe](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet**.
+Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l’outil **Sélection directe**![outil Sélection directe](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet** .
 
 |Pour effectuer cette action|Action|Pointeur|
 | - |-------------|-------------|

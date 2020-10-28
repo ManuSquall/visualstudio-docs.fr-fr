@@ -1,5 +1,7 @@
 ---
 title: Delete, tâche | Microsoft Docs
+description: En savoir plus sur les paramètres et les considérations relatives à l’utilisation de la tâche de suppression MSBuild pour supprimer les fichiers spécifiés.
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288908"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796483"
 ---
 # <a name="delete-task"></a>Delete (tâche)
 

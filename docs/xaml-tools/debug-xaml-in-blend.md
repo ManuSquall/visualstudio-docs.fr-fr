@@ -1,5 +1,7 @@
 ---
 title: Déboguer du code XAML dans Blend | Microsoft Docs
+description: Découvrez comment utiliser les outils de Blend pour Visual Studio pour détecter, déboguer et résoudre les erreurs XAML dans votre application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
@@ -8,20 +10,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91d1df06d991669b023ede60b8b384ea75af651a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331041"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796717"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 
-Vous pouvez utiliser les outils de Blend pour Visual Studio pour déboguer le code XAML dans votre application. Lors de la création d’un projet, toutes les erreurs sont affichées dans le volet **Résultats**. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si vous avez besoin de davantage d’espace pour travailler, vous pouvez masquer le panneau **résultats** en appuyant sur **F12**.
+Vous pouvez utiliser les outils de Blend pour Visual Studio pour déboguer le code XAML dans votre application. Lors de la création d’un projet, toutes les erreurs sont affichées dans le volet **Résultats** . Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si vous avez besoin de davantage d’espace pour travailler, vous pouvez masquer le panneau **résultats** en appuyant sur **F12** .
 
 ## <a name="syntax-errors"></a>Erreurs de syntaxe
 
-Des erreurs de syntaxe se produisent si votre code XAML, ou les fichiers code-behind ne suivent pas les règles de mise en forme du langage. La description de l’erreur peut vous aider à la résoudre. La liste spécifie également le nom du fichier et le numéro de ligne où l’erreur se produit. Les erreurs XAML sont répertoriées dans l’onglet **Balisage** du volet **Résultats**.
+Des erreurs de syntaxe se produisent si votre code XAML, ou les fichiers code-behind ne suivent pas les règles de mise en forme du langage. La description de l’erreur peut vous aider à la résoudre. La liste spécifie également le nom du fichier et le numéro de ligne où l’erreur se produit. Les erreurs XAML sont répertoriées dans l’onglet **Balisage** du volet **Résultats** .
 
 > [!TIP]
 > XAML est un langage de balisage basé sur XML qui suit les règles de syntaxe de XML.
@@ -46,21 +48,21 @@ L’exemple suivant vous guide à travers une session de débogage XAML simple d
 
 #### <a name="to-create-a-project"></a>Pour créer un projet
 
-1. Dans Blend, ouvrez le menu **fichier** , puis cliquez sur **nouveau projet**.
+1. Dans Blend, ouvrez le menu **fichier** , puis cliquez sur **nouveau projet** .
 
-    Dans la boîte de dialogue **Nouveau projet**, une liste de types de projet apparaît sur le côté gauche. Lorsque vous cliquez sur un type de projet, les modèles de projet associés à ce type apparaissent sur le côté droit.
+    Dans la boîte de dialogue **Nouveau projet** , une liste de types de projet apparaît sur le côté gauche. Lorsque vous cliquez sur un type de projet, les modèles de projet associés à ce type apparaissent sur le côté droit.
 
-2. Dans la liste des types de projets, cliquez sur **Windows universel**.
+2. Dans la liste des types de projets, cliquez sur **Windows universel** .
 
-3. Dans la liste des modèles de projet, cliquez sur **application vide (Windows universel)**.
+3. Dans la liste des modèles de projet, cliquez sur **application vide (Windows universel)** .
 
 4. Dans la zone de texte **nom** , tapez `DebuggingSample` .
 
-5. Dans la zone de texte **Emplacement**, vérifiez l’emplacement du projet.
+5. Dans la zone de texte **Emplacement** , vérifiez l’emplacement du projet.
 
-6. Dans la liste **Langage**, cliquez sur **Visual C#**, puis sur **OK** pour créer le projet.
+6. Dans la liste **Langage** , cliquez sur **Visual C#** , puis sur **OK** pour créer le projet.
 
-7. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **Afficher la source** pour passer à la vue **Fractionné**.
+7. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **Afficher la source** pour passer à la vue **Fractionné** .
 
 8. Copiez le code suivant en cliquant sur le lien **Copier** en haut à droite du code.
 
@@ -116,10 +118,10 @@ Quand des erreurs XAML sont détectées, l'aire de conception affiche une alert
 
 ## <a name="debug-in-visual-studio"></a>Déboguer dans Visual Studio
 
-Vous pouvez ouvrir Blend Projects dans Visual Studio pour déboguer plus facilement le code dans votre application. Pour ouvrir un projet Blend dans Visual Studio, cliquez avec le bouton droit sur le projet dans le panneau **projets** , puis cliquez sur **modifier dans Visual Studio**. Une fois que vous avez terminé votre session de débogage dans Visual Studio, appuyez sur Ctrl + Maj + S pour enregistrer toutes vos modifications, puis revenez à Blend. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour continuer à travailler dans Blend.
+Vous pouvez ouvrir Blend Projects dans Visual Studio pour déboguer plus facilement le code dans votre application. Pour ouvrir un projet Blend dans Visual Studio, cliquez avec le bouton droit sur le projet dans le panneau **projets** , puis cliquez sur **modifier dans Visual Studio** . Une fois que vous avez terminé votre session de débogage dans Visual Studio, appuyez sur Ctrl + Maj + S pour enregistrer toutes vos modifications, puis revenez à Blend. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour continuer à travailler dans Blend.
 
 Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="get-help"></a>Aide
+## <a name="get-help"></a>Obtenir de l’aide
 
 Si vous avez besoin d’aide supplémentaire sur le débogage de votre application Blend, vous pouvez rechercher des publications relatives à votre problème sur les forums de la [communauté d’applications UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) ou publier une question.

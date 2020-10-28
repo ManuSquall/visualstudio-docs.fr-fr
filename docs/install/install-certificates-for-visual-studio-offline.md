@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbc68d232816899d84cc2aead14208b009c933b2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037300"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750174"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
 
@@ -117,9 +117,9 @@ Si vous écrivez un script du déploiement de Visual Studio dans un environnemen
    Vous pouvez également créer un fichier de commandes qui utilise certutil.exe, fourni avec Windows, avec les commandes suivantes :
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -178,24 +178,24 @@ Quand une signature est vérifiée dans un environnement en ligne, les API Windo
 
 Une manière de vérifier l’installation du système consiste à suivre ces étapes :
 
-1. Exécutez **mmc.exe**.<br/>
-  a. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
-  b. Double-cliquez sur **Certificats**, sélectionnez **Compte d’ordinateur** et cliquez sur **Suivant**.<br/>
-  c. Sélectionnez **Ordinateur local**, cliquez sur **Terminer**, puis sur **OK**.<br/>
-  d. Développez **Certificats (ordinateur local)**.<br/>
-  e. Développez **Autorités de certification racines de confiance** et sélectionnez **Certificats**.<br/>
+1. Exécutez **mmc.exe** .<br/>
+  a. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable** .<br/>
+  b. Double-cliquez sur **Certificats** , sélectionnez **Compte d’ordinateur** et cliquez sur **Suivant** .<br/>
+  c. Sélectionnez **Ordinateur local** , cliquez sur **Terminer** , puis sur **OK** .<br/>
+  d. Développez **Certificats (ordinateur local)** .<br/>
+  e. Développez **Autorités de certification racines de confiance** et sélectionnez **Certificats** .<br/>
     * Recherchez les certificats racines nécessaires dans cette liste.<br/>
 
-   f. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats**.<br/>
+   f. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats** .<br/>
     * Recherchez les certificats intermédiaires obligatoires dans cette liste.<br/>
 
-2. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
-  a. Double-cliquez sur **Certificats**, sélectionnez **Mon compte d’utilisateur**, cliquez sur **Terminer**, puis sur **OK**.<br/>
-  b. Développez **Certificats – Utilisateur actuel**.<br/>
-  c. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats**.<br/>
+2. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable** .<br/>
+  a. Double-cliquez sur **Certificats** , sélectionnez **Mon compte d’utilisateur** , cliquez sur **Terminer** , puis sur **OK** .<br/>
+  b. Développez **Certificats – Utilisateur actuel** .<br/>
+  c. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats** .<br/>
     * Recherchez les certificats intermédiaires obligatoires dans cette liste.<br/>
 
-Si les noms des certificats ne figuraient pas dans les colonnes **Délivré à**, ils doivent être installés.  Si un certificat intermédiaire se trouve uniquement dans le magasin de certificats intermédiaires de **l’utilisateur actuel**, il n’est disponible que pour l’utilisateur connecté. Vous devrez peut-être l’installer pour les autres utilisateurs.
+Si les noms des certificats ne figuraient pas dans les colonnes **Délivré à** , ils doivent être installés.  Si un certificat intermédiaire se trouve uniquement dans le magasin de certificats intermédiaires de **l’utilisateur actuel** , il n’est disponible que pour l’utilisateur connecté. Vous devrez peut-être l’installer pour les autres utilisateurs.
 
 ## <a name="install-visual-studio"></a>Installer Visual Studio
 

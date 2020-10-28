@@ -1,5 +1,7 @@
 ---
 title: CombinePath, tâche | Microsoft Docs
+description: Découvrez comment utiliser la tâche CombinePath MSBuild pour combiner les chemins d’accès spécifiés en un seul chemin d’accès.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288960"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796613"
 ---
 # <a name="combinepath-task"></a>CombinePath (tâche)
 
@@ -62,7 +64,7 @@ Combine les chemins spécifiés en un chemin unique.
   </Target>
 ```
 
-La seule propriété qui `CombinePath` autorise à être une liste est `Paths` , auquel cas la sortie est également une liste. Ainsi, si `$(PublishRoot)` est *C:\Site1 \\ *et `$(ReleaseDirectory)` est *Release \\ *et `@(LangDirectories)` est *en-US \; fr-fr \\ *, cet exemple crée les dossiers :
+La seule propriété qui `CombinePath` autorise à être une liste est `Paths` , auquel cas la sortie est également une liste. Ainsi, si `$(PublishRoot)` est *C:\Site1 \\* et `$(ReleaseDirectory)` est *Release \\* et `@(LangDirectories)` est *en-US \; fr-fr \\* , cet exemple crée les dossiers :
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\

@@ -1,17 +1,19 @@
 ---
 title: Déboguer ou désactiver le code de projet dans le Concepteur XAML
+description: Découvrez comment déboguer ou désactiver le code de projet dans le Concepteur XAML, y compris comment déboguer l’exécution du code de projet dans une autre instance de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331058"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796743"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
@@ -53,15 +55,15 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
 5. Définissez un point d’arrêt dans votre code de projet.
 
-6. Dans la nouvelle instance de Visual Studio, dans la barre de menus, choisissez **Déboguer**  >  **attacher au processus**.
+6. Dans la nouvelle instance de Visual Studio, dans la barre de menus, choisissez **Déboguer**  >  **attacher au processus** .
 
-7. Dans la boîte de dialogue **Attacher au processus** , dans la liste **Processus disponibles** , choisissez **XDesProc.exe**, puis cliquez sur le bouton **Attacher** .
+7. Dans la boîte de dialogue **Attacher au processus** , dans la liste **Processus disponibles** , choisissez **XDesProc.exe** , puis cliquez sur le bouton **Attacher** .
 
      ![Processus du concepteur XAML](media/xaml_attach.png)
 
      Il s’agit ici du processus destiné au concepteur XAML de la première instance de Visual Studio.
 
-8. Dans la première instance de Visual Studio, dans la barre de menus, choisissez **Déboguer**  >  **Démarrer le débogage**.
+8. Dans la première instance de Visual Studio, dans la barre de menus, choisissez **Déboguer**  >  **Démarrer le débogage** .
 
      Vous pouvez maintenant parcourir pas à pas votre code qui s’exécute dans le concepteur.
 
@@ -69,7 +71,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
 - Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour désactiver l’exécution du code de projet et recharger le concepteur** .
 
-- Sinon, dans la barre d’outils du **Concepteur XAML**, cliquez sur le bouton **Désactiver le code de projet**.
+- Sinon, dans la barre d’outils du **Concepteur XAML** , cliquez sur le bouton **Désactiver le code de projet** .
 
      ![Le bouton Désactiver le code de projet](media/xaml_disablecode.png)
 
@@ -94,7 +96,7 @@ Pour modifier les options d’affichage des contrôles, cliquez sur l’icône e
 
 ![Options d’affichage des contrôles](media/control_display_options.png)
 
-Si vous sélectionnez **Afficher seulement les contrôles de plateforme**, les contrôles personnalisés provenant de Kits SDK, les contrôles utilisateur client, etc. ne s’afficheront pas complètement. Ils sont remplacés par les contrôles de secours qui représentent la taille et la position du contrôle.
+Si vous sélectionnez **Afficher seulement les contrôles de plateforme** , les contrôles personnalisés provenant de Kits SDK, les contrôles utilisateur client, etc. ne s’afficheront pas complètement. Ils sont remplacés par les contrôles de secours qui représentent la taille et la position du contrôle.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,6 +1,6 @@
 ---
 title: OpenCV
-description: Exemple de personnalisation à l’aide de devinit pour OpenCV/OpenCV référentiel.
+description: Exemple de personnalisation à l’aide de devinit pour cibler à la fois Linux et Windows pour le référentiel OpenCV.
 ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
@@ -11,26 +11,47 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a1c7f2c78fdae9c70785727cb03c7f8cb1e08cef
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005637"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750115"
 ---
 # <a name="opencv"></a>OpenCV
 
-Cet exemple illustre les personnalisations requises par [OpenCV](https://github.com/opencv/opencv) pour être configurées automatiquement avec [GitHub Codespaces] https://github.com/features/codespaces) .
+Cet exemple montre comment personnaliser [GitHub Codespaces](https://github.com/features/codespaces) afin de développer des projets multiplateformes, tels que [OpenCV/OpenCV](https://github.com/opencv/opencv).
 
-## <a name="devinitjson"></a>.devinit.json
+Les personnalisations suivantes sont déjà appliquées à l’embranchement [Microsoft/OpenCV](https://github.com/microsoft/opencv) et permettent à de créer un ciblage Windows et Ubuntu.
 
-Contenu du [_.devinit.jssur_](devinit-json.md) le fichier. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_.
+## <a name="customization-with-devcontainerjson-and-devinitjson"></a>Personnalisation avec devcontainer.jssur et devinit.js
+
+Le `.devcontainer` répertoire doit contenir les fichiers suivants :
+
+* devcontainer.js
+* devinit.js
+
+### <a name="devcontainerjson"></a>devcontainer.js
+
+Voici le contenu du _devcontainer.jssur_ le fichier.
+
+```json
+{
+  "postCreateCommand": "devinit init"
+}
+```
+
+Le `postCreateCommand` lance l’outil  [devinit](devinit-and-codespaces.md) , qui consomme _devinit.js_ .
+
+### <a name="devinitjson"></a>devinit.js
+
+Voici le contenu du [_devinit.jssur_](devinit-json.md) le fichier.
 
 ```json
 {
     "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages.",
+            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages useful for C++ development.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004",
             "additionalOptions": "--wsl-version 2 --post-create-command 'apt-get update && apt-get install g++ gcc g++-9 gcc-9 cmake gdb ninja-build zip rsync -y'"
@@ -39,12 +60,15 @@ Contenu du [_.devinit.jssur_](devinit-json.md) le fichier. Ce fichier doit se tr
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.js
+Le _devinit.jssur_ est le fichier utilisé par l’outil [devinit](devinit-and-codespaces.md) et il doit se trouver dans le même répertoire de _devcontainer.js_ .
 
-Contenu de l' _.devcontainer.jssur_ le fichier dans la racine référentiel.
+Dans cet exemple, l’outil [WSL-install](tool-wsl-install.md) est utilisé pour créer une instance WSL exécutant Ubuntu 20,04 et en l’approvisionnant avec les outils de développement C++ essentiels.
+## <a name="targeting-windows-or-linux"></a>Ciblage de Windows ou Linux
 
-```json
-{
-  "postCreateCommand": "devinit init"
-}
-```
+Une configuration de build ciblant les fenêtres par défaut est toujours nommée `x64-Debug` .
+
+En ajoutant les fichiers mentionnés ci-dessus, lors de la création de l’instance codeSpace, Visual Studio configure une nouvelle connexion SSH dans le [Gestionnaire de connexions](/cpp/linux/connect-to-your-remote-linux-computer)et crée une nouvelle configuration dans le sélecteur de configuration qui cible l’instance Ubuntu via la connexion SSH.
+
+![Configuration ciblant Ubuntu](media/wsl-ssh-linux-configuration.png).
+
+En sélectionnant la configuration mise en surbrillance qui cible WSL, il est possible de générer et déboguer les cibles de génération du OpenCV.

@@ -1,5 +1,7 @@
 ---
 title: CreateItem, tâche | Microsoft Docs
+description: Utilisez la tâche MSBuild CreateItem pour remplir des collections d’éléments avec des éléments d’entrée, ce qui permet de copier des éléments d’une liste à une autre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634329"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796756"
 ---
 # <a name="createitem-task"></a>CreateItem (tâche)
 
@@ -51,7 +53,7 @@ Remplit des collections d’éléments avec les éléments d’entrée. Cela per
 
  L’exemple de code suivant crée une collection d’éléments nommée `MySourceItemsWithMetadata` à partir de la collection d’éléments `MySourceItems`. La tâche `CreateItem` remplit la nouvelle collection d’éléments avec les éléments contenus dans l’élément `MySourceItems`. Elle ajoute ensuite une entrée de métadonnées supplémentaire nommée `MyMetadata` avec la valeur `Hello` à chaque élément de la nouvelle collection.
 
- Une fois la tâche exécutée, la collection d’éléments `MySourceItemsWithMetadata` contient les éléments *file1.resx* et *file2.resx*, tous deux avec des entrées de métadonnées pour `MyMetadata`. La collection d’éléments `MySourceItems` est inchangée.
+ Une fois la tâche exécutée, la collection d’éléments `MySourceItemsWithMetadata` contient les éléments *file1.resx* et *file2.resx* , tous deux avec des entrées de métadonnées pour `MyMetadata`. La collection d’éléments `MySourceItems` est inchangée.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -76,7 +78,7 @@ Remplit des collections d’éléments avec les éléments d’entrée. Cela per
 
  Le tableau suivant décrit la valeur de l’élément de sortie après l’exécution de la tâche. Les métadonnées de l’élément sont affichées entre parenthèses après l’élément.
 
-|Collection d'éléments.|Contenu|
+|Collection d'éléments.|Contents|
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*fichier1. resx* ( `MyMetadata="Hello"` )<br /><br /> *fichier2. resx* ( `MyMetadata="Hello"` )|
 

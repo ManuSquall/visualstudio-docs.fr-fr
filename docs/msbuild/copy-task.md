@@ -1,5 +1,7 @@
 ---
 title: Tâche Copy | Microsoft Docs
+description: Découvrez comment utiliser la tâche de copie MSBuild pour copier des fichiers vers un nouvel emplacement de fichier ou de dossier dans le système de fichiers.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508039"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796224"
 ---
 # <a name="copy-task"></a>Copy (tâche)
 
@@ -68,15 +70,15 @@ Des avertissements sont enregistrés, notamment ceux-ci :
 
 - `Copy.RemovingReadOnlyAttribute`
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Le paramètre `DestinationFolder` ou `DestinationFiles` doit être spécifié, mais pas les deux. Si les deux paramètres sont spécifiés, la tâche échoue, et une erreur est enregistrée.
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
-L’exemple suivant copie les éléments de la collection d’éléments `MySourceFiles` dans le dossier *c:\MyProject\Destination*.
+L’exemple suivant copie les éléments de la collection d’éléments `MySourceFiles` dans le dossier *c:\MyProject\Destination* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,9 +97,9 @@ L’exemple suivant copie les éléments de la collection d’éléments `MySour
 </Project>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
-L’exemple suivant illustre la procédure à suivre pour effectuer une copie récursive. Ce projet copie tous les fichiers de manière récursive depuis *c:\MySourceTree* vers *c:\MyDestinationTree*, tout en conservant la structure de répertoires.
+L’exemple suivant illustre la procédure à suivre pour effectuer une copie récursive. Ce projet copie tous les fichiers de manière récursive depuis *c:\MySourceTree* vers *c:\MyDestinationTree* , tout en conservant la structure de répertoires.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

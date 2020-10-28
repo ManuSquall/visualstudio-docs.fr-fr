@@ -1,5 +1,7 @@
 ---
 title: Création de journaux de transfert | Microsoft Docs
+description: Créez des enregistreurs de transfert MSBuild pour améliorer l’efficacité de la journalisation en vous permettant de choisir les événements que vous souhaitez analyser lorsque vous générez des projets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634303"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796574"
 ---
 # <a name="create-forwarding-loggers"></a>Créer des journaux de transfert
 
@@ -36,7 +38,7 @@ Les journaux de transfert améliorent l’efficacité de la journalisation en vo
 
 ## <a name="specify-a-forwarding-logger"></a>Spécifier un journal de transfert
 
- Une fois que le journal de transfert a été compilé dans un assembly, vous devez indiquer à MSBuild de l’utiliser pendant les builds. Pour ce faire, utilisez les `-FileLogger` `-FileLoggerParameters` `-DistributedFileLogger` commutateurs, et avec *MSBuild.exe*. Le `-FileLogger` commutateur indique *MSBuild.exe* que l’enregistreur d’événements est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs *MSBuild.exe* , consultez [référence de la ligne de commande](../msbuild/msbuild-command-line-reference.md).
+ Une fois que le journal de transfert a été compilé dans un assembly, vous devez indiquer à MSBuild de l’utiliser pendant les builds. Pour ce faire, utilisez les `-FileLogger` `-FileLoggerParameters` `-DistributedFileLogger` commutateurs, et avec *MSBuild.exe* . Le `-FileLogger` commutateur indique *MSBuild.exe* que l’enregistreur d’événements est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs *MSBuild.exe* , consultez [référence de la ligne de commande](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Enregistreurs d’événements prenant en charge plusieurs processeurs
 

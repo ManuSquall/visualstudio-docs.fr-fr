@@ -1,5 +1,7 @@
 ---
 title: CreateCSharpManifestResourceName, tâche | Microsoft Docs
+description: Utilisez la tâche MSBuild CreateCSharpManifestResourceName, pour créer un nom de manifeste de style C# à partir d’un nom de fichier. resx donné ou d’une autre ressource.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8e72ef282911ecb36fb9a16838f6cc311e253e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13293a6967456b153d14464b65182153eca2549
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634355"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796041"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName (tâche)
 
