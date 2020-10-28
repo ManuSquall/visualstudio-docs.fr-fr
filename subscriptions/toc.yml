@@ -48,6 +48,8 @@
       href: contact-my-admin.md
     - name: Avantages
       items:
+        - name: À propos des avantages
+          href: about-benefits.md
         - name: Outils
           items:
             - name: Crédit individuel Azure DevTest
