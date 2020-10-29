@@ -2,20 +2,20 @@
 title: Guide pratique pour acheter des abonnements cloud Visual Studio
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353445"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918082"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
-Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »**.
+Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »** .
 
 [Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -42,7 +42,7 @@ Vous devez être un contributeur ou un niveau supérieur pour un abonnement Azur
     > [!div class="mx-imgBorder"]
     > ![Sélectionner le nombre d’abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Choisissez le nombre d’abonnements à acheter")
 
-    Si vous ne voulez pas que les abonnements vous soient affectés, désactivez **M'attribuer cet abonnement**.
+    Si vous ne voulez pas que les abonnements vous soient affectés, désactivez **M'attribuer cet abonnement** .
 
 5. Confirmez et finalisez votre achat. Si vous vous êtes affecté un abonnement à vous-même, vous pouvez accéder au [portail des abonnés Visual Studio](https://my.visualstudio.com) pour commencer à télécharger des logiciels et à utiliser d’autres offres réservées aux abonnés.
 
@@ -72,7 +72,7 @@ Pour annuler des abonnements, vous devez simplement définir le nombre d’abonn
 > [!div class="mx-imgBorder"]
 > ![Afficher la vue d’ensemble de l’abonnement](_img/buy-vs-subscriptions/overview-button.png "Sélectionnez le bouton vue d’ensemble pour afficher les détails de l’abonnement")
 
-4. Recherchez l’entrée correspondant aux abonnements que vous souhaitez annuler, puis sélectionnez **modifier la quantité**.
+4. Recherchez l’entrée correspondant aux abonnements que vous souhaitez annuler, puis sélectionnez **modifier la quantité** .
 1. Définissez la quantité sur zéro (0). Vos abonnements resteront en place jusqu’à la date de facturation planifiée, mais ils ne seront pas renouvelés lorsque la date de facturation sera atteinte.   
 
 > [!div class="mx-imgBorder"]
@@ -115,7 +115,7 @@ R : vos clients ne seront pas en mesure d’acheter de nouveaux abonnements ann
 R : les clients existants ne seront pas affectés. Les nouveaux clients devront décider s’ils veulent acheter des abonnements mensuels à Visual Studio ou s’ils veulent utiliser une autre méthode comme les licences en volume pour acheter des abonnements à Visual Studio.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q : que se passe-t-il si je souhaite augmenter le nombre d’abonnements pour mes clients ?
-R : les abonnements annuels achetés pendant un mois donné sont facturés immédiatement pendant une année complète et sont valables pendant une année complète. Pour cette raison, votre administrateur ne peut modifier que le nombre de licences pendant le mois de l’achat (elles seront alors valables et facturées pour 1 an). En dehors du mois de l’achat, il n’est plus possible d’accroître le nombre d’abonnements.
+R : les abonnements annuels achetés pendant un mois donné sont facturés immédiatement pendant une année complète et sont valables pendant une année complète. Pour cette raison, votre administrateur peut uniquement modifier le nombre de licences dans le mois d’achat actuel (elles sont valides pendant 1 an et facturées pour 1 an). En dehors du mois de l’achat, il n’est plus possible d’accroître le nombre d’abonnements.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q : que se passe-t-il si je souhaite réduire le nombre d’abonnements pour mes clients ?
 R : votre administrateur peut toujours réduire le nombre d’abonnements en visitant [https://manage.visualstudio.com](https://manage.visualstudio.com) et en suivant les instructions de cet article pour réduire le nombre d’abonnements. Le système ne génère **pas** de crédit au prorata. Pour obtenir un remboursement, vous devez contacter l’équipe de facturation Azure.

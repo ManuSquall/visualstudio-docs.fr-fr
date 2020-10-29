@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0262081489ec6e037a006649c3041baf02b32d58
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007217"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918095"
 ---
 # <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 
@@ -21,11 +21,17 @@ Pour rechercher les fuites de mémoire et l’utilisation inefficace de la mémo
 
 L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native. Vous pouvez collecter des instantanés d’applications .NET, ASP.NET, C++ ou en mode mixte (.NET et Native). L’outil utilisation de la **mémoire** peut s’exécuter sur un projet Visual Studio ouvert, sur une application Microsoft Store installée, ou attaché à une application ou à un processus en cours d’exécution. Vous pouvez exécuter l’outil utilisation de la **mémoire** avec ou sans débogage. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Dans le débogueur, vous pouvez activer et désactiver le profilage de la mémoire et voir une répartition par objet de l’utilisation de la mémoire. Vous pouvez afficher les résultats de l’utilisation de la mémoire lorsque l’exécution est suspendue, par exemple à un point d’arrêt.
 
-Les développeurs .NET peuvent choisir entre l’outil utilisation de la [mémoire](../profiling/memory-usage.md) et l’outil d' [allocation d’objets .net](../profiling/dotnet-alloc-tool.md).
-- L’outil d' **allocation d’objets .net** vous aide à identifier les modèles d’allocation et les anomalies dans votre code .net, et vous aide à identifier les problèmes courants avec garbage collection. Cet outil s’exécute uniquement comme un outil d’autopsie. Vous pouvez exécuter cet outil sur des ordinateurs locaux ou distants.
-- L’outil utilisation de la **mémoire** est utile pour identifier les fuites de mémoire, qui ne sont généralement pas courantes dans les applications .net. Si vous devez utiliser les fonctionnalités du débogueur lors de la vérification de la mémoire, telles que l’exécution pas à pas du code, l’outil d' [utilisation de la mémoire intégré au débogueur](../profiling/beginners-guide-to-performance-profiling.md) est recommandé.
+Les développeurs .NET peuvent choisir entre l’outil d’allocation d’objets .NET ou l’outil utilisation de la [mémoire](../profiling/memory-usage.md) .
 
-Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
+- L' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md) vous aide à identifier les modèles d’allocation et les anomalies dans votre code .net, et vous aide à identifier les problèmes courants avec garbage collection. Cet outil s’exécute uniquement comme un outil d’autopsie. Vous pouvez exécuter cet outil sur des ordinateurs locaux ou distants.
+- L' [outil utilisation](../profiling/memory-usage-without-debugging2.md) de la mémoire est utile pour identifier les fuites de mémoire, qui ne sont généralement pas courantes dans les applications .net. Si vous devez utiliser les fonctionnalités du débogueur lors de la vérification de la mémoire, telles que l’exécution pas à pas du code, l’outil d' [utilisation de la mémoire intégré au débogueur](../profiling/memory-usage.md) est recommandé.
+
+Les développeurs C++ peuvent utiliser l’outil d’utilisation de la mémoire intégré au débogueur ou non du débogueur.
+
+- [Analyser l’utilisation de la mémoire avec le débogueur](../profiling/memory-usage.md)
+- [Analyser l’utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md)
+
+Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic** ).
 
 ## <a name="blogs-and-videos"></a>Blogs et vidéos
 
@@ -35,6 +41,5 @@ Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Analyser l’utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md)
 - [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

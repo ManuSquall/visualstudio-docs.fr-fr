@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 4f2d5bf573da940c39790d6868a94d588e5efb7b
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197476"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918167"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Didacticiel : étendre une application console C# simple
 
@@ -32,21 +32,21 @@ Si vous venez de terminer la [première partie](tutorial-console.md) de cette s�
 
 Le code réel implique de nombreux projets qui fonctionnent ensemble dans une solution. À présent, nous allons ajouter un autre projet à l’application Calculatrice. Il s’agit d’une bibliothèque de classes qui fournit certaines fonctions de calculatrice.
 
-1. Dans Visual Studio, vous pouvez utiliser le **fichier**de commandes de menu de niveau supérieur  >  **Ajouter**  >  un**nouveau projet** pour ajouter un nouveau projet, mais vous pouvez également cliquer avec le bouton droit sur le nom de projet existant (appelé « nœud de projet ») et ouvrir le menu contextuel du projet (ou menu contextuel). Ce menu contextuel contient de nombreuses façons d’ajouter des fonctionnalités à vos projets. Cliquez avec le bouton droit sur le nœud de votre projet dans **Explorateur de solutions**, puis choisissez **Ajouter**  >  **un nouveau projet**.
+1. Dans Visual Studio, vous pouvez utiliser le **fichier** de commandes de menu de niveau supérieur  >  **Ajouter**  >  un **nouveau projet** pour ajouter un nouveau projet, mais vous pouvez également cliquer avec le bouton droit sur le nom de projet existant (appelé « nœud de projet ») et ouvrir le menu contextuel du projet (ou menu contextuel). Ce menu contextuel contient de nombreuses façons d’ajouter des fonctionnalités à vos projets. Cliquez avec le bouton droit sur le nœud de votre projet dans **Explorateur de solutions** , puis choisissez **Ajouter**  >  **un nouveau projet** .
 
-1. Choisissez la bibliothèque de classes de modèles de projet C# **(.NET standard)**.
+1. Choisissez la bibliothèque de classes de modèles de projet C# **(.NET standard)** .
 
    ![Capture d’écran de la sélection du modèle de projet de bibliothèque de classes](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Tapez le nom du projet **CalculatorLibrary**, puis choisissez **créer**. Visual Studio crée le projet et l’ajoute à la solution.
+1. Tapez le nom du projet **CalculatorLibrary** , puis choisissez **créer** . Visual Studio crée le projet et l’ajoute à la solution.
 
    ![Capture d’écran de Explorateur de solutions avec le projet de bibliothèque de classes CalculatorLibrary ajouté](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. Au lieu d’avoir *Class1.cs*, renommez le fichier **CalculatorLibrary.cs**. Vous pouvez cliquer sur le nom dans **Explorateur de solutions** pour le renommer, ou cliquer avec le bouton droit et choisir **Renommer**, ou appuyer sur la touche **F2** .
+1. Au lieu d’avoir *Class1.cs* , renommez le fichier **CalculatorLibrary.cs** . Vous pouvez cliquer sur le nom dans **Explorateur de solutions** pour le renommer, ou cliquer avec le bouton droit et choisir **Renommer** , ou appuyer sur la touche **F2** .
 
    Vous pouvez être invité à indiquer si vous souhaitez renommer toutes les références à `Class1` dans le fichier. Peu importe la façon dont vous répondez, puisque vous allez remplacer le code dans une étape ultérieure.
 
-1. Nous devons maintenant ajouter une référence de projet, de sorte que le premier projet puisse utiliser des API exposées par la nouvelle bibliothèque de classes.  Cliquez avec le bouton droit sur le nœud **références** dans le premier projet, puis choisissez **Ajouter une référence de projet**.
+1. Nous devons maintenant ajouter une référence de projet, de sorte que le premier projet puisse utiliser des API exposées par la nouvelle bibliothèque de classes.  Cliquez avec le bouton droit sur le nœud **références** dans le premier projet, puis choisissez **Ajouter une référence de projet** .
 
    ![Capture d’écran de l’élément de menu Ajouter une référence de projet](media/vs-2019/calculator2-add-project-reference-dark.png)
 
@@ -54,11 +54,11 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
    ![Capture d’écran de la boîte de dialogue Gestionnaire de références](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. Dans la boîte de dialogue **Gestionnaire de références** , cochez la case du projet **CalculatorLibrary** , puis choisissez **OK**.  La référence de projet apparaît sous un nœud **projets** dans **Explorateur de solutions**.
+1. Dans la boîte de dialogue **Gestionnaire de références** , cochez la case du projet **CalculatorLibrary** , puis choisissez **OK** .  La référence de projet apparaît sous un nœud **projets** dans **Explorateur de solutions** .
 
    ![Capture d’écran de Explorateur de solutions avec la référence de projet](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. Dans *Program.cs*, sélectionnez la `Calculator` classe et tout son code, puis appuyez sur **CTRL + X** pour la couper de Program.cs. Ensuite, dans **CalculatorLibrary**, dans *CalculatorLibrary.cs*, collez le code dans l' `CalculatorLibrary` espace de noms. Ensuite, faites de la classe Calculator `public` pour l’exposer en dehors de la bibliothèque. Le code de *CalculatorLibrary.cs* doit maintenant ressembler au code suivant :
+1. Dans *Program.cs* , sélectionnez la `Calculator` classe et tout son code, puis appuyez sur **CTRL + X** pour la couper de Program.cs. Ensuite, dans **CalculatorLibrary** , dans *CalculatorLibrary.cs* , collez le code dans l' `CalculatorLibrary` espace de noms. Ensuite, faites de la classe Calculator `public` pour l’exposer en dehors de la bibliothèque. Le code de *CalculatorLibrary.cs* doit maintenant ressembler au code suivant :
 
    ```csharp
    using System;
@@ -193,7 +193,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. Réexécutez le programme, puis, lorsque vous avez terminé, cliquez avec le bouton droit sur le nœud du projet et choisissez **ouvrir le dossier dans l’Explorateur de fichiers**, puis accédez au dossier de sortie dans l’Explorateur de fichiers. Il peut s’agir de *bin/debug/netcoreapp 3.1*et ouvrir le fichier *Calculator. log* .
+1. Réexécutez le programme, puis, lorsque vous avez terminé, cliquez avec le bouton droit sur le nœud du projet et choisissez **ouvrir le dossier dans l’Explorateur de fichiers** , puis accédez au dossier de sortie dans l’Explorateur de fichiers. Il peut s’agir de *bin/debug/netcoreapp 3.1* et ouvrir le fichier *Calculator. log* .
 
     ```output
     Starting Calculator Log
@@ -204,7 +204,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>Ajouter un package NuGet : écrire dans un fichier JSON
 
-1. Supposons à présent que nous souhaitons générer les opérations au format JSON, un format très répandu et portable pour le stockage des données d’objet. Pour implémenter cette fonctionnalité, vous devez référencer le package NuGet Newtonsoft.Jssur. Les packages NuGet constituent le vecteur principal de distribution des bibliothèques de classes .NET. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **références** du projet CalculatorLibrary, puis choisissez **gérer les packages NuGet**.
+1. Supposons à présent que nous souhaitons générer les opérations au format JSON, un format très répandu et portable pour le stockage des données d’objet. Pour implémenter cette fonctionnalité, vous devez référencer le package NuGet Newtonsoft.Jssur. Les packages NuGet constituent le vecteur principal de distribution des bibliothèques de classes .NET. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nœud **références** du projet CalculatorLibrary, puis choisissez **gérer les packages NuGet** .
 
    ![Capture d’écran de la gestion des packages NuGet dans le menu contextuel](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -212,13 +212,13 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
 
    ![Capture d’écran du Gestionnaire de package NuGet](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Recherchez Newtonsoft.Jssur le package, puis choisissez **installer**.
+1. Recherchez Newtonsoft.Jssur le package, puis choisissez **installer** .
 
    ![Capture d’écran des informations du package NuGet Newtonsoft](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
-   Le package est téléchargé et ajouté à votre projet et une nouvelle entrée s’affiche dans le nœud Références de **Explorateur de solutions**.
+   Le package est téléchargé et ajouté à votre projet et une nouvelle entrée s’affiche dans le nœud Références de **Explorateur de solutions** .
 
-1. Ajoutez une directive using pour System.IO et Newtonsoft.Jssur le package au début de *CalculatorLibrary.cs*.
+1. Ajoutez une directive using pour System.IO et Newtonsoft.Jssur le package au début de *CalculatorLibrary.cs* .
 
    ```csharp
    using Newtonsoft.Json;
@@ -299,7 +299,7 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
     }
    ```
 
-1. Et dans *Program.cs*, ajoutez un appel pour terminer à la fin.
+1. Et dans *Program.cs* , ajoutez un appel pour terminer à la fin.
 
    ```csharp
             // And call to close the JSON writer before return
@@ -328,6 +328,110 @@ Le code réel implique de nombreux projets qui fonctionnent ensemble dans une so
     ]
    }
    ```
+
+## <a name="debug-set-and-hit-a-breakpoint"></a>Débogage : définir et atteindre un point d’arrêt
+
+Le débogueur Visual Studio est un outil puissant qui vous permet d’exécuter votre code pas à pas, afin de trouver le point exact où vous avez commis une erreur de programmation. Vous comprenez ensuite les corrections que vous devez apporter dans votre code. Visual Studio vous permet d’effectuer des modifications temporaires pour pouvoir continuer à exécuter le programme.
+
+1. Dans *Program.cs* , cliquez sur la marge à gauche du code suivant (ou ouvrez le menu contextuel et choisissez **point d’arrêt**  >  **Insérer un point d’arrêt** ou appuyez sur **F9** ) :
+
+   ```csharp
+   result = calculator.DoOperation(cleanNum1, cleanNum2, op);
+   ```
+
+   Le cercle rouge qui s’affiche indique un point d’arrêt. Vous pouvez utiliser des points d’arrêt pour suspendre votre application et inspecter le code. Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable.
+
+   ![Capture d’écran de la définition d’un point d’arrêt](media/vs-2019/calculator-2-debug-set-breakpoint.png)
+
+1. Générez et exécutez l'application.
+
+1. Dans l’application en cours d’exécution, tapez des valeurs pour le calcul :
+
+   - Pour le premier nombre, tapez **8** et entrez-le.
+   - Pour le deuxième nombre, tapez **0** et entrez-le.
+   - Pour l’opérateur, commençons par le plaisir. tapez **d** et entrez-le.
+
+   L’application s’interrompt là où vous avez créé le point d’arrêt, ce qui est indiqué par le pointeur jaune à gauche et le code en surbrillance. Le code en surbrillance n’a pas encore été exécuté.
+
+   ![Capture d’écran de l’atteinte d’un point d’arrêt](media/vs-2019/calculator-2-debug-hit-breakpoint.png)
+
+   Maintenant, une fois l’application suspendue, vous pouvez inspecter l’état de votre application.
+
+## <a name="debug-view-variables"></a>Débogage : afficher les variables
+
+1. Dans le code en surbrillance, pointez sur des variables telles que `cleanNum1` et `op` . Vous voyez les valeurs actuelles de ces variables ( `8` et `d` , respectivement), qui apparaissent dans les DataTips.
+
+   ![Capture d’écran de l’affichage d’un DataTip](media/vs-2019/calculator-2-debug-view-datatip.png)
+
+   Lors du débogage, le fait de vérifier si les variables contiennent les valeurs que vous prévoyez de conserver est souvent essentiel pour résoudre les problèmes.
+
+2. Dans le volet inférieur, examinez la fenêtre **variables locales** . (S’il est fermé, choisissez **Déboguer**  >  **Windows**  >  **Locales** pour l’ouvrir.)
+
+   Dans la fenêtre variables locales, vous voyez chaque variable qui est actuellement dans la portée, ainsi que sa valeur et son type.
+
+   ![Capture d’écran de la fenêtre variables locales](media/vs-2019/calculator-2-debug-locals-window.png)
+
+3. Examinez la fenêtre **automatique** .
+
+   La fenêtre automatique est semblable à la fenêtre **variables locales** , mais elle affiche les variables qui précèdent et suivent la ligne de code en cours où votre application est suspendue.
+
+   Ensuite, vous allez exécuter le code dans le débogueur une instruction à la fois, qui est appelée *pas à pas* .
+
+## <a name="debug-step-through-code"></a>Débogage : pas à pas détaillé dans le code
+
+1. Appuyez sur **F11** (ou **déboguez**  >  **pas à pas** détaillé).
+
+   À l’aide de la commande pas à pas détaillé, l’application exécute l’instruction en cours et avance à l’instruction exécutable suivante (généralement la ligne de code suivante). Le pointeur jaune sur la gauche indique toujours l’instruction en cours.
+
+   ![Capture d’écran de la commande pas à pas détaillé](media/vs-2019/calculator-2-debug-step-into.png)
+
+   Vous venez d’examiner la `DoOperation` méthode dans la `Calculator` classe.
+
+1. Pour obtenir un aperçu hiérarchique du déroulement de votre programme, examinez la fenêtre **pile des appels** . (S’il est fermé, choisissez **Déboguer**  >  **Windows**  >  **Pile des appels** .)
+
+   ![Capture d’écran de la pile des appels](media/vs-2019/calculator-2-debug-call-stack.png)
+
+   Cette vue affiche la `Calculator.DoOperation` méthode actuelle, indiquée par le pointeur jaune, et la deuxième ligne affiche la fonction qui l’a appelée, à partir de la `Main` méthode dans *Program.cs* . La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. En outre, il permet d’accéder à de nombreuses fonctionnalités du débogueur, telles que **accéder au code source** , à partir du menu contextuel.
+
+1. Appuyez sur **F10** (ou **déboguez**  >  **pas à pas** ) plusieurs fois jusqu’à ce que l’application s’arrête sur l' `switch` instruction.
+
+   ```csharp
+   switch (op)
+   {
+   ```
+
+   La commande pas à pas principal est similaire à la commande pas à pas détaillé, sauf que si l’instruction en cours appelle une fonction, le débogueur exécute le code dans la fonction appelée et n’interrompt pas l’exécution tant que la fonction n’est pas retournée. Le pas à pas principal est un moyen plus rapide de parcourir le code si vous n’êtes pas intéressé par une fonction particulière.
+
+1. Appuyez sur **F10** une fois de plus pour que l’application s’arrête sur la ligne de code suivante.
+
+   ```csharp
+   if (num2 != 0)
+   {
+   ```
+
+   Ce code recherche un cas de division par zéro. Si l’application continue, elle lèvera une exception générale (une erreur), mais supposons que vous considériez ce bogue comme un bogue et que vous souhaitez effectuer une autre opération, par exemple afficher la valeur renvoyée réelle dans la console. Une option consiste à utiliser une fonctionnalité du débogueur appelée Edit-and-continue pour apporter des modifications au code, puis à continuer le débogage. Toutefois, nous vous présenterons une astuce différente pour modifier temporairement le workflow d’exécution.
+
+## <a name="debug-test-a-temporary-change"></a>Débogage : tester une modification temporaire
+
+1. Sélectionnez le pointeur jaune, actuellement suspendu sur l' `if (num2 != 0)` instruction, puis faites-le glisser vers l’instruction suivante.
+
+   ```csharp
+   result = num1 / num2;
+   ```
+
+   En procédant ainsi, l’application ignore complètement l' `if` instruction, ce qui vous permet de voir ce qui se passe lorsque vous divisez par zéro.
+
+1. Appuyez sur **F10** pour exécuter la ligne de code.
+
+1. Pointez sur la `result` variable et vous voyez qu’elle stocke la valeur `Infinity` .
+
+   En C#, `Infinity` est le résultat obtenu lorsque vous divisez par zéro.
+
+1. Appuyez sur **F5** (ou, **Déboguer**  >  **continuer le débogage** ).
+
+   Le symbole infini apparaît dans la console à la suite de l’opération mathématique.
+
+1. Fermez l’application correctement à l’aide de la commande’n'.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

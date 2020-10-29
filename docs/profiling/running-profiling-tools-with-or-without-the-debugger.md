@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007168"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918108"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
@@ -31,6 +31,7 @@ Pour déterminer les outils et les résultats à utiliser, prenez en compte les 
   - Les problèmes de performances externes, comme les problèmes de réactivité du réseau ou d’E/S de fichier, se ressembleront dans tous les outils, qu’ils soient intégrés ou non au débogueur.
   - Le débogueur lui-même modifie les performances, car il effectue des opérations de débogueur telles que l’interception des événements d’exception et de chargement de module.
   - Les numéros de performances de version Release dans le profileur de performances sont les plus précis et précis. Les résultats d’outils intégrés au débogueur sont plus utiles pour la comparaison avec d’autres mesures liées au débogage, ou pour l’utilisation des fonctionnalités du débogueur.
+  - Certains outils, tels que l’outil d’allocation d’objets .NET, sont uniquement disponibles pour les scénarios autres que le débogueur.
 - Débogage et version Release
   - Pour les problèmes provoqués par les appels nécessitant une utilisation intensive du processeur, il peut y avoir des différences de performances considérables entre les versions release et Debug. Vérifiez si le problème existe dans les versions release.
   - Si le problème se produit uniquement pendant les versions de débogage, vous n’avez probablement pas besoin d’exécuter les outils de non-débogage. Pour les problèmes de version Release, déterminez si les fonctionnalités fournies par les outils intégrés au débogueur vous aideront à identifier le problème.
@@ -38,26 +39,26 @@ Pour déterminer les outils et les résultats à utiliser, prenez en compte les 
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage
 
-Quand vous démarrez le débogage dans Visual Studio en sélectionnant **Déboguer**  >  **Démarrer**le débogage, ou en appuyant sur **F5**, la fenêtre de **outils de diagnostic** s’affiche par défaut. Pour l’ouvrir manuellement, sélectionnez **Déboguer**  >  **fenêtres**  >  **afficher les outils de diagnostic**. La fenêtre **Outils de diagnostic** affiche des informations sur l’utilisation du processeur, la mémoire de traitement et les événements.
+Quand vous démarrez le débogage dans Visual Studio en sélectionnant **Déboguer**  >  **Démarrer** le débogage, ou en appuyant sur **F5** , la fenêtre de **outils de diagnostic** s’affiche par défaut. Pour l’ouvrir manuellement, sélectionnez **Déboguer**  >  **fenêtres**  >  **afficher les outils de diagnostic** . La fenêtre **Outils de diagnostic** affiche des informations sur l’utilisation du processeur, la mémoire de traitement et les événements.
 
 ![Capture d’écran de la fenêtre Outils de diagnostic](../profiling/media/diagnostictoolswindow.png " Fenêtre Outils de diagnostic")
 
-- Utilisez l’icône **Paramètres** dans la barre d’outils pour sélectionner si vous souhaitez afficher **Utilisation de la mémoire**, **Analyse de l’IU** ou **Utilisation de l’UC**.
+- Utilisez l’icône **Paramètres** dans la barre d’outils pour sélectionner si vous souhaitez afficher **Utilisation de la mémoire** , **Analyse de l’IU** ou **Utilisation de l’UC** .
 
 - Sélectionnez **paramètres** dans la liste déroulante **paramètres** pour ouvrir les **pages de propriétés outils de diagnostic** avec davantage d’options.
 
-- Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace en accédant à **Outils**  >  **options**  >  **IntelliTrace**.
+- Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace en accédant à **Outils**  >  **options**  >  **IntelliTrace** .
 
 La session de diagnostic se termine quand vous arrêtez le débogage.
 
-Pour plus d'informations, voir :
+Pour plus d'informations, consultez les pages suivantes :
 
 - [Mesurer les performances d’application en analysant l’utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md)
 - [Mesurer l’utilisation de la mémoire dans Visual Studio](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>Onglet Événements
 
-Pendant une session de débogage, l’onglet Événements de la fenêtre Outils de diagnostic liste les événements de diagnostic qui se produisent. Le *point d’arrêt*des préfixes de catégorie, le *fichier*, etc. vous permettent d’analyser rapidement la liste d’une catégorie, ou d’ignorer les catégories qui ne vous intéressent pas.
+Pendant une session de débogage, l’onglet Événements de la fenêtre Outils de diagnostic liste les événements de diagnostic qui se produisent. Le *point d’arrêt* des préfixes de catégorie, le *fichier* , etc. vous permettent d’analyser rapidement la liste d’une catégorie, ou d’ignorer les catégories qui ne vous intéressent pas.
 
 Utilisez la liste déroulante **filtre** pour filtrer les événements dans et hors de l’affichage, en sélectionnant ou en effaçant des catégories spécifiques d’événements.
 
@@ -73,21 +74,21 @@ Pour plus d’informations, consultez [Searching and filtering the Events tab of
 
 Pour recueillir des données de performances sans débogage, vous pouvez exécuter les outils du Profileur de performances.
 
-1. Avec un projet ouvert dans Visual Studio, définissez la configuration de solution sur **Release**, puis sélectionnez **débogueur Windows local**   (ou **ordinateur local**) comme cible de déploiement.
+1. Avec un projet ouvert dans Visual Studio, définissez la configuration de solution sur **Release** , puis sélectionnez **débogueur Windows local** (ou **ordinateur local** ) comme cible de déploiement.
 
-1. Sélectionnez **Déboguer**le  >  **profileur de performances**ou appuyez sur **ALT** + **F2**.
+1. Sélectionnez **Déboguer** le  >  **profileur de performances** ou appuyez sur **ALT** + **F2** .
 
 1. Sur la page lancement des outils de diagnostic, sélectionnez un ou plusieurs outils à exécuter. Seuls les outils applicables au type de projet, au système d’exploitation et au langage de programmation sont affichés. Sélectionnez **Afficher tous les outils** pour voir aussi les outils qui sont désactivés pour cette session de diagnostic.
 
    ![Capture d’écran des outils de diagnostic](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. Pour démarrer la session de diagnostic, sélectionnez **Démarrer**.
+1. Pour démarrer la session de diagnostic, sélectionnez **Démarrer** .
 
    Pendant l’exécution de la session, certains outils affichent des graphiques de données en temps réel sur la page outils de diagnostic, ainsi que des contrôles pour suspendre et reprendre la collecte des données.
 
     ![Capture d’écran de la collecte de données sur le profileur de performances](../profiling/media/diaghubcollectdata.png "Collecte de données par le Hub")
 
-1. Pour terminer la session de diagnostic, sélectionnez **Arrêter la collecte**.
+1. Pour terminer la session de diagnostic, sélectionnez **Arrêter la collecte** .
 
    Les données analysées s’affichent sur la page du **rapport** .
 
@@ -95,7 +96,7 @@ Vous pouvez enregistrer les rapports et les ouvrir à partir de la liste **sessi
 
 ![Capture d’écran de Outils de diagnostic liste des sessions récemment ouvertes](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
-Pour plus d'informations, voir :
+Pour plus d'informations, consultez les pages suivantes :
 
 - [Analyser l’utilisation de l’UC](../profiling/cpu-usage.md)
 - [Analyser l’utilisation de la mémoire pour le code .NET](../profiling/dotnet-alloc-tool.md)
