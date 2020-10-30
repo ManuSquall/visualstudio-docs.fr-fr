@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du multiciblage MSBuild | Microsoft Docs
+description: Découvrez comment utiliser MSBuild pour compiler une application afin qu’elle s’exécute sur n’importe quelle version du .NET Framework, et sur l’une des différentes plateformes système.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183520"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046306"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Vue d’ensemble du multiciblage MSBuild
 
@@ -28,7 +30,7 @@ MSBuild vous permet de compiler une application pour l’exécuter sur une versi
 
 - Vous pouvez cibler des Frameworks autre que le .NET Framework (par exemple, Silverlight Framework).
 
-- Vous pouvez cibler un *profil Framework*, qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.
+- Vous pouvez cibler un *profil Framework* , qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.
 
 - Si un service pack pour la version actuelle du .NET Framework est publié, vous pouvez le cibler.
 
@@ -36,11 +38,11 @@ MSBuild vous permet de compiler une application pour l’exécuter sur une versi
 
 ## <a name="target-framework-and-platform"></a>Version cible de .NET Framework et plateforme cible
 
- Un *Framework cible* correspond à la version du .NET Framework sur laquelle le projet s’exécute, et une *plateforme cible* à la plateforme système sur laquelle le projet s’exécute.  Par exemple, vous souhaiterez peut-être cibler une application .NET Framework 2,0 pour qu’elle s’exécute sur une plateforme 32 bits compatible avec la famille de processeurs 80x86 (x86). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*. Pour plus d’informations, consultez [Version cible de .NET Framework et plateforme cible](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Un *Framework cible* correspond à la version du .NET Framework sur laquelle le projet s’exécute, et une *plateforme cible* à la plateforme système sur laquelle le projet s’exécute.  Par exemple, vous souhaiterez peut-être cibler une application .NET Framework 2,0 pour qu’elle s’exécute sur une plateforme 32 bits compatible avec la famille de processeurs 80x86 (x86). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible* . Pour plus d’informations, consultez [Version cible de .NET Framework et plateforme cible](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Ensemble d'outils (ToolsVersion)
 
- Un ensemble d’outils regroupe les outils, tâches et cibles utilisés pour créer l’application. Un ensemble d’outils comprend des compilateurs tels que *csc.exe* et *vbc.exe*, le fichier de cibles communes (*Microsoft. Common. targets*) et le fichier de tâches courantes (*Microsoft. Common. Tasks*). L’ensemble d’outils 4.5 peut être utilisé pour cibler des versions 2.0, 3.0, 3.5, 4 et 4.5 du .NET Framework. Cependant, l’ensemble d’outils 2.0 ne peut être utilisé que pour cibler le .NET Framework version 2.0. Pour plus d’informations, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Un ensemble d’outils regroupe les outils, tâches et cibles utilisés pour créer l’application. Un ensemble d’outils comprend des compilateurs tels que *csc.exe* et *vbc.exe* , le fichier de cibles communes ( *Microsoft. Common. targets* ) et le fichier de tâches courantes ( *Microsoft. Common. Tasks* ). L’ensemble d’outils 4.5 peut être utilisé pour cibler des versions 2.0, 3.0, 3.5, 4 et 4.5 du .NET Framework. Cependant, l’ensemble d’outils 2.0 ne peut être utilisé que pour cibler le .NET Framework version 2.0. Pour plus d’informations, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assemblys de référence
 

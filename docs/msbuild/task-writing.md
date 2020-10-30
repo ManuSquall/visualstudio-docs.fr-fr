@@ -1,5 +1,7 @@
 ---
 title: Écriture de tâches | Microsoft Docs
+description: Découvrez comment vous pouvez créer vos propres tâches pour fournir le code qui s’exécute pendant le processus de génération MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631834"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047915"
 ---
 # <a name="task-writing"></a>Écriture de tâches
 
@@ -25,13 +27,13 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
 
 ## <a name="tasks"></a>Tâches
 
- Exemples de tâches : [copie](../msbuild/copy-task.md), qui copie un ou plusieurs fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée un répertoire et [CSC](../msbuild/csc-task.md), qui compile des fichiers de code source C#. Chaque tâche est implémentée en tant que classe .NET implémentant l’interface <xref:Microsoft.Build.Framework.ITask>, définie dans l’assembly *Microsoft.Build.Framework.dll*.
+ Exemples de tâches : [copie](../msbuild/copy-task.md), qui copie un ou plusieurs fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée un répertoire et [CSC](../msbuild/csc-task.md), qui compile des fichiers de code source C#. Chaque tâche est implémentée en tant que classe .NET implémentant l’interface <xref:Microsoft.Build.Framework.ITask>, définie dans l’assembly *Microsoft.Build.Framework.dll* .
 
  Vous pouvez adopter deux approches lors de l’implémentation d’une tâche :
 
 - implémenter directement l’interface <xref:Microsoft.Build.Framework.ITask> ;
 
-- dériver votre classe de la classe d’assistance, <xref:Microsoft.Build.Utilities.Task>, définie dans l’assembly *Microsoft.Build.Utilities.dll*. La tâche implémente ITask et fournit des implémentations par défaut de certains membres ITask. De plus, la journalisation est plus facile.
+- dériver votre classe de la classe d’assistance, <xref:Microsoft.Build.Utilities.Task>, définie dans l’assembly *Microsoft.Build.Utilities.dll* . La tâche implémente ITask et fournit des implémentations par défaut de certains membres ITask. De plus, la journalisation est plus facile.
 
 Dans les deux cas, vous devez ajouter à votre classe une méthode nommée `Execute`, qui est la méthode appelée lorsque la tâche s’exécute. Cette méthode n’accepte aucun paramètre et retourne une valeur `Boolean` : `true` si la tâche a réussi ou `false` si elle a échoué. L’exemple suivant montre une tâche qui n’effectue aucune action et retourne `true`.
 
@@ -100,7 +102,7 @@ namespace MyTasks
  Le fichier MSBuild *Microsoft. Common. Tasks* est un fichier projet qui contient une liste d' `UsingTask` éléments qui inscrivent toutes les tâches fournies avec MSBuild. Ce fichier est inclus automatiquement lors de la génération de chaque projet. Si une tâche inscrite dans *Microsoft.Common.Tasks* est également inscrite dans le fichier projet actuel, ce dernier est prioritaire. Autrement dit, vous pouvez remplacer une tâche par défaut par votre propre tâche du même nom.
 
 > [!TIP]
-> Vous pouvez voir une liste des tâches qui sont fournies avec MSBuild en affichant le contenu de *Microsoft. Common. Tasks*.
+> Vous pouvez voir une liste des tâches qui sont fournies avec MSBuild en affichant le contenu de *Microsoft. Common. Tasks* .
 
 ## <a name="raise-events-from-a-task"></a>Déclencher des événements à partir d’une tâche
 
@@ -170,7 +172,7 @@ Une tâche ne doit pas dépendre d’un ordre relatif d’appel d’accesseur Se
 
 MSBuild gère en mode natif les propriétés de `string` type `bool` , `ITaskItem` et `ITaskItem[]` . Si une tâche accepte un paramètre d’un type différent, MSBuild appelle <xref:System.Convert.ChangeType%2A> pour effectuer la conversion de `string` (avec toutes les références de propriété et d’élément développées) vers le type de destination. Si la conversion échoue pour un paramètre d’entrée, MSBuild émet une erreur et n’appelle pas la méthode de la tâche `Execute()` .
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
 ### <a name="description"></a>Description
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
 ### <a name="description"></a>Description
 
@@ -231,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-3"></a>Exemple 3
 
 ### <a name="description"></a>Description
 
@@ -241,7 +243,7 @@ Cette classe C# illustre une tâche qui dérive de la <xref:Microsoft.Build.Util
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>Exemple
+## <a name="example-4"></a>Exemple 4
 
 ### <a name="description"></a>Description
 

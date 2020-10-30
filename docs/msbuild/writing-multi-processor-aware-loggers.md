@@ -1,5 +1,7 @@
 ---
 title: Écriture de journaux multiprocesseurs | Microsoft Docs
+description: Découvrez comment MSBuild fournit un journal et un modèle de journalisation multiprocesseurs, et vous permet de créer des « journaux de transfert » personnalisés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886e012b026ef17b512a7e134d080382744783ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630745"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047303"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Écrire des journaux multiprocesseurs
 
@@ -78,7 +80,7 @@ En guise d’alternative, vous pouvez créer un journal de transfert personnalis
 
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Utilisation de ConfigurableForwardingLogger pour une journalisation distribuée simple
 
- Pour joindre ConfigurableForwardingLogger ou un journal de transfert personnalisé, utilisez le commutateur `-distributedlogger` (`-dl`, en abrégé) dans une build de ligne de commande *MSBuild.exe*. Le format de nom des types et des classes du journal est le même que celui du commutateur `-logger`, sauf qu’un journal distribué a toujours deux classes de journalisation au lieu d’une : le journal de transfert et le journal central. Voici un exemple dans lequel est joint un journal de transfert personnalisé nommé XMLForwardingLogger.
+ Pour joindre ConfigurableForwardingLogger ou un journal de transfert personnalisé, utilisez le commutateur `-distributedlogger` (`-dl`, en abrégé) dans une build de ligne de commande *MSBuild.exe* . Le format de nom des types et des classes du journal est le même que celui du commutateur `-logger`, sauf qu’un journal distribué a toujours deux classes de journalisation au lieu d’une : le journal de transfert et le journal central. Voici un exemple dans lequel est joint un journal de transfert personnalisé nommé XMLForwardingLogger.
 
 ```cmd
 msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral

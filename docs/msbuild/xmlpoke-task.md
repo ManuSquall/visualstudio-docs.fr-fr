@@ -1,5 +1,7 @@
 ---
 title: XmlPoke, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche XmlPoke pour définir des valeurs comme spécifié par une requête XPath dans un fichier XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e29004116807092452a08d3835ba3e5e1dabcd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072496"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047229"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (tâche)
 
@@ -38,7 +40,7 @@ Définit les valeurs comme spécifié par une requête XPath dans un fichier XML
 |`Value`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie la valeur à insérer dans le chemin spécifié.|
 |`XmlInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie l’entrée XML sous forme de chemin de fichier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

@@ -1,5 +1,6 @@
 ---
 title: Raccourcis clavier par défaut pour les commandes fréquemment utilisées
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596721"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045655"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier populaires pour Visual Studio
 
@@ -21,7 +22,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 Le contexte *Global* signifie que le raccourci s’applique dans n’importe quelle fenêtre Outil dans Visual Studio.
 
 > [!NOTE]
-> Vous pouvez [rechercher le raccourci](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**.
+> Vous pouvez [rechercher le raccourci](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) d’une commande en ouvrant la boîte de dialogue **Options** , en développant le nœud **Environnement** , puis en choisissant **Clavier** .
 
 ## <a name="build"></a>Build
 
@@ -57,9 +58,9 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
 |Edit.BreakLine|**Entrée** [éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br />ou **MAJ + entrée** [éditeur de texte]|
-|Edit.CollapseToDefinitions|**Ctrl + M**, **Ctrl + O** [éditeur de texte]|
-|Edit.CommentSelection|**CTRL + K**, **Ctrl + C** [éditeur de texte]|
-|Edit.CompleteWord|**Alt + flèche droite** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **Ctrl + barre d’espace** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **CTRL + K**, **W** [Concepteur de flux de travail]<br /><br />ou **CTRL + K, CTRL + W** [Concepteur de flux de travail]|
+|Edit.CollapseToDefinitions|**Ctrl + M** , **Ctrl + O** [éditeur de texte]|
+|Edit.CommentSelection|**CTRL + K** , **Ctrl + C** [éditeur de texte]|
+|Edit.CompleteWord|**Alt + flèche droite** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **Ctrl + barre d’espace** [éditeur de texte, concepteur de flux de travail]<br /><br />ou **CTRL + K** , **W** [Concepteur de flux de travail]<br /><br />ou **CTRL + K, CTRL + W** [Concepteur de flux de travail]|
 |Edit.Copy|**Ctrl + C** [global]<br /><br />ou **Ctrl + Inser** [global]|
 |Edit.Cut|**Ctrl+X** [Global]<br /><br />ou **MAJ + SUPPR** [global]|
 |Edit.Delete|**Delete** [Global, Team Explorer]<br /><br />ou **MAJ + SUPPR** [diagramme de séquence, diagramme d’activités UML, diagramme de couche]<br /><br />ou **Ctrl + Suppr** [diagramme de classes]|
@@ -75,7 +76,7 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**Ctrl + D** [global]|
 |Edit.GoToNextLocation|**F8** [Global]|
-|Edit.InsertSnippet|**CTRL + K**, **CTRL + X** [global]|
+|Edit.InsertSnippet|**CTRL + K** , **CTRL + X** [global]|
 |Edit.InsertTab|**Onglet** [Concepteur de rapports, Concepteur Windows Forms, éditeur de texte]|
 |Edit.LineCut|**Ctrl + L** [éditeur de texte]|
 |Edit.LineDownExtendColumn|**Maj + Alt + flèche bas** [éditeur de texte]|
@@ -119,7 +120,7 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |File.SaveSelectedItems|**CTRL + S** [global]|
 |File.ViewinBrowser|**Ctrl + Maj + W** [global]|
 
-## <a name="project"></a>Projet
+## <a name="project"></a>Project
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |

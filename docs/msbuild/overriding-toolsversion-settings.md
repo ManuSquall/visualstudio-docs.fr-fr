@@ -1,5 +1,7 @@
 ---
 title: Substitution des paramètres ToolsVersion | Microsoft Docs
+description: Découvrez plusieurs manières de modifier ou de substituer la valeur de l’ensemble d’outils MSBuild pour les projets et les solutions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633016"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048902"
 ---
 # <a name="override-toolsversion-settings"></a>Écraser les paramètres ToolsVersion
 
@@ -121,7 +123,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. Si la variable d’environnement `MSBUILDDEFAULTTOOLSVERSION` est définie sur une `ToolsVersion` qui existe, elle est utilisée.
 
-    2. Si `DefaultOverrideToolsVersion` est défini dans *MSBuild.exe.config*, il est utilisé.
+    2. Si `DefaultOverrideToolsVersion` est défini dans *MSBuild.exe.config* , il est utilisé.
 
     3. Si `DefaultOverrideToolsVersion` est défini dans le Registre, il est utilisé.
 

@@ -1,17 +1,19 @@
 ---
 title: Raccourcis clavier pour le concepteur XAML
+description: En savoir plus sur les raccourcis clavier dans le Concepteur XAML qui accèdent aux commandes permettant d’utiliser des éléments sur la planche graphique et dans la fenêtre structure du document.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9f30dd3eaeb6905088e7eec9db1fa9cc2b0f32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592958"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045893"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Raccourcis clavier pour le concepteur XAML
 
@@ -21,7 +23,7 @@ Les raccourcis clavier peuvent accélérer votre travail dans le concepteur XAML
 
 Le tableau ci-après répertorie les raccourcis utilisables avec les éléments de la planche graphique.
 
-|**Pour exécuter cette action**|**Procédez comme suit**|
+|**Pour exécuter cette action**|**Action**|
 | - |-----------------|
 |Créer un élément|Appuyez sur **CTRL** + **N**|
 |Dupliquer un élément|Maintenez la touche **Alt** enfoncée et appuyez sur une touche de direction.|
@@ -34,13 +36,13 @@ Le tableau ci-après répertorie les raccourcis utilisables avec les éléments 
 |Sélectionner tous les éléments|Appuyez sur **CTRL** + **A**|
 |Effacer la sélection de tous les éléments|Appuyez sur **CTRL** + **MAJ** + **A**|
 |Afficher ou masquer les poignées d'élément|Appuyez sur **F9**|
-|Sélectionner une propriété d'un élément|Avec un élément sélectionné et le focus sur le Fenêtre Propriétés, appuyez sur la touche **Tab**. (Utilisez **CTRL** + **Pour modifier le focus sur la** fenêtre Propriétés.) Vous pouvez utiliser les touches de direction pour sélectionner des valeurs de propriété dans des listes déroulantes.|
+|Sélectionner une propriété d'un élément|Avec un élément sélectionné et le focus sur le Fenêtre Propriétés, appuyez sur la touche **Tab** . (Utilisez **CTRL** + **Pour modifier le focus sur la** fenêtre Propriétés.) Vous pouvez utiliser les touches de direction pour sélectionner des valeurs de propriété dans des listes déroulantes.|
 
 ## <a name="document-outline-window-shortcuts"></a>Raccourcis de la fenêtre Structure du document
 
 Le tableau suivant répertorie les raccourcis utilisables avec les éléments dans la fenêtre Structure du document.
 
-|**Pour exécuter cette action**|**Procédez comme suit**|
+|**Pour exécuter cette action**|**Action**|
 | - |-----------------|
 |Masquer les objets de la planche graphique tandis que le focus est sur la fenêtre Structure du document|**CTRL** + **H**|
 |Afficher les objets de la planche graphique tandis que le focus est sur la fenêtre Structure du document|**MAJ** + **CTRL** + **H**|

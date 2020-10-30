@@ -1,5 +1,7 @@
 ---
 title: Tâches inline MSBuild avec RoslynCodeTaskFactory | Microsoft Docs
+description: En savoir plus sur MSBuild RoslynCodeTaskFactory, qui utilise les compilateurs Roslyn multiplateforme pour générer des assemblys de tâche en mémoire à utiliser comme tâches Inline.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289207"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049123"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tâches inline MSBuild avec RoslynCodeTaskFactory
 
@@ -117,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
-Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé *HelloWorld.targets*, puis l’appeler à partir d’un projet en procédant comme suit.
+Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé *HelloWorld.targets* , puis l’appeler à partir d’un projet en procédant comme suit.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

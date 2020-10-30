@@ -1,5 +1,7 @@
 ---
 title: RemoveDuplicates, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche RemoveDuplicates pour supprimer les doublons de la collection d’éléments spécifiée.
+ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632782"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048675"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (tâche)
 
@@ -38,7 +40,7 @@ Supprime les éléments en double de la collection d’éléments spécifiée.
 |`Filtered`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient une collection d’éléments dont tous les doublons ont été supprimés. L’ordre des éléments d’entrée est préservé, en conservant la première instance de chaque élément en double.|
 |`Inputs`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Collection d’éléments de laquelle supprimer les éléments en double.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  Cette tâche ne prend pas en compte la casse et ne compare pas les métadonnées des éléments lors de la recherche des doublons.
 
@@ -70,7 +72,7 @@ Supprime les éléments en double de la collection d’éléments spécifiée.
 </Project>
 ```
 
- L’exemple suivant montre que la tâche `RemoveDuplicates` conserve son ordre d’entrée. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient les éléments *MyFile2.cs*, *MyFile1.cs* et *MyFile3.cs* dans cet ordre.
+ L’exemple suivant montre que la tâche `RemoveDuplicates` conserve son ordre d’entrée. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient les éléments *MyFile2.cs* , *MyFile1.cs* et *MyFile3.cs* dans cet ordre.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’une tâche inline | Microsoft Docs'
+description: Découvrez comment créer une tâche MSBuild inline dans le fichier projet, sans avoir à créer un assembly distinct pour héberger la tâche.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289142"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046639"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
 
@@ -46,13 +48,13 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 #### <a name="to-create-and-modify-a-project-file"></a>Pour créer et modifier un fichier projet
 
-1. Dans Visual Studio, créez un nouveau projet à l’aide du modèle **application C# Windows Forms** . Dans le champ **Nom**, saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\*. Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
+1. Dans Visual Studio, créez un nouveau projet à l’aide du modèle **application C# Windows Forms** . Dans le champ **Nom** , saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\* . Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks** .
 
 3. Cliquez sur **OK** pour créer le fichier projet.
 
-3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet **InlineTasks** , puis cliquez sur **décharger le projet**.
+3. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nœud de projet **InlineTasks** , puis cliquez sur **décharger le projet** .
 
-4. Recliquez avec le bouton droit sur le nœud du projet, puis cliquez sur **Modifier BuildApp.csproj**.
+4. Recliquez avec le bouton droit sur le nœud du projet, puis cliquez sur **Modifier BuildApp.csproj** .
 
      Le fichier projet s’affiche dans l’éditeur de code.
 
@@ -94,20 +96,20 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 ##### <a name="to-run-the-hello-task"></a>Pour exécuter la tâche Hello
 
-1. Cliquez sur **Démarrer**, sur **Tous les programmes**, puis recherchez le dossier **Visual Studio Tools** et cliquez sur **Invite de commandes Visual Studio**.
+1. Cliquez sur **Démarrer** , sur **Tous les programmes** , puis recherchez le dossier **Visual Studio Tools** et cliquez sur **Invite de commandes Visual Studio** .
 
-2. Dans la **fenêtre d’invite de commandes**, recherchez le dossier qui contient le fichier projet, dans le cas présent, *D:\InlineTasks\InlineTasks \\ *.
+2. Dans la **fenêtre d’invite de commandes** , recherchez le dossier qui contient le fichier projet, dans le cas présent, *D:\InlineTasks\InlineTasks \\* .
 
-3. Tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette opération génère le fichier *InlineTasks. csproj* et traite la cible par défaut TestBuild, qui appelle la tâche Hello.
+3. Tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée** . Par défaut, cette opération génère le fichier *InlineTasks. csproj* et traite la cible par défaut TestBuild, qui appelle la tâche Hello.
 
-4. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir cette ligne :
+4. Examinez la sortie dans la **fenêtre d’invite de commandes** . Vous devez normalement voir cette ligne :
 
     `Hello, world!`
 
    > [!NOTE]
    > Si vous ne voyez pas le message Hello, essayez de réenregistrer le fichier projet puis d’exécuter la tâche Hello.
 
-   En alternant entre l’éditeur de code et la **fenêtre d’invite de commandes**, vous pouvez modifier le fichier projet et voir rapidement les résultats.
+   En alternant entre l’éditeur de code et la **fenêtre d’invite de commandes** , vous pouvez modifier le fichier projet et voir rapidement les résultats.
 
 ## <a name="define-the-echo-task"></a>Définir la tâche Echo
 
@@ -133,9 +135,9 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    </Target>
    ```
 
-2. Dans la **fenêtre d’invite de commandes**, tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
+2. Dans la **fenêtre d’invite de commandes** , tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée** . Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
 
-3. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir cette ligne :
+3. Examinez la sortie dans la **fenêtre d’invite de commandes** . Vous devez normalement voir cette ligne :
 
     `Greetings!`
 
@@ -170,9 +172,9 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    </Target>
    ```
 
-2. Dans la **fenêtre d’invite de commandes**, tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
+2. Dans la **fenêtre d’invite de commandes** , tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée** . Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche Echo.
 
-3. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir cette ligne :
+3. Examinez la sortie dans la **fenêtre d’invite de commandes** . Vous devez normalement voir cette ligne :
 
     `The sum is 9`
 
@@ -226,9 +228,9 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    </Target>
    ```
 
-2. Dans la **fenêtre d’invite de commandes**, tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée**. Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche RegX.
+2. Dans la **fenêtre d’invite de commandes** , tapez **MSBuild** sans commutateurs de commande, puis appuyez sur **entrée** . Par défaut, cette commande traite la cible par défaut TestBuild, qui appelle la tâche RegX.
 
-3. Examinez la sortie dans la **fenêtre d’invite de commandes**. Vous devez normalement voir ces lignes :
+3. Examinez la sortie dans la **fenêtre d’invite de commandes** . Vous devez normalement voir ces lignes :
 
    ```
    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs

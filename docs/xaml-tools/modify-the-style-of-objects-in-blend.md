@@ -1,6 +1,8 @@
 ---
 title: Modifier le style des objets
 titleSuffix: Blend for Visual Studio
+description: Apprenez à modifier le style des objets dans Blend pour Visual Studio en appliquant des pinceaux, en définissant des États visuels et en appliquant des styles et des modèles réutilisables.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592951"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046794"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modifier le style des objets dans Blend pour Visual Studio
 
-Le moyen le plus simple de personnaliser un objet est d’en définir les propriétés dans le panneau **Propriétés**.
+Le moyen le plus simple de personnaliser un objet est d’en définir les propriétés dans le panneau **Propriétés** .
 
-Si vous voulez réutiliser des paramètres ou des groupes de paramètres, créez une ressource réutilisable. Il peut s’agir d’un *style*, d’un *modèle* ou de quelque chose de simple comme une couleur personnalisée. Vous pouvez aussi faire en sorte qu'un contrôle change d'apparence en fonction de son état, par exemple, un bouton qui devient vert quand l'utilisateur clique dessus.
+Si vous voulez réutiliser des paramètres ou des groupes de paramètres, créez une ressource réutilisable. Il peut s’agir d’un *style* , d’un *modèle* ou de quelque chose de simple comme une couleur personnalisée. Vous pouvez aussi faire en sorte qu'un contrôle change d'apparence en fonction de son état, par exemple, un bouton qui devient vert quand l'utilisateur clique dessus.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceaux : modifier l'apparence d'un objet
 
@@ -27,9 +29,9 @@ Appliquez un pinceau à un objet si vous voulez modifier son apparence.
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Peindre une image ou un motif qui se répète sur un objet
 
-Vous pouvez peindre une image ou un motif qui se répète sur un objet à l’aide d’un *pinceau mosaïque*.
+Vous pouvez peindre une image ou un motif qui se répète sur un objet à l’aide d’un *pinceau mosaïque* .
 
-Pour créer un pinceau mosaïque, commencez par créer une ressource de *pinceau image*, de *pinceau de dessin* ou de *pinceau visuel*.
+Pour créer un pinceau mosaïque, commencez par créer une ressource de *pinceau image* , de *pinceau de dessin* ou de *pinceau visuel* .
 
 Vous pouvez créer un pinceau d'image à l'aide d'une image. Les illustrations suivantes montrent le pinceau d'image, le pinceau d'image en mosaïque et le pinceau d'image retourné.
 
@@ -47,21 +49,21 @@ Vous pouvez créer un pinceau visuel à partir d'un contrôle, tel qu'un bouton.
 
 Vous pouvez concevoir l’apparence et le comportement d’un même contrôle et appliquer cette conception à d’autres contrôles pour vous éviter d’avoir à les gérer un à un.
 
-**Avez-vous intérêt à utiliser un style ?** Si vous voulez simplement définir des propriétés par défaut (comme la couleur d’un bouton), utilisez un *style*. Vous pouvez modifier un contrôle même après lui avoir appliqué un style.
+**Avez-vous intérêt à utiliser un style ?** Si vous voulez simplement définir des propriétés par défaut (comme la couleur d’un bouton), utilisez un *style* . Vous pouvez modifier un contrôle même après lui avoir appliqué un style.
 
-**Avez-vous intérêt à utiliser un modèle ?** Si vous voulez changer la structure d’un contrôle, utilisez un *modèle*. Si vous envisagez de convertir un graphique ou un logo en bouton, sachez que vous ne pouvez pas modifier un contrôle après lui avoir appliqué un modèle.
+**Avez-vous intérêt à utiliser un modèle ?** Si vous voulez changer la structure d’un contrôle, utilisez un *modèle* . Si vous envisagez de convertir un graphique ou un logo en bouton, sachez que vous ne pouvez pas modifier un contrôle après lui avoir appliqué un modèle.
 
 ### <a name="create-a-template-or-style"></a>Créer un modèle ou un style
 
 Vous pouvez créer un modèle de deux façons. Vous pouvez soit convertir un objet de la planche graphique en contrôle, soit baser votre modèle sur un contrôle existant.
 
-Pour convertir un objet en modèle de contrôle, sélectionnez l’objet puis, dans le menu **Outils**, choisissez **Créer un contrôle**.
+Pour convertir un objet en modèle de contrôle, sélectionnez l’objet puis, dans le menu **Outils** , choisissez **Créer un contrôle** .
 
-Si vous voulez baser votre modèle sur un contrôle existant, sélectionnez un objet sur la planche graphique. Ensuite, en haut de la planche graphique, choisissez successivement le bouton de la barre de navigation, **Modifier le modèle**, puis **Modifier une copie** ou **Créer vide**.
+Si vous voulez baser votre modèle sur un contrôle existant, sélectionnez un objet sur la planche graphique. Ensuite, en haut de la planche graphique, choisissez successivement le bouton de la barre de navigation, **Modifier le modèle** , puis **Modifier une copie** ou **Créer vide** .
 
 ![Menu Modifier un modèle](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Pour créer un style, sélectionnez l’objet puis, dans le menu **Objet**, choisissez **Modifier le style**, puis **Modifier une copie** ou **Créer vide**.
+Pour créer un style, sélectionnez l’objet puis, dans le menu **Objet** , choisissez **Modifier le style** , puis **Modifier une copie** ou **Créer vide** .
 
 - Choisissez **Modifier une copie** pour commencer avec le style ou le modèle par défaut du contrôle.
 
@@ -69,7 +71,7 @@ Pour créer un style, sélectionnez l’objet puis, dans le menu **Objet**, choi
 
 L’option **Modifier actuel** s’affiche uniquement si vous modifiez un style ou un modèle que vous avez déjà créé. Elle ne s’affiche pas pour un contrôle qui utilise toujours un modèle système par défaut.
 
-Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit nommer le style ou le modèle pour pouvoir l’utiliser ultérieurement, soit appliquer le style ou le modèle à tous les contrôles de ce type.
+Dans la boîte de dialogue **Créer une ressource de style** , vous pouvez soit nommer le style ou le modèle pour pouvoir l’utiliser ultérieurement, soit appliquer le style ou le modèle à tous les contrôles de ce type.
 
 ![Boîte de dialogue Créer une ressource de style](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png)
 
@@ -79,13 +81,13 @@ Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit n
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Appliquer un style ou un modèle à un contrôle
 
-Cliquez avec le bouton droit sur un objet dans la fenêtre [Objets et chronologie](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), choisissez **Modifier un modèle**, puis **Appliquer la ressource**.
+Cliquez avec le bouton droit sur un objet dans la fenêtre [Objets et chronologie](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), choisissez **Modifier un modèle** , puis **Appliquer la ressource** .
 
 ![Menu Appliquer la ressource](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle
 
-Sélectionnez le contrôle et, dans la fenêtre * * Propriétés * * * *, recherchez la propriété **style** ou **modèle** . Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
+Sélectionnez le contrôle et, dans la fenêtre * * Propriétés * * * *, recherchez la propriété **style** ou **modèle** . Sélectionnez **Options avancées** , puis cliquez sur **Réinitialiser** dans le menu contextuel.
 
 ## <a name="visual-states"></a>États visuels
 

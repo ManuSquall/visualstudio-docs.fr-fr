@@ -1,5 +1,7 @@
 ---
 title: Élément OnError (MSBuild) | Microsoft Docs
+description: Découvrez comment MSBuild utilise l’élément OnError pour déclencher l’exécution d’une ou de plusieurs cibles, si l’attribut ContinueOnError a la valeur false pour une tâche ayant échoué.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633081"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048950"
 ---
 # <a name="onerror-element-msbuild"></a>Élément OnError (MSBuild)
 
@@ -32,7 +34,7 @@ Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `Continue
  \<Project> \<Target>
  \<OnError>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <OnError ExecuteTargets="TargetName"
@@ -60,7 +62,7 @@ Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `Continue
 | - | - |
 | [Cible](../msbuild/target-element-msbuild.md) | Élément conteneur pour les tâches MSBuild. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  MSBuild exécute l' `OnError` élément si l’une des tâches de l' `Target` élément échoue avec l' `ContinueOnError` attribut défini sur `ErrorAndStop` (ou `false` ). Lorsque la tâche échoue, les cibles spécifiées dans l’attribut `ExecuteTargets` sont exécutées. S’il existe plusieurs éléments `OnError` dans la cible, les éléments `OnError` sont exécutés séquentiellement lorsque la tâche échoue.
 

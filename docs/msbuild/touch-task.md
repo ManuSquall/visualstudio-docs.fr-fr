@@ -1,5 +1,7 @@
 ---
 title: Touch, tâche | Microsoft Docs
+description: En savoir plus sur les paramètres et l’utilisation de la tâche Touch MSBuild, qui définit les heures d’accès et de modification des fichiers.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631651"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047007"
 ---
 # <a name="touch-task"></a>Touch (tâche)
 
@@ -41,7 +43,7 @@ Définit les heures d’accès et de modification des fichiers.
 |`Time`|Paramètre `String` facultatif.<br /><br /> Spécifie une heure autre que l’heure actuelle. Le format doit être acceptable pour la méthode <xref:System.DateTime.Parse%2A>.|
 |`TouchedFiles`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient la collection d’éléments horodatés.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

@@ -1,5 +1,7 @@
 ---
 title: UidManager, tâche | Microsoft Docs
+description: Découvrez comment la tâche MSBuild UidManager vérifie, met à jour ou supprime les identificateurs uniques (UID) pour localiser tous les éléments XAML dans les fichiers XAML source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631521"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046937"
 ---
 # <a name="uidmanager-task"></a>UidManager, tâche
 
@@ -36,7 +38,7 @@ La <xref:Microsoft.Build.Tasks.Windows.UidManager> tâche vérifie, met à jour 
 |-------------------------| - |
 | `IntermediateDirectory` | Paramètre de **chaîne** facultatif.<br /><br /> Spécifie le répertoire utilisé pour sauvegarder les fichiers XAML source qui sont spécifiés par le paramètre **MarkupFiles** . |
 | `MarkupFiles` | Paramètre **ITaskItem []** obligatoire.<br /><br /> Spécifie les fichiers XAML source à inclure pour la vérification, la mise à jour ou la suppression des UID. |
-| `Task` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie la tâche de gestion des UID à exécuter. Les options valides sont **Check**, **Update** et **Remove**. |
+| `Task` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie la tâche de gestion des UID à exécuter. Les options valides sont **Check** , **Update** et **Remove** . |
 
 ## <a name="example"></a>Exemple
 
@@ -60,7 +62,7 @@ La <xref:Microsoft.Build.Tasks.Windows.UidManager> tâche vérifie, met à jour 
 
 - [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
 - [Comment : localiser une application](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

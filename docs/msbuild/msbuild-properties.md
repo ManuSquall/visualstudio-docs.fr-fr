@@ -1,5 +1,7 @@
 ---
 title: Propriétés MSBuild | Microsoft Docs
+description: Découvrez comment les paires de propriétés de valeur de nom MSBuild peuvent passer des valeurs à des tâches, évaluer des conditions et stocker des valeurs.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633289"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046128"
 ---
 # <a name="msbuild-properties"></a>MSBuild (propriétés)
 
@@ -64,7 +66,7 @@ Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour co
 
 ## <a name="registry-properties"></a>Propriétés de Registre
 
- Vous pouvez lire les valeurs du Registre système à l’aide de la syntaxe suivante, où `Hive` est la ruche du Registre (par exemple, **HKEY_LOCAL_MACHINE**), `MyKey` est le nom de clé, `MySubKey` est le nom de la sous-clé et `Value` est la valeur de la sous-clé.
+ Vous pouvez lire les valeurs du Registre système à l’aide de la syntaxe suivante, où `Hive` est la ruche du Registre (par exemple, **HKEY_LOCAL_MACHINE** ), `MyKey` est le nom de clé, `MySubKey` est le nom de la sous-clé et `Value` est la valeur de la sous-clé.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Propriétés globales
 
- MSBuild vous permet de définir des propriétés sur la ligne de commande à l’aide du commutateur **-Property** (ou **-p**). Les valeurs de ces propriétés globales remplacent les valeurs de propriétés qui sont définies dans le fichier projet. Cela inclut les propriétés d’environnement, mais pas les propriétés réservées, qui ne peuvent pas être modifiées.
+ MSBuild vous permet de définir des propriétés sur la ligne de commande à l’aide du commutateur **-Property** (ou **-p** ). Les valeurs de ces propriétés globales remplacent les valeurs de propriétés qui sont définies dans le fichier projet. Cela inclut les propriétés d’environnement, mais pas les propriétés réservées, qui ne peuvent pas être modifiées.
 
  L’exemple suivant définit la propriété globale `Configuration` sur `DEBUG`.
 

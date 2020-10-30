@@ -1,5 +1,7 @@
 ---
 title: Élément Task de UsingTask (MSBuild) | Microsoft Docs
+description: En savoir plus sur l’élément Task de MSBuild UsingTask, qui contient les données passées à un TaskFactory de UsingTask.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263186"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047894"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>Élément Task de UsingTask (MSBuild)
 
@@ -30,7 +32,7 @@ Contient les données transmises à un élément `UsingTask` `TaskFactory`. Pour
  \<Project> \<UsingTask>
  \<Task>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Task Evaluate="true/false" />

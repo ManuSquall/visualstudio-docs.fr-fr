@@ -1,5 +1,7 @@
 ---
 title: ZipDirectory, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche ZipDirectory pour créer une archive. zip à partir du contenu d’un répertoire.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183065"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046615"
 ---
 # <a name="zipdirectory-task"></a>Tâche ZipDirectory
 
@@ -44,9 +46,9 @@ Crée une archive *.zip* à partir du contenu d’un répertoire.
 |---------------|-----------------|
 |`DestinationFile`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> obligatoire<br /><br /> Chemin d’accès complet du fichier *.zip* à créer.|
 |`Overwrite`|Paramètre `Boolean` facultatif.<br /><br /> Si `true` la condition est, le fichier de destination sera remplacé s’il existe. La valeur par défaut est `false`.|
-|`SourceDirectory`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le répertoire à partir duquel sera créée une archive *.zip*.|
+|`SourceDirectory`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le répertoire à partir duquel sera créée une archive *.zip* .|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

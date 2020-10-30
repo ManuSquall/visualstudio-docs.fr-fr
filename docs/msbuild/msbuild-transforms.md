@@ -1,5 +1,7 @@
 ---
 title: Transformations MSBuild | Microsoft Docs
+description: Découvrez comment MSBuild utilise les transformations, c’est-à-dire les conversions un-à-un d’une liste d’éléments en une autre, pour générer des projets plus efficacement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633107"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049002"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 
@@ -26,13 +28,13 @@ Une transformation est une conversion de type un-à-un d’une liste d’éléme
 
 Les transformations ne sont pas arbitraires, mais sont limitées par une syntaxe spéciale dans laquelle tous les modificateurs de transformation doivent être au format%( \<ItemMetaDataName> ). Toutes les métadonnées d’élément peuvent être utilisées comme modificateurs de transformation, y compris les métadonnées d’élément connues affectées à chaque élément lors de sa création. Pour obtenir la liste des métadonnées d’éléments connus, consultez [métadonnées d’éléments connus](../msbuild/msbuild-well-known-item-metadata.md).
 
-Dans l’exemple suivant, une liste de fichiers *.resx* est transformée en liste de fichiers *.resources*. Le modificateur de transformation %(filename) spécifie que chaque fichier *.resources* a le même nom de fichier que le fichier *.resx* correspondant.
+Dans l’exemple suivant, une liste de fichiers *.resx* est transformée en liste de fichiers *.resources* . Le modificateur de transformation %(filename) spécifie que chaque fichier *.resources* a le même nom de fichier que le fichier *.resx* correspondant.
 
 ```xml
 @(RESXFile->'%(filename).resources')
 ```
 
-Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form1.resx*, *Form2.resx* et *Form3.resx*, les sorties de la liste transformée sont *Form1.resources*, *Form2.resources* et *Form3.resources*.
+Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form1.resx* , *Form2.resx* et *Form3.resx* , les sorties de la liste transformée sont *Form1.resources* , *Form2.resources* et *Form3.resources* .
 
 > [!NOTE]
 > Vous pouvez spécifier un séparateur personnalisé pour une liste d’éléments transformée de la même façon que vous spécifiez un séparateur pour une liste d’éléments standard. Par exemple, pour séparer les éléments d’une liste transformée à l’aide de la virgule (,) au lieu du point-virgule (;) par défaut, utilisez le code XML suivant : `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -45,7 +47,7 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- Par exemple, si les éléments contenus dans la liste d’éléments `RESXFile` sont *Project1\Form1.resx*, *Project1\Form2.resx* et *Project1\Form3.text*, les sorties de la liste transformée sont *Toolset\Form1.resx*, *Toolset\Form2.resx* et *Toolset\Form3.text*.
+ Par exemple, si les éléments contenus dans la liste d’éléments `RESXFile` sont *Project1\Form1.resx* , *Project1\Form2.resx* et *Project1\Form3.text* , les sorties de la liste transformée sont *Toolset\Form1.resx* , *Toolset\Form2.resx* et *Toolset\Form3.text* .
 
 ## <a name="dependency-analysis"></a>Analyse des dépendances
 
@@ -69,7 +71,7 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 
 ### <a name="description"></a>Description
 
- L’exemple suivant montre un fichier projet MSBuild qui utilise des transformations. Cet exemple suppose qu’il n’existe qu’un seul fichier *. xsd* dans le répertoire *c:\sub0\sub1\sub2\sub3* et que le répertoire de travail est *c:\sub0*.
+ L’exemple suivant montre un fichier projet MSBuild qui utilise des transformations. Cet exemple suppose qu’il n’existe qu’un seul fichier *. xsd* dans le répertoire *c:\sub0\sub1\sub2\sub3* et que le répertoire de travail est *c:\sub0* .
 
 ### <a name="code"></a>Code
 
@@ -110,5 +112,5 @@ extension: .xsd
 ## <a name="see-also"></a>Voir aussi
 
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Comment : générer de façon incrémentielle](../msbuild/how-to-build-incrementally.md)

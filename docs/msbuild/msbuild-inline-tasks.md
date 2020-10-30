@@ -1,5 +1,7 @@
 ---
 title: Tâches inline MSBuild | Microsoft Docs
+description: Découvrez comment créer des tâches Inline MSBuild en compilant une classe qui implémente l’interface Microsoft. Build. Framework. ITask.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81638046"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046336"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
 
@@ -117,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
- Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé *HelloWorld.targets*, puis l’appeler à partir d’un projet en procédant comme suit.
+ Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé *HelloWorld.targets* , puis l’appeler à partir d’un projet en procédant comme suit.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

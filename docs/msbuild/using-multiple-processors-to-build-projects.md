@@ -1,5 +1,7 @@
 ---
 title: Utilisation de plusieurs processeurs pour générer des projets | Microsoft Docs
+description: Découvrez comment MSBuild tire parti des systèmes dotés de plusieurs processeurs ou cœurs en créant un processus de génération distinct pour chaque processeur disponible.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631300"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047581"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Utiliser plusieurs processeurs pour générer des projets
 
@@ -36,7 +38,7 @@ MSBuild permet d’exploiter des systèmes dotés de plusieurs processeurs ou de
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>Fichiers de projet C++ (. vcxproj) et de solution (. sln)
 
- Les fichiers de projet C++ (*. vcxproj*) et de solution (*. sln*) peuvent être passés à la [tâche MSBuild](../msbuild/msbuild-task.md). Pour les projets C++, VCWrapperProject est appelé, puis le projet MSBuild interne est créé. Pour les solutions C++, un SolutionWrapperProject est créé, puis le projet MSBuild interne est créé. Dans les deux cas, le projet résultant est traité de la même façon que n’importe quel autre projet MSBuild.
+ Les fichiers de projet C++ ( *. vcxproj* ) et de solution ( *. sln* ) peuvent être passés à la [tâche MSBuild](../msbuild/msbuild-task.md). Pour les projets C++, VCWrapperProject est appelé, puis le projet MSBuild interne est créé. Pour les solutions C++, un SolutionWrapperProject est créé, puis le projet MSBuild interne est créé. Dans les deux cas, le projet résultant est traité de la même façon que n’importe quel autre projet MSBuild.
 
 ## <a name="multi-process-execution"></a>Exécution de plusieurs processus
 

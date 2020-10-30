@@ -1,5 +1,7 @@
 ---
 title: Élément Output (MSBuild) | Microsoft Docs
+description: Consultez attributs, éléments et un exemple de l’élément de sortie MSBuild, qui stocke les valeurs de sortie des tâches dans les éléments et les propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633029"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048922"
 ---
 # <a name="output-element-msbuild"></a>Élément Output (MSBuild)
 
@@ -33,7 +35,7 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
  \<Task>
  \<Output>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Output TaskParameter="Parameter"

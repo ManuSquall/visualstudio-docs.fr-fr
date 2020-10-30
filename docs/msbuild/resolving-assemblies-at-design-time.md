@@ -1,5 +1,7 @@
 ---
 title: Résolution d’assemblys au moment du design | Microsoft Docs
+description: Découvrez comment MSBuild résout les références aux assemblys au moment du design à l’aide d’assemblys de référence dans le Pack de ciblage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632561"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048493"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Résoudre des assemblys au moment du design
 
-Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet **.NET** de la boîte de dialogue **Ajouter une référence**, la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais pas nécessairement du code. L’onglet **.NET** liste les assemblys de référence qui correspondent aux assemblys runtime de .NET Framework. Il présente aussi ceux qui correspondent aux assemblys runtime des dossiers AssemblyFoldersEx inscrits et utilisés par des tiers.
+Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet **.NET** de la boîte de dialogue **Ajouter une référence** , la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais pas nécessairement du code. L’onglet **.NET** liste les assemblys de référence qui correspondent aux assemblys runtime de .NET Framework. Il présente aussi ceux qui correspondent aux assemblys runtime des dossiers AssemblyFoldersEx inscrits et utilisés par des tiers.
 
 ## <a name="multi-targeting"></a>Multi-ciblage
 

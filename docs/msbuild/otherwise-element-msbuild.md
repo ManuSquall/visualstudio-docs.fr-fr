@@ -1,5 +1,7 @@
 ---
 title: Otherwise, élément (MSBuild) | Microsoft Docs
+description: Découvrez comment MSBuild utilise l’élément otherwise pour spécifier le bloc de code à exécuter si et seulement si les conditions de All sont false.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05cc8820f073ea8c620e4331c180ee1ddbfc2b65
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633042"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048935"
 ---
 # <a name="otherwise-element-msbuild"></a>Élément Otherwise (MSBuild)
 
@@ -36,7 +38,7 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
  \<Choose>
 ...
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Otherwise>
@@ -68,7 +70,7 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 |-------------|-----------------|
 |[Choisissez](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  Un élément `Choose` ne peut comprendre qu’un seul élément `Otherwise` qui doit figurer en dernière position.
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588588"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045597"
 ---
 # <a name="encodings-and-line-endings"></a>Encodages et fins de ligne
 
@@ -44,14 +44,19 @@ Quand vous ouvrez un fichier contenant des caractères de saut de ligne différe
 
 ## <a name="advanced-save-options"></a>Options d'enregistrement avancées
 
-Vous pouvez **utiliser la**  >  boîte de dialogue**options d’enregistrement avancées** pour déterminer le type de caractère de saut de ligne souhaité. Vous pouvez également modifier l’encodage d’un fichier avec les mêmes paramètres.
+Vous pouvez **utiliser la**  >  boîte de dialogue **options d’enregistrement avancées** pour déterminer le type de caractère de saut de ligne souhaité. Vous pouvez également modifier l’encodage d’un fichier avec les mêmes paramètres.
 
 ![Options d'enregistrement avancées (boîte de dialogue)](media/line_endings.png)
 
 > [!NOTE]
-> Si vous ne voyez pas la commande **Options d’enregistrement avancées** dans le menu **Fichier**, vous pouvez l’ajouter. Choisissez **Outils**, **personnaliser**, puis l’onglet **commandes** . Dans la liste déroulante **barre de menus** , choisissez **fichier**, puis cliquez sur le bouton **Ajouter une commande** . Dans la boîte de dialogue **Ajouter une commande**, sous **Catégories**, choisissez **Fichier** et, dans la liste **Commandes**, choisissez **Options d’enregistrement avancées**. Choisissez **OK**, puis choisissez le bouton **Descendre** pour déplacer la commande à l’emplacement souhaité dans le menu. Choisissez **Fermer** pour fermer la boîte de dialogue **Personnaliser**. Pour plus d’informations, consultez [Personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Si vous ne voyez pas la commande **Options d’enregistrement avancées** dans le menu **Fichier** , vous pouvez l’ajouter. 
+> 1. Choisissez **Outils** , **personnaliser** , 
+> 1. Choisissez l’onglet **commandes** , sélectionnez la case d’option **barre de menus** et dans la liste déroulante correspondante, choisissez **fichier** . Choisissez le bouton **Ajouter une commande** . 
+> 1. Dans la boîte de dialogue **Ajouter une commande** , sous **Catégories** , choisissez **Fichier** et, dans la liste **Commandes** , choisissez **Options d’enregistrement avancées** . Cliquez sur le bouton **OK** .
+> 1. Utilisez les boutons **monter** et **descendre** pour déplacer la commande vers n’importe quel emplacement dans le menu. Choisissez **Fermer** pour fermer la boîte de dialogue **Personnaliser** . 
+> Pour plus d’informations, consultez [Personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Vous pouvez également accéder à la boîte de dialogue **options d’enregistrement avancées** en choisissant **fichier**  >  **Enregistrer \<file\> sous**. Dans la boîte de dialogue **Enregistrer le fichier sous**, choisissez la flèche de liste déroulante à côté du bouton **Enregistrer**, puis choisissez **Enregistrer avec encodage**.
+> Vous pouvez également accéder à la boîte de dialogue **options d’enregistrement avancées** en choisissant **fichier**  >  **Enregistrer \<file\> sous** . Dans la boîte de dialogue **enregistrer le fichier sous** , choisissez le triangle déroulant en regard du bouton **Enregistrer** , puis choisissez **enregistrer avec encodage** .
 
 ## <a name="see-also"></a>Voir aussi
 

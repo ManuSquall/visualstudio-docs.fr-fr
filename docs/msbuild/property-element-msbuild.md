@@ -1,5 +1,7 @@
 ---
 title: Élément Property (MSBuild) | Microsoft Docs
+description: En savoir plus sur l’élément de propriété MSBuild, qui contient un nom et une valeur de propriété définis par l’utilisateur qui doivent être spécifiés en tant qu’enfant d’un élément PropertyGroup.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632951"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048833"
 ---
 # <a name="property-element-msbuild"></a>Élément Property (MSBuild)
 
@@ -29,7 +31,7 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
  \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Property Condition="'String A' == 'String B'">
@@ -63,9 +65,9 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
  Ce texte spécifie la valeur de propriété et peut contenir du code XML.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
- Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` est résolu en *build\classes*, si la `builddir` propriété avait la valeur `build` . Pour plus d’informations sur les propriétés, consultez [propriétés MSBuild](../msbuild/msbuild-properties.md).
+ Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` est résolu en *build\classes* , si la `builddir` propriété avait la valeur `build` . Pour plus d’informations sur les propriétés, consultez [propriétés MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Exemple
 

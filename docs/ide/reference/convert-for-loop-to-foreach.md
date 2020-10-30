@@ -1,5 +1,6 @@
 ---
-title: Refactoriser du code pour convertir une boucle for en instruction foreach
+title: Refactoriser pour convertir une boucle for en instruction foreach
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47aa5a328f158d890908bf1ddcb69a838ad1ed66
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 68ed736a1e3a07c7cd3f67ea9c936821cf4ac78c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659379"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045913"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorisation pour effectuer une conversion entre une boucle for et une instruction foreach
 
@@ -50,7 +51,7 @@ Les raisons pour lesquelles vous voulez convertir une boucle [for](/dotnet/cshar
 
    ![Menu Convertir en 'foreach'](media/convert-to-foreach.png)
 
-1. Sélectionnez **Convertir en 'foreach'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
+1. Sélectionnez **Convertir en 'foreach'** . Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer** .
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Convertir une instruction foreach en boucle for
 
@@ -78,12 +79,12 @@ Les raisons pour lesquelles vous voulez convertir une instruction [foreach](/dot
 
    ![Menu Convertir en 'for'](media/convert-to-for.png)
 
-1. Sélectionnez **Convertir en 'for'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
+1. Sélectionnez **Convertir en 'for'** . Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer** .
 
-1. Étant donné que la refactorisation introduit une nouvelle variable du nombre d’itérations, la zone **Renommer** s’affiche dans l’angle supérieur droit de l’éditeur. Si vous souhaitez choisir un autre nom pour la variable, tapez-le et appuyez sur **Entrée** ou sélectionnez **Appliquer** dans la zone **Renommer**. Si vous ne souhaitez pas choisir un nouveau nom, appuyez sur **Échap** ou sélectionnez **Appliquer** pour faire disparaître la zone **Renommer**.
+1. Étant donné que la refactorisation introduit une nouvelle variable du nombre d’itérations, la zone **Renommer** s’affiche dans l’angle supérieur droit de l’éditeur. Si vous souhaitez choisir un autre nom pour la variable, tapez-le et appuyez sur **Entrée** ou sélectionnez **Appliquer** dans la zone **Renommer** . Si vous ne souhaitez pas choisir un nouveau nom, appuyez sur **Échap** ou sélectionnez **Appliquer** pour faire disparaître la zone **Renommer** .
 
 > [!NOTE]
-> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de l’ordinateur sous **Outils**  >  **options**  >  **éditeur de texte**  >  **C#**  >  **style**  >  **général**  >  ** \' var**, ou au niveau de la solution dans un fichier [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
+> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de l’ordinateur sous **Outils**  >  **options**  >  **éditeur de texte**  >  **C#**  >  **style**  >  **général**  >  **\' var** , ou au niveau de la solution dans un fichier [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Si vous modifiez un paramètre de style de code dans **Options** , rouvrez le fichier de code pour appliquer les modifications.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,7 @@
 ---
 title: Fonctions de propriétés | Microsoft Docs
+description: Découvrez comment utiliser les fonctions de propriété, qui sont des appels à .NET Framework méthodes qui apparaissent dans les définitions de propriété MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183650"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048816"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
@@ -248,9 +250,9 @@ La propriété de fonction MSBuild `GetRegistryValue` retourne la valeur d'une c
 Les exemples suivants montrent comment cette fonction est utilisée :
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>Fonction MSBuild GetRegistryValueFromView
@@ -263,7 +265,7 @@ Le syntaxe de cette fonction de propriété est :
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Le système d’exploitation Windows 64 bits gère une clé de Registre **HKEY_LOCAL_MACHINE \software\wow6432node** qui présente une vue de Registre **HKEY_LOCAL_MACHINE \SOFTWARE** pour les applications 32 bits.
+Le système d’exploitation Windows 64 bits gère une clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** qui présente une **HKEY_LOCAL_MACHINE\SOFTWARE** vue de registre pour les applications 32 bits.
 
 Par défaut, une application 32 bits s'exécutant sur WOW64 accède à la vue de Registre 32 bits et une application 64 bits accède à la vue de Registre 64 bits.
 

@@ -1,5 +1,6 @@
 ---
 title: Créer un fichier projet MSBuild à partir de zéro
+description: Découvrez comment créer un fichier projet MSBuild en partant de zéro pour comprendre comment le code XML est organisé et comment vous pouvez le modifier pour contrôler une build.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136691"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046062"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : créer un fichier projet MSBuild en partant de zéro
 
@@ -50,15 +51,15 @@ Pour effectuer la procédure pas à pas, vous devez avoir installé Visual Studi
 
 ## <a name="extend-the-path"></a>Étendre le chemin d’accès
 
-Avant de pouvoir utiliser MSBuild, vous devez étendre la variable d’environnement PATH pour inclure tous les outils requis. Vous pouvez utiliser le **invite de commandes développeur pour Visual Studio**. Recherchez-le sur Windows 10 dans la zone de recherche de la barre des tâches Windows. Pour configurer l’environnement dans une invite de commandes ordinaire ou dans un environnement de script, exécutez *VSDevCmd.bat* dans le sous-dossier *Common7/Tools* d’une installation Visual Studio.
+Avant de pouvoir utiliser MSBuild, vous devez étendre la variable d’environnement PATH pour inclure tous les outils requis. Vous pouvez utiliser le **invite de commandes développeur pour Visual Studio** . Recherchez-le sur Windows 10 dans la zone de recherche de la barre des tâches Windows. Pour configurer l’environnement dans une invite de commandes ordinaire ou dans un environnement de script, exécutez *VSDevCmd.bat* dans le sous-dossier *Common7/Tools* d’une installation Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Créer une application minimale
 
  Cette section montre comment créer un fichier source d’application C# minimal à l’aide d’un éditeur de texte.
 
-1. À l’invite de commandes, accédez au dossier dans lequel vous souhaitez créer l’application, par exemple *\Mes documents \\ * ou *\Bureau \\ *.
+1. À l’invite de commandes, accédez au dossier dans lequel vous souhaitez créer l’application, par exemple *\Mes documents \\* ou *\Bureau \\* .
 
-2. Tapez **MD HelloWorld** pour créer un sous-dossier *nommé \\ \HelloWorld*.
+2. Tapez **MD HelloWorld** pour créer un sous-dossier *nommé \\ \HelloWorld* .
 
 3. Entrez **cd HelloWorld** pour accéder au nouveau dossier.
 
@@ -80,7 +81,7 @@ Avant de pouvoir utiliser MSBuild, vous devez étendre la variable d’environne
     }
     ```
 
-5. Enregistrez ce fichier de code source et nommez-le *HelloWorld.cs*.
+5. Enregistrez ce fichier de code source et nommez-le *HelloWorld.cs* .
 
 6. Générez l’application en entrant **csc helloworld.cs** à l’invite de commandes.
 
@@ -136,22 +137,22 @@ Avant de pouvoir utiliser MSBuild, vous devez étendre la variable d’environne
     <Csc Sources="@(Compile)"/>
     ```
 
-5. Enregistrez ce fichier projet et nommez-le *HelloWorld. csproj*.
+5. Enregistrez ce fichier projet et nommez-le *HelloWorld. csproj* .
 
 Votre fichier projet minimal doit ressembler au code suivant :
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
-    <Csc Sources="@(Compile)"/>  
+    <Csc Sources="@(Compile)"/>  
   </Target>
 </Project>
 ```
 
-Les tâches de la cible Build sont exécutées séquentiellement. Dans ce cas, la tâche du compilateur Visual C# `Csc` est la seule tâche. Elle attend une liste de fichiers source à compiler, qui lui est donnée par la valeur de l'élément `Compile`. L' `Compile` élément ne fait référence qu’à un seul fichier source, *HelloWorld.cs*.
+Les tâches de la cible Build sont exécutées séquentiellement. Dans ce cas, la tâche du compilateur Visual C# `Csc` est la seule tâche. Elle attend une liste de fichiers source à compiler, qui lui est donnée par la valeur de l'élément `Compile`. L' `Compile` élément ne fait référence qu’à un seul fichier source, *HelloWorld.cs* .
 
 > [!NOTE]
 > Dans l’élément Item, vous pouvez utiliser le caractère générique astérisque ( \* ) pour référencer tous les fichiers ayant l’extension de nom de fichier *. cs* , comme suit :
@@ -164,11 +165,11 @@ Les tâches de la cible Build sont exécutées séquentiellement. Dans ce cas, l
 
  Maintenant, pour créer l'application, utilisez le fichier projet que vous venez de créer.
 
-1. À l’invite de commandes, tapez **MSBuild HelloWorld. csproj-t :Build**.
+1. À l’invite de commandes, tapez **MSBuild HelloWorld. csproj-t :Build** .
 
      Ceci crée la cible Build du fichier projet Helloworld en appelant le compilateur Visual C# pour créer l'application Helloworld.
 
-2. Testez l’application en entrant **helloworld**.
+2. Testez l’application en entrant **helloworld** .
 
      Le message **Hello, world!** doit s’afficher.
 
@@ -225,7 +226,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -251,13 +252,13 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 
  Vous pouvez maintenant générer l'application en utilisant le fichier projet où vous avez utilisé des propriétés de build pour spécifier le dossier de sortie et le nom de l'application.
 
-1. À l’invite de commandes, tapez **MSBuild HelloWorld. csproj-t :Build**.
+1. À l’invite de commandes, tapez **MSBuild HelloWorld. csproj-t :Build** .
 
-     Cela crée le *dossier \\ \Bin* , puis appelle le compilateur Visual C# pour créer l’application *MSBuildSample* et la place dans le dossier *\Bin \\ * .
+     Cela crée le *dossier \\ \Bin* , puis appelle le compilateur Visual C# pour créer l’application *MSBuildSample* et la place dans le dossier *\Bin \\* .
 
-2. Pour vérifier que le *dossier \\ \Bin* a été créé et qu’il contient l’application *MSBuildSample* , tapez **dir Bin**.
+2. Pour vérifier que le *dossier \\ \Bin* a été créé et qu’il contient l’application *MSBuildSample* , tapez **dir Bin** .
 
-3. Testez l’application en entrant **Bin\MSBuildSample**.
+3. Testez l’application en entrant **Bin\MSBuildSample** .
 
      Le message **Hello, world!** doit s’afficher.
 
@@ -301,7 +302,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -328,31 +329,31 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 
 ### <a name="to-test-the-build-targets"></a>Pour tester les cibles de génération
 
-1. À l’invite de commandes, tapez **MSBuild HelloWorld. csproj-p :AssemblyName = Greetings**.
+1. À l’invite de commandes, tapez **MSBuild HelloWorld. csproj-p :AssemblyName = Greetings** .
 
-     Étant donné que vous n’avez pas utilisé le commutateur **-t** pour définir explicitement la cible, MSBuild exécute la cible de génération par défaut. Le commutateur **-p** remplace la `AssemblyName` propriété et lui donne la nouvelle valeur, `Greetings` . Cela entraîne la création d’une nouvelle application, *Greetings.exe*, dans le *dossier \\ \Bin* .
+     Étant donné que vous n’avez pas utilisé le commutateur **-t** pour définir explicitement la cible, MSBuild exécute la cible de génération par défaut. Le commutateur **-p** remplace la `AssemblyName` propriété et lui donne la nouvelle valeur, `Greetings` . Cela entraîne la création d’une nouvelle application, *Greetings.exe* , dans le *dossier \\ \Bin* .
 
-2. Pour vérifier que le *dossier \\ \Bin* contient à la fois l’application *MSBuildSample* et la nouvelle application *Greetings* , tapez **dir Bin**.
+2. Pour vérifier que le *dossier \\ \Bin* contient à la fois l’application *MSBuildSample* et la nouvelle application *Greetings* , tapez **dir Bin** .
 
-3. Testez l’application Greetings en entrant **Bin\Greetings**.
+3. Testez l’application Greetings en entrant **Bin\Greetings** .
 
      Le message **Hello, world!** doit s’afficher.
 
-4. Supprimez l’application MSBuildSample en tapant **MSBuild HelloWorld. csproj-t :Clean**.
+4. Supprimez l’application MSBuildSample en tapant **MSBuild HelloWorld. csproj-t :Clean** .
 
      Cela exécute la tâche Clean pour supprimer l’application qui a la valeur de la propriété `AssemblyName` par défaut, `MSBuildSample`.
 
-5. Pour supprimer l’application Greetings, tapez **MSBuild HelloWorld. csproj-t :Clean-p :AssemblyName = Greetings**.
+5. Pour supprimer l’application Greetings, tapez **MSBuild HelloWorld. csproj-t :Clean-p :AssemblyName = Greetings** .
 
      Cela exécute la tâche Clean pour supprimer l’application qui a la valeur de la propriété **AssemblyName** spécifiée, `Greetings`.
 
-6. Pour vérifier que le *dossier \\ \Bin* est maintenant vide, tapez **dir Bin**.
+6. Pour vérifier que le *dossier \\ \Bin* est maintenant vide, tapez **dir Bin** .
 
-7. Tapez **msbuild**.
+7. Tapez **msbuild** .
 
      Même si aucun fichier projet n’est spécifié, MSBuild génère le fichier *HelloWorld. csproj* , car il n’y a qu’un seul fichier projet dans le dossier actif. Cela entraîne la création de l’application *MSBuildSample* dans le *dossier \\ \Bin* .
 
-     Pour vérifier que le *dossier \\ \Bin* contient l’application *MSBuildSample* , tapez **dir Bin**.
+     Pour vérifier que le *dossier \\ \Bin* contient l’application *MSBuildSample* , tapez **dir Bin** .
 
 ## <a name="build-incrementally"></a>Générer de façon incrémentielle
 

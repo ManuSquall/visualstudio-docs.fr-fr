@@ -1,5 +1,7 @@
 ---
 title: Caractères d’échappement spéciaux | Microsoft Docs
+description: En savoir plus sur les caractères spéciaux qui doivent être échappés uniquement s’ils ont une signification particulière dans le contexte dans lequel ils sont utilisés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184040"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048266"
 ---
 # <a name="special-characters-to-escape"></a>Caractères d’échappement spéciaux
 
@@ -48,4 +50,4 @@ Les caractères spéciaux doivent être échappés uniquement s'ils ont une sign
 ## <a name="see-also"></a>Voir aussi
 
 - [Comment : échapper des caractères spéciaux dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: UpdateManifest, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche UpdateManifest pour mettre à jour les propriétés sélectionnées dans un manifeste et les abandonner.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fab3844b21e12edceb83da310e9069199578ef6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631340"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046855"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest (tâche)
 
@@ -38,7 +40,7 @@ Met à jour les propriétés sélectionnées dans un manifeste et signe à nouve
 |`InputManifest`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le manifeste à mettre à jour.|
 |`OutputManifest`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le manifeste qui contient les propriétés mises à jour.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres répertoriés dans le tableau, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base de tâche](../msbuild/task-base-class.md).
 

@@ -1,5 +1,7 @@
 ---
 title: ResumeTracking | Microsoft Docs
+description: En savoir plus sur la syntaxe, les exigences et la valeur de retour pour MSBuild ResumeTracking, qui reprend le suivi dans le contexte actuel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af7c90342638fb0c154e7de21fa111d560905d0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632496"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048421"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 
@@ -32,7 +34,7 @@ Reprend le suivi dans le contexte actuel.
 HRESULT WINAPI ResumeTracking();
 ```
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur de retour
 
  **HRESULT** avec le bit **Succeeded** défini si le suivi a été repris. **E_FAIL** est retourné si le suivi ne peut pas être repris car le contexte n’était pas disponible.
 

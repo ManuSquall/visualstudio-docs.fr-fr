@@ -1,5 +1,7 @@
 ---
 title: VCMessage, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche VCMessage, pour consigner les messages d’avertissement et d’erreur pendant une génération pour les projets C++.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -19,24 +21,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2247240ae0992c8275520ec5d7bf94d98ae1053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c01c86a5374c14ac27de1535020c5deed29a89f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631209"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046752"
 ---
 # <a name="vcmessage-task"></a>VCMessage (tâche)
 
 Journalise les messages d’avertissement et d’erreur lors de la génération.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  Cette tâche aide à implémenter MSBuild pour les projets C++ et n’est pas destinée à être appelée par l’utilisateur. Pour plus d'informations, consultez <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-dessous décrit les paramètres de la tâche **VCMessage**.
+ Le tableau ci-dessous décrit les paramètres de la tâche **VCMessage** .
 
 |Paramètre|Description|
 |---------------|-----------------|

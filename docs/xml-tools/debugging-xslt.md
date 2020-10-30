@@ -1,5 +1,7 @@
 ---
 title: Méthodes de débogage du code XSLT
+description: Découvrez comment déboguer du code XSLT dans Visual Studio à l’aide du débogueur XSLT pour parcourir le code, définir des points d’arrêt et afficher les États d’exécution XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815615"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047755"
 ---
 # <a name="debugging-xslt"></a>Débogage XSLT
 
@@ -33,7 +35,7 @@ Vous pouvez démarrer le débogueur quand une feuille de style ou un fichier XML
 
 1. Ouvrez la feuille de style ou le fichier XML dans Visual Studio.
 
-1. Sélectionnez **Démarrer le débogage XSLT** dans le menu **XML** ou appuyez sur **ALT** + **F5**.
+1. Sélectionnez **Démarrer le débogage XSLT** dans le menu **XML** ou appuyez sur **ALT** + **F5** .
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Déboguer à partir d’une application qui utilise XSLT
 
@@ -92,6 +94,6 @@ Le [profileur XSLT](../xml-tools/xslt-profiler.md) est un outil qui permet aux d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Procédure pas à pas : Déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [Premier aperçu du débogueur Visual Studio](../debugger/debugger-feature-tour.md)
 - [Concepts de base du débogage : points d’arrêt](../debugger/using-breakpoints.md)

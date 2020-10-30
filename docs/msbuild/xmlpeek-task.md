@@ -1,5 +1,7 @@
 ---
 title: XmlPeek, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche XmlPeek pour retourner les valeurs spécifiées par la requête XPath à partir d’un fichier XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d9a3c03e1301bddf4cc26c76dac9e0381ec726b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286119"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047252"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek (tâche)
 
@@ -39,7 +41,7 @@ Retourne des valeurs telles que spécifiées par la requête XPath depuis un fic
 |`XmlContent`|Paramètre `String` facultatif.<br /><br /> Spécifie l’entrée XML sous forme de chaîne.|
 |`XmlInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie l’entrée XML sous forme de chemin de fichier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Utilisation efficace de la mémoire lors de la génération de projets volumineux | Microsoft Docs
+description: Découvrez comment MSBuild gère automatiquement la mémoire, comme le déchargement de versions antérieures et la récupération de caches, lors de la création de projets volumineux.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40f2713d93e4f1ad9755efaea2f8fba5f0bda94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61bfa09bf91b49c163e47bbf71c0d192b6950160
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631313"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047602"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>Utilisation efficace de la mémoire lors de la génération de projets volumineux
 

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739978"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046185"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Générer et exécuter l’exemple d’application TODO
 
@@ -26,7 +26,9 @@ Pour le reste de ce didacticiel, vous utiliserez un gestionnaire de liste de tâ
 
 ## <a name="get-the-app"></a>Obtenir l’application
 
-Avant de pouvoir exécuter l’application, vous devez récupérer le code source de l’application sur votre ordinateur. Pour les projets réels, vous allez généralement cloner le référentiel. Toutefois, pour ce didacticiel, vous avez créé un fichier ZIP contenant l’application.
+Avant de pouvoir exécuter l’application, vous devez récupérer le code source de l’application sur votre ordinateur. Pour les projets réels, vous allez généralement cloner le référentiel. Toutefois, pour ce didacticiel, nous avons créé un fichier ZIP contenant l’application.
+
+1. Assurez-vous que Docker pour Windows ou l’édition Community de l’Ancrable est installé sur l’ordinateur local. Consultez [docker pour Windows documentation sur l’installation](https://docs.docker.com/docker-for-windows/install/). Le processus d’installation rend le fichier ZIP contenant l’exemple disponible à l’adresse localhost.
 
 1. [Téléchargez le fichier zip](http://localhost/assets/app.zip). Ouvrez le fichier ZIP et veillez à extraire le contenu.
 

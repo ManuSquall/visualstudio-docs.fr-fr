@@ -1,5 +1,7 @@
 ---
 title: Élément PropertyGroup (MSBuild) | Microsoft Docs
+description: En savoir plus sur l’élément de MSBuild PropertyGroup, qui contient un jeu d’éléments de propriété définis par l’utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632925"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048802"
 ---
 # <a name="propertygroup-element-msbuild"></a>Élément PropertyGroup (MSBuild)
 
@@ -31,7 +33,7 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 
  \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <PropertyGroup Condition="'String A' == 'String B'">

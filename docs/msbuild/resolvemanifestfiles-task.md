@@ -1,5 +1,7 @@
 ---
 title: ResolveManifestFiles, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche ResolveManifestFiles pour résoudre les éléments du processus de génération en fichiers pour la génération de manifeste.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2628f06ac4eafc7d57123460771793005597b039
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca5b74b32faba4937a821503af3665d1ec1d72c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632691"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048562"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles (tâche)
 
@@ -48,7 +50,7 @@ Résout les éléments suivants dans le processus de génération en fichiers po
 |`TargetCulture`|Paramètre `String` facultatif.<br /><br /> Spécifie la culture cible pour les assemblys satellites.|
 |`TargetFrameworkVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la version du .NET Framework cible.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

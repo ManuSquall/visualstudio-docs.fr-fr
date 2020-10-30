@@ -1,5 +1,7 @@
 ---
 title: Bonnes pratiques pour MSBuild | Microsoft Docs
+description: Découvrez les meilleures pratiques pour l’écriture de scripts MSBuild, tels que l’utilisation d’attributs de condition et l’utilisation de caractères génériques.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2742324f737a4e70221e3cbe4c78cff56fa7e7ca
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263147"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047654"
 ---
 # <a name="msbuild-best-practices"></a>Bonnes pratiques pour MSBuild
 

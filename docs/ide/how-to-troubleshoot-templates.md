@@ -1,5 +1,6 @@
 ---
-title: Résoudre les problèmes liés au chargement des modèles de projet et d’élément
+title: Résoudre les problèmes des modèles de projet et des modèles d’élément
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591383"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045705"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Guide pratique pour résoudre les problèmes de modèles
 
@@ -22,7 +23,7 @@ Si le chargement d’un modèle dans l’environnement de développement échoue
 
 ::: moniker range="vs-2017"
 
-Si le fichier *.vstemplate* d’un modèle n’adhère pas au schéma de modèle Visual Studio, il se peut que le modèle n’apparaisse pas dans la boîte de dialogue **Nouveau projet**.
+Si le fichier *.vstemplate* d’un modèle n’adhère pas au schéma de modèle Visual Studio, il se peut que le modèle n’apparaisse pas dans la boîte de dialogue **Nouveau projet** .
 
 ::: moniker-end
 
@@ -38,18 +39,18 @@ Si le fichier *vstemplate* d’un modèle n’est pas conforme au schéma de mod
 
 1. Extrayez le fichier *. zip* .
 
-1. Dans le menu **Fichier** de Visual Studio, choisissez **Ouvrir** > **Fichier**.
+1. Dans le menu **Fichier** de Visual Studio, choisissez **Ouvrir** > **Fichier** .
 
-1. Sélectionnez le fichier *vstemplate* du modèle, puis choisissez **Ouvrir**.
+1. Sélectionnez le fichier *vstemplate* du modèle, puis choisissez **Ouvrir** .
 
-1. Vérifiez que le code XML du fichier *vstemplate* adhère au schéma de modèle. Pour plus d’informations sur le schéma *vstemplate*, consultez [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md).
+1. Vérifiez que le code XML du fichier *vstemplate* adhère au schéma de modèle. Pour plus d’informations sur le schéma *vstemplate* , consultez [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
     > Pour obtenir la prise en charge d’IntelliSense lors de la création du fichier *VSTemplate* , ajoutez un `xmlns` attribut à l' `VSTemplate` élément et affectez-lui la valeur `http://schemas.microsoft.com/developer/vstemplate/2005` .
 
 1. Enregistrez et fermez le fichier *VSTemplate* .
 
-1. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit, puis choisissez **Envoyer vers**le  >  **dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
+1. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit, puis choisissez **Envoyer vers** le  >  **dossier compressé** . Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
 
 1. Placez le nouveau fichier *. zip* dans le même répertoire que l’ancien fichier *. zip* .
 

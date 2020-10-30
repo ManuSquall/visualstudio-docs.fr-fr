@@ -1,5 +1,7 @@
 ---
 title: When, élément (MSBuild) | Microsoft Docs
+description: En savoir plus sur l’élément MSBuild when, qui spécifie un bloc de code possible pour l’élément Choose à sélectionner.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630923"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046034"
 ---
 # <a name="when-element-msbuild"></a>When, élément (MSBuild)
 
@@ -36,7 +38,7 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
  \<Choose>
 ...
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <When Condition="'StringA'=='StringB'">
@@ -70,7 +72,7 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 |-------------|-----------------|
 |[Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  Si l’attribut `Condition` s’évalue à true, les éléments `ItemGroup` et `PropertyGroup` enfants de l’élément `When` sont exécutés et tous les éléments `When` suivants sont ignorés.
 

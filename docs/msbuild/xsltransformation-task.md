@@ -1,5 +1,7 @@
 ---
 title: XslTransformation, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche XslTransformation pour transformer une entrée XML à l’aide d’un XSLT et une sortie vers un appareil ou un fichier de sortie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094548"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047198"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation (tâche)
 
@@ -41,7 +43,7 @@ Transforme une entrée XML à l’aide d’une transformation XSLT ou XSLT compi
 |`XslContent`|Paramètre `String` facultatif.<br /><br /> Spécifie l’entrée XSLT sous forme de chaîne.|
 |`XslInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le fichier d’entrée XSLT.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

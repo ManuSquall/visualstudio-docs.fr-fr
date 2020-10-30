@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur WPF MSBuild | Microsoft Docs
+description: Découvrez comment Windows Presentation Foundation (WPF) étend le moteur de génération MSBuild avec une prise en charge de build supplémentaire.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d01def43a94e8590d5f776da1231ddf2d40d8d53
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596305"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047544"
 ---
 # <a name="wpf-msbuild-reference"></a>Informations de référence sur MSBuild WPF
 
 Windows Presentation Foundation (WPF) étend Microsoft Build Engine (MSBuild) avec une prise en charge de la génération supplémentaire, qui est décrite dans cette section.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 [Fichiers .Targets WPF](../msbuild/wpf-dot-targets-files.md)
 

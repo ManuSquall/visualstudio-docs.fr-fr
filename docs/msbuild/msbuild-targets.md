@@ -1,5 +1,7 @@
 ---
 title: Cibles de MSBuild | Microsoft Docs
+description: Découvrez comment MSBuild utilise des cibles pour regrouper les tâches et permettre au processus de génération d’être pris en compte en unités plus petites.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a257299d22b5ba5050ee9027e6bbb97bbaf3a75
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250666"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049086"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 

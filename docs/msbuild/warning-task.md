@@ -1,5 +1,7 @@
 ---
 title: Warning, tâche | Microsoft Docs
+description: Découvrez comment MSBuild utilise la tâche d’avertissement pour consigner un avertissement pendant une génération basée sur une instruction conditionnelle évaluée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631092"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047817"
 ---
 # <a name="warning-task"></a>Avertissement (tâche)
 
@@ -40,7 +42,7 @@ Enregistre un avertissement durant une génération en fonction d’une instruct
 | `HelpKeyword` | Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’avertissement. |
 | `Text` | Paramètre `String` facultatif.<br /><br /> Texte d’avertissement que MSBuild enregistre si le `Condition` paramètre a la valeur `true` . |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  La `Warning` tâche permet aux projets MSBuild de vérifier la présence d’une configuration ou d’une propriété requise avant de passer à l’étape de génération suivante.
 

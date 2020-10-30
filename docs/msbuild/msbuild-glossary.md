@@ -1,5 +1,7 @@
 ---
 title: Glossaire MSBuild
+description: Découvrez les termes du Glossaire Microsoft Build Engine (MSBuild) qui décrivent le moteur de génération et ses composants.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f42d7945656a3f0e3cfbe11f80db26b7e5c124d3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633341"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046322"
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
 
@@ -25,19 +27,19 @@ AssemblyFoldersEx\
 Emplacement du Registre dans lequel les fournisseurs tiers stockent les chemins de chaque version du framework qu’ils prennent en charge, où la résolution au moment du design peut rechercher des assemblys de référence.
 
 batching\
-Répartition des éléments en différentes catégories appelées *lots*, en fonction des métadonnées d’élément, puis exécution d’une cible ou d’une tâche à la fois en utilisant chaque lot. Le traitement par lot est l’équivalent MSBuild de la construction « for loop ». Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).
+Répartition des éléments en différentes catégories appelées *lots* , en fonction des métadonnées d’élément, puis exécution d’une cible ou d’une tâche à la fois en utilisant chaque lot. Le traitement par lot est l’équivalent MSBuild de la construction « for loop ». Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).
 
 build-scope\
 Décrit un objet MSBuild, par exemple, une propriété globale, qui est potentiellement visible pour un projet et les projets enfants créés dans une génération multiprojet.
 
 child project\
-Voir *projet, enfant*.
+Voir *projet, enfant* .
 
 condition\
 De nombreux éléments MSBuild peuvent être définis de façon conditionnelle. Autrement dit, l’attribut `Condition` apparaît dans l’élément. Le contenu des éléments conditionnels est ignoré, à moins que la condition ait la valeur `true`. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).
 
 definition, item\
-Voir *définition d’élément*.
+Voir *définition d’élément* .
 
 emit item\
 Pendant la phase d’exécution d’une génération, des éléments peuvent être créés ou modifiés par des tâches dotées d’éléments `Output` enfants ayant l’attribut `ItemName`. La tâche est dite « émettre » les nouveaux éléments.
@@ -52,7 +54,7 @@ execution phase\
 Seconde étape de la génération d’un projet. Les cibles sélectionnées sont générées et les tâches sont exécutées. Des propriétés et des éléments peuvent être créés ou modifiés par rapport à leurs valeurs d’évaluation.
 
 function, property\
-Voir *fonction de propriété*.
+Voir *fonction de propriété* .
 
 function, item\
 Voir fonction d’élément.
@@ -67,7 +69,7 @@ item function\
 Les fonctions d’élément obtiennent des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments. Il existe des fonctions qui permettent de manipuler les chaînes et les chemins d’accès des éléments. Pour plus d’informations, consultez [fonctions d’élément](../msbuild/item-functions.md).
 
 item metadata\
-Voir *métadonnées, élément*.
+Voir *métadonnées, élément* .
 
 item type\
 Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
@@ -85,7 +87,7 @@ profile\
 Partie du framework entier. Permet de diminuer la quantité à télécharger sur un ordinateur.
 
 project file\
-Contient le script MSBuild qui contrôle la génération. Les fichiers projet sont généralement pourvus d’une extension de fichier se terminant par *proj*, par exemple *.csproj* ou *.vbproj*. Ils peuvent importer des fichiers de propriétés et des fichiers cibles.
+Contient le script MSBuild qui contrôle la génération. Les fichiers projet sont généralement pourvus d’une extension de fichier se terminant par *proj* , par exemple *.csproj* ou *.vbproj* . Ils peuvent importer des fichiers de propriétés et des fichiers cibles.
 
 property\
 Paire clé-valeur qui permet de contrôler le processus de génération. Pour plus d’informations, consultez [propriétés MSBuild](../msbuild/msbuild-properties.md).
@@ -94,7 +96,7 @@ property, environment\
 Une propriété d’environnement est une propriété qui est initialisée automatiquement sur la valeur d’une variable d’environnement système portant le même nom. Pour plus d’informations, consultez [propriétés MSBuild](../msbuild/msbuild-properties.md).
 
 property file\
-Fichier projet qui contient principalement des groupes de propriétés et des groupes d’éléments qui guident la génération. Par convention, il est pourvu de l’extension de fichier *.props*. En général, les fichiers de propriétés sont importés au début des fichiers projet associés.
+Fichier projet qui contient principalement des groupes de propriétés et des groupes d’éléments qui guident la génération. Par convention, il est pourvu de l’extension de fichier *.props* . En général, les fichiers de propriétés sont importés au début des fichiers projet associés.
 
 property, function\
 Une fonction de propriété est une propriété système ou une méthode qui peut être utilisée pour évaluer des scripts MSBuild. Les méthodes de propriété permettent de lire l’heure système, de comparer des chaînes, d’établir des correspondances avec des expressions régulières et d’effectuer d’autres actions. Pour plus d’informations, consultez [Fonctions de propriétés](../msbuild/property-functions.md).
@@ -131,7 +133,7 @@ reference assembly\
 Assembly utilisé au moment du design pour créer une application. Le code réel et les interfaces privées peuvent être supprimés d’un assembly de référence, laissant ainsi uniquement les métadonnées et les interfaces publiques.
 
 registry property\
-Voir *propriété, Registre*.
+Voir *propriété, Registre* .
 
 target\
 Regroupe les tâches selon un ordre particulier et expose les sections du fichier projet comme points d’entrée du processus de génération. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).
@@ -158,7 +160,7 @@ targeting pack\
 Liste des assemblys qui sont distribués avec un framework donné et le jeu d’assemblys de référence correspondant à ce framework.
 
 targets file\
-Fichier projet qui contient principalement des cibles et des tâches qui guident la génération. Par convention, il est pourvu de l’extension de fichier *.targets*. Les fichiers de cibles sont généralement importés à la fin des fichiers projet associés.
+Fichier projet qui contient principalement des cibles et des tâches qui guident la génération. Par convention, il est pourvu de l’extension de fichier *.targets* . Les fichiers de cibles sont généralement importés à la fin des fichiers projet associés.
 
 task\
 Les tâches sont des unités de code exécutable que les projets MSBuild utilisent pour effectuer des opérations de génération. Par exemple, une tâche peut compiler des fichiers d'entrée ou exécuter un outil externe. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
@@ -167,7 +169,7 @@ transform\
 Conversion de type un-à-un d’une collection d’éléments en une autre. En plus de permettre à un projet de convertir des collections d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et sorties. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).
 
 well-known metadata\
-Voir *métadonnées, connues*.
+Voir *métadonnées, connues* .
 
 ## <a name="see-also"></a>Voir aussi
 

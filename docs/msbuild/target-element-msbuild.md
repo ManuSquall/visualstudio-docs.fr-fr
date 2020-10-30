@@ -1,5 +1,7 @@
 ---
 title: Élément Target (MSBuild) | Microsoft Docs
+description: En savoir plus sur l’élément Target de MSBuild, qui contient un ensemble de tâches que MSBuild doit exécuter séquentiellement.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375551"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048047"
 ---
 # <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 
@@ -31,7 +33,7 @@ Contient un ensemble de tâches que MSBuild doit exécuter séquentiellement.
 
  \<Project> \<Target>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Target Name="Target Name"
@@ -85,7 +87,7 @@ Contient un ensemble de tâches que MSBuild doit exécuter séquentiellement.
 | - | - |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur MSBuild exécute les dépendances dans l’ordre dans lequel elles apparaissent dans l' `DependsOnTargets` attribut, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).
 

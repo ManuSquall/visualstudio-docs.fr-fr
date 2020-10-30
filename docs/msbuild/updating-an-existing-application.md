@@ -1,5 +1,7 @@
 ---
 title: Mettre à jour une application existante vers MSBuild 15 | Microsoft Docs
+description: Découvrez comment vous assurer que les builds de programmation de votre application correspondent aux builds effectuées dans Visual Studio ou MSBuild.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184027"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047642"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Mettre à jour une application existante vers MSBuild 15
 
@@ -22,7 +24,7 @@ Pour permettre la prise en charge d’installations côte à côte, plus rapides
 
 ## <a name="use-msbuild-from-visual-studio"></a>Utiliser MSBuild à partir de Visual Studio
 
-Pour que les builds programmatiques de votre application correspondent à celles effectuées dans Visual Studio ou *MSBuild.exe*, chargez les assemblys MSBuild à partir de Visual Studio et utilisez les kits SDK disponibles dans Visual Studio. Le package NuGet Microsoft.Build.Locator simplifie ce processus.
+Pour que les builds programmatiques de votre application correspondent à celles effectuées dans Visual Studio ou *MSBuild.exe* , chargez les assemblys MSBuild à partir de Visual Studio et utilisez les kits SDK disponibles dans Visual Studio. Le package NuGet Microsoft.Build.Locator simplifie ce processus.
 
 ## <a name="use-microsoftbuildlocator"></a>Utiliser Microsoft.Build.Locator
 
@@ -69,7 +71,7 @@ Référencez le package Microsoft. Build. Locator pour vous assurer que votre ap
 
 ### <a name="ensure-output-is-clean"></a>Vérifier la propreté de la sortie
 
-Générez votre projet et inspectez le répertoire de sortie pour vérifier qu’il ne contient pas d’assemblys *Microsoft.Build.\*.dll* (à part *Microsoft.Build.Locator.dll*, ajouté à l’étape suivante).
+Générez votre projet et inspectez le répertoire de sortie pour vérifier qu’il ne contient pas d’assemblys *Microsoft.Build.\*.dll* (à part *Microsoft.Build.Locator.dll* , ajouté à l’étape suivante).
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Ajouter une référence de package pour Microsoft.Build.Locator
 

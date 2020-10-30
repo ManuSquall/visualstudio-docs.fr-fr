@@ -1,5 +1,7 @@
 ---
 title: Fenêtres du débogueur XSLT
+description: En savoir plus sur les éléments d’interface utilisateur du débogueur XSLT qui contrôlent le comportement de débogage spécifique à XSLT, y compris les fenêtres variables locales, sortie, points d’arrêt, pile des appels et espion.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592878"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045803"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 
@@ -56,7 +58,7 @@ Le **liste des tâches** répertorie toutes les erreurs de compilation dans la f
 Le **liste des tâches** comprend les erreurs qui se produisent dans les blocs de script dans le fichier XSLT.
 
 > [!NOTE]
-> Le débogueur XSLT n’a pas d’avertissements, donc ils n’apparaissent jamais dans le **liste des tâches**.
+> Le débogueur XSLT n’a pas d’avertissements, donc ils n’apparaissent jamais dans le **liste des tâches** .
 
 ## <a name="breakpoints-window"></a>Points d'arrêt (fenêtre)
 

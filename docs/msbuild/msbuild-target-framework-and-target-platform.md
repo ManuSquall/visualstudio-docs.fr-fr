@@ -1,5 +1,7 @@
 ---
 title: Framework cible et plateforme cible (MSBuild) | Microsoft Docs
+description: Découvrez comment générer un projet MSBuild pour qu’il s’exécute sur une version cible de .NET Framework, ainsi qu’une plateforme ou une architecture logicielle cible.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -8,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350834"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049108"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Version cible de .NET Framework et plateforme cible MSBuild
 
-Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2,0 sur une plateforme 32 bits qui est compatible avec la famille de processeurs 80x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.
+Un projet peut être généré pour s’exécuter sur un *framework cible* , qui est une version particulière du .NET Framework, et sur une *plateforme cible* , qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2,0 sur une plateforme 32 bits qui est compatible avec la famille de processeurs 80x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible* .
 
 > [!IMPORTANT]
 > Cet article présente l’ancienne façon de spécifier un framework cible. Les projets de style SDK permettent l’utilisation de différents frameworks cibles, comme .NET Standard. Pour plus d’informations, consultez [Frameworks cibles](/dotnet/standard/frameworks).
@@ -89,7 +91,7 @@ Une *plateforme cible* est la plateforme particulière sur laquelle votre projet
 
 ```
 
-Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exemple, la configuration `x86` `Debug` n’inclut pas la plupart des optimisations du code. La configuration cible est spécifiée dans la propriété de build `Configuration` d'un fichier projet. Vous pouvez changer la configuration cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations**.
+Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exemple, la configuration `x86` `Debug` n’inclut pas la plupart des optimisations du code. La configuration cible est spécifiée dans la propriété de build `Configuration` d'un fichier projet. Vous pouvez changer la configuration cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations** .
 
 ```xml
 <PropertyGroup>

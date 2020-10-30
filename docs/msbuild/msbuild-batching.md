@@ -1,5 +1,7 @@
 ---
 title: Traitement par lots de MSBuild | Microsoft Docs
+description: Découvrez comment MSBuild divise les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées de l’élément, et exécute une cible ou une tâche une fois avec chaque lot.
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289272"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047694"
 ---
 # <a name="msbuild-batching"></a>Traitement par lots MSBuild
 
@@ -223,5 +225,5 @@ Pour plus d’informations sur les fonctions de propriété, consultez [Fonction
 
 - [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)

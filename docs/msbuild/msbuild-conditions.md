@@ -1,5 +1,7 @@
 ---
 title: Conditions MSBuild | Microsoft Docs
+description: Découvrez comment MSBuild prend en charge un ensemble spécifique de conditions qui peuvent être appliquées partout où un attribut de condition est autorisé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62031255daca971345b2dd3dbc7c37eb7f4003c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711701"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046371"
 ---
 # <a name="msbuild-conditions"></a>Conditions MSBuild
 
@@ -66,6 +68,6 @@ MSBuild implémente quelques règles de traitement spéciales pour faciliter l�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
 - [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)
 - [Procédure pas à pas : Créer un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

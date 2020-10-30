@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur MSBuild | Microsoft Docs
+description: Accédez aux liens vers des articles qui contiennent des informations de référence pour MSBuild, le système de génération pour Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633263"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046571"
 ---
 # <a name="msbuild-reference"></a>Informations de référence sur MSBuild
 
 MSBuild est le système de génération de Visual Studio. Les liens suivants mènent à des rubriques qui contiennent des informations de référence MSBuild.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 - [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)\
  Décrit les éléments XML qui composent le format de fichier MSBuild.

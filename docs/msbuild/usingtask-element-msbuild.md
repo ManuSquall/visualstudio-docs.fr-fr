@@ -1,5 +1,7 @@
 ---
 title: Élément UsingTask (MSBuild) | Microsoft Docs
+description: En savoir plus sur l’élément de UsingTask MSBuild, qui mappe la tâche référencée dans un élément Task à l’assembly qui contient l’implémentation de la tâche.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289155"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046117"
 ---
 # <a name="usingtask-element-msbuild"></a>Élément UsingTask (MSBuild)
 
@@ -31,7 +33,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
  \<Project> \<UsingTask>
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <UsingTask TaskName="TaskName"
@@ -72,18 +74,18 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 | - | - |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
 > Les propriétés et éléments de niveau projet n’ont aucune signification si l’élément `UsingTask` provient de l’un des fichiers *.tasks* inscrits globalement auprès du moteur MSBuild. Les valeurs au niveau du projet ne sont pas globales pour MSBuild.
 
- Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask*.
+ Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask* .
 
 L’assembly contenant la tâche personnalisée est chargé lors de la `Task` première utilisation de.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyName`.
 
@@ -100,7 +102,7 @@ L’assembly contenant la tâche personnalisée est chargé lors de la `Task` pr
 </UsingTask>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyFile`.
 

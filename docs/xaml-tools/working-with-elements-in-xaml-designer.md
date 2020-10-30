@@ -1,17 +1,19 @@
 ---
 title: Working with elements in XAML Designer
+description: Découvrez comment utiliser les éléments de la Concepteur XAML dans Visual Studio ou Blend pour Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1af793ec7ecd741de1fc1b4bb1cb48dbf2ef32f3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592923"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047130"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Utiliser des éléments dans le concepteur XAML
 
@@ -25,11 +27,11 @@ Par défaut, un panneau `Grid` est utilisé comme conteneur de disposition de ni
 
 Pour ajouter un élément à une disposition dans le Concepteur XAML, effectuez l’une des opérations suivantes :
 
-- Double-cliquez sur un élément dans la **Boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur **Entrée**).
+- Double-cliquez sur un élément dans la **Boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur **Entrée** ).
 
 - Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.
 
-- Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](xref:Windows.UI.Xaml.Shapes.Ellipse) ou [Rectangle](xref:Windows.UI.Xaml.Shapes.Rectangle)), puis dessinez un élément dans le panneau actif.
+- Dans la **boîte à outils** , sélectionnez l’un des outils de dessin (par exemple, [Ellipse](xref:Windows.UI.Xaml.Shapes.Ellipse) ou [Rectangle](xref:Windows.UI.Xaml.Shapes.Rectangle)), puis dessinez un élément dans le panneau actif.
 
 ## <a name="change-the-layering-order-of-elements"></a>Changer l’ordre de superposition des éléments
 
@@ -37,9 +39,9 @@ Lorsque deux éléments de la planche graphique sont dans le concepteur XAML, un
 
 Pour changer l’ordre de superposition, effectuez l’une des opérations suivantes :
 
-- Dans la fenêtre **Structure du document**, faites glisser les éléments vers le haut ou le bas pour créer l’ordre de superposition souhaité.
+- Dans la fenêtre **Structure du document** , faites glisser les éléments vers le haut ou le bas pour créer l’ordre de superposition souhaité.
 
-- Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément pour lequel vous souhaitez modifier l’ordre de superposition, pointez sur **Ordre**, puis cliquez sur l’une des options suivantes :
+- Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément pour lequel vous souhaitez modifier l’ordre de superposition, pointez sur **Ordre** , puis cliquez sur l’une des options suivantes :
 
   - **Mettre au premier plan** pour placer l’élément tout au début dans l’ordre.
 
@@ -61,9 +63,9 @@ Pour aligner deux éléments ou plus à l’aide des commandes de menu :
 
 1. Sélectionnez les éléments que vous souhaitez aligner. Pour sélectionner plusieurs éléments, maintenez enfoncée la touche **Ctrl** et sélectionnez les éléments.
 
-2. Sélectionnez l’une des propriétés suivantes sous **HorizontalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Gauche**, **Centre**, **Droite** ou **Étirer**.
+2. Sélectionnez l’une des propriétés suivantes sous **HorizontalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Gauche** , **Centre** , **Droite** ou **Étirer** .
 
-3. Sélectionnez l’une des propriétés suivantes sous **VerticalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Haut**, **Centre**, **Bas** ou **Étirer**.
+3. Sélectionnez l’une des propriétés suivantes sous **VerticalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Haut** , **Centre** , **Bas** ou **Étirer** .
 
 Pour aligner deux éléments ou plus à l’aide des lignes d’alignement, dans le Concepteur XAML, dans une disposition contenant au moins deux éléments, faites glisser ou redimensionnez l’un des éléments afin que le bord soit aligné sur un autre élément.
 
@@ -77,13 +79,13 @@ Pour changer les marges d’un élément dans la fenêtre Propriétés :
 
 1. Sélectionnez l'élément pour lequel vous souhaitez modifier les marges.
 
-2. Sous **Disposition** dans la fenêtre Propriétés, modifiez la valeur en pixels ou en dip (device independent pixel), qui représentent approximativement 1/96e de pouce, de toutes les propriétés **Marge** (**Haut**, **Gauche**, **Droite** ou **Bas**).
+2. Sous **Disposition** dans la fenêtre Propriétés, modifiez la valeur en pixels ou en dip (device independent pixel), qui représentent approximativement 1/96e de pouce, de toutes les propriétés **Marge** ( **Haut** , **Gauche** , **Droite** ou **Bas** ).
 
 Dans la planche graphique, pour changer les marges d’un élément par rapport à son conteneur de disposition, cliquez sur les *ornements de marge* qui apparaissent autour de l’élément quand il est sélectionné et qu’il se trouve dans un conteneur de disposition. Pour une illustration des ornements de marge, consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
 Si un ornement de marge est ouvert, verticalement ou horizontalement, la marge n'est pas définie. Si un ornement de marge est fermé, cela signifie que la marge en question est définie.
 
-Quand vous ouvrez un ornement de marge et que la marge opposée n'est pas définie, celle-ci se voit attribuer une valeur appropriée en fonction de l'emplacement de l'élément dans la planche graphique. Pour les marges opposées, telles que les marges **Gauche** et **Droite**, au moins une propriété est toujours définie.
+Quand vous ouvrez un ornement de marge et que la marge opposée n'est pas définie, celle-ci se voit attribuer une valeur appropriée en fonction de l'emplacement de l'élément dans la planche graphique. Pour les marges opposées, telles que les marges **Gauche** et **Droite** , au moins une propriété est toujours définie.
 
 > [!IMPORTANT]
 > Les éléments placés à l’intérieur de certains conteneurs de disposition (par exemple, un [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)) n’ont pas d’ornements de marge. Les éléments placés dans un [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) ont des ornements de marge pour les marges de gauche et de droite, ou les marges supérieure et inférieure, en fonction de l’orientation du `StackPanel`.
@@ -96,18 +98,18 @@ Pour regrouper des éléments dans un nouveau conteneur de disposition :
 
 1. Sélectionnez les éléments que vous souhaitez regrouper. (Pour sélectionner plusieurs éléments, appuyez sur la touche **CTRL** et maintenez-la enfoncée pendant que vous cliquez dessus.)
 
-2. Cliquez avec le bouton droit sur les éléments sélectionnés, pointez sur **Grouper**, puis cliquez sur le type de conteneur de disposition dans lequel vous souhaitez que le groupe réside.
+2. Cliquez avec le bouton droit sur les éléments sélectionnés, pointez sur **Grouper** , puis cliquez sur le type de conteneur de disposition dans lequel vous souhaitez que le groupe réside.
 
     > [!TIP]
     > Si vous sélectionnez [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border), ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) pour regrouper vos éléments, ceux-ci seront placés dans un nouveau panneau [grille](xref:Windows.UI.Xaml.Controls.Grid) au sein de [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Si vous dissociez des éléments dans l’un de ces conteneurs de disposition, seul le panneau [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) est supprimé. Le panneau [grille](xref:Windows.UI.Xaml.Controls.Grid) est conservé. Pour supprimer le panneau `Grid`, redissociez les éléments.
 
-Pour dissocier des éléments et supprimer la disposition, cliquez avec le bouton droit sur le groupe à dissocier, puis cliquez sur **Dissocier**. Vous pouvez également regrouper ou dissocier des éléments en cliquant avec le bouton droit sur les éléments concernés dans la fenêtre Structure du document, puis en cliquant sur **Grouper** ou **Dissocier**.
+Pour dissocier des éléments et supprimer la disposition, cliquez avec le bouton droit sur le groupe à dissocier, puis cliquez sur **Dissocier** . Vous pouvez également regrouper ou dissocier des éléments en cliquant avec le bouton droit sur les éléments concernés dans la fenêtre Structure du document, puis en cliquant sur **Grouper** ou **Dissocier** .
 
 ## <a name="reset-the-element-layout"></a>Réinitialiser la disposition des éléments
 
 Vous pouvez restaurer les valeurs par défaut de propriétés de disposition spécifiques d'un élément à l'aide des commandes de réinitialisation de la disposition. Cette commande vous permet de réinitialiser la marge, l'alignement, la largeur, la hauteur et la taille d'un élément, de manière individuelle ou collective.
 
-Pour réinitialiser la disposition des éléments, cliquez avec le bouton droit sur l’élément dans la fenêtre structure du document ou la planche graphique, puis choisissez réinitialisation de la **mise en page**  >  **Reset** *NomPropriété*, où *PropertyName* est la propriété à réinitialiser (ou choisissez **disposition**  >  **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
+Pour réinitialiser la disposition des éléments, cliquez avec le bouton droit sur l’élément dans la fenêtre structure du document ou la planche graphique, puis choisissez réinitialisation de la **mise en page**  >  **Reset** *NomPropriété* , où *PropertyName* est la propriété à réinitialiser (ou choisissez **disposition**  >  **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
 
 ## <a name="see-also"></a>Voir aussi
 

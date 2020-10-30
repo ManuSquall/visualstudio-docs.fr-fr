@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur les tâches MSBuild WPF | Microsoft Docs
+description: Consultez une référence de tâche pour le processus de génération Windows Presentation Foundation (WPF), qui étend MSBuild avec des tâches supplémentaires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630845"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047515"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild WPF
 
 Le processus de génération de Windows Presentation Foundation (WPF) étend Microsoft Build Engine (MSBuild) avec un ensemble de tâches de génération supplémentaires, notamment des tâches pour compiler le balisage et traiter les ressources.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 - [FileClassifier](../msbuild/fileclassifier-task.md)
 
@@ -57,7 +59,7 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Incorpore une ou plusieurs ressources (*. jpg*, *. ico*, *. bmp*, XAML au format binaire et d’autres types d’extensions) dans un fichier *. Resources* .
+ Incorpore une ou plusieurs ressources ( *. jpg* , *. ico* , *. bmp* , XAML au format binaire et d’autres types d’extensions) dans un fichier *. Resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,7 +67,7 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Ajoute l' **\<hostInBrowser />** élément au manifeste d’application (* \<projectname> . exe. manifest*) lors de la génération d’un projet d’application de navigateur XAML (XBAP).
+ Ajoute l' **\<hostInBrowser />** élément au manifeste d’application ( *\<projectname> . exe. manifest* ) lors de la génération d’un projet d’application de navigateur XAML (XBAP).
 
 ## <a name="see-also"></a>Voir aussi
 
