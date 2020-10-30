@@ -1,5 +1,6 @@
 ---
-title: Affichage de classes, hiérarchie d’appels, Explorateur d’objets, fenêtre Définition de code
+title: Utiliser les fenêtres d’outils pour afficher la structure du code
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2019
 ms.topic: reference
 f1_keywords:
@@ -25,30 +26,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e65dd22ccf1b47559238efcd2be18cf6b81fcb
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543674"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049286"
 ---
-# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
+# <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres outil
 
-Vous pouvez examiner les classes et leurs membres dans Visual Studio à l’aide de différentes fenêtres d’outils, y compris **Affichage des classes**, **Hiérarchie d’appels**, **Explorateur d’objets**et **Définition de code** (C++ uniquement). Ces fenêtres d’outils peuvent examiner du code dans des projets Visual Studio, des composants .NET, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
+Vous pouvez examiner les classes et leurs membres dans Visual Studio à l’aide de différentes fenêtres d’outils, y compris **Affichage des classes** , **Hiérarchie d’appels** , **Explorateur d’objets** et **Définition de code** (C++ uniquement). Ces fenêtres d’outils peuvent examiner du code dans des projets Visual Studio, des composants .NET, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
 
-Vous pouvez également utiliser l’**Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre plusieurs fenêtres d’outils.
+Vous pouvez également utiliser l’ **Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre plusieurs fenêtres d’outils.
 
 Si vous avez l’édition Visual Studio Enterprise, vous pouvez utiliser les *cartes de code* pour visualiser la structure de votre code et ses dépendances sur l’ensemble de la solution. Pour plus d’informations, consultez [Mapper les dépendances avec des cartes de code](../modeling/map-dependencies-across-your-solutions.md).
 
 ## <a name="class-view-visual-basic-c-c"></a>Affichage de classes (Visual Basic, C#, C++)
 
-L’**affichage de classes** est illustré dans le cadre de l’**Explorateur de solutions** et dans une fenêtre distincte. **Affichage de classes** présente les éléments d’une application. Le volet supérieur affiche les espaces de noms, les types, les interfaces, les énumérations et les classes, alors que le volet inférieur affiche les membres qui appartiennent au type sélectionné dans le volet supérieur. Cette fenêtre vous permet d’accéder aux définitions des membres dans le code source (ou dans l’**Explorateur d’objets** si l’élément est défini en dehors de votre solution).
+L’ **affichage de classes** est illustré dans le cadre de l’ **Explorateur de solutions** et dans une fenêtre distincte. **Affichage de classes** présente les éléments d’une application. Le volet supérieur affiche les espaces de noms, les types, les interfaces, les énumérations et les classes, alors que le volet inférieur affiche les membres qui appartiennent au type sélectionné dans le volet supérieur. Cette fenêtre vous permet d’accéder aux définitions des membres dans le code source (ou dans l’ **Explorateur d’objets** si l’élément est défini en dehors de votre solution).
 
-Il est inutile de compiler un projet pour afficher ses éléments dans la fenêtre **Affichage de classes**. La fenêtre est actualisée quand vous modifiez le code dans votre projet.
+Il est inutile de compiler un projet pour afficher ses éléments dans la fenêtre **Affichage de classes** . La fenêtre est actualisée quand vous modifiez le code dans votre projet.
 
-Vous pouvez ajouter du code à votre projet en sélectionnant le nœud du projet et en choisissant le bouton **Ajouter** pour ouvrir la boîte de dialogue **Ajouter un nouvel élément**. Le code est ajouté dans un fichier distinct.
+Vous pouvez ajouter du code à votre projet en sélectionnant le nœud du projet et en choisissant le bouton **Ajouter** pour ouvrir la boîte de dialogue **Ajouter un nouvel élément** . Le code est ajouté dans un fichier distinct.
 
-Si votre projet est archivé dans le contrôle de code source, chaque élément **Affichage de classes** affiche une icône qui indique l’état du code source du fichier. Les commandes de contrôle de code source courantes, comme **Extraire**, **Archiver** et **Obtenir la dernière version**, sont également disponibles dans le menu contextuel de l’élément.
+Si votre projet est archivé dans le contrôle de code source, chaque élément **Affichage de classes** affiche une icône qui indique l’état du code source du fichier. Les commandes de contrôle de code source courantes, comme **Extraire** , **Archiver** et **Obtenir la dernière version** , sont également disponibles dans le menu contextuel de l’élément.
 
 ### <a name="class-view-toolbar"></a>Barre d’outils Affichage de classes
 
@@ -56,10 +57,10 @@ La barre d’outils **affichage de classes** contient les commandes suivantes :
 
 |Nom|Description|
 |-|-|
-|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. Elles sont enregistrées dans le fichier de solution active (*. suo*). Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
+|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. Elles sont enregistrées dans le fichier de solution active ( *. suo* ). Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
 |**Précédent**|Permet d'accéder à l'élément précédemment sélectionné.|
 |**Prédictif**|Permet d'accéder à l'élément sélectionné suivant.|
-|**Afficher le diagramme de classes** (projets de code managé uniquement)|Devient disponible quand vous sélectionnez un espace de noms ou un type dans **Affichage de classes**. Quand un espace de noms est sélectionné, le diagramme de classes affiche tous les types qu'il contient. Quand un type est sélectionné, le diagramme de classes affiche uniquement ce type.|
+|**Afficher le diagramme de classes** (projets de code managé uniquement)|Devient disponible quand vous sélectionnez un espace de noms ou un type dans **Affichage de classes** . Quand un espace de noms est sélectionné, le diagramme de classes affiche tous les types qu'il contient. Quand un type est sélectionné, le diagramme de classes affiche uniquement ce type.|
 
 ### <a name="class-view-settings"></a>Paramètres de l’affichage de classes
 
@@ -82,10 +83,10 @@ Le menu contextuel (ou clic droit) de **affichage de classes** peut contenir les
 
 |Nom|Description|
 |-|-|
-|**Atteindre la définition**|Recherche la définition de l’élément dans le code source ou dans l’**Explorateur d’objets** si l’élément n’est pas défini dans le projet ouvert.|
-|**Parcourir les définitions**|Affiche l’élément sélectionné dans l’**Explorateur d’objets**.|
-|**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche**.|
-|**Appliquer le filtre au type** (code managé uniquement)|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **effacer la recherche** (**X**) en regard de la zone **Rechercher** .|
+|**Atteindre la définition**|Recherche la définition de l’élément dans le code source ou dans l’ **Explorateur d’objets** si l’élément n’est pas défini dans le projet ouvert.|
+|**Parcourir les définitions**|Affiche l’élément sélectionné dans l’ **Explorateur d’objets** .|
+|**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche** .|
+|**Appliquer le filtre au type** (code managé uniquement)|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **effacer la recherche** ( **X** ) en regard de la zone **Rechercher** .|
 |**Copier**|Copie le nom qualifié complet de l'élément.|
 |**Trier par ordre alphabétique**|Répertorie les types et les membres dans l'ordre alphabétique par nom.|
 |**Trier les membres par type**|Répertorie les types et les membres dans l'ordre par type (de sorte que les classes précèdent les interfaces, les interfaces précèdent les délégués et les méthodes précèdent les propriétés).|
@@ -94,7 +95,7 @@ Le menu contextuel (ou clic droit) de **affichage de classes** peut contenir les
 |**Atteindre la déclaration** (code C++ uniquement)|Affiche la déclaration du type ou du membre dans le code source, si elle est disponible.|
 |**Atteindre la définition**|Affiche la définition du type ou du membre dans le code source, si elle est disponible.|
 |**Atteindre la référence**|Affiche une référence au type ou au membre dans le code source, si elle est disponible.|
-|**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels**.|
+|**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels** .|
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Fenêtre Hiérarchie d’appels (Visual Basic, C#, C++)
 
@@ -108,7 +109,7 @@ La liste déroulante de la barre d’outils vous permet de spécifier la portée
 
 Le volet principal affiche les appels en direction et en provenance de la méthode, et le volet **Sites d’appel** affiche l’emplacement de l’appel sélectionné. Pour les membres virtuels ou abstraits, un nœud **Remplace nom de méthode** apparaît. Pour les membres d’interface, un nœud **Implémente nom de méthode** apparaît.
 
-La fenêtre **Hiérarchie d’appels** ne recherche pas les références au groupe de méthodes qui incluent des emplacements où une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour trouver ces références, utilisez la commande **Rechercher toutes les références**.
+La fenêtre **Hiérarchie d’appels** ne recherche pas les références au groupe de méthodes qui incluent des emplacements où une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour trouver ces références, utilisez la commande **Rechercher toutes les références** .
 
 Le menu contextuel de la fenêtre **hiérarchie d’appels** contient les commandes suivantes :
 
@@ -129,23 +130,23 @@ Vous pouvez filtrer les composants que vous souhaitez afficher à l’aide de la
 
 ::: moniker range="vs-2017"
 
-Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+Les paramètres personnalisés sont enregistrés dans le répertoire d’application utilisateur Visual Studio : *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat* .
 
 ::: moniker-end
 
-Le volet gauche de l’**Explorateur d’objets** montre les assemblys. Vous pouvez développer les assemblys pour afficher les espaces de noms qu’ils contiennent, puis développer les espaces de noms pour afficher les types qu’ils contiennent. Quand vous sélectionnez un type, ses membres (tels que les propriétés et les méthodes) sont répertoriés dans le volet droit. Le volet inférieur droit affiche des informations détaillées sur l'élément sélectionné.
+Le volet gauche de l’ **Explorateur d’objets** montre les assemblys. Vous pouvez développer les assemblys pour afficher les espaces de noms qu’ils contiennent, puis développer les espaces de noms pour afficher les types qu’ils contiennent. Quand vous sélectionnez un type, ses membres (tels que les propriétés et les méthodes) sont répertoriés dans le volet droit. Le volet inférieur droit affiche des informations détaillées sur l'élément sélectionné.
 
-Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, cliquez sur le bouton **effacer la recherche** (**X**) en regard de la zone de **recherche** .
+Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, cliquez sur le bouton **effacer la recherche** ( **X** ) en regard de la zone de **recherche** .
 
-L’**Explorateur d’objets** assure le suivi des sélections effectuées et vous pouvez naviguer entre vos sélections à l’aide des boutons **Suivant** et **Précédent** de la barre d’outils.
+L’ **Explorateur d’objets** assure le suivi des sélections effectuées et vous pouvez naviguer entre vos sélections à l’aide des boutons **Suivant** et **Précédent** de la barre d’outils.
 
-Vous pouvez utiliser l’**Explorateur d’objets** pour ajouter une référence d’assembly à une solution ouverte en sélectionnant un élément (assembly, espace de noms, type ou membre) et en choisissant le bouton **Ajouter une référence** dans la barre d’outils.
+Vous pouvez utiliser l’ **Explorateur d’objets** pour ajouter une référence d’assembly à une solution ouverte en sélectionnant un élément (assembly, espace de noms, type ou membre) et en choisissant le bouton **Ajouter une référence** dans la barre d’outils.
 
 ### <a name="object-browser-settings"></a>Paramètres de l’Explorateur d’objets
 
@@ -171,8 +172,8 @@ Le menu contextuel (ou clic droit) dans l' **Explorateur d’objets** peut conte
 |Nom|Description|
 |-|-|
 |**Parcourir les définitions**|Affiche le nœud principal de l'élément sélectionné.|
-|**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche**.|
-|**Appliquer le filtre au type**|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **Effacer la recherche**.|
+|**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche** .|
+|**Appliquer le filtre au type**|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **Effacer la recherche** .|
 |**Copier**|Copie le nom qualifié complet de l'élément.|
 |**Remove**|Si la portée est un jeu personnalisé de composants, supprime le composant sélectionné de la portée.|
 |**Trier par ordre alphabétique**|Répertorie les types et les membres dans l'ordre alphabétique par nom.|
@@ -182,7 +183,7 @@ Le menu contextuel (ou clic droit) dans l' **Explorateur d’objets** peut conte
 |**Atteindre la déclaration** (projets C++ uniquement)|Affiche la déclaration du type ou du membre dans le code source, si elle est disponible.|
 |**Atteindre la définition**|Affiche la définition du type ou du membre dans le code source, si elle est disponible.|
 |**Atteindre la référence**|Affiche une référence au type ou au membre dans le code source, si elle est disponible.|
-|**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels**.|
+|**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels** .|
 
 ## <a name="code-definition-window-c"></a>Fenêtre Définition de code (C++)
 
@@ -203,17 +204,17 @@ Le menu contextuel (ou clic droit) dans la fenêtre **définition de code** peut
 |**Renommer**||
 |**Générer le graphique des fichiers include**||
 |**Aperçu de définition**||
-|**Atteindre la définition**|Recherche la définition (ou les définitions, pour des classes partielles) et l’affiche dans une fenêtre **Résultats de la recherche**.|
+|**Atteindre la définition**|Recherche la définition (ou les définitions, pour des classes partielles) et l’affiche dans une fenêtre **Résultats de la recherche** .|
 |**Atteindre la déclaration**||
 |**Rechercher toutes les références**|Recherche les références au type ou au membre dans la solution.|
-|**Afficher la hiérarchie d’appels**|Affiche la méthode dans la fenêtre **Hiérarchie d’appels**.|
+|**Afficher la hiérarchie d’appels**|Affiche la méthode dans la fenêtre **Hiérarchie d’appels** .|
 |**Afficher ou masquer l'en-tête / le fichier de code**||
 |**Exécuter les tests**|S'il existe des tests unitaires dans le projet, exécute les tests pour le code sélectionné.|
 |**Déboguer les tests**||
 |**Point d’arrêt**|Insère un point d'arrêt (ou un point de trace).|
 |**Exécuter jusqu’au curseur**|Exécute le programme en mode débogage jusqu'à l'emplacement du curseur.|
 |**Extrait**||
-|**Cut**, **Copy**, **Paste**||
+|**Cut** , **Copy** , **Paste**||
 |**Annotation**||
 |**mode Plan**|Commandes de mode Plan standard.|
 |**Relancer**||

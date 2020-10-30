@@ -1,5 +1,7 @@
 ---
 title: Erreurs et avertissements XAML
+description: En savoir plus sur les erreurs et avertissements XAML dans Visual Studio, notamment sur la façon dont les erreurs sont catégorisées, sur l’obtention d’informations sur les erreurs et sur la façon de trouver des options pour les corriger.
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467555"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049214"
 ---
 # <a name="xaml-errors-and-warnings"></a>Erreurs et avertissements XAML
 
@@ -37,8 +39,8 @@ Pour plus d’informations sur la repersonnalisation de la modification XAML & c
 
 ## <a name="suppress-xaml-designer-errors"></a>Supprimer les erreurs du concepteur XAML
 
-Ouvrez la boîte de dialogue **Options** en sélectionnant **Outils > Options**, puis sélectionnez **Éditeur de texte > XAML > Divers**.
+Ouvrez la boîte de dialogue **Options** en sélectionnant **Outils > Options** , puis sélectionnez **Éditeur de texte > XAML > Divers** .
 
-Désactivez la case à cocher **Afficher les erreurs détectées par le concepteur XAML**.
+Désactivez la case à cocher **Afficher les erreurs détectées par le concepteur XAML** .
 
 ![Supprimer les erreurs du concepteur XAML](media/suppress_xaml_designer_errors.png)

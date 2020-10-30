@@ -1,6 +1,8 @@
 ---
 title: Raccourcis clavier
 titleSuffix: Blend for Visual Studio
+description: En savoir plus sur les raccourcis clavier dans Blend pour Visual Studio qui accèdent aux commandes permettant d’utiliser des projets, des documents, des objets, des vues et des espaces de travail.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -9,20 +11,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3641edafeed9cf7b5e29f8a967f9dbf26cdd3e8c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332227"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049247"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Raccourcis clavier dans Blend pour Visual Studio
 
 ## <a name="project-shortcuts"></a>Raccourcis de Projet
 
-|Action à réaliser|Action|
+|Pour|Action|
 |----------------|-------------|
-|Création d'un projet|**CTRL** + **MAJ** + **N**|
+|Créer un projet|**CTRL** + **MAJ** + **N**|
 |Ouvrir un projet ou une solution (pas un site)|**CTRL** + **MAJ** + **O**|
 |Fermer une solution|**CTRL** + **MAJ** + **C**|
 |Enregistrer une copie de la solution ou du site|**CTRL** + **MAJ** + **P**|
@@ -33,31 +35,31 @@ ms.locfileid: "85332227"
 
 ## <a name="document-shortcuts"></a>Raccourcis de Document
 
-|Action à réaliser|Action|
+|Pour|Action|
 |----------------|-------------|
 |Basculer entre les documents ouverts|**CTRL** + **Onglet**|
 |Enregistrer le document actif|**CTRL** + **S**|
 |Enregistrer tous les documents|**CTRL** + **MAJ** + **S**|
 |Fermer le document actif|**CTRL** + **W**|
 |Fermer tous les documents ouverts|**CTRL** + **MAJ** + **W**|
-|Annuler l'action précédente|**CTRL**+ Z|
-|Rétablir l'action précédente qui était annulée|**Ctrl**+Y ou **Ctrl**+**Maj**+**Z**|
+|Annuler l'action précédente|**CTRL** + Z|
+|Rétablir l'action précédente qui était annulée|**Ctrl** +Y ou **Ctrl**+**Maj**+**Z**|
 |Créer une annotation au moment du design|**CTRL** + **MAJ** + **T**|
 |Couper|**CTRL** + **X**|
 |Copier|**CTRL** + **C**|
 |Coller|**CTRL** + **V**|
-|DELETE|**Supprimer**|
+|Supprimer|**Supprimer**|
 |Rechercher du texte (mode XAML ou éditeur JavaScript uniquement)|**CTRL** + **F**|
 |Rechercher l’occurrence suivante du texte (mode XAML ou éditeur JavaScript uniquement)|**F3** ou **Ctrl**+**H**|
 
 ## <a name="object-shortcuts"></a>Raccourcis du menu Objet
 
-|Action à réaliser|Action|
+|Pour|Action|
 |----------------|-------------|
 |Créer un élément|**CTRL** + **N**|
 |Dupliquer un objet|Maintenez la **touche Alt** enfoncée et faites glisser l’objet|
-|Rendre à nouveau parent un objet|Faites glisser l’objet sur un panneau de disposition et appuyez sur **Alt**.|
-|Modifier le texte dans un contrôle|**F2** (**Échap** pour quitter)|
+|Rendre à nouveau parent un objet|Faites glisser l’objet sur un panneau de disposition et appuyez sur **Alt** .|
+|Modifier le texte dans un contrôle|**F2** ( **Échap** pour quitter)|
 |Modifier un contrôle (WPF)|**CTRL** + **E**|
 |Attribuer la même largeur aux objets sélectionnés|**CTRL** + **MAJ** + **1**|
 |Attribuer la même hauteur aux objets sélectionnés|**CTRL** + **MAJ** + **2**|
@@ -93,9 +95,9 @@ ms.locfileid: "85332227"
 
 ## <a name="view-shortcuts"></a>Raccourcis de mode
 
-|Action à réaliser|Action|
+|Pour|Action|
 |----------------|-------------|
-|Basculer entre les modes **Design**, **Code** et **Fractionné**|**F11**|
+|Basculer entre les modes **Design** , **Code** et **Fractionné**|**F11**|
 |Effectuer un zoom avant sur la planche graphique|**CTRL** + **Signe égal** ( **=** )|
 |Effectuer un zoom arrière sur la planche graphique|**CTRL** + **Signe moins** ( **-** )|
 |Effectuer un zoom avant ou arrière sur la planche graphique|Faire tourner la roulette de la souris|
@@ -105,11 +107,11 @@ ms.locfileid: "85332227"
 |Afficher la planche graphique à sa taille réelle|**CTRL** + **1**|
 |Afficher ou masquer les poignées|**F9**|
 |Afficher ou masquer les limites des objets|**CTRL** + **MAJ** + **H**|
-|Basculer entre les modes **Design**, **XAML** et **Fractionné**|**F11**|
+|Basculer entre les modes **Design** , **XAML** et **Fractionné**|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Raccourcis Espace de travail
 
-|Action à réaliser|Action|
+|Pour|Action|
 |----------------|-------------|
 |Basculer entre les espaces de travail **Animation** et **Conception**|**CTRL** + **F11**|
 |Afficher ou masquer le panneau **Composants**|**CTRL** + **Période**|
