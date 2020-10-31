@@ -9,10 +9,10 @@ author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
 ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 10/31/2020
 ms.locfileid: "92334205"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nouvelle expérience Git dans Visual Studio (préversion)
@@ -30,7 +30,7 @@ Pour activer la nouvelle expérience git, accédez à **Outils**  >  **options**
 
 Il existe trois façons d’utiliser Git dans Visual Studio 2019 :
 
-- [Ouvrez un référentiel git existant](#open-an-existing-local-repository). Si votre code se trouve déjà sur votre ordinateur, vous pouvez l’ouvrir à l’aide de **fichier**  >  **ouvrir**le  >  **projet/solution** (ou **dossier**) et Visual Studio détecte automatiquement s’il dispose d’un référentiel git initialisé.
+- [Ouvrez un référentiel git existant](#open-an-existing-local-repository). Si votre code se trouve déjà sur votre ordinateur, vous pouvez l’ouvrir à l’aide de **fichier**  >  **ouvrir** le  >  **projet/solution** (ou **dossier** ) et Visual Studio détecte automatiquement s’il dispose d’un référentiel git initialisé.
 - [Créez un référentiel git](#create-a-new-git-repository). Si votre code n’est pas associé à git, vous pouvez créer un référentiel git.
 - [Cloner un référentiel git existant](#clone-an-existing-git-repository). Si le code que vous souhaitez utiliser ne se trouve pas sur votre ordinateur, vous pouvez cloner les référentiels distants existants.
 
@@ -79,26 +79,26 @@ Vous pouvez basculer entre la vue actuellement ouverte et la liste des affichage
 
 Git effectue le suivi des modifications apportées aux fichiers dans votre référentiel au fur et à mesure que vous travaillez et sépare les fichiers de votre référentiel en trois catégories. Ces modifications sont équivalentes à ce que vous pouvez voir lorsque vous entrez la `git status` commande dans la ligne de commande :
 
-- **Fichiers non modifiés**: ces fichiers n’ont pas été modifiés depuis votre dernière validation.
-- **Fichiers modifiés**: ces fichiers ont été modifiés depuis votre dernière validation, mais vous ne les avez pas encore prédéfinis pour la prochaine validation.
-- **Fichiers intermédiaires**: ces fichiers ont des modifications qui seront ajoutées à la prochaine validation.
+- **Fichiers non modifiés** : ces fichiers n’ont pas été modifiés depuis votre dernière validation.
+- **Fichiers modifiés** : ces fichiers ont été modifiés depuis votre dernière validation, mais vous ne les avez pas encore prédéfinis pour la prochaine validation.
+- **Fichiers intermédiaires** : ces fichiers ont des modifications qui seront ajoutées à la prochaine validation.
 
 Au fur et à mesure de votre travail, Visual Studio effectue le suivi des modifications apportées aux fichiers de votre projet dans la section **modifications** de la fenêtre **modifications git** .
 
 :::image type="content" source="media/git-changes-window.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
-Lorsque vous êtes prêt à modifier les modifications, cliquez sur le **+** bouton (plus) de chaque fichier que vous souhaitez mettre en scène, ou cliquez avec le bouton droit sur un fichier, puis sélectionnez **étape**. Vous pouvez également mettre en place tous vos fichiers modifiés d’un seul clic en cliquant sur le bouton « stage tout » **+** (plus) en haut de la section **modifications** .
+Lorsque vous êtes prêt à modifier les modifications, cliquez sur le **+** bouton (plus) de chaque fichier que vous souhaitez mettre en scène, ou cliquez avec le bouton droit sur un fichier, puis sélectionnez **étape** . Vous pouvez également mettre en place tous vos fichiers modifiés d’un seul clic en cliquant sur le bouton « stage tout » **+** (plus) en haut de la section **modifications** .
 
-Lorsque vous mettez en place une modification, Visual Studio crée une section **modifications intermédiaires** . Seules les modifications apportées à la section **modifications intermédiaires** sont ajoutées à la validation suivante, ce que vous pouvez faire en sélectionnant **valider les étapes intermédiaires**. Les modifications peuvent également être désactivées en cliquant sur le bouton **–** (moins). La commande équivalente pour cette action est `git commit -m "Your commit message"` .
+Lorsque vous mettez en place une modification, Visual Studio crée une section **modifications intermédiaires** . Seules les modifications apportées à la section **modifications intermédiaires** sont ajoutées à la validation suivante, ce que vous pouvez faire en sélectionnant **valider les étapes intermédiaires** . Les modifications peuvent également être désactivées en cliquant sur le bouton **–** (moins). La commande équivalente pour cette action est `git commit -m "Your commit message"` .
 
-Vous pouvez également choisir de ne pas déployer vos fichiers modifiés en ignorant la zone de transit. Dans ce cas, Visual Studio vous permet de valider vos modifications directement sans avoir à les déployer. Entrez simplement votre message de validation, puis sélectionnez **valider tout**. La commande équivalente pour cette action est `git commit -a` .
+Vous pouvez également choisir de ne pas déployer vos fichiers modifiés en ignorant la zone de transit. Dans ce cas, Visual Studio vous permet de valider vos modifications directement sans avoir à les déployer. Entrez simplement votre message de validation, puis sélectionnez **valider tout** . La commande équivalente pour cette action est `git commit -a` .
 
 Visual Studio facilite également la validation et la synchronisation d’un clic à l’aide des raccourcis **valider tout et pousser** et **valider tout et synchroniser** . Lorsque vous double-cliquez sur un fichier dans les sections **modifications** et **modifications intermédiaires** , vous pouvez voir une comparaison ligne par ligne avec la version non modifiée du fichier.
 
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
 > [!TIP]
-> Vous pouvez associer l’élément de travail Azure DevOps à une validation en utilisant le caractère « # » si vous êtes connecté au référentiel Azure DevOps. Vous pouvez connecter votre référentiel Azure DevOps via **Team Explorer**  >  **gérer les connexions**.
+> Vous pouvez associer l’élément de travail Azure DevOps à une validation en utilisant le caractère « # » si vous êtes connecté au référentiel Azure DevOps. Vous pouvez connecter votre référentiel Azure DevOps via **Team Explorer**  >  **gérer les connexions** .
 
 ### <a name="select-an-existing-branch"></a>Sélectionner une branche existante
 
@@ -142,7 +142,7 @@ L’indicateur fonctionne également comme un lien pour vous connecter à l’hi
 
 #### <a name="commit-details"></a>Détails de la validation
 
-Lorsque vous double-cliquez sur une **validation**, Visual Studio ouvre ses détails dans une fenêtre outil distincte. À partir de là, vous pouvez annuler la validation, réinitialiser la validation, modifier le message de validation ou créer une étiquette sur la validation. Lorsque vous cliquez sur un fichier modifié dans la validation, Visual Studio ouvre la vue de **comparaison** côte à côte de la validation et de son parent.
+Lorsque vous double-cliquez sur une **validation** , Visual Studio ouvre ses détails dans une fenêtre outil distincte. À partir de là, vous pouvez annuler la validation, réinitialiser la validation, modifier le message de validation ou créer une étiquette sur la validation. Lorsque vous cliquez sur un fichier modifié dans la validation, Visual Studio ouvre la vue de **comparaison** côte à côte de la validation et de son parent.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
@@ -154,7 +154,7 @@ Visual Studio facilite l’identification et la résolution d’un conflit de fu
 
 :::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
-La fenêtre **modifications git** affiche également un message « la*fusion est en cours avec des conflits*», avec les fichiers non fusionnés dans leur section distincte située en dessous.
+La fenêtre **modifications git** affiche également un message « la *fusion est en cours avec des conflits* », avec les fichiers non fusionnés dans leur section distincte située en dessous.
 
 :::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
@@ -166,7 +166,7 @@ Toutefois, si aucune de ces fenêtres n’est ouverte et que vous accédez au fi
     >>>>>>> main
 ```
 
-Au lieu de cela, Visual Studio affiche une barre d’info dorée en haut de la page qui indique que le fichier ouvert présente des conflits. Ensuite, vous pouvez cliquer sur le lien pour ouvrir l' **éditeur de fusion**.
+Au lieu de cela, Visual Studio affiche une barre d’info dorée en haut de la page qui indique que le fichier ouvert présente des conflits. Ensuite, vous pouvez cliquer sur le lien pour ouvrir l' **éditeur de fusion** .
 
 :::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
