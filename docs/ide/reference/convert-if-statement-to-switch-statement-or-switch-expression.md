@@ -1,5 +1,6 @@
 ---
-title: Convertir l’instruction if en instruction switch ou en expression switch
+title: Instruction Convert if pour instruction switch ou expression
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094165"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102530"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Convertir l’instruction if en instruction switch ou en expression switch
 
@@ -24,23 +25,23 @@ Cette refactorisation s’applique à :
 
 **Ce qui suit :** Convertit une instruction if en une [instruction switch](/dotnet/csharp/language-reference/keywords/switch) ou en une [expression de commutateur](/dotnet/csharp/whats-new/csharp-8#switch-expressions)C# 8,0.
 
-Dans les **cas suivants :** Vous souhaitez convertir une `if` instruction en une `switch` instruction ou une `switch` expression, et vice versa. 
+Dans les **cas suivants :** Vous souhaitez convertir une `if` instruction en une `switch` instruction ou une `switch` expression, et vice versa.
 
 **Pourquoi :** Si vous utilisez une `if` instruction, cette refactorisation permet une transition facile vers des `switch` instructions ou des `switch` expressions.
 
 ## <a name="how-to"></a>Procédures
 
 1. Placez votre curseur dans le mot clé `if`.
-2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
-3. Sélectionnez l’une des deux options suivantes : 
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations** .
+3. Sélectionnez l’une des deux options suivantes :
 
-    Sélectionnez **convertir en instruction « switch »**.
+    Sélectionnez **convertir en instruction « switch »** .
 
-   ![Convertir l’instruction if en instruction switch](media/convert-if-to-switch-statement.png) 
+   ![Convertir l’instruction if en instruction switch](media/convert-if-to-switch-statement.png)
 
-    Sélectionnez **convertir en expression « Switch »**. 
+    Sélectionnez **convertir en expression « Switch »** .
 
-    ![Convertir l’instruction if en expression Switch](media/convert-if-to-switch-expression.png) 
+    ![Convertir l’instruction if en expression Switch](media/convert-if-to-switch-expression.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,7 @@
 ---
-title: Saisie semi-automatique des valeurs DateTime et TimeSpan via le menu IntelliSense
+title: Saisie semi-automatique des valeurs DateTime et TimeSpan avec IntelliSense
+description: Utilisez le menu IntelliSense pour compléter un littéral de chaîne DateTime et TimeSpan et une chaîne de format.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: reference
 author: mikadumont
@@ -9,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36b6d5440e532653845638f87f7f1d7066af6ba3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd77f2b6b491dd49365cea10b22828815c13d8d9
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87471550"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102517"
 ---
-# <a name="datetime-and-timespan-completion-through-intellisense-menu"></a>Saisie semi-automatique des valeurs DateTime et TimeSpan via le menu IntelliSense
+# <a name="datetime-and-timespan-completion-by-using-the-intellisense-menu"></a>Achèvement des valeurs DateTime et TimeSpan à l’aide du menu IntelliSense
 
 Cette refactorisation s’applique à :
 
@@ -24,7 +26,7 @@ Cette refactorisation s’applique à :
 
 **Ce qui suit :** Littéral de chaîne DateTime et TimeSpan et saisie semi-automatique de la chaîne de format via le menu IntelliSense.
 
-Dans les **cas suivants :** Vous souhaitez écrire un littéral de chaîne DateTime et TimeSpan et une chaîne de format. IntelliSense vous offre une saisie semi-automatique de base et une explication de ce que signifient chacun des caractères. 
+Dans les **cas suivants :** Vous souhaitez écrire un littéral de chaîne DateTime et TimeSpan et une chaîne de format. IntelliSense vous offre une saisie semi-automatique de base et une explication de ce que signifient chacun des caractères.
 
 **Pourquoi :** La mémorisation des formats DateTime est difficile et IntelliSense peut vous aider à les écrire.
 

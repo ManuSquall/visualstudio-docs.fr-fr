@@ -1,6 +1,7 @@
 ---
-title: Refactoriser du code pour convertir une requête LINQ en une instruction foreach
-description: Convertit une requête LINQ écrite dans une syntaxe de requête en une instruction foreach.
+title: Convertir une requête LINQ en instruction foreach
+ms.custom: SEO-VS-2020
+description: Refactorisez le code pour convertir toute requête LINQ écrite dans une syntaxe de requête en une instruction foreach.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -11,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7abdebf36ab075dfd289069671cf3b6851a72b75
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 832c4160d743ca35dbe41eb0f0cbafd81d60dd26
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659366"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102543"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refactorisation pour convertir LINQ en une instruction foreach
 
@@ -39,10 +40,10 @@ Cette refactorisation s’applique à :
 
    ![Menu des actions rapides pour convertir LINQ en foreach](media/convert-linq-to-foreach.png)
 
-1. Sélectionnez **Convertir en 'foreach'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
+1. Sélectionnez **Convertir en 'foreach'** . Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer** .
 
 > [!NOTE]
-> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour la variable d’itération de la boucle `foreach`. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de l’ordinateur sous **Outils**  >  **options**  >  **éditeur de texte**  >  **C#**  >  **style**  >  **général**  >  ** \' var**, ou au niveau de la solution dans un fichier [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
+> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour la variable d’itération de la boucle `foreach`. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de l’ordinateur sous **Outils**  >  **options**  >  **éditeur de texte**  >  **C#**  >  **style**  >  **général**  >  **\' var** , ou au niveau de la solution dans un fichier [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Si vous modifiez un paramètre de style de code dans **Options** , rouvrez le fichier de code pour appliquer les modifications.
 
 ## <a name="see-also"></a>Voir aussi
 

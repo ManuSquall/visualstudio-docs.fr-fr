@@ -1,5 +1,6 @@
 ---
-title: Boîte de dialogue Options, Projets et solutions, Projets web
+title: Projets Web dans la boîte de dialogue Options
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
 f1_keywords:
@@ -10,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114484"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102634"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Boîte de dialogue Options, Projets et solutions, Projets web
 
-Définit le serveur web à utiliser pour le développement de projets web dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et sélectionnez **Projets web**.
+Définit le serveur web à utiliser pour le développement de projets web dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour accéder à ces options, sélectionnez **Outils > Options** , développez **Projets et solutions** et sélectionnez **Projets web** .
 
 Par défaut, l’exécution d’un projet web dans Visual Studio utilise le Serveur Visual Studio Development. Pour plus d'informations, voir [Serveurs web dans Visual Studio pour les projets web ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 
