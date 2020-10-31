@@ -1,5 +1,7 @@
 ---
 title: Nœuds du concepteur Shader
+description: Utilisez les Articles de cette section de la documentation pour en savoir plus sur les différents nœuds du concepteur Shader que vous pouvez utiliser pour créer des effets graphiques.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bac48316e60422b9561535d67c14aeadbd416f4
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768786"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134228"
 ---
 # <a name="shader-designer-nodes"></a>Nœuds du concepteur Shader
 Les articles de cette section de la documentation contiennent des informations sur les différents nœuds du concepteur Shader pour créer des effets graphiques.

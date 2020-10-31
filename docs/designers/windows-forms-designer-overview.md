@@ -1,5 +1,7 @@
 ---
 title: Concevoir des applications Windows Forms
+description: Découvrez Concepteur Windows Forms dans Visual Studio, qui fournit une solution de développement rapide pour la création d’applications basées sur Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: overview
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f43b3e529d7e56af7639df1118baa64f0d594e6c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768755"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134653"
 ---
 # <a name="windows-forms-designer-overview"></a>Vue d’ensemble du Concepteur Windows Forms
 
@@ -30,10 +32,10 @@ Le Concepteur Windows Forms dans Visual Studio fournit une solution de développ
 
 - Ajustez le positionnement du contrôle sélectionné en le déplaçant avec la souris ou les touches de direction. De même, ajustez le placement plus précisément à l’aide de Ctrl et des touches fléchées. Enfin, ajustez la taille du contrôle à l’aide de Maj et des touches fléchées.
 
-- Sélectionnez plusieurs contrôles en sélectionnant **Maj** ou **Ctrl** tout en cliquant. Lors de l'utilisation de **Maj**+clic, le premier contrôle sélectionné est le contrôle dominant lors de l’alignement ou de la manipulation de la taille. Lorsque vous utilisez **Ctrl**+clic, le dernier contrôle sélectionné est dominant, donc le contrôle dominant change avec chaque nouveau contrôle ajouté. Vous pouvez également sélectionner plusieurs contrôles en faisant glisser un rectangle de sélection autour des contrôles que vous souhaitez sélectionner.
+- Sélectionnez plusieurs contrôles en sélectionnant **Maj** ou **Ctrl** tout en cliquant. Lors de l'utilisation de **Maj** +clic, le premier contrôle sélectionné est le contrôle dominant lors de l’alignement ou de la manipulation de la taille. Lorsque vous utilisez **Ctrl** +clic, le dernier contrôle sélectionné est dominant, donc le contrôle dominant change avec chaque nouveau contrôle ajouté. Vous pouvez également sélectionner plusieurs contrôles en faisant glisser un rectangle de sélection autour des contrôles que vous souhaitez sélectionner.
 
 > [!NOTE]
-> Utilisez le Concepteur Windows Forms, et non l’éditeur de ressources, pour apporter des modifications au fichier de ressources d’un formulaire (*.resx*). Si vous modifiez un fichier .resx basé sur des formulaires, vous verrez un avertissement indiquant que les modifications que vous apportez dans l’éditeur de ressources peuvent être perdues. Cela est dû au fait que le Concepteur Windows Forms génère le fichier .resx.
+> Utilisez le Concepteur Windows Forms, et non l’éditeur de ressources, pour apporter des modifications au fichier de ressources d’un formulaire ( *.resx* ). Si vous modifiez un fichier .resx basé sur des formulaires, vous verrez un avertissement indiquant que les modifications que vous apportez dans l’éditeur de ressources peuvent être perdues. Cela est dû au fait que le Concepteur Windows Forms génère le fichier .resx.
 
 ## <a name="see-also"></a>Voir aussi
 

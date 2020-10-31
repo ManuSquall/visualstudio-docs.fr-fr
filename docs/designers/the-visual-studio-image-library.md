@@ -1,5 +1,7 @@
 ---
 title: bibliothèque d'images
+description: Découvrez la bibliothèque d’images Visual Studio qui contient des images d’application qui s’affichent dans Visual Studio, Windows, Office et d’autres logiciels Microsoft.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dc33f4dcc8edf0b7793a726a0b626360b9edb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c37868558ec483b85b4480ba85a1eaa5fe23beb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768667"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134705"
 ---
 # <a name="the-visual-studio-image-library"></a>Bibliothèque d’images Visual Studio
 

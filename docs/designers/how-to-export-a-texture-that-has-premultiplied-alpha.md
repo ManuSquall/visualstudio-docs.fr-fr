@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées
+description: Découvrez comment le pipeline de contenu d’image génère des textures alpha prémultipliées à partir d’une image source qui peut être plus simple à utiliser et plus robuste.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1325b5bc0009ba0c022d37be70ca6aab7cc8084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8dd554ed8f3b1664f889909d5d5ae7a30e9889a
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768919"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134816"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées
 
@@ -40,10 +42,10 @@ Les valeurs alpha prémultipliées offrent plusieurs avantages par rapport aux v
 
 1. Commencez par une texture de base. Chargez un fichier image existant ou créez-en un comme décrit dans [Guide pratique pour créer une texture de base](../designers/how-to-create-a-basic-texture.md).
 
-2. Configurez le fichier de texture pour qu’il soit traité par le pipeline de contenus d’image. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du fichier de texture, puis choisissez **Propriétés**. Dans la page **Propriétés de configuration**  >  **général** , définissez la propriété **type d’élément** sur **pipeline de contenu d’image**. Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non**, puis choisissez le bouton **Appliquer**. La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.
+2. Configurez le fichier de texture pour qu’il soit traité par le pipeline de contenus d’image. Dans l’ **Explorateur de solutions** , ouvrez le menu contextuel du fichier de texture, puis choisissez **Propriétés** . Dans la page **Propriétés de configuration**  >  **général** , définissez la propriété **type d’élément** sur **pipeline de contenu d’image** . Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non** , puis choisissez le bouton **Appliquer** . La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.
 
-3. Configurez le pipeline de contenus d’image pour générer des valeurs alpha prémultipliées. Dans la page **Propriétés de configuration**  >  **pipeline de contenu d’image**  >  **général** , définissez la propriété **convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)**.
+3. Configurez le pipeline de contenus d’image pour générer des valeurs alpha prémultipliées. Dans la page **Propriétés de configuration**  >  **pipeline de contenu d’image**  >  **général** , définissez la propriété **convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)** .
 
-4. Choisissez le bouton **OK**.
+4. Choisissez le bouton **OK** .
 
    Quand vous générez le projet, le pipeline de contenus d’image convertit l’image source du format de travail dans le format de sortie que vous avez spécifié (cette opération inclut la conversion de l’image au format des valeurs alpha prémultipliées) et le résultat est copié dans le répertoire de sortie du projet.

@@ -1,5 +1,7 @@
 ---
 title: Utilisation des nuanceurs
+description: Découvrez comment concevoir des effets de nuanceur personnalisés à l’aide du concepteur de nuanceur basé sur un graphique dans Visual Studio. Vous pouvez utiliser des nuanceurs dans votre application ou votre jeu DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7ccb4f838c702cb1843d5c0f44dd7f54219f27a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce08d475c75f197180417dcf94f9d52f59fb2e7b
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589771"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93133934"
 ---
 # <a name="work-with-shaders"></a>Utiliser des nuanceurs
 
@@ -23,7 +25,7 @@ Vous pouvez utiliser le concepteur Shader graphique dans Visual Studio pour conc
 
 Un *nuanceur* est un logiciel qui effectue des calculs graphiques, par exemple des transformations de sommets ou une coloration de pixels, et qui s’exécute généralement sur un processeur graphique (GPU) plutôt que sur l’UC. Comme la plupart des phases du pipeline graphique traditionnel à fonction fixe sont maintenant effectuées par des programmes de nuanceur, vous pouvez les utiliser pour créer un pipeline spécifique aux besoins de votre application.
 
-Les types les plus courants de nuanceurs sont les *nuanceurs de sommets*, qui effectuent des calculs par sommet et remplacent la transformation de fonction fixe et le circuit d’éclairage dans le matériel graphique non programmable, et les *nuanceurs de pixels*, qui effectuent des calculs par pixel qui déterminent la couleur d’un pixel et remplacent le circuit de combinaison de couleurs à fonction fixe dans le matériel graphique non programmable. Grâce au matériel graphique moderne, d’autres types de nuanceurs sont possibles : les *nuanceurs de coque*, les *nuanceurs de domaine* et les *nuanceurs de géométrie* pour les calculs graphiques, ainsi que les *nuanceurs de calcul* pour les calculs non graphiques. Aucune de ces phases n’est disponible dans le matériel graphique non programmable. Les nuanceurs ont été créés initialement à l’aide d’un langage semblable à un langage d’assembly qui fournissait des instructions parallèles aux données (SIMD) et centrées sur les graphiques (produit scalaire). Aujourd’hui, les nuanceurs sont généralement créés à l’aide de langages de haut niveau, semblables au langage C, comme HLSL (High Level Shader Language).
+Les types les plus courants de nuanceurs sont les *nuanceurs de sommets* , qui effectuent des calculs par sommet et remplacent la transformation de fonction fixe et le circuit d’éclairage dans le matériel graphique non programmable, et les *nuanceurs de pixels* , qui effectuent des calculs par pixel qui déterminent la couleur d’un pixel et remplacent le circuit de combinaison de couleurs à fonction fixe dans le matériel graphique non programmable. Grâce au matériel graphique moderne, d’autres types de nuanceurs sont possibles : les *nuanceurs de coque* , les *nuanceurs de domaine* et les *nuanceurs de géométrie* pour les calculs graphiques, ainsi que les *nuanceurs de calcul* pour les calculs non graphiques. Aucune de ces phases n’est disponible dans le matériel graphique non programmable. Les nuanceurs ont été créés initialement à l’aide d’un langage semblable à un langage d’assembly qui fournissait des instructions parallèles aux données (SIMD) et centrées sur les graphiques (produit scalaire). Aujourd’hui, les nuanceurs sont généralement créés à l’aide de langages de haut niveau, semblables au langage C, comme HLSL (High Level Shader Language).
 
 Vous pouvez utiliser le concepteur Shader pour créer des nuanceurs de pixels de manière interactive plutôt qu’en entrant et en compilant du code. Dans le concepteur Shader, un nuanceur est défini par un nombre de nœuds qui représentent des données et des opérations, et par des connexions entre les nœuds qui représentent le flux de valeurs de données et les résultats intermédiaires dans le nuanceur. En utilisant cette approche et l’aperçu en temps réel dans le concepteur Shader, vous pouvez visualiser plus facilement l’exécution du nuanceur et « découvrir » des variations de nuanceur intéressantes en expérimentant.
 
@@ -35,7 +37,7 @@ Le langage DGSL étant compatible avec le langage DGML, vous pouvez utiliser des
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de Visual Studio pour travailler avec des nuanceurs.|
 |[Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)|Décrit les types de nœuds du concepteur Shader que vous pouvez utiliser pour obtenir des effets graphiques.|

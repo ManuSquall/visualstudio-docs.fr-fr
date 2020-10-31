@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : créer un nuanceur Lambert de base'
+description: Découvrez comment utiliser le concepteur de nuanceur et le langage de nuanceur de graphe orienté pour créer un nuanceur d’éclairage qui implémente le modèle d’éclairage Lambert classique.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f9e5cf95b3766b6c6ceb93c740870a91cfc6af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1677de15006dcf3bbe2f7a6b925be247518f752
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769201"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134522"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Guide pratique pour créer un nuanceur Lambert de base
 
@@ -27,13 +29,13 @@ Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boît
 
 1. Créez un nuanceur DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
-2. Déconnectez le nœud **Couleur du point** du nœud **Couleur finale**. Choisissez le terminal **RVB** du nœud **Couleur du point**, puis choisissez **Rompre les liaisons**. Laissez le terminal **Alpha** connecté.
+2. Déconnectez le nœud **Couleur du point** du nœud **Couleur finale** . Choisissez le terminal **RVB** du nœud **Couleur du point** , puis choisissez **Rompre les liaisons** . Laissez le terminal **Alpha** connecté.
 
-3. Ajoutez un nœud **Lambert** au graphique. Dans la **Boîte à outils**, sous **Utilitaire**, sélectionnez **Lambert** et déplacez-le vers l’aire de conception. Le nœud lambert calcule la contribution de couleur diffuse totale du pixel, en fonction des paramètres d’éclairage ambiant et diffus.
+3. Ajoutez un nœud **Lambert** au graphique. Dans la **Boîte à outils** , sous **Utilitaire** , sélectionnez **Lambert** et déplacez-le vers l’aire de conception. Le nœud lambert calcule la contribution de couleur diffuse totale du pixel, en fonction des paramètres d’éclairage ambiant et diffus.
 
-4. Connectez le nœud **Couleur du point** au nœud **Lambert**. En mode **Sélection**, déplacez le terminal **RVB** du nœud **Couleur du point** vers le terminal **Couleur diffuse** du nœud **Lambert**. Cette connexion fournit au nœud lambert la couleur diffuse interpolée du pixel.
+4. Connectez le nœud **Couleur du point** au nœud **Lambert** . En mode **Sélection** , déplacez le terminal **RVB** du nœud **Couleur du point** vers le terminal **Couleur diffuse** du nœud **Lambert** . Cette connexion fournit au nœud lambert la couleur diffuse interpolée du pixel.
 
-5. Connectez la valeur de couleur calculée à la couleur finale. Déplacez le terminal **Sortie** du nœud **Lambert** vers le terminal **RVB** du nœud **Couleur finale**.
+5. Connectez la valeur de couleur calculée à la couleur finale. Déplacez le terminal **Sortie** du nœud **Lambert** vers le terminal **RVB** du nœud **Couleur finale** .
 
    L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un modèle de théière.
 

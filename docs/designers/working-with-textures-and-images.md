@@ -1,5 +1,7 @@
 ---
 title: Utilisation des textures et des images
+description: Apprenez à utiliser l’éditeur d’images dans Visual Studio pour créer et modifier des textures et des images dans des formats tels que ceux utilisés dans le développement d’applications DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589862"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134718"
 ---
 # <a name="work-with-textures-and-images"></a>Utiliser des textures et des images
 
@@ -46,11 +48,11 @@ Les mappages de hauteur comportent les données des champs de hauteur. Elles son
 
 ### <a name="cube-maps"></a>Mappages de cube
 
-Les mappages de cube peuvent contenir différents types de données, par exemple, des couleurs ou des normales, mais sont organisées avec six textures sur les faces d’un cube. De ce fait, des mappages de cube ne sont pas échantillonnés en fournissant des coordonnées de texture, mais en fournissant un vecteur dont l’origine est le centre du cube ; l’échantillon est prélevé au point d’intersection entre le vecteur et le cube. Les mappages de cube sont utilisés pour fournir une approximation de l’environnement pouvant être utilisé pour calculer les réflexions, appelée *mappage de l’environnement*, ou fournir une texture aux objets sphériques avec moins de distorsion que les textures de base, à deux dimensions.
+Les mappages de cube peuvent contenir différents types de données, par exemple, des couleurs ou des normales, mais sont organisées avec six textures sur les faces d’un cube. De ce fait, des mappages de cube ne sont pas échantillonnés en fournissant des coordonnées de texture, mais en fournissant un vecteur dont l’origine est le centre du cube ; l’échantillon est prélevé au point d’intersection entre le vecteur et le cube. Les mappages de cube sont utilisés pour fournir une approximation de l’environnement pouvant être utilisé pour calculer les réflexions, appelée *mappage de l’environnement* , ou fournir une texture aux objets sphériques avec moins de distorsion que les textures de base, à deux dimensions.
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|
 |[Exemples de l’éditeur d’images](../designers/how-to-create-a-basic-texture.md)|Fournit des liens vers des rubriques qui expliquent comment utiliser l’Éditeur d’images pour effectuer des tâches de traitement d’images courantes.|

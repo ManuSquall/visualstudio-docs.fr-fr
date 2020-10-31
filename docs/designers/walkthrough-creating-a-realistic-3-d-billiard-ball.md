@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’une boule de billard 3D réaliste'
+description: Découvrez comment créer une boule de billard 3D à l’aide du concepteur de nuanceur et de l’éditeur d’images dans Visual Studio en combinant des techniques de nuanceur avec des ressources de texture.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bebaa8c197d0b0a4447739d900062bef2bda37c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 646522fe5c893508cbe60a0886ba704e6829252f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816655"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134764"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : Créer une boule de billard 3D réaliste
 
@@ -39,7 +41,7 @@ La sphère est la forme d’aperçu par défaut dans le concepteur Shader. Si vo
 
 ### <a name="to-preview-the-shader-by-using-a-sphere"></a>Pour afficher un aperçu du nuanceur à l’aide d’une sphère
 
-- Dans la barre d’outils du concepteur Shader, choisissez **Aperçu avec la sphère**.
+- Dans la barre d’outils du concepteur Shader, choisissez **Aperçu avec la sphère** .
 
 À l’étape suivante, vous allez créer un programme de nuanceur qui applique une texture au modèle, mais vous devez commencer par créer une texture que vous pouvez utiliser. Cette procédure pas à pas montre comment créer la texture à l’aide de l’éditeur d’images, qui fait partie de Visual Studio, mais vous pouvez utiliser n’importe quel éditeur d’images capable d’enregistrer la texture dans un format approprié.
 
@@ -49,7 +51,7 @@ Assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont af
 
 1. Créez une texture à utiliser. Pour plus d’informations sur l’ajout d’une texture à votre projet, consultez la section Mise en route de l’article [Éditeur d’images](../designers/image-editor.md).
 
-2. Définissez la taille de l’image afin que sa largeur soit deux fois supérieure à sa hauteur. Cela est nécessaire à cause du mode de mappage de la texture à la surface sphérique de la boule de billard. Pour redimensionner l’image, dans la fenêtre **Propriétés**, spécifiez les nouvelles valeurs des propriétés **Largeur** et **Hauteur**. Par exemple, définissez la largeur sur 512 et la hauteur sur 256.
+2. Définissez la taille de l’image afin que sa largeur soit deux fois supérieure à sa hauteur. Cela est nécessaire à cause du mode de mappage de la texture à la surface sphérique de la boule de billard. Pour redimensionner l’image, dans la fenêtre **Propriétés** , spécifiez les nouvelles valeurs des propriétés **Largeur** et **Hauteur** . Par exemple, définissez la largeur sur 512 et la hauteur sur 256.
 
 3. Dessinez une texture pour la boule de billard, en conservant à l’esprit la façon dont une texture est mappée à une sphère.
 
@@ -75,7 +77,7 @@ Assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont af
 
     ![Graphique du nuanceur qui s'applique à la texture d'un objet](../designers/media/gfx_shader_demo_billiard_step_1.png)
 
-3. Appliquez la texture que vous avez créée lors de la procédure précédente en configurant les propriétés de texture. Affectez **Texture1** comme valeur de la propriété **Texture** du nœud **Échantillon de texture**, puis spécifiez le fichier de texture en utilisant la propriété **Nom de fichier** du groupe de propriétés **Texture1** de la même fenêtre de propriétés.
+3. Appliquez la texture que vous avez créée lors de la procédure précédente en configurant les propriétés de texture. Affectez **Texture1** comme valeur de la propriété **Texture** du nœud **Échantillon de texture** , puis spécifiez le fichier de texture en utilisant la propriété **Nom de fichier** du groupe de propriétés **Texture1** de la même fenêtre de propriétés.
 
    Pour plus d’informations sur la façon d’appliquer une texture dans votre nuanceur, consultez [Guide pratique pour créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).
 
@@ -97,7 +99,7 @@ En infographie, les *modèles d’éclairage* (approximations simplifiées d’i
 
    ![Graphique du nuanceur avec éclairage Lambert ajouté](../designers/media/gfx_shader_demo_billiard_step_2.png)
 
-- Si vous le souhaitez, vous pouvez ajuster le comportement de l’éclairage en configurant la propriété **MaterialDiffuse** du graphique de nuanceur. Pour accéder aux propriétés du graphique de nuanceur, choisissez une zone vide de l’aire de conception puis, dans la fenêtre **Propriétés**, recherchez la propriété à laquelle vous souhaitez accéder.
+- Si vous le souhaitez, vous pouvez ajuster le comportement de l’éclairage en configurant la propriété **MaterialDiffuse** du graphique de nuanceur. Pour accéder aux propriétés du graphique de nuanceur, choisissez une zone vide de l’aire de conception puis, dans la fenêtre **Propriétés** , recherchez la propriété à laquelle vous souhaitez accéder.
 
 Pour plus d’informations sur la façon d’appliquer l’éclairage Lambert dans votre nuanceur, consultez [Guide pratique pour créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
 
@@ -119,7 +121,7 @@ Le modèle d’éclairage Phong repose sur le modèle d’éclairage Lambert pou
 
     ![Graphique du nuanceur avec éclairage spéculaire ajouté](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
-2. Si vous le souhaitez, vous pouvez ajuster le comportement de la surbrillance spéculaire en configurant les propriétés spéculaires (**MaterialSpecular** et **MaterialSpecularPower**) du graphique de nuanceur. Pour accéder aux propriétés du graphique de nuanceur, choisissez une zone vide de l’aire de conception puis, dans la fenêtre **Propriétés**, recherchez la propriété à laquelle vous souhaitez accéder.
+2. Si vous le souhaitez, vous pouvez ajuster le comportement de la surbrillance spéculaire en configurant les propriétés spéculaires ( **MaterialSpecular** et **MaterialSpecularPower** ) du graphique de nuanceur. Pour accéder aux propriétés du graphique de nuanceur, choisissez une zone vide de l’aire de conception puis, dans la fenêtre **Propriétés** , recherchez la propriété à laquelle vous souhaitez accéder.
 
    Pour plus d’informations sur la façon d’appliquer les surbrillances spéculaires dans votre nuanceur, consultez [Guide pratique pour créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md).
 
@@ -133,7 +135,7 @@ Quand des mises en surbrillances spéculaires sont appliquées, la boule de bill
 
 Si vous examinez attentivement une vraie boule de billard, vous pouvez voir que sa surface brillante n’affiche pas simplement des surbrillances spéculaires, mais qu’elle reflète également faiblement une image du monde autour d’elle. Vous pouvez simuler ce reflet en utilisant une image de l’environnement comme texture et en la combinant avec la propre texture du modèle afin de déterminer la couleur finale de chaque pixel. En fonction du type de finition que vous souhaitez, vous pouvez combiner plus ou moins la texture du reflet avec le reste du nuanceur. Par exemple, un nuanceur qui simule une surface fortement réfléchissante comme un miroir peut utiliser uniquement la texture de reflet, mais un nuanceur qui simule un reflet plus subtil comme celui d’une boule de billard peut combiner seulement une petite partie de la valeur de la texture de reflet avec le reste du calcul de nuanceur.
 
-Bien sûr, vous ne pouvez pas simplement appliquer l’image reflétée au modèle de la même façon que vous appliquez la carte de texture du modèle, car dans ce cas le reflet du monde se déplacerait avec la boule de billard comme si le reflet y était collé. Étant donné qu’un reflet peut provenir de n’importe quelle direction, vous avez besoin de fournir une valeur d’image de reflet pour n’importe quel angle, et d’un moyen de conserver l’image de reflet orientée selon le monde. Pour répondre à ces exigences, vous pouvez utiliser un type spécial de carte de texture, appelé *carte cubique*, qui fournit six textures organisées pour former les côtés d’un cube. À l’intérieur de ce cube, vous pouvez pointer vers n’importe quelle direction pour rechercher une valeur de texture. Si les textures de chaque côté du cube contiennent des images de l’environnement, vous pouvez simuler un reflet en échantillonnant l’emplacement approprié sur la surface du cube. En conservant le cube aligné sur le monde, vous obtenez un reflet précis de l’environnement. Pour déterminer où le cube doit être échantillonné, vous calculez simplement le reflet du vecteur de la caméra sur la surface de l’objet, puis vous l’utilisez comme coordonnées de texture 3D. L’utilisation des cartes cubiques de cette manière est une technique courante appelée *mappage d’environnement*.
+Bien sûr, vous ne pouvez pas simplement appliquer l’image reflétée au modèle de la même façon que vous appliquez la carte de texture du modèle, car dans ce cas le reflet du monde se déplacerait avec la boule de billard comme si le reflet y était collé. Étant donné qu’un reflet peut provenir de n’importe quelle direction, vous avez besoin de fournir une valeur d’image de reflet pour n’importe quel angle, et d’un moyen de conserver l’image de reflet orientée selon le monde. Pour répondre à ces exigences, vous pouvez utiliser un type spécial de carte de texture, appelé *carte cubique* , qui fournit six textures organisées pour former les côtés d’un cube. À l’intérieur de ce cube, vous pouvez pointer vers n’importe quelle direction pour rechercher une valeur de texture. Si les textures de chaque côté du cube contiennent des images de l’environnement, vous pouvez simuler un reflet en échantillonnant l’emplacement approprié sur la surface du cube. En conservant le cube aligné sur le monde, vous obtenez un reflet précis de l’environnement. Pour déterminer où le cube doit être échantillonné, vous calculez simplement le reflet du vecteur de la caméra sur la surface de l’objet, puis vous l’utilisez comme coordonnées de texture 3D. L’utilisation des cartes cubiques de cette manière est une technique courante appelée *mappage d’environnement* .
 
 Le mappage d’environnement fournit une approximation efficace des vrais reflets comme décrit dans les paragraphes précédents. Vous pouvez fusionner des reflet mappés dans l’environnement dans votre nuanceur pour donner à la boule de billard une finition simulée qui donne l’impression qu’elle est davantage ancrée dans la scène.
 
@@ -143,7 +145,7 @@ La première étape consiste à créer une texture de carte cubique . Dans de no
 
 1. Créez une texture à utiliser. Pour plus d’informations sur l’ajout d’une texture à votre projet, consultez la section Mise en route de l’article [Éditeur d’images](../designers/image-editor.md).
 
-2. Définissez la taille de l’image afin que sa largeur soit égale à sa hauteur, et qu’elle soit une puissance de deux ; cela est nécessaire en raison de la façon dont une carte cubique est indexée. Pour redimensionner l’image, dans la fenêtre **Propriétés**, spécifiez les nouvelles valeurs des propriétés **Largeur** et **Hauteur**. Par exemple, affectez la valeur 256 aux propriétés **Largeur** et **Hauteur**.
+2. Définissez la taille de l’image afin que sa largeur soit égale à sa hauteur, et qu’elle soit une puissance de deux ; cela est nécessaire en raison de la façon dont une carte cubique est indexée. Pour redimensionner l’image, dans la fenêtre **Propriétés** , spécifiez les nouvelles valeurs des propriétés **Largeur** et **Hauteur** . Par exemple, affectez la valeur 256 aux propriétés **Largeur** et **Hauteur** .
 
 3. Utilisez une couleur unie pour remplir la texture. Cette texture sera le bas de la carte cubique, qui correspond à la surface de la table de billard. Gardez en mémoire la couleur que vous avez utilisée pour la texture suivante.
 
@@ -161,19 +163,19 @@ La première étape consiste à créer une texture de carte cubique . Dans de no
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Pour assembler une carte cubique à l’aide de l’outil DirectX Texture
 
-1. Dans l’outil de texture DirectX, dans le menu principal, choisissez **fichier**  >  **nouvelle texture**. La boîte de dialogue **New Texture** s’affiche.
+1. Dans l’outil de texture DirectX, dans le menu principal, choisissez **fichier**  >  **nouvelle texture** . La boîte de dialogue **New Texture** s’affiche.
 
-2. Dans le groupe **Texture Type**, choisissez **Cubemap Texture**.
+2. Dans le groupe **Texture Type** , choisissez **Cubemap Texture** .
 
-3. Dans le groupe **Dimensions**, entrez la valeur correcte pour **Width** et **Height**, puis choisissez **OK**. Un nouveau document de texture apparaît. Par défaut, la texture affichée en premier dans le document de texture correspond à la face de cube **Positive X**.
+3. Dans le groupe **Dimensions** , entrez la valeur correcte pour **Width** et **Height** , puis choisissez **OK** . Un nouveau document de texture apparaît. Par défaut, la texture affichée en premier dans le document de texture correspond à la face de cube **Positive X** .
 
-4. Chargez la texture que vous avez créée pour le côté du cube de texture sur la face de cube. Dans le menu principal, choisissez **fichier**  >  **ouvrir sur cette face carte cubique**, sélectionnez la texture que vous avez créée pour le côté du cube, puis choisissez **ouvrir**.
+4. Chargez la texture que vous avez créée pour le côté du cube de texture sur la face de cube. Dans le menu principal, choisissez **fichier**  >  **ouvrir sur cette face carte cubique** , sélectionnez la texture que vous avez créée pour le côté du cube, puis choisissez **ouvrir** .
 
-5. Répétez l’étape 4 pour les faces de cube **Negative X**, **Positive Z** et **Negative Z**. Pour cela, vous devez afficher la face à charger. Pour afficher une facette différente du cube, dans le menu principal, choisissez **Afficher**  >  le visage de la**carte du cube**, puis sélectionnez la face que vous souhaitez afficher.
+5. Répétez l’étape 4 pour les faces de cube **Negative X** , **Positive Z** et **Negative Z** . Pour cela, vous devez afficher la face à charger. Pour afficher une facette différente du cube, dans le menu principal, choisissez **Afficher**  >  le visage de la **carte du cube** , puis sélectionnez la face que vous souhaitez afficher.
 
-6. Pour la face de cube **Positive Y**, chargez la texture que vous avez créée pour le haut du cube de texture.
+6. Pour la face de cube **Positive Y** , chargez la texture que vous avez créée pour le haut du cube de texture.
 
-7. Pour la face de cube **Negative Y**, chargez la texture que vous avez créée pour le bas du cube de texture.
+7. Pour la face de cube **Negative Y** , chargez la texture que vous avez créée pour le bas du cube de texture.
 
 8. Enregistrez la texture.
 
@@ -197,9 +199,9 @@ La première étape consiste à créer une texture de carte cubique . Dans de no
 
     ![Graphique du nuanceur avec environnement de mappage ajouté](../designers/media/gfx_shader_demo_billiard_step_4a.png)
 
-2. Appliquez la texture que vous avez créée lors de la procédure précédente en configurant les propriétés de texture de la carte cubique. Affectez **Texture2** comme valeur de la propriété **Texture** du nœud **Exemple de cubemap**, puis spécifiez le fichier de texture en utilisant la propriété **Nom de fichier** du groupe de propriétés **Texture2**.
+2. Appliquez la texture que vous avez créée lors de la procédure précédente en configurant les propriétés de texture de la carte cubique. Affectez **Texture2** comme valeur de la propriété **Texture** du nœud **Exemple de cubemap** , puis spécifiez le fichier de texture en utilisant la propriété **Nom de fichier** du groupe de propriétés **Texture2** .
 
-3. Si vous le souhaitez, vous pouvez ajuster la réflectivité de la boule de billard en configurant la propriété **Sortie** du nœud **Constante**. Pour accéder aux propriétés du nœud, sélectionnez-le puis, dans la fenêtre **Propriétés**, recherchez la propriété à laquelle vous souhaitez accéder.
+3. Si vous le souhaitez, vous pouvez ajuster la réflectivité de la boule de billard en configurant la propriété **Sortie** du nœud **Constante** . Pour accéder aux propriétés du nœud, sélectionnez-le puis, dans la fenêtre **Propriétés** , recherchez la propriété à laquelle vous souhaitez accéder.
 
    Quand le mappage d’environnement est appliqué, la boule de billard doit ressembler à ceci :
 

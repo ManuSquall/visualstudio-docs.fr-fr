@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : exporter un nuanceur'
+description: Découvrez comment utiliser le concepteur Shader pour exporter un nuanceur de langage de nuanceur de graphique orienté pour pouvoir l’utiliser dans votre application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9495e5aac16821927f5f61005cd16bd20e82687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768985"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134300"
 ---
 # <a name="how-to-export-a-shader"></a>Guide pratique pour exporter un nuanceur
 
@@ -23,13 +25,13 @@ Cet article indique comment utiliser le **Concepteur de nuanceur** pour exporter
 
 Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour pouvoir l’utiliser dans votre application, vous devez l’exporter dans un format pris en charge par votre API de graphismes. Vous pouvez exporter un nuanceur de différentes façons en fonction de vos besoins.
 
-1. Dans Visual Studio, ouvrez un fichier **Visual Shader Graph (.dgsl)**.
+1. Dans Visual Studio, ouvrez un fichier **Visual Shader Graph (.dgsl)** .
 
-     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)**, créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).
+     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)** , créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).
 
-2. Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé** > **Exporter** > **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** apparaît.
+2. Dans la barre d’outils **Concepteur de nuanceur** , choisissez **Avancé** > **Exporter** > **Exporter en tant que** . La boîte de dialogue **Exporter le nuanceur** apparaît.
 
-3. Dans la liste déroulante **Type de fichier**, choisissez le format d’exportation souhaité.
+3. Dans la liste déroulante **Type de fichier** , choisissez le format d’exportation souhaité.
 
      Voici les formats que vous pouvez choisir :
 
@@ -39,7 +41,7 @@ Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour po
 
      **En-tête C++ (\*.h)** Exporte le nuanceur en tant qu’en-tête de style C qui définit un tableau d’octets contenant le bytecode HLSL. Cette option peut allonger la durée du débogage et de la mise à jour corrective du code basé sur les problèmes des utilisateurs finaux, car l’application doit être recompilée pour tester le correctif. Toutefois, comme cette option rend difficile, mais pas impossible, la modification du nuanceur après son déploiement dans une application, elle est celle qui présente le niveau de difficulté le plus élevé pour un utilisateur souhaitant modifier le nuanceur de manière indésirable.
 
-4. Dans la zone de liste modifiable **Nom de fichier**, spécifiez un nom pour le nuanceur exporté, puis choisissez le bouton **Enregistrer**.
+4. Dans la zone de liste modifiable **Nom de fichier** , spécifiez un nom pour le nuanceur exporté, puis choisissez le bouton **Enregistrer** .
 
 ## <a name="see-also"></a>Voir aussi
 

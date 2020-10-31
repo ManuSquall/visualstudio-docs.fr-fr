@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b38490217a384e748ae97ec4b808f197b4af3b7b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 04ac5ba718e72085f8e050ecf0e2ce0cc1305629
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005651"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134266"
 ---
 # <a name="net-core-runtime"></a>Runtime .NET Core
 
@@ -24,7 +24,7 @@ Cet exemple montre comment personnaliser le Runtime .NET Core [dotnet/Runtime](h
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-Ce script est appelé à partir de _PostCloneSetup.ps1_ et peut également être exécuté localement pour configurer le référentiel. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_.
+Ce script est appelé à partir de _PostCloneSetup.ps1_ et peut également être exécuté localement pour configurer le référentiel. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_ .
 
 ```console
 devinit init
@@ -33,7 +33,7 @@ git config --system core.longpaths true
 
 ## <a name="packagesconfig"></a>packages.config
 
-Le fichier _packages.config_ est un fichier en [chocolat](https://chocolatey.org/) qui définit la liste des packages en chocolat à installer. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_.
+Le fichier _packages.config_ est un fichier en [chocolat](https://chocolatey.org/) qui définit la liste des packages en chocolat à installer. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_ .
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,6 +70,6 @@ Contenu de l' _.devcontainer.jssur_ le fichier dans la racine référentiel.
 
 ```json
 {
-  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File PostCloneSetup.ps1"
+  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File .\\PostCloneSetup.ps1"
 }
 ```

@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039797"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134730"
 ---
 # <a name="devinit-commands"></a>commandes devinit
 
 ## <a name="init"></a>Init
 
 ```console
-> devinit init
+devinit init
 ```
 
 Initialisez l’environnement en exécutant les outils spécifiés dans un [_.devinit.jssur_](devinit-json.md) le fichier dans le répertoire de travail actuel.  
@@ -34,10 +34,10 @@ Options facultatives pour la `devinit init` commande.
 
 | Argument             | Obligatoire | Description                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file            | Non       | Chemin d’accès à la _.devinit.jssur_ le fichier.                                         |
-| --erreur-action       | Non       | Spécifie comment gérer les erreurs. Options : arrêter, ignorer, continuer (par défaut).|
-| -v,--commentaires         | Non       | Émet une sortie détaillée.                                                      |
-| -n,--à sec         | Non       | Série sèche.                                                                  |
+| -f,--file            | No       | Chemin d’accès à la _.devinit.jssur_ le fichier.                                         |
+| --erreur-action       | No       | Spécifie comment gérer les erreurs. Options : arrêter, ignorer, continuer (par défaut).|
+| -v,--commentaires         | No       | Émet une sortie détaillée.                                                      |
+| -n,--à sec         | No       | Série sèche.                                                                  |
 
 #### <a name="--file-argument"></a>--argument de fichier
 
@@ -70,7 +70,7 @@ Voir [ci-dessous](#options-for-run).
 ## <a name="run"></a>Exécuter
 
 ```console
-> devinit run -t <toolname>
+devinit run -t <toolname>
 ```
 
 Exécute l’outil spécifique, les paramètres sont répertoriés ci-dessous. Consultez [la documentation](devinit-tool-list.md) de chaque outil pour une utilisation spécifique.
@@ -81,12 +81,12 @@ Options de la `devinit run` commande.
 
 | Argument                                      | Obligatoire | Description                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| outil-t,--                                     | Oui      | Obligatoire. Nom de l'outil.                                                             |
-| -i,--entrée                                    | Non       | Valeur d’entrée de l’outil. Par exemple, un nom de fichier, un package ou un nom.                     |
-| --erreur-action                                | Non       | Spécifie comment gérer les erreurs d’outil : arrêter, ignorer, continuer. La valeur par défaut consiste à arrêter. |
-| -v,--commentaires                                  | Non       | Émet une sortie détaillée.                                                                 |
-| -n,--à sec                                  | Non       | Série sèche.                                                                             |
-| --&lt;arg1 &gt; &lt; Arg2 &gt; ... &lt; argN&gt;  | Non       | Arguments de ligne de commande supplémentaires pour l’outil.                                       |
+| outil-t,--                                     | Yes      | Obligatoire. Nom de l'outil.                                                             |
+| -i,--entrée                                    | No       | Valeur d’entrée de l’outil. Par exemple, un nom de fichier, un package ou un nom.                     |
+| --erreur-action                                | No       | Spécifie comment gérer les erreurs d’outil : arrêter, ignorer, continuer. La valeur par défaut consiste à arrêter. |
+| -v,--commentaires                                  | No       | Émet une sortie détaillée.                                                                 |
+| -n,--à sec                                  | No       | Série sèche.                                                                             |
+| --&lt;arg1 &gt; &lt; Arg2 &gt; ... &lt; argN&gt;  | No       | Arguments de ligne de commande supplémentaires pour l’outil.                                       |
 
 #### <a name="--error-action-argument"></a>--erreur-argument d’action
 
@@ -111,19 +111,19 @@ Commandes de l’outil ECHO qui sont exécutées, mais n’exécutent aucun outi
 L’utilisation d’un `<arg>` qui inclut un espace dans sa valeur doit inclure une paire supplémentaire de guillemets d’échappement.
 
 ```console
-> devinit run -t <toolname> -<somearg> "<some value>"
+devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 Pour installer dotnet dans un répertoire spécifique `C:\Program Files\dotnet` :
 
 ```console
-> devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
+devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>List
 
 ```console
-> devinit list
+devinit list
 ```
 
 Affiche la liste de tous les outils disponibles.
@@ -131,19 +131,19 @@ Affiche la liste de tous les outils disponibles.
 ## <a name="show"></a>Afficher
 
 ```console
-> devinit show -t <toolname>
+devinit show -t <toolname>
 ```
 
 | Argument       | Obligatoire | Description                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| outil-t,--      | Oui      | Obligatoire. Nom de l'outil.                                                             |
+| outil-t,--      | Yes      | Obligatoire. Nom de l'outil.                                                             |
 
 Imprime les informations d’aide pour un outil donné.
 
 ## <a name="version"></a>Version
 
 ```console
-> devinit version
+devinit version
 ```
 
 Imprime les informations de version actuelles pour devinit.
@@ -151,8 +151,8 @@ Imprime les informations de version actuelles pour devinit.
 ## <a name="help"></a>Aide
 
 ```console
-> devinit help
-> devinit help list
+devinit help
+devinit help list
 ```
 
 Imprime le texte d’aide pour devinit ou pour une commande spécifique `devinit <command>` .
