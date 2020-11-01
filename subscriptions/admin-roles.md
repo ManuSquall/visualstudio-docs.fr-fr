@@ -8,10 +8,10 @@ ms.date: 10/22/2020
 ms.topic: conceptual
 description: En savoir plus sur les rôles d’administrateur et de Super administrateur, ainsi que sur la façon d’affecter des administrateurs.
 ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92467373"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Super Admins et administrateurs pour les contrats d’abonnement Visual Studio
@@ -28,8 +28,8 @@ Visionnez une démonstration sur la gestion des administrateurs.
 ## <a name="assigning-admins"></a>Attribution d’administrateurs
 Pour affecter de nouveaux administrateurs (administrateurs) :
 1. Connectez-vous à https://manage.visualstudio.com en utilisant une adresse e-mail qui est affectée en tant que super administrateur au contrat par le biais duquel les abonnements ont été achetés.
-2. Cliquez sur l’onglet libellé **Gérer les administrateurs**.
-3. Cliquez sur **Add**.
+2. Cliquez sur l’onglet libellé **Gérer les administrateurs** .
+3. Cliquez sur **Add** .
    > [!div class="mx-imgBorder"]
    > ![Add admins](_img/admin-roles/add-admins.png "Cliquez sur le panneau gérer les administrateurs, puis sur Ajouter pour affecter de nouveaux administrateurs.") (Ajouter des administrateurs)
 4. Complétez le formulaire avec les informations du nouvel administrateur.  
@@ -37,7 +37,7 @@ Pour affecter de nouveaux administrateurs (administrateurs) :
    > ![Ajouter un formulaire administrateur](_img/admin-roles/add-form.png "Entrez les informations de connexion du nouvel administrateur et indiquez si vous souhaitez en faire un super administrateur.  Cliquez ensuite sur Ajouter.")
 
    > [!NOTE]
-   > Si vous voulez que cet administrateur puisse affecter des administrateurs supplémentaires, n’oubliez pas de cocher la case **Super administrateur**.
+   > Si vous voulez que cet administrateur puisse affecter des administrateurs supplémentaires, n’oubliez pas de cocher la case **Super administrateur** .
 
 5. Une fois que vous avez cliqué sur **Ajouter** pour affecter le nouvel administrateur, celui-ci reçoit un e-mail l’invitant à se connecter au portail.  
 

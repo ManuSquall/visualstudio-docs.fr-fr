@@ -8,10 +8,10 @@ ms.date: 07/30/2020
 ms.topic: conceptual
 description: Découvrir comment rechercher, réclamer et exporter des clés de produit dans les abonnements Visual Studio
 ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91004965"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Recherche et réclamation de clés de produit dans les abonnements Visual Studio
@@ -56,7 +56,7 @@ Pour demander une clé de produit :
 > ![Rechercher une clé de produit](_img/product-keys/search-keys.png "Faites défiler jusqu’au produit souhaité ou utilisez la zone de recherche pour localiser rapidement un produit.")
    
 Dans cet exemple, nous avons utilisé la barre de recherche afin de localiser une clé de produit pour Visual Studio Enterprise 2019.
-Comme vous pouvez le constater, plusieurs versions sont listées.  Chacune des clés a déjà été réclamée pour les versions 16.0 et 16.1 de Visual Studio Enterprise 2019.  Des clés supplémentaires de types distincts sont toujours disponibles pour les deux versions. Notez que vous pouvez enregistrer une brève remarque sur les clés demandées dans la colonne **Remarques**.  Vous pouvez utiliser cette colonne conjointement avec la date de la colonne **Demandé** pour suivre les clés que vous avez demandées.  Par exemple, ajoutez une remarque quand vous activez une installation du produit à l’aide de la clé.
+Comme vous pouvez le constater, plusieurs versions sont listées.  Chacune des clés a déjà été réclamée pour les versions 16.0 et 16.1 de Visual Studio Enterprise 2019.  Des clés supplémentaires de types distincts sont toujours disponibles pour les deux versions. Notez que vous pouvez enregistrer une brève remarque sur les clés demandées dans la colonne **Remarques** .  Vous pouvez utiliser cette colonne conjointement avec la date de la colonne **Demandé** pour suivre les clés que vous avez demandées.  Par exemple, ajoutez une remarque quand vous activez une installation du produit à l’aide de la clé.
 
 ### <a name="exporting-your-claimed-keys"></a>Exportation de vos clés demandées
 Vous pouvez exporter une liste de toutes les clés que vous avez demandées, et d’un grand nombre de clés statiques et d’autres clés qui sont automatiquement marquées comme « demandées » pour vous.

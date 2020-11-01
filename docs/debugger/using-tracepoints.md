@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89561336"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Enregistrer les informations dans la fenêtre sortie à l’aide de points de trace dans Visual Studio
@@ -53,7 +53,7 @@ Vous pouvez définir des points de trace en spécifiant une chaîne de sortie so
 
    ![Zone des conditions vérifiées](../debugger/media/checkedconditionsbox.png "Zone des conditions vérifiées")
 
-   Vous avez trois possibilités pour les conditions : **expression conditionnelle**, **filtre**et **nombre d’accès**.
+   Vous avez trois possibilités pour les conditions : **expression conditionnelle** , **filtre** et **nombre d’accès** .
 
 ## <a name="actions-menu"></a>Menu Actions
 
@@ -63,7 +63,7 @@ Par exemple, si vous souhaitez afficher la valeur de la `counter` variable dans 
 
 ![Message de sortie du compteur](../debugger/media/counteroutputmessage.png "Message de sortie du compteur")
 
-Si vous cliquez sur **Fermer** , puis déboguez le programme (**F5**), la sortie suivante s’affiche dans la fenêtre sortie.
+Si vous cliquez sur **Fermer** , puis déboguez le programme ( **F5** ), la sortie suivante s’affiche dans la fenêtre sortie.
 
 ![Message d’action dans Fenêtre Sortie](../debugger/media/actionsmessageinoutputwindow.png "Message d’action dans Fenêtre Sortie")
 
