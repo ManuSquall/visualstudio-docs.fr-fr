@@ -966,7 +966,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Informations de référence
+- name: Référence
   items:
     - name: Raccourcis clavier
       items:
@@ -1492,3 +1492,8 @@
       href: ide/developer-community-guidelines.md
     - name: Confidentialité des données de la communauté des développeurs
       href: ide/developer-community-privacy.md
+- name: Visual Studio 2015
+  expanded: true
+  items:
+    - name: "Documentation Visual Studio\_2015"
+      href: vs-2015-archive.md
