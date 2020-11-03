@@ -2,7 +2,7 @@
 title: Éléments communs des projets MSBuild | Microsoft Docs
 description: En savoir plus sur les éléments de projet MSBuild courants. Les éléments sont des références nommées à un ou plusieurs fichiers et ont des métadonnées telles que des noms de fichiers, des chemins d’accès et des numéros de version.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796392"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238621"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 
@@ -43,7 +43,7 @@ Représente une référence (managée) d'assembly dans le projet.
 |FusionName|Chaîne facultative. Spécifie le nom de fusion simple ou fort de l'élément.<br /><br /> La présence de cet attribut peut faire gagner du temps, car il vous évite d'ouvrir le fichier d'assembly pour obtenir le nom de fusion.|
 |SpecificVersion|Valeur booléenne facultative. Indique si seule la version figurant dans le nom de fusion doit être référencée.|
 |Alias|Chaîne facultative. Alias éventuels de la référence.|
-|Privé|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
+|Privées|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -136,7 +136,7 @@ Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuv
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
 | CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 
-### <a name="none"></a>None
+### <a name="none"></a>Aucun
 
 Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
 
@@ -160,7 +160,19 @@ Représente les attributs d’assembly à générer comme `[AssemblyMetadata(key
 | Valeur | Chaîne obligatoire. Devient le deuxième paramètre (la valeur) dans le `AssemblyMetadataAttribute` constructeur d’attribut. |
 
 > [!NOTE]
-> Cela s’applique uniquement aux projets qui utilisent l’kit SDK .NET Core.
+> Cet élément s’applique aux projets qui utilisent le kit de développement logiciel (SDK) pour .NET 5 (et .NET Core) et versions ultérieures.
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+Spécifie les assemblys à émettre en tant qu' `[InternalsVisibleTo(..)]` attributs d’assembly.
+
+| Nom des métadonnées de l’élément | Description |
+|-----------------------| - |
+| Inclure | Nom de l'assembly. |
+| Clé : | Chaîne facultative. Clé publique de l’assembly. |
+
+> [!NOTE]
+> Cet élément s’applique aux projets qui utilisent le kit de développement logiciel (SDK) pour .NET 5 (et .NET Core) et versions ultérieures.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
