@@ -44,6 +44,8 @@
       href: using-the-subscriber-portal.md
     - name: Gérer vos abonnements
       href: manage-vs-subscriptions.md
+    - name: À l’expiration des abonnements
+      href: subscription-expiration.md
     - name: Contacter votre administrateur d’abonnements
       href: contact-my-admin.md
     - name: Avantages
