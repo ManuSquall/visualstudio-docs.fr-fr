@@ -7,12 +7,12 @@ ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
 ms.date: 10/30/2020
 ms.topic: conceptual
 description: Découvrez ce qui se passe lorsque votre abonnement Visual Studio expire
-ms.openlocfilehash: 118f9dcd1953799d74b10c682a007137474c2dd2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
+ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "93239361"
+ms.locfileid: "93245015"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>Que se passe-t-il lorsque votre abonnement expire ?
 Les abonnements Visual Studio ont des durées spécifiques et, à moins qu’ils ne soient renouvelés, ils expirent.  Lorsqu’un abonnement expire, les avantages fournis par l’abonnement sont affectés de différentes façons.  Cet article explique comment l’expiration affecte les différents aspects d’un abonnement Visual Studio. 
@@ -29,7 +29,7 @@ La page clés de produit, <https://my.visualstudio.com/productkeys> , n’est pl
 Les avantages ne sont pas tous affectés de la même façon lorsqu’un abonnement expire.  Aucun avantage ne peut être activé après l’expiration de votre abonnement.  Les avantages que vous avez déjà activés peuvent toujours être disponibles.  
 
 ### <a name="visual-studio-ide"></a>Environnement IDE de Visual Studio
-La plupart des abonnements fournissent des licences perpétuelles pour l’IDE de Visual Studio. Téléchargez le livre blanc sur les [licences](https://aka.ms/vslicensing) Visual Studio pour déterminer si votre abonnement est éligible à des droits d’utilisation perpétuelles.  Si votre abonnement est éligible pour les droits d’utilisation perpétuelles, vous pouvez continuer à accéder à votre version actuelle de l’IDE, mais ne recevra pas les mises à jour des versions ultérieures. Pour continuer à utiliser l’IDE après l’expiration, vous devrez accéder à la [page clé de produit](https://my.visualstudio.com/productkeys) et télécharger la clé de produit **avant l’expiration de votre abonnement** .
+La plupart des abonnements fournissent des licences perpétuelles pour l’IDE de Visual Studio. Téléchargez le livre blanc sur les [licences](https://aka.ms/vslicensing) Visual Studio pour déterminer si votre abonnement est éligible à des droits d’utilisation perpétuelles.  Si votre abonnement est éligible pour les droits d’utilisation perpétuelles, vous pouvez continuer à accéder à votre version actuelle de l’IDE, mais ne recevra pas les mises à jour des versions ultérieures. Pour continuer à utiliser l’IDE après l’expiration, vous devrez accéder à la [page clé de produit](https://my.visualstudio.com/productkeys) et télécharger la clé de produit **avant l’expiration de votre abonnement**.
 
 ### <a name="azure-devops"></a>Azure DevOps
 Azure DevOps acquis via un abonnement Visual Studio n’est pas disponible.  
