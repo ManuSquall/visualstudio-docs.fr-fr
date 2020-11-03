@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Découvrez comment contacter votre administrateur d’abonnement pour obtenir de l’aide concernant des questions ou des problèmes.
-ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904525"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289978"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
 Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre école, il est probable qu’il vous a été attribué par un administrateur d’abonnements ou par un « administrateur ».  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
@@ -27,13 +27,13 @@ Compte tenu de la taille et de la complexité de nombreuses organisations, vous 
    > ![Contacter mon administrateur](_img/contact-my-admin/contact-my-admin-button.png "Sélectionnez le bouton contacter mon administrateur, entrez votre message, puis sélectionnez Envoyer.")
 4. Entrez le message destiné à votre administrateur.
 5. Si vous souhaitez recevoir une copie du message envoyé à votre administrateur, activez la case à cocher **m’envoyer une copie** . 
-6. Enfin, sélectionnez **Envoyer** .
+6. Enfin, sélectionnez **Envoyer**.
 
 > [!NOTE]
 > **Super administrateurs :**  Pour définir l’adresse de messagerie à laquelle les demandes « contacter mon administrateur » sont envoyées, spécifiez cette adresse dans les préférences de l' [accord](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
