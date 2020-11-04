@@ -2,7 +2,7 @@
 title: 'Didacticiel : ouvrir un projet à partir d’un référentiel'
 description: Découvrez comment ouvrir un projet dans un référentiel Git ou Azure DevOps à l’aide de Visual Studio.
 ms.custom: get-started
-ms.date: 03/30/2019
+ms.date: 11/03/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 56005faa4475f040375108ca02abbca40cd2652d
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743033"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344538"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Didacticiel : ouvrir un projet à partir d’un référentiel
 
@@ -49,11 +49,11 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
     ![La fenêtre Team Explorer dans l’IDE de Visual Studio](./media/open-proj-repo-team-explorer.png)
 
-1. Dans la section **Référentiels Git locaux**, choisissez **Cloner**.
+1. Dans la section **Référentiels Git locaux** , choisissez **Cloner**.
 
     ![Choisir Cloner dans la section Référentiels Git locaux](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Dans la zone intitulée ***Entrez l’URL d’un référentiel Git à cloner***, tapez ou collez l’URL de votre référentiel, puis appuyez sur **Entrée**. (Vous pouvez recevoir une invite de connexion GitHub. Si c’est le cas, faites-le.)
+1. Dans la zone qui indique **_Entrez l’URL d’un référentiel git à cloner_*_, tapez ou collez l’URL de votre référentiel, puis appuyez sur* entrée**. (Vous pouvez recevoir une invite de connexion GitHub. Si c’est le cas, faites-le.)
 
    Lorsque Visual Studio a cloné votre référentiel, Team Explorer est fermé et l’Explorateur de solutions s’affiche. Le message *Cliquez sur "Solutions et dossiers" ci-dessus pour afficher une liste de solutions* s’affiche. Choisissez **Solutions et dossiers**.
 
@@ -93,6 +93,9 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
    Si vous n’avez pas de fichier solution (plus précisément, un fichier .sln) dans votre référentiel, le menu contextuel indique « Solutions introuvables ». Vous pouvez toutefois double-cliquer sur n’importe quel fichier dans le menu de dossier pour l’ouvrir dans l’éditeur de code Visual Studio.
 
+> [!TIP]
+> Si vous souhaitez essayer une nouvelle expérience intégrée git dans Visual Studio et que vous utilisez la [version 16,6](/visualstudio/releases/2019/release-notes-v16.6) ou une version ultérieure, vous pouvez l’activer en accédant à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités** , puis en activant la case à cocher **nouvelle expérience utilisateur git** . Pour plus d’informations, consultez la page [nouvelle expérience git dans Visual Studio](../ide/git-with-visual-studio.md) .
+
 ::: moniker-end
 
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>Ouvrir un projet à partir d’un référentiel Azure DevOps
@@ -109,15 +112,15 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 1. Voici deux façons de se connecter à votre référentiel Azure DevOps :
 
-      - Dans la section **Fournisseurs de services hébergés**, choisissez **Se connecter...**.
+      - Dans la section **Fournisseurs de services hébergés** , choisissez **Se connecter...**.
 
         ![La section Fournisseurs de services hébergés de la fenêtre Team Explorer dans l’IDE de Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - Dans la liste déroulante **Gérer les connexions**, choisissez **Se connecter à un projet...**.
+      - Dans la liste déroulante **Gérer les connexions** , choisissez **Se connecter à un projet...**.
 
         ![La section Gérer les connexions de la fenêtre Team Explorer dans l’IDE de Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. Dans la boîte de dialogue **Se connecter à un projet**, sélectionnez le référentiel auquel vous souhaitez vous connecter, puis choisissez **Cloner**.
+1. Dans la boîte de dialogue **Se connecter à un projet** , sélectionnez le référentiel auquel vous souhaitez vous connecter, puis choisissez **Cloner**.
 
       ![La boîte de dialogue « Se connecter à un projet » qui est générée à partir de Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
@@ -142,13 +145,13 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. Dans la section **Parcourir un dépôt**, choisissez **Azure DevOps**.
+1. Dans la section **Parcourir un dépôt** , choisissez **Azure DevOps**.
 
    ![Afficher la fenêtre Cloner ou extraire du code](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    Si une fenêtre de connexion s’affiche, connectez-vous à votre compte.
 
-1. Dans la boîte de dialogue **Se connecter à un projet**, sélectionnez le référentiel auquel vous souhaitez vous connecter, puis choisissez **Cloner**.
+1. Dans la boîte de dialogue **Se connecter à un projet** , sélectionnez le référentiel auquel vous souhaitez vous connecter, puis choisissez **Cloner**.
 
       ![La boîte de dialogue « Se connecter à un projet » qui est générée à partir de Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
@@ -163,7 +166,7 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
      ![Section Solutions de la fenêtre Team Explorer dans Visual Studio une fois que le clone est complet](./media/vs-2019/show-folder-view-azure-devops.png)
 
-     Visual Studio ouvre l’**Explorateur de solutions**.
+     Visual Studio ouvre l’ **Explorateur de solutions**.
 
 1. Choisissez le lien **Solutions et dossiers** pour rechercher un fichier de solution (plus précisément, un fichier .sln) à ouvrir.
 
@@ -181,9 +184,22 @@ Si vous êtes prêt à coder avec Visual Studio, suivez un des didacticiels spé
 - [Didacticiels Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Didacticiels Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Didacticiels Visual Studio | **Python**](../python/index.yml)
-- [Didacticiels Visual Studio | **JavaScript**, **TypeScript** et **Node.js**](../javascript/index.yml)
+- [Didacticiels Visual Studio | **JavaScript** , **TypeScript** et **Node.js**](../javascript/index.yml)
 
 ## <a name="see-also"></a>Voir aussi
 
+::: moniker range="vs-2017"
+
 - [Azure DevOps Services : prise en main de Azure Repos et de Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn : prise en main d’Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Nouvelle expérience git dans Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Nouvelle expérience git dans Visual Studio](../ide/git-with-visual-studio.md)
+- [Azure DevOps Services : prise en main de Azure Repos et de Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn : prise en main d’Azure DevOps](/learn/modules/get-started-with-devops/)
+
+::: moniker-end

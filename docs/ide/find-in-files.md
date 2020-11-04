@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a32720475bda124c563d45133028f43b4f1b9cd
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595473"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344505"
 ---
 # <a name="find-in-files"></a>Rechercher dans les fichiers
 
@@ -55,7 +55,7 @@ Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cett
 L’option sélectionnée dans la liste déroulante **Regarder dans** détermine si l’option **Rechercher dans les fichiers** limite la recherche aux fichiers qui sont actuellement actifs ou l’étend à tous les fichiers stockés dans certains dossiers. Sélectionnez une étendue de recherche dans la liste ou cliquez sur le bouton **Parcourir (...)** pour afficher la boîte de dialogue **Choisir des dossiers de recherche** et spécifier l’ensemble de répertoires de votre choix. Vous pouvez également taper un chemin directement dans la zone **Regarder dans**.
 
 > [!WARNING]
-> Avec les options **Solution complète** ou **Projet actuel**, les fichiers solution et projet ne sont pas inclus dans la recherche. Pour effectuer une recherche dans les fichiers projet, choisissez un dossier de recherche.
+> Avec les options **Solution complète** ou **Projet actuel** , les fichiers solution et projet ne sont pas inclus dans la recherche. Pour effectuer une recherche dans les fichiers projet, choisissez un dossier de recherche.
 
 > [!NOTE]
 > Si l’option **Regarder dans** sélectionnée entraîne la recherche dans un fichier que vous avez extrait du contrôle de code source, la recherche ne porte que sur la version du fichier ayant été téléchargée sur votre ordinateur local.

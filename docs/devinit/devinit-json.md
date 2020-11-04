@@ -1,7 +1,7 @@
 ---
 title: Fichier de configuration devinit
 description: Documentation relative à la .devinit.jssur le fichier manifeste pour devinit.
-ms.date: 08/28/2020
+ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b0cfb1c41d7721598bae44f950ced01d17ff494a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29ea900b534bc03e47cfda49dba15af910189e48
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005359"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344484"
 ---
 # <a name="devinit-configuration-file"></a>fichier de configuration devinit
 
@@ -24,11 +24,17 @@ ms.locfileid: "91005359"
 
 La `devinit.exe init` commande est pilotée par le _.devinit.jsdans_ le fichier. Par défaut, `devinit.exe` recherche le fichier aux emplacements suivants :
 
-- _{Current-Directory}\\_
-- _{Current-Directory} \\ . devinit\\_
-- _{Current-Directory} \\ . devcontainer\\_
+* {Current-Directory} \\.devinit.js
+* {Current-Directory} \\devinit.js
+* {Current-Directory} \\ . devinit \\.devinit.js
+* {Current-Directory} \\ . devinit \\devinit.js
+* {Current-Directory} \\ devinit \\.devinit.js
+* {Current-Directory} \\ devinit \\devinit.js
+* {Current-Directory} \\ . devcontainer \\.devinit.js
+* {Current-Directory} \\ . devcontainer \\devinit.js
 
-L’élément de langage _._ dans le répertoire, les noms de fichiers peuvent être omis.
+> [!NOTE]
+> Si plusieurs fichiers par défaut sont trouvés, devinit utilise le fichier qui apparaît en premier dans la liste ci-dessus.
 
 Le _.devinit.jssur_ le fichier peut également être spécifié explicitement à l’aide de l' `--file` / `-f` option.
 

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134730"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344477"
 ---
 # <a name="devinit-commands"></a>commandes devinit
 
@@ -32,12 +32,12 @@ Initialisez l’environnement en exécutant les outils spécifiés dans un [_.de
 
 Options facultatives pour la `devinit init` commande.
 
-| Argument             | Obligatoire | Description                                                               |
+| Argument             | Requis | Description                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file            | No       | Chemin d’accès à la _.devinit.jssur_ le fichier.                                         |
-| --erreur-action       | No       | Spécifie comment gérer les erreurs. Options : arrêter, ignorer, continuer (par défaut).|
-| -v,--commentaires         | No       | Émet une sortie détaillée.                                                      |
-| -n,--à sec         | No       | Série sèche.                                                                  |
+| -f,--file            | Non       | Chemin d’accès à la _.devinit.jssur_ le fichier.                                         |
+| --erreur-action       | Non       | Spécifie comment gérer les erreurs. Options : arrêter, ignorer, continuer (par défaut).|
+| -v,--commentaires         | Non       | Émet une sortie détaillée.                                                      |
+| -n,--à sec         | Non       | Série sèche.                                                                  |
 
 #### <a name="--file-argument"></a>--argument de fichier
 
@@ -79,14 +79,14 @@ Exécute l’outil spécifique, les paramètres sont répertoriés ci-dessous. C
 
 Options de la `devinit run` commande.
 
-| Argument                                      | Obligatoire | Description                                                                          |
+| Argument                                      | Requis | Description                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| outil-t,--                                     | Yes      | Obligatoire. Nom de l'outil.                                                             |
-| -i,--entrée                                    | No       | Valeur d’entrée de l’outil. Par exemple, un nom de fichier, un package ou un nom.                     |
-| --erreur-action                                | No       | Spécifie comment gérer les erreurs d’outil : arrêter, ignorer, continuer. La valeur par défaut consiste à arrêter. |
-| -v,--commentaires                                  | No       | Émet une sortie détaillée.                                                                 |
-| -n,--à sec                                  | No       | Série sèche.                                                                             |
-| --&lt;arg1 &gt; &lt; Arg2 &gt; ... &lt; argN&gt;  | No       | Arguments de ligne de commande supplémentaires pour l’outil.                                       |
+| outil-t,--                                     | Oui      | Obligatoire. Nom de l'outil.                                                             |
+| -i,--entrée                                    | Non       | Valeur d’entrée de l’outil. Par exemple, un nom de fichier, un package ou un nom.                     |
+| --erreur-action                                | Non       | Spécifie comment gérer les erreurs d’outil : arrêter, ignorer, continuer. La valeur par défaut consiste à arrêter. |
+| -v,--commentaires                                  | Non       | Émet une sortie détaillée.                                                                 |
+| -n,--à sec                                  | Non       | Série sèche.                                                                             |
+| --&lt;arg1 &gt; &lt; Arg2 &gt; ... &lt; argN&gt;  | Non       | Arguments de ligne de commande supplémentaires pour l’outil.                                       |
 
 #### <a name="--error-action-argument"></a>--erreur-argument d’action
 
@@ -134,9 +134,9 @@ Affiche la liste de tous les outils disponibles.
 devinit show -t <toolname>
 ```
 
-| Argument       | Obligatoire | Description                                                                          |
+| Argument       | Requis | Description                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| outil-t,--      | Yes      | Obligatoire. Nom de l'outil.                                                             |
+| outil-t,--      | Oui      | Obligatoire. Nom de l'outil.                                                             |
 
 Imprime les informations d’aide pour un outil donné.
 

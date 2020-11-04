@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89053427"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344492"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mesurer les performances d’une application à partir de la ligne de commande
 
@@ -33,7 +33,7 @@ Dans l’exemple décrit dans cet article, vous collectez des informations sur l
 
 * Connaissance des outils en ligne de commande
 
-* Pour collecter des informations sur les performances d’un ordinateur distant sur lequel Visual Studio n’est pas installé, installez les [Outils d’exécution de performances pour Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) sur l’ordinateur distant. La version des outils doit correspondre à votre version de Visual Studio.
+* Pour collecter des informations sur les performances sur un ordinateur distant sur lequel Visual Studio n’est pas installé, installez le [outils de contrôle à distance de Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) sur l’ordinateur distant. La version des outils doit correspondre à votre version de Visual Studio.
 
 ## <a name="collect-performance-data"></a>Collecter des données de performances
 
@@ -71,7 +71,7 @@ Pour profiler une application à l’aide des outils CLI de diagnostics Visual S
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Localisez la sortie du fichier *. diagsession* à partir de la commande précédente, puis ouvrez-la dans Visual Studio (**fichier**  >  **ouvert**) pour examiner les informations collectées.
+1. Localisez la sortie du fichier *. diagsession* à partir de la commande précédente, puis ouvrez-la dans Visual Studio ( **fichier**  >  **ouvert** ) pour examiner les informations collectées.
 
    Pour analyser les résultats, consultez la documentation de l’outil d’analyse des performances correspondant. Par exemple, il peut s’agir de l’utilisation de l' [UC](../profiling/cpu-usage.md), de l’outil d' [allocation d’objets .net](../profiling/dotnet-alloc-tool.md)ou de l’outil [de base de données](../profiling/analyze-database.md) .
 
