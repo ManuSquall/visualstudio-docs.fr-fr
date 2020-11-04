@@ -9,12 +9,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1a241fa8422a71900312198988dacfe144525b5a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810521"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325930"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utiliser des shims pour isoler votre application pour les tests unitaires
 
@@ -28,9 +28,9 @@ Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [i
 
 - Visual Studio Enterprise
 - Un projet .NET Framework
-
-> [!NOTE]
-> Les projets .NET Standard ne sont pas pris en charge.
+::: moniker range=">=vs-2019"
+- La prise en charge des projets de type .NET Core et SDK est prévisualisée dans Visual Studio 2019 Update 6, et est activée par défaut dans Update 8. Pour plus d’informations, consultez [Microsoft Resubstituts for .net Core and SDK-style Projects](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Exemple : Le bogue de l'an 2000
 
@@ -67,11 +67,14 @@ using (ShimsContext.Create()) {
 
 Tout d’abord, ajoutez un assembly de simulation :
 
-1. Dans **Explorateur de solutions**, développez le nœud **références** de votre projet de test unitaire.
+1. Dans **Explorateur de solutions** , 
+    - Pour un projet de .NET Framework plus ancien (style non-SDK), développez le nœud **références** de votre projet de test unitaire.
+    ::: moniker range=">=vs-2019"
+    - Pour un projet de type SDK ciblant .NET Framework ou .NET Core, développez le nœud **dépendances** pour trouver l’assembly que vous souhaitez falsifier sous **assemblys** , **projets** ou **packages**.
+    ::: moniker-end
+    - Si vous utilisez Visual Basic, sélectionnez **Afficher tous les fichiers** dans la barre d’outils **Explorateur de solutions** pour afficher le nœud **références** .
 
-   - Si vous utilisez Visual Basic, sélectionnez **Afficher tous les fichiers** dans la barre d’outils de **l’Explorateur de solutions** pour afficher le nœud **Références**.
-
-2. Sélectionnez l’assembly qui contient les définitions de classe pour lesquelles vous souhaitez créer des shims. Par exemple, si vous souhaitez shim **DateTime**, sélectionnez **System.dll**.
+2. Sélectionnez l’assembly qui contient les définitions de classe pour lesquelles vous souhaitez créer des shims. Par exemple, si vous souhaitez shim **DateTime** , sélectionnez **System.dll**.
 
 3. Dans le menu contextuel, choisissez **Ajouter un assembly Fakes**.
 
@@ -93,7 +96,7 @@ Il est essentiel de supprimer correctement chaque contexte de shim. En règle g�
 
 ### <a name="write-a-test-with-shims"></a>Écrire un test avec les shims
 
-Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Exemple :
+Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Par exemple :
 
 ```csharp
 [TestClass]
@@ -520,7 +523,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Limites
 
-Les shims ne peuvent pas être utilisés sur tous les types à partir de la bibliothèque de classes de base .NET **mscorlib** et **System**.
+Les shims ne peuvent pas être utilisés sur tous les types de la bibliothèque de classes de base .NET **mscorlib** et **System** dans .NET Framework, et dans **System. Runtime** dans .net core.
 
 ## <a name="see-also"></a>Voir aussi
 
