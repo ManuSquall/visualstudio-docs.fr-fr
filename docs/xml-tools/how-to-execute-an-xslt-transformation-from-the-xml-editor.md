@@ -1,5 +1,7 @@
 ---
 title: Exécuter une transformation XSLT
+description: Découvrez comment utiliser l’éditeur XML pour associer une feuille de style XSLT à un document XML, effectuer une transformation XSLT et afficher la sortie.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
@@ -8,20 +10,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e74beb2903cd133dfdd322ce4c297692eae3411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1c7165f301c82dfaf5aa066a3e15bd7ab244089
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817188"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399480"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procédure : exécuter une transformation XSLT à partir de l’éditeur XML
 
 L’éditeur XML vous permet d’associer une feuille de style XSLT à un document XML, d’effectuer la transformation et d’afficher la sortie. Le résultat de la transformation XSLT est affiché dans une nouvelle fenêtre de document.
 
-La propriété **Output** spécifie le nom de fichier de la sortie. Si la propriété de **sortie** est vide, un nom de fichier est généré dans votre répertoire temporaire. L’extension de fichier est basée sur l' `xsl:output` élément de votre feuille de style et peut être.* XML*,. *txt* ou. *htm*.
+La propriété **Output** spécifie le nom de fichier de la sortie. Si la propriété de **sortie** est vide, un nom de fichier est généré dans votre répertoire temporaire. L’extension de fichier est basée sur l' `xsl:output` élément de votre feuille de style et peut être. *XML* ,. *txt* ou. *htm*.
 
-Si la propriété de **sortie** spécifie un nom de fichier avec un. *htm* ou. extension *HTML* , la sortie XSLT est prévisualisée à l’aide d’un navigateur Web. Toutes les autres extensions de fichier sont ouvertes à l’aide de l’éditeur par défaut choisi par Visual Studio. Par exemple, si l’extension de fichier est. *XML*, Visual Studio utilise l’éditeur XML.
+Si la propriété de **sortie** spécifie un nom de fichier avec un. *htm* ou. extension *HTML* , la sortie XSLT est prévisualisée à l’aide d’un navigateur Web. Toutes les autres extensions de fichier sont ouvertes à l’aide de l’éditeur par défaut choisi par Visual Studio. Par exemple, si l’extension de fichier est. *XML* , Visual Studio utilise l’éditeur XML.
 
 ## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Exécuter une transformation XSLT à partir d’un fichier XML
 

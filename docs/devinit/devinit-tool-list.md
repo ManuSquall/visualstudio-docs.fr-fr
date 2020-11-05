@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3374e0763a0189fb16db35b5b9ec6ec6908d9f4f
-ms.sourcegitcommit: 417ea66a8b07ec102ece2fa00e07b88edc404c00
+ms.openlocfilehash: 6bb4656dd04db576877cfdddf67869eb6d1eff35
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91106274"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399951"
 ---
 # <a name="available-tools"></a>Outils disponibles
 
@@ -29,7 +29,8 @@ Le tableau ci-dessous contient la liste de tous les outils actuellement disponib
 | [**choco-upgrade**](tool-choco-upgrade.md)                                                       | Outil de mise à niveau des packages en chocolat.                                                                       |
 | [**dotnet-restore**](tool-dotnet-restore.md)                                                     | Outil permettant de restaurer les dépendances et les outils d’un projet .NET.                                               |
 | [**dotnet-toolinstall**](tool-dotnet-toolinstall.md)                                             | Outil pour installer les outils .NET Core (par exemple,. dotnet-EF)                                                |
-| [**activer-IIS**](tool-enable-iis.md)                                                             | Outil pour activer les fonctionnalités IIS et installer le dernier bundle d’hébergement ASP.NET.                                  |
+| [**enable-iis**](tool-enable-iis.md)                                                             | Outil pour activer les fonctionnalités IIS et installer le dernier bundle d’hébergement ASP.NET.                                  |
+| [**MSI-installation**](tool-msi-install.md)                                                           | Outil d’installation des fichiers MSI en fonction d’un chemin ou d’une URL.                                                              |
 | [**npm-install**](tool-npm-install.md)                                                           | Outil d’installation des packages NPM.                                                                               |
 | [**nuget-restore**](tool-nuget-restore.md)                                                       | Outil permettant de restaurer les packages NuGet.                                                                         |
 | [**require-azureartifactscredentialprovider**](tool-require-azureartifactscredentialprovider.md) | Installe le fournisseur d’informations d’identification Azure Artifacts.                                                           |
@@ -44,7 +45,7 @@ Le tableau ci-dessous contient la liste de tous les outils actuellement disponib
 | [**require-vscomponent**](tool-require-vscomponent.md)                                           | Outil permettant de modifier les installations de Visual Studio en fonction d’un `.vsconfig` fichier.                                                |
 | [**windowsfeature-enable**](tool-windowsfeature-enable.md)                                       | L’ensemble d’outils active les fonctionnalités Windows.                                                                           |
 | [**windowsfeature-disable**](tool-windowsfeature-disable.md)                                     | Jeu d’outils désactivez les fonctionnalités Windows.                                                                          |
-| [**WindowsFeature-List**](tool-windowsfeature-list.md)                                           | Outil permettant de répertorier l’état d’activation/de désactivation de toutes les fonctionnalités de Windows.                                                                        |
+| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | Outil permettant de répertorier l’état d’activation/de désactivation de toutes les fonctionnalités de Windows.                                                                        |
 | [**set-env**](tool-set-env.md)                                                                   | Outil permettant d’afficher et de définir des variables d’environnement.                                                                 |
 | [**vcpkg-install**](tool-vcpkg-install.md)                                                       | Outil d’installation des packages via vcpkg.                                                                         |
 | [**wsl-install**](tool-wsl-install.md)                                                           | Outil d’installation et de configuration de distributions Linux pour le sous-système Windows pour Linux.                             |

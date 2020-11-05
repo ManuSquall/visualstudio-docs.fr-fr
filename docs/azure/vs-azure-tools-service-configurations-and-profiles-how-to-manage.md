@@ -4,17 +4,16 @@ description: Découvrez comment utiliser les configurations de service et les fi
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c4668b2bf9925fe92db51b6a4275c535960a61
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911687"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398876"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Gestion des configurations de service et des profils
 ## <a name="overview"></a>Vue d’ensemble
@@ -27,14 +26,14 @@ Vous pouvez ajouter, supprimer, renommer et modifier ces configurations de servi
 
 ![Gérer les configurations de service](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
-Vous pouvez également ouvrir la boîte de dialogue **Gestion des paramètres** depuis les pages de propriétés du rôle. Pour ouvrir les propriétés d'un rôle dans votre projet Windows Azure, ouvrez le menu contextuel pour ce rôle, puis choisissez **Propriétés**. Dans l’onglet **Paramètres**, développez la liste **Configuration de service**, puis sélectionnez **Gérer** pour ouvrir la boîte de dialogue **Gérer les configurations**.
+Vous pouvez également ouvrir la boîte de dialogue **Gestion des paramètres** depuis les pages de propriétés du rôle. Pour ouvrir les propriétés d'un rôle dans votre projet Windows Azure, ouvrez le menu contextuel pour ce rôle, puis choisissez **Propriétés**. Dans l’onglet **Paramètres** , développez la liste **Configuration de service** , puis sélectionnez **Gérer** pour ouvrir la boîte de dialogue **Gérer les configurations**.
 
 ### <a name="to-add-a-service-configuration"></a>Pour ajouter une configuration de service
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet Azure, puis sélectionnez **Gérer les configurations**.
 
     La boîte de dialogue **Gérer les configurations de service** s'affiche.
 2. Pour ajouter une configuration de service, vous devez créer une copie d'une configuration existante. Pour ce faire, sélectionnez la configuration que vous souhaitez copier dans la liste Nom, puis sélectionnez **Créer une copie**.
-3. (Facultatif) Pour donner un nom différent à la configuration de service, sélectionnez la nouvelle configuration de service dans la liste Nom, puis sélectionnez **Renommer**. Dans la zone de texte **Nom**, tapez le nom que vous voulez utiliser pour cette configuration de service, puis sélectionnez **OK**.
+3. (Facultatif) Pour donner un nom différent à la configuration de service, sélectionnez la nouvelle configuration de service dans la liste Nom, puis sélectionnez **Renommer**. Dans la zone de texte **Nom** , tapez le nom que vous voulez utiliser pour cette configuration de service, puis sélectionnez **OK**.
 
     Un nouveau fichier de configuration de service nommé ServiceConfiguration.[Nouveau nom].cscfg est ajouté au projet Azure dans l’Explorateur de solutions.
 
@@ -42,7 +41,7 @@ Vous pouvez également ouvrir la boîte de dialogue **Gestion des paramètres** 
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet Azure, puis sélectionnez **Gérer les configurations**.
 
     La boîte de dialogue **Gérer les configurations de service** s'affiche.
-2. Pour supprimer une configuration de service, sélectionnez la configuration que vous voulez supprimer dans la liste **Nom**, puis sélectionnez **Supprimer**. Une boîte de dialogue vous invite à confirmer que vous souhaitez supprimer cette configuration.
+2. Pour supprimer une configuration de service, sélectionnez la configuration que vous voulez supprimer dans la liste **Nom** , puis sélectionnez **Supprimer**. Une boîte de dialogue vous invite à confirmer que vous souhaitez supprimer cette configuration.
 3. Sélectionnez **Supprimer**.
 
      Le fichier de configuration de service est supprimé du projet Azure dans l'Explorateur de solutions.
@@ -51,7 +50,7 @@ Vous pouvez également ouvrir la boîte de dialogue **Gestion des paramètres** 
 1. Dans Explorateur de solutions, ouvrez le menu contextuel du projet Azure, puis sélectionnez **gérer les configurations**.
 
     La boîte de dialogue **Gérer les configurations de service** s'affiche.
-2. Pour renommer une configuration de service, sélectionnez la nouvelle configuration de service dans la liste **Nom**, puis sélectionnez **Renommer**. Dans la zone de texte **nom** , tapez le nom que vous souhaitez utiliser pour cette configuration de service, puis sélectionnez **OK**.
+2. Pour renommer une configuration de service, sélectionnez la nouvelle configuration de service dans la liste **Nom** , puis sélectionnez **Renommer**. Dans la zone de texte **nom** , tapez le nom que vous souhaitez utiliser pour cette configuration de service, puis sélectionnez **OK**.
 
     Le nom du fichier de configuration de service est modifié dans le projet Azure dans l'Explorateur de solutions.
 
@@ -65,7 +64,7 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
 
 ### <a name="to-add-a-profile"></a>Pour ajouter un profil
 1. Ouvrez le menu contextuel de votre projet Azure, puis sélectionnez **Publier**.
-2. En regard de la liste **Profil cible**, sélectionnez le bouton **Enregistrer le profil**, comme le montre l’illustration suivante. Cette action vous crée un profil.
+2. En regard de la liste **Profil cible** , sélectionnez le bouton **Enregistrer le profil** , comme le montre l’illustration suivante. Cette action vous crée un profil.
 
     ![Créer un profil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Une fois le profil créé, sélectionnez **<Gérer...>** dans la liste **Profil cible**.
@@ -73,7 +72,7 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
     La boîte de dialogue **Gérer les profils** apparaît, comme le montre l'illustration suivante.
 
     ![Boîte de dialogue Gérer les profils](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
-4. Dans la liste **Nom**, sélectionnez un profil, puis sélectionnez **Créer une copie**.
+4. Dans la liste **Nom** , sélectionnez un profil, puis sélectionnez **Créer une copie**.
 5. Cliquez sur **Fermer**.
 
     Le nouveau profil apparaît dans la liste des profils cibles.
@@ -83,8 +82,8 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
 
 ### <a name="to-rename-or-delete-a-profile"></a>Pour renommer ou supprimer un profil
 1. Ouvrez le menu contextuel de votre projet Azure, puis sélectionnez **Publier**.
-2. Dans la liste **Profil cible**, sélectionnez **Gérer**.
-3. Dans la boîte de dialogue **Gérer les profils**, sélectionnez le profil que vous voulez supprimer, puis sélectionnez **Supprimer**.
+2. Dans la liste **Profil cible** , sélectionnez **Gérer**.
+3. Dans la boîte de dialogue **Gérer les profils** , sélectionnez le profil que vous voulez supprimer, puis sélectionnez **Supprimer**.
 4. Dans la boîte de dialogue de confirmation qui s’affiche, sélectionnez **OK**.
 5. Sélectionnez **Fermer**.
 

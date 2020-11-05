@@ -4,17 +4,16 @@ description: Apprenez dès maintenant à créer un projet de service cloud Azure
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fd554a397c6db3bb1f1d5beb2fc12c0423aed22
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280373"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399752"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Créer un projet de service cloud Azure avec Visual Studio
 
@@ -41,7 +40,7 @@ Cette section vous guide dans le processus de création d’un projet de service
 ::: moniker range=">=vs-2019"
 1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
-1. Dans la zone de recherche, tapez *Cloud*, puis choisissez **Azure Cloud Service**.
+1. Dans la zone de recherche, tapez *Cloud* , puis choisissez **Azure Cloud Service**.
 
    ![Nouveau service cloud Azure](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
 
@@ -50,18 +49,18 @@ Cette section vous guide dans le processus de création d’un projet de service
    ![Nommer le projet](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
 ::: moniker-end
 
-1. Dans la boîte de dialogue **Nouveau service cloud Microsoft Azure**, sélectionnez les rôles que vous souhaitez ajouter et appuyez sur la touche de direction droite pour les ajouter à votre solution.
+1. Dans la boîte de dialogue **Nouveau service cloud Microsoft Azure** , sélectionnez les rôles que vous souhaitez ajouter et appuyez sur la touche de direction droite pour les ajouter à votre solution.
 
     ![Sélectionner de nouveaux rôles de service cloud Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
 
-1. Pour renommer un rôle que vous avez ajouté, passez la souris sur le rôle dans la boîte de dialogue **Nouveau service cloud Microsoft Azure**, puis, dans le menu contextuel, sélectionnez **Renommer**. Vous pouvez également renommer un rôle dans votre solution (dans **l’Explorateur de solutions**) une fois qu’il a été ajouté.
+1. Pour renommer un rôle que vous avez ajouté, passez la souris sur le rôle dans la boîte de dialogue **Nouveau service cloud Microsoft Azure** , puis, dans le menu contextuel, sélectionnez **Renommer**. Vous pouvez également renommer un rôle dans votre solution (dans **l’Explorateur de solutions** ) une fois qu’il a été ajouté.
 
     ![Renommer un rôle de service cloud Azure](./media/vs-azure-tools-azure-project-create/new-cloud-service-rename.png)
 
-Le projet Azure Visual Studio est associé aux projets de rôle de la solution. Le projet comprend également le *fichier de définition de service* et le *fichier de configuration de service* :
+Le projet Azure Visual Studio est associé aux projets de rôle de la solution. Le projet comprend également le *fichier de définition de service* et le *fichier de configuration de service*  :
 
 - **Fichier de définition de service** : définit les paramètres d’exécution de votre application, y compris les rôles requis, les points de terminaison et la taille de la machine virtuelle.
-- **Fichier de configuration de service** : configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle.
+- **Fichier de configuration de service**  : configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle.
 
 Pour plus d’informations sur ces fichiers,voir [Configuration des rôles pour un service cloud Azure avec Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Publier une application Web à l’aide d’un script PowerShell
 description: Découvrez comment publier un projet web sur un site web Azure. Ce script crée les ressources requises dans votre abonnement Azure si elles n’existent pas.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e91fed105ce61dfc7e1cd2779ebcca0b33a06c97
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c487084a276be31730f1e268527f4c10a2f7b747
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036494"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398824"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script Windows PowerShell)
 ## <a name="syntax"></a>Syntaxe
@@ -36,7 +36,7 @@ Le chemin d'accès au fichier de configuration JSON qui décrit les détails du 
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Requis ? |true |
+| Nécessaire ? |true |
 | Position |nommée |
 | Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
@@ -48,7 +48,7 @@ Nom de l’abonnement Azure dans lequel vous souhaitez créer le site web.
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Requis ? |false |
+| Nécessaire ? |false |
 | Position |nommée |
 | Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
@@ -60,7 +60,7 @@ Le chemin d'accès au package de déploiement web à publier sur le site web. Vo
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Requis ? |false |
+| Nécessaire ? |false |
 | Position |nommée |
 | Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
@@ -72,7 +72,7 @@ Le nom d’utilisateur et le mot de passe pour la base de données SQL dans Azur
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Requis ? |false |
+| Nécessaire ? |false |
 | Position |nommée |
 | Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
@@ -84,13 +84,13 @@ Si true, imprime des messages à partir du script dans le flux de sortie.
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Requis ? |false |
+| Nécessaire ? |false |
 | Position |nommée |
 | Valeur par défaut |false |
 | Accepter l'entrée de pipeline ? |false |
 | Accepter les caractères génériques ? |false |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Pour obtenir une explication complète de la façon d'utiliser le script pour créer des environnements de développement et de test, consultez [Utilisation des scripts Windows PowerShell pour la publication dans des environnements de développement et de test](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 Le fichier de configuration JSON spécifie les détails de ce qui doit être déployé. Il inclut les informations que vous avez spécifiées lorsque vous avez créé le projet, comme le nom et le nom d'utilisateur pour le site web. Il inclut également la base de données à configurer, le cas échéant. Le code suivant montre un exemple de fichier de configuration JSON :

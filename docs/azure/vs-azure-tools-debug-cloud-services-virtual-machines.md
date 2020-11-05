@@ -5,17 +5,16 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508481"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398694"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Débogage d'un service cloud ou d'une machine virtuelle Azure dans Visual Studio
 
@@ -49,7 +48,7 @@ Pour déboguer un service cloud à partir d’une machine distante, vous devez a
 L’activation du débogage distant pour un service cloud n’entraîne pas de baisse des performances, ni de coûts supplémentaires. N’utilisez pas le débogage distant pour un service de production, car cela peut avoir un impact pour les clients qui utilisent ce service.
 
 > [!NOTE]
-> Quand vous publiez un service cloud à partir de Visual Studio, vous pouvez activer **IntelliTrace** pour tous les rôles de ce service qui ciblent .NET Framework 4 ou .NET Framework 4.5. Avec **IntelliTrace**, vous pouvez examiner des événements qui se sont déjà produits dans une instance de rôle et reproduire le contexte de ce moment-là. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) et [Utilisation d’IntelliTrace](../debugger/intellitrace.md).
+> Quand vous publiez un service cloud à partir de Visual Studio, vous pouvez activer **IntelliTrace** pour tous les rôles de ce service qui ciblent .NET Framework 4 ou .NET Framework 4.5. Avec **IntelliTrace** , vous pouvez examiner des événements qui se sont déjà produits dans une instance de rôle et reproduire le contexte de ce moment-là. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) et [Utilisation d’IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Pour activer le débogage distant pour un service cloud
 
@@ -79,7 +78,7 @@ L’activation du débogage distant pour un service cloud n’entraîne pas de b
 
     ![Boîte de dialogue Sélectionner le type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Pour identifier les processus auxquels le débogueur est attaché, dans la barre de menus, sélectionnez **Déboguer**les  >  **Windows**  >  **processus**Windows, puis ouvrez la boîte de dialogue **processus** . (Raccourci : Ctrl+Alt+Z) Pour détacher un processus spécifique, ouvrez son menu contextuel, puis sélectionnez **Détacher le processus**. Vous pouvez aussi afficher le nœud d’instance dans l’Explorateur de serveurs, rechercher le processus et ouvrir son menu contextuel, puis sélectionnez **Détacher le processus**.
+4. Pour identifier les processus auxquels le débogueur est attaché, dans la barre de menus, sélectionnez **Déboguer** les  >  **Windows**  >  **processus** Windows, puis ouvrez la boîte de dialogue **processus** . (Raccourci : Ctrl+Alt+Z) Pour détacher un processus spécifique, ouvrez son menu contextuel, puis sélectionnez **Détacher le processus**. Vous pouvez aussi afficher le nœud d’instance dans l’Explorateur de serveurs, rechercher le processus et ouvrir son menu contextuel, puis sélectionnez **Détacher le processus**.
 
     ![Processus de débogage](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -124,7 +123,7 @@ Vous pouvez déboguer des programmes exécutés sur des machines virtuelles Azur
 
     ![Commande Attacher le débogueur](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-4. Dans la boîte de dialogue **Attacher au processus**, sélectionnez **Sélectionner** pour limiter la liste des résultats et afficher uniquement les types de code que vous voulez déboguer. Vous pouvez déboguer du code managé 32 ou 64 bits, du code natif ou les deux.
+4. Dans la boîte de dialogue **Attacher au processus** , sélectionnez **Sélectionner** pour limiter la liste des résultats et afficher uniquement les types de code que vous voulez déboguer. Vous pouvez déboguer du code managé 32 ou 64 bits, du code natif ou les deux.
 
     ![Boîte de dialogue Sélectionner le type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -167,11 +166,11 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
     ![Journal des activités Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publiez votre projet comme décrit dans la rubrique [Déploiement d’un projet web à l’aide de la publication en un clic dans Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Comme vous voulez effectuer le débogage sur la machine virtuelle, sur la page **Paramètres** de l’Assistant **Publier le site web**, sélectionnez la configuration **Débogage**. Ceci permet de s’assurer que les symboles de code sont disponibles pendant le débogage.
+6. Publiez votre projet comme décrit dans la rubrique [Déploiement d’un projet web à l’aide de la publication en un clic dans Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Comme vous voulez effectuer le débogage sur la machine virtuelle, sur la page **Paramètres** de l’Assistant **Publier le site web** , sélectionnez la configuration **Débogage**. Ceci permet de s’assurer que les symboles de code sont disponibles pendant le débogage.
 
     ![Paramètres de publication](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. Dans les **Options de publication des fichiers**, sélectionnez **Supprimer les fichiers supplémentaires à la destination** si le projet a déjà été déployé précédemment.
+7. Dans les **Options de publication des fichiers** , sélectionnez **Supprimer les fichiers supplémentaires à la destination** si le projet a déjà été déployé précédemment.
 
 8. Une fois le projet publié, dans le menu contextuel de la machine virtuelle dans l’Explorateur de serveurs, sélectionnez **Attacher le débogueur...**
 
@@ -179,7 +178,7 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
     ![Commande Attacher le débogueur](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-9. Dans la boîte de dialogue **Attacher au processus**, sélectionnez **Sélectionner** pour limiter la liste des résultats et afficher uniquement les types de code que vous voulez déboguer. Vous pouvez déboguer du code managé 32 ou 64 bits, du code natif ou les deux.
+9. Dans la boîte de dialogue **Attacher au processus** , sélectionnez **Sélectionner** pour limiter la liste des résultats et afficher uniquement les types de code que vous voulez déboguer. Vous pouvez déboguer du code managé 32 ou 64 bits, du code natif ou les deux.
 
     ![Boîte de dialogue Sélectionner le type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 

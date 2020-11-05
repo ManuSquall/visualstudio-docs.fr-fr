@@ -1,6 +1,8 @@
 ---
 title: 'Procédure : modifier des fichiers XML'
 ms.date: 11/04/2016
+description: Découvrez comment utiliser l’éditeur XML dans Visual Studio pour modifier des fichiers qui contiennent du contenu XML ou DTD.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 933ce2912845b69ceb73584c0599566b0a037fef
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249508"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399980"
 ---
 # <a name="how-to-edit-xml-files"></a>Comment : modifier des fichiers XML
 
-L’éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utilisé avec un fichier XML autonome ou un fichier associé à un projet Visual Studio. L’éditeur XML est associé aux extensions de fichier suivantes : *. config*, *. DTD*, *. xml*, *. xsd*,. *XDR*,. *xsl*, *. XSLT*et *. vssettings*. L’éditeur XML est également associé à tout autre type de fichier pour lequel aucun éditeur spécifique n’est inscrit, et qui contient du contenu XML ou DTD.
+L’éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utilisé avec un fichier XML autonome ou un fichier associé à un projet Visual Studio. L’éditeur XML est associé aux extensions de fichier suivantes : *. config* , *. DTD* , *. xml* , *. xsd* ,. *XDR* ,. *xsl* , *. XSLT* et *. vssettings*. L’éditeur XML est également associé à tout autre type de fichier pour lequel aucun éditeur spécifique n’est inscrit, et qui contient du contenu XML ou DTD.
 
 > [!NOTE]
 > Les documents XHTML sont traités dans l'éditeur HTML.
@@ -36,7 +38,7 @@ Pour modifier un fichier XML, ouvrez le fichier que vous souhaitez modifier.
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Ajouter un fichier XML existant à un projet
 
-1. Dans le menu **Projet**, sélectionnez **Ajouter un élément existant**.
+1. Dans le menu **Projet** , sélectionnez **Ajouter un élément existant**.
 
    La boîte de dialogue **Ajouter un élément existant** s’affiche.
 
@@ -44,7 +46,7 @@ Pour modifier un fichier XML, ouvrez le fichier que vous souhaitez modifier.
 
 ## <a name="create-a-new-xml-or-xslt-file"></a>Créer un nouveau fichier XML ou XSLT
 
-1. Dans le menu **Fichier**, cliquez sur **Nouveau**.
+1. Dans le menu **Fichier** , cliquez sur **Nouveau**.
 
    La boîte de dialogue **Nouveau fichier** s'affiche.
 
@@ -56,7 +58,7 @@ Pour modifier un fichier XML, ouvrez le fichier que vous souhaitez modifier.
 
 ::: moniker range="vs-2017"
 
-1. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+1. Dans le menu **fichier** , sélectionnez **nouveau** > **projet**.
 
    La boîte de dialogue **Nouveau projet** apparaît.
 
@@ -68,7 +70,7 @@ Pour modifier un fichier XML, ouvrez le fichier que vous souhaitez modifier.
 
 ::: moniker range=">=vs-2019"
 
-1. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+1. Dans le menu **fichier** , sélectionnez **nouveau** > **projet**.
 
 2. Entrez un **projet vide** dans la zone de recherche du modèle, sélectionnez le modèle **projet vide (.NET Framework)** , puis sélectionnez **suivant**.
 

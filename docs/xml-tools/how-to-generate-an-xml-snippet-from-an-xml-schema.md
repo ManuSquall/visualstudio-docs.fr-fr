@@ -1,5 +1,7 @@
 ---
 title: "Procédure : générer un extrait XML à partir d'un schéma XML"
+description: Découvrez comment utiliser l’éditeur XML pour générer un extrait XML à partir d’un schéma en langage XSD (XML Schema Definition).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817175"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399467"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Comment : générer un extrait XML à partir d’un schéma XML
 
@@ -50,13 +52,13 @@ Les étapes de cette section vous montrent comment utiliser la fonctionnalité d
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1. Dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **fichier**.
+1. Dans le menu **fichier** , pointez sur **nouveau** , puis cliquez sur **fichier**.
 
 2. Sélectionnez **fichier XML** dans le volet **modèles** , puis cliquez sur **ouvrir**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
@@ -139,7 +141,7 @@ La procédure pas à pas utilise le fichier de schéma suivant.
 </xs:schema>
 ```
 
-### <a name="output"></a>Output
+### <a name="output"></a>Sortie
 
 Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` désignent des champs modifiables dans l’extrait XML.
 
@@ -156,5 +158,5 @@ Voici les données XML générées sur la base des informations de schéma assoc
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extraits XML](../xml-tools/xml-snippets.md)
+- [extraits XML](../xml-tools/xml-snippets.md)
 - [Comment : utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)

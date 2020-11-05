@@ -4,17 +4,16 @@ description: Découvrez comment configurer les différents paramètres de l’As
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 281547356dcb8910af9426a853ceeb7e757b195d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280529"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399454"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Utilisation de l’Assistant Publication d’application Azure dans Visual Studio
 
@@ -31,61 +30,61 @@ Vous pouvez accéder à l’Assistant Publication d’application Azure de deux�
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Publier**.
+1. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Publier**.
 
 **Si vous avez un projet d’application web qui n’est pas activé pour Azure :**
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Convertir** > **Convert to Azure Cloud Service Project (Convertir en projet de service cloud Azure)**.
+1. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Convertir** > **Convert to Azure Cloud Service Project (Convertir en projet de service cloud Azure)**.
 
-1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet Azure récemment connu, puis, dans le menu contextuel, sélectionnez **Publier**.
+1. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le projet Azure récemment connu, puis, dans le menu contextuel, sélectionnez **Publier**.
 
 ## <a name="sign-in-page"></a>page de connexion
 
 ![page de connexion](./media/vs-azure-tools-publish-azure-application-wizard/sign-in.png)
 
-**Compte** : sélectionnez un compte ou **Ajouter un compte** dans la liste déroulante des comptes.
+**Compte**  : sélectionnez un compte ou **Ajouter un compte** dans la liste déroulante des comptes.
 
-**Choisir votre abonnement** : choisissez l’abonnement à utiliser pour votre déploiement.
+**Choisir votre abonnement**  : choisissez l’abonnement à utiliser pour votre déploiement.
 
 ## <a name="settings-page---common-settings-tab"></a>Page Paramètres - Onglet Paramètres communs
 
 ![Paramètres courants](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**Service cloud** : dans la liste déroulante, sélectionnez un service cloud existant ou **&lt;Créer un nouveau&gt;**, puis créez un service cloud. Le centre de données s’affiche entre parenthèses pour chaque service cloud. Il est recommandé que l’emplacement du centre de données du service cloud soit identique à celui du compte de stockage (Paramètres avancés).
+**Service cloud**  : dans la liste déroulante, sélectionnez un service cloud existant ou **&lt;Créer un nouveau&gt;** , puis créez un service cloud. Le centre de données s’affiche entre parenthèses pour chaque service cloud. Il est recommandé que l’emplacement du centre de données du service cloud soit identique à celui du compte de stockage (Paramètres avancés).
 
-**Environnement** : sélectionnez **Production** ou **Intermédiaire**. Choisissez l’environnement intermédiaire si vous souhaitez déployer votre application dans un environnement de test.
+**Environnement**  : sélectionnez **Production** ou **Intermédiaire**. Choisissez l’environnement intermédiaire si vous souhaitez déployer votre application dans un environnement de test.
 
-**Configuration de build** : sélectionnez **Déboguer** ou **Version finale**.
+**Configuration de build**  : sélectionnez **Déboguer** ou **Version finale**.
 
-**Configuration de service** : sélectionnez **Cloud** ou **Local**.
+**Configuration de service**  : sélectionnez **Cloud** ou **Local**.
 
-**Activer le Bureau à distance pour tous les rôles** : Sélectionnez cette option si vous souhaitez pouvoir vous connecter à distance au service. Cette option est principalement utilisée pour le dépannage. Pour plus d’informations, consultez la page [Activer la Connexion Bureau à distance pour un rôle dans Azure Cloud Services avec Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+**Activer le Bureau à distance pour tous les rôles**  : Sélectionnez cette option si vous souhaitez pouvoir vous connecter à distance au service. Cette option est principalement utilisée pour le dépannage. Pour plus d’informations, consultez la page [Activer la Connexion Bureau à distance pour un rôle dans Azure Cloud Services avec Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-**Activer Web Deploy pour tous les rôles web** : Sélectionnez cette option pour activer le déploiement web du service. Vous devez aussi sélectionner l’option **Activer le Bureau à distance pour tous les rôles** pour utiliser cette fonctionnalité. Pour plus d’informations, consultez [Publication d’un service cloud en utilisant Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
+**Activer Web Deploy pour tous les rôles web**  : Sélectionnez cette option pour activer le déploiement web du service. Vous devez aussi sélectionner l’option **Activer le Bureau à distance pour tous les rôles** pour utiliser cette fonctionnalité. Pour plus d’informations, consultez [Publication d’un service cloud en utilisant Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 ## <a name="settings-page---advanced-settings-tab"></a>Page Paramètres - Onglet Paramètres avancés
 
 ![Paramètres avancés](./media/vs-azure-tools-publish-azure-application-wizard/settings-advanced-settings.png)
 
-**Étiquette de déploiement** : acceptez le nom par défaut ou entrez le nom de votre choix. Pour ajouter la date à l'étiquette de déploiement, laissez la case cochée.
+**Étiquette de déploiement**  : acceptez le nom par défaut ou entrez le nom de votre choix. Pour ajouter la date à l'étiquette de déploiement, laissez la case cochée.
 
-**Compte de stockage** : sélectionnez le compte de stockage que vous souhaitez utiliser pour ce déploiement, **&lt;Créer un nouveau&gt; pour créer un compte de stockage. Le centre de données s’affiche entre parenthèses pour chaque compte de stockage. Il est recommandé que l’emplacement du centre de données du compte de stockage soit identique à celui du service cloud (Paramètres avancés).
+**Compte de stockage**  : sélectionnez le compte de stockage que vous souhaitez utiliser pour ce déploiement, **&lt;Créer un nouveau&gt; pour créer un compte de stockage. Le centre de données s’affiche entre parenthèses pour chaque compte de stockage. Il est recommandé que l’emplacement du centre de données du compte de stockage soit identique à celui du service cloud (Paramètres avancés).
 
 Le compte de stockage Azure stocke le package pour le déploiement de l'application. Une fois l'application déployée, le package est supprimé du compte de stockage.
 
 **Delete deployment on failure (Supprimer le déploiement en cas d’échec)**  : sélectionnez cette option pour supprimer le déploiement si des erreurs sont détectées pendant la publication. Cette case doit être décochée si vous souhaitez conserver une adresse IP virtuelle constante pour votre service cloud.
 
-**Mise à jour du déploiement** : sélectionnez cette option si vous souhaitez déployer uniquement des composants mis à jour. Ce type de déploiement peut être plus rapide qu'un déploiement complet. Cette case doit être cochée si vous souhaitez conserver une adresse IP virtuelle constante pour votre service cloud.
+**Mise à jour du déploiement**  : sélectionnez cette option si vous souhaitez déployer uniquement des composants mis à jour. Ce type de déploiement peut être plus rapide qu'un déploiement complet. Cette case doit être cochée si vous souhaitez conserver une adresse IP virtuelle constante pour votre service cloud.
 
-**Mise à jour du déploiement - Paramètres** : cette boîte de dialogue vous permet de spécifier le mode de mise à jour des rôles. Si vous choisissez **Mise à jour incrémentielle**, les instances de votre application sont mises à jour l’une après l’autre afin que l’application soit toujours disponible. Si vous choisissez **Mise à jour simultanée**, toutes les instances de votre application sont mises à jour en même temps. La mise à jour simultanée est plus rapide, mais votre service risque de ne pas être disponible pendant la durée du processus de mise à jour.
+**Mise à jour du déploiement - Paramètres**  : cette boîte de dialogue vous permet de spécifier le mode de mise à jour des rôles. Si vous choisissez **Mise à jour incrémentielle** , les instances de votre application sont mises à jour l’une après l’autre afin que l’application soit toujours disponible. Si vous choisissez **Mise à jour simultanée** , toutes les instances de votre application sont mises à jour en même temps. La mise à jour simultanée est plus rapide, mais votre service risque de ne pas être disponible pendant la durée du processus de mise à jour.
 
 ![Paramètres de déploiement](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
-**Activer IntelliTrace** : spécifiez si vous souhaitez activer IntelliTrace. Avec IntelliTrace, vous pouvez enregistrer des informations de débogage détaillées pour une instance de rôle exécutée dans Azure. Si vous devez identifier la cause d’un problème, utilisez les journaux d’activité IntelliTrace pour exécuter pas à pas votre code à partir de Visual Studio comme s’il était exécuté dans Azure. Pour plus d’informations sur l’utilisation d’IntelliTrace, consultez l’article [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
+**Activer IntelliTrace**  : spécifiez si vous souhaitez activer IntelliTrace. Avec IntelliTrace, vous pouvez enregistrer des informations de débogage détaillées pour une instance de rôle exécutée dans Azure. Si vous devez identifier la cause d’un problème, utilisez les journaux d’activité IntelliTrace pour exécuter pas à pas votre code à partir de Visual Studio comme s’il était exécuté dans Azure. Pour plus d’informations sur l’utilisation d’IntelliTrace, consultez l’article [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
-**Activer le profilage** : spécifiez si vous souhaitez activer le profilage des performances. Le profileur Visual Studio vous permet d’obtenir une analyse approfondie des ressources de calcul nécessaires à l’exécution de votre service cloud. Pour plus d’informations sur l’utilisation du profileur Visual Studio, consultez l’article [Test des performances d’un service cloud](./vs-azure-tools-performance-profiling-cloud-services.md).
+**Activer le profilage**  : spécifiez si vous souhaitez activer le profilage des performances. Le profileur Visual Studio vous permet d’obtenir une analyse approfondie des ressources de calcul nécessaires à l’exécution de votre service cloud. Pour plus d’informations sur l’utilisation du profileur Visual Studio, consultez l’article [Test des performances d’un service cloud](./vs-azure-tools-performance-profiling-cloud-services.md).
 
 **Enable Remote Debugger for all roles (Activer le débogueur distant pour tous les rôles)**  : spécifiez si vous souhaitez activer le débogage distant. Pour plus d’informations sur le débogage des services cloud à l’aide de Visual Studio, consultez l’article [Débogage d’un service cloud ou d’une machine virtuelle Azure dans Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md).
 
@@ -97,9 +96,9 @@ Diagnostics vous permet de résoudre les problèmes d’un service cloud Azure (
 
 ## <a name="summary-page"></a>Page de résumé
 
-![Résumé](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
+![Page de résumé](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Profil cible** : vous pouvez choisir de créer un profil de publication à partir des paramètres que vous avez choisis. Par exemple, vous pouvez créer un profil pour un environnement de test et un autre pour la production. Pour enregistrer ce profil, choisissez l'icône **Enregistrer**. L'Assistant crée le profil et l'enregistre dans le projet Visual Studio. Pour modifier le nom du profil, ouvrez la liste **Profil cible**, puis sélectionnez **&lt;Gérer...&gt;**.
+**Profil cible**  : vous pouvez choisir de créer un profil de publication à partir des paramètres que vous avez choisis. Par exemple, vous pouvez créer un profil pour un environnement de test et un autre pour la production. Pour enregistrer ce profil, choisissez l'icône **Enregistrer**. L'Assistant crée le profil et l'enregistre dans le projet Visual Studio. Pour modifier le nom du profil, ouvrez la liste **Profil cible** , puis sélectionnez **&lt;Gérer...&gt;**.
 
    > [!Note]
    > Le profil de publication s'affiche dans l'Explorateur de solutions dans Visual Studio, et les paramètres du profil sont écrits dans un fichier portant l'extension .azurePubxml. Les paramètres sont enregistrés en tant qu'attributs de balises XML.

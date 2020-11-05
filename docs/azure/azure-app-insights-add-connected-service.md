@@ -3,18 +3,17 @@ title: Ajouter Azure Application Insights à l’aide de Services connectés | M
 description: Ajouter Azure Application Insights à votre application à l’aide de Visual Studio pour ajouter un service connecté
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643544"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398668"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Ajoutez Azure Application Insights à l’aide de Visual Studio Services connectés
 
@@ -43,7 +42,7 @@ La fonctionnalité de service connecté ajoute l’ensemble des références et 
 
 1. Ouvrez votre projet dans Visual Studio.
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **services connectés** et, dans le menu contextuel, sélectionnez **Ajouter un service connecté**.
+1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nœud **services connectés** et, dans le menu contextuel, sélectionnez **Ajouter un service connecté**.
 
 1. Sous l’onglet **services connectés** , sélectionnez l’icône + pour les **dépendances de service**.
 

@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467633"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398993"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
 Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-feu ou un serveur proxy, vous pouvez souhaiter ajouter des URL de domaine à une « liste verte » et ouvrir des ports et des protocoles afin de bénéficier d’une expérience optimale pendant l’installation et l’utilisation de Visual Studio et des services Azure.
 
-* **[Installer Visual Studio](#install-visual-studio)**: ces tables incluent les URL de domaine à ajouter à une liste verte afin que vous ayez accès à tous les composants et charges de travail de votre choix.
+* **[Installer Visual Studio](#install-visual-studio)** : ces tables incluent les URL de domaine à ajouter à une liste verte afin que vous ayez accès à tous les composants et charges de travail de votre choix.
 
-* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)**: cette table comprend les URL de domaine à ajouter à une liste verte et les ports et protocoles à ouvrir afin que vous ayez accès à l’ensemble des fonctionnalités et des services de votre choix.
+* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)** : cette table comprend les URL de domaine à ajouter à une liste verte et les ports et protocoles à ouvrir afin que vous ayez accès à l’ensemble des fonctionnalités et des services de votre choix.
 
 > [!NOTE]
 > Cet article a été écrit pour Visual Studio sur Windows, mais certaines informations sont également applicables à [l’installation de Visual Studio pour Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) derrière un pare-feu ou un serveur proxy.
@@ -81,6 +81,7 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 | developer.apple.com | Approvisionnement Xamarin. iOS |
 | appstoreconnect.apple.com | Approvisionnement Xamarin. iOS |
 | idmsa.apple.com | Approvisionnement Xamarin. iOS |
+| akamized.net | Content Delivery Network (Akamai Technologies) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Utiliser Visual Studio et les services Azure
@@ -89,7 +90,7 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 
 Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous utilisez Visual Studio ou des services Azure derrière un pare-feu ou un serveur proxy, Voici les URL que vous devez ajouter à une liste verte et les ports et protocoles que vous souhaitez peut-être ouvrir.
 
-| Scénario ou service | Point de terminaison DNS | Protocol<br/>/Port | Description |
+| Scénario ou service | Point de terminaison DNS | Protocole<br/>/Port | Description |
 | - | - | -: | - | - |
 | URL<br>resolution | go.microsoft.com<br><br>aka.ms | | Permet de raccourcir les URL, puis les résoudre en URL plus longues |
 | Page de démarrage | vsstartpage.blob.core.windows.net | 443 | Permet d’afficher la section Informations pour les développeurs située sur la page de démarrage (Visual Studio 2017 uniquement) |
@@ -98,7 +99,7 @@ Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous 
 | Projet IA <br>Intégration | az861674.vo.msecnd.net | 443<br> | Permet de configurer de nouveaux projets pour envoyer des données d’utilisation à votre compte Application Insights enregistré |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Permet de fournir des informations dans l’éditeur relatives à la dernière mise à jour d’un fichier, à la chronologie des modifications, aux éléments de travail auxquels sont associées des modifications, aux auteurs et bien plus encore |
 | Expérimental <br>activation des fonctionnalités | visualstudio-devdiv-c2s.msedge.net | 80 | Permet d’activer de nouvelles fonctionnalités expérimentales ou des modifications de fonctionnalités |
-| « Badge » d’identité <br>(nom d'utilisateur et avatar)<br>et <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
+| « Badge » d’identité <br>(nom d'utilisateur et avatar)<br>and <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
 | Paramètres distants | az700632.vo.msecnd.net | 443 | Permet de désactiver des extensions qui sont connues pour poser des problèmes dans Visual Studio |
 | Outils Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Utilisé pour les scénarios de magasin d’applications Windows |
 | JSON Schema (Schéma JSON) <br>Découverte <br><br>JSON Schema (Schéma JSON) <br>Définition<br><br>JSON Schema (Schéma JSON) <br>La prise en charge de <br>Ressources Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Permet de détecter et de télécharger des schémas JSON que l’utilisateur peut utiliser lors de la modification des documents JSON <br><br>Permet d’obtenir le schéma de validation de métadonnées pour JSON<br><br>Permet d’obtenir le schéma actuel pour les modèles de déploiement Azure Resource Manager |

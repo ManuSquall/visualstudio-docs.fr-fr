@@ -4,17 +4,16 @@ description: Découvrez comment configurer un projet de service cloud Azure dans
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 7f207afc600402924969e4d2eee6df229c3d6f09
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 388cd20468624c6441342267f6545dfaf0e21901
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426718"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399144"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Configurer un projet de service cloud Azure avec Visual Studio
 Vous pouvez configurer un projet de service cloud Azure selon vos spécifications pour ce projet. Vous pouvez définir des propriétés pour le projet pour les catégories suivantes :
@@ -26,7 +25,7 @@ Vous pouvez configurer un projet de service cloud Azure selon vos spécification
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Étapes de configuration d’un projet de service cloud Azure
 1. Ouvrir ou créer un projet de service cloud dans Visual Studio
 
-1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Propriétés**.
+1. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Propriétés**.
 
 1. Dans la page de propriétés du projet, sélectionnez l’onglet **Développement**.
 

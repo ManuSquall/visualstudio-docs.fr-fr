@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099425"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399251"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio propose une suite d’outils qui facilitent la création d’appli
 
 ::: moniker range="vs-2017"
 
-Après avoir installé la charge de travail **développement Azure**, les modèles **cloud** suivants pour C# sont disponibles dans la boîte de dialogue **Nouveau projet** :
+Après avoir installé la charge de travail **développement Azure** , les modèles **cloud** suivants pour C# sont disponibles dans la boîte de dialogue **Nouveau projet** :
 
 ![Modèles de projet cloud pour Visual Studio](media/cloud-project-templates.png)
 
@@ -54,13 +54,13 @@ Après avoir installé la charge de travail **développement Azure**, les modèl
 
 ![Cloud Explorer dans Visual Studio](media/cloud-explorer.png)
 
-Vous pouvez exploiter les services Azure pour vos applications à l’aide de **services connectés**, par exemple :
+Vous pouvez exploiter les services Azure pour vos applications à l’aide de **services connectés** , par exemple :
 
 - [Service connecté Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) afin que les utilisateurs puissent utiliser leurs comptes à partir d’[Azure Active Directory](/azure/active-directory/active-directory-whatis) pour se connecter à des applications web
 - [Service connecté Stockage Azure](/azure/vs-azure-tools-connected-services-storage) pour le stockage d’objets blob, les files d’attente et les tables
 - [Service connecté Key Vault](/azure/key-vault/vs-key-vault-add-connected-service) pour gérer les secrets pour les applications web
 
-Les **services connectés** disponibles dépendent du type de votre projet. Ajoutez un service en cliquant avec le bouton droit sur le projet dans **l’Explorateur de solutions**, puis en choisissant **Ajouter** > **Service connecté**.
+Les **services connectés** disponibles dépendent du type de votre projet. Ajoutez un service en cliquant avec le bouton droit sur le projet dans **l’Explorateur de solutions** , puis en choisissant **Ajouter** > **Service connecté**.
 
 ![Services connectés de Visual Studio](media/connected-services.png)
 
@@ -82,7 +82,7 @@ Visual Studio vous permet de générer des applications et des jeux pour les app
 
 - Utilisez des technologies Web standard&mdash;HTML, CSS et JavaScript&mdash;pour générer des applications mobiles pour iOS, Android et Windows à l’aide de [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Générez des jeux en 2D et 3D en c# à l’aide de [Visual Studio Tools pour Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Générez des jeux en 2D et 3D en c# à l’aide de [Visual Studio Tools pour Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Générez des applications C++ natives pour les appareils iOS, Android et Windows. Partagez du code commun dans des bibliothèques conçues pour iOS, Android et Windows, à l’aide du [C++ pour le développement multiplateforme](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
@@ -90,11 +90,11 @@ Visual Studio vous permet de générer des applications et des jeux pour les app
 
 ## <a name="connect-to-databases"></a>Se connecter aux bases de données
 
-**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et les ressources SQL Server localement, à distance et sur Azure, Salesforce.com, Microsoft 365 et sites Web. Pour ouvrir **l’Explorateur de serveurs**, dans le menu principal, choisissez **Affichage** > **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation de l’Explorateur de serveurs, consultez [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+**Explorateur de serveurs** vous aide à parcourir et à gérer les instances et les ressources SQL Server localement, à distance et sur Azure, Salesforce.com, Microsoft 365 et sites Web. Pour ouvrir **l’Explorateur de serveurs** , dans le menu principal, choisissez **Affichage** > **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation de l’Explorateur de serveurs, consultez [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) est un environnement de développement puissant pour SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Il vous permet de générer, déboguer, gérer et refactoriser des bases de données. Vous pouvez travailler avec un projet de base de données, ou directement avec une instance de base de données connectée, locale ou hors site.
 
-L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des objets de base de données similaire à celle de SQL Server Management Studio. L’Explorateur d’objets SQL Server vous permet d’effectuer des travaux légers de conception et d’administration de base de données. Voici quelques exemples de travaux : modification de données de tables, comparaison de schémas, exécution de requêtes à l’aide de menus contextuels directement à partir de l’Explorateur d’objets SQL Server, etc.
+L’ **Explorateur d’objets SQL Server** de Visual Studio offre une vue des objets de base de données similaire à celle de SQL Server Management Studio. L’Explorateur d’objets SQL Server vous permet d’effectuer des travaux légers de conception et d’administration de base de données. Voici quelques exemples de travaux : modification de données de tables, comparaison de schémas, exécution de requêtes à l’aide de menus contextuels directement à partir de l’Explorateur d’objets SQL Server, etc.
 
 ![Explorateur d’objets SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
@@ -140,4 +140,4 @@ Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’
 
 - [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Nouveautés de Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Nouveautés de Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [Nouveautés de Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

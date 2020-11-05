@@ -4,17 +4,16 @@ description: Découvrez comment installer et configurer des rôles pour les serv
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740043"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399277"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurer des rôles de service cloud Azure avec Visual Studio
 Un service cloud Azure peut avoir un ou plusieurs rôles de travail ou rôles web. Pour chaque rôle, vous devez définir le mode de configuration de ce rôle et configurer son mode d’exécution. Pour en savoir plus sur les rôles dans les services cloud, regardez la vidéo [Introduction aux services cloud Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -22,7 +21,7 @@ Un service cloud Azure peut avoir un ou plusieurs rôles de travail ou rôles we
 Les informations pour votre service cloud sont stockées dans les fichiers suivants :
 
 - **Fichier ServiceDefinition. csdef** : le fichier de définition de service définit les paramètres d’exécution de votre service Cloud, y compris les rôles requis, les points de terminaison et la taille de la machine virtuelle. Aucune des données stockées dans `ServiceDefinition.csdef` ne peut être modifiée lorsque votre rôle est en cours d’exécution.
-- **ServiceConfiguration.cscfg** : le fichier de configuration de service configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle. Les données stockées dans `ServiceConfiguration.cscfg` peuvent être modifiées lorsque votre rôle est en cours d’exécution.
+- **ServiceConfiguration.cscfg**  : le fichier de configuration de service configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle. Les données stockées dans `ServiceConfiguration.cscfg` peuvent être modifiées lorsque votre rôle est en cours d’exécution.
 
 Pour stocker différentes valeurs pour les paramètres qui contrôlent l’exécution d’un rôle, vous pouvez définir plusieurs configurations de service. Vous pouvez utiliser une configuration de service différente pour chaque environnement de déploiement. Par exemple, vous pouvez définir votre chaîne de connexion de compte de stockage pour utiliser l’émulateur de stockage Azure local dans une configuration de service local et créer une autre configuration de service pour utiliser le stockage Azure dans le Cloud.
 
@@ -36,7 +35,7 @@ Vous pouvez configurer un service cloud Azure à partir de l’Explorateur de so
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Propriétés**.
+1. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Propriétés**.
 
     ![Menu contextuel de projet dans l’Explorateur de solutions](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
@@ -44,7 +43,7 @@ Vous pouvez configurer un service cloud Azure à partir de l’Explorateur de so
 
     ![Page de propriétés du projet : onglet développement](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
-1. Dans la liste **Configuration du service**, sélectionnez le nom de la configuration de service que vous souhaitez modifier. (Si vous souhaitez modifier toutes les configurations de service pour ce rôle, sélectionnez **Toutes les configurations**.)
+1. Dans la liste **Configuration du service** , sélectionnez le nom de la configuration de service que vous souhaitez modifier. (Si vous souhaitez modifier toutes les configurations de service pour ce rôle, sélectionnez **Toutes les configurations**.)
 
     > [!IMPORTANT]
     > Si vous choisissez une configuration de service spécifique, certaines propriétés sont désactivées parce qu’elles peuvent être définies uniquement pour toutes les configurations. Pour modifier ces propriétés, vous devez sélectionner **Toutes les configurations**.
@@ -56,7 +55,7 @@ Pour améliorer la performance de votre service cloud, vous pouvez modifier le n
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **Explorateur de solutions**, développez le nœud du projet. Sous le nœud **Rôles**, cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions** , développez le nœud du projet. Sous le nœud **Rôles** , cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
 
     ![Menu contextuel de rôle Azure dans l’Explorateur de solutions](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -64,9 +63,9 @@ Pour améliorer la performance de votre service cloud, vous pouvez modifier le n
 
     ![Onglet Configuration](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page.png)
 
-1. Dans la liste **Configuration du service**, sélectionnez la configuration de service que vous voulez mettre à jour.
+1. Dans la liste **Configuration du service** , sélectionnez la configuration de service que vous voulez mettre à jour.
 
-    ![Liste Configuration du service](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
+    ![Liste de configuration de service 1](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
 1. Dans la zone de texte **Nombre d’instances** , entrez le nombre d’instances que vous voulez démarrer pour ce rôle. Chaque instance s’exécute sur une machine virtuelle distincte quand vous publiez le service cloud sur Azure.
 
@@ -86,15 +85,15 @@ Si vous utilisez une valeur différente pour chaque configuration de service, il
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **Explorateur de solutions**, développez le nœud du projet. Sous le nœud **Rôles**, cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions** , développez le nœud du projet. Sous le nœud **Rôles** , cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
 
     ![Menu contextuel de rôle Azure dans l’Explorateur de solutions](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Sélectionnez l’onglet **Paramètres**.
+1. Sélectionnez l’onglet **Settings** (Paramètres).
 
     ![Onglet Paramètres](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
-1. Dans la liste **Configuration du service**, sélectionnez la configuration de service que vous voulez mettre à jour.
+1. Dans la liste **Configuration du service** , sélectionnez la configuration de service que vous voulez mettre à jour.
 
     ![Configuration du service](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
@@ -106,15 +105,15 @@ Si vous utilisez une valeur différente pour chaque configuration de service, il
 
     ![New connection string](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Nom** : entrez le nom que vous voulez utiliser pour la chaîne de connexion.
-    - **Type** : sélectionnez **Chaîne de connexion** dans la liste déroulante.
-    - **Valeur** : vous pouvez entrer la chaîne de connexion directement dans la cellule **Valeur** ou sélectionner les points de suspension (...) pour utiliser la boîte de dialogue **Créer une chaîne de connexion de stockage**.
+    - **Nom**  : entrez le nom que vous voulez utiliser pour la chaîne de connexion.
+    - **Type**  : sélectionnez **Chaîne de connexion** dans la liste déroulante.
+    - **Valeur**  : vous pouvez entrer la chaîne de connexion directement dans la cellule **Valeur** ou sélectionner les points de suspension (...) pour utiliser la boîte de dialogue **Créer une chaîne de connexion de stockage**.
 
-1. Dans la boîte de dialogue **Créer une chaîne de connexion de stockage**, sélectionnez une option pour **Se connecter avec**. Suivez les instructions correspondant à l’option sélectionnée :
+1. Dans la boîte de dialogue **Créer une chaîne de connexion de stockage** , sélectionnez une option pour **Se connecter avec**. Suivez les instructions correspondant à l’option sélectionnée :
 
     - **Émulateur de stockage Microsoft Azure** : Si vous sélectionnez cette option, les autres paramètres de la boîte de dialogue sont désactivés, car ils s’appliquent uniquement à Azure. Sélectionnez **OK**.
-    - **Votre abonnement** : si vous sélectionnez cette option, utilisez la liste déroulante pour sélectionner un compte Microsoft et s’y connecter ou pour ajouter un compte Microsoft. Sélectionnez un abonnement et un compte de stockage Azure. Sélectionnez **OK**.
-    - **Informations d’identification entrées manuellement** : entrez le nom du compte de stockage, ainsi que la clé primaire ou secondaire. Sélectionnez une option de **connexion** (HTTPS est recommandé pour la plupart des scénarios). Sélectionnez **OK**.
+    - **Votre abonnement**  : si vous sélectionnez cette option, utilisez la liste déroulante pour sélectionner un compte Microsoft et s’y connecter ou pour ajouter un compte Microsoft. Sélectionnez un abonnement et un compte de stockage Azure. Sélectionnez **OK**.
+    - **Informations d’identification entrées manuellement**  : entrez le nom du compte de stockage, ainsi que la clé primaire ou secondaire. Sélectionnez une option de **connexion** (HTTPS est recommandé pour la plupart des scénarios). Sélectionnez **OK**.
 
 1. Pour supprimer une chaîne de connexion, sélectionnez-la, puis sélectionnez **Supprimer un paramètre**.
 
@@ -148,17 +147,17 @@ Si vous utilisez une valeur différente pour chaque configuration de service, il
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **Explorateur de solutions**, développez le nœud du projet. Sous le nœud **Rôles**, cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions** , développez le nœud du projet. Sous le nœud **Rôles** , cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
 
     ![Menu contextuel de rôle Azure dans l’Explorateur de solutions](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Sélectionnez l’onglet **Paramètres**.
+1. Sélectionnez l’onglet **Settings** (Paramètres).
 
     ![Onglet Paramètres](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
-1. Dans la liste **Configuration du service**, sélectionnez la configuration de service que vous voulez mettre à jour.
+1. Dans la liste **Configuration du service** , sélectionnez la configuration de service que vous voulez mettre à jour.
 
-    ![Liste Configuration du service](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
+    ![Liste de configuration de service 2](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
 1. Pour ajouter un paramètre personnalisé, sélectionnez **Ajouter un paramètre**.
 
@@ -168,9 +167,9 @@ Si vous utilisez une valeur différente pour chaque configuration de service, il
 
     ![Nouveau paramètre personnalisé](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Nom** : entrez le nom du paramètre.
-    - **Type** : sélectionnez **Chaîne** dans la liste déroulante.
-    - **Valeur** : entrez la valeur du paramètre. Vous pouvez entrer directement la valeur dans la cellule **Valeur** ou sélectionner les points de suspension (...) pour entrer la valeur dans la boîte de dialogue **Modifier la chaîne**.
+    - **Nom**  : entrez le nom du paramètre.
+    - **Type**  : sélectionnez **Chaîne** dans la liste déroulante.
+    - **Valeur**  : entrez la valeur du paramètre. Vous pouvez entrer directement la valeur dans la cellule **Valeur** ou sélectionner les points de suspension (...) pour entrer la valeur dans la boîte de dialogue **Modifier la chaîne**.
 
 1. Pour supprimer un paramètre personnalisé, sélectionnez-le, puis sélectionnez **Supprimer un paramètre**.
 
@@ -199,7 +198,7 @@ Vous pouvez ajouter le stockage de système de fichiers local pour chaque instan
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **Explorateur de solutions**, développez le nœud du projet. Sous le nœud **Rôles**, cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions** , développez le nœud du projet. Sous le nœud **Rôles** , cliquez avec le bouton droit sur le rôle que vous souhaitez mettre à jour, puis, dans le menu contextuel, sélectionnez **Propriétés**.
 
     ![Menu contextuel de rôle Azure dans l’Explorateur de solutions](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -207,9 +206,9 @@ Vous pouvez ajouter le stockage de système de fichiers local pour chaque instan
 
     ![Onglet Stockage local](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. Dans la liste **Configuration du service**, vérifiez que l’option **Toutes les configurations** est sélectionnée, car les paramètres de stockage local s’appliquent à toutes les configurations de service. Toute autre valeur entraîne la désactivation de tous les champs d’entrée de la page.
+1. Dans la liste **Configuration du service** , vérifiez que l’option **Toutes les configurations** est sélectionnée, car les paramètres de stockage local s’appliquent à toutes les configurations de service. Toute autre valeur entraîne la désactivation de tous les champs d’entrée de la page.
 
-    ![Liste Configuration du service](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
+    ![Liste de configuration de service 3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
 1. Pour ajouter une entrée de stockage local, sélectionnez **Ajouter le stockage local**.
 
@@ -219,9 +218,9 @@ Vous pouvez ajouter le stockage de système de fichiers local pour chaque instan
 
     ![Nouvelle entrée de stockage local](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
-    - **Nom** : entrez le nom que vous voulez utiliser pour le nouveau stockage local.
+    - **Nom**  : entrez le nom que vous voulez utiliser pour le nouveau stockage local.
     - **Taille (Mo)**  : entrez la taille (en Mo) dont vous avez besoin pour le nouveau stockage local.
-    - **Nettoyer après le recyclage des rôles** : sélectionnez cette option pour supprimer les données dans le nouveau stockage local quand la machine virtuelle pour le rôle est recyclée.
+    - **Nettoyer après le recyclage des rôles**  : sélectionnez cette option pour supprimer les données dans le nouveau stockage local quand la machine virtuelle pour le rôle est recyclée.
 
 1. Pour supprimer une entrée de stockage local, sélectionnez l’entrée, puis **Remove Local Storage (Supprimer le stockage local)**.
 
@@ -262,11 +261,11 @@ Pour afficher le fichier créé par le code dans la section précédente, procé
 
     ![Émulateur de calcul Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator.png)
 
-1. Dans le menu **Émulateur de calcul Microsoft Azure**, sélectionnez **Outils** > **Ouvrir magasin local**.
+1. Dans le menu **Émulateur de calcul Microsoft Azure** , sélectionnez **Outils** > **Ouvrir magasin local**.
 
     ![Élément du menu Ouvrir magasin local](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 
-1. Lorsque la fenêtre de l’Explorateur Windows s’ouvre, entrez « MyLocalStorageTest.txt » dans la zone de texte **Rechercher**, puis sélectionnez **Entrée** pour démarrer la recherche.
+1. Lorsque la fenêtre de l’Explorateur Windows s’ouvre, entrez « MyLocalStorageTest.txt » dans la zone de texte **Rechercher** , puis sélectionnez **Entrée** pour démarrer la recherche.
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les projets Azure dans Visual Studio en lisant [Configuration d’un projet Azure](vs-azure-tools-configuring-an-azure-project.md). En savoir plus sur le schéma de service cloud en lisant [Référence de schéma](/previous-versions/azure/dd179398(v=azure.100)).

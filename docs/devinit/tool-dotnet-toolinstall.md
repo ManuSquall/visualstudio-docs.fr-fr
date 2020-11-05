@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f6946afa0138dc27a61f5665a9172c231392acc1
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 464460d6a33c01e5c53b66e8a03de7aa7f844953
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862246"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399652"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
 L' `dotnet-toolinstall` outil est utilisé pour installer les [outils .net Core](https://dotnet.microsoft.com/) à l’aide de la `dotnet tool update` commande.
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
@@ -50,7 +50,7 @@ Le comportement par défaut de l' `dotnet-toolinstall` outil est l’erreur tell
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will install the dotnet-trace tool.",

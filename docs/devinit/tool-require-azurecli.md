@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3f9fbec93d9c27ae7bdcb6ea44f59debb2a03a14
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c8273a130ab9b977a7d4893f13d830cd59ff46b3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959812"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399612"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
@@ -48,7 +48,7 @@ Le comportement par défaut de l' `require-azurecli` outil consiste à installer
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing the Azure CLI.",

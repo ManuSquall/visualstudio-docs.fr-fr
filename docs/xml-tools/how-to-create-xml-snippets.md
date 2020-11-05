@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : créer des extraits XML'
+description: Découvrez comment utiliser l’éditeur XML dans Visual Studio pour créer des extraits XML qui vous permettent de créer des fichiers XML plus rapidement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d935f479e3133db8fb5340359d6a354058a3020a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815394"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400028"
 ---
 # <a name="how-to-create-xml-snippets"></a>Comment : créer des extraits XML
 
@@ -117,6 +119,6 @@ La variable $prefix$ _peut alors être utilisée ailleurs dans votre extrait XML
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extraits XML](../xml-tools/xml-snippets.md)
+- [extraits XML](../xml-tools/xml-snippets.md)
 - [Comment : utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)
 - [Comment : générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

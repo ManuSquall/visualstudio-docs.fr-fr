@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de schémas XML : obtenir une vue d’ensemble du jeu de schémas à l’aide de la vue graphique'
+description: Découvrez comment utiliser la vue du graphique dans l’Explorateur de schémas XML pour afficher une vue d’ensemble des nœuds d’un jeu de schémas et les relations entre les nœuds.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50813b37bf8f0fa7b3a8dbbb8fd38c101f6bbadf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 553b9f2d84f70c75ebcee40cdffe044237c23a5f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817149"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398486"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Comment : obtenir une vue d’ensemble d’un jeu de schémas à l’aide de la vue du graphique
 

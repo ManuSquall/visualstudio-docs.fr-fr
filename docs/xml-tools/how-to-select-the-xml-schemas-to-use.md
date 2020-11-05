@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : sélectionner les schémas XML à utiliser'
+description: Découvrez comment utiliser l’éditeur XML pour sélectionner un schéma XML à partir du cache de schéma qui comprend des schémas XML connus utilisés pour IntelliSense et la validation de document XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f9de6927d616d6cf08995c076246c8a45ec014
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815966"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400152"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
 
@@ -21,7 +23,7 @@ L’éditeur XML fournit un cache de schéma situé dans le répertoire *%VSInst
 
 Utilisez la propriété **schéma** de document pour sélectionner un ou plusieurs schémas en langage XSD (XML Schema Definition). Vous pouvez sélectionner des schémas à partir du cache de schéma ou d’un autre emplacement.
 
-Les schémas que vous spécifiez sont enregistrés dans un fichier d’options utilisateur de solution (masqué) (.* suo*), ainsi que toutes les autres propriétés de document XML. Par conséquent, vous n’êtes pas obligé de réentrer ces valeurs la prochaine fois que vous ouvrez la solution.
+Les schémas que vous spécifiez sont enregistrés dans un fichier d’options utilisateur de solution (masqué) (. *suo* ), ainsi que toutes les autres propriétés de document XML. Par conséquent, vous n’êtes pas obligé de réentrer ces valeurs la prochaine fois que vous ouvrez la solution.
 
 > [!NOTE]
 > L’éditeur peut valider à l’aide d’un schéma inline ou d’un schéma référencé par l' `xsd:schemaLocation` attribut. Pour plus d’informations, consultez [validation de document XML](../xml-tools/xml-document-validation.md).

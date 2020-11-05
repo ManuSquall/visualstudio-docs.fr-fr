@@ -1,7 +1,7 @@
 ---
 title: Application .NET Core
 description: Exemple de référentiel qui utilise devinit pour installer un kit SDK .NET Core spécifique.
-ms.date: 11/02/2020
+ms.date: 11/04/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,18 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 35971ac1fde5fc272f22579cc6640cbea6724db5
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 26386631946bd37920ba89490a6210031ef945a6
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344517"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398341"
 ---
 # <a name="net-core-app"></a>Application .NET Core
 
-Consultez le référentiel [DotnetCoreDevinitExample](https://github.com/microsoft/DotnetCoreDevinitExample) pour obtenir un exemple complet d’utilisation de devinit pour installer la version de kit SDK .net Core requise dans Codespaces.
+Consultez le référentiel [devinit-example-dotnet-Core](https://github.com/microsoft/devinit-example-dotnet-core) pour obtenir un exemple complet d’utilisation de devinit pour installer la version de kit SDK .net Core requise dans Codespaces.
 
 ## <a name="devinitjson"></a>.devinit.json
+
+Contenu de l' _.devinit.jssur_ le fichier dans la racine référentiel.
 
 ```json
 {

@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e88f1b58308d0c81d17f9337f0a1a1d5e253c6ba
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 1069fce8c785fa80143f794e8ce083b7c0e86eaf
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862826"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400245"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
 L' `require-vscomponent` outil est utilisé pour importer des configurations Visual Studio dans Visual Studio existant. En savoir plus à `.vsconfig` [ce](../install/import-export-installation-configurations.md)sujet.
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
@@ -48,7 +48,7 @@ Le comportement par défaut de l' `require-vscomponent` outil consiste à recher
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "comments": "A sample dot-devinit file.",
     "run": [
         {

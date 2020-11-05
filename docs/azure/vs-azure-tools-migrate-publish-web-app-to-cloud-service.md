@@ -1,7 +1,7 @@
 ---
 title: Migrer et publier une application Web sur un service Cloud
 description: Découvrez comment migrer et publier une application web sur un service cloud Azure à partir de Visual Studio
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036533"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399817"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procédure : migrer et publier une application Web vers un service Cloud Azure à partir de Visual Studio
 
@@ -43,7 +43,7 @@ Pour plus d’informations sur la façon de traiter les avertissements comme des
 
 ### <a name="test-the-migration-locally"></a>Test local de la migration
 
-1. Dans Visual Studio, dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le projet de service mobile ajouté, puis sélectionnez **Définir comme projet de démarrage**.
+1. Dans Visual Studio, dans l' **Explorateur de solutions** , cliquez avec le bouton droit sur le projet de service mobile ajouté, puis sélectionnez **Définir comme projet de démarrage**.
 1. Sélectionnez **Déboguer > Démarrer le débogage** (F5) pour lancer l'environnement de débogage Azure. Cet environnement fournit spécifiquement l'émulation des divers services Azure.
 
 ### <a name="use-an-azure-sql-database-for-your-application"></a>Utilisation d’une base de données Azure SQL pour votre application
@@ -58,9 +58,9 @@ Si vous avez une chaîne de connexion pour votre application web qui utilise une
 1. Créez le service cloud et les comptes de stockage nécessaires dans votre abonnement Azure, comme indiqué dans [Préparer la publication ou le déploiement d’une application Azure à partir de Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. Dans Visual Studio, cliquez avec le bouton droit sur le projet d'application et sélectionnez **Publier sur Microsoft Azure...** (ce qui est différent de la commande « Publier... »).
 1. Dans la fenêtre **Publication d'application Azure** qui s'affiche, connectez-vous à l'aide du compte de votre abonnement Azure puis sélectionnez **Suivant >**.
-1. Dans l'onglet **Paramètres > Paramètres communs**, sélectionnez le service cloud cible dans la liste déroulante **Service cloud** ainsi que l'environnement et les configurations de votre choix.
-1. Dans **Paramètres > Paramètres avancés**, choisissez le compte de stockage à utiliser, puis sélectionnez **Suivant >**.
-1. Dans **Diagnostics**, indiquez si vous souhaitez envoyer les informations à Application Insights.
+1. Dans l'onglet **Paramètres > Paramètres communs** , sélectionnez le service cloud cible dans la liste déroulante **Service cloud** ainsi que l'environnement et les configurations de votre choix.
+1. Dans **Paramètres > Paramètres avancés** , choisissez le compte de stockage à utiliser, puis sélectionnez **Suivant >**.
+1. Dans **Diagnostics** , indiquez si vous souhaitez envoyer les informations à Application Insights.
 1. Sélectionnez **Suivant >** pour afficher un résumé, puis sélectionnez **Publier** pour lancer le déploiement.
 1. Visual Studio ouvre une fenêtre du journal d'activité dans laquelle vous pouvez suivre la progression :
 
@@ -72,7 +72,7 @@ Si vous avez une chaîne de connexion pour votre application web qui utilise une
 
 ## <a name="using-the-compute-emulator-and-starting-application-in-azure"></a>Utilisation de l'émulateur de calcul et démarrage de l'application dans Azure
 
-Tous les types d'applications peuvent être démarrés dans un navigateur connecté au débogueur Visual Studio en sélectionnant **Déboguer > Démarrer le débogage **(F5). Avec un projet d'application web ASP.NET vide, vous devez d'abord ajouter une page `.aspx` à votre application puis la définir comme page de démarrage pour votre projet web.
+Tous les types d'applications peuvent être démarrés dans un navigateur connecté au débogueur Visual Studio en sélectionnant **Déboguer > Démarrer le débogage** (F5). Avec un projet d'application web ASP.NET vide, vous devez d'abord ajouter une page `.aspx` à votre application puis la définir comme page de démarrage pour votre projet web.
 
 Le tableau suivant fournit des détails sur le démarrage de l'application dans Azure :
 

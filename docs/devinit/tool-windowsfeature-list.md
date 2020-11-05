@@ -1,5 +1,5 @@
 ---
-title: WindowsFeature-List
+title: windowsfeature-list
 description: devinit, outil WindowsFeature-List.
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6c4c20fb92e0d854eb7745a598efabd7ac426bfc
-ms.sourcegitcommit: 417ea66a8b07ec102ece2fa00e07b88edc404c00
+ms.openlocfilehash: 3030ddaaa3cc19b8719b067d9bd5e3572957b84f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91127827"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400197"
 ---
-# <a name="windowsfeature-list"></a>WindowsFeature-List
+# <a name="windowsfeature-list"></a>windowsfeature-list
 
 L' `windowsfeature-list` outil est utilisé pour répertorier l’état d’activation/de désactivation de toutes les fonctionnalités de Windows.
 
@@ -44,7 +44,7 @@ Le comportement par défaut de l' `windowsfeature-list` outil consiste à réper
 
 ```json
 {
-    "$schema": "./devinit.schema-2.0.json",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0.json",
     "run": [
         {
             "comments": "Lists the state of all Windows features.",

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 750fcb907350d3bd135bc86e5d1bc1ed211c4a7b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659301"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400139"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
@@ -29,7 +29,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 ## <a name="august-2020"></a>Août 2020
 ### <a name="azure"></a>Azure
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Ajoutez Azure application Insights à l’aide](../azure/azure-app-insights-add-connected-service.md) des services connectés à Visual Studio services connectés pour VS 2019 16,7
 - [Ajouter le cache Azure pour les éléments ReDim à l’aide](../azure/azure-cache-for-redis-add-connected-service.md) des services connectés à Visual Studio services connectés pour VS 2019 16,7
@@ -45,7 +45,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Ca1310 : spécifiez StringComparison pour l’exactitude](/dotnet/fundamentals/code-analysis/quality-rules/ca1310) -ajoutez de la documentation pour ca1310 et mettez à jour la documentation pour CA1307
 - [CA1837 : utilisez Environment. ProcessID au lieu de process. GetCurrentProcess (). ID](/dotnet/fundamentals/code-analysis/quality-rules/ca1837) -docs pour CA1837
@@ -77,7 +77,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 
 ### <a name="deployment"></a>Déploiement
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Extension des projets Visual Studio installer et .net core 3,1](../deployment/installer-projects-net-core.md) -création d’une nouvelle page d’aide pour les projets du programme d’installation fonctionnalités .net Core 3,1
 
@@ -92,7 +92,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 - Sous- [types de projet](../extensibility/internals/project-subtypes.md) -mettre en retrait les éléments de liste
 - [Référence de valeur de couleur pour Visual Studio](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 corriger les en-têtes de colonnes manquantes
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Prendre en main
 
 **Articles mis à jour**
 
@@ -100,7 +100,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Modifier la touche d’aide F1 dans Visual Studio](./not-in-toc/change-f1-help-key.md) -page d’aide par défaut de refactorisation F1
 - [Aide F1 pour l’éditeur de texte](./not-in-toc/default-f1-text-editor.md) -page d’aide F1 par défaut de refactorisation
@@ -129,7 +129,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 ## <a name="july-2020"></a>Juillet 2020
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Ca1417 : ne pas utiliser `OutAttribute` sur les paramètres de chaîne pour P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) -ajouter de la documentation pour ca1417
 - [CA1805 : ne pas initialiser inutilement.](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) -Ajouter des documents pour CA1805
@@ -157,46 +157,46 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 
 **Articles mis à jour**
 
-- [Journal des modifications (outils Visual Studio pour Unity, Windows)](../cross-platform/change-log-visual-studio-tools-for-unity.md) -Bosselage VSTU journal des modifications sur 4.7.1.0
-- [Journal des modifications (outils Visual Studio pour Unity, Mac)](../cross-platform/change-log-visual-studio-tools-for-unity-mac.md) -Bosselage VSTUM journal des modifications sur 2.7.1.0
+- [Journal des modifications (outils Visual Studio pour Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) -Bosselage VSTU journal des modifications sur 4.7.1.0
+- [Journal des modifications (outils Visual Studio pour Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) -Bosselage VSTUM journal des modifications sur 2.7.1.0
 
-### <a name="get-started"></a>Bien démarrer
+### <a name="get-started"></a>Prendre en main
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Didacticiel : étendre une simple console C# application](../get-started/csharp/tutorial-console-part-2.md) -version étendre la première version du didacticiel de trottoir
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Directives](./developer-community-guidelines.md) de la communauté des développeurs : ajout de directives Devcom
 - [Saisie semi-automatique IntelliSense pour les types et les méthodes d’extension inimportés](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
 ### <a name="install"></a>Installer
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Mettre à jour Visual Studio avec une disposition hors connexion minimale](../install/update-minimal-layout.md) -fonctionnalité de disposition minimale de document
 - [Guide Visual Studio Enterprise](../install/visual-studio-enterprise-guide.md) -Guide de l’entreprise
 
 ### <a name="javascript"></a>JavaScript
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Compiler du code machine (Node.js)](../javascript/compile-typescript-code-npm.md) -compiler et générer des générations
 - [Compiler du code machine (ASP.net Core)](../javascript/compile-typescript-code-nuget.md) -compiler et générer des générations
 
 ### <a name="msbuild"></a>MSBuild
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Métadonnées d’élément MSBuild courantes](../msbuild/common-msbuild-item-metadata.md) -MSBuild : ajouter une table pour les métadonnées facultatives avec lien et lien ressources
 - [Filtres de solution dans MSBuild](../msbuild/solution-filters.md) -filtres de solution MSBuild
 
 ### <a name="test"></a>Test
 
-**Nouveaux articles**
+**Nouveaux Articles**
 
 - [Déboguer et analyser des tests unitaires avec l’Explorateur de tests](../test/debug-unit-tests-with-test-explorer.md) -travail des performances de l’Explorateur de tests
 

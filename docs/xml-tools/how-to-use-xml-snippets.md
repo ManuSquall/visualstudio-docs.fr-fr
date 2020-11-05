@@ -1,5 +1,7 @@
 ---
 title: Utilisation d’extraits XML
+description: Apprenez à utiliser des commandes dans l’éditeur XML pour insérer des extraits XML ou pour encapsuler un extrait de code XML dans le texte sélectionné.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c5ef5d5c33c46a9f09eb604d0a2e40cf9a6e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815914"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400113"
 ---
 # <a name="how-to-use-xml-snippets"></a>Comment : utiliser des extraits XML
 
@@ -26,7 +28,7 @@ Une fois l'extrait XML ajouté à l'éditeur, tous ses champs modifiables sont s
 Les procédures suivantes décrivent comment accéder à la commande **Insérer un extrait** .
 
 > [!NOTE]
-> La commande **Insérer un extrait** de code est également disponible par le biais du raccourci clavier (**CTRL** + **K**, puis **CTRL** + **X**).
+> La commande **Insérer un extrait** de code est également disponible par le biais du raccourci clavier ( **CTRL** + **K** , puis **CTRL** + **X** ).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Pour insérer des extraits à partir du menu contextuel
 
@@ -42,7 +44,7 @@ Les procédures suivantes décrivent comment accéder à la commande **Insérer 
 
 1. Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.
 
-2. Dans le menu **Edition** , pointez sur **IntelliSense**, puis sélectionnez **Insérer un extrait**.
+2. Dans le menu **Edition** , pointez sur **IntelliSense** , puis sélectionnez **Insérer un extrait**.
 
    Une liste des extraits XML disponibles s'affiche.
 
@@ -56,7 +58,7 @@ Les procédures suivantes décrivent comment accéder à la commande **Insérer 
 
 3. Sélectionnez l'extrait XML dans la liste de remplissage.
 
-4. Appuyez sur **Tab**, **onglet** pour appeler l’extrait XML.
+4. Appuyez sur **Tab** , **onglet** pour appeler l’extrait XML.
 
 > [!NOTE]
 > Parfois, l'extrait XML n'est pas invoqué. Par exemple, si vous tentez d'insérer un élément `xs:complexType` dans un nœud `xs:element`, l'éditeur ne génère aucun extrait XML. En effet, lorsqu'un élément `xs:complexType` est utilisé à l'intérieur d'un nœud `xs:element`, aucun attribut ni sous-élément n'est requis, de sorte que l'éditeur n'a aucune donnée à insérer.
@@ -76,7 +78,7 @@ Les procédures suivantes décrivent comment accéder à la commande **Insérer 
 Les procédures suivantes décrivent comment accéder à la commande **surround** .
 
 > [!NOTE]
-> La commande **entourer de** est également disponible via le raccourci clavier (**CTRL** + **K**, puis **CTRL** + **S**).
+> La commande **entourer de** est également disponible via le raccourci clavier ( **CTRL** + **K** , puis **CTRL** + **S** ).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Pour utiliser entourer de dans le menu contextuel
 
@@ -92,7 +94,7 @@ Les procédures suivantes décrivent comment accéder à la commande **surround*
 
 1. Sélectionnez le texte à entourer dans l’éditeur XML.
 
-2. Dans le menu **Edition** , pointez sur **IntelliSense**, puis sélectionnez **entourer de**.
+2. Dans le menu **Edition** , pointez sur **IntelliSense** , puis sélectionnez **entourer de**.
 
    Une liste des encadrements d'extraits XML disponibles s'affiche.
 
@@ -112,6 +114,6 @@ Les couleurs par défaut des champs d’extrait de code modifiables peuvent êtr
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extraits XML](../xml-tools/xml-snippets.md)
+- [extraits XML](../xml-tools/xml-snippets.md)
 - [Comment : générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
 - [Comment : créer des extraits XML](../xml-tools/how-to-create-xml-snippets.md)

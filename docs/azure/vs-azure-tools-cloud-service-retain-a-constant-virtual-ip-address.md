@@ -1,7 +1,7 @@
 ---
 title: Conserver une adresse IP virtuelle constante pour le service Cloud Azure
 description: Découvrez comment vous assurer que l’adresse IP virtuelle de votre service cloud Azure ne change pas.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
@@ -9,37 +9,37 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 0ebd709e77e88ef1ed81b6a01735a5eed5be7508
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 95d6a695c31dc62bbe12c2e7aec217aeac8403d8
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035948"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399837"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Conserver une adresse IP virtuelle constante pour un service cloud Azure
-Lors de la mise à jour d’un service cloud hébergé dans Azure, vérifiez que l’adresse IP virtuelle du service n’est pas modifiée. De nombreux services de gestion de domaine utilisent la méthode DNS (Domain Name System), une méthode d’enregistrement pour stocker des noms de domaine et qui fonctionne uniquement si l’adresse IP virtuelle est inchangée. Utilisez l’**Assistant Publication** dans Azure Tools pour garantir que l’adresse IP virtuelle de votre service cloud ne change pas lors de sa mise à jour. Pour plus d’informations sur l’utilisation de la gestion de domaine DNS pour les services cloud, consultez [Configuration d’un nom de domaine personnalisé pour un service cloud Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
+Lors de la mise à jour d’un service cloud hébergé dans Azure, vérifiez que l’adresse IP virtuelle du service n’est pas modifiée. De nombreux services de gestion de domaine utilisent la méthode DNS (Domain Name System), une méthode d’enregistrement pour stocker des noms de domaine et qui fonctionne uniquement si l’adresse IP virtuelle est inchangée. Utilisez l’ **Assistant Publication** dans Azure Tools pour garantir que l’adresse IP virtuelle de votre service cloud ne change pas lors de sa mise à jour. Pour plus d’informations sur l’utilisation de la gestion de domaine DNS pour les services cloud, consultez [Configuration d’un nom de domaine personnalisé pour un service cloud Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
 
 ## <a name="publish-a-cloud-service-without-changing-its-vip"></a>Publier un service cloud sans modifier son adresse IP virtuelle
 L’adresse IP virtuelle d’un service cloud est allouée la première fois que vous la déployez dans Azure dans un environnement spécifique, tel que l’environnement de production. L’adresse IP virtuelle est modifiée uniquement si vous supprimez le déploiement explicitement ou s’il est supprimé implicitement par le processus de mise à jour de déploiement. Pour conserver l’adresse IP virtuelle, vous ne devez pas supprimer votre déploiement, et vous devez vous assurer qu’il n’est pas supprimé automatiquement par Visual Studio.
 
-Vous pouvez spécifier les paramètres de déploiement dans l’**Assistant Publication**, qui prend en charge plusieurs options de déploiement. Vous pouvez spécifier un nouveau déploiement ou une mise à jour de déploiement, qui peut être incrémentielle ou simultanée. Dans ces deux types de mise à jour, l’adresse IP virtuelle est conservée. Pour les définitions de ces différents types de déploiement, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md). De plus, vous pouvez contrôler si une erreur se produit, dans le cas de la suppression du déploiement précédent d’un service cloud. L’adresse IP virtuelle peut être modifiée de façon inattendue si cette option n’est pas définie correctement.
+Vous pouvez spécifier les paramètres de déploiement dans l’ **Assistant Publication** , qui prend en charge plusieurs options de déploiement. Vous pouvez spécifier un nouveau déploiement ou une mise à jour de déploiement, qui peut être incrémentielle ou simultanée. Dans ces deux types de mise à jour, l’adresse IP virtuelle est conservée. Pour les définitions de ces différents types de déploiement, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md). De plus, vous pouvez contrôler si une erreur se produit, dans le cas de la suppression du déploiement précédent d’un service cloud. L’adresse IP virtuelle peut être modifiée de façon inattendue si cette option n’est pas définie correctement.
 
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>Mettre à jour un service cloud sans modifier son adresse IP virtuelle
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-2. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet. Dans le menu contextuel, sélectionnez **Publier**.
+2. Dans l’ **Explorateur de solutions** , cliquez avec le bouton droit sur le projet. Dans le menu contextuel, sélectionnez **Publier**.
 
     ![Publish menu](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/solution-explorer-publish-menu.png)
 
-3. Dans la boîte de dialogue **Publication d’application Azure**, sélectionnez l’abonnement Azure vers lequel vous souhaitez effectuer le déploiement. Connectez-vous si nécessaire, puis sélectionnez **Suivant**.
+3. Dans la boîte de dialogue **Publication d’application Azure** , sélectionnez l’abonnement Azure vers lequel vous souhaitez effectuer le déploiement. Connectez-vous si nécessaire, puis sélectionnez **Suivant**.
 
     ![Publication d’application Azure : page de connexion](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Sous l’onglet **paramètres communs** , vérifiez que le nom du service Cloud vers lequel vous effectuez le déploiement, l' **environnement**, la **configuration de build**et la configuration du **service** sont tous corrects.
+4. Sous l’onglet **paramètres communs** , vérifiez que le nom du service Cloud vers lequel vous effectuez le déploiement, l' **environnement** , la **configuration de build** et la configuration du **service** sont tous corrects.
 
     ![Publication d’application Azure : onglet Paramètres communs](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Dans l’onglet **Paramètres avancés**, vérifiez que l’**étiquette de déploiement** et le **compte de stockage** sont corrects. Vérifiez que la case **Supprimer le déploiement en cas d’échec** n’est pas cochée et que la case **Mise à jour du déploiement** est cochée. Décocher la case **Supprimer le déploiement en cas d’échec** vous garantit que votre adresse IP virtuelle ne sera pas perdue si une erreur se produit pendant le déploiement. Cocher la case **Mise à jour du déploiement** vous garantit que votre déploiement ne sera pas supprimé et que votre adresse IP virtuelle ne sera pas perdue lorsque vous republierez votre application.
+5. Dans l’onglet **Paramètres avancés** , vérifiez que l’ **étiquette de déploiement** et le **compte de stockage** sont corrects. Vérifiez que la case **Supprimer le déploiement en cas d’échec** n’est pas cochée et que la case **Mise à jour du déploiement** est cochée. Décocher la case **Supprimer le déploiement en cas d’échec** vous garantit que votre adresse IP virtuelle ne sera pas perdue si une erreur se produit pendant le déploiement. Cocher la case **Mise à jour du déploiement** vous garantit que votre déploiement ne sera pas supprimé et que votre adresse IP virtuelle ne sera pas perdue lorsque vous republierez votre application.
 
     ![Publication d’application Azure : onglet Paramètres avancés](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
@@ -47,7 +47,7 @@ Vous pouvez spécifier les paramètres de déploiement dans l’**Assistant Publ
 
     ![Publication d’application Azure : page Paramètres du déploiement](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-deployment-update-settings.png)
 
-7. Dans la boîte de dialogue **Publication d’application Azure**, sélectionnez **Suivant** jusqu’à l’affichage de la page **Résumé**. Vérifiez vos paramètres, puis sélectionnez **Publier**.
+7. Dans la boîte de dialogue **Publication d’application Azure** , sélectionnez **Suivant** jusqu’à l’affichage de la page **Résumé**. Vérifiez vos paramètres, puis sélectionnez **Publier**.
 
     ![Publication d’application Azure : page Résumé](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 

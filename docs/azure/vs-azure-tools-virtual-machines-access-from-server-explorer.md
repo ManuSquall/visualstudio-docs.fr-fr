@@ -4,17 +4,16 @@ description: Obtenez une présentation de l’affichage, de la création et de l
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 8fd5d81e721bc2df7041d4cb724687e5ee540a7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911660"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398551"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accès aux machines virtuelles Azure à partir de l’Explorateur de serveurs
 
@@ -39,5 +38,5 @@ Si vous avez des machines virtuelles hébergées par Azure, vous pouvez y accéd
    | --- | --- |
    | Nom |Identificateur du point de terminaison. |
    | Port privé |Port d’accès réseau interne à votre application. |
-   | Protocol |Protocole utilisé par la couche de transport du point de terminaison (TCP ou UDP). |
+   | Protocole |Protocole utilisé par la couche de transport du point de terminaison (TCP ou UDP). |
    | Port public |Port utilisé pour l’accès public à votre application. |
