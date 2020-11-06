@@ -171,19 +171,7 @@
         - name: Créer une application multiconteneur avec Docker Compose
           href: docker-multi-container.md
     - name: Développement de jeux Unity
-      items:
-        - name: Développement de jeux Unity
-          href: unity-tools.md
-        - name: Installation
-          href: setup-vsmac-tools-unity.md
-        - name: Bien démarrer avec Unity
-          href: unity-walkthrough.md
-        - name: Utilisation des outils Unity
-          href: using-vsmac-tools-unity.md
-        - name: "Utilisation de .NET\_4.x dans Unity"
-          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
-        - name: Journal des modifications
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: Applications mobiles avec Xamarin
       href: ./xamarin.md
 - name: Accessibilité

@@ -6,31 +6,31 @@
 - name: Visual Studio Tools pour Unity
   items:
     - name: Visual Studio Tools pour Unity
-      href: visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: Bien démarrer avec Visual Studio Tools pour Unity
-      href: getting-started-with-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
     - name: Utiliser Visual Studio Tools pour Unity
-      href: using-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/using-visual-studio-tools-for-unity.md
     - name: Utiliser .NET 4.x dans Unity
-      href: unity-scripting-upgrade.md
+      href: /gamedev/unity/unity-scripting-upgrade.md
     - name: Programmer Visual Studio Tools pour Unity
       items:
         - name: Programmer Visual Studio Tools pour Unity
-          href: programming-visual-studio-tools-for-unity.md
+          href: /gamedev/unity/extensibility/programming-visual-studio-tools-for-unity.md
         - name: Personnaliser les fichiers projet créés par VSTU
-          href: customize-project-files-created-by-vstu.md
+          href: /gamedev/unity/extensibility/customize-project-files-created-by-vstu.md
         - name: Partager le rappel de journal Unity avec VSTU
-          href: share-the-unity-log-callback-with-vstu.md
+          href: /gamedev/unity/extensibility/share-the-unity-log-callback-with-vstu.md
     - name: Programmer avec Unity et Azure
-      href: visual-studio-tools-for-unity-azure.md
+      href: /gamedev/unity/visual-studio-tools-for-unity-azure.md
     - name: Problèmes connus et dépannage (Visual Studio Tools pour Unity)
-      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
     - name: 'Journal des modifications (Outils Visual Studio pour Unity, Windows)'
-      href: change-log-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity.md
     - name: 'Journal des modifications (Outils Visual Studio pour Unity, Mac)'
-      href: change-log-visual-studio-tools-for-unity-mac.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md
     - name: DevOps avec les applications Unity
-      href: application-lifecycle-management-alm-with-unity-apps.md
+      href: /gamedev/unity/application-lifecycle-management-alm-with-unity-apps.md
 - name: Développement mobile multiplateforme avec C++
   href: /cpp/cross-platform/
 - name: Développer des applications pour la plateforme Windows universelle (UWP)
