@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aceed2833d0083beccf197c4c681f92270a1f9a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583656"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414382"
 ---
 # <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
 Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités de Visual Studio ou à intégrer de nouvelles fonctionnalités dans Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la Visual Studio Marketplace. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :
@@ -77,7 +77,7 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
 
 - [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Comment : migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ : conversion des compléments en extensions VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015&preserve-view=true)
+- [FAQ : conversion des compléments en extensions VSPackage](/previous-versions/visualstudio/visual-studio-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions?preserve-view=true&view=vs-2015)
 - [Gérer plusieurs threads dans du code managé](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Étendre des menus et des commandes](../extensibility/extending-menus-and-commands.md)
 - [Ajouter des commandes à des barres d’outils](../extensibility/adding-commands-to-toolbars.md)

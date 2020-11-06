@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584267"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414267"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -49,7 +49,7 @@ Choisissez la méthode la mieux adaptée à vos éléments d’interface utilisa
 | Vous avez des boîtes de dialogue incorporées ou autonomes. | **Couleurs système** | Les noms système qui permettent au système d’exploitation de définir la couleur et l’apparence des éléments d’interface utilisateur, comme les contrôles de boîte de dialogue courants. |
 | Vous disposez d’une interface utilisateur personnalisée qui doit être cohérente avec l’environnement Visual Studio global et où vous avez des éléments d’interface utilisateur qui correspondent à la signification sémantique et de catégorie des jetons partagés. | **Couleurs partagées communes** | Noms de jeton de couleur prédéfinis existants pour des éléments d’interface utilisateur spécifiques |
 | Vous disposez d’une fonctionnalité individuelle ou d’un groupe de fonctionnalités, et il n’existe pas de couleur partagée pour les éléments similaires. | **Couleurs personnalisées** | Les noms des jetons de couleur qui sont spécifiques à une zone et qui ne sont pas destinés à être partagés avec d’autres interfaces utilisateur |
-| Vous souhaitez autoriser l’utilisateur final à personnaliser l’interface utilisateur ou le contenu (par exemple, pour les éditeurs de texte ou les fenêtres de concepteur spécialisées). | **Personnalisation par l’utilisateur final**<br /><br />**(Outils &gt; Boîte de dialogue Options)** | Paramètres définis dans la page « polices et couleurs » de la boîte de dialogue ** &gt; Options des outils** ou une page spécialisée spécifique à une fonctionnalité de l’interface utilisateur. |
+| Vous souhaitez autoriser l’utilisateur final à personnaliser l’interface utilisateur ou le contenu (par exemple, pour les éditeurs de texte ou les fenêtres de concepteur spécialisées). | **Personnalisation par l’utilisateur final**<br /><br />**(Outils &gt; Boîte de dialogue Options)** | Paramètres définis dans la page « polices et couleurs » de la boîte de dialogue **&gt; Options des outils** ou une page spécialisée spécifique à une fonctionnalité de l’interface utilisateur. |
 
 ### <a name="visual-studio-themes"></a>Thèmes Visual Studio
 
@@ -81,7 +81,7 @@ Avant d’utiliser les couleurs partagées courantes, assurez-vous que vous comp
 
 Voir : [exposition des couleurs pour les utilisateurs finaux](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-Parfois, vous pouvez autoriser l’utilisateur final à personnaliser votre interface utilisateur, comme lorsque vous créez un éditeur de code ou une aire de conception. Les composants d’interface utilisateur personnalisables se trouvent dans la section **polices et couleurs** de la boîte de dialogue ** &gt; Options des outils** , où les utilisateurs peuvent choisir de modifier la couleur de premier plan, la couleur d’arrière-plan ou les deux.
+Parfois, vous pouvez autoriser l’utilisateur final à personnaliser votre interface utilisateur, comme lorsque vous créez un éditeur de code ou une aire de conception. Les composants d’interface utilisateur personnalisables se trouvent dans la section **polices et couleurs** de la boîte de dialogue **&gt; Options des outils** , où les utilisateurs peuvent choisir de modifier la couleur de premier plan, la couleur d’arrière-plan ou les deux.
 
 ![&gt;Boîte de dialogue Options des outils](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />&gt;Boîte de dialogue Options des outils
 
@@ -307,7 +307,7 @@ Exemples de la surface de l’éditeur dans le thème bleu :
 
 De nombreux éléments d’interface utilisateur communs ont déjà des couleurs de contraste élevé définies. Vous pouvez référencer ces modèles d’utilisation lorsque vous choisissez vos propres noms de couleurs système, afin que vos éléments d’interface utilisateur soient cohérents avec des composants similaires.
 
-| Couleur système | Utilisation |
+| Couleur système | Usage |
 | --- | --- |
 | LégendeActive | -L’IDE actif et les glyphes de boutons de fenêtre volés au survol et à la pression<br />-Arrière-plan de la barre de titre pour les fenêtres de l’IDE et les fenêtres à Raft<br />-Arrière-plan de la barre d’État par défaut |
 | TexteLégendeActive | -IDE actif et fenêtres avec des rafts pour le premier plan de la barre de titre (texte et glyphes)<br />-Arrière-plan et bordure des boutons de la fenêtre active au pointage et appuyez sur |
@@ -334,13 +334,13 @@ De nombreux éléments d’interface utilisateur communs ont déjà des couleurs
 
 ### <a name="overview"></a>Vue d’ensemble
 
-Il peut arriver que vous souhaitiez autoriser l’utilisateur final à personnaliser votre interface utilisateur, par exemple lorsque vous créez un éditeur de code ou une aire de conception. Pour ce faire, la méthode la plus courante consiste à utiliser la boîte de dialogue ** &gt; Options des outils** . À moins que vous n’ayez une interface utilisateur hautement spécialisée nécessitant des contrôles spéciaux, le moyen le plus simple de présenter la personnalisation consiste à utiliser la page **polices et couleurs** dans la section **environnement** de la boîte de dialogue. Pour chaque élément que vous exposez pour la personnalisation, l’utilisateur peut choisir de modifier la couleur de premier plan, la couleur d’arrière-plan ou les deux.
+Il peut arriver que vous souhaitiez autoriser l’utilisateur final à personnaliser votre interface utilisateur, par exemple lorsque vous créez un éditeur de code ou une aire de conception. Pour ce faire, la méthode la plus courante consiste à utiliser la boîte de dialogue **&gt; Options des outils** . À moins que vous n’ayez une interface utilisateur hautement spécialisée nécessitant des contrôles spéciaux, le moyen le plus simple de présenter la personnalisation consiste à utiliser la page **polices et couleurs** dans la section **environnement** de la boîte de dialogue. Pour chaque élément que vous exposez pour la personnalisation, l’utilisateur peut choisir de modifier la couleur de premier plan, la couleur d’arrière-plan ou les deux.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Création d’un VSPackage pour vos couleurs personnalisables
 
 Un VSPackage peut contrôler les polices et les couleurs via des catégories personnalisées et afficher des éléments dans la page de propriétés polices et couleurs. Lors de l’utilisation de ce mécanisme, les VSPackages doivent implémenter l’interface [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) et ses interfaces associées.
 
-En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, il ne doit pas être utilisé pour modifier la catégorie éditeur de texte ou ses éléments d’affichage. Pour plus d’informations sur la catégorie éditeur de texte, consultez [vue d’ensemble des polices et des couleurs](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
+En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, il ne doit pas être utilisé pour modifier la catégorie éditeur de texte ou ses éléments d’affichage. Pour plus d’informations sur la catégorie éditeur de texte, consultez [vue d’ensemble des polices et des couleurs](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015).
 
 Pour implémenter des catégories personnalisées ou des éléments d’affichage, un VSPackage doit :
 
@@ -361,7 +361,7 @@ Remplissez le Registre avec deux valeurs :
 | Nom | Type | Données | Description |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
-| Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
+| Paquet | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
  Le service spécifié dans le registre doit fournir une implémentation de [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) pour la catégorie correspondante.
 
@@ -374,7 +374,7 @@ Remplissez le Registre avec deux valeurs :
 | Nom | Type | Données | Description |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
-| Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
+| Paquet | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
 Le service spécifié dans le registre doit fournir une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> pour le groupe correspondant.
 
@@ -423,7 +423,7 @@ Pour ce faire, un VSPackage doit :
 
   **OR**
 
-- **interroger l’IDE pour les modifications**. Cela peut être effectué par le biais de l’interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implémentée par le système. Bien qu’principalement pour la prise en charge de la persistance, la méthode [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) peut obtenir des informations sur la police et la couleur pour les éléments affichés. Pour plus d’informations sur les paramètres de police et de couleur, consultez l’article MSDN [accès aux paramètres de police et de couleur stockés](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
+- **interroger l’IDE pour les modifications**. Cela peut être effectué par le biais de l’interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implémentée par le système. Bien qu’principalement pour la prise en charge de la persistance, la méthode [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) peut obtenir des informations sur la police et la couleur pour les éléments affichés. Pour plus d’informations sur les paramètres de police et de couleur, consultez l’article MSDN [accès aux paramètres de police et de couleur stockés](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015).
 
 > [!NOTE]
 > Pour vous assurer que les résultats de l’interrogation sont corrects, utilisez l’interface [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) pour déterminer si un vidage et une mise à jour du cache sont nécessaires avant d’appeler les méthodes de récupération de l’interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .

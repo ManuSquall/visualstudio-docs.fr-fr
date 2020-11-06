@@ -2,7 +2,7 @@
 title: 'Documentation Visual Studio : historique des nouveautés '
 titleSuffix: ''
 description: Historique des nouveautés de la documentation Visual Studio
-ms.date: 09/30/2020
+ms.date: 10/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 750fcb907350d3bd135bc86e5d1bc1ed211c4a7b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400139"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414501"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
-Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubrique contient les modifications majeures apportées aux documents antérieurs au 2020 septembre (à compter du 1er juillet 2020). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents antérieurs au 2020 octobre (à partir du 2020 du 1er juillet). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+
+## <a name="september-2020"></a>Septembre 2020
+### <a name="code-quality"></a>Qualité du code
+
+**Nouveaux Articles**
+
+- [CA1416 : valider la compatibilité](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) de la plateforme-documentation CA1416 valider la compatibilité de la plateforme
+- [CA1834 : utiliser StringBuilder. Append (Char) pour les chaînes de caractères uniques](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) -docs pour CA1834
+
+**Updated**
+
+- [Vue d’ensemble de l’analyse du code source](../code-quality/roslyn-analyzers-overview.md) -mises à jour de l’analyse du code pour refactorisation .net
+- [Configurer l’analyse](../code-quality/use-roslyn-analyzers.md) de la qualité du code-mises à jour de l’analyse du code pour le refactorisation .net
+
+### <a name="containers"></a>Conteneurs
+
+**Nouveaux articles**
+
+- [Utiliser Bridge pour Kubernetes](../containers/bridge-to-kubernetes.md) -local process avec Kubernetes repersonnalisation pour effectuer un pont vers Kubernetes
+- [Comment fonctionne Bridge-Kubernetes](../containers/overview-bridge-to-kubernetes.md) -processus local avec Kubernetes repersonnalisation pour effectuer un pont vers Kubernetes
+
+### <a name="deployment"></a>Déploiement
+
+**Articles mis à jour**
+
+- [Déployer votre application dans un dossier, IIS, Azure ou une autre](../deployment/deploying-applications-services-and-components-resources.md) mise à jour de destination-déploiement
+- [Déployer une application dans un dossier à l’aide de Visual Studio](../deployment/quickstart-deploy-to-local-folder.md) -mises à jour de déploiement
+
+### <a name="ide"></a>IDE
+
+**Nouveaux Articles**
+
+- [Nouvelle expérience git dans Visual Studio (version préliminaire)](./git-with-visual-studio.md) -ajouter un nouveau contenu d’expérience git (préversion)
+- [Conventions de mise en forme C++ EditorConfig](./cpp-editorconfig-properties.md) -nouvel article
+- [Qu’est-ce que GitHub Codespaces ? (Version préliminaire)](./codespaces/codespaces-overview.md) -Ajouter un contenu Codespaces (préversion)
+- [Comment personnaliser un codeSpace (version préliminaire)](./codespaces/customize-codespaces.md) -ajouter du contenu Codespaces (préversion)
+- [Fonctionnalités Visual Studio prises en charge (](./codespaces/supported-features-codespaces.md) préversion)-ajouter un contenu Codespaces (préversion)
+- [Utilisation de Visual Studio avec un codeSpace (version préliminaire)](./codespaces/use-visual-studio-with-codespaces.md) -ajouter du contenu Codespaces (préversion)
+
+**Articles mis à jour**
+
+- [Paramètres de Convention de codage .net pour EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) -mise à jour de EditorConfig
+- [Conventions de langage](/dotnet/fundamentals/code-analysis/style-rules/language-rules) -Exemples manquants
+
+### <a name="install"></a>Installer
+
+**Nouveaux Articles**
+
+- [Visual Studio sur des appareils alimentés par ARM](../install/visual-studio-on-arm-devices.md) -ajout de doc pour vs sur ARM
+
+**Articles mis à jour**
+
+- [Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -ajouter une solution de contournement pour le blocage du proxy d’authentification des commentaires
+
+### <a name="profiling"></a>Profilage
+
+**Articles mis à jour**
+
+- [Mesurer l’utilisation de la mémoire dans Visual Studio](../profiling/memory-usage.md) -visite guidée des fonctionnalités de profilage
+- [PerfTips](../profiling/perftips.md) -visite guidée des fonctionnalités de profilage
+- [Premier aperçu des outils de profilage](../profiling/profiling-feature-tour.md) -présentation des mises à jour à la fonctionnalité de profilage
+- [Exécuter des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Présentation des mises à jour de la fonctionnalité de profilage
+  - Améliorations des performances du contenu
 
 ## <a name="august-2020"></a>Août 2020
 ### <a name="azure"></a>Azure
@@ -109,7 +173,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 
 **Articles mis à jour**
 
-- [Personnaliser les dispositions de fenêtres dans Visual Studio](./customizing-window-layouts-in-visual-studio.md) : ajouter des onglets de document monikered verticaux info pour personnaliser la rubrique disposition des fenêtres
+- [Personnaliser les dispositions de fenêtres dans Visual Studio](./customizing-window-layouts-in-visual-studio.md) : ajouter des onglets de document monikered verticaux info pour personnaliser les dispositions de fenêtres article.
 - [Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer](./how-to-report-a-problem-with-visual-studio.md)
   - Ajout d’informations supplémentaires à NMI
   - Redid la page de l’ensemble du rapport

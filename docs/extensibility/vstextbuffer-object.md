@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b117aace6b9b74455b09d4d0c61a82a9c84bf19
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583617"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413909"
 ---
 # <a name="vstextbuffer-object"></a>Objet VSTextBuffer
 L’objet de mémoire tampon de texte représente un flux de texte Unicode, qui est généralement associé à un fichier. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet peut être utilisé en dehors du contexte de l’éditeur de base, comme dans, un Assistant.
@@ -41,7 +41,7 @@ L’objet de mémoire tampon de texte représente un flux de texte Unicode, qui 
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Prend en charge les points de connexion pour les événements.|
 
 ## <a name="remarks"></a>Notes
- `VSTextBuffer`Est généralement trouvé par un `QueryInterface` appel sur `IVsTextBuffer` . Pour plus d’informations, consultez [mémoire tampon de texte](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
+ `VSTextBuffer`Est généralement trouvé par un `QueryInterface` appel sur `IVsTextBuffer` . Pour plus d’informations, consultez [mémoire tampon de texte](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>

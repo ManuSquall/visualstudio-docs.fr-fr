@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049214"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414475"
 ---
 # <a name="xaml-errors-and-warnings"></a>Erreurs et avertissements XAML
 
@@ -32,15 +32,15 @@ Dans les coulisses, plusieurs outils analysent le code XAML en parallèle. Les e
 |Modifier & Continuer pour le code XAML|XECxxxx| Visual Studio 2019 version 16,1 ou antérieure |
 |Rechargement à chaud XAML | XHRxxxx | Visual Studio 2019 version 16,2 ou ultérieure |
 
-Pour plus d’informations sur la repersonnalisation de la modification XAML & continuer en tant que rechargement à chaud XAML, consultez nos [notes de publication](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
+Pour plus d’informations sur la repersonnalisation de la modification XAML & continuer en tant que rechargement à chaud XAML, consultez nos [notes de publication](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
 
 > [!Note]
 > Les erreurs ou avertissements n’ont pas tous un code correspondant. Ces erreurs sont généralement des erreurs du concepteur XAML.
 
 ## <a name="suppress-xaml-designer-errors"></a>Supprimer les erreurs du concepteur XAML
 
-Ouvrez la boîte de dialogue **Options** en sélectionnant **Outils > Options** , puis sélectionnez **Éditeur de texte > XAML > Divers** .
+Ouvrez la boîte de dialogue **Options** en sélectionnant **Outils > Options** , puis sélectionnez **Éditeur de texte > XAML > Divers**.
 
-Désactivez la case à cocher **Afficher les erreurs détectées par le concepteur XAML** .
+Désactivez la case à cocher **Afficher les erreurs détectées par le concepteur XAML**.
 
 ![Supprimer les erreurs du concepteur XAML](media/suppress_xaml_designer_errors.png)

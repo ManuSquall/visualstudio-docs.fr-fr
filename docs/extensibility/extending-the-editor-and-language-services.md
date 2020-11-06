@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155c703ebbeb2705ac7abbba5cd2c095f520c698
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584553"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413942"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Étendre l’éditeur et les services de langage
 Vous pouvez ajouter des fonctionnalités du service de langage (par exemple, IntelliSense) à votre propre éditeur et étendre la plupart des fonctionnalités de l’éditeur de code Visual Studio.  Pour obtenir une liste complète de ce que vous pouvez étendre, consultez [services de langage et points d’extension](../extensibility/language-service-and-editor-extension-points.md)de l’éditeur.
@@ -36,7 +36,7 @@ Vous pouvez ajouter des fonctionnalités du service de langage (par exemple, Int
 |[Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)|Répertorie les points d’extension de l’éditeur. Les points d’extension représentent les fonctionnalités de l’éditeur qui peuvent être étendues.|
 |[Procédure pas à pas : créer un ornement, des commandes et des paramètres d’affichage (repères de colonne)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Présente et explique la création d’un ornement de vue qui dessine des lignes de repère de colonne pour vous aider à conserver le code à une certaine largeur d’affichage.  Affiche également les paramètres de lecture et d’écriture, ainsi que la déclaration et l’implémentation des commandes que vous pouvez appeler à partir de la fenêtre de commande.|
 |[Importations de l’éditeur](../extensibility/editor-imports.md)|Répertorie les services qu’une extension peut importer.|
-|[Adapter le code hérité à l’éditeur](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015&preserve-view=true)|Explique les différentes façons d’adapter le code hérité (pré-Visual Studio 2010) pour étendre l’éditeur.|
+|[Adapter le code hérité à l’éditeur](/previous-versions/visualstudio/visual-studio-2015/extensibility/adapting-legacy-code-to-the-editor?preserve-view=true&view=vs-2015)|Explique les différentes façons d’adapter le code hérité (pré-Visual Studio 2010) pour étendre l’éditeur.|
 |[Migrer un service de langage hérité](../extensibility/internals/migrating-a-legacy-language-service.md)|Explique comment migrer un service de langage VSPackage.|
 |[Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Montre comment lier un type de contenu à une extension de nom de fichier.|
 |[Procédure pas à pas : créer un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)|Montre comment ajouter une icône à une marge.|

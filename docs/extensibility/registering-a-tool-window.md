@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7b82353247776eb2dac8135a0a412b396d571a1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d70924ea503bc4e230eb30b0551b59bc5f45ae6d
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584714"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414332"
 ---
 # <a name="register-a-tool-window"></a>Inscrire une fenêtre outil
 Vous pouvez inscrire vos fenêtres outil à l’aide <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> de et  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ```csharp
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- Dans le code ci-dessus, le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> inscrit `PersistedWindowPane` les `DynamicWindowPane` fenêtres outil et dans Visual Studio. La fenêtre outil rendue persistante est ancrée et avec des onglets **Explorateur de solutions**, et la fenêtre dynamique reçoit une position et une taille de départ par défaut. La fenêtre dynamique est rendue temporaire, ce qui indique qu’elle n’est pas créée au démarrage. Cela écrit une `DontForceCreate` valeur dans la `ToolWindows` clé dans le registre système. Pour plus d’informations, consultez Configuration de l’affichage de la [fenêtre outil](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015&preserve-view=true).
+ Dans le code ci-dessus, le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> inscrit `PersistedWindowPane` les `DynamicWindowPane` fenêtres outil et dans Visual Studio. La fenêtre outil rendue persistante est ancrée et avec des onglets **Explorateur de solutions** , et la fenêtre dynamique reçoit une position et une taille de départ par défaut. La fenêtre dynamique est rendue temporaire, ce qui indique qu’elle n’est pas créée au démarrage. Cela écrit une `DontForceCreate` valeur dans la `ToolWindows` clé dans le registre système. Pour plus d’informations, consultez Configuration de l’affichage de la [fenêtre outil](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015).

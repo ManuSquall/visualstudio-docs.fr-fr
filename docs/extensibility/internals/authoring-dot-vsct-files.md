@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583682"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413906"
 ---
 # <a name="author-vsct-files"></a>Fichiers Author. vsct
 Ce document montre comment créer un fichier *. vsct* pour ajouter des éléments de menu, des barres d’outils et d’autres éléments d’interface utilisateur à l’environnement de développement intégré (IDE) de Visual Studio. Utilisez ces étapes Lorsque vous ajoutez des éléments d’interface utilisateur à un package Visual Studio (VSPackage) qui n’a pas encore de fichier *. vsct* .
@@ -51,9 +51,9 @@ Ce document montre comment créer un fichier *. vsct* pour ajouter des élément
 
 1. En haut de l' `CommandTable` élément, ajoutez un `Extern` élément pour chaque fichier externe à référencer et affectez `href` à l’attribut le nom du fichier. Vous pouvez référencer les fichiers d’en-tête suivants pour accéder aux ressources Visual Studio :
 
-   - *Stdidcmd. h*: définit des ID pour toutes les commandes exposées par Visual Studio.
+   - *Stdidcmd. h* : définit des ID pour toutes les commandes exposées par Visual Studio.
 
-   - *Vsshlids. h*: contient les ID de commande des menus Visual Studio.
+   - *Vsshlids. h* : contient les ID de commande des menus Visual Studio.
 
 2. Si votre package appelle une commande définie par Visual Studio ou par d’autres packages, ajoutez un `UsedCommands` élément après l' `Commands` élément. Remplissez cet élément avec un élément [UsedCommand](../../extensibility/usedcommand-element.md) pour chaque commande que vous appelez et qui ne fait pas partie de votre package. Définissez les `guid` `id` attributs et des `UsedCommand` éléments sur les valeurs GUID et ID des commandes à appeler.
 
@@ -64,7 +64,7 @@ Ce document montre comment créer un fichier *. vsct* pour ajouter des élément
 
 #### <a name="to-declare-ui-elements"></a>Pour déclarer des éléments d’interface utilisateur
 
-1. Dans l' `Symbols` élément, ajoutez trois éléments [GuidSymbol](../../extensibility/guidsymbol-element.md) . Chaque `GuidSymbol` élément a un `name` attribut et un `value` attribut. Définissez l' `name` attribut pour qu’il reflète l’objectif de l’élément. L' `value` attribut accepte un GUID. (Pour générer un GUID, dans le menu **Outils** , sélectionnez **créer un GUID**, puis sélectionnez le **format du Registre**.)
+1. Dans l' `Symbols` élément, ajoutez trois éléments [GuidSymbol](../../extensibility/guidsymbol-element.md) . Chaque `GuidSymbol` élément a un `name` attribut et un `value` attribut. Définissez l' `name` attribut pour qu’il reflète l’objectif de l’élément. L' `value` attribut accepte un GUID. (Pour générer un GUID, dans le menu **Outils** , sélectionnez **créer un GUID** , puis sélectionnez le **format du Registre**.)
 
      Le premier `GuidSymbol` élément représente votre package et n’a généralement aucun enfant. Le deuxième `GuidSymbol` élément représente le jeu de commandes et contiendra tous les symboles qui définissent vos menus, groupes et commandes. Le troisième `GuidSymbol` élément représente votre magasin d’images et contient des symboles pour toutes les icônes de vos commandes. Si vous n’avez aucune commande qui utilise des icônes, vous pouvez omettre le troisième `GuidSymbol` élément.
 
@@ -108,7 +108,7 @@ Ce document montre comment créer un fichier *. vsct* pour ajouter des élément
        > [!NOTE]
        > Les boutons de la barre d’outils doivent avoir des icônes.
 
-   Pour plus d’informations, consultez [MenuCommands et OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Pour plus d’informations, consultez [MenuCommands et OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 4. Si l’une de vos commandes nécessite des icônes, ajoutez un élément [bitmaps](../../extensibility/bitmaps-element.md) à l' `Commands` élément. Puis, pour chaque icône, ajoutez un élément [bitmap](../../extensibility/bitmap-element.md) à l' `Bitmaps` élément. C’est ici que vous spécifiez l’emplacement de la ressource bitmap. Pour plus d’informations, consultez [Ajouter des icônes à des commandes de menu](../../extensibility/adding-icons-to-menu-commands.md).
 
