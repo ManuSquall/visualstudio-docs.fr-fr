@@ -1,5 +1,7 @@
 ---
 title: Concepteur de schémas XML
+description: En savoir plus sur le concepteur de schémas XML (concepteur XSD) dans Visual Studio, un outil graphique qui vous permet de visualiser un jeu de schémas à différents niveaux d’abstraction.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 842b2c7a6d5929dcd9ccccff01534506080c283d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d809b9065ec780c8383f2320453c957bc61daa54
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817240"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351425"
 ---
 # <a name="xml-schema-designer-overview"></a>Vue d’ensemble du concepteur de schémas XML
 

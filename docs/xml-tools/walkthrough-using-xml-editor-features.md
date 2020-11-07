@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : utilisation des fonctionnalités de l’éditeur XML'
+description: Découvrez comment créer un nouveau document XML en suivant les étapes de cette procédure pas à pas qui illustrent les fonctionnalités de l’éditeur XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817396"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351477"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : utiliser les fonctionnalités de l’éditeur XML
+# <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : Utiliser les fonctionnalités de l’éditeur XML
 
 Les étapes de cette procédure pas à pas expliquent la création d'un document XML. La procédure pas à pas utilise également certaines des fonctionnalités de l’éditeur XML qui le rendent précieux pour la création XML.
 
@@ -24,13 +26,13 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1. Dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **fichier**.
+1. Dans le menu **fichier** , pointez sur **nouveau** , puis cliquez sur **fichier**.
 
 2. Sélectionnez **fichier XML** dans le volet **modèles** , puis cliquez sur **ouvrir**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
@@ -58,7 +60,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
     - **employé** pour ajouter l’élément racine.
 
-2. Sélectionnez ** &lt; !--** pour ajouter un nœud de commentaire et appuyez sur **entrée**.
+2. Sélectionnez **&lt; !--** pour ajouter un nœud de commentaire et appuyez sur **entrée**.
 
      L'éditeur insère une balise de fin de commentaire et place le curseur entre les balises de début et de fin du commentaire.
 
@@ -96,7 +98,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-format-the-xml-document"></a>Pour mettre en forme le document XML
 
-- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL** + **E**,**D**.
+- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL** + **E** , **D**.
 
    ![Bouton mettre en forme le document XML dans Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +106,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-save-the-xml-document"></a>Pour enregistrer le document XML
 
-1. Dans le menu **Fichier**, sélectionnez **Enregistrer sous**.
+1. Dans le menu **Fichier** , sélectionnez **Enregistrer sous**.
 
      La boîte de dialogue **enregistrer le fichier sous** s’affiche. Le nom de fichier par défaut est *« XMLFile1 »*.
 

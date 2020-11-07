@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour signer des manifestes d’application et de déploiement
+description: En savoir plus sur les conditions requises pour la signature pour la publication de manifestes d’application et de déploiement ClickOnce. La signature est facultative pour les applications basées sur. exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a267a64a6b6d59b64ffb70596154d1e54f368410
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769782"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351269"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
 
@@ -40,14 +42,14 @@ Pour plus d’informations sur la création de fichiers de clés, consultez [Gui
 
 ## <a name="sign-using-a-certificate"></a>Signer en utilisant un certificat
 
-1. Accédez à la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**). Sous l’onglet **Signature**, cochez la case **Signer les manifestes ClickOnce**.
+1. Accédez à la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’ **Explorateur de solutions** et sélectionnez **Propriétés** ). Sous l’onglet **Signature** , cochez la case **Signer les manifestes ClickOnce**.
 
 2. Cliquez sur le bouton **Sélectionner dans Store**.
 
      La boîte de dialogue **Sélectionner un certificat** apparaît et affiche le contenu du magasin de certificats Windows.
 
     > [!TIP]
-    > Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue contient des informations détaillées sur le certificat et des options supplémentaires. Cliquez sur **Certificats** pour voir des informations d’aide supplémentaires.
+    > Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat** , la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue contient des informations détaillées sur le certificat et des options supplémentaires. Cliquez sur **Certificats** pour voir des informations d’aide supplémentaires.
 
 3. Sélectionnez le certificat que vous souhaitez utiliser pour signer les manifestes.
 
@@ -55,13 +57,13 @@ Pour plus d’informations sur la création de fichiers de clés, consultez [Gui
 
 ## <a name="sign-using-an-existing-key-file"></a>Signer en utilisant un fichier de clé existant
 
-1. Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.
+1. Dans la page **Signature** , cochez la case **Signer les manifestes ClickOnce**.
 
 2. Cliquez sur le bouton **À partir d’un fichier**.
 
      La boîte de dialogue **Sélectionner le fichier** s’affiche.
 
-3. Dans la boîte de dialogue **Sélectionner le fichier**, accédez à l’emplacement du fichier de clé (*.pfx*) à utiliser, puis cliquez sur **Ouvrir**.
+3. Dans la boîte de dialogue **Sélectionner le fichier** , accédez à l’emplacement du fichier de clé ( *.pfx* ) à utiliser, puis cliquez sur **Ouvrir**.
 
     > [!NOTE]
     > Cette option prend uniquement en charge les fichiers ayant l’extension *.pfx*. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.
@@ -75,11 +77,11 @@ Pour plus d’informations sur la création de fichiers de clés, consultez [Gui
 
 ## <a name="sign-using-a-test-certificate"></a>Signer en utilisant un certificat de test
 
-1. Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.
+1. Dans la page **Signature** , cochez la case **Signer les manifestes ClickOnce**.
 
 2. Pour créer un certificat de test, cliquez sur le bouton **Créer un certificat de test**.
 
-3. Dans la boîte de dialogue **Créer un certificat de test**, entrez un mot de passe pour sécuriser votre certificat de test.
+3. Dans la boîte de dialogue **Créer un certificat de test** , entrez un mot de passe pour sécuriser votre certificat de test.
 
 ## <a name="generate-unsigned-manifests"></a>Générer des manifestes non signés
 
@@ -94,7 +96,7 @@ Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si 
 
 1. Pour générer des manifestes non signés qui incluent tous les fichiers dans le hachage, vous devez d’abord publier l’application avec des manifestes signés. Vous devez donc signer les manifestes ClickOnce en effectuant l’une des procédures précédentes, puis publier l’application.
 
-2. Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.
+2. Dans la page **Signature** , décochez la case **Signer les manifestes ClickOnce**.
 
 3. Redéfinissez la version de publication afin qu’une seule version de votre application soit disponible. Par défaut, Visual Studio incrémente automatiquement le numéro de révision de la version de publication chaque fois que vous publiez une application. Pour plus d’informations, consultez [Guide pratique pour définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
@@ -102,7 +104,7 @@ Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si 
 
 ### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Pour générer des manifestes non signés et exclure un ou plusieurs fichiers du hachage généré
 
-1. Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.
+1. Dans la page **Signature** , décochez la case **Signer les manifestes ClickOnce**.
 
 2. Ouvrez la boîte de dialogue **Fichiers d’application** et définissez le **Hachage** sur **Exclure** pour les fichiers que vous souhaitez exclure du hachage généré.
 
@@ -114,6 +116,6 @@ Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si 
 ## <a name="see-also"></a>Voir aussi
 
 - [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Comment : créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Signature, page du concepteur de projets](../ide/reference/signing-page-project-designer.md)
 - [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

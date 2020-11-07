@@ -1,5 +1,7 @@
 ---
 title: URL de prise en charge pour les composants requis dans le déploiement ClickOnce
+description: Découvrez comment un déploiement ClickOnce teste les conditions préalables pour que l’application ClickOnce s’exécute et comment le déploiement traite les conditions préalables manquantes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381728"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350944"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Guide pratique pour spécifier une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement peut tester un certain nombre de conditions préalables qui doivent être disponibles sur l’ordinateur client pour que l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application puisse s’exécuter. Ces dépendances incluent la version minimale requise du .NET Framework, la version du système d’exploitation et tous les assemblys qui doivent être préinstallés dans le Global Assembly Cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Toutefois, ne peut pas installer l’une de ces conditions préalables. Si un composant requis est introuvable, il interrompt simplement l’installation et affiche une boîte de dialogue qui explique pourquoi l’installation a échoué.
 
  Il existe deux méthodes pour installer les composants requis. Vous pouvez les installer à l’aide d’une application de programme d’amorçage. Vous pouvez également spécifier une URL de support pour chaque composant requis, qui est affiché pour les utilisateurs de la boîte de dialogue si le composant requis est introuvable. La page référencée par cette URL peut contenir des liens vers des instructions pour l’installation de la configuration requise. Si une application ne spécifie pas d’URL de support pour un composant requis individuel, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] affiche l’URL de support spécifiée dans le manifeste de déploiement pour l’application dans son ensemble, si elle est définie.
 
- Bien que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe*et *MageUI.exe* puissent tous être utilisés pour générer des [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements, aucun de ces outils ne prend directement en charge la spécification d’une URL de support pour des composants requis individuels. Ce document décrit comment modifier le manifeste d’application et le manifeste de déploiement de votre déploiement pour inclure ces URL de prise en charge.
+ Bien que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe* et *MageUI.exe* puissent tous être utilisés pour générer des [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements, aucun de ces outils ne prend directement en charge la spécification d’une URL de support pour des composants requis individuels. Ce document décrit comment modifier le manifeste d’application et le manifeste de déploiement de votre déploiement pour inclure ces URL de prise en charge.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Spécifier une URL de support pour un composant requis individuel
 
@@ -65,7 +67,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiemen
      </dependency>
    ```
 
-5. facultatif. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (fichier *. application* ) de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans un éditeur de texte.
+5. Optionnel. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (fichier *. application* ) de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans un éditeur de texte.
 
 6. Pour une condition préalable .NET Framework 4, ajoutez l' `supportUrl` attribut à l' `compatibleFrameworks` élément :
 

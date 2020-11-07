@@ -1,5 +1,7 @@
 ---
 title: Sécurisation des applications ClickOnce | Microsoft Docs
+description: Découvrez les implications des contraintes de sécurité d’accès du code dans le .NET Framework qui peuvent limiter l’accès au code pour vos applications ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cb992355378e6e124cadef3383633a52a9111c2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286296"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350544"
 ---
 # <a name="secure-clickonce-applications"></a>Sécuriser des applications ClickOnce
 Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont soumises aux contraintes de sécurité d'accès du code dans .NET Framework afin d'aider à limiter l'accès du code aux opérations et aux ressources protégées. Pour cette raison, il est important de comprendre les implications de la sécurité d'accès du code afin d'écrire vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en conséquence. Vos applications peuvent utiliser des zones de confiance totale ou de confiance partielle, telles que les zones intranet et Internet, pour limiter l'accès.

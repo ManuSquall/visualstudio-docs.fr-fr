@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Élément RelatedProducts (programme d’amorçage) | Microsoft Docs'
+description: L’élément RelatedProducts définit d’autres produits qui dépendent de ou sont inclus dans le produit actuel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747462"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350567"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;&gt;Élément RelatedProducts (programme d’amorçage)
 L' `RelatedProducts` élément définit d’autres produits qui dépendent de ou qui sont inclus dans le produit actuel.
@@ -73,7 +75,7 @@ L' `RelatedProducts` élément définit d’autres produits qui dépendent de ou
 |---------------|-----------------|
 |`Code`|Nom de code du produit inclus, tel que spécifié par l' `ProductCode` attribut de l' `Product` élément. Pour plus d’informations, consultez [ \<Product> élément](../deployment/product-element-bootstrapper.md).|
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant spécifie que Microsoft installer est installé avec le .NET Framework et, par conséquent, n’a pas besoin d’une installation distincte.
 
 ```xml

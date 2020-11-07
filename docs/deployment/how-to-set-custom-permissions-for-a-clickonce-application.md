@@ -1,5 +1,6 @@
 ---
 title: Définir des autorisations personnalisées (application ClickOnce)
+description: Apprenez à déployer une application ClickOnce qui utilise des autorisations par défaut ou créez une zone personnalisée pour les autorisations spécifiques dont l’application a besoin.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9952573be69299e14dc87f345febb14cdef0ec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d5d0348b882a3327c02fca6db0628822c0deffeb
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809714"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350996"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce
 Vous pouvez déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] qui utilise les autorisations par défaut pour la zone Internet ou Intranet local. Vous pouvez également créer une zone personnalisée pour les autorisations spécifiques nécessaires à l’application. Vous pouvez pour cela personnaliser les autorisations de sécurité dans la page **Sécurité** du **Concepteur de projets**.
 
 ### <a name="to-customize-a-permission"></a>Pour personnaliser une autorisation
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l’onglet **Security** .
 

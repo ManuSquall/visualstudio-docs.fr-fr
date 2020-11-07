@@ -1,5 +1,7 @@
 ---
 title: schémas XML
+description: En savoir plus sur la boîte de dialogue schémas XML qui permet de sélectionner le (s) schéma (s) de langage XSD (XML Schema Definition) à associer à un document XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26703b821d2748612f461a35591a831488807dbb
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592332"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351399"
 ---
 # <a name="xml-schemas-dialog-box"></a>Boîte de dialogue Schémas XML
 

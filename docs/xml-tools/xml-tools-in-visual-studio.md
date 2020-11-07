@@ -1,5 +1,7 @@
 ---
 title: Éditeur de schéma et éditeur XML
+description: Découvrez les outils de Visual Studio qui vous aideront à utiliser les schémas XML, XSLT et XML, y compris l’éditeur XML, le concepteur de schémas XML et le débogueur XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc8cac3e16e06c23d0d51ee4483bcf5fb8abfb05
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816421"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351282"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Vue d’ensemble des outils XML dans Visual Studio
 

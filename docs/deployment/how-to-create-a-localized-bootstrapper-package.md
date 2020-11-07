@@ -1,5 +1,7 @@
 ---
 title: Créer un package de programme d’amorçage localisé | Microsoft Docs
+description: Découvrez comment créer des versions localisées du package du programme d’amorçage dans ClickOnce en créant deux fichiers supplémentaires pour chaque paramètre régional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,23 +14,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852483"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351243"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Guide pratique pour créer un package du programme d'amorçage localisé
-Après avoir créé un package du programme d’amorçage, vous pouvez créer des versions localisées du package du programme d’amorçage en créant deux fichiers supplémentaires pour chaque paramètre régional : un fichier de termes de contrat de licence logiciel (tel que *EULA. rtf*) et un manifeste de package (*package.xml*).
+Après avoir créé un package du programme d’amorçage, vous pouvez créer des versions localisées du package du programme d’amorçage en créant deux fichiers supplémentaires pour chaque paramètre régional : un fichier de termes de contrat de licence logiciel (tel que *EULA. rtf* ) et un manifeste de package ( *package.xml* ).
 
  Par défaut, Visual Studio 2010 inclut des packages de programme d'amorçage localisés uniquement pour .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 et F# Runtime 4.0. Vous pouvez créer des packages localisés pour d'autres programmes d'amorçage en trois étapes.
 
-1. Créez un dossier nommé d’après le nom des paramètres régionaux dans *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> *.
+1. Créez un dossier nommé d’après le nom des paramètres régionaux dans *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName>*.
 
 2. Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.
 
-3. Créez un manifeste de package nommé *package.xml*, mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d’amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier de *package.xml* Visual Studio et le modifier dans cette étape.
+3. Créez un manifeste de package nommé *package.xml* , mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d’amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier de *package.xml* Visual Studio et le modifier dans cette étape.
 
 > [!NOTE]
 > Si vous utilisez un projet d’installation pour déployer les applications, vous pouvez localiser votre application en changeant la propriété **Localization**.

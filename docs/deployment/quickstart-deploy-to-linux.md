@@ -1,5 +1,7 @@
 ---
 title: Publier sur App Service sur Linux
+description: En savoir plus sur les méthodes de publication d’ASP.NET Core apps sur Azure App Service Linux à l’aide de conteneurs, y compris des options continues et ponctuelles.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 790e88edcd5d0d77e09cc349c82c242cd3da876d
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830732"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350720"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publier une application web ASP.NET Core sur App Service sur Linux à l’aide de Visual Studio
 
@@ -30,7 +32,7 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
 ## <a name="publish-to-azure-app-service-on-linux"></a>Publier sur Azure App Service sur Linux
 
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier** ).
 
     ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
@@ -48,7 +50,7 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
     ![Lien pour créer une nouvelle instance de Azure App Service](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. Dans la boîte de dialogue **créer un Azure App service (Linux)** , les champs nom de l' **application**, **groupe de ressources**et App service d’entrée du **plan** sont renseignés. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
+1. Dans la boîte de dialogue **créer un Azure App service (Linux)** , les champs nom de l' **application** , **groupe de ressources** et App service d’entrée du **plan** sont renseignés. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
 
     ![Choisir Azure App Service](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
@@ -63,9 +65,9 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 
 Au cours des étapes précédentes, vous avez créé des ressources Azure au sein d’un groupe de ressources. Si vous ne pensez pas avoir besoin de ces ressources à l’avenir, vous pouvez les supprimer en supprimant le groupe de ressources.
-Dans le menu de gauche du portail Azure, cliquez sur **Groupes de ressources**, puis sur **myResourceGroup**.
+Dans le menu de gauche du portail Azure, cliquez sur **Groupes de ressources** , puis sur **myResourceGroup**.
 Sur la page du groupe de ressources, assurez-vous que les ressources répertoriées sont bien celles que vous souhaitez supprimer.
-Sélectionnez **Supprimer**, tapez **myResourceGroup** dans la zone de texte, puis sélectionnez **Supprimer**.
+Sélectionnez **Supprimer** , tapez **myResourceGroup** dans la zone de texte, puis sélectionnez **Supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

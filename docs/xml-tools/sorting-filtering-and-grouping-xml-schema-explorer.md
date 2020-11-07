@@ -1,5 +1,7 @@
 ---
 title: Tri, filtrage et regroupement dans l’Explorateur de schémas XML
+description: En savoir plus sur les options disponibles par le biais des options de tri, de filtrage et de regroupement dans la barre d’outils de l’Explorateur de schémas XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 172226334622b830db79b79f7eaae2c5fe7efc79
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592514"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351490"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Tri, filtrage et regroupement (Explorateur de schémas XML)
 

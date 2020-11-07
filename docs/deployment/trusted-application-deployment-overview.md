@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du déploiement d’applications approuvées | Microsoft Docs
+description: Découvrez comment déployer des applications ClickOnce qui ont des autorisations élevées à l’aide de la technologie de déploiement d’applications approuvées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72806828"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350489"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d’ensemble du déploiement d’applications approuvées
 Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] qui ont des autorisations élevées à l’aide de la technologie de déploiement d’applications approuvées.
@@ -77,7 +79,7 @@ Vous devez suivre ces étapes pour tirer parti du déploiement d'applications ap
 
 - Espace de noms <xref:System.Security.Cryptography?displayProperty=fullName>.
 
-- *CertMgr.exe*, qui est un composant d’Internet Explorer et qui existe donc sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil Certificate Manager)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe* , qui est un composant d’Internet Explorer et qui existe donc sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil Certificate Manager)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Créer une application ClickOnce
  Une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est une application cliente .NET Framework combinée avec des fichiers manifeste qui décrivent l’application et fournissent les paramètres d’installation. Vous pouvez transformer votre programme en application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide de la commande **Publier** dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez également générer tous les fichiers requis pour le déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide des outils inclus dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Pour obtenir des instructions détaillées sur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement, consultez [procédure pas à pas : déploiement manuel d'une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

@@ -1,5 +1,6 @@
 ---
 title: Spécifier des fichiers journaux détaillés (déploiements ClickOnce)
+description: Découvrez comment spécifier les commentaires des journaux d’activité gérés par ClickOnce pour l’installation, l’initialisation, la mise à jour et la désinstallation d’un déploiement ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c90f6a544607e78dd8f294bfc307bc87377b70
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0da285cfef49bd495fbecf39131e49cacd0476a5
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808709"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350918"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Guide pratique pour spécifier des fichiers journaux détaillés pour les déploiements ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gère les fichiers journaux d’activité pour tous les déploiements. Ces journaux documentent les détails relatifs à l’installation, l’initialisation, la mise à jour et la désinstallation d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Pour augmenter les détails qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] écrivent dans ces fichiers journaux, utilisez l’éditeur du Registre (*regedit.exe*) pour spécifier le niveau de détail.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gère les fichiers journaux d’activité pour tous les déploiements. Ces journaux documentent les détails relatifs à l’installation, l’initialisation, la mise à jour et la désinstallation d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Pour augmenter les détails qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] écrivent dans ces fichiers journaux, utilisez l’éditeur du Registre ( *regedit.exe* ) pour spécifier le niveau de détail.
 
 > [!CAUTION]
 > Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes qui peuvent nécessiter la réinstallation du système d’exploitation. Son utilisation est sous votre entière responsabilité.
@@ -35,7 +36,7 @@ ms.locfileid: "90808709"
 
 1. Ouvrez *Regedit.exe*.
 
-2. Accédez au nœud **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment**.
+2. Accédez au nœud **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
 
 3. Si nécessaire, créez une valeur de chaîne nommée `LogVerbosityLevel` .
 

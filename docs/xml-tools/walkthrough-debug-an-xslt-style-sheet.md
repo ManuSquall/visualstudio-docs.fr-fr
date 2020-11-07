@@ -1,5 +1,7 @@
 ---
 title: Déboguer les feuilles de style XSLT
+description: Découvrez comment utiliser le débogueur XSLT dans Visual Studio pour déboguer une feuille de style XSLT en suivant les étapes décrites dans cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815121"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351334"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : Déboguer une feuille de style XSLT
 
 Les étapes de cette procédure pas à pas montrent comment utiliser le débogueur XSLT. Elles comprennent l'affichage des variables, la définition de points d'arrêt et le parcours pas à pas du code. Le débogueur vous permet d’exécuter le code ligne par ligne.
 
@@ -26,13 +28,13 @@ Pour préparer cette procédure pas à pas, commencez par copier les deux [exemp
 
 ## <a name="start-debugging"></a>Démarrer le débogage
 
-1. Dans le menu **fichier** , choisissez **ouvrir**un  >  **fichier**.
+1. Dans le menu **fichier** , choisissez **ouvrir** un  >  **fichier**.
 
 2. Recherchez le fichier *Below-Average. xsl* , puis choisissez **ouvrir**.
 
    La feuille de style s’ouvre dans l’éditeur XML.
 
-3. Cliquez sur le bouton Parcourir (**...**) dans le champ **entrée** de la fenêtre Propriétés du document. (Si la fenêtre **Propriétés** n’est pas visible, cliquez avec le bouton droit n’importe où sur le fichier ouvert dans l’éditeur, puis choisissez **Propriétés**.)
+3. Cliquez sur le bouton Parcourir ( **...** ) dans le champ **entrée** de la fenêtre Propriétés du document. (Si la fenêtre **Propriétés** n’est pas visible, cliquez avec le bouton droit n’importe où sur le fichier ouvert dans l’éditeur, puis choisissez **Propriétés**.)
 
 4. Recherchez le fichier *books.xml* , puis choisissez **ouvrir**.
 
@@ -48,13 +50,13 @@ Pour préparer cette procédure pas à pas, commencez par copier les deux [exemp
 
       ![Insérer un point d’arrêt dans un fichier XSL dans Visual Studio](media/insert-breakpoint.PNG)
 
-6. Dans la barre de menus, choisissez **XML**  >  **Démarrer le débogage XSLT** (ou appuyez sur **ALT** + **F5**).
+6. Dans la barre de menus, choisissez **XML**  >  **Démarrer le débogage XSLT** (ou appuyez sur **ALT** + **F5** ).
 
    Le processus de débogage démarre.
 
    Dans l’éditeur, le débogueur est positionné sur l' `xsl:if` élément de la feuille de style. Un autre fichier nommé *below-average.xml* s’ouvre dans l’éditeur. Il s’agit du fichier de sortie qui sera rempli à mesure que chaque nœud du fichier d’entrée *books.xml* est traité.
 
-   Les fenêtres **automatique**, **variables locales**et **Espion 1** s’affichent en bas de la fenêtre de Visual Studio. La fenêtre variables **locales** affiche toutes les variables locales et leurs valeurs actuelles. Cela comprend les variables définies dans la feuille de style ainsi que celles que le débogueur utilise pour assurer le suivi des nœuds actuellement dans le contexte.
+   Les fenêtres **automatique** , **variables locales** et **Espion 1** s’affichent en bas de la fenêtre de Visual Studio. La fenêtre variables **locales** affiche toutes les variables locales et leurs valeurs actuelles. Cela comprend les variables définies dans la feuille de style ainsi que celles que le débogueur utilise pour assurer le suivi des nœuds actuellement dans le contexte.
 
 ## <a name="watch-window"></a>Fenêtre Espion
 
