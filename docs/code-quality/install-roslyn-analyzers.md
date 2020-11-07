@@ -1,6 +1,8 @@
 ---
 title: Installer des analyseurs tiers
 ms.date: 08/27/2020
+description: Découvrez comment installer des analyseurs tiers dans Visual Studio. Consultez Comment installer des analyseurs dans les fichiers. vsix et les packages de l’analyseur NuGet.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091449"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348682"
 ---
 # <a name="install-third-party-analyzers"></a>Installer des analyseurs tiers
 
-Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Platform (*Roslyn*). Ces analyseurs sont toujours activés. Vous pouvez installer des analyseurs supplémentaires en tant que packages NuGet ou en tant qu’extensions Visual Studio dans des fichiers *VSIX* .
+Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Platform ( *Roslyn* ). Ces analyseurs sont toujours activés. Vous pouvez installer des analyseurs supplémentaires en tant que packages NuGet ou en tant qu’extensions Visual Studio dans des fichiers *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Pour installer les packages de l’analyseur NuGet
 
@@ -33,7 +35,7 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
    > [!NOTE]
    > La page www.nuget.org pour chaque package de l’analyseur vous indique la commande à coller dans la **console du gestionnaire de package**. Il y a même un bouton pratique pour copier le texte dans le presse-papiers.
 
-   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous les **References**  >  **analyseurs**de références.
+   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous les **References**  >  **analyseurs** de références.
 
 ## <a name="to-install-vsix-analyzers"></a>Pour installer les analyseurs VSIX
 

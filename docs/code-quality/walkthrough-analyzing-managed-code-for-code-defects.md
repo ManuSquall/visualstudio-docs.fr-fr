@@ -1,6 +1,8 @@
 ---
 title: Procédure pas à pas d’analyse du code managé pour les erreurs de code | Microsoft Docs
 ms.date: 01/29/2018
+description: Découvrez comment utiliser l’analyse du code hérité pour analyser les assemblys de code managé .NET. Consultez Comment vérifier les défauts et la conformité avec les règles de conception de .NET.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659190"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349020"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procédure pas à pas : utiliser l’analyse statique du code pour rechercher les erreurs de code
 
@@ -75,7 +77,7 @@ Cet article vous guide tout au long du processus d’utilisation de l’analyse 
 
 ::: moniker-end
 
-6. Dans le menu **fichier** , cliquez sur **enregistrer les éléments sélectionnés**, puis fermez les pages de propriétés.
+6. Dans le menu **fichier** , cliquez sur **enregistrer les éléments sélectionnés** , puis fermez les pages de propriétés.
 
 7. Dans le menu **générer** , cliquez sur **générer CodeAnalysisManagedDemo**.
 
@@ -87,7 +89,7 @@ Cet article vous guide tout au long du processus d’utilisation de l’analyse 
 
     En fonction du profil de développeur que vous avez choisi, vous devrez peut-être pointer sur **autres fenêtres** dans le menu **affichage** , puis choisir **liste d’erreurs**.
 
-1. Dans l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**.
+1. Dans l’ **Explorateur de solutions** , choisissez **Afficher tous les fichiers**.
 
 1. Développez le nœud Propriétés, puis ouvrez le fichier *AssemblyInfo.cs* .
 
@@ -127,11 +129,11 @@ Cet article vous guide tout au long du processus d’utilisation de l’analyse 
 
       La boîte de dialogue **Créer une clé de nom fort** s'affiche.
 
-   1. Pour le **nom du fichier de clé**, entrez **TestKey**.
+   1. Pour le **nom du fichier de clé** , entrez **TestKey**.
 
    1. Entrez un mot de passe, puis choisissez **OK**.
 
-   1. Dans le menu **fichier** , sélectionnez **enregistrer les éléments sélectionnés**, puis fermez les pages de propriétés.
+   1. Dans le menu **fichier** , sélectionnez **enregistrer les éléments sélectionnés** , puis fermez les pages de propriétés.
 
    Une fois toutes les modifications terminées, le fichier Class1.cs doit ressembler à ce qui suit :
 

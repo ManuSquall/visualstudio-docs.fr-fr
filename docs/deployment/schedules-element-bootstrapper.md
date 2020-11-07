@@ -1,5 +1,7 @@
 ---
 title: '&lt;Schedules &gt; , élément (programme d’amorçage) | Microsoft Docs'
+description: L’élément Schedules contient des éléments Schedule, qui définissent des heures spécifiques d’exécution des commandes définies par l’élément Command.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927330"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349358"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Schedules &gt; , élément (programme d’amorçage)
 L' `Schedules` élément contient des `Schedule` éléments qui définissent des heures spécifiques à laquelle les commandes définies par l' `Command` élément doivent être exécutées.

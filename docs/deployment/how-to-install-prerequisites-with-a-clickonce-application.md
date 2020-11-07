@@ -1,5 +1,6 @@
 ---
 title: Installer les composants requis avec une application ClickOnce
+description: Découvrez comment sélectionner les composants requis à empaqueter avec votre application ClickOnce quand elle est installée.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809118"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349930"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Guide pratique pour installer les composants requis avec une application ClickOnce
 Toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications requièrent que la version correcte du .NET Framework soit installée sur un ordinateur avant de pouvoir être exécutées. de nombreuses applications ont également d’autres conditions préalables. Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, vous pouvez choisir un ensemble de composants requis à empaqueter avec votre application. Au moment de l’installation, un contrôle est effectué pour chaque composant requis pour déterminer s’il existe déjà. Si ce n’est pas le cas, il sera installé avant l’installation de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
@@ -39,7 +40,7 @@ Toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] app
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Pour spécifier les conditions préalables à l’installation avec une application ClickOnce
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Sélectionnez le volet **publier** .
 
@@ -53,7 +54,7 @@ Toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] app
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Pour spécifier un autre emplacement de téléchargement pour les composants requis
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Sélectionnez le volet **publier** .
 

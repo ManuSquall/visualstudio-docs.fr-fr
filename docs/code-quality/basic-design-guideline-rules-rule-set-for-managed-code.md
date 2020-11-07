@@ -1,6 +1,8 @@
 ---
 title: Ensemble de règles de règles de conception de base pour le code managé
 ms.date: 11/04/2016
+description: En savoir plus sur l’ensemble de règles de règles de conception de base dans Visual Studio, qui peut aider à rendre le code plus facile à comprendre et à utiliser. Consultez Description de la règle.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bf7542d94b16042df27ec8b780cc93c9061d6e8
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: abf11966f029d6c4ec66ce295332889a9d74c359
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659125"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348405"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception de base pour le code managé
 

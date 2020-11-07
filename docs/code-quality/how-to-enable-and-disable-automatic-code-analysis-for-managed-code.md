@@ -1,16 +1,18 @@
 ---
 title: Désactiver l’analyse du code hérité
 ms.date: 10/04/2019
+description: Découvrez comment activer et désactiver l’analyse de code binaire dans Visual Studio. Consultez Comment configurer cette fonctionnalité dans des projets de code managé.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801020"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348747"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse du code binaire pour le code managé
 
@@ -21,7 +23,7 @@ Vous pouvez configurer l’analyse du code hérité (analyse binaire) pour qu’
 
 Pour activer ou désactiver l’analyse du code hérité :
 
-1. Dans **Explorateur de solutions**, sélectionnez le projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions** , sélectionnez le projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Propriétés**.
 
 2. Dans la boîte de dialogue Propriétés du projet, accédez à l’onglet **analyse du code** .
 

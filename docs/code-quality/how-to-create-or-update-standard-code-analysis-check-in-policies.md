@@ -1,5 +1,6 @@
 ---
 title: Créer/mettre à jour des stratégies d’archivage de l’analyse du code standard
+description: Découvrez comment vous assurer que l’analyse du code s’exécute sur tous les projets de code dans un projet Azure DevOps. Consultez Comment configurer une stratégie d’archivage de l’analyse du code du projet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad889ba106c288c07111857be965ef8d6c8295df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808624"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348760"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -36,7 +37,7 @@ Une fois que vous avez spécifié une stratégie d’archivage pour le code mana
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’archivage
 
-1. Dans Team Explorer, cliquez avec le bouton droit sur le nom du projet, pointez sur **paramètres du projet**, puis cliquez sur **contrôle de code source**.
+1. Dans Team Explorer, cliquez avec le bouton droit sur le nom du projet, pointez sur **paramètres du projet** , puis cliquez sur **contrôle de code source**.
 
 1. Dans la boîte de dialogue **contrôle de code source** , sélectionnez l’onglet **stratégie d’archivage** .
 

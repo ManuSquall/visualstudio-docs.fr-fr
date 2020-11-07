@@ -1,5 +1,7 @@
 ---
 title: Publication d’applications ClickOnce | Microsoft Docs
+description: Découvrez comment utiliser l’Assistant Publication pour publier une application ClickOnce pour la première fois. Apportez des modifications ultérieures sur la page publier du concepteur de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641539"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349488"
 ---
 # <a name="publish-clickonce-applications"></a>Publier des applications ClickOnce
 Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour la première fois, les propriétés de publication peuvent être définies à l'aide de l'Assistant Publication. Seules quelques-unes des propriétés sont disponibles dans l'Assistant ; toutes les autres sont définies à leurs valeurs par défaut.
@@ -48,7 +50,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 ## <a name="publish-page"></a>Page Publier
  La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce. Le tableau suivant liste les rubriques.
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Décrit comment définir l'emplacement où Visual Studio place les fichiers d'application et les manifestes.|
 |[Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Décrit comment définir l'emplacement à partir duquel les utilisateurs téléchargent et installent l'application.|
@@ -72,11 +74,11 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 ### <a name="publish-options-dialog-box"></a>Boîte de dialogue Options de publication
  La boîte de dialogue Options de publication spécifie les options de déploiement d'une application.
 
-|Intitulé|Description|
+|Titre|Description|
 |-|-|
 |[Guide pratique pour changer la langue de publication pour une application ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Explique comment spécifier une langue et une culture correspondant à la version localisée.|
 |[Guide pratique pour spécifier un nom de menu Démarrer pour une application ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Décrit comment modifier le nom complet d'une application ClickOnce.|
-|[Guide pratique pour spécifier un lien pour le support technique](../deployment/how-to-specify-a-link-for-technical-support.md)|Décrit comment définir la propriété **URL du support technique**, qui identifie une page web ou un partage de fichiers où les utilisateurs peuvent accéder pour obtenir des informations sur l’application.|
+|[Guide pratique pour spécifier un lien pour le support technique](../deployment/how-to-specify-a-link-for-technical-support.md)|Décrit comment définir la propriété **URL du support technique** , qui identifie une page web ou un partage de fichiers où les utilisateurs peuvent accéder pour obtenir des informations sur l’application.|
 |[Guide pratique pour spécifier une URL de support technique pour chaque composant requis lors d’un déploiement ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|A montré comment modifier manuellement un manifeste d'application pour inclure les URL de support technique de chaque composant requis.|
 |[Guide pratique pour spécifier une page de publication pour une application ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Décrit comment générer et publier une page web par défaut (publish.htm) en même temps que l’application|
 |[Guide pratique pour personnaliser la page web par défaut de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Décrit comment personnaliser la page web qui est automatiquement générée et publiée avec l’application.|
@@ -84,7 +86,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Guide pratique pour créer des associations de fichiers pour une application ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Décrit comment ajouter la prise en charge d'extension de nom de fichier à une application ClickOnce.|
 |[Guide pratique pour récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Montre comment récupérer des paramètres passés dans l'URL utilisée pour exécuter une application ClickOnce.|

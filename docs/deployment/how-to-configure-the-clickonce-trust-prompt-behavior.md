@@ -1,5 +1,7 @@
 ---
 title: Configurer le comportement de l’invite d’approbation ClickOnce | Microsoft Docs
+description: Découvrez comment configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux ont la possibilité d’installer des applications ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852229"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350060"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Guide pratique pour configurer le comportement de l’invite d’approbation ClickOnce
 Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux ont la possibilité d’installer des applications ClickOnce, telles que des applications Windows Forms, des applications Windows Presentation Foundation, des applications console, des applications de navigateur WPF et des solutions Office. Vous configurez l’invite d’approbation en définissant les clés de Registre sur l’ordinateur de chaque utilisateur final.
@@ -55,17 +57,17 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer** , puis sur **Exécuter**.
 
     2. Dans la zone **ouvrir** , tapez `regedit` , puis cliquez sur **OK**.
 
 2. Recherchez la clé de Registre suivante :
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne** , si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
@@ -114,17 +116,17 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer** , puis sur **Exécuter**.
 
     2. Dans la zone **ouvrir** , tapez `regedit` , puis cliquez sur **OK**.
 
 2. Recherchez la clé de Registre suivante :
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne** , si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
@@ -171,17 +173,17 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer** , puis sur **Exécuter**.
 
     2. Dans la zone **ouvrir** , tapez `regedit` , puis cliquez sur **OK**.
 
 2. Recherchez la clé de Registre suivante :
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne** , si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|

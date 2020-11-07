@@ -1,5 +1,7 @@
 ---
 title: Spécifier un lien pour le support technique | Microsoft Docs
+description: En savoir plus sur la propriété URL de support pour la publication d’une application ClickOnce, qui identifie une page Web ou un partage de fichiers où les utilisateurs obtiennent des informations.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851747"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349761"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Guide pratique pour spécifier un lien pour le support technique
 Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, la propriété **URL de support** identifie une page Web ou un partage de fichiers où les utilisateurs peuvent accéder pour obtenir des informations sur l’application. Cette propriété est facultative. s’il est spécifié, l’URL s’affiche dans la boîte de dialogue **Ajout/suppression de programmes** de l’entrée de l’application.
@@ -34,7 +36,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-specify-a-support-url"></a>Pour spécifier une URL de support technique
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

@@ -1,5 +1,6 @@
 ---
 title: Télécharger l’assembly satellite à la demande (API ClickOnce)
+description: Découvrez comment marquer des assemblys satellites comme facultatifs et télécharger uniquement l’assembly dont a besoin un ordinateur client pour ses paramètres de culture actuels.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809235"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349293"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API de déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.
@@ -55,7 +56,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 4. Cliquez sur l’onglet **Files** .
 
-5. Cliquez sur le bouton d’**ellipse** (**...**) et sélectionnez le répertoire contenant tous les assemblys et fichiers de votre application, y compris les assemblys satellites que vous avez générés à l’aide de *Resgen.exe*. (Un assembly satellite aura un nom sous la forme * \<isoCode>\ApplicationName.resources.dll*, où \<isoCode> est un identificateur de langue au format RFC 1766.)
+5. Cliquez sur le bouton d’ **ellipse** ( **...** ) et sélectionnez le répertoire contenant tous les assemblys et fichiers de votre application, y compris les assemblys satellites que vous avez générés à l’aide de *Resgen.exe*. (Un assembly satellite aura un nom sous la forme *\<isoCode>\ApplicationName.resources.dll* , où \<isoCode> est un identificateur de langue au format RFC 1766.)
 
 6. Cliquez sur **Populate** pour ajouter les fichiers à votre déploiement.
 

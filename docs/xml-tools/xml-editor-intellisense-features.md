@@ -1,5 +1,7 @@
 ---
 title: Fonctionnalités IntelliSense de l’éditeur XML
+description: Découvrez les fonctionnalités IntelliSense de l’éditeur XML dans Visual Studio et comment les utiliser avec des documents en langage XSD (XML Schema Definition) et XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592384"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350242"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
 
@@ -87,7 +89,7 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
 
 ## <a name="brace-matching"></a>Correspondance d’accolade
 
-L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**CTRL** + **]**) pour passer d’une accolade à l’accolade correspondante.
+L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier ( **CTRL** + **]** ) pour passer d’une accolade à l’accolade correspondante.
 
 L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
@@ -107,7 +109,7 @@ L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
 ## <a name="modify-the-intellisense-options"></a>Modifier les options IntelliSense
 
-Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant les **Tools**  >  paramètres**options** des outils.
+Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant les **Tools**  >  paramètres **options** des outils.
 
 La section **insertion automatique** de la page **divers** contrôle le comportement suivant :
 
@@ -121,7 +123,7 @@ La section **insertion automatique** de la page **divers** contrôle le comporte
 
 1. Sélectionnez **Options** dans le menu **Outils**.
 
-2. Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.
+2. Développez **éditeur de texte** , développez **XML** , puis sélectionnez **divers**.
 
 3. Apportez des modifications à la section **insertion automatique** , puis cliquez sur **OK**.
 

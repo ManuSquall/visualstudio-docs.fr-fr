@@ -1,6 +1,8 @@
 ---
 title: Supprimer les violations de l’analyse du code
 ms.date: 08/27/2020
+description: Découvrez comment supprimer les violations d’analyse du code dans Visual Studio. Comprendre comment utiliser l’attribut SuppressMessageAttribute pour la suppression en source.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -14,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658514"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348695"
 ---
 # <a name="suppress-code-analysis-violations"></a>Supprimer les violations de l’analyse du code
 
@@ -44,13 +46,13 @@ En C++/CLI, utilisez l’autorité de certification macros \_ supprimer le \_ me
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en sélectionnant **analyser**la  >  **Build et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en sélectionnant **analyser** la  >  **Build et supprimer les problèmes actifs**.
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attribut)
 
-Lorsque vous sélectionnez **supprimer** dans le menu contextuel ou le menu contextuel d’un avertissement d’analyse du code dans la **liste d’erreurs**, un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est ajouté dans votre code ou dans le fichier de suppression globale du projet.
+Lorsque vous sélectionnez **supprimer** dans le menu contextuel ou le menu contextuel d’un avertissement d’analyse du code dans la **liste d’erreurs** , un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est ajouté dans votre code ou dans le fichier de suppression globale du projet.
 
 L' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut a le format suivant :
 

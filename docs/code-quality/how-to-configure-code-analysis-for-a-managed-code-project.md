@@ -1,6 +1,8 @@
 ---
 title: Configurer l’analyse du code
 ms.date: 04/04/2018
+description: Découvrez comment configurer l’ensemble de règles utilisé par l’analyse du code hérité Visual Studio. Consultez Comment appliquer un ensemble de règles à un ou plusieurs projets d’une solution.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801046"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348799"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Comment : configurer l’analyse héritée pour le code managé
 
@@ -36,15 +38,15 @@ Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles
 
 1. Ouvrez l’onglet **analyse du code** dans les pages de propriétés du projet. Plusieurs méthodes sont possibles :
 
-   - Dans **Explorateur de solutions**, choisissez le projet. Dans la barre de menus, sélectionnez **analyser**  >  **configurer l’analyse**  >  **du code pour \<projectname> **.
+   - Dans **Explorateur de solutions** , choisissez le projet. Dans la barre de menus, sélectionnez **analyser**  >  **configurer l’analyse**  >  **du code pour \<projectname>**.
 
-   - Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **analyse du code** .
+   - Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés** , puis sélectionnez l’onglet **analyse du code** .
 
 2. Dans les listes **configuration** et **plateforme** , choisissez la configuration de build et la plateforme cible.
 
 ::: moniker range="vs-2017"
 
-3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **activer l’analyse du code sur la build**. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser**  >  **exécuter**l’analyse  >  **du \<projectname> code exécuter l’analyse du code sur **.
+3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **activer l’analyse du code sur la build**. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser**  >  **exécuter** l’analyse  >  **du \<projectname> code exécuter l’analyse du code sur**.
 
 ::: moniker-end
 
@@ -85,7 +87,7 @@ Par défaut, tous les projets managés d’une solution se voient affecter l’e
 
 2. Dans le menu **analyser** , sélectionnez **configurer l’analyse du code pour la solution**.
 
-3. Si nécessaire, développez **Propriétés communes**, puis sélectionnez **paramètres d’analyse du code**.
+3. Si nécessaire, développez **Propriétés communes** , puis sélectionnez **paramètres d’analyse du code**.
 
 4. Vous pouvez spécifier un ensemble de règles pour un ou plusieurs projets :
 

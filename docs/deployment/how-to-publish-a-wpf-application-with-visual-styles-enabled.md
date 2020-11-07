@@ -1,5 +1,6 @@
 ---
 title: Publier une application WPF avec les styles visuels activés
+description: Découvrez comment publier une application WPF avec les styles visuels activés, ce qui permet de modifier l’apparence des contrôles en fonction du thème choisi par l’utilisateur.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810456"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349852"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Guide pratique pour publier une application WPF avec les styles visuels activés
 
@@ -50,7 +51,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
     **Pour ouvrir le fichier manifeste dans un projet Visual Basic**
 
-    1. Dans la barre de menus, choisissez **projet**, **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
+    1. Dans la barre de menus, choisissez **projet** , **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
 
          Les pages de propriétés de votre projet WPF s’affichent.
 
@@ -60,7 +61,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
     **Pour ouvrir le fichier manifeste dans un projet C#**
 
-    1. Dans la barre de menus, choisissez **projet**, **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
+    1. Dans la barre de menus, choisissez **projet** , **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
 
          Les pages de propriétés de votre projet WPF s’affichent.
 
@@ -69,7 +70,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
         > [!NOTE]
         > Si l’option **incorporer le manifeste avec les paramètres par défaut** ou **créer une application sans manifeste** apparaît dans le champ manifeste, les styles visuels ne sont pas activés. Si le nom d’un fichier manifeste apparaît dans le champ manifeste, passez à l’étape suivante de cette procédure.
 
-    3. Dans l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**.
+    3. Dans l’ **Explorateur de solutions** , choisissez **Afficher tous les fichiers**.
 
          Ce bouton affiche tous les éléments de projet, y compris ceux qui ont été exclus et ceux qui sont normalement masqués. Le fichier manifeste apparaît en tant qu’élément de projet.
 
@@ -96,7 +97,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
     </asmv1:assembly>
     ```
 
-2. Dans le Bloc-notes, cliquez sur **Fichier**, puis sur **Enregistrer sous.**
+2. Dans le Bloc-notes, cliquez sur **Fichier** , puis sur **Enregistrer sous.**
 
 3. Dans la boîte de dialogue **Enregistrer sous** , dans la liste déroulante **type** de fichier, sélectionnez **tous les fichiers**.
 
@@ -111,7 +112,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
 1. Ouvrez l' **invite de commandes de Visual Studio**.
 
-    Pour plus d’informations sur l’ouverture de l' **invite de commandes de Visual Studio**, consultez [invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Pour plus d’informations sur l’ouverture de l' **invite de commandes de Visual Studio** , consultez [invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > Les étapes restantes font les hypothèses suivantes sur votre solution :

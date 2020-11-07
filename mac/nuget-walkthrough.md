@@ -3,15 +3,15 @@ title: Inclusion d’un package NuGet dans votre projet
 description: Ce document explique comment inclure un package NuGet dans un projet à l’aide de Visual Studio pour Mac. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 09/04/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127240"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349320"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installer et gérer des packages NuGet dans Visual Studio pour Mac
 
@@ -23,7 +23,7 @@ Pour une introduction à l’utilisation de NuGet dans Visual Studio pour Mac, c
 
 ## <a name="find-and-install-a-package"></a>Rechercher et installer un package
 
-1. Avec un projet ouvert dans Visual Studio pour Mac, cliquez avec le bouton droit sur le dossier **dépendances** (dossier**packages** si vous utilisez un projet Xamarin) dans le **panneau solutions** puis sélectionnez **gérer les packages NuGet...**.
+1. Avec un projet ouvert dans Visual Studio pour Mac, cliquez avec le bouton droit sur le dossier **dépendances** (dossier **packages** si vous utilisez un projet Xamarin) dans le **panneau solutions** puis sélectionnez **gérer les packages NuGet...**.
 
     ![Action contextuelle Ajouter un nouveau package NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -59,17 +59,30 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Mise à jour des packages
 
-Les mises à jour de package peuvent être effectuées en une seule fois, en cliquant avec le bouton droit sur le nœud **dépendances** (nœud**packages** pour les projets Xamarin) ou individuellement sur chaque package. Quand une nouvelle version d’un package NuGet est disponible, une icône de mise à jour s’affiche ![ avec un cercle ](media/nuget-walkthrough-update-icon.png) .
+Les mises à jour de package peuvent être effectuées en une seule fois, en cliquant avec le bouton droit sur le nœud **dépendances** (nœud **packages** pour les projets Xamarin) ou individuellement sur chaque package. Quand une nouvelle version d’un package NuGet est disponible, une icône de mise à jour s’affiche ![ avec un cercle ](media/nuget-walkthrough-update-icon.png) .
 
 Cliquez avec le bouton droit sur **dépendances** pour accéder au menu contextuel, puis choisissez **mettre** à jour pour mettre à jour tous les packages :
 
-![Menu Packages](media/nuget-walkthrough-packages-menu-update.png)
+![Menu contextuel des dépendances avec le menu mettre à jour mis en surbrillance](media/nuget-walkthrough-packages-menu-update.png)
 
 * **Gérer les packages NuGet** : ouvre la fenêtre pour ajouter d’autres packages au projet.
-* **Mettre à jour** : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
-* **Restaurer** : télécharge les packages manquants (sans mettre à jour les packages existants vers leur version la plus récente).
+* **Mettre à jour**  : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
+* **Restaurer**  : télécharge les packages manquants (sans mettre à jour les packages existants vers leur version la plus récente).
 
 Les options Mettre à jour et Restaurer sont également disponibles au niveau de la solution, et elles affectent tous les projets de la solution.
+
+### <a name="updating-to-pre-release-versions-of-packages"></a>Mise à jour vers les versions préliminaires des packages
+Pour effectuer une mise à jour vers une version préliminaire plus récente d’un package, vous pouvez cliquer avec le bouton droit sur **dépendances** pour ouvrir le menu contextuel et choisir le menu **gérer les packages NuGet...** .
+
+![Menu contextuel des dépendances avec gérer les packages NuGet... menu en surbrillance](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+Cochez la case **afficher les packages** de préversion en bas de la boîte de dialogue.
+
+![Boîte de dialogue gérer les packages NuGet ouverte avec l’option « Afficher les packages en version préliminaire » activée](media/nuget-walkthrough-show-pre-release-packages.png)
+
+Enfin, dans l’onglet **mises à jour** de la boîte de dialogue, sélectionnez le package que vous souhaitez mettre à jour, puis choisissez la nouvelle version préliminaire dans la liste déroulante **nouvelle version** , puis cliquez sur **mettre à jour le package**.
+
+![Boîte de dialogue gérer les packages NuGet ouverte à l’onglet installé, avec un package sélectionné et la liste déroulante nouvelle version ouverte.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Recherche de packages obsolètes
 Dans le panneau solutions, vous pouvez afficher la version d’un package actuellement installée et cliquer avec le bouton droit sur le package à mettre à jour.
@@ -82,14 +95,14 @@ Vous verrez également une notification en regard du nom du package lorsqu’une
 
 Dans le menu qui s’affiche, vous avez deux options :
 
-* **Mettre à jour** : recherche une version plus récente sur le serveur source et si elle existe, la télécharge.
-* **Supprimer** : supprime le package de ce projet et supprime les assemblys concernés des références du projet.
+* **Mettre à jour**  : recherche une version plus récente sur le serveur source et si elle existe, la télécharge.
+* **Supprimer**  : supprime le package de ce projet et supprime les assemblys concernés des références du projet.
 
 ## <a name="manage-packages-for-the-solution"></a>Gérer des packages pour la solution
 
 La gestion des packages pour une solution est un moyen pratique de travailler simultanément sur plusieurs projets.
 
-1. Cliquez avec le bouton droit sur la solution et sélectionnez **gérer les packages NuGet...**:
+1. Cliquez avec le bouton droit sur la solution et sélectionnez **gérer les packages NuGet...** :
 
     ![Gérer les packages NuGet pour la solution](media/nuget-walkthrough-manage-packages-solution.png)
 
@@ -121,11 +134,11 @@ Dans Visual Studio pour Mac, accédez à **Visual Studio > préférences > les s
 
 Cliquez sur **Ajouter** pour configurer une nouvelle source. Entrez un nom convivial et l’URL (ou le chemin du fichier) vers la source du package. Si la source est un serveur web sécurisé, entrez le nom d’utilisateur et le mot de passe, sinon laissez ces entrées vides :
 
-![Ajouter des sources de packages](media/nuget-walkthrough-PackageSource2.png)
+![Boîte de dialogue Ajouter une source de package avec une invite pour le nom, l’URL d’emplacement, le nom d’utilisateur et le mot de passe.](media/nuget-walkthrough-PackageSource2.png)
 
 Vous pouvez sélectionner différentes sources lors de la recherche de packages :
 
-![Ajouter des sources de packages](media/nuget-walkthrough-PackageSource3.png)
+![Boîte de dialogue Ajouter une source de package présentant une liste déroulante contenant une liste de sources de package.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Gestion de version
 

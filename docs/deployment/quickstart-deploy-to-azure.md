@@ -1,5 +1,7 @@
 ---
 title: Publier sur Azure App Service
+description: Découvrez les méthodes permettant de publier des applications ASP.NET, ASP.NET Core, Node.js et .NET Core sur Azure App Service ou Azure App Service Linux.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 5881e1dfb1842e2a6d85efe73534f8db2e2f734e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830752"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349579"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publier une application web sur Azure App Service avec Visual Studio
 
@@ -49,7 +51,7 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
     ![Lien pour créer une nouvelle instance de Azure App Service](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. Dans la boîte de dialogue **créer un Azure App service (Windows)** , le nom de l' **application**, le **groupe de ressources**et les champs d’entrée du plan de **app service** sont remplis. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
+1. Dans la boîte de dialogue **créer un Azure App service (Windows)** , le nom de l' **application** , le **groupe de ressources** et les champs d’entrée du plan de **app service** sont remplis. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
 
     ![Choisir Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
@@ -64,9 +66,9 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 
 Au cours des étapes précédentes, vous avez créé des ressources Azure au sein d’un groupe de ressources. Si vous ne pensez pas avoir besoin de ces ressources à l’avenir, vous pouvez les supprimer en supprimant le groupe de ressources.
-Dans le menu de gauche du portail Azure, cliquez sur **Groupes de ressources**, puis sur **myResourceGroup**.
+Dans le menu de gauche du portail Azure, cliquez sur **Groupes de ressources** , puis sur **myResourceGroup**.
 Sur la page du groupe de ressources, assurez-vous que les ressources répertoriées sont bien celles que vous souhaitez supprimer.
-Sélectionnez **Supprimer**, tapez **myResourceGroup** dans la zone de texte, puis sélectionnez **Supprimer**.
+Sélectionnez **Supprimer** , tapez **myResourceGroup** dans la zone de texte, puis sélectionnez **Supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

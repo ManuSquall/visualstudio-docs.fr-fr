@@ -1,6 +1,8 @@
 ---
 title: Code Analysis Policy Errors
 ms.date: 11/04/2016
+description: En savoir plus sur les erreurs de stratégie d’analyse du code dans Visual Studio. Affichez les descriptions des erreurs qui se produisent si la stratégie n’est pas satisfaite lorsque le code est archivé.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587743"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349098"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 

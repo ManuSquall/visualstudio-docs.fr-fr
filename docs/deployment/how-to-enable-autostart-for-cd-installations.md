@@ -1,5 +1,7 @@
 ---
 title: Activer le démarrage automatique pour les installations de CD | Microsoft Docs
+description: Découvrez comment activer le démarrage automatique lors du déploiement d’une application ClickOnce au moyen d’un support amovible tel qu’un CD-ROM ou un DVD-ROM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28fa4830c3ea5ff840e0d58f6d31f718c28ec3fb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f6ed3df72b98454c4669e7d9bcd21c0612a6fef3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850941"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349956"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Guide pratique pour activer le démarrage automatique pour les installations de CD
 Lors du déploiement d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application au moyen d’un support amovible tel qu’un CD-ROM ou un DVD-ROM, vous pouvez activer `AutoStart` afin que l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application soit lancée automatiquement lorsque le média est inséré.
@@ -30,7 +32,7 @@ Lors du déploiement d’une [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
 ### <a name="to-enable-autostart"></a>Pour activer le démarrage automatique
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

@@ -1,6 +1,8 @@
 ---
 title: Créer un ensemble de règles d’analyse du code personnalisé
 ms.date: 11/02/2018
+description: Découvrez comment personnaliser les ensembles de règles d’analyse du code dans Visual Studio. Découvrez comment créer de nouveaux jeux à partir de zéro ou de jeux existants. Comprendre la priorité des règles.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860500"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348812"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -26,7 +28,7 @@ Vous pouvez créer un ensemble de règles personnalisé pour répondre à des be
 
 Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée &mdash; , par exemple, afficher un avertissement ou une erreur.
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
 2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
@@ -57,7 +59,7 @@ Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble
 
 Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la boîte de dialogue **nouveau fichier** :
 
-1. Sélectionnez **fichier**  >  **nouveau**  >  **fichier**ou appuyez sur **CTRL** + **N**.
+1. Sélectionnez **fichier**  >  **nouveau**  >  **fichier** ou appuyez sur **CTRL** + **N**.
 
 2. Dans la boîte de dialogue **nouveau fichier** , sélectionnez la catégorie **général** sur la gauche, puis sélectionnez **ensemble de règles d’analyse du code**.
 
@@ -70,7 +72,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 > [!NOTE]
 > La procédure suivante ne s’applique pas aux projets .NET Core, qui n’ont pas d’onglet de propriété **analyse du code** .
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
 2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
@@ -90,7 +92,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
    ![Boîte de dialogue Ajouter ou supprimer des ensembles de règles](media/add-remove-rule-sets.png)
 
-5. Sélectionnez **Enregistrer sous**, entrez un nom pour le fichier *. RuleSet* , puis sélectionnez **Enregistrer**.
+5. Sélectionnez **Enregistrer sous** , entrez un nom pour le fichier *. RuleSet* , puis sélectionnez **Enregistrer**.
 
    Le nouvel ensemble de règles est sélectionné dans la liste **exécuter cet ensemble de règles** .
 
@@ -98,7 +100,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 ## <a name="rule-precedence"></a>Précédence des règles
 
-- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Exemple :
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Par exemple :
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -109,11 +111,11 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
    </RuleSet>
    ```
 
-- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec la *même* gravité, l’avertissement suivant peut s’afficher dans la **liste d’erreurs**:
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec la *même* gravité, l’avertissement suivant peut s’afficher dans la **liste d’erreurs** :
 
    **CA0063 : échec du chargement du fichier d’ensemble \[ de règles’Your]. RuleSet’ou de l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles.**
 
-- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Exemple :
+- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Par exemple :
 
    ```xml
    <!-- Parent rule set -->
@@ -136,7 +138,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 ## <a name="name-and-description"></a>Nom et description
 
-Pour modifier le nom complet d’un ensemble de règles qui est ouvert dans l’éditeur, ouvrez la fenêtre **Propriétés** en sélectionnant **Afficher**la  >  **fenêtre Propriétés** dans la barre de menus. Entrez le nom d’affichage dans la zone **nom** . Vous pouvez également entrer une description pour l’ensemble de règles.
+Pour modifier le nom complet d’un ensemble de règles qui est ouvert dans l’éditeur, ouvrez la fenêtre **Propriétés** en sélectionnant **Afficher** la  >  **fenêtre Propriétés** dans la barre de menus. Entrez le nom d’affichage dans la zone **nom** . Vous pouvez également entrer une description pour l’ensemble de règles.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

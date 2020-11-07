@@ -1,6 +1,8 @@
 ---
 title: Ensemble de règles de règles de vérification de base pour le code managé
 ms.date: 11/04/2016
+description: En savoir plus sur l’ensemble de règles de règles de vérification de base dans Visual Studio, qui se concentre sur les erreurs de logique et les erreurs d’API d’infrastructure courantes. Consultez Description de la règle.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: eef90c024c03c0a8346fda6b90225dd0ebf3ee51
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 532cab657403cf8761d2b53304131b70a951a7ff
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659138"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348487"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification de base pour le code managé
 

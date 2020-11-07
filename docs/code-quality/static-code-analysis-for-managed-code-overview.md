@@ -1,6 +1,8 @@
 ---
 title: Analyse héritée pour le code managé
 ms.date: 06/12/2019
+description: En savoir plus sur les analyses héritées dans Visual Studio. Découvrez comment supprimer des avertissements et comment exécuter des analyses manuellement, automatiquement et Pendant les archivages et les builds.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927989"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348656"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Vue d’ensemble de l’analyse héritée du code managé dans Visual Studio
 
@@ -26,7 +28,7 @@ L’analyse du code managé analyse les assemblys managés et fournit des inform
 L'outil d'analyse représente les contrôles effectués lors d'une analyse comme messages d'avertissement. Les messages d'avertissement identifient les problèmes de programmation et de conception pertinents et, si possible, fournissent des informations relatives à leur résolution.
 
 > [!NOTE]
-> L’analyse héritée (analyse statique du code) n’est pas prise en charge pour les projets .NET Core et .NET Standard dans Visual Studio. Si vous exécutez l’analyse du code sur un projet .NET Core ou .NET Standard dans le cadre de MSBuild, vous verrez une erreur semblable à **Error : CA0055 : impossible d' \<your.dll> identifier la plateforme pour **. Pour analyser du code dans des projets .NET Core ou .NET Standard, utilisez à la place des [analyseurs de code](../code-quality/roslyn-analyzers-overview.md) .
+> L’analyse héritée (analyse statique du code) n’est pas prise en charge pour les projets .NET Core et .NET Standard dans Visual Studio. Si vous exécutez l’analyse du code sur un projet .NET Core ou .NET Standard dans le cadre de MSBuild, vous verrez une erreur semblable à **Error : CA0055 : impossible d' \<your.dll> identifier la plateforme pour**. Pour analyser du code dans des projets .NET Core ou .NET Standard, utilisez à la place des [analyseurs de code](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Intégration de l’IDE (environnement de développement intégré)
 
@@ -34,7 +36,7 @@ Vous pouvez exécuter l’analyse du code sur votre projet manuellement ou autom
 
 Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez l’option sur la page de propriétés **analyse du code** du projet. Pour plus d’informations, consultez [Comment : activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser**exécuter l’analyse du code  >  **Run Code Analysis**  >  **exécuter l’analyse du code sur \<project> **.
+Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser** exécuter l’analyse du code  >  **Run Code Analysis**  >  **exécuter l’analyse du code sur \<project>**.
 
 ## <a name="rule-sets"></a>Ensembles de règles
 
@@ -68,7 +70,7 @@ Pour plus d’informations, consultez [supprimer des avertissements](../code-qua
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser**la  >  **Build et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser** la  >  **Build et supprimer les problèmes actifs**.
 
 ::: moniker-end
 

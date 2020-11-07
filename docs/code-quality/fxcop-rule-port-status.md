@@ -1,6 +1,8 @@
 ---
 title: État du port de la règle FxCop
 ms.date: 05/21/2019
+description: En savoir plus sur les règles d’analyse statique du code qui ont été portées vers les analyseurs FxCop dans Visual Studio. Affichez les ressources et les règles portées sur les mises à jour de Portage.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658579"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348943"
 ---
 # <a name="fxcop-rule-port-status"></a>État du port de la règle FXCop
 
@@ -27,7 +29,7 @@ La [page de documentation générée automatiquement](https://github.com/dotnet/
 
 À partir de la date de cette page, la liste des règles FxCop qui ont été portées aux [analyseurs FxCop](install-fxcop-analyzers.md) comprend les éléments suivants :
 
-Identificateur de la règle | Intitulé
+Identificateur de la règle | Titre
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | Ne pas déclarer de membres statiques sur les types génériques
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | Les types qui possèdent des champs supprimables doivent être supprimables

@@ -1,6 +1,8 @@
 ---
 title: Configurer l’étendue de l’analyse du code en temps réel pour .NET
 ms.date: 09/01/2020
+description: En savoir plus sur l’analyse en arrière-plan dans Visual Studio. Consultez Comment limiter l’analyse au document visible, à tous les documents ouverts ou à tous les fichiers et projets.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -12,18 +14,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9690e50ccbe927702ef1b3e7e99545c07cdced41
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035415"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348461"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Configurer l’analyse du code en temps réel pour .NET
 
-Visual Studio exécute une série d’analyses de code en direct, également appelées *analyse d’arrière-plan*, pendant que vous modifiez des fichiers sources dans l’éditeur. Une analyse minimale est nécessaire pour une expérience de modification de l’IDE de Visual Studio acceptable. Certaines d’entre elles sont destinées à améliorer la réactivité des fonctionnalités de l’IDE. Bien qu’il s’agit d’activer des fonctionnalités IDE supplémentaires, telles que les diagnostics et les correctifs de code des analyseurs Roslyn. Selon les fonctionnalités, ces analyses peuvent être regroupées comme suit :
+Visual Studio exécute une série d’analyses de code en direct, également appelées *analyse d’arrière-plan* , pendant que vous modifiez des fichiers sources dans l’éditeur. Une analyse minimale est nécessaire pour une expérience de modification de l’IDE de Visual Studio acceptable. Certaines d’entre elles sont destinées à améliorer la réactivité des fonctionnalités de l’IDE. Bien qu’il s’agit d’activer des fonctionnalités IDE supplémentaires, telles que les diagnostics et les correctifs de code des analyseurs Roslyn. Selon les fonctionnalités, ces analyses peuvent être regroupées comme suit :
 
-- **Calcul en arrière-plan des diagnostics**: analyse pour calculer les erreurs, les avertissements et les suggestions dans les fichiers sources. Ces diagnostics s’affichent sous la forme d’entrées dans la liste d’erreurs et de tildes dans l’éditeur. Elles peuvent être classées en deux catégories :
+- **Calcul en arrière-plan des diagnostics** : analyse pour calculer les erreurs, les avertissements et les suggestions dans les fichiers sources. Ces diagnostics s’affichent sous la forme d’entrées dans la liste d’erreurs et de tildes dans l’éditeur. Elles peuvent être classées en deux catégories :
   - Diagnostics du compilateur C# et Visual Basic
   - Diagnostics de l’analyseur Roslyn, notamment :
 
@@ -31,7 +33,7 @@ Visual Studio exécute une série d’analyses de code en direct, également app
     - Analyseurs de l’autorité de certification intégrés pour les suggestions de qualité du code
     - Packages de l’analyseur tiers [installés](./install-roslyn-analyzers.md) pour les projets de la solution actuelle.
 
-- **Autres analyses en arrière-plan**: analyse pour améliorer la réactivité et l’interaction de Visual Studio pour les fonctionnalités IDE. Voici quelques exemples de ces analyses :
+- **Autres analyses en arrière-plan** : analyse pour améliorer la réactivité et l’interaction de Visual Studio pour les fonctionnalités IDE. Voici quelques exemples de ces analyses :
   - Analyse en arrière-plan des fichiers ouverts.
   - Compilation en arrière-plan de projets avec des fichiers ouverts pour réaliser des symboles afin d’améliorer la réactivité de certaines fonctionnalités de l’IDE.
   - Génération de la syntaxe et des caches de symboles.
@@ -51,9 +53,9 @@ L’étendue par défaut de chaque analyse en arrière-plan a été optimisée p
 
 À compter de Visual Studio 2019 version 16,5, les utilisateurs peuvent personnaliser explicitement l’étendue de l’ensemble de l’analyse du code en direct, y compris le calcul des diagnostics, pour les projets C# et Visual Basic. Les étendues d’analyse disponibles sont les suivantes :
 
-- **Document actif**: réduit l’étendue de l’analyse du code en temps réel pour qu’elle s’exécute uniquement pour le fichier actif ou visible dans l’éditeur.
-- **Documents ouverts**: étendue de l’analyse du code en direct par défaut, comme décrit dans la section ci-dessus.
-- **Solution complète**: optimise l’étendue de l’analyse du code en temps réel pour l’exécution de tous les fichiers et projets de l’ensemble de la solution.
+- **Document actif** : réduit l’étendue de l’analyse du code en temps réel pour qu’elle s’exécute uniquement pour le fichier actif ou visible dans l’éditeur.
+- **Documents ouverts** : étendue de l’analyse du code en direct par défaut, comme décrit dans la section ci-dessus.
+- **Solution complète** : optimise l’étendue de l’analyse du code en temps réel pour l’exécution de tous les fichiers et projets de l’ensemble de la solution.
 
 Vous pouvez choisir l’une des étendues d’analyse personnalisées ci-dessus dans la boîte de dialogue Options des outils en suivant les étapes ci-dessous :
 
@@ -66,7 +68,7 @@ Vous pouvez choisir l’une des étendues d’analyse personnalisées ci-dessus 
 ![Étendue de l’analyse.](./media/background-analysis-scope.png)
 
 > [!NOTE]
-> Avant Visual Studio 2019 version 16,5, les utilisateurs peuvent personnaliser l’étendue de l’analyse pour le calcul des diagnostics sur la totalité de la solution à l’aide de la case à cocher **activer l’analyse complète** de la solution dans **Outils**  >  **options**  >  **éditeur de texte**  >  **C#** ou **Basic**  >  onglet**avancé** de base. Il n’existe aucune prise en charge pour réduire l’étendue de l’analyse en arrière-plan dans les versions antérieures de Visual Studio.
+> Avant Visual Studio 2019 version 16,5, les utilisateurs peuvent personnaliser l’étendue de l’analyse pour le calcul des diagnostics sur la totalité de la solution à l’aide de la case à cocher **activer l’analyse complète** de la solution dans **Outils**  >  **options**  >  **éditeur de texte**  >  **C#** ou **Basic**  >  onglet **avancé** de base. Il n’existe aucune prise en charge pour réduire l’étendue de l’analyse en arrière-plan dans les versions antérieures de Visual Studio.
 
 ## <a name="automatically-minimize-live-code-analysis-scope"></a>Réduire automatiquement l’étendue de l’analyse du code en direct
 

@@ -1,5 +1,7 @@
 ---
 title: Propriétés des documents XML, fenêtre Propriétés
+description: En savoir plus sur les propriétés de document XML dans le Fenêtre Propriétés qui fournissent des informations de base sur le document actif dans l’éditeur XML.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592423"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350229"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriétés de document XML, Fenêtre Propriétés
 
@@ -28,7 +30,7 @@ Encodage de caractères utilisé pour le fichier. La modification de cette propr
 
 **Entrée**
 
-Document d'entrée associé à la feuille de style XSLT. Elle est utilisée par les commandes de **démarrage XSLT** , par exemple, **XML**  >  **Start XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation (**...**).
+Document d'entrée associé à la feuille de style XSLT. Elle est utilisée par les commandes de **démarrage XSLT** , par exemple, **XML**  >  **Start XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation ( **...** ).
 
 Cette propriété est visible uniquement lorsqu’un fichier XSLT est ouvert dans l’éditeur.
 

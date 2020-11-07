@@ -1,6 +1,8 @@
 ---
 title: Désactiver l’analyse du code
 ms.date: 09/01/2020
+description: Découvrez comment désactiver l’analyse du code source Visual Studio dans les projets .NET Core, .NET Standard et .NET Framework.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037144"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348552"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Désactiver l’analyse du code source pour .NET
 
@@ -67,7 +69,7 @@ Exemples :
 
 ## <a name="source-analysis"></a>Analyse du code source
 
-Vous ne pouvez pas désactiver l’analyse de la [source](roslyn-analyzers-overview.md) dans Visual Studio 2017. Si vous souhaitez effacer les erreurs de l’analyseur de la **liste d’erreurs**, vous pouvez supprimer toutes les violations en cours en sélectionnant **analyser**  >  **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus. Pour plus d’informations, consultez [Supprimer les violations](use-roslyn-analyzers.md#suppress-violations).
+Vous ne pouvez pas désactiver l’analyse de la [source](roslyn-analyzers-overview.md) dans Visual Studio 2017. Si vous souhaitez effacer les erreurs de l’analyseur de la **liste d’erreurs** , vous pouvez supprimer toutes les violations en cours en sélectionnant **analyser**  >  **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus. Pour plus d’informations, consultez [Supprimer les violations](use-roslyn-analyzers.md#suppress-violations).
 
 À compter de Visual Studio 2019 version 16,3, vous pouvez désactiver l’analyse du code source ou l’exécuter à la demande. Envisagez une mise à niveau vers Visual Studio 2019.
 

@@ -1,6 +1,8 @@
 ---
 title: Erreurs d’application d’analyse du code
 ms.date: 11/04/2016
+description: En savoir plus sur les messages d’erreur générés par l’outil d’analyse du code managé dans Visual Studio. Affichez les codes d’erreur et les descriptions correspondantes.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85521314"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348500"
 ---
 # <a name="code-analysis-application-errors"></a>Erreurs de l’application d’analyse du code
 
 Cette section est une référence des messages d’erreur générés par l’outil d’analyse du code managé.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 |Code|Description|
 |-|-|
@@ -39,12 +41,12 @@ Cette section est une référence des messages d’erreur générés par l’out
 |[CA0058](ca0058.md)|Impossible de charger les assemblys référencés.|
 |[CA0059](ca0059.md)|Erreur de commutateur de ligne de commande.|
 |[CA0060](ca0060.md)|Impossible de charger les assemblys référencés indirectement.|
-|[CA0061](ca0061.md)|La règle «*RuleId*» est introuvable.|
-|[CA0062](ca0062.md)|La règle «*RuleId*» référencée dans l’ensemble de règles «*RuleSetName*» est introuvable.|
+|[CA0061](ca0061.md)|La règle « *RuleId* » est introuvable.|
+|[CA0062](ca0062.md)|La règle « *RuleId* » référencée dans l’ensemble de règles « *RuleSetName* » est introuvable.|
 |[CA0063](ca0063.md)|Échec du chargement du fichier d’ensemble de règles ou de l’un de ses fichiers d’ensemble de règles dépendants.|
 |[CA0064](ca0064.md)|Aucune analyse n’a été effectuée, car l’ensemble de règles spécifié ne contenait aucune règle FxCop.|
-|[CA0065](ca0065.md)|Construction de métadonnées non prise en charge : le type'*TypeName*'contient à la fois une propriété et un champ portant le même nom'*PropertyFieldName*'|
-|[CA0066](ca0066.md)|La valeur «*VersionId*» fournie à **/TargetFrameworkVersion n'** n’est pas une version reconnue.|
+|[CA0065](ca0065.md)|Construction de métadonnées non prise en charge : le type' *TypeName* 'contient à la fois une propriété et un champ portant le même nom' *PropertyFieldName* '|
+|[CA0066](ca0066.md)|La valeur « *VersionId* » fournie à **/TargetFrameworkVersion n'** n’est pas une version reconnue.|
 |[CA0067](ca0067.md)|Répertoire introuvable.|
 |[CA0068](ca0068.md)|Les informations de débogage sont introuvables pour l’assembly cible *'AssemblyName'*.|
 |[CA0069](ca0069.md)|Utilisation d’une autre plateforme. *FrameworkVersion1* est introuvable. Utilisation de *FrameworkVersion2* à la place. Pour obtenir les meilleurs résultats d’analyse, assurez-vous que la version correcte de l’infrastructure est installée.|

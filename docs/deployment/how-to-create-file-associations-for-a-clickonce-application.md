@@ -1,5 +1,6 @@
 ---
 title: Créer des associations de fichiers (application ClickOnce)
+description: Découvrez comment associer une application ClickOnce à une ou plusieurs extensions de nom de fichier, afin que l’application démarre lorsque l’utilisateur ouvre un fichier de ce type.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809779"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350034"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Guide pratique pour créer des associations de fichiers pour une application ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications peuvent être associées à une ou plusieurs extensions de nom de fichier, afin que l’application démarre automatiquement lorsque l’utilisateur ouvre un fichier de ces types. L’ajout de la prise en charge de l’extension de nom de fichier à une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est simple.

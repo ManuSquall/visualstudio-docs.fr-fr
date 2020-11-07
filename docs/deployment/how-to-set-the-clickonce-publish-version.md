@@ -1,5 +1,7 @@
 ---
 title: Définir la version de publication ClickOnce | Microsoft Docs
+description: Découvrez comment définir la propriété de version de publication ClickOnce, qui détermine si l’application est une mise à jour.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf99590bb78c425f570128ff7fae03c61d644b47
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 100c3cd12a3011d35445ac885333802e28b4a92f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851773"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349787"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Guide pratique pour définir la version de publication ClickOnce
 La [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` propriété détermine si l’application que vous publiez sera traitée comme une mise à jour. Chaque fois que la version est incrémentée, l’application est publiée en tant que mise à jour.
@@ -33,11 +35,11 @@ La [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Ve
 
 ### <a name="to-change-the-publish-version"></a>Pour modifier la version de publication
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 
-3. Dans le champ **version de publication** , incrémentez les numéros de version **majeure**, **mineure**, **Build**ou **révision** .
+3. Dans le champ **version de publication** , incrémentez les numéros de version **majeure** , **mineure** , **Build** ou **révision** .
 
     > [!NOTE]
     > Vous ne devez jamais décrémenter un numéro de version ; Cela peut entraîner un comportement imprévisible de la mise à jour.

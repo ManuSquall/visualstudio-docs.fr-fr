@@ -1,6 +1,8 @@
 ---
 title: Calculer la métrique du code
 ms.date: 11/02/2018
+description: En savoir plus sur la complexité cyclomatic, le couplage de classe et d’autres métriques Visual Studio code. Découvrez comment les métriques permettent de suivre la progression du développement et d’identifier les risques.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599459"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348643"
 ---
 # <a name="code-metrics-values"></a>Valeurs de la métrique du code
 
@@ -46,7 +48,7 @@ La liste suivante affiche les résultats de la métrique du code que Visual Stud
 
 - **Lignes de code source** -indique le nombre exact de lignes de code source présentes dans votre fichier source, y compris les lignes vides. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Lignes de code exécutable** -indique le nombre approximatif de lignes de code ou d’opérations exécutables. Il s’agit du nombre d’opérations dans le code exécutable. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. Metrics (2.9.5). La valeur est généralement une correspondance proche de la métrique précédente, **lignes de code**, qui est la métrique basée sur les instructions MSIL utilisée en mode hérité.
+- **Lignes de code exécutable** -indique le nombre approximatif de lignes de code ou d’opérations exécutables. Il s’agit du nombre d’opérations dans le code exécutable. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. Metrics (2.9.5). La valeur est généralement une correspondance proche de la métrique précédente, **lignes de code** , qui est la métrique basée sur les instructions MSIL utilisée en mode hérité.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

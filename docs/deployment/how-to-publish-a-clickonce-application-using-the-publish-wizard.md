@@ -1,5 +1,7 @@
 ---
 title: Publier une application ClickOnce à l’aide de l’Assistant Publication
+description: En savoir plus sur l’utilisation de l’Assistant Publication pour mettre votre application ClickOnce à la disposition des utilisateurs, y compris les propriétés de publication à utiliser.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 252d029e7e2e5b9b5dfe27b2fb1cd72e1c09b473
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382300"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349878"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication
 Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d'accès, un serveur FTP ou un média amovible. Vous pouvez publier cette application à l’aide de l’Assistant Publication. Vous trouverez des propriétés supplémentaires liées à la publication sur la page **Publier** du **Concepteur de projet**. Pour plus d’informations, consultez [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md).
@@ -30,30 +32,30 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
 Avant d'exécuter l'Assistant Publication, vous devez correctement définir les propriétés de publication. Par exemple, vous pouvez spécifier une clé pour signer votre application ClickOnce dans la page **Signature** du **Concepteur de projet**. Pour plus d’informations, consultez [sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
-> Lorsque vous installez plusieurs versions d’une application à l’aide de ClickOnce, l’installation déplace les versions antérieures de l’application dans un dossier nommé *Archive*, à l’emplacement de publication que vous spécifiez. Cet archivage permet d’éviter la présence de dossiers de la version précédente dans le répertoire d’installation.
+> Lorsque vous installez plusieurs versions d’une application à l’aide de ClickOnce, l’installation déplace les versions antérieures de l’application dans un dossier nommé *Archive* , à l’emplacement de publication que vous spécifiez. Cet archivage permet d’éviter la présence de dossiers de la version précédente dans le répertoire d’installation.
 
 > [!NOTE]
 > Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier ces paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-publish-to-a-file-share-or-path"></a>Pour publier vers un partage de fichiers ou un chemin d'accès
 
-1. Dans l’**Explorateur de solutions**, sélectionnez le projet d’application.
+1. Dans l’ **Explorateur de solutions** , sélectionnez le projet d’application.
 
 2. Dans le menu **générer** , cliquez sur **publier** *ProjectName*.
 
     L'Assistant Publication apparaît.
 
-3. Dans la page **Où voulez-vous publier l’application ?**, entrez une adresse de serveur FTP valide ou un chemin de fichier valide dans un des formats indiqués, puis cliquez sur **Suivant**.
+3. Dans la page **Où voulez-vous publier l’application ?** , entrez une adresse de serveur FTP valide ou un chemin de fichier valide dans un des formats indiqués, puis cliquez sur **Suivant**.
 
-4. Dans la page **Comment les utilisateurs installeront-ils l’application ?**, sélectionnez l’emplacement auquel les utilisateurs devront accéder pour installer l’application :
+4. Dans la page **Comment les utilisateurs installeront-ils l’application ?** , sélectionnez l’emplacement auquel les utilisateurs devront accéder pour installer l’application :
 
-   - Si les utilisateurs effectuent l’installation à partir d’un site web, cliquez sur **À partir d’un site web**, puis entrez une URL qui correspond au chemin de fichier entré à l’étape précédente. Cliquez sur **Suivant**. (Cette option est généralement utilisée quand vous spécifiez une adresse FTP comme emplacement de publication. Le téléchargement direct à partir de FTP n'est pas pris en charge. Vous devez donc entrer une URL ici.) 
+   - Si les utilisateurs effectuent l’installation à partir d’un site web, cliquez sur **À partir d’un site web** , puis entrez une URL qui correspond au chemin de fichier entré à l’étape précédente. Cliquez sur **Suivant**. (Cette option est généralement utilisée quand vous spécifiez une adresse FTP comme emplacement de publication. Le téléchargement direct à partir de FTP n'est pas pris en charge. Vous devez donc entrer une URL ici.) 
 
-   - Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers**, puis cliquez sur **Suivant**. (Cela est valable pour les emplacements de publication au format *c:\deploy\myapp* ou *\\\server\myapp*.)
+   - Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers** , puis cliquez sur **Suivant**. (Cela est valable pour les emplacements de publication au format *c:\deploy\myapp* ou *\\\server\myapp*.)
 
-   - Si les utilisateurs installent l’application à partir d’un média amovible, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.
+   - Si les utilisateurs installent l’application à partir d’un média amovible, cliquez sur **À partir d’un CD-ROM ou DVD-ROM** , puis cliquez sur **Suivant**.
 
-5. Dans la page **L’application sera-t-elle disponible hors connexion ?**, cliquez sur l’option appropriée :
+5. Dans la page **L’application sera-t-elle disponible hors connexion ?** , cliquez sur l’option appropriée :
 
    - Si vous voulez permettre à l’application de s’exécuter quand l’utilisateur est déconnecté du réseau, cliquez sur **Oui, cette application est disponible en ligne ou hors connexion**. Un raccourci est créé dans le menu **Démarrer** pour l’application.
 
@@ -67,24 +69,24 @@ Avant d'exécuter l'Assistant Publication, vous devez correctement définir les 
 
 ## <a name="to-publish-to-a-cd-rom-or-dvd-rom"></a>Pour publier sur un CD-ROM ou DVD-ROM
 
-1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet d’application, puis cliquez sur **Propriétés**.
+1. Dans l’ **Explorateur de solutions** , cliquez avec le bouton droit sur le projet d’application, puis cliquez sur **Propriétés**.
 
     Le **Concepteur de projets** s’affiche.
 
-2. Cliquez sur l’onglet **Publier** pour ouvrir la page **Publier** du **Concepteur de projet**, puis cliquez sur le bouton **Assistant Publication**.
+2. Cliquez sur l’onglet **Publier** pour ouvrir la page **Publier** du **Concepteur de projet** , puis cliquez sur le bouton **Assistant Publication**.
 
     L'Assistant Publication apparaît.
 
-3. Dans la page **Où voulez-vous publier l’application ?**, entrez le chemin ou l’emplacement FTP où l’application sera publiée, par exemple *d:\deploy*. Cliquez ensuite sur **Suivant** pour continuer.
+3. Dans la page **Où voulez-vous publier l’application ?** , entrez le chemin ou l’emplacement FTP où l’application sera publiée, par exemple *d:\deploy*. Cliquez ensuite sur **Suivant** pour continuer.
 
-4. Dans la page **Comment les utilisateurs installeront-ils l’application ?**, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.
+4. Dans la page **Comment les utilisateurs installeront-ils l’application ?** , cliquez sur **À partir d’un CD-ROM ou DVD-ROM** , puis cliquez sur **Suivant**.
 
    > [!NOTE]
-   > Si vous voulez que l’installation s’exécute automatiquement quand le CD-ROM est inséré dans le lecteur, ouvrez la page **Publier** dans le **Concepteur de projet**, puis cliquez sur le bouton **Options** puis, dans l’Assistant **Options de publication**, sélectionnez **Pour les installations depuis un CD-ROM, démarrer automatiquement l’installation dès l’insertion du CD-ROM**.
+   > Si vous voulez que l’installation s’exécute automatiquement quand le CD-ROM est inséré dans le lecteur, ouvrez la page **Publier** dans le **Concepteur de projet** , puis cliquez sur le bouton **Options** puis, dans l’Assistant **Options de publication** , sélectionnez **Pour les installations depuis un CD-ROM, démarrer automatiquement l’installation dès l’insertion du CD-ROM**.
 
-5. Si vous distribuez votre application sur CD-ROM, vous souhaitez peut-être fournir des mises à jour à partir d'un site web. Dans la page **Où l’application doit-elle vérifier la disponibilité de mises à jour ?**, choisissez une option de mise à jour :
+5. Si vous distribuez votre application sur CD-ROM, vous souhaitez peut-être fournir des mises à jour à partir d'un site web. Dans la page **Où l’application doit-elle vérifier la disponibilité de mises à jour ?** , choisissez une option de mise à jour :
 
-   - Si l’application doit vérifier les mises à jour, cliquez sur **L’application va vérifier la disponibilité de mises à jour à partir de l’emplacement suivant**, puis entrez l’emplacement où les mises à jour seront publiées. Il peut s'agir d'un emplacement de fichier, d'un site web ou d'un serveur FTP.
+   - Si l’application doit vérifier les mises à jour, cliquez sur **L’application va vérifier la disponibilité de mises à jour à partir de l’emplacement suivant** , puis entrez l’emplacement où les mises à jour seront publiées. Il peut s'agir d'un emplacement de fichier, d'un site web ou d'un serveur FTP.
 
    - Si l’application ne doit pas vérifier les mises à jour, cliquez sur **L’application ne vérifiera pas la disponibilité de mises à jour**.
 

@@ -1,6 +1,8 @@
 ---
 title: FxCopCmd (erreurs)
 ms.date: 10/19/2016
+description: En savoir plus sur les codes d’erreur renvoyés par la commande FxCopCmd. Déterminez le type d’erreur que représente chaque code et découvrez comment reconnaître les erreurs irrécupérables.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -10,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78167609"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348930"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Erreurs de l’outil FxCopCmd
 
@@ -23,7 +25,7 @@ FxCopCmd ne considère pas que toutes les erreurs sont irrécupérables. Si FxCo
 
 Le tableau suivant décrit les codes d’erreur retournés par FxCopCmd :
 
-|Error|Valeur numérique|
+|Erreur|Valeur numérique|
 |-----------|-------------------|
 |Aucune erreur|0x0|
 |Erreur d’analyse|0x1|

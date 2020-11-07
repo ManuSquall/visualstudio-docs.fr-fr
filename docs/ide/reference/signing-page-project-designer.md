@@ -1,5 +1,7 @@
 ---
 title: Page Signature, Concepteur de projets
+description: Utilisez la page signature du concepteur de projet pour signer les manifestes d’application et de déploiement, ainsi que pour signer l’assembly.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418858"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348513"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
 
@@ -35,7 +37,7 @@ Notez que la signature des manifestes d’application et de déploiement est un 
 
 De plus, le stockage des informations de fichier de clé n’est pas le même pour la signature de manifestes et pour la signature d’assemblys. Pour la signature de manifestes, les informations de clé sont stockées dans la base de données de stockage de chiffrement de votre ordinateur, ainsi que dans le magasin de certificats Windows de l’utilisateur actuel. Pour la signature d’assemblys, les informations de clé sont stockées uniquement dans la base de données de stockage de chiffrement de votre ordinateur.
 
-Pour accéder à la boîte de dialogue **Signature**, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projet** apparaît, cliquez sur l’onglet **Signature**.
+Pour accéder à la boîte de dialogue **Signature** , sélectionnez un nœud de projet dans l’ **Explorateur de solutions** , puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projet** apparaît, cliquez sur l’onglet **Signature**.
 
 ## <a name="application-and-deployment-manifest-signing"></a>Signature de manifestes d’application et de déploiement
 
@@ -47,23 +49,23 @@ Bouton **Sélectionner dans Store**
 
 Permet de sélectionner un certificat existant à partir du magasin de certificats personnel de l’utilisateur actuel. Vous pouvez sélectionner l’un de ces certificats pour signer vos manifestes d’application et de déploiement.
 
-Quand vous cliquez sur **Sélectionner dans Store**, la boîte de dialogue **Sélectionner un certificat** s’ouvre. Celle-ci répertorie les certificats de votre magasin de certificats personnel qui sont valides (non expirés) et qui ont une clé privée. L’objectif du certificat que vous sélectionnez doit inclure la signature de code.
+Quand vous cliquez sur **Sélectionner dans Store** , la boîte de dialogue **Sélectionner un certificat** s’ouvre. Celle-ci répertorie les certificats de votre magasin de certificats personnel qui sont valides (non expirés) et qui ont une clé privée. L’objectif du certificat que vous sélectionnez doit inclure la signature de code.
 
-Si vous cliquez sur **Afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **En savoir plus sur les certificats** pour afficher des informations d’aide supplémentaires.
+Si vous cliquez sur **Afficher les propriétés du certificat** , la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **En savoir plus sur les certificats** pour afficher des informations d’aide supplémentaires.
 
 Bouton **À partir d’un fichier**
 
 Permet de sélectionner un certificat à partir d’un fichier de clé existant.
 
-Si vous cliquez sur **À partir d’un fichier**, la boîte de dialogue **Sélectionner le fichier** s’ouvre et vous permet de sélectionner un fichier de clé de certificat (.pfx). Le fichier doit être protégé par mot de passe et ne peut pas déjà se trouver dans votre magasin de certificats personnel.
+Si vous cliquez sur **À partir d’un fichier** , la boîte de dialogue **Sélectionner le fichier** s’ouvre et vous permet de sélectionner un fichier de clé de certificat (.pfx). Le fichier doit être protégé par mot de passe et ne peut pas déjà se trouver dans votre magasin de certificats personnel.
 
-Dans la boîte de dialogue **Entrez le mot de passe pour ouvrir le fichier**, entrez un mot de passe pour ouvrir le fichier de clé de certificat (.pfx). Les informations de mot de passe sont stockées dans votre liste personnelle de conteneurs de clés et dans votre magasin de certificats personnel.
+Dans la boîte de dialogue **Entrez le mot de passe pour ouvrir le fichier** , entrez un mot de passe pour ouvrir le fichier de clé de certificat (.pfx). Les informations de mot de passe sont stockées dans votre liste personnelle de conteneurs de clés et dans votre magasin de certificats personnel.
 
 Bouton **Créer un certificat de test**
 
 Permet de créer un certificat à des fins de test. Le certificat de test est utilisé pour signer vos manifestes d’application et de déploiement ClickOnce.
 
-Si vous cliquez sur **Créer un certificat de test**, la boîte de dialogue **Créer un certificat de test** s’ouvre. Vous pouvez y taper le mot de passe du fichier de clé de nom fort pour le certificat de test. Le fichier se nomme *nom_projet*_TemporaryKey.pfx. Si vous cliquez sur **OK** sans taper de mot de passe, le fichier .pfx ne sera pas chiffré par mot de passe.
+Si vous cliquez sur **Créer un certificat de test** , la boîte de dialogue **Créer un certificat de test** s’ouvre. Vous pouvez y taper le mot de passe du fichier de clé de nom fort pour le certificat de test. Le fichier se nomme *nom_projet* _TemporaryKey.pfx. Si vous cliquez sur **OK** sans taper de mot de passe, le fichier .pfx ne sera pas chiffré par mot de passe.
 
 Boîte de dialogue **URL du serveur d’horodatage**
 
@@ -73,7 +75,7 @@ Spécifie l’adresse d’un serveur qui horodate votre signature. Quand vous fo
 
 Case à cocher **Signer l’assembly**.
 
-Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Comment : signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet** , consultez [Comment : signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
 Cette option utilise l’outil Al.exe fourni par le kit SDK Windows pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
@@ -87,7 +89,7 @@ Bouton **Modifier le mot de passe**
 
 Modifie le mot de passe du fichier de clé d’échange d’informations personnelles (.pfx) qui est utilisé pour signer l’assembly.
 
-Quand vous cliquez sur **Modifier le mot de passe**, la boîte de dialogue **Modifier le mot de passe de la clé** s’ouvre. Dans cette boîte de dialogue, l’**ancien mot de passe** correspond au mot de passe actuel du fichier de clé. Le **nouveau mot de passe** doit comporter au moins 6 caractères. Les informations de mot de passe sont stockées dans le magasin de certificats Windows de l’utilisateur actuel.
+Quand vous cliquez sur **Modifier le mot de passe** , la boîte de dialogue **Modifier le mot de passe de la clé** s’ouvre. Dans cette boîte de dialogue, l’ **ancien mot de passe** correspond au mot de passe actuel du fichier de clé. Le **nouveau mot de passe** doit comporter au moins 6 caractères. Les informations de mot de passe sont stockées dans le magasin de certificats Windows de l’utilisateur actuel.
 
 Case à cocher **Différer la signature uniquement**
 
@@ -105,4 +107,4 @@ Notez qu’un projet à signature différée ne s’exécute pas et ne peut pas 
 - [Comment : signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Guide pratique pour signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
-- [Assemblys avec noms forts](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)
