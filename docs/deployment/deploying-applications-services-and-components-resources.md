@@ -1,8 +1,10 @@
 ---
 title: Déployer votre application Visual Studio dans un dossier, IIS, Azure ou une autre destination
 titleSuffix: ''
-description: En savoir plus sur les options de publication pour votre application à l’aide de l’Assistant Publication
-ms.custom: contperfq1
+description: En savoir plus sur les options de publication pour votre application à l’aide de l’outil de publication.
+ms.custom:
+- SEO-VS-2020
+- contperfq1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928526"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382970"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Déployer votre application dans un dossier, IIS, Azure ou une autre destination
 
@@ -169,7 +171,7 @@ Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez le
 
 Un serveur FTP/FTPS vous permet de déployer votre application sur un serveur autre que Azure. Elle peut effectuer le déploiement sur un système de fichiers ou tout autre serveur (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services cloud. Elle peut fonctionner avec Web Deploy (fichiers ou. ZIP) et FTP.
 
-Lors du choix d’un serveur FTP/FTPS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
+Lors du choix d’un serveur FTP/FTPS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres**  :
 
 - La configuration que vous souhaitez déployer.
 - Si vous souhaitez supprimer des fichiers existants à partir de la destination.
@@ -188,7 +190,7 @@ Vous pouvez créer un nombre quelconque de profils de déploiement FTP/FTPS dans
 
 Un serveur Web IIS vous permet de déployer votre application sur un serveur Web autre qu’Azure. Il peut être déployé sur un serveur IIS (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services Cloud. Il peut fonctionner avec Web Deploy ou un package Web Deploy.
 
-Lors du choix d’un serveur Web IIS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres** :
+Lors du choix d’un serveur Web IIS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres**  :
 
 - La configuration que vous souhaitez déployer.
 - Si vous souhaitez supprimer des fichiers existants à partir de la destination.
@@ -209,7 +211,7 @@ Pour obtenir de l’aide sur la résolution des ASP.NET Core sur IIS, consultez 
 
 ## <a name="import-profile"></a>Profil d’importation
 
-Vous pouvez importer un profil lors de la publication sur IIS ou Azure App Service. Vous pouvez configurer le déploiement à l’aide d’un *fichier de paramètres de publication* (* \* . publishsettings*). Un fichier de paramètres de publication est créé par IIS ou Azure App Service, il peut aussi être créé manuellement, pour ensuite être importé dans Visual Studio.
+Vous pouvez importer un profil lors de la publication sur IIS ou Azure App Service. Vous pouvez configurer le déploiement à l’aide d’un *fichier de paramètres de publication* ( *\* . publishsettings* ). Un fichier de paramètres de publication est créé par IIS ou Azure App Service, il peut aussi être créé manuellement, pour ensuite être importé dans Visual Studio.
 
 L’utilisation d’un fichier de paramètres de publication peut simplifier la configuration du déploiement et mieux fonctionner dans un environnement d’équipe, plutôt que de configurer manuellement chaque profil de déploiement.
 

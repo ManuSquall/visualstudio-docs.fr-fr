@@ -1,5 +1,7 @@
 ---
 title: Génération d’applications ClickOnce à partir de la ligne de commande | Microsoft Docs
+description: Apprenez à créer des projets Visual Studio à partir de la ligne de commande, ce qui vous permet de reproduire une génération à l’aide d’un processus automatisé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797201"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383194"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Générer des applications ClickOnce à partir de la ligne de commande
 Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez reconstruire un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur sur lequel seul le .NET Framework est installé. Cela vous permet de reproduire une génération à l’aide d’un processus automatisé, par exemple dans un laboratoire de génération central ou à l’aide de techniques de script avancées au-delà de la portée de la génération du projet lui-même.
@@ -29,7 +31,7 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Utiliser MSBuild pour reproduire des déploiements d’applications ClickOnce
  Quand vous appelez MSBuild/target : publish sur la ligne de commande, il indique au système MSBuild de générer le projet et de créer une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans le dossier Publish. Cela équivaut à sélectionner la commande **publier** dans l’IDE.
 
- Cette commande exécute *msbuild.exe*, qui se trouve sur le chemin d’accès dans l’environnement d’invite de commandes de Visual Studio.
+ Cette commande exécute *msbuild.exe* , qui se trouve sur le chemin d’accès dans l’environnement d’invite de commandes de Visual Studio.
 
  Une « cible » est un indicateur de MSBuild sur la manière de traiter la commande. Les cibles principales sont la cible « Build » et la cible « Publish ». La cible Build équivaut à sélectionner la commande de génération (ou à appuyer sur F5) dans l’IDE. Si vous souhaitez uniquement générer votre projet, vous pouvez y parvenir en tapant `msbuild` . Cette commande fonctionne, car la cible de génération est la cible par défaut pour tous les projets générés par [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Cela signifie que vous n’avez pas besoin de spécifier explicitement la cible de génération. Par conséquent, `msbuild` le typage est la même opération que la saisie `msbuild /target:build` .
 
@@ -63,9 +65,9 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 1. Quittez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. Dans le menu **Démarrer** de Windows, cliquez sur **tous les programmes**, **Microsoft Visual Studio**, **Visual Studio Tools**, puis sur **invite de commandes de Visual Studio**. Cela doit ouvrir une invite de commandes dans le dossier racine de l’utilisateur actuel.
+2. Dans le menu **Démarrer** de Windows, cliquez sur **tous les programmes** , **Microsoft Visual Studio** , **Visual Studio Tools** , puis sur **invite de commandes de Visual Studio**. Cela doit ouvrir une invite de commandes dans le dossier racine de l’utilisateur actuel.
 
-3. Dans l' **invite de commandes de Visual Studio**, remplacez le répertoire actif par l’emplacement du projet que vous venez de générer. Par exemple, tapez `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. Dans l' **invite de commandes de Visual Studio** , remplacez le répertoire actif par l’emplacement du projet que vous venez de générer. Par exemple, tapez `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Pour supprimer les fichiers existants générés dans « pour créer et publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projet », tapez `rmdir /s publish` .
 
@@ -73,7 +75,7 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 5. Tapez `msbuild /target:publish`.
 
-   Les étapes ci-dessus produiront un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application complet dans un sous-dossier de votre projet nommé **Publish**. *CmdLineDemo. application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *CmdLineDemo_1.0.0.0* contient les fichiers *CmdLineDemo.exe* et *CmdLineDemo.exe. manifest*, le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de l’application. *Setup.exe* est le programme d’amorçage, qui est configuré par défaut pour installer le .NET Framework. Le dossier DotNetFX contient les fichiers redistribuables du .NET Framework. Il s’agit de l’ensemble complet des fichiers dont vous avez besoin pour déployer votre application sur le Web ou via un UNC ou un CD/DVD.
+   Les étapes ci-dessus produiront un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application complet dans un sous-dossier de votre projet nommé **Publish**. *CmdLineDemo. application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *CmdLineDemo_1.0.0.0* contient les fichiers *CmdLineDemo.exe* et *CmdLineDemo.exe. manifest* , le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de l’application. *Setup.exe* est le programme d’amorçage, qui est configuré par défaut pour installer le .NET Framework. Le dossier DotNetFX contient les fichiers redistribuables du .NET Framework. Il s’agit de l’ensemble complet des fichiers dont vous avez besoin pour déployer votre application sur le Web ou via un UNC ou un CD/DVD.
    
 > [!NOTE]
 > Le système MSBuild utilise l’option **PublishDir** pour spécifier l’emplacement de sortie, par exemple `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -81,7 +83,7 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 ## <a name="publish-properties"></a>Propriétés de publication
  Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant Publication. Ces propriétés influencent directement la manière dont l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est générée.
 
- Dans *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
+ Dans *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,7 +111,7 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- Les propriétés de publication sont contrôlées dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir des pages de propriétés **publier**, **sécurité**et **signature** du **Concepteur de projets**. Vous trouverez ci-dessous une description des propriétés de publication, ainsi qu’une indication de la façon dont chacune est définie dans les différentes pages de propriétés du concepteur d’application :
+ Les propriétés de publication sont contrôlées dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir des pages de propriétés **publier** , **sécurité** et **signature** du **Concepteur de projets**. Vous trouverez ci-dessous une description des propriétés de publication, ainsi qu’une indication de la façon dont chacune est définie dans les différentes pages de propriétés du concepteur d’application :
 
 - `AssemblyOriginatorKeyFile` détermine le fichier de clé utilisé pour signer les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes de votre application. Cette même clé peut également être utilisée pour assigner un nom fort à vos assemblys. Cette propriété est définie sur la page **signature** du **Concepteur de projets**.
 

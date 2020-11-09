@@ -1,5 +1,7 @@
 ---
 title: '&lt;Deployment &gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+description: L’élément Deployment identifie les attributs utilisés pour le déploiement des mises à jour et l’exposition au système.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70887859"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382856"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Deployment &gt; , élément (déploiement ClickOnce)
 Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système.
@@ -100,7 +102,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
 |------------| - |
 | `codebase` | Obligatoire. Identifie l’emplacement, sous la forme d’un Uniform Resource Identifier (URI), du manifeste de déploiement utilisé pour mettre à jour l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Cet élément permet également de transférer des emplacements de mise à jour pour les installations sur CD. Doit être un URI valide. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Vous pouvez configurer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application pour rechercher les mises à jour au démarrage, rechercher les mises à jour après le démarrage ou ne jamais Rechercher les mises à jour. Pour rechercher les mises à jour au démarrage, assurez-vous que l' `beforeApplicationStartup` élément existe sous l' `update` élément. Pour rechercher les mises à jour après le démarrage, assurez-vous que l' `expiration` élément existe sous l' `update` élément et que des intervalles de mise à jour sont fournis.
 
  Pour désactiver la vérification des mises à jour, supprimez l' `subscription` élément. Lorsque vous spécifiez dans le manifeste de déploiement de ne jamais Rechercher les mises à jour, vous pouvez toujours rechercher manuellement les mises à jour à l’aide de la <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> méthode.

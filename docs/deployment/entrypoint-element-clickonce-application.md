@@ -1,5 +1,7 @@
 ---
 title: '&lt;entryPoint &gt; , élément (application ClickOnce) | Microsoft Docs'
+description: L’élément entryPoint identifie l’assembly qui doit être exécuté lorsque cette application ClickOnce est exécutée sur un ordinateur client.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928609"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382804"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint &gt; , élément (application ClickOnce)
 Identifie l’assembly qui doit être exécuté lorsque cette [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est exécutée sur un ordinateur client.
@@ -89,7 +91,7 @@ Identifie l’assembly qui doit être exécuté lorsque cette [!INCLUDE[ndpteccl
 
  Une application qui comprend l’élément customUX doit fournir un programme d’installation personnalisé qui utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe pour effectuer des opérations d’installation. Une application avec cet élément ne peut pas être installée en double-cliquant sur son manifeste ou setup.exe programme d’amorçage de la configuration requise. Le programme d’installation personnalisé peut créer des entrées de menu Démarrer, des raccourcis et des entrées ajout/suppression de programmes. Si le programme d’installation personnalisé ne crée pas d’entrée ajout/suppression de programmes, il doit stocker l’identificateur d’abonnement fourni par la <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> propriété et permettre à l’utilisateur de désinstaller l’application ultérieurement en appelant la <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> méthode. Pour plus d’informations, consultez [procédure pas à pas : création d’un programme d’installation personnalisé pour une application ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cet élément identifie l’assembly et le point d’entrée de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
  Vous ne pouvez pas utiliser `commandLine` pour passer des paramètres dans votre application au moment de l’exécution. Vous pouvez accéder aux paramètres de chaîne de requête pour un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à partir de l’application <xref:System.AppDomain> . Pour plus d’informations, consultez [Comment : récupérer des informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).

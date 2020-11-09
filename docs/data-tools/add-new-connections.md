@@ -1,5 +1,6 @@
 ---
 title: Ajouter de nouvelles connexions
+description: Ajoutez une connexion dans Visual Studio à un service ou à une base de connaissance, puis explorez le contenu et les schémas de la base de connaissance en utilisant Explorateur de serveurs, Cloud Explorer ou Explorateur d’objets SQL Server.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
@@ -7,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f3ef6823ddfae806de11b85cc5bfe6b14c9b19
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283058"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382414"
 ---
 # <a name="add-new-connections"></a>Ajouter de nouvelles connexions
 
-Vous pouvez tester votre connexion à une base de données ou à un service, et explorer le contenu et les schémas de la base de données, à l’aide de **Explorateur de serveurs**, **Cloud Explorer**ou **Explorateur d’objets SQL Server**. La fonctionnalité de ces fenêtres chevauche dans une certaine mesure. Les différences de base sont les suivantes :
+Vous pouvez tester votre connexion à une base de données ou à un service, et explorer le contenu et les schémas de la base de données, à l’aide de **Explorateur de serveurs** , **Cloud Explorer** ou **Explorateur d’objets SQL Server**. La fonctionnalité de ces fenêtres chevauche dans une certaine mesure. Les différences de base sont les suivantes :
 
 - Explorateur de serveurs
 
@@ -32,7 +33,7 @@ Vous pouvez tester votre connexion à une base de données ou à un service, et 
 
 ## <a name="add-a-connection-in-server-explorer"></a>Ajouter une connexion dans Explorateur de serveurs
 
-Pour créer une connexion à la base de données, cliquez sur l’icône **Ajouter une connexion** dans **Explorateur de serveurs**, ou cliquez avec le bouton droit dans **Explorateur de serveurs** sur le nœud **connexions de données** , puis sélectionnez Ajouter une **connexion**. À partir de là, vous pouvez également vous connecter à une base de données sur un autre serveur, un service SharePoint ou un service Azure.
+Pour créer une connexion à la base de données, cliquez sur l’icône **Ajouter une connexion** dans **Explorateur de serveurs** , ou cliquez avec le bouton droit dans **Explorateur de serveurs** sur le nœud **connexions de données** , puis sélectionnez Ajouter une **connexion**. À partir de là, vous pouvez également vous connecter à une base de données sur un autre serveur, un service SharePoint ou un service Azure.
 
 ![Icône Explorateur de serveurs nouvelle connexion](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -52,7 +53,7 @@ Une fois que vous avez choisi la source de données, cliquez sur **tester la con
 
 ![Tester la connexion](../data-tools/media/raddata-test-connection.png)
 
-Si le test s’effectue correctement, vous êtes prêt à créer une *source de données*, qui est un terme Visual Studio qui signifie vraiment un modèle de *données* basé sur la base de données ou le service sous-jacent.
+Si le test s’effectue correctement, vous êtes prêt à créer une *source de données* , qui est un terme Visual Studio qui signifie vraiment un modèle de *données* basé sur la base de données ou le service sous-jacent.
 
 ## <a name="see-also"></a>Voir aussi
 

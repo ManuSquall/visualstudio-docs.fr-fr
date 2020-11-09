@@ -1,5 +1,7 @@
 ---
 title: Choix d’une stratégie de mise à jour ClickOnce | Microsoft Docs
+description: Découvrez comment une application ClickOnce prend en charge les mises à jour automatiques et les stratégies de mise à jour que vous pouvez utiliser.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839598"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383155"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Choisir une stratégie de mise à jour ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut fournir des mises à jour d’application automatiques. Une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lit périodiquement son fichier manifeste de déploiement pour vérifier si des mises à jour de l’application sont disponibles. Si disponible, la nouvelle version de l'application est téléchargée et exécutée. Pour des raisons d'efficacité, seuls les fichiers modifiés sont téléchargés.
@@ -78,7 +80,7 @@ ms.locfileid: "90839598"
 > [!NOTE]
 > Bien qu’il soit possible d’exiger des mises à jour à l’aide des autres stratégies de mise à jour, la vérification **Avant le démarrage de l’application** est la seule façon d’interdire l’exécution d’une version antérieure. Lorsque la mise à jour obligatoire est détectée au démarrage, l'utilisateur doit accepter la mise à jour ou fermer l'application.
 
- Pour marquer une mise à jour comme étant obligatoire, cliquez sur **Spécifiez la version minimale requise pour cette application** dans la boîte de dialogue **Mises à jour des applications**, puis spécifiez la version de publication (**Majeure**, **Mineure**, **Build**, **Révision**) qui spécifie le numéro de version minimal de l’application qui peut être installée.
+ Pour marquer une mise à jour comme étant obligatoire, cliquez sur **Spécifiez la version minimale requise pour cette application** dans la boîte de dialogue **Mises à jour des applications** , puis spécifiez la version de publication ( **Majeure** , **Mineure** , **Build** , **Révision** ) qui spécifie le numéro de version minimal de l’application qui peut être installée.
 
  Ceci revient à définir l’attribut **minimumRequiredVersion** de l’élément **Deployment** dans le manifeste de déploiement. Par exemple :
 

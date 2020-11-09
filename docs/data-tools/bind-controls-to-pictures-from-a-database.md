@@ -1,5 +1,6 @@
 ---
 title: Lier des contrôles à des images d’une base de données
+description: Utilisez la fenêtre sources de données pour lier une image d’une base de données à un contrôle de votre application Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a2033bfe6719ccd325a2409d20fbb0e77d92926
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282982"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382297"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Lier des contrôles à des images d’une base de données
 
@@ -39,7 +40,7 @@ La procédure suivante suppose que la fenêtre **sources de données** est déj�
 2. Dans la fenêtre **sources de données** , développez la table ou l’objet souhaité pour afficher ses colonnes ou ses propriétés.
 
    > [!TIP]
-   > Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant **Afficher**d'  >  **autres**  >  **sources de données**Windows.
+   > Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant **Afficher** d'  >  **autres**  >  **sources de données** Windows.
 
 3. Sélectionnez la colonne ou la propriété qui contient vos données image, puis sélectionnez l’un des contrôles suivants dans la liste déroulante de contrôle :
 

@@ -1,6 +1,6 @@
 ---
 title: Propriété listée deux fois
-description: Impossible de créer une association, propriété listée deux fois
+description: Impossible de créer une association-propriété à deux reprises. Affichez des informations sur ce message de Concepteur Objet Relationnel Visual Studio (Concepteur O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d0e3475896c937f247fc64a0750da25c2d6edac9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d4cb795a5d608e31c26ccec0b96f359a5c63cee7
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036481"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381777"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Impossible de créer une association &lt;nom de l’association&gt;. La propriété est listée deux fois
 

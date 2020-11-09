@@ -1,6 +1,6 @@
 ---
 title: Impossible d’annuler la modification du type de retour
-description: Impossible d'annuler la modification du type de retour d'une méthode DataContext
+description: Impossible d'annuler la modification du type de retour d'une méthode DataContext. Affichez des informations sur ce message de Concepteur Objet Relationnel Visual Studio (Concepteur O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc0c3d6c1ddeab3ee92414e1264912f8b9d24b22
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c0f3728056f2703dc1c9553a4a165f9654ce5112
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036468"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381816"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Impossible d'annuler la modification du type de retour d'une méthode DataContext
 
-Impossible d'annuler la modification du type de retour d'une méthode DataContext. Pour revenir au type généré automatiquement, vous devez déplacer à nouveau l’élément de l’**Explorateur de serveurs** ou l’**Explorateur de bases de données** vers le Concepteur O/R. Êtes-vous sûr de vouloir modifier le type de retour ?
+Impossible d'annuler la modification du type de retour d'une méthode DataContext. Pour revenir au type généré automatiquement, vous devez déplacer à nouveau l’élément de l’ **Explorateur de serveurs** ou l’ **Explorateur de bases de données** vers le Concepteur O/R. Êtes-vous sûr de vouloir modifier le type de retour ?
 
 Le type de retour d’une méthode <xref:System.Data.Linq.DataContext> diffère selon l’endroit où vous déposez l’élément dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Si vous déposez directement un élément dans une classe d’entité existante, une méthode <xref:System.Data.Linq.DataContext> qui a le type de retour de la classe d’entité est créée. Si vous déposez un élément dans une zone vide du [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], une méthode <xref:System.Data.Linq.DataContext> qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et cliquez sur la propriété **Type de retour** dans la fenêtre **Propriétés**.
 
@@ -35,7 +35,7 @@ Le type de retour d’une méthode <xref:System.Data.Linq.DataContext> diffère 
 
 1. Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] et supprimez-la.
 
-2. Localisez l’élément dans l’**Explorateur de serveurs/Explorateur de bases de données** et faites-le glisser vers le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+2. Localisez l’élément dans l’ **Explorateur de serveurs/Explorateur de bases de données** et faites-le glisser vers le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
     Une méthode <xref:System.Data.Linq.DataContext> est créée avec le type de retour par défaut d’origine.
 

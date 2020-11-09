@@ -1,5 +1,7 @@
 ---
 title: Comment ClickOnce effectue des mises à jour d’application | Microsoft Docs
+description: Découvrez comment ClickOnce utilise les informations de version de fichier pour décider s’il faut mettre à jour l’application. ClickOnce utilise la mise à jour corrective des fichiers pour éviter la redondance lors du téléchargement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900019"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382665"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Mises à jour des applications par ClickOnce
 ClickOnce utilise les informations de version de fichier spécifiées dans le manifeste de déploiement d’une application pour décider s’il faut mettre à jour les fichiers de l’application. Après le début d’une mise à jour, ClickOnce utilise une technique appelée mise à jour *corrective des fichiers* pour éviter le téléchargement redondant des fichiers d’application.

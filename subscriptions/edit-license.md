@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 09/21/2020
+ms.date: 11/09/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent modifier les affectations d’abonnements.
-ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 785bad481e4329647582d1f441988b1cd83a055a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904162"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382492"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur d’abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.
@@ -27,7 +27,7 @@ Pour modifier les informations d’un abonné, sélectionnez les points de suspe
 > [!div class="mx-imgBorder"]
 > ![Sélectionner l’abonné à modifier](_img/edit-license/select-subscriber.png "Cliquez sur les ellipses, puis choisissez Modifier.")
 
-Vous pouvez mettre à jour le prénom, le nom, le niveau d’abonnement, l’adresse de messagerie, le pays, la langue, les téléchargements et le champ de référence de l’abonné. Modifiez les informations de l’abonné, puis cliquez sur **Enregistrer** .
+Vous pouvez mettre à jour le prénom, le nom, le niveau d’abonnement, l’adresse de messagerie, le pays, la langue, les téléchargements et le champ de référence de l’abonné. Modifiez les informations de l’abonné, puis cliquez sur **Enregistrer**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Modifier plusieurs abonnés à l’aide de la modification en bloc
 
@@ -39,10 +39,8 @@ Regardez cette vidéo ou lisez pour savoir comment modifier plusieurs abonnés �
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
-   > [!IMPORTANT]
-   > Les niveaux d’abonnement (par exemple, entreprise, professionnel, etc.) et les GUID d’abonnement ne peuvent pas être modifiés à l’aide de la modification en bloc.  Si vous devez assigner des GUID d’abonnement spécifiques à vos utilisateurs, utilisez le processus pour ajouter des utilisateurs en choisissant l’ID d’abonnement. Si vous tentez d’effectuer un chargement avec ces éléments modifiés dans le modèle de modification en bloc, le chargement échoue.
 
-1. Pour modifier plusieurs abonnés à la fois, accédez à l’onglet abonnés. Dans le ruban en haut, cliquez sur **modification en bloc** .
+1. Pour modifier plusieurs abonnés à la fois, accédez à l’onglet abonnés. Dans le ruban en haut, cliquez sur **modification en bloc**.
 
 2. La modification en bloc utilise un modèle Excel pour apporter des modifications aux informations des abonnés. Dans la zone Modifier en bloc, cliquez sur **Exporter cette feuille Excel** pour télécharger la liste actuelle des abonnés et toutes les informations associées.
    > [!div class="mx-imgBorder"]
@@ -50,7 +48,7 @@ Regardez cette vidéo ou lisez pour savoir comment modifier plusieurs abonnés �
 
 3. Ensuite, enregistrez le fichier à un emplacement local pour pouvoir le retrouver facilement si vous avez besoin d’y apporter des modifications avant le chargement. Pour garantir la réussite du téléchargement, **ne modifiez pas le niveau d’abonnement ou le GUID** de l’abonnement dans le fichier de modification en bloc, car cela entraînera l’échec du chargement.
 
-4. Revenez au portail d’administration des abonnements Visual Studio et, dans la boîte de dialogue Modification en bloc, cliquez sur **Parcourir** . Sélectionnez le fichier Excel que vous avez enregistré, puis cliquez sur **OK** . Vous pouvez observer la progression du chargement à l’écran.
+4. Revenez au portail d’administration des abonnements Visual Studio et, dans la boîte de dialogue Modification en bloc, cliquez sur **Parcourir**. Sélectionnez le fichier Excel que vous avez enregistré, puis cliquez sur **OK**. Vous pouvez observer la progression du chargement à l’écran.
    > [!div class="mx-imgBorder"]
    > ![Modification d’une licence - Chargement du fichier des modifications en bloc](_img/edit-license/edit-license-bulk-file-upload1.png "Accédez à l’emplacement de votre fichier Excel terminé, sélectionnez-le, puis cliquez sur OK.")
 

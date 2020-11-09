@@ -1,5 +1,6 @@
 ---
 title: Ajouter des contrôles personnalisés à la fenêtre Sources de données
+description: Ajoutez des contrôles personnalisés à la fenêtre sources de données dans Visual Studio. Personnalisez la liste des contrôles pouvant être liés. Ajoutez des contrôles associés.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283071"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382063"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Ajouter des contrôles personnalisés à la fenêtre Sources de données
 
@@ -39,7 +40,7 @@ Pour ajouter ou supprimer des contrôles dans la liste des contrôles disponible
 2. Dans la fenêtre **sources de données** , cliquez sur un élément qui fait partie d’une source de données que vous avez ajoutée à la fenêtre, puis cliquez sur le menu déroulant de l’élément.
 
    > [!TIP]
-   > Si la fenêtre sources de données n’est pas ouverte, ouvrez-la en sélectionnant **Afficher**d'  >  **autres**  >  **sources de données**Windows.
+   > Si la fenêtre sources de données n’est pas ouverte, ouvrez-la en sélectionnant **Afficher** d'  >  **autres**  >  **sources de données** Windows.
 
 3. Dans le menu déroulant, cliquez sur **personnaliser**. L’une des boîtes de dialogue suivantes s’ouvre :
 

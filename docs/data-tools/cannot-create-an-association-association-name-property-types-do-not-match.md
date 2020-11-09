@@ -1,6 +1,6 @@
 ---
 title: Les types de propriété ne correspondent pas
-description: Impossible de créer une association, les types de propriétés ne correspondent pas
+description: Impossible de créer un Association-les types de propriété ne correspondent pas. Affichez des informations sur ce message de Concepteur Objet Relationnel Visual Studio (Concepteur O/R).
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: bce5a285f3bccdc2be8004f0eba4546bb7964a42
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743189"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382050"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossible de créer une association &lt;nom de l’association&gt;. Les types de propriétés ne correspondent pas
 

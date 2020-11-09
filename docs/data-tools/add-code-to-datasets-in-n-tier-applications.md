@@ -1,5 +1,6 @@
 ---
 title: Ajouter un code à des DataSets dans des applications multiniveau
+description: Ajoutez du code à des jeux de données dans des applications multicouches dans Visual Studio. Créez un fichier de classe partielle pour un DataSet et ajoutez-y du code (au lieu de NomGroupeDonnées. DataSet. Designer).
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283084"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382193"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter un code à des DataSets dans des applications multiniveau
 
@@ -26,7 +27,7 @@ Vous pouvez étendre les fonctionnalités d’un jeu de données en créant un f
 
 Le code qui définit un DataSet est généré chaque fois que des modifications sont apportées à la définition du jeu de données (dans le DataSet typé). Ce code est également généré lorsque vous apportez des modifications au cours de l’exécution d’un assistant qui modifie la configuration d’un jeu de données. Pour empêcher la suppression de votre code pendant la régénération d’un DataSet, ajoutez du code au fichier de classe partielle du DataSet.
 
-Par défaut, après avoir séparé le jeu de données et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé *NomGroupeDonnées. Designer. vb* (ou *DataSetName.Designer.cs*) qui contient le code du TableAdapter. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées. DataSet. Designer. vb* (ou *DataSetName.DataSet.Designer.cs*). Ce fichier contient le code du DataSet.
+Par défaut, après avoir séparé le jeu de données et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé *NomGroupeDonnées. Designer. vb* (ou *DataSetName.Designer.cs* ) qui contient le code du TableAdapter. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées. DataSet. Designer. vb* (ou *DataSetName.DataSet.Designer.cs* ). Ce fichier contient le code du DataSet.
 
 > [!NOTE]
 > Lorsque vous séparez des DataSets et des TableAdapters (en définissant la propriété **DataSet Project** ), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes partielles de DataSet existantes doivent être déplacées manuellement vers le projet de DataSet.
@@ -66,7 +67,7 @@ Par défaut, après avoir séparé le jeu de données et le code du TableAdapter
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)
-- [Guide pratique pour ajouter du code aux TableAdapters dans des applications multiniveaux](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
+- [Ajouter du code aux TableAdapters dans des applications multiniveaux](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Créer et configurer des TableAdapters](create-and-configure-tableadapters.md)
 - [Vue d’ensemble de la mise à jour hiérarchique](hierarchical-update.md)
 - [Outils de jeu de données dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

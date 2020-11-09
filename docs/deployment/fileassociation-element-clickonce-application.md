@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;élément FileAssociation (application ClickOnce) | Microsoft Docs'
+description: L’élément fileAssociation identifie une extension de fichier à associer à l’application. L’élément fileAssociation est facultatif.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928527"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382726"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;&gt;élément FileAssociation (application ClickOnce)
 Identifie une extension de fichier à associer à l’application.
@@ -47,7 +49,7 @@ Identifie une extension de fichier à associer à l’application.
 |`progid`|Obligatoire. Nom identifiant de façon unique le type de fichier.|
 |`defaultIcon`|Obligatoire. Spécifie l’icône à utiliser pour les fichiers avec cette extension. Le fichier icône doit être spécifié à l’aide de l' [ \<file> élément](../deployment/file-element-clickonce-application.md) dans l' [ \<assembly> élément](../deployment/assembly-element-clickonce-application.md) qui contient cet élément.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cet élément doit inclure une référence d’espace de noms XML à « urn : schemas-microsoft-com : ClickOnce. v1 ». Si l' `<fileAssociation>` élément est utilisé, il doit se trouver après l' `<application>` élément dans son [ \<assembly> élément](../deployment/assembly-element-clickonce-application.md)parent.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ne remplace pas les associations de fichiers existantes. Toutefois, une application ClickOnce peut remplacer l’extension de fichier pour l’utilisateur actuel uniquement. Après la désinstallation de cette application ClickOnce, ClickOnce supprime l’Association de fichiers pour l’utilisateur, et l’Association par ordinateur est à nouveau active.

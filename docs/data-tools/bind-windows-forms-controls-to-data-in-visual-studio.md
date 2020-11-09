@@ -1,5 +1,6 @@
 ---
 title: Lier des contrôles Windows Forms à des données
+description: Liez Windows Forms contrôles aux données dans Visual Studio afin de pouvoir afficher des données pour les utilisateurs de votre application.
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508546"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382375"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Lier des contrôles Windows Forms à des données dans Visual Studio
 
@@ -31,7 +32,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 ![Opération glisser de source de données](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Si la fenêtre **sources de données** n’est pas visible, vous pouvez l’ouvrir en sélectionnant **Afficher**d'  >  **autres**  >  **sources de données**Windows, ou en appuyant sur **MAJ** + **ALT** + **D**. Pour afficher la fenêtre **sources de données** , vous devez disposer d’un projet ouvert dans Visual Studio.
+> Si la fenêtre **sources de données** n’est pas visible, vous pouvez l’ouvrir en sélectionnant **Afficher** d'  >  **autres**  >  **sources de données** Windows, ou en appuyant sur **MAJ** + **ALT** + **D**. Pour afficher la fenêtre **sources de données** , vous devez disposer d’un projet ouvert dans Visual Studio.
 
 Avant de faire glisser des éléments, vous pouvez définir le type de contrôle auquel vous souhaitez effectuer la liaison. Différentes valeurs s’affichent selon que vous choisissez la table elle-même ou une colonne individuelle.  Vous pouvez également définir des valeurs personnalisées. Pour une table, les **Détails** signifient que chaque colonne est liée à un contrôle distinct.
 
@@ -67,7 +68,7 @@ Vous pouvez également faire glisser des éléments depuis la fenêtre **sources
 
 ## <a name="bind-to-data-in-individual-controls"></a>Lier à des données dans des contrôles individuels
 
-Lorsque vous liez une source de données à des **Détails**, chaque colonne du DataSet est liée à un contrôle distinct.
+Lorsque vous liez une source de données à des **Détails** , chaque colonne du DataSet est liée à un contrôle distinct.
 
 ![Lier la source de données aux détails](../data-tools/media/raddata-bind-data-source-to-details.png)
 

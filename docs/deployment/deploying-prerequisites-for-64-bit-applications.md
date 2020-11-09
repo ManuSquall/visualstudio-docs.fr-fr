@@ -1,5 +1,7 @@
 ---
 title: Déploiement des composants requis pour les applications 64 bits | Microsoft Docs
+description: En savoir plus sur les redistribuables que vous pouvez utiliser comme composants requis pour le déploiement ClickOnce d’applications sur des plateformes 64 bits.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c051e57bb6af707e7bd5c096e230966e98498bd2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928890"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382908"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Déployer des prérequis pour les applications 64 bits
 Le déploiement ClickOnce prend en charge l'installation des applications sur les plateformes 64 bits. Les plateformes cibles sont de type **x86** pour les plateformes 32 bits, **x64** pour les machines prenant en charge les jeux d’instructions AMD64 et EM64T, et **Itanium** pour le processeur Itanium 64 bits.

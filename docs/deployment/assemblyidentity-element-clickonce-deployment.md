@@ -1,5 +1,7 @@
 ---
 title: '&lt;assemblyIdentity &gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+description: L’élément assemblyIdentity est requis dans le déploiement ClickOnce. Il ne contient pas d’éléments enfants et possède des attributs décrits dans cet article.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929065"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383181"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity &gt; , élément (déploiement ClickOnce)
 Identifie l’assembly principal de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
@@ -30,8 +32,8 @@ Identifie l’assembly principal de l' [!INCLUDE[ndptecclick](../deployment/incl
 
 ```xml
 
-      <assemblyIdentity  
-   name 
+      <assemblyIdentity  
+   name 
    version
    publicKeyToken
    processorArchitecture
@@ -50,7 +52,7 @@ Identifie l’assembly principal de l' [!INCLUDE[ndptecclick](../deployment/incl
 |`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits et `Itanium` pour les processeurs Itanium Intel 64 bits.|
 |`type`|Obligatoire. Pour la compatibilité avec la technologie d’installation côte à côte de Windows. La seule valeur autorisée est `win32` .|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant illustre un `assemblyIdentity` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Cet exemple de code fait partie d’un exemple plus complet fourni pour la rubrique du [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) .

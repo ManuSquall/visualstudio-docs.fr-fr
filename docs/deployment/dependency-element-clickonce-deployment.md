@@ -1,5 +1,7 @@
 ---
 title: '&lt;Dependency &gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+description: L’élément Dependency identifie la version de l’application à installer, ainsi que l’emplacement du manifeste de l’application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928951"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382960"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency &gt; , élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste de l’application.
@@ -95,7 +97,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |`Version`|Obligatoire. Spécifie le numéro de version de l’application, au format suivant : `major.minor.build.revision`|
 |`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets du hachage SHA-1 de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour la signature doit être supérieure ou égale à 2048 bits.|
 |`processorArchitecture`|Obligatoire. Spécifie le microprocesseur. Les valeurs valides sont `x86` pour les fenêtres 32 bits et `IA64` pour Windows 64 bits.|
-|`Language`|facultatif. Identifie les codes de langue en deux parties de l’assembly. Par exemple, en-US, qui correspond à l’anglais (États-Unis). Par défaut, il s’agit de `neutral`. Cet élément se trouve dans l' `asmv2` espace de noms.|
+|`Language`|facultatif. Identifie les codes de langue en deux parties de l’assembly. Par exemple, en-US, qui correspond à l’anglais (États-Unis). La valeur par défaut est `neutral`. Cet élément se trouve dans l' `asmv2` espace de noms.|
 |`type`|facultatif. Pour la compatibilité descendante avec la technologie d’installation côte à côte Windows. La seule valeur autorisée est `win32` .|
 
 ## <a name="hash"></a>Hachage
@@ -123,7 +125,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  L' `dsig:DigestValue` élément est un enfant obligatoire de l' `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur texte est le hachage calculé pour le fichier spécifié.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les manifestes de déploiement ont généralement un `assemblyIdentity` élément unique qui identifie le nom et la version du manifeste de l’application.
 
 ## <a name="example"></a>Exemple

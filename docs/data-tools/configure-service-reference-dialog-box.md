@@ -1,5 +1,6 @@
 ---
 title: Configurer la référence de service (boîte de dialogue)
+description: Utilisez la boîte de dialogue Configurer la référence de service dans Visual Studio pour configurer le comportement des services Windows Communication Foundation (WCF).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70faee4277625621074b1bd1bfdf667c818e1f46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586924"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382349"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 
 La boîte de dialogue **configurer la référence de service** vous permet de configurer le comportement des services Windows Communication Foundation (WCF).
 
-Pour accéder à la boîte de dialogue **Configurer la référence de service**, cliquez avec le bouton droit sur une référence de service dans l’**Explorateur de solutions** et choisissez **Configurer la référence de service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le bouton **Avancé** dans la **boîte de dialogue Ajouter une référence de service**.
+Pour accéder à la boîte de dialogue **Configurer la référence de service** , cliquez avec le bouton droit sur une référence de service dans l’ **Explorateur de solutions** et choisissez **Configurer la référence de service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le bouton **Avancé** dans la **boîte de dialogue Ajouter une référence de service**.
 
 ## <a name="task-list"></a>Liste des tâches
 
@@ -39,7 +40,7 @@ Pour accéder à la boîte de dialogue **Configurer la référence de service**,
 
 - Pour spécifier des types de collections de dictionnaires ou de listes pour un client WCF, sélectionnez les types dans les listes **Type de collection** et **Type de collection Dictionnaire**.
 
-- Pour désactiver le partage de type, décochez la case **Réutiliser les types dans les assemblys référencés**. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, cochez la case **Réutiliser les types dans les assemblys référencés**, sélectionnez **Réutiliser les types dans les assemblys référencés spécifiés**, puis sélectionnez les références souhaitées dans la **Liste des assemblys référencés**.
+- Pour désactiver le partage de type, décochez la case **Réutiliser les types dans les assemblys référencés**. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, cochez la case **Réutiliser les types dans les assemblys référencés** , sélectionnez **Réutiliser les types dans les assemblys référencés spécifiés** , puis sélectionnez les références souhaitées dans la **Liste des assemblys référencés**.
 
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
@@ -91,7 +92,7 @@ Lorsque cette option est sélectionnée, seuls les types sélectionnés dans la 
 
 **Liste des assemblys référencés**
 
-Contient une liste d’assemblys référencés pour le projet ou le site Web. Lorsque vous sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, vous pouvez sélectionner ou effacer des assemblys individuels.
+Contient une liste d’assemblys référencés pour le projet ou le site Web. Lorsque vous sélectionnez **réutiliser les types dans les assemblys référencés spécifiés** , vous pouvez sélectionner ou effacer des assemblys individuels.
 
 **Ajouter une référence web**
 

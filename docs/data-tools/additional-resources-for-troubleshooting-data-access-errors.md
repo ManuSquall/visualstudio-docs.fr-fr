@@ -1,5 +1,6 @@
 ---
 title: Forums d’accès aux données
+description: Recherchez de l’aide sur la résolution des erreurs et des avertissements dans les forums publics. Affichez la liste des forums relatifs aux données.
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -224,12 +225,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8555a67bf9173767584c2bf37c1ed470548c4157
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587041"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382479"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Résoudre les erreurs d’accès aux données sur les forums
 

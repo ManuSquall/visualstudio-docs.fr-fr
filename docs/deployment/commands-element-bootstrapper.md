@@ -1,5 +1,7 @@
 ---
 title: '&lt;Commands &gt; , élément (programme d’amorçage) | Microsoft Docs'
+description: L’élément Commands implémente les tests dans les éléments sous InstallChecks et déclare le package à installer si le test du programme d’amorçage ClickOnce échoue.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900342"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383051"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commands &gt; , élément (programme d’amorçage)
 L' `Commands` élément implémente les tests décrits par les éléments situés sous l' `InstallChecks` élément, et déclare le package que le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programme d’amorçage doit installer en cas d’échec du test.
@@ -70,7 +72,7 @@ L' `Commands` élément implémente les tests décrits par les éléments situé
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Reboot`|facultatif. Détermine si le système doit redémarrer si l’un des packages retourne un code de sortie de redémarrage. La liste suivante affiche les valeurs valides :<br /><br /> `Defer`. Le redémarrage est différé jusqu’à un moment ultérieur.<br /><br /> `Immediate`. Entraîne un redémarrage immédiat si l’un des packages a retourné un code de sortie de redémarrage.<br /><br /> `None`. Provoque l’ignorance des demandes de redémarrage.<br /><br /> Par défaut, il s’agit de `Immediate`.|
+|`Reboot`|facultatif. Détermine si le système doit redémarrer si l’un des packages retourne un code de sortie de redémarrage. La liste suivante affiche les valeurs valides :<br /><br /> `Defer`. Le redémarrage est différé jusqu’à un moment ultérieur.<br /><br /> `Immediate`. Entraîne un redémarrage immédiat si l’un des packages a retourné un code de sortie de redémarrage.<br /><br /> `None`. Provoque l’ignorance des demandes de redémarrage.<br /><br /> La valeur par défaut est `Immediate`.|
 
 ## <a name="command"></a>Commande
  L'élément `Command` est un élément enfant de l'élément `Commands`. Un `Commands` élément peut avoir un ou plusieurs `Command` éléments. L’élément a les attributs suivants.
@@ -123,7 +125,7 @@ L' `Commands` élément implémente les tests décrits par les éléments situé
 |`Value`|Obligatoire. Valeur de code de sortie à laquelle cet `ExitCode` élément s’applique.|
 |`Result`|Obligatoire. Comment l’installation doit réagir à ce code de sortie. La liste suivante affiche les valeurs valides :<br /><br /> `Success`. Signale que le package est correctement installé.<br /><br /> `SuccessReboot`. Signale que le package est correctement installé et demande au système de redémarrer.<br /><br /> `Fail`. Signale le package comme ayant échoué.<br /><br /> `FailReboot`. Signale le package comme ayant échoué et demande au système de redémarrer.|
 |`String`|facultatif. Valeur à afficher à l’utilisateur en réponse à ce code de sortie.|
-|`FormatMessageFromSystem`|facultatif. Détermine s’il est possible d’utiliser le message d’erreur fourni par le système correspondant au code de sortie ou d’utiliser la valeur fournie dans `String` . Les valeurs valides sont `true` , ce qui signifie que utilise l’erreur fournie par le système, et `false` , ce qui signifie que utilise la chaîne fournie par `String` . Par défaut, il s’agit de `false`. Si cette propriété a `false` `String` la valeur, mais n’est pas définie, l’erreur fournie par le système est utilisée.|
+|`FormatMessageFromSystem`|facultatif. Détermine s’il est possible d’utiliser le message d’erreur fourni par le système correspondant au code de sortie ou d’utiliser la valeur fournie dans `String` . Les valeurs valides sont `true` , ce qui signifie que utilise l’erreur fournie par le système, et `false` , ce qui signifie que utilise la chaîne fournie par `String` . La valeur par défaut est `false`. Si cette propriété a `false` `String` la valeur, mais n’est pas définie, l’erreur fournie par le système est utilisée.|
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant définit des commandes pour installer le .NET Framework 2,0.

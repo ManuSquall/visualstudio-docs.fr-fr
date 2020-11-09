@@ -1,5 +1,7 @@
 ---
 title: Sécurité d’accès du code pour les applications ClickOnce | Microsoft Docs
+description: Découvrez la sécurité d’accès du code pour les applications ClickOnce et comment configurer les autorisations de sécurité d’accès du code.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd2d9b6792cae002967c9000474a825bd3a0651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649279"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382570"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sécurité d’accès du code pour les applications ClickOnce
 Les applications ClickOnce sont basées sur le .NET Framework et sont soumises à des contraintes de sécurité d’accès du code. Pour cette raison, il est important de comprendre les implications de la sécurité d’accès du code et d’écrire vos applications ClickOnce en conséquence.

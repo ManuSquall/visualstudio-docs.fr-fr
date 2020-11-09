@@ -1,5 +1,7 @@
 ---
 title: '&lt;Dependency &gt; , élément (application ClickOnce) | Microsoft Docs'
+description: L’élément Dependency identifie une plateforme ou une dépendance d’assembly qui est requise pour l’application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa949aa2f8e718ab0209c54a0ea2160c042a4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252496"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382947"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Dependency &gt; , élément (application ClickOnce)
 Identifie une dépendance de plateforme ou d’assembly requise pour l’application.
@@ -166,7 +168,7 @@ Identifie une dépendance de plateforme ou d’assembly requise pour l’applica
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue
  L' `dsig:DigestValue` élément est un enfant obligatoire de l' `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur texte est le hachage calculé pour le fichier spécifié.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Tous les assemblys utilisés par votre application doivent avoir un `dependency` élément correspondant. Les assemblys dépendants n’incluent pas les assemblys qui doivent être préinstallés dans le Global Assembly Cache en tant qu’assemblys de plateforme.
 
 ## <a name="example"></a>Exemple

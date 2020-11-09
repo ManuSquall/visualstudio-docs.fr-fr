@@ -1,5 +1,7 @@
 ---
 title: '&lt;file &gt; , élément (application ClickOnce) | Microsoft Docs'
+description: L’élément file identifie tous les fichiers non assembly téléchargés et utilisés par l’application. L’élément file est facultatif.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900271"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382739"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file &gt; , élément (application ClickOnce)
 Identifie tous les fichiers non assembly téléchargés et utilisés par l’application.
@@ -151,7 +153,7 @@ Identifie tous les fichiers non assembly téléchargés et utilisés par l’app
 
 |Attribut|Description|
 |---------------|-----------------|
-|`versioned`|facultatif. Contrôle si le nom de classe de fenêtre interne utilisé dans l’inscription contient la version de l’assembly qui contient la classe de fenêtre. La valeur de cet attribut peut être `yes` ou `no` . Par défaut, il s’agit de `yes`. La valeur `no` doit être utilisée uniquement si la même classe de fenêtre est définie par un composant côte à côte et un composant équivalent non côte à côte et que vous souhaitez les traiter comme la même classe de fenêtre. Notez que les règles habituelles relatives à l’inscription de la classe de fenêtre s’appliquent : seul le premier composant qui inscrit la classe de fenêtre sera en mesure de l’inscrire, car aucune version ne lui est appliquée.|
+|`versioned`|facultatif. Contrôle si le nom de classe de fenêtre interne utilisé dans l’inscription contient la version de l’assembly qui contient la classe de fenêtre. La valeur de cet attribut peut être `yes` ou `no` . La valeur par défaut est `yes`. La valeur `no` doit être utilisée uniquement si la même classe de fenêtre est définie par un composant côte à côte et un composant équivalent non côte à côte et que vous souhaitez les traiter comme la même classe de fenêtre. Notez que les règles habituelles relatives à l’inscription de la classe de fenêtre s’appliquent : seul le premier composant qui inscrit la classe de fenêtre sera en mesure de l’inscrire, car aucune version ne lui est appliquée.|
 
 ## <a name="hash"></a>Hachage
  L' `hash` élément est un enfant facultatif de l' `file` élément. L’élément `hash` ne comporte pas d’attributs.
@@ -180,7 +182,7 @@ Identifie tous les fichiers non assembly téléchargés et utilisés par l’app
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  L' `dsig:DigestValue` élément est un enfant obligatoire de l' `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur texte est le hachage calculé pour le fichier spécifié.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cet élément identifie tous les fichiers qui composent l’assembly qui composent l’application et, en particulier, les valeurs de hachage pour la vérification des fichiers. Cet élément peut également inclure des données d’isolation COM (Component Object Model) associées au fichier. Si un fichier est modifié, le fichier manifeste de l’application doit également être mis à jour pour refléter la modification.
 
 ## <a name="example"></a>Exemple

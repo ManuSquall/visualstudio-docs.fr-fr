@@ -1,5 +1,7 @@
 ---
 title: '&lt;assembly &gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+description: L’élément assembly est l’élément racine et est requis dans le déploiement ClickOnce. Son premier élément contenu doit être un élément assemblyIdentity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929077"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383233"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly &gt; , élément (déploiement ClickOnce)
 Élément de niveau supérieur du manifeste de déploiement.
@@ -30,7 +32,7 @@ ms.locfileid: "62929077"
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```

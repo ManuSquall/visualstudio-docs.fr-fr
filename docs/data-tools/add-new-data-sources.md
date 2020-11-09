@@ -1,5 +1,6 @@
 ---
 title: Ajouter de nouvelles sources de données
+description: Ajoutez de nouvelles sources de données dans Visual Studio. Une source de données est un objet .NET qui se connecte à un magasin de données et met les données à la disposition d’une application .NET.
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283045"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382115"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 
@@ -51,7 +52,7 @@ Vous créez et modifiez des sources de données à l’aide de l' **Assistant Co
 Une fois que vous avez créé une source de données, celle-ci s’affiche dans la fenêtre outil **sources de données** .
 
 > [!TIP]
-> Pour ouvrir la fenêtre **sources de données** , assurez-vous que votre projet est ouvert, puis appuyez sur **MAJ** + **ALT** + **D** ou choisissez **Afficher**d'  >  **autres**  >  **sources de données**Windows.
+> Pour ouvrir la fenêtre **sources de données** , assurez-vous que votre projet est ouvert, puis appuyez sur **MAJ** + **ALT** + **D** ou choisissez **Afficher** d'  >  **autres**  >  **sources de données** Windows.
 
 Vous pouvez faire glisser une source de données depuis la fenêtre **sources de données** vers une aire de conception de formulaire ou un contrôle. Cela entraîne la génération d’un code réutilisable qui affiche les données du magasin de données.
 
@@ -95,10 +96,10 @@ Vous pouvez créer une source de données à partir des types de services suivan
 
 - [Services WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- Services web
+- SERVICES WEB
 
     > [!NOTE]
-    > Les éléments qui s’affichent dans la fenêtre **sources de données** dépendent des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lorsque vous terminez l’Assistant. Cela est dû au fait que les datasets non typés ne fournissent pas de schéma et, par conséquent, que l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
+    > Les éléments qui s’affichent dans la fenêtre **sources de données** dépendent des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’ **Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lorsque vous terminez l’Assistant. Cela est dû au fait que les datasets non typés ne fournissent pas de schéma et, par conséquent, que l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
 
 ## <a name="data-source-for-an-object"></a>Source de données d’un objet
 

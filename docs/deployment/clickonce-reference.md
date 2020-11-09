@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur ClickOnce | Microsoft Docs
+description: Utilisez ces Articles de référence pour comprendre la structure des fichiers XML utilisés pour représenter les applications ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900324"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383025"
 ---
 # <a name="clickonce-reference"></a>Informations de référence sur ClickOnce
 Les pages suivantes décrivent la structure des fichiers XML utilisés pour représenter les applications ClickOnce.
 
-## <a name="in-this-section"></a>Contenu de cette section
- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)
+## <a name="in-this-section"></a>Dans cette section
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
  Répertorie et décrit les éléments et les attributs qui composent un manifeste d’application.
 
@@ -42,7 +44,7 @@ Les pages suivantes décrivent la structure des fichiers XML utilisés pour repr
 
  Répertorie les API publiques non managées à partir de dfshim.dll.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
 
 ## <a name="related-sections"></a>Sections connexes
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

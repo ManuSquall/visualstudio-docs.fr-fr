@@ -1,5 +1,7 @@
 ---
 title: '&lt;description &gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+description: L’élément Description identifie les informations sur l’application utilisées pour créer une présence de Shell et un élément Ajout/suppression de programmes dans le panneau de configuration.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928795"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382830"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;description &gt; , élément (déploiement ClickOnce)
 Identifie les informations de l’application utilisées pour créer une présence de Shell et un élément **Ajouter ou supprimer des programmes** dans le panneau de configuration.
@@ -30,8 +32,8 @@ Identifie les informations de l’application utilisées pour créer une présen
 
 ```xml
 
-      <description 
-   publisher 
+      <description 
+   publisher 
    product
    suiteName
    supportUrl
@@ -48,7 +50,7 @@ Identifie les informations de l’application utilisées pour créer une présen
 |`suiteName`|facultatif. Identifie un sous-dossier dans le `publisher` dossier du menu **Démarrer** de Windows.|
 |`supportUrl`|facultatif. Spécifie une URL de support technique qui est affichée dans l’élément **Ajout/suppression de programmes** du panneau de configuration. Un raccourci vers cette URL est également créé pour la prise en charge des applications dans le menu **Démarrer** de Windows, lorsque le déploiement est configuré pour l’installation.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’élément description est requis dans toutes les configurations de déploiement.
 
 ## <a name="example"></a>Exemple

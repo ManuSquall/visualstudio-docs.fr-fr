@@ -1,5 +1,7 @@
 ---
 title: Déploiement ClickOnce sur Windows Vista | Microsoft Docs
+description: Découvrez comment Visual Studio génère un manifeste de contrôle de compte d’utilisateur externe pour les applications ClickOnce et Registration-Free COM, qui requièrent un manifeste externe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641488"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383077"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Déploiement ClickOnce sur Windows Vista
 
-La génération d’applications dans Visual Studio pour le contrôle de compte d’utilisateur (UAC) sur Windows Vista génère normalement un manifeste incorporé, encodé en tant que données XML binaires dans le fichier exécutable de l’application.  ClickOnce et les applications COM sans inscription requièrent un manifeste externe, de sorte que Visual Studio génère un fichier pour ces projets contenant les données UAC au lieu d’un manifeste incorporé. Pour ClickOnce et les déploiements COM sans inscription, Visual Studio utilise les informations d’un fichier appelé *app. manifest* pour générer des informations de manifeste de contrôle de compte d’utilisateur externes. Dans tous les autres cas, Visual Studio incorpore les données du contrôle de compte d’utilisateur dans le fichier exécutable de l’application.
+La génération d’applications dans Visual Studio pour le contrôle de compte d’utilisateur (UAC) sur Windows Vista génère normalement un manifeste incorporé, encodé en tant que données XML binaires dans le fichier exécutable de l’application.  Les applications ClickOnce et Registration-Free COM requièrent un manifeste externe. par conséquent, Visual Studio génère un fichier pour ces projets contenant les données UAC au lieu d’un manifeste incorporé. Pour les déploiements ClickOnce et Registration-Free COM, Visual Studio utilise les informations d’un fichier appelé *app. manifest* pour générer des informations de manifeste de contrôle de compte d’utilisateur externes. Dans tous les autres cas, Visual Studio incorpore les données du contrôle de compte d’utilisateur dans le fichier exécutable de l’application.
 
 Visual Studio fournit les options suivantes pour la génération de manifeste :
 
@@ -36,7 +38,7 @@ Visual Studio fournit les options suivantes pour la génération de manifeste :
 
 - Utilisez un manifeste externe. Générez un manifeste externe à l’aide d' *app. manifest*.
 
-   Cela génère uniquement le manifeste externe à l’aide des informations contenues dans *app. manifest*. Quand vous publiez une application à l’aide de ClickOnce ou de COM sans inscription, Visual Studio ajoute *app. manifest* au projet, puis ajoute cette option.
+   Cela génère uniquement le manifeste externe à l’aide des informations contenues dans *app. manifest*. Quand vous publiez une application à l’aide de ClickOnce ou de Registration-Free COM, Visual Studio ajoute *app. manifest* au projet, puis ajoute cette option.
 
 - N’utilisez aucun manifeste. Créez l’application sans manifeste.
 

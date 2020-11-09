@@ -1,5 +1,6 @@
 ---
 title: Ajouter la validation à un dataset multiniveau
+description: Ajoutez la validation à un jeu de données multicouches dans Visual Studio. Valider les modifications apportées à des colonnes individuelles ou à des lignes entières.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283019"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382128"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Ajouter la validation à un dataset multiniveau
 L’ajout de la validation à un DataSet qui est séparé dans une solution multiniveau est fondamentalement le même que l’ajout d’une validation à un DataSet à fichier unique (un DataSet dans un projet unique). L’emplacement suggéré pour effectuer la validation sur les données est au cours des <xref:System.Data.DataTable.ColumnChanging> événements et/ou <xref:System.Data.DataTable.RowChanging> d’une table de données.

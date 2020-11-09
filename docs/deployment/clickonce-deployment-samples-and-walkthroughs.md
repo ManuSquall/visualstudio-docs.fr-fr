@@ -1,5 +1,7 @@
 ---
 title: Exemples et procédures pas à pas relatifs au déploiement ClickOnce | Microsoft Docs
+description: Utilisez ces exemples d’applications, des exemples de code et des procédures pas à pas pour comprendre les techniques utilisées pour déployer des applications de Windows Forms, WPF et console.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8083ed11537975bfd05f546843264881fe7a7aa0
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 419fa9f917358ae19a073b5f864ee76d92c33e75
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641469"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383038"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au déploiement ClickOnce
 Cette section contient des exemples d’applications, un exemple de code et des procédures pas à pas qui illustrent la syntaxe, la structure et les techniques utilisées pour déployer des applications de Windows Forms, WPF et console.
