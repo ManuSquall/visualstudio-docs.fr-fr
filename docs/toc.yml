@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: Encapsuler le champ
                   href: ide/reference/encapsulate-field.md
+                - name: Extraire une classe de base
+                  href: ide/reference/extract-base-class.md
                 - name: Extraire l’interface
                   href: ide/reference/extract-interface.md
                 - name: Extraire la méthode
                   href: ide/reference/extract-method.md
                 - name: Extraire la fonction locale
                   href: ide/reference/extract-local-function.md
+                - name: Méthode inline
+                  href: ide/reference/inline-method.md
                 - name: Variable temporaire inline
                   href: ide/reference/inline-temporary-variable.md
                 - name: Complétion IntelliSense pour les méthodes d’extension et les types non importés
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Inverser une instruction if
                   href: ide/reference/invert-if-statement.md
-                - name: Options de refactorisation de fonction locale statique
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: Rendre une classe abstraite
+                  href: ide/reference/make-class-abstract.md
                 - name: Rendre le membre statique
                   href: ide/reference/make-member-static.md
                 - name: Déplacer la déclaration près de la référence
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: "Fractionner ou fusionner des instructions\_if"
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: Options de refactorisation de fonction locale statique
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Synchronisation de l’espace de noms et du nom du dossier
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: Synchroniser le type et le nom de fichier
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
                   href: ide/reference/use-block-body-lambda.md
+                - name: Utiliser new()
+                  href: ide/reference/use-new.md
+                - name: Utiliser les critères spéciaux
+                  href: ide/reference/use-pattern-matching.md
                 - name: 'Affectations, variables et paramètres de valeur inutilisés'
                   href: ide/reference/unused-values-parameters.md
                 - name: 'Mettre à la ligne, mettre en retrait et aligner des refactorisations'
@@ -966,7 +976,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Référence
+- name: Informations de référence
   items:
     - name: Raccourcis clavier
       items:
