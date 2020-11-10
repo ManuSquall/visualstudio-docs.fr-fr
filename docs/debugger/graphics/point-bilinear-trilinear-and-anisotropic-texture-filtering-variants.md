@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 075fc9c4be3890ce9a63c1aa79762dbd8ceaeea5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262931"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407560"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Variantes de filtrage de texture ponctuelle, bilinéaire, trilinéaire et anisotropique
 Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
@@ -33,7 +33,7 @@ Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
 
    Si vous trouvez que le coût en termes de performances est négligeable ou stable d'un mode de filtrage à un autre (par exemple, quand le GPU ciblé offre une bande passante de mémoire et un débit de nuanceur généreux), préférez le filtrage anisotropique pour accéder à une qualité d'image optimale dans votre application.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Ces variantes substituent les états de l'échantillonneur lors des appels à `ID3D11DeviceContext::PSSetSamplers` quand le mode de filtrage de l'échantillonneur fourni par l'application est l'un des suivants :
 
 - `D3D11_FILTER_MIN_MAG_MIP_POINT`
@@ -54,14 +54,14 @@ Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
 
 - `D3D11_FILTER_ANISOTROPIC`
 
-  Dans la variante **Filtrage de texture de point**, le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_MIN_MAG_MIP_POINT` ; dans la variante **Filtrage de texture bilinéaire**, il est remplacé par `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT` ; et dans la variante **Filtrage de texture trilinéaire**, il est remplacé par `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.
+  Dans la variante **Filtrage de texture de point** , le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_MIN_MAG_MIP_POINT` ; dans la variante **Filtrage de texture bilinéaire** , il est remplacé par `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT` ; et dans la variante **Filtrage de texture trilinéaire** , il est remplacé par `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.
 
-  Dans la variante **Filtrage de texture anisotropique**, le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_ANISOTROPIC`, et le paramètre d’anisotropie maximale est défini sur 16.
+  Dans la variante **Filtrage de texture anisotropique** , le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_ANISOTROPIC`, et le paramètre d’anisotropie maximale est défini sur 16.
 
 ## <a name="restrictions-and-limitations"></a>Limitations et restrictions
  Dans Direct3D, le niveau de fonctionnalité 9.1 spécifie une anisotropie maximale de 2x. Étant donné que la variante **Filtrage de texture anisotropique** essaie d’utiliser exclusivement l’anisotropie 16x, la lecture échoue quand l’analyse des frames est exécutée sur un appareil ayant un niveau de fonctionnalité 9.1. Les appareils actuels concernés par cette limitation sont notamment les tablettes Surface RT et Surface 2 ARM. Cette limitation peut aussi toucher les GPU plus anciens qui peuvent encore équiper certains ordinateurs, mais ceux-ci étant considérés comme obsolètes, ils sont de moins en moins répandus.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
  La variante **Filtrage de texture de point** peut être reproduite avec un code similaire à celui-ci :
 
 ```cpp
@@ -75,7 +75,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
  La variante **Filtrage de texture bilinéaire** peut être reproduite avec un code similaire à celui-ci :
 
 ```cpp
@@ -89,7 +89,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-3"></a>Exemple 3
  La variante **Filtrage de texture trilinéaire** peut être reproduite avec un code similaire à celui-ci :
 
 ```cpp
@@ -103,7 +103,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-4"></a>Exemple 4
  La variante **Filtrage de texture anisotropique** peut être reproduite avec un code similaire à celui-ci :
 
 ```cpp

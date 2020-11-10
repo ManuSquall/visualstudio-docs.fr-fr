@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 073943d8b6a3dbf5ee3af653a43046c3b389fbfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348403"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407638"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Guide pratique pour écrire une fonction de création de rapports d’erreurs d’exécution (C++)
 Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.
 
 L'exemple suivant montre comment définir cette fonction personnalisée.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
 
 ```cpp
 #include <stdio.h>
@@ -61,7 +61,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
 La fonction personnalisée de l'exemple suivant est un peu plus complexe. Dans cet exemple, l'instruction switch gère divers types d'erreurs, tels qu'ils sont définis dans le paramètre `reportType` de `_CrtDbgReportW`. Étant donné que vous remplacez `_CrtDbgReportW`, vous ne pouvez pas utiliser `_CrtSetReportMode`. Votre fonction doit gérer la sortie. Le premier argument variable de cette fonction prend un numéro d’erreur d’exécution. Pour plus d’informations, consultez [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
 
 ```cpp
@@ -106,7 +106,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-3"></a>Exemple 3
 Utilisez `_RTC_SetErrorFuncW` pour installer votre fonction personnalisée à la place de `_CrtDbgReportW`. Pour plus d’informations, consultez [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). La valeur de retour de `_RTC_SetErrorFuncW` est la fonction de rapport précédente, que vous pouvez enregistrer et restaurer si nécessaire.
 
 ```cpp

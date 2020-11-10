@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64816536"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407547"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur l‘ensemble des cibles de rendu et des chaînes de permutation.
@@ -28,7 +28,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
 > [!NOTE]
 > Il se peut que votre matériel ne prenne pas entièrement en charge MSAA pour tous les formats. Si l'une de ces variantes rencontre une limitation matérielle qu'il n'est pas possible de contourner, sa colonne dans le tableau de résumé des performances est vide et un message d'erreur est généré.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Ces variantes substituent le nombre d'échantillons et les arguments de qualité d'échantillon dans les appels à `ID3DDevice::CreateTexture2D`, qui sont chargés de créer des cibles de rendu. Plus précisément, ces paramètres sont substitués dans les cas suivants :
 
 - L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une cible de rendu, à savoir :
@@ -54,7 +54,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
 
  Quand le lecture détecte ce type de conflit, elle fait son possible pour répliquer le comportement visé, mais le résultat n'est pas garanti. Bien qu'il soit rare que cela affecte les performances de ces variantes ou que leur impact en soit dissimulé, cela est possible (par exemple, quand le contrôle de flux dans un nuanceur de pixels est déterminé par le contenu précis d'une texture), car le contenu de la texture répliquée risque de ne pas être identique.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
  Ces variantes peuvent être reproduites pour les cibles de rendu créées à l'aide de `ID3D11Device::CreateTexture2D` avec un code similaire à celui-ci :
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
  Ou bien, pour le chaînes de permutation créées à l'aide de IDXGISwapChain::CreateSwapChain ou D3D11CreateDeviceAndSwapChain avec un code similaire à celui-ci :
 
 ```cpp

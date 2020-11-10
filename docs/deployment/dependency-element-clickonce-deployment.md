@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382960"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407677"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency &gt; , élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste de l’application.
@@ -128,7 +128,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 ## <a name="remarks"></a>Remarques
  Les manifestes de déploiement ont généralement un `assemblyIdentity` élément unique qui identifie le nom et la version du manifeste de l’application.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
  L’exemple de code suivant montre un `dependency` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement.
 
 ```xml
@@ -147,7 +147,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 </dependency>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
  L’exemple de code suivant spécifie une dépendance sur un assembly déjà installé dans le GAC.
 
 ```xml
@@ -158,7 +158,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 </dependency>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-3"></a>Exemple 3
  L’exemple de code suivant spécifie une dépendance sur une version spécifique du common language runtime.
 
 ```xml
@@ -169,7 +169,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 </dependency>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-4"></a>Exemple 4
  L’exemple de code suivant spécifie une dépendance de système d’exploitation.
 
 ```xml

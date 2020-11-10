@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740023"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407716"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Lier des raccourcis clavier à des éléments de menu
 Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez simplement une entrée au fichier *. vsct* pour le package. Cette rubrique explique comment mapper un raccourci clavier à un bouton personnalisé, à un élément de menu ou à une commande de barre d’outils, et comment appliquer le mappage du clavier dans l’éditeur par défaut ou le limiter à un éditeur personnalisé.
@@ -31,7 +31,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Pour vérifier la disponibilité d’un raccourci clavier
 
-1. Dans la fenêtre **Outils**  >  **options**d'  >  **environnement** , sélectionnez **clavier**.
+1. Dans la fenêtre **Outils**  >  **options** d'  >  **environnement** , sélectionnez **clavier**.
 
 2. Assurez-vous que **utiliser le nouveau raccourci dans** a la valeur **Global**.
 
@@ -59,7 +59,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
 
     Affectez `guid`  les  `id` attributs et à ceux de la commande que vous souhaitez appeler.
 
-    Affectez `mod1` à l’attribut la valeur **Control**, **ALT**ou **Shift**.
+    Affectez `mod1` à l’attribut la valeur **Control** , **ALT** ou **Shift**.
 
     La section KeyBindings doit ressembler à ceci :
 
@@ -81,7 +81,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
 
    Pour que la commande soit disponible uniquement dans un éditeur personnalisé, affectez `editor` à l’attribut le nom de l’éditeur personnalisé qui a été généré par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de package lors de la création du VSPackage qui comprend l’éditeur personnalisé. Pour rechercher la valeur de nom, recherchez dans la `<Symbols>` section un `<GuidSymbol>` nœud dont l' `name` attribut se termine par « `editorfactory` . » Il s’agit du nom de l’éditeur personnalisé.
 
-## <a name="example"></a>Exemple
+## <a name="example-1"></a>Exemple 1
  Cet exemple lie le raccourci clavier **CTRL** + **ALT** + **C** à une commande nommée `cmdidMyCommand` dans un package nommé `MyPackage` .
 
 ```
@@ -98,7 +98,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
 </CommandTable>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
  Cet exemple lie le raccourci clavier **CTRL** + **B** à une commande nommée `cmdidBold` dans un projet nommé `TestEditor` . La commande est disponible uniquement dans l’éditeur personnalisé et non dans d’autres éditeurs.
 
 ```xml

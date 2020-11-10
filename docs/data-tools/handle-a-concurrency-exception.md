@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282356"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407664"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 
@@ -49,7 +49,7 @@ Cette procédure pas à pas vous guide tout au long du processus suivant :
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer** , vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
 
 2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
@@ -63,29 +63,29 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
        Après un bref laps de temps, l’exécution de la requête se termine et la base de données Northwind est créée.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
 
 Commencez par créer une nouvelle Windows Forms application :
 
-1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+1. Dans Visual Studio, dans le menu **Fichier** , sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
-4. Nommez le projet **ConcurrencyWalkthrough**, puis choisissez **OK**.
+4. Nommez le projet **ConcurrencyWalkthrough** , puis choisissez **OK**.
 
-     Le projet **ConcurrencyWalkthrough** est créé et ajouté à **Explorateur de solutions**, et un nouveau formulaire s’ouvre dans le concepteur.
+     Le projet **ConcurrencyWalkthrough** est créé et ajouté à **Explorateur de solutions** , et un nouveau formulaire s’ouvre dans le concepteur.
 
 ## <a name="create-the-northwind-dataset"></a>Créer le jeu de données Northwind
 
-Ensuite, créez un jeu de données nommé **NorthwindDataSet**:
+Ensuite, créez un jeu de données nommé **NorthwindDataSet** :
 
 1. Dans le menu **données** , choisissez **Ajouter une nouvelle source de données**.
 
    L’Assistant Configuration de source de données s’ouvre.
 
-2. Dans l’écran **choisir un type de source de données** , sélectionnez **base de**données.
+2. Dans l’écran **choisir un type de source de données** , sélectionnez **base de** données.
 
    ![Assistant Configuration de source de données dans Visual Studio](media/data-source-configuration-wizard.png)
 
@@ -112,7 +112,7 @@ Dans cette section, vous créez un <xref:System.Windows.Forms.DataGridView?displ
 
 4. Faites glisser la table sur une zone vide de votre formulaire.
 
-     Un <xref:System.Windows.Forms.DataGridView> contrôle nommé **CustomersDataGridView**et un <xref:System.Windows.Forms.BindingNavigator> **CustomersBindingNavigator**nommé sont ajoutés au formulaire qui est lié au <xref:System.Windows.Forms.BindingSource> . Cela est, à son tour, lié à la table Customers dans le NorthwindDataSet.
+     Un <xref:System.Windows.Forms.DataGridView> contrôle nommé **CustomersDataGridView** et un <xref:System.Windows.Forms.BindingNavigator> **CustomersBindingNavigator** nommé sont ajoutés au formulaire qui est lié au <xref:System.Windows.Forms.BindingSource> . Cela est, à son tour, lié à la table Customers dans le NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Tester le formulaire
 
@@ -122,7 +122,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
      Le formulaire s’affiche avec un <xref:System.Windows.Forms.DataGridView> contrôle qui est rempli avec les données de la table Customers.
 
-2. Dans le menu **Déboguer**, sélectionnez **Arrêter le débogage**.
+2. Dans le menu **Déboguer** , sélectionnez **Arrêter le débogage**.
 
 ## <a name="handle-concurrency-errors"></a>Gérer les erreurs d’accès concurrentiel
 
@@ -176,14 +176,14 @@ Créez le message en ajoutant le code suivant à l' **éditeur de code**. Entrez
 
 ### <a name="process-the-users-response"></a>Traiter la réponse de l’utilisateur
 
-Vous avez également besoin de code pour traiter la réponse de l’utilisateur à la boîte de message. Les options sont soit pour remplacer l’enregistrement en cours dans la base de données avec la modification proposée, soit pour abandonner les modifications locales et actualiser la table de données avec l’enregistrement qui se trouve actuellement dans la base de données. Si l’utilisateur choisit **Oui**, la <xref:System.Data.DataTable.Merge%2A> méthode est appelée avec l’argument *preserveChanges* défini sur **true**. Cela entraîne la réussite de la tentative de mise à jour, car la version d’origine de l’enregistrement correspond maintenant à l’enregistrement dans la base de données.
+Vous avez également besoin de code pour traiter la réponse de l’utilisateur à la boîte de message. Les options sont soit pour remplacer l’enregistrement en cours dans la base de données avec la modification proposée, soit pour abandonner les modifications locales et actualiser la table de données avec l’enregistrement qui se trouve actuellement dans la base de données. Si l’utilisateur choisit **Oui** , la <xref:System.Data.DataTable.Merge%2A> méthode est appelée avec l’argument *preserveChanges* défini sur **true**. Cela entraîne la réussite de la tentative de mise à jour, car la version d’origine de l’enregistrement correspond maintenant à l’enregistrement dans la base de données.
 
 Ajoutez le code suivant sous le code qui a été ajouté dans la section précédente :
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>Tester le formulaire
+## <a name="test-the-form-behavior"></a>Tester le comportement du formulaire
 
 Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comporte comme prévu. Pour simuler une violation d’accès concurrentiel, vous modifiez les données dans la base de données après avoir rempli le NorthwindDataSet.
 
@@ -191,20 +191,20 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
 2. Une fois que le formulaire s’affiche, laissez-le s’exécuter et basculez vers l’IDE de Visual Studio.
 
-3. Dans le menu **Affichage**, cliquez sur **Explorateur de serveurs**.
+3. Dans le menu **Affichage** , cliquez sur **Explorateur de serveurs**.
 
-4. Dans **Explorateur de serveurs**, développez la connexion que votre application utilise, puis développez le nœud **tables** .
+4. Dans **Explorateur de serveurs** , développez la connexion que votre application utilise, puis développez le nœud **tables** .
 
-5. Cliquez avec le bouton droit sur la table **Customers** , puis sélectionnez **afficher les données**de la table.
+5. Cliquez avec le bouton droit sur la table **Customers** , puis sélectionnez **afficher les données** de la table.
 
-6. Dans le premier enregistrement (**ALFKI**), remplacez **ContactName** par **Maria Anders2**.
+6. Dans le premier enregistrement ( **ALFKI** ), remplacez **ContactName** par **Maria Anders2**.
 
     > [!NOTE]
     > Accédez à une autre ligne pour valider la modification.
 
 7. Basculez vers le formulaire d’exécution du ConcurrencyWalkthrough.
 
-8. Dans le premier enregistrement du formulaire (**ALFKI**), remplacez **ContactName** par **Maria Anders1**.
+8. Dans le premier enregistrement du formulaire ( **ALFKI** ), remplacez **ContactName** par **Maria Anders1**.
 
 9. Sélectionnez le bouton **Enregistrer**.
 
