@@ -1,5 +1,7 @@
 ---
 title: Scénarios de débogage non pris en charge dans le Concepteur de workflow
+description: En savoir plus sur les scénarios de débogage non pris en charge dans le Concepteur de flux de travail, par exemple, « l’exécution ne peut pas être poursuivie après la modification du code. »
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 77d1318dbdb23516902523e9c7865dad781cb06b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9ce8d15e44fecca673fdaa9fccd70ff13eb6783
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593035"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433516"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scénarios de débogage non pris en charge dans le Concepteur de workflow
 

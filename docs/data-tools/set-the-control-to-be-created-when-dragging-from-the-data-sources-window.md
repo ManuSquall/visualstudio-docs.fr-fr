@@ -1,5 +1,6 @@
 ---
 title: Définir le contrôle à créer lors du glissement
+description: Découvrez comment définir le contrôle à créer lorsque vous faites glisser à partir de la fenêtre sources de données vers le Concepteur WPF ou le concepteur de Windows Forms dans Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036260"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434465"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
 
@@ -38,7 +39,7 @@ Dans ce contexte, le terme *objet* fait référence à un objet métier personna
 2. Dans la fenêtre **sources de données** , sélectionnez l’élément qui représente la table de données ou l’objet que vous souhaitez définir.
 
    > [!TIP]
-   > Si la fenêtre **sources de données** n’est pas ouverte, vous pouvez l’ouvrir en sélectionnant **Afficher**d'  >  **autres**  >  **sources de données**Windows.
+   > Si la fenêtre **sources de données** n’est pas ouverte, vous pouvez l’ouvrir en sélectionnant **Afficher** d'  >  **autres**  >  **sources de données** Windows.
 
 3. Cliquez sur le menu déroulant de l’élément, puis cliquez sur l’un des éléments suivants dans le menu :
 

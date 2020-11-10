@@ -1,5 +1,7 @@
 ---
 title: Compatibilité de la base de données
+description: Passez en revue les systèmes de base de données compatibles pour Visual Studio, tels que Microsoft SQL Server, Oracle, MySQL, PostgreSQL, SQLite et Firebird.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586404"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434852"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Systèmes de base de données compatibles pour Visual Studio
 
@@ -25,7 +27,7 @@ Pour développer une application connectée aux données dans Visual Studio, vou
 
 Pour qu’un système de base de données soit accessible à partir des applications .NET et apparaisse dans les fenêtres Visual Studio Data Tools, il doit avoir un fournisseur de données ADO.NET. Un fournisseur doit prendre en charge spécifiquement Entity Framework si vous envisagez d’utiliser Entity Data Models dans votre application .NET. De nombreux fournisseurs sont proposés par le biais du gestionnaire de package NuGet ou de l’Visual Studio Marketplace.
 
-Si vous utilisez des API de stockage Azure, installez les émulateurs de stockage Azure sur votre ordinateur local pendant le développement afin d’éviter des frais jusqu’à ce que vous soyez prêt à effectuer le déploiement en production. Pour plus d’informations, consultez [Utiliser l’émulateur de stockage Azure pour le développement et le test](/azure/storage/common/storage-use-emulator).
+Si vous utilisez des API de stockage Azure, installez les émulateurs de stockage Azure sur votre ordinateur local pendant le développement afin d’éviter des frais jusqu’à ce que vous soyez prêt à effectuer le déploiement en production. Pour plus d’informations, consultez [Utilisation de l’émulateur de stockage Azure pour le développement et le test](/azure/storage/common/storage-use-emulator).
 
 La liste suivante répertorie certains des systèmes de base de données les plus populaires qui peuvent être utilisés dans les projets Visual Studio. La liste n’est pas exhaustive. Pour obtenir la liste des fournisseurs tiers qui proposent des fournisseurs de données ADO.NET qui permettent une intégration profonde avec les outils Visual Studio, consultez [fournisseurs de données ADO.net](/dotnet/framework/data/adonet/data-providers).
 
@@ -39,15 +41,15 @@ Vous pouvez télécharger une version payante ou gratuite de la base de données
 
 ## <a name="mysql"></a>MySQL
 
-MySQL est un système de base de données Open source populaire qui est largement utilisé dans les entreprises et les sites Web. Les téléchargements pour MySQL, MySQL pour Visual Studio et les produits connexes se trouvent dans [MySQL sur Windows](https://www.mysql.com/why-mysql/windows/). Les tiers proposent différentes extensions Visual Studio et des applications de gestion autonomes pour MySQL. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**).
+MySQL est un système de base de données Open source populaire qui est largement utilisé dans les entreprises et les sites Web. Les téléchargements pour MySQL, MySQL pour Visual Studio et les produits connexes se trouvent dans [MySQL sur Windows](https://www.mysql.com/why-mysql/windows/). Les tiers proposent différentes extensions Visual Studio et des applications de gestion autonomes pour MySQL. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL est un système de base de données relationnel objet Open source gratuit. Pour l’installer sur Windows, vous pouvez le télécharger à partir de la [page de téléchargement de PostgreSQL](https://www.postgresql.org/download/windows/). Vous pouvez également générer PostgreSQL à partir du code source. Le système PostgreSQL Core comprend une interface en langage C. De nombreux tiers fournissent des packages NuGet pour l’utilisation de PostgreSQL à partir des applications .NET. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**). Par exemple, le package le plus populaire est fourni par [npgsql.org](http://www.npgsql.org).
+PostgreSQL est un système de base de données relationnel objet Open source gratuit. Pour l’installer sur Windows, vous pouvez le télécharger à partir de la [page de téléchargement de PostgreSQL](https://www.postgresql.org/download/windows/). Vous pouvez également générer PostgreSQL à partir du code source. Le système PostgreSQL Core comprend une interface en langage C. De nombreux tiers fournissent des packages NuGet pour l’utilisation de PostgreSQL à partir des applications .NET. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ). Par exemple, le package le plus populaire est fourni par [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite est un moteur de base de données SQL incorporé qui s’exécute dans le processus propre à l’application. Vous pouvez le télécharger à partir de la [page de téléchargement de SQLite](https://www.sqlite.org/download.html). De nombreux packages NuGet tiers pour SQLite sont également disponibles. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**).
+SQLite est un moteur de base de données SQL incorporé qui s’exécute dans le processus propre à l’application. Vous pouvez le télécharger à partir de la [page de téléchargement de SQLite](https://www.sqlite.org/download.html). De nombreux packages NuGet tiers pour SQLite sont également disponibles. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ).
 
 ## <a name="firebird"></a>Firebird
 

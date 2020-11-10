@@ -1,6 +1,8 @@
 ---
 title: Utiliser une stratégie d’archivage de l’analyse du code
 ms.date: 11/04/2016
+description: Découvrez comment utiliser une stratégie d’archivage de l’analyse du code pour vérifier que le code est conforme à l’héritage, au couplage des classes, à la maintenabilité et aux normes de complexité.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371857"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434816"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
 
@@ -27,7 +29,7 @@ Les administrateurs du contrôle de version pour Team Foundation peuvent ajouter
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’analyse du code
 
-1. Dans **Team Explorer**, cliquez avec le bouton droit sur le projet, cliquez sur **paramètres du projet**, puis sur **contrôle de code source**.
+1. Dans **Team Explorer** , cliquez avec le bouton droit sur le projet, cliquez sur **paramètres du projet** , puis sur **contrôle de code source**.
 
      La boîte de dialogue **contrôle de code source** s’affiche.
 
@@ -41,7 +43,7 @@ Les administrateurs du contrôle de version pour Team Foundation peuvent ajouter
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Pour activer les règles de maintenabilité de l’analyse du code
 
-1. Dans la boîte de dialogue **éditeur de stratégie d’analyse du code** , sous paramètres de **règle**, développez le nœud **règles de maintenabilité** .
+1. Dans la boîte de dialogue **éditeur de stratégie d’analyse du code** , sous paramètres de **règle** , développez le nœud **règles de maintenabilité** .
 
 2. Activez les cases à cocher correspondant aux règles suivantes :
 

@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour enregistrer des données avec une transaction
+description: Consultez Comment enregistrer des données à l’aide d’une transaction avec les outils de DataSet dans Visual Studio. Vous enregistrez des données dans une transaction à l’aide de l’espace de noms System. transactions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281693"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434582"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Guide pratique pour enregistrer des données avec une transaction
 
@@ -37,9 +39,9 @@ Pour restaurer la transaction, levez une exception avant d’appeler la <xref:Sy
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Pour ajouter une référence au System.Transactions.dll
 
-1. Dans le menu **Projet**, sélectionnez **Ajouter une référence**.
+1. Dans le menu **Projet** , sélectionnez **Ajouter une référence**.
 
-2. Sous l’onglet **.net** (onglet**SQL Server** pour les projets SQL Server), sélectionnez **System. transactions**, puis cliquez sur **OK**.
+2. Sous l’onglet **.net** (onglet **SQL Server** pour les projets SQL Server), sélectionnez **System. transactions** , puis cliquez sur **OK**.
 
      Une référence à *System.Transactions.dll* est ajoutée au projet.
 

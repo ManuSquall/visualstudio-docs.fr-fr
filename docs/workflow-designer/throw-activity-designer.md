@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-Throw
+description: Découvrez l’activité Throw et comment vous pouvez utiliser le concepteur d’activités Throw pour créer et configurer une activité Throw.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 650082ab0e4f8576b7028b8011c88bf5d93b2afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d836a666c0b09366f5c8f3c9245def63faba462
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593094"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433854"
 ---
 # <a name="throw-activity-designer"></a>Concepteur d'activités Throw
 

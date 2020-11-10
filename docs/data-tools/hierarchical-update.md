@@ -1,5 +1,7 @@
 ---
 title: Mise à jour hiérarchique
+description: Passez en revue les mises à jour hiérarchiques, qui impliquent l’enregistrement des données mises à jour (à partir d’un jeu de données avec 2 tables associées) dans une base de données tout en conservant les règles d’intégrité référentielle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586573"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435154"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 
@@ -38,7 +40,7 @@ Par défaut, un DataSet traite les tables associées comme des « relations uni
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Activer la mise à jour hiérarchique dans un jeu de données
 
-Par défaut, la mise à jour hiérarchique est activée pour tous les nouveaux jeux de données qui sont ajoutés ou créés dans un projet. Activez ou désactivez la mise à jour hiérarchique en affectant à la propriété **mise à jour hiérarchique** d’un jeu de données typé dans le jeu de données la **valeur true** ou **false**:
+Par défaut, la mise à jour hiérarchique est activée pour tous les nouveaux jeux de données qui sont ajoutés ou créés dans un projet. Activez ou désactivez la mise à jour hiérarchique en affectant à la propriété **mise à jour hiérarchique** d’un jeu de données typé dans le jeu de données la **valeur true** ou **false** :
 
 ![Paramètre de mise à jour hiérarchique](../data-tools/media/hierarchical-update-setting.png)
 
@@ -78,9 +80,9 @@ Toutefois, il peut arriver que vous souhaitiez restaurer le jeu de données à p
 
 Enregistrez les modifications des tables de données associées du dataset dans la base de données en appelant la méthode `TableAdapterManager.UpdateAll` et en passant le nom du dataset contenant les tables associées. Par exemple, exécutez la méthode `TableAdapterManager.UpdateAll(NorthwindDataset)` pour envoyer les mises à jour de toutes les tables de NorthwindDataset à la base de données principale.
 
-Une fois que vous avez déposé des éléments provenant de la fenêtre **Sources de données**, du code est ajouté automatiquement à l’événement `Form_Load` pour remplir chaque table (les méthodes `TableAdapter.Fill`). Du code est également ajouté à l’événement Click du bouton **Enregistrer** du <xref:System.Windows.Forms.BindingNavigator> pour enregistrer les données du dataset dans la base de données (la méthode `TableAdapterManager.UpdateAll`).
+Une fois que vous avez déposé des éléments provenant de la fenêtre **Sources de données** , du code est ajouté automatiquement à l’événement `Form_Load` pour remplir chaque table (les méthodes `TableAdapter.Fill`). Du code est également ajouté à l’événement Click du bouton **Enregistrer** du <xref:System.Windows.Forms.BindingNavigator> pour enregistrer les données du dataset dans la base de données (la méthode `TableAdapterManager.UpdateAll`).
 
-Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode de la première <xref:System.Windows.Forms.BindingSource> qui est ajoutée au formulaire. En d’autres termes, ce code est généré uniquement pour la première table déplacée de la fenêtre **sources de données** vers le formulaire. L'appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).
+Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode de la première <xref:System.Windows.Forms.BindingSource> qui est ajoutée au formulaire. En d’autres termes, ce code est généré uniquement pour la première table déplacée de la fenêtre **sources de données** vers le formulaire. L'appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer** , toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
 > Le **Concepteur de DataSet** ajoute uniquement le `BindingSource.EndEdit` Code de la première table qui est déplacée dans le formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler la méthode `BindingSource.EndEdit` pour chaque table associée dans le formulaire. Dans cette procédure pas à pas, cela signifie que vous devez ajouter un appel à la méthode `OrdersBindingSource.EndEdit`.

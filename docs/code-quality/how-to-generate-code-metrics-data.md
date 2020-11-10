@@ -1,6 +1,8 @@
 ---
 title: Générer des métriques de code à partir de l’IDE ou de la ligne de commande
 ms.date: 11/02/2018
+description: Découvrez comment générer des données de métriques du code dans Visual Studio. Consultez Utilisation de Explorateur de solutions, d’un fichier d’ensemble de règles, de la ligne de commande ou d’une commande de menu.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code metrics data
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658527"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434790"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
@@ -24,7 +26,7 @@ Vous pouvez générer des données de métriques du code de trois façons :
 
 - En activant les [analyseurs de qualité du code .net](#net-code-quality-analyzers-code-metrics-rules) et en activant les quatre règles de mesure du code (maintenabilité) qu’il contient.
 
-- En choisissant la commande de menu [ **analyser**les  >  **métriques du code** ](#calculate-code-metrics-menu-command) dans Visual Studio.
+- En choisissant la commande de menu [ **analyser** les  >  **métriques du code**](#calculate-code-metrics-menu-command) dans Visual Studio.
 
 - À partir de la [ligne de commande](#command-line-code-metrics) pour les projets C# et Visual Basic.
 
@@ -72,7 +74,7 @@ Vous pouvez configurer les seuils auxquels les règles de métriques du code se 
 
 ## <a name="calculate-code-metrics-menu-command"></a>Commande de menu calculer la métrique du code
 
-Générez des métriques de code pour un ou tous vos projets ouverts dans l’IDE à l’aide du menu **analyser**les  >  **métriques du code** .
+Générez des métriques de code pour un ou tous vos projets ouverts dans l’IDE à l’aide du menu **analyser** les  >  **métriques du code** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Générer les résultats de la métrique du code pour une solution entière
 
@@ -80,7 +82,7 @@ Vous pouvez générer des résultats de métriques du code pour une solution com
 
 - Dans la barre de menus, sélectionnez **analyser**  >  **calculer la métrique du code**  >  **pour la solution**.
 
-- Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, puis sélectionnez **calculer la métrique du code**.
+- Dans **Explorateur de solutions** , cliquez avec le bouton droit sur la solution, puis sélectionnez **calculer la métrique du code**.
 
 - Dans la fenêtre résultats de la **métrique du code** , sélectionnez le bouton calculer la métrique du **code pour la solution** .
 
@@ -88,7 +90,7 @@ Les résultats sont générés et la fenêtre résultats de la **métrique du co
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Générer les résultats de la métrique du code pour un ou plusieurs projets
 
-1. Dans **Explorateur de solutions**, sélectionnez un ou plusieurs projets.
+1. Dans **Explorateur de solutions** , sélectionnez un ou plusieurs projets.
 
 1. Dans la barre de menus, sélectionnez **analyser**  >  **calculer la métrique du code**  >  **pour le ou les projets sélectionnés**.
 
@@ -293,7 +295,7 @@ Si vous ne souhaitez pas installer le package NuGet, vous pouvez générer et ut
 
 #### <a name="metricsexe-usage"></a>Utilisation de Metrics.exe
 
-Pour exécuter *Metrics.exe*, fournissez un projet ou une solution et un fichier XML de sortie comme arguments. Par exemple :
+Pour exécuter *Metrics.exe* , fournissez un projet ou une solution et un fichier XML de sortie comme arguments. Par exemple :
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -334,7 +336,7 @@ Le nouvel outil de métriques de code de ligne de commande calcule les métrique
 La `LinesOfCode` métrique est plus précise et fiable dans le nouvel outil de métriques de code de ligne de commande. Elle est indépendante des différences de CodeGen et ne change pas lorsque l’ensemble d’outils ou le runtime change. Le nouvel outil compte les lignes de code réelles, y compris les lignes vides et les commentaires.
 ::: moniker-end
 
-D’autres métriques telles que `CyclomaticComplexity` et `MaintainabilityIndex` utilisent les mêmes formules que les versions précédentes de *Metrics.exe*, mais le nouvel outil compte le nombre d' `IOperations` instructions (source logique) à la place des instructions de langage intermédiaire (il). Les nombres sont légèrement différents de ceux générés par l’IDE de Visual Studio et par les versions précédentes de *Metrics.exe*.
+D’autres métriques telles que `CyclomaticComplexity` et `MaintainabilityIndex` utilisent les mêmes formules que les versions précédentes de *Metrics.exe* , mais le nouvel outil compte le nombre d' `IOperations` instructions (source logique) à la place des instructions de langage intermédiaire (il). Les nombres sont légèrement différents de ceux générés par l’IDE de Visual Studio et par les versions précédentes de *Metrics.exe*.
 
 ## <a name="see-also"></a>Voir aussi
 

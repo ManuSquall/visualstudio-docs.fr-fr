@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-PickBranch
+description: Découvrez comment le concepteur d’activités PickBranch fournit un chemin d’exécution basé sur les événements dans une activité Pick qui peut être déclenchée par un événement entrant.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876084"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434231"
 ---
 # <a name="pickbranch-activity-designer"></a>Concepteur d'activités PickBranch
 
@@ -31,7 +33,7 @@ Accédez à **PickBranch** Designer dans la catégorie **Flow Control** de la **
 
 Deux <xref:System.Activities.Statements.PickBranch> objets vides avec les noms d’affichage **branch1** et **branch2** sont créés par défaut comme éléments d’une <xref:System.Activities.Statements.Pick> activité lorsque le concepteur d’activités **Pick** est initialement déposé sur la concepteur de flux de travail. Ces <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valeurs de propriétés respectives peuvent être modifiées dans l’en-tête du concepteur **PickBranch** ou dans la fenêtre **Propriétés** pour chaque branche.
 
-Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> des objets à la collection d’un <xref:System.Activities.Statements.Pick> objet : en faisant glisser et en déposant le concepteur **PickBranch** à partir de la **boîte à outils**, ou en utilisant le menu contextuel à partir de l’aire de conception **Pick** :
+Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> des objets à la collection d’un <xref:System.Activities.Statements.Pick> objet : en faisant glisser et en déposant le concepteur **PickBranch** à partir de la **boîte à outils** , ou en utilisant le menu contextuel à partir de l’aire de conception **Pick** :
 
 - Le concepteur **PickBranch** crée un <xref:System.Activities.Statements.PickBranch> lorsqu’il est déplacé de la **boîte à outils** et déposé dans l’une des branches d’un concepteur d’activités **Pick** sur l’aire de concepteur de flux de travail. Les nouveaux objets <xref:System.Activities.Statements.PickBranch> peuvent être placés dans le concepteur <xref:System.Activities.Statements.Pick> à gauche ou à droite des éléments <xref:System.Activities.Statements.PickBranch> existants déjà contenus dans la collection. Quand vous faites glisser un concepteur **PickBranch** sur le concepteur de **sélection** avec une souris, le concepteur de **sélection** utilise une bande bleu-grise verticale pour indiquer où le <xref:System.Activities.Statements.PickBranch> est ajouté pour un positionnement de souris donné.
 

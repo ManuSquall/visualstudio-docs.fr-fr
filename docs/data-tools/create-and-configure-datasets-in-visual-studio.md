@@ -1,5 +1,7 @@
 ---
 title: Créer et configurer des datasets
+description: Créez et configurez des datasets dans Visual Studio. Un jeu de données est un ensemble d’objets qui stockent des données à partir d’une base de données en mémoire et prennent en charge les opérations CRUD sur ces données.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282746"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435402"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Comment : créer et configurer des datasets dans Visual Studio
 
@@ -84,7 +86,7 @@ Cette procédure montre comment ajouter une table à partir de la même base de 
 
 2. Faites glisser une <xref:System.Data.DataTable> classe de l’onglet **DataSet** de la **boîte à outils** vers le **Concepteur de DataSet**.
 
-3. Ajoutez des colonnes pour définir votre table de données. Cliquez avec le bouton droit sur la table et choisissez **Ajouter**une  >  **colonne**. Utilisez la fenêtre **Propriétés** pour définir le type de données de la colonne et une clé si nécessaire.
+3. Ajoutez des colonnes pour définir votre table de données. Cliquez avec le bouton droit sur la table et choisissez **Ajouter** une  >  **colonne**. Utilisez la fenêtre **Propriétés** pour définir le type de données de la colonne et une clé si nécessaire.
 
 Les tables autonomes doivent implémenter `Fill` une logique dans les tables autonomes afin que vous puissiez les remplir avec des données. Pour plus d’informations sur le remplissage de tables de données autonomes, consultez [remplissage d’un DataSet à partir d’un DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 

@@ -1,5 +1,7 @@
 ---
 title: Application de données simple avec WPF et Entity Framework 6
+description: Dans cette procédure pas à pas, consultez Comment créer une application Forms-on-Data simple dans Visual Studio avec Windows Presentation Foundation (WPF) et Entity Framework 6.
+ms.custom: SEO-VS-2020
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,16 +11,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 078b3eedc9971dfc444e86b9f8d7ce770fcdb966
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743390"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435491"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
-Cette procédure pas à pas montre comment créer une application de base « formulaires sur des données » dans Visual Studio. L’application utilise SQL Server base de données locale, la base de données Northwind, Entity Framework 6 (pas Entity Framework Core) et Windows Presentation Foundation pour .NET Framework (pas .NET Core). Il montre comment effectuer une liaison de données de base avec un affichage maître-détail et un navigateur de liaisons personnalisé avec des boutons pour **déplacer**vers le bas, déplacer vers le **haut**, déplacer **vers le début**, **déplacer vers la fin**, **mettre à jour** et **supprimer**.
+Cette procédure pas à pas montre comment créer une application de base « formulaires sur des données » dans Visual Studio. L’application utilise SQL Server base de données locale, la base de données Northwind, Entity Framework 6 (pas Entity Framework Core) et Windows Presentation Foundation pour .NET Framework (pas .NET Core). Il montre comment effectuer une liaison de données de base avec un affichage maître-détail et un navigateur de liaisons personnalisé avec des boutons pour **déplacer** vers le bas, déplacer vers le **haut** , déplacer **vers le début** , **déplacer vers la fin** , **mettre à jour** et **supprimer**.
 
 Cet article se concentre sur l’utilisation des outils de données dans Visual Studio et ne tente pas d’expliquer les technologies sous-jacentes en toute profondeur. Il part du principe que vous avez une connaissance de base de XAML, Entity Framework et SQL. Cet exemple ne montre pas non plus l’architecture MVVM (Model-View-ViewModel), qui est standard pour les applications WPF. Toutefois, vous pouvez copier ce code dans votre propre application MVVM avec quelques modifications.
 
@@ -26,11 +28,11 @@ Cet article se concentre sur l’utilisation des outils de données dans Visual 
 
 Cet exemple utilise SQL Server Express base de données locale et l’exemple de base de données Northwind. Si le fournisseur de données ADO.NET pour ce produit prend en charge Entity Framework, il doit également fonctionner avec d’autres produits de base de données SQL.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans **Visual Studio Installer**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la charge de travail **Développement .NET Desktop**, ou l’installer comme un composant seul.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans **Visual Studio Installer** , vous pouvez installer SQL Server Express LocalDB dans le cadre de la charge de travail **Développement .NET Desktop** , ou l’installer comme un composant seul.
 
 2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
-    1. Dans Visual Studio, ouvrez la fenêtre de **Explorateur d’objets SQL Server** . (**Explorateur d’objets SQL Server** est installé dans le cadre de la charge de travail **stockage et traitement des données** dans le **Visual Studio installer**.) Développez le nœud **SQL Server** . Cliquez avec le bouton droit sur votre instance de base de données locale, puis sélectionnez **nouvelle requête**.
+    1. Dans Visual Studio, ouvrez la fenêtre de **Explorateur d’objets SQL Server** . ( **Explorateur d’objets SQL Server** est installé dans le cadre de la charge de travail **stockage et traitement des données** dans le **Visual Studio installer**.) Développez le nœud **SQL Server** . Cliquez avec le bouton droit sur votre instance de base de données locale, puis sélectionnez **nouvelle requête**.
 
        Une fenêtre de l’éditeur de requête s’ouvre.
 
@@ -46,11 +48,11 @@ Cet exemple utilise SQL Server Express base de données locale et l’exemple de
 
 1. Dans Visual Studio, créez un projet d' **application WPF** C#.
 
-2. Ajoutez le package NuGet pour Entity Framework 6. Dans **Explorateur de solutions**, sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet**  >  **gérer les packages NuGet**.
+2. Ajoutez le package NuGet pour Entity Framework 6. Dans **Explorateur de solutions** , sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet**  >  **gérer les packages NuGet**.
 
      ![Élément de menu gérer les packages NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3. Dans le **Gestionnaire de package NuGet**, cliquez sur le lien **Parcourir** . Entity Framework est probablement le package le plus haut dans la liste. Cliquez sur **installer** dans le volet droit et suivez les invites. La fenêtre sortie vous indique quand l’installation est terminée.
+3. Dans le **Gestionnaire de package NuGet** , cliquez sur le lien **Parcourir** . Entity Framework est probablement le package le plus haut dans la liste. Cliquez sur **installer** dans le volet droit et suivez les invites. La fenêtre sortie vous indique quand l’installation est terminée.
 
      ![Entity Framework package NuGet](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
@@ -68,7 +70,7 @@ Cet exemple utilise SQL Server Express base de données locale et l’exemple de
 
 3. Dans l’écran suivant, entrez ou choisissez votre connexion à la base de données locale Northwind (par exemple, (\MSSQLLocalDB), spécifiez la base de données Northwind, puis cliquez sur **suivant**.
 
-4. Dans la page suivante de l’Assistant, choisissez les tables, les procédures stockées et les autres objets de base de données à inclure dans le modèle de Entity Framework. Développez le nœud dbo dans l’arborescence, puis choisissez **Customers**, **Orders**et **Order Details**. Laissez les valeurs par défaut activées et cliquez sur **Terminer**.
+4. Dans la page suivante de l’Assistant, choisissez les tables, les procédures stockées et les autres objets de base de données à inclure dans le modèle de Entity Framework. Développez le nœud dbo dans l’arborescence, puis choisissez **Customers** , **Orders** et **Order Details**. Laissez les valeurs par défaut activées et cliquez sur **Terminer**.
 
     ![Choisir les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -78,7 +80,7 @@ Cet exemple utilise SQL Server Express base de données locale et l’exemple de
 
     L’aire du concepteur pour le fichier *. edmx* vous permet de modifier certaines propriétés et relations dans le modèle. Nous n’allons pas utiliser le concepteur dans cette procédure pas à pas.
 
-6. Les fichiers *. TT* sont à usage général et vous devez en modifier l’un pour travailler avec la liaison de liaison WPF, ce qui requiert ObservableCollections. Dans **Explorateur de solutions**, développez le nœud Northwind_model jusqu’à ce que vous trouviez *Northwind_model. TT*. (Assurez-vous que vous n’êtes pas dans le *. Fichier Context.tt* , qui se trouve directement sous le fichier *. edmx* .)
+6. Les fichiers *. TT* sont à usage général et vous devez en modifier l’un pour travailler avec la liaison de liaison WPF, ce qui requiert ObservableCollections. Dans **Explorateur de solutions** , développez le nœud Northwind_model jusqu’à ce que vous trouviez *Northwind_model. TT*. (Assurez-vous que vous n’êtes pas dans le *. Fichier Context.tt* , qui se trouve directement sous le fichier *. edmx* .)
 
    - Remplacez les deux occurrences de <xref:System.Collections.ICollection> par <xref:System.Collections.ObjectModel.ObservableCollection%601> .
 
@@ -114,11 +116,11 @@ Il est possible d’écrire votre propre code DataBinding, mais il est beaucoup 
         </Grid.RowDefinitions>
     ```
 
-5. Maintenant, ouvrez *MainWindow. Xaml* afin de l’afficher dans le concepteur. La fenêtre **sources de données** s’affiche alors en tant qu’option dans la marge de la fenêtre Visual Studio en regard de la **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou appuyez sur **MAJ** + **ALT** + **D** ou choisissez **Afficher**d'  >  **autres**  >  **sources de données**Windows. Nous allons afficher chaque propriété de la classe Customers dans sa propre zone de texte individuelle. Tout d’abord, cliquez sur la flèche dans la zone de liste déroulante **Customers** et choisissez **Details**. Ensuite, faites glisser le nœud sur la partie centrale de l’aire de conception afin que le concepteur sache que vous souhaitez qu’il figure dans la ligne du milieu. Si vous l’avez égaré, vous pouvez spécifier la ligne manuellement plus tard dans le code XAML. Par défaut, les contrôles sont placés verticalement dans un élément Grid, mais à ce stade, vous pouvez les réorganiser comme vous le souhaitez dans le formulaire. Par exemple, il peut être judicieux de placer la zone de texte **nom** en haut, au-dessus de l’adresse. L’exemple d’application de cet article réorganise les champs et les réorganise en deux colonnes.
+5. Maintenant, ouvrez *MainWindow. Xaml* afin de l’afficher dans le concepteur. La fenêtre **sources de données** s’affiche alors en tant qu’option dans la marge de la fenêtre Visual Studio en regard de la **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou appuyez sur **MAJ** + **ALT** + **D** ou choisissez **Afficher** d'  >  **autres**  >  **sources de données** Windows. Nous allons afficher chaque propriété de la classe Customers dans sa propre zone de texte individuelle. Tout d’abord, cliquez sur la flèche dans la zone de liste déroulante **Customers** et choisissez **Details**. Ensuite, faites glisser le nœud sur la partie centrale de l’aire de conception afin que le concepteur sache que vous souhaitez qu’il figure dans la ligne du milieu. Si vous l’avez égaré, vous pouvez spécifier la ligne manuellement plus tard dans le code XAML. Par défaut, les contrôles sont placés verticalement dans un élément Grid, mais à ce stade, vous pouvez les réorganiser comme vous le souhaitez dans le formulaire. Par exemple, il peut être judicieux de placer la zone de texte **nom** en haut, au-dessus de l’adresse. L’exemple d’application de cet article réorganise les champs et les réorganise en deux colonnes.
 
      ![Liaison de la source de données des clients à des contrôles individuels](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
-     Dans le mode Code, vous pouvez maintenant voir un nouvel `Grid` élément dans la ligne 1 (la ligne du milieu) de la grille parente. La grille parente a un `DataContext` attribut qui fait référence à un CollectionViewSource qui a été ajouté à l' `Windows.Resources` élément. À partir de ce contexte de données, lorsque la première zone de texte se lie à **Address**, ce nom est mappé à la `Address` propriété dans l' `Customer` objet actuel dans le CollectionViewSource.
+     Dans le mode Code, vous pouvez maintenant voir un nouvel `Grid` élément dans la ligne 1 (la ligne du milieu) de la grille parente. La grille parente a un `DataContext` attribut qui fait référence à un CollectionViewSource qui a été ajouté à l' `Windows.Resources` élément. À partir de ce contexte de données, lorsque la première zone de texte se lie à **Address** , ce nom est mappé à la `Address` propriété dans l' `Customer` objet actuel dans le CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -148,7 +150,7 @@ Il est possible d’écrire votre propre code DataBinding, mais il est beaucoup 
 
 La disposition par défaut générée par Visual Studio n’est pas idéale pour votre application. nous fournirons donc le XAML final ici pour copier dans votre code. Vous avez également besoin de « formulaires » (qui sont en fait des grilles) pour permettre à l’utilisateur d’ajouter un nouveau client ou une nouvelle commande. Pour pouvoir ajouter un nouveau client et une nouvelle commande, vous avez besoin d’un ensemble distinct de zones de texte qui ne sont pas liées aux données de `CollectionViewSource` . Vous allez contrôler la grille que l’utilisateur voit à un moment donné en définissant la propriété visible dans les méthodes de gestionnaire. Enfin, vous ajoutez un bouton supprimer à chaque ligne de la grille Orders pour permettre à l’utilisateur de supprimer une commande individuelle.
 
-Tout d’abord, ajoutez ces styles à l' `Windows.Resources` élément dans *MainWindow. Xaml*:
+Tout d’abord, ajoutez ces styles à l' `Windows.Resources` élément dans *MainWindow. Xaml* :
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">

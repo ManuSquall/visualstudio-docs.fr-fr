@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-Receive
+description: En savoir plus sur l’activité Receive et sur l’utilisation du concepteur d’activités Receive pour créer et configurer une activité Receive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f49a32036fcfd5e9f75f3d8dd61499c4af0b2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6414d92cea867a1235d73a39b6415ab884651ec
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875720"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434192"
 ---
 # <a name="receive-activity-designer"></a>Concepteur d'activités Receive
 
@@ -46,7 +48,7 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | Faux | Spécifie les corrélations entre des activités <xref:System.ServiceModel.Activities.Receive> dans des opérations de service d'un workflow avec un objet <xref:System.ServiceModel.MessageQuerySet>. Cliquez sur le bouton de sélection en regard de la <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propriété dans la grille des propriétés pour ouvrir la boîte de dialogue **Définition CorrelatesOn** . Pour plus d’informations sur l’utilisation de cette boîte de dialogue, consultez la rubrique de la boîte de [dialogue Définition du contenu](../workflow-designer/content-definition-dialog-box.md) . |
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | Faux | Spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour router le message vers l'instance de workflow appropriée.<br /><br /> Cliquez sur le bouton de sélection en regard de la <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> propriété dans la grille des propriétés pour ouvrir la boîte de dialogue **éditeur d’expressions** . Pour plus d’informations sur l’utilisation de cette boîte de dialogue, consultez la rubrique [Comment : utiliser l’éditeur d’expressions](../workflow-designer/how-to-use-the-expression-editor.md) . |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | Faux | Spécifie la collection d’objets <xref:System.ServiceModel.Activities.CorrelationInitializer> initialisant plusieurs objets <xref:System.ServiceModel.Activities.CorrelationHandle> qui configurent cette activité <xref:System.ServiceModel.Activities.Receive> dans le workflow. Cliquez sur le bouton de sélection en regard de la <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> propriété dans la grille des propriétés pour ouvrir la boîte de dialogue **Ajouter des initialiseurs de corrélation** . Pour plus d’informations sur l’utilisation de cette zone, consultez la rubrique de la boîte de [dialogue Ajouter un CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) . |
-| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | Faux | Spécifie une valeur qui détermine si une nouvelle instance de workflow est créée pour traiter le message si le message n'est pas corrélé à une instance de workflow existante. Si la valeur est définie sur **true**, une nouvelle instance de workflow est créée pour traiter le message lorsque le message n’est pas corrélé avec une instance de flux de travail existante. |
+| <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | Faux | Spécifie une valeur qui détermine si une nouvelle instance de workflow est créée pour traiter le message si le message n'est pas corrélé à une instance de workflow existante. Si la valeur est définie sur **true** , une nouvelle instance de workflow est créée pour traiter le message lorsque le message n’est pas corrélé avec une instance de flux de travail existante. |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | Faux | Spécifie une collection de types connus pour l'opération de service implémentée par cette activité <xref:System.ServiceModel.Activities.Receive>. Cette propriété doit être utilisée conjointement à la propriété <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> affectée de la valeur <xref:System.Runtime.Serialization.DataContractSerializer>. Elle est ignorée si <xref:System.Xml.Serialization.XmlSerializer> est utilisé.<br /><br /> Sélectionnez le bouton de sélection en regard du champ **KnownTypes** dans la grille des propriétés pour afficher la boîte de dialogue **éditeur de collections** de types qui vous permet d’ajouter des types pertinents. Pour plus d’informations sur l’utilisation de cette zone, consultez la rubrique de la boîte de [dialogue Éditeur de collections de types](../workflow-designer/type-collection-editor-dialog-box.md) . |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | Faux | Spécifie l'objet <xref:System.Net.Security.ProtectionLevel> du message.<br /><br /> 1.  <xref:System.Net.Security.ProtectionLevel> signifie authentification uniquement.<br />2.  <xref:System.Net.Security.ProtectionLevel> signifie que les données sont signées pour aider à garantir l’intégrité des données transmises.<br />3.  <xref:System.Net.Security.ProtectionLevel> signifie chiffrer et signer des données pour garantir la confidentialité et l’intégrité des données transmises. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | Faux | Spécifie le type de sérialiseur à utiliser pour l'opération de service implémentée par l'activité <xref:System.ServiceModel.Activities.Receive>. La valeur par défaut est <xref:System.Runtime.Serialization.DataContractSerializer>, qui sérialise et désérialise une instance d'un type dans un flux ou document XML utilisant un contrat de données fourni. <xref:System.Xml.Serialization.XmlSerializer> peut également être utilisé s'il est nécessaire de mieux contrôler les données XML. |
@@ -57,6 +59,6 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Envoyer](../workflow-designer/send-activity-designer.md)
+- [Envoi](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

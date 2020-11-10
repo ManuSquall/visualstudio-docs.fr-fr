@@ -1,5 +1,7 @@
 ---
 title: Concepteurs d’activités Concepteur de flux de travail-Runtime
+description: Découvrez comment vous pouvez utiliser les concepteurs d’activités Runtime pour rendre persistantes et terminer les activités de workflow dans le Concepteur de flux de travail.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4fdadcd58e0118ff66525b5b6141b8ea29f69b2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875486"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434088"
 ---
 # <a name="runtime-activity-designers"></a>Concepteurs d'activités d'exécution
 Les concepteurs d'activités d'exécution permettent de rendre persistantes des activités de workflow et de les arrêter. Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation des concepteurs d’activités Concepteur de flux de travail.

@@ -1,5 +1,6 @@
 ---
 title: Mapper des méthodes DataContext à des sprocs et des fonctions
+description: Apprenez à créer des méthodes DataContext mappées à des procédures stockées (sprocs) et à des fonctions à l’aide de Concepteur Objet Relationnel (Concepteur O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6926631cfd9d04992d92553a346348ea18af847
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4cb02a7fc7fdcbb4ff3c9c3750e722ff0fe031a5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038333"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434946"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Guide pratique pour créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)
 
@@ -34,7 +35,7 @@ Vous pouvez créer des <xref:System.Data.Linq.DataContext> méthodes en faisant 
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Pour créer des méthodes DataContext qui retournent automatiquement les types générés
 
-1. Dans **Explorateur de serveurs** ou **Explorateur de base de données**, développez le nœud **procédures stockées** de la base de données avec laquelle vous travaillez.
+1. Dans **Explorateur de serveurs** ou **Explorateur de base de données** , développez le nœud **procédures stockées** de la base de données avec laquelle vous travaillez.
 
 2. Localisez la procédure stockée souhaitée et faites-la glisser sur une zone vide du **Concepteur O/R**.
 
@@ -42,7 +43,7 @@ Vous pouvez créer des <xref:System.Data.Linq.DataContext> méthodes en faisant 
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Pour créer des méthodes DataContext qui ont le type de retour d'une classe d'entité
 
-1. Dans **Explorateur de serveurs** ou **Explorateur de base de données**, développez le nœud **procédures stockées** de la base de données avec laquelle vous travaillez.
+1. Dans **Explorateur de serveurs** ou **Explorateur de base de données** , développez le nœud **procédures stockées** de la base de données avec laquelle vous travaillez.
 
 2. Localisez la procédure stockée souhaitée et faites-la glisser sur une classe d’entité existante dans le **Concepteur O/R**.
 

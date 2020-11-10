@@ -1,6 +1,8 @@
 ---
 title: Supprimer les violations d’analyse du code pour le code généré
 ms.date: 05/13/2019
+description: Découvrez comment supprimer les avertissements d’analyse du code pour le code généré. Consultez Comment empêcher Visual Studio d’afficher les avertissements d’analyse héritée sur le code généré.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175df8bb4dded4f66508ef405e031178606fd531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371805"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435545"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Comment : supprimer des avertissements d’analyse du code pour du code généré
 

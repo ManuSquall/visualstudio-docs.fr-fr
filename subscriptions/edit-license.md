@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 11/09/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent modifier les affectations d’abonnements.
-ms.openlocfilehash: 785bad481e4329647582d1f441988b1cd83a055a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382492"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433555"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur d’abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.
@@ -39,6 +39,8 @@ Regardez cette vidéo ou lisez pour savoir comment modifier plusieurs abonnés �
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
+> [!NOTE]
+> Ne modifiez pas les GUID d’abonnement dans le modèle. Pour plus d’informations sur l' [affectation de GUID d’abonnement spécifiques](assign-guid.md), consultez notre article.
 
 1. Pour modifier plusieurs abonnés à la fois, accédez à l’onglet abonnés. Dans le ruban en haut, cliquez sur **modification en bloc**.
 
@@ -46,7 +48,7 @@ Regardez cette vidéo ou lisez pour savoir comment modifier plusieurs abonnés �
    > [!div class="mx-imgBorder"]
    > ![Modification d’une licence - Exporter la liste des modifications en bloc](_img/edit-license/edit-license-bulk-edit-export.png "Cliquez sur exporter ce Excel pour créer une liste de vos abonnements actuels.")
 
-3. Ensuite, enregistrez le fichier à un emplacement local pour pouvoir le retrouver facilement si vous avez besoin d’y apporter des modifications avant le chargement. Pour garantir la réussite du téléchargement, **ne modifiez pas le niveau d’abonnement ou le GUID** de l’abonnement dans le fichier de modification en bloc, car cela entraînera l’échec du chargement.
+3. Ensuite, enregistrez le fichier à un emplacement local pour pouvoir le retrouver facilement si vous avez besoin d’y apporter des modifications avant le chargement. 
 
 4. Revenez au portail d’administration des abonnements Visual Studio et, dans la boîte de dialogue Modification en bloc, cliquez sur **Parcourir**. Sélectionnez le fichier Excel que vous avez enregistré, puis cliquez sur **OK**. Vous pouvez observer la progression du chargement à l’écran.
    > [!div class="mx-imgBorder"]

@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-Throw
+description: En savoir plus sur l’activité de Relevez et sur l’utilisation du concepteur d’activités Rethrow pour créer et configurer une activité de nouvelle levée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9195fc95ac905213b048aa16882ea6584adacd33
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114754"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434114"
 ---
 # <a name="rethrow-activity-designer"></a>Concepteur d'activités Rethrow
 
@@ -35,7 +37,7 @@ Le tableau suivant présente les <xref:System.Activities.Statements.Rethrow> Pro
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Rethrow>. La valeur par défaut est Rethrow.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Rethrow>. La valeur par défaut est Rethrow.|
 
 ## <a name="see-also"></a>Voir aussi
 

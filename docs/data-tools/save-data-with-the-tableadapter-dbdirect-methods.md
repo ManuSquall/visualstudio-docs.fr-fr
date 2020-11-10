@@ -1,5 +1,7 @@
 ---
 title: Enregistrer des données avec les méthodes DBDirect du TableAdapter
+description: Dans cette procédure pas à pas, exécutez des instructions SQL directement sur une base de données à l’aide des méthodes DBDirect d’un TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281607"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434569"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
 
@@ -43,7 +45,7 @@ Pendant cette procédure pas à pas, vous allez apprendre à :
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer** , vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
 
 2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
@@ -61,19 +63,19 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 La première étape consiste à créer une **Application Windows Forms**.
 
-1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+1. Dans Visual Studio, dans le menu **Fichier** , sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
-4. Nommez le projet **TableAdapterDbDirectMethodsWalkthrough**, puis choisissez **OK**.
+4. Nommez le projet **TableAdapterDbDirectMethodsWalkthrough** , puis choisissez **OK**.
 
-     Le projet **TableAdapterDbDirectMethodsWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.
+     Le projet **TableAdapterDbDirectMethodsWalkthrough** est créé et ajouté à l’ **Explorateur de solutions**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
 
-Cette étape utilise l’**Assistant Configuration de source de données** pour créer une source de données basée sur la table `Region` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/installing-database-systems-tools-and-samples.md).
+Cette étape utilise l’ **Assistant Configuration de source de données** pour créer une source de données basée sur la table `Region` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
@@ -81,9 +83,9 @@ Cette étape utilise l’**Assistant Configuration de source de données** pour 
 
    La fenêtre **Sources de données** s’ouvre.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’**Assistant Configuration de source de données**.
+2. Dans la fenêtre **Sources de données** , sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’ **Assistant Configuration de source de données**.
 
-3. Dans l’écran **choisir un type de source de données** , sélectionnez **base de**données, puis sélectionnez **suivant**.
+3. Dans l’écran **choisir un type de source de données** , sélectionnez **base de** données, puis sélectionnez **suivant**.
 
 4. Sur l’écran **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
@@ -113,7 +115,7 @@ Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xr
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Pour ajouter des boutons pour appeler les méthodes DbDirect individuelles de TableAdapter
 
-1. Faites glisser trois contrôles <xref:System.Windows.Forms.Button> depuis la **Boîte à outils** vers **Form1** (sous la **RegionDataGridView**).
+1. Faites glisser trois contrôles <xref:System.Windows.Forms.Button> depuis la **Boîte à outils** vers **Form1** (sous la **RegionDataGridView** ).
 
 2. Définissez les propriétés **Name** et **Text** suivantes sur chaque bouton.
 

@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-Pick
+description: Découvrez comment l’activité Pick fournit un workflow de contrôle basé sur les événements et exécute l’une des différentes branches en réponse à un événement de déclenchement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ebd0dbfa8274b370a7e84b1033465e2be0b4a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9968a00a1e4530e22abe25819c9e3d5188bcefa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876032"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434244"
 ---
 # <a name="pick-activity-designer"></a>Concepteur d'activités Pick
 

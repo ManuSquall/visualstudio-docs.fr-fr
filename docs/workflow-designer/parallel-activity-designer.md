@@ -1,5 +1,7 @@
 ---
 title: Concepteur de flux de travail-concepteur d’activités parallèles
+description: En savoir plus sur l’activité parallèle et sur l’utilisation du concepteur d’activités parallèles pour exécuter simultanément une collection d’activités enfants.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593159"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435597"
 ---
 # <a name="parallel-activity-designer"></a>Concepteur d'activités Parallel
 
@@ -25,7 +27,7 @@ L'activité <xref:System.Activities.Statements.Parallel> exécute simultanément
 
 L'activité <xref:System.Activities.Statements.Parallel> stocke ses activités enfants dans une collection <xref:System.Activities.Statements.Parallel.Branches%2A>. Utilisez l'activité <xref:System.Activities.Statements.Parallel> au lieu de l'activité <xref:System.Activities.Statements.Sequence> si quelques-unes des activités enfants peuvent devenir inactives.
 
-L' <xref:System.Activities.Statements.Parallel> activité a une <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propriété qui contient une expression Visual Basic spécifiée par l’utilisateur. L’activité <xref:System.Activities.Statements.Parallel> évalue cette propriété après l’exécution de chaque branche. Si elle prend la **valeur true**, l' <xref:System.Activities.Statements.Parallel> activité se termine sans exécuter les autres branches. Si <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> n’a pas la **valeur true**, l' <xref:System.Activities.Statements.Parallel> activité se termine lorsque toutes ses activités enfants sont terminées.
+L' <xref:System.Activities.Statements.Parallel> activité a une <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propriété qui contient une expression Visual Basic spécifiée par l’utilisateur. L’activité <xref:System.Activities.Statements.Parallel> évalue cette propriété après l’exécution de chaque branche. Si elle prend la **valeur true** , l' <xref:System.Activities.Statements.Parallel> activité se termine sans exécuter les autres branches. Si <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> n’a pas la **valeur true** , l' <xref:System.Activities.Statements.Parallel> activité se termine lorsque toutes ses activités enfants sont terminées.
 
 ### <a name="using-the-parallel-activity-designer"></a>Utilisation du concepteur d'activités Parallel
 
@@ -43,7 +45,7 @@ Le tableau suivant répertorie les propriétés des activités parallèles et d�
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom d'affichage convivial du concepteur d'activités dans l'en-tête. La valeur par défaut est **Parallel**. La valeur peut éventuellement être modifiée dans la grille des **Propriétés** ou directement dans l’en-tête du concepteur d’activités.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Vrai|Contient la collection des activités enfants à exécuter.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Faux|Évaluée une fois qu'une branche est terminée. Si elle prend la **valeur true**, les branches planifiées en attente sont annulées. Si cette propriété n’est pas définie ou a la valeur **false**, l’activité se termine lorsque toutes ses activités enfants sont terminées. La valeur par défaut est **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Faux|Évaluée une fois qu'une branche est terminée. Si elle prend la **valeur true** , les branches planifiées en attente sont annulées. Si cette propriété n’est pas définie ou a la valeur **false** , l’activité se termine lorsque toutes ses activités enfants sont terminées. La valeur par défaut est **null**.|
 
 ## <a name="see-also"></a>Voir aussi
 

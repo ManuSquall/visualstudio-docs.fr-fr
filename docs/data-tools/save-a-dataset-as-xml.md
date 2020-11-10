@@ -1,5 +1,7 @@
 ---
 title: Enregistrer un dataset au format XML
+description: Enregistrez un DataSet au format XML. Accédez aux données XML d’un DataSet en appelant les méthodes XML disponibles sur le DataSet, telles que GetXml ou WriteXml.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e454aca47f9bf6425ef2dfd98747869c27523f2c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281732"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434621"
 ---
 # <a name="save-a-dataset-as-xml"></a>Enregistrer un dataset au format XML
 

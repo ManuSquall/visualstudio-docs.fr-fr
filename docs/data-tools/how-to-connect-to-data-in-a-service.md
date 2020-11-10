@@ -1,5 +1,7 @@
 ---
 title: 'Comment : se connecter à des données dans un service'
+description: Connectez votre application aux données retournées par un service en exécutant l’Assistant Configuration de source de données et en sélectionnant service dans la page choisir un type de source de données.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282226"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435011"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Guide pratique pour se connecter à des données dans un service
 
@@ -30,7 +32,7 @@ Pour connecter votre application aux données retournées par un service, exécu
 Une fois l’Assistant terminé, une référence de service est ajoutée à votre projet et est immédiatement disponible dans la [fenêtre sources de données](add-new-data-sources.md#data-sources-window).
 
 > [!NOTE]
-> Les éléments qui s’affichent dans la fenêtre **Sources de données** dépendent des informations retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lors de la fin de l’Assistant. En effet, comme les datasets non typés ne fournissent pas de schéma, l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
+> Les éléments qui s’affichent dans la fenêtre **Sources de données** dépendent des informations retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’ **Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lors de la fin de l’Assistant. En effet, comme les datasets non typés ne fournissent pas de schéma, l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

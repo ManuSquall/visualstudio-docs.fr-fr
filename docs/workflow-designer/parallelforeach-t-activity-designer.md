@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-ParallelForEach &lt; T &gt;
+description: Découvrez comment l' <T> activité ParallelForEach énumère les éléments d’une collection et exécute une instruction incorporée pour chaque élément de la collection en parallèle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57c8414637d767a57cf9021d907bfb6e1fe467ef
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876045"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435558"
 ---
 # <a name="parallelforeach-activity-designer"></a>Concepteur d’activités ParallelForEach 
 
 L’activité <xref:System.Activities.Statements.ParallelForEach%601> énumère les éléments d’une collection et, pour chacun d’eux, exécute en parallèle une instruction incorporée, qui se trouve de façon asynchrone sur le même thread. Utilisez cette activité de contrôle de flux au lieu de l'activité <xref:System.Activities.Statements.Sequence> si ses activités enfants sont censées devenir inactives.
 
-L' <xref:System.Activities.Statements.ParallelForEach%601> activité a une <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> propriété qui contient une expression Visual Basic spécifiée par l’utilisateur. L’activité <xref:System.Activities.Statements.ParallelForEach%601> évalue cette propriété après l’exécution de chaque branche. Si elle prend la **valeur true**, l' <xref:System.Activities.Statements.ParallelForEach%601> activité se termine sans exécuter les autres branches. Si <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> n’a pas la **valeur true**, l' <xref:System.Activities.Statements.ParallelForEach%601> activité se termine lorsque toutes ses activités enfants sont terminées.
+L' <xref:System.Activities.Statements.ParallelForEach%601> activité a une <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> propriété qui contient une expression Visual Basic spécifiée par l’utilisateur. L’activité <xref:System.Activities.Statements.ParallelForEach%601> évalue cette propriété après l’exécution de chaque branche. Si elle prend la **valeur true** , l' <xref:System.Activities.Statements.ParallelForEach%601> activité se termine sans exécuter les autres branches. Si <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> n’a pas la **valeur true** , l' <xref:System.Activities.Statements.ParallelForEach%601> activité se termine lorsque toutes ses activités enfants sont terminées.
 
 ## <a name="the-parallelforeacht-activity"></a>Activité ParallelForEach<T \>
 
@@ -33,9 +35,9 @@ Par contre, si des activités dans la propriété <xref:System.Activities.Statem
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>Utilisation du \<T> Concepteur d’activités ParallelForEach
 
-Accédez au concepteur d’activités ** \<T> ParallelForEach** dans la catégorie **Flow Control** de la **boîte à outils**.
+Accédez au concepteur d’activités **\<T> ParallelForEach** dans la catégorie **Flow Control** de la **boîte à outils**.
 
-Le concepteur d’activités **ParallelForEach \<T> ** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les concepteurs d’activités sont généralement placés, par exemple dans un concepteur d’activités **Sequence** . Après l’avoir supprimée dans le Concepteur de flux de travail, elle crée une <xref:System.Activities.Statements.ParallelForEach%601> activité, qui, par défaut, contient une valeur <xref:System.Activities.Activity.DisplayName%2A> de **ParallelForEach<Int32 \> .**
+Le concepteur d’activités **ParallelForEach \<T>** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les concepteurs d’activités sont généralement placés, par exemple dans un concepteur d’activités **Sequence** . Après l’avoir supprimée dans le Concepteur de flux de travail, elle crée une <xref:System.Activities.Statements.ParallelForEach%601> activité, qui, par défaut, contient une valeur <xref:System.Activities.Activity.DisplayName%2A> de **ParallelForEach<Int32 \> .**
 
 ### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>ParallelForEach<T \> dans le concepteur de flux de travail
 
@@ -44,12 +46,12 @@ Le tableau suivant répertorie les propriétés les plus utiles de l'activité <
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom d'affichage convivial du concepteur d'activités dans l'en-tête. La valeur par défaut **est \<Int32> ParallelForEach**. La valeur peut éventuellement être modifiée dans la grille des **Propriétés** ou directement dans l’en-tête du concepteur d’activités.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Faux|Activité à exécuter pour chaque élément dans la collection. Pour ajouter l' <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> activité, déplacez une activité de la boîte à outils vers la zone **Body** sur le concepteur d’activités **ParallelForEach \<T> ** avec le texte d’indication « déposer l’activité ici ».|
-|**TypeArgument**|Vrai|Type des éléments dans la <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> collection spécifiée par le paramètre générique *T*. Par défaut, **TypeArgument** a la valeur **Int32**. Pour modifier le type T dans le concepteur d’activités **ParallelForEach<T \> ** , modifiez la valeur de la zone de liste déroulante **TypeArgument** dans la grille des propriétés.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Faux|Activité à exécuter pour chaque élément dans la collection. Pour ajouter l' <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> activité, déplacez une activité de la boîte à outils vers la zone **Body** sur le concepteur d’activités **ParallelForEach \<T>** avec le texte d’indication « déposer l’activité ici ».|
+|**TypeArgument**|Vrai|Type des éléments dans la <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> collection spécifiée par le paramètre générique *T*. Par défaut, **TypeArgument** a la valeur **Int32**. Pour modifier le type T dans le concepteur d’activités **ParallelForEach<T \>** , modifiez la valeur de la zone de liste déroulante **TypeArgument** dans la grille des propriétés.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Vrai|Collection d’éléments à itérer. Pour définir le <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , tapez une expression Visual Basic dans la zone **valeurs** du concepteur d’activités **foreach \><T** dans la zone avec le texte d’indication « entrer une expression vb » ou dans la zone **valeurs** de la fenêtre **Propriétés** .|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Propriété évaluée à l'issue de chaque itération. Si sa valeur est True, les itérations en attente planifiées sont annulées. Si cette propriété n'est pas définie, toutes les instructions planifiées s'exécutent jusqu'à ce qu'elles soient terminées.|
 
-Par défaut, l'itérateur de boucle est nommé « item ». Vous pouvez modifier le nom de la variable d’itérateur dans la zone **foreach** du concepteur d’activités **ParallelForEach \<T> ** . L'itérateur de boucle peut être utilisé dans des expressions dans les enfants de l'activité <xref:System.Activities.Statements.ParallelForEach%601>.
+Par défaut, l'itérateur de boucle est nommé « item ». Vous pouvez modifier le nom de la variable d’itérateur dans la zone **foreach** du concepteur d’activités **ParallelForEach \<T>** . L'itérateur de boucle peut être utilisé dans des expressions dans les enfants de l'activité <xref:System.Activities.Statements.ParallelForEach%601>.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,6 +1,6 @@
 ---
 title: Propriété de connexion manquante
-description: La propriété de connexion est manquante ou incorrecte dans le fichier des paramètres de l'application
+description: La propriété de connexion dans le fichier des paramètres de l'application est manquante ou incorrecte. Affichez des informations sur ce message du concepteur Visual Studio O/R.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9bd48b23273fe21031c25d7fea3b4208b29870ab
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 18e29171935719283e6658d24dcf5eeae3780bba
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036247"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434843"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>La propriété de connexion est manquante ou incorrecte dans le fichier des paramètres de l'application
 

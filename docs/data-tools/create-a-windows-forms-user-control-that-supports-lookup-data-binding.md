@@ -1,5 +1,6 @@
 ---
 title: Utilisation de tables de recherche dans la liaison de données-Windows Forms
+description: Apprenez à créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données de recherche, à l’aide de la classe LookupBindingPropertiesAttribute (dans Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe2289a54dba0c3b3e34de54991e9b7cfbee4c93
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037391"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435272"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche
 
@@ -59,7 +60,7 @@ Au cours de cette procédure pas à pas, vous apprendrez à :
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer** , vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
 
 2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
@@ -77,25 +78,25 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 La première étape consiste à créer un projet d' **Application Windows Forms** .
 
-1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+1. Dans Visual Studio, dans le menu **Fichier** , sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
-4. Nommez le projet **LookupControlWalkthrough**, puis choisissez **OK**.
+4. Nommez le projet **LookupControlWalkthrough** , puis choisissez **OK**.
 
-     Le projet **LookupControlWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.
+     Le projet **LookupControlWalkthrough** est créé et ajouté à l’ **Explorateur de solutions**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Ajouter un contrôle utilisateur au projet
 
-Cette procédure pas à pas crée un contrôle de recherche à partir d’un **Contrôle utilisateur** : ajoutez donc un élément **Contrôle utilisateur** au projet **LookupControlWalkthrough**.
+Cette procédure pas à pas crée un contrôle de recherche à partir d’un **Contrôle utilisateur**  : ajoutez donc un élément **Contrôle utilisateur** au projet **LookupControlWalkthrough**.
 
-1. Dans le menu **Projet**, sélectionnez **Ajouter un contrôle utilisateur**.
+1. Dans le menu **Projet** , sélectionnez **Ajouter un contrôle utilisateur**.
 
 2. Tapez `LookupBox` dans la zone **nom** , puis cliquez sur **Ajouter**.
 
-     Le contrôle **LookupBox** est ajouté à l’**Explorateur de solutions** et s’ouvre dans le concepteur.
+     Le contrôle **LookupBox** est ajouté à l’ **Explorateur de solutions** et s’ouvre dans le concepteur.
 
 ## <a name="design-the-lookupbox-control"></a>Concevoir le contrôle LookupBox
 
@@ -105,7 +106,7 @@ Pour concevoir le contrôle LookupBox, faites glisser un <xref:System.Windows.Fo
 
 Pour des contrôles de recherche prenant en charge la liaison de données, vous pouvez implémenter l’attribut<xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1. Faites passer le contrôle **LookupBox** en mode Code. (Dans le menu **Affichage**, choisissez **Code**.)
+1. Faites passer le contrôle **LookupBox** en mode Code. (Dans le menu **Affichage** , choisissez **Code**.)
 
 2. Remplacez le code de `LookupBox` par le code suivant :
 
@@ -124,7 +125,7 @@ Cette étape crée une source de données à l’aide de l’Assistant **Configu
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
-4. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
+4. Dans la page **Choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
@@ -134,7 +135,7 @@ Cette étape crée une source de données à l’aide de l’Assistant **Configu
 
 6. Dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **suivant**.
 
-7. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
+7. Dans la page **Choisir vos objets de base de données** , développez le nœud **Tables**.
 
 8. Sélectionnez les tables `Customers` et `Orders`, puis cliquez sur **Terminer**.
 
@@ -142,17 +143,17 @@ Cette étape crée une source de données à l’aide de l’Assistant **Configu
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Définir la colonne CustomerID de la table Orders pour qu’elle utilise le contrôle LookupBox
 
-Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.
+Dans la fenêtre **Sources de données** , vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.
 
 1. Ouvrez **Form1** dans le concepteur.
 
 2. Développez le nœud **Customers** dans la fenêtre **Sources de données**.
 
-3. Développez le nœud **Orders** (inclus dans le nœud **Customers** sous la colonne **Fax**).
+3. Développez le nœud **Orders** (inclus dans le nœud **Customers** sous la colonne **Fax** ).
 
 4. Cliquez sur la flèche déroulante du nœud **Orders** et choisissez **Détails** dans la liste de contrôles.
 
-5. Cliquez sur la flèche déroulante de la colonne **CustomerID** (dans le nœud **Orders**), puis choisissez **Personnaliser**.
+5. Cliquez sur la flèche déroulante de la colonne **CustomerID** (dans le nœud **Orders** ), puis choisissez **Personnaliser**.
 
 6. Sélectionnez **LookupBox** dans la liste des **Contrôles associés** de la boîte de dialogue **Options de personnalisation de l’interface utilisateur des données**.
 

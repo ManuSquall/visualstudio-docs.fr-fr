@@ -1,6 +1,8 @@
 ---
 title: Stratégies d’archivage de l’analyse du code personnalisées pour le code managé
 ms.date: 11/04/2016
+description: Découvrez comment créer une stratégie d’archivage d’analyse du code personnalisée. Consultez Comment s’assurer que le code managé Visual Studio est conforme à une stratégie de projet Azure DevOps.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928015"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435422"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémenter des stratégies d’archivage d’analyse du code personnalisées pour le code managé
 
@@ -42,11 +44,11 @@ Pour créer un ensemble de règles personnalisé pour un projet Azure DevOps, vo
 
 2. Dans le volet **dossiers** , cliquez avec le bouton droit sur le projet, puis cliquez sur **nouveau dossier**.
 
-3. Dans le volet principal du contrôle de code source, cliquez avec le bouton droit sur **nouveau dossier**, cliquez sur **Renommer**, puis tapez un nom pour le dossier de l’ensemble de règles.
+3. Dans le volet principal du contrôle de code source, cliquez avec le bouton droit sur **nouveau dossier** , cliquez sur **Renommer** , puis tapez un nom pour le dossier de l’ensemble de règles.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>Pour créer l’ensemble de règles de stratégie d’archivage
 
-1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Fichier**.
+1. Dans le menu **Fichier** , pointez sur **Nouveau** , puis cliquez sur **Fichier**.
 
 2. Dans la liste **catégories** , cliquez sur **général**.
 
@@ -56,7 +58,7 @@ Pour créer un ensemble de règles personnalisé pour un projet Azure DevOps, vo
 
 ### <a name="to-add-the-rule-set-file-to-version-control"></a>Pour ajouter le fichier d’ensemble de règles au contrôle de version
 
-1. Dans **Explorateur du contrôle de code source**, cliquez avec le bouton droit sur le nouveau dossier, puis cliquez sur **Ajouter des éléments au dossier**.
+1. Dans **Explorateur du contrôle de code source** , cliquez avec le bouton droit sur le nouveau dossier, puis cliquez sur **Ajouter des éléments au dossier**.
 
      Pour plus d’informations, consultez [git et Azure repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
@@ -69,15 +71,15 @@ Pour créer un ensemble de règles personnalisé pour un projet Azure DevOps, vo
 4. Dans la boîte de dialogue **archivage** , vous avez la possibilité d’ajouter un commentaire, puis de cliquer sur **Archiver**.
 
     > [!NOTE]
-    > Si vous avez déjà configuré une stratégie d’archivage de l’analyse du code pour votre projet Azure DevOps et que vous avez sélectionné l’option **appliquer l’archivage pour contenir uniquement les fichiers qui font partie de la solution actuelle**, vous déclenchez un avertissement d’échec de stratégie. Dans la boîte de dialogue échec de la stratégie, sélectionnez **remplacer échec de stratégie et poursuivre l’archivage**. Ajoutez un commentaire obligatoire, puis cliquez sur **OK**.
+    > Si vous avez déjà configuré une stratégie d’archivage de l’analyse du code pour votre projet Azure DevOps et que vous avez sélectionné l’option **appliquer l’archivage pour contenir uniquement les fichiers qui font partie de la solution actuelle** , vous déclenchez un avertissement d’échec de stratégie. Dans la boîte de dialogue échec de la stratégie, sélectionnez **remplacer échec de stratégie et poursuivre l’archivage**. Ajoutez un commentaire obligatoire, puis cliquez sur **OK**.
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Pour spécifier le fichier d’ensemble de règles comme stratégie d’archivage
 
-1. Dans le menu **équipe** , pointez sur **paramètres du projet**, puis cliquez sur contrôle de **code source**.
+1. Dans le menu **équipe** , pointez sur **paramètres du projet** , puis cliquez sur contrôle de **code source**.
 
-2. Cliquez sur **stratégie d’archivage**, puis sur **Ajouter**.
+2. Cliquez sur **stratégie d’archivage** , puis sur **Ajouter**.
 
-3. Dans la liste des **stratégies d’archivage** , double-cliquez sur **analyse du code**et assurez-vous que la case à cocher **appliquer l’analyse du code pour le code managé** est activée.
+3. Dans la liste des **stratégies d’archivage** , double-cliquez sur **analyse du code** et assurez-vous que la case à cocher **appliquer l’analyse du code pour le code managé** est activée.
 
 4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Select Rule Set from Source Control>** .
 
@@ -88,7 +90,7 @@ Pour créer un ensemble de règles personnalisé pour un projet Azure DevOps, vo
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > Vous pouvez copier le chemin d’accès à l’aide de l’une des procédures suivantes dans **Explorateur du contrôle de code source**:
+    > Vous pouvez copier le chemin d’accès à l’aide de l’une des procédures suivantes dans **Explorateur du contrôle de code source** :
 
     - Dans le volet **dossiers** , cliquez sur le dossier qui contient le fichier d’ensemble de règles. Copiez le chemin d’accès du contrôle de version du dossier qui apparaît dans la zone **source** , puis tapez manuellement le nom du fichier d’ensemble de règles.
 
@@ -104,7 +106,7 @@ Vous spécifiez un ensemble de règles de stratégie d’archivage de projet com
 
    Vous pouvez effectuer cette étape dans **Explorateur du contrôle de code source** en cliquant avec le bouton droit sur le dossier de l’ensemble de règles, puis en cliquant sur **obtenir la dernière version**.
 
-2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
+2. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
 
 3. **Cliquez sur analyse du code**.
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382970"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434491"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Déployer votre application dans un dossier, IIS, Azure ou une autre destination
 
@@ -117,16 +117,16 @@ Pour plus d'informations :
 
 ### <a name="azure-virtual-machine"></a>Machine virtuelle Azure
 
-Le service [Machines virtuelles Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) permet de créer et gérer des ressources informatiques dans le cloud. Si vous prenez en charge tous les logiciels et mises à jour sur les machines virtuelles, vous pouvez les personnaliser comme vous le souhaitez en fonction des besoins de votre application. Vous pouvez également accéder aux machines virtuelles directement via le Bureau à distance, chaque machine conservant son adresse IP aussi longtemps que vous le souhaitez.
+Les [machines virtuelles Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) vous permettent de créer et de gérer un nombre quelconque de ressources informatiques dans le Cloud. Si vous prenez en charge tous les logiciels et mises à jour sur les machines virtuelles, vous pouvez les personnaliser comme vous le souhaitez en fonction des besoins de votre application. Vous pouvez également accéder aux machines virtuelles directement via le Bureau à distance, chaque machine conservant son adresse IP aussi longtemps que vous le souhaitez.
 
 La mise à l’échelle d’une application hébergée sur des machines virtuelles implique l’ajout de machines virtuelles supplémentaires en fonction de la demande et le déploiement des logiciels nécessaires. Ce niveau de contrôle supplémentaire vous permet de moduler la mise à l’échelle selon la région globale. Par exemple, si votre application est utilisée par les employés de différents bureaux régionaux, vous pouvez mettre à l’échelle vos machines virtuelles en fonction du nombre d’employés dans ces régions et ainsi potentiellement réduire les coûts.
 
-Pour plus d’informations, reportez-vous à la [comparaison détaillée](/azure/architecture/guide/technology-choices/compute-decision-tree) d’Azure App Service, Machines virtuelles Azure et d’autres services Azure que vous pouvez utiliser comme cible de déploiement à l’aide de l’option Personnalisé dans Visual Studio.
+Pour plus d’informations, consultez la [comparaison détaillée](/azure/architecture/guide/technology-choices/compute-decision-tree) entre les Azure App service, les machines virtuelles Azure et d’autres services Azure que vous pouvez utiliser comme cible de déploiement à l’aide de l’option personnalisée dans Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Quand choisir des machines virtuelles Azure
 
 - Vous voulez déployer une application web accessible par Internet, avec un contrôle total sur la durée de vie des adresses IP attribuées.
-- Vous avez besoin de personnaliser vos ordinateurs serveur, notamment installer des logiciels supplémentaires, par exemple, un système de base de données spécialisé, des configurations réseau spécifiques, des partitions de disque et ainsi de suite.
+- Vous avez besoin de personnalisations au niveau de l’ordinateur sur vos serveurs, notamment des logiciels supplémentaires tels qu’un système de base de données spécialisé, des configurations réseau spécifiques, des partitions de disque et ainsi de suite.
 - Vous voulez contrôler la mise à l’échelle de votre application web.
 - Vous avez besoin d’un accès direct aux serveurs qui hébergent votre application.
 
@@ -147,19 +147,29 @@ Pour plus d’informations, consultez les rubriques suivantes :
 
 ## <a name="folder"></a>Dossier
 
-Le déploiement sur le système de fichiers revient à copier les fichiers de votre application dans un dossier spécifique sur votre ordinateur. Ce type de déploiement est souvent utilisé à des fins de test ou pour déployer l’application pour un nombre limité d’utilisateurs si l’ordinateur exécute également un serveur. Si le dossier cible est partagé sur un réseau, le déploiement sur le système de fichiers permet de mettre les fichiers de l’application web à la disposition d’autres utilisateurs qui peuvent ensuite la déployer sur des serveurs spécifiques.
+Le déploiement sur le système de fichiers consiste à copier les fichiers de votre application dans un dossier spécifique sur votre ordinateur. Le déploiement dans un dossier est le plus souvent utilisé à des fins de test, ou pour déployer l’application en vue d’une utilisation par un nombre limité de personnes si l’ordinateur exécute également un serveur. Si le dossier cible est partagé sur un réseau, le déploiement sur le système de fichiers permet de mettre les fichiers de l’application web à la disposition d’autres utilisateurs qui peuvent ensuite la déployer sur des serveurs spécifiques.
+::: moniker range=">=vs-2019"
+À compter de Visual Studio 2019 16,8, la cible de dossier offre la possibilité de publier une application Windows .net à l’aide de ClickOnce.
 
+Si vous souhaitez publier une application Windows .NET Core 3,1, ou une version plus récente, avec ClickOnce, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 Les ordinateurs locaux qui exécutent un serveur peuvent rendre votre application disponible sur Internet ou un intranet en fonction de sa configuration et des réseaux auxquels il est connecté. (Si vous connectez un ordinateur directement à Internet, veillez particulièrement à le protéger contre les menaces de sécurité externes.) Étant donné que vous gérez ces machines, vous contrôlez entièrement les configurations logicielles et matérielles.
 
-Notez que, si pour une raison quelconque (par exemple, l’accès à l’ordinateur), vous n’êtes pas en mesure d’utiliser les services cloud comme Azure App Service ou Machines virtuelles Azure, vous pouvez utiliser [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) dans votre centre de données. Azure Stack vous permet de gérer et d’utiliser localement les ressources informatiques grâce à Azure App Service et les Machines virtuelles Azure.
+Si, pour une raison quelconque (par exemple, l’accès à la machine), vous n’êtes pas en mesure d’utiliser des services de Cloud Computing comme Azure App Service ou des machines virtuelles Azure, vous pouvez utiliser les [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) dans votre propre centre de donnée. Azure Stack vous permet de gérer et d’utiliser localement les ressources informatiques grâce à Azure App Service et les Machines virtuelles Azure.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Quand choisir le déploiement sur un système de fichiers
 
 - Vous avez besoin de déployer l’application uniquement sur un partage de fichiers à partir duquel d’autres utilisateurs la déploieront sur différents serveurs.
+::: moniker range=">=vs-2019"
+- Vous souhaitez déployer une application Windows .NET à l’aide de ClickOnce
+::: moniker-end
 - Vous avez besoin d’un déploiement de test local uniquement.
 - Vous voulez examiner et éventuellement modifier les fichiers d’application indépendamment avant de les envoyer vers une autre cible de déploiement.
 
 Pour plus d’informations, consultez [démarrage rapide-déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
+::: moniker range=">=vs-2019"
+Pour plus d’informations sur le déploiement d’une application Windows .NET à l’aide de ClickOnce, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 
 Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez les rubriques suivantes :
 
@@ -171,7 +181,7 @@ Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez le
 
 Un serveur FTP/FTPS vous permet de déployer votre application sur un serveur autre que Azure. Elle peut effectuer le déploiement sur un système de fichiers ou tout autre serveur (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services cloud. Elle peut fonctionner avec Web Deploy (fichiers ou. ZIP) et FTP.
 
-Lors du choix d’un serveur FTP/FTPS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres**  :
+Lorsque vous choisissez un serveur FTP/FTPS, Visual Studio vous invite à entrer un nom de profil, puis recueille des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres**  :
 
 - La configuration que vous souhaitez déployer.
 - Si vous souhaitez supprimer des fichiers existants à partir de la destination.
@@ -190,7 +200,7 @@ Vous pouvez créer un nombre quelconque de profils de déploiement FTP/FTPS dans
 
 Un serveur Web IIS vous permet de déployer votre application sur un serveur Web autre qu’Azure. Il peut être déployé sur un serveur IIS (Internet ou intranet) auquel vous avez accès, y compris sur d’autres services Cloud. Il peut fonctionner avec Web Deploy ou un package Web Deploy.
 
-Lors du choix d’un serveur Web IIS, Visual Studio vous invite à entrer un nom de profil, puis collecte des informations de **connexion** supplémentaires, y compris le serveur ou l’emplacement cible, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres**  :
+Lorsque vous choisissez un serveur Web IIS, Visual Studio vous invite à entrer un nom de profil, puis recueille des informations de **connexion** supplémentaires, y compris le serveur cible ou l’emplacement, un nom de site et des informations d’identification. Vous pouvez contrôler les comportements suivants sur l’onglet **Paramètres**  :
 
 - La configuration que vous souhaitez déployer.
 - Si vous souhaitez supprimer des fichiers existants à partir de la destination.

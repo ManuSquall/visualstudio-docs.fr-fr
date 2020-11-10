@@ -1,5 +1,7 @@
 ---
 title: Créer des tables de recherche dans des applications Windows Forms
+description: Lisez comment créer des tables de recherche dans des applications Windows Forms. Une table de recherche décrit les contrôles liés à deux tables de données associées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282655"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435193"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans des applications Windows Forms
 
@@ -28,7 +30,7 @@ Prenons l’exemple d’une table de `Orders` dans une base de données Sales. C
 
 ## <a name="to-databind-a-lookup-control"></a>Pour lier un contrôle de recherche
 
-1. Une fois votre projet ouvert, ouvrez la fenêtre **sources de données** en sélectionnant **Afficher**d'  >  **autres**  >  **sources de données**Windows.
+1. Une fois votre projet ouvert, ouvrez la fenêtre **sources de données** en sélectionnant **Afficher** d'  >  **autres**  >  **sources de données** Windows.
 
     > [!NOTE]
     > Les tables de recherche requièrent que deux tables ou objets associés soient disponibles dans la fenêtre **sources de données** . Pour plus d’informations, consultez [relations dans les jeux de données](relationships-in-datasets.md).
@@ -50,7 +52,7 @@ Prenons l’exemple d’une table de `Orders` dans une base de données Sales. C
 
      Les liaisons de recherche sont désormais établies. Reportez-vous au tableau suivant pour les propriétés spécifiques qui ont été définies sur le contrôle.
 
-    |Propriété|Explication du paramètre|
+    |Property|Explication du paramètre|
     |--------------| - |
     |**DataSource**|Visual Studio définit cette propriété sur le <xref:System.Windows.Forms.BindingSource> créé pour la table que vous avez fait glisser vers le contrôle (et non sur le <xref:System.Windows.Forms.BindingSource> créé en même temps que le contrôle).<br /><br /> Si vous devez effectuer un ajustement, définissez-le sur le <xref:System.Windows.Forms.BindingSource> de la table avec la colonne que vous souhaitez afficher.|
     |**DisplayMember**|Visual Studio définit cette propriété sur la première colonne après la clé principale contenant un type de données de chaîne pour la table que vous avez fait glisser vers le contrôle.<br /><br /> Si vous devez effectuer un ajustement, définissez cette valeur sur le nom de la colonne que vous souhaitez afficher.|
