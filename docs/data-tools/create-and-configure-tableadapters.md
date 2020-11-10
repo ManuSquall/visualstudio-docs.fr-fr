@@ -1,5 +1,7 @@
 ---
 title: Créer et configurer des TableAdapters
+description: Consultez Comment créer et configurer un TableAdapter dans Visual Studio. Les TableAdapters assurent la communication entre votre application et une base de données.
+ms.custom: SEO-VS-2020
 ms.date: 09/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282669"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436756"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 
@@ -49,7 +51,7 @@ Si vous faites glisser un nouveau TableAdapter à partir de la boîte à outils 
 
 - Vous avez la possibilité de créer une procédure stockée dans la base de données sous-jacente si vous disposez des autorisations appropriées pour la base de données. Si vous ne disposez pas de ces autorisations, ce n’est pas une option.
 
-- Vous pouvez également choisir d’exécuter des procédures stockées existantes pour les commandes **Select**, **Insert**, **Update**et **Delete** du TableAdapter. La procédure stockée qui est assignée à la commande **Update** , par exemple, est exécutée lorsque la `TableAdapter.Update()` méthode est appelée.
+- Vous pouvez également choisir d’exécuter des procédures stockées existantes pour les commandes **Select** , **Insert** , **Update** et **Delete** du TableAdapter. La procédure stockée qui est assignée à la commande **Update** , par exemple, est exécutée lorsque la `TableAdapter.Update()` méthode est appelée.
 
 Mappez les paramètres de la procédure stockée sélectionnée aux colonnes correspondantes de la table de données. Par exemple, si votre procédure stockée accepte un paramètre nommé `@CompanyName` qu’elle transmet à la `CompanyName` colonne de la table, définissez la **colonne source** du `@CompanyName` paramètre sur `CompanyName` .
 
@@ -82,7 +84,7 @@ L’exemple suivant montre comment appeler une requête supplémentaire nommée 
 
 1. Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
-2. Si vous créez une nouvelle requête, faites glisser un objet **requête** de l’onglet **DataSet** de la **boîte à outils** vers <xref:System.Data.DataTable> ou sélectionnez **Ajouter une requête** dans le menu contextuel du TableAdapter. Vous pouvez également faire glisser un objet de **requête** dans une zone vide du **Concepteur de DataSet**, ce qui crée un TableAdapter sans associé <xref:System.Data.DataTable> . Ces requêtes peuvent retourner des valeurs uniques (scalaires) ou exécuter des commandes UPDATE, INSERT ou DELETE sur la base de données.
+2. Si vous créez une nouvelle requête, faites glisser un objet **requête** de l’onglet **DataSet** de la **boîte à outils** vers <xref:System.Data.DataTable> ou sélectionnez **Ajouter une requête** dans le menu contextuel du TableAdapter. Vous pouvez également faire glisser un objet de **requête** dans une zone vide du **Concepteur de DataSet** , ce qui crée un TableAdapter sans associé <xref:System.Data.DataTable> . Ces requêtes peuvent retourner des valeurs uniques (scalaires) ou exécuter des commandes UPDATE, INSERT ou DELETE sur la base de données.
 
 3. Dans l’écran **choisir votre connexion de données** , sélectionnez ou créez la connexion que la requête doit utiliser.
 

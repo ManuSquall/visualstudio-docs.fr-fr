@@ -1,5 +1,7 @@
 ---
 title: Personnaliser les légendes pour les contrôles liés aux données
+description: Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données. Modifiez le comportement de la légende intelligente de la fenêtre sources de données. Désactivez le sous-titrage.
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282577"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436626"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 
@@ -26,13 +28,13 @@ Lorsque vous faites glisser des éléments depuis la [fenêtre sources de donné
 
 ::: moniker range="vs-2017"
 
-Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans la clé de Registre **HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\data concepteurs** .
+Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression** , **SmartCaptionReplacement** et **SmartCaptionSuffix** dans la clé de Registre **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans la clé de Registre **HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\data concepteurs** .
+Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression** , **SmartCaptionReplacement** et **SmartCaptionSuffix** dans la clé de Registre **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
 
 ::: moniker-end
 

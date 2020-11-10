@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 153864a293ca25fdcf30f23b96f686737411c965
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344477"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435785"
 ---
 # <a name="devinit-commands"></a>commandes devinit
 
@@ -26,15 +26,15 @@ ms.locfileid: "93344477"
 devinit init
 ```
 
-Initialisez l’environnement en exécutant les outils spécifiés dans un [_.devinit.jssur_](devinit-json.md) le fichier dans le répertoire de travail actuel.  
+Initialisez l’environnement en exécutant les outils spécifiés dans un [.devinit.jssur](devinit-json.md) le fichier.
 
 ### <a name="options-for-init"></a>Options pour init
 
 Options facultatives pour la `devinit init` commande.
 
-| Argument             | Requis | Description                                                               |
+| Argument             | Obligatoire | Description                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file            | Non       | Chemin d’accès à la _.devinit.jssur_ le fichier.                                         |
+| -f,--file            | Non       | Chemin d’accès au `.devinit.json` fichier.                                         |
 | --erreur-action       | Non       | Spécifie comment gérer les erreurs. Options : arrêter, ignorer, continuer (par défaut).|
 | -v,--commentaires         | Non       | Émet une sortie détaillée.                                                      |
 | -n,--à sec         | Non       | Série sèche.                                                                  |
@@ -79,7 +79,7 @@ Exécute l’outil spécifique, les paramètres sont répertoriés ci-dessous. C
 
 Options de la `devinit run` commande.
 
-| Argument                                      | Requis | Description                                                                          |
+| Argument                                      | Obligatoire | Description                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
 | outil-t,--                                     | Oui      | Obligatoire. Nom de l'outil.                                                             |
 | -i,--entrée                                    | Non       | Valeur d’entrée de l’outil. Par exemple, un nom de fichier, un package ou un nom.                     |
@@ -97,6 +97,10 @@ Spécifie l’action à entreprendre si un outil retourne un code de sortie diff
 | continue | Continuez à traiter d’autres outils après l’émission d’une erreur vers une erreur standard. Le code de sortie de devinit.exe est différent de zéro (échec). Ce comportement est similaire à l’action d’arrêt de l’erreur, mais le traitement se poursuit. `continue` est l’action d’erreur par défaut pour la commande init.              |
 | ignore   | Continuer le traitement d’autres outils après l’émission d’un avertissement vers la sortie standard. Le code de sortie du processus DevInit doit toujours être égal à zéro (réussite). Le `ignore` paramètre ignore toutes les erreurs.                                                                                                      |
 | stop     | Envoie une erreur à l’erreur standard et arrête les outils de traitement. Le code de sortie de devinit.exe est différent de zéro (échec). Cela est similaire à l’action continuer l’erreur, mais le traitement s’arrête à la première erreur rencontrée. `stop` est l’action d’erreur par défaut pour toutes les commandes, à l’exception de init. |
+
+#### <a name="--dry-run-switch"></a>--commutateur à exécution à sec
+
+Commandes de l’outil ECHO qui sont exécutées. Certains outils peuvent prendre des mesures supplémentaires comme indiqué pour cet outil. 
 
 #### <a name="--verbose-switch"></a>--commutateur détaillé
 
@@ -134,7 +138,7 @@ Affiche la liste de tous les outils disponibles.
 devinit show -t <toolname>
 ```
 
-| Argument       | Requis | Description                                                                          |
+| Argument       | Obligatoire | Description                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
 | outil-t,--      | Oui      | Obligatoire. Nom de l'outil.                                                             |
 

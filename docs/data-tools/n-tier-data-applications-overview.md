@@ -1,5 +1,7 @@
 ---
-title: Vue d’ensemble des applications de données multicouches
+title: Vue d’ensemble des applications de données multiniveaux
+description: Consultez vue d’ensemble de l’application de données multicouches. Également appelés applications distribuées ou applications multicouches, il s’agit d’applications de données séparées en plusieurs niveaux.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426861"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436209"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d’ensemble des applications de données multiniveaux
 Les applications de données *multicouches* sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelés « applications distribuées » et « applications multicouches », les applications multicouches séparent le traitement en niveaux discrets distribués entre le client et le serveur. Lorsque vous développez des applications qui accèdent à des données, vous devez disposer d’une séparation claire entre les différents niveaux qui composent l’application.
@@ -73,7 +75,7 @@ La couche données n’est pas accessible directement à partir du client dans l
 ## <a name="help-for-n-tier-development"></a>Aide pour le développement multiniveau
 Les rubriques suivantes fournissent des informations sur l’utilisation des applications multicouches :
 
-[Séparer des DataSets et des TableAdapters dans différents projets](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
+[Séparer les datasets et les TableAdapters en différents projets](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
 [Procédure pas à pas : création d’une application de données multicouches](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 

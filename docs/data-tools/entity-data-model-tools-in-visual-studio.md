@@ -1,5 +1,7 @@
 ---
 title: Outils Entity Framework
+description: Comprendre Entity Framework Tools dans Visual Studio. Entity Framework Tools sont conçus pour vous aider à générer des applications Entity Framework (EF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916735"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436639"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools dans Visual Studio
 
@@ -30,9 +32,9 @@ Les outils de Entity Framework sont installés dans le cadre de la charge de tra
 
 Il s’agit des outils spécifiques qui composent Entity Framework Tools dans Visual Studio :
 
-- Vous pouvez utiliser le [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Concepteur** (**Entity designer**) pour créer et modifier visuellement des entités, des associations, des mappages et des relations d’héritage. Le **Entity designer** génère également [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] un code de couche objet ou.
+- Vous pouvez utiliser le [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Concepteur** ( **Entity designer** ) pour créer et modifier visuellement des entités, des associations, des mappages et des relations d’héritage. Le **Entity designer** génère également [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] un code de couche objet ou.
 
-- Vous pouvez utiliser l' ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Assistant** pour générer un modèle conceptuel à partir d’une base de données existante et ajouter des informations de connexion de base de données à votre application.
+- Vous pouvez utiliser l' **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Assistant** pour générer un modèle conceptuel à partir d’une base de données existante et ajouter des informations de connexion de base de données à votre application.
 
 - Vous pouvez utiliser l' **Assistant Création** d’une base de données pour créer d’abord un modèle conceptuel, puis créer une base de données qui prend en charge le modèle.
 

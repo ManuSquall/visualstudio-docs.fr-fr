@@ -1,6 +1,8 @@
 ---
 title: Fenêtre métrique du code
 ms.date: 12/12/2017
+description: Découvrez comment afficher, filtrer, réorganiser et exporter des données d’analyse de métriques Visual Studio code. Consultez Comment créer des éléments de travail en fonction des résultats de la métrique du code.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927976"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436808"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Utiliser la fenêtre résultats de la métrique du code
 
@@ -30,9 +32,9 @@ La fenêtre résultats de la **métrique du code** s’affiche automatiquement l
 
 Vous pouvez afficher la fenêtre résultats de la métrique du code à l’aide de l’une des séquences de menu suivantes :
 
-- Dans le menu **analyser** , choisissez résultats de la métrique du **Windows**  >  **code**Windows.
+- Dans le menu **analyser** , choisissez résultats de la métrique du **Windows**  >  **code** Windows.
 
-- Dans le menu **affichage** , choisissez **autres**résultats de la  >  **métrique du code**Windows.
+- Dans le menu **affichage** , choisissez **autres** résultats de la  >  **métrique du code** Windows.
 
 La fenêtre résultats de la **métrique du code** s’ouvre, même si elle ne contient aucun résultat.
 
@@ -50,9 +52,9 @@ La zone de liste déroulante **filtre** contient les noms des colonnes de résul
 
 1. Dans la liste **filtre** , sélectionnez le nom de la colonne.
 
-2. Dans **min**, tapez la valeur minimale à afficher.
+2. Dans **min** , tapez la valeur minimale à afficher.
 
-3. Dans **Max**, tapez la valeur maximale à afficher.
+3. Dans **Max** , tapez la valeur maximale à afficher.
 
 4. Cliquez sur le bouton **appliquer le filtre** .
 
@@ -90,7 +92,7 @@ Pour plus d’informations sur Azure Boards éléments de travail, consultez [é
 
 1. Cliquez avec le bouton droit sur le résultat.
 
-2. Pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail que vous souhaitez créer (**bogue**, **tâche**, etc.).
+2. Pointez sur **créer un élément de travail** , puis cliquez sur le type d’élément de travail que vous souhaitez créer ( **bogue** , **tâche** , etc.).
 
 3. Complétez le formulaire d’élément de travail en remplissant tous les champs obligatoires.
 

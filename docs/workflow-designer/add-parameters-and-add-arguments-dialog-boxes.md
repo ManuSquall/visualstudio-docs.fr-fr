@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de flux de travail : ajouter des paramètres & boîtes de dialogue Ajouter des arguments'
+description: Découvrez comment les éléments d’interface utilisateur de la boîte de dialogue Ajouter des paramètres sont utilisés par le concepteur InvokeMethod.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2038e56770a7d671a25b3982f865926c29697b13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547353"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435688"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Boîtes de dialogue Ajouter des paramètres et Ajouter des arguments
 

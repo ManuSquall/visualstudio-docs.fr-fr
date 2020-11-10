@@ -1,5 +1,7 @@
 ---
 title: Se connecter à des données dans une base de données Access
+description: Découvrez comment se connecter aux données d’une base de données Access (un fichier. mdb ou. accdb. file) dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/18/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 156acfd56789ec13201738e72c6df283e257e94f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800630"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436860"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Se connecter à des données dans une base de données Access
 
@@ -33,7 +35,7 @@ Connectez-vous aux bases de données créées avec Microsoft 365, Access 2013, A
 
 1. Ouvrez un Windows Forms ou un projet d’application WPF dans Visual Studio.
 
-2. Pour ouvrir la fenêtre **sources de données** , dans le menu **affichage** , sélectionnez autres sources de **Other Windows**  >  **données**Windows.
+2. Pour ouvrir la fenêtre **sources de données** , dans le menu **affichage** , sélectionnez autres sources de **Other Windows**  >  **données** Windows.
 
    ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
@@ -45,15 +47,15 @@ Connectez-vous aux bases de données créées avec Microsoft 365, Access 2013, A
 
 5. Sélectionnez **DataSet** dans la page **choisir un modèle de base de données** , puis sélectionnez **suivant**.
 
-6. Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.
+6. Dans la page **Choisir votre connexion de données** , sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.
 
    La boîte de dialogue **Ajouter une connexion** s’ouvre.
 
-7. Si la **source de données** n’est pas définie sur **fichier de base de données Microsoft Access**, sélectionnez le bouton **modifier** .
+7. Si la **source de données** n’est pas définie sur **fichier de base de données Microsoft Access** , sélectionnez le bouton **modifier** .
 
-   La boîte de dialogue **modifier la source de données** s’ouvre. Dans la liste des sources de données, choisissez **fichier de base de données Microsoft Access**. Dans la liste déroulante **fournisseur de données** , sélectionnez **.NET Framework fournisseur de données pour OLE DB**, puis choisissez **OK**.
+   La boîte de dialogue **modifier la source de données** s’ouvre. Dans la liste des sources de données, choisissez **fichier de base de données Microsoft Access**. Dans la liste déroulante **fournisseur de données** , sélectionnez **.NET Framework fournisseur de données pour OLE DB** , puis choisissez **OK**.
 
-8. Choisissez **Parcourir** en regard de **nom du fichier de base de données**, puis accédez à votre fichier *. accdb* et choisissez **ouvrir**.
+8. Choisissez **Parcourir** en regard de **nom du fichier de base de données** , puis accédez à votre fichier *. accdb* et choisissez **ouvrir**.
 
 9. Entrez un nom d’utilisateur et un mot de passe (si nécessaire), puis choisissez **OK**.
 
@@ -75,7 +77,7 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
 1. Ouvrez un Windows Forms ou un projet d’application WPF dans Visual Studio.
 
-2. Dans le menu **affichage** , sélectionnez **autres**  >  **sources de données**Windows.
+2. Dans le menu **affichage** , sélectionnez **autres**  >  **sources de données** Windows.
 
    ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
@@ -87,11 +89,11 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
 5. Sélectionnez **DataSet** dans la page **choisir un modèle de base de données** , puis sélectionnez **suivant**.
 
-6. Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.
+6. Dans la page **Choisir votre connexion de données** , sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.
 
-7. Si la source de données n’est pas un **fichier de base de données Microsoft Access (OLE DB)**, sélectionnez **modifier** pour ouvrir la boîte de dialogue **modifier la source de données** et sélectionnez **fichier de base de données Microsoft Access**, puis cliquez sur **OK**.
+7. Si la source de données n’est pas un **fichier de base de données Microsoft Access (OLE DB)** , sélectionnez **modifier** pour ouvrir la boîte de dialogue **modifier la source de données** et sélectionnez **fichier de base de données Microsoft Access** , puis cliquez sur **OK**.
 
-8. Dans le **nom du fichier de base de données**, spécifiez le chemin d’accès et le nom du fichier *. mdb* auquel vous souhaitez vous connecter, puis sélectionnez **OK**.
+8. Dans le **nom du fichier de base de données** , spécifiez le chemin d’accès et le nom du fichier *. mdb* auquel vous souhaitez vous connecter, puis sélectionnez **OK**.
 
    ![Ajouter une connexion à un fichier de base de données Access](../data-tools/media/add-connection-access-db.png)
 

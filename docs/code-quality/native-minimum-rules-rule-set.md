@@ -1,6 +1,8 @@
 ---
 title: Ensemble de règles des règles minimales natives
 ms.date: 11/04/2016
+description: En savoir plus sur l’ensemble de règles de règles minimales natives dans Visual Studio. Consultez les descriptions des règles de sécurité, de robustesse et d’autres problèmes critiques en code natif.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5646986381907d6ba524b27ae28985e579d6e379
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 182c896aea682287f89119217e5d4b8b860b6dcf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600025"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437081"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales natives
 

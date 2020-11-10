@@ -1,5 +1,7 @@
 ---
 title: Remplir des datasets à l’aide de TableAdapters
+description: Remplir des datasets à l’aide de TableAdapters. Un composant TableAdapter remplit un DataSet avec des données de la base de données, en fonction d’une ou de plusieurs requêtes ou procédures stockées que vous spécifiez.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282434"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436457"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 
@@ -38,7 +40,7 @@ Pour plus d’informations sur les opérations TableAdapter, vous pouvez passer 
 |Rubrique|Description|
 |-----------|-----------------|
 |[Créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Comment utiliser les concepteurs pour créer et configurer des TableAdapters|
-|[Guide pratique pour créer des requêtes TableAdapter paramétrées](../data-tools/create-parameterized-tableadapter-queries.md)|Comment permettre aux utilisateurs de fournir des arguments à des procédures ou des requêtes TableAdapter|
+|[Créer des requêtes TableAdapter paramétrées](../data-tools/create-parameterized-tableadapter-queries.md)|Comment permettre aux utilisateurs de fournir des arguments à des procédures ou des requêtes TableAdapter|
 |[Accéder directement à la base de données avec un TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Comment utiliser les méthodes DBDirect des TableAdapters|
 |[Désactiver les contraintes pendant le remplissage d’un dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Comment utiliser des contraintes de clé étrangère lors de la mise à jour de données|
 |[Guide pratique pour étendre les fonctionnalités d’un TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Comment ajouter du code personnalisé à des TableAdapters|
@@ -52,7 +54,7 @@ Les TableAdapters sont des composants générés par le concepteur qui se connec
 
 ![Flux de données dans une application cliente](../data-tools/media/clientdatadiagram.gif)
 
-Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter ne sont pas générées en tant que classes imbriquées de  <xref:System.Data.DataSet> . Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous avez un dataset nommé `NorthwindDataSet` , les TableAdapters qui sont associés à des  <xref:System.Data.DataTable> dans le sont `NorthwindDataSet` dans l' `NorthwindDataSetTableAdapters` espace de noms. Pour accéder à un TableAdapter particulier par programme, vous devez déclarer une nouvelle instance du TableAdapter. Par exemple :
+Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet** , les classes TableAdapter ne sont pas générées en tant que classes imbriquées de  <xref:System.Data.DataSet> . Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous avez un dataset nommé `NorthwindDataSet` , les TableAdapters qui sont associés à des  <xref:System.Data.DataTable> dans le sont `NorthwindDataSet` dans l' `NorthwindDataSetTableAdapters` espace de noms. Pour accéder à un TableAdapter particulier par programme, vous devez déclarer une nouvelle instance du TableAdapter. Par exemple :
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]

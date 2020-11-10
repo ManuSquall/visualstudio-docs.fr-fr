@@ -1,6 +1,6 @@
 ---
 title: Type de données non pris en charge
-description: Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
+description: Un ou plusieurs éléments sélectionnés contiennent un type de données qui n’est pas pris en charge par le concepteur. Affichez des informations sur ce message du concepteur Visual Studio O/R.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 167146b9a7938e5498e8db023602b2e13f74379c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034076"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436131"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
 
-Un ou plusieurs des éléments déplacés depuis **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur o/r** contient un type de données qui n’est pas pris en charge par le **Concepteur o/r**, par exemple, les [types CLR définis](/dotnet/framework/data/adonet/sql/clr-user-defined-types)par l’utilisateur.
+Un ou plusieurs des éléments déplacés depuis **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur o/r** contient un type de données qui n’est pas pris en charge par le **Concepteur o/r** , par exemple, les [types CLR définis](/dotnet/framework/data/adonet/sql/clr-user-defined-types)par l’utilisateur.
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 

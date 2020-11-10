@@ -1,5 +1,7 @@
 ---
 title: 'Comment : enregistrer et modifier des chaînes de connexion'
+description: Savoir comment enregistrer et modifier des chaînes de connexion dans les applications Visual Studio. Enregistrez ou modifiez une chaîne de connexion directement dans les paramètres de l’application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d1da27faed67b90658ea4479f1e2e9a11ead4a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282018"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436287"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Guide pratique pour enregistrer et modifier des chaînes de connexion
 Les chaînes de connexion dans les applications Visual Studio sont enregistrées dans le fichier de configuration de l’application (également appelé paramètres d’application) ou codées en dur directement dans votre application. L'enregistrement des chaînes de connexion dans le fichier de configuration de l'application simplifie la gestion de votre application. Si la chaîne de connexion doit être modifiée, vous pouvez la mettre à jour dans le fichier de paramètres de l’application (au lieu de la modifier dans le code source et de recompiler l’application).
@@ -24,11 +26,11 @@ Si vous choisissez de ne pas utiliser la sécurité intégrée de Windows et que
 Pour plus d’informations, consultez [protection des informations de connexion](/dotnet/framework/data/adonet/protecting-connection-information).
 
 ## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>Pour enregistrer une chaîne de connexion à partir de l’Assistant Configuration de source de données
-Dans l **'Assistant Configuration de source de données**, sélectionnez l’option permettant d’enregistrer la connexion dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** .
+Dans l **'Assistant Configuration de source de données** , sélectionnez l’option permettant d’enregistrer la connexion dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** .
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Pour enregistrer une chaîne de connexion directement dans les paramètres de l'application
-1. Dans l’**Explorateur de solutions**, double-cliquez sur l’icône **Mon projet** (Visual Basic) ou **Propriétés** (C#) pour ouvrir le **Concepteur de projets**.
-1. Sélectionnez l’onglet **Paramètres**.
+1. Dans l’ **Explorateur de solutions** , double-cliquez sur l’icône **Mon projet** (Visual Basic) ou **Propriétés** (C#) pour ouvrir le **Concepteur de projets**.
+1. Sélectionnez l’onglet **Settings** (Paramètres).
 1. Entrez un **Nom** pour la chaîne de connexion. Faites référence à ce nom quand vous accédez à la chaîne de connexion dans le code.
 1. Définissez le **Type** sur **(Chaîne de connexion)**.
 1. Laissez la **Portée** définie sur **Application**.
@@ -38,8 +40,8 @@ Dans l **'Assistant Configuration de source de données**, sélectionnez l’opt
 Vous pouvez modifier les informations de connexion enregistrées dans les paramètres de l’application à l’aide du **Concepteur de projets**.
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Pour modifier une chaîne de connexion stockée dans les paramètres de l'application
-1. Dans l’**Explorateur de solutions**, double-cliquez sur l’icône **Mon projet** (Visual Basic) ou **Propriétés** (C#) pour ouvrir le **Concepteur de projets**.
-1. Sélectionnez l’onglet **Paramètres**.
+1. Dans l’ **Explorateur de solutions** , double-cliquez sur l’icône **Mon projet** (Visual Basic) ou **Propriétés** (C#) pour ouvrir le **Concepteur de projets**.
+1. Sélectionnez l’onglet **Settings** (Paramètres).
 1. Localisez la connexion que vous souhaitez modifier et sélectionnez le texte dans le champ **valeur** .
 1. Modifiez la chaîne de connexion dans le champ **valeur** ou cliquez sur le bouton des **points de suspension** (...) dans le champ **valeur** pour modifier votre connexion à l’aide de la boîte de dialogue **Propriétés de connexion** .
 
@@ -47,7 +49,7 @@ Vous pouvez modifier les informations de connexion enregistrées dans les param�
 Vous pouvez modifier les informations de connexion pour chaque TableAdapter d’un jeu de données.
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Pour modifier une chaîne de connexion pour un TableAdapter dans un DataSet
-1. Dans **Explorateur de solutions**, double-cliquez sur le jeu de données (fichier **. xsd** ) qui contient la connexion que vous souhaitez modifier.
+1. Dans **Explorateur de solutions** , double-cliquez sur le jeu de données (fichier **. xsd** ) qui contient la connexion que vous souhaitez modifier.
 1. Sélectionnez le **TableAdapter** ou la requête qui possède la connexion que vous souhaitez modifier.
 1. Dans la fenêtre **Propriétés** , développez le **nœud connexion**.
 1. Pour modifier rapidement la chaîne de connexion, modifiez la propriété **ConnectionString** ou cliquez sur la flèche orientée vers le bas de la propriété de **connexion** , puis choisissez **nouvelle connexion**.

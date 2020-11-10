@@ -1,5 +1,7 @@
 ---
 title: Mapper des classes LINQ to SQL à des tables/vues (Concepteur O-R)
+description: Comprendre comment créer des classes d’entité LINQ to SQL (classes mappées à des tables et des vues) dans Concepteur Objet Relationnel (Concepteur O/R).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282122"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436344"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Guide pratique pour créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)
 
@@ -32,7 +34,7 @@ Par défaut, le runtime de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdli
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Pour créer des classes LINQ to SQL mappées à des tables ou vues de base de données
 
-1. Dans l’**Explorateur de serveurs** ou l’**Explorateur de base de données**, développez **Tables** ou **Vues**, et localisez la table ou la vue de base de données que vous voulez utiliser dans votre application.
+1. Dans l’ **Explorateur de serveurs** ou l’ **Explorateur de base de données** , développez **Tables** ou **Vues** , et localisez la table ou la vue de base de données que vous voulez utiliser dans votre application.
 
 2. Faites glisser la table ou la vue dans le **Concepteur O/R**.
 
@@ -40,17 +42,17 @@ Par défaut, le runtime de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdli
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Créer un objet source de données et afficher les données sur un formulaire
 
-Après avoir créé des classes d’entité à l’aide du **Concepteur O/R**, vous pouvez créer une source de données d’objet et remplir la [fenêtre sources de données](add-new-data-sources.md#data-sources-window) avec les classes d’entité.
+Après avoir créé des classes d’entité à l’aide du **Concepteur O/R** , vous pouvez créer une source de données d’objet et remplir la [fenêtre sources de données](add-new-data-sources.md#data-sources-window) avec les classes d’entité.
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Pour créer un objet source de données basé sur des classes d'entité LINQ to SQL
 
-1. Dans le menu **Générer**, cliquez sur **Générer la solution** pour générer votre projet.
+1. Dans le menu **Générer** , cliquez sur **Générer la solution** pour générer votre projet.
 
 2. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , cliquez sur Afficher les **sources de données**.
 
 3. Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-4. Dans la page **Choisir un type de source de données**, cliquez sur **Objet**, puis sur **Suivant**.
+4. Dans la page **Choisir un type de source de données** , cliquez sur **Objet** , puis sur **Suivant**.
 
 5. Développez les nœuds, puis localisez et sélectionnez votre classe.
 
@@ -63,9 +65,9 @@ Après avoir créé des classes d’entité à l’aide du **Concepteur O/R**, v
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procédure pas à pas : Création de classes LINQ to SQL (Concepteur O/R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [DataContext, méthodes (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Méthode DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Guide pratique pour créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [Modèle objet LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
 - [Procédure pas à pas : personnalisation du comportement d’insertion, de mise à jour et de suppression de classes d’entité](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)

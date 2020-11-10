@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-Interop
+description: En savoir plus sur le concepteur d’activités Interop et sur la façon dont vous pouvez utiliser le concepteur d’activités Interop pour créer et configurer une activité d’interopérabilité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650207"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437773"
 ---
 # <a name="interop-activity-designer"></a>Concepteur d'activités Interop
 
@@ -27,7 +29,7 @@ L'activité <xref:System.Activities.Statements.Interop> gère l'exécution des t
 
 ### <a name="use-the-interop-activity-designer"></a>Utiliser le concepteur d’activités Interop
 
-Le concepteur d’activités **Interop** se trouve dans la catégorie **migration** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** . Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **Interop** se trouve dans la catégorie **migration** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** . Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 La catégorie de [migration](../workflow-designer/migration-activity-designers.md) qui contient l' <xref:System.Activities.Statements.Interop> activité s’affiche uniquement dans la **boîte à outils** si votre projet cible .NET Framework 4 (complète) ou version ultérieure. Si nécessaire, vous pouvez modifier la version du Framework ciblée par votre projet.
 

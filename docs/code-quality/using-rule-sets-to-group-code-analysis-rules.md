@@ -1,6 +1,8 @@
 ---
 title: Ensembles de règles d'analyse du code
 ms.date: 04/02/2018
+description: En savoir plus sur les ensembles de règles intégrés et personnalisés dans Visual Studio Code Analysis. Consultez Comment spécifier des ensembles de règles dans des fichiers et comment configurer des ensembles de règles dans les projets.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -11,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde3f3200a4764c231b97b0b44e36c38dd0b3e23
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860427"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436886"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser des ensembles de règles pour regrouper des règles d’analyse du code
 
-Quand vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir dans une liste d' *ensembles de règles*intégrés. Un ensemble de règles est un regroupement de règles d’analyse du code qui identifient des problèmes ciblés et des conditions spécifiques pour ce projet. Par exemple, vous pouvez appliquer un ensemble de règles conçu pour analyser le code des API disponibles publiquement. Vous pouvez également appliquer un ensemble de règles qui comprend toutes les règles disponibles.
+Quand vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir dans une liste d' *ensembles de règles* intégrés. Un ensemble de règles est un regroupement de règles d’analyse du code qui identifient des problèmes ciblés et des conditions spécifiques pour ce projet. Par exemple, vous pouvez appliquer un ensemble de règles conçu pour analyser le code des API disponibles publiquement. Vous pouvez également appliquer un ensemble de règles qui comprend toutes les règles disponibles.
 
 Vous pouvez personnaliser un ensemble de règles en ajoutant ou en supprimant des règles ou en modifiant les gravités de la règle pour qu’elles apparaissent sous la forme d’avertissements ou d’erreurs dans le **liste d’erreurs**. Les ensembles de règles personnalisés peuvent satisfaire un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, l’éditeur d’ensembles de règles fournit des outils de recherche et de filtrage pour vous aider dans le processus.
 
@@ -28,7 +30,7 @@ Les ensembles de règles sont disponibles pour l’analyse du [code managé](/do
 
 ## <a name="rule-set-format"></a>Format de l’ensemble de règles
 
-Un ensemble de règles est spécifié au format XML dans un fichier *. RuleSet* . Les règles, qui consistent en un ID et une *action*, sont regroupées par ID et espace de noms de l’analyseur dans le fichier.
+Un ensemble de règles est spécifié au format XML dans un fichier *. RuleSet* . Les règles, qui consistent en un ID et une *action* , sont regroupées par ID et espace de noms de l’analyseur dans le fichier.
 
 Le contenu d’un fichier *. RuleSet* ressemble à ce code XML :
 

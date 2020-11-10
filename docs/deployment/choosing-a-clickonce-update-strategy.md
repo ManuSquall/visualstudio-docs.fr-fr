@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383155"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437602"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Choisir une stratégie de mise à jour ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut fournir des mises à jour d’application automatiques. Une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lit périodiquement son fichier manifeste de déploiement pour vérifier si des mises à jour de l’application sont disponibles. Si disponible, la nouvelle version de l'application est téléchargée et exécutée. Pour des raisons d'efficacité, seuls les fichiers modifiés sont téléchargés.
@@ -73,6 +73,8 @@ ms.locfileid: "94383155"
    </update>
 </subscription>
 ```
+> [!NOTE]
+> Pour les applications .NET 3,1 et plus récentes, la vérification des mises à jour avant le démarrage de l’application est la seule option de mise à jour prise en charge.
 
 ## <a name="make-updates-required"></a>Rendre les mises à jour obligatoires
  Dans certains cas, vous souhaitez obliger les utilisateurs à exécuter une version mise à jour de votre application. Par exemple, vous pouvez apporter une modification à une ressource externe, telle qu'un service Web, qui empêche le fonctionnement correct de la version antérieure de votre application. Dans ce cas, vous souhaitez marquer votre mise à jour comme étant obligatoire et empêcher les utilisateurs d'exécuter la version antérieure.
@@ -119,7 +121,7 @@ ms.locfileid: "94383155"
  Si vous utilisez le déploiement d'applications approuvées, vous ne recevrez aucune invite concernant les niveaux de confiance. Pour plus d’informations, consultez [vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md).
 
 ## <a name="see-also"></a>Voir aussi
- \<xref:System.Deployment.Application>
+- <xref:System.Deployment.Application>
 - [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)

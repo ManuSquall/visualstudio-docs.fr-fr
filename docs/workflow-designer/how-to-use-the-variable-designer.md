@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de flux de travail-comment : utiliser le concepteur de variables'
+description: Découvrez comment vous pouvez utiliser le concepteur de variables pour créer des variables à utiliser dans des scénarios de liaison de données et des instructions conditionnelles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817409"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437825"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procédure : utiliser le concepteur de variables
 
@@ -31,7 +33,7 @@ Le concepteur de variables permet de créer des variables en vue d’une utilisa
 
 3. Ouvrez le concepteur de variables en cliquant sur le bouton **variables** dans le coin inférieur gauche de la zone de conception. Le concepteur de variables s'affiche.
 
-4. Cliquez sur la ligne vide intitulée **créer une variable**. Cette opération ajoute une nouvelle ligne avec une nouvelle variable en utilisant les valeurs par défaut suivantes : VariableX pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms de variables uniques, une **chaîne** pour le **type de variable**et une **séquence** pour l' **étendue**. Aucune valeur n’est ajoutée pour **default**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
+4. Cliquez sur la ligne vide intitulée **créer une variable**. Cette opération ajoute une nouvelle ligne avec une nouvelle variable en utilisant les valeurs par défaut suivantes : VariableX pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms de variables uniques, une **chaîne** pour le **type de variable** et une **séquence** pour l' **étendue**. Aucune valeur n’est ajoutée pour **default**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
 
     > [!NOTE]
     > Pour supprimer une variable, sélectionnez la variable en cliquant dessus, puis appuyez sur la touche **Suppr** .

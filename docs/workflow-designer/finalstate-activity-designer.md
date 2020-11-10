@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-FinalState
+description: Découvrez comment vous pouvez utiliser FinalState Designer pour créer un État qui termine une instance de machine à États.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af8887a11b04679789f57f15f32ca03b7b4acf3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875590"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435819"
 ---
 # <a name="finalstate-activity-designer"></a>Concepteur d'activités FinalState
 
@@ -21,7 +23,7 @@ Le concepteur d'activités <xref:System.Activities.Core.Presentation.FinalState>
 
 ## <a name="using-the-finalstate-activity-designer"></a>Utilisation du concepteur d'activités FinalState
 
-**FinalState** Designer est utilisé pour créer un <xref:System.Activities.Statements.State> qui est préconfiguré comme un état d’arrêt dans une machine à États. Une <xref:System.Activities.Statements.State> propriété créée à l’aide du <xref:System.Activities.Core.Presentation.FinalState> Concepteur d’activités a sa <xref:System.Activities.Statements.State.IsFinal%2A> propriété définie sur **true**, elle n’a aucune <xref:System.Activities.Statements.State.Exit%2A> activité et aucune transition provenant de celle-ci. Pour utiliser le <xref:System.Activities.Core.Presentation.FinalState> Concepteur d’activités pour ajouter une <xref:System.Activities.Statements.State> activité qui est préconfigurée comme un état d’arrêt dans une machine à États, faites glisser le concepteur d’activités **FinalState** de la section **machine à États** de la **boîte à outils** et déposez-le sur le concepteur de Workflow. Le concepteur d’activités <xref:System.Activities.Core.Presentation.FinalState> peut être déposé sur un <xref:System.Activities.Statements.StateMachine> et des transitions ajoutées ultérieurement ; ou une transition peut être créée lorsque le concepteur d’activités <xref:System.Activities.Core.Presentation.FinalState> est déposé. Pour plus d’informations sur la création de transitions, consultez [transition](../workflow-designer/transition-activity-designer.md).
+**FinalState** Designer est utilisé pour créer un <xref:System.Activities.Statements.State> qui est préconfiguré comme un état d’arrêt dans une machine à États. Une <xref:System.Activities.Statements.State> propriété créée à l’aide du <xref:System.Activities.Core.Presentation.FinalState> Concepteur d’activités a sa <xref:System.Activities.Statements.State.IsFinal%2A> propriété définie sur **true** , elle n’a aucune <xref:System.Activities.Statements.State.Exit%2A> activité et aucune transition provenant de celle-ci. Pour utiliser le <xref:System.Activities.Core.Presentation.FinalState> Concepteur d’activités pour ajouter une <xref:System.Activities.Statements.State> activité qui est préconfigurée comme un état d’arrêt dans une machine à États, faites glisser le concepteur d’activités **FinalState** de la section **machine à États** de la **boîte à outils** et déposez-le sur le concepteur de Workflow. Le concepteur d’activités <xref:System.Activities.Core.Presentation.FinalState> peut être déposé sur un <xref:System.Activities.Statements.StateMachine> et des transitions ajoutées ultérieurement ; ou une transition peut être créée lorsque le concepteur d’activités <xref:System.Activities.Core.Presentation.FinalState> est déposé. Pour plus d’informations sur la création de transitions, consultez [transition](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Propriétés de l'activité State dans le concepteur de workflow
 

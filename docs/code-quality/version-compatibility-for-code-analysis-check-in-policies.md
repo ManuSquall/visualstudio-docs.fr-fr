@@ -1,6 +1,8 @@
 ---
 title: Compatibilité des versions des stratégies d'archivage de l'analyse du code
 ms.date: 11/04/2016
+description: Découvrez comment Team System 2008 Team Foundation Server et Team Foundation Server 2010 évaluer les stratégies d’archivage de Visual Studio différemment.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -11,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4757b3a105ff02a92944d9b45e645e2c63a8b81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a681f510da270bc22ae4bc983103f9a5735a127
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587158"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436873"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilité des versions des stratégies d'archivage de l'analyse du code
 
 Si vous devez évaluer et créer des stratégies d’archivage de l’analyse du code à l’aide de différentes versions de [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , vous devez connaître les différences dans la façon dont [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] et [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] évaluer les stratégies d’archivage.
 
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilité des versions pour l’évaluation des stratégies d’archivage
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilité des versions pour l’évaluation des stratégies de Check-In
 
 - Lorsque les stratégies d’archivage de l’analyse du code sont évaluées dans [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] , toutes les règles qui existaient dans [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] mais n’existent pas dans [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] sont ignorées.
 
@@ -32,7 +34,7 @@ Si vous devez évaluer et créer des stratégies d’archivage de l’analyse du
 
 - Si la stratégie d’archivage de l’analyse du code spécifie des assemblys de règles qui [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] ne sont pas reconnus, un message s’affiche.
 
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilité des versions pour la création de stratégies d’archivage
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilité des versions pour la création de stratégies de Check-In
 
 - Si vous avez créé une stratégie d’archivage de l’analyse du code à l’aide [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] de la version de [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , vous ne pouvez pas utiliser la [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] version de [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] pour la modifier. En outre, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] ne peut pas évaluer la stratégie.
 

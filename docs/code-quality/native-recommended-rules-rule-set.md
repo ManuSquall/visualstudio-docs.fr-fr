@@ -1,18 +1,20 @@
 ---
 title: Ensemble de règles des règles recommandées natives
 ms.date: 11/04/2016
+description: En savoir plus sur l’ensemble de règles des règles recommandées natives de Visual Studio. Consultez les descriptions des règles de sécurité, de robustesse et d’autres problèmes critiques en code natif.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600019"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437029"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées natives
 
@@ -38,20 +40,20 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées qu
 |[C6201](/cpp/code-quality/c6201)|L'index dépasse la taille maximale autorisée par la mémoire tampon allouée par la pile|
 |[C6214](/cpp/code-quality/c6214)|Cast de HRESULT non valide en BOOL|
 |[C6215](/cpp/code-quality/c6215)|Cast de BOOL non valide en HRESULT|
-|[C6216](/cpp/code-quality/c6216)|Le cast du cast inséré par le compilateur n’est pas valide pour HRESULT|
+|[C6216](/cpp/code-quality/c6216)|Cast Compiler-Inserted non valide de BOOL en HRESULT|
 |[C6217](/cpp/code-quality/c6217)|Test HRESULT non valide avec NOT|
 |[C6220](/cpp/code-quality/c6220)|Valeur HRESULT non valide comcomparée à-1|
 |[C6226](/cpp/code-quality/c6226)|Assignation HRESULT non valide à-1|
 |[C6230](/cpp/code-quality/c6230)|Utilisation de HRESULT non valide en tant que valeur booléenne|
-|[C6235](/cpp/code-quality/c6235)|Constante non nulle avec or logique|
-|[C6236](/cpp/code-quality/c6236)|Or logique avec constante non nulle|
-|[C6237](/cpp/code-quality/c6237)|Zéro avec l’opérateur and logique perd les effets secondaires|
+|[C6235](/cpp/code-quality/c6235)|Constante non nulle avec Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or avec constante non nulle|
+|[C6237](/cpp/code-quality/c6237)|Zéro avec Logical-And perd les effets secondaires|
 |[C6242](/cpp/code-quality/c6242)|Déroulement local forcé|
 |[C6248](/cpp/code-quality/c6248)|Création d’une liste DACL de valeur null|
 |[C6250](/cpp/code-quality/c6250)|Descripteurs d’adresses incommercialisés|
 |[C6255](/cpp/code-quality/c6255)|Utilisation non protégée d’alloca|
 |[C6258](/cpp/code-quality/c6258)|Utilisation du thread Terminate|
-|[C6259](/cpp/code-quality/c6259)|Code mort dans le commutateur limité au niveau du bit|
+|[C6259](/cpp/code-quality/c6259)|Code mort dans Bitwise-Or commutateur limité|
 |[C6260](/cpp/code-quality/c6260)|Utilisation de l’arithmétique d’octets|
 |[C6262](/cpp/code-quality/c6262)|Utilisation excessive de la pile|
 |[C6263](/cpp/code-quality/c6263)|Utilisation d’alloca dans une boucle|
@@ -64,18 +66,18 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées qu
 |[C6274](/cpp/code-quality/c6274)|Argument autre qu’un caractère pour le formatage de la fonction|
 |[C6276](/cpp/code-quality/c6276)|Cast de chaîne non valide|
 |[C6277](/cpp/code-quality/c6277)|Appel CreateProcess non valide|
-|[C6278](/cpp/code-quality/c6278)|Tableau-nouvelle incompatibilité scalaire-Delete|
-|[C6279](/cpp/code-quality/c6279)|Scalaire-nouveau tableau-incompatibilité de suppression|
-|[C6280](/cpp/code-quality/c6280)|Allocation de mémoire-incompatibilité de désallocation|
+|[C6278](/cpp/code-quality/c6278)|Incompatibilité de Scalar-Delete Array-New|
+|[C6279](/cpp/code-quality/c6279)|Incompatibilité de Array-Delete Scalar-New|
+|[C6280](/cpp/code-quality/c6280)|Incompatibilité de Allocation-Deallocation de mémoire|
 |[C6281](/cpp/code-quality/c6281)|Priorité de la relation au niveau du bit|
 |[C6282](/cpp/code-quality/c6282)|L’affectation remplace le test|
-|[C6283](/cpp/code-quality/c6283)|Tableau de primitives-nouvelle incompatibilité scalaire-suppression|
+|[C6283](/cpp/code-quality/c6283)|Incompatibilité de Scalar-Delete de Array-New primitive|
 |[C6284](/cpp/code-quality/c6284)|Argument d’objet non valide pour le formatage de la fonction|
-|[C6285](/cpp/code-quality/c6285)|Or logique de constantes|
-|[C6286](/cpp/code-quality/c6286)|Effets secondaires non nuls ou logiques perdants|
+|[C6285](/cpp/code-quality/c6285)|Logical-Or de constantes|
+|[C6286](/cpp/code-quality/c6286)|Logical-Or non nulle perdant des effets secondaires|
 |[C6287](/cpp/code-quality/c6287)|Test redondant|
-|[C6288](/cpp/code-quality/c6288)|L’inclusion mutuelle sur Logical-and est false|
-|[C6289](/cpp/code-quality/c6289)|L’exclusion mutuelle sur le ou logique est vraie|
+|[C6288](/cpp/code-quality/c6288)|L’inclusion mutuelle sur Logical-And est false|
+|[C6289](/cpp/code-quality/c6289)|L’exclusion mutuelle sur Logical-Or est vraie|
 |[C6290](/cpp/code-quality/c6290)|Priorité NOT logique et AND au niveau du bit|
 |[C6291](/cpp/code-quality/c6291)|Priorité NOT logique et OR au niveau du bit|
 |[C6292](/cpp/code-quality/c6292)|Le nombre maximal de boucles est de|
@@ -92,7 +94,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées qu
 |[C6308](/cpp/code-quality/c6308)|Fuite de réallocation|
 |[C6310](/cpp/code-quality/c6310)|Constante de filtre d’exception non conforme|
 |[C6312](/cpp/code-quality/c6312)|L’exception continue la boucle d’exécution|
-|[C6314](/cpp/code-quality/c6314)|Priorité or au niveau du bit|
+|[C6314](/cpp/code-quality/c6314)|Priorité de Bitwise-Or|
 |[C6317](/cpp/code-quality/c6317)|Complément non|
 |[C6318](/cpp/code-quality/c6318)|L’exception continue la recherche|
 |[C6319](/cpp/code-quality/c6319)|Ignoré par la virgule|
@@ -103,7 +105,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées qu
 |[C6333](/cpp/code-quality/c6333)|Taille VirtualFree non valide|
 |[C6335](/cpp/code-quality/c6335)|Traitement des fuites de processus|
 |[C6381](/cpp/code-quality/c6381)|Informations d’arrêt manquantes|
-|[C6383](/cpp/code-quality/c6383)|Dépassement de la mémoire tampon du nombre d’octets dans l’élément|
+|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count dépassement de mémoire tampon|
 |[C6384](/cpp/code-quality/c6384)|Division taille du pointeur|
 |[C6385](/cpp/code-quality/c6385)|Dépassement en lecture|
 |[C6386](/cpp/code-quality/c6386)|Dépassement en écriture|

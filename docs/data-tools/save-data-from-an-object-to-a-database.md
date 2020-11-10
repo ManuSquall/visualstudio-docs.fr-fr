@@ -1,5 +1,7 @@
 ---
 title: Enregistrer les données d’un objet dans une base de données
+description: Enregistrer des données à partir d’un objet dans une base de données à l’aide des outils de DataSet dans Visual Studio. Découvrez comment enregistrer de nouveaux enregistrements, mettre à jour des enregistrements existants et supprimer des enregistrements existants.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4afa0d376366b154501e1a0e4488af57b4448a32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281654"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436016"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer les données d’un objet dans une base de données
 

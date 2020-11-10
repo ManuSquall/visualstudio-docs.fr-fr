@@ -2,7 +2,7 @@
 title: 'Didacticiel : ouvrir un projet à partir d’un référentiel'
 description: Découvrez comment ouvrir un projet dans un référentiel Git ou Azure DevOps à l’aide de Visual Studio.
 ms.custom: get-started
-ms.date: 11/03/2020
+ms.date: 11/10/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 56005faa4475f040375108ca02abbca40cd2652d
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 91fb06a50fe0c992d3018aee31cfc963544f8b97
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344538"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436079"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Didacticiel : ouvrir un projet à partir d’un référentiel
 
@@ -75,6 +75,9 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 ::: moniker range="vs-2019"
 
+> [!NOTE]
+> Si vous souhaitez essayer la nouvelle expérience git intégrée dans Visual Studio 2019, veillez à mettre à jour vers la [**version 16,8**](/visualstudio/releases/2019/release-notes/). Pour plus d’informations, consultez la page [nouvelle expérience git dans Visual Studio](../ide/git-with-visual-studio.md) .
+
 1. Ouvrez Visual Studio 2019.
 
 1. Dans la fenêtre de démarrage, choisissez **Cloner ou extraire du code**.
@@ -92,9 +95,6 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
    ![Choisir ce que vous souhaitez ouvrir dans la liste déroulante de l’Explorateur de solutions](./media/open-proj-repo-github-solutions-folders-picker.png)
 
    Si vous n’avez pas de fichier solution (plus précisément, un fichier .sln) dans votre référentiel, le menu contextuel indique « Solutions introuvables ». Vous pouvez toutefois double-cliquer sur n’importe quel fichier dans le menu de dossier pour l’ouvrir dans l’éditeur de code Visual Studio.
-
-> [!TIP]
-> Si vous souhaitez essayer une nouvelle expérience intégrée git dans Visual Studio et que vous utilisez la [version 16,6](/visualstudio/releases/2019/release-notes-v16.6) ou une version ultérieure, vous pouvez l’activer en accédant à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités** , puis en activant la case à cocher **nouvelle expérience utilisateur git** . Pour plus d’informations, consultez la page [nouvelle expérience git dans Visual Studio](../ide/git-with-visual-studio.md) .
 
 ::: moniker-end
 

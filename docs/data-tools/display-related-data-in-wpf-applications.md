@@ -1,5 +1,7 @@
 ---
 title: Afficher des données associées dans des applications WPF
+description: Affichez les données associées dans les applications WPF. Utilisez les données de plusieurs tables ou entités qui sont liées entre elles dans une relation parent-enfant.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6694d3c1521a6a405323edc33adc44dac0e66829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282551"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436496"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Afficher des données associées dans des applications WPF
 
@@ -31,7 +33,7 @@ Vous pouvez créer des contrôles liés aux données qui affichent les données 
 
 ## <a name="to-create-controls-that-display-related-records"></a>Pour créer des contrôles qui affichent des enregistrements connexes
 
-1. Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
+1. Dans le menu **Données** , cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
 
 2. Cliquez sur **Ajouter une nouvelle source de données** et suivez les étapes de l’Assistant **Configuration de source de données**.
 

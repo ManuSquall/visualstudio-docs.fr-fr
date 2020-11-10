@@ -12,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349566"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437686"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Déployer une application dans un dossier à l’aide de Visual Studio
 
 Vous pouvez utiliser l’outil de **publication** pour publier des applications ASP.NET, ASP.net Core, .net Core et Python dans un dossier à partir de Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
 > Si vous devez publier une application de bureau Windows dans un dossier, consultez [déployer une application de bureau à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Si vous devez publier une application de bureau Windows .NET Core 3,1, ou une version plus récente, dans un dossier, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>Déployer sur un dossier local
 
@@ -40,7 +48,17 @@ Vous pouvez utiliser l’outil de **publication** pour publier des applications 
 
     ![Choisir un dossier en tant que cible de publication](../deployment/media/quickstart-publish-folder-new.png "Choisir un dossier")
 
-1. Entrez un chemin d’accès ou sélectionnez **Parcourir** pour spécifier un dossier.
+::: moniker range=">=vs-2019"
+
+4. Si vous déployez une application Windows .NET Core 3,1, ou une version plus récente, vous devrez peut-être sélectionner **dossier** dans la fenêtre **cible spécifique** .
+
+![Choisir un dossier comme cible spécifique](../deployment/media/quickstart-publish-folder-targets.png "Choisir une cible spécifique")
+
+5. Si vous souhaitez publier une application Windows .NET Core 3,1, ou une version plus récente, avec ClickOnce, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+ ::: moniker-end
+
+4. Entrez un chemin d’accès ou sélectionnez **Parcourir** pour spécifier un dossier.
 
     ![Spécifier le chemin d’accès au dossier](../deployment/media/quickstart-publish-folder-path.png "Choisir un dossier")
 
@@ -52,7 +70,7 @@ Vous pouvez utiliser l’outil de **publication** pour publier des applications 
 
    Les paramètres que vous voyez dépendent du type de votre application. L’illustration suivante montre des exemples de paramètres pour une application ASP.NET Core.
 
-    ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "Paramètres de profil")
+    ![Paramètres du profil](../deployment/media/quickstart-profile-settings.png "Paramètres du profil")
 
     Pour obtenir une aide supplémentaire pour choisir des paramètres dans .NET, consultez les rubriques suivantes :
 
@@ -73,3 +91,6 @@ Pour les applications .NET :
 - [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs)
 - [Publication d’applications .NET Core (déploiements dépendants du Framework et déploiements autonomes)](/dotnet/core/deploying/)
 - [Déployer les applications .NET Framework et](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [Déployez une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+ ::: moniker-end

@@ -1,5 +1,7 @@
 ---
 title: Créer des tables de recherche dans des applications WPF
+description: Créer des tables de recherche dans des applications WPF. Une table de recherche est un contrôle qui affiche des informations à partir d’une table de données en fonction d’une valeur de champ de clé étrangère d’une autre table.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282616"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436691"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 
-La *table de recherche* de terme (parfois appelée « *liaison de recherche*») décrit un contrôle qui affiche des informations à partir d’une table de données en fonction de la valeur d’un champ de clé étrangère dans une autre table. Vous pouvez créer une table de recherche en faisant glisser le nœud principal d’une table ou d’un objet parent dans la fenêtre **sources de données** vers un contrôle qui est déjà lié à une colonne ou une propriété dans une table enfant associée.
+La *table de recherche* de terme (parfois appelée « *liaison de recherche* ») décrit un contrôle qui affiche des informations à partir d’une table de données en fonction de la valeur d’un champ de clé étrangère dans une autre table. Vous pouvez créer une table de recherche en faisant glisser le nœud principal d’une table ou d’un objet parent dans la fenêtre **sources de données** vers un contrôle qui est déjà lié à une colonne ou une propriété dans une table enfant associée.
 
 Prenons l’exemple d’une table de `Orders` dans une base de données Sales. Chaque enregistrement de la `Orders` table contient un `CustomerID` qui indique le client qui a passé la commande. `CustomerID`Est une clé étrangère qui pointe vers un enregistrement de client dans la `Customers` table. Lorsque vous affichez une liste de commandes à partir de la `Orders` table, vous pouvez afficher le nom réel du client au lieu du `CustomerID` . Étant donné que le nom du client figure dans la `Customers` table, vous devez créer une table de recherche pour afficher le nom du client. La table de recherche utilise la `CustomerID` valeur de l' `Orders` enregistrement pour naviguer dans la relation et retourne le nom du client.
 
@@ -42,11 +44,11 @@ Prenons l’exemple d’une table de `Orders` dans une base de données Sales. C
     > [!NOTE]
     > Avant de pouvoir créer une table de correspondance, deux tables ou objets associés doivent exister comme source de données pour le projet.
 
-2. Ouvrez le **Concepteur WPF**et assurez-vous que le concepteur contient un conteneur qui est une cible de dépôt valide pour les éléments de la fenêtre **sources de données** .
+2. Ouvrez le **Concepteur WPF** et assurez-vous que le concepteur contient un conteneur qui est une cible de dépôt valide pour les éléments de la fenêtre **sources de données** .
 
      Pour plus d’informations sur les cibles de dépôt valides, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3. Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
+3. Dans le menu **Données** , cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
 
 4. Développez les nœuds dans la fenêtre **sources de données** , jusqu’à ce que vous puissiez voir la table ou l’objet parent et la table enfant ou l’objet associé.
 
@@ -81,7 +83,7 @@ Prenons l’exemple d’une table de `Orders` dans une base de données Sales. C
 
      Visual Studio définit des propriétés sur le contrôle pour configurer la liaison de recherche. Le tableau suivant répertorie les propriétés que Visual Studio modifie. Si nécessaire, vous pouvez modifier ces propriétés dans le XAML ou dans la fenêtre **Propriétés** .
 
-    |Propriété|Explication du paramètre|
+    |Property|Explication du paramètre|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Cette propriété spécifie la collection ou la liaison utilisée pour récupérer les données affichées dans le contrôle. Visual Studio affecte à cette propriété la valeur <xref:System.Windows.Data.CollectionViewSource> pour les données parentes que vous avez déplacées vers le contrôle.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Cette propriété spécifie le chemin d’accès de l’élément de données affiché dans le contrôle. Visual Studio définit cette propriété sur la première colonne ou propriété dans les données parentes, après la clé primaire, qui a un type de données String.<br /><br /> Si vous souhaitez afficher une colonne ou une propriété différente dans les données parentes, remplacez cette propriété par le chemin d’accès d’une autre propriété.|

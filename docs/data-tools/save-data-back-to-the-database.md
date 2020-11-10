@@ -1,5 +1,7 @@
 ---
 title: Enregistrer les données dans la base de données
+description: Utilisez les outils de DataSet pour réenregistrer les données dans la base de données. Le jeu de données est une copie en mémoire des données qui doit être enregistrée dans la base de données si elle est modifiée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281745"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436053"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 
@@ -43,14 +45,14 @@ Si vous êtes familiarisé avec les TableAdapters, vous pouvez accéder directem
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Guide pratique pour insérer de nouveaux enregistrements dans une base de données](../data-tools/insert-new-records-into-a-database.md)|Comment effectuer des mises à jour et des insertions à l’aide de TableAdapters ou d’objets de commande|
-|[Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Comment effectuer des mises à jour avec des TableAdapters|
+|[Insérer de nouveaux enregistrements dans une base de données](../data-tools/insert-new-records-into-a-database.md)|Comment effectuer des mises à jour et des insertions à l’aide de TableAdapters ou d’objets de commande|
+|[Mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Comment effectuer des mises à jour avec des TableAdapters|
 |[Mise à jour hiérarchique](../data-tools/hierarchical-update.md)|Comment effectuer des mises à jour à partir d’un jeu de données avec au moins deux tables associées|
 |[Gérer une exception d’accès concurrentiel](../data-tools/handle-a-concurrency-exception.md)|Comment gérer les exceptions quand deux utilisateurs essaient de modifier les mêmes données dans une base de données en même temps|
 |[Comment : enregistrer des données à l’aide d’une transaction](../data-tools/save-data-by-using-a-transaction.md)|Comment enregistrer des données dans une transaction à l’aide du système. Espace de noms transactions et objet TransactionScope|
 |[Enregistrer des données dans une transaction](../data-tools/save-data-in-a-transaction.md)|Procédure pas à pas qui crée une application Windows Forms pour illustrer l’enregistrement de données dans une base de données à l’intérieur d’une transaction|
 |[Enregistrer des données dans une base de données (plusieurs tables)](../data-tools/save-data-to-a-database-multiple-tables.md)|Comment modifier des enregistrements et enregistrer les modifications apportées à plusieurs tables dans la base de données|
-|[Guide pratique pour enregistrer les données d’un objet dans une base de données](../data-tools/save-data-from-an-object-to-a-database.md)|Comment passer des données d’un objet qui n’est pas dans un DataSet à une base de données à l’aide d’une méthode DbDirect du TableAdapter|
+|[Enregistrer les données d’un objet dans une base de données](../data-tools/save-data-from-an-object-to-a-database.md)|Comment passer des données d’un objet qui n’est pas dans un DataSet à une base de données à l’aide d’une méthode DbDirect du TableAdapter|
 |[Enregistrer des données avec les méthodes DBDirect du TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Comment utiliser le TableAdapter pour envoyer des requêtes SQL directement à la base de données|
 |[Enregistrer un dataset au format XML](../data-tools/save-a-dataset-as-xml.md)|Comment enregistrer un DataSet dans un document XML|
 
@@ -276,7 +278,7 @@ Dans une instruction UPDATE, vous devez spécifier les nouvelles valeurs (celles
 
 - [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Créer et configurer des TableAdapters](create-and-configure-tableadapters.md)
-- [Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
+- [Mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Valider des données](validate-data-in-datasets.md)
 - [Guide pratique pour ajouter, modifier et supprimer des entités (services de données WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de flux de travail-comment : utiliser le concepteur d’arguments'
+description: En savoir plus sur le concepteur d’arguments et sur l’utilisation du concepteur d’arguments pour autoriser le passage des données dans et hors d’une activité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817448"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437864"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procédure : utiliser le concepteur d’arguments
 
@@ -28,7 +30,7 @@ Le concepteur d’arguments permet d’autoriser facilement le passage des donn�
 
 2. Ouvrez le concepteur d’arguments en cliquant sur le bouton **arguments** dans le coin inférieur gauche de la zone de conception. Le concepteur d’arguments s’affiche.
 
-3. Cliquez sur la ligne vide intitulée **créer un argument**. Cette opération ajoute une nouvelle ligne avec un nouvel argument en utilisant les valeurs par défaut suivantes : argumentx comme pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms d’arguments uniques, **dans** pour la **direction**et **chaîne** pour le **type d’argument**. Aucune valeur n’est ajoutée pour la **valeur par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
+3. Cliquez sur la ligne vide intitulée **créer un argument**. Cette opération ajoute une nouvelle ligne avec un nouvel argument en utilisant les valeurs par défaut suivantes : argumentx comme pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms d’arguments uniques, **dans** pour la **direction** et **chaîne** pour le **type d’argument**. Aucune valeur n’est ajoutée pour la **valeur par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
 
     > [!NOTE]
     > Pour supprimer un argument, sélectionnez l’argument en cliquant dessus, puis appuyez sur la touche **Suppr** .

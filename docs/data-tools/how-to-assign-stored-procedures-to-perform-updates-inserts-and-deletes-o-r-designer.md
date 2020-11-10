@@ -1,5 +1,6 @@
 ---
 title: Utiliser des procédures stockées dans LINQ to SQL pour mettre à jour des données
+description: Utilisez des procédures stockées dans le Concepteur Objet Relationnel LINQ to SQL (Concepteur O/R) pour effectuer des mises à jour, des insertions et des suppressions de données.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036312"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436411"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 
@@ -34,9 +35,9 @@ Par défaut, la logique de mise à jour d’une base de données (insertions, mi
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Pour assigner des procédures stockées afin de substituer le comportement par défaut d'une classe d'entité
 
-1. Ouvrez le fichier **LINQ to SQL** dans le concepteur. (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)
+1. Ouvrez le fichier **LINQ to SQL** dans le concepteur. (Double-cliquez sur le fichier **.dbml** dans l’ **Explorateur de solutions**.)
 
-2. Dans l’**Explorateur de serveurs** ou l’**Explorateur de bases de données**, développez **Procédures stockées** et localisez les procédures stockées à utiliser pour l’insertion, la mise à jour et/ou la suppression de la classe d’entité.
+2. Dans l’ **Explorateur de serveurs** ou l’ **Explorateur de bases de données** , développez **Procédures stockées** et localisez les procédures stockées à utiliser pour l’insertion, la mise à jour et/ou la suppression de la classe d’entité.
 
 3. Faites glisser la procédure stockée vers le **Concepteur O/R**.
 
@@ -44,7 +45,7 @@ Par défaut, la logique de mise à jour d’une base de données (insertions, mi
 
 4. Sélectionnez la classe d'entité pour laquelle vous souhaitez utiliser la procédure stockée afin d'effectuer des mises à jour.
 
-5. Dans la fenêtre **Propriétés**, sélectionnez la commande à substituer (**Insert**, **Update** ou **Delete**).
+5. Dans la fenêtre **Propriétés** , sélectionnez la commande à substituer ( **Insert** , **Update** ou **Delete** ).
 
 6. Cliquez sur les points de suspension (...) en regard des mots **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.
 
@@ -60,9 +61,9 @@ Par défaut, la logique de mise à jour d’une base de données (insertions, mi
 10. Cliquez sur **OK** ou **Appliquer**.
 
     > [!NOTE]
-    > Vous pouvez continuer à configurer le comportement pour chaque combinaison de classe et de comportement tant que vous cliquez sur **appliquer** après avoir effectué chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer**, une boîte de dialogue d’avertissement s’affiche et vous donne la possibilité d’appliquer vos modifications.
+    > Vous pouvez continuer à configurer le comportement pour chaque combinaison de classe et de comportement tant que vous cliquez sur **appliquer** après avoir effectué chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer** , une boîte de dialogue d’avertissement s’affiche et vous donne la possibilité d’appliquer vos modifications.
 
-Pour rétablir l’utilisation de la logique runtime par défaut pour les mises à jour, cliquez sur les points de suspension à côté de la commande **Insert**, **Update** ou **Delete** dans la fenêtre **Propriétés**, puis sélectionnez **Utiliser le runtime** dans la boîte de dialogue **Configurer le comportement**.
+Pour rétablir l’utilisation de la logique runtime par défaut pour les mises à jour, cliquez sur les points de suspension à côté de la commande **Insert** , **Update** ou **Delete** dans la fenêtre **Propriétés** , puis sélectionnez **Utiliser le runtime** dans la boîte de dialogue **Configurer le comportement**.
 
 ## <a name="see-also"></a>Voir aussi
 

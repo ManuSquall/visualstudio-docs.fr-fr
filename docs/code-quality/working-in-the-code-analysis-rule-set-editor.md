@@ -1,6 +1,8 @@
 ---
 title: Utiliser l'Éditeur d'ensembles de règles d'analyse du code
 ms.date: 04/04/2018
+description: Découvrez comment modifier et afficher les ensembles de règles dans Visual Studio. Consultez Comment définir la gravité d’une règle, spécifier des règles dans un ensemble personnalisé et ajuster les données dans la grille de l’ensemble de règles.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659177"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436821"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur d’ensembles de règles d’analyse du code
 
@@ -27,9 +29,9 @@ Le tableau suivant présente les options de gravité :
 |-|-|
 |Avertissement|Génère un avertissement dans le **liste d’erreurs** et également au moment de la génération.|
 |Error|Génère une erreur dans le **liste d’erreurs** et également au moment de la génération.|
-|Info|Génère un message dans le **liste d’erreurs**.|
+|Informations|Génère un message dans le **liste d’erreurs**.|
 |Hidden|La violation n’est pas visible pour l’utilisateur. Toutefois, l’IDE est averti de la violation.|
-|None|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
+|Aucun|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
 
 L’éditeur affiche les règles dans une arborescence qui regroupe les règles par un champ d’ensemble de règles que vous spécifiez. Pour ajouter ou supprimer des règles dans un ensemble de règles, effectuez une ou plusieurs des étapes suivantes :
 
@@ -42,7 +44,7 @@ L’éditeur affiche les règles dans une arborescence qui regroupe les règles 
 
 - Activez ou désactivez la case à cocher d’une règle individuelle. Lorsque vous activez la case à cocher d’une règle, la règle est définie sur l’action d' **Avertissement** .
 
-## <a name="toolbar"></a>Barre d’outils
+## <a name="toolbar"></a>Barre d'outils
 
 Vous pouvez utiliser la barre d’outils de l’éditeur d’ensembles de règles pour regrouper, filtrer et rechercher les données qui s’affichent dans la grille d’ensemble de règles.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de flux de travail-comment : utiliser le concepteur d’importations'
+description: Découvrez comment le concepteur d’importations vous permet d’entrer des espaces de noms pour les types que vous allez utiliser dans vos expressions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bdf33227263e8158f956fa8c6509d93e8116e9b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817422"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437838"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procédure : utiliser le concepteur d'importations
 
 Le concepteur d'importations vous permet d'entrer des espaces de noms pour les types que vous utiliserez dans vos expressions. À l’instar des **importations** ou de **l’utilisation** de mots clés dans Visual Basic et C#, la spécification d’espaces de noms dans le concepteur d’importations vous permet d’entrer simplement un nom de type dans votre expression plutôt qu’un nom de type de version complet.
 
-Le concepteur d'importations réagit aux modifications apportées à l'interface utilisateur ainsi qu'aux modifications apportées lors de l'enregistrement du workflow. Lorsque le workflow est enregistré, des espaces de noms peuvent être automatiquement ajoutés au concepteur d'importations. Ces options en question sont les suivantes :
+Le concepteur d'importations réagit aux modifications apportées à l'interface utilisateur ainsi qu'aux modifications apportées lors de l'enregistrement du workflow. Lorsque le workflow est enregistré, des espaces de noms peuvent être automatiquement ajoutés au concepteur d'importations. Elles sont associées aux limitations suivantes :
 
 - les espaces de noms pour tout type utilisé dans les déclarations de variables et d’arguments ;
 

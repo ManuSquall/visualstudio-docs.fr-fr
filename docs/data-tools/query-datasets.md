@@ -1,5 +1,7 @@
 ---
 title: Interroger des datasets
+description: Comprendre les jeux de données de requête. En savoir plus sur le respect de la casse du jeu de données. Rechercher une ligne spécifique dans une table de données, Rechercher des lignes par valeurs de colonne et accéder aux enregistrements associés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281862"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436066"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 Pour rechercher des enregistrements spécifiques dans un DataSet, utilisez la `FindBy` méthode sur le DataTable, écrivez votre propre instruction foreach pour effectuer une boucle sur la collection de lignes de la table ou utilisez [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,7 +72,7 @@ Cette page fournit des exemples à l’aide de datasets typés. Pour plus d’in
 > [!NOTE]
 > Si vous travaillez dans une application Windows Forms et que vous utilisez les fonctionnalités de liaison de données pour afficher les données, le formulaire généré par le concepteur peut fournir suffisamment de fonctionnalités pour votre application. Pour plus d’informations, consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Plus précisément, consultez [relations dans les jeux de données](relationships-in-datasets.md).
 
-Les exemples de code suivants montrent comment parcourir les relations vers le haut et vers le haut dans des datasets typés. Les exemples de code utilisent <xref:System.Data.DataRow> des méthodes typées ( `NorthwindDataSet.OrdersRow` ) et les méthodes FindBy*PrimaryKey* () générées `FindByCustomerID` pour localiser une ligne souhaitée et retourner les enregistrements associés. Les exemples se compilent et s’exécutent correctement uniquement si vous disposez des éléments suivants :
+Les exemples de code suivants montrent comment parcourir les relations vers le haut et vers le haut dans des datasets typés. Les exemples de code utilisent <xref:System.Data.DataRow> des méthodes typées ( `NorthwindDataSet.OrdersRow` ) et les méthodes FindBy *PrimaryKey* () générées `FindByCustomerID` pour localiser une ligne souhaitée et retourner les enregistrements associés. Les exemples se compilent et s’exécutent correctement uniquement si vous disposez des éléments suivants :
 
 - Instance d’un dataset nommé `NorthwindDataSet` avec une `Customers` table.
 

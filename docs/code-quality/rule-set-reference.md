@@ -1,6 +1,8 @@
 ---
 title: Référence d’ensemble de règles d’analyse du code
 ms.date: 04/04/2018
+description: En savoir plus sur les ensembles de règles intégrés dans l’analyse du code hérité Visual Studio. Consultez ressources sur les ensembles de règles. Découvrez comment utiliser ces jeux dans des ensembles de règles personnalisés.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
@@ -9,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc025a3ff096e560cc2bd5a135f370e89dba2f9e
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ce5b7f2ecdc854269288c61eaeee6d46b4a74d91
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860467"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436977"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 
-Quand vous configurez une analyse héritée pour des projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste d' *ensembles de règles*intégrés. Certaines règles sont incluses dans plusieurs ensembles de règles prédéfinis, par exemple, l’ensemble de règles de règles de vérification de base inclut des règles qui se trouvent dans l’ensemble de règles des règles recommandées managées.
+Quand vous configurez une analyse héritée pour des projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste d' *ensembles de règles* intégrés. Certaines règles sont incluses dans plusieurs ensembles de règles prédéfinis, par exemple, l’ensemble de règles de règles de vérification de base inclut des règles qui se trouvent dans l’ensemble de règles des règles recommandées managées.
 
 > [!NOTE]
 > Les ensembles de règles de cette section se rapportent aux analyses héritées. Pour plus d’informations sur les ensembles de règles disponibles pour les packages de l’analyseur de code, consultez [utiliser des ensembles de règles avec des analyseurs de code](/dotnet/fundamentals/code-analysis/code-quality-rule-options).

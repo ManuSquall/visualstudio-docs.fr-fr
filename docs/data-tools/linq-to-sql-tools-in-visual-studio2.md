@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du concepteur LINQ to SQL O/R
+description: Découvrez une vue d’ensemble des outils de LINQ to SQL dans Visual Studio. En savoir plus sur le Concepteur Objet Relationnel (Concepteur O/R).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 55f6fa2ad9eda2d701563d1fa99c76f5cd5c7c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af394318d18244fc6e20e517d0ff985ca5e5ad1f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282005"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436235"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Outils LINQ to SQL dans Visual Studio
 
@@ -21,9 +23,9 @@ LINQ to SQL était la première technologie de mappage relationnel objet publié
 
 ## <a name="install-the-linq-to-sql-tools"></a>Installer les outils de LINQ to SQL
 
-Dans Visual Studio, vous créez LINQ to SQL classes qui représentent des tables SQL à l’aide de la **Concepteur Objet Relationnel** (**Concepteur O/R**). Le Concepteur O/R est l’interface utilisateur permettant de modifier les fichiers. dbml. La modification de fichiers. dbml avec une aire de conception nécessite les outils de LINQ to SQL qui ne sont pas installés par défaut dans le cadre de l’une des charges de travail de Visual Studio.
+Dans Visual Studio, vous créez LINQ to SQL classes qui représentent des tables SQL à l’aide de la **Concepteur Objet Relationnel** ( **Concepteur O/R** ). Le Concepteur O/R est l’interface utilisateur permettant de modifier les fichiers. dbml. La modification de fichiers. dbml avec une aire de conception nécessite les outils de LINQ to SQL qui ne sont pas installés par défaut dans le cadre de l’une des charges de travail de Visual Studio.
 
-Pour installer les outils de LINQ to SQL, démarrez le programme d’installation de Visual Studio, choisissez **modifier**, sélectionnez l’onglet **composants individuels** , puis sélectionnez **LINQ to SQL outils** sous la catégorie **outils de code** .
+Pour installer les outils de LINQ to SQL, démarrez le programme d’installation de Visual Studio, choisissez **modifier** , sélectionnez l’onglet **composants individuels** , puis sélectionnez **LINQ to SQL outils** sous la catégorie **outils de code** .
 
 ## <a name="what-is-the-or-designer"></a>Qu’est-ce que le Concepteur O/R ?
 
@@ -33,7 +35,7 @@ Le **Concepteur O/R** fournit une aire de conception visuelle pour créer des [L
 
 ## <a name="open-the-or-designer"></a>Ouvrir le Concepteur O/R
 
-Pour ajouter un modèle d’entité LINQ to SQL à votre projet, choisissez **projet**  >  **Ajouter un nouvel élément**, puis sélectionnez **LINQ to SQL classes** dans la liste des éléments de projet :
+Pour ajouter un modèle d’entité LINQ to SQL à votre projet, choisissez **projet**  >  **Ajouter un nouvel élément** , puis sélectionnez **LINQ to SQL classes** dans la liste des éléments de projet :
 
 ![Classes LINQ to SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -46,22 +48,22 @@ Lorsque vous sélectionnez le fichier *. dbml* , Visual Studio affiche l’aire 
 ![Concepteur LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> Le **Concepteur O/R** est un mappeur relationnel objet simple, car il ne prend en charge que les relations de mappage 1:1. En d'autres termes, une classe d'entité peut uniquement avoir une relation de mappage 1:1 avec une table ou une vue de base de données. Le mappage complexe, tel que le mappage d’une classe d’entité à une table jointe, n’est pas pris en charge ; Utilisez la Entity Framework pour le mappage complexe. En outre, le concepteur est un générateur de code unidirectionnel. Cela signifie que seules les modifications apportées à l'aire du concepteur sont répercutées dans le fichier de code. Les modifications manuelles apportées au fichier de code ne sont pas reflétées dans le **Concepteur O/R**. Les modifications apportées manuellement dans le fichier de code sont remplacées lorsque le concepteur est enregistré et le code régénéré. Pour plus d’informations sur la façon d’ajouter le code utilisateur et d’étendre les classes générées par le **Concepteur O/R**, consultez [Comment : étendre le code généré par le Concepteur O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> Le **Concepteur O/R** est un mappeur relationnel objet simple, car il ne prend en charge que les relations de mappage 1:1. En d'autres termes, une classe d'entité peut uniquement avoir une relation de mappage 1:1 avec une table ou une vue de base de données. Le mappage complexe, tel que le mappage d’une classe d’entité à une table jointe, n’est pas pris en charge ; Utilisez la Entity Framework pour le mappage complexe. En outre, le concepteur est un générateur de code unidirectionnel. Cela signifie que seules les modifications apportées à l'aire du concepteur sont répercutées dans le fichier de code. Les modifications manuelles apportées au fichier de code ne sont pas reflétées dans le **Concepteur O/R**. Les modifications apportées manuellement dans le fichier de code sont remplacées lorsque le concepteur est enregistré et le code régénéré. Pour plus d’informations sur la façon d’ajouter le code utilisateur et d’étendre les classes générées par le **Concepteur O/R** , consultez [Comment : étendre le code généré par le Concepteur O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Créer et configurer DataContext
 
-Une fois que vous avez ajouté un élément **LINQ to SQL classes** à un projet et ouvert le **Concepteur O/R**, l’aire de conception vide représente un vide <xref:System.Data.Linq.DataContext> prêt à être configuré. Le <xref:System.Data.Linq.DataContext> est configuré avec les informations de connexion fournies par le premier élément glissé sur l’aire de conception. Par conséquent, <xref:System.Data.Linq.DataContext> est configuré en utilisant les informations de connexion du premier élément déposé sur l’aire de conception. Pour plus d’informations sur la <xref:System.Data.Linq.DataContext> classe, consultez [méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).
+Une fois que vous avez ajouté un élément **LINQ to SQL classes** à un projet et ouvert le **Concepteur O/R** , l’aire de conception vide représente un vide <xref:System.Data.Linq.DataContext> prêt à être configuré. Le <xref:System.Data.Linq.DataContext> est configuré avec les informations de connexion fournies par le premier élément glissé sur l’aire de conception. Par conséquent, <xref:System.Data.Linq.DataContext> est configuré en utilisant les informations de connexion du premier élément déposé sur l’aire de conception. Pour plus d’informations sur la <xref:System.Data.Linq.DataContext> classe, consultez [méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Créer des classes d’entité qui mappent à des vues et des tables de base de données
 
-Vous pouvez créer des classes d’entité mappées à des tables et des vues en faisant glisser des tables et des vues de base de données à partir de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R**. Comme indiqué dans la section précédente, <xref:System.Data.Linq.DataContext> est configuré avec les informations de connexion fournies par le premier élément glissé sur l’aire de conception. Si un élément suivant qui utilise une connexion différente est ajouté au **Concepteur O/R**, vous pouvez modifier la connexion pour le <xref:System.Data.Linq.DataContext> . Pour plus d’informations, consultez [Comment : créer des classes LINQ to SQL mappées à des tables et des vues (Concepteur O/R)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Vous pouvez créer des classes d’entité mappées à des tables et des vues en faisant glisser des tables et des vues de base de données à partir de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R**. Comme indiqué dans la section précédente, <xref:System.Data.Linq.DataContext> est configuré avec les informations de connexion fournies par le premier élément glissé sur l’aire de conception. Si un élément suivant qui utilise une connexion différente est ajouté au **Concepteur O/R** , vous pouvez modifier la connexion pour le <xref:System.Data.Linq.DataContext> . Pour plus d’informations, consultez [Comment : créer des classes LINQ to SQL mappées à des tables et des vues (Concepteur O/R)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Créer des méthodes DataContext qui appellent des procédures stockées et des fonctions
 
 Vous pouvez créer des <xref:System.Data.Linq.DataContext> méthodes qui appellent (sont mappées à) des procédures stockées et des fonctions en les faisant glisser de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R**. Les procédures stockées et les fonctions sont ajoutées au **Concepteur O/R** en tant que méthodes de <xref:System.Data.Linq.DataContext> .
 
 > [!NOTE]
-> Lorsque vous faites glisser des procédures stockées et des fonctions de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R**, le type de retour de la <xref:System.Data.Linq.DataContext> méthode générée diffère selon l’endroit où vous déposez l’élément. Pour plus d’informations, consultez [méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).
+> Lorsque vous faites glisser des procédures stockées et des fonctions de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R** , le type de retour de la <xref:System.Data.Linq.DataContext> méthode générée diffère selon l’endroit où vous déposez l’élément. Pour plus d’informations, consultez [méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurer un DataContext pour utiliser des procédures stockées pour enregistrer des données entre des classes d’entité et une base de données
 

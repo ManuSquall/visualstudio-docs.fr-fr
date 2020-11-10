@@ -11,14 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ae274e460f4404efa92c4cf3785a3c2e41fd9691
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 1f66f691bd92c6cc9d315c58225b9345198fe96d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134076"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435765"
 ---
 # <a name="getting-started-with-devinit"></a>Prise en main avec devinit
+
+devinit est un outil que vous pouvez utiliser pour permettre à quiconque d’accéder au code et de rester productif dans votre référentiel en exécutant une commande simple. Vous pouvez utiliser devinit pour définir toutes les dépendances à l’ensemble du système dont votre référentiel a besoin, comme SQL Server, Node.js, docker ou IIS. Devinit peut appeler d’autres outils et gestionnaires de package pour installer ce dont votre référentiel a besoin. Vous définissez ces dépendances dans un fichier JSON nommé [.devinit.jssur](devinit-json.md) , puis la personne suivante pour utiliser votre référentiel doit simplement s’exécuter [`devinit init`](devinit-commands.md#init) pour installer toutes ces dépendances. Ainsi, au lieu de passer une demi-journée à un nouveau référentiel, cette opération peut être effectuée en quelques minutes.
+
+devinit n’est pas un gestionnaire de package ou un outil de configuration de machine virtuelle dans et de lui-même. Il s’agit d’un Runner de tâche pour un fichier manifeste, nommé [.devinit.jssur](devinit-json.md), qui définit les dépendances à l’ensemble du système dont votre application a besoin. Pour installer ces dépendances, devinit utilise des outils que vous utilisez peut-être déjà, tels que le [chocolat](https://chocolatey.org). Vous pouvez consulter les outils disponibles dans la [liste complète](devinit-tool-list.md). En utilisant ces outils plutôt que de distribuer directement les logiciels, devinit vous offre la commodité d’utiliser l’outil de votre choix et vous permet d’utiliser des configurations existantes, par exemple, un fichier [packages.config](https://chocolatey.org/docs/commands-install#packagesconfig) pour le chocolat.  
 
 ## <a name="step-1-get-devinit"></a>Étape 1 : obtenir devinit
 
@@ -26,9 +30,9 @@ devinit est actuellement disponible uniquement dans le cadre de GitHub Codespace
 
 ## <a name="step-2-define-your-environment"></a>Étape 2 : définir votre environnement
 
-L’étape la plus importante consiste à définir votre environnement « développeur » dans un [ _.devinit.jssur_ un fichier](devinit-json.md). Ce fichier sera utilisé par devinit pour créer votre environnement lors de l’exécution de `devinit init` .
+L’étape la plus importante consiste à définir votre environnement de développement dans un [.devinit.jsfichier](devinit-json.md). Ce fichier sera utilisé par devinit pour créer votre environnement lors de l’exécution de `devinit init` .
 
-Pour cette étape, réfléchissez aux instructions permettant à quelqu’un d’être opérationnel avec un référentiel de projet. Par exemple, le SQL doit-il être installé ? Une version spécifique de .NET Core ? suite. Ensuite, pour chacune de ces dépendances, recherchez un outil devinit correspondant dans la [liste des outils](devinit-tool-list.md) et ajoutez-le à l'.devinit.jsdu référentiel _sur_ le fichier.
+Pour cette étape, réfléchissez aux instructions permettant à quelqu’un d’être opérationnel avec un référentiel de projet. Par exemple, le SQL doit-il être installé ? Une version spécifique de .NET Core ? Et ainsi de suite. Ensuite, pour chacune de ces dépendances, recherchez un outil devinit correspondant dans la [liste des outils](devinit-tool-list.md) et ajoutez-le au fichier du référentiel `.devinit.json` . Vous pouvez également voir une sélection d’exemples dans la [documentation des exemples](sample-readme.md).
 
 ## <a name="step-3-enjoy"></a>Étape 3 : Profitez-en !
 

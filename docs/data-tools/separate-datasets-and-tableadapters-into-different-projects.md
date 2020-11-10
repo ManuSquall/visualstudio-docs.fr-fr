@@ -1,6 +1,6 @@
 ---
 title: Erreur d’utilisation de projets distincts
-description: Séparer les datasets et les TableAdapters en différents projets
+description: Découvrez comment séparer des DataSets et des TableAdapters dans différents projets, afin de pouvoir séparer rapidement les couches d’application et générer des applications de données multicouches.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.custom: SEO-VS-2020
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ed815b73cade73c38b52528d918b4af4de2a618
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f039dc445acd9032a5fe6862e78e5c28ec67bf5d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036273"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436001"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Séparer les datasets et les TableAdapters en différents projets
 Les datasets typés ont été améliorés afin que les classes de datasets et de [TableAdapters](create-and-configure-tableadapters.md) puissent être générées dans des projets distincts. Cela vous permet de séparer rapidement les couches d’application et de générer des applications de données multicouches.
@@ -54,10 +54,10 @@ Lorsque vous séparez le code d’un DataSet du code du TableAdapter, le projet 
 
      Le code du DataSet est généré dans le projet sélectionné dans la propriété **DataSet Project** et le code du **TableAdapter** est généré dans le projet actuel.
 
-Par défaut, après avoir séparé le jeu de données et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé *NomGroupeDonnées. Designer. vb* (ou *DataSetName.Designer.cs*) qui contient le code du TableAdapter. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées. DataSet. Designer. vb* (ou *DataSetName.DataSet.Designer.cs*) qui contient le code du DataSet.
+Par défaut, après avoir séparé le jeu de données et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé *NomGroupeDonnées. Designer. vb* (ou *DataSetName.Designer.cs* ) qui contient le code du TableAdapter. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées. DataSet. Designer. vb* (ou *DataSetName.DataSet.Designer.cs* ) qui contient le code du DataSet.
 
 > [!NOTE]
-> Pour afficher le fichier de classe généré, sélectionnez le DataSet ou le projet TableAdapter. Ensuite, dans **Explorateur de solutions**, sélectionnez **Afficher tous les fichiers**.
+> Pour afficher le fichier de classe généré, sélectionnez le DataSet ou le projet TableAdapter. Ensuite, dans **Explorateur de solutions** , sélectionnez **Afficher tous les fichiers**.
 
 ## <a name="see-also"></a>Voir aussi
 

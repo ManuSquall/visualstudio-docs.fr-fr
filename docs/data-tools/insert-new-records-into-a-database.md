@@ -1,5 +1,7 @@
 ---
 title: Insérer de nouveaux enregistrements dans une base de données
+description: Insérer de nouveaux enregistrements dans une base de données à l’aide de la méthode TableAdapter. Update, de l’une des méthodes DBDirect du TableAdapter ou des objets de commande.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281992"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436274"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insérer de nouveaux enregistrements dans une base de données
 
@@ -34,7 +36,7 @@ Si votre application utilise des jeux de données pour stocker des données, uti
 
 Si votre application utilise des objets pour stocker des données, ou si vous souhaitez un contrôle plus fin sur la création d’enregistrements dans la base de données, utilisez la `TableAdapter.Insert` méthode.
 
-Si votre TableAdapter n’a pas de `Insert` méthode, cela signifie que le TableAdapter est configuré pour utiliser des procédures stockées ou que sa `GenerateDBDirectMethods` propriété a la valeur `false` . Essayez de définir la propriété du TableAdapter `GenerateDBDirectMethods` à `true` partir de dans le **Concepteur de DataSet**, puis enregistrez le jeu de données. Cela permet de régénérer le TableAdapter. Si le TableAdapter n’a toujours `Insert` pas de méthode, il est probable que la table ne fournisse pas suffisamment d’informations de schéma pour faire la distinction entre des lignes individuelles (par exemple, il se peut qu’il n’y ait pas de clé primaire définie sur la table).
+Si votre TableAdapter n’a pas de `Insert` méthode, cela signifie que le TableAdapter est configuré pour utiliser des procédures stockées ou que sa `GenerateDBDirectMethods` propriété a la valeur `false` . Essayez de définir la propriété du TableAdapter `GenerateDBDirectMethods` à `true` partir de dans le **Concepteur de DataSet** , puis enregistrez le jeu de données. Cela permet de régénérer le TableAdapter. Si le TableAdapter n’a toujours `Insert` pas de méthode, il est probable que la table ne fournisse pas suffisamment d’informations de schéma pour faire la distinction entre des lignes individuelles (par exemple, il se peut qu’il n’y ait pas de clé primaire définie sur la table).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Insérer de nouveaux enregistrements à l’aide de TableAdapters
 

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048816"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437121"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
@@ -340,6 +340,49 @@ Output:
   Value1 = a
   Value2 = b
 -->
+```
+
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Fonctions de MSBuild TargetFramework et TargetPlatform
+
+MSBuild définit plusieurs fonctions pour gérer les [Propriétés TargetFramework et TargetPlatform](msbuild-target-framework-and-target-platform.md).
+
+|Signature de fonction|Description|
+|------------------------|-----------------|
+|GetTargetFrameworkIdentifier (chaîne targetFramework)|Analysez le TargetFrameworkIdentifier à partir de TargetFramework.|
+|GetTargetFrameworkVersion (chaîne targetFramework)|Analysez TargetFrameworkVersion à partir du TargetFramework.|
+|GetTargetPlatformIdentifier (chaîne targetFramework)|Analysez le TargetPlatformIdentifier à partir de TargetFramework.|
+|GetTargetPlatformVersion (chaîne targetFramework)|Analysez le TargetPlatformVersion à partir de TargetFramework.|
+|IsTargetFrameworkCompatible (String targetFrameworkTarget, String targetFrameworkCandidate)|Retourne la valeur true si le Framework cible candidat est compatible avec cette version cible de .NET Framework et false dans le cas contraire.|
+
+L’exemple suivant montre comment ces fonctions sont utilisées. 
+
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Value1>$([MSBuild]::GetTargetFrameworkIdentifier('net5.0-windows7.0'))</Value1>
+        <Value2>$([MSBuild]::GetTargetFrameworkVersion('net5.0-windows7.0'))</Value2>
+        <Value3>$([MSBuild]::GetTargetPlatformIdentifier('net5.0-windows7.0'))</Value3>
+        <Value4>$([MSBuild]::GetTargetPlatformVersion('net5.0-windows7.0'))</Value4>
+        <Value5>$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', 'net5.0'))</Value5>
+    </PropertyGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Value1 = $(Value1)" />
+        <Message Text="Value2 = $(Value2)" />
+        <Message Text="Value3 = $(Value3)" />
+        <Message Text="Value4 = $(Value4)" />
+        <Message Text="Value5 = $(Value5)" />
+    </Target>
+</Project>
+```
+
+```output
+Value1 = .NETCoreApp
+Value2 = 5.0
+Value3 = windows
+Value4 = 7.0
+Value5 = True
 ```
 
 ## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild

@@ -1,5 +1,7 @@
 ---
 title: Créer des requêtes TableAdapter paramétrées
+description: Comprendre comment créer des requêtes TableAdapter paramétrées. Une requête paramétrable retourne des données remplissant les conditions d'une clause WHERE dans la requête.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282603"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436665"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
 
@@ -50,7 +52,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 2. Dans le menu **données** , sélectionnez **Ajouter une requête**.
 
-3. Utilisez la boîte de dialogue **Générateur de critères de recherche**, en ajoutant une clause WHERE avec les paramètres souhaités à l’instruction SQL.
+3. Utilisez la boîte de dialogue **Générateur de critères de recherche** , en ajoutant une clause WHERE avec les paramètres souhaités à l’instruction SQL.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Pour ajouter une requête à un formulaire lié aux données existant
 
@@ -59,7 +61,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 2. Dans le menu **données** , sélectionnez **Ajouter une requête** ou des **balises actives de données**.
 
     > [!NOTE]
-    > Si l’option **Ajouter une requête** n’est pas disponible dans le menu **Données**, sélectionnez un contrôle dans le formulaire qui affiche la source de données à laquelle ajouter le paramétrage. Par exemple, si le formulaire affiche des données dans un contrôle <xref:System.Windows.Forms.DataGridView>, sélectionnez-le. Si le formulaire affiche des données dans des contrôles individuels, sélectionnez n'importe quel contrôle lié aux données.
+    > Si l’option **Ajouter une requête** n’est pas disponible dans le menu **Données** , sélectionnez un contrôle dans le formulaire qui affiche la source de données à laquelle ajouter le paramétrage. Par exemple, si le formulaire affiche des données dans un contrôle <xref:System.Windows.Forms.DataGridView>, sélectionnez-le. Si le formulaire affiche des données dans des contrôles individuels, sélectionnez n'importe quel contrôle lié aux données.
 
 3. Dans la zone **Sélectionner une table de source de données** , sélectionnez la table à laquelle vous souhaitez ajouter le paramétrage.
 
@@ -92,9 +94,9 @@ S’il s’agissait d’une requête sur un TableAdapter, vous pouvez interroger
 
 Pour permettre à une requête d’accepter des valeurs NULL :
 
-1. Dans le **Concepteur de DataSet**, sélectionnez la requête TableAdapter qui doit accepter des valeurs de paramètre null.
+1. Dans le **Concepteur de DataSet** , sélectionnez la requête TableAdapter qui doit accepter des valeurs de paramètre null.
 
-2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres**, puis cliquez sur le bouton de sélection (**...**) pour ouvrir l' **éditeur de collections Parameters**.
+2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres** , puis cliquez sur le bouton de sélection ( **...** ) pour ouvrir l' **éditeur de collections Parameters**.
 
 3. Sélectionnez le paramètre qui autorise les valeurs NULL et affectez à la propriété **AllowDBNull** la valeur `true` .
 
