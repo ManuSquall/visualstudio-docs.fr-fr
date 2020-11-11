@@ -1,6 +1,7 @@
 ---
 title: Ajouter un code à des DataSets dans des applications multiniveau
 description: Ajoutez du code à des jeux de données dans des applications multicouches dans Visual Studio. Créez un fichier de classe partielle pour un DataSet et ajoutez-y du code (au lieu de NomGroupeDonnées. DataSet. Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382193"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518685"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter un code à des DataSets dans des applications multiniveau
 

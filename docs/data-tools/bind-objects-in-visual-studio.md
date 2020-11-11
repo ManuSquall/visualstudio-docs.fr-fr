@@ -1,6 +1,7 @@
 ---
 title: Objets personnalisés de liaison de données
 description: Liez des objets en tant que sources de données dans Visual Studio. Utilisez les outils au moment du design pour travailler avec des objets personnalisés comme source de données dans votre application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea36249ecc0cfc266a650ca24d143e053f7fc0d9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ad8b5f502953912e2de7383afa4a86ff749c5724
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382102"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518592"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Lier des objets en tant que sources de données dans Visual Studio
 

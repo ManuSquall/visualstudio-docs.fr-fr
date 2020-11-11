@@ -1,6 +1,7 @@
 ---
 title: Ajouter de nouvelles sources de données
 description: Ajoutez de nouvelles sources de données dans Visual Studio. Une source de données est un objet .NET qui se connecte à un magasin de données et met les données à la disposition d’une application .NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382115"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518672"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 

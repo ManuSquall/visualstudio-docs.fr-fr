@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400100"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518763"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*
 
@@ -141,7 +141,7 @@ Pour exécuter des tests depuis la ligne de commande, utilisez *vstest.console.e
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-   or
+   ou
 
    ```cmd
    vstest.console.exe --settings:test.runsettings test.dll
@@ -178,7 +178,7 @@ Chacun des éléments de configuration est facultatif, car il a une valeur par d
 
 L’élément **RunConfiguration** peut inclure les éléments suivants :
 
-|Nœud|Valeur par défaut|Valeurs|
+|Nœud|Default|Valeurs|
 |-|-|-|
 |**MaxCpuCount**|1|Ce paramètre permet de contrôler le degré d’exécution des tests parallèles lors des tests unitaires, en utilisant les cœurs disponibles sur la machine. Le moteur d’exécution des tests démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter. Un conteneur peut être un assembly, une DLL ou un artefact approprié. Le conteneur de test est l’unité de planification. Dans chaque conteneur, les tests sont exécutés en fonction du framework de test configuré. S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br />Valeur possible pour MaxCpuCount :<br /><br />n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br />n, où n = toute autre valeur : le nombre de processus lancés peut atteindre le nombre de cœurs disponibles. Par exemple, définissez n = 0 pour permettre à la plateforme de déterminer automatiquement le nombre optimal de processus à lancer en fonction de l’environnement.|
 |**ResultsDirectory**||Répertoire où les résultats des tests sont placés. Le chemin d’accès est relatif au répertoire qui contient le fichier. RunSettings.|
@@ -221,8 +221,8 @@ Le collecteur de données de couverture du code crée un journal des parties du 
       <CollectFromChildProcesses>True</CollectFromChildProcesses>
       <CollectAspDotNet>False</CollectAspDotNet>
     </CodeCoverage>
-  </CodeCoverage>
-</Configuration>
+  </Configuration>
+</DataCollector>
 ```
 
 ### <a name="videorecorder-data-collector"></a>Collecteur de données VideoRecorder
@@ -306,7 +306,7 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 </MSTest>
 ```
 
-|Configuration|Valeur par défaut|Valeurs|
+|Configuration|Default|Valeurs|
 |-|-|-|
 |**ForcedLegacyMode**|false|Dans Visual Studio 2012, l’adaptateur MSTest a été optimisé afin d’être plus rapide et plus scalable. Un comportement, tel que l’ordre dans lequel les tests sont exécutés, peut ne pas être exactement identique à celui d’éditions précédentes de Visual Studio. Définissez cette valeur sur **true** pour utiliser l’adaptateur de test le plus ancien.<br /><br />Par exemple, vous pouvez utiliser ce paramètre si un fichier *app.config* est spécifié pour un test unitaire.<br /><br />Il est recommandé d’envisager de refactoriser vos tests pour vous permettre d’utiliser le nouvel adaptateur.|
 |**IgnoreTestImpact**|false|La fonctionnalité d’impact de test hiérarchise les tests affectés par les modifications récentes, lorsqu’elles sont exécutées dans MSTest ou à partir de Microsoft Test Manager (déconseillé dans Visual Studio 2017). Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Quels tests doivent être exécutés depuis une version antérieure ?](/previous-versions/dd286589(v=vs.140)).|
