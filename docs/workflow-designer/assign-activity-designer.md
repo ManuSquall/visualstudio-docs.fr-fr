@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-Assign
+description: Découvrez comment vous pouvez utiliser le concepteur d’activités Assign pour créer et configurer une activité Assign et comment l’activité Assign assigne une valeur à une variable ou à un argument.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8601951cfaba3f246e8488ab23c9b6ccad0d01
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875941"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438189"
 ---
 # <a name="assign-activity-designer"></a>Concepteur d'activités Assign
 
@@ -27,7 +29,7 @@ L’activité <xref:System.Activities.Statements.Assign> affecte une valeur à u
 
 ### <a name="using-the-assign-activity-designer"></a>Utilisation du concepteur d'activités Assign
 
-Le concepteur d’activités **Assign** se trouve dans la catégorie **primitives** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** (ou en sélectionnant **boîte à outils** dans le menu **affichage** , ou encore en appuyant sur CTRL + ALT + X).
+Le concepteur d’activités **Assign** se trouve dans la catégorie **primitives** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** (ou en sélectionnant **boîte à outils** dans le menu **affichage** , ou encore en appuyant sur CTRL + ALT + X).
 
 Le concepteur d’activités **Assign** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail où les activités sont placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . La suppression du concepteur d’activités **Assign** crée une <xref:System.Activities.Statements.Assign> activité avec le **DisplayName** par défaut Assign. La <xref:System.Activities.Activity.DisplayName%2A> propriété peut être modifiée dans l’en-tête du concepteur d’activités **Assign** ou dans la zone **DisplayName** de la grille des propriétés.
 

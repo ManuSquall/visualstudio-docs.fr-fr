@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-CorrelationScope
+description: Découvrez comment vous pouvez utiliser le concepteur d’activités CorrelationScope pour créer et configurer une activité CorrelationScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876097"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438111"
 ---
 # <a name="correlationscope-activity-designer"></a>Concepteur d'activités CorrelationScope
 
@@ -27,7 +29,7 @@ La propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesW
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Utiliser le concepteur d’activités CorrelationScope
 
-Le concepteur d’activités **CorrelationScope** se trouve dans la catégorie **messagerie** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **CorrelationScope** se trouve dans la catégorie **messagerie** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur d’activités **CorrelationScope** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail. Cette opération crée une <xref:System.ServiceModel.Activities.CorrelationScope> activité avec un **DisplayName** par défaut de CorrelationScope. La <xref:System.Activities.Activity.DisplayName%2A> propriété peut être modifiée dans l’en-tête du concepteur d’activités **CorrelationScope** ou dans la zone **DisplayName** de la fenêtre **Propriétés** .
 
@@ -50,6 +52,6 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [Çoive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Envoyer](../workflow-designer/send-activity-designer.md)
+- [Envoi](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

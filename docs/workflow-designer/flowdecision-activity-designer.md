@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-FlowDecision
+description: Découvrez comment le nœud FlowDecision est un nœud conditionnel qui fournit une branche pour le workflow du contrôle dans l’une des deux alternatives.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a70e7e44976df975be721d93e918d7c25d192bf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76111437"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437994"
 ---
 # <a name="flowdecision-activity-designer"></a>Concepteur d'activités FlowDecision
 
@@ -27,11 +29,11 @@ Utilisez <xref:System.Activities.Statements.FlowDecision> lorsque le flux peut f
 
 ### <a name="using-the-flowdecision-designer"></a>Utilisation du concepteur FlowDecision
 
-Le concepteur **FlowDecision** se trouve dans la catégorie **organigramme** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** dans la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur **FlowDecision** se trouve dans la catégorie **organigramme** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** dans la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur **FlowDecision** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail dans un concepteur d’activités **Flowchart** . Cela crée une <xref:System.Activities.Statements.FlowDecision> **décision** étiquetée dans l' <xref:System.Activities.Statements.Flowchart> activité. La souris sur le concepteur et les poignées carrées **true** et **false** pour les deux branches s’affichent.
 
-Après avoir fait glisser **FlowDecision** designer et d’autres concepteurs sur l' **organigramme**, les nœuds peuvent être liés ensemble pour spécifier l’ordre d’exécution. Pour créer un lien entre un nœud source (y compris les branches **true** et **false** de **FlowDecision**) et un nœud de destination, pointez avec la souris sur le concepteur du nœud source et les poignées carrées apparaissent de chaque côté. Cliquez sur l'une des poignées carrées et faites-la glisser en maintenant le bouton de la souris enfoncé jusqu'à l'une des poignées qui s'affiche de la même façon autour du nœud de destination lorsque vous déplacez la souris dessus. Relâchez le bouton de la souris. Un lien est créé entre ces deux nœuds, représenté par une flèche allant du concepteur source au concepteur de destination.
+Après avoir fait glisser **FlowDecision** designer et d’autres concepteurs sur l' **organigramme** , les nœuds peuvent être liés ensemble pour spécifier l’ordre d’exécution. Pour créer un lien entre un nœud source (y compris les branches **true** et **false** de **FlowDecision** ) et un nœud de destination, pointez avec la souris sur le concepteur du nœud source et les poignées carrées apparaissent de chaque côté. Cliquez sur l'une des poignées carrées et faites-la glisser en maintenant le bouton de la souris enfoncé jusqu'à l'une des poignées qui s'affiche de la même façon autour du nœud de destination lorsque vous déplacez la souris dessus. Relâchez le bouton de la souris. Un lien est créé entre ces deux nœuds, représenté par une flèche allant du concepteur source au concepteur de destination.
 
 L’expression qui indique le <xref:System.Activities.Statements.FlowDecision.Condition%2A> peut être tapée dans la zone **condition** de la fenêtre **Propriétés** en cliquant à l’endroit où le texte de l’indication indique « entrer une expression VB ».
 

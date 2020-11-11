@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de flux de travail-comment : ajouter des commentaires à un flux de travail'
+description: Découvrez comment .NET Framework 4,5 permet au développeur d’ajouter des annotations à certains types d’éléments dans le concepteur, par exemple, les éléments d’activité, d’État et de transition.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815498"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437955"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : ajouter des commentaires à un workflow dans le Concepteur de flux de travail
 
@@ -39,7 +41,7 @@ Pour faciliter la création de flux de travail plus volumineux et plus complexes
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Ajout d'une annotation à une activité dans le concepteur
 
-1. Dans le concepteur de flux de travail, cliquez avec le bouton droit sur un élément dans le concepteur de flux de travail et sélectionnez **Annotations**, **Ajouter une annotation**.
+1. Dans le concepteur de flux de travail, cliquez avec le bouton droit sur un élément dans le concepteur de flux de travail et sélectionnez **Annotations** , **Ajouter une annotation**.
 
 1. Ajoutez le texte de l'annotation dans l'espace disponible.
 
@@ -59,21 +61,21 @@ Pour faciliter la création de flux de travail plus volumineux et plus complexes
 
 ## <a name="showing-or-hiding-all-annotations"></a>Affichage ou masquage de toutes les annotations
 
-1. Cliquez avec le bouton droit sur une activité qui a une annotation. Sélectionnez **Annotations**, **afficher toutes les annotations**.
+1. Cliquez avec le bouton droit sur une activité qui a une annotation. Sélectionnez **Annotations** , **afficher toutes les annotations**.
 
    Toutes les annotations sont affichées dans les concepteurs de l’activité.
 
-1. Pour afficher toutes les annotations en dehors des concepteurs de l’activité, cliquez avec le bouton droit sur l’activité et sélectionnez **Annotations**, puis **masquez toutes les annotations**.
+1. Pour afficher toutes les annotations en dehors des concepteurs de l’activité, cliquez avec le bouton droit sur l’activité et sélectionnez **Annotations** , puis **masquez toutes les annotations**.
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Modification ou suppression d'une annotation pour une activité
 
 1. Cliquez avec le bouton droit sur une activité qui a une annotation.
 
-1. Sélectionnez **Annotations**, **modifier l’annotation** ou **Supprimer l’annotation**.
+1. Sélectionnez **Annotations** , **modifier l’annotation** ou **Supprimer l’annotation**.
 
    L’annotation est ouverte pour modification ou suppression.
 
-1. Pour supprimer toutes les annotations à la fois, cliquez avec le bouton droit sur le concepteur de flux de travail et sélectionnez **annotation**, **supprimer toutes les annotations**.
+1. Pour supprimer toutes les annotations à la fois, cliquez avec le bouton droit sur le concepteur de flux de travail et sélectionnez **annotation** , **supprimer toutes les annotations**.
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Ajout, modification et suppression d'une annotation pour une variable ou un argument
 

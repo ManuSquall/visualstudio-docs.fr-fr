@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-ForEach &lt; T &gt;
+description: Découvrez comment l' <T> activité ForEach exécute l’activité contenue dans son corps pour chaque élément d’une collection de valeurs spécifiée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30d43351211a6ff857630b47f05be77e27bd7951
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fd81377ca24dfbeaf4a25f2af00fb69f4821d73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593913"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437981"
 ---
 # <a name="foreachlttgt-activity-designer"></a>&lt;Concepteur d' &gt; activités foreach T
 

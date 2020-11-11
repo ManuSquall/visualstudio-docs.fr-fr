@@ -1,5 +1,7 @@
 ---
 title: Concepteur d’activités Concepteur de flux de travail-while
+description: Découvrez comment l’activité de mesure exécute l’activité contenue dans son corps au moins une fois, jusqu’à ce qu’une condition spécifiée ait la valeur false.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c56a9ab8b46f8f7ee36875dda507cb9f288136cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8385fe376f56738d76e066dc172e7b6b516f9a08
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875603"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438059"
 ---
 # <a name="dowhile-activity-designer"></a>Concepteur d'activités DoWhile
 

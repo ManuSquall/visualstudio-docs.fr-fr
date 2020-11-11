@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : utiliser la fonction de recherche dans le Concepteur de flux de travail'
+description: Découvrez comment effectuer des recherches dans le Concepteur de flux de travail pour rechercher des éléments par mot clé afin de faciliter la création de flux de travail plus volumineux et plus complexes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817474"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437903"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : utiliser la fonction de recherche dans le Concepteur de flux de travail
 
@@ -33,7 +35,7 @@ La recherche rapide recherche les éléments suivants dans le concepteur :
 
 ### <a name="use-quick-find"></a>Utiliser la recherche rapide
 
-1. Avec le concepteur de flux de travail ouvert, appuyez sur **Ctrl + F**, ou sélectionnez **modifier**  >  **Rechercher et remplacer**  >  **recherche rapide**.
+1. Avec le concepteur de flux de travail ouvert, appuyez sur **Ctrl + F** , ou sélectionnez **modifier**  >  **Rechercher et remplacer**  >  **recherche rapide**.
 
 2. Entrez le terme de recherche dans la zone de texte **Rechercher** , puis cliquez sur **suivant**.
 
@@ -47,7 +49,7 @@ Rechercher dans les fichiers localise les chaînes dans les fichiers de flux de 
 
 ### <a name="use-find-in-files"></a>Utiliser Rechercher dans les fichiers
 
-1. Dans Visual Studio, appuyez sur **CTRL** + **MAJ** + **F**, ou sélectionnez **modifier**Rechercher  >  **et remplacer**  >  **Rechercher dans les fichiers**.
+1. Dans Visual Studio, appuyez sur **CTRL** + **MAJ** + **F** , ou sélectionnez **modifier** Rechercher  >  **et remplacer**  >  **Rechercher dans les fichiers**.
 
 2. Entrez l’élément de recherche dans la zone de texte **Rechercher** , puis cliquez sur **Rechercher tout**.
 

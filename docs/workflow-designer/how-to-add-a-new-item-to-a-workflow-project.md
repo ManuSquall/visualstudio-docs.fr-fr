@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de flux de travail : ajouter un nouvel élément au projet de workflow'
+description: Découvrez comment ajouter des activités de workflow, des concepteurs et d’autres éléments Visual Studio familiers à votre projet une fois que vous avez créé un projet de flux de travail.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814614"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437968"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de workflow
 
@@ -30,7 +32,7 @@ Le tableau suivant répertorie les éléments de Windows Workflow Foundation (WF
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 
-1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
+1. Dans le menu **Projet** , sélectionnez **Ajouter un nouvel élément**.
 
    La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 

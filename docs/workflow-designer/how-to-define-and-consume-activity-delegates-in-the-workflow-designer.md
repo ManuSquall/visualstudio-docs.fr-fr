@@ -1,5 +1,7 @@
 ---
 title: 'Concepteur de flux de travail : définir et consommer des délégués d’activité'
+description: Découvrez comment .NET Framework 4,5 comprend un concepteur prêt à l’emploi pour l’activité InvokeDelegate que vous pouvez utiliser pour définir et utiliser des délégués d’activité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817500"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437916"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
 
@@ -38,19 +40,19 @@ ms.locfileid: "85817500"
 
 7. Dans l’Explorateur de types, sélectionnez **objet** , puis cliquez sur **OK**.
 
-8. Cliquez de nouveau sur **créer un argument** . Nommez le nouveau **corps**de l’argument. Dans la colonne **direction** du nouvel argument, sélectionnez **propriété**.
+8. Cliquez de nouveau sur **créer un argument** . Nommez le nouveau **corps** de l’argument. Dans la colonne **direction** du nouvel argument, sélectionnez **propriété**.
 
 9. Dans la colonne type d’argument, sélectionnez **Parcourir les types**
 
-10. Dans l’Explorateur de types, entrez **ActivityAction** dans le champ **nom du type** . Sélectionnez **ActivityAction \<T> ** dans l’arborescence. Sélectionnez **objet** dans la liste déroulante qui s’affiche pour affecter le type **ActivityAction \<Object> ** à l’argument.
+10. Dans l’Explorateur de types, entrez **ActivityAction** dans le champ **nom du type** . Sélectionnez **ActivityAction \<T>** dans l’arborescence. Sélectionnez **objet** dans la liste déroulante qui s’affiche pour affecter le type **ActivityAction \<Object>** à l’argument.
 
 11. Faites glisser une <xref:System.Activities.Statements.While> activité de la section **Control Flow** de la boîte à outils vers l’aire du concepteur.
 
 12. Sélectionnez l' <xref:System.Activities.Statements.While> activité, puis sélectionnez l’onglet **variables** .
 
-13. Sélectionnez **créer une variable**. Nommez le nouvel **index**de variable.
+13. Sélectionnez **créer une variable**. Nommez le nouvel **index** de variable.
 
-14. Dans la colonne **type de variable** , sélectionnez **Int32**. Laissez l' **étendue** en tant **que while**et la colonne **par défaut** vide.
+14. Dans la colonne **type de variable** , sélectionnez **Int32**. Laissez l' **étendue** en tant **que while** et la colonne **par défaut** vide.
 
 15. Affectez à la propriété **condition** de l’activité la valeur <xref:System.Activities.Statements.While> **index < Items. Length ;**.
 
@@ -60,7 +62,7 @@ ms.locfileid: "85817500"
 
 18. Dans la grille des **Propriétés** de l' <xref:System.Activities.Statements.InvokeDelegate> activité, cliquez sur le bouton **...** dans la propriété **arguments délégués** .
 
-19. Dans la colonne **valeur** de l' **argument nommé argument**, entrez **Items [index]**. Cliquez sur **OK** pour fermer la boîte de dialogue **DelegateArguments** .
+19. Dans la colonne **valeur** de l' **argument nommé argument** , entrez **Items [index]**. Cliquez sur **OK** pour fermer la boîte de dialogue **DelegateArguments** .
 
 20. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. L'  <xref:System.Activities.Statements.Assign> activité est créée, et une <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans la section **Body** de l’activité **MyForEach** . La séquence est nécessaire, car la section du **corps** ne peut contenir qu’une seule activité. La création automatique d’une nouvelle <xref:System.Activities.Statements.Sequence> activité est une nouvelle fonctionnalité de .NET Framework 4,5.
 
@@ -72,7 +74,7 @@ ms.locfileid: "85817500"
 
 1. Générez le projet en appuyant sur **CTRL** + **MAJ** + **B**.
 
-2. Dans **Explorateur de solutions**, ouvrez **Workflow1. Xaml** dans le concepteur.
+2. Dans **Explorateur de solutions** , ouvrez **Workflow1. Xaml** dans le concepteur.
 
 3. Faites glisser une activité **MyForEach** de la boîte à outils vers l’aire du concepteur. L’activité se trouve dans une section de la boîte à outils portant le même nom que le projet.
 

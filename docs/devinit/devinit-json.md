@@ -11,18 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2b6cc27d2614f71c85988457ab9bb64228bbaebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: acd3b65f520a9be048fe2d0209a85a85d086df2f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399965"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438228"
 ---
 # <a name="devinit-configuration-file"></a>fichier de configuration devinit
 
+Le `.devinit.json` fichier définit les dépendances à l’ensemble du système nécessaires à l’exécution et à la génération de votre application. Les dépendances à l’ensemble du système sont des éléments tels que Node.js, SQL Server, IIS, RabbitMQ, docker, etc. Il s’agit de l’ordre des choses que vous devriez normalement installer sur votre boîte de développement qui ne sont pas installées par un référentiel spécifique. Il ne s’agit pas d’un endroit pour définir des dépendances spécifiques à l’application, comme vous le feriez dans des gestionnaires de packages tels que NuGet ou NPM. Toutefois, il s’agit d’un emplacement pour définir que vous avez besoin de ces gestionnaires de packages.
+
 ## <a name="file-location"></a>Emplacement du fichier
 
-La `devinit.exe init` commande est pilotée par le _.devinit.jsdans_ le fichier. Par défaut, `devinit.exe` recherche le fichier aux emplacements suivants :
+La `devinit init` commande est pilotée par le `.devinit.json` fichier. Par défaut, `devinit` recherche le fichier aux emplacements suivants :
 
 * {Current-Directory} \\.devinit.js
 * {Current-Directory} \\devinit.js
@@ -36,7 +38,7 @@ La `devinit.exe init` commande est pilotée par le _.devinit.jsdans_ le fichier.
 > [!NOTE]
 > Si plusieurs fichiers par défaut sont trouvés, devinit utilise le fichier qui apparaît en premier dans la liste ci-dessus.
 
-Le _.devinit.jssur_ le fichier peut également être spécifié explicitement à l’aide de l' `--file` / `-f` option.
+Le `.devinit.json` fichier peut également être spécifié explicitement par le biais de l' `--file` / `-f` option.
 
 ### <a name="directories-and-relative-paths"></a>Répertoires et chemins d’accès relatifs
 

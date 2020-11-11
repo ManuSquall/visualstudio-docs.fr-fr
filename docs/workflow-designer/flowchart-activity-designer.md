@@ -1,5 +1,7 @@
 ---
 title: Concepteur de flux de travail-concepteur d’activités Flowchart
+description: Découvrez comment vous pouvez utiliser l’activité Flowchart pour créer des flux de travail qui définissent et gèrent des contrôles de flux complexes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d786e9acfa99d2b106b72822a0106e2161724790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08c7957d79d51cab93e45adf8f74899ecc59b76d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597033"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438007"
 ---
 # <a name="flowchart-activity-designer"></a>Concepteur d'activités d'organigramme
 
@@ -29,7 +31,7 @@ L'activité <xref:System.Activities.Statements.Flowchart> permet de créer des f
 
 ### <a name="using-the-flowchart-activity-designer"></a>Utilisation du concepteur d'activités Flowchart
 
-Le concepteur d’activités **Flowchart** se trouve dans la catégorie **organigramme** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** dans la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **Flowchart** se trouve dans la catégorie **organigramme** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** dans la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur d’activités **Flowchart** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les concepteurs d’activités sont généralement placés, en tant qu’activité racine ou en tant qu’enfant d’une autre activité de flux de contrôle. Si le concepteur d’activités **Flowchart** est déposé sur une surface concepteur de flux de travail vide, il crée une <xref:System.Activities.Statements.Flowchart> activité, qui s’affiche par défaut dans une vue développée dans laquelle le nœud de démarrage qui démarre l’exécution est représenté par une boule verte. Si le concepteur d’activités **Flowchart** est déposé dans une autre activité de flux de contrôle, il s’affiche dans une vue réduite qui peut être développée en double-cliquant sur le concepteur d’activités **Flowchart** . Toutes les activités de la **boîte à outils** peuvent être déplacées directement sur le concepteur d’activités **Flowchart** , y compris les autres activités de flux de contrôle.
 
