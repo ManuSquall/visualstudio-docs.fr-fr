@@ -1,6 +1,7 @@
 ---
 title: Publier dans un dossier
-ms.date: 04/02/2019
+description: Comment publier une application Web dans un dossier à l’aide de Visual Studio pour Mac.
+ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583942"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493411"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publier dans un dossier à l’aide de Visual Studio pour Mac
 
@@ -23,13 +24,13 @@ Vous pouvez utiliser l’outil publier pour publier une console .NET Core ou des
 ## <a name="prerequisites"></a>Prérequis
 
 - [Visual Studio 2019 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installé avec .net Core activé.
-- Une console .NET Core ou un projet de ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](./create-new-projects.md?view=vsmac-2019).
+- Une console .NET Core ou un projet de ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](./create-new-projects.md).
 
 ## <a name="publish-to-folder"></a>Publier sur un dossier
 
 À l’aide de Visual Studio pour Mac vous pouvez publier vos projets .NET Core dans un dossier à l’aide de l’outil de publication. Après la publication dans un dossier, vous pouvez transférer les fichiers vers un autre environnement. Pour publier sur un dossier, effectuez les étapes suivantes.
 
- 1. Dans le panneau Solutions, cliquez avec le bouton droit sur le projet, puis choisissez **Publier**.
+ 1. Dans la fenêtre de la solution, cliquez avec le bouton droit sur le projet et choisissez **publier**.
 
     ![Menu contextuel de publication](media/publish-context-menu.png)
 
@@ -39,9 +40,9 @@ Vous pouvez utiliser l’outil publier pour publier une console .NET Core ou des
 
     ![Menu contextuel de publication sur un dossier](media/publish-to-folder-context-menu.png)
 
- 4. La boîte de dialogue **Publier sur un dossier** apparaît. Dans cette boîte de dialogue, vous pouvez personnaliser le dossier sur lequel le projet est publié. Pour ce faire, vous pouvez utiliser le bouton **Parcourir**, ou coller un chemin.
+ 4. La boîte de dialogue **Publier sur un dossier** apparaît. Dans cette boîte de dialogue, vous pouvez personnaliser le dossier sur lequel le projet est publié. Pour ce faire, vous pouvez utiliser le bouton **Parcourir** , ou coller un chemin.
 
- 5. Une fois que vous avez cliqué sur **Publier**, certaines opérations ont lieu. Tout d’abord, un profil de publication est créé. Un profil de publication est un fichier MSBuild importé dans le projet durant le processus de publication. Il contient les propriétés utilisées durant le processus de publication. Ces fichiers sont stockés dans `Properties/PublishProfiles` et ont l’extension `.pubxml`. Le processus de publication démarre ensuite. Vous pouvez superviser la progression en consultant la barre d’état dans Visual Studio pour Mac.
+ 5. Une fois que vous avez cliqué sur **Publier** , certaines opérations ont lieu. Tout d’abord, un profil de publication est créé. Un profil de publication est un fichier MSBuild importé dans le projet durant le processus de publication. Il contient les propriétés utilisées durant le processus de publication. Ces fichiers sont stockés dans `Properties/PublishProfiles` et ont l’extension `.pubxml`. Le processus de publication démarre ensuite. Vous pouvez superviser la progression en consultant la barre d’état dans Visual Studio pour Mac.
 
     ![Barre d’état de l’IDE avec l’état de publication](media/publish-to-folder-status-bar.png)
 

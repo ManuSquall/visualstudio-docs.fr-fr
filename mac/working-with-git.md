@@ -3,15 +3,15 @@ title: Utilisation de Git
 description: Utilisation de Git dans Visual Studio pour Mac.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70108022"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493229"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
 
@@ -45,17 +45,17 @@ Au bas de la fenêtre, cinq onglets s’affichent, comme illustré ci-dessous :
 
 Ces onglets permettent d’effectuer les actions suivantes :
 
-* **Source** : Affiche votre fichier de code source.
-* **Modifications** : Affiche la modification du code entre votre fichier local et le fichier de base. Vous pouvez également comparer différentes versions du fichier à partir de hachages différents :
+* **Source**  : Affiche votre fichier de code source.
+* **Modifications**  : Affiche la modification du code entre votre fichier local et le fichier de base. Vous pouvez également comparer différentes versions du fichier à partir de hachages différents :
 
     ![Onglet Modifications](media/version-control-gitChange.png)
 
-* **Responsable** : Affiche le nom de l’utilisateur associé à chaque section de code.
-* **Journal** : Affiche toutes les validations, heures, dates, messages et utilisateurs qui sont responsables du fichier :
+* **Responsable**  : Affiche le nom de l’utilisateur associé à chaque section de code.
+* **Journal**  : Affiche toutes les validations, heures, dates, messages et utilisateurs qui sont responsables du fichier :
 
     ![Onglet Journal](media/version-control-gitLog.png)
 
-* **Fusion** : Cet onglet peut être utilisé en cas de conflit de fusion pendant la validation de votre travail. Il montre une représentation visuelle des modifications apportées par vous et l’autre développeur, ce qui vous permet de combiner correctement les deux sections de code.
+* **Fusion**  : Cet onglet peut être utilisé en cas de conflit de fusion pendant la validation de votre travail. Il montre une représentation visuelle des modifications apportées par vous et l’autre développeur, ce qui vous permet de combiner correctement les deux sections de code.
 
 ## <a name="switching-branches"></a>Changement de branches
 
@@ -77,21 +77,21 @@ Pour créer une branche, sélectionnez le bouton **Nouveau** dans la boîte de d
 
 Vous pouvez également définir une branche distante sur votre branche de _suivi_. Découvrez plus d’informations sur les branches de suivi dans la [documentation Git](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
 
-Affichez la branche actuelle dans le panneau Solutions, à côté du nom de projet :
+Consultez la branche Current Branch dans la fenêtre de la solution, en regard du nom du projet :
 
- ![Branche actuelle affichée dans le panneau Solutions](media/version-control-gitBranchName.png)
+ ![Branche actuelle affichée dans la fenêtre de la solution](media/version-control-gitBranchName.png)
 
 ## <a name="reviewing-and-committing"></a>Examen et validation
 
 Pour examiner les modifications apportées aux fichiers, utilisez les onglets Modifications, Responsable, Journal et Fusion de chaque document, comme illustré dans cette rubrique.
 
-Examinez toutes les modifications d’un projet en accédant à l’élément de menu **Gestion de version > Examiner la solution et valider** :
+Examinez toutes les modifications d’un projet en accédant à l’élément de menu **Gestion de version > Examiner la solution et valider**  :
 
 ![Affichage de l’examen du code](media/version-control-gitReviewCommit.png)
 
 Ce menu permet d’afficher toutes les modifications de chaque fichier d’un projet avec les options Restaurer, Créer un correctif ou Valider.
 
-Pour valider un fichier dans le référentiel distant, appuyez sur **valider**, entrez un message de validation et confirmez avec le bouton valider :
+Pour valider un fichier dans le référentiel distant, appuyez sur **valider** , entrez un message de validation et confirmez avec le bouton valider :
 
 ![Validation d’un fichier](media/version-control-gitCommit.png)
 

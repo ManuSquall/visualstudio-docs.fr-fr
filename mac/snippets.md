@@ -1,20 +1,20 @@
 ---
 title: Extraits de code
 description: Comment utiliser des extraits de code pour programmer efficacement dans Visual Studio pour Mac
-author: cobey
-ms.author: cobey
-ms.date: 02/07/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68787698"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493450"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code, souvent appelés _modèles de code_, sont pratiques pour une programmation efficace, car ils permettent l’insertion et la modification de blocs de code pré-écrits. L’utilisation d’extraits de code peut être pratique pour ajouter rapidement des modèles courants, ou même pour apprendre de nouveaux modèles quand vous, en tant que développeur, n’êtes pas sûr de la syntaxe. Des modèles sont fournis pour C#, F#, HTML, XML, Python et Razor.
+Les extraits de code, souvent appelés _modèles de code_ , sont pratiques pour une programmation efficace, car ils permettent l’insertion et la modification de blocs de code pré-écrits. L’utilisation d’extraits de code peut être pratique pour ajouter rapidement des modèles courants, ou même pour apprendre de nouveaux modèles quand vous, en tant que développeur, n’êtes pas sûr de la syntaxe. Des modèles sont fournis pour C#, F#, HTML, XML, Python et Razor.
 
 Cette section explique comment créer, insérer et utiliser des extraits dans du code.
 
@@ -22,21 +22,21 @@ Cette section explique comment créer, insérer et utiliser des extraits dans du
 
 Il existe différentes façons d’ajouter des extraits de code, dont certaines sont décrites ci-dessous :
 
-- **Tabulation : ** &ndash; commencez à taper le nom du modèle, sélectionnez-le dans la liste, puis appuyez sur **Tab**, **Tab** pour l’ajouter :
+- **Tabulation :** &ndash; commencez à taper le nom du modèle, sélectionnez-le dans la liste, puis appuyez sur **Tab** , **Tab** pour l’ajouter :
 
   ![Expansion de tabulation dans du code](media/source-editor-image13.png)
 
-- **Boîte à outils : ** &ndash; utilisez le panneau Boîte à outils pour afficher une liste de tous les extraits de code. Faites glisser n’importe quel modèle depuis la boîte à outils à la position correcte dans le code source :
+- **Boîte à outils** &ndash; Utilisez la fenêtre boîte à outils pour afficher une liste de tous les extraits de code. Faites glisser n’importe quel modèle depuis la boîte à outils à la position correcte dans le code source :
 
   [![Extraits de code dans la boîte à outils](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Commande Insérer des modèles : ** &ndash; il n’existe actuellement pas de combinaison de touches par défaut définie pour l’insertion d’un modèle. Pour en créer une, accédez à **Visual Studio > Préférences > Combinaison de touches**, puis recherchez `template`. Ceci permet d’ajouter la combinaison de touches souhaitée dans le champ Modifier la combinaison. Cliquez ensuite sur **Appliquer** :
+- **Commande Insérer des modèles :** &ndash; il n’existe actuellement pas de combinaison de touches par défaut définie pour l’insertion d’un modèle. Pour en créer une, accédez à **Visual Studio > Préférences > Combinaison de touches** , puis recherchez `template`. Ceci permet d’ajouter la combinaison de touches souhaitée dans le champ Modifier la combinaison. Cliquez ensuite sur **Appliquer**  :
 
   ![Commande Insérer un modèle](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Création d’un modèle
 
-Il existe de nombreux modèles dans différents langages que vous pouvez utiliser et modifier, mais vous pouvez aussi ajouter de nouveaux modèles en accédant à **Visual Studio > Préférences > Éditeur de texte > Extraits de code**:
+Il existe de nombreux modèles dans différents langages que vous pouvez utiliser et modifier, mais vous pouvez aussi ajouter de nouveaux modèles en accédant à **Visual Studio > Préférences > Éditeur de texte > Extraits de code** :
 
 ![Insérer un nouveau modèle](media/source-editor-image12.png)
 

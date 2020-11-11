@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247375"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493203"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier par défaut dans Visual Studio pour Mac
 
@@ -32,9 +32,9 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Rechercher de références|**⇧⌘R**, **F12**|
-|Atteindre la déclaration|**⇧⌘R**, **F12**|
-|Erreur suivante|**⌥⇧⇟**, **⇧⌘F12**|
+|Rechercher de références|**⇧⌘R** , **F12**|
+|Atteindre la déclaration|**⇧⌘R** , **F12**|
+|Erreur suivante|**⌥⇧⇟** , **⇧⌘F12**|
 |Problème suivant dans le fichier|**⌥⇟**|
 |Erreur précédente|**⌥⇧⇞**|
 |Problème précédent dans le fichier|**⌥⇞**|
@@ -43,16 +43,16 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Activer ou Désactiver le point d’arrêt|**⌥ ⌘/**, **⌘ F9**|
-|Suspendre|**⌥⌘P**, **⌥⌘L5**|
+|Activer ou Désactiver le point d’arrêt|**⌥ ⌘/** , **⌘ F9**|
+|Suspendre|**⌥⌘P** , **⌥⌘L5**|
 |Supprimer tous les points d’arrêt|**⇧ ⌘ F9**|
 |Exécuter jusqu'au curseur|**⌘ F10**|
 |Définir l'instruction suivante|**⇧ ⌘ F10**|
-|Afficher l'instruction suivante|**⌥\***|
-|Pas à pas détaillé|**⇧⌘I**, **⌘F11**|
-|Pas à pas sortant|**⇧⌘U**, **⇧⌘F11**|
-|Pas à pas principal|**⇧⌘O**, **F10**|
-|Basculer le point d'arrêt|**⌘\\**, **F9**|
+|Afficher l'instruction suivante|**⌥ \** _|
+|Pas à pas détaillé|_ * ⇧ ⌘ I * *, **⌘ F11**|
+|Pas à pas sortant|**⇧⌘U** , **⇧⌘F11**|
+|Pas à pas principal|**⇧⌘O** , **F10**|
+|Basculer le point d'arrêt|**⌘\\** , **F9**|
 |Afficher les points d’arrêt|**⌥ ⌘ B**|
 
 ## <a name="designer"></a>Designer
@@ -74,7 +74,7 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Coller|**⌘ V**|
 |Préférences|**⌘**|
 |Rétablir|**⇧ ⌘ Z**|
-|Renommer|**⌘R**, **F2**|
+|Renommer|**⌘R** , **F2**|
 |Tout sélectionner|**⌘ A**|
 |Afficher les préférences de génération du code|**⌘ I**|
 |Activer/Désactiver tous les plis|**⌥ ⇧ ⌘ ↑**|
@@ -106,7 +106,7 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Nouveau fichier|**⌘ N**|
 |Nouvelle solution|**⇧ ⌘ N**|
 |Ouvrir|**⌘ O**|
-|Impression|**⌘ P**|
+|Imprimer|**⌘ P**|
 |Quitter|**⌘ Q**|
 |Revenir à la dernière version|**⌘ U**|
 |Enregistrer|**⌘ S**|
@@ -126,19 +126,19 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Implémenter les messages Unity|**⇧ ⌘ M**|
 |Inspecter|**⌥ ⌘ I**|
 
-## <a name="project"></a>Projet
+## <a name="project"></a>Project
 
 |Commandes|Raccourcis clavier|
 |-|-|
 |Ajouter des fichiers|**⌥ ⌘ A**|
-|Build|**⌘K**, **⇧F6**|
-|Tout générer|**⌘B**, **F6**|
+|Générer|**⌘K** , **⇧F6**|
+|Tout générer|**⌘B** , **F6**|
 |Clean|**⇧ ⌘ K**|
 |Regénérer|**⌃ ⌘ K**|
 |Tout regénérer|**⌃ ⌘ B**|
-|Démarrer le débogage|**⌘ ⏎**, **F5**|
-|Démarrer sans débogage|**⌥ ⌘ ⏎**, **⌃ F5**|
-|Arrêter|**⇧⌘⏎**, **⇧F5**|
+|Démarrer le débogage|**⌘ ⏎** , **F5**|
+|Démarrer sans débogage|**⌥ ⌘ ⏎** , **⌃ F5**|
+|Arrêter|**⇧⌘⏎** , **⇧F5**|
 
 ## <a name="refactoring"></a>Refactorisation
 
@@ -153,9 +153,9 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |-|-|
 |Commande|**⇧ ⌘ P**|
 |Rechercher dans les fichiers|**⇧ ⌘ F**|
-|Suivant|**⌘G**, **F3**|
-|Rechercher la sélection suivante similaire|**⌘E**, **⌘F3**|
-|Précédent|**⇧ ⌘ G**, **⇧ F3**|
+|Suivant|**⌘G** , **F3**|
+|Rechercher la sélection suivante similaire|**⌘E** , **⌘F3**|
+|Précédent|**⇧ ⌘ G** , **⇧ F3**|
 |Rechercher la sélection précédente similaire|**⇧ ⌘ F3**|
 |Rechercher|**⌘ F**|
 |Atteindre le fichier|**⇧ ⌘ D**|
@@ -180,10 +180,10 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Abréviation dynamique|**⌃/**|
 |Développer la sélection|**⌥⇧↓**|
 |Développer la sélection|**⌥⇧↑**|
-|Étendre la sélection à la fin du document|**⇧ ⌘ ↓**, **⇧ ⌘ ↘**|
-|Étendre la sélection au début du document|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
-|Étendre la sélection à la fin de la ligne|**⇧ ↘**, **⇧ ⌘ →**|
-|Étendre la sélection au début de la ligne|**⇧ ↖**, **⇧ ⌘ ←**|
+|Étendre la sélection à la fin du document|**⇧ ⌘ ↓** , **⇧ ⌘ ↘**|
+|Étendre la sélection au début du document|**⇧ ⌘ ↑** , **⇧ ⌘ ↖**|
+|Étendre la sélection à la fin de la ligne|**⇧ ↘** , **⇧ ⌘ →**|
+|Étendre la sélection au début de la ligne|**⇧ ↖** , **⇧ ⌘ ←**|
 |Étendre la sélection à la ligne suivante|**⇧↓**|
 |Étendre la sélection au mot suivant|**⌥ ⇧ →**|
 |Étendre la sélection d’une page vers le bas|**⇧⇟**|
@@ -196,9 +196,9 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Se déplacer d’un caractère vers la gauche|**⌃ B**|
 |Se déplacer d’un caractère vers la droite|**⌃ F**|
 |Atteindre le début du document|**⌘ ↑**|
-|Atteindre le début de la ligne|**⌘←**, **⌃A**|
+|Atteindre le début de la ligne|**⌘←** , **⌃A**|
 |Atteindre la fin du document|**⌘ ↓**|
-|Atteindre la fin de la ligne|**⌘ →**, **⌃ E**|
+|Atteindre la fin de la ligne|**⌘ →** , **⌃ E**|
 |Atteindre l’accolade correspondante|**⇧ ⌘\\**|
 |Aller à la ligne suivante|**⌃ N**|
 |Aller au mot suivant|**⌥ →**|
@@ -229,11 +229,11 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Naviguer vers l’avant|**⌃ ⌘ →**|
 |Taille normale|**⌘ 0**|
 |Une colonne d’éditeur|**⌥ ⌘ 1**|
-|Afficher suivant|**⌥⌘↓**, **F8**|
-|Afficher précédent|**⌥ ⌘ ↑**, **⇧ F8**|
+|Afficher suivant|**⌥⌘↓** , **F8**|
+|Afficher précédent|**⌥ ⌘ ↑** , **⇧ F8**|
 |Deux colonnes d’éditeur|**⌥ ⌘ 2**|
-|Zoom avant|**⌘ +**, **⌘ =**|
-|Zoom arrière|**⌘-**, **⌘ _ _**|
+|Zoom avant|**⌘ +** , **⌘ =**|
+|Zoom arrière|**⌘-** , **⌘ _ _**|
 
 ## <a name="window"></a>Fenêtre
 
@@ -251,29 +251,29 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Masquer les autres|**⌥ ⌘ H**|
 |Masquer Visual Studio|**⌘ H**|
 |Réduire|**⌘ M**|
-|Document suivant|**⌘}**, **⌘ F6**|
-|Document précédent|**⌘{**, **⇧⌘F6**|
+|Document suivant|**⌘}** , **⌘ F6**|
+|Document précédent|**⌘{** , **⇧⌘F6**|
 |Basculer vers le document suivant|**⌃⇥**|
-|Passer à la fenêtre suivante|**⌃⌥⇥**|
+|Basculer vers la fenêtre outil suivante|**⌃⌥⇥**|
 |Basculer vers le document précédent|**⌃⇧⇥**|
-|Passer à la fenêtre précédente|**⌃⌥⇧⇥**|
+|Basculer vers la fenêtre outil précédente|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>Recherche de symboles de touches macOS
 
 |Symbole|Clé|
 |-|-|
-|⌘|**Commande** (**cmd**)|
-|⌥|**Option** (**alt**)|
+|⌘|**Commande** ( **cmd** )|
+|⌥|**Option** ( **alt** )|
 |⇧|**Majuscule**|
-|⌃|**Contrôle** (**ctrl**)
-|⇞|**Page précédente** (**Page préc.**)|
-|⇟|**Page suivante** (**Page suiv.**)|
-|⌫|**Supprimer** (**Retour arrière**)|
+|⌃|**Contrôle** ( **ctrl** )
+|⇞|**Page précédente** ( **Page préc.** )|
+|⇟|**Page suivante** ( **Page suiv.** )|
+|⌫|**Supprimer** ( **Retour arrière** )|
 |⌦|**Supprimer vers l’avant**|
 |⏎|**Renvoi**|
 |←→↑↓|**Touches de direction**|
 |↖|**Page d'accueil**|
-|↘|**Effet**|
+|↘|**End**|
 |␣|**Barre d’espace**|
 |⇥|**Onglet**|
 

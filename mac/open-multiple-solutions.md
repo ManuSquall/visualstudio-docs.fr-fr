@@ -3,16 +3,16 @@ title: Guide pratique pour ouvrir plusieurs solutions
 description: Découvrez comment ouvrir plusieurs solutions dans Visual Studio pour Mac, et comment ouvrir plusieurs instances de l’application.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/02/2019
+ms.date: 11/09/2020
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e54f002141379d93a40df69ea070d5a64eba2f7d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950074"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493437"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Ouvrir plusieurs solutions ou instances de Visual Studio pour Mac
 
@@ -22,7 +22,7 @@ En outre, lorsque vous ouvrez une solution, le comportement par défaut est d’
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Ouvrir une deuxième instance de Visual Studio pour Mac
 
-Pour ouvrir une deuxième instance de l’environnement de développement intégré (IDE), cliquez avec le bouton droit sur l’icône Visual Studio dans votre station d’accueil ou sur le dossier **Applications**, puis sélectionnez **Nouvelle instance**.
+Pour ouvrir une deuxième instance de l’environnement de développement intégré (IDE), cliquez avec le bouton droit sur l’icône Visual Studio dans votre station d’accueil ou sur le dossier **Applications** , puis sélectionnez **Nouvelle instance**.
 
 ![Capture d’écran de l’option de menu Nouvelle instance sur l’icône Visual Studio sur laquelle l’utilisateur a cliqué avec le bouton droit](media/open-new-instance.png)
 
@@ -40,7 +40,7 @@ Pour ouvrir une autre solution à côté de votre première solution, effectuez 
 
     ![Capture d’écran de la boîte de dialogue Options, avec la case Fermer l’espace de travail actif décochée](media/open-multiple-solutions-image1.png)
 
-5. Sélectionnez **Ouvrir** pour ouvrir la deuxième solution dans le Panneau Solutions.
+5. Sélectionnez **ouvrir** pour ouvrir la deuxième solution dans la fenêtre de la solution.
 
 Autre possibilité, si vous avez récemment ouvert la solution, vous pouvez suivre les étapes ci-dessous :
 
@@ -48,7 +48,7 @@ Autre possibilité, si vous avez récemment ouvert la solution, vous pouvez suiv
 
     ![Capture d’écran du menu Solutions récentes](media/open-multiple-solutions-image2.png)
 
-1. Maintenez la touche **Ctrl**appuyée, puis sélectionnez la solution. Cette combinaison permet d’ouvrir la deuxième solution dans le Panneau Solutions.
+1. Maintenez la touche **Ctrl** appuyée, puis sélectionnez la solution. Cette combinaison ouvre la deuxième solution dans la fenêtre de la solution.
 
 ## <a name="related-video"></a>Vidéo associée
 

@@ -3,15 +3,15 @@ title: Inclusion d’un package NuGet dans votre projet
 description: Ce document explique comment inclure un package NuGet dans un projet à l’aide de Visual Studio pour Mac. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/04/2020
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349320"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493489"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installer et gérer des packages NuGet dans Visual Studio pour Mac
 
@@ -23,7 +23,7 @@ Pour une introduction à l’utilisation de NuGet dans Visual Studio pour Mac, c
 
 ## <a name="find-and-install-a-package"></a>Rechercher et installer un package
 
-1. Avec un projet ouvert dans Visual Studio pour Mac, cliquez avec le bouton droit sur le dossier **dépendances** (dossier **packages** si vous utilisez un projet Xamarin) dans le **panneau solutions** puis sélectionnez **gérer les packages NuGet...**.
+1. Une fois le projet ouvert dans Visual Studio pour Mac, cliquez avec le bouton droit sur le dossier **dépendances** (dossier **packages** si vous utilisez un projet Xamarin) dans la fenêtre de la **solution** et sélectionnez **gérer les packages NuGet...**.
 
     ![Action contextuelle Ajouter un nouveau package NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -85,7 +85,7 @@ Enfin, dans l’onglet **mises à jour** de la boîte de dialogue, sélectionnez
 ![Boîte de dialogue gérer les packages NuGet ouverte à l’onglet installé, avec un package sélectionné et la liste déroulante nouvelle version ouverte.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Recherche de packages obsolètes
-Dans le panneau solutions, vous pouvez afficher la version d’un package actuellement installée et cliquer avec le bouton droit sur le package à mettre à jour.
+Dans la fenêtre de la solution, vous pouvez afficher la version d’un package actuellement installée et cliquer avec le bouton droit sur le package à mettre à jour.
 
 ![Menu packages avec les options de mise à jour, de suppression et d’actualisation](media/nuget-walkthrough-PackageMenu.png)
 

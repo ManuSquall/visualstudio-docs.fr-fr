@@ -1,18 +1,18 @@
 ---
 title: 'Tutoriel : Azure Functions'
-description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 05/06/2018
+description: Procédure pas à pas détaillée de l’utilisation de Azure Functions dans Visual Studio pour Mac.
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
-ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939094"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493021"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
@@ -36,22 +36,22 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 2. Sélectionnez **Fichier > Nouvelle solution**.
 
-3. Dans la catégorie **Cloud > Général**, sélectionnez le modèle **Azure Functions**. Vous allez utiliser C# pour créer une bibliothèque de classes .NET qui héberge Azure Functions. Cliquez sur **Suivant**.
+3. Dans la catégorie **Cloud > Général** , sélectionnez le modèle **Azure Functions**. Vous allez utiliser C# pour créer une bibliothèque de classes .NET qui héberge Azure Functions. Cliquez sur **Suivant**.
 
     ![Sélection du modèle Azure Functions](media/azure-functions-lab-image1.png)
 
-4. Tapez **AzureFunctionsLab** dans le champ **Nom du projet**, puis cliquez sur **Créer**.
+4. Tapez **AzureFunctionsLab** dans le champ **Nom du projet** , puis cliquez sur **Créer**.
 
     ![Nommage et création d’un projet de fonction Azure](media/azure-functions-lab-image2.png)
 
-5. Développez les nœuds dans le **Panneau Solutions**. Le modèle de projet par défaut inclut des références NuGet à une variété de packages AzureWebJobs, ainsi qu’au package Newtonsoft.Json.
+5. Développez les nœuds dans la fenêtre de la **solution**. Le modèle de projet par défaut inclut des références NuGet à une variété de packages AzureWebJobs, ainsi qu’au package Newtonsoft.Json.
 
      Il comprend également trois fichiers : - **host.json** pour décrire les options de configuration globales pour l’hôte. - **local.settings.json** pour configurer les paramètres de service.
         - Le modèle de projet crée également un HttpTrigger par défaut. Pour les besoins de cet atelier, supprimez le fichier **HttpTrigger.cs** du projet.
 
     Ouvrez **local.settings.json**. Il contient par défaut deux paramètres de chaîne de connexion vides.
 
-    ![Panneau Solutions montrant le fichier local.settings.json](media/azure-functions-lab-image3.png)
+    ![fenêtre de solution affichant local.settings.jssur le fichier](media/azure-functions-lab-image3.png)
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercice 2 : Création d’un compte de stockage Azure
 
@@ -83,17 +83,17 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Informations pour la clé numéro 1](media/azure-functions-lab-image9.png)
 
-1. Revenez à **Visual Studio pour Mac**, puis collez la chaîne de connexion complète comme paramètre **AzureWebJobsStorage** dans **local.settings.json**. Vous pouvez maintenant référencer le nom du paramètre dans les attributs des fonctions qui ont besoin d’accéder à ses ressources.
+1. Revenez à **Visual Studio pour Mac** , puis collez la chaîne de connexion complète comme paramètre **AzureWebJobsStorage** dans **local.settings.json**. Vous pouvez maintenant référencer le nom du paramètre dans les attributs des fonctions qui ont besoin d’accéder à ses ressources.
 
     ![Fichier de paramètres locaux avec clé de connexion entrée](media/azure-functions-lab-image10.png)
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemple 3 : Création et débogage d’une fonction Azure
 
-1. Vous êtes prêt à ajouter du code. Quand vous utilisez une bibliothèque de classes .NET, les fonctions Azure sont ajoutées comme méthodes statiques. Dans **panneau solutions**, cliquez avec le bouton droit sur le nœud de projet **AzureFunctions** et sélectionnez **Ajouter > fonction Ajouter**:
+1. Vous êtes prêt à ajouter du code. Quand vous utilisez une bibliothèque de classes .NET, les fonctions Azure sont ajoutées comme méthodes statiques. Dans la **fenêtre** de la solution, cliquez avec le bouton droit sur le nœud de projet **AzureFunctions** et sélectionnez **Ajouter > fonction Ajouter** :
 
     ![Option Ajouter une fonction](media/azure-functions-lab-image11.png)
 
-1. Dans la boîte de dialogue Nouvelle fonction Azure, sélectionnez le modèle Generic WebHook. Tapez **Add** dans le champ **Nom**, puis cliquez sur **OK** pour créer votre fonction :
+1. Dans la boîte de dialogue Nouvelle fonction Azure, sélectionnez le modèle Generic WebHook. Tapez **Add** dans le champ **Nom** , puis cliquez sur **OK** pour créer votre fonction :
 
     ![Boîte de dialogue Nouvelle fonction Azure](media/azure-functions-lab-image12.png)
 
@@ -127,11 +127,11 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Nouvelle méthode Run avec l’attribut FunctionName mis en surbrillance](media/azure-functions-lab-image13.png)
 
-1. Ensuite, la méthode est marquée comme étant une méthode publique statique (**public static**). Cette étape est obligatoire. Vous remarquerez également que la valeur de retour est un **entier**. Sauf spécification contraire à l’aide des attributs de méthode, toute valeur de retour non void d’une fonction Azure est retournée au client sous forme de texte. Par défaut, elle est retournée au format **XML**, mais vous pourrez la retourner au format **JSON** plus loin dans cet atelier.
+1. Ensuite, la méthode est marquée comme étant une méthode publique statique ( **public static** ). Cette étape est obligatoire. Vous remarquerez également que la valeur de retour est un **entier**. Sauf spécification contraire à l’aide des attributs de méthode, toute valeur de retour non void d’une fonction Azure est retournée au client sous forme de texte. Par défaut, elle est retournée au format **XML** , mais vous pourrez la retourner au format **JSON** plus loin dans cet atelier.
 
     ![Nouvelle méthode Run avec mise en surbrillance de l’initialisation de la méthode](media/azure-functions-lab-image14.png)
 
-1. Le premier paramètre est marqué avec l’attribut **HttpTrigger**, ce qui indique que cette méthode est appelée par une requête HTTP. L’attribut spécifie également le niveau d’autorisation de la méthode, ainsi que les verbes pris en charge (uniquement **"GET"** dans ce cas). Vous pouvez éventuellement définir une **Route** qui substitue le chemin à la méthode et qui permet d’extraire automatiquement des variables du chemin. Comme **Route** a ici la valeur Null, le chemin à cette méthode est par défaut **/api/Add**.
+1. Le premier paramètre est marqué avec l’attribut **HttpTrigger** , ce qui indique que cette méthode est appelée par une requête HTTP. L’attribut spécifie également le niveau d’autorisation de la méthode, ainsi que les verbes pris en charge (uniquement **"GET"** dans ce cas). Vous pouvez éventuellement définir une **Route** qui substitue le chemin à la méthode et qui permet d’extraire automatiquement des variables du chemin. Comme **Route** a ici la valeur Null, le chemin à cette méthode est par défaut **/api/Add**.
 
     ![Nouvelle méthode Run avec mise en surbrillance du paramètre](media/azure-functions-lab-image15.png)
 
@@ -143,7 +143,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Point d’arrêt défini au niveau de la ligne return](media/azure-functions-lab-image17.png)
 
-1. Générez et exécutez le projet dans une session de débogage. Pour cela, appuyez sur **F5** ou sélectionnez **Exécuter > Démarrer le débogage**. Vous pouvez également cliquer sur le bouton **Exécuter**. Ces options effectuent toutes la même tâche. Le reste de cet atelier fait référence à **F5**, mais vous pouvez utiliser la méthode qui vous convient le mieux.
+1. Générez et exécutez le projet dans une session de débogage. Pour cela, appuyez sur **F5** ou sélectionnez **Exécuter > Démarrer le débogage**. Vous pouvez également cliquer sur le bouton **Exécuter**. Ces options effectuent toutes la même tâche. Le reste de cet atelier fait référence à **F5** , mais vous pouvez utiliser la méthode qui vous convient le mieux.
 
     ![Générer et exécuter le projet](media/azure-functions-lab-image18.png)
 
@@ -161,17 +161,17 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Point d’arrêt déclenché](media/azure-functions-lab-image21.png)
 
-1. Supprimez le point d’arrêt en suivant la même méthode que celle utilisée plus haut pour l’ajouter (cliquez sur la marge ou sélectionnez la ligne et appuyez sur **F9**).
+1. Supprimez le point d’arrêt en suivant la même méthode que celle utilisée plus haut pour l’ajouter (cliquez sur la marge ou sélectionnez la ligne et appuyez sur **F9** ).
 
 1. Appuyez sur **F5** pour continuer l’exécution.
 
 1. Le navigateur affiche le résultat XML de la méthode. Comme prévu, l’opération d’addition codée en dur produit une somme plausible. Si vous voyez seulement « 3 » dans Safari, accédez à **Safari > Préférences > Avancées** et cochez la case **Afficher le menu Développement dans la barre de menus**. Ensuite, rechargez la page.
 
-1. Dans **Visual Studio pour Mac**, cliquez sur le bouton **Arrêter** pour mettre fin à la session de débogage. Pour que les nouveaux changements entrent en vigueur, n’oubliez pas de redémarrer (arrêter, puis exécuter) la session de débogage.
+1. Dans **Visual Studio pour Mac** , cliquez sur le bouton **Arrêter** pour mettre fin à la session de débogage. Pour que les nouveaux changements entrent en vigueur, n’oubliez pas de redémarrer (arrêter, puis exécuter) la session de débogage.
 
     ![Option Arrêter le débogage](media/azure-functions-lab-image22.png)
 
-1. Dans la méthode **Run**, remplacez les définitions **x** et **y** par le code ci-dessous. Ce code extrait les valeurs de la chaîne de requête de l’URL de manière à ce que l’opération d’addition puisse être exécutée dynamiquement en fonction des paramètres fournis.
+1. Dans la méthode **Run** , remplacez les définitions **x** et **y** par le code ci-dessous. Ce code extrait les valeurs de la chaîne de requête de l’URL de manière à ce que l’opération d’addition puisse être exécutée dynamiquement en fonction des paramètres fournis.
 
     ```csharp
     var query = HttpUtility.ParseQueryString(req.RequestUri.Query);
@@ -193,7 +193,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 ## <a name="exercise-4-working-with-functionjson"></a>Exercice 4 : Utilisation de function.json
 
-1. Dans un exercice précédent, il est mentionné que Visual Studio pour Mac « génère » une fonction de travail pour la fonction Azure définie dans la bibliothèque. Cela vient du fait qu’Azure Functions n’utilise pas réellement les attributs de méthode au moment de l’exécution. Au lieu de cela, il utilise une convention de système de fichiers au moment de la compilation pour configurer où et comment les fonctions Azure sont mises à disposition. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur votre nœud de projet et sélectionnez **Révéler dans le Finder**.
+1. Dans un exercice précédent, il est mentionné que Visual Studio pour Mac « génère » une fonction de travail pour la fonction Azure définie dans la bibliothèque. Cela vient du fait qu’Azure Functions n’utilise pas réellement les attributs de méthode au moment de l’exécution. Au lieu de cela, il utilise une convention de système de fichiers au moment de la compilation pour configurer où et comment les fonctions Azure sont mises à disposition. Dans la **fenêtre** de la solution, cliquez avec le bouton droit sur le nœud de votre projet et sélectionnez **révéler dans le Finder**.
 
      ![Option Révéler dans le Finder](media/azure-functions-lab-image23.png)
 
@@ -201,11 +201,11 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![function.json dans le répertoire de fichiers](media/azure-functions-lab-image24.png)
 
-1. Si vous avez suivi les étapes précédentes de ce tutoriel, vous devez avoir des connaissances de base des attributs C#. Le code JSON qui suit doit donc vous sembler familier. Toutefois, quelques éléments n’ont pas été abordés dans les exercices précédents. Par exemple, chaque liaison (**binding**) doit avoir une **direction** définie. Comme vous l’aurez deviné, **"in"** signifie que le paramètre est une entrée, tandis que **"out"** indique que le paramètre est une valeur de retour (par le biais de **$return**) ou un paramètre **out** de la méthode. Vous devez également spécifier le **scriptFile** (par rapport à cet emplacement final) et la méthode **entryPoint** (publique et statique) dans l’assembly. Au cours des prochaines étapes, vous allez ajouter un chemin de fonction personnalisé à l’aide de ce modèle. Vous devez donc copier le contenu de ce fichier dans le Presse-papiers.
+1. Si vous avez suivi les étapes précédentes de ce tutoriel, vous devez avoir des connaissances de base des attributs C#. Le code JSON qui suit doit donc vous sembler familier. Toutefois, quelques éléments n’ont pas été abordés dans les exercices précédents. Par exemple, chaque liaison ( **binding** ) doit avoir une **direction** définie. Comme vous l’aurez deviné, **"in"** signifie que le paramètre est une entrée, tandis que **"out"** indique que le paramètre est une valeur de retour (par le biais de **$return** ) ou un paramètre **out** de la méthode. Vous devez également spécifier le **scriptFile** (par rapport à cet emplacement final) et la méthode **entryPoint** (publique et statique) dans l’assembly. Au cours des prochaines étapes, vous allez ajouter un chemin de fonction personnalisé à l’aide de ce modèle. Vous devez donc copier le contenu de ce fichier dans le Presse-papiers.
 
     ![Fichier function.json ouvert dans Visual Studio pour Mac](media/azure-functions-lab-image25.png)
 
-1. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur le nœud de projet **AzureFunctions**, puis sélectionnez **Ajouter > Nouveau dossier**. Nommez le nouveau dossier **Adder**. Selon la convention par défaut, le nom de ce dossier définit le chemin à l’API (par exemple, **api/Adder**).
+1. Dans la **fenêtre** de la solution, cliquez avec le bouton droit sur le nœud de projet **AzureFunctionsLab** , puis sélectionnez **Ajouter > nouveau dossier**. Nommez le nouveau dossier **Adder**. Selon la convention par défaut, le nom de ce dossier définit le chemin à l’API (par exemple, **api/Adder** ).
 
     ![Option Nouveau dossier](media/azure-functions-lab-image26.png)
 
@@ -213,7 +213,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Option Nouveau fichier](media/azure-functions-lab-image27.png)
 
-1. Sélectionnez la catégorie **Web** et le modèle **Fichier JSON vide**. Tapez **function** dans le champ **Nom**, puis cliquez sur **Nouveau**.
+1. Sélectionnez la catégorie **Web** et le modèle **Fichier JSON vide**. Tapez **function** dans le champ **Nom** , puis cliquez sur **Nouveau**.
 
     ![Option Fichier JSON vide](media/azure-functions-lab-image28.png)
 
@@ -226,7 +226,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. À la fin de la première liaison (après la ligne **"name": "req"**), ajoutez les propriétés ci-dessous. N’oubliez pas d’ajouter une virgule à la ligne précédente. Cette propriété se substitue à la racine par défaut. Elle extrait ainsi les paramètres **int** du chemin d’accès et les place dans les paramètres de méthode nommés **x** et **y**.
+1. À la fin de la première liaison (après la ligne **"name": "req"** ), ajoutez les propriétés ci-dessous. N’oubliez pas d’ajouter une virgule à la ligne précédente. Cette propriété se substitue à la racine par défaut. Elle extrait ainsi les paramètres **int** du chemin d’accès et les place dans les paramètres de méthode nommés **x** et **y**.
 
     ```json
     "direction": "in",
@@ -243,7 +243,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
     }
     ```
 
-1. Changez également la propriété **entryPoint** située en bas du fichier de manière à ce qu’elle utilise une méthode appelée **« Add2 »**, comme indiqué ci-dessous. Vous pouvez donc constater que le chemin **api/Adder...** peut mapper à une méthode appropriée avec un nom quelconque (**Add2** ici).
+1. Changez également la propriété **entryPoint** située en bas du fichier de manière à ce qu’elle utilise une méthode appelée **« Add2 »** , comme indiqué ci-dessous. Vous pouvez donc constater que le chemin **api/Adder...** peut mapper à une méthode appropriée avec un nom quelconque ( **Add2** ici).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -276,11 +276,11 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
     }
     ```
 
-1. Pour que tout fonctionne correctement, la dernière étape consiste à charger Visual Studio pour Mac de copier ce fichier dans le même chemin relatif du répertoire de sortie chaque fois qu’il change. Veillez à ce que le fichier soit sélectionné, puis choisissez l’onglet des propriétés dans la barre de droite. Ensuite, pour **Copier dans le répertoire de sortie**, sélectionnez **Copier si plus récent** :
+1. Pour que tout fonctionne correctement, la dernière étape consiste à charger Visual Studio pour Mac de copier ce fichier dans le même chemin relatif du répertoire de sortie chaque fois qu’il change. Veillez à ce que le fichier soit sélectionné, puis choisissez l’onglet des propriétés dans la barre de droite. Ensuite, pour **Copier dans le répertoire de sortie** , sélectionnez **Copier si plus récent** :
 
     ![Options des propriétés pour le fichier json](media/azure-functions-lab-image30.png)
 
-1. Dans **Add.cs**, remplacez la méthode `Run` (attribut inclus) par la méthode suivante pour obtenir la fonction attendue. Elle est très similaire à `Run`, mais elle n’utilise aucun attribut et contient des paramètres explicites pour **x** et **y**.
+1. Dans **Add.cs** , remplacez la méthode `Run` (attribut inclus) par la méthode suivante pour obtenir la fonction attendue. Elle est très similaire à `Run`, mais elle n’utilise aucun attribut et contient des paramètres explicites pour **x** et **y**.
 
     ```csharp
     public static int Add2(
@@ -320,7 +320,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
     }
     ```
 
-1. Dans la classe **Add**, ajoutez le code ci-dessous pour introduire une autre fonction. Notez que celle-ci est sans précédent dans la mesure où elle n’implique aucune réponse HTTP. La dernière ligne retourne un nouveau **TableRow** rempli avec des informations de clé qui permettront de le récupérer facilement par la suite (**PartitionKey** et **RowKey**), ses paramètres et la somme. Le code dans la méthode utilise également **TraceWriter** pour savoir plus facilement à quel moment la fonction s’exécute.
+1. Dans la classe **Add** , ajoutez le code ci-dessous pour introduire une autre fonction. Notez que celle-ci est sans précédent dans la mesure où elle n’implique aucune réponse HTTP. La dernière ligne retourne un nouveau **TableRow** rempli avec des informations de clé qui permettront de le récupérer facilement par la suite ( **PartitionKey** et **RowKey** ), ses paramètres et la somme. Le code dans la méthode utilise également **TraceWriter** pour savoir plus facilement à quel moment la fonction s’exécute.
 
     ```csharp
     [FunctionName("Process")]

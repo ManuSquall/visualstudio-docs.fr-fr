@@ -1,20 +1,20 @@
 ---
 title: Visual Studio pour Mac pour les utilisateurs Windows
-description: Présentation des fonctionnalités d’accessibilité dans Visual Studio pour Mac et comment elles peuvent être activées.
+description: Présentation de la Visual Studio pour Mac pour les développeurs connaissant l’utilisation de Visual Studio sur le système d’exploitation Windows.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/25/2019
+ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984260"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493372"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio pour Mac pour les utilisateurs Windows
 
-La migration d’un système d’exploitation vers un autre peut être décourageante. Il existe souvent des différences subtiles entre les applications multiplateformes, de l’interface utilisateur à la catégorisation des éléments de menu. Les utilisateurs bénéficieront également de la courbe d’apprentissage de l’adaptation à l’interface utilisateur du nouveau système d’exploitation. Vous découvrirez ici les différences les plus courantes entre Visual Studio pour Mac et Visual Studio pour Windows. Vous allez également découvrir quelques conventions différentes entre macOS et Windows.
+La migration d’un système d’exploitation vers un autre peut être décourageante. Il existe souvent des différences subtiles entre les applications multiplateformes, de l’interface utilisateur à la catégorisation des éléments de menu. Vous découvrirez ici les différences les plus courantes entre Visual Studio pour Mac et Visual Studio pour Windows. Vous allez également découvrir quelques conventions différentes entre macOS et Windows.
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -49,10 +49,9 @@ Les menus dans macOS sont organisés différemment des menus de Windows. Visual 
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |Préférences (options)  |Outils > options...                                                   |Préférences de Visual Studio >...       |
 |Extensions             |Extensions > gérer les extensions                                       |Extensions de > Visual Studio...        |
-|Dispositions                |Fenêtre > appliquer la disposition de fenêtre > [sélectionner la disposition]                       |Afficher les > [sélectionner la disposition]               |
+|Dispositions                |Fenêtre > appliquer la disposition de fenêtre > [sélectionner la disposition]                       |Afficher > disposition > [sélectionner la disposition]               |
 |Mises à jour                |Aide > la vérification des mises à jour                                             |> Visual Studio Rechercher les mises à jour... |
 |Gestionnaire de package NuGet  |Outils > gestionnaire de package NuGet > gérer les packages ou la solution NuGet... |Projet > gérer les packages NuGet...   |
-|Pad/fenêtres         |Afficher > [sélectionner un bloc/une fenêtre]                                         |Afficher les blocs de > > [sélectionner le bloc/la fenêtre]  |
 |Rechercher des outils             |Modifier > Rechercher et remplacer des > [Select Tool]                              |> de recherche [outil Select]               |
 |À propos de Visual Studio    |Aide > sur Microsoft Visual Studio                                 |Visual Studio > à propos de Visual Studio  
 

@@ -8,12 +8,12 @@ ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 71136bb634bd42eaf4933dead8c024b290177da3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434699"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493554"
 ---
 # <a name="git-productivity-in-visual-studio"></a>Productivité git dans Visual Studio
 
@@ -94,7 +94,7 @@ Visual Studio facilite également la validation et la synchronisation d’un cli
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Capture d’écran de la comparaison ligne par ligne des versions de fichiers dans Visual Studio ":::
 
 > [!TIP]
-> Vous pouvez associer l’élément de travail Azure DevOps à une validation en utilisant le caractère « # » si vous êtes connecté au référentiel Azure DevOps. Vous pouvez connecter votre référentiel Azure DevOps via **Team Explorer**  >  **gérer les connexions**.
+> Vous pouvez associer un élément de travail Azure DevOps à une validation en utilisant le caractère « # » si vous êtes connecté au référentiel Azure DevOps. Vous pouvez connecter votre référentiel Azure DevOps via **Team Explorer**  >  **gérer les connexions**.
 
 ### <a name="select-an-existing-branch"></a>Sélectionner une branche existante
 
@@ -180,7 +180,7 @@ Pour personnaliser et personnaliser vos paramètres git au niveau du référenti
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Capture d’écran de la boîte de dialogue Options dans laquelle vous pouvez choisir des paramètres de personnalisation et de personnalisation dans l’IDE de Visual Studio ":::
 
-## <a name="how-to-use-legacy-team-explorer-experience-in-visual-studio"></a>Comment utiliser l’expérience de Team Explorer héritée dans Visual Studio
+## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Comment utiliser l’expérience de Team Explorer héritée dans Visual Studio
 
 La nouvelle expérience git est le système de contrôle de version par défaut de Visual Studio 2019 à partir de la [version 16,8](/visualstudio/releases/2019/release-notes/) . Toutefois, si vous souhaitez la désactiver, vous pouvez. Accédez à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités** , puis activez/désactivez la case à cocher **nouvelle expérience utilisateur git** , ce qui vous ramène à l’expérience de Team Explorer héritée.
 

@@ -1,18 +1,18 @@
 ---
 title: Définir plusieurs projets de démarrage
 description: Cet article explique comment définir plusieurs projets à démarrer au moment de l’exécution ou du débogage d’une solution.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 12/13/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: e0e1af97ec91af4105d1934a431f9aabc6562793
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950106"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493567"
 ---
 # <a name="set-multiple-startup-projects"></a>Définir plusieurs projets de démarrage
 
@@ -20,7 +20,7 @@ Visual Studio pour Mac vous permet de spécifier le mode de démarrage de plusie
 
 ## <a name="to-set-multiple-startup-projects"></a>Pour définir plusieurs projets de démarrage
 
-1. Dans le Panneau Solutions, sélectionnez la solution (nœud supérieur).
+1. Dans la fenêtre de la solution, sélectionnez la solution (nœud supérieur).
 
 2. Cliquez avec le bouton droit sur le nœud de la solution, puis sélectionnez **Définir comme projet de démarrage** :
 
@@ -42,7 +42,7 @@ Visual Studio pour Mac vous permet de spécifier le mode de démarrage de plusie
 
    ![Solution avec plusieurs projets configurés pour démarrer en mode débogage ou s’exécuter](media/startup-project-configured.png)
 
-   Vous pouvez voir que deux projets sont configurés pour démarrer, car les deux projets sont en **gras** dans le panneau Solution. Dans la barre d’outils, la nouvelle configuration d’exécution est définie en tant que configuration d’exécution de solution actuelle.
+   À présent, les deux projets sont configurés pour démarrer, ce qui est représenté par les deux projets apparaissant en **gras** dans la fenêtre de la solution. Dans la barre d’outils, la nouvelle configuration d’exécution est définie en tant que configuration d’exécution de solution actuelle.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

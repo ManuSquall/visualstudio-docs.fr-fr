@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
-ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938523"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493060"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Création et modification d’un fichier EditorConfig personnalisé
 
@@ -41,7 +41,7 @@ EditorConfig prend également en charge les [conventions de codage](/visualstudi
 
 1. Ouvrez votre projet dans Visual Studio pour Mac. Sélectionnez la solution ou le nœud de projet auquel vous souhaitez ajouter le fichier EditorConfig. L’ajout du fichier au répertoire de la solution permet d’appliquer les paramètres du fichier .editorconfig à tous les projets de la solution.
 
-2. Cliquez avec le bouton droit sur le nœud, puis sélectionnez **Ajouter > Nouveau fichier** pour ouvrir la boîte de dialogue **Nouveau fichier** :
+2. Cliquez avec le bouton droit sur le nœud, puis sélectionnez **Ajouter > Nouveau fichier** pour ouvrir la boîte de dialogue **Nouveau fichier**  :
 
     ![Éléments de menu de contenu](media/editorconfig-image0.png)
 
@@ -49,11 +49,11 @@ EditorConfig prend également en charge les [conventions de codage](/visualstudi
 
     ![Boîte de dialogue Nouveau fichier](media/editorconfig-image1.png)
 
-    L’ajout de l’élément au niveau de la solution permet de le créer et de l’imbriquer automatiquement dans un dossier **Éléments de solution** :
+    L’ajout de l’élément au niveau de la solution permet de le créer et de l’imbriquer automatiquement dans un dossier **Éléments de solution**  :
 
-    ![Élément de solution affiché dans le panneau Solutions](media/editorconfig-image1a.png)
+    ![Élément de solution affiché dans la fenêtre de la solution](media/editorconfig-image1a.png)
 
-4. Modifiez le fichier. Par exemple :
+4. Modifiez le fichier. Exemple :
 
     ```EditorConfig
     # This file is the top-most EditorConfig file
@@ -86,7 +86,7 @@ Vous pouvez réutiliser un fichier `.editorconfig` existant dans votre projet. P
 
 3. Les fichiers qui commencent par `.` (par exemple `.editorconfig`) sont des fichiers masqués dans macOS. Vous devez donc appuyer sur **Commande + Maj + .** pour rendre le fichier `.editorconfig` visible.
 
-4. Sélectionnez le `.editorconfig` fichier, puis cliquez sur **ouvrir**:
+4. Sélectionnez le `.editorconfig` fichier, puis cliquez sur **ouvrir** :
 
     ![fenêtre d’ajout de nouveau fichier](media/editorconfig-image3b.png)
 
@@ -123,15 +123,15 @@ csharp_new_line_before_open_brace = none
 
 Si vous affectez à `root` la valeur `true`, ce fichier est marqué comme étant au sommet du code base. Tout fichier `.editorconfig` situé plus haut dans le projet est ignoré, comme l’explique la section [Substituer les paramètres d’EditorConfig](#override-editorconfig-settings).
 
-Chaque section, dénotée par des crochets (**[]**), spécifie des informations sur les types de fichiers auxquels les propriétés suivantes se rapportent.
+Chaque section, dénotée par des crochets ( **[]** ), spécifie des informations sur les types de fichiers auxquels les propriétés suivantes se rapportent.
 
 Dans l’exemple ci-dessus, certains paramètres sont appliqués à tous les fichiers du projet tandis que d’autres sont ajoutés uniquement aux fichiers C#. Les captures d’écran ci-dessous montrent une section de code avant et après l’application des paramètres `.editorconfig` :
 
-**Avant**:
+**Avant** :
 
 ![Avant l’application des paramètres editorconfig](media/editorconfig-image4.png)
 
-**Après**:
+**Après** :
 
 ![Après l’application des paramètres editorconfig](media/editorconfig-image5.png)
 

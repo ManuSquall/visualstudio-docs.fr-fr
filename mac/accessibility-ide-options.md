@@ -6,35 +6,35 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.topic: how-to
-ms.openlocfilehash: 7b0959c8a2f91e340a8b173d94fb2dbd9e2d9474
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f56141cb59cc679993140e2ed2093fe1cb9d9790
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801813"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493463"
 ---
 # <a name="set-ide-accessibility-options"></a>Définir les options d’accessibilité de l’IDE
 
 En plus des fonctionnalités intégrées à macOS, Visual Studio pour Mac dispose d’un certain nombre de fonctionnalités d’accessibilité pour permettre aux utilisateurs de différentes capacités.
 
-## <a name="resize-pad-and-editor-content"></a>Redimensionner le bloc et le contenu de l’éditeur
+## <a name="resize-tool-windows-and-editor-content"></a>Redimensionner le contenu des fenêtres outil et de l’éditeur
 
-1. Choisissez la fenêtre ou le bloc pour lequel vous souhaitez redimensionner le contenu.
+1. Choisissez la fenêtre outil ou l’éditeur pour laquelle vous souhaitez redimensionner le contenu.
 
-1. Choisissez **affichage (menu)**, puis sélectionnez **zoom avant (&#8984;+)** ou **Zoom arrière (&#8984;-)**.
+1. Choisissez **affichage (menu)** , puis sélectionnez **zoom avant (&#8984;+)** ou **Zoom arrière (&#8984;-)**.
 
 > [!TIP]
 > Pour rétablir la taille par défaut du contenu, vous pouvez choisir **affichage (menu)**  >  **taille normale (&#8984;0)**.
 
 ## <a name="change-the-content-font-and-size"></a>Modifier la police et la taille du contenu
 
-Il est possible de personnaliser la police et la taille du contenu dans la plupart des blocs de Visual Studio pour Mac. Voici comment procéder :
+Il est possible de personnaliser la police et la taille du contenu dans la plupart des fenêtres outil dans Visual Studio pour Mac. Voici comment faire :
 
 1. Accédez à **Visual Studio (menu)**  >  **Préférences... (&#8984;,)**.
 
-1. Dans **Préférences**, accédez à **Environment**  >  **polices**d’environnement.
+1. Dans **Préférences** , accédez à **Environment**  >  **polices** d’environnement.
 
-1. Pour l' **éditeur de texte**, le **texte de remplissage général**ou le **contenu du bloc de sortie**, sélectionnez le bouton police et taille.
+1. Pour l' **éditeur de texte** , le texte de la **fenêtre outil général** ou le **contenu fenêtre Sortie** , sélectionnez le bouton police et taille.
 
 1. Sélectionnez la police, le style et la taille souhaités, puis sélectionnez **OK**.
 
@@ -47,7 +47,7 @@ Certains utilisateurs peuvent constater que le modèle de couleurs par défaut n
 
 1. Accédez à **Visual Studio (menu)**  >  **Préférences... (&#8984;,)**.
 
-1. Dans **Préférences**, accédez à **éditeur de texte**  >  **thème de couleur**.
+1. Dans **Préférences** , accédez à **éditeur de texte**  >  **thème de couleur**.
 
 1. Sélectionnez le thème de votre choix.
 

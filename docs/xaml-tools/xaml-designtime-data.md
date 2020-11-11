@@ -1,18 +1,18 @@
 ---
 title: Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 description: Découvrez comment utiliser des données au moment du design en XAML.
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298478"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492892"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -25,7 +25,7 @@ Certaines dispositions sont difficiles à visualiser sans données. Dans ce docu
 
 Les données au moment de la conception sont des données fictives que vous définissez pour faciliter la visualisation de vos contrôles dans le Concepteur XAML. Pour commencer, ajoutez les lignes de code suivantes à l’en-tête de votre document XAML s’ils ne sont pas déjà présents :
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ L’avantage ici est que vous pouvez lier vos contrôles à une version statique
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Utiliser des données au moment du design avec des types et des propriétés personnalisés
 
-Par défaut, cette fonctionnalité fonctionne uniquement avec les propriétés et les contrôles de plateforme. Dans cette section, nous allons passer en revue les étapes nécessaires pour vous permettre d’utiliser vos propres contrôles personnalisés comme contrôles au moment de la conception, une nouvelle fonctionnalité disponible pour les clients qui utilisent Visual Studio 2019 preview version [16,8](/visualstudio/releases/2019/preview-notes) ou ultérieure. Il y a trois exigences pour l’activer :
+Par défaut, cette fonctionnalité fonctionne uniquement avec les propriétés et les contrôles de plateforme. Dans cette section, nous allons passer en revue les étapes nécessaires pour vous permettre d’utiliser vos propres contrôles personnalisés comme contrôles au moment de la conception, une nouvelle fonctionnalité disponible pour les clients qui utilisent Visual Studio 2019 version [16,8](/visualstudio/releases/2019/release-notes/) ou ultérieure. Il y a trois exigences pour l’activer :
 
-- Un espace de noms xmlns personnalisé 
+- Un espace de noms xmlns personnalisé
 
     ```xml
     xmlns:myControls="http://MyCustomControls"
@@ -173,7 +173,7 @@ Pour créer un espace de noms xmlns personnalisé dans WPF .NET Core, vous devez
 [assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
    ```
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Si vous rencontrez un problème qui n’est pas mentionné dans cette section, faites-le nous savoir en utilisant l’outil [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) .
 

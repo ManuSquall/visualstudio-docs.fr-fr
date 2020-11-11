@@ -1,5 +1,6 @@
 ---
 title: Publier sur Azure App Service
+description: Comment publier une application Web à l’aide des outils de publication dans Visual Studio pour Mac.
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 81ae8c8dde91655a4b9b3b8dcb4d0033af34e4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950513"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493424"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publier une application web sur Azure App Service à l’aide de Visual Studio pour Mac
 
@@ -31,7 +32,7 @@ Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Cor
 
 ## <a name="publish-to-azure-app-service"></a>Publier sur Azure App Service
 
- 1. Dans le panneau Solutions, cliquez avec le bouton droit sur le projet, puis choisissez **Publier**.
+ 1. Dans la fenêtre de la solution, cliquez avec le bouton droit sur le projet et choisissez **publier**.
 
     ![Menu contextuel de publication](media/publish-context-menu.png)
 
@@ -63,11 +64,11 @@ Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Cor
 
     Pour créer votre service d’application et y publier votre projet, cliquez sur **Créer**.
 
-    Une fois que vous avez cliqué sur **Créer**, la boîte de dialogue **Nouvel App Service** se ferme, et le message suivant s’affiche pour vous indiquer que la création du service d’application a démarré.
+    Une fois que vous avez cliqué sur **Créer** , la boîte de dialogue **Nouvel App Service** se ferme, et le message suivant s’affiche pour vous indiquer que la création du service d’application a démarré.
 
       ![Message de création de service App Service](media/publish-create-app-service-message.png)
 
-    Une fois que vous avez cliqué sur **OK**, le message est ignoré, et vous pouvez continuer à travailler sur votre projet. Vous pouvez consulter l’état du processus de publication dans la barre d’état située en haut de l’IDE. Une fois votre application web publiée avec succès, le site s’ouvre dans votre navigateur par défaut.
+    Une fois que vous avez cliqué sur **OK** , le message est ignoré, et vous pouvez continuer à travailler sur votre projet. Vous pouvez consulter l’état du processus de publication dans la barre d’état située en haut de l’IDE. Une fois votre application web publiée avec succès, le site s’ouvre dans votre navigateur par défaut.
 
 ## <a name="related-video"></a>Vidéo associée
 

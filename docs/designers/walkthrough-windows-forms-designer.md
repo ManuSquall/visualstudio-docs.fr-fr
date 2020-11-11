@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f3dfdecb28254e5b9683cd1e9640c5a45b728a6c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134692"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493476"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Didacticiel : prise en main de Concepteur Windows Forms
 
@@ -37,7 +37,7 @@ Lorsque vous avez terminé, vous disposez d’un contrôle personnalisé qui a �
 
 La première étape consiste à créer le projet de contrôle DemoCalculator.
 
-1. Ouvrez Visual Studio et créez un projet de **bibliothèque de contrôles Windows Forms** . Nommez le projet **DemoCalculatorLib** .
+1. Ouvrez Visual Studio et créez un projet de **bibliothèque de contrôles Windows Forms**. Nommez le projet **DemoCalculatorLib**.
 
    ::: moniker range=">=vs-2019"
 
@@ -83,11 +83,11 @@ Le contrôle DemoCalculator contient plusieurs contrôles Windows Forms. Dans ce
 
 8. Sélectionnez le glyphe de balise active du contrôle `ListView`. Dans le panneau des balises actives, remplacez le paramètre `View` par `Details`.
 
-9. Dans le panneau des balises actives, sélectionnez **Modifier les colonnes** .
+9. Dans le panneau des balises actives, sélectionnez **Modifier les colonnes**.
 
    La boîte de dialogue **Éditeur de collections ColumnHeader** s’ouvre.
 
-10. Dans la boîte de dialogue **Éditeur de collections ColumnHeader** , sélectionnez **Ajouter** pour ajouter une colonne au contrôle `ListView`. Remplacez la valeur de la propriété `Text` de la colonne par **Historique** . Sélectionnez **OK** pour créer la colonne.
+10. Dans la boîte de dialogue **Éditeur de collections ColumnHeader** , sélectionnez **Ajouter** pour ajouter une colonne au contrôle `ListView`. Remplacez la valeur de la propriété `Text` de la colonne par **Historique**. Sélectionnez **OK** pour créer la colonne.
 
 11. Dans le panneau des balises actives, sélectionnez **Ancrer dans le conteneur parent** , puis sélectionnez le glyphe de balise active pour fermer le panneau des balises actives.
 
@@ -99,11 +99,11 @@ Le contrôle DemoCalculator contient plusieurs contrôles Windows Forms. Dans ce
 
     La boîte de dialogue **Styles de lignes et de colonnes** s’ouvre.
 
-14. Sélectionnez le bouton **Ajouter** jusqu’à ce que cinq colonnes s’affichent. Sélectionnez les cinq colonnes, puis sélectionnez **Pourcentage** dans la zone **Type de taille** . Définissez la valeur **Pourcentage** sur **20** . Cette valeur définit chaque colonne sur la même largeur.
+14. Sélectionnez le bouton **Ajouter** jusqu’à ce que cinq colonnes s’affichent. Sélectionnez les cinq colonnes, puis sélectionnez **Pourcentage** dans la zone **Type de taille**. Définissez la valeur **Pourcentage** sur **20**. Cette valeur définit chaque colonne sur la même largeur.
 
-15. Sous **Afficher** , sélectionnez **Lignes** .
+15. Sous **Afficher** , sélectionnez **Lignes**.
 
-16. Sélectionnez **Ajouter** jusqu’à ce que cinq lignes s’affichent. Sélectionnez les cinq lignes, puis sélectionnez **Pourcentage** dans la zone **Type de taille** . Définissez la valeur **Pourcentage** sur **20** . Cette valeur définit chaque ligne sur la même hauteur.
+16. Sélectionnez **Ajouter** jusqu’à ce que cinq lignes s’affichent. Sélectionnez les cinq lignes, puis sélectionnez **Pourcentage** dans la zone **Type de taille**. Définissez la valeur **Pourcentage** sur **20**. Cette valeur définit chaque ligne sur la même hauteur.
 
 17. Sélectionnez **OK** pour accepter vos modifications, puis sélectionnez le glyphe de balise active pour fermer le panneau des balises actives.
 
@@ -117,7 +117,7 @@ Maintenant que la disposition du contrôle est configurée, vous pouvez remplir 
 
    Un contrôle `TextBox` est placé dans la première cellule du contrôle `TableLayoutPanel`.
 
-2. Dans la fenêtre **Propriétés** , remplacez la valeur de la propriété ColumnSpan du contrôle `TextBox` par **5** .
+2. Dans la fenêtre **Propriétés** , remplacez la valeur de la propriété ColumnSpan du contrôle `TextBox` par **5**.
 
    Le contrôle `TextBox` se déplace vers une position centrée sur sa ligne.
 
@@ -147,13 +147,13 @@ Maintenant que la disposition du contrôle est configurée, vous pouvez remplir 
 
     Tous les contrôles `Button` s’ancrent pour remplir leurs cellules contenantes.
 
-13. Dans la fenêtre **Propriétés** , développez le nœud de la propriété `Margin`. Définissez la valeur de `All` sur **5** .
+13. Dans la fenêtre **Propriétés** , développez le nœud de la propriété `Margin`. Définissez la valeur de `All` sur **5**.
 
     Tous les contrôles `Button` sont de taille inférieure pour créer une marge plus grande entre eux.
 
 14. Sélectionnez **button10** et **button20** , et appuyez sur **Supprimer** pour les supprimer de la disposition.
 
-15. Sélectionnez **button5** et **button15** , puis remplacez la valeur de leur propriété `RowSpan` par **2** . Ceux-ci seront les boutons **Effacer** et **=** pour le contrôle DemoCalculator.
+15. Sélectionnez **button5** et **button15** , puis remplacez la valeur de leur propriété `RowSpan` par **2**. Ceux-ci seront les boutons **Effacer** et **=** pour le contrôle DemoCalculator.
 
 ## <a name="use-the-document-outline-window"></a>Utiliser la fenêtre Structure du document
 
@@ -163,7 +163,7 @@ Lorsque votre contrôle ou formulaire est rempli avec plusieurs contrôles, il p
 
    La fenêtre Structure du document affiche une arborescence du contrôle DemoCalculator et de ses contrôles constitutifs. Les contrôles de conteneur comme `SplitContainer` affichent leurs contrôles enfants comme sous-nœuds dans l’arborescence. Vous pouvez également renommer les contrôles en place à l’aide de la fenêtre Structure du document.
 
-2. Dans la fenêtre **structure du document** , cliquez avec le bouton droit sur **Button1** , puis sélectionnez **Renommer** . Remplacez son nom par sevenButton.
+2. Dans la fenêtre **structure du document** , cliquez avec le bouton droit sur **Button1** , puis sélectionnez **Renommer**. Remplacez son nom par sevenButton.
 
 3. À l’aide de la fenêtre **Structure du document** , remplacez le nom généré par le concepteur des contrôles `Button` par le nom de production en fonction de la liste suivante :
 
@@ -259,13 +259,13 @@ Les boutons du contrôle DemoCalculator ont des gestionnaires d’événements q
 
 ## <a name="test-the-control"></a>Tester le contrôle
 
-Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl** . Pour plus d’informations, consultez [Comment : tester le comportement d’un UserControl au moment de l’exécution](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl**. Pour plus d’informations, consultez [Comment : tester le comportement d’un UserControl au moment de l’exécution](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
 
-1. Appuyez sur  **F5** pour générer et exécuter le contrôle DemoCalculator dans le **Conteneur de test UserControl** .
+1. Appuyez sur  **F5** pour générer et exécuter le contrôle DemoCalculator dans le **Conteneur de test UserControl**.
 
 2. Sélectionnez la bordure entre les panneaux `SplitContainer` et faites-la glisser vers la gauche et la droite. `TableLayoutPanel` et tous ses contrôles enfants se redimensionnent pour s’ajuster à l’espace disponible.
 
-3. Lorsque vous avez terminé de tester le contrôle, sélectionnez **Fermer** .
+3. Lorsque vous avez terminé de tester le contrôle, sélectionnez **Fermer**.
 
 ## <a name="use-the-control-on-a-form"></a>Utiliser le contrôle sur un formulaire
 
@@ -275,21 +275,21 @@ Le contrôle DemoCalculator peut être utilisé dans d’autres contrôles compo
 
 La première étape consiste à créer le projet d’application. Vous utiliserez ce projet pour générer l’application qui affiche votre contrôle personnalisé.
 
-1. Créez un projet **Application Windows Forms** et nommez-le **DemoCalculatorTest** .
+1. Créez un projet **Application Windows Forms** et nommez-le **DemoCalculatorTest**.
 
-2. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le projet **DemoCalculatorTest** , puis sélectionnez **Ajouter une référence** pour ouvrir la boîte de dialogue **Ajouter une référence** .
+2. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le projet **DemoCalculatorTest** , puis sélectionnez **Ajouter une référence** pour ouvrir la boîte de dialogue **Ajouter une référence**.
 
 3. Accédez à l’onglet **projets** , puis sélectionnez le projet DemoCalculatorLib pour ajouter la référence au projet de test.
 
-4. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur **DemoCalculatorTest** , puis sélectionnez **Définir comme projet de démarrage** .
+4. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur **DemoCalculatorTest** , puis sélectionnez **Définir comme projet de démarrage**.
 
-5. Dans le Concepteur Windows Forms, augmentez la taille du formulaire à environ **700 x 500** .
+5. Dans le Concepteur Windows Forms, augmentez la taille du formulaire à environ **700 x 500**.
 
 ### <a name="use-the-control-in-the-forms-layout"></a>Utiliser le contrôle dans la disposition du formulaire
 
 Pour utiliser le contrôle DemoCalculator dans une application, vous devez le placer sur un formulaire.
 
-1. Dans **Boîte à outils** , développez le nœud **Composants DemoCalculatorLib** .
+1. Dans **Boîte à outils** , développez le nœud **Composants DemoCalculatorLib**.
 
 2. Faites glisser le contrôle **DemoCalculator** de **Boîte à outils** vers votre formulaire. Déplacez le contrôle dans le coin supérieur gauche du formulaire. Lorsque le contrôle est proche des bordures du formulaire, des *lignes d’alignement* s’affichent. Les lignes d’alignement indiquent la distance entre la propriété `Padding` du formulaire et la propriété `Margin` du contrôle. Positionnez le contrôle à l’emplacement indiqué par les lignes d’alignement.
 
@@ -299,11 +299,11 @@ Pour utiliser le contrôle DemoCalculator dans une application, vous devez le pl
 
 4. Déplacez le contrôle `Button` autour du contrôle DemoCalculator et observez où les lignes d’alignement s’affichent. Vous pouvez aligner vos contrôles avec précision et en toute simplicité à l’aide de cette fonctionnalité. Supprimez le contrôle `Button` lorsque vous avez terminé.
 
-5. Cliquez avec le bouton droit sur le contrôle DemoCalculator, puis sélectionnez **Propriétés** .
+5. Cliquez avec le bouton droit sur le contrôle DemoCalculator, puis sélectionnez **Propriétés**.
 
 6. Remplacez la valeur de la propriété `Dock` par `Fill`.
 
-7. Sélectionnez le formulaire, puis développez le nœud de la propriété `Padding`. Remplacez la valeur de **Tous** par **20** .
+7. Sélectionnez le formulaire, puis développez le nœud de la propriété `Padding`. Remplacez la valeur de **Tous** par **20**.
 
    La taille du contrôle DemoCalculator est réduite pour s’adapter à la nouvelle valeur `Padding` du formulaire.
 

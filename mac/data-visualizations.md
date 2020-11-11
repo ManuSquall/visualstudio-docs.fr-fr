@@ -3,28 +3,28 @@ title: Débogage - Visualisations des données
 description: Le débogage est une partie courante et nécessaire de la programmation. Visual Studio pour Mac contient une suite complète de fonctionnalités facilitant le débogage. Cet article présente les différentes visualisations des données qui peuvent être affichées lors de l’inspection d’objets dans le débogueur.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691729"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493242"
 ---
 # <a name="data-visualizations"></a>Visualisations de données
 
 Visual Studio pour Mac offre la prise en charge de l’interface utilisateur du débogueur, qui permet des visualisations des valeurs d’une variable, d’un champ ou d’une propriété pendant le débogage. Ces visualiseurs de données montrent une version étendue des données et permettent aux développeurs d’inspecter des structures connues, par exemple en affichant la couleur d’un struct.
 
-Les visualiseurs du panneau de débogage **Local** peuvent être affichés en cliquant sur l’icône d’aperçu qui apparaît à droite de la valeur quand l’utilisateur pointe sur la ligne :
+Les visualiseurs de la fenêtre  **variables locales** de débogage peuvent être affichés en cliquant sur l’icône d’aperçu qui apparaît à droite de la valeur lorsque l’utilisateur pointe sur la ligne :
 
-![Panneau Local](media/data-visualizations-image9.png)
+![Variables locales (fenêtre)](media/data-visualizations-image9.png)
 
 La liste ci-dessous présente la plupart des nouvelles visualisations disponibles lors du débogage dans Visual Studio pour Mac.
 
 ## <a name="point"></a>Point
-Une structure Point/PointF, ou CGPoint dans iOS et Mac, est restituée sous la forme d’un tuple montrant les valeurs X et Y dans le panneau de débogage :
+Un point/PointF, ou CGPoint dans iOS et Mac, s’affiche sous la forme d’un tuple qui affiche les valeurs X et Y dans les fenêtres de débogage :
 
 ![Visualisation d’une structure Point](media/data-visualizations-image10.png)
 
@@ -90,7 +90,7 @@ Voici quelques autres types qui ont leur propre visualiseur :
 
 * **Primitives**
   * Ceci affiche la valeur brute du type primitif.
-* **Énumération**
+* **Variables**
   * Ceci affiche la valeur du champ sans le qualificateur de type enum.
 * **Passent**
   * Affiché dans le format (,)

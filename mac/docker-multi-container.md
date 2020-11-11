@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f2c5154e2f35c57b46817c36ea669c6a9d0f5797
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583994"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493541"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Créer une application multiconteneur avec Docker Compose
 
@@ -27,8 +27,8 @@ Dans ce didacticiel, vous allez apprendre à gérer plusieurs conteneurs et comm
 1. Créez une solution en accédant à **Fichier > Nouvelle solution**.
 1. Sous **Web et Console > application,** choisissez le modèle **application Web** : ![ créer une application ASP.net](media/docker-quickstart-1.png)
 1. Sélectionnez le framework cible. Dans cet exemple, nous allons utiliser .NET Core 3,1 : définir la version cible de .NET ![ Framework](media/docker-quickstart-2.png)
-1. Entrez les détails du projet, comme le nom du projet (_DockerDemoFrontEnd_ dans cet exemple) et le nom de la solution (_DockerDemo_). Le projet créé contient tous les éléments de base pour générer et exécuter un site web ASP.NET Core.
-1. Dans le Panneau Solutions, cliquez avec le bouton droit sur le projet DockerDemoFrontEnd et sélectionnez **ajouter > ajouter prise en charge**de l’ancrage : ![ Ajouter la prise en charge de l’ancrage](media/docker-quickstart-3.png)
+1. Entrez les détails du projet, comme le nom du projet ( _DockerDemoFrontEnd_ dans cet exemple) et le nom de la solution ( _DockerDemo_ ). Le projet créé contient tous les éléments de base pour générer et exécuter un site web ASP.NET Core.
+1. Dans la fenêtre de la solution, cliquez avec le bouton droit sur le projet DockerDemoFrontEnd et sélectionnez **ajouter > ajouter la prise en charge** de l’ancrage : ![ Ajouter la prise en charge de l’ancrage](media/docker-quickstart-3.png)
 
 Visual Studio pour Mac ajoute automatiquement un nouveau projet appelé **docker-compose** à votre solution et un **Dockerfile** à votre projet existant.
 
@@ -39,10 +39,10 @@ Ensuite, nous allons créer un deuxième projet qui servira d’API principale. 
 1. Ajoutez un nouveau projet à la solution existante en cliquant sur la solution et en choisissant **Ajouter > Ajouter un nouveau projet**.
 1. Sous **Web et Console > application,** choisissez le modèle **API** .
 1. Sélectionnez le framework cible. Dans cet exemple, nous allons utiliser .NET Core 3,1.
-1. Entrez les détails du projet, tels que le nom du projet (_MyWebAPI_ dans cet exemple).
-1. Une fois créé, accédez au Panneau Solutions puis cliquez avec le bouton droit sur le projet MyWebAPI et sélectionnez **ajouter > ajouter la prise en charge**de l’ancrage.
+1. Entrez les détails du projet, tels que le nom du projet ( _MyWebAPI_ dans cet exemple).
+1. Une fois créé, accédez à la fenêtre de la solution et cliquez avec le bouton droit sur le projet MyWebAPI, puis sélectionnez **ajouter > ajouter la prise en charge** de l’ancrage.
 
-Le fichier **docker-compose.yml** dans le projet **docker-compose** sera automatiquement mis à jour pour inclure le projet d’API en plus du projet d’application web existant. Lorsque nous générons et exécutons le projet **docker-compose**, chacun de ces projets est déployé sur un conteneur Docker distinct.
+Le fichier **docker-compose.yml** dans le projet **docker-compose** sera automatiquement mis à jour pour inclure le projet d’API en plus du projet d’application web existant. Lorsque nous générons et exécutons le projet **docker-compose** , chacun de ces projets est déployé sur un conteneur Docker distinct.
 
 ```yaml
 version: '3.4'
@@ -86,7 +86,7 @@ Nous avons maintenant deux projets ASP.NET dans notre solution, et les deux sont
     > [!NOTE]
     > Dans le code de production, vous ne devez pas supprimer `HttpClient` après chaque demande. Pour connaître les meilleures pratiques, consultez [utiliser HttpClientFactory pour implémenter des demandes http résilientes](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
-1. Dans le fichier *Index.cshtml*, ajoutez une ligne pour afficher `ViewData["Message"]` afin que le fichier ressemble à ce qui suit :
+1. Dans le fichier *Index.cshtml* , ajoutez une ligne pour afficher `ViewData["Message"]` afin que le fichier ressemble à ce qui suit :
 
       ```cshtml
       @page
@@ -102,7 +102,7 @@ Nous avons maintenant deux projets ASP.NET dans notre solution, et les deux sont
       </div>
       ```
   
-1. Dans les projets de serveur frontal et d’API Web, commentez l’appel à [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) dans la `Configure` méthode de *Startup.cs*, car cet exemple de code utilise http, et non HTTPS, pour appeler l’API Web.
+1. Dans les projets de serveur frontal et d’API Web, commentez l’appel à [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) dans la `Configure` méthode de *Startup.cs* , car cet exemple de code utilise http, et non HTTPS, pour appeler l’API Web.
 
       ```csharp
                   //app.UseHttpsRedirection();

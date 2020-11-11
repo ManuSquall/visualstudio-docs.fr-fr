@@ -7,16 +7,16 @@ ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
-ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939075"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493255"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Débogage avec Visual Studio pour Mac
 
-Visual Studio pour Mac offre aux débogueurs la prise en charge des applications .Net Core, .NET Framework, Unity et Xamarin.
+Visual Studio pour Mac offre aux débogueurs la prise en charge des applications .NET Core, .NET Framework, Unity et Xamarin.
 
 Visual Studio pour Mac utilise le [*débogueur Mono Soft*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), qui est implémenté dans le runtime Mono, ce qui permet de Visual Studio pour Mac de déboguer du code managé sur toutes les plateformes.
 
@@ -40,7 +40,7 @@ Pour définir un point d’arrêt dans votre IDE, cliquez sur la zone de marge d
 
 ![Définition d’un point d’arrêt dans la marge](media/debugging-image0.png)
 
-Vous pouvez afficher tous les points d’arrêt qui ont été définis dans votre code en accédant au panneau  **points d’arrêt**:
+Vous pouvez afficher tous les points d’arrêt qui ont été définis dans votre code en accédant à la  **fenêtre points d’arrêt** :
 
 ![Liste des points d’arrêt](media/debugging-image0a.png)
 
@@ -61,15 +61,15 @@ Des outils de débogage, comme celui utilisé pour inspecter les valeurs des obj
 
 ## <a name="conditional-breakpoints"></a>Points d’arrêt conditionnels
 
-Vous pouvez également définir des règles spécifiant les circonstances dans lesquelles un point d’arrêt doit se produire : on parle alors de l’ajout d’un *point d’arrêt conditionnel*. Pour définir un point d’arrêt conditionnel, accédez à la **fenêtre Propriétés de point d’arrêt**, ce que vous pouvez faire de deux façons :
+Vous pouvez également définir des règles spécifiant les circonstances dans lesquelles un point d’arrêt doit se produire : on parle alors de l’ajout d’un *point d’arrêt conditionnel*. Pour définir un point d’arrêt conditionnel, accédez à la **fenêtre Propriétés de point d’arrêt** , ce que vous pouvez faire de deux façons :
 
 * Pour ajouter un nouveau point d’arrêt conditionnel, cliquez avec le bouton droit sur la marge de l’éditeur, à gauche du numéro de la ligne de code pour laquelle vous voulez définir un point d’arrêt, et sélectionnez Nouveau point d’arrêt :
 
  ![Menu contextuel Point d'arrêt](media/debugging-image4.png)
 
-* Pour ajouter une condition à un point d’arrêt existant, cliquez sur le point d’arrêt et sélectionnez **Propriétés de point d’arrêt** ou, dans le **panneau Points d’arrêt**, sélectionnez le bouton Modifier le point d’arrêt, comme illustré ci-dessous :
+* Pour ajouter une condition à un point d’arrêt existant, cliquez avec le bouton droit sur le point d’arrêt et sélectionnez  **Propriétés du point** d’arrêt, ou dans la  **fenêtre points** d’arrêt, sélectionnez le bouton modifier le point d’arrêt illustré ci-dessous :
 
- ![Modifier un point d’arrêt existant dans le panneau Points d’arrêt](media/debugging-image5.png)
+ ![Modifier le point d’arrêt existant dans la fenêtre points d’arrêt](media/debugging-image5.png)
 
 Vous pouvez ensuite entrer la condition selon laquelle vous voulez que le point d’arrêt se produise :
 
@@ -83,7 +83,7 @@ Quand un point d’arrêt a été atteint, les outils de débogage vous permette
 
 Voici les quatre boutons :
 
-* **Lecture** : commence l’exécution du code, jusqu’au point d’arrêt suivant.
+* **Lecture**  : commence l’exécution du code, jusqu’au point d’arrêt suivant.
 * **Pas à pas principal** : cette opération exécute la ligne de code suivante. Si la ligne suivante est un appel de fonction, pas à pas principal exécute la fonction et s’arrête à la ligne de code suivante *après* la fonction.
 * **Pas à pas** détaillé : cette opération exécute également la ligne de code suivante. Si la ligne suivante est un appel de fonction, Pas à pas détaillé s’arrête à la première ligne de la fonction, ce qui vous permet de continuer le débogage ligne par ligne de la fonction. Si la ligne suivante n’est pas une fonction, il se comporte comme Pas à pas principal.
 * **Pas à pas sortant** : cette opération retourne à la ligne où la fonction active a été appelée.
@@ -103,7 +103,7 @@ Les produits Xamarin sont livrés avec le code source pour les bibliothèques de
 
 Comme cette fonctionnalité consomme plus de mémoire pendant le débogage, elle est désactivée par défaut.
 
-Pour activer cette fonctionnalité, accédez à  **Visual Studio pour Mac > préférences > débogueur** et assurez-vous que l’option «**pas à pas détaillé du code externe**» est **sélectionnée**, comme illustré ci-dessous :
+Pour activer cette fonctionnalité, accédez à  **Visual Studio pour Mac > préférences > débogueur** et assurez-vous que l’option « **pas à pas détaillé du code externe** » est **sélectionnée** , comme illustré ci-dessous :
 
 ![Pas à pas détaillé de l’option de code externe](media/debugging-image8.png)
 

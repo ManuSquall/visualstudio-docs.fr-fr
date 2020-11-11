@@ -4,14 +4,14 @@ description: Ce document fournit une vue d’ensemble des projets et des solutio
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/09/2020
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: c52b8513937505b40d17f7cd9fc05d9cf6a47941
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284302"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493398"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Projets et solutions dans Visual Studio pour Mac
 
@@ -26,15 +26,15 @@ Quand vous créez une application, un site web, etc. dans Visual Studio pour Mac
 
 Un projet est défini par un fichier (par exemple, `.csproj` pour les projets C#) contenant du code xml qui définit la hiérarchie des dossiers et fichiers, les chemins des fichiers et les paramètres propres au projet, tels que les paramètres de build.
 
-Quand un projet est chargé par Visual Studio pour Mac, le Panneau Solutions utilise le fichier projet pour afficher les fichiers et les dossiers dans votre projet. Pendant la compilation, MSBuild lit les paramètres dans le fichier projet pour créer l’exécutable.
+Quand un projet est chargé par Visual Studio pour Mac, la fenêtre de solution utilise le fichier projet pour afficher les fichiers et les dossiers de votre projet. Pendant la compilation, MSBuild lit les paramètres dans le fichier projet pour créer l’exécutable.
 
 ## <a name="solutions"></a>Solutions
 
 Une *solution* est un conteneur qui regroupe un ou plusieurs projets connexes. Les solutions sont décrites par un fichier texte (extension `.sln`) qui a son propre format unique. Il n’est pas destiné à être modifié manuellement.
 
-## <a name="managing-projects-in-the-solution-pad"></a>Gestion des projets dans le Panneau Solutions
+## <a name="managing-projects-in-the-solution-window"></a>Gestion des projets dans la fenêtre de la solution
 
-Après avoir créé ou chargé un projet, vous pouvez utiliser le Panneau Solutions pour afficher et gérer le projet ou la solution et les fichiers qui s’y trouvent. L’illustration suivante montre le Panneau Solutions avec une solution .NET Core qui contient deux projets :
+Une fois qu’un projet a été créé ou chargé, vous pouvez utiliser la fenêtre solution pour afficher et gérer le projet ou la solution, ainsi que les fichiers qu’il contient. L’illustration suivante montre la fenêtre de solution avec une solution .NET Core qui contient deux projets :
 
 ![Exemple de solution avec plusieurs projets](media/solution-example.png)
 

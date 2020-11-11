@@ -3,15 +3,15 @@ title: Personnalisation de l’IDE
 description: Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cet article explore les différentes façons dont les Visual Studio pour Mac peuvent être adaptées à vos besoins.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 11/06/2020
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05fd1091a279a085c2a727eb36cbc56fcb201057
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801774"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493298"
 ---
 # <a name="customizing-the-ide"></a>Personnalisation de l’IDE
 
@@ -64,7 +64,7 @@ Les champs **Nom** et **E-mail** sont utilisés dans les validations effectuées
 
 Les combinaisons de touches, ou raccourcis clavier, vous permettent d’adapter votre environnement de développement afin de pouvoir vous déplacer plus efficacement tout au long de Visual Studio pour Mac. Il fournit des combinaisons de touches courantes pour de nombreux IDE répandus, tels que Visual Studio (sur Windows), ReSharper, Visual Studio Code et Xcode.
 
-Les combinaisons de touches peuvent être définies en accédant à **Visual Studio > préférences > les combinaisons de touches de l’environnement >**, comme illustré par l’image suivante :
+Les combinaisons de touches peuvent être définies en accédant à **Visual Studio > préférences > les combinaisons de touches de l’environnement >** , comme illustré par l’image suivante :
 
 ![Définir des combinaisons de touches](media/customizing-the-ide-image10a.png)
 
@@ -76,43 +76,41 @@ Ces liaisons peuvent également être définies lors de la configuration initial
 
 ## <a name="workspace-layout"></a>Disposition de l'espace de travail
 
-L’espace de travail de Visual Studio pour Mac se compose d’une zone de document principale (normalement l’éditeur, l’aire du concepteur ou le fichier d’options), entourée de *panneaux* complémentaires, qui contiennent des informations utiles pour l’accès et la gestion des fichiers d’application, pour le test et pour le débogage.
+L’espace de travail de Visual Studio pour Mac se compose d’une zone de document principale (normalement l’éditeur, l’aire du concepteur ou le fichier d’options), entourée de *fenêtres outil* complémentaires qui contiennent des informations utiles pour l’accès et la gestion des fichiers d’application, des tests et du débogage.
 
  ![Disposition de l'espace de travail](media/customizing-the-ide-image1a.png)
 
-### <a name="viewing-and-arranging-pads"></a>Affichage et organisation des panneaux
+### <a name="viewing-and-arranging-tool-windows"></a>Affichage et Organisation des fenêtres outil
 
-Quand vous ouvrez une nouvelle solution ou un nouveau fichier dans Visual Studio pour Mac, vous pouvez noter la présence de certains *panneaux* dans l’espace de travail, notamment le panneau Solution, Structure du document et Erreurs :
+Lorsque vous ouvrez une nouvelle solution ou un nouveau fichier dans Visual Studio pour Mac, vous remarquerez certaines *fenêtres outil* dans l’espace de travail, notamment la fenêtre de solution, la structure du document et les erreurs :
 
-![Panneaux Solution](media/customizing-the-ide-image2a.png)
+![Fenêtre Outil](media/customizing-the-ide-image2a.png)
 
-Visual Studio pour Mac fournit des panneaux contenant des informations supplémentaires, des outils et des aides à la navigation, tous accessibles en sélectionnant l’élément de menu **Afficher > Panneaux** et en choisissant un panneau à ajouter :
+Visual Studio pour Mac fournit des fenêtres outil contenant des informations supplémentaires, des outils et des aides à la navigation, accessibles en parcourant l’élément de menu **affichage** et en sélectionnant une fenêtre outil pour l’ajouter :
 
-![Sélectionner un nouveau panneau](media/customizing-the-ide-image3a.png)
+![Sélectionner une nouvelle fenêtre d’outil](media/customizing-the-ide-image3a.png)
 
-Les panneaux peuvent aussi être ouverts automatiquement par différentes commandes, comme la commande **Rechercher dans les fichiers** (Maj+Cmd+F), qui ouvre un panneau flottant avec les résultats de la recherche.
+Les fenêtres Outil peuvent également être ouvertes automatiquement par diverses commandes, telles que la commande **Rechercher dans les fichiers** (Maj + Cmd + F), qui ouvre une fenêtre détachée des résultats de la recherche.
 
-Les panneaux peuvent être déplacés et organisés tout au long de votre flux de travail, de la façon la plus pratique pour vous. Par exemple, ils peuvent être ancrés sur n’importe quel côté de l’éditeur de document, adjacents à un autre panneau, au-dessus ou en dessous d’un autre panneau ou sous la forme d’un ensemble de panneaux à onglets qui vous permettent de passer rapidement de l’un à l’autre.
+Les fenêtres Outil peuvent être déplacées et organisées dans votre flux de travail de la manière la plus utile. Par exemple, ils peuvent être ancrés de n’importe quel côté de l’éditeur de document, adjacents à une autre fenêtre outil, au-dessus ou en dessous d’une autre fenêtre, ou sous la forme d’un ensemble de fenêtres avec onglets vous permettant de basculer rapidement entre eux.
 
-Pour les panneaux fréquemment utilisés, vous pouvez également les détacher entièrement de la fenêtre de Visual Studio pour Mac et créer une fenêtre distincte pour ces panneaux.
+Pour les fenêtres outil les plus fréquemment utilisées, vous pouvez également les détacher complètement de la fenêtre de Visual Studio pour Mac et dans leur propre nouvelle fenêtre.
 
-Les panneaux peuvent être masqués et fermés grâce aux commandes de bascule situées dans le coin supérieur droit de chaque panneau :
+Les fenêtres Outil peuvent être épinglées et fermées par les contrôles dans le coin supérieur droit de chaque fenêtre :
 
-![Masquage et fermeture des panneaux](media/customizing-the-ide-image5a.png)
+:::image type="content" source="media/customizing-the-ide-image5a.png" alt-text="Utilisation de contrôles pour épingler ou fermer des fenêtres outil":::
 
-Les panneaux masqués automatiquement sont ancrés sur les côtés de l’espace de travail, ce qui les rend facilement accessibles quand ils sont nécessaires. Si vous passez le pointeur de la souris sur le panneau, il s’affiche à nouveau. Dès que le panneau n’a plus le focus de la souris et du clavier, il est masqué.
+Les fenêtres épinglées sont ancrées aux côtés de l’espace de travail et restent ouvertes pour un accès plus rapide lorsque vous en avez besoin. Les fenêtres désépinglées sont ancrées, mais elles ne s’affichent pas tant que vous n’avez pas pointé sur l’onglet de la fenêtre avec la souris ou lorsque vous vous concentrez avec le clavier. elles peuvent être masquées lorsque la souris et le focus clavier les laissent.
 
 ### <a name="organizing-layouts"></a>Organisation des dispositions
 
-Les panneaux qui sont affichés à un moment donné dépendent du contexte actif. Par exemple, quand vous utilisez le concepteur visuel, les panneaux des outils et de la grille de propriétés sont les plus importants ; lors du débogage, il est pratique d’avoir les panneaux du débogueur pour afficher la pile et les variables locales.
+Les fenêtres d’outils qui s’affichent à tout moment dépendent du contexte actuel. Par exemple, lors de l’utilisation du concepteur visuel, les fenêtres boîte à outils et grille des propriétés sont les plus importantes. lors du débogage, il est utile de disposer des fenêtres du débogueur pour afficher la pile et les variables locales.
 
-L’état des panneaux ouverts est représenté par une *disposition*. Vous pouvez changer les dispositions manuellement via le menu Affichage, comme illustré dans l’image suivante, ou elles changent elles-mêmes automatiquement quand vous exécutez une action, comme déboguer ou ouvrir un fichier Storyboard :
+L’état des fenêtres outil ouvertes est représenté par une *disposition*. Les dispositions peuvent être basculées manuellement via le menu Affichage, comme illustré dans l’image suivante, ou elles sont basculées automatiquement lorsque vous exécutez une action, telle que le débogage, ou l’ouverture d’une table de montage séquentiel :
 
 ![Sélection de nouvelles dispositions](media/customizing-the-ide-image6b.png)
 
-Il n’existe qu’une seule disposition active à un moment donné, et toute modification apportée à une disposition, comme ajouter ou repositionner un panneau, change seulement la disposition active. Quand vous fermez Visual Studio pour Mac, les modifications que vous avez apportées ne seront pas enregistrées.
-
-Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu **Affichage > Enregistrer la disposition active**. Cette commande ajoute la disposition actuelle au menu pour que vous puissiez la sélectionner à tout moment :
+Il est possible de créer une disposition à l’aide de l’option **afficher le > > enregistrer la disposition actuelle..** .. Cette commande ajoute la disposition actuelle au menu pour que vous puissiez la sélectionner à tout moment :
 
 ![Enregistrer la disposition active](media/customizing-the-ide-image6a.png)
 
@@ -120,7 +118,7 @@ Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu
 
 Visual Studio pour Mac vous permet d’ouvrir des éditeurs de texte côte à côte, ou d’avoir un éditeur dans une fenêtre flottante détachée.
 
-Le mode à deux colonnes peut être activé via l’élément de menu Affichage en sélectionnant Afficher les colonnes de l' **éditeur de > > 2 colonnes**, ou en faisant glisser l’onglet d’un éditeur vers l’un des bords de la zone de l’éditeur :
+Le mode à deux colonnes peut être activé via l’élément de menu Affichage en sélectionnant Afficher les colonnes de l' **éditeur de > > 2 colonnes** , ou en faisant glisser l’onglet d’un éditeur vers l’un des bords de la zone de l’éditeur :
 
 ![Mode deux colonnes côte à côte](media/customizing-the-ide-sbs.png)
 

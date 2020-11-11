@@ -1,24 +1,24 @@
 ---
 title: Gestion des propriétés des projets et des solutions
-description: Cet article décrit comment gérer les propriétés des projets et des solutions dans Visual Studio pour Mac
+description: Cet article explique comment gérer les propriétés des projets et des solutions dans Visual Studio pour Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3277df3be22658acf85a4f0607ed9ad0308b5c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692881"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492995"
 ---
 # <a name="managing-project-and-solution-properties"></a>Gestion des propriétés des projets et des solutions
 
 ## <a name="project-options"></a>Options de projet
 
-Les options de projet sont spécifiques à chaque projet, et affectent la façon dont le projet est écrit, généré et exécuté. Ceci contraste avec les préférences de Visual Studio pour Mac (qui définissent des options spécifiques à l’utilisateur) et avec les options des solutions (qui définissent des options pour l’ensemble de la solution). Les options de projet sont stockées dans le fichier projet (.csproj), de façon que les autres développeurs puissent créer et exécuter le projet correctement. Le fait de disposer d’options de projet spécifiques permet à de nombreux développeurs de travailler sur le même document sans compromettre la mise en forme du fichier.
+Les options de projet sont spécifiques à chaque projet, et affectent la façon dont le projet est écrit, généré et exécuté. Contrairement à Visual Studio pour Mac préférences qui sont des paramètres spécifiques à l’utilisateur, les options de projet sont stockées dans le fichier projet (. csproj), afin que d’autres développeurs puissent générer et exécuter le projet correctement. Le fait de disposer d’options de projet spécifiques permet à de nombreux développeurs de travailler sur le même document sans compromettre la mise en forme du fichier.
 
-Pour ouvrir les options de projet dans Visual Studio pour Mac, double-cliquez sur le nom du projet, ou cliquez avec le bouton droit afin d’ouvrir le menu contextuel, puis sélectionnez **Options** :
+Pour ouvrir les options de projet dans Visual Studio pour Mac, double-cliquez sur le nom du projet, ou cliquez avec le bouton droit afin d’ouvrir le menu contextuel, puis sélectionnez **Options**  :
 
 ![Option dans le menu contextuel](media/projects-and-solutions-image2.png)
 
@@ -26,11 +26,11 @@ Les options modifiables incluent les options utilisées pour générer, exécute
 
 Les options de projet sont organisées en cinq catégories différentes :
 
-* **Général** : les informations du projet, comme le nom, la description et l’espace de noms par défaut, sont définies ici, ainsi que l’emplacement du projet.
-* **Build** : ces options permettent aux développeurs de définir ou de modifier des profils PCL pour les bibliothèques de classes portables. Elles permettent également de définir des commandes, des configurations et des options de compilateur personnalisées. Le chemin de sortie et le nom des assemblys peuvent également être définis ici.
-* **Exécuter** : vous permet de créer des configurations de séries de tests personnalisées par projet.
-* **Code source** : vous permet de contrôler la mise en forme de nombreux types de fichiers différents et les conventions de nommage. Vous pouvez également définir ici les stratégies de nommage et les styles d’en-tête par défaut.
-* **Gestion de version** : vous permet de modifier le style du message de validation lors de l’utilisation de la gestion de versions avec votre projet.
+* **Général**  : les informations du projet, comme le nom, la description et l’espace de noms par défaut, sont définies ici, ainsi que l’emplacement du projet.
+* **Build** : utilisé pour définir ou modifier des profils PCL pour les bibliothèques de classes portables. Elles permettent également de définir des commandes, des configurations et des options de compilateur personnalisées. Le chemin de sortie et le nom des assemblys peuvent également être définis ici.
+* **Exécuter** : permet de créer des configurations d’exécution personnalisées pour chaque projet.
+* **Code source** : contrôle la mise en forme de nombreux types de fichiers et conventions de nommage différents. Vous pouvez également définir ici les stratégies de nommage et les styles d’en-tête par défaut.
+* **Contrôle de version** -options pour définir le style des messages de validation lors de l’utilisation du contrôle de version avec votre projet.
 
 Chaque projet peut contenir des options de projet spécifiques qui dépendent de la plateforme. Par exemple, un projet Xamarin.Android, comme celui qui est illustré dans l’image suivante, a des options relatives à la build Android (par exemple les options d’éditeur de liens), et à l’application (par exemple les autorisations) :
 
@@ -42,7 +42,7 @@ Xamarin.iOS contient des options relatives à la signature des bundles, comme le
 
 ## <a name="solution-options"></a>Options de la solution
 
-Les options de solution sont similaires aux options de projet, mais elles couvrent les solutions entières. Elles permettent de définir les informations sur l’auteur, les paramètres de génération, les styles de mise en forme du code et la gestion de versions, et d’affecter le projet de démarrage dans la solution.  La boîte de dialogue Options de la solution est accessible à partir de l’élément de menu **Projet > Options de la solution**, à partir de l’élément de menu contextuel **Options** sur la solution dans le panneau Solution, ou en double-cliquant sur la solution dans le panneau Solution :
+Les options de solution sont similaires aux options de projet, mais elles couvrent les solutions entières. Elles permettent de définir les informations sur l’auteur, les paramètres de génération, les styles de mise en forme du code et la gestion de versions, et d’affecter le projet de démarrage dans la solution.  Vous pouvez accéder à la boîte de dialogue Options de la solution à partir de l’élément de menu **projet > options** de la solution, à partir de l’élément de menu contextuel **options** de la solution dans la fenêtre de la solution, ou en double-cliquant sur la solution dans la fenêtre de la solution :
 
 ![Options de la solution](media/projects-and-solutions-image7.png)
 

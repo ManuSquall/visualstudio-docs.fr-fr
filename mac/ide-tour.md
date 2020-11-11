@@ -3,15 +3,15 @@ title: Visite guidée de Visual Studio pour Mac
 description: Visual Studio pour Mac fournit un environnement de développement intégré pour créer des applications .NET sur macOS, notamment des sites web ASP.NET Core, ainsi que des projets Xamarin pour iOS, Android, Mac et Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 07/03/2020
+ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584007"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493268"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visite guidée de Visual Studio 2019 pour Mac
 
@@ -58,11 +58,11 @@ L’image ci-dessous montre Visual Studio pour Mac avec une application chargée
 
 Les sections suivantes fournissent une vue d’ensemble des zones principales de Visual Studio pour Mac.
 
-## <a name="solution-pad"></a>Panneau Solutions
+## <a name="solution-window"></a>Fenêtre de solution
 
-Le panneau Solution organise le ou les projets dans une solution :
+La fenêtre de solution organise le ou les projets dans une solution :
 
-![Projets organisés dans le panneau Solution](media/ide-tour-image18.png)
+![Projets organisés dans la fenêtre de la solution](media/ide-tour-image18.png)
 
 C’est ici que le code source, les ressources, l’interface utilisateur et les dépendances sont organisés en projets spécifiques à une plateforme.
 
@@ -72,9 +72,9 @@ Pour plus d’informations sur l’utilisation de projets et de solutions dans V
 
 Les références d’assemblys pour chaque projet sont disponibles dans le dossier Références :
 
-![Dossier Références dans le panneau Solution](media/ide-tour-image19.png)
+![Dossier références dans la fenêtre de la solution](media/ide-tour-image19.png)
 
-Vous ajoutez des références en utilisant la boîte de dialogue **Modifier les références**, que vous pouvez afficher en double-cliquant sur le dossier Références ou en sélectionnant **Modifier les références** dans les actions de son menu contextuel :
+Vous ajoutez des références en utilisant la boîte de dialogue **Modifier les références** , que vous pouvez afficher en double-cliquant sur le dossier Références ou en sélectionnant **Modifier les références** dans les actions de son menu contextuel :
 
 ![Boîte de dialogue Modifier les références](media/ide-tour-image20.png)
 
@@ -86,7 +86,7 @@ Toutes les dépendances externes utilisées dans votre application sont stockée
 
 NuGet est le gestionnaire de packages le plus répandu pour le développement .NET. Grâce à la prise en charge de NuGet par Visual Studio, vous pouvez facilement rechercher et ajouter des packages à votre projet d’application.
 
-Pour ajouter une dépendance à votre application, cliquez avec le bouton droit sur le dossier Dépendances / Packages, puis sélectionnez **Ajouter des packages** :
+Pour ajouter une dépendance à votre application, cliquez avec le bouton droit sur le dossier Dépendances / Packages, puis sélectionnez **Ajouter des packages**  :
 
 ![Ajouter un package NuGet](media/ide-tour-image21.png)
 
@@ -135,9 +135,9 @@ Visual Studio pour Mac s’intègre aux systèmes de contrôle du code source Gi
 
 ![Nom de la branche pour indiquer un projet soumis au contrôle du code source](media/ide-tour-image22.png)
 
-Les fichiers comportant des modifications non validées sont indiqués par une annotation sur leur icône dans le Panneau Solution, comme l’illustre l’image suivante :
+Les fichiers avec des modifications non validées comportent une annotation sur leurs icônes dans la fenêtre de la solution, comme illustré dans l’image suivante :
 
-![Fichiers non validés dans le panneau Solution](media/ide-tour-image23.png)
+![Fichiers non validés dans la fenêtre de la solution](media/ide-tour-image23.png)
 
 Pour plus d’informations sur l’utilisation de la gestion de versions dans Visual Studio, consultez l’article [Gestion de versions](./version-control.md).
 

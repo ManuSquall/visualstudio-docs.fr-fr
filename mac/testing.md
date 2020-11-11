@@ -1,18 +1,19 @@
 ---
 title: Outils de test Visual Studio pour Mac
-ms.date: 08/03/2020
+description: Création et exécution de tests à l’aide de Visual Studio pour Mac.
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580959"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493385"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Outils de test dans Visual Studio pour Mac
 
@@ -27,7 +28,7 @@ Pour commencer à tester, vous pouvez créer un projet de test dans votre soluti
 > Pour plus d’informations sur les tests unitaires de vos applications .NET Core et la sélection d’infrastructures de tests unitaires, consultez la documentation [sur les tests unitaires dans .net Core et .NET standard](/dotnet/core/testing/?pivots=xunit) .
 
 ## <a name="running-tests"></a>Exécution des tests
-La fenêtre **tests unitaires** est utilisée pour exécuter des tests unitaires et est ouverte à l’aide du menu **affichage > Pad > des tests unitaires** . Les tests unitaires de votre solution sont automatiquement détectés et affichés dans cette fenêtre, où vous pouvez exécuter tous les tests ou un ensemble de tests que vous avez sélectionnés.
+La fenêtre **tests unitaires** est utilisée pour exécuter des tests unitaires et est ouverte à l’aide du menu **affichage > tests** . Les tests unitaires de votre solution sont automatiquement détectés et affichés dans cette fenêtre, où vous pouvez exécuter tous les tests ou un ensemble de tests que vous avez sélectionnés.
 
 ![Fenêtre de test présentant une liste de tests unitaires et une barre d’outils pour l’exécution ou l’arrêt des tests.](media/test-window.PNG)
 
