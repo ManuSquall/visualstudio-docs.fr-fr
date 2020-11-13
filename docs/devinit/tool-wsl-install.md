@@ -1,7 +1,7 @@
 ---
 title: wsl-install
 description: devinit outil WSL-install.
-ms.date: 08/28/2020
+ms.date: 11/10/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,20 +11,21 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3283b6e90cb2bced27f09b8c4491992fb5ac315f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab63b5feb8c71659b83e824f104dd7bbcbb744f9
+ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400177"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94567012"
 ---
 # <a name="wsl-install"></a>wsl-install
 
 L' `wsl-install` outil permet d’installer Linux distributions pour le [sous-système Windows pour Linux](/windows/wsl/) (WSL).
 
-L' `wsl-install` outil requiert que WSL 2 soit déjà activé sur Windows. Si, pour une raison quelconque, WSL2 n’est pas activé, vous pouvez activer WSL2 à l’aide de l’outil [WindowsFeature-Enable](tool-windowsfeature-enable.md) et du nom de la fonctionnalité `Microsoft-Windows-Subsystem-Linux` .
+> [!IMPORTANT]
+> L' `wsl-install` outil requiert que WSL 2 soit déjà activé sur Windows. Si, pour une raison quelconque, WSL 2 n’est pas activé, vous pouvez suivre la [documentation d’installation de WSL](https://docs.microsoft.com/windows/wsl/install-win10). Vous pouvez également utiliser l’outil [WindowsFeature-Enable](tool-windowsfeature-enable.md) pour activer les fonctionnalités Windows nécessaires.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 

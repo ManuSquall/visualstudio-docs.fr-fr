@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Empaqueter une application de bureau pour Microsoft Store
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Déployer une application de bureau avec ClickOnce
+        - name: Déployer une application Windows .NET avec ClickOnce
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: Déployer une application de bureau .NET Framework avec ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Générer des applications ClickOnce à partir de la ligne de commande
           href: building-clickonce-applications-from-the-command-line.md
