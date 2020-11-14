@@ -1,6 +1,6 @@
 ---
 title: Options, Éditeur de texte, C#, Avancé
-ms.date: 08/12/2020
+ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -10,16 +10,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214687"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626192"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
-Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Outils**  >  **options**, puis **éditeur de texte**  >  **C#**  >  **avancé**.
+Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Outils**  >  **options** , puis **éditeur de texte**  >  **C#**  >  **avancé**.
 
 > [!NOTE]
 > Toutes les options peuvent ne pas être répertoriées ici.
@@ -101,7 +101,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
 
-## <a name="highlighting"></a>Highlighting
+## <a name="highlighting"></a>Mettre en surbrillance
 
 - Surligner les références jusqu’au symbole sous le curseur
 
@@ -134,12 +134,18 @@ Activez ces cases à cocher pour afficher les lignes verticales en pointillés e
     Lorsque cette option est sélectionnée, les indicateurs de nom de paramètre sont insérés pour les littéraux, les littéraux castés et les instanciations d’objets avant chaque argument dans les appels de fonction.  
     
     ![Indicateurs de nom de paramètre Inline pour CSharp](media/inline-parameter-name-hints-csharp.png)
+
+- Indicateurs de type Inline 
+    
+    Quand cette option est sélectionnée, les indicateurs de type sont insérés pour les variables avec des types inférés et des types de paramètres lambda.  
+    
+    ![Indicateurs de type inline pour CSharp](media/inline-type-hints-csharp.png)
 ::: moniker-end
 - Générer des commentaires de documentation XML pour ///
 
    Quand cette option est sélectionnée et que vous tapez l’introduction de commentaires `///`, elle insère les éléments XML pour les commentaires de documentation XML. Pour plus d’informations sur la documentation XML, consultez [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - [Guide pratique pour insérer des commentaires XML pour la génération de documentation](../../ide/reference/generate-xml-documentation-comments.md)
 - [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)

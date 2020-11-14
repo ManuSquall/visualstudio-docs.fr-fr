@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7ba3ff8e22923590c21333c35563a98352eeef21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 929be4682465494738d859f9fe8144b5e26aaf4f
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438235"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626167"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit et GitHub Codespaces
 
-devinit est un excellent compliment pour [GitHub Codespaces](https://github.com/features/codespaces) et devinit peut être utilisé pour obtenir une installation codeSpace afin que les contributeurs puissent générer, exécuter et déboguer immédiatement.
+devinit est un excellent complément à [GitHub Codespaces](https://github.com/features/codespaces) et devinit peut être utilisé pour obtenir une installation codeSpace afin que les contributeurs puissent générer, exécuter et déboguer immédiatement.
 
 > [!IMPORTANT]
 > Avant d’intégrer devinit à votre codeSpace, vous devez d’abord vous assurer que vous disposez d’un `.devinit.json` fichier qui définit vos dépendances. Pour plus d’informations sur la création d’un `.devinit.json` , consultez la [documentation de prise en main](getting-started-with-devinit.md).

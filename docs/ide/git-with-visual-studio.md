@@ -2,20 +2,20 @@
 title: L’expérience git dans Visual Studio
 titleSuffix: ''
 description: Découvrez comment la nouvelle expérience git intégrée dans Visual Studio 2019 peut vous aider à être plus productif.
-ms.date: 11/10/2020
+ms.date: 11/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: cf2f55f64eff13e9f7966ac21decf669c36284bd
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493554"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626266"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Productivité git dans Visual Studio
+# <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
 Git est désormais l’expérience de contrôle de version par défaut dans Visual Studio 2019. Depuis la [version 16,6](/visualstudio/releases/2019/release-notes-v16.6), nous avons travaillé sur la création de l’ensemble de fonctionnalités et l’itération sur ce dernier en fonction de vos commentaires. La nouvelle expérience git est activée par défaut pour tout le monde avec la [version 16,8](/visualstudio/releases/2019/release-notes/).
 
@@ -24,7 +24,11 @@ Git est désormais l’expérience de contrôle de version par défaut dans Visu
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Comment utiliser Git dans Visual Studio
 
-Il existe trois façons de commencer à utiliser Git avec Visual Studio 2019 pour être plus productif :
+Nous allons vous montrer comment utiliser la nouvelle expérience git dans Visual Studio 2019, mais si vous souhaitez commencer par une présentation rapide, consultez la vidéo suivante : <br><br>*Longueur vidéo : 5,27 minutes*
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+Il existe trois façons de commencer à utiliser Git avec Visual Studio pour être plus productif :
 
 - [Ouvrez un référentiel git existant](#open-an-existing-local-repository). Si votre code se trouve déjà sur votre ordinateur, vous pouvez l’ouvrir à l’aide de **fichier**  >  **ouvrir** le  >  **projet/solution** (ou **dossier** ) et Visual Studio détecte automatiquement s’il dispose d’un référentiel git initialisé.
 - [Créez un référentiel git](#create-a-new-git-repository). Si votre code n’est pas associé à git, vous pouvez créer un référentiel git.
@@ -193,8 +197,9 @@ Alors que la nouvelle expérience git est désormais activée par défaut dans V
 > [!IMPORTANT]
 > Si vous avez une suggestion pour nous, faites-le nous savoir ! Nous apprécions l’occasion de vous contacter en cas de décisions de conception via le portail de la [**communauté des développeurs**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
+- [Annonce de la publication de l’expérience git dans le](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) billet de blog Visual Studio
 - [Lancement de la nouvelle expérience git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) sur YouTube
 - [La série de la boîte à outils Visual Studio présente : la nouvelle vidéo git Experience](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) sur Channel 9 et sur [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Nouvelles mises à jour intéressantes de l’expérience git dans le billet de blog Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)

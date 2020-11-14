@@ -1,18 +1,18 @@
 ---
 title: Combien de temps faut-il pour annuler l’abonnement cloud ?
 description: Quand vous annulez un abonnement cloud Visual Studio, vous annulez le renouvellement automatique. L’abonnement continue jusqu’à sa date...
-ms.faqid: group4_2
+ms.faqid: group4_3
 ms.topic: include
 ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 34cf5e16f8718f407c1f6c698f3a6e917219e6d8
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: d8420a48eb4e540d135d821de832b7a7c46bbefd
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838337"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575417"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>Combien de temps faut-il pour annuler l’abonnement cloud ?
 
@@ -22,4 +22,4 @@ Avec les abonnements cloud mensuels, les annulations prennent effet le premier j
 
 Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois qui suit les 12 mois suivant l’achat initial, ou les 12 mois suivant la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Professional le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
 
-Pour plus d’informations sur les abonnements cloud, consultez notre rubrique [Mode de traitement des frais](../../../../vscloud-billing-faq.md#how-charges-are-processed).
+Pour plus d’informations sur les abonnements cloud, consultez notre rubrique [Mode de traitement des frais](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq#how-charges-are-processed).

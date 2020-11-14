@@ -169,7 +169,7 @@
         - name: Créer une application multiconteneur avec Docker Compose
           href: docker-multi-container.md
     - name: Développement de jeux Unity
-      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: Applications mobiles avec Xamarin
       href: ./xamarin.md
 - name: Accessibilité
