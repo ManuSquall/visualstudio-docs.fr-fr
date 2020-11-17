@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: acd3b65f520a9be048fe2d0209a85a85d086df2f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 863c2715b7dfbc2c331bb57f6cf06851401c51df
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438228"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672499"
 ---
 # <a name="devinit-configuration-file"></a>fichier de configuration devinit
 
@@ -45,6 +45,7 @@ Le `.devinit.json` fichier peut également être spécifié explicitement par le
 Les chemins d’accès sont relatifs à l’emplacement d’exécution de devinit. Il s’agit généralement du répertoire de travail actuel à partir duquel `devinit` a été exécuté.
 
 ## <a name="file-format"></a>Format de fichier
+Dans un `.devinit.json` , vous pouvez spécifier plusieurs outils à exécuter. Dans la `run` section, vous pouvez placer n’importe quel nombre d’objets. Un exemple est illustré dans notre exemple [.devinit.js](sample-all-tool.md) avec tous nos outils.
 
 ```json
 {
@@ -65,17 +66,17 @@ Les chemins d’accès sont relatifs à l’emplacement d’exécution de devini
 
 | Nom         | Type   | Obligatoire | Valeur                              |
 |--------------|--------|----------|------------------------------------|
-| **commentaires** | string | Non       | Commentaires pour le fichier.             |
+| **commentaires** | string | No       | Commentaires pour le fichier.             |
 | **Utilisez**      | tableau  | Oui      | [Objet RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Exécuter l’objet outil
 
 | Nom                  | Type   | Obligatoire | Valeur                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
-| **commentaires**          | string | Non       | Commentaires pour l’entrée de l’outil.                                                                               |
+| **commentaires**          | string | No       | Commentaires pour l’entrée de l’outil.                                                                               |
 | **outil**              | string | Oui      | Nom de l'outil. Pour obtenir la `devinit list` liste des outils disponibles, consultez la commande.                            |
-| **input**             | string | Non       | Entrée de l’outil. Varie en fonction de l’outil. Par exemple, la version requise, l’ID de package, le nom de fichier ou le dossier.|
-| **additionalOptions** | string | Non       | Arguments de ligne de commande supplémentaires à passer à l’outil.                                                |
+| **input**             | string | No       | Entrée de l’outil. Varie en fonction de l’outil. Par exemple, la version requise, l’ID de package, le nom de fichier ou le dossier.|
+| **additionalOptions** | string | No       | Arguments de ligne de commande supplémentaires à passer à l’outil.                                                |
 
 ## <a name="examples"></a>Exemples
 

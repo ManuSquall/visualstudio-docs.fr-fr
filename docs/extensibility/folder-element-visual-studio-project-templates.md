@@ -1,5 +1,7 @@
 ---
 title: Dossier, élément (modèles de projet Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément Folder et sur la manière dont il spécifie un dossier qui sera ajouté au projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769585"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672715"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Élément Folder (modèles de projet Visual Studio)
 Spécifie un dossier qui sera ajouté au projet.
@@ -59,12 +61,12 @@ Spécifie un dossier qui sera ajouté au projet.
 |-------------|-----------------|
 |[Projet](../extensibility/project-element-visual-studio-templates.md)|Élément enfant facultatif de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `Folder` est un enfant facultatif de `Project` .
 
  Vous pouvez utiliser l’une des méthodes suivantes pour organiser les éléments de projet en dossiers dans un modèle :
 
-- Incluez les dossiers dans le fichier *. zip* du modèle et ajoutez-les au projet dans le fichier *. vstemplate* en spécifiant le chemin d’accès au fichier dans les `ProjectItem` éléments, sans `Folder` éléments. Il s’agit de la méthode recommandée. Par exemple :
+- Incluez les dossiers dans le fichier *. zip* du modèle et ajoutez-les au projet dans le fichier *. vstemplate* en spécifiant le chemin d’accès au fichier dans les `ProjectItem` éléments, sans `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :
 
      `...`
 
@@ -74,7 +76,7 @@ Spécifie un dossier qui sera ajouté au projet.
 
      `...`
 
-- Incluez les dossiers dans le fichier *. zip* du modèle et ajoutez-les au projet dans le fichier *. vstemplate* avec des `Folder` éléments. Par exemple :
+- Incluez les dossiers dans le fichier *. zip* du modèle et ajoutez-les au projet dans le fichier *. vstemplate* avec des `Folder` éléments. Exemple :
 
      `...`
 
@@ -88,7 +90,7 @@ Spécifie un dossier qui sera ajouté au projet.
 
      `...`
 
-- N’incluez pas de dossiers dans le fichier *. zip* du modèle, mais ajoutez des dossiers à l’aide `TargetFileName` de l’attribut de l' `ProjectItem` élément. Par exemple :
+- N’incluez pas de dossiers dans le fichier *. zip* du modèle, mais ajoutez des dossiers à l’aide `TargetFileName` de l’attribut de l' `ProjectItem` élément. Exemple :
 
      `...`
 

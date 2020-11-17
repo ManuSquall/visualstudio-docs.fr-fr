@@ -1,5 +1,7 @@
 ---
 title: Conception d’un modèle de connectivité de données métiers | Microsoft Docs
+description: Concevoir un modèle de connectivité de données métiers (BDC). Ajoutez des entités et des méthodes. Définissez les paramètres de la méthode. Ajoutez des descripteurs de filtre. Validez le modèle BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984463"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672650"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Concevoir un modèle de connectivité de données métiers
   Vous pouvez développer un modèle pour le service de connectivité de données métiers (BDC) en ajoutant des entités et des méthodes à un fichier de modèle. Une entité décrit une collection de champs de données. Par exemple, une entité peut représenter une table dans une base de données. Une méthode effectue une tâche, telle que l’ajout, la suppression ou la mise à jour des données représentées par les entités. Pour plus d’informations, consultez [intégrer des données métier dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -57,7 +59,7 @@ ms.locfileid: "72984463"
  SharePoint fournit plusieurs fonctionnalités qui permettent aux utilisateurs de fournir des valeurs de filtre. Par exemple, les composants WebPart de données d’entreprise fournissent une zone de texte de filtre. Les utilisateurs peuvent limiter les données dans une liste en entrant une valeur dans la zone de texte. Pour plus d’informations sur l’ajout d’un descripteur de filtre à une méthode, consultez [Comment : ajouter un descripteur de filtre à une méthode de recherche](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ### <a name="filter-descriptor-properties"></a>Propriétés du descripteur de filtre
- Vous devez définir la valeur du **descripteur de type associé**, du **nom**et des propriétés de **type** d’un descripteur de filtre. Toutes les autres propriétés sont facultatives.
+ Vous devez définir la valeur du **descripteur de type associé**, du **nom** et des propriétés de **type** d’un descripteur de filtre. Toutes les autres propriétés sont facultatives.
 
  La propriété du **descripteur de type associé** associe le descripteur de filtre à un paramètre d’entrée. Lorsqu’un utilisateur fournit une valeur de filtre, le service BDC transmet cette valeur à la méthode à l’aide du paramètre d’entrée.
 
@@ -69,11 +71,11 @@ ms.locfileid: "72984463"
  Dans certains cas, l’utilisateur peut ne pas fournir de valeur de filtre. Vous pouvez fournir une valeur par défaut en ajoutant une valeur par défaut à l’instance de méthode ou en définissant la valeur par défaut dans le code de votre méthode. Pour plus d’informations sur l’ajout d’une valeur par défaut à l’instance de méthode, consultez [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)). Pour obtenir un exemple de la façon de définir la valeur par défaut d’un paramètre d’entrée dans le code de votre méthode, consultez [Comment : ajouter un descripteur de filtre à une méthode de recherche](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ## <a name="validate-the-model"></a>Valider le modèle
- Vous pouvez valider votre modèle pendant le développement. Visual Studio identifie les problèmes qui peuvent empêcher votre modèle de se comporter comme prévu. Ces problèmes s’affichent dans le **liste d’erreurs**Visual Studio.
+ Vous pouvez valider votre modèle pendant le développement. Visual Studio identifie les problèmes qui peuvent empêcher votre modèle de se comporter comme prévu. Ces problèmes s’affichent dans le **liste d’erreurs** Visual Studio.
 
  Vous pouvez valider un modèle en ouvrant le menu contextuel du concepteur BDC, puis en choisissant **valider**. Si le modèle contient des erreurs, celles-ci apparaissent dans la **liste d’erreurs**. Vous pouvez rapidement déplacer le curseur vers le code qui contient une erreur en double-cliquant sur l’erreur dans la liste. Vous pouvez également choisir les touches **F8** ou **MAJ** + **F8** à plusieurs reprises pour effectuer un pas à pas détaillé ou reculer des erreurs dans la liste.
 
- Des erreurs de validation peuvent se produire lorsque les règles du modèle sont enfreintes d’une certaine manière. Par exemple, si la propriété **IsCollection** d’un descripteur de type a la valeur **true**, mais qu’il n’existe aucun descripteur de type enfant, une erreur de validation s’affiche. Vous devrez peut-être faire référence aux règles d’un modèle BDC pour comprendre certaines erreurs qui s’affichent dans le **liste d’erreurs**Visual Studio. Pour plus d’informations sur les règles d’un modèle BDC, consultez [schéma BDCMetadata](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
+ Des erreurs de validation peuvent se produire lorsque les règles du modèle sont enfreintes d’une certaine manière. Par exemple, si la propriété **IsCollection** d’un descripteur de type a la valeur **true**, mais qu’il n’existe aucun descripteur de type enfant, une erreur de validation s’affiche. Vous devrez peut-être faire référence aux règles d’un modèle BDC pour comprendre certaines erreurs qui s’affichent dans le **liste d’erreurs** Visual Studio. Pour plus d’informations sur les règles d’un modèle BDC, consultez [schéma BDCMetadata](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
 ## <a name="debug-the-solution-that-contains-the-model"></a>Déboguer la solution qui contient le modèle
  Vous pouvez déboguer votre code comme vous le feriez pour tout code dans Visual Studio. Pour déboguer votre code, définissez des points d’arrêt n’importe où dans votre code, puis démarrez le débogueur. Visual Studio ouvre le site SharePoint. Dans SharePoint, créez une liste ou un composant WebPart qui utilise vos données d’entreprise. Ensuite, vous pouvez parcourir votre code. Pour plus d’informations sur le débogage des projets SharePoint, consultez [résoudre les problèmes liés aux solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
@@ -101,10 +103,10 @@ ms.locfileid: "72984463"
 ### <a name="retract-models-that-become-corrupt"></a>Rétracter les modèles qui sont endommagés
  La première fois que vous démarrez le débogueur, Visual Studio déploie l’ensemble du modèle sur SharePoint. Pour chaque fois par la suite, Visual Studio met à jour le modèle dans SharePoint avec toutes les modifications que vous effectuez entre les déploiements.
 
- Il peut arriver que vous souhaitiez que Visual Studio rétracte complètement le modèle à partir de SharePoint. Par exemple, un modèle peut être endommagé.  Pour redéployer votre modèle dans SharePoint, affectez la valeur **false**à la propriété **mise à jour incrémentielle** du modèle, puis démarrez le débogueur. La propriété **mise à jour incrémentielle** s’affiche dans la fenêtre **Propriétés** de lorsque vous sélectionnez le nœud qui représente le modèle dans l' **Explorateur BDC**. Par défaut, le nom du modèle est **BdcModel1**.
+ Il peut arriver que vous souhaitiez que Visual Studio rétracte complètement le modèle à partir de SharePoint. Par exemple, un modèle peut être endommagé.  Pour redéployer votre modèle dans SharePoint, affectez la valeur **false** à la propriété **mise à jour incrémentielle** du modèle, puis démarrez le débogueur. La propriété **mise à jour incrémentielle** s’affiche dans la fenêtre **Propriétés** de lorsque vous sélectionnez le nœud qui représente le modèle dans l' **Explorateur BDC**. Par défaut, le nom du modèle est **BdcModel1**.
 
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>Modifier les noms d’identificateur des entités dans le modèle
- Si vous modifiez le nom d’un identificateur après avoir déployé le modèle, vous risquez de recevoir une erreur de déploiement. Vous ne pouvez pas résoudre cette erreur en affectant la **valeur false**à la propriété **mise à jour incrémentielle** du modèle. Vous devez retirer le modèle manuellement, puis déployer à nouveau la solution. Pour plus d’informations, consultez [résoudre les problèmes des solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md). Vous pouvez éviter cette erreur en affectant à la propriété **mise à jour incrémentielle** la **valeur false** avant le déploiement initial du modèle.
+ Si vous modifiez le nom d’un identificateur après avoir déployé le modèle, vous risquez de recevoir une erreur de déploiement. Vous ne pouvez pas résoudre cette erreur en affectant la **valeur false** à la propriété **mise à jour incrémentielle** du modèle. Vous devez retirer le modèle manuellement, puis déployer à nouveau la solution. Pour plus d’informations, consultez [résoudre les problèmes des solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md). Vous pouvez éviter cette erreur en affectant à la propriété **mise à jour incrémentielle** la **valeur false** avant le déploiement initial du modèle.
 
 ## <a name="locate-documentation-for-bdc-model-elements"></a>Rechercher de la documentation pour les éléments de modèle BDC
  Visual Studio ajoute un élément XML au modèle pour chaque entité, méthode ou autre élément que vous créez. Les attributs d’élément apparaissent sous forme de propriétés dans la fenêtre **Propriétés** . Pour plus d’informations sur les éléments et attributs générés par Visual Studio au fur et à mesure que vous concevez le modèle, consultez [schéma BDCMetadata](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).

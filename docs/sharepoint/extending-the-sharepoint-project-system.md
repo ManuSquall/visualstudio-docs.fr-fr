@@ -1,5 +1,7 @@
 ---
 title: Extension du système de projet SharePoint | Microsoft Docs
+description: Étendre le système de projet SharePoint. Découvrez comment étendre le système de projet SharePoint. Comprendre les tâches de développement courantes.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557022"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672546"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Étendre le système de projet SharePoint
   Vous pouvez créer des solutions SharePoint à l’aide d’un ensemble de modèles de projet et de modèles d’élément dans Visual Studio. Ces modèles répondent aux besoins de nombreux scénarios de développement, mais vous pouvez découvrir certains cas où ils ne fournissent pas les fonctionnalités dont vous avez besoin. Dans ce cas, vous pouvez étendre le système de projet SharePoint.

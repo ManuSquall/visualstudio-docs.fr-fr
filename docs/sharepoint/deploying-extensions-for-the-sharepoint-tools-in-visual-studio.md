@@ -1,5 +1,7 @@
 ---
 title: Déploiement d’extensions pour les outils SharePoint dans Visual Studio | Microsoft Docs
+description: Déployez des extensions pour les outils SharePoint dans Visual Studio. Utilisez des projets d’extension Visual Studio (VSIX) pour créer des packages VSIX.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584701"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672676"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déployer des extensions pour les outils SharePoint dans Visual Studio
 
@@ -188,7 +190,7 @@ Les procédures suivantes décrivent comment ajouter des entrées au fichier. vs
 
 8. Dans la liste **source** , choisissez **fichier sur FileSystem**.
 
-9. Dans le champ **chemin d’accès** , entrez le chemin d’accès complet de l’assembly (par exemple, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*ou utilisez le bouton **Parcourir** pour rechercher et sélectionner l’assembly, puis choisissez le bouton **OK** .
+9. Dans le champ **chemin d’accès** , entrez le chemin d’accès complet de l’assembly (par exemple, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip* ou utilisez le bouton **Parcourir** pour rechercher et sélectionner l’assembly, puis choisissez le bouton **OK** .
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Pour inclure un Assistant pour un modèle de projet ou un modèle d’élément
 
@@ -241,7 +243,7 @@ Si vous souhaitez créer manuellement le package VSIX pour votre extension d’o
 
     - Si votre extension comprend un Assistant personnalisé pour un modèle de projet ou un modèle d’élément, ajoutez un `Assembly` élément sous l' `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly dans le package VSIX, puis affectez `AssemblyName` à l’attribut le nom complet de l’assembly (y compris la version, la culture et le jeton de clé publique). Pour plus d’informations, consultez [dependency, élément (schéma VSX)](/previous-versions/dd393682(v=vs.110)).
 
-### <a name="example"></a> Exemple
+### <a name="example"></a>Exemple
 
 L’exemple suivant montre le contenu d’un fichier extension. vsixmanifest pour une extension d’outils SharePoint. L’extension est implémentée dans un assembly nommé Contoso.ProjectExtension.dll. L’extension comprend un assembly de commande SharePoint nommé Contoso.ExtensionCommands.dll et un modèle d’élément sous un dossier nommé **éléments personnalisés** dans le package VSIX. Cet exemple suppose que les deux assemblys se trouvent dans le même dossier que le fichier extension. vsixmanifest dans le package VSIX.
 

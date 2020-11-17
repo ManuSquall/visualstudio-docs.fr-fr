@@ -1,5 +1,7 @@
 ---
 title: Débogage de solutions SharePoint | Microsoft Docs
+description: Déboguez des solutions SharePoint à l’aide du débogueur Visual Studio. Explorez le processus de débogage et de déploiement F5, déboguez les flux de travail et déboguez les récepteurs d’événements de fonctionnalité.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83c8ffd4fe5ebb627b70fa07f010bdc713225dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984494"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672858"
 ---
 # <a name="debug-sharepoint-solutions"></a>Déboguer des solutions SharePoint
   Vous pouvez déboguer des solutions SharePoint à l’aide du [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Lorsque vous démarrez le débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] déploie les fichiers projet sur le serveur SharePoint, puis ouvre une instance du site SharePoint dans le navigateur Web. Les sections suivantes expliquent comment déboguer des applications SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -118,7 +120,7 @@ ms.locfileid: "72984494"
 ## <a name="sharepoint-project-features"></a>Fonctionnalités de projet SharePoint
  Une fonctionnalité est une unité de fonctionnalité portable et modulaire qui simplifie la modification de sites à l’aide de définitions de site. Il s’agit également d’un package d' [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] éléments (WSS) qui peuvent être activés pour une étendue spécifique et qui aide les utilisateurs à accomplir un objectif ou une tâche spécifique. Les modèles sont déployés en tant que fonctionnalités.
 
- Quand vous exécutez un projet en mode débogage, le processus de déploiement crée un dossier dans le répertoire de *fonctionnalités* à l’adresse *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Les noms de fonctionnalités ont le format *nom de projet*_Feature*x*, tel que TestProject_Feature1.
+ Quand vous exécutez un projet en mode débogage, le processus de déploiement crée un dossier dans le répertoire de *fonctionnalités* à l’adresse *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Les noms de fonctionnalités ont le format *nom de projet* _Feature *x*, tel que TestProject_Feature1.
 
  Le dossier de la solution dans le répertoire des fonctionnalités contient un fichier de *définition de fonctionnalité* et un fichier de définition de *flux de travail* . Le fichier de définition de fonctionnalité (Feature.xml) décrit les fichiers dans la fonctionnalité du projet. le fichier de définition de projet (*Elements.xml*) décrit le modèle de projet. *Elements.xml* se trouve dans **Explorateur de solutions**, mais Feature.xml est générée lors de la création du package de solution. Pour plus d’informations sur ces fichiers, consultez [modèles de projet et d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
@@ -140,7 +142,7 @@ ms.locfileid: "72984494"
 ## <a name="enable-enhanced-debugging-information"></a>Activer les informations de débogage avancées
  En raison des interactions parfois complexes entre le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processus (devenv.exe), le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processus hôte sharepoint (*vssphost4.exe*), SharePoint et la couche WCF, le diagnostic des erreurs qui se produisent pendant la génération, le déploiement et ainsi de suite peut être un défi. Pour vous aider à résoudre ces erreurs, vous pouvez activer des informations de débogage avancées. Pour ce faire, accédez à la clé de Registre suivante dans le Registre Windows :
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\11.0\SharePointTools**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
 
  Si la valeur « EnableDiagnostics » **REG_DWORD** n’existe pas encore, créez-la manuellement. Définissez la valeur « EnableDiagnostics » sur « 1 ».
 

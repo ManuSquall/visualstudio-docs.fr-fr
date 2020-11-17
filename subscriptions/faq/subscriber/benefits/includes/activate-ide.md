@@ -7,12 +7,12 @@ author: evanwindom
 ms.author: v-evwin
 ms.date: 11/12/2020
 ms.faqid: q3_4
-ms.openlocfilehash: afcfa047e8b6b26f8e5d3648c91d684c13d8a59d
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 7e38e477cbcbe17ce5407ba87cd7f26b35b4d174
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575559"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94633427"
 ---
 ## <a name="how-do-i-download-find-a-key-and-activate-the-visual-studio-ide"></a>Comment télécharger, rechercher une clé et activer l’IDE Visual Studio ?
 Votre niveau d’abonnement identifie le niveau de l’IDE Visual Studio auquel vous avez accès. Par exemple, un abonnement Visual Studio Professional n’a pas accès à Visual Studio Enterprise. Si vous n’êtes pas sûr du niveau que vous utilisez, consultez les abonnements disponibles dans la [page des abonnements](https://my.visualstudio.com/subscriptions) du portail. 
@@ -25,4 +25,4 @@ Votre niveau d’abonnement identifie le niveau de l’IDE Visual Studio auquel 
 0. En utilisant l’e-mail auquel votre abonnement est attribué, vous pouvez vous connecter immédiatement à l’IDE après l’installation, **aucune clé de produit n’est nécessaire**. Découvrez comment [demander une clé de produit](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) si vous êtes dans un environnement hors connexion.
 
 ### <a name="find-an-older-version"></a>Rechercher une version antérieure 
-Vous pouvez également rechercher et télécharger des versions précédentes dans la  [page des téléchargements](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20mac&pgroup=) du portail des abonnements.
+Vous pouvez également rechercher et télécharger des versions précédentes dans la  [page des téléchargements](https://my.visualstudio.com/Downloads?q=visual%20studio&pgroup=) du portail des abonnements.

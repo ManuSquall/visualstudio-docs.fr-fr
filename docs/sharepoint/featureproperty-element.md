@@ -1,5 +1,7 @@
 ---
 title: Élément FeatureProperty | Microsoft Docs
+description: Affichez les informations de référence sur l’élément FeatureProperty, qui est un élément dans le schéma d’élément de projet SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546521"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672754"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (élément)
   Représente une propriété personnalisée qui est incluse avec une fonctionnalité lorsqu’elle est déployée sur SharePoint. Une fois qu’une fonctionnalité a été déployée, vous pouvez accéder à la propriété dans votre code.
@@ -48,7 +50,7 @@ ms.locfileid: "85546521"
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Représente une collection de valeurs de propriétés qui sont incluses avec une fonctionnalité lorsqu’elle est déployée sur SharePoint.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour plus d’informations sur les propriétés de fonctionnalité, consultez [fourniture d’informations de package et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informations sur les éléments

@@ -1,5 +1,7 @@
 ---
 title: Extension d’éléments de projet SharePoint | Microsoft Docs
+description: Passez en revue les tâches permettant d’étendre les éléments de projet SharePoint. Comprendre comment les extensions d’élément de projet et les instances d’élément de projet sont liées.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967394"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672572"
 ---
 # <a name="extend-sharepoint-project-items"></a>Étendre les éléments de projet SharePoint
   Créez une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un type d’élément de projet SharePoint qui est déjà installé dans Visual Studio. Par exemple, vous pouvez créer une extension pour les éléments de projet de **récepteur d’événements** ou de définition de **liste** intégrés dans Visual Studio, ou vous pouvez créer une extension pour un type d’élément de projet personnalisé. Vous pouvez également créer une extension pour tous les types d’éléments de projet SharePoint.

@@ -1,5 +1,7 @@
 ---
 title: Hidden, élément (modèles Visual Studio) | Microsoft Docs
+description: Découvrez l’élément masqué et comment il spécifie si le modèle apparaît dans les boîtes de dialogue Nouveau projet ou ajouter un nouvel élément.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711109"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672698"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden, élément (modèles Visual Studio)
 
@@ -61,7 +63,7 @@ Une valeur texte est requise.
 
 Le texte doit être `true` ou `false` , indiquant si le modèle doit apparaître ou non dans les boîtes de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 `Hidden` est un élément facultatif.
 

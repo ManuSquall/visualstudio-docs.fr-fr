@@ -1,5 +1,7 @@
 ---
 title: Développement de solutions SharePoint | Microsoft Docs
+description: Développez des solutions SharePoint. Connaître les éléments d’un projet SharePoint. Comprendre les propriétés des projets et des éléments de projet SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016794"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672819"
 ---
 # <a name="develop-sharepoint-solutions"></a>Développer des solutions SharePoint
   Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour obtenir la liste des types de projets disponibles, consultez modèles de projet [et d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.
@@ -36,7 +38,7 @@ ms.locfileid: "86016794"
  Chaque projet SharePoint contient deux nœuds qui ne peuvent pas être renommés, supprimés, coupés, copiés ou déplacés du projet. Il s'agit des nœuds suivants :
 
 - Fonctionnalités
-- Package
+- Paquet
 
   Ces deux nœuds apparaissent toujours dans tous les projets SharePoint même si aucune fonctionnalité ou package n'est défini pour le projet.
 
@@ -47,7 +49,7 @@ ms.locfileid: "86016794"
 
  Pour ajouter manuellement une fonctionnalité, exécutez la commande **Ajouter une fonctionnalité** dans le menu contextuel du nœud Fonctionnalités. Vous pouvez afficher ou modifier le contenu d'une fonctionnalité à l'aide du Concepteur de fonctionnalités. Pour plus d’informations, consultez [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
- Quand une fonctionnalité est ajoutée à un projet SharePoint, elle apparaît dans l' **Explorateur de solutions** sous la forme d'un nœud ayant pour nom par défaut Feature*x*.feature, où *x* est un nombre unique. Une fois déployée sur le serveur SharePoint, un administrateur SharePoint peut l'activer et la mettre ainsi à la disposition des utilisateurs du site SharePoint.
+ Quand une fonctionnalité est ajoutée à un projet SharePoint, elle apparaît dans l' **Explorateur de solutions** sous la forme d'un nœud ayant pour nom par défaut Feature *x*.feature, où *x* est un nombre unique. Une fois déployée sur le serveur SharePoint, un administrateur SharePoint peut l'activer et la mettre ainsi à la disposition des utilisateurs du site SharePoint.
 
 #### <a name="package-node"></a>Nœud du package
  Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé package de *solution*, est. Basé sur CAB avec un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le nœud **Package** contient également un fichier nommé Package.wspdef, c'est-à-dire un fichier de définition [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.
@@ -101,7 +103,7 @@ ms.locfileid: "86016794"
 |Emplacement de déploiement|Chemin d'accès complet du fichier sur le serveur SharePoint. Ce chemin d'accès est composé des sous-propriétés Racine du déploiement et Chemin d'accès du déploiement.|
 |Chemin d'accès du déploiement|Le chemin d’accès relatif du fichier sur le fichier SharePoint Server, par exemple Workflow1 \\ . Le chemin d'accès qualifié complet du fichier est obtenu par concaténation de la valeur *Deployment Path* à la fin de la valeur *Deployment Root* .<br /><br /> Si vous sélectionnez la valeur *RootFile* pour la propriété *type de déploiement* , la propriété racine de *déploiement* est remplacée par \<SharePointRoot> \\ , ce qui donne un chemin d’accès complet à \<SharePointRoot> \Workflow1 \\ . Pour plus d’informations, consultez [empaquetage et déploiement de solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Deployment Root|Chaîne. Dossier racine dans lequel le fichier est déployé sur le serveur SharePoint. Par exemple, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> La valeur de la propriété *Deployment Root* est déterminée par le paramètre *Deployment Type* .|
-|Type de déploiement|Type de déploiement du fichier, lequel détermine sa valeur *Deployment Root* . Il peut s'agir de l'une des valeurs suivantes :<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest : * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> ElementFile : * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile : * \<SharePointRoot> \Template \\ *<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource : * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Type de déploiement|Type de déploiement du fichier, lequel détermine sa valeur *Deployment Root* . Il peut s'agir de l'une des valeurs suivantes :<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest : *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> ElementFile : *\<SharePointRoot> \\ \<FeatureName> \Template\Features \\*<br /><br /> TemplateFile : *\<SharePointRoot> \Template \\*<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource : *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Nom de fichier|Nom du fichier ou du dossier pour le fichier d'élément.|
 |Chemin d'accès complet|Emplacement du fichier pour l'élément. (En lecture seule.)|
 

@@ -1,5 +1,7 @@
 ---
 title: Création de composants WebPart pour SharePoint | Microsoft Docs
+description: Créer des composants WebPart pour SharePoint. À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et le comportement des pages d’un site SharePoint à l’aide d’un navigateur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740155"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672793"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et le comportement des pages d’un site SharePoint à l’aide d’un navigateur. Les composants WebPart sont des contrôles côté serveur qui s’exécutent dans une page de composants WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez le [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -52,7 +54,7 @@ ms.locfileid: "90740155"
  Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).
 
 ### <a name="visual-web-part-item"></a>Élément Visual Web part
- Un composant Visual Web part est un composant WebPart que vous créez à l’aide du concepteur Visual Web Developer dans Visual Studio. Un composant WebPart visuel fonctionne de la même façon que n’importe quel autre composant WebPart. Pour ajouter des contrôles, tels que des boutons et des zones de texte, à un composant WebPart, vous ajoutez du code à un fichier XML. Toutefois, vous ajoutez des contrôles à un composant WebPart visuel en les faisant glisser ou en les copiant sur le composant WebPart à partir de la **boîte à outils**Visual Studio. Le concepteur génère ensuite le code requis dans le fichier XML. Consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
+ Un composant Visual Web part est un composant WebPart que vous créez à l’aide du concepteur Visual Web Developer dans Visual Studio. Un composant WebPart visuel fonctionne de la même façon que n’importe quel autre composant WebPart. Pour ajouter des contrôles, tels que des boutons et des zones de texte, à un composant WebPart, vous ajoutez du code à un fichier XML. Toutefois, vous ajoutez des contrôles à un composant WebPart visuel en les faisant glisser ou en les copiant sur le composant WebPart à partir de la **boîte à outils** Visual Studio. Le concepteur génère ensuite le code requis dans le fichier XML. Consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ## <a name="sharepoint-controls"></a>Contrôles SharePoint
  Visual Studio fournit des contrôles pour créer des pages SharePoint, telles que des pages d’application. Ces contrôles apparaissent dans la **boîte à outils** sous **contrôles SharePoint**. Les fonctionnalités de ces contrôles dérivent de l’espace de noms [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) , qui contient les contrôles serveur ASP.net utilisés sur les pages de site et de liste SharePoint.
@@ -108,7 +110,7 @@ ms.locfileid: "90740155"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Montre comment créer des composants WebPart pour les pages SharePoint.|
 |[Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Montre comment créer des composants WebPart pour SharePoint à l’aide d’une aire de conception visuelle.|

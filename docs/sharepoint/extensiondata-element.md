@@ -1,5 +1,7 @@
 ---
 title: Élément ExtensionData | Microsoft Docs
+description: Affichez les informations de référence sur l’élément ExtensionData, qui est un élément dans le schéma d’élément de projet SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b700239f97153cef94ab1d7010ad16ed9aa6001
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546560"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672533"
 ---
 # <a name="extensiondata-element"></a>ExtensionData (élément)
   Représente une collection d’éléments de données personnalisés associés à l’élément de projet SharePoint.
@@ -48,7 +50,7 @@ ms.locfileid: "85546560"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Représente un élément de projet SharePoint. Cet élément est l’élément racine requis du `.spdata` fichier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Lorsque vous associez des données personnalisées à un élément de projet SharePoint à l’aide <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> de la propriété d’un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objet, Visual Studio enregistre les données dans l’élément **ExtensionData** dans le `.spdata` fichier de l’élément de projet. Pour plus d’informations, consultez [enregistrer des données dans les extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="element-information"></a>Informations sur les éléments

@@ -1,5 +1,7 @@
 ---
 title: Élément NumberOfParentCategoriesToRollUp (modèles)
+description: En savoir plus sur l’élément NumberOfParentCategoriesToRollUp et sur la façon dont il spécifie le nombre de catégories parentes qui afficheront le modèle dans la boîte de dialogue Nouveau projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702368"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672409"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Élément NumberOfParentCategoriesToRollUp (modèles Visual Studio)
 Spécifie le nombre de catégories parentes qui afficheront le modèle dans la boîte de dialogue **nouveau projet** .
@@ -55,7 +57,7 @@ Spécifie le nombre de catégories parentes qui afficheront le modèle dans la b
 
  Cette valeur spécifie le nombre de catégories parentes qui afficheront le modèle dans la boîte de dialogue **nouveau projet** .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `NumberOfParentCategoriesToRollUp` est un élément facultatif.
 
 ## <a name="example"></a>Exemple

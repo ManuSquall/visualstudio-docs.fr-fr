@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd3a6153a347bcaf7d17fd265b7d9c7d4e6a5e5
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626175"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672767"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -37,15 +37,15 @@ Vous pouvez personnaliser et optimiser votre expérience de développement dans 
 Quand vous vous connectez, vous bénéficiez de nombreux avantages supplémentaires dans Visual Studio. Par exemple, une fois que vous êtes connecté, vous pouvez [synchroniser vos paramètres](synchronized-settings-in-visual-studio.md) sur plusieurs appareils, étendre une version d’évaluation et vous connecter automatiquement à un service Azure, pour n’en nommer que quelques-uns.
 
 Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :
-- **Prolongez la période d’évaluation de Visual Studio**  : vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu de vous limiter à la période d’évaluation de 30 jours. Pour plus d’informations, consultez [étendre une version d’évaluation ou mettre à jour une licence](../ide/how-to-unlock-visual-studio.md).
+- **Prolongez la période d’évaluation de Visual Studio** : vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu de vous limiter à la période d’évaluation de 30 jours. Pour plus d’informations, consultez [étendre une version d’évaluation ou mettre à jour une licence](../ide/how-to-unlock-visual-studio.md).
 
 - **Continuer à utiliser l’édition Visual Studio Community** : si l’installation de votre édition Community vous demande une licence, connectez-vous à l’IDE pour continuer à utiliser Visual Studio Community **gratuitement**. 
 
 - **Déverrouillez Visual Studio si vous utilisez un compte associé à un abonnement Visual Studio ou à une organisation Azure DevOps**. Pour obtenir des instructions détaillées, consultez [étendre une version d’évaluation ou mettre à jour une licence](../ide/how-to-unlock-visual-studio.md).
 
-- **Accédez à Visual Studio Dev Essentials**  : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) pour obtenir de plus amples informations.
+- **Accédez à Visual Studio Dev Essentials** : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) pour obtenir de plus amples informations.
 
-- **Synchronisez vos paramètres Visual Studio**  : les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s’appliquent immédiatement quand vous vous connectez à Visual Studio sur un appareil. Consultez [synchroniser les paramètres dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
+- **Synchronisez vos paramètres Visual Studio** : les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s’appliquent immédiatement quand vous vous connectez à Visual Studio sur un appareil. Consultez [synchroniser les paramètres dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Connectez-vous automatiquement à des services comme Azure et Azure DevOps Services** dans l’IDE sans avoir à fournir à nouveau les informations d’identification pour le même compte.
 
@@ -73,7 +73,7 @@ Si vous choisissez de ne pas vous connecter lorsque vous ouvrez Visual Studio po
 
 1. Accédez aux **File**  >  **paramètres du compte** de fichier et choisissez le lien **gérer le profil Visual Studio** .
 
-1. Dans la fenêtre du navigateur, sélectionnez **Modifier le profil** , puis changez les paramètres souhaités.
+1. Dans la fenêtre du navigateur, sélectionnez **Modifier le profil**, puis changez les paramètres souhaités.
 
 1. Quand vous avez terminé, choisissez **Enregistrer les modifications**.
 
@@ -81,9 +81,10 @@ Si vous choisissez de ne pas vous connecter lorsque vous ouvrez Visual Studio po
 
 Si vous rencontrez des problèmes lors de la connexion, veuillez consulter la page de support de l' [abonnement](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 * [Prolonger une version d’évaluation ou mettre à jour une licence](../ide/how-to-unlock-visual-studio.md)
+* [Utiliser des comptes GitHub dans Visual Studio](../ide/work-with-github-accounts.md)
 * [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
 * [Se connecter (Visual Studio pour Mac)](/visualstudio/mac/signing-in)
 * [Activation (Visual Studio pour Mac)](/visualstudio/mac/activation)
