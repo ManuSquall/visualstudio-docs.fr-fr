@@ -1,5 +1,7 @@
 ---
 title: ProjectItem, élément (modèles d’élément Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément ProjectItem pour les modèles d’élément et sur la manière dont il accepte des attributs différents selon que le modèle est pour un projet ou un élément.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770719"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672331"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem, élément (modèles d’élément Visual Studio)
 Spécifie un fichier qui est inclus dans le modèle d’élément.
@@ -70,7 +72,7 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
 
  `string`Qui représente le nom d’un fichier dans le fichier *. zip* du modèle.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `ProjectItem` est un enfant facultatif de `TemplateContent` .
 
  L' `TargetFileName` attribut peut être utilisé pour renommer des fichiers avec des paramètres. Par exemple, si le fichier *MyFile. vb* existe dans le répertoire racine du fichier *. zip* du modèle, mais que vous souhaitez que le fichier soit nommé en fonction du nom de fichier fourni par l’utilisateur dans la boîte de dialogue **Ajouter un nouvel élément** , utilisez le code XML suivant :

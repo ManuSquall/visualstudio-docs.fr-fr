@@ -11,26 +11,26 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 30bd66310f386a920b20522f59e54d586e3d3af1
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 6e10887e09c329a241aab7f18c6170c873705fbf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400231"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672051"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
 L' `vcpkg-install` outil permet d’acquérir des bibliothèques C/C++ (appelées ports) à l’aide de [vcpkg](https://github.com/microsoft/vcpkg).
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
 | Nom                                             | Type   | Obligatoire | Valeur                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
-| **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                   |
+| **commentaires**                                     | string | No       | Propriété de commentaires facultative. Non utilisé.                                                   |
 | [**entrée**](#input)                              | string | Oui      | Package (s) à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                       |
-| [**additionalOptions**](#additional-options)     | string | Non       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.                        |
+| [**additionalOptions**](#additional-options)     | string | No       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.                        |
 
 ### <a name="input"></a>Entrée
 
@@ -45,18 +45,28 @@ Des options supplémentaires sont transmises directement à la commande [vcpkg](
 Le comportement par défaut de l' `vcpkg-install` outil est l’erreur, comme cela est `input` nécessaire.
 
 ## <a name="example-usage"></a>Exemple d’utilisation
+Vous trouverez ci-dessous des exemples d’exécution à `vcpkg-install` l’aide d’un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.jssur qui installe le port sdl2 :
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs the sdl2 port.",
             "tool": "vcpkg-install",
             "input": "sdl2",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-multiple-ports"></a>.devinit.jssur qui installe plusieurs ports :
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+
         {
-            "comments": "Installs the sdl2 and sqlite3 ports.",
             "tool": "vcpkg-install",
             "input": "sdl2 sqlite3"
         }

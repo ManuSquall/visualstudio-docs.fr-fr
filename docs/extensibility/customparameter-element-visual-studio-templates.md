@@ -1,5 +1,7 @@
 ---
 title: Élément CustomParameter (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément CustomParameter et sur la façon dont il contient un nom de paramètre personnalisé et une valeur à utiliser lorsqu’un projet ou un élément est créé à partir du modèle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739433"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671947"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Élément CustomParameter (modèles Visual Studio)
 Contient le nom et la valeur d’un paramètre personnalisé à utiliser lors de la création d’un projet ou d’un élément à partir du modèle.
@@ -48,7 +50,7 @@ Contient le nom et la valeur d’un paramètre personnalisé à utiliser lors de
 |-------------|-----------------|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque l’Assistant effectue des remplacements de paramètres.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Lorsqu’un modèle contient des `CustomParameter` éléments, chaque instance de l' `Name` attribut est remplacée par l' `Value` attribut dans les fichiers de projet ou d’élément créés.
 
 ## <a name="example"></a>Exemple

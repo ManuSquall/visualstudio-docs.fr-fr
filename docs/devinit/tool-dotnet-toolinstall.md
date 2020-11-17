@@ -11,26 +11,26 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 464460d6a33c01e5c53b66e8a03de7aa7f844953
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 85a8beafdc9b19a807becabb459baa5de88169e2
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399652"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672218"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
 L' `dotnet-toolinstall` outil est utilisé pour installer les [outils .net Core](https://dotnet.microsoft.com/) à l’aide de la `dotnet tool update` commande.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
 | Nom                                             | Type   | Obligatoire | Valeur                                                                 |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------|
-| **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                 |
+| **commentaires**                                     | string | No       | Propriété de commentaires facultative. Non utilisé.                                 |
 | [**entrée**](#input)                              | string | Oui      | Outil .NET Core à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous. |
-| [**additionalOptions**](#additional-options)     | string | Non       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.      |
+| [**additionalOptions**](#additional-options)     | string | No       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.      |
 
 ### <a name="input"></a>Entrée
 
@@ -47,18 +47,27 @@ La `dotnet tool update` commande est utilisée pour gérer en toute sécurité l
 Le comportement par défaut de l' `dotnet-toolinstall` outil est l’erreur telle qu’elle est `input` requise.
 
 ## <a name="example-usage"></a>Exemple d’utilisation
+Vous trouverez ci-dessous des exemples d’exécution à `dotnet-toolinstall` l’aide d’un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.jssur qui installe l’outil dotnet-trace :
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will install the dotnet-trace tool.",
             "tool": "dotnet-toolinstall",
             "input": "dotnet-trace"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool-as-a-global-tool"></a>.devinit.jssur qui installe l’outil dotnet-trace en tant qu’outil Global :
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install the dotnet-trace tool as a global tool.",
             "tool": "dotnet-toolinstall",
             "input": "dotnet-trace",
             "additionalOptions": "--global"

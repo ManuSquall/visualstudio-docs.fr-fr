@@ -1,5 +1,7 @@
 ---
 title: Description, élément (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément description et sur la manière dont il spécifie la description du modèle tel qu’il apparaît dans la boîte de dialogue Nouveau projet ou ajouter un nouvel élément.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712261"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671283"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description, élément (modèles Visual Studio)
 Spécifie la description du modèle telle qu’elle apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .
@@ -60,7 +62,7 @@ Spécifie la description du modèle telle qu’elle apparaît dans la boîte de 
 
  Le texte fournit une description du modèle.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `Description` est un élément enfant obligatoire de l' `TemplateData` élément.
 
 ## <a name="example"></a>Exemple

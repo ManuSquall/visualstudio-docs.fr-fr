@@ -1,5 +1,7 @@
 ---
 title: Élément ProjectCollection (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément ProjectCollection et sur la façon dont il spécifie l’organisation et le contenu des modèles à plusieurs projets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701974"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671231"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>Élément ProjectCollection (modèles Visual Studio)
 Spécifie l'organisation et le contenu de modèles à plusieurs projets.
@@ -55,7 +57,7 @@ Spécifie l'organisation et le contenu de modèles à plusieurs projets.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie le contenu du modèle.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. L' `ProjectCollection` élément est utilisé pour spécifier les projets à contenir dans le modèle. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Exemple

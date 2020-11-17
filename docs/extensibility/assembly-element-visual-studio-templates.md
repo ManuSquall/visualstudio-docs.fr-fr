@@ -1,5 +1,8 @@
 ---
 title: Assembly, élément (modèles Visual Studio) | Microsoft Docs
+titleSuffix: ''
+description: En savoir plus sur l’élément assembly et sur la manière dont il spécifie les informations relatives à un assembly, que le modèle utilise pour ajouter une référence de cet assembly aux projets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740033"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671644"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
 Spécifie des informations sur un assembly, que le modèle utilise pour ajouter une référence de cet assembly aux projets.
@@ -55,7 +58,7 @@ Spécifie des informations sur un assembly, que le modèle utilise pour ajouter 
 
  Ce texte spécifie l’assembly à ajouter à un projet lorsque le modèle d’élément est instancié. Ce nom d’assembly doit être spécifié de l’une des manières suivantes :
 
-- En tant que nom complet de l’assembly. Par exemple :
+- En tant que nom complet de l’assembly. Exemple :
 
     ```
     <Assembly>

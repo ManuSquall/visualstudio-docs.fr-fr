@@ -1,5 +1,7 @@
 ---
 title: Débogage d’extensions pour les outils SharePoint dans Visual Studio | Microsoft Docs
+description: Extensions de débogage pour les outils SharePoint dans Visual Studio. Déboguez les extensions des outils SharePoint dans l’instance expérimentale ou l’instance régulière de VS.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584631"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671218"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Extensions de débogage pour les outils SharePoint dans Visual Studio
   Vous pouvez déboguer des extensions d’outils SharePoint dans l’instance expérimentale ou l’instance normale de Visual Studio. Si vous devez résoudre le comportement d’une extension, vous pouvez également modifier les valeurs de Registre pour afficher des informations supplémentaires sur l’erreur et configurer la façon dont Visual Studio exécute les commandes SharePoint.
@@ -92,7 +94,7 @@ ms.locfileid: "91584631"
 4. Choisissez le bouton **redémarrer maintenant** pour terminer la désinstallation.
 
 ## <a name="debug-sharepoint-commands"></a>Déboguer les commandes SharePoint
- Si vous souhaitez déboguer une commande SharePoint qui fait partie d’une extension d’outils SharePoint, vous devez attacher le débogueur au processus de *vssphost4.exe* . Il s’agit du processus hôte 64 bits qui exécute les commandes SharePoint. Pour plus d’informations sur les commandes et les *vssphost4.exe*SharePoint, consultez [appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+ Si vous souhaitez déboguer une commande SharePoint qui fait partie d’une extension d’outils SharePoint, vous devez attacher le débogueur au processus de *vssphost4.exe* . Il s’agit du processus hôte 64 bits qui exécute les commandes SharePoint. Pour plus d’informations sur les commandes et les *vssphost4.exe* SharePoint, consultez [appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Pour attacher le débogueur au processus de vssphost4.exe
 
@@ -110,7 +112,7 @@ ms.locfileid: "91584631"
 5. Dans l’instance de Visual Studio en cours de débogage, effectuez les étapes nécessaires à l’exécution de votre commande.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modifier les valeurs de Registre pour déboguer les extensions d’outils SharePoint
- Quand vous déboguez une extension des outils SharePoint dans Visual Studio, vous pouvez modifier les valeurs dans le registre pour vous aider à résoudre les problèmes liés à l’extension. Les valeurs existent sous la clé **HKEY_CURRENT_USER \software\microsoft\visualstudio\11.0\SharePointTools** . Ces valeurs n’existent pas par défaut.
+ Quand vous déboguez une extension des outils SharePoint dans Visual Studio, vous pouvez modifier les valeurs dans le registre pour vous aider à résoudre les problèmes liés à l’extension. Les valeurs existent sous la clé de **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** . Ces valeurs n’existent pas par défaut.
 
  Pour vous aider à résoudre les problèmes d’extension des outils SharePoint, vous pouvez créer et définir la valeur EnableDiagnostics. Le tableau suivant décrit cette valeur.
 

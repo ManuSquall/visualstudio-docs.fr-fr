@@ -2,7 +2,7 @@
 title: Journal des modifications (Visual Studio Tools pour Unity, Windows) | Microsoft Docs
 description: Affichez le journal des modifications pour Outils Visual Studio pour Unity, Windows. Consultez les modifications de version 1.0.0.0 à 4.7.0.0 et au-delà.
 ms.custom: ''
-ms.date: 7/30/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,65 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f8a1ed0520bb1a2e5d213cd9a670769f70251ebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341678"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671244"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="4820"></a>4.8.2.0
+Publication : 10 novembre 2020
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration**
+
+  - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md)Diagnostic amélioré pour s’appliquer à tous les éléments qui héritent de `Component` , et pas seulement `MonoBehaviour` .
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Correction de l’invalidation du message CodeLens.
+
+## <a name="4810"></a>4.8.1.0
+Publication : 13 octobre 2020
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Analyse**
+
+  - Ajout de la prise en charge de la conversion implicite avec les appels. Précédemment, l’évaluateur appliquait une vérification stricte des types, provoquant des `Failed to find a match for method([parameters...])` messages d’avertissement.
+
+- **Intégration**
+
+  - Ajout d’un [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) diagnostic. Vous ne devez pas utiliser `System.Reflection` les fonctionnalités des messages critiques de performances comme `Update` , `FixedUpdate` , `LateUpdate` ou `OnGUI` .
+
+  - Améliorations [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) et [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) suppressions, avec prise en charge de toutes les `AssetPostprocessor` méthodes statiques.
+
+  - Ajout [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) d’un suppresseur pour `CS8618` . `C# 8.0` introduit les types référence Nullable et les types référence non Nullable. La détection de l’initialisation des types hérités de `UnityEngine.Object` n’est pas prise en charge et génère des erreurs.
+
+  - À présent, à l’aide du même mécanisme de génération de projet Player et asmdef pour Unity 2019. x et 2020. x +.
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Correction de la saisie semi-automatique inattendue des messages dans les commentaires.
+
+## <a name="4800"></a>4.8.0.0 
+Publiée le 14 septembre 2020
+
+### <a name="bug-fixes"></a>Résolution des bogues
+
+- **Intégration**
+
+  - Correction de la génération de projet de lecteur avec Unity 2019. x.
 
 ## <a name="4710"></a>4.7.1.0
 Publiée le 5 août 2020
@@ -1791,7 +1840,7 @@ Publication : 28 novembre 2012
 ## <a name="10100"></a>1.0.10.0
 Publication : 9 octobre 2012
 
-### <a name="bug-fixes"></a>Correctifs de bogues
+### <a name="bug-fixes"></a>Résolutions de bogues
 
 - Correction de l’arrière-plan de l’Explorateur de projets Unity dans Visual Studio 2010.
 

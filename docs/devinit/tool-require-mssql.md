@@ -11,26 +11,26 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 576f0055ab6443d991cbddaa51ca2767853bcf1e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399598"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672131"
 ---
 # <a name="require-mssql"></a>require-mssql
 
 L' `require-mssql` outil est utilisé pour installer [Microsoft SQL Server édition développeur 2019](https://www.microsoft.com/sql-server/application-development) à partir de l’aide de l’ISO de MS SQL Server. SQL Server sera disponible sur `localhost` l’authentification Windows intégrée. SQL Server sera accessible avec la chaîne de connexion `"Server=localhost;Integrated Security=true;"` .
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
 | Nom                                             | Type   | Obligatoire | Valeur                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
-| **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                   |
-| [**entrée**](#input)                              | string | Non       | Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                  |
-| [**additionalOptions**](#additional-options)     | string | Non       | Non utilisé. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.              |
+| **commentaires**                                     | string | No       | Propriété de commentaires facultative. Non utilisé.                                                   |
+| [**entrée**](#input)                              | string | No       | Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                  |
+| [**additionalOptions**](#additional-options)     | string | No       | Non utilisé. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.              |
 
 ### <a name="input"></a>Entrée
 
@@ -75,13 +75,14 @@ L' `require-mssql` outil définit un certain nombre d’arguments de ligne de co
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>Exemple d’utilisation
+Vous trouverez ci-dessous un exemple de la façon d’exécuter `require-msssql` à l’aide d’un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-mssql"></a>.devinit.jssur qui installe MSSQL :
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs MSSQL.",
             "tool": "require-mssql",
             "input": "install",
         }

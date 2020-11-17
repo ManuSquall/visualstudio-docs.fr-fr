@@ -1,5 +1,7 @@
 ---
 title: Élément PreviewImage (modèles Visual Studio) | Microsoft Docs
+description: Découvrez l’élément PreviewImage et comment il spécifie le nom de fichier de l’image d’aperçu qui s’affichera dans la boîte de dialogue Nouveau projet ou ajouter un nouvel élément.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702019"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672344"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
 Spécifie l’image d’aperçu, sous la forme d’un nom de fichier, pour l’image d’aperçu qui s’affichera dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .
@@ -51,7 +53,7 @@ Spécifie l’image d’aperçu, sous la forme d’un nom de fichier, pour l’i
 
  Le texte doit être une chaîne qui représente un nom de fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `PreviewImage` est un élément facultatif.
 
 ## <a name="see-also"></a>Voir aussi

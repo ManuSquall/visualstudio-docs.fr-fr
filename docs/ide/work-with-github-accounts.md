@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: d0575abb528810e714dbe747b46db986dc3ce6e1
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: cdea71e2d5c376e465bb5cdb990ec7ed45caa1f3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631611"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672357"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>Utiliser des comptes GitHub dans Visual Studio
 
@@ -59,7 +59,7 @@ Par défaut, Visual Studio dispose uniquement de comptes GitHub publics activés
 
 3. Une fois que vous avez entré votre adresse de serveur GitHub Enterprise, sélectionnez **se connecter avec votre navigateur**. À partir de là, vous pouvez vous connecter en utilisant vos informations d’identification GitHub Enterprise.
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 - [Utiliser plusieurs comptes d’utilisateur](work-with-multiple-user-accounts.md)
 - [Se connecter à Visual Studio](signing-in-to-visual-studio.md)

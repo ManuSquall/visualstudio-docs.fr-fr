@@ -1,18 +1,18 @@
 ---
 title: Utiliser plusieurs comptes d’utilisateur
-ms.date: 07/23/2019
+ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800227"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671335"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
@@ -33,7 +33,7 @@ Connectez-vous à Visual Studio avec un compte Microsoft ou un compte profession
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accès à votre compte Azure dans l'Explorateur de serveurs
 
-Pour ouvrir Explorateur de serveurs, choisissez **Afficher**  >  les**Explorateur de serveurs** (ou, si vous utilisez les [paramètres d’environnement](../ide/environment-settings.md)« général », appuyez sur **CTRL** + **ALT** + **S**). Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
+Pour ouvrir Explorateur de serveurs, choisissez **Afficher**  >  les **Explorateur de serveurs** (ou, si vous utilisez les [paramètres d’environnement](../ide/environment-settings.md)« général », appuyez sur **CTRL** + **ALT** + **S**). Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
 
 ![Explorateur de serveurs avec nœud Azure développé](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -83,7 +83,7 @@ Pour plus d’informations, voir [Se connecter à des projets dans Team Explorer
 
 Pour ajouter un compte supplémentaire dans Visual Studio :
 
-1. Choisissez **File**  >  **paramètres du compte**de fichier.
+1. Choisissez **File**  >  **paramètres du compte** de fichier.
 
 1. Sous **Tous les comptes**, choisissez **Ajouter un compte**.
 
@@ -124,6 +124,15 @@ Pour vous connecter avec le flux de code d’appareil :
    ![Connexion à Visual Studio établie sur le navigateur](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
 
 1. Revenez à la page de gestion des comptes dans Visual Studio : le nouveau compte apparaît sous **Tous les comptes**. Choisissez **Fermer**.
+
+::: moniker range=">=vs-2019"
+
+### <a name="add-a-github-account-to-visual-studio"></a>Ajouter un compte GitHub à Visual Studio
+
+À partir de la version 16,8, vous pouvez ajouter des comptes GitHub et GitHub Enterprise à votre trousseau. Vous serez en mesure de les ajouter et de les utiliser comme vous le feriez avec des comptes Microsoft, ce qui signifie que vous aurez plus de temps pour accéder à vos ressources GitHub dans Visual Studio.
+
+Pour obtenir des instructions détaillées, consultez [utiliser des comptes GitHub dans Visual Studio](work-with-github-accounts.md).
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

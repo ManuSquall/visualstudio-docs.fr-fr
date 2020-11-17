@@ -1,6 +1,8 @@
 ---
 title: LocationField, élément (modèles de projet Visual Studio)
 titleSuffix: ''
+description: En savoir plus sur l’élément LocationField et sur la façon dont il spécifie si la zone de texte emplacement de la boîte de dialogue Nouveau projet est activée, désactivée ou masquée pour le modèle de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aafe51669bcc95d6024b5a3fd749ba70ea8ddc7
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739136"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671270"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Élément LocationField (modèles de projet Visual Studio)
 Spécifie si la zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** est activée, désactivée ou masquée pour le modèle de projet.
@@ -59,7 +61,7 @@ Spécifie si la zone de texte **emplacement** dans la boîte de dialogue **nouve
 
 - `Hidden`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est masquée.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La valeur par défaut est `Enabled`.
 
  La zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** permet aux utilisateurs de modifier le répertoire par défaut dans lequel les nouveaux projets sont enregistrés.

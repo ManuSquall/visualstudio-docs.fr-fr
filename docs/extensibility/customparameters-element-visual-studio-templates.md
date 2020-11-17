@@ -1,5 +1,7 @@
 ---
 title: Élément CustomParameters, (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément CustomParameters, et sur la façon dont il regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque l’Assistant effectue des remplacements de paramètres.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c78c8a038df33d9b548229966402d0058f53144
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739409"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671477"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>Élément CustomParameters, (modèles Visual Studio)
 Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque l’Assistant effectue des remplacements de paramètres.
@@ -50,7 +52,7 @@ Regroupe les paramètres personnalisés qui doivent être passés à l’Assista
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Spécifie le contenu du modèle.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre comment utiliser plusieurs paramètres personnalisés dans un modèle. Lorsqu’un projet ou un élément est créé à partir d’un modèle avec les paramètres personnalisés suivants, toutes les instances de `$color1$` et `$color2$` dans les fichiers de modèles sont remplacées par `Red` et `Blue` , respectivement.

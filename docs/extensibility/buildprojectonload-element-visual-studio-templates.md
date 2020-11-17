@@ -1,5 +1,7 @@
 ---
 title: Élément BuildProjectOnload (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément BuildProjectOnload et sur la façon dont il génère uniquement les nouveaux projets au fur et à mesure que vous les créez et que vous les ajoutez à une solution.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739947"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671590"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Élément BuildProjectOnload (modèles Visual Studio)
 Génère uniquement les nouveaux projets au fur et à mesure que vous les créez et les ajoute à une solution. L’ensemble de la solution n’est pas généré.
@@ -53,7 +55,7 @@ Hiérarchie d’éléments :
 
  Le texte doit être `true` ou `false` pour indiquer s’il faut générer uniquement le nouveau projet lorsqu’il est créé à partir du modèle.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `BuildProjectOnLoad` est un élément facultatif. La valeur par défaut est `false`.
 
 ## <a name="example"></a>Exemple

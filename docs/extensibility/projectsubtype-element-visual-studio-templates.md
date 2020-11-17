@@ -1,5 +1,7 @@
 ---
 title: ProjectSubType, élément (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément ProjectSubType et la façon dont il classe le modèle dans une sous-catégorie de la valeur spécifiée dans l’élément ProjectType.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701830"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672318"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, élément (modèles Visual Studio)
 Classe le modèle dans une sous-catégorie de la valeur spécifiée dans l' `ProjectType` élément.
@@ -53,7 +55,7 @@ Classe le modèle dans une sous-catégorie de la valeur spécifiée dans l' `Pro
 
  Cette valeur spécifie la sous-catégorie du modèle.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `ProjectSubType` est un élément enfant facultatif de `TemplateData`.
 
  L' `ProjectSubType` élément fournit une sous-catégorie à l’élément [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) . Cette valeur peut inclure :

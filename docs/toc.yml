@@ -705,7 +705,7 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: "Tutoriel\_3\_: Créer un jeu de combinaisons (C#)"
                   items:
-                    - name: Vue d’ensemble
+                    - name: Vue d'ensemble
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: "Étape\_1\_: Créer un projet et ajouter une table à votre formulaire"
@@ -945,7 +945,7 @@
       displayName: 'marketplace, gallery, vsix'
     - name: Gérer les outils externes
       href: ide/managing-external-tools.md
-    - name: Comptes de personnalisation
+    - name: Gérer des comptes
       items:
         - name: Se connecter à Visual Studio
           displayName: personalization accounts
@@ -954,6 +954,8 @@
           href: ide/work-with-multiple-user-accounts.md
         - name: Utiliser des comptes qui demandent une authentification multifacteur
           href: ide/work-with-multi-factor-authentication.md
+        - name: Utiliser des comptes GitHub dans Visual Studio
+          href: ide/work-with-github-accounts.md
         - name: Prolonger une version d’évaluation ou mettre à jour une licence
           href: ide/how-to-unlock-visual-studio.md
     - name: Réglage des performances de Visual Studio

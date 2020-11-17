@@ -1,5 +1,7 @@
 ---
 title: Élément CreateNewFolder (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément CreateNewFolder et sur la façon dont il détermine s’il faut vérifier que le répertoire cible dans lequel le projet doit être créé n’existe pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739668"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671577"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Élément CreateNewFolder (modèles Visual Studio)
 Détermine s'il convient de vérifier que le répertoire cible où le projet doit être créé n'existe pas. Si le répertoire existe, un nouveau répertoire peut être créé pour le projet. Ce paramètre est généralement remplacé par l'indicateur de registre `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que tous les types de projets courants utilisent pour déterminer s'il convient de créer un nouveau projet dans un nouveau répertoire.
@@ -57,7 +59,7 @@ Détermine s'il convient de vérifier que le répertoire cible où le projet doi
 
  Le texte doit être `true` ou `false`, indiquant si un nouveau dossier conteneur doit être créé ou non quand un projet est créé à partir du modèle.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `CreateNewFolder` est un élément facultatif. La valeur par défaut est `true`.
 
  La valeur spécifiée dans l'élément `CreateNewFolder` est honorée uniquement par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si le système de projet sous-jacent la prend en charge.
