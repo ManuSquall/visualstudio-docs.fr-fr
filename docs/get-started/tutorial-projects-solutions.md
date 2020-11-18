@@ -1,6 +1,6 @@
 ---
 title: Présentation des projets et solutions
-ms.date: 02/24/2020
+ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579976"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704051"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Découvrir les projets et les solutions
 
@@ -70,6 +70,9 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 3. Sur la page **Créer un projet**, entrez **nouvelle solution** dans la zone de recherche, sélectionnez le modèle **Nouvelle solution**, puis choisissez **Suivant**.
 
    ![Modèle de solution vide dans Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+
+    > [!TIP]
+    > Si vous avez plusieurs charges de travail installées, le modèle de **solution vide** peut ne pas apparaître en haut de la liste des résultats de la recherche. Essayez de faire défiler vers les **autres résultats en fonction de votre** section de recherche de la liste. Il doit y figurer.
 
 4. Nommez la solution **QuickSolution**, puis choisissez **Créer**.
 
@@ -267,7 +270,7 @@ Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **tes
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Si l' **Explorateur de tests** ne s’ouvre pas automatiquement, ouvrez-le en sélectionnant **tester**  >  l’Explorateur de**tests** dans la barre de menus.
+> Si l' **Explorateur de tests** ne s’ouvre pas automatiquement, ouvrez-le en sélectionnant **tester**  >  l’Explorateur de **tests** dans la barre de menus.
 
 ::: moniker-end
 

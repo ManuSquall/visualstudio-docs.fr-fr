@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492892"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703999"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -173,15 +173,15 @@ Pour créer un espace de noms xmlns personnalisé dans WPF .NET Core, vous devez
 [assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
    ```
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous rencontrez un problème qui n’est pas mentionné dans cette section, faites-le nous savoir en utilisant l’outil [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) .
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Spécifications
 
 - Les données au moment du design nécessitent Visual Studio 2019 version [16,7](/visualstudio/releases/2019/release-notes) ou ultérieure.
 
-- Prend en charge les projets de bureau Windows ciblant Windows Presentation Foundation (WPF) pour .NET Core et UWP. Cette fonctionnalité est également disponible pour .NET Framework si la fonctionnalité « nouvelle Concepteur XAML WPF pour .NET Framework » est activée.
+- Prend en charge les projets de bureau Windows qui ciblent Windows Presentation Foundation (WPF) pour .NET Core et UWP. Cette fonctionnalité est également disponible dans la version [préliminaire du canal](/visualstudio/releases/2019/release-notes-preview) pour .NET Framework. Pour l’activer, accédez à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités**, sélectionnez **nouveau concepteur XAML WPF pour .NET Framework** puis redémarrez Visual Studio.
 
 - À compter de Visual Studio 2019 version 16,7, cette fonctionnalité fonctionne avec tous les contrôles intégrés des frameworks WPF et UWP. La prise en charge des contrôles tiers est désormais disponible dans la version préliminaire de 16,8.
 

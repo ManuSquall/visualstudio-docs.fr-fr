@@ -1,6 +1,6 @@
 ---
 title: Utiliser des comptes GitHub dans Visual Studio
-ms.date: 11/13/2020
+ms.date: 11/16/2020
 ms.custom: ''
 ms.topic: conceptual
 description: Découvrez comment utiliser Visual Studio avec des comptes GitHub.
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: cdea71e2d5c376e465bb5cdb990ec7ed45caa1f3
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672357"
+ms.locfileid: "94704021"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>Utiliser des comptes GitHub dans Visual Studio
 
-Si vous avez un compte public GitHub ou GitHub Enterprise, vous pouvez l’ajouter à votre trousseau Visual Studio. Une fois votre compte ajouté, vous pourrez tirer parti de l’intégration de la plateforme en accédant à et en créant des dépôts GitHub, directement à partir de Visual Studio.  
+Si vous avez un compte public GitHub ou GitHub Enterprise, vous pouvez l’ajouter à votre trousseau Visual Studio. Une fois votre compte ajouté, vous pourrez tirer parti de l’intégration de la plateforme en accédant à et en créant des dépôts GitHub, directement à partir de Visual Studio.
 
 ## <a name="adding-public-github-accounts"></a>Ajout de comptes GitHub publics
 
