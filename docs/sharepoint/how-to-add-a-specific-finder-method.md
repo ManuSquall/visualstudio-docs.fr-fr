@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une méthode de recherche spécifique | Microsoft Docs'
+description: Pour obtenir une instance d’entité, ajoutez une méthode de recherche. Le service BDC appelle la méthode lorsqu’un utilisateur choisit une entité dans un composant WebPart de données métier ou une liste externe.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014812"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849726"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Comment : ajouter une méthode de recherche spécifique
   Vous pouvez retourner une instance d’entité unique en créant une méthode de *recherche spécifique* . Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans un composant WebPart de données métier ou une liste externe. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -61,7 +63,7 @@ ms.locfileid: "86014812"
    > Vous n’avez pas besoin d’effectuer cette étape si vous avez ajouté une méthode de recherche à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche.
 
    > [!NOTE]
-   > Si le champ d’identificateur du type d’entité représente un champ dans une table de base de données qui est générée automatiquement, affectez la valeur **true**à la propriété **en lecture seule** du champ d’identificateur.
+   > Si le champ d’identificateur du type d’entité représente un champ dans une table de base de données qui est générée automatiquement, affectez la valeur **true** à la propriété **en lecture seule** du champ d’identificateur.
 
 6. Dans la fenêtre **Détails de méthode** , choisissez l’instance de méthode de la méthode.
 

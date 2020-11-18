@@ -1,6 +1,8 @@
 ---
 title: 'Comment : ajouter une propriété à une extension d’élément de projet SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Utilisez une extension d’élément de projet SharePoint pour ajouter une propriété à un élément de projet SharePoint qui est déjà installé dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584254"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850167"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Comment : ajouter une propriété à une extension d’élément de projet SharePoint
   Vous pouvez utiliser une extension d’élément de projet pour ajouter une propriété à un élément de projet SharePoint déjà installé dans Visual Studio. La propriété s’affiche dans la fenêtre **Propriétés** lorsque l’élément de projet est sélectionné dans **Explorateur de solutions**.
@@ -35,7 +37,7 @@ ms.locfileid: "91584254"
 
 3. Dans le gestionnaire d’événements pour l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> événement, ajoutez une instance de votre classe de propriétés à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> collection du paramètre d’arguments d’événement.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment ajouter une propriété nommée **example Property** à l’élément de projet récepteur d’événements.
 
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs#8)]

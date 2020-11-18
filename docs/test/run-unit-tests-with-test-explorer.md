@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386639"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850024"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -158,7 +158,7 @@ Vous pouvez définir vos propres niveaux de hiérarchie et effectuer un regroupe
 ::: moniker range="vs-2017"
 |Groupe|Description|
 |-|-----------------|
-|**Durée**|Regroupe les tests selon la durée d'exécution : **Rapide**, **Moyenne**et **Lente**.|
+|**Durée**|Regroupe les tests selon la durée d'exécution : **Rapide**, **Moyenne** et **Lente**.|
 |**Résultat**|Regroupe les tests selon les résultats de l'exécution : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
 |**Caractéristiques**|Regroupe les tests selon les paires catégorie/valeur que vous définissez. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
 |**Projet**|Regroupe les tests selon le nom des projets.|
@@ -166,7 +166,7 @@ Vous pouvez définir vos propres niveaux de hiérarchie et effectuer un regroupe
 ::: moniker range=">=vs-2019"
 |Groupe|Description|
 |-|-----------------|
-|**Durée**|Regroupe les tests par heure d’exécution : **rapide**, **moyenne**et **lente**.|
+|**Durée**|Regroupe les tests par heure d’exécution : **rapide**, **moyenne** et **lente**.|
 |**State**|Groupes de tests par résultats d’exécution : **échecs de tests**, **tests ignorés**, **tests réussis**, **non exécutés**|
 |**Framework cible** | Regroupe les tests en fonction du framework ciblé par leurs projets |
 |**Espace de noms**|Regroupe les tests en fonction de l’espace de noms conteneur.|
@@ -233,6 +233,21 @@ La sélection s’ouvre dans un nouvel onglet de l’Explorateur de tests. Vous 
 Vous pouvez également cocher ou décocher les cases des groupes parents dans la hiérarchie. Cette action crée une sélection dynamique qui met toujours à jour la sélection en fonction des tests qui se trouvent dans ce groupe. Par exemple, si vous placez une coche en regard d’une classe, tout test ajouté à partir de cette classe devient une partie de cette playlist. Si vous supprimez un test de cette classe, il est supprimé de la sélection. Vous pouvez en savoir plus sur les règles en enregistrant la sélection à l’aide du bouton enregistrer dans la barre d’outils et en ouvrant le fichier *. playlist* créé sur votre disque. Ce fichier répertorie toutes les règles et les tests individuels qui composent une sélection.
 
 ![Fichier XML de sélection](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
+
+Si vous souhaitez créer une sélection pour les caractéristiques, utilisez le format ci-dessous. Assurez-vous qu’il y a un espace entre votre `TestCategory` nom et le `[Value]` .
+```xml
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+        <Rule Match="Any">
+            <Property Name="Trait" Value="TestCategory [Value]" />
+        </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
+```
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"

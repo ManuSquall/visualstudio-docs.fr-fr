@@ -1,6 +1,8 @@
 ---
 title: Création de contrôles réutilisables pour des composants WebPart ou des pages d’application | Microsoft Docs
 titleSuffix: ''
+description: Créez des contrôles personnalisés et réutilisables (contrôles utilisateur) dans Visual Studio qui peuvent être utilisés par les pages d’application et les composants WebPart qui s’exécutent dans SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3052b2eab3dc353cdccc991a793c47485037fe8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2e9d2f3a99e3e43ebf40208bf8dfc01d5ac92dca
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585091"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850596"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application
   Dans Visual Studio, vous pouvez créer des contrôles personnalisés et réutilisables qui peuvent être utilisés par les pages d’application et les composants WebPart qui s’exécutent dans SharePoint. Ces contrôles sont appelés contrôles utilisateur. Un contrôle utilisateur est un type de contrôle composite qui fonctionne très bien comme une page Web ASP.NET. vous pouvez ajouter des contrôles serveur Web existants et des balises à un contrôle utilisateur, et définir des propriétés et des méthodes pour le contrôle. Vous pouvez ensuite les incorporer dans des pages Web ASP.NET, où elles jouent le rôle d’unité.
@@ -59,6 +61,6 @@ ms.locfileid: "91585091"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Comment : créer un contrôle utilisateur pour une page d’application SharePoint ou un composant WebPart](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Montre comment créer des contrôles personnalisés et réutilisables qui peuvent être utilisés par les pages d’application et les composants WebPart qui s’exécutent dans SharePoint.|

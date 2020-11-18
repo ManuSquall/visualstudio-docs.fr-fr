@@ -1,6 +1,8 @@
 ---
 title: 'Convertir : types de système de projet SharePoint vers/à partir d’autres types'
 titleSuffix: ''
+description: Effectuer une conversion entre des types système de projet SharePoint et d’autres types de projets Visual Studio. Consultez une liste qui détaille les types qui peuvent être convertis.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44b3e32114b10eae776f39e4c3d7337bba636f3f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 75f8a2072e81936c4c1c691261e301aae37b0191
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584644"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850479"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Effectuer une conversion entre des types système de projet SharePoint et d’autres types de projets Visual Studio
   Dans certains cas, vous pouvez avoir un objet dans le système de projet SharePoint et vous souhaitez utiliser les fonctionnalités d’un objet correspondant dans le modèle objet Automation Visual Studio ou le modèle objet d’intégration, ou vice versa. Dans ce cas, vous pouvez utiliser la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> méthode du service de projet SharePoint pour convertir l’objet en un modèle d’objet différent.
@@ -32,10 +34,10 @@ ms.locfileid: "91584644"
 
 |Type de système de projet SharePoint|Types correspondants dans les modèles objet Automation et intégration|
 |------------------------------------|-------------------------------------------------------------------------|
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>|<xref:EnvDTE.Project><br /><br /> ou<br /><br /> Toute interface dans le modèle objet d’intégration Visual Studio qui est implémentée par l’objet COM sous-jacent pour le projet. Ces interfaces incluent <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> (ou une interface dérivée) et <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> . Pour obtenir la liste des interfaces principales implémentées par les projets, consultez [composants de base du modèle de projet](../extensibility/internals/project-model-core-components.md).|
-|<xref:Microsoft.VisualStudio.SharePoint.IMappedFolder><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>|<xref:EnvDTE.ProjectItem><br /><br /> ou<br /><br /> <xref:System.UInt32>Valeur (également appelée VSITEMID) qui identifie le membre du projet dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> qui le contient. Cette valeur peut être passée au paramètre *ItemId* de certaines <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> méthodes.|
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>|<xref:EnvDTE.Project><br /><br /> or<br /><br /> Toute interface dans le modèle objet d’intégration Visual Studio qui est implémentée par l’objet COM sous-jacent pour le projet. Ces interfaces incluent <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> (ou une interface dérivée) et <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> . Pour obtenir la liste des interfaces principales implémentées par les projets, consultez [composants de base du modèle de projet](../extensibility/internals/project-model-core-components.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.IMappedFolder><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile><br /><br /> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>|<xref:EnvDTE.ProjectItem><br /><br /> or<br /><br /> <xref:System.UInt32>Valeur (également appelée VSITEMID) qui identifie le membre du projet dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> qui le contient. Cette valeur peut être passée au paramètre *ItemId* de certaines <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> méthodes.|
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment utiliser la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> méthode pour convertir un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objet en <xref:EnvDTE.Project> .
 
  [!code-csharp[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs#2)]

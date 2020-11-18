@@ -1,5 +1,7 @@
 ---
 title: Création d’un modèle de connectivité de données métiers | Microsoft Docs
+description: Créer un modèle de connectivité de données métiers (BDC) ou personnaliser un modèle BDC existant à l’aide de Visual Studio. Chaque projet SharePoint ne peut contenir qu’un seul modèle.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839413"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850466"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Créer un modèle de connectivité de données métiers
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) ou personnaliser un modèle BDC existant à l’aide de Visual Studio. Chaque projet SharePoint ne peut contenir qu’un seul modèle. Pour plus d’informations, consultez [intégrer des données métier dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -62,7 +64,7 @@ ms.locfileid: "90839413"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)|Montre comment créer un modèle BDC.|
 |[Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Montre comment importer un modèle existant dans un projet SharePoint.|

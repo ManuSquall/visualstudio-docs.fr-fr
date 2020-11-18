@@ -1,25 +1,45 @@
 ---
 title: Se connecter aux projets dans Team Explorer
-ms.date: 07/07/2020
+description: Découvrez comment utiliser Team Explorer dans Visual Studio pour travailler avec les membres de l’équipe pour développer et gérer des projets.
+ms.date: 11/17/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: ff2e78698bb9180a50a4c2c8014b88dfd07b0b77
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4e4fdfb26c601ce6b706c1c946ea9afe9b18ecb2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829906"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850089"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Se connecter aux projets dans Team Explorer
 
+::: moniker range="vs-2017"
+
 Utilisez la fenêtre d’outil **Team Explorer** pour coordonner vos efforts de codage avec d’autres membres d’équipe afin de développer un projet, et pour gérer le travail assigné à vous-même, à votre équipe ou à vos projets. **Team Explorer** connecte Visual Studio aux dépôts Git et GitHub, aux référentiels Team Foundation Version Control (TFVC) et aux projets hébergés sur [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou un serveur [Azure DevOps Server](/azure/devops/index-all) sur site (anciennement appelé TFS). Vous pouvez gérer le code source, les éléments de travail et les générations.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Vous pouvez utiliser la fenêtre outil **Team Explorer** pour coordonner vos efforts de code avec d’autres membres de l’équipe pour développer un projet et pour gérer le travail qui vous est assigné, votre équipe ou vos projets.
+
+> [!IMPORTANT]
+> Avec la dernière version de Visual Studio 2019 [version 16,8](/visualstudio/releases/2019/release-notes/), la nouvelle expérience de contrôle de version git est désormais activée par défaut. Toutefois, si vous préférez continuer à utiliser Team Explorer, accédez à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités** , puis activez la case à cocher **nouvelle expérience utilisateur git** . Pour plus d’informations, consultez la page [interface git dans Visual Studio](git-with-visual-studio.md) .
+
+**Team Explorer** connecte Visual Studio aux dépôts Git et GitHub, aux référentiels Team Foundation Version Control (TFVC) et aux projets hébergés sur [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou un serveur [Azure DevOps Server](/azure/devops/index-all) sur site (anciennement appelé TFS). Vous pouvez gérer le code source, les éléments de travail et les générations.
+
+::: moniker-end
 
 ![Page d’accueil de Team Explorer dans Visual Studio](media/team-explorer/team-explorer.png)
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Si vous ouvrez Visual Studio et que **Team Explorer** ne s’affiche pas, ouvrez-le en choisissant **Afficher**  >  les**Team Explorer** dans la barre de menus, ou en appuyant sur **CTRL** + **&#92;**, **CTRL** + **M**.
+> Si vous ouvrez Visual Studio et que **Team Explorer** ne s’affiche pas, ouvrez-le en choisissant **Afficher**  >  les **Team Explorer** dans la barre de menus, ou en appuyant sur **CTRL** + **&#92;**, **CTRL** + **M**.
+
+::: moniker-end
 
 ## <a name="connect-to-a-project-or-repository"></a>Se connecter à un projet ou à un référentiel
 
@@ -42,6 +62,7 @@ Pour se connecter à un projet :
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Nouvelle expérience git dans Visual Studio](git-with-visual-studio.md)
 - [Didacticiel : ouvrir un projet à partir d’un référentiel](../get-started/tutorial-open-project-from-repo.md)
 - [Informations de référence sur Team Explorer](reference/team-explorer-reference.md)
 - [Se connecter à un projet (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

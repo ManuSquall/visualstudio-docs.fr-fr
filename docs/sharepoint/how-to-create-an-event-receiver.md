@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer un récepteur d’événements | Microsoft Docs'
+description: Créez un récepteur d’événements pour pouvoir répondre lorsqu’un utilisateur interagit avec des éléments SharePoint, tels que des listes ou des éléments de liste.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016925"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849881"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Comment : créer un récepteur d’événements
   En créant des *récepteurs d’événements*, vous pouvez répondre lorsqu’un utilisateur interagit avec des éléments SharePoint, tels que des listes ou des éléments de liste. Par exemple, le code d’un récepteur d’événements peut être déclenché lorsqu’un utilisateur modifie le calendrier ou supprime un nom d’une liste de contacts. En suivant cette rubrique, vous pouvez apprendre à ajouter un récepteur d’événements à une instance de liste.

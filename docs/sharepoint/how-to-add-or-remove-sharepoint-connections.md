@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : ajouter ou supprimer des connexions SharePoint | Microsoft Docs'
+description: Ajoutez ou supprimez des connexions SharePoint à l’aide du nœud Connexions SharePoint dans la fenêtre Explorateur de serveurs de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cec1389294c8baf169db055acb87619114d7d19b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014569"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850713"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Procédure : ajouter ou supprimer des connexions SharePoint
   Explorateur de serveurs vous permet de parcourir les sites SharePoint ainsi que les connexions de données. Toutefois, avant de pouvoir parcourir le contenu d’un site SharePoint, vous devez l’ajouter au nœud **Connexions SharePoint** .

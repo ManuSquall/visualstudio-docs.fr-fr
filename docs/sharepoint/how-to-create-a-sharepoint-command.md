@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer une commande SharePoint | Microsoft Docs'
+description: Découvrez comment créer une commande SharePoint personnalisée pour appeler l’API du modèle d’objet serveur dans une extension d’outils SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016219"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850700"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Comment : créer une commande SharePoint
   Si vous souhaitez utiliser le modèle d’objet serveur dans une extension d’outils SharePoint, vous devez créer une *commande SharePoint* personnalisée pour appeler l’API. Vous définissez la commande SharePoint dans un assembly qui peut appeler directement le modèle d’objet serveur.
@@ -53,7 +55,7 @@ ms.locfileid: "86016219"
 
     - Le deuxième paramètre et la valeur de retour doivent être un type qui peut être sérialisé par le Windows Communication Foundation (WCF). Pour plus d’informations, consultez [types pris en charge par le sérialiseur de contrat de données](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) et [utilisation de la classe XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - La méthode peut avoir n’importe quelle visibilité (**publique**, **interne**ou **privée**) et elle peut être statique ou non statique.
+    - La méthode peut avoir n’importe quelle visibilité (**publique**, **interne** ou **privée**) et elle peut être statique ou non statique.
 
 4. Appliquez <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> à la méthode. Cet attribut spécifie un identificateur unique pour la commande. Cet identificateur ne doit pas nécessairement correspondre au nom de la méthode.
 

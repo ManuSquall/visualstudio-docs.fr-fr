@@ -1,6 +1,8 @@
 ---
 title: 'Comment : créer un récepteur d’événements pour une instance de liste spécifique | Microsoft Docs'
 titleSuffix: ''
+description: Créer un récepteur d’événements pour une instance de liste spécifique. Un récepteur d’événements de l’instance de liste répond aux événements qui se produisent dans une instance d’une définition de liste.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585834"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849894"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Comment : créer un récepteur d’événements pour une instance de liste spécifique
   Un récepteur d’événements de l’instance de liste répond aux événements qui se produisent dans une instance d’une définition de liste. Bien que le modèle de récepteur d’événements ne permette pas le ciblage d’une instance de liste spécifique, vous pouvez modifier un récepteur d’événements dont l’étendue correspond à une définition de liste pour répondre aux événements dans une instance de liste spécifique.

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une référence de sortie de projet | Microsoft Docs'
+description: Apprenez à ajouter une référence de sortie de projet afin de pouvoir déployer des assemblys de projet non-SharePoint (ou des fichiers. xap dans des projets Silverlight) sur SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03980eea9d16cde2b6f079e0b33973958fed7a7f
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016752"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849868"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Comment : ajouter une référence de sortie de projet
   Pour déployer des assemblys de projet non-SharePoint (ou des fichiers. xap dans des projets Silverlight) vers SharePoint, ajoutez-les en tant que référence de sortie de projet.

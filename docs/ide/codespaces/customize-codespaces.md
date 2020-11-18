@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862223"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850505"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Comment personnaliser un codeSpace (version préliminaire)
 
@@ -84,7 +84,7 @@ GitHub Codespaces prend en charge les *devcontainer.jssuivantes sur* les propri�
 
 ## <a name="customize-with-devinit"></a>Personnaliser avec devinit
 
-[devinit](../../devinit/getting-started-with-devinit.md) est un outil de ligne de commande inclus dans Windows codespaces qui vous permet d’installer des frameworks et des outils dans votre environnement. Il peut être exécuté manuellement à partir d’une invite de commandes ( `devinit -t require-dotnetcoresdk` ), mais sa véritable puissance provient de la création d’un [ *.devinit.jspersonnalisé sur le* ](../../devinit/devinit-json.md) fichier pour configurer de manière uniforme un codeSpace à chaque fois que vous en créez un.
+[devinit](../../devinit/getting-started-with-devinit.md) est un outil de ligne de commande inclus dans Windows codespaces qui vous permet d’installer des frameworks et des outils dans votre environnement. Il peut être exécuté manuellement à partir d’une invite de commandes ( `devinit run -t require-dotnetcoresdk` ), mais sa véritable puissance provient de la création d’un [ *.devinit.jspersonnalisé sur le*](../../devinit/devinit-json.md) fichier pour configurer de manière uniforme un codeSpace à chaque fois que vous en créez un.
 
 `devinit` comprend un ensemble d’outils permettant d’installer des éléments spécifiques, tels que des SQL Server et des Azure CLI, ainsi que des gestionnaires de packages généraux tels que Chocolate, NPM et vcpkg. Vous trouverez la liste complète des `devinit` outils dans la documentation sur les [outils disponibles](../../devinit/devinit-tool-list.md) .
 
@@ -122,7 +122,7 @@ En spécifiant `devinit init` , `devinit` est exécuté à l’aide de votre *de
 }
 ```
 
-### <a name="an-example"></a>exemple
+### <a name="an-example"></a>Exemple
 
 Voici un exemple simple d’installation de l’outil en ligne de commande Entity Framework .NET Core, `dotnet-ef` .
 

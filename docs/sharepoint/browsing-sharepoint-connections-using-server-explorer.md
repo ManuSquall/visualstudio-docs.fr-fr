@@ -1,5 +1,7 @@
 ---
 title: Exploration des connexions SharePoint à l’aide de Explorateur de serveurs | Microsoft Docs
+description: Parcourez les connexions SharePoint à l’aide de Explorateur de serveurs. En savoir plus sur les nœuds de Explorateur de serveurs et les commandes de menu contextuel de nœud.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016350"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849829"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Parcourir les connexions SharePoint à l’aide de Explorateur de serveurs
-  Vous pouvez maintenant parcourir les connexions SharePoint locales dans **Explorateur de serveurs**. À l’aide de cette technique, vous pouvez naviguer dans les composants d’un site SharePoint sur votre système. Les composants de site SharePoint, tels que les définitions de listes et les types de contenu, apparaissent dans un nœud nommé **Connexions SharePoint** dans l’arborescence de **Explorateur de serveurs**. Pour afficher **Explorateur de serveurs**, dans la barre de menus, choisissez **Afficher**les  >  **Explorateur de serveurs**. Outre l’affichage des composants de site SharePoint, vous pouvez supprimer des éléments, afficher leurs propriétés ou actualiser l’arborescence à l’aide des commandes du menu contextuel.
+  Vous pouvez maintenant parcourir les connexions SharePoint locales dans **Explorateur de serveurs**. À l’aide de cette technique, vous pouvez naviguer dans les composants d’un site SharePoint sur votre système. Les composants de site SharePoint, tels que les définitions de listes et les types de contenu, apparaissent dans un nœud nommé **Connexions SharePoint** dans l’arborescence de **Explorateur de serveurs**. Pour afficher **Explorateur de serveurs**, dans la barre de menus, choisissez **Afficher** les  >  **Explorateur de serveurs**. Outre l’affichage des composants de site SharePoint, vous pouvez supprimer des éléments, afficher leurs propriétés ou actualiser l’arborescence à l’aide des commandes du menu contextuel.
 
 > [!IMPORTANT]
 > Pour parcourir un site SharePoint, vous devez être administrateur de la collection de sites SharePoint et vous devez exécuter Visual Studio en tant qu’administrateur de l’ordinateur local. Dans le cas contraire, le site s’affiche dans **Explorateur de serveurs**, mais vous ne pouvez pas développer son nœud. Pour vérifier si vous êtes un administrateur de la collection de sites, ouvrez le site dans un navigateur Web, ouvrez le menu **actions du site** , choisissez **autorisations du site**, puis, dans la page **autorisations : site d’équipe** , choisissez la commande administrateurs de la collection de **sites** dans le groupe **gérer** sur le ruban. Votre nom apparaîtra dans la zone de texte si vous êtes administrateur de collection de sites. Si la commande administrateurs de la **collection de sites** n’apparaît pas dans le groupe gérer sur le ruban, vous n’êtes pas administrateur de la collection de sites et vous devez obtenir les autorisations appropriées auprès de l’administrateur du site.
@@ -38,14 +40,14 @@ ms.locfileid: "86016350"
 |Nom de la commande|Description|
 |------------------|-----------------|
 |Actualiser|Met à jour l’arborescence pour refléter toutes les modifications qui ont pu se produire depuis la dernière affichage du nœud.|
-|Supprimer|Supprime le nœud sélectionné de l’arborescence. **Remarque :**  Cette commande est activée uniquement sur les connexions SharePoint listées sous le nœud **Connexions SharePoint** .|
+|DELETE|Supprime le nœud sélectionné de l’arborescence. **Remarque :**  Cette commande est activée uniquement sur les connexions SharePoint listées sous le nœud **Connexions SharePoint** .|
 |Propriétés|Affiche les propriétés disponibles pour le nœud sélectionné dans la fenêtre **Propriétés** . Les propriétés sont en lecture seule, et tous les nœuds n’ont pas de propriétés associées.|
 |Ajouter une connexion|Vous permet de spécifier un site SharePoint que vous souhaitez parcourir. Disponible sur le nœud **Connexions SharePoint** et les nœuds de sous-site.|
 |Afficher dans le navigateur|Affiche la liste sélectionnée dans le navigateur Web. Cette commande est disponible sur certaines listes sous le nœud **listes** qui est contenu dans les **listes et les bibliothèques**.|
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Procédure : ajouter ou supprimer des connexions SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Décrit les étapes requises pour ajouter un nouveau site SharePoint au nœud **Connexions SharePoint** dans **Explorateur de serveurs**.|
 

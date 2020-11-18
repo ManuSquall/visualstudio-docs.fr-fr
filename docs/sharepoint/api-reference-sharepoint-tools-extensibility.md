@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur les API (extensibilité des outils SharePoint) | Microsoft Docs
+description: Consultez la documentation de référence sur les API pour étendre les outils SharePoint dans Visual Studio. Consultez la liste des espaces de noms connexes, tels que Microsoft. VisualStudio. SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,24 +14,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987985"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850388"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Informations de référence sur les API (extensibilité des outils SharePoint)
   Cette section contient la documentation de référence sur les API permettant d’étendre les outils SharePoint dans Visual Studio.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  <xref:Microsoft.VisualStudio.SharePoint>
 
  Contient les types que vous utilisez pour étendre le système de projet SharePoint. Par exemple, vous pouvez étendre les éléments de projet et les projets SharePoint intégrés, ou vous pouvez créer vos propres éléments de projet.
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- Contient des types que vous pouvez utiliser pour créer des *commandes SharePoint*personnalisées. Une commande SharePoint est une méthode qui appelle le modèle objet serveur SharePoint à partir d'une extension des outils SharePoint.
+ Contient des types que vous pouvez utiliser pour créer des *commandes SharePoint* personnalisées. Une commande SharePoint est une méthode qui appelle le modèle objet serveur SharePoint à partir d'une extension des outils SharePoint.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 

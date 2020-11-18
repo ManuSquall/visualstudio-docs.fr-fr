@@ -2,17 +2,17 @@
 title: Avantage du Support de la communauté Azure dans Visual Studio Subscription | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 07/29/2019
+ms.date: 11/17/2020
 ms.topic: conceptual
 description: Découvrez l’avantage du Support de la communauté Azure inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 285b10670c10b2b2d14af45bfe23e891b08bbb5b
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353211"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850531"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum du Support de la communauté Azure dans les abonnements Visual Studio
 Obtenez de l’aide directement de la part de l’équipe Azure au sein de forums de support sélectionnés via la Communauté Azure.  L’avantage Communauté Azure vous offre l’accès à une collection de forums axés sur les rubriques relatives à Azure.
@@ -49,7 +49,7 @@ Obtenez de l’aide directement de la part de l’équipe Azure au sein de forum
     :::column-end:::
 :::row-end:::
 
-## <a name="get-started"></a>Bien démarrer
+## <a name="get-started"></a>Prise en main
 Il est facile de bien démarrer avec la Communauté Azure.
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
@@ -70,13 +70,13 @@ La disponibilité de l’avantage Azure Community dépend de votre niveau d’ab
 
 |                                          Niveau de l’abonnement                                           |     Canaux      |    Avantage    | Renouvelable ? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard)                           | Licences en volume, Azure, Détail |   Une année    |    Oui     |
+|                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | Licences en volume, Azure, Détail |   Une année    |    Oui     |
 |                           Visual Studio Enterprise avec GitHub Enterprise                           | Licences en volume, Azure, Détail |   Une année    |    Oui     |
 |                          Visual Studio Professional (Standard)                          | Licences en volume, Azure, Détail |   Une année    |    Oui     |
 |                          Visual Studio Professional avec GitHub Enterprise                          | Licences en volume, Azure, Détail |   Une année    |    Oui     |
 |                              Visual Studio Test Professional (Standard)                               |    Licences en volume, Détail     |   Une année    |    Oui     |
 |                                       Plateformes MSDN (Standard)                                       |    Licences en volume, Détail     |   Une année    |    Oui     |
-| Visual Studio Enterprise (cloud mensuel), Visual Studio Professional (cloud mensuel), NFR<sup>1</sup> |        Tous        | Non disponible |     Non     |
+| Visual Studio Enterprise (Cloud mensuel), Visual Studio Professional (Cloud mensuel)|        Tous        | Non disponible |     Non     |
 
 <sup>1</sup>*comprend : la revente interdite (NFR), Microsoft FTE, MVP (Most Valuable Professional), le directeur régional (RD), le BizSpark, imagine, Microsoft Certified TRAINer (MCT* )  
 

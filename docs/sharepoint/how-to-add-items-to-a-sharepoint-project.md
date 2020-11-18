@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter des éléments à un projet SharePoint | Microsoft Docs'
+description: Ajoutez des éléments nouveaux ou existants à un projet SharePoint dans Visual Studio après avoir ouvert ou créé une solution SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014696"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850726"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Comment : ajouter des éléments à un projet SharePoint
   Les solutions SharePoint contiennent un ou plusieurs projets, chacun contenant plusieurs éléments de projet SharePoint. Après avoir ouvert ou créé une solution SharePoint, vous pouvez ajouter des éléments nouveaux ou existants à ces projets. Par exemple, les nouveaux projets de workflow sont fournis avec un formulaire par défaut nommé Default. aspx, mais vous pouvez remplacer ce formulaire par un formulaire nouveau ou différent, ou ajouter un autre formulaire ASPX.

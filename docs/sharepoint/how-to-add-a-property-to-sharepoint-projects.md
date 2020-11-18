@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une propriété à des projets SharePoint | Microsoft Docs'
+description: Utilisez une extension de projet pour ajouter une propriété à un projet SharePoint. Une propriété apparaît dans la Fenêtre Propriétés lorsque vous sélectionnez le projet dans Explorateur de solutions.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015916"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850154"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Comment : ajouter une propriété à des projets SharePoint
   Vous pouvez utiliser une extension de projet pour ajouter une propriété à un projet SharePoint. La propriété s’affiche dans la fenêtre **Propriétés** lorsque le projet est sélectionné dans **Explorateur de solutions**.

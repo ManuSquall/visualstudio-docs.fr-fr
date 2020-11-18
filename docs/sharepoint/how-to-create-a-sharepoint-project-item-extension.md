@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer une extension d’élément de projet SharePoint | Microsoft Docs'
+description: Passez en revue la procédure de création d’une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un élément de projet SharePoint qui est déjà installé dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 345bfa49da4bf5d5b73fe1d3f209675fe2814de2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ad0befdfc656233373e8c79d14495aa3f7fa21e
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015352"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850648"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Comment : créer une extension d’élément de projet SharePoint
   Créez une extension d’élément de projet lorsque vous souhaitez ajouter des fonctionnalités à un élément de projet SharePoint qui est déjà installé dans Visual Studio. Pour plus d’informations, consultez [étendre les éléments de projet SharePoint](../sharepoint/extending-sharepoint-project-items.md).

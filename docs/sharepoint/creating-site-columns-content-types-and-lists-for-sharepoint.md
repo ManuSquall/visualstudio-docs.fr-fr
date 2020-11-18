@@ -1,6 +1,8 @@
 ---
 title: Création de colonnes de site, de types de contenu et de listes pour SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Créer des colonnes de site, des types de contenu et des listes pour SharePoint. Visual Studio fournit des modèles d’élément de projet pour ces types d’éléments SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585104"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850518"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Créer des colonnes de site, des types de contenu et des listes pour SharePoint
   Visual Studio fournit des modèles d’élément de projet pour de nombreux éléments SharePoint fondamentaux différents, y compris des *listes* et des *types de contenu*, qui peuvent tous les deux incorporer des colonnes de site (ou des *champs*). Les nouveaux concepteurs de type de contenu et de listes facilitent plus que jamais la création de ces éléments.
@@ -45,7 +47,7 @@ ms.locfileid: "91585104"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Procédure pas à pas : création d’une colonne de site, d’un type de contenu et d’une liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Illustre comment créer des colonnes de site utilisées dans un type de contenu personnalisé. Le type de contenu est ensuite utilisé dans une liste personnalisée.|
 

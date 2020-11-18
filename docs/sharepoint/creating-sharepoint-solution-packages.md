@@ -1,5 +1,7 @@
 ---
 title: Création de packages de solution SharePoint | Microsoft Docs
+description: Créez et personnalisez des packages de déploiement pour les solutions SharePoint à l’aide du concepteur de packages. Explorez les outils d’empaquetage, les options du concepteur et la structure des dossiers.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74876062"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850557"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Créer des packages de solution SharePoint
   À l’aide du concepteur de packages, vous pouvez créer et personnaliser des packages de déploiement. Par exemple, vous pouvez ajouter des fonctionnalités et des éléments de projet SharePoint, réinitialiser le serveur IIS, définir des étendues d’activation de fonctionnalité et identifier les dépendances de fonctionnalités. Le concepteur génère également un manifeste, un fichier XML qui décrit chaque package.
@@ -31,7 +33,7 @@ ms.locfileid: "74876062"
  Vous pouvez utiliser Visual Studio et MSBuild pour créer des fichiers de package (*. wsp*) afin de déployer votre solution SharePoint. Ce processus génère les fichiers manifeste nécessaires au déploiement de SharePoint. Pour plus d’informations, consultez [Comment : créer un package de solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
 
 ## <a name="package-designer-options"></a>Options du concepteur de packages
- Le tableau suivant répertorie les propriétés que vous pouvez personnaliser dans les packages SharePoint à l’aide du **Concepteur**de packages.
+ Le tableau suivant répertorie les propriétés que vous pouvez personnaliser dans les packages SharePoint à l’aide du **Concepteur** de packages.
 
 |Propriété du concepteur de packages|Description du paramètre par défaut|
 |-------------------------------|------------------------------------|
@@ -69,7 +71,7 @@ ms.locfileid: "74876062"
 6. Les fichiers du répertoire intermédiaire sont ajoutés au fichier *. wsp* .
 
 ## <a name="package-folder-structure"></a>Structure de dossiers de package
- Lorsque vous créez un package pour votre projet SharePoint, un fichier *. wsp* est créé pour vous dans le dossier *SolutionFolder\bin \\ \<BuildConfiguration> * Par exemple, si votre solution se trouve dans *C:\Visual Studio 2013 \ Projects\ListDefinition1* et que votre configuration de build est définie sur Release, le fichier *. wsp* se trouve dans *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
+ Lorsque vous créez un package pour votre projet SharePoint, un fichier *. wsp* est créé pour vous dans le dossier *SolutionFolder\bin \\ \<BuildConfiguration>* Par exemple, si votre solution se trouve dans *C:\Visual Studio 2013 \ Projects\ListDefinition1* et que votre configuration de build est définie sur Release, le fichier *. wsp* se trouve dans *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

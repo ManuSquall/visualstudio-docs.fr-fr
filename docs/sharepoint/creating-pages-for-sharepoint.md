@@ -1,5 +1,7 @@
 ---
 title: Création de pages pour SharePoint | Microsoft Docs
+description: Créer des pages d’application pour SharePoint à l’aide d’un modèle dans Visual Studio. Créez des pages de site, des pages maîtres et des mises en page à l’aide de SharePoint Designer.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015173"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850622"
 ---
 # <a name="create-pages-for-sharepoint"></a>Créer des pages pour SharePoint
   Vous pouvez créer des pages d’application, des pages de site, des pages maîtres et des mises en page pour un site SharePoint.

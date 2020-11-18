@@ -1,18 +1,18 @@
 ---
 title: Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 description: Découvrez comment utiliser des données au moment du design en XAML.
-ms.date: 11/10/2020
+ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703999"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850739"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -179,11 +179,11 @@ Si vous rencontrez un problème qui n’est pas mentionné dans cette section, f
 
 ### <a name="requirements"></a>Spécifications
 
-- Les données au moment du design nécessitent Visual Studio 2019 version [16,7](/visualstudio/releases/2019/release-notes) ou ultérieure.
+- Les données au moment du design nécessitent Visual Studio 2019 version [16,7](/visualstudio/releases/2019/release-notes-v16.7) ou ultérieure.
 
-- Prend en charge les projets de bureau Windows qui ciblent Windows Presentation Foundation (WPF) pour .NET Core et UWP. Cette fonctionnalité est également disponible dans la version [préliminaire du canal](/visualstudio/releases/2019/release-notes-preview) pour .NET Framework. Pour l’activer, accédez à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités**, sélectionnez **nouveau concepteur XAML WPF pour .NET Framework** puis redémarrez Visual Studio.
+- Prend en charge les projets de bureau Windows qui ciblent Windows Presentation Foundation (WPF) pour .NET Core et UWP. Cette fonctionnalité est également disponible pour .NET Framework dans la version [préliminaire du canal](/visualstudio/releases/2019/release-notes-preview). Pour l’activer, accédez à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités**, sélectionnez **nouveau concepteur XAML WPF pour .NET Framework** puis redémarrez Visual Studio.
 
-- À compter de Visual Studio 2019 version 16,7, cette fonctionnalité fonctionne avec tous les contrôles intégrés des frameworks WPF et UWP. La prise en charge des contrôles tiers est désormais disponible dans la version préliminaire de 16,8.
+- À compter de Visual Studio 2019 version 16,7, cette fonctionnalité fonctionne avec tous les contrôles intégrés des frameworks WPF et UWP. La prise en charge des contrôles tiers est désormais disponible dans la [version 16,8](/visualstudio/releases/2019/release-notes/).
 
 ### <a name="the-xaml-designer-stopped-working"></a>La Concepteur XAML a cessé de fonctionner
 

@@ -1,5 +1,7 @@
 ---
 title: Génération et débogage de solutions SharePoint | Microsoft Docs
+description: Apprenez à générer et déboguer des solutions SharePoint et comprenez les différences entre la génération et le débogage d’autres types de projets dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016366"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850219"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Générer et déboguer des solutions SharePoint
   En général, la génération et le débogage de solutions SharePoint sont les mêmes que pour la génération et le débogage d’autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Les rubriques de cette section expliquent les différences qui existent.
@@ -28,10 +30,10 @@ ms.locfileid: "86016366"
 
 |Élément de build|Dossier de sortie|
 |----------------|-------------------|
-|Les fichiers d’assembly, de base de données de programme (*. pdb*) et *. wsp* .|* \<ProjectName> \bin\Debug* ou * \<ProjectName> \bin\release*|
-|Fichiers d’éléments de projet SharePoint.|* \<ProjectName> \pkg\debug* ou * \<ProjectName> \pkg\release*|
-|Générez des fichiers intermédiaires.|* \<ProjectName> \obj\debug* ou * \<ProjectName> \obj\release*|
-|Fichiers intermédiaires du package.|* \<ProjectName> \pkgobj\debug* ou * \<ProjectName> \pkgobj\release*|
+|Les fichiers d’assembly, de base de données de programme (*. pdb*) et *. wsp* .|*\<ProjectName> \bin\Debug* ou *\<ProjectName> \bin\release*|
+|Fichiers d’éléments de projet SharePoint.|*\<ProjectName> \pkg\debug* ou *\<ProjectName> \pkg\release*|
+|Générez des fichiers intermédiaires.|*\<ProjectName> \obj\debug* ou *\<ProjectName> \obj\release*|
+|Fichiers intermédiaires du package.|*\<ProjectName> \pkgobj\debug* ou *\<ProjectName> \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>Créer des solutions SharePoint
  Pour générer des solutions SharePoint, la version appropriée de SharePoint Server doit être installée sur l’ordinateur de développement. Dans le cas contraire, la génération de solutions SharePoint est identique à la génération d’autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour plus d’informations, consultez [Comment : générer des solutions SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).

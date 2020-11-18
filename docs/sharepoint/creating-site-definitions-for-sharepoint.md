@@ -1,5 +1,7 @@
 ---
 title: Création de définitions de site pour SharePoint | Microsoft Docs
+description: Créer des définitions de site pour SharePoint. Les définitions de site déterminent l’apparence et le comportement du site SharePoint, ainsi que son contenu et ses fonctionnalités par défaut.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015059"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850570"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Créer des définitions de site pour SharePoint
   Le projet de définition de site SharePoint dans vous [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] permet de créer une *définition de site*, qui sert de base pour un nouveau site SharePoint. Ces définitions déterminent non seulement l’apparence et le comportement du site SharePoint, mais également son contenu et ses fonctionnalités par défaut. Dans la définition, vous pouvez placer des listes préconfigurées, des types de contenu, des récepteurs d’événements, des images et d’autres éléments. SharePoint comprend des définitions de site telles que le BLOG, par exemple. Lorsque vous créez un site basé sur la définition du site de BLOG, le site contient les listes, les composants WebPart et les autres éléments requis par un site de blog.
@@ -40,11 +42,11 @@ ms.locfileid: "86015059"
 |*onet.xml*|Spécifie la configuration du nouveau site, les composants du modèle de définition de site et le comportement par défaut. Ces paramètres peuvent inclure des attributs tels que les types de contenu activés, les affichages de liste par défaut, les fichiers de modèles de document et les composants WebPart inclus dans le site. Par défaut, la `Modules` section répertorie les fichiers à ajouter au site SharePoint et la façon dont ils sont configurés.|
 |*webtemp_ \<SiteDefinitionName> . Xml*|Spécifie les configurations de définition de site qui s’affichent dans la section **sélection du modèle** de la page **nouveau site SharePoint** .|
 
- Par défaut, toutes les définitions de site sont stockées dans le dossier * \<drive:> \Program Files\Common Files\Microsoft Shared\web server extensions\14\TEMPLATE\SiteTemplates* Chaque définition de site a son propre sous-dossier.
+ Par défaut, toutes les définitions de site sont stockées dans le dossier *\<drive:> \Program Files\Common Files\Microsoft Shared\web server extensions\14\TEMPLATE\SiteTemplates* Chaque définition de site a son propre sous-dossier.
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Procédure pas à pas : Création d'un projet de définition de site de base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Vous guide pas à pas dans la création d’un projet de définition de site de base dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Comment : créer une définition de site personnalisée et une configuration](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Décrit comment créer une définition de site personnalisée dans SharePoint en copiant une définition de site existante, puis en modifiant la copie.|

@@ -1,6 +1,8 @@
 ---
 title: Ajouter un élément de menu contextuel au type d’élément de projet SharePoint personnalisé
 titleSuffix: ''
+description: Savoir comment ajouter un élément de menu contextuel à un type d’élément de projet SharePoint personnalisé. L’élément de menu s’affiche lorsque vous cliquez avec le bouton droit sur l’élément de projet dans Explorateur de solutions.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39de735c09c97541684628c8e4140aa42d119500
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2916b806c6e149a9c0cbe2495a7edabcfc883e7e
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585873"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850076"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Comment : ajouter un élément de menu contextuel à un type d’élément de projet SharePoint personnalisé
   Lorsque vous définissez un type d’élément de projet SharePoint personnalisé, vous pouvez ajouter un élément de menu contextuel à l’élément de projet. L’élément de menu s’affiche lorsqu’un utilisateur clique avec le bouton droit sur l’élément de projet dans **Explorateur de solutions**.
@@ -35,7 +37,7 @@ ms.locfileid: "91585873"
 
 3. Dans le <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> Gestionnaire d’événements du nouvel <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> objet, effectuez les tâches que vous souhaitez exécuter lorsqu’un utilisateur choisit l’élément de menu contextuel.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment ajouter un élément de menu contextuel à un type d’élément de projet personnalisé. Lorsque l’utilisateur ouvre le menu contextuel à partir de l’élément de projet dans **Explorateur de solutions** et choisit l’élément de menu **écrire le message dans fenêtre Sortie** , Visual Studio affiche un message dans la fenêtre **sortie** .
 
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs#4)]

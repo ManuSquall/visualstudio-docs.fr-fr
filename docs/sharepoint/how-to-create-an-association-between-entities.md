@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer une association entre des entités | Microsoft Docs'
+description: Définir des relations entre des entités dans votre modèle de connectivité de données métiers (BDC) en créant des associations dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016930"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849842"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Comment : créer une association entre des entités
   Vous pouvez définir des relations entre des entités dans votre modèle de connectivité de données métiers (BDC) en créant des associations. Visual Studio génère des méthodes qui fournissent aux consommateurs du modèle des informations sur chaque association. Ces méthodes peuvent être consommées par des composants WebPart SharePoint, des listes ou des applications personnalisées pour afficher les relations de données dans une interface utilisateur (IU).
