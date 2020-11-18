@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704064"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878307"
 ---
 # <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
@@ -41,7 +41,7 @@ Il existe trois façons de commencer à utiliser Git avec Visual Studio pour êt
 
 Si votre code n’est pas associé à git, vous pouvez commencer par créer un nouveau référentiel git. Pour ce faire, sélectionnez **git**  >  **créer un référentiel git** dans la barre de menus. Ensuite, dans la boîte de dialogue **créer un dépôt git** , entrez vos informations.
 
-:::image type="content" source="media/git-create-repository.png" alt-text="Capture d’écran de la boîte de dialogue créer un dépôt git dans Visual Studio ":::
+:::image type="content" source="media/git-create-repository.png" alt-text="La boîte de dialogue créer un dépôt git dans Visual Studio.":::
 
 La boîte de dialogue **créer un dépôt git** vous permet de transmettre facilement votre nouveau référentiel à github. Par défaut, votre nouveau référentiel est privé, ce qui signifie que vous êtes le seul à pouvoir y accéder. Si vous décochez la case, votre référentiel est public, ce qui signifie que toute personne sur GitHub peut l’afficher.
 
@@ -54,7 +54,7 @@ Vous pouvez choisir de créer un référentiel Git local uniquement à l’aide 
 
 Visual Studio offre une expérience de clonage simple. Si vous connaissez l’URL du référentiel que vous souhaitez Cloner, vous pouvez coller l’URL dans la section **emplacement du référentiel** , puis choisir l’emplacement du disque sur lequel vous souhaitez cloner Visual Studio.
 
-:::image type="content" source="media/git-clone-repository.png" alt-text="Capture d’écran de la boîte de dialogue cloner un référentiel git dans Visual Studio ":::
+:::image type="content" source="media/git-clone-repository.png" alt-text="La boîte de dialogue cloner un référentiel git dans Visual Studio.":::
 
 Si vous ne connaissez pas l’URL du référentiel, Visual Studio vous permet d’accéder facilement à votre référentiel GitHub ou Azure DevOps existant et de le cloner.
 
@@ -62,7 +62,7 @@ Si vous ne connaissez pas l’URL du référentiel, Visual Studio vous permet d�
 
 Après avoir cloné un référentiel ou en avoir créé un, Visual Studio détecte le dépôt git et l’ajoute à votre liste de **référentiels locaux** dans le menu git. À partir de là, vous pouvez rapidement accéder à vos référentiels git et basculer entre ceux-ci.
 
-:::image type="content" source="media/git-local-repositories.png" alt-text="Capture d’écran de l’option des référentiels locaux à partir du menu git dans Visual Studio ":::
+:::image type="content" source="media/git-local-repositories.png" alt-text="L’option dépôts locaux du menu git dans Visual Studio ":::
 
 ## <a name="view-files-in-solution-explorer"></a>Afficher les fichiers dans Explorateur de solutions
 
@@ -76,7 +76,7 @@ Visual Studio ajuste sa vue en fonction du fichier de vue que vous chargez dans 
 
 Vous pouvez basculer entre la vue actuellement ouverte et la liste des affichages à l’aide du bouton **basculer les affichages** dans la barre d’outils Explorateur de solutions.
 
-:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Capture d’écran de Explorateur de solutions avec le bouton basculer les vues sélectionné dans Visual Studio ":::
+:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Explorateur de solutions avec le bouton basculer les vues sélectionné dans Visual Studio.":::
 
 ## <a name="git-changes-window"></a>Fenêtre modifications git
 
@@ -88,7 +88,7 @@ Git effectue le suivi des modifications apportées aux fichiers dans votre réf�
 
 Au fur et à mesure de votre travail, Visual Studio effectue le suivi des modifications apportées aux fichiers de votre projet dans la section **modifications** de la fenêtre **modifications git** .
 
-:::image type="content" source="media/git-changes-window.png" alt-text="Capture d’écran de la fenêtre modifications git dans Visual Studio ":::
+:::image type="content" source="media/git-changes-window.png" alt-text="La fenêtre de modifications git dans Visual Studio.":::
 
 Lorsque vous êtes prêt à modifier les modifications, cliquez sur le **+** bouton (plus) de chaque fichier que vous souhaitez mettre en scène, ou cliquez avec le bouton droit sur un fichier, puis sélectionnez **étape**. Vous pouvez également mettre en place tous vos fichiers modifiés d’un seul clic en cliquant sur le bouton « stage tout » **+** (plus) en haut de la section **modifications** .
 
@@ -98,7 +98,7 @@ Vous pouvez également choisir de ne pas déployer vos fichiers modifiés en ign
 
 Visual Studio facilite également la validation et la synchronisation d’un clic à l’aide des raccourcis **valider tout et pousser** et **valider tout et synchroniser** . Lorsque vous double-cliquez sur un fichier dans les sections **modifications** et **modifications intermédiaires** , vous pouvez voir une comparaison ligne par ligne avec la version non modifiée du fichier.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Capture d’écran de la comparaison ligne par ligne des versions de fichiers dans Visual Studio ":::
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Comparaison ligne par ligne des versions de fichiers dans Visual Studio ":::
 
 > [!TIP]
 > Vous pouvez associer un élément de travail Azure DevOps à une validation en utilisant le caractère « # » si vous êtes connecté au référentiel Azure DevOps. Vous pouvez connecter votre référentiel Azure DevOps via **Team Explorer**  >  **gérer les connexions**.
@@ -107,11 +107,11 @@ Visual Studio facilite également la validation et la synchronisation d’un cli
 
 Visual Studio affiche la branche active dans le sélecteur en haut de la fenêtre **modifications git** .
 
-:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="Capture d’écran des branches actuelles que vous pouvez afficher à l’aide du sélecteur en haut du sélecteur git changes dans Visual Studio ":::
+:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="Les branches actuelles que vous pouvez afficher à l’aide du sélecteur en haut du sélecteur git change dans Visual Studio ":::
 
 La branche active est également disponible dans la barre d’État dans le coin inférieur droit de l’IDE de Visual Studio.
 
-:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Capture d’écran des branches actuelles que vous pouvez afficher à l’aide de la barre d’État dans l’angle inférieur droit de l’IDE de Visual Studio ":::
+:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Branches actuelles que vous pouvez afficher à l’aide de la barre d’état située dans l’angle inférieur droit de l’IDE de Visual Studio ":::
 
 À partir des deux emplacements, vous pouvez basculer entre les branches existantes.
 
@@ -121,7 +121,7 @@ Vous pouvez également créer une nouvelle branche. La commande équivalente pou
 
 La création d’une branche est aussi simple que l’entrée du nom de la branche et la base d’une branche existante.
 
-:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Capture d’écran de la boîte de dialogue créer une nouvelle branche dans Visual Studio ":::
+:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Boîte de dialogue créer une nouvelle branche dans Visual Studio ":::
 
 Vous pouvez choisir une branche locale ou distante existante comme base. La case à cocher **retirer la branche** vous permet de basculer automatiquement vers la branche nouvellement créée. La commande équivalente pour cette action est `git checkout -b <new-branch><existing-branch>` .
 
@@ -137,17 +137,17 @@ Lorsque vous sélectionnez **gérer des branches** dans le menu **git** , vous v
 
 Lorsque vous extrayez une branche, la fenêtre **modifications git** contient un indicateur sous la liste déroulante branche, qui affiche le nombre de validations non extraites de la branche distante. Cet indicateur vous indique également le nombre de validations locales non push.
 
-:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Capture d’écran de la fenêtre modifications git qui affiche l’élément d’interface utilisateur déroulant d’indicateur dans Visual Studio ":::
+:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="La fenêtre modifications git qui affiche l’élément d’interface utilisateur déroulant d’indicateur dans Visual Studio ":::
 
 L’indicateur fonctionne également comme un lien pour vous connecter à l’historique de validation de cette branche dans la fenêtre de **dépôt git** . Le haut de l’historique affiche désormais les détails de ces validations entrantes et sortantes. À partir de là, vous pouvez également décider d’extraire ou de pousser les validations.
 
-:::image type="content" source="media/git-branch-commit-history.png" alt-text="Capture d’écran de la fenêtre de dépôt git qui affiche l’historique de validation d’une branche dans Visual Studio ":::
+:::image type="content" source="media/git-branch-commit-history.png" alt-text="Fenêtre de dépôt git qui affiche l’historique de validation d’une branche dans Visual Studio ":::
 
 #### <a name="commit-details"></a>Détails de la validation
 
 Lorsque vous double-cliquez sur une **validation**, Visual Studio ouvre ses détails dans une fenêtre outil distincte. À partir de là, vous pouvez annuler la validation, réinitialiser la validation, modifier le message de validation ou créer une étiquette sur la validation. Lorsque vous cliquez sur un fichier modifié dans la validation, Visual Studio ouvre la vue de **comparaison** côte à côte de la validation et de son parent.
 
-:::image type="content" source="media/git-branch-commit-details.png" alt-text="Capture d’écran de la boîte de dialogue détails de la validation dans Visual Studio ":::
+:::image type="content" source="media/git-branch-commit-details.png" alt-text="Boîte de dialogue détails de la validation dans Visual Studio ":::
 
 ## <a name="handle-merge-conflicts"></a>Gérer les conflits de fusion
 
@@ -155,11 +155,11 @@ Des conflits peuvent se produire lors d’une fusion si deux développeurs modif
 
 Visual Studio facilite l’identification et la résolution d’un conflit de fusion. Tout d’abord, la fenêtre **dépôt git** affiche une barre d’informations dorée en haut de la fenêtre.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Capture d’écran du message « la fusion s’est terminée avec des conflits » dans Visual Studio ":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Message « la fusion s’est terminée avec des conflits » dans Visual Studio ":::
 
 La fenêtre **modifications git** affiche également un message « la *fusion est en cours avec des conflits*», avec les fichiers non fusionnés dans leur section distincte située en dessous.
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Capture d’écran du message « fusionner en cours avec des conflits » dans Visual Studio ":::
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Message « fusionner en cours avec des conflits » dans Visual Studio ":::
 
 Toutefois, si aucune de ces fenêtres n’est ouverte et que vous accédez au fichier qui comporte des conflits de fusion, vous n’avez pas besoin de rechercher le texte suivant :
 
@@ -177,7 +177,7 @@ Au lieu de cela, Visual Studio affiche une barre d’info dorée en haut de la p
 
 L’éditeur de fusion dans Visual Studio est un outil de fusion triple qui affiche les modifications entrantes, vos modifications actuelles et le résultat de la fusion. Vous pouvez utiliser la barre d’outils au niveau supérieur de l' **éditeur de fusion** pour naviguer entre les conflits et les différences fusionnées automatiquement dans le fichier.
 
-:::image type="content" source="media/git-merge-editor.png" alt-text="Capture d’écran de l’éditeur de fusion dans Visual Studio ":::
+:::image type="content" source="media/git-merge-editor.png" alt-text="Éditeur de fusion dans Visual Studio ":::
 
 Vous pouvez également utiliser les basculements pour afficher/masquer les différences, afficher/masquer les différences de mots et personnaliser la disposition. Les cases à cocher situées en haut de chaque côté vous permettent d’effectuer toutes les modifications d’un côté ou de l’autre. Toutefois, pour prendre des modifications individuelles, vous pouvez cliquer sur les cases à cocher à gauche des lignes conflictuelles de chaque côté. Enfin, lorsque vous avez terminé la résolution des conflits, vous pouvez sélectionner le bouton **accepter la fusion** dans l’éditeur de fusion. Vous écrivez ensuite un message de validation et validez les modifications pour terminer la résolution.
 
@@ -185,13 +185,13 @@ Vous pouvez également utiliser les basculements pour afficher/masquer les diff�
 
 Pour personnaliser et personnaliser vos paramètres git au niveau du référentiel, ainsi qu’au niveau global, accédez aux **Git**  >  **paramètres** git dans la barre de menus ou aux **Outils**  >  **options**  >  **contrôle de code source** dans la barre de menus. Ensuite, choisissez les options souhaitées.
 
-:::image type="content" source="media/git-options-settings.png" alt-text="Capture d’écran de la boîte de dialogue Options dans laquelle vous pouvez choisir des paramètres de personnalisation et de personnalisation dans l’IDE de Visual Studio ":::
+:::image type="content" source="media/git-options-settings.png" alt-text="Boîte de dialogue Options dans laquelle vous pouvez choisir des paramètres de personnalisation et de personnalisation dans l’IDE de Visual Studio ":::
 
 ## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Comment utiliser l’expérience de Team Explorer héritée dans Visual Studio
 
 La nouvelle expérience git est le système de contrôle de version par défaut de Visual Studio 2019 à partir de la [version 16,8](/visualstudio/releases/2019/release-notes/) . Toutefois, si vous souhaitez la désactiver, vous pouvez. Accédez à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités** , puis activez/désactivez la case à cocher **nouvelle expérience utilisateur git** , ce qui vous ramène à l’expérience de Team Explorer héritée.
 
-:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Capture d’écran de la section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
+:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="La section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 
 ## <a name="whats-next"></a>Étapes suivantes
 

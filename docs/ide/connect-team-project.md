@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 4e4fdfb26c601ce6b706c1c946ea9afe9b18ecb2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7d920370013b2d624430acbdbe8e38dcc9aab03d
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850089"
+ms.locfileid: "94878255"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Se connecter aux projets dans Team Explorer
 
@@ -32,7 +32,7 @@ Vous pouvez utiliser la fenêtre outil **Team Explorer** pour coordonner vos eff
 
 ::: moniker-end
 
-![Page d’accueil de Team Explorer dans Visual Studio](media/team-explorer/team-explorer.png)
+![Page d’accueil de Team Explorer dans Visual Studio](media/team-explorer/team-explorer.png "La page Team Explorer-page d’hébergement de Visual Studio.")
 
 ::: moniker range="vs-2017"
 
@@ -45,17 +45,17 @@ Vous pouvez utiliser la fenêtre outil **Team Explorer** pour coordonner vos eff
 
 Connectez-vous à un projet ou à un référentiel sur la page **Se connecter**.
 
-![Page Se connecter dans Team Explorer](media/team-explorer/connect.png)
+![Page Se connecter dans Team Explorer](media/team-explorer/connect.png "Page Team Explorer-Connect dans Visual Studio")
 
 Pour se connecter à un projet :
 
 1. Ouvrez la page **Se connecter** en choisissant l’icône **Gérer les connexions**.
 
-   ![Bouton Gérer les connexions dans Team Explorer](media/team-explorer/manage-connections.png)
+   ![Bouton Gérer les connexions dans Team Explorer](media/team-explorer/manage-connections.png "Le bouton Team Explorer-gérer les connexions dans Visual Studio.")
 
 1. Sur la page **Se connecter**, choisissez **Gérer les connexions** > **Se connecter à un projet**.
 
-   ![Se connecter à un projet dans Team Explorer](media/team-explorer/connect-project.png)
+   ![Se connecter à un projet dans Team Explorer](media/team-explorer/connect-project.png "L’option Team Explorer-se connecter à un projet dans Visual Studio.")
 
 > [!TIP]
 > Si vous souhaitez ouvrir un projet à partir d’un référentiel, consultez [ouvrir un projet à partir d’un référentiel](../get-started/tutorial-open-project-from-repo.md). Si vous souhaitez créer un projet ou ajouter des utilisateurs à un projet, consultez [créer un projet (Azure DevOps)](/azure/devops/organizations/projects/create-project) et [Ajouter des utilisateurs à un projet ou une équipe (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).

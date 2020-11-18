@@ -1,5 +1,6 @@
 ---
 title: Présentation des projets et solutions
+description: Découvrez la différence entre les projets et les solutions et comment les utiliser dans Visual Studio.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 026e046e4bcc2291bd27907f10e6ac6a50729601
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704051"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878268"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Découvrir les projets et les solutions
 
@@ -55,7 +56,7 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 
 1. Dans le volet gauche, développez **Autres types de projets**, puis choisissez **Solutions Visual Studio**. Dans le volet central, choisissez le modèle **Solution vide**. Nommez votre solution **QuickSolution**, puis choisissez le bouton **OK**.
 
-   ![Modèle de solution vide dans Visual Studio 2017](media/tutorial-projects-new-solution.png)
+   ![Modèle de solution vide dans Visual Studio 2017](media/tutorial-projects-new-solution.png "Modèle de solution vide dans Visual Studio 2017.")
 
    La **page de démarrage** se ferme et une solution s’affiche dans l’**Explorateur de solutions** sur le côté droit de la fenêtre Visual Studio. **L’Explorateur de solutions** vous sera sans doute souvent utile pour parcourir le contenu de vos projets.
 
@@ -69,7 +70,7 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 
 3. Sur la page **Créer un projet**, entrez **nouvelle solution** dans la zone de recherche, sélectionnez le modèle **Nouvelle solution**, puis choisissez **Suivant**.
 
-   ![Modèle de solution vide dans Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Modèle de solution vide dans Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png "Modèle de solution vide dans Visual Studio 2019.")
 
     > [!TIP]
     > Si vous avez plusieurs charges de travail installées, le modèle de **solution vide** peut ne pas apparaître en haut de la liste des résultats de la recherche. Essayez de faire défiler vers les **autres résultats en fonction de votre** section de recherche de la liste. Il doit y figurer.
@@ -97,7 +98,7 @@ Nous allons maintenant ajouter notre premier projet à la solution. Nous allons 
    > [!NOTE]
    > Si vous ne voyez pas **Visual C#** dans le volet gauche de la boîte de dialogue, vous devez installer la charge de travail Visual Studio pour le **développement .net Desktop** . Visual Studio utilise une installation basée sur la charge de travail pour installer uniquement les composants dont vous avez besoin pour le type de développement que vous effectuez. Pour installer une nouvelle charge de travail, un moyen simple consiste à choisir le lien **Ouvrir Visual Studio Installer** en bas à gauche de la boîte de dialogue **Ajouter un nouveau projet**. Une fois Visual Studio Installer lancé, choisissez la charge de travail **Développement .NET Desktop**, puis cliquez sur le bouton **Modifier**.
    >
-   > ![Lien Ouvrir Visual Studio Installer](media/tutorial-projects-open-installer.png)
+   > ![Lien Ouvrir Visual Studio Installer](media/tutorial-projects-open-installer.png "Le lien ouvrir le Visual Studio Installer dans la boîte de dialogue Ajouter un nouveau projet dans Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -116,9 +117,11 @@ Nous allons maintenant ajouter notre premier projet à la solution. Nous allons 
    Un projet nommé QuickDate s’affiche en dessous de la solution dans l’**Explorateur de solutions**. Il contient un seul fichier appelé *App.config*.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **projet vide (.NET Framework)** , vous devez installer la charge de travail Visual Studio pour le **développement .net Desktop** . Visual Studio utilise une installation basée sur la charge de travail pour installer uniquement les composants dont vous avez besoin pour le type de développement que vous effectuez. Pour installer une nouvelle charge de travail quand vous créez un projet, il vous suffit simplement de choisir le lien **Installer plus d’outils et de fonctionnalités** sous le texte indiquant **Vous n’arrivez pas à trouver ce que vous cherchez ?**. Une fois Visual Studio Installer lancé, choisissez la charge de travail **Développement .NET Desktop**, puis cliquez sur le bouton **Modifier**.
+   > Si vous ne voyez pas le modèle **projet vide (.NET Framework)** , vous devez installer la charge de travail Visual Studio pour le **développement .net Desktop** . Visual Studio utilise une installation basée sur la charge de travail pour installer uniquement les composants dont vous avez besoin pour le type de développement que vous effectuez.
    >
-   > ![Lien Ouvrir Visual Studio Installer](media/vs-2019/tutorial-projects-open-installer.png)
+   >Pour installer une nouvelle charge de travail quand vous créez un projet, il vous suffit simplement de choisir le lien **Installer plus d’outils et de fonctionnalités** sous le texte indiquant **Vous n’arrivez pas à trouver ce que vous cherchez ?**. Une fois Visual Studio Installer lancé, choisissez la charge de travail **Développement .NET Desktop**, puis cliquez sur le bouton **Modifier**.
+   >
+   > ![Lien Ouvrir Visual Studio Installer](media/vs-2019/tutorial-projects-open-installer.png "Le lien ouvrir le Visual Studio Installer dans la boîte de dialogue créer un nouveau projet dans Visual Studio.")
 
 ::: moniker-end
 
@@ -174,7 +177,7 @@ Nous allons ajouter un projet de test unitaire à notre solution. Cette fois, no
 
    Un deuxième projet est ajouté à **l’Explorateur de solutions** et un fichier nommé *UnitTest1.cs* s’ouvre dans l’éditeur.
 
-   ![Explorateur de solutions de Visual Studio avec deux projets](media/tutorial-projects-solution-explorer.png)
+   ![Explorateur de solutions de Visual Studio avec deux projets](media/tutorial-projects-solution-explorer.png "Explorateur de solutions avec deux projets dans Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -188,7 +191,7 @@ Nous allons ajouter un projet de test unitaire à notre solution. Cette fois, no
 
    Un deuxième projet est ajouté à **l’Explorateur de solutions** et un fichier nommé *UnitTest1.cs* s’ouvre dans l’éditeur.
 
-   ![Explorateur de solutions de Visual Studio avec deux projets](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![Explorateur de solutions de Visual Studio avec deux projets](media/vs-2019/tutorial-projects-solution-explorer.png "Explorateur de solutions avec deux projets dans Visual Studio.")
 
 ::: moniker-end
 
@@ -204,7 +207,7 @@ Nous allons utiliser le nouveau projet de test unitaire pour tester notre métho
 
    Une référence au projet **QuickDate** est ajoutée.
 
-   ![Explorateur de solutions Visual Studio 2019 montrant la référence de projet](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Explorateur de solutions Visual Studio 2019 montrant la référence de projet](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Explorateur de solutions présentant une référence de projet dans Visual Studio.")
 
 ## <a name="add-test-code"></a>Ajouter le code de test
 
@@ -240,7 +243,7 @@ Nous allons utiliser le nouveau projet de test unitaire pour tester notre métho
 
    Le fichier de code doit ressembler à ceci :
 
-   ![Code CSharp](media/tutorial-projects-cs-code.png)
+   ![Code CSharp](media/tutorial-projects-cs-code.png "Extrait de code de la section ajouter le code de test de cet article.")
 
 ## <a name="project-properties"></a>Propriétés d’un projet
 
@@ -250,7 +253,7 @@ Dans le fichier *Calendar.cs*, la ligne qui contient l’attribut <xref:System.R
 
    Les *pages de propriétés* du projet sont ouvertes sous l’onglet **application** . Les pages de propriétés contiennent différents paramètres pour le projet. Notez que le nom de l’assembly du projet **QuickTest** est bien « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
 
-   ![Propriétés d’un projet](media/tutorial-projects-netcore-properties.png)
+   ![Propriétés du projet](media/tutorial-projects-netcore-properties.png "Boîte de dialogue Propriétés du projet dans Visual Studio.")
 
 1. Explorez d’autres onglets des pages de propriétés du projet, par exemple **Générer** et **Déboguer**. Ces onglets sont différents pour différents types de projets.
 
@@ -258,7 +261,7 @@ Dans le fichier *Calendar.cs*, la ligne qui contient l’attribut <xref:System.R
 
 Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **tester**  >  **exécuter**  >  **tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
 
-![Explorateur de tests dans Visual Studio affichant le test réussi](media/tutorial-projects-test-explorer.png)
+![Explorateur de tests dans Visual Studio affichant le test réussi](media/tutorial-projects-test-explorer.png "Explorateur de tests dans Visual Studio présentant un test réussi.")
 
 ::: moniker range="vs-2017"
 
