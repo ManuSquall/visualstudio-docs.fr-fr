@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur les schémas de modèles Visual Studio | Microsoft Docs
+description: En savoir plus sur le schéma de modèle Visual Studio en explorant les éléments XML dans les fichiers. vstemplate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49e41431938eed0078f6cbb241d3d62812899942
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9402efcc6c08343f1661945ae1701f7be7909bab
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697972"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903414"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Référence du schéma de modèle Visual Studio
 Cette section contient des informations sur les éléments XML des fichiers *. vstemplate* , qui sont des fichiers qui stockent les métadonnées des modèles de projet, des modèles d’élément et des Starter Kits.
@@ -37,23 +39,23 @@ Cette section contient des informations sur les éléments XML des fichiers *. v
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|Nom<br /><br /> Valeur|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
-|[Description](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
+|[Description](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> id|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
 |[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Dossier|Nom|
 ||[deprecated]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
 |[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
-|[Située](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
+|[Icône](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> id|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
-|[Name](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
+|[Nom](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> id|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Projet](../extensibility/project-element-visual-studio-templates.md)|Dossier<br /><br /> ProjectItem|Fichier<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|
-|[ProjectItem (Modèles d'élément)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Subtype<br /><br /> CustomTool<br /><br /> itemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
+|[ProjectItem (Modèles d'élément)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Sous-type<br /><br /> CustomTool<br /><br /> itemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
 |[ProjectItem (modèles de projet)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|--|--|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|ProjectName|
@@ -72,7 +74,7 @@ Cette section contient des informations sur les éléments XML des fichiers *. v
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Projet<br /><br /> References<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Project<br /><br /> References<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Nom<br /><br /> Description<br /><br /> Icône<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Hidden<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|

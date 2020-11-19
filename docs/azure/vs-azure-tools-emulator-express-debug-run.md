@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Utilisation de l’émulateur express pour exécuter et déboguer un service cloud sur une machine locale
 author: mikejo5000
 manager: jillfra
-ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 4874a93cd7d7546ca1d131f6c8941bd78cd98465
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dee97ab487f4e165fd372559e51b6f19c3501e9f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809831"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902439"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Utiliser l’émulateur express pour exécuter et déboguer un service cloud Azure sur une machine locale
 Avec l’émulateur express, vous testez et déboguez un service cloud sans avoir à exécuter Visual Studio en tant qu’administrateur. Vous pouvez définir les paramètres du projet pour utiliser l’émulateur express ou l’émulateur complet selon la configuration requise de votre service cloud. Pour plus d’informations sur l’émulateur complet, consultez [Exécuter une application Azure dans l’émulateur de calcul](/azure/storage/common/storage-use-emulator).

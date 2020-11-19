@@ -3,17 +3,16 @@ title: Préparer la publication ou le déploiement d’un service cloud
 description: Découvrez les procédures de configuration des services de compte de stockage et cloud et de votre application Azure.
 author: ghogen
 manager: jillfra
-ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a09b8f5c6efacab0f02a445ed78f8a3769031fa0
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399006"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902500"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Préparation de la publication ou du déploiement d’un service cloud à partir de Visual Studio
 
@@ -30,14 +29,14 @@ Un service cloud exécute vos rôles dans l'environnement Azure. Vous pouvez cr�
 
 1. Dans un projet Service cloud précédemment créé, cliquez avec le bouton droit sur le projet, puis sélectionnez **Publier**.
 1. Si nécessaire, connectez-vous avec le compte Microsoft ou de société associé à votre abonnement Azure, puis sélectionnez **Suivant** pour passer à la page **Paramètres**.
-1. Une boîte de dialogue **Créer un service cloud et un compte de stockage** s'affiche (si ce n'est pas le cas, sélectionnez **Créer** dans la liste **Service cloud** ).
+1. Une boîte de dialogue **Créer un service cloud et un compte de stockage** s'affiche (si ce n'est pas le cas, sélectionnez **Créer** dans la liste **Service cloud**).
 1. Nommez votre service cloud en utilisant un nom qui ne tient pas compte de la casse : ce nom constitue une partie de votre URL et doit être unique. Choisissez également une région ou un groupe d'affinité, puis sélectionnez une option de réplication.
 
 ### <a name="create-a-cloud-service-through-the-azure-portal"></a>Création d'un service cloud via le portail Azure
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com/).
 1. Sélectionnez **Services cloud (classiques)** sur la partie gauche de la page.
-1. Sélectionnez **Ajouter** , puis fournissez les informations requises (nom DNS, abonnement, groupe de ressources et emplacement). Il n'est pas nécessaire de charger un package à ce stade, car vous le ferez plus tard dans Visual Studio.
+1. Sélectionnez **Ajouter**, puis fournissez les informations requises (nom DNS, abonnement, groupe de ressources et emplacement). Il n'est pas nécessaire de charger un package à ce stade, car vous le ferez plus tard dans Visual Studio.
 1. Sélectionnez **Créer** pour terminer le processus.
 
 ## <a name="create-a-storage-account"></a>Créez un compte de stockage.
@@ -46,9 +45,9 @@ Un compte de stockage fournit l'accès aux services Blob, File d'attente et Tabl
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Création d'un compte de stockage à partir de Visual Studio
 
-1. Dans l' **Explorateur de solutions** , avec un projet de service cloud précédemment créé, recherchez le nœud **Services connectés** dans un projet de rôle, cliquez avec le bouton droit, puis sélectionnez **Ajouter un service connecté**. (Dans Visual Studio 2015, cliquez avec le bouton droit sur le nœud **Stockage** , puis sélectionnez **Créer un compte de stockage**.)
+1. Dans l'**Explorateur de solutions**, avec un projet de service cloud précédemment créé, recherchez le nœud **Services connectés** dans un projet de rôle, cliquez avec le bouton droit, puis sélectionnez **Ajouter un service connecté**. (Dans Visual Studio 2015, cliquez avec le bouton droit sur le nœud **Stockage**, puis sélectionnez **Créer un compte de stockage**.)
 1. Dans la liste **Services connectés** qui apparaît, sélectionnez **Stockage cloud avec le Stockage Azure**.
-1. Dans la boîte de dialogue Stockage Azure qui apparaît, sélectionnez **Créer un compte de stockage** , pour afficher une boîte de dialogue dans laquelle vous pouvez spécifier votre abonnement, le nom du compte, un niveau de tarification, un groupe de ressources et un emplacement.
+1. Dans la boîte de dialogue Stockage Azure qui apparaît, sélectionnez **Créer un compte de stockage**, pour afficher une boîte de dialogue dans laquelle vous pouvez spécifier votre abonnement, le nom du compte, un niveau de tarification, un groupe de ressources et un emplacement.
 1. Sélectionnez **Créer** lorsque vous avez terminé. Le nouveau compte de stockage apparaît dans la liste des comptes de stockage disponibles dans votre abonnement.
 1. Sélectionnez ce compte, puis **Ajouter**.
 
@@ -64,11 +63,11 @@ Un compte de stockage fournit l'accès aux services Blob, File d'attente et Tabl
 
 Après avoir créé un compte de stockage, la connexion à partir de Visual Studio met automatiquement à jour les configurations de service pour le projet, y compris les URL et les clés d'accès.
 
-Si vous avez créé un service cloud à partir de Visual Studio à l'aide de l'option **Ajouter un service connecté** , vous pouvez vérifier les connexions en ouvrant `ServiceConfiguration.Cloud.cscfg` et `ServiceConfiguration.Local.cscfg`.
+Si vous avez créé un service cloud à partir de Visual Studio à l'aide de l'option **Ajouter un service connecté**, vous pouvez vérifier les connexions en ouvrant `ServiceConfiguration.Cloud.cscfg` et `ServiceConfiguration.Local.cscfg`.
 
 Si vous avez créé un service cloud via le portail Azure, suivez les mêmes étapes de la section [Création d'un compte de stockage à partir de Visual Studio](#create-a-storage-account-from-visual-studio), en sélectionnant le compte existant au lieu d'en créer un. Ensuite, Visual Studio met à jour la configuration pour vous.
 
-Pour configurer les paramètres manuellement, utilisez les pages de propriétés de Visual Studio pour le rôle applicable dans votre projet de service cloud (cliquez avec le bouton droit sur le rôle et sélectionnez **Propriétés** ). Pour plus d'informations, voir [Configuration d’une chaîne de connexion à un compte de stockage](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
+Pour configurer les paramètres manuellement, utilisez les pages de propriétés de Visual Studio pour le rôle applicable dans votre projet de service cloud (cliquez avec le bouton droit sur le rôle et sélectionnez **Propriétés**). Pour plus d'informations, voir [Configuration d’une chaîne de connexion à un compte de stockage](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
 
 ### <a name="about-access-keys"></a>À propos des clés d'accès
 

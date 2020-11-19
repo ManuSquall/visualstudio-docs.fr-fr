@@ -1,8 +1,11 @@
 ---
 title: Présentation de la modification dans l’éditeur de code
+description: Apprenez à utiliser l’éditeur de code dans Visual Studio pour ajouter du code à un fichier, ainsi qu’à écrire du code, à y accéder et à le Refactoriser.
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595265"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901776"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -76,7 +79,7 @@ Visual Studio fournit des *extraits de code* qui vous aident à créer rapidemen
 
    La signature de la méthode `static void Main()` est ajoutée au fichier.
 
-Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier**les extraits de code  >  **IntelliSense**  >  **Insert Snippet**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
+Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier** les extraits de code  >  **IntelliSense**  >  **Insert Snippet**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
 
 ![Liste d’extraits de code C#](media/tutorial-code-snippet-list.png)
 

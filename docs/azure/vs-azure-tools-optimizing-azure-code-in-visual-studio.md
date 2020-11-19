@@ -3,17 +3,16 @@ title: Optimisation de votre code Azure
 description: Découvrez comment les outils d'optimisation du code Azure dans Visual Studio peuvent rendre votre code plus robuste et plus performant.
 author: ghogen
 manager: jillfra
-ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 5ae141c4ecdf5cfe1819ba2f47aac45f1763fa34
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399777"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902296"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimisation de votre code Azure
 Quand vous programmez des applications qui utilisent Microsoft Azure, nous vous recommandons de suivre certaines pratiques de codage pour éviter des problèmes relatifs à l’évolutivité, au comportement et à la performance dans un environnement cloud. Microsoft fournit un outil Azure Code Analysis, qui reconnaît et identifie plusieurs des problèmes couramment rencontrés et qui vous aide à les résoudre. Vous pouvez télécharger l'outil dans Visual Studio via NuGet.
@@ -119,7 +118,7 @@ Pour éviter d’entrer dans une « boucle de réception », l’appel de la mé
 Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motif
-Lors de l’appel de **OnMessage** , le client démarre une pompe de messages interne qui interroge en permanence la file d’attente ou l’abonnement. Cette pompe de messages contient une boucle infinie qui émet un appel pour recevoir des messages. Dès que l’appel expire, il émet un nouvel appel. L’intervalle de délai d’expiration est déterminé par la valeur de la propriété [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) de [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) utilisée.
+Lors de l’appel de **OnMessage**, le client démarre une pompe de messages interne qui interroge en permanence la file d’attente ou l’abonnement. Cette pompe de messages contient une boucle infinie qui émet un appel pour recevoir des messages. Dès que l’appel expire, il émet un nouvel appel. L’intervalle de délai d’expiration est déterminé par la valeur de la propriété [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) de [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) utilisée.
 
 L’avantage de l’utilisation de **OnMessage** par rapport à **Receive** est que les utilisateurs n’ont pas besoin d’opération manuelle pour vérifier les messages, gérer les exceptions, traiter plusieurs messages en parallèle et terminer les messages.
 
@@ -413,7 +412,7 @@ Depuis WAD 1.3 (fourni avec Azure SDK 2.5), il n’est plus possible d’utilise
 Utilisez le concepteur de configuration de diagnostic pour déplacer les paramètres de diagnostic vers le fichier config de diagnostic (diagnostics.wadcfg ou diagnostics.wadcfgx pour le kit SDK 2.5 et ultérieur). Il est également recommandé d'installer [Azure SDK 2.5](https://social.msdn.microsoft.com/Forums/en-US/home) et d’utiliser la fonctionnalité de diagnostic plus récente.
 
 1. Dans le menu contextuel du rôle que vous voulez configurer, choisissez Propriétés, puis sélectionnez l’onglet Configuration.
-2. Dans la section **Diagnostics** , vérifiez que la case à cocher **Activer les diagnostics** est activée.
+2. Dans la section **Diagnostics**, vérifiez que la case à cocher **Activer les diagnostics** est activée.
 3. Cliquez sur le bouton **Configurer**.
 
    ![Accès à l’option Activer les diagnostics](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)

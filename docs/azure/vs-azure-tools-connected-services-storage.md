@@ -3,18 +3,17 @@ title: Ajouter le Stockage Azure à l’aide des Services connectés | Microsoft
 description: Ajoutez une dépendance de service de stockage Azure à votre application à l’aide de Visual Studio Services connectés
 author: ghogen
 manager: jillfra
-assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800513"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902634"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Ajout de stockage Azure à l’aide des services connectés de Visual Studio
 

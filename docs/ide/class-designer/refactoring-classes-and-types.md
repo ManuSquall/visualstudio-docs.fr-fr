@@ -1,5 +1,7 @@
 ---
 title: Renommer et déplacer des classes et des types dans le Concepteur de classes
+description: Découvrez comment renommer et déplacer des classes et des types à l’aide de Concepteur de classes et de la fenêtre Détails de classe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768602"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901086"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoriser des classes et des types dans le Concepteur de classes
 

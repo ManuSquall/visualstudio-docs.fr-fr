@@ -1,5 +1,7 @@
 ---
 title: Changer la notation entre les membres et les associations (Concepteur de classes)
+description: Découvrez comment modifier la façon dont le diagramme de classes représente une relation d’association entre deux types, de la notation membre à la notation Association et vice versa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771012"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901659"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Guide pratique pour changer la notation entre les membres et les associations dans le Concepteur de classes
 

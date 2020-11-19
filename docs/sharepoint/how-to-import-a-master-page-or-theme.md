@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : importer une page maître ou un thème | Microsoft Docs'
+description: Créez des modèles pour les pages maîtres et les thèmes dans SharePoint Designer, puis importez-les dans Visual Studio pour donner une apparence cohérente aux pages sur votre site SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015295"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903492"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procédure : importer une page maître ou un thème
   Vous pouvez attribuer à des pages de votre site SharePoint une apparence cohérente en créant et en utilisant des pages maîtres et des thèmes. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas de modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer, puis les importer dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour plus d’informations, consultez [bloc de construction : pages et interface utilisateur](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) sur le site Web de Microsoft.

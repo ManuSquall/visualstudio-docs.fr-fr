@@ -1,5 +1,6 @@
 ---
 title: Ajouter des diagrammes de classes aux projets (Concepteur de classes)
+description: Apprenez à concevoir, modifier et refactoriser des classes et d’autres types, ajoutez un diagramme de classes à votre projet C#, Visual Basic ou C++.
 ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa336672dce538c5bfe07cd8ae7b1a4c5771cbd
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 2fbde07ec9825f094777f7e9b962e8394595e180
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102551"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902998"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Guide pratique pour ajouter des diagrammes de classes aux projets
 
@@ -27,15 +28,15 @@ Vous ne pouvez pas créer de diagrammes de classes à partir de projets qui part
 
 ## <a name="install-the-class-designer-component"></a>Installer le composant Concepteur de classes
 
-Si vous n’avez pas installé le composant **Concepteur de classes** , effectuez les étapes suivantes pour le faire.
+Si vous n’avez pas installé le composant **Concepteur de classes**, effectuez les étapes suivantes pour le faire.
 
 1. Ouvrez **Programme d’installation de Visual Studio** à partir du menu Démarrer de Windows ou en sélectionnant **Outils** > **Obtenir les outils et fonctionnalités** dans la barre de menus de Visual Studio.
 
    Le **programme d’installation de Visual Studio** s’ouvre.
 
-1. Sélectionnez l’onglet **Composants individuels** , puis faites défiler vers le bas jusqu’à la catégorie **Outils de code** .
+1. Sélectionnez l’onglet **Composants individuels**, puis faites défiler vers le bas jusqu’à la catégorie **Outils de code**.
 
-1. Sélectionnez **Concepteur de classes** , puis **Modifier** .
+1. Sélectionnez **Concepteur de classes**, puis **Modifier**.
 
    ![Composant Concepteur de classes dans le programme d’installation de Visual Studio](media/class-designer-component.png)
 
@@ -43,33 +44,33 @@ Si vous n’avez pas installé le composant **Concepteur de classes** , effectue
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>Ajouter un diagramme de classes vide à un projet
 
-1. Dans **l’Explorateur de solutions** , cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Ajouter** > **Nouvel élément** . Ou appuyez sur **CTRL** + **MAJ** + **A** .
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Ajouter** > **Nouvel élément**. Ou appuyez sur **CTRL** + **MAJ** + **A**.
 
    La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
-2. Développez **éléments communs**  >  **général** , puis sélectionnez **diagramme de classes** dans la liste modèle. Pour les projets Visual C++, examinez la catégorie **Utilitaire** afin de rechercher le modèle **Diagramme de classes** .
+2. Développez **éléments communs**  >  **général**, puis sélectionnez **diagramme de classes** dans la liste modèle. Pour les projets Visual C++, examinez la catégorie **Utilitaire** afin de rechercher le modèle **Diagramme de classes**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Diagramme de classes** , [effectuez les étapes](#install-the-class-designer-component) pour installer le composant **Concepteur de classes** pour Visual Studio.
+   > Si vous ne voyez pas le modèle **Diagramme de classes**, [effectuez les étapes](#install-the-class-designer-component) pour installer le composant **Concepteur de classes** pour Visual Studio.
 
-   Le diagramme de classes s’ouvre dans le Concepteur de classes et apparaît comme fichier avec l’extension *.cd* dans **l’Explorateur de solutions** . Vous pouvez faire glisser des formes et des lignes vers le diagramme à partir de la **boîte à outils** .
+   Le diagramme de classes s’ouvre dans le Concepteur de classes et apparaît comme fichier avec l’extension *.cd* dans **l’Explorateur de solutions**. Vous pouvez faire glisser des formes et des lignes vers le diagramme à partir de la **boîte à outils**.
 
 Pour ajouter plusieurs diagrammes de classes, répétez les étapes de la procédure.
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>Ajouter un diagramme de classes basé sur des types existants
 
-Dans **l’Explorateur de solutions** , ouvrez le menu contextuel d’un fichier de classe (clic droit), puis choisissez **Afficher le diagramme de classes** .
+Dans **l’Explorateur de solutions**, ouvrez le menu contextuel d’un fichier de classe (clic droit), puis choisissez **Afficher le diagramme de classes**.
 
 - ou -
 
-Dans **Affichage de classes** , ouvrez le menu contextuel de l’espace de noms ou du type, puis choisissez **Afficher le diagramme de classes** .
+Dans **Affichage de classes**, ouvrez le menu contextuel de l’espace de noms ou du type, puis choisissez **Afficher le diagramme de classes**.
 
 > [!TIP]
 > Si **affichage de classes** n’est pas ouvert, ouvrez **affichage de classes** à partir du menu **affichage** .
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Pour afficher le contenu d'un projet complet dans un diagramme de classes
 
-Dans **Explorateur de solutions** ou affichage de classes, cliquez avec le bouton droit sur le projet et choisissez **Afficher** , puis choisissez **afficher le diagramme de classes** .
+Dans **Explorateur de solutions** ou affichage de classes, cliquez avec le bouton droit sur le projet et choisissez **Afficher**, puis choisissez **afficher le diagramme de classes**.
 
 Un diagramme de classes est alors créé et rempli automatiquement.
 

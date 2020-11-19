@@ -1,5 +1,7 @@
 ---
 title: "Comment : copier des éléments d'un diagramme de classes vers un document Microsoft Office (Concepteur de classes)"
+description: Découvrez comment copier des formes d’un diagramme de classes .NET vers d’autres documents. Vous obtiendrez une copie de la forme ou son code sous-jacent.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe473dfdfdf78934ad018a507c6386a1da9babb6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770994"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901620"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Guide pratique pour copier les éléments d’un diagramme de classes vers un document Microsoft Office
 

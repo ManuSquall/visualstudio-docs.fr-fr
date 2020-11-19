@@ -3,17 +3,16 @@ title: Gestion des rôles dans les services cloud Azure
 description: Découvrez comment ajouter et supprimer des rôles dans Azure Cloud Services avec Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 897cb36ee2afa650e042b92243c6044684468a6e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8e932084f9bf3d4631b2fae027224f8973602f13
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398837"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902582"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Gestion des rôles dans Azure Cloud Services avec Visual Studio
 Après avoir créé votre projet de service cloud Azure, vous pouvez ajouter de nouveaux rôles ou supprimer des rôles existants. Vous pouvez également importer un projet existant et le convertir à un rôle. Par exemple, vous pouvez importer une application web ASP.NET et la désigner comme rôle web.
@@ -23,9 +22,9 @@ Les étapes suivantes vous guident dans le processus d’ajout d’un rôle web 
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **l’Explorateur de solutions** , développez le nœud du projet
+1. Dans **l’Explorateur de solutions**, développez le nœud du projet
 
-1. Cliquez sur le nœud **Rôles** pour afficher le menu contextuel. Dans le menu contextuel, sélectionnez **Ajouter** , puis sélectionnez un rôle web ou un rôle de travail existant à partir de la solution actuelle, ou créez un projet de rôle web ou de travail. Vous pouvez également sélectionner un projet approprié, par exemple un projet d’application web ASP.NET, et l’associer à un projet de rôle.
+1. Cliquez sur le nœud **Rôles** pour afficher le menu contextuel. Dans le menu contextuel, sélectionnez **Ajouter**, puis sélectionnez un rôle web ou un rôle de travail existant à partir de la solution actuelle, ou créez un projet de rôle web ou de travail. Vous pouvez également sélectionner un projet approprié, par exemple un projet d’application web ASP.NET, et l’associer à un projet de rôle.
 
    ![Options de menu pour ajouter un rôle à un projet de service cloud Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
@@ -34,7 +33,7 @@ Les étapes suivantes vous guident dans le processus de suppression d’un rôle
 
 1. Créez ou ouvrez un projet de service cloud Azure dans Visual Studio.
 
-1. Dans **l’Explorateur de solutions** , développez le nœud du projet
+1. Dans **l’Explorateur de solutions**, développez le nœud du projet
 
 1. Développez le nœud **Rôles**.
 

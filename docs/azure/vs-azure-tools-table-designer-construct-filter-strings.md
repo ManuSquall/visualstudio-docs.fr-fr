@@ -3,23 +3,22 @@ title: Construction de chaînes de filtrage pour le Concepteur de tables | Micro
 description: Construction de chaînes de filtrage pour le Concepteur de tables
 author: ghogen
 manager: jillfra
-assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398603"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901919"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construction de chaînes de filtrage pour le Concepteur de tables
 ## <a name="overview"></a>Vue d’ensemble
 Pour filtrer les données d’une table Azure affichée dans le **Concepteur de tables** Visual Studio, vous devez créer une chaîne de filtrage, puis entrer celle-ci dans le champ de filtre. La syntaxe de la chaîne de filtrage est définie par les services de données WCF et est similaire à une clause SQL WHERE. Cependant, elle est envoyée au service de Table via une demande HTTP. Le **Concepteur de tables** est chargé de l’encodage. Si vous voulez filtrer les données à l’aide d’une valeur de propriété, il vous suffit donc de taper dans le champ de filtrage le nom de la propriété, l’opérateur de comparaison, la valeur des critères et éventuellement, l’opérateur booléen. Il n’est pas nécessaire d’inclure l’option de requête $filter comme vous le feriez pour créer une URL dans le but d’interroger la table via les [informations de référence de l’API REST Storage Services](/rest/api/storageservices/).
 
-Les services de données WCF sont basés sur le protocole OData ( [Open Data Protocol](https://www.odata.org/) ). Pour plus d’informations sur l’option de requête du système de filtrage ( **$filter** ), consultez les [spécifications des conventions d’URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+Les services de données WCF sont basés sur le protocole OData ( [Open Data Protocol](https://www.odata.org/) ). Pour plus d’informations sur l’option de requête du système de filtrage (**$filter**), consultez les [spécifications des conventions d’URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Opérateurs de comparaison
 Les opérateurs logiques suivants sont pris en charge par tous les types de propriétés :
@@ -32,8 +31,8 @@ Les opérateurs logiques suivants sont pris en charge par tous les types de prop
 | lt |Inférieur à |Prix lt 20 |
 | le |Inférieur ou égal à |Prix le 100 |
 | ne |Différent de |Ville ne 'Londres' |
-| and |and |Prix le 200 and prix gt 3,5 |
-| or |Ou |Prix le 3,5 or prix gt 200 |
+| et |and |Prix le 200 and prix gt 3,5 |
+| or |ou |Prix le 3,5 or prix gt 200 |
 | not |not |not isAvailable |
 
 Quand vous créez une chaîne de filtrage, il est important de suivre les règles suivantes :
@@ -81,13 +80,13 @@ AmountDue le 100.25
 ## <a name="filtering-on-boolean-properties"></a>Filtrage par propriété booléenne
 Pour filtrer les données à l’aide d’une valeur booléenne, spécifiez **true** ou **false** sans guillemets.
 
-L’exemple suivant retourne toutes les entités dont la propriété IsActive a la valeur **true** :
+L’exemple suivant retourne toutes les entités dont la propriété IsActive a la valeur **true**:
 
 ```
 IsActive eq true
 ```
 
-Vous pouvez également écrire cette expression de filtre sans opérateur logique. Dans l’exemple suivant, le service de Table retournera également toutes les entités dont la propriété IsActive a la valeur **true** :
+Vous pouvez également écrire cette expression de filtre sans opérateur logique. Dans l’exemple suivant, le service de Table retournera également toutes les entités dont la propriété IsActive a la valeur **true**:
 
 ```
 IsActive

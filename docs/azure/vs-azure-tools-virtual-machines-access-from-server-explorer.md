@@ -3,17 +3,16 @@ title: Accès aux machines virtuelles Azure à partir de l’Explorateur de serv
 description: Obtenez une présentation de l’affichage, de la création et de la gestion des machines virtuelles Azure dans l’Explorateur de serveurs de Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 653a9be556441f5f8d5fc1c1053b144dc97dd3b2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398551"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901868"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accès aux machines virtuelles Azure à partir de l’Explorateur de serveurs
 
@@ -38,5 +37,5 @@ Si vous avez des machines virtuelles hébergées par Azure, vous pouvez y accéd
    | --- | --- |
    | Nom |Identificateur du point de terminaison. |
    | Port privé |Port d’accès réseau interne à votre application. |
-   | Protocole |Protocole utilisé par la couche de transport du point de terminaison (TCP ou UDP). |
+   | Protocol |Protocole utilisé par la couche de transport du point de terminaison (TCP ou UDP). |
    | Port public |Port utilisé pour l’accès public à votre application. |

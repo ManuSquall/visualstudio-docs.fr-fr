@@ -1,5 +1,7 @@
 ---
 title: Élément WizardData (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément WizardData et sur la façon dont il spécifie un XML personnalisé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740393"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903401"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData, élément (modèles Visual Studio)
 

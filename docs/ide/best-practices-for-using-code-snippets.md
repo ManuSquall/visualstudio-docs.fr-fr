@@ -1,5 +1,7 @@
 ---
 title: Meilleures pratiques pour l'utilisation des extraits de code
+description: En savoir plus sur les extraits de code, sur l’objectif d’un extrait de code et sur la meilleure façon de les utiliser pour les adapter à votre application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f54a451bea8345d06073e6f3a8ab944b3c7ea820
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591708"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903141"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bonnes pratiques pour l’utilisation des extraits de code
 
@@ -31,7 +33,7 @@ Lorsque vous adaptez des emplacements de fichiers à votre application, vous dev
 
 - Trouver un emplacement accessible. Les utilisateurs n’ont peut-être pas accès au dossier *Program Files* de l’ordinateur, de sorte que le stockage des fichiers avec les fichiers d’application peut ne pas fonctionner.
 
-- Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (*C : \\ *) n’est pas sécurisé. Pour les données d’application, nous vous recommandons d’utiliser le dossier *Application Data* . Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier *Documents*.
+- Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (*C : \\*) n’est pas sécurisé. Pour les données d’application, nous vous recommandons d’utiliser le dossier *Application Data* . Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier *Documents*.
 
 - Utiliser un nom de fichier valide. Vous pouvez utiliser les contrôles <xref:System.Windows.Forms.OpenFileDialog> et <xref:System.Windows.Forms.SaveFileDialog> pour réduire la probabilité d’avoir des noms de fichiers non valides. N’oubliez pas qu’entre le moment où l’utilisateur sélectionne un fichier et celui où votre code manipule ce fichier, ce dernier peut avoir été supprimé. En outre, l’utilisateur peut ne pas avoir les autorisations pour écrire dans le fichier.
 

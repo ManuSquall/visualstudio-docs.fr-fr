@@ -4,17 +4,16 @@ description: Découvrez comment configurer un projet de service cloud Azure en m
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399804"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902361"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuration de votre projet Azure dans Visual Studio pour utiliser plusieurs configurations de service
 
@@ -33,13 +32,13 @@ Pour en savoir plus sur les schémas sous-jacents des fichiers de définition et
 
 ### <a name="service-configuration"></a>Configuration du service
 
-Sélectionne le `ServiceConfiguration.*.cscfg` affecté par les modifications. Par défaut, il existe des variantes Local et Cloud, et vous pouvez utiliser la commande **Gérer...** pour copier, renommer et supprimer des fichiers de configuration. Ces fichiers sont ajoutés à votre projet de service cloud et apparaissent dans l' **Explorateur de solutions**. Cependant, la modification du nom ou la suppression des configurations ne peuvent s'effectuer qu'à l'aide de ce contrôle.
+Sélectionne le `ServiceConfiguration.*.cscfg` affecté par les modifications. Par défaut, il existe des variantes Local et Cloud, et vous pouvez utiliser la commande **Gérer...** pour copier, renommer et supprimer des fichiers de configuration. Ces fichiers sont ajoutés à votre projet de service cloud et apparaissent dans l'**Explorateur de solutions**. Cependant, la modification du nom ou la suppression des configurations ne peuvent s'effectuer qu'à l'aide de ce contrôle.
 
 ### <a name="instances"></a>Instances
 
 Définir la propriété count de l’ **Instance** au nombre d'instances que le service doit exécuter pour ce rôle.
 
-Définir la propriété **Taille de la machine virtuelle** sur **Très petite** , **Petite** , **Moyenne** , **Grande** ou **Très grande**.  Pour plus d’informations, consultez [tailles des services Cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Définir la propriété **Taille de la machine virtuelle** sur **Très petite**, **Petite**, **Moyenne**, **Grande** ou **Très grande**.  Pour plus d’informations, consultez [tailles des services Cloud](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Action de démarrage (rôle web uniquement)
 
@@ -51,11 +50,11 @@ Si vous avez déjà ajouté un point de terminaison HTTPS, l'option point de ter
 
 ### <a name="diagnostics"></a>Diagnostics
 
-Par défaut, les diagnostics sont activés pour le rôle web. Le projet de service cloud Azure et le compte de stockage sont configurés pour utiliser l'émulateur de stockage local. Lorsque vous êtes prêt à déployer sur Azure, vous pouvez sélectionner le bouton de génération ( **...** ) pour utiliser plutôt Stockage Azure. Vous pouvez transférer les données de diagnostic au compte de stockage à la demande ou à intervalles planifiés automatiquement. Pour plus d'informations sur les diagnostics Azure, consultez la page [Activation de Diagnostics dans Azure Cloud Services et Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Par défaut, les diagnostics sont activés pour le rôle web. Le projet de service cloud Azure et le compte de stockage sont configurés pour utiliser l'émulateur de stockage local. Lorsque vous êtes prêt à déployer sur Azure, vous pouvez sélectionner le bouton de génération (**...**) pour utiliser plutôt Stockage Azure. Vous pouvez transférer les données de diagnostic au compte de stockage à la demande ou à intervalles planifiés automatiquement. Pour plus d'informations sur les diagnostics Azure, consultez la page [Activation de Diagnostics dans Azure Cloud Services et Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Page Paramètres
 
-Sur la page **Paramètres** , vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code qui s’exécute dans le rôle peut lire les valeurs de vos paramètres de configuration au moment de l’exécution à l’aide des classes fournies par la [bibliothèque managée Azure](/previous-versions/azure/dn602775(v=azure.11)), en particulier la méthode [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
+Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code qui s’exécute dans le rôle peut lire les valeurs de vos paramètres de configuration au moment de l’exécution à l’aide des classes fournies par la [bibliothèque managée Azure](/previous-versions/azure/dn602775(v=azure.11)), en particulier la méthode [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuration d’une chaîne de connexion pour un compte de stockage
 
@@ -68,14 +67,14 @@ Vous pouvez définir la chaîne de connexion pour utiliser un stockage local si 
 
 Pour créer une chaîne de connexion, sélectionnez **Ajouter un paramètre** et définissez **Type** sur « Chaîne de connexion ».
 
-Pour les chaînes de connexion nouvelles ou existantes, sélectionnez **...** _ à droite du champ _ *valeur* * pour ouvrir la boîte de dialogue **créer une chaîne de connexion de stockage** :
+Pour les chaînes de connexion nouvelles ou existantes, sélectionnez **...** _ à droite du champ _ *valeur** pour ouvrir la boîte de dialogue **créer une chaîne de connexion de stockage** :
 
-1. Sous **Se connecter en utilisant** , sélectionnez l'option **Votre abonnement** pour sélectionner un compte de stockage à partir d'un abonnement. Visual Studio obtient ensuite automatiquement les informations d'identification du compte de stockage à partir du fichier `.publishsettings`.
+1. Sous **Se connecter en utilisant**, sélectionnez l'option **Votre abonnement** pour sélectionner un compte de stockage à partir d'un abonnement. Visual Studio obtient ensuite automatiquement les informations d'identification du compte de stockage à partir du fichier `.publishsettings`.
 1. L'option **Informations d'identification entrées manuellement** vous permet de spécifier directement le nom et la clé du compte à l'aide des informations du portail Azure. Pour copier la clé du compte :
     1. Accédez au compte de stockage sur le portail Azure et sélectionnez **Gérer les clés**.
-    1. Pour copier la clé de compte, accédez au compte de stockage sur le portail Azure, sélectionnez **Paramètres > clés d’accès** , puis utilisez le bouton Copier pour copier la clé d’accès primaire dans le Presse-papiers.
+    1. Pour copier la clé de compte, accédez au compte de stockage sur le portail Azure, sélectionnez **Paramètres > clés d’accès**, puis utilisez le bouton Copier pour copier la clé d’accès primaire dans le Presse-papiers.
 1. Sélectionnez l'une des options de connexion. L'option **Spécifier des points de terminaison personnalisés** vous demande de spécifier des URL spécifiques pour les objets blob, les tables et les files d'attente. Les points de terminaison personnalisés vous permettent d'utiliser des [domaines personnalisés](/azure/storage/blobs/storage-custom-domain-name) et de contrôler plus précisément l'accès. Voir [Configuration des chaînes de connexion du Stockage Azure](/azure/storage/common/storage-configure-connection-string).
-1. Sélectionnez **OK** , puis **Fichier > Enregistrer** pour mettre à jour la configuration avec la nouvelle chaîne de connexion.
+1. Sélectionnez **OK**, puis **Fichier > Enregistrer** pour mettre à jour la configuration avec la nouvelle chaîne de connexion.
 
 Ici encore, lorsque vous publiez votre application dans Azure, sélectionnez la configuration de service qui contient le compte de stockage Azure pour la chaîne de connexion. Une fois votre application publiée, vérifiez que l'application fonctionne comme prévu par rapport aux services de stockage Azure.
 

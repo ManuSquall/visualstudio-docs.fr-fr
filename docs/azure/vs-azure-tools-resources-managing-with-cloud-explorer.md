@@ -3,17 +3,16 @@ title: Gestion des ressources Azure avec Cloud Explorer | Microsoft Docs
 description: Découvrez comment utiliser Cloud Explorer pour rechercher et gérer des ressources Azure dans Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399388"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902278"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gérer les ressources associées à vos comptes Azure dans Visual Studio Cloud Explorer
 
@@ -33,7 +32,7 @@ Tout comme le [Portail Azure](https://portal.azure.com), Cloud Explorer repose s
 
 Pour afficher les ressources associées à un compte Azure, vous devez d’abord ajouter le compte à **Cloud Explorer**.
 
-1. Dans **Cloud Explorer** , sélectionnez le bouton **gestion de compte** .
+1. Dans **Cloud Explorer**, sélectionnez le bouton **gestion de compte** .
 
    ![Icône des paramètres de compte Azure Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -53,7 +52,7 @@ Pour afficher les ressources associées à un compte Azure, vous devez d’abord
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>Supprimer un compte Azure de Cloud Explorer
 
-1. Dans **Cloud Explorer** , sélectionnez **gestion des comptes**.
+1. Dans **Cloud Explorer**, sélectionnez **gestion des comptes**.
 
    ![paramètres de compte Azure](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -69,7 +68,7 @@ Pour afficher les ressources associées à un compte Azure, vous devez d’abord
 
 Pour afficher vos ressources Azure, vous pouvez choisir l’affichage **Types de ressources** ou **Groupes de ressources**.
 
-1. Dans **Cloud Explorer** , sélectionnez la liste déroulante d’affichage des ressources.
+1. Dans **Cloud Explorer**, sélectionnez la liste déroulante d’affichage des ressources.
 
    ![Liste déroulante Cloud Explorer pour sélectionner l’affichage des ressources souhaité](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
@@ -84,7 +83,7 @@ Pour afficher vos ressources Azure, vous pouvez choisir l’affichage **Types de
 
 ## <a name="view-and-navigate-resources-in-cloud-explorer"></a>Afficher et parcourir les ressources dans Cloud Explorer
 
-Pour accéder à une ressource Azure et afficher ses informations dans Cloud Explorer, développez le type de l’élément ou le groupe de ressources associé, puis sélectionnez la ressource. Lorsque vous sélectionnez une ressource, les informations apparaissent dans les deux onglets, **Actions** et **Propriétés** , en bas de Cloud Explorer.
+Pour accéder à une ressource Azure et afficher ses informations dans Cloud Explorer, développez le type de l’élément ou le groupe de ressources associé, puis sélectionnez la ressource. Lorsque vous sélectionnez une ressource, les informations apparaissent dans les deux onglets, **Actions** et **Propriétés**, en bas de Cloud Explorer.
 
 * Onglet **Actions** : liste les actions possibles dans Cloud Explorer pour la ressource sélectionnée. Vous pouvez également voir ces options en cliquant avec le bouton droit sur la ressource pour afficher son menu contextuel.
 
@@ -96,7 +95,7 @@ L’image suivante montre un exemple de comparaison de ce qui apparaît sur chaq
 
 Chaque ressource dispose de l'action **Ouvrir dans le portail**. Lorsque vous sélectionnez cette action, Cloud Explorer affiche la ressource sélectionnée dans le [portail Azure](https://portal.azure.com). La fonctionnalité **Ouvrir dans le portail** est particulièrement pratique pour parcourir des ressources profondément imbriquées.
 
-Des actions et des valeurs de propriétés supplémentaires peuvent également s’afficher en fonction de la ressource Azure. Par exemple, les applications web et les applications logiques ont également les actions **Ouvrir dans un navigateur** et **Attacher le débogueur** en plus de l’action **Ouvrir dans le portail**. Les actions d’ouverture des éditeurs apparaissent lorsque vous sélectionnez un objet Blob, File d'attente ou Table de compte de stockage. Les applications Azure ont des propriétés **URL** et **État** , tandis que les ressources de stockage ont des propriétés clé et chaîne de connexion.
+Des actions et des valeurs de propriétés supplémentaires peuvent également s’afficher en fonction de la ressource Azure. Par exemple, les applications web et les applications logiques ont également les actions **Ouvrir dans un navigateur** et **Attacher le débogueur** en plus de l’action **Ouvrir dans le portail**. Les actions d’ouverture des éditeurs apparaissent lorsque vous sélectionnez un objet Blob, File d'attente ou Table de compte de stockage. Les applications Azure ont des propriétés **URL** et **État**, tandis que les ressources de stockage ont des propriétés clé et chaîne de connexion.
 
 ## <a name="find-resources-in-cloud-explorer"></a>Trouver des ressources dans Cloud Explorer
 

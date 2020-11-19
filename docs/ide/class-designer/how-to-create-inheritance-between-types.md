@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour créer un héritage entre les types (Concepteur de classes)
+description: Découvrez comment créer une relation d’héritage entre deux types sur un diagramme de classes à l’aide de Concepteur de classes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770200"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901464"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Guide pratique pour créer un héritage entre les types dans le Concepteur de classes
 

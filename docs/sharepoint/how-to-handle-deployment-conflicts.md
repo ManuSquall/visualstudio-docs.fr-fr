@@ -1,5 +1,7 @@
 ---
 title: 'Comment : gérer les conflits de déploiement | Microsoft Docs'
+description: Consultez un exemple d’implémentation de votre propre code pour gérer les conflits de déploiement pour un élément de projet SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015310"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903505"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Comment : gérer les conflits de déploiement
   Vous pouvez fournir votre propre code pour gérer les conflits de déploiement pour un élément de projet SharePoint. Par exemple, vous pouvez déterminer si des fichiers dans l’élément de projet actuel existent déjà à l’emplacement de déploiement, puis supprimer les fichiers déployés avant le déploiement de l’élément de projet actuel. Pour plus d’informations sur les conflits de déploiement, consultez extension de l' [empaquetage et du déploiement SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

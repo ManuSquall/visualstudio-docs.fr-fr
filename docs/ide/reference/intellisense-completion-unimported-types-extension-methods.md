@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb912ebb4d8d7d4596a6aae6499ac054d4514ca
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102504"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94900918"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>Saisie semi-automatique IntelliSense pour les types et les méthodes d’extension inimportés
 
@@ -38,7 +38,7 @@ Dans les **cas suivants :** Vous souhaitez utiliser un type ou des méthodes d�
 1. Une fois que vous avez commencé à taper le nom d’un type ou d’une méthode d’extension qui a une dépendance dans votre projet, IntelliSense vous donne des suggestions. L’espace de noms conteneur des éléments des espaces de noms qui ne sont pas importés est indiqué comme suffixe.
 
    > [!TIP]
-   > Vous pouvez afficher/masquer les éléments des espaces de noms non importés à la demande, à l’aide du **bouton de développement (Alt + A)** qui apparaît en bas à gauche de la liste de saisie semi-automatique. Pour modifier le comportement par défaut, accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **C#**  /  de **base**  >  **IntelliSense** et recherchez **afficher les éléments des espaces de noms non importés** .
+   > Vous pouvez afficher/masquer les éléments des espaces de noms non importés à la demande, à l’aide du **bouton de développement (Alt + A)** qui apparaît en bas à gauche de la liste de saisie semi-automatique. Pour modifier le comportement par défaut, accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **C#**  /  de **base**  >  **IntelliSense** et recherchez **afficher les éléments des espaces de noms non importés**.
 
 2. Sélectionner et valider un élément non importé.
 

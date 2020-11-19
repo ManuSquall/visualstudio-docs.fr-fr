@@ -1,5 +1,7 @@
 ---
 title: Raccourcis clavier et souris pour le Concepteur de classes
+description: Découvrez comment utiliser le clavier en plus de la souris pour effectuer des actions de navigation dans Concepteur de classes et dans la fenêtre Détails de classe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30932a6c94bc6104aeea0244f06f471d0a639b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c184a12474e2d7ff0b626547acaaf2a37d460c8e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533664"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901100"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe
 
@@ -63,10 +65,10 @@ Les actions du clavier suivantes sont prises en charge dans les diagrammes de cl
 |**MAJ** + **touches de direction**|À l'intérieur des formes de type|Combinaison de touches permettant la sélection continue d'éléments de forme, tels que des membres, des types imbriqués ou des compartiments. Ces raccourcis ne prennent pas en charge l'habillage.|
 |**Page d'accueil**|À l'intérieur des formes de type|Permet d'atteindre le titre de la forme de niveau supérieur.|
 |**Page d'accueil**|Formes de niveau supérieur|Permet d'atteindre la première forme dans le diagramme.|
-|**Effet**|À l'intérieur des formes de type|Permet d'atteindre le dernier élément visible à l'intérieur de la forme.|
-|**Effet**|Formes de niveau supérieur|Permet d'atteindre la dernière forme dans le diagramme.|
+|**End**|À l'intérieur des formes de type|Permet d'atteindre le dernier élément visible à l'intérieur de la forme.|
+|**End**|Formes de niveau supérieur|Permet d'atteindre la dernière forme dans le diagramme.|
 |**MAJ** + **Page d’hébergement**|À l'intérieur d'une forme de type|Sélectionne des éléments dans la forme, en commençant par l'élément actuel et en terminant par l'élément supérieur de cette forme.|
-|**MAJ** + **Fin**|À l'intérieur d'une forme de type|Identique à **Shift** + la**page** de décalage, mais dans la direction verticale.|
+|**MAJ** + **Fin**|À l'intérieur d'une forme de type|Identique à **Shift** + la **page** de décalage, mais dans la direction verticale.|
 |**Entrez**|Tous les contextes|Appelle l'action par défaut sur la forme qui est également réalisable avec un double-clic. Dans la plupart des cas, il s'agit de la commande Afficher le code, mais certains éléments définissent l'action par défaut différemment (lollipops, en-têtes de compartiment, étiquettes lollipop).|
 |**+** les **-**|Tous les contextes|Si l’élément ayant le focus peut être développé, ces touches le développent ou le réduisent.|
 |**>**|Tous les contextes|Sur un élément ayant des enfants, cette touche développe l’élément s’il était réduit et permet de naviguer vers le premier enfant.|
@@ -78,7 +80,7 @@ Les actions du clavier suivantes sont prises en charge dans les diagrammes de cl
 |**CTRL** + **Supprimer**|Tous les contextes|Appelle la commande **Supprimer du code** sur la sélection.|
 |**Onglet**|Tous les contextes|Fait naviguer jusqu'à l'enfant suivant dans le même parent (prend en charge l'habillage).|
 |**MAJ** + **Onglet**|Tous les contextes|Fait naviguer jusqu'à l'enfant précédent dans le même parent (prend en charge l'habillage).|
-|**Espace**|Tous les contextes|Active ou désactive la sélection de l'élément actuel.|
+|**Touche**|Tous les contextes|Active ou désactive la sélection de l'élément actuel.|
 
 ## <a name="use-the-keyboard-in-the-class-details-window"></a>Utiliser le clavier dans la fenêtre Détails de classe
 
@@ -92,7 +94,7 @@ Utilisez les touches suivantes pour naviguer dans la fenêtre **Détails de clas
 |**,** (virgule)|Si le curseur se trouve dans une ligne de paramètre, la saisie d'une virgule déplace le curseur dans le champ Nom du paramètre suivant. Si le curseur se trouve dans la dernière ligne de paramètre d’une méthode, il déplace le curseur vers le \<add parameter> champ, que vous pouvez utiliser pour créer un nouveau paramètre.<br /><br /> Si le curseur se trouve ailleurs dans la fenêtre **Détails de classe**, la saisie d’une virgule ajoute simplement une virgule dans le champ actuel.|
 |**;** (point-virgule) ou **)** (parenthèse fermante)|Déplace le curseur dans le champ Nom de la ligne de membre suivante dans la grille de la fenêtre **Détails de classe**.|
 |**Onglet**|Déplace le curseur dans le champ suivant (de gauche à droite, puis de haut en bas). Si le curseur quitte un champ dans lequel vous avez tapé du texte, **Détails de classe** traite ce texte et le stocke, sous réserve qu’aucune erreur n’ait été détectée.<br /><br /> Si le curseur se trouve dans un champ vide, tel que \<add parameter> , la touche Table déplace vers le premier champ de la ligne suivante.|
-|**Espace**|Déplace le curseur dans le champ suivant (de gauche à droite, puis de haut en bas). Si le curseur se trouve dans un champ vide, tel que \<add parameter> , il se déplace vers le premier champ de la ligne suivante. Notez que l' \<space> entrée juste après une virgule est ignorée.<br /><br /> Si le curseur se trouve dans le champ Résumé, la saisie d'un espace ajoute un caractère espace.<br /><br /> Si le curseur se trouve dans la colonne Masquer d'une ligne, la saisie d'un espace inverse la valeur de la case à cocher Masquer.|
+|**Touche**|Déplace le curseur dans le champ suivant (de gauche à droite, puis de haut en bas). Si le curseur se trouve dans un champ vide, tel que \<add parameter> , il se déplace vers le premier champ de la ligne suivante. Notez que l' \<space> entrée juste après une virgule est ignorée.<br /><br /> Si le curseur se trouve dans le champ Résumé, la saisie d'un espace ajoute un caractère espace.<br /><br /> Si le curseur se trouve dans la colonne Masquer d'une ligne, la saisie d'un espace inverse la valeur de la case à cocher Masquer.|
 |**CTRL** + **Onglet**|Bascule vers une autre fenêtre de document, par exemple, de la fenêtre **Détails de classe** vers un fichier de code ouvert.|
 |**Échap**|Si vous avez commencé à taper du texte dans un champ, l'utilisation de la touche Échap annule la saisie en cours et rétablit le contenu précédent du champ. Si la fenêtre Détails de classe est active, mais qu’aucune cellule spécifique n’a le focus, l’utilisation de la touche Échap déplace le focus hors de la fenêtre **Détails de classe**.|
 |**Flèche haut** et **flèche bas**|Ces touches déplacent verticalement le curseur de ligne en ligne dans la grille de la fenêtre **Détails de classe**.|

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 48554484781cca46ba96f8a075d18ea55ec3ef43
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ad233d51e271dfbacb80b7f5f2792d546a8a3e0a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398616"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903056"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Ajouter le cache Azure pour les éléments ReDim à l’aide de Visual Studio Services connectés
 
@@ -42,7 +42,7 @@ La fonctionnalité de service connecté ajoute l’ensemble des références et 
 
 1. Ouvrez votre projet dans Visual Studio.
 
-1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nœud **services connectés** et, dans le menu contextuel, sélectionnez **Ajouter un service connecté**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **services connectés** et, dans le menu contextuel, sélectionnez **Ajouter un service connecté**.
 
 1. Sous l’onglet **services connectés** , sélectionnez l’icône + pour les **dépendances de service**.
 

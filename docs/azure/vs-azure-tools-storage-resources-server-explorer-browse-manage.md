@@ -4,17 +4,16 @@ description: Consultation et gestion des ressources de stockage à l’aide de l
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398863"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902218"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Consulter et gérer les ressources de stockage à l’aide de l’Explorateur de serveurs
 
@@ -32,9 +31,9 @@ Pour afficher les Explorateur de serveurs dans Visual Studio, dans la barre de m
 
 L’Explorateur de serveurs affiche automatiquement la liste des objets blob, des files d’attente et des tables de votre compte d’émulateur de stockage. Le compte de l’émulateur de stockage est listé dans Explorateur de serveurs sous le nœud de **stockage** en tant que nœud de **développement** .
 
-Pour afficher les ressources du compte de l’émulateur de stockage, développez le nœud **Développement** . Si l’émulateur de stockage n’a pas encore été démarré quand vous développez le nœud **Développement** , il démarre automatiquement. Ce processus peut prendre plusieurs secondes. Vous pouvez continuer à travailler dans d’autres parties de Visual Studio pendant le démarrage de l’émulateur de stockage.
+Pour afficher les ressources du compte de l’émulateur de stockage, développez le nœud **Développement** . Si l’émulateur de stockage n’a pas encore été démarré quand vous développez le nœud **Développement**, il démarre automatiquement. Ce processus peut prendre plusieurs secondes. Vous pouvez continuer à travailler dans d’autres parties de Visual Studio pendant le démarrage de l’émulateur de stockage.
 
-Pour afficher les ressources dans un compte de stockage, développez le nœud du compte de stockage dans l’Explorateur de serveurs pour afficher les nœuds **Objets blob** , **Files d'attente** et **Tables**.
+Pour afficher les ressources dans un compte de stockage, développez le nœud du compte de stockage dans l’Explorateur de serveurs pour afficher les nœuds **Objets blob**, **Files d'attente** et **Tables**.
 
 ## <a name="work-with-blob-resources"></a>Utilisation des ressources d’objets blob
 
@@ -42,7 +41,7 @@ Le nœud **Objets BLOB** affiche une liste de conteneurs pour le compte de stock
 
 ### <a name="to-create-a-blob-container"></a>Pour créer un conteneur d’objets blob
 
-1. Ouvrez le menu contextuel du nœud **Objets blob** , puis sélectionnez **Créer un conteneur d’objets blob**.
+1. Ouvrez le menu contextuel du nœud **Objets blob**, puis sélectionnez **Créer un conteneur d’objets blob**.
 1. Entrez le nom du nouveau conteneur dans la boîte de dialogue **Créer un conteneur d’objets blob**.
 1. Sélectionnez Entrée sur votre clavier, ou cliquez/appuyez en dehors du champ de nom pour enregistrer le conteneur d’objets blob.
 
@@ -74,7 +73,7 @@ Vous pouvez effectuer les opérations suivantes sur les objets blob en utilisant
 
 1. Choisissez le conteneur d’objets BLOB dans **Cloud Explorer**. Dans la fenêtre du conteneur, sélectionnez le bouton **Charger l’objet blob**.
 
-1. Dans la boîte de dialogue **Télécharger un nouveau fichier** , sélectionnez le bouton **Parcourir** pour spécifier le fichier à charger, puis entrez un nom de dossier dans la zone **Dossier (facultatif)**.
+1. Dans la boîte de dialogue **Télécharger un nouveau fichier**, sélectionnez le bouton **Parcourir** pour spécifier le fichier à charger, puis entrez un nom de dossier dans la zone **Dossier (facultatif)**.
 
    ![Chargement d’un fichier dans un dossier d’objets blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +93,7 @@ Supprimez tous les fichiers du dossier.
 
 Vous pouvez filtrer les objets blob qui sont affichés en spécifiant un préfixe commun.
 
-Par exemple, si vous entrez le préfixe **hello** dans la zone de texte de filtre, puis sélectionnez le bouton **Exécuter** ( **!** ), seuls les objets blob qui commencent par « hello » s’affichent.
+Par exemple, si vous entrez le préfixe **hello** dans la zone de texte de filtre, puis sélectionnez le bouton **Exécuter** (**!**), seuls les objets blob qui commencent par « hello » s’affichent.
 
 ![Zone de texte de filtre](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,7 +101,7 @@ La zone de texte de filtre respecte la casse et ne prend pas en charge le filtra
 
 ### <a name="to-download-blob-data"></a>Pour télécharger les données des objets blob
 
-Dans **Cloud Explorer** , utilisez l’une des méthodes suivantes :
+Dans **Cloud Explorer**, utilisez l’une des méthodes suivantes :
 
 * Ouvrez le menu contextuel pour un ou plusieurs objets blob, puis sélectionnez **Ouvrir**.
 * Choisissez le nom de l’objet blob, puis sélectionnez le bouton **Ouvrir**.
@@ -166,12 +165,12 @@ Le stockage de table Azure permet de stocker de grandes quantités de données s
 
 ### <a name="to-create-a-table"></a>Pour créer une table
 
-1. Dans **Cloud Explorer** , sélectionnez le nœud **tables** du compte de stockage, puis sélectionnez **créer une table**.
+1. Dans **Cloud Explorer**, sélectionnez le nœud **tables** du compte de stockage, puis sélectionnez **créer une table**.
 1. Dans la boîte de dialogue **Créer une table** , entrez un nom pour la table.
 
 ### <a name="to-view-table-data"></a>Pour afficher des données de table
 
-1. Dans **Cloud Explorer** , ouvrez le nœud **Azure** , puis ouvrez le nœud de **stockage** .
+1. Dans **Cloud Explorer**, ouvrez le nœud **Azure** , puis ouvrez le nœud de **stockage** .
 1. Ouvrez le nœud du compte de stockage qui vous intéresse, puis ouvrez le nœud **Tables** pour afficher la liste des tables associées au compte de stockage.
 1. Ouvrez le menu contextuel d’une table, puis sélectionnez **Afficher la table**.
 
@@ -181,7 +180,7 @@ La table est organisée en entités (lignes) et propriétés (colonnes). Par exe
 
 ### <a name="to-edit-table-data"></a>Pour modifier des données de table
 
-Dans **Concepteur de tables** , ouvrez le menu contextuel d’une entité (une seule ligne) ou une propriété (une seule cellule), puis sélectionnez **modifier**.
+Dans **Concepteur de tables**, ouvrez le menu contextuel d’une entité (une seule ligne) ou une propriété (une seule cellule), puis sélectionnez **modifier**.
 
 ![Ajouter ou modifier une entité de table](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -194,11 +193,11 @@ Il n’est pas nécessaire que les entités d’une table possèdent les mêmes 
 
 ### <a name="to-add-entities"></a>Pour ajouter des entités
 
-1. Dans **Concepteur de tables** , cliquez sur le bouton **Ajouter une entité** .
+1. Dans **Concepteur de tables**, cliquez sur le bouton **Ajouter une entité** .
 
     ![Bouton Ajouter une entité](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Dans la boîte de dialogue **Ajouter une entité** , saisissez les valeurs des propriétés **PartitionKey** et **RowKey**.
+1. Dans la boîte de dialogue **Ajouter une entité**, saisissez les valeurs des propriétés **PartitionKey** et **RowKey**.
 
     ![Boîte de dialogue Ajouter une entité](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -229,17 +228,17 @@ Les opérations de connexion aux données et de récupération des données entr
 
 ### <a name="to-refresh-blob-container-data"></a>Pour actualiser les données d’un conteneur d’objets blob
 
-* Sélectionnez le nœud **Objets blob** sous **Storage** , puis sélectionnez le bouton **Actualiser** dans la barre d’outils de l’Explorateur de serveurs.
+* Sélectionnez le nœud **Objets blob** sous **Storage**, puis sélectionnez le bouton **Actualiser** dans la barre d’outils de l’Explorateur de serveurs.
 * Pour actualiser la liste des objets blob, sélectionnez le bouton **Exécuter**.
 
 ### <a name="to-refresh-table-data"></a>Pour actualiser les données d’une table
 
-* Sélectionnez le nœud **Tables** sous **Storage** , puis sélectionnez le bouton **Actualiser** dans la barre d’outils de l’Explorateur de serveurs.
-* Pour actualiser la liste des entités affichées dans **Concepteur de tables** , sélectionnez le bouton **exécuter** dans Concepteur de tables.
+* Sélectionnez le nœud **Tables** sous **Storage**, puis sélectionnez le bouton **Actualiser** dans la barre d’outils de l’Explorateur de serveurs.
+* Pour actualiser la liste des entités affichées dans **Concepteur de tables**, sélectionnez le bouton **exécuter** dans Concepteur de tables.
 
 ### <a name="to-refresh-queue-data"></a>Pour actualiser les données d’une file d’attente
 
-Sélectionnez le nœud **Files d’attente** sous **Storage** , puis sélectionnez le bouton **Actualiser** dans la barre d’outils de l’Explorateur de serveurs.
+Sélectionnez le nœud **Files d’attente** sous **Storage**, puis sélectionnez le bouton **Actualiser** dans la barre d’outils de l’Explorateur de serveurs.
 
 ### <a name="to-refresh-all-items-in-a-storage-account"></a>Pour actualiser tous les éléments d’un compte de stockage
 
@@ -251,9 +250,9 @@ Il existe deux façons d’ajouter des comptes de stockage à l’aide de l’Ex
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Pour créer un compte de stockage à l’aide de l’Explorateur de serveurs
 
-1. Dans l’Explorateur de serveurs, ouvrez le menu contextuel du nœud **Stockage** , puis sélectionnez **Créer un compte de stockage**.
+1. Dans l’Explorateur de serveurs, ouvrez le menu contextuel du nœud **Stockage**, puis sélectionnez **Créer un compte de stockage**.
 
-1. Dans la boîte de dialogue **Créer un compte de stockage** , sélectionnez ou entrez les informations suivantes :
+1. Dans la boîte de dialogue **Créer un compte de stockage**, sélectionnez ou entrez les informations suivantes :
 
    * L’abonnement Azure auquel vous voulez ajouter le compte de stockage
    * Le nom que vous voulez utiliser pour le nouveau compte de stockage
@@ -268,10 +267,10 @@ Le nouveau compte de stockage s’affiche dans la liste **Stockage** de l’Expl
 
 ### <a name="to-attach-an-existing-storage-account-by-using-server-explorer"></a>Pour attacher un compte de stockage existant à l’aide de l’Explorateur de serveurs
 
-1. Dans l’Explorateur de serveurs, ouvrez le menu contextuel du nœud Azure **Stockage** , puis sélectionnez **Attacher un stockage externe**.
+1. Dans l’Explorateur de serveurs, ouvrez le menu contextuel du nœud Azure **Stockage**, puis sélectionnez **Attacher un stockage externe**.
 
     ![Ajout d’un compte de stockage existant](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
-1. Dans la boîte de dialogue **Créer un compte de stockage** , sélectionnez ou entrez les informations suivantes :
+1. Dans la boîte de dialogue **Créer un compte de stockage**, sélectionnez ou entrez les informations suivantes :
 
    * Le nom du compte de stockage existant que vous voulez attacher.
    * La clé du compte de stockage sélectionné. Cette valeur est généralement fournie quand vous sélectionnez un compte de stockage. Si vous voulez que Visual Studio se souvienne de la clé du compte de stockage, cochez la case **Mémoriser la clé du compte**.
@@ -279,7 +278,7 @@ Le nouveau compte de stockage s’affiche dans la liste **Stockage** de l’Expl
 
 ### <a name="to-view-the-secondary-endpoints"></a>Pour afficher les points de terminaison secondaires
 
-Si vous avez créé un compte de stockage à l’aide de l’option de réplication **Read-Access Geo Redundant** , vous pouvez afficher ses points de terminaison secondaires en ouvrant le menu contextuel du nom du compte, puis en sélectionnant **Propriétés**.
+Si vous avez créé un compte de stockage à l’aide de l’option de réplication **Read-Access Geo Redundant**, vous pouvez afficher ses points de terminaison secondaires en ouvrant le menu contextuel du nom du compte, puis en sélectionnant **Propriétés**.
 
 ![Points de terminaison de stockage secondaires](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : inclure un assembly personnalisé dans une fonctionnalité BDC | Microsoft Docs'
+description: Incluez des assemblys personnalisés dans une fonctionnalité de connectivité de données métiers (BDC) afin que votre projet puisse référencer des assemblys d’autres projets dans la même solution.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740069"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903466"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Comment : inclure un assembly personnalisé dans une fonctionnalité BDC
   Votre projet peut référencer des assemblys d’autres projets dans la même solution. Toutefois, vous devez ajouter ces assemblys au fichier de fonctionnalité du projet à l’aide de la boîte de dialogue **assigner les assemblys référencés aux LobSystems** .

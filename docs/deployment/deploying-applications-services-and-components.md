@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: db37c22af858cef76acda2a42d29a38d244395c8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830775"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903323"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Présentation du déploiement dans Visual Studio
 
@@ -44,11 +44,15 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
     ![Choisir Publier](../deployment/media/quickstart-publish.png)
 
-- **Windows Desktop** : vous pouvez publier une application Windows Desktop sur un dossier avec un déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop** : vous pouvez publier une application Windows Desktop sur un dossier avec un déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez les rubriques suivantes :
+
+  - [Déployer une application de bureau Windows .NET Framework à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [Déployer une application de bureau Windows .NET à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+  - [Déployez une application C++/CLR à l’aide de ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [déployer une application native à l’aide d’un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publication dans Azure
 
-- **ASP.net**, **ASP.net Core**, **python**et **Node.js**: publiez sur Azure App service ou Azure App service Linux (à l’aide de conteneurs) à l’aide de l’une des méthodes suivantes.
+- **ASP.net**, **ASP.net Core**, **python** et **Node.js**: publiez sur Azure App service ou Azure App service Linux (à l’aide de conteneurs) à l’aide de l’une des méthodes suivantes.
 
   - Pour le déploiement continu (ou automatisé) d’applications, utilisez Azure DevOps avec [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
@@ -66,8 +70,6 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
   Pour une présentation rapide, consultez [Publier sur Azure](quickstart-deploy-to-azure.md) et [Publier sur Linux](quickstart-deploy-to-linux.md). Consultez également [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Pour le déploiement avec Git, consultez [Déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment).
 
-  Pour plus d’informations sur l’importation d’un profil de publication à partir d’Azure App Service vers Visual Studio, consultez [Importer des paramètres de publication et déployer sur Azure](../deployment/tutorial-import-publish-settings-azure.md).
-
   > [!NOTE]
   > Si vous n’avez pas encore de compte Azure, vous pouvez vous [inscrire ici](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
@@ -83,7 +85,11 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
     Vous pouvez également déployer des applications et services ASP.NET de plusieurs autres façons. Pour plus d’informations, consultez [Déploiement d’applications et services web ASP.NET](/aspnet/overview/deployment).
 
-- **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez les rubriques suivantes :
+
+  - [Déployer une application de bureau Windows .NET Framework à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [Déployer une application de bureau Windows .NET à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+  - [Déployer une application C++/CLR à l’aide de ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
 
 ## <a name="publish-to-microsoft-store"></a>Publier sur Microsoft Store
 
@@ -103,7 +109,7 @@ Si vous déployez une application UWP à des fins de test sur un appareil, consu
 
 ## <a name="create-an-installer-package-windows-desktop"></a>Créer un package d’installation (poste de travail Windows)
 
-Si vous avez besoin d’une installation pour une application de poste de travail plus complexe que ce que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) peut fournir, vous pouvez créer un package Windows Installer (fichier d’installation MSI ou EXE) ou un programme d’amorçage personnalisé.
+Si vous avez besoin d’une installation pour une application de poste de travail plus complexe que ce que ClickOnce peut fournir, vous pouvez créer un package Windows Installer (fichier d’installation MSI ou EXE) ou un programme d’amorçage personnalisé.
 
 - Vous pouvez créer un package d’installation MSI avec [l’extension WiX Toolset de Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Il s’agit d’un ensemble d’outils en ligne de commande.
 

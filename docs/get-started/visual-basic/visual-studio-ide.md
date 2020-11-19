@@ -1,8 +1,11 @@
 ---
 title: Vue d’ensemble pour les développeurs Visual Basic
+description: Apprenez à utiliser Visual Studio pour modifier, déboguer et générer du code, puis publiez une application en tant que développeur Visual Basic.
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928041"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901568"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bienvenue dans l’IDE Visual Studio | Visual Basic
 
@@ -237,7 +240,7 @@ Pour remplacer le thème par **Sombre** :
 
 2. Dans la barre de menus, choisissez **Outils**  >  **options** pour ouvrir la boîte de dialogue **options** .
 
-3. Dans la **Environment**  >  page options**générales** de l’environnement, remplacez la sélection du **thème de couleur** par **foncé**, puis cliquez sur **OK**.
+3. Dans la **Environment**  >  page options **générales** de l’environnement, remplacez la sélection du **thème de couleur** par **foncé**, puis cliquez sur **OK**.
 
    ![Basculer vers le thème de couleur sombre dans Visual Studio](media/change-color-theme.png)
 
@@ -281,7 +284,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Fichier > Nouveau projet sur la barre de menus](media/file-new-project-menu.png)
 
-   La boîte **de dialogue Nouveau projet** affiche plusieurs *modèles*de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
+   La boîte **de dialogue Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
 1. Choisissez la catégorie **.NET Core** sous **Visual Basic**, puis choisissez le modèle **Application console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
@@ -375,7 +378,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
 
-   ![Fenêtre de console](../media/vs-2019/overview-console-window.png)
+   ![Capture d’écran de la fenêtre de console montrant le message de Hello World.](../media/vs-2019/overview-console-window.png)
 
 1. Appuyez sur une touche au hasard pour fermer la fenêtre de console.
 
@@ -400,7 +403,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Entrez votre nom dans la fenêtre de console et appuyez sur **Entrée**.
 
-   ![Fenêtre de console](../media/vs-2019/overview-console-input.png)
+   ![Capture d’écran de la fenêtre de console montrant la question qu’est-ce que votre nom et la réponse de l’application.](../media/vs-2019/overview-console-input.png)
 
 1. Appuyez sur une touche pour fermer la fenêtre de console et arrêter le programme en cours d’exécution.
 

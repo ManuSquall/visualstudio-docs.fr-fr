@@ -3,17 +3,16 @@ title: Accès aux clouds Azure privés
 description: Découvrez comment accéder aux ressources de cloud privé à l'aide de Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 136c7f4f497c21de24e34c4c426707de94151ddf
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 92ab5ae3dc6fa5fd807203a1adf2353a20bfb666
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398733"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902829"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Accès à des clouds privés Azure avec Visual Studio
 
@@ -21,23 +20,23 @@ Par défaut, Visual Studio prend en charge les points de terminaison REST du clo
 
 1. Dans le portail Azure du cloud privé, téléchargez votre fichier de paramètres de publication ou contactez votre administrateur pour obtenir un fichier de paramètres de publication. (Le fichier comporte l'extension `.publishsettings`.)
 
-1. Dans l’ **Explorateur de serveurs** de Visual Studio, cliquez avec le bouton droit sur le nœud **Azure** , puis sélectionnez **Gérer et filtrer les abonnements**.
+1. Dans l’**Explorateur de serveurs** de Visual Studio, cliquez avec le bouton droit sur le nœud **Azure**, puis sélectionnez **Gérer et filtrer les abonnements**.
 
     ![Commande Gérer les abonnements](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 
-1. Dans la boîte de dialogue **Gérer les abonnements Microsoft Azure** , sélectionnez l’onglet **Certificats** , puis le bouton **Importer**.
+1. Dans la boîte de dialogue **Gérer les abonnements Microsoft Azure**, sélectionnez l’onglet **Certificats**, puis le bouton **Importer**.
 
     ![Importation de certificats Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790779.png)
 
-1. Dans la boîte de dialogue **Importer les abonnements Microsoft Azure** , sélectionnez **Parcourir**.
+1. Dans la boîte de dialogue **Importer les abonnements Microsoft Azure**, sélectionnez **Parcourir**.
 
     ![Bouton Parcourir dans la boîte de dialogue Importer les abonnements Microsoft Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
 
-1. Dans la boîte de dialogue **Ouvrir** , parcourez le répertoire dans lequel vous avez enregistré le fichier de paramètres de publication, sélectionnez ce dernier, puis cliquez sur **Ouvrir**.
+1. Dans la boîte de dialogue **Ouvrir**, parcourez le répertoire dans lequel vous avez enregistré le fichier de paramètres de publication, sélectionnez ce dernier, puis cliquez sur **Ouvrir**.
 
     ![Sélection du fichier de paramètres de publication](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
 
-1. Lorsque vous revenez à la boîte de dialogue **Importer les abonnements Microsoft Azure** , sélectionnez **Importer**.
+1. Lorsque vous revenez à la boîte de dialogue **Importer les abonnements Microsoft Azure**, sélectionnez **Importer**.
 
     ![Importation du fichier de paramètres de publication](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
 
