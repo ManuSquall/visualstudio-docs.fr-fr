@@ -156,8 +156,6 @@
       items:
         - name: Conseils et astuces pour les débogueurs
           href: debugger-tips-and-tricks.md
-        - name: Attacher aux processus en cours d’exécution avec le débogueur
-          href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: Déboguer au moment du design
           href: walkthrough-debugging-at-design-time.md
         - name: Débogueur juste-à-temps
@@ -286,8 +284,6 @@
           href: remote-debugging-csharp.md
         - name: "Déboguer à distance un projet\_C++"
           href: remote-debugging-cpp.md
-        - name: Déboguer à distance .NET Core sur Linux
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Attributions de ports au débogueur distant
           href: remote-debugger-port-assignments.md
         - name: Configurer le pare-feu Windows pour le débogage à distance
@@ -342,6 +338,14 @@
               href: error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md
             - name: L’ordinateur distant n’apparaît pas dans une boîte de dialogue Connexions à distance
               href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
+    - name: Attacher au processus
+      items:
+        - name: Attacher aux processus en cours d’exécution avec le débogueur
+          href: attach-to-running-processes-with-the-visual-studio-debugger.md
+        - name: Déboguer .NET Core sur Linux
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: Attacher à un processus exécuté dans un conteneur Docker
+          href: attach-to-process-running-in-docker-container.md
     - name: Débogage d’applications multithread
       items:
         - name: Déboguer les applications multithread
