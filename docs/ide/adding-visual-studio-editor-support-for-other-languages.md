@@ -1,5 +1,7 @@
 ---
 title: Ajouter la prise en charge de l’éditeur pour d’autres langages
+description: Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la navigation dans différents langages informatiques et comment vous pouvez ajouter la prise en charge d’autres langages.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7bf84f4e48b9f070b3cebed4c2e17e5fc07992e3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809070"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903895"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -109,7 +111,7 @@ Sous ce chemin de base, ajoutez les dossiers suivants s’ils s’appliquent à 
 |*\Syntaxes*|Dossier de la grammaire. Contient les fichiers Grammar *. JSON* pour le langage, par exemple *Matlab.jssur*.|
 |*\Snippets*|Dossier des extraits de code. Contient les extraits de code du langage.|
 
-Dans Windows, *% UserProfile%* correspond au chemin d’accès : *c:\Users \\ \<user name> *. Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
+Dans Windows, *% UserProfile%* correspond au chemin d’accès : *c:\Users \\ \<user name>*. Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
 
 > [!TIP]
 > S’il y a des fichiers ouverts dans l’éditeur, vous devrez les fermer et les rouvrir pour afficher la coloration syntaxique après avoir ajouté les grammaires TextMate.

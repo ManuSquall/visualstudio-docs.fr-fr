@@ -1,5 +1,7 @@
 ---
 title: Reference, élément (modèles Visual Studio) | Microsoft Docs
+description: En savoir plus sur l’élément Reference et sur la manière dont il spécifie la référence d’assembly à ajouter lorsque l’élément est ajouté à un projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701624"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903765"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference, élément (modèles Visual Studio)
 Spécifie la référence d’assembly à ajouter quand l’élément est ajouté à un projet.
@@ -46,7 +48,7 @@ Spécifie la référence d’assembly à ajouter quand l’élément est ajouté
 
 |Élément|Description|
 |-------------|-----------------|
-|[Chargeur](../extensibility/assembly-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie des informations sur un assembly, que le modèle utilise pour ajouter une référence de cet assembly aux projets. Il doit y avoir un `Assembly` élément dans chaque `Reference` élément.|
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie des informations sur un assembly, que le modèle utilise pour ajouter une référence de cet assembly aux projets. Il doit y avoir un `Assembly` élément dans chaque `Reference` élément.|
 
 ### <a name="parent-elements"></a>Éléments parents
 

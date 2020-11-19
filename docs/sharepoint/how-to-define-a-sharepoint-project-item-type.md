@@ -1,5 +1,7 @@
 ---
 title: 'Comment : définir un type d’élément de projet SharePoint | Microsoft Docs'
+description: Découvrez comment définir un type d’élément de projet lorsque vous souhaitez créer un élément de projet SharePoint personnalisé.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016852"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903609"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Comment : définir un type d’élément de projet SharePoint
   Définissez un type d’élément de projet lorsque vous souhaitez créer un élément de projet SharePoint personnalisé. Pour plus d’informations, consultez [définition de types d’éléments de projet SharePoint personnalisés](../sharepoint/defining-custom-sharepoint-project-item-types.md).
@@ -40,7 +42,7 @@ ms.locfileid: "86016852"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. Cet attribut permet à Visual Studio de découvrir et de charger votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implémentation. Transmettez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> type au constructeur d’attribut.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Dans une définition de type d’élément de projet, cet attribut spécifie l’identificateur de chaîne pour le nouvel élément de projet. Nous vous recommandons d’utiliser le format *nom*de l’entreprise. *nom* de la fonctionnalité pour vous assurer que tous les éléments de projet ont un nom unique.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Dans une définition de type d’élément de projet, cet attribut spécifie l’identificateur de chaîne pour le nouvel élément de projet. Nous vous recommandons d’utiliser le format *nom* de l’entreprise. *nom* de la fonctionnalité pour vous assurer que tous les éléments de projet ont un nom unique.
 
     - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Cet attribut spécifie l’icône à afficher pour cet élément de projet dans **Explorateur de solutions**. Cet attribut est facultatif ; Si vous ne l’appliquez pas à votre classe, Visual Studio affiche une icône par défaut pour votre élément de projet. Si vous définissez cet attribut, transmettez le nom qualifié complet d’une icône ou d’une image bitmap incorporée dans votre assembly.
 

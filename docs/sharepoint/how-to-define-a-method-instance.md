@@ -1,5 +1,7 @@
 ---
 title: 'Comment : définir une instance de méthode | Microsoft Docs'
+description: Découvrez comment définir une instance de méthode pour une méthode dans votre modèle de connectivité de données métiers (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016830"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903622"
 ---
 # <a name="how-to-define-a-method-instance"></a>Comment : définir une instance de méthode
   Vous devez définir au moins une instance de méthode pour chaque méthode de votre modèle.
@@ -35,7 +37,7 @@ ms.locfileid: "86016830"
 
      Une nouvelle instance de méthode apparaît sous le nœud **instances** .
 
-3. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+3. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
 4. Dans la fenêtre **Propriétés** , définissez les propriétés de l’instance de la méthode. Pour plus d’informations sur chaque propriété, consultez [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 

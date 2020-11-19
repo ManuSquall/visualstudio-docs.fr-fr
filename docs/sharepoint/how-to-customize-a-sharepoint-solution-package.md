@@ -1,5 +1,7 @@
 ---
 title: 'Comment : personnaliser un package de solution SharePoint | Microsoft Docs'
+description: Utilisez le concepteur de packages pour créer et personnaliser un package de solution SharePoint (. wsp). Affichez ou remplacez le fichier manifeste empaqueté. Modifiez le modèle de manifeste.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77b66160d489f711b5588fdcdd024d13769d734f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016868"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903635"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Comment : personnaliser un package de solution SharePoint
   Vous pouvez utiliser le concepteur de packages pour créer et personnaliser un package (*. wsp*). Par exemple, vous pouvez ajouter des fonctionnalités et des éléments de projet SharePoint, spécifier si le serveur Web est réinitialisé lorsque la solution est déployée et définir le type de serveur de déploiement.

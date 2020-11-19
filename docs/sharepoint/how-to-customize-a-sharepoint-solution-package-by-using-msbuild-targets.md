@@ -1,6 +1,8 @@
 ---
 title: Personnaliser le package de solution SharePoint à l’aide de cibles MSBuild
 titleSuffix: ''
+description: Personnaliser la façon dont Visual Studio crée les fichiers de package de solution SharePoint (. wsp) à l’aide des cibles MSBuild à partir d’une invite de commandes.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585808"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903648"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Comment : personnaliser un package de solution SharePoint à l’aide de cibles MSBuild
   En utilisant des cibles MSBuild dans une invite de commandes, vous pouvez personnaliser la façon dont Visual Studio crée les fichiers de package SharePoint (*. wsp*). Par exemple, vous pouvez personnaliser les propriétés MSBuild pour modifier le répertoire intermédiaire de Packaging et les groupes d’éléments MSBuild qui spécifient les fichiers énumérés.
@@ -44,7 +46,7 @@ ms.locfileid: "91585808"
 
 3. Ouvrez le projet, ouvrez le menu contextuel, puis choisissez **décharger le projet**.
 
-4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **modifier** * \<ProjectName> . vbproj* ou **Edit** * \<ProjectName> . csproj*.
+4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **modifier** *\<ProjectName> . vbproj* ou **Edit** *\<ProjectName> . csproj*.
 
 5. Après la `Import` ligne près de la fin du fichier projet, ajoutez la ligne suivante.
 
@@ -60,7 +62,7 @@ ms.locfileid: "91585808"
 
 #### <a name="to-customize-the-afterlayout-target"></a>Pour personnaliser la cible AfterLayout
 
-1. Dans la barre de menus, choisissez **fichier**  >  **ouvrir**un  >  **fichier**.
+1. Dans la barre de menus, choisissez **fichier**  >  **ouvrir** un  >  **fichier**.
 
 2. Dans la boîte de dialogue **ouvrir un fichier** , accédez au dossier du projet, choisissez le fichier customlayout. Target, puis cliquez sur le bouton **ouvrir** .
 

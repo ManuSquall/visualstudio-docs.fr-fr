@@ -1,5 +1,7 @@
 ---
 title: Utilisation du code C++ (Concepteur de classes)
+description: Découvrez comment utiliser des diagrammes de classes pour concevoir et visualiser des éléments de code C++, des classes et d’autres types dans un projet.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3509f625686f97156efe79f5e1b72aa991ce5ca
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596747"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903882"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Utiliser du code C++ dans Concepteur de classes
 

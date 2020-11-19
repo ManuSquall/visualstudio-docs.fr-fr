@@ -1,5 +1,7 @@
 ---
 title: 'Comment : personnaliser une fonctionnalité SharePoint | Microsoft Docs'
+description: Personnaliser les fonctionnalités SharePoint dans Visual Studio. Le concepteur de fonctionnalités s’ouvre lorsque vous ajoutez une nouvelle fonctionnalité dans Explorateur de solutions ou dans l’Explorateur de package SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a330f3c4cbe1e410ddc6a1612796c92eeda281b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016890"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903661"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Comment : personnaliser une fonctionnalité SharePoint
   Vous pouvez créer et personnaliser des fonctionnalités SharePoint à l’aide du concepteur de fonctionnalités dans Visual Studio. Par exemple, vous pouvez définir l’étendue de la fonctionnalité et ajouter d’autres fonctionnalités en tant que dépendances. Par défaut, le concepteur de fonctionnalités s’ouvre lorsque vous ajoutez une nouvelle fonctionnalité dans Explorateur de solutions ou dans l’Explorateur de package SharePoint.
@@ -46,7 +48,7 @@ ms.locfileid: "86016890"
 
 1. Dans **Explorateur de solutions**, choisissez l’icône **Afficher tous les fichiers** .
 
-2. Développez fonctionnalités, puis NomFonctionnalité et NomFonctionnalité. Feature, puis ouvrez le fichier * \<FeatureName>.Template.xml* .
+2. Développez fonctionnalités, puis NomFonctionnalité et NomFonctionnalité. Feature, puis ouvrez le fichier *\<FeatureName>.Template.xml* .
 
     > [!NOTE]
     > Lorsque vous ouvrez le fichier manifeste XML du modèle de fonctionnalité, les fichiers sont validés automatiquement et les avertissements qui s’affichent dans la fenêtre de Liste d’erreurs peuvent être ignorés.

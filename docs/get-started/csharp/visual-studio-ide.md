@@ -1,8 +1,11 @@
 ---
 title: Vue d’ensemble pour les développeurs C#
+description: Découvrez l’environnement de développement intégré de Visual Studio et comment il peut être adapté aux développeurs C#.
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 688a4377b9e4bd6f80d65744955dc84908a18e7a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771127"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904012"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bienvenue dans l’IDE Visual Studio | C\#
 

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer un composant WebPart SharePoint | Microsoft Docs'
+description: Créez et personnalisez un composant WebPart à l’aide d’un concepteur, ou en ajoutant un élément WebPart à un projet SharePoint, puis en modifiant le fichier de code du composant WebPart.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a8c02cce2f55374b4d62ba5663e8b3fe85b55b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016444"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903700"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Comment : créer un composant WebPart SharePoint
   Vous pouvez créer et personnaliser un composant WebPart en ajoutant un élément **WebPart** à un projet SharePoint, puis en modifiant le fichier de code du composant WebPart ou à l’aide d’un concepteur. Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).

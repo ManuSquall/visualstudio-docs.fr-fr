@@ -1,5 +1,7 @@
 ---
 title: Affichage de classes et Explorateur d'objets, icônes
+description: En savoir plus sur les Affichage de classes et l’Explorateur d’objets affichent les icônes qui représentent des entités de code, par exemple, des espaces de noms, des classes, des fonctions et des variables.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285142"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903999"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
 
@@ -40,7 +42,7 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |![Symbole de méthode d'extension](../ide/media/extensionmethod.gif)|Méthode d’extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
 |![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|Délégué|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Error|
 |![Symbole d'exception](../ide/media/vxexception_icon.gif)|Exception|![Symbole du modèle](../ide/media/vxtemplate_icon.gif)|Modèle|
-|![Symbole de carte](../ide/media/vxmap_icon.gif)|Carte|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Inconnu|
+|![Symbole de carte](../ide/media/vxmap_icon.gif)|Mappage|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Inconnu|
 |![Symbole de transfert de type](../ide/media/ob_type_forward.gif)|Transfert de type|||
 
 > [!TIP]
