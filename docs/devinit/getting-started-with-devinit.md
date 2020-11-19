@@ -1,7 +1,7 @@
 ---
 title: Prise en main avec devinit
 description: Guide de mise en route pour devinit.
-ms.date: 08/28/2020
+ms.date: 11/18/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1f66f691bd92c6cc9d315c58225b9345198fe96d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d071a49c9996c9f7f161faf676117704fbcbbdcd
+ms.sourcegitcommit: 3b9a8aec34c7e835069f4db5c133dd002028180c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435765"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94937694"
 ---
 # <a name="getting-started-with-devinit"></a>Prise en main avec devinit
 
@@ -32,7 +32,9 @@ devinit est actuellement disponible uniquement dans le cadre de GitHub Codespace
 
 L’étape la plus importante consiste à définir votre environnement de développement dans un [.devinit.jsfichier](devinit-json.md). Ce fichier sera utilisé par devinit pour créer votre environnement lors de l’exécution de `devinit init` .
 
-Pour cette étape, réfléchissez aux instructions permettant à quelqu’un d’être opérationnel avec un référentiel de projet. Par exemple, le SQL doit-il être installé ? Une version spécifique de .NET Core ? Et ainsi de suite. Ensuite, pour chacune de ces dépendances, recherchez un outil devinit correspondant dans la [liste des outils](devinit-tool-list.md) et ajoutez-le au fichier du référentiel `.devinit.json` . Vous pouvez également voir une sélection d’exemples dans la [documentation des exemples](sample-readme.md).
+Pour cette étape, réfléchissez aux instructions permettant à quelqu’un d’être opérationnel avec un référentiel de projet. Par exemple, le SQL doit-il être installé ? Une version spécifique de .NET Core ? Et ainsi de suite. Ensuite, pour chacune de ces dépendances, recherchez un outil devinit correspondant dans la [liste des outils](devinit-tool-list.md) et ajoutez-le au fichier du référentiel `.devinit.json` .
+
+Vous pouvez également voir une sélection d’exemples dans la [documentation des exemples](sample-readme.md)ou consulter le [didacticiel](tutorial.md).
 
 ## <a name="step-3-enjoy"></a>Étape 3 : Profitez-en !
 
