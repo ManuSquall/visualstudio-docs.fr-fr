@@ -1,5 +1,7 @@
 ---
 title: Mettre à jour des fichiers .mdf
+description: Passez en revue les options de mise à niveau d’un fichier de base de données (. mdf) après avoir installé une version plus récente de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281121"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998042"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
 

@@ -1,5 +1,7 @@
 ---
 title: Créer un service de données WCF avec des & WPF Entity Framework
+description: Créez un service de données WCF avec WPF et Entity Framework hébergés dans une application Web ASP.NET, puis accédez à celui-ci à partir d’une application Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585988"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998263"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simple qui est hébergé dans une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], puis comment y accéder à partir d’une application Windows Forms.
@@ -132,7 +134,7 @@ Dans la première étape, vous ajoutez un projet Web pour héberger le service.
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. Dans la barre de menus, choisissez **Déboguer**exécuter  >  **sans débogage** pour exécuter le service. Une fenêtre de navigateur s’ouvre et le schéma XML pour le service s’affiche.
+6. Dans la barre de menus, choisissez **Déboguer** exécuter  >  **sans débogage** pour exécuter le service. Une fenêtre de navigateur s’ouvre et le schéma XML pour le service s’affiche.
 
 7. Dans la barre d' **adresses** , entrez `Customers` à la fin de l’URL de **NorthwindCustomers. svc**, puis appuyez sur la touche **entrée** .
 
@@ -178,7 +180,7 @@ Dans la première étape, vous ajoutez un projet de Windows Forms à la solution
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Pour activer la liaison de données vers le service
 
-1. Dans la barre de menus, choisissez **Afficher**  >  **autres**  >  **sources de données**Windows.
+1. Dans la barre de menus, choisissez **Afficher**  >  **autres**  >  **sources de données** Windows.
 
    La fenêtre **Sources de données** s’ouvre.
 

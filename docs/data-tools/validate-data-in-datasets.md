@@ -1,5 +1,7 @@
 ---
 title: Valider les données dans des datasets
+description: Apprenez à valider les données dans des jeux de données. La validation des données implique de confirmer que les valeurs entrées dans les objets de données sont conformes aux contraintes dans le schéma d’un DataSet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281082"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998302"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 La validation des données est le processus qui consiste à confirmer que les valeurs entrées dans les objets de données sont conformes aux contraintes dans le schéma d’un DataSet. Le processus de validation confirme également que ces valeurs suivent les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour à la base de données sous-jacente. Cela réduit les erreurs ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.
@@ -64,7 +66,7 @@ Si votre application utilise un DataSet typé, vous pouvez créer des gestionnai
 
 ## <a name="data-update-events"></a>Événements de mise à jour des données
 
-|Événement|Description|
+|événement|Description|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|La valeur d’une colonne est en cours de modification. L’événement passe la ligne et la colonne à vous, ainsi que la nouvelle valeur proposée.|
 |<xref:System.Data.DataTable.ColumnChanged>|La valeur d’une colonne a été modifiée. L’événement passe la ligne et la colonne à vous, ainsi que la valeur proposée.|

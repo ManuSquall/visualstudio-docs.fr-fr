@@ -1,5 +1,6 @@
 ---
 title: Classes LINQ to SQL avec héritage d’une seule table
+description: Dans cette procédure pas à pas, créez des classes LINQ to SQL à l’aide de l’héritage de table unique dans le Concepteur Objet Relationnel Visual Studio (Concepteur O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036754"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998237"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : créer des classes LINQ to SQL à l’aide de l’héritage de table unique (Concepteur O/R)
 Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prennent en charge l’héritage d’une seule table, car il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas s’appuie sur les étapes génériques fournies dans la rubrique [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) et fournit des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -67,7 +68,7 @@ Pour pouvoir vérifier si l'héritage est configuré correctement, la table a be
 
 ### <a name="to-add-data-to-the-table"></a>Pour ajouter des données à la table
 
-1. Ouvrez la table dans la vue de données. (Cliquez avec le bouton droit sur la table **Person** dans **Explorateur de serveurs** ou **Explorateur de base de données** puis cliquez sur **afficher les données**de la table.)
+1. Ouvrez la table dans la vue de données. (Cliquez avec le bouton droit sur la table **Person** dans **Explorateur de serveurs** ou **Explorateur de base de données** puis cliquez sur **afficher les données** de la table.)
 
 2. Copiez les données suivantes dans la table. (Vous pouvez la copier et la coller dans la table en sélectionnant la ligne entière dans le volet **résultats** .)
 
@@ -86,7 +87,7 @@ Pour pouvoir vérifier si l'héritage est configuré correctement, la table a be
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
 Maintenant que vous avez créé la table, créez un nouveau projet pour voir la configuration de l'héritage.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Pour créer l’application de Windows Forms
@@ -174,7 +175,7 @@ Vous ajoutez à présent du code au formulaire qui interroge une classe spécifi
     }
     ```
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
 Exécutez l’application et vérifiez que les enregistrements affichés dans la zone de liste sont tous les employés (enregistrements qui ont une valeur de 2 dans leur colonne de **type** ).
 
 ### <a name="to-test-the-application"></a>Pour tester l'application

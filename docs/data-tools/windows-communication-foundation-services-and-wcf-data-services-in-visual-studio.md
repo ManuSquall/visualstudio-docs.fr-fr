@@ -1,5 +1,7 @@
 ---
 title: Windows Communication Foundation et WCF Data Services
+description: Explorez les services Windows Communication Foundation (WCF) et les WCF Data Services dans Visual Studio, afin de pouvoir créer des applications distribuées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -35,12 +37,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281043"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997899"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 
@@ -252,7 +254,7 @@ Pour éviter ce problème, les types des assemblys référencés sont partagés 
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-| Intitulé | Description |
+| Titre | Description |
 | - | - |
 | [Procédure pas à pas : création d’un service WPF simple dans Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fournit une démonstration pas à pas de la création et de l’utilisation des services WCF dans Visual Studio. |
 | [Procédure pas à pas : création d’un service de données WCF avec WPF et Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fournit une démonstration pas à pas de la création et de l’utilisation de WCF Data Services dans Visual Studio. |
@@ -261,7 +263,7 @@ Pour éviter ce problème, les types des assemblys référencés sont partagés 
 | [Dépannage des références de service](../data-tools/troubleshooting-service-references.md) | Présente des erreurs courantes qui peuvent se produire avec les références de service et comment les empêcher. |
 | [Débogage des services WCF](../debugger/debugging-wcf-services.md) | Décrit les problèmes de débogage courants et les techniques que vous pouvez rencontrer lors du débogage de services WCF. |
 | [Procédure pas à pas : création d’une application de données multicouches](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fournit des instructions pas à pas pour créer un dataset typé et diviser le code du TableAdapter et du dataset en plusieurs projets. |
-| [Configurer la référence de service (boîte de dialogue)](../data-tools/configure-service-reference-dialog-box.md) | Décrit les éléments de l’interface utilisateur de la boîte de dialogue **configurer la référence de service** . |
+| [Configurer la référence de service, boîte de dialogue](../data-tools/configure-service-reference-dialog-box.md) | Décrit les éléments de l’interface utilisateur de la boîte de dialogue **configurer la référence de service** . |
 
 ## <a name="reference"></a>Informations de référence
 

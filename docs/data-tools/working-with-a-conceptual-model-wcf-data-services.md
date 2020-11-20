@@ -1,5 +1,7 @@
 ---
 title: Utilisation d’un modèle conceptuel (services de données WCF)
+description: Utilisez un modèle conceptuel dans WCF Data Services. Interroger des données à l’aide d’objets au lieu de les traduire entre les schémas de base de données et les modèles d’objet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585910"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997873"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Utiliser un modèle conceptuel (WCF Data Services)
 

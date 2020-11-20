@@ -1,5 +1,7 @@
 ---
 title: Outils de données pour C++
+description: Explorez Visual Studio Data Tools pour C++. Connectez-vous à la base de données locale via ODBC et SQL Native Client à partir d’une application C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 063efeebff92698b8e5db66880360713c73fe150
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36b1fe83cb20aee6d6fc95984a254c9ac9d212bd
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281095"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998094"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 
@@ -58,7 +60,7 @@ Pour tirer parti des fonctionnalités personnalisées de SQL Server 2005 et vers
 
     Notez que l’exemple n’utilise pas réellement les fonctionnalités Native Client, donc les étapes précédentes ne sont pas nécessaires pour la compilation et l’exécution. Mais le projet est maintenant configuré pour que vous utilisiez cette fonctionnalité. Pour plus d’informations, consultez [SQL Server Native Client programmation](/sql/relational-databases/native-client/sql-server-native-client).
 
-7. Spécifiez le pilote à utiliser dans le sous-système ODBC. L’exemple passe l’attribut de chaîne de connexion du pilote dans en tant qu’argument de ligne de commande. Dans **Project**  >  **Properties**  >  le**débogage**des propriétés du projet, ajoutez cet argument de commande :
+7. Spécifiez le pilote à utiliser dans le sous-système ODBC. L’exemple passe l’attribut de chaîne de connexion du pilote dans en tant qu’argument de ligne de commande. Dans **Project**  >  **Properties**  >  le **débogage** des propriétés du projet, ajoutez cet argument de commande :
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"

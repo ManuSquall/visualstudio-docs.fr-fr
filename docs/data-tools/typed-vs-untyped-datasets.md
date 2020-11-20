@@ -1,5 +1,7 @@
 ---
 title: Datasets typés et non typés
+description: Comprenez la différence entre les datasets typés et non typés. Contrastez l’accès aux données dans les datasets typés et non typés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586105"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998055"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Datasets typés et non typés
 Un DataSet typé est un DataSet qui est dérivé d’abord de la classe de base, <xref:System.Data.DataSet> puis qui utilise les informations de la **Concepteur de DataSet**, qui est stockée dans un fichier. xsd, pour générer une nouvelle classe DataSet fortement typée. Les informations du schéma (tables, colonnes, etc.) sont générées et compilées dans cette nouvelle classe DataSet sous la forme d’un ensemble d’objets et de propriétés de première classe. Étant donné qu’un DataSet typé hérite de la classe de base <xref:System.Data.DataSet> , la classe typée utilise toutes les fonctionnalités de la <xref:System.Data.DataSet> classe et peut être utilisée avec les méthodes qui prennent une instance d’une <xref:System.Data.DataSet> classe comme paramètre.
@@ -34,7 +36,7 @@ En revanche, si vous utilisez un DataSet non typé, le code équivalent est le s
 [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
 [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
-L’accès typé n’est pas seulement plus facile à lire, mais également entièrement pris en charge par IntelliSense dans l' **éditeur de code**Visual Studio. En plus de faciliter l’utilisation de, la syntaxe du DataSet typé fournit la vérification de type au moment de la compilation, ce qui réduit considérablement les risques d’erreurs lors de l’affectation de valeurs aux membres d’un jeu de données. Si vous modifiez le nom d’une colonne dans votre <xref:System.Data.DataSet> classe et que vous compilez ensuite votre application, vous recevez une erreur de Build. En double-cliquant sur l’erreur de build dans le **liste des tâches**, vous pouvez accéder directement à la ligne ou aux lignes de code qui font référence à l’ancien nom de colonne. L’accès aux tables et aux colonnes d’un DataSet typé est également légèrement plus rapide au moment de l’exécution, car l’accès est déterminé au moment de la compilation, et non pas au moment de l’exécution.
+L’accès typé n’est pas seulement plus facile à lire, mais également entièrement pris en charge par IntelliSense dans l' **éditeur de code** Visual Studio. En plus de faciliter l’utilisation de, la syntaxe du DataSet typé fournit la vérification de type au moment de la compilation, ce qui réduit considérablement les risques d’erreurs lors de l’affectation de valeurs aux membres d’un jeu de données. Si vous modifiez le nom d’une colonne dans votre <xref:System.Data.DataSet> classe et que vous compilez ensuite votre application, vous recevez une erreur de Build. En double-cliquant sur l’erreur de build dans le **liste des tâches**, vous pouvez accéder directement à la ligne ou aux lignes de code qui font référence à l’ancien nom de colonne. L’accès aux tables et aux colonnes d’un DataSet typé est également légèrement plus rapide au moment de l’exécution, car l’accès est déterminé au moment de la compilation, et non pas au moment de l’exécution.
 
 Bien que les datasets typés présentent de nombreux avantages, un DataSet non typé est utile dans de nombreuses circonstances. Le scénario le plus évident est lorsqu’aucun schéma n’est disponible pour le jeu de données. Cela peut se produire, par exemple, si votre application interagit avec un composant qui retourne un jeu de données, mais que vous ne connaissez pas à l’avance sa structure. De même, il peut arriver que vous utilisiez des données qui n’ont pas une structure statique et prévisible. Dans ce cas, il n’est pas pratique d’utiliser un DataSet typé, car vous devez régénérer la classe DataSet typée à chaque modification de la structure de données.
 

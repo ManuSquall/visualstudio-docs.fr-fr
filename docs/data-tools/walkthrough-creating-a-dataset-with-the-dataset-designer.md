@@ -1,5 +1,6 @@
 ---
 title: Créer un DataSet avec le Concepteur de DataSet
+description: Dans cette procédure pas à pas, créez un DataSet à l’aide de l’Concepteur de DataSet. Découvrez le processus de création d’un nouveau projet et d’ajout d’un nouvel élément de DataSet à celui-ci.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036780"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998029"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : création d’un DataSet avec le Concepteur de DataSet
 
@@ -91,13 +92,13 @@ Cette section explique comment ajouter des tables au jeu de données.
 
 - Faites glisser la table **Orders** à partir de **Explorateur de serveurs** sur le **Concepteur de DataSet**.
 
-     Une table de données de **commandes** , un **OrdersTableAdapter**et une relation de données entre les tables **Customers** et **Orders** sont ajoutés au DataSet.
+     Une table de données de **commandes** , un **OrdersTableAdapter** et une relation de données entre les tables **Customers** et **Orders** sont ajoutés au DataSet.
 
 ### <a name="to-create-the-orderdetails-table"></a>Pour créer la table OrderDetails
 
 - Faites glisser la table **Order Details** de **Explorateur de serveurs** vers le **Concepteur de DataSet**.
 
-     Une table de données **Order Details** , **OrderDetailsTableAdapter**et une relation de données entre les tables **Orders** et **OrderDetails** sont ajoutées au DataSet.
+     Une table de données **Order Details** , **OrderDetailsTableAdapter** et une relation de données entre les tables **Orders** et **OrderDetails** sont ajoutées au DataSet.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

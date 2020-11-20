@@ -1,5 +1,6 @@
 ---
 title: Personnaliser le comportement d’insertion/mise à jour/suppression
+description: Dans cette procédure pas à pas, vous pouvez personnaliser le comportement d’insertion, de mise à jour et de suppression des classes d’entité à l’aide de LINQ (Language-Integrated Query) vers les outils SQL dans Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036741"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997925"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : personnaliser le comportement d’insertion, de mise à jour et de suppression de classes d’entité
 
@@ -86,7 +87,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 5. Cliquez sur le modèle **Classes LINQ to SQL** et tapez **Northwind.dbml** dans la zone **Nom**.
 
-6. Cliquez sur **Add**.
+6. Cliquez sur **Ajouter**.
 
      Un fichier de classes de LINQ to SQL vide (**Northwind. dbml**) est ajouté au projet et le **Concepteur O/R** s’ouvre.
 
@@ -98,7 +99,7 @@ Créez LINQ to SQL classes mappées à des tables de base de données en faisant
 
 1. Dans **Explorateur de serveurs** ou **Explorateur de base de données**, localisez la table **customer** dans la version SQL Server de l’exemple de base de données Northwind.
 
-2. Faites glisser le nœud **Customers** de **Explorateur de serveurs** ou **Explorateur de base de données** vers l’aire du*Concepteur * O/R* .
+2. Faites glisser le nœud **Customers** de **Explorateur de serveurs** ou **Explorateur de base de données** vers l’aire du *Concepteur * O/R* .
 
      Une classe d’entité nommée **Customer** est créée. Elle comporte des propriétés qui correspondent aux colonnes de la table Customers. La classe d’entité est nommée **Customer** (et non **Customers**) parce qu’elle représente un seul client de la table Customers.
 
@@ -235,7 +236,7 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 > [!NOTE]
 > Bien qu’il ne s’agisse pas d’un problème pour cette procédure pas à pas, il est intéressant de noter que LINQ to SQL gère automatiquement les valeurs générées par la base de données pour les colonnes Identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp pendant les insertions et les mises à jour. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par la base de données, vous devez affecter manuellement <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` et <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> à l’un des éléments suivants : [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)ou [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
 
 Exécutez une nouvelle fois l’application pour vérifier que la procédure stockée **UpdateCustomers** met à jour correctement l’enregistrement Customer dans la base de données.
 

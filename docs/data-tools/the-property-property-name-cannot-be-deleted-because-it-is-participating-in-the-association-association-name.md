@@ -1,6 +1,6 @@
 ---
 title: La propriété participe à l’Association
-description: Impossible de supprimer la propriété, car elle participe à l’association
+description: La propriété ne peut pas être supprimée, car elle participe à l’Association. Affichez des informations sur ce message d’Concepteur Objet Relationnel (Concepteur O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d473c3aa83bc5ac4ca802067b9b9eb32073d32f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0d39fa3d7740996be3fc9da75224739f1e55539
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036208"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998371"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Impossible de supprimer la propriété &lt;nom de la propriété&gt;, car elle participe à l’association &lt;nom de l’association&gt;
 

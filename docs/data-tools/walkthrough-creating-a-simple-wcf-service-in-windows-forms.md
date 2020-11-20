@@ -1,5 +1,6 @@
 ---
 title: Créer un service WCF simple dans Windows Forms
+description: Dans cette procédure pas à pas, vous créez un service Windows Communication Foundation (WCF) dans Visual Studio, vous le testez, puis vous y accédez à partir d’une application Windows Forms.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b0c874509622b34d7a9703a6b31481e0d88e586
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036793"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998133"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procédure pas à pas : création d’un service WCF simple dans Windows Forms
 
@@ -122,7 +123,7 @@ Cette procédure pas à pas montre comment créer un service simple Windows Comm
 
      ![Projet Application Windows Forms](../data-tools/media/wcf7.png)
 
-3. Cliquez avec le bouton droit sur **WindowsApplication1**, puis cliquez sur **Ajouter une référence de service**. **La boîte de dialogue **Ajouter une référence de service s'affiche.
+3. Cliquez avec le bouton droit sur **WindowsApplication1**, puis cliquez sur **Ajouter une référence de service**. **La boîte de dialogue** Ajouter une référence de service s'affiche.
 
 4. Dans la boîte de dialogue **Ajouter une référence de service**, cliquez sur **Découvrir**.
 

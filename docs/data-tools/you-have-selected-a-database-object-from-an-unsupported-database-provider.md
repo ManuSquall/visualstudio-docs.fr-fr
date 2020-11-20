@@ -1,6 +1,6 @@
 ---
 title: Objet provenant d’un fournisseur non pris en charge
-description: Vous avez sélectionné un objet de base de données dans un fournisseur de base de données non pris en charge
+description: Vous avez sélectionné un objet de base de données à partir d’un fournisseur de base de données non pris en charge. Affichez des informations sur ce message Visual Studio (Concepteur O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 84841c5e0759618430f9c2e4f0146cbc2d21fae9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f4f4a24e085cf4d268512ca90e5d1b3205abc9fe
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036715"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998160"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Vous avez sélectionné un objet de base de données dans un fournisseur de base de données non pris en charge
 

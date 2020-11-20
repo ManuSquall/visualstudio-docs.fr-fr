@@ -1,6 +1,6 @@
 ---
 title: Fournisseur de base de données non pris en charge
-description: La connexion sélectionnée utilise un fournisseur de base de données non pris en charge
+description: La connexion sélectionnée utilise un fournisseur de base de données non pris en charge. Affichez des informations sur ce message de Concepteur Objet Relationnel Visual Studio (Concepteur O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8fa073b47927f673914156c586bf27a121e53ea
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 06e08f9a9c28698ae2ee2fecfbcec64c39666c8a
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037567"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998345"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>La connexion sélectionnée utilise un fournisseur de base de données non pris en charge
 

@@ -1,5 +1,6 @@
 ---
 title: Créer un DataTable dans le Concepteur de DataSet
+description: Dans cette procédure pas à pas, vous créez un DataTable (sans TableAdapter) à l’aide de l’Concepteur de DataSet. Créer une application de Windows Forms et y ajouter un nouveau jeu de données.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7dd762c6df5eebc9ebbf142a3ad7dfe430800802
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036767"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998250"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : création d’un DataTable dans le Concepteur de DataSet
 

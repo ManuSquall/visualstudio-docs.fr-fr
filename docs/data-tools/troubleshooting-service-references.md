@@ -1,5 +1,7 @@
 ---
 title: Dépannage des références de service
+description: Passez en revue les problèmes courants qui peuvent se produire lorsque vous utilisez des références Windows Communication Foundation (WCF) ou WCF Data Services dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586118"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998068"
 ---
 # <a name="troubleshoot-service-references"></a>Dépanner les références de service
 
@@ -29,7 +31,7 @@ Cette rubrique répertorie les problèmes courants qui peuvent se produire lorsq
 
 ## <a name="error-returning-data-from-a-service"></a>Erreur lors du retour de données à partir d’un service
 
-Lorsque vous retournez un `DataSet` ou `DataTable` à partir d’un service, vous pouvez recevoir l’exception « le quota de taille maximale pour les messages entrants a été dépassé ». Par défaut, la `MaxReceivedMessageSize` propriété de certaines liaisons est définie sur une valeur relativement faible pour limiter l’exposition aux attaques par déni de service. Vous pouvez augmenter cette valeur pour empêcher l’exception. Pour plus d'informations, consultez <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Lorsque vous retournez un `DataSet` ou `DataTable` à partir d’un service, vous pouvez recevoir l’exception « le quota de taille maximale pour les messages entrants a été dépassé ». Par défaut, la `MaxReceivedMessageSize` propriété de certaines liaisons est définie sur une valeur relativement faible pour limiter l’exposition aux attaques par déni de service. Vous pouvez augmenter cette valeur pour empêcher l’exception. Pour plus d’informations, consultez <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Pour résoudre ce problème :
 

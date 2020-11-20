@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’une application de données multicouches'
+description: Dans cette procédure pas à pas, créez une application de données multicouches. Les applications de données multicouches sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou niveaux.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a09ef4cec4b7c2921322b934eef39ba660d02587
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426653"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998081"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : création d’une application de données multicouches
 Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d’accès aux données, une couche logique métier et des composants partagés tels que l’authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
@@ -122,7 +124,7 @@ L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont 
 
      Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-     -ou-
+     - ou -
 
      Sélectionnez **nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter une connexion** .
 
@@ -361,7 +363,7 @@ Une fois que vous avez ajouté la référence de service au service de données,
 La valeur par défaut de `maxReceivedMessageSize` n’est pas assez grande pour contenir les données extraites des `Customers` `Orders` tables et. Dans les étapes suivantes, vous allez augmenter la valeur à 6553600. Vous modifiez la valeur sur le client, ce qui met automatiquement à jour la référence de service.
 
 > [!NOTE]
-> La taille inférieure par défaut est destinée à limiter l'exposition aux attaques par déni de service. Pour plus d'informations, consultez <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> La taille inférieure par défaut est destinée à limiter l'exposition aux attaques par déni de service. Pour plus d’informations, consultez <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Pour augmenter la valeur de maxReceivedMessageSize
 
@@ -369,7 +371,7 @@ La valeur par défaut de `maxReceivedMessageSize` n’est pas assez grande pour 
 
 2. Accédez à l’attribut de taille **maxReceivedMessage** et changez la valeur en `6553600`.
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
 Exécutez l’application en appuyant sur **F5**. Les données des `Customers` tables et `Orders` sont récupérées à partir du service de données et affichées sur le formulaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -381,6 +383,6 @@ Selon les spécifications de votre application, vous pouvez exécuter différent
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser des jeux de données dans des applications multicouches](../data-tools/work-with-datasets-in-n-tier-applications.md)
+- [Utilisation de datasets dans des applications multiniveaux](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
