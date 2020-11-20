@@ -1,5 +1,7 @@
 ---
 title: Création d’une fenêtre outil à instances multiples | Microsoft Docs
+description: Découvrez comment modifier une fenêtre outil afin que plusieurs instances de celle-ci puissent être ouvertes simultanément. Par défaut, une seule instance peut être ouverte pour les fenêtres outil.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904062"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974003"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Créer une fenêtre outil à instances multiples
 Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celle-ci puissent être ouvertes simultanément. Par défaut, une seule instance peut être ouverte pour les fenêtres outil.

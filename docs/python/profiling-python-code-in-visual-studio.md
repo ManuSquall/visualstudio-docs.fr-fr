@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810664"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973806"
 ---
 # <a name="profile-python-code"></a>Profiler du code Python
 
@@ -23,7 +23,7 @@ Vous pouvez profiler une application Python si des interpréteurs CPython sont u
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>Profilage pour les interpréteurs CPython
 
-Le profilage est démarré par le biais de la commande de menu **analyser**le  >  **lancement python** , qui ouvre une boîte de dialogue de configuration :
+Le profilage est démarré par le biais de la commande de menu **Déboguer**  >  **lancer le profilage python** , qui ouvre une boîte de dialogue de configuration :
 
 ![Boîte de dialogue de configuration du profilage](media/profiling-start.png)
 

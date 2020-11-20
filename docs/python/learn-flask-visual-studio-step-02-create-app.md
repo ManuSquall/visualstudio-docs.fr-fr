@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313742"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974088"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
 
@@ -36,7 +36,7 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
 
 1. Dans votre dossier de projet, créez un dossier d’application nommé `HelloFlask` (cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions** et sélectionnez **Ajouter** > **Nouveau dossier**.)
 
-2. Dans le dossier *HelloFlask* , créez un fichier nommé * \_ \_ init \_ \_ . py* avec le contenu suivant qui crée l' `Flask` instance et charge les vues de l’application (créées à l’étape suivante) :
+2. Dans le dossier *HelloFlask* , créez un fichier nommé *\_ \_ init \_ \_ . py* avec le contenu suivant qui crée l' `Flask` instance et charge les vues de l’application (créées à l’étape suivante) :
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
     import HelloFlask.views
     ```
 
-3. Dans le dossier *HelloFlask*, créez un fichier nommé *views.py* avec le contenu suivant. Le nom *views.py* est important car vous avez utilisé `import HelloFlask.views` dans * \_ \_ init \_ \_ . py*; une erreur s’affiche au moment de l’exécution si les noms ne correspondent pas.
+3. Dans le dossier *HelloFlask*, créez un fichier nommé *views.py* avec le contenu suivant. Le nom *views.py* est important car vous avez utilisé `import HelloFlask.views` dans *\_ \_ init \_ \_ . py*; une erreur s’affiche au moment de l’exécution si les noms ne correspondent pas.
 
     ```python
     from flask import Flask
@@ -57,7 +57,7 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
         return "Hello Flask!"
     ```
 
-    En plus de renommer la fonction et de l’itinéraire vers `home` , ce code contient le code de rendu de page de *app.py* et importe l' `app` objet déclaré dans * \_ \_ init \_ \_ . py*.
+    En plus de renommer la fonction et de l’itinéraire vers `home` , ce code contient le code de rendu de page de *app.py* et importe l' `app` objet déclaré dans *\_ \_ init \_ \_ . py*.
 
 4. Créez un sous-dossier dans *HelloFlask* nommé *templates*, qui va rester vide pour l’instant.
 
@@ -84,7 +84,7 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
 
 7. Sélectionnez **Déboguer**  >  **Démarrer le débogage** (**F5**) ou utilisez le bouton **serveur Web** dans la barre d’outils (le navigateur que vous voyez peut varier) pour démarrer l’application et ouvrir un navigateur. Essayez les deux routes d’URL / et /home.
 
-8. Vous pouvez également définir des points d’arrêt dans différentes parties du code et redémarrer l’application pour suivre la séquence de démarrage. Par exemple, définissez un point d’arrêt sur les premières lignes de *runserver.py* et *HelloFlask\_* init_*.py*, et sur la ligne `return "Hello Flask!"` de *views.py*. Ensuite, redémarrez l’application (redémarrage du**débogage**  >  **Restart**, **CTRL** + **F5**ou le bouton de barre d’outils illustré ci-dessous) et parcourez (**F10**) le code, ou exécutez à partir de chaque point d’arrêt à l’aide de la touche **F5**.
+8. Vous pouvez également définir des points d’arrêt dans différentes parties du code et redémarrer l’application pour suivre la séquence de démarrage. Par exemple, définissez un point d’arrêt sur les premières lignes de *runserver.py* et *HelloFlask\_* init_ *.py*, et sur la ligne `return "Hello Flask!"` de *views.py*. Ensuite, redémarrez l’application (**Déboguer** le  >  **redémarrage**, **CTRL** + **MAJ** + **F5** ou le bouton de barre d’outils illustré ci-dessous) et parcourez (**F10**) le code ou exécutez à partir de chaque point d’arrêt à l’aide de la touche **F5**.
 
     ![Bouton Redémarrer de la barre d’outils de débogage dans Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -98,7 +98,7 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
 
     ![Le contrôle de code source modifie le bouton sur la barre d’état de Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. Dans **Team Explorer**, entrez un message de validation comme « Refactoriser le code » et sélectionnez **Valider tout**. Une fois la validation terminée, vous voyez s’afficher une validation de message ** \<hash> créée localement. Synchronisez pour partager vos modifications avec le serveur.** Si vous souhaitez envoyer les modifications vers votre référentiel distant, sélectionnez **Synchronisation**, puis sélectionnez **Envoyer** sous **Validations sortantes**. Vous pouvez également accumuler plusieurs validations locales avant d’envoyer à distance.
+1. Dans **Team Explorer**, entrez un message de validation comme « Refactoriser le code » et sélectionnez **Valider tout**. Une fois la validation terminée, vous voyez s’afficher une validation de message **\<hash> créée localement. Synchronisez pour partager vos modifications avec le serveur.** Si vous souhaitez envoyer les modifications vers votre référentiel distant, sélectionnez **Synchronisation**, puis sélectionnez **Envoyer** sous **Validations sortantes**. Vous pouvez également accumuler plusieurs validations locales avant d’envoyer à distance.
 
     ![Envoyer des validations à distance dans Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Création d’un système de projet de base, partie 2 | Microsoft Docs
+description: Découvrez comment ajouter un modèle Visual Studio, une page de propriétés et d’autres fonctionnalités à un projet créé dans un article précédent.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d5ce673e0ee44e888905239c12251241015ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903828"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974611"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Créer un système de projet de base, partie 2
 La première procédure pas à pas de cette série, [créer un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md), montre comment créer un système de projet de base. Cette procédure pas à pas s’appuie sur le système de projet de base en ajoutant un modèle Visual Studio, une page de propriétés et d’autres fonctionnalités. Vous devez effectuer la première procédure pas à pas avant de démarrer celle-ci.
@@ -40,7 +42,7 @@ Cette procédure pas à pas explique comment accomplir ces tâches :
 > Les étapes de cette procédure pas à pas sont basées sur un projet C#. Toutefois, à l’exception des détails, tels que les extensions de nom de fichier et le code, vous pouvez utiliser les mêmes étapes pour un projet de Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Créer un modèle Visual Studio
-- [Créer un système de projet de base, la première partie](../extensibility/creating-a-basic-project-system-part-1.md) montre comment créer un modèle de projet de base et l’ajouter au système de projet. Il montre également comment inscrire ce modèle auprès de Visual Studio à l’aide de l' <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribut, qui écrit le chemin d’accès complet du dossier * \\ Templates\Projects\SimpleProject \\ * dans le registre système.
+- [Créer un système de projet de base, la première partie](../extensibility/creating-a-basic-project-system-part-1.md) montre comment créer un modèle de projet de base et l’ajouter au système de projet. Il montre également comment inscrire ce modèle auprès de Visual Studio à l’aide de l' <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribut, qui écrit le chemin d’accès complet du dossier *\\ Templates\Projects\SimpleProject \\* dans le registre système.
 
 À l’aide d’un modèle Visual Studio (fichier *. vstemplate* ) au lieu d’un modèle de projet de base, vous pouvez contrôler l’apparence du modèle dans la boîte de dialogue **nouveau projet** et le mode de substitution des paramètres de modèle. Un fichier *. vstemplate* est un fichier XML qui décrit comment les fichiers sources doivent être inclus lors de la création d’un projet à l’aide du modèle de système de projet. Le système de projet lui-même est généré en recueillant le fichier *. vstemplate* et les fichiers sources dans un fichier *. zip* , puis déployé en copiant le fichier *. zip* dans un emplacement connu de Visual Studio. Ce processus est expliqué plus en détail plus loin dans cette procédure pas à pas.
 
@@ -55,7 +57,7 @@ Cette procédure pas à pas explique comment accomplir ces tâches :
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. Ajoutez un fichier XML nommé *SimpleProject. vstemplate* au dossier * \\ Templates\Projects\SimpleProject \\ * .
+3. Ajoutez un fichier XML nommé *SimpleProject. vstemplate* au dossier *\\ Templates\Projects\SimpleProject \\* .
 
 4. Remplacez le contenu de *SimpleProject. vstemplate* par le code suivant.
 
@@ -83,7 +85,7 @@ Cette procédure pas à pas explique comment accomplir ces tâches :
     </VSTemplate>
     ```
 
-5. Dans la fenêtre **Propriétés** , sélectionnez les cinq fichiers dans le dossier * \\ Templates\Projects\SimpleProject \\ * et définissez l' **action de génération** sur **ZipProject**.
+5. Dans la fenêtre **Propriétés** , sélectionnez les cinq fichiers dans le dossier *\\ Templates\Projects\SimpleProject \\* et définissez l' **action de génération** sur **ZipProject**.
 
     ![Dossier de projet simple](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -113,7 +115,7 @@ Cette procédure pas à pas explique comment accomplir ces tâches :
   Pour plus d’informations sur les éléments dans le schéma de modèle Visual Studio, consultez la [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
 > [!NOTE]
-> Si un projet possède plusieurs modèles Visual Studio, tous les modèles se trouvent dans un dossier distinct. L' **action de génération** doit être définie sur **ZipProject**pour chaque fichier de ce dossier.
+> Si un projet possède plusieurs modèles Visual Studio, tous les modèles se trouvent dans un dossier distinct. L' **action de génération** doit être définie sur **ZipProject** pour chaque fichier de ce dossier.
 
 ## <a name="adding-a-minimal-vsct-file"></a>Ajout d’un fichier. vsct minimal
  Visual Studio doit être exécuté en mode d’installation pour reconnaître un modèle Visual Studio nouveau ou modifié. Le mode d’installation nécessite la présence d’un fichier *. vsct* . Par conséquent, vous devez ajouter un fichier *. vsct* minimal au projet.
@@ -207,9 +209,9 @@ Les nœuds enfants sont créés en modifiant le fichier projet et \<OutputSubPat
 
 Cette section montre comment créer un nœud enfant de la console pour le type de projet SimpleProject.
 
-1. Renommez le dossier * \\ Templates\Projects\SimpleProject \\ * en * \\ Templates\Projects\ConsoleApp \\ *.
+1. Renommez le dossier *\\ Templates\Projects\SimpleProject \\* en *\\ Templates\Projects\ConsoleApp \\*.
 
-2. Dans la fenêtre **Propriétés** , sélectionnez les cinq fichiers dans le dossier * \\ Templates\Projects\ConsoleApp \\ * et assurez-vous que l' **action de génération** est définie sur **ZipProject**.
+2. Dans la fenêtre **Propriétés** , sélectionnez les cinq fichiers dans le dossier *\\ Templates\Projects\ConsoleApp \\* et assurez-vous que l' **action de génération** est définie sur **ZipProject**.
 
 3. Dans le fichier SimpleProject. vstemplate, ajoutez la ligne suivante à la fin de la \<TemplateData> section, juste avant la balise de fermeture.
 
@@ -285,13 +287,13 @@ Lorsque vous créez un projet à l’aide d’un modèle Visual Studio dans la b
 
 1. Dans le fichier *SimpleProjectNode.cs* , supprimez la `AddFileFromTemplate` méthode.
 
-2. Dans le fichier * \\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* , recherchez la \<RootNamespace> propriété et remplacez sa valeur par $safeprojectname $.
+2. Dans le fichier *\\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* , recherchez la \<RootNamespace> propriété et remplacez sa valeur par $safeprojectname $.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. Dans le fichier * \\ Templates\Projects\SimpleProject\Program.cs* , remplacez le contenu du fichier par le code suivant :
+3. Dans le fichier *\\ Templates\Projects\SimpleProject\Program.cs* , remplacez le contenu du fichier par le code suivant :
 
     ```
     using System;

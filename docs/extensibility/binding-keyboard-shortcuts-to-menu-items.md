@@ -1,5 +1,7 @@
 ---
 title: Liaison de raccourcis clavier à des éléments de menu | Microsoft Docs
+description: Découvrez comment mapper un raccourci clavier dans Visual Studio à un bouton personnalisé, à un élément de menu ou à une commande de barre d’outils pour l’éditeur par défaut ou un éditeur personnalisé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407716"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974622"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Lier des raccourcis clavier à des éléments de menu
 Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez simplement une entrée au fichier *. vsct* pour le package. Cette rubrique explique comment mapper un raccourci clavier à un bouton personnalisé, à un élément de menu ou à une commande de barre d’outils, et comment appliquer le mappage du clavier dans l’éditeur par défaut ou le limiter à un éditeur personnalisé.
@@ -59,7 +61,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
 
     Affectez `guid`  les  `id` attributs et à ceux de la commande que vous souhaitez appeler.
 
-    Affectez `mod1` à l’attribut la valeur **Control** , **ALT** ou **Shift**.
+    Affectez `mod1` à l’attribut la valeur **Control**, **ALT** ou **Shift**.
 
     La section KeyBindings doit ressembler à ceci :
 

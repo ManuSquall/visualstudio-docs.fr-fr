@@ -1,5 +1,6 @@
 ---
 title: Implémentation d’un plug-in de contrôle de code source-meilleures pratiques
+description: Passez en revue ces détails techniques pour vous aider à implémenter de manière fiable un plug-in de contrôle de code source dans Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038450"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974638"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Meilleures pratiques pour l’implémentation d’un plug-in de contrôle de code source
 Les détails techniques suivants peuvent vous aider à implémenter de manière fiable un plug-in de contrôle de code source dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

@@ -1,5 +1,7 @@
 ---
 title: Élément combo | Microsoft Docs
+description: 'L’élément combo définit les commandes qui s’affichent dans une zone de liste déroulante. Il existe quatre types : DropDownCombo, DynamicCombo, IndexCombo et MRUCombo.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5c16db298edb0e1fe526190531df4cb638f8e3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739818"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974316"
 ---
 # <a name="combo-element"></a>Élément combo
 Définit les commandes qui s’affichent dans une zone de liste déroulante. Il existe quatre types de zones de liste déroulante, comme suit : DropDownCombo, DynamicCombo, IndexCombo et MRUCombo.

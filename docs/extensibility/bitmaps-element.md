@@ -1,5 +1,7 @@
 ---
 title: Élément bitmaps | Microsoft Docs
+description: L’élément bitmaps regroupe un ou plusieurs éléments bitmap. Cet article contient un exemple de l’élément bitmaps.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd3222e24c6e90380ec9c5836bed583ba95eaa68
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739988"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974567"
 ---
 # <a name="bitmaps-element"></a>Élément bitmaps
 Regroupe les éléments d' [élément bitmap](../extensibility/bitmap-element.md) .

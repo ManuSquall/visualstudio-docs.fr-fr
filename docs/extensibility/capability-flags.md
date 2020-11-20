@@ -1,5 +1,7 @@
 ---
 title: Indicateurs de capacité | Microsoft Docs
+description: En savoir plus sur les indicateurs de SCC_CAP_xxx qui indiquent les fonctionnalités d’un plug-in de contrôle de code source et les indicateurs SCC_EXCAP_xxx qui indiquent des fonctionnalités étendues.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739868"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974437"
 ---
 # <a name="capability-flags"></a>Indicateurs de capacité
-Les indicateurs SCC_CAP_*xxx* sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Les indicateurs SCC_EXCAP_*xxx* sont des indicateurs incrémentiels qui indiquent des capacités étendues et sont résolus en valeurs entières.
+Les indicateurs SCC_CAP_ *xxx* sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Les indicateurs SCC_EXCAP_ *xxx* sont des indicateurs incrémentiels qui indiquent des capacités étendues et sont résolus en valeurs entières.
 
 |Code de capacité|Valeur|Description|
 |---------------------|-----------|-----------------|

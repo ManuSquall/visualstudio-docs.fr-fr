@@ -1,5 +1,7 @@
 ---
 title: Élément CommandTable | Microsoft Docs
+description: CommandTable est l’élément racine du fichier. vsct, qui définit la disposition et le type des commandes qu’un VSPackage fournit à l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739648"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974514"
 ---
 # <a name="commandtable-element"></a>Élément CommandTable
 CommandTable est l’élément racine du fichier *. vsct* . Il s’agit du fichier qui définit la disposition et le type réels des commandes qu’un VSPackage fournit à l’IDE. Les commandes peuvent inclure des éléments de menu, des menus, des barres d’outils et des zones de liste modifiable. Pour plus d’informations, consultez [fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).

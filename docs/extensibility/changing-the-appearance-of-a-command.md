@@ -1,5 +1,7 @@
 ---
 title: Modification de l’apparence d’une commande | Microsoft Docs
+description: Découvrez comment fournir des commentaires sur la modification de l’apparence d’une commande, par exemple rendre les commandes disponibles/non disponibles, masquées/affichées, ou cochées/décochées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183715"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974415"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modifier l’apparence d’une commande
 Vous pouvez fournir des commentaires à votre utilisateur en modifiant l’apparence d’une commande. Par exemple, vous souhaiterez peut-être qu’une commande ait un aspect différent lorsqu’elle n’est pas disponible. Vous pouvez rendre les commandes disponibles ou non disponibles, les masquer ou les afficher, ou les activer ou les désactiver dans le menu.

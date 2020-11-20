@@ -1,5 +1,7 @@
 ---
 title: Création d’une catégorie de paramètres | Microsoft Docs
+description: Découvrez comment créer une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer et restaurer des valeurs à partir d’un fichier de paramètres.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904017"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974551"
 ---
 # <a name="create-a-settings-category"></a>Créer une catégorie de paramètres
 
@@ -51,15 +53,15 @@ Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la pre
 3. Dans *MyToolsOptionsPackage.cs*, ajoutez une `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la pre
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -92,7 +94,7 @@ Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la pre
 
 1. Démarrez le projet en mode débogage en appuyant sur **F5**. Cela démarre l’instance expérimentale.
 
-2. Ouvrez la **Tools**  >  boîte de dialogue**options** des outils.
+2. Ouvrez la **Tools**  >  boîte de dialogue **options** des outils.
 
 3. Dans l’arborescence dans le volet gauche, développez **ma catégorie** , puis cliquez sur **ma page de grille**.
 

@@ -1,5 +1,7 @@
 ---
 title: Création d’une extension avec une fenêtre outil | Microsoft Docs
+description: Découvrez comment utiliser le modèle de projet VSIX et le modèle d’élément de fenêtre outil personnalisée pour créer une extension avec une fenêtre outil.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597b84854dd398abee9dc21090e085273bc94c75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2bcbce3c97830663b43a94191d84d81418b423
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903888"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973939"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Créer une extension avec une fenêtre outil
 

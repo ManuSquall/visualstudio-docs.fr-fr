@@ -1,5 +1,7 @@
 ---
 title: Création d’une extension avec un VSPackage | Microsoft Docs
+description: Découvrez comment créer un projet VSIX et ajouter un élément de projet VSPackage à l’aide du VSPackage pour obtenir le service de Shell d’interface utilisateur afin d’afficher une boîte de message.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903852"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973784"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Créer une extension avec un VSPackage
 
@@ -33,7 +35,7 @@ Cette procédure pas à pas vous montre comment créer un projet VSIX et ajouter
 
     L’instance expérimentale de Visual Studio s’affiche. Pour plus d’informations sur l’instance expérimentale, consultez [l’instance expérimentale](../extensibility/the-experimental-instance.md).
 
-4. Dans l’instance expérimentale, ouvrez la **Tools**  >  fenêtre**extensions et mises à jour** des outils. Vous devez voir l’extension **FirstPackage** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstPackage**).
+4. Dans l’instance expérimentale, ouvrez la **Tools**  >  fenêtre **extensions et mises à jour** des outils. Vous devez voir l’extension **FirstPackage** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstPackage**).
 
 ## <a name="load-the-vspackage"></a>Charger le VSPackage
 

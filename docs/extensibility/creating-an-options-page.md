@@ -1,5 +1,7 @@
 ---
 title: Création d’une page d’options | Microsoft Docs
+description: Découvrez comment créer une page outils/options simple qui utilise une grille des propriétés pour examiner et définir des propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903821"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973718"
 ---
 # <a name="create-an-options-page"></a>Créer une page d’options
 
@@ -99,7 +101,7 @@ Cette procédure pas à pas crée une page outils/options simple qui utilise une
 
 7. Dans l’instance expérimentale de Visual Studio, dans le menu **Outils** , cliquez sur **options**.
 
-     Dans le volet gauche, vous devriez voir **ma catégorie**. (Les catégories d’options sont classées par ordre alphabétique. elles doivent donc apparaître à mi-chemin dans la liste.) Ouvrez **ma catégorie** , puis cliquez sur **ma page de grille**. La grille options s’affiche dans le volet droit. La catégorie de propriété est **My options**et le nom de propriété est **My Integer (option)**. L’option Description de la propriété, **mon entier**, s’affiche en bas du volet. Remplacez la valeur de la valeur initiale 256 par autre valeur. Cliquez sur **OK**, puis rouvrez la **page**de la grille. Vous pouvez voir que la nouvelle valeur persiste.
+     Dans le volet gauche, vous devriez voir **ma catégorie**. (Les catégories d’options sont classées par ordre alphabétique. elles doivent donc apparaître à mi-chemin dans la liste.) Ouvrez **ma catégorie** , puis cliquez sur **ma page de grille**. La grille options s’affiche dans le volet droit. La catégorie de propriété est **My options** et le nom de propriété est **My Integer (option)**. L’option Description de la propriété, **mon entier**, s’affiche en bas du volet. Remplacez la valeur de la valeur initiale 256 par autre valeur. Cliquez sur **OK**, puis rouvrez la **page** de la grille. Vous pouvez voir que la nouvelle valeur persiste.
 
      Votre page d’options est également disponible via la zone de recherche de Visual Studio. Dans la zone de recherche située près du haut de l’IDE, tapez **ma catégorie** et vous verrez **ma catégorie-> la page** de la grille dans la liste des résultats.
 

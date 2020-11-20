@@ -1,5 +1,7 @@
 ---
 title: Fonctions de rappel implémentées par l’IDE | Microsoft Docs
+description: Découvrez les fonctions de rappel que le plug-in peut appeler aux moments opportuns pendant une opération de contrôle de code source pour passer des informations à l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739893"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974460"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Fonctions de rappel implémentées par l’IDE
 Pour rendre l’intégration de l’environnement de développement intégré (IDE) aussi fluide que possible et offrir une expérience d’utilisateur final unifiée, le plug-in de contrôle de code source peut utiliser des fonctions de rappel implémentées par l’IDE. Le plug-in peut appeler ces fonctions aux moments opportuns pendant une opération de contrôle de code source pour passer des informations à l’IDE ; l’IDE peut ensuite afficher ces informations sous la forme d’éléments incorporés dans son interface utilisateur native. L’utilisateur a une expérience moins fragmentée dans ce scénario que si le plug-in utilisait sa propre interface utilisateur.
 
- Le fichier d’en-tête requis est *SCC. h*. L’emplacement par défaut est *\Program Files\VSIP 8.0 \ \\ EnvSDK\common\inc*. Il se trouve également dans le dossier VSIP qui contient l’exemple de plug-in de contrôle de code source dans *\Program Files\VSIP 8.0 \ MSSCCI \\ *.
+ Le fichier d’en-tête requis est *SCC. h*. L’emplacement par défaut est *\Program Files\VSIP 8.0 \ \\ EnvSDK\common\inc*. Il se trouve également dans le dossier VSIP qui contient l’exemple de plug-in de contrôle de code source dans *\Program Files\VSIP 8.0 \ MSSCCI \\*.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Décrit la fonction de rappel utilisée par [SccOpenProject](../extensibility/sccopenproject-function.md) pour afficher les messages du plug-in de contrôle de code source via l’IDE.
 
 - [POPLISTFUNC](../extensibility/poplistfunc.md) Décrit la fonction de rappel utilisée par [SccPopulateList](../extensibility/sccpopulatelist-function.md) lorsque l’IDE ne dispose pas d’un accès complet aux informations qui sont uniquement disponibles pour le plug-in de contrôle de code source, comme une liste complète des fichiers sous contrôle de version.

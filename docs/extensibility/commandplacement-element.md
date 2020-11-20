@@ -1,5 +1,7 @@
 ---
 title: Élément Commandplacement ayant | Microsoft Docs
+description: L’élément Commandplacement ayant permet d’inclure des boutons, des groupes et des menus dans plusieurs groupes ou menus.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739740"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974059"
 ---
 # <a name="commandplacement-element"></a>Élément Commandplacement ayant
 L’élément Commandplacement ayant permet d’inclure des boutons, des groupes et des menus dans plusieurs groupes ou menus. À l’aide de l’élément Commandplacement ayant, il n’est pas nécessaire de redéfinir complètement ces éléments pour modifier l’apparence d’une interface utilisateur.

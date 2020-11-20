@@ -1,5 +1,7 @@
 ---
 title: Button, élément | Microsoft Docs
+description: L’élément Buttons regroupe les éléments Button, qui représentent des commandes individuelles. Cet article contient un exemple.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f46942936f9d4f6b69225953d4f9aa8a974a8723
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739917"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974478"
 ---
 # <a name="buttons-element"></a>Buttons, élément
 Regroupe les éléments de [bouton](../extensibility/button-element.md) , qui représentent des commandes individuelles.
@@ -56,7 +58,7 @@ Regroupe les éléments de [bouton](../extensibility/button-element.md) , qui re
 
 ```
 <Buttons>
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>
     <Strings>

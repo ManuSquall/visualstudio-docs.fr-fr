@@ -1,5 +1,7 @@
 ---
 title: Création et gestion de boîtes de dialogue modales | Microsoft Docs
+description: Découvrez comment créer une boîte de dialogue modale dans Visual Studio à l’aide de DialogWindow et sans utiliser DialogWindow.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903777"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973628"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Créer et gérer des boîtes de dialogue modales
 Quand vous créez une boîte de dialogue modale dans Visual Studio, vous devez vous assurer que la fenêtre parente de la boîte de dialogue est désactivée pendant que la boîte de dialogue est affichée, puis réactiver la fenêtre parente après la fermeture de la boîte de dialogue. Si vous ne le faites pas, vous risquez de recevoir le message d’erreur : *Microsoft Visual Studio ne peut pas s’arrêter, car une boîte de dialogue modale est active. Fermez la boîte de dialogue active, puis réessayez.*

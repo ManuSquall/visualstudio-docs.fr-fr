@@ -1,5 +1,7 @@
 ---
 title: Création d’un contrôle de boîte à outils WPF | Microsoft Docs
+description: Découvrez comment utiliser le modèle de contrôle de boîte à outils WPF pour créer un contrôle de boîte à outils que vous pouvez distribuer à d’autres utilisateurs.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903947"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973978"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Créer un contrôle de boîte à outils WPF
 
@@ -33,7 +35,7 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
 
 2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de **contrôle de boîte à outils WPF** nommé `MyToolboxControl` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **contrôle de boîte à outils WPF**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *MyToolboxControl.cs*.
 
-    La solution contient maintenant un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> qui ajoute le contrôle à la **boîte à outils**et une entrée de ressource **Microsoft. VisualStudio. ToolboxControl** dans le manifeste VSIX pour le déploiement.
+    La solution contient maintenant un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> qui ajoute le contrôle à la **boîte à outils** et une entrée de ressource **Microsoft. VisualStudio. ToolboxControl** dans le manifeste VSIX pour le déploiement.
 
 #### <a name="to-create-the-control-ui"></a>Pour créer l’interface utilisateur du contrôle
 
@@ -100,4 +102,4 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
 
 3. Chargez le fichier *. vsix* sur un réseau ou sur un site Web.
 
-    Si vous téléchargez le fichier sur le site Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , d’autres utilisateurs peuvent **Tools**utiliser les  >  **extensions et les mises à jour** des outils dans Visual Studio pour rechercher le contrôle en ligne et l’installer.
+    Si vous téléchargez le fichier sur le site Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , d’autres utilisateurs peuvent **Tools** utiliser les  >  **extensions et les mises à jour** des outils dans Visual Studio pour rechercher le contrôle en ligne et l’installer.

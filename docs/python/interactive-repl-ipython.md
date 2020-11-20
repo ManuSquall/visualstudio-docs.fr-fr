@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542426"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974077"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Utiliser IPython dans la fenêtre interactive
 
@@ -32,7 +32,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
 3. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur **IPython**, puis sélectionnez **OK**).
 
-4. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la **fenêtre interactive** en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur **Entrée** si seule une invite >>> s’affiche pour obtenir une invite similaire à ** [2]**.
+4. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la **fenêtre interactive** en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur **Entrée** si seule une invite >>> s’affiche pour obtenir une invite similaire à **[2]**.
 
     ![Fenêtre interactive en mode IPython](media/ipython-repl-03.png)
 
@@ -82,6 +82,4 @@ IPython possède de nombreuses autres fonctionnalités utiles, telles que l’é
 
 ## <a name="see-also"></a>Voir aussi
 
-- Pour utiliser Jupyter facilement et sans installation, essayez gratuitement le [service hébergé Azure Notebooks](https://notebooks.azure.com/) qui vous permet de conserver et partager vos blocs-notes avec d’autres.
-
-- [Azure Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview) est également préconfiguré pour exécuter les blocs-notes Jupyter avec un large éventail d’autres outils de science des données.
+- La [Data science Virtual Machine Azure](/azure/machine-learning/data-science-virtual-machine/overview) est préconfigurée pour exécuter des bloc-notes Jupyter, ainsi qu’un large éventail d’autres outils de science des données.

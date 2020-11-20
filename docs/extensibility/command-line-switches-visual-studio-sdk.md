@@ -1,5 +1,7 @@
 ---
-title: Commutateurs de ligne de commande (kit de développement logiciel Visual Studio) | Microsoft Docs
+title: Commutateurs Command-Line (kit de développement logiciel Visual Studio) | Microsoft Docs
+description: Devenv.exe prend en charge les commutateurs de ligne de commande spécifiquement pour le développement de VSPackages. Utilisez les Articles de cette section pour en savoir plus sur les commutateurs de ligne de commande.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2967a6fab128b6730fbbe35d34f23464ca2096
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77b71f95fcc037b2a4bd70770b06f4b130a9ebd1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739771"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974376"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Commutateurs de ligne de commande (kit de développement logiciel Visual Studio)
 *Devenv.exe*, l’exécutable qui démarre l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE), prend en charge les commutateurs de ligne de commande spécifiquement pour le développement de VSPackages. Les VSPackages peuvent également rendre leurs propres commutateurs disponibles sur la ligne de commande devenv. Les rubriques suivantes fournissent des informations sur l’utilisation des commutateurs de ligne de commande dans l’IDE.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Commutateurs de ligne de commande devenv pour VSPackage Ddevelopment](../extensibility/devenv-command-line-switches-for-vspackage-development.md) Décrit les commutateurs de ligne de commande devenv que vous pouvez utiliser pour simplifier le développement, le débogage et le déploiement de VSPackage.
 
 - [Ajouter des commutateurs de ligne de commande](../extensibility/adding-command-line-switches.md) Décrit comment implémenter, Rechercher et lire des commutateurs de ligne de commande entrés par l’utilisateur pour votre package.

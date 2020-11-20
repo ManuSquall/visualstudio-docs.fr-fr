@@ -1,5 +1,7 @@
 ---
 title: Création d’une extension avec un modèle d’élément d’éditeur | Microsoft Docs
+description: Découvrez comment utiliser des modèles d’élément dans le kit de développement logiciel (SDK) Visual Studio pour créer des extensions d’éditeur de base qui ajoutent des classifieurs, des ornements et des marges à l’éditeur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903840"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973742"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Créer une extension avec un modèle d’élément d’éditeur
 Vous pouvez utiliser les modèles d’élément inclus dans le kit de développement logiciel (SDK) Visual Studio pour créer des extensions d’éditeur de base qui ajoutent des classifieurs, des ornements et des marges à l’éditeur. Les modèles d’élément de l’éditeur sont disponibles pour les projets Visual C# ou VSIX Visual Basic.
@@ -28,7 +30,7 @@ Vous pouvez utiliser les modèles d’élément inclus dans le kit de développe
 
 1. Dans la boîte de dialogue **nouveau projet** , développez **Visual C#** ou **Visual Basic** , puis cliquez sur **extensibilité**. Dans le volet **modèles** , sélectionnez **projet VSIX**. Dans le champ **Nom**, saisissez `TestClassifier`. Cliquez sur **OK**.
 
-2. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Accédez au nœud **extensibilité** Visual C# et sélectionnez **classifieur**de l’éditeur. Laissez le nom de fichier par défaut (*EditorClassifier1.cs*).
+2. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Accédez au nœud **extensibilité** Visual C# et sélectionnez **classifieur** de l’éditeur. Laissez le nom de fichier par défaut (*EditorClassifier1.cs*).
 
 3. Il y a quatre fichiers de code, comme suit :
 
@@ -49,7 +51,7 @@ Vous pouvez utiliser les modèles d’élément inclus dans le kit de développe
 
 1. Dans la boîte de dialogue **nouveau projet** , développez **Visual C#** ou **Visual Basic** , puis cliquez sur **extensibilité**. Dans le volet **modèles** , sélectionnez **projet VSIX**. Dans le champ **Nom**, saisissez `TestAdornment`. Cliquez sur **OK**.
 
-2. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Accédez au nœud **extensibilité** Visual C# et sélectionnez l' **ornement de texte**de l’éditeur. Laissez le nom de fichier par défaut (*TextAdornment1.cs/VB*).
+2. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Accédez au nœud **extensibilité** Visual C# et sélectionnez l' **ornement de texte** de l’éditeur. Laissez le nom de fichier par défaut (*TextAdornment1.cs/VB*).
 
 3. Il existe deux fichiers de code, comme suit :
 
@@ -69,7 +71,7 @@ Vous pouvez utiliser les modèles d’élément inclus dans le kit de développe
 
 1. Dans la boîte de dialogue **nouveau projet** , développez **Visual C#** ou **Visual Basic** , puis cliquez sur **extensibilité**. Dans le volet **modèles** , sélectionnez **projet VSIX**. Dans le champ **Nom**, saisissez `ViewportAdornment`. Cliquez sur **OK**.
 
-2. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Accédez au nœud **extensibilité** Visual C# et sélectionnez l' **ornement**de la fenêtre d’affichage de l’éditeur. Laissez le nom de fichier par défaut (*ViewportAdornment1.cs/VB*).
+2. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Accédez au nœud **extensibilité** Visual C# et sélectionnez l' **ornement** de la fenêtre d’affichage de l’éditeur. Laissez le nom de fichier par défaut (*ViewportAdornment1.cs/VB*).
 
 3. Il existe deux fichiers de code, comme suit :
 

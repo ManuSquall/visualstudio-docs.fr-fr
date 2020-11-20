@@ -1,5 +1,7 @@
 ---
 title: Création d’une extension à l’aide d’une commande de menu | Microsoft Docs
+description: Découvrez comment créer une extension à l’aide d’une commande de menu qui lance le bloc-notes. Créez une commande de menu, puis modifiez le gestionnaire de commandes de menu.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972333"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974275"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Créer une extension avec une commande de menu
 
@@ -50,13 +52,13 @@ Cette procédure pas à pas montre comment créer une extension avec une command
 
 ::: moniker range="vs-2017"
 
-4. Dans l’instance expérimentale, ouvrez la **Tools**  >  fenêtre**extensions et mises à jour** des outils. Vous devez voir l’extension **FirstMenuCommand** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstMenuCommand**).
+4. Dans l’instance expérimentale, ouvrez la **Tools**  >  fenêtre **extensions et mises à jour** des outils. Vous devez voir l’extension **FirstMenuCommand** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstMenuCommand**).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Dans l’instance expérimentale, ouvrez la fenêtre **Extensions**de  >  **gestion** des extensions. Vous devez voir l’extension **FirstMenuCommand** ici. (Si vous ouvrez **gérer les extensions** dans votre instance de Visual Studio, vous ne voyez pas **FirstMenuCommand**).
+4. Dans l’instance expérimentale, ouvrez la fenêtre **Extensions** de  >  **gestion** des extensions. Vous devez voir l’extension **FirstMenuCommand** ici. (Si vous ouvrez **gérer les extensions** dans votre instance de Visual Studio, vous ne voyez pas **FirstMenuCommand**).
 
 ::: moniker-end
 
