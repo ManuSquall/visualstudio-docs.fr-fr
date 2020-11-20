@@ -20,45 +20,45 @@
   items:
     - name: .NET
       items:
-        - name: Déployer une application .NET Core avec l’outil de publication
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: Empaqueter une application de bureau pour Microsoft Store
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Déployer une application Windows .NET avec ClickOnce
           href: quickstart-deploy-using-clickonce-folder.md
         - name: Déployer une application de bureau .NET Framework avec ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: Créer un package d’installation (poste de travail Windows)
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Empaqueter une application de bureau pour Microsoft Store >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Générer des applications ClickOnce à partir de la ligne de commande
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: Publier une application ASP.NET Core sur Azure
+        - name: Publier une application ASP.NET Core sur Azure >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: Importer des paramètres de publication et déployer sur IIS
           href: tutorial-import-publish-settings-iis.md
         - name: Importer des paramètres de publication et déployer sur Azure
           href: tutorial-import-publish-settings-azure.md
-        - name: Déploiement continu d’ASP.NET Core sur Azure avec Git
+        - name: Déploiement continu d’ASP.NET Core sur Azure avec Git >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: Déployer une application C/C++
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Empaqueter une application de bureau pour Microsoft Store
+        - name: Créer un package d’installation
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Empaqueter une application de bureau pour Microsoft Store >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Déployer une application C++/CLR avec ClickOnce...
+        - name: Déployer une application C++/CLR avec ClickOnce >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
-        - name: Empaqueter une application UWP en utilisant Visual Studio
+        - name: Empaqueter une application UWP en utilisant Visual Studio >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Publier sur App Service Linux
+        - name: Publier sur App Service Linux >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: Publier sur Azure App Service
+        - name: Publier sur Azure App Service >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: Guides pratiques
   items:
