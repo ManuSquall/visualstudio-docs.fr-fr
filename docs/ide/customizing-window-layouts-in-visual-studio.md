@@ -1,5 +1,7 @@
 ---
 title: Personnaliser les dispositions de fenêtres
+description: Découvrez comment personnaliser les caractéristiques que Windows présente pour créer des dispositions qui fonctionnent le mieux pour différents flux de travail de développement.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87546068"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006664"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
@@ -52,7 +54,7 @@ Vous pouvez utiliser les onglets pour réorganiser votre disposition de différe
 
 #### <a name="preview-tab-document-windows"></a>Onglet Aperçu (fenêtres de document)
 
-Dans l’onglet **Aperçu** , vous pouvez afficher les fichiers dans l’éditeur sans les ouvrir. Vous pouvez afficher un aperçu des fichiers en les sélectionnant dans **Explorateur de solutions**, pendant le débogage, lorsque vous effectuez un pas à pas détaillé dans des fichiers, avec **atteindre la définition**et lorsque vous parcourez les résultats d’une recherche. Les fichiers d'aperçu apparaissent aussi sous un onglet à droite de l'onglet de document. Le fichier s’ouvre en édition si vous le modifiez ou si vous choisissez **Ouvrir**.
+Dans l’onglet **Aperçu** , vous pouvez afficher les fichiers dans l’éditeur sans les ouvrir. Vous pouvez afficher un aperçu des fichiers en les sélectionnant dans **Explorateur de solutions**, pendant le débogage, lorsque vous effectuez un pas à pas détaillé dans des fichiers, avec **atteindre la définition** et lorsque vous parcourez les résultats d’une recherche. Les fichiers d'aperçu apparaissent aussi sous un onglet à droite de l'onglet de document. Le fichier s’ouvre en édition si vous le modifiez ou si vous choisissez **Ouvrir**.
 
 ::: moniker range="vs-2019"
 
@@ -62,7 +64,7 @@ Dans l’onglet **Aperçu** , vous pouvez afficher les fichiers dans l’éditeu
 
 Vous pouvez appliquer les onglets de document verticaux des manières suivantes :
 
-- **Tools**  >  **Options**  >  **Environment**  >  Dans la barre de menus, choisissez outils options**onglets d’environnement et fenêtres** . Ensuite, dans le contrôle disposition de l' **onglet définir** , choisissez **haut**, **gauche**ou **droite** dans la liste déroulante.
+- **Tools**  >  **Options**  >  **Environment**  >  Dans la barre de menus, choisissez outils options **onglets d’environnement et fenêtres** . Ensuite, dans le contrôle disposition de l' **onglet définir** , choisissez **haut**, **gauche** ou **droite** dans la liste déroulante.
 
 - Cliquez avec le bouton droit sur un onglet, choisissez **définir la disposition des onglets**, puis choisissez **gauche** ou **droite**. (Pour ramener les onglets à leur position par défaut, choisissez **haut**.)
 
@@ -80,7 +82,7 @@ Vous pouvez réorganiser les barres d’outils en les faisant glisser vers l’e
 
 ## <a name="arrange-and-dock-windows"></a>Organiser et ancrer des fenêtres
 
-Une fenêtre de document ou une fenêtre outil peut être *ancrée*afin d’avoir une position et une taille dans le frame de fenêtre IDE. Vous pouvez également la placer en tant que fenêtre flottante distincte en dehors de l’IDE.
+Une fenêtre de document ou une fenêtre outil peut être *ancrée* afin d’avoir une position et une taille dans le frame de fenêtre IDE. Vous pouvez également la placer en tant que fenêtre flottante distincte en dehors de l’IDE.
 
 Vous pouvez ancrer une fenêtre outil n’importe où dans le frame IDE. Vous pouvez également ancrer certaines fenêtres outil comme fenêtres avec onglets dans le cadre de l’éditeur. Vous pouvez ancrer les fenêtres de document dans le cadre de l’éditeur et les épingler à leur position actuelle dans l’ordre de tabulation.
 
@@ -126,7 +128,7 @@ L’illustration suivante montre l’ancrage de l’**Explorateur de solutions**
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Fermer et masquer les fenêtres d’outil
 
-Vous pouvez fermer une fenêtre Outil en cliquant sur le **X** dans le coin supérieur droit de la barre de titre. Pour rouvrir la fenêtre, utilisez son raccourci clavier ou la commande de menu. Les fenêtres outil prennent en charge une fonctionnalité nommée *Masquer automatiquement*qui permet de faire glisser une fenêtre lorsque vous utilisez une autre fenêtre. Quand une fenêtre est masquée automatiquement, son nom apparaît sur un onglet figurant sur le bord de l’IDE. Pour réutiliser la fenêtre, pointez sur l'onglet pour que la fenêtre soit de nouveau visible.
+Vous pouvez fermer une fenêtre Outil en cliquant sur le **X** dans le coin supérieur droit de la barre de titre. Pour rouvrir la fenêtre, utilisez son raccourci clavier ou la commande de menu. Les fenêtres outil prennent en charge une fonctionnalité nommée *Masquer automatiquement* qui permet de faire glisser une fenêtre lorsque vous utilisez une autre fenêtre. Quand une fenêtre est masquée automatiquement, son nom apparaît sur un onglet figurant sur le bord de l’IDE. Pour réutiliser la fenêtre, pointez sur l'onglet pour que la fenêtre soit de nouveau visible.
 
 ![Masquer automatiquement](../ide/media/vs2015_auto_hide.png)
 
@@ -167,7 +169,7 @@ Commencez par créer une solution de test qui comporte deux projets, chacun avec
 
 3. Appuyez sur **CTRL** + **ALT** + **X** pour afficher la fenêtre **boîte à outils** . Si la fenêtre est ancrée, faites-la glisser pour la faire flotter là où vous voulez la placer.
 
-4. Appuyez sur **F5** pour placer Visual Studio en mode débogage. Ajustez la position des fenêtres de débogage **automatique**, **pile des appels**et **sortie** comme vous le souhaitez. La disposition que vous allez créer s’applique à la fois au mode Édition et au mode Débogage.
+4. Appuyez sur **F5** pour placer Visual Studio en mode débogage. Ajustez la position des fenêtres de débogage **automatique**, **pile des appels** et **sortie** comme vous le souhaitez. La disposition que vous allez créer s’applique à la fois au mode Édition et au mode Débogage.
 
 5. Lorsque vous avez besoin de vos dispositions en mode de débogage et en mode d’édition, choisissez **fenêtre**  >  **enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».
 
@@ -196,7 +198,7 @@ Si vous utilisez une configuration à plusieurs écrans au bureau et un ordinate
 
 #### <a name="manage-and-roam-your-layouts"></a>Gérer vos dispositions et les rendre itinérantes
 
-Vous pouvez supprimer, renommer ou réorganiser votre disposition personnalisée en choisissant **fenêtre**  >  **gérer les dispositions**de fenêtres. Si vous déplacez une disposition, la combinaison de touches est automatiquement ajustée afin de refléter la nouvelle position dans la liste. Les liaisons ne peuvent pas être modifiées par ailleurs, de sorte que vous pouvez stocker un maximum de 10 dispositions à la fois.
+Vous pouvez supprimer, renommer ou réorganiser votre disposition personnalisée en choisissant **fenêtre**  >  **gérer les dispositions** de fenêtres. Si vous déplacez une disposition, la combinaison de touches est automatiquement ajustée afin de refléter la nouvelle position dans la liste. Les liaisons ne peuvent pas être modifiées par ailleurs, de sorte que vous pouvez stocker un maximum de 10 dispositions à la fois.
 
 ![Gérer les dispositions de fenêtres](../ide/media/managewindowlayouts.png)
 

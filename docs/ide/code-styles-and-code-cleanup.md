@@ -1,5 +1,7 @@
 ---
 title: Options de style de code et de nettoyage du code
+description: Découvrez comment configurer Visual Studio pour appliquer des préférences de style de code à l’aide des commandes de nettoyage du code (Visual Studio 2019) et de mise en forme de document (Visual Studio 2017).
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658384"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006677"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -58,7 +60,7 @@ Les options définies dans cette fenêtre sont applicables à votre compte de pe
 
 ### <a name="preference-and-severity"></a>Préférence et gravité
 
-Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. L’ampoule **actions rapides** , l’ampoule ![ d’erreur d’ampoule ou l’icône du tournevis Tournevis ](media/light-bulb-dropdown.png) ![ ](media/error-bulb.png) ![ ](media/screwdriver.png) apparaît lorsqu’un style non préféré est utilisé, et vous pouvez choisir une option dans la liste **actions rapides** pour réécrire automatiquement le code dans le style par défaut.
+Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. L’icône de l’ampoule **actions rapides** , de l' :::image type="icon" source="media/light-bulb-dropdown.png"::: ampoule d’erreur :::image type="icon" source="media/error-bulb.png"::: ou :::image type="icon" source="media/screwdriver.png"::: du tournevis apparaît lorsqu’un style non préféré est utilisé, et vous pouvez choisir une option dans la liste **actions rapides** pour réécrire automatiquement le code dans le style par défaut.
 
 ::: moniker range=">=vs-2019"
 

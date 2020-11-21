@@ -1,5 +1,7 @@
 ---
 title: Encodages et caractères de saut de ligne
+description: Découvrez les caractères que Visual Studio interprète comme des sauts de ligne et comment les caractères d’encodage et de saut de ligne d’origine sont conservés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045597"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006638"
 ---
 # <a name="encodings-and-line-endings"></a>Encodages et fins de ligne
 
@@ -49,14 +51,14 @@ Vous pouvez **utiliser la**  >  boîte de dialogue **options d’enregistrement 
 ![Options d'enregistrement avancées (boîte de dialogue)](media/line_endings.png)
 
 > [!NOTE]
-> Si vous ne voyez pas la commande **Options d’enregistrement avancées** dans le menu **Fichier** , vous pouvez l’ajouter. 
-> 1. Choisissez **Outils** , **personnaliser** , 
-> 1. Choisissez l’onglet **commandes** , sélectionnez la case d’option **barre de menus** et dans la liste déroulante correspondante, choisissez **fichier** . Choisissez le bouton **Ajouter une commande** . 
-> 1. Dans la boîte de dialogue **Ajouter une commande** , sous **Catégories** , choisissez **Fichier** et, dans la liste **Commandes** , choisissez **Options d’enregistrement avancées** . Cliquez sur le bouton **OK** .
-> 1. Utilisez les boutons **monter** et **descendre** pour déplacer la commande vers n’importe quel emplacement dans le menu. Choisissez **Fermer** pour fermer la boîte de dialogue **Personnaliser** . 
+> Si vous ne voyez pas la commande **Options d’enregistrement avancées** dans le menu **Fichier**, vous pouvez l’ajouter. 
+> 1. Choisissez **Outils**, **personnaliser**, 
+> 1. Choisissez l’onglet **commandes** , sélectionnez la case d’option **barre de menus** et dans la liste déroulante correspondante, choisissez **fichier**. Choisissez le bouton **Ajouter une commande** . 
+> 1. Dans la boîte de dialogue **Ajouter une commande**, sous **Catégories**, choisissez **Fichier** et, dans la liste **Commandes**, choisissez **Options d’enregistrement avancées**. Cliquez sur le bouton **OK** .
+> 1. Utilisez les boutons **monter** et **descendre** pour déplacer la commande vers n’importe quel emplacement dans le menu. Choisissez **Fermer** pour fermer la boîte de dialogue **Personnaliser**. 
 > Pour plus d’informations, consultez [Personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Vous pouvez également accéder à la boîte de dialogue **options d’enregistrement avancées** en choisissant **fichier**  >  **Enregistrer \<file\> sous** . Dans la boîte de dialogue **enregistrer le fichier sous** , choisissez le triangle déroulant en regard du bouton **Enregistrer** , puis choisissez **enregistrer avec encodage** .
+> Vous pouvez également accéder à la boîte de dialogue **options d’enregistrement avancées** en choisissant **fichier**  >  **Enregistrer \<file\> sous**. Dans la boîte de dialogue **enregistrer le fichier sous** , choisissez le triangle déroulant en regard du bouton **Enregistrer** , puis choisissez **enregistrer avec encodage**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,7 @@
 ---
 title: Rechercher et remplacer du texte, et sélection avec signes insertion multiples
+description: Découvrez la fonctionnalité Rechercher et remplacer et comment l’utiliser pour rechercher et remplacer des instances d’un modèle.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.openlocfilehash: 475f0249bd6af8176fba3ecc79ad758cc6ceceb7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334192"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006586"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 

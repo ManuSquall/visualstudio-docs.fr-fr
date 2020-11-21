@@ -1,5 +1,7 @@
 ---
 title: Zone Rechercher/Commande
+description: En savoir plus sur la zone Rechercher/commande et sur la façon dont vous pouvez l’utiliser pour rechercher du texte et exécuter des commandes Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 341362fe74d4d8a6edbf10afec1a0d49998e857d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591526"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006599"
 ---
 # <a name="findcommand-box"></a>zone Rechercher/Commande
 
@@ -34,7 +36,7 @@ Par défaut, lorsque vous spécifiez du texte dans la zone **Rechercher/commande
 
 ## <a name="entering-commands"></a>Entrée de commandes
 
-Si vous voulez utiliser la zone **Rechercher/Commande** pour envoyer un alias ou une commande [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unique au lieu de rechercher du texte, faites précéder la commande du signe « supérieur à » (**>**). Par exemple :
+Si vous voulez utiliser la zone **Rechercher/Commande** pour envoyer un alias ou une commande [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unique au lieu de rechercher du texte, faites précéder la commande du signe « supérieur à » (**>**). Exemple :
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +46,7 @@ Vous avez également la possibilité d’utiliser la fenêtre **Commande** pour 
 
 ## <a name="escape-characters"></a>Caractères d'échappement
 
-Un **^** caractère d’insertion () dans une commande signifie que le caractère qui le suit immédiatement est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets (**"**), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
+Un **^** caractère d’insertion () dans une commande signifie que le caractère qui le suit immédiatement est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets (**"**), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Exemple :
 
 ```
 >Edit.Find ^^t /regex

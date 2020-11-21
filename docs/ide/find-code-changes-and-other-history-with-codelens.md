@@ -1,5 +1,7 @@
 ---
 title: Rechercher les modifications de code et d'autres historiques avec CodeLens
+description: Découvrez CodeLens et comment l’utiliser pour explorer l’historique de votre code sans avoir à sortir de l’éditeur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928500"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006703"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -128,7 +130,7 @@ Vous pouvez également voir qui a modifié votre code au fil du temps. Cette fon
 
 Votre équipe peut avoir plusieurs branches, par exemple une branche principale et une branche de développement enfant, pour réduire le risque d’endommager le code stable.
 
-![CodeLens : Trouver quand une branche a été créée dans votre code](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens : Rechercher les modifications dans votre branche actuelle](../ide/media/codelensfirstbranchconceptual.png)
 
 Vous pouvez savoir combien de personnes ont modifié votre code et combien de modifications ont été apportées dans la branche principale en appuyant sur **ALT** + **6**:
 
@@ -136,7 +138,7 @@ Vous pouvez savoir combien de personnes ont modifié votre code et combien de mo
 
 ### <a name="find-when-your-code-was-branched"></a>Savoir quand une branche a été créée dans votre code
 
-Pour trouver quand une branche a été créée dans votre code, accédez à votre code dans la branche enfant. Ensuite, sélectionnez l’indicateur **Modifications** ou appuyez sur**Alt**+**6** :
+Pour trouver quand une branche a été créée dans votre code, accédez à votre code dans la branche enfant. Ensuite, sélectionnez l’indicateur **Modifications** ou appuyez sur **Alt**+**6** :
 
 ![CodeLens : Trouver quand une branche a été créée dans votre code](../ide/media/codelens-first-branch.png)
 
@@ -156,7 +158,7 @@ Vous pouvez examiner cette modification sans quitter votre branche active (« Ma
 
 Vous pouvez voir quand les modifications ont été fusionnées, ce qui vous permet de déterminer quelles modifications sont incluses dans votre branche :
 
-![CodeLens - Modifications fusionnées entre les branches](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens-Rechercher le moment où les modifications ont été fusionnées](../ide/media/codelensbranchmergedconceptual.png)
 
 Par exemple, votre code dans la branche Main contient maintenant la résolution de bogue de la branche « Dev » :
 
@@ -164,7 +166,7 @@ Par exemple, votre code dans la branche Main contient maintenant la résolution 
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>Comparer une modification entrante à votre version locale
 
-Comparez une modification entrante à votre version locale en appuyant sur **MAJ** + **F10**ou en double-cliquant sur l’ensemble de modifications.
+Comparez une modification entrante à votre version locale en appuyant sur **MAJ** + **F10** ou en double-cliquant sur l’ensemble de modifications.
 
 ![CodeLens : Comparer la modification entrante et la modification locale](../ide/media/codelens-branch-incoming-change-menu.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Développer du code sans projets ni solutions
+description: Découvrez comment développer du code directement dans Visual Studio sans avoir besoin de projets ou de solutions.
+ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769661"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006001"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
@@ -28,7 +30,7 @@ Une fois que vous avez ouvert vos fichiers de code dans Visual Studio, l’**Exp
 
 Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 
-- Dans la barre de menus de Visual Studio, choisissez **fichier**  >  **ouvrir**  >  le**dossier**, puis accédez à l’emplacement du code.
+- Dans la barre de menus de Visual Studio, choisissez **fichier**  >  **ouvrir**  >  le **dossier**, puis accédez à l’emplacement du code.
 
 - Dans le menu contextuel (clic droit) d’un dossier contenant le code, choisissez la commande **Ouvrir dans Visual Studio**.
 
@@ -36,7 +38,7 @@ Vous pouvez ouvrir du code dans Visual Studio de différentes façons :
 - Choisissez le lien **Ouvrir le dossier** dans la **Page de démarrage** de Visual Studio.
 
     > [!IMPORTANT]
-    > Tout le code ne peut pas être ouvert à l’aide du lien **ouvrir le dossier** à partir de la **page de démarrage**de Visual Studio. Par exemple, si votre fichier de code a été enregistré dans le cadre d’une solution &mdash; en d’autres termes, dans un fichier. sln, &mdash; vous devez utiliser l’une des autres options répertoriées ici pour ouvrir votre code.
+    > Tout le code ne peut pas être ouvert à l’aide du lien **ouvrir le dossier** à partir de la **page de démarrage** de Visual Studio. Par exemple, si votre fichier de code a été enregistré dans le cadre d’une solution &mdash; en d’autres termes, dans un fichier. sln, &mdash; vous devez utiliser l’une des autres options répertoriées ici pour ouvrir votre code.
 
 ::: moniker-end
 

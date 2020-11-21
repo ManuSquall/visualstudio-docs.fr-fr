@@ -1,5 +1,7 @@
 ---
 title: Créer des solutions et des projets
+description: Découvrez la différence entre les solutions et les projets et comment les utiliser dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770537"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006443"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 

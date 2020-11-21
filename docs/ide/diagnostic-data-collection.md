@@ -1,5 +1,7 @@
 ---
 title: Données de diagnostic et journaux générés par le système
+description: Découvrez les journaux générés par le système de Visual Studio, les types de données collectés et la façon dont ils sont utilisés pour résoudre les problèmes et améliorer la qualité du produit.
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387250"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005923"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Journaux générés par le système et collectés par Visual Studio
 
@@ -24,7 +26,7 @@ Visual Studio collecte les journaux générés par le système pour les pannes, 
 
 - En ce qui concerne l’utilisation élevée de l’UC et l’absence de réactivité, les rapports des appels de procédure relatifs aux threads Visual Studio appropriés sont collectés.
 
-- Dans les cas où les traces de pile de certains threads ne sont pas suffisantes pour déterminer la cause racine du problème, par exemple, des pannes, une absence de réponse ou une utilisation élevée de la mémoire, nous collectons une *image*mémoire. L’image mémoire représente l’état du processus au moment où l’erreur s’est produite.
+- Dans les cas où les traces de pile de certains threads ne sont pas suffisantes pour déterminer la cause racine du problème, par exemple, des pannes, une absence de réponse ou une utilisation élevée de la mémoire, nous collectons une *image* mémoire. L’image mémoire représente l’état du processus au moment où l’erreur s’est produite.
 
 - Pour les conditions d’erreurs inattendues, par exemple, une exception durant une tentative d’écriture dans un fichier sur le disque, nous collectons des informations sur l’exception. Les informations incluent le nom de l’exception, le rapport des appels de procédure du thread où l’exception s’est produite, le message associé à l’exception et d’autres informations spécifiques à l’exception.
 

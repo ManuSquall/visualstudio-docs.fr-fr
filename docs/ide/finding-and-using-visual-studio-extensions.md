@@ -1,5 +1,7 @@
 ---
 title: Rechercher et installer des extensions
+description: Découvrez les extensions dans Visual Studio et comment les gérer pour disposer des contrôles, des exemples, des modèles, des outils et des autres composants dont vous avez besoin.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2019
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594407"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006534"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gérer les extensions pour Visual Studio
 
@@ -89,7 +91,7 @@ Si vous essayez d'installer une extension qui a des dépendances, le programme d
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installer sans utiliser la boîte de dialogue Gérer les extensions
 
-Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Extensions**de  >  **gestion** des extensions ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *. vsix* en double-cliquant sur le fichier ou en sélectionnant le fichier et en appuyant sur **entrée**. Après cela, suivez les instructions. Lorsque l’extension est installée, utilisez la boîte de dialogue **Gérer les extensions** pour l’activer, la désactiver ou la désinstaller.
+Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Extensions** de  >  **gestion** des extensions ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *. vsix* en double-cliquant sur le fichier ou en sélectionnant le fichier et en appuyant sur **entrée**. Après cela, suivez les instructions. Lorsque l’extension est installée, utilisez la boîte de dialogue **Gérer les extensions** pour l’activer, la désactiver ou la désinstaller.
 
 > [!NOTE]
 > - Visual Studio Marketplace contient des extensions VSIX et MSI. La boîte de dialogue gérer les extensions ne peut pas activer ou désactiver les extensions MSI.
@@ -106,7 +108,7 @@ Si vous souhaitez cesser d'utiliser une extension, vous pouvez la désactiver ou
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensions par utilisateur et d’administration
 
-La plupart des extensions sont par utilisateur et sont installées dans le dossier *%LocalAppData%\Microsoft\VisualStudio \\<Visual Studio version \> \Extensions \\ * . Certaines extensions sont des extensions administratives et sont installées dans le dossier * \<Visual Studio installation folder> \Common7\IDE\Extensions \\ * .
+La plupart des extensions sont par utilisateur et sont installées dans le dossier *%LocalAppData%\Microsoft\VisualStudio \\<Visual Studio version \> \Extensions \\* . Certaines extensions sont des extensions administratives et sont installées dans le dossier *\<Visual Studio installation folder> \Common7\IDE\Extensions \\* .
 
 Pour protéger votre système contre les extensions pouvant contenir des erreurs ou du code malveillant, vous pouvez limiter le chargement des extensions par utilisateur aux cas où Visual Studio est exécuté avec des autorisations d'utilisateur normales. Cela signifie que les extensions par utilisateur sont désactivées lorsque Visual Studio est exécuté avec des autorisations élevées.
 
@@ -150,13 +152,13 @@ Lorsque ces notifications s’affichent, vous pouvez ignorer la notification ou 
 
 ::: moniker range="vs-2017"
 
-- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la **Tools**  >  boîte de dialogue**extensions et mises à jour** des outils si vous le souhaitez.
+- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la **Tools**  >  boîte de dialogue **extensions et mises à jour** des outils si vous le souhaitez.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la boîte de dialogue **Extensions**de  >  **gestion** des extensions si vous le souhaitez.
+- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la boîte de dialogue **Extensions** de  >  **gestion** des extensions si vous le souhaitez.
 
 ::: moniker-end
 

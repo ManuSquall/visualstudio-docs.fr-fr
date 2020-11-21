@@ -1,5 +1,7 @@
 ---
 title: Raccourcis clavier par défaut
+description: Découvrez les raccourcis clavier par défaut dans Visual Studio qui vous permettent d’accéder à diverses commandes et fenêtres.
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022215"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006365"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -47,7 +49,7 @@ Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez 
 - [Menus contextuels de l’affichage de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
 - [Aide](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
 - [Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
-- [Afficher](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [Visualiser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
 - [Déboguer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
 - [Test de charge](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
 - [Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
@@ -183,7 +185,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.CycleClipboardRing|**Ctrl + Maj + V**<br /><br /> or<br /><br /> **Ctrl+Maj+Insert**|
 |Edit.Delete|**Supprimer**|
 |Edit.Duplicate|**Ctrl + D**|
-|Edit.Find|**Ctrl+F**|
+|Edit.Find|**Ctrl + F**|
 |Edit.FindAllReferences|**Maj + F12**|
 |Edit.FindinFiles|**Ctrl + Maj + F**|
 |Edit.FindNext|**F3**|
@@ -216,7 +218,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.QuickFindSymbol|**Maj+Alt+F12**|
 |Edit.Redo|**CTRL + Y**<br /><br /> or<br /><br /> **Ctrl + Maj + Z**<br /><br /> or<br /><br /> **Maj+Alt+Retour arrière**|
 |Edit.RefreshRemoteReferences|**Ctrl + Maj + J**|
-|Edit.Replace|**Ctrl+H**|
+|Edit.Replace|**Ctrl + H**|
 |Edit.ReplaceinFiles|**Ctrl + Maj + H**|
 |Edit.SelectAll|**Ctrl + A**|
 |Edit.SelectNextControl|**Onglet**|
@@ -250,7 +252,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |File.Exit|**ALT + F4**|
-|File.NewFile|**Ctrl+N**|
+|File.NewFile|**Ctrl + N**|
 |File.NewProject|**Ctrl + Maj + N**|
 |File.NewWebSite|**Maj+Alt+N**|
 |File.OpenFile|**Ctrl+O** (lettre « O »)|
@@ -258,7 +260,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |File.OpenWebSite|**Maj+Alt+O** (lettre « O »)|
 |File.Print|**Ctrl+P**|
 |File.SaveAll|**Ctrl + Maj + S**|
-|File.SaveSelectedItems|**Ctrl+S**|
+|File.SaveSelectedItems|**CTRL + S**|
 |File.ViewinBrowser|**Ctrl + Maj + W**|
 
 ### <a name="help"></a><a name="bkmk_help"></a> Aide
@@ -844,12 +846,12 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | Edit.LineDown | **Flèche bas** |
 | Edit.LineDownExtend | **Maj + Flèche bas** |
 | Edit.LineDownExtendColumn | **Maj+Alt+Bas** |
-| Edit.LineEnd | **Effet** |
+| Edit.LineEnd | **End** |
 | Edit.LineEndExtend | **Maj+Fin** |
 | Edit.LineEndExtendColumn | **Maj + Alt + fin** |
 | Edit.LineOpenAbove | **Ctrl + Entrée** |
 | Edit.LineOpenBelow | **Ctrl+Shift+Enter** |
-| Edit.LineStart | **Accueil** |
+| Edit.LineStart | **Page d'accueil** |
 | Edit.LineStartExtend | **Maj+Origine** |
 | Edit.LineStartExtendColumn | **Maj + Alt + début** |
 | Edit.LineTranspose | **Maj + Alt + T** |
@@ -991,8 +993,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Image.FilledEllipseTool|**Ctrl + Maj + Alt + P**|
 |Image.FilledRectangleTool|**Ctrl + Maj + Alt + R**|
 |Image.FilledRoundedRectangleTool|**Ctrl+Maj+Alt+W**|
-|Image.FillTool|**Ctrl+F**|
-|Image.FlipHorizontal|**Ctrl+H**|
+|Image.FillTool|**Ctrl + F**|
+|Image.FlipHorizontal|**Ctrl + H**|
 |Image.FlipVertical|**Maj+Alt+H**|
 |Image.LargerBrush|**Ctrl + =**|
 |Image.LineTool|**Ctrl + L**|
@@ -1054,9 +1056,9 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.CharLeftExtend|**Maj + Flèche gauche**|
 |Edit.CharRight|**Flèche droite**|
 |Edit.CharRightExtend|**Maj + Flèche droite**|
-|Edit.DocumentEnd|**Effet**|
+|Edit.DocumentEnd|**End**|
 |Edit.DocumentEndExtend|**Maj+Fin**|
-|Edit.DocumentStart|**Accueil**|
+|Edit.DocumentStart|**Page d'accueil**|
 |Edit.DocumentStartExtend|**Maj+Origine**|
 |Edit.InsertTab|**Onglet**|
 |Edit.LineDown|**Flèche bas**|
@@ -1146,7 +1148,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Format.EditText|**F2**|
 |Format.ResetLayout.All|**Ctrl + Maj + R**|
 |Exécuter le code de projet|**Ctrl + F9**|
-|Timeline.Hide (Blend uniquement)|**Ctrl+H**|
+|Timeline.Hide (Blend uniquement)|**Ctrl + H**|
 |Timeline.Lock (Blend uniquement)|**Ctrl + L**|
 |Timeline.Show (Blend uniquement)|**Ctrl + Maj + H**|
 |Timeline.Unlock (Blend uniquement)|**Ctrl + Maj + L**|

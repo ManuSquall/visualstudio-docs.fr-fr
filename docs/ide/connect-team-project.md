@@ -1,17 +1,18 @@
 ---
 title: Se connecter aux projets dans Team Explorer
 description: Découvrez comment utiliser Team Explorer dans Visual Studio pour travailler avec les membres de l’équipe pour développer et gérer des projets.
+ms.custom: SEO-VS-2020
 ms.date: 11/17/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 7d920370013b2d624430acbdbe8e38dcc9aab03d
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: fd482bd2225025b5cd8a14f0387e938626fad6d5
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878255"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006313"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Se connecter aux projets dans Team Explorer
 

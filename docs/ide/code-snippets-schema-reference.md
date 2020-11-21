@@ -1,5 +1,7 @@
 ---
 title: Référence de schéma des extraits de code
+description: Découvrez le schéma XML des extraits de code IntelliSense et comment vous pouvez les utiliser pour augmenter votre productivité.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183676"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006469"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -412,7 +414,7 @@ Les littéraux et les objets ne peuvent pas contenir d’élément **ID** avec l
 |[Élément par défaut](../ide/code-snippets-schema-reference.md#default-element)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|
 |[Function, élément](../ide/code-snippets-schema-reference.md#function-element)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|
 |[ID, élément](../ide/code-snippets-schema-reference.md#id-element)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip-element)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément ** peut contenir zéro ou un élément **Tooltip`Literal`.|
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip-element)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément** Tooltip`Literal`.|
 
 |Élément parent|Description|
 | - |-----------------|
@@ -457,7 +459,7 @@ Définit les objets de l'extrait de code que vous pouvez modifier. L'élément `
 |[Élément par défaut](../ide/code-snippets-schema-reference.md#default-element)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|
 |[Function, élément](../ide/code-snippets-schema-reference.md#function-element)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|
 |[ID, élément](../ide/code-snippets-schema-reference.md#id-element)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip-element)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément ** peut contenir zéro ou un élément **Tooltip`Literal`.|
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip-element)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément** Tooltip`Literal`.|
 |[élément Type](../ide/code-snippets-schema-reference.md#type-element)|Élément requis. Spécifie le type de l'objet. Un élément `Type` doit contenir exactement un élément `Object`.|
 
 |Élément parent|Description|
@@ -633,7 +635,7 @@ Spécifie le type de l'objet. L'élément `Object` est utilisé pour identifier 
 | - |-----------------|
 |[Élément Object](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
-Une valeur texte est requise. Ce texte spécifie le type de l'objet. Par exemple :
+Une valeur texte est requise. Ce texte spécifie le type de l'objet. Exemple :
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>

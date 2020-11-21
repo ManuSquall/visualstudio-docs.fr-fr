@@ -1,5 +1,7 @@
 ---
 title: Recherche de références dans votre code
+description: En savoir plus sur la commande Rechercher toutes les références pour trouver des références à des éléments de code particuliers dans votre code.
+ms.custom: SEO-VS-2020
 ms.date: 09/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5ee6a0792c5dbfa1661018e75806499d1aa1028
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592033"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006547"
 ---
 # <a name="find-references-in-your-code"></a>Rechercher des références dans votre code
 
 Vous pouvez utiliser la commande **Rechercher toutes les références** pour savoir où des éléments de code particuliers sont référencés dans tout votre code base. La commande **Rechercher toutes les références** est disponible dans le menu contextuel (clic droit) de l’élément dont vous souhaitez trouver les références. Si vous préférez utiliser le clavier, appuyez sur **Maj+F12**.
 
-Les résultats s’affichent dans une fenêtre outil nommée ** \<element> références**, où *élément* est le nom de l’élément que vous recherchez. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :
+Les résultats s’affichent dans une fenêtre outil nommée **\<element> références**, où *élément* est le nom de l’élément que vous recherchez. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :
 - Changer l’étendue de recherche dans une zone de liste déroulante. Vous pouvez choisir d’effectuer la recherche uniquement dans les documents modifiés dans l’ensemble de la solution.
 - Copier l’élément référencé sélectionné en choisissant le bouton **Copier**.
 - Pour accéder à l’emplacement suivant ou précédent dans la liste, choisissez les boutons appropriés appuyez sur les touches **F8** et **Maj+F8**.
@@ -40,7 +42,7 @@ Vous pouvez utiliser les méthodes suivantes pour accéder à des références d
 - Appuyez sur **F8** pour accéder à la référence suivante, ou sur **Maj+F8** pour accéder à la référence précédente.
 - Appuyez sur la touche **Entrée** sur une référence ou double-cliquez sur la référence pour y accéder dans le code.
 - Dans le menu contextuel (clic droit) d’une référence, choisissez les commandes **Accéder à l’emplacement précédent** ou **Accéder à l’emplacement suivant**.
-- Choisissez les flèches **haut** et **bas** (si elles sont activées dans la boîte de dialogue **options** ). Pour activer cette fonctionnalité, dans la barre de menus, choisissez **Outils**  >  **options**  >  **d’environnement**  >  **et**  >  **onglet Aperçu**Windows, puis sélectionnez l’option **autoriser l’ouverture des nouveaux fichiers dans l’onglet Aperçu** et afficher les **fichiers sélectionnés dans les résultats de la recherche** .
+- Choisissez les flèches **haut** et **bas** (si elles sont activées dans la boîte de dialogue **options** ). Pour activer cette fonctionnalité, dans la barre de menus, choisissez **Outils**  >  **options**  >  **d’environnement**  >  **et**  >  **onglet Aperçu** Windows, puis sélectionnez l’option **autoriser l’ouverture des nouveaux fichiers dans l’onglet Aperçu** et afficher les **fichiers sélectionnés dans les résultats de la recherche** .
 
 ## <a name="change-reference-groupings"></a>Changer les regroupements de références
 Par défaut, les références sont regroupées par projet, puis par définition. Toutefois, vous pouvez changer cet ordre de regroupement en changeant le paramètre défini dans la zone de liste déroulante **Grouper par :** de la barre d’outils. Par exemple, vous pouvez changer l’ordre du paramètre par défaut **Projet, puis définition** en **Définition, puis projet**, ainsi que par d’autres paramètres.

@@ -1,5 +1,7 @@
 ---
 title: Fonctions des extraits de code
+description: Découvrez les fonctions GenerateSwitchCases (EnumerationLiteral), ClassName () et SimpleTypeName (TypeName) qui peuvent être utilisées avec les extraits de code C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594238"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006508"
 ---
 # <a name="code-snippet-functions"></a>Fonctions des extraits de code
 
@@ -27,7 +29,7 @@ Trois fonctions peuvent être utilisées avec les extraits de code C#. Les fonc
 
 Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’élément `Function` dans les extraits de code.
 
-|Fonction|Description|Langage|
+|Fonction|Description|Language|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|C#|
 |`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|C#|

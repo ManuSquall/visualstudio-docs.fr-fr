@@ -1,5 +1,7 @@
 ---
 title: Changer l’expérience de démarrage
+description: Découvrez comment personnaliser votre expérience de démarrage afin que Visual Studio s’ouvre avec les outils les plus utiles pour vous.
+ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 827ac67840f272e17cec6a7882a02b58dddbf925
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567214"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006261"
 ---
 # <a name="customize-startup"></a>Personnaliser le démarrage
 

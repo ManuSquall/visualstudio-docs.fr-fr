@@ -1,5 +1,7 @@
 ---
 title: Charge un sous-ensemble de projets
+description: En savoir plus sur le filtrage de solution et sur la façon dont il vous permet de charger rapidement un sous-ensemble de projets dans une solution.
+ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -10,12 +12,12 @@ author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cb7afe913f7656ac6124d1f54fbc1cb7b611cb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650837"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006612"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Solutions filtrées dans Visual Studio
 
@@ -37,7 +39,7 @@ Vous pouvez ouvrir une solution sans charger ses projets directement à partir d
 
 Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de dialogue **Ouvrir un projet** :
 
-1. **File**  >  **Open**  >  Dans la barre de menus, choisissez Fichier Ouvrir le**projet/la solution** .
+1. **File**  >  **Open**  >  Dans la barre de menus, choisissez Fichier Ouvrir le **projet/la solution** .
 
 2. Dans la boîte de dialogue **Ouvrir un projet**, sélectionnez la solution, puis **Ne pas charger les projets**.
 
@@ -47,7 +49,7 @@ Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de di
 
    La solution s’ouvre avec tous ses projets déchargés.
 
-4. Dans l’**Explorateur de solutions**, sélectionnez les projets à charger (appuyez sur **Ctrl** tout en cliquant sur les projets pour en sélectionner plusieurs), puis cliquez avec le bouton droit et choisissez **Recharger le projet **.
+4. Dans l’**Explorateur de solutions**, sélectionnez les projets à charger (appuyez sur **Ctrl** tout en cliquant sur les projets pour en sélectionner plusieurs), puis cliquez avec le bouton droit et choisissez **Recharger le projet**.
 
    ![Recharger plusieurs projets dans l’Explorateur de solutions Visual Studio](media/filtered-solutions/reload-project.png)
 
