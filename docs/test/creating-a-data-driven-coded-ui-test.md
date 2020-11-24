@@ -1,5 +1,7 @@
 ---
 title: Tutoriel de test codé de l’interface utilisateur piloté par les données
+description: Découvrez comment utiliser des tests codés de l’interface utilisateur pilotés par les données pour tester différentes conditions en exécutant plusieurs fois vos tests avec des valeurs de paramètre différentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595356"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442675"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Créer un test codé de l'interface utilisateur piloté par les données
 
@@ -104,7 +106,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
 
 2. Renseignez le fichier .*csv* avec les données suivantes :
 
-    |Num1|Num2|SUM|
+    |Num1|Num2|Somme|
     |-|-|-|
     |3|4|7|
     |5|6|11|

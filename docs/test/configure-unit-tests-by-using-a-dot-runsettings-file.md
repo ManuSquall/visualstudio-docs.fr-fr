@@ -1,5 +1,7 @@
 ---
 title: Configurer des tests unitaires avec un fichier .runsettings
+description: Découvrez comment utiliser le fichier. RunSettings dans Visual Studio pour configurer des tests unitaires qui sont exécutés à partir de la ligne de commande, de l’IDE ou d’un flux de travail de génération.
+ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518763"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442688"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*
 
@@ -24,7 +26,7 @@ Les fichiers de paramètres d’exécution sont facultatifs. Si vous n’avez pa
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>Créer un fichier de paramètres d’exécution et le personnaliser
 
-1. Ajoutez un fichier de paramètres d’exécution à votre solution. Dans **Explorateur de solutions** , dans le menu contextuel de votre solution, choisissez **Ajouter**  >  **un nouvel élément** , puis sélectionnez **fichier XML**. Enregistrez le fichier sous un nom tel que *test. RunSettings*.
+1. Ajoutez un fichier de paramètres d’exécution à votre solution. Dans **Explorateur de solutions**, dans le menu contextuel de votre solution, choisissez **Ajouter**  >  **un nouvel élément**, puis sélectionnez **fichier XML**. Enregistrez le fichier sous un nom tel que *test. RunSettings*.
 
    > [!TIP]
    > Le nom du fichier n’a pas d’importance, à condition d’utiliser l’extension *.runsettings*.
@@ -61,7 +63,7 @@ Si vous souhaitez désactiver et activer les paramètres personnalisés dans l�
 Les méthodes disponibles dépendent de votre version de Visual Studio.
 
 ::: moniker range="vs-2017"
-Pour spécifier un fichier de paramètres d'exécution dans l’IDE, sélectionnez **Test** > **Paramètres de test** > **Sélectionner le fichier de paramètres des tests** , puis sélectionnez le fichier *.runsettings*.
+Pour spécifier un fichier de paramètres d'exécution dans l’IDE, sélectionnez **Test** > **Paramètres de test** > **Sélectionner le fichier de paramètres des tests**, puis sélectionnez le fichier *.runsettings*.
 
 ![Option de menu Sélectionner le fichier de paramètres des tests dans Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -94,7 +96,7 @@ Si la détection automatique des fichiers de paramètres d’exécution est acti
 
 #### <a name="manually-select-the-run-settings-file"></a>Sélectionner manuellement le fichier de paramètres d’exécution
 
-Dans l’IDE, sélectionnez **tester** > **configurer les paramètres d’exécution** > **Sélectionner la solution RunSettings fichier** , puis sélectionnez le fichier *. RunSettings* .
+Dans l’IDE, sélectionnez **tester** > **configurer les paramètres d’exécution** > **Sélectionner la solution RunSettings fichier**, puis sélectionnez le fichier *. RunSettings* .
 
    - Ce fichier remplace le fichier *. RunSettings* à la racine de la solution, le cas échéant, et s’applique à tous les tests exécutés.
    - Cette sélection de fichier est conservée uniquement localement.
@@ -141,7 +143,7 @@ Pour exécuter des tests depuis la ligne de commande, utilisez *vstest.console.e
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-   ou
+   or
 
    ```cmd
    vstest.console.exe --settings:test.runsettings test.dll
@@ -182,7 +184,7 @@ L’élément **RunConfiguration** peut inclure les éléments suivants :
 |-|-|-|
 |**MaxCpuCount**|1|Ce paramètre permet de contrôler le degré d’exécution des tests parallèles lors des tests unitaires, en utilisant les cœurs disponibles sur la machine. Le moteur d’exécution des tests démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter. Un conteneur peut être un assembly, une DLL ou un artefact approprié. Le conteneur de test est l’unité de planification. Dans chaque conteneur, les tests sont exécutés en fonction du framework de test configuré. S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br />Valeur possible pour MaxCpuCount :<br /><br />n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br />n, où n = toute autre valeur : le nombre de processus lancés peut atteindre le nombre de cœurs disponibles. Par exemple, définissez n = 0 pour permettre à la plateforme de déterminer automatiquement le nombre optimal de processus à lancer en fonction de l’environnement.|
 |**ResultsDirectory**||Répertoire où les résultats des tests sont placés. Le chemin d’accès est relatif au répertoire qui contient le fichier. RunSettings.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` pour les sources .NET Core, `FrameworkUap10` pour les sources UWP, `Framework45` pour .NET Framework 4.5 et versions ultérieures, `Framework40` pour .NET Framework 4.0 et `Framework35` pour .NET Framework 3.5.<br /><br />Ce paramètre spécifie la version du framework de tests unitaires qui est utilisée pour découvrir et exécuter les tests. Elle peut être différente de la version de la plateforme .NET. que vous spécifiez dans les propriétés de génération du projet de test unitaire.<br /><br />Si vous omettez l’élément `TargetFrameworkVersion` dans le fichier *.runsettings* , la plateforme détermine automatiquement la version du framework sur la base des fichiers binaires générés.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` pour les sources .NET Core, `FrameworkUap10` pour les sources UWP, `Framework45` pour .NET Framework 4.5 et versions ultérieures, `Framework40` pour .NET Framework 4.0 et `Framework35` pour .NET Framework 3.5.<br /><br />Ce paramètre spécifie la version du framework de tests unitaires qui est utilisée pour découvrir et exécuter les tests. Elle peut être différente de la version de la plateforme .NET. que vous spécifiez dans les propriétés de génération du projet de test unitaire.<br /><br />Si vous omettez l’élément `TargetFrameworkVersion` dans le fichier *.runsettings*, la plateforme détermine automatiquement la version du framework sur la base des fichiers binaires générés.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Un ou plusieurs chemins du répertoire où se trouvent les TestAdapters|
@@ -233,7 +235,7 @@ Pour personnaliser un autre type d’adaptateur de données de diagnostic, utili
 
 ### <a name="blame-data-collector"></a>Collecteur de données de responsabilité
 
-Cette option peut vous aider à isoler un test problématique qui provoque un blocage de l’hôte de test. L’exécution du collecteur crée un fichier de sortie ( *Sequence.xml* ) dans *TestResults* , qui capture l’ordre d’exécution du test avant l’incident.
+Cette option peut vous aider à isoler un test problématique qui provoque un blocage de l’hôte de test. L’exécution du collecteur crée un fichier de sortie (*Sequence.xml*) dans *TestResults*, qui capture l’ordre d’exécution du test avant l’incident.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -312,7 +314,7 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 |**IgnoreTestImpact**|false|La fonctionnalité d’impact de test hiérarchise les tests affectés par les modifications récentes, lorsqu’elles sont exécutées dans MSTest ou à partir de Microsoft Test Manager (déconseillé dans Visual Studio 2017). Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Quels tests doivent être exécutés depuis une version antérieure ?](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||Vous pouvez spécifier un fichier de paramètres de test à utiliser avec l’adaptateur MSTest ici. Vous pouvez également spécifier un fichier de paramètres de test à partir du [menu de paramètres](#specify-a-run-settings-file-in-the-ide).<br /><br />Si vous spécifiez cette valeur, vous devez également affecter à **ForcedlegacyMode** la valeur **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Une fois qu’une série de tests est terminée, MSTest est arrêté. Tout processus qui est lancé dans le cadre du test est également terminé. Si vous souhaitez conserver l’exécuteur de test actif, définissez la valeur sur **true**. Par exemple, vous pouvez utiliser ce paramètre pour que le navigateur continue à s’exécuter entre des tests codés de l’interface utilisateur.|
-|**DeploymentEnabled**|true|Si vous définissez cette valeur sur **false** , les éléments de déploiement que vous avez spécifiés dans votre méthode de test ne sont pas copiés dans le répertoire de déploiement.|
+|**DeploymentEnabled**|true|Si vous définissez cette valeur sur **false**, les éléments de déploiement que vous avez spécifiés dans votre méthode de test ne sont pas copiés dans le répertoire de déploiement.|
 |**CaptureTraceOutput**|true|Vous pouvez écrire dans la trace du débogage à partir de votre méthode de test en utilisant <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Pour conserver le répertoire de déploiement après une série de tests, définissez cette valeur sur **false**.|
 |**MapInconclusiveToFailed**|false|Si un test se termine avec un état Non concluant, il est mappé à l’état Ignoré dans **l’Explorateur de tests**. Si vous voulez que les tests non concluants s’affichent comme ayant échoué, définissez la valeur sur **true**.|

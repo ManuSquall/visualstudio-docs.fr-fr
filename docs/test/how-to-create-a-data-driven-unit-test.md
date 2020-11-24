@@ -1,5 +1,7 @@
 ---
 title: Créer des tests unitaires pilotés par les données
+description: Découvrez comment utiliser l’infrastructure de tests unitaires Microsoft pour le code managé afin de configurer une méthode de test unitaire pour récupérer des valeurs à partir d’une source de données.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287985"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441194"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par les données
 
@@ -67,7 +69,7 @@ public int AddIntegers(int first, int second)
 
 Pour tester la méthode `AddIntegers`, créez une source de données qui spécifie une plage de valeurs pour les paramètres et la somme à retourner. Dans cet exemple, nous allons créer une base de données SQL Compact nommée `MathsData` et une table nommée `AddIntegersData`, qui contient les noms et valeurs de colonnes suivants
 
-|FirstNumber|SecondNumber|SUM|
+|FirstNumber|SecondNumber|Somme|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -89,7 +91,7 @@ public TestContext TestContext
 Dans votre méthode de test, vous accédez aux données via la propriété d’indexeur `DataRow` de `TestContext`.
 
 > [!NOTE]
-> .NET Core ne prend pas en charge l’attribut [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Si vous essayez d’accéder aux données de test de cette façon dans un projet de test unitaire .NET Core ou UWP, vous verrez une erreur similaire à **« 'TestContext' ne contient pas de définition pour 'DataRow' et aucune méthode d’extension accessible ’DataRow’ acceptant un premier argument de type 'TestContext' n’a été localisée (une directive using ou une référence d’assembly est-elle manquante ?) » **.
+> .NET Core ne prend pas en charge l’attribut [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Si vous essayez d’accéder aux données de test de cette façon dans un projet de test unitaire .NET Core ou UWP, vous verrez une erreur similaire à **« 'TestContext' ne contient pas de définition pour 'DataRow' et aucune méthode d’extension accessible ’DataRow’ acceptant un premier argument de type 'TestContext' n’a été localisée (une directive using ou une référence d’assembly est-elle manquante ?) »**.
 
 ## <a name="write-the-test-method"></a>Écrire la méthode de test
 

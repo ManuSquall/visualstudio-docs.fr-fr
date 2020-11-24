@@ -1,5 +1,7 @@
 ---
 title: Configuration des paramètres d'exécution des tests de charge
+description: En savoir plus sur les paramètres d’exécution, qui sont des propriétés qui influencent la manière dont un test de charge s’exécute. Les paramètres d'exécution sont classés par catégories dans la fenêtre Propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a485b3648f69276c0d1cc472dda70524a00d9c1c
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 24f267e32468958171266f0e8aaf45c69b2c373a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099412"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441618"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurer les paramètres d’exécution des tests de charge
 

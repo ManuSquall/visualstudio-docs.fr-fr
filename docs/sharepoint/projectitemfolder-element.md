@@ -1,5 +1,7 @@
 ---
 title: Élément ProjectItemFolder, | Microsoft Docs
+description: Obtenir des informations de référence sur l’élément ProjectItemFolder,, qui représente un dossier mappé dans la référence de schéma XML d’élément de projet SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539813"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440790"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder (élément)
   Représente un dossier mappé.

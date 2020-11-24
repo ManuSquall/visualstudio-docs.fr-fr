@@ -1,5 +1,7 @@
 ---
 title: Étendre des tests codés de l’interface utilisateur et des enregistrements des actions
+description: Découvrez comment créer une extension de l’infrastructure de test codé de l’interface utilisateur pour votre interface utilisateur spécifique en tirant parti de l’extensibilité de l’infrastructure de test codé de l’interface utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c8efead1712ace2f533cb9075ea7a4c5305289a4
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a2996da30c0be8e3dc4d303d0e46e901c8b885d
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036078"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442623"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Étendre des tests codés de l’interface utilisateur et des enregistrements des actions
 

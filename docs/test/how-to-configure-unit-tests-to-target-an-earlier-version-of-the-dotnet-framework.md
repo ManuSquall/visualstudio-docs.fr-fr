@@ -1,5 +1,7 @@
 ---
 title: Les tests unitaires ciblent une version antérieure du .NET Framework
+description: Apprenez à créer des projets de test unitaire pour cibler des versions spécifiques du .NET Framework. La version ciblée doit correspondre à la version 3.5 (ou une version ultérieure) et ne peut pas être une version client.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288167"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441246"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 

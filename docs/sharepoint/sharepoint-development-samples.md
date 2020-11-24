@@ -1,5 +1,7 @@
 ---
 title: Exemples de développement SharePoint | Microsoft Docs
+description: Obtenir des informations sur la façon de télécharger et d’installer des exemples individuels ou des collections d’exemples d’applications SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a52dbb77145d1389995813d89384966fea35cec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb4a374194c2d8ea94d24923675ec3f5b3d2601
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984155"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440660"
 ---
 # <a name="sharepoint-development-samples"></a>Exemples de développement SharePoint
   Vous pouvez utiliser Visual Studio pour télécharger et installer des exemples d’applications SharePoint à partir de la [Galerie de code MSDN](https://code.msdn.microsoft.com/).

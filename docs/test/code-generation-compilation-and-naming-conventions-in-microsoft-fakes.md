@@ -1,5 +1,7 @@
 ---
 title: 'Substituts Microsoft : générer & code de compilation ; conventions d’affectation des noms'
+description: Découvrez les options et les problèmes de simulation de la génération et de la compilation de code, notamment les conventions d’affectation de noms pour les types, les membres et les paramètres générés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325941"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441631"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
@@ -231,20 +233,20 @@ attribute of the Assembly element in the .fakes:
 
 - Si la méthode est générique, `Of`*n* est ajouté, où *n* est le nombre d’arguments de méthode générique.
 
-  Les **noms des méthodes spéciales** , comme les méthodes getter et setter de propriétés, sont traitées comme décrit dans le tableau suivant :
+  Les **noms des méthodes spéciales**, comme les méthodes getter et setter de propriétés, sont traitées comme décrit dans le tableau suivant :
 
 |Si la méthode est...|Exemple|Nom de la méthode ajoutée|
 |-|-|-|
 |Un **constructeur**|`.ctor`|`Constructor`|
 |Un **constructeur** statique|`.cctor`|`StaticConstructor`|
-|Un **accesseur** avec le nom de la méthode composé de deux parties séparées par « _ » (tels que les accesseurs Get de propriété)|*nom_genre* (cas général, mais non appliqué par ECMA)|*GenreNom* , où les deux parties ont été mises en majuscules et échangées|
+|Un **accesseur** avec le nom de la méthode composé de deux parties séparées par « _ » (tels que les accesseurs Get de propriété)|*nom_genre* (cas général, mais non appliqué par ECMA)|*GenreNom*, où les deux parties ont été mises en majuscules et échangées|
 ||Accesseur Get de propriété `Prop`|`PropGet`|
 ||Accesseur Set de propriété `Prop`|`PropSet`|
 ||Additionneur d'événements|`Add`|
 ||Outil de suppression d'événements|`Remove`|
 |Un **opérateur** composé de deux parties|`op_name`|`NameOp`|
 |Par exemple : opérateur + |`op_Add`|`AddOp`|
-|Pour un **opérateur de conversion** , le type de retour est ajouté.|`T op_Implicit`|`ImplicitOpT`|
+|Pour un **opérateur de conversion**, le type de retour est ajouté.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
 > - Les **accesseurs Get et Set des indexeurs** sont traités de la même façon que la propriété. Le nom par défaut pour un indexeur est `Item`.

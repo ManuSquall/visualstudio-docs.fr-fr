@@ -1,5 +1,7 @@
 ---
 title: Activer le test codé de l'interface utilisateur de vos contrôles
+description: Apprenez à implémenter la prise en charge de l’infrastructure de test codé de l’interface utilisateur pour rendre votre contrôle plus testable.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288687"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441402"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer les tests codés de l’interface utilisateur de vos contrôles
 

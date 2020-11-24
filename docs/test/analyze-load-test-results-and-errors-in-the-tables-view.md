@@ -1,5 +1,7 @@
 ---
 title: Analyse des résultats et des erreurs des tests de charge
+description: Découvrez comment afficher des volets qui vous permettent d’analyser les résultats d’une série de tests de charge, tels qu’un graphique dans le temps ou des tables détaillées.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7787b3b0afaed0bc3592b458646b97151e309905
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565173"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442506"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -147,7 +149,7 @@ La table d'erreurs contient les colonnes suivantes :
 |Colonne|Description|Visible par défaut|
 |-|-|-|
 |Type|Type de l'erreur. Par exemple, HttpError.|Oui|
-|Subtype|Sous-type de l'erreur. Par exemple, LoadTestException.|Oui|
+|Sous-type|Sous-type de l'erreur. Par exemple, LoadTestException.|Oui|
 |Count|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
 |Dernier message|Message qui décrit l'erreur. Par exemple, 404 - Non trouvé.|Oui|
 
@@ -170,7 +172,7 @@ La table **Erreurs du test de charge** contient les colonnes suivantes :
 |**Scénario**|Nom du scénario dans lequel l'erreur s'est produite.|
 |**Requête**|URL de la requête dans laquelle l'erreur s'est produite.|
 |**Type**|Type de l'erreur. Par exemple, HttpError.|
-|**Subtype**|Sous-type de l'erreur. Par exemple, LoadTestException.|
+|**Sous-type**|Sous-type de l'erreur. Par exemple, LoadTestException.|
 |**Text**|Texte du message d'erreur. Par exemple, 404 - Non trouvé.|
 |**Pile**|Les entrées de cette colonne sont vides, ou contiennent le mot **Pile** sous la forme d’un lien hypertexte. Vous pouvez cliquer sur le lien hypertexte pour afficher une trace de la pile de l'erreur.|
 |**Détails**|Les entrées de cette colonne sont vides, ou contiennent le mot **TestLog** sous la forme d’un lien hypertexte. Ce lien peut vous aider à isoler des erreurs dans le test de charge. Par exemple, si vous choisissez le lien **TestLog** dans une erreur de demande de test de performances de site Web, les résultats du test de performances de site Web s’ouvrent dans résultats des tests la visionneuse de performances de site Web et mettent en évidence l’erreur de demande.|

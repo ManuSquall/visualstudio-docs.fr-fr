@@ -1,5 +1,7 @@
 ---
 title: Tests de performances web codés
+description: Découvrez comment un test de performances de site Web peut être converti en un script basé sur du code que vous pouvez modifier et personnaliser.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c55c2a2d9b77662170cde24c2b98368240a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589576"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442636"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 

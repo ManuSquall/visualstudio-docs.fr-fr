@@ -1,6 +1,8 @@
 ---
 title: Enregistrement des données dans les extensions du système de projet SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Découvrez comment enregistrer les données de chaîne qui persistent après la fermeture d’un projet SharePoint qui contient une extension.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583864"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440647"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Enregistrer des données dans les extensions du système de projet SharePoint
   Lorsque vous étendez le système de projet SharePoint, vous pouvez enregistrer les données de chaîne qui persistent après la fermeture d’un projet SharePoint. Les données sont généralement associées à un élément de projet particulier ou au projet lui-même.

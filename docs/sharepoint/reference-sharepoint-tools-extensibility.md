@@ -1,5 +1,7 @@
 ---
 title: Référence (extensibilité des outils SharePoint) | Microsoft Docs
+description: Obtenir des liens vers la documentation de référence pour étendre les outils SharePoint dans Visual Studio, couvrant la référence de schéma d’élément de projet SharePoint et la référence d’API.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,18 +14,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ab3b60e727f7f4ce113b86fc3491bf244115551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fcc1117c88f19eaae7633698dee1698a8108fdb
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827101"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440712"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Référence (extensibilité des outils SharePoint)
 
 Cette section contient la documentation de référence pour l’extension des outils SharePoint dans Visual Studio.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 [Référence du schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 

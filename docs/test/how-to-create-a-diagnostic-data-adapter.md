@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer un adaptateur de données de diagnostic'
+description: Apprenez à créer un adaptateur de données de diagnostic en créant une bibliothèque de classes à l’aide de Visual Studio et en ajoutant des API d’adaptateur de données de diagnostic.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 730a3e2618bd5f424d21eaf3eb4ef3621ec1838e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928617"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439847"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Guide pratique pour créer un adaptateur de données de diagnostic
 
@@ -32,7 +34,7 @@ Les événements sont déclenchés lorsque vous exécutez vos tests afin que vot
 
 Voici une liste partielle des principaux événements que vous pouvez utiliser lorsque vous créez votre adaptateur de données de diagnostic. Pour obtenir une liste complète des événements d'adaptateur de données de diagnostic, consultez la classe <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> abstraite.
 
-|Événement|Description|
+|événement|Description|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Début de votre série de tests|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Fin de votre série de tests|

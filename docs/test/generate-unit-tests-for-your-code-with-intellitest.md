@@ -1,5 +1,7 @@
 ---
 title: Générer des tests unitaires pour votre code avec IntelliTest
+description: IntelliTest explore votre code .NET pour générer des données de test et une suite de tests unitaires. Découvrez comment exécuter IntelliTest pour voir les tests qui échouent et les corriger.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d503d37cfcacace8250da4d3e91221364c66b5c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589589"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442467"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Comment : générer des tests unitaires à l’aide de IntelliTest
 

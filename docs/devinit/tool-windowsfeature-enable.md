@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-enable
 description: outil devinit WindowsFeature-Enable.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,24 +11,24 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9ed1cc5379cc28c3932c96271fda27e23f4cd27c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 57c122f9ff86994d6ed262fa41834a01be5fa949
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672005"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442118"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
 L' `windowsfeature-enable` outil est utilisé pour activer les fonctionnalités Windows.
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 | Nom                                             | Type   | Obligatoire | Valeur                                                                    |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------|
-| **commentaires**                                     | string | No       | Propriété de commentaires facultative. Non utilisé.                                    |
+| **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                    |
 | [**entrée**](#input)                              | string | Oui      | Fonctionnalité Windows à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.   |
-| [**additionalOptions**](#additional-options)     | string | No       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.         |
+| [**additionalOptions**](#additional-options)     | string | Non       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.         |
 
 ### <a name="input"></a>Entrée
 
@@ -40,10 +40,10 @@ Aucun.
 
 ### <a name="default-behavior"></a>Comportement par défaut
 
-Le comportement par défaut de l' `windowsfeature-enable` outil est l’erreur, comme cela est `input` nécessaire.
+Le comportement par défaut de l' `windowsfeature-enable` outil est l’erreur telle qu’elle est `input` requise.
 
 ## <a name="example-usage"></a>Exemple d’utilisation
-Vous trouverez ci-dessous des exemples d’exécution à `windowsfeature-enable` l’aide d’un `.devinit.json` . 
+Vous trouverez ci-dessous des exemples d’exécution à `windowsfeature-enable` l’aide d’un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-iis"></a>.devinit.jssur qui installe IIS :
 ```json

@@ -1,5 +1,7 @@
 ---
 title: Ajouter des paramètres de contexte à un paramètre d’exécution de test de charge
+description: Découvrez comment créer des paramètres de contexte à utiliser dans un paramètre d’exécution de test de charge à l’aide de l’éditeur de test de charge, qui vous permet de paramétrer une chaîne.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22b3a6a1f40a317284380bf72aadec4d53b6ce13
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288414"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440185"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Guide pratique : Ajouter des paramètres de contexte à un paramètre de série de tests de charge
 

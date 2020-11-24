@@ -1,5 +1,7 @@
 ---
 title: Personnalisation de l'analyse de couverture du code
+description: Découvrez comment utiliser l’attribut ExcludeFromCodeCoverageAttribute pour exclure le code de test des résultats de couverture. Vous pouvez inclure des assemblys en dehors de votre solution.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86475989"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441826"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -118,11 +120,11 @@ Le tableau suivant montre les différentes façons dont les assemblys et les mem
 
 Les nœuds Inclure et Exclure utilisent des expressions régulières, qui ne sont pas identiques à des caractères génériques. Les correspondances ne respectent pas la casse. Quelques exemples :
 
-- **.\*** correspond à une chaîne de caractères quelconques
+- **.\** _ correspond à une chaîne de caractères quelconques
 
-- **\\.** correspond à un point « . »
+- _ *\\.* * correspond à un point « . »
 
-- ** \\ ( \\ )** correspond aux parenthèses « () »
+- **\\ ( \\ )** correspond aux parenthèses « () »
 
 - **\\\\** correspond à un délimiteur de chemin d’accès de fichier « \\ »
 

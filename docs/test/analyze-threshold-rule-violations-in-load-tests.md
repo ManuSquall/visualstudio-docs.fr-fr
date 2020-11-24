@@ -1,5 +1,7 @@
 ---
 title: Analyse des violations de règles de seuil dans les tests de charge
+description: Découvrez comment afficher les violations des règles de seuil que vous avez configurées, afin que vous puissiez analyser les violations.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591279"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442701"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge
 
@@ -36,7 +38,7 @@ Le tableau des violations de seuils affiche les 1 000 premières violations. L
 
 |Colonne|Description|Visible par défaut|
 |-|-|-|
-|Temps|Heure à laquelle la violation s'est produite lors du test de charge.|Oui|
+|Heure|Heure à laquelle la violation s'est produite lors du test de charge.|Oui|
 |Computer|Nom de l'ordinateur testé sur lequel la violation s'est produite. **Remarque :** Ceci est important quand vous exécutez des tests de charge sur des plateformes de test.|Oui|
 |Category|Catégorie du compteur de performance sur lequel la violation s'est produite.|Oui|
 |Compteur|Nom du compteur de performance sur lequel la violation s'est produite.|Oui|

@@ -1,7 +1,7 @@
 ---
 title: require-psmodule
 description: l’outil devinit requiert-PSModule.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 51d9353333fac6dcca0035bf7cc8dd722c32cb40
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c8c87e6df0e7ea66c2413f85fa39f397f30d50a7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672117"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440003"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
@@ -25,15 +25,15 @@ L' `require-psmodule` outil permet d’installer un [module PowerShell](/powersh
 > [!TIP]
 > Une fois qu’un module est installé, il doit toujours être importé dans un script à l’aide de [import-module](/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
 | Nom                                             | Type   | Obligatoire | Valeur                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
-| **commentaires**                                     | string | No       | Propriété de commentaires facultative. Non utilisé.                                                   |
+| **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                   |
 | [**entrée**](#input)                              | string | Oui      | Package (s) à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                       |
-| [**additionalOptions**](#additional-options)     | string | No       | Non utilisé. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.              |
+| [**additionalOptions**](#additional-options)     | string | Non       | Non utilisé. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.              |
 
 ### <a name="input"></a>Entrée
 
@@ -47,7 +47,7 @@ Des options supplémentaires sont transmises directement à la commande [install
 
 Le comportement par défaut de l' `require-psmodule` outil est l’erreur telle qu’elle est `input` requise.
 
-## <a name="builtin-options"></a>Options builtin
+### <a name="built-in-options"></a>Options intégrées
 
 L' `require-psmodule` outil définit un certain nombre d' `Install-Module` arguments de ligne de commande pour s’assurer que `Install-Module` peut s’exécuter sans affichage. Ces arguments sont répertoriés ci-dessous et leur documentation est disponible dans le [module install-module](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
 
@@ -59,7 +59,7 @@ L' `require-psmodule` outil définit un certain nombre d' `Install-Module` argum
 
 
 ## <a name="example-usage"></a>Exemple d’utilisation
-Vous trouverez ci-dessous des exemples d’exécution à `require-psmodule` l’aide d’un `.devinit.json` . 
+Vous trouverez ci-dessous des exemples d’exécution à `require-psmodule` l’aide d’un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.jssur qui installe le module PowerShellGet :
 ```json

@@ -1,5 +1,7 @@
 ---
 title: Scénarios de test de charge
+description: Découvrez comment modifier les scénarios de test de charge, qui vous permettent de configurer des tests pour simuler des charges de travail complexes et réalistes.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95e7c612e7379c44c95f17e7b12c36f7a6f07d8c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593237"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442649"
 ---
 # <a name="edit-load-test-scenarios"></a>Modifier les scénarios de test de charge
 

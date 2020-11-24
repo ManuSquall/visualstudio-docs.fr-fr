@@ -1,5 +1,7 @@
 ---
 title: spécifier les agents de test à utiliser dans les scénarios de test de charge
+description: Découvrez comment spécifier les agents à utiliser dans un scénario en définissant la propriété agents à utiliser dans le Fenêtre Propriétés du éditeur de test de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af0dac96bef5218a80e01c3ec205b58d122677c6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287491"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440907"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Guide pratique pour spécifier les agents de test à utiliser dans les scénarios de test de charge
 

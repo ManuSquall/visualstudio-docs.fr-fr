@@ -1,5 +1,7 @@
 ---
 title: Modèles de charge pour les tests de charge
+description: En savoir plus sur les modèles de charge intégrés fournis par Visual Studio. Choisissez le modèle de charge et ajustez les propriétés aux niveaux appropriés pour votre test de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c46c353b09df792b2e204ce90a04b372e23ebd8b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590304"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440257"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels
 
@@ -63,7 +65,7 @@ Un modèle de charge dans l'étape peut être utilisé pour augmenter la charge 
 
 - **Durée de démarrage de l’étape (secondes)**: 20
 
-- **Nombre d’utilisateurs**dans l’étape : 100
+- **Nombre d’utilisateurs** dans l’étape : 100
 
   Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs. La propriété **durée de démarrage** de l’étape mérite une mention spéciale, car il s’agit de la seule propriété qui n’est pas disponible pour la sélection dans le **nouvel Assistant test de charge**. Cette propriété autorise le passage progressif à l'étape suivante (par exemple de 100 à 200 utilisateurs), et non immédiat. Dans l'exemple, la charge utilisateur passerait de 100 à 200 utilisateurs sur une période de 20 secondes (soit une augmentation de cinq utilisateurs par seconde). Pour plus d’informations, consultez [Comment : spécifier la propriété durée de démarrage de l’étape pour un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 

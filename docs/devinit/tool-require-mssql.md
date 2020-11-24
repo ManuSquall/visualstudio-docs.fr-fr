@@ -1,7 +1,7 @@
 ---
 title: require-mssql
 description: l’outil devinit requiert-MSSQL.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,26 +11,26 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 95558da015462899d0388870fce95d19030fc291
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672131"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442097"
 ---
 # <a name="require-mssql"></a>require-mssql
 
 L' `require-mssql` outil est utilisé pour installer [Microsoft SQL Server édition développeur 2019](https://www.microsoft.com/sql-server/application-development) à partir de l’aide de l’ISO de MS SQL Server. SQL Server sera disponible sur `localhost` l’authentification Windows intégrée. SQL Server sera accessible avec la chaîne de connexion `"Server=localhost;Integrated Security=true;"` .
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
 | Nom                                             | Type   | Obligatoire | Valeur                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
-| **commentaires**                                     | string | No       | Propriété de commentaires facultative. Non utilisé.                                                   |
-| [**entrée**](#input)                              | string | No       | Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                  |
-| [**additionalOptions**](#additional-options)     | string | No       | Non utilisé. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.              |
+| **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                   |
+| [**entrée**](#input)                              | string | Non       | Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                  |
+| [**additionalOptions**](#additional-options)     | string | Non       | Non utilisé. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.              |
 
 ### <a name="input"></a>Entrée
 
@@ -49,7 +49,7 @@ Non utilisé.
 
 Le comportement par défaut de l' `require-mssql` outil consiste à installer SQL Server.
 
-### <a name="builtin-options"></a>Options builtin
+### <a name="built-in-options"></a>Options intégrées
 
 L' `require-mssql` outil définit un certain nombre d’arguments de ligne de commande du programme d’installation pour s’assurer que le programme d’installation peut s’exécuter sans écran. Ces arguments sont répertoriés ci-dessous et leur documentation est disponible dans la [documentation d’installation de SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
 
@@ -75,7 +75,7 @@ L' `require-mssql` outil définit un certain nombre d’arguments de ligne de co
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>Exemple d’utilisation
-Vous trouverez ci-dessous un exemple de la façon d’exécuter `require-msssql` à l’aide d’un `.devinit.json` . 
+Vous trouverez ci-dessous un exemple de la façon d’exécuter `require-msssql` à l’aide d’un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-mssql"></a>.devinit.jssur qui installe MSSQL :
 ```json

@@ -1,7 +1,7 @@
 ---
 title: msi-install
 description: outil devinit pour MsiExec.
-ms.date: 10/13/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,26 +11,26 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8dfde12f58161dfcf86eeda2b9714f705685d39a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672172"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440421"
 ---
 # <a name="msi-install"></a>msi-install
 
 L' `msi-install` outil est utilisé pour installer des `.msi` formats de fichier de package à l’aide de [msiexec](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec).
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si `input` est omis ou vide, l’outil génère une erreur.
 
 | Nom                                         | Type   | Obligatoire | Valeur                                                                             |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------------|
-| **commentaires**                                 | string | No       | Propriété de commentaires facultative. Non utilisé.                                             |
+| **commentaires**                                 | string | Non       | Propriété de commentaires facultative. Non utilisé.                                             |
 | [**entrée**](#input)                          | string | Oui      | `msi` à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                      |
-| [**additionalOptions**](#additional-options) | string | No       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.                  |
+| [**additionalOptions**](#additional-options) | string | Non       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.                  |
 
 ### <a name="input"></a>Entrée
 
@@ -46,15 +46,19 @@ L’outil MSI-install définit un certain nombre d' `msiexec` arguments de ligne
 
 | Nom          | Description                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /i            | Exécute une installation normale                                                                                                                                                                    | 
-| /quiet        | Spécifie le mode silencieux sans intervention de l’utilisateur                                                                                                                                        | 
-| /qn           | Indique qu’il n’y a aucune interface utilisateur pendant le processus d’installation                                                                                                                                           | 
-| /passive      | Spécifie le mode sans assistance dans lequel l’installation affiche uniquement une barre de progression                                                                                                                    | 
-| /l * V          | Active la journalisation et journalise toutes les informations, y compris les informations détaillées, dans un `devinit.log` fichier dans le dossier temporaire local de l’ordinateur. Si l’outil échoue, le chemin d’accès du fichier journal s’affiche.      | 
-| /norestart    | Arrête le redémarrage de l’ordinateur une fois l’installation terminée, mais retourne un code de sortie 3010 si un redémarrage est nécessaire.                                                                  | 
+| /i            | Exécute une installation normale                                                                                                                                                                    |
+| /quiet        | Spécifie le mode silencieux sans intervention de l’utilisateur                                                                                                                                        |
+| /qn           | Indique qu’il n’y a aucune interface utilisateur pendant le processus d’installation                                                                                                                                           |
+| /passive      | Spécifie le mode sans assistance dans lequel l’installation affiche uniquement une barre de progression                                                                                                                    |
+| /l * V          | Active la journalisation et journalise toutes les informations, y compris les informations détaillées, dans un `devinit.log` fichier dans le dossier temporaire local de l’ordinateur. Si l’outil échoue, le chemin d’accès du fichier journal s’affiche.      |
+| /norestart    | Arrête le redémarrage de l’ordinateur une fois l’installation terminée, mais retourne un code de sortie 3010 si un redémarrage est nécessaire.                                                                  |
+
+### <a name="default-behavior"></a>Comportement par défaut
+
+Le comportement par défaut de l' `msi-install` outil est d’erreur, car la `input` propriété est requise.
 
 ## <a name="example-usage"></a>Exemple d’utilisation
-Vous trouverez ci-dessous un exemple de la façon d’exécuter `msi-install` à l’aide d’un `.devinit.json` . 
+Vous trouverez ci-dessous un exemple de la façon d’exécuter `msi-install` à l’aide d’un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.jssur qui installe le fichier MSI 7-zip :
 ```json

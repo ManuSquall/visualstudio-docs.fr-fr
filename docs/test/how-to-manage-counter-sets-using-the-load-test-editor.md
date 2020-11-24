@@ -1,5 +1,7 @@
 ---
 title: Ensembles de compteurs de test de charge
+description: Découvrez comment utiliser la éditeur de test de charge gérer pour gérer les ensembles de compteurs en choisissant les ordinateurs et en assignant des ensembles de compteurs à collecter à partir de chaque ordinateur.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eeb99d58a9fc0547d118c529878d8b02cc83dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287686"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440011"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Guide pratique pour gérer des ensembles de compteurs à l’aide de l’éditeur de test de charge
 

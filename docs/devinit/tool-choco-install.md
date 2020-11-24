@@ -1,7 +1,7 @@
 ---
 title: choco-install
 description: devinit Tool Choco-install pour installer les packages en chocolat.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,26 +11,26 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 82c1bfbaed4a8ae5540447991f1a097760ade0bd
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671939"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440509"
 ---
 # <a name="choco-install"></a>choco-install
 
 L' `choco-install` outil peut être utilisé pour installer et mettre à jour des packages en [chocolat](https://chocolatey.org/) .
 
-## <a name="usage"></a>Utilisation
+## <a name="usage"></a>Usage
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil ne fait rien.
 
-| Nom                                             | Type   | Obligatoire | Valeur                                                                                                          |
-|--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
-| **commentaires**                                     | string | No       | Propriété de commentaires facultative. Non utilisé.                                                                          |
-| [**entrée**](#input)                              | string | No       | Le package à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                 |
-| [**additionalOptions**](#additional-options)     | string | No       | Options supplémentaires à passer à l’outil. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.       |
+| Nom                                             | Type   | Obligatoire  | Valeur                                                                                                          |
+|--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
+| **commentaires**                                     | string | Non        | Propriété de commentaires facultative. Non utilisé.                                                                          |
+| [**entrée**](#input)                              | string | Oui       | Le package à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                 |
+| [**additionalOptions**](#additional-options)     | string | Non        | Options supplémentaires à passer à l’outil. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.       |
 
 ### <a name="input"></a>Entrée
 
@@ -50,8 +50,12 @@ L' `choco-install` outil définit un certain nombre d' `choco` arguments de lign
 | **--non-Progress**     | Ne pas afficher la progression-les pourcentages de progression ne s’affichent pas.                                         |
 | **--Skip-PowerShell** | Ignorer PowerShell-chocolateyInstall.ps1 ne sera pas exécuté.                                              |
 
+### <a name="default-behavior"></a>Comportement par défaut
+
+Le comportement par défaut de l' `choco-install` outil est d’erreur, car la `input` propriété est requise.
+
 ## <a name="example-usage"></a>Exemple d’utilisation
-Vous trouverez ci-dessous des exemples d’exécution à `choco-install` l’aide d’un `.devinit.json` . 
+Vous trouverez ci-dessous des exemples d’exécution à `choco-install` l’aide d’un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-packages-listed-in-packagesconfig"></a>.devinit.jssur qui installe les packages listés dans packages.config :
 ```json

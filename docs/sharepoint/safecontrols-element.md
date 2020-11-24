@@ -1,5 +1,7 @@
 ---
 title: SafeControls, élément | Microsoft Docs
+description: Obtenir des informations sur l’élément SafeControls, qui contient une collection de contrôles ASPX ou de composants WebPart marqués comme sécurisés pour l’accès sur la page ASPX d’un site SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547899"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440673"
 ---
 # <a name="safecontrols-element"></a>SafeControls (élément)
   Collection de contrôles et de composants WebPart ASPX qui sont désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.

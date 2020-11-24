@@ -1,5 +1,7 @@
 ---
 title: Analyser l’activité des utilisateurs virtuels pour les tests de charge
+description: Découvrez comment utiliser le graphique d’activités des utilisateurs virtuels pour voir chaque utilisateur virtuel en cours d’exécution pendant le test afin de voir les modèles d’activité utilisateur et d’autres informations.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288401"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442389"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Guide pratique pour analyser l’activité des utilisateurs virtuels lors d’un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
 
@@ -29,7 +31,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
 2. Après l'exécution de votre test de charge, la page de résumé des résultats des tests s'affiche. Choisissez le bouton **Détail de l’utilisateur** dans la barre d’outils.
 
-     -ou-
+     - ou -
 
      Ouvrez la vue Graphiques en choisissant le bouton **Graphiques** dans la barre d’outils. Cliquez avec le bouton droit sur un graphique, puis sélectionnez **Accéder au détail de l’utilisateur**.
 
@@ -72,7 +74,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Pour utiliser les options de filtrage dans le graphique d'activités des utilisateurs virtuels
 
-1. Dans la **légende détails**, utilisez la liste déroulante pour sélectionner **test**, **page**ou **transaction**.
+1. Dans la **légende détails**, utilisez la liste déroulante pour sélectionner **test**, **page** ou **transaction**.
 
     **Panneau Légende du détail**
 

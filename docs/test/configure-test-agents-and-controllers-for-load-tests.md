@@ -1,5 +1,6 @@
 ---
 title: Configurer des agents de test/contrôleurs de test pour les tests de charge
+description: Découvrez comment Visual Studio peut créer une charge simulée à l’aide d’ordinateurs physiques ou virtuels pour générer une charge supérieure à celle qu’un seul ordinateur peut générer uniquement.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -8,12 +9,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e9aea22a63f2eee8f83ee597ed11c90df7f6b1a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: e70c1f3783945fbea00816d961f8ae6518ff726b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099399"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442610"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Vue d’ensemble des agents de test et des contrôleurs de test pour l’exécution de tests de charge
 
@@ -38,7 +39,7 @@ Cette architecture offre les avantages suivants :
 
 - La possibilité de faire évoluer la génération de charge en ajoutant des agents de test supplémentaires à un contrôleur de test.
 
-- Une flexibilité pour l'installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Exemple :
+- Une flexibilité pour l'installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Par exemple :
 
    **Configuration locale :**
 

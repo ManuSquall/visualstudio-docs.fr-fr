@@ -1,5 +1,7 @@
 ---
 title: Élément SafeControl | Microsoft Docs
+description: Obtenir des informations sur l’élément SafeControl, qui représente un contrôle ASPX ou un composant WebPart marqué comme sécurisé pour qu’un utilisateur accède à la page ASPX d’un site SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547925"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440621"
 ---
 # <a name="safecontrol-element"></a>SafeControl (élément)
   Représente un contrôle ASPX ou un composant WebPart qui est désigné comme sécurisé pour tout utilisateur qui peut accéder à n’importe quelle page ASPX sur le site SharePoint.
@@ -43,7 +45,7 @@ ms.locfileid: "85547925"
 |**Assembly**|Attribut **XS : String** facultatif.<br /><br /> Nom de l’assembly dans lequel le contrôle ASPX ou le composant WebPart est défini. Par défaut, cet attribut utilise le paramètre Replaceable **$SharePoint. Project. AssemblyFullName $** pour le nom de l’assembly. Pour plus d’informations, consultez [paramètres remplaçables](../sharepoint/replaceable-parameters.md).|
 |**IsSafe**|Attribut **XS : Boolean** facultatif.<br /><br /> Spécifie si le contrôle ASPX ou le composant WebPart est sécurisé pour l’accès des utilisateurs non approuvés.|
 |**IsSafeAgainstScript**|Attribut **XS : Boolean** facultatif.<br /><br /> Spécifie si les utilisateurs non fiables peuvent afficher ou modifier les propriétés du composant WebPart ou du contrôle ASPX.|
-|**Name**|Attribut **XS : String** facultatif.<br /><br /> Nom de cette entrée de contrôle sécurisé dans la collection.|
+|**Nom**|Attribut **XS : String** facultatif.<br /><br /> Nom de cette entrée de contrôle sécurisé dans la collection.|
 |**Espace de noms**|Attribut **XS : String** facultatif.<br /><br /> Espace de noms du contrôle ASPX ou du composant WebPart.|
 |**TypeName**|Attribut **XS : String** facultatif.<br /><br /> Nom de type du contrôle ASPX ou du composant WebPart.|
 

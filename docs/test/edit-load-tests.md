@@ -1,5 +1,7 @@
 ---
 title: Modification de tests de charge
+description: En savoir plus sur les différences entre les scénarios, les ensembles de compteurs et les paramètres d’exécution, qui définissent des tests de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288700"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441467"
 ---
 # <a name="edit-load-tests"></a>Modifier des tests de charge
 

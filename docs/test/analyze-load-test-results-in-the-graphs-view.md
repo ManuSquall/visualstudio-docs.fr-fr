@@ -1,5 +1,6 @@
 ---
 title: Analyser les résultats des tests de charge-vue graphiques (analyseur de test de charge)
+description: Découvrez comment afficher les résultats des tests sous forme de graphiques. Chaque graphique est affiché dans un volet avec le nom du graphique dans une liste déroulante.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810651"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441974"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 
@@ -63,16 +64,16 @@ La légende des compteurs affichés dans les graphiques indique plusieurs colonn
 
 La légende contient les colonnes suivantes :
 
-|Counter|Nom du compteur|
+|Compteur|Nom du compteur|
 |-|-|
 |Instance|Nom de l'instance de compteur.|
 |Category|Nom de la catégorie de compteur.|
 |Computer|Le nom de l'ordinateur sur lequel les données du compteur sont collectées.|
-|Color|Couleur de la ligne sur le graphique.|
+|Couleur|Couleur de la ligne sur le graphique.|
 |Plage|Indique le nombre représenté par 100 sur le graphique de ce compteur. Par exemple, pour une plage dont la limite supérieure est 10 000, l'étiquette 100 au sommet du graphique, représente 10 000.|
 |Min|Indique la valeur minimale du compteur en millisecondes.|
 |Max|Indique la valeur maximale du compteur en millisecondes.|
-|Moy|Indique la valeur moyenne du compteur en millisecondes.|
+|Avg|Indique la valeur moyenne du compteur en millisecondes.|
 |Dernier|Affiche la valeur du compteur pendant le dernier intervalle d'échantillonnage en millisecondes.|
 
 ## <a name="tasks"></a>Tâches

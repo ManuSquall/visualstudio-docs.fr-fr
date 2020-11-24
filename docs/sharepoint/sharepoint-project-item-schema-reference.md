@@ -1,5 +1,7 @@
 ---
 title: Référence du schéma d’élément de projet SharePoint | Microsoft Docs
+description: Consultez une vue d’ensemble de la référence de schéma XML de l’élément de projet SharePoint (ProjectItemModelSchema. xsd), qui est utilisée pour valider le contenu des fichiers. de données.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007717"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442545"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Référence du schéma d’élément de projet SharePoint
   Visual Studio utilise le schéma d’élément de projet SharePoint pour valider le contenu des fichiers *. resdonnées* . Un fichier *. resdonnées* spécifie le contenu et le comportement d’un élément de projet SharePoint. Pour plus d’informations sur le contenu des éléments de projet SharePoint, consultez [créer des modèles d’élément et des modèles de projet pour les éléments de projet SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

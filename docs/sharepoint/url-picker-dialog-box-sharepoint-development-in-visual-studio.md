@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue Sélecteur d’URL (développement SharePoint)
+description: En savoir plus sur la boîte de dialogue Sélecteur d’URL, qui permet à un utilisateur de choisir des fichiers situés dans son projet ou sur le serveur local qui exécute SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261943"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442532"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Boîte de dialogue Sélecteur d’URL (développement SharePoint dans Visual Studio)
   Dans la boîte de dialogue Sélecteur d’URL, vous pouvez choisir des fichiers tels que des fichiers de page maître ou des fichiers image qui se trouvent dans votre projet ou sur le serveur local qui exécute SharePoint.
@@ -42,7 +44,7 @@ ms.locfileid: "66261943"
 
   Développez le nœud du **serveur** pour choisir les fichiers qui se trouvent sur le serveur local qui exécute SharePoint. Pour qu’il apparaisse comme sélectionnable dans la boîte de dialogue, ces fichiers doivent répondre aux critères suivants :
 
-- Le fichier doit se trouver dans l’un des dossiers mappés suivants : **images**, **dispositions**ou **ControlTemplate**.
+- Le fichier doit se trouver dans l’un des dossiers mappés suivants : **images**, **dispositions** ou **ControlTemplate**.
 
 - Le fichier est introuvable dans la base de données de contenu SharePoint.
 

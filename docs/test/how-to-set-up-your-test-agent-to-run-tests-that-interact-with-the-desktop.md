@@ -1,5 +1,7 @@
 ---
 title: Configurer un agent de test
+description: Découvrez comment exécuter des tests automatisés qui interagissent avec le bureau en configurant votre agent pour qu’il s’exécute en tant que processus et non en tant que service.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287530"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441011"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau
 
@@ -43,7 +45,7 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
 
 ## <a name="to-set-up-an-agent-to-run-as-a-process"></a>Pour configurer un agent pour qu'il s'exécute en tant que processus
 
-1. Pour configurer l’agent de test que vous avez installé pour qu’il s’exécute en tant que processus, accédez à **Démarrer**l’outil de configuration de l'  >  **agent de test**.
+1. Pour configurer l’agent de test que vous avez installé pour qu’il s’exécute en tant que processus, accédez à **Démarrer** l’outil de configuration de l'  >  **agent de test**.
 
    La boîte de dialogue **Configurer l’agent de test** s’affiche.
 

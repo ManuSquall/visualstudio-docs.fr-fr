@@ -1,5 +1,7 @@
 ---
 title: Enregistrer le journal des tests de charge pour les échecs de test
+description: Découvrez comment spécifier si vous souhaitez enregistrer le journal des tests en cas d’échec d’un test dans un test de charge en modifiant la propriété enregistrer le journal lors de l’échec du test.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaef2888cecc7622a3dc589a6bab816b0c134668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6dbde0f1a1f854bfd7dc6c2f74e3081a33b4796
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287504"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439899"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Guide pratique pour spécifier si les échecs de test sont enregistrés dans les journaux des tests à l’aide de l’éditeur de test de charge
 

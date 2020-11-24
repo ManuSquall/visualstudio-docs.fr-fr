@@ -1,5 +1,7 @@
 ---
 title: Combinaison de tests pour un scénario de test de charge
+description: Découvrez comment modifier la combinaison de tests d’un scénario, qui est une combinaison de la sélection des tests de performances de site Web et des tests unitaires, ainsi que de la distribution de ces tests.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6681b8aead05a180df04b1c3953002aa832a281
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595928"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441376"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les tests de performances web, les tests unitaires et les tests codés de l’interface utilisateur à inclure dans un scénario de test de charge
 

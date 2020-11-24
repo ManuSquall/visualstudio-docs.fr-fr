@@ -1,5 +1,7 @@
 ---
 title: Ajouter des compteurs à des ensembles de compteurs pour les tests de charge
+description: Lorsque vous créez un test de charge avec l'Assistant Test de charge, vous ajoutez un ensemble initial de compteurs. Découvrez comment ajouter des compteurs à l’aide de éditeur de test de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aabd5bc7293a73ec0fa1a304262c24776a9e38f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288375"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442571"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Guide pratique pour ajouter des compteurs à des ensembles de compteurs à l’aide de l’éditeur de test de charge
 

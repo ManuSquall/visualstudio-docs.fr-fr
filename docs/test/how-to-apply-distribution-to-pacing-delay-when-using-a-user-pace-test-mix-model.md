@@ -1,5 +1,7 @@
 ---
 title: Appliquer une distribution au rythme pour les tests de charges
+description: Apprenez à définir la propriété appliquer une distribution au rythme pour un test de charge à l’aide de l’Fenêtre Propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa5d3239e3b096a2018d6ef9c9b3c6666dcd31c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c966eb9b4ad0bbf8e00c8a27fd69fef0c59cbc1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288271"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440119"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Guide pratique afin d’appliquer une distribution au rythme pour un modèle de combinaison de tests dépendant du rythme de l’utilisateur
 

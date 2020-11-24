@@ -1,5 +1,6 @@
 ---
 title: Créer un rapport de performances de test de charge à l’aide d’Excel
+description: Découvrez comment générer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests. Vous pouvez créer des rapports d’exécution de comparaison et de tendance.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ce92e157ba3fe02dbabd1ddd408492c440102a1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a89818630258aab42535fb4256fa3e844b0c6878
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810257"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442428"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 

@@ -1,5 +1,6 @@
 ---
 title: Créer une règle de validation personnalisée pour un test de performances Web
+description: Découvrez comment créer vos propres règles de validation, dérivées d’une classe de règles de validation, ValidationRule.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6222aaf6b6aeace595e12c797ead1dfb86b4931
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 627122368c90163cf9aef4c8035bfbb67c4a0dba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810612"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441818"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Coder une règle de validation personnalisée pour un test de performances web
 
@@ -57,7 +58,7 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 
 9. Exécutez votre test de performances web.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le code suivant illustre une implémentation d'une règle de validation personnalisée. Cette règle de validation reproduit le comportement de la règle de validation prédéfinie Étiquette obligatoire. Utilisez cet exemple comme point de départ pour la définition de vos propres règles de validation personnalisées.
 

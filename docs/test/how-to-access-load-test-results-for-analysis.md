@@ -1,5 +1,7 @@
 ---
 title: Analyser les résultats des tests de charge
+description: Découvrez comment accéder aux résultats des tests de charge pour l’analyse, soit automatiquement via l’analyseur de test de charge, soit manuellement pour les tests à partir de la ligne de commande.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95108a5901a00582e708f6bf3660cb07d2126e0a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288531"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442597"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Guide pratique : Accéder aux résultats des tests de charge à des fins d’analyse
 
@@ -37,7 +39,7 @@ Le résultat du test de charge pour le test de charge terminé contient des exem
 
      La boîte de dialogue **Ouvrir et gérer des résultats** s’affiche.
 
-3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez ** \<local> aucun contrôleur** pour accéder aux résultats stockés localement.
+3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<local> aucun contrôleur** pour accéder aux résultats stockés localement.
 
 4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous souhaitez consulter les résultats. Sélectionnez cette option **\<Show results for all tests>** pour afficher tous les résultats de tous les tests.
 

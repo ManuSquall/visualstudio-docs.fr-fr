@@ -1,5 +1,7 @@
 ---
 title: créer un plug-in de test de charge
+description: Découvrez comment créer un plug-in de test de charge pour exécuter du code à différents moments pendant l’exécution du test de charge, ce qui peut développer ou modifier les fonctionnalités du test de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,16 +14,16 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288024"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441089"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Guide pratique pour créer un plug-in de test de charge
 
-Vous pouvez créer un plug-in de test de charge pour exécuter du code à différents stades de l'exécution du test de charge. Vous pouvez créer un plug-in pour développer ou modifier la fonctionnalité intégrée du test de charge. Par exemple, vous pouvez coder un plug-in de test de charge pour définir ou modifier le modèle de test de charge pendant l’exécution du test de charge. Pour cela, vous devez créer une classe qui hérite de l'interface de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Cette classe doit implémenter la méthode <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de cette interface. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+Vous pouvez créer un plug-in de test de charge pour exécuter du code à différents stades de l'exécution du test de charge. Vous pouvez créer un plug-in pour développer ou modifier la fonctionnalité intégrée du test de charge. Par exemple, vous pouvez coder un plug-in de test de charge pour définir ou modifier le modèle de test de charge pendant l’exécution du test de charge. Pour cela, vous devez créer une classe qui hérite de l'interface de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Cette classe doit implémenter la méthode <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de cette interface. Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
 > Vous pouvez également créer des plug-ins pour les tests de performances web. Pour plus d’informations, consultez [Comment : créer un plug-in de test de performances de site Web](../test/how-to-create-a-web-performance-test-plug-in.md).

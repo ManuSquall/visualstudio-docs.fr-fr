@@ -1,5 +1,7 @@
 ---
 title: Élément ProjectItemFile | Microsoft Docs
+description: Obtenir des informations de référence sur l’élément ProjectItemFile, qui représente un fichier d’élément de projet dans la référence de schéma XML d’élément de projet SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539852"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440803"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile (élément)
   Représente un fichier SharePoint, tel qu’un fichier d’élément de fonctionnalité, à inclure avec l’élément de projet lorsqu’il est déployé sur SharePoint.

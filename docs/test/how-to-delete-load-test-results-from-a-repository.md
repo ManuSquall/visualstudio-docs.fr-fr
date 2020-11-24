@@ -1,5 +1,7 @@
 ---
 title: "Comment : supprimer les résultats d'un test de charge d'un référentiel"
+description: Découvrez comment supprimer des informations du référentiel de Résultats des tests de charge à l’aide de la boîte de dialogue Ouvrir et gérer le Résultats des tests de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd196076fb769f80c36ab8630eebf1e8a0f8b234
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b838d79237fc54f6d44d5b8222489973dea0c6e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287777"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440946"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Guide pratique pour supprimer les résultats d’un test de charge d’un référentiel
 

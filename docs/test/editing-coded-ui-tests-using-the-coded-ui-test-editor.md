@@ -1,5 +1,7 @@
 ---
 title: Modification de tests codés de l’interface utilisateur
+description: Apprenez à utiliser l’éditeur de test codé de l’interface utilisateur pour rechercher, afficher et modifier vos méthodes de test et actions d’interface utilisateur. Utilisez le mappage de contrôle d’interface utilisateur pour afficher et modifier les contrôles correspondants.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f78839280ae19da5020b08d499d347c0537a045
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288726"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441441"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur
 
@@ -112,7 +114,7 @@ Vous pouvez fractionner une méthode de test pour affiner ou modulariser les act
 
 ![Deux méthodes de test](../test/media/codeduitestsplitmethod2.png)
 
-Dans le volet **Action d'interface utilisateur** , développez la méthode de test que vous souhaitez fractionner en deux méthodes distinctes et sélectionnez l'action d'interface utilisateur où vous voulez que la nouvelle méthode de test commence. Ouvrez le menu contextuel de l'action d'interface utilisateur, puis choisissez **Diviser en nouvelle méthode**ou choisissez le bouton **Diviser en nouvelle méthode** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur. La nouvelle méthode de test s’affiche dans le volet **actions d’interface utilisateur** . Elle contient les actions d'interface utilisateur à partir de l'action où vous avez spécifié le fractionnement.
+Dans le volet **Action d'interface utilisateur** , développez la méthode de test que vous souhaitez fractionner en deux méthodes distinctes et sélectionnez l'action d'interface utilisateur où vous voulez que la nouvelle méthode de test commence. Ouvrez le menu contextuel de l'action d'interface utilisateur, puis choisissez **Diviser en nouvelle méthode** ou choisissez le bouton **Diviser en nouvelle méthode** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur. La nouvelle méthode de test s’affiche dans le volet **actions d’interface utilisateur** . Elle contient les actions d'interface utilisateur à partir de l'action où vous avez spécifié le fractionnement.
 
 Une fois que vous avez terminé de fractionner la méthode, enregistrez les modifications dans le fichier *UIMap. designer* en choisissant **Enregistrer** dans la barre d’outils de Visual Studio.
 

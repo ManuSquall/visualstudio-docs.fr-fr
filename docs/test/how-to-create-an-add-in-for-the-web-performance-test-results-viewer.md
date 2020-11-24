@@ -1,5 +1,7 @@
 ---
 title: Créer un complément pour l’Afficheur de résultats de test de performances Web
+description: Découvrez comment créer un complément Visual Studio pour étendre l’interface utilisateur de la visionneuse de performances Web Résultats des tests et implémenter les classes nécessaires pour étendre l’interface utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8fa3b83fb9a92be0118f4222e92364767affcda
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287829"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441076"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Comment : créer un complément pour la visionneuse de Résultats des tests performances de site Web
 
@@ -41,7 +43,7 @@ Créez ou ouvrez une solution qui ne soit pas en production et dans laquelle vou
 
 ## <a name="create-a-visual-studio-add-in"></a>Créer un complément Visual Studio
 
-Un complément est une DLL compilée qui s’exécute dans l’environnement de développement intégré (IDE) de Visual Studio. Sa compilation contribue à protéger votre propriété intellectuelle et améliore les performances. Même si vous pouvez créer des compléments manuellement, il est toutefois plus facile d’utiliser**l’Assistant Complément**. L'Assistant crée un complément fonctionnel de base que vous pouvez exécuter immédiatement après sa création. Une fois que **l’Assistant Complément** a généré le programme de base, vous pouvez y ajouter du code et le personnaliser.
+Un complément est une DLL compilée qui s’exécute dans l’environnement de développement intégré (IDE) de Visual Studio. Sa compilation contribue à protéger votre propriété intellectuelle et améliore les performances. Même si vous pouvez créer des compléments manuellement, il est toutefois plus facile d’utiliser **l’Assistant Complément**. L'Assistant crée un complément fonctionnel de base que vous pouvez exécuter immédiatement après sa création. Une fois que **l’Assistant Complément** a généré le programme de base, vous pouvez y ajouter du code et le personnaliser.
 
 **l’Assistant Complément** vous permet de fournir un nom complet et une description pour votre complément. Ils s’afficheront dans le **Gestionnaire de compléments**. Vous pouvez indiquer à l’Assistant de générer un code qui ajoute au menu **Outils** une commande permettant d’ouvrir le complément. Vous pouvez également choisir d’afficher une boîte de dialogue **À propos de** personnalisée pour votre complément. Une fois l'Assistant terminé, votre nouveau projet n'a qu'une classe, qui implémente le complément. Cette classe est appelée Connect.
 
@@ -324,7 +326,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 Pour améliorer la sécurité en empêchant les compléments nuisibles de s’activer automatiquement, Visual Studio fournit différents paramètres dans une page **Options Outils** nommée **Sécurité des compléments/macros**.
 
-En outre, cette page d’options vous permet de spécifier les dossiers dans lesquels Visual Studio recherche *. * Fichiers d’enregistrement de complément. Cela améliore la sécurité en vous permettant de limiter les emplacements dans lesquels les fichiers d’inscription *.AddIn* peuvent être lus. Cela permet d’éviter que des fichiers *.AddIn* malveillants ne soient involontairement utilisés.
+En outre, cette page d’options vous permet de spécifier les dossiers dans lesquels Visual Studio recherche *.* Fichiers d’enregistrement de complément. Cela améliore la sécurité en vous permettant de limiter les emplacements dans lesquels les fichiers d’inscription *.AddIn* peuvent être lus. Cela permet d’éviter que des fichiers *.AddIn* malveillants ne soient involontairement utilisés.
 
 **Paramètres de sécurité des compléments**
 

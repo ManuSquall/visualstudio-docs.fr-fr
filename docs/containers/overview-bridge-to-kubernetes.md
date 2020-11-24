@@ -1,7 +1,7 @@
 ---
 title: Comment fonctionne Bridge to Kubernetes
 ms.technology: vs-azure
-ms.date: 06/02/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 description: Décrit les processus d’utilisation de Bridge vers Kubernetes pour connecter votre ordinateur de développement à votre cluster Kubernetes
 keywords: Pont vers Kubernetes, Dockr, Kubernetes, Azure, conteneurs
@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116101"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440608"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Comment fonctionne Bridge to Kubernetes
 
@@ -105,6 +105,37 @@ Lorsque vous vous déconnectez de votre cluster, par défaut, Bridge to Kubernet
 ## <a name="diagnostics-and-logging"></a>Diagnostics et journalisation
 
 Lorsque vous utilisez Bridge to Kubernetes pour vous connecter à votre cluster, les journaux de diagnostic de votre cluster sont enregistrés dans le répertoire *temp* de votre ordinateur de développement dans le dossier du *pont vers Kubernetes* .
+
+## <a name="rbac-authorization"></a>Autorisation RBAC
+
+Kubernetes fournit des Access Control basées sur les rôles (RBAC) pour gérer les autorisations pour les utilisateurs et les groupes. Pour plus d’informations, consultez la [documentation Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) . vous pouvez définir les autorisations pour un cluster RBAC en créant un fichier YAML et en utilisant `kubectl` pour l’appliquer au cluster. 
+
+Pour définir des autorisations sur le cluster, créez ou modifiez un fichier YAML tel que *Permissions. yml* comme suit, à l’aide de votre propre espace de noms pour `<namespace>` et des sujets (utilisateurs et groupes) qui ont besoin d’un accès.
+
+```yml
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bridgetokubernetes-<namespace>
+  namespace: development
+subjects:
+  - kind: User
+    name: jane.w6wn8.k8s.ginger.eu-central-1.aws.gigantic.io
+    apiGroup: rbac.authorization.k8s.io
+  - kind: Group
+    name: dev-admin
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+Appliquez les autorisations à l’aide de la commande :
+
+```cmd
+kubectl -n <namespace> apply -f <yaml file name>
+```
 
 ## <a name="limitations"></a>Limites
 

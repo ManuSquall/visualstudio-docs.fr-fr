@@ -1,5 +1,7 @@
 ---
 title: Créer un paramètre de test pour un test de charge distribué
+description: Découvrez comment configurer des paramètres de test pour vos tests de charge afin de pouvoir distribuer ces tests sur plusieurs ordinateurs à l’aide d’agents de test et de contrôleurs de test.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036091"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439964"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Comment : créer un fichier de paramètres de test pour un test de charge distribué
 
@@ -71,7 +73,7 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
 10. Pour exécuter vos tests à distance, ou pour exécuter vos tests à distance et collecter des données à distance, utilisez la liste déroulante **Méthode d’exécution des tests** et sélectionnez **Exécution distante**.
 
-11. Utilisez la liste déroulante **** Contrôleur**** pour sélectionner un contrôleur de test pour les agents de test, qui sera utilisé pour exécuter vos tests ou pour collecter des données.
+11. Utilisez la liste déroulante Contrôleur pour sélectionner un contrôleur de test pour les agents de test, qui sera utilisé pour exécuter vos tests ou pour collecter des données.
 
     > [!NOTE]
     > Si vous ajoutez un contrôleur pour la première fois, aucun contrôleur n'est répertorié dans la liste déroulante. La liste est remplie par les contrôleurs précédents que vous avez définis dans d'autres paramètres de test. Vous devez taper le nom du contrôleur dans la zone (par exemple **TestControllerMachine1**).

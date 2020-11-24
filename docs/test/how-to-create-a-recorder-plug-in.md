@@ -1,5 +1,7 @@
 ---
 title: Créer un plug-in d’enregistreur pour les tests de performances web
+description: Découvrez comment le WebTestRecorderPlugin vous permet de modifier un test de performances de site Web enregistré après avoir choisi arrêter dans la barre d’outils de l’enregistreur de test de performances de site Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce4be33e2e29ee0089184a034e56cf3a0539dc76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288004"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440058"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Guide pratique pour créer un plug-in d’enregistreur
 
@@ -71,7 +73,7 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 8. Ajoutez d’autres lignes de code en fonction des opérations que le plug-in d’enregistreur devra exécuter à l’issue de l’enregistrement web. Par exemple, vous pouvez ajouter le code pour gérer la corrélation personnalisée comme l'illustre l'exemple ci-dessous. Il est également possible de créer un plug-in d’enregistreur pour notamment convertir les commentaires en transactions ou ajouter des règles de validation au test de performances web.
 
-9. Dans le menu **générer** , choisissez **Générer \<class library project name> **.
+9. Dans le menu **générer** , choisissez **Générer \<class library project name>**.
 
 Ensuite, déployez le plug-in d’enregistreur pour l’inscrire auprès de Visual Studio.
 

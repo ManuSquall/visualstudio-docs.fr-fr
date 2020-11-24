@@ -1,5 +1,7 @@
 ---
 title: Créer un test de service web
+description: Découvrez comment utiliser un test de performances pour les services Web et personnaliser les demandes dans le éditeur de test de performances Web pour localiser des pages de service Web.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9934f48e6d5900a418995eb96d357b4ea1ea532f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814757"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439925"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
 

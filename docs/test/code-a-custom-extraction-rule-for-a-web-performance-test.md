@@ -1,5 +1,6 @@
 ---
 title: Coder une règle d’extraction personnalisée (test de performances Web)
+description: Découvrez comment créer vos propres règles d’extraction, dérivées d’une classe de règle d’extraction, ExtractionRule.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d29bb2d0bfa1bbea7d0dd8dedbb17f9704a9c66d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e03a289ee95e9aefddb49154d1199fffa31ce3ca
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810625"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442454"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Coder une règle d’extraction personnalisée pour un test de performances web
 
@@ -55,7 +56,7 @@ Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vo
 
 9. Exécutez votre test de performances web.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le code suivant illustre une implémentation d'une règle d'extraction personnalisée. Cette règle d'extraction extrait la valeur d'un champ d'entrée spécifié. Utilisez cet exemple comme point de départ pour vos propres règles d'extraction personnalisées.
 

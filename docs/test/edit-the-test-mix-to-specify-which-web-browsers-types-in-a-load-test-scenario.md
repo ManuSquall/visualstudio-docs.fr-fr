@@ -1,5 +1,7 @@
 ---
 title: Combinaison de tests de navigateur pour les tests de charge
+description: Découvrez comment modifier la combinaison de navigateurs, ce qui vous permet de simuler la charge de façon plus réaliste dans un scénario de test de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dae1a89eb40e71a07540eef7512327282ef0b9b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114534"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441312"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateurs web dans un scénario de test de charge
 

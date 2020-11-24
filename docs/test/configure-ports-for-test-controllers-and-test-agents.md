@@ -1,5 +1,7 @@
 ---
 title: Configurer les ports des contrôleurs de test et des agents de test
+description: Découvrez comment modifier les ports entrants par défaut utilisés par le contrôleur de test, l’agent de test et le client pour éviter les conflits avec d’autres logiciels.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7889feffc41d6bb64b85b4ea95a17a4a986d22df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2726d489c0c67bffb11bc59357f6ad107a6c94ba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288817"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441566"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurer les ports des contrôleurs de test et des agents de test
 
