@@ -1,5 +1,7 @@
 ---
 title: Distribuer des extraits de code en tant qu’extension
+description: Découvrez comment utiliser le gestionnaire des extraits de code pour distribuer des extraits de code à d’autres développeurs.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17f477fe2d02a43cef77358e862cfdf80a079ba5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284371"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597169"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Guide pratique pour distribuer des extraits de code
 

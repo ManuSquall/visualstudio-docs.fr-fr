@@ -1,5 +1,7 @@
 ---
 title: Créer des modèles de projet
+description: Découvrez comment utiliser l’Assistant exportation de modèle et d’autres méthodes pour créer des modèles de projet dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 f1_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e6f168244971a348cdb7938af463538d0fa2acaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9030a88e67c90fab870613d71d0fe63992166222
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284384"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597182"
 ---
 # <a name="how-to-create-project-templates"></a>Guide pratique pour créer des modèles de projet
 

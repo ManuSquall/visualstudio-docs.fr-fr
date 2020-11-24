@@ -1,5 +1,7 @@
 ---
 title: Ajout d’un menu contextuel dans une fenêtre outil | Microsoft Docs
+description: Découvrez comment ajouter un menu contextuel à une fenêtre outil dans Visual Studio qui apparaît lorsqu’un utilisateur clique avec le bouton droit sur un bouton, une zone de texte ou un arrière-plan de fenêtre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904187"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597871"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Ajouter un menu contextuel dans une fenêtre outil
 Cette procédure pas à pas permet de placer un menu contextuel dans une fenêtre outil. Un menu contextuel est un menu qui s’affiche lorsqu’un utilisateur clique avec le bouton droit sur un bouton, une zone de texte ou un arrière-plan de fenêtre. Les commandes d’un menu contextuel se comportent comme des commandes sur d’autres menus ou barres d’outils. Pour prendre en charge un menu contextuel, spécifiez-le dans le fichier *. vsct* et affichez-le en réponse à un clic droit de la souris.
@@ -116,10 +118,10 @@ Un menu contextuel, tel que celui illustré dans cette procédure pas à pas, pe
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
-    public const int ColorMenu = 0x1000;
-    public const int cmdidRed = 0x102;
-    public const int cmdidYellow = 0x103;
-    public const int cmdidBlue = 0x104;
+    public const int ColorMenu = 0x1000;
+    public const int cmdidRed = 0x102;
+    public const int cmdidYellow = 0x103;
+    public const int cmdidBlue = 0x104;
     ```
 
     Il s’agit des mêmes ID de commande que ceux définis dans la section Symbols du fichier *ShortcutMenuPackage. vsct* . Le groupe de contexte n’est pas inclus ici, car il n’est requis que dans le fichier *. vsct* .
@@ -208,7 +210,7 @@ Un menu contextuel, tel que celui illustré dans cette procédure pas à pas, pe
 7. Dans *ShortcutMenuControl.Xaml.cs*, ajoutez un stub pour le gestionnaire d’événements.
 
     ```csharp
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
     {
     . . .
     }

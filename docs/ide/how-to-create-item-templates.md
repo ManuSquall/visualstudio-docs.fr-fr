@@ -1,5 +1,7 @@
 ---
 title: Créer des modèles d’élément
+description: Découvrez comment utiliser l’Assistant exportation de modèle pour créer un modèle d’élément dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf058526a6ff48a37d4c7585e7deabe1decb14a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284475"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597273"
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 
@@ -119,7 +121,7 @@ Dans certains cas, vous pouvez avoir envie de créer un modèle d’élément ma
 
 6. Enregistrez le fichier *.vstemplate*, puis fermez-le.
 
-7. Dans l’**Explorateur Windows**, sélectionnez les fichiers à inclure dans votre modèle. Cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers**le  >  **dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
+7. Dans l’**Explorateur Windows**, sélectionnez les fichiers à inclure dans votre modèle. Cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** le  >  **dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
 
 ::: moniker range="vs-2017"
 

@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour se déplacer dans l’IDE
+description: Découvrez comment vous déplacer dans l’IDE de Visual Studio de la fenêtre à la fenêtre et du fichier au fichier de différentes façons.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769847"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597039"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Guide pratique pour naviguer dans l’IDE Visual Studio
 

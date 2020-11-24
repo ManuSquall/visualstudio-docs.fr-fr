@@ -1,5 +1,7 @@
 ---
 title: Création et exécution de tests unitaires pour les applications UWP
+description: En savoir plus sur la prise en charge de Visual Studio pour les tests unitaires plateforme Windows universelle applications. Visual Studio fournit des modèles de test unitaire pour C#, Visual Basic et C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcf93dff859e2332c79b50086d0dc50d6bd304c8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568878"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598339"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour des applications UWP
 

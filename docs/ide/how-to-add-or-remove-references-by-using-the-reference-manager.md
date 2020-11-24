@@ -1,5 +1,7 @@
 ---
 title: Ajouter des références dans le Gestionnaire de références
+description: Découvrez comment utiliser la boîte de dialogue Gestionnaire de références pour ajouter et gérer des références aux composants développés.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87390260"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597312"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
@@ -53,7 +55,7 @@ La boîte de dialogue Gestionnaire de références affiche différentes catégor
 
 ## <a name="add-a-reference"></a>Ajouter une référence
 
-1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances**, puis choisissez ** Ajouter une référence **. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet et sélectionner **Ajouter**une  >  **référence**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances**, puis choisissez **Ajouter une référence**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet et sélectionner **Ajouter** une  >  **référence**.
 
    Le **Gestionnaire de références** s’ouvre et affiche la liste des références disponibles par groupe.
 
@@ -189,11 +191,11 @@ Un projet peut référencer un composant qui cible une version différente du fr
 
 Vous ne pouvez pas accéder à un kit SDK et l’ajouter à votre projet. Vous pouvez uniquement rechercher un fichier (par exemple un assembly ou un fichier *.winmd*) et l’ajouter à votre projet.
 
-Lors d’une référence de fichier à un WinMD, la disposition attendue est que les fichiers * \<FileName> . WinMD*, * \<FileName> . dll*et * \<FileName> . pri* sont placés les uns à côté des autres. Si vous référencez un fichier WinMD dans les scénarios suivants, un ensemble incomplet de fichiers est copié dans le répertoire de sortie du projet et, par conséquent, des erreurs de rendu et d'exécution se produisent.
+Lors d’une référence de fichier à un WinMD, la disposition attendue est que les fichiers *\<FileName> . WinMD*, *\<FileName> . dll* et *\<FileName> . pri* sont placés les uns à côté des autres. Si vous référencez un fichier WinMD dans les scénarios suivants, un ensemble incomplet de fichiers est copié dans le répertoire de sortie du projet et, par conséquent, des erreurs de rendu et d'exécution se produisent.
 
-- **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En référençant ce fichier de composant natif, MSBuild ne détecte pas que les WinMD nommés différemment constituent un même composant. Par conséquent, seuls les * \<FileName> . dll* et * \<FileName> . winmd* portant le même nom seront copiés et des erreurs d’exécution se produiront. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md).
+- **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En référençant ce fichier de composant natif, MSBuild ne détecte pas que les WinMD nommés différemment constituent un même composant. Par conséquent, seuls les *\<FileName> . dll* et *\<FileName> . winmd* portant le même nom seront copiés et des erreurs d’exécution se produiront. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md).
 
-- **Consommation de contrôles** : au minimum, un contrôle XAML se compose d’un fichier *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* et *\<ImageName>.jpg*. Lorsque le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet, et seuls les fichiers * \<FileName> . winmd*, * \<FileName> . dll* et * \<FileName> . pri* sont copiés. Une erreur de build est journalisée pour informer l’utilisateur que les ressources * \<XamlName> . Xaml* et * \<ImageName> . jpg* sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un kit SDK d’extension en suivant les étapes décrites dans [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
+- **Consommation de contrôles** : au minimum, un contrôle XAML se compose d’un fichier *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* et *\<ImageName>.jpg*. Lorsque le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet, et seuls les fichiers *\<FileName> . winmd*, *\<FileName> . dll* et *\<FileName> . pri* sont copiés. Une erreur de build est journalisée pour informer l’utilisateur que les ressources *\<XamlName> . Xaml* et *\<ImageName> . jpg* sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un kit SDK d’extension en suivant les étapes décrites dans [Créer un kit SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
 
     ```xml
     <PropertyGroup>
@@ -206,9 +208,9 @@ Lors d’une référence de fichier à un WinMD, la disposition attendue est que
 
 ## <a name="recent"></a>Récent
 
-Les **assemblys**, **com**, **Windows**et **Parcourir** prennent tous en charge un onglet **récent** , qui énumère la liste des composants récemment ajoutés aux projets.
+Les **assemblys**, **com**, **Windows** et **Parcourir** prennent tous en charge un onglet **récent** , qui énumère la liste des composants récemment ajoutés aux projets.
 
-## <a name="search"></a>Recherche
+## <a name="search"></a>Rechercher
 
 La barre de recherche de la boîte de dialogue Gestionnaire de références fonctionne sur l’onglet actif. Par exemple, si un utilisateur tape « System » dans la barre de recherche alors que l’onglet **Solution** est actif, la recherche ne renvoie aucun résultat à moins que la solution soit composée d’un nom de projet contenant « System ».
 

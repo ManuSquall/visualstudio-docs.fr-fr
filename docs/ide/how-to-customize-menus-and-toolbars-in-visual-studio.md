@@ -1,5 +1,7 @@
 ---
 title: Personnaliser des menus et des barres d’outils
+description: Apprenez à personnaliser les menus et les barres d’outils de Visual Studio, et apprenez à personnaliser les commandes incluses dans les menus et les barres d’outils.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9111631014275da92da73966ba0310971dbf27f
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284397"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597233"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Guide pratique pour personnaliser des menus et des barres d’outils dans Visual Studio
 

@@ -1,5 +1,7 @@
 ---
 title: Gérer les paramètres d’application (.NET)
+description: Apprenez à gérer les paramètres d’application (anciennement appelés propriétés dynamiques) qui ne sont pas inclus dans le code de l’application, mais qui sont nécessaires au moment de l’exécution.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593705"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596896"
 ---
 # <a name="manage-application-settings-net"></a>Gérer les paramètres d’application (.NET)
 
@@ -50,7 +52,7 @@ Notez que les modifications apportées aux paramètres utilisateur ne sont pas �
 
 ## <a name="create-application-settings-at-design-time"></a>Créer les paramètres d’application au moment du design
 
-Au moment du design, vous pouvez créer des paramètres d’application de deux manières : avec la page **Paramètres** du **Concepteur de projets**ou avec la fenêtre **Propriétés** pour un formulaire ou un contrôle, ce qui vous permet de lier un paramètre à une propriété.
+Au moment du design, vous pouvez créer des paramètres d’application de deux manières : avec la page **Paramètres** du **Concepteur de projets** ou avec la fenêtre **Propriétés** pour un formulaire ou un contrôle, ce qui vous permet de lier un paramètre à une propriété.
 
 Lorsque vous créez un paramètre de portée application (par exemple, une chaîne de connexion à une base de données ou une référence aux ressources du serveur), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’enregistre dans *app.config* avec la `<applicationSettings>` balise. (Les chaînes de connexion sont enregistrées sous la balise `<connectionStrings>` .)
 

@@ -1,5 +1,7 @@
 ---
 title: Utiliser le fichier config pour définir la source de données
+description: Découvrez comment utiliser une source de données définie dans un fichier de app.config pour les tests unitaires, en commençant par la création d’un fichier app.config qui définit une source de données.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75776154"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598495"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données
 

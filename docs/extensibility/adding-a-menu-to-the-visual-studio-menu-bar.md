@@ -1,5 +1,7 @@
 ---
 title: Ajout d’un menu à la barre de menus de Visual Studio | Microsoft Docs
+description: Découvrez comment ajouter un menu à la barre de menus de l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc84eb8854c0a6ff738a51c2ca883ad0527ec919
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801852"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597858"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Ajouter un menu à la barre de menus de Visual Studio
 
-Cette procédure pas à pas montre comment ajouter un menu à la barre de menus de l’environnement de développement intégré (IDE) de Visual Studio. La barre de menus IDE contient des catégories de menu telles que **fichier**, **Edition**, **affichage**, **fenêtre**et **aide**.
+Cette procédure pas à pas montre comment ajouter un menu à la barre de menus de l’environnement de développement intégré (IDE) de Visual Studio. La barre de menus IDE contient des catégories de menu telles que **fichier**, **Edition**, **affichage**, **fenêtre** et **aide**.
 
 Avant d’ajouter un nouveau menu à la barre de menus de Visual Studio, déterminez si vos commandes doivent être placées dans un menu existant. Pour plus d’informations sur l’emplacement des commandes, consultez [menus et commandes pour Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
 

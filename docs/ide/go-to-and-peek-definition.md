@@ -1,5 +1,7 @@
 ---
 title: Affichage des définitions de type
+description: Découvrez les fonctionnalités atteindre la définition et aperçu de la définition qui vous permettent d’afficher facilement la définition d’un type ou d’un membre.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592072"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597494"
 ---
 # <a name="view-type-and-member-definitions"></a>Afficher les définitions de type et de membre
 

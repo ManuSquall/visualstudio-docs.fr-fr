@@ -1,5 +1,7 @@
 ---
 title: Créer des modèles web
+description: Découvrez comment créer manuellement un modèle Web et identifier le langage de programmation utilisé par le modèle.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8546b1364248b5c419a32e8f8ed40abf0b69fb5a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284176"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597078"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Guide pratique pour créer manuellement des modèles web
 
@@ -52,7 +54,7 @@ La création d’un modèle web ne ressemble pas à la création d’autres genr
      </TemplateData>
      ```
 
-7. Sélectionnez les fichiers dans votre modèle (y compris le fichier *VSTemplate* ), cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers**le  >  **dossier compressé**. Les fichiers sont compressés dans un fichier *.zip*.
+7. Sélectionnez les fichiers dans votre modèle (y compris le fichier *VSTemplate* ), cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** le  >  **dossier compressé**. Les fichiers sont compressés dans un fichier *.zip*.
 
 8. Placez le fichier de modèle *. zip* dans le répertoire de modèles de projet Visual Studio. Par défaut, ce répertoire est *%USERPROFILE%\Documents\Visual Studio \<Version\> \ProjectTemplates*.
 

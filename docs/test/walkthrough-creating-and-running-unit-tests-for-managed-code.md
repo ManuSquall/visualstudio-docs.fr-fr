@@ -1,5 +1,7 @@
 ---
 title: Tests unitaires C# – Tutoriel
+description: Découvrez comment créer, exécuter et personnaliser une série de tests unitaires à l’aide de l’infrastructure de tests unitaires Microsoft pour le code managé et l’Explorateur de tests de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81223669"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598547"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 

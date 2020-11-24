@@ -1,5 +1,7 @@
 ---
 title: Adressage DPI Issues2 | Microsoft Docs
+description: Découvrez les problèmes liés à la programmation des écrans haute résolution, tels que la mise à l’échelle du contenu, les problèmes de mise en page et l’utilisation des API de mise à l’échelle DPI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740109"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598456"
 ---
 # <a name="address-dpi-issues"></a>Problèmes d’adresse DPI
 Un nombre grandissant d’appareils sont fournis avec des écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). L’utilisation d’une application sur ces ordinateurs nécessite que le contenu soit mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance d’affichage normale pour l’appareil. À partir de 2014, la cible principale pour les affichages à haute densité est celle des appareils informatiques mobiles (tablettes, ordinateurs portables à ouverture latérale et téléphones).
@@ -103,7 +105,7 @@ Les problèmes de disposition courants peuvent être évités principalement en 
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Utilisation de la classe/bibliothèque DPIHelper pour mettre à l’échelle des images et de la disposition
 La bibliothèque d’assistance PPP de Visual Studio est disponible sous forme native et managée et peut être utilisée en dehors du shell Visual Studio par d’autres applications.
 
-Pour utiliser la bibliothèque, accédez aux [exemples d’extensibilité de Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) et clonez l’exemple High-DPI_Images_Icons.
+Pour utiliser la bibliothèque, accédez aux [exemples d’extensibilité de Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) et clonez l’exemple de High-DPI_Images_Icons.
 
 Dans les fichiers sources, incluez *VsUIDpiHelper. h* et appelez les fonctions statiques de la `VsUI::DpiHelper` classe :
 
@@ -126,7 +128,7 @@ Pour accéder aux fonctions d’assistance PPP à partir du code managé qui s�
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- Vérifiez que le projet a des références à **System. Windows. Forms**, **PresentationCore**et **presentationui**.
+- Vérifiez que le projet a des références à **System. Windows. Forms**, **PresentationCore** et **presentationui**.
 
 - Dans le code, utilisez l’espace de noms **Microsoft. VisualStudio. PlatformUI** et appelez les fonctions statiques de la classe DpiHelper. Pour les types pris en charge (points, tailles, rectangles, etc.), des fonctions d’extension sont fournies et retournent de nouveaux objets mis à l’échelle. Par exemple :
 

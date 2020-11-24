@@ -1,5 +1,7 @@
 ---
 title: Ajout d’icônes à des commandes de menu | Microsoft Docs
+description: Découvrez comment ajouter des icônes à des commandes qui peuvent apparaître dans les menus et les barres d’outils de l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903441"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597650"
 ---
 # <a name="add-icons-to-menu-commands"></a>Ajouter des icônes aux commandes de menu
 Les commandes peuvent apparaître dans les menus et les barres d’outils. Dans les barres d’outils, il est courant qu’une commande s’affiche avec simplement une icône (pour économiser de l’espace) tandis que dans les menus, une commande apparaît généralement avec une icône et un texte.
@@ -37,7 +39,7 @@ Les commandes peuvent apparaître dans les menus et les barres d’outils. Dans 
 
 3. Ouvrez le fichier *. vsct* dans l’éditeur.
 
-4. Ajoutez un `GuidSymbol` élément avec le nom **testIcon**. Créez un GUID (**Outils**de  >  **création de GUID**, sélectionnez le **format du Registre** , puis cliquez sur **copier**) et collez-le dans l' `value` attribut. Le résultat doit ressembler à ceci :
+4. Ajoutez un `GuidSymbol` élément avec le nom **testIcon**. Créez un GUID (**Outils** de  >  **création de GUID**, sélectionnez le **format du Registre** , puis cliquez sur **copier**) et collez-le dans l' `value` attribut. Le résultat doit ressembler à ceci :
 
     ```xml
     <!-- Create your own GUID -->

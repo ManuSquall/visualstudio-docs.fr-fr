@@ -1,5 +1,7 @@
 ---
 title: Utilisation du graphique d’activités des utilisateurs virtuels pour les tests de charge
+description: Découvrez comment utiliser le graphique d’activités des utilisateurs virtuels pour isoler les erreurs qui se sont produites pour les utilisateurs virtuels individuels qui ont exécuté votre test de charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f87542e528b743fa59dfe82aa52a57f1a9cfa2c
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169376"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598235"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes
 

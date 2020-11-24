@@ -1,5 +1,7 @@
 ---
 title: Outils de traduction
+description: Découvrez les outils de localisation inclus dans Visual Studio et comment les utiliser pour créer des applications localisées dans plusieurs langues.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65c7a82488fea8fc12e6d5db838818269add0181
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810899"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597442"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Développer des applications mondialisées et traduites
 

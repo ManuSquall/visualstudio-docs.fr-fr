@@ -1,5 +1,7 @@
 ---
 title: Utilisation de l’Aperçu de définition
+description: Découvrez comment utiliser la commande Aperçu de définition pour afficher et modifier votre code sans avoir à changer de contexte à partir du code que vous écrivez actuellement.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: how-to
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b706e730767c7c79fbeebc11291ecd11f4635b6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86092308"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596922"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT+F12)
 
@@ -70,7 +72,7 @@ Quand vous commencez à apporter des modifications dans une fenêtre **Aperçu d
 
 Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu de définition** :
 
-|Fonctionnalités|Raccourci clavier|
+|Fonctionnalité|Raccourci clavier|
 |-------------------|:-----------------------:|
 |Ouvrir la fenêtre de définition|**ALT** + **F12**|
 |Fermer la fenêtre de définition|**Échap**|

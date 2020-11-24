@@ -1,5 +1,7 @@
 ---
 title: Ajout d’une extension de protocole de serveur de langage | Microsoft Docs
+description: Découvrez comment créer une extension Visual Studio qui intègre un serveur de langage basé sur le protocole de serveur de langue (LSP).
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860456"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598144"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -125,7 +127,7 @@ Le LSP n’inclut pas de spécification sur la manière de fournir la coloration
 
 1. Créez un dossier nommé « Grammars » dans votre extension (ou le nom que vous choisissez).
 
-2. Dans le dossier *Grammars* , incluez tous les fichiers * \* . tmlanguage*, * \* . plist*, * \* . tmtheme*ou * \* . JSON* souhaités pour fournir une colorisation personnalisée.
+2. Dans le dossier *Grammars* , incluez tous les fichiers *\* . tmlanguage*, *\* . plist*, *\* . tmtheme* ou *\* . JSON* souhaités pour fournir une colorisation personnalisée.
 
    > [!TIP]
    > Un fichier *. tmtheme* définit la manière dont les étendues sont mappées aux classifications Visual Studio (clés de couleur nommées). Pour obtenir de l’aide, vous pouvez référencer le fichier global *. tmtheme* dans le répertoire *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg*
@@ -292,7 +294,7 @@ La prise en charge des paramètres spécifiques au serveur de langage personnali
 
 Suivez les étapes ci-dessous pour ajouter la prise en charge des paramètres à votre extension de service de langage LSP :
 
-1. Ajoutez un fichier JSON (par exemple, *MockLanguageExtensionSettings.js*) à votre projet qui contient les paramètres et leurs valeurs par défaut. Exemple :
+1. Ajoutez un fichier JSON (par exemple, *MockLanguageExtensionSettings.js*) à votre projet qui contient les paramètres et leurs valeurs par défaut. Par exemple :
 
     ```json
     {
@@ -342,7 +344,7 @@ Suivez les étapes ci-dessous pour ajouter la prise en charge des paramètres à
 
 1. L’utilisateur ouvre un espace de travail contenant les fichiers détenus par votre serveur.
 2. L’utilisateur ajoute un fichier dans le dossier *. vs* appelé *VSWorkspaceSettings.jssur*.
-3. L’utilisateur ajoute une ligne au fichier *VSWorkspaceSettings.js* pour un paramètre fourni par le serveur. Exemple :
+3. L’utilisateur ajoute une ligne au fichier *VSWorkspaceSettings.js* pour un paramètre fourni par le serveur. Par exemple :
 
     ```json
     {
@@ -480,7 +482,7 @@ La fonctionnalité de couche intermédiaire est toujours en cours de développem
 
 Pour afficher le code source d’un exemple d’extension à l’aide de l’API cliente LSP dans Visual Studio, consultez l’exemple VSSDK-Extensibility-Samples [LSP](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol).
 
-## <a name="faq"></a>Questions fréquentes (FAQ)
+## <a name="faq"></a>Forum aux questions
 
 **Je souhaite créer un système de projet personnalisé pour compléter mon serveur de langage LSP afin d’offrir une prise en charge plus riche des fonctionnalités dans Visual Studio. Comment faire ?**
 

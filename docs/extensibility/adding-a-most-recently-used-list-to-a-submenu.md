@@ -1,5 +1,7 @@
 ---
 title: Ajout d’une liste des derniers fichiers utilisés à un sous-menu | Microsoft Docs
+description: Découvrez comment ajouter une liste dynamique qui contient les commandes de menu les plus récemment utilisées à un sous-menu dans l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904205"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597924"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Ajouter une liste des derniers fichiers utilisés à un sous-menu
 Cette procédure pas à pas s’appuie sur les démonstrations dans [Ajouter un sous-menu à un menu](../extensibility/adding-a-submenu-to-a-menu.md)et montre comment ajouter une liste dynamique à un sous-menu. La liste dynamique forme la base de la création d’une liste des derniers fichiers utilisés.
@@ -47,7 +49,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. Dans la `Groups` section, ajoutez le groupe déclaré après les entrées de groupe existantes.
@@ -85,7 +87,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. Dans *TestCommand.cs* , ajoutez l’instruction using suivante.
@@ -147,7 +149,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 6. Après la `InitMRUMenu` méthode, ajoutez la `OnMRUQueryStatus` méthode suivante. Il s’agit du gestionnaire qui définit le texte de chaque élément MRU.
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 7. Après la `OnMRUQueryStatus` méthode, ajoutez la `OnMRUExec` méthode suivante. Il s’agit du gestionnaire permettant de sélectionner un élément MRU. Cette méthode déplace l’élément sélectionné vers le haut de la liste, puis affiche l’élément sélectionné dans une boîte de message.
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];

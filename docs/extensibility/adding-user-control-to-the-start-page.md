@@ -1,5 +1,7 @@
 ---
 title: Ajout d’un contrôle utilisateur à la page de démarrage | Microsoft Docs
+description: Découvrez comment ajouter un contrôle utilisateur Windows Presentation Foundation (WPF) à la page de démarrage dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011994"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597546"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Ajouter un contrôle utilisateur à la page de démarrage
 
@@ -111,7 +113,7 @@ Pour implémenter un contrôle utilisateur WPF, générez l’interface utilisat
 2. Renseignez le gestionnaire d’événements SetButton_Click comme suit.
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -177,13 +179,13 @@ Pour rendre ce contrôle disponible pour le projet de page de démarrage, dans l
 
 ## <a name="test-a-manually-created-custom-start-page"></a>Tester une page de démarrage personnalisée créée manuellement
 
-1. Copiez votre fichier XAML, ainsi que tous les fichiers texte de prise en charge ou fichiers de balisage, dans le dossier *%UserProfile%\My Documents\Visual Studio 2015 \ StartPages \\ *
+1. Copiez votre fichier XAML, ainsi que tous les fichiers texte de prise en charge ou fichiers de balisage, dans le dossier *%UserProfile%\My Documents\Visual Studio 2015 \ StartPages \\*
 
-2. Si votre page de démarrage fait référence à des contrôles ou des types dans des assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys, puis collez-les dans le _dossier d’installation de Visual Studio_** \\ \Common7\IDE\PrivateAssemblies**.
+2. Si votre page de démarrage fait référence à des contrôles ou des types dans des assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys, puis collez-les dans le _dossier d’installation de Visual Studio_**\\ \Common7\IDE\PrivateAssemblies**.
 
 3. À une invite de commandes Visual Studio, tapez **devenv/Rootsuffix exp** pour ouvrir une instance expérimentale de Visual Studio.
 
-4. Dans l’instance expérimentale, accédez à la **Tools**  >  page de démarrage de l’environnement**options**  >  **Environment**  >  **Startup** des outils et sélectionnez votre fichier XAML dans la liste déroulante personnaliser la **page de démarrage** .
+4. Dans l’instance expérimentale, accédez à la **Tools**  >  page de démarrage de l’environnement **options**  >  **Environment**  >  **Startup** des outils et sélectionnez votre fichier XAML dans la liste déroulante personnaliser la **page de démarrage** .
 
 5. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.
 

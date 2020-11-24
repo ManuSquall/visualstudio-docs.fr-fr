@@ -1,5 +1,7 @@
 ---
 title: Convertir du texte en majuscules ou minuscules
+description: Découvrez comment utiliser les commandes de menu ou les raccourcis clavier pour convertir la casse du texte sélectionné en majuscules ou en minuscules.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4574874e14ee66bbfb0f11d7767d59516b6666f3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284631"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597286"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Guide pratique pour changer la casse du texte dans l’éditeur
 

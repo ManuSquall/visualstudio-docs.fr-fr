@@ -1,5 +1,7 @@
 ---
 title: Ajout d’une fenêtre outil | Microsoft Docs
+description: Apprenez à créer une fenêtre outil et à l’intégrer dans Visual Studio en ajoutant un contrôle et une barre d’outils contenant une commande à la fenêtre outil.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904139"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597988"
 ---
 # <a name="add-a-tool-window"></a>Ajouter une fenêtre outil
 

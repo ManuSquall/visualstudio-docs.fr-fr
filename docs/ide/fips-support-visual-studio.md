@@ -1,6 +1,7 @@
 ---
 title: Prise en charge de Visual Studio pour FIPS
 titleSuffix: ''
+description: Découvrez comment Visual Studio prend en charge le mode de fonctionnement approuvé de la publication de normes FIPS (Federal Information Processing Standard) 140-2 pour Windows, Azure et .NET.
 ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
@@ -9,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56fe4fa2381502f01a952977fe2d506dc7792231
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ddf7831df3a820c757120159d6d367b884d224a4
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045516"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597481"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Prise en charge de Visual Studio pour le mode d’opération approuvé de FIPS 140-2
 
 Depuis la [version 16,4](/visualstudio/releases/2019/release-notes-v16.4/), Visual Studio 2019 prend en charge la publication normes FIPS (Federal Information Processing Standard) (FIPS) 140-2 mode d’opération approuvé pour Windows, Azure et .net. Et, avec la [version 16,5](/visualstudio/releases/2019/release-notes-archive-v16.5), Visual Studio prend désormais en charge le mode d’opération approuvé FIPS 140-2 quand vous développez des [applications C++ qui ciblent un système Linux distant](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
 
-Pour configurer le mode d’opération approuvé FIPS 140-2 pour Visual Studio, [installez .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) , puis activez le paramètre stratégie de groupe, **chiffrement système : utilisez des algorithmes compatibles FIPS pour le chiffrement, le hachage et la signature** .
+Pour configurer le mode d’opération approuvé FIPS 140-2 pour Visual Studio, [installez .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) , puis activez le paramètre stratégie de groupe, **chiffrement système : utilisez des algorithmes compatibles FIPS pour le chiffrement, le hachage et la signature**.
 
 Pour plus d’informations sur le mode d’opération approuvé FIPS 140-2 et sur la façon de l’activer, consultez [validation fips 140-2](/windows/security/threat-protection/fips-140-validation/).
 

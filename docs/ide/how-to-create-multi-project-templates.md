@@ -1,5 +1,7 @@
 ---
 title: Créer des modèles à projets multiples
+description: Découvrez comment créer des modèles à plusieurs projets dans Visual Studio qui peuvent agir en tant que conteneurs pour de nombreux projets en même temps.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd0808342e38627d0b79b097f36f86a1881dafe
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284410"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597223"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
 
@@ -113,7 +115,7 @@ Le fichier *VSTemplate* racine d’un modèle à plusieurs projets diffère d’
 
 8. Dans le répertoire de base, créez un fichier XML portant une extension *.vstemplate*. Ce fichier contient les métadonnées du modèle à plusieurs projets. Consultez l’exemple qui suit pour la structure du fichier. Veillez à spécifier le chemin d’accès relatif au fichier *VSTemplate* de chaque projet.
 
-9. Sélectionnez tous les fichiers dans le répertoire de base, puis, dans le menu contextuel, cliquez avec le bouton droit et choisissez **Envoyer vers**le  >  **dossier compressé (zippé)**.
+9. Sélectionnez tous les fichiers dans le répertoire de base, puis, dans le menu contextuel, cliquez avec le bouton droit et choisissez **Envoyer vers** le  >  **dossier compressé (zippé)**.
 
    Les fichiers et dossiers sont compressés dans un fichier *.zip*.
 

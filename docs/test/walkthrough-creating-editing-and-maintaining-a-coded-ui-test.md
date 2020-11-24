@@ -1,5 +1,7 @@
 ---
 title: Créer un test codé de l'interface utilisateur
+description: Apprenez à utiliser un test codé de l’interface utilisateur pour une application Windows Presentation Framework et consultez les solutions pour les tests avec des problèmes de minutage et la refactorisation des contrôles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f36704405776a790c3ec634856f54ee51bc23dc6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592059"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598534"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
 
@@ -81,7 +83,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
     }
     ```
 
-10. Enregistrez le fichier .
+10. Enregistrez le fichier.
 
 ### <a name="run-the-wpf-app"></a>Exécuter l’application WPF
 
@@ -333,7 +335,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Bien démarrer avec les tests codés de l’interface utilisateur](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>Questions fréquentes (FAQ)
+## <a name="faq"></a>Forum aux questions
 
 [FAQ concernant les tests codés de l’interface utilisateur](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

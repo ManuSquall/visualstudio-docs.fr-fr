@@ -1,5 +1,7 @@
 ---
 title: Ajout d’une barre d’outils | Microsoft Docs
+description: Découvrez comment ajouter une barre d’outils contenant des boutons liés à des commandes dans l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904076"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597949"
 ---
 # <a name="add-a-toolbar"></a>Ajouter une barre d’outils
 Cette procédure pas à pas montre comment ajouter une barre d’outils à l’IDE de Visual Studio.

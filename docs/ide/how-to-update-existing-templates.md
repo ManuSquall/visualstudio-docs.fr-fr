@@ -1,5 +1,7 @@
 ---
 title: Mettre à jour des modèles d’élément de projet existants
+description: Découvrez comment utiliser l’Assistant exportation de modèle et d’autres processus manuels pour mettre à jour les modèles d’élément de projet que vous avez déjà créés.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3a709070d777ebaf600fc05abf0e651eaef5b1a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283916"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596883"
 ---
 # <a name="how-to-update-existing-templates"></a>Guide pratique pour mettre à jour des modèles existants
 
@@ -57,7 +59,7 @@ Vous pouvez mettre à jour un modèle existant sans utiliser l’**Assistant Exp
 
     Pour plus d’informations sur le schéma *.vstemplate*, consultez [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md). Pour plus d’informations sur ce que vous pouvez paramétrer dans les fichiers sources, consultez [paramètres de modèle](../ide/template-parameters.md).
 
-1. Sélectionnez les fichiers dans votre modèle, puis dans le menu contextuel, cliquez avec le bouton droit et choisissez **Envoyer vers**le  >  **dossier compressé**.
+1. Sélectionnez les fichiers dans votre modèle, puis dans le menu contextuel, cliquez avec le bouton droit et choisissez **Envoyer vers** le  >  **dossier compressé**.
 
     Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
 

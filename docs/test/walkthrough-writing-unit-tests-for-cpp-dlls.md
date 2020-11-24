@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour écrire des tests unitaires pour des DLL C++
+description: Découvrez comment développer une DLL C++ native à l’aide de la méthodologie test-First. Commencez par créer un projet de test natif.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816005"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598404"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Guide pratique pour écrire des tests unitaires pour des DLL C++
 
@@ -152,7 +154,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
 1. Ajoutez le projet DLL aux références de projet du projet de test :
 
-   1. Cliquez avec le bouton droit sur le nœud du projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > ** Référence**.
+   1. Cliquez avec le bouton droit sur le nœud du projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Référence**.
 
    2. Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.
 

@@ -1,5 +1,7 @@
 ---
 title: Gérer les outils externes
+description: Découvrez comment ajouter et gérer de nouveaux outils externes auxquels vous pouvez accéder via le menu outils.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591292"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596688"
 ---
 # <a name="manage-external-tools"></a>Gérer les outils externes
 
@@ -61,7 +63,7 @@ Vous pouvez ajouter un outil externe pour qu’il s’affiche dans le menu **Out
 
 Voici une liste complète des arguments qui peuvent être utilisés lors de la définition d’un outil externe :
 
-|Nom|Argument|Description|
+|Name|Argument|Description|
 |----------|--------------|-----------------|
 |Chemin d'accès de l'élément|$(ItemPath)|Nom complet du fichier actif (lecteur + chemin d'accès + nom de fichier).|
 |Répertoire de l'élément|$(ItemDir)|Répertoire du fichier actif (lecteur + chemin d'accès).|
@@ -81,7 +83,7 @@ Voici une liste complète des arguments qui peuvent être utilisés lors de la d
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|
 
 > [!NOTE]
-> La barre d’État IDE affiche les variables **ligne active** et **colonne actuelle** pour indiquer où se trouve le point d’insertion dans l' **éditeur de code**actif. La variable **Text actuelle** retourne le texte ou le code sélectionné à cet emplacement.
+> La barre d’État IDE affiche les variables **ligne active** et **colonne actuelle** pour indiquer où se trouve le point d’insertion dans l' **éditeur de code** actif. La variable **Text actuelle** retourne le texte ou le code sélectionné à cet emplacement.
 
 ## <a name="see-also"></a>Voir aussi
 

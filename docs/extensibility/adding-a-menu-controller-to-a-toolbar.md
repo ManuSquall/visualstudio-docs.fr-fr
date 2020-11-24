@@ -1,5 +1,7 @@
 ---
 title: Ajout d’un contrôleur de menu à une barre d’outils | Microsoft Docs
+description: Apprenez à créer un contrôleur de menu et à l’ajouter à une barre d’outils de la fenêtre outil dans Visual Studio, puis à implémenter les commandes du contrôleur de menu et à le tester.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903530"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597819"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Ajouter un contrôleur de menu à une barre d’outils
 Cette procédure pas à pas s’appuie sur la procédure pas à pas [Ajouter une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) et montre comment ajouter un contrôleur de menu à la barre d’outils de la fenêtre outil. Les étapes décrites ici peuvent également être appliquées à la barre d’outils créée dans la procédure pas à pas [Ajouter une barre d’outils](../extensibility/adding-a-toolbar.md) .
@@ -113,15 +115,15 @@ Les contrôleurs de menu peuvent apparaître dans les menus, mais ils sont le pl
 1. Dans *TWTestCommandPackageGuids.cs*, ajoutez des ID de commande pour vos trois éléments de menu après les ID de commande existants.
 
     ```csharp
-    public const int cmdidMCItem1 = 0x130;
-    public const int cmdidMCItem2 = 0x131;
-    public const int cmdidMCItem3 = 0x132;
+    public const int cmdidMCItem1 = 0x130;
+    public const int cmdidMCItem2 = 0x131;
+    public const int cmdidMCItem3 = 0x132;
     ```
 
 2. Dans *TWTestCommand.cs*, ajoutez le code suivant en haut de la `TWTestCommand` classe.
 
     ```csharp
-    private int currentMCCommand; // The currently selected menu controller command
+    private int currentMCCommand; // The currently selected menu controller command
     ```
 
 3. Dans le constructeur TWTestCommand, après le dernier appel à la `AddCommand` méthode, ajoutez du code pour acheminer les événements pour chaque commande via les mêmes gestionnaires.
@@ -136,7 +138,7 @@ Les contrôleurs de menu peuvent apparaître dans les menus, mais ils sont le pl
           EventHandler(OnMCItemClicked), cmdID);
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);
         commandService.AddCommand(mc);
-        // The first item is, by default, checked. 
+        // The first item is, by default, checked. 
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)
         {
             mc.Checked = true;
@@ -148,7 +150,7 @@ Les contrôleurs de menu peuvent apparaître dans les menus, mais ils sont le pl
 4. Ajoutez un gestionnaire d’événements à la classe **TWTestCommand** pour marquer la commande sélectionnée comme activée.
 
     ```csharp
-    private void OnMCItemQueryStatus(object sender, EventArgs e)
+    private void OnMCItemQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -161,7 +163,7 @@ Les contrôleurs de menu peuvent apparaître dans les menus, mais ils sont le pl
 5. Ajoutez un gestionnaire d’événements qui affiche un MessageBox quand l’utilisateur sélectionne une commande sur le contrôleur de menu :
 
     ```csharp
-    private void OnMCItemClicked(object sender, EventArgs e)
+    private void OnMCItemClicked(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)

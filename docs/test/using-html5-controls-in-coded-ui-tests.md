@@ -1,5 +1,7 @@
 ---
 title: Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
+description: En savoir plus sur la prise en charge des tests codés de l’interface utilisateur pour les contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d902d31b0d417c32b7b3e1a2067a8bb5bcf77451
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289337"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598378"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
@@ -77,7 +79,7 @@ Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element
 > [!NOTE]
 > Si vous rembobinez ou avancez rapidement la vidéo à l'aide d'étiquettes-30s ou +30s, celle-ci est agrégée pour rechercher le moment précis.
 
-## <a name="progressbar"></a>Barre de progression
+## <a name="progressbar"></a>ProgressBar
 **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
 ![Contrôle de barre de progression HTML5](../test/media/codedui_html5_progressbar.png)

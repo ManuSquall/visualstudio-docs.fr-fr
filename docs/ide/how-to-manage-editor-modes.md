@@ -1,5 +1,7 @@
 ---
 title: Mode Plein écran et mode Espace virtuel
+description: Découvrez comment gérer les modes de l’éditeur Visual Studio pour afficher tous les outils et fenêtres d’une manière qui vous convient le mieux.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -24,12 +26,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b86859f5f5718871499bb1f3e2014da59f956db
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284202"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597143"
 ---
 # <a name="how-to-manage-editor-modes"></a>Guide pratique pour gérer les modes de l’éditeur
 
@@ -54,7 +56,7 @@ En mode **Espace virtuel**, des espaces sont insérés à la fin de chaque ligne
 
 1. Sélectionnez **Options** dans le menu **Outils**.
 
-2. Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez **Basic**le  >  nœud Éditeur de**texte** de base.
+2. Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez **Basic** le  >  nœud Éditeur de **texte** de base.
 
 3. Sélectionnez les options **Général**, puis, sous **Paramètres**, sélectionnez **Activer l’espace virtuel**.
 

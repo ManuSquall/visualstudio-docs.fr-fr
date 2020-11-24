@@ -1,5 +1,6 @@
 ---
 title: Isolez votre application avec des shims (tests unitaires)
+description: Découvrez comment utiliser les types shim pour détourner les appels à des méthodes spécifiques vers du code que vous écrivez dans le cadre de votre test. Un shim peut retourner des résultats cohérents à chaque appel.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325930"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598209"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utiliser des shims pour isoler votre application pour les tests unitaires
 
@@ -67,14 +68,14 @@ using (ShimsContext.Create()) {
 
 Tout d’abord, ajoutez un assembly de simulation :
 
-1. Dans **Explorateur de solutions** , 
+1. Dans **Explorateur de solutions**, 
     - Pour un projet de .NET Framework plus ancien (style non-SDK), développez le nœud **références** de votre projet de test unitaire.
     ::: moniker range=">=vs-2019"
-    - Pour un projet de type SDK ciblant .NET Framework ou .NET Core, développez le nœud **dépendances** pour trouver l’assembly que vous souhaitez falsifier sous **assemblys** , **projets** ou **packages**.
+    - Pour un projet de type SDK ciblant .NET Framework ou .NET Core, développez le nœud **dépendances** pour trouver l’assembly que vous souhaitez falsifier sous **assemblys**, **projets** ou **packages**.
     ::: moniker-end
     - Si vous utilisez Visual Basic, sélectionnez **Afficher tous les fichiers** dans la barre d’outils **Explorateur de solutions** pour afficher le nœud **références** .
 
-2. Sélectionnez l’assembly qui contient les définitions de classe pour lesquelles vous souhaitez créer des shims. Par exemple, si vous souhaitez shim **DateTime** , sélectionnez **System.dll**.
+2. Sélectionnez l’assembly qui contient les définitions de classe pour lesquelles vous souhaitez créer des shims. Par exemple, si vous souhaitez shim **DateTime**, sélectionnez **System.dll**.
 
 3. Dans le menu contextuel, choisissez **Ajouter un assembly Fakes**.
 

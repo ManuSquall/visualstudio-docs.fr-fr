@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour utiliser des extraits de code Entourer de | Microsoft Docs
+description: Découvrez comment accéder aux extraits de code entourer de via un raccourci clavier, dans le menu Edition ou dans un menu contextuel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbbd283186ed31960b2f84bd862a762abae748de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd117937979b73b4dbecb19844159e6e8995cf8e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769774"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596870"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Guide pratique pour utiliser des extraits de code Entourer de
 

@@ -1,5 +1,7 @@
 ---
 title: Créer et exécuter un test de charge
+description: Découvrez comment créer un test de charge qui contient des tests unitaires. Vous créez et exécutez des tests de charge à l’aide de Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093634"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598261"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procédure pas à pas : Créer et exécuter un test de charge qui contient des tests unitaires
 

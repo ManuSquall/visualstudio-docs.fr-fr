@@ -1,5 +1,7 @@
 ---
 title: Création de modèles d’élément multifichier
+description: Découvrez comment créer un modèle d’élément dans Visual Studio qui est constitué de plusieurs fichiers.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a947d23bd7094e003bae3cfe880299bb3698d92e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284423"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597260"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Guide pratique pour créer des modèles d’élément multifichiers
 
@@ -53,7 +55,7 @@ Vous pouvez créer un modèle d’élément multifichier de la même manière qu
      > [!NOTE]
      > Quand vous ajoutez à un projet un élément dérivé de ce modèle, les noms de fichiers dérivent du nom que l’utilisateur entre dans la boîte de dialogue **Ajouter un nouvel élément**.
 
-1. Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers**le  >  **dossier compressé**.
+1. Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** le  >  **dossier compressé**.
 
    Les fichiers que vous avez sélectionnés sont compressés dans un fichier *. zip* .
 

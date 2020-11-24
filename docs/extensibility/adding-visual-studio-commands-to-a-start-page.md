@@ -1,5 +1,7 @@
 ---
 title: Ajout de commandes Visual Studio à une page de démarrage | Microsoft Docs
+description: Découvrez les différentes façons de lier des commandes Visual Studio à des objets XAML sur une page de démarrage personnalisée dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740115"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597520"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Ajouter des commandes Visual Studio à une page de démarrage
 

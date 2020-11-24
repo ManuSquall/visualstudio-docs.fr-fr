@@ -1,5 +1,7 @@
 ---
 title: Guide pratique pour spécifier une icône d’application (Visual Basic, C#)
+description: Découvrez comment utiliser la propriété Icon pour spécifier l’icône que l’Explorateur de fichiers et la barre des tâches Windows affichent pour l’application compilée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34405fd52b49e89c2fa0fc95ec1268448bad3061
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284059"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596909"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Guide pratique pour spécifier une icône d’application (Visual Basic, C#)
 
