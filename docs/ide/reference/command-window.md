@@ -1,5 +1,7 @@
 ---
 title: Fenêtre Commande
+description: Découvrez comment vous pouvez utiliser le Fenêtre Commande pour exécuter des commandes ou des alias directement dans l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570347"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040887"
 ---
 # <a name="command-window"></a>Fenêtre Commande
 La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias directement dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vous pouvez exécuter à la fois les commandes de menu et les commandes qui n’apparaissent dans aucun menu. Pour afficher la fenêtre **Commande**, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Fenêtre Commande**.

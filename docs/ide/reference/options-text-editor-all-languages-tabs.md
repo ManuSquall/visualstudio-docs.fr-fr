@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, Tous les langages, Onglets
+description: Découvrez comment utiliser la page onglets de la section tous les langages pour modifier le comportement par défaut des onglets de l’éditeur de code dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -41,12 +43,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e66654c8ceefa2cb7983c29f441cbb0f9cf97aff
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594745"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043970"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Options, Éditeur de texte, Tous les langages, Onglets
 
@@ -73,7 +75,7 @@ Lorsque cette option est sélectionnée, les nouvelles lignes sont positionnées
 
 Par exemple, les lignes comprises entre une accolade ouvrante ( { ) et une accolade fermante ( } ) peuvent automatiquement être mises en retrait d’un taquet de tabulation supplémentaire à partir de la position des accolades alignées.
 
-## <a name="tabs"></a>Onglets
+## <a name="tabs"></a>Tabulations
 
 Taille des tabulation
 

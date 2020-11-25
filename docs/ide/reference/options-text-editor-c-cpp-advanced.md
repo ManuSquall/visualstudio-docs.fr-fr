@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, C/C++, Avancé
+description: Découvrez comment utiliser la page avancé de la section C/C++ pour modifier le comportement lié à IntelliSense et à la base de données de navigation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe69471d231599c6e3eece0b56ff70fca5b6afab
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77275202"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040340"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 
@@ -182,7 +184,7 @@ Ajoute une ligne quand vous appuyez sur la touche Entrée à la fin du mot compl
 
 Remplace « . » par « -> » le cas échéant pour la liste des membres.
 
-## <a name="references"></a>References
+## <a name="references"></a>Références
 
 **Désactiver la résolution**
 
@@ -208,4 +210,4 @@ Si cette option est activée, vous pouvez entourer le texte sélectionné de par
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définition des options de l’éditeur spécifiques à une langue](../../ide/reference/setting-language-specific-editor-options.md)
+- [Définition des options de l’éditeur de Language-Specific](../../ide/reference/setting-language-specific-editor-options.md)

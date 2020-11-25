@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, HTML (Web Forms), Divers
+description: Découvrez comment utiliser la page divers dans la section HTML pour définir les préférences quant à la façon dont l’éditeur HTML gère les éléments collés dans la page.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5495f60e92a38c0c43a0751054d41dc4de6970
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770906"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040769"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Options, Éditeur de texte, HTML (Web Forms), Divers
 

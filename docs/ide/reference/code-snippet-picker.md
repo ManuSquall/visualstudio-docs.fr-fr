@@ -1,5 +1,7 @@
 ---
 title: Sélecteur d'extraits de code
+description: Découvrez comment utiliser le sélecteur d’extrait de code pour insérer des blocs de code prêts à l’emploi dans le document actif.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf0b1c264911c92389c6c3afe722b5061455c3da
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570490"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041016"
 ---
 # <a name="code-snippet-picker"></a>Sélecteur d'extraits de code
 

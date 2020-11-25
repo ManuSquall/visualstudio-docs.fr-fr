@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, C/C++, Affichage
+description: Découvrez comment utiliser la page de vue dans la section C/C++ pour modifier le comportement par défaut des tildes de code, du code inactif, du mode plan et bien plus encore dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77278693"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041072"
 ---
 # <a name="options-text-editor-cc-view"></a>Options, Éditeur de texte, C/C++, Affichage
 
@@ -56,5 +58,5 @@ Vous pouvez activer ou désactiver les paramètres suivants pour gérer la faço
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définition des options de l’éditeur spécifiques à une langue](../../ide/reference/setting-language-specific-editor-options.md)
+- [Définition des options de l’éditeur de Language-Specific](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

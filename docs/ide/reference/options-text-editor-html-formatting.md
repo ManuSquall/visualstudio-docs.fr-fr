@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, HTML (Web Forms), Mise en forme
+description: Découvrez comment utiliser la page mise en forme dans la section HTML pour définir des options de projet HTML pour la mise en forme du code dans l’éditeur de code.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568319"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040977"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Options, Éditeur de texte, HTML (Web Forms), Mise en forme
 
-Utilisez la page d’options **Mise en forme** afin de définir les options de mise en forme du code dans l’éditeur de code pour les projets HTML. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis **Text Editor**  >  mise en forme éditeur de texte**HTML (Web Forms)**  >  **Formatting**.
+Utilisez la page d’options **Mise en forme** afin de définir les options de mise en forme du code dans l’éditeur de code pour les projets HTML. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis **Text Editor**  >  mise en forme éditeur de texte **HTML (Web Forms)**  >  **Formatting**.
 
 ## <a name="capitalization"></a>Mise en majuscules
 
@@ -37,7 +39,7 @@ Ces options déterminent la mise en majuscules du balisage des contrôles serveu
 |Option|Résultats|
 |---------------------------------|------------------------------|
 |**Tel qu’entré**|La casse de l’élément est exactement celle que vous entrez.|
-|**Capitale**|Les noms d’éléments sont remis en forme pour être convertis en majuscules.|
+|**Majuscules**|Les noms d’éléments sont remis en forme pour être convertis en majuscules.|
 |**Minuscules**|Les noms d’éléments sont remis en forme pour être convertis en minuscules.|
 |**Définition d’assembly**|La casse de l’élément dépend de la manière dont l’élément est défini dans le type de classe correspondant.|
 
@@ -48,7 +50,7 @@ Ces options indiquent si la mise en forme automatique convertit les noms de prop
 |Option|Résultats|
 |---------------------------------|------------------------------|
 |**Tel qu’entré**|La casse de l’attribut est exactement celle que vous entrez.|
-|**Capitale**|Les noms d'attributs sont remis en forme pour être convertis en majuscules.|
+|**Majuscules**|Les noms d'attributs sont remis en forme pour être convertis en majuscules.|
 |**Minuscules**|Les noms d'attributs sont remis en forme pour être convertis en minuscules.|
 
 ## <a name="automatic-formatting-options"></a>Options de mise en forme automatique
@@ -84,16 +86,16 @@ Ces options déterminent si l’éditeur scinde les balises en plusieurs lignes 
 
 ### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
-- **Renvoyer les balises à la ligne au-delà de la longueur spécifiée **
+- **Renvoyer les balises à la ligne au-delà de la longueur spécifiée**
 
    Quand cette option est sélectionnée, l’éditeur scinde les balises sur les lignes si elles dépassent la longueur que vous avez spécifiée dans la zone de texte **Longueur**. Cette action se produit uniquement lors de la mise en forme de la balise, et non quand vous entrez une nouvelle balise.
 
    > [!NOTE]
    > La valeur que vous spécifiez est utilisée comme une valeur minimale. L'éditeur ne scinde pas les attributs individuels.
 
-- **Longueur**
+- **Durée**
 
-   Spécifie le nombre de caractères qui peuvent s'afficher dans une ligne avant de passer à la ligne suivante. Cette zone d’entrée est déactivée sauf si la case **Renvoyer les balises à la ligne au-delà de la longueur spécifiée ** est cochée.
+   Spécifie le nombre de caractères qui peuvent s'afficher dans une ligne avant de passer à la ligne suivante. Cette zone d’entrée est déactivée sauf si la case **Renvoyer les balises à la ligne au-delà de la longueur spécifiée** est cochée.
 
 - **Options spécifiques pour les balises**
 

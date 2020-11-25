@@ -1,5 +1,7 @@
 ---
 title: -DebugExe (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande DebugExe devenv pour ouvrir un fichier exécutable spécifié à déboguer.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeae28288936b6723b53e826142a4888ad0bc8b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e60c3fb8a72caa44bcf70ac36850748ce240d42
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570139"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039469"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
@@ -36,7 +38,7 @@ devenv /DebugExe ExecutableFile
 
   Obligatoire. Chemin d’accès et nom d’un fichier `.exe`. Si le fichier `.exe` est introuvable ou n’existe pas, aucun avertissement ni erreur ne s’affiche et Visual Studio démarre normalement.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Toute chaîne qui suit le paramètre *ExecutableFile* est transmise à ce fichier comme argument.
 

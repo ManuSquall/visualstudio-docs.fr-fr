@@ -1,5 +1,7 @@
 ---
 title: -Upgrade (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande Upgrade devenv pour mettre à jour le fichier solution et tous ses fichiers projet, ou le fichier projet spécifié, aux formats Visual Studio actuels pour ces fichiers.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bb2b296d8728587c9aa3c22b7a670d89612eff1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bb0565783efb27cf4194bb25982ee0f717be776
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596422"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040951"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -41,9 +43,9 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 - `/Out`*OutputFileName*
 
-  facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Les sauvegardes sont créées et copiées automatiquement dans un répertoire nommé Backup, créé dans le répertoire actif.
 

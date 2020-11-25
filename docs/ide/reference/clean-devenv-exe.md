@@ -1,5 +1,7 @@
 ---
 title: -Clean (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande Clean devenv pour nettoyer tous les fichiers intermédiaires et les répertoires de sortie.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6023df4e0f8721f18a82950c0ea507406fd48e02
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570464"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041047"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -38,21 +40,21 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *Config*
 
-  facultatif. Configuration (par exemple, `Debug` ou `Release`) à appliquer pour nettoyer les fichiers intermédiaires de la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
+  Optionnel. Configuration (par exemple, `Debug` ou `Release`) à appliquer pour nettoyer les fichiers intermédiaires de la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
 
 - `/Project` *NomProjet*
 
-  facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
+  Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  facultatif. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) à utiliser lors du nettoyage du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *Config*.
+  Optionnel. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) à utiliser lors du nettoyage du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *Config*.
 
 - `/Out`*OutputFileName*
 
-  facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Ce commutateur a la même fonction que la commande de menu **Nettoyer la Solution** dans l’environnement IDE.
 

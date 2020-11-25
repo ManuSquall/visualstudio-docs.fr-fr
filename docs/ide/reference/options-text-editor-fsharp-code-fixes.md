@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, F#, Correctifs du code
+description: 'Découvrez comment utiliser la page correctifs de code de la section F # pour spécifier les paramètres permettant d’identifier les erreurs de code et d’offrir des solutions.'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c20646c8da4101ac674a64c5ca1ed23a3b1fd7b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73d66e4f8611a08d6dee3733c30b075d71f6712c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770929"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039599"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>Options : éditeur de texte > les correctifs de code > F #
 

@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, HTML (Web Forms), Validation
+description: Découvrez comment utiliser la page validation de la section HTML pour définir les préférences quant à la façon dont l’éditeur HTML vérifie la syntaxe du balisage HTML dans votre document.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568280"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040561"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Options, Éditeur de texte, HTML (Web Forms), Validation
 

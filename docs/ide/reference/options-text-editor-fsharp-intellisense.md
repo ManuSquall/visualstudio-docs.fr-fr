@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, F#, IntelliSense
+description: 'Découvrez comment utiliser la page IntelliSense de la section F # pour modifier les paramètres IntelliSense de l’éditeur de texte pour F #.'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84e24f609891e67bdafaab5ff8847dc341b861ba
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72666227"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039612"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Options, Éditeur de texte, F#, IntelliSense
 

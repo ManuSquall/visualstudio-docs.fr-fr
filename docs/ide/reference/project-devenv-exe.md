@@ -1,5 +1,7 @@
 ---
 title: -Project (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande du projet devenv pour identifier un projet unique dans la configuration de solution spécifiée afin de générer, nettoyer, régénérer ou déployer le projet.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567773"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040107"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -45,21 +47,21 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolnConfigName*
 
-  facultatif. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) appliquée à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
+  Optionnel. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) appliquée à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
 
 - `/Project` *NomProjet*
 
-  facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
+  Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  facultatif. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) appliquée au `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`).
+  Optionnel. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) appliquée au `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`).
 
 - `/Out`*OutputFileName*
 
-  facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 - Doit être utilisé dans une `devenv` `/Build` commande, `/Clean` , `/Rebuild` ou `/Deploy` .
 

@@ -1,5 +1,7 @@
 ---
 title: -SafeMode (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande de SafeMode pour démarrer Visual Studio en mode sans échec, en chargeant uniquement l’environnement et les services par défaut.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d8f663ca581892ba3207acbb0271586c322bad2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593588"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039871"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 

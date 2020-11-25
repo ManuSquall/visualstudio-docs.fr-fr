@@ -1,5 +1,7 @@
 ---
 title: -NoSplash (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande nosplash devenv pour empêcher l’affichage de l’écran de démarrage.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: v-dele
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62950662"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043996"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
@@ -33,13 +35,13 @@ devenv /NoSplash [File1[ FileN]...]
 
 - *File1*
 
-  facultatif. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
+  Optionnel. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
 
 - *FileN*
 
-  facultatif. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
+  Optionnel. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Ce commutateur masque l’écran de démarrage. S’il est omis, l’écran de démarrage s’affiche. Si vous voulez examiner en détail l’écran de démarrage (par exemple, pour vérifier l’icône de produit VSPackage), utilisez le commutateur [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md).
 

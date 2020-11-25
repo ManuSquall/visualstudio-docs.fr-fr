@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, C#, Avancé
+description: Découvrez comment utiliser la page avancé de la section C# pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation du code et les commentaires de documentation XML pour C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 6e8c235c62eeba394902698ecbfc412ed37b0979
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626192"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039890"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
-Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Outils**  >  **options** , puis **éditeur de texte**  >  **C#**  >  **avancé**.
+Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Outils**  >  **options**, puis **éditeur de texte**  >  **C#**  >  **avancé**.
 
 > [!NOTE]
 > Toutes les options peuvent ne pas être répertoriées ici.
@@ -145,7 +147,7 @@ Activez ces cases à cocher pour afficher les lignes verticales en pointillés e
 
    Quand cette option est sélectionnée et que vous tapez l’introduction de commentaires `///`, elle insère les éléments XML pour les commentaires de documentation XML. Pour plus d’informations sur la documentation XML, consultez [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour insérer des commentaires XML pour la génération de documentation](../../ide/reference/generate-xml-documentation-comments.md)
 - [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)

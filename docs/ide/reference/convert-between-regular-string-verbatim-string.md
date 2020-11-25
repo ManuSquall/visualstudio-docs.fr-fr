@@ -1,5 +1,6 @@
 ---
 title: Conversion entre des littéraux de chaîne normaux et textuels
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour effectuer une conversion entre des littéraux de chaîne standard et textuels.
 ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d50b979902e6eb5a606305b262f5009caef87467
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045911"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040457"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>Conversion entre une chaîne normale et des littéraux de chaîne Verbatim refactorisation
 
@@ -33,15 +34,15 @@ Dans les **cas suivants :** Vous voulez économiser de l’espace ou améliorer
 
 1. Placez le signe insertion sur la chaîne normale ou le littéral de chaîne Verbatim :
 
-2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations** .
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
 3. Sélectionnez l’une des options suivantes :
 
-    Sélectionnez **Convertir en chaîne classique** .
+    Sélectionnez **Convertir en chaîne classique**.
 
     ![Convertir en chaîne régulière](media/convert-to-regular-string.png)
 
-    Sélectionnez **Convertir en chaîne verbatim** .
+    Sélectionnez **Convertir en chaîne verbatim**.
 
     ![Convertir en chaîne textuelle](media/convert-to-verbatim-string.png)
 

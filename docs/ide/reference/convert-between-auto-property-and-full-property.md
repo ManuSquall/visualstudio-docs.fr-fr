@@ -1,5 +1,7 @@
 ---
 title: Conversion entre la propriété auto et la propriété full
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour effectuer une conversion entre une propriété implémentée automatiquement et une propriété complète.
+ms.custom: SEO-VS-2020
 ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8950ce27e95a59f5425419dcac5bd807193d51b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b53f337b538ff1c0aef84272eea7d9e032eb2c1d
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80395411"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040834"
 ---
 # <a name="convert-between-auto-property-and-full-property"></a>Conversion entre la propriété auto et la propriété full
 

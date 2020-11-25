@@ -1,5 +1,7 @@
 ---
 title: -Edit (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande Edit devenv pour ouvrir un fichier spécifié dans une instance existante de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845f83d2078999e3b3e32e048f9a3fa716300b19
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595694"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040587"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -33,13 +35,13 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  facultatif. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
+  Optionnel. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
 
 - *FileN*
 
-  facultatif. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
+  Optionnel. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Si aucun fichier n’est spécifié, une instance existante de Visual Studio reçoit le focus. S’il n’existe pas non plus d’instances de Visual Studio, l’outil crée une instance avec une disposition de fenêtre simplifiée.
 

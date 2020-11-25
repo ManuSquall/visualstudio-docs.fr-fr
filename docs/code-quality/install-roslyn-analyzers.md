@@ -13,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348682"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040379"
 ---
 # <a name="install-third-party-analyzers"></a>Installer des analyseurs tiers
 
-Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Platform ( *Roslyn* ). Ces analyseurs sont toujours activés. Vous pouvez installer des analyseurs supplémentaires en tant que packages NuGet ou en tant qu’extensions Visual Studio dans des fichiers *VSIX* .
+Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Platform (*Roslyn*). Ces analyseurs sont toujours activés. Vous pouvez installer des analyseurs supplémentaires en tant que packages NuGet ou en tant qu’extensions Visual Studio dans des fichiers *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Pour installer les packages de l’analyseur NuGet
 
@@ -63,7 +63,7 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 2. Développez **en ligne** dans le volet gauche, puis sélectionnez **Visual Studio Marketplace**.
 
-3. Dans la zone de recherche, tapez le nom de l’extension de l’analyseur que vous souhaitez installer. Par exemple, vous souhaiterez peut-être [installer les analyseurs Microsoft FXCop](install-fxcop-analyzers.md#vsix) pour vérifier votre code en matière de problèmes de sécurité et de performances, entre autres.
+3. Dans la zone de recherche, tapez le nom de l’extension de l’analyseur que vous souhaitez installer.
 
 4. Sélectionnez **Télécharger**.
 
@@ -101,4 +101,4 @@ Si vous souhaitez vérifier si l’extension est installée, sélectionnez **Ext
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des analyseurs de code dans Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Installer des analyseurs FxCop](../code-quality/install-fxcop-analyzers.md)
+- [Installer les analyseurs .NET](../code-quality/install-net-analyzers.md)

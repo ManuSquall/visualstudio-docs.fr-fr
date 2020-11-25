@@ -1,5 +1,7 @@
 ---
 title: Options de mise en forme de l’éditeur C#
+description: Découvrez comment utiliser la page Options de mise en forme et ses sous-pages pour définir les options de mise en forme du code dans l’éditeur de code lorsque vous programmez en C#.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57d95cd3f3dcf68e7af143bdde3a16474beda20c
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659275"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039769"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Boîte de dialogue Options : éditeur de texte \> \> \> mise en forme du style de code C#
 
@@ -62,7 +64,7 @@ Ces paramètres permettent de configurer la commande **Mettre le document en for
 
 |Étiquette|Description|Règles correspondantes pour EditorConfig et Outils > Options|
 |-----------|-----------------|-----------------|-----------------|
-|**Appliquer toutes les règles de mise en forme C# (retrait, retour automatique à la ligne, espacement)**|La commande **Mettre le document en forme** corrige toujours les problèmes de mise en forme. Vous ne pouvez pas changer ce paramètre.| [Options EditorConfig principales](../../ide/create-portable-custom-editor-options.md)<br/>[Options de mise en forme EditorConfig .NET](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**Outils**  >  **Options**  >  **Éditeur**  >  de texte **C#**  >  **Mise en forme** > [mise en**retrait** ou **nouvelles lignes** ou **espacement** ou **habillage**]|
+|**Appliquer toutes les règles de mise en forme C# (retrait, retour automatique à la ligne, espacement)**|La commande **Mettre le document en forme** corrige toujours les problèmes de mise en forme. Vous ne pouvez pas changer ce paramètre.| [Options EditorConfig principales](../../ide/create-portable-custom-editor-options.md)<br/>[Options de mise en forme EditorConfig .NET](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**Outils**  >  **Options**  >  **Éditeur**  >  de texte **C#**  >  **Mise en forme** > [mise en **retrait** ou **nouvelles lignes** ou **espacement** ou **habillage**]|
 |**Effectuer un nettoyage du code supplémentaire durant la mise en forme**|Quand cette option est sélectionnée, applique les correctifs des règles spécifiées ci-dessous à la commande **Edit.FormatDocument**.| N/A |
 |**Supprimer les using inutiles**|Quand cette option est sélectionnée, supprime les directives `using` inutiles au moment où **Edit.FormatDocument** se déclenche.| N/A |
 |**Trier les instructions Using**|Quand cette option est sélectionnée, trie les directives `using` au moment où **Edit.FormatDocument** se déclenche.| dotnet_sort_system_directives_first<br/><br/>**Outils**  >  **Options**  >  **Éditeur**  >  de texte **C#**  >  **Paramètres avancés**  >  **Placer les directives’System’en premier lors du tri des using** |
@@ -90,7 +92,7 @@ Les options de mise en retrait figurant dans cette page s’appliquent quand le 
 ![Options de mise en retrait de l’éditeur de texte C# dans Visual Studio](media/csharp-indentation-options.png)
 
 > [!TIP]
-> Il existe également des options de mise en **Text Editor**retrait dans la  >  **C#**  >  page Options des**onglets** C# de l’éditeur de texte. Ces options déterminent uniquement l’endroit où l’éditeur de code place le curseur quand vous appuyez sur **Entrée** en fin de ligne.
+> Il existe également des options de mise en **Text Editor** retrait dans la  >  **C#**  >  page Options des **onglets** C# de l’éditeur de texte. Ces options déterminent uniquement l’endroit où l’éditeur de code place le curseur quand vous appuyez sur **Entrée** en fin de ligne.
 >
 > ![Options Onglets de l’éditeur de texte C# dans Visual Studio](media/csharp-tabs-options.png)
 

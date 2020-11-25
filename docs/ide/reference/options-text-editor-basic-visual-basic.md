@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, Basic (VB), Avancé
+description: Découvrez comment utiliser la page avancé de la section de base pour modifier les paramètres par défaut de l’analyse, les directives d’importation et les propriétés de mise en surbrillance.
+ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214644"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040990"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Option, Éditeur de texte, Basic (Visual Basic), Avancé
 La page de propriétés **Spécifique à VB**, accessible par le biais du menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :
@@ -51,7 +53,7 @@ La page de propriétés **Spécifique à VB**, accessible par le biais du menu *
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
 
-## <a name="highlighting"></a>Highlighting
+## <a name="highlighting"></a>Mettre en surbrillance
 
  **Activer la mise en surbrillance des références et des mots clés**
 

@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, XML, Divers
+description: Découvrez comment utiliser la page divers dans la section XAML pour modifier les paramètres de saisie semi-automatique et de schéma de l’éditeur XML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02a2a133031661ecbf9c3719f3b1993f3b20b5b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568124"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040118"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Options, Éditeur de texte, XML, Divers
 

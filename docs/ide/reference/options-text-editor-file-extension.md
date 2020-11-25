@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, Extension de fichier
+description: Découvrez comment utiliser la page d’extension de fichier pour spécifier la manière dont tous les fichiers avec certaines extensions de fichier seront gérés par l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d0e782b0d141666ca7d1f79464d60afd89ef871
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596201"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039729"
 ---
 # <a name="options-text-editor-file-extension"></a>Options, Éditeur de texte, Extension de fichier
 
@@ -42,7 +44,7 @@ Sélectionnez l’éditeur IDE ou le concepteur dans lequel les documents avec c
 
 Ajoute à la liste des extensions une entrée qui inclut l’**Extension** et l’**Éditeur choisi** spécifiés.
 
-**Remove**
+**Supprimer**
 
 Supprime l’entrée sélectionnée de la liste des extensions.
 

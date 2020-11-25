@@ -1,5 +1,7 @@
 ---
 title: Options, Éditeur de texte, XAML, Mise en forme
+description: Découvrez comment utiliser la page Options de mise en forme et ses sous-pages pour définir les options de mise en forme du code dans l’éditeur de code lorsque vous programmez en XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568241"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040522"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Options, Éditeur de texte, XAML, Mise en forme
 
@@ -90,7 +92,7 @@ Vous pouvez spécifier une longueur de ligne pour la balise de renvoi à la lign
 
 Spécifie si les lignes sont renvoyées à la longueur de ligne spécifiée par **Longueur**.
 
-**Longueur**
+**Durée**
 
 Nombre de caractères qu’une ligne peut contenir. Si nécessaire, certaines lignes XAML peuvent dépasser la longueur spécifiée.
 

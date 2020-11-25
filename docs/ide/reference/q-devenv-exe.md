@@ -1,5 +1,7 @@
 ---
 title: -? (devenv.exe)
+description: Découvrez comment utiliser le/ ? commutateur de ligne de commande devenv pour afficher une boîte de message répertoriant tous les commutateurs devenv, avec une brève description de chaque commutateur.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f23765ac4ee58b20af26bd100a0d167b2873582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b0b3784b832c56aba97f68e57be872820991c74
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565732"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040015"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 

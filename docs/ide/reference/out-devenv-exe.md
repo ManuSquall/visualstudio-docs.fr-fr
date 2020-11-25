@@ -1,5 +1,7 @@
 ---
 title: -Out (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande Out devenv pour spécifier un fichier de stockage et d’affichage des erreurs lors de l’exécution, de l’exécution et de la sortie, de la mise à niveau, de la génération, de la régénération, du nettoyage ou du déploiement d’une solution.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06409d3b7e3d218fcf2b81dce7ea58d3202b7e21
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568009"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040054"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -41,7 +43,7 @@ devenv /Out FileName
 
   Obligatoire. Chemin et nom du fichier où est enregistrée la sortie au cours de la génération d’un exécutable.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Si le nom spécifié ne correspond à aucun fichier existant, le fichier est créé automatiquement. Sinon, les résultats sont ajoutés au contenu existant du fichier.
 
