@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599494"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970622"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers dump dans le débogueur Visual Studio
 
@@ -39,7 +39,7 @@ Les vidages sont principalement utilisés pour déboguer les problèmes des ordi
 
 Le débogueur Visual Studio peut enregistrer des fichiers dump pour le code managé ou natif. Il peut déboguer des fichiers dump créés par Visual Studio ou par d’autres applications qui enregistrent des fichiers au format *Minidump* .
 
-## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> Configuration requise et limitations
+## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> Spécifications et limitations
 
 - Pour déboguer des fichiers de vidage à partir d’ordinateurs 64 bits, Visual Studio doit s’exécuter sur un ordinateur 64 bits.
 
@@ -78,7 +78,7 @@ Lorsque le [débogage juste-à-temps](../debugger/just-in-time-debugging-in-visu
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> Ouvrir un fichier dump
 
-1. Dans Visual Studio, sélectionnez **fichier**  >  **ouvrir**un  >  **fichier**.
+1. Dans Visual Studio, sélectionnez **fichier**  >  **ouvrir** un  >  **fichier**.
 
 1. Dans la boîte de dialogue **Ouvrir un fichier**, localisez et sélectionnez le fichier dump. Elle aura généralement une extension *. dmp* . Sélectionnez **OK**.
 
@@ -88,7 +88,7 @@ Lorsque le [débogage juste-à-temps](../debugger/just-in-time-debugging-in-visu
 
 1. Sous **actions**:
    - Pour définir les emplacements de chargement des symboles, sélectionnez **définir les chemins d’accès aux symboles**.
-   - Pour démarrer le débogage, sélectionnez **Déboguer avec managé uniquement**, **Déboguer avec natif uniquement**, **Déboguer avec mixte**ou **Déboguer avec la mémoire managée**.
+   - Pour démarrer le débogage, sélectionnez **Déboguer avec managé uniquement**, **Déboguer avec natif uniquement**, **Déboguer avec mixte** ou **Déboguer avec la mémoire managée**.
 
 ## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Rechercher les fichiers. exe,. pdb et source
 
@@ -107,7 +107,7 @@ Visual Studio recherche automatiquement dans ces emplacements les fichiers *. ex
 
 1. Dossier qui contient le fichier dump.
 2. Le chemin d’accès du module spécifie le fichier dump, qui est le chemin d’accès du module sur l’ordinateur qui a collecté le vidage.
-3. Les chemins d’accès aux symboles spécifiés dans **Outils** (ou **débogage**) > **options**  >  **débogage**des  >  **symboles**. Vous pouvez également ouvrir la page **symboles** à partir du volet **actions** de la fenêtre Résumé du **fichier de vidage** . Dans cette page, vous pouvez ajouter d’autres emplacements à rechercher.
+3. Les chemins d’accès aux symboles spécifiés dans **Outils** (ou **débogage**) > **options**  >  **débogage** des  >  **symboles**. Vous pouvez également ouvrir la page **symboles** à partir du volet **actions** de la fenêtre Résumé du **fichier de vidage** . Dans cette page, vous pouvez ajouter d’autres emplacements à rechercher.
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Utiliser les pages aucun binaire, aucun symbole ou aucune source trouvée
 

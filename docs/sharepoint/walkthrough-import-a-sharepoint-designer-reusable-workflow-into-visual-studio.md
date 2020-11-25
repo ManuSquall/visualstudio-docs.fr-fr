@@ -1,6 +1,8 @@
 ---
 title: 'Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer | Microsoft Docs'
 titleSuffix: ''
+description: Dans cette procédure pas à pas, importez un flux de travail réutilisable créé dans SharePoint Designer dans un projet de flux de travail SharePoint Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298033"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970190"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer
 
@@ -96,9 +98,9 @@ ms.locfileid: "92298033"
 
 5. Dans le concepteur de flux de travail, choisissez l’étape 1, puis, dans le ruban, cliquez sur le bouton **condition** .
 
-6. Dans la liste des conditions, choisissez **si le champ d’élément actuel est égal**à la valeur.
+6. Dans la liste des conditions, choisissez **si le champ d’élément actuel est égal** à la valeur.
 
-     Cette étape ajoute une condition nommée si le **champ est égal**à la valeur.
+     Cette étape ajoute une condition nommée si le **champ est égal** à la valeur.
 
 7. Dans la condition **si le champ est égal** à la valeur, choisissez le lien de **champ** .
 

@@ -10,11 +10,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075416"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970228"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .NET
 
@@ -68,21 +68,21 @@ Vous pouvez filtrer les données tabulaires pour afficher l’activité uniqueme
 
 La vue **allocation** affiche l’emplacement des objets qui allouent de la mémoire et la quantité de mémoire allouée par ces objets.
 
-- La **Type**   colonne de type est une liste de classes et de structures qui occupent de la mémoire. Double-cliquez sur un type pour afficher son suivi en tant qu’arborescence des appels inversée. Dans l’affichage **allocation** uniquement, vous pouvez voir les éléments de la catégorie sélectionnée qui occupent de la mémoire.
+- La colonne de **type** est une liste de classes et de structures qui occupent de la mémoire. Double-cliquez sur un type pour afficher son suivi en tant qu’arborescence des appels inversée. Dans l’affichage **allocation** uniquement, vous pouvez voir les éléments de la catégorie sélectionnée qui occupent de la mémoire.
 
-- La colonne **allocations**   affiche le nombre d’objets qui occupent de la mémoire dans une fonction ou un type d’allocation particulier. Cette colonne s’affiche uniquement dans les vues **allocation**, **arborescence des appels**et **fonctions**   .
+- La colonne **allocations** affiche le nombre d’objets qui occupent de la mémoire dans une fonction ou un type d’allocation particulier. Cette colonne s’affiche uniquement dans les vues **allocation**, **arborescence des appels** et **fonctions** .
 
-- Les colonnes **octets**   et **taille moyenne (octets)**   n’apparaissent pas par défaut. Pour les afficher, cliquez avec le bouton droit sur la colonne **type**   ou **allocations**   , puis sélectionnez les options **octets**   et **taille moyenne (octets)**   pour les ajouter au graphique. 
+- Les colonnes **octets** et **taille moyenne (octets)** n’apparaissent pas par défaut. Pour les afficher, cliquez avec le bouton droit sur la colonne **type** ou **allocations** , puis sélectionnez les options **octets** et **taille moyenne (octets)** pour les ajouter au graphique. 
 
-   Les deux colonnes sont similaires au **total (allocations)** et **auto (allocations)**, sauf qu’elles indiquent la quantité de mémoire occupée au lieu du nombre d’objets qui occupent de la mémoire. Ces colonnes s’affichent uniquement dans la vue **allocation** .
+   Les deux colonnes sont similaires au **total (allocations)** et **auto (allocations)**, sauf qu’elles indiquent la quantité de mémoire occupée au lieu du nombre d’objets qui occupent de la mémoire. Ces colonnes s’affichent uniquement dans la vue **allocation** .
 
-- La colonne **nom du module**   affiche le module qui contient la fonction ou le processus appelant.
+- La colonne **nom du module** affiche le module qui contient la fonction ou le processus appelant.
 
-Toutes ces colonnes peuvent être triées. Pour les colonnes de **type** et de **nom de module** , vous pouvez trier les éléments par ordre alphabétique dans l’ordre croissant ou décroissant. Pour les **allocations**, les **octets**   et la **taille moyenne (octets)**, vous pouvez trier les éléments en accroissant ou en diminuant la valeur numérique.
+Toutes ces colonnes peuvent être triées. Pour les colonnes de **type** et de **nom de module** , vous pouvez trier les éléments par ordre alphabétique dans l’ordre croissant ou décroissant. Pour les **allocations**, les **octets** et la **taille moyenne (octets)**, vous pouvez trier les éléments en accroissant ou en diminuant la valeur numérique.
 
 #### <a name="symbols"></a>symboles
 
-Les symboles suivants apparaissent dans les onglets **allocation**, **arborescence des appels**et **fonctions** :
+Les symboles suivants apparaissent dans les onglets **allocation**, **arborescence des appels** et **fonctions** :
 
 - ![Le type valeur Symbol](../profiling/media/valuetypeicon.png "Symbole du type de valeur") -un type valeur comme Integer
 
@@ -96,13 +96,13 @@ Les symboles suivants apparaissent dans les onglets **allocation**, **arborescen
 
 ![La vue arborescence des appels](../profiling/media/calltreelight.png "La vue arborescence des appels")
 
-La vue **arborescence des appels**   affiche les chemins d’exécution des fonctions qui contiennent des objets qui allouent de la mémoire.
+La vue **arborescence des appels** affiche les chemins d’exécution des fonctions qui contiennent des objets qui allouent de la mémoire.
 
-- La colonne nom de la **fonction**   affiche le processus ou le nom de la fonction contenant des objets qui allouent de la mémoire. L’affichage est basé sur le niveau du nœud que vous Inspectez.
-- Les colonnes **total (allocations)** et **taille totale (octets)**   affichent le nombre d’objets alloués et la quantité de mémoire utilisée par une fonction et toutes les autres fonctions qu’elle appelle.
+- La colonne nom de la **fonction** affiche le processus ou le nom de la fonction contenant des objets qui allouent de la mémoire. L’affichage est basé sur le niveau du nœud que vous Inspectez.
+- Les colonnes **total (allocations)** et **taille totale (octets)** affichent le nombre d’objets alloués et la quantité de mémoire utilisée par une fonction et toutes les autres fonctions qu’elle appelle.
 - Les colonnes **auto (allocations)** et **auto-size (octets)** affichent le nombre d’objets alloués et la quantité de mémoire utilisée par une fonction ou un type d’allocation sélectionnés.
 - La colonne **taille moyenne (octets)** affiche les mêmes informations que dans la vue **allocations** .
-- La colonne **nom du module**   affiche le module qui contient la fonction ou le processus appelant.
+- La colonne **nom du module** affiche le module qui contient la fonction ou le processus appelant.
 
    ![Un chemin réactif développé](../profiling/media/hotpathlight.png "Un chemin réactif développé")
 
@@ -135,7 +135,7 @@ La vue **collection** indique le nombre d’objets qui ont été collectés ou c
 
 ### <a name="filtering-tools"></a>Outils de filtrage
 
-Les vues **allocations**, **arborescence des appels**et **fonctions** contiennent toutes les options afficher les **uniquement mon code** et **afficher le code natif** et filtre.
+Les vues **allocations**, **arborescence des appels** et **fonctions** contiennent toutes les options afficher les **uniquement mon code** et **afficher le code natif** et filtre.
 
 - **Affichez uniquement mon code** réduit les systèmes, les infrastructures et tout autre code utilisateur dans des frames **[code externe]** afin que vous puissiez vous concentrer uniquement sur votre code. Pour plus d’informations, consultez [déboguer le code utilisateur avec uniquement mon code](../debugger/just-my-code.md).
 - **Afficher le code natif** affiche le code natif dans la cible d’analyse et peut inclure du code qui n’est pas un utilisateur.

@@ -1,6 +1,8 @@
 ---
 title: 'Procédure pas à pas : extension de Explorateur de serveurs pour afficher composants WebPart | Microsoft Docs'
 titleSuffix: ''
+description: Dans cette procédure pas à pas, étendez Explorateur de serveurs afin qu’il affiche la Galerie de composants WebPart sur chaque site SharePoint connecté.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583851"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970217"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procédure pas à pas : étendre Explorateur de serveurs pour afficher des composants WebPart
   Dans Visual Studio, vous pouvez utiliser le nœud **Connexions SharePoint** de **Explorateur de serveurs** pour afficher les composants sur les sites SharePoint. Toutefois, **Explorateur de serveurs** n’affiche pas certains composants par défaut. Dans cette procédure pas à pas, vous allez étendre **Explorateur de serveurs** afin qu’il affiche la Galerie de composants WebPart sur chaque site SharePoint connecté.
@@ -52,7 +54,7 @@ ms.locfileid: "91583851"
 
   La connaissance des concepts suivants est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
-- Utilisation du modèle d’objet serveur pour SharePoint. Pour plus d’informations, consultez [utilisation du modèle objet côté serveur SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Utilisation du modèle d’objet serveur pour SharePoint. Pour plus d’informations, consultez [utilisation du modèle d’objet Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Composants WebPart dans les solutions SharePoint. Pour plus d’informations, consultez [composants WebPart vue d’ensemble](/previous-versions/office/ms432401(v=office.14)).
 

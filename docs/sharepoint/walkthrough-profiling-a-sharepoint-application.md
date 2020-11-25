@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : profilage d’une application SharePoint | Microsoft Docs'
+description: Dans cette procédure pas à pas, utilisez les outils de profilage dans Visual Studio pour optimiser les performances d’une application SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298634"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970116"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procédure pas à pas : profilage d’une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L'application d'exemple est un récepteur d'événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d'événements de fonctionnalité. Le profileur Visual Studio vous permet de localiser et d’éliminer la partie la plus coûteuse (la plus lente) du projet, également appelée *chemin réactif*.
@@ -178,7 +180,7 @@ ms.locfileid: "92298634"
     }
     ```
 
-6. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet (le plus le**plus),** puis choisissez **Propriétés**.
+6. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet (le plus le **plus),** puis choisissez **Propriétés**.
 
 7. Dans la boîte de dialogue **Propriétés** , choisissez l’onglet **SharePoint** .
 
@@ -220,7 +222,7 @@ ms.locfileid: "92298634"
 
 2. Dans la liste **actions du site** , choisissez le lien gérer les fonctionnalités du **site** .
 
-3. Dans la liste des **fonctionnalités** , choisissez le bouton **activer** en regard de l’option **Feature1**de la liste de champs.
+3. Dans la liste des **fonctionnalités** , choisissez le bouton **activer** en regard de l’option **Feature1** de la liste de champs.
 
      Ce faisant, une pause survient en raison de la boucle inactive appelée dans la fonction `FeatureActivated`.
 

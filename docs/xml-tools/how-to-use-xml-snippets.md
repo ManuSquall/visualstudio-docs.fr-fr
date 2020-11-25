@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400113"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970600"
 ---
 # <a name="how-to-use-xml-snippets"></a>Comment : utiliser des extraits XML
 
@@ -28,7 +28,7 @@ Une fois l'extrait XML ajouté à l'éditeur, tous ses champs modifiables sont s
 Les procédures suivantes décrivent comment accéder à la commande **Insérer un extrait** .
 
 > [!NOTE]
-> La commande **Insérer un extrait** de code est également disponible par le biais du raccourci clavier ( **CTRL** + **K** , puis **CTRL** + **X** ).
+> La commande **Insérer un extrait** de code est également disponible par le biais du raccourci clavier (**CTRL** + **K**, puis **CTRL** + **X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Pour insérer des extraits à partir du menu contextuel
 
@@ -44,7 +44,7 @@ Les procédures suivantes décrivent comment accéder à la commande **Insérer 
 
 1. Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.
 
-2. Dans le menu **Edition** , pointez sur **IntelliSense** , puis sélectionnez **Insérer un extrait**.
+2. Dans le menu **Edition** , pointez sur **IntelliSense**, puis sélectionnez **Insérer un extrait**.
 
    Une liste des extraits XML disponibles s'affiche.
 
@@ -58,7 +58,7 @@ Les procédures suivantes décrivent comment accéder à la commande **Insérer 
 
 3. Sélectionnez l'extrait XML dans la liste de remplissage.
 
-4. Appuyez sur **Tab** , **onglet** pour appeler l’extrait XML.
+4. Appuyez sur **Tab**, **onglet** pour appeler l’extrait XML.
 
 > [!NOTE]
 > Parfois, l'extrait XML n'est pas invoqué. Par exemple, si vous tentez d'insérer un élément `xs:complexType` dans un nœud `xs:element`, l'éditeur ne génère aucun extrait XML. En effet, lorsqu'un élément `xs:complexType` est utilisé à l'intérieur d'un nœud `xs:element`, aucun attribut ni sous-élément n'est requis, de sorte que l'éditeur n'a aucune donnée à insérer.
@@ -78,7 +78,7 @@ Les procédures suivantes décrivent comment accéder à la commande **Insérer 
 Les procédures suivantes décrivent comment accéder à la commande **surround** .
 
 > [!NOTE]
-> La commande **entourer de** est également disponible via le raccourci clavier ( **CTRL** + **K** , puis **CTRL** + **S** ).
+> La commande **entourer de** est également disponible via le raccourci clavier (**CTRL** + **K**, puis **CTRL** + **S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Pour utiliser entourer de dans le menu contextuel
 
@@ -94,7 +94,7 @@ Les procédures suivantes décrivent comment accéder à la commande **surround*
 
 1. Sélectionnez le texte à entourer dans l’éditeur XML.
 
-2. Dans le menu **Edition** , pointez sur **IntelliSense** , puis sélectionnez **entourer de**.
+2. Dans le menu **Edition** , pointez sur **IntelliSense**, puis sélectionnez **entourer de**.
 
    Une liste des encadrements d'extraits XML disponibles s'affiche.
 

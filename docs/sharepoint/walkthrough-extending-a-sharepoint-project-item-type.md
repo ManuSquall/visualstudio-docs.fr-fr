@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : extension d’un type d’élément de projet SharePoint | Microsoft Docs'
+description: Dans cette procédure pas à pas, vous créez une extension pour un type d’élément de projet SharePoint, tel que l’élément de projet de modèle de connectivité de données métiers (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740004"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970412"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procédure pas à pas : étendre un type d’élément de projet SharePoint
   Vous pouvez utiliser l’élément de projet **modèle de connectivité de données métiers** pour créer un modèle pour le service de connectivité de données métiers (BDC) dans SharePoint. Par défaut, lorsque vous créez un modèle à l’aide de cet élément de projet, les données du modèle ne sont pas affichées aux utilisateurs. Vous devez également créer une liste externe dans SharePoint pour permettre aux utilisateurs d’afficher les données.
@@ -266,7 +268,7 @@ ms.locfileid: "90740004"
 
 2. Dans le ruban sur le site SharePoint, choisissez l’onglet **liste** .
 
-3. Sous l’onglet **liste** , dans le groupe **paramètres** , choisissez **paramètres**de la liste.
+3. Sous l’onglet **liste** , dans le groupe **paramètres** , choisissez **paramètres** de la liste.
 
 4. Sous **autorisations et gestion**, choisissez **supprimer cette liste**, puis choisissez **OK** pour confirmer que vous souhaitez envoyer la liste à la corbeille.
 
@@ -274,7 +276,7 @@ ms.locfileid: "90740004"
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Pour supprimer le modèle BDC du site SharePoint
 
-1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **générer**un  >  **retrait**.
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **générer** un  >  **retrait**.
 
      Visual Studio supprime le modèle BDC du site SharePoint.
 

@@ -1,5 +1,7 @@
 ---
 title: Considérations sur les solutions bac à sable (sandbox) | Microsoft Docs
+description: Explorez les solutions bac à sable (sandbox), qui sont une fonctionnalité de Microsoft SharePoint qui permet aux utilisateurs de la collection de sites de charger leurs propres solutions de code personnalisées.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839494"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970461"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considérations sur les solutions bac à sable
   Les *solutions bac à sable (sandbox)* sont une fonctionnalité de Microsoft SharePoint 2010 qui permet aux utilisateurs de collections de sites de télécharger leurs propres solutions de code personnalisées. Une solution bac à sable (sandbox) courante est que les utilisateurs chargent leurs propres composants WebPart.

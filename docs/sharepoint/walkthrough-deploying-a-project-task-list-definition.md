@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : déploiement d’une définition de Liste des tâches de projet | Microsoft Docs'
+description: Dans cette procédure pas à pas, utilisez Visual Studio pour créer, personnaliser, déboguer et déployer une liste SharePoint pour effectuer le suivi des tâches du projet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015769"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970427"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procédure pas à pas : déployer une définition de liste de tâches de projet
 

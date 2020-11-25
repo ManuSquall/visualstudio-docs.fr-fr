@@ -1,5 +1,7 @@
 ---
 title: Procédures pas à pas pour le développement SharePoint | Microsoft Docs
+description: Consultez des liens vers des procédures pas à pas qui montrent comment développer et déployer des solutions SharePoint à l’aide de Visual Studio. Les liens sont organisés par domaine de fonctionnalité.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979469"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970321"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Procédures pas à pas pour le développement SharePoint
   Les procédures pas à pas suivantes montrent comment développer et déployer des solutions SharePoint à l’aide de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -31,7 +33,7 @@ ms.locfileid: "62979469"
 |[Procédure pas à pas : création d’un projet de définition de site de base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Montre comment créer une définition de site de base qui contient un composant Visual Web part avec des contrôles.|
 |[Procédure pas à pas : importer une page maître et une page de site personnalisées avec une image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)|Montre comment importer une page maître personnalisée SharePoint et une page de site qui contient une image dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint|
 
-## <a name="import-wizard"></a>Assistant importation
+## <a name="import-wizard"></a>Assistant Importation
 
 |Rubrique|Description|
 |-----------|-----------------|
@@ -68,7 +70,7 @@ ms.locfileid: "62979469"
 |-----------|-----------------|
 |[Procédure pas à pas : création d’une liste externe dans SharePoint à l’aide de données d’entreprise](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Montre comment créer un modèle pour le service BDC qui retourne des informations sur les contacts dans un exemple de base de données.|
 
-## <a name="packaging-and-deployment"></a>Déploiement et packaging
+## <a name="packaging-and-deployment"></a>Empaquetage et déploiement
 
 |Rubrique|Description|
 |-----------|-----------------|

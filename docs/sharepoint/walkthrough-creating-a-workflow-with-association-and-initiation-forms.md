@@ -1,5 +1,7 @@
 ---
 title: Créer un flux de travail avec des formulaires d’association et d’initiation
+description: Dans cette procédure pas à pas SharePoint, créez un flux de travail séquentiel de base qui incorpore l’utilisation des formulaires d’association et d’initiation.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017124"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970431"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation
   Cette procédure pas à pas montre comment créer un flux de travail séquentiel de base qui incorpore l’utilisation des formulaires d’association et d’initiation. Il s’agit de formulaires ASPX qui permettent d’ajouter des paramètres à un flux de travail lorsqu’il est associé pour la première fois par l’administrateur SharePoint (le formulaire d’association) et lorsque le flux de travail est démarré par l’utilisateur (formulaire d’initiation).
@@ -259,7 +261,7 @@ ms.locfileid: "86017124"
 
     - Ouvrez le menu contextuel de l’activité **IfElse** , choisissez **copier**, ouvrez le menu contextuel de la ligne sous l’activité **onWorkflowActivated1** dans le concepteur de flux de travail, puis choisissez **coller**.
 
-    - Faites glisser l’activité **IfElse** de la **boîte à outils**et connectez-la à la ligne sous l’activité **onWorkflowActiviated1** dans le concepteur de Workflow.
+    - Faites glisser l’activité **IfElse** de la **boîte à outils** et connectez-la à la ligne sous l’activité **onWorkflowActiviated1** dans le concepteur de Workflow.
 
 4. Dans la boîte à outils, développez le nœud **flux de travail SharePoint** et recherchez l’activité **CreateTask** .
 
@@ -289,7 +291,7 @@ ms.locfileid: "86017124"
 
     - Ouvrez le menu contextuel de l’activité **LogToHistoryListActivity** , choisissez **copier**, ouvrez le menu contextuel pour l’autre zone **déposer activités ici** dans **IfElseActivity1** dans le concepteur de flux de travail, puis choisissez **coller**.
 
-    - Faites glisser l’activité **LogToHistoryListActivity** de la **boîte à outils**et déposez-la sur l’autre zone **déposer activités ici** dans **IfElseActivity1**.
+    - Faites glisser l’activité **LogToHistoryListActivity** de la **boîte à outils** et déposez-la sur l’autre zone **déposer activités ici** dans **IfElseActivity1**.
 
 ## <a name="add-code-to-the-workflow"></a>Ajouter du code au workflow
  Ensuite, ajoutez du code au workflow pour lui fournir des fonctionnalités.

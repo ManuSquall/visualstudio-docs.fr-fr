@@ -1,5 +1,7 @@
 ---
 title: Modèles de projet et d’élément de projet SharePoint | Microsoft Docs
+description: Passez en revue les descriptions des modèles de projet et d’élément de projet SharePoint disponibles et la façon dont ils sont utilisés.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2878bd2092e000cf63c2b4fcb531a502a470203e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649224"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970371"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modèles de projet et d’élément de projet SharePoint
   Les sections suivantes décrivent les modèles de projet et d’élément de projet SharePoint disponibles, ainsi que leur utilisation.
@@ -102,7 +104,7 @@ ms.locfileid: "81649224"
 
   L’élément de projet récepteur d’événements crée un dossier de **récepteur** d’événements avec un fichier de classe unique qui contient les gestionnaires d’événements pour tous les événements que vous avez spécifiés lors de la création du projet dans l' **Assistant Personnalisation de SharePoint**. La classe de récepteur d’événements peut gérer les événements qui se produisent sur le site SharePoint lorsque des éléments tels que des fichiers, des champs, des éléments, des listes, des pièces jointes, des composants WebPart et des flux de travail sont ajoutés, mis à jour, supprimés ou supprimés. Pour plus d’informations, consultez [Comment : créer un récepteur d’événements et un](../sharepoint/how-to-create-an-event-receiver.md) [bloc de construction : gestion des événements](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14)).
 
-### <a name="list"></a>Liste
+### <a name="list"></a>List
  Une liste est une instance d’une définition de liste SharePoint de base réutilisable, telle qu’un calendrier ou une liste de tâches. Après avoir ajouté une liste à votre solution, le concepteur de listes vous permet d’ajouter des colonnes de site à la liste et de créer des colonnes de liste personnalisées. Cela comprend les colonnes de site des types de contenu. Vous pouvez spécifier la *vue* de la liste, qui détermine les colonnes qui s’affichent dans la liste. Pour plus d’informations, consultez [procédure pas à pas : création d’une colonne de site, type de contenu et liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) et [bloc de construction : listes et bibliothèques de documents](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)).
 
 ### <a name="module"></a>Module

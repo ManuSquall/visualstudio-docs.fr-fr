@@ -1,5 +1,7 @@
 ---
 title: Résolution des problèmes des solutions SharePoint | Microsoft Docs
+description: Consultez les problèmes ou alertes susceptibles de se produire lorsque vous déboguez des solutions SharePoint à l’aide du débogueur Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298398"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970280"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Résoudre les problèmes des solutions SharePoint
   Les problèmes ou alertes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide du [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de solutions de flux de travail SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
@@ -191,7 +193,7 @@ ms.locfileid: "92298398"
 
 1. Dans **Explorateur de solutions**, choisissez le fichier de contrôle utilisateur, dont l’extension de nom de fichier est *. ascx*.
 
-2. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+2. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
 3. Dans la fenêtre **Propriétés** , développez le nœud **emplacement de déploiement** .
 
@@ -238,7 +240,7 @@ ms.locfileid: "92298398"
 
 4. Pour augmenter le délai d’attente avant l’expiration du délai d’attente IIS, remplacez la valeur du **temps de réponse maximal ping (secondes)** par une valeur supérieure à 90 secondes.
 
-5. Pour désactiver la commande ping IIS, attribuez la valeur **false**à **ping activé** .
+5. Pour désactiver la commande ping IIS, attribuez la valeur **false** à **ping activé** .
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Le retrait automatique laisse l’instance de liste orpheline dans SharePoint
  Ce problème se produit si vous effectuez les étapes suivantes.

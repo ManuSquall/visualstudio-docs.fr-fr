@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350691"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970090"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurer le pare-feu Windows pour le débogage distant
 
@@ -22,7 +22,7 @@ Sur un réseau protégé par le pare-feu Windows, le pare-feu doit être configu
 Cette rubrique explique comment configurer le pare-feu Windows pour activer le débogage à distance sur Windows 10, 8/8.1 et 7. et les ordinateurs Windows Server 2012 R2, 2012 et 2008 R2. Il n’est pas nécessaire que Visual Studio et l’ordinateur distant exécutent le même système d’exploitation. Par exemple, l’ordinateur Visual Studio peut exécuter Windows 10 et l’ordinateur distant peut exécuter Windows Server 2012 R2.
 
 >[!NOTE]
->Les instructions de configuration du pare-feu Windows diffèrent légèrement en fonction des systèmes d’exploitation et des versions antérieures de Windows. Les paramètres Windows 8/8.1, Windows 10 et Windows Server 2012 utilisent le mot *application*, tandis que Windows 7 et windows Server 2008 utilisent le *programme*Word.
+>Les instructions de configuration du pare-feu Windows diffèrent légèrement en fonction des systèmes d’exploitation et des versions antérieures de Windows. Les paramètres Windows 8/8.1, Windows 10 et Windows Server 2012 utilisent le mot *application*, tandis que Windows 7 et windows Server 2008 utilisent le *programme* Word.
 
 ## <a name="configure-ports-for-remote-debugging"></a>Configurer des ports pour le débogage distant
 
@@ -44,7 +44,7 @@ Visual Studio et le débogueur distant essaient d’ouvrir les ports corrects pe
 
 1. Sélectionnez un ou plusieurs types de réseau à activer, y compris le type de réseau pour la connexion à distance, puis sélectionnez **suivant**.
 
-1. Ajoutez un nom pour la règle (par exemple, **msvsmon**, **IIS**ou **Web Deploy**), puis sélectionnez **Terminer**.
+1. Ajoutez un nom pour la règle (par exemple, **msvsmon**, **IIS** ou **Web Deploy**), puis sélectionnez **Terminer**.
 
    La nouvelle règle doit apparaître et être sélectionnée dans la liste **règles** de trafic entrant ou **règles de trafic sortant** .
 
@@ -72,7 +72,7 @@ Pour le débogage distant, les ports suivants doivent être ouverts sur l’ordi
 
 ::: moniker-end
 
-Si vous sélectionnez **utiliser le mode de compatibilité managé** dans **Outils**  >  **options**  >  de**débogage**, ouvrez ces ports supplémentaires du débogueur distant. Le mode de compatibilité managé du débogueur active une version héritée de Visual Studio 2010 du débogueur.
+Si vous sélectionnez **utiliser le mode de compatibilité managé** dans **Outils**  >  **options**  >  de **débogage**, ouvrez ces ports supplémentaires du débogueur distant. Le mode de compatibilité managé du débogueur active une version héritée de Visual Studio 2010 du débogueur.
 
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|
 |-|-|-|-|
@@ -98,7 +98,7 @@ Sur un ordinateur distant, les outils de débogage distant se trouvent dans :
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Autoriser et configurer le débogueur distant par le biais du pare-feu Windows
 
-1. Dans le menu **Démarrer** de Windows, recherchez et ouvrez le pare-feu **Windows**ou le **pare-feu Windows Defender**.
+1. Dans le menu **Démarrer** de Windows, recherchez et ouvrez le pare-feu **Windows** ou le **pare-feu Windows Defender**.
 
 1. Sélectionnez **autoriser une application via le pare-feu Windows**.
 

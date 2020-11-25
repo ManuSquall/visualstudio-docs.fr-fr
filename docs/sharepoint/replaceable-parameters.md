@@ -1,5 +1,7 @@
 ---
 title: Paramètres remplaçables | Microsoft Docs
+description: Passez en revue les paramètres remplaçables (jetons), qui spécifient des valeurs dans les fichiers projet pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment de la conception.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840061"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970256"
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Les paramètres remplaçables, ou *jetons*, peuvent être utilisés dans les fichiers projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment de la conception. Elles sont similaires en fonction des jetons de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modèle standard. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).
