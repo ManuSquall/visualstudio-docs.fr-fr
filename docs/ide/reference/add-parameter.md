@@ -1,5 +1,7 @@
 ---
 title: Action rapide Ajouter un paramètre à une méthode
+description: Découvrez comment utiliser une action rapide pour ajouter et déclarer automatiquement un paramètre, en fonction de l’utilisation, sur une méthode.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2582228426afcefdb2587d646a8668f622309c6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595863"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871299"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Ajouter un paramètre à une méthode avec une Action rapide
 

@@ -1,5 +1,7 @@
 ---
 title: Ajouter un projet existant, commande
+description: En savoir plus sur la commande Ajouter un projet existant et sur la façon dont elle ajoute un projet existant à une solution actuelle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c12106621599d428e9a701de9ba5e468b5e312a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595876"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871000"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 Ajoute un projet existant à la solution actuelle.
@@ -37,7 +39,7 @@ Si l’argument `filename` comprend des espaces, il doit être placé entre guil
 
 Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
 ## <a name="example"></a>Exemple

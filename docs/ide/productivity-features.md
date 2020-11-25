@@ -1,5 +1,7 @@
 ---
-title: Guide de productivité
+title: " Guide de productivité"
+description: Découvrez les raccourcis clavier et les fonctionnalités de productivité de Visual Studio qui peuvent vous aider à écrire efficacement du code, à déboguer le code et à gérer les erreurs.
+ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808140"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870870"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guide de productivité pour Visual Studio
 
@@ -20,7 +22,7 @@ Si vous souhaitez gagner du temps pendant que vous écrivez du code, vous êtes 
 
 Pour plus d’informations sur les raccourcis clavier utiles, consultez [Raccourcis de productivité](../ide/productivity-shortcuts.md). Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="get-started"></a>Commencer
+## <a name="get-started"></a>Bien démarrer
 
 Gagnez du temps dans l’exploration des menus en recherchant rapidement les éléments dont vous avez besoin, notamment les commandes, les paramètres, la documentation et les options d’installation. Consultez Raccourcis clavier pour les commandes dans les résultats de la recherche dans Visual Studio afin de pouvoir les mémoriser plus facilement. 
 
@@ -40,17 +42,17 @@ Gagnez du temps dans l’exploration des menus en recherchant rapidement les él
 
 Écrivez le code plus rapidement à l’aide des fonctionnalités suivantes.
 
-- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, vous pouvez choisir une commande pour dupliquer facilement une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **modifier**le  >  **doublon** ou appuyez sur **CTRL** + **E**,**V**. Vous pouvez également développer ou réduire rapidement une sélection de texte en choisissant **modifier**le  >  **Advanced**  >  **développement** avancé ou **modifier**la sélection de  >  **Advanced**  >  **contrat**avancée, ou en appuyant sur **MAJ** + **ALT** + **=** ou **MAJ** + **ALT** + **-** .
+- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, vous pouvez choisir une commande pour dupliquer facilement une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **modifier** le  >  **doublon** ou appuyez sur **CTRL** + **E**,**V**. Vous pouvez également développer ou réduire rapidement une sélection de texte en choisissant **modifier** le  >  **Advanced**  >  **développement** avancé ou **modifier** la sélection de  >  **Advanced**  >  **contrat** avancée, ou en appuyant sur **MAJ** + **ALT** + **=** ou **MAJ** + **ALT** + **-** .
 
 - **Utilisez IntelliSense**. Lorsque vous écrivez du code dans l'éditeur, les informations IntelliSense, telles que Liste des membres, Informations sur les paramètres, Info express, l'assistance de signature et Compléter le mot, s'affichent. Ces fonctionnalités prennent en charge la correspondance approximative de texte. par exemple, les listes de résultats pour les membres de liste incluent non seulement les entrées qui commencent par les caractères que vous avez entrés, mais également celles qui contiennent la combinaison de caractères n’importe où dans leurs noms. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md).
 
 - **Modifier l’insertion automatique des options IntelliSense quand vous entrez du code**. En basculant IntelliSense en mode suggestion, vous pouvez spécifier que les options IntelliSense ne sont insérées que si vous les choisissez explicitement.
 
-     Pour activer le mode de suggestion, appuyez sur les touches **CTRL** + **ALT** + **espace** ou, dans la barre de menus, choisissez **modifier**le mode de  >  **IntelliSense**  >  **saisie semi-automatique**IntelliSense.
+     Pour activer le mode de suggestion, appuyez sur les touches **CTRL** + **ALT** + **espace** ou, dans la barre de menus, choisissez **modifier** le mode de  >  **IntelliSense**  >  **saisie semi-automatique** IntelliSense.
 
 - **Utilisez des extraits de code**. Vous pouvez utiliser des extraits de code intégrés ou créer les vôtres.
 
-     Pour insérer un extrait de code, dans la barre de menus, choisissez **modifier**  >  **IntelliSense**  >  **Insérer un extrait** ou **entourer**de, ou ouvrez le menu contextuel dans un fichier et choisissez **extrait**  >  **Insérer un extrait** ou **entourer de**. Pour plus d’informations, consultez [Extraits de code](../ide/code-snippets.md).
+     Pour insérer un extrait de code, dans la barre de menus, choisissez **modifier**  >  **IntelliSense**  >  **Insérer un extrait** ou **entourer** de, ou ouvrez le menu contextuel dans un fichier et choisissez **extrait**  >  **Insérer un extrait** ou **entourer de**. Pour plus d’informations, consultez [Extraits de code](../ide/code-snippets.md).
 
 - **Corriger les erreurs de code inline**. Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action. Ces actions peuvent être appliquées à l’aide des icônes de l’icône du tournevis-feu ![ ](media/screwdriver-icon.png) ou de l’ampoule ![ ](media/light-bulb-icon.png) , ou en appuyant sur **ALT** + **entrée** ou **CTRL** + **.** quand votre curseur se trouve sur la ligne de code appropriée. Pour plus d’informations, consultez [Actions rapides](quick-actions.md).
 
@@ -70,7 +72,7 @@ Vous pouvez utiliser différentes techniques pour rechercher et vous déplacer p
 
 - **Insérer un signet sur les lignes de code**. Vous pouvez utiliser des signets pour naviguer rapidement vers les lignes de code spécifiques d'un fichier.
 
-    Pour définir un signet, dans la barre de menus, choisissez **modifier**les  >  **signets**,  >  **activer/désactiver le signet**. Vous pouvez afficher tous les signets d’une solution dans la fenêtre **Signets**. Pour plus d’informations, consultez [Définir des signets dans le code](../ide/setting-bookmarks-in-code.md).
+    Pour définir un signet, dans la barre de menus, choisissez **modifier** les  >  **signets**,  >  **activer/désactiver le signet**. Vous pouvez afficher tous les signets d’une solution dans la fenêtre **Signets**. Pour plus d’informations, consultez [Définir des signets dans le code](../ide/setting-bookmarks-in-code.md).
 
 - **Rechercher des définitions de symbole dans un fichier**. Vous pouvez faire une recherche dans une solution pour trouver des définitions de symbole et des noms de fichiers, mais les résultats de la recherche ne comportent pas d’espaces de noms ni de variables locales.
 

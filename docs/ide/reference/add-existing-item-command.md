@@ -1,5 +1,7 @@
 ---
 title: Ajouter un élément existant, commande
+description: En savoir plus sur la commande Ajouter un élément existant et sur la façon dont il ajoute un fichier existant à une solution actuelle et l’ouvre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d1e032150035258df4b1cc88253cefc555d826
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585702"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871026"
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
 Ajoute un fichier existant à la solution actuelle et l’ouvre.
@@ -43,7 +45,7 @@ La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
 ## <a name="example"></a>Exemple

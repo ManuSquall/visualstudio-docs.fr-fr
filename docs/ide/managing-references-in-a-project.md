@@ -1,5 +1,7 @@
 ---
 title: Gérer les références dans un projet
+description: Découvrez comment gérer les références aux composants externes et aux services connectés dans un projet.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183533"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870948"
 ---
 # <a name="manage-references-in-a-project"></a>Gérer les références dans un projet
 
 Avant d’écrire du code pour un composant externe ou un service connecté, vous devez d’abord inclure une référence à celui-ci dans votre projet. Une référence est essentiellement une entrée dans un fichier projet qui contient les informations dont Visual Studio a besoin pour localiser le composant ou le service.
 
-Pour ajouter une référence, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances** dans l’**Explorateur de solutions**, puis choisissez **Ajouter une référence**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet et sélectionner **Ajouter**une  >  **référence**. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Pour ajouter une référence, cliquez avec le bouton droit sur le nœud **Références** ou **Dépendances** dans l’**Explorateur de solutions**, puis choisissez **Ajouter une référence**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet et sélectionner **Ajouter** une  >  **référence**. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Ajouter une référence en Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur les options de comptes
+description: Découvrez comment définir des options relatives aux comptes que vous utilisez lorsque vous vous connectez à Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595902"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871143"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Comptes, Environnement, boîte de dialogue Options
 
@@ -46,4 +48,4 @@ Après avoir inscrit un cloud Azure supplémentaire, vous pouvez choisir le clou
 - [Synchroniser les paramètres sur plusieurs ordinateurs](../synchronized-settings-in-visual-studio.md)
 - [Se connecter à Visual Studio](../signing-in-to-visual-studio.md)
 - [Utiliser plusieurs comptes d’utilisateur](../work-with-multiple-user-accounts.md)
-- [Paramètres d'environnement](../environment-settings.md)
+- [Paramètres d’environnement](../environment-settings.md)

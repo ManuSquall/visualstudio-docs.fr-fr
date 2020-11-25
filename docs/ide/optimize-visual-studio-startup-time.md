@@ -1,5 +1,7 @@
 ---
 title: Augmenter la vitesse de démarrage
+description: Découvrez comment contrôler les paramètres des extensions et des fenêtres outil dans la boîte de dialogue gérer les performances de Visual Studio pour améliorer le temps de démarrage de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/15/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770966"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871494"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Améliorer la vitesse de démarrage de Visual Studio
 

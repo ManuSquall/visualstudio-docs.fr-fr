@@ -1,5 +1,7 @@
 ---
 title: Rechercher les appels à une méthode
+description: Découvrez comment utiliser la fenêtre hiérarchie d’appels pour parcourir tous les appels à et, parfois, à partir d’une méthode, d’une propriété ou d’un constructeur sélectionné.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c330855d3fca1187f88171adb893c3f77c4ccd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595798"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871403"
 ---
 # <a name="view-call-hierarchy"></a>Afficher la hiérarchie d'appels
 
@@ -69,5 +71,5 @@ Le tableau suivant décrit plusieurs options de menu contextuel qui sont disponi
 |**Supprimer racine**|Supprime le nœud racine sélectionné du volet d’arborescence. Cette option est disponible uniquement à partir d’un nœud racine.<br /><br /> Vous pouvez également utiliser le bouton de barre d’outils **Supprimer racine** pour supprimer le nœud racine sélectionné.|
 |**Atteindre la définition**|Exécute la commande Atteindre la définition sur le nœud sélectionné. Cela permet de naviguer jusqu’à la définition d’origine pour un appel de membre ou une définition de variable.<br /><br /> Pour exécuter la commande Atteindre la définition, vous pouvez également double-cliquer sur le nœud sélectionné ou appuyer sur F12.|
 |**Rechercher toutes les références**|Exécute la commande Rechercher toutes les références sur le nœud sélectionné. Cela permet de rechercher toutes les lignes de code de votre projet qui référencent une classe ou un membre.<br /><br /> Vous pouvez également utiliser Maj+F12 pour exécuter la commande Rechercher toutes les références sur le nœud sélectionné.|
-|**Copier**|Copie le contenu du nœud sélectionné (mais pas ses sous-nœuds).|
+|**Copy**|Copie le contenu du nœud sélectionné (mais pas ses sous-nœuds).|
 |**Actualiser**|Réduit le nœud sélectionné afin qu’il puisse être redéveloppé pour afficher des informations actualisées.|

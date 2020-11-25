@@ -1,5 +1,7 @@
 ---
 title: Paramètres avancés pour les services, boîte de dialogue
+description: Découvrez comment utiliser les paramètres avancés pour les fonctionnalités des services pour configurer des paramètres avancés pour les services d’application cliente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad28dd6890effbac00282a0e9bc388b4191139
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585676"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871312"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Paramètres avancés pour les services, boîte de dialogue
 Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] depuis les applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projet** pour configurer les services d’application cliente. Pour plus d’informations sur la page **Services**, consultez [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md).
@@ -44,6 +46,6 @@ Le fournisseur de rôles accède aux valeurs de rôle mises en cache ou au servi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
+- [Services d'application cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Services, page du Concepteur de projets](../../ide/reference/services-page-project-designer.md)
 - [Comment : configurer les services d'application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

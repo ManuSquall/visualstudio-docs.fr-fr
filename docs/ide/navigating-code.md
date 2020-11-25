@@ -1,5 +1,7 @@
 ---
 title: Commandes de navigation dans le code
+description: Découvrez les différentes options dont vous disposez pour naviguer dans votre code dans l’éditeur.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77b0f8782f9ffaf37701f13b30be6e068ce05f8d
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585819"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871520"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -131,7 +133,7 @@ Entrée | Fonction
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **ALT**de + **début**
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **ALT** de + **début**
 **Souris** | Cliquez avec le bouton droit sur le nom du type et sélectionnez **atteindre la base** .
 
 ## <a name="call-hierarchy"></a>Hiérarchie d'appels
@@ -145,7 +147,7 @@ Entrée | Fonction
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Commandes Méthode suivante et Méthode précédente (Visual Basic)
 
-Dans des fichiers de code Visual Basic, utilisez ces commandes pour déplacer le point d’insertion vers les différentes méthodes. Choisissez **modifier**la  >  **méthode suivante** ou **modifier**la  >  **méthode précédente**.
+Dans des fichiers de code Visual Basic, utilisez ces commandes pour déplacer le point d’insertion vers les différentes méthodes. Choisissez **modifier** la  >  **méthode suivante** ou **modifier** la  >  **méthode précédente**.
 
 ## <a name="structure-visualizer"></a>Visualiseur de structure
 

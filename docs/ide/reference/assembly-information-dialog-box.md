@@ -1,5 +1,7 @@
 ---
 title: Informations de l’assembly (boîte de dialogue)
+description: En savoir plus sur la boîte de dialogue informations de l’assembly et sur la façon dont elle est utilisée pour spécifier les valeurs des attributs d’assembly global .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809005"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871338"
 ---
 # <a name="assembly-information-dialog-box"></a>Informations de l’assembly (boîte de dialogue)
 
