@@ -7,11 +7,11 @@ ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493268"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190185"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visite guidée de Visual Studio 2019 pour Mac
 
@@ -74,7 +74,7 @@ Les références d’assemblys pour chaque projet sont disponibles dans le dossi
 
 ![Dossier références dans la fenêtre de la solution](media/ide-tour-image19.png)
 
-Vous ajoutez des références en utilisant la boîte de dialogue **Modifier les références** , que vous pouvez afficher en double-cliquant sur le dossier Références ou en sélectionnant **Modifier les références** dans les actions de son menu contextuel :
+Vous ajoutez des références en utilisant la boîte de dialogue **Modifier les références**, que vous pouvez afficher en double-cliquant sur le dossier Références ou en sélectionnant **Modifier les références** dans les actions de son menu contextuel :
 
 ![Boîte de dialogue Modifier les références](media/ide-tour-image20.png)
 
@@ -86,7 +86,7 @@ Toutes les dépendances externes utilisées dans votre application sont stockée
 
 NuGet est le gestionnaire de packages le plus répandu pour le développement .NET. Grâce à la prise en charge de NuGet par Visual Studio, vous pouvez facilement rechercher et ajouter des packages à votre projet d’application.
 
-Pour ajouter une dépendance à votre application, cliquez avec le bouton droit sur le dossier Dépendances / Packages, puis sélectionnez **Ajouter des packages**  :
+Pour ajouter une dépendance à votre application, cliquez avec le bouton droit sur le dossier Dépendances / Packages, puis sélectionnez **Ajouter des packages** :
 
 ![Ajouter un package NuGet](media/ide-tour-image21.png)
 

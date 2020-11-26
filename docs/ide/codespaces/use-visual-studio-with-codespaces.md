@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2019
 ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006252"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189925"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Utilisation de Visual Studio avec un codeSpace (version préliminaire)
 
@@ -32,7 +32,7 @@ Visual Studio offre une excellente prise en charge pour le développement dans G
 
 La connexion à GitHub Codespaces avec Visual Studio 2019 Preview n’est pas activée par défaut. vous devez d’abord activer l’option preview Features.
 
-1. Dans la version préliminaire de Visual Studio 2019 **Tools**, utilisez l'  >  élément de menu outils**options** pour ouvrir la boîte de dialogue Options.
+1. Dans la version préliminaire de Visual Studio 2019 **Tools**, utilisez l'  >  élément de menu outils **options** pour ouvrir la boîte de dialogue Options.
 
 2. Sous **environnement**, sélectionnez **fonctionnalités** en version préliminaire et cochez la fonctionnalité **se connecter à GitHub Codespaces** preview.
 
@@ -86,7 +86,7 @@ Une fois que vous avez créé votre codeSpace, vous pouvez ouvrir votre codeSpac
 
    ![Fenêtre de démarrage de Visual Studio avec connexion à un codeSpace](media/visual-studio-start-window.png)
 
-   Si vous êtes déjà dans Visual Studio, vous pouvez utiliser l' **File**  >  élément de menu**se connecter à un fichier codeSpace** .
+   Si vous êtes déjà dans Visual Studio, vous pouvez utiliser l' **File**  >  élément de menu **se connecter à un fichier codeSpace** .
 
    ![Fichier Visual Studio connexion à un élément de menu codeSpace](media/visual-studio-file-connect-to-codespace.png)
 

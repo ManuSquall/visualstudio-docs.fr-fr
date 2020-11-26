@@ -1,5 +1,7 @@
 ---
 title: Disponibilité des commandes | Microsoft Docs
+description: Découvrez comment le contexte de commande, qui change en fonction du projet actuel, de l’éditeur actuel et d’autres facteurs, détermine les commandes qui sont disponibles dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da4d48b41b4b42a3c3f049f64ca76e1d9eba6eb
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709699"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189938"
 ---
 # <a name="command-availability"></a>Disponibilité des commandes
 

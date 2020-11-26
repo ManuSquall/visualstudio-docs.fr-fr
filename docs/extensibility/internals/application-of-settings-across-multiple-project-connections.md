@@ -1,5 +1,6 @@
 ---
 title: Appliquer des paramètres sur plusieurs connexions de projet
+description: Découvrez comment appliquer des paramètres à plusieurs connexions de projet à l’aide d’un plug-in de contrôle de code source pour exécuter une opération de traitement par lots.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81448760f0417528fd630c4919ce516b32e518c8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034920"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190107"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Application de paramètres sur plusieurs connexions de projet
 Un plug-in de contrôle de code source créé à l’aide de la version 1,2 de l’API de plug-in de contrôle de code source peut utiliser une opération de traitement par lot pour exécuter la même opération de contrôle de code source sur plusieurs projets ou plusieurs contextes de connexion. Les lots peuvent être utilisés pour éliminer les boîtes de dialogue redondantes et par projet de l’expérience utilisateur.

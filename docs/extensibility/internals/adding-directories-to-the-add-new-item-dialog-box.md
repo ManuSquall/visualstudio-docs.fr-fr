@@ -1,5 +1,7 @@
 ---
 title: Ajout de répertoires à la boîte de dialogue Ajouter un nouvel élément | Microsoft Docs
+description: Découvrez comment ajouter des répertoires à la boîte de dialogue Ajouter un nouvel élément dans Visual Studio à l’aide d’un script de Registre pour inscrire les répertoires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d4af79f95c87271e9a10eece6c728daa9a81305
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6a8090a47c275e66272ed3ee3e5d5a1eef1926d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710253"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189730"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Ajouter des répertoires à la boîte de dialogue Ajouter un nouvel élément
-L’exemple de code suivant montre comment inscrire un nouvel ensemble de répertoires pour la boîte de dialogue **Ajouter un nouvel élément** . Les répertoires de la boîte de dialogue **Ajouter un nouvel élément** sont différents pour chaque projet. Par conséquent, les répertoires sont inscrits sous la sous-clé **projects** , qui se trouve dans **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp\projects**.
+L’exemple de code suivant montre comment inscrire un nouvel ensemble de répertoires pour la boîte de dialogue **Ajouter un nouvel élément** . Les répertoires de la boîte de dialogue **Ajouter un nouvel élément** sont différents pour chaque projet. Par conséquent, les répertoires sont inscrits sous la sous-clé **projects** , qui se trouve dans **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
 
 ## <a name="registry-script"></a>Script du Registre
 
@@ -50,7 +52,7 @@ NoRemove Projects
  La `SortPriority` valeur spécifie une priorité de tri.
 
 ## <a name="add-items-to-an-existing-project"></a>Ajouter des éléments à un projet existant
- Vous pouvez également ajouter des éléments à un projet existant. Par exemple, pour un [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projet, vous pouvez ajouter des éléments au dossier * \<root> \Program Files\Microsoft Visual Studio\VC # \CSharpProjectItems\LocalProjectItems* . Dans ce cas, `%GUID_Project%` est le GUID d’un projet C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
+ Vous pouvez également ajouter des éléments à un projet existant. Par exemple, pour un [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projet, vous pouvez ajouter des éléments au dossier *\<root> \Program Files\Microsoft Visual Studio\VC # \CSharpProjectItems\LocalProjectItems* . Dans ce cas, `%GUID_Project%` est le GUID d’un projet C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
 
  Vous pouvez également étendre un projet existant en programmant un sous-type de projet. Avec un sous-type de projet, vous pouvez étendre un projet sans écrire un nouveau type de projet. Pour plus d’informations sur les sous-types de projet, consultez sous- [types de projet](../../extensibility/internals/project-subtypes.md).
 

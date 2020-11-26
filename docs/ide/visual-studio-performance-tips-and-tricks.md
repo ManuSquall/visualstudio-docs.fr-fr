@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352360"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189860"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -41,9 +41,9 @@ Si vous désactivez la restauration automatique de fichiers, vous pouvez accéde
 
 - Pour la fonctionnalité **Atteindre** générale, sélectionnez **Edition** > **Atteindre** > **Atteindre tout**, ou appuyez sur **Ctrl**+**T**.
 
-- Accédez au dernier emplacement de modification d’une solution à l’aide de **modifier**  >  **atteindre pour**  >  **accéder à l’emplacement de la dernière modification**ou en appuyant sur **CTRL** + **Shift** + **RET**.
+- Accédez au dernier emplacement de modification d’une solution à l’aide de **modifier**  >  **atteindre pour**  >  **accéder à l’emplacement de la dernière modification** ou en appuyant sur **CTRL** + **Shift** + **RET**.
 
-- Utilisez **Aller au fichier récent** pour afficher la liste des derniers fichiers ouverts dans une solution. Sélectionnez **modifier**  >  **atteindre**pour  >  **accéder au fichier récent**ou appuyez sur **CTRL** + **1**, **CTRL** + **R**.
+- Utilisez **Aller au fichier récent** pour afficher la liste des derniers fichiers ouverts dans une solution. Sélectionnez **modifier**  >  **atteindre** pour  >  **accéder au fichier récent** ou appuyez sur **CTRL** + **1**, **CTRL** + **R**.
 
 ## <a name="configure-debugging-options"></a>Configurer les options de débogage
 
@@ -59,7 +59,7 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
     Pour le débogage natif, le chargement des fichiers de symboles (*.pdb*) consomme beaucoup de ressources mémoire. Vous pouvez configurer les paramètres de symboles de votre débogueur pour économiser la mémoire. En règle générale, vous configurez la solution pour charger uniquement les modules de votre projet.
 
-    Pour spécifier le chargement de symboles, choisissez **Outils**  >  **options**de  >  **débogage**  >  **symboles**.
+    Pour spécifier le chargement de symboles, choisissez **Outils**  >  **options** de  >  **débogage**  >  **symboles**.
 
     Définissez les options sur **Uniquement les modules spécifiés** au lieu de **Tous les modules**, puis spécifiez les modules que vous voulez charger. Pendant le débogage, vous pouvez également cliquer avec le bouton droit sur des modules spécifiques dans la fenêtre **Modules** pour inclure explicitement un module dans le chargement de symboles. (Pour ouvrir la fenêtre pendant le débogage, choisissez **Déboguer**  >  **Windows**  >  **Modules**.)
 
@@ -127,9 +127,9 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
     [**Retour**](./reference/how-to-manage-word-wrap-in-the-editor.md) automatique à la ligne affiche la partie d’une longue ligne de code qui s’étend au-delà de la largeur actuelle de la fenêtre de l’éditeur de code. Le retour automatique à la ligne est activé par défaut.
 
-    Pour désactiver le retour automatique à la ligne pour un projet sur lequel vous travaillez actuellement, accédez à **modifier**le retour automatique à  >  **Advanced**  >  **la ligne**. (Vous pouvez activer ou désactiver ce paramètre à l’aide des mêmes commandes de menu.)
+    Pour désactiver le retour automatique à la ligne pour un projet sur lequel vous travaillez actuellement, accédez à **modifier** le retour automatique à  >  **Advanced**  >  **la ligne**. (Vous pouvez activer ou désactiver ce paramètre à l’aide des mêmes commandes de menu.)
 
-    Pour désactiver le retour automatique à la ligne pour tous les projets, accédez à **Outils**  >  **options**  >  **General**  >  **éditeur de texte**général  >  **tous les langages**  >  **général**, puis, dans la section **paramètres** , désélectionnez l’option retour automatique à la **ligne** .
+    Pour désactiver le retour automatique à la ligne pour tous les projets, accédez à **Outils**  >  **options**  >  **General**  >  **éditeur de texte** général  >  **tous les langages**  >  **général**, puis, dans la section **paramètres** , désélectionnez l’option retour automatique à la **ligne** .
 
 - **Désactiver le concepteur XAML**
 

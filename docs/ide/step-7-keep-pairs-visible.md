@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168721"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189340"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Étape 7 : Garder les paires visibles
 Le jeu fonctionne correctement tant que le joueur se contente de choisir des paires d'icônes qui ne correspondent pas. Voyons ce qui doit se produire lorsque le joueur choisit une paire d'icônes identiques. Au lieu de faire disparaître les icônes en activant le minuteur (à l'aide de la méthode <xref:System.Windows.Forms.Timer.Start>), le jeu doit se réinitialiser pour arrêter le suivi de tous les contrôles Label à l'aide des variables de référence `firstClicked` et `secondClicked`, sans réinitialiser les couleurs des deux contrôles Label choisis.
@@ -62,7 +62,7 @@ Le jeu fonctionne correctement tant que le joueur se contente de choisir des pai
 2. Enregistrez et exécutez le programme, puis commencez à choisir des icônes sur le formulaire. Si vous choisissez une paire qui ne correspond pas, l'événement Tick du minuteur se déclenche et les deux icônes disparaissent. Si vous choisissez une paire correspondante, la nouvelle `if` instruction s’exécute et l’instruction return indique à la méthode d’ignorer le code qui démarre le minuteur, de sorte que les icônes restent visibles, comme le montre l’image suivante.
 
      ![Jeu créé dans ce didacticiel](../ide/media/express_finishedgame.png)<br/>
-***Jeu de combinaisons*** *avec des paires d’icônes visibles*
+*Paires d’icônes visibles du **jeu** _ _with *
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

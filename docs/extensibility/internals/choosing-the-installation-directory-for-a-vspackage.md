@@ -1,5 +1,7 @@
 ---
 title: Choix du répertoire d’installation d’un VSPackage | Microsoft Docs
+description: Apprenez à choisir le répertoire d’installation d’un VSPackage et de ses fichiers de prise en charge, en utilisant des facteurs tels que la gestion ou non gérée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011903"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189977"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Choisir le répertoire d’installation d’un VSPackage
 Un VSPackage et ses fichiers de prise en charge doivent se trouver dans le système de fichiers d’un utilisateur. L’emplacement varie selon que le VSPackage est géré ou non, à votre schéma de contrôle de version côte à côte et au choix de l’utilisateur.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238723"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189106"
 ---
 # <a name="code-snippets-for-r"></a>Extraits de code pour R
 
@@ -32,7 +32,7 @@ Les extraits de code peuvent apporter bien plus que la saisie semi-automatique d
 
 Dans ce cas, quand vous tapez `readc`, IntelliSense affiche une liste de saisie semi-automatique. En sélectionnant cette saisie semi-automatique dans la liste déroulante et **en appuyant** sur la touche Tab `readc` , puis en appuyant sur **Tab** , vous développez l’extrait. (Pour cette raison, le développement de l’extrait de code est souvent évoqué comme « tapez l’extrait de code et appuyez deux fois sur Tab »). Dans la plupart des cas, le premier appui sur Tab effectue la sélection IntelliSense et le deuxième appui déclenche le développement.
 
-Pour afficher tous les extraits de code disponibles, ouvrez **Tools**la  >  boîte de dialogue outils du**Gestionnaire des extraits de code** (**CTRL** + **K**,**B**), puis sélectionnez **R** pour **langue**. Développez les groupes, puis sélectionnez les extraits de code individuels pour afficher une description et le texte de raccourci :
+Pour afficher tous les extraits de code disponibles, ouvrez **Tools** la  >  boîte de dialogue outils du **Gestionnaire des extraits de code** (**CTRL** + **K**,**B**), puis sélectionnez **R** pour **langue**. Développez les groupes, puis sélectionnez les extraits de code individuels pour afficher une description et le texte de raccourci :
 
 ![Boîte de dialogue Extraits de code pour R](media/code-snippet-dialog.png)
 

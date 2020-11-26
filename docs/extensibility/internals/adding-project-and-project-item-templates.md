@@ -1,5 +1,7 @@
 ---
 title: Ajout de modèles de projet et d’élément de projet | Microsoft Docs
+description: En savoir plus sur l’ajout de modèles de projet et d’élément de projet aux boîtes de dialogue de l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710209"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190172"
 ---
 # <a name="add-project-and-project-item-templates"></a>Ajouter des modèles de projet et d’élément de projet
 Lorsque vous créez vos propres types de projets, vous devez fournir la prise en charge de l’ajout de nouveaux projets et éléments de projet à l’aide des boîtes de dialogue de l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) standard. Les rubriques suivantes décrivent les différentes techniques permettant d’ajouter des projets et des éléments de projet.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Contexte du projet](../../extensibility/internals/project-context.md)
 
  Explique que le projet fournit la plupart des informations de contexte pour ce qui se passe dans l’environnement.

@@ -7,11 +7,11 @@ ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
 ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493502"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189873"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Création d’applications ASP.NET Core dans Visual Studio pour Mac
 
@@ -62,7 +62,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![Capture d’écran d’une classe C# nommée HomeController.](media/netcore-image5.png)
 
-4. Le projet a également un dossier **Views** qui contient d’autres dossiers correspondant à chaque contrôleur (et un pour les vues partagées ( **Shared** )). Par exemple, le fichier CSHTML de vue (une extension du langage HTML) pour le chemin **/Home/About** se trouverait à l’emplacement **Views/Home/About.cshtml**. Ouvrez ce fichier.
+4. Le projet a également un dossier **Views** qui contient d’autres dossiers correspondant à chaque contrôleur (et un pour les vues partagées (**Shared**)). Par exemple, le fichier CSHTML de vue (une extension du langage HTML) pour le chemin **/Home/About** se trouverait à l’emplacement **Views/Home/About.cshtml**. Ouvrez ce fichier.
 
     ![Capture d’écran du projet de solution avec le fichier C S H T M L nommé about Selected.](media/netcore-image6.png)
 
@@ -80,15 +80,15 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tâche 3 : comprendre comment l’application est hébergée
 
-1. À partir de l’ **Explorateur de solutions** , ouvrez **Program.cs**. C’est le programme d’amorçage chargé d’exécuter votre application.
+1. À partir de l’**Explorateur de solutions**, ouvrez **Program.cs**. C’est le programme d’amorçage chargé d’exécuter votre application.
 
     ![Capture d’écran de la solution avec le fichier source C# nommé programme sélectionné.](media/netcore-image10.png)
 
-2. Bien que ce fichier ne contienne que deux lignes de code, celles-ci sont importantes. Nous allons les décomposer. Tout d’abord, un **WebHostBuilder** est créé. Les applications ASP.NET Core nécessitent un hôte dans lequel s’exécuter. Un hôte doit implémenter l’interface **IWebHost** , qui expose les collections des fonctionnalités et services, et une méthode **Start**. L’hôte est généralement créé à l’aide d’une instance d’un **WebHostBuilder** , qui génère et retourne une instance **WebHost**. **WebHost** référence le serveur qui gère les demandes.
+2. Bien que ce fichier ne contienne que deux lignes de code, celles-ci sont importantes. Nous allons les décomposer. Tout d’abord, un **WebHostBuilder** est créé. Les applications ASP.NET Core nécessitent un hôte dans lequel s’exécuter. Un hôte doit implémenter l’interface **IWebHost**, qui expose les collections des fonctionnalités et services, et une méthode **Start**. L’hôte est généralement créé à l’aide d’une instance d’un **WebHostBuilder**, qui génère et retourne une instance **WebHost**. **WebHost** référence le serveur qui gère les demandes.
 
     ![Capture d’écran de la méthode main C# avec une instruction qui initialise une variable nommée Host avec le type WebHostBuilder.](media/netcore-image11.png)
 
-3. Alors que **WebHostBuilder** est responsable de la création de l’hôte qui va amorcer le serveur pour l’application, vous devez fournir un serveur qui implémente **`IServer`** . Par défaut, il s’agit de **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , serveur web multiplateforme pour ASP.NET Core basé sur **libuv** , qui est une bibliothèque d’E/S asynchrones multiplateforme.
+3. Alors que **WebHostBuilder** est responsable de la création de l’hôte qui va amorcer le serveur pour l’application, vous devez fournir un serveur qui implémente **`IServer`** . Par défaut, il s’agit de **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, serveur web multiplateforme pour ASP.NET Core basé sur **libuv**, qui est une bibliothèque d’E/S asynchrones multiplateforme.
 
     ![Capture d’écran de la méthode main C# en mettant en surbrillance la variable hôte en définissant le serveur avec la méthode UseKestrel.](media/netcore-image12.png)
 
@@ -100,7 +100,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![Capture d’écran de la méthode main C# en mettant en surbrillance la variable hôte en définissant le serveur proxy inverse avec la méthode UseIISIntegration.](media/netcore-image14.png)
 
-6. Une bonne pratique consiste à séparer le chargement des paramètres de l’amorçage de l’application. Pour que cette opération soit effectuée facilement, **UseStartup** est appelée pour spécifier que la classe **Startup** doit être appelée pour le chargement des paramètres et d’autres tâches de démarrage, telles que l’insertion de middlewares dans le pipeline HTTP. Vous pouvez avoir plusieurs appels **UseStartup** , chacun d’eux remplaçant normalement les paramètres précédents en fonction des besoins.
+6. Une bonne pratique consiste à séparer le chargement des paramètres de l’amorçage de l’application. Pour que cette opération soit effectuée facilement, **UseStartup** est appelée pour spécifier que la classe **Startup** doit être appelée pour le chargement des paramètres et d’autres tâches de démarrage, telles que l’insertion de middlewares dans le pipeline HTTP. Vous pouvez avoir plusieurs appels **UseStartup**, chacun d’eux remplaçant normalement les paramètres précédents en fonction des besoins.
 
     ![Capture d’écran de la méthode main C# mise en surbrillance de la variable hôte définition de la classe Startup avec l’option UseStartup](media/netcore-image15.png)
 
@@ -114,7 +114,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
 ## <a name="task-4-running-and-debugging-the-application"></a>Tâche 4 : exécution et débogage de l’application
 
-1. Dans l’ **Explorateur de solutions** , cliquez avec le bouton droit sur le nœud de projet **CoreLab** et sélectionnez **Options**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet **CoreLab** et sélectionnez **Options**.
 
     ![Capture d’écran montrant le menu contextuel de la solution CoreLab, options de surbrillance.](media/netcore-image18.png)
 
@@ -174,7 +174,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
 ## <a name="task-5-application-startup-configuration"></a>Tâche 5 : configuration du démarrage de l’application
 
-1. Dans l’ **Explorateur de solutions** , ouvrez **Startup.cs**. Vous remarquerez peut-être des soulignements ondulés rouges pendant que les packages NuGet sont restaurés en arrière-plan et que le compilateur Roslyn génère une image complète des dépendances du projet.
+1. Dans l’**Explorateur de solutions**, ouvrez **Startup.cs**. Vous remarquerez peut-être des soulignements ondulés rouges pendant que les packages NuGet sont restaurés en arrière-plan et que le compilateur Roslyn génère une image complète des dépendances du projet.
 
     ![Capture d’écran de la solution avec le fichier de classe C# nommé Startup Selected.](media/netcore-image29.png)
 
@@ -200,7 +200,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
 ## <a name="task-6-inserting-application-middleware"></a>Tâche 6 : insertion d’un intergiciel d’application
 
-1. Recherchez la méthode **Configure** dans la classe **Startup**. C’est là que sont configurés tous les middlewares afin de pouvoir être insérés dans le pipeline HTTP et utilisés pour traiter chaque demande adressée au serveur. Bien que cette méthode soit appelée une seule fois, le contenu des méthodes (telles que la méthode **UseStaticFiles** ) peut être exécuté à chaque demande.
+1. Recherchez la méthode **Configure** dans la classe **Startup**. C’est là que sont configurés tous les middlewares afin de pouvoir être insérés dans le pipeline HTTP et utilisés pour traiter chaque demande adressée au serveur. Bien que cette méthode soit appelée une seule fois, le contenu des méthodes (telles que la méthode **UseStaticFiles**) peut être exécuté à chaque demande.
 
     ![Capture d’écran montrant la méthode configure de la classe Startup.](media/netcore-image36.png)
 
@@ -220,7 +220,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
 5. Une fois que le navigateur charge le site, sélectionnez **Safari > Préférences**.
 
-6. Sous l’onglet **Avancées** , cochez **Afficher le menu Développement dans la barre des menus** , puis fermez la boîte de dialogue.
+6. Sous l’onglet **Avancées**, cochez **Afficher le menu Développement dans la barre des menus**, puis fermez la boîte de dialogue.
 
     ![Capture d’écran montrant le volet avancé dans la boîte de dialogue Préférences de Safari avec l’option Afficher le menu développer dans la barre de menus sélectionnée.](media/netcore-image37.png)
 

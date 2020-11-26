@@ -1,5 +1,7 @@
 ---
 title: Correspondance des accolades dans un service de langage hérité | Microsoft Docs
+description: En savoir plus sur la correspondance des accolades dans un service de langage hérité, qui vous permet de suivre les éléments de langage qui doivent se produire ensemble, tels que les parenthèses et les accolades.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709815"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190003"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Correspondance des accolades dans un service de langage hérité
 La correspondance des accolades permet au développeur de suivre les éléments de langage qui doivent se produire ensemble, tels que des parenthèses et des accolades. Quand un développeur entre une accolade fermante, l’accolade ouvrante est mise en surbrillance.
@@ -38,7 +40,7 @@ La correspondance des accolades permet au développeur de suivre les éléments 
  Pour obtenir une description complète de la façon dont la saisie d’une accolade déclenche la mise en surbrillance des accolades, consultez la section *exemple d’opération d’analyse* dans l’article analyseur et analyseur de service de [langage hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
 ## <a name="enable-support-for-brace-matching"></a>Activer la prise en charge de la correspondance des accolades
- L' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut peut définir les entrées de Registre **MatchBraces**, **MatchBracesAtCaret**et **ShowMatchingBrace** qui définissent les propriétés correspondantes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Les propriétés de préférence de langue peuvent également être définies par l’utilisateur.
+ L' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut peut définir les entrées de Registre **MatchBraces**, **MatchBracesAtCaret** et **ShowMatchingBrace** qui définissent les propriétés correspondantes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Les propriétés de préférence de langue peuvent également être définies par l’utilisateur.
 
 |Entrée de Registre|Propriété|Description|
 |--------------------|--------------|-----------------|

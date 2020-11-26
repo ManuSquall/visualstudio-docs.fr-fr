@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959800"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189834"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -105,7 +105,7 @@ Un *raccourci* est un signet dans le code qui est suivi dans la **liste des tâc
 
 ### <a name="create-a-shortcut"></a>Créer un raccourci
 
-Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **modifier**les  >  **signets**  >  **Ajouter liste des tâches raccourci** ou appuyez sur **CTRL** + **K**, **CTRL** + **H**.
+Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **modifier** les  >  **signets**  >  **Ajouter liste des tâches raccourci** ou appuyez sur **CTRL** + **K**, **CTRL** + **H**.
 
 Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dans la liste, puis **Tâche suivante** ou **Tâche précédente** dans le menu contextuel.
 

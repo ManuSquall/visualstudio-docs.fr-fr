@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135090"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189782"
 ---
 # <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : environnement \> général
 
@@ -74,7 +74,7 @@ Active l'expérience visuelle complète de Visual Studio, y compris les dégrad�
 
 Utilise l'accélération graphique matérielle si elle est disponible, au lieu de l'accélération logicielle.
 
-## <a name="other"></a>Autres
+## <a name="other"></a>Autre
 
 **Éléments à afficher dans le menu Fenêtre**
 

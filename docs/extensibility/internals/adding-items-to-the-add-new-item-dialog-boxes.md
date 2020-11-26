@@ -1,5 +1,7 @@
 ---
 title: Ajout d’éléments aux boîtes de dialogue Ajouter un nouvel élément | Microsoft Docs
+description: Découvrez comment ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément dans Visual Studio, afin de pouvoir afficher des modèles et des éléments de projet à utiliser dans vos projets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710214"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190159"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément
 Le processus d’ajout d’éléments à la boîte de dialogue **Ajouter un nouvel élément** démarre avec les clés de registre. Comme indiqué dans les entrées de Registre suivantes, la section **AddItemTemplates** contient le chemin d’accès et le nom du répertoire dans lequel les éléments rendus disponibles dans la boîte de dialogue **Ajouter un nouvel élément** sont placés.
@@ -23,7 +25,7 @@ Le processus d’ajout d’éléments à la boîte de dialogue **Ajouter un nouv
 > [!NOTE]
 > La table qui suit immédiatement le segment de code contient des informations supplémentaires sur l’entrée de registre.
 
- Cette section se trouve sous **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**.
+ Cette section se trouve sous **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
  Le premier GUID est le CLSID pour les projets de ce type ; le deuxième GUID indique le type de projet inscrit pour les modèles ajouter des éléments :
 
@@ -46,7 +48,7 @@ Le processus d’ajout d’éléments à la boîte de dialogue **Ajouter un nouv
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Le répertoire listé pour **TemplatesDir**, qui est *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; *, est le nœud sur le côté gauche de l’arborescence de la boîte de dialogue **Ajouter un nouvel élément** . Les éléments supplémentaires dans l’arborescence sont basés sur le sous-répertoire de ce répertoire racine. Les fichiers disponibles pour être ajoutés au projet sont les éléments du volet droit de la boîte de dialogue **Ajouter un nouvel élément** .
+ Le répertoire listé pour **TemplatesDir**, qui est *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt;*, est le nœud sur le côté gauche de l’arborescence de la boîte de dialogue **Ajouter un nouvel élément** . Les éléments supplémentaires dans l’arborescence sont basés sur le sous-répertoire de ce répertoire racine. Les fichiers disponibles pour être ajoutés au projet sont les éléments du volet droit de la boîte de dialogue **Ajouter un nouvel élément** .
 
  En règle générale, ce dossier contient les fichiers de modèle de votre projet, tels qu’un fichier HTML de modèle ou *. cpp* , ainsi que tous les fichiers *. vsz* pour le démarrage des assistants. Pour contrôler la façon dont les éléments sont affichés, vous pouvez également inclure des fichiers *. vsdir* pour la localisation des noms de répertoires et des icônes. La chaîne localisée est la légende qui apparaît dans la boîte de dialogue qui représente ce nœud dans l’arborescence de la boîte de dialogue **Ajouter un nouvel élément** .
 
