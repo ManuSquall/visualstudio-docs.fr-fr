@@ -8,16 +8,16 @@ ms.date: 10/28/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
 ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904258"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189041"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio : pourquoi les comptes personnels s’affichent-ils pour mes abonnés ?
 Une fois que les sociétés ont migré du centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio, les administrateurs ont été surpris de trouver que l’adresse de messagerie de connexion pour certains abonnés affiche une adresse de messagerie personnelle comme Hotmail ou Outlook.  
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
 Ceci est dû à des processus de connexion qui ont été associés à l’expérience héritée pour les abonnés MSDN. Les utilisateurs ont été migrés du centre de gestion des licences en volume (VLSC) vers le portail d’administration des abonnements Visual Studio sans modifications. Les administrateurs n’ont peut-être pas conscience que les utilisateurs utilisaient des comptes personnels pour accéder aux avantages de leur abonnement. Avant les migrations des abonnés Visual Studio, qui se sont terminées en 2016, deux actions étaient nécessaires pour pouvoir utiliser un abonnement de Visual Studio :
 1. L’administrateur a « affecté » l’abonnement à un abonné individuel à l’aide de son adresse e-mail professionnelle ou scolaire.
 2. L’abonné « activait » l’abonnement.

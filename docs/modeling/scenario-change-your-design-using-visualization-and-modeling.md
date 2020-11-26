@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "92298588"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189123"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -363,9 +363,9 @@ Un diagramme de classes comporte les principales fonctionnalités suivantes :
 
   - Une *énumération* est un classifieur qui contient une liste de valeurs littérales.
 
-- Les*attributs* sont des valeurs d’un type donné qui décrivent chaque instance d’un *classifieur*. Un classifieur est un nom générique attribué aux types, aux composants, aux cas d’usage et même aux acteurs.
+- Les *attributs* sont des valeurs d’un type donné qui décrivent chaque instance d’un *classifieur*. Un classifieur est un nom générique attribué aux types, aux composants, aux cas d’usage et même aux acteurs.
 
-- Les*opérations* sont des méthodes ou des fonctions que les instances d’un classifieur peuvent exécuter.
+- Les *opérations* sont des méthodes ou des fonctions que les instances d’un classifieur peuvent exécuter.
 
 - Une *association* indique une sorte de relation entre deux classifieurs.
 
@@ -373,7 +373,7 @@ Un diagramme de classes comporte les principales fonctionnalités suivantes :
 
   - Une *composition* est une association qui indique une relation ensemble à partie entre des classifieurs.
 
-    Pour afficher les agrégations ou les compositions, définissez la propriété **Aggregation** sur une association. La valeur**Shared** et la valeur **Composite** affichent les agrégations et les compositions, respectivement.
+    Pour afficher les agrégations ou les compositions, définissez la propriété **Aggregation** sur une association. La valeur **Shared** et la valeur **Composite** affichent les agrégations et les compositions, respectivement.
 
 - Une *dépendance* indique que la modification de la définition d’un classifieur peut modifier la définition d’un autre classifieur.
 
@@ -381,7 +381,7 @@ Un diagramme de classes comporte les principales fonctionnalités suivantes :
 
      Pour créer ces relations, utilisez l’outil **Héritage** . Sinon, une réalisation peut être représentée sous forme d’interface *lollipop*.
 
-- Les*packages* sont des groupes de classifieurs, d’associations, de lignes de vie, de composants et d’autres packages. Les relations d’*importation* indiquent qu’un package inclut toutes les définitions d’un autre package.
+- Les *packages* sont des groupes de classifieurs, d’associations, de lignes de vie, de composants et d’autres packages. Les relations d’*importation* indiquent qu’un package inclut toutes les définitions d’un autre package.
 
 Pour commencer l’exploration et l’examen des classes existantes, vous pouvez utiliser le Concepteur de classes pour créer des diagrammes de classes à partir du code.
 
@@ -432,7 +432,7 @@ Pour commencer l’exploration et l’examen des classes existantes, vous pouvez
 
 Un diagramme de dépendance présente les principales fonctionnalités suivantes :
 
-- Des*couches* décrivent des groupes logiques d’artefacts.
+- Des *couches* décrivent des groupes logiques d’artefacts.
 
 - Un *lien* est une association entre une couche et un artefact.
 
