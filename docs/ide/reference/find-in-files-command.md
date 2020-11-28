@@ -1,5 +1,7 @@
 ---
 title: Rechercher dans les fichiers, commande
+description: Découvrez la commande find et comment elle recherche des fichiers à l’aide des options disponibles dans l’onglet Rechercher dans les fichiers de la fenêtre Rechercher et remplacer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,15 +15,15 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0a907332b3ce0164573b809ee9c4b2ac2addda
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569580"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305389"
 ---
 # <a name="find-in-files-command"></a>Rechercher dans les fichiers, commande
-Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers ** de la fenêtre **Rechercher et remplacer**.
+Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers** de la fenêtre **Rechercher et remplacer**.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -77,7 +79,7 @@ facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `fi
 /word ou /w\
 facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple recherche le texte « btnCancel » dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects » et affiche les informations de correspondance dans la fenêtre Résultats de la recherche 2.
 
 ```cmd

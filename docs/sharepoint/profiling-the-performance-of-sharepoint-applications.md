@@ -1,5 +1,7 @@
 ---
 title: Profilage des performances des applications SharePoint | Microsoft Docs
+description: Profiler les performances des applications SharePoint si elles s’exécutent lentement ou de manière inefficace. Utilisez les fonctionnalités de profilage de Visual Studio pour rechercher du code problématique.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414410"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305104"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profiler les performances des applications SharePoint
 
@@ -39,9 +41,9 @@ Une fois que vous avez créé et exécuté une analyse de profil sur votre appli
 
 ## <a name="performance-session-process"></a>Processus de session de performance
 
-Pour profiler une application, vous devez commencer par utiliser l’Assistant Outils de profilage performance pour créer une session de performance. Dans la barre de menus, choisissez **analyser** , **lancer l’Assistant Performance**. À l’issue de l’Assistant, vous entrez les informations requises pour votre session de performance, telles que la méthode de profil que vous souhaitez et l’application que vous souhaitez profiler. Pour plus d’informations, consultez [Comment : profiler un site Web ou une application Web à l’aide de l’Assistant Performance](../profiling/how-to-collect-performance-data-for-a-web-site.md). Vous pouvez également utiliser les options de ligne de commande pour configurer et exécuter une session de performance. Pour plus d’informations, consultez [utilisation de l’outils de profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md). Si vous souhaitez configurer manuellement chaque aspect d’une session de performance, consultez [procédure : créer manuellement des sessions de performance avec le outils de profilage](../profiling/how-to-manually-create-performance-sessions.md). Vous pouvez également créer une session de performance à partir d’un test unitaire en utilisant, dans la fenêtre **résultats des tests** , en ouvrant le menu contextuel du test unitaire, puis en choisissant **créer une session de performance**.
+Pour profiler une application, vous devez commencer par utiliser l’Assistant Outils de profilage performance pour créer une session de performance. Dans la barre de menus, choisissez **analyser**, **lancer l’Assistant Performance**. À l’issue de l’Assistant, vous entrez les informations requises pour votre session de performance, telles que la méthode de profil que vous souhaitez et l’application que vous souhaitez profiler. Pour plus d’informations, consultez [Comment : profiler un site Web ou une application Web à l’aide de l’Assistant Performance](../profiling/how-to-collect-performance-data-for-a-web-site.md). Vous pouvez également utiliser les options de ligne de commande pour configurer et exécuter une session de performance. Pour plus d’informations, consultez [utilisation de l’outils de profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md). Si vous souhaitez configurer manuellement chaque aspect d’une session de performance, consultez [procédure : créer manuellement des sessions de performance avec le outils de profilage](../profiling/how-to-manually-create-performance-sessions.md). Vous pouvez également créer une session de performance à partir d’un test unitaire en utilisant, dans la fenêtre **résultats des tests** , en ouvrant le menu contextuel du test unitaire, puis en choisissant **créer une session de performance**.
 
-Une fois que vous avez configuré une session de performance, la configuration de session est enregistrée, le serveur est configuré pour fournir les données de profilage et l’application s’exécute. Lorsque vous utilisez l’application, les données de performances sont écrites dans un fichier journal. Les sessions de performance sont répertoriées dans **Explorateur de performances** sous le dossier **cibles** . Après la fin d’une session de performance, son rapport s’affiche dans le dossier **rapports** de **Explorateur de performances**. Pour afficher le rapport, ouvrez-le dans **Explorateur de performances**. Pour afficher ou configurer les propriétés d’une session de performance, ouvrez le menu contextuel dans **Explorateur de performances** , puis choisissez **Propriétés**. Pour plus d’informations sur les propriétés spécifiques d’une session de performance, consultez [Configuration des sessions de performance pour outils de profilage](../profiling/configuring-performance-sessions.md). Pour plus d’informations sur la façon d’interpréter les résultats d’une session de performance, consultez [analyse des données de outils de profilage](../profiling/analyzing-performance-tools-data.md).
+Une fois que vous avez configuré une session de performance, la configuration de session est enregistrée, le serveur est configuré pour fournir les données de profilage et l’application s’exécute. Lorsque vous utilisez l’application, les données de performances sont écrites dans un fichier journal. Les sessions de performance sont répertoriées dans **Explorateur de performances** sous le dossier **cibles** . Après la fin d’une session de performance, son rapport s’affiche dans le dossier **rapports** de **Explorateur de performances**. Pour afficher le rapport, ouvrez-le dans **Explorateur de performances**. Pour afficher ou configurer les propriétés d’une session de performance, ouvrez le menu contextuel dans **Explorateur de performances**, puis choisissez **Propriétés**. Pour plus d’informations sur les propriétés spécifiques d’une session de performance, consultez [Configuration des sessions de performance pour outils de profilage](../profiling/configuring-performance-sessions.md). Pour plus d’informations sur la façon d’interpréter les résultats d’une session de performance, consultez [analyse des données de outils de profilage](../profiling/analyzing-performance-tools-data.md).
 
 ## <a name="stress-test"></a>Test de stress
 

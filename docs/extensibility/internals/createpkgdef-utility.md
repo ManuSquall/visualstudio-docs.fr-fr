@@ -1,5 +1,7 @@
 ---
 title: Utilitaire CreatePkgDef | Microsoft Docs
+description: En savoir plus sur l’utilitaire CreatePkgDef qui accepte un fichier. dll pour une extension Visual Studio en tant que paramètre et crée un fichier. pkgdef pour accompagner le fichier. dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709168"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305548"
 ---
 # <a name="createpkgdef-utility"></a>Utilitaire CreatePkgDef
 Accepte un fichier. dll pour une extension Visual Studio en tant que paramètre et crée un fichier *. pkgdef* pour accompagner le fichier *. dll* . Le fichier *. pkgdef* contient toutes les informations qui seraient autrement écrites dans le registre système lorsque l’extension est installée.
@@ -45,7 +47,7 @@ Force l’inscription avec l’utilitaire d' **assembly** .
 **&lt;AssemblyPath&gt;**\
 Chemin d’accès du fichier *. dll* à partir duquel vous souhaitez générer le *. pkgdef*.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Le déploiement d’extension à l’aide de fichiers *. pkgdef* remplace les spécifications de registre des versions antérieures de Visual Studio.
 
 ::: moniker range=">=vs-2019"

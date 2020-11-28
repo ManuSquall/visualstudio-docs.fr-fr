@@ -1,5 +1,7 @@
 ---
 title: Commutateurs de la ligne de commande devenv
+description: Découvrez les commutateurs de ligne de commande devenv et comment les utiliser pour définir les options de l’IDE, et également générer, déboguer et déployer des projets, le tout à partir de la ligne de commande.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255556"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305511"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de ligne de commande Devenv
 

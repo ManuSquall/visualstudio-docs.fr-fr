@@ -1,5 +1,7 @@
 ---
 title: Ouvrir un projet (commande)
+description: En savoir plus sur la commande ouvrir un projet et sur son mode d’ouverture d’une solution ou d’un projet existant.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565810"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304142"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
 
@@ -41,13 +43,13 @@ Obligatoire. Chemin complet et nom de fichier de la solution ou du projet à ouv
 > [!NOTE]
 > La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
 Cette commande n’est pas disponible lors du débogage.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant ouvre le projet Visual Basic **Test1** :
 

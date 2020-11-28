@@ -1,5 +1,7 @@
 ---
 title: Ouvrir un fichier, commande
+description: En savoir plus sur la commande ouvrir un fichier et la façon dont elle ouvre un fichier existant et vous permet de spécifier un éditeur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591513"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304113"
 ---
 # <a name="open-file-command"></a>Ouvrir un fichier, commande
 
@@ -51,11 +53,11 @@ Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.
 

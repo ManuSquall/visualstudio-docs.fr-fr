@@ -1,5 +1,7 @@
 ---
 title: Fusion de données XML dans des manifestes de fonctionnalités et de packages | Microsoft Docs
+description: Code XML généré par le concepteur de fusion et ajouté par l’utilisateur dans les manifestes de fonctionnalités et de packages SharePoint. Découvrez les éléments de manifeste de fonctionnalité et de package et les exceptions de fusion.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839725"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304236"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Fusionner des données XML dans des manifestes de fonctionnalités et de packages
   Les fonctionnalités et les packages sont définis par des [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichiers manifestes. Ces manifestes empaquetés sont une combinaison de données générées par les concepteurs et personnalisées [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] entrées dans le modèle de manifeste par les utilisateurs. Au moment de l’empaquetage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fusionne les instructions personnalisées [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] avec le concepteur fourni [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour former le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier manifeste empaqueté. Les éléments similaires, avec les exceptions notées plus loin dans les exceptions de fusion, sont fusionnés pour éviter les [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Erreurs de validation après le déploiement des fichiers sur SharePoint, et pour rendre les fichiers manifeste plus petits et plus efficaces.
@@ -50,7 +52,7 @@ ms.locfileid: "90839725"
 |Fonctionnalité (tous les attributs)|*Nom* de l’attribut (chaque nom d’attribut de l’élément de fonctionnalité est une clé unique.)|
 |ElementFile|Emplacement|
 |ElementManifests/ElementManifest|Emplacement|
-|Propriétés/propriété|Clé|
+|Propriétés/propriété|Clé :|
 |CustomUpgradeAction|Nom|
 |CustomUpgradeActionParameter|Nom|
 

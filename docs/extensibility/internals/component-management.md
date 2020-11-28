@@ -1,5 +1,7 @@
 ---
 title: Gestion des composants | Microsoft Docs
+description: Apprenez à gérer les composants de Windows Installer lors de la création d’un programme d’installation VSPackage dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709338"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304928"
 ---
 # <a name="component-management"></a>Gestion des composants
 Les unités de tâches dans le Windows Installer sont appelées des composants Windows Installer (parfois appelés WICs ou simplement des composants). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les configurations qui utilisent Windows Installer.

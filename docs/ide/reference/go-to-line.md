@@ -1,5 +1,7 @@
 ---
 title: Atteindre la ligne
+description: En savoir plus sur la boîte de dialogue atteindre la ligne et sur la façon dont elle vous permet de passer à une ligne spécifique dans le document actif.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241a574dc8ac8531c2eb4d88eddb1cf047a80d6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249875"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304207"
 ---
 # <a name="go-to-line-dialog-box"></a>Atteindre la ligne (boîte de dialogue)
 
-La boîte de dialogue **Atteindre la ligne** vous permet d’atteindre une ligne particulière dans le document actif. Pour accéder à cette boîte de dialogue, ouvrez un document à modifier, puis sélectionnez **modifier**  >  **atteindre**la  >  **ligne** ou appuyez sur **CTRL** + **G**.
+La boîte de dialogue **Atteindre la ligne** vous permet d’atteindre une ligne particulière dans le document actif. Pour accéder à cette boîte de dialogue, ouvrez un document à modifier, puis sélectionnez **modifier**  >  **atteindre** la  >  **ligne** ou appuyez sur **CTRL** + **G**.
 
 ![Boîte de dialogue Atteindre la ligne de Visual Studio](media/go-to-line-dialog-box.png)
 

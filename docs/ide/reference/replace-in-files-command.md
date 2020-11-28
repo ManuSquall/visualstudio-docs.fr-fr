@@ -1,5 +1,7 @@
 ---
 title: Remplacer dans les fichiers, commande
+description: En savoir plus sur la commande remplacer dans les fichiers et sur la façon dont elle remplace le texte dans les fichiers à l’aide des options disponibles dans l’onglet remplacer dans les fichiers de la fenêtre Rechercher et remplacer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da2bfe820f70925a979548abeab955865f2bbc2c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565472"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304155"
 ---
 # <a name="replace-in-files-command"></a>Remplacer dans les fichiers, commande
 Remplace le texte dans les fichiers à l’aide d’un sous-ensemble des options proposées sous l’onglet **Remplacer dans les fichiers** de la fenêtre **Rechercher et remplacer**.
@@ -98,7 +100,7 @@ facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `fi
 
 facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects », puis affiche les informations de remplacement dans la fenêtre **Résultats de la recherche 2**.
 
 ```

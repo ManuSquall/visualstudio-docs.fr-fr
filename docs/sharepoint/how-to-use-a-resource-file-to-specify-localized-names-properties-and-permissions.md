@@ -1,6 +1,8 @@
 ---
 title: Comment utiliser un fichier de ressources dans un projet SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Utilisez un fichier de ressources dans un projet SharePoint afin de pouvoir fournir des noms localisés, définir des propriétés et appliquer des autorisations pour les objets définis dans un modèle BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585743"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304365"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>Comment utiliser un fichier de ressources dans un projet SharePoint
 

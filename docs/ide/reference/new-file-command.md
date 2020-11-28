@@ -1,5 +1,7 @@
 ---
 title: Nouveau fichier, commande
+description: Découvrez la nouvelle commande de fichier et comment elle crée un nouveau fichier et l’ouvre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c800ce0ed130ed78f9537584c95a29a717f405fa
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595954"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304101"
 ---
 # <a name="new-file-command"></a>Nouveau fichier, commande
 Crée un fichier et l’ouvre. Le fichier s’affiche sous le dossier Fichiers divers.
@@ -59,7 +61,7 @@ Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple crée une page web « test1.htm » et l’ouvre dans l’éditeur de code source.
 
 ```cmd

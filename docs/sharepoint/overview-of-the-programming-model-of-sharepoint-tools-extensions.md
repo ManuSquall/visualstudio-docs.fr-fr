@@ -1,6 +1,8 @@
 ---
 title: Vue d’ensemble du modèle de programmation des extensions d’outils SharePoint
 titleSuffix: ''
+description: Lisez une vue d’ensemble du modèle de programmation des extensions d’outils SharePoint. Implémentez des interfaces d’extensibilité. Comprendre les modèles objet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585730"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305135"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Vue d’ensemble du modèle de programmation des extensions d’outils SharePoint
   Quand vous créez une extension pour les outils SharePoint dans Visual Studio, vous commencez par implémenter une ou plusieurs interfaces d'extensibilité qui sont exposées par ces outils. Dans la plupart des cas, vous utilisez également d'autres types fournis par les outils SharePoint pour implémenter des fonctionnalités dans votre extension. Dans certains scénarios, vous pouvez également utiliser des types dans d'autres modèles objet fournis par Visual Studio et SharePoint. Vous devez comprendre l’objectif de chacun de ces modèles objet et savoir comment les utiliser les uns avec les autres pour créer des extensions pour les outils SharePoint.
@@ -73,7 +75,7 @@ ms.locfileid: "91585730"
 
 |Espace de noms|Description|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Commands>|Contient des types que vous pouvez utiliser pour créer des *commandes SharePoint*personnalisées. Une commande SharePoint est une méthode qui appelle le modèle objet serveur SharePoint à partir d'une extension des outils SharePoint. Pour plus d’informations, consultez [appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Commands>|Contient des types que vous pouvez utiliser pour créer des *commandes SharePoint* personnalisées. Une commande SharePoint est une méthode qui appelle le modèle objet serveur SharePoint à partir d'une extension des outils SharePoint. Pour plus d’informations, consultez [appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|
 
 #### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
 
@@ -93,7 +95,7 @@ ms.locfileid: "91585730"
 
  Vous pouvez utiliser le modèle objet d’intégration si vous souhaitez ajouter une nouvelle fonctionnalité Visual Studio à utiliser avec les outils SharePoint intégrés. Par exemple, si vous créez un élément de projet SharePoint personnalisé qui représente une action personnalisée pour un site SharePoint, vous pouvez également créer un package Visual Studio qui implémente un concepteur pour l'action personnalisée. Vous pouvez associer le concepteur à l’action personnalisée en ajoutant un élément de menu contextuel à l’élément de projet qui représente l’action personnalisée dans **Explorateur de solutions**. Vous pouvez ouvrir votre concepteur en ouvrant son menu contextuel (en cliquant avec le bouton droit sur l’élément de projet d’action personnalisée ou en le sélectionnant, puis en choisissant l’option **Shift** + **F10** ), puis en choisissant **ouvrir**.
 
- Ce modèle objet est défini dans un jeu d'assemblys qui sont inclus dans le Kit de développement logiciel (SDK) Visual Studio. Voici quelques-uns des principaux assemblys de ce modèle objet : *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*et *Microsoft.VisualStudio.OLE.Interop.dll*.
+ Ce modèle objet est défini dans un jeu d'assemblys qui sont inclus dans le Kit de développement logiciel (SDK) Visual Studio. Voici quelques-uns des principaux assemblys de ce modèle objet : *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll* et *Microsoft.VisualStudio.OLE.Interop.dll*.
 
  Pour plus d’informations sur le modèle objet d’intégration, consultez [vue d’ensemble du modèle Automation](../extensibility/internals/automation-model-overview.md) et [Référence du kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 
@@ -104,7 +106,7 @@ ms.locfileid: "91585730"
 
 |Modèle objet|Description|
 |------------------|-----------------|
-|Modèle objet serveur|Le modèle objet serveur fournit l'accès à toutes les fonctionnalités que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exposent par programmation. Ce modèle objet est conçu pour être utilisé par les solutions SharePoint qui s'exécutent sur le serveur SharePoint. La majeure partie de ce modèle objet est définie dans l’assembly *Microsoft.SharePoint.dll* . Pour plus d’informations sur le modèle objet serveur, consultez [utilisation du modèle objet côté serveur SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
+|Modèle objet serveur|Le modèle objet serveur fournit l'accès à toutes les fonctionnalités que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exposent par programmation. Ce modèle objet est conçu pour être utilisé par les solutions SharePoint qui s'exécutent sur le serveur SharePoint. La majeure partie de ce modèle objet est définie dans l’assembly *Microsoft.SharePoint.dll* . Pour plus d’informations sur le modèle objet serveur, consultez [utilisation du modèle d’objet Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Modèle objet client|Le modèle objet client est un sous-ensemble du modèle objet serveur qui permet d'interagir avec des données SharePoint à partir d'un client ou serveur distant. Il est conçu pour réduire le nombre d'allers-retours qui doivent être exécutés pour effectuer des tâches courantes. La majorité du modèle d’objet client est définie dans les assemblys *Microsoft.SharePoint.Client.dll* et *Microsoft.SharePoint.Client.Runtime.dll* . Pour plus d’informations sur le modèle objet client, consultez [modèle objet client géré](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
 ## <a name="see-also"></a>Voir aussi

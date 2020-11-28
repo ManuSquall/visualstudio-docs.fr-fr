@@ -1,5 +1,7 @@
 ---
 title: 'Comment : exécuter du code lorsque des étapes de déploiement sont exécutées | Microsoft Docs'
+description: Exécutez le code pour gérer les événements déclenchés par les éléments de projet SharePoint avant et après l’exécution d’une étape de déploiement par Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2b0431ab4f985d801a78159fc2d324a29f8b638
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b921d8500c95ebbb771b5c0b5817db87b7c6ca
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015535"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304448"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Comment : exécuter du code lors de l’exécution des étapes de déploiement
   Si vous souhaitez effectuer des tâches supplémentaires pour une étape de déploiement dans un projet SharePoint, vous pouvez gérer les événements déclenchés par les éléments de projet SharePoint avant et après l’exécution de chaque étape de déploiement par Visual Studio. Pour plus d’informations, consultez extension de l' [empaquetage et du déploiement SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -36,7 +38,7 @@ ms.locfileid: "86015535"
 
 3. Dans les gestionnaires d’événements, utilisez les <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> paramètres et pour obtenir des informations sur l’étape de déploiement. Par exemple, vous pouvez déterminer l’étape de déploiement qui s’exécute et si la solution est en cours de déploiement ou de retrait.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant montre comment gérer les <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> événements et dans une extension de l’élément de projet de l’instance de liste. Cette extension écrit un message supplémentaire dans la fenêtre **sortie** lorsque Visual Studio recycle le pool d’applications pendant le déploiement et le retrait de la solution.
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]

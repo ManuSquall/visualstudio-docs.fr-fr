@@ -1,5 +1,7 @@
 ---
 title: Contribution au modèle Automation | Microsoft Docs
+description: Apprenez à contribuer au modèle Automation de Visual Studio en suivant un ensemble d’instructions lors de la conception d’un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709268"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305600"
 ---
 # <a name="contribute-to-the-automation-model"></a>Contribuer au modèle Automation
 Visual Studio fournit un ensemble d’interfaces d’automatisation pour la personnalisation de l’environnement. Le modèle Automation est le modèle objet qui permet aux utilisateurs finaux de créer des compléments et des extensions Visual Studio.
@@ -24,7 +26,7 @@ Visual Studio fournit un ensemble d’interfaces d’automatisation pour la pers
 
  Pour rendre l’expérience de l’utilisateur final cohérente, vous pouvez suivre un ensemble d’instructions lors de la conception de votre VSPackage afin que le modèle Automation pour votre VSPackage suive les idées dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Vue d’ensemble du modèle Automation](../../extensibility/internals/automation-model-overview.md)
 
  Définit le modèle Automation en tant que groupes d’objets connexes qui contrôlent les facettes principales de l’environnement commun. Cet ensemble d’objets est représenté dans un diagramme du modèle Automation.
@@ -65,5 +67,5 @@ Visual Studio fournit un ensemble d’interfaces d’automatisation pour la pers
 
  Fournit des informations sur l’automatisation pour les objets Configuration et SelectedItems.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Fournit un exemple de code qui montre comment un VSPackage participe au modèle objet d’automatisation DTE. Répertorie les paramètres, les valeurs de retour et les notes sélectionnées.

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : localiser le balisage ASPX | Microsoft Docs'
+description: Apprenez à localiser le balisage ASPX dans SharePoint en remplaçant les valeurs de chaîne codées en dur par des expressions qui font référence à des ressources localisées.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016283"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304667"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Comment : localiser le balisage ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] les pages (. aspx) utilisent généralement des valeurs de chaîne codées en dur. Pour localiser ces chaînes, remplacez-les par des expressions qui référencent des ressources localisées.
@@ -60,7 +62,7 @@ ms.locfileid: "86016283"
     </asp:Content>
     ```
 
-     par celle-ci :
+     to
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

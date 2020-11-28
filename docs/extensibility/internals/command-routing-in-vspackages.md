@@ -1,5 +1,7 @@
 ---
 title: Routage des commandes dans les VSPackages | Microsoft Docs
+description: En savoir plus sur le routage des commandes dans les VSPackages et la façon dont les commandes sont routées en fonction du contexte dans lequel elles sont exécutées dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709553"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305222"
 ---
 # <a name="command-routing-in-vspackages"></a>Routage des commandes dans les VSPackages
 Une commande est routée en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonction du contexte dans lequel elle est exécutée. Il est routé du contexte initial vers le contexte global.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Algorithme de routage des commandes](../../extensibility/internals/command-routing-algorithm.md)
 
  Décrit l’ordre de résolution du routage des commandes.

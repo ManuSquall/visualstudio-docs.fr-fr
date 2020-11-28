@@ -1,5 +1,7 @@
 ---
 title: Debug.Print
+description: En savoir plus sur la commande Print et sur la manière dont elle évalue une expression ou affiche le texte spécifié.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0524ce015ea4675254615c11e5768e59049c37f6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567838"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304127"
 ---
 # <a name="print-command"></a>Imprimer (commande)
 
@@ -37,7 +39,7 @@ ms.locfileid: "75567838"
 
 Obligatoire. Expression à évaluer ou texte à afficher.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Vous pouvez utiliser le point d’interrogation (?) comme alias pour cette commande. Ainsi, la commande
 

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : inclure des fichiers à l’aide d’un module | Microsoft Docs'
+description: Savoir comment inclure des fichiers à l’aide d’un module, qui est un conteneur qui vous permet de déployer des fichiers tels que des pages maîtres ASPX, des fichiers texte ou des images dans SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016292"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305415"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Comment : inclure des fichiers à l’aide d’un module
   Les *modules* (à ne pas confondre avec les [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules) sont des conteneurs qui vous permettent de déployer des fichiers tels que des pages maîtres aspx, des fichiers texte ou des images dans SharePoint.

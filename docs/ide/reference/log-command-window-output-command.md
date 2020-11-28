@@ -1,5 +1,7 @@
 ---
 title: Enregistrer la sortie de la fenêtre de commande, commande
+description: En savoir plus sur la commande Enregistrer la sortie de la fenêtre commande et la façon dont elle copie toutes les entrées et sorties de la Fenêtre Commande dans un fichier.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cab4f102832e8dfa6ce51b61abed8e3bfd672c40
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568657"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305268"
 ---
 # <a name="log-command-window-output-command"></a>Enregistrer la sortie de la fenêtre Commande, commande
 
@@ -49,7 +51,7 @@ facultatif. Arrête le journal pour la fenêtre **Commande**.
 /overwrite\
 facultatif. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Si aucun fichier n’est spécifié, le fichier cmdline.log est créé par défaut. L’alias par défaut de cette commande est Log.
 

@@ -1,5 +1,7 @@
 ---
 title: Afficher la pile des appels, commande
+description: En savoir plus sur la commande list Call Stack et sur la manière dont elle affiche la pile des appels actuelle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770679"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305346"
 ---
 # <a name="list-call-stack-command"></a>Afficher la pile des appels, commande
 Affiche la pile des appels actuelle.
@@ -85,7 +87,7 @@ Thread:`n`
 
 facultatif. Affiche la pile des appels pour le thread `n`. Si aucun thread n’est spécifié, affiche la pile des appels pour le thread actuel.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les modifications apportées aux arguments ou aux commutateurs s’appliquent aux futurs appels de cette commande. Exécutée seule, la commande Debug.ListCallStackby affiche toute la pile des appels. Si vous spécifiez un index, par exemple,
 
 ```cmd

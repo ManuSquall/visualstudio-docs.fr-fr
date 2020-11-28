@@ -1,5 +1,7 @@
 ---
 title: Paramètres de contexte | Microsoft Docs
+description: Découvrez les paramètres de contexte dans l’environnement de développement intégré (IDE) de Visual Studio qui définissent l’état d’un projet lorsque vous ajoutez ou implémentez un Assistant.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012449"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304718"
 ---
 # <a name="context-parameters"></a>Paramètres de contexte
-Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE), vous pouvez ajouter des assistants aux boîtes de dialogue **nouveau projet**, **Ajouter un nouvel élément**ou **Ajouter un sous-projet** . Les assistants ajoutés sont disponibles dans le menu **fichier** ou en cliquant avec le bouton droit sur un projet dans **Explorateur de solutions**. L’IDE transmet les paramètres de contexte à l’implémentation de l’Assistant. Les paramètres de contexte définissent l’état du projet lorsque l’IDE appelle l’Assistant.
+Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE), vous pouvez ajouter des assistants aux boîtes de dialogue **nouveau projet**, **Ajouter un nouvel élément** ou **Ajouter un sous-projet** . Les assistants ajoutés sont disponibles dans le menu **fichier** ou en cliquant avec le bouton droit sur un projet dans **Explorateur de solutions**. L’IDE transmet les paramètres de contexte à l’implémentation de l’Assistant. Les paramètres de contexte définissent l’état du projet lorsque l’IDE appelle l’Assistant.
 
  L’IDE démarre les assistants en définissant l' <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> indicateur dans l’appel de l’IDE à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> méthode pour le projet. Quand il est défini, le projet doit faire en sorte `IVsExtensibility::RunWizardFile` que la méthode soit exécutée à l’aide du nom de l’Assistant inscrit ou du GUID et d’autres paramètres de contexte que l’environnement de développement intégré (IDE) lui transmet.
 

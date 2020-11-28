@@ -1,5 +1,7 @@
 ---
 title: Commandes et menus qui utilisent des assemblys d’interopérabilité | Microsoft Docs
+description: Découvrez les tâches qui doivent être effectuées lors de l’implémentation de commandes de menu et de barre d’outils dans un VSPackage à l’aide d’assemblys d’interopérabilité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4bf3c1843db67fdadcf0fe177aa17e0f17a627e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709486"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304807"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Commandes et menus qui utilisent des assemblys d’interopérabilité
 Un VSPackage qui implémente des commandes de menu et de barre d’outils à l’aide d’assemblys d’interopérabilité doit :
@@ -31,7 +33,7 @@ Un VSPackage qui implémente des commandes de menu et de barre d’outils à l�
 
   La section suivante décrit comment effectuer ces tâches.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Déterminer l’état de la commande à l’aide d’assemblys d’interopérabilité](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
  Décrit comment un VSPackage informe l’IDE sur les commandes qu’il prend en charge et s’il est actuellement activé.

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : localiser du code | Microsoft Docs'
+description: Apprenez à localiser du code dans SharePoint en remplaçant les chaînes codées en dur par des appels à GetGlobalResourceObject, une méthode qui fait référence aux ressources localisées.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016690"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304582"
 ---
 # <a name="how-to-localize-code"></a>Comment : localiser du code
   Le code non localisé utilise des valeurs de chaîne codées en dur. Pour localiser des chaînes de code, remplacez-les par des appels à <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> , qui est une méthode qui fait référence aux ressources localisées.
@@ -27,7 +29,7 @@ ms.locfileid: "86016690"
 
 #### <a name="to-localize-code"></a>Pour localiser du code
 
-1. Dans **Explorateur de solutions**, ouvrez le menu contextuel d’un élément de projet, puis choisissez **Ajouter**un  >  **module**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel d’un élément de projet, puis choisissez **Ajouter** un  >  **module**.
 
      Choisissez le modèle de **fichier de ressources** .
 

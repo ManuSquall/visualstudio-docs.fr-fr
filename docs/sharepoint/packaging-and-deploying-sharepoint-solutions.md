@@ -1,5 +1,7 @@
 ---
 title: Empaquetage et déploiement de solutions SharePoint | Microsoft Docs
+description: Empaquetez et déployez des solutions SharePoint, qui sont déployées sur un serveur SharePoint à l’aide d’un fichier de package de solution (. wsp).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015592"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305083"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaqueter et déployer des solutions SharePoint
   En règle générale, une solution SharePoint est déployée sur un serveur SharePoint à l’aide d’un fichier de package de solution (. wsp). Vous pouvez utiliser Visual Studio pour organiser vos éléments de projet SharePoint en fonctionnalités et créer un package pour déployer vos fonctionnalités SharePoint.
@@ -89,13 +91,13 @@ ms.locfileid: "86015592"
  Vous pouvez également personnaliser les étapes de déploiement sur l’ordinateur de développement. Pour plus d’informations, consultez [déployer, publier et mettre à niveau des packages de solution SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
 
 ## <a name="deploy-files-in-sharepoint-solutions"></a>Déployer des fichiers dans des solutions SharePoint
- En règle générale, lorsque vous ajoutez un élément de projet SharePoint à votre solution SharePoint, tous les fichiers requis sont inclus. Les fichiers qui peuvent être compilés (fichiers de code) sont intégrés à l’assembly de sortie de la solution. Toutefois, vous devrez peut-être également ajouter des fichiers non compilables, par exemple *. xml*, *. txt*ou des fichiers de ressources, à un projet SharePoint. Ces fichiers ne sont pas automatiquement empaquetés dans votre solution. Pour vous assurer qu’ils sont empaquetés, ajoutez les fichiers à un dossier mappé ou à un élément de projet SharePoint.
+ En règle générale, lorsque vous ajoutez un élément de projet SharePoint à votre solution SharePoint, tous les fichiers requis sont inclus. Les fichiers qui peuvent être compilés (fichiers de code) sont intégrés à l’assembly de sortie de la solution. Toutefois, vous devrez peut-être également ajouter des fichiers non compilables, par exemple *. xml*, *. txt* ou des fichiers de ressources, à un projet SharePoint. Ces fichiers ne sont pas automatiquement empaquetés dans votre solution. Pour vous assurer qu’ils sont empaquetés, ajoutez les fichiers à un dossier mappé ou à un élément de projet SharePoint.
 
  Les fichiers ajoutés aux dossiers mappés sont automatiquement copiés dans la ruche SharePoint lorsque la solution est déployée. Les fichiers ajoutés à un élément de projet SharePoint sont déployés à l’emplacement spécifié dans la propriété **emplacement de déploiement** pour chaque fichier, qui est partiellement défini en fonction de la propriété **type de déploiement** . Par défaut, la valeur de la propriété **type de déploiement** est **NoDeployment**, ce qui signifie que le fichier n’est pas déployé avec la solution. Vous devez définir une autre valeur pour la propriété afin d’inclure le fichier dans le package.
 
  Par exemple, pour ajouter un fichier *. xml* à un projet SharePoint, effectuez l’une des actions suivantes :
 
-- Ajoutez un dossier mappé « dispositions » SharePoint à votre projet. Cela crée dans **Explorateur de solutions** un dossier nommé **dispositions** qui a un sous-dossier pour le projet. Ajoutez le fichier *. xml* au nouveau sous-dossier. Par défaut, le fichier est déployé dans le système de fichiers SharePoint sous *. \\\Template\Layouts \<Folder Name> *. Pour plus d’informations sur l’ajout de dossiers mappés, consultez [procédure : ajouter et supprimer des dossiers mappés](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Ajoutez un dossier mappé « dispositions » SharePoint à votre projet. Cela crée dans **Explorateur de solutions** un dossier nommé **dispositions** qui a un sous-dossier pour le projet. Ajoutez le fichier *. xml* au nouveau sous-dossier. Par défaut, le fichier est déployé dans le système de fichiers SharePoint sous *. \\\Template\Layouts \<Folder Name>*. Pour plus d’informations sur l’ajout de dossiers mappés, consultez [procédure : ajouter et supprimer des dossiers mappés](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 - Ajoutez le fichier *. xml* au dossier d’un élément de projet SharePoint, puis modifiez la propriété **type de déploiement** du fichier *. xml* de **NoDeployment** en un autre paramètre, tel que **RootFile** ou **ElementFile**. Le paramètre de **type de déploiement** approprié dépend du fichier et du projet. Pour plus d’informations sur les paramètres de propriété du **type de déploiement** , consultez [développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 

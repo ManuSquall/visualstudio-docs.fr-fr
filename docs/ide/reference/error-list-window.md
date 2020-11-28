@@ -1,5 +1,7 @@
 ---
 title: Fenêtre Liste d'erreurs
+description: Découvrez la fenêtre de Liste d’erreurs et comment l’utiliser pour effectuer des tâches liées à la résolution des erreurs qu’elle affiche.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569661"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305437"
 ---
 # <a name="error-list-window"></a>Fenêtre Liste d'erreurs
 
@@ -41,7 +43,7 @@ La fenêtre **Liste d’erreurs** vous permet d’effectuer les tâches suivante
 
 - rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.
 
-Pour afficher les **liste d’erreurs**, choisissez **Afficher**les  >  **liste d’erreurs**ou appuyez sur **CTRL** + **\\** + **E**.
+Pour afficher les **liste d’erreurs**, choisissez **Afficher** les  >  **liste d’erreurs** ou appuyez sur **CTRL** + **\\** + **E**.
 
 Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.
 
@@ -66,7 +68,7 @@ Si un filtre est actuellement appliqué aux résultats de la recherche, le nom d
 
 La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.
 
-## <a name="search"></a>Recherche
+## <a name="search"></a>Rechercher
 
 Utilisez la zone de texte **Rechercher dans la liste des erreurs** située à droite de la barre d’outils **Liste d’erreurs** pour rechercher des erreurs spécifiques dans la liste d’erreurs. Vous pouvez rechercher sur toute colonne visible dans la liste et les résultats de la recherche sont toujours triés selon la colonne de tri prioritaire au lieu de la requête ou du filtre appliqué. Si vous choisissez la touche **Échap** tandis que le focus est dans la **Liste d’erreurs**, vous pouvez effacer le terme de recherche et les résultats de la recherche filtrés. Vous pouvez également cliquer sur la croix (**X**) à droite de la zone de texte pour l’effacer.
 
@@ -76,7 +78,7 @@ Vous pouvez copier la liste d'erreurs et l'enregistrer dans un fichier. Sélecti
 
 ## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
 
-severity
+Gravité
 
 Affiche les différents types d’entrée de la **Liste d’erreurs** (**Erreur**, **Message**, **Avertissement**, **Avertissement (actif)**, **Avertissement (inactif)**).
 
@@ -88,7 +90,7 @@ Description
 
 Affiche le texte de l'entrée.
 
-Projet
+Project
 
 Affiche le nom du projet actif.
 

@@ -1,5 +1,7 @@
 ---
 title: Commandes qui doivent être exécutées après l’installation | Microsoft Docs
+description: En savoir plus sur les commandes qui doivent être exécutées dans le cadre de l’installation d’une extension déployée via un fichier. msi dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709470"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305038"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Commandes qui doivent être exécutées après l’installation
 Si vous déployez votre extension par le biais d’un fichier *. msi* , vous devez exécuter **devenv/setup** dans le cadre de votre installation afin que Visual Studio puisse découvrir vos extensions.
@@ -44,7 +46,7 @@ Si vous déployez votre extension par le biais d’un fichier *. msi* , vous dev
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Par exemple, le programme d’installation de Visual Studio écrit la valeur de registre de **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** comme *C:\VS2008\Common7\IDE\devenv.exe*, un chemin d’accès complet à l’exécutable que le programme d’installation doit exécuter.
+ Par exemple, le programme d’installation de Visual Studio écrit la valeur de registre de **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** en tant que *C:\VS2008\Common7\IDE\devenv.exe*, un chemin d’accès complet à l’exécutable que le programme d’installation doit exécuter.
 
 > [!NOTE]
 > Étant donné que la colonne de type de la table RegLocator est 2, il n’est pas nécessaire de spécifier des informations de version supplémentaires dans la table de signatures.

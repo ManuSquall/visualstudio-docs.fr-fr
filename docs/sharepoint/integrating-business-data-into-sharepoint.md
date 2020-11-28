@@ -1,5 +1,7 @@
 ---
 title: Intégration de données métiers dans SharePoint | Microsoft Docs
+description: Lisez un résumé de haut niveau sur la façon d’intégrer des données métier dans SharePoint en créant un modèle pour le service de connectivité de données métiers (BDC).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016314"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304344"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Intégrer des données métiers dans SharePoint
   Vous pouvez intégrer des données métier dans SharePoint. Les données métier peuvent provenir d’applications serveur principales, telles que [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] , Siebel et SAP, ou d’un service Web. Les utilisateurs peuvent afficher, ajouter, mettre à jour ou supprimer des données d’entreprise à l’aide de listes externes ou de composants WebPart de données d’entreprise dans SharePoint.  Les utilisateurs peuvent également accéder à ces données hors connexion dans une application Microsoft Office telle que Microsoft Outlook. Pour plus d’informations, consultez la page [où vous pouvez afficher des données externes](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).

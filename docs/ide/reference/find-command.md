@@ -1,5 +1,7 @@
 ---
 title: Rechercher, commande
+description: En savoir plus sur la commande find et sur la manière dont elle effectue une recherche dans les fichiers à l’aide d’un sous-ensemble des options disponibles sous l’onglet Rechercher dans les fichiers de la fenêtre Rechercher et remplacer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,15 +15,15 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 886695cea38909a8efa74797391adb1b6dd97d19
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595642"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305403"
 ---
 # <a name="find-command"></a>Rechercher, commande
-Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers ** de la fenêtre **Rechercher et remplacer**.
+Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers** de la fenêtre **Rechercher et remplacer**.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -70,7 +72,7 @@ facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `fi
 /word ou /w\
 facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple recherche le mot « somestring » en respectant la casse dans la section de code sélectionnée.
 
 ```cmd

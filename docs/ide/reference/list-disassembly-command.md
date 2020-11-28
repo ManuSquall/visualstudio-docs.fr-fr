@@ -1,5 +1,7 @@
 ---
 title: Afficher le code machine, commande
+description: En savoir plus sur la commande list code machine et sur la façon dont elle commence le processus de débogage et vous permet de spécifier la manière dont les erreurs sont gérées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +15,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15e9016551b178b0a29656e615d029ddaf0ca279
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770648"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305332"
 ---
 # <a name="list-disassembly-command"></a>Afficher le code machine, commande
 Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Debug.ListDisassembly [/count:number] [/endaddress:expression]

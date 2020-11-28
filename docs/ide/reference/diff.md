@@ -1,5 +1,7 @@
 ---
 title: -Diff (devenv.exe)
+description: Découvrez comment utiliser le commutateur de ligne de commande diff de devenv pour comparer deux fichiers.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a2ae3da5036134260f48dce8838571312d87bf2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570087"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305489"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -47,11 +49,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   facultatif. Nom d’affichage du deuxième fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 S’il y a déjà une instance de l’environnement IDE ouverte, la comparaison de fichiers s’affiche dans un onglet de cet environnement.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Le premier exemple compare deux fichiers sans modifier leur nom d’affichage. Le second exemple compare les fichiers en modifiant les deux noms d’affichage. Le troisième et le quatrième exemples comparent deux fichiers, mais appliquent un alias soit au premier, soit au second.
 

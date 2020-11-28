@@ -1,5 +1,7 @@
 ---
 title: Création d’un plug-in de contrôle de code source | Microsoft Docs
+description: Découvrez comment créer un plug-in de contrôle de code source qui ajoute une fonctionnalité de contrôle de code source à l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709175"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305365"
 ---
 # <a name="create-a-source-control-plug-in"></a>Créer un plug-in de contrôle de code source
 Le kit de développement logiciel (SDK) Visual Studio fournit des ressources qui vous permettent d’ajouter des fonctionnalités de contrôle de code source à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE). Elle vous permet d’utiliser n’importe quelle DLL de plug-in conforme à l’API de plug-in de contrôle de code source décrite dans cette documentation.
 
-## <a name="in-this-section"></a>Contenu de cette section
-- [Bien démarrer](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+## <a name="in-this-section"></a>Dans cette section
+- [Prise en main](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
  Décrit comment installer un plug-in de contrôle de code source et met en surbrillance les versions d’API de plug-in de contrôle de code source actuellement disponibles.
 

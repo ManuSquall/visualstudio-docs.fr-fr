@@ -1,5 +1,7 @@
 ---
 title: Afficher les threads, commande
+description: En savoir plus sur la commande list threads et sur la façon dont elle affiche une liste des threads dans le programme en cours.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf7b3ed8b28a43c31efe68c6512f08883cb4187a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595486"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305255"
 ---
 # <a name="list-threads-command"></a>Afficher les threads, commande
 Affiche une liste des threads du programme en cours.
@@ -35,7 +37,7 @@ Debug.ListThreads [index]
 
 facultatif. Sélectionne un thread par son index pour en faire le thread actuel.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Une fois spécifié, l’argument `index` marque le thread indiqué comme étant le thread actuel. Un astérisque (*) est affiché dans la liste en regard du thread actuel.
 
 ## <a name="example"></a>Exemple

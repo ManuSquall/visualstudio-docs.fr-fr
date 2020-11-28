@@ -1,5 +1,7 @@
 ---
 title: Algorithme de routage des commandes | Microsoft Docs
+description: En savoir plus sur l’ordre de résolution de commande dans Visual Studio, car les commandes sont gérées par différents composants et acheminées du contexte le plus profond au contexte le plus externe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709536"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305228"
 ---
 # <a name="command-routing-algorithm"></a>Algorithme de routage des commandes
 Dans, les commandes Visual Studio sont gérées par plusieurs composants différents. Les commandes sont routées du contexte le plus profond, qui est basé sur la sélection actuelle, vers le contexte le plus à l’extérieur (également connu sous le nom de Global). Pour plus d’informations, consultez [disponibilité des commandes](../../extensibility/internals/command-availability.md).
@@ -38,7 +40,7 @@ Dans, les commandes Visual Studio sont gérées par plusieurs composants différ
 
 7. Hiérarchie actuelle : la hiérarchie actuelle peut être le projet qui possède la fenêtre de document active ou la hiérarchie sélectionnée dans **Explorateur de solutions**. Visual Studio recherche l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface qui est implémentée sur la hiérarchie actuelle ou active. La hiérarchie doit prendre en charge les commandes qui sont valides lorsque la hiérarchie est active, même si une fenêtre de document d’un élément de projet a le focus. Toutefois, les commandes qui s’appliquent uniquement lorsque **Explorateur de solutions** a le focus doivent être prises en charge à l’aide de l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface et de ses <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> méthodes et.
 
-     Les commandes **couper**, **copier**, **coller**, **supprimer**, **Renommer**, **entrer**et **DoubleClick** nécessitent un traitement spécial. Pour plus d’informations sur la gestion des commandes **Delete** et **Remove** dans les hiérarchies, consultez l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interface.
+     Les commandes **couper**, **copier**, **coller**, **supprimer**, **Renommer**, **entrer** et **DoubleClick** nécessitent un traitement spécial. Pour plus d’informations sur la gestion des commandes **Delete** et **Remove** dans les hiérarchies, consultez l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interface.
 
 8. Global : si une commande n’a pas été gérée par les contextes mentionnés précédemment, Visual Studio tente de la router vers le VSPackage qui possède une commande qui implémente l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Si le VSPackage n’a pas déjà été chargé, il n’est pas chargé quand Visual Studio appelle la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode. Le VSPackage est chargé uniquement lorsque la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> méthode est appelée.
 

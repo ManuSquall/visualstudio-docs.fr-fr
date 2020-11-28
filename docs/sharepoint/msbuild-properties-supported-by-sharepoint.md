@@ -1,5 +1,7 @@
 ---
 title: Propriétés MSBuild prises en charge par SharePoint | Microsoft Docs
+description: Lisez une liste de noms et de descriptions de propriétés MSBuild pris en charge par et qui sont spécifiques à SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985167"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305144"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Propriétés MsBuild prises en charge par SharePoint
   Toute [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriété définie dans le fichier Microsoft. VisualStudio. SharePoint. targets, le fichier projet ou le fichier utilisateur du projet peut être utilisée dans les [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projets SharePoint. Outre les [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Propriétés communes fournies par le projet, SharePoint définit des propriétés supplémentaires spécifiques aux projets SharePoint.

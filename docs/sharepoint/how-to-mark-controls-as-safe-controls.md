@@ -1,5 +1,7 @@
 ---
 title: 'Comment : marquer des contrôles comme des contrôles sécurisés | Microsoft Docs'
+description: Marquez les contrôles comme des contrôles sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le concepteur de packages lorsque vous ajoutez un assembly.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016260"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304503"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Comment : marquer des contrôles comme des contrôles sécurisés
   Pour la sécurité, SharePoint fait la distinction entre les contrôles Web protégés contre l’injection de scripts et les contrôles Web qui ne le sont pas. Les contrôles protégés, ou *contrôles sécurisés*, sont accessibles aux utilisateurs non approuvés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, consultez la rubrique
@@ -43,7 +45,7 @@ ms.locfileid: "86016260"
 
 4. Dans la boîte de dialogue **entrées de contrôle sécurisé** , cliquez deux fois sur le bouton **Ajouter** pour ajouter deux entrées de contrôle sécurisé au volet **membres** : un pour le bouton et un pour la zone de texte.
 
-5. Choisissez la première entrée de contrôle sécurisé, puis remplacez la valeur de sa propriété **Safe** par **false**, sa propriété de **nom de type** par **Button1**et la propriété de **script Safe par** **false**.
+5. Choisissez la première entrée de contrôle sécurisé, puis remplacez la valeur de sa propriété **Safe** par **false**, sa propriété de **nom de type** par **Button1** et la propriété de **script Safe par** **false**.
 
      Cette étape identifie le contrôle bouton comme un contrôle non sécurisé.
 
@@ -90,7 +92,7 @@ ms.locfileid: "86016260"
     |Espace de noms|Espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1. VisualWebPart1**.|
     |Nom de type|Button1|
     |Nom de l'assembly|Un nom d’assembly fort, tel que : Microsoft. Office. SharePoint. ClientExtensions, version = 14.0.0.0, culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Sécurisé|Désactivez la case à cocher **sécurisé** .|
+    |Safe|Désactivez la case à cocher **sécurisé** .|
     |Protégé contre les scripts|Laissez la case à cocher **sécuriser contre les scripts** désactivée.|
 
     > [!NOTE]
@@ -107,7 +109,7 @@ ms.locfileid: "86016260"
     |Espace de noms|Espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1. VisualWebPart1**.|
     |Nom de type|TextBox1|
     |Nom de l'assembly|Un nom d’assembly fort, tel que : Microsoft. Office. SharePoint. ClientExtensions, version = 14.0.0.0, culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Sécurisé|Activez la case à cocher **sécurisé** .|
+    |Safe|Activez la case à cocher **sécurisé** .|
     |Protégé contre les scripts|Activez la case à cocher **protégé contre les scripts** .|
 
 16. Choisissez la touche **Tab** , puis choisissez le bouton **OK** pour fermer la boîte de dialogue.

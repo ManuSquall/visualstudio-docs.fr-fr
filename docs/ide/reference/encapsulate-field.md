@@ -1,5 +1,7 @@
 ---
 title: Refactoriser un champ en propriété
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour convertir un champ en propriété.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569710"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305467"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Encapsuler un champ (refactorisation)
 

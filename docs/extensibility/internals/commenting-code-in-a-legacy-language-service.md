@@ -1,5 +1,7 @@
 ---
 title: Commenter du code dans un service de langage hérité | Microsoft Docs
+description: Découvrez les classes MPF (Managed package Framework) qui assurent la prise en charge des commentaires de code dans un service de langage hérité dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709437"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305001"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Code de commentaire dans un service de langage hérité
 Les langages de programmation fournissent généralement un moyen d’annoter ou de commenter le code. Un commentaire est une section de texte qui fournit des informations supplémentaires sur le code, mais qui est ignorée lors de la compilation ou de l’interprétation.
@@ -39,7 +41,7 @@ Lorsque l’utilisateur sélectionne la **sélection de commentaire** de command
 
  Vous devez également substituer la <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> méthode pour retourner une <xref:Microsoft.VisualStudio.Package.CommentInfo> structure avec les caractères de commentaire pour votre langue. Les caractères de commentaire de ligne de style C# sont la valeur par défaut.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  Voici un exemple d’implémentation de la <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> méthode.
 
 ```csharp

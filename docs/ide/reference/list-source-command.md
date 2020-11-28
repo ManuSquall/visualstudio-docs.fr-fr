@@ -1,5 +1,7 @@
 ---
 title: Afficher la source, commande
+description: En savoir plus sur la commande list source et sur l’affichage des lignes de code source spécifiées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae2463a3d8dd295fcba9bf264e1ad3fa250169d4
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770619"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305283"
 ---
 # <a name="list-source-command"></a>Afficher la source, commande
 Affiche les lignes de code source spécifiées.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```
 Debug.ListSource [/Count:number] [/Current] [/File:filename]
@@ -52,7 +54,7 @@ facultatif. Affiche un numéro de ligne spécifique.
 
 facultatif. Spécifie s’il faut afficher les numéros de ligne.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple affiche le code source à partir de la ligne 4 du fichier Form1.vb, avec les numéros de ligne.
 
 ```

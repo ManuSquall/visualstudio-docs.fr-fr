@@ -1,5 +1,7 @@
 ---
 title: Afficher les registres, commande
+description: En savoir plus sur la commande list Registers et sur la façon dont elle affiche la valeur des registres sélectionnés et vous permet de modifier la liste des registres à afficher.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568683"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305300"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 Affiche la valeur des registres sélectionnés et vous permet de modifier la liste de registres à afficher.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
@@ -55,10 +57,10 @@ Ajoute une ou plusieurs valeurs de `register` ou `registerGroup` dans la liste.
 
 Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple utilise l’alias `Debug.ListRegisters``r` pour afficher les valeurs du groupe de registres `Flags`.
 
 ```cmd

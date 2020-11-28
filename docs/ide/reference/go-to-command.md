@@ -1,5 +1,7 @@
 ---
 title: Atteindre, commande
+description: En savoir plus sur la commande atteindre et sur la façon dont elle déplace le curseur vers la ligne spécifiée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ef161cb8108ed3244c263ee51fee4251fc05d8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569203"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305213"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
 Déplace le curseur à la ligne spécifiée.
@@ -33,7 +35,7 @@ Edit.GoTo [linenumber]
 `linenumber`\
 facultatif. Nombre entier représentant le numéro de la ligne à atteindre.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
 
 Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.

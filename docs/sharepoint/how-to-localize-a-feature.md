@@ -1,5 +1,7 @@
 ---
 title: 'Comment : localiser une fonctionnalité | Microsoft Docs'
+description: Apprenez à localiser les titres et les descriptions des fonctionnalités dans SharePoint en remplaçant les valeurs de chaîne codées en dur par des expressions qui font référence à des ressources localisées.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016145"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305189"
 ---
 # <a name="how-to-localize-a-feature"></a>Comment : localiser une fonctionnalité
   Par défaut, les titres et les descriptions des fonctionnalités utilisent des valeurs de chaîne codées en dur. Pour localiser le titre et la description de la fonctionnalité, remplacez les chaînes par des expressions qui font référence à des ressources localisées.
@@ -37,7 +39,7 @@ ms.locfileid: "86016145"
 
 4. Ouvrez chaque fichier de ressources dans l’éditeur de ressources, puis entrez tous les ID de chaîne et leurs valeurs.
 
-     Par exemple, dans le fichier de ressources de fonctionnalité par défaut, entrez un ID de chaîne de **titre** avec la valeur **My Feature title**et un deuxième ID de chaîne **Description** avec la valeur **My Feature Description**. Pour chaque fichier de ressources localisé, utilisez les mêmes ID de chaîne que ceux utilisés dans la ressource de fonctionnalité par défaut, mais entrez des chaînes localisées pour les valeurs.
+     Par exemple, dans le fichier de ressources de fonctionnalité par défaut, entrez un ID de chaîne de **titre** avec la valeur **My Feature title** et un deuxième ID de chaîne **Description** avec la valeur **My Feature Description**. Pour chaque fichier de ressources localisé, utilisez les mêmes ID de chaîne que ceux utilisés dans la ressource de fonctionnalité par défaut, mais entrez des chaînes localisées pour les valeurs.
 
 5. Après avoir entré toutes les valeurs de ressource, ouvrez le menu contextuel pour la fonctionnalité (par exemple, *Feature1. Feature*), puis choisissez **Concepteur de vues** pour ouvrir la fonctionnalité dans le concepteur de fonctionnalités.
 

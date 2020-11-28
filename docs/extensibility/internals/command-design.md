@@ -1,5 +1,7 @@
 ---
 title: Conception de commande | Microsoft Docs
+description: Découvrez comment concevoir une commande pour un VSPackage dans Visual Studio. Notamment, comment spécifier où il s’affiche, quand il est disponible et comment il doit être géré.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709662"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304869"
 ---
 # <a name="command-design"></a>Conception de commande
 Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où elle doit apparaître, quand elle est disponible et comment elle doit être gérée.
@@ -41,7 +43,7 @@ Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où ell
 ### <a name="command-organization"></a>Organisation de commande
  L’environnement positionne les commandes par groupe, priorité et menu.
 
-- Les groupes sont des collections logiques de commandes associées, par exemple, le groupe de commandes **couper**, **copier**et **coller** . Les groupes sont les commandes qui s’affichent dans les menus.
+- Les groupes sont des collections logiques de commandes associées, par exemple, le groupe de commandes **couper**, **copier** et **coller** . Les groupes sont les commandes qui s’affichent dans les menus.
 
 - La priorité détermine l’ordre dans lequel les commandes individuelles d’un groupe apparaissent dans le menu.
 
@@ -60,7 +62,7 @@ Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où ell
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Implémentation de la commande](../../extensibility/internals/command-implementation.md)|Décrit comment implémenter des commandes dans un VSPackage.|
 |[Disponibilité des commandes](../../extensibility/internals/command-availability.md)|Décrit comment Visual Studio Context détermine les commandes disponibles.|

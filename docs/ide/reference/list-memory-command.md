@@ -1,5 +1,7 @@
 ---
 title: Afficher la mémoire, commande
+description: En savoir plus sur la commande list Memory et la façon dont elle affiche le contenu de la plage de mémoire spécifiée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568709"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305320"
 ---
 # <a name="list-memory-command"></a>Afficher la mémoire, commande
 Affiche le contenu de la plage de mémoire spécifiée.
@@ -53,7 +55,7 @@ facultatif. Type du format selon lequel les informations sur la mémoire sont af
 
 facultatif. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Au lieu d’écrire une commande **Debug.ListMemory** complète avec tous ses commutateurs, vous pouvez appeler la commande à l’aide d’alias préparamétrés avec certains commutateurs prédéfinis à des valeurs spécifiées. Par exemple, au lieu d’entrer :
 
 ```cmd
@@ -74,7 +76,7 @@ Voici une liste des alias disponibles pour la commande **Debug.ListMemory** :
 |**da**|Debug.ListMemory /Ansi|
 |**bases**|Debug.ListMemory /Format:OneByte|
 |**métafichier**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**JJ**|Debug.ListMemory /Format:FourBytes|
+|**dd**|Debug.ListMemory /Format:FourBytes|
 |**DL**|Debug.ListMemory /Format:Float|
 |**DQ**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
