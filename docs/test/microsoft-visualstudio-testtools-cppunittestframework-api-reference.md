@@ -1,5 +1,7 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+description: Cet article décrit les membres CppUnitTestFramework, que vous pouvez utiliser pour écrire des tests unitaires C++ basés sur l’infrastructure de test unitaire Native Microsoft.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,18 +9,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82109427"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329183"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Cette rubrique liste les membres publics de l’espace de noms `Microsoft::VisualStudio::CppUnitTestFramework`. Utilisez ces API pour écrire des tests unitaires C++ basés sur le framework de tests unitaires natifs Microsoft. Vous pouvez trouver un [exemple d’utilisation](#example) à la fin de la rubrique.
 
-Les fichiers d’en-tête et lib se trouvent sous * \<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*.
+Les fichiers d’en-tête et lib se trouvent sous *\<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*.
 
 Les chemins des fichiers d’en-tête et de bibliothèque sont configurés automatiquement dans un projet de test natif.
 

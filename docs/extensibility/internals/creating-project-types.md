@@ -1,5 +1,7 @@
 ---
 title: Création de types de projets | Microsoft Docs
+description: Apprenez à étendre Visual Studio en concevant, en créant et en inscrivant un nouveau type de projet qui prend en charge les tâches de programmation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709069"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329924"
 ---
 # <a name="create-project-types"></a>Créer des types de projet
 Vous pouvez étendre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en créant un nouveau type de projet. Pour créer un nouveau type de projet, vous devez comprendre plusieurs concepts et effectuer un certain nombre d’étapes. Les rubriques suivantes fournissent une vue d’ensemble de la façon de créer des types de projet.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Décisions de conception de type de projet](../../extensibility/internals/project-type-design-decisions.md)
 
  Décrit les décisions de conception relatives à l’élément, à la persistance du fichier projet et aux mécaniciens que vous devez effectuer avant de créer un nouveau type de projet.

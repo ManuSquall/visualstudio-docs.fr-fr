@@ -1,5 +1,7 @@
 ---
 title: Chargement différé du document | Microsoft Docs
+description: En savoir plus sur le chargement différé des documents dans Visual Studio et sur la façon de coder les extensions afin qu’elles ne interrogent pas les éléments d’un document avant qu’elle ne soit chargée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708809"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328390"
 ---
 # <a name="delayed-document-loading"></a>Chargement différé du document
 
@@ -65,4 +67,4 @@ Un moyen plus efficace d’accéder à un document consiste à utiliser <xref:Mi
 
 Il n’y a pas de signal visible pour indiquer si un document a été initialisé. il peut donc être difficile de déterminer si votre extension force l’initialisation. Vous pouvez définir une clé de Registre qui facilite la vérification, car elle provoque le titre de chaque document qui n’est pas entièrement initialisé pour avoir le texte *[stub]* dans le titre.
 
-Dans **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**, définissez **StubTabTitleFormatString** sur * {0} [stub]*.
+Dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**, définissez **StubTabTitleFormatString** sur *{0} [stub]*.

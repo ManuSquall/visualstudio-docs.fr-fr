@@ -1,5 +1,7 @@
 ---
 title: Tester une application UWP avec un test codé de l’interface utilisateur
+description: Découvrez comment créer un test codé de l’interface utilisateur pour une application plateforme Windows universelle en créant une application UWP pour tester et créer un test codé de l’interface utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
 author: mikejo5000
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ec6750a48b8902ec77e8982beb774e306c8d1d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286750"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330236"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Créer un test codé de l’interface utilisateur pour tester une application UWP
 

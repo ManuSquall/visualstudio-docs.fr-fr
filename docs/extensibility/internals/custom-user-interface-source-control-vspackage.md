@@ -1,5 +1,7 @@
 ---
 title: Interface utilisateur personnalisée (VSPackage de contrôle de code source) | Microsoft Docs
+description: Découvrez comment créer une interface utilisateur (IU) personnalisée dans Visual Studio à l’aide d’un VSPackage de contrôle de code source pour spécifier des éléments d’interface utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708931"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328520"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface utilisateur personnalisée (VSPackage de contrôle de code source)
 Un VSPackage déclare ses éléments de menu et leurs États par défaut par le biais du fichier de table de commandes Visual Studio (*. vsct*). L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) affiche les éléments de menu dans leur état par défaut jusqu’à ce que le VSPackage soit chargé. Par la suite, la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est appelée pour activer ou désactiver les éléments de menu.

@@ -1,5 +1,7 @@
 ---
 title: Exécution symbolique dynamique | Outil de test Microsoft IntelliTest pour les développeurs
+description: Découvrez comment IntelliTest génère des entrées pour les tests unitaires paramétrables en analysant les conditions de branche dans le programme.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315198"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329908"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -133,6 +135,6 @@ La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être ut
 
 Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Articles complémentaires
+## <a name="further-reading"></a>Informations supplémentaires
 
-* [Fonctionnement](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [Comment cela fonctionne-t-il ?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

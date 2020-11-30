@@ -1,5 +1,7 @@
 ---
 title: Éléments coloriables personnalisés | Microsoft Docs
+description: Découvrez comment créer des éléments coloriables personnalisés dans le cadre d’un service de langage en remplaçant les éléments de la boîte de dialogue polices et couleurs, par exemple les mots clés et les commentaires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708997"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328533"
 ---
 # <a name="custom-colorable-items"></a>Éléments coloriables personnalisés
 Vous pouvez remplacer la liste de types pour la coloration, tels que les mots clés et les commentaires, en implémentant des éléments coloriables personnalisés dans le cadre de votre service de langage.

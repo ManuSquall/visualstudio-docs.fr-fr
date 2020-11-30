@@ -1,5 +1,7 @@
 ---
 title: Configurations et plateformes pour les tests codés de l’interface utilisateur
+description: Cet article contient les configurations et plateformes prises en charge pour les tests codés de l’interface utilisateur pour Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2b749375c398b3deb6ac56e8b1a787b0bcb82b22
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036897"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330249"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions
 
@@ -39,7 +41,7 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 | .NET | .NET 2.0, 3.0, 3.5, 4 et 4.5. **Remarque :**  [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] et Visual Studio nécessitent tous les deux .NET 4 pour fonctionner. Cependant, les applications développées à l’aide des versions .NET répertoriées sont prises en charge. |
 
 > [!NOTE]
-> La*synchronisation d’interface utilisateur* est une fonctionnalité permettant de vérifier la lecture dans la file d’attente de messages de chaque contrôle. Si un contrôle ne répond pas à l’événement qui lui a été envoyé, l’événement est envoyé une nouvelle fois.
+> La *synchronisation d’interface utilisateur* est une fonctionnalité permettant de vérifier la lecture dans la file d’attente de messages de chaque contrôle. Si un contrôle ne répond pas à l’événement qui lui a été envoyé, l’événement est envoyé une nouvelle fois.
 
 ## <a name="platform-support"></a>Plateforme prise en charge
 

@@ -1,5 +1,7 @@
 ---
 title: Affichage des fichiers à l’aide de la commande Ouvrir avec | Microsoft Docs
+description: Découvrez comment un projet peut appeler la commande Ouvrir avec dans l’environnement de développement intégré (IDE) de Visual Studio pour afficher des fichiers.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708580"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329690"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Afficher les fichiers à l’aide de la commande Ouvrir avec
 Un projet peut demander à l’IDE d’afficher la boîte de dialogue **Ouvrir avec** . Cette demande invite l’utilisateur à ouvrir un fichier qui a une sélection de éditeurs standard. Les étapes suivantes décrivent ce processus :

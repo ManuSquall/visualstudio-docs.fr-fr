@@ -1,5 +1,7 @@
 ---
 title: Paramètres d'exécution du test de charge
+description: Découvrez comment créer et stocker plusieurs paramètres d’exécution pour chaque test de charge, puis sélectionner un paramètre particulier à utiliser lorsque vous exécutez le test.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8898a474888ce9efbf4c91a5251bf8fe7036fe5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 651d3937e51be4ec1deeb748f2e4f32cfd08ee81
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584463"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329248"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriétés des paramètres d’exécution des tests de charge
 
@@ -34,7 +36,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Nombre maximal d’URL de la requête pouvant faire l’objet d’un rapport**|Nombre maximal d'URL de la requête de test de performances web uniques où signaler des résultats dans ce test de charge.<br /><br /> Vous pouvez augmenter ce nombre si nécessaire, mais cela augmentera également la taille et le temps de traitement du résultat de test de charge.|
 |**Nombre maximal de violations de seuils**|Le nombre maximum de violations de seuil à enregistrer pour ce test de charge.<br /><br /> Vous pouvez augmenter ce nombre si nécessaire, mais cela augmentera également la taille et le temps de traitement du résultat de test de charge.|
 |**Exécuter des tests unitaires dans le domaine d’application**|Valeur booléenne déterminant si chaque assembly de test unitaire s'exécute dans un domaine d'application séparé lorsque le test de charge contient des tests unitaires. Le paramètre par défaut est True.<br /><br /> Si vos tests unitaires ne requièrent pas un fichier app.config ou un domaine d'application distinct pour fonctionner correctement, vos tests unitaires peuvent s'exécuter plus vite si cette propriété a la valeur `False`.|
-|**Name**|Nom du paramètre d’exécution tel qu’il apparaît dans le nœud **Paramètres d’exécution** de **l’éditeur de test de charge**.|
+|**Nom**|Nom du paramètre d’exécution tel qu’il apparaît dans le nœud **Paramètres d’exécution** de **l’éditeur de test de charge**.|
 |**Niveau de validation**|Définit le niveau le plus élevé de règle de validation qui s'exécutera dans un test de charge. Les règles de validation sont associées aux requêtes de tests de performances web. Chaque règle de validation a un niveau de validation associé : **Haut**, **Moyen** ou **Bas**. Ce paramètre de série de tests de charge spécifie les règles de validation qui s’exécuteront pendant que le test de performances web est exécuté dans le test de charge. Par exemple, si ce paramètre d’exécution a la valeur **Moyen**, toutes les règles de validation marquées avec la valeur **Moyen** ou **Bas** sont exécutées.|
 
 ## <a name="logging-properties"></a>Propriétés de journalisation
@@ -43,7 +45,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |-|----------------|
 |**Nombre maximal de journaux des tests**|Indique le nombre maximum de journaux des tests à enregistrer pour le test de charge. Lorsque la valeur entrée pour le nombre maximum de journaux des tests est atteint, le test de charge arrête de collecter les journaux. Par conséquent, les journaux seront collectés au début du test, non à la fin. Le test de charge continue de fonctionner jusqu'à ce qu'il soit terminé.|
 |**Enregistrer la fréquence d’entrée au journal pour les tests terminés**|Spécifie la fréquence d'écriture du journal des tests. Cette valeur indique qu'un test sur le nombre de tests entré doit être enregistré dans le journal des tests. Par exemple, si vous entrez la valeur dix, cela indique que le dixième test, le vingtième test, le trentième test, et ainsi de suite, doivent être écrits dans le journal des tests. La valeur 0 indique qu'aucun journal des tests ne sera enregistré.|
-|**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. Par défaut, il s’agit de `True`.<br /><br /> Pour plus d’informations, consultez [Comment : spécifier si les échecs de test sont enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. La valeur par défaut est `True`.<br /><br /> Pour plus d’informations, consultez [Comment : spécifier si les échecs de test sont enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
 Pour plus d’informations, consultez [Modifier les paramètres de journalisation des tests de charge](../test/modify-load-test-logging-settings.md).
 

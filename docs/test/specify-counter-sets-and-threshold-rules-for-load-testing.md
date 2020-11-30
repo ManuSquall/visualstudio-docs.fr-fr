@@ -1,5 +1,7 @@
 ---
 title: Ensembles de compteurs et règles de seuil pour les tests de charge
+description: Découvrez comment spécifier des ensembles de compteurs et des règles de seuil dans un test de charge. Ajoutez les serveurs testés à la liste des ordinateurs sur lesquels collecter les compteurs.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04348eb2d88c560e9687c687486e6b44d8394371
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596318"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328949"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge
 

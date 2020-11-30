@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : Développement piloté par les tests'
+description: Découvrez comment développer une méthode testée en C# à l’aide de Microsoft Test Framework, que vous pouvez facilement adapter à d’autres langages ou infrastructures de test, comme NUnit.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82cccbc47d26dd9ef74ee02931d6efb4bbfa0054
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566278"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329157"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procédure pas à pas : développement piloté par les tests à l’aide de l’Explorateur de tests
 

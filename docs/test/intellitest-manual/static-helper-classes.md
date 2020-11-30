@@ -1,5 +1,7 @@
 ---
 title: Classes d’assistance statiques | Outil de test Microsoft IntelliTest pour les développeurs
+description: Découvrez les classes d’assistance statiques fournies par IntelliTest pour la création de tests unitaires paramétrables.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f11b4f7d456e588e6a2920580766ce06530227e0
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315185"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329469"
 ---
 # <a name="static-helper-classes"></a>Classes d’assistance statiques
 

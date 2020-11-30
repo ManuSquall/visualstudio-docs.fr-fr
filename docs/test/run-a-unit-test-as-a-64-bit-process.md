@@ -1,5 +1,7 @@
 ---
 title: Exécuter un test unitaire comme processus 64 bits
+description: Découvrez comment exécuter des tests unitaires et capturer des informations de couverture du code en tant que processus 64 bits. Vous devez disposer d’un ordinateur 64 bits.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d18a97a3cf8f680e7bfe3d679e8e57f7cc716fb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507984"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329066"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Exécuter un test unitaire comme processus 64 bits
 

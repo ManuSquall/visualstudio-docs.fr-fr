@@ -1,5 +1,7 @@
 ---
 title: Création d’instances de projet à l’aide des fabriques de projets | Microsoft Docs
+description: Découvrez comment créer des instances de classe de projet à l’aide de fabriques de projets dans l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709063"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328586"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Créer des instances de projet à l’aide de fabriques de projets
 Les types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilisent une *fabrique de projets* pour créer des instances d’objets de projet. Une fabrique de projet est semblable à une fabrique de classe standard pour les objets COM cocreatables. Toutefois, les objets de projet ne peuvent pas coexister ; ils peuvent uniquement être créés à l’aide d’une fabrique de projets.
@@ -38,7 +40,7 @@ Les types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
 
    Les types de projets sont associés à une extension de nom de fichier particulière. Quand un utilisateur tente d’ouvrir un fichier projet existant ou tente de créer un nouveau projet en clonant un modèle, l’IDE utilise l’extension sur le fichier pour déterminer le GUID du projet correspondant.
 
-   Dès que l’IDE détermine s’il doit créer un nouveau projet ou ouvrir un projet existant d’un type particulier, l’IDE utilise les informations du Registre système sous **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\Projects]** pour trouver le VSPackage qui implémente la fabrique de projet requise. L’IDE charge ce VSPackage. Dans la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> méthode, le VSPackage doit inscrire sa fabrique de projet auprès de l’IDE en appelant la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> méthode.
+   Dès que l’IDE détermine s’il doit créer un nouveau projet ou ouvrir un projet existant d’un type particulier, l’IDE utilise les informations du Registre système sous **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** pour rechercher le VSPackage qui implémente la fabrique de projet requise. L’IDE charge ce VSPackage. Dans la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> méthode, le VSPackage doit inscrire sa fabrique de projet auprès de l’IDE en appelant la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> méthode.
 
    La méthode principale de l' `IVsProjectFactory` interface est <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , qui doit gérer deux scénarios : l’ouverture d’un projet existant et la création d’un nouveau projet. La plupart des projets stockent leur état de projet dans un fichier projet. En général, les nouveaux projets sont créés en faisant une copie du fichier de modèle passé à la `CreateProject` méthode, puis en ouvrant la copie. Les projets existants sont instanciés en ouvrant directement le fichier projet passé à la `CreateProject` méthode. La `CreateProject` méthode peut afficher des fonctionnalités d’interface utilisateur supplémentaires pour l’utilisateur, si nécessaire.
 

@@ -1,5 +1,7 @@
 ---
 title: Temps de réponse d’une page dans un test de charge
+description: Le temps nécessaire à la chargement d’une page Web est le temps de réponse. Découvrez comment définir un objectif de temps de réponse pour chaque requête de page Web dans votre test de performances de site Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1affda002290a191fde6d5115094a2185ac8bfcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a20e8dc21e2ff5d76ea582b6ea3a9a0e36f7ed74
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287049"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328650"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Guide pratique pour afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
 
@@ -57,7 +59,7 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
    |**95%**|95e centile pour le temps de réponse. Cela indique que 95 % des pages ont répondu plus rapidement que ce nombre, et 5 % des pages ont répondu plus lentement.|
    |**99 %**|99e centile pour le temps de réponse. Cela indique que 99 % des pages ont répondu plus rapidement que ce nombre, et 1 % des pages ont répondu plus lentement.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Max**|Temps de réponse maximum de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
-   |**Écart-type**|Par défaut, les données d'écart type ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
+   |**STD dev**|Par défaut, les données d'écart type ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Temps de réponse de la page**|Temps de réponse moyen pour toutes les requêtes effectuées pour la page web.|
    |**Objectif**|Objectif de temps de réponse de la page. Il s'agit d'une valeur constante pour la page. **Remarque :**  L’objectif de temps de page s’affiche uniquement lorsque l’objectif a été défini pour la requête dans le test de performances de site Web.|
    |**% correspondant à l’objectif**|Pourcentage de requêtes effectuées pour la page web qui a atteint l’objectif de temps de réponse.|
@@ -84,7 +86,7 @@ Pour consulter les données de temps de réponse dans un graphe :
 
     Les données sont ajoutées au graphique.
 
-7. Facultatif Répétez l’étape précédente pour **moy. heure**de la page, **objectif du temps de réponse**de la page et **nombre total de pages**.
+7. Facultatif Répétez l’étape précédente pour **moy. heure** de la page, **objectif du temps de réponse** de la page et **nombre total de pages**.
 
    > [!NOTE]
    > **Objectif de temps de réponse** a une valeur constante.

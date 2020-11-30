@@ -1,5 +1,7 @@
 ---
 title: Développement d’un service de langage hérité | Microsoft Docs
+description: En savoir plus sur l’implémentation d’un service de langage hérité dans le cadre d’un VSPackage, ou à l’aide d’extensions Managed Extensibility Framework (MEF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7876b590cb5b09cf5db571ba1145f6bf747e5e5
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708671"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329742"
 ---
 # <a name="develop-a-legacy-language-service"></a>Développer un service de langage hérité
 Cette section contient des liens vers des rubriques qui vous aident à créer un service de langage hérité.
@@ -31,7 +33,7 @@ Cette section contient des liens vers des rubriques qui vous aident à créer un
 > [!NOTE]
 > Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Modèle d’un service de langage hérité](../../extensibility/internals/model-of-a-legacy-language-service.md)
 
  Fournit un modèle d’un service de langage minimal pour l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur de base. Vous pouvez utiliser ce modèle comme guide pour la création de votre propre service de langage.

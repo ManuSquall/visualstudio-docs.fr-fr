@@ -1,5 +1,7 @@
 ---
 title: Conception de la table de commandes XML (. Fichiers vsct) | Microsoft Docs
+description: Découvrez comment concevoir un fichier de table de commandes XML (. vsct) qui décrit la disposition et l’apparence des éléments de commande, notamment des boutons, des zones de liste modifiable, des menus et des barres d’outils.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708751"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328429"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Concevoir des fichiers de table de commandes XML (. vsct)
 Un fichier de table de commandes XML (*. vsct*) décrit la disposition et l’apparence des éléments de commande pour un VSPackage. Les éléments de commande incluent des boutons, des zones de liste modifiable, des menus, des barres d’outils et des groupes d’éléments de commande. Cet article décrit les fichiers de table de commandes XML, comment ils affectent les éléments de commande et les menus, et comment les créer.
@@ -25,7 +27,7 @@ Un fichier de table de commandes XML (*. vsct*) décrit la disposition et l’ap
 
  Lorsque vous créez un nouveau VSPackage en exécutant le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèle de package, le modèle génère un fichier *. vsct* avec les éléments nécessaires pour une commande de menu, une fenêtre outil ou un éditeur personnalisé, en fonction de vos sélections. Ce fichier *. vsct* peut ensuite être modifié pour répondre aux exigences d’un VSPackage spécifique. Pour obtenir des exemples de modification d’un fichier *. vsct* , consultez [étendre des menus et des commandes](../../extensibility/extending-menus-and-commands.md).
 
- Pour créer un nouveau fichier *. vsct* vide, consultez [Comment : créer un fichier *. vsct* ](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Une fois créé, vous ajoutez des éléments, des attributs et des valeurs XML au fichier pour décrire la disposition des éléments de commande. Pour obtenir un schéma XML détaillé, consultez la [référence de schéma XML vsct](../../extensibility/vsct-xml-schema-reference.md).
+ Pour créer un nouveau fichier *. vsct* vide, consultez [Comment : créer un fichier *. vsct*](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Une fois créé, vous ajoutez des éléments, des attributs et des valeurs XML au fichier pour décrire la disposition des éléments de commande. Pour obtenir un schéma XML détaillé, consultez la [référence de schéma XML vsct](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Différences entre les fichiers. CTC et. vsct
  Bien que la signification des balises XML dans un fichier *. vsct* est identique à celle des balises dans le format de fichier maintenant déconseillé *. CTC* , leur implémentation est légèrement différente :

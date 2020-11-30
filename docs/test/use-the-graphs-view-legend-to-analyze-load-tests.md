@@ -1,5 +1,7 @@
 ---
 title: Utilisation de la légende de la vue Graphes pour analyser des tests de charge
+description: En savoir plus sur la vue graphiques de l’analyseur de test de charge, qui comprend un panneau légende qui affiche des informations sur les compteurs de performances pour un graphique sélectionné.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25200b691e0bebf2e3bd1c6252efb371ed9caeb2
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590798"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330067"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Utiliser la légende de la vue Graphiques pour analyser des tests de charge
 

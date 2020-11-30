@@ -1,5 +1,7 @@
 ---
 title: Découvrir comment tester votre code avec Live Unit Test 2017
+description: Apprenez à utiliser Live Unit Testing en créant une bibliothèque de classes simple qui cible .NET Standard et en créant un projet MSTest qui cible .NET Core pour le tester.
+ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287010"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329495"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Bien démarrer avec Live Unit Testing
 
@@ -126,7 +128,7 @@ L’étape suivante consiste à créer le projet de test unitaire pour tester la
    > [!NOTE]
    > Ce didacticiel de démarrage utilise Live Unit Testing avec le framework de test MSTest. Vous pouvez également utiliser les frameworks de test xUnit et NUnit.
 
-5. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour ce faire, cliquez avec le bouton droit sur le `StringLibraryTests` projet et sélectionnez **Ajouter**une  >  **référence**. Dans la boîte de dialogue **Gestionnaire de références** , vérifiez que l’onglet **solution** est sélectionné, puis sélectionnez le projet StringLibrary, comme indiqué dans l’illustration suivante.
+5. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour ce faire, cliquez avec le bouton droit sur le `StringLibraryTests` projet et sélectionnez **Ajouter** une  >  **référence**. Dans la boîte de dialogue **Gestionnaire de références** , vérifiez que l’onglet **solution** est sélectionné, puis sélectionnez le projet StringLibrary, comme indiqué dans l’illustration suivante.
 
    ![Boîte de dialogue **Gestionnaire de références**](./media/lut-start/add-reference.png)
 
@@ -146,7 +148,7 @@ L’étape suivante consiste à créer le projet de test unitaire pour tester la
 
    ![Choix de l’encodage UTF-8](media/lut-start/utf8-encoding.png)
 
-10. Compilez le projet de test unitaire en sélectionnant **générer**la  >  **solution reconstruire** dans le menu Visual Studio de niveau supérieur.
+10. Compilez le projet de test unitaire en sélectionnant **générer** la  >  **solution reconstruire** dans le menu Visual Studio de niveau supérieur.
 
 Vous avez créé une bibliothèque de classes, ainsi que quelques tests unitaires pour celle-ci. Vous avez maintenant terminé les préliminaires nécessaires pour utiliser Live Unit Testing.
 
@@ -260,7 +262,7 @@ Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testi
 
    Notez que, dans la fenêtre **Automatique**, la valeur de la variable `phrase` est « Name\tDescription », qui est le deuxième élément du tableau. La méthode de test attend que `HasEmbeddedSpaces` retourne `true` quand cette chaîne lui est passée ; au lieu de cela, elle retourne `false`. De toute évidence, elle ne reconnaît pas « \t », le caractère de tabulation, comme espace incorporé.
 
-1. Sélectionnez **Déboguer**  >  **Continuer**, appuyez sur **F5**ou cliquez sur le bouton **Continuer** dans la barre d’outils pour continuer à exécuter le programme de test. Comme une exception non gérée s’est produite, le test s’arrête.
+1. Sélectionnez **Déboguer**  >  **Continuer**, appuyez sur **F5** ou cliquez sur le bouton **Continuer** dans la barre d’outils pour continuer à exécuter le programme de test. Comme une exception non gérée s’est produite, le test s’arrête.
 Ceci fournit suffisamment d’informations pour un examen préliminaire du bogue. `TestHasEmbeddedSpaces` (la routine de test) a fait une supposition incorrecte ou `HasEmbeddedSpaces` ne reconnaît pas correctement tous les espaces incorporés.
 
 1. Pour diagnostiquer et corriger le problème, commencez par la `StringLibrary.HasEmbeddedSpaces` méthode. Regardez la comparaison dans la méthode `HasEmbeddedSpaces`. Elle considère qu’un espace incorporé est représenté par U+0020. Le standard Unicode inclut plusieurs autres caractères espace. Ceci suggère que le code de la bibliothèque a été incorrectement testé pour un caractère espace.

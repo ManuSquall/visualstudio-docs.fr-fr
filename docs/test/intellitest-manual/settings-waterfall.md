@@ -1,5 +1,7 @@
 ---
 title: Cascade de paramètres | Outil de test Microsoft IntelliTest pour les développeurs
+description: En savoir plus sur les paramètres en cascade, qui organisent les paramètres au niveau de l’assembly, du contexte et de l’exploration.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdb053218b65924abfa64053a8a3c7e9e0543d49
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591578"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329508"
 ---
 # <a name="settings-waterfall"></a>Cascade de paramètres
 
-Le concept de cascade de paramètres signifie que l’utilisateur peut spécifier des paramètres au niveau de l' **assembly**, du **contexte**et de l' **exploration** :
+Le concept de cascade de paramètres signifie que l’utilisateur peut spécifier des paramètres au niveau de l' **assembly**, du **contexte** et de l' **exploration** :
 
 * Assembly : [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
 * Attachement : [PexClass](attribute-glossary.md#pexclass)

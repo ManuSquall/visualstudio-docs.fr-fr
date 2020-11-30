@@ -1,5 +1,7 @@
 ---
 title: Délais d’expiration des contrôleurs de test et des agents de test
+description: Découvrez comment modifier les valeurs de délai d’attente pour le contrôleur de test et l’agent de test en modifiant les fichiers de configuration XML associés.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc661999eb12bb679aa3622f0f14adc3ffc661a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287283"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330002"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test
 
@@ -68,7 +70,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    - ou -
+    -ou-
 
     Ajoutez une clé supplémentaire et spécifiez une valeur de délai d'attente. Par exemple, vous pouvez ajouter la clé `AgentInitializeTimeout` dans la section `<appSettings>` et spécifier une valeur de cinq minutes :
 
@@ -102,7 +104,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    - ou -
+    -ou-
 
     Ajoutez une clé supplémentaire et spécifiez une valeur de délai d'attente. Par exemple, vous pouvez ajouter la clé `RemotingTimeoutSeconds` dans la section `<appSettings>` et spécifier une valeur de quinze minutes :
 

@@ -1,5 +1,7 @@
 ---
 title: Dépannage de la couverture du code
+description: Découvrez comment résoudre les messages de résultats vides erronés quand vous vous attendez à ce que Visual Studio collecte des données pour les assemblys natifs et managés.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80527984"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330119"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 

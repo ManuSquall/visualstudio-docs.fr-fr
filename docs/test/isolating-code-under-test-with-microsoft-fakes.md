@@ -1,5 +1,7 @@
 ---
 title: Isolation du code sous test avec Microsoft Fakes
+description: Découvrez comment les substituts Microsoft vous aident à isoler le code que vous testez en remplaçant d’autres parties de l’application par des stubs ou des shims.
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325949"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329534"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isoler du code testé avec Microsoft Fakes
 
@@ -83,13 +85,13 @@ Pour obtenir une description détaillée, consultez [Utilisation de stubs pour i
 
 2. **Ajouter un assembly Fakes**
 
-   1. Dans **Explorateur de solutions** , 
+   1. Dans **Explorateur de solutions**, 
        - Pour un projet de .NET Framework plus ancien (style non-SDK), développez le nœud **références** de votre projet de test unitaire.
        ::: moniker range=">=vs-2019"
-       - Pour un projet de type SDK ciblant .NET Framework ou .NET Core, développez le nœud **dépendances** pour trouver l’assembly que vous souhaitez falsifier sous **assemblys** , **projets** ou **packages**.
+       - Pour un projet de type SDK ciblant .NET Framework ou .NET Core, développez le nœud **dépendances** pour trouver l’assembly que vous souhaitez falsifier sous **assemblys**, **projets** ou **packages**.
        ::: moniker-end
        - Si vous utilisez Visual Basic, sélectionnez **Afficher tous les fichiers** dans la barre d’outils **Explorateur de solutions** pour afficher le nœud **références** .
-   2. Sélectionnez l’assembly qui contient les définitions de classe pour lesquelles vous souhaitez créer des shims. Par exemple, si vous souhaitez shim **DateTime** , sélectionnez **System.dll**.
+   2. Sélectionnez l’assembly qui contient les définitions de classe pour lesquelles vous souhaitez créer des shims. Par exemple, si vous souhaitez shim **DateTime**, sélectionnez **System.dll**.
 
    3. Dans le menu contextuel, choisissez **Ajouter un assembly Fakes**.
 
@@ -174,7 +176,7 @@ Pour utiliser des shims, vous ne devez pas modifier le code de l’application n
 
 1. **Ajouter un assembly Fakes**
 
-     Dans **Explorateur de solutions** , ouvrez les références de votre projet de test unitaire et sélectionnez la référence à l’assembly qui contient la méthode que vous souhaitez falsifier. Dans cet exemple, la classe `DateTime` se trouve dans *System.dll*.  Pour afficher les références dans un projet Visual Basic, choisissez **Afficher tous les fichiers**.
+     Dans **Explorateur de solutions**, ouvrez les références de votre projet de test unitaire et sélectionnez la référence à l’assembly qui contient la méthode que vous souhaitez falsifier. Dans cet exemple, la classe `DateTime` se trouve dans *System.dll*.  Pour afficher les références dans un projet Visual Basic, choisissez **Afficher tous les fichiers**.
 
      Choisissez **Ajouter un assembly Fakes**.
 

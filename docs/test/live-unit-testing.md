@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing
+description: En savoir plus sur les Live Unit Testing lors du développement d’applications, notamment sur les frameworks pris en charge et sur la configuration de Live Unit Testing.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249904"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329352"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Comment configurer et utiliser Live Unit Testing
 
@@ -36,7 +38,7 @@ Live Unit Testing fonctionne avec les trois frameworks de tests unitaires popula
 
 Si vous avez des projets de test basés sur MSTest plus anciens qui référencent Microsoft. VisualStudio. QualityTools. UnitTestFramework et que vous ne souhaitez pas passer aux packages NuGet NuGet plus récents, effectuez une mise à niveau vers Visual Studio 2019 ou Visual Studio 2017.
 
-Dans certains cas, vous devrez peut-être restaurer explicitement les packages NuGet référencés par un projet pour que les Live Unit Testing fonctionnent. Pour ce faire, vous pouvez effectuer une build explicite de la solution (sélectionnez **générer**la  >  **solution** dans le menu Visual Studio de niveau supérieur) ou restaurer des packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **restaurer les packages NuGet**).
+Dans certains cas, vous devrez peut-être restaurer explicitement les packages NuGet référencés par un projet pour que les Live Unit Testing fonctionnent. Pour ce faire, vous pouvez effectuer une build explicite de la solution (sélectionnez **générer** la  >  **solution** dans le menu Visual Studio de niveau supérieur) ou restaurer des packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **restaurer les packages NuGet**).
 
 ## <a name="configure"></a>Configurer
 
@@ -157,7 +159,7 @@ Il existe certaines différences entre l’exécution automatique des tests et l
 **Live Unit testing**, semblable à l' **Explorateur de tests**, fournit une interface qui vous permet d’exécuter et de déboguer des tests et d’analyser les résultats des tests. Lorsque Live Unit Testing est activé, l’état des tests unitaires dans l' **Explorateur de tests** est mis à jour immédiatement. Vous n’avez pas besoin d’exécuter explicitement les tests unitaires. Lorsque Live Unit Testing n’est pas activé ou est arrêté, **Live Unit testing** affiche l’état des tests unitaires lors de la dernière exécution d’un test. Une fois que vous avez redémarré Live Unit Testing, une modification du code source est nécessaire pour réexécuter les tests.
 
 > [!TIP]
-> Démarrez Live Unit testing en sélectionnant **test**  >  **Live Unit testing**  >  **Démarrer** dans le menu Visual Studio de niveau supérieur. Vous pouvez également ouvrir la fenêtre de **Live Unit testing** à l’aide de la fenêtre **Afficher**les  >  **autres**  >  **Live Unit testing**Windows.
+> Démarrez Live Unit testing en sélectionnant **test**  >  **Live Unit testing**  >  **Démarrer** dans le menu Visual Studio de niveau supérieur. Vous pouvez également ouvrir la fenêtre de **Live Unit testing** à l’aide de la fenêtre **Afficher** les  >  **autres**  >  **Live Unit testing** Windows.
 
 Vous pouvez remarquer dans la fenêtre de **Live Unit testing** que certains tests sont sortis. Par exemple, lorsque vous arrêtez et redémarrez Live Unit Testing, la fenêtre de **Live Unit testing** grise tous les tests, comme le montre l’image suivante. Les résultats de tests dépassés indiquent que le test ne fait pas partie de la dernière série de tests unitaires en direct. Les tests ne s’exécutent que lorsqu’une modification apportée au test ou aux dépendances du test est détectée. Si aucune modification n’est apportée, l’exécution du test n’est pas obligatoire. Dans ce cas, le résultat du test grisé est toujours « à jour », bien qu’il ne fasse pas partie de la dernière exécution.
 
@@ -198,9 +200,9 @@ Pour sélectionner les projets individuels dans les tests unitaires, procédez c
 
 Vous pouvez utiliser la fenêtre de l’éditeur de code pour inclure ou exclure des méthodes de test. Cliquez avec le bouton droit sur la signature de la méthode de test dans la fenêtre de l’éditeur de code, puis sélectionnez l’une des options suivantes :
 
-- **Live Unit testing**  >  **Inclure \<selected method> **
-- **Live Unit testing**  >  **Exclure \<selected method> **
-- **Live Unit testing**  >  **Exclure tout sauf \<selected method> **
+- **Live Unit testing**  >  **Inclure \<selected method>**
+- **Live Unit testing**  >  **Exclure \<selected method>**
+- **Live Unit testing**  >  **Exclure tout sauf \<selected method>**
 
 ### <a name="exclude-tests-programmatically"></a>Exclure des tests par programmation
 

@@ -1,5 +1,7 @@
 ---
 title: Tests codés de l'interface utilisateur
+description: Apprenez à créer un test codé de l’interface utilisateur dans Visual Studio en effectuant le test manuellement pendant que le générateur de test codé de l’interface utilisateur s’exécute en arrière-plan.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928093"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330106"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Utiliser un test codé de l’interface utilisateur pour tester votre code
 
@@ -69,7 +71,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
 2. Ajoutez un fichier de test codé de l’interface utilisateur.
 
-     Si vous venez de créer un projet de test codé de l'interface utilisateur, le premier fichier de test codé de l'interface utilisateur est ajouté automatiquement. Pour ajouter un autre fichier de test, ouvrez le menu contextuel du projet de test codé de l’interface utilisateur dans **Explorateur de solutions**, puis choisissez **Ajouter**un  >  **test codé de l’interface utilisateur**.
+     Si vous venez de créer un projet de test codé de l'interface utilisateur, le premier fichier de test codé de l'interface utilisateur est ajouté automatiquement. Pour ajouter un autre fichier de test, ouvrez le menu contextuel du projet de test codé de l’interface utilisateur dans **Explorateur de solutions**, puis choisissez **Ajouter** un  >  **test codé de l’interface utilisateur**.
 
      Dans la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur**, choisissez **Enregistrer les actions** > **Modifier le mappage de l’IU ou ajouter des assertions**.
 
@@ -225,7 +227,7 @@ Si vous ne pouvez pas enregistrer un pointage de la souris sur un contrôle :
 
 Dans certaines circonstances, un contrôle spécifique utilisé dans un test codé de l’interface utilisateur peut nécessiter l’utilisation du clavier pour enregistrer manuellement des événements de pointage de la souris. Par exemple, quand vous testez une application Windows Form ou WPF (Windows Presentation Foundation), il peut exister du code personnalisé. Ou un comportement spécial peut être défini pour le pointage sur un contrôle, par exemple le développement d'une arborescence quand un utilisateur place le pointeur de la souris dessus. Pour tester ces scénarios, vous devez informer manuellement le générateur de **test codé de l’interface utilisateur** que vous pointez sur le contrôle en appuyant sur des touches de clavier prédéfinies.
 
-Quand vous exécutez votre test codé de l’interface utilisateur, placez le pointeur de la souris sur le contrôle. Appuyez ensuite sur la **touche Ctrl**et maintenez-la enfoncée tout en appuyant sur les touches **MAJ** et **R** de votre clavier. Relâchez les touches. Un événement de pointage de la souris est enregistré par le **Générateur de test codé de l’interface utilisateur**.
+Quand vous exécutez votre test codé de l’interface utilisateur, placez le pointeur de la souris sur le contrôle. Appuyez ensuite sur la **touche Ctrl** et maintenez-la enfoncée tout en appuyant sur les touches **MAJ** et **R** de votre clavier. Relâchez les touches. Un événement de pointage de la souris est enregistré par le **Générateur de test codé de l’interface utilisateur**.
 
 ![CodedUI&#95;Hover](../test/media/codedui_hover.png)
 

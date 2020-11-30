@@ -1,5 +1,7 @@
 ---
 title: Tester une grande application avec plusieurs mappages d’interface utilisateur
+description: Découvrez comment utiliser des tests codés de l’interface utilisateur lorsque vous testez une grande application à l’aide de plusieurs mappages d’IU. Cette fonctionnalité nécessite Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286581"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330158"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 
@@ -79,7 +81,7 @@ Créez plusieurs mappages d'IU dans chacun des types de situations suivants :
 
    Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d’IU est identique à la fenêtre de niveau supérieur principale.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L'exemple suivant fait partie d'une classe utilitaire qui fournit l'accès à chaque composant et à ses composants enfants représentés par les classes générées dans les différents mappages d'IU.
 

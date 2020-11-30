@@ -1,5 +1,7 @@
 ---
 title: Création de dossiers de conteneur parents pour les solutions | Microsoft Docs
+description: Découvrez comment utiliser l’API de plug-in de contrôle de code source version 1,2 pour spécifier une destination de contrôle de source racine unique pour tous les projets Web d’une solution.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709100"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329937"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Créer des dossiers de conteneur parents pour les solutions
 Dans la version 1,2 de l’API de plug-in de contrôle de code source, un utilisateur peut spécifier une destination de contrôle de source racine unique pour tous les projets Web de la solution. Cette racine unique est appelée racine super unifiée (sur).
@@ -62,7 +64,7 @@ Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , il est recom
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la valeur par défaut est le comportement de la version 1,1 si le plug-in de contrôle de code source ne retourne pas les `SCC_CAP_CREATESUBPROJECT` `SCC_CAP_GETPARENTPROJECT` indicateurs de capacité et. En outre, les utilisateurs de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peuvent choisir de rétablir le comportement de la Version 1,1 en définissant la valeur de la clé suivante sur *DWORD : 00000001*:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD : 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD : 00000001*
 
 ## <a name="see-also"></a>Voir aussi
 - [Nouveautés de l’API de plug-in de contrôle de code source version 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

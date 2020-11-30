@@ -1,5 +1,7 @@
 ---
 title: Génération de tests | Outil de test Microsoft IntelliTest pour les développeurs
+description: Découvrez comment IntelliTest génère des cas de test à partir des méthodes de votre implémentation, puis génère des entrées pour les méthodes et vérifie les assertions sur les données.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315172"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329443"
 ---
 # <a name="test-generation"></a>Génération de tests
 
@@ -235,7 +237,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Articles complémentaires
+## <a name="further-reading"></a>Informations supplémentaires
 
 * [Test to code binding](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [One test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

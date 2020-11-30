@@ -1,5 +1,7 @@
 ---
 title: Gérer les contrôleurs de test et les agents de test
+description: Apprenez à gérer les contrôleurs de test et les agents de test après les avoir installés et configurés pour la première fois.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286698"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329638"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 

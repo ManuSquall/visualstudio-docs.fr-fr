@@ -1,5 +1,7 @@
 ---
 title: Tests de couverture du code
+description: Découvrez comment utiliser la fonctionnalité de couverture du code de Visual Studio pour déterminer quelle proportion de votre code de projet est testée par les tests codés.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959773"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330054"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 

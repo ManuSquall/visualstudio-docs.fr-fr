@@ -1,5 +1,7 @@
 ---
 title: Utiliser un environnement lab pour DevOps
+description: Découvrez les environnements Lab et comment utiliser le Cloud avec Azure Pipelines ou Team Foundation Server build et Release.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: cb25561f70882336a1143918d3cf78849b394065
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928106"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328923"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -107,14 +109,14 @@ Les environnements standard et SCVMM prennent en charge une grande partie de ces
 |**Déploiement de build**|||
 |Flux de travail Création-Déploiement-Test automatisés|Prise en charge|Prise en charge|
 |**Création et gestion d’environnements**|||
-|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non prise en charge|Prise en charge|
-|Utiliser des ordinateurs virtuels tiers|Non prise en charge|Prise en charge|
+|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Prise en charge|
+|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Prise en charge|
 |Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Prise en charge|Prise en charge|
-|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non prise en charge|
-|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non prise en charge|
-|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non prise en charge|
+|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non pris en charge|
+|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non pris en charge|
+|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non pris en charge|
 |Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Prise en charge|Prise en charge|
-|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non prise en charge|
+|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non pris en charge|
 
 ### <a name="lab-management-concepts"></a>Terminologie Lab management
 

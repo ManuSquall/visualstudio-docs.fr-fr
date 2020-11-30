@@ -1,5 +1,7 @@
 ---
 title: Création de pages d’options | Microsoft Docs
+description: Découvrez comment créer une page d’options dans le menu outils de Visual Studio en implémentant une classe DialogPage à partir de l’infrastructure de package gérée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709154"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328637"
 ---
 # <a name="create-options-pages"></a>Créer des pages d’options
 Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] infrastructure de package managée, les classes dérivées de <xref:Microsoft.VisualStudio.Shell.DialogPage> étendent l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE en ajoutant des pages d' **options** dans le menu **Outils** .
@@ -56,7 +58,7 @@ Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] infrastruct
 
   Toutes ces fonctionnalités par défaut peuvent être remplacées. Par exemple, pour créer une interface utilisateur plus sophistiquée, vous devez uniquement substituer l’implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A> .
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Ce qui suit est une implémentation « Hello World » simple d’une page d’options. L’ajout du code suivant à un projet par défaut créé par le modèle de package Visual Studio avec l’option de **commande de menu** sélectionnée vous montrera correctement les fonctionnalités de page d’options.
 
 ### <a name="description"></a>Description

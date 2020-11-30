@@ -1,5 +1,7 @@
 ---
 title: FAQ Live Unit Testing
+description: Passez en revue ces Live Unit Testing Forum aux questions, y compris les frameworks, la configuration et la personnalisation pris en charge.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb2c9a4cae25b388d5817b04ff54f6e6443b2f44
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591539"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329287"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes (FAQ) sur Live Unit Testing
 
@@ -77,7 +79,7 @@ La fenêtre sortie (lorsque la liste déroulante Live Unit Testing est sélectio
 
 Si votre solution nécessite des étapes personnalisées pour la génération de l’instrumentation (Live Unit Testing) qui ne sont pas requises pour la build « normale » non instrumentée, vous pouvez ajouter du code à vos fichiers projet ou *. targets* qui vérifient la `BuildingForLiveUnitTesting` propriété et exécute des étapes de génération/publication personnalisées. Vous pouvez également choisir de supprimer certaines étapes de génération (telles que la publication ou la génération de packages) ou d’ajouter des étapes de génération (par exemple, la copie des composants requis) pour une build Live Unit Testing basée sur cette propriété de projet. Le fait de personnaliser votre build avec cette propriété ne modifie pas votre build et impacte uniquement les builds Live Unit Testing.
 
-Par exemple, vous pouvez avoir une cible qui génère des packages NuGet dans le cadre d’une build standard. Vous préférerez sans doute éviter que des packages NuGet soient générés après chaque modification que vous effectuez. Ainsi, vous pouvez désactiver cette cible dans la build Live Unit Testing en procédant comme suit :  
+Par exemple, vous pouvez avoir une cible qui génère des packages NuGet dans le cadre d’une build standard. Vous préférerez sans doute éviter que des packages NuGet soient générés après chaque modification que vous effectuez. Ainsi, vous pouvez désactiver cette cible dans la build Live Unit Testing en procédant comme suit :  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -171,7 +173,7 @@ Pendant la génération de Live Unit Testing, la `<LiveUnitTestingBuildRootPath>
 
 **Je souhaite que les artefacts d’un Live Unit Testing Build s’affichent à un emplacement spécifique au lieu de l’emplacement par défaut sous le dossier *. vs* . Comment puis-je modifier cela ?**
 
-Définissez la variable d’environnement de niveau utilisateur `LiveUnitTesting_BuildRoot` sur le chemin d’accès où vous souhaitez déposer les artéfacts de build Live Unit Testing. 
+Définissez la variable d’environnement de niveau utilisateur `LiveUnitTesting_BuildRoot` sur le chemin d’accès où vous souhaitez déposer les artéfacts de build Live Unit Testing. 
 
 ## <a name="test-explorer-versus-live-unit-testing"></a>Explorateur de tests et Live Unit Testing
 
@@ -179,7 +181,7 @@ Définissez la variable d’environnement de niveau utilisateur `LiveUnitTesting
 
 Il existe plusieurs différences :
 
-- L’exécution ou le débogage des tests à partir de la fenêtre de l' **Explorateur de tests** exécute des binaires standard, tandis que Live Unit testing exécute des fichiers binaires instrumentés. Si vous souhaitez déboguer des binaires instrumentés, l’ajout d’un appel de méthode [Debugger. Launch](xref:System.Diagnostics.Debugger.Launch)   dans votre méthode de test entraîne le lancement du débogueur chaque fois que cette méthode est exécutée (y compris quand elle est exécutée par Live Unit testing) et vous pouvez ensuite attacher et déboguer le binaire instrumenté. Nous espérons cependant que l’instrumentation soit pour vous parfaitement transparente dans la plupart des scénarios utilisateur, et que vous n’ayez pas besoin de déboguer de fichiers binaires instrumentés.
+- L’exécution ou le débogage des tests à partir de la fenêtre de l' **Explorateur de tests** exécute des binaires standard, tandis que Live Unit testing exécute des fichiers binaires instrumentés. Si vous souhaitez déboguer des fichiers binaires instrumentés, l’ajout d’un appel de méthode [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) dans votre méthode de test a pour effet de lancer le débogueur à chaque exécution de la méthode (y compris lorsqu’elle est exécutée par Live Unit Testing), après quoi vous pouvez attacher et déboguer le fichier binaire instrumenté. Nous espérons cependant que l’instrumentation soit pour vous parfaitement transparente dans la plupart des scénarios utilisateur, et que vous n’ayez pas besoin de déboguer de fichiers binaires instrumentés.
 
 - Live Unit Testing ne crée pas de domaine d’application pour exécuter des tests, mais les tests exécutés à partir de la fenêtre de l' **Explorateur de tests** créent un nouveau domaine d’application.
 
@@ -248,7 +250,7 @@ Live Unit Testing démarre une build chaque fois qu’il détecte une modificati
 
 **Pourquoi les icônes ne s’affichent-elles pas dans l’éditeur même si Live Unit Testing semble exécuter les tests en fonction des messages de la fenêtre sortie ?**
 
-Les icônes ne sont pas visibles dans l’éditeur si les assemblys sur lesquels agit Live Unit Testing ne sont pas instrumentés pour une raison quelconque. Par exemple, Live Unit Testing n’est pas compatible avec les projets qui définissent `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Dans ce cas, votre processus de build doit être mis à jour pour supprimer ce paramètre ou le modifier en `true` afin de permettre à Live Unit Testing de fonctionner. 
+Les icônes ne sont pas visibles dans l’éditeur si les assemblys sur lesquels agit Live Unit Testing ne sont pas instrumentés pour une raison quelconque. Par exemple, Live Unit Testing n’est pas compatible avec les projets qui définissent `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Dans ce cas, votre processus de build doit être mis à jour pour supprimer ce paramètre ou le modifier en `true` afin de permettre à Live Unit Testing de fonctionner. 
 
 ## <a name="capture-logs"></a>Capturer les journaux
 

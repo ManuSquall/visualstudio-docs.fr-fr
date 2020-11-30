@@ -1,5 +1,7 @@
 ---
 title: Écrire des tests unitaires pour des DLL C++
+description: Découvrez les différentes façons de tester le code de la DLL, selon que la DLL exporte les fonctions que vous voulez tester.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287036"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328624"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
 
@@ -68,7 +70,7 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
       ::: moniker-end
 
-  1. Cliquez avec le bouton droit sur le projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > ** Référence**.
+  1. Cliquez avec le bouton droit sur le projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Référence**.
 
   1. Sélectionnez **Projets**, puis le projet à tester.
 
@@ -102,7 +104,7 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
   2. Dans **Explorateur de solutions**, dans le menu contextuel du projet de test, choisissez **Propriétés**.
 
-  3. Choisissez **Propriétés de configuration**de l'  >  **éditeur de liens**  >  **Input**  >  **dépendances supplémentaires**.
+  3. Choisissez **Propriétés de configuration** de l'  >  **éditeur de liens**  >  **Input**  >  **dépendances supplémentaires**.
 
        Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les chemins d’accès complets.
 
@@ -167,7 +169,7 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
 1. Si tous vos tests ne sont pas visibles dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
 
-1. Dans l' **Explorateur de tests**, choisissez **exécuter tout**ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
+1. Dans l' **Explorateur de tests**, choisissez **exécuter tout** ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
 
 ## <a name="see-also"></a>Voir aussi
 

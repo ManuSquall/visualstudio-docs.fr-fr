@@ -1,5 +1,7 @@
 ---
 title: Comment tester une DLL C++ pour les applications UWP
+description: Découvrez comment créer des tests unitaires pour une DLL C++ pour plateforme Windows universelle des applications avec l’infrastructure de test Microsoft pour C++.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7ae79ff4df783d3c4541720c9fef709087e7da6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285607"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330093"
 ---
 # <a name="how-to-test-a-c-dll"></a>Comment tester une DLL C++
 
@@ -48,7 +50,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Sachez que :
+     Notez les points suivants :
 
     - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
 

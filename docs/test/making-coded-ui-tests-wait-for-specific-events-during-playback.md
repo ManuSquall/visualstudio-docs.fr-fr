@@ -1,5 +1,7 @@
 ---
 title: Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques
+description: Découvrez comment faire en sorte qu’un test codé de lecture de l’interface utilisateur attende que certains événements se produisent, par exemple une fenêtre qui s’affiche ou la barre de progression ne s’affiche pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 401888eee7fb5952c69c953824f3959c2b456a4d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286776"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329560"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques lors de la lecture
 

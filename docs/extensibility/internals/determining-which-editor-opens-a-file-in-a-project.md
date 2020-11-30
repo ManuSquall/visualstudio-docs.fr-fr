@@ -1,5 +1,7 @@
 ---
 title: Détermination de l’éditeur qui ouvre un fichier dans un projet | Microsoft Docs
+description: Découvrez les clés de Registre et les méthodes du kit de développement logiciel (SDK) Visual Studio utilisées par Visual Studio pour déterminer quel éditeur ouvre un fichier dans un projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708654"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328403"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Déterminer quel éditeur ouvre un fichier dans un projet
 Lorsqu’un utilisateur ouvre un fichier dans un projet, l’environnement passe par un processus d’interrogation, ouvrant finalement l’éditeur ou le concepteur approprié pour ce fichier. La procédure initiale employée par l’environnement est la même pour les éditeurs standard et personnalisés. L’environnement utilise un certain nombre de critères lors de l’interrogation de l’éditeur à utiliser pour ouvrir un fichier et le VSPackage doit coordonner l’environnement au cours de ce processus.
@@ -27,9 +29,9 @@ Lorsqu’un utilisateur ouvre un fichier dans un projet, l’environnement passe
 
  Le projet fichiers divers prétend tous les fichiers qui ne sont pas revendiqués par d’autres projets. Ainsi, les éditeurs personnalisés peuvent ouvrir des documents avant qu’ils ne soient ouverts par les éditeurs standard. Si un projet fichiers divers prétend un fichier, l’environnement appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> méthode pour ouvrir le fichier avec un éditeur standard. L’environnement examine sa liste interne des éditeurs inscrits pour en obtenir un qui gère les fichiers *. rtf* . Cette liste se trouve dans le registre à la clé suivante :
 
- **HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ \<version> \Editors \\ \<editor factory guid> \Extensions**
+ **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ \<version> \Editors \\ \<editor factory guid> \Extensions**
 
- L’environnement vérifie également les identificateurs de classe dans la clé de **\clsid HKEY_CLASSES_ROOT** pour tous les objets qui ont une sous-clé **DocObject**. Si l’extension de fichier y figure, une version incorporée de l’application, telle que Microsoft Word, est créée sur place dans Visual Studio. Ces objets de document doivent être des fichiers composés qui implémentent l' <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interface, ou l’objet doit implémenter l' <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interface.
+ L’environnement vérifie également les identificateurs de classe dans la clé de **HKEY_CLASSES_ROOT\CLSID** pour tous les objets qui ont une sous-clé **DocObject**. Si l’extension de fichier y figure, une version incorporée de l’application, telle que Microsoft Word, est créée sur place dans Visual Studio. Ces objets de document doivent être des fichiers composés qui implémentent l' <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interface, ou l’objet doit implémenter l' <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interface.
 
  S’il n’y a aucune fabrique d’éditeur pour les fichiers *. rtf* dans le registre, l’environnement recherche l’environnement dans la clé **HKEY_CLASSES_ROOT \\ . rtf** et ouvre l’éditeur spécifié. Si l’extension de fichier est introuvable dans **HKEY_CLASSES_ROOT**, l’environnement utilise l’éditeur de texte principal de Visual Studio pour ouvrir le fichier, s’il s’agit d’un fichier texte.
 

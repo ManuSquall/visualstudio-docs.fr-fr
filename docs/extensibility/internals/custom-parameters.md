@@ -1,5 +1,7 @@
 ---
 title: Paramètres personnalisés | Microsoft Docs
+description: Découvrez comment créer des paramètres personnalisés qui contrôlent le fonctionnement d’un Assistant après le démarrage d’un Assistant, en modifiant un fichier. vsz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd52a49daa7d57a21d8cb0896f7108efa09e32b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708948"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328442"
 ---
 # <a name="custom-parameters"></a>Paramètres personnalisés
 Les paramètres personnalisés contrôlent l’opération d’un Assistant après le démarrage d’un Assistant. Un fichier *. vsz* associé fournit un tableau de paramètres définis par l’utilisateur qui sont empaquetés par l’environnement de développement intégré (IDE) et transmis à l’Assistant sous la forme d’un tableau de chaînes au démarrage de l’Assistant. L’Assistant analyse ensuite le tableau de chaînes et utilise les informations pour contrôler le fonctionnement réel de l’Assistant. De cette manière, un Assistant peut personnaliser les fonctionnalités en fonction du contenu du fichier *. vsz* .

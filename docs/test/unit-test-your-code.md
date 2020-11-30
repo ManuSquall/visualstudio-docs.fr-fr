@@ -1,5 +1,7 @@
 ---
 title: Test unitaire
+description: Découvrez les outils de test unitaire que vous pouvez utiliser pour donner aux développeurs et aux testeurs un moyen rapide de rechercher des erreurs de logique dans votre code.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099308"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330132"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires de votre code
 

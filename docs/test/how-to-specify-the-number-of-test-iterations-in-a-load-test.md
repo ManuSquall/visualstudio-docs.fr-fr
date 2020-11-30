@@ -1,5 +1,6 @@
 ---
 title: Spécifier le nombre d’itérations dans le paramètre d’exécution du test de charge
+description: Découvrez comment spécifier le nombre d’itérations à exécuter sur tous les tests unitaires et de performances de site Web dans tous les scénarios d’un test de charge à l’aide de l’éditeur de test de charge.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbca5bcaabbfbf87108fb057280d070006ddd718
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 754a5ad7612f6abbea52ea9d4bb4cb1d159f6dac
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810599"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328299"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Guide pratique pour spécifier le nombre d’itérations de tests dans un paramètre de test de charge
 

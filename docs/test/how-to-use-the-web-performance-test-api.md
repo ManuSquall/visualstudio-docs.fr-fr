@@ -1,5 +1,7 @@
 ---
 title: API de test de performances web
+description: En savoir plus sur l’API de test de performances de site Web, qui prend en charge les tests de performances Web codés, les plug-ins de test, les plug-ins de requête, les demandes et les règles d’extraction/validation.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287075"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329716"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Guide pratique pour utiliser l’API de test de performances web
 

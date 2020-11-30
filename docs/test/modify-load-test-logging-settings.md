@@ -1,5 +1,7 @@
 ---
 title: Paramètres de journalisation du test de charge
+description: Découvrez comment modifier les paramètres de journalisation des tests de charge pour contrôler la quantité de données de performances collectées, ce qui peut entraîner des fichiers de résultats très volumineux.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 464429ef516d3f4cd6dadd013f274139eb106a57
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566304"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329196"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modifier les paramètres de journalisation du test de charge
 

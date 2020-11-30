@@ -1,5 +1,7 @@
 ---
 title: Résolution des problèmes des contrôleurs de test et des agents de test
+description: Découvrez certains problèmes courants que vous pouvez rencontrer quand vous utilisez des contrôleurs de test et des agents de test dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565953"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330145"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Stratégies de résolution des problèmes des contrôleurs de test et des agents de test lors de tests de charge
 
@@ -64,7 +66,7 @@ Vous pouvez contrôler le niveau de journalisation sur un ordinateur contrôleur
     </system.diagnostics>
     ```
 
-4. Enregistrez le fichier .
+4. Enregistrez le fichier.
 
 5. Démarrez le service du contrôleur. À l’invite de commandes, tapez `net start vsttcontroller`.
 
@@ -129,7 +131,7 @@ Pour corriger cette erreur, vous devez lier le contrôleur de test à l'une des 
     </appSettings>
     ```
 
-4. Enregistrez le fichier .
+4. Enregistrez le fichier.
 
 5. Démarrez le service du contrôleur de test. À l’invite de commandes, tapez `net start vsttcontroller`.
 

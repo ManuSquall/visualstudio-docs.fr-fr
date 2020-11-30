@@ -1,5 +1,7 @@
 ---
 title: Tests unitaires du code Visual C#
+description: Découvrez comment créer des tests unitaires pour une classe C# dans une application UWP. Cet article illustre le développement piloté par les tests.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590863"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330080"
 ---
 # <a name="unit-test-c-code"></a>Test unitaire du code C#
 
@@ -28,7 +30,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 2. Recherchez et sélectionnez le modèle de projet **Application vide (Windows universel)**.
 
-3. Nommez les **maths**du projet.
+3. Nommez les **maths** du projet.
 
 4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution et choisissez **Ajouter**  >  **nouveau projet**.
 
@@ -66,7 +68,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Ajouter la classe Rooter au projet Maths
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **maths** , puis choisissez **Ajouter**une  >  **classe**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **maths** , puis choisissez **Ajouter** une  >  **classe**.
 
 2. Nommez le fichier de classe *Rooter.cs*.
 
@@ -96,7 +98,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 1. Ajoutez une référence du projet RooterTests à l’application maths.
 
-    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **RooterTests** , puis choisissez **Ajouter**une  >  **référence**.
+    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **RooterTests** , puis choisissez **Ajouter** une  >  **référence**.
 
     2. Dans la boîte de dialogue **Ajouter une référence - RooterTests**, développez **Solution**, puis choisissez **Projets**. Sélectionnez le projet **maths** .
 

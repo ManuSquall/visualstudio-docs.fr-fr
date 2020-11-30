@@ -1,5 +1,7 @@
 ---
 title: Installer des frameworks de tests unitaires tierces
+description: L’Explorateur de tests Visual Studio peut exécuter des tests depuis n’importe quel framework de tests unitaires ayant développé une interface d’adaptateur appropriée.
+ms.custom: SEO-VS-2020
 ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387185"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329976"
 ---
 # <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
 
