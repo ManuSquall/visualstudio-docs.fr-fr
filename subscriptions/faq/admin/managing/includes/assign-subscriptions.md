@@ -7,11 +7,11 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
-ms.openlocfilehash: 7493b261de24079b6b245d29749a908c54d341b1
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "91838278"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Comment attribuer des abonnements Visual Studio ?
@@ -39,7 +39,7 @@ Pour attribuer des abonnements en bloc :
 4. Revenez à [manage.visualstudio.com](https://manage.visualstudio.com), sélectionnez Ajout en bloc, puis chargez votre copie enregistrée du modèle Excel.
 5. Une fois le chargement terminé, une page de confirmation s’affiche et votre liste d’abonnés est renseignée avec vos nouveaux abonnés. Vos abonnés recevront un e-mail et pourront commencer à utiliser leur abonnement Visual Studio immédiatement (aucune activation n’est nécessaire de la part de vos abonnés).
 
-[Pour en savoir plus](../../../../assign-license.md#add-a-single-subscriber) sur la façon d’attribuer des abonnements rapidement et facilement, consultez la documentation sur l’affectation d’abonnements dans le portail d’administration des abonnements Visual Studio.  [Découvrez-en plus](../../../../assign-github.md) sur la gestion des abonnements Visual Studio avec GitHub Enterprise. 
+[Pour en savoir plus](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) sur la façon d’attribuer des abonnements rapidement et facilement, consultez la documentation sur l’affectation d’abonnements dans le portail d’administration des abonnements Visual Studio.  [Découvrez-en plus](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sur la gestion des abonnements Visual Studio avec GitHub Enterprise. 
 
 ## <a name="what-is-the-github-enterprise-setup-process"></a>Qu’est-ce que le processus d’installation de GitHub Enterprise ? 
 
@@ -47,4 +47,4 @@ GitHub Enterprise est configuré et géré séparément des abonnements Visual S
 
 Une fois que votre société a configuré un compte GitHub Enterprise, les abonnés à qui ont été attribués des abonnements Visual Studio avec GitHub Enterprise reçoivent un e-mail de GitHub les notifiant que leurs abonnements Visual Studio ont été liés. Une fois que les abonnés ont reçu cet e-mail, ils peuvent contacter leur administrateur d’organisation GitHub pour recevoir une invitation à l’organisation appropriée. 
 
-[Découvrez-en plus](../../../../assign-github.md) sur la gestion des abonnements Visual Studio avec GitHub Enterprise. Pour plus d’informations sur le processus de configuration de GitHub Enterprise, consultez la [documentation sur les abonnés](../../../../access-github.md). 
+[Découvrez-en plus](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sur la gestion des abonnements Visual Studio avec GitHub Enterprise. Pour plus d’informations sur le processus de configuration de GitHub Enterprise, consultez la [documentation sur les abonnés](https://docs.microsoft.com/visualstudio/subscriptions/access-github). 

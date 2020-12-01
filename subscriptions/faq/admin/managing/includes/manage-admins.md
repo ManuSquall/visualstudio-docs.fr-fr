@@ -8,11 +8,11 @@ ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 496c8ecc16c67997de3999a48850afdcc7c1f58b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 8bbeb8a5e13ad000939057a7d476f6979b15dca8
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "91838413"
 ---
 ## <a name="how-do-i-manage-administrators"></a>Comment gérer les administrateurs ?
@@ -39,4 +39,4 @@ Pour attribuer plus d’administrateurs :
 8. Cliquez sur la liste déroulante Rôle en haut du volet, faites défiler vers le bas et sélectionnez Administrateur de l’accès utilisateur.
 9. Cliquez sur Enregistrer.
 
-[Découvrez-en plus](../../../../cloud-admin.md) sur l’administration des abonnements cloud.
+[Découvrez-en plus](https://docs.microsoft.com/visualstudio/subscriptions/cloud-admin) sur l’administration des abonnements cloud.

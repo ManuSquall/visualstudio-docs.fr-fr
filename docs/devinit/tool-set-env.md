@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 20f2d142c0e253cf5ad5a7ec5d85974ff5522508
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442283"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96356833"
 ---
 # <a name="set-env"></a>set-env
 
@@ -30,13 +30,13 @@ Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente le
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **commentaires**                                 | string | Non       | Propriété de commentaires facultative. Non utilisé.                                       |
 | [**entrée**](#input)                          | string | Non       | Entrée de l’outil. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.               |
-| [**additionalOptions**](#additional-options) | string | Non       | Non utilisé. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.  |
+| [**additionalOptions**](#additional-options) | string | Non       | Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.            |
 
 ### <a name="input"></a>Entrée
 
 L' `set-env` outil prend une chaîne unique comme entrée sur la `input` propriété. La chaîne doit être mise en forme sous la forme d’une chaîne de points-virgules (;) des paires clé/valeur délimitées (nom = valeur) et quatre actions possibles en fonction de la valeur de la `input` propriété.
 
-| Action       | Entrée            | Description                                                                                                                                                              | Exemple             |
+| Action       | Entrée            | Description                                                                                                                                                              |  Exemple             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | **list all** | vide ou omis | Répertorie toutes les variables d’environnement actuelles.                                                                                                                           | `"input":""`        |
 | **Liste 1** | string           | Répertorie la valeur d’une variable d’environnement spécifique par nom.                                                                                                               | `"input":"foo"`     |
@@ -47,7 +47,7 @@ Une `input` chaîne peut contenir une expansion de variable d’environnement `%
 
 ### <a name="additional-options"></a>Options supplémentaires
 
-Non utilisé.
+ `--user`, `--process` ou `--machine` peuvent être inclus pour spécifier où définir les variables d’environnement. Par défaut, nous ciblons l’utilisateur. Pour plus d’informations sur les cibles possibles pour les variables d’environnement, consultez [EnvironmentVariableTarget](https://docs.microsoft.com/dotnet/api/system.environmentvariabletarget).
 
 ### <a name="default-behavior"></a>Comportement par défaut
 
@@ -68,6 +68,20 @@ Vous trouverez ci-dessous des exemples d’exécution à `set-env` l’aide d’
     {
       "tool": "set-env",
       "input": "foo=bar",
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar-stored-in-the-environment-block-associated-with-the-current-process"></a>.devinit.jssur qui définit une variable d’environnement, `foo` , sur value, `bar` , stockée dans le bloc d’environnement associé au processus actuel :
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
+    {
+      "tool": "set-env",
+      "input": "foo=bar",
+      "additionalOptions": "--process",
     }
   ]
 }
