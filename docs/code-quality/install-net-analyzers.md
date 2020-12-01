@@ -1,7 +1,7 @@
 ---
-title: Activer ou installer les analyseurs .NET
+title: Activer ou installer des analyseurs .NET internes
 ms.date: 08/03/2018
-description: Découvrez comment activer les analyseurs .NET à partir du kit de développement logiciel (SDK) .NET ou installer ces analyseurs comme un package NuGet.
+description: Découvrez comment activer des analyseurs .NET de premier tiers à partir du kit de développement logiciel (SDK) .NET ou installer ces analyseurs comme un package NuGet.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14d89caba498a07c2447f9df1109e4da9f6a466
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 60eb4828d4c8450376178c2fdccf7d4c0f63d989
+ms.sourcegitcommit: 208bd1edebfe6dec5d3bb92c63b5c1e093677e35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112220"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440372"
 ---
-# <a name="enable-or-install-net-analyzers"></a>Activer ou installer les analyseurs .NET
+# <a name="enable-or-install-first-party-net-analyzers"></a>Activer ou installer des analyseurs .NET internes
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Les analyseurs .NET Compiler Platform (Roslyn) inspectent la qualité et les problèmes de styles de code de votre code C# ou Visual Basic. Vous pouvez activer ou installer ces analyseurs de l’une des manières suivantes :
+Les analyseurs .NET Compiler Platform (Roslyn) inspectent la qualité et les problèmes de styles de code de votre code C# ou Visual Basic. Vous pouvez activer ou installer les analyseurs .NET du premier groupe de l’une des manières suivantes :
 
 - **Activation à partir du kit de développement logiciel (SDK) .net**: à compter de Visual Studio 2019 16,8 et .net 5,0, ces analyseurs sont [inclus dans le kit de développement logiciel (SDK) .net](/dotnet/fundamentals/code-analysis/overview). L’analyse est activée par défaut pour les projets qui ciblent .NET 5,0 ou une version ultérieure. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété la valeur `EnableNETAnalyzers` `true` . Vous pouvez également désactiver l’analyse du code pour votre projet en affectant à la valeur `EnableNETAnalyzers` `false` .
 
@@ -35,5 +35,5 @@ Les analyseurs .NET Compiler Platform (Roslyn) inspectent la qualité et les pro
 
 - [Vue d’ensemble des analyseurs de code dans Visual Studio](roslyn-analyzers-overview.md)
 - [Utiliser des analyseurs de code dans Visual Studio](use-roslyn-analyzers.md)
-- [Migrer de l’analyse héritée vers les analyseurs .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
-- [Migrer des analyseurs FxCop vers des analyseurs .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)
+- [Migrer d’une analyse existante vers les analyseurs .NET](migrate-from-legacy-analysis-to-net-analyzers.md)
+- [Migrer des analyseurs FxCop vers les analyseurs .NET](migrate-from-fxcop-analyzers-to-net-analyzers.md)
