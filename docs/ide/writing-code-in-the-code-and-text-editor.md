@@ -1,5 +1,7 @@
 ---
 title: Fonctionnalités de l’éditeur de code
+description: Découvrez les fonctionnalités fournies par l’éditeur de code de Visual Studio pour faciliter l’écriture et la gestion de votre code et de votre texte.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cf1cdbebab5d59091454e340b567eef7430efd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2363d350c91ac72b21784f490778010eba12007
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532624"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480185"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
-L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code et de votre texte. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code en utilisant IntelliSense, **l’Explorateur d’objets**et la hiérarchie d’appels. Vous pouvez rechercher du code en utilisant des fonctionnalités telles que **Atteindre**, **Atteindre la définition** et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez jamais utilisé l’éditeur Visual Studio, consultez [apprendre à utiliser l’éditeur de code](../get-started/tutorial-editor.md).
+L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code et de votre texte. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code en utilisant IntelliSense, **l’Explorateur d’objets** et la hiérarchie d’appels. Vous pouvez rechercher du code en utilisant des fonctionnalités telles que **Atteindre**, **Atteindre la définition** et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez jamais utilisé l’éditeur Visual Studio, consultez [apprendre à utiliser l’éditeur de code](../get-started/tutorial-editor.md).
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Éditeur de code Source (Visual Studio pour Mac)](/visualstudio/mac/source-editor).
@@ -35,7 +37,7 @@ Les différents langages de Visual Studio offrent différents ensembles de fonct
 |Fonctionnalité|Description|
 |-|-|
 |Couleurs de syntaxe|Certains éléments de syntaxe des fichiers de code et de balisage apparaissent dans des couleurs différentes pour que vous puissiez les distinguer. Par exemple, les mots clés (tels que `using` en C# et `Imports` en Visual Basic) apparaissent dans une couleur, alors que les types (tels que `Console` et `Uri`) sont d’une autre couleur. D’autres éléments de syntaxe sont également colorés, tels que les commentaires et les littéraux de chaîne. C++ utilise la couleur pour différencier les types, les énumérations et les macros parmi les autres jetons.<br /><br /> Vous pouvez voir la couleur par défaut pour chaque type et vous pouvez modifier la couleur d’un élément de syntaxe spécifique dans la [boîte de dialogue polices et couleurs, environnement, options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), que vous pouvez ouvrir à partir du menu **Outils** .|
-|Marques d’erreur et d’avertissement|Quand vous ajoutez du code et générez votre solution, vous pouvez voir s’afficher (a) des soulignements ondulés de différente couleur (les tildes) ou (b) des ampoules dans votre code. Les soulignements ondulés rouges indiquent des erreurs de syntaxe, les soulignements ondulés bleus indiquent des erreurs de compilateur, les soulignements ondulés verts indiquent des avertissements et les soulignements ondulés violets indiquent d’autres types d’erreur. Les [actions rapides](../ide/quick-actions.md) suggèrent des solutions aux problèmes rencontrés et facilitent la correction des erreurs.<br /><br /> Vous pouvez voir la couleur par défaut pour chaque tilde d’erreur et d’avertissement dans la boîte de dialogue **Outils**  >  **options**  >  **environnement**  >  **polices et couleurs** . Recherchez **Erreur de syntaxe**, **Erreur du compilateur**, **Avertissement**et **Autre erreur**.|
+|Marques d’erreur et d’avertissement|Quand vous ajoutez du code et générez votre solution, vous pouvez voir s’afficher (a) des soulignements ondulés de différente couleur (les tildes) ou (b) des ampoules dans votre code. Les soulignements ondulés rouges indiquent des erreurs de syntaxe, les soulignements ondulés bleus indiquent des erreurs de compilateur, les soulignements ondulés verts indiquent des avertissements et les soulignements ondulés violets indiquent d’autres types d’erreur. Les [actions rapides](../ide/quick-actions.md) suggèrent des solutions aux problèmes rencontrés et facilitent la correction des erreurs.<br /><br /> Vous pouvez voir la couleur par défaut pour chaque tilde d’erreur et d’avertissement dans la boîte de dialogue **Outils**  >  **options**  >  **environnement**  >  **polices et couleurs** . Recherchez **Erreur de syntaxe**, **Erreur du compilateur**, **Avertissement** et **Autre erreur**.|
 |Accolades correspondantes|Quand le point d’insertion est placé sur une accolade ouvrante dans un fichier de code, l’accolade ouvrante et l’accolade fermante sont mises en surbrillance. Cette fonctionnalité vous permet de visualiser immédiatement les accolades mal placées ou manquantes. Vous pouvez activer ou désactiver la correspondance d’accolade à l’aide du paramètre **Mise en surbrillance automatique des délimiteurs** (**Outils** > **Options** > **Éditeur de texte**). Vous pouvez modifier la couleur de surbrillance dans le paramètre **Polices et couleurs** (**Outils** > **Options** > **Environnement**). Recherchez **Accolades correspondantes (en surbrillance)** ou **Accolades correspondantes (rectangle)**.|
 |Visualiseur de structure|Des lignes en pointillés connectent les accolades correspondantes dans les fichiers de code, permettant de voir plus facilement les paires d’accolades ouvrantes et fermantes. Cela vous permet de trouver plus rapidement du code dans votre code base. Vous pouvez activer ou désactiver ces lignes à l’aide des **instructions afficher la structure** dans la section **affichage** de la page **Outils**  >  **options**  >  **éditeur de texte**  >  **général** .|
 |Numéros de ligne|Les numéros de ligne peuvent être affichés dans la marge de gauche de la fenêtre de code. Ils ne sont pas affichés par défaut. Vous pouvez activer cette option dans les paramètres **Éditeur de texte – Tous les langages** (**Outils** > **Options** > **Éditeur de texte** > **Tous les langages**). Vous pouvez afficher les numéros de ligne pour des langages de programmation individuels en modifiant les paramètres de ces langages (**Outils**  >  **options**  >  **éditeur de texte**  >  **\<language>** ). Pour imprimer les numéros de ligne, sélectionnez **Inclure les numéros de ligne** dans la boîte de dialogue **Imprimer**.|

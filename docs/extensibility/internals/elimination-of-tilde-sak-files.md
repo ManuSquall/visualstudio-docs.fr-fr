@@ -1,5 +1,7 @@
 ---
 title: Élimination des fichiers ~ SAK | Microsoft Docs
+description: En savoir plus sur l’élimination des fichiers ~ SAK de l’API de plug-in de contrôle de code source 1,2, ainsi que sur la façon dont ils ont été remplacés par les indicateurs de fonctionnalité et les nouvelles fonctions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708500"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480510"
 ---
 # <a name="elimination-of-sak-files"></a>Élimination des fichiers ~ SAK
 Dans l’API de plug-in de contrôle de code source 1,2, les fichiers *~ SAK* ont été remplacés par des indicateurs de fonctionnalité et de nouvelles fonctions qui détectent si un plug-in de contrôle de code source prend en charge le fichier *Mssccprj* et les extractions partagées.
@@ -45,7 +47,7 @@ Pour les plug-ins qui prennent en charge les fonctions avancées fournies dans l
 
  Si un plug-in de contrôle de code source prend en charge la création et l’utilisation d’un fichier *Mssccprj. SCC* , il déclare la `SCC_CAP_SCCFILE` fonctionnalité et implémente [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Cette fonction est appelée avec une liste de fichiers. La fonction retourne `TRUE' or 'FALSE` pour chaque fichier pour indiquer si Visual Studio doit utiliser un fichier *Mssccprj. SCC* pour celui-ci. Si le plug-in de contrôle de code source choisit de ne pas prendre en charge ces nouvelles fonctionnalités et fonctions, il peut utiliser la clé de Registre suivante pour désactiver la création de ces fichiers :
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateTemporaryFilesInSourceControl**  =  *DWORD : 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl**  =  *DWORD : 00000001*
 
 > [!NOTE]
 > Si cette clé de Registre est définie sur *DWORD : 00000000*, elle est équivalente à la clé qui n’existe pas, et Visual Studio tente toujours de créer les fichiers temporaires. Toutefois, si la clé de Registre est définie sur *DWORD : 00000001*, Visual Studio ne tente pas de créer les fichiers temporaires. Au lieu de cela, il suppose que le plug-in de contrôle de code source ne prend pas en charge le fichier *Mssccprj. SCC* et ne prend pas en charge les extractions partagées.

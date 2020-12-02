@@ -1,5 +1,7 @@
 ---
 title: 'Étape 2 : Créer un problème d’addition aléatoire'
+description: Apprenez à rendre le questionnaire plus difficile en ajoutant des problèmes mathématiques basés sur des nombres aléatoires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c23b85dec73c6810420dc5e8ab2d3f4121fc903
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579891"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480679"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : Créer un problème d’addition aléatoire
 
@@ -31,7 +33,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
 1. Dans le concepteur de formulaires, choisissez le formulaire (**Form1**).
 
-2. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+2. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
      *Form1.cs* ou *Form1.vb* apparaît, en fonction du langage de programmation que vous utilisez, pour que vous puissiez afficher le code utilisé pour le formulaire.
 

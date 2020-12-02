@@ -1,5 +1,7 @@
 ---
 title: 'Étape 3 : Définir les propriétés de votre formulaire'
+description: Découvrez comment utiliser la Fenêtre Propriétés pour modifier l’apparence de votre formulaire.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579854"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480614"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
 
@@ -28,12 +30,12 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 1. Choisissez un endroit quelconque dans le formulaire **Form1** pour le sélectionner. La fenêtre **Propriétés** doit maintenant afficher les propriétés du formulaire. Les formulaires ont plusieurs propriétés. Par exemple, vous pouvez définir la couleur du premier plan et de l'arrière-plan, le texte du titre qui est affiché en haut du formulaire, les dimensions du formulaire, ainsi que d'autres propriétés.
 
    > [!NOTE]
-   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre application en choisissant le bouton carré **arrêter le débogage** de la barre d’outils, ou fermez simplement la fenêtre. Si l’application est arrêtée et que vous ne voyez toujours pas la fenêtre **Propriétés** , dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre application en choisissant le bouton carré **arrêter le débogage** de la barre d’outils, ou fermez simplement la fenêtre. Si l’application est arrêtée et que vous ne voyez toujours pas la fenêtre **Propriétés** , dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
 1. Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **texte**, tapez **visionneuse d’images**, puis appuyez sur **entrée**.  La **visionneuse d’images** de texte doit maintenant être présente dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à la capture d’écran suivante.
 
     ![Fenêtre Propriétés](../ide/media/express_edittextproperty.png)<br>
-   ***Properties*** *Fenêtre* propriétés
+   **_Propriétés_* _ _window *
 
    > [!NOTE]
    > Les propriétés peuvent être classées selon une vue par **catégorie** ou par **ordre alphabétique** . Vous pouvez passer d’une vue à l’autre à l’aide des boutons de la fenêtre **Propriétés**. Dans ce didacticiel, il est plus facile de rechercher des propriétés via la vue **alphabétique** .
@@ -56,7 +58,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
    - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage**, qui se présente comme suit.
 
       ![Bouton de barre d'outils Démarrer le débogage](../ide/media/express_icondebug.png)<br>
-     Bouton ***Démarrer le débogage*** de la *barre d’outils*
+     **_Démarrer le débogage_* _ _toolbar bouton *
 
      Comme auparavant, l’IDE génère et exécute votre application, et une fenêtre s’affiche.
 

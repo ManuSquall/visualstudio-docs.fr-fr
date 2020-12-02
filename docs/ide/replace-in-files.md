@@ -1,5 +1,7 @@
 ---
 title: Rechercher et remplacer dans les fichiers
+description: Découvrez la fonctionnalité remplacer dans les fichiers et comment elle vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble de fichiers spécifié, et de modifier une partie ou la totalité des correspondances trouvées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3499c1b2073d0263231eb1f60129b2cd3548fa
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585624"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480029"
 ---
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 

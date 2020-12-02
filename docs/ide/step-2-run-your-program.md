@@ -1,5 +1,7 @@
 ---
 title: 'Étape 2 : exécuter votre application visionneuse d’images'
+description: Découvrez comment exécuter votre application visionneuse d’images.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579405"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480653"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Étape 2 : exécuter votre application visionneuse d’images
 
@@ -32,17 +34,17 @@ Voici comment exécuter votre application.
     - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage** , qui se présente comme suit :
 
       ![Bouton de barre d'outils Démarrer le débogage](../ide/media/express_icondebug.png)<br>
-      Bouton ***Démarrer le débogage*** de la *barre d’outils*
+      **_Démarrer le débogage_* _ _toolbar bouton *
 
 1. Visual Studio exécute votre application et une fenêtre nommée **Form1** s’affiche. La capture d’écran suivante montre l’application que vous venez de créer. L’application est en cours d’exécution, et vous y ajoutez bientôt.
 
      ![Windows Forms application en cours d’exécution](../ide/media/express_firstrun.png)<br>
-***Application Windows Forms***, *exécution en cours*
+**_Windows Forms l’application_* _, _running *
 
 1. Revenez à l’environnement de développement intégré (IDE) de Visual Studio, puis examinez la nouvelle barre d’outils. Des boutons supplémentaires apparaissent dans la barre d’outils lorsque vous exécutez une application. Ces boutons vous permettent d’effectuer des opérations telles que arrêter et démarrer votre application, et vous aider à identifier les erreurs (bogues) qu’elle peut avoir. Pour cet exemple, nous l’utilisons pour démarrer et arrêter l’application.
 
      ![Barre d’outils de débogage](../ide/media/express_debugtoolbar.png)<br>
-*Barre d’outils* de ***débogage***
+***Débogage** _ _toolbar *
 
 1. Utilisez l’une des méthodes suivantes pour arrêter votre application :
 

@@ -1,5 +1,7 @@
 ---
 title: Options de refactorisation de fonction locale statique
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour rendre une fonction locale statique et passer des variables définies en dehors de la fonction à la déclaration et aux appels de la fonction.
+ms.custom: SEO-VS-2020
 ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
@@ -11,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e85fcc96542b4f3538729aeb50a4e080c902657
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77144839"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479886"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>Refactorisations de fonction locale statique et actions rapides
 

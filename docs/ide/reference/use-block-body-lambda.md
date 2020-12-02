@@ -1,5 +1,7 @@
 ---
 title: Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour Refactoriser une expression lambda afin d’utiliser un corps d’expression ou un corps de bloc.
+ms.custom: SEO-VS-2020
 ms.date: 02/14/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 505a76a2300f2e3ddb9c1513ee64c2a17abb10ab
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531907"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480172"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
 

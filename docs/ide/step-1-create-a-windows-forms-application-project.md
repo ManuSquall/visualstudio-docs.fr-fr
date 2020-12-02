@@ -1,5 +1,7 @@
 ---
 title: 'Étape 1 : Créer un projet d’application Windows Forms'
+description: Découvrez comment créer un projet d’application Windows Forms pour votre visionneuse d’images.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579914"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480393"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Étape 1 : Créer un projet d’application Windows Forms
 
@@ -27,7 +29,7 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
 1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**. La boîte de dialogue doit ressembler à la capture d’écran suivante.
 
-     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>***Boîte de dialogue*** *Nouveau projet*
+     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>**_Nouveau projet_* _ _dialog Box *
 
 2. Sur le côté gauche de la boîte de dialogue **nouveau projet** , choisissez **Visual C#** ou **Visual Basic**, puis choisissez **Bureau Windows**.
 
@@ -75,7 +77,7 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
 
      Si l’une de ces fenêtres est manquante, vous pouvez restaurer la disposition de fenêtre par défaut. Dans la barre de menus, choisissez **fenêtre**  >  **Réinitialiser la disposition de fenêtre**.
 
-     Vous pouvez également afficher les fenêtres à l'aide des commandes de menu. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés** ou **Explorateur de solutions**.
+     Vous pouvez également afficher les fenêtres à l'aide des commandes de menu. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés** ou **Explorateur de solutions**.
 
      Si d’autres fenêtres sont ouvertes, fermez-les en choisissant le bouton **Fermer** (x) dans l’angle supérieur droit.
 
@@ -105,7 +107,7 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
      Vous pouvez également cliquer sur le bouton **enregistrer tout** de la barre d’outils, comme le montre l’image suivante.
 
      ![Enregistrer tout, bouton de barre d’outils](../ide/media/express_iconsaveall.png)<br/>
-     Bouton ***enregistrer tout*** de la *barre d’outils*
+     *Bouton *_enregistrer tout_* _ _toolbar *
 
      Visual Studio renseigne automatiquement le nom du dossier et le nom du projet, puis crée le projet dans votre dossier de projets.
 

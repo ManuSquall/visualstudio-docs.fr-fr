@@ -1,5 +1,7 @@
 ---
 title: 'Étape 3 : Affecter une icône aléatoire à chaque étiquette'
+description: Découvrez comment affecter une icône aléatoire à chaque étiquette afin que les icônes ne s’affichent pas dans les mêmes cellules chaque jeu.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f3330daeed243f96c44825a4be5516c573bb005
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80472630"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480627"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Affecter une icône aléatoire à chaque étiquette
 

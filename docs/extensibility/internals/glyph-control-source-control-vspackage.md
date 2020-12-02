@@ -1,5 +1,7 @@
 ---
 title: Contrôle Glyph (VSPackage de contrôle de code source) | Microsoft Docs
+description: Découvrez comment afficher des glyphes personnalisés dans un VSPackage de contrôle de code source afin de pouvoir utiliser vos propres icônes pour indiquer l’état des éléments sous contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9db1b4542eae293e39cda674fac3eb984aa77d3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708317"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480471"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Contrôle Glyph (VSPackage de contrôle de code source)
 Une partie de l’intégration profonde disponible pour les VSPackages de contrôle de code source est la possibilité d’afficher leurs propres glyphes pour indiquer l’état des éléments sous contrôle de code source.

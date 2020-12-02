@@ -1,5 +1,7 @@
 ---
 title: Gestion du déploiement spécialisé | Microsoft Docs
+description: Découvrez comment gérer le déploiement spécialisé d’un projet d’application dans Visual Studio. Par exemple, un déploiement sur un serveur Web ou un appareil.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708210"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480432"
 ---
 # <a name="handle-specialized-deployment"></a>Gérer le déploiement spécialisé
 Un déploiement est une opération facultative pour les projets. Un projet Web, par exemple, prend en charge un déploiement pour permettre à un projet de mettre à jour un serveur Web. De même, un projet **Smart Device** prend en charge un déploiement pour copier une application générée sur le périphérique cible. Les sous-types de projet peuvent fournir un comportement de déploiement spécialisé en implémentant l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Cette interface définit un ensemble complet des opérations de déploiement :

@@ -1,5 +1,7 @@
 ---
 title: Prise en main avec des plug-ins de contrôle de code source | Microsoft Docs
+description: En savoir plus sur la création d’un plug-in de contrôle de code source qui implémente les fonctions définies dans l’API de plug-in de contrôle de code source pour une utilisation dans le contrôle de version de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708347"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480497"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Prise en main des plug-ins de contrôle de code source
 Pour créer un plug-in de contrôle de code source, vous devez créer une DLL qui implémente les fonctions définies dans l’API de plug-in de contrôle de code source, puis inscrire la DLL auprès [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de afin de la rendre disponible pour une utilisation dans le contrôle de version de code source.
 
  Trois versions de l’API de plug-in de contrôle de code source (versions 1,1, 1,2 et 1,3) sont disponibles pour les plug-ins de contrôle de code source. L’API de plug-in de contrôle de code source décrite ici est la version 1,3. Il a été conçu pour être entièrement compatible avec les plug-ins de contrôle de code source prenant en charge les versions 1,1 et 1,2. La section [Nouveautés de la version 1,3 de l’API de plug-in de contrôle de code source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) détaille les nouvelles fonctionnalités prises en charge dans la dernière version de l’API de plug-in de contrôle de code source.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Comment : installer un plug-in de contrôle de code source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 
  Décrit comment rendre les entrées de Registre requises pour le plug-in d’une DLL de contrôle de code source.

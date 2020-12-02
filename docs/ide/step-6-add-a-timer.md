@@ -1,5 +1,7 @@
 ---
 title: 'Étape 6 : Ajouter un minuteur'
+description: Découvrez comment ajouter un <xref:System.Windows.Forms.Timer> contrôle au jeu de combinaisons.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0473ab07155e0f132e8e6207361e409b804257f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2684b197fc32b33081c8ecdfa8139b3c8f14e752
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80472765"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480549"
 ---
 # <a name="step-6-add-a-timer"></a>Étape 6 : Ajouter un minuteur
 Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combinaisons. Une minuterie attend un nombre donné de millisecondes, puis déclenche un événement, appelé *battement*. Ceci permet de démarrer ou répéter périodiquement une action. Ici, vous devez utiliser un minuteur pour permettre aux joueurs de choisir deux icônes et, si ces icônes ne correspondent pas, pour masquer les deux icônes à nouveau après un bref délai.
@@ -28,12 +30,12 @@ Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combin
 1. Dans la boîte à outils de **Concepteur Windows Forms**, choisissez **minuterie** (dans la catégorie **composants** ), puis appuyez sur la touche **entrée** ou double-cliquez sur la minuterie pour ajouter un contrôle Timer au formulaire. L’icône du minuteur, appelée **Timer1**, doit apparaître dans un espace sous le formulaire, comme illustré dans l’image suivante.
 
      ![Minuteur](../ide/media/express_timer.png)<br/>
-***Minuteur***
+**_Minuteur_* _
 
     > [!NOTE]
     > Si la boîte à outils est vide, veillez à sélectionner le concepteur de formulaire et non pas le code derrière le formulaire, avant d'ouvrir la boîte à outils.
 
-2. Choisissez l’icône **Timer1** pour sélectionner la minuterie. Dans la fenêtre **Propriétés**, passez de l’affichage des événements à celui des propriétés. Ensuite, affectez la valeur **750** à la propriété **Interval** de la minuterie, mais n’attribuez pas la valeur **False** à la propriété **Enabled**. La propriété **Interval** indique à la minuterie le délai d’attente entre deux *cycles*, ou quand déclencher son événement <xref:System.Windows.Forms.Timer.Tick>. La valeur 750 indique à la minuterie d'attendre trois quarts de seconde (750 millisecondes) avant de déclencher l'événement Tick. Vous devez appeler la méthode <xref:System.Windows.Forms.Timer.Start> pour démarrer la minuterie une fois seulement que le joueur a choisi le second contrôle Label.
+2. Choisissez l’icône _ *Timer1** pour sélectionner la minuterie. Dans la fenêtre **Propriétés**, passez de l’affichage des événements à celui des propriétés. Ensuite, affectez la valeur **750** à la propriété **Interval** de la minuterie, mais n’attribuez pas la valeur **False** à la propriété **Enabled**. La propriété **Interval** indique à la minuterie le délai d’attente entre deux *cycles*, ou quand déclencher son événement <xref:System.Windows.Forms.Timer.Tick>. La valeur 750 indique à la minuterie d'attendre trois quarts de seconde (750 millisecondes) avant de déclencher l'événement Tick. Vous devez appeler la méthode <xref:System.Windows.Forms.Timer.Start> pour démarrer la minuterie une fois seulement que le joueur a choisi le second contrôle Label.
 
 3. Choisissez l’icône du contrôle Timer dans **Concepteur Windows Forms** puis appuyez sur la touche **entrée** ou double-cliquez sur la minuterie pour ajouter un gestionnaire d’événements Tick vide. Remplacez le code par le code suivant ou entrez manuellement ce dernier dans le gestionnaire d'événements.
 

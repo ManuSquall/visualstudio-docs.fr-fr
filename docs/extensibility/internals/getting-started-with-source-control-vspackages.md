@@ -1,5 +1,7 @@
 ---
 title: Prise en main avec les VSPackages de contrôle de code source | Microsoft Docs
+description: En savoir plus sur les packages de contrôle de code source dans Visual Studio et sur la façon dont ils sont une alternative plus avancée aux plug-ins de contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e444b73dce312625c7f86eda2930ba683e504f2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708327"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480484"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Prise en main des VSPackages de contrôle de code source
 
 Un VSPackage de contrôle de code source est une alternative plus avancée au plug-in de contrôle de code source. Pour plus d’informations sur les plug-ins de contrôle de code source, consultez [créer un plug-in de contrôle de code source](../../extensibility/internals/creating-a-source-control-plug-in.md). Un VSPackage de contrôle de code source permet un contrôle total sur le modèle de contrôle de code source, les fonctionnalités et l’interface utilisateur, et il s’intègre à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement en tant que VSPackage.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 [Déterminer si un VSPackage de contrôle de code source doit être implémenté](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 

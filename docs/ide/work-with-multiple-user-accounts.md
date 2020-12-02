@@ -1,5 +1,7 @@
 ---
 title: Utiliser plusieurs comptes d’utilisateur
+description: Découvrez comment ajouter tous vos comptes Microsoft à Visual Studio afin de pouvoir accéder aux ressources à partir de n’importe quel compte sans avoir à vous y connecter séparément.
+ms.custom: SEO-VS-2020
 ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671335"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480341"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
@@ -115,7 +117,7 @@ Pour vous connecter avec le flux de code d’appareil :
 
 1. Sous **Visual Studio**, choisissez **Continuer**.
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![Capture d’écran de la page de connexion de l’appareil montrant l’option continuer.](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. Suivez les instructions pour entrer les informations d'identification de votre compte.
 

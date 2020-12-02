@@ -1,5 +1,7 @@
 ---
 title: Espion, commande
+description: Découvrez la commande Watch et comment elle crée et ouvre une instance spécifiée d’un Fenêtre Espion.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 631c9cf61e6da70b3c7554a1aac0cacc8eef0294
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585650"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480146"
 ---
 # <a name="watch-command"></a>Espion, commande
 Crée et ouvre une instance spécifiée d’une fenêtre **Espion** . Vous pouvez utiliser une fenêtre **Espion** pour calculer les valeurs des variables, des expressions et des registres, modifier ces valeurs et enregistrer les résultats.
@@ -34,7 +36,7 @@ Debug.Watch[index]
 `index`\
 Obligatoire. Numéro d’instance de la fenêtre Espion.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 La valeur d’`index` doit être un entier. Les valeurs valides sont 1, 2, 3 ou 4.
 

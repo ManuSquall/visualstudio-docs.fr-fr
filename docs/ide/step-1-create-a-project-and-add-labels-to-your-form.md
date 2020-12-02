@@ -1,5 +1,7 @@
 ---
 title: 'Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire'
+description: Découvrez comment créer le projet, ajouter des étiquettes, un bouton et d’autres contrôles à un formulaire, et définir les propriétés de chaque contrôle que vous ajoutez.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579447"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480107"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire
 
@@ -170,7 +172,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 5. Nommez le second contrôle Label point d’interrogation **minusRightLabel**.
 
-6. Nommez le contrôle NumericUpDown**difference**.
+6. Nommez le contrôle NumericUpDown **difference**.
 
 7. Collez les cinq contrôles deux fois de plus.
 
@@ -183,7 +185,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Pour ajouter un bouton de démarrage et définir l'ordre des index de tabulation
 
-1. Ajoutez un contrôle <xref:System.Windows.Forms.Button> à partir de la** boîte à outils**, puis affectez à sa propriété **(Name)** la valeur **startButton**.
+1. Ajoutez un contrôle <xref:System.Windows.Forms.Button> à partir de la **boîte à outils**, puis affectez à sa propriété **(Name)** la valeur **startButton**.
 
 2. Affectez la valeur **Démarrer le questionnaire** à la propriété **Text**.
 

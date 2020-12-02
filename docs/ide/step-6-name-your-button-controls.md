@@ -1,5 +1,7 @@
 ---
 title: 'Étape 6 : Nommer vos contrôles bouton'
+description: Apprenez à nommer vos contrôles bouton.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2016
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 ms.topic: tutorial
@@ -13,32 +15,32 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c23f48e803665e00155d1b546ace4e4ec7bc54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579794"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480315"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 
 Votre formulaire ne contient qu’un seul <xref:System.Windows.Forms.PictureBox>. Lorsque vous l’avez ajouté, l’IDE l’a nommé automatiquement **pictureBox1**. Il n’existe qu’un seul <xref:System.Windows.Forms.CheckBox>, appelé **checkBox1**. Vous allez bientôt écrire du code et ce code fera référence à CheckBox et PictureBox. Étant donné qu’il n’existe qu’un seul de ces contrôles, vous saurez ce que cela signifie quand vous voyez **PictureBox1** ou **CheckBox1** dans votre code.
 
 > [!TIP]
-> En Visual Basic, le nom des contrôles commence par défaut par une lettre majuscule, autrement dit **PictureBox1**, **CheckBox1**et ainsi de suite.
+> En Visual Basic, le nom des contrôles commence par défaut par une lettre majuscule, autrement dit **PictureBox1**, **CheckBox1** et ainsi de suite.
 
-Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **button1**, **button2**, **button3**et **button4**. Leurs noms actuels ne vous permettent pas de savoir s’il s’agit du bouton **Fermer** ou du bouton **Afficher une image** . C’est pourquoi il est utile de donner à vos contrôles bouton des noms plus informatifs.
+Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **button1**, **button2**, **button3** et **button4**. Leurs noms actuels ne vous permettent pas de savoir s’il s’agit du bouton **Fermer** ou du bouton **Afficher une image** . C’est pourquoi il est utile de donner à vos contrôles bouton des noms plus informatifs.
 
 ## <a name="to-name-your-button-controls"></a>Pour nommer vos contrôles bouton
 
 1. Dans le formulaire, choisissez le bouton **Fermer** . (Si tous les boutons sont encore sélectionnés, appuyez sur la touche **Échap** pour annuler la sélection.) Faites défiler la fenêtre **Propriétés** jusqu’à ce que la propriété **(Name)** s’affiche. (La propriété **(Name)** se trouve vers le haut lorsque les propriétés sont classées par ordre alphabétique.) Remplacez le nom par **BoutonFermer**, comme illustré dans la capture d’écran suivante.
 
-    ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)<br>Fenêtre ***Propriétés*** *avec* ***closeButton*** *nom* CloseButton
+    ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)<br>**_Properties_* _ _Window avec * ***BoutonFermer**_ _name *
 
     > [!NOTE]
     > Essayez de modifier le nom de votre bouton pour **Fermer le bouton**, avec un espace entre les mots « Close » et « Button ». Dans ce cas, l’IDE affiche un message d’erreur : « la valeur de la propriété n’est pas valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
 
-1. Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**.
+1. Renommez les trois autres boutons en **backgroundButton**, **clearButton** et **showButton**.
 Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.
 
 1. Double-cliquez sur le bouton **Afficher une image** du formulaire. Vous pouvez également cliquer sur le bouton **afficher une image** sur le formulaire, puis appuyer sur la touche **entrée** . Dans ce cas, l’IDE ouvre un onglet supplémentaire dans la fenêtre principale nommée **Form1.cs**. (Si vous utilisez Visual Basic, l’onglet est nommé **Form1. vb**).
@@ -46,7 +48,7 @@ Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélect
    Cet onglet affiche le fichier de code derrière le formulaire, comme illustré dans la capture d’écran suivante.
 
     ![Onglet Form1.cs avec code Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-Onglet ***Form1.cs*** *avec code C#*
+**_Form1.cs_* _ _tab avec code C# *
 
     > [!NOTE]
     > Votre onglet Form1.cs ou Form1. vb peut afficher **showButton** comme **showButton** à la place.
@@ -89,13 +91,13 @@ Onglet ***Form1.cs*** *avec code C#*
 
     Lorsque vous affichez le code d’un contrôle dans l’IDE au moment de la conception, Visual Studio ajoute une méthode de gestionnaire d’événements pour le contrôle s’il n’en possède pas déjà une. Par exemple, lorsque vous double-cliquez sur un bouton, l’IDE ajoute un gestionnaire d’événements pour son événement <xref:System.Windows.Forms.Control.Click> (qui est appelé chaque fois que l’utilisateur choisit le bouton). Lorsque vous double-cliquez sur une case à cocher, l’IDE ajoute un gestionnaire d’événements pour son événement <xref:System.Windows.Forms.CheckBox.CheckedChanged> (qui est appelé chaque fois que l’utilisateur active ou désactive la case).
 
-    Une fois que vous avez ajouté un gestionnaire d’événements pour un contrôle, vous pouvez y revenir à tout moment en double-cliquant sur le contrôle du **Concepteur Windows Forms **ou, dans la barre de menus, en choisissant **Afficher** > **Code**.
+    Une fois que vous avez ajouté un gestionnaire d’événements pour un contrôle, vous pouvez y revenir à tout moment en double-cliquant sur le contrôle du **Concepteur Windows Forms** ou, dans la barre de menus, en choisissant **Afficher** > **Code**.
 
     Les noms sont importants lorsque vous générez des programmes, et vous pouvez nommer les méthodes (y compris les gestionnaires d’événements) comme vous le voulez. Lorsque vous ajoutez un gestionnaire d’événements avec l’IDE, il choisit un nom en fonction du nom du contrôle et de l’événement qui est géré.
 
     Par exemple, l’événement Click pour un bouton nommé **showButton** est appelé la `showButton_Click()` méthode de gestionnaire d' `ShowButton_Click()` événements (ou). De même, des parenthèses ouvrantes et fermantes `()` sont généralement ajoutées après le nom de la méthode pour indiquer clairement qu’il s’agit de méthodes.
 
-    Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser**le changement de  >  **nom**. Toutes les instances de cette variable dans le code sont renommées. Pour plus d’informations, consultez [refactorisation de changement de nom](../ide/reference/rename.md).
+    Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser** le changement de  >  **nom**. Toutes les instances de cette variable dans le code sont renommées. Pour plus d’informations, consultez [refactorisation de changement de nom](../ide/reference/rename.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

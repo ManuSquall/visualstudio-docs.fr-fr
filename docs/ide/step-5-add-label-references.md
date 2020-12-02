@@ -1,5 +1,7 @@
 ---
 title: 'Étape 5 : Ajouter des références aux étiquettes'
+description: Découvrez comment ajouter des références à des étiquettes à votre formulaire.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579330"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480562"
 ---
 # <a name="step-5-add-label-references"></a>Étape 5 : Ajouter des références aux étiquettes
 Le programme doit effectuer le suivi des contrôles d’étiquette choisis par le joueur. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.
@@ -47,7 +49,7 @@ Le programme doit effectuer le suivi des contrôles d’étiquette choisis par l
 4. Choisissez le contrôle d'étiquette suivant, et notez que rien ne se passe. Le programme effectue déjà le suivi de la première étiquette choisie par le joueur, donc il `firstClicked` n’est pas égal à `null` en C# ou `Nothing` à Visual Basic. Lorsque votre instruction `if` vérifie si `firstClicked` est égal à `null` ou `Nothing`, elle découvre que ce n'est pas le cas et n'exécute pas les instructions dans l'instruction `if`. Ainsi, seule la première icône choisie devient noire et les autres icônes sont invisibles, comme illustré dans l’image suivante.
 
      ![Jeu de combinaisons affichant une icône](../ide/media/express_tut4step5.png)<br/>
-***Jeu de combinaisons*** *avec une icône*
+***Match du jeu** _ _showing une icône *
 
      Vous allez résoudre cette situation à l'étape suivante du didacticiel en ajoutant un contrôle **Minuterie**.
 

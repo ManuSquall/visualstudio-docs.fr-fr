@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer un. Fichier vsct | Microsoft Docs'
+description: Découvrez comment créer manuellement un fichier. vsct, un fichier de configuration de table de commandes Visual Studio basé sur XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905530"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480367"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Comment : créer un fichier. vsct
 
@@ -61,7 +63,7 @@ Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier source de ta
 
 1. Obtenez une copie du langage Perl.
 
-2. Obtenez une copie du script perl *ConvertCTCToVSCT.pl*, généralement situé dans le dossier * \<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
+2. Obtenez une copie du script perl *ConvertCTCToVSCT.pl*, généralement situé dans le dossier *\<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
 
 3. Obtenez une copie du fichier source *. CTC* que vous souhaitez convertir.
 
@@ -138,7 +140,7 @@ Vous pouvez créer un fichier *. vsct* XML à partir d’un fichier *. directeur
 
      Ce balisage doit se trouver à l’intérieur de l' `ItemGroup` élément qui contient des ressources incorporées.
 
-4. Ouvrez le fichier de package, généralement nommé * \<ProjectName\> Package.cs* ou * \<ProjectName\> Package. vb*, dans l’éditeur.
+4. Ouvrez le fichier de package, généralement nommé *\<ProjectName\> Package.cs* ou *\<ProjectName\> Package. vb*, dans l’éditeur.
 
 5. Ajoutez un `ProvideMenuResource` attribut à la classe de package, comme illustré dans l’exemple suivant.
 

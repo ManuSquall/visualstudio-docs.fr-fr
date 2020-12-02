@@ -1,5 +1,7 @@
 ---
 title: Filtrage de la boîte de dialogue AddItem pour les projets imbriqués | Microsoft Docs
+description: Découvrez comment filtrer la boîte de dialogue AddItem pour un projet imbriqué dans Visual Studio en implémentant l’interface IVsFilterAddProjectItemDlg du projet parent.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d574007250960e3cb0b39bf50696f03af98e27
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708387"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480459"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Filtrer la boîte de dialogue AddItem pour les projets imbriqués
 Lorsque vous affichez une boîte de dialogue **AddItem** pour un projet imbriqué, le projet parent peut contrôler les éléments qui sont affichés dans la boîte de dialogue.

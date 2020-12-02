@@ -1,5 +1,7 @@
 ---
 title: GUID et ID des commandes Visual Studio | Microsoft Docs
+description: Découvrez comment localiser les valeurs GUID et ID des commandes incluses dans l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8932f23d301eabc97414bf76453d70336e0dabae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708251"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480445"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID et ID des commandes Visual Studio
 Les valeurs GUID et ID des commandes incluses dans l’environnement de développement intégré (IDE) de Visual Studio sont définies dans les fichiers. vsct installés dans le cadre du kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [commandes, menus et groupes définis par l’IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -31,7 +33,7 @@ Les valeurs GUID et ID des commandes incluses dans l’environnement de dévelop
 
 ### <a name="to-locate-a-command-definition"></a>Pour rechercher une définition de commande
 
-1. Dans Visual Studio, ouvrez les fichiers suivants dans le *chemin d’installation du kit de développement logiciel (SDK) de Visual studio<dossier \> \VisualStudioIntegration\Common\Inc \\ * : *SharedCmdDef. vsct*, *ShellCmdDef. vsct*, *VsDbgCmdUsed. vsct*, *Venusmenu. vsct*.
+1. Dans Visual Studio, ouvrez les fichiers suivants dans le *chemin d’installation du kit de développement logiciel (SDK) de Visual studio<dossier \> \VisualStudioIntegration\Common\Inc \\* : *SharedCmdDef. vsct*, *ShellCmdDef. vsct*, *VsDbgCmdUsed. vsct*, *Venusmenu. vsct*.
 
     La plupart des commandes Visual Studio sont définies dans *SharedCmdDef. vsct* et *ShellCmdDef. vsct*. *VsDbgCmdUsed. vsct* définit les commandes relatives au débogueur, et *Venusmenu. vsct* définit les commandes qui sont spécifiques au développement Web.
 
@@ -54,11 +56,11 @@ Les valeurs GUID et ID des commandes incluses dans l’environnement de dévelop
 
 - Les éléments de menu qui incluent un caractère souligné, tels que la commande **Imprimer** du menu **fichier** , dans lequel le *P* est souligné.
 
-     Les caractères précédés du caractère esperluette (&) dans les noms des éléments de menu sont affichés sous forme de soulignement. Toutefois, les fichiers *. vsct* sont écrits au format XML, qui utilise le caractère perluète (&) pour indiquer les caractères spéciaux et requiert l’utilisation d’une esperluette pour l' * &amp; affichage.* Par conséquent, dans un fichier *. vsct* , la commande **Imprimer** apparaît en tant que * &amp; amp ; Imprimer*.
+     Les caractères précédés du caractère esperluette (&) dans les noms des éléments de menu sont affichés sous forme de soulignement. Toutefois, les fichiers *. vsct* sont écrits au format XML, qui utilise le caractère perluète (&) pour indiquer les caractères spéciaux et requiert l’utilisation d’une esperluette pour l' *&amp; affichage.* Par conséquent, dans un fichier *. vsct* , la commande **Imprimer** apparaît en tant que *&amp; amp ; Imprimer*.
 
 - Commandes qui ont du texte dynamique, telles que **Save** \<Current Filename\> , et des éléments de menu générés dynamiquement, tels que les éléments de la liste des **fichiers récents** .
 
-     Il n’existe pas de méthode fiable pour rechercher du texte dynamique. Recherchez plutôt un groupe qui héberge la commande souhaitée en consultant les [GUID et les ID des menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou GUIDs Visual Studio, [ainsi que les ID des barres d’outils de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), et recherchez l’ID de ce groupe. Si la définition de la commande n’a pas le groupe en tant qu' [élément parent](../../extensibility/parent-element.md), recherchez *SharedCmdPlace. vsct* et *ShellCmdPlace. vsct* (ou *VsDbgCmdPlace. vsct* pour les commandes du débogueur) pour un `<CommandPlacement>` élément qui définit le parent de la commande. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct*et *VsDbgCmdPlace. vsct* se trouvent dans le dossier * \<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\ * .
+     Il n’existe pas de méthode fiable pour rechercher du texte dynamique. Recherchez plutôt un groupe qui héberge la commande souhaitée en consultant les [GUID et les ID des menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou GUIDs Visual Studio, [ainsi que les ID des barres d’outils de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), et recherchez l’ID de ce groupe. Si la définition de la commande n’a pas le groupe en tant qu' [élément parent](../../extensibility/parent-element.md), recherchez *SharedCmdPlace. vsct* et *ShellCmdPlace. vsct* (ou *VsDbgCmdPlace. vsct* pour les commandes du débogueur) pour un `<CommandPlacement>` élément qui définit le parent de la commande. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct* et *VsDbgCmdPlace. vsct* se trouvent dans le dossier *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* .
 
 ## <a name="see-also"></a>Voir aussi
 

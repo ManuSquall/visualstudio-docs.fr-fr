@@ -1,5 +1,7 @@
 ---
 title: GUID et ID des barres d’outils de Visual Studio | Microsoft Docs
+description: Affichez une liste de valeurs GUID et ID pour les barres d’outils et les groupes qu’ils contiennent, qui sont inclus dans l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708229"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480380"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID et ID des barres d’outils de Visual Studio
 Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses dans l’environnement de développement intégré (IDE) de Visual Studio et des groupes qu’ils contiennent. Ces valeurs sont définies dans les fichiers *. vsct* installés dans le cadre du kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [commandes, menus et groupes définis par l’IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -38,7 +40,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 
  Seuls les groupes peuvent être directement issus des barres d’outils. Pour ajouter un groupe, affectez à son parent le GUID et l’ID de la barre d’outils. Pour ajouter un bouton à une barre d’outils, définissez son parent sur un groupe dans la barre d’outils.
 
-|Barre d’outils|id|
+|Barre d'outils|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
 |Build|IDM_VS_TOOL_BUILD|
@@ -49,7 +51,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 ### <a name="special-toolbars"></a>Barres d’outils spéciales
  Ces barres d’outils sont définies par l’IDE de Visual Studio, mais elles servent des fonctions spécialisées et n’hébergent pas de groupes de commandes.
 
-|Barre d’outils|id|
+|Barre d'outils|ID|
 |-------------|--------|
 |Add, commande|IDM_VS_TOOL_ADDCOMMAND|
 |Indéfini|IDM_VS_TOOL_UNDEFINED|
@@ -86,7 +88,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |Retrait|IDG_VS_EDITTOOLBAR_INDENT|
-|Commentaire|IDG_VS_EDITTOOLBAR_COMMENT|
+|Comment|IDG_VS_EDITTOOLBAR_COMMENT|
 |Signets|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>Déboguer les groupes de barres d’outils
@@ -95,7 +97,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 |----------|--------|
 |Exécution|IDM_DEBUG_TOOLBAR|
 |Exécution pas à pas|IDG_DEBUG_TOOLBAR_STEPPING|
-|Espion|IDG_DEBUG_TOOLBAR_WATCH|
+|Regardez|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>Groupes de barres d’outils d’emplacement de débogage
@@ -110,7 +112,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 > [!NOTE]
 > Les barres d’outils et les groupes utilisent le GUID `guidSHLMainMenu` , sauf spécification contraire à l’aide de la syntaxe GUID : ID. Lorsqu’un GUID est spécifié pour une barre d’outils, il s’applique également aux groupes qui descendent de cette barre d’outils.
 
-|Fenêtre outil|Barre d’outils|Groupes|
+|Fenêtre outil|Barre d'outils|Groupes|
 |-----------------|-------------|------------|
 |Explorateur de solutions|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.. 5,5|
 |Explorateur de serveurs|guid_SE_MenuGroup : IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|

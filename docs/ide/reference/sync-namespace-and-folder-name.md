@@ -1,5 +1,7 @@
 ---
 title: Synchronisation de l’espace de noms et du nom du dossier
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour synchroniser l’espace de noms et le nom du dossier.
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67160755"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479808"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Synchronisation de l’espace de noms et du nom du dossier
 
@@ -32,7 +34,7 @@ Dans les **cas suivants :** Vous souhaitez remanier des parties de votre soluti
 
 1. Placez votre curseur dans l’espace de noms.
 2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
-3. Sélectionnez **remplacer l’espace \<folder name> de noms par **.
+3. Sélectionnez **remplacer l’espace \<folder name> de noms par**.
 
    ![Synchronisation de l’espace de noms et du nom du dossier](media/sync-namespace-and-folder-name.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Hiérarchies dans Visual Studio | Microsoft Docs
+description: En savoir plus sur les hiérarchies de projet dans l’environnement de développement intégré (IDE) de Visual Studio qui contiennent des éléments de projet et leurs propriétés associées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdbb8a0e58f6b1e5bc6e32f8c319d1480c4db4b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708190"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480354"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hiérarchies dans Visual Studio
 L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) affiche un projet sous la forme d’une *hiérarchie*. Dans l’IDE, une hiérarchie est une arborescence de nœuds, où chaque nœud a un ensemble de propriétés associées. Une *hiérarchie de projet* est un conteneur qui contient les éléments du projet, les relations des éléments, ainsi que les propriétés et les commandes associées des éléments.

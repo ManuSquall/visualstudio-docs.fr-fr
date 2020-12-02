@@ -1,5 +1,7 @@
 ---
 title: C# IntelliSense
+description: Découvrez certaines fonctionnalités IntelliSense que vous pouvez utiliser lors du codage de votre projet C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313430"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479782"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 

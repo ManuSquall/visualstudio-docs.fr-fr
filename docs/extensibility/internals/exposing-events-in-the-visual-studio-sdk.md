@@ -1,5 +1,7 @@
 ---
 title: Exposition des événements dans le kit de développement logiciel (SDK) Visual Studio | Microsoft Docs
+description: En savoir plus sur les méthodes et les entrées de Registre du kit de développement logiciel Visual Studio qui exposent des événements pour les projets et les éléments de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708485"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480536"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exposer des événements dans le kit de développement logiciel Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet d’utiliser l’automatisation pour les événements source. Nous vous recommandons d’utiliser des événements source pour les projets et les éléments de projet.
@@ -27,7 +29,7 @@ ms.locfileid: "80708485"
 
 1. L’environnement démarre.
 
-2. Il lit dans le registre tous les noms de valeur sous les clés **Automation**, **AutomationEvents**et **AutomationProperties** de tous les VSPackages, puis stocke ces noms dans une table.
+2. Il lit dans le registre tous les noms de valeur sous les clés **Automation**, **AutomationEvents** et **AutomationProperties** de tous les VSPackages, puis stocke ces noms dans une table.
 
 3. Un consommateur Automation appelle, dans cet exemple, `DTE.Events.AutomationProjectsEvents` ou `DTE.Events.AutomationProjectItemsEvents` .
 
@@ -46,7 +48,7 @@ ms.locfileid: "80708485"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entrées de registre de l’exemple de projet de base
  Cette section indique où ajouter des valeurs d’événement Automation au registre.
 
- **[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID \> \AutomationEvents]**
 
  **AutomationProjectEvents** = retourne l' `AutomationProjectEvents` objet.
 
@@ -62,7 +64,7 @@ ms.locfileid: "80708485"
 
  ![Événements de projet Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents") Modèle Automation pour les événements
 
- La classe `CProjectEventsContainer` représente l’objet source pour *BscProjectsEvents*et `CProjectItemsEventsContainer` représente l’objet source pour *BscProjectItemsEvents*.
+ La classe `CProjectEventsContainer` représente l’objet source pour *BscProjectsEvents* et `CProjectItemsEventsContainer` représente l’objet source pour *BscProjectItemsEvents*.
 
  Dans la plupart des cas, vous devez retourner un nouvel objet pour chaque demande d’événement, car la plupart des objets d’événement prennent un objet de filtre. Lorsque vous déclenchez l’événement, consultez ce filtre pour vérifier que le gestionnaire d’événements est appelé.
 
