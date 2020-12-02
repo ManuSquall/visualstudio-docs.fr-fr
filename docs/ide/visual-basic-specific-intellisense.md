@@ -1,5 +1,7 @@
 ---
 title: Visual Basic IntelliSense
+description: Découvrez comment utiliser les fonctionnalités IntelliSense offertes par l’éditeur de code source Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594186"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478820"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense pour les fichiers de code Visual Basic
 

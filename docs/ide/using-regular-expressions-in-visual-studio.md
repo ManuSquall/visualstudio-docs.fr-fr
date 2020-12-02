@@ -1,5 +1,7 @@
 ---
 title: Utiliser les expressions régulières
+description: Découvrez certains caractères d’expression régulière, les opérateurs, les constructions et les exemples de modèles que vous pouvez utiliser dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568618"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478989"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -52,7 +54,7 @@ Le tableau suivant contient des caractères, des opérateurs, des constructions 
 |[Crée une séquence d'échappement](/dotnet/standard/base-types/character-escapes-in-regular-expressions) pour le caractère placé après la barre oblique inverse| \\ |`\^` correspond au caractère ^|
 |Spécifie le nombre d'occurrences du caractère ou du groupe précédent. Pour plus d’informations, consultez [Mettre en correspondance exactement n occurrences](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, où n est le nombre d'occurrences|`x(ab){2}x` correspond à « xababx »<br/>`x(ab){2,3}x` correspond à « xababx » et à « xabababx », mais pas à « xababababx »|
 |[Mettre en correspondance un texte dans une catégorie Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Pour plus d’informations sur les classes de caractères Unicode, consultez [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, où "X" est le numéro Unicode.|`\p{Lu}` correspond à « T » et « D » dans « Thomas Doe »|
-|[Correspond à la limite d'un mot](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (en dehors d’une classe de caractères `\b` spécifie une limite de mot et, à l’intérieur d’une classe de caractères, `\b` spécifie un retour arrière)|`\bin` correspond à « in » dans « à l’intérieur de », mais ne trouve pas de correspondance dans « Pinto »|
+|[Correspond à une limite de mot](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (en dehors d’une classe de caractères `\b` spécifie une limite de mot et, à l’intérieur d’une classe de caractères, `\b` spécifie un retour arrière)|`\bin` correspond à « in » dans « à l’intérieur de », mais ne trouve pas de correspondance dans « Pinto »|
 |Correspond à un saut de ligne (c’est-à-dire un retour chariot suivi d’une nouvelle ligne)|\r?\n|`End\r?\nBegin` correspond à "End" et "Begin" uniquement lorsque "End" est la dernière chaîne d’une ligne et "Begin" est la première chaîne de la ligne suivante|
 |Mettre en correspondance avec n’importe quel [caractère alphabétique](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` correspond à « Add » et à « A1D », mais pas à « a d »|
 |Correspond à n'importe quel [espace blanc](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` correspond à l’expression « public interface »|

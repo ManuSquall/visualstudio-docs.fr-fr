@@ -1,5 +1,7 @@
 ---
 title: "Tutoriel 1 : créer une visionneuse d'images"
+description: Découvrez comment créer une application qui charge une image à partir d’un fichier et l’affiche dans une fenêtre.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811212"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479132"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : créer une visionneuse d'images
 
@@ -46,7 +48,7 @@ Lorsque vous avez terminé, votre application doit ressembler à l’image suiva
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Étape 1 : Créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Commencez par créer un projet d’application Windows Forms.|
 |[Étape 2 : exécuter votre application visionneuse d’images](../ide/step-2-run-your-program.md)|Exécutez le projet d’application Windows Forms que vous avez créé à l’étape précédente.|

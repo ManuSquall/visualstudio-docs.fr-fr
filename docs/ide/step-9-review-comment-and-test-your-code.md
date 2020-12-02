@@ -1,5 +1,7 @@
 ---
 title: 'Étape 9 : Passer en revue, commenter et tester votre code'
+description: Apprenez à ajouter un commentaire à votre code et à tester votre application.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 ms.topic: tutorial
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579745"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479301"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : Passer en revue, commenter et tester votre code
 
@@ -65,24 +67,24 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
     > [!TIP]
     > L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.
     >
-    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils**  >  **Gestionnaire des extraits de code**. Pour C#, l' `if` extrait de code est en **Visual C#** . Par Visual Basic, les `if` extraits de **code**se trouvent dans des  >  **instructions et des boucles**de modèles de code. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
+    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils**  >  **Gestionnaire des extraits de code**. Pour C#, l' `if` extrait de code est en **Visual C#** . Par Visual Basic, les `if` extraits de **code** se trouvent dans des  >  **instructions et des boucles** de modèles de code. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
     >
     >  Pour activer un extrait de code lorsque vous écrivez du code, tapez-le et appuyez sur la touche **Tab**. De nombreux extraits de code étant affichés dans la fenêtre **IntelliSense**, vous devez appuyer deux fois sur la touche **Tab**, d’abord pour sélectionner l’extrait de code dans la fenêtre **IntelliSense**, puis pour indiquer à l’IDE de l’utiliser. (IntelliSense prend en charge l'extrait `if`, mais pas `ifelse`.)
 
 1. Avant d’exécuter votre application, enregistrez-la en choisissant le bouton **enregistrer tout** de la barre d’outils, qui doit ressembler à la capture d’écran suivante.
 
      ![Enregistrer tout, bouton de barre d’outils](../ide/media/express_iconsaveall.png)<br>
-*Bouton* ***enregistrer tout***
+**_Enregistrer tout_* _ _button *
 
      Vous pouvez également enregistrer votre application en choisissant **fichier**  >  **enregistrer tout** dans la barre de menus (ou en appuyant sur **CTRL** + **MAJ** + **S**). Il est conseillé d'enregistrer votre travail régulièrement.
 
      Lorsqu’il est en cours d’exécution, votre programme doit ressembler à l’image suivante.
 
-     ![Visionneuse d'images](../ide/media/express_pictureviewerdonerun.png)<br>***Visionneuse d'images***
+     ![Visionneuse d'images](../ide/media/express_pictureviewerdonerun.png)<br>**_Visionneuse d’images_* _
 
 ## <a name="to-test-your-app"></a>Pour tester votre application
 
-1. Appuyez sur la touche **F5** ou choisissez le bouton **Démarrer le débogage** de la barre d’outils.
+1. Choisissez la touche _ *F5** ou cliquez sur le bouton **Démarrer le débogage** de la barre d’outils.
 
 1. Choisissez le bouton **Afficher une image** pour exécuter le code que vous venez d’écrire. Tout d’abord, l’application ouvre une boîte de dialogue **ouvrir un fichier** . Vérifiez que vos filtres s’affichent dans la liste déroulante **Types de fichiers** en bas de la boîte de dialogue. Ensuite, naviguez jusqu'à une image et ouvrez-la. En général, des échantillons d’images sont fournis avec le système d’exploitation Windows. Ils se trouvent dans votre dossier *Mes documents*, à l’intérieur du dossier *Mes images\Échantillons d’images*.
 

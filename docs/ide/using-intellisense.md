@@ -1,5 +1,7 @@
 ---
 title: Informations sur les paramètres, liste des membres et informations express
+description: 'Découvrez comment utiliser ces fonctionnalités IntelliSense : liste des membres, informations sur les paramètres, info Express et compléter le mot.'
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878281"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479015"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense dans Visual Studio
 

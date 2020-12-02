@@ -1,5 +1,7 @@
 ---
 title: 'Étape 7 : Ajouter des problèmes de multiplication et de division'
+description: Découvrez comment ajouter des problèmes de multiplication et de division.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579782"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479496"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Étape 7 : Ajouter des problèmes de multiplication et de division
 
@@ -58,7 +60,7 @@ Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de
      Les personnes interrogées doivent résoudre quatre problèmes pour terminer le questionnaire, comme le montre l'illustration ci-dessous.
 
      ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png)<br/>
-***Questionnaire mathématique*** *avec quatre problèmes*
+***Questionnaire mathématique** _ _with quatre problèmes *
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

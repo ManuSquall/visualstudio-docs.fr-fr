@@ -1,5 +1,7 @@
 ---
 title: Dépanner des références rompues
+description: Découvrez comment dépanner des références rompues qui peuvent être provoquées par d’autres éléments que vos applications ne parviennent pas à trouver le composant référencé.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565914"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479171"
 ---
 # <a name="troubleshoot-broken-references"></a>Dépanner des références rompues
 

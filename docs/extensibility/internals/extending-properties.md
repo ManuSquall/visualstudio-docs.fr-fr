@@ -1,5 +1,7 @@
 ---
 title: Extension des propriétés | Microsoft Docs
+description: En savoir plus sur les interfaces que vous devez implémenter et appeler pour étendre la liste de propriétés dans Visual Studio Fenêtre Propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7064128c54434b0a7bb8799e62b751e765511c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708420"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479532"
 ---
 # <a name="extend-properties"></a>Étendre les propriétés
 La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fenêtre **Propriétés** est un Explorateur de propriétés universel pour les composants COM et com+ et prend en charge tous les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produits. La fenêtre **Propriétés** fonctionne avec les `ITypeInfo` informations de type et les métadonnées com+ pour répertorier les propriétés au moment du design de l’objet actuellement sélectionné dans toute autre fenêtre de l’environnement de développement intégré (IDE).
@@ -26,7 +28,7 @@ La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fenêtre **Propr
 
  Cette section fournit des informations détaillées relatives aux zones individuelles de la fenêtre **Propriétés** et aux interfaces que vous devez implémenter et appeler pour remplir la fenêtre.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Présentation de Fenêtre Propriétés](../../extensibility/internals/properties-window-overview.md)
 
  Explique l’objectif de la fenêtre **Propriétés** par rapport à la fenêtre outil et à la fenêtre de document.

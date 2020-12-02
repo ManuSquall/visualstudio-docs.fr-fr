@@ -1,5 +1,7 @@
 ---
 title: Synchroniser les paramètres
+description: Découvrez comment synchroniser vos paramètres Visual Studio sur plusieurs ordinateurs en vous connectant au même compte de personnalisation.
+ms.custom: SEO-VS-2020
 ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5326264063d135582f2e9b8730ffcf16cba9e3d6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285203"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479202"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 
@@ -31,15 +33,15 @@ Par défaut, les paramètres suivants sont synchronisés :
 
 - Les options suivantes sont disponibles dans les pages **Outils**  >  **options** :
 
-  - Paramètres de la casse du thème et de **Environment**la barre de menus dans la  >  page options**générales** de l’environnement.
+  - Paramètres de la casse du thème et de **Environment** la barre de menus dans la  >  page options **générales** de l’environnement.
 
   - Tous les paramètres de la page d’options **environnement**  >  **polices et couleurs** .
 
-  - Tous les raccourcis clavier de **Environment**la  >  page Options de**clavier** de l’environnement.
+  - Tous les raccourcis clavier de **Environment** la  >  page Options de **clavier** de l’environnement.
 
-  - Tous les paramètres sur **Environment**les  >  **onglets environnement et** la page options Windows.
+  - Tous les paramètres sur **Environment** les  >  **onglets environnement et** la page options Windows.
 
-  - Tous les paramètres de **Environment**la  >  page Options de**démarrage** de l’environnement.
+  - Tous les paramètres de **Environment** la  >  page Options de **démarrage** de l’environnement.
 
   - Tous les paramètres des pages d’options de l’**éditeur de texte**, par exemple, les [préférences de style de code](code-styles-and-code-cleanup.md).
 
@@ -92,6 +94,6 @@ Pour rétablir les valeurs par défaut de tous les paramètres, connectez-vous �
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Paramètres d'environnement](../ide/environment-settings.md)
+- [Paramètres d’environnement](../ide/environment-settings.md)
 - [Environnement > Comptes, boîte de dialogue Options](reference/accounts-environment-options-dialog-box.md)
 - [Installer des versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md)

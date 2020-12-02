@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : Créer un extrait de code'
+description: 'Découvrez comment créer un extrait de code en trois étapes : créer un fichier XML, remplir les éléments appropriés et y ajouter votre code.'
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61b7f227344f00fe277d4bf062f83bd3c1d79fd5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800500"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479639"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
 
@@ -54,7 +56,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 2. Entrez un titre pour l’extrait de code dans l’élément **Title**. Utilisez le titre **Square Root**.
 
-3. Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour C#, utilisez **CSharp**, pour Visual Basic, utilisez **VB**et pour C++, utilisez **CPP**.
+3. Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour C#, utilisez **CSharp**, pour Visual Basic, utilisez **VB** et pour C++, utilisez **CPP**.
 
    > [!TIP]
    > Pour voir toutes les valeurs de langue disponibles, parcourez la [section Attributs de l’élément de code](code-snippets-schema-reference.md#attributes) dans la page [Référence de schéma des extraits de code](code-snippets-schema-reference.md).

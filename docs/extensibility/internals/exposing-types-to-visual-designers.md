@@ -1,5 +1,7 @@
 ---
 title: Exposition de types aux concepteurs visuels | Microsoft Docs
+description: Apprenez à exposer les définitions de classes et de types, y compris celles des outils personnalisés, afin que Visual Studio puisse les mettre à disposition des concepteurs visuels.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012528"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479523"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exposer des types à des concepteurs visuels
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit avoir accès aux définitions de classe et de type au moment du design pour afficher un concepteur visuel. Les classes sont chargées à partir d’un ensemble prédéfini d’assemblys qui incluent l’ensemble de dépendances complet du projet actuel (références et leurs dépendances). Il peut également être nécessaire pour les concepteurs visuels d’accéder aux classes et aux types définis dans les fichiers générés par les outils personnalisés.
@@ -37,7 +39,7 @@ ms.locfileid: "90012528"
 
 - Le code généré doit être dans la même langue que le paramètre de projet global.
 
-     Le PE temporaire est compilé indépendamment de ce que l’outil personnalisé signale comme l’extension demandée dans, à <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> condition que **GeneratesDesignTimeSource** soit défini sur 1 dans le registre. L’extension ne doit pas nécessairement être *. vb*, *. cs*ou *. jsl*; Il peut s’agir de n’importe quelle extension.
+     Le PE temporaire est compilé indépendamment de ce que l’outil personnalisé signale comme l’extension demandée dans, à <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> condition que **GeneratesDesignTimeSource** soit défini sur 1 dans le registre. L’extension ne doit pas nécessairement être *. vb*, *. cs* ou *. jsl*; Il peut s’agir de n’importe quelle extension.
 
 - Le code généré par l’outil personnalisé doit être valide et il doit être compilé seul en utilisant uniquement l’ensemble des références présentes dans le projet au moment de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> fin de l’exécution.
 

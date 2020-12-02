@@ -1,5 +1,7 @@
 ---
 title: Extraits de code C#
+description: Découvrez comment utiliser des extraits de code pour ajouter du code couramment utilisé à vos fichiers de code C#.
+ms.custom: SEO-VS-2020
 ms.date: 06/05/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594160"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478755"
 ---
 # <a name="c-code-snippets"></a>Extraits de code C#
 

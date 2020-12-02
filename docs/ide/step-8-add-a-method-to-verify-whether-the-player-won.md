@@ -1,5 +1,7 @@
 ---
 title: 'Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné'
+description: Découvrez comment ajouter une méthode pour déterminer si le joueur a gagné.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579763"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479288"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné
 Vous avez créé un jeu divertissant, mais il a besoin d'un élément supplémentaire pour être complet. Le jeu doit se terminer en cas de victoire du joueur : vous devez donc ajouter une méthode `CheckForWinner()` pour vérifier si le joueur a gagné.
@@ -43,10 +45,10 @@ Vous avez créé un jeu divertissant, mais il a besoin d'un élément supplémen
 3. Enregistrez et exécutez le programme. Jouez au jeu et associez toutes les icônes. Lorsque vous gagnez, le programme affiche un **MessageBox** (comme illustré dans la capture d’écran suivante), puis ferme la boîte.
 
      ![Jeu de combinaisons avec MessageBox](../ide/media/express_tut4step8.png)<br/>
-***Jeu de combinaisons*** *avec* ***MessageBox***
+**_Jeu de combinaisons_* _ _avec * ***MessageBox**_
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez **[étape 9 : essayer d’autres fonctionnalités](../ide/step-9-try-other-features.md)**.
+- Pour passer à l’étape suivante du didacticiel, consultez _ *[étape 9 : essayer d’autres fonctionnalités](../ide/step-9-try-other-features.md)* *.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md).

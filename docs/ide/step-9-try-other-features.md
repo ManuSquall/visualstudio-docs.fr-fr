@@ -1,5 +1,7 @@
 ---
 title: 'Étape 9 : Tester d’autres fonctionnalités'
+description: Apprenez à modifier les icônes et les couleurs, à ajouter un minuteur de jeu, à ajouter des sons et à agrandir la grille du jeu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2f1977bb0b8b391651ed7ed459b9dc560330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f462d70fda9a212bf848477952ecc7132a60265
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579733"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479249"
 ---
 # <a name="step-9-try-other-features"></a>Étape 9 : Tester d’autres fonctionnalités
 Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et les couleurs, d'ajouter une horloge de jeu et d'ajouter des sons. Pour augmenter la difficulté du jeu, essayez d'agrandir la taille du plateau et d'ajuster la minuterie.

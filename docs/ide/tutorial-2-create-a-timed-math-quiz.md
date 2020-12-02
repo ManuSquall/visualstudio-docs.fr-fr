@@ -1,5 +1,7 @@
 ---
 title: 'Tutoriel 2 : créer un questionnaire mathématique chronométré'
+description: Découvrez comment créer un quiz dans lequel la personne interrogée doit répondre à quatre problèmes arithmétiques aléatoires dans un délai spécifié.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
@@ -9,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b0044e5d3a08e46318a325443e9f05742e141127
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810846"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479106"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : créer un questionnaire mathématique chronométré
 
@@ -39,7 +41,7 @@ Lorsque vous avez terminé, votre quiz ressemble à la capture d’écran suivan
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Commencez par créer le projet, modifier ses propriétés et ajouter des contrôles `Label`.|
 |[Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md)|Créez un problème d'addition et utilisez la classe `Random` pour générer des nombres aléatoires.|

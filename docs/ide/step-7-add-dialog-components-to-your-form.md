@@ -1,5 +1,7 @@
 ---
 title: 'Étape 7 : ajouter des composants de dialogue à votre formulaire'
+description: Découvrez comment ajouter un <xref:System.Windows.Forms.OpenFileDialog> composant de boîte de dialogue et un <xref:System.Windows.Forms.ColorDialog> composant de boîte de dialogue à votre formulaire.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579279"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479470"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire
 
@@ -32,7 +34,7 @@ Pour permettre à votre application d’ouvrir des fichiers image et de choisir 
 
 1. Pour ajouter un composant appelé **openFileDialog1** à votre formulaire, double-cliquez sur **OpenFileDialog**. Pour ajouter un composant appelé **colorDialog1** à votre formulaire, double-cliquez sur **ColorDialog** dans la **boîte à outils**. (Vous l’utilisez dans l’étape suivante du didacticiel.) Vous devez voir une zone en bas de **Concepteur Windows Forms** (sous le formulaire de la **visionneuse d’images** ) qui contient une icône pour chacun des deux composants de boîte de dialogue que vous avez ajoutés, comme illustré dans l’image suivante.
 
-     ![Composants de boîte de dialogue](../ide/media/express_dialogsadded.png)<br>***Dialog*** *Composants* de boîte de dialogue
+     ![Composants de boîte de dialogue](../ide/media/express_dialogsadded.png)<br>**_Boîte de dialogue_* _ _components *
 
 1. Choisissez l’icône **openFileDialog1** dans la zone située en bas du **Concepteur Windows Forms**. Définissez deux propriétés :
 
@@ -47,7 +49,7 @@ Pour permettre à votre application d’ouvrir des fichiers image et de choisir 
          Les paramètres de la propriété **Filter** spécifient les types de fichiers à afficher dans la boîte de dialogue **Sélectionner un fichier image**.
 
     > [!TIP]
-    > Pour voir un exemple de boîte de dialogue **Ouvrir un fichier** dans une application différente, ouvrez le **Bloc-notes** ou **Paint** et, dans la barre de menus, choisissez **Fichier** > ** Ouvrir**. Notez qu’il y a une liste déroulante en regard du nom de fichier qui vous permet de choisir le type de fichier. <br/><br/>Vous venez d’utiliser la propriété **Filter** dans le composant **OpenFileDialog** pour la configurer dans votre application. Notez également que les propriétés **Title** et **Filter** sont affichées en gras dans la fenêtre **Propriétés**. L'IDE utilise ce style pour vous montrer toutes les propriétés dont les valeurs par défaut ont été modifiées.
+    > Pour voir un exemple de boîte de dialogue **Ouvrir un fichier** dans une application différente, ouvrez le **Bloc-notes** ou **Paint** et, dans la barre de menus, choisissez **Fichier** > **Ouvrir**. Notez qu’il y a une liste déroulante en regard du nom de fichier qui vous permet de choisir le type de fichier. <br/><br/>Vous venez d’utiliser la propriété **Filter** dans le composant **OpenFileDialog** pour la configurer dans votre application. Notez également que les propriétés **Title** et **Filter** sont affichées en gras dans la fenêtre **Propriétés**. L'IDE utilise ce style pour vous montrer toutes les propriétés dont les valeurs par défaut ont été modifiées.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
