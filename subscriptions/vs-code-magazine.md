@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 03/25/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: En savoir plus sur l’avantage CODE magazine inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970494"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538109"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazine de CODE inclus dans les abonnements Visual Studio
 
@@ -50,9 +50,9 @@ Une fois votre commande d’abonnement terminée, une page de confirmation s’a
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | Disponible       |  Non          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV| Disponible       |  Non          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise   | LV| Disponible       |  Non          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Non          |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Disponible                                                            |  Non          |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV                                      | Disponible                                                            |  Non          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Non          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Non          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |

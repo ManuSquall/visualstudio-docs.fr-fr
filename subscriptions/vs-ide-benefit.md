@@ -1,18 +1,18 @@
 ---
-title: Avantage IDE Visual Studio dans les abonnements Visual Studio | Microsoft Docs
+title: Avantage de l’IDE Visual Studio dans l’abonnement Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-description: Découvrez comment télécharger et installer l’IDE de Visual Studio inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+description: Découvrez comment télécharger et installer l’IDE Visual Studio inclus dans votre abonnement Visual Studio
+ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435761"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538057"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Avantage Visual Studio 2019
 
@@ -24,7 +24,7 @@ En tant qu’abonné Visual Studio, vous avez accès à l’IDE de Visual Studio
 
 Pour télécharger l’IDE :
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Recherchez la vignette IDE Visual Studio dans la section Outils et cliquez sur le lien **Télécharger** en bas de la vignette de l’avantage.  Vous pouvez également télécharger l’avantage à partir de la page [Téléchargements](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+2. Recherchez la vignette de l’IDE Visual Studio dans la section outils, puis cliquez sur le lien **Télécharger** en bas de la vignette de l’avantage.  Vous pouvez également télécharger l’avantage à partir de la page [Téléchargements](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
    > ! [Vignette Visual Studio Enterprise] (_img/vs-IDE-Experience/vs-ide-tile.png « cliquez sur «Télécharger » sur la vignette Visual Studio pour installer Visual Studio.»)
 
@@ -63,9 +63,9 @@ Pour télécharger l’IDE :
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensuel)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | Disponible       |  Oui          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV | Disponible       |  Oui          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise   | LV | Disponible       |  Oui          |
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Oui          |
-| Visual Studio Professional avec GitHub Enterprise | LV   | Disponible              |  Oui          |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV   | Disponible              |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Oui         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 

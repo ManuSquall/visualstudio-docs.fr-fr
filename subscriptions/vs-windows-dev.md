@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435825"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537719"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -44,9 +44,9 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | Inclus       |  Oui|
-| Visual Studio Enterprise avec GitHub Enterprise   | LV  | Inclus       |  Oui|
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise   | LV  | Inclus       |  Oui|
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Inclus                                                            |Oui|
-| Visual Studio Professional avec GitHub Enterprise | LV                                        | Inclus                                                            |Oui|
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV                                        | Inclus                                                            |Oui|
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D|
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              |  Non disponible                                            |  N/D|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|

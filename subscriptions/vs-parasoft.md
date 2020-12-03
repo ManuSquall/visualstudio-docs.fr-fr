@@ -2,17 +2,17 @@
 title: Parasoft VIRTUALIZE/SOAtest Professional dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dbe3ee78d46128a5944ee7b4d0bc69f001270588
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436034"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537446"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
@@ -74,9 +74,9 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | 6 mois       |  Oui       |
-| Visual Studio Enterprise avec GitHub Enterprise | LV | 6 mois       |  Oui       |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise | LV | 6 mois       |  Oui       |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |N/D         |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |N/D         |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |N/D         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|

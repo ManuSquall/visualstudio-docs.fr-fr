@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413963"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537966"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
 L’avantage Support technique dans les abonnements Visual Studio permet de résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les **environnements hors production** pour les produits se trouvant toujours dans la phase de support standard du [cycle de vie du support](https://support.microsoft.com/lifecycle/search). Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, tandis que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux (pendant un an à compter de l’activation de l’avantage). L’avantage doit être activé quand l’abonnement est actif.
@@ -30,7 +30,7 @@ Outils de développement tels que l’IDE de Visual Studio et Azure DevOps Serve
 
 Les produits non-développeur (tels que SQL, Windows, SharePoint) téléchargés à partir d’abonnements Visual Studio ne sont éligibles que pour le support standard. Ces produits sont uniquement concédés sous licence pour les environnements de développement pour la conception, le développement, le test et la démonstration d’applications. Ces produits ne sont pas concédés sous licence pour les environnements de production.
 
-Descriptions des niveaux de produit : développer les **plans de support non disponibles**. Si vous voyez **le plan de support ne peut pas être utilisé pour la prise en charge du produit spécifié (code : 8)** , votre contrat de support ne peut pas être utilisé pour la version du produit que vous avez sélectionnée.
+Descriptions des niveaux de produit : développer les **plans de support non disponibles**. Si vous voyez **le plan de support ne peut pas être utilisé pour la prise en charge du produit spécifié (code : 8)**, votre contrat de support ne peut pas être utilisé pour la version du produit que vous avez sélectionnée.
 
 > [!IMPORTANT]
 > Les incidents de support fournis concernent la prise en charge des correctifs de réparation.  Ils ne peuvent pas être utilisés pour obtenir de l’aide sur les problèmes de codage/développement impliquant les produits suivants :
@@ -87,10 +87,10 @@ Pour soumettre un incident via le portail d’entreprise, procédez comme suit 
 0. Indiquez la gravité de votre problème.  « Important » est la valeur par défaut. 
 0. Choisissez quand vous souhaitez recevoir un support technique. La valeur « uniquement pendant les heures d’ouverture » est sélectionnée par défaut. L’option « prise en charge de 24/7 » n’est disponible que si vous avez sélectionné « critique » comme gravité.
 0. Cliquez sur **Suivant** pour continuer. 
-0. Pour l' **étape 3** , fournissez les informations de contact que votre agent de support technique doit utiliser pour vous contacter. 
+0. Pour l' **étape 3**, fournissez les informations de contact que votre agent de support technique doit utiliser pour vous contacter. 
    > [!div class="mx-imgBorder"]
    > ![Vérifier vos informations de contact](_img/vs-tech-support/vs-tech-support-contact-info.png "Vérifiez vos informations de contact et votre méthode de contact préférée.") 
-0. À l' **étape 4** , vous avez la possibilité de partager ces informations de demande de support avec d’autres personnes de votre équipe.  Entrez les adresses de messagerie des personnes avec lesquelles vous souhaitez partager la demande. Cliquez sur **suivant** pour passer à l’étape suivante.
+0. À l' **étape 4**, vous avez la possibilité de partager ces informations de demande de support avec d’autres personnes de votre équipe.  Entrez les adresses de messagerie des personnes avec lesquelles vous souhaitez partager la demande. Cliquez sur **suivant** pour passer à l’étape suivante.
 0. L' **étape 5** résume toutes les informations que vous avez fournies pour l’incident.  Si vous vous êtes assuré que tout est correct et que vous êtes prêt à continuer, cliquez sur **Envoyer**. 
  
 ### <a name="submit-an-incident-by-phone"></a>Soumettre un incident par téléphone
@@ -108,9 +108,9 @@ Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnemen
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 4 incidents       |  Oui|
-| Visual Studio Enterprise avec GitHub Enterprise | LV | 4 incidents       |  Oui|
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise | LV | 4 incidents       |  Oui|
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail, NFR sélectif<sup>2</sup>                                        | 2 incidents                                                          |Oui         |
-| Visual Studio Professional avec GitHub Enterprise | LV                                     | 2 incidents                                                          |Oui         |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV                                     | 2 incidents                                                          |Oui         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 2 incidents                                             |  Oui         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 2 incidents                                               | Oui         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|

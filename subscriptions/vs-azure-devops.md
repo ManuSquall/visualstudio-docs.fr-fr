@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
-ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970503"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537693"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 En tant qu’abonné Visual Studio actif, vous avez accès à une large gamme de fonctionnalités dans Azure DevOps qui sont comprises dans votre abonnement sous forme d’avantages. Vous pouvez utiliser ces fonctionnalités dans chaque organisation Azure DevOps dont vous êtes membre, que vous ayez créé l’organisation ou que vous ayez été ajouté par quelqu’un d’autre.
@@ -31,9 +31,9 @@ Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utili
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensuel)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup>  | Azure Boards & pensions (Basic<sup>2</sup>), Azure test plans, travaux parallèles auto-hébergés |  Oui          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV| Azure Boards & pensions (Basic<sup>2</sup>), Azure test plans, travaux parallèles auto-hébergés |  Oui          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise   | LV| Azure Boards & pensions (Basic<sup>2</sup>), Azure test plans, travaux parallèles auto-hébergés |  Oui          |
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                        | Azure Boards & des dépôts (base<sup>2</sup>)                                                             |  Oui          |
-| Visual Studio Professional avec GitHub Enterprise | LV| Azure Boards & des dépôts (base<sup>2</sup>)                                                             |  Oui          |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV| Azure Boards & des dépôts (base<sup>2</sup>)                                                             |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Azure Boards & les pensions (Basic<sup>2</sup>), Azure test plans                                              |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Azure Boards & les pensions (Basic<sup>2</sup>), Azure test plans                                             |  Oui          |
 ||

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 10/28/2020
 ms.topic: how-to
 description: Découvrez comment activer l’offre Azure DevTest pour les crédits individuels inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903645"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538005"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure est votre bac à sable personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
@@ -24,15 +24,15 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
    > [!div class="mx-imgBorder"]
    > ![Vignette Azure](_img/vs-azure/vs-azure-tile.png "Cliquez sur le bouton « Activer » sur la vignette Azure pour commencer.")
 
-3. Si vous n’avez pas d’abonnement Azure, vous êtes invité à renseigner les informations requises pour créer votre abonnement Azure.  La première étape consiste à fournir vos informations personnelles, puis à sélectionner **suivant** .
+3. Si vous n’avez pas d’abonnement Azure, vous êtes invité à renseigner les informations requises pour créer votre abonnement Azure.  La première étape consiste à fournir vos informations personnelles, puis à sélectionner **suivant**.
    > [!div class="mx-imgBorder"]
    > ![Inscription à Azure](_img/vs-azure/vs-azure-about-you.png "Ajoutez vos coordonnées personnelles à votre abonnement Azure.")
 
-4. Ensuite, vous devez vérifier votre identité à l’aide d’un code de vérification simple. Indiquez votre numéro de téléphone et indiquez si vous souhaitez recevoir le code par SMS ou par téléphone.  Entrez le code que vous recevez, puis sélectionnez **vérifier le code** .   
+4. Ensuite, vous devez vérifier votre identité à l’aide d’un code de vérification simple. Indiquez votre numéro de téléphone et indiquez si vous souhaitez recevoir le code par SMS ou par téléphone.  Entrez le code que vous recevez, puis sélectionnez **vérifier le code**.   
    > [!div class="mx-imgBorder"]
    > ![Préparation d’Azure](_img/vs-azure/vs-azure-identity.png "Demandez un code de vérification, puis entrez-le pour continuer.")
 
-5. Pour l’étape finale, cochez la case pour accepter les termes du contrat, puis sélectionnez s' **inscrire** .  C’est tout !
+5. Pour l’étape finale, cochez la case pour accepter les termes du contrat, puis sélectionnez s' **inscrire**.  C’est tout !
    > [!div class="mx-imgBorder"]
    > ![Inscription Azure](_img/vs-azure/vs-azure-agreement.png "Cliquez sur le bouton « s’inscrire » pour terminer la création de votre abonnement Azure.")
 
@@ -50,11 +50,11 @@ Si votre abonnement Visual Studio expire ou est supprimé, tous les avantages de
 
 Il existe plusieurs façons de continuer à utiliser un crédit mensuel pour Azure.  Pour enregistrer vos ressources Azure, vous devez [transférer vos ressources](/azure/azure-resource-manager/management/move-resource-group-and-subscription) vers un autre abonnement Azure, quelle que soit l’action que vous choisissez ci-dessous. 
 
-- **Si vous achetez votre abonnement Visual Studio directement** , achetez un nouvel abonnement ou renouvelez votre abonnement via Microsoft Store.  
+- **Si vous achetez votre abonnement Visual Studio directement**, achetez un nouvel abonnement ou renouvelez votre abonnement via Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Si une personne de votre organisation achète des abonnements pour votre organisation** , [Contactez l’administrateur de votre abonnement Visual Studio](./contact-my-admin.md) et demandez un abonnement qui fournit le crédit mensuel dont vous avez besoin.  
+- **Si une personne de votre organisation achète des abonnements pour votre organisation**, [Contactez l’administrateur de votre abonnement Visual Studio](./contact-my-admin.md) et demandez un abonnement qui fournit le crédit mensuel dont vous avez besoin.  
 - **Si vous avez un autre abonnement Visual Studio actif** au même niveau d’abonnement que celui associé à un autre compte Microsoft, vous pouvez transférer l’avantage Azure vers un autre abonnement Visual Studio actif en [ajoutant un autre compte](./manage-vs-subscriptions.md#managing-my-profile) dans le [portail des abonnements](https://my.visualstudio.com/subscriptions)Visual Studio.  
 
 Utilisez le tableau d’éligibilité ci-dessous pour déterminer le nombre de crédits inclus avec chaque type d’abonnement.  
@@ -73,10 +73,10 @@ Si vous avez des questions sur le transfert de ressources, sur la suppression de
 |                 Niveau d'abonnement / Programme                 |           Avantage           |                         Renouvelable ?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise standard               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
-|              Visual Studio Enterprise avec GitHub Enterprise               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
+|              Abonnement Visual Studio Enterprise avec GitHub Enterprise               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 |               Visual Studio Enterprise mensuel               |        Non disponible        |                                                             |
 |             Visual Studio Professional standard              |     Crédit mensuel de 50 dollars US      |                             Oui
-|              Visual Studio Professional avec GitHub Enterprise              |     Crédit mensuel de 150 dollars US     |                             Oui                             |
+|              Abonnement Visual Studio Professional avec GitHub Enterprise              |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 |              Visual Studio Professional mensuel              |        Non disponible        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédit mensuel de 50 dollars US      |                             Oui                             |
 |                        Plateformes MSDN                        |     Crédit mensuel de 100 dollars US     |                             Oui                             |

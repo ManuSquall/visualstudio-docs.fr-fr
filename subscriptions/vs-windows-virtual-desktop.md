@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 09/08/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez tirer parti du bureau virtuel Microsoft Windows via votre abonnement Visual Studio
-ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005044"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537953"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accéder au bureau virtuel Windows dans les abonnements 
 Les abonnés Visual Studio peuvent désormais utiliser leur crédit Azure dev/test pour les services de bureau virtuel Microsoft Windows.  
@@ -47,9 +47,9 @@ Une fois que toutes les conditions préalables sont en place, vous pouvez effect
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | Disponible|  Oui          |
-| Visual Studio Enterprise avec GitHub Enterprise  | LV | Disponible|  Oui          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise  | LV | Disponible|  Oui          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Disponible                                                             |  Oui             |
-| Visual Studio Professional avec GitHub Enterprise | LV                                       | Disponible                                        |  Oui           |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV                                       | Disponible                                        |  Oui           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible|  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                         |  Oui          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |

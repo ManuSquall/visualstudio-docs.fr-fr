@@ -1,26 +1,26 @@
 ---
-title: Offre Visual Studio + GitHub Enterprise | Microsoft Docs
+title: Affecter des abonnements Visual Studio avec GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
-description: Gestion des abonnements dans l’offre Visual Studio + GitHub Enterprise
-ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+description: Gestion des abonnements dans les abonnements Visual Studio avec GitHub Enterprise
+ms.openlocfilehash: eed2f0636b0751c996da79c54d1a439532bce097
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467581"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538122"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gérer des abonnements Visual Studio avec GitHub Enterprise
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
 
-Quand votre organisation achète des abonnements Visual Studio avec GitHub Enterprise, ceux-ci sont provisionnés et gérés en deux parties.
+Lorsque votre organisation achète des abonnements Visual Studio avec GitHub Enterprise, elle est approvisionnée et gérée en deux parties.
 
 ## <a name="manage-visual-studio-subscriptions"></a>Gérer les abonnements Visual Studio
-Lorsque votre organisation achète des abonnements Visual Studio avec GitHub Enterprise, la partie Visual Studio des abonnements est approvisionnée immédiatement, et les abonnements sont disponibles pour l’attribution et la gestion dans le portail d' [administration des abonnements](https://manage.visualstudio.com) Visual Studio. Une fois que vous avez affecté un abonnement Visual Studio avec GitHub, l’abonné reçoit un message électronique lui indiquant qu’il peut accéder à son abonnement Visual Studio à l’adresse <https://my.visualstudio.com/subscriptions> .
+Lorsque votre organisation achète des abonnements Visual Studio avec GitHub Enterprise, la partie Visual Studio des abonnements est approvisionnée immédiatement, et les abonnements sont disponibles pour l’attribution et la gestion dans le portail d' [administration des abonnements](https://manage.visualstudio.com) Visual Studio. Une fois que vous avez affecté un abonnement Visual Studio à GitHub Enterprise, l’abonné reçoit un message électronique lui indiquant qu’il peut accéder à son abonnement Visual Studio à l’adresse <https://my.visualstudio.com/subscriptions> .
 
 Pour plus d’informations sur la gestion des abonnements Visual Studio, consultez les rubriques suivantes :
 - [Utilisation du portail d’administration](using-admin-portal.md)
@@ -30,12 +30,12 @@ Pour plus d’informations sur la gestion des abonnements Visual Studio, consult
 - [Surutilisations](handle-overclaimed-license.md)
 
 > [!Important]
-> Si les abonnements Visual Studio avec GitHub Enterprise sont affectés par les administrateurs des abonnements Visual Studio sans achat préalable, GitHub ne sera pas informé que vous souhaitez créer un compte GitHub Enterprise.  **Un achat d’au moins un** L’abonnement Visual Studio avec GitHub Enterprise doit être effectué avant l’attribution des abonnements.
+> Si les abonnements Visual Studio avec GitHub Enterprise sont affectés par les administrateurs des abonnements Visual Studio sans achat préalable, GitHub ne sera pas informé que vous souhaitez créer un compte GitHub Enterprise.  **Un achat d’au moins un** Un abonnement Visual Studio avec GitHub Enterprise doit être effectué avant l’attribution des abonnements.
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus de configuration Visual Studio avec GitHub Enterprise ?
-GitHub Enterprise est configuré et géré séparément des abonnements Visual Studio. À la suite de Visual Studio avec GitHub Enterprise Purchase, un processus de configuration d’un compte GitHub Enterprise est lancé en parallèle avec (mais distinct de) établissant un accord dans [Manage.VisualStudio.com](https://manage.visualstudio.com). La création de ce compte GitHub Enterprise peut prendre un certain temps. 
+GitHub Enterprise est configuré et géré séparément des abonnements Visual Studio. À la suite d’un abonnement Visual Studio avec GitHub Enterprise Purchase, un processus de configuration d’un compte GitHub Enterprise est lancé en parallèle avec (mais distinct de) établissant un accord dans [Manage.VisualStudio.com](https://manage.visualstudio.com). La création de ce compte GitHub Enterprise peut prendre un certain temps. 
 
-Une fois que votre société a configuré un compte GitHub Enterprise, les abonnés à qui ont été attribués des abonnements Visual Studio avec GitHub Enterprise reçoivent un e-mail de GitHub les notifiant que leurs abonnements Visual Studio ont été liés. Une fois que les abonnés reçoivent cet e-mail, ils peuvent contacter l’administrateur de leur organisation GitHub pour qu’ils reçoivent une invitation à l’organisation appropriée.
+Une fois que votre société a configuré un compte GitHub Enterprise, les abonnés qui ont reçu des abonnements Visual Studio avec GitHub Enterprise recevront un message électronique de GitHub les avertissant que leurs abonnements Visual Studio ont été liés. Une fois que les abonnés reçoivent cet e-mail, ils peuvent contacter l’administrateur de leur organisation GitHub pour qu’ils reçoivent une invitation à l’organisation appropriée.
 
 Pour plus d’informations sur l’installation de GitHub Enterprise, veuillez vous référer à la documentation de l' [abonné](access-github.md).   
 
@@ -71,4 +71,4 @@ En savoir plus sur la gestion des abonnements Visual Studio.
 - [Supprimer des abonnements](delete-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)
 
-Pour plus d’informations sur la gestion des abonnements Visual Studio avec GitHub Enterprise, consultez le [portail d’administration des abonnements](https://visualstudio.microsoft.com/subscriptions-administration/) Visual Studio.
+Pour plus d’informations sur la gestion des abonnements Visual Studio avec GitHub Enterprise, consultez le [portail d’administration des abonnements](https://visualstudio.microsoft.com/subscriptions-administration/)Visual Studio.

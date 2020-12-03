@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435886"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538083"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
@@ -29,7 +29,7 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
    > [!NOTE]
    > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.
 
-4. Une fois que votre compte a été créé, vous pouvez choisir un parcours d’apprentissage.  Les options sont les suivantes :
+4. Une fois que votre compte a été créé, vous pouvez choisir un parcours d’apprentissage.  Options disponibles :
     - Apprentissage de R pour la science des données
     - Commencer l’apprentissage de Python pour la science des données
     - Développer vos compétences en science des données
@@ -60,9 +60,9 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise   | LV | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Professional avec GitHub Enterprise| LV | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Abonnement Visual Studio Professional avec GitHub Enterprise| LV | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |

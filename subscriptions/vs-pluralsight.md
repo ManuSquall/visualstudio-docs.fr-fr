@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 08/04/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91005340"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537979"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -31,7 +31,7 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
 1. Vous êtes ensuite redirigé vers la page Pluralsight correspondant à l’avantage inclus dans votre abonnement Visual Studio.
    - Entrez les coordonnées demandées dans le formulaire.
    - Cochez la case pour accepter les conditions d’utilisation
-   - Cliquez sur **échanger** .
+   - Cliquez sur **échanger**.
    > [!div class="mx-imgBorder"]
    > ![Inscription Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Remplissez le formulaire d’inscription, cochez la case pour accepter les termes du contrat, puis cliquez sur échanger")
 
@@ -43,9 +43,9 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
    > [!NOTE]
    > Si votre compte ne permet pas de bénéficier de nouvelles offres, l’e-mail que vous recevez explique que votre compte n’a pas pu être créé en raison de son inéligibilité.  Il contient également des informations expliquant comment contacter l’équipe de support technique de Pluralsight, à laquelle vous pouvez poser des questions concernant votre compte.
 
-1. Cliquez sur **définir le mot de passe** .
+1. Cliquez sur **définir le mot de passe**.
 
-1. Entrez le mot de passe de votre choix dans le champ **nouveau mot de passe** , entrez-le de nouveau dans le champ **confirmer le mot de passe** , puis cliquez sur **Enregistrer** .
+1. Entrez le mot de passe de votre choix dans le champ **nouveau mot de passe** , entrez-le de nouveau dans le champ **confirmer le mot de passe** , puis cliquez sur **Enregistrer**.
 
 1. Et voilà !  Vous êtes maintenant prêt à commencer votre apprentissage à l’aide des milliers de cours Pluralsight disponibles.
 
@@ -73,9 +73,9 @@ Une fois votre abonnement Pluralsight expiré, son état passe à « 0 jour res
 |                          Niveau de l’abonnement                          |     Canaux      |    Avantage    |   Renouvelable ?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | Licences en volume, Azure, Détail |   6 mois    | Oui<sup>2</sup> |
-|          Visual Studio Enterprise avec GitHub Enterprise          | LV  |   6 mois    | Oui<sup>2</sup> |
+|          Abonnement Visual Studio Enterprise avec GitHub Enterprise          | LV  |   6 mois    | Oui<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | Licences en volume, Azure, Détail |   3 mois    | Oui<sup>2</sup> |
-|         Visual Studio Professional avec GitHub Enterprise          | LV  |   3 mois    | Oui<sup>2</sup> |
+|         Abonnement Visual Studio Professional avec GitHub Enterprise          | LV  |   3 mois    | Oui<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    Licences en volume, Détail     |   Non disponible    | N/D  |
 |                      Plateformes MSDN (Standard)                       |    Licences en volume, Détail     |   Non disponible    | N/D  |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) |       Azure       | Non disponible |       N/D       |

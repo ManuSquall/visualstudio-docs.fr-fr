@@ -1,18 +1,18 @@
 ---
-title: Avantage Visual Studio App Center dans les abonnements Visual Studio | Microsoft Docs
+title: Visual Studio App Center avantages dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435727"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537771"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -43,9 +43,9 @@ La mise en route de Visual Studio App Center est simple.
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR<sup>1</sup> | Inclus       |  Oui          |
-| Visual Studio Enterprise avec GitHub Enterprise  | LV | Inclus       |  Oui          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise  | LV | Inclus       |  Oui          |
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Inclus                                                            |Oui |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Inclus                                                            |Oui |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV                                      | Inclus                                                            |Oui |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Inclus                                                            |Oui |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Inclus                                                            |Oui |
 ||

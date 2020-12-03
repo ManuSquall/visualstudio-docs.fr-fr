@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: En savoir plus sur l’avantage du support de la communauté des développeurs inclus dans les abonnements Visual Studio sélectionnés.
-ms.openlocfilehash: 68c2ecd4c87039e1e75b2f36fd261e18951d612a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 1b90a18c251e96f3c815129d81b3b09611594e99
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94905517"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538044"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Forum de support de la communauté des développeurs dans les abonnements Visual Studio
 Posez des questions, trouvez des réponses et partagez vos connaissances sur les forums de la communauté des développeurs.
@@ -42,9 +42,9 @@ La disponibilité de l’avantage Azure Community dépend de votre niveau d’ab
 |                                          Niveau de l’abonnement                                           |     Canaux      |    Avantage    | Renouvelable ? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | Licences en volume, Azure, Détail |   Disponible    |    Oui     |
-|                           Visual Studio Enterprise avec GitHub Enterprise                           | Licences en volume, Azure, Détail |   Disponible    |    Oui     |
+|                           Abonnement Visual Studio Enterprise avec GitHub Enterprise                           | Licences en volume, Azure, Détail |   Disponible    |    Oui     |
 |                          Visual Studio Professional (Standard)                          | Licences en volume, Azure, Détail |   Disponible    |    Oui     |
-|                          Visual Studio Professional avec GitHub Enterprise                          | Licences en volume, Azure, Détail |   Disponible    |    Oui     |
+|                          Abonnement Visual Studio Professional avec GitHub Enterprise                          | Licences en volume, Azure, Détail |   Disponible    |    Oui     |
 |                              Visual Studio Test Professional (Standard)                               |    Licences en volume, Détail     |   Disponible    |    Oui     |
 |                                       Plateformes MSDN (Standard)                                       |    Licences en volume, Détail     |   Disponible    |    Oui     |
 | Visual Studio Enterprise (Cloud mensuel), Visual Studio Professional (Cloud mensuel)|        Tous        | Non disponible |     Non     |

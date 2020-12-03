@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970310"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537888"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -72,9 +72,9 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, détail<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|

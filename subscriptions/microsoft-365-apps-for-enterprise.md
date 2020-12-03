@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: En savoir plus sur et installer des applications Microsoft 365 pour l’entreprise
-ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006122"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537823"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Applications Microsoft 365 pour l’entreprise dans les abonnements Visual Studio
 Les applications Microsoft 365 pour l’entreprise (anciennement Office 365 Pro plus) sont disponibles dans les abonnements Visual Studio sélectionnés. 
@@ -56,10 +56,10 @@ Le processus d’activation de vos applications Microsoft 365 pour l’abonnemen
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail| Disponible       |  Oui          |
-| Visual Studio Enterprise avec GitHub Enterprise  | LV | Disponible       |  Oui          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise  | LV | Disponible       |  Oui          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Non disponible       |  N/A          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |  N/A          |
-| Visual Studio Professional avec GitHub Enterprise | LV | Non disponible         |  N/A          |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV | Non disponible         |  N/A          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |

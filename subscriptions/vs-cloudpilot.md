@@ -1,18 +1,18 @@
 ---
-title: Avantage CloudPilot dans les abonnements Visual Studio | Microsoft Docs
+title: CloudPilot avantages dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 03/24/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Découvrir l’avantage CloudPilot disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005922"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538148"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Avantage CloudPilot dans les abonnements Visual Studio
 Migrez vos applications vers Microsoft Azure en quelques étapes simples. Identifiez en quelques minutes tous les changements de code nécessaires, jusqu’à la ligne de code, pour réussir la migration vers des conteneurs, des machines virtuelles, App Services, SQL Azure et/ou SQL MI. Ensuite, migrez les applications vers Azure à l’aide d’Assistants tirant parti des fonctionnalités ASR, DMA et DMS.
@@ -60,9 +60,9 @@ Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à m
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Abonnement Visual Studio Enterprise avec GitHub Enterprise   | LV | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Professional avec GitHub Enterprise | LV | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Abonnement Visual Studio Professional avec GitHub Enterprise | LV | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
