@@ -188,7 +188,7 @@
           href: aliasing.md
         - name: Abonnés avec connexions par e-mail personnel
           href: personal-email-sign-ins.md
-        - name: Gestion de Visual Studio avec GitHub Enterprise
+        - name: Gestion des abonnements Visual Studio avec GitHub Enterprise
           href: assign-github.md
 - name: Ressources
   items:
