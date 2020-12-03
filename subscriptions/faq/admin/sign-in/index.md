@@ -1,18 +1,18 @@
 ---
-title: Connexion à Visual Studio Subscriptions
+title: Connexion aux abonnements Visual Studio
 description: Liste des questions fréquentes sur la connexion.
 ms.faqid: Section3
 ms.topic: conceptual
 ms.assetid: e4573b81-b40c-4008-9c33-9e7437cb5796
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: 2d49cb1d82ec0ccd8f686a0793152203bfb09e6f
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.date: 12/01/2020
+ms.openlocfilehash: 33619e156f932b888aa6710f92e961f319f989ab
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970350"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480081"
 ---
 # <a name="signing-in"></a>Connexion
 
