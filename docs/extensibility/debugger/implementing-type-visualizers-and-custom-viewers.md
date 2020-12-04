@@ -1,5 +1,7 @@
 ---
 title: Implémentation des visualiseurs de type et des visionneuses personnalisées | Microsoft Docs
+description: Découvrez comment implémenter des visualiseurs de type et des visionneuses personnalisées, qui permettent à un utilisateur d’afficher les données d’une manière plus explicite qu’un vidage de nombres.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ebbb5c8e27df4ae4baf2d9a9f1c3314188e2b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc3b1f2510742e2d0656727826e5b4aeae935b6f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738509"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559899"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implémenter des visualiseurs de type et des visionneuses personnalisées
 > [!IMPORTANT]
@@ -24,7 +26,7 @@ ms.locfileid: "80738509"
 
  Les visualiseurs de type et les visionneuses personnalisées permettent à un utilisateur d’afficher les données d’un type particulier d’une manière plus explicite qu’un simple dump hexadécimal de nombres. Un évaluateur d’expression (EE) peut associer des visionneuses personnalisées à des types spécifiques de données ou de variables. Ces visionneuses personnalisées sont implémentées par EE. Le EE peut également prendre en charge des visualiseurs de type externe, qui peuvent provenir d’un autre fournisseur tiers ou même de l’utilisateur final.
 
-## <a name="discussion"></a>Discussion
+## <a name="discussion"></a>Discussions
 
 ### <a name="type-visualizers"></a>Visualiseurs de type
  Visual Studio demande une liste de visualiseurs de types et de visionneuses personnalisées pour chaque objet à afficher dans une fenêtre Espion. Un évaluateur d’expression (EE) fournit une telle liste pour chaque type pour lequel il souhaite prendre en charge des visualiseurs de type et des visionneuses personnalisées. Les appels à [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) et [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) démarrent tout le processus d’accès aux visualiseurs de types et aux visionneuses personnalisées (pour plus d’informations sur la séquence d’appel, consultez visualisation [et affichage des données](../../extensibility/debugger/visualizing-and-viewing-data.md) ).

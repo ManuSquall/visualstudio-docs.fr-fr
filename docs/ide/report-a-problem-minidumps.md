@@ -1,5 +1,7 @@
 ---
 title: Créer des minidumps avec toutes les piles des appels
+description: Découvrez comment créer des minidumps pour un processus Visual Studio qui comprend des informations pour toutes les piles d’appels.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5cf6add1a20a0ee45ec69ade0d5f2839483bb9f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770847"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560874"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Créer des minidumps pour un processus Visual Studio avec toutes les piles des appels
 
@@ -40,7 +42,7 @@ Dans certains cas, Microsoft peut demander un minidump d’un processus Visual S
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Obtenir les piles des appels du minidump
 
 1. Ouvrez le fichier de vidage dans Visual Studio.
-1. Accédez à **Outils**  >  **options**de  >  **débogage**  >  **symboles** et assurez-vous que les **serveurs de symboles Microsoft** sont vérifiés dans les **emplacements du fichier de symboles (. pdb)**.
+1. Accédez à **Outils**  >  **options** de  >  **débogage**  >  **symboles** et assurez-vous que les **serveurs de symboles Microsoft** sont vérifiés dans les **emplacements du fichier de symboles (. pdb)**.
 1. Ouvrir la fenêtre **Commande** (**Afficher** > **Autre fenêtres** > **fenêtre Commande**)
 1. Saisissez ‘~*k’. La fenêtre affiche toutes les piles des appels des conversations.
 1. Copiez tout le texte de la fenêtre Commande et enregistrez le dans un fichier texte.

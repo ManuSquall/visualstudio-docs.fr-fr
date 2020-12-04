@@ -1,6 +1,7 @@
 ---
 title: Le débogueur ne peut pas afficher le code source ou le code machine
-ms.custom: seodec18
+description: Consultez les raisons du message « le débogueur ne peut pas afficher le code source ou le code machine pour l’emplacement actuel où l’exécution s’est arrêtée ».
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d87de3034cb6cb8ba3364fa362eff1c27e6bae9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd0ed9a798c29010911a1537c99f30ba44e01aea
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738346"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561043"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Le débogueur ne parvient pas à afficher le code source ou le code machine
 Cette erreur affiche le message suivant :

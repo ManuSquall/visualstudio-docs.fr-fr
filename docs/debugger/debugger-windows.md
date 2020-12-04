@@ -1,6 +1,7 @@
 ---
 title: Inspecter des données à l’aide des fenêtres du débogueur | Microsoft Docs
-ms.custom: seodec18
+description: Il existe de nombreux types de fenêtres de débogage qui fournissent des informations. Cet article fournit une liste des types. Pour chaque lien, vous pouvez accéder à des informations supplémentaires.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188542"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560731"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspecter des données à l’aide des fenêtres du débogueur dans Visual Studio
 
@@ -24,8 +25,8 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |-|-|-|
 |Points d’arrêt|Ctrl+Alt+B|[Utiliser des points d’arrêt](../debugger/using-breakpoints.md)|
 |Paramètres d’exception|Ctrl+Alt+E|[Gérer les exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)|
-|Output|Ctrl+Alt+O|[Sortie, fenêtre](../ide/reference/output-window.md)|
-|Espion|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
+|Output|Ctrl+Alt+O|[Fenêtre Sortie](../ide/reference/output-window.md)|
+|Regardez|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
 |Espion express|Maj+F9|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
 |Autos|Ctrl+Alt+V, A|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|
 |Locals|Ctrl+Alt+V, L|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|
@@ -42,7 +43,7 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](quickstart-debug-html-and-css.md)|
 |Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Explorateur de propriétés en direct|-|[Inspecter les propriétés XAML en phase de débogage](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
-|Processus|Ctrl+Alt+Z|[Déboguer les threads et processus](../debugger/debug-threads-and-processes.md)|
+|Processus|Ctrl+Alt+Z|[Déboguer des threads et des processus](../debugger/debug-threads-and-processes.md)|
 |Mémoire|Ctrl+Alt+M, (1, 2, 3, 4)|[Fenêtres Mémoire](../debugger/memory-windows.md)|
 |Code Machine|Ctrl+Alt+D|[Comment : utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)|
 |Registres|CTRL+ALT+G|[Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)|

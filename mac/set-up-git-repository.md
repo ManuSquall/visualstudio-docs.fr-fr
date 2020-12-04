@@ -3,15 +3,15 @@ title: Configuration d’un dépôt Git
 description: Connexion à un référentiel git à l’aide de Visual Studio pour Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493125"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561056"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
@@ -45,6 +45,9 @@ Pour configurer un dépôt Git, effectuez les étapes suivantes :
 
 Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, effectuez les étapes suivantes pour le configurer dans Git :
 
+> [!TIP]
+> Utilisez un fichier. gitignore pour contrôler quels dossiers et fichiers sont suivis et publiés avec git. Vous pouvez exclure des répertoires de build, des fichiers binaires ou des fichiers générés. Pour plus d’informations, consultez les [documents GitHub sur les fichiers ignorés](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
+
 1. Sélectionnez le nom de la solution dans la fenêtre de la solution dans Visual Studio pour Mac.
 
 2. Dans la barre de menus, sélectionnez **gestion de version > publier dans la gestion de version** pour afficher la boîte de dialogue **cloner le référentiel** :
@@ -69,12 +72,12 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
 6. Cliquez sur **OK** puis sur **Publier** dans la boîte de dialogue d’alerte.
 
-7. Dans la fenêtre **Informations d’identification Git** , entrez votre nom d’utilisateur et votre mot de passe GitHub. 
+7. Dans la fenêtre **Informations d’identification Git**, entrez votre nom d’utilisateur et votre mot de passe GitHub. 
 
 > [!NOTE]
 > Si l’authentification à 2 facteurs (2FA) est activée pour votre compte, vous devez créer un jeton d’accès, lequel est utilisé à la place d’un mot de passe. Si vous n’avez pas créé de jeton d’accès, suivez les étapes décrites dans la documentation Git [Jeton d’accès](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
 
-8. Entrez le nom d’utilisateur et le jeton d’accès personnel, puis cliquez sur **OK**  :
+8. Entrez le nom d’utilisateur et le jeton d’accès personnel, puis cliquez sur **OK** :
 
     ![Entrer un nom d’utilisateur et un mot de passe pour Git](media/version-control-git9-sml.png)
 
@@ -88,7 +91,7 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
 ## <a name="publishing-a-new-project"></a>Publication d’un nouveau projet
 
-La boîte de dialogue Nouveau projet permet de créer un projet avec un dépôt git local. Pour l’activer, cochez la case **Utiliser git pour la gestion de version** , comme le montre la capture d’écran suivante. Ceci initialise votre dépôt et ajoute un fichier .gitignore facultatif :
+La boîte de dialogue Nouveau projet permet de créer un projet avec un dépôt git local. Pour l’activer, cochez la case **Utiliser git pour la gestion de version**, comme le montre la capture d’écran suivante. Ceci initialise votre dépôt et ajoute un fichier .gitignore facultatif :
 
 ![Créer un projet avec la prise en charge de git](media/version-control-git-publish-new1.png)
 
@@ -101,21 +104,21 @@ Suivez les étapes ci-dessous pour envoyer (push) votre nouveau dépôt local ve
 
 2. Sous l’onglet État, choisissez **Valider** dans le coin supérieur gauche.
 
-3. Écrivez un message de validation, par exemple « Première validation », puis cliquez sur **Valider**  :
+3. Écrivez un message de validation, par exemple « Première validation », puis cliquez sur **Valider** :
 
     ![Valider les modifications initiales apportées au dépôt git](media/version-control-git-publish-new2.png)
 
 4. Ensuite, dans la barre de menus, accédez à **Gestion de version > Gérer les branches et les dépôts distants**.
 
-5. Accédez à l’onglet **Sources distantes** , puis cliquez sur **Ajouter**.
+5. Accédez à l’onglet **Sources distantes**, puis cliquez sur **Ajouter**.
 
-6. Dans la fenêtre **Source distante** , ajoutez les détails du dépôt GitHub que vous avez créé précédemment, puis cliquez sur **OK**  :
+6. Dans la fenêtre **Source distante**, ajoutez les détails du dépôt GitHub que vous avez créé précédemment, puis cliquez sur **OK** :
 
     ![Configurer des sources distantes pour le dépôt git](media/version-control-git-publish-new3.png)
 
 7. Fermez la fenêtre **Configuration du dépôt Git** puis, dans la barre de menus, accédez à **Gestion de version > Effectuer une opération Push sur les modifications**.
 
-8. Dans la fenêtre **Effectuer une opération Push vers le référentiel** , cliquez sur le bouton **Effectuer une opération Push sur les modifications**  :
+8. Dans la fenêtre **Effectuer une opération Push vers le référentiel**, cliquez sur le bouton **Effectuer une opération Push sur les modifications** :
 
     ![Envoyer (push) les modifications vers le dépôt distant](media/version-control-git-publish-new4.png)
 
@@ -132,7 +135,7 @@ Visual Studio pour Mac enverra désormais les modifications à votre dépôt dis
 
 Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe uniquement à un emplacement distant, et non sur votre machine locale. Visual Studio pour Mac vous permet de cloner ce référentiel rapidement. Suivez les étapes ci-dessous pour le cloner sur votre ordinateur :
 
-1. Dans la barre de menus, sélectionnez **gestion de Version > référentiel clone** :
+1. Dans la barre de menus, sélectionnez **gestion de Version > référentiel clone**:
 
 2. L’onglet **se connecter avec URL** s’affiche :
 
@@ -149,14 +152,14 @@ Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe unique
 > [!NOTE]
 > Vous risquez de rencontrer des problèmes si le dépôt fait plus de 4 Go.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous avez des problèmes d’initialisation de votre projet avec un dépôt distant vide, vous pouvez essayer les étapes suivantes :
 
 1. Accédez au dossier de votre solution.
 1. Appuyez sur **Commande + Maj + .** pour afficher les fichiers et dossiers cachés.
-1. S’il existe un dossier **.git** , supprimez-le.
-1. S’il existe un fichier **gitignore** , supprimez-le.
+1. S’il existe un dossier **.git**, supprimez-le.
+1. S’il existe un fichier **gitignore**, supprimez-le.
 1. Appuyez sur **Commande + Maj + .** pour masquer les fichiers et les dossiers.
 1. Ouvrez votre solution dans Visual Studio pour Mac.
 1. Dans la fenêtre de la solution, sélectionnez le nœud de votre solution.

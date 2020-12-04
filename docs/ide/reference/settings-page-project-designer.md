@@ -1,5 +1,7 @@
 ---
 title: Paramètres, page du Concepteur de projets
+description: Découvrez comment utiliser la page Paramètres du concepteur de projet pour spécifier les paramètres d’application d’un projet.
+ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566772"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560315"
 ---
 # <a name="settings-page-project-designer"></a>Paramètres, page du Concepteur de projet
 
@@ -29,7 +31,7 @@ Pour accéder à la page **Paramètres**, sélectionnez un nœud de projet dans 
 
 La barre d’en-tête en haut de la page **Paramètres** contient plusieurs contrôles :
 
-**Non**
+**Synchroniser**
 
 **Synchroniser** restaure les paramètres de portée utilisateur utilisés par l’application au moment de l’exécution ou pendant le débogage à leurs valeurs par défaut telles que définies au moment du design. Pour restaurer les données, supprimez du disque (et non des données de projet) les fichiers propres à l’application générés au moment de l’exécution.
 
@@ -49,7 +51,7 @@ Pour les projets Visual Basic, le bouton **Afficher le code** vous permet d’af
 
 Pour plus d’informations sur l’accès aux paramètres d’application, consultez [Paramètres d’application pour les Windows Forms](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms).
 
-**Modificateur d’accès **
+**Modificateur d’accès**
 
 Le bouton **Modificateur d’accès** spécifie le niveau d’accès des classes d’assistance `Properties.Settings` (en C#) ou `My.Settings` (en Visual Basic) que Visual Studio génère dans *Settings.Designer.cs* ou *Settings.Designer.vb*.
 
@@ -73,7 +75,7 @@ Entrez le nom du paramètre d’application dans ce champ.
 
 Utilisez la liste déroulante pour sélectionner un type pour le paramètre. Les types les plus fréquemment utilisés apparaissent dans la liste déroulante, par exemple **Chaîne**, **(Chaîne de connexion)** et **System.Drawing.Font**. Vous pouvez choisir un autre type en sélectionnant **Parcourir** à la fin de la liste, puis en sélectionnant dans la boîte de dialogue **Sélectionner un type**. Une fois que vous avez choisi un type, il est ajouté aux types communs dans la liste déroulante (pour la solution actuelle uniquement).
 
-**Portée**
+**Étendue**
 
 Sélectionnez **Application** ou **Utilisateur**.
 

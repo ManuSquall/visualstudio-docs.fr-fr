@@ -1,5 +1,7 @@
 ---
 title: Bibliothèque de débogage CRT utiliser | Microsoft Docs
+description: Découvrez comment la bibliothèque Runtime C (CRT) prend en charge vos efforts de débogage et ce que vous devez faire pour utiliser les bibliothèques de débogage CRT.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
@@ -28,17 +30,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745607"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560562"
 ---
 # <a name="crt-debug-library-use"></a>Utilisation de la bibliothèque de débogage CRT
-La bibliothèque Runtime C assure une prise en charge complète du débogage. Pour utiliser l’une des bibliothèques de débogage CRT, vous devez effectuer une liaison avec [/Debug](/cpp/build/reference/debug-generate-debug-info) et compiler avec **/MDD**, **/MTD**ou **/LDD**.
+La bibliothèque Runtime C assure une prise en charge complète du débogage. Pour utiliser l’une des bibliothèques de débogage CRT, vous devez effectuer une liaison avec [/Debug](/cpp/build/reference/debug-generate-debug-info) et compiler avec **/MDD**, **/MTD** ou **/LDD**.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les principales définitions et macros pour le débogage CRT se trouvent dans le fichier d'en-tête CRTDBG.h.
 
  Les fonctions dans les bibliothèques de débogage CRT sont compilées avec des informations de débogage ([/Z7, /Zd, /Zi, /ZI (Format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format)) et sans optimisation. Certaines fonctions contiennent des assertions pour vérifier les paramètres qui leur sont passés ; en outre, le code source est fourni. Avec ce code source, vous pouvez effectuer un pas à pas détaillé dans les fonctions CRT pour vérifier qu'elles opèrent comme prévu et rechercher les paramètres ou les états de mémoire incorrects. (Une partie de la technologie CRT est propriétaire et ne fournit pas le code source pour la gestion des exceptions, la virgule flottante et quelques autres routines.)
@@ -47,5 +49,5 @@ La bibliothèque Runtime C assure une prise en charge complète du débogage. P
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)
-- [/MD,/MT,/LD (utiliser la bibliothèque Runtime)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)
+- [/MD,/MT,/LD (utiliser la bibliothèque Run-Time)](/cpp/build/reference/md-mt-ld-use-run-time-library)

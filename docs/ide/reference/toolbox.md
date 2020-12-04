@@ -1,5 +1,7 @@
 ---
 title: Fenêtre Boîte à outils
+description: En savoir plus sur la fenêtre boîte à outils et sur la manière dont elle affiche les contrôles que vous pouvez ajouter aux projets Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9807762a4573cdbc68a4af26bf9d73b46827c7af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285329"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560276"
 ---
 # <a name="toolbox"></a>Boîte à outils
 
-La fenêtre **Boîte à outils** affiche les contrôles que vous pouvez ajouter à des projets Visual Studio. Pour ouvrir la **boîte à outils**, choisissez **Afficher**  >  la**boîte à outils** dans la barre de menus ou appuyez sur **CTRL** + **ALT** + **X**.
+La fenêtre **Boîte à outils** affiche les contrôles que vous pouvez ajouter à des projets Visual Studio. Pour ouvrir la **boîte à outils**, choisissez **Afficher**  >  la **boîte à outils** dans la barre de menus ou appuyez sur **CTRL** + **ALT** + **X**.
 
-![Fenêtre Boîte à outils](media/vs-2019/toolbox.png "Capture d’écran de la fenêtre boîte à outils")
+![Capture d’écran de la fenêtre boîte à outils montrant les options de la section conteneurs.](media/vs-2019/toolbox.png "Capture d’écran de la fenêtre boîte à outils")
 
 Vous pouvez glisser-déplacer différents contrôles sur la surface du concepteur que vous utilisez, puis les redimensionner et les positionner.
 
@@ -37,7 +39,7 @@ La version de .NET que cible votre projet détermine également les contrôles q
 
 ::: moniker range="vs-2019"
 
-![Fenêtre Boîte à outils](media/vs-2019/toolbox-change-dotnet-version.png "Capture d’écran de la boîte de dialogue dans laquelle vous pouvez modifier la version .NET")
+![Capture d’écran de la boîte de dialogue d’application montrant les options dans la liste déroulante Framework cible.](media/vs-2019/toolbox-change-dotnet-version.png "Capture d’écran de la boîte de dialogue dans laquelle vous pouvez modifier la version .NET")
 
 ::: moniker-end
 

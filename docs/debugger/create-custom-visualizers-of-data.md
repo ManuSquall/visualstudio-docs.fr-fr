@@ -1,5 +1,7 @@
 ---
 title: Créer des visualiseurs de données personnalisés | Microsoft Docs
+description: Les visualiseurs du débogueur Visual Studio sont des composants qui affichent des données. En savoir plus sur les six visualiseurs standard et sur la façon dont vous pouvez écrire ou télécharger d’autres.
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280874"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560679"
 ---
 # <a name="create-custom-data-visualizers"></a>Créer des visualiseurs de données personnalisés
 

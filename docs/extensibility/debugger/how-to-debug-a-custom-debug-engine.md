@@ -1,5 +1,7 @@
 ---
 title: 'Comment : déboguer un moteur de débogage personnalisé | Microsoft Docs'
+description: Découvrez les étapes qui vous permettent d’utiliser Visual Studio pour déboguer votre moteur de débogage personnalisé ou un type de projet personnalisé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903304"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560809"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Comment : déboguer un moteur de débogage personnalisé
 Un type de projet lance le moteur de débogage (DE) à partir de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> méthode. Cela signifie que le DE est lancé sous le contrôle de l’instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contrôlant le type de projet. Toutefois, cette instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ne peut pas déboguer le de. Les étapes suivantes vous permettent de déboguer votre personnalisé DE.

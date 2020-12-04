@@ -1,16 +1,18 @@
 ---
 title: Informations de référence sur Team Explorer
+description: En savoir plus sur les différentes fonctions de Team Explorer pour gérer le travail et coordonner avec d’autres membres de l’équipe pour développer un projet.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928080"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560991"
 ---
 # <a name="team-explorer-reference"></a>Informations de référence sur Team Explorer
 

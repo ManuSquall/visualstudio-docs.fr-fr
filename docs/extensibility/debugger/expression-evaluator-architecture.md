@@ -1,5 +1,7 @@
 ---
 title: Architecture de l’évaluateur d’expression | Microsoft Docs
+description: En savoir plus sur l’intégration d’un langage propriétaire dans le package de débogage Visual Studio, y compris l’évaluateur d’expression et les interfaces de fournisseur de symboles/Binder.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738696"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560159"
 ---
 # <a name="expression-evaluator-architecture"></a>Architecture de l’évaluateur d’expression
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738696"
 
  Pour plus d’informations sur ce processus d’affichage des valeurs des variables, consultez Affichage des variables [locales](../../extensibility/debugger/displaying-locals.md) . Consultez [modification de la valeur d’un local](../../extensibility/debugger/changing-the-value-of-a-local.md) pour plus d’informations sur la modification de la valeur d’une variable.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md) Fournit les arguments qui sont passés lorsque le DE l’appel à EE.
 
  [Interfaces d’évaluateur d’expression clés](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Décrit les interfaces essentielles nécessaires à l’écriture d’un EE, ainsi que le contexte d’évaluation.

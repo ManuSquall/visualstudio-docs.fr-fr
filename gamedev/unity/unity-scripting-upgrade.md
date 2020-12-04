@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341586"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559808"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
 
@@ -34,13 +34,13 @@ Pour activer le runtime de script .NET 4.x, effectuez les étapes suivantes :
 
 1. Ouvrez PlayerSettings dans l’inspecteur Unity en sélectionnant **Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)**.
 
-1. Sous le titre **Configuration** , cliquez sur la liste déroulante **Scripting Runtime Version (Version du runtime de script)** , puis sélectionnez **.NET 4.x Equivalent** (Équivalent .NET 4.x). Vous êtes invité à redémarrer Unity.
+1. Sous le titre **Configuration**, cliquez sur la liste déroulante **Scripting Runtime Version (Version du runtime de script)**, puis sélectionnez **.NET 4.x Equivalent** (Équivalent .NET 4.x). Vous êtes invité à redémarrer Unity.
 
 ![Sélectionner l’équivalent .NET 4.x](media/vs/vstu-scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Choix entre les profils .NET 4.x et .NET Standard 2.0
 
-Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings ( **Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)** ). Nous avons deux options :
+Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings (**Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)**). Nous avons deux options :
 
 * **.NET Standard 2,0**. Ce profil correspond au [profil .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publié par .NET Foundation. Unity recommande .NET Standard 2.0 pour les nouveaux projets. Il est plus petit que .NET 4.x, ce qui est avantageux pour les plateformes limitées en taille. De plus, Unity s’est engagé à prendre en charge ce profil sur toutes les plateformes prises en charge par Unity.
 
@@ -58,9 +58,9 @@ Par exemple, si vous utilisez le profil .NET 4.x et si vous souhaitez utiliser 
 
 ![référence d’assembly manquante](media/vs/vstu-missing-reference.png)
 
-Visual Studio regénère les fichiers .csproj et .sln des projets Unity chaque fois qu’ils sont ouverts. Ainsi, vous ne pouvez pas ajouter de références d’assembly directement dans Visual Studio, car elles sont perdues à la réouverture du projet. À la place, vous devez utiliser un fichier texte spécial nommé **mcs.rsp**  :
+Visual Studio regénère les fichiers .csproj et .sln des projets Unity chaque fois qu’ils sont ouverts. Ainsi, vous ne pouvez pas ajouter de références d’assembly directement dans Visual Studio, car elles sont perdues à la réouverture du projet. Au lieu de cela, vous devez utiliser un fichier texte spécial nommé **CSC. rsp** :
 
-1. Créez un fichier texte nommé **mcs.rsp** dans le répertoire **Assets** racine de votre projet Unity.
+1. Créez un nouveau fichier texte nommé **CSC. rsp** dans le répertoire des **ressources** racine de votre projet Unity.
 
 1. Sur la première ligne du fichier texte vide, entrez `-r:System.Net.Http.dll`, puis enregistrez le fichier. Vous pouvez remplacer « System.Net.Http.dll » par n’importe quel assembly inclus auquel il peut manquer une référence.
 
@@ -82,7 +82,7 @@ En plus des nouvelles fonctionnalités de syntaxe et de langage C#, le runtime 
 
 1. Localisez le fichier téléchargé, puis remplacez l’extension **.nupkg** par **.zip**.
 
-1. Dans le fichier zip, accédez au répertoire **lib/netstandard2.0** , puis copiez le fichier **Newtonsoft.Json.dll**.
+1. Dans le fichier zip, accédez au répertoire **lib/netstandard2.0**, puis copiez le fichier **Newtonsoft.Json.dll**.
 
 1. Dans le dossier **Assets** racine de votre projet Unity, créez un dossier nommé **Plugins**. Plugins est un nom de dossier spécial dans Unity. Pour plus d’informations, consultez la [documentation Unity](https://docs.unity3d.com/Manual/Plugins.html).
 

@@ -1,5 +1,7 @@
 ---
 title: DebugBreak et __debugbreak | Microsoft Docs
+description: Découvrez comment utiliser la fonction DebugBreak et le __debugbreak intrinsèques pour provoquer l’arrêt de votre programme, tout comme si un point d’arrêt était défini.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 376dd75062dc5a78582a23a12e9e025db60b9f3a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404657"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559769"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak et __debugbreak
 Vous pouvez appeler la fonction Win32 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) ou le [__debugbreak](/cpp/intrinsics/debugbreak) intrinsèque à n’importe quel point de votre code. `DebugBreak` et `__debugbreak` reviennent à définir un point d'arrêt à cet emplacement.

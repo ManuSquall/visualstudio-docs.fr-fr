@@ -1,5 +1,7 @@
 ---
 title: Prise en main avec l’extensibilité du débogueur | Microsoft Docs
+description: Commencez à créer et à personnaliser les composants du débogueur utilisés pour déboguer des programmes dans l’environnement Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738596"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560033"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Prise en main de l’extensibilité du débogueur
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Fournit les informations dont vous avez besoin pour créer et personnaliser les composants du débogueur utilisés pour déboguer des programmes à partir de l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement.
@@ -34,7 +36,7 @@ ms.locfileid: "80738596"
 
 - COM ATL
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  Feuille [de route pour l’extension du débogueur](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Décrit le processus d’implémentation du débogage dans votre produit, en fonction de votre compilateur et de sa sortie.
 
  [Composants du débogueur](../../extensibility/debugger/debugger-components.md) Fournit une vue d’ensemble des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] composants de débogage, notamment le moteur de débogage (de), l’évaluateur d’expression (EE) et le gestionnaire de symboles (SH).

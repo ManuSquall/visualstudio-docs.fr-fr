@@ -1,5 +1,7 @@
 ---
 title: Obtention d’un port | Microsoft Docs
+description: Découvrez comment Visual Studio fournit un port au moteur de débogage pour inscrire des nœuds de programme auprès du port et pour répondre aux demandes d’informations de processus.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738630"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560046"
 ---
 # <a name="get-a-port"></a>Obtenir un port
 Un port représente une connexion à un ordinateur sur lequel les processus sont exécutés. Il peut s’agir de l’ordinateur local ou d’un ordinateur distant (qui peut éventuellement exécuter un système d’exploitation non-Windows). pour plus d’informations, consultez [ports](../../extensibility/debugger/ports.md) .
@@ -27,7 +29,7 @@ Un moteur de débogage a besoin d’accéder à un port pour inscrire des nœuds
 
 Visual Studio fournit le port nécessaire au moteur de débogage et obtient ce port à partir d’un fournisseur de port. Si un programme est attaché à (à partir du débogueur ou parce qu’une exception a été levée, ce qui déclenche la boîte de dialogue juste-à-temps [JIT]), l’utilisateur a le choix du transport (un autre nom pour le fournisseur de port) à utiliser. Dans le cas contraire, si l’utilisateur lance le programme à partir du débogueur, le système de projet spécifie le fournisseur de ports à utiliser. Dans les deux cas, Visual Studio instancie le fournisseur de port, représenté par une interface [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) , et demande un nouveau port en appelant [addport](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) avec une interface [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) . Ce port est ensuite transmis au moteur de débogage sous une forme ou une autre.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Ce fragment de code montre comment utiliser le port fourni à [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) pour inscrire un nœud de programme dans [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Les paramètres qui ne sont pas directement liés à ce concept ont été omis par souci de clarté.
 
 > [!NOTE]

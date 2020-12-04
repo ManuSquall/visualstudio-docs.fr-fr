@@ -1,5 +1,7 @@
 ---
 title: Services, page du Concepteur de projets
+description: Découvrez comment utiliser la page services du concepteur de projet pour activer et configurer les services d’application cliente pour votre projet.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593562"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560796"
 ---
 # <a name="services-page-project-designer"></a>Services, page du Concepteur de projets
 
@@ -75,7 +77,7 @@ Ouvre la [boîte de dialogue Paramètres avancés pour les services](../../ide/r
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
+- [Services d'application cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md)
 - [Comment : configurer les services d'application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

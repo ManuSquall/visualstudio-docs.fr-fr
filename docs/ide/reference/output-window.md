@@ -1,5 +1,7 @@
 ---
 title: Fenêtre Sortie
+description: En savoir plus sur la fenêtre sortie et sur l’affichage des messages d’État pour les différentes fonctionnalités de l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b8615fcdb7e6751087c499967478aaf63e68d624
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810361"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560380"
 ---
 # <a name="output-window"></a>Fenêtre Sortie
 
 La fenêtre **Sortie** affiche des messages d’état pour diverses fonctionnalités dans l’environnement de développement intégré (IDE). Pour ouvrir la fenêtre **Sortie**, dans la barre de menus, choisissez **Affichage** > **Sortie**, ou appuyez sur **Ctrl**+**Alt**+**O**.
 
-## <a name="toolbar"></a>Barre d’outils
+## <a name="toolbar"></a>Barre d'outils
 
 Les commandes suivantes sont affichées dans la barre d’outils de la fenêtre **Sortie**.
 

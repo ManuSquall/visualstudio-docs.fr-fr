@@ -1,5 +1,7 @@
 ---
 title: Boîte à outils, onglet HTML
+description: En savoir plus sur les composants HTML que vous trouverez dans l’onglet HTML de la fenêtre boîte à outils.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f91e832e33d6a65d9fc70ee594d0c0670242306e
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596435"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560458"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 

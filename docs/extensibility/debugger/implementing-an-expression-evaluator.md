@@ -1,5 +1,7 @@
 ---
 title: Implémentation d’un évaluateur d’expression | Microsoft Docs
+description: En savoir plus sur l’évaluation d’une expression, qui implique le moteur de débogage, le fournisseur de symboles, l’objet Binder et l’évaluateur d’expression.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738541"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559964"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implémenter un évaluateur d’expression
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738541"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  EE exécute [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fournit le mécanisme pour décrire le résultat d’une évaluation d’expression, telle qu’une variable locale, une primitive ou un objet à Visual Studio, qui affiche ensuite les informations appropriées dans la fenêtre **variables locales**, **Espion**ou **exécution** .
+  EE exécute [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fournit le mécanisme pour décrire le résultat d’une évaluation d’expression, telle qu’une variable locale, une primitive ou un objet à Visual Studio, qui affiche ensuite les informations appropriées dans la fenêtre **variables locales**, **Espion** ou **exécution** .
 
   Le SP est donné au EE par le DE lorsqu’il demande des informations. Le SP exécute les interfaces qui décrivent les adresses et les champs, par exemple les interfaces suivantes et leurs dérivées :
 
@@ -58,7 +60,7 @@ ms.locfileid: "80738541"
 
   L’EE utilise toutes ces interfaces.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Stratégie d’implémentation](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) de l’évaluateur d’expression Définit un processus en trois étapes pour la stratégie d’implémentation de l’évaluateur d’expression (EE).
 
 ## <a name="see-also"></a>Voir aussi

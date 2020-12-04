@@ -1,5 +1,7 @@
 ---
 title: Définir des signets de code
+description: Apprenez à utiliser des signets pour marquer des lignes dans votre code afin de pouvoir rapidement revenir à un emplacement spécifique ou passer d’un emplacement à un autre.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595434"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560861"
 ---
 # <a name="set-bookmarks-in-code"></a>Définir des signets dans le code
 
-Vous pouvez utiliser des signets pour marquer des lignes de votre code afin de pouvoir rapidement revenir à un emplacement spécifique, ou basculer d’un emplacement à un autre. Les commandes et les icônes de signet sont disponibles à deux emplacements : la **fenêtre signet** (fenêtre**Afficher**le  >  **signet**) et la barre d’outils Éditeur de texte.
+Vous pouvez utiliser des signets pour marquer des lignes de votre code afin de pouvoir rapidement revenir à un emplacement spécifique, ou basculer d’un emplacement à un autre. Les commandes et les icônes de signet sont disponibles à deux emplacements : la **fenêtre signet** (fenêtre **Afficher** le  >  **signet**) et la barre d’outils Éditeur de texte.
 
 ![Barre d’outils Signet](media/bookmark-toolbar.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Détails du tas de débogage CRT | Microsoft Docs
+description: Le tas de débogage fournit des outils puissants pour aider à résoudre les problèmes d’allocation de mémoire. En savoir plus sur les outils et sur la façon dont ils aident à résoudre les problèmes tels que les fuites et les dépassements.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -73,12 +75,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247934"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560614"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
 Cette rubrique présente en détail le tas de débogage CRT.
