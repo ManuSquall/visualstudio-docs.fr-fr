@@ -272,8 +272,8 @@
           href: ide/codespaces/customize-codespaces.md
         - name: Fonctionnalités Visual Studio prises en charge
           href: ide/codespaces/supported-features-codespaces.md
-    - name: Se connecter à un projet ou à un dépôt
-      displayName: Azure DevOps VSTS GitHub
+    - name: Se connecter aux projets dans Team Explorer
+      displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
     - name: Nouvelle expérience Git dans Visual Studio
       href: ide/git-with-visual-studio.md
@@ -705,7 +705,7 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: "Tutoriel\_3\_: Créer un jeu de combinaisons (C#)"
                   items:
-                    - name: Vue d'ensemble
+                    - name: Vue d’ensemble
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: "Étape\_1\_: Créer un projet et ajouter une table à votre formulaire"
