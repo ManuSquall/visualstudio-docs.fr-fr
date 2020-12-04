@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440608"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595264"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Comment fonctionne Bridge to Kubernetes
 
@@ -72,7 +72,8 @@ Lorsque vous activez l’isolation, Bridge to Kubernetes effectue les opération
 Si Bridge to Kubernetes détecte que Azure Dev Spaces est activé sur votre cluster Kubernetes, vous êtes invité à désactiver Azure Dev Spaces avant de pouvoir utiliser Bridge to Kubernetes.
 
 Le gestionnaire de routage effectue les opérations suivantes au démarrage :
-* Duplique toutes les entrées trouvées dans l’espace de noms à l’aide de la *GENERATED_NAME* pour le sous-domaine.
+
+* Duplique toutes les entrées (y compris les entrées de l’équilibreur de charge) trouvées dans l’espace de noms à l’aide de la *GENERATED_NAME* pour le sous-domaine.
 * Crée un bloc d’envoi pour chaque service associé à des entrées en double avec le sous-domaine *GENERATED_NAME* .
 * Crée un complément d’envoi supplémentaire pour le service sur lequel vous travaillez en isolation. Cela permet d’acheminer les demandes avec le sous-domaine vers votre ordinateur de développement.
 * Configure les règles de routage pour chaque envoi de bloc afin de gérer le routage pour les services avec le sous-domaine.
@@ -137,14 +138,14 @@ Appliquez les autorisations à l’aide de la commande :
 kubectl -n <namespace> apply -f <yaml file name>
 ```
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 Bridge vers Kubernetes présente les limitations suivantes :
 
 * Pour pouvoir se connecter à un service, celui-ci doit être sauvegardé par un seul pod. Vous ne pouvez pas vous connecter à un service comportant plusieurs pod, tel qu’un service avec des réplicas.
 * Un pod ne peut avoir qu’un seul conteneur en cours d’exécution dans ce Pod pour que Bridge puisse se connecter à Kubernetes. Bridge vers Kubernetes ne peut pas se connecter aux services avec des gousses qui ont des conteneurs supplémentaires, tels que les conteneurs de side-car injectés par les mailles de services.
 * Actuellement, les gousses de pont à Kubernetes doivent être des conteneurs Linux. Les conteneurs Windows ne sont pas pris en charge.
-* L’isolation ne peut pas être utilisée avec HTTPs.
+* L’isolation ne peut pas être utilisée avec HTTPs lorsque vous utilisez Bridge pour Kubernetes avec Visual Studio. HTTPs est pris en charge uniquement en mode d’isolation lorsque vous utilisez Visual Studio Code.
 * Bridge to Kubernetes a besoin d’autorisations élevées pour s’exécuter sur votre ordinateur de développement afin de modifier votre fichier hosts.
 * Bridge to Kubernetes ne peut pas être utilisé sur des clusters avec Azure Dev Spaces activé.
 
