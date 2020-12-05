@@ -1,5 +1,7 @@
 ---
 title: Définir le processus actuel
+description: En savoir plus sur la commande Set Current process et sur la façon dont elle définit le processus spécifié comme processus actif dans le débogueur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3440c66d79fef3eac3744681870c9ce1ed0e97b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b6a5c2f010b60546fe1ece16f66bf437d2dc633
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593549"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616579"
 ---
 # <a name="set-current-process"></a>Définir le processus actuel
 Définit le processus spécifié comme processus actif dans le débogueur.
@@ -32,7 +34,7 @@ Debug.SetCurrentProcess index
 
 Obligatoire. Index du processus.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Pendant le débogage, vous pouvez attacher plusieurs processus à la fois, mais seul l’un d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez utiliser la commande `SetCurrentProcess` pour définir le processus actif.
 
 ## <a name="example"></a>Exemple

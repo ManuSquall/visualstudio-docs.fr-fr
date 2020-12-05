@@ -1,5 +1,7 @@
 ---
 title: Implémenter une classe abstraite
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour générer immédiatement le code requis pour implémenter une classe abstraite.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08e1c0ec2a79e14b1306eaa5330ee3e62dca5a98
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568904"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617446"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implémenter une classe abstraite dans Visual Studio
 

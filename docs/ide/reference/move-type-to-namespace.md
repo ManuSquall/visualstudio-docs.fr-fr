@@ -1,5 +1,7 @@
 ---
 title: Déplacer un type vers un espace de noms
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour déplacer un type vers un autre espace de noms ou dossier.
+ms.custom: SEO-VS-2020
 ms.date: 06/17/2019
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 ms.workload:
 - dotnet
 monikerRange: vs-2019
-ms.openlocfilehash: 58d2757fa8798b67c8e597f5f82bc65a279f4a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e13938bcb19306b897501a4aad11d6b4bd15ea
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375568"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616913"
 ---
 # <a name="move-type-to-namespace"></a>Déplacer un type vers un espace de noms
 

@@ -1,5 +1,7 @@
 ---
 title: Générer un champ privé et une propriété à partir d’un constructeur
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour générer un champ privé ou une propriété à partir d’un constructeur.
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e989efed8b58746312ed5f5a510efa049393f3db
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283721"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617459"
 ---
 # <a name="generate-private-field-and-property-from-constructor"></a>Générer un champ privé et une propriété à partir d’un constructeur
 

@@ -1,5 +1,7 @@
 ---
 title: Onglets et fenêtres, Environnement, boîte de dialogue Options
+description: Découvrez comment utiliser la page onglets et fenêtres dans la section environnement pour définir les options de comportement des fenêtres avec onglets dans le volet de l’éditeur et la façon dont les fenêtres outil se comportent.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30040a986ee271ac7512139738422ec6ca150cf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a40c87b2521b673e0fbec3f98737d7989f94ae5a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769987"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616393"
 ---
 # <a name="options-dialog-box-environment--tabs-and-windows"></a>Boîte de dialogue Options : \> onglets et fenêtres d’environnement
 

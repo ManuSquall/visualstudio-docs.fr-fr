@@ -1,5 +1,7 @@
 ---
 title: Action rapide Générer un constructeur
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour générer immédiatement le stub de méthode pour un nouveau déconstructeur.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531885"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617251"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Générer un constructeur dans Visual Studio
 
@@ -40,7 +42,7 @@ Dans les **cas suivants :** Vous voulez décomposer correctement votre type aut
       - Placez le curseur dans votre déclaration, puis sélectionnez Ctrl+. pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Sélectionnez ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
+      - Sélectionnez l' :::image type="icon" source="media/screwdriver.png"::: icône qui s’affiche dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
 
       ![Générer un déconstructeur (correctif de code)](media/deconstruct-codefix.png)
 

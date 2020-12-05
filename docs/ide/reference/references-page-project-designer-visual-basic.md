@@ -1,5 +1,7 @@
 ---
 title: Page Références, Concepteur de projets (Visual Basic)
+description: Découvrez comment utiliser la page références du concepteur de projet pour gérer les références de votre projet, les références Web et les espaces de noms importés.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565602"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616666"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 
@@ -52,11 +54,11 @@ Cette liste affiche toutes les références dans le projet, utilisées ou non.
 
 Cliquez sur ce bouton pour ajouter une référence ou une référence web à la liste **Références**.
 
-Choisissez **Référence ** pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
+Choisissez **Référence** pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
 
 Choisissez **Référence web** pour ajouter une référence web à votre projet à l’aide de la boîte de dialogue **Ajouter une référence web**.
 
- **Remove**
+ **Supprimer**
 
 Sélectionnez une ou plusieurs références dans la liste **Références**, puis cliquez sur ce bouton pour les supprimer.
 
@@ -68,7 +70,7 @@ Sélectionnez une référence web dans la liste **Références** et cliquez sur 
 
 Vous pouvez taper votre propre espace de noms dans cette zone et cliquer sur **Ajouter une importation utilisateur** pour l’ajouter à la liste d’espaces de noms.
 
-Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms dans *alias*l' = *espace de noms*alias de format. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms dans *alias* l' = *espace de noms* alias de format. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Ajouter une importation utilisateur**
 

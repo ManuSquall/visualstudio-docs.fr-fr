@@ -1,5 +1,7 @@
 ---
 title: Action rapide Générer un constructeur
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour générer immédiatement le code d’un nouveau constructeur sur une classe.
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80de8b5c8b5699f4ddbf5148e16afd2da42388f2
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86285409"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617550"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -49,9 +51,9 @@ Cette génération de code s’applique à :
       - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur l’icône ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
+      - Cliquez sur l' :::image type="icon" source="media/screwdriver.png"::: icône qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
 
-   ![Générer l’aperçu du constructeur](media/constructor1-preview-cs.png)
+   ![Capture d’écran de l’option de création de constructeur.](media/constructor1-preview-cs.png)
 
 1. Sélectionnez **Générer le constructeur** dans le menu déroulant.
 
@@ -66,7 +68,7 @@ Cette génération de code s’applique à :
 
    Le constructeur est créé avec les paramètres sélectionnés.
 
-   ![Résultat de l’action Générer le constructeur](media/constructor1-result-cs.png)
+   ![Capture d’écran montrant que le constructeur est créé avec les paramètres spécifiés.](media/constructor1-result-cs.png)
 
 ## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> Générer un constructeur avec des propriétés (C# uniquement)
 
@@ -76,7 +78,7 @@ Cette génération de code s’applique à :
 
 3. Sélectionnez **générer le constructeur dans `<QualifiedName>` (avec les propriétés)**.
 
-   ![Aperçu Générer le constructeur](media/generate-constructor-with-properties.png)
+   ![Capture d’écran de l’option générer le constructeur dans la clé (avec les propriétés).](media/generate-constructor-with-properties.png)
 
 ## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Générer le constructeur à partir des champs sélectionnés (C# uniquement)
 
@@ -90,15 +92,15 @@ Cette génération de code s’applique à :
       - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur l’icône ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
+      - Cliquez sur l' :::image type="icon" source="media/screwdriver.png"::: icône qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
 
-      ![Aperçu Générer le constructeur](media/constructor2-preview-cs.png)
+      ![Capture d’écran de l’option de chaîne de chaîne de la personne générer le constructeur.](media/constructor2-preview-cs.png)
 
 1. Sélectionnez **Générer le constructeur 'TypeName(...)'** dans le menu déroulant.
 
    Le constructeur est créé avec les paramètres sélectionnés.
 
-   ![Résultat de l’action Générer le constructeur](media/constructor2-result-cs.png)
+   ![Capture d’écran montrant que le constructeur est créé avec les paramètres sélectionnés.](media/constructor2-result-cs.png)
 
 ## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> Générer un constructeur à partir d’une nouvelle utilisation (C# et Visual Basic)
 
@@ -118,10 +120,10 @@ Cette génération de code s’applique à :
       - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Pointez sur le tilde rouge, puis cliquez sur l' :::image type="icon" source="media/error-bulb.png"::: icône qui s’affiche.
+      - Cliquez sur l' :::image type="icon" source="media/error-bulb.png"::: icône qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le tilde rouge.
 
-      ![Générer l’aperçu du constructeur](media/constructor-preview-cs.png)
+      ![Capture d’écran de l’option générer le constructeur en personne.](media/constructor-preview-cs.png)
 
 3. Sélectionnez **Générer le constructeur dans '*TypeName*'** dans le menu déroulant.
 
@@ -144,7 +146,7 @@ Cette génération de code s’applique à :
 
 2. Placez votre curseur sur la ligne ondulée rouge indiquant que vous avez utilisé un constructeur qui n’existe pas encore.
 
-    ![Mise en surbrillance de l’option Générer le constructeur](media/constructor4-highlight-cs.png)
+    ![Capture d’écran montrant la ligne où se trouve un tilde rouge.](media/constructor4-highlight-cs.png)
 
 3. Effectuez ensuite l'une des opérations suivantes :
 
@@ -152,16 +154,16 @@ Cette génération de code s’applique à :
       - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Pointez sur le tilde rouge, puis cliquez sur l' :::image type="icon" source="media/error-bulb.png"::: icône qui s’affiche.
+      - Cliquez sur l' :::image type="icon" source="media/error-bulb.png"::: icône qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le tilde rouge.
 
-      ![Générer l’aperçu du constructeur](media/constructor4-preview-cs.png)
+      ![Capture d’écran de l’option Ajouter un paramètre à la chaîne Person.](media/constructor4-preview-cs.png)
 
 4. Sélectionnez **Ajouter un paramètre à 'TypeName(...)'** dans le menu déroulant.
 
    Le paramètre est ajouté au constructeur, son type étant déduit de son utilisation.
 
-   ![Résultat de l’action Générer le constructeur](media/constructor4-result-cs.png)
+   ![Capture d’écran montrant que le paramètre est ajouté au constructeur, son type déduit de son utilisation.](media/constructor4-result-cs.png)
 
 Vous pouvez également ajouter un paramètre à une méthode existante. Pour plus d’informations, voir [Ajouter un paramètre à une méthode](add-parameter.md).
 
@@ -169,7 +171,7 @@ Vous pouvez également ajouter un paramètre à une méthode existante. Pour plu
 
 1. Trouvez un constructeur existant et ajoutez un paramètre :
 
-   ![Mise en surbrillance de l’option Générer le constructeur](media/constructor5-highlight-cs.png)
+   ![Capture d’écran montrant un constructeur existant.](media/constructor5-highlight-cs.png)
 
 1. Placez votre curseur dans le paramètre qui vient d’être ajouté.
 
@@ -179,15 +181,15 @@ Vous pouvez également ajouter un paramètre à une méthode existante. Pour plu
       - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur l’icône ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.
+      - Cliquez sur l' :::image type="icon" source="media/screwdriver.png"::: icône qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.
 
-   ![Générer l’aperçu du constructeur](media/constructor5-preview-cs.png)
+   ![Capture d’écran de l’option de création et d’initialisation de l’âge des propriétés.](media/constructor5-preview-cs.png)
 
-1. Sélectionnez **Créer et initialiser la propriété** ou **Créer et initialiser le champ ** dans le menu déroulant.
+1. Sélectionnez **Créer et initialiser la propriété** ou **Créer et initialiser le champ** dans le menu déroulant.
 
    Le champ ou la propriété est déclarée et automatiquement nommée pour correspondre à vos types. Une ligne de code est également ajoutée pour initialiser le champ ou la propriété dans le corps du constructeur.
 
-   ![Résultat de l’action Générer le constructeur](media/constructor5-result-cs.png)
+   ![Capture d’écran montrant que le champ ou la propriété est déclaré et nommé automatiquement pour correspondre à vos types.](media/constructor5-result-cs.png)
 
 ## <a name="see-also"></a>Voir aussi
 

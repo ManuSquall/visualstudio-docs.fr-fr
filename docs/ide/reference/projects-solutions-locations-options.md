@@ -1,5 +1,7 @@
 ---
 title: Projets et solutions, boîte de dialogue Emplacements
+description: Découvrez comment utiliser la page emplacements dans la section projets et solutions pour définir les emplacements par défaut des projets, des modèles de projet et des modèles d’élément.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 171635e9f08b0c427679d874dee3466d9eb5e3f6
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565719"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616822"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Boîte de dialogue Options : emplacements des projets et des solutions \>
 

@@ -1,5 +1,7 @@
 ---
 title: Lancement rapide, Environnement, boîte de dialogue Options
+description: Découvrez comment utiliser la page lancement rapide dans la section environnement pour rechercher et exécuter rapidement des actions pour les ressources de l’IDE, telles que les options, les modèles et les menus.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565667"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616744"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 
@@ -42,7 +44,7 @@ Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des
 |Documents|@doc<br /><br /> Par exemple : `@doc program.cs`|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|
 
 > [!NOTE]
-> Vous pouvez modifier les touches de raccourci dans **General**la  >  page**clavier** général de la boîte de dialogue **options** .
+> Vous pouvez modifier les touches de raccourci dans **General** la  >  page **clavier** général de la boîte de dialogue **options** .
 
 ## <a name="show-previous-results"></a>Afficher les résultats précédents
 

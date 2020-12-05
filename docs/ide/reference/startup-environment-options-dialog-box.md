@@ -1,5 +1,7 @@
 ---
 title: Démarrage, Environnement, boîte de dialogue Options
+description: Découvrez comment utiliser la page de démarrage dans la section environnement pour définir une autre action par défaut à l’ouverture de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27803983fe0b387f98934adfa6be3abbbe23611c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8e6cbac9da68a31c345805c1070c4d5b9fd168d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770593"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616302"
 ---
 # <a name="options-dialog-box-environment--startup"></a>Boîte de dialogue Options : démarrage de l’environnement \>
 

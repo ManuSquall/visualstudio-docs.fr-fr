@@ -1,5 +1,7 @@
 ---
 title: Démarrer, commande
+description: En savoir plus sur la commande Start et sur la façon dont elle commence le débogage du projet de démarrage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d9e1e36a2790fb63f9d39c0c83d67d889cc0a8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590278"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616419"
 ---
 # <a name="start-command"></a>Démarrer, commande
 Commence le débogage du projet de démarrage.
@@ -34,10 +36,10 @@ Debug.Start [address]
 
 facultatif. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 Cet exemple démarre le débogueur et ignore toute exception qui peut se produire.
 
 ```cmd

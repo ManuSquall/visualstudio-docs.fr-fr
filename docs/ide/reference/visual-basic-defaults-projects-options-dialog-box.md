@@ -1,5 +1,7 @@
 ---
 title: Valeurs par défaut VB, Projets, boîte de dialogue Options
+description: Découvrez comment utiliser la page Visual Basic valeurs par défaut dans la section projets et solutions pour spécifier les paramètres par défaut des options de Visual Basic projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f761161f2ad29be994b3a6260bafe827a41fabe0
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596382"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616354"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Valeurs par défaut VB, Projets, boîte de dialogue Options
 Spécifie les paramètres par défaut pour les options de projet Visual Basic. Quand un projet est créé, les instructions d’options spécifiées sont ajoutées à l’en-tête du projet dans l’éditeur de code. Les options s’appliquent à tous les projets Visual Basic.

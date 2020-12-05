@@ -1,5 +1,7 @@
 ---
 title: Remonter des membres
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour extraire les membres jusqu’au type de base.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 159608644cb641aa2c84e4d55e92156215069030
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969162"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616874"
 ---
 # <a name="pull-members-up"></a>Remonter des membres
 

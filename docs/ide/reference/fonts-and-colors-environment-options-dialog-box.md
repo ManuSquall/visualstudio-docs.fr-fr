@@ -1,5 +1,7 @@
 ---
 title: Polices et couleurs, Environnement, boîte de dialogue Options
+description: Découvrez comment utiliser la page polices et couleurs dans la section environnement pour établir un jeu de polices et de couleurs personnalisé pour différents éléments de l’interface utilisateur dans l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,16 +27,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595616"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617524"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
-La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils**  >  **options**, **Environment**puis en sélectionnant  >  **polices et couleurs de**l’environnement.
+La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils**  >  **options**, **Environment** puis en sélectionnant  >  **polices et couleurs de** l’environnement.
 
 Les modifications apportées à un modèle de couleurs ne sont pas prises en compte lors de la session au cours de laquelle vous avez effectué ces changements. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
 
@@ -220,7 +222,7 @@ Les éléments peuvent hériter de la couleur de premier plan d’autres éléme
 
 Couleur qui s’affiche pour l’élément la première fois que vous ouvrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
 
-**Personnalisé**
+**Personnalisée**
 
 Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l'élément sélectionné dans la liste Éléments affichés.
 
@@ -239,7 +241,7 @@ Les éléments peuvent hériter de la couleur d’arrière-plan d’autres élé
 
 Couleur qui s’affiche pour l’élément la première fois que vous ouvrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
 
-**Personnalisé**
+**Personnalisée**
 
 Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l'élément sélectionné dans la liste Éléments affichés.
 

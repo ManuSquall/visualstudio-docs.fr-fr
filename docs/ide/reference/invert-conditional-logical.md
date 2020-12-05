@@ -1,5 +1,7 @@
 ---
 title: Inversion des expressions conditionnelles et des opérations logiques
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour inverser une expression conditionnelle ou un opérateur AND/OR conditionnel.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 180e42d5399116df95289e4e5fd0aed1255bf3de
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531674"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617381"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Inverser des expressions conditionnelles et des opérateurs AND/OR conditionnels
 
@@ -36,9 +38,9 @@ Dans les **cas suivants :** Vous avez une expression conditionnelle ou un opér
 2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 3. Sélectionnez **Inverser conditionnel** ou **Remplacer « && » par « || »**.
 
-    ![Inverser un conditionnel](media/invert-conditional.png)
+    ![Capture d’écran de l’option inversée conditionnelle.](media/invert-conditional.png)
 
-    ![Inverser un conditionnel](media/invert-logical-operator.png)
+    ![Capture d’écran de la && de remplacement par | | option.](media/invert-logical-operator.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,7 @@
 ---
 title: Projets et solutions, boîte de dialogue Options
+description: Découvrez comment utiliser la page général de la section projets et solutions pour définir le comportement de Visual Studio lié aux projets et aux solutions.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567643"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616900"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Boîte de dialogue Options : projets et solutions \> général
 

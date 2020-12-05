@@ -1,5 +1,7 @@
 ---
 title: Rechercher et remplacer, Environnement, boîte de dialogue Options
+description: Découvrez comment utiliser la page Rechercher et remplacer dans la section environnement pour contrôler les boîtes de message et d’autres aspects d’une opération de recherche et de remplacement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569567"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617316"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Rechercher et remplacer, Environnement, boîte de dialogue Options
 

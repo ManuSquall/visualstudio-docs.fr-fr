@@ -1,5 +1,7 @@
 ---
 title: Changer les polices et les couleurs de l’éditeur
+description: Apprenez à modifier le type de police par défaut, à ajuster la taille de la police et à modifier les couleurs de premier plan et d’arrière-plan pour différents éléments d’affichage de texte dans l’éditeur de code.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ad32d814b67cae9a9a0a538d6c131aecba9c0b8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770424"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617121"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Comment : modifier les polices et les couleurs de l’éditeur dans Visual Studio
 

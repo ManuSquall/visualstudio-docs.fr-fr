@@ -1,5 +1,6 @@
 ---
 title: Complétion d’expression régulière dans le menu IntelliSense
+description: Découvrez comment utiliser le menu IntelliSense pour écrire une expression régulière à l’aide d’IntelliSense.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 750869abbad079f3c109113f8cd65b5e8f11c147
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093860"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616692"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>Complétion d’expression régulière dans le menu IntelliSense
 

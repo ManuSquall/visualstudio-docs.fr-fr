@@ -1,5 +1,7 @@
 ---
 title: Fenêtre Exécution
+description: Découvrez comment utiliser la fenêtre exécution pour déboguer et évaluer des expressions, exécuter des instructions et imprimer des valeurs de variables.
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 342a2a34528134ed1174058b6701c77c9217fc63
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568956"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617017"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 
 Utilisez la fenêtre **Exécution** pour déboguer et évaluer des expressions, exécuter des instructions et imprimer les valeurs de variables. La fenêtre **Exécution** évalue les expressions en générant et en utilisant le projet actuellement sélectionné.
 
-Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Déboguer** > **Fenêtres** > **Exécution ** ou appuyez sur **Ctrl**+**Alt**+**I**. Vous pouvez également entrer **Debug.Immediate** dans la fenêtre **Commande**.
+Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Déboguer** > **Fenêtres** > **Exécution** ou appuyez sur **Ctrl**+**Alt**+**I**. Vous pouvez également entrer **Debug.Immediate** dans la fenêtre **Commande**.
 
 La fenêtre **Exécution** prend en charge IntelliSense.
 
@@ -90,7 +92,7 @@ Lors de l’établissement du contexte pour l’évaluation des expressions au m
 
 Vous devez entrer le signe supérieur à (>) lors de l’émission de commandes Visual Studio dans la fenêtre **Exécution**. Utilisez les touches **Haut** et **Bas** pour faire défiler les commandes précédemment utilisées.
 
-|Tâche|Solution|Exemple|
+|Tâche|Solution| Exemple|
 |----------|--------------|-------------|
 |Évaluer une expression.|Faites précéder l’expression d’un point d’interrogation (?).|`? a+b`|
 |En mode Exécution, passer temporairement en mode Commande (pour exécuter une seule commande).|Entrez la commande en la faisant précéder du signe supérieur à (>).|`>alias`|

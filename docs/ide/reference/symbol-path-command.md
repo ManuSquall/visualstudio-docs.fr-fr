@@ -1,5 +1,7 @@
 ---
 title: Chemin d’accès aux symboles, commande
+description: En savoir plus sur la commande Symbol Path et la façon dont elle définit la liste des répertoires pour que le débogueur recherche des symboles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bd3268f3c40736f85a18b35e33c6cc78c96d6c88
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808689"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616445"
 ---
 # <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
 Définit la liste des répertoires où le débogueur recherche des symboles.
@@ -33,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Arguments
 `pathname`
 
-Optionnel. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.
+facultatif. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.
 
 ## <a name="remarks"></a>Remarques
 Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.

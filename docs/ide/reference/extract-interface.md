@@ -1,5 +1,7 @@
 ---
 title: Extraire une interface (refactorisation)
+description: Découvrez comment utiliser le menu actions rapides et refactorisations pour créer une interface à l’aide de membres existants à partir d’une classe, d’une structure ou d’une interface.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e9b684c81abf491b5836c96190c6a89bdc0643
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595668"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617394"
 ---
 # <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
 
@@ -60,8 +62,8 @@ Dans les **cas suivants :** Vous avez des membres dans une classe, un struct ou
 
    | Champ | Description |
    | - | - |
-   | **Nouveau nom d’interface** | Nom de l'interface à créer. Ce nom a par défaut la valeur I*ClassName*, où *ClassName* correspond au nom de la classe que vous avez sélectionné ci-dessus. |
-   | **Nouveau nom de fichier** | Nom du fichier généré qui contiendra l’interface. Comme pour le nom de l’interface, ce nom a par défaut la valeur I*ClassName*, où *ClassName* correspond au nom de la classe que vous avez sélectionné ci-dessus. Vous pouvez également sélectionner l’option **Ajouter au fichier actuel**. |
+   | **Nouveau nom d’interface** | Nom de l'interface à créer. Ce nom a par défaut la valeur I *ClassName*, où *ClassName* correspond au nom de la classe que vous avez sélectionné ci-dessus. |
+   | **Nouveau nom de fichier** | Nom du fichier généré qui contiendra l’interface. Comme pour le nom de l’interface, ce nom a par défaut la valeur I *ClassName*, où *ClassName* correspond au nom de la classe que vous avez sélectionné ci-dessus. Vous pouvez également sélectionner l’option **Ajouter au fichier actuel**. |
    | **Sélectionner les membres publics pour former l'interface** | Les éléments à extraire dans l’interface. Vous pouvez sélectionner autant d’éléments que vous le souhaitez. |
 
 4. Choisissez **OK**.
