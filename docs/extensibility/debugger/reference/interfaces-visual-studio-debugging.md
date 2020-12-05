@@ -1,5 +1,7 @@
 ---
 title: Interfaces (débogage Visual Studio) | Microsoft Docs
+description: Utilisez ces ressources pour en savoir plus sur les interfaces de base, les interfaces d’évaluation d’expression et les interfaces de fournisseur de symboles dans le débogage Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715083"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606558"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (débogage Visual Studio)
 Les méthodes sont répertoriées par ordre alphabétique sous chaque interface dans la table des matières et sur la page interface dans l’ordre vtable.

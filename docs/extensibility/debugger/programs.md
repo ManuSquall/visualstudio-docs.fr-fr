@@ -1,5 +1,7 @@
 ---
 title: Programmes | Microsoft Docs
+description: Cet article décrit la définition et le rôle d’un programme dans l’architecture du débogueur dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fd1db5add74d2d94467e1f369916feb5f30d4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738211"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606513"
 ---
 # <a name="programs"></a>Programmes
 Dans l’architecture du débogueur, un *programme*:

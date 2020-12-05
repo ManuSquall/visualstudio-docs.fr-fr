@@ -1,5 +1,7 @@
 ---
 title: Applications auxiliaires du kit de développement logiciel (SDK) pour le débogage | Microsoft Docs
+description: En savoir plus sur les fonctions et les déclarations qui sont des fonctions d’assistance globales pour l’implémentation de moteurs de débogage, d’évaluateur d’expression et de fournisseurs de symboles en C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713651"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606539"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance SDK pour le débogage
 Ces fonctions et déclarations sont des fonctions d’assistance globales pour l’implémentation de moteurs de débogage, d’évaluateur d’expression et de fournisseurs de symboles en C++.
@@ -414,7 +416,7 @@ HRESULT EnumMetricSections(
 |Espace réservé|Description|
 |-----------------|-----------------|
 |*[GUID du moteur de débogage]*|GUID d’un moteur de débogage qui prend en charge les exceptions.|
-|*[types d’exception]*|Titre général pour la sous-clé identifiant la classe des exceptions qui peuvent être gérées. Les noms typiques sont les exceptions **C++**, les **Exceptions Win32**, les **exceptions du Common Language Runtime**et les **contrôles natifs au moment**de l’exécution. Ces noms sont également utilisés pour identifier une classe particulière d’exception pour l’utilisateur.|
+|*[types d’exception]*|Titre général pour la sous-clé identifiant la classe des exceptions qui peuvent être gérées. Les noms typiques sont les exceptions **C++**, les **Exceptions Win32**, les **exceptions du Common Language Runtime** et les **contrôles de Run-Time natifs**. Ces noms sont également utilisés pour identifier une classe particulière d’exception pour l’utilisateur.|
 |*titre*|Nom d’une exception : par exemple, **_com_error** ou **un arrêt de contrôle**. Ces noms sont également utilisés pour identifier une exception particulière pour l’utilisateur.|
 
 ## <a name="requirements"></a>Configuration requise

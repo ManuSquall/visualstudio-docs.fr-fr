@@ -1,5 +1,7 @@
 ---
 title: Lancement d’un programme | Microsoft Docs
+description: En savoir plus sur la série d’événements qui se produisent lorsque vous déboguez un programme à l’aide de la touche F5 pour exécuter le débogueur à partir de l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738480"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606695"
 ---
 # <a name="launch-a-program"></a>Lancer un programme
 Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur **F5** pour exécuter le débogueur à partir de l’IDE. Cela commence une série d’événements qui aboutissent au final à la connexion de l’IDE à un moteur de débogage (DE), qui est à son tour connecté, ou attaché, au programme comme suit :
@@ -25,7 +27,7 @@ Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur **F5*
 
 2. Si un DE est spécifié, le DE appelle le système d’exploitation pour lancer le programme. Suite au lancement du programme, l’environnement d’exécution du programme se charge. Par exemple, si un programme est écrit en MSIL, le common language runtime est appelé pour exécuter le programme.
 
-    - ou -
+    -ou-
 
     Si un DE n’est pas spécifié, le port appelle le système d’exploitation pour lancer le programme, ce qui entraîne le chargement de l’environnement d’exécution du programme.
 
@@ -39,7 +41,7 @@ Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur **F5*
 
    Le programme nouvellement créé, ainsi que tous les autres programmes, associés ou non associés, lancés ou attachés à à partir du même IDE, composent une session de débogage.
 
-   Par programmation, quand l’utilisateur appuie sur **F5**pour la première fois, le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] package de débogage appelle le package de projet (qui est associé au type de programme en cours de lancement) via la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> méthode, qui à son tour remplit une <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> structure avec les paramètres de débogage de projet actifs de la solution. Cette structure est repassée au package de débogage via un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> méthode. Le package de débogage instancie ensuite le gestionnaire de débogage de session (SDM), qui lance le programme en cours de débogage et tous les moteurs de débogage associés.
+   Par programmation, quand l’utilisateur appuie sur **F5** pour la première fois, le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] package de débogage appelle le package de projet (qui est associé au type de programme en cours de lancement) via la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> méthode, qui à son tour remplit une <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> structure avec les paramètres de débogage de projet actifs de la solution. Cette structure est repassée au package de débogage via un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> méthode. Le package de débogage instancie ensuite le gestionnaire de débogage de session (SDM), qui lance le programme en cours de débogage et tous les moteurs de débogage associés.
 
    L’un des arguments passés au SDM est le GUID du DE à utiliser pour lancer le programme.
 
@@ -49,7 +51,7 @@ Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur **F5*
 
    Si `GUID_NULL` est passé, le port lance le programme. Une fois que le programme est en cours d’exécution, l’environnement d’exécution crée une `IDebugProgramNode2` interface pour décrire le programme et le passer à `IDebugPortNotify2::AddProgramNode` . Cela indique au port que le programme est en cours d’exécution. Ensuite, le SDM attache le moteur de débogage au programme en cours d’exécution.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Notification du port](../../extensibility/debugger/notifying-the-port.md) Explique ce qui se produit après le lancement d’un programme et la notification du port.
 
  [Attacher après un lancement](../../extensibility/debugger/attaching-after-a-launch.md) Documente lorsque la session de débogage est prête à attacher le DE au programme.

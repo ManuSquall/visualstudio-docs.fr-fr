@@ -1,5 +1,7 @@
 ---
 title: Ports | Microsoft Docs
+description: Cet article décrit la définition et le rôle d’un port dans l’architecture du débogueur dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b42e7fa97c12afa07923e99d8b084840ee7ccad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738310"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606556"
 ---
 # <a name="ports"></a>Ports
 Dans l’architecture du débogueur, un *port*:

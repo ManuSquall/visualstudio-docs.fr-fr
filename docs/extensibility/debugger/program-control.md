@@ -1,5 +1,7 @@
 ---
 title: Contrôle du programme | Microsoft Docs
+description: Découvrez les routines du débogage Visual Studio qui se produisent au niveau du programme, telles que l’exécution, l’exécution pas à pas, la poursuite et la suspension/reprise de threads.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738232"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606526"
 ---
 # <a name="program-control"></a>Contrôle du programme
 Dans le débogage Visual Studio, toutes les routines d’exécution pas à pas et de continuation suivantes se produisent au niveau du programme :

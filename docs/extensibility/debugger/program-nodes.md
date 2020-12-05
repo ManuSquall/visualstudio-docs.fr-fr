@@ -1,5 +1,7 @@
 ---
 title: Nœuds de programme | Microsoft Docs
+description: Cet article décrit la définition et le rôle d’un nœud de programme dans l’architecture du débogueur dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f3694eff6cd48cc01c0e244d3a068f3bb13fda
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738217"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606487"
 ---
 # <a name="program-nodes"></a>Nœuds de programme
 Dans l’architecture du débogueur, un *nœud de programme*:

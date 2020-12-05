@@ -1,5 +1,7 @@
 ---
 title: Fournisseurs de port | Microsoft Docs
+description: Cet article décrit la définition et le rôle d’un fournisseur de port dans l’architecture du débogueur dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6313a7afce9ed272177a26d8da1a9d1516c8022e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3226053a23a45c42a45de038e44829d4a150af6
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738298"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606578"
 ---
 # <a name="port-suppliers"></a>Fournisseurs de port
 Dans l’architecture du débogueur, un *fournisseur de port*:

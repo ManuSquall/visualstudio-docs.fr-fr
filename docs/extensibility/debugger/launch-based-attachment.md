@@ -1,5 +1,7 @@
 ---
 title: Pièce jointe basée sur le lancement | Microsoft Docs
+description: En savoir plus sur la pièce jointe basée sur le lancement d’un programme, qui est automatique et suit un chemin comme celui de la pièce jointe manuelle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4910a97350366500b56593ec0076fdf0990b6d8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e041c692a833b7d0a1891c078388a3f5b2d11e4
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738462"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606669"
 ---
 # <a name="launch-based-attachment"></a>Pièce jointe basée sur le lancement
 La pièce jointe basée sur le lancement d’un programme est automatique. Lorsque le processus hébergeant le programme est lancé par le SDM, la pièce jointe basée sur le lancement suit un chemin d’accès similaire à celui de la méthode manuelle des pièces jointes. Pour plus d’informations, consultez [attacher au programme](../../extensibility/debugger/attaching-to-the-program.md).
