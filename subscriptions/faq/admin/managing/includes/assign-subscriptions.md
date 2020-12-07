@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 09/30/2020
-ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
-ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
+ms.date: 12/03/2020
+ms.openlocfilehash: 5a12d59f90ee2a09002efcb99c78cfd563060006
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "91838278"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96584528"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Comment attribuer des abonnements Visual Studio ?
 
@@ -43,7 +43,7 @@ Pour attribuer des abonnements en bloc :
 
 ## <a name="what-is-the-github-enterprise-setup-process"></a>Qu’est-ce que le processus d’installation de GitHub Enterprise ? 
 
-GitHub Enterprise est configuré et géré séparément des abonnements Visual Studio. Suite à un achat Visual Studio avec GitHub Enterprise, un processus de configuration d’un compte GitHub Enterprise est lancé en parallèle (mais séparément) de l’établissement d’un contrat dans manage.visualstudio.com. La création de ce compte GitHub Enterprise peut prendre un certain temps.  
+GitHub Enterprise est configuré et géré séparément des abonnements Visual Studio. Suite à l’achat d’un abonnement Visual Studio avec GitHub Enterprise, un processus de configuration d’un compte GitHub Enterprise est lancé en parallèle (mais séparément) de l’établissement d’un contrat dans manage.visualstudio.com. La création de ce compte GitHub Enterprise peut prendre un certain temps.  
 
 Une fois que votre société a configuré un compte GitHub Enterprise, les abonnés à qui ont été attribués des abonnements Visual Studio avec GitHub Enterprise reçoivent un e-mail de GitHub les notifiant que leurs abonnements Visual Studio ont été liés. Une fois que les abonnés ont reçu cet e-mail, ils peuvent contacter leur administrateur d’organisation GitHub pour recevoir une invitation à l’organisation appropriée. 
 
