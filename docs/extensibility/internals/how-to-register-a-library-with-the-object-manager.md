@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : inscrire une bibliothèque à l’aide du gestionnaire d’objets | Microsoft Docs'
+description: Découvrez comment inscrire une bibliothèque à l’aide du gestionnaire d’objets de Visual Studio afin de pouvoir afficher les symboles dans les outils de navigation, tels que Affichage de classes et l’Explorateur d’objets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905226"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761380"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Procédure : inscrire une bibliothèque à l’aide du gestionnaire d’objets
 Les outils de navigation de symboles, tels que **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et rechercher les **résultats de symbole**, vous permettent d’afficher des symboles dans votre projet ou dans des composants externes. Les symboles incluent des espaces de noms, des classes, des interfaces, des méthodes et d’autres éléments de langage. Les bibliothèques effectuent le suivi de ces symboles et les exposent au [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets qui remplit les outils avec les données.

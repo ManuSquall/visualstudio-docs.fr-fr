@@ -1,5 +1,7 @@
 ---
-title: Commandes définies par l’IDE pour l’extension des systèmes de projet | Microsoft Docs
+title: IDE-Defined des commandes pour l’extension des systèmes de projet | Microsoft Docs
+description: En savoir plus sur les commandes et les groupes de commandes définis dans l’environnement de développement intégré (IDE) de Visual Studio utilisé pour l’extension des systèmes de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707738"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761164"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Commandes définies par l’IDE pour l’extension des systèmes de projet
 Lorsque vous souhaitez étendre des systèmes de projet, vous pouvez utiliser des commandes et des groupes de commandes fournis par l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.

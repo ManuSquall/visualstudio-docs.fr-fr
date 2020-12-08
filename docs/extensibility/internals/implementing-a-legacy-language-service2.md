@@ -1,5 +1,7 @@
 ---
 title: Implémentation d’un Service2 de langage hérité | Microsoft Docs
+description: Découvrez comment implémenter un service de langage hérité qui prend en charge les fonctionnalités du service de langage étendu, à l’aide de Managed package Framework (MPF). Partie 2 sur 2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df44b92cdf311689397a062b127d4c3e514a15e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238697"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761138"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Implémentation d’un service de langage hérité 2
 Pour implémenter un service de langage à l’aide de Managed package Framework (MPF), vous devez dériver une classe de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe et implémenter les méthodes et propriétés abstraites suivantes :
@@ -32,12 +34,12 @@ Pour implémenter un service de langage à l’aide de Managed package Framework
 
   Pour prendre en charge des fonctionnalités supplémentaires, votre service de langage peut avoir à dériver une classe de l’une des classes de service de langage MPF ; par exemple, pour prendre en charge des commandes de menu supplémentaires, vous devez dériver une classe de la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe et substituer plusieurs méthodes de gestion des commandes (consultez <xref:Microsoft.VisualStudio.Package.ViewFilter> pour plus d’informations). La <xref:Microsoft.VisualStudio.Package.LanguageService> classe fournit un certain nombre de méthodes qui sont appelées pour créer de nouvelles instances de différentes classes et vous substituez la méthode de création appropriée pour fournir une instance de votre classe. Par exemple, vous devez substituer la <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.LanguageService> classe pour retourner une instance de votre propre <xref:Microsoft.VisualStudio.Package.ViewFilter> classe. Pour plus d’informations, consultez la section « instanciation de classes personnalisées ».
 
-  Votre service de langage peut également fournir ses propres icônes, qui sont utilisées à de nombreux endroits. Par exemple, lorsqu’une liste de saisie semi-automatique IntelliSense est affichée, chaque élément de la liste peut être associé à une icône, en marquant l’élément comme une méthode, une classe, un espace de noms, une propriété ou tout ce qui est nécessaire pour votre langage. Ces icônes sont utilisées dans toutes les listes IntelliSense, la **barre de navigation**et dans la fenêtre de tâche **liste d’erreurs** . Pour plus d’informations, consultez la section « images du service de langage » ci-dessous.
+  Votre service de langage peut également fournir ses propres icônes, qui sont utilisées à de nombreux endroits. Par exemple, lorsqu’une liste de saisie semi-automatique IntelliSense est affichée, chaque élément de la liste peut être associé à une icône, en marquant l’élément comme une méthode, une classe, un espace de noms, une propriété ou tout ce qui est nécessaire pour votre langage. Ces icônes sont utilisées dans toutes les listes IntelliSense, la **barre de navigation** et dans la fenêtre de tâche **liste d’erreurs** . Pour plus d’informations, consultez la section « images du service de langage » ci-dessous.
 
 ## <a name="getlanguagepreferences-method"></a>Méthode GetLanguagePreferences
  La <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> méthode retourne toujours la même instance d’une <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Vous pouvez utiliser la classe de base <xref:Microsoft.VisualStudio.Package.LanguagePreferences> si vous n’avez pas besoin de préférences supplémentaires pour votre service de langage. Les classes du service de langage MPF supposent la présence d’au moins la classe de base <xref:Microsoft.VisualStudio.Package.LanguagePreferences> .
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  Cet exemple montre une implémentation classique de la <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> méthode. Cet exemple utilise la classe de base <xref:Microsoft.VisualStudio.Package.LanguagePreferences> .
 
 ```csharp
@@ -68,7 +70,7 @@ namespace TestLanguagePackage
 ## <a name="getscanner-method"></a>Méthode GetScanner
  Cette méthode retourne une instance d’un <xref:Microsoft.VisualStudio.Package.IScanner> objet qui implémente un analyseur orienté ligne ou un scanneur utilisé pour obtenir des jetons et leurs types et déclencheurs. Ce scanneur est utilisé dans la <xref:Microsoft.VisualStudio.Package.Colorizer> classe pour la colorisation même si le scanneur peut également être utilisé pour obtenir des types de jetons et des déclencheurs comme préambule destiné à à une opération d’analyse plus complexe. Vous devez fournir la classe qui implémente l' <xref:Microsoft.VisualStudio.Package.IScanner> interface et vous devez implémenter toutes les méthodes sur l' <xref:Microsoft.VisualStudio.Package.IScanner> interface.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  Cet exemple montre une implémentation classique de la <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> méthode. La `TestScanner` classe implémente l' <xref:Microsoft.VisualStudio.Package.IScanner> interface (non illustrée).
 
 ```csharp
@@ -119,7 +121,7 @@ namespace TestLanguagePackage
 ## <a name="parsesource-method"></a>Méthode ParseSource
  Analyse le fichier source en fonction de plusieurs raisons. Cette méthode reçoit un <xref:Microsoft.VisualStudio.Package.ParseRequest> objet qui décrit ce qui est attendu à partir d’une opération d’analyse particulière. La <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode appelle un analyseur plus complexe qui détermine la fonctionnalité et la portée des jetons. La <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode est utilisée pour la prise en charge des opérations IntelliSense et de la correspondance des accolades. Même si vous ne prenez pas en charge ces opérations avancées, vous devez toujours retourner un <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet valide et vous obliger à créer une classe qui implémente l' <xref:Microsoft.VisualStudio.Package.AuthoringScope> interface et à implémenter toutes les méthodes sur cette interface. Vous pouvez retourner des valeurs NULL à partir de toutes les méthodes, mais l' <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet lui-même ne doit pas être une valeur null.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  Cet exemple montre une implémentation minimale de la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode et de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe, suffisante pour permettre au service de langage de se compiler et de fonctionner sans réellement prendre en charge les fonctionnalités les plus avancées.
 
 ```csharp
@@ -169,7 +171,7 @@ namespace TestLanguagePackage
 ## <a name="name-property"></a>Propriété Name
  Cette propriété retourne le nom du service de langage. Il doit s’agir du même nom que celui indiqué lors de l’inscription du service de langage. Ce nom est utilisé à plusieurs endroits, le plus important étant la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe où le nom est utilisé pour accéder au registre. Le nom retourné par cette propriété ne doit pas être localisé, car il est utilisé dans le registre pour les noms d’entrée et de clé de registre.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  Cet exemple illustre une implémentation possible de la <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> propriété. Notez que le nom est codé en dur : le nom réel doit être obtenu à partir d’un fichier de ressources pour pouvoir être utilisé lors de l’inscription d’un service de langage (consultez [inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)).
 
 ```csharp

@@ -1,5 +1,7 @@
 ---
 title: Comment les VSPackages ajoutent des éléments d’interface utilisateur | Microsoft Docs
+description: Découvrez comment les VSPackages ajoutent des éléments d’interface utilisateur, tels que des menus, des barres d’outils et des fenêtres outil, à Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649597"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761086"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Comment les VSPackages ajoutent des éléments d’interface utilisateur
 Un VSPackage peut ajouter des éléments d’interface utilisateur, tels que des menus, des barres d’outils et des fenêtres outil, à Visual Studio au moyen du fichier *. vsct* .
@@ -185,7 +187,7 @@ Les règles suivantes régissent la façon dont un élément peut appeler un aut
 
 |Élément|Défini dans cette section de la table de commandes|Peut être contenu (en tant que parent ou en position dans la `CommandPlacements` section, ou les deux)|Peut contenir (désigné sous le terme de parent)|
 |-------------| - | - | - |
-|Grouper|[Groups, élément](../../extensibility/groups-element.md), IDE, autres VSPackages|Un menu, un groupe, l’élément lui-même|Menus, groupes et commandes|
+|Groupe|[Groups, élément](../../extensibility/groups-element.md), IDE, autres VSPackages|Un menu, un groupe, l’élément lui-même|Menus, groupes et commandes|
 |Menu|[Élément menus](../../extensibility/menus-element.md), IDE, autres VSPackages|groupes de 1 à *n*|0 à *n* groupes|
 |Barre d’outils|[Élément menus](../../extensibility/menus-element.md), IDE, autres VSPackages|L’élément lui-même|0 à *n* groupes|
 |Élément de menu|[Buttons, élément](../../extensibility/buttons-element.md), IDE, autres VSPackages|1 à *n* groupes, l’élément lui-même|-0 à *n* groupes|

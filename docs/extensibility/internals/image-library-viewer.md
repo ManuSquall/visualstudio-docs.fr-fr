@@ -1,5 +1,7 @@
 ---
 title: Visionneuse de bibliothèque d’images | Microsoft Docs
+description: En savoir plus sur l’outil visionneuse d’images Visual Studio qui charge et recherche des manifestes d’image, ce qui vous permet d’afficher et de manipuler des attributs d’image.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536342"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761269"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 L’outil visionneuse d’images Visual Studio peut charger et Rechercher des manifestes d’image, ce qui permet à l’utilisateur de les manipuler de la même façon que dans Visual Studio. L’utilisateur peut modifier l’arrière-plan, les tailles, les PPP, le contraste élevé et d’autres paramètres. L’outil affiche également les informations de chargement pour chaque manifeste d’image et affiche des informations sur la source de chaque image dans le manifeste de l’image. Cet outil est utile pour :
@@ -68,11 +70,11 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 </Symbols>
 ```
 
-|**Sous-élément**|**Definition**|
+|**Sous-élément**|**Définition**|
 |-|-|
 |Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel.|
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID.|
-|id|Le symbole représente un ID et doit être un entier non négatif.|
+|ID|Le symbole représente un ID et doit être un entier non négatif.|
 |String|Le symbole représente une valeur de chaîne arbitraire.|
 
  Les symboles respectent la casse et sont référencés à l’aide de la syntaxe $ (Symbol-Name) :
@@ -108,10 +110,10 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 </Image>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
-|id|Souhaitée La partie ID du moniker d’image|
+|ID|Souhaitée La partie ID du moniker d’image|
 |AllowColorInversion|[Facultatif, valeur par défaut true] Indique si les couleurs de l’image peuvent être inversées par programmation lorsqu’elles sont utilisées sur un arrière-plan sombre.|
 
  **Source**
@@ -124,16 +126,16 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
  </Source>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Uri|Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’autorité application:///<br /><br /> -Référence de ressource de composant absolue<br /><br /> -Chemin d’accès à un fichier contenant une ressource native|
-|Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> - *Clair*: la source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Dark*: la source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *HighContrast*: la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: la source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> -*HighContrastDark*: la source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut **Background** est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **Background** est *clair*, *Dark*, *HighContrastLight*ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si **Background** est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
+|Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> - *Clair*: la source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Dark*: la source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *HighContrast*: la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: la source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> -*HighContrastDark*: la source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut **Background** est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **Background** est *clair*, *Dark*, *HighContrastLight* ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si **Background** est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
 
  Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :
 
-|**Element**|**Attributs (tous obligatoires)**|**Definition**|
+|**Element**|**Attributs (tous obligatoires)**|**Définition**|
 |-|-|-|
-|\<Size>|Valeur|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|
+|\<Size>|Value|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|
 |\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images comprises entre MinSize et MaxSize (en unités de périphérique). L’image sera carrée.|
 |\<Dimensions>|Width, Height|La source sera utilisée pour les images de la largeur et de la hauteur données (en unités de périphérique).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source sera utilisée pour les images allant de la largeur/hauteur minimale à la largeur/hauteur maximale (en unités de périphérique).|
@@ -144,10 +146,10 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Type|Souhaitée Type de la ressource native (XAML ou PNG)|
-|id|Souhaitée La partie ID d’entier de la ressource native|
+|ID|Souhaitée La partie ID d’entier de la ressource native|
 
  **ImageList**
 
@@ -160,10 +162,10 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
  </ImageList>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
-|id|Souhaitée La partie ID du moniker d’image|
+|ID|Souhaitée La partie ID du moniker d’image|
 |Externe|[Facultatif, valeur par défaut false] Indique si le moniker d’image référence une image dans le manifeste actuel.|
 
  Le moniker de l’image contenue n’a pas besoin de référencer une image définie dans le manifeste actuel. Si l’image contenue est introuvable dans la bibliothèque d’images, une image d’espace réservé vide sera utilisée à la place.
@@ -179,7 +181,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 
  Par défaut, l’outil tente de trouver le répertoire d’installation de Visual Studio et d’ajouter ces répertoires à la liste des répertoires de recherche. Vous pouvez ajouter manuellement des répertoires que l’outil ne trouve pas.
 
- Une fois tous les manifestes chargés, l’outil peut être utilisé pour activer ou désactiver les couleurs d' **arrière-plan** , **PPP**, **contraste élevé**ou **grayscaling** pour les images afin qu’un utilisateur puisse inspecter visuellement les ressources d’image pour vérifier qu’elles sont rendues correctement pour différents paramètres.
+ Une fois tous les manifestes chargés, l’outil peut être utilisé pour activer ou désactiver les couleurs d' **arrière-plan** , **PPP**, **contraste élevé** ou **grayscaling** pour les images afin qu’un utilisateur puisse inspecter visuellement les ressources d’image pour vérifier qu’elles sont rendues correctement pour différents paramètres.
 
  ![Visionneuse de bibliothèque d’images - Arrière-plan](../../extensibility/internals/media/image-library-viewer-background.png "Visionneuse de bibliothèque d’images - Arrière-plan")
 

@@ -1,5 +1,7 @@
 ---
 title: Exposer les listes de symboles fournies au gestionnaire d’objets | Microsoft Docs
+description: Découvrez comment implémenter l’interface IVsSimpleObjectList2 pour exposer des listes de symboles au gestionnaire d’objets dans Visual Studio et mettre à jour les outils de navigation de symboles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708090"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761346"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Comment : exposer des listes de symboles fournies par la bibliothèque au gestionnaire d’objets
 Les outils d’exploration de symboles, les **affichage de classes**, l' **Explorateur d’objets**, les **Explorateur d’appels** et les résultats de **recherche de symbole**, transmettent les demandes de nouvelles données au [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets. Le gestionnaire d’objets recherche les bibliothèques appropriées et demande de nouvelles listes de symboles. Les bibliothèques répondent en fournissant les données demandées au [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets par le biais de l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets appelle les méthodes dans l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface pour obtenir les données et les utilise pour remplir ou mettre à jour les vues des outils de navigation de symboles.

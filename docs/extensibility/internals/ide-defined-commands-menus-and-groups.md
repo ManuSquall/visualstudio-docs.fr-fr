@@ -1,5 +1,7 @@
 ---
-title: Commandes, menus et groupes définis par l’IDE | Microsoft Docs
+title: Commandes, menus et groupes IDE-Defined | Microsoft Docs
+description: En savoir plus sur les menus, les commandes et les groupes de commandes, qui sont définis dans l’environnement de développement intégré (IDE) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707715"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761021"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Commandes, menus et groupes définis par l’IDE
 De nombreux menus, commandes et groupes de commandes sont déjà définis pour être utilisés par l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Ces commandes sont également disponibles pour votre utilisation lorsque vous étendez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>Recherche de commandes définies par l’environnement
+## <a name="finding-environment-defined-commands"></a>Recherche de Environment-Defined des commandes
  Les commandes d’environnement sont définies dans un ensemble de quatre fichiers. vsct :
 
 - SharedCmdDef. vsct

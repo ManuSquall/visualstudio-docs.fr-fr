@@ -1,5 +1,7 @@
 ---
-title: 'Comment : utiliser des éléments coloriables intégrés | Microsoft Docs'
+title: 'Comment : utiliser Built-In éléments coloriables | Microsoft Docs'
+description: Découvrez comment utiliser les éléments coloriables intégrés dans l’environnement de développement intégré (IDE) de Visual Studio pour votre service de langage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905221"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761008"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Comment : utiliser des éléments coloriables intégrés
 Avant d’utiliser les éléments coloriables intégrés, vous devez d’abord signaler à l’environnement de développement intégré (IDE) que vous ne fournissez pas vos propres éléments coloriables personnalisés, qui, dans ce cas, sont des <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objets. Pour ce faire, vous devez définir une entrée de Registre pour le service de langage.
 
 ## <a name="to-use-built-in-colorable-items"></a>Pour utiliser des éléments coloriables intégrés
 
-1. Sous **HKEY_LOCAL_MACHINE \visualstudio \\<X. Y> \languages\language services \\<Language name \> **, où \<X.Y> est une version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et \<Language Name> est le nom de votre langue, créez une valeur d’entrée de Registre DWORD appelée **RequestStockColors**.
+1. Sous **HKEY_LOCAL_MACHINE\VisualStudio\\<X. Y> \languages\language services \\<Language name \>**, où \<X.Y> est une version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et \<Language Name> est le nom de votre langue, créez une valeur d’entrée de Registre DWORD appelée **RequestStockColors**.
 
 2. Définissez la valeur de l’entrée de Registre **RequestStockColors** sur *1*.
 
