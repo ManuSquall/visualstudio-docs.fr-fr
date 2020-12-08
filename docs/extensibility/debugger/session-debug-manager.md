@@ -1,5 +1,7 @@
 ---
 title: Gestionnaire de débogage de session | Microsoft Docs
+description: En savoir plus sur le gestionnaire de débogage de session, qui gère plusieurs moteurs de débogage qui déboguent des programmes dans plusieurs processus sur un nombre quelconque d’ordinateurs.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712882"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845282"
 ---
 # <a name="session-debug-manager"></a>Gestionnaire de débogage de session
 Le gestionnaire de débogage de session (SDM) gère un nombre quelconque de moteurs de débogage (DE) qui déboguent un nombre quelconque de programmes dans plusieurs processus sur un nombre quelconque d’ordinateurs. En plus d’être un multiplexeur de moteur de débogage, le SDM fournit une vue unifiée de la session de débogage à l’IDE.

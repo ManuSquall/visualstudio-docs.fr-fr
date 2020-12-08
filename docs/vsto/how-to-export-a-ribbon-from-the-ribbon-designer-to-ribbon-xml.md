@@ -1,5 +1,7 @@
 ---
 title: 'Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML'
+description: Découvrez que pour personnaliser le ruban, vous pouvez exporter le ruban du concepteur vers le ruban XML et modifier directement le code XML.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298438"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844138"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML
   L’élément **Ruban (concepteur visuel)** ne prend pas en charge tous les types possibles de personnalisation du ruban. Pour personnaliser le ruban de manière avancée, vous pouvez exporter le ruban du concepteur vers le ruban XML et modifier directement le code XML.
@@ -44,11 +46,11 @@ ms.locfileid: "92298438"
 
 3. Dans la classe de code du ruban, localisez les commentaires qui commencent par `TODO:` .
 
-4. Copiez le bloc de code de ces commentaires dans la classe **ThisAddIn**, **ThisWorkbook**ou **ThisDocument** , selon le type de solution que vous développez.
+4. Copiez le bloc de code de ces commentaires dans la classe **ThisAddIn**, **ThisWorkbook** ou **ThisDocument** , selon le type de solution que vous développez.
 
      Ce code permet à l’application Microsoft Office de découvrir et de charger votre ruban personnalisé. Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).
 
-5. Dans la classe **ThisAddIn**, **ThisWorkbook**ou **ThisDocument** , supprimez les marques de commentaire du bloc de code.
+5. Dans la classe **ThisAddIn**, **ThisWorkbook** ou **ThisDocument** , supprimez les marques de commentaire du bloc de code.
 
      Une fois que vous avez décommenté le code, celui-ci doit ressembler à l’exemple suivant. Dans cet exemple, la classe Ribbon est appelée `MyRibbon` .
 

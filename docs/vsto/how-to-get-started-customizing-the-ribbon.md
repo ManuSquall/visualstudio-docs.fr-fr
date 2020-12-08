@@ -1,5 +1,7 @@
 ---
 title: 'Comment : prendre en main la personnalisation du ruban'
+description: Découvrez que pour personnaliser le ruban d’une application Microsoft Office, ajoutez un élément Ruban (concepteur visuel) ou ruban (XML) à un projet Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520066"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845945"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Comment : prendre en main la personnalisation du ruban
   Pour personnaliser le ruban d’une application Microsoft Office, ajoutez un élément **Ruban (concepteur visuel)** ou **Ruban (XML)** à un projet Office.

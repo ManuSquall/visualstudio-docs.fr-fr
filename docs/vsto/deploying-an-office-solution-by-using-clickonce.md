@@ -1,5 +1,7 @@
 ---
 title: Déployer une solution Office à l’aide de ClickOnce
+description: Découvrez comment vous pouvez déployer votre solution Office en moins d’étapes si vous utilisez ClickOnce. Si vous publiez des mises à jour, votre solution les détecte et les installe automatiquement.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809347"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845646"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Déployer une solution Office à l’aide de ClickOnce
   Vous pouvez déployer votre solution Office plus rapidement en utilisant ClickOnce. Si vous publiez des mises à jour, votre solution les détecte et les installe automatiquement. Toutefois, avec ClickOnce, vous devez installer votre solution séparément pour chaque utilisateur d'un ordinateur. Par conséquent, vous devez envisager d’utiliser Windows Installer (*. msi*) si plusieurs utilisateurs exécutent votre solution sur le même ordinateur.
@@ -64,7 +66,7 @@ ms.locfileid: "90809347"
 
    - Un chemin d’accès local (par exemple, *c:\NomDossier\NomDossier*).
 
-   - Un chemin d’accès UNC (Uniform Naming Convention) à un dossier sur votre réseau (par exemple, * \\ \ServerName\FolderName*).
+   - Un chemin d’accès UNC (Uniform Naming Convention) à un dossier sur votre réseau (par exemple, *\\ \ServerName\FolderName*).
 
    - Chemin d’accès relatif (par exemple *, \\ DossierPublication*, qui est le dossier dans lequel le projet est publié par défaut).
 
@@ -227,7 +229,7 @@ ms.locfileid: "90809347"
 
 3. Ouvrez le menu contextuel du projet **ExcelWorkbook** , puis choisissez **Ajouter une référence**.
 
-4. Dans la boîte de dialogue **Ajouter une référence** , choisissez l’onglet **projets** , puis sélectionnez **FileCopyPDA**et le bouton **OK** .
+4. Dans la boîte de dialogue **Ajouter une référence** , choisissez l’onglet **projets** , puis sélectionnez **FileCopyPDA** et le bouton **OK** .
 
 5. Dans **Explorateur de solutions**, choisissez le projet **ExcelWorkbook** .
 
@@ -342,14 +344,14 @@ ms.locfileid: "90809347"
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- Si l’outil ne se trouve pas dans cet emplacement, vous pouvez utiliser la clé de Registre **HKEY_LOCAL_MACHINE \Software\microsoft\vsto Runtime Setup\v4\InstallerPath** ou **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vsto Runtime Setup\v4\InstallerPath** pour trouver le chemin d’accès à cet outil.
+ Si l’outil ne se trouve pas dans cet emplacement, vous pouvez utiliser la clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** ou **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** pour rechercher le chemin d’accès à cet outil.
 
  Vous pouvez utiliser les paramètres suivants avec *VSTOinstaller.exe*.
 
 | Paramètre | Définition |
 |------------------| - |
-| /Install ou /I | Installe la solution. Vous devez utiliser cette option avec le chemin d'accès d'un manifeste de déploiement. Vous pouvez spécifier un chemin d’accès sur l’ordinateur local, un partage de fichiers UNC (Universal Naming Convention). Vous pouvez spécifier un chemin d’accès local (*c:\nomdossier\dossierpublication*), un chemin d’accès relatif (* \\ publication*) ou un emplacement complet (* \\ \ServerName\FolderName* ou http://<em>nomserveur/nomdossier</em>). |
-| /Uninstall ou /U | Désinstalle la solution. Vous devez utiliser cette option avec le chemin d'accès d'un manifeste de déploiement. Vous pouvez spécifier qu’un chemin d’accès peut se trouver sur l’ordinateur local, un partage de fichiers UNC. Vous pouvez spécifier un chemin d’accès local (*c:\nomdossier\dossierpublication*), un chemin d’accès relatif (* \\ publication*) ou un emplacement complet (* \\ \ServerName\FolderName* ou http://<em>nomserveur/nomdossier</em>). |
+| /Install ou /I | Installe la solution. Vous devez utiliser cette option avec le chemin d'accès d'un manifeste de déploiement. Vous pouvez spécifier un chemin d’accès sur l’ordinateur local, un partage de fichiers UNC (Universal Naming Convention). Vous pouvez spécifier un chemin d’accès local (*c:\nomdossier\dossierpublication*), un chemin d’accès relatif (*\\ publication*) ou un emplacement complet (*\\ \ServerName\FolderName* ou http://<em>nomserveur/nomdossier</em>). |
+| /Uninstall ou /U | Désinstalle la solution. Vous devez utiliser cette option avec le chemin d'accès d'un manifeste de déploiement. Vous pouvez spécifier qu’un chemin d’accès peut se trouver sur l’ordinateur local, un partage de fichiers UNC. Vous pouvez spécifier un chemin d’accès local (*c:\nomdossier\dossierpublication*), un chemin d’accès relatif (*\\ publication*) ou un emplacement complet (*\\ \ServerName\FolderName* ou http://<em>nomserveur/nomdossier</em>). |
 | /Silent ou /S | Installez ou désinstallez sans inviter l'utilisateur à entrer de texte ni afficher de message. Si une invite d’approbation est requise, la personnalisation n’est pas installée ou mise à jour. |
 | /Help ou /? | Affiche les informations d'aide. |
 
@@ -424,7 +426,7 @@ ms.locfileid: "90809347"
 
      La zone **valeur** contient l’identificateur du manifeste de déploiement.
 
-4. Avant l’identificateur, entrez le chemin d’accès complet du document, suivi d’une barre, dans l’identificateur de *chemin d’accès*de format | *Identifier* (par exemple, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Avant l’identificateur, entrez le chemin d’accès complet du document, suivi d’une barre, dans l’identificateur de *chemin d’accès* de format | *Identifier* (par exemple, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Pour plus d’informations sur la façon de mettre en forme cet identificateur, consultez [vue d’ensemble des propriétés de document personnalisé](../vsto/custom-document-properties-overview.md).
 

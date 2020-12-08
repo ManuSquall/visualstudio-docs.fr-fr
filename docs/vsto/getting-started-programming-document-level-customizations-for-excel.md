@@ -1,5 +1,7 @@
 ---
 title: 'Excel : prise en main de la programmation des personnalisations au niveau du document'
+description: Découvrez ce que vous devez savoir pour commencer à créer des personnalisations au niveau du document pour Microsoft Office Excel à l’aide de Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585678"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846036"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Prise en main de la programmation des personnalisations au niveau du document pour Excel
   Si vous venez de commencer à créer des personnalisations au niveau du document pour Microsoft Office Excel à l’aide de Visual Studio, voici ce que vous devez savoir.

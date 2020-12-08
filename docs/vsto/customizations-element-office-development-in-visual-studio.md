@@ -1,7 +1,8 @@
 ---
 title: '&lt;customizs &gt; , élément (développement Office dans Visual Studio)'
+description: Découvrez comment l’élément customizs de l’espace de noms vstov4 contient toutes les informations sur l’installation et le chargement de chaque solution Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64790010"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844034"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;customizs &gt; , élément (développement Office dans Visual Studio)
   L’élément `customizations` de l’espace de noms `vstov4` contient toutes les informations sur l’installation et le chargement de chaque solution Office.

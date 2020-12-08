@@ -1,5 +1,7 @@
 ---
 title: 'Comment : accéder aux contacts Outlook par programmation'
+description: Découvrez comment vous pouvez accéder aux contacts Outlook par programmation. Cet exemple recherche tous les contacts dont le nom contient une chaîne de recherche spécifiée.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520092"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844685"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Comment : accéder aux contacts Outlook par programmation
   Cet exemple recherche tous les contacts dont le nom contient une chaîne de recherche spécifiée.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  [!code-csharp[Trin_OL_AccessContacts#1](../vsto/codesnippet/CSharp/Trin_OL_AccessContacts.trin_ol_accesscontacts/thisaddin.cs#1)]
  [!code-csharp[Trin_OL_AccessContacts#1](../vsto/codesnippet/CSharp/Trin_OL_AccessContacts.trin_ol_accesscontacts/thisaddin.cs#1)]
  [!code-vb[Trin_OL_AccessContacts#1](../vsto/codesnippet/VisualBasic/Trin_OL_AccessContacts/thisaddin.vb#1)]

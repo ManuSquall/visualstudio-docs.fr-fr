@@ -1,5 +1,7 @@
 ---
 title: Prise en main de la programmation de compléments VSTO
+description: Découvrez comment vous pouvez utiliser les compléments VSTO pour automatiser des applications Microsoft Office, étendre les fonctionnalités de l’application et personnaliser l’interface utilisateur de l’application.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253587"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845113"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Prise en main de la programmation de compléments VSTO
   Vous pouvez utiliser des compléments VSTO pour automatiser des applications Microsoft Office, étendre les fonctionnalités de l’application et personnaliser son interface utilisateur. Pour plus d’informations sur la façon dont les compléments VSTO sont comparés à d’autres types de solutions Office que vous pouvez créer à l’aide de Visual Studio, consultez [vue d’ensemble du développement des solutions office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +48,7 @@ ms.locfileid: "71253587"
 
 - [Vue d’ensemble du modèle objet Outlook](../vsto/outlook-object-model-overview.md)
 
-- [solutions InfoPath](../vsto/infopath-solutions.md)
+- [Solutions InfoPath](../vsto/infopath-solutions.md)
 
 - [Solutions PowerPoint](../vsto/powerpoint-solutions.md)
 
@@ -74,7 +76,7 @@ ms.locfileid: "71253587"
 
 - [Procédure pas à pas : créer votre premier complément VSTO pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [Procédure pas à pas : créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Procédure pas à pas : créer votre première Add-In VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [Procédure pas à pas : créer votre premier complément VSTO pour PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
@@ -90,5 +92,5 @@ ms.locfileid: "71253587"
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)

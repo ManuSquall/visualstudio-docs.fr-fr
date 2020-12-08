@@ -1,5 +1,7 @@
 ---
 title: Méthode SetNotificationForWaitCompletion | Microsoft Docs
+description: Découvrez comment le débogueur utilise un bit d’État pour faciliter le pas à pas sortant d’un corps de méthode Async pour les tâches de style promesse.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80904e95c1561dd20ed2a6cc9ad561e6c18ee93a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712874"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845217"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Méthode SetNotificationForWaitCompletion
 Définit ou efface le bit d’État TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
@@ -37,10 +39,10 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 
 ## <a name="exceptions"></a>Exceptions
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le débogueur définit ce bit pour faciliter le pas à pas sortant d’un corps de méthode Async. Si `enabled` est `true` , cette méthode doit être appelée uniquement sur une tâche qui n’est pas encore terminée. Lorsque `enabled` est `false` , cette méthode peut être appelée sur les tâches terminées. Dans les deux cas, il ne doit être utilisé que pour les tâches de type promesse.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 ## <a name="see-also"></a>Voir aussi
-- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+- [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)

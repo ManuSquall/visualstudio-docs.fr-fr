@@ -1,5 +1,7 @@
 ---
 title: 'Comment : remplir des documents avec des données de services'
+description: Découvrez comment vous pouvez utiliser les données des services de votre solution, et comment vous pouvez utiliser des contrôles de Windows Forms pour afficher les données dans un document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4d8fb377896762672574c6ef5ff15b4e12b9e59
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547145"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845828"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Comment : remplir des documents avec des données de services
 

@@ -1,5 +1,7 @@
 ---
 title: Lier des données à des contrôles dans les solutions Office
+description: Découvrez comment vous pouvez lier Windows Forms contrôles et les contrôles hôtes d’un document Word Microsoft Office ou d’une feuille de calcul Excel à une source de données.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986172"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844424"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Lier des données à des contrôles dans les solutions Office
   Vous pouvez lier des contrôles Windows Forms et des *contrôles hôtes* dans un document Microsoft Office Word ou une feuille de calcul Microsoft Office Excel à une source de données pour que les contrôles affichent automatiquement les données. Vous pouvez lier des données à des contrôles dans des projets de niveau application et au niveau du document.
@@ -102,6 +104,6 @@ ms.locfileid: "72986172"
 - [Comment : créer un contrôle à liaison simple dans un Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
-- [Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
+- [Mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Données de cache](../vsto/caching-data.md)
 - [Données dans les solutions Office](../vsto/data-in-office-solutions.md)

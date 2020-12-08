@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ouvrir des solutions Office sans exécuter de code'
+description: Découvrez comment vous pouvez ouvrir un document ou un classeur qui contient des extensions de code managé sans exécuter le code assembleur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543479"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844918"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Comment : ouvrir des solutions Office sans exécuter de code
   Une solution Microsoft Office créée avec des extensions de code managé s’exécute même si le paramètre de sécurité de l’application Office de l’utilisateur final est défini sur élevé. Cela est dû au fait que la sécurité du code de l’assembly .NET est gérée par l’infrastructure Microsoft .NET, et non par Microsoft Office.

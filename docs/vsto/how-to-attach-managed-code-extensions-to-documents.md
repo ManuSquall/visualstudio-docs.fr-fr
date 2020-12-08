@@ -1,5 +1,7 @@
 ---
 title: 'Comment : attacher des extensions de code managé à des documents'
+description: Découvrez comment attacher un assembly de personnalisation à un document Word Microsoft Office existant ou Microsoft Office classeur Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44b153ac7d55704ba649a7dc09860518a5e76b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547522"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844386"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Comment : attacher des extensions de code managé à des documents
   Vous pouvez attacher un assembly de personnalisation à un document Word Microsoft Office existant ou à Microsoft Office classeur Excel. Le document ou le classeur peut être dans n’importe quel format de fichier pris en charge par le Microsoft Office projets et les outils de développement dans Visual Studio. Pour plus d’informations, consultez [architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md).

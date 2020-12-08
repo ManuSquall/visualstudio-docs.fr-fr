@@ -1,5 +1,7 @@
 ---
 title: 'Comment : mettre en cache des données dans un document protégé par un mot de passe'
+description: En outre, si vous ajoutez des données au cache de données dans un document ou un classeur protégé par un mot de passe, vous pouvez enregistrer les modifications apportées aux données mises en cache en remplaçant deux méthodes dans votre projet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547236"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845997"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Comment : mettre en cache des données dans un document protégé par un mot de passe
   Si vous ajoutez des données au cache de données dans un document ou un classeur protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer les modifications apportées aux données mises en cache en remplaçant deux méthodes dans votre projet.
@@ -40,7 +42,7 @@ ms.locfileid: "85547236"
 
      Une fois le document enregistré, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle cette méthode pour vous permettre de réappliquer la protection au document.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  L’exemple de code suivant montre comment mettre en cache des données dans un document Word protégé par un mot de passe. Avant que le code ne supprime la protection dans la <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> méthode, il enregistre la <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> valeur actuelle, afin que le même type de protection puisse être réappliqué dans la <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> méthode.
 
  [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
@@ -64,7 +66,7 @@ ms.locfileid: "85547236"
 
      Une fois le classeur enregistré, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle cette méthode pour vous permettre de réappliquer la protection au classeur.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  L’exemple de code suivant montre comment mettre en cache des données dans un classeur Excel protégé par un mot de passe. Avant que le code ne supprime la protection dans la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> méthode, il enregistre les <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> valeurs actuelles et <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> , afin que le même type de protection puisse être réappliqué dans la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> méthode.
 
  [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]

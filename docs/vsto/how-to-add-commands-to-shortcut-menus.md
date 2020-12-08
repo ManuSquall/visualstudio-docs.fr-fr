@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter des commandes à des menus contextuels'
+description: Découvrez comment vous pouvez ajouter des commandes à un menu contextuel dans une application Office à l’aide d’un complément VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546196"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845490"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Comment : ajouter des commandes à des menus contextuels
   Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office à l’aide d’un complément VSTO.
@@ -31,7 +33,7 @@ ms.locfileid: "85546196"
 
 2. Dans l’**Explouateur de solutions**, sélectionnez **ThisAddin.cs** ou **ThisAddin.vb**.
 
-3. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+3. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
      Le fichier de classe **ThisAddin** s’ouvre dans l’éditeur de code.
 
@@ -42,7 +44,7 @@ ms.locfileid: "85546196"
 
 5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban est nommé *Ribbon1.xml*.
 
-6. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+6. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
      Le fichier XML de ruban s’ouvre dans l’éditeur de code.
 

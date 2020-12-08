@@ -1,5 +1,7 @@
 ---
 title: Pas à pas détaillé en mode arrêt | Microsoft Docs
+description: En savoir plus sur le processus qui se produit lorsque le débogueur est en mode arrêt. Le débogueur doit ensuite effectuer un pas à pas détaillé dans le code.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80273bf470a3ed0c342e781085de6e991508451c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712855"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845191"
 ---
 # <a name="stepping-in-break-mode"></a>Exécution pas à pas en mode arrêt
 La section suivante décrit le processus qui se produit lorsque le débogueur est en mode arrêt et doit exécuter le code pas à pas :

@@ -2,7 +2,7 @@
 title: 'Documentation Visual Studio : historique des nouveautés '
 titleSuffix: ''
 description: Historique des nouveautés de la documentation Visual Studio
-ms.date: 10/04/2020
+ms.date: 12/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,106 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ef6f6e71dc7c4c0625877444d0091c73e81455ac
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414501"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844008"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
-Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents antérieurs au 2020 octobre (à partir du 2020 du 1er juillet). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents avant le 2020 novembre (à compter du 1er juillet 2020). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+
+## <a name="october-2020"></a>Octobre 2020
+### <a name="code-quality"></a>Qualité du code
+
+**Articles mis à jour**
+- [Analyseurs de code](../code-quality/index.yml) -refactorisation de l’autorité de certification pour .net 5
+
+### <a name="containers"></a>Containers
+
+**Articles mis à jour**
+
+- [Démarrage rapide : utiliser l’amarrage avec une application à page unique REACT dans Visual Studio](../containers/container-tools-react.md)
+  - Outils de conteneur : supprimer les références à l’ancien référentiel d’images
+  - Didacticiel de mise à jour des conteneurs REACT pour .NET 3,1 et VS 16,7
+- [Fonctionnement de Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md) -Bridge to Kubernetes : Add limitations
+- [Déboguer des applications dans une](../containers/edit-and-refresh.md) boîte à outils conteneur d’ancrage local
+
+### <a name="debugger"></a>Débogueur
+
+**Nouveaux Articles**
+
+- [Prise en charge de DirectX 12 dans Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) -Vsdg DX12
+
+**Articles mis à jour**
+
+- [Déboguer des applications ASP.net ou ASP.net core dans Visual Studio](../debugger/how-to-enable-debugging-for-aspnet-applications.md) -correctifs de contenu du débogueur pour les problèmes GitHub
+- [Utiliser des points d’arrêt dans le débogueur Visual Studio](../debugger/using-breakpoints.md) -correctifs de contenu du débogueur pour les problèmes GitHub
+- [Déboguer les services Azure dans Visual Studio](../debugger/debug-azure-apps.md) -mises à jour SEO et Link pour le débogueur de capture instantanée
+- [Déboguer des applications Azure live ASP.net à l’aide de l’débogueur de capture instantanée](../debugger/debug-live-azure-applications.md) -SEO et des mises à jour de liens pour le débogueur de capture instantanée
+- [Débogage distant](../debugger/remote-debugging.md) -mises à jour SEO et Link pour le débogueur de capture instantanée
+- [Vue d’ensemble de Visual Studio Graphics Diagnostics](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) -Vsdg DX12
+- [Graphics Diagnostics Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics.md) -Vsdg DX12
+
+### <a name="get-started"></a>Bien démarrer
+
+**Articles mis à jour**
+
+- [Didacticiel : étendre une application console C# simple](../get-started/csharp/tutorial-console-part-2.md) -ajouts du débogage pour le didacticiel c# étendu
+
+### <a name="ide"></a>IDE
+
+**Nouveaux Articles**
+
+- [Utiliser la recherche Visual Studio](./visual-studio-search.md) -document de recherche vs
+
+### <a name="install"></a>Installer
+
+**Articles mis à jour**
+
+- [Numéros de builds et dates de publication de Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)
+  - Ajouter des données 16.7.7 et 16,8 Preview 6
+  - Ajouter 16,8 Preview 5 info
+
+### <a name="msbuild"></a>MSBuild
+
+**Articles mis à jour**
+
+- [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md) -MSBuild procédure pas à pas : ajouter des étapes d’installation autonomes
+
+### <a name="profiling"></a>Profilage
+
+**Articles mis à jour**
+
+- [Analyser l’utilisation de la mémoire](../profiling/analyze-memory-usage.md)
+  - Mises à jour de l’utilisation de la mémoire pour le profilage-liens et clarifications
+  - Mises à jour de l’outil utilisation de la mémoire
+- [Analyser l’utilisation de la mémoire sans débogage dans le profileur de performances](../profiling/memory-usage-without-debugging2.md)
+  - Mises à jour de l’utilisation de la mémoire pour le profilage-liens et clarifications
+  - Mises à jour de l’outil utilisation de la mémoire
+- [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
+  - Mises à jour de l’utilisation de la mémoire pour le profilage-liens et clarifications
+  - Mises à jour de l’outil utilisation de la mémoire
+- [Exécuter des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Mises à jour de l’utilisation de la mémoire pour le profilage-liens et clarifications
+  - Mises à jour de l’outil utilisation de la mémoire
+- [Analyser l’utilisation de l’UC sans débogage dans le profileur de performances](../profiling/cpu-usage.md) -mises à jour de l’outil utilisation de la mémoire
+
+### <a name="windows"></a>Windows
+
+**Articles mis à jour**
+
+- [Documentation de Visual Studio | Microsoft Docs](../windows/index.yml) -mises à jour du concentrateur Windows
+
+### <a name="xaml-tools"></a>Outils XAML
+
+**Nouveaux Articles**
+
+- [Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio](../xaml-tools/xaml-designtime-data.md)
+  - Ajout de la section d’extensibilité aux documents au moment du design XAML
+  - Nouvel article XAML au moment du design
 
 ## <a name="september-2020"></a>Septembre 2020
 ### <a name="code-quality"></a>Qualité du code
@@ -39,7 +129,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Vue d’ensemble de l’analyse du code source](../code-quality/roslyn-analyzers-overview.md) -mises à jour de l’analyse du code pour refactorisation .net
 - [Configurer l’analyse](../code-quality/use-roslyn-analyzers.md) de la qualité du code-mises à jour de l’analyse du code pour le refactorisation .net
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Nouveaux articles**
 
@@ -132,7 +222,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -plus de règles de DataSet/DataTable
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -modification de la structure et des titres pour la documentation de l’analyse du code
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -156,7 +246,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - Sous- [types de projet](../extensibility/internals/project-subtypes.md) -mettre en retrait les éléments de liste
 - [Référence de valeur de couleur pour Visual Studio](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 corriger les en-têtes de colonnes manquantes
 
-### <a name="get-started"></a>Prendre en main
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -207,7 +297,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [CA2355 : jeu de données ou DataTable non sécurisés dans le graphique d’objets désérialisés](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) -documents de désérialisation de DataSet/DataTable initiaux
 - [CA2356 : type de données ou DataSet non sécurisé dans le graphique d’objets désérialisés Web](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) -données de désérialisation du DataSet/DataTable initial (docs)
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Nouveaux articles**
 
@@ -224,7 +314,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Journal des modifications (outils Visual Studio pour Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) -Bosselage VSTU journal des modifications sur 4.7.1.0
 - [Journal des modifications (outils Visual Studio pour Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) -Bosselage VSTUM journal des modifications sur 2.7.1.0
 
-### <a name="get-started"></a>Prendre en main
+### <a name="get-started"></a>Bien démarrer
 
 **Nouveaux Articles**
 

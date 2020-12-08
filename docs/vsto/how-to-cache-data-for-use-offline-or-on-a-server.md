@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : mettre en cache des données pour une utilisation hors connexion ou sur un serveur'
+description: Marquez un élément de données à mettre en cache dans le document, afin qu’il soit disponible hors connexion. Cela permet aux données du document d’être manipulées par un autre code.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546183"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844320"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procédure : mettre en cache des données pour une utilisation hors connexion ou sur un serveur
   Vous pouvez marquer un élément de données à mettre en cache dans le document, afin qu’il soit disponible hors connexion. Cela permet également aux données du document d’être manipulées par un autre code lorsque le document est stocké sur un serveur.

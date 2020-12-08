@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter des contrôles Chart à des feuilles de calcul'
+description: Découvrez comment ajouter des contrôles Chart à une feuille de calcul Microsoft Office Excel au moment du design et au moment de l’exécution dans des personnalisations au niveau du document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546235"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845464"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Comment : ajouter des contrôles Chart à des feuilles de calcul
   Vous pouvez ajouter des <xref:Microsoft.Office.Tools.Excel.Chart> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et au moment de l’exécution dans des personnalisations au niveau du document. Vous pouvez également ajouter <xref:Microsoft.Office.Tools.Excel.Chart> des contrôles au moment de l’exécution dans des compléments VSTO.

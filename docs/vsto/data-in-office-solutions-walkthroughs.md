@@ -1,5 +1,7 @@
 ---
 title: Procédures pas à pas relatives aux données dans les solutions Office
+description: Apprenez à utiliser les données dans les personnalisations au niveau du document et les compléments VSTO pour Microsoft Word et Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956028"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845581"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Procédures pas à pas relatives aux données dans les solutions Office
   Les procédures suivantes montrent comment utiliser des données dans les personnalisations au niveau du document et les compléments VSTO pour Microsoft Office Word et Microsoft Office Excel.

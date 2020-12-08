@@ -1,5 +1,7 @@
 ---
 title: Interfaces du fournisseur de symboles | Microsoft Docs
+description: Cet article contient des liens vers les descriptions des interfaces de gestion des symboles pour le kit de développement logiciel (SDK) Visual Studio, qui évaluent les variables dans une pile des appels en mode arrêt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715848"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845789"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces des fournisseurs de symboles
 Voici les interfaces de gestion de symboles pour le [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
 
-## <a name="discussion"></a>Discussion
+## <a name="discussion"></a>Discussions
  Ces interfaces sont utilisées pour évaluer des variables dans une pile des appels en mode arrêt. Elles sont implémentées uniquement pour les common language runtime les fournisseurs de symboles (SP).
 
 |Interface|Implémenté par|Description|

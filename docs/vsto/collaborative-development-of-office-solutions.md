@@ -1,5 +1,7 @@
 ---
 title: Développement collaboratif de solutions Office
+description: Découvrez comment plusieurs développeurs peuvent travailler sur un projet Office de la même façon qu’ils collaborent sur d’autres projets Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949485"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845802"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Développement collaboratif de solutions Office
   Plusieurs développeurs peuvent travailler sur un projet Office de la même façon qu’ils collaborent sur d’autres projets Visual Studio. Visual Studio localise correctement l’installation de Microsoft Office sur chaque ordinateur, même si Office est installé à différents emplacements. Toutefois, il existe des considérations importantes à prendre en compte.
@@ -33,7 +35,7 @@ ms.locfileid: "62949485"
  Si le projet est hébergé sur un partage réseau plutôt que dans le contrôle de code source, des étapes supplémentaires doivent être prises pour permettre aux développeurs de collaboration d’ouvrir la solution et de tester l’assembly.
 
 ## <a name="source-control-requires-checking-out-all-files"></a>Le contrôle de code source nécessite l’extraction de tous les fichiers
- Si vous utilisez le contrôle de code source pour vos projets, vous devez extraire tous les fichiers dans un fichier de code dans **Explorateur de solutions** (tels que les fichiers de code *ThisDocument*, *ThisWorkbook*ou *ThisAddIn* ) chaque fois que vous modifiez le fichier de code, y compris les fichiers qui sont masqués par défaut. Si vous n’extrayez que le fichier de code de niveau supérieur, vous risquez de perdre vos modifications.
+ Si vous utilisez le contrôle de code source pour vos projets, vous devez extraire tous les fichiers dans un fichier de code dans **Explorateur de solutions** (tels que les fichiers de code *ThisDocument*, *ThisWorkbook* ou *ThisAddIn* ) chaque fois que vous modifiez le fichier de code, y compris les fichiers qui sont masqués par défaut. Si vous n’extrayez que le fichier de code de niveau supérieur, vous risquez de perdre vos modifications.
 
  Une fois vos modifications effectuées, réactivez tous les fichiers. Pour plus d’informations sur les fichiers de code masqués dans les projets, consultez [projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 

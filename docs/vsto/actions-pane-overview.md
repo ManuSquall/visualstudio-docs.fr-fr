@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du volet Actions
+description: Découvrez comment un volet actions est un volet de tâches actions de document personnalisable qui est associé à un document Word Microsoft Office spécifique ou à un classeur Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986314"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844827"
 ---
 # <a name="actions-pane-overview"></a>Vue d’ensemble du volet Actions
   Un volet actions est un volet de tâches **actions de document** personnalisable qui est associé à un document Word Microsoft Office spécifique ou Microsoft Office classeur Excel. Le volet actions est hébergé dans le volet Office, ainsi que d’autres volets de tâches intégrés, tels que le volet Office **source XML** dans Excel ou le volet de tâches **styles et mise en forme** dans Word. Vous pouvez utiliser des contrôles Windows Forms ou WPF pour concevoir l'interface utilisateur du volet Actions.
@@ -59,12 +61,12 @@ ms.locfileid: "72986314"
 
  Pour masquer le volet de tâches dans votre solution, vous disposez de plusieurs options :
 
-- Pour Word, affectez la valeur <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> **false**à la propriété de l’objet qui représente le volet de tâches actions de document. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisDocument` de votre projet.
+- Pour Word, affectez la valeur <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> **false** à la propriété de l’objet qui représente le volet de tâches actions de document. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisDocument` de votre projet.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Pour Excel, affectez la valeur <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false**à la propriété de l’objet. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisWorkbook` de votre projet.
+- Pour Excel, affectez la valeur <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false** à la propriété de l’objet. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisWorkbook` de votre projet.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
@@ -112,7 +114,7 @@ ms.locfileid: "72986314"
 |FromLeft|Empilez à partir de la gauche du volet Actions.|
 |FromRight|Empilez à partir de la droite du volet Actions.|
 |FromTop|Empilez à partir du haut du volet Actions.|
-|None|Aucun ordre d'empilement défini ; l'ordre est contrôlé par le développeur.|
+|Aucun|Aucun ordre d'empilement défini ; l'ordre est contrôlé par le développeur.|
 
  Le code suivant définit la propriété <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> de façon à empiler les contrôles utilisateur à partir du haut du volet Actions.
 

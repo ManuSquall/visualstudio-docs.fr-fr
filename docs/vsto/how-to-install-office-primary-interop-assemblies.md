@@ -1,5 +1,7 @@
 ---
 title: 'Comment : installer les assemblys PIA (Primary Interop Assembly) Office'
+description: Découvrez comment installer les assemblys PIA (Primary Interop Assembly) Microsoft Office lorsque vous installez Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15a55650f2e4a434343c9128cc8f28117b54288e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544779"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845880"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Comment : installer les assemblys PIA (Primary Interop Assembly) Office
   Installez les assemblys PIA (Primary Interop Assembly) Microsoft Office lorsque vous installez Office.
@@ -35,7 +37,7 @@ ms.locfileid: "85544779"
     > Par défaut, les assemblys PIA sont incorporés dans votre solution lorsque vous les générez, de sorte que vous n’avez pas à distribuer les assemblys PIA aux utilisateurs comme condition préalable à l’utilisation de votre complément VSTO ou de la personnalisation.
 
 ## <a name="see-also"></a>Voir aussi
-- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 - [Comment : cibler des applications Office par le biais d’assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Comment : configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Comment : installer le Visual Studio Tools pour le package redistribuable Office Runtime](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

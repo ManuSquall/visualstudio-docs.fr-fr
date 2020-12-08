@@ -1,5 +1,7 @@
 ---
 title: Personnaliser un ruban pour InfoPath
+description: Sachez que lorsque vous personnalisez le ruban dans Microsoft Office InfoPath, vous devez tenir compte de l’emplacement où votre ruban personnalisé apparaîtra dans l’application.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255504"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844165"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personnaliser un ruban pour InfoPath
   Quand vous personnalisez le ruban dans Microsoft Office InfoPath, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] peut afficher le ruban dans les trois types suivants de fenêtres d'application InfoPath :

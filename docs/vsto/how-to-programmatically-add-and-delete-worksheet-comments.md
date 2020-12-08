@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter et supprimer des commentaires de feuille de calcul par programmation'
+description: Découvrez comment vous pouvez ajouter et supprimer des commentaires par programmation dans Microsoft Office des feuilles de calcul Excel. Vous pouvez uniquement ajouter des commentaires à des cellules uniques, et non à des plages de cellules multiples.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f845197de6664728a812e2795e51605ed962c575
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583799"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844606"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Comment : ajouter et supprimer des commentaires de feuille de calcul par programmation
   Vous pouvez ajouter et supprimer des commentaires dans des feuilles de calcul Microsoft Office Excel par programmation. Vous pouvez ajouter des commentaires uniquement à des cellules individuelles, et non à des plages de cellules.

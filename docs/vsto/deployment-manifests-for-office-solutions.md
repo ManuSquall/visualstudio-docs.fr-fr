@@ -1,5 +1,7 @@
 ---
 title: Manifestes de déploiement pour les solutions Office
+description: Découvrez qu’un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d’une solution Office et identifie la version de l’application actuelle.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,25 +17,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547548"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845503"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifestes de déploiement pour les solutions Office
   Un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d’une solution Office et identifie la version de l’application actuelle.
 
  Le développement Office dans Visual Studio utilise le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste de déploiement défini dans la référence du [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le fichier manifeste de déploiement pour les solutions Office identifie la version actuelle et d’autres paramètres de déploiement. Il fait référence au manifeste d’application et décrit la version actuelle de la solution, ainsi que tous les fichiers qu’elle contient.
 
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier
  Le nom d’un fichier manifeste de déploiement doit se terminer par l’extension *. vsto* . Bien qu’il s’agisse d’un [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifeste de déploiement standard, l’extension est différente pour permettre au runtime Office d’Visual Studio Tools de gérer le fichier.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant illustre un manifeste de déploiement pour une solution Visual Studio Tools pour Office.
 
 ```xml

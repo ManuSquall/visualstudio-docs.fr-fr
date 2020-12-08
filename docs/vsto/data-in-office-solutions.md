@@ -1,5 +1,7 @@
 ---
 title: Données dans les solutions Office
+description: Découvrez les différentes façons d’utiliser des données lorsque vous créez des solutions Microsoft Office à l’aide de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189685"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845546"
 ---
 # <a name="data-in-office-solutions"></a>Données dans les solutions Office
   De nombreuses solutions Office permettent aux utilisateurs de récupérer ou modifier des données. Quand vous créez des solutions Office à l’aide de Visual Studio, vous pouvez utiliser les données de plusieurs façons différentes.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  Explique comment lier des données aux contrôles dans les solutions Office.

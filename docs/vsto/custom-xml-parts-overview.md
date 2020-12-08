@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des parties XML personnalisées
+description: Découvrez comment vous pouvez incorporer des données XML dans des documents pour certaines applications Microsoft Office. Quand des données XML sont incorporées dans un document, elles sont appelées partie XML personnalisée.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64784415"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844125"
 ---
 # <a name="custom-xml-parts-overview"></a>Vue d’ensemble des parties XML personnalisées
   Vous pouvez incorporer des données XML dans des documents pour certaines applications Microsoft Office. Quand vous incorporez des données XML dans un document, celles-ci sont nommées une *partie XML personnalisée*.
@@ -41,9 +43,9 @@ ms.locfileid: "64784415"
 > Visual Studio permet également de mettre en cache des objets de données dans des personnalisations au niveau du document. Cette fonctionnalité diffère des parties XML personnalisées, malgré certaines ressemblances. Pour plus d’informations, consultez [données mises en cache dans les personnalisations au niveau du document](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="understand-custom-xml-parts"></a>Comprendre les parties XML personnalisées
- Les parties XML personnalisées ont été introduites dans la version 2007 de Microsoft Office System, tout comme les formats Open XML. Ces formats incluent les nouveaux formats de fichier XML pour Excel, PowerPoint et Word (tels que *. xlsx*, *. pptx*et *. docx*). Les documents dans ces formats sont constitués de fichiers XML (également appelés *parties XML*) organisés dans des dossiers dans une archive zip. La plupart des parties XML sont intégrées et facilitent la définition de la structure et de l'état du document. Toutefois, les documents peuvent également contenir des parties XML personnalisées, que vous pouvez utiliser pour stocker des données XML arbitraires dans les documents.
+ Les parties XML personnalisées ont été introduites dans la version 2007 de Microsoft Office System, tout comme les formats Open XML. Ces formats incluent les nouveaux formats de fichier XML pour Excel, PowerPoint et Word (tels que *. xlsx*, *. pptx* et *. docx*). Les documents dans ces formats sont constitués de fichiers XML (également appelés *parties XML*) organisés dans des dossiers dans une archive zip. La plupart des parties XML sont intégrées et facilitent la définition de la structure et de l'état du document. Toutefois, les documents peuvent également contenir des parties XML personnalisées, que vous pouvez utiliser pour stocker des données XML arbitraires dans les documents.
 
- Les formats de fichier XML permettent aux applications d’utiliser des documents de manière non possible avec les formats de fichier binaire plus anciens (tels que *. xls*, *. ppt*et *. doc*). Toute application qui peut lire des archives ZIP peut examiner et modifier le contenu des documents, même si Microsoft Office n'est pas installé.
+ Les formats de fichier XML permettent aux applications d’utiliser des documents de manière non possible avec les formats de fichier binaire plus anciens (tels que *. xls*, *. ppt* et *. doc*). Toute application qui peut lire des archives ZIP peut examiner et modifier le contenu des documents, même si Microsoft Office n'est pas installé.
 
  Pour plus d'informations sur la structure d'Open XML et des parties XML personnalisées, consultez les articles suivants :
 

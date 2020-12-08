@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter un lanceur de boîte de dialogue à un groupe de ruban'
+description: Vous pouvez ajouter un lanceur de boîte de dialogue à n’importe quel groupe d’un ruban qui peut ouvrir des boîtes de dialogue ou des volets de tâches associés qui fournissent davantage d’options en rapport avec le groupe.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541617"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844931"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Comment : ajouter un lanceur de boîte de dialogue à un groupe de ruban
   Vous pouvez ajouter un lanceur de boîte de dialogue à n’importe quel groupe sur un ruban. Un lanceur de boîte de dialogue est une petite icône qui s’affiche dans un groupe. Les utilisateurs cliquent sur cette icône pour ouvrir des boîtes de dialogue ou des volets de tâches associés qui fournissent des options supplémentaires en rapport avec le groupe.

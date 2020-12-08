@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter des contrôles XMLMappedRange aux feuilles de calcul'
+description: Apprenez que quand vous mappez un élément XML à une cellule dans Microsoft Office Excel, Visual Studio ajoute automatiquement un contrôle XmlMappedRange à votre feuille de calcul.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e807a5673f27da6a852fd2c83347d1348f1f6fd
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544883"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844411"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Comment : ajouter des contrôles XMLMappedRange aux feuilles de calcul
   Quand vous mappez un élément XML à une cellule dans Microsoft Office Excel, Visual Studio ajoute automatiquement un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle à votre feuille de calcul.
