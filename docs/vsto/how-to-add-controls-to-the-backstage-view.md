@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter des contrôles au mode Backstage '
+description: Découvrez comment vous pouvez utiliser le concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur l’onglet fichier.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538344"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848168"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Comment : ajouter des contrôles au mode Backstage
   Vous pouvez utiliser le concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur l’onglet **fichier** . Quand vous exécutez l’application, les contrôles que vous ajoutez à l’onglet **fichier** apparaissent un groupe nommé **Add-ins**.
@@ -48,7 +50,7 @@ ms.locfileid: "85538344"
 
     - Bouton
 
-    - CheckBox
+    - Case à cocher
 
     - Galerie
 

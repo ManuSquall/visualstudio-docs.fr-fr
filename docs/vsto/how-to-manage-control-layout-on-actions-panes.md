@@ -1,5 +1,7 @@
 ---
 title: 'Comment : gérer la disposition des contrôles dans les volets actions'
+description: Découvrez comment vous pouvez gérer la disposition des contrôles dans les volets actions en écrivant du code pour empiler correctement les contrôles utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520145"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848246"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Comment : gérer la disposition des contrôles dans les volets actions
   Un volet actions est ancré par défaut à droite d’un document ou d’une feuille de calcul ; Toutefois, elle peut être ancrée à gauche, en haut ou en bas. Si vous utilisez plusieurs contrôles utilisateur, vous pouvez écrire du code pour empiler correctement les contrôles utilisateur dans le volet Actions. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
@@ -56,7 +58,7 @@ ms.locfileid: "85520145"
 
 6. Exécutez le projet et vérifiez que les contrôles du volet actions sont empilés de gauche à droite lorsque le volet actions est ancré en haut du document, et les contrôles sont empilés de haut en bas lorsque le volet actions est ancré à la partie droite du document.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
  [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]
 

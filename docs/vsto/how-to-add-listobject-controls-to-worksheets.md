@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter des contrôles ListObject à des feuilles de calcul'
+description: Découvrez comment vous pouvez ajouter des contrôles ListObject à une feuille de calcul Microsoft Office Excel au moment du design et au moment de l’exécution dans des projets au niveau du document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538318"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848155"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Comment : ajouter des contrôles ListObject à des feuilles de calcul
   Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul Microsoft Office Excel au moment du design et au moment de l’exécution dans des projets au niveau du document.
@@ -38,7 +40,7 @@ ms.locfileid: "85538318"
   Pour plus d’informations sur les <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles, consultez [ListObject, contrôle](../vsto/listobject-control.md).
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Ajouter des contrôles ListObject au moment du design
- Il existe plusieurs façons d’ajouter des <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles à une feuille de calcul dans un projet au niveau du document au moment du design : à partir d’Excel, à partir de la **boîte à outils**de Visual Studio et à partir de la fenêtre **sources de données** .
+ Il existe plusieurs façons d’ajouter des <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles à une feuille de calcul dans un projet au niveau du document au moment du design : à partir d’Excel, à partir de la **boîte à outils** de Visual Studio et à partir de la fenêtre **sources de données** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

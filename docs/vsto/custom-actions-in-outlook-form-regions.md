@@ -1,5 +1,7 @@
 ---
 title: Actions personnalisées dans les zones de formulaire Outlook
+description: Découvrez comment les boutons d’affichage d’action, tels que répondre et répondre à tous, permettent aux utilisateurs de répondre à une Microsoft Office élément Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254441"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848194"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Actions personnalisées dans les zones de formulaire Outlook
-  Les actions affichent des boutons qui permettent aux utilisateurs de répondre à une Microsoft Office élément Outlook. Par exemple, pour répondre à un élément de messagerie, les utilisateurs cliquent sur les boutons **répondre**, **répondre à tous**ou **transférer** l’action. Chacune de ces actions crée un nouvel élément de messagerie et remplit les champs de l’élément à l’aide des informations de l’élément d’origine.
+  Les actions affichent des boutons qui permettent aux utilisateurs de répondre à une Microsoft Office élément Outlook. Par exemple, pour répondre à un élément de messagerie, les utilisateurs cliquent sur les boutons **répondre**, **répondre à tous** ou **transférer** l’action. Chacune de ces actions crée un nouvel élément de messagerie et remplit les champs de l’élément à l’aide des informations de l’élément d’origine.
 
  Vous pouvez créer une action personnalisée qui ouvre n’importe quel type d’élément Outlook. Par exemple, vous pouvez ajouter une action personnalisée qui ouvre un nouveau rendez-vous ou élément de tâche. Définissez les propriétés d’une action personnalisée ou utilisez du code personnalisé pour remplir les champs du nouvel élément. Les actions personnalisées apparaissent dans la liste déroulante **actions personnalisées** d’un élément qui est ouvert dans une fenêtre d’inspecteur Outlook.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : vérifier l’orthographe dans les feuilles de calcul par programmation'
+description: Découvrez comment vous pouvez vérifier par programmation l’orthographe des mots dans une feuille de calcul Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f2a9f50767082ead9daafe684aae7fc1524ba9c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541542"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848286"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Comment : vérifier l’orthographe dans les feuilles de calcul par programmation
   Vous pouvez vérifier par programmation l’orthographe des mots contenus dans une feuille de calcul. La boîte de dialogue **Orthographe** s’affiche automatiquement si des mots mal orthographiés figurent dans la feuille de calcul.

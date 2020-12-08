@@ -1,5 +1,7 @@
 ---
 title: Instructions pour la création de zones de formulaire Outlook
+description: Découvrez les instructions de création de zones de formulaire Outlook qui peuvent vous aider à optimiser vos zones de formulaire et à éviter des problèmes potentiels.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a962b1ae2bff7b9a954204485a6ee73a3b63eb7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255951"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848090"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Instructions pour créer des zones de formulaire Outlook
   Les informations suivantes peuvent vous aider à optimiser vos zones de formulaire et à éviter d’éventuels problèmes :
@@ -78,7 +80,7 @@ ms.locfileid: "71255951"
 
 - Pour l’icône **Page** , utilisez un fichier PNG (Portable Network Graphics).
 
-- Les icônes de**Fenêtre** doivent avoir une taille de 32x32 pixels.
+- Les icônes de **Fenêtre** doivent avoir une taille de 32x32 pixels.
 
 - Toutes les autres icônes doivent avoir une taille de 16x16 pixels.
 
