@@ -1,5 +1,7 @@
 ---
 title: 'Comment : modifier la position d’un onglet sur le ruban'
+description: Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban et positionner les onglets personnalisés avant ou après un onglet intégré du ruban à l’aide de l’éditeur de collections Tab.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f821ea2a469fc06f80a7aaea96d07274d02a81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544857"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846764"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Comment : modifier la position d’un onglet sur le ruban
   Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban à l’aide de l' **éditeur de collections Tab**. Vous pouvez positionner les onglets personnalisés avant ou après un onglet intégré sur le ruban. Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, l’onglet **données** est un onglet intégré dans Excel.

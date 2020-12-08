@@ -1,5 +1,7 @@
 ---
 title: Ajouter un volet actions à des documents Word ou à des classeurs Excel
+description: En savoir plus sur l’ajout d’un volet actions à un document Word Microsoft Office ou un classeur Microsoft Excel, vous devez d’abord créer un contrôle utilisateur Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546222"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848064"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Comment : ajouter un volet Actions à des documents Word ou à des classeurs Excel
   Pour ajouter un volet actions à un document Word Microsoft Office ou à un classeur Microsoft Excel, commencez par créer un contrôle utilisateur Windows Forms. Ensuite, ajoutez le contrôle utilisateur à la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriété du `ThisDocument.ActionsPane` champ (Word) ou du `ThisWorkbook.ActionsPane` champ (Excel) dans votre projet.

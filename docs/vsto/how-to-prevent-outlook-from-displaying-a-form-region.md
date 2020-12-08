@@ -1,5 +1,7 @@
 ---
 title: 'Comment : empêcher Outlook d’afficher une zone de formulaire'
+description: Découvrez comment empêcher Microsoft Office Outlook d’afficher une zone de formulaire pour un élément particulier.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f247bf82d51fda6d321b45c16f91b857300cc1e4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520132"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847674"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Comment : empêcher Outlook d’afficher une zone de formulaire
   Il peut arriver que vous ne souhaitiez pas que Microsoft Office Outlook affiche une zone de formulaire pour un élément particulier. Par exemple, si un élément de contact ne contient pas d’adresse professionnelle, vous pouvez empêcher une zone de formulaire qui affiche l’emplacement de l’entreprise dans une carte.
@@ -33,7 +35,7 @@ ms.locfileid: "85520132"
 
 3. Ajoutez du code au `FormRegionInitializing` Gestionnaire d’événements qui affecte la valeur true à la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriété de la <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe. **true**
 
-   Dans cet exemple, si l’élément de contact ne contient pas d’adresse, la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriété a la valeur **true**et la zone de formulaire n’apparaît pas.
+   Dans cet exemple, si l’élément de contact ne contient pas d’adresse, la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriété a la valeur **true** et la zone de formulaire n’apparaît pas.
 
 ## <a name="example"></a>Exemple
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]

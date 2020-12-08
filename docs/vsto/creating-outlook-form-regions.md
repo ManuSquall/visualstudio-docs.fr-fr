@@ -1,5 +1,7 @@
 ---
 title: Créer des zones de formulaire Outlook
+description: Découvrez comment vous pouvez utiliser des zones de formulaire pour personnaliser les formulaires Microsoft Outlook afin de faciliter la conception, le développement et le débogage des zones de formulaire.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255913"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847960"
 ---
 # <a name="create-outlook-form-regions"></a>Créer des zones de formulaire Outlook
   Vous pouvez utiliser des zones de formulaire pour personnaliser des formulaires Microsoft Office Outlook. Visual Studio fournit des outils avancés qui simplifient la conception, le développement et le débogage des zones de formulaire.
@@ -71,7 +73,7 @@ ms.locfileid: "71255913"
 
 |Type de région|Description|
 |-----------------|-----------------|
-|Séparer|Ajoute la zone de formulaire en tant que nouvelle page dans un formulaire Outlook.|
+|Separate|Ajoute la zone de formulaire en tant que nouvelle page dans un formulaire Outlook.|
 |Adjacent|Ajoute la zone de formulaire au bas de la page par défaut d'un formulaire Outlook.|
 |Remplacement|Ajoute la zone de formulaire en tant que nouvelle page qui remplace la page par défaut d'un formulaire Outlook.|
 |Remplacement global|Remplace l'intégralité du formulaire Outlook par la zone de formulaire.|
@@ -176,7 +178,7 @@ ms.locfileid: "71255913"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Instructions pour la création de zones de formulaire Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Fournit des informations pouvant vous aider à optimiser vos zones de formulaire et à éviter d'éventuels problèmes.|
 |[Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Montre comment créer une zone de formulaire pour étendre un formulaire Microsoft Office Outlook standard ou personnalisé à l’aide de l’Assistant **nouvelle zone de formulaire Outlook** .|

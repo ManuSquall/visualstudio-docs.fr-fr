@@ -1,8 +1,8 @@
 ---
 title: Accès VBA pour créer/ouvrir un projet système VSTO
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Découvrez que vous devez activer explicitement l’accès au système de projet Office VBA avant de pouvoir créer ou ouvrir un projet Visual Studio Tools pour Office System.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584857"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846127"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Activer l’accès à VBA pour créer ou ouvrir un Visual Studio Tools pour le projet Microsoft Office système
 
@@ -55,7 +55,7 @@ Vous devez activer explicitement l’accès au système de projet Visual Basic p
 
 3. Cliquez sur Centre de gestion de la **confidentialité**, puis sur paramètres du centre de gestion de la **confidentialité**.
 
-4. Dans le **Centre**de gestion de la confidentialité, cliquez sur **paramètres des macros**.
+4. Dans le **Centre** de gestion de la confidentialité, cliquez sur **paramètres des macros**.
 
 5. Cochez ou décochez **l’option approuver l’accès au modèle objet de projet VBA** pour activer ou désactiver l’accès aux projets Visual Basic.
 
@@ -79,7 +79,7 @@ Vous devez activer explicitement l’accès au système de projet Visual Basic p
 
 3. Cliquez sur Centre de gestion de la **confidentialité**, puis sur paramètres du centre de gestion de la **confidentialité**.
 
-4. Dans le **Centre**de gestion de la confidentialité, cliquez sur **paramètres des macros**.
+4. Dans le **Centre** de gestion de la confidentialité, cliquez sur **paramètres des macros**.
 
 5. Dans la section paramètres de la **macro** , sélectionnez le paramètre souhaité.
 

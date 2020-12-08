@@ -1,5 +1,7 @@
 ---
 title: Architecture des solutions Office dans Visual Studio
+description: En savoir plus sur les solutions créées à l’aide des outils de développement Microsoft Office dans Visual Studio et de leur fonctionnement.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -15,25 +17,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca40ed18639caae3250ddc1dc2a664b11780f7a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551878"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847583"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architecture des solutions Office dans Visual Studio
   Les rubriques de cette section fournissent des informations sur le fonctionnement des solutions créées à l'aide des outils de développement Office dans Visual Studio.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
 
 Décrit le fonctionnement des personnalisations au niveau du document et la façon dont elles sont perçues par le développeur et par l'utilisateur final.
 
-[Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+[Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 Décrit les composants des compléments VSTO et la façon dont ils sont chargés par les applications.
 

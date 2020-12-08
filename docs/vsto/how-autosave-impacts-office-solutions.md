@@ -1,5 +1,7 @@
 ---
 title: Impact de l’enregistrement automatique sur les solutions Office
+description: Découvrez comment l’enregistrement automatique est une fonctionnalité pour Excel, PowerPoint et Word qui enregistre automatiquement et continuellement vos modifications.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6108ee35c79ec475de70e874ce0dc6d872cc62c6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62826681"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846790"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Impact de l’enregistrement automatique sur les solutions Office
 

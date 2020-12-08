@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter des contrôles Windows Forms à des documents Office'
+description: Découvrez comment vous pouvez ajouter des contrôles Windows Forms pour Microsoft Office des documents Word Excel et Microsoft Office au moment du design dans des projets au niveau du document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547535"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846777"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Comment : ajouter des contrôles Windows Forms à des documents Office
   Vous pouvez ajouter des contrôles Windows Forms à des documents Microsoft Office Excel et Microsoft Office Word au moment du design dans les projets au niveau du document. Au moment de l’exécution, vous pouvez ajouter des contrôles dans les personnalisations au niveau du document et dans les compléments VSTO. Par exemple, vous pouvez ajouter un <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> contrôle à votre feuille de calcul afin que les utilisateurs puissent les sélectionner dans une liste d’options.

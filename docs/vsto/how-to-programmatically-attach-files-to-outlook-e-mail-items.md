@@ -1,5 +1,7 @@
 ---
 title: 'Comment : joindre des fichiers à des éléments de messagerie Outlook par programmation'
+description: Découvrez comment joindre des fichiers à Microsoft Office éléments Outlook. Cet exemple joint un fichier à un nouvel élément de messagerie et l’envoie à Armando Pinto.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54617bd61a6b45e3b105bce71342ea1a97f63050
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585325"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847388"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Comment : joindre des fichiers à des éléments de messagerie Outlook par programmation
   Cet exemple joint un fichier à un nouvel élément de messagerie et l’envoie à Armando Pinto. L’exemple suppose qu’une personne nommée Armando Pinto existe en tant que destinataire.

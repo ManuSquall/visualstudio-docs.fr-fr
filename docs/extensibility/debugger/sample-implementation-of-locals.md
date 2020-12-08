@@ -1,5 +1,7 @@
 ---
 title: Exemple d’implémentation de variables locales | Microsoft Docs
+description: Découvrez comment Visual Studio obtient les variables locales pour une méthode à partir de l’évaluateur d’expression dans cet article.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: aad77c9b9481ed6ae32c66260b1e3ef2a662c836
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011890"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847635"
 ---
 # <a name="sample-implementation-of-locals"></a>Exemple d’implémentation de variables locales
 > [!IMPORTANT]
@@ -44,7 +46,7 @@ ms.locfileid: "90011890"
 
 10. Visual Studio appelle [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) pour chaque local afin d’obtenir le nom, la valeur et le type de la locale. Ces informations s’affichent dans la fenêtre **variables locales** .
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Implémenter GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md) Décrit une implémentation de [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).
 
  [Énumérer les variables locales](../../extensibility/debugger/enumerating-locals.md) Décrit comment le moteur DE débogage effectue un appel pour énumérer des variables locales ou des arguments.

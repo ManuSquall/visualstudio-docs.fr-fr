@@ -1,5 +1,7 @@
 ---
 title: Données de cache
+description: Découvrez comment mettre en cache des objets de données dans une personnalisation au niveau du document afin que les données puissent être accessibles hors connexion ou sans ouvrir Microsoft Office Word ou Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939413"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847869"
 ---
 # <a name="cache-data"></a>Données de cache
   Vous pouvez mettre en cache des objets de données dans une personnalisation au niveau du document afin que les données soient accessibles hors connexion ou sans ouvrir Microsoft Office Word ou Microsoft Office Excel. Pour mettre en cache un objet, l’objet doit avoir un type de données qui répond à certaines exigences. De nombreux types de données courants dans le .NET Framework répondent à ces exigences, notamment <xref:System.String> , <xref:System.Data.DataSet> et <xref:System.Data.DataTable> .
@@ -79,7 +81,7 @@ ms.locfileid: "62939413"
  Pour plus d’informations, consultez [Comment : mettre en cache des données dans un document protégé par mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md).
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Empêcher la perte de données lors de l’ajout de valeurs NULL au cache de données
- Lorsque vous ajoutez des objets au cache de données, tous les objets mis en cache doivent être initialisés à une valeur non**null** avant que le document ne soit enregistré et fermé. Si un objet mis en cache a une valeur **null** lorsque le document est enregistré et fermé, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] supprime automatiquement tous les objets mis en cache du cache de données.
+ Lorsque vous ajoutez des objets au cache de données, tous les objets mis en cache doivent être initialisés à une valeur non **null** avant que le document ne soit enregistré et fermé. Si un objet mis en cache a une valeur **null** lorsque le document est enregistré et fermé, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] supprime automatiquement tous les objets mis en cache du cache de données.
 
  Si vous ajoutez un objet avec une valeur **null** au cache de données à l’aide de l' <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribut au moment du design, vous pouvez utiliser la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe pour initialiser les objets de données en mémoire cache avant l’ouverture du document. Cela est utile si vous souhaitez initialiser les données mises en cache sur un serveur sans que Word ou Excel soit installé, avant que le document ne soit ouvert par un utilisateur final. Pour plus d’informations, consultez [accéder aux données dans les documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).
 

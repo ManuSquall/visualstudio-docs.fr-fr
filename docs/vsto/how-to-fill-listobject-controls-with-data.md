@@ -1,5 +1,7 @@
 ---
 title: 'Comment : remplir des contrôles ListObject avec des données'
+description: Utilisez la liaison de données pour ajouter rapidement des données à votre document. Vous pouvez également déconnecter l’objet de liste afin qu’il affiche les données mais n’est plus lié à la source de données.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544818"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846517"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Comment : remplir des contrôles ListObject avec des données
   Vous pouvez utiliser la liaison de données comme moyen pour ajouter rapidement des données à votre document. Après avoir lié les données à un objet de liste, vous pouvez déconnecter celui-ci de manière à ce qu’il affiche les données mais ne soit plus lié à leur source.

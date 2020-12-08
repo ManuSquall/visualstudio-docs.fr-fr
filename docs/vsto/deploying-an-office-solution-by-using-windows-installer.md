@@ -1,5 +1,7 @@
 ---
 title: Déployer une solution Office à l’aide de Windows Installer
+description: Découvrez qu’en utilisant Visual Studio pour créer une Windows Installer, vous pouvez déployer une solution Office qui requiert un accès administratif sur l’ordinateur de l’utilisateur final.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807961"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847115"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Déployer une solution Office à l’aide de Windows Installer
 
@@ -209,7 +211,7 @@ La page **Composants redistribuables** contient un élément nommé **Runtime Mi
 
 4. Dans le Bloc-notes, remplacez le texte **Your GUID goes here** en collant le GUID à la place.
 
-   L’élément ** &lt; Properties &gt; ** de votre fichier ressemble à ce qui suit.
+   L’élément **&lt; Properties &gt;** de votre fichier ressemble à ce qui suit.
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
@@ -303,21 +305,21 @@ Les installations par utilisateur requièrent un seul programme d'installation q
 
    **Programme d'installation par utilisateur**
 
-   **HKEY_CURRENT_USER \Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
+   **HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
 
    **Programmes d'installation par ordinateur selon la version d'Office**
 
 | Version d’Office<br /><br /> | Chemin d'accès de configuration d'InstallShield<br /><br /> |
 |----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Programmes d'installation par ordinateur selon la version de Windows**
 
 | Version de Windows<br /><br /> | Chemin d'accès de configuration d'InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Un programme d’installation pour Windows 64 bits requiert deux chemins d’accès au registre car il est possible que les utilisateurs exécutent les versions 32 bits et 64 bits d’Office sur un ordinateur qui exécute Windows 64 bits.
@@ -333,9 +335,9 @@ Les installations par utilisateur requièrent un seul programme d'installation q
 
 7. Répétez ce processus pour créer les valeurs suivantes.
 
-|Type valeur<br /><br />|Name<br /><br />|
+|Type valeur<br /><br />|Nom<br /><br />|
 |--------------|--------|
-|Valeur de chaîne<br /><br />|**Convivial**<br /><br />|
+|Valeur de chaîne<br /><br />|**FriendlyName**<br /><br />|
 |Valeur DWORD<br /><br />|**LoadBehavior**<br /><br />|
 |Valeur de chaîne<br /><br />|**Manifeste**<br /><br />|
 
@@ -463,7 +465,7 @@ Pour modifier des propriétés personnalisées, vous créez un programme qui sup
 
 13. Ouvrez le fichier projet de votre solution dans le Bloc-notes. Pour les projets Visual Basic, le nom du fichier est *ExcelWorkbook. vbproj*. Pour les projets C#, le nom du fichier est *ExcelWorkbook. csproj*.
 
-14. Dans le fichier projet, recherchez l’élément ** &lt; SolutionId &gt; ** , copiez sa valeur dans le presse-papiers, puis fermez le bloc-notes.
+14. Dans le fichier projet, recherchez l’élément **&lt; SolutionId &gt;** , copiez sa valeur dans le presse-papiers, puis fermez le bloc-notes.
 
     Vous passez cette valeur à l'application console comme paramètre.
 
@@ -500,7 +502,7 @@ Pour modifier des propriétés personnalisées, vous créez un programme qui sup
 
 9. Dans la barre de menus, choisissez **générer**  >  **générer OfficeAddInSetup**.
 
-   Une fois la génération terminée, vous pouvez localiser le fichier *setup.exe* du projet **OfficeAddInSetup** à l’emplacement suivant : <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\ **
+   Une fois la génération terminée, vous pouvez localiser le fichier *setup.exe* du projet **OfficeAddInSetup** à l’emplacement suivant : <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
 ## <a name="see-also"></a>Voir aussi
 

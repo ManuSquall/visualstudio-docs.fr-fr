@@ -1,5 +1,7 @@
 ---
 title: Protection des documents dans les solutions au niveau du document
+description: Découvrez comment vous pouvez utiliser les fonctionnalités de protection de Microsoft Office Word et Microsoft Office Excel dans des projets au niveau du document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253804"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846192"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protection des documents dans les solutions au niveau du document
   Vous pouvez utiliser les fonctionnalités de protection de Microsoft Office Word et Microsoft Office Excel dans des projets au niveau du document. Ces fonctionnalités empêchent les utilisateurs non autorisés d’apporter des modifications aux parties protégées d’un document.

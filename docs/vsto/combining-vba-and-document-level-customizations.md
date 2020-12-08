@@ -1,5 +1,7 @@
 ---
 title: Combiner VBA et les personnalisations au niveau du document
+description: Découvrez comment vous pouvez utiliser du code Visual Basic pour Applications (VBA) dans un document qui fait partie d’une personnalisation au niveau du document pour Microsoft Office Word ou Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977606"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846400"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combiner VBA et les personnalisations au niveau du document
   Vous pouvez utiliser du code Visual Basic pour Applications (VBA) dans un document faisant partie d'une personnalisation au niveau du document pour Microsoft Office Word ou Microsoft Office Excel. Vous pouvez appeler du code VBA dans le document à partir de l'assembly de personnalisation ou configurer votre projet pour permettre au code VBA du document d'appeler du code dans l'assembly de personnalisation.
@@ -42,7 +44,7 @@ ms.locfileid: "70977606"
  Quand vous exécutez la solution, les gestionnaires d'événements dans le code VBA et l'assembly de personnalisation reprennent les événements déclenchés dans le document, et les deux ensembles de code sont exécutés. Il est impossible de savoir à l'avance quel code sera exécuté avant l'autre ; vous devez le déterminer en effectuant des tests dans chaque cas. Pour ne pas obtenir de résultats inattendus, prenez le temps de coordonner et de tester les deux jeux de code.
 
 ## <a name="call-vba-code-from-the-customization-assembly"></a>Appeler du code VBA à partir de l’assembly de personnalisation
- Vous pouvez appeler des macros dans les documents Word, ainsi que des macros et des fonctions dans les classeurs Excel. Pour ce faire, utilisez l’une des méthodes suivantes :
+ Vous pouvez appeler des macros dans les documents Word, ainsi que des macros et des fonctions dans les classeurs Excel. Pour ce faire, utilisez l'une des méthodes suivantes :
 
 - Pour Word, appelez la <xref:Microsoft.Office.Interop.Word._Application.Run%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Application> classe.
 
@@ -90,7 +92,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   - Pour Word : *. docm* ou *. doc*
 
-  - Pour Excel : *. xlsm*, *. xltm*, *. xls*ou *. xlt*
+  - Pour Excel : *. xlsm*, *. xltm*, *. xls* ou *. xlt*
 
 - Le document doit déjà contenir un projet VBA contenant du code VBA.
 

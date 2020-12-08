@@ -1,5 +1,7 @@
 ---
 title: Contrôles sur les documents Office
+description: Découvrez comment vous pouvez utiliser les outils de développement Office dans Visual Studio pour ajouter des contrôles de Windows Forms et des contrôles hôtes à des documents Word et à des feuilles de calcul Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203edcf2b77cfff3fb557ce7c1c8fea7592e17ea
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254402"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847986"
 ---
 # <a name="controls-on-office-documents"></a>Contrôles sur les documents Office
   Vous pouvez utiliser les Outils de développement Office dans Visual Studio pour ajouter des contrôles Windows Forms et des *contrôles hôtes* à des documents Word et à des feuilles de calcul Excel. Les contrôles hôtes sont des objets qui étendent différents objets d'interface utilisateur dans les modèles objet Word et Excel.
@@ -32,7 +34,7 @@ ms.locfileid: "71254402"
 
  Quand vous développez des projets au niveau du document pour Excel ou Word, vous pouvez ajouter ces contrôles par programme au moment de l'exécution ou utiliser le concepteur Visual Studio pour ajouter ces contrôles au document ou au classeur dans votre projet au moment du design.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
 
  Décrit les fonctionnalités des éléments hôtes et des contrôles hôtes, notamment la programmation par rapport à des événements, la liaison des contrôles aux données et la différence entre les contrôles et les objets natifs.

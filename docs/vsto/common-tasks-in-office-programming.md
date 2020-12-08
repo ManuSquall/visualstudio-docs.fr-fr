@@ -1,5 +1,7 @@
 ---
 title: Tâches courantes dans la programmation Office
+description: Découvrez comment programmer des données dans une personnalisation au niveau du document sans avoir à utiliser le modèle objet de Microsoft Office Word ou Office Excel.
+ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809857"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846296"
 ---
 # <a name="common-tasks-in-office-programming"></a>Tâches courantes dans la programmation Office
   Cette rubrique est conçue pour vous aider à trouver les réponses aux catégories suivantes de questions courantes sur la programmation de solutions Office à l’aide de Visual Studio.

@@ -1,5 +1,7 @@
 ---
 title: Déploiement d’une solution VSTO à l’aide de Windows Installer
+description: Découvrez comment déployer un complément ou une solution au niveau du document Microsoft Visual Studio Tools pour Office (VSTO) à l’aide d’un projet Visual Studio Installer.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585691"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846543"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Déploiement d’une solution VSTO à l’aide de Windows Installer
 
@@ -40,7 +42,7 @@ Cet article a été mis à jour par Microsoft avec l’autorisation des auteurs 
 
 **S’applique à :** Visual Studio Tools pour Office, Microsoft Office Microsoft Visual Studio.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Vous pouvez développer une solution VSTO et déployer la solution à l’aide d’un package Windows Installer. Cette discussion comprend les étapes de déploiement d’un complément Office simple.
 
@@ -157,7 +159,7 @@ Le projet d’installation doit déployer le manifeste de déploiement et le man
 ### <a name="to-add-the-deployment-and-application-manifests"></a>Pour ajouter les manifestes de déploiement et d’application
 
 1. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur **OfficeAddInSetup**, cliquez sur **Ajouter**, puis sur **fichier**.
-2. Dans la boîte de dialogue **Ajouter des fichiers** , accédez au répertoire de sortie **ExcelAddIn** . En général, le répertoire de sortie est le sous-dossier de la ** \\ version bin** du répertoire racine du projet, selon la configuration de build sélectionnée.
+2. Dans la boîte de dialogue **Ajouter des fichiers** , accédez au répertoire de sortie **ExcelAddIn** . En général, le répertoire de sortie est le sous-dossier de la **\\ version bin** du répertoire racine du projet, selon la configuration de build sélectionnée.
 3. Sélectionnez les fichiers **ExcelAddIn. vsto** et **ExcelAddIn.dll. manifest** , puis cliquez sur **ouvrir** pour ajouter ces deux fichiers au projet d’installation.
 
     ![Capture d’écran des manifestes d’application et de déploiement dans Explorateur de solutions](media/setup-project-figure-3.jpg)
@@ -168,7 +170,7 @@ Le référencement du ExcelAddIn comprend tous les composants requis par ExcelAd
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>Pour exclure les dépendances du projet ExcelAddIn
 
-1. Dans le **Explorateur de solutions**, dans le **nœud OfficeAddInSetup** , sélectionnez tous les éléments de dépendance sous l’élément **Dépendances détectées** , à l’exception de **Microsoft .NET Framework** ou de tout assembly qui se termine par ** \*.Utilities.dll**. Les assemblys des utilitaires sont conçus pour être déployés avec votre application.
+1. Dans le **Explorateur de solutions**, dans le **nœud OfficeAddInSetup** , sélectionnez tous les éléments de dépendance sous l’élément **Dépendances détectées** , à l’exception de **Microsoft .NET Framework** ou de tout assembly qui se termine par **\*.Utilities.dll**. Les assemblys des utilitaires sont conçus pour être déployés avec votre application.
 2. Cliquez avec le bouton droit sur le groupe et sélectionnez **Propriétés**.
 3. Dans la fenêtre **Propriétés** , remplacez la valeur de la propriété **exclure** par **true** pour exclure les assemblys dépendants du projet d’installation. Veillez à ne pas exclure les assemblys d’utilitaires.
 
@@ -205,9 +207,9 @@ Microsoft Office localise les compléments à l’aide de clés de registre. Les
 2. Développez **affichage**.
 3. Cliquez sur **Registre** pour ouvrir la fenêtre de l’éditeur du Registre.
 4. Dans l’éditeur **du Registre (OfficeAddInSetup)** , développez **HKEY \_ local \_ machine** , puis **Software**.
-5. Supprimez la clé ** \[ Manufacturer \] **? située sous **HKEY \_ local \_ machine \\ Software**.
+5. Supprimez la clé **\[ Manufacturer \]**? située sous **HKEY \_ local \_ machine \\ Software**.
 6. Développez **HKEY \_ Current \_ User** , puis **Software**.
-7. Supprimez la clé de ** \[ fabricant \] ** trouvée sous **HKEY \_ Current \_ User \\ Software**.
+7. Supprimez la clé de **\[ fabricant \]** trouvée sous **HKEY \_ Current \_ User \\ Software**.
 8. Pour ajouter des clés de Registre pour l’installation du complément, cliquez avec le bouton droit sur la clé **Hive utilisateur/ordinateur** , puis sélectionnez **nouvelle clé**. Utilisez le **logiciel** texte comme nom de la nouvelle clé. Cliquez avec le bouton droit sur la clé de **logiciel** nouvellement créée et créez une nouvelle clé avec le texte **Microsoft**.
 9. Utilisez un processus similaire pour créer l’intégralité de la hiérarchie de clés requise pour l’inscription du complément :
 
@@ -280,7 +282,7 @@ Si le package MSI est utilisé pour installer le complément ou la solution, il 
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office"></a>Configurer une condition de lancement pour détecter le runtime VSTO installé par Office
 
-1. Dans l’éditeur des **conditions de lancement (OfficeAddInSetup)** , cliquez avec le bouton droit sur **ordinateur cible de recherche**, puis cliquez sur **Ajouter une recherche**dans le registre.
+1. Dans l’éditeur des **conditions de lancement (OfficeAddInSetup)** , cliquez avec le bouton droit sur **ordinateur cible de recherche**, puis cliquez sur **Ajouter une recherche** dans le registre.
 2. Sélectionnez la condition **de recherche RegistryEntry1** , cliquez avec le bouton droit sur la condition, puis sélectionnez **fenêtre Propriétés**.
 3. Dans la fenêtre **Propriétés** , définissez les propriétés suivantes :
     1. Définissez la valeur de **(nom)** pour **Rechercher le runtime Office VSTO**.
@@ -344,7 +346,7 @@ Pour plus d’informations, consultez [équivalence de type et types Interop inc
 |Visio|{3EA123B5-6316-452E-9D51-A489E06E2347}|{C1713368-12A8-41F1-ACA1-934B01AD6EEB}|{2CC0B221-22D2-4C15-A9FB-DE818E51AF75}|{2D4540EC-2C88-4C28-AE88-2614B5460648}|{2D4540EC-2C88-4C28-AE88-2614B5460648}|
 |Word|{8B74A499-37F8-4DEA-B5A0-D72FC501CEFA}|{9FE736B7-B1EE-410C-8D07-082891C3DAC8}|{13C07AF5-B206-4A48-BB5B-B8022333E3CA}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|
 |Microsoft Forms 2,0|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{A5A30117-2D2A-4C5C-B3C8-8897AC32C2AC}|-|-|
-|Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
+|Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Balise active|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Office partagé|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
 |Project|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|

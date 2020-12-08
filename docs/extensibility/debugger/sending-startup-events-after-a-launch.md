@@ -1,5 +1,7 @@
 ---
 title: Envoi d’événements de démarrage après un lancement | Microsoft Docs
+description: En savoir plus sur la série d’événements de démarrage que le moteur de débogage envoie à la session de débogage après que le moteur de débogage a été attaché à un programme.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713012"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847882"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Envoyer des événements de démarrage après un lancement
 Une fois que le moteur de débogage (DE) est attaché au programme, il envoie une série d’événements de démarrage à la session de débogage.

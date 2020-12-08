@@ -1,5 +1,7 @@
 ---
 title: Inscription d’un moteur de débogage personnalisé | Microsoft Docs
+description: Découvrez comment le moteur de débogage s’inscrit lui-même en tant que fabrique de classe, suivant les conventions COM, et s’inscrire auprès de Visual Studio via le registre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 01d7190bbf087bb60ac670341d82078e94c81c52
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011838"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847180"
 ---
 # <a name="register-a-custom-debug-engine"></a>Inscrire un moteur de débogage personnalisé
 Le moteur de débogage doit s’inscrire en tant que fabrique de classe, en suivant les conventions COM et s’inscrire auprès de Visual Studio via la sous-clé de Registre Visual Studio.
@@ -28,7 +30,7 @@ Le moteur de débogage doit s’inscrire en tant que fabrique de classe, en suiv
 
  Les [applications auxiliaires du SDK pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) décrivent non seulement les emplacements de Registre nécessaires à l’inscription d’un moteur de débogage. elle décrit également la bibliothèque *dbgmetric. lib* , qui contient un certain nombre de déclarations et de fonctions utiles pour les développeurs C++ qui facilitent la manipulation du Registre.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  L’exemple suivant (à partir de l’exemple TextInterpreter) montre comment utiliser la `SetMetric` fonction (à partir de *dbgmetric. lib*) pour inscrire un moteur de débogage avec Visual Studio. Les métriques transmises sont également définies dans *dbgmetric. lib*.
 
 > [!NOTE]

@@ -1,5 +1,7 @@
 ---
 title: Remplissage automatique des plages de données à modification incrémentielle par programmation
+description: Découvrez comment la méthode de remplissage automatique de l’objet Range vous permet de remplir automatiquement une plage dans une feuille de calcul avec des valeurs.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585312"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847206"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Comment : remplir automatiquement des plages par programmation avec des données à modification incrémentielle
   La <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode de l' <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de remplir automatiquement une plage dans une feuille de calcul avec des valeurs. La plupart du temps, la <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode est utilisée pour stocker de façon incrémentielle des valeurs croissantes ou décroissantes dans une plage. Vous pouvez spécifier le comportement en fournissant une constante facultative à partir de l' <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> énumération.

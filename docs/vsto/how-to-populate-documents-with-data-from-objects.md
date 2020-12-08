@@ -1,5 +1,7 @@
 ---
 title: 'Comment : remplir des documents avec des données d’objets'
+description: Découvrez comment vous pouvez utiliser les données d’un objet dans votre solution, et vous pouvez utiliser des contrôles de Windows Forms pour afficher les données dans un document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cc795b5476f312f5fc80ba76dc383175596b64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547171"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848051"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Comment : remplir des documents avec des données d’objets
 

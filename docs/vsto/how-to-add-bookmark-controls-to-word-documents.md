@@ -1,5 +1,6 @@
 ---
 title: 'Comment : ajouter des contrôles Bookmark à des documents Word'
+description: En savoir plus sur les projets au niveau du document, vous pouvez ajouter des contrôles Bookmark au document de votre projet au moment du design ou au moment de l’exécution.
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547249"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847466"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Comment : ajouter des contrôles Bookmark à des documents Word
   Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> au document de votre projet au moment du design ou au moment de l'exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> à tout document ouvert au moment de l’exécution.
@@ -41,7 +42,7 @@ ms.locfileid: "85547249"
 ## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Ajouter des contrôles Bookmark au moment du design
  Il existe plusieurs façons d'ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> au document Word d'un projet au niveau du document au moment du design :
 
-- À partir de la **boîte à outils**Visual Studio.
+- À partir de la **boîte à outils** Visual Studio.
 
    Vous pouvez alors faire glisser le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> depuis la **boîte à outils** vers votre document. Vous souhaiterez peut-être choisir cette méthode si vous utilisez déjà la **boîte à outils** pour ajouter des contrôles Windows Forms à votre document.
 

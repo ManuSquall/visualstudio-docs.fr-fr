@@ -1,5 +1,7 @@
 ---
 title: Données mises en cache dans les personnalisations au niveau du document
+description: Découvrez comment Visual Studio sépare les données de la vue dans les personnalisations au niveau du document en permettant aux données d’être incorporées en tant que cache de données.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238346"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847895"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Données mises en cache dans les personnalisations au niveau du document
   L’objectif principal des personnalisations au niveau du document est de séparer les données de la vue dans les documents Office. Les données font référence aux informations stockées dans le document, y compris les nombres et le texte. La vue fait référence à l’interface utilisateur et au modèle objet de Microsoft Office Word et Microsoft Office Excel.

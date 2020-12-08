@@ -1,5 +1,7 @@
 ---
 title: 'Comment : configurer la sécurité de la liste d’inclusion'
+description: Configurez l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux ont la possibilité d’installer des solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541633"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846725"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Comment : configurer la sécurité de la liste d’inclusion
   Si vous disposez d’autorisations d’administrateur, vous pouvez configurer l' [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux ont la possibilité d’installer des solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [approuver des solutions Office à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -46,13 +48,13 @@ ms.locfileid: "85541633"
 
 2. Recherchez la clé de Registre suivante :
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-la.
 
 3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Valeur|
+    |Sous-clé de valeur de chaîne|Value|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Désactivé**|
@@ -105,13 +107,13 @@ ms.locfileid: "85541633"
 
 2. Recherchez la clé de Registre suivante :
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-la.
 
 3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Valeur|
+    |Sous-clé de valeur de chaîne|Value|
     |-------------------------|-----------|
     |**UntrustedSites**|**Désactivé**|
     |**Internet**|**AuthenticodeRequired**|
@@ -164,11 +166,11 @@ ms.locfileid: "85541633"
 
 2. Créez la clé de Registre suivante si elle n’existe pas déjà :
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ . NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ . NETFramework\Security\TrustManager\PromptingLevel**
 
 3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Valeur|
+    |Sous-clé de valeur de chaîne|Value|
     |-------------------------|-----------|
     |**UntrustedSites**|**Désactivé**|
     |**Internet**|**Désactivé**|

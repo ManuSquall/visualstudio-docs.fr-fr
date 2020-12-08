@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer des gestionnaires d’événements dans les projets Office'
+description: Découvrez les différentes façons dont vous pouvez créer des gestionnaires d’événements par défaut pour les contrôles dans Visual Basic et C#.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538305"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846699"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Comment : créer des gestionnaires d’événements dans les projets Office
   Il existe plusieurs façons de créer des gestionnaires d’événements en Visual Basic et en C#. En mode Design, vous pouvez créer les gestionnaires d’événements par défaut des contrôles en double-cliquant sur le contrôle, ou utiliser le volet événements de la fenêtre **Propriétés** pour créer des gestionnaires pour tout événement sur le contrôle. Toutefois, si vous êtes en mode Code, vous pouvez ne pas vouloir basculer vers Mode Création pour créer un gestionnaire d’événements.

@@ -1,5 +1,7 @@
 ---
 title: Appeler du code dans des compléments VSTO à partir d’autres solutions Office
+description: Découvrez comment vous pouvez exposer un objet de votre complément VSTO à d’autres solutions, notamment d’autres solutions de Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255328"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847843"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Appeler du code dans des compléments VSTO à partir d’autres solutions Office
   Vous pouvez exposer un objet inclus dans votre complément VSTO à d’autres solutions, notamment d’autres solutions Microsoft Office. Cette possibilité s’avère utile si votre complément VSTO propose un service que vous voulez permettre à d’autres solutions d’utiliser. Par exemple, si vous avez un complément VSTO pour Microsoft Office Excel qui effectue des calculs sur des données financières à partir d’un service Web, d’autres solutions peuvent effectuer ces calculs en appelant le complément VSTO Excel au moment de l’exécution.
@@ -56,7 +58,7 @@ ms.locfileid: "71255328"
 2. Substituez la méthode <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> dans la classe `ThisAddIn` . Retournez une instance de la classe que vous voulez exposer à d'autres solutions.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Définir la classe que vous voulez exposer à d’autres solutions
- Au minimum, la classe que vous voulez exposer doit être publique, son attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> doit avoir la valeur **true**et elle doit exposer l'interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
+ Au minimum, la classe que vous voulez exposer doit être publique, son attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> doit avoir la valeur **true** et elle doit exposer l'interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .
 
  La méthode recommandée pour exposer l'interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) consiste à procéder comme suit :
 
@@ -147,5 +149,5 @@ utilities.ImportData();
 - [Procédure pas à pas : appel de code dans un complément VSTO à partir de VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Développer des solutions Office](../vsto/developing-office-solutions.md)
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

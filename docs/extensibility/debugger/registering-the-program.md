@@ -1,5 +1,7 @@
 ---
 title: Inscription du programme | Microsoft Docs
+description: Découvrez comment un programme à déboguer est inscrit auprès d’un port après l’acquisition d’un port par le moteur de débogage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713168"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847094"
 ---
 # <a name="register-the-program"></a>Inscrire le programme
 Une fois que le moteur de débogage a acquis un port, représenté par une interface [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , l’étape suivante de l’activation du programme à déboguer consiste à l’inscrire auprès du port. Une fois inscrit, le programme est disponible pour le débogage de l’une des manières suivantes :

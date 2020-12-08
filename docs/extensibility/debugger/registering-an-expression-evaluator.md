@@ -1,5 +1,7 @@
 ---
 title: Inscription d’un évaluateur d’expression | Microsoft Docs
+description: Découvrez comment l’évaluateur d’expression doit s’inscrire lui-même en tant que fabrique de classe avec l’environnement COM Windows et Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713199"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847141"
 ---
 # <a name="register-an-expression-evaluator"></a>Inscrire un évaluateur d’expression
 > [!IMPORTANT]
@@ -30,7 +32,7 @@ ms.locfileid: "80713199"
  Une méthode de la classe principale est marquée avec <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> , ce qui indique que la méthode doit être appelée lorsque la dll est inscrite auprès de com. Cette méthode d’inscription, souvent appelée `RegisterClass` , exécute la tâche d’inscription de la dll auprès de Visual Studio. Un correspondant `UnregisterClass` (marqué avec <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ), annule les effets de `RegisterClass` la désinstallation de la dll.
 Les mêmes entrées de Registre sont effectuées comme pour un EE écrit dans du code non managé. la seule différence réside dans le fait qu’il n’existe aucune fonction d’assistance telle que `SetEEMetric` pour effectuer le travail pour vous. Voici un exemple de processus d’inscription et de désinscription.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  La fonction suivante montre comment un code managé EE s’inscrit et annule son inscription auprès de Visual Studio.
 
 ```csharp
@@ -120,9 +122,9 @@ namespace EEMC
     > [!NOTE]
     > `metricLanguage``GUID`Identifie le langage par son nom, mais il s’agit `guidLang` de l’argument de `SetEEMetric` qui sélectionne la langue. Lorsque le compilateur génère le fichier d’informations de débogage, il doit écrire le approprié `guidLang` afin que le de sache quel EE utiliser. Le DE demande généralement le fournisseur de symboles pour ce langage `GUID` , qui est stocké dans le fichier d’informations de débogage.
 
-3. S’inscrit auprès de Visual Studio en créant des clés sous HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, où *x. y* est la version de Visual Studio à inscrire.
+3. S’inscrit auprès de Visual Studio en créant des clés sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, où *x. y* est la version de Visual Studio à inscrire.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  La fonction suivante montre comment un code non managé (C++) EE s’inscrit et se désinscrit lui-même avec Visual Studio.
 
 ```cpp
