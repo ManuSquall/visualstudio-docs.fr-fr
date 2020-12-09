@@ -1,5 +1,7 @@
 ---
 title: Activation des fonctionnalités de débogage dans les projets C++ (-D_DEBUG) | Microsoft Docs
+description: Dans Visual C++ vous activez les fonctionnalités de débogage en définissant _DEBUG. Apprenez à effectuer cette opération et découvrez comment lier un programme MFC pour le déboguer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737958"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862931"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Activation des fonctionnalités de débogage dans les projets C++ (/D_DEBUG)
 En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], les fonctionnalités de débogage comme les assertions sont activées quand vous compilez votre programme avec le symbole **_DEBUG** défini. Vous pouvez définir **_DEBUG** de deux façons différentes :
@@ -44,4 +46,4 @@ En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], les fonctionnalit�
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage du code natif](../debugger/debugging-native-code.md)
-- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

@@ -1,5 +1,7 @@
 ---
 title: Spécificateurs de format dans le débogueur (C++) | Microsoft Docs
+description: Utilisez un spécificateur de format pour modifier le format dans lequel une valeur est affichée dans une fenêtre Espion, automatique ou variables locales. Cet article fournit des détails sur l’utilisation.
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,15 +26,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832318"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863034"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Spécificateurs de format pour C++ dans le débogueur Visual Studio
-Vous pouvez modifier le format dans lequel une valeur est affichée dans les fenêtres **Espion**, **automatique**et **variables locales** à l’aide de spécificateurs de format.
+Vous pouvez modifier le format dans lequel une valeur est affichée dans les fenêtres **Espion**, **automatique** et **variables locales** à l’aide de spécificateurs de format.
 
 Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **exécution** , la fenêtre **commande** , les points de [trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et même dans les fenêtres sources. Si vous suspendez une expression dans ces fenêtres, le résultat apparaît dans un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). L’affichage du DataTip reflète le spécificateur de format.
 

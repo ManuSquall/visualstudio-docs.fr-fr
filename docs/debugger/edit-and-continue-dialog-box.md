@@ -1,5 +1,7 @@
 ---
 title: Modifier & continuer, boîte de dialogue | Microsoft Docs
+description: La boîte de dialogue Modifier & continuer s’affiche si vous avez modifié le code pendant le débogage. Apprenez à contrôler s’il applique des modifications de code sans demander l’autorisation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599542"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863099"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Boîte de dialogue Modifier & Continuer
 (Natif uniquement) Cette boîte de dialogue s’affiche lorsque vous avez modifié du code pendant le débogage et que **Modifier & Continuer** reconnaît pouvoir appliquer ces modifications. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).

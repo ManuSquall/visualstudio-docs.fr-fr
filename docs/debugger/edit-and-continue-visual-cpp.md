@@ -1,5 +1,7 @@
 ---
 title: Modifier & Continuer (C++) | Microsoft Docs
+description: Modifier & Continuer est disponible pour les projets C++. Découvrez les modifications qui sont prises en charge et comment contrôler si vos modifications sont appliquées et à quel moment.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599651"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863060"
 ---
 # <a name="edit-and-continue-c"></a>Modifier & Continuer (C++)
 Vous pouvez utiliser modifier & continuer dans les projets C++. Pour plus d’informations sur les limitations de modifier & continuer, consultez [modifications de code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) .
@@ -80,4 +82,4 @@ Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3
  Dans ces cas, le débogueur continue à exécuter le code d’origine jusqu’à ce que les modifications puissent être appliquées. Le code périmé apparaît comme une fenêtre de fichier source temporaire dans une fenêtre source séparée, avec un titre comme `enc25.tmp`. La source modifiée continue à apparaître dans la fenêtre source d'origine. Si vous essayez de modifier le code périmé, un message d'avertissement apparaît.
 
 ## <a name="see-also"></a>Voir aussi
-- [Modifications du code prises en charge (C++)](../debugger/supported-code-changes-cpp.md)
+- [Modifications de code prises en charge (C++)](../debugger/supported-code-changes-cpp.md)

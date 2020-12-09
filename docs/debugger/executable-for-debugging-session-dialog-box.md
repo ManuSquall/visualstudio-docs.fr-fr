@@ -1,5 +1,7 @@
 ---
 title: Exécutable de la session de débogage, boîte de dialogue | Microsoft Docs
+description: Pour déboguer une DLL, vous devez spécifier un exécutable pour appeler la DLL. En savoir plus sur la boîte de dialogue qui s’affiche quand aucun fichier exécutable n’est spécifié.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92cf53ed499318d60c8da5147685e3f0f340e404
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4f1f1a88ad30d5102043571473be0d72d71a054
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736238"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863047"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Exécutable pour la session de débogage (boîte de dialogue)
 
@@ -35,7 +37,7 @@ Cette boîte de dialogue s'affiche lorsque vous essayez de déboguer une DLL pou
 
  **URL où le projet est accessible (ATL Server uniquement)** Si vous déboguez une DLL ATL Server, entrez l’URL où se trouve le projet.
 
- Une fois entrés, ces paramètres sont stockés dans les pages de propriétés du projet, vous n’avez donc pas besoin de les entrer à nouveau pour les sessions de débogage suivantes. Si vous devez les modifier, ouvrez les Pages de propriétés et apportez les changements voulus. Pour plus d’informations sur la spécification d’un exécutable pour la session de débogage, consultez [Débogage de DLL](../debugger/how-to-debug-from-a-dll-project.md).
+ Une fois entrés, ces paramètres sont stockés dans les pages de propriétés du projet, vous n’avez donc pas besoin de les entrer à nouveau pour les sessions de débogage suivantes. Si vous devez les modifier, ouvrez les Pages de propriétés et apportez les changements voulus. Pour plus d’informations sur la spécification d’un exécutable pour la session de débogage, consultez [débogage de dll](../debugger/how-to-debug-from-a-dll-project.md).
 
 ## <a name="see-also"></a>Voir aussi
 

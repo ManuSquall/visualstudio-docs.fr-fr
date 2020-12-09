@@ -1,5 +1,6 @@
 ---
 title: Onglet général de la boîte de dialogue Propriétés du thread | Microsoft Docs
+description: Affichez la boîte de dialogue Propriétés du thread pour obtenir des informations sur un thread, y compris le nom du module, l’ID de thread, l’ID de processus, l’état du thread, la raison de l’attente et le temps processeur.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896365"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862995"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Onglet Général de la boîte de dialogue Propriétés du thread
 Utilisez cette boîte de dialogue pour en savoir plus sur un thread spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre [vue threads](../debugger/threads-view.md) , ou ouvrez la [vue messages](../debugger/messages-view.md) et développez un message. Sélectionnez n’importe quel nœud de thread dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

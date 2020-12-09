@@ -1,5 +1,7 @@
 ---
 title: Modifier & Continuer (Visual C#) | Microsoft Docs
+description: Modifier & Continuer est disponible pour les projets Visual C#. Découvrez les modifications qui sont prises en charge et comment contrôler si vos modifications sont appliquées et à quel moment.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421639"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862879"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C#)
  Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage. En mode exécution, l'éditeur de code source est en lecture seule.

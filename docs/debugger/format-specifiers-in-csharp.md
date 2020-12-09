@@ -1,5 +1,7 @@
 ---
 title: Spécificateurs de format dans le débogueur (C#) | Microsoft Docs
+description: Utilisez un spécificateur de format pour modifier le format dans lequel une valeur est affichée dans le Fenêtre Espion. Cet article fournit des détails sur l’utilisation.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849852"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862787"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C# dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **exécution** , la fenêtre **commande** , les points de [trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et les fenêtres sources. Si vous faites une pause sur une expression dans ces fenêtres, le résultat s’affiche dans un  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) dans l’affichage de format spécifié.

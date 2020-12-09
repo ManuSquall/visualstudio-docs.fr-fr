@@ -1,5 +1,7 @@
 ---
 title: Général, débogage, boîte de dialogue Options | Microsoft Docs
+description: Définissez les options du débogueur Visual Studio pour répondre à vos besoins de débogage. Vous pouvez configurer le comportement d’arrêt, les niveaux de débogage, le comportement d’affichage et bien d’autres choses encore.
+ms.custom: SEO-VS-2020
 ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
@@ -21,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286555"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863008"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
-Pour définir les options du débogueur Visual Studio, sélectionnez **Outils**  >  **options**, puis, sous **débogage** , activez ou désactivez les cases à cocher en regard des options **générales** . Vous pouvez restaurer tous les paramètres par défaut à l’aide des **Outils**  >  **importation et exportation paramètres**  >  **Réinitialiser tous les**paramètres. Pour réinitialiser un sous-ensemble de paramètres, enregistrez vos paramètres à l’aide de l' **Assistant importation et exportation de paramètres** avant d’effectuer les modifications que vous souhaitez tester, puis importez vos paramètres enregistrés ultérieurement.
+Pour définir les options du débogueur Visual Studio, sélectionnez **Outils**  >  **options**, puis, sous **débogage** , activez ou désactivez les cases à cocher en regard des options **générales** . Vous pouvez restaurer tous les paramètres par défaut à l’aide des **Outils**  >  **importation et exportation paramètres**  >  **Réinitialiser tous les** paramètres. Pour réinitialiser un sous-ensemble de paramètres, enregistrez vos paramètres à l’aide de l' **Assistant importation et exportation de paramètres** avant d’effectuer les modifications que vous souhaitez tester, puis importez vos paramètres enregistrés ultérieurement.
 
 Vous pouvez définir les options **générales** suivantes :
 
@@ -48,7 +50,7 @@ Arrêter lorsque des exceptions dépassent les **limites AppDomain ou managées/
 
 Dans les conditions 2 et 3, l’exception est parfois interceptée par du code managé dans `mscorlib` plutôt que par l’Common Language Runtime. Cette option n'a aucune incidence sur l'arrêt sur les exceptions interceptées par `mscorlib`.
 
-**Activer le débogage au niveau**de l’adresse : active les fonctionnalités avancées pour le débogage au niveau de l’adresse (la fenêtre **code machine** , la fenêtre **registres** et les points d’arrêt sur adresse).
+**Activer le débogage au niveau** de l’adresse : active les fonctionnalités avancées pour le débogage au niveau de l’adresse (la fenêtre **code machine** , la fenêtre **registres** et les points d’arrêt sur adresse).
 
 - **Afficher le code machine si la source n’est pas disponible**: affiche automatiquement la fenêtre code **machine** lorsque vous déboguez du code pour lequel la source n’est pas disponible.
 
@@ -74,7 +76,7 @@ Dans les conditions 2 et 3, l’exception est parfois interceptée par du code m
 **Activer la prise en charge du serveur source**: indique au débogueur Visual Studio d’extraire les fichiers sources des serveurs sources qui implémentent le protocole SRCSRV ( `srcsrv.dll` ). Team Foundation Server et les outils de débogage pour Windows sont deux serveurs sources qui implémentent le protocole. Pour plus d’informations sur le programme d’installation de SrcSrv, consultez la documentation de [SRCSRV](/windows-hardware/drivers/debugger/srcsrv) . En outre, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 > [!IMPORTANT]
-> La lecture des fichiers* .pdb* pouvant exécuter du code arbitraire dans les fichiers, vérifiez que le serveur possède un niveau de confiance suffisant.
+> La lecture des fichiers *.pdb* pouvant exécuter du code arbitraire dans les fichiers, vérifiez que le serveur possède un niveau de confiance suffisant.
 
 - **Imprimer les messages de diagnostic du serveur source dans la fenêtre Sortie**: lorsque la prise en charge du serveur source est activée, ce paramètre active l’affichage du diagnostic.
 

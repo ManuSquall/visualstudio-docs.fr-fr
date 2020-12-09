@@ -1,5 +1,7 @@
 ---
 title: Modifier & Continuer (Visual Basic) | Microsoft Docs
+description: Modifier & Continuer est disponible pour les projets Visual Basic. Découvrez les modifications qui sont prises en charge et comment contrôler si vos modifications sont appliquées et à quel moment.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62851249"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862969"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifier & Continuer (Visual Basic)
 La fonctionnalité Modifier &amp; Continuer destinée au débogage de [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] vous permet d’apporter des modifications à votre code pendant qu’il s’exécute en mode Arrêt. Après avoir modifié le code, vous pouvez continuer son exécution avec les nouvelles modifications en place et observer leurs effets.

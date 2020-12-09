@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue Modifier & Continuer-message d’erreur | Microsoft Docs
+description: Modifier & continuer peut signaler qu’il n’est pas disponible pour vos modifications de code. Cet article présente les raisons possibles.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188223"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862841"
 ---
 # <a name="edit-and-continue-error-message"></a>Message d’erreur modifier & continuer
 

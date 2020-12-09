@@ -1,5 +1,7 @@
 ---
 title: Rechercher les fuites de mémoire avec la bibliothèque CRT | Microsoft Docs
+description: Découvrez comment le débogueur C/C++ et la bibliothèque Runtime C (CRT) peuvent vous aider à trouver des fuites de mémoire. Les techniques incluent des rapports de fuite de mémoire et la comparaison des instantanés de mémoire.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350483"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863073"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Rechercher les fuites de mémoire avec la bibliothèque CRT
 
@@ -108,7 +110,7 @@ Que vous définissiez ou non `_CRTDBG_MAP_ALLOC` , le rapport des fuites de mém
 - Taille du bloc, `64 bytes` dans l’exemple.
 - les 16 premiers octets de données du bloc, au format hexadécimal.
 
-Les types de blocs de mémoire sont *normal*, *client*ou *CRT*. Un *bloc normal* est un bloc de mémoire ordinaire alloué par votre programme. Un *bloc client* est un type de bloc de mémoire spécial utilisé par les programmes MFC pour les objets qui nécessitent un destructeur. Suivant l'objet créé, l'opérateur MFC `new` crée soit un bloc normal, soit un bloc client.
+Les types de blocs de mémoire sont *normal*, *client* ou *CRT*. Un *bloc normal* est un bloc de mémoire ordinaire alloué par votre programme. Un *bloc client* est un type de bloc de mémoire spécial utilisé par les programmes MFC pour les objets qui nécessitent un destructeur. Suivant l'objet créé, l'opérateur MFC `new` crée soit un bloc normal, soit un bloc client.
 
 Un *bloc CRT* est alloué par la bibliothèque CRT pour ses propres besoins. La bibliothèque CRT gère la désallocation de ces blocs. par conséquent, les blocs CRT n’apparaissent pas dans le rapport des fuites de mémoire à moins qu’il y ait des problèmes sérieux avec la bibliothèque CRT.
 
@@ -182,7 +184,7 @@ Vous pouvez utiliser le numéro d'allocation pour définir un point d'arrêt sur
 
 1. Définissez un point d’arrêt vers le début de votre application, puis démarrez le débogage.
 
-1. Lorsque l’application s’interrompt au point d’arrêt, ouvrez une fenêtre **Espion** en sélectionnant **Déboguer**  >  **Windows**  >  **Watch 1** (ou **Espion 2**, **Espion 3**ou **Espion 4**).
+1. Lorsque l’application s’interrompt au point d’arrêt, ouvrez une fenêtre **Espion** en sélectionnant **Déboguer**  >  **Windows**  >  **Watch 1** (ou **Espion 2**, **Espion 3** ou **Espion 4**).
 
 1. Dans la fenêtre **Espion** , tapez `_crtBreakAlloc` dans la colonne **nom** .
 

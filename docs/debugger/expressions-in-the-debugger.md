@@ -1,5 +1,7 @@
 ---
 title: Expressions dans le débogueur | Microsoft Docs
+description: Modifier & Continuer est disponible pour les projets Visual C#. Découvrez les modifications qui sont prises en charge et comment contrôler si vos modifications sont appliquées et à quel moment.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a06a249fee38ca7fd8521459eda7bbf4100a97
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600294"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862865"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.
@@ -206,6 +208,6 @@ Vous ne pouvez pas déclarer de nouvelles variables explicites dans les fenêtre
 
 ## <a name="see-also"></a>Voir aussi
 - [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md)
-- [Opérateur de contexte (C++)](../debugger/context-operator-cpp.md)
-- [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)
+- [Context, opérateur (C++)](../debugger/context-operator-cpp.md)
+- [Spécificateurs de format en C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudo-variables](../debugger/pseudovariables.md)
