@@ -1,5 +1,7 @@
 ---
 title: Suppression d’un point d’arrêt | Microsoft Docs
+description: Découvrez comment le gestionnaire de débogage de session supprime un point d’arrêt en attente et tous les points d’arrêt liés qui y sont liés lorsqu’un point d’arrêt en attente est supprimé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 061175326a19af1866262421b381eb14267c7efd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738942"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915555"
 ---
 # <a name="deleting-a-breakpoint"></a>Suppression d’un point d’arrêt
 Les éléments suivants décrivent le processus de suppression d’un point d’arrêt en attente :

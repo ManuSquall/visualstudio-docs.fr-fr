@@ -1,5 +1,7 @@
 ---
 title: Évaluation d’une expression de fenêtre Espion | Microsoft Docs
+description: Découvrez comment Visual Studio appelle le moteur de débogage pour déterminer la valeur actuelle de chaque expression dans sa liste de suivi lorsque l’exécution est suspendue.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738839"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915646"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Évaluer une expression de fenêtre Espion
 > [!IMPORTANT]
@@ -47,7 +49,7 @@ ms.locfileid: "80738839"
 > [!NOTE]
 > Il n’est pas nécessaire qu’un EE adhère à ce processus en deux étapes, même si Visual Studio l’utilise. le EE peut analyser et évaluer à la même étape lors de l’appel de [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (c’est comme cela que l’exemple MyCEE fonctionne, par exemple). Si votre langage peut former des expressions complexes, vous souhaiterez peut-être séparer l’étape d’analyse de l’étape d’évaluation. Cela peut augmenter les performances dans le débogueur Visual Studio lorsque de nombreuses expressions Watch sont affichées.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Exemple d’implémentation de l’évaluation d’expression](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) Utilise l’exemple MyCEE pour parcourir le processus d’évaluation d’expression.
 
  [Évaluation d’une expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md) Explique ce qui se produit après l’analyse d’une expression réussie.

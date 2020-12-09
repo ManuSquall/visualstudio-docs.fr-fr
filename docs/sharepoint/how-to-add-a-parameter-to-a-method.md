@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter un paramètre à une méthode | Microsoft Docs'
+description: Savoir comment ajouter un paramètre à une méthode de connectivité de données métiers (BDC), qui vous permet de passer des informations dans la méthode ou de retourner des informations à partir de la méthode.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016709"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915399"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Comment : ajouter un paramètre à une méthode
   Utilisez un paramètre pour passer des informations dans la méthode ou pour retourner des informations à partir d’une méthode. Toutes les méthodes doivent avoir au moins un paramètre. Pour plus d’informations sur la conception d’un paramètre pour prendre en charge le type de méthode que vous souhaitez créer, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016709"
 
 1. Ajoutez une méthode à une entité.
 
-2. Dans la barre de menus, choisissez **Afficher**  >  **les autres**détails de la  >  **méthode BDC**Windows.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres** détails de la  >  **méthode BDC** Windows.
 
      La fenêtre Détails de la **méthode BDC** s’ouvre. Pour plus d’informations, consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -43,11 +45,11 @@ ms.locfileid: "86016709"
 
      Un nouveau paramètre apparaît sous le nœud **paramètres** .
 
-5. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+5. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
 6. Dans la fenêtre **Propriétés** , affectez à la propriété **nom** n’importe quel nom qui est pertinent. Par exemple, si la méthode retourne des clients, vous pouvez nommer la méthode **GetCustomers**.
 
-7. Dans la **fenêtre Détails de méthode BDC** , ouvrez la liste qui s’affiche pour la direction du paramètre, puis choisissez **in**, **INOUT**, **out**ou **Return**.
+7. Dans la **fenêtre Détails de méthode BDC** , ouvrez la liste qui s’affiche pour la direction du paramètre, puis choisissez **in**, **INOUT**, **out** ou **Return**.
 
      Pour plus d’informations sur la direction à choisir pour la méthode de type que vous créez, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
 

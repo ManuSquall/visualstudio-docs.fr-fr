@@ -1,5 +1,7 @@
 ---
 title: Création de groupes de boutons réutilisables | Microsoft Docs
+description: Découvrez comment créer un groupe de commandes, qui est une collection de commandes qui s’affichent ensemble sur un menu ou une barre d’outils.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903643"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915581"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Créer des groupes de boutons réutilisables
 Un groupe de commandes est une collection de commandes qui s’affichent toujours ensemble sur un menu ou une barre d’outils. Tout groupe de commandes peut être réutilisé en l’affectant à différents menus parents dans la section CommandPlacements du fichier *. vsct* .

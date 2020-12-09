@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : ajouter une page d’application à un flux de travail | Microsoft Docs'
+description: Dans cette procédure pas à pas, ajoutez une page d’application à une solution de flux de travail SharePoint. Modifiez le code de Workflow. Créez, codez et testez la page de l’application.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015495"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915659"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procédure pas à pas : ajouter une page d’application à un flux de travail
   Cette procédure pas à pas montre comment ajouter une page d’application qui affiche des données dérivées d’un flux de travail à un projet de Workflow. Il s’appuie sur le projet décrit dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -44,7 +46,7 @@ ms.locfileid: "86015495"
 
 - Vous devez également terminer le projet dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
-## <a name="ammend-the-workflow-code"></a>Ammend le code de workflow
+## <a name="amend-the-workflow-code"></a>Modifier le code de workflow
  Tout d’abord, ajoutez une ligne de code au flux de travail pour définir la valeur de la colonne de résultat sur le montant de la note de frais. Cette valeur est utilisée ultérieurement dans le calcul du résumé de l’état des dépenses.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Pour définir la valeur de la colonne de résultat dans le flux de travail
@@ -101,7 +103,7 @@ ms.locfileid: "86015495"
 
 #### <a name="to-code-the-application-page"></a>Pour coder la page de l’application
 
-1. Choisissez le nœud **ApplicationPage1. aspx** , puis, dans la barre de menus, choisissez **Afficher**  >  le**code** pour afficher le code derrière la page de l’application.
+1. Choisissez le nœud **ApplicationPage1. aspx** , puis, dans la barre de menus, choisissez **Afficher**  >  le **code** pour afficher le code derrière la page de l’application.
 
 2. Remplacez les instructions **using** ou **Import** (en fonction de votre langage de programmation) en haut de la classe par les éléments suivants :
 

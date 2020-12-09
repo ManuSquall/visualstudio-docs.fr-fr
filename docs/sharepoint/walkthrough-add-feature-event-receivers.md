@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : ajout de récepteurs d’événements de fonctionnalité | Microsoft Docs'
+description: Dans cette procédure pas à pas, ajoutez des récepteurs d’événements de fonctionnalité, qui sont des méthodes qui s’exécutent quand une fonctionnalité SharePoint est installée, activée, désactivée ou supprimée.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015361"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915594"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Procédure pas à pas : ajout de récepteurs d’événements de fonctionnalité
-  Les récepteurs d’événements de fonctionnalité sont des méthodes qui s’exécutent lorsque l’un des événements suivants liés aux fonctionnalités se produit dans SharePoint :
+Les récepteurs d’événements de fonctionnalité sont des méthodes qui s’exécutent lorsque l’un des événements suivants liés aux fonctionnalités se produit dans SharePoint :
 
 - Une fonctionnalité est installée.
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015361"
 
 - Une fonctionnalité est supprimée.
 
-  Cette procédure pas à pas montre comment ajouter un récepteur d’événements à une fonctionnalité dans un projet SharePoint. Il illustre les tâches suivantes :
+Cette procédure pas à pas montre comment ajouter un récepteur d’événements à une fonctionnalité dans un projet SharePoint. Il illustre les tâches suivantes :
 
 - Création d’un projet vide avec un récepteur d’événements de fonctionnalité.
 

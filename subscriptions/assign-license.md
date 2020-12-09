@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
-ms.openlocfilehash: 95e0358a39ccb88ed93f8e5bcee11d2b36d12d48
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dd80a14a3ff57100f210fd7ae1b882c0ab7a9faf
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863112"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915412"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser le portail d’administration pour affecter des abonnements à des utilisateurs individuels et à des groupes d’utilisateurs.
@@ -58,7 +58,7 @@ Regardez la vidéo ou lisez ce qui suit pour savoir comment attribuer un abonnem
 ## <a name="why-use-a-different-notification-email-address"></a>Pourquoi utiliser une adresse de messagerie de notification différente ?
 Certaines organisations configurent leurs services de messagerie pour bloquer les e-mails entrants d’autres domaines.  Le blocage des e-mails entrants signifie que les abonnés et les administrateurs n’auront plus de communications importantes :
 - Les abonnés ne reçoivent pas de notification qu’un abonnement leur a été attribué.  Cela les empêchera également d’activer certains des avantages inclus.  
-- Les abonnés qui ont reçu des abonnements Visual Studio avec GitHub Enterprise ne recevront pas l’invitation à rejoindre votre organisation GitHub, ce qui signifie qu’ils ne pourront pas accepter l’invitation. Ils doivent accepter l’invitation envoyée par courrier électronique pour accéder à votre organisation GitHub. 
+- Les abonnés qui ont reçu des abonnements Visual Studio avec GitHub Enterprise ne recevront pas l’invitation à rejoindre votre organisation GitHub, ce qui signifie qu’ils ne pourront pas accepter l’invitation. Ils **doivent accepter l’invitation envoyée par courrier électronique** pour accéder à votre organisation github. 
 - Les administrateurs ne sont pas avertis lorsqu’ils sont ajoutés à un accord, reçoivent des relevés d’administration mensuels ou des notifications de modifications de fonctionnalités qui ont une incidence sur la façon dont ils gèrent les abonnements.
 
 L’utilisation d’une adresse e-mail de notification vous offre la possibilité de permettre à vos abonnés de recevoir des communications importantes sur leurs abonnements sans modifier les fonctionnalités de leurs adresses e-mail de connexion.  

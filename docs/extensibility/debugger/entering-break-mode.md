@@ -1,5 +1,7 @@
 ---
 title: Passage en mode arrêt | Microsoft Docs
+description: En savoir plus sur le processus qui se produit pour un point d’arrêt rencontré dans une fonction, sur la ligne de code source au niveau du curseur ou sur un point d’arrêt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738879"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915230"
 ---
 # <a name="enter-break-mode"></a>Passer en mode arrêt
 Les informations suivantes décrivent le processus qui se produit lorsqu’un point d’arrêt est rencontré après un pas à pas détaillé dans une fonction, en cours d’exécution jusqu’à la ligne de code source qui contient le curseur, ou en cours d’exécution jusqu’à un point d’arrêt.

@@ -1,5 +1,7 @@
 ---
 title: Position du document | Microsoft Docs
+description: Découvrez comment la position d’un document dans le débogage Visual Studio fournit une abstraction d’une position dans un fichier source comme connu de l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19b88ead19e4578adb7c151a681583120cf2ec17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fef3debcbce3a178c4321114d69c87c627611a07
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738903"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915321"
 ---
 # <a name="document-position"></a>Position du document
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] le débogage, une *position de document*:

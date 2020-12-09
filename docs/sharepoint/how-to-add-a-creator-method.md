@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une méthode Creator | Microsoft Docs'
+description: Savoir comment ajouter une méthode de création, qui ajoute de nouvelles données à la source de données d’une entité dans le service de connectivité de données métiers (BDC) dans SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017068"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915451"
 ---
 # <a name="how-to-add-a-creator-method"></a>Comment : ajouter une méthode Creator
   Une méthode Creator ajoute de nouvelles données à la source de données d’une entité. Le service de connectivité de données métiers (BDC) appelle cette méthode quand les utilisateurs choisissent le bouton **nouvel élément** sur le **ruban** d’une liste basée sur le modèle. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -31,7 +33,7 @@ ms.locfileid: "86017068"
 
 1. Dans le **concepteur BDC**, choisissez une entité.
 
-2. Dans la barre de menus, choisissez **Afficher**  >  **les autres**détails de la  > **méthode BDC**Windows.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres** détails de la  > **méthode BDC** Windows.
 
     La fenêtre Détails de la **méthode BDC** s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 

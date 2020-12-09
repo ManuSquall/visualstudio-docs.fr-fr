@@ -1,5 +1,7 @@
 ---
 title: Créer une liste externe dans SharePoint à l’aide de données d’entreprise
+description: Créez un modèle pour le service BDC qui retourne des informations sur les contacts dans une base de données d’entreprise, puis créez une liste externe dans SharePoint à l’aide de ce modèle.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740056"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915334"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : création d’une liste externe dans SharePoint à l’aide de données d’entreprise
 
@@ -120,13 +122,13 @@ Le projet de **modèle de connectivité de données métiers** ajoute une entit�
 
 Ajoutez une entité au modèle. Vous pouvez ajouter des entités à partir de la **boîte à outils** Visual Studio sur le concepteur BDC.
 
-1. Dans la barre de menus, choisissez **Afficher**la  >  **boîte à outils**.
+1. Dans la barre de menus, choisissez **Afficher** la  >  **boîte à outils**.
 
 2. Sous l’onglet **BusinessDataConnectivity** de la **boîte à outils**, ajoutez une **entité** sur le concepteur BDC.
 
      La nouvelle entité s’affiche sur le concepteur. Visual Studio ajoute un fichier nommé *EntityService. vb* (dans Visual Basic) ou *EntityService.cs* (en C#) au projet.
 
-3. Dans la barre de menus, choisissez **Afficher**la  >  **Properties**  >  **fenêtre**propriétés.
+3. Dans la barre de menus, choisissez **Afficher** la  >  **Properties**  >  **fenêtre** propriétés.
 
 4. Dans la fenêtre **Propriétés** , affectez à la propriété **nom** la valeur **contact**.
 
@@ -146,7 +148,7 @@ Ajoutez une méthode de recherche spécifique à l’entité contact à l’aide
 
 1. Dans le concepteur BDC, choisissez l’entité **contact** .
 
-2. Dans la barre de menus, choisissez **Afficher**  >  **les autres**détails de la  >  **méthode BDC**Windows.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres** détails de la  >  **méthode BDC** Windows.
 
      La fenêtre Détails de la méthode BDC s’ouvre.
 

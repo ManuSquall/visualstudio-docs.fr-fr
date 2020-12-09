@@ -1,5 +1,7 @@
 ---
 title: Prise en charge des formulaires dans les flux de travail | Microsoft Docs
+description: 'En savoir plus sur la prise en charge des formulaires dans les flux de travail SharePoint. Quatre types de formulaires peuvent être utilisés dans un flux de travail : Association, initiation, tâche et modification.'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b064df6729b914af7758cde86b03b886fd0e5d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986262"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915503"
 ---
 # <a name="form-support-in-workflows"></a>Prise en charge des formulaires dans les workflows
   Quatre types de formulaires peuvent être utilisés dans un flux de travail : Association, initiation, tâche et modification. Ces types de formulaires peuvent être basés sur un formulaire ASPX ou un formulaire InfoPath. Le niveau de prise en charge [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fourni pour un formulaire particulier dépend de plusieurs facteurs, qui sont décrits dans les tableaux suivants. Pour plus d’informations sur les types de formulaires de workflow, consultez [vue d’ensemble des formulaires de flux de travail](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14)).

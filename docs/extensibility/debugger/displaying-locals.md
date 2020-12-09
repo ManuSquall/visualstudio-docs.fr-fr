@@ -1,5 +1,7 @@
 ---
 title: Affichage des variables locales | Microsoft Docs
+description: En savoir plus sur la liste des variables locales et des arguments, collectivement appelés les variables locales de la méthode, qui sont affichées lorsque l’exécution est suspendue.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738932"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915542"
 ---
 # <a name="display-locals"></a>Afficher les variables locales
 > [!IMPORTANT]
@@ -31,7 +33,7 @@ ms.locfileid: "80738932"
 > [!NOTE]
 > Les fenêtres **Espion express** et **Espion** affichent également des variables avec le même format de nom, de valeur et de type. Toutefois, ces valeurs sont obtenues en appelant [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) au lieu de `IDebugProperty2::EnumChildren` .
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Exemple d’implémentation de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md) Utilise des exemples pour parcourir le processus d’implémentation des variables locales.
 
 ## <a name="related-sections"></a>Sections connexes

@@ -1,6 +1,8 @@
 ---
 title: Créer un élément de projet colonne de site avec un modèle de projet, partie 1
 titleSuffix: ''
+description: Définissez un type d’élément de projet pour la création d’une colonne de site, puis créez un modèle de projet à utiliser pour créer un projet SharePoint qui contient l’élément de projet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585548"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915213"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procédure pas à pas : création d’un élément de projet colonne de site avec un modèle de projet, partie 1
   Les projets SharePoint sont des conteneurs pour un ou plusieurs éléments de projet SharePoint. Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant vos propres types d’éléments de projet SharePoint, puis en les associant à un modèle de projet. Dans cette procédure pas à pas, vous allez définir un type d’élément de projet pour la création d’une colonne de site, puis vous allez créer un modèle de projet qui peut être utilisé pour créer un projet qui contient un élément de projet de colonne de site.
@@ -428,7 +430,7 @@ ms.locfileid: "91585548"
 
     Le nouveau code XML apporte les modifications suivantes au fichier :
 
-   - Définit l' `Name` élément sur la **colonne de site**de valeur. (Ce nom apparaît dans la boîte de dialogue **nouveau projet** ).
+   - Définit l' `Name` élément sur la **colonne de site** de valeur. (Ce nom apparaît dans la boîte de dialogue **nouveau projet** ).
 
    - Ajoute `ProjectItem` des éléments pour chaque filethat inclus dans chaque instance de projet.
 

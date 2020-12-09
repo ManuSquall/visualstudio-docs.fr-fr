@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une méthode de mise à jour | Microsoft Docs'
+description: Découvrez comment permettre aux utilisateurs de mettre à jour des données d’entreprise dans une liste externe SharePoint en ajoutant une méthode de mise à jour.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c76373c710908a8ae7edc49c4e26ff7e94336a6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014987"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915373"
 ---
 # <a name="how-to-add-an-updater-method"></a>Comment : ajouter une méthode de mise à jour
   Vous pouvez permettre aux utilisateurs de mettre à jour des données d’entreprise dans une liste externe SharePoint en créant une méthode de mise *à jour.* Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -31,11 +33,11 @@ ms.locfileid: "86014987"
 
 1. Dans le concepteur BDC, choisissez une entité.
 
-2. Dans la barre de menus, choisissez **Afficher**  >  **les autres**détails de la  >  **méthode BDC**Windows.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres** détails de la  >  **méthode BDC** Windows.
 
     La fenêtre Détails de la méthode BDC s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. Dans la liste **Ajouter une méthode** , choisissez **créer une méthode**de mise à jour.
+3. Dans la liste **Ajouter une méthode** , choisissez **créer une méthode** de mise à jour.
 
     Visual Studio ajoute les éléments suivants au modèle. Ces éléments s’affichent dans la fenêtre Détails de la méthode BDC.
 
@@ -50,7 +52,7 @@ ms.locfileid: "86014987"
      Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   > Si l’identificateur du type d’entité représente un champ dans une table de base de données qui n’est pas générée automatiquement, affectez la valeur **true**à la propriété de **champ de pré-** mise à jour.
+   > Si l’identificateur du type d’entité représente un champ dans une table de base de données qui n’est pas générée automatiquement, affectez la valeur **true** à la propriété de **champ de pré-** mise à jour.
 
 4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du fichier de code de service qui a été généré pour l’entité, puis choisissez **afficher le code**.
 

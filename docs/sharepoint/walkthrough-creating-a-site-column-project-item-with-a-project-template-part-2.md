@@ -1,6 +1,8 @@
 ---
 title: Créer un élément de projet colonne de site avec un modèle de projet, partie 2
 titleSuffix: ''
+description: Ajoutez un assistant à un modèle de projet colonne de site pour collecter les données des utilisateurs lorsqu’ils utilisent le modèle pour créer un projet SharePoint contenant l’élément de projet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585456"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915139"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procédure pas à pas : création d’un élément de projet colonne de site avec un modèle de projet, partie 2
   Une fois que vous avez défini un type personnalisé d’élément de projet SharePoint et que vous l’avez associé à un modèle de projet dans Visual Studio, vous pouvez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent votre modèle pour créer un nouveau projet qui contient l’élément de projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.
@@ -473,7 +475,7 @@ ms.locfileid: "91585456"
 
 2. Dans le projet ProjectTemplateWizard, ouvrez le fichier de code SiteColumnProjectWizard, puis ajoutez un point d’arrêt à la première ligne de code dans la `RunStarted` méthode.
 
-3. Dans la barre de menus, choisissez **Déboguer**les  >  **exceptions**.
+3. Dans la barre de menus, choisissez **Déboguer** les  >  **exceptions**.
 
 4. Dans la boîte de dialogue **exceptions** , assurez-vous que les cases à cocher **levé** et **non géré** par l’utilisateur pour les **exceptions du Common Language Runtime** sont désactivées, puis choisissez le bouton **OK** .
 

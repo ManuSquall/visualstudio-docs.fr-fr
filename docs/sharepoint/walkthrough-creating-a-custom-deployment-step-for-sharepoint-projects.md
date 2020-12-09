@@ -1,5 +1,7 @@
 ---
 title: Créer une étape de déploiement personnalisée pour les projets SharePoint
+description: Dans cette procédure pas à pas, créez une étape de déploiement personnalisée pour mettre à niveau des solutions de projet SharePoint sur un serveur qui exécute SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740017"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914931"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio comprend de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.
@@ -48,7 +50,7 @@ ms.locfileid: "90740017"
 
   La connaissance des concepts suivants est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
-- Utilisation du modèle d’objet serveur pour SharePoint. Pour plus d’informations, consultez [utilisation du modèle objet côté serveur SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Utilisation du modèle d’objet serveur pour SharePoint. Pour plus d’informations, consultez [utilisation du modèle d’objet Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Solutions SharePoint. Pour plus d’informations, consultez [vue d’ensemble des solutions](/previous-versions/office/developer/sharepoint-2010/aa543214(v=office.14)).
 
@@ -467,7 +469,7 @@ ms.locfileid: "90740017"
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Pour supprimer la définition de liste du site SharePoint
 
-1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **générer**un  >  **retrait**.
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **générer** un  >  **retrait**.
 
      Visual Studio rétracte la définition de liste à partir du site SharePoint.
 

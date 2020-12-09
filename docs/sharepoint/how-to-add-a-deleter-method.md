@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une méthode de suppression | Microsoft Docs'
+description: Découvrez comment ajouter une méthode de suppression dans le concepteur BDC de Visual Studio, de sorte qu’un utilisateur final peut supprimer un enregistrement de données d’une liste externe sur un site SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017033"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915438"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Comment : ajouter une méthode de suppression
   Vous pouvez autoriser un utilisateur final à supprimer un enregistrement de données d’une liste externe sur un site SharePoint en ajoutant une méthode de suppression au modèle. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86017033"
 
 1. Dans le **concepteur BDC**, choisissez une entité.
 
-2. Dans la barre de menus, choisissez **Afficher**  >  **les autres**détails de la  >  **méthode BDC**Windows.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres** détails de la  >  **méthode BDC** Windows.
 
     La fenêtre Détails de la **méthode BDC** s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 

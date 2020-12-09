@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une méthode de recherche | Microsoft Docs'
+description: Ajoutez une méthode de recherche dans Visual Studio, qui permet au service BDC (Business Data Connectivity) d’afficher une liste d’entités dans une liste ou un composant WebPart SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016728"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915087"
 ---
 # <a name="how-to-add-a-finder-method"></a>Comment : ajouter une méthode de recherche
   Pour permettre au service BDC (Business Data Connectivity) d’afficher une liste d’entités dans un composant WebPart ou une liste, vous devez créer une méthode de *recherche* . Une méthode de recherche est une méthode spéciale qui retourne une collection d’instances d’entité. Pour plus d’informations, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016728"
 
     Pour plus d’informations, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Dans la barre de menus, choisissez **Afficher**  >  **les autres**détails de la  >  **méthode BDC**Windows.
+2. Dans la barre de menus, choisissez **Afficher**  >  **les autres** détails de la  >  **méthode BDC** Windows.
 
     La fenêtre Détails de la **méthode BDC** s’ouvre. Pour plus d’informations sur la fenêtre Détails de la **méthode BDC** , consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 

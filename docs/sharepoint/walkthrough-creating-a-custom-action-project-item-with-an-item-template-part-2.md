@@ -1,6 +1,8 @@
 ---
 title: Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2
 titleSuffix: ''
+description: Dans cette procédure pas à pas, ajoutez un Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent un modèle d’élément pour ajouter un élément de projet d’action personnalisée sur un site SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585469"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915204"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procédure pas à pas : création d’un élément de projet d’action personnalisé avec un modèle d’élément, partie 2
   Une fois que vous avez défini un type personnalisé d’élément de projet SharePoint et que vous l’avez associé à un modèle d’élément dans Visual Studio, vous pouvez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent votre modèle pour ajouter une nouvelle instance de l’élément de projet à un projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.
@@ -266,7 +268,7 @@ ms.locfileid: "91585469"
 
 2. Dans le projet ItemTemplateWizard, ouvrez le fichier de code CustomActionWizard, puis ajoutez un point d’arrêt à la première ligne de code dans la `RunStarted` méthode.
 
-3. Dans la barre de menus, choisissez **Déboguer**les  >  **exceptions**.
+3. Dans la barre de menus, choisissez **Déboguer** les  >  **exceptions**.
 
 4. Dans la boîte de dialogue **exceptions** , assurez-vous que les cases à cocher **levé** et **non géré** par l’utilisateur pour les **exceptions du Common Language Runtime** sont désactivées, puis choisissez le bouton **OK** .
 

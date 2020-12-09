@@ -1,5 +1,7 @@
 ---
 title: Création de modèles de projet et d’élément personnalisés | Microsoft Docs
+description: Découvrez comment les modèles de création de modèle dans le kit de développement logiciel (SDK) Visual Studio vous permettent d’inclure des modèles dans des extensions plus grandes.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78770c74e5b866ad6791db01a448d46231edfd2a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801254"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915620"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Créer des modèles de projet et d’élément personnalisés
 

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une fonctionnalité à des solutions SharePoint | Microsoft Docs'
+description: Découvrez comment ajouter une fonctionnalité à des solutions SharePoint dans Visual Studio. Vous pouvez ajouter des éléments de fonctionnalité pour organiser différents types de fichiers SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07d939a12e47f4ba63f51310efb36cc0a59d20e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b31c650beff880340090b7548a18962fa276e36
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017003"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915113"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Comment : ajouter une fonctionnalité à des solutions SharePoint
   Lorsque vous créez une solution SharePoint, une fonctionnalité et un package sont ajoutés à la solution. Vous pouvez ajouter des éléments de fonctionnalité pour organiser différents types de fichiers SharePoint.

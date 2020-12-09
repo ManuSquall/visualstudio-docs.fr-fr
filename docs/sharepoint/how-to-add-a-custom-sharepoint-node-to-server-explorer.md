@@ -1,6 +1,8 @@
 ---
 title: 'Procédure : ajouter un nœud SharePoint personnalisé à Explorateur de serveurs | Microsoft Docs'
 titleSuffix: ''
+description: Ajoutez un nœud SharePoint personnalisé à Explorateur de serveurs dans Visual Studio. Affichez des composants SharePoint supplémentaires qui ne sont pas affichés par défaut dans Explorateur de serveurs.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584883"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915464"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procédure : ajouter un nœud SharePoint personnalisé à Explorateur de serveurs
   Vous pouvez ajouter des nœuds personnalisés sous le nœud **Connexions SharePoint** dans **Explorateur de serveurs**. Cela est utile lorsque vous souhaitez afficher des composants SharePoint supplémentaires qui ne s’affichent pas dans **Explorateur de serveurs** par défaut. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -46,7 +48,7 @@ ms.locfileid: "91584883"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. Cet attribut permet à Visual Studio de découvrir et de charger votre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> implémentation. Transmettez le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> type au constructeur d’attribut.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. Dans une définition de nœud, cet attribut spécifie l’identificateur de chaîne pour le nouveau nœud. Nous vous recommandons d’utiliser le format *nom*de l’entreprise. *nom du nœud* pour vous assurer que tous les nœuds ont un identificateur unique.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. Dans une définition de nœud, cet attribut spécifie l’identificateur de chaîne pour le nouveau nœud. Nous vous recommandons d’utiliser le format *nom* de l’entreprise. *nom du nœud* pour vous assurer que tous les nœuds ont un identificateur unique.
 
 5. Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> méthode, utilisez les membres du paramètre *TypeDefinition* pour configurer le comportement du nouveau nœud. Ce paramètre est un <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> objet qui fournit l’accès aux événements définis dans l' <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interface.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’une page d’application SharePoint | Microsoft Docs'
+description: Dans cette procédure pas à pas, créez une page d’application (forme spécialisée d’une page ASP.NET), puis déboguez-la à l’aide d’un site SharePoint local.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016491"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914879"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Procédure pas à pas : créer une page d’application SharePoint
 
@@ -73,7 +75,7 @@ Pour créer une page d’application, ajoutez un élément de **page d’applica
 
 L’élément de page application vous permet d’utiliser un concepteur pour ajouter des contrôles ASP.NET à la page d’application. Ce concepteur est le même que celui utilisé dans Visual Web Developer. Ajoutez une étiquette, une liste de cases d’option et une table à la vue **source** du concepteur, puis définissez les propriétés comme vous le feriez lors de la conception d’une page ASP.NET standard.
 
-1. Dans la barre de menus, choisissez **Afficher**la  >  **boîte à outils**.
+1. Dans la barre de menus, choisissez **Afficher** la  >  **boîte à outils**.
 
 2. Dans le nœud standard de la **boîte à outils**, effectuez l’une des opérations suivantes :
 

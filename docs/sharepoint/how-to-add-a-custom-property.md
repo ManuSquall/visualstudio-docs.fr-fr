@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une propriété personnalisée | Microsoft Docs'
+description: Découvrez comment ajouter une propriété personnalisée au modèle BDC (Business Data Connectivity) dans SharePoint, à l’aide de l’éditeur de propriétés dans l’Explorateur BDC de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017081"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915477"
 ---
 # <a name="how-to-add-a-custom-property"></a>Comment : ajouter une propriété personnalisée
   Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de l' **éditeur de propriétés**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que les chaînes de connexion et d’autres données au moment de l’exécution.
@@ -31,7 +33,7 @@ ms.locfileid: "86017081"
 
 1. Dans l' **Explorateur BDC**, choisissez le nœud qui représente l’élément de modèle auquel vous souhaitez appliquer une propriété personnalisée.
 
-2. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+2. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
 3. Dans la fenêtre **Propriétés** , choisissez la propriété **propriétés personnalisées** , puis cliquez sur le bouton de sélection (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")).
 

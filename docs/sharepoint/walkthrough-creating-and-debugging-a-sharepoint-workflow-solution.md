@@ -1,5 +1,7 @@
 ---
 title: Créer & déboguer une solution de flux de travail SharePoint
+description: Dans cette procédure pas à pas, créez et déboguez une solution de flux de travail SharePoint. Créez un modèle de workflow séquentiel de base. Créer des activités de flux de travail et gérer des événements.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014625"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915308"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procédure pas à pas : créer et déboguer une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de flux de travail séquentiel de base. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagée pour déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.

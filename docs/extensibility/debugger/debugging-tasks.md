@@ -1,5 +1,7 @@
 ---
 title: Tâches de débogage | Microsoft Docs
+description: Découvrez les tâches nécessaires au débogage d’un programme, telles que son attachement à un moteur de débogage, la génération d’événements de démarrage et l’activation des points d’arrêt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903556"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915568"
 ---
 # <a name="debug-tasks"></a>Tâches de débogage
 Pour déboguer un programme, celui-ci doit être lancé et un moteur de débogage (DE) doit être attaché à celui-ci, sinon le DE doit être attaché à un programme lancé précédemment. Une fois attaché, le DE doit générer certains événements DE démarrage. En réponse, le package de débogage tente de lier les points d’arrêt définis dans l’IDE. Lorsque le programme atteint un point d’arrêt lié, il s’arrête et attend une entrée de l’utilisateur.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Problèmes de sécurité](../../extensibility/debugger/security-issues.md) Décrit les étapes de sécurité nécessaires pour déboguer un programme.
 
  [Lancer un programme](../../extensibility/debugger/launching-a-program.md) Fournit des instructions pas à pas sur la façon de spécifier un DE, qui appelle le système d’exploitation pour lancer le programme.

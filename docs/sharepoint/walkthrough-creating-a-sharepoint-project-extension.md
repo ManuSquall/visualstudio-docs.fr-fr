@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’une extension de projet SharePoint | Microsoft Docs'
+description: Créer une extension de projet SharePoint, que vous pouvez utiliser pour répondre aux événements au niveau du projet, par exemple lors de l’ajout, de la suppression ou du changement de nom d’un projet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739926"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914866"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procédure pas à pas : créer une extension de projet SharePoint
   Cette procédure pas à pas illustre la création d’une extension pour les projets SharePoint. Vous pouvez utiliser une extension de projet pour répondre aux événements au niveau du projet, par exemple lors de l’ajout, de la suppression ou du changement de nom d’un projet. Vous pouvez également ajouter des propriétés personnalisées ou répondre en cas de modification d’une valeur de propriété. Contrairement aux extensions d’élément de projet, les extensions de projet ne peuvent pas être associées à un type de projet SharePoint particulier. Lorsque vous créez une extension de projet, l’extension est chargée lorsque l’un des types de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -102,7 +104,7 @@ ms.locfileid: "90739926"
 
 5. Dans **Explorateur de solutions**, sous le dossier **références** du projet **ProjectExtension** , choisissez **EnvDTE**.
 
-6. Dans la fenêtre **Propriétés** , affectez la **valeur false**à la propriété **incorporer les types Interop** .
+6. Dans la fenêtre **Propriétés** , affectez la **valeur false** à la propriété **incorporer les types Interop** .
 
 ## <a name="define-the-new-sharepoint-project-property"></a>Définir la propriété de projet SharePoint
  Créez une classe qui définit l’extension de projet et le comportement de la nouvelle propriété de projet. Pour définir la nouvelle extension de projet, la classe implémente l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interface. Implémentez cette interface chaque fois que vous souhaitez définir une extension pour un projet SharePoint. Ajoutez également <xref:System.ComponentModel.Composition.ExportAttribute> à la classe. Cet attribut permet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] à de découvrir et de charger votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implémentation. Transmettez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> type au constructeur de l’attribut.

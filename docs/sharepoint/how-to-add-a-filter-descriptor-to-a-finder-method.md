@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter un descripteur de filtre à une méthode de recherche | Microsoft Docs'
+description: Savoir comment ajouter un descripteur de filtre à une méthode de recherche à l’aide de la fenêtre Détails de la méthode BDC dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016734"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915425"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Comment : ajouter un descripteur de filtre à une méthode de recherche
   Les descripteurs de filtre permettent aux consommateurs du modèle de passer des valeurs aux méthodes avant leur exécution. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016734"
 
 2. Dans la fenêtre **Détails de méthode** , choisissez le descripteur de type du paramètre.
 
-3. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+3. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
 4. Dans la fenêtre **Propriétés** , définissez la propriété **nom du type** sur un type de données approprié pour le filtre.
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016734"
 
      Un nouveau descripteur de filtre apparaît sous le nœud **descripteurs de filtre** .
 
-7. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+7. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
 8. Dans la fenêtre **Propriétés** , choisissez la propriété **type** .
 
