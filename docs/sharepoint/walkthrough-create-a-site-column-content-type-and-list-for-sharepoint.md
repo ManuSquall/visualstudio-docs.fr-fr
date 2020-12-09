@@ -1,6 +1,8 @@
 ---
 title: Créer une colonne de site, un type de contenu et une liste pour SharePoint
 titleSuffix: ''
+description: Dans cette procédure pas à pas, créez une colonne de site personnalisée (champ), un type de contenu personnalisé qui utilise la colonne de site et une liste qui utilise le type de contenu dans SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298377"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914008"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : création d’une colonne de site, d’un type de contenu et d’une liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou des *champs*, ainsi qu’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.
@@ -129,7 +131,7 @@ ms.locfileid: "92298377"
 
      Cela vous permet d’accéder à d’autres colonnes de site potentiellement utiles dans le type de contenu contact, en plus des colonnes de site que vous avez définies précédemment.
 
-6. Une fois le concepteur de types de contenu affiché, dans l’onglet **colonnes** , ajoutez les trois colonnes de site que vous avez définies précédemment : **nom du patient**, **ID du patient**et nom du **médecin**. Pour ajouter ces colonnes, choisissez la première zone de liste dans la liste colonnes de site sous **nom complet**, puis choisissez chaque colonne de site dans la liste une par une.
+6. Une fois le concepteur de types de contenu affiché, dans l’onglet **colonnes** , ajoutez les trois colonnes de site que vous avez définies précédemment : **nom du patient**, **ID du patient** et nom du **médecin**. Pour ajouter ces colonnes, choisissez la première zone de liste dans la liste colonnes de site sous **nom complet**, puis choisissez chaque colonne de site dans la liste une par une.
 
     > [!TIP]
     > Pour choisir les colonnes de site plus rapidement, filtrez la liste en entrant les premières lettres du nom de la colonne.
@@ -140,7 +142,7 @@ ms.locfileid: "92298377"
 
 9. Dans l’onglet **type de contenu** , assurez-vous que le nom du type de contenu est informations sur le **patient**, puis modifiez la description en **carte d’informations sur les patients**.
 
-10. Modifiez **nom du groupe** en **types de contenu Clinic**et laissez les autres paramètres à leurs valeurs par défaut.
+10. Modifiez **nom du groupe** en **types de contenu Clinic** et laissez les autres paramètres à leurs valeurs par défaut.
 
 11. Dans la barre de menus, choisissez **fichier**  >  **enregistrer tout**, puis fermez le concepteur de types de contenu.
 
@@ -179,7 +181,7 @@ ms.locfileid: "92298377"
 
     - Commentaires
 
-9. Sous **nom d’affichage**de la colonne, choisissez une ligne vide, ajoutez une colonne de liste personnalisée et nommez-la **hospitalier**. Laissez son type de données **une seule ligne de texte**.
+9. Sous **nom d’affichage** de la colonne, choisissez une ligne vide, ajoutez une colonne de liste personnalisée et nommez-la **hospitalier**. Laissez son type de données **une seule ligne de texte**.
 
      La colonne de liste personnalisée s’applique uniquement à cette liste. Lorsque vous ajoutez une colonne de liste personnalisée à une liste, un nouveau type de contenu de liste, y compris toutes les colonnes ajoutées à la liste, est créé et défini comme liste par défaut.
 

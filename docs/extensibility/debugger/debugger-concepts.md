@@ -1,5 +1,7 @@
 ---
 title: Concepts du débogueur | Microsoft Docs
+description: Découvrez les concepts architecturaux utilisés lors de la conception du package de débogage Visual Studio pour vous aider à créer ce package.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7caecc9c3434afd90462757c9cb544f387df88d3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738980"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914034"
 ---
 # <a name="debugger-concepts"></a>Concepts du débogueur
 Pour générer le package de débogage Visual Studio, vous devez connaître les concepts architecturaux utilisés lors de la conception du package.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Session de débogage](../../extensibility/debugger/debug-session.md) Explique le rôle d’une session dans l’architecture de débogage.
 
  [Serveurs](../../extensibility/debugger/servers-visual-studio-sdk.md) Définit ce qu’un serveur est en termes d’architecture de débogage, en termes abstraits et physiques.

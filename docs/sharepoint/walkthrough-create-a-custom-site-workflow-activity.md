@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : créer une activité de flux de travail de site personnalisée | Microsoft Docs'
+description: Dans cette procédure pas à pas, consultez Comment créer une activité personnalisée pour un flux de travail SharePoint au niveau du site à l’aide de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016527"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913954"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procédure pas à pas : créer une activité de flux de travail de site personnalisé
   Cette procédure pas à pas montre comment créer une activité personnalisée pour un flux de travail au niveau du site à l’aide de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Les flux de travail au niveau du site s’appliquent à l’ensemble du site, pas seulement à une liste sur le site.) L’activité personnalisée crée une liste d’annonces de sauvegarde et y copie le contenu de la liste d’annonces.

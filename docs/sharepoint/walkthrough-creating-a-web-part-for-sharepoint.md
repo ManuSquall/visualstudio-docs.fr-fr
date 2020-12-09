@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’un composant WebPart pour SharePoint | Microsoft Docs'
+description: Créez un composant WebPart pour SharePoint. Les composants WebPart permettent aux utilisateurs de modifier directement le contenu, l’apparence et le comportement des pages de site SharePoint à l’aide d’un navigateur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247658"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914658"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart pour SharePoint
 

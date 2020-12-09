@@ -1,5 +1,7 @@
 ---
 title: Vérification et débogage du code SharePoint | Microsoft Docs
+description: Vérifiez et déboguez le code SharePoint. Utilisez IntelliTrace pour examiner les événements passés et l’état actuel dans votre solution. Utilisez des tests unitaires pour garantir le bon fonctionnement de vos méthodes.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008243"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914502"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Vérifier et déboguer le code SharePoint
 À l’aide d’IntelliTrace et du test unitaire, déboguez vos solutions SharePoint plus facilement et assurez-vous que chacune de leur méthode fonctionne correctement. Vous pouvez utiliser ces fonctionnalités pour les projets SharePoint dans Visual Studio en suivant les mêmes procédures que pour d’autres types de projets.

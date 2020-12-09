@@ -1,6 +1,8 @@
 ---
 title: 'Explorateur de serveurs : extension du nœud Connexions SharePoint'
 titleSuffix: ''
+description: Dans cette procédure pas à pas, consultez Comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le nœud Connexions SharePoint dans Explorateur de serveurs.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585574"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913943"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : appel du modèle d’objet client SharePoint dans une extension de Explorateur de serveurs
   Cette procédure pas à pas montre comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le nœud **Connexions SharePoint** dans **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation du modèle d’objet client SharePoint, consultez [appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).

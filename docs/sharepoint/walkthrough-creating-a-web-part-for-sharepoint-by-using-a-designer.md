@@ -1,5 +1,7 @@
 ---
 title: Créer un composant WebPart pour SharePoint à l’aide du concepteur
+description: Dans cette procédure pas à pas, créez visuellement un composant WebPart à l’aide du modèle de projet composant Visual Web Part SharePoint dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016388"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913982"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : créer un composant WebPart pour SharePoint à l’aide d’un concepteur
 
@@ -69,19 +71,19 @@ Concevez le composant WebPart en ajoutant des contrôles de la **boîte à outil
 
 1. Dans le concepteur Visual Web Developer, choisissez l’onglet **conception** pour basculer vers mode création.
 
-2. Dans la barre de menus, choisissez **Afficher**la  >  **boîte à outils**.
+2. Dans la barre de menus, choisissez **Afficher** la  >  **boîte à outils**.
 
 3. Dans le nœud **standard** de la **boîte à outils**, choisissez le contrôle **CheckBoxList** , puis effectuez l’une des étapes suivantes :
 
     - Ouvrez le menu contextuel du contrôle **CheckBoxList** , choisissez **copier**, ouvrez le menu contextuel de la première ligne dans le concepteur, puis choisissez **coller**.
 
-    - Faites glisser le contrôle **CheckBoxList** de la **boîte à outils**et connectez le contrôle à la première ligne dans le concepteur.
+    - Faites glisser le contrôle **CheckBoxList** de la **boîte à outils** et connectez le contrôle à la première ligne dans le concepteur.
 
 4. Répétez l’étape précédente, mais déplacez un bouton sur la ligne suivante du concepteur.
 
 5. Dans le concepteur, choisissez le bouton **Button1** .
 
-6. Dans la barre de menus, choisissez **Afficher**la  >  **fenêtre Propriétés**.
+6. Dans la barre de menus, choisissez **Afficher** la  >  **fenêtre Propriétés**.
 
      La fenêtre **Propriétés** apparaît.
 

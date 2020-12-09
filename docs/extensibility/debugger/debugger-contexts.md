@@ -1,5 +1,7 @@
 ---
 title: Contextes du débogueur | Microsoft Docs
+description: 'Découvrez comment le moteur de débogage de Visual Studio fonctionne dans des contextes distincts : contexte de code, contexte de documentation ou position et contexte d’évaluation d’expression.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56825fe299147e60c5ed9dfcefa491a427ab59e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 355ca667f0f909ebedc6f404ded545b3f862a444
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738978"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914684"
 ---
 # <a name="debugger-contexts"></a>Contextes du débogueur
 Lors du [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, le moteur de débogage (de) fonctionne simultanément dans plusieurs contextes distincts, comme suit :
@@ -26,7 +28,7 @@ Lors du [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, 
 
 - Le contexte d’évaluation de l’expression, qui décrit le contexte dans lequel l’évaluation de l’expression aura lieu.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Contexte de code](../../extensibility/debugger/code-context.md) Décrit le contexte de code comme une adresse dans le flux d’instructions d’un programme dans les architectures d’exécution actuelles et dans les langages non traditionnels, où le code ne peut pas être représenté par des instructions, mais d’autres moyens.
 
  [Position du document](../../extensibility/debugger/document-position.md) Définit la position du document dans le débogage Visual Studio à l’aide d’une abstraction d’une position dans un fichier source comme connu de l’IDE.

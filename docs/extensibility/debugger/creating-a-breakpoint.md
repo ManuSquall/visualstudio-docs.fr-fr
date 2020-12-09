@@ -1,5 +1,7 @@
 ---
 title: Création d’un point d’arrêt | Microsoft Docs
+description: En savoir plus sur les appels de méthode que le gestionnaire de débogage de session effectue lorsque le module nécessaire pour lier un point d’arrêt est chargé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba192a0cda2e63453984d3de7d6007744cc401b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903616"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914226"
 ---
 # <a name="create-a-breakpoint"></a>Créer un point d’arrêt
 Les éléments suivants décrivent le processus de création d’un point d’arrêt.

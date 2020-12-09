@@ -1,6 +1,8 @@
 ---
 title: Créer un composant WebPart Silverlight affichant OData pour SharePoint
 titleSuffix: ''
+description: Créez un composant WebPart Silverlight qui affiche OData pour SharePoint. Personnalisez l’application Silverlight, puis modifiez et testez le composant WebPart Silverlight.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298504"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914788"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart Silverlight qui affiche OData pour SharePoint
   SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData. svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche les informations de liste d’annonces SharePoint à l’aide de ListData. svc. Pour plus d’informations, consultez [interface REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) et [Open Data Protocol](https://www.odata.org/).
@@ -84,7 +86,7 @@ ms.locfileid: "92298504"
 
 5. Dans la barre de menus, choisissez **générer**  >  **générer la solution**.
 
-6. Ajoutez une nouvelle source de données au projet basé sur le service SharePoint. Pour ce faire, dans la barre de menus, choisissez **Afficher**d'  >  **autres**  >  **sources de données**Windows.
+6. Ajoutez une nouvelle source de données au projet basé sur le service SharePoint. Pour ce faire, dans la barre de menus, choisissez **Afficher** d'  >  **autres**  >  **sources de données** Windows.
 
      La fenêtre **sources de données** affiche toutes les données de liste SharePoint disponibles, telles que les tâches, les annonces et le calendrier.
 

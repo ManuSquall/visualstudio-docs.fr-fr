@@ -1,5 +1,7 @@
 ---
 title: Modification de la valeur d’un local | Microsoft Docs
+description: En savoir plus sur le processus de modification de la valeur d’une variable locale quand une nouvelle valeur est tapée dans le champ valeur de la fenêtre variables locales.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904271"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914333"
 ---
 # <a name="change-the-value-of-a-local"></a>Modifier la valeur d’un local
 > [!IMPORTANT]
@@ -42,7 +44,7 @@ ms.locfileid: "85904271"
 
    Cette procédure est également utilisée pour modifier la valeur d’une variable dans la fenêtre **Espion** , sauf qu’il s’agit de l' `IDebugProperty2` objet associé à la valeur de l’objet local utilisé à la place de l' `IDebugProperty2` objet associé au local lui-même.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Exemple d’implémentation de la modification de valeurs](../../extensibility/debugger/sample-implementation-of-changing-values.md) Utilise l’exemple MyCEE pour parcourir le processus de modification des valeurs.
 
 ## <a name="see-also"></a>Voir aussi

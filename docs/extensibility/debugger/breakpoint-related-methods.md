@@ -1,5 +1,7 @@
 ---
-title: Méthodes liées aux points d’arrêt | Microsoft Docs
+title: Méthodes Breakpoint-Related | Microsoft Docs
+description: Le débogage Visual Studio prend en charge les points d’arrêt liés, qui sont liés avec succès à un emplacement dans le code, et les points d’arrêt en attente, qui ne sont pas encore liés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72ec63e500ac86a4a5bd66a2956fe0fb06c8834
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739211"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914463"
 ---
 # <a name="breakpoint-related-methods"></a>Méthodes liées aux points d’arrêt
 Un moteur de débogage (DE) doit prendre en charge le paramètre des points d’arrêt. Le débogage Visual Studio prend en charge les types de points d’arrêt suivants :
@@ -29,7 +31,7 @@ Un moteur de débogage (DE) doit prendre en charge le paramètre des points d’
 
      Demandé par le biais de l’interface utilisateur mais pas encore lié à des instructions réelles
 
-## <a name="discussion"></a>Discussion
+## <a name="discussion"></a>Discussions
  Par exemple, un point d’arrêt en attente se produit lorsque les instructions ne sont pas encore chargées. Lorsque le code est chargé, les points d’arrêt en attente essaient de se lier au code à l’emplacement prescrit, c’est-à-dire d’insérer des instructions d’arrêt dans le code. Les événements sont envoyés au gestionnaire de débogage de session (SDM) pour indiquer la réussite de la liaison ou signaler des erreurs de liaison.
 
  Un point d’arrêt en attente gère également sa propre liste interne de points d’arrêt liés correspondants. Un point d’arrêt en attente peut entraîner l’insertion de nombreux points d’arrêt dans le code. L’interface utilisateur de débogage de Visual Studio affiche une arborescence des points d’arrêt en attente et leurs points d’arrêt liés correspondants.

@@ -1,5 +1,7 @@
 ---
 title: Création d’un moteur de débogage personnalisé | Microsoft Docs
+description: Utilisez ces articles pour en savoir plus sur la création d’un moteur de débogage qui permet de déboguer des architectures Runtime particulières.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 241bc016d8a64905951bffef07ba425f1351a727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903577"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914190"
 ---
 # <a name="create-a-custom-debug-engine"></a>Créer un moteur de débogage personnalisé
 Un moteur de débogage (DE) est un composant qui permet de déboguer des architectures Runtime particulières. Il n’y a généralement qu’une seule implémentation par environnement au moment DE l’exécution.
@@ -39,7 +41,7 @@ Un moteur de débogage (DE) est un composant qui permet de déboguer des archite
 
 5. Configurer la terminaison et le détachement
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Inscrire un moteur de débogage personnalisé](../../extensibility/debugger/registering-a-custom-debug-engine.md) Explique les étapes nécessaires à l’inscription d’un moteur de débogage avec Visual Studio afin de pouvoir l’utiliser.
 
  [Activer un programme à déboguer](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) Explique qu’avant de pouvoir déboguer un programme, vous devez d’abord lancer le ou l’attacher à un programme existant.

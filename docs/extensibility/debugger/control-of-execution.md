@@ -1,5 +1,7 @@
 ---
 title: Contrôle de l’exécution | Microsoft Docs
+description: En savoir plus sur l’arrêt des événements, ce qui signifie que le DE attend une réponse de l’utilisateur au moyen de l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387003"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913878"
 ---
 # <a name="control-of-execution"></a>Contrôle de l’exécution
 Le moteur de débogage (DE) envoie généralement l’un des événements suivants comme dernier événement de démarrage :
@@ -57,7 +59,7 @@ Le moteur de débogage (DE) envoie généralement l’un des événements suivan
 
    Si le package de débogage est destiné à ignorer un événement d’arrêt particulier, le package de débogage appelle le SDM, qui appelle [IDebugProgram2 :: continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Si le programme a été pas à pas détaillé, dépassé ou en dehors d’une fonction lorsqu’il a rencontré la condition d’arrêt, il continue l’étape. Cela implique que le programme gère un état d’exécution pas à pas, afin qu’il sache comment continuer.
 
-   Les appels effectués par le SDM à `Step` , **s’exécutent**et se **poursuivent** sont asynchrones, ce qui signifie que le SDM s’attend à ce que l’appel soit retourné rapidement. Si le DE envoie un événement d’arrêt SDM sur le même thread avant `Step` , **Execute**ou **continue** retourne, le SDM cesse de répondre.
+   Les appels effectués par le SDM à `Step` , **s’exécutent** et se **poursuivent** sont asynchrones, ce qui signifie que le SDM s’attend à ce que l’appel soit retourné rapidement. Si le DE envoie un événement d’arrêt SDM sur le même thread avant `Step` , **Execute** ou **continue** retourne, le SDM cesse de répondre.
 
 ## <a name="see-also"></a>Voir aussi
 - [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)

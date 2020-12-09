@@ -1,5 +1,7 @@
 ---
 title: Liaison de points d’arrêt | Microsoft Docs
+description: Découvrez comment l’IDE formule la requête pour un point d’arrêt et invite la session de débogage à créer le point d’arrêt lorsqu’un utilisateur définit un point d’arrêt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903225"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914710"
 ---
 # <a name="bind-breakpoints"></a>Lier des points d’arrêt
 Si l’utilisateur définit un point d’arrêt, par exemple en appuyant sur **F9**, l’IDE formule la demande et invite la session de débogage à créer le point d’arrêt.

@@ -1,5 +1,7 @@
 ---
 title: Évaluation des expressions | Microsoft Docs
+description: En savoir plus sur l’évaluation des expressions, qui sont créées à partir de chaînes transmises à partir des fenêtres automatique, espion, espion Express ou immédiat.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738831"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914593"
 ---
 # <a name="evaluate-expressions"></a>Évaluer les expressions
-Les expressions sont créées à partir de chaînes transmises à partir des fenêtres **automatique**, **Espion**, **Espion express**ou **immédiat** . Lorsqu’une expression est évaluée, elle génère une chaîne imprimable qui contient le nom et le type de variable ou d’argument et sa valeur. Cette chaîne s’affiche dans la fenêtre IDE correspondante.
+Les expressions sont créées à partir de chaînes transmises à partir des fenêtres **automatique**, **Espion**, **Espion express** ou **immédiat** . Lorsqu’une expression est évaluée, elle génère une chaîne imprimable qui contient le nom et le type de variable ou d’argument et sa valeur. Cette chaîne s’affiche dans la fenêtre IDE correspondante.
 
 ## <a name="implementation"></a>Implémentation
  Les expressions sont évaluées lorsqu’un programme s’est arrêté à un point d’arrêt. L’expression elle-même est représentée par une interface [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , qui représente une expression analysée prête pour la liaison et l’évaluation dans le contexte d’évaluation de l’expression donné. Le frame DE pile détermine le contexte d’évaluation d’expression, fourni par le moteur DE débogage en implémentant l’interface [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .

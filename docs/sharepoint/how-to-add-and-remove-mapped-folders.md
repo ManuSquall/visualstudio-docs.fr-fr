@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : ajouter et supprimer des dossiers mappés | Microsoft Docs'
+description: Ajoutez et supprimez des dossiers mappés à un projet dans SharePoint.  Modifier l’emplacement de déploiement d’un dossier mappé. Renommez ou supprimez des dossiers mappés.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014648"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914803"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Procédure : ajouter et supprimer des dossiers mappés
   Certains dossiers couramment utilisés dans SharePoint, tels que les images et les mises en page, sont profondément incorporés dans la hiérarchie des fichiers. Vous pouvez mapper ces dossiers à un projet SharePoint pour y accéder plus facilement. Les dossiers mappés sont des dossiers du projet SharePoint qui correspondent à l’emplacement physique des fichiers dans l’installation de SharePoint Server.

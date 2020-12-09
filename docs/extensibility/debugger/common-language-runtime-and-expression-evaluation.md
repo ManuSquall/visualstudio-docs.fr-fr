@@ -1,5 +1,7 @@
 ---
 title: Common Language Runtime et évaluation des expressions | Microsoft Docs
+description: Découvrez comment le Common Language Runtime interagit avec le moteur de débogage et comment intégrer un langage de programmation propriétaire dans l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7c120ac1da59ab86e9419bcb031af46f1b3d900
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739109"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914255"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime et évaluation des expressions
 > [!IMPORTANT]
@@ -24,7 +26,7 @@ ms.locfileid: "80739109"
 
  Les compilateurs, tels que Visual Basic et C# (prononcé C-Sharp), qui ciblent le Common Language Runtime (CLR), produisent le langage MSIL (Microsoft Intermediate Language), qui est ensuite compilé en code natif. Le CLR fournit un moteur de débogage (DE) pour déboguer le code résultant. Si vous envisagez d’intégrer votre langage de programmation propriétaire dans l’IDE de Visual Studio, vous pouvez choisir de compiler en MSIL et, par conséquent, vous n’aurez pas à écrire votre propre. Toutefois, vous devrez écrire un évaluateur d’expression (EE) qui est capable d’évaluer des expressions dans le contexte de votre langage de programmation.
 
-## <a name="discussion"></a>Discussion
+## <a name="discussion"></a>Discussions
  Les expressions de langage informatique sont généralement analysées pour produire un ensemble d’objets de données et un ensemble d’opérateurs utilisés pour les manipuler. Par exemple, l’expression « A + B » peut être analysée pour appliquer l’opérateur d’addition (+) aux objets de données « A » et « B », ce qui peut entraîner un autre objet de données. Le jeu total d’objets de données, d’opérateurs et de leurs associations est le plus souvent représenté dans un programme sous la forme d’une arborescence, avec les opérateurs situés aux nœuds de l’arborescence et les objets de données au niveau des branches. Une expression qui a été décomposée sous forme d’arborescence est souvent appelée arborescence analysée.
 
  Une fois qu’une expression a été analysée, un fournisseur de symboles (SP) est appelé pour évaluer chaque objet de données. Par exemple, si « A » est défini à la fois dans plusieurs méthodes, la question « quel ? » la réponse doit être résolue avant que la valeur d’un puisse être vérifiée. La réponse retournée par le SP est semblable à la suivante : « le troisième élément du cinquième frame de pile » ou « A 50 octets au-delà du début de la mémoire statique allouée à cette méthode ».

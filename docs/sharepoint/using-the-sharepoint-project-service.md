@@ -1,5 +1,7 @@
 ---
 title: Utilisation du service de projet SharePoint | Microsoft Docs
+description: Utilisez le service de projet SharePoint pour effectuer des tâches liées au système de projet. Affichez la liste des fonctionnalités du service de projet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3aeee895810eed8e434fda93328e4e179c9d39
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 635e4123d302cf5c3173ee298f0239f5fa1c95f3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740108"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914541"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Utiliser le service de projet SharePoint
   Le système de projet SharePoint inclut un service de projet que vous pouvez utiliser pour effectuer des tâches liées au système de projet. Le service de projet est un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.

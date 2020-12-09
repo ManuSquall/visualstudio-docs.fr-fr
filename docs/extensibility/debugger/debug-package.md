@@ -1,5 +1,7 @@
 ---
 title: Package de débogage | Microsoft Docs
+description: Découvrez comment le package de débogage s’exécute dans le shell Visual Studio et gère l’interface utilisateur en consommant les interfaces de débogage et en communiquant avec le gestionnaire de débogage de session.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739019"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914125"
 ---
 # <a name="debug-package"></a>Package de débogage
 Le package de débogage s’exécute dans le shell Visual Studio et gère toute l’interface utilisateur. Il consomme les interfaces de débogage de Visual Studio et communique avec le gestionnaire de débogage de session (SDM).
@@ -29,5 +31,5 @@ Le package de débogage s’exécute dans le shell Visual Studio et gère toute 
 ## <a name="see-also"></a>Voir aussi
 - [Gestionnaire de débogage de session](../../extensibility/debugger/session-debug-manager.md)
 - [Frames de pile](../../extensibility/debugger/stack-frames.md)
-- [Thèmes](../../extensibility/debugger/threads.md)
+- [Threads](../../extensibility/debugger/threads.md)
 - [Composants du débogueur](../../extensibility/debugger/debugger-components.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’un projet de définition de site de base | Microsoft Docs'
+description: Dans cette procédure pas à pas SharePoint, consultez Comment créer une définition de site de base contenant un composant Visual Web part avec des contrôles.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016761"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913852"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : création d’un projet de définition de site de base
   Cette procédure pas à pas vous montre comment créer une définition de site de base contenant un composant Visual Web part avec des contrôles. Par souci de clarté, le composant Visual Web part que vous créez n’a que quelques contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent davantage de fonctionnalités.

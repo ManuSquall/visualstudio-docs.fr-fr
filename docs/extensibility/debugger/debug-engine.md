@@ -1,5 +1,7 @@
 ---
 title: Moteur de débogage | Microsoft Docs
+description: Découvrez comment un moteur de débogage fonctionne avec l’interpréteur ou le système d’exploitation pour fournir des services tels que le contrôle d’exécution, les points d’arrêt et l’évaluation d’expression.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739068"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914216"
 ---
 # <a name="debug-engine"></a>Moteur de débogage
 Un moteur DE débogage (DE) fonctionne avec l’interpréteur ou le système d’exploitation pour fournir des services de débogage tels que le contrôle d’exécution, les points d’arrêt et l’évaluation d’expression. Le DE est chargé de surveiller l’état d’un programme en cours de débogage. Pour ce faire, le service DE utilise les méthodes disponibles dans le runtime pris en charge, que ce soit à partir de l’UC ou des API fournies par le Runtime.
