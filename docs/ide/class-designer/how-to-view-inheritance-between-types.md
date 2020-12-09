@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour afficher l'héritage entre les types (Concepteur de classes)
+title: Voir l’héritage entre les types
 description: Découvrez comment rechercher la relation d’héritage entre un type de base et ses types dérivés sur un diagramme de classes dans Concepteur de classes.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82785f1a5cac2185925c63c4d6d224ffd5fd67de
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0e4dff57b11d0ba16fcab7d2ddf8c175e05c2b6d
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901191"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933451"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Guide pratique pour afficher l’héritage entre les types dans le Concepteur de classes
 

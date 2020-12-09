@@ -1,6 +1,6 @@
 ---
-title: 'Comment : fractionner une classe en classes partielles (Concepteur de classes)'
-description: Découvrez comment utiliser le mot clé Partial pour diviser la déclaration d’une classe ou d’une structure en plusieurs déclarations.
+title: Diviser une classe en classes partielles
+description: Découvrez comment utiliser le mot clé Partial pour diviser la déclaration d’une classe ou d’une structure en plusieurs déclarations dans Concepteur de classes.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0726851aec0d86223c2d95027b92137682c8a9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d6eb6e72dc409a642dcf8e1a4c7a7389529375c7
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901347"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933517"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Guide pratique pour diviser une classe en classes partielles dans le Concepteur de classes
 
