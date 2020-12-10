@@ -1,5 +1,7 @@
 ---
 title: 'Comment : attacher des vues à des données de document | Microsoft Docs'
+description: Vous pourrez peut-être attacher une nouvelle vue de document à un objet de données de document existant. Utilisez cette procédure pour déterminer si vous pouvez attacher la vue.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905891"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994184"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Comment : attacher des vues à des données de document
 Si vous disposez d’une nouvelle vue de document, vous pouvez l’attacher à un objet de données de document existant.

@@ -1,6 +1,6 @@
 ---
-title: Concepteur d’activités Concepteur de flux de travail-InitializeCorrelation
-description: Découvrez comment vous pouvez utiliser le concepteur d’activités InitializeCorrelation pour créer et configurer une activité InitializeCorrelation.
+title: Concepteur d'activités InitializeCorrelation
+description: Dans Concepteur de flux de travail, Découvrez comment vous pouvez utiliser le concepteur d’activités InitializeCorrelation pour créer et configurer une activité InitializeCorrelation.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b786277c79a355e1859b337a45ab093e6f2a42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437786"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993196"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Concepteur d'activités InitializeCorrelation
 
@@ -43,14 +43,14 @@ Le tableau suivant présente les <xref:System.ServiceModel.Activities.Initialize
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>. La valeur par défaut est InitializeCorrelation.<br /><br /> Bien que l’utilisation d’une valeur non définie par défaut pour l’friendly <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|Faux|Objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour associer des activités de workflow dans la corrélation.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|Faux|Dictionnaire des données de corrélation qui lie les messages à l'instance de workflow.<br /><br /> Utilisez la boîte de dialogue **initialiser la corrélation** pour configurer le <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Pour plus d’informations sur l’utilisation de cette boîte de dialogue, consultez l’article de la [boîte de dialogue Éditeur de collections de types](../workflow-designer/type-collection-editor-dialog-box.md) .|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>. La valeur par défaut est InitializeCorrelation.<br /><br /> Bien que l’utilisation d’une valeur non définie par défaut pour l’friendly <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|Objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour associer des activités de workflow dans la corrélation.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Dictionnaire des données de corrélation qui lie les messages à l'instance de workflow.<br /><br /> Utilisez la boîte de dialogue **initialiser la corrélation** pour configurer le <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Pour plus d’informations sur l’utilisation de cette boîte de dialogue, consultez l’article de la [boîte de dialogue Éditeur de collections de types](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Çoive](../workflow-designer/receive-activity-designer.md)
+- [Recevoir](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Envoi](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

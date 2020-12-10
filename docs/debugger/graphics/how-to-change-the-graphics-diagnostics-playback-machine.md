@@ -1,5 +1,6 @@
 ---
 title: Modifier l’ordinateur de lecture des diagnostics Graphics
+description: Lire des informations graphiques à partir d’un journal de graphisme à l’aide de votre ordinateur local, ou à l’aide d’un ordinateur ou d’un périphérique distant qui reproduit mieux le problème.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b7f3f09495b760d4ee3ab8c20781bc337b1bb2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8b6ae19fde7397b97ebe087557d71a52303605ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810690"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995068"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procédure : modifier l’ordinateur de lecture Graphics Diagnostics
 Vous pouvez lire les informations graphiques à l’aide de votre ordinateur local ou à l’aide d’un ordinateur ou d’un appareil distant.

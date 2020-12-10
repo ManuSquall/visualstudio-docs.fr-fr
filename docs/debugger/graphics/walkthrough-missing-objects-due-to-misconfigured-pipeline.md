@@ -1,5 +1,6 @@
 ---
 title: Objets manquants en raison d’un pipeline mal configuré
+description: Suivez une investigation qui recherche un pipeline mal configuré. Elle montre comment utiliser la liste des événements Graphics, les étapes de canalisation Graphics et la pile des appels des événements Graphics.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: e099d94479183e795a2ad3c8fc8db03fa969111c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189847"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994993"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant, car un nuanceur de pixels n’a pas été défini.
@@ -36,7 +37,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
 
  ![L'objet ne peut être visualisé](media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx_diag_demo_misconfigured_pipeline_problem")
 
-## <a name="investigation"></a>Investigation
+## <a name="investigation"></a>Examen
  À l'aide des outils Graphics Diagnostics, vous pouvez charger le document du journal de graphisme pour examiner les frames capturés pendant le test.
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphisme

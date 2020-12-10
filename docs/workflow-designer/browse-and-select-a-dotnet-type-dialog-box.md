@@ -1,6 +1,6 @@
 ---
-title: Concepteur de flux de travail-parcourir et sélectionner un type .NET, boîte de dialogue
-description: Découvrez comment vous pouvez utiliser la boîte de dialogue Parcourir et sélectionner un type .NET pour choisir un type dans une arborescence d’assemblys et de projets.
+title: Rechercher et sélectionner un type .NET (boîte de dialogue)
+description: Découvrez comment vous pouvez utiliser la boîte de dialogue Parcourir et sélectionner un type .NET pour choisir un type dans une arborescence d’assemblys et de projets dans Concepteur de flux de travail.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438176"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995484"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 
@@ -41,7 +41,7 @@ Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants
 
 1. Dans la zone **nom de type** , entrez le nom du type que vous souhaitez utiliser.
 
-2. Effectuez l’une des actions suivantes :
+2. Effectuez l’une des opérations suivantes :
 
     - Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence, dans la zone **nom de type** , double-cliquez sur le type pour le sélectionner.
 
@@ -57,7 +57,7 @@ Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants
 
 ## <a name="types-displayed-in-the-type-browser"></a>Types affichés dans l'Explorateur de types
 
-Les types affichés dans l'Explorateur de types peuvent varier selon le mode de lancement de l'Explorateur de types. Si l’Explorateur de types a été lancé à partir d’un projet de workflow à l’intérieur de **VS2010** , par défaut, tous les types des assemblys référencés et des projets référencés sont affichés. Si l’Explorateur de types a été lancé en dehors d’un système de projet **VS2010** (comme dans une application de flux de travail réhébergée ou dans un fichier de flux de travail autonome), les types de tous les assemblys chargés dans AppDomain sont affichés par défaut.
+Les types affichés dans l'Explorateur de types peuvent varier selon le mode de lancement de l'Explorateur de types. Si l’Explorateur de types a été lancé à partir d’un projet de workflow à l’intérieur de **VS2010**, par défaut, tous les types des assemblys référencés et des projets référencés sont affichés. Si l’Explorateur de types a été lancé en dehors d’un système de projet **VS2010** (comme dans une application de flux de travail réhébergée ou dans un fichier de flux de travail autonome), les types de tous les assemblys chargés dans AppDomain sont affichés par défaut.
 
 Les types dans l'Explorateur de types peuvent être filtrés par développeurs de concepteurs d'activités. Pour une activité donnée, seul un sous-ensemble des types peut s'afficher. Par exemple, dans l'activité <xref:System.Activities.Statements.TryCatch>, seuls les types dérivés de <xref:System.Exception> sont affichés dans l'Explorateur de types.
 

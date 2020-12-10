@@ -1,5 +1,7 @@
 ---
 title: Service d’images et catalogue | Microsoft Docs
+description: Cet article contient des conseils et des meilleures pratiques pour l’adoption du catalogue d’images et du service d’images Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584540"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993534"
 ---
 # <a name="image-service-and-catalog"></a>Service d’images et catalogue
 Ce livre de recettes contient des conseils et des pratiques recommandées pour l’adoption du service d’images Visual Studio et du catalogue d’images introduit dans Visual Studio 2015.
@@ -103,7 +105,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 
 |**Sous-élément**|**Définition**|
 |-|-|
-|Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|
+|Importation|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID|
 |ID|Le symbole représente un ID et doit être un entier non négatif|
 |String|Le symbole représente une valeur de chaîne arbitraire|
@@ -160,7 +162,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 |**Attribut**|**Définition**|
 |-|-|
 |Uri|Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’autorité application:///<br />-Référence de ressource de composant absolue<br />-Chemin d’accès à un fichier contenant une ressource native|
-|Contexte|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> *Clair :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> *Foncé :* La source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut Background est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si Background est *clair*, *Dark*, *HighContrastLight*ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si Background est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
+|Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> *Clair :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> *Foncé :* La source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut Background est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si Background est *clair*, *Dark*, *HighContrastLight* ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si Background est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
 
 Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :
 
@@ -283,7 +285,7 @@ Un \<Source> élément peut avoir exactement l’un des sous-éléments facultat
 
 1. Commencez par ajouter les références d’assembly requises dans la section des premières étapes ci-dessus à votre projet. Vous n’avez pas besoin de les ajouter, par conséquent, ajoutez simplement les références dont vous avez besoin. (Remarque : Si vous utilisez ou avez accès à des **couleurs** au lieu de **pinceaux**, vous pouvez ignorer la référence aux **utilitaires**, car vous n’aurez pas besoin du convertisseur.)
 
-2. Sélectionnez l’image souhaitée et récupérez son moniker. Utilisez un **KnownMoniker**ou utilisez le vôtre si vous avez vos propres images et monikers personnalisés.
+2. Sélectionnez l’image souhaitée et récupérez son moniker. Utilisez un **KnownMoniker** ou utilisez le vôtre si vous avez vos propres images et monikers personnalisés.
 
 3. Ajoutez **CrispImages** à votre code XAML. (Voir l’exemple ci-dessous.)
 
@@ -461,7 +463,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 ::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Comment faire utiliser des monikers d’image dans une nouvelle fenêtre outil ?
- Le modèle de projet de package VSIX a été mis à jour pour Visual Studio 2015. Pour créer une nouvelle fenêtre outil, cliquez avec le bouton droit sur le projet VSIX et sélectionnez **Ajouter**  >  un**nouvel élément** (**CTRL** + **MAJ** + **a**). Sous le nœud extensibilité pour le langage du projet, sélectionnez **fenêtre outil personnalisée**, attribuez un nom à la fenêtre outil, puis appuyez sur le bouton **Ajouter** .
+ Le modèle de projet de package VSIX a été mis à jour pour Visual Studio 2015. Pour créer une nouvelle fenêtre outil, cliquez avec le bouton droit sur le projet VSIX et sélectionnez **Ajouter**  >  un **nouvel élément** (**CTRL** + **MAJ** + **a**). Sous le nœud extensibilité pour le langage du projet, sélectionnez **fenêtre outil personnalisée**, attribuez un nom à la fenêtre outil, puis appuyez sur le bouton **Ajouter** .
 
  Voici les emplacements clés pour utiliser des monikers dans une fenêtre outil. Suivez les instructions pour chacune d’elles :
 
@@ -576,7 +578,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Comment faire port d’un système de projet ?
  **Guide pratique pour fournir des ImageMonikers pour un projet**
 
-1. Implémentez **VSHPROPID_SupportsIconMonikers** sur le **IVsHierarchy**du projet et retourne true.
+1. Implémentez **VSHPROPID_SupportsIconMonikers** sur le **IVsHierarchy** du projet et retourne true.
 
 2. Implémentez l’un ou l’autre **VSHPROPID_IconMonikerImageList** (si le projet d’origine a utilisé **VSHPROPID_IconImgList**) ou **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId** **VSHPROPID_OpenFolderIconMonikerGuid** **, VSHPROPID_OpenFolderIconMonikerId (si** le projet d’origine a utilisé **VSHPROPID_IconHandle** et **VSHPROPID_OpenFolderIconHandle**).
 
@@ -638,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Recommandé : renommez le symbole AssetsGuid et le symbole de la bande d’image en fonction de son utilisation.
 
-   - Remplacez le GUID de chaque **ContainedImage**par $ (ImageCatalogGuid), remplacez l’ID de chaque **ContainedImage**par $ ( \<moniker> ) et ajoutez l’attribut External = "true" à chaque **ContainedImage**
+   - Remplacez le GUID de chaque **ContainedImage** par $ (ImageCatalogGuid), remplacez l’ID de chaque **ContainedImage** par $ ( \<moniker> ) et ajoutez l’attribut External = "true" à chaque **ContainedImage**
 
        - \<moniker> doit être remplacé par le **KnownMoniker** qui correspond à l’image, mais avec le « KnownMonikers ». supprimé du nom.
 
@@ -1009,7 +1011,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||Informations de référence|
+    |GlyphAssembly||Référence|
     |GlyphLibrary||Bibliothèque|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

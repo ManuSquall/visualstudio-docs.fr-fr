@@ -1,6 +1,6 @@
 ---
-title: Concepteur d’activités Concepteur de flux de travail-ExistsInCollection &lt; T &gt;
-description: Découvrez comment vous pouvez utiliser le <T> Concepteur d’activités ExistsInCollection pour créer et configurer une <T> activité ExistsInCollection.
+title: "&lt;Concepteur d' &gt; activités ExistsInCollection T"
+description: Découvrez comment vous pouvez utiliser le <T> Concepteur d’activités ExistsInCollection dans Concepteur de flux de travail pour créer et configurer une <T> activité ExistsInCollection.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 357001651018b1b9211efc75d3b9397fb2a943cf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9012bb936c2a9a8944639458d4165e08f5e7081e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438020"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995406"
 ---
 # <a name="existsincollectiont-activity-designer"></a>Concepteur d’activités ExistsInCollection\<T>
 
@@ -29,7 +29,7 @@ L’activité <xref:System.Activities.Statements.ExistsInCollection%601> déterm
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Utilisation du \<T> Concepteur d’activités ExistsInCollection
 
-Le concepteur d’activités **ExistsInCollection \<T>** se trouve dans la catégorie **collection** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** de concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **ExistsInCollection \<T>** se trouve dans la catégorie **collection** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** de concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur d’activités **ExistsInCollection \<T>** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . Une <xref:System.Activities.Statements.ExistsInCollection%601> activité est créée avec la valeur par défaut <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection<Int32 \> . (Par défaut, le *TypeArgument* est **Int32**. Elle peut être modifiée dans la grille des propriétés.)  La <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête du concepteur d’activités **ExistsInCollection<T \>** ou dans la zone **DisplayName** de la grille des propriétés. Les autres propriétés doivent être modifiées dans la grille des propriétés.
 
@@ -39,11 +39,11 @@ Le tableau suivant présente les <xref:System.Activities.Statements.ExistsInColl
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial de l'activité <xref:System.Activities.Statements.ExistsInCollection%601>. La valeur par défaut est ExistsInCollection<Int32 \> . Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Vrai|Élément à rechercher dans la collection \<T> . Cet élément est de type *T* , qui est de type *TypeArgument*. Pour spécifier l'élément, tapez une expression Visual Basic dans la grille des propriétés.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Vrai|Collection dans laquelle vérifier si l’élément existe. Cette collection est de type **ICollection<TypeArgument \> .** Pour spécifier la collection, tapez une expression Visual Basic dans la grille des propriétés.|
-|*TypeArgument*|Vrai|Type T des éléments contenus dans la collection <xref:System.Collections.Generic.ICollection%601>. Par défaut, ce type de *TypeArgument* est défini sur **Int32**. Pour modifier le type, modifiez la valeur de *TypeArgument* dans la zone de liste déroulante de la grille des propriétés.|
-|<xref:System.Activities.Activity%601.Result%2A>|Faux|Valeur qui indique si l'élément spécifié existe dans la collection. Pour spécifier une variable à lier au résultat, tapez une variable Visual Basic dans la grille des propriétés.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.ExistsInCollection%601>. La valeur par défaut est ExistsInCollection<Int32 \> . Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Élément à rechercher dans la collection \<T> . Cet élément est de type *T*, qui est de type *TypeArgument*. Pour spécifier l'élément, tapez une expression Visual Basic dans la grille des propriétés.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Collection dans laquelle vérifier si l’élément existe. Cette collection est de type **ICollection<TypeArgument \> .** Pour spécifier la collection, tapez une expression Visual Basic dans la grille des propriétés.|
+|*TypeArgument*|True|Type T des éléments contenus dans la collection <xref:System.Collections.Generic.ICollection%601>. Par défaut, ce type de *TypeArgument* est défini sur **Int32**. Pour modifier le type, modifiez la valeur de *TypeArgument* dans la zone de liste déroulante de la grille des propriétés.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Valeur qui indique si l'élément spécifié existe dans la collection. Pour spécifier une variable à lier au résultat, tapez une variable Visual Basic dans la grille des propriétés.|
 
 ## <a name="see-also"></a>Voir aussi
 

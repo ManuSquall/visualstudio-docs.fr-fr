@@ -1,5 +1,5 @@
 ---
-title: Examiner des nœuds à l’aide de la vue de modèle de contenu dans le concepteur de schémas XML
+title: Examiner le modèle de contenu de nœuds
 description: Découvrez comment utiliser la vue de modèle de contenu dans le concepteur de schémas XML pour examiner le modèle de contenu des nœuds dans un schéma XML.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399507"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995276"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Comment : examiner le modèle de contenu des nœuds à l’aide de la vue de modèle de contenu
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>Comment : examiner le modèle de contenu des nœuds à l’aide de la vue de modèle de contenu
 
 Cette rubrique explique comment explorer vos nœuds à l’aide de la [vue de modèle de contenu](../xml-tools/content-model-view.md).
 

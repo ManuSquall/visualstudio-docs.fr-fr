@@ -1,5 +1,7 @@
 ---
 title: Visualisation et affichage des données | Microsoft Docs
+description: Découvrez comment les visualiseurs de type et les visionneuses personnalisées présentent des données à un développeur. L’évaluateur d’expression prend en charge les visualiseurs de types tiers.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712379"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995457"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisation et affichage des données
 Les visualiseurs de type et les visionneuses personnalisées présentent des données d’une manière qui est rapidement significative pour un développeur. L’évaluateur d’expression (EE) peut prendre en charge des visualiseurs de type tiers et fournir ses propres visionneuses personnalisées.

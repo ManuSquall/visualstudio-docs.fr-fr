@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : objets manquants en raison de l’ombrage du vertex | Microsoft Docs'
+description: Suivez une investigation qui trouve une erreur de nuanceur de sommets. Il affiche la liste des événements Graphics, les étapes de canalisation Graphics, le débogueur HLSL et la pile des appels des événements Graphics.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7e4c01a990ce4d3fff6769ba016c168b190687f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840086"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994995"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procédure pas à pas : objets manquants en raison de Vertex Shader
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant à cause d’une erreur survenue à l’étape du nuanceur de sommets.
@@ -35,7 +37,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
 
  ![L'objet ne peut être visualisé.](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
 
-## <a name="investigation"></a>Investigation
+## <a name="investigation"></a>Examen
  À l’aide des outils Graphics Diagnostics, vous pouvez charger le fichier journal de graphisme pour examiner les frames capturés pendant le test.
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphisme

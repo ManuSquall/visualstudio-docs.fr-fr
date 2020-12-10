@@ -1,5 +1,6 @@
 ---
 title: Prise en main du service de langage et des extensions de l’éditeur
+description: Découvrez comment ajouter des fonctionnalités de service de langage à tout type de contenu et personnaliser l’apparence et le comportement de l’éditeur Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037762"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994392"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Prise en main du service de langage et des extensions de l’éditeur
 
@@ -48,7 +49,7 @@ Vous pouvez utiliser les extensions de l’éditeur pour ajouter des fonctionnal
 
 - Marges et barres de défilement
 
-- Balises
+- Étiquettes
 
 - Ornements
 

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : fournir un service | Microsoft Docs'
+description: Un VSPackage peut fournir des services que d’autres VSPackages peuvent utiliser. Découvrez comment un VSPackage inscrit un service auprès de Visual Studio et ajoute le service.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905766"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993729"
 ---
 # <a name="how-to-provide-a-service"></a>Comment : fournir un service
 Un VSPackage peut fournir des services que d’autres VSPackages peuvent utiliser. Pour fournir un service, un VSPackage doit inscrire le service auprès de Visual Studio et ajouter le service.
@@ -29,9 +31,9 @@ Un VSPackage peut fournir des services que d’autres VSPackages peuvent utilise
 
 ## <a name="implement-a-service"></a>Implémenter un service
 
-1. Créez un projet VSIX (**fichier**  >  **nouveau**  >  **projet**  >  **extension Visual C#** projet  >  **Extensibility**  >  **VSIX**).
+1. Créez un projet VSIX (**fichier**  >  **nouveau**  >  **projet**  >  **extension Visual C#** projet  >    >  **VSIX**).
 
-2. Ajoutez un VSPackage au projet. Sélectionnez le nœud du projet dans le **Explorateur de solutions** puis cliquez sur **Ajouter**  >  **un nouvel élément**  >  **Visual C#** extensibilité des éléments Visual C#  >  **Extensibility**  >  **package Visual Studio**.
+2. Ajoutez un VSPackage au projet. Sélectionnez le nœud du projet dans le **Explorateur de solutions** puis cliquez sur **Ajouter**  >  **un nouvel élément**  >  **Visual C#** extensibilité des éléments Visual C#  >    >  **package Visual Studio**.
 
 3. Pour implémenter un service, vous devez créer trois types :
 

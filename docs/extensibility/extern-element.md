@@ -1,5 +1,7 @@
 ---
 title: Élément extern | Microsoft Docs
+description: L’élément extern fait référence à tous les fichiers d’en-tête externes (. h) à fusionner avec le fichier. vsct au moment de la compilation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711487"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994522"
 ---
 # <a name="extern-element"></a>Élément extern
 L’élément extern fait référence à tous les fichiers d’en-tête externes (*. h*) à fusionner avec le fichier *. vsct* au moment de la compilation. Les fichiers à fusionner doivent se trouver sur le chemin d’accès include donné au compilateur VSCT ou référencés par un [élément Include](../extensibility/include-element.md). Les fichiers peuvent être d’autres fichiers *. vsct* ou des fichiers d’en-tête C++.

@@ -1,6 +1,7 @@
 ---
 title: Migrer les projets d’extensibilité vers Visual Studio 2017
 titleSuffix: ''
+description: Découvrez comment mettre à niveau des projets d’extensibilité vers Visual Studio 2017 et comment effectuer une mise à niveau de la version 2 du manifeste d’extension vers le manifeste VSIX de la version 3.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352281"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993963"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Comment : migrer des projets d’extensibilité vers Visual Studio 2017
 
@@ -109,14 +110,14 @@ Au lieu de modifier directement le manifeste XML, vous pouvez utiliser l’ongle
 
 ## <a name="update-debug-settings-for-the-project"></a>Mettre à jour les paramètres de débogage du projet
 
-Si vous souhaitez déboguer votre extension dans une instance expérimentale de Visual Studio, assurez-vous que l’action démarrer le programme externe du projet pour l’action de démarrage du **débogage**  >  **Start action** est définie sur le fichier *devenv.exe* de votre installation de Visual Studio 2017. **Start external program:**
+Si vous souhaitez déboguer votre extension dans une instance expérimentale de Visual Studio, assurez-vous que l’action démarrer le programme externe du projet pour l’action de démarrage du **débogage**  >   est définie sur le fichier *devenv.exe* de votre installation de Visual Studio 2017. 
 
 Il peut ressembler à ceci : *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![démarrer le programme externe](media/start-external-program.png)
 
 > [!Note]
-> L’action de démarrage du débogage est généralement stockée dans le fichier *. csproj. User* . Ce fichier est généralement inclus dans le fichier *. gitignore* et, par conséquent, il n’est normalement pas enregistré avec d’autres fichiers projet lorsqu’il est validé dans le contrôle de code source. Par conséquent, si vous avez extrait votre solution du contrôle de code source, il est probable que le projet n’aura pas de valeurs définies pour l’action de démarrage. Les nouveaux projets VSIX créés avec Visual Studio 2017 auront un fichier *. csproj. User* créé avec des valeurs par défaut pointant vers le répertoire d’installation de Visual Studio actuel. Toutefois, si vous migrez une extension VSIX v2, il est probable que le fichier *. csproj. User* contiendra des références au répertoire d’installation de la version précédente de Visual Studio. La définition de la valeur de l’action de démarrage de **débogage**  >  **Start action** permet de lancer l’instance expérimentale de Visual Studio correcte lorsque vous essayez de déboguer votre extension.
+> L’action de démarrage du débogage est généralement stockée dans le fichier *. csproj. User* . Ce fichier est généralement inclus dans le fichier *. gitignore* et, par conséquent, il n’est normalement pas enregistré avec d’autres fichiers projet lorsqu’il est validé dans le contrôle de code source. Par conséquent, si vous avez extrait votre solution du contrôle de code source, il est probable que le projet n’aura pas de valeurs définies pour l’action de démarrage. Les nouveaux projets VSIX créés avec Visual Studio 2017 auront un fichier *. csproj. User* créé avec des valeurs par défaut pointant vers le répertoire d’installation de Visual Studio actuel. Toutefois, si vous migrez une extension VSIX v2, il est probable que le fichier *. csproj. User* contiendra des références au répertoire d’installation de la version précédente de Visual Studio. La définition de la valeur de l’action de démarrage de **débogage**  >   permet de lancer l’instance expérimentale de Visual Studio correcte lorsque vous essayez de déboguer votre extension.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Vérifier que l’extension est correctement générée (en tant que VSIX v3)
 
@@ -172,7 +173,7 @@ Lorsque vous recherchez vos dépendances, vous constaterez qu’une dépendance 
 
 Pour obtenir de l’aide, nous avons identifié quelques types d’extension courants et leurs conditions préalables recommandées :
 
-Type d'extension | Nom d’affichage | id
+Type d'extension | Nom complet | ID
 --- | --- | ---
 Éditeur | Éditeur de base de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# et Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -187,7 +188,7 @@ Si vous ne savez pas quel composant contient un fichier binaire spécifique, té
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Il y a quatre colonnes dans la feuille Excel **: nom du composant**, **ID**de version, **version**et **noms binaires/fichiers**.  Vous pouvez utiliser les filtres pour rechercher et Rechercher des composants et des binaires spécifiques.
+Il y a quatre colonnes dans la feuille Excel **: nom du composant**, **ID** de version, **version** et **noms binaires/fichiers**.  Vous pouvez utiliser les filtres pour rechercher et Rechercher des composants et des binaires spécifiques.
 
 Pour toutes vos références, commencez par déterminer celles qui se trouvent dans le composant éditeur principal (Microsoft. VisualStudio. Component. CoreEditor).  Au minimum, nous avons besoin que le composant principal de l’éditeur soit spécifié comme condition préalable pour toutes les extensions. Parmi les références laissées qui ne sont pas dans l’éditeur principal, ajoutez des filtres dans la section **noms binaires/fichiers** pour rechercher les composants qui ont l’un des sous-ensembles de ces références.
 
@@ -198,7 +199,7 @@ Exemples :
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Spécifier une version de Visual Studio 2017
 
-Si votre extension nécessite une version spécifique de Visual Studio 2017, par exemple, elle dépend d’une fonctionnalité publiée dans 15,3, vous devez spécifier le numéro de build dans votre **le INSTALLATIONTARGET**VSIX. Par exemple, la version 15,3 a un numéro de Build « 15.0.26730.3 ». Vous pouvez voir [ici](../install/visual-studio-build-numbers-and-release-dates.md)le mappage des mises en production aux numéros de Build. L’utilisation du numéro de version « 15,3 » ne fonctionne pas correctement.
+Si votre extension nécessite une version spécifique de Visual Studio 2017, par exemple, elle dépend d’une fonctionnalité publiée dans 15,3, vous devez spécifier le numéro de build dans votre **le INSTALLATIONTARGET** VSIX. Par exemple, la version 15,3 a un numéro de Build « 15.0.26730.3 ». Vous pouvez voir [ici](../install/visual-studio-build-numbers-and-release-dates.md)le mappage des mises en production aux numéros de Build. L’utilisation du numéro de version « 15,3 » ne fonctionne pas correctement.
 
 Si votre extension requiert 15,3 ou une version ultérieure, vous devez déclarer la **version de le installationtarget** en tant que [15.0.26730.3, 16,0) :
 

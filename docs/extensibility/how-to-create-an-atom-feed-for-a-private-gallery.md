@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer un flux Atom pour une galerie privée | Microsoft Docs'
+description: Vous pouvez créer un flux Atom (RSS) à un emplacement intranet qui contient des extensions et ajouter le flux aux extensions et aux mises à jour en tant que galerie privée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905850"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994145"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Comment : créer un flux Atom pour une galerie privée
 Vous pouvez créer un flux Atom (RSS) à un emplacement intranet qui contient des extensions et ajouter le flux aux **extensions et aux mises à jour** en tant que galerie privée. Pour plus d’informations, consultez [Galeries privées](../extensibility/private-galleries.md).

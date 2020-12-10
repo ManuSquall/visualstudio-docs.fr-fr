@@ -1,5 +1,7 @@
 ---
 title: Group, élément | Microsoft Docs
+description: L’élément Group définit un groupe de commandes VSPackage. Cet article décrit les attributs, les éléments enfants et les éléments parents.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711232"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993852"
 ---
 # <a name="group-element"></a>élément Group
 Définit un groupe de commandes VSPackage.

@@ -1,5 +1,7 @@
 ---
 title: Élément GuidSymbol | Microsoft Docs
+description: 'L’élément GuidSymbol contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711129"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994236"
 ---
 # <a name="guidsymbol-element"></a>Élément GuidSymbol
 L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. L’ID provient d’un `IDSymbol` élément dans l' `GuidSymbol` élément. L' `GuidSymbol` élément a un `name` attribut qui fournit un nom convivial pour le GUID, qui est contenu dans l' `value` attribut.

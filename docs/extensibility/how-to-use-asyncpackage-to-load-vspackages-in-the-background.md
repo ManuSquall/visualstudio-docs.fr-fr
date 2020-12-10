@@ -1,5 +1,6 @@
 ---
 title: Utiliser AsyncPackage pour charger les VSPackages en arrière-plan
+description: Découvrez comment utiliser la classe AsyncPackage qui active le chargement de packages sur un thread d’arrière-plan, ce qui peut empêcher les problèmes de réactivité des e/s de disque.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037287"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993482"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Comment : utiliser AsyncPackage pour charger des VSPackages en arrière-plan
 Le chargement et l’initialisation d’un package VS peuvent entraîner des e/s disque. Si ces e/s se produisent sur le thread d’interface utilisateur, cela peut entraîner des problèmes de réactivité. Pour résoudre ce cas, Visual Studio 2015 a introduit la  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe qui permet le chargement des packages sur un thread d’arrière-plan.
 
 ## <a name="create-an-asyncpackage"></a>Créer un AsyncPackage
- Vous pouvez commencer par créer un projet VSIX (**fichier**  >  **nouveau**  >  **projet**  >  **extensibilité Visual C#**  >  **Extensibility**  >  **projet VSIX**) et ajouter un VSPackage au projet (cliquez avec le bouton droit sur le projet et **Ajoutez**  >  **nouvel élément**  >  **C# élément**extensibilité de l’élément  >  **Extensibility**  >  **Visual Studio**). Vous pouvez ensuite créer vos services et ajouter ces services à votre package.
+ Vous pouvez commencer par créer un projet VSIX (**fichier**  >  **nouveau**  >  **projet**  >  **extensibilité Visual C#**  >    >  **projet VSIX**) et ajouter un VSPackage au projet (cliquez avec le bouton droit sur le projet et **Ajoutez**  >  **nouvel élément**  >  **C# élément** extensibilité de l’élément  >    >  **Visual Studio**). Vous pouvez ensuite créer vos services et ajouter ces services à votre package.
 
 1. Dérivez le package de <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .
 
@@ -54,7 +55,7 @@ Le chargement et l’initialisation d’un package VS peuvent entraîner des e/s
    await base.InitializeAsync(cancellationToken, progress);
    ```
 
-5. Vous devez veiller à ne pas créer de RPC (appel de procédure distante) à partir de votre code d’initialisation asynchrone (dans **InitializeAsync**). Cela peut se produire lorsque vous appelez <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> directement ou indirectement.  Lorsque les chargements de synchronisation sont requis, le thread d’interface utilisateur se bloque à l’aide de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> . Le modèle de blocage par défaut désactive les RPC. Cela signifie que si vous tentez d’utiliser un RPC à partir de vos tâches Async, vous interbloquerz si le thread d’interface utilisateur attend le chargement de votre package. L’alternative générale consiste à marshaler votre code vers le thread d’interface utilisateur, si **Joinable Task Factory**nécessaire, à l’aide d’un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> autre mécanisme qui n’utilise pas d’appel de procédure distante de la fabrique de tâches.  N’utilisez pas **ThreadHelper. Generic. Invoke** ou bloquez généralement le thread appelant qui attend d’accéder au thread d’interface utilisateur.
+5. Vous devez veiller à ne pas créer de RPC (appel de procédure distante) à partir de votre code d’initialisation asynchrone (dans **InitializeAsync**). Cela peut se produire lorsque vous appelez <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> directement ou indirectement.  Lorsque les chargements de synchronisation sont requis, le thread d’interface utilisateur se bloque à l’aide de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> . Le modèle de blocage par défaut désactive les RPC. Cela signifie que si vous tentez d’utiliser un RPC à partir de vos tâches Async, vous interbloquerz si le thread d’interface utilisateur attend le chargement de votre package. L’alternative générale consiste à marshaler votre code vers le thread d’interface utilisateur, si nécessaire, à l’aide d’un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> autre mécanisme qui n’utilise pas d’appel de procédure distante de la fabrique de tâches.  N’utilisez pas **ThreadHelper. Generic. Invoke** ou bloquez généralement le thread appelant qui attend d’accéder au thread d’interface utilisateur.
 
     Remarque : vous devez éviter d’utiliser **GetService** ou **QueryService** dans votre `InitializeAsync` méthode. Si vous devez les utiliser, vous devrez d’abord basculer vers le thread d’interface utilisateur. L’alternative consiste à utiliser <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> à partir de votre **AsyncPackage** (en le castant en <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider> ).
 

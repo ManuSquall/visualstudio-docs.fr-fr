@@ -1,5 +1,7 @@
 ---
 title: Extension des menus et des commandes | Microsoft Docs
+description: En savoir plus sur les commandes, qui ajoutent des actions et des processus à Visual Studio. Le modèle de projet VSPackage montre comment implémenter une commande de base.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c344d996c70012ef1516fa2bebe52394739bea35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d99b1b0f5ba0f80af3aadcff0404357b57fbe265
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768582"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994600"
 ---
 # <a name="extend-menus-and-commands"></a>Étendre des menus et des commandes
 Les commandes vous permettent d’ajouter des actions et des processus à Visual Studio. Dans la plupart des cas, les commandes sont affichées dans les menus ou les barres d’outils. Le modèle de projet VSPackage montre comment implémenter une commande de base. Pour une implémentation légèrement plus longue mais toujours de base, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
@@ -28,7 +30,7 @@ Les commandes vous permettent d’ajouter des actions et des processus à Visual
 
  Les rubriques suivantes expliquent comment ajouter différents types de commandes, de menus et de barres d’outils.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Ajouter un menu à la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Explique comment ajouter un menu à la barre de menus supérieure de Visual Studio.
 
 - [Lier des raccourcis clavier à des éléments de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md) Explique comment ajouter un raccourci clavier (tel que CTRL + 3) à un élément de menu.

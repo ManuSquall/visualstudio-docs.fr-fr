@@ -1,5 +1,7 @@
 ---
 title: Ajout dynamique d’éléments de menu | Microsoft Docs
+description: Découvrez comment utiliser l’indicateur de commande DynamicItemStart pour ajouter des éléments de menu au moment de l’exécution. Cet article explique comment définir le projet de démarrage dans une solution Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712065"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994808"
 ---
 # <a name="dynamically-add-menu-items"></a>Ajouter dynamiquement des éléments de menu
 Vous pouvez ajouter des éléments de menu au moment de l’exécution en spécifiant l' `DynamicItemStart` indicateur de commande sur une définition de bouton d’espace réservé dans le fichier de table de commandes Visual Studio (*. vsct*), puis en définissant (dans le code) le nombre d’éléments de menu à afficher et en gérant la ou les commandes. Lorsque le VSPackage est chargé, l’espace réservé est remplacé par les éléments de menu dynamiques.
@@ -142,7 +144,7 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
 ## <a name="implement-the-dynamic-menu-command"></a>Implémenter la commande de menu dynamique
  Vous créez une classe de commande de menu dynamique qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . Dans cette implémentation, le constructeur spécifie un prédicat à utiliser pour les commandes correspondantes. Vous devez substituer la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> méthode pour utiliser ce prédicat pour définir la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propriété, qui identifie la commande à appeler.
 
-1. Créez un fichier de classe C# nommé *DynamicItemMenuCommand.cs*et ajoutez une classe nommée **DynamicItemMenuCommand** qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
+1. Créez un fichier de classe C# nommé *DynamicItemMenuCommand.cs* et ajoutez une classe nommée **DynamicItemMenuCommand** qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> :
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand

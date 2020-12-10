@@ -1,5 +1,7 @@
 ---
 title: Comment aller-retour des extensions
+description: Découvrez comment faire aller-retour des projets d’extensibilité Visual Studio entre Visual Studio 2015 et Visual Studio 2019 ou Visual Studio 2017.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387276"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993612"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Comment : rendre des extensions compatibles avec Visual Studio 2019/2017 et Visual Studio 2015
 

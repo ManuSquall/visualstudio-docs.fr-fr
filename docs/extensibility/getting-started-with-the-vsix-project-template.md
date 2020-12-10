@@ -1,5 +1,7 @@
 ---
 title: Prise en main avec le modèle de projet VSIX | Microsoft Docs
+description: Découvrez comment utiliser le modèle de projet VSIX pour créer une extension ou pour empaqueter une extension existante en vue d’un déploiement.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905882"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994340"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Prise en main du modèle de projet VSIX
 
@@ -35,7 +37,7 @@ Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou pour
 
     2. Dans le menu **Projet**, cliquez sur **Exporter le modèle**. Effectuez les étapes de l’Assistant.
 
-         Un fichier *. zip* est créé dans *%UserProfile%\My Documents\Visual Studio {version} \Mes \\ *Exported Templates.
+         Un fichier *. zip* est créé dans *%UserProfile%\My Documents\Visual Studio {version} \Mes \\* Exported Templates.
 
 2. Créez un projet VSIX vide.
 

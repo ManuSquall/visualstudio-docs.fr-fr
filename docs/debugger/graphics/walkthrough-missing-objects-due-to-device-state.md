@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : objets manquants en raison de l’état de l’appareil | Microsoft Docs'
+description: Suivez une investigation qui détecte un état d’appareil mal configuré. Il montre l’utilisation de la liste des événements Graphics, des étapes de canalisation graphique et de l’historique des pixels Graphics.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895444"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995055"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Procédure pas à pas : objets manquants en raison de l’état de l’appareil
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant à cause de la configuration incorrecte de l’état de l’appareil.

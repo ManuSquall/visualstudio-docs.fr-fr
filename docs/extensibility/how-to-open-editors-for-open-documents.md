@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : ouvrir des éditeurs pour des documents ouverts | Microsoft Docs'
+description: Découvrez comment ouvrir un fichier dans un éditeur standard ou spécifique à un projet. Lorsqu’un projet ouvre une fenêtre de document, il doit déterminer si le fichier est déjà ouvert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905819"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993846"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procédure : ouvrir les éditeurs pour les documents ouverts
 Avant qu’un projet n’ouvre une fenêtre de document, le projet doit d’abord déterminer si le fichier est déjà ouvert dans la fenêtre de document pour un autre éditeur. Le fichier peut être ouvert dans un éditeur spécifique au projet ou dans l’un des éditeurs standard inscrits auprès de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

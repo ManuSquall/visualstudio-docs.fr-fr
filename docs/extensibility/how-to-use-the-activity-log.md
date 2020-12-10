@@ -1,5 +1,7 @@
 ---
 title: 'Procédure : utiliser le journal d’activité | Microsoft Docs'
+description: Les VSPackages peuvent écrire des messages dans le journal d’activité. Découvrez comment utiliser le journal d’activité pour déboguer les VSPackages dans les environnements de vente au détail.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2796b8537c0f94c02c91fddc73f6d913ba1b0c4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905588"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993573"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procédure : utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.

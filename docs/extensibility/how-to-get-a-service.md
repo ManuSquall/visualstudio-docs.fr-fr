@@ -1,5 +1,7 @@
 ---
 title: 'Comment : obtenir un service | Microsoft Docs'
+description: Découvrez comment obtenir les services Visual Studio pour accéder à différentes fonctionnalités. Vous pouvez obtenir la plupart des services à l’aide d’un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905833"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994080"
 ---
 # <a name="how-to-get-a-service"></a>Comment : obtenir un service
 
@@ -29,7 +31,7 @@ Lorsque Visual Studio charge un <xref:Microsoft.VisualStudio.Shell.Package> , il
 
 1. Chaque extension Visual Studio commence par un projet de déploiement VSIX, qui contient les composants d’extension. Créez un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `GetServiceExtension` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
-2. Ajoutez maintenant un modèle d’élément de commande personnalisé nommé **GetServiceCommand**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *GetServiceCommand.cs*. Pour plus d’informations sur la création d’une commande personnalisée, [créez une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Ajoutez maintenant un modèle d’élément de commande personnalisé nommé **GetServiceCommand**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *GetServiceCommand.cs*. Pour plus d’informations sur la création d’une commande personnalisée, [créez une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 3. Dans *GetServiceCommand.cs*, supprimez le corps de la `MenuItemCommand` méthode et ajoutez le code suivant :
 
@@ -70,7 +72,7 @@ L’objet DTE implémente <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvi
 Voici comment obtenir un service à partir de l’objet DTE.
 
 ```csharp
-// Start with the DTE object, for example: 
+// Start with the DTE object, for example: 
 // using EnvDTE;
 // DTE dte = (DTE)GetService(typeof(DTE));
 

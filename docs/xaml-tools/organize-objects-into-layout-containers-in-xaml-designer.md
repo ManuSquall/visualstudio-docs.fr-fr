@@ -1,5 +1,5 @@
 ---
-title: Organiser les objets en conteneurs de disposition dans le concepteur XAML
+title: Organiser les objets en conteneurs de disposition
 description: En savoir plus sur les panneaux de disposition et les contrôles dans Concepteur XAML utilisés pour réorganiser des objets sur une page, tels que Grid, canevas, Border et Viewbox.
 ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
@@ -8,12 +8,12 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6df200c5adb4993d13e896eaa6d2041e0e9db044
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047353"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995523"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 
@@ -21,13 +21,13 @@ Cet article décrit les panneaux de disposition et les contrôles du concepteur 
 
 Réfléchissez à l’endroit où vous souhaitez faire figurer les objets dans une page (des objets tels que des images, des boutons et des vidéos). Peut-être souhaiterez-vous qu'ils apparaissent dans des lignes et des colonnes, dans une seule ligne verticale ou horizontale ou bien à des emplacements fixes ?
 
-Une fois que vous avez déterminé l’aspect que vous voulez donner à la page, choisissez un panneau de disposition. Il s’agit de la structure de base de toutes les pages à laquelle vous allez ajouter vos objets. Par défaut, il s’agit d’une **grille** , mais vous pouvez changer cela.
+Une fois que vous avez déterminé l’aspect que vous voulez donner à la page, choisissez un panneau de disposition. Il s’agit de la structure de base de toutes les pages à laquelle vous allez ajouter vos objets. Par défaut, il s’agit d’une **grille**, mais vous pouvez changer cela.
 
 Si les panneaux de disposition permettent de disposer les objets dans une page, leur fonction ne s'arrête pas là. Ils vous permettent de concevoir pour différentes tailles et résolutions d'écran. Quand les utilisateurs exécutent votre application, tout ce qui figure dans le panneau de disposition est redimensionné pour s'adapter à la taille d'écran de leur appareil. Bien entendu, vous pouvez éviter cela en changeant tout ou partie du comportement de la disposition. Pour ce faire, vous pouvez utiliser les propriétés de hauteur et de largeur.
 
 ## <a name="layout-panels"></a>Panneaux de disposition
 
-Commencez votre page en choisissant l'un de ces panneaux de disposition. Votre page peut en contenir plusieurs. Par exemple, vous pouvez commencer par un panneau de disposition **Grid** et ajouter à une zone de ce dernier un **StackPanel** pour disposer les contrôles à la verticale dans cet élément **Grid** .
+Commencez votre page en choisissant l'un de ces panneaux de disposition. Votre page peut en contenir plusieurs. Par exemple, vous pouvez commencer par un panneau de disposition **Grid** et ajouter à une zone de ce dernier un **StackPanel** pour disposer les contrôles à la verticale dans cet élément **Grid**.
 
 Les panneaux de disposition suivants sont les plus couramment utilisés, mais il en existe d'autres. Vous les trouverez toutes dans la **Boîte à outils** de Visual Studio ou dans le panneau **Composants** de Blend pour Visual Studio.
 
@@ -67,7 +67,7 @@ Permet de disposer les objets les uns à la suite des autres, de gauche à droit
 
 ### <a name="dockpanel"></a>DockPanel
 
-Permet de disposer les objets de telle sorte qu’il restent, ou s’ *ancrent* , sur un bord du panneau.
+Permet de disposer les objets de telle sorte qu’il restent, ou s’*ancrent*, sur un bord du panneau.
 
 (Disponible seulement pour les projets WPF)
 
@@ -83,23 +83,23 @@ Les contrôles de disposition suivants sont les plus couramment utilisés, mais 
 
 ### <a name="border"></a>Bordure
 
-Permet de créer une bordure, un arrière-plan ou les deux autour d'un objet. Vous ne pouvez ajouter qu’un seul objet à un **Border** . Si vous voulez appliquer une bordure ou un arrière-plan à plusieurs objets, ajoutez un panneau de disposition au **Border** . Ajoutez ensuite les objets à ce panneau ou contrôle.
+Permet de créer une bordure, un arrière-plan ou les deux autour d'un objet. Vous ne pouvez ajouter qu’un seul objet à un **Border**. Si vous voulez appliquer une bordure ou un arrière-plan à plusieurs objets, ajoutez un panneau de disposition au **Border**. Ajoutez ensuite les objets à ce panneau ou contrôle.
 
 ![Contrôle de disposition de bordure](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 
 ### <a name="popup"></a>Fenêtre contextuelle
 
-Permet d'afficher des informations ou des options à l'intention des utilisateurs dans une fenêtre. Vous ne pouvez ajouter qu’un seul objet à un **Popup** . Par défaut, un **Popup** contient un **Grid** . Toutefois, d’autres options sont disponibles.
+Permet d'afficher des informations ou des options à l'intention des utilisateurs dans une fenêtre. Vous ne pouvez ajouter qu’un seul objet à un **Popup**. Par défaut, un **Popup** contient un **Grid**. Toutefois, d’autres options sont disponibles.
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Permet aux utilisateurs de faire défiler une page ou l’une de ses zones vers le bas. Sachant que vous ne pouvez ajouter qu’un seul objet à un **ScrollViewer** , il est judicieux d’ajouter un panneau de disposition tel qu’un **Grid** ou un **StackPanel** .
+Permet aux utilisateurs de faire défiler une page ou l’une de ses zones vers le bas. Sachant que vous ne pouvez ajouter qu’un seul objet à un **ScrollViewer**, il est judicieux d’ajouter un panneau de disposition tel qu’un **Grid** ou un **StackPanel**.
 
 ![Contrôle de disposition ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
 ### <a name="viewbox"></a>Viewbox
 
-Met à l'échelle les objets à la façon d'un contrôle de zoom. Vous ne pouvez ajouter qu’un seul objet à un **Viewbox** . Si vous voulez appliquer cet effet à plusieurs objets, ajoutez un panneau de disposition au **ViewBox** , puis ajoutez vos contrôles à ce panneau.
+Met à l'échelle les objets à la façon d'un contrôle de zoom. Vous ne pouvez ajouter qu’un seul objet à un **Viewbox**. Si vous voulez appliquer cet effet à plusieurs objets, ajoutez un panneau de disposition au **ViewBox**, puis ajoutez vos contrôles à ce panneau.
 
 ![Contrôle de disposition ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

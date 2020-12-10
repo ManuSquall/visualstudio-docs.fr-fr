@@ -1,5 +1,7 @@
 ---
 title: Déploiement des pages de démarrage personnalisées | Microsoft Docs
+description: Découvrez comment déployer des pages de démarrage personnalisées à l’aide d’un déploiement VSIX ou en copiant les fichiers aux emplacements corrects sur l’ordinateur cible.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 210b4589c0e2165af537c3fa9129affb06197e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76c2fc23a2b76b48152a4d3d44d687f165abf106
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712228"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993885"
 ---
 # <a name="deploy-custom-start-pages"></a>Déployer des pages de démarrage personnalisées
 
@@ -58,9 +60,9 @@ Si votre package de page de démarrage comprend des assemblys, vous devez ajoute
 ```
 
 ### <a name="vsix-deployment-for-all-users"></a>Déploiement VSIX pour tous les utilisateurs
- Par défaut, les extensions déployées dans les packages VSIX s’installent uniquement pour l’utilisateur actuel. Vous pouvez effectuer l’installation d’une page de démarrage pour tous les utilisateurs de l’ordinateur cible en créant un déploiement tous les utilisateurs.
+ Par défaut, les extensions déployées dans les packages VSIX s’installent uniquement pour l’utilisateur actuel. Vous pouvez effectuer l’installation d’une page de démarrage pour tous les utilisateurs de l’ordinateur cible en créant un déploiement de All-Users.
 
-### <a name="to-create-an-all-users-deployment"></a>Pour créer un déploiement de tous les utilisateurs
+### <a name="to-create-an-all-users-deployment"></a>Pour créer un déploiement de All-Users
 
 1. Ouvrez le fichier *extension. vsixmanifest* en mode Code.
 
@@ -83,7 +85,7 @@ Si votre package de page de démarrage comprend des assemblys, vous devez ajoute
      Cela indique à Visual Studio de rechercher le nouvel emplacement de la page de démarrage.
 
 ## <a name="file-copy-deployment"></a>Déploiement de copie de fichiers
- Vous n’avez pas besoin de créer un fichier *. vsix* pour déployer une page de démarrage personnalisée. Au lieu de cela, vous pouvez copier le balisage et les fichiers de prise en charge directement dans le dossier \StartPages de l’utilisateur <em> \* . La liste **personnaliser la page de démarrage</em> * de la page Options de **démarrage** répertorie chaque fichier *. Xaml* de ce dossier, ainsi que le chemin d’accès, par exemple, *%UserProfile%\My Documents\Visual Studio {version} \StartPages \\ {nom de fichier}. Xaml*. Si votre page de démarrage contient des références à des assemblys privés, vous devez les copier et les coller dans le dossier * \PrivateAssemblies \* .
+ Vous n’avez pas besoin de créer un fichier *. vsix* pour déployer une page de démarrage personnalisée. Au lieu de cela, vous pouvez copier le balisage et les fichiers de prise en charge directement dans le dossier \StartPages de l’utilisateur <em> \* . La liste **personnaliser la page de démarrage</em>* de la page Options de **démarrage** répertorie chaque fichier *. Xaml* de ce dossier, ainsi que le chemin d’accès, par exemple, *%UserProfile%\My Documents\Visual Studio {version} \StartPages \\ {nom de fichier}. Xaml*. Si votre page de démarrage contient des références à des assemblys privés, vous devez les copier et les coller dans le dossier * \PrivateAssemblies \* .
 
  Pour distribuer une page de démarrage que vous avez créée sans l’empaqueter dans un fichier *. vsix* , nous vous recommandons d’utiliser une stratégie de copie de base de fichiers, par exemple un script de commandes ou toute autre technologie de déploiement qui vous permet de placer les fichiers dans les répertoires requis.
 

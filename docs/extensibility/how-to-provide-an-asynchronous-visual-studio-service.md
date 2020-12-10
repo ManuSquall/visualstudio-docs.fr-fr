@@ -1,5 +1,7 @@
 ---
 title: 'Comment : fournir un service Visual Studio asynchrone | Microsoft Docs'
+description: Découvrez comment fournir un service Visual Studio asynchrone. Cette approche vous permet d’obtenir un service sans bloquer le thread d’interface utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11639e178f93a1ebfe2fc5231ee2b35df1b63196
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905740"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993638"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Comment : fournir un service Visual Studio asynchrone
 Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilisateur, vous devez créer un service asynchrone et charger le package sur un thread d’arrière-plan. À cet effet, vous pouvez utiliser un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> plutôt qu’un <xref:Microsoft.VisualStudio.Shell.Package> et ajouter le service avec les méthodes asynchrones spéciales du package asynchrone.
@@ -24,7 +26,7 @@ Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilis
 
 1. Créez un projet VSIX (**fichier**  >  **nouveau**  >  **projet**  >  **Visual C#**  >  **extensibilité**  >  **VSIX**). Nommez le projet **TestAsync**.
 
-2. Ajoutez un VSPackage au projet. Sélectionnez le nœud du projet dans le **Explorateur de solutions** puis cliquez sur **Ajouter**  >  **un nouvel élément**  >  **Visual C#** extensibilité des éléments Visual C#  >  **Extensibility**  >  **package Visual Studio**. Nommez ce fichier *TestAsyncPackage.cs*.
+2. Ajoutez un VSPackage au projet. Sélectionnez le nœud du projet dans le **Explorateur de solutions** puis cliquez sur **Ajouter**  >  **un nouvel élément**  >  **Visual C#** extensibilité des éléments Visual C#  >    >  **package Visual Studio**. Nommez ce fichier *TestAsyncPackage.cs*.
 
 3. Dans *TestAsyncPackage.cs*, modifiez le package de sorte qu’il hérite de `AsyncPackage` au lieu de `Package` :
 

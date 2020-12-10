@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage | Microsoft Docs'
+description: Suivez une investigation qui détecte un bogue de nuanceur. Il illustre l’utilisation de Visual Studio Graphics Diagnostics, y compris l’historique des pixels Graphics et le débogueur HLSL.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849318"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995081"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage
 Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Graphics Diagnostics pour examiner un objet qui est mal coloré en raison d’un bogue de nuanceur.
@@ -92,7 +94,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code
 output.color = float3(0.0f, 0.0f, 0.0f);
 ```
 
- par celle-ci :
+ to
 
 ```hlsl
 output.color = input.color;

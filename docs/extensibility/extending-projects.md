@@ -1,5 +1,7 @@
 ---
 title: Extension des projets | Microsoft Docs
+description: Découvrez comment créer vos propres types de projets personnalisés dans le kit de développement logiciel (SDK) Visual Studio et comment gérer différents types de solutions Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14108a304cc5f85c9a870bc66804df7daa98f3ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711748"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994613"
 ---
 # <a name="extend-projects"></a>Étendre des projets
 Les projets et les solutions sont la manière dont Visual Studio organise les fichiers de code et de ressources en unités de compilation et de déploiement. Vous trouverez plus d’informations sur les projets dans les [projets (kit de développement logiciel Visual Studio)](../extensibility/extending-projects.md).
@@ -25,7 +27,7 @@ Les projets et les solutions sont la manière dont Visual Studio organise les fi
 
  Les rubriques de cette section décrivent comment créer des projets personnalisés et comment gérer différents types de solutions Visual Studio.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Créer un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md) Décrit comment créer un système de projet personnalisé.
 
 - [Créer un système de projet de base, partie 2](../extensibility/creating-a-basic-project-system-part-2.md) Décrit comment créer un système de projet personnalisé.

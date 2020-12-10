@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ajouter une dépendance à un package VSIX | Microsoft Docs'
+description: Découvrez comment configurer un déploiement de package VSIX qui installe toutes les dépendances qui ne sont pas déjà présentes sur l’ordinateur cible.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ee7cbc4dee800351689386056389d274e07f4f
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012228"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993833"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Comment : ajouter une dépendance à un package VSIX
 
@@ -34,7 +36,7 @@ Vous pouvez configurer un déploiement de package VSIX qui installe toutes les d
 
 ## <a name="require-a-specific-visual-studio-release"></a>Exiger une version spécifique de Visual Studio
 
-Si votre extension nécessite une version spécifique de Visual Studio 2017, par exemple, elle dépend d’une fonctionnalité publiée dans 15,3, vous pouvez spécifier le numéro de build dans votre **le INSTALLATIONTARGET**VSIX. Par exemple, la version 15,3 a un numéro de Build « 15.0.26730.3 ». Vous pouvez voir [ici](../install/visual-studio-build-numbers-and-release-dates.md)le mappage des mises en production aux numéros de Build. Notez que l’utilisation du numéro de version « 15,3 » ne fonctionne pas correctement.
+Si votre extension nécessite une version spécifique de Visual Studio 2017, par exemple, elle dépend d’une fonctionnalité publiée dans 15,3, vous pouvez spécifier le numéro de build dans votre **le INSTALLATIONTARGET** VSIX. Par exemple, la version 15,3 a un numéro de Build « 15.0.26730.3 ». Vous pouvez voir [ici](../install/visual-studio-build-numbers-and-release-dates.md)le mappage des mises en production aux numéros de Build. Notez que l’utilisation du numéro de version « 15,3 » ne fonctionne pas correctement.
 
 Si votre extension requiert 15,3 ou une version ultérieure, vous devez déclarer la **version de le installationtarget** en tant que [15.0.26730.3, 16,0) :
 

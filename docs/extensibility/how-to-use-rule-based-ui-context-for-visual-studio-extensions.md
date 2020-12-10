@@ -1,6 +1,7 @@
 ---
 title: Utiliser le contexte de l’interface utilisateur basée sur des règles pour les extensions Visual Studio
 titleSuffix: ''
+description: Découvrez comment utiliser des contextes d’interface utilisateur basés sur des règles, ce qui permet aux auteurs d’extensions de définir des conditions quand un contexte d’interface utilisateur est activé et que les VSPackages sont chargés.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037105"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993456"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Comment : utiliser le contexte de l’interface utilisateur basé sur des règles pour les extensions Visual Studio
 
@@ -82,7 +83,7 @@ Le contexte de l’interface utilisateur basé sur des règles peut être utilis
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    Désormais, les commandes de menu contextuel pour les fichiers * \* . config* sont visibles uniquement lorsque l’élément sélectionné dans l’Explorateur de solutions est un fichier *. config* et que le package n’est pas chargé tant que l’une de ces commandes n’est pas sélectionnée.
+    Désormais, les commandes de menu contextuel pour les fichiers *\* . config* sont visibles uniquement lorsque l’élément sélectionné dans l’Explorateur de solutions est un fichier *. config* et que le package n’est pas chargé tant que l’une de ces commandes n’est pas sélectionnée.
 
    Ensuite, utilisez un débogueur pour confirmer que le package se charge uniquement quand vous l’attendez. Pour déboguer TestPackage :
 

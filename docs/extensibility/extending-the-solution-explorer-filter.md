@@ -1,5 +1,7 @@
 ---
 title: Extension du filtre de Explorateur de solutions | Microsoft Docs
+description: Découvrez comment étendre Explorateur de solutions fonctionnalité de filtre pour afficher ou masquer des fichiers différents dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711573"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994561"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Étendre le filtre de Explorateur de solutions
 Vous pouvez étendre **Explorateur de solutions** fonctionnalité de filtre pour afficher ou masquer des fichiers différents. Par exemple, vous pouvez créer un filtre qui affiche uniquement les fichiers de fabrique de classe C# dans le **Explorateur de solutions**, comme le montre cette procédure pas à pas.

@@ -1,5 +1,7 @@
 ---
 title: Obtention d’informations de service à partir du magasin de paramètres | Microsoft Docs
+description: Découvrez comment utiliser le magasin de paramètres pour rechercher tous les services disponibles ou pour déterminer si un service particulier est installé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711371"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994431"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Récupérer les informations de service à partir du magasin de paramètres
 Vous pouvez utiliser le magasin de paramètres pour rechercher tous les services disponibles ou pour déterminer si un service particulier est installé. Vous devez connaître le type de la classe de service.

@@ -1,5 +1,7 @@
 ---
 title: Données de document et vue de document dans les éditeurs personnalisés | Microsoft Docs
+description: En savoir plus sur les composants d’un éditeur personnalisé, qui sont l’objet de données de document et l’objet de vue de document.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414462"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994873"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Données de document et vue de document dans les éditeurs personnalisés
 Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme les noms le suggèrent, l’objet de données de document représente les données textuelles à afficher. De même, l’objet de vue de document (ou « View ») représente une ou plusieurs fenêtres dans lesquelles afficher l’objet de données de document.

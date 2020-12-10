@@ -1,6 +1,6 @@
 ---
-title: 'Concepteur de flux de travail : définir et consommer des délégués d’activité'
-description: Découvrez comment .NET Framework 4,5 comprend un concepteur prêt à l’emploi pour l’activité InvokeDelegate que vous pouvez utiliser pour définir et utiliser des délégués d’activité.
+title: Définir et consommer des délégués d’activité
+description: Dans Concepteur de flux de travail, Découvrez comment .NET Framework 4,5 comprend un concepteur prêt à l’emploi pour l’activité InvokeDelegate que vous pouvez utiliser pour définir et utiliser des délégués d’activité.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437916"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993274"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
 
@@ -62,11 +62,11 @@ ms.locfileid: "94437916"
 
 18. Dans la grille des **Propriétés** de l' <xref:System.Activities.Statements.InvokeDelegate> activité, cliquez sur le bouton **...** dans la propriété **arguments délégués** .
 
-19. Dans la colonne **valeur** de l' **argument nommé argument** , entrez **Items [index]**. Cliquez sur **OK** pour fermer la boîte de dialogue **DelegateArguments** .
+19. Dans la colonne **valeur** de l' **argument nommé argument**, entrez **Items [index]**. Cliquez sur **OK** pour fermer la boîte de dialogue **DelegateArguments** .
 
 20. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. L'  <xref:System.Activities.Statements.Assign> activité est créée, et une <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans la section **Body** de l’activité **MyForEach** . La séquence est nécessaire, car la section du **corps** ne peut contenir qu’une seule activité. La création automatique d’une nouvelle <xref:System.Activities.Statements.Sequence> activité est une nouvelle fonctionnalité de .NET Framework 4,5.
 
-21. Affectez la valeur index à la propriété **to** de l' <xref:System.Activities.Statements.Assign> activité. **index** Affectez à la propriété **value** de l’activité **Assign** la valeur **index + 1**.
+21. Affectez la valeur index à la propriété **to** de l' <xref:System.Activities.Statements.Assign> activité.  Affectez à la propriété **value** de l’activité **Assign** la valeur **index + 1**.
 
     L’activité **MyForEach** personnalisée appelle une activité arbitraire une fois pour chaque valeur qui lui est transmise via la collection **Items** , avec les valeurs de la collection comme entrées de l’activité.
 
@@ -74,7 +74,7 @@ ms.locfileid: "94437916"
 
 1. Générez le projet en appuyant sur **CTRL** + **MAJ** + **B**.
 
-2. Dans **Explorateur de solutions** , ouvrez **Workflow1. Xaml** dans le concepteur.
+2. Dans **Explorateur de solutions**, ouvrez **Workflow1. Xaml** dans le concepteur.
 
 3. Faites glisser une activité **MyForEach** de la boîte à outils vers l’aire du concepteur. L’activité se trouve dans une section de la boîte à outils portant le même nom que le projet.
 

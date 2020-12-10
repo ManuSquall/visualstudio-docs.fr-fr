@@ -1,5 +1,7 @@
 ---
 title: Codes d’erreur | Microsoft Docs
+description: Cet article contient la liste des codes d’erreur, des valeurs et des descriptions pour les fonctions d’API de plug-in de contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711845"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994717"
 ---
 # <a name="error-codes"></a>Codes d’erreur
 Lorsqu’une fonction d’API de plug-in de contrôle de code source retourne une erreur, il doit s’agir de l’un des codes d’erreur suivants. Toutes les erreurs sont négatives, les avertissements ou les codes d’erreur d’information sont positifs et la réussite est 0.

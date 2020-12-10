@@ -1,5 +1,7 @@
 ---
 title: Exposition des propriétés à la fenêtre Propriétés | Microsoft Docs
+description: En savoir plus sur les propriétés publiques d’un objet. Les modifications que vous apportez à ces propriétés sont répercutées dans la Fenêtre Propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711829"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994691"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Exposer des propriétés au Fenêtre Propriétés
 
@@ -35,7 +37,7 @@ Dans cette section, vous allez créer une fenêtre outil personnalisée et affic
 
 1. Chaque extension Visual Studio commence par un projet de déploiement VSIX, qui contient les composants d’extension. Créez un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `MyObjectPropertiesExtension` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
-2. Ajoutez une fenêtre outil en ajoutant un modèle d’élément de fenêtre outil personnalisé nommé `MyToolWindow` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la **boîte de dialogue Ajouter un nouvel élément**, accédez à extensibilité des **éléments Visual C#**  >  **Extensibility** et sélectionnez **fenêtre outil personnalisée**. Dans le champ **nom** en bas de la boîte de dialogue, remplacez le nom de fichier par *MyToolWindow.cs*. Pour plus d’informations sur la création d’une fenêtre outil personnalisée, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Ajoutez une fenêtre outil en ajoutant un modèle d’élément de fenêtre outil personnalisé nommé `MyToolWindow` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la **boîte de dialogue Ajouter un nouvel élément**, accédez à extensibilité des **éléments Visual C#**  >   et sélectionnez **fenêtre outil personnalisée**. Dans le champ **nom** en bas de la boîte de dialogue, remplacez le nom de fichier par *MyToolWindow.cs*. Pour plus d’informations sur la création d’une fenêtre outil personnalisée, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Ouvrez *MyToolWindow.cs* et ajoutez l’instruction using suivante :
 
@@ -110,15 +112,15 @@ Dans cette section, vous allez ajouter une fenêtre outil et exposer ses propri�
 
 ### <a name="to-expose-tool-window-properties"></a>Pour exposer les propriétés d’une fenêtre outil
 
-1. Ouvrez *MyToolWindow.cs*et ajoutez la propriété booléenne publique IsChecked à la `MyToolWindow` classe.
+1. Ouvrez *MyToolWindow.cs* et ajoutez la propriété booléenne publique IsChecked à la `MyToolWindow` classe.
 
     ```csharp
     [Category("My Properties")]
     [Description("MyToolWindowControl properties")]
-    public bool IsChecked
+    public bool IsChecked
     {
         get {
-            if (base.Content == null)  return false;
+            if (base.Content == null)  return false;
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;
         }
         set {
@@ -190,14 +192,14 @@ Dans cette section, vous allez ajouter une fenêtre outil et exposer ses propri�
 1. Ouvrez *MyToolWindow.cs* et ajoutez une classe publique nommée `Simple` .
 
     ```csharp
-    public class Simple
+    public class Simple
     {
-        private string someText = "";
+        private string someText = "";
 
         [Category("My Properties")]
         [Description("Simple Properties")]
         [DisplayName("My Text")]
-        public string SomeText
+        public string SomeText
         {
             get { return someText; }
             set { someText = value; }

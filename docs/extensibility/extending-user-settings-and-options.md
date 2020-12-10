@@ -1,5 +1,7 @@
 ---
 title: Extension des paramètres et options utilisateur | Microsoft Docs
+description: En savoir plus sur l’extension des paramètres utilisateur et des options dans le kit de développement logiciel (SDK) Visual Studio à l’aide des ressources de cet article.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adcefcfc18e64f9a7e082d0398b6609ba1877d28
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711557"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994574"
 ---
 # <a name="extend-user-settings-and-options"></a>Étendre les paramètres et les options utilisateur
-Dans Visual Studio, il existe deux méthodes principales pour gérer les préférences de l’utilisateur. Les **Tools**  >  pages**options** des outils permettent aux utilisateurs de définir leurs propres valeurs pour de nombreux types de paramètres différents, généraux et spécifiques à une langue. Les paramètres utilisateur permettent aux utilisateurs de spécifier des propriétés de configuration générales de Visual Studio. Pour plus d’informations sur les pages d’options, consultez [pages Options et options](../extensibility/internals/options-and-options-pages.md). Pour plus d’informations sur les paramètres utilisateur, consultez [prise en charge des paramètres utilisateur](../extensibility/internals/support-for-user-settings.md).
+Dans Visual Studio, il existe deux méthodes principales pour gérer les préférences de l’utilisateur. Les   >  pages **options** des outils permettent aux utilisateurs de définir leurs propres valeurs pour de nombreux types de paramètres différents, généraux et spécifiques à une langue. Les paramètres utilisateur permettent aux utilisateurs de spécifier des propriétés de configuration générales de Visual Studio. Pour plus d’informations sur les pages d’options, consultez [pages Options et options](../extensibility/internals/options-and-options-pages.md). Pour plus d’informations sur les paramètres utilisateur, consultez [prise en charge des paramètres utilisateur](../extensibility/internals/support-for-user-settings.md).
 
 - [Créer une page d’options](../extensibility/creating-an-options-page.md) Explique comment créer une page d’options.
 
