@@ -1,5 +1,7 @@
 ---
 title: Écriture d’un évaluateur d’expression Common Language Runtime | Microsoft Docs
+description: En savoir plus sur l’écriture d’un évaluateur d’expression pour le common language runtime, qui évalue les expressions dans le langage de code en cours de débogage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712322"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996316"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Écriture d’un évaluateur d’expression common language runtime
 > [!IMPORTANT]
@@ -27,7 +29,7 @@ ms.locfileid: "80712322"
 
  Certains aspects du package de débogage Visual Studio doivent interpréter le code dans le contexte du langage de programmation. Par exemple, lorsque l’exécution s’arrête à un point d’arrêt, toutes les expressions que l’utilisateur a tapées dans une fenêtre **Espion** doivent être évaluées et affichées. L’utilisateur peut modifier la valeur d’une variable locale en tapant une expression dans une fenêtre **Espion** ou dans la fenêtre **exécution** .
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  [Common Language Runtime et évaluation des expressions](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) Explique que lorsque vous intégrez le langage de programmation propriétaire dans l’IDE de Visual Studio, l’écriture d’un EE capable d’évaluer des expressions dans le contexte du langage propriétaire vous permet de compiler en langage MSIL (Microsoft Intermediate Language) sans écrire de moteur de débogage.
 
  [Architecture](../../extensibility/debugger/expression-evaluator-architecture.md) de l’évaluateur d’expression Explique comment implémenter les interfaces EE requises et appeler le fournisseur de symboles (SP) common language runtime et les interfaces de Binder.

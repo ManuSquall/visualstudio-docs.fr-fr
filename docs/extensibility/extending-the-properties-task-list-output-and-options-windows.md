@@ -1,5 +1,6 @@
 ---
 title: Étendre les propriétés, Liste des tâches, sortie, fenêtres d’options
+description: Découvrez comment intégrer des informations sur votre fenêtre outil dans Visual Studio dans une nouvelle page d’options et un nouveau paramètre dans la page Propriétés.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038476"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995796"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres propriétés, Liste des tâches, sortie et options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations sur votre fenêtre outil dans une nouvelle page d' **options** et un nouveau paramètre dans la page **Propriétés** , et comment écrire dans les fenêtres de **liste des tâches** et de **sortie** .
@@ -46,7 +47,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 2. À partir de la section **tous les contrôles WPF** de la **boîte à outils**, faites glisser un contrôle **Canvas** vers la grille.
 
-3. Faites glisser une **zone de texte**, un **bouton**et une zone de **liste** vers la zone de dessin. Réorganisez les éléments afin que la zone de texte et le bouton se trouvent au même niveau et que la zone de liste remplisse le reste de la fenêtre en dessous, comme dans l’image ci-dessous.
+3. Faites glisser une **zone de texte**, un **bouton** et une zone de **liste** vers la zone de dessin. Réorganisez les éléments afin que la zone de texte et le bouton se trouvent au même niveau et que la zone de liste remplisse le reste de la fenêtre en dessous, comme dans l’image ci-dessous.
 
      ![Fenêtre Outil fini](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
@@ -366,7 +367,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 8. Testez votre code. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
 
-9. Ouvrez la **Tools**  >  page**options** des outils. Vous devez voir la catégorie ToDo dans le volet gauche. Les catégories sont répertoriées par ordre alphabétique, donc Regardez sous le TS.
+9. Ouvrez la **Tools**  >  page **options** des outils. Vous devez voir la catégorie ToDo dans le volet gauche. Les catégories sont répertoriées par ordre alphabétique, donc Regardez sous le TS.
 
 10. Dans la page options **TODO** , la propriété doit être `DaysAhead` définie sur **0**. Remplacez-la par **2**.
 
@@ -479,7 +480,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-## <a name="try-it-out"></a>Faîtes un essai
+## <a name="try-it-out"></a>Faire un essai
 
 1. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.
 
@@ -489,7 +490,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
      Une date d’échéance de 2 jours après la date du jour est ajoutée à la zone de liste. Aucune erreur n’est générée, et la **liste des tâches** (**vue**  >  **liste des tâches**) ne doit pas contenir d’entrées.
 
-4. À présent, remplacez le paramètre **Tools**de la  >  **Options**  >  page**TODO** des **2** options outils par **0**.
+4. À présent, remplacez le paramètre **Tools** de la  >  **Options**  >  page **TODO** des **2** options outils par **0**.
 
 5. Tapez un autre nom dans le **TodoWindow** , puis cliquez à nouveau sur **Ajouter** . Cela déclenche une erreur et également une entrée dans le **liste des tâches**.
 

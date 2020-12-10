@@ -1,5 +1,7 @@
 ---
 title: Types d’événements pris en charge | Microsoft Docs
+description: Découvrez les types d’événements pris en charge par le débogage Visual Studio, y compris les événements asynchrones, les événements synchrones et les événements d’arrêt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 215256cbbcff45dfa0b85a480f0900e6f8ddfa71
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712798"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996030"
 ---
 # <a name="supported-event-types"></a>Types d’événements pris en charge
 Le débogage Visual Studio prend actuellement en charge les types d’événements suivants :
@@ -45,7 +47,7 @@ Le débogage Visual Studio prend actuellement en charge les types d’événemen
   > [!NOTE]
   > Les événements d’arrêt asynchrones ne sont pas pris en charge. L’envoi d’un événement d’arrêt asynchrone est une erreur.
 
-## <a name="discussion"></a>Discussion
+## <a name="discussion"></a>Discussions
  L’implémentation réelle des événements dépend de la conception de votre. Le type de chaque événement envoyé est déterminé par ses attributs, qui sont définis quand vous concevez le DE. Par exemple, un DE peut envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) en tant qu’événement asynchrone, tandis qu’un autre peut l’envoyer en tant qu’événement d’arrêt.
 
  Le tableau suivant spécifie les paramètres de programme et de thread requis pour les événements, ainsi que les types d’événements. Tout événement peut être synchrone. Aucun événement ne doit être synchrone.

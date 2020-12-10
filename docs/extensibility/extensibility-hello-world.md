@@ -1,5 +1,7 @@
 ---
 title: Didacticiel sur l’extension de Hello World | Microsoft Docs
+description: Découvrez comment ajouter une nouvelle commande en tant qu’extension à Visual Studio, ce qui implique la création d’un projet, l’ajout d’une commande et la modification du code source.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905935"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995718"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Didacticiel-créer votre première extension : Hello World
 
@@ -46,7 +48,7 @@ Avant de commencer, assurez-vous que vous avez installé la charge de travail d�
 
 Étape 1. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-Étape 2. Dans la zone de recherche dans l’angle supérieur droit, tapez « VSIX », puis sélectionnez le **projet VSIX**Visual C#. Entrez « HelloWorld » comme **nom** en bas de la boîte de dialogue, puis sélectionnez **OK**.
+Étape 2. Dans la zone de recherche dans l’angle supérieur droit, tapez « VSIX », puis sélectionnez le **projet VSIX** Visual C#. Entrez « HelloWorld » comme **nom** en bas de la boîte de dialogue, puis sélectionnez **OK**.
 
 ![Nouveau projet](media/hello-world-new-project.png)
 
@@ -160,7 +162,7 @@ Les mots **instance expérimentale** s’affichent dans la barre de titre de Vis
 
 ![résultat final](media/hello-world-final-result.png)
 
-Vous devez voir la sortie de votre nouvelle commande personnalisée, dans ce cas la boîte de dialogue au centre de l’écran qui vous donne le **Hello World !** .
+Vous devez voir la sortie de votre nouvelle commande personnalisée, dans ce cas la boîte de dialogue au centre de l’écran qui vous donne le **Hello World !** « Hello World ! ».
 
 ## <a name="next-steps"></a>Étapes suivantes
 

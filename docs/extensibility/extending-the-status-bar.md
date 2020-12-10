@@ -1,5 +1,7 @@
 ---
 title: Extension de la barre d’État | Microsoft Docs
+description: Découvrez comment étendre la barre d’état de Visual Studio en bas de l’IDE, qui affiche des informations.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711538"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995692"
 ---
 # <a name="extend-the-status-bar"></a>Étendre la barre d’État
 Vous pouvez utiliser la barre d’état de Visual Studio au bas de l’IDE pour afficher des informations.
@@ -110,7 +112,7 @@ Vous pouvez utiliser la barre d’état de Visual Studio au bas de l’IDE pour 
 
 ### <a name="display-an-animation"></a>Afficher une animation
 
-1. La barre d’état affiche une animation en boucle qui indique une opération de longue durée (par exemple, la génération de plusieurs projets dans une solution). Si vous ne voyez pas cette animation, vérifiez que vous disposez des paramètres d’options d' **Outils**appropriés  >  **Options** :
+1. La barre d’état affiche une animation en boucle qui indique une opération de longue durée (par exemple, la génération de plusieurs projets dans une solution). Si vous ne voyez pas cette animation, vérifiez que vous disposez des paramètres d’options d' **Outils** appropriés  >  **Options** :
 
      Accédez à l’onglet **Outils**  >  **options**  >  **général** et décochez l’option **Ajuster automatiquement l’expérience visuelle en fonction des performances du client**. Cochez ensuite la sous-option **activer l’expérience visuelle des clients enrichis**. Vous devez maintenant être en mesure de voir l’animation lorsque vous générez le projet dans votre instance expérimentale de Visual Studio.
 

@@ -1,5 +1,7 @@
 ---
 title: Gestion des erreurs et valeurs de retour | Microsoft Docs
+description: Découvrez comment le kit de développement logiciel (SDK) Visual Studio fournit des assemblys d’interopérabilité pour enregistrer des informations d’erreur enrichies en recevant une notification d’erreur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711936"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995848"
 ---
 # <a name="error-handling-and-return-values"></a>Gestion des erreurs et valeurs de retour
 Les VSPackages et COM utilisent la même architecture pour les erreurs. Les `SetErrorInfo` `GetErrorInfo` fonctions et font partie de l’interface de programmation d’applications (API) Win32. Tout VSPackage dans l’environnement de développement intégré (IDE) peut appeler ces API Win32 globales pour enregistrer des informations d’erreur complètes lors de la réception d’une notification d’erreur. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Fournit des assemblys d’interopérabilité pour gérer les informations d’erreur.

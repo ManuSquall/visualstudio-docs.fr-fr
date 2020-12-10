@@ -1,5 +1,7 @@
 ---
 title: 'Comment : mettre à jour une extension Visual Studio | Microsoft Docs'
+description: Découvrez comment mettre à jour une extension Visual Studio sur votre système en utilisant des extensions et des mises à jour pour installer la version mise à jour.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905619"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995602"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Comment : mettre à jour une extension Visual Studio
 Vous pouvez mettre à jour une extension Visual Studio sur votre système en utilisant des **extensions et des mises à jour** pour installer la version mise à jour. Si vous créez une version mise à jour d’une extension, vous pouvez la signaler comme étant mise à jour en incrémentant le numéro de version dans le manifeste VSIX.
@@ -55,7 +57,7 @@ Vous pouvez mettre à jour une extension Visual Studio sur votre système en uti
 
      Lorsqu’un utilisateur qui dispose d’une version antérieure de l’extension ouvre **extensions et mises à jour**, la nouvelle version s’affiche dans la liste des **mises à jour** , à condition que l’outil soit configuré pour rechercher automatiquement les mises à jour.
 
-     Vous pouvez activer ou désactiver la vérification automatique des mises à jour en bas du volet **mises à jour** (**activer/désactiver la détection automatique des mises à jour disponibles**), qui modifie le paramètre **vérifier les mises à jour** dans **Outils**  >  **options**extensions de l'  >  **environnement**  >  **et mises à jour**.
+     Vous pouvez activer ou désactiver la vérification automatique des mises à jour en bas du volet **mises à jour** (**activer/désactiver la détection automatique des mises à jour disponibles**), qui modifie le paramètre **vérifier les mises à jour** dans **Outils**  >  **options** extensions de l'  >  **environnement**  >  **et mises à jour**.
 
     > [!NOTE]
     > À compter de Visual Studio 2015 Update 2, vous pouvez spécifier (dans **Outils**  >  **options**  >  **environnement**  >  **et mises à jour**) si vous souhaitez des mises à jour automatiques pour les extensions par utilisateur, pour toutes les extensions utilisateur ou pour les deux (paramètre par défaut).

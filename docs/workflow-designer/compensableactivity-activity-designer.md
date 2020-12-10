@@ -1,6 +1,6 @@
 ---
-title: Concepteur d’activités Concepteur de flux de travail-CompensableActivity
-description: Découvrez comment vous pouvez utiliser le concepteur d’activités CompensableActivity pour créer et configurer une activité CompensableActivity.
+title: Concepteur d'activités CompensableActivity
+description: Découvrez comment vous pouvez utiliser le concepteur d’activités CompensableActivity dans Concepteur de flux de travail pour créer et configurer une activité CompensableActivity.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e170bd47af7c84eb9ddb26a4946422c418365d2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434335"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996225"
 ---
 # <a name="compensableactivity-activity-designer"></a>Concepteur d'activités CompensableActivity
 
@@ -27,7 +27,7 @@ Le concepteur d’activités **CompensableActivity** permet de créer et de conf
  L'objet <xref:System.Activities.Statements.CompensableActivity> définit une unité de travail qui peut être confirmée ou compensée après avoir été exécutée avec succès.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Utilisation du concepteur d'activités CompensableActivity
- Le concepteur d’activités **CompensableActivity** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils** , sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+ Le concepteur d’activités **CompensableActivity** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils**, sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
  Le concepteur d’activités **CompensableActivity** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail. Vous pouvez supprimer le concepteur d’activités à l’intérieur d’un <xref:System.Activities.Statements.Sequence> . La suppression du concepteur d’activités crée une <xref:System.Activities.Statements.CompensableActivity> activité avec la valeur par défaut <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity. Modifiez la <xref:System.Activities.Activity.DisplayName%2A> valeur dans l’en-tête du concepteur d’activités **CompensableActivity** . Il peut également être modifié dans la zone **DisplayName** de la grille des propriétés.
 
@@ -36,12 +36,12 @@ Le concepteur d’activités **CompensableActivity** permet de créer et de conf
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.CompensableActivity>. La valeur par défaut est CompensableActivity.|
-|<xref:System.Activities.Activity%601.Result%2A>|Faux|Spécifie la valeur de retour de l'objet <xref:System.Activities.Statements.CompensableActivity>. Cette propriété doit être modifiée dans la grille des propriétés.|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|Vrai|Spécifie l'activité pour laquelle la logique de compensation, d'annulation et de confirmation est fournie. Pour ajouter l' <xref:System.Activities.Statements.CompensableActivity.Body%2A> activité, déposez une activité de la boîte **à outils** dans la zone **corps** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
-|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|Faux|Spécifie l’activité qui est exécutée en cas d’annulation. Pour ajouter l’activité, déposez son concepteur de la boîte **à outils** dans la zone **CancellationHandler** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
-|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|Faux|Spécifie l'activité à exécuter lors de la compensation de l'activité <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Ce gestionnaire peut être appelé explicitement à l'aide de l'activité <xref:System.Activities.Statements.Compensate>.<br /><br /> Pour ajouter l’activité, déposez son concepteur d’activités de la boîte **à outils** dans la zone **CompensationHandler** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
-|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|Faux|Spécifie l'activité à exécuter lors de la confirmation de l'activité <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Ce gestionnaire peut être appelé explicitement à l'aide de l'activité <xref:System.Activities.Statements.Confirm>.<br /><br /> Pour ajouter l’activité, déposez son concepteur d’activités de la boîte **à outils** dans la zone **ConfirmationHandler** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.CompensableActivity>. La valeur par défaut est CompensableActivity.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Spécifie la valeur de retour de l'objet <xref:System.Activities.Statements.CompensableActivity>. Cette propriété doit être modifiée dans la grille des propriétés.|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Spécifie l'activité pour laquelle la logique de compensation, d'annulation et de confirmation est fournie. Pour ajouter l' <xref:System.Activities.Statements.CompensableActivity.Body%2A> activité, déposez une activité de la boîte **à outils** dans la zone **corps** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|Spécifie l’activité qui est exécutée en cas d’annulation. Pour ajouter l’activité, déposez son concepteur de la boîte **à outils** dans la zone **CancellationHandler** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Spécifie l'activité à exécuter lors de la compensation de l'activité <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Ce gestionnaire peut être appelé explicitement à l'aide de l'activité <xref:System.Activities.Statements.Compensate>.<br /><br /> Pour ajouter l’activité, déposez son concepteur d’activités de la boîte **à outils** dans la zone **CompensationHandler** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Spécifie l'activité à exécuter lors de la confirmation de l'activité <xref:System.Activities.Statements.CompensableActivity.Body%2A>. Ce gestionnaire peut être appelé explicitement à l'aide de l'activité <xref:System.Activities.Statements.Confirm>.<br /><br /> Pour ajouter l’activité, déposez son concepteur d’activités de la boîte **à outils** dans la zone **ConfirmationHandler** du concepteur d’activités **CompensableActivity** . Ajoutez le texte d’indication « déposer l’activité ici ».|
 
 ## <a name="see-also"></a>Voir aussi
 

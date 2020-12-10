@@ -1,5 +1,7 @@
 ---
 title: Gestion des titulaires de verrous de documents | Microsoft Docs
+description: Découvrez comment placer un verrou de modification sur un document dans la table de documents en cours d’exécution sans que l’utilisateur ne visualise un document ouvert dans une fenêtre de document.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712123"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995900"
 ---
 # <a name="document-lock-holder-management"></a>Gestion des titulaires de verrous de documents
 

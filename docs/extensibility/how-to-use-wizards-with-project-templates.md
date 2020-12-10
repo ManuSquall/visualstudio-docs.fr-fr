@@ -1,5 +1,7 @@
 ---
 title: 'Comment : utiliser des Assistants avec des modèles de projet'
+description: Découvrez comment utiliser l’interface IWizard dans le kit de développement logiciel (SDK) Visual Studio, qui vous permet d’exécuter du code personnalisé lorsqu’un utilisateur crée un projet à partir d’un modèle.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905518"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996368"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Comment : utiliser des assistants avec des modèles de projet
 
@@ -38,7 +40,7 @@ Vous commencez à créer un modèle personnalisé avec le projet de modèle de p
    > [!NOTE]
    > Il se peut que vous soyez invité à installer le kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [installation du kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Ajoutez un nouveau projet VSIX dans la même solution que le projet de modèle de projet (dans **Explorateur de solutions**, sélectionnez le nœud de la solution, cliquez avec le bouton droit, puis sélectionnez **Ajouter**un  >  **nouveau projet** et recherchez « VSIX »). Nommez-le **MyProjectWizard.**
+2. Ajoutez un nouveau projet VSIX dans la même solution que le projet de modèle de projet (dans **Explorateur de solutions**, sélectionnez le nœud de la solution, cliquez avec le bouton droit, puis sélectionnez **Ajouter** un  >  **nouveau projet** et recherchez « VSIX »). Nommez-le **MyProjectWizard.**
 
 3. Définissez le projet VSIX comme projet de démarrage. Dans **Explorateur de solutions**, sélectionnez le nœud de projet VSIX, cliquez avec le bouton droit, puis sélectionnez **définir comme projet de démarrage**.
 
@@ -58,7 +60,7 @@ Cette procédure montre comment créer un Assistant personnalisé qui ouvre un W
 
 1. Configurez le projet VSIX pour lui permettre de créer un assembly.
 
-2. Dans **Explorateur de solutions**, sélectionnez le nœud de projet VSIX. Vous devez voir la fenêtre **Propriétés** ci-dessous **Explorateur de solutions**. Si ce n’est pas le cas, sélectionnez **Afficher**la  >  **fenêtre des propriétés**ou appuyez sur **F4**. Dans la fenêtre **Propriétés** , sélectionnez les champs suivants pour `true` :
+2. Dans **Explorateur de solutions**, sélectionnez le nœud de projet VSIX. Vous devez voir la fenêtre **Propriétés** ci-dessous **Explorateur de solutions**. Si ce n’est pas le cas, sélectionnez **Afficher** la  >  **fenêtre des propriétés** ou appuyez sur **F4**. Dans la fenêtre **Propriétés** , sélectionnez les champs suivants pour `true` :
 
    - **Inclure l’assembly dans le conteneur VSIX**
 
@@ -66,7 +68,7 @@ Cette procédure montre comment créer un Assistant personnalisé qui ouvre un W
 
    - **Inclure les symboles de débogage dans le déploiement VSIX local**
 
-3. Ajoutez l’assembly en tant que ressource au projet VSIX. Ouvrez le fichier *source. extension. vsixmanifest* et sélectionnez l’onglet **ressources** . Dans la fenêtre **Ajouter une nouvelle ressource** , pour **type** , sélectionnez **Microsoft. VisualStudio. assembly**, pour **source** , sélectionnez **un projet dans la solution actuelle**et pour **projet** , sélectionnez **MyProjectWizard**.
+3. Ajoutez l’assembly en tant que ressource au projet VSIX. Ouvrez le fichier *source. extension. vsixmanifest* et sélectionnez l’onglet **ressources** . Dans la fenêtre **Ajouter une nouvelle ressource** , pour **type** , sélectionnez **Microsoft. VisualStudio. assembly**, pour **source** , sélectionnez **un projet dans la solution actuelle** et pour **projet** , sélectionnez **MyProjectWizard**.
 
 4. Ajoutez les références suivantes au projet VSIX. (Dans **Explorateur de solutions**, sous le nœud de projet VSIX, sélectionnez **références**, cliquez avec le bouton droit, puis sélectionnez **Ajouter une référence**.) Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Framework** , recherchez l’assembly **System. Windows Forms** et sélectionnez-le. Recherchez et sélectionnez également les assemblys **System** et **System. Drawing** . Sélectionnez maintenant l’onglet **Extensions** . Recherchez l’assembly **EnvDTE** et sélectionnez-le. Recherchez également l’assembly **Microsoft. VisualStudio. TemplateWizardInterface** et sélectionnez-le. Cliquez sur **OK**.
 
@@ -214,13 +216,13 @@ Pour que votre modèle de projet personnalisé utilise votre Assistant personnal
 
 3. Dans la **Explorateur de solutions**, sélectionnez le projet VSIX et recherchez la fenêtre **Propriétés** .
 
-4. Affectez la **valeur true**au champ **copier la sortie de la génération dans le répertoire de sortie** . Cela permet à l’assembly d’être copié dans le répertoire de sortie lorsque la solution est reconstruite. Il est toujours contenu dans le `.vsix` fichier. Vous devez voir l’assembly afin de déterminer sa clé de signature.
+4. Affectez la **valeur true** au champ **copier la sortie de la génération dans le répertoire de sortie** . Cela permet à l’assembly d’être copié dans le répertoire de sortie lorsque la solution est reconstruite. Il est toujours contenu dans le `.vsix` fichier. Vous devez voir l’assembly afin de déterminer sa clé de signature.
 
 5. Régénérez la solution.
 
-6. Vous pouvez maintenant trouver le fichier Key. snk dans le répertoire du projet MyProjectWizard (* \<your disk location> \MyProjectTemplate\MyProjectWizard\key.snk*). Copiez le fichier *Key. snk* .
+6. Vous pouvez maintenant trouver le fichier Key. snk dans le répertoire du projet MyProjectWizard (*\<your disk location> \MyProjectTemplate\MyProjectWizard\key.snk*). Copiez le fichier *Key. snk* .
 
-7. Accédez au répertoire de sortie et recherchez l’assembly (* \<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Collez le fichier *Key. snk* ici. (Cette opération n’est pas absolument nécessaire, mais elle facilitera les étapes suivantes.)
+7. Accédez au répertoire de sortie et recherchez l’assembly (*\<your disk location> \ MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Collez le fichier *Key. snk* ici. (Cette opération n’est pas absolument nécessaire, mais elle facilitera les étapes suivantes.)
 
 8. Ouvrez une fenêtre de commande et accédez au répertoire dans lequel l’assembly a été créé.
 

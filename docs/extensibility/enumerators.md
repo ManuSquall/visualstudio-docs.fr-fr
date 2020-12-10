@@ -1,5 +1,7 @@
 ---
 title: Énumérateurs | Microsoft Docs
+description: En savoir plus sur les types de données d’énumérateur dans l’API de plug-in de contrôle de code source, y compris le code de commande, le message, le code d’État du fichier et le code d’État du répertoire.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e124ce3d36e2b23ef53c376b660de05cd87043
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711852"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995809"
 ---
 # <a name="enumerators"></a>Énumérateurs
 Cette section répertorie les types de données d’énumérateur dans l’API de plug-in de contrôle de code source que le plug-in de contrôle de code source doit connaître.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Code de commande](../extensibility/command-code-enumerator.md) Énumère les options pour les fonctions [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) et [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
 
 - [Message](../extensibility/message-enumerator.md) Énumère les indicateurs utilisés pour le rappel d’impression, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).

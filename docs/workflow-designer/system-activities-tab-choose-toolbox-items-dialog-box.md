@@ -1,6 +1,6 @@
 ---
-title: 'Concepteur de flux de travail : System. Activities, choisir des éléments de boîte à outils'
-description: Découvrez comment l’onglet System. Activities affiche la liste des activités, modèles et éléments de Windows Workflow Foundation (WF) à votre disposition.
+title: System. Activities, choisir des éléments de boîte à outils
+description: Dans Concepteur de flux de travail, Découvrez comment l’onglet System. Activities affiche la liste des activités, modèles et éléments de Windows Workflow Foundation (WF) à votre disposition.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d13aadb135f6dcf72d146f74ea2804ef34228641
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 280dcf7c9fe07c7b3266822f0d8b92b1c399075e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433893"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996199"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System. Activities, onglet de la boîte de dialogue choisir des éléments de boîte à outils
 
@@ -35,7 +35,7 @@ Vous pouvez désélectionner tous les éléments que vous ne souhaitez pas affic
 
 L’instanciation de l’activité, en la faisant glisser et en la déposant sur le concepteur, ajoute automatiquement l’assembly qui contient l’élément à la liste des assemblys référencés. Par ailleurs, si l'activité fait référence à un assembly C, elle n'ajoute pas C à la liste des assemblys référencés. L’assembly C doit figurer dans le GAC ou dans le même répertoire que l’activité B. Dans le cas autonome, l’assembly doit être dans le GAC ou dans les chemins d’accès de la sonde de VS. Vous ne pouvez faire glisser et déposer l’activité sur l’aire du concepteur de workflow qu’à ce moment-là.
 
-Les paramètres de la **boîte à outils** sont enregistrés par défaut en tant qu’options utilisateur. par conséquent, la prochaine fois que vous ouvrirez la **boîte à outils** , elle affiche votre liste personnalisée d’activités de flux de travail. L’un des effets secondaires de cela est que si vous avez ajouté vos éléments de domaine spécifiques à la boîte **à outils** par le biais de la boîte de dialogue **choisir des éléments de boîte à outils** , vous continuez à voir ces éléments quand vous travaillez dans une application console de Workflow. Si vous ne souhaitez pas les afficher, supprimez-les à l’aide du menu contextuel ou décochez-les dans la boîte de dialogue **choisir des éléments de boîte à outils** comme indiqué précédemment.
+Les paramètres de la **boîte à outils** sont enregistrés par défaut en tant qu’options utilisateur. par conséquent, la prochaine fois que vous ouvrirez la **boîte à outils**, elle affiche votre liste personnalisée d’activités de flux de travail. L’un des effets secondaires de cela est que si vous avez ajouté vos éléments de domaine spécifiques à la boîte **à outils** par le biais de la boîte de dialogue **choisir des éléments de boîte à outils** , vous continuez à voir ces éléments quand vous travaillez dans une application console de Workflow. Si vous ne souhaitez pas les afficher, supprimez-les à l’aide du menu contextuel ou décochez-les dans la boîte de dialogue **choisir des éléments de boîte à outils** comme indiqué précédemment.
 
 Les colonnes dans cette boîte de dialogue contiennent les informations suivantes :
 

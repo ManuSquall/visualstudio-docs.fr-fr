@@ -1,5 +1,7 @@
 ---
 title: Visualiseur de type et visionneuse personnalisée | Microsoft Docs
+description: En savoir plus sur les composants de visualiseur de type et les visionneuses personnalisées, qui affichent les données dans un format spécifique, et les différences entre eux.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712467"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995939"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualiseur de type et visionneuse personnalisée
 Un visualiseur de type est un composant qui affiche un élément de données dans un format spécifique. Le format est entièrement destiné aux personnes qui implémentent le visualiseur, qu’il s’agit de l’utilisateur final ou d’un fournisseur tiers de visualiseurs.

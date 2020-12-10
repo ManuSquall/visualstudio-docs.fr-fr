@@ -1,5 +1,7 @@
 ---
 title: Initialisation du concepteur et configuration des métadonnées | Microsoft Docs
+description: Découvrez comment le kit de développement logiciel (SDK) Visual Studio facilite le contrôle de l’initialisation d’un composant de concepteur ou d’un concepteur, ainsi que ses métadonnées par un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011707"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996160"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Initialisation du concepteur et configuration des métadonnées
 
-La manipulation des métadonnées et des attributs de filtre associés à un concepteur ou à un composant de concepteur fournit un mécanisme permettant aux applications de définir les outils utilisés par un concepteur particulier pour gérer différents <xref:System.Type> objets (tels que des structures de données, des classes ou des entités graphiques), lorsque le concepteur est disponible et comment l’IDE Visual Studio est configuré **Toolbox** pour prendre en charge le concepteur (par exemple, la catégorie
+La manipulation des métadonnées et des attributs de filtre associés à un concepteur ou à un composant de concepteur fournit un mécanisme permettant aux applications de définir les outils utilisés par un concepteur particulier pour gérer différents <xref:System.Type> objets (tels que des structures de données, des classes ou des entités graphiques), lorsque le concepteur est disponible et comment l’IDE Visual Studio est configuré  pour prendre en charge le concepteur (par exemple, la catégorie
 
 Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit plusieurs mécanismes pour faciliter le contrôle de l’initialisation d’un concepteur ou d’un composant de concepteur, ainsi que la manipulation de ses métadonnées par un VSPackage.
 

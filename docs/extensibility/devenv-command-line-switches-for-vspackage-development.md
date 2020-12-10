@@ -1,5 +1,7 @@
 ---
-title: Commutateurs de ligne de commande devenv pour le développement VSPackage | Microsoft Docs
+title: Commutateurs de Command-Line devenv pour le développement VSPackage | Microsoft Docs
+description: Découvrez comment les développeurs peuvent automatiser des tâches à partir de la ligne de commande lors de l’exécution de devenv.exe, le fichier qui démarre l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712194"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996147"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Commutateurs de ligne de commande devenv pour le développement VSPackage
 

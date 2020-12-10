@@ -1,6 +1,6 @@
 ---
-title: Concepteur d’activités Concepteur de flux de travail-TransactedReceiveScope
-description: Découvrez comment vous pouvez utiliser TransactedReceiveScope Designer pour créer et configurer une activité TransactedReceiveScope.
+title: Concepteur d’activités TransactedReceiveScope
+description: Dans Concepteur de flux de travail, Découvrez comment vous pouvez utiliser TransactedReceiveScope Designer pour créer et configurer une activité TransactedReceiveScope.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70117ab8b27a23dfb2836800c41ff0844fb8de1c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9214d1ce4a873d6caea98b814e8d489f544944c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433776"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996290"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Concepteur d'activités TransactedReceiveScope
 
@@ -39,15 +39,15 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.TransactedReceiveScope>. La valeur par défaut est TransactedReceiveScope.<br /><br /> Bien que le nom de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Vrai|Supprime une <xref:System.ServiceModel.Activities.Receive> activité dans le bloc de **requête** sur l’aire du concepteur d’activités.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|Faux|Dépose un <xref:System.Activities.Activity> dans le bloc de **corps** sur l’aire du concepteur d’activités.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.TransactedReceiveScope>. La valeur par défaut est TransactedReceiveScope.<br /><br /> Bien que le nom de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Supprime une <xref:System.ServiceModel.Activities.Receive> activité dans le bloc de **requête** sur l’aire du concepteur d’activités.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Dépose un <xref:System.Activities.Activity> dans le bloc de **corps** sur l’aire du concepteur d’activités.|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Çoive](../workflow-designer/receive-activity-designer.md)
+- [Recevoir](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Envoi](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

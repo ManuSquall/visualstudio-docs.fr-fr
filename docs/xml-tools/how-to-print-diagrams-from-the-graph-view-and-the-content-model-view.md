@@ -1,5 +1,5 @@
 ---
-title: 'Schéma XML : imprimer des diagrammes dans la vue graphique & vue de modèle de contenu'
+title: Imprimer des diagrammes
 description: Découvrez comment imprimer un diagramme à partir de la vue du graphique ou de la vue de modèle de contenu du concepteur de schémas XML.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9e837af5a1112d03740cc67b5d91f24d186a5
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4ecf1c9cf062dec8dd1d83a5b99bb8c498667e0f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399157"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996329"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Comment : imprimer des diagrammes à partir de la vue du graphique et de la vue de modèle de contenu
 

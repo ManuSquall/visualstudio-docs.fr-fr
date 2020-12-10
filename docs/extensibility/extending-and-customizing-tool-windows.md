@@ -1,5 +1,7 @@
 ---
 title: Extension et personnalisation des fenêtres outil | Microsoft Docs
+description: Découvrez comment étendre et personnaliser les fenêtres d’outils fournies par Visual Studio, y compris les Fenêtre Propriétés, la fenêtre de sortie et la fenêtre de Liste des tâches.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711817"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995861"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Étendre et personnaliser les fenêtres outil
 Visual Studio fournit différents types de fenêtres, par exemple des fenêtres outil, des fenêtres de document et des fenêtres de dialogue. D’autres fenêtres, telles que la fenêtre **Propriétés** , la fenêtre **sortie** et la fenêtre de **liste des tâches** , sont des types de fenêtres outil.

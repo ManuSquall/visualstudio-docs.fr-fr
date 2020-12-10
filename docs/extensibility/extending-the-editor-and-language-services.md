@@ -1,5 +1,7 @@
 ---
 title: Extension de l’éditeur et des services de langage | Microsoft Docs
+description: Vous pouvez ajouter des fonctionnalités de service de langage à un éditeur et étendre les fonctionnalités de l’éditeur de code Visual Studio. En savoir plus sur les Managed Extensibility Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413942"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995744"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Étendre l’éditeur et les services de langage
 Vous pouvez ajouter des fonctionnalités du service de langage (par exemple, IntelliSense) à votre propre éditeur et étendre la plupart des fonctionnalités de l’éditeur de code Visual Studio.  Pour obtenir une liste complète de ce que vous pouvez étendre, consultez [services de langage et points d’extension](../extensibility/language-service-and-editor-extension-points.md)de l’éditeur.
@@ -53,7 +55,7 @@ Vous pouvez ajouter des fonctionnalités du service de langage (par exemple, Int
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Fournit des informations sur le Managed Extensibility Framework (MEF).|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Fournit des informations sur le Windows Presentation Foundation (WPF).|
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
  L’éditeur Visual Studio comprend les espaces de noms suivants.
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

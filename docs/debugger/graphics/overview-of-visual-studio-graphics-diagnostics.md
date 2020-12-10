@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de Graphics Diagnostics | Microsoft Docs
-description: Présentation générale de Visual Studio Graphics Diagnostics
-ms.custom: seodec18
+description: Visual Studio Graphics Diagnostics est un ensemble d’outils permettant de journaliser l’activité Direct3D et d’analyser les journaux pour résoudre les problèmes de rendu et de performances.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.openlocfilehash: 1ccf3b77c9b1f4dee7183aac32e8810417ba69c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671404"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996134"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Vue d'ensemble de Visual Studio Graphics Diagnostics
 Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis l’analyse des problèmes de rendu et de performances des applications Direct3D. Graphics Diagnostics peut être utilisé sur des applications qui s’exécutent localement sur votre PC Windows ou sur un PC ou un appareil distant.
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Utilisation de Graphics Diagnostics pour déboguer les problèmes de rendu
- Le débogage des problèmes de rendu dans une application riche en graphiques n'est pas aussi simple que de démarrer dans un débogueur et d'exécuter du code pas-à-pas. Dans chaque frame, des centaines de milliers de pixels uniques sont produits (chacun dépend d'un jeu complexe d'état, de données, de paramètres, et de code), il est possible que seuls quelques pixels présentent le problème que vous essayez de diagnostiquer. Pour compliquer encore plus les choses, le code qui génère chaque pixel est exécuté sur du matériel spécialisé qui traite des centaines de pixels en parallèle. Les outils et les techniques de débogage classiques (qui sont difficiles à exploiter même dans du code de thread léger) sont inefficaces face à autant de données.
+ Le débogage des problèmes de rendu dans une application graphiquement riche n’est pas aussi simple que le démarrage d’un débogueur et l’exécution pas à pas du code. Dans chaque frame, des centaines de milliers de pixels uniques sont produits (chacun dépend d'un jeu complexe d'état, de données, de paramètres, et de code), il est possible que seuls quelques pixels présentent le problème que vous essayez de diagnostiquer. Pour compliquer encore plus les choses, le code qui génère chaque pixel est exécuté sur du matériel spécialisé qui traite des centaines de pixels en parallèle. Les outils et les techniques de débogage classiques (qui sont difficiles à exploiter même dans du code de thread léger) sont inefficaces face à autant de données.
 
  Les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sont conçus pour vous aider à identifier les problèmes de rendu en commençant par les artefacts visuels qui indiquent le problème, puis en remontant à la source du problème en se concentrant uniquement sur le code de nuanceur associé, les étapes de canalisation, les appels de dessin, les ressources et l'état du périphérique dans le code source de l'application.
 

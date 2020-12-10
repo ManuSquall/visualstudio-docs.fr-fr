@@ -1,6 +1,6 @@
 ---
-title: 'Concepteur de flux de travail-comment : ajouter des activités à la boîte à outils'
-description: Ajoutez des activités à la boîte à outils dans votre solution en les ajoutant à partir de votre projet actuel ou en les référençant à partir d’un autre projet.
+title: Ajouter des activités à la boîte à outils
+description: Dans Concepteur de flux de travail, Découvrez comment ajouter des activités à la boîte à outils dans votre solution en les ajoutant à partir de votre projet actuel ou en les référençant à partir d’un autre projet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437942"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996303"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Comment : ajouter des activités à la boîte à outils
 

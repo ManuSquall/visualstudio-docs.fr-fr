@@ -1,5 +1,7 @@
 ---
 title: Quand un point d’arrêt est lié ou devient indépendant | Microsoft Docs
+description: En savoir plus sur les points d’arrêt non liés. Lorsqu’un point d’arrêt ne peut pas être lié au moment où un appel est effectué, l’heure de liaison et l’heure de création du point d’arrêt sont différentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a48bd7ff011b6e8de6e9321a00b6bc20d54f0f0b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712330"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995913"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Quand un point d’arrêt est lié ou non lié
 Lorsqu’un point d’arrêt ne peut pas être lié au moment où un appel est effectué à la méthode [IDebugPendingBreakpoint2 :: CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , la durée de liaison et l’heure de création du point d’arrêt sont différentes.
