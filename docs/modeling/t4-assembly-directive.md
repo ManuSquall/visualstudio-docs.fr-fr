@@ -1,5 +1,7 @@
 ---
 title: Directive d'assembly T4
+description: Découvrez que dans un modèle de texte au moment de la conception de Visual Studio, la directive assembly charge un assembly afin que votre code de modèle puisse utiliser ses types.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41abd2b5a48f6e5e126747326e9815f3c2f46787
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591890"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363703"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 
@@ -32,7 +34,7 @@ Dans un modèle de texte au moment de la conception de Visual Studio, la `assemb
 
  Le nom d'assembly doit correspondre à l'un des éléments suivants :
 
-- Nom fort d'un assembly dans le GAC, tel que `System.Xml.dll`. Vous pouvez également utiliser la forme longue, telle que `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Pour plus d'informations, consultez <xref:System.Reflection.AssemblyName>.
+- Nom fort d'un assembly dans le GAC, tel que `System.Xml.dll`. Vous pouvez également utiliser la forme longue, telle que `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Pour plus d’informations, consultez <xref:System.Reflection.AssemblyName>.
 
 - Chemin d’accès absolu de l’assembly
 

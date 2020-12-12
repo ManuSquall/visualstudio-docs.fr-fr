@@ -1,5 +1,7 @@
 ---
 title: Connecter l’hôte au processeur de directive généré
+description: Découvrez comment vous pouvez développer votre hôte personnalisé pour qu’il prenne en charge les modèles de texte qui appellent des processeurs de directive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237995"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362494"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connecter un hôte à un processeur de directive généré
 
@@ -51,9 +53,9 @@ Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 En outre, vous devez avoir créé la transformation de modèle de texte personnalisée dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Utiliser Outils Domain-Specific Language pour générer un processeur de directive
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Utiliser les outils de langage Domain-Specific pour générer un processeur de directive
 
-Dans cette procédure pas à pas, vous utilisez l’Assistant Concepteur Domain-Specific Language pour créer un langage spécifique à un domaine pour la solution DSLMinimalTest.
+Dans cette procédure pas à pas, vous utilisez l’Assistant concepteur de langage Domain-Specific pour créer un langage spécifique à un domaine pour la solution DSLMinimalTest.
 
 1. Créez une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
 
@@ -65,7 +67,7 @@ Dans cette procédure pas à pas, vous utilisez l’Assistant Concepteur Domain-
 
    - Nom de la société : fabrikam
 
-   Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [How to : Create a Domain-Specific Language solution](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
@@ -82,7 +84,7 @@ Dans cette procédure pas à pas, vous utilisez l’Assistant Concepteur Domain-
 
 5. Fermez la deuxième instance de Visual Studio.
 
-6. Enregistrez la solution, puis fermez le Concepteur Domain-Specific Language.
+6. Enregistrez la solution, puis fermez le concepteur de langage Domain-Specific.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Connecter un hôte de modèle de texte personnalisé à un processeur de directive
 

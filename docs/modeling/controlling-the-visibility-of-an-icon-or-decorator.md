@@ -1,5 +1,7 @@
 ---
 title: Contrôle de la visibilité d'une icône ou d'un élément décoratif
+description: Découvrez comment vous pouvez contrôler la visibilité d’une icône ou d’un Decorator en fonction de l’état des propriétés dans le modèle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546640"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363495"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur une forme dans un langage spécifique à un domaine (DSL). Vous pouvez faire en sorte que l’élément décoratif apparaisse et disparaisse en fonction de l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pouvez avoir différentes icônes qui s’affichent en fonction du sexe, du nombre d’enfants, etc. de la personne.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d’une icône ou d’un décorateur
- La procédure suivante suppose que vous avez déjà défini une forme et son mappage à une classe de domaine. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
+ La procédure suivante suppose que vous avez déjà défini une forme et son mappage à une classe de domaine. Pour plus d’informations, consultez [comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Pour contrôler la visibilité d’une icône ou d’un élément décoratif de texte
 

@@ -1,5 +1,7 @@
 ---
 title: Parcourir et réorganiser des cartes de code
+description: Découvrez comment vous pouvez réorganiser des éléments sur des cartes de code pour les rendre plus faciles à lire et améliorer leurs performances.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2683ec839d8eae41d3f4ab59112a31ba6d893848
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541972"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363612"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Parcourir et réorganiser des cartes de code
 
@@ -62,21 +64,21 @@ Une fois la carte générée, suivez ces conseils pour procéder à l'examen de 
 |**To**|**Exécuter ces étapes**|
 |-|-|
 |Réorganiser le flux de dépendance pour l'ensemble de la carte dans un sens spécifique. Cela peut vous aider à distinguer les couches architecturales dans le code.|Dans la barre d’outils de la carte, choisissez **disposition**, puis :<br /><br /> -   **De haut en bas** ![ Bouton graphique de haut en bas](../modeling/media/topbottomgraphbutton.gif)<br />-   **De bas en haut** ![ Bouton graphique de bas en haut](../modeling/media/bottomtopgraphbutton.gif)<br />-   **De gauche à droite** ![ Bouton de disposition de gauche à droite](../modeling/media/leftrightgraphbutton.gif)<br />-   **De droite à gauche** ![ Bouton de droite à gauche du graphique](../modeling/media/rightleftgraphbutton.gif)|
-|Afficher les clusters de dépendances naturelles dans le code avec les nœuds les plus dépendants au centre des clusters et les nœuds les moins dépendants à l'extérieur de ces clusters.|Dans la barre d’outils de la carte, choisissez **disposition**, puis **clusters**rapides clusters ![ rapides sur la barre d’outils du graphique ](../modeling/media/quickclustersicon.gif) .|
+|Afficher les clusters de dépendances naturelles dans le code avec les nœuds les plus dépendants au centre des clusters et les nœuds les moins dépendants à l'extérieur de ces clusters.|Dans la barre d’outils de la carte, choisissez **disposition**, puis **clusters** rapides clusters ![ rapides sur la barre d’outils du graphique ](../modeling/media/quickclustersicon.gif) .|
 |Sélectionnez un ou plusieurs nœuds sur la carte.|Cliquez sur un nœud pour le sélectionner. Pour sélectionner ou désélectionner plusieurs nœuds, maintenez la **touche Ctrl** enfoncée tout en cliquant.<br /><br /> Clavier : Appuyez sur la touche **Tab** ou utilisez les touches de direction pour déplacer le rectangle de focus en pointillés vers un nœud et appuyez sur **espace** pour le sélectionner. Appuyez sur **CTRL**  +  **Space** pour sélectionner ou désélectionner des nœuds.|
 |Déplacer des nœuds spécifiques sur la carte.|Faites glisser les nœuds pour les déplacer. Pour déplacer d’autres nœuds et liens à mesure que vous faites glisser des nœuds, appuyez sur la touche **MAJ** et maintenez-la enfoncée.<br /><br /> Clavier : maintenez la **touche Ctrl** enfoncée et appuyez sur les touches de direction.|
-|Modifier la disposition à l'intérieur d'un groupe, indépendamment des autres nœuds et groupes sur la carte.|Sélectionnez un nœud et ouvrez le menu contextuel. Choisissez **disposition** et sélectionnez un style de disposition.<br /><br /> - ou -<br /><br /> Sélectionnez un nœud et développez-le pour afficher les nœuds enfants. Cliquez sur le titre du nœud pour afficher la barre d’outils contextuelle du groupe, puis ouvrez la barre d’outils **modifier le style de disposition du graphique de dépendance du**groupe ![ &#45; &#45; disposition ](../modeling/media/dependencygraph_grouptoolbar.gif) . Sélectionnez l’une des dispositions en arborescence, **clusters rapides**ou **mode liste** (qui réorganise le contenu du groupe en une liste).<br /><br /> Pour plus d’informations, consultez [regrouper des nœuds](#OrganizeGroups) .|
+|Modifier la disposition à l'intérieur d'un groupe, indépendamment des autres nœuds et groupes sur la carte.|Sélectionnez un nœud et ouvrez le menu contextuel. Choisissez **disposition** et sélectionnez un style de disposition.<br /><br /> - ou -<br /><br /> Sélectionnez un nœud et développez-le pour afficher les nœuds enfants. Cliquez sur le titre du nœud pour afficher la barre d’outils contextuelle du groupe, puis ouvrez la barre d’outils **modifier le style de disposition du graphique de dépendance du** groupe ![ &#45; &#45; disposition ](../modeling/media/dependencygraph_grouptoolbar.gif) . Sélectionnez l’une des dispositions en arborescence, **clusters rapides** ou **mode liste** (qui réorganise le contenu du groupe en une liste).<br /><br /> Pour plus d’informations, consultez [regrouper des nœuds](#OrganizeGroups) .|
 |Annuler une action sur la carte.|Appuyez sur **CTRL**  +  **Z** ou utilisez la commande **Annuler** de Visual Studio.|
 
 ## <a name="browse-the-map"></a><a name="Explore"></a> Parcourir la carte
 
 |**To**|**Exécuter ces étapes**|
 |-|-|
-|Parcourir la carte.|Faites glisser la carte dans n'importe quelle direction à l'aide de la souris.<br /><br /> - ou -<br /><br /> Maintenez la **touche Maj** enfoncée et faites tourner la roulette de la souris pour faire défiler horizontalement. Maintenez la touche **MAJ**enfoncée  +  **CTRL** et faites tourner la roulette de la souris pour faire défiler horizontalement.|
+|Parcourir la carte.|Faites glisser la carte dans n'importe quelle direction à l'aide de la souris.<br /><br /> - ou -<br /><br /> Maintenez la **touche Maj** enfoncée et faites tourner la roulette de la souris pour faire défiler horizontalement. Maintenez la touche **MAJ** enfoncée  +   et faites tourner la roulette de la souris pour faire défiler horizontalement.|
 |Effectuer un zoom avant ou arrière sur la carte.|Faites tourner la roulette de la souris.<br /><br /> - ou -<br /><br /> Utilisez la liste déroulante **Zoom** dans la barre d’outils de la carte de code.<br /><br /> - ou -<br /><br /> Utilisez les raccourcis clavier. Pour effectuer un zoom avant, appuyez sur **Ctrl + Maj +.** (point). Pour effectuer un zoom arrière, appuyez sur **Ctrl + Maj +,** (virgule).|
 |Effectuer un zoom avant sur une zone spécifique à l'aide de la souris.|Maintenez le bouton droit de la souris enfoncé pendant que vous dessinez un rectangle autour de la zone qui vous intéresse.|
 |Redimensionner et ajuster la carte dans sa fenêtre.|Choisissez **Zoom pour ajuster** à la liste **Zoom** dans la barre d’outils de la carte de code.<br /><br /> - ou -<br /><br /> Cliquez sur l’icône zoom **pour ajuster la taille** ![ de la barre d’outils de ](../modeling/media/almcodemapzoomicon.png) la carte de code. Clavier : Appuyez sur **Ctrl + 0** (zéro).|
-|Rechercher un nœud par nom sur la carte. **Conseil :**  Cela fonctionne uniquement pour les éléments sur la carte. Pour rechercher des éléments dans votre solution, mais pas sur la carte, recherchez-les dans **Explorateur de solutions**, puis faites-les glisser vers la carte. (Faites glisser votre sélection ou, dans la barre d’outils **Explorateur de solutions** , cliquez sur **afficher sur la carte de code**).|1. **Choisissez l’icône de recherche icône** de recherche ![ dans la barre d’outils ](../modeling/media/almcodemapfindicon.png) de la carte de code (clavier : Appuyez sur **Ctrl + F**) pour afficher la zone de recherche dans le coin supérieur droit de la carte.<br />2. tapez le nom de l’élément et appuyez sur la touche **retour** ou cliquez sur l’icône « Loupe ». Le premier élément qui correspond à votre recherche apparaît sélectionné sur la carte.<br />3. pour personnaliser votre recherche, ouvrez la liste déroulante et choisissez une option de recherche. Les options disponibles sont **suivant**, **précédent**et **Sélectionner tout**. Cliquez ensuite sur le bouton correspondant en regard de la zone de texte Rechercher.<br />     ![Liste déroulante&#45;options de recherche](../modeling/media/almcodemapssearchdropdown.png)<br />     Vous pouvez également utiliser le clavier : Appuyez sur **F3** pour sélectionner le nœud correspondant suivant ou sur **Maj + F3** pour sélectionner le nœud correspondant précédent.<br />4. Sélectionnez l’une des options qui spécifient le mode de traitement des termes de recherche en cliquant sur les icônes sous la zone de texte Rechercher.<br />     ![Options de correspondance de recherche](../modeling/media/almcodemapssearchmatchicons.png)<br />     Les options disponibles sont, de gauche à droite, le respect de la casse pour la mise en correspondance, la recherche de mot entier uniquement, l'utilisation de la syntaxe d'expression régulière .NET et le développent automatique des groupes pour afficher les correspondances aux éléments entre parenthèses. **Important :**  Vous pouvez utiliser la zone de recherche pour rechercher les correspondances dans les groupes réduits uniquement si ces groupes ont été développés précédemment. Pour rechercher ces correspondances et développer automatiquement leurs groupes parents, choisissez cette option sous la zone de recherche.|
+|Rechercher un nœud par nom sur la carte. **Conseil :**  Cela fonctionne uniquement pour les éléments sur la carte. Pour rechercher des éléments dans votre solution, mais pas sur la carte, recherchez-les dans **Explorateur de solutions**, puis faites-les glisser vers la carte. (Faites glisser votre sélection ou, dans la barre d’outils **Explorateur de solutions** , cliquez sur **afficher sur la carte de code**).|1. **Choisissez l’icône de recherche icône** de recherche ![ dans la barre d’outils ](../modeling/media/almcodemapfindicon.png) de la carte de code (clavier : Appuyez sur **Ctrl + F**) pour afficher la zone de recherche dans le coin supérieur droit de la carte.<br />2. tapez le nom de l’élément et appuyez sur la touche **retour** ou cliquez sur l’icône « Loupe ». Le premier élément qui correspond à votre recherche apparaît sélectionné sur la carte.<br />3. pour personnaliser votre recherche, ouvrez la liste déroulante et choisissez une option de recherche. Les options disponibles sont **suivant**, **précédent** et **Sélectionner tout**. Cliquez ensuite sur le bouton correspondant en regard de la zone de texte Rechercher.<br />     ![Liste déroulante&#45;options de recherche](../modeling/media/almcodemapssearchdropdown.png)<br />     Vous pouvez également utiliser le clavier : Appuyez sur **F3** pour sélectionner le nœud correspondant suivant ou sur **Maj + F3** pour sélectionner le nœud correspondant précédent.<br />4. Sélectionnez l’une des options qui spécifient le mode de traitement des termes de recherche en cliquant sur les icônes sous la zone de texte Rechercher.<br />     ![Options de correspondance de recherche](../modeling/media/almcodemapssearchmatchicons.png)<br />     Les options disponibles sont, de gauche à droite, le respect de la casse pour la mise en correspondance, la recherche de mot entier uniquement, l'utilisation de la syntaxe d'expression régulière .NET et le développent automatique des groupes pour afficher les correspondances aux éléments entre parenthèses. **Important :**  Vous pouvez utiliser la zone de recherche pour rechercher les correspondances dans les groupes réduits uniquement si ces groupes ont été développés précédemment. Pour rechercher ces correspondances et développer automatiquement leurs groupes parents, choisissez cette option sous la zone de recherche.|
 |Sélectionner tous les nœuds non sélectionnés.|Ouvrez le menu contextuel pour les nœuds sélectionnés. Choisissez **Sélectionner**, **inverser la sélection**.|
 |Sélectionner des nœuds supplémentaires qui pointent vers ceux sélectionnés.|Ouvrez le menu contextuel pour les nœuds sélectionnés. Choisissez **Sélectionner** et l’une des opérations suivantes :<br /><br /> -Pour sélectionner des nœuds supplémentaires qui sont directement liés au nœud sélectionné, choisissez **dépendances entrantes**.<br />-Pour sélectionner des nœuds supplémentaires qui sont directement liés à partir du nœud sélectionné, choisissez **dépendances sortantes**.<br />-Pour sélectionner des nœuds supplémentaires qui sont directement liés à et à partir du nœud sélectionné, choisissez **les deux**.<br />-Pour sélectionner tous les nœuds qui lient vers et depuis le nœud sélectionné, choisissez sous- **graphique connecté**.<br />-Pour sélectionner tous les enfants du nœud sélectionné, choisissez **enfants**.|
 
@@ -102,7 +104,7 @@ Les cartes de code affichent les types de liens suivants :
 - Un lien global représente toutes les relations qui pointent dans la même direction entre deux groupes.
 
 > [!TIP]
-> Par défaut, la carte affiche les liens entre les groupes uniquement pour les nœuds sélectionnés. Pour modifier ce comportement afin d’afficher ou de masquer les liens agrégés entre les groupes, cliquez sur **disposition** dans la barre d’outils de la carte de code et choisissez **avancé**, puis **Afficher tous les liens entre les groupes** ou **masquer tous les liens entre les**groupes. Pour plus d’informations [, consultez masquer ou afficher les nœuds et les liens](#HidingShowing) .
+> Par défaut, la carte affiche les liens entre les groupes uniquement pour les nœuds sélectionnés. Pour modifier ce comportement afin d’afficher ou de masquer les liens agrégés entre les groupes, cliquez sur **disposition** dans la barre d’outils de la carte de code et choisissez **avancé**, puis **Afficher tous les liens entre les groupes** ou **masquer tous les liens entre les** groupes. Pour plus d’informations [, consultez masquer ou afficher les nœuds et les liens](#HidingShowing) .
 
 |**To**|**Exécuter ces étapes**|
 |-|-|
@@ -126,7 +128,7 @@ Masquer des nœuds les empêche de participer aux algorithmes de disposition. Pa
 |-|-|
 |Masquer les nœuds sélectionnés.|1. Sélectionnez les nœuds que vous souhaitez masquer.<br />2. Ouvrez le menu contextuel pour les nœuds sélectionnés ou pour la carte. Choisissez **Sélectionner**, **Masquer les sélections**.|
 |Masquer les nœuds non sélectionnés.|1. Sélectionnez les nœuds que vous souhaitez conserver visibles.<br />2. Ouvrez le menu contextuel pour les nœuds sélectionnés ou pour la carte. Choisissez **Sélectionner**, **Masquer non sélectionné**.|
-|Afficher les nœuds masqués.|-Pour afficher tous les nœuds masqués à l’intérieur d’un groupe, assurez-vous d’abord que le groupe est développé. Ouvrez le menu contextuel et choisissez **Sélectionner**, **afficher les enfants**.<br />     - ou -<br />     Cliquez sur l’icône d’affichage **des enfants afficher**les enfants ![ ](../modeling/media/dependencygraph_filtericon_hiddennodes.gif) dans le coin supérieur gauche du groupe (visible uniquement lorsqu’il y a des nœuds enfants masqués).<br />-Pour afficher tous les nœuds masqués, ouvrez le menu contextuel de la carte ou d’un nœud, puis choisissez **Sélectionner**, **Afficher tout**.|
+|Afficher les nœuds masqués.|-Pour afficher tous les nœuds masqués à l’intérieur d’un groupe, assurez-vous d’abord que le groupe est développé. Ouvrez le menu contextuel et choisissez **Sélectionner**, **afficher les enfants**.<br />     - ou -<br />     Cliquez sur l’icône d’affichage **des enfants afficher** les enfants ![ ](../modeling/media/dependencygraph_filtericon_hiddennodes.gif) dans le coin supérieur gauche du groupe (visible uniquement lorsqu’il y a des nœuds enfants masqués).<br />-Pour afficher tous les nœuds masqués, ouvrez le menu contextuel de la carte ou d’un nœud, puis choisissez **Sélectionner**, **Afficher tout**.|
 
 ### <a name="to-hide-or-show-links"></a>Pour masquer ou afficher les liens
 
@@ -191,7 +193,7 @@ Vous pouvez afficher plus ou moins d'éléments sur une carte pour la détailler
 
 2. Si une souris est installée, déplacez le pointeur en dehors des limites de la carte.
 
-3. Ouvrez le menu contextuel de l’élément de code et choisissez **modifier**  >  **Ajouter**un  >  **lien générique**.
+3. Ouvrez le menu contextuel de l’élément de code et choisissez **modifier**  >  **Ajouter** un  >  **lien générique**.
 
 4. Accéder à l'élément de code cible à l'aide de la touche Tab et le sélectionner pour le lien.
 
@@ -209,13 +211,13 @@ Vous pouvez afficher plus ou moins d'éléments sur une carte pour la détailler
 
      \- ou -
 
-     Ouvrez le menu contextuel de l’élément de code et choisissez **modifier**le  >  **Nouveau commentaire**.
+     Ouvrez le menu contextuel de l’élément de code et choisissez **modifier** le  >  **Nouveau commentaire**.
 
 3. Tapez vos commentaires. Pour taper sur une nouvelle ligne, appuyez sur **MAJ**  +  **entrée**.
 
 #### <a name="add-a-comment-to-the-map-itself"></a>Ajouter un commentaire à la carte elle-même
 
-1. Ouvrez le menu contextuel de la carte et choisissez **modifier**le  >  **Nouveau commentaire**.
+1. Ouvrez le menu contextuel de la carte et choisissez **modifier** le  >  **Nouveau commentaire**.
 
 2. Tapez vos commentaires. Pour taper sur une nouvelle ligne, appuyez sur **MAJ**  +  **entrée**.
 
@@ -231,7 +233,7 @@ Vous pouvez afficher plus ou moins d'éléments sur une carte pour la détailler
 
 **OR**
 
-1. Ouvrez le menu contextuel et choisissez **modifier**les  >  **Propriétés**.
+1. Ouvrez le menu contextuel et choisissez **modifier** les  >  **Propriétés**.
 
 2. Modifiez la propriété **étiquette** dans le fenêtre Propriétés Visual Studio.
 
@@ -253,11 +255,11 @@ Vous pouvez afficher plus ou moins d'éléments sur une carte pour la détailler
 
 1. Sélectionnez l'élément de code ou le lien à marquer pour le suivi.
 
-2. Ouvrez le menu contextuel et choisissez **modifier**l'  >  **indicateur pour suivi**.
+2. Ouvrez le menu contextuel et choisissez **modifier** l'  >  **indicateur pour suivi**.
 
 - Par défaut, l'élément de code est affecté d'un arrière-plan rouge. Envisagez de lui [Ajouter un commentaire](#AddComments) avec les informations de suivi appropriées.
 
-- Modifiez la couleur d’arrière-plan de l’élément ou effacez l’indicateur de suivi en sélectionnant **modifier**d'  >  **autres couleurs d’indicateur**.
+- Modifiez la couleur d’arrière-plan de l’élément ou effacez l’indicateur de suivi en sélectionnant **modifier** d'  >  **autres couleurs d’indicateur**.
 
 ## <a name="change-the-style-of-a-code-element-or-link"></a><a name="ChangeStyleCodeOrLink"></a> Modifier le style d’un lien ou d’un élément de code
 
@@ -269,7 +271,7 @@ Vous pouvez modifier les icônes sur les éléments de code et les couleurs des 
 
 2. Dans la zone **légende** , vérifiez si la catégorie ou la propriété de l’élément de code figure déjà dans la liste.
 
-3. Si la liste n’inclut pas la catégorie ou la propriété, choisissez **+** dans la zone **légende** , puis choisissez **propriété de nœud**, catégorie de **nœud**, **propriété de lien**ou **catégorie de lien**. Choisissez ensuite la propriété ou la catégorie. La catégorie ou la propriété apparaît maintenant dans la zone **légende** .
+3. Si la liste n’inclut pas la catégorie ou la propriété, choisissez **+** dans la zone **légende** , puis choisissez **propriété de nœud**, catégorie de **nœud**, **propriété de lien** ou **catégorie de lien**. Choisissez ensuite la propriété ou la catégorie. La catégorie ou la propriété apparaît maintenant dans la zone **légende** .
 
     > [!NOTE]
     > Pour créer et assigner une catégorie ou une propriété à un élément de code, vous pouvez modifier le fichier. dgml de la carte ; consultez [personnaliser les cartes de code en modifiant les fichiers dgml](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
@@ -280,7 +282,7 @@ Vous pouvez modifier les icônes sur les éléments de code et les couleurs des 
 
     |**Pour modifier l'élément suivant**|**Choisissez**|
     |-|-|
-    |Couleur d’arrière-plan|**Contexte**|
+    |Couleur d'arrière-plan|**Contexte**|
     |Couleur du contour|**Stroke**|
     |Couleur du texte (la lettre « f » s’affiche pour afficher le résultat)|**Premier plan**|
     |Icône|**Icônes**|

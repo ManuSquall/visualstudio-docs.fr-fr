@@ -1,5 +1,7 @@
 ---
 title: Création de processeurs de directives de modèles de texte T4 personnalisés
+description: En savoir plus sur le processus de transformation de modèle de texte et sur la création d’un processeur de directive de modèle de texte T4 personnalisé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597176"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363422"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Créer des processeurs de directives de modèles de texte T4 personnalisés
 

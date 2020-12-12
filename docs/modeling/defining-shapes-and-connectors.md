@@ -1,5 +1,7 @@
 ---
 title: Définition de formes et de connecteurs
+description: Découvrez les différents types de formes de base que vous pouvez utiliser pour afficher des informations sur un diagramme dans un langage spécifique à un domaine (DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589667"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363820"
 ---
 # <a name="define-shapes-and-connectors"></a>Définir des formes et des connecteurs
 

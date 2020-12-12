@@ -1,5 +1,7 @@
 ---
 title: Propagation de modifications dans le modèle par des règles
+description: Découvrez comment vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans le kit de développement logiciel (SDK) de visualisation et de modélisation (VMSDK).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542556"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363950"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans le kit de développement logiciel de visualisation et de modélisation (VMSDK). Lorsqu’une modification est apportée à un élément du magasin, des règles sont planifiées pour être exécutées, généralement lorsque la transaction la plus externe est validée. Il existe différents types de règles pour différents types d’événements, tels que l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types spécifiques d’éléments, de formes ou de diagrammes. De nombreuses fonctionnalités intégrées sont définies par des règles : par exemple, les règles garantissent qu’un diagramme est mis à jour lorsque le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.

@@ -1,5 +1,7 @@
 ---
 title: Mise à jour des formes et des connecteurs pour refléter le modèle
+description: Découvrez que dans un langage spécifique à un domaine dans Visual Studio, vous pouvez faire en sorte que l’apparence d’une forme reflète l’état du modèle sous-jacent.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115025"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362598"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Mettre à jour les formes et les connecteurs pour refléter le modèle
 
@@ -27,7 +29,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Définir les propriétés de mappage de forme pour contrôler la visibilité d’un élément décoratif
 
-Vous pouvez contrôler la visibilité d’un élément décoratif sans écrire de code de programme, en configurant le mappage entre la forme et la classe de domaine dans la définition DSL. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
+Vous pouvez contrôler la visibilité d’un élément décoratif sans écrire de code de programme, en configurant le mappage entre la forme et la classe de domaine dans la définition DSL. Pour plus d’informations, consultez [comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Exposer la couleur et le style d’une forme en tant que propriétés
 

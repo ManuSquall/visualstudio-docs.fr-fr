@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ouvrir un modèle depuis un fichier dans le code de programme'
+description: Découvrez que ModelBus fournit un mécanisme standard pour référencer un modèle ou des éléments dans un modèle, et pour rechercher le modèle s’il a été déplacé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532481"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363872"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Comment : ouvrir un modèle depuis un fichier dans le code de programme
 
@@ -45,7 +47,7 @@ Ajoutez ces références à votre projet d’application Visual Studio :
 
 ## <a name="important-classes-in-the-dsl"></a>Classes importantes dans le DSL
 
-Avant de pouvoir écrire le code qui lit votre DSL, vous devez connaître les noms de certaines des classes générées par votre DSL. Dans votre solution DSL, ouvrez le projet **DSL** et recherchez dans le dossier **GeneratedCode** . Vous pouvez également double-cliquer sur l’assembly DSL dans vos **références**de projet et ouvrir l’espace de noms DSL dans l' **Explorateur d’objets**.
+Avant de pouvoir écrire le code qui lit votre DSL, vous devez connaître les noms de certaines des classes générées par votre DSL. Dans votre solution DSL, ouvrez le projet **DSL** et recherchez dans le dossier **GeneratedCode** . Vous pouvez également double-cliquer sur l’assembly DSL dans vos **références** de projet et ouvrir l’espace de noms DSL dans l' **Explorateur d’objets**.
 
 Il s’agit des classes que vous devez identifier :
 

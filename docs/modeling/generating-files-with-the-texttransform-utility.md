@@ -1,5 +1,7 @@
 ---
 title: Génération de fichiers avec l'utilitaire TextTransform
+description: Découvrez comment l’utilitaire TextTransform est un outil en ligne de commande que vous pouvez utiliser pour transformer un modèle de texte.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec659bfee9253dfb198c2747e1b5d7fb6b78f2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d849439f3c7b8af310f1f82fc0af8f086139d12b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596552"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363911"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Générer des fichiers avec l’utilitaire TextTransform
 
@@ -70,7 +72,7 @@ TextTransform [<options>] <templateName>
 
 |**Option**|**Description**|
 |-|-|
-|**-out** \<filename>|Fichier dans lequel la sortie de la transformation est écrite.|
+|**-out**\<filename>|Fichier dans lequel la sortie de la transformation est écrite.|
 |**-r**\<assembly>|Assembly utilisé pour compiler et exécuter le modèle de texte.|
 |**-u**\<namespace>|Espace de noms utilisé pour compiler le modèle.|
 |**-I**\<includedirectory>|Répertoire qui contient les modèles de texte inclus dans le modèle de texte spécifié.|

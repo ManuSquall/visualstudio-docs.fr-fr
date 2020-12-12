@@ -1,5 +1,7 @@
 ---
 title: Utilisation de plusieurs langages spécifiques à un domaine dans une solution
+description: Découvrez comment vous pouvez empaqueter plusieurs langages spécifiques à un domaine (DSL) dans le cadre d’une solution unique afin qu’ils soient installés ensemble.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542595"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363090"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 

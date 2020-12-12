@@ -1,5 +1,7 @@
 ---
 title: Structurer votre solution de modélisation
+description: Découvrez un schéma de modélisation pour diviser l’application en différentes parties qui correspondent aux couches dans un diagramme de couche global.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d2f865cf66da0bb4496a3d754a49d1f4dcc70ff
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545039"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363729"
 ---
 # <a name="structure-your-modeling-solution"></a>Structurer votre solution de modélisation
 

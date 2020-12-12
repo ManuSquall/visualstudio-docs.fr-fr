@@ -1,5 +1,7 @@
 ---
 title: 'Diagrammes de dépendance : recommandations'
+description: Découvrez comment décrire l’architecture de votre application à un niveau élevé en créant des diagrammes de dépendance dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594628"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363963"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : indications
 

@@ -1,5 +1,7 @@
 ---
 title: Déploiement d'un processeur de directive personnalisé
+description: En savoir plus sur les méthodes disponibles pour le déploiement d’un processeur de directive personnalisé dans Visual Studio ou sur n’importe quel ordinateur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536017"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363924"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 
@@ -164,7 +166,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 2. Dans regedit, accédez à
 
-    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Si vous souhaitez installer le processeur de directive dans la version expérimentale de Visual Studio, insérez « exp » après « 11,0 ».
 

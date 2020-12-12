@@ -1,5 +1,7 @@
 ---
 title: Personnalisation du stockage de fichiers et de la sérialisation XML
+description: En savoir plus sur le fichier XML créé ou mis à jour lorsque vous enregistrez une instance, ou un modèle, d’un langage spécifique à un domaine (DSL) dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542738"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362936"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personnaliser le stockage de fichiers et la sérialisation XML
 
@@ -27,7 +29,7 @@ Vous pouvez personnaliser le schéma de sérialisation en ajustant les paramètr
 Vous pouvez également écrire du code de programme pour une personnalisation plus avancée.
 
 > [!NOTE]
-> Si vous souhaitez enregistrer le modèle dans un format particulier, mais que vous n’avez pas besoin de le recharger à partir de ce formulaire, envisagez d’utiliser des modèles de texte pour générer la sortie à partir du modèle, au lieu d’un schéma de sérialisation personnalisé. Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+> Si vous souhaitez enregistrer le modèle dans un format particulier, mais que vous n’avez pas besoin de le recharger à partir de ce formulaire, envisagez d’utiliser des modèles de texte pour générer la sortie à partir du modèle, au lieu d’un schéma de sérialisation personnalisé. Pour plus d’informations, consultez [génération de code à partir d’un langage de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="model-and-diagram-files"></a>Fichiers de modèle et de diagramme
 
@@ -130,7 +132,7 @@ Les monikers de clé qualifiés sont plus faciles à lire que les monikers d’I
 
     3. Si la classe de domaine a une classe de base, répétez la procédure dans cette classe.
 
-2. Définissez **Serialize Id**  =  `true` l’ID de sérialisation de la classe de domaine.
+2. Définissez   =  `true` l’ID de sérialisation de la classe de domaine.
 
      Cette propriété se trouve sous **comportement de sérialisation XML**.
 
@@ -166,7 +168,7 @@ Il existe plusieurs méthodes qui permettent d’éviter cette situation :
 
      Il existe une méthode de validation générée automatiquement qui vérifie les ambiguïtés. La méthode figure dans la `Load` catégorie validation. Cela permet de s’assurer que l’utilisateur est averti qu’il n’est pas possible de rouvrir le fichier.
 
-     Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+     Pour plus d’informations, consultez [validation dans un langage de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 ### <a name="moniker-paths-and-qualifiers"></a>Chemins d’accès et qualificateurs de moniker
 
@@ -230,7 +232,7 @@ Pour effectuer les personnalisations suivantes, développez le nœud **comportem
     </familyTreeModel>
     ```
 
-- Définissez **Representation**  =  l'**élément** de représentation pour qu’une propriété de domaine soit enregistrée en tant qu’élément et non en tant que valeur d’attribut.
+- Définissez   =  l'**élément** de représentation pour qu’une propriété de domaine soit enregistrée en tant qu’élément et non en tant que valeur d’attribut.
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -273,11 +275,11 @@ Ces éléments se trouvent dans l’Explorateur DSL sous **sérialisation XML Be
 |Classe de domaine|Classe de domaine à laquelle ce nœud de données de classe s’applique. Lecture seule.|
 |Nom de l’élément|Nom de nœud XML pour les éléments de cette classe. La valeur par défaut est une version en minuscules du nom de classe de domaine.|
 |Nom d’attribut de moniker|Nom de l’attribut utilisé dans les éléments moniker pour contenir la référence. Si vide, le nom de la propriété ou l'identificateur de clé est utilisé.<br /><br /> Dans cet exemple, il s’agit de « Name » :  `<personMoniker name="/Mike Nash"/>`|
-|Nom de l’élément moniker|Nom de l’élément XML utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscules du nom de classe avec le suffixe « moniker ». Par exemple : `personMoniker`.|
+|Nom de l’élément moniker|Nom de l’élément XML utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscules du nom de classe avec le suffixe « moniker ». Par exemple, `personMoniker`.|
 |Nom de type de moniker|Nom du type XSD généré pour les monikers aux éléments de cette classe. Le schéma XSD se trouve dans **Dsl\Generated code \\ \* Schema. xsd**|
 |ID de sérialisation|Si la valeur est true, le GUID de l’élément est inclus dans le fichier. Cela doit avoir la valeur true s’il n’y a aucune propriété marquée comme **clé de moniker** et que la DSL définit des relations de référence à cette classe.|
 |Nom de type|Nom du type XML généré dans XSD à partir de la classe de domaine indiquée.|
-|Notes|Notes informelles associées à cet élément|
+|Remarques|Notes informelles associées à cet élément|
 
 ### <a name="xml-property-data"></a>Données de propriété XML
 
@@ -290,7 +292,7 @@ Les nœuds de propriété XML se trouvent sous les nœuds de classe.
 |Qualificateur de moniker|Si la valeur est True, la propriété est utilisée pour créer le qualificateur dans les monikers. Si la valeur est false et si SerializeId n’a pas la valeur true pour cette classe de domaine, les monikers sont qualifiés par le moniker de l’élément parent dans l’arborescence d’incorporation.|
 |Représentation|Si Attribute, la propriété est sérialisée en tant qu'attribut XML ; si Element, elle est sérialisée en tant qu'élément ; si Ignore, elle n'est pas sérialisée.|
 |Nom XML|Nom utilisé pour l'attribut ou l'élément XML représentant la propriété. Par défaut, il s’agit d’une version en minuscules du nom de la propriété de domaine.|
-|Notes|Notes informelles associées à cet élément|
+|Remarques|Notes informelles associées à cet élément|
 
 ### <a name="xml-role-data"></a>Données de rôle XML
 

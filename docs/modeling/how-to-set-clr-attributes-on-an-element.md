@@ -1,5 +1,7 @@
 ---
 title: 'Comment : définir des attributs CLR sur un élément'
+description: Découvrez comment vous pouvez ajouter n’importe quel attribut qui hérite de la classe System. Attribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49551a5e96e3c354b54b6b2ba7cedf1ba2ab4470
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811199"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363846"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Comment : définir des attributs CLR sur un élément
 Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajoutés à des éléments de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez ajouter n’importe quel attribut qui hérite de la `System.Attribute` classe.

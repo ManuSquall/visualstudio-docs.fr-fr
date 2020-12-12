@@ -1,5 +1,7 @@
 ---
 title: Directive de sortie T4
+description: Découvrez que dans les modèles de texte Visual Studio, la directive de sortie est utilisée pour définir l’extension de nom de fichier et l’encodage du fichier transformé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591812"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363638"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 

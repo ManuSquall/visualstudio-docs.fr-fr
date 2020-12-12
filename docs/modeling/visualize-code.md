@@ -1,5 +1,7 @@
 ---
 title: Visualiser du code
+description: Découvrez comment vous pouvez utiliser les outils de visualisation et de modélisation de Visual Studio pour comprendre le code existant et décrire votre application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9886ea905a4997d5735e4dd2cabbfc4798a5c4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535874"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362507"
 ---
 # <a name="visualize-code"></a>Visualiser du code
 

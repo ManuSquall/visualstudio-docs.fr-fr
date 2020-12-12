@@ -1,5 +1,7 @@
 ---
 title: Personnalisation de la création et du mouvement des éléments
+description: Découvrez comment vous pouvez autoriser le glissement d’un élément vers un autre, soit à partir de la boîte à outils, soit dans une opération de collage ou de déplacement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547262"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363118"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 

@@ -1,5 +1,7 @@
 ---
 title: Directives de modèles de texte T4
+description: En savoir plus sur les directives de modèle de test T4 et la façon dont elles fournissent des instructions au moteur de transformation de modèle de texte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ddad0010413ebe8e0a53096bb4d90b52050d26a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591825"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363599"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
 

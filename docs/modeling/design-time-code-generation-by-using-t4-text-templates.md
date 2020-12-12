@@ -1,5 +1,7 @@
 ---
 title: Génération de code durant la conception à l'aide de modèles de texte T4
+description: Découvrez comment les modèles de texte T4 au moment de la conception vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426770"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363807"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 
@@ -35,7 +37,7 @@ Vous connaissez sans doute déjà le concept de génération de code. Quand vous
 
 Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code du programme vous permet de répéter ou d’omettre de manière conditionnelle des parties du texte généré. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.
 
-## <a name="create-a-design-time-t4-text-template"></a>Créer un modèle de texte T4 au moment du design
+## <a name="create-a-design-time-t4-text-template"></a>Créer un Design-Time modèle de texte T4
 
 1. Créez un projet Visual Studio ou ouvrez-en un existant.
 

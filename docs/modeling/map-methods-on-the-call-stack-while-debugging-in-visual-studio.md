@@ -1,5 +1,7 @@
 ---
 title: Mapper les méthodes sur la pile des appels tout en déboguant
+description: Découvrez comment créer une carte de code pour suivre visuellement la pile des appels pendant le débogage. En outre, découvrez que vous pouvez créer des notes sur la carte pour suivre ce que fait le code.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532702"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362429"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
 
@@ -71,7 +73,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
 - [Rechercher des bogues à l’aide de la carte](#FindBugs)
 
-- [Q & A](#QA)
+- [Q & R](#QA)
 
   Pour plus d’informations sur les commandes et les actions que vous pouvez utiliser lorsque vous travaillez avec des cartes de code, consultez [Parcourir et réorganiser les cartes de code](../modeling/browse-and-rearrange-code-maps.md).
 

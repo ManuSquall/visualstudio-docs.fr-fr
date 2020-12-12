@@ -1,5 +1,7 @@
 ---
 title: Le fichier DslDefinition.dsl
+description: En savoir plus sur la structure du fichier DslDefinition. DSL dans le projet DSL d’une solution d’outils DSL, qui définit un langage spécifique à un domaine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808953"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362780"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 
@@ -267,7 +269,7 @@ Outre les attributs et les nœuds enfants accessibles à toutes les classes, cha
 
 ## <a name="designer-and-toolbox-tabs"></a>Onglets du concepteur et de la boîte à outils
 
-La partie principale de la section du **Concepteur** du fichier DslDefinition. DSL est l’élément **ToolBoxTab** . Un concepteur peut avoir plusieurs de ces éléments, chacun d’eux représentant une section intitulée dans la **boîte à outils**du concepteur généré. Chaque élément **ToolBoxTab** peut contenir un ou plusieurs éléments **ElementTool** , **ConnectionTool** , ou les deux.
+La partie principale de la section du **Concepteur** du fichier DslDefinition. DSL est l’élément **ToolBoxTab** . Un concepteur peut avoir plusieurs de ces éléments, chacun d’eux représentant une section intitulée dans la **boîte à outils** du concepteur généré. Chaque élément **ToolBoxTab** peut contenir un ou plusieurs éléments **ElementTool** , **ConnectionTool** , ou les deux.
 
 Les outils d'éléments peuvent créer des instances d'une classe de domaine spécifique. Quand l'utilisateur fait glisser un outil d'élément sur le diagramme, le résultat est déterminé par les directives de fusion d'éléments telles que décrites dans la section relative aux directives de fusion d'éléments plus loin dans cette rubrique.
 
@@ -275,7 +277,7 @@ Chaque outil de connexion peut appeler un générateur de connexion spécifique.
 
 Aucun de ces types d'outils ne construit directement des formes ou des connecteurs. Chacun instancie une classe de domaine ou une relation de domaine ; les mappages Forme et Connecteur déterminent ensuite comment cette classe de domaine ou cette relation de domaine apparaît.
 
-## <a name="paths"></a>Chemins d'accès
+## <a name="paths"></a>Chemins
 
 Les chemins d'accès de domaine apparaissent à plusieurs emplacements dans le fichier DslDefinition.dsl. Ces chemins d'accès spécifient une série de liens d'un élément du modèle (autrement dit, une instance du langage spécifique à un domaine) à un autre. La syntaxe de chemin d'accès est simple mais détaillée.
 
@@ -296,7 +298,7 @@ Dans cet exemple, InPort est une sous-classe de ComponentPort et possède une re
 Lors de l'écriture de code C# selon ce modèle, vous pouvez parcourir un lien en une étape en utilisant la propriété générée par la relation sur chacune des classes qu'elle met en rapport :
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Toutefois, vous devez effectuer les deux tronçons de manière explicite en syntaxe de chemin d'accès. Cette exigence simplifie l'accès au lien intermédiaire. Le code suivant achève le tronçon du lien au composant :
@@ -465,7 +467,7 @@ Le fichier sérialisé contient :
 
 (La relation Connection possède ses propres données de classe XML, qui fournissent ses noms d'éléments et d'attributs.)
 
-Si l’attribut **OmitElement** est défini sur true, le nom de rôle de relation est omis, ce qui permet d’abréger le fichier sérialisé et n’est pas ambigu si les deux classes n’ont pas plus d’une relation. Exemple :
+Si l’attribut **OmitElement** est défini sur true, le nom de rôle de relation est omis, ce qui permet d’abréger le fichier sérialisé et n’est pas ambigu si les deux classes n’ont pas plus d’une relation. Par exemple :
 
 ```xml
 <component name="Component3">
@@ -480,7 +482,7 @@ Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conf
 
 - **DSL** est le nœud RootClass et la classe du diagramme. DomainClass, DomainRelationship et d'autres éléments sont incorporés sous `Dsl`.
 
-- **Classes** est le **RoleElementName** de la relation entre le langage spécifique à un domaine et DomainClass.
+- **Classes** est le **RoleElementName** de la relation entre Domain-Specific Language et DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>

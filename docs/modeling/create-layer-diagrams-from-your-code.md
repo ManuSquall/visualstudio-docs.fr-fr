@@ -1,5 +1,7 @@
 ---
 title: Créer des diagrammes de dépendance à partir de votre code
+description: Découvrez comment vous pouvez créer un diagramme de dépendance dans Visual Studio pour visualiser l’architecture logique de haut niveau de votre système logiciel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea19089fe8660b1169d790e25ed7ccf845404238
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545728"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363521"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code
 
@@ -51,7 +53,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 4. Dans **Ajouter au projet de modélisation**, recherchez et sélectionnez un projet de modélisation existant dans votre solution.
 
-     - ou -
+     -ou-
 
      Choisissez **créer un nouveau projet de modélisation** pour ajouter un nouveau projet de modélisation à la solution.
 
@@ -70,7 +72,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 4. Créer un nouveau diagramme de dépendance pour la solution à l’aide du menu **architecture**
 
-5. Sélectionnez tous les nœuds sur la carte de code (utilisez _CTRL_  +  _A_ou utilisez la sélection de la bande caoutchoutée en appuyant sur la touche _MAJ_ avant de cliquer, faire glisser et relâcher.
+5. Sélectionnez tous les nœuds sur la carte de code (utilisez _CTRL_  +  _A_ ou utilisez la sélection de la bande caoutchoutée en appuyant sur la touche _MAJ_ avant de cliquer, faire glisser et relâcher.
 
 6. Glisser-déplacer, ou copier et coller, les éléments sélectionnés dans le nouveau diagramme de validation des dépendances.
 

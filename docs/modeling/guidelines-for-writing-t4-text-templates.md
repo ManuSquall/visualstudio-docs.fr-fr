@@ -1,5 +1,7 @@
 ---
 title: Instructions relatives à l'écriture de modèles de texte T4
+description: Découvrez les recommandations générales qui sont utiles si vous générez du code de programme ou d’autres ressources d’application dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596539"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363404"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 
 Ces recommandations générales peuvent être utiles si vous générez du code de programme ou d’autres ressources d’application dans Visual Studio. Ce ne sont pas des règles fixes.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>Instructions pour les modèles T4 au moment du design
+## <a name="guidelines-for-design-time-t4-templates"></a>Instructions pour Design-Time les modèles T4
 
 Les modèles T4 au moment du design sont des modèles qui génèrent du code dans votre projet Visual Studio au moment du Design. Pour plus d’informations, consultez [génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Instructions pour les modèles T4 au moment de l’exécution (prétraités)
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Instructions pour les modèles T4 Run-Time (prétraités)
 
 Déplacez le matériel commun dans les modèles hérités.
 

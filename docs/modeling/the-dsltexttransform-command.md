@@ -1,5 +1,7 @@
 ---
 title: La commande DslTextTransform
+description: Découvrez que DslTextTransform. cmd est un script qui appelle TextTransform.exe et l’exécute avec des options communes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c01401eda8fb1bbe2bdcfc2950a51b968e98b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74f87f735f5ad6864082046327bc852d5d43fdb6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114906"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362715"
 ---
 # <a name="the-dsltexttransform-command"></a>La commande DslTextTransform
 DslTextTransform. cmd est un script qui appelle TextTransform.exe et l’exécute avec des options communes. Vous pouvez utiliser DslTextTransformation. cmd pour automatiser une génération nocturne de vos [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] projets. Pour plus d’informations, consultez [génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).

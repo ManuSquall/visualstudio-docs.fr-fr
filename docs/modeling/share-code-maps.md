@@ -1,5 +1,7 @@
 ---
 title: Exporter et enregistrer des cartes de code
+description: Découvrez comment enregistrer des cartes de code dans le cadre d’un projet Visual Studio, sous la forme d’une image ou d’un fichier XPS.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542569"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363768"
 ---
 # <a name="share-code-maps"></a>Partager des cartes de code
 
@@ -22,7 +24,7 @@ Vous pouvez enregistrer des cartes de code dans le cadre d’un projet Visual St
 
 Utilisez le menu **Fichier** pour enregistrer la carte.
 
-- ou -
+-ou-
 
 Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partager**  >  **déplacer Move \<CodeMapName> . dgml dans**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
 
@@ -43,7 +45,7 @@ Visual Studio enregistre la carte en tant que fichier *. dgml* que vous pouvez p
 
 Lorsque vous exportez une carte de code en tant qu’image, vous pouvez la copier dans d’autres applications, telles que Microsoft Word ou PowerPoint.
 
-1. Dans la barre d’outils de la carte de code, choisissez **partager**l'  >  **e-mail en tant qu’image** ou **copier l’image**.
+1. Dans la barre d’outils de la carte de code, choisissez **partager** l'  >  **e-mail en tant qu’image** ou **copier l’image**.
 
 2. Collez l’image dans une autre application.
 
@@ -51,7 +53,7 @@ Lorsque vous exportez une carte de code en tant qu’image, vous pouvez la copie
 
 Lorsque vous exportez une carte de code sous la forme d’un fichier XPS, vous pouvez la voir dans des visionneuses XML ou XAML comme Internet Explorer.
 
-1. Dans la barre d’outils de la carte de code, choisissez **partager**des  >  **e-mails comme portable XPS** ou **Enregistrer comme portable XPS**.
+1. Dans la barre d’outils de la carte de code, choisissez **partager** des  >  **e-mails comme portable XPS** ou **Enregistrer comme portable XPS**.
 
 2. Accédez à l’emplacement auquel enregistrer le fichier.
 

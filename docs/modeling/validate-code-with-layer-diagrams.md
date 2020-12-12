@@ -1,5 +1,7 @@
 ---
 title: Valider du code avec des diagrammes de dépendance
+description: Découvrez que pour vous assurer que le code n’est pas en conflit avec sa conception, vous devez valider votre code avec des diagrammes de dépendance dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975fe8eac5657e245027a4811e50bbc93528cfe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80759701"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362546"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -200,7 +202,7 @@ Pour gérer les erreurs dans la fenêtre de Liste d’erreurs, consultez [résou
 
 Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [résoudre les problèmes de validation de couche](#troubleshoot-layer-validation-issues).
 
-|**Problème**|**Cause possible**|**Résolution :**|
+|**Problème**|**Cause possible**|**Résolution**|
 |-|-|-|
 |Les erreurs de validation ne se produisent pas comme prévu.|La validation ne fonctionne pas sur les diagrammes de dépendance qui sont copiés à partir d’autres diagrammes de dépendance dans Explorateur de solutions et qui se trouvent dans le même projet de modélisation. les diagrammes de dépendance copiés de cette façon contiennent les mêmes références que le diagramme de dépendance d’origine.|Ajoutez un nouveau diagramme de dépendance au projet de modélisation.<br /><br /> Copiez les éléments du diagramme de dépendance source vers le nouveau diagramme.|
 

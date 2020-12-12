@@ -1,5 +1,7 @@
 ---
 title: Personnalisation de l'Explorateur de modèles
+description: Découvrez comment vous pouvez modifier l’apparence et le comportement de l’Explorateur pour votre concepteur de langage spécifique à un domaine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69748ef44ce0ca2e16f431c0d13d99bfa449411
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807870"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362888"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour votre concepteur de langage spécifique à un domaine comme suit :
@@ -68,7 +70,7 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
 
 1. Ouvrez la solution que vous avez créée dans la procédure précédente.
 
-2. Assurez-vous que le **Commentaire** ne fait référence qu’à une classe de domaine unique en affectant à la multiplicité du rôle les **objets** de nom de propriété la valeur 0.. 1. Le nom de la propriété doit devenir **Subject**et le nom de la relation doit devenir **CommentReferencesSubject**.
+2. Assurez-vous que le **Commentaire** ne fait référence qu’à une classe de domaine unique en affectant à la multiplicité du rôle les **objets** de nom de propriété la valeur 0.. 1. Le nom de la propriété doit devenir **Subject** et le nom de la relation doit devenir **CommentReferencesSubject**.
 
 3. Dans l' **Explorateur DSL**, cliquez avec le bouton droit sur **comportement** de l’Explorateur, puis cliquez sur **ajouter de nouveaux paramètres de nœud de l’Explorateur**.
 
@@ -76,7 +78,7 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
 
 4. Sélectionnez **ExplorerNodeSettings**, puis dans la fenêtre **Propriétés** , affectez à **classe** la valeur **Comment**.
 
-5. Cliquez avec le bouton droit sur le nœud **Commentaire** , puis cliquez sur **Ajouter un nouveau chemin d’accès**à la propriété.
+5. Cliquez avec le bouton droit sur le nœud **Commentaire** , puis cliquez sur **Ajouter un nouveau chemin d’accès** à la propriété.
 
      Un nouveau nœud s’affiche, nommé **propriété affiché**.
 

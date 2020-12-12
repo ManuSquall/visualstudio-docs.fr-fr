@@ -1,5 +1,7 @@
 ---
 title: Personnalisation de la fenêtre Propriétés
+description: Découvrez comment personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548276"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362872"
 ---
 # <a name="customize-the-properties-window"></a>Personnaliser le Fenêtre Propriétés
 
@@ -40,13 +42,13 @@ Certaines des fonctionnalités dynamiques des éléments graphiques peuvent êtr
 
 Cliquez avec le bouton droit sur une classe de forme dans la définition DSL, pointez sur **Ajouter exposé**, puis choisissez une fonctionnalité.
 
-Sur les formes, vous pouvez exposer les propriétés **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** et **FillGradientMode** . Sur les connecteurs, vous pouvez exposer les propriétés **Color** `,` **TextColor**, **DashStyle**et **Thickness** . Sur les diagrammes, vous pouvez exposer les propriétés **FillColor** et **TextColor** .
+Sur les formes, vous pouvez exposer les propriétés **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** et **FillGradientMode** . Sur les connecteurs, vous pouvez exposer les propriétés **Color** `,` **TextColor**, **DashStyle** et **Thickness** . Sur les diagrammes, vous pouvez exposer les propriétés **FillColor** et **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Transfert : afficher les propriétés des éléments associés
 
 Lorsque l’utilisateur de votre DSL sélectionne un élément dans un modèle, les propriétés de cet élément s’affichent dans la fenêtre Propriétés. Toutefois, vous pouvez également afficher les propriétés des éléments associés spécifiés. Cela est utile si vous avez défini un groupe d’éléments qui fonctionne ensemble. Par exemple, vous pouvez définir un élément principal et un élément de plug-in facultatif. Si l’élément principal est mappé à une forme et que l’autre ne l’est pas, il est utile de voir toutes leurs propriétés comme si elles se trouvaient sur un élément.
 
-Cet effet est appelé *transfert de propriété*et se produit automatiquement dans plusieurs cas. Dans d’autres cas, vous pouvez obtenir le transfert de propriété en définissant un descripteur de type de domaine.
+Cet effet est appelé *transfert de propriété* et se produit automatiquement dans plusieurs cas. Dans d’autres cas, vous pouvez obtenir le transfert de propriété en définissant un descripteur de type de domaine.
 
 ### <a name="default-property-forwarding-cases"></a>Cas de transfert de propriété par défaut
 
@@ -146,7 +148,7 @@ Ajoutez un attribut CLR à la propriété de domaine, sous la forme suivante :
 
 Vous pouvez définir l’attribut sur une propriété à l’aide de l’entrée **attribut personnalisé** dans la fenêtre Propriétés.
 
-Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit avoir la valeur <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor> . Pour plus d'informations, consultez <xref:System.ComponentModel.EditorAttribute>.
+Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit avoir la valeur <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor> . Pour plus d’informations, consultez <xref:System.ComponentModel.EditorAttribute>.
 
 Vous pouvez spécifier votre propre éditeur ou un éditeur .NET, tel que <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor> . Par exemple, utilisez la procédure suivante pour avoir une propriété dans laquelle l’utilisateur peut entrer un nom de fichier.
 
@@ -183,7 +185,7 @@ Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.D
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, pour spécifier si votre éditeur doit ouvrir une boîte de dialogue ou fournir un menu déroulant.
 
-Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported` et `PaintValue` .  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported` et `PaintValue` .  Pour plus d’informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Ajoutez le code dans un fichier de code séparé dans le projet **DSL** .
@@ -210,7 +212,7 @@ Pour utiliser cet éditeur, affectez à l' **attribut personnalisé** d’une pr
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+Pour plus d’informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Fournir une liste déroulante de valeurs
 

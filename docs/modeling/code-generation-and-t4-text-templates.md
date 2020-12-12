@@ -1,5 +1,7 @@
 ---
 title: Génération de code et modèles de texte T4
+description: Découvrez comment un modèle de texte T4 est un mélange de blocs de texte et de logique de contrôle qui peut générer un fichier texte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548237"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363573"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
 
@@ -56,7 +58,7 @@ Pour plus d’informations, consultez [génération de texte au moment de l’ex
 
 ## <a name="design-time-t4-text-templates"></a>Modèles de texte T4 au moment du design
 
-Les modèles au moment de la conception définissent une partie du code source et d’autres ressources de votre application. En général, vous utilisez plusieurs modèles qui lisent les données dans un fichier ou une base de données d’entrée unique et génèrent des fichiers *. cs*, *. vb*ou d’autres fichiers sources. Chaque modèle génère un fichier. Ils sont exécutés dans Visual Studio ou MSBuild.
+Les modèles au moment de la conception définissent une partie du code source et d’autres ressources de votre application. En général, vous utilisez plusieurs modèles qui lisent les données dans un fichier ou une base de données d’entrée unique et génèrent des fichiers *. cs*, *. vb* ou d’autres fichiers sources. Chaque modèle génère un fichier. Ils sont exécutés dans Visual Studio ou MSBuild.
 
 Par exemple, vos données d’entrée peuvent être un fichier XML de données de configuration. Chaque fois que vous modifiez le fichier XML pendant le développement, les modèles de texte régénèrent une partie du code de l’application. L’un des modèles peut ressembler à l’exemple suivant :
 

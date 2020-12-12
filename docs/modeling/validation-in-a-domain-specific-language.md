@@ -1,5 +1,7 @@
 ---
 title: Validation dans un langage spécifique à un domaine
+description: Découvrez comment vous pouvez définir des contraintes de validation pour vérifier que le modèle créé par l’utilisateur est explicite.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594004"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362533"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.
@@ -193,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Si vous définissez la multiplicité d'un rôle d'une relation de domaine sur 1..* ou 1..1, mais que l'utilisateur ne crée pas le lien de cette relation, un message d'erreur de validation s'affiche.
 
- Par exemple, si votre DSL a des classes Person et Town et une relation PersonLivesInTown avec une relation **1.. \\ ** * dans le rôle ville, un message d’erreur s’affiche pour chaque personne qui n’a pas de ville.
+ Par exemple, si votre DSL a des classes Person et Town et une relation PersonLivesInTown avec une relation **1.. \\** _ au rôle ville, un message d’erreur s’affiche pour chaque personne qui n’a pas de ville.
 
 ## <a name="running-validation-from-program-code"></a>Exécution de la validation à partir du code de programme
  Vous pouvez exécuter la validation en accédant à un ValidationController ou en en créant un. Si vous souhaitez que les erreurs soient affichées à l’utilisateur dans la fenêtre d’erreur, utilisez l’ValidationController joint au DocData de votre diagramme. Par exemple, si vous écrivez une commande de menu, `CurrentDocData.ValidationController` est disponible dans la classe de l'ensemble de commandes :
@@ -233,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Exécution de la validation quand une modification intervient
  Si vous voulez vous assurer que l'utilisateur est immédiatement averti si le modèle devient non valide, vous pouvez définir un événement de magasin qui exécute la validation. Pour plus d’informations sur les événements de stockage, consultez [gestionnaires d’événements propager les modifications à l’extérieur du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- En plus du code de validation, ajoutez un fichier de code personnalisé à votre projet **DslPackage** , avec du contenu similaire à l’exemple suivant. Ce code utilise le `ValidationController` attaché au document. Ce contrôleur affiche les erreurs de validation dans la liste d’erreurs de Visual Studio.
+ En plus du code de validation, ajoutez un fichier de code personnalisé à votre projet _ *DslPackage**, avec un contenu similaire à l’exemple suivant. Ce code utilise le `ValidationController` attaché au document. Ce contrôleur affiche les erreurs de validation dans la liste d’erreurs de Visual Studio.
 
 ```csharp
 using System;

@@ -2,7 +2,7 @@
 title: Solutions et projets
 description: Découvrez les projets et les solutions Visual Studio et apprenez à créer un projet avec l’outil Explorateur de solutions.
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 42250d4b60cf272f041fea6f44abd24f99645b93
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480705"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363456"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -59,6 +59,10 @@ Visual Studio utilise deux types de fichiers (*. sln* et *. suo*) pour stocker l
 |---------------|----------|-----------------|
 |.sln|Solution Visual Studio|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|
 |.suo|Options utilisateur de solution|Stocke les personnalisations et les paramètres au niveau de l’utilisateur, tels que les points d’arrêt.|
+
+### <a name="solution-folder"></a>Dossier de solution
+
+Dans ce contexte, un « dossier de solution » est un dossier virtuel qui se trouve uniquement dans **Explorateur de solutions**, où vous pouvez l’utiliser pour regrouper des projets dans une solution. Si vous souhaitez localiser l’emplacement de stockage des projets sur votre ordinateur, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**.
 
 ## <a name="create-new-projects"></a>Créer de nouveaux projets
 

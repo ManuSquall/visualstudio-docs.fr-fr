@@ -1,5 +1,7 @@
 ---
 title: Déploiement MSI et VSIX d'un langage spécifique à un domaine
+description: Découvrez comment vous pouvez installer un langage spécifique à un domaine (DSL) sur votre propre ordinateur ou sur d’autres ordinateurs.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542614"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363131"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. Visual Studio doit déjà être installé sur l’ordinateur cible.
@@ -41,11 +43,11 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
    - L’ordinateur cible doit avoir l’une des éditions de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] qui prend en charge DSL au moment de l’exécution. Pour plus d’informations, consultez [éditions de Visual Studio prises en charge pour la visualisation & le kit de développement logiciel Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-   - L’une des éditions de Visual Studio doit être spécifiée dans **DslPackage\source.extensions.manifest**pour l’ordinateur cible.
+   - L’une des éditions de Visual Studio doit être spécifiée dans **DslPackage\source.extensions.manifest** pour l’ordinateur cible.
 
 3. Sur l’ordinateur cible, double-cliquez sur le fichier **. vsix** .
 
-    Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
+    Le **Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
 
 4. Démarrez ou redémarrez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 

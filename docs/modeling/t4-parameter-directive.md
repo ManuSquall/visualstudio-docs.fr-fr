@@ -1,5 +1,7 @@
 ---
 title: Directive du paramètre T4
+description: Découvrez que dans Visual Studio, la directive de paramètre déclare des propriétés dans votre code de modèle qui sont initialisées à partir de valeurs transmises à partir du contexte externe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591799"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363625"
 ---
 # <a name="t4-parameter-directive"></a>Directive du paramètre T4
 
@@ -82,7 +84,7 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passage de valeurs à un modèle de texte au moment de l’exécution (prétraité)
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passage de valeurs à un modèle de texte Run-Time (prétraité)
  Il n’est généralement pas nécessaire d’utiliser la `<#@parameter#>` directive avec les modèles de texte au moment de l’exécution (prétraités). Au lieu de cela, vous pouvez définir un constructeur supplémentaire ou une propriété définissable pour le code généré, par le biais duquel vous transmettez des valeurs de paramètre. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Toutefois, si vous souhaitez utiliser `<#@parameter>` dans un modèle au moment de l’exécution, vous pouvez lui passer des valeurs à l’aide du dictionnaire de sessions. Par exemple, supposons que vous avez créé le fichier en tant que modèle prétraité nommé `PreTextTemplate1` . Vous pouvez appeler le modèle dans votre programme à l’aide du code suivant.

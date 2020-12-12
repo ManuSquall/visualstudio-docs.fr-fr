@@ -1,5 +1,7 @@
 ---
 title: Extension de votre DSL à l'aide de MEF
+description: Découvrez comment vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide de la Managed Extensibility Framework (MEF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547639"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363170"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
 
@@ -129,7 +131,7 @@ Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’u
 
    - Cet assembly a généralement un nom qui se termine par « .Dsl.dll ».
 
-   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le **répertoire \\ DSL \\ \* bin** .
+   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le répertoire ** \\ DSL \\ \* bin* _
 
    - Si vous avez accès au fichier VSIX DSL, vous pouvez trouver l’assembly en remplaçant l’extension de nom de fichier du fichier VSIX par « . zip ». Décompressez le fichier. zip.
 
@@ -145,23 +147,23 @@ Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’u
 
    - System.Windows.Forms.dll
 
-4. Créez un projet de **projet VSIX** .
+4. Créez un projet _ *VSIX Project**.
 
 5. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet VSIX, puis choisissez **définir comme projet de démarrage**.
 
 6. Dans le nouveau projet, ouvrez **source. extension. vsixmanifest**.
 
-7. Cliquez sur **Ajouter du contenu**. Dans la boîte de dialogue, définissez **type de contenu** sur **Composant MEF**et **projet source** sur votre projet de bibliothèque de classes.
+7. Cliquez sur **Ajouter du contenu**. Dans la boîte de dialogue, définissez **type de contenu** sur **Composant MEF** et **projet source** sur votre projet de bibliothèque de classes.
 
 8. Ajoutez une référence VSIX au DSL.
 
    1. Dans **source. extension. vsixmanifest**, cliquez sur **Ajouter une référence** .
 
-   2. Dans la boîte de dialogue, cliquez sur **Ajouter une charge utile** , puis recherchez le fichier VSIX du DSL. Le fichier VSIX est créé dans la solution DSL, dans **DslPackage \\ bin \\ \* **.
+   2. Dans la boîte de dialogue, cliquez sur **Ajouter une charge utile** , puis recherchez le fichier VSIX du DSL. Le fichier VSIX est créé dans la solution DSL, dans **DslPackage \\ bin \\ \** _.
 
        Cela permet aux utilisateurs d’installer le DSL et votre extension en même temps. Si l’utilisateur a déjà installé le DSL, seule votre extension sera installée.
 
-9. Passez en revue et mettez à jour les autres champs de **source. extension. vsixmanifest**. Cliquez sur **Sélectionner des éditions** et vérifiez que les éditions de Visual Studio appropriées sont définies.
+9. Examinez et mettez à jour les autres champs de _ * source. extension. vsixmanifest * *. Cliquez sur **Sélectionner des éditions** et vérifiez que les éditions de Visual Studio appropriées sont définies.
 
 10. Ajoutez du code au projet de bibliothèque de classes. Utilisez les exemples de la section suivante comme guide.
 
@@ -323,7 +325,7 @@ namespace MefExtension
 
 Les méthodes de validation sont marquées par l' `ValidationExtension` attribut généré par le DSL, ainsi que par <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . La méthode peut apparaître dans toute classe qui n’est pas marquée par un attribut.
 
-Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+Pour plus d’informations, consultez [validation dans un langage de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 ```csharp
 using Company.MyDsl;

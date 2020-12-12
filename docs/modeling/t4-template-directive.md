@@ -1,5 +1,7 @@
 ---
 title: Directive du modèle T4
+description: Découvrez qu’un modèle de texte T4 de Visual Studio commence généralement par une directive de modèle, qui spécifie la façon dont le modèle doit être traité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 75001da1829f6dafdac68359d1b0f6c7c14ed266
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808062"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363664"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
@@ -52,7 +54,7 @@ Valeurs valides :
 
 "", la culture dite indifférente, qui est la valeur par défaut.
 
-Culture exprimée sous la forme d'une chaîne au format xx-XX. Par exemple, en-US, ja-JP, de-CH, de-DE. Pour plus d'informations, consultez <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+Culture exprimée sous la forme d'une chaîne au format xx-XX. Par exemple, en-US, ja-JP, de-CH, de-DE. Pour plus d’informations, consultez <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
 L'attribut de culture spécifie la culture à utiliser lorsqu'un bloc d'expression est converti en texte.
 
@@ -96,7 +98,7 @@ Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host
 
 Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
+Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Par exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -134,7 +136,7 @@ Valeurs valides :
 
 L' `language` attribut spécifie le langage ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
-Exemple :
+Par exemple :
 
 ```vb
 <#@ template language="VB" #>

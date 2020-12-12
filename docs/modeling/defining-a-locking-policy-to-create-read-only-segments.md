@@ -1,5 +1,7 @@
 ---
 title: Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
+description: Découvrez comment vous pouvez définir une stratégie pour un programme afin de verrouiller tout ou partie d’un modèle de langage spécifique à un domaine (DSL) afin qu’il puisse être lu mais pas modifié.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536082"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363196"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API d’immuabilité du kit de développement logiciel (SDK) de visualisation et de modélisation de Visual Studio permet à un programme de verrouiller tout ou partie d’un modèle de langage spécifique à un domaine (DSL) afin qu’il puisse être lu mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, pour qu’un utilisateur puisse demander aux collègues d’annoter et de passer en revue un modèle DSL, mais peut les empêcher de modifier l’original.

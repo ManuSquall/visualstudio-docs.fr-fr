@@ -1,5 +1,7 @@
 ---
 title: Mise en route des langages spécifiques à un domaine
+description: Découvrez les concepts de base de la définition et de l’utilisation d’un langage spécifique à un domaine (DSL) créé avec le kit de développement logiciel (SDK) Modeling pour Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238541"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363482"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
@@ -23,7 +25,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [Kit de développement logiciel de visualisation et de modélisation](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
-## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?
+## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage Domain-Specific ?
 
 Un langage spécifique à un domaine est une notation, généralement graphique, conçue pour être utilisée à des fins particulières. En revanche, les langages tels que UML sont à usage général. Dans une solution DSL, vous pouvez définir les types d’élément de modèle et leurs relations, et la façon dont ils sont présentés à l’écran.
 
@@ -51,7 +53,7 @@ Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 ## <a name="create-a-dsl-solution"></a>Créer une solution DSL
 
-Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle solution Visual Studio à l’aide du modèle de projet de langage spécifique à un domaine.
+Pour créer un langage spécifique à un domaine, vous devez créer une solution Visual Studio à l’aide du modèle de projet Domain-Specific Language.
 
 1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
@@ -88,7 +90,7 @@ L'interface utilisateur ressemble maintenant à l'image suivante.
 
 ![concepteur dsl](../modeling/media/dsl_designer.png)
 
-Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’interface utilisateur de outils Domain-specific language](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’interface utilisateur des outils de langage Domain-Specific](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ## <a name="the-important-parts-of-the-dsl-solution"></a>Parties importantes de la solution DSL
 
@@ -180,7 +182,7 @@ Vous pouvez ajouter n’importe quel nombre de fichiers de modèle de texte à u
 > [!NOTE]
 > Lorsque vous modifiez la définition DSL, l’exemple de code de modèle de texte ne fonctionnera pas, sauf si vous la mettez à jour.
 
-Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md) et [écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+Pour plus d’informations, consultez [génération de code à partir d’un langage Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md) et [écriture de code pour personnaliser un langage de Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Personnalisation de la solution DSL
 
@@ -199,7 +201,7 @@ Renommez les classes et les relations de domaine existantes. Par exemple, à par
 
 #### <a name="to-rename-domain-classes-relationships-and-tools"></a>Pour renommer des classes de domaine, des relations et des outils
 
-1. Dans le diagramme DslDefinition, renommez **ExampleModel** **FamilyTreeModel**, **ExampleElement** en **Person**, **Targets** to **parents**et **sources** to **Children**. Vous pouvez cliquer sur chaque étiquette pour la modifier.
+1. Dans le diagramme DslDefinition, renommez **ExampleModel** **FamilyTreeModel**, **ExampleElement** en **Person**, **Targets** to **parents** et **sources** to **Children**. Vous pouvez cliquer sur chaque étiquette pour la modifier.
 
      ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt_person.png)
 
@@ -345,7 +347,7 @@ Renommez les classes et les relations de domaine existantes. Par exemple, à par
 
     2. Définissez la propriété Name du nouvel outil.
 
-    3. Dans la propriété **ConnectionBuilder** , sélectionnez le générateur qui contient le nom de la relation de personne-ville.
+    3. Dans la propriété **ConnectionBuilder** , sélectionnez le générateur qui contient le nom de la relation Person-Town.
 
     4. Définissez l' **icône boîte à outils**.
 
@@ -378,10 +380,10 @@ Renommez les classes et les relations de domaine existantes. Par exemple, à par
 
     ```
 
-     Lorsque vous enregistrez le fichier *. TT, il crée un fichier subsidiaire qui contient la liste des personnes et leurs résidences. Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+     Lorsque vous enregistrez le fichier *. TT, il crée un fichier subsidiaire qui contient la liste des personnes et leurs résidences. Pour plus d’informations, consultez [génération de code à partir d’un langage de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="validation-and-commands"></a>Validation et commandes
- Vous pouvez développer ce DSL en ajoutant des contraintes de validation. Ces contraintes sont des méthodes que vous pouvez définir, qui permettent de s’assurer que le modèle est dans un état correct. Par exemple, vous pouvez définir une contrainte pour vous assurer que la date de naissance d’un enfant est ultérieure à celle de ses parents. La fonctionnalité de validation affiche un avertissement si l’utilisateur DSL tente d’enregistrer un modèle qui rompt les contraintes. Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+ Vous pouvez développer ce DSL en ajoutant des contraintes de validation. Ces contraintes sont des méthodes que vous pouvez définir, qui permettent de s’assurer que le modèle est dans un état correct. Par exemple, vous pouvez définir une contrainte pour vous assurer que la date de naissance d’un enfant est ultérieure à celle de ses parents. La fonctionnalité de validation affiche un avertissement si l’utilisateur DSL tente d’enregistrer un modèle qui rompt les contraintes. Pour plus d’informations, consultez [validation dans un langage de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
  Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Les commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans Visual Studio et avec des ressources externes. Pour plus d’informations, consultez [Comment : modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 

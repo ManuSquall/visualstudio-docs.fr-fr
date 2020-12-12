@@ -1,5 +1,7 @@
 ---
 title: Processus de transformation du modèle de texte
+description: Découvrez que le processus de transformation de modèle de texte utilise un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565862"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362650"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou C#, ou vous pouvez générer un rapport HTML.
@@ -23,12 +25,12 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 
  Le processus de transformation de modèle de texte s’effectue en deux étapes. Tout d’abord, le moteur crée une classe temporaire, appelée classe de transformation générée. Cette classe contient le code généré par les directives et les blocs de contrôle. Après cela, le moteur compile et exécute la classe de transformation générée pour produire le fichier de sortie.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Composants
 
 |Composant|Description|Personnalisable (oui/non)|
 |-|-|-|
 |Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte.|Non.|
-|Host|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
+|Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
 |Processeurs de directive|Les processeurs de directive sont des classes qui gèrent les directives dans les modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui. Vous pouvez écrire des processeurs de directive personnalisés|
 
 ## <a name="the-engine"></a>Le moteur

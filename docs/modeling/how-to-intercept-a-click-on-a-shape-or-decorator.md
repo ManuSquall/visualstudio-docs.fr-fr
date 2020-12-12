@@ -1,5 +1,7 @@
 ---
 title: 'Comment : intercepter un événement Click sur une forme ou un décorateur'
+description: Découvrez comment intercepter un clic sur une forme ou un élément décoratif d’icône, et comment intercepter des clics, double-cliquer, faire glisser des éléments et d’autres gestes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff49c1950e81098633fab92ffbbdf25020945a1e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532520"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363898"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
 Les procédures suivantes montrent comment intercepter un clic sur une forme ou un élément décoratif d’icône. Vous pouvez intercepter les clics, les double-clics, les glissements et autres gestes, et faire en sorte que l’élément réponde.
@@ -227,7 +229,7 @@ namespace Company.CompartmentDrag
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {

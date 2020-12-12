@@ -1,5 +1,7 @@
 ---
 title: Blocs de contrôle des modèles de texte
+description: En savoir plus sur les blocs de contrôle de modèle de texte et la façon dont les blocs de contrôle vous permettent d’écrire du code dans votre modèle de texte afin de faire varier la sortie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11cc289f668a674707c584396998ea7abb9e7ea9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591786"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363586"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :

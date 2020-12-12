@@ -1,5 +1,7 @@
 ---
 title: 'Comment : écrire avec des modèles de texte'
+description: Découvrez les réponses aux questions courantes rencontrées lors de l’utilisation de modèles de texte pour générer du texte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594654"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363183"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Les modèles de texte dans Visual Studio fournissent un moyen utile de générer du texte de n’importe quel type. Vous pouvez utiliser des modèles de texte pour générer du texte au moment de l’exécution dans le cadre de votre application et au moment de la conception pour générer une partie du code de votre projet. Cette rubrique résume les « Comment faire... ? » les plus fréquemment posées. poser.
@@ -33,7 +35,7 @@ Les modèles de texte dans Visual Studio fournissent un moyen utile de générer
 
 - Ajoutez un modèle de texte au moment de l’exécution à votre projet. Ce modèle crée une classe dans votre code, que vous pouvez instancier et utiliser pour générer du texte. Vous pouvez lui passer des données dans les paramètres du constructeur. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-- Si vous souhaitez générer à partir de modèles qui sont uniquement disponibles au moment de l’exécution, vous pouvez utiliser des modèles de texte standard. Si vous écrivez une extension Visual Studio, vous pouvez appeler le service de création de modèles de texte. Pour plus d’informations, consultez [appel de la transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). Dans d’autres contextes, vous pouvez utiliser le moteur de création de modèles de texte. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
+- Si vous souhaitez générer à partir de modèles qui sont uniquement disponibles au moment de l’exécution, vous pouvez utiliser des modèles de texte standard. Si vous écrivez une extension Visual Studio, vous pouvez appeler le service de création de modèles de texte. Pour plus d’informations, consultez [appel de la transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). Dans d’autres contextes, vous pouvez utiliser le moteur de création de modèles de texte. Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
      Utilisez la \<#@parameter#> directive pour passer des paramètres à ces modèles. Pour plus d’informations, consultez [directive de paramètre T4](../modeling/t4-parameter-directive.md).
 
@@ -75,7 +77,7 @@ Si vous écrivez les méthodes vous-même :
 
      `foreach (Book book in this.Library) { ... }`
 
-     Pour plus d’informations, consultez [prise en main avec des langages spécifiques](../modeling/getting-started-with-domain-specific-languages.md) à un domaine et [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+     Pour plus d’informations, consultez [prise en main avec les langages de Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) et [génération de code à partir d’un langage de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Récupérer des données à partir de Visual Studio
  Pour utiliser les services fournis dans Visual Studio, définissez l' `hostSpecific` attribut et chargez l' `EnvDTE` assembly. Par exemple :

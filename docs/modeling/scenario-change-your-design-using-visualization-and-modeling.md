@@ -1,6 +1,6 @@
 ---
 title: Changer votre conception à l’aide des outils de visualisation et de modélisation
-description: Vue d’ensemble des outils de visualisation et de modélisation dans Visual Studio.
+description: Découvrez les outils de visualisation et de modélisation de Visual Studio, ainsi que la façon dont vous utilisez ces outils pour modifier votre conception.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 91b62716c87fafd965652452b6494fe255530e7b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189123"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363859"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 

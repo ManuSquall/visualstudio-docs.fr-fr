@@ -1,5 +1,7 @@
 ---
 title: Génération de texte durant l'exécution à l'aide des modèles de texte T4
+description: Découvrez comment vous pouvez générer des chaînes de texte dans votre application au moment de l’exécution à l’aide des modèles de texte du runtime Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520833"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363937"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Génération de texte durant l'exécution à l'aide des modèles de texte T4
 
@@ -49,7 +51,7 @@ Notez que le modèle est une page HTML dans laquelle les parties variables ont �
 
 À l’aide d’un modèle dans votre application, il est plus facile de voir la forme finale de la sortie que vous ne le pouviez dans, par exemple, une longue série d’instructions Write. Apporter des modifications au formulaire de sortie est plus simple et plus fiable.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Création d’un modèle de texte au moment de l’exécution dans une application
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Création d’un modèle de texte Run-Time dans une application
 
 ### <a name="to-create-a-run-time-text-template"></a>Pour créer un modèle de texte au moment de l’exécution
 
@@ -64,7 +66,7 @@ Notez que le modèle est une page HTML dans laquelle les parties variables ont �
 
 4. Choisissez **Ajouter**.
 
-    Un nouveau fichier avec l’extension **. TT**est créé. Sa propriété **outil personnalisé** est définie sur **valeur TextTemplatingFilePreprocessor**. Il contient les lignes suivantes :
+    Un nouveau fichier avec l’extension **. TT** est créé. Sa propriété **outil personnalisé** est définie sur **valeur TextTemplatingFilePreprocessor**. Il contient les lignes suivantes :
 
     ```
     <#@ template language="C#" #>
@@ -74,13 +76,13 @@ Notez que le modèle est une page HTML dans laquelle les parties variables ont �
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversion d’un fichier existant en modèle au moment de l’exécution
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversion d’un fichier existant en modèle Run-Time
 
 Un bon moyen de créer un modèle consiste à convertir un exemple existant de la sortie. Par exemple, si votre application génère des fichiers HTML, vous pouvez commencer par créer un fichier HTML brut. Assurez-vous qu’il fonctionne correctement et que son apparence est correcte. Ensuite, incluez-le dans votre projet Visual Studio et convertissez-le en modèle.
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Pour convertir un fichier texte existant en modèle au moment de l’exécution
 
-1. Incluez le fichier dans votre projet Visual Studio. Dans Explorateur de solutions, dans le menu contextuel du projet, choisissez **Ajouter**un  >  **élément existant**.
+1. Incluez le fichier dans votre projet Visual Studio. Dans Explorateur de solutions, dans le menu contextuel du projet, choisissez **Ajouter** un  >  **élément existant**.
 
 2. Définissez la propriété **outils personnalisés** du fichier sur **valeur TextTemplatingFilePreprocessor**. Dans Explorateur de solutions, dans le menu contextuel du fichier, choisissez **Propriétés**.
 
@@ -95,7 +97,7 @@ Un bon moyen de créer un modèle consiste à convertir un exemple existant de l
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Contenu du modèle au moment de l’exécution
+## <a name="the-content-of-the-run-time-template"></a>Contenu du modèle Run-Time
 
 ### <a name="template-directive"></a>Directive de modèle
 
@@ -294,7 +296,7 @@ Le contenu inclus peut contenir n’importe quelle combinaison de code de progra
 
 La directive include peut être utilisée n’importe où dans le texte d’un fichier de modèle ou dans un fichier inclus.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Héritage entre les modèles de texte au moment de l’exécution
+### <a name="inheritance-between-run-time-text-templates"></a>Héritage entre les modèles de texte Run-Time
 
 Vous pouvez partager du contenu entre les modèles au moment de l’exécution en écrivant un modèle de classe de base, qui peut être abstrait. Utilisez le `inherits` paramètre de la `<@#template#>` directive pour référencer une autre classe de modèle d’exécution.
 

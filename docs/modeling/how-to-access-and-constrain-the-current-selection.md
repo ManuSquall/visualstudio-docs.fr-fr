@@ -1,5 +1,7 @@
 ---
 title: 'Comment : accéder à et contraindre la sélection actuelle'
+description: Découvrez comment vous pouvez déterminer l’élément sur lequel l’utilisateur a cliqué avec le bouton droit lorsque vous écrivez un gestionnaire de commandes ou de mouvements pour votre langage spécifique à un domaine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ba656793b630dd55fc2ebc7242e5d45484b0f8e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545689"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363391"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Comment : accéder à et contraindre la sélection actuelle
 

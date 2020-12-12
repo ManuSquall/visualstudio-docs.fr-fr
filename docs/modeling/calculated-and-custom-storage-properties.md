@@ -1,5 +1,7 @@
 ---
 title: Propriétés de stockage calculées et personnalisées
+description: Découvrez comment les propriétés de domaine d’un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans l’Explorateur de langage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115198"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363547"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 Toutes les propriétés de domaine dans un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans l’Explorateur de langage, et être accessibles par le code du programme. Toutefois, les propriétés diffèrent dans la façon dont leurs valeurs sont stockées.
@@ -43,11 +45,11 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 
 4. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
-     Vous recevez le message d’erreur suivant : «*YourClass* ne contient pas de définition pour obtenir*YourProperty*».
+     Vous recevez le message d’erreur suivant : «*YourClass* ne contient pas de définition pour obtenir *YourProperty*».
 
 5. Double-cliquez sur le message d’erreur.
 
-     Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships.cs s’ouvre. Au-dessus de l’appel de méthode en surbrillance, un commentaire vous invite à fournir une implémentation pour obtenir*YourProperty*().
+     Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships.cs s’ouvre. Au-dessus de l’appel de méthode en surbrillance, un commentaire vous invite à fournir une implémentation pour obtenir *YourProperty*().
 
     > [!NOTE]
     > Ce fichier est généré à partir de DslDefinition. DSL. Si vous modifiez ce fichier, vos modifications seront perdues la prochaine fois que vous cliquerez sur **transformer tous les modèles**. Au lieu de cela, ajoutez la méthode requise dans un fichier séparé.

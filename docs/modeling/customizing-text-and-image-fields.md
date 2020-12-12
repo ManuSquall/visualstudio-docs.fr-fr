@@ -1,5 +1,7 @@
 ---
 title: Personnalisation des champs de texte et d'image
+description: En savoir plus sur la personnalisation des fichiers texte et image. Sachez également que lorsque vous définissez un élément décoratif de texte dans une forme, il est représenté par un TextField.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542712"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362857"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personnalisation des champs de texte et d'image
 Lorsque vous définissez un élément décoratif de texte dans une forme, il est représenté par un élément TextField. Pour obtenir des exemples d’initialisation de TextFields et d’autres ShapeFields, inspectez Dsl\GeneratedCode\Shapes.cs dans votre solution DSL.

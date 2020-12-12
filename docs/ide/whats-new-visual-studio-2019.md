@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878294"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362390"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -114,7 +114,7 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 
 Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Travailler en collaboration
+## <a name="collaborate"></a>Collaborer
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur vidéo : 4,22 minutes*
 
@@ -136,9 +136,9 @@ Pour plus d’informations, consultez le billet [de blog obtenir le code suivant
 
 ### <a name="git-productivity"></a>Productivité git
 
-**Nouveauté de 16,8** Git est désormais l’expérience de contrôle de version par défaut dans Visual Studio 2019. Nous avons développé l’ensemble de fonctionnalités et itéré sur ce dernier en fonction de vos commentaires au cours des deux dernières versions. La nouvelle expérience est désormais activée par défaut pour tout le monde. Dans le nouveau menu git, vous pouvez cloner, créer ou ouvrir des dépôts. Utilisez les fenêtres de l’outil git intégré pour valider et transmettre des modifications à votre code, gérer des branches, rester à jour avec vos référentiels distants et résoudre les conflits de fusion.
+**Nouveauté de 16,8**: git est désormais l’expérience de contrôle de version par défaut dans Visual Studio 2019. Nous avons développé l’ensemble de fonctionnalités et itéré sur ce dernier en fonction de vos commentaires au cours des deux dernières versions. La nouvelle expérience est désormais activée par défaut pour tout le monde. Dans le nouveau menu git, vous pouvez cloner, créer ou ouvrir des dépôts. Utilisez les fenêtres de l’outil git intégré pour valider et transmettre des modifications à votre code, gérer des branches, rester à jour avec vos référentiels distants et résoudre les conflits de fusion.
 
-Pour plus d’informations, consultez la page de la [productivité git dans Visual Studio](git-with-visual-studio.md) .
+Pour plus d’informations, consultez la page [interface git dans Visual Studio](git-with-visual-studio.md) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ En attendant, voici quelques-unes de nos nouvelles fonctionnalités actuellement
 
    Bien que la nouvelle expérience de contrôle de version git soit désormais activée par défaut dans Visual Studio 2019 [version 16,8](/visualstudio/releases/2019/release-notes/), nous continuons à ajouter des fonctionnalités pour améliorer l’expérience dans la version préliminaire la plus récente.
 
-   Pour plus d’informations, consultez la page de la [productivité git dans Visual Studio](git-with-visual-studio.md) .
+   Pour plus d’informations, consultez la page [interface git dans Visual Studio](git-with-visual-studio.md) .
 
 Pour plus d’informations sur la version préliminaire &mdash; et un lien de téléchargement, si vous souhaitez l’essayer, &mdash; consultez la page **[Visual Studio Preview](https://aka.ms/vspreview/)** .
 
@@ -240,6 +240,7 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 
 ## <a name="see-also"></a>Voir aussi
 
+* [Nouveautés de la documentation de Visual Studio](whats-new-visual-studio-docs.md)
 * [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Notes de publication de Visual Studio 2019 pour Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Nouveautés du kit de développement logiciel (SDK) Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)

@@ -1,5 +1,7 @@
 ---
 title: Utilisation du schéma de définition DSL
+description: Découvrez que le diagramme d’une définition d’outils DSL est un outil important pour la définition d’un langage spécifique à un domaine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec9e6fa7262fd389be7f1bb66ed2ed7005d6811
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d489bfde8b095e35bc652f1cdb7588b07458e48e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810794"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362832"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 Le diagramme d’une [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] définition est un outil important pour définir le langage spécifique à un domaine. Vous pouvez ajouter des éléments à votre modèle de domaine et définir des relations sur le diagramme ; vous pouvez également modifier la disposition du diagramme pour accroître sa lisibilité.
