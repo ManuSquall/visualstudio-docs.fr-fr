@@ -1,5 +1,7 @@
 ---
 title: Personnalisation des outils et de la boîte à outils
+description: Découvrez comment vous devez définir des éléments de boîte à outils pour les éléments que vous souhaitez permettre aux utilisateurs d’ajouter à leurs modèles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548289"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361558"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 
@@ -69,7 +71,7 @@ La propriété **Générateur de connexions** d’un outil de connexion fait ré
 
 3. Définissez la propriété **icône de boîte à outils** pour faire référence à une image bitmap 16x16.
 
-     Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans Explorateur de solutions dans le dossier **Dsl\Resources** . Le fichier doit avoir les valeurs de propriété suivantes : générer le contenu de l' **action**  =  **Content**; **Copier dans le répertoire**  =  de sortie **Ne pas copier**.
+     Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans Explorateur de solutions dans le dossier **Dsl\Resources** . Le fichier doit avoir les valeurs de propriété suivantes : générer le contenu de l' **action**  =  ; **Copier dans le répertoire**  =  de sortie **Ne pas copier**.
 
 4. **Pour un outil d’élément :** Définissez la propriété de **classe** de l’outil pour faire référence à une classe de domaine concrète qui est mappée à une forme.
 
@@ -154,12 +156,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Les générateurs de connexions contiennent une ou plusieurs directives de connexion de liens, qui spécifient la relation de domaine et les éléments source et cible. Par exemple, dans le modèle de solution de déroulement des tâches, vous pouvez voir le **CommentReferencesSubjectsBuilder** dans l' **Explorateur DSL**. Ce générateur de connexions contient une directive de connexion de lien nommée **CommentReferencesSubjects**, qui est mappée à la relation de domaine **CommentReferencesSubjects**. Cette directive de connexion de liens contient une directive de rôle source qui pointe vers la classe de domaine `Comment` et une directive de rôle cible qui pointe vers la classe de domaine `FlowElement`.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Utilisation de générateurs de connexion pour limiter les rôles source et cible
- Vous pouvez utiliser les générateurs de connexion pour restreindre l'occurrence de certaines classes dans le rôle source ou le rôle cible d'une relation de domaine donnée. Par exemple, il se peut que vous ayez une classe de domaine de base avec une relation de domaine vers une autre classe de domaine, mais que vous ne vouliez pas que toutes les classes dérivées de la classe de base aient les mêmes rôles dans cette relation. Dans la solution de workflow de tâches, il existe quatre classes de domaine concretes (**StartPoint**, **Endpoint**, **MergeBranch**et **Synchronization**) qui héritent directement de la classe de domaine abstraite **FlowElement**, et de deux classes de domaine concrètes (**Task** et **ObjectInState**) qui héritent indirectement de celle-ci. Il existe également une relation de référence de **Flow** qui prend les classes de domaine **FlowElement** dans son rôle source et son rôle cible. Toutefois, une instance d’une classe de domaine de **point de terminaison** ne doit pas être la source d’une instance d’une relation de **Flow** , et une instance d’une classe **StartPoint** ne doit pas être la cible d’une instance d’une relation **Flow** . Le générateur de connexions **FlowBuilder** dispose d’une directive de connexion de lien nommée **Flow** qui spécifie les classes de domaine qui peuvent jouer le rôle source (**tâche**, **MergeBranch**, **StartPoint**et **synchronisation**) et qui peuvent jouer le rôle cible (**MergeBranch**, **point de terminaison**et **synchronisation**).
+ Vous pouvez utiliser les générateurs de connexion pour restreindre l'occurrence de certaines classes dans le rôle source ou le rôle cible d'une relation de domaine donnée. Par exemple, il se peut que vous ayez une classe de domaine de base avec une relation de domaine vers une autre classe de domaine, mais que vous ne vouliez pas que toutes les classes dérivées de la classe de base aient les mêmes rôles dans cette relation. Dans la solution de workflow de tâches, il existe quatre classes de domaine concretes (**StartPoint**, **Endpoint**, **MergeBranch** et **Synchronization**) qui héritent directement de la classe de domaine abstraite **FlowElement**, et de deux classes de domaine concrètes (**Task** et **ObjectInState**) qui héritent indirectement de celle-ci. Il existe également une relation de référence de **Flow** qui prend les classes de domaine **FlowElement** dans son rôle source et son rôle cible. Toutefois, une instance d’une classe de domaine de **point de terminaison** ne doit pas être la source d’une instance d’une relation de **Flow** , et une instance d’une classe **StartPoint** ne doit pas être la cible d’une instance d’une relation **Flow** . Le générateur de connexions **FlowBuilder** dispose d’une directive de connexion de lien nommée **Flow** qui spécifie les classes de domaine qui peuvent jouer le rôle source (**tâche**, **MergeBranch**, **StartPoint** et **synchronisation**) et qui peuvent jouer le rôle cible (**MergeBranch**, **point de terminaison** et **synchronisation**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Générateurs de connexions avec plusieurs directives de connexion de liens
  Vous pouvez ajouter plusieurs directives de connexion de liens à un générateur de connexions. Cela peut vous aider à masquer certaines des complexités du modèle de domaine aux utilisateurs et à éviter que la **boîte à outils** ne soit trop encombrée. Vous pouvez ajouter les directives de connexion de liens de différentes relations de domaine à un seul générateur de connexions. Cependant, vous devez regrouper les relations de domaine quand elles exécutent à peu près la même fonction.
 
- Dans la solution de workflow de tâches, l’outil **Flow** Connection est utilisé pour dessiner des instances des relations de domaine **Flow** et **ObjectFlow** . Le générateur de connexions **FlowBuilder** a, en plus de la directive de connexion de lien de **Flow** décrite précédemment, deux directives de connexion de lien nommées **ObjectFlow**. Ces directives spécifient qu’une instance d’une relation **ObjectFlow** peut être dessinée entre des instances de la classe de domaine **ObjectInState** , ou d’une instance d’un **ObjectInState** à une instance d’une **tâche, mais**pas entre deux instances d’une **tâche**, ou d’une instance d’une **tâche** à une instance d’un **ObjectInState**. Toutefois, une instance d’une relation de **Flow** peut être dessinée entre deux instances d’une **tâche**. Si vous compilez et exécutez la solution de déroulement des tâches, vous pouvez voir que le dessin d’un **Workflow** à partir d’une instance d’un **ObjectInState** vers une instance d’une **tâche** crée une instance d’un **ObjectFlow**, mais le dessin d’un **Workflow** entre deux instances d’une **tâche** crée une instance d’un **fluide**.
+ Dans la solution de workflow de tâches, l’outil **Flow** Connection est utilisé pour dessiner des instances des relations de domaine **Flow** et **ObjectFlow** . Le générateur de connexions **FlowBuilder** a, en plus de la directive de connexion de lien de **Flow** décrite précédemment, deux directives de connexion de lien nommées **ObjectFlow**. Ces directives spécifient qu’une instance d’une relation **ObjectFlow** peut être dessinée entre des instances de la classe de domaine **ObjectInState** , ou d’une instance d’un **ObjectInState** à une instance d’une **tâche, mais** pas entre deux instances d’une **tâche**, ou d’une instance d’une **tâche** à une instance d’un **ObjectInState**. Toutefois, une instance d’une relation de **Flow** peut être dessinée entre deux instances d’une **tâche**. Si vous compilez et exécutez la solution de déroulement des tâches, vous pouvez voir que le dessin d’un **Workflow** à partir d’une instance d’un **ObjectInState** vers une instance d’une **tâche** crée une instance d’un **ObjectFlow**, mais le dessin d’un **Workflow** entre deux instances d’une **tâche** crée une instance d’un **fluide**.
 
 ### <a name="custom-code-for-connection-builders"></a>Code personnalisé pour générateurs de connexions
  Les quatre cases à cocher de l'interface utilisateur définissent différents types de personnalisation de générateurs de connexions :

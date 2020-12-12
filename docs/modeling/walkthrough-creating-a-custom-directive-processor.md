@@ -1,5 +1,7 @@
 ---
 title: "Procédure pas à pas : création d'un processeur de directive personnalisé"
+description: Découvrez comment vous pouvez utiliser Visual Studio pour écrire des processeurs de directive personnalisés afin de personnaliser vos modèles de texte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532234"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361883"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : créer un processeur de directive personnalisé
 
@@ -637,9 +639,9 @@ Dans cette section, vous ajoutez au Registre une clé pour votre processeur de d
 
 1. Exécutez la `regedit` commande à l’aide du menu Démarrer ou de la ligne de commande.
 
-2. Accédez à l’emplacement **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio. \\ \* 0 \ TextTemplating\DirectiveProcessors**, puis cliquez sur le nœud.
+2. Accédez à l’emplacement **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio. \\ \* 0 \ TextTemplating\DirectiveProcessors**, puis cliquez sur le nœud.
 
-   Sur les systèmes 64 bits, utilisez **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+   Sur les systèmes 64 bits, utilisez **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. Ajoutez une nouvelle clé nommée CustomDirectiveProcessor.
 

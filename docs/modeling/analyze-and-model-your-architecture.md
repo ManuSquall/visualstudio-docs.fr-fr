@@ -1,5 +1,7 @@
 ---
 title: Analyser et modéliser votre architecture
+description: Découvrez comment vous pouvez utiliser les outils d’architecture et de modélisation de Visual Studio pour concevoir et modéliser votre application pour vous assurer que votre application répond aux exigences architecturales.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1db28867ea47752aa74b7898c44e797c0704594
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71296b9ccb2e442d1bd9bc13865e0086821bf030
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544220"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361155"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 
@@ -43,7 +45,7 @@ Voir [scénario : modifier votre conception à l’aide de la visualisation et 
 |**Visualiser le code**:<br /><br />-Consultez l’organisation et les relations du code en créant des cartes de code. Visualisez les dépendances entre les assemblys, les espaces de noms, les classes, les méthodes et ainsi de suite.<br />-Consultez la structure de classe et les membres d’un projet spécifique en créant des diagrammes de classes à partir du code.<br />-Recherchez des conflits entre votre code et sa conception en créant des diagrammes de dépendance pour valider le code.|- [Visualiser le code](../modeling/visualize-code.md)<br />- [Utilisation des classes et d’autres types (Concepteur de classes)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [Vidéo : comprendre la conception à partir du code avec les cartes de code Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [Vidéo : valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Définir l’architecture**:<br /><br />-Définir et appliquer des contraintes sur les dépendances entre les composants de votre code en créant des diagrammes de dépendance.|- [Vidéo : valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Valider votre système avec les spécifications et la conception prévue**<br /><br />-Validez les dépendances de code avec des diagrammes de dépendance qui décrivent l’architecture prévue et empêchez les modifications susceptibles d’entrer en conflit avec la conception.|- [Vidéo : valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Personnaliser des modèles et des diagrammes**:<br /><br />-Créez vos propres langages spécifiques à un domaine.|- [Kit de développement logiciel de modélisation pour Visual Studio-langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Personnaliser des modèles et des diagrammes**:<br /><br />-Créez vos propres langages spécifiques à un domaine.|- [SDK Modeling pour Visual Studio-langages Domain-Specific](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**Générer du texte à l’aide de modèles T4**:<br /><br />-Utilisez des blocs de texte et une logique de contrôle à l’intérieur de modèles pour générer des fichiers texte.<br /> -Génération de modèle T4 avec MSBuild inclus dans Visual Studio|- [Génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md)|
 |**Partager des modèles, des diagrammes et des cartes de code à l’aide du contrôle de version Team Foundation**:<br /><br />-Placez des cartes de code, des projets et des diagrammes de dépendance sous le contrôle de version Team Foundation afin de pouvoir les partager.| |
 

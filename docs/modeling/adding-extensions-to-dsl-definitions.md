@@ -1,5 +1,7 @@
 ---
 title: Ajout d'extensions à des définitions DSL
+description: Découvrez comment l’extension de définition DSL vous permet de créer un package d’extensions dans un langage spécifique à un domaine (DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2500fc8d9e09d95d7972a4b151b01937a5570a08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07057c24494a19d77bca872ad87adf20bb125252
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544233"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361142"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Ajouter des extensions à des définitions DSL
 

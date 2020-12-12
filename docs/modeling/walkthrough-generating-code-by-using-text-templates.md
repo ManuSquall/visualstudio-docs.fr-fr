@@ -1,5 +1,7 @@
 ---
 title: "Procédure pas à pas : génération de code à l'aide de modèles de texte"
+description: Découvrez que la génération de code vous permet de générer du code de programme qui est fortement typé et qui peut être facilement modifié quand le modèle source change.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532058"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360986"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
 
@@ -412,7 +414,7 @@ Pour régénérer les classes lorsque l’exemple de fichier XML est modifié, c
 
 Cette procédure pas à pas illustre plusieurs techniques et avantages de la génération de code :
 
-- La*génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.
+- La *génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.
 
 - Le typage fort est l’un des avantages de la génération de code. Tandis que le modèle représente les informations dans un format plus adapté à l’utilisateur, le code généré permet à d’autres parties de l’application de traiter les informations à l’aide d’un ensemble de types.
 

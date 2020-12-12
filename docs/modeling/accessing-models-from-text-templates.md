@@ -1,5 +1,7 @@
 ---
 title: Accès aux modèles depuis des modèles de texte
+description: Découvrez comment vous pouvez utiliser des modèles de texte pour créer des fichiers de rapport, des fichiers de code source et d’autres fichiers texte basés sur des modèles de langage spécifique à un domaine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531467"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362286"
 ---
 # <a name="access-models-from-text-templates"></a>Accéder à des modèles à partir de modèles de texte
 
 À l’aide de modèles de texte, vous pouvez créer des fichiers de rapport, des fichiers de code source et d’autres fichiers texte basés sur des modèles de langage spécifique à un domaine. Pour obtenir des informations de base sur les modèles de texte, consultez [génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Les modèles de texte fonctionnent en mode expérimental quand vous déboguez votre DSL, et ils fonctionnent également sur un ordinateur sur lequel vous avez déployé le DSL.
 
 > [!NOTE]
-> Lorsque vous créez une solution DSL, des exemples de fichiers de modèle de texte ** \* . TT** sont générés dans le projet de débogage. Lorsque vous modifiez les noms des classes de domaine, ces modèles ne fonctionneront plus. Néanmoins, elles incluent les directives de base dont vous avez besoin, et fournissent des exemples que vous pouvez mettre à jour pour qu’ils correspondent à votre DSL.
+> Lorsque vous créez une solution DSL, des exemples de fichiers de modèle de texte **\* . TT** sont générés dans le projet de débogage. Lorsque vous modifiez les noms des classes de domaine, ces modèles ne fonctionneront plus. Néanmoins, elles incluent les directives de base dont vous avez besoin, et fournissent des exemples que vous pouvez mettre à jour pour qu’ils correspondent à votre DSL.
 
  Pour accéder à un modèle à partir d’un modèle de texte :
 

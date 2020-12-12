@@ -1,5 +1,7 @@
 ---
 title: Modéliser l’architecture de votre application &apos;
+description: Découvrez comment vous pouvez créer des modèles dans Visual Studio dans le cadre de votre description de la structure et du comportement globaux de votre application ou système logiciel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711727"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361025"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser l’architecture de votre application&#39;s
 Pour vous assurer que votre application ou votre système logiciel répond aux besoins de vos utilisateurs, vous pouvez créer des modèles dans Visual Studio dans le cadre de votre description de la structure et du comportement globaux de votre application ou de votre système logiciel. Avec des modèles, vous pouvez également décrire des modèles utilisés tout au long de la conception. Ces modèles vous aident à comprendre l'architecture existante, à discuter des modifications et à communiquer clairement vos intentions.

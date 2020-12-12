@@ -1,5 +1,7 @@
 ---
 title: Traitement des modèles de texte à l'aide d'un hôte personnalisé
+description: Découvrez que le processus de transformation de modèle de texte utilise un fichier de modèle de texte comme entrée et produit un fichier texte comme sortie.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591682"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360583"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Traiter des modèles de texte à l’aide d’un hôte personnalisé
 

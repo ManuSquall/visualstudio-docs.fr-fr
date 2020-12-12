@@ -1,5 +1,7 @@
 ---
 title: Débogage d'un modèle de texte T4
+description: Pour déboguer un modèle de texte au moment de la conception, enregistrez le fichier de modèle de texte, puis choisissez déboguer le modèle T4 dans le menu contextuel du fichier dans Explorateur de solutions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570061feb5da034e2e8fab7168658577f6f990d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589680"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361467"
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 Vous pouvez définir des points d’arrêt dans des modèles de texte. Pour déboguer un modèle de texte au moment de la conception, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans Explorateur de solutions. Pour déboguer un modèle de texte au moment de l’exécution, déboguez simplement l’application à laquelle il appartient.

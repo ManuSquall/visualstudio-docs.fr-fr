@@ -1,5 +1,7 @@
 ---
 title: Propriétés des propriétés de domaine
+description: Découvrez comment une propriété de domaine est une fonctionnalité d’un élément de modèle qui peut contenir une valeur, et comment les propriétés de domaine sont répertoriées dans la zone classe de domaine du diagramme.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5ecb87fa23dbf2705eb1df39e3e19e1b2bf578
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810013"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361519"
 ---
 # <a name="properties-of-domain-properties"></a>Propriétés des propriétés de domaine
-Une *propriété de domaine* est une fonctionnalité d’un élément de modèle qui peut contenir une valeur. Par exemple, la classe de domaine `Person` pourrait avoir des propriétés `Name` et `BirthDate`. Dans la définition DSL, les propriétés de domaine sont énumérées dans la zone de classe de domaine sur le diagramme et sous la classe de domaine dans l'Explorateur DSL. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
+Une *propriété de domaine* est une fonctionnalité d’un élément de modèle qui peut contenir une valeur. Par exemple, la classe de domaine `Person` pourrait avoir des propriétés `Name` et `BirthDate`. Dans la définition DSL, les propriétés de domaine sont énumérées dans la zone de classe de domaine sur le diagramme et sous la classe de domaine dans l'Explorateur DSL. Pour plus d’informations, consultez [comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
 > Le mot « propriété » a deux utilisations. Une *propriété de domaine* est une fonctionnalité que vous définissez sur une classe de domaine. En revanche, de nombreux éléments d’un DSL ont des *Propriétés*, qui sont répertoriées dans la fenêtre **Propriétés** dans la définition DSL. Par exemple, chaque propriété de domaine possède un jeu de propriétés qui sont décrites dans cette rubrique.
@@ -30,7 +32,7 @@ Une *propriété de domaine* est une fonctionnalité d’un élément de modèle
 
 - Les transactions aident à prévenir les états incohérents. Pour plus d’informations, consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-  Quand vous sélectionnez une propriété de domaine dans un diagramme ou dans l'Explorateur DSL, les éléments suivants sont visibles dans la fenêtre Propriétés. Pour plus d’informations sur l’utilisation de ces éléments, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
+  Quand vous sélectionnez une propriété de domaine dans un diagramme ou dans l'Explorateur DSL, les éléments suivants sont visibles dans la fenêtre Propriétés. Pour plus d’informations sur l’utilisation de ces éléments, consultez [personnalisation et extension d’un langage de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Propriété|Description|Valeur par défaut|
 |-|-|-|

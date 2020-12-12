@@ -1,5 +1,7 @@
 ---
 title: Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code
+description: Découvrez comment vous pouvez exécuter des analyseurs sur des cartes de code pour vous aider à identifier le code qui peut être trop complexe ou qui peut nécessiter une amélioration.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd20d3c40a4fbe80ac1578275ccd8614eb018d7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f31aeb933150f31f4ef9d6a3fbe695dcb5ef174
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596591"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362183"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code
 
@@ -32,7 +34,7 @@ Exécutez des analyseurs sur des cartes de code pour vous aider à identifier le
 
 ## <a name="analyze-code-maps"></a>Analyser les cartes de code
 
-Dans la barre d’outils de **Layout**la carte, choisissez  >  **analyseurs**de page, puis l’analyseur que vous souhaitez exécuter :
+Dans la barre d’outils de la carte, choisissez  >  **analyseurs** de page, puis l’analyseur que vous souhaitez exécuter :
 
 |**Analyseur**|**Pour identifier les nœuds qui**|
 |-|-|
@@ -40,7 +42,7 @@ Dans la barre d’outils de **Layout**la carte, choisissez  >  **analyseurs**de 
 |**Rechercher l’analyseur de hubs**|Figurent dans les premiers 25 % des nœuds hautement connectés<br /><br /> **Pour masquer tous les autres nœuds de la carte**<br /><br /> -Ouvrez le menu contextuel de la carte, choisissez **avancé**, **Sélectionner**, **Masquer non sélectionné**.<br />     La carte masque les nœuds non sélectionnés et l’analyseur identifie les nouveaux nœuds en tant que hubs.|
 |**Analyseur de nœuds non référencés**|N’ont pas de références d’autres nœuds. **Attention :**  Vérifiez chacun de ces cas avant de supposer que le code n’est pas utilisé. Certaines dépendances, telles que les dépendances XAML et d’exécution, sont introuvables statiquement dans le code.|
 
-Les analyseurs de carte de code continuent de s’exécuter après leur application. Si vous modifiez la carte, les analyseurs appliqués retraitent automatiquement la carte mise à jour. Pour arrêter l’exécution d’un analyseur, dans la barre d' **Layout**outils de la carte, choisissez  >  **analyseurs**de disposition. Désactivez l’analyseur sélectionné.
+Les analyseurs de carte de code continuent de s’exécuter après leur application. Si vous modifiez la carte, les analyseurs appliqués retraitent automatiquement la carte mise à jour. Pour arrêter l’exécution d’un analyseur, dans la barre d' outils de la carte, choisissez  >  **analyseurs** de disposition. Désactivez l’analyseur sélectionné.
 
 > [!TIP]
 > Si votre carte est très grande, l’exécution d’un analyseur peut provoquer une exception en raison de mémoire insuffisante. Si cela se produit, modifiez la carte pour réduire sa portée ou générez-en une plus petite, puis exécutez l’analyseur.

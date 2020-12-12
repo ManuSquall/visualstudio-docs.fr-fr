@@ -1,5 +1,7 @@
 ---
 title: Déploiement du shell VS
+description: Découvrez comment un interpréteur de commandes isolé vous permet de déterminer les fonctionnalités Visual Studio dont vous avez besoin pour interagir avec votre DSL et comment cette solution doit s’afficher.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3729c09198b331728e2cc67299ffc3ad6c3d26
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 94cffbf5ea1f7ac3c437a4c22f27f881d5493e79
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809646"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361259"
 ---
 # <a name="vs-shell-deployment"></a>Déploiement du shell VS
 

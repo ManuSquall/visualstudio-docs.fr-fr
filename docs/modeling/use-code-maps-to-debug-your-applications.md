@@ -1,5 +1,7 @@
 ---
 title: Utiliser des cartes du code pour déboguer vos applications
+description: Apprenez à utiliser des cartes de code pour éviter de perdre des bases de code volumineuses, du code inconnu ou du code hérité.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594108"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361649"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes du code pour déboguer vos applications
 

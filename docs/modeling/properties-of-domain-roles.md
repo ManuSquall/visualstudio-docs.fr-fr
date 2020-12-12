@@ -1,5 +1,7 @@
 ---
 title: Propriétés des rôles de domaine
+description: En savoir plus sur les propriétés associées à un rôle de domaine, telles que le type de collection, les attributs de personnalisation et l’exploration des propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,15 +9,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544142"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362338"
 ---
 # <a name="properties-of-domain-roles"></a>Propriétés des rôles de domaine
-Les propriétés du tableau suivant sont associées à un rôle de domaine. Pour plus d’informations sur les rôles de domaine, consultez [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Les propriétés du tableau suivant sont associées à un rôle de domaine. Pour plus d’informations sur les rôles de domaine, consultez [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage de Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Propriété|Description|Default|
 |-|-|-|
@@ -31,10 +33,10 @@ Les propriétés du tableau suivant sont associées à un rôle de domaine. Pour
 |Propage la suppression|`True` pour supprimer l’élément qui joue ce rôle lorsque le lien associé est supprimé.|`True` pour la cible d’un rôle d’incorporation.<br /><br /> `False` pour les autres rôles.|
 |Nom de la propriété|Nom de la propriété générée dans le code de l’acteur de rôle. Ce nom ne peut pas contenir d’espaces.|Nom du rôle opposé si ce rôle a une multiplicité de zéro à un ou un-à-un ; dans le cas contraire, le nom au pluriel du rôle opposé.|
 |Joueur de rôle|Classe de domaine de l’élément qui peut jouer ce rôle dans la relation. Cette propriété est en lecture seule.|Classe de domaine de l’acteur de rôle pour ce rôle.|
-|Notes|Notes informelles associées au rôle de domaine.|<aucun\>|
+|Remarques|Notes informelles associées au rôle de domaine.|<aucun\>|
 |Category|Catégorie sous laquelle la propriété générée apparaît dans la fenêtre **Propriétés** du concepteur généré. Si cette propriété est vide, la propriété générée apparaît sous la catégorie **divers** .|<aucun\>|
 |Description|Description utilisée pour documenter le code et utilisée dans l’interface utilisateur du concepteur généré.<br /><br /> La description s’affiche dans l’info-bulle IntelliSense pour la propriété générée sur la classe de l’acteur de rôle.|`Description for`*nom complet du rôle*|
-|Nom d’affichage|Nom affiché dans le concepteur généré pour le rôle de domaine.|Valeur ajustée de la propriété Name.|
+|Nom complet|Nom affiché dans le concepteur généré pour le rôle de domaine.|Valeur ajustée de la propriété Name.|
 |Help Keyword|Mot clé facultatif utilisé pour indexer l’aide F1 pour le rôle de domaine.|\<none>|
 |Nom complet de la propriété|Nom affiché dans le concepteur généré pour la propriété de rôle générée.|Valeur ajustée de la propriété nom de la propriété.|
 

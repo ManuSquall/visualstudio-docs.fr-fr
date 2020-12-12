@@ -1,5 +1,7 @@
 ---
 title: Personnaliser un langage spécifique à un domaine
+description: Apprenez à utiliser du code personnalisé pour accéder, modifier ou créer un modèle dans un langage spécifique à un domaine (DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546872"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360453"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Écrire du code pour personnaliser un langage spécifique à un domaine
 
@@ -24,11 +26,11 @@ Il existe plusieurs contextes dans lesquels vous pouvez écrire du code qui fonc
 
 - **Commandes personnalisées.** Vous pouvez créer une commande que les utilisateurs peuvent appeler en cliquant avec le bouton droit sur le diagramme et en modifiant le modèle. Pour plus d’informations, consultez [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Métrage.** Vous pouvez écrire du code qui vérifie que le modèle est dans un état correct. Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+- **Métrage.** Vous pouvez écrire du code qui vérifie que le modèle est dans un état correct. Pour plus d’informations, consultez [validation dans un langage de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Substitution du comportement par défaut.** Vous pouvez modifier de nombreux aspects du code généré à partir de DslDefinition. DSL. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).
 
-- **Transformation de texte.** Vous pouvez écrire des modèles de texte qui contiennent du code qui accède à un modèle et génère un fichier texte, par exemple pour générer du code de programme. Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+- **Transformation de texte.** Vous pouvez écrire des modèles de texte qui contiennent du code qui accède à un modèle et génère un fichier texte, par exemple pour générer du code de programme. Pour plus d’informations, consultez [génération de code à partir d’un langage de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 - **Autres extensions Visual Studio.** Vous pouvez écrire des extensions VSIX distinctes qui lisent et modifient des modèles. Pour plus d’informations, consultez [Comment : ouvrir un modèle à partir d’un fichier dans le code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 

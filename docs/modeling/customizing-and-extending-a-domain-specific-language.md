@@ -1,5 +1,7 @@
 ---
 title: Personnalisation et extension d'un langage spécifique à un domaine
+description: Découvrez comment le kit de développement logiciel (SDK) de modélisation et de visualisation de Visual Studio fournit plusieurs niveaux à partir desquels vous pouvez définir des outils de modélisation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,22 +11,22 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 912c8fc9b5920411304310c44cdc264968472d4e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597163"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360713"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personnaliser et étendre un langage spécifique à un domaine
 
 Le kit de développement logiciel (SDK) de modélisation et de visualisation de Visual Studio fournit plusieurs niveaux à partir desquels vous pouvez définir des outils de modélisation :
 
-1. Définissez un langage spécifique à un domaine (DSL) à l’aide du diagramme de définition DSL. Vous pouvez rapidement créer un DSL avec une notation schématique, un formulaire XML lisible et les outils de base requis pour générer du code et d’autres artefacts. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
+1. Définissez un langage spécifique à un domaine (DSL) à l’aide du diagramme de définition DSL. Vous pouvez rapidement créer un DSL avec une notation schématique, un formulaire XML lisible et les outils de base requis pour générer du code et d’autres artefacts. Pour plus d’informations, consultez [comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. Ajustez la DSL en utilisant des fonctionnalités plus avancées de la définition DSL. Par exemple, vous pouvez faire apparaître des liens supplémentaires lorsque l’utilisateur crée un élément. Ces techniques sont principalement obtenues dans la définition DSL, et certaines nécessitent quelques lignes de code de programme.
 
-3. Étendez vos outils de modélisation à l’aide du code de programme. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL. Pour plus d’informations, consultez [écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Étendez vos outils de modélisation à l’aide du code de programme. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL. Pour plus d’informations, consultez [écriture de code pour personnaliser un langage de Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
 > Lorsque vous avez mis à jour le fichier de définitions DSL, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de **Explorateur de solutions** avant de reconstruire votre solution.
@@ -42,7 +44,7 @@ Le kit de développement logiciel (SDK) de modélisation et de visualisation de 
 |Imbriquer des formes à n’importe quelle profondeur|Configurez une arborescence d’incorporation récursive. Définissez BoundsRules pour contenir les formes.|
 |Attachez des connecteurs à des points fixes sur les limites d’un élément.|Définissez les éléments terminaux incorporés, représentés par de petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de schéma de circuit dans le [Kit de développement logiciel de visualisation et de modélisation](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
 |Champ de texte affiche une valeur dérivée d’autres valeurs.|Mappez l’élément décoratif de texte à une propriété de domaine de stockage calculée ou personnalisée. Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|
-|Propager les modifications entre les éléments de modèle ou entre les formes|Consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).|
+|Propager les modifications entre les éléments de modèle ou entre les formes|Consultez [validation dans un langage de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).|
 |Propage les modifications à des ressources telles que d’autres extensions Visual Studio en dehors du magasin.|Consultez [les gestionnaires d’événements pour propager les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |La fenêtre Propriétés affiche les propriétés d’un élément associé.|Configurez le transfert de propriété. Consultez [Personnalisation de la fenêtre Propriétés](../modeling/customizing-the-properties-window.md).|
 |Catégories de propriétés|La fenêtre Propriétés est divisée en sections appelées catégories. Définissez la **catégorie** de vos propriétés de domaine. Les propriétés portant le même nom de catégorie s’affichent dans la même section. Vous pouvez également définir la **catégorie** d’un rôle de relation.|
@@ -61,17 +63,17 @@ Le kit de développement logiciel (SDK) de modélisation et de visualisation de 
 |Utilisez un outil de connexion pour instancier plusieurs types de relations.|Ajoutez des directives de connexion de lien (LCD) au générateur de connexions qui est appelé par l’outil. Les écrans LCD déterminent le type de la relation à partir des types des deux éléments. Pour que cela dépende des États des éléments, vous pouvez ajouter du code personnalisé. Consultez [Personnalisation des outils et de la boîte à outils](../modeling/customizing-tools-and-the-toolbox.md).|
 |Outils rémanents : l’utilisateur peut double-cliquer sur n’importe quel outil pour créer plusieurs formes ou connecteurs successivement.|Dans l’Explorateur DSL, sélectionnez le `Editor` nœud. Dans le Fenêtre Propriétés, Set **utilise des éléments de boîte à outils rémanents**.|
 |Définir des commandes de menu|Consultez [Comment : modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
-|Contraindre le modèle à l’aide de règles de validation|Voir [la validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)|
+|Contraindre le modèle à l’aide de règles de validation|Voir [la validation dans un langage de Domain-Specific](../modeling/validation-in-a-domain-specific-language.md)|
 |Générez du code, des fichiers de configuration ou des documents à partir d’un DSL.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Personnaliser la façon dont les modèles sont enregistrés dans un fichier.|Voir [Personnalisation du stockage de fichiers et de la SÉRIALISATION XML](../modeling/customizing-file-storage-and-xml-serialization.md)|
-|Enregistrer des modèles dans des bases de données ou d’autres médias.|Remplacer *YourLanguage*DocData<br /><br /> Voir [Personnalisation du stockage de fichiers et de la SÉRIALISATION XML](../modeling/customizing-file-storage-and-xml-serialization.md)|
+|Enregistrer des modèles dans des bases de données ou d’autres médias.|Remplacer *YourLanguage* DocData<br /><br /> Voir [Personnalisation du stockage de fichiers et de la SÉRIALISATION XML](../modeling/customizing-file-storage-and-xml-serialization.md)|
 |Intégrer plusieurs DSL pour qu’ils fonctionnent dans le cadre d’une application.|Consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|
 |Autorisez l’extension de votre DSL par des tiers et contrôlez l’extension.|[Étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Définition d'une stratégie de verrouillage pour créer des segments en lecture seule](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
-- [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Écriture de code pour personnaliser un langage de Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

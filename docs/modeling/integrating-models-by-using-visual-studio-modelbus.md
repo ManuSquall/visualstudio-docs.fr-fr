@@ -1,5 +1,7 @@
 ---
 title: Intégration de modèles à l’aide de ModelBus
+description: Découvrez que Visual Studio ModelBus fournit une méthode pour créer des liens entre des modèles et d’autres outils dans des modèles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536940"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360725"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Intégrer des modèles à l’aide de Visual Studio Modelbus
 
@@ -303,7 +305,7 @@ using (FamilyTreeAdapter adapter =
 
 1. Le DSL auquel vous voulez accéder doit avoir un adaptateur ModelBus configuré pour être accessible par les modèles de texte. Pour plus d’informations, consultez [fourniture d’un accès à une solution DSL](#provide).
 
-2. Généralement, vous accèderez à un DSL cible à l'aide d'une référence de bus de modèles (MBR) stockée dans un DSL source. Par conséquent, votre modèle inclut la directive du DSL source, plus le code pour résoudre la MBR. Pour plus d’informations sur les modèles de texte, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+2. Généralement, vous accèderez à un DSL cible à l'aide d'une référence de bus de modèles (MBR) stockée dans un DSL source. Par conséquent, votre modèle inclut la directive du DSL source, plus le code pour résoudre la MBR. Pour plus d’informations sur les modèles de texte, consultez [génération de code à partir d’un langage de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
    ```
    <#@ template debug="true" hostspecific="true"

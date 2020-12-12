@@ -1,5 +1,7 @@
 ---
 title: Référence API pour les modèles de texte T4
+description: Découvrez comment l’API de création de modèles de texte vous permet d’appeler et de personnaliser la transformation des modèles de texte.
+ms.custom: SEO-VS-20200
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b857770ac793e7df7f75ecee03cb089df1eeb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85e2a21002919fcccca40bf481200e368bd16ed5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597212"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361038"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Référence API pour les modèles de texte T4
 

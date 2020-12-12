@@ -1,5 +1,7 @@
 ---
 title: Référence des diagrammes de dépendance
+description: Découvrez que dans Visual Studio, vous pouvez utiliser un diagramme de dépendance pour visualiser l’architecture logique de haut niveau de votre système.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594563"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360570"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
@@ -56,7 +58,7 @@ Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme 
 
 Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagramme de dépendance.
 
-|**Forme**|**Element**|**Description**|
+|**Graphique à base de formes**|**Element**|**Description**|
 |-|-|-|
 |1|**Couche**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour afficher les artefacts liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez afficher les **liens** pour ouvrir l' **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -   **Dépendances d’espaces de noms interdits** : spécifie que les artefacts associés à cette couche ne peuvent pas dépendre des espaces de noms spécifiés.<br />-   **Espaces de noms interdits** : spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **Espaces de noms requis** : spécifie que les artefacts associés à cette couche doivent appartenir à l’un des espaces de noms spécifiés.|
 |2|**Dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> -   **Direction** : spécifie la direction de la dépendance.|

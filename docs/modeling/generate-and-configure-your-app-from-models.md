@@ -1,5 +1,7 @@
 ---
 title: Générer et configurer votre application à partir de modèles
+description: Découvrez ce que représente un modèle et comment vous pouvez générer ou configurer des parties de votre application à partir d’un modèle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25a0b83d3ac7be95c42ca0c4e53a188569bb5770
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114902"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361870"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 Vous pouvez générer ou configurer certaines parties de votre application à partir d'un modèle.

@@ -1,5 +1,7 @@
 ---
 title: Navigation et mise à jour d'un modèle dans le code de programme
+description: Découvrez comment vous pouvez écrire du code pour créer et supprimer des éléments de modèle, définir leurs propriétés et créer et supprimer des liens entre des éléments.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566174"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362208"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Accéder à un modèle et le mettre à jour dans le code du programme
 
@@ -129,7 +131,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
 - ElementLink : toutes les relations sont ElementLinks
 
 ## <a name="perform-changes-inside-a-transaction"></a><a name="transaction"></a> Effectuer des modifications à l’intérieur d’une transaction
- Chaque fois que votre code de programme change dans le magasin, il doit le faire à l’intérieur d’une transaction. Cela s’applique à tous les éléments de modèle, relations, formes, diagrammes et leurs propriétés. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Modeling.Transaction>.
+ Chaque fois que votre code de programme change dans le magasin, il doit le faire à l’intérieur d’une transaction. Cela s’applique à tous les éléments de modèle, relations, formes, diagrammes et leurs propriétés. Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.Modeling.Transaction>.
 
  La méthode la plus pratique pour gérer une transaction consiste à utiliser une `using` instruction placée dans une `try...catch` instruction :
 
@@ -288,7 +290,7 @@ Dans certains cas, la suppression est empêchée par l’existence d’un verrou
 ## <a name="locks"></a><a name="locks"></a> Verrous
  Vos modifications peuvent être bloquées par un verrou. Les verrous peuvent être définis sur des éléments individuels, sur des partitions et sur le magasin. Si l’un de ces niveaux a un verrou qui empêche le type de modification que vous souhaitez effectuer, une exception peut être levée lorsque vous tentez de le faire. Vous pouvez déterminer si les verrous sont définis à l’aide de l’élément. GetLocks (), qui est une méthode d’extension définie dans l’espace de noms <xref:Microsoft.VisualStudio.Modeling.Immutability> .
 
- Pour plus d’informations, consultez [définition d’une stratégie de verrouillage pour créer des segments en lecture seule](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
+ Pour plus d’informations, consultez [définition d’une stratégie de verrouillage pour créer des segments de Read-Only](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> Copier et coller
  Vous pouvez copier des éléments ou des groupes d’éléments dans un <xref:System.Windows.Forms.IDataObject> :
@@ -327,7 +329,7 @@ using (Transaction t = targetDiagram.Store.
 |-|-|
 |Classe de domaine|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Relation de domaine|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
-|Forme|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
+|Graphique à base de formes|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
 |Connecteur|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |Diagramme|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 

@@ -1,5 +1,7 @@
 ---
 title: Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
+description: Découvrez qu’en utilisant le kit de développement logiciel (SDK) Modeling pour Visual Studio, vous pouvez créer de puissants outils de développement basés sur des modèles, que vous pouvez intégrer à Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2abb209943ff14969f71ebdca6982020f30a5d47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a032e5f6b3f9eda302f65a4d04b196ef55a225f6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590200"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360778"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 

@@ -1,5 +1,7 @@
 ---
 title: Substitution et extension des classes générées
+description: Découvrez comment votre définition DSL est une plateforme sur laquelle vous pouvez créer un ensemble puissant d’outils basés sur un langage spécifique à un domaine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595889"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362091"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Remplacer et étendre les classes générées
 
@@ -46,7 +48,7 @@ public partial class Book
 
 Pour découvrir les méthodes que vous pouvez substituer, tapez **override** dans la classe, suivi d’un espace. L’info-bulle IntelliSense vous indique les méthodes qui peuvent être substituées.
 
-### <a name="double-derived-classes"></a>Classes dérivées de double
+### <a name="double-derived-classes"></a>Classes Double-Derived
 
 La plupart des méthodes des classes générées sont héritées d’un ensemble fixe de classes dans les espaces de noms de modélisation. Toutefois, certaines méthodes sont définies dans le code généré. En règle générale, cela signifie que vous ne pouvez pas les remplacer ; vous ne pouvez pas substituer dans une classe partielle les méthodes qui sont définies dans une autre définition partielle de la même classe.
 

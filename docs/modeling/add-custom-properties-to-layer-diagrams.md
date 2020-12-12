@@ -1,5 +1,7 @@
 ---
 title: Ajouter des propriétés personnalisées à des diagrammes de dépendance
+description: Découvrez comment vous pouvez stocker des valeurs avec n’importe quel élément d’un diagramme de dépendances lorsque vous écrivez du code d’extension pour des diagrammes de dépendance.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546912"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360765"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de dépendance
 
@@ -38,7 +40,7 @@ Si vous souhaitez simplement que votre code joigne des valeurs à n’importe qu
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Dans la section **Visual Studio Tools** du menu Démarrer de l’application Visual Studio, ouvrez **invite de commandes développeur**. Entrez :
+> 3. Dans la section **Visual Studio Tools** du menu Démarrer de l’application Visual Studio, ouvrez **invite de commandes développeur**. Entrez :
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >

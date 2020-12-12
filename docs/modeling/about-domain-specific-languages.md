@@ -1,5 +1,7 @@
 ---
 title: À propos des langages spécifiques à un domaine
+description: Découvrez comment un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème ou un domaine particulier.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597267"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360886"
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 
@@ -54,11 +56,11 @@ En règle générale, un langage spécifique à un domaine est créé lorsqu’u
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] vous permet de créer un langage spécifique à un domaine qui contient votre propre concepteur graphique et votre propre notation de diagramme, puis d’utiliser le langage pour générer le code source approprié pour chaque projet.
 
-## <a name="domain-specific-development"></a>Développement spécifique à un domaine
+## <a name="domain-specific-development"></a>Développement Domain-Specific
 
 Le développement spécifique à un domaine est le processus qui consiste à identifier les parties de vos applications qui peuvent être modélisées à l’aide d’un langage spécifique à un domaine, puis à construire le langage et à le déployer pour les développeurs d’applications. Les développeurs utilisent le langage spécifique à un domaine pour construire des modèles spécifiques à leurs applications, utiliser les modèles pour générer le code source, puis utiliser le code source pour développer les applications.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>Aspects du développement spécifique à un domaine graphique
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspects du développement de Domain-Specific graphique
 
 Un langage spécifique à un domaine graphique doit inclure les fonctionnalités suivantes :
 
@@ -94,7 +96,7 @@ Un langage spécifique à un domaine doit être conservé sous une forme qui peu
 
 Vous pouvez également créer un adaptateur de bus de modèles pour votre langage spécifique à un domaine. Cet adaptateur vous permet de référencer un modèle et des éléments dans un modèle, et vous permet d’écrire du code qui peut accéder à une instance du DSL et le mettre à jour. En utilisant le puissant mécanisme de bus de modèle, vous pouvez écrire des extensions Visual Studio qui fonctionnent avec plusieurs modèles. Vous pouvez également écrire des applications autonomes qui fonctionnent avec les modèles. Pour plus d’informations, consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="benefits-of-domain-specific-development"></a>Avantages du développement spécifique à un domaine
+## <a name="benefits-of-domain-specific-development"></a>Avantages du développement Domain-Specific
 
 Un langage spécifique à un domaine peut offrir les avantages suivants :
 
@@ -110,7 +112,7 @@ Un langage spécifique à un domaine peut offrir les avantages suivants :
 
      Les développeurs peuvent utiliser le code généré par leur modèle pour créer une application prototype qu’ils peuvent afficher aux clients.
 
-## <a name="the-process-of-domain-specific-development"></a>Processus de développement spécifique à un domaine
+## <a name="the-process-of-domain-specific-development"></a>Processus de développement de Domain-Specific
 
 La plupart des équipes de développement de logiciels qui utilisent des langages spécifiques à un domaine suivent les étapes ci-dessous pour créer et utiliser leurs modèles :
 

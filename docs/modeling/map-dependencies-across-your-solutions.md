@@ -1,5 +1,7 @@
 ---
 title: Cartes de code
+description: Découvrez comment les cartes de code vous aident à voir comment le code s’ajuste sans lire les fichiers et les lignes de code.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532715"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362234"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapper des dépendances avec des cartes de code
 
@@ -43,7 +45,7 @@ Vous pouvez mapper les dépendances de code dans les langages suivants :
 - projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.
 
 > [!NOTE]
-> Pour les projets autres que C# ou Visual Basic, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de **Explorateur de solutions**, **affichage de classes**et l' **Explorateur d’objets**.
+> Pour les projets autres que C# ou Visual Basic, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de **Explorateur de solutions**, **affichage de classes** et l' **Explorateur d’objets**.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Installer la carte de code et la validation de dépendances dynamiques
 
@@ -94,7 +96,7 @@ Pour afficher toutes les dépendances dans votre solution :
 
    ![Graphique de dépendance de niveau supérieur des assemblys](../modeling/media/dependencygraph_toplevelassemblies.png)
 
-   Cet exemple de solution contient des dossiers de solution (**Tests** et **Composants**), des projets de test, des projets web et des assemblys. Par défaut, toutes les relations d’imbrication apparaissent sous forme de *groupes*que vous pouvez développer et réduire. Le groupe **Externes** contient les éléments qui ne font pas partie de votre solution, notamment les dépendances de plateforme. Les assemblys externes affichent uniquement les éléments utilisés. Par défaut, les types de base du système sont masqués pour ne pas trop encombrer la carte.
+   Cet exemple de solution contient des dossiers de solution (**Tests** et **Composants**), des projets de test, des projets web et des assemblys. Par défaut, toutes les relations d’imbrication apparaissent sous forme de *groupes* que vous pouvez développer et réduire. Le groupe **Externes** contient les éléments qui ne font pas partie de votre solution, notamment les dépendances de plateforme. Les assemblys externes affichent uniquement les éléments utilisés. Par défaut, les types de base du système sont masqués pour ne pas trop encombrer la carte.
 
 3. Pour descendre dans la hiérarchie de la carte, développez les groupes qui représentent des projets et des assemblys. Pour développer tout, appuyez sur **Ctrl+A** pour sélectionner tous les nœuds. Ensuite, choisissez **Groupe**, puis **Développer** dans le menu contextuel.
 
@@ -164,7 +166,7 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
 
 1. Dans la barre d’outils **Explorateur de solutions** , choisissez **afficher sur la carte de code** ![ créer un graphique à partir des nœuds sélectionnés ](../modeling/media/createnewgraphfromselectedbutton.gif) . Ou bien, ouvrez le menu contextuel d’un ou d’un groupe d’éléments et choisissez **afficher sur la carte de code**.
 
-   Vous pouvez également faire glisser des éléments depuis **Explorateur de solutions**, **affichage de classes**ou l' **Explorateur d’objets**, dans une carte de code [nouvelle](#add-a-code-map) ou existante. Pour inclure la hiérarchie parente de vos éléments, appuyez sur la touche **CTRL** et maintenez-la enfoncée pendant que vous faites glisser des éléments ou utilisez le bouton **inclure les parents** dans la barre d’outils de la carte de code pour spécifier l’action par défaut. Vous pouvez également faire glisser des fichiers d’assembly en dehors de Visual Studio, par exemple à partir de l' **Explorateur Windows**.
+   Vous pouvez également faire glisser des éléments depuis **Explorateur de solutions**, **affichage de classes** ou l' **Explorateur d’objets**, dans une carte de code [nouvelle](#add-a-code-map) ou existante. Pour inclure la hiérarchie parente de vos éléments, appuyez sur la touche **CTRL** et maintenez-la enfoncée pendant que vous faites glisser des éléments ou utilisez le bouton **inclure les parents** dans la barre d’outils de la carte de code pour spécifier l’action par défaut. Vous pouvez également faire glisser des fichiers d’assembly en dehors de Visual Studio, par exemple à partir de l' **Explorateur Windows**.
 
    > [!NOTE]
    > Lorsque vous ajoutez des éléments à partir d’un projet partagé entre plusieurs applications, comme Windows Phone ou Microsoft Store, ces éléments apparaissent sur la carte avec le projet d’application actif. Si vous modifiez le contexte vers un autre projet d’application et ajoutez des éléments à partir du projet partagé, ces éléments apparaissent alors avec le projet d’application qui vient d’être activé. Les opérations que vous effectuez avec un élément de la carte s’appliquent uniquement aux éléments qui partagent le même contexte.
@@ -194,7 +196,7 @@ Supposons que vous ayez une révision du code à effectuer dans certains fichier
     |**Afficher les assemblys qui sont référencés par cela**|Ajoutez les assemblys que cet assembly référence. Les assemblys externes apparaissent dans le groupe **Externes** .|
     |**Afficher les assemblys qui référencent cela**|Ajoutez les assemblys de la solution qui référencent cet assembly.|
 
-    Pour un **espace de noms**, choisissez **Afficher l’assembly conteneur**s’il n’est pas visible.
+    Pour un **espace de noms**, choisissez **Afficher l’assembly conteneur** s’il n’est pas visible.
 
     Pour une **classe** ou une **interface**, choisissez :
 

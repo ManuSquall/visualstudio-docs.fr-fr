@@ -1,5 +1,7 @@
 ---
 title: Développer des tests à partir d'un modèle
+description: Découvrez comment vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099295"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361831"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.

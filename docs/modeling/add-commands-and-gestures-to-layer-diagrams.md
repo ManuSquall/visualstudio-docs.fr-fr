@@ -1,5 +1,7 @@
 ---
 title: Ajouter des commandes et des mouvements aux diagrammes de dépendance
+description: Découvrez comment vous pouvez définir des commandes de menu contextuelles et des gestionnaires de mouvements sur des diagrammes de dépendance dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531389"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362221"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 
@@ -26,9 +28,9 @@ Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires 
 > [!NOTE]
 > Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
-Consultez [Spécifications](../modeling/extend-layer-diagrams.md#requirements).
+Consultez [spécifications](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Définir une commande ou un mouvement dans une nouvelle extension VSIX
 

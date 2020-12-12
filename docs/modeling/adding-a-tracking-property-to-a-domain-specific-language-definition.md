@@ -1,5 +1,7 @@
 ---
 title: Ajouter une propriété de suivi à une définition DSL
+description: En savoir plus sur la propriété de domaine de suivi et sur la façon dont vous pouvez ajouter une propriété de suivi à un modèle de domaine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa6c63d9f43c465e5632d40281c1f48fb9d0f0b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 6709ede3de16a78e0042d035a87a715b9ce4c80c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830715"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361207"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajouter une propriété de suivi à une définition de langage spécifique à un domaine
 
@@ -24,7 +26,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 
 Une propriété de *domaine de suivi* est une propriété qui peut être mise à jour par l’utilisateur mais dont la valeur par défaut est calculée à l’aide des valeurs d’autres propriétés ou éléments du domaine.
 
-Par exemple, dans la Outils Domain-Specific Language (outils DSL), la propriété nom complet d’une classe de domaine a une valeur par défaut calculée à l’aide du nom de la classe de domaine, mais un utilisateur peut modifier la valeur au moment de la conception ou la réinitialiser à la valeur calculée.
+Par exemple, dans les outils de langage Domain-Specific (outils DSL), la propriété nom complet d’une classe de domaine a une valeur par défaut calculée à l’aide du nom de la classe de domaine, mais un utilisateur peut modifier la valeur au moment de la conception ou la réinitialiser à la valeur calculée.
 
 Dans cette procédure pas à pas, vous créez un langage spécifique à un domaine (DSL) qui a une propriété de suivi d’espace de noms qui a une valeur par défaut basée sur la propriété d’espace de noms par défaut du modèle. Pour plus d’informations sur les propriétés de suivi, consultez [définition des propriétés de suivi](/previous-versions/cc825929(v=vs.100)).
 
@@ -54,7 +56,7 @@ Avant de commencer cette procédure pas à pas, vous devez d’abord installer l
 
 ## <a name="create-the-project"></a>Créer le projet
 
-1. Créez un projet de Concepteur Domain-Specific Language. Nommez-le `TrackingPropertyDSL`.
+1. Créez un projet Domain-Specific Language designer. Nommez-le `TrackingPropertyDSL`.
 
 2. Dans l' **assistant concepteur Domain-specific language**, définissez les options suivantes :
 
@@ -97,11 +99,11 @@ Avant de commencer cette procédure pas à pas, vous devez d’abord installer l
 
 2. Pour la classe de domaine **ExampleModel** , ajoutez une propriété de domaine nommée `CustomElements` .
 
-     Dans la fenêtre **Propriétés** de la nouvelle propriété, affectez la valeur **calculé**à **genre** .
+     Dans la fenêtre **Propriétés** de la nouvelle propriété, affectez la valeur **calculé** à **genre** .
 
 3. Pour la classe de domaine **ExampleElement** , ajoutez une propriété de domaine nommée `Namespace` .
 
-     Dans la fenêtre **Propriétés** de la nouvelle propriété **, attribuez la valeur** **false**à la propriété, puis affectez à **type** la valeur **CustomStorage**.
+     Dans la fenêtre **Propriétés** de la nouvelle propriété **, attribuez la valeur** **false** à la propriété, puis affectez à **type** la valeur **CustomStorage**.
 
 4. Pour la classe de domaine **ExampleElement** , ajoutez une propriété de domaine nommée `IsNamespaceTracking` .
 
@@ -125,7 +127,7 @@ Avant de commencer cette procédure pas à pas, vous devez d’abord installer l
 
     1. Développez le nœud **ExampleElement** , puis sélectionnez le nœud de **descripteur de type personnalisé (descripteur de type de domaine)** .
 
-    2. Dans la fenêtre **Propriétés** du descripteur de type de domaine, affectez la valeur **true**à **code personnalisé** .
+    2. Dans la fenêtre **Propriétés** du descripteur de type de domaine, affectez la valeur **true** à **code personnalisé** .
 
 4. Dans l' **Explorateur DSL**, sélectionnez le nœud **comportement de sérialisation XML** .
 
@@ -724,7 +726,7 @@ L’étape suivante consiste à générer et exécuter le concepteur DSL dans un
 
 3. Dans **Explorateur de solutions**, double-cliquez sur le fichier test. trackingPropertyDsl pour l’ouvrir dans le concepteur, puis cliquez sur l’aire de conception.
 
-    Notez que dans la fenêtre **Propriétés** du diagramme, la propriété **espace de noms par défaut** est **DefaultNamespace**et la propriété **éléments personnalisés** est **0/0**.
+    Notez que dans la fenêtre **Propriétés** du diagramme, la propriété **espace de noms par défaut** est **DefaultNamespace** et la propriété **éléments personnalisés** est **0/0**.
 
 4. Faites glisser un élément **ExampleElement** de la **boîte à outils** vers la surface du diagramme.
 
@@ -732,7 +734,7 @@ L’étape suivante consiste à générer et exécuter le concepteur DSL dans un
 
     Notez que la valeur de l' **espace de noms d’élément** est maintenant affichée en gras.
 
-6. Dans la fenêtre **Propriétés** , cliquez avec le bouton droit sur **espace de noms**de l’élément, puis cliquez sur **Réinitialiser**.
+6. Dans la fenêtre **Propriétés** , cliquez avec le bouton droit sur **espace de noms** de l’élément, puis cliquez sur **Réinitialiser**.
 
     La valeur de la propriété est changée en **DefaultNamespace**, et la valeur est affichée dans une police normale.
 
@@ -746,7 +748,7 @@ L’étape suivante consiste à générer et exécuter le concepteur DSL dans un
 
 9. Remplacez la valeur de l' **espace de noms par défaut** du diagramme de **DefaultNamespace** par **NewNamespace**.
 
-     L' **espace de noms** du premier élément effectue le suivi de la propriété d' **espace de noms par défaut** , tandis que l' **espace de noms** du deuxième élément conserve sa valeur de **OtherNamespace**mise à jour par l’utilisateur.
+     L' **espace de noms** du premier élément effectue le suivi de la propriété d' **espace de noms par défaut** , tandis que l' **espace de noms** du deuxième élément conserve sa valeur de **OtherNamespace** mise à jour par l’utilisateur.
 
 10. Enregistrez la solution, puis fermez la build expérimentale.
 

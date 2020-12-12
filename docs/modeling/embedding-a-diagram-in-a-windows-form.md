@@ -1,5 +1,7 @@
 ---
 title: Incorporation d'un schéma dans un Windows Form
+description: Découvrez comment vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui s’affiche dans la fenêtre Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4338bfa824b511ee0be40516e1396a75901188a1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547626"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361701"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Incorporer un diagramme dans un Windows Form
 

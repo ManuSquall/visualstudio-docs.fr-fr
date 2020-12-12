@@ -1,5 +1,7 @@
 ---
 title: Gestionnaire de modification de la valeur de propriété du domaine
+description: En savoir plus sur les gestionnaires de modification de valeur de propriété de domaine qui peuvent être utilisés dans un langage spécifique à un domaine Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594706"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361727"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestionnaires de modification de valeur de propriété de domaine
 
@@ -22,7 +24,7 @@ Dans un langage spécifique à un domaine Visual Studio, lorsque la valeur d’u
 
 ## <a name="override-the-property-handler-methods"></a>Substituer les méthodes de gestionnaire de propriétés
 
-Chaque propriété de domaine de votre langage spécifique à un domaine est gérée par une classe imbriquée dans sa classe de domaine parente. Son nom suit le format *PropertyName*PropertyHandler. Vous pouvez inspecter cette classe de gestionnaire de propriétés dans le fichier **Dsl\Generated Code\DomainClasses.cs**. Dans la classe, `OnValueChanging()` est appelée juste avant que la valeur change et `OnValueChanged()` est appelée juste après que la valeur change.
+Chaque propriété de domaine de votre langage spécifique à un domaine est gérée par une classe imbriquée dans sa classe de domaine parente. Son nom suit le format *PropertyName* PropertyHandler. Vous pouvez inspecter cette classe de gestionnaire de propriétés dans le fichier **Dsl\Generated Code\DomainClasses.cs**. Dans la classe, `OnValueChanging()` est appelée juste avant que la valeur change et `OnValueChanged()` est appelée juste après que la valeur change.
 
 Par exemple, supposons que vous ayez une classe de domaine nommée `Comment` qui a une propriété de domaine de chaîne nommée `Text` et une propriété de type entier nommée `TextLengthCount` . Pour `TextLengthCount` que Always contienne toujours la longueur de la `Text` chaîne, vous pouvez écrire le code suivant dans un fichier distinct dans le projet DSL :
 

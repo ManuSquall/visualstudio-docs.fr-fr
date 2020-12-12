@@ -1,5 +1,7 @@
 ---
 title: Syntaxe du chemin de domaine
+description: En savoir plus sur la syntaxe du chemin d’accès au domaine et sur la façon dont les définitions DSL utilisent une syntaxe de type XPath pour localiser des éléments spécifiques dans un modèle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114642"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361741"
 ---
 # <a name="domain-path-syntax"></a>Syntaxe du chemin de domaine
 Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher des éléments spécifiques dans un modèle.

@@ -1,5 +1,7 @@
 ---
 title: Écriture d'un modèle de texte T4
+description: Découvrez les modèles de texte T4 et comment écrire un modèle de texte qui comprend des directives, des blocs de texte et des blocs de contrôle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593484"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361220"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page Web contiendra « \<html> ... » et toutes les autres parties standard d’une page HTML. Les *blocs de contrôle*, qui sont des fragments de code de programme, sont insérés dans le modèle. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
@@ -238,7 +240,7 @@ private void WriteSquareLine(int i)
 
  **Chargez un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) pour créer un ensemble de classes avec lequel vous pouvez lire les données XML.
 
- **Modifiez le fichier de modèle dans un diagramme ou un formulaire.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fournit des outils qui vous permettent de modifier un modèle en tant que diagramme ou formulaire Windows. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Modifiez le fichier de modèle dans un diagramme ou un formulaire.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fournit des outils qui vous permettent de modifier un modèle en tant que diagramme ou formulaire Windows. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération de code à partir d’un langage de Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Chemins d’accès de fichiers relatifs dans les modèles au moment du design
  Dans un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si vous souhaitez faire référence à un fichier à un emplacement relatif au modèle de texte, utilisez `this.Host.ResolvePath()` . Vous devez aussi définir `hostspecific="true"` dans la directive `template` :
