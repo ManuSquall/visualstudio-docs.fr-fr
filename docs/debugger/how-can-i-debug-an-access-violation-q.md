@@ -1,6 +1,7 @@
 ---
 title: Déboguer une violation d’accès C++ | Microsoft Docs
-ms.custom: seodec18
+description: Consultez les conseils sur la résolution d’une violation d’accès lorsque plusieurs pointeurs sont candidats. Les versions récentes de Visual Studio renomment le pointeur errant.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 803f81d1a26438c2134349a85369d341353e17cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0fb7e6f5ae71cf336f9fe206bc7b0208566b615
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350418"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398569"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Comment puis-je déboguer une violation d’accès C++ ?
 
@@ -80,4 +81,4 @@ Si vous exécutez ce code dans Visual Studio 2015 Update 1, la boîte de dialogu
 Si vous n’arrivez pas à déterminer la raison pour laquelle le pointeur a provoqué une violation d’accès, tracez le code pour vérifier que le pointeur à l’origine du problème a été correctement assigné.  S’il est passé en tant que paramètre, assurez-vous qu’il est passé correctement et que vous ne créez pas de [copie superficielle](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)par inadvertance. Vérifiez ensuite que les valeurs ne sont pas modifiées de manière non intentionnelle à un endroit du programme. Pour cela, créez un point d’arrêt sur variable pour le pointeur en question pour vous assurer qu’il n’est pas en cours de modification autre part dans le programme. Pour plus d’informations sur les points d’arrêt sur variable, consultez la section consacrée à ce sujet dans [Using Breakpoints](../debugger/using-breakpoints.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)

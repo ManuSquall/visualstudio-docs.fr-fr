@@ -1,5 +1,7 @@
 ---
 title: Débogage à partir d’un projet DLL | Microsoft Docs
+Description: Vous pouvez démarrer le débogage d’un projet DLL à partir du projet lui-même, en spécifiant l’application appelante dans les propriétés du projet. Pour plus d’informations, voir cet article.
+ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1102eb61f6cfda42f6e4e879f5c592c0c064ce0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852137"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398556"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Comment : déboguer à partir d’un projet DLL dans Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -37,7 +39,7 @@ Les projets DLL natifs et managés ont des paramètres différents pour spécifi
 
 1. Sélectionnez le projet DLL C++ dans **Explorateur de solutions**. Sélectionnez l’icône **Propriétés** , appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
 
-1. Dans la boîte de dialogue ** \<Project> pages de propriétés** , assurez-vous que le champ **configuration** en haut de la fenêtre a la valeur **Déboguer**.
+1. Dans la boîte de dialogue **\<Project> pages de propriétés** , assurez-vous que le champ **configuration** en haut de la fenêtre a la valeur **Déboguer**.
 
 1. Sélectionnez **Configuration Propriétés**  >  **débogage**.
 
@@ -79,10 +81,10 @@ Les projets DLL natifs et managés ont des paramètres différents pour spécifi
 
 1. Assurez-vous que le champ **Configuration des solutions** a la valeur **Déboguer**. Appuyez sur **F5**, cliquez sur la flèche verte de **démarrage** ou sélectionnez **Déboguer**  >  **Démarrer le débogage**.
 
-Si le débogage n’atteint pas vos points d’arrêt, assurez-vous que la sortie de votre DLL (par défaut, le dossier * \<project> \Debug.* ) est l’emplacement appelé par l’application appelante.
+Si le débogage n’atteint pas vos points d’arrêt, assurez-vous que la sortie de votre DLL (par défaut, le dossier *\<project> \Debug.* ) est l’emplacement appelé par l’application appelante.
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage de projets DLL](../debugger/debugging-dll-projects.md)
-- [Paramètres de projet pour les configurations de débogage C#](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

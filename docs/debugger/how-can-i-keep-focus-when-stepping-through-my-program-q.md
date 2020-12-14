@@ -1,6 +1,7 @@
 ---
 title: Conserver le focus lorsque j’effectue un pas à pas détaillé dans mon application | Microsoft Docs
-ms.custom: seodec18
+Description: Utilisez le débogage distant pour empêcher votre programme de perdre le focus quand vous déboguez un problème d’activation de la fenêtre.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d533d524effe5ba055116d926d7cc5ba9632a6b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350379"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398322"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Comment puis-je conserver le focus lorsque j’effectue un pas à pas détaillé dans mon application ?
 ## <a name="description"></a>Description
@@ -36,6 +37,6 @@ ms.locfileid: "85350379"
  Si vous disposez d'un autre ordinateur, utilisez le débogage distant. Vous pouvez faire fonctionner votre programme sur l'ordinateur distant pendant que vous exécutez le débogueur sur l'hôte. Pour plus d’informations, consultez [Comment : sélectionner un ordinateur distant](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Joindre aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Débogage du code natif](../debugger/debugging-native-code.md)

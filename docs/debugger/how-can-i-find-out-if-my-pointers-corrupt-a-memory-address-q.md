@@ -1,6 +1,7 @@
 ---
 title: Déterminer si mes pointeurs endommagent une adresse mémoire | Microsoft Docs
-ms.custom: seodec18
+Description: Pour déterminer si votre pointeur endommage la mémoire, vous pouvez rechercher une altération du tas, et vous pouvez définir un point d’arrêt sur variable pour déterminer comment une valeur est modifiée.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075569815d55ea30f688c5ce86c56990fca03cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 310ec0b881c3b4a299a3d933511e54db0e288ddf
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350353"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398362"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ?
 ## <a name="problem-description"></a>Description du problème
@@ -45,5 +46,5 @@ ms.locfileid: "85350353"
 2. Quand vous atteignez le point d’arrêt, utilisez la fenêtre **Mémoire** pour afficher le contenu de la mémoire à partir de l’adresse 0x00408000. Pour plus d’informations, consultez [mémoire Windows](../debugger/memory-windows.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Débogage du code natif](../debugger/debugging-native-code.md)

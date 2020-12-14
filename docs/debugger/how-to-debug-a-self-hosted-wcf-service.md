@@ -1,5 +1,7 @@
 ---
-title: Déboguer un service WCF auto-hébergé | Microsoft Docs
+title: Déboguer un service WCF Self-Hosted | Microsoft Docs
+Description: Découvrez comment déboguer un service WCF auto-hébergé. Le moyen le plus simple (mais pas toujours possible) consiste à configurer Visual Studio pour qu’il lance le client et le serveur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac58c187e147040c5ef82320a3b44e86912ed5b8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 983c053ca6bd1370cf67cb04eeb2626c2b1217aa
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852189"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398725"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Comment : déboguer un service WCF auto-hébergé
 Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’intérieur d’IIS, de l’hôte de service WCF ou du serveur de développement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Le moyen le plus simple de déboguer un WCF auto-hébergé consiste à configurer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour lancer à la fois le client et le serveur quand vous choisissez **Démarrer le débogage** dans le menu **Déboguer** .
@@ -45,7 +47,7 @@ Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’in
 
    2. Cliquez sur **définir les projets de démarrage**.
 
-   3. Dans la boîte de dialogue ** \<name> Propriétés** de la solution, sélectionnez **plusieurs projets de démarrage**.
+   3. Dans la boîte de dialogue **\<name> Propriétés** de la solution, sélectionnez **plusieurs projets de démarrage**.
 
    4. Dans la grille **plusieurs projets de démarrage** , sur la ligne qui correspond au projet serveur, cliquez sur **action** , puis choisissez **Démarrer**.
 

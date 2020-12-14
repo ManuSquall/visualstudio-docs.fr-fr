@@ -1,6 +1,7 @@
 ---
 title: Utiliser les fenêtres du débogueur lors du débogage d’une application de premier plan | Microsoft Docs
-ms.custom: seodec18
+Description: Si vous déboguez un programme qui doit rester au premier plan, utilisez le débogage distant pour éviter de le placer en arrière-plan.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c74ca2c01f55778930e2cab1ccf38011bba868d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f39f7dfbd463c48675f4b8c98612dfab3f33de3c
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350327"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398738"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Comment puis-je utiliser les fenêtres du débogueur pendant le débogage d'un programme d'avant-plan ?
 ## <a name="problem-description"></a>Description du problème
@@ -37,5 +38,5 @@ ms.locfileid: "85350327"
  Si vous disposez d'un autre ordinateur, vous pouvez recourir au débogage distant. Dans une installation comportant deux ordinateurs, vous pouvez observer la peinture de l'écran sur l'ordinateur distant, tout en utilisant le débogueur sur l'hôte. Pour plus d’informations sur le débogage distant, consultez [débogage distant](../debugger/remote-debugging.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Débogage du code natif](../debugger/debugging-native-code.md)

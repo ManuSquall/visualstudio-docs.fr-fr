@@ -1,6 +1,7 @@
 ---
 title: Appliquer les modifications en mode arrêt avec modifier & continuer | Microsoft Docs
-ms.custom: seodec18
+Description: Consultez Comment utiliser modifier & Continuer pour modifier votre code Visual Basic en mode arrêt. Il existe plusieurs façons de passer en mode arrêt.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350298"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398686"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Comment : appliquer des modifications en mode arrêt à l’aide de la fonction Modifier & Continuer (Visual Basic)
 Vous pouvez utiliser Modifier &amp; Continuer pour modifier votre code en mode Arrêt, puis continuer sans arrêter et redémarrer l'exécution.
@@ -41,11 +42,11 @@ Pour connaître les limitations relatives à l’utilisation de modifier & conti
 
     - Définissez un point d’arrêt dans votre code, puis cliquez sur **Démarrer le débogage** dans le menu **Déboguer** et attendez que l’application parvienne au point d’arrêt.
 
-         - ou -
+         -ou-
 
     - Démarrez le débogage, puis sélectionnez **Interrompre tout** dans le menu **Déboguer**.
 
-         - ou -
+         -ou-
 
     - Quand une exception se produit, choisissez **activer la modification** dans l' **Assistant Exception**.
 

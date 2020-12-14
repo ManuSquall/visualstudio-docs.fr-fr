@@ -1,5 +1,7 @@
 ---
 title: Déboguer la source de .NET Framework | Microsoft Docs
+Description: Découvrez comment déboguer .NET Framework source. Vous devez le configurer pour et télécharger les symboles de débogage.
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f054564ff36c538b18525ec9d8adf9b6f3d060b9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852124"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398621"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Guide pratique pour déboguer une source .NET Framework
 
@@ -39,7 +41,7 @@ Pour déboguer .NET Framework source, vous devez :
 
 ### <a name="to-set-or-change-symbol-source-locations-and-loading-behavior"></a>Pour définir ou modifier les emplacements des sources de symboles et le comportement de chargement
 
-1. Sélectionnez la catégorie **symboles** sous **Outils** (ou **débogage**) > **options**de  >  **débogage**.
+1. Sélectionnez la catégorie **symboles** sous **Outils** (ou **débogage**) > **options** de  >  **débogage**.
 
 1. Dans la page **symboles** , sous **emplacements du fichier de symboles (. pdb)**, sélectionnez **serveurs de symboles Microsoft** pour accéder aux symboles à partir des serveurs de symboles publics Microsoft. Sélectionnez les boutons de la barre d’outils pour ajouter d’autres emplacements de symboles et modifier l’ordre de chargement.
 
@@ -53,7 +55,7 @@ Pour déboguer .NET Framework source, vous devez :
 
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Pour charger des symboles à partir des fenêtres modules ou pile des appels
 
-1. Pendant le débogage, ouvrez la fenêtre en sélectionnant **Déboguer**les  >  **Windows**  >  **modules** Windows (ou appuyez sur **Ctrl + Alt + U**) ou **Déboguer**la pile des  >  **Windows**  >  **appels** Windows (**Ctrl + Alt + C**).
+1. Pendant le débogage, ouvrez la fenêtre en sélectionnant **Déboguer** les  >    >  **modules** Windows (ou appuyez sur **Ctrl + Alt + U**) ou **Déboguer** la pile des  >    >  **appels** Windows (**Ctrl + Alt + C**).
 
 1. Cliquez avec le bouton droit sur un module pour lequel les symboles n’ont pas été chargés. Dans la fenêtre **modules** , l’état du chargement des symboles se trouve dans la colonne **État des symboles** . Dans la fenêtre **pile des appels** , l’État est dans la colonne État du **Frame** et le cadre est grisé.
 

@@ -1,6 +1,7 @@
 ---
 title: Déboguer les fonctions de l’API Windows | Microsoft Docs
-ms.custom: seodec18
+Description: Découvrez comment déboguer une fonction API Windows dont les symboles NT sont chargés. Dans le code 32 bits, vous utilisez la forme décorée du nom de la fonction pour définir le point d’arrêt.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 7ab50205d1ade2447b85ad7eee2ffb6aaf38363d
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599887"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398388"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Comment puis-je déboguer des fonctions API Windows ?
 Si vous voulez déboguer une fonction API Windows qui a chargé les symboles NT, vous devez effectuer les opérations suivantes.
@@ -51,5 +52,5 @@ Si vous voulez déboguer une fonction API Windows qui a chargé les symboles NT
     ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Débogage du code natif](../debugger/debugging-native-code.md)

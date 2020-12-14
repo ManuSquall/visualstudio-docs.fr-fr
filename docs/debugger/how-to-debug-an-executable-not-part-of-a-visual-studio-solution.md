@@ -1,7 +1,8 @@
 ---
 title: Déboguer une application qui ne fait pas partie d’une solution Visual Studio
 titleSuffix: ''
-ms.custom: ''
+Description: Découvrez comment déboguer une application qui ne fait pas partie d’une solution Visual Studio. Vous pourrez peut-être attacher le débogueur Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2020
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cb71acb9c1c332f269f77129fa2d11a9a874f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd4d5497a4c29502fe4d7e4825b1767991c79298
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350145"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398660"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Déboguer une application qui ne fait pas partie d’une solution Visual Studio (C++, C#, Visual Basic, F #)
 
@@ -48,7 +49,7 @@ Vous pouvez déboguer une application (fichier *. exe* ) qui ne fait pas partie 
 
 ### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>Pour créer un projet EXE pour une application existante
 
-1. Dans Visual Studio, sélectionnez **fichier**  >  **ouvrir**le  >  **projet**.
+1. Dans Visual Studio, sélectionnez **fichier**  >  **ouvrir** le  >  **projet**.
 
 1. Dans la boîte de dialogue **ouvrir un projet** , sélectionnez **tous les fichiers projet**, s’ils ne sont pas déjà sélectionnés, dans la liste déroulante en regard de **nom de fichier**.
 
@@ -60,7 +61,7 @@ Vous pouvez déboguer une application (fichier *. exe* ) qui ne fait pas partie 
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Pour importer une application dans une solution Visual Studio existante
 
-1. Avec une solution C++, C# ou Visual Basic ouverte dans Visual Studio, sélectionnez **fichier**  >  **Ajouter**un  >  **projet existant**.
+1. Avec une solution C++, C# ou Visual Basic ouverte dans Visual Studio, sélectionnez **fichier**  >  **Ajouter** un  >  **projet existant**.
 
 1. Dans la boîte de dialogue **ouvrir un projet** , sélectionnez **tous les fichiers projet**, s’ils ne sont pas déjà sélectionnés, dans la liste déroulante en regard de **nom de fichier**.
 

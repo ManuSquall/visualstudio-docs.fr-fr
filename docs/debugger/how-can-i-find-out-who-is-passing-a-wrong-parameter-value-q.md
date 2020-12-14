@@ -1,6 +1,7 @@
 ---
 title: Savoir qui transmet une valeur de paramètre incorrecte | Microsoft Docs
-ms.custom: seodec18
+Description: Vous pouvez déterminer quel code appelle votre fonction et en passant une valeur de paramètre incorrecte. Apprenez à utiliser un point d’arrêt conditionnel pour effectuer cette opération.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599874"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398309"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Comment puis-je savoir d'où provient une valeur de paramètre incorrecte ?
 ## <a name="problem-description"></a>Description du problème
@@ -52,6 +53,6 @@ ms.locfileid: "89599874"
 7. Utilisez la fenêtre Pile des appels pour rechercher la fonction d'appel et naviguer jusqu'à son code source. Pour plus d’informations, consultez [Comment : utiliser la fenêtre pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Points d'arrêt](/previous-versions/ktf38f66(v=vs.100))
 - [Débogage du code natif](../debugger/debugging-native-code.md)
