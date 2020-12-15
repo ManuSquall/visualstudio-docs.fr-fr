@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: Signaler un problème
       href: report-a-problem.md
+    - name: "Résolution des problèmes : Comment publier une nouvelle version d’une extension existante\_?"
+      href: migrate-extensions.md
     - name: "Résolution des problèmes : Visual Studio pour Mac prend-il en charge Team Foundation Version Control\_?"
       href: tf-version-control.md
     - name: "Résolution des problèmes : Pourquoi je ne vois pas tous les modèles\_?"
