@@ -1,5 +1,7 @@
 ---
 title: 'Comment : ouvrir des documents Visio par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour ouvrir par programme un document Visio à l’aide des méthodes Open ou OpenEx.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519988"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523842"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Comment : ouvrir des documents Visio par programmation
   Il existe deux méthodes pour ouvrir des documents Microsoft Office Visio existants : Open et OpenEx. La méthode OpenEx est identique à la méthode Open, à la différence qu’elle fournit des arguments dans lesquels l’appelant peut spécifier la manière dont le document s’ouvre.

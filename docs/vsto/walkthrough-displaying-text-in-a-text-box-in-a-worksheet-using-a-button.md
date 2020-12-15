@@ -1,5 +1,7 @@
 ---
 title: Afficher le texte dans la zone de texte de la feuille de calcul à l’aide du bouton
+description: Découvrez les principes de base de l’utilisation des boutons et des zones de texte dans les feuilles de calcul Microsoft Excel. Créez également des projets Excel à l’aide des outils de développement Office dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328717"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522641"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procédure pas à pas : affichage de texte dans une zone de texte d’une feuille de calcul à l’aide d’un bouton
   Cette procédure pas à pas montre les concepts de base de l’utilisation de boutons et de zones de texte sur Microsoft Office des feuilles de calcul Excel, et comment créer des projets Excel à l’aide des outils de développement Office dans Visual Studio. Pour afficher le résultat sous forme d’exemple terminé, consultez l’exemple contrôles Excel dans les [exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -92,7 +94,7 @@ ms.locfileid: "67328717"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que le message **Hello World !** apparaît dans la zone de texte lorsque vous cliquez sur le bouton.
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur

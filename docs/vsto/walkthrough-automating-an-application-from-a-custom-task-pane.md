@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : automatiser une application à partir d’un volet de tâches personnalisé'
+description: Créez un volet Office personnalisé qui automatise Microsoft PowerPoint en insérant des dates dans une diapositive quand l’utilisateur clique sur un contrôle MonthCalendar dans le volet Office personnalisé.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585078"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522795"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : automatiser une application à partir d’un volet de tâches personnalisé
   Cette procédure pas à pas montre comment créer un volet Office personnalisé qui automatise PowerPoint. Le volet Office personnalisé insère des dates dans une diapositive quand l’utilisateur clique sur un contrôle <xref:System.Windows.Forms.MonthCalendar> dans le volet Office personnalisé.

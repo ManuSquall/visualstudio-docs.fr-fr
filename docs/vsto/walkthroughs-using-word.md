@@ -1,5 +1,7 @@
 ---
 title: Procédures pas à pas utilisant Word
+description: Découvrez comment vous pouvez utiliser les personnalisations au niveau du document et les compléments VSTO pour automatiser Microsoft Word et personnaliser l’interface utilisateur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254991"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522580"
 ---
 # <a name="walkthroughs-using-word"></a>Procédures pas à pas utilisant Word
   Les procédures suivantes montrent comment utiliser les personnalisations au niveau du document et les compléments VSTO pour automatiser Microsoft Office Word et personnaliser l’interface utilisateur.

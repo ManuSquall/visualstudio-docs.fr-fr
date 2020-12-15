@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : importer une zone de formulaire conçue dans Outlook'
+description: Découvrez comment concevoir une zone de formulaire dans Microsoft Outlook, puis importer la zone de formulaire dans un projet de complément VSTO Outlook à l’aide de l’Assistant Nouvelle zone de formulaire.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584974"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522665"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procédure pas à pas : importer une zone de formulaire conçue dans Outlook
   Cette procédure pas à pas montre comment concevoir une zone de formulaire dans Microsoft Office Outlook, puis importer la zone de formulaire dans un projet de complément VSTO Outlook à l’aide de l’Assistant **Nouvelle zone de formulaire** . La conception de la zone de formulaire dans Outlook vous permet d’ajouter des contrôles Outlook natifs à la zone de formulaire liée aux données Outlook. Après avoir importé la zone de formulaire, vous pouvez gérer les événements de chaque contrôle.

@@ -1,5 +1,7 @@
 ---
 title: Résoudre les erreurs dans les solutions Office
+description: Découvrez comment vous pouvez résoudre les erreurs qui peuvent se produire lorsque vous développez des solutions Microsoft Office dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234690"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523037"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Résoudre les erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :
@@ -115,7 +117,7 @@ ms.locfileid: "87234690"
 
  Cette erreur signifie que vous tentez d'accéder à un événement portant le même nom qu'une autre propriété ou méthode de l'objet. Pour accéder à l’événement, vous devez effectuer un cast de l’objet vers son *interface d’événement*.
 
- Les types d'assembly PIA Office possédant des événements implémentent deux interfaces : une interface principale contenant toutes les propriétés et méthodes ,et une interface d'événement contenant les événements exposés par l'objet. Ces interfaces d’événements utilisent la Convention d’affectation de noms *ObjectName*Events*n*_Event, comme <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> et <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Si vous ne pouvez pas accéder à un événement que vous vous attendez à trouver sur un objet, effectuez un cast de cet objet vers son interface d'événement.
+ Les types d'assembly PIA Office possédant des événements implémentent deux interfaces : une interface principale contenant toutes les propriétés et méthodes ,et une interface d'événement contenant les événements exposés par l'objet. Ces interfaces d’événements utilisent la Convention d’affectation de noms *ObjectName* Events *n* _Event, comme <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> et <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Si vous ne pouvez pas accéder à un événement que vous vous attendez à trouver sur un objet, effectuez un cast de cet objet vers son interface d'événement.
 
  Par exemple, les objets <xref:Microsoft.Office.Interop.Excel.Application> possèdent un événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> et une propriété <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Pour gérer l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>, effectuez un cast de <xref:Microsoft.Office.Interop.Excel.Application> vers l'interface <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. L'exemple de code suivant montre comment procéder dans un projet au niveau du document pour Excel.
 
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Si vous créez un projet au niveau du document pour Excel ou Word dans un emplacement réseau UNC, vous devez ajouter l'emplacement du document à la liste des emplacements approuvés dans Excel ou Word. Sinon, la personnalisation n'est pas chargée quand vous essayez d'exécuter ou de déboguer le projet dans Visual Studio. Pour plus d’informations sur les emplacements approuvés, consultez accorder un niveau [de confiance à des documents](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Les threads ne sont pas arrêtés correctement après le débogage
- Les projets Office dans Visual Studio suivent une convention d'affectation de noms de threads qui permet au débogueur de fermer le programme correctement. Si vous créez des threads dans votre solution, vous devez nommer chaque thread avec le préfixe VSTA_ afin de garantir que ces threads sont gérés correctement quand vous arrêtez le débogage. Par exemple, vous pouvez définir la `Name` propriété d’un thread qui attend la **VSTA_NetworkListener**d’un événement réseau.
+ Les projets Office dans Visual Studio suivent une convention d'affectation de noms de threads qui permet au débogueur de fermer le programme correctement. Si vous créez des threads dans votre solution, vous devez nommer chaque thread avec le préfixe VSTA_ afin de garantir que ces threads sont gérés correctement quand vous arrêtez le débogage. Par exemple, vous pouvez définir la `Name` propriété d’un thread qui attend la **VSTA_NetworkListener** d’un événement réseau.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Impossible d’exécuter ou de déboguer une solution Office sur l’ordinateur de développement
  Si vous ne pouvez pas exécuter ni développer un projet Office sur votre ordinateur de développement, le message d'erreur suivant peut s'afficher :

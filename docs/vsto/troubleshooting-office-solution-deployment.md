@@ -1,5 +1,7 @@
 ---
 title: Résoudre les problèmes de déploiement de solutions Office
+description: Découvrez comment résoudre les problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806731"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522973"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Résoudre les problèmes de déploiement de solutions Office
   Cette rubrique contient des informations sur la résolution des problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.

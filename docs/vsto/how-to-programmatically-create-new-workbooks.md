@@ -1,5 +1,7 @@
 ---
 title: 'Comment : créer des classeurs par programmation'
+description: Découvrez comment vous pouvez créer un classeur Microsoft Excel par programmation à l’aide de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23f4b089d580d482193d278f22e4990d343097
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: daaaedc60988d7f523865d3979207dd1fe43e029
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545975"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523142"
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>Comment : créer des classeurs par programmation
   Quand vous créez un classeur par programmation, il correspond à un objet <xref:Microsoft.Office.Interop.Excel.Workbook> natif et non pas à un élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook>.

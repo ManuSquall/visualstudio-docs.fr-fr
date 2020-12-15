@@ -1,5 +1,7 @@
 ---
 title: 'Comment : compter des caractères dans les documents par programmation'
+description: Découvrez comment vous pouvez déterminer le nombre de caractères dans un document à l’aide de la propriété Count de la collection Characters.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81ee7c3d798ae2c38ed80b261a6d87190daa59a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42e80cf1a466867fbb7394181efe28bcfe3631e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546066"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523147"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Comment : compter des caractères dans les documents par programmation
   Le premier caractère dans un document est à la position de caractère 0, qui représente le point d’insertion. La position du dernier caractère est égale au nombre total de caractères dans le document. Vous pouvez déterminer le nombre de caractères dans un document à l’aide de la propriété <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> de la collection <xref:Microsoft.Office.Interop.Word.Characters> .

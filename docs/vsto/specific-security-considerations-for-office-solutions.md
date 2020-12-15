@@ -1,5 +1,7 @@
 ---
 title: Considérations de sécurité spécifiques pour les solutions Office
+description: Découvrez comment les fonctionnalités de sécurité fournies par l’infrastructure Microsoft .NET et Microsoft Office peuvent vous aider à protéger vos solutions Office contre les menaces de sécurité.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571b604b87fb7fac4e78c83a791c265d910fae94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985582"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524293"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considérations de sécurité spécifiques pour les solutions Office
   Les fonctionnalités de sécurité fournies par Microsoft .NET Framework et Microsoft Office peuvent renforcer la protection contre diverses menaces possibles dans les solutions Office. Cette rubrique décrit certaines de ces menaces et fournit des recommandations pour vous protéger contre elles. Elle inclut également des informations sur l’impact des paramètres de sécurité Microsoft Office sur les solutions Office.

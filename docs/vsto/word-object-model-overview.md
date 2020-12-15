@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du modèle objet Word
+description: Le modèle objet Word se compose de classes et d’interfaces fournies dans l’assembly PIA (Primary Interop Assembly) pour Word et définies dans l’espace de noms Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985393"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523491"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle objet Word
   Quand vous développez des solutions Word dans Visual Studio, vous interagissez avec le modèle objet Word. Ce modèle objet se compose de classes et d'interfaces fournies dans l'assembly PIA (Primary Interop Assembly) pour Word et définies dans l'espace de noms <xref:Microsoft.Office.Interop.Word> .
@@ -129,7 +131,7 @@ ms.locfileid: "72985393"
  Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Word. Par exemple, l’objet document dans la documentation de référence du modèle objet VBA correspond à l' <xref:Microsoft.Office.Interop.Word.Document> objet dans l’assembly PIA Word. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans cette documentation de référence en code Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet Word créé à l'aide de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
 - [Utiliser des documents](../vsto/working-with-documents.md)
 - [Utiliser du texte dans des documents](../vsto/working-with-text-in-documents.md)

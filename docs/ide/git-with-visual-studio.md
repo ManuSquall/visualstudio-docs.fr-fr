@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878307"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524084"
 ---
 # <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
@@ -183,13 +183,13 @@ Vous pouvez également utiliser les basculements pour afficher/masquer les diff�
 
 ## <a name="personalize-your-git-settings"></a>Personnaliser vos paramètres git
 
-Pour personnaliser et personnaliser vos paramètres git au niveau du référentiel, ainsi qu’au niveau global, accédez aux **Git**  >  **paramètres** git dans la barre de menus ou aux **Outils**  >  **options**  >  **contrôle de code source** dans la barre de menus. Ensuite, choisissez les options souhaitées.
+Pour personnaliser et personnaliser vos paramètres git au niveau du référentiel, ainsi qu’au niveau global, accédez aux   >  **paramètres** git dans la barre de menus ou aux **Outils**  >  **options**  >  **contrôle de code source** dans la barre de menus. Ensuite, choisissez les options souhaitées.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Boîte de dialogue Options dans laquelle vous pouvez choisir des paramètres de personnalisation et de personnalisation dans l’IDE de Visual Studio ":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Comment utiliser l’expérience de Team Explorer héritée dans Visual Studio
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Comment utiliser l’expérience d’Team Explorer complète dans Visual Studio
 
-La nouvelle expérience git est le système de contrôle de version par défaut de Visual Studio 2019 à partir de la [version 16,8](/visualstudio/releases/2019/release-notes/) . Toutefois, si vous souhaitez la désactiver, vous pouvez. Accédez à **Outils**  >  **options**  >  **environnement**  >  **Aperçu fonctionnalités** , puis activez/désactivez la case à cocher **nouvelle expérience utilisateur git** , ce qui vous ramène à l’expérience de Team Explorer héritée.
+La nouvelle expérience git est le système de contrôle de version par défaut de Visual Studio 2019 à partir de la [version 16,8](/visualstudio/releases/2019/release-notes/) . Toutefois, si vous souhaitez la désactiver, vous pouvez. Accédez à **Outils**  >  **options**  >  **environnement** en préversion  >   , puis activez la case à cocher **nouvelle expérience utilisateur git** pour revenir à Team Explorer pour git.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="La section fonctionnalités en version préliminaire de la boîte de dialogue Options dans Visual Studio ":::
 

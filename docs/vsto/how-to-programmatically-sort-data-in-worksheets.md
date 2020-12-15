@@ -1,5 +1,7 @@
 ---
 title: 'Comment : trier des données dans des feuilles de calcul par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour trier par programmation les données contenues dans les plages et les listes de feuille de calcul au moment de l’exécution.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09fed7f1caff68a485d9d0d98789555ec30889c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546976"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523689"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Comment : trier des données dans des feuilles de calcul par programmation
   Vous pouvez trier les données contenues dans les listes et les plages de feuille de calcul au moment de l'exécution. Le code suivant trie une plage à colonnes multiples nommée `Fruits` sur les données de la première colonne, puis sur les données de la deuxième colonne.

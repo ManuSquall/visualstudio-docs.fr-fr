@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : créer des menus contextuels pour les signets'
+description: Découvrez comment créer des menus contextuels pour les contrôles Bookmark dans une personnalisation au niveau du document pour Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146916"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524223"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procédure pas à pas : créer des menus contextuels pour les signets
   Cette procédure pas à pas montre comment créer des menus contextuels pour les <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans une personnalisation au niveau du document pour Word. Quand un utilisateur clique avec le bouton droit sur le texte d’un signet, un menu contextuel s’affiche et donne à l’utilisateur des options pour mettre en forme le texte.
@@ -92,7 +94,7 @@ ms.locfileid: "91146916"
 
 2. Dans **Explorateur de solutions**, sélectionnez **ThisDocument.cs** ou **ThisDocument. vb**.
 
-3. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+3. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
      Le fichier de classe **ThisDocument** s’ouvre dans l’éditeur de code.
 
@@ -103,7 +105,7 @@ ms.locfileid: "91146916"
 
 5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML de ruban se nomme Ribbon1.xml.
 
-6. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+6. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
      Le fichier XML de ruban s’ouvre dans l’éditeur de code.
 
@@ -134,7 +136,7 @@ ms.locfileid: "91146916"
 
 10. Dans **Explorateur de solutions**, sélectionnez le fichier de code du ruban. Par défaut, le fichier de code du ruban est nommé **Ribbon1.cs** ou **Ribbon1. vb**.
 
-11. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+11. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
      Le fichier de code du ruban s'ouvre dans l'éditeur de code.
 
@@ -154,7 +156,7 @@ ms.locfileid: "91146916"
 
 2. **Explorateur de solutions**, sélectionnez **ThisDocument.cs** ou **ThisDocument. vb**.
 
-3. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+3. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
      Le fichier de classe **ThisDocument** s’ouvre dans l’éditeur de code.
 

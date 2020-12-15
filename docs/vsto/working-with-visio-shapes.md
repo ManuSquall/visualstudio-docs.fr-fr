@@ -1,5 +1,7 @@
 ---
 title: Utiliser des formes Visio
+description: En savoir plus sur les procédures pas à pas et des exemples de code pour l’utilisation du modèle objet de Microsoft Visio pour travailler avec des formes dans des projets Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09109d59522fcd6ace69abcd3335e2dec2edd91b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928e4888c52e5b75a721bb7a1837d8db1ce267ea
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815061"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523255"
 ---
 # <a name="work-with-visio-shapes"></a>Utiliser des formes Visio
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l’utilisation du modèle objet de Microsoft Office Visio pour travailler avec des formes dans des projets Office.

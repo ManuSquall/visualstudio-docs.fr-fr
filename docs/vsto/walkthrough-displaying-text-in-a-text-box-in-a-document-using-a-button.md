@@ -1,5 +1,7 @@
 ---
 title: Afficher le texte dans la zone de texte dans le document à l’aide du bouton
+description: Découvrez comment vous pouvez utiliser des boutons et des zones de texte dans une personnalisation au niveau du document pour Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328750"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522750"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procédure pas à pas : affichage de texte dans une zone de texte d’un document à l’aide d’un bouton
   Cette procédure pas à pas montre comment utiliser les boutons et les zones de texte dans une personnalisation au niveau du document pour Microsoft Office Word.
@@ -91,7 +93,7 @@ ms.locfileid: "67328750"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre document pour vous assurer que le message **Hello World !** apparaît dans la zone de texte lorsque vous cliquez sur le bouton.
 
 ### <a name="to-test-your-document"></a>Pour tester votre document

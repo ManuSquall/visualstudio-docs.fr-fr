@@ -1,5 +1,7 @@
 ---
 title: Rechercher et remplacer du texte dans des documents par programmation
+description: Découvrez comment vous pouvez utiliser Visual Studio pour rechercher et remplacer du texte dans un document Microsoft Word par programmation.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547041"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524594"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Comment : Rechercher et remplacer du texte dans des documents par programmation
   L'objet <xref:Microsoft.Office.Interop.Word.Find> est membre des objets <xref:Microsoft.Office.Interop.Word.Selection> et <xref:Microsoft.Office.Interop.Word.Range>, que vous pouvez utiliser indifféremment pour rechercher du texte dans des documents Microsoft Office Word. La commande Replace est une extension de la commande Find.

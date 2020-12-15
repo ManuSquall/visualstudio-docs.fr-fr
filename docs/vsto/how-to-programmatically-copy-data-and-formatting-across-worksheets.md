@@ -1,5 +1,7 @@
 ---
 title: Copier les données et la mise en forme dans les feuilles de calcul par programmation
+description: Découvrez comment vous pouvez copier des données à partir d’une plage d’une feuille vers toutes les autres feuilles d’un classeur à l’aide de la méthode FillAcrossSheets.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e72d7c94068e5fe9ca0bf533d9d8fe4b7f8e8e54
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585260"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523194"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Comment : copier des données et la mise en forme par programmation dans des feuilles de calcul
   Vous pouvez copier des données à partir d’une plage d’une feuille vers toutes les autres feuilles d’un classeur à l’aide de la <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> méthode. Spécifiez une plage et indiquez si vous souhaitez copier des données, une mise en forme ou les deux.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  [!code-csharp[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#44)]
  [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]
 

@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2889729ae539d640bb9d43c64956edc04b74f26
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7a24f56d94d470ca5ff04a99f524af3c76df3a15
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488191"
+ms.locfileid: "97524062"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -62,7 +62,7 @@ Visual Studio utilise deux types de fichiers (*. sln* et *. suo*) pour stocker l
 
 ### <a name="solution-folder"></a>Dossier de solution
 
-Dans ce contexte, un « dossier de solution » est un dossier virtuel qui se trouve uniquement dans **Explorateur de solutions**, où vous pouvez l’utiliser pour regrouper des projets dans une solution. Si vous souhaitez localiser un fichier solution sur un ordinateur, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**. Pour plus d’informations, consultez [boîte de dialogue Options : projets et Solutions > emplacements](./reference/projects-solutions-locations-options.md)
+Dans ce contexte, un « dossier de solution » est un dossier virtuel qui se trouve uniquement dans **Explorateur de solutions**, où vous pouvez l’utiliser pour regrouper des projets dans une solution. Si vous souhaitez localiser un fichier solution sur un ordinateur, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**. Pour plus d’informations, consultez [boîte de dialogue Options : projets et Solutions > emplacements](./reference/projects-solutions-locations-options.md).
 
 ## <a name="create-new-projects"></a>Créer de nouveaux projets
 

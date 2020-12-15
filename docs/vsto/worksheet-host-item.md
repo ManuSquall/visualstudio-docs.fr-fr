@@ -1,5 +1,7 @@
 ---
 title: Élément hôte de feuille de calcul
+description: Découvrez que l’élément hôte de feuille de calcul est un type qui étend le type de feuille de calcul à partir de l’assembly PIA (Primary Interop Assembly) pour Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b25b921d29bee832ef37b943fd57edc38b7518db
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254870"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523223"
 ---
 # <a name="worksheet-host-item"></a>Élément hôte de feuille de calcul
   L’élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> est un type qui étend le type <xref:Microsoft.Office.Interop.Excel.Worksheet> à partir de l’assembly PIA (Primary Interop Assembly) pour Excel. L’élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> fournit les mêmes propriétés, méthodes et événements qu’un objet <xref:Microsoft.Office.Interop.Excel.Worksheet> , mais il expose également des événements supplémentaires et agit comme conteneur pour les contrôles hôtes et les contrôles Windows Forms.

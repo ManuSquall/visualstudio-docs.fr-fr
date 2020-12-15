@@ -1,5 +1,7 @@
 ---
 title: Améliorer les performances d’un complément VSTO
+description: Découvrez comment optimiser les compléments VSTO que vous créez pour les applications Office afin qu’ils démarrent rapidement, arrêtent, ouvrent des éléments et effectuent d’autres tâches.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298512"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524444"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Améliorer les performances d’un complément VSTO
   Vous pouvez offrir aux utilisateurs une meilleure expérience. En effet, en optimisant les compléments VSTO que vous créez pour les applications Office, vous pouvez leur permettre d’être plus rapides pour démarrer, arrêter, ouvrir des éléments et exécuter d’autres tâches. Si vous créez un complément VSTO pour Outlook, vous pouvez également réduire les risques de désactivation du complément VSTO en raison de performances insuffisantes. Pour améliorer les performances du complément VSTO, vous pouvez implémenter les stratégies suivantes :
@@ -43,7 +45,7 @@ ms.locfileid: "92298512"
 
 1. Dans l' **Explorateur de solutions**, choisissez le nœud du projet.
 
-2. Dans la barre de menus, choisissez **Afficher**les  >  **pages de propriétés**.
+2. Dans la barre de menus, choisissez **Afficher** les  >  **pages de propriétés**.
 
 3. Sous l'onglet **Publier** , choisissez le bouton **Options** .
 
@@ -51,13 +53,13 @@ ms.locfileid: "92298512"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Pour configurer une solution Windows Installer visant à charger les compléments VSTO à la demande
 
-1. Dans le registre, définissez l' `LoadBehavior` entrée de la clé ** _racine_\Software\Microsoft\Office \\ _applicationName_\Addins \\ _Add-in ID_ ** sur **0x10**.
+1. Dans le registre, définissez l' `LoadBehavior` entrée de la clé **_racine_\Software\Microsoft\Office \\ _applicationName_\Addins \\ _Add-in ID_** sur **0x10**.
 
      Pour plus d’informations, consultez [entrées du Registre pour les compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Pour configurer une solution visant à charger les compléments VSTO à la demande pendant le débogage de la solution
 
-1. Créez un script qui définit l' `LoadBehavior` entrée de la clé ** _racine_de l' \\ ID du \\ _complément_ \Software\Microsoft\Office_applicationName_\Addins** sur **0x10**.
+1. Créez un script qui définit l' `LoadBehavior` entrée de la clé **_racine_ de l' \\ ID du \\ _complément_ \Software\Microsoft\Office _applicationName_\Addins** sur **0x10**.
 
      Le code ci-dessous est un exemple de ce script.
 

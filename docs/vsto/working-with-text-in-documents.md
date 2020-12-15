@@ -1,5 +1,7 @@
 ---
 title: Utiliser du texte dans des documents
+description: En savoir plus sur les procédures pas à pas et des exemples de code pour l’utilisation du modèle objet de Microsoft Word pour travailler avec du texte dans les projets Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815085"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523381"
 ---
 # <a name="work-with-text-in-documents"></a>Utiliser du texte dans des documents
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l'utilisation du modèle objet de Microsoft Office Word avec du texte dans des projets Office.

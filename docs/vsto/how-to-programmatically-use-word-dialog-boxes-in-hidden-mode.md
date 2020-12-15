@@ -1,5 +1,7 @@
 ---
 title: 'Comment : utiliser des boîtes de dialogue Word en mode masqué par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour utiliser les boîtes de dialogue Microsoft Word en mode masqué par programmation.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583760"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523170"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Comment : utiliser des boîtes de dialogue Word en mode masqué par programmation
   Vous pouvez effectuer des opérations complexes avec un appel de méthode en appelant les boîtes de dialogue intégrées dans Microsoft Office mot sans les afficher à l’utilisateur. Pour ce faire, vous pouvez utiliser la <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> méthode de l' <xref:Microsoft.Office.Interop.Word.Dialog> objet sans appeler la <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> méthode.

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a257299d22b5ba5050ee9027e6bbb97bbaf3a75
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 19d6a95ceeab9af2b6a6f874ae4f889dd2180ba6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049086"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524028"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 
@@ -100,7 +100,7 @@ Reference: 4.0
 
  Le traitement par lot des cibles est rarement utilisé dans les scénarios de génération réels. Le traitement par lot des tâches, en revanche, est plus courant. Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).
 
-## <a name="incremental-builds"></a>builds incrémentiels
+## <a name="incremental-builds"></a>Builds incrémentielles
 
  Les builds incrémentielles sont des builds optimisées qui permettent de ne pas exécuter les cibles dont les fichiers de sortie sont à jour par rapport à leurs fichiers d’entrée correspondants. Un élément cible peut avoir à la fois un attribut `Inputs`, qui indique les éléments que la cible attend comme entrée, et un attribut `Outputs` qui indique les éléments qu’il produit comme sortie.
 
@@ -419,7 +419,7 @@ $(TargetFileName) -          The file name of the build target.
 ===================================================
 GenerateBindingRedirectsUpdateAppConfig
 Updates the project to use the generated app.config content.  This needs to run regardless of 
-inputs/outputs so it is seperate from GenerateBindingRedirects.
+inputs/outputs so it is separate from GenerateBindingRedirects.
 ===================================================
 <Target Name="GenerateBindingRedirectsUpdateAppConfig"
         AfterTargets="GenerateBindingRedirects"

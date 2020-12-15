@@ -1,5 +1,7 @@
 ---
 title: Prise en charge des threads dans Office
+description: Le Threading est pris en charge dans le modèle objet Microsoft Office. Le modèle objet Office n’est pas thread-safe, mais peut fonctionner avec plusieurs threads dans une solution Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978765"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524196"
 ---
 # <a name="threading-support-in-office"></a>Prise en charge des threads dans Office
   Cet article fournit des informations sur la prise en charge des threads dans le modèle objet Microsoft Office. Le modèle objet Office n’est pas thread-safe, mais il est possible d’utiliser plusieurs threads dans une solution Office. Les applications Office sont des serveurs COM (Component Object Model). COM permet aux clients d’appeler des serveurs COM sur des threads arbitraires. Pour les serveurs COM qui ne sont pas thread-safe, COM fournit un mécanisme pour sérialiser les appels simultanés afin qu’un seul thread logique s’exécute sur le serveur à tout moment. Ce mécanisme est connu sous le nom de modèle STA (Single-Threaded Apartment). Étant donné que les appels sont sérialisés, les appelants peuvent être bloqués pendant des périodes de temps, alors que le serveur est occupé ou gère d’autres appels sur un thread d’arrière-plan.
@@ -36,7 +38,7 @@ ms.locfileid: "62978765"
 
 - Accès concurrentiel
 
-- Synchronisation
+- Synchronization
 
 - Marshaling
 

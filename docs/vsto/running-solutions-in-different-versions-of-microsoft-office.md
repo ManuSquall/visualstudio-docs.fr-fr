@@ -1,5 +1,7 @@
 ---
 title: Exécuter des solutions dans différentes versions de Microsoft Office
+description: Découvrez comment vous pouvez exécuter des versions de Microsoft Office des solutions créées à l’aide de Visual Studio 2010 et versions ultérieures.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59fce25bd3e167275eb8b19fac828f202c463dda
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4d70e61e318f0f6afd0a58ed35f912b6a5f2cda8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583903"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523536"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Exécuter des solutions dans différentes versions de Microsoft Office
 

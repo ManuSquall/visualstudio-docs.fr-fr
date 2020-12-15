@@ -1,5 +1,7 @@
 ---
 title: Résoudre les problèmes des solutions Office
+description: Découvrez des conseils pour résoudre les problèmes courants que vous pouvez rencontrer lors de la création de solutions à l’aide des outils de développement Office dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ee25ea397af3805ac88b51d12a862bffdb20a00
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234716"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522828"
 ---
 # <a name="troubleshoot-office-solutions"></a>Résoudre les problèmes des solutions Office
   Cette section contient des conseils pour la résolution des problèmes courants que vous pouvez rencontrer lors de la création de solutions à l’aide des outils de développement Office dans Visual Studio.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Résoudre les erreurs dans les solutions Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  Décrit les problèmes courants qui peuvent survenir pendant que vous créez, exécutez et testez vos solutions Office dans Visual Studio.

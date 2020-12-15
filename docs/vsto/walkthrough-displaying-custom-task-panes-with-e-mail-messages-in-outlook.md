@@ -1,5 +1,7 @@
 ---
 title: Afficher des volets de tâches personnalisés avec des messages électroniques dans Outlook
+description: Découvrez comment afficher une instance unique d’un volet de tâches personnalisé avec chaque message électronique dans Microsoft Outlook créé ou ouvert.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584280"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522715"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procédure pas à pas : affichage de volets de tâches personnalisés avec des messages électroniques dans Outlook
   Cette procédure pas à pas montre comment afficher une instance unique d’un volet de tâches personnalisé avec chaque message électronique créé ou ouvert. Les utilisateurs peuvent afficher ou masquer le volet des tâches personnalisé à l’aide d’un bouton situé sur le ruban de chaque message électronique.

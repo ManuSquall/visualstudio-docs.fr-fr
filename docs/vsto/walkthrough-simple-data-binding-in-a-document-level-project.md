@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : liaison de données simple dans un projet au niveau du document'
+description: Découvrez les principes de base de la liaison de données dans un projet au niveau du document et qu’un champ de données unique dans une base de données SQL Server est lié à une plage nommée dans Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584922"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524100"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données dans un projet au niveau du document. Un champ de données unique dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler tous les enregistrements de la table.
@@ -64,7 +66,7 @@ ms.locfileid: "91584922"
 
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
 2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -103,7 +105,7 @@ ms.locfileid: "91584922"
 
 6. Cliquez sur **NamedRange** dans la liste déroulante, puis faites glisser la colonne **CustomerID** vers la cellule **B1**.
 
-7. Un autre <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `customerIDNamedRange` est créé dans la cellule **B1**et lié au <xref:System.Windows.Forms.BindingSource> .
+7. Un autre <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `customerIDNamedRange` est créé dans la cellule **B1** et lié au <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-four-buttons"></a>Pour ajouter quatre boutons
 

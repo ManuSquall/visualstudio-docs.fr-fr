@@ -1,5 +1,7 @@
 ---
 title: Limitations des contrôles de Windows Forms sur les documents Office
+description: En savoir plus sur les limitations des méthodes et des propriétés de contrôle de Windows Forms sur les documents Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583734"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524447"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations des contrôles de Windows Forms sur les documents Office
 
@@ -71,7 +73,7 @@ Vous ne pouvez pas non plus définir la <xref:System.Windows.Forms.Control.Left>
 
 Les contrôles Windows Forms ont généralement le même comportement sur un document Office que sur un formulaire Windows, mais il existe quelques différences. Le tableau suivant décrit les différences qui existent pour les contrôles de Windows Forms sur les documents Office.
 
-|Fonctionnalités|Différence|
+|Fonctionnalité|Différence|
 |-------------------|----------------|
 |Ordre de tabulation du contrôle|Vous ne pouvez pas parcourir les contrôles placés dans une feuille de calcul Excel ou un document Word.|
 |Groupe de contrôles|Vous ne pouvez pas utiliser un <xref:System.Windows.Forms.GroupBox> contrôle pour contenir d’autres contrôles sur un document Office. Lorsque vous ajoutez plusieurs cases d’option directement au document, les cases d’option ne s’excluent pas mutuellement. Vous pouvez écrire du code pour que les cases d’option s’excluent mutuellement ; Toutefois, l’approche recommandée consiste à ajouter les cases d’option à un contrôle utilisateur, puis à ajouter le contrôle utilisateur au document. Pour plus d’informations, consultez l’exemple contrôles Word ou contrôles Excel dans [exemples de développement Office et procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).|

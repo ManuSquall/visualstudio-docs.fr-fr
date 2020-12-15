@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : créer votre premier complément VSTO pour Outlook'
+description: Créez un complément de niveau application pour Microsoft Outlook. Cette fonctionnalité est disponible pour l’application elle-même, quel que soit l’élément Outlook ouvert.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547976"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524225"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Procédure pas à pas : créer votre premier complément VSTO pour Outlook
   Cette procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Outlook. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application elle-même, quel que soit l'élément Outlook ouvert. Pour plus d’informations, consultez [vue d’ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

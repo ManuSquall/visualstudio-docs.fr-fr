@@ -1,5 +1,7 @@
 ---
 title: Procédures pas à pas relatives à la sécurité et au déploiement
+description: Découvrez comment vous pouvez définir une stratégie de sécurité pour permettre à votre solution de s’exécuter et comment vous pouvez déployer votre solution Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810939"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524375"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Procédures pas à pas relatives à la sécurité et au déploiement
   Les rubriques suivantes montrent comment vous pouvez définir une stratégie de sécurité pour autoriser l’exécution de votre solution et comment déployer votre solution Office.

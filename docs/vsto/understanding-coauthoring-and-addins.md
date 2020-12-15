@@ -1,5 +1,7 @@
 ---
 title: Présentation de la co-création et des compléments
+description: En savoir plus sur la co-création et sur la façon dont il s’agit d’une fonctionnalité d’Excel pour Windows Desktop qui vous permet de modifier un classeur hébergé dans le Cloud simultanément avec d’autres utilisateurs.
+ms.custom: SEO-VS-2020
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c0d4c513da403b02454055dadf6d0fd70eef81c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978183"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522838"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Présentation de la co-création et des compléments
 
@@ -26,4 +28,4 @@ La co-création est une fonctionnalité d’Excel pour Windows Desktop qui vous 
 Remarque : la co-création pour Windows Desktop Excel a été introduite dans 2017 et est actuellement disponible pour les abonnés à Office 365. Les utilisateurs qui ont acheté une licence perpétuelle à Office 2016 ou version antérieure n’ont pas actuellement accès à la fonctionnalité de cocréation. (Excel Online, Excel pour Android, Excel pour iOS et Excel Mobile dans le Windows Store prennent également en charge la co-création).
 
 ## <a name="see-also"></a>Voir aussi
-- [solutions Excel](./excel-solutions.md)
+- [Solutions Excel](./excel-solutions.md)

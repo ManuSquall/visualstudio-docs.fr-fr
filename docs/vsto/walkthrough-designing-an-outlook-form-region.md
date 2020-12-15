@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : conception d’une zone de formulaire Outlook'
+description: Découvrez comment vous pouvez concevoir une zone de formulaire Microsoft Outlook personnalisée qui s’affiche sous la forme d’une nouvelle page dans la fenêtre Inspecteur d’un élément de contact.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985471"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524206"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procédure pas à pas : conception d’une zone de formulaire Outlook
   Les zones de formulaire personnalisées étendent les formulaires Microsoft Office Outlook standard et personnalisés. Dans cette procédure pas à pas, vous allez concevoir une zone de formulaire personnalisée qui s'affiche comme une nouvelle page dans la fenêtre Inspecteur d'un élément de contact. Cette zone de formulaire affiche une carte de toutes les adresses répertoriées pour le contact, en envoyant les informations d’adresse au site web Windows Live Local Search. Pour plus d’informations sur les zones de formulaire, consultez [créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).
@@ -165,7 +167,7 @@ ms.locfileid: "72985471"
 
 6. Dans le groupe **Afficher** du ruban de l’élément, cliquez sur **mapper** pour ouvrir la zone de formulaire carte.
 
-     La zone de formulaire Carte apparaît et affiche le site web Local Search. Les adresses **professionnelles**, **familiales**et **autres** s’affichent dans le panneau de travail. Dans la zone temporaire, sélectionnez une adresse que vous souhaitez cartographier.
+     La zone de formulaire Carte apparaît et affiche le site web Local Search. Les adresses **professionnelles**, **familiales** et **autres** s’affichent dans le panneau de travail. Dans la zone temporaire, sélectionnez une adresse que vous souhaitez cartographier.
 
 ## <a name="next-steps"></a>Étapes suivantes
  Pour plus d'informations sur la personnalisation de l'interface utilisateur d'une application Outlook, consultez les rubriques suivantes :

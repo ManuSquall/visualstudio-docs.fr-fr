@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : insertion de texte dans un document à partir d’un volet Actions'
+description: Créez un volet actions dans un document Microsoft Word. Découvrez que le volet Actions contient deux contrôles qui collectent les entrées, puis envoient le texte au document.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584961"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524164"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : insertion de texte dans un document à partir d’un volet Actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Word Microsoft Office. Le volet Actions contient deux contrôles qui collectent l’entrée, puis envoient le texte au document.
@@ -83,7 +85,7 @@ ms.locfileid: "91584961"
 
 3. Dans la fenêtre **Propriétés** , remplacez la propriété **Name** de **bookmark1** par **ShowName**.
 
-4. Sélectionnez l' **adresse**du mot, sans sélectionner la marque de paragraphe.
+4. Sélectionnez l' **adresse** du mot, sans sélectionner la marque de paragraphe.
 
 5. Sous l’onglet **Insérer** du ruban, dans le groupe **liens** , cliquez sur **signet**.
 
