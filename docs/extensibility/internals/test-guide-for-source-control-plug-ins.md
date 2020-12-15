@@ -1,5 +1,7 @@
 ---
 title: Guide de test pour les plug-ins de contrôle de code source | Microsoft Docs
+description: En savoir plus sur le test de votre plug-in de contrôle de code source avec Visual Studio. Cette vue d’ensemble comprend des zones de test courantes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905154"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487723"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
 Cette section fournit des conseils sur le test de votre plug-in de contrôle de code source avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Une vue d’ensemble complète des zones de test les plus courantes, ainsi que certaines des zones les plus compliquées qui peuvent être problématiques sont fournies. Cette vue d’ensemble n’est pas censée être une liste exhaustive des cas de test.
@@ -51,7 +53,7 @@ Cette section fournit des conseils sur le test de votre plug-in de contrôle de 
 
 ## <a name="test-areas-covered-in-this-section"></a>Zones de test couvertes dans cette section
 
-- [Zone de test 1 : ajouter à/ouvrir à partir du contrôle de code source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Zone de test 1 : Ajouter à/Ouvrir à partir du contrôle de code source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
   - Cas 1a : ajouter la solution au contrôle de code source
 
@@ -61,7 +63,7 @@ Cette section fournit des conseils sur le test de votre plug-in de contrôle de 
 
 - [Zone de test 2 : Obtenir à partir du contrôle de code source](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Zone de test 3 : extraire/annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Zone de test 3 : Extraire/Annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
   - Cas 3 : extraire/annuler l’extraction
 

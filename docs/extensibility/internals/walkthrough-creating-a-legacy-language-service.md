@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’un service de langage hérité | Microsoft Docs'
+description: Découvrez comment utiliser les classes de langage de Framework de package managé pour implémenter un service de langage en Visual C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905986"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487931"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procédure pas à pas : création d’un service de langage hérité
 L’utilisation des classes de langage de Managed package Framework (MPF) pour implémenter un service de langage dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] est simple. Vous avez besoin d’un VSPackage pour héberger le service de langage, le service de langage lui-même et un analyseur pour votre langue.

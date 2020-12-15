@@ -1,5 +1,7 @@
 ---
 title: Dans l’éditeur
+description: En savoir plus sur les sous-systèmes et les fonctionnalités de l’éditeur. Vous pouvez étendre les fonctionnalités de l’éditeur Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710327"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487528"
 ---
 # <a name="inside-the-editor"></a>Dans l’éditeur
 
@@ -266,7 +268,7 @@ Les ornements contextuels sont des graphiques qui s’affichent dans une petite 
 
 La projection est une technique permettant de construire un type différent de mémoire tampon de texte qui ne stocke pas réellement de texte, mais combine le texte d’autres mémoires tampons de texte. Par exemple, une mémoire tampon de projection peut être utilisée pour concaténer le texte de deux autres mémoires tampons et présenter le résultat comme s’il s’agissait d’une seule mémoire tampon, ou pour masquer des parties du texte dans une mémoire tampon. Une mémoire tampon de projection peut agir comme une mémoire tampon source pour une autre mémoire tampon de projection. Un ensemble de mémoires tampons liées par projection peut être construit pour réorganiser le texte de différentes façons. (Un tel ensemble est également appelé graphique de *mémoire tampon*.) La fonctionnalité de mode plan de texte de Visual Studio est implémentée à l’aide d’une mémoire tampon de projection pour masquer le texte réduit, et l’éditeur Visual Studio pour les pages ASP.NET utilise la projection pour prendre en charge des langages incorporés tels que Visual Basic et C#.
 
-Un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> est créé à l’aide de <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . Une mémoire tampon de projection est représentée par une séquence ordonnée d' <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objets qui sont appelés *étendues de source*. Le contenu de ces étendues est présenté sous la forme d’une séquence de caractères. Les mémoires tampons de texte à partir desquelles les étendues sources sont dessinées sont des *mémoires tampons sources*nommées. Les clients d’une mémoire tampon de projection n’ont pas besoin de savoir qu’ils diffèrent d’une mémoire tampon de texte ordinaire.
+Un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> est créé à l’aide de <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . Une mémoire tampon de projection est représentée par une séquence ordonnée d' <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objets qui sont appelés *étendues de source*. Le contenu de ces étendues est présenté sous la forme d’une séquence de caractères. Les mémoires tampons de texte à partir desquelles les étendues sources sont dessinées sont des *mémoires tampons sources* nommées. Les clients d’une mémoire tampon de projection n’ont pas besoin de savoir qu’ils diffèrent d’une mémoire tampon de texte ordinaire.
 
 La mémoire tampon de projection écoute les événements de modification de texte sur les mémoires tampons sources. Lorsque le texte d’une étendue source change, la mémoire tampon de projection mappe les coordonnées de texte modifiées à ses propres coordonnées et déclenche des événements de modification de texte appropriés. Par exemple, considérez les mémoires tampons sources A et B qui ont le contenu suivant :
 

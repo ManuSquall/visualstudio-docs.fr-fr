@@ -2,19 +2,19 @@
 title: Conseils pour améliorer les performances
 description: Découvrez comment optimiser certaines fonctionnalités de Visual Studio que vous n’utilisez peut-être pas pour améliorer les performances.
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479613"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488178"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -71,7 +71,7 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
     Nous vous recommandons de désactiver le profilage de l’UC après utilisation. Cette fonctionnalité peut consommer de grandes quantités de ressources. Une fois que le profilage de l’UC est activé, cet état est conservé dans les sessions de débogage suivantes, il est donc recommandé de le désactiver explicitement une fois terminé. Vous pouvez économiser des ressources en désactivant les outils de diagnostic pendant le débogage si vous n’avez pas besoin des fonctionnalités fournies.
 
-    Pour désactiver les **Outils de diagnostic**, démarrez une session de débogage, choisissez **Outils** > **Options** > **Activer les outils de diagnostic** et désélectionnez l’option.
+    Pour désactiver l' **outils de diagnostic**, démarrez une session de débogage, sélectionnez **Outils**  >  **options**  >  **débogage**  >  **général**, puis désactivez l’option **activer le outils de diagnostic en cours de débogage** .
 
     Pour plus d’informations, consultez [Outils de profilage](../profiling/profiling-feature-tour.md).
 
@@ -129,9 +129,9 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
     [**Retour**](./reference/how-to-manage-word-wrap-in-the-editor.md) automatique à la ligne affiche la partie d’une longue ligne de code qui s’étend au-delà de la largeur actuelle de la fenêtre de l’éditeur de code. Le retour automatique à la ligne est activé par défaut.
 
-    Pour désactiver le retour automatique à la ligne pour un projet sur lequel vous travaillez actuellement, accédez à **modifier** le retour automatique à  >  **Advanced**  >  **la ligne**. (Vous pouvez activer ou désactiver ce paramètre à l’aide des mêmes commandes de menu.)
+    Pour désactiver le retour automatique à la ligne pour un projet sur lequel vous travaillez actuellement, accédez à **modifier** le retour automatique à  >    >  **la ligne**. (Vous pouvez activer ou désactiver ce paramètre à l’aide des mêmes commandes de menu.)
 
-    Pour désactiver le retour automatique à la ligne pour tous les projets, accédez à **Outils**  >  **options**  >  **General**  >  **éditeur de texte** général  >  **tous les langages**  >  **général**, puis, dans la section **paramètres** , désélectionnez l’option retour automatique à la **ligne** .
+    Pour désactiver le retour automatique à la ligne pour tous les projets, accédez à **Outils**  >  **options**  >    >  **éditeur de texte** général  >  **tous les langages**  >  **général**, puis, dans la section **paramètres** , désélectionnez l’option retour automatique à la **ligne** .
 
 - **Désactiver le concepteur XAML**
 

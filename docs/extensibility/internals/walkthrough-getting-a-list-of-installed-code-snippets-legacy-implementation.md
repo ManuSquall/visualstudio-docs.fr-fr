@@ -1,5 +1,7 @@
 ---
 title: Obtention d’une liste d’extraits de code installés (hérité) | Microsoft Docs
+description: Découvrez comment obtenir tous les extraits de code pour un GUID de langage spécifique. Les raccourcis de ces extraits de code peuvent être insérés dans une liste de saisie semi-automatique IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 390f8e7030d0e758eb27fce4e83a30e30fbf64af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703652"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487892"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procédure pas à pas : obtention d’une liste d’extraits de code installés (implémentation héritée)
 Un extrait de code est un morceau de code qui peut être inséré dans la mémoire tampon source à l’aide d’une commande de menu (qui permet de choisir parmi une liste d’extraits de code installés) ou en sélectionnant un raccourci d’extrait dans une liste de saisie semi-automatique IntelliSense.

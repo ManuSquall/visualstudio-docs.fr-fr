@@ -1,5 +1,7 @@
 ---
 title: Quand créer des types de projet | Microsoft Docs
+description: Découvrez comment déterminer si un nouveau type de projet est requis pour la personnalisation de Visual Studio pour vos utilisateurs.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012007"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487827"
 ---
 # <a name="when-to-create-project-types"></a>Quand créer des types de projets
 La création d’un nouveau type de projet fournit une base de personnalisation [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour vos utilisateurs. Toutefois, la création d’un nouveau type de projet n’est pas obligatoire pour toutes les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personnalisations. Les instructions suivantes doivent vous aider à déterminer si un nouveau type de projet est requis pour votre scénario.

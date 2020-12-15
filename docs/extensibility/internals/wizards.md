@@ -1,5 +1,7 @@
 ---
 title: Assistants | Microsoft Docs
+description: Découvrez comment répertorier votre Assistant parmi les assistants et les modèles disponibles dans Visual Studio et à propos des spécifications que votre assistant doit remplir dans l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703207"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487749"
 ---
 # <a name="wizards"></a>Assistants
 Une fois que vous avez créé un Assistant, vous souhaitez généralement l’ajouter à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) afin que d’autres utilisateurs puissent l’utiliser. L’Assistant ajouté apparaît alors dans les boîtes de dialogue **Ajouter un nouveau projet** ou **Ajouter un nouvel élément** . Pour afficher les boîtes de dialogue **Ajouter un nouveau projet** ou **Ajouter un nouvel élément** , cliquez avec le bouton droit sur une solution ouverte dans **Explorateur de solutions**, pointez sur **Ajouter**, puis cliquez sur **nouveau projet** ou **nouvel élément**.

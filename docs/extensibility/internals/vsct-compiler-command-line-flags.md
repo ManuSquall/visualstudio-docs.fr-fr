@@ -1,5 +1,7 @@
 ---
-title: Indicateurs de ligne de commande du compilateur VSCT | Microsoft Docs
+title: Indicateurs de Command-Line du compilateur VSCT | Microsoft Docs
+description: Le compilateur de table de commandes Visual Studio fournit des options de ligne de commande pour garantir la réussite de la compilation des fichiers. vsct.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703969"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488009"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Indicateurs de la ligne de commande du compilateur VSCT
 Le compilateur de table de commandes Visual Studio (VSCT) fournit des commutateurs de ligne de commande pour garantir la réussite de la compilation des fichiers. vsct.
@@ -28,7 +30,7 @@ Le compilateur de table de commandes Visual Studio (VSCT) fournit des commutateu
 vsct /?
 ```
 
- Elle retourne ce qui suit :
+ Cette demande renvoie :
 
 ```
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000
@@ -59,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-d|Spécifiez des symboles définis supplémentaires.|
 |-I|Indiquer les chemins d’accès include supplémentaires qui doivent être utilisés lors de la résolution des références de fichier.|
 |-l|Spécifiez le <xref:System.Globalization.CultureInfo> nom de la culture, par exemple « en-US ».|
-|-E|Émet des objets C# dans l’espace de noms spécifié pour les éléments de commande, suivis de [C&#124;H&#124;N] :*filename*où C = C#, H = en-tête C++, N = espace de noms. L’espace de noms est requis pour C#.|
+|-E|Émet des objets C# dans l’espace de noms spécifié pour les éléments de commande, suivis de [C&#124;H&#124;N] :*filename* où C = C#, H = en-tête C++, N = espace de noms. L’espace de noms est requis pour C#.|
 |-v|Sortie détaillée.|
 
  Le commutateur-L demande au compilateur de sélectionner un groupe de chaînes pour produire le fichier. directeur technique binaire qui correspond au nom de <xref:System.Globalization.CultureInfo> culture donné. Le nom de culture spécifié doit correspondre à l’attribut de langage d’un ou de plusieurs [éléments Strings](../../extensibility/strings-element.md) dans le fichier. vsct. Si un élément Strings n’a pas d’attribut Language, il est hérité de l' [élément CommandTable](../../extensibility/commandtable-element.md)conteneur.

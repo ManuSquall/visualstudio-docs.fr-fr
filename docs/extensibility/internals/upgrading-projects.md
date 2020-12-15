@@ -1,5 +1,7 @@
 ---
 title: Mise à niveau des projets | Microsoft Docs
+description: Découvrez les interfaces fournies par le kit de développement logiciel (SDK) Visual Studio pour implémenter la prise en charge de la mise à niveau dans vos projets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704264"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487580"
 ---
 # <a name="upgrading-projects"></a>Mise à niveau des projets
 

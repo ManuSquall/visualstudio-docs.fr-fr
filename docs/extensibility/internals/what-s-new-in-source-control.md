@@ -1,5 +1,7 @@
 ---
 title: Nouveautés du contrôle de code source dans le kit de développement logiciel (SDK) Visual Studio 2015 | Microsoft Docs
+description: Découvrez les fonctionnalités des VSPackages de contrôle de code source et passez en revue une vue d’ensemble des étapes d’implémentation.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af2c321eb91407808e71f4c0126b86d79980c53
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703407"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487814"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Nouveautés du contrôle de code source pour le kit de développement logiciel (SDK) Visual Studio 2015
 
@@ -51,5 +53,5 @@ Les étapes suivantes fournissent une vue d’ensemble de ce qui est nécessaire
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>
-- [Vue d'ensemble](../../extensibility/internals/source-control-integration-overview.md)
+- [Présentation](../../extensibility/internals/source-control-integration-overview.md)
 - [Création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md)

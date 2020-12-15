@@ -1,5 +1,7 @@
 ---
 title: Inscription du VSPackage | Microsoft Docs
+description: En savoir plus sur l’inscription du VSPackage, où les packages conseillent à Visual Studio de les installer et doivent être chargés en écrivant des informations dans le registre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012124"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487983"
 ---
 # <a name="vspackage-registration"></a>Inscription de VSPackage
 Les VSPackages doivent signaler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qu’ils sont installés et doivent être chargés. Ce processus s’effectue en écrivant des informations dans le registre. Il s’agit d’un travail classique d’un programme d’installation.
@@ -40,7 +42,7 @@ Les VSPackages doivent signaler [!INCLUDE[vsprvs](../../code-quality/includes/vs
 > [!NOTE]
 > L’outil RegPkg n’est pas redistribuable et ne peut pas être utilisé pour inscrire un VSPackage sur le système d’un utilisateur.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Pourquoi les VSPackages ne doivent pas s’inscrire automatiquement au moment de l’installation
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Pourquoi les VSPackages ne doivent pas Self-Register au moment de l’installation
  Vos programmes d’installation VSPackage ne doivent pas s’appuyer sur l’auto-inscription. À première vue, la conservation des valeurs de registre d’un VSPackage uniquement dans le VSPackage lui-même semble être une bonne idée. Étant donné que les développeurs ont besoin des valeurs de Registre disponibles pour le travail et les tests de routine, il est logique d’éviter de conserver une copie distincte des données du Registre dans le programme d’installation. Le programme d’installation peut s’appuyer sur le VSPackage lui-même pour écrire des valeurs de registre.
 
  Bien qu’en théorie, l’auto-enregistrement présente plusieurs défauts qui le rendent inapproprié pour l’installation du VSPackage :

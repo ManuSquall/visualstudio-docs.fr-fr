@@ -1,5 +1,7 @@
 ---
 title: 'Zone de test 6 : supprimer | Microsoft Docs'
+description: Cette zone de test de contrôle de code source couvre les actions de suppression dans Explorateur de solutions pour votre plug-in de contrôle de code source Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9902ab9d1cb9c28ddf67b83590a4cccd5f6562f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704510"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487554"
 ---
 # <a name="test-area-6-delete"></a>Zone de test 6 : Supprimer
 Cette zone de test du plug-in de contrôle de code source couvre les actions de suppression.
@@ -25,7 +27,7 @@ Cette zone de test du plug-in de contrôle de code source couvre les actions de 
 
  Voici une liste des éléments qui peuvent être supprimés :
 
-- Files
+- Fichiers
 
 - Dossiers
 

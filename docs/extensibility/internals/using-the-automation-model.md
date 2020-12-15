@@ -1,5 +1,7 @@
 ---
 title: Utilisation du modèle Automation | Microsoft Docs
+description: Découvrez comment obtenir les propriétés et les méthodes de votre VSPackage après qu’il est connecté au modèle Automation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ad8c02f846a946933ac07d4aa546ad3ce3a2a82f
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012488"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488165"
 ---
 # <a name="using-the-automation-model"></a>Utilisation du modèle d’automatisation
 Une fois que vous avez connecté votre VSPackage à Automation, vous pouvez obtenir les propriétés et les méthodes en appelant la <xref:EnvDTE.DTEClass.GetObject%2A> méthode sur l' <xref:EnvDTE._DTE> objet, en passant une chaîne représentant l’objet que vous souhaitez récupérer.

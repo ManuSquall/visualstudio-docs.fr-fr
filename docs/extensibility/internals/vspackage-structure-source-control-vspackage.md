@@ -1,5 +1,7 @@
 ---
 title: Structure VSPackage (VSPackage de contrôle de code source) | Microsoft Docs
+description: En savoir plus sur le kit de développement logiciel (SDK) du package de contrôle de code source, qui fournit des instructions pour un VSPackage avec un implémenteur de contrôle de code source à intégrer à Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703806"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487957"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Structure VSPackage (VSPackage de contrôle de code source)
 

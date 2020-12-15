@@ -1,5 +1,6 @@
 ---
 title: Nouveautés &apos; de l’API de plug-in de contrôle de code source 1,2
+description: Découvrez les nouveautés de la fonctionnalité de contrôle de code source avancée dans la version 1,2 de l’API de plug-in de contrôle de code source.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5deb43b3b5d1a654fee82b043f06ec8219530a2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eca5afe8ea9bb1404acf342cc7edbe1100888c6e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037619"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487801"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>&#39;nouveautés de l’API de plug-in de contrôle de code source version 1,2
 Cette section met en évidence les fonctionnalités avancées de contrôle de code source dans l’API de plug-in de contrôle de code source version 1,2. La liste suivante répertorie les nouvelles fonctionnalités de la version 1,2 :

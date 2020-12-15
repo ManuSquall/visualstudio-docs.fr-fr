@@ -1,5 +1,7 @@
 ---
 title: Notions de base de Windows Installer | Microsoft Docs
+description: En savoir plus sur les Windows Installer à utiliser pour l’installation d’un VSPackage, y compris l’organisation de vos fonctionnalités VSPackage dans des composants Windows Installer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703420"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487775"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 Le Windows Installer installe et désinstalle des applications ou des produits logiciels sur l’ordinateur d’un utilisateur, en effectuant ces tâches dans des unités appelées Windows Installer composants (parfois appelés WICs ou simplement composants). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les configurations à l’aide de Windows Installer.
@@ -55,13 +57,13 @@ Le Windows Installer installe et désinstalle des applications ou des produits l
 > [!NOTE]
 > L’application de règles de Windows Installer se produit uniquement si vous exécutez une validation de votre fichier. msi. Toutefois, il est recommandé de traiter ces règles comme des pratiques recommandées. Pour plus d’informations, consultez [validation d’une base de données d’installation](/windows/desktop/Msi/validating-an-installation-database) et [validation de package](/windows/desktop/Msi/package-validation).
 
-#### <a name="installer-enforced-rules"></a>Règles appliquées par le programme d’installation
+#### <a name="installer-enforced-rules"></a>Règles de Installer-Enforced
 
 - Tous les fichiers d’un composant donné doivent être installés dans le même répertoire. Inversement, les fichiers installés dans des dossiers distincts doivent appartenir à des composants distincts.
 
 - Il ne peut y avoir qu’un seul chemin de clé par composant. Le chemin d’accès de la clé est simplement un fichier ou une clé de Registre qui représente l’ensemble du composant.
 
-#### <a name="component-provider-responsibilities"></a>Responsabilités du fournisseur de composants
+#### <a name="component-provider-responsibilities"></a>Responsabilités de Component-Provider
 
 - Les deux ressources qui peuvent être livrées séparément dans les versions ultérieures doivent exister dans des composants distincts. Les ressources doivent être regroupées dans le même composant uniquement lorsque vous êtes certain que ces ressources ne seront jamais expédiées séparément. En fait, il est recommandé que toutes les ressources principales (dll, par exemple) existent toujours dans des WICs distincts. Pour plus d’informations, consultez [définition des composants du programme d’installation](/windows/desktop/Msi/defining-installer-components).
 

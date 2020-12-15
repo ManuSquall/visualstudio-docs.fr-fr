@@ -1,5 +1,7 @@
 ---
 title: Prise en charge des sites Web | Microsoft Docs
+description: En savoir plus sur les systèmes de projet de site Web, qui sont créés en ajoutant des modèles et des attributs d’inscription à un système de projet existant.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703443"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487840"
 ---
 # <a name="web-site-support"></a>Prise en charge de site web
 Un système de projet de site Web est un système de projet qui crée des projets Web. Les projets Web créent à leur tour des applications Web. Un projet de site Web génère un fichier exécutable pour chaque page Web associée à du code. Des fichiers exécutables supplémentaires sont générés à partir des fichiers de code source dans le dossier/App_Code.
@@ -25,7 +27,7 @@ Un système de projet de site Web est un système de projet qui crée des projet
  Le compilateur de langage utilisé pour compiler des pages Web doit être inscrit auprès de [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] . Vous pouvez utiliser l' [ \<compiler> élément](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) dans un fichier de Web.config pour inscrire le compilateur, comme dans l’exemple suivant :
 
 ```
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
 ```
 
 ## <a name="in-this-section"></a>Dans cette section

@@ -1,5 +1,7 @@
 ---
 title: Utilitaires VSSDK | Microsoft Docs
+description: Ces articles décrivent les outils fournis avec VSSDK, y compris RegPkg, CreatePkgDef, CreateExpInstance, les outils de coloration et les outils de service d’images.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3faf0dad9d935fcc62637d387e41d599b7ec874
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3da6df6aab6d64d9ca589959a0d0227026983dfe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703742"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487905"
 ---
 # <a name="vssdk-utilities"></a>Utilitaires VSSDK
 Les rubriques de cette section décrivent les outils fournis avec VSSDK.
