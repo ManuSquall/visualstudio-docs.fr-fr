@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : créer votre premier complément VSTO pour PowerPoint'
+description: Créer un complément de niveau application pour Microsoft PowerPoint. Cette fonctionnalité est disponible pour l’application elle-même, quelles que soient les présentations ouvertes.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584306"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524856"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procédure pas à pas : créer votre premier complément VSTO pour PowerPoint
   Cette procédure pas à pas vous montre comment créer un complément VSTO pour Microsoft Office PowerPoint. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quelles que soient les présentations ouvertes. Pour plus d’informations, consultez [vue d’ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -76,14 +78,14 @@ ms.locfileid: "91584306"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Pour ajouter une zone de texte à chaque nouvelle diapositive
 
-1. Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn` . Ce code définit un gestionnaire d’événements pour l’événement [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) de l’objet d' [application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
+1. Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn` . Ce code définit un gestionnaire d’événements pour l’événement [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) de l’objet [application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) .
 
     Quand l'utilisateur ajoute une nouvelle diapositive à la présentation active, ce gestionnaire d'événements ajoute une zone de texte en haut de la nouvelle diapositive, puis ajoute du texte à la zone de texte.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. En C#, ajoutez le code suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code est requis pour connecter le `Application_PresentationNewSlide` Gestionnaire d’événements à l’événement [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
+2. En C#, ajoutez le code suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code est requis pour connecter le `Application_PresentationNewSlide` Gestionnaire d’événements à l’événement [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584306"
 
 - Le champ `Application` de la classe `ThisAddIn` . Le `Application` champ retourne un objet d' [application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) , qui représente l’instance actuelle de PowerPoint.
 
-- `Sld`Paramètre du gestionnaire d’événements pour l’événement [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . Le `Sld` paramètre est un objet [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , qui représente la nouvelle diapositive. Pour plus d’informations, consultez [solutions PowerPoint](../vsto/powerpoint-solutions.md).
+- Le `Sld` paramètre du gestionnaire d’événements pour l’événement [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) . Le `Sld` paramètre est un objet [Slide](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) , qui représente la nouvelle diapositive. Pour plus d’informations, consultez [solutions PowerPoint](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Tester le projet
  Quand vous générez et exécutez le projet, vérifiez que la zone de texte apparaît dans les nouvelles diapositives que vous ajoutez à une présentation.

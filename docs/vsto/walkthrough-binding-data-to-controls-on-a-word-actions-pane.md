@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Word'
+description: Lier des données à des contrôles dans un volet actions dans Microsoft Word. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585065"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526209"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Word
   Cette procédure pas à pas montre comment lier des données à des contrôles dans un volet actions dans Word. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
@@ -76,7 +78,7 @@ ms.locfileid: "91585065"
 
 ### <a name="to-add-a-data-source-to-the-project"></a>Pour ajouter une source de données au projet
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
    > [!NOTE]
    > Si l’option **afficher les sources de données** n’est pas disponible, cliquez sur le document Word, puis vérifiez à nouveau.

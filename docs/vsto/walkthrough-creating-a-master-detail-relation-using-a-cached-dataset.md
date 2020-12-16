@@ -1,5 +1,7 @@
 ---
 title: Créer une relation de détail maître à l’aide d’un jeu de données mis en cache
+description: En savoir plus sur la création d’une relation maître/détail sur une feuille de calcul et la mise en cache des données afin que la solution puisse être utilisée en mode hors connexion.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328364"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524868"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procédure pas à pas : créer une relation de détail maître à l’aide d’un DataSet mis en cache
   Cette procédure pas à pas illustre la création d’une relation maître/détail sur une feuille de calcul et la mise en cache des données afin que la solution puisse être utilisée en mode hors connexion.
@@ -49,7 +51,7 @@ ms.locfileid: "67328364"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  Dans cette étape, vous allez créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -63,7 +65,7 @@ ms.locfileid: "67328364"
 
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
 2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -102,7 +104,7 @@ ms.locfileid: "67328364"
 
 6. Dans la liste déroulante, cliquez sur **ListObject** , puis faites glisser la table **OrderDetails** vers la cellule **a6**.
 
-7. Un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle nommé **Order_DetailsListObject** est créé dans la cellule **a6**et lié au <xref:System.Windows.Forms.BindingSource> .
+7. Un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle nommé **Order_DetailsListObject** est créé dans la cellule **a6** et lié au <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-two-buttons"></a>Pour ajouter deux boutons
 
@@ -162,7 +164,7 @@ ms.locfileid: "67328364"
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que les données apparaissent comme prévu et que vous pouvez utiliser la solution en mode hors connexion.
 
 ### <a name="to-test-the-data-caching"></a>Pour tester la mise en cache des données

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : mettre en forme du texte dans des documents par programmation'
+description: Découvrez comment vous pouvez utiliser l’objet Range pour mettre en forme du texte par programmation dans un document Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931991529b160fedfe65a92e8243183792abf518
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519845"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525726"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>Comment : mettre en forme du texte dans des documents par programmation
   Vous pouvez utiliser l'objet <xref:Microsoft.Office.Interop.Word.Range> pour mettre en forme le texte dans un document Microsoft Office Word.

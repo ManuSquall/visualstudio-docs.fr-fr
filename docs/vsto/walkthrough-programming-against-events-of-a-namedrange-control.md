@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : programmer sur les événements d’un contrôle NamedRange'
+description: Découvrez comment vous pouvez ajouter un contrôle NamedRange à une feuille de calcul Microsoft Excel et programmer par rapport à ses événements à l’aide des outils de développement Office dans Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584935"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526129"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procédure pas à pas : programmer sur les événements d’un contrôle NamedRange
   Cette procédure pas à pas montre comment ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à une feuille de calcul Microsoft Office Excel et programmer par rapport à ses événements à l’aide des outils de développement Office dans Visual Studio.

@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : création d’un modèle à l’aide de contrôles de contenu'
+description: Découvrez comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer du contenu structuré et réutilisable dans un modèle Microsoft Word.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585026"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524990"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procédure pas à pas : création d’un modèle à l’aide de contrôles de contenu
   Cette procédure pas à pas montre comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer un contenu structuré et réutilisable dans un modèle Microsoft Office Word.
@@ -68,7 +69,7 @@ ms.locfileid: "91585026"
 
 1. Dans le modèle Word qui est hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Concepteur, dans le ruban, cliquez sur l’onglet **Insérer** .
 
-2. Dans le groupe **tableaux** , cliquez sur **tableau**et insérez un tableau avec deux colonnes et quatre lignes.
+2. Dans le groupe **tableaux** , cliquez sur **tableau** et insérez un tableau avec deux colonnes et quatre lignes.
 
 3. Tapez un texte dans la première colonne afin qu'elle se présente de la façon suivante :
 
@@ -109,7 +110,7 @@ ms.locfileid: "91585026"
 
 2. Dans le ruban, cliquez sur l’onglet **Insérer** .
 
-3. Dans le groupe **tableaux** , cliquez sur **tableau**et insérez un tableau avec deux colonnes et trois lignes.
+3. Dans le groupe **tableaux** , cliquez sur **tableau** et insérez un tableau avec deux colonnes et trois lignes.
 
 4. Tapez un texte dans la première colonne afin qu'elle se présente de la façon suivante :
 

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : supprimer tous les commentaires des documents par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour supprimer par programmation tous les commentaires d’un document Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee30cb7d4083adfff18261e3267dea1d8a96626f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdb2d7b61efc1e40bf08b6b38ea6564892a04a33
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584818"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526651"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Comment : supprimer tous les commentaires des documents par programmation
   Utilisez la méthode `DeleteAllComments` pour supprimer tous les commentaires d’un document Microsoft Office Word.

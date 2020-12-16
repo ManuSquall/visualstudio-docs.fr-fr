@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble de Visual Studio Tools pour Office Runtime
+description: Visual Studio 2010 Tools pour Office Runtime doit être installé sur les ordinateurs des utilisateurs finaux pour exécuter des solutions créées à l’aide des outils de développement Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253984"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526277"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Vue d’ensemble de Visual Studio Tools pour Office Runtime
   Pour exécuter des solutions créées à l’aide des outils de développement Microsoft Office dans Visual Studio, Visual Studio 2010 Tools pour Office Runtime doit être installé sur les ordinateurs des utilisateurs finaux. Pour plus d’informations, consultez [Comment : installer le Visual Studio Tools pour le package redistribuable Office Runtime](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools pour Office Runtime se compose de deux composants principaux :
@@ -105,8 +107,8 @@ ms.locfileid: "71253984"
 |Édition de Windows|Édition de Microsoft Office|Version obligatoire du runtime de Visual Studio Tools pour Office.|
 |------------------------|---------------------------------|--------------------------------------------------------------------|
 |32 bits|32 bits|32 bits|
-|64 bits|32 bits|64 bits|
-|64 bits|64 bits|64 bits|
+|64 bits|32 bits|64 bits|
+|64 bits|64 bits|64 bits|
 
  Quand vous installez Office, la version requise de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] est installée avec Office. Par exemple, quand vous installez l'édition 64 bits d'Office sur une version 64 bits de Windows, la version 64 bits de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] est également installée. Pour plus d’informations sur l’installation de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] avec Office, consultez [Visual Studio Tools pour les scénarios d’installation d’Office Runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
@@ -120,6 +122,6 @@ ms.locfileid: "71253984"
 - [Assemblys dans le Visual Studio Tools pour Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)
 - [Architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Mettre à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : répertorier toutes les feuilles de calcul d’un classeur par programmation'
+description: Découvrez comment vous pouvez répertorier par programmation toutes les feuilles de calcul dans un classeur Microsoft Excel à l’aide de Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b3132ee83d4752c0bc2f053e7c65e3c7b84831b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 74ff02d6458e643e9a143a8132ad16f10899ec74
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585169"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525656"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Comment : répertorier toutes les feuilles de calcul d’un classeur par programmation
   La classe <xref:Microsoft.Office.Interop.Excel.Workbook> fournit un objet <xref:Microsoft.Office.Interop.Excel.Worksheets>. Cet objet contient une collection de tous les objets <xref:Microsoft.Office.Interop.Excel.Worksheet> du classeur spécifié.

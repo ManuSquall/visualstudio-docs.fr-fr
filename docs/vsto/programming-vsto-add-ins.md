@@ -1,5 +1,7 @@
 ---
 title: Programmer les compléments VSTO
+description: Découvrez comment vous pouvez utiliser la classe ThisAddIn pour effectuer des tâches telles que l’accès au modèle objet de l’application Microsoft Office Host.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87115327"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525118"
 ---
 # <a name="program-vsto-add-ins"></a>Programmer les compléments VSTO
   Quand vous étendez une application Microsoft Office en créant un complément VSTO, vous écrivez directement le code par rapport à la classe `ThisAddIn` de votre projet. Vous pouvez utiliser cette classe pour effectuer des tâches telles qu’accéder au modèle objet de l’application hôte Microsoft Office, personnaliser l’interface utilisateur de l’application et exposer des objets de votre complément VSTO à d’autres solutions Office.
@@ -97,7 +99,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Vue d’ensemble du modèle objet Outlook](../vsto/outlook-object-model-overview.md)
 
-- [solutions InfoPath](../vsto/infopath-solutions.md)
+- [Solutions InfoPath](../vsto/infopath-solutions.md)
 
 - [Solutions PowerPoint](../vsto/powerpoint-solutions.md)
 
@@ -150,5 +152,5 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 - [Procédure pas à pas : appel de code dans un complément VSTO à partir de VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)

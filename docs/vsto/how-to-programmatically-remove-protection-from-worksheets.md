@@ -1,5 +1,7 @@
 ---
 title: 'Comment : supprimer la protection des feuilles de calcul par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour supprimer par programmation la protection d’une feuille de calcul Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0660c703d94111d042b943935c64546d87bc61fa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 86140e5595fc539a06a9eb8381e50b503e31708d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584805"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526636"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Comment : supprimer la protection des feuilles de calcul par programmation
   Vous pouvez supprimer par programmation la protection d’une feuille de calcul Microsoft Office Excel.

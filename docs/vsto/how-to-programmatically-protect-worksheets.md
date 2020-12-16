@@ -1,5 +1,7 @@
 ---
 title: 'Comment : protéger des feuilles de calcul par programmation'
+description: Découvrez comment vous pouvez utiliser la fonctionnalité de protection de Microsoft Excel pour empêcher les utilisateurs et le code de modifier des objets dans une feuille de calcul.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545897"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526763"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Comment : protéger des feuilles de calcul par programmation
   La fonctionnalité de protection de Microsoft Office Excel permet d’empêcher les utilisateurs et le code de modifier des objets dans une feuille de calcul. Par défaut, toutes les cellules sont verrouillées une fois que vous avez activé la protection.

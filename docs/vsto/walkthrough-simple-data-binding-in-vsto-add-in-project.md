@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : liaison de données simple dans un projet de complément VSTO'
+description: Découvrez comment vous pouvez ajouter des contrôles à un document Microsoft Word et lier les contrôles aux données au moment de l’exécution.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584909"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526154"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : liaison de données simple dans un projet de complément VSTO
 
@@ -72,7 +74,7 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Pour ajouter un dataset typé au projet
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
 2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -80,7 +82,7 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 4. Si vous disposez d’une connexion à la base de données `AdventureWorksLT` , choisissez cette connexion et cliquez sur **Suivant**.
 
-    Sinon, cliquez sur **Nouvelle connexion**et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+    Sinon, cliquez sur **Nouvelle connexion** et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
 5. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 

@@ -1,5 +1,7 @@
 ---
 title: Utiliser des contrôles Windows Forms sur des feuilles de calcul Excel
+description: Découvrez comment vous pouvez ajouter des contrôles Windows Forms à vos classeurs Microsoft Excel de la même manière que vous ajoutez des contrôles à Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982316"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526523"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Utiliser des contrôles Windows Forms sur des feuilles de calcul Excel
   Vous pouvez ajouter des contrôles Windows Forms à vos classeurs Excel Microsoft Office de la même manière que vous ajoutez des contrôles à Windows Forms. Pour obtenir des informations générales sur l’utilisation des contrôles sur les documents, consultez [vue d’ensemble des contrôles de Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).

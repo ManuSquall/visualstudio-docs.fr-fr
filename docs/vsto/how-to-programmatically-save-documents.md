@@ -1,5 +1,7 @@
 ---
 title: 'Comment : enregistrer des documents par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour enregistrer un document par programme sans modifier le nom du document ou avec un nouveau nom.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537590"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525469"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Comment : enregistrer des documents par programmation
 
@@ -56,7 +58,7 @@ Il existe plusieurs façons d’enregistrer Microsoft Office documents Word. Vou
 Utilisez la `SaveAs` méthode pour enregistrer un document sous un nouveau nom. Vous pouvez utiliser cette méthode de l' <xref:Microsoft.Office.Tools.Word.Document> élément hôte dans un projet Word au niveau du document ou d’un <xref:Microsoft.Office.Interop.Word.Document> objet natif dans n’importe quel projet Word. Cette méthode requiert que vous spécifiiez le nouveau nom de fichier, mais les autres arguments sont facultatifs.
 
 > [!NOTE]
-> Si vous affichez la boîte de dialogue **Enregistrer** sous dans le <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> Gestionnaire d’événements de et que vous `ThisDocument` Définissez le paramètre *Cancel* sur **false**, l’application peut se fermer de manière inattendue. Si vous affectez la **valeur true**au paramètre *Cancel* , un message d’erreur s’affiche pour indiquer que l’enregistrement automatique a été désactivé.
+> Si vous affichez la boîte de dialogue **Enregistrer** sous dans le <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> Gestionnaire d’événements de et que vous `ThisDocument` Définissez le paramètre *Cancel* sur **false**, l’application peut se fermer de manière inattendue. Si vous affectez la **valeur true** au paramètre *Cancel* , un message d’erreur s’affiche pour indiquer que l’enregistrement automatique a été désactivé.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Pour enregistrer le document associé à une personnalisation au niveau du document sous un nouveau nom
 

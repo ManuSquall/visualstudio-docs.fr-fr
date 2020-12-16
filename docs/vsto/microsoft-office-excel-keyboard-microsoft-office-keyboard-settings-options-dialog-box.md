@@ -1,5 +1,7 @@
 ---
 title: Clavier Office Excel, paramètres, boîte de dialogue Options
+description: Découvrez comment vous pouvez faire en sorte que Microsoft Excel reçoive des commandes de touches de raccourci lorsque le document a le focus en sélectionnant le schéma de clavier dynamique.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584514"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525313"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office clavier Excel, paramètres, boîte de dialogue Options
   Microsoft Office Excel et Visual Studio gèrent les touches de raccourci. La même combinaison de touches de raccourci peut reposer pour différentes commandes dans Excel et dans Visual Studio. Quand Excel est ouvert dans un projet au niveau du document dans Visual Studio, une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais vous pouvez faire en sorte qu’Excel les reçoit lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.

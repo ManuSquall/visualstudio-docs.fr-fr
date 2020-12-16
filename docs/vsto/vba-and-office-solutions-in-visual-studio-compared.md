@@ -1,5 +1,7 @@
 ---
 title: Comparaison des solutions VBA et Office dans Visual Studio
+description: Découvrez les différences entre les solutions Microsoft Visual Basic pour Applications (VBA) et Microsoft Office dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d07975061a7b2f5f655bf7f4339671f28fe14c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982121"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526416"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Comparaison des solutions VBA et Office dans Visual Studio
   Microsoft Visual Basic pour Applications (VBA) utilise du code non managé étroitement intégré aux applications Office. Les projets Microsoft Office créés à l'aide de Visual Studio vous permettent de tirer parti des outils de conception de .NET Framework et Visual Studio.
@@ -50,6 +52,6 @@ ms.locfileid: "62982121"
 - [Appeler du code dans des compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Combiner VBA et les personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)
 - [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Sécuriser les solutions Office](../vsto/securing-office-solutions.md)
 - [Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

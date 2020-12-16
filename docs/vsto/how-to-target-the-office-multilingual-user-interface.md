@@ -1,5 +1,7 @@
 ---
 title: 'Comment : cibler l’interface utilisateur multilingue d’Office'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour cibler par programmation l’interface utilisateur multilingue Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537499"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526617"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Comment : cibler l’interface utilisateur multilingue d’Office
   L’interface utilisateur multilingue (MUI) est une fonctionnalité de Microsoft Office qui donne à l’utilisateur final la possibilité de modifier la langue de l’interface utilisateur. Par exemple, un utilisateur final travaillant avec une interface utilisateur en anglais peut modifier la langue de l’interface utilisateur en espagnol.

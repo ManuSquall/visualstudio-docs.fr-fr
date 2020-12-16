@@ -1,5 +1,7 @@
 ---
 title: 'Comment : afficher des documents en mode aperçu avant impression par programmation'
+description: Découvrez comment vous pouvez afficher des documents en mode aperçu avant impression dans un document Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17671ab5d544341cbd3a02713a8b29b55863f5ac
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 69c5014958d137b534a283b0d07fa048966092be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585208"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525850"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Comment : afficher des documents en mode aperçu avant impression par programmation
   Si votre solution génère un rapport, vous pouvez afficher ce dernier pour l’utilisateur en mode Aperçu avant impression.

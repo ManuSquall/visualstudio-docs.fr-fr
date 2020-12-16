@@ -1,5 +1,7 @@
 ---
 title: 'Comment : regrouper des lignes dans une feuille de calcul par programmation'
+description: Découvrez comment vous pouvez regrouper par programmation une ou plusieurs lignes entières dans Microsoft Excel à l’aide d’un contrôle NamedRange ou d’un objet de plage Excel natif.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537876"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525710"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Comment : regrouper des lignes dans une feuille de calcul par programmation
   Vous pouvez regrouper une ou plusieurs lignes entières. Pour créer un groupe dans une feuille de calcul, utilisez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.

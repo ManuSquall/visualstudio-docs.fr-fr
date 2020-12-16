@@ -1,5 +1,7 @@
 ---
 title: Limitations de programmation des éléments hôtes et des contrôles hôtes
+description: Découvrez les différences fondamentales entre le comportement des éléments hôtes et des contrôles hôtes et les objets Office natifs au moment de l’exécution.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -31,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 098145ca901b1f16974058513d3781fc4621f217
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 08205473636a04dbc742b6c09c99e9771094f61c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584475"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525134"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitations de programmation des éléments hôtes et des contrôles hôtes
   Chaque élément hôte et contrôle hôte est conçu pour se comporter comme un objet Microsoft Office Word ou Microsoft Office Excel natif correspondant, avec des fonctionnalités supplémentaires. Toutefois, il existe des différences fondamentales entre le comportement des éléments hôtes ou contrôles hôtes, et celui des objets Office natifs au moment de l’exécution.

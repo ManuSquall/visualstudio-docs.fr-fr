@@ -1,5 +1,7 @@
 ---
 title: 'Comment : faire référence aux plages de la feuille de calcul dans le code par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour faire référence par programmation au contenu d’un contrôle NamedRange ou d’un objet Range Excel natif dans une feuille de calcul Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319be5ad6c878e08a862d1e20e826c2800c33512
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9756123038de33e8f8e69bd9a824822c26e2dc00
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584831"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526676"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Comment : faire référence aux plages de la feuille de calcul dans le code par programmation
   Vous utilisez un processus similaire pour faire référence au contenu d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou d’un objet de plage Excel natif.

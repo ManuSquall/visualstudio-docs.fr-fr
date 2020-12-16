@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : insertion de données dans un classeur sur un serveur'
+description: Apprenez à insérer des données dans un DataSet mis en cache dans un classeur Microsoft Excel sans démarrer Excel à l’aide de la classe ServerDocument.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d9dcd22ca124ee5ea4002277f91071727a3e9e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985431"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526220"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procédure pas à pas : insertion de données dans un classeur sur un serveur
   Cette procédure pas à pas montre comment insérer des données dans un DataSet mis en cache dans un Microsoft Office classeur Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -92,7 +94,7 @@ ms.locfileid: "72985431"
 
 1. Dans **Explorateur de solutions**, cliquez sur le projet **AdventureWorksDataSet** .
 
-2. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+2. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
 3. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -100,7 +102,7 @@ ms.locfileid: "72985431"
 
 5. Si vous disposez d’une connexion existante à la base de données AdventureWorksLT, choisissez cette connexion et cliquez sur **suivant**.
 
-    Sinon, cliquez sur **Nouvelle connexion**et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [Comment : se connecter aux données d’une base de données](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    Sinon, cliquez sur **Nouvelle connexion** et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [Comment : se connecter aux données d’une base de données](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 

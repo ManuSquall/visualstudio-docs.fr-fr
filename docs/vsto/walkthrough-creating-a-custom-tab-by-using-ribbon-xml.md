@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’un onglet personnalisé à l’aide du ruban XML'
+description: Découvrez comment vous pouvez ajouter des boutons à l’onglet Add-Ins et automatiser Microsoft Word à l’aide du ruban (XML).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839381"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524876"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procédure pas à pas : création d’un onglet personnalisé à l’aide du ruban XML
   Cette procédure pas à pas montre comment créer un onglet de ruban personnalisé à l’aide de l’élément **Ruban (XML)** .
@@ -85,7 +87,7 @@ ms.locfileid: "90839381"
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **MyRibbon.xml** , puis cliquez sur **ouvrir**.
 
-2. Remplacez le contenu de l’élément **Tab** par le code XML suivant. Ce code XML remplace l’étiquette du groupe de contrôles par défaut par du **contenu**et ajoute deux nouveaux boutons avec les étiquettes **Insérer du texte** et insérer un **tableau**.
+2. Remplacez le contenu de l’élément **Tab** par le code XML suivant. Ce code XML remplace l’étiquette du groupe de contrôles par défaut par du **contenu** et ajoute deux nouveaux boutons avec les étiquettes **Insérer du texte** et insérer un **tableau**.
 
     ```xml
     <tab idMso="TabAddIns">

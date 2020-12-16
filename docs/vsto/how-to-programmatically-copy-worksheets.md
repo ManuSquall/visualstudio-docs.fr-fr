@@ -1,5 +1,7 @@
 ---
 title: 'Comment : copier des feuilles de calcul par programmation'
+description: Découvrez comment vous pouvez créer une copie d’une feuille de calcul et insérer cette feuille de calcul avant ou après une feuille de calcul existante dans le classeur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8226f337994c686d4d370e91831bc1262d3ef85e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b2f16cfc8855f2adff3a4614c38eb70fbe7db5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546079"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524788"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Comment : copier des feuilles de calcul par programmation
   Vous pouvez créer une copie d'une feuille de calcul et insérer cette feuille de calcul avant ou après une feuille existante dans le classeur. Si vous ne spécifiez pas d'emplacement d'insertion de la feuille de calcul, Excel crée un nouveau classeur dans lequel la placer.

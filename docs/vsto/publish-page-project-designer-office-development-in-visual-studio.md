@@ -1,5 +1,7 @@
 ---
 title: Page publier, concepteur de projets (développement Office)
+description: Découvrez comment la page publier du concepteur de projets dans Visual Studio est utilisée pour configurer les propriétés de déploiement.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810991"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525013"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page publier, concepteur de projets (développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.
 
- Pour accéder à cette page, sélectionnez le projet dans **Explorateur de solutions**, puis, dans le menu **projet** , choisissez *Projectname* **Propriétés**ProjectName. Si la page **Publier** n’apparaît pas, choisissez l’onglet **Publier** .
+ Pour accéder à cette page, sélectionnez le projet dans **Explorateur de solutions**, puis, dans le menu **projet** , choisissez  **Propriétés** ProjectName. Si la page **Publier** n’apparaît pas, choisissez l’onglet **Publier** .
 
 > [!NOTE]
 > Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](/previous-versions/bb386095(v=vs.110)).
@@ -36,15 +38,15 @@ ms.locfileid: "90810991"
 
  L’emplacement du dossier de publication est le répertoire dans lequel Visual Studio copie les fichiers solution tels que les manifestes, les assemblys et les autres fichiers de la build. Vous devez disposer d’un accès en écriture à ce répertoire.
 
- Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\nomdossier\dossierpublication*), relatif (* \\ publication*) ou un emplacement complet (* \\ \servername\foldername* ou http://<em>nomserveur/nomdossier</em>).
+ Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\nomdossier\dossierpublication*), relatif (*\\ publication*) ou un emplacement complet (*\\ \servername\foldername* ou http://<em>nomserveur/nomdossier</em>).
 
- Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le répertoire de *publication \\ * si IIS n’est pas installé.
+ Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le répertoire de *publication \\* si IIS n’est pas installé.
 
  **URL du dossier d’installation** Facultatif.
 
  L’URL du dossier d’installation est le répertoire à partir duquel l’utilisateur final installe la personnalisation. Il s’agit également du chemin que la solution utilise pour vérifier les mises à jour. Le chemin peut être identique à l’emplacement du dossier de publication, mais cela n’est pas obligatoire.
 
- Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\nomdossier\dossierpublication*), relatif (* \\ publication*) ou un emplacement complet (* \\ \servername\foldername* ou http://<em>nomserveur/nomdossier</em>). Tous les emplacements HTTP/HTTPS doivent être créés avec des caractères US-ASCII. Les caractères Unicode ne sont pas pris en charge.
+ Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\nomdossier\dossierpublication*), relatif (*\\ publication*) ou un emplacement complet (*\\ \servername\foldername* ou http://<em>nomserveur/nomdossier</em>). Tous les emplacements HTTP/HTTPS doivent être créés avec des caractères US-ASCII. Les caractères Unicode ne sont pas pris en charge.
 
  Si le chemin d’installation est défini, les fichiers de personnalisation doivent se trouver à cet emplacement pour que les utilisateurs puissent installer la personnalisation. L’emplacement doit être défini uniquement si vous connaissez l’emplacement de déploiement final.
 

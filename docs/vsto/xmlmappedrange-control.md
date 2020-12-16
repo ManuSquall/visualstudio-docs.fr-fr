@@ -1,5 +1,7 @@
 ---
 title: Contrôle XmlMappedRange
+description: Découvrez que le contrôle XmlMappedRange est une plage qui est créée uniquement lorsqu’un élément de schéma non répétitif est mappé sur une cellule dans Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985359"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525893"
 ---
 # <a name="xmlmappedrange-control"></a>Contrôle XmlMappedRange
   Le <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle est une plage qui est créée uniquement lorsqu’un élément de schéma non répétitif est mappé sur une cellule dans Microsoft Office Excel. Par exemple, lorsque l' `maxOccurs` attribut d’un élément de schéma est égal à 1. Une fois que Visual Studio a créé la plage mappée XML, vous pouvez la programmer directement sans avoir à parcourir le modèle objet Excel. Vous ne pouvez supprimer un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle dans Excel que si le mappage d’élément est supprimé.

@@ -1,5 +1,7 @@
 ---
 title: 'Comment : parcourir les éléments trouvés dans les documents par programmation'
+description: Découvrez comment vous pouvez parcourir par programmation les éléments trouvés dans un document Microsoft Word à l’aide de Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e033b3d43f40736d7c77d11b489c0a6c2e91434e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585143"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525617"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Comment : parcourir les éléments trouvés dans les documents par programmation
   La classe <xref:Microsoft.Office.Interop.Word.Find> a une propriété <xref:Microsoft.Office.Interop.Word.Find.Found%2A> , qui retourne **true** chaque fois qu’un élément recherché est trouvé. Vous pouvez exécuter en boucle toutes les instances trouvées dans un <xref:Microsoft.Office.Interop.Word.Range> à l’aide de la méthode <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .

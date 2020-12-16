@@ -1,5 +1,7 @@
 ---
 title: Procédures pas à pas de personnalisation de l’interface utilisateur Office
+description: Découvrez comment personnaliser l’interface utilisateur des applications Microsoft Office à l’aide de personnalisations au niveau du document et de compléments VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e961479fc500e53133c62337478368878bf26893
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254126"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525102"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procédures pas à pas de personnalisation de l’interface utilisateur Office
   Les procédures pas à pas suivantes montrent comment personnaliser l’interface utilisateur des applications Microsoft Office à l’aide des personnalisations au niveau du document et des compléments VSTO.

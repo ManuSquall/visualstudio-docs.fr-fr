@@ -1,5 +1,7 @@
 ---
 title: Synchroniser le volet des tâches personnalisé avec le bouton du ruban
+description: Découvrez comment vous pouvez créer un volet de tâches personnalisé que les utilisateurs peuvent masquer ou afficher en cliquant sur un bouton bascule sur le ruban.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328338"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526084"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procédure pas à pas : synchroniser un volet de tâches personnalisé avec un bouton de ruban
   Cette procédure pas à pas montre comment créer un volet de tâches personnalisé que les utilisateurs peuvent masquer ou afficher en cliquant sur un bouton bascule sur le ruban. Vous devez toujours créer un élément d’interface utilisateur, comme un bouton, sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet Office personnalisé. En effet, les applications Microsoft Office ne proposent aucune méthode par défaut permettant aux utilisateurs d’afficher ou de masquer des volets Office personnalisés.
@@ -60,7 +62,7 @@ ms.locfileid: "67328338"
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1. Créez un projet de complément Excel nommé **SynchroniserVoletOfficeEtRuban**à l’aide du modèle de projet de complément Excel. Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Créez un projet de complément Excel nommé **SynchroniserVoletOfficeEtRuban** à l’aide du modèle de projet de complément Excel. Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** et ajoute le projet **SynchroniserVoletOfficeEtRuban** à **Explorateur de solutions**.
 

@@ -1,5 +1,7 @@
 ---
 title: Mettre à jour un graphique dans une feuille de calcul à l’aide de cases
+description: Découvrez les principes de base de l’utilisation des cases d’option dans une feuille de calcul Microsoft Excel pour offrir à l’utilisateur un moyen de basculer rapidement entre les options.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238814"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526068"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : mise à jour d'un graphique dans une feuille de calcul à l'aide de cases d'option
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation des cases d’option dans une feuille de calcul Excel Microsoft Office pour permettre à l’utilisateur de basculer rapidement entre les options. Dans ce cas, les options modifient le style d’un graphique.
@@ -86,7 +88,7 @@ ms.locfileid: "88238814"
 
 9. Quittez Excel.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  Dans cette étape, vous allez créer un projet de classeur Excel basé sur le classeur **ExcelChart** .
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -229,7 +231,7 @@ ms.locfileid: "88238814"
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre classeur pour vérifier que le style du graphique est correct quand vous sélectionnez une case d’option.
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur

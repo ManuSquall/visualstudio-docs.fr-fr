@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Excel'
+description: Lier des données à des contrôles dans un volet actions dans Microsoft Excel. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585052"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524970"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Excel
   Cette procédure pas à pas montre comment lier des données à des contrôles dans un volet actions dans Microsoft Office Excel. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
@@ -67,7 +69,7 @@ ms.locfileid: "91585052"
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>Pour ajouter une nouvelle source de données au projet
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
 2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91585052"
 
 8. Activez la case à cocher en regard de la table **Suppliers** .
 
-9. Développez la table **Products** et sélectionnez **ProductName**, **RéfFournisseur**, **QuantityPerUnit**et **UnitPrice**.
+9. Développez la table **Products** et sélectionnez **ProductName**, **RéfFournisseur**, **QuantityPerUnit** et **UnitPrice**.
 
 10. Cliquez sur **Terminer**.
 

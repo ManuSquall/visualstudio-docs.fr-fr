@@ -1,5 +1,7 @@
 ---
 title: Mettre à niveau et migrer des solutions Office
+description: Vous devez mettre à niveau le projet pour l’utiliser dans les versions actuelles de Visual Studio si vous avez un projet Offince qui a été créé dans une version antérieure de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b18b61ad6854be654582fe8a8a76da185ec9d89e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808787"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526612"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Mettre à niveau et migrer des solutions Office
   Si vous disposez d'un projet Microsoft Office créé dans une version antérieure de Visual Studio, vous devez effectuer une mise à niveau du projet afin de l'utiliser dans la version actuelle de Visual Studio. Pour mettre à niveau un projet Microsoft Office, ouvrez-le dans une version de Visual Studio qui inclut les outils de développement Microsoft Office. Pour plus d’informations sur les versions de Visual Studio qui incluent les outils de développement Microsoft Office, consultez [configurer un ordinateur pour développer des solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).

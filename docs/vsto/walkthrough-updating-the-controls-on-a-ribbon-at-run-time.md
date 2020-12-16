@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : mettre à jour les contrôles sur un ruban au moment de l’exécution'
+description: Découvrez comment vous pouvez utiliser le modèle objet de ruban pour mettre à jour les contrôles sur un ruban après le chargement du ruban dans l’application Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298052"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526047"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Procédure pas à pas : mettre à jour les contrôles sur un ruban au moment de l’exécution
 
@@ -134,7 +136,7 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 1. Dans le menu **Données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-     L' **Assistant Configuration de source de données**démarre.
+     L' **Assistant Configuration de source de données** démarre.
 
 2. Sélectionnez **base de données**, puis cliquez sur **suivant**.
 

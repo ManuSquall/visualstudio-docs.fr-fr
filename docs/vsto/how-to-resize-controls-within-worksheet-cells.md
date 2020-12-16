@@ -1,5 +1,7 @@
 ---
 title: 'Comment : redimensionner des contrôles dans des cellules de feuille de calcul'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour redimensionner des contrôles dans des cellules de feuille de calcul Microsoft Excel au moment de la conception et au moment de l’exécution.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545871"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525343"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Comment : redimensionner des contrôles dans des cellules de feuille de calcul
   Lorsque vous redimensionnez des colonnes ou des lignes dans une feuille de calcul, tous les contrôles hôtes dans les cellules se redimensionnent automatiquement à la hauteur ou à la largeur de la cellule qui a été redimensionnée. Par défaut, les contrôles Windows Forms ne sont pas redimensionnés automatiquement.
@@ -41,7 +43,7 @@ ms.locfileid: "85545871"
 
 3. Dans la boîte de dialogue **format de contrôle** , cliquez sur l’onglet **Propriétés** .
 
-4. Sous **positionnement**de l’objet, sélectionnez l’option **déplacer et dimensionner avec les cellules** , puis cliquez sur **OK**.
+4. Sous **positionnement** de l’objet, sélectionnez l’option **déplacer et dimensionner avec les cellules** , puis cliquez sur **OK**.
 
      Lorsque vous redimensionnez la cellule qui contient le contrôle, le contrôle est redimensionné pour s’ajuster à la cellule.
 

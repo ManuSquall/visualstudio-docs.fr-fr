@@ -1,5 +1,7 @@
 ---
 title: Utiliser des contrôles WPF dans les solutions Office
+description: Découvrez comment vous pouvez utiliser des contrôles Windows Presentation Foundation (WPF) pour concevoir des interfaces utilisateur dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189754"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526440"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Utiliser des contrôles WPF dans les solutions Office
 

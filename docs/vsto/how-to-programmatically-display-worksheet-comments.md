@@ -1,5 +1,7 @@
 ---
 title: 'Comment : afficher des commentaires de feuille de calcul par programmation'
+description: Découvrez comment vous pouvez afficher et masquer des commentaires dans une feuille de calcul Microsoft Excel au niveau du document ou de l’application par programmation.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ae98f6b6e4508f76323b0b06dab3693f0ac5d0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543362"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525838"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Comment : afficher des commentaires de feuille de calcul par programmation
   Vous pouvez afficher et masquer des commentaires dans des feuilles de calcul Microsoft Office Excel par programmation.

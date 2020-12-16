@@ -1,5 +1,7 @@
 ---
 title: ListObject (contrôle)
+description: Le contrôle ListObject est une liste qui expose des événements et qui peut être liée à des données. En outre, vous pouvez ajouter des contrôles ListObject à une feuille de calcul au moment du design ou au moment de l’exécution.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b5286a4bddff2b529abd0a565bb4dbeef7ffaf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a80b56134f59975a39d24e824b6c83b2513b163
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251864"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526595"
 ---
 # <a name="listobject-control"></a>ListObject (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> est une liste qui expose des événements et qui peut être liée à des données. Quand vous ajoutez une liste à une feuille de calcul, Visual Studio crée un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> que vous pouvez programmer directement, sans devoir parcourir le modèle objet Microsoft Office Excel.

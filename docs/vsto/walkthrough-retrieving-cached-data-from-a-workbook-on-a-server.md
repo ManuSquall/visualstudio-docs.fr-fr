@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : récupération des données mises en cache d’un classeur sur un serveur'
+description: Découvrez comment récupérer des données d’un DataSet mis en cache dans un classeur Microsoft Excel sans démarrer Excel à l’aide de la classe ServerDocument.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584948"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524836"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Procédure pas à pas : récupération des données mises en cache d’un classeur sur un serveur
   Cette procédure pas à pas montre comment récupérer des données d’un DataSet mis en cache dans un Microsoft Office classeur Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -93,7 +95,7 @@ ms.locfileid: "91584948"
 
 1. Dans **Explorateur de solutions**, cliquez sur le projet **AdventureWorksDataSet** .
 
-2. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+2. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
 3. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -101,7 +103,7 @@ ms.locfileid: "91584948"
 
 5. Si vous disposez d’une connexion existante à la base de données AdventureWorksLT, choisissez cette connexion et cliquez sur **suivant**.
 
-    Sinon, cliquez sur **Nouvelle connexion**et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+    Sinon, cliquez sur **Nouvelle connexion** et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
 6. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 

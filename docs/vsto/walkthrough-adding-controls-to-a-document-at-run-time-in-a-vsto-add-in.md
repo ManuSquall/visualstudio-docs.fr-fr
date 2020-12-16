@@ -1,5 +1,7 @@
 ---
 title: Ajouter des contrôles au document au moment de l’exécution dans le complément VSTO
+description: Découvrez comment utiliser le ruban pour permettre aux utilisateurs d’ajouter une classe de bouton ou une interface RichTextContentControl à un document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254171"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526288"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Procédure pas à pas : ajout de contrôles à un document au moment de l’exécution dans un complément VSTO
   Vous pouvez ajouter des contrôles à tout document Microsoft Office Word ouvert à l’aide d’un complément VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d’ajouter un <xref:Microsoft.Office.Tools.Word.Controls.Button> ou un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> à un document.
@@ -178,12 +180,12 @@ ms.locfileid: "71254171"
 ## <a name="next-steps"></a>Étapes suivantes
  Pour en savoir plus sur les contrôles dans les compléments VSTO, consultez les rubriques suivantes :
 
-- Pour obtenir un exemple qui montre comment ajouter de nombreux autres types de contrôles à un document au moment de l’exécution et comment recréer les contrôles lorsque le document est rouvert, consultez l’exemple de contrôles dynamiques de complément Word dans les [exemples et les procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md).
+- Pour obtenir un exemple qui montre comment ajouter de nombreux autres types de contrôles à un document au moment de l’exécution et comment recréer les contrôles lorsque le document est rouvert, consultez l’exemple Word Add-In Dynamic Controls dans les [exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md).
 
 - Pour obtenir une procédure pas à pas qui montre comment ajouter des contrôles à une feuille de calcul à l’aide d’un complément VSTO pour Excel, consultez [procédure pas à pas : ajouter des contrôles à une feuille de calcul au moment de l’exécution dans un projet de complément VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [solutions Word](../vsto/word-solutions.md)
+- [Solutions Word](../vsto/word-solutions.md)
 - [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Rendre des contrôles dynamiques persistants dans des documents Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Comment : ajouter des contrôles Windows Forms à des documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

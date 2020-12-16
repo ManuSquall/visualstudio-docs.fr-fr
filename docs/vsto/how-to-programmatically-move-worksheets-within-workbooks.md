@@ -1,5 +1,7 @@
 ---
 title: 'Comment : déplacer des feuilles de calcul dans des classeurs par programmation'
+description: Découvrez comment vous pouvez modifier par programmation la position des feuilles de calcul par rapport à d’autres feuilles de calcul dans un classeur Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fca9d466f3af8a0dd3191f2845613fc9b43ec549
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 165ac8f440b33d68dc70530731a5528ae23726b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584215"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525584"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Comment : déplacer des feuilles de calcul dans des classeurs par programmation
   Vous pouvez modifier par programmation la position des feuilles de calcul les unes par rapport aux autres dans un classeur. Si vous ne spécifiez pas d’emplacement pour la feuille déplacée, Excel crée un classeur pour le contenir.
