@@ -1,5 +1,7 @@
 ---
 title: Créer votre première personnalisation au niveau du document pour Excel
+description: Créer une personnalisation au niveau du document pour Microsoft Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585000"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527943"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : création de votre première personnalisation au niveau du document pour Excel
 

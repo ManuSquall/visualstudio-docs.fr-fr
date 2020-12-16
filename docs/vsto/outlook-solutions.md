@@ -1,5 +1,7 @@
 ---
 title: Outlook (solutions)
+description: Découvrez comment vous pouvez utiliser les compléments VSTO pour automatiser Outlook, étendre les fonctionnalités d’Outlook ou personnaliser l’interface utilisateur d’Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985670"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527551"
 ---
 # <a name="outlook-solutions"></a>Outlook (solutions)
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office Outlook. Vous pouvez utiliser les compléments VSTO pour automatiser Outlook, étendre les fonctionnalités d'Outlook ou personnaliser l'interface utilisateur d'Outlook. Pour plus d’informations sur les compléments VSTO, consultez [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
@@ -70,5 +72,5 @@ ms.locfileid: "72985670"
 |-----------|-----------------|
 |[Vue d’ensemble du modèle objet Outlook](../vsto/outlook-object-model-overview.md)|Fournit une vue d'ensemble des objets qui sont fournis par le modèle objet Outlook.|
 |[Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)|Décrit les outils fournis par Visual Studio qui simplifient la conception, le développement et le débogage des zones de formulaire.|
-|[Procédure pas à pas : créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Explique comment créer un complément VSTO pour Microsoft Office Outlook.|
+|[Procédure pas à pas : créer votre première Add-In VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Explique comment créer un complément VSTO pour Microsoft Office Outlook.|
 |[Outlook 2010 dans le développement Office](/previous-versions/office/developer/office-2010/ff458122(v=office.14))|Zone de MSDN Library où vous pouvez rechercher des articles et de la documentation de référence sur le développement de solutions Outlook (non spécifiques au développement d'Office à l'aide de Visual Studio).|

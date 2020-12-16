@@ -1,5 +1,7 @@
 ---
 title: Solutions de projet
+description: Découvrez comment vous pouvez utiliser les compléments VSTO pour automatiser Project, étendre les fonctionnalités du projet ou personnaliser l’interface utilisateur du projet.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985634"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527509"
 ---
 # <a name="project-solutions"></a>Solutions de projet
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office Project. Vous pouvez utiliser les compléments VSTO pour automatiser Project, étendre les fonctionnalités de Project ou personnaliser l’interface utilisateur de Project.
@@ -66,10 +68,10 @@ ms.locfileid: "72985634"
 - [Procédure pas à pas : créer votre premier complément VSTO pour Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [Prise en main de la programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)
 - [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)
-- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)
 - [Project 2010 et Project Server 2010 dans le développement Office](/previous-versions/office/developer/office-2010/ee758031(v=office.14))

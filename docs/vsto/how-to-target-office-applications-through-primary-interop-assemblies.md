@@ -1,5 +1,7 @@
 ---
 title: Cibler des applications Office par le biais d’assemblys PIA
+description: Découvrez comment vous pouvez utiliser Visual Studio pour cibler par programmation Microsoft Office applications par le biais d’assemblys PIA (Primary Interop Assembly).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545767"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528106"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Comment : cibler des applications Office par le biais d’assemblys PIA
   Quand vous créez un projet Office, Visual Studio ajoute automatiquement des références aux assemblys PIA (Primary Interop Assembly) Microsoft Office qui sont requises pour générer le projet Vous devez ajouter des références aux autres assemblys PIA dans les scénarios suivants :
@@ -52,7 +54,7 @@ ms.locfileid: "85545767"
      Le nom de l’assembly apparaît dans le dossier **références** de **Explorateur de solutions**.
 
 ## <a name="see-also"></a>Voir aussi
-- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 - [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)
 - [Développer des solutions Office](../vsto/developing-office-solutions.md)
 - [Comment : installer les assemblys PIA (Primary Interop Assembly) Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

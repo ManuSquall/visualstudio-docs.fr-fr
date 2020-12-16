@@ -1,5 +1,7 @@
 ---
 title: Migrer des solutions Office vers le .NET Framework 4 ou version ultérieure
+description: Découvrez comment vous pouvez migrer des solutions Office vers le .NET Framework 4 ou version ultérieure pour que votre projet continue à fonctionner.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86b975b7e84c69ff072df06e0a2c7701ab1909e7
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584488"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528460"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Migrer des solutions Office vers le .NET Framework 4 ou version ultérieure
   Si la version cible du .NET Framework d’un projet Office est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] version ou ultérieure d’une version antérieure du .NET Framework, certaines étapes supplémentaires peuvent être nécessaires pour continuer à exécuter la solution sur les ordinateurs de développement et les ordinateurs des utilisateurs finaux. Pour plus d’informations, consultez [modifications requises pour exécuter des projets Office que vous migrez vers le .NET Framework 4 ou le .NET Framework 4,5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).

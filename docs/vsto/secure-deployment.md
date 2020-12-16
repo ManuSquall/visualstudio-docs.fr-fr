@@ -1,5 +1,7 @@
 ---
 title: Déploiement sécurisé
+description: Découvrez comment vous devez fournir une preuve sur laquelle baser une décision d’approbation en signant la solution avec un certificat ou en utilisant la clé d’invite d’approbation ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810952"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528467"
 ---
 # <a name="secure-deployment"></a>Déploiement sécurisé
   Lorsque vous créez une solution Office, votre ordinateur de développement est automatiquement mis à jour pour permettre l’exécution du code de votre projet. Toutefois, lorsque vous déployez votre solution, vous devez fournir une preuve sur laquelle baser une décision d’approbation en signant la solution à l’aide d’un certificat ou de la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation. Pour plus d’informations, consultez accorder un niveau [de confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md).
@@ -32,9 +34,9 @@ ms.locfileid: "90810952"
 ## <a name="prevent-office-solutions-from-running-code"></a>Empêcher l’exécution de code dans les solutions Office
  Les administrateurs peuvent utiliser le registre pour empêcher l’exécution de toutes les solutions Office sur un ordinateur. Quand une solution Office avec des extensions de code managé est ouverte, le Visual Studio Tools pour Office Runtime vérifie s’il existe une entrée portant le nom `Disabled` sous l’une des clés de Registre suivantes sur l’ordinateur :
 
-- **HKEY_CURRENT_USER \Software\Microsoft\VSTO**
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE \Software\Microsoft\VSTO**
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
 
   Pour empêcher les solutions Office d’exécuter du code, créez une `Disabled` entrée sous l’une ou les deux clés de Registre, puis spécifiez l’un des types de données et valeurs suivants pour `Disabled` :
 

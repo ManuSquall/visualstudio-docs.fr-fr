@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : créer votre premier complément VSTO pour Excel'
+description: Créez un complément de niveau application pour Microsoft Excel. Les fonctionnalités que vous créez sont disponibles pour l’application elle-même, quels que soient les classeurs ouverts.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69548017"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527914"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procédure pas à pas : créer votre premier complément VSTO pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer un complément de niveau application pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les classeurs ouverts.
@@ -134,7 +136,7 @@ ms.locfileid: "69548017"
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [solutions Excel](../vsto/excel-solutions.md)
+- [Solutions Excel](../vsto/excel-solutions.md)
 - [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)
 - [Vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md)
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)

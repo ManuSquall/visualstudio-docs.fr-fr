@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des modèles de projet Office
+description: Découvrez comment les outils de développement Microsoft Office dans Visual Studio incluent des modèles de projet pour la création de différents types de solutions Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926601"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528074"
 ---
 # <a name="office-project-templates-overview"></a>Vue d’ensemble des modèles de projet Office
   Les Outils de développement Microsoft Office dans Visual Studio incluent des modèles de projet pour la création des types suivants de solutions Office :
@@ -83,9 +85,9 @@ ms.locfileid: "68926601"
 
 - [Personnaliser les personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
 
-- [solutions Word](../vsto/word-solutions.md)
+- [Solutions Word](../vsto/word-solutions.md)
 
-- [solutions Excel](../vsto/excel-solutions.md)
+- [Solutions Excel](../vsto/excel-solutions.md)
 
 - [Procédure pas à pas : création de votre première personnalisation au niveau du document pour Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
@@ -164,7 +166,7 @@ ms.locfileid: "68926601"
  Si un modèle Microsoft Office Word a des extensions de code managé, l'assembly de projet n'est pas appelé si le modèle est attaché en tant que modèle global ou chargé à partir du répertoire de démarrage de Word. En outre, le document ne reconnaît pas le format d'un modèle faisant partie d'une solution Office.
 
 ## <a name="excel-add-ins-xla-files"></a>Compléments Excel (fichiers. xla)
- Il n’existe aucun projet Office pour créer un complément VSTO Excel (fichier *. xla* ). Il est possible d'enregistrer un classeur en tant que fichier .xla, mais cette opération, qui n'est pas prise en charge, n'est pas recommandée. Si vous enregistrez un classeur qui a des extensions de code managé sous forme de **Microsoft Office fichier de complément Excel ( \* . xla)** , vous pouvez le sélectionner dans la boîte de dialogue **compléments** pour l’appliquer à un autre classeur. Dans certains cas, votre code s’exécutera dans le classeur cible après l’application du complément VSTO, mais une telle utilisation de la solution Office n’est pas prise en charge.
+ Il n’existe aucun projet Office pour créer un complément VSTO Excel (fichier *. xla* ). Il est possible d'enregistrer un classeur en tant que fichier .xla, mais cette opération, qui n'est pas prise en charge, n'est pas recommandée. Si vous enregistrez un classeur qui a des extensions de code managé sous la forme d’un fichier **Microsoft Office Excel Add-In ( \* . xla)** , vous pouvez le sélectionner dans la boîte de dialogue **compléments** pour l’appliquer à un autre classeur. Dans certains cas, votre code s’exécutera dans le classeur cible après l’application du complément VSTO, mais une telle utilisation de la solution Office n’est pas prise en charge.
 
 ## <a name="see-also"></a>Voir aussi
 - [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)

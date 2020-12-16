@@ -1,5 +1,7 @@
 ---
 title: 'Comment : sélectionner des feuilles de calcul par programmation'
+description: Utilisez Visual Studio pour sélectionner des feuilles de calcul Microsoft Excel par programmation avec l’élément hôte de feuille de calcul ou la collection Sheets du classeur Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ddef833feeb4e59f5e9e9b2c95a2170ee3c2530
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547002"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528552"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Comment : sélectionner des feuilles de calcul par programmation
   La méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> méthode sélectionne l'objet spécifié, ce qui déplace la sélection de l'utilisateur vers le nouvel objet. Utilisez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> si vous souhaitez donner le focus à l'objet sans modifier la sélection de l'utilisateur.

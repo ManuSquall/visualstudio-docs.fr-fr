@@ -1,5 +1,7 @@
 ---
 title: 'Comment : supprimer des feuilles de calcul à partir de classeurs par programmation'
+description: Découvrez comment vous pouvez supprimer par programmation une feuille de calcul dans un classeur Microsoft Excel à l’aide de l’élément hôte de feuille de calcul, par exemple.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585247"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527776"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Comment : supprimer des feuilles de calcul à partir de classeurs par programmation
   Vous pouvez supprimer toute feuille de calcul dans un classeur. Pour supprimer une feuille de calcul, utilisez l’élément hôte de feuille de calcul ou accédez à la feuille de calcul à l’aide de la collection Sheets du classeur.

@@ -1,5 +1,7 @@
 ---
 title: Élément hôte de classeur
+description: Découvrez que l’élément hôte de classeur est un type qui étend le type de classeur à partir de l’assembly PIA (Primary Interop Assembly) pour Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d3d5b7efadefd77be7ce25026c8f485ee0ef133
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255080"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528351"
 ---
 # <a name="workbook-host-item"></a>Élément hôte de classeur
   L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> est un type qui étend le type <xref:Microsoft.Office.Interop.Excel.Workbook> à partir de l’assembly PIA (Primary Interop Assembly) pour Excel. L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> fournit les mêmes propriétés, méthodes et événements qu’un objet <xref:Microsoft.Office.Interop.Excel.Workbook> , mais il offre également d’autres fonctionnalités.

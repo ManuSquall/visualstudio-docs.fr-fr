@@ -1,5 +1,7 @@
 ---
 title: Protection par mot de passe sur les documents Office
+description: Découvrez comment définir un mot de passe pour vos documents Microsoft Word et vos classeurs Excel afin qu’ils ne puissent pas être ouverts par des utilisateurs non autorisés.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977898"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528062"
 ---
 # <a name="password-protection-on-office-documents"></a>Protection par mot de passe sur les documents Office
   Il est possible de définir un mot de passe dans vos documents Word Microsoft Office et Microsoft Office classeurs Excel afin qu’ils ne puissent pas être ouverts par une personne qui ne connaît pas le mot de passe. Cette option est appelée **mot de passe à l’ouverture**.

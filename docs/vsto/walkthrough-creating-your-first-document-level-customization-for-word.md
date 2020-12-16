@@ -1,5 +1,6 @@
 ---
 title: Créer votre première personnalisation au niveau du document pour Word
+description: Créer une personnalisation au niveau du document pour Microsoft Word. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un document spécifique est ouvert.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584987"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527073"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Procédure pas à pas : création de votre première personnalisation au niveau du document pour Word
 

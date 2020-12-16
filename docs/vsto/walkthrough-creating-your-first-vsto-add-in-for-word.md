@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : créer votre premier complément VSTO pour Word'
+description: Créez un complément de niveau application pour Microsoft Word. Cette fonctionnalité est disponible pour l’application elle-même, quels que soient les documents ouverts.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839349"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527870"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procédure pas à pas : créer votre premier complément VSTO pour Word
   Cette première procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Word. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les documents ouverts.

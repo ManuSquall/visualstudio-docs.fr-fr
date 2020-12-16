@@ -1,5 +1,7 @@
 ---
 title: 'Comment : définir des options de recherche dans Word par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour définir par programmation des options de recherche pour des sélections dans Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45af6a801a146838919402c31be502cf4825e718
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546989"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528562"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Comment : définir des options de recherche dans Word par programmation
   Il existe deux façons de définir des options de recherche pour des sélections dans des documents Word Microsoft Office :

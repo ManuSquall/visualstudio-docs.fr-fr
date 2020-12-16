@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du modèle objet de ruban
+description: Découvrez comment le Visual Studio Tools pour Office Runtime expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban au moment de l’exécution.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256018"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527987"
 ---
 # <a name="ribbon-object-model-overview"></a>Vue d’ensemble du modèle objet de ruban
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban au moment de l’exécution. Par exemple, vous pouvez remplir dynamiquement des contrôles de menu ou afficher et masquer des contrôles en contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant que le ruban soit chargé par l’application Office. Pour plus d’informations, consultez [définir les propriétés qui passent en lecture seule](#SettingReadOnlyProperties).
@@ -37,7 +39,7 @@ ms.locfileid: "71256018"
 |Événement|Description|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Déclenché lorsque l’application Office charge la personnalisation du ruban. Le <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> Gestionnaire d’événements est ajouté automatiquement au fichier de code du ruban. Utilisez ce gestionnaire d’événements pour exécuter du code personnalisé lors du chargement du ruban.|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Vous permet de mettre en cache des images dans la personnalisation du ruban lors du chargement du ruban. Vous pouvez obtenir un léger gain de performances si vous écrivez du code pour mettre en cache les images du ruban dans ce gestionnaire d’événements. Pour plus d'informations, consultez <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Vous permet de mettre en cache des images dans la personnalisation du ruban lors du chargement du ruban. Vous pouvez obtenir un léger gain de performances si vous écrivez du code pour mettre en cache les images du ruban dans ce gestionnaire d’événements. Pour plus d’informations, consultez <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Déclenché lorsque l’instance de ruban se ferme.|
 
 ## <a name="ribbon-controls"></a><a name="RibbonControlClasses"></a> Contrôles de ruban
@@ -54,13 +56,13 @@ ms.locfileid: "71256018"
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
 |**Liste déroulante**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Office**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Groupe**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Étiquette**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Séparateur**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**Onglet**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  L' <xref:Microsoft.Office.Tools.Ribbon> espace de noms utilise le préfixe « Ribbon » pour ces types afin d’éviter une collision de noms avec les noms des classes de contrôle dans l' <xref:System.Windows.Forms> espace de noms.
@@ -145,7 +147,7 @@ ms.locfileid: "71256018"
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**Éléments**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
+|**Nom**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
 |**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Stopp**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
@@ -170,7 +172,7 @@ ms.locfileid: "71256018"
 
 |Événement|Description|
 |-----------|-----------------|
-|Cliquez|Se produit lors d’un clic sur un contrôle.|
+|Cliquez sur|Se produit lors d’un clic sur un contrôle.|
 |TextChanged|Se produit lorsque le texte d’une zone d’édition ou d’une zone de liste déroulante est modifié.|
 |ItemsLoading|Se produit lorsque la collection d’éléments du contrôle est demandée par Office. Office met en cache la collection d’éléments jusqu’à ce que votre code modifie les propriétés du contrôle ou que vous appeliez la <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> méthode.|
 |ButtonClick|Se produit suite à un clic sur un bouton d’un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> ou <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> .|

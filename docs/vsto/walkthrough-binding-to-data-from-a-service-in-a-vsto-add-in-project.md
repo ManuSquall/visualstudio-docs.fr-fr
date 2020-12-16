@@ -1,5 +1,7 @@
 ---
 title: Lier à des données à partir d’un service dans un projet de complément VSTO
+description: Apprenez à ajouter des contrôles à un document Microsoft Word, à lier les contrôles aux données récupérées à partir du service de contenu MSDN et à répondre aux événements au moment de l’exécution.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381318"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527485"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procédure pas à pas : liaison à des données à partir d’un service dans un projet de complément VSTO
   Vous pouvez lier des données à des contrôles hôtes dans les projets de complément VSTO. Cette procédure pas à pas montre comment ajouter des contrôles à un document Microsoft Office Word, comment lier les contrôles aux données extraites du service de contenu MSDN et comment répondre aux événements au moment de l’exécution.
@@ -43,7 +45,7 @@ ms.locfileid: "72381318"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  La première étape consiste à créer un projet de complément VSTO Word.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet

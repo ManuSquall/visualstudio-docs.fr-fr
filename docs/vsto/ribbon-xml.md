@@ -1,5 +1,7 @@
 ---
 title: Ribbon XML
+description: Découvrez comment utiliser l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une façon qui n’est pas prise en charge par l’élément Ruban (concepteur visuel).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839482"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528418"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   L’élément Ruban (XML) vous permet de personnaliser un ruban à l’aide de XML. Utilisez l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une façon qui n’est pas prise en charge par l’élément Ruban (concepteur visuel). Pour une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).
@@ -45,7 +47,7 @@ ms.locfileid: "90839482"
   Par défaut, ces fichiers ajoutent un groupe personnalisé à l’onglet **compléments** dans le ruban.
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Afficher le ruban personnalisé dans une application Microsoft Office
- Après avoir ajouté un élément **Ruban (XML)** à votre projet, vous devez ajouter du code à la classe **ThisAddIn**, **ThisWorkbook**ou **ThisDocument** qui remplace la `CreateRibbonExtensibilityObject` méthode et retourne la classe Ribbon XML à l’application Office.
+ Après avoir ajouté un élément **Ruban (XML)** à votre projet, vous devez ajouter du code à la classe **ThisAddIn**, **ThisWorkbook** ou **ThisDocument** qui remplace la `CreateRibbonExtensibilityObject` méthode et retourne la classe Ribbon XML à l’application Office.
 
  L'exemple de code suivant remplace la méthode `CreateRibbonExtensibilityObject` et retourne une classe XML de ruban nommée MyRibbon.
 
@@ -71,7 +73,7 @@ ms.locfileid: "90839482"
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />
 ```
 
- La méthode**onAction** est appelée quand l'utilisateur exécute la tâche principale associée à un contrôle particulier. Par exemple, la méthode de rappel **onAction** d'un bouton bascule est appelée quand l'utilisateur clique sur le bouton.
+ La méthode **onAction** est appelée quand l'utilisateur exécute la tâche principale associée à un contrôle particulier. Par exemple, la méthode de rappel **onAction** d'un bouton bascule est appelée quand l'utilisateur clique sur le bouton.
 
  La méthode que vous spécifiez dans l'attribut peut avoir un nom quelconque. Toutefois, ce nom doit correspondre au nom de la méthode que vous définissez dans le fichier de code du ruban.
 
@@ -133,7 +135,7 @@ ms.locfileid: "90839482"
  Les éléments et les attributs par défaut figurant dans le fichier XML du ruban sont un petit sous-ensemble des éléments et attributs disponibles. Pour obtenir la liste complète des éléments et attributs disponibles, consultez l’article technique [personnaliser l’interface utilisateur du ruban Office (2007) pour les développeurs (partie 2 sur 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
 ## <a name="ribbon-class-reference"></a><a name="RibbonExtensionClass"></a> Référence de classe du ruban
- Visual Studio génère la classe du ruban dans le fichier de code du ruban. Ajoutez à cette classe les méthodes de rappel pour les contrôles du ruban. Cette classe implémente l’interface <xref:Microsoft.Office.Core.IRibbonExtensibility>.
+ Visual Studio génère la classe du ruban dans le fichier de code du ruban. Ajoutez à cette classe les méthodes de rappel pour les contrôles du ruban. Cette classe implémente l'interface <xref:Microsoft.Office.Core.IRibbonExtensibility> .
 
  Le tableau suivant décrit les méthodes par défaut de cette classe.
 

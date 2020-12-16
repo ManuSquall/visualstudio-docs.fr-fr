@@ -1,5 +1,7 @@
 ---
 title: Enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
+description: Découvrez comment vous pouvez utiliser Visual Studio pour enregistrer par programme des pièces jointes à partir d’éléments de messagerie Microsoft Outlook.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3ade05e936397f72a0b370cb69d8be3310c3aee8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d33c2c820f03d7fb40c953165f62943e44648082
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584766"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528249"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Comment : enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
 

@@ -1,5 +1,7 @@
 ---
 title: solutions InfoPath
+description: Découvrez comment vous pouvez utiliser Visual Studio pour créer des compléments VSTO pour Microsoft InfoPath 2013 et InfoPath 2010.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3223b5c8211719ad04b2ea7af8079932f6631e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8d5e26614c7f06c803093cd7e19b7e9842b397fb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808800"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527736"
 ---
 # <a name="infopath-solutions"></a>solutions InfoPath
   Visual Studio fournit des modèles de projet à l’aide desquels vous pouvez créer des compléments VSTO pour Microsoft Office InfoPath 2013 et InfoPath 2010. InfoPath n’est pas disponible dans Office 2016.

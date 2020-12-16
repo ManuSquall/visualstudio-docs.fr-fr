@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du ruban
+description: Découvrez comment le ruban est un moyen d’organiser les commandes associées afin qu’elles soient plus faciles à trouver et comment les commandes s’affichent sous forme de contrôles sur le ruban.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985609"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527973"
 ---
 # <a name="ribbon-overview"></a>Vue d’ensemble du ruban
   Le ruban est un moyen d’organiser les commandes associées afin qu’elles soient plus faciles à trouver. Les commandes apparaissent sous forme de contrôles sur le ruban. Les contrôles sont organisés en *groupes* le long d’une bande horizontale au bord supérieur d’une fenêtre d’application. Les groupes connexes sont organisés sur les onglets.
@@ -93,7 +95,7 @@ ms.locfileid: "72985609"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Ajouter plusieurs éléments de ruban à un projet
  Vous pouvez ajouter plusieurs éléments de ruban à un seul projet. Cela est utile si vous souhaitez effectuer l'une des deux tâches suivantes :
 
-- Créer des rubans pour les *inspecteurs*Outlook. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Créer des rubans pour les *inspecteurs* Outlook. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     > Un inspecteur est une fenêtre qui s'ouvre lorsque les utilisateurs effectuent certaines tâches, telles que la création d'un message électronique.

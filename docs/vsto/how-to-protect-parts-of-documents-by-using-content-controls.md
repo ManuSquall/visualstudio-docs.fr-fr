@@ -1,5 +1,7 @@
 ---
 title: 'Comment : protéger des parties de documents à l’aide de contrôles de contenu'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour protéger des parties d’un document Microsoft Word à l’aide de contrôles de contenu.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 813bb829e3be243a9812a8856bf4fcfa6de2fd22
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 83052ca3c61fe931c3360a1092ca23740ddcff3f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581076"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528232"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Comment : protéger des parties de documents à l’aide de contrôles de contenu
   Quand vous protégez une partie d'un document, vous empêchez les utilisateurs de modifier ou de supprimer le contenu dans cette partie du document. Il existe plusieurs manières de protéger des parties d'un document Microsoft Office Word à l'aide de contrôles de contenu :
@@ -46,7 +48,7 @@ ms.locfileid: "91581076"
 
 2. Dans la fenêtre **Propriétés** , définissez l’une des propriétés suivantes, ou les deux :
 
-    - Pour empêcher les utilisateurs de modifier le contrôle, affectez la valeur **true**à **LockContents** .
+    - Pour empêcher les utilisateurs de modifier le contrôle, affectez la valeur **true** à **LockContents** .
 
     - Pour empêcher les utilisateurs de supprimer le contrôle, affectez à **LockContentControl** la **valeur true**.
 

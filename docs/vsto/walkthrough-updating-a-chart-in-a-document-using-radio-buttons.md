@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : mise à jour d’un graphique dans un document à l’aide de cases d’option'
+description: Découvrez comment vous pouvez utiliser des cases d’option dans une personnalisation au niveau du document pour Microsoft Word pour permettre aux utilisateurs de sélectionner des styles de graphique dans le document.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584293"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528393"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : mise à jour d’un graphique dans un document à l’aide de cases d’option
   Cette procédure pas à pas montre comment utiliser des cases d'option dans une personnalisation de document pour Microsoft Office Word dans le but de donner aux utilisateurs la possibilité de sélectionner des styles de graphique dans le document.

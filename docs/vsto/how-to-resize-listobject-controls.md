@@ -1,5 +1,7 @@
 ---
 title: 'Comment : redimensionner des contrôles ListObject'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour redimensionner des contrôles ListObject par programmation dans un classeur Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545832"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528531"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Comment : redimensionner des contrôles ListObject
   Vous définissez la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lorsque vous l’ajoutez à un classeur Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner ultérieurement. Par exemple, vous pourriez modifier une liste à deux colonnes en liste à trois colonnes.
@@ -42,7 +44,7 @@ ms.locfileid: "85545832"
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Pour redimensionner une liste à l’aide de la boîte de dialogue Redimensionner la liste
 
-1. Cliquez n’importe où dans le  <xref:Microsoft.Office.Tools.Excel.ListObject> tableau. L' **Table Tools**  >  onglet**conception** des outils de table du ruban s’affiche.
+1. Cliquez n’importe où dans le  <xref:Microsoft.Office.Tools.Excel.ListObject> tableau. L'   >  onglet **conception** des outils de table du ruban s’affiche.
 
 2. Dans la section Propriétés, cliquez sur **redimensionner la table**.
 

@@ -1,5 +1,7 @@
 ---
 title: Propriétés dans les projets Office
+description: En savoir plus sur les propriétés disponibles pour les projets Office dans Visual Studio à l’aide de l’Fenêtre Propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9fc2a0774206eac0c9295a425d81555ffdd3cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc54de3935646e36f9d4f09727037de4c373c92
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561361"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528022"
 ---
 # <a name="properties-in-office-projects"></a>Propriétés dans les projets Office
   Plusieurs propriétés importantes peuvent être définies pour les projets Office dans Visual Studio. Ces propriétés sont disponibles dans la fenêtre **Propriétés** .

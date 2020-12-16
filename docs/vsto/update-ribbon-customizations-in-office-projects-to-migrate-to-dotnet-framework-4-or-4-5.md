@@ -1,5 +1,7 @@
 ---
 title: Mettre à jour les personnalisations du ruban migrées vers .NET Framework 4,5
+description: Découvrez que vous devez apporter des modifications à votre code de projet si la version cible de .NET Framework est remplacée par la .NET Framework 4 ou une version ultérieure.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a831bced793f13394a89d278a6be1cda959c775a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298602"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527937"
 ---
 # <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Mettre à jour les personnalisations du ruban migrées vers .NET Framework 4,5
 

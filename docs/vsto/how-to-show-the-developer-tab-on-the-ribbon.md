@@ -1,5 +1,7 @@
 ---
 title: 'Comment : afficher l’onglet Développeur sur le ruban'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour afficher par programmation l’onglet Développeur sur le ruban dans un document Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545845"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528146"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Comment : afficher l’onglet Développeur sur le ruban
   Pour accéder à l’onglet **développeur** sur le ruban d’une application Office, vous devez le configurer pour afficher cet onglet, car il n’apparaît pas par défaut. Par exemple, vous devez afficher cet onglet pour ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> à une personnalisation au niveau du document pour Word.
@@ -52,7 +54,7 @@ ms.locfileid: "85545845"
 
      ![Bouton Options dans Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "Bouton Options dans Outlook 2013 Preview")
 
-3. Dans la boîte de dialogue**options** de _applicationName_, choisissez le bouton **personnaliser le ruban** .
+3. Dans la boîte de dialogue **options** de _applicationName_, choisissez le bouton **personnaliser le ruban** .
 
      L’illustration suivante montre la boîte de dialogue **options** et le bouton **personnaliser le ruban** dans Excel 2010. L'emplacement de ce bouton est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.
 

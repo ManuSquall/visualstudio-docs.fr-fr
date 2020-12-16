@@ -1,5 +1,7 @@
 ---
 title: 'Comment : faire défiler des enregistrements de base de données dans une feuille de calcul'
+description: Découvrez comment vous pouvez utiliser le concepteur pour afficher un champ unique à partir d’une table de base de données dans une feuille de calcul Microsoft Excel
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545793"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528165"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Comment : faire défiler des enregistrements de base de données dans une feuille de calcul
   La procédure suivante indique comment utiliser le concepteur pour afficher un champ unique à partir d’une table de base de données dans une feuille de calcul Excel Microsoft Office, avec des contrôles qui permettent à l’utilisateur final de faire défiler tous les enregistrements.

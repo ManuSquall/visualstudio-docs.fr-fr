@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du modèle objet Visio
+description: Découvrez comment vous pouvez interagir avec le modèle objet Visio pour développer des solutions Office pour Microsoft Visio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88695511d22e38262dc969d66e469441c9c3ac47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9278cede2dc7f105b2741d5d63b01b4cd966c790
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985480"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528381"
 ---
 # <a name="visio-object-model-overview"></a>Vue d’ensemble du modèle objet Visio
   Pour développer les solutions Office pour Microsoft Office Visio, vous pouvez interagir avec le modèle objet Visio. Ce modèle objet se compose de classes et d'interfaces qui sont fournies dans l'assembly PIA de Visio et définies dans l'espace de noms `Microsoft.Office.Interop.Visio`.

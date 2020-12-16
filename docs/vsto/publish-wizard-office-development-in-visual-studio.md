@@ -1,5 +1,7 @@
 ---
 title: Assistant Publication (développement Office dans Visual Studio)
+description: Découvrez comment vous pouvez utiliser l’Assistant Publication pour copier des fichiers de solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810978"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528013"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistant Publication (développement Office dans Visual Studio)
   Utilisez l' **Assistant Publication** pour copier des fichiers de solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation.
@@ -39,14 +41,14 @@ ms.locfileid: "90810978"
 
 - Chemin d’accès relatif ou absolu dans le format Windows standard, tel que *C:\Deploy\MyApplication* ou *\MyApplication*.
 
-- Un chemin d’accès UNC (Universal Naming Convention), tel que * \\ \ServerName\MyApplication \\ *.
+- Un chemin d’accès UNC (Universal Naming Convention), tel que *\\ \ServerName\MyApplication \\*.
 
 - URL d’un site Web, telle que `http://www.contoso.com/MyApplication` .
 
   Par défaut, l’emplacement de publication est *http://localhost/projectname/* si IIS est installé, ou le répertoire publish \ si IIS n’est pas installé.
 
 > [!NOTE]
-> Il y a plus de points à prendre en compte si l’ordinateur cible exécute Windows Vista. Pour utiliser l’option de publication locale, vous devez être administrateur sur l’ordinateur Windows Vista. En outre, l’emplacement par défaut est toujours le répertoire de *publication \\ * , qu’IIS soit installé ou non.
+> Il y a plus de points à prendre en compte si l’ordinateur cible exécute Windows Vista. Pour utiliser l’option de publication locale, vous devez être administrateur sur l’ordinateur Windows Vista. En outre, l’emplacement par défaut est toujours le répertoire de *publication \\* , qu’IIS soit installé ou non.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Quel est le chemin d’installation par défaut sur les ordinateurs des utilisateurs finaux ?
  Le chemin d’installation est facultatif. Vous pouvez définir le chemin d’installation ultérieurement si vous préférez. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](/previous-versions/bb608626(v=vs.110)).

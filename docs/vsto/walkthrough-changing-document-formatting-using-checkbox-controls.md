@@ -1,5 +1,7 @@
 ---
 title: Modifier la mise en forme d’un document à l’aide de contrôles CheckBox
+description: Apprenez à utiliser les contrôles Windows Forms dans une personnalisation au niveau du document pour Microsoft Word afin de modifier la mise en forme du texte.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328726"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527248"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procédure pas à pas : modifier la mise en forme d’un document à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre comment utiliser des contrôles Windows Forms dans une personnalisation au niveau du document pour Microsoft Office Word afin de modifier la mise en forme du texte.
@@ -48,7 +50,7 @@ ms.locfileid: "67328726"
 ## <a name="create-the-project"></a>Créer le projet
  La première étape consiste à créer un projet de document Word.
 
-### <a name="create-a-new-project"></a>Création d'un projet
+### <a name="create-a-new-project"></a>Créer un projet
 
 1. Créez un projet de document Word portant le nom **My Word Formatting**. Dans l’Assistant, sélectionnez **créer un nouveau document**.
 
@@ -138,7 +140,7 @@ ms.locfileid: "67328726"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre document pour vérifier que le texte est mis en forme correctement lorsque vous activez ou désactivez une case à cocher.
 
 ### <a name="test-your-document"></a>Tester votre document

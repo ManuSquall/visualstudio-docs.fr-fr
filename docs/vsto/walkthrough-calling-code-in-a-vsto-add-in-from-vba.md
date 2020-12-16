@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : appel de code dans un complément VSTO à partir de VBA'
+description: Découvrez comment exposer un objet dans un complément VSTO à d’autres solutions Microsoft Office, notamment des compléments Visual Basic pour Applications (VBA) et COM VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650782"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527283"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Procédure pas à pas : appel de code dans un complément VSTO à partir de VBA
   Cette procédure pas à pas montre comment exposer un objet dans un complément VSTO à d’autres solutions Microsoft Office, notamment des compléments VSTO VBA (Visual Basic pour Applications) et COM.
@@ -54,7 +56,7 @@ ms.locfileid: "72650782"
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1. Créez un projet de complément VSTO Excel nommé **ExcelImportData**à l’aide du modèle de projet de complément VSTO Excel. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Créez un projet de complément VSTO Excel nommé **ExcelImportData** à l’aide du modèle de projet de complément VSTO Excel. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** et ajoute le projet **ExcelImportData** à **Explorateur de solutions**.
 
@@ -155,5 +157,5 @@ ms.locfileid: "72650782"
 - [Appeler du code dans des compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Développer des solutions Office](../vsto/developing-office-solutions.md)
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

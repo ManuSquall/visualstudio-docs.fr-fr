@@ -1,5 +1,7 @@
 ---
 title: Utiliser des documents
+description: Découvrez les procédures pas à pas et les exemples de code permettant d’utiliser le modèle objet de Microsoft Word pour travailler avec des documents dans les projets Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008688"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527024"
 ---
 # <a name="work-with-documents"></a>Utiliser des documents
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l'utilisation du modèle objet de Microsoft Office Word avec des documents dans des projets Office.

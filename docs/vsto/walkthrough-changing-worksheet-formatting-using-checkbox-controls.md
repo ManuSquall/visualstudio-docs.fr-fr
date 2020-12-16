@@ -1,5 +1,7 @@
 ---
 title: Modifier la mise en forme d’une feuille de calcul à l’aide de contrôles CheckBox
+description: Découvrez comment vous pouvez utiliser les outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328701"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527223"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : modifier la mise en forme d’une feuille de calcul à l’aide
   Cette procédure pas à pas montre les principes de base de l’utilisation de cases à cocher dans une feuille de calcul Excel Microsoft Office pour modifier la mise en forme. Vous allez utiliser les outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour afficher le résultat sous forme d’exemple terminé, consultez l’exemple contrôles Excel dans les [exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -143,7 +145,7 @@ ms.locfileid: "67328701"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que le texte est mis en forme correctement lorsque vous activez ou désactivez une case à cocher.
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur

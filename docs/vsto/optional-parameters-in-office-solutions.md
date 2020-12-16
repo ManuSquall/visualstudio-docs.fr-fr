@@ -1,5 +1,7 @@
 ---
 title: Paramètres facultatifs dans les solutions Office
+description: Découvrez comment vous n’êtes pas obligé de passer une valeur pour les paramètres facultatifs, car les valeurs par défaut sont automatiquement utilisées pour chaque paramètre manquant.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839930"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527576"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Paramètres facultatifs dans les solutions Office
   De nombreuses méthodes des modèles objet fournis dans les applications Microsoft Office acceptent les paramètres optionnels. Si vous utilisez Visual Basic pour développer une solution Office dans Visual Studio, vous n'avez pas besoin de passer de valeur pour les paramètres optionnels, car les valeurs par défaut sont automatiquement utilisées pour les paramètres manquants. Dans la plupart des cas, vous pouvez également omettre les paramètres optionnels dans les projets Visual C#. Toutefois, vous ne pouvez pas omettre les paramètres **ref** facultatifs de la `ThisDocument` classe dans les projets Word au niveau du document.

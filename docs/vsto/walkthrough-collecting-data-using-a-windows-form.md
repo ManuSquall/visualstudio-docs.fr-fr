@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : collecter des données à l’aide d’un Windows Form'
+description: Ouvrir un Windows Form à partir d’une personnalisation au niveau du document pour Microsoft Excel, collecter des informations auprès de l’utilisateur et écrire ces informations dans une cellule de feuille de calcul.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839449"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527173"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procédure pas à pas : collecter des données à l’aide d’un Windows Form
   Cette procédure pas à pas montre comment ouvrir un Windows Form à partir d’une personnalisation au niveau du document pour Microsoft Office Excel, recueillir des informations auprès de l’utilisateur et écrire ces informations dans une cellule de feuille de calcul.

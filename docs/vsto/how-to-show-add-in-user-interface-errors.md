@@ -1,5 +1,7 @@
 ---
 title: 'Comment : afficher les erreurs d’interface utilisateur du complément'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour afficher par programme les erreurs d’interface utilisateur du complément VTSO dans les applications Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545780"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528135"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Comment : afficher les erreurs d’interface utilisateur du complément
   Par défaut, si un complément VSTO tente de manipuler la Microsoft Office interface utilisateur et échoue, aucun message d’erreur n’est affiché. Toutefois, vous pouvez configurer les applications Microsoft Office pour afficher des messages en cas d’erreur liée à l’interface utilisateur. Vous pouvez utiliser ces messages pour vous aider à déterminer pourquoi un ruban personnalisé n’apparaît pas, ou pourquoi un ruban apparaît mais aucun contrôle n’apparaît.

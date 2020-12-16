@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508176"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527926"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
@@ -49,13 +49,13 @@ Commençons par créer un projet d’application C#. Le type de projet inclut to
 2. Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**.
    (Vous pouvez également appuyer sur **CTRL** + **MAJ** + **N**).
 
-3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Ensuite, nommez le fichier ***Calculator***.
+3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)**. Nommez ensuite le fichier **_Calculator_* _.
 
    ![Modèle de projet d’application console (.NET Core) dans la boîte de dialogue Nouveau projet dans l’IDE de Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Ajouter une charge de travail (facultatif)
 
-Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Voici comment faire.
+Si vous ne voyez pas le modèle de projet _ *application console (.net Core)**, vous pouvez l’obtenir en ajoutant la charge de travail **développement multiplateforme .net Core** . Voici comment faire.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
 
@@ -311,7 +311,7 @@ Nous allons modifier le code pour gérer cette erreur.
 
 Maintenant, quand vous divisez n’importe quel nombre par zéro, l’application vous demande un autre nombre. Mieux encore : il ne s’arrête pas de demander tant que vous n’avez pas fourni un nombre autre que zéro.
 
-   ![L’éditeur de code Visual Studio affiche l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero.png)
+   ![Correction de l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Corriger l’erreur de « format »
 
@@ -600,10 +600,25 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Étapes suivantes
 
+:::moniker range="vs-2017"
+
+Poursuivez avec d’autres didacticiels :
+
+> [!div class="nextstepaction"]
+> [Didacticiels C#](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Présentation de l’IDE Visual Studio](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 Passez à la deuxième partie de ce didacticiel :
 
 > [!div class="nextstepaction"]
 > [Passez à la partie 2](tutorial-console-part-2.md)
+:::moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

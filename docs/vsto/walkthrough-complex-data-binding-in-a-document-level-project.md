@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : liaison de données complexe dans un projet au niveau du document'
+description: Découvrez comment vous pouvez lier plusieurs cellules d’une feuille de calcul Microsoft Excel aux champs de la base de données Northwind SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584319"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527114"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules d’un Microsoft Office feuille de calcul Excel aux champs de la base de données Northwind SQL Server.
@@ -65,7 +67,7 @@ ms.locfileid: "91584319"
 
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher** d'  >  **autres**  >  **sources de données** Windows dans la barre de menus.
 
 2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -175,17 +177,17 @@ ms.locfileid: "91584319"
 
 1. Sélectionnez une cellule à l’intérieur de l’objet de liste.
 
-    Une nouvelle ligne apparaît en bas de la liste, avec un astérisque ( **\*** ) dans la première cellule de la nouvelle ligne.
+    Une nouvelle ligne apparaît en bas de la liste, avec un astérisque (* *\** _) dans la première cellule de la nouvelle ligne.
 
 2. Ajoutez les informations suivantes dans la ligne vide.
 
-   |EmployeeID (IDEmployé)|LastName|FirstName|Titre|
+   |EmployeeID|LastName|FirstName|Titre|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Directeur commercial|
 
 ### <a name="to-delete-rows"></a>Suppression de lignes
 
-- Cliquez avec le bouton droit sur le nombre 16 (ligne 16) situé à l’extrême gauche de la feuille de calcul, puis cliquez sur **supprimer**.
+- Cliquez avec le bouton droit sur le nombre 16 (ligne 16) situé à l’extrême gauche de la feuille de calcul, puis cliquez sur _ * supprimer * *.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Pour trier les lignes de la liste
 

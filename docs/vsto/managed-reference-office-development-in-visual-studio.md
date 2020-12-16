@@ -1,5 +1,7 @@
 ---
 title: Référence managée (développement Office dans Visual Studio)
+description: Découvrez la documentation de référence des API pour les espaces de noms et les types utilisés dans les projets Office qui ciblent le .NET Framework.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583747"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528507"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Référence managée (développement Office dans Visual Studio)
   Cette section contient la documentation de référence des API pour les espaces de noms et types utilisés dans les projets Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](includes/net-v45-md.md)]. Pour obtenir une documentation de référence des API sur les espaces de noms et les types utilisés dans les projets Office qui ciblent le .NET Framework 3,5, consultez la section de référence suivante dans la documentation de Visual Studio : [référence managée (développement Office dans Visual Studio)](managed-reference-office-development-in-visual-studio.md).

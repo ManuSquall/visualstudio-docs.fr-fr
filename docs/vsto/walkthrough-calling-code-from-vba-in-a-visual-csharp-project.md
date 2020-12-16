@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : appel de code à partir de VBA dans un projet Visual C#'
+description: Découvrez comment appeler une méthode dans une personnalisation au niveau du document pour Microsoft Excel à partir du code Visual Basic pour Applications (VBA) dans le classeur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297942"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527293"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procédure pas à pas : appel de code à partir de VBA dans un projet Visual C#
   Cette procédure pas à pas montre comment appeler une méthode dans une personnalisation au niveau du document pour Microsoft Office Excel à partir du code VBA (Visual Basic pour Applications) du classeur. Cette procédure comporte trois étapes de base : l'ajout d'une méthode dans la classe d'élément hôte `Sheet1` , l'exposition de la méthode au code VBA dans le classeur, puis l'appel de la méthode à partir du code VBA dans le classeur.

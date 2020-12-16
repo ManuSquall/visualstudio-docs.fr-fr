@@ -1,5 +1,7 @@
 ---
 title: Gérer des documents sur un serveur à l’aide de la classe ServerDocument
+description: Découvrez comment vous pouvez utiliser la classe ServerDocument dans le Visual Studio Tools pour Office Runtime pour gérer plusieurs aspects des personnalisations au niveau du document.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e91653734b804693584808478e44443563cdb823
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298282"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528491"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Gérer des documents sur un serveur à l’aide de la classe ServerDocument
   Vous pouvez utiliser la `ServerDocument` classe dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour gérer plusieurs aspects des personnalisations au niveau du document, même si Microsoft Office Word et Microsoft Office Excel ne sont pas installés. Vous pouvez effectuer les tâches suivantes :

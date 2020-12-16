@@ -1,5 +1,7 @@
 ---
 title: 'Comment : redimensionner des contrôles NamedRange'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour redimensionner des contrôles NamedRange par programmation dans un classeur Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7762e67b1676f72030cae8d958bef19c501660c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043def019d30ee629e672a081cd5aea73bca4304
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545819"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528186"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Comment : redimensionner des contrôles NamedRange
   Vous pouvez définir la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> quand vous l’ajoutez à un document Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner plus tard.

@@ -1,5 +1,7 @@
 ---
 title: Utiliser les fonctionnalités Office dans Visual Studio
+description: Découvrez comment le document et l’application associée d’un projet au niveau du document sont hébergés dans Visual Studio afin que vous puissiez travailler directement avec le document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982326"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528409"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Utiliser les fonctionnalités Office dans Visual Studio
   Lorsque vous créez un projet au niveau du document, le document et l’application associée sont hébergés dans Visual Studio afin que vous puissiez concevoir et travailler directement avec le document. Lorsque vous avez une application Microsoft Office ouverte dans Visual Studio, elle fonctionne généralement comme prévu. Toutefois, certaines fonctionnalités de l’application sont différentes ou inaccessibles.

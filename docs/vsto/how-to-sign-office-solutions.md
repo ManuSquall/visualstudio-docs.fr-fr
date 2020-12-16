@@ -1,5 +1,7 @@
 ---
 title: 'Comment : signer des solutions Office'
+description: Découvrez comment vous pouvez accorder la confiance à votre solution de Microsoft Office en utilisant un certificat comme preuve.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545754"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528119"
 ---
 # <a name="how-to-sign-office-solutions"></a>Comment : signer des solutions Office
   Si vous signez une solution, vous pouvez accorder la confiance à la solution en utilisant le certificat comme preuve. Vous pouvez utiliser le même certificat pour plusieurs solutions, et toutes les solutions seront approuvées sans aucune mise à jour de stratégie de sécurité supplémentaire.
@@ -35,7 +37,7 @@ ms.locfileid: "85545754"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Pour signer une solution Office à l’aide d’un certificat
 
-1. Dans le menu **projet** , cliquez sur**Propriétés**de _NomSolution_.
+1. Dans le menu **projet** , cliquez sur **Propriétés** de _NomSolution_.
 
 2. Cliquez sur l'onglet **Signature** .
 

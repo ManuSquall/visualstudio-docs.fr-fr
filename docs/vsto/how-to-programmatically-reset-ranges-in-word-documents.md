@@ -1,5 +1,7 @@
 ---
 title: 'Comment : réinitialiser des plages dans les documents Word par programmation'
+description: Découvrez comment vous pouvez utiliser Visual Studio pour redimensionner par programmation une plage existante dans un document Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fb36f825f4170a89a78bc4522d3a872bd9e5033
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b87d157344f1302d4b1ee910ee2dda449bbea5a1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584792"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527756"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Comment : réinitialiser des plages dans les documents Word par programmation
   Utilisez la méthode <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> pour redimensionner une plage existante dans un document Microsoft Office Word.

@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : liaison de contrôles de contenu à des parties XML personnalisées'
+description: Découvrez comment lier des contrôles de contenu dans une personnalisation au niveau du document pour Word à des données XML stockées dans le document.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544441"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527965"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procédure pas à pas : liaison de contrôles de contenu à des parties XML personnalisées
   Cette procédure pas à pas montre comment lier les contrôles de contenu d'une personnalisation au niveau du document pour Word aux données XML stockées dans le document.
@@ -70,7 +72,7 @@ ms.locfileid: "85544441"
 
 1. Dans le document Word qui est hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Concepteur, dans le ruban, choisissez l’onglet **Insérer** .
 
-2. Dans le groupe **tables** , choisissez **table**et insérez un tableau comportant 2 colonnes et 3 lignes.
+2. Dans le groupe **tables** , choisissez **table** et insérez un tableau comportant 2 colonnes et 3 lignes.
 
 3. Tapez un texte dans la première colonne afin qu'elle se présente de la façon suivante :
 

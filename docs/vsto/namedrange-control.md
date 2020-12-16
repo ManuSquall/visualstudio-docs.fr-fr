@@ -1,5 +1,7 @@
 ---
 title: NamedRange (contrôle)
+description: Découvrez comment le contrôle NamedRange est une plage qui possède un nom unique, qui expose des événements et qui peut être lié à des données.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254714"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528087"
 ---
 # <a name="namedrange-control"></a>NamedRange (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> est une plage qui possède un nom unique, qui expose des événements et qui peut être liée à des données. Pour plus d’informations, consultez [vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md).

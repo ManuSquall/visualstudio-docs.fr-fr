@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble des contrôles de Windows Forms sur les documents Office
+description: Découvrez comment les contrôles de Windows Forms sont des objets avec lesquels les utilisateurs peuvent interagir pour entrer ou manipuler des données.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0309ea22444062b117d3684e32b56960585aa184
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254918"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527051"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Vue d’ensemble des contrôles de Windows Forms sur les documents Office
   Les contrôles Windows Forms sont des objets avec lesquels les utilisateurs peuvent interagir pour entrer ou manipuler des données. Dans des projets au niveau du document pour Microsoft Office Excel et Microsoft Office Word, vous pouvez ajouter des contrôles Windows Forms au document ou au classeur dans votre projet au moment du design, ou vous pouvez ajouter ces contrôles par programmation au moment de l’exécution. Vous pouvez ajouter ces contrôles par programmation à tout document ou feuille de calcul ouvert (e) au moment de l’exécution dans un complément VSTO pour Excel ou Word.

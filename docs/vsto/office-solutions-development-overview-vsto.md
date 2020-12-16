@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du développement des solutions Office (VSTO)
+description: Découvrez comment développer des personnalisations pour les interfaces utilisateur et les outils Microsoft Office familiers, tels que les fonctionnalités de traitement de texte dans Word et les fonctionnalités d’analyse des données d’Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811017"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527709"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Vue d’ensemble du développement des solutions Office (VSTO)
   En utilisant Microsoft Office comme partie frontale des solutions, vous pouvez tirer parti des interfaces utilisateur et outils Microsoft Office familiers tels que les fonctionnalités de traitement de texte dans Word, les fonctionnalités d'analyse des données d'Excel et les fonctionnalités de gestion de la messagerie électronique d'Outlook. Vous pouvez développer des solutions dans Visual Studio pour personnaliser des applications Office et ajouter les fonctionnalités spécifiques dont vous avez besoin pour vos processus métier. Par exemple, vous pouvez transformer Word en générateur de contrats qui assemble des contrats à partir de parties préexistantes qui peuvent être modifiables ou non. Avec Excel, vous pouvez créer une feuille de calcul de budget automatisée personnalisée pour différents projets. Vos utilisateurs peuvent aussi mettre des solutions Office hors connexion, ce qui permet de rendre des solutions complexes plus pratiques qu'elles ne le seraient en utilisant une architecture basée sur le Web.
@@ -28,9 +30,9 @@ ms.locfileid: "90811017"
 ## <a name="choose-an-office-project-type"></a>Choisir un type de projet Office
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit les types suivants de modèles de projet pour le développement de solutions Office basées sur VSTO :
 
-- Les**personnalisations au niveau du document** sont associées à un document spécifique.
+- Les **personnalisations au niveau du document** sont associées à un document spécifique.
 
-- Les**VSTO Add-ins** sont associés à l'application elle-même.
+- Les **VSTO Add-ins** sont associés à l'application elle-même.
 
   Pour choisir le type de projet le mieux adapté à votre solution, déterminez si vous souhaitez que votre code s'exécute uniquement quand un document spécifique est ouvert ou si vous souhaitez que le code soit disponible à chaque exécution de l'application. Pour plus d’informations sur les modèles de projet, consultez [vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md).
 

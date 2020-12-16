@@ -1,5 +1,7 @@
 ---
 title: Concepteur de ruban
+description: Découvrez comment vous pouvez utiliser le concepteur de ruban pour ajouter des onglets, des groupes et des contrôles personnalisés au ruban d’une application Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985629"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528001"
 ---
 # <a name="ribbon-designer"></a>Concepteur de ruban
   Le concepteur de ruban est une zone de conception visuelle. Utilisez le concepteur de ruban pour ajouter des onglets, des groupes et des contrôles personnalisés au ruban d’une application Microsoft Office.
@@ -136,7 +138,7 @@ ms.locfileid: "72985629"
 ### <a name="add-controls-to-groups"></a><a name="AddControlsToGroups"></a> Ajouter des contrôles à des groupes
  Ajoutez un ou plusieurs contrôles à un groupe. Le tableau suivant décrit chaque contrôle.
 
-|Contrôler|Description|
+|Control|Description|
 |-------------|-----------------|
 |**Box**|Conteneur qui organise les contrôles dans un groupe. Vous pouvez ajouter n’importe quel contrôle à une zone, à l’exception d’un séparateur, d’un groupe ou d’un onglet. Une zone peut être horizontale ou verticale.|
 |**Button**|Bouton qui démarre une action. Vous pouvez ajouter un bouton à un groupe, un groupe de boutons, une liste déroulante, une galerie, un menu ou un bouton partagé.|
@@ -145,7 +147,7 @@ ms.locfileid: "72985629"
 |**ComboBox**|Zone d’édition avec une zone de liste jointe. Les utilisateurs peuvent taper ou sélectionner leur choix. La zone affiche la sélection actuelle. Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> propriété pour ajouter et supprimer des éléments au moment de l’exécution avant ou après le chargement du ruban dans l’application Office.|
 |**Liste déroulante**|Liste des éléments que l’utilisateur peut sélectionner. L’utilisateur ne peut pas taper un nouvel élément dans une liste déroulante.<br /><br /> Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propriété pour ajouter des éléments à la liste. Vous pouvez ajouter et supprimer des éléments au moment de l’exécution.<br /><br /> Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propriété pour ajouter des boutons à la liste. Toutefois, vous ne pouvez pas ajouter ni supprimer des boutons au moment de l’exécution après le chargement du ruban dans l’application Office.|
 |**EditBox**|Zone dans laquelle l’utilisateur peut taper du texte.|
-|**Office**|Menu qui présente un tableau ou une grille de choix visuels à partir de laquelle les utilisateurs peuvent sélectionner. Vous pouvez contrôler la disposition des sélections dans le menu. Utilisez les <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> Propriétés et <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> pour spécifier le nombre de lignes et de colonnes qui afficheront les éléments et les boutons de la Galerie.|
+|**Galerie**|Menu qui présente un tableau ou une grille de choix visuels à partir de laquelle les utilisateurs peuvent sélectionner. Vous pouvez contrôler la disposition des sélections dans le menu. Utilisez les <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> Propriétés et <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> pour spécifier le nombre de lignes et de colonnes qui afficheront les éléments et les boutons de la Galerie.|
 |**Étiquette**|Texte que vous pouvez utiliser pour identifier les contrôles sur le ruban.|
 |**Menu**|Liste déroulante qui peut contenir l’un des contrôles suivants :<br /><br /> -Button<br />-Case à cocher<br />-Galerie<br />-Menu<br />-Bouton partagé<br />-Bouton bascule<br />-Séparateur<br /><br /> Pour ajouter un contrôle à un menu dans le concepteur de ruban, cliquez sur la flèche vers le bas dans le menu pour exposer l’aire de conception de menu. Vous pouvez ensuite faire glisser des contrôles du ruban de la **boîte à outils** vers le menu. Pour réorganiser les contrôles, faites-les glisser vers les positions souhaitées.<br /><br /> Pour ajouter des contrôles au <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> après le chargement du ruban dans l’application Office, vous devez affecter <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> à la propriété la **valeur true** avant le chargement du ruban. Pour plus d’informations sur la façon de procéder, consultez [vue d’ensemble du modèle d’objet de ruban](../vsto/ribbon-object-model-overview.md).|
 |**Séparateur**|Barre fine utilisée pour séparer des éléments dans une liste. En cas d’ajout à un groupe, la barre est verticale. En cas d’ajout à un menu, la barre est horizontale.|
@@ -180,7 +182,7 @@ ms.locfileid: "72985629"
 |Déplacer un contrôle avant le contrôle précédent dans la liste.|**CTRL** + **Vers le haut**<br /><br /> **CTRL** + À **gauche**|
 |Déplacer un contrôle après le contrôle suivant dans la liste.|**CTRL** + **Vers le**<br /><br /> **CTRL** + À **droite**|
 |Déplacer la sélection d’un contrôle à un autre dans le même groupe. Pour un panneau déroulant, déplacez-vous entre le contrôle parent et les contrôles dans le panneau déroulant.|**Haut**<br /><br /> **Descendre**|
-|Itérer au sein de tous les contrôles.|**Onglet**|
+|Itérer au sein de tous les contrôles.|**Tab**|
 |Itérez à l’inverse de tous les contrôles.|**MAJ** + **Onglet**|
 |Supprimer le contrôle ou l’ensemble de contrôles sélectionné (e).|**Supprimer**|
 |Copiez les contrôles sélectionnés.|**CTRL** + **C**|

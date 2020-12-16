@@ -1,5 +1,7 @@
 ---
 title: Configurer les informations de configuration d’une solution Office
+description: Découvrez comment vous pouvez utiliser des fichiers de configuration pour configurer des paramètres spécifiques à vos solutions Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581037"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528155"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Comment : configurer les informations de configuration d’une solution Office
   Vous pouvez utiliser des fichiers de configuration pour configurer des paramètres spécifiques à vos solutions Office. Vous pouvez spécifier des paramètres tels que la stratégie de liaison d’assembly, les objets de communication à distance, le débogage et les paramètres de trace.
@@ -34,7 +36,7 @@ ms.locfileid: "91581037"
 
 2. Dans le volet **catégories** , cliquez sur **général**.
 
-3. Dans le volet **modèles** , sélectionnez **fichier de configuration**de l’application.
+3. Dans le volet **modèles** , sélectionnez **fichier de configuration** de l’application.
 
 4. Dans la zone **nom** , tapez le même nom que l’assembly et l’extension *. config*. Par exemple, un fichier de configuration pour un assembly de projet Excel appelé *ExcelWorkbook1.dll* serait nommé *ExcelWorkbook1.dll.config*.
 

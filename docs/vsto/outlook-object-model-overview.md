@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du modèle objet Outlook
+description: Découvrez comment vous pouvez interagir avec les objets fournis par le modèle objet Outlook pour développer des compléments VSTO pour Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985694"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528053"
 ---
 # <a name="outlook-object-model-overview"></a>Vue d’ensemble du modèle objet Outlook
   Pour développer des compléments VSTO pour Microsoft Office Outlook, vous pouvez interagir avec les objets fournis par le modèle objet Outlook. Le modèle objet Outlook fournit des classes et des interfaces qui représentent des éléments dans l'interface utilisateur. Par exemple, l'objet <xref:Microsoft.Office.Interop.Outlook.Application> représente l'application entière, l'objet <xref:Microsoft.Office.Interop.Outlook.Folder> représente un dossier qui contient des messages électroniques ou d'autres éléments, et l'objet <xref:Microsoft.Office.Interop.Outlook.MailItem> représente un message électronique.
@@ -97,7 +99,7 @@ ms.locfileid: "72985694"
  Pour obtenir un exemple qui montre comment accéder à un par défaut <xref:Microsoft.Office.Interop.Outlook.Folder> et créer un nouveau <xref:Microsoft.Office.Interop.Outlook.Folder> , consultez Guide pratique [pour créer des éléments de dossier personnalisés par programmation](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>Objet MailItem
- L'objet <xref:Microsoft.Office.Interop.Outlook.MailItem> représente un message électronique. Les objets<xref:Microsoft.Office.Interop.Outlook.MailItem> se trouvent généralement dans des dossiers, par exemple **Boîte de réception**, **Éléments envoyés**et **Boîte d'envoi**. <xref:Microsoft.Office.Interop.Outlook.MailItem> expose les propriétés et méthodes qui peuvent être utilisées pour créer et envoyer des messages électroniques.
+ L'objet <xref:Microsoft.Office.Interop.Outlook.MailItem> représente un message électronique. Les objets<xref:Microsoft.Office.Interop.Outlook.MailItem> se trouvent généralement dans des dossiers, par exemple **Boîte de réception**, **Éléments envoyés** et **Boîte d'envoi**. <xref:Microsoft.Office.Interop.Outlook.MailItem> expose les propriétés et méthodes qui peuvent être utilisées pour créer et envoyer des messages électroniques.
 
  Pour obtenir un exemple qui montre comment créer un message électronique, consultez [Comment : créer un élément de messagerie par programmation](../vsto/how-to-programmatically-create-an-e-mail-item.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Clavier Office Word, paramètres, boîte de dialogue Options
+description: Découvrez comment vous pouvez faire en sorte que Microsoft Word reçoive des commandes de touches de raccourci lorsque le document a le focus en sélectionnant le schéma de clavier dynamique.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584501"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528442"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office clavier Word, paramètres, boîte de dialogue Options
   Microsoft Office Word et Visual Studio gèrent les touches de raccourci. La même combinaison de touches de raccourci peut reposer pour différentes commandes dans Word et dans Visual Studio. Quand Word est ouvert dans un projet au niveau du document dans Visual Studio, une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais vous pouvez faire en sorte que Word les reçoit lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.
