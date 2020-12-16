@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
-ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
+ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
+ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97578251"
+ms.locfileid: "97599497"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -68,11 +68,11 @@ Un « dossier de solution » est un dossier virtuel qui se trouve uniquement d
 
 ## <a name="create-new-projects"></a>Créer de nouveaux projets
 
-Le moyen le plus simple pour créer un projet consiste à partir d’un modèle de projet pour un type particulier d’application ou de site web. Un modèle de projet se compose d’un ensemble de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Ces modèles sont disponibles dans la boîte de dialogue dans laquelle vous créez un nouveau projet (**fichier**  >  **nouveau**  >  **projet**). Pour plus d’informations, consultez [Créer un nouveau projet dans Visual Studio](create-new-project.md) et [Créer des solutions et projets](../ide/creating-solutions-and-projects.md).
+Le moyen le plus simple pour créer un projet consiste à partir d’un modèle de projet pour un type particulier d’application ou de site web. Un modèle de projet se compose d’un ensemble de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Ces modèles sont disponibles dans la boîte de dialogue dans laquelle vous créez un nouveau projet (**fichier**  >  **nouveau**  >  **projet**). Pour plus d’informations, consultez [créer un nouveau projet](create-new-project.md) et [utiliser des solutions et des projets](../ide/creating-solutions-and-projects.md).
 
 Si vous personnalisez souvent vos projets d’une certaine manière, vous pouvez créer un modèle de projet personnalisé que vous pourrez ensuite utiliser pour créer de nouveaux projets à partir de. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
-Quand vous créez un projet, il est enregistré par défaut dans *%USERPROFILE%\source\repos*. Vous pouvez personnaliser cet emplacement dans le paramètre **Emplacement des projets** sous **Outils** > **Options** > **Projets et solutions** > **Emplacements**. Pour plus d’informations, consultez [Page Projets et solutions, boîte de dialogue Options](./reference/projects-and-solutions-options-dialog-box.md).
+Quand vous créez un projet, il est enregistré par défaut dans *%USERPROFILE%\source\repos*. Vous pouvez personnaliser cet emplacement dans le paramètre **Emplacement des projets** sous **Outils** > **Options** > **Projets et solutions** > **Emplacements**. Pour plus d’informations à ce sujet et sur les autres paramètres de projets et de solutions, consultez [la page projets et solutions, boîte de dialogue Options](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Explorateur de solutions
 
