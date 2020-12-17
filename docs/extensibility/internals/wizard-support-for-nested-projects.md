@@ -1,5 +1,7 @@
 ---
 title: Prise en charge de l’Assistant pour les projets imbriqués | Microsoft Docs
+description: Découvrez les deux assistants qu’un projet parent peut implémenter pour les projets imbriqués dans votre VSPackage dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703192"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615614"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Prise en charge de l’Assistant pour les projets imbriqués
 L’IDE exécute deux assistants que le projet parent pour les projets imbriqués peut implémenter : l’Assistant **nouveau projet** et l’Assistant **Ajout d’élément** .

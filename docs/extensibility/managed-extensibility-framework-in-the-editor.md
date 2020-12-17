@@ -1,5 +1,7 @@
 ---
 title: Managed Extensibility Framework dans l’éditeur | Microsoft Docs
+description: En savoir plus sur le Managed Extensibility Framework, qui vous permet de créer vos propres composants pour étendre l’éditeur dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 888c5206b87079cf9fa91cb68e9801cb3c4f8c1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702867"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615588"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework dans l’éditeur
 L’éditeur est généré à l’aide de composants Managed Extensibility Framework (MEF). Vous pouvez créer vos propres composants MEF pour étendre l’éditeur, et votre code peut également utiliser des composants de l’éditeur.

@@ -1,5 +1,7 @@
 ---
 title: Gestion des VSPackages | Microsoft Docs
+description: Apprenez-en davantage sur la gestion des VSPackages, afin de savoir quand vous pouvez simplement utiliser la gestion VSPackage par défaut fournie par Visual Studio, et comment et quand le personnaliser.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702653"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615738"
 ---
 # <a name="manage-vspackages"></a>Gérer VSPackages
 Dans la plupart des cas, vous n’avez pas à vous soucier de la gestion des VSPackages, puisque les modèles de projet et d’élément s’inscrivent et chargent automatiquement le package. Toutefois, dans certains cas, vous devrez peut-être en apprendre un peu plus pour gérer votre package.

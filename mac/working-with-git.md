@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493229"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616175"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
 
@@ -45,23 +45,23 @@ Au bas de la fenêtre, cinq onglets s’affichent, comme illustré ci-dessous :
 
 Ces onglets permettent d’effectuer les actions suivantes :
 
-* **Source**  : Affiche votre fichier de code source.
-* **Modifications**  : Affiche la modification du code entre votre fichier local et le fichier de base. Vous pouvez également comparer différentes versions du fichier à partir de hachages différents :
+* **Source** : Affiche votre fichier de code source.
+* **Modifications** : Affiche la modification du code entre votre fichier local et le fichier de base. Vous pouvez également comparer différentes versions du fichier à partir de hachages différents :
 
     ![Onglet Modifications](media/version-control-gitChange.png)
 
-* **Responsable**  : Affiche le nom de l’utilisateur associé à chaque section de code.
-* **Journal**  : Affiche toutes les validations, heures, dates, messages et utilisateurs qui sont responsables du fichier :
+* **Responsable** : Affiche le nom de l’utilisateur associé à chaque section de code.
+* **Journal** : Affiche toutes les validations, heures, dates, messages et utilisateurs qui sont responsables du fichier :
 
     ![Onglet Journal](media/version-control-gitLog.png)
 
-* **Fusion**  : Cet onglet peut être utilisé en cas de conflit de fusion pendant la validation de votre travail. Il montre une représentation visuelle des modifications apportées par vous et l’autre développeur, ce qui vous permet de combiner correctement les deux sections de code.
+* **Fusion** : Cet onglet peut être utilisé en cas de conflit de fusion pendant la validation de votre travail. Il montre une représentation visuelle des modifications apportées par vous et l’autre développeur, ce qui vous permet de combiner correctement les deux sections de code.
 
 ## <a name="switching-branches"></a>Changement de branches
 
-Par défaut, la première branche créée dans un dépôt est appelée branche **maître**. Techniquement, il n’y a aucune différence entre la branche maître et les autres branches, si ce n’est que la branche maître est celle qui est le plus souvent considérée par les équipes de développeurs comme la branche « active » ou « de production ».
+Par défaut, la première branche créée dans un référentiel est appelée branche **principale** . Il n’y a techniquement aucune différence entre la branche principale et toute autre branche, mais la branche principale est celle qui est le plus souvent considérée comme la branche « en direct » ou « production » dans les équipes de développement.
 
-Une ligne indépendante de développement peut être créée en séparant la branche maître (ou n’importe quelle autre branche, dans notre exemple). Vous obtenez alors une nouvelle version de la branche maître à un point dans le temps, ce qui vous permet de séparer le développement de ce qui est « actif ». L’utilisation de branches de cette manière est souvent utilisée pour les fonctionnalités dans le cadre du développement de logiciels
+Une ligne de développement indépendante peut être créée en branchant la branche principale (ou toute autre branche). Cela fournit une nouvelle version de la branche principale à un moment donné, ce qui permet un développement indépendant de ce qui est « en direct ». L’utilisation de branches de cette manière est souvent utilisée pour les fonctionnalités dans le cadre du développement de logiciels
 
 Les utilisateurs peuvent créer autant de branches qu’ils le souhaitent pour chaque dépôt, mais il est recommandé de supprimer les branches après leur utilisation, pour que le dépôt reste organisé.
 
@@ -85,13 +85,13 @@ Consultez la branche Current Branch dans la fenêtre de la solution, en regard d
 
 Pour examiner les modifications apportées aux fichiers, utilisez les onglets Modifications, Responsable, Journal et Fusion de chaque document, comme illustré dans cette rubrique.
 
-Examinez toutes les modifications d’un projet en accédant à l’élément de menu **Gestion de version > Examiner la solution et valider**  :
+Examinez toutes les modifications d’un projet en accédant à l’élément de menu **Gestion de version > Examiner la solution et valider** :
 
 ![Affichage de l’examen du code](media/version-control-gitReviewCommit.png)
 
 Ce menu permet d’afficher toutes les modifications de chaque fichier d’un projet avec les options Restaurer, Créer un correctif ou Valider.
 
-Pour valider un fichier dans le référentiel distant, appuyez sur **valider** , entrez un message de validation et confirmez avec le bouton valider :
+Pour valider un fichier dans le référentiel distant, appuyez sur **valider**, entrez un message de validation et confirmez avec le bouton valider :
 
 ![Validation d’un fichier](media/version-control-gitCommit.png)
 

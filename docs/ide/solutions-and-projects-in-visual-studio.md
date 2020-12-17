@@ -1,5 +1,5 @@
 ---
-title: Solutions et projets
+title: Vue d’ensemble des solutions et des projets
 description: Découvrez les projets et solutions Visual Studio, comment créer de nouveaux projets à partir d’un modèle et comment afficher & gérer des projets dans Explorateur de solutions.
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599497"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615751"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -68,11 +68,11 @@ Un « dossier de solution » est un dossier virtuel qui se trouve uniquement d
 
 ## <a name="create-new-projects"></a>Créer de nouveaux projets
 
-Le moyen le plus simple pour créer un projet consiste à partir d’un modèle de projet pour un type particulier d’application ou de site web. Un modèle de projet se compose d’un ensemble de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Ces modèles sont disponibles dans la boîte de dialogue dans laquelle vous créez un nouveau projet (**fichier**  >  **nouveau**  >  **projet**). Pour plus d’informations, consultez [créer un nouveau projet](create-new-project.md) et [utiliser des solutions et des projets](../ide/creating-solutions-and-projects.md).
+Le moyen le plus simple de créer un nouveau projet consiste à utiliser un modèle de projet pour le type de projet souhaité. Un modèle de projet comprend un ensemble de base de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Utilisez **fichier**  >  **nouveau**  >  **projet** pour sélectionner un modèle de projet. Pour plus d’informations, consultez [créer un nouveau projet](create-new-project.md).
 
-Si vous personnalisez souvent vos projets d’une certaine manière, vous pouvez créer un modèle de projet personnalisé que vous pourrez ensuite utiliser pour créer de nouveaux projets à partir de. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
+Vous pouvez également créer un modèle de projet personnalisé que vous pouvez utiliser pour créer des projets à partir de. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
-Quand vous créez un projet, il est enregistré par défaut dans *%USERPROFILE%\source\repos*. Vous pouvez personnaliser cet emplacement dans le paramètre **Emplacement des projets** sous **Outils** > **Options** > **Projets et solutions** > **Emplacements**. Pour plus d’informations à ce sujet et sur les autres paramètres de projets et de solutions, consultez [la page projets et solutions, boîte de dialogue Options](./reference/projects-and-solutions-options-dialog-box.md).
+Lorsque vous créez un projet, Visual Studio l’enregistre à son emplacement par défaut, *%UserProfile%\source\repos*. Pour modifier cet emplacement, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**. Pour plus d’informations, consultez [boîte de dialogue Options : projets et Solutions > emplacements](./reference/projects-solutions-locations-options.md).
 
 ## <a name="solution-explorer"></a>Explorateur de solutions
 
@@ -94,4 +94,3 @@ Pour afficher une liste de certaines des icônes qui apparaissent dans Explorate
 - [IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Porter, migrer et mettre à niveau des projets](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Projets et solutions (Visual Studio pour Mac)](/visualstudio/mac/projects-and-solutions)
-- [Ajouter et supprimer des éléments de projet (Visual Studio pour Mac)](/visualstudio/mac/add-and-remove-project-items)

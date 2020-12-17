@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e38d728eb3c336b1d3160a920ef18055de1b1f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983567"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616299"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
 
@@ -59,9 +59,9 @@ Ces onglets permettent d’effectuer les actions suivantes :
 
 ## <a name="switching-branches"></a>Changement de branches
 
-Par défaut, la première branche créée dans un dépôt est appelée branche **maître**. Techniquement, il n’y a aucune différence entre la branche maître et les autres branches, si ce n’est que la branche maître est celle qui est le plus souvent considérée par les équipes de développeurs comme la branche « active » ou « de production ».
+Par défaut, la première branche créée dans un référentiel est appelée branche **principale** . Il n’y a techniquement aucune différence entre la branche principale et toute autre branche, mais la branche principale est celle qui est le plus souvent considérée comme la branche « en direct » ou « production » dans les équipes de développement.
 
-Une ligne indépendante de développement peut être créée en séparant la branche maître (ou n’importe quelle autre branche, dans notre exemple). Vous obtenez alors une nouvelle version de la branche maître à un point dans le temps, ce qui vous permet de séparer le développement de ce qui est « actif ». L’utilisation de branches de cette manière est souvent utilisée pour les fonctionnalités dans le cadre du développement de logiciels
+Une ligne de développement indépendante peut être créée en branchant la branche principale (ou toute autre branche). Cela fournit une nouvelle version de la branche principale à un moment donné, ce qui permet un développement indépendant de ce qui est « en direct ». L’utilisation de branches de cette manière est souvent utilisée pour les fonctionnalités dans le cadre du développement de logiciels
 
 Les utilisateurs peuvent créer autant de branches qu’ils le souhaitent pour chaque dépôt, mais il est recommandé de supprimer les branches après leur utilisation, pour que le dépôt reste organisé.
 

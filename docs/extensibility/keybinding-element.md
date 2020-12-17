@@ -1,5 +1,7 @@
 ---
 title: KeyBinding, élément | Microsoft Docs
+description: L’élément KeyBinding spécifie les raccourcis clavier pour les commandes. Les commandes peuvent être associées à des liaisons à clé unique et à deux clés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703144"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616115"
 ---
 # <a name="keybinding-element"></a>KeyBinding (élément)
 L’élément KeyBinding spécifie les raccourcis clavier pour les commandes.
 
- Les commandes peuvent être associées à des liaisons à clé unique et à deux clés. Un exemple de liaison de clé unique est **CTRL** + **S** pour la commande **Enregistrer** . Les combinaisons de touches doubles requièrent deux combinaisons de touches successives pour déclencher une commande. Un exemple de liaison à double clé est <strong>CTRL *+</strong> k<strong>,</strong>Ctrl <strong>+</strong> k** pour définir un signet.
+ Les commandes peuvent être associées à des liaisons à clé unique et à deux clés. Un exemple de liaison de clé unique est **CTRL** + **S** pour la commande **Enregistrer** . Les combinaisons de touches doubles requièrent deux combinaisons de touches successives pour déclencher une commande. Un exemple de liaison à double clé est <strong>CTRL *+</strong> k <strong>,</strong>Ctrl <strong>+</strong> k** pour définir un signet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,9 +42,9 @@ L’élément KeyBinding spécifie les raccourcis clavier pour les commandes.
 |id|Obligatoire.|
 |éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour lequel ce raccourci clavier est actif. La valeur de portée de liaison globale est « guidVSStd97 ».|
 |key1|Obligatoire. Les valeurs valides incluent tous les alphanumériques typable, ainsi que les valeurs hexadécimales à deux chiffres précédées de 0x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod1|facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT**et **MAJ** sont séparées par un espace.|
+|mod1|facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT** et **MAJ** sont séparées par un espace.|
 |key2|facultatif. Les valeurs valides incluent tous les alphanumériques typable, ainsi que les valeurs hexadécimales à deux chiffres précédées de 0x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod2|facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT**et **MAJ** sont séparées par un espace.|
+|mod2|facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT** et **MAJ** sont séparées par un espace.|
 |émulateur|facultatif.|
 |Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 

@@ -1,5 +1,7 @@
 ---
 title: Menu, élément | Microsoft Docs
+description: L’élément de menu définit un élément de menu. Les types de menu sont Context, menu, MenuController, MenuControllerLatched, Toolbar et ToolWindowToolbar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 020098a3026f600629b8ab186431a1d2d5d7795a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f20e05c50bf208490edd237299653a3caa6b559f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453653"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616073"
 ---
 # <a name="menu-element"></a>Élément menu
 Définit un élément de menu. Il s’agit des six types de menus : Context, menu, MenuController, MenuControllerLatched, Toolbar et ToolWindowToolbar.

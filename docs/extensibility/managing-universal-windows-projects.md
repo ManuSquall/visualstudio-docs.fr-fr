@@ -1,5 +1,7 @@
 ---
 title: Gestion des projets Windows universels | Microsoft Docs
+description: Pour prendre en charge les applications Windows universelles, les extensions Visual Studio qui gèrent les projets doivent être conscientes de la structure de projet d’application Windows universelle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012306"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615562"
 ---
 # <a name="manage-universal-windows-projects"></a>Gérer les projets Windows universels
 
@@ -25,7 +27,7 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
 
 ### <a name="navigate-the-shared-project"></a>Naviguer dans le projet partagé
 
-1. Créez un projet VSIX C# nommé **TestUniversalProject**. (**Fichier**  >  **Nouveau**  >  **Projet** , puis **C#**  >  **extensibilité**C#  >  **package Visual Studio**). Ajoutez un modèle d’élément de projet de **commande personnalisé** (sur le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**, puis accédez à **extensibilité**). Nommez le fichier **TestUniversalProject**.
+1. Créez un projet VSIX C# nommé **TestUniversalProject**. (**Fichier**  >  **Nouveau**  >  **Projet** , puis   >  **extensibilité** C#  >  **package Visual Studio**). Ajoutez un modèle d’élément de projet de **commande personnalisé** (sur le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**, puis accédez à **extensibilité**). Nommez le fichier **TestUniversalProject**.
 
 2. Ajoutez une référence à *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* et à *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (dans la section **Extensions** ).
 
@@ -291,7 +293,7 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Essayez maintenant. Appuyez sur F5 pour lancer l’instance expérimentale. Créez un projet d’application de concentrateur universel C# dans l’instance expérimentale (dans la boîte de dialogue **nouveau projet** , dans **Visual C#**,  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **application concentrateur**universel Windows 8 Windows 8). Une fois la solution chargée, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject**, puis vérifiez le texte dans le volet **sortie** . Un résultat tel que celui-ci doit s’afficher :
+16. Essayez maintenant. Appuyez sur F5 pour lancer l’instance expérimentale. Créez un projet d’application de concentrateur universel C# dans l’instance expérimentale (dans la boîte de dialogue **nouveau projet** , dans **Visual C#**,  >    >    >    >  **application concentrateur** universel Windows 8 Windows 8). Une fois la solution chargée, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject**, puis vérifiez le texte dans le volet **sortie** . Un résultat tel que celui-ci doit s’afficher :
 
     ```
     Found shared project: HubApp.Shared
@@ -353,7 +355,7 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. Essayez maintenant. Appuyez sur **F5** pour lancer l’instance expérimentale. Créer un projet d’application de concentrateur universel C# dans l’instance expérimentale (dans la boîte de dialogue **nouveau projet** , application de **Visual C#**  >  **Windows**  >  concentrateur universel Windows**Windows 8**Visual C#  >  **Universal**  >  **Hub App**) accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject**, puis vérifiez le texte dans le volet de **sortie** . Un résultat tel que celui-ci doit s’afficher :
+4. Essayez maintenant. Appuyez sur **F5** pour lancer l’instance expérimentale. Créer un projet d’application de concentrateur universel C# dans l’instance expérimentale (dans la boîte de dialogue **nouveau projet** , application de   >    >  concentrateur universel Windows **Windows 8** Visual C#  >    >  ) accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject**, puis vérifiez le texte dans le volet de **sortie** . Un résultat tel que celui-ci doit s’afficher :
 
     ```
     Found shared project: HubApp.Shared
@@ -549,7 +551,7 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Générez et exécutez le projet. Créez une application de concentrateur universel C# dans l’instance expérimentale, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject**et vérifiez le texte dans le volet de sortie général. Le nom du premier élément dans le projet partagé (nous pensons qu’il s’agit du fichier *app. Xaml* ) doit être modifié. vous devez voir que l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> événement a été déclenché. Dans ce cas, étant donné que l’attribution d’un nouveau nom à *app. Xaml* entraîne également le renommage de *app.Xaml.cs* , vous devez voir quatre événements (deux pour chaque projet de plateforme). (Les événements DTE n’effectuent pas le suivi des éléments dans le projet partagé.) Vous devez voir deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événements (un pour chacun des projets de plateforme), mais aucun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement.
+11. Générez et exécutez le projet. Créez une application de concentrateur universel C# dans l’instance expérimentale, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject** et vérifiez le texte dans le volet de sortie général. Le nom du premier élément dans le projet partagé (nous pensons qu’il s’agit du fichier *app. Xaml* ) doit être modifié. vous devez voir que l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> événement a été déclenché. Dans ce cas, étant donné que l’attribution d’un nouveau nom à *app. Xaml* entraîne également le renommage de *app.Xaml.cs* , vous devez voir quatre événements (deux pour chaque projet de plateforme). (Les événements DTE n’effectuent pas le suivi des éléments dans le projet partagé.) Vous devez voir deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événements (un pour chacun des projets de plateforme), mais aucun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement.
 
 12. Essayez à présent de renommer un fichier dans un projet de plateforme, et vous pouvez voir la différence dans les événements qui se sont déclenchés. Ajoutez le code suivant dans `ShowMessageBox` après l’appel à `ModifyFileName` .
 
@@ -566,4 +568,4 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. Générez et exécutez le projet. Créez un projet C# universel dans l’instance expérimentale, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject**et vérifiez le texte dans le volet de sortie général. Une fois que le fichier du projet de plateforme a été renommé, vous devez voir un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement et un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événement. Étant donné que la modification du fichier ne provoquait pas la modification d’autres fichiers, et étant donné que les modifications apportées aux éléments d’un projet de plateforme ne sont pas propagées en tout lieu, il n’y a qu’un seul de ces événements.
+13. Générez et exécutez le projet. Créez un projet C# universel dans l’instance expérimentale, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject** et vérifiez le texte dans le volet de sortie général. Une fois que le fichier du projet de plateforme a été renommé, vous devez voir un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement et un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événement. Étant donné que la modification du fichier ne provoquait pas la modification d’autres fichiers, et étant donné que les modifications apportées aux éléments d’un projet de plateforme ne sont pas propagées en tout lieu, il n’y a qu’un seul de ces événements.

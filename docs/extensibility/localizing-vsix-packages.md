@@ -1,5 +1,7 @@
 ---
 title: Localisation des packages VSIX | Microsoft Docs
+description: Découvrez comment localiser un package VSIX en créant un fichier extension. vsixlangpack pour chaque langue cible, puis en les plaçant dans le dossier approprié.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702896"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615536"
 ---
 # <a name="localizing-vsix-packages"></a>Localisation de packages VSIX
 
@@ -53,7 +55,7 @@ Lorsque vous créez un fichier vsixlangpack, vous devez affecter à la propriét
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier extension. vsixlangpack, puis cliquez sur **Propriétés**.
 
-2. Dans la **grille des propriétés**, cliquez sur **inclure dans VSIX**et affectez-lui la valeur `true` .
+2. Dans la **grille des propriétés**, cliquez sur **inclure dans VSIX** et affectez-lui la valeur `true` .
 
 ## <a name="example"></a>Exemple
 
@@ -101,7 +103,7 @@ L’exemple suivant montre des parties pertinentes d’un fichier *extension. vs
 
 ## <a name="see-also"></a>Voir aussi
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Informations de référence sur le schéma du module linguistique VSIX 2,0](vsix-language-pack-schema-2-0-reference.md)|Un module linguistique VSIX décrit les informations de localisation d’un fichier de déploiement. vsix.|
 |[Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Décrit la structure et le contenu d’un package VSIX.|

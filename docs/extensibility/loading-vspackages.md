@@ -1,5 +1,7 @@
 ---
 title: Chargement des VSPackages | Microsoft Docs
+description: En savoir plus sur le chargement de VSPackages dans Visual Studio, y compris le chargement différé, qui est utilisé dans la mesure du possible pour améliorer les performances.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702967"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616102"
 ---
 # <a name="load-vspackages"></a>Charger les VSPackages
 Les VSPackages sont chargés dans Visual Studio uniquement lorsque leurs fonctionnalités sont requises. Par exemple, un VSPackage est chargé quand Visual Studio utilise une fabrique de projet ou un service que le VSPackage implémente. Cette fonctionnalité est appelée chargement différé, qui est utilisée chaque fois que cela est possible pour améliorer les performances.
@@ -35,7 +37,7 @@ Les VSPackages sont chargés dans Visual Studio uniquement lorsque leurs fonctio
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
-    public class MyAutoloadedPackage : Package
+    public class MyAutoloadedPackage : Package
     {. . .}
     ```
 

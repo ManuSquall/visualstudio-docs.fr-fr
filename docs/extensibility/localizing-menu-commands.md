@@ -1,5 +1,7 @@
 ---
 title: Localisation des commandes de menu | Microsoft Docs
+description: Découvrez comment fournir du texte localisé pour les commandes de menu et de barre d’outils en créant des fichiers. vsct localisés et des fichiers. resx localisés pour votre VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904550"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615601"
 ---
 # <a name="localize-menu-commands"></a>Localiser les commandes de menu
 

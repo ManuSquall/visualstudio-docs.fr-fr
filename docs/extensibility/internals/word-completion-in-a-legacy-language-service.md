@@ -1,5 +1,7 @@
 ---
 title: Saisie semi-automatique des mots dans un service de langage hérité | Microsoft Docs
+description: La saisie semi-automatique des mots peut être prise en charge pour un service de langage hérité dans le kit de développement logiciel Visual Studio. Découvrez comment les services de langage hérités sont implémentés dans un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703176"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616273"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de mot dans un service de langage hérité
 La saisie semi-automatique des mots remplit les caractères manquants sur un mot partiellement typé. S’il n’existe qu’une seule exécution possible, le mot est terminé lorsque vous entrez le caractère de fin. Si le mot partiel correspond à plusieurs possibilités, une liste des saisies semi-automatiques possibles s’affiche. Un caractère de fin peut être n’importe quel caractère qui n’est pas utilisé pour les identificateurs.

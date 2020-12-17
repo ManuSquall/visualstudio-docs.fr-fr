@@ -1,5 +1,7 @@
 ---
 title: Recherche de Visual Studio | Microsoft Docs
+description: Vous pouvez installer plusieurs instances de la même version de Visual Studio. Découvrez comment utiliser une API de requête COM pour Rechercher l’instance de votre choix.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012475"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616286"
 ---
 # <a name="locate-visual-studio"></a>Localiser Visual Studio
 
@@ -25,7 +27,7 @@ Il s’agit d’une API rapide en lecture seule avec des packages NuGet disponib
 | Code | Paquet |
 | ---- | --- |
 | Natif | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Adresses IP gérées | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Géré | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Vous pouvez rechercher une seule instance en fonction d’un chemin d’accès ou du processus en cours, ou d’énumérer toutes les instances. Consultez [nos exemples](https://github.com/Microsoft/vs-setup-samples) pour obtenir des exemples complets sur la façon de localiser Visual Studio.
 

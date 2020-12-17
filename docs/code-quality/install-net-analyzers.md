@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7dfa1c79af832cc54d9aee72eeafbf20bbde707
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398414"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615523"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Activer ou installer des analyseurs .NET internes
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Les analyseurs .NET Compiler Platform (Roslyn) inspectent la qualité et les problèmes de styles de code de votre code C# ou Visual Basic. Les analyseurs .NET de premier tiers sont **indépendants de la plateforme cible**. Autrement dit, votre projet n’a pas besoin de cibler une plateforme .NET spécifique. Les analyseurs fonctionnent pour les projets qui ciblent ainsi que les `net5.0` versions antérieures de .net, telles que `netcoreapp` , `netstandard` et `net472` .
 
@@ -31,7 +31,7 @@ Vous pouvez activer ou installer les analyseurs .NET du premier groupe de l’un
 - **Installer en tant que package NuGet**: Si vous ne souhaitez pas passer au kit de développement logiciel (SDK) .net 5 + ou si vous préférez un modèle basé sur un package NuGet, les analyseurs sont également disponibles dans le `Microsoft.CodeAnalysis.NetAnalyzers` [package nuget](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) sur Visual Studio 2019.  Vous préférerez peut-être un modèle basé sur des packages pour les mises à jour de version à la demande. Si vous utilisez Visual Studio 2017, installez la dernière `2.9.x` version du `Microsoft.CodeAnalysis.FxCopAnalyzers` [package NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) à la place.
 
 > [!NOTE]
-> Il est recommandé d’activer les analyseurs à partir du kit de développement logiciel (SDK) .NET au lieu d’installer le `Microsoft.CodeAnalysis.NetAnalyzers` [package NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), dans la mesure du possible. L’activation des analyseurs à partir du kit de développement logiciel (SDK) .NET garantit que vous recevez automatiquement les correctifs de bogue de l’analyseur et de nouveaux analyseurs dès que vous mettez à jour le kit de développement logiciel.
+> Il est recommandé d’activer les analyseurs à partir du kit de développement logiciel (SDK) .NET au lieu d’installer le `Microsoft.CodeAnalysis.NetAnalyzers` [package NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), dans la mesure du possible. L’activation des analyseurs à partir du kit de développement logiciel (SDK) .NET garantit que vous recevez automatiquement les correctifs de bogue de l’analyseur et de nouveaux analyseurs dès que vous mettez à jour le kit de développement logiciel. Dans le modèle NuGet, vous devez mettre à jour le package NuGet chaque fois que vous souhaitez les correctifs de bogues les plus récents. Le package NuGet est mis à jour plus fréquemment.
 
 ## <a name="see-also"></a>Voir aussi
 

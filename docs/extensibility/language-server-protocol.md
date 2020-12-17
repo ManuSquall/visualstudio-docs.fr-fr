@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble du protocole de serveur de langage | Microsoft Docs
+description: Découvrez comment le protocole de serveur de langage fournit une infrastructure utile pour exposer les fonctionnalités de langage à un large éventail d’outils.
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bd5dce3cfb7022a8abb6397dc87b418144cbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703103"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616128"
 ---
 # <a name="language-server-protocol"></a>Protocole de serveur de langage
 
@@ -108,7 +110,7 @@ Quand un utilisateur travaille avec différentes langues, VS Code démarre gén�
 
 ![Java et Sass](media/lsp-java-and-sass.png)
 
-### <a name="capabilities"></a>Fonctions
+### <a name="capabilities"></a>Fonctionnalités
 
 Tous les serveurs de langue ne peuvent pas prendre en charge toutes les fonctionnalités définies par le protocole. Par conséquent, le client et le serveur annoncent leur ensemble de fonctionnalités pris en charge via « Capabilities ». Par exemple, un serveur annonce qu’il peut gérer la demande « textDocument/définition », mais il peut ne pas gérer la demande « espace de travail/symbole ». De même, les clients peuvent annoncer qu’ils sont en mesure de fournir des notifications sur l’enregistrement avant l’enregistrement d’un document, afin qu’un serveur puisse calculer des modifications textuelles afin de mettre en forme automatiquement le document modifié.
 
