@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 48fb0f1c22b2f7055005640baff2239a0ad4a32a
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903934"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646409"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Découvrir les projets et les solutions
 
@@ -201,6 +201,8 @@ Nous allons ajouter un projet de test unitaire à notre solution. Cette fois, no
 
 Nous allons utiliser le nouveau projet de test unitaire pour tester notre méthode dans le projet **QuickDate**. Nous devons donc ajouter une référence à ce projet. Cette opération crée une *dépendance de build* entre les deux projets, ce qui signifie que quand vous générez la solution, **QuickDate** est généré avant **QuickTest**.
 
+::: moniker range="vs-2017"
+
 1. Choisissez le nœud **Dépendances** dans le projet **QuickTest**, puis dans le menu contextuel (clic droit), choisissez **Ajouter une référence**.
 
    La boîte de dialogue **Gestionnaire de références** s’ouvre.
@@ -210,6 +212,22 @@ Nous allons utiliser le nouveau projet de test unitaire pour tester notre métho
    Une référence au projet **QuickDate** est ajoutée.
 
    ![Explorateur de solutions Visual Studio 2019 montrant la référence de projet](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Explorateur de solutions présentant une référence de projet dans Visual Studio.")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Choisissez le nœud **dépendances** dans le projet **QuickTest** , puis, dans le menu contextuel, cliquez avec le bouton droit, puis choisissez Ajouter une **référence de projet...**.
+
+   La boîte de dialogue **Gestionnaire de références** s’ouvre.
+
+1. Dans le volet gauche, développez **Projets** et choisissez **Solution**. Dans le volet central, activez la case à cocher en regard de **QuickDate**, puis choisissez **OK**.
+
+   Une référence au projet **QuickDate** est ajoutée.
+
+   ![Explorateur de solutions Visual Studio 2019 montrant la référence de projet](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   
+::: moniker-end
 
 ## <a name="add-test-code"></a>Ajouter le code de test
 
@@ -255,7 +273,7 @@ Dans le fichier *Calendar.cs*, la ligne qui contient l’attribut <xref:System.R
 
    Les *pages de propriétés* du projet sont ouvertes sous l’onglet **application** . Les pages de propriétés contiennent différents paramètres pour le projet. Notez que le nom de l’assembly du projet **QuickTest** est bien « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
 
-   ![Propriétés du projet](media/tutorial-projects-netcore-properties.png "Boîte de dialogue Propriétés du projet dans Visual Studio.")
+   ![Propriétés d’un projet](media/tutorial-projects-netcore-properties.png "Boîte de dialogue Propriétés du projet dans Visual Studio.")
 
 1. Explorez d’autres onglets des pages de propriétés du projet, par exemple **Générer** et **Déboguer**. Ces onglets sont différents pour différents types de projets.
 
