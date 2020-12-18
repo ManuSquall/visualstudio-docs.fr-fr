@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928552"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668610"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Fonctionnalités Visual Studio prises en charge (version préliminaire)
 
@@ -27,7 +27,7 @@ Dans la [version bêta publique](https://github.com/features/codespaces)actuelle
 Il ne s’agit **pas d’une liste exhaustive**, mais d’expliquer les fonctionnalités générales de Visual Studio lorsqu’il est connecté à un codeSpace.
 
 > [!NOTE]
-> Si vous n’avez pas de fonctionnalité à utiliser codespaces avec Visual Studio, faites-le nous savoir en ouvrant un problème sur https://developercommunity.visualstudio.com/ . Cela nous aide à hiérarchiser les fonctionnalités les plus désirées.
+> Si vous n’avez pas de fonctionnalité à utiliser codespaces avec Visual Studio, faites-le nous savoir en ouvrant un problème sur la [communauté de développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8). Cela nous aide à hiérarchiser les fonctionnalités les plus désirées.
 
 > [!NOTE]
 > Les fonctionnalités décrites ci-dessous sont destinées à Visual Studio et non aux deux autres clients GitHub Codespaces. Visual Studio Code et l’éditeur dans le navigateur.
@@ -109,7 +109,7 @@ Pas encore disponible :
 Lorsque vous travaillez avec Visual Studio connecté à un codeSpace, vous bénéficiez des mêmes fonctionnalités d’accessibilité que lorsque vous travaillez localement.
 
 * Contrôle de code source-prise en charge complète de git par le biais de la nouvelle [fenêtre git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Accessibilité : il existe un problème connu avec la technologie d’assistance qui ne peut pas accéder au appcasting d’une application déboguée. Outre cette limitation, nous ne pensons pas qu’il existe d’autres problèmes de compatibilité qui n’existent pas encore dans l’expérience locale de Visual Studio. Faites-nous savoir si vous détectez des bogues en soumettant un problème à la [communauté des développeurs](https://developercommunity.visualstudio.com/).
+* Accessibilité : il existe un problème connu avec la technologie d’assistance qui ne peut pas accéder au appcasting d’une application déboguée. Outre cette limitation, nous ne pensons pas qu’il existe d’autres problèmes de compatibilité qui n’existent pas encore dans l’expérience locale de Visual Studio. Faites-nous savoir si vous détectez des bogues en soumettant un problème à la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8).
 * La publication-publier sur Azure via des actions GitHub est prise en charge.
 * Services connectés : application Insights, keyvault, stockage, SQL, Redims, Cosmos, openAPI et gRPC sont partiellement pris en charge.
 * Explorateur de tests *-principalement pris en charge.

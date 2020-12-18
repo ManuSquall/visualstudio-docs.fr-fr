@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348812"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667882"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -28,7 +28,7 @@ Vous pouvez créer un ensemble de règles personnalisé pour répondre à des be
 
 Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée &mdash; , par exemple, afficher un avertissement ou une erreur.
 
-1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
 2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
@@ -53,7 +53,7 @@ Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble
 4. Sélectionnez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
 > [!NOTE]
-> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’existe pas d’onglet de propriété **analyse du code** . Suivez les étapes pour [copier un ensemble de règles prédéfini vers votre projet et le définir comme ensemble de règles actif](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Une fois que vous avez copié un ensemble de règles, vous pouvez [le modifier dans l’éditeur d’ensembles de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **Explorateur de solutions**.
+> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car l’onglet **analyse du code** dans les propriétés du projet ne prend pas en charge les mêmes options. Suivez les étapes pour [copier un ensemble de règles prédéfini vers votre projet et le définir comme ensemble de règles actif](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Une fois que vous avez copié un ensemble de règles, vous pouvez [le modifier dans l’éditeur d’ensembles de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **Explorateur de solutions**.
 
 ## <a name="create-a-new-rule-set"></a>Créer un ensemble de règles
 
@@ -70,9 +70,9 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 ## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Créer un ensemble de règles personnalisé à partir de plusieurs ensembles de règles
 
 > [!NOTE]
-> La procédure suivante ne s’applique pas aux projets .NET Core, qui n’ont pas d’onglet de propriété **analyse du code** .
+> La procédure suivante ne s’applique pas aux projets .NET Core ou .NET Standard, qui ne prennent pas en charge les mêmes fonctionnalités de l’onglet de propriété **analyse du code** .
 
-1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
 2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
@@ -92,7 +92,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
    ![Boîte de dialogue Ajouter ou supprimer des ensembles de règles](media/add-remove-rule-sets.png)
 
-5. Sélectionnez **Enregistrer sous** , entrez un nom pour le fichier *. RuleSet* , puis sélectionnez **Enregistrer**.
+5. Sélectionnez **Enregistrer sous**, entrez un nom pour le fichier *. RuleSet* , puis sélectionnez **Enregistrer**.
 
    Le nouvel ensemble de règles est sélectionné dans la liste **exécuter cet ensemble de règles** .
 
@@ -111,7 +111,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
    </RuleSet>
    ```
 
-- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec la *même* gravité, l’avertissement suivant peut s’afficher dans la **liste d’erreurs** :
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec la *même* gravité, l’avertissement suivant peut s’afficher dans la **liste d’erreurs**:
 
    **CA0063 : échec du chargement du fichier d’ensemble \[ de règles’Your]. RuleSet’ou de l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles.**
 

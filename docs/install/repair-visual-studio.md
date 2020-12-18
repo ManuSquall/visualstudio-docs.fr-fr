@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: f27ccf9440d0f01a5a41d69e753a6d83f81c5263
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007114"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668532"
 ---
 # <a name="repair-visual-studio"></a>Réparer Visual Studio
 
@@ -32,7 +32,7 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 > Si le problème d’installation est dû à un problème dans un service Windows sous-jacent, comme Windows Installer, la réparation peut être à l’origine du problème. Les problèmes système peuvent inclure une Windows Installer rompue ou une connexion Internet instable. Pour vérifier s’il s’agit d’un problème système, utilisez le rapport d’erreurs généré à partir de l’opération d’installation.
 
 > [!NOTE] 
-> La réparation de Visual Studio réinitialise les paramètres utilisateur, puis réinstalle les assemblys que vous avez déjà. Si vous rencontrez un problème de produit, créez un [ticket de commentaires Visual Studio](https://developercommunity.visualstudio.com/content/problem/post.html?space=8), car la réparation peut ne pas résoudre le problème.
+> La réparation de Visual Studio réinitialise les paramètres utilisateur, puis réinstalle les assemblys que vous avez déjà. Si vous rencontrez un problème de produit, créez un [ticket de commentaires Visual Studio](https://aka.ms/feedback/suggest?space=8), car la réparation peut ne pas résoudre le problème.
 
 ## <a name="how-to-repair"></a>Réparation
 ::: moniker range="vs-2017"
@@ -65,7 +65,7 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 
      Dans le menu Démarrer de Windows, vous pouvez rechercher « programme d’installation ».
 
-     ![Programme d’installation de Visual Studio](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
+     ![Visual Studio Installer](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :

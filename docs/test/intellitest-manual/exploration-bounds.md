@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 075eaa4613a1afe6bdeb83a9e46e639b073a200a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328897"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667921"
 ---
 # <a name="exploration-bounds"></a>Limites de l’exploration
 
@@ -188,4 +188,4 @@ La valeur par défaut de cette option est **TestEmissionBranchHits=2**, qui gén
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://aka.ms/feedback/suggest?space=8).

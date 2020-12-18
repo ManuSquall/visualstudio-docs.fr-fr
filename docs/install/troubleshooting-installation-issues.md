@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54bd53f5c63a2f126f4aeae264c4dff745633cf6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350808"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668311"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
@@ -53,7 +53,7 @@ La réparation corrige de nombreux problèmes de mise à jour courants. Pour plu
 
 ### <a name="step-3---check-with-the-developer-community"></a>Étape 3 : consultez la communauté des développeurs
 
-Effectuez une recherche à partir de votre message d’erreur auprès de la [Communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). D’autres membres de la communauté ont peut-être une solution documentée à votre problème.
+Effectuez une recherche à partir de votre message d’erreur auprès de la [Communauté de développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8). D’autres membres de la communauté ont peut-être une solution documentée à votre problème.
 
 ### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Étape 4 : supprimer le répertoire Visual Studio Installer pour résoudre les problèmes de mise à niveau
 

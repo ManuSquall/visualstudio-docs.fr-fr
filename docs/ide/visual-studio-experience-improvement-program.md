@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eae7e4726f720b1c9974682525bbe2a28ee38d5f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71693011"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667934"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programme d’amélioration du produit Visual Studio
 
@@ -45,7 +45,7 @@ La clé de Registre et les paramètres pertinents se présentent comme suit :
 
 - Sur un OS 64 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
 - Sur un OS 32 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
-- Lorsque stratégie de groupe est activé, Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
+- Lorsque stratégie de groupe est activé, Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ La clé de Registre et les paramètres pertinents se présentent comme suit :
 
 - Sur un système d’exploitation 64 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
 - Sur un système d’exploitation 32 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
-- Lorsque stratégie de groupe est activé, Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
+- Lorsque stratégie de groupe est activé, Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 ::: moniker-end
 
@@ -74,5 +74,5 @@ Pour plus d’informations sur les informations collectées, traitées ou transm
 * [Informations de diagnostic collectées par Visual Studio](diagnostic-data-collection.md)
 * [Options de commentaires de Visual Studio](../ide/feedback-options.md)
 * [Guide pratique pour signaler un problème avec Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/)
+* [Communauté des développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement)

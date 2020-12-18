@@ -1,5 +1,6 @@
 ---
 title: Couleurs partagées pour Visual Studio | Microsoft Docs
+description: Apprenez à utiliser des éléments et des thèmes Visual Studio Shell courants pour concevoir votre propre interface utilisateur personnalisée qui est cohérente avec l’environnement Visual Studio.
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699930"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668909"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
 Quand vous concevez une interface utilisateur qui utilise des éléments de Shell Visual Studio communs ou si vous souhaitez que votre élément d’interface soit cohérent avec des fonctionnalités similaires, utilisez des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.
@@ -297,7 +298,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Arrière-plan | Mode transparent |
+| Arrière-plan | Transparent |
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
 | Bordure | None |
 
@@ -1333,7 +1334,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 
  **Bouton de liste déroulante de barre de commandes : état pointé**
 
-![Bouton de liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Bouton de liste déroulante de barre de commandes au pointage
+![Bouton déroulant de la zone de liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Bouton de liste déroulante de barre de commandes au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1342,7 +1343,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 
 **Liste déroulante de barre de commandes : état de survol**
 
- ![Liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Liste déroulante de barre de commandes au pointage
+ ![Liste déroulante de la zone de liste déroulante de barre de commandes au pointage](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Liste déroulante de barre de commandes au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1383,7 +1384,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 
 **Bouton de liste déroulante de barre de commandes : état enfoncé**
 
-![Bouton de liste déroulante de barre de commandes appuyée](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Bouton de liste déroulante de barre de commandes appuyée
+![Bouton de liste déroulante de la barre de commandes appuyée](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Bouton de liste déroulante de barre de commandes appuyée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1403,7 +1404,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 
 **Bouton déroulant de la barre de commandes : état désactivé**
 
-![Bouton de liste déroulante de barre de commandes désactivée](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Bouton de liste déroulante de barre de commandes désactivée
+![Bouton de liste déroulante de la barre de commandes désactivée](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Bouton de liste déroulante de barre de commandes désactivée
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1867,7 +1868,7 @@ Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de d
 | --- | --- |
 | ... pour l’interface utilisateur qui prend en charge le balisage. | ... pour tout autre type d’interface utilisateur. |
 
-#### <a name="tags"></a>Balises
+#### <a name="tags"></a>Étiquettes
 
 **Tag : état par défaut**
 

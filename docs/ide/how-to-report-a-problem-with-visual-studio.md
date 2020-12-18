@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050823"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668818"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
@@ -25,7 +25,7 @@ Vous pouvez signaler un problème à partir de Visual Studio ou de son programme
 
 1. **Dans Visual Studio**, sélectionnez l’icône de commentaires en haut à droite et sélectionnez Signaler un problème. Vous pouvez également accéder à l’outil commentaires à partir du menu **aide**  >  **Envoyer des commentaires**  >  **signaler un problème**.
 ![Signalez un problème lié à la communauté de développeurs Visual Studio ](media/feedback-button.png) . vous pouvez également signaler un problème dans **Visual Studio installer** si vous ne pouvez pas installer Visual Studio ou si vous ne parvenez pas à accéder à l’outil commentaires dans Visual Studio.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
-![Fenêtre contextuelle Signaler un problème sur la communauté des développeurs Visual Studio](media/installer.png)
+![Signaler un problème lié à la communauté de développeurs Visual Studio dans le programme d’installation](media/installer.png)
 
 1. En cliquant sur **signaler un problème** , vous ouvrez votre navigateur par défaut et vous vous connectez à l’aide du même compte que celui utilisé pour vous connecter à Visual Studio.
 
@@ -71,7 +71,7 @@ Lorsqu’il manque des informations importantes dans un problème, nous attribuo
 
 1. Si vous sélectionnez le lien fournir plus d’informations sur le rapport de problème, vous accédez à un nouvel écran. À partir de là, vous pouvez voir quelles sont les informations demandées.
 
-   ![Mes commentaires](../ide/media/feedback-need-more-info.png)
+   ![Détails des informations à envoyer à Microsoft](../ide/media/feedback-need-more-info.png)
 
 1. Vous pouvez fournir plus d’informations en ajoutant des commentaires ou des pièces jointes, ou en enregistrant des étapes. Cette expérience est similaire au signalement d’un nouveau problème ou à l’apport d’informations supplémentaires lors du vote sur un problème.
 
@@ -81,9 +81,9 @@ Vous pouvez voir ces demandes sur l’écran **mes commentaires** , ainsi que to
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Rechercher des solutions ou fournir des commentaires
 
-Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été publiée sur la page de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été publiée sur la page de la [Communauté des développeurs Visual Studio](https://developercommunity2.visualstudio.com/search?space=8).
 
-Si vous n’avez pas de problème à signaler, mais que vous souhaitez suggérer une fonctionnalité, il existe un emplacement pour faire cela. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Si vous n’avez pas de problème à signaler, mais que vous souhaitez suggérer une fonctionnalité, il existe un emplacement pour faire cela. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -91,5 +91,5 @@ Si vous n’avez pas de problème à signaler, mais que vous souhaitez suggérer
 * [Options de commentaires de Visual Studio](../ide/feedback-options.md)
 * [Signaler un problème avec Visual Studio pour Mac](/visualstudio/mac/report-a-problem)
 * [Signaler un problème avec C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/)
+* [Communauté des développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Confidentialité des données de la communauté des développeurs](developer-community-privacy.md)

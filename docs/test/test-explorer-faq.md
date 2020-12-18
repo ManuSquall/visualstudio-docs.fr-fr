@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330171"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668584"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
@@ -97,13 +97,13 @@ Les icônes en regard des regroupements Projet, Espace de noms et Classe indique
 
 **Il n’y a plus de filtre « Chemin d’accès du fichier » dans la zone de recherche de l’explorateur de tests.**
 
-Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**Explorateur de tests** a été supprimé dans Visual Studio 2017, version 15.7. Cette fonctionnalité étant très peu utilisée, l’Explorateur de tests peut récupérer des méthodes de test plus rapidement en la laissant de côté. Si ce changement interrompt votre flux de développement, faites-le nous savoir en envoyant vos commentaires à la [Communauté des développeurs](https://developercommunity.visualstudio.com/).
+Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**Explorateur de tests** a été supprimé dans Visual Studio 2017, version 15.7. Cette fonctionnalité étant très peu utilisée, l’Explorateur de tests peut récupérer des méthodes de test plus rapidement en la laissant de côté. Si ce changement interrompt votre flux de développement, faites-le nous savoir en envoyant vos commentaires à la [Communauté des développeurs](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="remove-undocumented-interfaces"></a>Supprimer des interfaces non documentées
 
 **Certaines API liées aux tests ne sont plus présentes dans Visual Studio 2019. Qu’est-ce qui a changé ?**
 
-Dans Visual Studio 2019, certaines API de fenêtre de test, qui étaient auparavant dites publiques mais qui n’ont jamais été officiellement documentées, seront retirées. Elles avaient été marquées comme étant « déconseillées » dans Visual Studio 2017 pour avertir à l’avance les personnes chargées de la maintenance des extensions. À notre connaissance, très peu d’extensions avaient trouvé ces API et en dépendaient. Il s’agit notamment de `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` et `SearchFilterTokenType`. Si ce changement affecte votre extension, faites-le nous savoir en entrant un bogue auprès de la [Communauté des développeurs](https://developercommunity.visualstudio.com).
+Dans Visual Studio 2019, certaines API de fenêtre de test, qui étaient auparavant dites publiques mais qui n’ont jamais été officiellement documentées, seront retirées. Elles avaient été marquées comme étant « déconseillées » dans Visual Studio 2017 pour avertir à l’avance les personnes chargées de la maintenance des extensions. À notre connaissance, très peu d’extensions avaient trouvé ces API et en dépendaient. Il s’agit notamment de `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` et `SearchFilterTokenType`. Si ce changement affecte votre extension, faites-le nous savoir en entrant un bogue auprès de la [Communauté des développeurs](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="test-adapter-nuget-reference"></a>Référence NuGet sur l’adaptateur de test
 
@@ -126,7 +126,7 @@ Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent 
 
 **Mes tests UWP ne sont plus exécutés dans Visual Studio 2017 versions 15.7 et ultérieures.**
 
-Les projets de test UWP récents spécifient une propriété de génération de plateforme de test qui permet de meilleures performances pour identifier les applications de test. Si vous avez un projet de test UWP qui a été initialisé avant Visual Studio version 15,7, vous pouvez voir cette erreur dans les tests de **sortie**  >  **Tests**:
+Les projets de test UWP récents spécifient une propriété de génération de plateforme de test qui permet de meilleures performances pour identifier les applications de test. Si vous avez un projet de test UWP qui a été initialisé avant Visual Studio version 15,7, vous pouvez voir cette erreur dans les tests de **sortie**  >  :
 
 **System.AggregateException : Une ou plusieurs erreurs se sont produites. ---> System.InvalidOperationException : Le TestContainer suivant est introuvable {} sur Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 

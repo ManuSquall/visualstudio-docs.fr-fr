@@ -6,20 +6,20 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c104e4d819e58630f894405b3b56a8a442576816
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691227"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668714"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Guide pratique pour signaler un problème avec Visual Studio pour Mac
 
-Si vous rencontrez un problème avec Visual Studio pour Mac, faites-le-nous savoir. Voici comment signaler le problème à la [Communauté des développeurs](https://developercommunity.visualstudio.com/spaces/41/index.html) pour nous permettre de le diagnostiquer et de le corriger.
+Si vous rencontrez un problème avec Visual Studio pour Mac, faites-le-nous savoir. Voici comment signaler le problème à la [Communauté des développeurs](https://aka.ms/feedback/report?space=41) pour nous permettre de le diagnostiquer et de le corriger.
 
 ## <a name="how-to-report-a-problem"></a>Comment signaler un problème
 
-Pour signaler un problème pour Visual Studio pour Mac, la meilleure option consiste à lancer le rapport à partir de Visual Studio pour Mac. La génération de rapport par le biais de Visual Studio pour Mac permet d’inclure automatiquement les informations de diagnostic dans le rapport. Si vous ne pouvez pas utiliser Visual Studio pour Mac (à cause d’un plantage, par exemple), vous pouvez signaler le problème directement sur le site de la [Communauté de développeurs](https://developercommunity.visualstudio.com/content/problem/post.html?space=41).
+Pour signaler un problème pour Visual Studio pour Mac, la meilleure option consiste à lancer le rapport à partir de Visual Studio pour Mac. La génération de rapport par le biais de Visual Studio pour Mac permet d’inclure automatiquement les informations de diagnostic dans le rapport. Si vous ne pouvez pas utiliser Visual Studio pour Mac (à cause d’un plantage, par exemple), vous pouvez signaler le problème directement sur le site de la [Communauté de développeurs](https://aka.ms/feedback/report?space=41).
 
 Pour signaler un problème avec Visual Studio pour Mac, sélectionnez **Aide > Signaler un problème** dans la barre de menus :
 
@@ -59,9 +59,9 @@ Pour signaler un problème avec Visual Studio pour Mac, sélectionnez **Aide > S
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Rechercher des solutions ou fournir des commentaires
 
-Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour Mac pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été publiée dans la page de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour Mac pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été publiée dans la page de la [Communauté des développeurs Visual Studio](https://aka.ms/feedback/report?space=41/).
 
-Si vous n’avez pas de problème à signaler, mais que vous voulez suggérer une fonctionnalité, il existe pour cela un emplacement spécifique. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
+Si vous n’avez pas de problème à signaler, mais que vous voulez suggérer une fonctionnalité, il existe pour cela un emplacement spécifique. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://aka.ms/feedback/suggest?space=41).
 
 ## <a name="see-also"></a>Voir aussi
 

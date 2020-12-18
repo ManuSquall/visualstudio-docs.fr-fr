@@ -1,5 +1,6 @@
 ---
 title: 'Nouvelle génération de projet : en coulisses, partie 2 | Microsoft Docs'
+description: Examinez en détail ce qui se passe dans l’environnement de développement intégré (IDE) de Visual Studio lorsque vous créez votre propre type de projet (partie 2 de 2).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e45c9643a1fd2e6dcf9d5520fbb2982736b5109
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707024"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668844"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Rouages du système, seconde partie
 
@@ -68,7 +69,7 @@ namespace Simple
  Un fichier. vstemplate de base a le format suivant :
 
 ```xml
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
     <TemplateContent>
@@ -90,13 +91,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">
       Resources.resx
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
       Resources.Designer.cs
     </ProjectItem>
     <ProjectItem TargetFileName="Properties\Settings.settings">
       Settings.settings
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
       Settings.Designer.cs
     </ProjectItem>
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">
@@ -118,7 +119,7 @@ namespace Simple
 
  La structure des dossiers de l’application Windows obtenue ressemble à ceci :
 
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
+ ![Capture d’écran de la structure de dossiers d’application Windows pour la solution « simple » dans Visual Studio Explorateur de solutions.](../../extensibility/internals/media/simplesolution.png)
 
  La première et seule \<Project> balise du modèle lit :
 

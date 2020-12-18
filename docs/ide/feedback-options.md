@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807883"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668740"
 ---
 # <a name="visual-studio-feedback-options"></a>Options de commentaires de Visual Studio
 
@@ -34,7 +34,7 @@ Si vous rencontrez des problèmes avec Visual Studio &mdash; incidents, lenteur 
 
 ![Icône Envoyer des commentaires dans l’IDE Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
 
-Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs](https://developercommunity.visualstudio.com) , où vous pouvez vous connecter pour signaler le problème. Pour plus d’informations, consultez Guide pratique [pour signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8) , où vous pouvez vous connecter pour signaler le problème. Pour plus d’informations, consultez Guide pratique [pour signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Si vous rencontrez des problèmes avec Visual Studio &mdash; incidents, lenteur 
 
 ![Icône Envoyer des commentaires dans l’IDE Visual Studio 2019](./media/send-feedback-icon.png)
 
-Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs](https://developercommunity.visualstudio.com) , où vous pouvez vous connecter pour signaler le problème. Pour plus d’informations, consultez Guide pratique [pour signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8) , où vous pouvez vous connecter pour signaler le problème. Pour plus d’informations, consultez Guide pratique [pour signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs]
 
 Si vous avez une idée ou une suggestion pour améliorer Visual Studio, faites-le nous savoir en utilisant l’outil **suggérer une fonctionnalité** . Dans Visual Studio, choisissez l’icône de commentaires dans le coin supérieur droit, ou choisissez **aide**  >  **Envoyer des commentaires**  >  **suggérer une fonctionnalité** dans la barre de menus.
 
-Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs](https://developercommunity.visualstudio.com) , où vous pouvez vous connecter pour partager votre idée. Pour plus d’informations, consultez [Suggérer une fonctionnalité pour Visual Studio](suggest-a-feature.md).
+Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8) , où vous pouvez vous connecter pour partager votre idée. Pour plus d’informations, consultez [Suggérer une fonctionnalité pour Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Ensuite, Visual Studio ouvre l’interface de la [communauté des développeurs]
 
 Si vous avez une idée ou une suggestion pour améliorer Visual Studio, faites-le nous savoir en utilisant l’outil **fournir une suggestion** . Dans Visual Studio, choisissez l’icône de commentaires à côté de la zone de recherche, ou choisissez **aide**  >  **Envoyer des commentaires**  >  **fournir une suggestion** dans la barre de menus.
 
-Ensuite, Visual Studio ouvre la page [communauté des développeurs](https://developercommunity.visualstudio.com) , où vous pouvez vous connecter pour partager votre idée. Pour plus d’informations, consultez [Suggérer une fonctionnalité pour Visual Studio](suggest-a-feature.md).
+Ensuite, Visual Studio ouvre la page [communauté des développeurs](https://aka.ms/feedback/suggest?space=8) , où vous pouvez vous connecter pour partager votre idée. Pour plus d’informations, consultez [Suggérer une fonctionnalité pour Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Ensuite, Visual Studio ouvre la page [communauté des développeurs](https://dev
 Vous pouvez nous aider à améliorer la documentation de deux façons :
 
 * Utilisez l’outil **cette page est-il utile ?** Response en haut à droite d’une page de documentation.
-* Utilisez votre compte GitHub pour fournir des commentaires sur n’importe quelle page de Visual Studio sur [docs.microsoft.com](../index.yml). Pour ce faire, cliquez sur le bouton **Envoyer des commentaires à propos**  >  de**cette page** au bas d’une page de documentation.
+* Utilisez votre compte GitHub pour fournir des commentaires sur n’importe quelle page de Visual Studio sur [docs.microsoft.com](../index.yml). Pour ce faire, cliquez sur le bouton **Envoyer des commentaires à propos**  >  de **cette page** au bas d’une page de documentation.
 
 ## <a name="contact-microsoft-support"></a>Contact Microsoft support
 

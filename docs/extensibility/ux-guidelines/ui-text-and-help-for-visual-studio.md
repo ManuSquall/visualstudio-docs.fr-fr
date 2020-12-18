@@ -1,5 +1,6 @@
 ---
 title: Texte de l’interface utilisateur et aide pour Visual Studio | Microsoft Docs
+description: En savoir plus sur le texte et la terminologie de l’interface utilisateur utilisés dans les informations d’aide pour Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698298"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668597"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texte de l’interface utilisateur et Aide pour Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Texte et terminologie de l’interface utilisateur
@@ -60,11 +61,11 @@ ms.locfileid: "80698298"
 #### <a name="supplemental-instructions"></a>Instructions supplémentaires
  Des instructions supplémentaires fournissent des informations supplémentaires qui permettent à l’utilisateur de comprendre les contrôles ou les regroupements de contrôles. Cela peut également inclure le texte d’indication nécessaire pour comprendre le format attendu par le contrôle d’entrée. Utilisez des instructions supplémentaires avec modération. Réservez-les dans les cas où il est probable que l’utilisateur ne comprenne pas pleinement les ramifications du choix qu’il effectue.
 
- ![Texte supplémentaire dans Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![Capture d’écran montrant le bouton Options d’Internet Explorer avec un texte supplémentaire au-dessous de celui-ci, qui décrit l’impact de la modification des paramètres des options.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Texte supplémentaire dans Visual Studio**
 
- ![Texte supplémentaire dans Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![Capture d’écran de la boîte de dialogue Choisir un contrôle de code source dans Visual Studio montrant un texte supplémentaire qui décrit chacune des options du système de contrôle de code source.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Texte supplémentaire dans Visual Studio**
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698298"
 
 - À la place de l’étiquette de contrôle :
 
-     ![Texte d'indication dans Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     ![Capture d’écran d’un contrôle déroulant avec le texte d’indication à la place de l’étiquette de contrôle qui indique « Rechercher Explorateur de solutions (Ctrl +;) ».](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - Avec un verbe, donnant des instructions :
 
-     ![Texte d'indication dans Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![Capture d’écran d’une zone de texte avec le texte d’indication dans le contrôle qui indique « entrez votre nom ».](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - Avec du texte indiquant une entrée obligatoire :
 
-     ![Texte d'indication dans Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     ![Capture d’écran d’une zone de texte avec le texte d’indication dans le contrôle qui lit « \< requis \> ».](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>Texte de filigrane
  Sur une aire de conception vide, le texte doit indiquer ce qu’il faut faire et fournir des liens permettant d’ouvrir d’autres fenêtres connexes, le cas échéant :
@@ -160,7 +161,7 @@ ms.locfileid: "80698298"
 |Se connecter/se déconnecter|Les verbes utilisés sont synonymes du Web pour représenter l’authentification dans une propriété Web. Dans les clients, nous utilisons cette valeur une fois en tant que notion de niveau supérieur pour la connexion et la déconnexion de l’utilisateur de l’IDE, qui représente une identité de niveau supérieur qui fournit des fonctionnalités de niveau supérieur, telles que l’itinérance et les licences, qui ne sont pas disponibles avec toutes les autres connexions.|L’utilisateur de l’IDE est la seule fonctionnalité qui doit représenter un verbe de connexion/déconnexion, car il représente l’utilisateur IDE de niveau supérieur.|
 |Se connecter/déconnecter|À utiliser dans les emplacements où une fonctionnalité gère une seule connexion à un service en ligne.|Explorateur de serveurs, où vous ne pouvez avoir qu’une seule connexion Azure active à la fois, est un exemple de connexion/déconnexion.|
 |Ajouter/supprimer|Non destructif. À utiliser lors de l’ajout ou de la suppression d’éléments dans une liste.|La boîte de dialogue Liste de serveurs du gestionnaire de connexions TFS est un exemple d’ajout/suppression.|
-|Supprimer|Destructrice. À utiliser uniquement lorsque l’élément en cours de suppression est supprimé définitivement du disque.|« Delete » requiert généralement une invite si le résultat est la suppression d’un fichier du disque.|
+|DELETE|Destructrice. À utiliser uniquement lorsque l’élément en cours de suppression est supprimé définitivement du disque.|« Delete » requiert généralement une invite si le résultat est la suppression d’un fichier du disque.|
 
 ## <a name="error-messages"></a>Messages d’erreur
 
@@ -247,7 +248,7 @@ ms.locfileid: "80698298"
 
 - **Courtois.** Ne vous inquiétez pas de l’utilisateur ou ne le faites pas stupide. Évitez les langages hostiles ou choquants (Kill, Execute, Terminate, fatal, non conforme). Évitez le texte en majuscules, souvent considéré comme un crier et n’est pas aussi lisible. N’utilisez pas d’humour.
 
-- **Correctrices.** Utilisez l’orthographe et la grammaire correctes (même en alpha). Les fautes de frappe ne sont pas professionnelles et ennuyeux.
+- **Correct.** Utilisez l’orthographe et la grammaire correctes (même en alpha). Les fautes de frappe ne sont pas professionnelles et ennuyeux.
 
 - **Adapté au contexte.** Utilisez le texte du bouton approprié. Évitez le bouton « OK » et utilisez à la place « continuer » ou « oui/non ».
 

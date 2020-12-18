@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168734"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668857"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -302,7 +302,7 @@ Définissez les valeurs de Registre suivantes pour activer la touche F1 de secou
 
    - Pour les systèmes d’exploitation 64 bits :
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = dword : 00000001
 
@@ -310,13 +310,13 @@ Définissez les valeurs de Registre suivantes pour activer la touche F1 de secou
 
    - Pour les systèmes d’exploitation 32 bits :
 
-      Espace de<em> \\ noms \> </em> HKEY_LOCAL_MACHINE \software\microsoft\help\v2.3\partner<
+      <em> \\ Espace de noms \> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<</em>
 
       "location" = "Offline"
 
    - Pour les systèmes d’exploitation 64 bits :
 
-      Espace de<em> \\ noms \> </em> HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.3\partner<
+      <em> \\ Espace de noms \> HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<</em>
 
       "location" = "Offline"
 
@@ -324,7 +324,7 @@ Définissez les valeurs de Registre suivantes pour activer la touche F1 de secou
 
 Pour activer l’analyse de l’espace de noms natif de base, dans le registre, ajoutez un nouveau DWORD par le nom de : BaseNativeNamespaces et définissez sa valeur sur 1 (sous la clé de catalogue qu’il souhaite prendre en charge).  Par exemple, si vous souhaitez utiliser le catalogue Visual Studio, vous pouvez ajouter la clé au chemin d’accès :
 
-HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 Quand un mot clé F1 dans l’en-tête/la méthode de format est rencontré, le caractère « / » est analysé, ce qui entraîne la construction suivante :
 
@@ -342,13 +342,13 @@ Ajoutez la clé de Registre et la valeur suivantes :
 
 ::: moniker range="vs-2017"
 
-**Aide de \Software\Microsoft\VisualStudio\15.0\Dynamic HKEY_CURRENT_USER**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**Aide de \Software\Microsoft\VisualStudio\16.0\Dynamic HKEY_CURRENT_USER**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
@@ -459,7 +459,7 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | ViewColorizedText | Afficher les couleurs |
 | CombinedVBTabDisplayLanguage | Visual Basic (exemple) |
 | VBDeclaration | Déclaration |
-| VBUsage | Usage |
+| VBUsage | Utilisation |
 | Fonctionnalités : | **Commentaires, pieds de page et logo** |
 | Utilisez : | Fournissez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique en cours par courrier électronique.  Texte de copyright du contenu.  Définition du logo. |
 | **Element** | **Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)** |
@@ -563,7 +563,7 @@ Le fichier branding.js contient du code JavaScript utilisé par les éléments d
 
 Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios de communication des informations clés pour aider les utilisateurs du contenu, par exemple une page d’accueil contenant une section décrivant les jeux de contenu installés et des pages indiquant à l’utilisateur quand les rubriques sont introuvables dans l’ensemble de rubriques local. Ces fichiers HTM peuvent être modifiés par produit.  Les fournisseurs de l’interpréteur de commandes ISO sont en mesure de prendre le package de personnalisation par défaut et de modifier le comportement et le contenu de ces pages en fonction de leurs besoins.  Ces fichiers font référence à leur package de personnalisation respectif pour que les balises de personnalisation obtiennent le contenu correspondant à partir du fichier branding.xml.
 
-|**Fichier**|**Utilisation**|**Source de contenu affichée**|
+|**File**|**Utilisation**|**Source de contenu affichée**|
 |-|-|-|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise \<HomePageTitle>|
@@ -597,7 +597,7 @@ Personnalisation des fichiers. CSS inclut les définitions pour la présentation
 
 Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres graphiques.  La liste complète des fichiers graphiques dans le package de personnalisation de la visionneuse d’aide Visual Studio est indiquée ci-dessous.
 
-|**Fichier**|**Utilisation**|**Exemples**|
+|**File**|**Utilisation**|**Exemples**|
 |-|-|-|
 |clear.gif|Utilisé pour restituer la zone réductible||
 |footer_slice.gif|Présentation du pied de page||
@@ -704,7 +704,7 @@ Cette procédure pas à pas montre comment incorporer du contenu d’aide dans u
 
 2. [Redistribution de Shell isolé Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Vue d'ensemble**
+**Présentation**
 
 L' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] interpréteur de commandes est une version de l' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE sur laquelle vous pouvez baser une application. De telles applications contiennent l’interpréteur de commandes isolé avec les extensions que vous créez. Utilisez les modèles de projet Shell isolé, inclus dans le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Kit de développement logiciel (SDK), pour générer des extensions.
 
@@ -745,7 +745,7 @@ Pour créer une extension de Shell isolée :
 
 2. Dans Explorateur de solutions, dans le projet ContosoHelpShellUI, dans le dossier fichiers de ressources, ouvrez ApplicationCommands. vsct. Assurez-vous que cette ligne est commentée (recherchez « No_Help ») : `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. Appuyez sur la touche F5 pour compiler et exécuter **Debug**. Dans l’instance expérimentale de l’IDE de l’interpréteur de commandes isolé, choisissez le menu **aide** . Assurez-vous que les commandes **afficher l’aide**, **Ajouter et supprimer le contenu d’aide**et **définir les préférences d’aide** s’affichent.
+3. Appuyez sur la touche F5 pour compiler et exécuter **Debug**. Dans l’instance expérimentale de l’IDE de l’interpréteur de commandes isolé, choisissez le menu **aide** . Assurez-vous que les commandes **afficher l’aide**, **Ajouter et supprimer le contenu d’aide** et **définir les préférences d’aide** s’affichent.
 
 4. Dans Explorateur de solutions, dans le projet ContosHelpShell, dans le dossier de personnalisation de l’interpréteur de commandes, ouvrez ContosoHelpShell. pkgdef. Pour définir le catalogue d’aide de contoso, ajoutez les lignes suivantes :
 
@@ -832,4 +832,4 @@ Pour l’API du runtime, consultez [API de l’aide Windows](/previous-versions/
 
 Pour plus d’informations sur l’utilisation de l’API d’aide, consultez Exemples de code de la [visionneuse d’aide](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Vous pouvez envoyer des suggestions de fonctionnalités à la [communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Vous pouvez envoyer des suggestions de fonctionnalités à la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8).

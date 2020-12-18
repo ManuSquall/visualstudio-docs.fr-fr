@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329443"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668077"
 ---
 # <a name="test-generation"></a>Génération de tests
 
@@ -237,11 +237,11 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Informations supplémentaires
+## <a name="further-reading"></a>Pour aller plus loin
 
 * [Test to code binding](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [One test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://aka.ms/feedback/suggest?space=8).

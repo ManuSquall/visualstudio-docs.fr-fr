@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 348e3997f5136ab343639062f2b1d4dbdda08e78
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 99d8f93dc21925b997828adb541b7ee2f0337b6c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136990"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668675"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procédure : Définir plusieurs projets de démarrage
 
@@ -37,5 +37,5 @@ Visual Studio vous permet de spécifier la façon dont plusieurs projets sont ex
 ## <a name="see-also"></a>Voir aussi
 
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
-- [Créer des solutions et des projets](../ide/creating-solutions-and-projects.md)
+- [Utiliser des solutions et des projets](../ide/creating-solutions-and-projects.md)
 - [Gérer les propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)

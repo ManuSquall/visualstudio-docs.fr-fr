@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114207"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668896"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Proposer une fonctionnalité pour Visual Studio
 
-Nous avons introduit une nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). Il s’agit d’une nouvelle façon de vous permettre de participer directement au flux de travail d’ingénierie de Visual Studio.
+Nous avons introduit une nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8). Il s’agit d’une nouvelle façon de vous permettre de participer directement au flux de travail d’ingénierie de Visual Studio.
 
 ![Suggérer un bouton Fonctionnalité sur la Communauté des développeurs](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ Vous pouvez également démarrer une suggestion de fonctionnalité directement �
 
 ![Fournir un menu Suggestion dans Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Choisissez **Fournir une suggestion** pour accéder à [Communauté de développeurs](https://developercommunity.visualstudio.com), où vous pouvez entrer votre suggestion.
+Choisissez **Fournir une suggestion** pour accéder à [Communauté de développeurs](https://aka.ms/feedback/suggest?space=8), où vous pouvez entrer votre suggestion.
 
 ## <a name="user-voice"></a>User Voice
 

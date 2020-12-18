@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801436"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667908"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Comment : modifier les polices, les couleurs et les thèmes dans Visual Studio
 
@@ -61,7 +61,7 @@ Vous pouvez modifier la police et la taille du texte pour toutes les fenêtres F
 
 1. Dans la barre de menus, choisissez **Outils**  >  **options**.
 
-1. Dans la liste options, choisissez **Environment**  >  **polices et couleurs**de l’environnement.
+1. Dans la liste options, choisissez   >  **polices et couleurs** de l’environnement.
 
 1. Dans la liste **afficher les paramètres de** , choisissez **environnement**.
 
@@ -78,7 +78,7 @@ Vous pouvez modifier la police et la taille du texte pour toutes les fenêtres F
 
 1. Dans la barre de menus, choisissez **Outils**  >  **options**.
 
-1. Dans la liste options, choisissez **Environment**  >  **polices et couleurs**de l’environnement.
+1. Dans la liste options, choisissez   >  **polices et couleurs** de l’environnement.
 
 1. Dans **afficher les paramètres de** la liste, sélectionnez **éditeur de texte**.
 
@@ -98,9 +98,9 @@ Il existe des options de thème de couleurs pour vous si vous rencontrez une acu
 
 Utilisez l’une des procédures suivantes pour activer ou désactiver l’option contraste élevé de Windows :
 
-- Dans Windows ou dans n’importe quelle application Microsoft, appuyez sur la touche **ALT**gauche + **MAJ gauche**de l’écran + **PrtScn** .
+- Dans Windows ou dans n’importe quelle application Microsoft, appuyez sur la touche **ALT** gauche + **MAJ gauche** de l’écran +  .
 
-- Dans Windows, choisissez **Start**  >  **paramètres**  >  **de démarrage facilité d’accès**  >  **contraste élevé**.
+- Dans Windows, choisissez   >  **paramètres**  >  **de démarrage facilité d’accès**  >  **contraste élevé**.
 
     > [!WARNING]
     > Le paramètre contraste élevé de Windows affecte toutes les applications et l’interface utilisateur sur l’ordinateur.
@@ -116,7 +116,7 @@ Utilisez les procédures suivantes pour activer ou désactiver l’option contra
 Pour en savoir plus sur les autres options d’accessibilité de Visual Studio à votre disposition, consultez la page [fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) .
 
 > [!TIP]
-> S’il existe une option d’accessibilité pour les couleurs ou les polices qui peuvent être utiles, mais n’est pas disponible actuellement dans Visual Studio, faites-le nous savoir en sélectionnant **suggérer une fonctionnalité** dans la [communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/). Pour plus d’informations sur ce forum et son fonctionnement, consultez la page [suggérer une fonctionnalité](../ide/suggest-a-feature.md) .
+> S’il existe une option d’accessibilité pour les couleurs ou les polices qui peuvent être utiles, mais n’est pas disponible actuellement dans Visual Studio, faites-le nous savoir en sélectionnant **suggérer une fonctionnalité** dans la [communauté des développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8). Pour plus d’informations sur ce forum et son fonctionnement, consultez la page [suggérer une fonctionnalité](../ide/suggest-a-feature.md) .
 
 ## <a name="next-steps"></a>Étapes suivantes
 

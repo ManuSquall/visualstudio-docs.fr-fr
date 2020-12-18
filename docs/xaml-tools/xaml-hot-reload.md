@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d4bc0417d30d64a05cc7f283784d3b23d9adee
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134025"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668870"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio
 
@@ -41,7 +41,7 @@ L’illustration suivante montre l’utilisation de l’arborescence d’éléme
 ![Rechargement à chaud XAML](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
-> Le rechargement à chaud de Visual Studio XAML est actuellement pris en charge uniquement lors de l’exécution de votre application dans Visual Studio ou Blend pour Visual Studio avec le débogueur attaché ( **F5** ou **Démarrer le débogage** ). Vous ne pouvez pas activer cette expérience à l’aide de l' [attachement au processus](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) , sauf si vous [définissez manuellement une variable d’environnement](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
+> Le rechargement à chaud de Visual Studio XAML est actuellement pris en charge uniquement lors de l’exécution de votre application dans Visual Studio ou Blend pour Visual Studio avec le débogueur attaché (**F5** ou **Démarrer le débogage**). Vous ne pouvez pas activer cette expérience à l’aide de l' [attachement au processus](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) , sauf si vous [définissez manuellement une variable d’environnement](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
 
 ## <a name="known-limitations"></a>Limitations connues
 
@@ -49,13 +49,13 @@ Voici les limitations connues du rechargement à chaud XAML. Pour contourner tou
 
 |Limitation|WPF|UWP|Notes|
 |-|-|-|-|
-|Câblage des événements aux contrôles pendant l’exécution de l’application|Non pris en charge|Non pris en charge|Voir erreur : *Vérifiez que l’événement a échoué* . Notez que, dans WPF, vous pouvez référencer un gestionnaire d’événements existant. Dans les applications UWP, le référencement d’un gestionnaire d’événements existant n’est pas pris en charge.|
-|Création d’objets de ressource dans un dictionnaire de ressources, tels que ceux de la page/fenêtre ou *app. Xaml* de votre application|Prise en charge à partir de Visual Studio 2019 Update 2|Pris en charge|Exemple : ajout d’un `SolidColorBrush` dans un dictionnaire de ressources pour une utilisation en tant que `StaticResource` .</br>Remarque : les ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqués/utilisés lors de l’utilisation du rechargement à chaud XAML. Seule la création de la ressource n’est pas prise en charge.</br> Modification de la propriété du dictionnaire de ressources `Source` .|
-|Ajout de nouveaux contrôles, classes, fenêtres ou autres fichiers à votre projet pendant que l’application est en cours d’exécution|Non pris en charge|Non pris en charge|Aucun|
-|Gestion des packages NuGet (ajout/suppression/mise à jour de packages)|Non pris en charge|Non pris en charge|Aucun|
+|Câblage des événements aux contrôles pendant l’exécution de l’application|Non pris en charge|Non pris en charge|Voir erreur : *Vérifiez que l’événement a échoué*. Notez que, dans WPF, vous pouvez référencer un gestionnaire d’événements existant. Dans les applications UWP, le référencement d’un gestionnaire d’événements existant n’est pas pris en charge.|
+|Création d’objets de ressource dans un dictionnaire de ressources, tels que ceux de la page/fenêtre ou *app. Xaml* de votre application|Prise en charge à partir de Visual Studio 2019 Update 2|Prise en charge|Exemple : ajout d’un `SolidColorBrush` dans un dictionnaire de ressources pour une utilisation en tant que `StaticResource` .</br>Remarque : les ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqués/utilisés lors de l’utilisation du rechargement à chaud XAML. Seule la création de la ressource n’est pas prise en charge.</br> Modification de la propriété du dictionnaire de ressources `Source` .|
+|Ajout de nouveaux contrôles, classes, fenêtres ou autres fichiers à votre projet pendant que l’application est en cours d’exécution|Non pris en charge|Non pris en charge|None|
+|Gestion des packages NuGet (ajout/suppression/mise à jour de packages)|Non pris en charge|Non pris en charge|None|
 |Modification de la liaison de données qui utilise l’extension de balisage {x :Bind}|N/A|Prise en charge à partir de Visual Studio 2019|Cela nécessite Windows 10 version 1809 (Build 10.0.17763). Non pris en charge dans Visual Studio 2017 ou versions antérieures.|
-|La modification des directives x :Uid n’est pas prise en charge|NON APPLICABLE|Non pris en charge|Aucun|
-|Processus multiples | Pris en charge | Pris en charge | Pris en charge dans Visual Studio 2019 [version 16,6](/visualstudio/releases/2019/release-notes-v16.6) et versions ultérieures |
+|La modification des directives x :Uid n’est pas prise en charge|NON APPLICABLE|Non pris en charge|None|
+|Processus multiples | Prise en charge | Prise en charge | Pris en charge dans Visual Studio 2019 [version 16,6](/visualstudio/releases/2019/release-notes-v16.6) et versions ultérieures |
 
 ## <a name="error-messages"></a>Messages d’erreur
 
@@ -64,7 +64,7 @@ Vous pouvez rencontrer les erreurs suivantes lors de l’utilisation du recharge
 |Message d’erreur|Description|
 |-|-|
 |Vérifier l’échec de l’événement|L’erreur indique que vous tentez de connecter un événement à l’un de vos contrôles, ce qui n’est pas pris en charge pendant l’exécution de votre application.|
-|Cette modification n’est pas prise en charge par le rechargement à chaud XAML et ne sera pas appliquée pendant la session de débogage.|L’erreur indique que la modification que vous tentez d’effectuer n’est pas prise en charge par le rechargement à chaud XAML. Arrêtez la session de débogage, apportez la modification, puis redémarrez la session de débogage. Si vous trouvez un scénario non pris en charge que vous aimeriez voir pris en charge, utilisez notre nouvelle option « suggérer une fonctionnalité » dans la [communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). |
+|Cette modification n’est pas prise en charge par le rechargement à chaud XAML et ne sera pas appliquée pendant la session de débogage.|L’erreur indique que la modification que vous tentez d’effectuer n’est pas prise en charge par le rechargement à chaud XAML. Arrêtez la session de débogage, apportez la modification, puis redémarrez la session de débogage. Si vous trouvez un scénario non pris en charge que vous aimeriez voir pris en charge, utilisez notre nouvelle option « suggérer une fonctionnalité » dans la [communauté des développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8). |
 
 ## <a name="see-also"></a>Voir aussi
 

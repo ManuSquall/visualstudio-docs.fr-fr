@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905967"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668636"
 ---
 # <a name="open-folder-extensibility"></a>Ouvrir l’extensibilité des dossiers
 
@@ -51,7 +51,7 @@ Les fonctionnalités qui utilisent les types suivants devront adopter de nouvell
 
 ## <a name="feedback-comments-issues"></a>Commentaires, commentaires, problèmes
 
-Ouvrez le dossier et les API sont en cours de `Microsoft.VisualStudio.Workspace.*` développement. Si vous constatez un comportement inattendu, consultez les problèmes connus pour la publication d’intérêt. La [communauté des développeurs](https://developercommunity.visualstudio.com) est l’endroit recommandé pour voter et créer des problèmes. Pour chaque commentaire, nous vous recommandons vivement de fournir une description détaillée de votre problème. Incluez la version de Visual Studio pour laquelle vous développez, les API que vous utilisez (ce que vous avez implémenté et ce que vous utilisez), le résultat attendu et le résultat réel. Si possible, incluez un vidage du processus de devenv.exe. Utilisez le suivi des problèmes de GitHub pour fournir des commentaires sur ce et la documentation associée.
+Ouvrez le dossier et les API sont en cours de `Microsoft.VisualStudio.Workspace.*` développement. Si vous constatez un comportement inattendu, consultez les problèmes connus pour la publication d’intérêt. La [communauté des développeurs](https://aka.ms/feedback/suggest?space=8) est l’endroit recommandé pour voter et créer des problèmes. Pour chaque commentaire, nous vous recommandons vivement de fournir une description détaillée de votre problème. Incluez la version de Visual Studio pour laquelle vous développez, les API que vous utilisez (ce que vous avez implémenté et ce que vous utilisez), le résultat attendu et le résultat réel. Si possible, incluez un vidage du processus de devenv.exe. Utilisez le suivi des problèmes de GitHub pour fournir des commentaires sur ce et la documentation associée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398993"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668363"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
 Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-feu ou un serveur proxy, vous pouvez souhaiter ajouter des URL de domaine à une « liste verte » et ouvrir des ports et des protocoles afin de bénéficier d’une expérience optimale pendant l’installation et l’utilisation de Visual Studio et des services Azure.
 
-* **[Installer Visual Studio](#install-visual-studio)** : ces tables incluent les URL de domaine à ajouter à une liste verte afin que vous ayez accès à tous les composants et charges de travail de votre choix.
+* **[Installer Visual Studio](#install-visual-studio)**: ces tables incluent les URL de domaine à ajouter à une liste verte afin que vous ayez accès à tous les composants et charges de travail de votre choix.
 
-* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)** : cette table comprend les URL de domaine à ajouter à une liste verte et les ports et protocoles à ouvrir afin que vous ayez accès à l’ensemble des fonctionnalités et des services de votre choix.
+* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)**: cette table comprend les URL de domaine à ajouter à une liste verte et les ports et protocoles à ouvrir afin que vous ayez accès à l’ensemble des fonctionnalités et des services de votre choix.
 
 > [!NOTE]
 > Cet article a été écrit pour Visual Studio sur Windows, mais certaines informations sont également applicables à [l’installation de Visual Studio pour Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) derrière un pare-feu ou un serveur proxy.
@@ -90,7 +90,7 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 
 Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous utilisez Visual Studio ou des services Azure derrière un pare-feu ou un serveur proxy, Voici les URL que vous devez ajouter à une liste verte et les ports et protocoles que vous souhaitez peut-être ouvrir.
 
-| Scénario ou service | Point de terminaison DNS | Protocole<br/>/Port | Description |
+| Scénario ou service | Point de terminaison DNS | Protocol<br/>/Port | Description |
 | - | - | -: | - | - |
 | URL<br>resolution | go.microsoft.com<br><br>aka.ms | | Permet de raccourcir les URL, puis les résoudre en URL plus longues |
 | Page de démarrage | vsstartpage.blob.core.windows.net | 443 | Permet d’afficher la section Informations pour les développeurs située sur la page de démarrage (Visual Studio 2017 uniquement) |
@@ -99,7 +99,7 @@ Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous 
 | Projet IA <br>Intégration | az861674.vo.msecnd.net | 443<br> | Permet de configurer de nouveaux projets pour envoyer des données d’utilisation à votre compte Application Insights enregistré |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Permet de fournir des informations dans l’éditeur relatives à la dernière mise à jour d’un fichier, à la chronologie des modifications, aux éléments de travail auxquels sont associées des modifications, aux auteurs et bien plus encore |
 | Expérimental <br>activation des fonctionnalités | visualstudio-devdiv-c2s.msedge.net | 80 | Permet d’activer de nouvelles fonctionnalités expérimentales ou des modifications de fonctionnalités |
-| « Badge » d’identité <br>(nom d'utilisateur et avatar)<br>and <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
+| « Badge » d’identité <br>(nom d'utilisateur et avatar)<br>et <br>Paramètres d'itinérance | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Permet d’afficher le nom et l’avatar de l’utilisateur dans l’IDE <br><br> Permet de vous assurer que les modifications de paramètres utilisent un profil itinérant d’un ordinateur à un autre |
 | Paramètres distants | az700632.vo.msecnd.net | 443 | Permet de désactiver des extensions qui sont connues pour poser des problèmes dans Visual Studio |
 | Outils Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Utilisé pour les scénarios de magasin d’applications Windows |
 | JSON Schema (Schéma JSON) <br>Découverte <br><br>JSON Schema (Schéma JSON) <br>Définition<br><br>JSON Schema (Schéma JSON) <br>La prise en charge de <br>Ressources Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Permet de détecter et de télécharger des schémas JSON que l’utilisateur peut utiliser lors de la modification des documents JSON <br><br>Permet d’obtenir le schéma de validation de métadonnées pour JSON<br><br>Permet d’obtenir le schéma actuel pour les modèles de déploiement Azure Resource Manager |
@@ -112,7 +112,7 @@ Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous 
 | Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Nouveau <br>Python <br> project <br>modèles | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br>Permet de résoudre les nouveaux modèles de projets Python suivants pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
 | Office Web <br>complément <br> Manifeste <br>Vérification <br>Service | verificationservice.osi.office.net | https/443 | Permet de valider les manifestes pour les compléments Office Web |
 | SharePoint et <br>Compléments Office | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | Utilisé pour publier et tester des compléments SharePoint et Office sur SharePoint Online et Microsoft 365 |
-| Workflow Manager <br>Service de test<br> Host | | http/12292 | Une règle de pare-feu créée automatiquement pour le test des compléments SharePoint avec des workflows |
+| Workflow Manager <br>Service de test<br> Hôte | | http/12292 | Une règle de pare-feu créée automatiquement pour le test des compléments SharePoint avec des workflows |
 | Collectées automatiquement <br>statistiques de fiabilité <br>et autre <br>Expérience client <br>Programmes d’amélioration du produit (CEIP)<br> pour le kit de développement logiciel (SDK) et <br>pour les outils SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Utilisé pour envoyer des statistiques de fiabilité (données de blocage ou de non-réponse) de l’utilisateur à Microsoft. Les vidages sur incident/non réactif réels seront toujours téléchargés si Rapport d’erreurs Windows est activé ; seules les informations statistiques seront supprimées ; <br>Permet de révéler des modèles d’utilisation anonymes pour l’extension du Kit de développement logiciel Azure Tools pour Visual Studio et pour les modèles d’utilisation des outils SQL de Visual Studio |
 | Visual Studio <br> Expérience client <br>Programme d’amélioration du produit (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | Permet de collecter des modèles d’utilisation anonymes et des journaux d’erreurs <br><br>Permet de suivre des problèmes de gel de l’interface utilisateur |
 | Création et<br>Gestion de <br>Ressources Azure | management.azure.com <br>management.core.windows.net | https/443 | Permet de créer des sites Web Azure ou d’autres ressources pour prendre en charge la publication d’applications web, des fonctions Azure ou WebJobs |
@@ -155,7 +155,7 @@ Nous offrons une option de prise en charge de [**conversation d’installation**
 Voici d’autres options de support :
 
 * Signalez-nous les problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) qui apparaît dans Visual Studio Installer et dans l’IDE Visual Studio.
-* Suggérez une fonctionnalité, suivez les problèmes des produits et trouvez les réponses à vos questions dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+* Suggérez une fonctionnalité, suivez les problèmes des produits et trouvez les réponses à vos questions dans la [Communauté des développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8).
 * Utilisez [GitHub](https://github.com/) pour communiquer avec nous et d’autres développeurs Visual Studio en prenant part à la [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio).
 
 ## <a name="see-also"></a>Voir aussi

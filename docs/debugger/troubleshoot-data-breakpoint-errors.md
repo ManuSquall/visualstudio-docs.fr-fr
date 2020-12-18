@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852255"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668779"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Dépannage des erreurs de point d’arrêt de données
 Cette page vous guidera lors de la résolution des erreurs courantes rencontrées lors de l’utilisation de l’instruction « arrêter quand la valeur est modifiée »
@@ -79,9 +79,9 @@ L’architecture (configuration de plateforme) sur laquelle votre programme s’
 | ARM | 1 | 4 |
 | ARM64 | 2 | 8 |
 
-## <a name="provide-feedback"></a>Fournir un feedback
+## <a name="provide-feedback"></a>Fournir des commentaires
 
-Pour tout problème ou suggestion concernant cette fonctionnalité, faites-le nous savoir via l’aide > envoyer des commentaires > [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans l’IDE ou dans la [communauté des développeurs](https://developercommunity.visualstudio.com/).
+Pour tout problème ou suggestion concernant cette fonctionnalité, faites-le nous savoir via l’aide > envoyer des commentaires > [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans l’IDE ou dans la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Voir aussi
 

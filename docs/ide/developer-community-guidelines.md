@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116148"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668558"
 ---
 # <a name="developer-community-guidelines"></a>Consignes Developer Community
 
@@ -21,7 +21,7 @@ La communauté des développeurs suit des problèmes et des suggestions de fonct
 
 ## <a name="submitting-problems-and-suggestions"></a>Envoi de problèmes et de suggestions
 
-La [communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/) effectue le suivi des problèmes et des suggestions de fonctionnalités pour Visual Studio.
+La [communauté de développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8) effectue le suivi des problèmes et des suggestions de fonctionnalités pour Visual Studio.
 
 ### <a name="before-submitting-an-issue"></a>Avant de soumettre un problème
 
@@ -117,4 +117,4 @@ Les commentaires et les réponses sont visibles publiquement, mais tous les fich
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Connectez-vous à la [communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/) pour signaler des problèmes, suggérer des fonctionnalités ou parcourir les tickets existants. Vous n’avez plus qu’à l’utiliser !
+Connectez-vous à la [communauté de développeurs Visual Studio](https://aka.ms/feedback/suggest?space=8) pour signaler des problèmes, suggérer des fonctionnalités ou parcourir les tickets existants. Vous n’avez plus qu’à l’utiliser !

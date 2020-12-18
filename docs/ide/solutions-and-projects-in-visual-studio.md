@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des solutions et des projets
+title: En savoir plus sur les solutions et les projets
 description: Découvrez les projets et solutions Visual Studio, comment créer de nouveaux projets à partir d’un modèle et comment afficher & gérer des projets dans Explorateur de solutions.
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615751"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668090"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -51,7 +51,7 @@ Les fichiers projet sont basés sur le [schéma XML MSBuild](../msbuild/msbuild-
 
 ## <a name="solutions"></a>Solutions
 
-Un projet est contenu dans une *solution*. Malgré son nom, une solution n’est pas une « réponse ». Il s’agit simplement d’un conteneur pour un ou plusieurs projets associés, ainsi que des informations de génération, des paramètres de la fenêtre Visual Studio et des fichiers divers qui ne sont pas associés à un projet spécifique. Une solution est décrite par un fichier texte (extension *.sln*) qui a son propre format unique. Il n’est pas destiné à être modifié manuellement.
+Un projet est contenu dans une *solution*. Malgré son nom, une solution n’est pas une « réponse ». Il s’agit simplement d’un conteneur pour un ou plusieurs projets associés, ainsi que des informations de génération, des paramètres de la fenêtre Visual Studio et des fichiers divers qui ne sont pas associés à un projet spécifique.
 
 ### <a name="solution-file"></a>Fichier solution
 
@@ -61,6 +61,9 @@ Visual Studio utilise deux types de fichiers (*. sln* et *. suo*) pour stocker l
 |---------------|----------|-----------------|
 |.sln|Solution Visual Studio|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|
 |.suo|Options utilisateur de solution|Stocke les personnalisations et les paramètres au niveau de l’utilisateur, tels que les points d’arrêt.|
+
+> [!IMPORTANT]
+> Une solution est décrite par un fichier texte (extension *.sln*) qui a son propre format unique. Il n’est pas destiné à être modifié manuellement. Inversement, le fichier *. suo* est un fichier masqué qui n’est pas affiché sous les paramètres par défaut de l’Explorateur de fichiers. Pour afficher les fichiers masqués, dans le menu **Affichage** de l’Explorateur de fichiers, cochez la case **Éléments masqués**.
 
 ### <a name="solution-folder"></a>Dossier de solution
 

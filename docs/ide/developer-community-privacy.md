@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005936"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668545"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
-Par défaut, tout le monde peut voir la totalité des informations des rapports de problème dans la [Communauté des développeurs](https://developercommunity.visualstudio.com/), notamment les commentaires et les réponses. C’est un avantage parce qu’il permet à toute la communauté d’avoir accès aux problèmes, solutions et solutions de contournement trouvés par d’autres utilisateurs. Toutefois, si vous êtes inquiet concernant la confidentialité de vos données ou de votre identité, plusieurs options s’offrent à vous.
+Par défaut, tout le monde peut voir la totalité des informations des rapports de problème dans la [Communauté des développeurs](https://aka.ms/feedback/suggest?space=8), notamment les commentaires et les réponses. C’est un avantage parce qu’il permet à toute la communauté d’avoir accès aux problèmes, solutions et solutions de contournement trouvés par d’autres utilisateurs. Toutefois, si vous êtes inquiet concernant la confidentialité de vos données ou de votre identité, plusieurs options s’offrent à vous.
 
 ## <a name="identity-privacy"></a>Confidentialité de l’identité
 

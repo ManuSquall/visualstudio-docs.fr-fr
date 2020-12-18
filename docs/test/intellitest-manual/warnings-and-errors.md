@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 639b68c4d999a5e491f6e52a2cf3a7960563ed17
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: d72ee803389c692233478d742dadbcf514a3a036
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329430"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668064"
 ---
 # <a name="warnings-and-errors"></a>Avertissements et erreurs
 
@@ -346,4 +346,4 @@ Dans certains cas, la modification d’un champ statique est acceptable :
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://aka.ms/feedback/suggest?space=8).
