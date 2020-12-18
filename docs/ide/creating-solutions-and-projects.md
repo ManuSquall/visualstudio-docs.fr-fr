@@ -1,7 +1,7 @@
 ---
 title: Utiliser des solutions et des projets
 description: Découvrez la différence entre les solutions et les projets et comment les utiliser dans Visual Studio.
-ms.custom: SEO-VS-2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: c6649b313d4ab03c1f096a6bcbc466cb338f427c
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599477"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684030"
 ---
 # <a name="work-with-solutions-and-projects"></a>Utiliser des solutions et des projets
 
@@ -48,18 +48,18 @@ Pour plus d’informations sur la création d’un projet à partir d’un modè
 
 Si vous avez déjà une collection de fichiers de code source, vous pouvez facilement les ajouter à un projet.
 
-1. Dans le menu, choisissez **fichier**  >  **nouveau**  >  **projet à partir du code existant**.
+1. Dans le menu, sélectionnez **fichier**  >  **nouveau**  >  **projet à partir du code existant**.
 
-1. Dans l’Assistant **Créer un projet à partir de fichiers de code existants**, choisissez le type de projet souhaité dans la zone de liste déroulante **Quel type de projet voulez-vous créer ?**, puis choisissez le bouton **Suivant**.
+1. Dans l’Assistant **créer un projet à partir de fichiers de code existants** , sélectionnez le type de projet que vous souhaitez dans la zone de liste déroulante **quel type de projet voulez-vous créer ?** , puis sélectionnez le bouton **suivant** .
 
-1. Dans l’Assistant, accédez à l’emplacement des fichiers, puis entrez le nom du nouveau projet dans la zone **Nom**. Quand vous avez terminé, choisissez le bouton **Terminer**.
+1. Dans l’Assistant, accédez à l’emplacement des fichiers, puis entrez le nom du nouveau projet dans la zone **Nom**. Lorsque vous avez terminé, sélectionnez le bouton **Terminer** .
 
 > [!NOTE]
 > Cette option est la plus appropriée pour une collection de fichiers relativement simple. Actuellement, seuls les types de projets C++, Apache Cordova, Visual Basic et C# sont pris en charge.
 
 ## <a name="add-files-to-a-solution"></a>Ajouter des fichiers à une solution
 
-Si vous utilisez des fichiers qui s’appliquent à plusieurs projets, comme un fichier Lisezmoi pour la solution, ou d’autres fichiers qui sont logiquement associés à la solution globale plutôt qu’à un projet particulier, vous pouvez les ajouter directement à la solution. Pour ajouter un élément à une solution, dans le menu contextuel (clic droit) du nœud de solution dans **l’Explorateur de solutions**, choisissez **Ajouter** > **Nouvel élément** ou **Ajouter** > **Élément existant**.
+Si vous utilisez des fichiers qui s’appliquent à plusieurs projets, comme un fichier Lisezmoi pour la solution, ou d’autres fichiers qui sont logiquement associés à la solution globale plutôt qu’à un projet particulier, vous pouvez les ajouter directement à la solution. Pour ajouter un élément à une solution, dans le menu contextuel (clic droit) du nœud de la solution dans **Explorateur de solutions**, sélectionnez **Ajouter** un  >  **nouvel élément** ou **Ajouter** un  >  **élément existant**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Créer un projet .NET qui cible une version spécifique du .NET Framework
 
@@ -67,7 +67,7 @@ Quand vous créez un projet .NET Framework, vous pouvez spécifier une version s
 
 ::: moniker range="vs-2017"
 
-Pour spécifier une version du .NET Framework, choisissez le menu déroulant **Framework** dans la boîte de dialogue **Nouveau projet**.
+Pour spécifier une version de .NET Framework, sélectionnez le menu déroulant **Framework** dans la boîte de dialogue **nouveau projet** .
 
 ![Liste déroulante Framework dans la boîte de dialogue Nouveau projet](./media/vside-newproject-framework.png)
 
@@ -78,7 +78,7 @@ Pour spécifier une version du .NET Framework, choisissez le menu déroulant **F
 
 ::: moniker range=">=vs-2019"
 
-Pour spécifier une version de .NET Framework, choisissez le menu déroulant **Framework** sur la page **créer un nouveau projet** .
+Pour spécifier une version de .NET Framework, sélectionnez le menu déroulant **Framework** sur la page **créer un nouveau projet** .
 
 ![Sélecteur de framework dans la configuration d’un nouveau projet](media/vs-2019/configure-new-project-framework.png)
 
@@ -90,15 +90,15 @@ Vous pouvez également créer des solutions vides qui ne contiennent pas de proj
 
 ### <a name="to-create-an-empty-solution"></a>Pour créer une solution vide
 
-1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
+1. Dans la barre de menus, sélectionnez **fichier**  >  **nouveau**  >  **projet**.
 
 ::: moniker range="vs-2017"
 
-2. Dans le volet gauche (**Modèles**), choisissez **Autres types de projets** > **Solutions Visual Studio** dans la liste développée.
+2. Dans le volet gauche (**modèles**), sélectionnez **autres types de projets** > **solutions Visual Studio** dans la liste développée.
 
-3. Dans le volet du milieu, choisissez **Nouvelle Solution**.
+3. Dans le volet central, sélectionnez **Nouvelle Solution**.
 
-4. Entrez les valeurs **Nom** et **Emplacement** de votre solution, puis choisissez **OK**.
+4. Entrez les valeurs **nom** et **emplacement** de votre solution, puis sélectionnez **OK**.
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Vous pouvez également créer des solutions vides qui ne contiennent pas de proj
 
 3. Sélectionnez le modèle **Solution vide**, puis cliquez sur **Suivant**.
 
-4. Entrez les valeurs **Nom** et **Emplacement** pour votre solution, puis choisissez **Créer**.
+4. Entrez les valeurs **nom** et **emplacement** de votre solution, puis sélectionnez **créer**.
 
 ::: moniker-end
 
@@ -137,11 +137,11 @@ Vous pouvez supprimer des solutions et tout leur contenu définitivement, mais c
 
 ### <a name="permanently-delete-a-solution"></a>Pour supprimer définitivement une solution
 
-1. Dans **l’Explorateur de solutions**, choisissez **Ouvrir le dossier dans l’Explorateur de fichiers** dans le menu contextuel (clic droit) de la solution à supprimer.
+1. Dans **Explorateur de solutions**, dans le menu contextuel (menu contextuel) de la solution que vous souhaitez supprimer, sélectionnez **ouvrir le dossier dans l’Explorateur de fichiers**.
 
 1. Dans l'Explorateur de fichiers, remontez d'un niveau.
 
-1. Choisissez le dossier contenant la solution, puis appuyez sur la touche **Suppr**.
+1. Sélectionnez le dossier qui contient la solution, puis appuyez sur la touche **Suppr** .
 
 ## <a name="see-also"></a>Voir aussi
 

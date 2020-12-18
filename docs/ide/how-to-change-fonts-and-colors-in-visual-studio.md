@@ -3,7 +3,7 @@ title: Modifier les thèmes, les polices, le texte et le contraste pour l’acce
 description: Découvrez comment modifier les thèmes de couleurs, les couleurs de police, les tailles de texte et les couleurs de contraste supplémentaires de Visual Studio pour des raisons de simplicité d’utilisation et d’accessibilité.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667908"
+ms.locfileid: "97683898"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Comment : modifier les polices, les couleurs et les thèmes dans Visual Studio
 

@@ -2,7 +2,7 @@
 title: Se connecter à Visual Studio
 description: Découvrez comment vous connecter à Visual Studio.
 titleSuffix: ''
-ms.custom: seodec18, contperfq1
+ms.custom: seodec18, contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 87c0ad7517bb01aa68d98e0502e34af7c767e962
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672767"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683988"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -71,7 +71,7 @@ Si vous choisissez de ne pas vous connecter lorsque vous ouvrez Visual Studio po
 
 ## <a name="to-change-your-profile-information"></a>Pour modifier vos informations de profil
 
-1. Accédez aux **File**  >  **paramètres du compte** de fichier et choisissez le lien **gérer le profil Visual Studio** .
+1. Accédez aux   >  **paramètres du compte** de fichier et choisissez le lien **gérer le profil Visual Studio** .
 
 1. Dans la fenêtre du navigateur, sélectionnez **Modifier le profil**, puis changez les paramètres souhaités.
 

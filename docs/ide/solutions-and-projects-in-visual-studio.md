@@ -1,8 +1,8 @@
 ---
 title: En savoir plus sur les solutions et les projets
 description: Découvrez les projets et solutions Visual Studio, comment créer de nouveaux projets à partir d’un modèle et comment afficher & gérer des projets dans Explorateur de solutions.
-ms.custom: SEO-VS-2020
-ms.date: 12/15/2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668090"
+ms.locfileid: "97683912"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -77,11 +77,14 @@ Vous pouvez également créer un modèle de projet personnalisé que vous pouvez
 
 Lorsque vous créez un projet, Visual Studio l’enregistre à son emplacement par défaut, *%UserProfile%\source\repos*. Pour modifier cet emplacement, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**. Pour plus d’informations, consultez [boîte de dialogue Options : projets et Solutions > emplacements](./reference/projects-solutions-locations-options.md).
 
+> [!TIP]
+> Pour obtenir un exemple de projet et de solution créés à partir de zéro, ainsi que des instructions pas à pas et des exemples de code, consultez [Présentation des projets et des solutions](../get-started/tutorial-projects-solutions.md).
+
 ## <a name="solution-explorer"></a>Explorateur de solutions
 
 Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de solutions** pour afficher et gérer le projet et la solution, ainsi que leurs éléments associés. L’illustration suivante montre **Explorateur de solutions** avec une solution C# qui contient deux projets :
 
-![Explorateur de solutions](../ide/media/vs2015_solution_explorer.png)
+![Capture d’écran d’Explorateur de solutions.](../ide/media/vs2015_solution_explorer.png)
 
 De nombreuses commandes de menu sont disponibles dans le menu contextuel sur différents éléments de **l’Explorateur de solutions**. Ces commandes incluent la génération d’un projet, la gestion de packages NuGet, l’ajout d’une référence, l’affectation d’un nouveau nom de fichier et l’exécution de tests, entre autres. La barre d’outils en haut de **l’Explorateur de solutions** comprend des boutons pour basculer d’un affichage de solutions à un affichage de dossiers, afficher les fichiers cachés, réduire tous les nœuds et bien plus encore.
 

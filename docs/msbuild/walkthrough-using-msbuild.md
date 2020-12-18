@@ -3,7 +3,7 @@ title: Utiliser MSBuild
 description: Découvrez les différentes parties d’un fichier projet MSBuild, y compris les éléments, les métadonnées d’élément, les propriétés, les cibles et les tâches.
 ms.date: 10/19/2020
 ms.topic: conceptual
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298544"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684022"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : utiliser MSBuild
 
@@ -167,7 +167,7 @@ Exécutez MSBuild à partir de **l’Invite de commandes développeur** pour Vis
 
    (Windows 10) Dans la zone de recherche dans la barre des tâches, commencez à taper le nom de l’outil, tel que `dev` ou `developer command prompt`. S’affiche alors une liste des applications installées qui correspondent à votre modèle de recherche.
 
-   Si vous devez le trouver manuellement, le fichier est *LaunchDevCmd.bat* dans le dossier * \> \<version> \Common7\Tools du dossier d’installation<VisualStudio* .
+   Si vous devez le trouver manuellement, le fichier est *LaunchDevCmd.bat* dans le dossier *\> \<version> \Common7\Tools du dossier d’installation<VisualStudio* .
 
 2. Dans la fenêtre commande, accédez au dossier contenant le fichier projet, dans le cas présent, *D:\BuildApp\BuildApp*.
 
@@ -204,7 +204,7 @@ Exécutez MSBuild à partir de **l’Invite de commandes développeur** pour Vis
 </PropertyGroup>
 ```
 
- Toutes les propriétés sont des éléments enfants des éléments PropertyGroup. Le nom de la propriété est le nom de l’élément enfant, et la valeur de la propriété est l’élément de texte de l’élément enfant. Par exemple,
+ Toutes les propriétés sont des éléments enfants des éléments PropertyGroup. Le nom de la propriété est le nom de l’élément enfant, et la valeur de la propriété est l’élément de texte de l’élément enfant. Par exemple :
 
 ```xml
 <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -212,7 +212,7 @@ Exécutez MSBuild à partir de **l’Invite de commandes développeur** pour Vis
 
  définit la propriété nommée TargetFrameworkVersion, en lui donnant la valeur de chaîne « v 4.5 ».
 
- Les propriétés de génération peuvent être redéfinies à tout moment. Si
+ Les propriétés de génération peuvent être redéfinies à tout moment. If
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -270,7 +270,7 @@ Utilisez cette syntaxe pour examiner certaines propriétés du fichier projet.
 
 ### <a name="conditional-properties"></a>Propriétés conditionnelles
 
-De nombreuses propriétés `Configuration` , telles que, sont définies de manière conditionnelle, autrement dit, l' `Condition` attribut apparaît dans l’élément Property. Les propriétés conditionnelles sont définies ou redéfinies uniquement si la condition a la valeur « true ». Notez que les propriétés non définies ont la valeur par défaut d’une chaîne vide. Par exemple,
+De nombreuses propriétés `Configuration` , telles que, sont définies de manière conditionnelle, autrement dit, l' `Condition` attribut apparaît dans l’élément Property. Les propriétés conditionnelles sont définies ou redéfinies uniquement si la condition a la valeur « true ». Notez que les propriétés non définies ont la valeur par défaut d’une chaîne vide. Par exemple :
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -342,7 +342,7 @@ Pour plus d’informations, consultez [caractères spéciaux MSBuild](../msbuild
 
 Un élément est une information, généralement un nom de fichier, qui est utilisée comme entrée dans le système de génération. Par exemple, une collection d’éléments représentant des fichiers sources peut être transmise à une tâche nommée Compile pour les compiler dans un assembly.
 
-Tous les éléments sont des éléments enfants des éléments ItemGroup. Le nom de l’élément est le nom de l’élément enfant, et la valeur de l’élément est la valeur de l’attribut Include de l’élément enfant. Les valeurs des éléments du même nom sont collectées dans les types d’élément de ce nom.  Par exemple,
+Tous les éléments sont des éléments enfants des éléments ItemGroup. Le nom de l’élément est le nom de l’élément enfant, et la valeur de l’élément est la valeur de l’attribut Include de l’élément enfant. Les valeurs des éléments du même nom sont collectées dans les types d’élément de ce nom.  Par exemple :
 
 ```xml
 <ItemGroup>
@@ -439,7 +439,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 
 ### <a name="include-exclude-and-wildcards"></a>Caractères génériques et attributs Include et Exclude
 
- Vous pouvez utiliser les caractères génériques « * », « \*\* » et « ? » avec l’attribut Include pour ajouter des éléments à un type d’élément. Par exemple,
+ Vous pouvez utiliser les caractères génériques « * », « \*\* » et « ? » avec l’attribut Include pour ajouter des éléments à un type d’élément. Par exemple :
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -453,7 +453,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 
  ajoute tous les fichiers avec l’extension de fichier *. jpeg* dans le dossier *images* , ainsi que tous ses sous-dossiers, au type d’élément photos. Pour obtenir plus d’exemples, consultez [Comment : sélectionner les fichiers à générer](../msbuild/how-to-select-the-files-to-build.md).
 
- Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple,
+ Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple :
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -466,7 +466,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- Vous pouvez exclure un élément d’un type d’élément avec l’attribut Exclude. Par exemple,
+ Vous pouvez exclure un élément d’un type d’élément avec l’attribut Exclude. Par exemple :
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -474,7 +474,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 
  ajoute tous les fichiers portant l’extension de fichier  *.cs* au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne *Designer*. Pour obtenir plus d’exemples, consultez [Comment : exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
 
-L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple,
+L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple :
 
 ```xml
 <Compile Include="*.cs" />
@@ -634,4 +634,4 @@ Notez que les métadonnées exprimées dans cette syntaxe ne provoquent pas le t
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
