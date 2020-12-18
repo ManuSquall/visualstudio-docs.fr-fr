@@ -1,7 +1,7 @@
 - name: Documentation sur l’IDE Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   expanded: true
   items:
     - name: À propos de Visual Studio
@@ -182,11 +182,11 @@
       href: ide/visual-studio-search.md
     - name: Solutions et projets
       items:
-        - name: Utiliser des solutions et des projets
+        - name: En savoir plus sur les solutions et les projets
           href: ide/solutions-and-projects-in-visual-studio.md
         - name: Créer un projet
           href: ide/create-new-project.md
-        - name: Créer des solutions et des projets
+        - name: Utiliser des solutions et des projets
           href: ide/creating-solutions-and-projects.md
         - name: Ouvrir un projet à partir d’un référentiel
           href: get-started/tutorial-open-project-from-repo.md
@@ -705,7 +705,7 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: "Tutoriel\_3\_: Créer un jeu de combinaisons (C#)"
                   items:
-                    - name: Vue d’ensemble
+                    - name: Vue d'ensemble
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: "Étape\_1\_: Créer un projet et ajouter une table à votre formulaire"
