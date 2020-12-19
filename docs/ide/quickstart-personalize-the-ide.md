@@ -3,18 +3,18 @@ title: Définir le thème Visual Studio Dark et modifier les couleurs du texte
 description: Découvrez comment changer le thème de couleur par défaut de Visual Studio en mode Dark et modifier les couleurs de police dans l’éditeur de code.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801397"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684044"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Comment : personnaliser l’IDE de Visual Studio et l’éditeur
 
@@ -38,7 +38,7 @@ Le thème de couleur par défaut de l’interface utilisateur de Visual Studio s
 
 1. Dans la barre de menus, qui est la rangée de menus tels que **Fichier** et **Edition**, choisissez **Outils** > **Options**.
 
-1. Dans la **Environment**  >  page options**générales** de l’environnement, remplacez la sélection du **thème de couleur** par **foncé**, puis cliquez sur **OK**.
+1. Dans la   >  page options **générales** de l’environnement, remplacez la sélection du **thème de couleur** par **foncé**, puis cliquez sur **OK**.
 
    Le thème de couleur de tout l’environnement de développement (IDE) Visual Studio change et devient **Sombre**.
 
