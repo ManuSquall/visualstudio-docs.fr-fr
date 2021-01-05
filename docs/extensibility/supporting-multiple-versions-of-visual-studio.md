@@ -1,5 +1,7 @@
 ---
 title: Prise en charge de plusieurs versions de Visual Studio | Microsoft Docs
+description: Découvrez comment vous pouvez prendre en charge plusieurs versions de Visual Studio, avec les VSPackages capables de se charger dans différentes versions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d1309c6fcda2b27efdc78e7b31189d3a58edfb8
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699474"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715624"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Prise en charge de plusieurs versions de Visual Studio
 Le terme « *côte à côte* » signifie que vous pouvez installer et gérer plusieurs versions d’un produit sur le même ordinateur. Pour les VSPackages, cela signifie qu’un utilisateur peut avoir plusieurs versions de Visual Studio installées sur le même ordinateur. Toutefois, les versions côte à côte de vos VSPackages ne peuvent pas être chargées dans une seule version de Visual Studio.

@@ -1,5 +1,7 @@
 ---
 title: Élément UsedCommands | Microsoft Docs
+description: L’élément UsedCommands groupe les éléments UsedCommand et d’autres regroupements UsedCommands. L’élément UsedCommands est facultatif.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698750"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715897"
 ---
 # <a name="usedcommands-element"></a>Élément UsedCommands
 L’élément UsedCommands groupe les éléments UsedCommand et d’autres regroupements UsedCommands.
 
  L’élément UsedCommands est facultatif. Si vous n’appelez pas de commandes définies en dehors de votre package, vous n’avez pas besoin d’inclure cette section dans votre fichier. vsct.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <UsedCommands condition="Defined(DEBUG)">

@@ -1,5 +1,7 @@
 ---
 title: Débogage d’applications | Microsoft Docs
+description: Découvrez comment utiliser le débogage dans Visual Studio pour différents types d’applications, telles que les applications UWP, le code managé, le code natif, le code GPU et les applications Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535159"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727006"
 ---
 # <a name="debugging-applications"></a>Déboguer des applications
 Les sections suivantes traitent du débogage pour des types spécifiques d'applications. Des types d'applications différents et des langages différents requièrent des paramètres et des techniques différents, et présentent des problèmes différents qui doivent être débogués.
@@ -35,5 +37,5 @@ Les sections suivantes traitent du débogage pour des types spécifiques d'appli
 |[Déboguer des applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Décrit comment déboguer des applications ASP.NET.|
 |[Déboguer du code Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Décrit comment déboguer le code python|
 |[Déboguer des applications JavaScript et de machine à écrire](../javascript/debug-nodejs.md)|Décrit comment déboguer des applications JavaScript, de machine à écrire et de Node.js|
-|[Déboguer des applications Web](../debugger/debugging-web-applications.md)|Décrit comment déboguer des applications et des scripts Web.|
+|[Déboguer des applications web](../debugger/debugging-web-applications.md)|Décrit comment déboguer des applications et des scripts Web.|
 |[Déboguer des services WCF](../debugger/debugging-wcf-services.md)|Décrit comment déboguer des services Windows Communication Foundation.|

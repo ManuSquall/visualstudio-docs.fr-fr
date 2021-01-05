@@ -1,5 +1,7 @@
 ---
 title: Diagnostiquer des problèmes après le déploiement | Microsoft Docs
+description: Diagnostiquez les problèmes après le déploiement à l’aide d’IntelliTrace dans Visual Studio. Incluez les informations de build dans votre version. Publiez et surveillez votre application pour trouver le problème.
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928054"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726824"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostiquer des problèmes après le déploiement à l’aide d’IntelliTrace (C#, Visual Basic)
 
@@ -44,7 +46,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 * Pour le déploiement vers Azure, utilisez [Application Insights](/azure/application-insights/).
 
-* Si vous devez utiliser IntelliTrace, ouvrez le projet dans Visual Studio et chargez les fichiers de symboles à partir de la build correspondante. Vous pouvez charger des fichiers de symboles à partir de la fenêtre **Modules** ou en configurant des symboles dans **Outils** > **Options** > **Débogage ** > **Symboles**.
+* Si vous devez utiliser IntelliTrace, ouvrez le projet dans Visual Studio et chargez les fichiers de symboles à partir de la build correspondante. Vous pouvez charger des fichiers de symboles à partir de la fenêtre **Modules** ou en configurant des symboles dans **Outils** > **Options** > **Débogage** > **Symboles**.
 
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  Paramétrez votre pipeline de build de sorte à ajouter l’emplacement de la source, de la génération et des symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.
@@ -263,7 +265,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 - **Nom du projet**
 
-   Nom de votre projet dans Visual Studio. Par exemple :
+   Nom de votre projet dans Visual Studio. Exemple :
 
   ```xml
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
@@ -281,7 +283,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
     - **ProjectVersionSpec**: version de votre projet
 
-      Par exemple :
+      Exemple :
 
     ```xml
     <SourceControl type="TFS">
@@ -303,7 +305,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
     - **CommitId**: ID de votre validation
 
-      Par exemple :
+      Exemple :
 
     ```xml
     <SourceControl type="Git">
@@ -315,7 +317,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
     </SourceControl>
     ```
 
-- **Créer**
+- **Générer**
 
    Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :
 
@@ -329,7 +331,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
   - **BuiltSolution**: chemin d’accès au fichier de la solution, utilisé par Visual Studio pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .
 
-    Par exemple :
+    Exemple :
 
   - **TFS**
 

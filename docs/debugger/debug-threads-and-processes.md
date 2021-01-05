@@ -1,5 +1,7 @@
 ---
 title: Outils pour déboguer des threads et des processus | Microsoft Docs
+description: Passez en revue les outils pour déboguer des threads et des processus dans Visual Studio. Les threads et les processus représentent des séquences d’instructions qui doivent s’exécuter dans un ordre spécifique.
+ms.custom: SEO-VS-2020
 ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738381"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727149"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Outils pour déboguer des threads et des processus dans Visual Studio
 Les *threads* et les *processus* sont des concepts liés en informatique. Tous deux représentent des séquences d'instructions qui doivent s'exécuter dans un ordre spécifique. Les instructions dans des threads ou processus séparés, toutefois, peuvent s'exécuter en parallèle.
@@ -65,5 +67,5 @@ Les outils que vous devez utiliser dans [!INCLUDE[vsprvs](../code-quality/includ
 ## <a name="see-also"></a>Voir aussi
 
 - [Joindre aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Débogage du code GPU](../debugger/debugging-gpu-code.md)

@@ -1,6 +1,7 @@
 ---
 title: Modifier le code et continuer le débogage | Microsoft Docs
-ms.custom: seodec18
+description: Utilisez la commande Modifier & continuer pendant le débogage dans Visual Studio afin de pouvoir apporter des modifications à votre code source pendant que votre programme est en mode arrêt.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599643"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726538"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modifier le code et continuer le débogage dans Visual Studio (C#, VB, C++)
 Modifier &amp; Continuer est une fonctionnalité qui vous fait gagner du temps en vous permettant de modifier votre code source pendant que votre programme est en mode arrêt. Lorsque vous reprenez l’exécution du programme en choisissant une commande d’exécution telle que **continue** ou **Step**, modifier & Continuer applique automatiquement les modifications du code avec certaines limitations. Cela vous permet de modifier votre code pendant une session de débogage, au lieu de devoir arrêter, recompiler votre programme entier et redémarrer la session de débogage.
@@ -43,7 +44,7 @@ Modifier &amp; Continuer est une fonctionnalité qui vous fait gagner du temps e
 
  [Modifier &amp; Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
 
- [Opération Modifier &amp;amp; Continuer non prise en charge pour F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+ [Modifier & Continuer non pris en charge pour F #](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)

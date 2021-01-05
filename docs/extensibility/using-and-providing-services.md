@@ -1,5 +1,7 @@
 ---
 title: Utilisation et fourniture de services | Microsoft Docs
+description: Découvrez les services que l’IDE de Visual Studio propose pour les VSPackages à fournir et utiliser. Ces articles décrivent comment obtenir et fournir des services.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8741d8d66af96ad4c6abea44b238393a34c5aa95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a7c1d9f3632d8b710ac238c372ed4456183a8d1
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698741"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715936"
 ---
 # <a name="using-and-providing-services"></a>Utilisation et fourniture de services
 Un service est un contrat entre deux VSPackages. Un VSPackage offre un ensemble spécifique d’interfaces à utiliser par un autre VSPackage. Par exemple, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service à tout VSPackage qu’il charge. Ce service fournit l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, qui peut être utilisée pour écrire dans le journal d’activité. Pour plus d’informations, consultez [procédure : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348026"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727422"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Surveiller les variables avec les fenêtres espion et espion Express
 
@@ -30,7 +30,8 @@ Pendant le débogage, vous pouvez utiliser les fenêtres **Espion** et **Espion 
 
 Les fenêtres **Espion** peuvent afficher plusieurs variables à la fois lors du débogage. La boîte de dialogue **Espion express** affiche une seule variable à la fois et doit être fermée pour que le débogage puisse continuer.
 
-S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
+> [!NOTE]
+> S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observer les variables avec un Fenêtre Espion
 
@@ -58,17 +59,17 @@ int main()
 
 ```
 
-1. Définissez un point d’arrêt sur la `c = a + b;` ligne en cliquant dans la marge de **Debug**gauche, en sélectionnant  >  **basculer le point d’arrêt**ou en appuyant sur **F9**.
+1. Définissez un point d’arrêt sur la `c = a + b;` ligne en cliquant dans la marge de gauche, en sélectionnant  >  **basculer le point d’arrêt** ou en appuyant sur **F9**.
 
 1. Démarrez le débogage en sélectionnant la flèche verte de **démarrage** **ou Déboguer**  >  **Démarrer le débogage**, ou appuyez sur **F5**. L’exécution s’interrompt au point d’arrêt.
 
-1. Ouvrez une fenêtre **Espion** en sélectionnant **Déboguer**  >  **Windows**  >  **Watch**  >  **regarder 1**ou en appuyant sur **CTRL** + **ALT** + **W**  >  **1**.
+1. Ouvrez une fenêtre **Espion** en sélectionnant **Déboguer**  >  **Windows**  >  **Watch**  >  **regarder 1** ou en appuyant sur **CTRL** + **ALT** + **W**  >  **1**.
 
-   Vous pouvez ouvrir des fenêtres **Espion** supplémentaires en sélectionnant Windows **2**, **3**ou **4**.
+   Vous pouvez ouvrir des fenêtres **Espion** supplémentaires en sélectionnant Windows **2**, **3** ou **4**.
 
 1. Dans la fenêtre **Espion** , sélectionnez une ligne vide, puis tapez variable `a` . Procédez de la même façon pour `b` et `c` .
 
-   ![Variables espion](../debugger/media/watchvariables.png "WatchVariables")
+   ![Variables Watch](../debugger/media/watchvariables.png "WatchVariables")
 
 1. Poursuivez le débogage en sélectionnant étape de **débogage**  >  **dans** ou en appuyant sur **F11** si nécessaire pour avancer. Les valeurs des variables dans la fenêtre **Espion** changent à mesure que vous itérez au sein de la `for` boucle.
 
@@ -217,7 +218,7 @@ Pour déterminer le nom du `Person` dans la `DoSomething()` méthode, vous pouve
 
 1. Démarrez le débogage.
 
-1. Lorsque l’exécution s’interrompt au point d’arrêt, ouvrez la fenêtre **variables locales** en choisissant **Déboguer**les  >  **Windows**  >  **paramètres régionaux**Windows.
+1. Lorsque l’exécution s’interrompt au point d’arrêt, ouvrez la fenêtre **variables locales** en choisissant **Déboguer** les  >    >  **paramètres régionaux** Windows.
 
 1. Dans la fenêtre **variables locales** , cliquez avec le bouton droit sur la `Person` variable et sélectionnez **créer un ID d’objet**.
 
@@ -257,7 +258,7 @@ Pour afficher uniquement l' **affichage dynamique** pour un objet, ajoutez un sp
 
 Le débogueur ajoute également un nœud enfant de **vue dynamique** de l’objet à la fenêtre **automatique** . Pour ouvrir la fenêtre **automatique** , pendant le débogage, sélectionnez **Déboguer**  >  **Windows**  >  **automatique**.
 
-L' **affichage dynamique** améliore également le débogage pour les objets com. Quand le débogueur obtient un objet COM encapsulé dans **System. __ComObject**, il ajoute un nœud **affichage dynamique** pour l’objet.
+L' **affichage dynamique** améliore également le débogage pour les objets com. Quand le débogueur obtient un objet COM encapsulé dans **System.__ComObject**, il ajoute un nœud **affichage dynamique** pour l’objet.
 
 ## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Observer une variable ou une expression unique avec espion Express
 
@@ -288,7 +289,7 @@ Pour observer la `a` variable,
 
 1. Sélectionnez **Déboguer**  >  **Espion express**, appuyez sur **MAJ** + **F9**, ou cliquez avec le bouton droit et sélectionnez **Espion express**.
 
-   La boîte de dialogue **Espion express** s’affiche. La `a` variable se trouve dans la zone **expression** avec **Value** la valeur **1**.
+   La boîte de dialogue **Espion express** s’affiche. La `a` variable se trouve dans la zone **expression** avec  la valeur **1**.
 
    ![Variable espion Express](../debugger/media/quickwatchvariable.png "Variable espion Express")
 

@@ -1,5 +1,7 @@
 ---
 title: Variante de taille de fenêtre d’affichage 1x1 | Microsoft Docs
+description: Appliquez la variante de taille de la fenêtre d’affichage 1x1 pour réduire les dimensions de la fenêtre d’affichage de toutes les cibles de rendu à 1x1 pixels.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b2c96b11c2075ce88b43cdebc34b905141c973
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1041f3a8016500a6e1f217849654d9710a508d8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62848742"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726486"
 ---
 # <a name="1x1-viewport-size-variant"></a>Variante de taille Viewport 1x1
 Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu à 1x1 pixels.
@@ -23,7 +25,7 @@ Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu
 
  Si cette variante présente un gain de performances élevé, cela peut indiquer que votre application consomme trop de taux de remplissage. En outre, votre résolution peut être trop élevée pour la plateforme cible, ou votre application peut passer des pixels de temps d’ombrage significatifs qui sont remplacés par la suite, également connus sous le titre de *surdessin*. Une mémoire tampon de trame plus petite ou la réduction de la quantité de surdessin améliorera les performances de votre application.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les dimensions de la fenêtre d'affichage sont réinitialisées à 1x1 pixels après chaque appel à `ID3D11DeviceContext::OMSetRenderTargets` ou `ID3D11DeviceContext::RSSetViewports`.
 
 ## <a name="example"></a>Exemple

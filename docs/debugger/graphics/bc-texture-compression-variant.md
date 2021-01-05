@@ -1,5 +1,7 @@
 ---
 title: Variante de compression de texture BC | Microsoft Docs
+description: Utilisez la variante de compression de texture BC pour autoriser la compression de bloc (BC) sur les textures ayant un format de pixel qui est une variation de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736160"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726447"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 Permet la compression de blocs sur les textures dont le format de pixel est une variation de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.
@@ -23,7 +25,7 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
 
  Si vos textures sont adaptées à une compression de blocs et que vous n'avez pas besoin d'une fidélité des couleurs parfaite, utilisez un format de compression de blocs pour réduire l'utilisation de mémoire et moins consommer de bande passante.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Vous compressez les textures en utilisant un format de compression de blocs à chaque appel à `ID3DDevice::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, les textures sont compressées quand :
 
 - L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :

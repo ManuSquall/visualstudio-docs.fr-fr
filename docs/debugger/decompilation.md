@@ -1,5 +1,7 @@
 ---
 title: Décompiler du code .NET pendant le débogage | Microsoft Docs
+description: Générez et incorporez du code source à partir d’assemblys .NET lors du débogage dans Visual Studio. Extraire et afficher le code source incorporé.
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600104"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726733"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Générer du code source à partir d’assemblys .NET pendant le débogage
 
@@ -57,7 +59,7 @@ Vous pouvez extraire les fichiers sources incorporés dans un fichier de symbole
 
 ![Capture d’écran du menu contextuel de l’assembly dans la fenêtre modules avec la commande extraire les sources.](media/decompilation-extract-source-code.png)
 
-Les fichiers sources extraits sont ajoutés à la solution en tant que [fichiers divers](../ide/reference/miscellaneous-files.md). La fonctionnalité fichiers divers est désactivée par défaut dans Visual Studio. Vous pouvez activer cette fonctionnalité à partir **Tools**de la  >  case à cocher outils**options**des  >  documents d'**environnement**  >  **Documents**  >  **afficher les fichiers divers dans Explorateur de solutions** . Si vous n’activez pas cette fonctionnalité, vous ne pourrez pas ouvrir le code source extrait.
+Les fichiers sources extraits sont ajoutés à la solution en tant que [fichiers divers](../ide/reference/miscellaneous-files.md). La fonctionnalité fichiers divers est désactivée par défaut dans Visual Studio. Vous pouvez activer cette fonctionnalité à partir de la  >  case à cocher outils **options** des  >  documents d'**environnement**  >    >  **afficher les fichiers divers dans Explorateur de solutions** . Si vous n’activez pas cette fonctionnalité, vous ne pourrez pas ouvrir le code source extrait.
 
 ![Capture d’écran de la page d’options outils avec l’option fichiers divers activée.](media/decompilation-tools-options-misc-files.png)
 
@@ -101,7 +103,7 @@ Pour plus d’informations, consultez le problème GitHub : [État du générat
 
 Les paramètres [uniquement mon code (uniquement mon code)](./just-my-code.md) permettent à Visual Studio d’effectuer un pas à pas principal dans le système, l’infrastructure, la bibliothèque et d’autres appels non utilisateur. Pendant une session de débogage, la fenêtre **modules** affiche les modules de code que le débogueur traite comme mon code (code utilisateur).
 
-La décompilation des modules optimisés ou de version génère du code non-utilisateur. Si le débogueur s’arrête dans votre code non-utilisateur décompilé, par exemple, la fenêtre **aucune source** s’affiche. Pour désactiver uniquement mon code, accédez à **Outils**  >  **options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**, **Enable Just My Code**puis désactivez uniquement mon code.
+La décompilation des modules optimisés ou de version génère du code non-utilisateur. Si le débogueur s’arrête dans votre code non-utilisateur décompilé, par exemple, la fenêtre **aucune source** s’affiche. Pour désactiver uniquement mon code, accédez à **Outils**  >  **options** (ou options de **débogage**  >  ) > **débogage**  >  **général**, puis désactivez uniquement mon code.
 
 ### <a name="extracted-sources"></a>Sources extraites
 

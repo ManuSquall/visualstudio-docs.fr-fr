@@ -1,5 +1,7 @@
 ---
 title: Débogage de la référence de l’interface utilisateur | Microsoft Docs
+description: Passez en revue les liens pour obtenir des informations de référence sur les différentes boîtes de dialogue que vous pouvez rencontrer dans l’interface utilisateur de débogage de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 318ab9263b530ac283d210f59aa8ca29733c6e8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bfd91e91b89e5a6409bf0c34245a6d37eba905e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738057"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726798"
 ---
 # <a name="debugging-user-interface-reference"></a>Référence du débogage de l'interface utilisateur
 Vous pouvez rencontrer les boîtes de dialogue suivantes à mesure que vous déboguez votre application.
@@ -32,13 +34,13 @@ Vous pouvez rencontrer les boîtes de dialogue suivantes à mesure que vous déb
 
 - [Boîte de dialogue Choisir les points d’arrêt](../debugger/choose-breakpoints-dialog-box.md)
 
-- [Fichiers sources pour le débogage, Propriétés communes, boîte de dialogue Pages de propriétés de Solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+- [Fichiers sources pour le débogage, propriétés communes, boîte de dialogue pages de propriétés de solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 
 - [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)
 
-- [Boîte de dialogue Modifier &amp; Continuer](../debugger/edit-and-continue-dialog-box.md)
+- [Modifier & continuer, boîte de dialogue](../debugger/edit-and-continue-dialog-box.md)
 
-- [Arrêt du débogage en cours (boîte de dialogue)](../debugger/stop-debugging-in-progress-dialog-box.md)
+- [Arrêter le débogage en cours, boîte de dialogue](../debugger/stop-debugging-in-progress-dialog-box.md)
 
 - [Erreur et avertissement, boîtes de dialogue pour le débogage](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Fonctions de l’API du plug-in de contrôle de code source | Microsoft Docs
+description: En savoir plus sur les fonctions fournies par l’API de plug-in de contrôle de code source, qui doit être implémentée par le plug-in de contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce685729dda8750d772e244398b736cff4951b72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699919"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715988"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Fonctions d’API du plug-in de contrôle de code source
 L’API de plug-in de contrôle de code source fournit les fonctions suivantes, qui doivent être implémentées par le plug-in de contrôle de code source conformément à cette API. Les signatures de chaque fonction et la sémantique associée aux indicateurs binaires et à d’autres paramètres sont décrites en détail dans cette référence.

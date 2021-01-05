@@ -1,5 +1,7 @@
 ---
 title: Animations pour Visual Studio | Microsoft Docs
+description: En savoir plus sur les règles qui permettent de garantir des styles d’animation cohérents et conviviaux dans l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698605"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715949"
 ---
 # <a name="animations-for-visual-studio"></a>Animations pour Visual Studio
 ## <a name="animation-fundamentals"></a>Notions de base de l’animation
@@ -118,7 +120,7 @@ Illustrer des informations complexes et variables :
 
 - Un élément est attaché à un autre
 
-##### <a name="state"></a>State
+##### <a name="state"></a>État
 
 - Mises à jour du contenu
 

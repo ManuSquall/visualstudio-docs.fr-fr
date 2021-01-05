@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668610"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696533"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Fonctionnalités Visual Studio prises en charge (version préliminaire)
 
@@ -108,8 +108,8 @@ Pas encore disponible :
 
 Lorsque vous travaillez avec Visual Studio connecté à un codeSpace, vous bénéficiez des mêmes fonctionnalités d’accessibilité que lorsque vous travaillez localement.
 
-* Contrôle de code source-prise en charge complète de git par le biais de la nouvelle [fenêtre git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Accessibilité : il existe un problème connu avec la technologie d’assistance qui ne peut pas accéder au appcasting d’une application déboguée. Outre cette limitation, nous ne pensons pas qu’il existe d’autres problèmes de compatibilité qui n’existent pas encore dans l’expérience locale de Visual Studio. Faites-nous savoir si vous détectez des bogues en soumettant un problème à la [communauté des développeurs](https://aka.ms/feedback/suggest?space=8).
+* Contrôle de code source-prise en charge complète de git via la nouvelle [interface git intégrée](../git-with-visual-studio.md).
+* Accessibilité : il existe un problème connu avec la technologie d’assistance qui ne peut pas accéder au appcasting d’une application déboguée. Outre cette limitation, nous ne pensons pas qu’il existe d’autres problèmes de compatibilité qui n’existent pas encore dans l’expérience locale de Visual Studio. Faites-nous savoir si vous détectez des bogues en soumettant un problème à la [communauté des développeurs](https://aka.ms/feedback/report?space=8).
 * La publication-publier sur Azure via des actions GitHub est prise en charge.
 * Services connectés : application Insights, keyvault, stockage, SQL, Redims, Cosmos, openAPI et gRPC sont partiellement pris en charge.
 * Explorateur de tests *-principalement pris en charge.

@@ -1,5 +1,7 @@
 ---
 title: Extensions chargées automatiquement de façon synchrone
+description: Découvrez le comportement par défaut à compter de Visual Studio 2019, qui bloque les packages chargés de façon synchrone à partir de n’importe quelle extension.
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699371"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715442"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensions chargées automatiquement de façon synchrone
 
@@ -42,7 +44,7 @@ Toutes les extensions qui chargent de façon synchrone des packages dans toutes 
 
 Les administrateurs peuvent activer un stratégie de groupe pour autoriser le chargement synchrone synchrone. Pour ce faire, définissez une stratégie basée sur le Registre sur la clé suivante :
 
-**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 Entrée = **autorisée**
 

@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189795"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727461"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5**.
 
@@ -91,10 +91,10 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter des fonctions à votre
 
 ## <a name="publish-to-azure"></a>Publication dans Azure
 
-1. Cliquez avec le bouton droit sur le nom du projet et sélectionnez **publier > publier sur Azure**:  ![ option de menu publier sur Azure](media/azure-functions-image5.png)
+1. Cliquez avec le bouton droit sur le nom du projet et sélectionnez **publier > publier sur Azure**:  ![ capture d’écran à partir de Azure functions, en montrant le projet AF-httptrigger sélectionné et les commandes publier et publier sur Azure en surbrillance dans le menu contextuel.](media/azure-functions-image5.png)
 2. Si vous avez déjà connecté votre compte Azure à Visual Studio pour Mac, une liste des services d’application disponibles s’affiche. Si vous ne vous êtes pas connecté, vous êtes invité à le faire.
 3. Dans la boîte de dialogue **Publier sur Azure App Service**, sélectionnez un service d’application existant, ou créez un service en cliquant sur **Nouveau**.
-4. Dans la boîte de dialogue **Créer un App Service**, entrez vos paramètres : ![Option de menu Publier sur Azure](media/azure-functions-image7.png)
+4. Dans la boîte de dialogue **créer un nouvel App service** , entrez les paramètres suivants :  ![ capture d’écran de la nouvelle fenêtre de App service dans Azure functions, en montrant les paramètres de création d’une app service sur Azure.](media/azure-functions-image7.png)
 
     |Paramètre  |Description  |
     |---------|---------|
@@ -108,13 +108,13 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter des fonctions à votre
 
 5. Cliquez sur **Suivant** pour créer un compte de stockage. Un compte de stockage Azure est obligatoire par le runtime Functions. Cliquez sur **Personnalisé** pour créer un compte de stockage à usage général, ou utilisez un compte existant :
 
-    ![Option de menu Publier sur Azure](media/azure-functions-image8.png)
+    ![Capture d’écran de l’écran configurer le compte de stockage dans Azure Functions. Personnalisé est sélectionné pour le compte de stockage, et le nom du compte et le type de compte sont renseignés.](media/azure-functions-image8.png)
 
 6. Cliquez sur **Créer** pour créer une application de fonctions et les ressources associées dans Azure avec ces paramètres et déployer votre code de projet de fonction.
 
 7. Durant la publication, une boîte de dialogue vous invite éventuellement à « Mettre à jour la version de Functions sur Azure ». Cliquez sur **Oui**:
 
-    ![Option de menu Publier sur Azure](media/azure-functions-image12.png)
+    ![Capture d’écran de l’invite de la boîte de dialogue mettre à jour les fonctions sur Azure, vous invitant à « mettre à jour les paramètres d’application Azure pour qu’ils correspondent aux versions des fonctions locales ».](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > Il existe un bogue dans la version 7.6 de Visual Studio pour Mac, où `FUNCTIONS_EXTENSION_VERSION` n’est pas correctement défini à « beta », ce qui signifie que votre fonction risque de ne pas s’exécuter. Pour résoudre ce problème, accédez à [Paramètres d’application de fonction](#function-app-settings), puis définissez `FUNCTIONS_EXTENSION_VERSION` en remplaçant « -1 » par « beta ».

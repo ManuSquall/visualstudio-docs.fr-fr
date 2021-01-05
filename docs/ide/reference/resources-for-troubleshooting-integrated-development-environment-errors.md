@@ -1,8 +1,8 @@
 ---
-title: Ressources disponibles pour la résolution des erreurs
+title: Ressources disponibles pour la résolution des erreurs IDE
 description: Découvrez comment utiliser les Articles de la base de connaissances, les forums ou le support technique pour résoudre les erreurs de l’IDE qui ne sont pas suffisamment informatives pour vous aider à résoudre un problème.
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,16 +95,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616580"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696548"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d’environnement de développement intégré
+# <a name="resources-for-troubleshooting-ide-errors"></a>Ressources disponibles pour la résolution des erreurs IDE
 
-Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations du message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, les forums ou le support technique.
+Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations contenues dans un message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les Articles de la base de connaissances, les forums ou le support technique.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Résoudre les problèmes de Visual Studio pour Mac](/visualstudio/mac/troubleshooting).
@@ -115,9 +115,14 @@ Vous pouvez explorer la Base de connaissances en ligne pour rechercher des artic
 
 ## <a name="developer-forums"></a>Forums des développeurs
 
-Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème.
+Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez également effectuer des recherches dans les forums pour voir si d’autres personnes ont publié à propos du même problème.
 
-Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur le site web [Communautés techniques Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities).
+Voici une liste de ressources de Forum :
+
+- [Visual Studio sur Q&A](/answers/products/vs/)
+- [Forum MSDN Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>Prise en charge du produit
 

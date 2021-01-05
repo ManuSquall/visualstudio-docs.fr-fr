@@ -1,6 +1,8 @@
 ---
 title: Mettre à niveau des modèles de projet et d’élément personnalisés pour Visual Studio 2017
 titleSuffix: ''
+description: Découvrez comment mettre à jour votre modèle de projet et d’élément personnalisé à partir de versions précédentes du kit de développement logiciel (SDK) Visual Studio pour les utiliser avec Visual Studio 2017 et versions ultérieures.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698856"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715975"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Mettre à niveau un Modèles de projet et d’élément pour Visual Studio personnalisé 2017
 
@@ -27,7 +29,7 @@ Si vous souhaitez créer un modèle de projet ou d’élément dans le cadre d�
 
 ## <a name="template-scanning"></a>Analyse de modèle
 
-Dans les versions précédentes de Visual Studio, **devenv/setup** ou **devenv/installvstemplates** a analysé le disque local pour trouver des modèles de projet et d’élément. À compter de Visual Studio 2017, l’analyse est effectuée uniquement pour l’emplacement au niveau de l’utilisateur. L’emplacement par défaut au niveau de l’utilisateur est **%USERPROFILE%\Documents \\<Visual Studio version \> \Templates \\ **. Cet emplacement est utilisé pour les modèles générés par la commande exporter des modèles de **projet**  >  **.** .. si l’option **importer automatiquement le modèle dans Visual Studio** est sélectionnée dans l’Assistant.
+Dans les versions précédentes de Visual Studio, **devenv/setup** ou **devenv/installvstemplates** a analysé le disque local pour trouver des modèles de projet et d’élément. À compter de Visual Studio 2017, l’analyse est effectuée uniquement pour l’emplacement au niveau de l’utilisateur. L’emplacement par défaut au niveau de l’utilisateur est **%USERPROFILE%\Documents \\<Visual Studio version \> \Templates \\**. Cet emplacement est utilisé pour les modèles générés par la commande exporter des modèles de **projet**  >  **.** .. si l’option **importer automatiquement le modèle dans Visual Studio** est sélectionnée dans l’Assistant.
 
 Pour les autres emplacements (non-utilisateur), vous devez inclure un fichier manifeste (. vstman) qui spécifie l’emplacement et d’autres caractéristiques du modèle. Le fichier. vstman est généré avec le fichier. vstemplate utilisé pour les modèles. Si vous installez votre extension à l’aide d’un. vsix, vous pouvez le faire en recompilant l’extension dans Visual Studio 2017. Toutefois, si vous utilisez un fichier. msi, vous devez apporter les modifications manuellement. Pour obtenir une liste de ce que vous devez faire pour apporter ces modifications, consultez  **mises à niveau pour les extensions installées avec un. MSI** plus loin dans cette page.
 

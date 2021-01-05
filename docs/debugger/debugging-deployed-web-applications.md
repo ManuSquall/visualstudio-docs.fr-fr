@@ -1,5 +1,7 @@
 ---
 title: Débogage des applications ASP.NET déployées | Microsoft Docs
+description: Utilisez Visual Studio pour déboguer une application ASP.NET déployée en l’attachant au processus de travail et en veillant à ce que le débogueur ait accès aux symboles de l’application.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2018
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8c99f1988ef1aa2e14c7b0a4d6ed46e10f6f1e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350548"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727045"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Débogage des applications ASP.NET déployées
 Pour utiliser [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour déboguer une application déployée, vous devez créer un attachement au processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et vous assurer que le débogueur a accès aux symboles de l'application. Vous devez également rechercher et ouvrir les fichiers sources pour l'application. Pour plus d’informations, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [Comment : Rechercher le nom du processus ASP.net](../debugger/how-to-find-the-name-of-the-aspnet-process.md)et la [Configuration système requise](../debugger/aspnet-debugging-system-requirements.md).

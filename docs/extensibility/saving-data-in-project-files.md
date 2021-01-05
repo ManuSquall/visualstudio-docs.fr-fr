@@ -1,5 +1,7 @@
 ---
 title: Enregistrement des données dans les fichiers projet | Microsoft Docs
+description: Découvrez les interfaces que le Managed package Framework fournit pour enregistrer et récupérer des données spécifiques aux sous-types dans le fichier projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd6cfaa450bc268665ae0f58109c99002da6152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4746ebb4a92d5c2688063336cb3772de8d72ee1b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701355"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715689"
 ---
 # <a name="save-data-in-project-files"></a>Enregistrer des données dans les fichiers projet
 Un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet. Managed package Framework (MPF) fournit deux interfaces pour accomplir cette tâche :

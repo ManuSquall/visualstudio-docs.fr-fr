@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040639"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696634"
 ---
 # <a name="overview"></a>Vue d’ensemble
 
@@ -42,11 +42,11 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Informations | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
 | Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Définir la gravité de la règle à partir d’Explorateur de solutions
 
-1. Dans Explorateur de solutions, développez **références**  >  **analyseurs** (ou **Dependencies**  >  **analyseurs** de dépendances pour les projets .net Core).
+1. Dans Explorateur de solutions, développez **références**  >  **analyseurs** (ou   >  **analyseurs** de dépendances pour les projets .net Core).
 
 2. Développez l’assembly qui contient la règle pour laquelle vous souhaitez définir la gravité.
 
@@ -286,7 +286,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 1. Ouvrez le fichier de l’ensemble de règles actif de l’une des manières suivantes :
 
-- Dans **Explorateur de solutions**, double-cliquez sur le fichier, cliquez **References** avec le bouton droit sur le  >  nœud **analyseurs** de références, puis sélectionnez **ouvrir l’ensemble de règles actif**.
+- Dans **Explorateur de solutions**, double-cliquez sur le fichier, cliquez avec le bouton droit sur le  >  nœud **analyseurs** de références, puis sélectionnez **ouvrir l’ensemble de règles actif**.
 - Sur la page de propriétés **analyse du code** du projet, sélectionnez **ouvrir** .
 
   Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme *\<projectname> . RuleSet* et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
@@ -382,7 +382,9 @@ Il existe plusieurs façons de supprimer des violations de règle :
 
 Lorsque vous générez votre projet sur la ligne de commande, des violations de règle apparaissent dans la sortie de la génération si les conditions suivantes sont remplies :
 
-- Les analyseurs sont installés en tant que package NuGet et non pas en tant qu’extension VSIX.
+- Les analyseurs sont installés avec le kit de développement logiciel (SDK) .NET ou en tant que package NuGet, et non en tant qu’extension VSIX.
+
+  Pour les analyseurs installés à l’aide du kit de développement logiciel (SDK) .NET, vous devrez peut-être [activer les analyseurs](../code-quality/install-net-analyzers.md). Pour les styles de code, vous pouvez également [appliquer des styles de code sur la build](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) en définissant une propriété MSBuild.
 
 - Une ou plusieurs règles sont enfreintes dans le code du projet.
 

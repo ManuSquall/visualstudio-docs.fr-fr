@@ -1,5 +1,7 @@
 ---
 title: Élément Strings | Microsoft Docs
+description: L’élément Strings contient un élément enfant ButtonText et d’autres éléments enfants facultatifs. Une esperluette dans la chaîne de texte spécifie un raccourci clavier.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db44db8926b523665a21c00b710dcee55749ab89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699730"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715247"
 ---
 # <a name="strings-element"></a>Élément Strings
 L’élément Strings doit contenir au moins un élément enfant **ButtonText** . Tous les autres éléments enfants sont facultatifs. Les caractères XML non valides tels que' & 'et' < 'doivent être codés en tant qu’entités (' &amp; 'et' &lt; ', etc.).
 
  Une esperluette dans la chaîne de texte spécifie le raccourci clavier de la commande.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <Strings>

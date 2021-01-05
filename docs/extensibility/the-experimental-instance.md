@@ -1,5 +1,7 @@
 ---
 title: L’instance expérimentale | Microsoft Docs
+description: Découvrez comment le kit de développement logiciel (SDK) Visual Studio fournit un espace expérimental pour exécuter des applications non testées en mode débogage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699037"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715858"
 ---
 # <a name="the-experimental-instance"></a>Instance expérimentale
 Pour protéger votre environnement de développement Visual Studio des applications non testées susceptibles de le modifier, VSSDK fournit un espace expérimental que vous pouvez utiliser pour expérimenter. Vous développez de nouvelles applications à l’aide de Visual Studio comme d’habitude, mais vous les exécutez à l’aide de cette instance expérimentale.

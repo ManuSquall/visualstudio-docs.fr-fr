@@ -11,12 +11,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 110468de264370b22d64dae40cf55e9766804c31
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 72f5fa5aab9f9afa6268f8acd737430af0568928
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036611"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727357"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Former des modèles IA dans Azure Batch AI
 
@@ -30,7 +30,7 @@ Comme il est intégré à Visual Studio Tools pour IA, vous pouvez dynamiquement
 
 2. Développez **AI Tools** (Outils IA). Toutes les ressources Batch AI dont vous disposez sont détectées automatiquement et apparaissent dans l’Explorateur de serveurs.
 
-    ![Galerie d’exemples](media/train-model/batchai.png)
+    ![Capture d’écran de l’arborescence de dossiers développée pour les outils AI dans Explorateur de serveurs, montrant des sous-dossiers développés pour Azure Batch AI et Azure Machine Learning.](media/train-model/batchai.png)
 
 3. Sélectionnez **Affichage > Team Explorer...** pour ouvrir la fenêtre **Team Explorer**, dans laquelle vous pouvez vous connecter à GitHub ou à Azure DevOps Services, ou bien cloner un dépôt.
 
@@ -43,19 +43,19 @@ Comme il est intégré à Visual Studio Tools pour IA, vous pouvez dynamiquement
 
 5. Une fois le clonage terminé, cliquez sur **Fichier > Ouvrir une solution > Projet/Solution**
 
-    ![Galerie d’exemples](media/train-model/open-solution.png)
+    ![Capture d’écran montrant une partie du menu Explorateur de serveurs fichier avec la commande ouvrir sélectionnée et projet/solution sélectionné dans le menu contextuel.](media/train-model/open-solution.png)
 
 6. Ouvrez **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** dans le répertoire dans lequel vous avez cloné le dépôt
 
-    ![Galerie d’exemples](media/train-model/tensorflowexamples.png)
+    ![Capture d’écran montrant le fichier de solution TensorflowExamples. sln listé dans le contenu du dossier TensorflowExamples dans le référentiel Samples-for-ai.](media/train-model/tensorflowexamples.png)
 
 7. Définissez le projet MNIST comme **Projet de démarrage**.
 
-    ![Galerie d’exemples](media/train-model/mnist-startup.png)
+    ![Capture d’écran montrant définir comme projet de démarrage sélectionné dans le menu contextuel du projet MNIST dans Explorateur de solutions.](media/train-model/mnist-startup.png)
 
 8. <strong>Cliquez avec le bouton droit sur le **projet MNIST,** **Envoyer la tâche**</strong>.
 
-    ![Galerie d’exemples](media/train-model/submit-job.png)
+    ![Capture d’écran montrant la tâche d’envoi sélectionnée dans le menu contextuel du projet MNIST dans Explorateur de solutions.](media/train-model/submit-job.png)
 9. Sélectionnez votre cluster **Azure Batch AI**, puis cliquez sur **Importer**. Sélectionnez le fichier `AzureBatchAI_TF_MNIST.json` pour remplir rapidement quelques valeurs par défaut comme l’image Docker à utiliser. Cliquez ensuite sur **Envoyer**
 
-    ![Galerie d’exemples](media/train-model/submit-batch.png)
+    ![Capture d’écran de la boîte de dialogue Envoyer un travail avec des valeurs remplies pour utiliser le cluster, le script de démarrage, le nom du travail, le nom de l’image, le préfixe du chemin StdOutErr et les paramètres de l’interface](media/train-model/submit-batch.png)

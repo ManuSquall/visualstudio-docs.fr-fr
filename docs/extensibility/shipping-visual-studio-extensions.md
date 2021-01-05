@@ -1,5 +1,7 @@
 ---
 title: Expédition des extensions Visual Studio | Microsoft Docs
+description: Apprenez à publier et à gérer votre extension du kit de développement logiciel (SDK) Visual Studio, y compris l’utilisation des fichiers. vsix, la publication, la localisation et la mise à jour.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700110"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716001"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Publication d’extensions Visual Studio
 Une fois que vous avez terminé le développement de votre extension, vous pouvez l’installer sur d’autres machines, la partager avec vos amis et vos collègues, ou la publier sur le Visual Studio Marketplace. Dans cette section, nous expliquons toutes les choses que vous devez effectuer pour publier et gérer votre extension : utilisation des fichiers. vsix, publication, localisation et mise à jour.

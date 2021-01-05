@@ -1,5 +1,7 @@
 ---
 title: Utilisation de la Banque de paramètres | Microsoft Docs
+description: Apprenez à lire des données dans le magasin des paramètres de configuration, qui sont des paramètres Visual Studio et VSPackage en lecture seule.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698515"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715910"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 Il existe deux types de banques de paramètres :
@@ -79,9 +81,9 @@ Il existe deux types de banques de paramètres :
 
 1. Ouvrez Regedit.exe.
 
-2. Accédez à HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp_Config \InstalledProducts \\ .
+2. Accédez à HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ .
 
     > [!NOTE]
-    > Vérifiez que vous examinez la clé qui contient \ 14.0Exp_Config \ et non pas \ 14.0_Config \\ . Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration se trouvent dans la ruche du Registre « 14.0Exp_Config ».
+    > Vérifiez que vous examinez la clé qui contient \ 14.0Exp_Config \ et non \ 14.0_Config \\ . Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration se trouvent dans la ruche de Registre « 14.0Exp_Config ».
 
 3. Développez le nœud \Installed Products \. Si le message de la procédure précédente est **Microsoft Windows Phone outils de développement installé : true**, \Installed Products \ doit contenir un nœud microsoft Windows Phone outils de développement. Si le message est **Microsoft Windows Phone outils de développement installé : false**, alors \Installed Products \ ne doit pas contenir de nœud microsoft Windows Phone outils de développement.

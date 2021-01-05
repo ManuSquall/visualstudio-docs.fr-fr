@@ -1,5 +1,7 @@
 ---
 title: Glossaire du plug-in de contrôle de code source | Microsoft Docs
+description: Cet article comprend des termes et définitions utiles relatifs à la documentation du kit de développement logiciel (SDK) du plug-in de contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699912"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715403"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossaire de plug-in de contrôle de code source
 Les termes et définitions utiles suivants concernent la documentation du kit de développement logiciel (SDK) du plug-in de contrôle de code source.

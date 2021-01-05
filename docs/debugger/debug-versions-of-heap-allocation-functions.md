@@ -1,5 +1,7 @@
 ---
 title: Versions Debug des fonctions d’allocation du tas | Microsoft Docs
+description: Utilisez les versions Debug des fonctions d’allocation du tas dans la bibliothèque Runtime C. Ces fonctions ont les mêmes noms que les versions release, avec _dbg ajoutée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4be03c96f9c6ffdf8745ab8890e524ca98b4f4f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738372"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727071"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versions Debug des fonctions d'allocation du tas
 La bibliothèque Runtime C contient des versions Debug spéciales des fonctions d'allocation du tas. Ces fonctions utilisent les noms des versions Release, suivis de _dbg. Cette rubrique décrit les différences entre la version Release d’une fonction CRT et la version _dbg à partir d’exemples basés sur `malloc` et `_malloc_dbg`.
@@ -49,4 +51,4 @@ La bibliothèque Runtime C contient des versions Debug spéciales des fonctions 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)
+- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)

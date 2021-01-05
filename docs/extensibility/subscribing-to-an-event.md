@@ -1,5 +1,7 @@
 ---
 title: Abonnement à un événement | Microsoft Docs
+description: Découvrez comment créer une fenêtre outil qui répond aux événements dans une table de document en cours d’exécution dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefe2efce897aefc26f63835844b0cc705fb5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c739dad7be8d2a000662eca478bc117699694c8a
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699687"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715871"
 ---
 # <a name="subscribing-to-an-event"></a>Abonnement à un événement
 Cette procédure pas à pas explique comment créer une fenêtre outil qui répond aux événements dans une table de document en cours d’exécution (RDT). Une fenêtre outil héberge un contrôle utilisateur qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> . La <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> méthode connecte l’interface aux événements.

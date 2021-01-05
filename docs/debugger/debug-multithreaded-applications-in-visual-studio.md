@@ -1,6 +1,7 @@
 ---
 title: Déboguer des applications multithread | Microsoft Docs
-ms.custom: seodec18
+description: Déboguez des applications multithread dans Visual Studio. Passez en revue les outils et autres articles sur le débogage des applications multithread.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600324"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727136"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Déboguer les applications multithread dans Visual Studio
 Un thread est une séquence d’instructions à laquelle le système d’exploitation accorde du temps processeur. Chaque processus exécuté dans le système d'exploitation se compose d'au moins un thread. Les processus qui comportent plusieurs threads sont appelés multithread.
@@ -104,5 +105,5 @@ Attribuez au thread un nom qui s’affiche dans la fenêtre **Threads**.
 - [Thread](/dotnet/standard/threading/index)
 - [Multithreading dans les composants](/previous-versions/3es4b6yy(v=vs.140))
 - [Prise en charge du multithreading pour le code plus ancien](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
-- [Déboguer des threads et des processus](../debugger/debug-threads-and-processes.md)
-- [Débogage distant](../debugger/remote-debugging.md)
+- [Déboguer les threads et processus](../debugger/debug-threads-and-processes.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

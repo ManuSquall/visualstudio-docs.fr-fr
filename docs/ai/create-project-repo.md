@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e6bdae7ef85545d0790782f5ad825b8f27659c
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 303c410bf519561844d95cc13fa036534ddb2aa7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099243"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726616"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Cloner un dépôt de code Python dans Visual Studio
 
@@ -57,8 +57,8 @@ Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md),
 
 11. Vous pouvez visualiser la progression avec TensorBoard. Cliquez avec le bouton droit sur votre projet et cliquez sur **Exécuter TensorBoard**, puis sélectionnez le répertoire de vos journaux TensorBoard de sortie.
 
-   ![exécuter tensorboard](media/create-project-repo/run-tensorboard.png)
+   ![Capture d’écran de l’Explorateur de solutions Visual Studio avec le projet MNIST sélectionné et l’option exécuter TensorBoard sélectionnée dans le menu contextuel.](media/create-project-repo/run-tensorboard.png)
 
 12. Notez la baisse du taux d’erreurs au fil du temps, ce qui signifie que la qualité s’améliore.
 
-   ![exécuter tensorboard](media/create-project-repo/tensorboard.png)
+   ![Capture d’écran de la fenêtre principale TensorBoard montrant quatre graphiques qui illustrent les données des journaux TensorBoard.](media/create-project-repo/tensorboard.png)

@@ -1,5 +1,7 @@
 ---
 title: Débogage de WPF | Microsoft Docs
+description: Consultez une liste d’articles décrivant des fonctionnalités supplémentaires dans Visual Studio qui facilitent le débogage des applications Windows Presentation Foundation (WPF).
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cfe148f67d7fe21bd98d2442a4427270b84d5dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb68f1a89f09c2229a190098ebf47343d9784b72
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72888435"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726720"
 ---
 # <a name="debugging-wpf"></a>Débogage WPF
 
@@ -29,7 +31,7 @@ ms.locfileid: "72888435"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-| Intitulé | Description |
+| Titre | Description |
 | - | - |
 | [Écrire et déboguer du code XAML en cours d’exécution](../xaml-tools/xaml-hot-reload.md) | Vous pouvez utiliser le rechargement à chaud XAML pour explorer l’arborescence d’éléments visuels d’un objet WPF et afficher les propriétés de dépendance WPF pour les objets de cette arborescence. Cette rubrique explique comment utiliser le rechargement à chaud XAML. |
 | [Inspecter les propriétés XAML en phase de débogage](../xaml-tools/xaml-hot-reload.md) | Vous pouvez utiliser l’arborescence d’éléments visuels en direct pour explorer l’arborescence d’éléments visuels d’un objet WPF et afficher les propriétés de dépendance WPF pour les objets de cette arborescence. |

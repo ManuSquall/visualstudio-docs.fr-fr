@@ -1,5 +1,7 @@
 ---
 title: Élément UsedCommand | Microsoft Docs
+description: L’élément UsedCommand permet à un VSPackage d’accéder à une commande définie dans un autre fichier. vsct.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d1dcef25413bddbb1eb5c35a47a9dc0d30f4a8f
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698823"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715962"
 ---
 # <a name="usedcommand-element"></a>Élément UsedCommand
 Permet à un VSPackage d’accéder à une commande définie dans un autre fichier. vsct. Par exemple, si votre VSPackage utilise la commande de **copie** standard, qui est définie par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, vous pouvez ajouter la commande à un menu ou une barre d’outils sans la réimplémenter.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <UsedCommand guid="guidMyCommandGroup" id="MyCommand" />
@@ -50,7 +52,7 @@ Permet à un VSPackage d’accéder à une commande définie dans un autre fichi
 |-------------|-----------------|
 |[Élément UsedCommands](../extensibility/usedcommands-element.md)|Regroupe les éléments UsedCommand et d’autres regroupements UsedCommands.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  En ajoutant une commande à l' `<UsedCommands>` élément, un VSPackage informe l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] environnement que le VSPackage requiert la commande. Vous devez ajouter un `<UsedCommand>` élément pour toute commande dont votre package a besoin, qui peut ne pas être inclus dans toutes les versions et configurations de Visual Studio. Par exemple, si votre package appelle une commande qui est spécifique à Visual C++, la commande ne sera pas disponible pour les utilisateurs de Visual Web Developer, sauf si vous incluez un `<UsedCommand>` élément pour la commande.
 
 ## <a name="example"></a>Exemple
