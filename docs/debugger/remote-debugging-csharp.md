@@ -1,5 +1,6 @@
 ---
 title: Déboguer à distance un projet C# ou VB | Microsoft Docs
+description: Découvrez comment déboguer une application Visual Studio C# ou Visual Basic à partir d’un ordinateur distant en suivant ces instructions pas à pas.
 ms.custom:
 - remotedebugging"=
 - seodec18
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76364dd6817774c38daa62463cd5bc635075ba73
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298728"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815696"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Débogage à distance d’un projet C# ou Visual Basic dans Visual Studio
 Pour déboguer une application Visual Studio qui a été déployée sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous avez déployé votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis exécutez votre application.
@@ -67,7 +68,7 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
 
 4. Dans la page **Propriétés**, choisissez l’onglet **Déboguer**.
 
-    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")
+    ![Capture d’écran de l’onglet Déboguer dans les propriétés de Explorateur de solutions Visual Studio. La propriété utiliser l’ordinateur distant est définie sur « MJO-DL : 4022 ».](../debugger/media/remotedebuggercsharp.png)
 
 5. Assurez-vous que la zone de texte **Répertoire de travail** est vide.
 
@@ -85,18 +86,18 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
 
 8. Créez le projet.
 
-9. Créez un dossier sur l’ordinateur distant qui est le même que celui du dossier de **débogage** sur votre ordinateur Visual Studio : ** \<source path> \MyWPF\MyWPF\bin\Debug**.
+9. Créez un dossier sur l’ordinateur distant qui est le même que celui du dossier de **débogage** sur votre ordinateur Visual Studio : **\<source path> \MyWPF\MyWPF\bin\Debug**.
 
 10. Copiez le fichier exécutable que vous venez de créer à partir de votre ordinateur Visual Studio dans le dossier nouvellement créé sur l’ordinateur distant.
 
     > [!CAUTION]
     > N’apportez pas de modifications au code ou à la régénération (ou vous devez répéter cette étape). Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.
 
-    Vous pouvez copier le projet manuellement, utiliser xcopy, Robocopy, PowerShell ou d’autres options.
+    Vous pouvez copier le projet manuellement, utiliser XCopy, Robocopy, PowerShell ou d’autres options.
 
 11. Assurez-vous que le débogueur distant est en cours d’exécution sur l’ordinateur cible (si ce n’est pas le cas, recherchez le **débogueur distant** dans le menu **Démarrer** ). La fenêtre du débogueur distant ressemble à ce qui suit.
 
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
+     ![Capture d’écran de la fenêtre du débogueur distant Visual Studio 2017. Une action est indiquée, indiquant que le débogueur est en cours d’exécution sur l’ordinateur cible.](../debugger/media/remotedebuggerwindow.png)
 
 12. Dans Visual Studio, démarrez le débogage (**Déboguer > Démarrer le débogage** ou appuyez sur **F5**).
 
@@ -119,7 +120,7 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
 ## <a name="see-also"></a>Voir aussi
 - [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
-- [Configurer le Pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Affectations de port du débogueur distant](../debugger/remote-debugger-port-assignments.md)
 - [Débogage distant ASP.NET sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)

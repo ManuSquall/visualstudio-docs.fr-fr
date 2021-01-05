@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’un kit de développement logiciel (SDK) en C# ou Visual Basic | Microsoft Docs'
+description: Découvrez comment créer un simple kit de développement logiciel (SDK) de bibliothèque mathématique à l’aide de Visual C#, puis empaqueter le kit de développement logiciel en tant qu’extension Visual Studio à l’aide de cette procédure
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
@@ -11,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9000290b146275ca495b49211c9823422b0a32f
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904966"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862952"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : création d’un kit de développement logiciel à l’aide de C# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement logiciel (SDK) de bibliothèque mathématique simple à l’aide de Visual C#, puis à empaqueter le kit de développement logiciel en tant qu’extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :
@@ -67,7 +69,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 4. Dans **Explorateur de solutions**, choisissez l’élément **source. extension. vsixmanifest** .
 
-5. Dans la barre de menus, choisissez **Afficher**le  >  **code**.
+5. Dans la barre de menus, choisissez **Afficher** le  >  **code**.
 
 6. Remplacez le code XML existant par le code XML suivant :
 
@@ -138,7 +140,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 22. Dans **Explorateur de solutions**, choisissez **SimpleMath. winmd**.
 
-23. Dans la barre de menus, choisissez **Afficher**  >  les**Propriétés** (clavier : Appuyez sur la touche **F4** ).
+23. Dans la barre de menus, choisissez **Afficher**  >  les **Propriétés** (clavier : Appuyez sur la touche **F4** ).
 
 24. Dans la fenêtre **Propriétés** , affectez à la propriété **action de génération** la valeur **contenu**, puis remplacez la propriété **inclure dans VSIX** par **true**.
 
@@ -162,7 +164,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 3. Choisissez le modèle **application vide** , nommez le projet **ArithmeticUI**, puis choisissez le bouton **OK** .
 
-4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **ArithmeticUI** , puis choisissez **Ajouter**une  >  **référence**.
+4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **ArithmeticUI** , puis choisissez **Ajouter** une  >  **référence**.
 
 5. Dans la liste des types de référence, développez **Windows**, puis choisissez **Extensions**.
 
@@ -172,13 +174,13 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 7. Dans la boîte de dialogue **Gestionnaire de références** , activez la case à cocher **Bibliothèque mathématique WinRT** , puis choisissez le bouton **OK** .
 
-8. Dans la barre de menus, choisissez **Afficher**l'  >  **Explorateur d’objets**.
+8. Dans la barre de menus, choisissez **Afficher** l'  >  **Explorateur d’objets**.
 
 9. Dans la liste **Parcourir** , choisissez **Math simple**.
 
      Vous pouvez maintenant explorer ce qui se trouve dans le kit de développement logiciel (SDK).
 
-10. Dans **Explorateur de solutions**, ouvrez **MainPage. Xaml**et remplacez son contenu par le code XAML suivant :
+10. Dans **Explorateur de solutions**, ouvrez **MainPage. Xaml** et remplacez son contenu par le code XAML suivant :
 
     **C#**
 

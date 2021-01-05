@@ -1,5 +1,6 @@
 ---
 title: Déboguer à distance ASP.NET sur un ordinateur IIS
+description: Découvrez comment installer et configurer une application Visual Studio ASP.NET MVC 4.5.2, la déployer sur IIS et attacher le débogueur distant à partir de Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173913"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815709"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous avez déployé votre application, puis attachez-la à votre application en cours d’exécution à partir de Visual Studio.
@@ -91,7 +92,7 @@ Si vous souhaitez des informations plus détaillées sur l’installation de ASP
 
 1. Utilisez la Web Platform Installer (WebPI) pour installer ASP.NET 4,5 (à partir du nœud du serveur dans Windows Server 2012 R2, choisissez **obtenir de nouveaux composants de la plateforme Web** , puis recherchez ASP.net).
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![Capture d’écran de la Web Platform Installer 5,0 montrant les résultats de la recherche pour asp.net avec le composant Web Platform Component IIS : ASP.NET 4,5 entouré en rouge.](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > Si vous utilisez Windows Server 2008 R2, installez ASP.NET 4 à la place à l’aide de cette commande :
@@ -204,13 +205,13 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
 3. Définissez le champ Qualificateur sur **\<remote computer name>** et appuyez sur **entrée**.
 
-    Vérifiez que Visual Studio ajoute le port requis au nom de l’ordinateur, qui apparaît au format suivant : ** \<remote computer name> :p Trier**
+    Vérifiez que Visual Studio ajoute le port requis au nom de l’ordinateur, qui apparaît au format suivant : **\<remote computer name> :p Trier**
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, vous devez voir ** \<remote computer name> : 4024**
+    Dans Visual Studio 2019, vous devez voir **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans Visual Studio 2017, vous devez voir ** \<remote computer name> : 4022**
+    Dans Visual Studio 2017, vous devez voir **\<remote computer name> : 4022**
     ::: moniker-end
     Le port est obligatoire. Si vous ne voyez pas le numéro de port, ajoutez-le manuellement.
 
@@ -234,7 +235,7 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
 7. Cliquez sur **attacher**
 
-8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http:// \<remote computer name> **.
+8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http:// \<remote computer name>**.
 
     La page web ASP.NET doit s’afficher.
 9. Dans l’application ASP.NET en cours d’exécution, cliquez sur le lien vers la page **à propos** de.
@@ -261,7 +262,7 @@ Ports requis :
 
 1. Pour ouvrir un port sur Windows Server, ouvrez le menu **Démarrer** , puis recherchez **pare-feu Windows avec fonctions avancées de sécurité**.
 
-2. Choisissez ensuite les **règles de trafic entrant > nouvelle règle > port**. Choisissez **suivant** et, sous **ports locaux spécifiques**, entrez le numéro de port, cliquez sur **suivant**, puis sur **autoriser la connexion**, cliquez sur suivant, puis ajoutez le nom (**IIS**, **Web Deploy**ou **msvsmon**) pour la règle de trafic entrant.
+2. Choisissez ensuite les **règles de trafic entrant > nouvelle règle > port**. Choisissez **suivant** et, sous **ports locaux spécifiques**, entrez le numéro de port, cliquez sur **suivant**, puis sur **autoriser la connexion**, cliquez sur suivant, puis ajoutez le nom (**IIS**, **Web Deploy** ou **msvsmon**) pour la règle de trafic entrant.
 
     Si vous souhaitez plus d’informations sur la configuration du pare-feu Windows, consultez [configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

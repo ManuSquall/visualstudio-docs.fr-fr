@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328471"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833219"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Résolution des problèmes de rechargement à chaud XAML
 
@@ -34,13 +34,13 @@ La fonctionnalité est activée par défaut. Lorsque vous commencez à déboguer
 
 ![Rechargement à chaud XAML disponible](../debugger/media/xaml-hot-reload-available.png)
 
-Si vous ne voyez pas la barre d’outils dans l’application, ouvrez Options de **débogage**  >  **Options**  >  **général**. Assurez-vous que les deux options, **activer les outils de débogage de l’interface utilisateur pour XAML** et **activer le rechargement à chaud XAML** sont sélectionnées.
+Si vous ne voyez pas la barre d’outils dans l’application, ouvrez Options de **débogage**  >    >  **général**. Assurez-vous que les deux options, **activer les outils de débogage de l’interface utilisateur pour XAML** et **activer le rechargement à chaud XAML** sont sélectionnées.
 
-![Activer le rechargement à chaud XAML](../debugger/media/xaml-hot-reload-enable.png)
+![Capture d’écran de la fenêtre Options de débogage de Visual Studio. Les options de débogage générales sont sélectionnées et l’option Activer le rechargement à chaud XAML est cochée.](../debugger/media/xaml-hot-reload-enable.png)
 
-Si ces options sont sélectionnées, accédez à l’arborescence d’éléments visuels dynamique (**Déboguer**  >  **Windows**  >  l’arborescence d’éléments**visuels Windows Live**) et assurez-vous que l’option Afficher les outils d' **exécution dans** la barre d’outils de l’application (à l’extrême gauche) est sélectionnée.
+Si ces options sont sélectionnées, accédez à l’arborescence d’éléments visuels dynamique (**Déboguer**  >    >  l’arborescence d’éléments **visuels Windows Live**) et assurez-vous que l’option Afficher les outils d' **exécution dans** la barre d’outils de l’application (à l’extrême gauche) est sélectionnée.
 
-![Activer le rechargement à chaud XAML](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![Capture d’écran de la barre d’outils en haut de la fenêtre de l’arborescence d’éléments visuels en direct avec le bouton « afficher les outils d’exécution dans l’application » sélectionné.](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Vérifier que vous utilisez démarrer le débogage plutôt que attacher au processus
 
@@ -51,7 +51,7 @@ Le rechargement à chaud XAML nécessite que la variable `ENABLE_XAML_DIAGNOSTIC
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Vérifier que vos propriétés MSBuild sont correctes
 
-Par défaut, les informations sur la source sont incluses dans une configuration de débogage. Il est contrôlé par les propriétés MSBuild dans vos fichiers projet (tels que *. csproj). Pour WPF, la propriété est `XamlDebuggingInformation` , qui doit avoir la valeur `True` . Pour UWP, la propriété est `DisableXbfLineInfo` , qui doit avoir la valeur `False` . Par exemple :
+Par défaut, les informations sur la source sont incluses dans une configuration de débogage. Il est contrôlé par les propriétés MSBuild dans vos fichiers projet (tels que *. csproj). Pour WPF, la propriété est `XamlDebuggingInformation` , qui doit avoir la valeur `True` . Pour UWP, la propriété est `DisableXbfLineInfo` , qui doit avoir la valeur `False` . Exemple :
 
 WPF :
 

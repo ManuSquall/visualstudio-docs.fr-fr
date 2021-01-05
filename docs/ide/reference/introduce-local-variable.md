@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568813"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833258"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -47,7 +47,7 @@ Cette génération de code s’applique à :
       - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur l’icône ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
+      - Cliquez sur le bouton ![Capture d’écran de l’icône de tournevis qui apparaît dans la marge de gauche du menu actions rapides et refactorisations.](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
 
    ![Introduire un aperçu local](media/local-preview-cs.png)
 

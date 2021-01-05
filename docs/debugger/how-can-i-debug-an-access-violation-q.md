@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0fb7e6f5ae71cf336f9fe206bc7b0208566b615
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 1786085e2f68a1d1196158ac56a62b87b80858be
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398569"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761366"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Comment puis-je déboguer une violation d’accès C++ ?
 
@@ -76,7 +76,7 @@ int main() {
 
 Si vous exécutez ce code dans Visual Studio 2015 Update 1, la boîte de dialogue d’exception suivante doit s’afficher :
 
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+![Capture d’écran d’une boîte de dialogue d’exception Microsoft Visual Studio, montrant une violation d’accès en lecture pour « A->B était nullptr ». Le bouton arrêter est sélectionné.](../debugger/media/accessviolationcplus.png)
 
 Si vous n’arrivez pas à déterminer la raison pour laquelle le pointeur a provoqué une violation d’accès, tracez le code pour vérifier que le pointeur à l’origine du problème a été correctement assigné.  S’il est passé en tant que paramètre, assurez-vous qu’il est passé correctement et que vous ne créez pas de [copie superficielle](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)par inadvertance. Vérifiez ensuite que les valeurs ne sont pas modifiées de manière non intentionnelle à un endroit du programme. Pour cela, créez un point d’arrêt sur variable pour le pointeur en question pour vous assurer qu’il n’est pas en cours de modification autre part dans le programme. Pour plus d’informations sur les points d’arrêt sur variable, consultez la section consacrée à ce sujet dans [Using Breakpoints](../debugger/using-breakpoints.md).
 

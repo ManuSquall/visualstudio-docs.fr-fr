@@ -1,5 +1,7 @@
 ---
 title: Inscription de verbes pour les extensions de nom de fichier | Microsoft Docs
+description: Découvrez comment inscrire un verbe qui est associé à un identificateur programmatique pour une extension de nom de fichier à l’aide d’une clé de Shell.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701532"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863047"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Verbes Register pour les extensions de nom de fichier
 L’Association d’une extension de nom de fichier à une application a généralement une action préférée qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action par défaut est liée à un verbe, par exemple Open, qui correspond à l’action.
@@ -31,7 +33,7 @@ L’Association d’une extension de nom de fichier à une application a génér
 
 - Lire
 
-- Impression
+- Imprimer
 
 - Préversion
 
@@ -106,7 +108,7 @@ L’Association d’une extension de nom de fichier à une application a génér
 ```
 
 ## <a name="set-the-default-verb"></a>Définir le verbe par défaut
- Le verbe par défaut est l’action qui est exécutée lorsqu’un utilisateur double-clique sur un fichier dans l’Explorateur Windows. Le verbe par défaut est le verbe spécifié comme valeur par défaut pour l’HKEY_CLASSES_ROOT clé de ** \\ \Shell*ProgID*** . Si aucune valeur n’est spécifiée, le verbe par défaut est le premier verbe spécifié dans la liste de clés de **HKEY_CLASSES_ROOT \\ *ProgID*\Shell** .
+ Le verbe par défaut est l’action qui est exécutée lorsqu’un utilisateur double-clique sur un fichier dans l’Explorateur Windows. Le verbe par défaut est le verbe spécifié comme valeur par défaut pour l’HKEY_CLASSES_ROOT clé de **\\ \Shell *ProgID*** . Si aucune valeur n’est spécifiée, le verbe par défaut est le premier verbe spécifié dans la liste de clés de **HKEY_CLASSES_ROOT \\ *ProgID*\Shell** .
 
 > [!NOTE]
 > Si vous envisagez de modifier le verbe par défaut pour une extension dans un déploiement côte à côte, prenez en compte l’impact sur l’installation et la suppression. Pendant l’installation, la valeur par défaut d’origine est remplacée.

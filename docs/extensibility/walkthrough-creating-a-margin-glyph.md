@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’un glyphe de marge | Microsoft Docs'
+description: Découvrez comment personnaliser l’apparence des marges de l’éditeur à l’aide des extensions d’éditeur personnalisées à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905054"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863090"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Procédure pas à pas : créer un glyphe de marge
 Vous pouvez personnaliser l’apparence des marges de l’éditeur à l’aide des extensions personnalisées de l’éditeur. Cette procédure pas à pas place un glyphe personnalisé sur la marge des indicateurs chaque fois que le mot « todo » apparaît dans un commentaire de code.

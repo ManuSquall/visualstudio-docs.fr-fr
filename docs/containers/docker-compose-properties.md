@@ -1,18 +1,18 @@
 ---
 title: Docker Compose les paramètres de build
 author: ghogen
-description: Vue d’ensemble du processus de génération des outils de conteneur
+description: Découvrez comment modifier les propriétés de build Docker Compose pour personnaliser la façon dont Visual Studio génère et exécute une application Docker Compose.
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: a25aca5082d8a55eccff861d542d16095c178a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a27535e9c07f87391b3cdfd8440578e36feee9e
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036299"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846814"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
@@ -37,14 +37,14 @@ Le tableau suivant présente les propriétés MSBuild disponibles pour les proje
 | Nom de la propriété | Emplacement | Description | Valeur par défaut  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|Spécifie des fichiers compose supplémentaires dans une liste délimitée par des points-virgules à envoyer à docker-compose.exe pour toutes les commandes. Les chemins d’accès relatifs du fichier projet dockr-compose (dcproj) sont autorisés.|-|
-|DockerComposeBaseFilePath|dcproj|Spécifie la première partie des noms de fichiers des fichiers de l’ancrage-compose, sans l’extension *. yml* . Par exemple : <br>1. DockerComposeBaseFilePath = null/non défini : utilisez le chemin d’accès *de fichier de base dockr-compose*, et les fichiers sont nommés *docker-compose. yml* et *docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: les fichiers sont nommés *mydockercompose. yml* et *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: les fichiers sont situés un niveau. |docker-compose|
+|DockerComposeBaseFilePath|dcproj|Spécifie la première partie des noms de fichiers des fichiers de l’ancrage-compose, sans l’extension *. yml* . Exemple : <br>1. DockerComposeBaseFilePath = null/non défini : utilisez le chemin d’accès *de fichier de base dockr-compose*, et les fichiers sont nommés *docker-compose. yml* et *docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: les fichiers sont nommés *mydockercompose. yml* et *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: les fichiers sont situés un niveau. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la `docker-compose build` commande. Par exemple : `--parallel --pull` |
 |DockerComposeDownArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la `docker-compose down` commande. Par exemple : `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj ou vbproj|Chemin d’accès relatif au fichier de projet d’ancrage-compose (dcproj). Définissez cette propriété lors de la publication du projet de service pour rechercher les paramètres de génération d’image associés stockés dans le fichier docker-compose. yml.|-|
 |DockerComposeUpArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la `docker-compose up` commande. Par exemple : `--timeout 500`|-|
 |DockerDevelopmentMode|dcproj| Contrôle si l’optimisation « génération sur hôte » (débogage « mode rapide ») est activée.  Les valeurs autorisées sont **rapide** et **normale**. | Rapide |
 |DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient|Aucun|
-|DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | Faux |
+|DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | False |
 |DockerServiceName| dcproj|Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName est le nom du service qui doit être lancé.  Utilisez cette propriété pour déterminer lequel des projets potentiellement référencés par un fichier d’ancrage-compose sera lancé.|-|
 |DockerServiceUrl| dcproj | URL à utiliser lors du lancement du navigateur.  Les jetons de remplacement valides sont « {ServiceIPAddress} », « {ServicePort} » et « {Scheme} ».  Par exemple : {Scheme}://{ServiceIPAddress} : {ServicePort}|-|
 |DockerTargetOS| dcproj | Le système d’exploitation cible utilisé lors de la génération de l’image de l’ancrage.|-|

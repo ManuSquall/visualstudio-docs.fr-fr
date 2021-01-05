@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668818"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761353"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
@@ -24,8 +24,9 @@ ms.locfileid: "97668818"
 Vous pouvez signaler un problème à partir de Visual Studio ou de son programme d’installation. L’outil de commentaires intégré vous permet d’ajouter facilement des informations de diagnostic qui aident les équipes Visual Studio à diagnostiquer et à résoudre les problèmes. Voici les étapes à suivre pour signaler un problème.
 
 1. **Dans Visual Studio**, sélectionnez l’icône de commentaires en haut à droite et sélectionnez Signaler un problème. Vous pouvez également accéder à l’outil commentaires à partir du menu **aide**  >  **Envoyer des commentaires**  >  **signaler un problème**.
-![Signalez un problème lié à la communauté de développeurs Visual Studio ](media/feedback-button.png) . vous pouvez également signaler un problème dans **Visual Studio installer** si vous ne pouvez pas installer Visual Studio ou si vous ne parvenez pas à accéder à l’outil commentaires dans Visual Studio.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
-![Signaler un problème lié à la communauté de développeurs Visual Studio dans le programme d’installation](media/installer.png)
+![Capture d’écran montrant l’icône de commentaires sélectionnée dans le coin supérieur droit de la fenêtre Visual Studio et signaler un problème sélectionné dans le menu contextuel.](media/feedback-button.png)
+Vous pouvez également signaler un problème dans **Visual Studio installer** si vous ne pouvez pas installer Visual Studio ou si vous ne parvenez pas à accéder à l’outil commentaires dans Visual Studio.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
+![Capture d’écran montrant l’icône de commentaires sélectionnée dans le coin supérieur droit de la Visual Studio Installer et signaler un problème sélectionné dans le menu contextuel.](media/installer.png)
 
 1. En cliquant sur **signaler un problème** , vous ouvrez votre navigateur par défaut et vous vous connectez à l’aide du même compte que celui utilisé pour vous connecter à Visual Studio.
 
@@ -67,11 +68,11 @@ Lorsqu’il manque des informations importantes dans un problème, nous attribuo
 
 1. Suivez le lien du message électronique vers le rapport de problème ou accédez à la page d’hébergement pour afficher tous les rapports dans l’état **needs more info** .
 
-    ![Mes commentaires](../ide/media/feedback-my-feedback.png)
+    ![Capture d’écran de la page d’hébergement de la fenêtre de commentaires de Visual Studio. Un élément de commentaire est listé et il est marqué d’une étiquette « besoin d’informations supplémentaires » en rouge.](../ide/media/feedback-my-feedback.png)
 
 1. Si vous sélectionnez le lien fournir plus d’informations sur le rapport de problème, vous accédez à un nouvel écran. À partir de là, vous pouvez voir quelles sont les informations demandées.
 
-   ![Détails des informations à envoyer à Microsoft](../ide/media/feedback-need-more-info.png)
+   ![Capture d’écran de la fenêtre de commentaires de Visual Studio montrant les informations demandées par Microsoft pour résoudre le problème.](../ide/media/feedback-need-more-info.png)
 
 1. Vous pouvez fournir plus d’informations en ajoutant des commentaires ou des pièces jointes, ou en enregistrant des étapes. Cette expérience est similaire au signalement d’un nouveau problème ou à l’apport d’informations supplémentaires lors du vote sur un problème.
 

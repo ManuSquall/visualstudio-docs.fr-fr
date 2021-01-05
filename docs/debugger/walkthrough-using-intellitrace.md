@@ -1,5 +1,6 @@
 ---
 title: Afficher les événements avec IntelliTrace | Microsoft Docs
+description: Découvrez comment utiliser IntelliTrace dans Visual Studio Enterprise pour collecter des données sur des événements spécifiques, des catégories d’événements et des appels de fonction individuels.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fef839b5473881450581db77a885da158e67bbc
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929408"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815748"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Afficher les événements avec IntelliTrace en Visual Studio Enterprise (C#, Visual Basic)
 
@@ -60,17 +61,17 @@ Vous pouvez essayer de déboguer avec seulement les événements IntelliTrace. L
 
 2. L’exécution s’interrompt au point d’arrêt. Si vous ne voyez pas la fenêtre de **outils de diagnostic** , cliquez sur **déboguer > des événements IntelliTrace Windows >**.
 
-    Dans la fenêtre **Outils de diagnostic** , recherchez l'onglet **Événements** (vous voyez normalement trois onglets, **Événements**, **Utilisation de la mémoire**et **Utilisation de l'UC**). L'onglet **Événements** affiche une liste chronologique des événements, qui se termine par le dernier événement avant que le débogueur ait interrompu l'exécution. Vous devez voir un événement nommé **Accès à WordSearchInputs.txt**.
+    Dans la fenêtre **Outils de diagnostic** , recherchez l'onglet **Événements** (vous voyez normalement trois onglets, **Événements**, **Utilisation de la mémoire** et **Utilisation de l'UC**). L'onglet **Événements** affiche une liste chronologique des événements, qui se termine par le dernier événement avant que le débogueur ait interrompu l'exécution. Vous devez voir un événement nommé **Accès à WordSearchInputs.txt**.
 
     La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.
 
-    ![Update 1 IntelliTrace&#45;](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")
+    ![Capture d’écran de la fenêtre de Visual Studio code. L’exécution est arrêtée à un point d’arrêt et l’onglet événements de la fenêtre Outils de diagnostic répertorie les événements.](../debugger/media/intellitrace-update1.png)
 
 3. Sélectionnez l'événement pour développer ses détails.
 
     La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.
 
-    ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")
+    ![Capture d’écran de l’onglet événements dans la fenêtre Visual Studio Outils de diagnostic. Un événement est sélectionné et développé pour afficher ses détails.](../debugger/media/intellitraceupdate1-singleevent.png)
 
     Vous pouvez choisir le lien de chemin d'accès pour ouvrir le fichier. Si le chemin d'accès complet n'est pas disponible, la boîte de dialogue **Ouvrir un fichier** s'affiche.
 
@@ -78,7 +79,7 @@ Vous pouvez essayer de déboguer avec seulement les événements IntelliTrace. L
 
     La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.
 
-    ![HistoricalDebugging&#45;Update 1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")
+    ![Capture d’écran de la fenêtre de Visual Studio code. L’exécution est arrêtée à un point d’arrêt, un événement est sélectionné et la ligne de code correspondante est mise en surbrillance.](../debugger/media/historicaldebugging-update1.png)
 
 4. Si vous ne trouvez pas le bogue, essayez de tester d'autres événements aboutissant au bogue. IntelliTrace peut également enregistrer des informations sur les appels pour vous permettre de parcourir pas à pas les appels de fonction.
 

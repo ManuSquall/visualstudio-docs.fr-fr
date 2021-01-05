@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441402"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815761"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer les tests codés de l’interface utilisateur de vos contrôles
 
 Implémentez la prise en charge du framework de tests codés de l’interface utilisateur pour rendre votre contrôle plus facile à tester. Vous pouvez ajouter des niveaux croissants de prise en charge de manière incrémentielle. Commencez par permettre la prise en charge de l’enregistrement et de la lecture, ainsi que de la validation de propriété. Ensuite, utilisez cette prise en charge pour permettre au générateur de test codé de l’interface utilisateur de reconnaître les propriétés personnalisées de votre contrôle. Fournissez des classes personnalisées pour accéder à ces propriétés à partir du code généré. Vous pouvez également aider à ce que les actions de capture du générateur de test codé de l'interface utilisateur soient plus proches de l'objectif de l'action en cours d'enregistrement.
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+! Diagramme montrant comment les classes dans ChartControl sont étendues via la classe CreateAccessabilityInstance aux classes dans ChartControlExtensionPackage.] (.. /test/Media/cuit_full.png)
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Prendre en charge l’enregistrement et la lecture, ainsi que la validation de propriété, en implémentant l’accessibilité
 
 Le générateur de test codé de l'interface utilisateur capture des informations sur les contrôles qu'il rencontre lors d'un enregistrement et génère ensuite le code pour relire la session. Si votre contrôle ne prend pas en charge l’accessibilité, le générateur de test codé de l’interface utilisateur capture les actions (telles que les clics de souris) à l’aide des coordonnées d’écran. Quand le test est lu, le code généré émet les actions aux mêmes coordonnées d’écran. Si votre contrôle s’affiche à un autre emplacement de l’écran durant la lecture du test, le code généré ne peut pas effectuer l’action. Si vous n’implémentez pas l’accessibilité pour votre contrôle, vous risquez d’observer des échecs de test quand le test est lu sur différentes configurations d’écran, dans différents environnements ou en cas de changement de la disposition de l’IU.
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![Capture d’écran de la fenêtre d’enregistrement dans le générateur de test codé de l’interface utilisateur. Le bouton pause est mis en surbrillance et cliquez sur le client « ChartControl » s’affiche dans une info-bulle.](../test/media/cuit_recordnosupport.png)
 
 Si vous implémentez l’accessibilité, le générateur de test codé de l’interface utilisateur s’en sert pour capturer les informations relatives à votre contrôle quand il enregistre un test. Ensuite, lorsque vous exécutez le test, le code généré relit les événements par rapport à votre contrôle, même s'il se trouve à un autre emplacement de l'interface utilisateur. Les auteurs de tests peuvent également créer des assertions à l’aide des propriétés de base de votre contrôle.
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![Capture d’écran de la fenêtre d’enregistrement dans le générateur de test codé de l’interface utilisateur. Le bouton pause est mis en surbrillance et l’étiquette « A » s’affiche dans une info-bulle.](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Pour prendre en charge l’enregistrement et la lecture, la validation de propriété et la navigation d’un contrôle Windows Forms
 Implémentez l'accessibilité de votre contrôle, comme indiqué dans la procédure suivante et expliqué en détail dans <xref:System.Windows.Forms.AccessibleObject>.
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![Diagramme des classes dans ChartControl montrant la relation entre CreateAccessabilityInstance et la classe ChartControl. CurveLegend.](../test/media/cuit_accessible.png)
 
 1. Implémentez une classe qui dérive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> et remplacez la propriété <xref:System.Windows.Forms.Control.AccessibilityObject%2A> pour retourner un objet de votre classe.
 
@@ -77,11 +77,11 @@ Implémentez l'accessibilité de votre contrôle, comme indiqué dans la procéd
 
 Une fois que vous avez implémenté la prise en charge de base pour l’enregistrement et la lecture, ainsi que pour la validation de propriété, vous pouvez rendre les propriétés personnalisées de votre contrôle accessibles aux tests codés de l’interface utilisateur en implémentant un plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Par exemple, la procédure suivante crée un fournisseur de propriétés qui permet aux tests codés de l’interface utilisateur d’accéder à la propriété State des contrôles enfants CurveLegend du contrôle de graphique :
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![Capture d’écran de la fenêtre principale du générateur de test codé de l’interface utilisateur partiellement couverte par une fenêtre Ajouter des assertions avec la propriété état d’un contrôle de texte sélectionné.](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Pour prendre en charge la validation de propriété personnalisée
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![Diagramme des classes dans ChartControl et ChartControlExtension avec les classes ChartControlExtensionPackage et ChartControlIPropertyProvider mises en surbrillance.](../test/media/cuit_props.png)
 
 1. Remplacez la propriété <xref:System.Windows.Forms.AccessibleObject.Description%2A> de l’objet accessible de la légende de la courbe pour passer des valeurs de propriété enrichies dans la chaîne de description. Séparez les valeurs multiples par des points-virgules (;).
 
@@ -149,7 +149,7 @@ Si vous avez implémenté un fournisseur de propriétés pour fournir l’accès
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Pour ajouter une classe spécialisée pour accéder à votre contrôle
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![Diagramme des classes dans ChartControl et ChartControlExtension avec la classe CurveLegend mise en surbrillance sous ChartControlExtensionPackage.](../test/media/cuit_codegen.png)
 
 1. Implémentez une classe dérivée de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> et ajoutez le type de contrôle à la collection de propriétés de recherche du constructeur.
 
@@ -165,7 +165,7 @@ Lorsque Visual Studio enregistre un test, il capture chaque événement de souri
 
 ### <a name="to-support-intent-aware-actions"></a>Pour prendre en charge les actions avec intention
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![Diagramme des classes ChartControl et ChartControlExtensionPackage avec la classe ChartControlActionFilter mise en surbrillance sous ChartControlExtensionPackage.](../test/media/cuit_actions.png)
 
 1. Implémentez une classe de filtre d’action dérivée de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), en remplaçant les propriétés [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) et [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 

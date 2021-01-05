@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098525"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833362"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -62,7 +62,7 @@ Vous pouvez effectuer la majeure partie du travail de recherche, d’organisatio
 ### <a name="run-tests"></a>Exécuter les tests
 
 ::: moniker range="vs-2017"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
 
@@ -70,12 +70,12 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 
 - Sélectionnez les différents tests à exécuter, ouvrez le menu contextuel (clic droit) de l’un d’entre eux, puis choisissez **Exécuter les tests sélectionnés**.
 
-- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![Capture d’écran du bouton bascule d’exécution des tests parallèles dans la barre d’outils de l’Explorateur de tests Visual Studio. Lorsque ce bouton est sélectionné, les tests s’exécutent en parallèle.](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
 La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** est animée pendant l’exécution des tests. À la fin de la série de tests, la **barre Réussite/Échec** devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
 - Pour exécuter tous les tests d’une solution, choisissez l’icône **Exécuter tout**.
 
@@ -150,7 +150,7 @@ L’Explorateur de tests vous permet de regrouper vos tests au sein d’une hié
 
 Vous pouvez définir vos propres niveaux de hiérarchie et effectuer un regroupement par **État**, puis par **Classe**, par exemple, en sélectionnant les options Regrouper par dans l’ordre de votre choix.
 
-![Regrouper par état, puis par classe](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Capture d’écran de l’Explorateur de tests Visual Studio montrant une hiérarchie de test dans un volet et le menu regrouper par dans l’autre avec les options de classe et d’État activées.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Groupes de l'explorateur de tests
@@ -207,7 +207,7 @@ Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécute
 
 **Pour ouvrir une sélection**, choisissez **Test** > **Sélection** dans le menu Visual Studio, puis choisissez une sélection dans la liste de sélections récemment utilisées ou choisissez **Ouvrir la sélection** pour spécifier le nom et l’emplacement de la sélection.
 
-Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![Capture d’écran du bouton bascule d’exécution des tests parallèles dans la barre d’outils de l’Explorateur de tests Visual Studio.](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Lorsque vous sélectionnez une sélection, les tests de la liste s’affichent dans un nouvel onglet de l’Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections.
@@ -264,7 +264,7 @@ Utilisez le format suivant pour xUnit. Assurez-vous qu’il y a un espace entre 
 
 Les [groupes](#test-explorer-groups) sont également disponibles en tant que colonnes de l’Explorateur de tests, notamment Caractéristiques, Arborescence des appels de procédure, Message d’erreur et Nom complet. La plupart des colonnes ne sont pas visibles par défaut. Vous pouvez personnaliser les colonnes que vous voyez et leur ordre d’apparition.
 
-![Regrouper par état, puis par classe](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![Capture d’écran de l’Explorateur de tests Visual Studio montrant un menu avec les colonnes sélectionnées et un sous-menu avec la durée, les caractéristiques et le message d’erreur sélectionnés.](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrer, trier et réorganiser les colonnes de test
 

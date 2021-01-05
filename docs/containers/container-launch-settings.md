@@ -1,17 +1,17 @@
 ---
 title: Paramètres de lancement des outils de conteneur Visual Studio
 author: ghogen
-description: Vue d’ensemble du processus de génération des outils de conteneur
+description: En savoir plus sur les paramètres de lancement des outils de conteneur liés à la façon dont Visual Studio gère les applications en conteneur.
 ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780874"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846714"
 ---
 # <a name="container-tools-launch-settings"></a>Paramètres de lancement des outils de conteneur
 
@@ -53,8 +53,8 @@ Le paramètre commandName indique que cette section s’applique aux outils de c
 
 |Nom du paramètre|Version|Exemple|Description|
 |------------|-------|-------|---------------|
-|launchBrowser|Visual Studio 2017|« launchBrowser » : true|Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.|
-|launchUrl|Visual Studio 2017|« launchUrl » : « {Scheme}://{ServiceHost} : {ServicePort} »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   {Scheme} : remplacé par « http » ou « https » selon que le protocole SSL est utilisé ou non.<br>   {ServiceHost} : généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   {ServicePort} : généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
+|launchBrowser|Visual Studio 2017|« launchBrowser » : true|Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.|
+|launchUrl|Visual Studio 2017|« launchUrl » : « {Scheme}://{ServiceHost} : {ServicePort} »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   {Scheme} : remplacé par « http » ou « https » selon que le protocole SSL est utilisé ou non.<br>   {ServiceHost} : généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   {ServicePort} : généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
 
 ::: moniker-end
 

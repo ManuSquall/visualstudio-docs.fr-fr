@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093886"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761223"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Mettre à la ligne, mettre en retrait et aligner des refactorisations
 
@@ -40,7 +40,7 @@ Dans les **cas suivants :** Vous avez une longue chaîne composée de plusieurs
 2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 3. Sélectionnez **Inclure la chaîne d’appel dans un wrapper** ou **Aligner la chaîne d’appel et l’inclure dans un wrapper** pour accepter la refactorisation.
 
-   ![Mettre à la ligne et aligner des chaînes d’appels](media/wrap-call-chain.png)
+   ![LinkedDataFormUpdated du menu actions rapides et refactorisations dans Visual Studio avec la chaîne d’appel Warap sélectionnée et les modifications du code C# affichées.](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Renvoi à la ligne, mise en retrait et alignement des paramètres ou des arguments
 
@@ -85,7 +85,7 @@ Dans les **cas suivants :** Vous avez une expression binaire.
 2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 3. Sélectionnez **expression de retour** à la ligne pour accepter la refactorisation.
 
-   ![Mettre à la ligne et aligner des chaînes d’appels](media/wrap-binary-expression.png)
+   ![LinkedDataFormUpdated du menu actions rapides et refactorisations dans Visual Studio avec l’expression Warap sélectionnée et les modifications du code C# affichées.](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>Voir aussi
 

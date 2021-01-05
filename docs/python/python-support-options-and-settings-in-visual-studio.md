@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fc6260bdac6f4313daddc1ca59f8541bc4fda7c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211126"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761301"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
@@ -35,7 +35,7 @@ Pour afficher les options Python, utilisez la commande de menu **Outils**  >  **
 ![Boîte de dialogue Options pour Python, onglet Général](media/options-general-2019.png)
 ::: moniker-end
 
-Il existe également des options supplémentaires spécifiques à python sous l’onglet **éditeur de texte**  >  **python**  >  **avancé** et sous **Environment**l'  >  onglet**polices et couleurs** de l’environnement dans le groupe éditeur de **texte** .
+Il existe également des options supplémentaires spécifiques à python sous l’onglet **éditeur de texte**  >  **python**  >  **avancé** et sous l'  >  onglet **polices et couleurs** de l’environnement dans le groupe éditeur de **texte** .
 
 > [!Note]
 > Le groupe **Expérimental** contient des options pour des fonctionnalités encore en cours de développement qui ne sont pas décrites ici. Celles-ci sont souvent décrites dans les posts du [blog sur l’ingénierie Python chez Microsoft](https://devblogs.microsoft.com/python/).
@@ -75,7 +75,7 @@ Il existe également des options supplémentaires spécifiques à python sous l�
 | --- | --- | --- |
 | **Chemin de l’exécutable Conda** | (vide) | Spécifie un chemin d’accès exact à l’exécutable *conda.exe* au lieu de compter sur l’installation Miniconda par défaut qui est fournie avec la charge de travail Python. Si un autre chemin d’accès est indiqué ici, il est prioritaire sur l’installation par défaut et les autres exécutables conda.exe spécifiés dans le Registre. Vous pouvez modifier ce paramètre si vous installez manuellement une version plus récente d’Anaconda ou de Miniconda, ou si vous souhaitez utiliser une distribution 32 bits au lieu de la distribution 64 bits par défaut. |
 
-![Boîte de dialogue Options de Python, onglet Serveur de langage](media/options-conda.png)
+![Capture d’écran de la boîte de dialogue Options de Visual Studio Tools avec Conda sélectionnée dans les options Python et le champ de chemin d’accès à l’exécutable Conda affiché dans le volet droit.](media/options-conda.png)
 
 ::: moniker-end
 
@@ -135,7 +135,7 @@ Il existe également des options supplémentaires spécifiques à python sous l�
 | **Désactiver les complétions de Typeshed** | Désactivé | Visual Studio IntelliSense utilise généralement une version groupée de Typeshed (un ensemble de fichiers *.pyi*) pour rechercher des indicateurs de type de bibliothèque standard et de bibliothèques tierces pour Python 2 et Python 3. La définition de cette option désactive le comportement TypeShed groupé. |
 | **Chemin Typeshed personnalisé** | (vide) | Si cette option est définie, Visual Studio utilise les fichiers Typeshed de ce chemin au lieu de sa version groupée. Ignorez si l’option **Désactiver les complétions de Typeshed** est définie. |
 
-![Boîte de dialogue Options de Python, onglet Serveur de langage](media/options-language-server.png)
+![Capture d’écran de la boîte de dialogue Options de Visual Studio Tools avec le serveur de langue sélectionné dans les options Python et les options de serveur de langue indiquées dans le volet droit.](media/options-language-server.png)
 
 ::: moniker-end
 
@@ -173,6 +173,6 @@ Il existe également des options supplémentaires spécifiques à python sous l�
 
 (**Environnement**  >  Onglet **polices et couleurs** dans le groupe **éditeur de texte** .)
 
-Les noms des options Python sont toutes précédées de **Python** et sont explicites. La police par défaut pour tous les thèmes de couleurs Visual Studio est 10 pt Consolas regular (non gras). Les couleurs par défaut varient selon le thème. En règle générale, vous modifiez une police ou une couleur si vous la lecture du texte est difficile avec les paramètres par défaut.
+Les noms des options Python sont toutes précédées de **Python** et sont explicites. La police par défaut pour tous les thèmes de couleur Visual Studio est 10 PT consolas normal (non gras). Les couleurs par défaut varient selon le thème. En règle générale, vous modifiez une police ou une couleur si vous la lecture du texte est difficile avec les paramètres par défaut.
 
 ![Options de police et de couleur Python](media/options-fonts-and-colors.png)

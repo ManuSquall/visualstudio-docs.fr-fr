@@ -1,6 +1,6 @@
 ---
 title: Déboguer ASP.NET Azure Kubernetes Services en production
-description: Découvrez comment définir des snappoints et afficher des captures instantanées avec le Débogueur de capture instantanée.
+description: Découvrez comment utiliser la Débogueur de capture instantanée dans Visual Studio pour définir points d’ancrage et prendre des instantanés pendant le débogage des services Azure Kubernetes Live ASP.NET.
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350652"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846971"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Déboguer ASP.NET Azure Kubernetes Services en production avec le Débogueur de capture instantanée
 

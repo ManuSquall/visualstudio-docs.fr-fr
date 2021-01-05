@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77416393"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761249"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -78,7 +78,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
 1. Vous devez disposer de Visual Studio et soit de la charge de travail **développement .net Desktop** , soit de la charge de travail **développement multiplateforme .net Core** installée, selon le type d’application que vous souhaitez créer.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)pour l'   installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
 
     Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, cliquez sur **Outils**  >  **obtenir des outils et des fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail **développement .net Desktop** (ou **développement multiplateforme .net Core**), puis choisissez **modifier**.
 
@@ -229,17 +229,17 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
 1. Placez le curseur sur la variable `GalaxyType` à droite puis, à gauche de l’icône de clé, développez `theGalaxy.GalaxyType`. Vous pouvez constater que `GalaxyType` contient une propriété `MyGType`, et que la valeur de propriété est définie sur `Spiral`.
 
-    ![Inspecter une variable](../debugger/media/beginners-inspect-variable.png)
+    ![Capture d’écran du débogueur Visual Studio avec une ligne de code en jaune et un menu développé sous la propriété theGalaxy. GalaxyType à la fin de la ligne.](../debugger/media/beginners-inspect-variable.png)
 
     « Spiral » est la valeur correcte que vous attendiez dans la console. Un bon point de départ consiste donc à pouvoir accéder à cette valeur dans ce code pendant l’exécution de l’application. Dans ce scénario, nous n’utilisons pas la bonne API. Nous allons voir si nous pouvons corriger cela pendant l’exécution du code dans le débogueur.
 
 1. Dans le même code, toujours pendant le débogage, placez votre curseur à la fin de `theGalaxy.GalaxyType` et remplacez-le par `theGalaxy.GalaxyType.MyGType`. Bien que vous puissiez effectuer cette modification, l’éditeur de code signale une erreur indiquant qu’il ne peut pas compiler ce code.
 
-    ![Erreur de syntaxe](../debugger/media/beginners-edit.png)
+    ![Capture d’écran du débogueur Visual Studio avec une ligne de code mise en surbrillance en rouge et une zone de message modifier & continuer avec le bouton modifier sélectionné.](../debugger/media/beginners-edit.png)
 
 1. Cliquez sur **Modifier** dans la boîte de message **Modifier et Continuer**. Un message d’erreur s’affiche maintenant dans la fenêtre **Liste d’erreurs**. L’erreur indique que `'object'` ne contient pas de définition pour `MyGType`.
 
-    ![Erreur de syntaxe](../debugger/media/beginners-no-definition.png)
+    ![Capture d’écran du débogueur Visual Studio avec une ligne de code mise en surbrillance en rouge et une fenêtre de Liste d’erreurs avec deux erreurs répertoriées.](../debugger/media/beginners-no-definition.png)
 
     Bien que nous ayons défini chaque galaxie avec un objet de type `GType` (qui a la propriété `MyGType`), le débogueur ne reconnaît pas l’objet `theGalaxy` comme un objet de type `GType`. Que se passe-t-il ? Vous devez examiner tout code qui définit le type de galaxie. Vous constatez alors que la classe `GType` a indubitablement une propriété `MyGType`, mais quelque chose ne va pas. Le message d’erreur concernant `object` s’avère être l’indice : pour l’interpréteur de langage, le type semble être un objet de type `object` au lieu d’un objet de type `GType`.
 
@@ -259,7 +259,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     Maintenant, quand le débogueur s’arrête sur `Console.WriteLine`, vous pouvez pointer sur `theGalaxy.GalaxyType.MyGType` et vérifier que la valeur est définie correctement.
 
-1. Supprimez le point d’arrêt en cliquant sur le cercle de point d’arrêt dans la marge de gauche (ou cliquez avec le bouton droit et sélectionnez **point d’arrêt**  >  **supprimer le point**d’arrêt), puis appuyez sur **F5** pour continuer.
+1. Supprimez le point d’arrêt en cliquant sur le cercle de point d’arrêt dans la marge de gauche (ou cliquez avec le bouton droit et sélectionnez **point d’arrêt**  >  **supprimer le point** d’arrêt), puis appuyez sur **F5** pour continuer.
 
     L’application s’exécute et affiche la sortie. Cela semble correct désormais, mais vous remarquez une chose : vous vous attendiez à ce que la galaxie Small Magellanic Cloud apparaisse comme une galaxie de type Irregular dans la sortie de console, mais aucun type de galaxie n’est mentionné.
 
@@ -288,7 +288,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
 1. Appuyez sur **F5** et pointez à nouveau sur la variable `type`. Répétez cette étape jusqu’à voir la valeur `I` dans la variable `type`.
 
-    ![Inspecter une variable](../debugger/media/beginners-inspecting-data.png)
+    ![Capture d’écran du débogueur Visual Studio avec une ligne de code en jaune et une petite fenêtre montrant la valeur de la variable de type comme 73 'I'.](../debugger/media/beginners-inspecting-data.png)
 
 1. Maintenant, appuyez sur **F11** (**Déboguer** > **Pas à pas détaillé** ou le bouton **Pas à pas détaillé** dans la barre d’outils Débogage).
 

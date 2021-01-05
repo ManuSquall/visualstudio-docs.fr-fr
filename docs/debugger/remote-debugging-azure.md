@@ -1,5 +1,6 @@
 ---
 title: ASP.NET Core de débogage à distance sur IIS et Azure | Microsoft Docs
+description: Découvrez comment installer et configurer une application Visual Studio ASP.NET Core, la déployer sur IIS à l’aide d’Azure et attacher le débogueur distant à partir de Visual Studio.
 ms.custom: remotedebugging
 ms.date: 05/06/2020
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298747"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815839"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de débogage à distance sur IIS dans Azure dans Visual Studio
 
@@ -29,13 +30,13 @@ La méthode recommandée pour le débogage à distance sur Azure dépend de votr
 
     Dans ce scénario, vous devez déployer votre application à partir de Visual Studio vers Azure, mais vous n’avez pas besoin d’installer ou de configurer manuellement IIS ou le débogueur distant (ces composants sont représentés par des lignes en pointillés), comme le montre l’illustration suivante.
 
-    ![Composants du débogueur distant](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Diagramme montrant la relation entre Visual Studio, Azure App Service et une application ASP.NET. IIS et le débogueur distant sont représentés par des lignes en pointillés.](../debugger/media/remote-debugger-azure-app-service.png)
 
 * Pour déboguer IIS sur une machine virtuelle Azure, suivez les étapes de cette rubrique (voir la section [débogage distant sur une machine virtuelle Azure](#remote_debug_azure_vm)). Cela vous permet d’utiliser une configuration personnalisée d’IIS, mais les étapes de configuration et de déploiement sont plus compliquées.
 
     Pour une machine virtuelle Azure, vous devez déployer votre application à partir de Visual Studio dans Azure, et vous devez également installer manuellement le rôle IIS et le débogueur distant, comme indiqué dans l’illustration suivante.
 
-    ![Composants du débogueur distant](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Diagramme montrant la relation entre Visual Studio, une machine virtuelle Azure et une application ASP.NET. IIS et le débogueur distant sont représentés par des lignes pleines.](../debugger/media/remote-debugger-azure-vm.png)
 
 * Pour déboguer des ASP.NET Core sur Service Fabric Azure, consultez [déboguer une application de service fabric à distance](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
@@ -96,7 +97,7 @@ Dans Visual Studio, vous pouvez rapidement publier et déboguer votre applicatio
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-    Et voilà ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
+    C’est tout ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> Débogage à distance ASP.NET Core sur une machine virtuelle Azure
 
@@ -207,7 +208,7 @@ Si vous importez des paramètres de publication, vous pouvez ignorer cette secti
 
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Facultatif Publier et déployer l’application en publiant dans un dossier local à partir de Visual Studio
 
-Si vous n’utilisez pas Web Deploy, vous devez publier et déployer l’application à l’aide du système de fichiers ou d’autres outils. Vous pouvez commencer par créer un package à l’aide du système de fichiers, puis déployer le package manuellement ou utiliser d’autres outils tels que PowerShell, RoboCopy ou XCopy. Dans cette section, nous partons du principe que vous copiez manuellement le package si vous n’utilisez pas Web Deploy.
+Si vous n’utilisez pas Web Deploy, vous devez publier et déployer l’application à l’aide du système de fichiers ou d’autres outils. Vous pouvez commencer par créer un package à l’aide du système de fichiers, puis déployer le package manuellement ou utiliser d’autres outils tels que PowerShell, Robocopy ou XCopy. Dans cette section, nous partons du principe que vous copiez manuellement le package si vous n’utilisez pas Web Deploy.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
@@ -234,13 +235,13 @@ Téléchargez la version des outils de contrôle à distance qui correspond à v
 
 3. Définissez le champ Qualificateur sur **\<remote computer name>** et appuyez sur **entrée**.
 
-    Vérifiez que Visual Studio ajoute le port requis au nom de l’ordinateur, qui apparaît au format suivant : ** \<remote computer name> :p Trier**
+    Vérifiez que Visual Studio ajoute le port requis au nom de l’ordinateur, qui apparaît au format suivant : **\<remote computer name> :p Trier**
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, vous devez voir ** \<remote computer name> : 4024**
+    Dans Visual Studio 2019, vous devez voir **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans Visual Studio 2017, vous devez voir ** \<remote computer name> : 4022**
+    Dans Visual Studio 2017, vous devez voir **\<remote computer name> : 4022**
     ::: moniker-end
     Le port est obligatoire. Si vous ne voyez pas le numéro de port, ajoutez-le manuellement.
 
@@ -270,7 +271,7 @@ Téléchargez la version des outils de contrôle à distance qui correspond à v
 
 7. Cliquez sur **Attacher**.
 
-8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http:// \<remote computer name> **.
+8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http:// \<remote computer name>**.
 
     La page web ASP.NET doit s’afficher.
 9. Dans l’application ASP.NET en cours d’exécution, cliquez sur le lien vers la page **à propos** de.

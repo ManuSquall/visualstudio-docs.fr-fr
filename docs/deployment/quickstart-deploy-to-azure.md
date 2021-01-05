@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349579"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815592"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publier une application web sur Azure App Service avec Visual Studio
 
@@ -51,13 +51,13 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
     ![Lien pour créer une nouvelle instance de Azure App Service](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. Dans la boîte de dialogue **créer un Azure App service (Windows)** , le nom de l' **application** , le **groupe de ressources** et les champs d’entrée du plan de **app service** sont remplis. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
+1. Dans la boîte de dialogue **créer un Azure App service (Windows)** , le nom de l' **application**, le **groupe de ressources** et les champs d’entrée du plan de **app service** sont remplis. Vous pouvez conserver ces noms ou les changer. Quand vous êtes prêt, sélectionnez **créer**.
 
-    ![Choisir Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![Capture d’écran de la boîte de dialogue créer un Azure App Service (Windows) avec les champs nom, abonnement, groupe de ressources et plan d’hébergement rempli.](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. Dans la boîte de dialogue **publier** , l’instance nouvellement créée a été automatiquement sélectionnée. Quand vous êtes prêt, sélectionnez **Terminer**.
 
-    ![Choisir Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Capture d’écran de la fenêtre de publication accessible à partir de Visual Studio Explorateur de solutions. Azure est sélectionné comme cible de publication.](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. Sélectionnez **Publier**. Visual Studio déploie l’application sur votre service Azure App Service, et l’application web se charge dans votre navigateur. Le volet **Publier** des propriétés de projet montre l’URL du site et d’autres détails.
 
@@ -66,9 +66,9 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 
 Au cours des étapes précédentes, vous avez créé des ressources Azure au sein d’un groupe de ressources. Si vous ne pensez pas avoir besoin de ces ressources à l’avenir, vous pouvez les supprimer en supprimant le groupe de ressources.
-Dans le menu de gauche du portail Azure, cliquez sur **Groupes de ressources** , puis sur **myResourceGroup**.
+Dans le menu de gauche du portail Azure, cliquez sur **Groupes de ressources**, puis sur **myResourceGroup**.
 Sur la page du groupe de ressources, assurez-vous que les ressources répertoriées sont bien celles que vous souhaitez supprimer.
-Sélectionnez **Supprimer** , tapez **myResourceGroup** dans la zone de texte, puis sélectionnez **Supprimer**.
+Sélectionnez **Supprimer**, tapez **myResourceGroup** dans la zone de texte, puis sélectionnez **Supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

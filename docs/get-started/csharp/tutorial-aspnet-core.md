@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780978"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833323"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Bien démarrer avec C# et ASP.NET Core dans Visual Studio
 
@@ -29,7 +29,7 @@ Dans ce tutoriel pour le développement C# avec ASP.NET Core à l’aide de Vis
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="install-visual-studio"></a>Installation de Visual Studio
+### <a name="install-visual-studio"></a>Installer Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -154,7 +154,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
  1. Affichez le fichier **About.cshtml** dans l’éditeur de code.
 
-     ![Afficher le fichier About.cshtml dans l’éditeur de code Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Capture d’écran montrant les dix premières lignes du fichier about. cshtml dans l’éditeur de code Visual Studio.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
  1. Choisissez le fichier **About.cshtml.cs**.
 
@@ -162,7 +162,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
  1. Affichez le fichier **About.cshtml.cs** dans l’éditeur de code.
 
-     ![Afficher le fichier About.cshtml dans l’éditeur de code Visual Studio](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Capture d’écran montrant les 18 premières lignes du fichier About.cshtml.cs dans l’éditeur de code Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Le projet contient un dossier **wwwroot** qui représente la racine de votre site web. Développez le dossier pour voir son contenu.
 
@@ -288,7 +288,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
      >
      > Vous pouvez également recevoir un message qui vous demande si vous voulez accepter un certificat Express SSL IIS. Pour voir le code dans un navigateur web, choisissez **Oui**, puis choisissez à nouveau **Oui** si vous recevez un message d’avertissement de sécurité.
 
-1. Visual Studio lance une fenêtre de navigateur. Vous devez ensuite voir page d' **hébergement**et pages de **confidentialité** dans la barre de menus.
+1. Visual Studio lance une fenêtre de navigateur. Vous devez ensuite voir page d' **hébergement** et pages de **confidentialité** dans la barre de menus.
 
 1. Dans la barre de menus, choisissez **confidentialité** .
 

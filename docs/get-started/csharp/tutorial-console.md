@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527926"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833336"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
@@ -282,7 +282,7 @@ Passons en revue quelques-unes des erreurs d’entrée utilisateur courantes, lo
 
 Lorsque vous essayez de diviser un nombre par zéro, l’application console peut se figer, puis vous montrer ce qui est incorrect dans l’éditeur de code.
 
-   ![L’éditeur de code Visual Studio affiche l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Capture d’écran de l’éditeur de code Visual Studio montrant une ligne mise en surbrillance en jaune et une exception non gérée pour « tentative de division par zéro ».](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > Parfois, l’application ne se bloque pas et le débogueur n’affiche pas d’erreur de division par zéro. Au lieu de cela, l’application peut retourner un résultat non numérique inattendu, tel qu’un symbole infini. Le correctif de code suivant s’applique toujours.
@@ -311,7 +311,7 @@ Nous allons modifier le code pour gérer cette erreur.
 
 Maintenant, quand vous divisez n’importe quel nombre par zéro, l’application vous demande un autre nombre. Mieux encore : il ne s’arrête pas de demander tant que vous n’avez pas fourni un nombre autre que zéro.
 
-   ![Correction de l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero.png)
+   ![Capture d’écran de l’éditeur de code Visual Studio montrant le code de l’instruction switch avec la vérification de l’entrée d’un diviseur non nul ajouté.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Corriger l’erreur de « format »
 
@@ -327,7 +327,7 @@ Plutôt que de nous appuyer sur la classe `program` pour gérer tout le code, no
 
 La classe `Calculator` gérera le gros du travail de calcul et la classe `Program` gèrera l’interface utilisateur et le travail de capture d’erreur.
 
-C’est parti !
+Allons-y.
 
 1. Supprimez tout ce qui se trouve dans l' `Calculator` espace de noms entre ses accolades ouvrantes et fermantes :
 

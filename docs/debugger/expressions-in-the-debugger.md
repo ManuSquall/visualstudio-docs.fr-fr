@@ -1,6 +1,6 @@
 ---
 title: Expressions dans le débogueur | Microsoft Docs
-description: Modifier & Continuer est disponible pour les projets Visual C#. Découvrez les modifications qui sont prises en charge et comment contrôler si vos modifications sont appliquées et à quel moment.
+description: Découvrez les expressions de langage qui ne sont pas prises en charge par les évaluateurs d’expression dans le débogueur Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 5b05af635ba7774cdb31291ad7c2b7eb52686bcf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862865"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846719"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.

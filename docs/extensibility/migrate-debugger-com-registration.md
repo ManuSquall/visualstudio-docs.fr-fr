@@ -1,5 +1,7 @@
 ---
 title: Migrer l’inscription de classe COM du débogueur 64 bits | Microsoft Docs
+description: Découvrez comment inscrire des classes COM sur msvsmon pour les extensions de débogueur sans écrire dans HKEY_CLASSES_ROOT.
+ms.custom: SEO-VS-2020
 ms.date: 11/10/2016
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
@@ -8,12 +10,12 @@ ms.author: greggm
 manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f28f8eb2935ed2dd8a848ccc3151b9f438fc437
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62433693"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862891"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrer l’inscription de classe COM du débogueur 64 bits
 
@@ -21,7 +23,7 @@ Pour les extensions de débogueur qui inscrivent des classes COM dans HKEY_CLASS
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon-ComClass-def
 
-Pour utiliser cette technique, ajoutez un * *.msvsmon-comclass-def.jssur le* fichier en regard de msvsmon (INSTALLDIR :* \Common7\IDE\Remote Debugger\x64 *).
+Pour utiliser cette technique, ajoutez un **.msvsmon-comclass-def.jssur le* fichier en regard de msvsmon (INSTALLDIR :* \Common7\IDE\Remote Debugger\x64 *).
 
 Voici un exemple de fichier msvsmon-ComClass-def qui inscrit une classe managée et une classe Native :
 

@@ -1,6 +1,7 @@
 ---
 title: Inspecter les variables-fenêtres automatique et variables locales | Microsoft Docs
-ms.custom: seodec18
+description: Inspectez les variables dans les fenêtres automatique et variables locales lors du débogage dans Visual Studio. Les fenêtres automatique et variables locales affichent des valeurs de variables pendant le débogage.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,22 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350743"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760911"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter les variables dans les fenêtres automatique et variables locales
 
-Les fenêtres **automatique** et **variables locales** affichent des valeurs de variables pendant le débogage. Les fenêtres sont uniquement disponibles pendant une session de débogage. La fenêtre **automatique** affiche les variables utilisées autour du point d’arrêt actuel. La fenêtre variables **locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou la méthode actuelle. S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
+Les fenêtres **automatique** et **variables locales** affichent des valeurs de variables pendant le débogage. Les fenêtres sont uniquement disponibles pendant une session de débogage. La fenêtre **automatique** affiche les variables utilisées autour du point d’arrêt actuel. La fenêtre variables **locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou la méthode actuelle.
+
+> [!NOTE]
+> S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
 
  La fenêtre **automatique** est disponible pour le code C#, Visual Basic, C++ et Python, mais pas pour JavaScript ni F #.
 
 Pour ouvrir la fenêtre **automatique** , pendant le débogage, sélectionnez **Déboguer**  >  **Windows**  >  **automatique**, ou appuyez sur **CTRL** + **ALT** + **V**  >  **A**.
 
-Pour ouvrir la fenêtre **variables locales** , pendant le débogage, sélectionnez **Déboguer**les  >  **Windows**  >  **paramètres régionaux**Windows ou appuyez sur **ALT** + **4**.
+Pour ouvrir la fenêtre **variables locales** , pendant le débogage, sélectionnez **Déboguer** les  >    >  **paramètres régionaux** Windows ou appuyez sur **ALT** + **4**.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations).
@@ -39,7 +43,7 @@ Pour ouvrir la fenêtre **variables locales** , pendant le débogage, sélection
 
 Les tableaux et les objets apparaissent dans les fenêtres **automatique** et **variables locales** sous la forme de contrôles d’arborescence. Sélectionnez la flèche à gauche d’un nom de variable pour développer la vue et afficher les champs et les propriétés. Voici un exemple d' <xref:System.IO.FileStream?displayProperty=fullName> objet dans la fenêtre **variables locales** :
 
-![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
+![Capture d’écran de la fenêtre variables locales, avec un fichier défini sur une valeur System. IO. FileStream.](../debugger/media/locals-filestream.png)
 
 Une valeur rouge dans la fenêtre **variables locales** ou **automatique** signifie que la valeur a changé depuis la dernière évaluation. La modification peut provenir d’une précédente session de débogage ou parce que vous avez modifié la valeur dans la fenêtre.
 
@@ -91,7 +95,7 @@ Vous pouvez également activer/désactiver les noms de propriété et exclure le
 
 Vous pouvez utiliser la barre d’outils **emplacement de débogage** pour sélectionner la fonction, le thread ou le processus souhaité, ce qui modifie le contexte des fenêtres **automatique** et **variables locales** .
 
-Pour activer la barre d’outils **emplacement de débogage** , cliquez dans une partie vide de la zone de la barre d’outils et sélectionnez **emplacement de débogage** dans la liste déroulante, ou sélectionnez **Afficher**les  >  **barres d’outils**  >  **emplacement de débogage**.
+Pour activer la barre d’outils **emplacement de débogage** , cliquez dans une partie vide de la zone de la barre d’outils et sélectionnez **emplacement de débogage** dans la liste déroulante, ou sélectionnez **Afficher** les  >  **barres d’outils**  >  **emplacement de débogage**.
 
 Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’arrêt est atteint, l’exécution s’interrompt et vous pouvez voir l’emplacement dans la barre d’outils **emplacement de débogage** .
 
@@ -116,7 +120,7 @@ Les différents langages de code affichent différentes variables dans la fenêt
 
    Définissez un point d’arrêt sur la ligne `c = 3;` et démarrez le débogueur. Lorsque l’exécution est suspendue, la fenêtre **automatique** affiche :
 
-   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
+   ![Capture d’écran de la fenêtre automatique, avec la valeur c définie sur 0.](../debugger/media/autos-csharp.png)
 
    La valeur de `c` est 0, car la ligne n' `c = 3` a pas encore été exécutée.
 
@@ -136,7 +140,7 @@ Les différents langages de code affichent différentes variables dans la fenêt
 
     Définissez un point d’arrêt sur la ligne `e = 5;` et exécutez le débogueur. Lorsque l’exécution s’arrête, la fenêtre **automatique** s’affiche :
 
-    ![Automatique-C + +](../debugger/media/autos-cplus.png "Automatique-C + +")
+    ![Capture d’écran de la fenêtre automatique, avec la ligne mise en surbrillance qui montre le int c avec la valeur 3.](../debugger/media/autos-cplus.png)
 
     La variable `e` n’est pas initialisée, car la ligne n' `e = 5` a pas encore été exécutée.
 

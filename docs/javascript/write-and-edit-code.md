@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238178"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815735"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>En savoir plus sur l’utilisation de l’éditeur de code pour JavaScript
 
@@ -40,11 +40,11 @@ Vous pouvez utiliser l’IDE pour ajouter de nouveaux fichiers à votre projet.
 
 IntelliSense est une aide précieuse quand vous écrivez du code. Cette fonctionnalité peut afficher des informations sur les membres d’un type disponibles, ou les détails des paramètres des différentes surcharges d’une méthode. Dans le code suivant, lorsque vous tapez `Router()`, vous voyez les types d’arguments que vous pouvez transmettre. Il s’agit d’une aide pour la signature.
 
-![Utilisez IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Capture d’écran d’une fenêtre de code Visual Studio avec du code JavaScript en cours d’entrée. Les informations IntelliSense sont affichées pour la fonction de routeur ().](../javascript/media/write-code-signature-checking.png)
 
 Vous pouvez également utiliser IntelliSense pour compléter un mot automatiquement quand vous avez tapé suffisamment de caractères pour lever toute ambiguïté sur le mot. Si vous placez votre curseur après la chaîne `data` dans le code suivant et tapez `get`, IntelliSense affiche les fonctions définies plus haut dans le code ou définies dans une bibliothèque tierce que vous avez ajoutée à votre projet.
 
-![Utilisez IntelliSense](../javascript/media/write-code-intellisense.png)
+![Capture d’écran d’une fenêtre de code Visual Studio avec le mot « obtenir » entré. Les informations IntelliSense sont affichées pour toutes les fonctions commençant par « obtenir ».](../javascript/media/write-code-intellisense.png)
 
 IntelliSense peut également afficher des informations sur les types lorsque vous pointez sur les éléments de programmation.
 
@@ -52,7 +52,7 @@ Pour fournir des informations IntelliSense, le service de langage peut utiliser 
 
 ## <a name="check-syntax"></a>Vérifier la syntaxe
 
-Le service de langage utilise ESLint pour fournir la vérification de la syntaxe et la vérification lint. Si vous avez besoin de définir des options pour la vérification de la syntaxe dans l’éditeur, sélectionnez **Outils**  >  **options**  >  **JavaScript/machine**  >  **Linting**à inverser. Les options de linting vous dirigent vers le fichier de configuration ESLint général.
+Le service de langage utilise ESLint pour fournir la vérification de la syntaxe et la vérification lint. Si vous avez besoin de définir des options pour la vérification de la syntaxe dans l’éditeur, sélectionnez **Outils**  >  **options**  >  **JavaScript/machine**  >  à inverser. Les options de linting vous dirigent vers le fichier de configuration ESLint général.
 
 Le code suivant illustre la coloration syntaxique en vert (lignes ondulées vertes) sur l’expression. Pointez sur la coloration syntaxique.
 
@@ -100,7 +100,7 @@ Fermez la fenêtre Aperçu de la définition en choisissant la petite case avec 
 
 Visual Studio fournit des *extraits de code* qui vous aident à créer rapidement et facilement les blocs de code couramment utilisés. Ces [extraits de code](../ide/code-snippets.md) sont disponibles pour plusieurs langages de programmation, y compris JavaScript. Nous allons ajouter une boucle `for` à votre fichier de code.
 
-Placez le curseur à l’endroit où vous souhaitez insérer l’extrait de code, cliquez avec le bouton droit et choisissez **Snippet**  >  **Insérer**un extrait.
+Placez le curseur à l’endroit où vous souhaitez insérer l’extrait de code, cliquez avec le bouton droit et choisissez **Snippet**  >  **Insérer** un extrait.
 
 ![Extrait de code dans Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
@@ -116,7 +116,7 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier**les extraits de code  >  **IntelliSense**  >  **Insert Snippet**, puis en choisissant le dossier de votre langue.
+Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier** les extraits de code  >  **IntelliSense**  >  , puis en choisissant le dossier de votre langue.
 
 ## <a name="see-also"></a>Voir aussi
 

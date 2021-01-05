@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780990"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833245"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : créer votre première ASP.NET Core application Web
 
@@ -68,11 +68,11 @@ L’hôte web créé dans *Program.cs* fait référence à la classe Startup et 
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-La page d’accueil du site inclut des balises HTML et du code Razor côté serveur. Elle utilise Razor pour spécifier le modèle de page, `IndexModel`, qui se trouve dans le fichier *Index.cshtml.cs* associé. Elle définit également le titre de la page en définissant une valeur dans ViewData. Cette valeur ViewData est lue dans le fichier * \_ Layout. cshtml* , situé dans le dossier partagé à l’intérieur du dossier pages. Le fichier Layout est partagé par de nombreuses Razor Pages et fournit l’aspect commun de l’application. Le contenu de chaque page est rendu dans le code HTML du fichier Layout.
+La page d’accueil du site inclut des balises HTML et du code Razor côté serveur. Elle utilise Razor pour spécifier le modèle de page, `IndexModel`, qui se trouve dans le fichier *Index.cshtml.cs* associé. Elle définit également le titre de la page en définissant une valeur dans ViewData. Cette valeur ViewData est lue dans le fichier *\_ Layout. cshtml* , situé dans le dossier partagé à l’intérieur du dossier pages. Le fichier Layout est partagé par de nombreuses Razor Pages et fournit l’aspect commun de l’application. Le contenu de chaque page est rendu dans le code HTML du fichier Layout.
 
-## <a name="run-the-application"></a>Exécution de l'application
+## <a name="run-the-application"></a>Exécuter l’application
 
-Exécutez à présent l’application pour la voir dans le navigateur. Vous pouvez exécuter l’application à l’aide de la **touche Ctrl** + **F5** ou en choisissant **Déboguer**exécuter  >  **sans débogage** dans le menu de Visual Studio.
+Exécutez à présent l’application pour la voir dans le navigateur. Vous pouvez exécuter l’application à l’aide de la **touche Ctrl** + **F5** ou en choisissant **Déboguer** exécuter  >  **sans débogage** dans le menu de Visual Studio.
 
 ## <a name="customize-the-application"></a>Personnaliser l’application
 
@@ -94,7 +94,7 @@ Remplacez le contenu de `<div>` dans *Index.cshtml* par cette balise :
 
 Exécutez de nouveau l'application. Vous devez maintenant voir que la page affiche l’heure actuelle, mais qu’il est toujours minuit ! Cela ne va pas.
 
-![Projet ASP.NET Core Visual Studio 2019 dans le navigateur](media/vs-2019/vs2019-app-in-browser.png)
+![Capture d’écran de la page d’hébergement de l’application dans une fenêtre de navigateur. Le contenu de la page est le suivant : « il est à 12:00 du moment sur le serveur ! ».](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>Déboguer l’application
 
@@ -102,7 +102,7 @@ Ajoutez un point d’arrêt à la méthode `OnGet` où nous affectons une valeur
 
 L’exécution s’arrête sur la ligne et vous pouvez voir que `DateTime.Today` inclut la date, mais que l’heure est toujours minuit, car aucune donnée d’heure n’est incluse.
 
-![Projet ASP.NET Core Visual Studio 2019 dans le navigateur](media/vs-2019/vs2019-breakpoint.png)
+![Capture d’écran montrant le code de Index.cshtml.cs dans Visual Studio. Un point d’arrêt est défini sur la ligne, 'Time = DateTime. Today. ToShortTimeString (); '.](media/vs-2019/vs2019-breakpoint.png)
 
 Remplacez-le par `DateTime.Now` et continuez l’exécution. Le nouveau code pour `OnGet` doit être :
 
@@ -118,7 +118,7 @@ Vous devez maintenant voir l’heure réelle du serveur dans le navigateur quand
 > [!NOTE]
 > Votre sortie peut différer de l’image, dans la mesure où le format de sortie de ToShortDateTimeString varie selon le paramètre de culture actuel. Consultez <xref:System.DateTime.ToShortTimeString>.
 
-![Projet ASP.NET Core Visual Studio 2019 dans le navigateur](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![Capture d’écran de la page d’hébergement de l’application dans une fenêtre de navigateur. Le contenu de la page est le suivant : « il est à 1:46 du moment sur le serveur ! ».](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

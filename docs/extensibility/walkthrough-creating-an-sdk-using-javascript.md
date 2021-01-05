@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’un SDK à l’aide de JavaScript | Microsoft Docs'
+description: Découvrez comment utiliser JavaScript pour créer un kit de développement logiciel (SDK) mathématique simple en tant qu’extension Visual Studio à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd138638a1f8bb4c0fe8dc73504059f0c9dd4023
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904945"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862913"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Procédure pas à pas : créer un SDK à l’aide de JavaScript
 Cette procédure pas à pas explique comment utiliser JavaScript pour créer un kit de développement logiciel (SDK) Math simple en tant qu’extension Visual Studio (VSIX).  La procédure pas à pas est divisée en plusieurs parties :
@@ -132,7 +134,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 
 18. Dans **Explorateur de solutions**, dans le menu contextuel du projet **SimpleMathVSIX** , choisissez **générer**.
 
-19. Une fois la génération terminée, dans le menu contextuel du projet, choisissez **ouvrir le dossier dans l’Explorateur de fichiers**. Accédez à **\bin\Debug \\ **, puis exécutez `SimpleMathVSIX.vsix` pour l’installer.
+19. Une fois la génération terminée, dans le menu contextuel du projet, choisissez **ouvrir le dossier dans l’Explorateur de fichiers**. Accédez à **\bin\Debug \\**, puis exécutez `SimpleMathVSIX.vsix` pour l’installer.
 
 20. Choisissez le bouton **installer** et laissez l’installation terminée.
 
@@ -146,13 +148,13 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 
 3. Dans la zone **nom** , spécifiez `ArithmeticUI` . Choisissez le bouton **OK**.
 
-4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **ArithmeticUI** , puis choisissez **Ajouter**une  >  **référence**.
+4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **ArithmeticUI** , puis choisissez **Ajouter** une  >  **référence**.
 
 5. Sous **Windows**, choisissez **Extensions**, et notez que la **simple mathématique** est affichée.
 
 6. Activez la case à cocher **Math simple** , puis cliquez sur le bouton **OK** .
 
-7. Dans **Explorateur de solutions**, sous **références**, Notez que la référence **mathématique simple** est affichée. Développez-le et Notez qu’il existe un dossier **\js \\ ** qui inclut **arithmetic.js**. Vous pouvez ouvrir **arithmetic.js** pour vérifier que le code source a été installé.
+7. Dans **Explorateur de solutions**, sous **références**, Notez que la référence **mathématique simple** est affichée. Développez-le et Notez qu’il existe un dossier **\js \\** qui inclut **arithmetic.js**. Vous pouvez ouvrir **arithmetic.js** pour vérifier que le code source a été installé.
 
 8. Utilisez le code suivant pour remplacer le contenu de *default.htm*.
 

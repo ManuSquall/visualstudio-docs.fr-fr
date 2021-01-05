@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801176"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761392"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Bien démarrer avec Outils R pour Visual Studio
 
@@ -62,7 +62,7 @@ Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](
 
 1. Certaines commandes, telles que `plot(1:100)`, ouvrent une nouvelle fenêtre dans Visual Studio quand la sortie ne peut pas être affichée directement dans la fenêtre interactive :
 
-    ![Affichage d’un tracé dans Visual Studio](media/getting-started-07-plot-window.png)
+    ![Capture d’écran d’une fenêtre de tracés Visual Studio qui affiche la sortie du tracé de la fonction graphique (1:100).](media/getting-started-07-plot-window.png)
 
 La fenêtre interactive vous permet également de passer en revue votre historique, de charger et d’enregistrer des espaces de travail, d’attacher un débogueur et d’interagir avec des fichiers de code source au lieu d’effectuer des opérations de copier-coller. Pour plus d’informations, consultez [Utilisation de la fenêtre interactive R](interactive-repl-for-r-in-visual-studio.md).
 
@@ -70,7 +70,7 @@ La fenêtre interactive vous permet également de passer en revue votre historiq
 
 En utilisant brièvement la fenêtre interactive, vous avez pu découvrir des fonctionnalités de modification de base, comme IntelliSense, qui fonctionnent aussi dans l’éditeur de code. Si vous entrez le même code que précédemment, les invites de saisie semi-automatique et IntelliSense affichées sont les mêmes, mais la sortie n’est pas visible.
 
-Le fait d’écrire du code dans un fichier *.R* vous permet de voir tout votre code à la fois, ce qui facilite l’apport de modifications mineures et l’affichage rapide des résultats en exécutant le code dans la fenêtre interactive. Notez aussi qu’un projet peut contenir autant de fichiers que vous le souhaitez. Quand le code se trouve dans un fichier, vous pouvez également l’exécuter pas à pas dans le débogueur (comme nous le verrons plus tard dans cet article). Ces fonctionnalités s’avèrent utiles quand vous développez des algorithmes de calcul et que vous écrivez du code pour manipuler un ou plusieurs datasets, surtout quand vous souhaitez examiner tous les résultats intermédiaires.
+Le fait d’écrire du code dans un fichier *.R* vous permet de voir tout votre code à la fois, ce qui facilite l’apport de modifications mineures et l’affichage rapide des résultats en exécutant le code dans la fenêtre interactive. Notez aussi qu’un projet peut contenir autant de fichiers que vous le souhaitez. Lorsque le code se trouve dans un fichier, vous pouvez également l’exécuter pas à pas dans le débogueur (abordé plus loin dans cet article). Ces fonctionnalités s’avèrent utiles quand vous développez des algorithmes de calcul et que vous écrivez du code pour manipuler un ou plusieurs datasets, surtout quand vous souhaitez examiner tous les résultats intermédiaires.
 
 Par exemple, les étapes suivantes créent un petit extrait de code pour explorer le [théorème central limite](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipédia). (Cet exemple est tiré du livre *R Cookbook* de Paul Teetor.)
 
@@ -86,7 +86,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
 
 1. Pour afficher rapidement les résultats, sélectionnez tout le code (**CTRL** + **A**), puis appuyez sur **CTRL** + **entrée** ou cliquez avec le bouton droit et sélectionnez **exécuter en mode interactif**. Tout le code sélectionné est exécuté dans la fenêtre interactive comme si vous l’aviez tapé directement. Le résultat s’affiche dans une fenêtre de tracés :
 
-    ![Affichage d’un tracé dans Visual Studio](media/getting-started-08-plot1.png)
+    ![Capture d’écran d’une fenêtre de traçage Visual Studio affichant un graphique de densité de population.](media/getting-started-08-plot1.png)
 
 1. Pour une seule ligne, appuyez simplement sur **CTRL** + **entrée** à tout moment pour exécuter cette ligne dans la fenêtre interactive.
 
@@ -125,7 +125,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
     lines(density(samp.means))
     ```
 
-1. **CTRL** + **Et** **Appuyez**de + **Enter** nouveau sur Ctrl pour afficher le résultat :
+1. **CTRL** + **Et** **Appuyez** de +  nouveau sur Ctrl pour afficher le résultat :
 
     ![Tracé double mis à jour dans Visual Studio, mis à l’échelle correctement](media/getting-started-10-plot3.png)
 
@@ -135,7 +135,7 @@ L’éditeur offre bien d’autres fonctionnalités. Pour plus d’informations,
 
 L’un des atouts de Visual Studio est son interface utilisateur de débogage. Reposant sur cette fondation solide, RTVS ajoute des éléments d’interface utilisateur novateurs comme [l’explorateur de variables](variable-explorer.md). Ici, nous allons examiner succinctement le débogage.
 
-1. Pour commencer, réinitialisez l’espace de travail actuel pour effacer tout ce que vous avez **R Tools**effectué jusqu’à présent à l’aide de la  >  **Session**  >  commande de menu**réinitialisation** de session des outils R. Par défaut, toutes les actions que vous réalisez dans la fenêtre interactive sont ajoutées à la session active, celle-ci étant ensuite utilisée par le débogueur. La réinitialisation de la session vous permet de démarrer la session de débogage sans données préexistantes. Toutefois, la commande **Réinitialiser** n’affecte pas votre fichier source *script.R*, car celui-ci est géré et enregistré en dehors de l’espace de travail.
+1. Pour commencer, réinitialisez l’espace de travail actuel pour effacer tout ce que vous avez effectué jusqu’à présent à l’aide de la  >    >  commande de menu **réinitialisation** de session des outils R. Par défaut, toutes les actions que vous réalisez dans la fenêtre interactive sont ajoutées à la session active, celle-ci étant ensuite utilisée par le débogueur. La réinitialisation de la session vous permet de démarrer la session de débogage sans données préexistantes. Toutefois, la commande **Réinitialiser** n’affecte pas votre fichier source *script.R*, car celui-ci est géré et enregistré en dehors de l’espace de travail.
 
 1. Dans le fichier *script.R* créé dans la section précédente, définissez un point d’arrêt sur la ligne qui commence par `pop <-`. Pour cela, placez le signe insertion sur cette ligne et appuyez sur **F9**, ou sélectionnez la commande de menu **Déboguer** > **Point d’arrêt**. Vous pouvez également cliquer dans la marge de gauche (ou gouttière) de cette ligne où le point de point d’arrêt rouge s’affiche :
 
@@ -163,7 +163,7 @@ Pour aller plus loin, consultez [Débogage](debugging-r-in-visual-studio.md) et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cette procédure pas à pas, vous avez pu découvrir les bases des projets R. Vous avez aussi appris à utiliser la fenêtre interactive, à modifier du code et à déboguer dans Visual Studio. Pour explorer d’autres fonctionnalités, consultez les articles suivants, ainsi que ceux figurant dans la table des matières :
+Dans cette procédure pas à pas, vous avez pu découvrir les bases des projets R. Vous avez aussi appris à utiliser la fenêtre interactive, à modifier du code et à déboguer dans Visual Studio. Pour continuer à explorer d’autres fonctionnalités, consultez les articles et articles suivants figurant dans la table des matières :
 
 - [Exemples de projets](getting-started-samples.md)
 - [Modification du code](editing-r-code-in-visual-studio.md)

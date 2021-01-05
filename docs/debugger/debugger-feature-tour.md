@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184209"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761431"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -64,17 +64,17 @@ Comme mentionné précédemment, par défaut, le débogueur ignore les propriét
 
 Cliquez avec le bouton droit sur une propriété ou un champ, et choisissez **Pas à pas détaillé spécifique**, puis choisissez une des options disponibles.
 
-![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific.png "Pas à pas détaillé spécifique")
+![Capture d’écran du débogueur Visual Studio avec une ligne de code mise en surbrillance. Pas à pas détaillé spécifique est sélectionné dans le menu contextuel, et la méthode path. Set est sélectionnée.](../debugger/media/dbg-tour-step-into-specific.png)
 
 Dans cet exemple, **Pas à pas détaillé spécifique** nous amène au code pour `Path.set`.
 
-![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific-2.png "Pas à pas détaillé spécifique")
+![Capture d’écran du débogueur Visual Studio montrant le code pour Path. Set. Les accolades entourant la fonction Set sont mises en surbrillance en jaune.](../debugger/media/dbg-tour-step-into-specific-2.png)
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Exécuter rapidement jusqu’à un point dans votre code avec la souris
 
-Dans le débogueur, placez le curseur sur une ligne de code jusqu’à ce que le bouton **exécuter pour cliquer** (exécuter l’exécution jusqu’ici) s’affiche ![à](../debugger/media/dbg-tour-run-to-click.png "RunToClick") gauche.
+Dans le débogueur, placez le curseur sur une ligne de code jusqu’à la capture d’écran du bouton Exécuter pour **Cliquer** (exécuter l’exécution jusqu’ici) ![ du bouton Exécuter pour cliquer à partir du débogueur Visual Studio. Le bouton indique que l’exécution doit s’exécuter jusqu’à la ligne où le bouton est placé.](../debugger/media/dbg-tour-run-to-click.png) s’affiche à gauche.
 
-![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click-2.png "Exécuter jusqu’au clic")
+![Capture d’écran du débogueur Visual Studio montrant que le bouton Exécuter jusqu’au clic s’affiche juste à gauche d’un appel à la fonction de mise à jour.](../debugger/media/dbg-tour-run-to-click-2.png)
 
 > [!NOTE]
 > Le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) est disponible à compter de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -116,7 +116,7 @@ Si vous ne souhaitez pas arrêter le débogueur et revenir à l’éditeur de co
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Modifier votre code et continuer le débogage (C#, VB, C++, XAML)
 
-Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et poursuivre le débogage. Pour utiliser cette fonctionnalité, cliquez sur votre code à l’aide de votre curseur tout en étant suspendu dans le débogueur, apportez des modifications, puis appuyez sur **F5**, **F10**ou **F11** pour continuer le débogage.
+Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et poursuivre le débogage. Pour utiliser cette fonctionnalité, cliquez sur votre code à l’aide de votre curseur tout en étant suspendu dans le débogueur, apportez des modifications, puis appuyez sur **F5**, **F10** ou **F11** pour continuer le débogage.
 
 ![Modifier & continuer le débogage](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
@@ -206,7 +206,7 @@ Vous pouvez configurer votre projet pour qu’il soit généré comme une [confi
 
 Les propriétés de débogage sont spécifiques à chaque type de projet. Par exemple, vous pouvez spécifier un argument à passer à l’application lorsque vous la démarrez. Vous pouvez accéder aux propriétés spécifiques au projet en cliquant avec le bouton droit sur le projet dans Explorateur de solutions et en sélectionnant **Propriétés**. Les propriétés de débogage apparaissent généralement sous l’onglet **générer** ou **Déboguer** , en fonction du type de projet particulier.
 
-![Propriétés du projet](../debugger/media/dbg-tour-project-properties.png "Propriétés d’un projet")
+![Propriétés d’un projet](../debugger/media/dbg-tour-project-properties.png "Propriétés d’un projet")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Déboguer des applications ASP.NET en production dans Azure App Service
 

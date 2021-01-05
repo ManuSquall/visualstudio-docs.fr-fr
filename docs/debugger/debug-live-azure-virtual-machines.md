@@ -1,6 +1,6 @@
 ---
 title: Déboguer des machines virtuelles Azure ASP.NET et des groupes identiques
-description: Découvrez comment définir des snappoints et afficher des captures instantanées avec le Débogueur de capture instantanée.
+description: Découvrez comment utiliser la Débogueur de capture instantanée dans Visual Studio pour définir points d’ancrage et prendre des instantanés pendant le débogage d’applications ASP.NET en direct sur des machines virtuelles Azure et des groupes identiques.
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809555"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846962"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET en production sur des machines virtuelles Azure et des groupes de machines virtuelles identiques Azure à l’aide du Débogueur de capture instantanée
 

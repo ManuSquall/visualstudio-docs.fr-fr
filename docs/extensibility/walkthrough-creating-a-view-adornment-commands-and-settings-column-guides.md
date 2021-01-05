@@ -1,5 +1,7 @@
 ---
 title: Création d’un ornement de vue, commandes et paramètres | Microsoft Docs
+description: Découvrez comment étendre l’éditeur de code Visual Studio avec des repères de colonne à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905039"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863072"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : créer un ornement, des commandes et des paramètres d’affichage (repères de colonne)
 Vous pouvez étendre l’éditeur de texte/Code de Visual Studio avec des commandes et des effets de vue. Cet article explique comment prendre en main une fonctionnalité d’extension populaire, repères de colonne. Les repères de colonne sont des lignes visuelles qui s’affichent dans la vue de l’éditeur de texte pour vous aider à gérer votre code à des largeurs de colonne spécifiques. Plus précisément, le code mis en forme peut être important pour les exemples que vous incluez dans des documents, des billets de blog ou des rapports de bogues.
@@ -31,7 +33,7 @@ Lors de cette procédure pas à pas, vous allez effectuer les opérations suivan
   > [!NOTE]
   > Dans cette procédure pas à pas, vous collez une grande quantité de code dans quelques fichiers générés par les modèles d’extension Visual Studio. Mais bientôt, cette procédure pas à pas fera référence à une solution terminée sur GitHub avec d’autres exemples d’extensions. Le code complet est légèrement différent en ce qu’il contient des icônes de commandes réelles au lieu d’utiliser des icônes generictemplate.
 
-## <a name="get-started"></a>Bien démarrer
+## <a name="get-started"></a>Prise en main
 À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Configurer la solution
@@ -47,7 +49,7 @@ Tout d’abord, vous créez un projet VSIX, vous ajoutez un ornement de vue de l
 
   Vous pouvez voir que ce modèle d’élément a ajouté deux fichiers au projet (ainsi que des références, et ainsi de suite) : **ColumnGuideAdornment.cs** et **ColumnGuideAdornmentTextViewCreationListener.cs**. Les modèles dessinent un rectangle violet sur la vue. Dans la section suivante, vous modifiez deux lignes dans l’écouteur de création de vue et remplacez le contenu de **ColumnGuideAdornment.cs**.
 
-  **Commandes**. Dans **Explorateur de solutions**, appuyez sur le bouton de pointeur droit sur le nœud du projet. Choisissez la commande **ajouter &#124; nouvel élément...** pour ajouter un nouvel élément d’ornement de vue. Choisissez **extensibilité &#124; VSPackage** dans le volet de navigation gauche et choisissez **commande personnalisée** dans le volet droit. Entrez le nom **ColumnGuideCommands** comme nom d’élément, puis choisissez **Ajouter**. En plus de plusieurs références, l’ajout des commandes et du package a également ajouté **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**et **ColumnGuideCommandsPackage. vsct**. Dans la section suivante, vous allez remplacer le contenu des premier et dernier fichiers pour définir et implémenter les commandes.
+  **Commandes**. Dans **Explorateur de solutions**, appuyez sur le bouton de pointeur droit sur le nœud du projet. Choisissez la commande **ajouter &#124; nouvel élément...** pour ajouter un nouvel élément d’ornement de vue. Choisissez **extensibilité &#124; VSPackage** dans le volet de navigation gauche et choisissez **commande personnalisée** dans le volet droit. Entrez le nom **ColumnGuideCommands** comme nom d’élément, puis choisissez **Ajouter**. En plus de plusieurs références, l’ajout des commandes et du package a également ajouté **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs** et **ColumnGuideCommandsPackage. vsct**. Dans la section suivante, vous allez remplacer le contenu des premier et dernier fichiers pour définir et implémenter les commandes.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Configurer l’écouteur de création d’un affichage de texte
 Ouvrez *ColumnGuideAdornmentTextViewCreationListener.cs* dans l’éditeur. Ce code implémente un gestionnaire pour chaque fois que Visual Studio crée des affichages de texte. Des attributs contrôlent le moment où le gestionnaire est appelé, selon les caractéristiques de la vue.
@@ -1180,7 +1182,7 @@ La ligne suivante fournit une assistance pour les cas où les utilisateurs appel
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
- **État**de la requête. Les fonctions d’état `AddColumnGuideBeforeQueryStatus` de la requête et `RemoveColumnGuideBeforeQueryStatus` vérifient certains paramètres (par exemple, le nombre maximal de guides ou la colonne max) ou s’il existe un repère de colonne à supprimer. Ils activent les commandes si les conditions sont correctes.  Les fonctions d’état de la requête doivent être efficaces, car elles s’exécutent chaque fois que Visual Studio affiche un menu et pour chaque commande du menu.
+ **État** de la requête. Les fonctions d’état `AddColumnGuideBeforeQueryStatus` de la requête et `RemoveColumnGuideBeforeQueryStatus` vérifient certains paramètres (par exemple, le nombre maximal de guides ou la colonne max) ou s’il existe un repère de colonne à supprimer. Ils activent les commandes si les conditions sont correctes.  Les fonctions d’état de la requête doivent être efficaces, car elles s’exécutent chaque fois que Visual Studio affiche un menu et pour chaque commande du menu.
 
  **Fonction AddColumnGuideExecuted**. La partie intéressante de l’ajout d’un guide consiste à déterminer la vue actuelle de l’éditeur et l’emplacement du signe insertion.  Tout d’abord, cette fonction appelle `GetApplicableColumn` , qui vérifie s’il existe un argument fourni par l’utilisateur dans les arguments d’événement du gestionnaire de commandes, et s’il n’y en a aucun, la fonction vérifie la vue de l’éditeur :
 

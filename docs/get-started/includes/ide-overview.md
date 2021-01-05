@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92210903"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97844802"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -171,7 +171,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Fichier > Nouveau projet sur la barre de menus](../media/file-new-project-menu.png)
 
-   La boîte **de dialogue Nouveau projet** affiche plusieurs *modèles*de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
+   La boîte **de dialogue Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
 1. Choisissez la catégorie de modèle **.NET Core** sous **Visual C#**, puis choisissez le modèle **Application console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
@@ -198,7 +198,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
 
-   ![Fenêtre de console](../media/overview-console-window.png)
+   ![Capture d’écran de la fenêtre de console cmd.exe montrant la sortie’Hello Word ! ' et « appuyez sur une touche pour continuer ».](../media/overview-console-window.png)
 
 1. Appuyez sur une touche au hasard pour fermer la fenêtre de console.
 
@@ -267,7 +267,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
 
-   ![Fenêtre de console](../media/vs-2019/overview-console-window.png)
+   ![Capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant la sortie’Hello Word ! ' et’Appuyez sur une touche pour fermer cette fenêtre'.](../media/vs-2019/overview-console-window.png)
 
 1. Appuyez sur une touche au hasard pour fermer la fenêtre de console.
 
@@ -292,7 +292,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Entrez votre nom dans la fenêtre de console et appuyez sur **Entrée**.
 
-   ![Fenêtre de console](../media/vs-2019/overview-console-input.png)
+   ![Capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant l’invite d’un nom, l’entrée et la sortie’Hello Georgette ! '.](../media/vs-2019/overview-console-input.png)
 
 1. Appuyez sur une touche pour fermer la fenêtre de console et arrêter le programme en cours d’exécution.
 
@@ -366,7 +366,7 @@ Tout d’abord, renommons la variable `name` :
 
 10. Réexécutez le programme en appuyant sur **CTRL** + **F5**. La sortie ressemble à ceci :
 
-    ![Fenêtre de console avec la sortie du programme](../media/overview-console-final.png)
+    ! Capture d’écran de la fenêtre de console cmd.exe montrant l’invite d’un nom, l’entrée et la sortie «Hello Georgette ! Jour de l’année : 151 '.] (.. /Media/overview-console-final.png)
 
 ::: moniker-end
 
@@ -374,7 +374,7 @@ Tout d’abord, renommons la variable `name` :
 
 10. Réexécutez le programme en appuyant sur **CTRL** + **F5**. La sortie ressemble à ceci :
 
-    ![Fenêtre de console avec la sortie du programme](../media/vs-2019/overview-console-final.png)
+    ![Capture d’écran de la fenêtre de Console de débogage Microsoft Visual Studio montrant l’invite d’un nom, l’entrée et la sortie’Hello Georgette ! Jour de l’année : 43.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 

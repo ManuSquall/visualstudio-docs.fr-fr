@@ -1,5 +1,7 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
+description: En savoir plus sur la fonction de rappel POPLISTFUNC, qui est utilisée par le plug-in de contrôle de code source pour mettre à jour une liste de fichiers ou de répertoires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702061"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863161"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Ce rappel est fourni à l' [SccPopulateList](../extensibility/sccpopulatelist-function.md) par l’IDE et est utilisé par le plug-in de contrôle de code source pour mettre à jour une liste de fichiers ou de répertoires (également fournis à la `SccPopulateList` fonction).
@@ -52,7 +54,7 @@ typedef BOOL (*POPLISTFUNC) (
 |`TRUE`|Le plug-in peut continuer à appeler cette fonction.|
 |`FALSE`|Il y a eu un problème au niveau de l’IDE (par exemple, une situation de mémoire insuffisante). Le plug-in doit arrêter l’opération.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour chaque fichier que le plug-in de contrôle de code source souhaite ajouter ou supprimer dans la liste de fichiers, il appelle cette fonction, en passant le `lpFileName` . L' `fAddRemove` indicateur indique un nouveau fichier à ajouter à la liste ou un ancien fichier à supprimer. Le `nStatus` paramètre indique l’état du fichier. Lorsque le plug-in SCC a terminé d’ajouter et de supprimer des fichiers, il retourne à partir de l’appel [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
 
 > [!NOTE]

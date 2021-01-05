@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801670"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761275"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Démarrage rapide : ouvrir et exécuter du code python dans un dossier
 
@@ -27,7 +27,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. Pour cette procédure pas à pas, vous pouvez utiliser n’importe quel dossier avec le code Python que vous souhaitez. Pour suivre l’exemple présenté ici, clonez le référentiel GitHub gregmalcolm/python_koans sur votre ordinateur à l’aide de la commande `git clone https://github.com/gregmalcolm/python_koans` dans un dossier approprié.
 
-1. Lancez Visual Studio 2019 puis, dans la fenêtre de démarrage, sélectionnez **Ouvrir** en bas de la colonne **Prise en main**. Sinon, si vous avez déjà installé Visual Studio, sélectionnez plutôt la commande **fichier**  >  **ouvrir**le  >  **dossier** .
+1. Lancez Visual Studio 2019 puis, dans la fenêtre de démarrage, sélectionnez **Ouvrir** en bas de la colonne **Prise en main**. Sinon, si vous avez déjà installé Visual Studio, sélectionnez plutôt la commande **fichier**  >  **ouvrir** le  >  **dossier** .
 
     ![L’écran de démarrage de Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 
@@ -70,11 +70,11 @@ Dans ce cas, vous devez également ajouter une ligne au fichier JSON de configur
 
 1. Cliquez avec le bouton droit sur le fichier de démarrage Python (*.py*) dans l’**Explorateur de solutions** et sélectionnez **Paramètres de débogage et de lancement**.
 
-    ![La commande Paramètres de débogage et de lancement pour un fichier Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Capture d’écran de l’affichage des dossiers Explorateur de solutions avec le fichier contemplate-koans.py sélectionné, et paramètres de débogage et de lancement sélectionnés dans le menu contextuel.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. Dans la boîte de dialogue **Sélectionner un débogueur** qui s’affiche, sélectionnez **Par défaut**, puis choisissez **Sélectionner**.
 
-    ![La commande Paramètres de débogage et de lancement pour un fichier Python](media/quickstart-open-folder/10-select-debugger.png)
+    ![Capture d’écran de la boîte de dialogue Sélectionner un débogueur avec le débogueur par défaut sélectionné et le bouton Sélectionner.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > Si vous ne voyez pas la **valeur par défaut** , assurez-vous de choisir un fichier python *. py* lors de la sélection de la commande **Déboguer et lancer les paramètres** . Visual Studio utilise le type de fichier pour déterminer les options de débogueur à afficher.

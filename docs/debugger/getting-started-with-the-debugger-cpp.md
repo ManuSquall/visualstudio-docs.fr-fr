@@ -1,6 +1,6 @@
 ---
 title: 'Didacticiel : déboguer du code C++'
-description: Découvrez comment démarrer le débogueur Visual Studio, parcourir le code et inspecter les données.
+description: Découvrez les fonctionnalités du débogueur Visual Studio et comment démarrer le débogueur, parcourir le code et inspecter les données dans une application C++.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cc5d0b85ac1406f214784976ca23467a0e0eb6c
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77091806"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847100"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer C++ avec Visual Studio
 
@@ -86,7 +86,7 @@ Tout d’abord, vous allez créer un projet d’application console C++. Le type
 
 1. Ouvrez Visual Studio 2019.
 
-   Si la fenêtre de démarrage n’est pas ouverte **File** , choisissez > **fenêtre démarrage**de fichier.
+   Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
 1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
@@ -186,7 +186,7 @@ Tout d’abord, vous allez créer un projet d’application console C++. Le type
 
 Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moyen d’exécuter rapidement votre application dans le débogueur (les commandes équivalentes, comme les commandes des menus, sont indiquées entre parenthèses).
 
-1. Pendant la suspension de la `for` boucle dans la `main` méthode, appuyez sur **F11** (ou sélectionnez **Déboguer > pas à pas**détaillé) à deux reprises pour passer à l’appel de `SendMessage` méthode.
+1. Pendant la suspension de la `for` boucle dans la `main` méthode, appuyez sur **F11** (ou sélectionnez **Déboguer > pas à pas** détaillé) à deux reprises pour passer à l’appel de `SendMessage` méthode.
 
      Après avoir appuyé sur **F11** deux fois, vous devez vous trouver dans la ligne de code suivante :
 
@@ -220,7 +220,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 1. Appuyez sur **F5** pour passer au point d’arrêt.
 
-1. Dans l’éditeur de code, faites défiler l' `std::wcout` affichage jusqu’à la fonction dans la `SendMessage` méthode jusqu’à ce ![Run to Click](../debugger/media/dbg-tour-run-to-click.png "RunToClick") que le bouton vert **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
+1. Dans l’éditeur de code, faites défiler l' `std::wcout` affichage jusqu’à la fonction dans la `SendMessage` méthode jusqu’à ce ![](../debugger/media/dbg-tour-run-to-click.png "RunToClick") que le bouton vert **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
 
      ![Utiliser la fonctionnalité exécuter pour cliquer](../debugger/media/get-started-run-to-click-cpp.png "Exécuter jusqu’au clic")
 
@@ -287,7 +287,7 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 1. Alors que l’exécution est mise en pause dans la boucle `for`, cliquez sur la fenêtre **Pile des appels** qui est ouverte par défaut dans le volet inférieur droit.
 
-    S’il est fermé, ouvrez-le en étant suspendu dans le débogueur en sélectionnant **Déboguer**la pile des  >  **Windows**  >  **appels**Windows.
+    S’il est fermé, ouvrez-le en étant suspendu dans le débogueur en sélectionnant **Déboguer** la pile des  >    >  **appels** Windows.
 
 2. Cliquez sur **F11** plusieurs fois jusqu’à ce que le débogueur soit suspendu dans la `SendMessage` méthode. Regardez la fenêtre **Pile des appels**.
 

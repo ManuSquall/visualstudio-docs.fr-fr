@@ -1,5 +1,6 @@
 ---
-title: Inline, méthode
+title: Méthode inline
+description: Découvrez comment utiliser le menu actions rapides et refactorisations dans Visual Studio pour Refactoriser les déclarations de méthode inline et fournir une syntaxe plus claire.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,14 +11,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cc619ea61a7fd4d7f4bc542b946e298933a8f73
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 655c6dad03b05b257aec3d92199321a0e0e93d22
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402300"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761418"
 ---
-# <a name="inline-method"></a>Inline, méthode
+# <a name="inline-method"></a>Méthode inline
 
 Cette refactorisation s’applique à :
 
@@ -41,11 +42,11 @@ Dans les **cas suivants :** Vous souhaitez remplacer les utilisations d’une m
     
    Sélectionnez **`<QualifiedMethodName>` inline** pour supprimer la déclaration de la méthode inline : 
 
-    ![Rendre la classe abstraite](media/inline-method-remove-declaration.png)
+    ![LinkedDataFormUpdated du menu actions rapides et refactorisations dans Visual Studio avec convertir’inline’CreateWidget () 'sélectionné et les modifications du code C# affichées.](media/inline-method-remove-declaration.png)
 
    Sélectionnez **Inline et conserver `<QualifiedMethodName>`** pour conserver la déclaration de la méthode d’origine : 
 
-    ![Rendre la classe abstraite](media/inline-method-preserve-declaration.png)
+    ![LinkedDataFormUpdated du menu actions rapides et refactorisations dans Visual Studio à l’aide de l’option convertir’inline et conserver’CreateWidget () 'sélectionnée et les modifications du code C# affichées.](media/inline-method-preserve-declaration.png)
 
 ## <a name="see-also"></a>Voir aussi
 

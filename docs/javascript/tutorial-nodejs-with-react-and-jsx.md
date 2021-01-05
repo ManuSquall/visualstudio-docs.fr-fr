@@ -1,6 +1,6 @@
 ---
 title: Créer une application Node.js et React
-description: Dans ce tutoriel, vous créez une application à l’aide des outils Node.js pour Visual Studio.
+description: Découvrez comment créer un projet d’application Web Node.js à partir d’un modèle Visual Studio.
 ms.custom: ''
 ms.date: 4/21/2020
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81760118"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815774"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -60,10 +60,10 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
     ::: moniker range=">=vs-2019"
-    Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)pour l'   installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)pour l'   installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
     ::: moniker-end
 
     Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
@@ -76,7 +76,7 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 
     Si vous ne l’avez pas installé, nous vous recommandons d’installer la version LTS à partir du site Web [Node.js](https://nodejs.org/en/download/) pour une meilleure compatibilité avec les frameworks et les bibliothèques externes. Node.js est conçu pour les architectures 32 bits et 64 bits. Les outils de Node.js dans Visual Studio, inclus dans la charge de travail Node.js, prennent en charge les deux versions. Une seule est requise et le programme d’installation de Node.js ne prend en charge qu’une seule installation à la fois.
     
-    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés**et définir le ** chemin d’accèsNode.exe**). Vous pouvez utiliser une installation globale de Node.js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets Node.js. 
+    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés** et définir le **chemin d’accèsNode.exe**). Vous pouvez utiliser une installation globale de Node.js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets Node.js. 
 
 ## <a name="create-a-project"></a>Création d’un projet
 
@@ -94,7 +94,7 @@ Commencez par créer un projet d’application web Node.js.
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, tapez le nom **NodejsWebAppBlank**, puis choisissez **OK**.
     ::: moniker-end
-    Si vous ne voyez pas le modèle de projet d' **application Web vide Node.js** , vous devez ajouter la charge de travail de ** développementNode.js** . Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
+    Si vous ne voyez pas le modèle de projet d' **application Web vide Node.js** , vous devez ajouter la charge de travail de **développementNode.js** . Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 
     Visual Studio crée la solution et ouvre votre projet.
 
@@ -316,7 +316,7 @@ Au cours des étapes précédentes, vous avez ajouté *webpack-config.js* au pro
 
     Si vous voyez des erreurs à la place de la sortie précédente, vous devez les corriger pour permettre à votre application de fonctionner correctement. Si les versions de votre package npm sont différentes de celles présentées dans ce tutoriel, cela peut constituer une source d’erreurs. Vous pouvez éventuellement corriger les erreurs en utilisant les versions exactes indiquées au cours des étapes précédentes. De plus, si une ou plusieurs de ces versions de package sont dépréciées et génèrent des erreurs, vous devrez peut-être installer une version plus récente pour corriger ces erreurs. Pour plus d’informations sur l’utilisation de *package.json* pour gérer les versions des packages npm, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md).
 
-1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le nœud du projet et choisissez **Ajouter**  >  un**dossier existant**, puis choisissez le dossier de *distribution* et choisissez **Sélectionner un dossier**.
+1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le nœud du projet et choisissez **Ajouter**  >  un **dossier existant**, puis choisissez le dossier de *distribution* et choisissez **Sélectionner un dossier**.
 
     Visual Studio ajoute le dossier *dist* au projet, lequel contient *app-bundle.js* et *app-bundle.js.map*.
 
@@ -369,7 +369,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
 
 1. Dans *server.js*, cliquez dans la marge située à gauche de la déclaration de `staticPath` pour définir un point d’arrêt :
 
-    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Capture d’écran de la fenêtre Visual Studio code pour server.js. Un point rouge dans la marge de gauche indique qu’un point d’arrêt est défini pour la déclaration staticPath.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
@@ -407,7 +407,7 @@ Pour ce scénario, utilisez Chrome.
 2. Démarrez votre navigateur avec le débogage activé.
 
     ::: moniker range=">=vs-2019"
-    À compter de Visual Studio 2019, vous pouvez définir l' `--remote-debugging-port=9222` indicateur au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter**et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
+    À compter de Visual Studio 2019, vous pouvez définir l' `--remote-debugging-port=9222` indicateur au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter** et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Configurer votre navigateur pour qu’il s’ouvre avec le débogage activé](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -436,13 +436,13 @@ Pour ce scénario, utilisez Chrome.
 
     Pour *app-bundle.js*, définissez le point d’arrêt dans la `render()` fonction comme indiqué dans l’illustration suivante :
 
-    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Capture d’écran de la fenêtre Visual Studio code pour app-bundle.js. Un point rouge dans la marge de gauche indique qu’un point d’arrêt est défini dans la fonction Render.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Pour rechercher la `render()` fonction dans le fichier de *app-bundle.js* compilé, utilisez **CTRL** + **F** (**Edit**  >  **Rechercher et remplacer**la  >  **recherche rapide**).
+    Pour rechercher la `render()` fonction dans le fichier de *app-bundle.js* compilé, utilisez **CTRL** + **F** (**Edit**  >  **Rechercher et remplacer** la  >  **recherche rapide**).
 
     Pour *app. TSX*, définissez le point d’arrêt à l’intérieur de la `render()` fonction, sur l' `return` instruction.
 
-    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![Capture d’écran de la fenêtre Visual Studio code pour App. TSX. Un point rouge dans la marge de gauche indique qu’un point d’arrêt est défini sur l’instruction return de la fonction Render.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
 2. Si vous définissez le point d’arrêt dans le fichier *. TSX* (plutôt que *app-bundle.js*), vous devez mettre à jour *webpack-config.js*. Remplacez le code suivant :
 
@@ -463,7 +463,7 @@ Pour ce scénario, utilisez Chrome.
 
     Il s’agit d’un paramètre de développement uniquement pour activer le débogage dans Visual Studio. Ce paramètre vous permet de remplacer les références générées dans le fichier de mappage source, *app-bundle.js. map*, lors de la génération de l’application. Par défaut, les références WebPack du fichier de mappage source incluent le préfixe *WebPack:///* , qui empêche Visual Studio de trouver le fichier source, *app. TSX*. Plus précisément, lorsque vous apportez cette modification, la référence au fichier source, *app. TSX*, est passée de *WebPack:///./app.TSX* à *./app.TSX*, ce qui permet le débogage.
 
-3. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **CTRL** + **F5** (**Déboguer**exécuter  >  **sans débogage**) pour exécuter l’application dans le navigateur.
+3. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **CTRL** + **F5** (**Déboguer** exécuter  >  **sans débogage**) pour exécuter l’application dans le navigateur.
 
     ::: moniker range=">=vs-2019"
     Si vous avez créé une configuration de navigateur avec un nom convivial, choisissez-la comme cible de débogage.

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863034"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761327"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Spécificateurs de format pour C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans les fenêtres **Espion**, **automatique** et **variables locales** à l’aide de spécificateurs de format.
@@ -52,9 +52,9 @@ int main() {
 }
 ```
 
-Ajoutez la `my_var1` variable à la fenêtre **Espion** pendant le débogage, puis **déboguez**  >  **Windows**  >  **Watch**  >  **Espion 1**. Ensuite, cliquez avec le bouton droit sur la variable et sélectionnez **affichage hexadécimal**. À présent, la fenêtre **Espion** affiche la valeur 0x0065. Pour voir cette valeur exprimée sous la forme d’un caractère plutôt que d’un entier, cliquez d’abord avec le bouton droit et désélectionnez l' **affichage hexadécimal**. Ajoutez ensuite le spécificateur de format de caractère **, c** dans la colonne de **nom** après le nom de la variable. La colonne **valeur** affiche maintenant **101 'e'**.
+Ajoutez la `my_var1` variable à la fenêtre **Espion** pendant le débogage, puis **déboguez**  >    >    >  **Espion 1**. Ensuite, cliquez avec le bouton droit sur la variable et sélectionnez **affichage hexadécimal**. À présent, la fenêtre **Espion** affiche la valeur 0x0065. Pour voir cette valeur exprimée sous la forme d’un caractère plutôt que d’un entier, cliquez d’abord avec le bouton droit et désélectionnez l' **affichage hexadécimal**. Ajoutez ensuite le spécificateur de format de caractère **, c** dans la colonne de **nom** après le nom de la variable. La colonne **valeur** affiche maintenant **101 'e'**.
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Capture d’écran de l’Fenêtre Espion Visual Studio avec une ligne sélectionnée qui affiche my_var1. c avec la valeur 101 'e’et un type int.](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 Vous pouvez afficher et sélectionner dans une liste de spécificateurs de format disponibles en ajoutant une virgule (,) à la valeur dans la fenêtre **Espion** . 
@@ -157,7 +157,7 @@ Les spécificateurs en **gras** sont pris en charge uniquement pour le débogage
 |x<br /><br />X|entier hexadécimal|61541|0x0000f065|
 |**l**<br /><br />**h**|préfixe long ou court pour : d, i, u, o, x, X|00406042|0x0c22|
 |**f**|virgule flottante signée|(3./2.), f|1.500000|
-|**Envoyer**|notation scientifique signée|(3.0/2.0)|1.500000e+000|
+|**e**|notation scientifique signée|(3.0/2.0)|1.500000e+000|
 |**activée**|virgule flottante signée ou notation scientifique signée,<br/> selon celui qui est le plus court|(3.0/2.0)|1.5|
 |c|caractère unique|\<location>|101 ’e’|
 |s|const char * (avec guillemets)|\<location>|« Hello World »|

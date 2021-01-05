@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : personnalisation de l’affichage de texte | Microsoft Docs'
+description: Découvrez comment personnaliser un affichage de texte en modifiant l’une des différentes propriétés dans son mappage de format d’éditeur à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904938"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862965"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Procédure pas à pas : personnaliser l’affichage du texte
 Vous pouvez personnaliser un affichage de texte en modifiant l’une des propriétés suivantes dans sa carte de format d’éditeur :

@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862787"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761210"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C# dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **exécution** , la fenêtre **commande** , les points de [trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et les fenêtres sources. Si vous faites une pause sur une expression dans ces fenêtres, le résultat s’affiche dans un  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) dans l’affichage de format spécifié.
@@ -50,9 +50,9 @@ Nous allons utiliser l’exemple de code suivant :
 }
 ```
 
-Ajoutez la `my_var1` variable à la fenêtre **Espion** pendant le débogage, puis **déboguez**  >  **Windows**  >  **Watch**  >  **Espion 1**. Ensuite, cliquez avec le bouton droit sur la variable et sélectionnez **affichage hexadécimal**. À présent, la fenêtre **Espion** affiche la valeur 0x0065. Pour afficher cette valeur sous la forme d’un entier décimal plutôt que sous la forme d’un entier hexadécimal, ajoutez le spécificateur de format décimal **, d** dans la colonne **nom** après le nom de la variable. La colonne **valeur** affiche maintenant **101**.
+Ajoutez la `my_var1` variable à la fenêtre **Espion** pendant le débogage, puis **déboguez**  >    >    >  **Espion 1**. Ensuite, cliquez avec le bouton droit sur la variable et sélectionnez **affichage hexadécimal**. À présent, la fenêtre **Espion** affiche la valeur 0x0065. Pour afficher cette valeur sous la forme d’un entier décimal plutôt que sous la forme d’un entier hexadécimal, ajoutez le spécificateur de format décimal **, d** dans la colonne **nom** après le nom de la variable. La colonne **valeur** affiche maintenant **101**.
 
-![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+![Capture d’écran de l’Fenêtre Espion Visual Studio avec une ligne indiquant my_var1, d avec une valeur de 101 et un type int.](../debugger/media/watchformatcsharp.png)
 
 ::: moniker range=">= vs-2019" 
 

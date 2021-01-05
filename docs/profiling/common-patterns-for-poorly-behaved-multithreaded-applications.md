@@ -1,5 +1,6 @@
 ---
 title: Modèles courants pour les applications multithread à comportement médiocre
+description: Découvrez les modèles courants pour les applications multithread à comportement médiocre qui sont incluses dans l’outil visualiseur concurrentiel Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808940"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815787"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 
@@ -37,17 +38,17 @@ Pour plus d’informations, consultez la section « Démarrer avec le problème
 
 ## <a name="uneven-workload-distribution"></a>Distribution inégale de la charge de travail
 
-![Charge de travail inégale](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Capture d’écran d’un graphique de charge de travail pour les threads parallèles dans le visualiseur concurrentiel. Les threads se terminent à des moments différents, présentant un modèle d’étape d’escalier.](../profiling/media/unevenworkload_1.png)
 
 Lorsque la charge de travail est mal répartie entre les différents threads parallèles d’une application, un modèle typique en escalier apparaît chaque fois qu’un thread termine son travail, comme le montre l’illustration précédente. Le visualiseur concurrentiel présente souvent des heures de début très proches pour chaque thread simultané. Cependant, ces threads ne se terminent pas simultanément comme prévu. Ce modèle indique une distribution inégale de la charge de travail entre les différents threads parallèles, ce qui peut entraîner une baisse des performances. Pour ce type de problème, la meilleure approche consiste à réévaluer l’algorithme selon lequel la charge de travail est répartie entre les threads parallèles.
 
 Comme le montre l’illustration suivante, le visualiseur concurrentiel peut également exposer ce symptôme dans la vue Utilisation de l’UC sous la forme d’une baisse progressive de l’utilisation du processeur.
 
-![Charge de travail inégale](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Capture d’écran de la vue utilisation de l’UC dans le visualiseur concurrentiel montrant un modèle d’étape d’escalier à la fin du graphique d’utilisation de l’UC.](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>Surabonnement
 
-![Surabonnement](../profiling/media/oversubscription.png "Surabonnement")
+![Capture d’écran d’un graphique de charge de travail pour tous les threads actifs dans le visualiseur concurrentiel. Une légende affiche la durée d’exécution et de préemption.](../profiling/media/oversubscription.png)
 
 Dans le cas d’un surabonnement, le nombre de threads actifs d’un processus est supérieur au nombre de cœurs logiques disponibles sur le système. L’illustration précédente montre les résultats d’un surabonnement, avec une importante anticipation de tous les threads actifs. De plus, la légende montre qu’un pourcentage important du temps est consacré à l’anticipation (84 % dans cet exemple). Cela peut indiquer que le processus demande au système d’exécuter plus de threads simultanés qu’il n’existe de cœurs logiques. Toutefois, cela peut également indiquer que d’autres processus présents sur le système utilisent des ressources censées être disponibles pour ce processus.
 

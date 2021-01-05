@@ -1,5 +1,6 @@
 ---
 title: Utilisation du GPU | Microsoft Docs
+description: Découvrez comment utiliser l’outil utilisation du GPU dans le profileur de performances pour mieux comprendre l’utilisation du matériel de haut niveau de votre application Direct3D.
 ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074967"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815650"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 
@@ -39,7 +40,7 @@ Quand vous exécutez votre application dans l’outil utilisation du GPU, Visual
 
 Pour démarrer l'outil Utilisation du GPU :
 
-1. Dans le menu principal, choisissez **Debug**  >  **performances et diagnostics** du débogage (ou, dans le clavier, appuyez sur Alt + F2).
+1. Dans le menu principal, choisissez   >  **performances et diagnostics** du débogage (ou, dans le clavier, appuyez sur Alt + F2).
 
 2. Dans le Hub **performances et diagnostics** , activez la case à cocher en regard de **utilisation du GPU**. Vous pouvez éventuellement cocher les cases en regard des autres outils qui vous intéressent. Vous pouvez exécuter simultanément plusieurs outils de diagnostic et de performances pour obtenir une image plus complète des performances de votre application.
 
@@ -62,11 +63,11 @@ Pour générer et afficher le rapport d’utilisation du GPU :
 
 1. Dans la partie inférieure de la fenêtre de session de diagnostic, choisissez le lien **arrêter la collecte** ou sélectionnez **arrêter** dans le coin supérieur gauche.
 
-   ![Capture d’écran de la fenêtre de session de diagnostic](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Capture d’écran d’une fenêtre de session de diagnostic dans l’outil utilisation du GPU, montrant les images par seconde, l’utilisation du GPU, le bouton arrêter et le lien arrêter la collecte.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. Dans la partie supérieure du rapport, sélectionnez une section dans l'un des graphiques qui illustre le problème à examiner. Votre sélection peut atteindre jusqu’à 3 secondes. Les sections plus longues sont tronquées vers le début.
 
-   ![Capture d’écran de la fenêtre de session de diagnostic](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Capture d’écran d’une fenêtre de session de diagnostic dans l’outil utilisation du GPU avec une partie de la chronologie de la session de diagnostic sélectionnée.](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Pour afficher une chronologie détaillée de votre sélection, dans la partie inférieure du rapport, dans **... Cliquez ici pour afficher les détails de l’utilisation du GPU pour ce** message de plage, sélectionnez **afficher les détails**.
 
@@ -84,7 +85,7 @@ Cette sélection ouvre un nouveau document avec onglets qui contient le rapport.
 
 ## <a name="use-the-gpu-usage-report"></a>Utiliser le rapport d’utilisation du GPU
 
-La partie supérieure du rapport utilisation du GPU affiche les chronologies de l’activité de traitement de l’UC, de l’activité de rendu GPU et de l’activité de copie GPU. Ces chronologies sont divisées par des barres verticales gris clair qui indiquent le Vsync de l’affichage. La fréquence des barres correspond à la fréquence d’actualisation de l’un des affichages (sélectionné à l’aide de la liste déroulante **affichage** ) à partir duquel les données d’utilisation du GPU ont été collectées.
+La partie supérieure du rapport utilisation du GPU affiche les chronologies de l’activité de traitement de l’UC, de l’activité de rendu GPU et de l’activité de copie GPU. Ces chronologies sont divisées par des barres verticales, gris clair, qui indiquent la synchronisation verticale de l’affichage (VSync). La fréquence des barres correspond à la fréquence d’actualisation de l’un des affichages (sélectionné à l’aide de la liste déroulante **affichage** ) à partir duquel les données d’utilisation du GPU ont été collectées.
 
 Dans la mesure où l’affichage peut avoir une fréquence de rafraîchissement plus élevée que les performances cibles de votre application, il est possible qu’il n’existe pas de relation 1 à 1 entre le VSync et la fréquence d’images que votre application doit atteindre. Pour atteindre ses objectifs de performances, une application doit effectuer tout le traitement, effectuer le rendu et effectuer un `Present()` appel à la cadence ciblée. Toutefois, le frame rendu ne s’affichera pas jusqu’au prochain Vsync après `Present()` .
 
@@ -124,7 +125,7 @@ Vous pouvez configurer l'outil Utilisation du GPU pour reporter la collecte des 
 
 Pour reporter le profilage au démarrage de l'application :
 
-1. Dans le menu principal, choisissez **Debug**  >  **performances et diagnostics** du débogage (ou, dans le clavier, appuyez sur Alt + F2).
+1. Dans le menu principal, choisissez   >  **performances et diagnostics** du débogage (ou, dans le clavier, appuyez sur Alt + F2).
 
 2. Dans le Hub **performances et diagnostics** , en regard de **utilisation du GPU**, sélectionnez le lien **paramètres** .
 

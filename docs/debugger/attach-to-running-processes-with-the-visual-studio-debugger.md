@@ -1,6 +1,7 @@
 ---
 title: Attacher aux processus en cours d’exécution avec le débogueur
-ms.custom: seodec18
+description: Découvrez comment attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671457"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760924"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 
@@ -58,7 +59,7 @@ Pour vous rattacher rapidement à un processus que vous avez attaché précédem
 
 1. Définissez la **cible** de la connexion sur le nom de votre ordinateur local.
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![Capture d’écran de la boîte de dialogue Attacher au processus, avec la cible de connexion définie sur le nom de l’ordinateur local.](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. Dans la liste **processus disponibles** , recherchez et sélectionnez le ou les processus que vous voulez attacher.
 
@@ -252,4 +253,4 @@ Si vous souhaitez des informations plus spécifiques sur la raison pour laquelle
 
 - [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Débogage distant](../debugger/remote-debugging.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

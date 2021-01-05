@@ -1,6 +1,6 @@
 ---
 title: 'Didacticiel : déboguer du code C#'
-description: Découvrez comment démarrer le débogueur Visual Studio, parcourir le code et inspecter les données.
+description: Découvrez les fonctionnalités du débogueur Visual Studio et comment démarrer le débogueur, parcourir le code et inspecter les données dans une application C#.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 435564a9bf4e90dd25ed5fee3a44d0578c201a99
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153068"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846949"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
 
@@ -85,7 +85,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 1. Ouvrez Visual Studio 2019.
 
-   Si la fenêtre de démarrage n’est pas ouverte **File** , choisissez > **fenêtre démarrage**de fichier.
+   Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
 1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
@@ -187,7 +187,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 1. Développez la `letters` variable pour afficher ses propriétés, qui incluent tous les éléments contenus dans la variable.
 
-     ![Afficher une bulle d’informations](../csharp/media/get-started-view-data-tip.png "Afficher une bulle d’informations")
+     ![Capture d’écran du débogueur Visual Studio avec l’instruction’Name + = Letters [I] 'mise en surbrillance et une liste déroulante montrant les éléments dans le tableau de lettres.](../csharp/media/get-started-view-data-tip.png)
 
 1. Ensuite, pointez sur la `name` variable et vous voyez sa valeur actuelle, une chaîne vide.
 
@@ -197,7 +197,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 1. Appuyez sur **F10** (ou **déboguez**  >  **pas à pas**) plusieurs fois pour effectuer une itération à plusieurs reprises dans la `for` boucle, en interrompant à nouveau au point d’arrêt et en pointant sur la `name` variable chaque fois pour vérifier sa valeur.
 
-     ![Afficher une bulle d’informations](../csharp/media/get-started-data-tip.gif "Afficher une bulle d’informations")
+     ![Capture d’écran animée du débogueur Visual Studio montrant l’effet de l’appui sur F10 pour « pas à pas principal » et d’itération au sein d’une boucle pendant le débogage.](../csharp/media/get-started-data-tip.gif)
 
      La valeur de la variable change avec chaque itération de la `for` boucle, en présentant les valeurs de `f` , puis, puis `fr` `fre` , et ainsi de suite. Pour accélérer le débogueur à travers la boucle plus rapidement dans ce scénario, vous pouvez appuyer sur **F5** (ou choisir **Déboguer**  >  **Continuer**) à la place, ce qui vous permet d’accéder au point d’arrêt au lieu de l’instruction suivante.
 
@@ -229,7 +229,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 1. Appuyez sur **F5** pour avancer à nouveau jusqu’au point d’arrêt.
 
-1. Dans l’éditeur de code, faites défiler l' `Console.WriteLine` affichage jusqu’à la méthode dans la `SendMessage` méthode jusqu’à ce ![Run to Click](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") que le bouton vert **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
+1. Dans l’éditeur de code, faites défiler l' `Console.WriteLine` affichage jusqu’à la méthode dans la `SendMessage` méthode jusqu’à ce ![](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") que le bouton vert **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
 
      ![Utiliser la fonctionnalité exécuter pour cliquer](../csharp/media/get-started-run-to-click.png "Exécuter jusqu’au clic")
 
@@ -278,7 +278,7 @@ Le débogueur s’arrête à nouveau au point d’arrêt que vous avez défini p
 
 1. Alors que l’exécution est mise en pause dans la boucle `for`, cliquez sur la fenêtre **Pile des appels** qui est ouverte par défaut dans le volet inférieur droit.
 
-    S’il est fermé, ouvrez-le en étant suspendu dans le débogueur en sélectionnant **Déboguer**la pile des  >  **Windows**  >  **appels**Windows.
+    S’il est fermé, ouvrez-le en étant suspendu dans le débogueur en sélectionnant **Déboguer** la pile des  >    >  **appels** Windows.
 
 2. Cliquez sur **F11** plusieurs fois jusqu’à ce que le débogueur soit suspendu dans la `SendMessage` méthode. Regardez la fenêtre **Pile des appels**.
 

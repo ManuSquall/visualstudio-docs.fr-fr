@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330197"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833310"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -24,17 +24,17 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
 
 Les tests unitaires ont le plus d’effet sur la qualité du code quand ils font partie intégrante du flux de travail de votre développement logiciel. Dès que vous écrivez une fonction ou un autre bloc de code d’application, créez des tests unitaires pour vérifier le comportement du code en réponse aux cas standard, limite et incorrects des données d’entrée, ainsi que les hypothèses explicites ou implicites du code. Avec le *développement axé sur des tests*, comme vous créez les tests unitaires avant d’écrire le code, vous utilisez les tests unitaires comme documentation de conception et spécifications fonctionnelles.
 
-Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](generate-unit-tests-for-your-code-with-intellitest.md).
-
 L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces infrastructures via le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](../test/install-third-party-unit-test-frameworks.md).
+
+Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer du code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour le code .net](generate-unit-tests-for-your-code-with-intellitest.md).
 
 ## <a name="get-started"></a>Prise en main
 
 Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
-- [Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour le code .NET](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Procédure pas à pas : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Écrire des tests unitaires pour C/C++ dans Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,7 +85,7 @@ Maintenant que nous avons le code, il est temps de le tester.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Créer des projets de test unitaire et des méthodes de test
 
-Il est souvent plus rapide de générer le projet de test unitaire et les stubs de test unitaire à partir de votre code. Vous pouvez également choisir de créer le projet de test unitaire et les tests manuellement selon vos besoins. Si vous souhaitez créer des tests unitaires avec un Framework tiers, vous devez installer l’une des extensions suivantes : [nunit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+Pour C#, il est souvent plus rapide de générer le projet de test unitaire et les stubs de test unitaire à partir de votre code. Vous pouvez également choisir de créer le projet de test unitaire et les tests manuellement selon vos besoins. Si vous souhaitez créer des tests unitaires à partir du code avec un Framework tiers, vous devez installer l’une des extensions suivantes : [nunit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). Si vous n’utilisez pas C#, ignorez cette section et accédez à [créer le projet de test unitaire et les tests unitaires manuellement](#create-the-unit-test-project-and-unit-tests-manually).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Créer un projet de test unitaire et des stubs de test unitaire
 
@@ -101,7 +101,7 @@ Il est souvent plus rapide de générer le projet de test unitaire et les stubs 
    ![À partir de la fenêtre de l'éditeur, affichez le menu contextuel](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > La commande de menu **créer des tests unitaires** est uniquement disponible pour le code managé.
+   > La commande de menu **créer des tests unitaires** est uniquement disponible pour le code C#.
    ::: moniker-end
 
 2. Cliquez sur **OK** pour accepter les valeurs par défaut pour créer vos tests unitaires, ou changez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.
@@ -264,7 +264,7 @@ Vous pouvez choisir **exécuter tout** pour exécuter tous vos tests, ou choisir
 
 ::: moniker range="vs-2017"
 
-Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![Capture d’écran du bouton bascule d’exécution des tests parallèles dans la barre d’outils de l’Explorateur de tests Visual Studio.](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
 ::: moniker-end
 
@@ -338,7 +338,7 @@ En savoir plus sur le [débogage des tests unitaires](../debugger/debugger-featu
 
 **Q : Puis-je créer des tests unitaires qui utilisent plusieurs groupes de données en entrée pour exécuter le test ?**
 
-**R :** Oui. Les *méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous assignez les valeurs de ligne aux variables à l’aide de l' `TestContext.DataRow[` *ColumnName* `]` indexeur ColumnName.
+**R :** Oui. Les *méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous assignez les valeurs de ligne aux variables à l’aide de l' `TestContext.DataRow[`  `]` indexeur ColumnName.
 
 > [!NOTE]
 > Ces procédures s’appliquent uniquement aux méthodes de test que vous écrivez à l’aide du framework de tests unitaires Microsoft pour le code managé. Si vous utilisez un autre framework, consultez sa documentation pour obtenir des fonctionnalités équivalentes.

@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674778"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761262"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Attacher à un processus en cours d’exécution sur un conteneur d’ancrage 
 
@@ -34,7 +34,7 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 
 1. Dans Visual Studio, sélectionnez **Déboguer > attacher au processus (Ctrl + Alt + P)** pour ouvrir la boîte de dialogue **attacher au processus** .
 
-![Menu attacher au processus](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Capture d’écran de la boîte de dialogue Attacher au processus dans Visual Studio montrant un type de connexion Dockr (conteneur Linux).](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. Définissez le **type de connexion** sur **Dockr (conteneur Linux)**.
 3. Sélectionnez **Rechercher...** pour définir la **cible de connexion** via la boîte de dialogue **Sélectionner un conteneur d’ancrage** .
@@ -63,7 +63,7 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 
 4. Choisissez le processus de conteneur correspondant dans la liste des **processus disponibles** , puis sélectionnez **attacher** pour démarrer le débogage de votre processus de conteneur C# dans Visual Studio.
 
-    ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete.png "Menu attacher de l’Ancreur Linux terminé")
+    ![Capture d’écran de la boîte de dialogue Attacher au processus dans Visual Studio. Le type de connexion est défini sur docker (conteneur Linux) et le processus dotnet est sélectionné.](../debugger/media/docker-attach-complete.png "Menu attacher de l’Ancreur Linux terminé")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a>Attacher à un processus en cours d’exécution sur un conteneur d’ancrage Windows
 
@@ -76,7 +76,7 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 
 1. Dans Visual Studio, sélectionnez **Déboguer > attacher au processus** (ou **CTRL + ALT + P**) pour ouvrir la boîte de dialogue **attacher au processus** .
 
-   ![Menu attacher au processus](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Capture d’écran de la boîte de dialogue Attacher au processus dans Visual Studio montrant un type de connexion ancrage (conteneur Windows).](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. Définissez le **type de connexion** sur **Dockr (conteneur Windows)**.
 3. Sélectionnez **Rechercher...** pour définir la **cible de connexion** à l’aide de la boîte de dialogue **Sélectionner un conteneur d’ancrage** .
@@ -93,6 +93,6 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 
 4. Choisissez le processus de conteneur correspondant dans la liste des **processus disponibles** , puis sélectionnez **attacher** pour démarrer le débogage de votre processus de conteneur C#.
 
-    ![Menu attacher de l’ancrage terminé](../debugger/media/docker-attach-complete-windows.png "Menu attacher de l’Ancreur Windows terminé")
+    ![Capture d’écran de la boîte de dialogue Attacher au processus dans Visual Studio. Le type de connexion est défini sur docker (conteneur Windows) et le processus de dotnet.exe est sélectionné.](../debugger/media/docker-attach-complete-windows.png "Menu attacher de l’Ancreur Windows terminé")
 
-5.  Choisissez le processus de conteneur correspondant dans la liste des processus disponibles, puis choisissez **attacher** pour démarrer le débogage de votre processus de conteneur C#.
+5. Choisissez le processus de conteneur correspondant dans la liste des processus disponibles, puis choisissez **attacher** pour démarrer le débogage de votre processus de conteneur C#.

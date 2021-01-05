@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386730"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833284"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -146,13 +146,13 @@ Pour plus d’informations sur l’utilisation des points d’arrêt, consultez 
 
 Quand votre code atteint un point d’arrêt et s’interrompt, la ligne de code marquée en jaune (l’instruction en cours) n’a pas encore été exécutée. À ce stade, vous souhaiterez peut-être exécuter l’instruction en cours, puis inspecter les valeurs modifiées. Vous pouvez utiliser plusieurs commandes d’analyse *pas à pas* pour exécuter le code dans le débogueur. Si le code marqué est un appel de méthode, vous pouvez effectuer un pas à pas détaillé en appuyant sur **F11**. Vous pouvez également *exécuter pas à pas* la ligne de code en appuyant sur **F10**. Pour plus d’informations sur les commandes supplémentaires et sur la façon de parcourir le code, consultez [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Inspection d’une valeur à l’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Capture d’écran de la fenêtre de Visual Studio code. Un point rouge dans la marge de gauche indique un point d’arrêt sur la ligne de code marquée en jaune.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
 Dans l’illustration précédente, vous pouvez avancer d’une instruction dans le débogueur en appuyant sur **F10** ou **F11** (comme il n’y a ici aucun appel de méthode, les deux commandes ont le même résultat).
 
 Quand le débogueur est suspendu, vous pouvez inspecter les variables et les piles des appels pour déterminer ce qui se passe. Les valeurs sont-elles comprises dans les plages attendues ? Les appels sont-ils effectués dans le bon ordre ?
 
-![Inspection d’une valeur à l’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Capture d’écran de la fenêtre de Visual Studio code. À la ligne de code marquée en jaune, une variable est sélectionnée et une liste déroulante affiche sa valeur actuelle et ses références.](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
 Placez le curseur sur une variable pour voir sa valeur actuelle et ses références. Si vous remarquez une valeur inattendue, vous avez probablement un bogue dans les lignes de code précédentes ou dans le code appelant. Pour plus d’informations sur le débogage, consultez [cet article](../debugger/debugger-feature-tour.md) sur l’utilisation du débogueur.
 

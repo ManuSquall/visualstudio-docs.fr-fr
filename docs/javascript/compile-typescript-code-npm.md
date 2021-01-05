@@ -1,6 +1,6 @@
 ---
 title: Compiler et générer du code de machine à écrire à l’aide de NPM
-description: Apprenez à compiler et à créer une machine à écrire dans Visual Studio.
+description: Découvrez comment ajouter la prise en charge de la méthode de machine à vos projets Visual Studio à l’aide du gestionnaire de package de nœud (NPM).
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: be7bc30f260a492fbc783a8e730b1e550fcb4671
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414371"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846796"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compiler le code de la machine à écrire (Node.js)
 
@@ -35,11 +35,11 @@ Le [package NPM de machine à écrire](https://www.npmjs.com/package/typescript)
 
    Dans Explorateur de solutions (volet droit), ouvrez le *package.js* dans la racine du projet. Les packages listés correspondent aux packages sous le nœud NPM dans Explorateur de solutions. Pour plus d’informations, consultez [gérer les packages NPM](../javascript/npm-package-management.md).
 
-   Pour un projet Node.js, vous pouvez installer le package NPM de machine à écrire à l’aide de la ligne de commande ou de l’IDE. Pour effectuer l’installation à l’aide de l’IDE, cliquez avec le bouton droit sur le nœud NPM dans Explorateur de solutions, choisissez **installer un nouveau package NPM** , recherchez la **machine à écrire** , puis installez le package.
+   Pour un projet Node.js, vous pouvez installer le package NPM de machine à écrire à l’aide de la ligne de commande ou de l’IDE. Pour effectuer l’installation à l’aide de l’IDE, cliquez avec le bouton droit sur le nœud NPM dans Explorateur de solutions, choisissez **installer un nouveau package NPM**, recherchez la **machine à écrire**, puis installez le package.
 
    Vérifiez l’option **NPM** dans la fenêtre **sortie** pour voir la progression de l’installation du package. Le package installé apparaît sous le nœud **NPM** dans Explorateur de solutions.
 
-1. Si votre projet n’est pas déjà inclus, ajoutez un fichier *. tsconfig* à la racine de votre projet. Pour ajouter le fichier, cliquez avec le bouton droit sur le nœud du projet et choisissez **ajouter > nouvel élément**. Choisissez le **fichier de configuration de la machine à écrire JSON** , puis cliquez sur **Ajouter**.
+1. Si votre projet n’est pas déjà inclus, ajoutez un fichier *. tsconfig* à la racine de votre projet. Pour ajouter le fichier, cliquez avec le bouton droit sur le nœud du projet et choisissez **ajouter > nouvel élément**. Choisissez le **fichier de configuration de la machine à écrire JSON**, puis cliquez sur **Ajouter**.
 
    Visual Studio ajoute le *tsconfig.jssur* le fichier à la racine du projet. Vous pouvez utiliser ce fichier pour [configurer les options](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) du compilateur de machine à écrire.
 
@@ -72,14 +72,14 @@ Le [package NPM de machine à écrire](https://www.npmjs.com/package/typescript)
 
 ## <a name="build-the-application"></a>Créer l’application
 
-1. Ajoutez des fichiers de machine à écrire ( *. TS* ) ou de jsx ( *. TSX* ) à votre projet, puis ajoutez le code de la machine à écrire. Pour obtenir un exemple simple de la méthode de machine à écrire, utilisez ce qui suit :
+1. Ajoutez des fichiers de machine à écrire (*. TS*) ou de jsx (*. TSX*) à votre projet, puis ajoutez le code de la machine à écrire. Pour obtenir un exemple simple de la méthode de machine à écrire, utilisez ce qui suit :
 
    ```typescript
    let message: string = 'Hello World';
    console.log(message);
    ```
 
-1. Dans *package.js* , ajoutez la prise en charge des commandes de génération et de nettoyage de Visual Studio à l’aide des scripts suivants.
+1. Dans *package.js*, ajoutez la prise en charge des commandes de génération et de nettoyage de Visual Studio à l’aide des scripts suivants.
 
    ```json
    "scripts": {
@@ -113,7 +113,7 @@ Le [package NPM de machine à écrire](https://www.npmjs.com/package/typescript)
 
    Les fichiers de mappage source sont requis pour le [débogage](../javascript/debug-nodejs.md).
 
-### <a name="run-the-application"></a>Exécution de l'application
+### <a name="run-the-application"></a>Exécuter l’application
 
 Pour obtenir des instructions sur l’exécution de l’application après sa compilation, consultez [créer votre première Node.js application](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application).
 

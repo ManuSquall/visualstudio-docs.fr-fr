@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579965"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833349"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -124,7 +124,7 @@ Peu après, Visual Studio ouvre votre fichier projet.
 
 1. Dans **l’Explorateur de solutions**, développez le dossier **Pages**, puis choisissez **About.cshtml**.
 
-   ![Choisir le fichier About.cshtml dans l’Explorateur de solutions](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Capture d’écran de Visual Studio Explorateur de solutions montrant les fichiers dans le projet HelloWorld. Le dossier pages est développé et about. cshtml est sélectionné.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Ce fichier correspond à la page nommée **About** de l’application web, qui exécute un navigateur web.
 
@@ -140,7 +140,7 @@ Peu après, Visual Studio ouvre votre fichier projet.
 
 1. Dans **l’Explorateur de solutions**, développez **About.cshtml**, puis choisissez **About.cshtml.cs**. (Ce fichier correspond également à la page **À propos de** d’un navigateur web.)
 
-   ![Choisir le fichier About.cshtml dans l’Explorateur de solutions](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Capture d’écran de Visual Studio Explorateur de solutions montrant les fichiers dans le projet HelloWorld. About. cshtml est développé et About.cshtml.cs est sélectionné.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    L’éditeur affiche le code C# comportant le texte de la zone « application description » de la page **À propos de**.
 

@@ -2,7 +2,7 @@
 title: En savoir plus sur les solutions et les projets
 description: Découvrez les projets et solutions Visual Studio, comment créer de nouveaux projets à partir d’un modèle et comment afficher & gérer des projets dans Explorateur de solutions.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/17/2020
+ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683912"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847030"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -49,6 +49,14 @@ Les fichiers projet sont basés sur le [schéma XML MSBuild](../msbuild/msbuild-
 > [!NOTE]
 > Vous n’êtes pas obligé d’utiliser des solutions ou des projets dans Visual Studio pour modifier, générer et déboguer du code. Vous pouvez simplement ouvrir le dossier qui contient vos fichiers de code source dans Visual Studio et commencer à les modifier. Pour plus d’informations, consultez [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
+### <a name="create-new-projects"></a>Créer de nouveaux projets
+
+Le moyen le plus simple de créer un nouveau projet consiste à utiliser un modèle de projet pour le type de projet souhaité. Un modèle de projet comprend un ensemble de base de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Utilisez **fichier**  >  **nouveau**  >  **projet** pour sélectionner un modèle de projet. Pour plus d’informations, consultez [créer un nouveau projet](create-new-project.md).
+
+Vous pouvez également créer un modèle de projet personnalisé que vous pouvez utiliser pour créer des projets à partir de. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
+
+Lorsque vous créez un projet, Visual Studio l’enregistre à son emplacement par défaut, *%UserProfile%\source\repos*. Pour modifier cet emplacement, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**. Pour plus d’informations, consultez [boîte de dialogue Options : projets et Solutions > emplacements](./reference/projects-solutions-locations-options.md).
+
 ## <a name="solutions"></a>Solutions
 
 Un projet est contenu dans une *solution*. Malgré son nom, une solution n’est pas une « réponse ». Il s’agit simplement d’un conteneur pour un ou plusieurs projets associés, ainsi que des informations de génération, des paramètres de la fenêtre Visual Studio et des fichiers divers qui ne sont pas associés à un projet spécifique.
@@ -57,7 +65,7 @@ Un projet est contenu dans une *solution*. Malgré son nom, une solution n’est
 
 Visual Studio utilise deux types de fichiers (*. sln* et *. suo*) pour stocker les paramètres des solutions :
 
-|Extension|Nom|Description|
+|Extension|Name|Description|
 |---------------|----------|-----------------|
 |.sln|Solution Visual Studio|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|
 |.suo|Options utilisateur de solution|Stocke les personnalisations et les paramètres au niveau de l’utilisateur, tels que les points d’arrêt.|
@@ -69,14 +77,6 @@ Visual Studio utilise deux types de fichiers (*. sln* et *. suo*) pour stocker l
 
 Un « dossier de solution » est un dossier virtuel qui se trouve uniquement dans **Explorateur de solutions**, où vous pouvez l’utiliser pour regrouper des projets dans une solution. Si vous souhaitez localiser un fichier solution sur un ordinateur, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**. Pour plus d’informations, consultez [boîte de dialogue Options : projets et Solutions > emplacements](./reference/projects-solutions-locations-options.md).
 
-## <a name="create-new-projects"></a>Créer de nouveaux projets
-
-Le moyen le plus simple de créer un nouveau projet consiste à utiliser un modèle de projet pour le type de projet souhaité. Un modèle de projet comprend un ensemble de base de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Utilisez **fichier**  >  **nouveau**  >  **projet** pour sélectionner un modèle de projet. Pour plus d’informations, consultez [créer un nouveau projet](create-new-project.md).
-
-Vous pouvez également créer un modèle de projet personnalisé que vous pouvez utiliser pour créer des projets à partir de. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
-
-Lorsque vous créez un projet, Visual Studio l’enregistre à son emplacement par défaut, *%UserProfile%\source\repos*. Pour modifier cet emplacement, accédez à **Outils**  >  **options**  >  **projets et solutions**  >  **emplacements**. Pour plus d’informations, consultez [boîte de dialogue Options : projets et Solutions > emplacements](./reference/projects-solutions-locations-options.md).
-
 > [!TIP]
 > Pour obtenir un exemple de projet et de solution créés à partir de zéro, ainsi que des instructions pas à pas et des exemples de code, consultez [Présentation des projets et des solutions](../get-started/tutorial-projects-solutions.md).
 
@@ -84,19 +84,34 @@ Lorsque vous créez un projet, Visual Studio l’enregistre à son emplacement p
 
 Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de solutions** pour afficher et gérer le projet et la solution, ainsi que leurs éléments associés. L’illustration suivante montre **Explorateur de solutions** avec une solution C# qui contient deux projets :
 
-![Capture d’écran d’Explorateur de solutions.](../ide/media/vs2015_solution_explorer.png)
+::: moniker range="vs-2017"
 
-De nombreuses commandes de menu sont disponibles dans le menu contextuel sur différents éléments de **l’Explorateur de solutions**. Ces commandes incluent la génération d’un projet, la gestion de packages NuGet, l’ajout d’une référence, l’affectation d’un nouveau nom de fichier et l’exécution de tests, entre autres. La barre d’outils en haut de **l’Explorateur de solutions** comprend des boutons pour basculer d’un affichage de solutions à un affichage de dossiers, afficher les fichiers cachés, réduire tous les nœuds et bien plus encore.
+![Capture d’écran de Explorateur de solutions avec deux projets.](../ide/media/vs2015_solution_explorer.png)
+
+La barre d’outils en haut de **l’Explorateur de solutions** comprend des boutons pour basculer d’un affichage de solutions à un affichage de dossiers, afficher les fichiers cachés, réduire tous les nœuds et bien plus encore.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+![Capture d’écran de Explorateur de solutions avec deux projets dans Visual Studio 2019.](../ide/media/solution-explorer.png)
+
+La barre d’outils en haut de **Explorateur de solutions** contient des boutons pour passer d’un affichage de solution à un affichage des dossiers, filtrer les modifications en attente, afficher tous les fichiers, réduire tous les nœuds, afficher les pages de [Propriétés](managing-project-and-solution-properties.md) , afficher un aperçu du code dans l' [éditeur de code](writing-code-in-the-code-and-text-editor.md), et bien plus encore.
+
+::: moniker-end
+
+De nombreuses commandes de menu sont disponibles dans le menu contextuel, accessible par un clic droit, sur les différents éléments de **Explorateur de solutions**. Ces commandes incluent la génération d’un projet, la gestion de packages NuGet, l’ajout d’une référence, l’affectation d’un nouveau nom de fichier et l’exécution de tests, entre autres.
 
 > [!TIP]
 > Si vous avez fermé Explorateur de solutions et que vous souhaitez l’ouvrir à nouveau, choisissez **fenêtre**  >  **Réinitialiser la disposition de fenêtre** dans la barre de menus.
 
 Pour les projets ASP.NET Core, vous pouvez personnaliser la façon dont les fichiers sont imbriqués dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions](file-nesting-solution-explorer.md).
 
-Pour afficher une liste de certaines des icônes qui apparaissent dans Explorateur de solutions, consultez [affichage de classes et icônes](class-view-and-object-browser-icons.md)de l’Explorateur d’objets.
-
 ## <a name="see-also"></a>Voir aussi
 
-- [IDE Visual Studio](../get-started/visual-studio-ide.md)
+- [Présentation des projets et solutions](../get-started/tutorial-projects-solutions.md)
+- [Gérer les propriétés des projets et des solutions](managing-project-and-solution-properties.md)
+- [Solutions filtrées dans Visual Studio](filtered-solutions.md)
 - [Porter, migrer et mettre à niveau des projets](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Ressources pour la résolution des erreurs de l’IDE Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [Projets et solutions (Visual Studio pour Mac)](/visualstudio/mac/projects-and-solutions)

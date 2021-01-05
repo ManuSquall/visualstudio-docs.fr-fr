@@ -1,5 +1,6 @@
 ---
 title: Conseils sur les performances | Microsoft Docs
+description: Découvrez comment utiliser le débogueur Visual Studio PerfTips et les Outils de diagnostic intégrées pour surveiller et analyser les performances de votre application pendant le débogage.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075468"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815826"
 ---
 # <a name="perftips"></a>Conseils sur les performances
 
@@ -33,7 +34,7 @@ Les points d’arrêt et les données de minutage associées sont enregistrés d
 
 L’illustration suivante montre la fenêtre de **outils de diagnostic** .
 
-![Outils&#45;Update 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Capture d’écran de la fenêtre de Outils de diagnostic dans le débogueur Visual Studio, montrant la chronologie des événements et les graphiques pour l’utilisation de la mémoire et de l’UC.](../profiling/media/diagnostictools-update1.png)
 
 - La chronologie **Événements d'arrêt** marque les points d'arrêt qui ont été atteints dans la session de débogage. Cliquez sur un événement pour le sélectionner dans la liste des détails **Débogueur** .
 

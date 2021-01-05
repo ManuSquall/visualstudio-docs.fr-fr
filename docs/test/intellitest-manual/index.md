@@ -11,16 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
-ms.translationtype: HT
+ms.openlocfilehash: 6853ef6040df943ac3050621a5b3a2528d599d9f
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329950"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756615"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Vue d’ensemble de Microsoft IntelliTest
 
 IntelliTest vous permet de trouver les bogues rapidement et de réduire les coûts de maintenance des tests. Grâce à une approche automatisée et transparente des tests, IntelliTest peut générer une suite de tests candidats pour votre code .NET. La génération des suites de tests peut aussi être guidée par des *propriétés de justesse* que vous spécifiez. IntelliTest fait même évoluer automatiquement la suite de tests au fil de l’évolution du code testé.
+
+> [!NOTE]
+> IntelliTest est disponible uniquement dans l’édition Enterprise. Il est pris en charge pour le code C# qui cible le .NET Framework. .NET Core et .NET Standard ne sont pas pris en charge actuellement.
 
 **Tests de caractérisation** IntelliTest vous permet de déterminer le comportement du code sous la forme d’une suite de tests unitaires traditionnels.
 Une suite de tests de ce type peut être utilisée comme une suite de régression, qui est le point de départ permettant de s’attaquer à la complexité associée à la refactorisation d’un code hérité ou mal connu.

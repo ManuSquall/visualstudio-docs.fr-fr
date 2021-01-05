@@ -1,6 +1,6 @@
 ---
 title: Compiler et générer du code de machine à écrire à l’aide de NuGet
-description: Apprenez à compiler et à créer une machine à écrire dans Visual Studio.
+description: Découvrez comment ajouter la prise en charge de la méthode de machine à vos projets Visual Studio à l’aide du package NuGet.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927924"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846830"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compiler le code de la machine à écrire (ASP.NET Core)
 
@@ -108,7 +108,7 @@ Pour obtenir un exemple d’utilisation de Gulp avec la tâche Runner pour gén�
 
 Si vous rencontrez des problèmes où Visual Studio utilise une version de Node.js ou un outil tiers différent de la version attendue, vous devrez peut-être définir le chemin d’accès de Visual Studio à utiliser. Choisissez **Outils**  >  **options**. Sous **projets et solutions**, choisissez **Web Package Management**  >  **Outils Web externes**.
 
-### <a name="run-the-application"></a>Exécution de l'application
+### <a name="run-the-application"></a>Exécuter l’application
 
 Pour obtenir des instructions sur l’exécution de l’application après sa compilation, consultez [créer votre première Node.js application](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 
@@ -163,7 +163,7 @@ Si vous utilisez le package NuGet pour la prise en charge de MSBuild pour un pro
 
 1. Cliquez avec le bouton droit sur le projet et choisissez **décharger le projet**.
 
-1. Cliquez avec le bouton droit sur le projet, puis choisissez **modifier \<*project file name*\> **.
+1. Cliquez avec le bouton droit sur le projet, puis choisissez **modifier \<*project file name*\>**.
 
    Le fichier projet s’ouvre.
 

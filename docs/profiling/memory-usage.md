@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074980"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815852"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
@@ -124,7 +124,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
 
  Pour afficher les instances d’un type sélectionné dans le volet supérieur, choisissez l’icône ![icône d’instance](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") .
 
- ![Vue Instances](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Capture d’écran de la vue instances dans l’outil utilisation de la mémoire de Visual Studio, montrant le volet instances et le volet chemins d’accès à la racine et objets référencés.](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  La vue **Instances** affiche les instances de l’objet sélectionné dans l’instantané dans le volet du haut. Les volets **Chemins d’accès à la racine** et **Objets référencés** affichent les objets qui référencent l’instance sélectionnée, ainsi que les types référencés par l’instance sélectionnée. Lorsque le débogueur est arrêté au point où l’instantané a été pris, vous pouvez pointer sur la cellule **valeur** pour afficher les valeurs de l’objet dans une info-bulle.
 
@@ -139,7 +139,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
 
      La vue **Instances** affiche chaque instance du type sélectionné. La sélection d’une instance affiche la pile des appels qui a entraîné la création de l’instance dans le volet **Pile des appels d’allocation** .
 
-     ![Vue Instances](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Capture d’écran de la vue instances dans l’outil utilisation de la mémoire de Visual Studio, montrant le volet instances et le volet pile des appels d’allocation.](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Choisissez **Affichage des piles** dans la liste **Mode Affichage** pour afficher la pile des allocations pour le type sélectionné.
 

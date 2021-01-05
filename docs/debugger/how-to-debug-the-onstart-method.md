@@ -1,5 +1,6 @@
 ---
 title: Déboguer la méthode OnStart | Microsoft Docs
+description: Découvrez comment déboguer la méthode OnStart d’un service Windows dans Visual Studio en lançant le débogueur à l’intérieur de la méthode.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 27cb5a870166e1d8909c80dc617ca16690bf6619
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852372"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761405"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Comment : déboguer la méthode OnStart
 Vous pouvez déboguer un service Windows en le démarrant et en attachant le débogueur au processus de service. Pour plus d’informations, consultez [Guide pratique pour déboguer les applications de service Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Toutefois, pour déboguer la méthode <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> d’un service Windows, vous devez lancer le débogueur à l’intérieur de la méthode.
@@ -42,13 +43,13 @@ Vous pouvez déboguer un service Windows en le démarrant et en attachant le dé
 
     Une boîte de dialogue similaire à celle ci-dessous doit s’afficher :
 
-    ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
+    ![Capture d’écran d’une boîte de dialogue du débogueur juste-à-temps Visual Studio qui affiche une exception de .NET Framework non gérée survenue dans WindowsService-Asis.exe.](../debugger/media/onstartdebug.png)
 
 3. Sélectionnez **Oui, déboguer \<service name> .**
 
 4. Dans la fenêtre du débogueur juste-à-temps, sélectionnez la version de Visual Studio à utiliser pour le débogage.
 
-    ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")
+    ![Capture d’écran d’une fenêtre du débogueur juste-à-temps Visual Studio avec’nouvelle instance de Microsoft Visual Studio 2015 'sélectionnée dans la liste des débogueurs possibles.](../debugger/media/justintimedebugger.png)
 
 5. Une nouvelle instance de Visual Studio démarre, mais son exécution s’arrête à la méthode `Debugger.Launch()` .
 

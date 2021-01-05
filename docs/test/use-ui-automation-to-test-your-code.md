@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330106"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833271"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Utiliser un test codé de l’interface utilisateur pour tester votre code
 
@@ -35,7 +35,7 @@ Le **Générateur de test codé de l’interface utilisateur** et l’éditeur s
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -217,7 +217,7 @@ Si le contrôle que vous voulez sélectionner perd le focus et disparaît quand 
 
 Parfois, quand vous ajoutez des contrôles et que vous vérifiez leurs propriétés, il peut être nécessaire d’utiliser le clavier. Par exemple, quand vous essayez d’enregistrer un test codé de l’interface utilisateur qui utilise un contrôle de menu contextuel, la liste des éléments de menu dans le contrôle perd le focus et disparaît quand vous tentez de sélectionner l’outil **Ajouter des assertions** dans le **Générateur de test codé de l’interface utilisateur**. Ainsi, dans l’illustration ci-dessous, le menu contextuel dans Internet Explorer perd le focus et disparaît si vous essayez de le sélectionner avec l’outil **Ajouter des assertions**.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![Capture d’écran montrant l’outil Ajouter des assertions dans le générateur de test codé de l’interface utilisateur chevauchant le menu contextuel dans Internet Explorer.](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Pour utiliser le clavier pour sélectionner un contrôle d'interface utilisateur, placez le pointeur de la souris sur le contrôle. Maintenez enfoncées la touche **Ctrl** et la touche **I** en même temps. Relâchez les touches. Le contrôle est enregistré par le **Générateur de test codé de l’interface utilisateur**.
 
@@ -229,7 +229,7 @@ Dans certaines circonstances, un contrôle spécifique utilisé dans un test cod
 
 Quand vous exécutez votre test codé de l’interface utilisateur, placez le pointeur de la souris sur le contrôle. Appuyez ensuite sur la **touche Ctrl** et maintenez-la enfoncée tout en appuyant sur les touches **MAJ** et **R** de votre clavier. Relâchez les touches. Un événement de pointage de la souris est enregistré par le **Générateur de test codé de l’interface utilisateur**.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png)
+![Capture d’écran de la barre de commandes du générateur de test codé de l’interface utilisateur avec l’icône de pause sélectionnée. Une fenêtre d’info-bulle affiche l’emplacement d’un événement de pointage de la souris.](../test/media/codedui_hover.png)
 
 Une fois que vous avez généré la méthode de test, du code semblable à celui de l’exemple ci-dessous est ajouté au fichier *UIMap.Designer.cs* :
 

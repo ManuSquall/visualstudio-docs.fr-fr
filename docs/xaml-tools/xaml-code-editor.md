@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329181"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833297"
 ---
 # <a name="xaml-code-editor"></a>Éditeur de code XAML
 
@@ -109,14 +109,14 @@ Voici comment procéder :
 
     ![L’option « Supprimer les using inutiles » de l’éditeur IDE dans le menu actions rapides](media/xaml-code-editor-remove-usings.png "Capture d’écran de l’option Supprimer les using inutiles de l’éditeur IDE du menu actions rapides")
 
-1. Indiquez si vous souhaitez corriger toutes les occurrences dans le **document**, le **projet**ou la **solution**.
+1. Indiquez si vous souhaitez corriger toutes les occurrences dans le **document**, le **projet** ou la **solution**.
 1. Affichez la boîte de dialogue **Aperçu** , puis choisissez **appliquer**.
 
 Vous pouvez également accéder à cette fonctionnalité à partir de la barre de menus. Pour ce faire, choisissez **modifier**  >  **IntelliSense**  >  **supprimer et trier les using**.
 
 Pour plus d’informations sur l’utilisation des paramètres, consultez la page trier les données [using](../ide/reference/sort-usings.md) . Pour plus d’informations sur IntelliSense, consultez la page [IntelliSense dans Visual Studio](../ide/using-intellisense.md) . Et, pour plus d’informations sur les façons courantes pour les développeurs d’utiliser des actions rapides, consultez la page [actions rapides communes](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>Suivi des modifications
+#### <a name="change-tracking"></a>Change tracking
 
 La couleur de la marge de gauche vous permet de conserver une trace des modifications effectuées dans un fichier. Voici comment les couleurs sont liées aux actions que vous effectuez :
 
@@ -136,7 +136,7 @@ Pour plus d’informations sur le suivi des modifications &mdash; afin d’inclu
 
 Lorsque vous modifiez votre code dans l’éditeur de code XAML, vous pouvez accéder à plusieurs fonctionnalités à l’aide du menu contextuel accessible par un clic droit. La plupart de ces fonctionnalités sont disponibles universellement dans l’IDE de Visual Studio, tandis que d’autres sont spécifiques à l’utilisation d’un éditeur de code et d’une fenêtre de conception.
 
-![Menu contextuel de l’éditeur de code XAML cliquez avec le bouton droit dans Visual Studio](media/xaml-code-editor-right-click-menu.png "Capture d’écran du menu contextuel de l’éditeur de code XAML cliquez avec le bouton droit dans Visual Studio 2019")
+![Capture d’écran du menu contextuel de l’éditeur de code XAML cliquez avec le bouton droit dans Visual Studio 2019.](media/xaml-code-editor-right-click-menu.png)
 
 Voici ce que fait chaque fonctionnalité et comment elle est utile :
 
@@ -163,7 +163,7 @@ La barre de défilement peut faire plus que faire défiler votre code. Vous pouv
 
 Dans la barre de défilement de l’éditeur de code, un bouton **partagé** se trouve en haut à droite. Lorsque vous le choisissez, vous pouvez ouvrir un autre volet de l’éditeur de code. Cela est utile parce qu’ils fonctionnent indépendamment les uns des autres, ce qui vous permet de les utiliser pour travailler sur du code à différents emplacements.
 
-![L’éditeur de code XAML, volet central uniquement, dans Visual Studio](media/code-editor-split-window-button.png "Capture d’écran de l’éditeur de code XAML, volet central uniquement, dans Visual Studio 2019")
+![Capture d’écran montrant le volet central de l’éditeur de code XAML dans Visual Studio 2019 avec le bouton partagé mis en surbrillance en haut à droite du volet.](media/code-editor-split-window-button.png)
 
 Pour plus d’informations sur la façon de fractionner une fenêtre de l’éditeur, consultez la page [gérer les fenêtres](../ide/how-to-manage-editor-windows.md) de l’éditeur.
 
@@ -230,7 +230,7 @@ Voici quelques exemples de la façon dont ils peuvent tirer parti de votre expé
 
   ![L’option Supprimer les espaces de noms inutiles de l’éditeur de code XAML de l’ampoule actions rapides](media/xaml-code-editor-dimmed-namespaces-preview.png "Capture d’écran de l’option Supprimer les espaces de noms inutiles de l’éditeur de code XAML qui s’affiche à l’aide de l’ampoule actions rapides")
 
-- **Renommez l’espace de noms**. Cette fonctionnalité, accessible à partir du menu contextuel de clic droit après avoir mis en surbrillance un espace de noms, facilite la modification de plusieurs instances d’un paramètre à la fois. Vous pouvez également accéder à cette fonctionnalité à l’aide de la barre de menus, **modifier**  >  **Refactoriser**le  >  **changement de nom**, ou en appuyant sur **CTRL** + **r**, puis à nouveau sur **CTRL** + **r** .
+- **Renommez l’espace de noms**. Cette fonctionnalité, accessible à partir du menu contextuel de clic droit après avoir mis en surbrillance un espace de noms, facilite la modification de plusieurs instances d’un paramètre à la fois. Vous pouvez également accéder à cette fonctionnalité à l’aide de la barre de menus, **modifier**  >  **Refactoriser** le  >  **changement de nom**, ou en appuyant sur **CTRL** + **r**, puis à nouveau sur **CTRL** + **r** .
 
   ![L’option renommer l’espace de noms de l’éditeur de code XAML dans le menu contextuel du clic droit](media/code-editor-rename-namespace.png "Capture d’écran de l’option renommer l’espace de noms de l’éditeur de code XAML qui apparaît en utilisant le menu contextuel de clic droit")
 
@@ -277,17 +277,17 @@ Vous pouvez utiliser la boîte de dialogue [options](../ide/reference/options-di
 
 Dans la boîte de dialogue [options](../ide/reference/options-text-editor-xaml-formatting.md) pour XAML, les trois premiers éléments suivants sont universels pour tous les langages de programmation pris en charge par l’IDE de Visual Studio. Consultez les informations liées dans le tableau suivant pour en savoir plus sur ces options et leur utilisation.
 
-|Nom  |En savoir plus  |
+|Name  |Plus d’informations  |
 |---------|---------|
 |Général  | [Boîte de dialogue Options : éditeur de texte > tous les langages](../ide/reference/options-text-editor-all-languages.md) |
 |Barres de défilement | [Options, Éditeur de texte, Tous les langages, Barres de défilement](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
-|Onglets  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
+|Tabulations  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
 
 ### <a name="xaml-specific-text-editor-options"></a>Options de l’éditeur de texte spécifique à XAML
 
 Le tableau suivant répertorie les paramètres de la boîte de dialogue [options](../ide/reference/options-text-editor-xaml-formatting.md) qui peuvent améliorer votre expérience de modification lorsque vous développez des applications basées sur XAML. Visitez les informations liées pour en savoir plus sur ces options et leur utilisation.
 
-|Nom  |En savoir plus  |
+|Name  |Plus d’informations  |
 |---------|---------|
 |Mise en forme | [Options, Éditeur de texte, XAML, Mise en forme](../ide/reference/options-text-editor-xaml-formatting.md) |
 |Divers |  [Options, Éditeur de texte, XAML, Divers](../ide/reference/options-text-editor-xaml-miscellaneous.md) |

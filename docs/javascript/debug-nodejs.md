@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 369fa3c080705f552aed25ecef6bd87a3db43a64
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285190"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815618"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -29,7 +29,7 @@ Vous pouvez déboguer un code JavaScript et TypeScript à l’aide de Visual Stu
 
 1. Une fois votre projet ouvert dans Visual Studio, ouvrez un fichier JavaScript côté serveur (par exemple *server.js*), puis cliquez dans la marge à gauche pour définir un point d’arrêt :
 
-    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Capture d’écran de la fenêtre Visual Studio code montrant du code JavaScript. Un point rouge dans la marge de gauche indique qu’un point d’arrêt est défini.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
@@ -78,7 +78,7 @@ Pour ce scénario, utilisez Chrome.
 2. Démarrez votre navigateur avec le débogage activé.
 
     ::: moniker range=">=vs-2019"
-    À compter de Visual Studio 2019, vous pouvez définir l' `--remote-debugging-port=9222` indicateur au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter**et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
+    À compter de Visual Studio 2019, vous pouvez définir l' `--remote-debugging-port=9222` indicateur au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter** et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Configurer votre navigateur pour qu’il s’ouvre avec le débogage activé](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -107,13 +107,13 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
 
 1. Basculez vers Visual Studio, puis définissez un point d’arrêt dans votre code source, qui peut être un fichier JavaScript, un fichier de base de code ou un fichier JSX. (Définissez le point d’arrêt dans une ligne de code qui autorise les points d’arrêt, par exemple une instruction return ou une déclaration var.)
 
-    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Capture d’écran de la fenêtre de Visual Studio code. Une instruction return est sélectionnée et un point rouge dans la marge de gauche indique qu’un point d’arrêt est défini.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Pour rechercher le code spécifique dans un fichier compilé, utilisez **CTRL** + **F** (**modifier**  >  **Rechercher et remplacer**la  >  **recherche rapide**).
+    Pour rechercher le code spécifique dans un fichier compilé, utilisez **CTRL** + **F** (**modifier**  >  **Rechercher et remplacer** la  >  **recherche rapide**).
 
-    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code, le fichier *. vue*ou jsx requiert généralement l’utilisation de [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
+    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code, le fichier *. vue* ou jsx requiert généralement l’utilisation de [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
 
-2. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **CTRL** + **F5** (**Déboguer**exécuter  >  **sans débogage**) pour exécuter l’application dans le navigateur.
+2. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **CTRL** + **F5** (**Déboguer** exécuter  >  **sans débogage**) pour exécuter l’application dans le navigateur.
 
     ::: moniker range=">=vs-2019"
     Si vous avez créé une configuration de navigateur avec un nom convivial, choisissez-la comme cible de débogage.
@@ -197,7 +197,7 @@ Pour activer le débogage à l’aide de Visual Studio, vous devez vous assurer 
   },
 ```
 
-par ce code :
+par ce code :
 
 ```javascript
   output: {
@@ -261,7 +261,7 @@ Visual Studio offre des fonctionnalités de débogage dans Chrome et Internet Ex
 
 Toutefois, vous ne pouvez pas atteindre automatiquement des points d’arrêt sur des fichiers générés avec syntaxe Razor (cshtml, vbhtml). Il existe deux approches permettant de déboguer ce type de fichier :
 
-* **Placez l' `debugger;` instruction dans laquelle vous souhaitez**arrêter : le script dynamique arrête alors l’exécution et démarre immédiatement le débogage pendant sa création.
+* **Placez l' `debugger;` instruction dans laquelle vous souhaitez** arrêter : le script dynamique arrête alors l’exécution et démarre immédiatement le débogage pendant sa création.
 * **Charger la page et ouvrir le document dynamique sur Visual Studio**: vous devez ouvrir le fichier dynamique pendant le débogage, définir votre point d’arrêt et actualiser la page pour que cette méthode fonctionne. Selon que vous utilisez Chrome ou Internet Explorer, vous trouverez le fichier en utilisant l’une des stratégies suivantes :
 
    Pour Chrome, accédez à l’**Explorateur de solutions > Script Documents (Documents de script) > YourPageName (Nom de votre page)**.

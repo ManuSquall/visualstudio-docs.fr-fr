@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441246"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833232"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 
@@ -62,7 +62,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 4. Utilisez la liste déroulante **Framework cible (toutes les configurations)** pour remplacer le framework cible par **.NET Framework 3.5** ou une version ultérieure, comme indiqué dans la légende B de l’illustration suivante. Ne spécifiez pas de version client.
 
-     ![Liste déroulante du framework cible](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Capture d’écran de la boîte de dialogue Paramètres avancés du compilateur. La liste déroulante Framework cible est mise en surbrillance et la valeur est définie sur « .NET Frameowrk 3,5 ».](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Reciblage pour les projets de test unitaire C#
 
@@ -74,7 +74,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 3. Sous l’onglet **Application**, choisissez **Framework cible**. Dans la liste déroulante, choisissez **.NET Framework 3.5** ou une version ultérieure, comme indiqué dans l’illustration suivante. Ne spécifiez pas de version client.
 
-   ![Liste déroulante du framework cible](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Illustration de l’onglet application dans le volet Propriétés de Explorateur de solutions qui met en surbrillance l’emplacement de la liste déroulante de la version cible du .NET Framework.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Reciblage pour les projets de test unitaire C++/CLI
 

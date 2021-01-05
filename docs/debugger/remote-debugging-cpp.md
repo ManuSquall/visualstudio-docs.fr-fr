@@ -1,5 +1,6 @@
 ---
 title: Déboguer à distance un projet C++ | Microsoft Docs
+description: Découvrez comment déboguer une application Visual Studio C++ à partir d’un ordinateur distant en suivant ces instructions pas à pas.
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298739"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815800"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Débogage à distance d’un projet C++ dans Visual Studio
 Pour déboguer une application Visual Studio sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous allez déployer votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis déployez et exécutez votre application.
@@ -63,7 +64,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 
 4. Définissez **Débogueur à lancer** sur **Débogueur Windows distant**.
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Capture d’écran de l’onglet débogage dans les propriétés de Explorateur de solutions Visual Studio. La propriété débogueur à lancer est définie sur débogueur Windows distant.](../debugger/media/remotedebuggingcplus.png)
 
 5. Appliquez les modifications suivantes aux propriétés :
 
@@ -83,7 +84,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 
 7. Pour la configuration **Debug**, cochez la case **Déployer**.
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Capture d’écran de l’Configuration Manager dans le Explorateur de solutions Visual Studio. La configuration Debug est sélectionnée et le déploiement est activé.](../debugger/media/remotedebugcplusdeploy.png)
 
 8. Démarrez le débogage (**Déboguer > Démarrer le débogage** ou appuyez sur **F5**).
 
@@ -109,7 +110,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
-- [Configurer le Pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Affectations de port du débogueur distant](../debugger/remote-debugger-port-assignments.md)
 - [Débogage distant ASP.NET sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)

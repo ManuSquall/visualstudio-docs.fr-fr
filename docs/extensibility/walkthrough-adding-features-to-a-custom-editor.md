@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : ajout de fonctionnalités à un éditeur personnalisé | Microsoft Docs'
+description: Découvrez comment ajouter d’autres fonctionnalités à un éditeur personnalisé après avoir créé l’éditeur à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414020"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863199"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procédure pas à pas : ajouter des fonctionnalités à un éditeur personnalisé
 Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autres fonctionnalités.
@@ -69,7 +71,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
 
     2. Appelez `QueryService` sur le <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> service pour obtenir un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Permet aux utilisateurs de glisser-déplacer des éléments entre l’éditeur et la **boîte à outils** , ou entre des éditeurs externes (tels que Microsoft Word) et la **boîte à outils**. Effectuez les étapes suivantes :
+9. Permet aux utilisateurs de glisser-déplacer des éléments entre l’éditeur et la **boîte à outils**, ou entre des éditeurs externes (tels que Microsoft Word) et la **boîte à outils**. Effectuez les étapes suivantes :
 
     1. Implémentez `IDropTarget` sur votre éditeur pour alerter l’IDE que votre éditeur est une cible de déplacement.
 
@@ -138,7 +140,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
   > [!NOTE]
   > L' `IOleInPlaceComponent` interface est utilisée pour éviter la fusion de menus OLE 2.
 
-   Votre `IOleCommandTarget` implémentation gère les commandes telles que **couper** , **copier** et **coller**. Lors `IOleCommandTarget` de l’implémentation de, décidez si votre éditeur requiert son propre fichier *. vsct* pour définir sa propre structure de menu de commandes ou s’il peut implémenter des commandes standard définies par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . En règle générale, les éditeurs utilisent et étendent les menus de l’IDE et définissent leurs propres barres d’outils. Toutefois, il est souvent nécessaire pour un éditeur de définir ses propres commandes spécifiques en plus de l’utilisation du jeu de commandes standard de l’IDE. Votre éditeur doit déclarer les commandes standard qu’il utilise, puis définir les nouvelles commandes, les menus contextuels, les menus de niveau supérieur et les barres d’outils dans un fichier *. vsct* . Si vous créez un éditeur d’activation sur place, implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> et définissez les menus et les barres d’outils de l’éditeur dans un fichier *. vsct* au lieu d’utiliser la fusion de menus OLE 2.
+   Votre `IOleCommandTarget` implémentation gère les commandes telles que **couper**, **copier** et **coller**. Lors `IOleCommandTarget` de l’implémentation de, décidez si votre éditeur requiert son propre fichier *. vsct* pour définir sa propre structure de menu de commandes ou s’il peut implémenter des commandes standard définies par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . En règle générale, les éditeurs utilisent et étendent les menus de l’IDE et définissent leurs propres barres d’outils. Toutefois, il est souvent nécessaire pour un éditeur de définir ses propres commandes spécifiques en plus de l’utilisation du jeu de commandes standard de l’IDE. Votre éditeur doit déclarer les commandes standard qu’il utilise, puis définir les nouvelles commandes, les menus contextuels, les menus de niveau supérieur et les barres d’outils dans un fichier *. vsct* . Si vous créez un éditeur d’activation sur place, implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> et définissez les menus et les barres d’outils de l’éditeur dans un fichier *. vsct* au lieu d’utiliser la fusion de menus OLE 2.
 
 - Pour empêcher la foule de commandes de menu dans l’interface utilisateur, vous devez utiliser les commandes existantes dans l’IDE avant d’inventer de nouvelles commandes. Les commandes partagées sont définies dans *SharedCmdDef. vsct* et *ShellCmdDef. vsct*. Ces fichiers sont installés par défaut dans le sous-répertoire VisualStudioIntegration\Common\Inc de votre [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installation.
 
