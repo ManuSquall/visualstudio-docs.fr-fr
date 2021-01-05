@@ -1,5 +1,7 @@
 ---
 title: CompilandDetails | Microsoft Docs
+description: Recherchez des informations de référence sur le type de symbole CompilandDetails (SymTagCompilandDetails) dans le kit de développement logiciel (SDK) debug interface Access de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da102a8968bc3e29091f6b4b58ee6ef78c6c3fb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04687eb58ecee2211f098c0f432afc28e0465305
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462252"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728780"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Les informations de compiland sont réparties entre les symboles à l’aide d’une `SymTagCompiland` balise (faible détail) et d’une `SymTagCompilandDetails` balise (très détaillée). `SymTagCompilandDetails` fournit une multitude d’informations sur le module (compiland) qui n’est pas disponible avec un `SymTagCompiland` symbole.
@@ -50,7 +52,7 @@ Les informations de compiland sont réparties entre les symboles à l’aide d�
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index du symbole.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagCompilandDetails` (l’une des valeurs d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les compilateurs sont souvent sous une forme connue sous le nom de compilateur à deux passements. dans certaines versions du compilateur, chaque passe est gérée par un programme distinct. Il s’agit, respectivement, de compilateurs frontaux et principaux, des propriétés de symbole pour les numéros de version back-end et frontaux.
 
 ## <a name="see-also"></a>Voir aussi

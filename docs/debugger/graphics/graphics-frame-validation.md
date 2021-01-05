@@ -1,5 +1,7 @@
 ---
 title: Validation des frames graphiques | Microsoft Docs
+description: En savoir plus sur l’outil de validation de frame pour les graphiques dans Visual Studio. Cet outil affiche les erreurs et les avertissements associés à la liste des événements.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe9b1ed3acbe588b342ba6550bc45558a2070d2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735496"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727643"
 ---
 # <a name="graphics-frame-validation"></a>Validation des frames graphiques
 <!-- VERSIONLESS -->
@@ -28,7 +30,7 @@ Cliquez sur le bouton **exécuter la validation** dans le coin supérieur gauche
 | **Colonne** | **Description** |
 |------------| - |
 | ID d'événement | ID qui correspond à une entrée dans la fenêtre [liste des événements](graphics-event-list.md) . |
-| severity | Endommagement, erreur, avertissement, information ou message. |
+| Gravité | Endommagement, erreur, avertissement, information ou message. |
 | Category | Application définie, divers, initialisation, nettoyage, compilation, création d’État, paramètre d’État, obtention d’État, exécution, manipulation de ressources, nuanceur, redondant et inutilisé. |
 | Message | Message associé à l'événement. |
 | Événement | Événement associé à l’erreur ou à l’avertissement. |

@@ -1,5 +1,7 @@
 ---
 title: Débogage d’applications Web | Microsoft Docs
+description: Trouvez des liens pour vous aider à déboguer différents types d’applications Web, telles que les applications ASP.NET, les applications JavaScript et de machine à écrire ou les applications de script AJAX.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600125"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728133"
 ---
 # <a name="debugging-web-applications"></a>Débogage d'applications Web
 

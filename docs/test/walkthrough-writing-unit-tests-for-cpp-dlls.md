@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598404"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727539"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Guide pratique pour écrire des tests unitaires pour des DLL C++
 
@@ -40,7 +40,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-     **Visual Studio 2017 et versions antérieures**: développez modèles **installés**  >  **Templates**  >  **Visual C++**  >  **test**.
+     **Visual Studio 2017 et versions antérieures**: développez modèles **installés**  >    >  **Visual C++**  >  **test**.
      **Visual Studio 2019**: définissez **Language** sur C++ et tapez « test » dans la zone de recherche.
 
      Choisissez le modèle **Projet de test unitaire natif** ou un autre framework installé de votre choix. Si vous choisissez un autre modèle, comme Google Test ou Boost.Test, les principes de base sont les mêmes, bien que certains détails diffèrent.
@@ -328,7 +328,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+> Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec la ![ capture d’écran du bouton d’activation de l’exécution des tests parallèles dans la barre d’outils de l’Explorateur de tests. Lorsque ce bouton est sélectionné, les tests s’exécutent en parallèle.](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
 ::: moniker-end
 

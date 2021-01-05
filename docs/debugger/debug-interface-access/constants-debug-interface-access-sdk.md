@@ -1,5 +1,7 @@
 ---
 title: Constantes (kit de développement logiciel de debug interface Access) | Microsoft Docs
+description: Consultez une liste de constantes de chaîne qui peuvent être utilisées pour identifier les différentes sections d’un fichier de base de données de débogage de programme (PDB) via le kit de développement logiciel (SDK) debug interface Access (DIA).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa6037253141df1111ef3bc57fac9c718d826dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 806eb9207fa60b7147d1e0d7df75871b23f8850d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462238"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728753"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Kit de développement logiciel Debug Interface Access)
 Ces constantes de chaîne peuvent être utilisées pour identifier les différentes sections d’un fichier de base de données de débogage de programme (PDB) via le kit de développement DIA (SDK).

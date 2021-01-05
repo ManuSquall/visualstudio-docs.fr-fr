@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 62c2b69edf6868d1559df2a861a85e286f8ffa15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878915"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729208"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Résoudre les problèmes de l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.
@@ -60,7 +60,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - [L’émulateur ne répond pas aux gestes multipoint](#Multitouch)
 
-- [Ressources de support technique](#Support)
+- [Ressources de support](#Support)
 
 ## <a name="before-you-start"></a><a name="BeforeYouStart"></a> Avant de commencer
  Avant de commencer le dépannage, il peut être utile de consulter les rubriques suivantes :
@@ -70,7 +70,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> L’installation de l’émulateur échoue
  Si vous n’avez pas installé Hyper-V, le message suivant s’affiche quand vous essayez d’installer l’émulateur. Effectuez l’installation sur une machine qui prend en charge Hyper-V et sur laquelle Hyper-V est activé.
 
- ![Android&#95;UME&#95;installer&#95;problème](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Capture d’écran d’un message Visual Studio indiquant que le programme d’installation est bloqué pour Émulateur Microsoft Visual Studio pour Android, car l’ordinateur n’suppert pas Hyper-V.](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Ce message concerne à la fois l’émulateur Visual Studio pour Android et l’émulateur Windows Phone. Windows 8.1 et Windows 10 prennent en charge l’émulateur.
@@ -135,7 +135,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - Dans le Gestionnaire Hyper-V, ouvrez le Gestionnaire de commutateur virtuel et vérifiez que vous disposez de deux commutateurs réseau. Vérifiez aussi que le premier correspond au commutateur interne et le second au commutateur externe.
 
-     ![Commutateur Android&#95;EMU&#95;V&#95;&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Capture d’écran du gestionnaire de commutateur virtuel dans le Gestionnaire Hyper-V. Un nouveau commutateur virtuel est mis en surbrillance et ses propriétés indiquent qu’il s’agit d’un commutateur réseau externe.](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
      Si le programme d’installation ne fonctionne pas correctement sur Windows 10, essayez de [réinstaller les périphériques réseau à l’aide de la commande netcfg -d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (section 6).
 
@@ -182,7 +182,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   6. Vérifiez que vous exécutez Windows 8 Professionnel ou mieux (Windows Server 2008 n'est pas pris en charge). Windows Server 2012 est pris en charge, mais vous devez activer la fonctionnalité Expérience utilisateur.
 
-     Vous pouvez inspecter l'Observateur d'événements pour voir s'il existe des erreurs liées à l'hyperviseur. Pour ce faire, ouvrez observateur d’événements (**clé de démarrage** + **R**, puis tapez), puis `eventvwr` sélectionnez **journaux Windows**, **système**. Ensuite, filtrez le journal par source d'événements, en définissant **Hyperviseur Hyper-V**comme source. Recherchez les erreurs pour aider à identifier la cause initiale.
+     Vous pouvez inspecter l'Observateur d'événements pour voir s'il existe des erreurs liées à l'hyperviseur. Pour ce faire, ouvrez observateur d’événements (**clé de démarrage** + **R**, puis tapez), puis `eventvwr` sélectionnez **journaux Windows**, **système**. Ensuite, filtrez le journal par source d'événements, en définissant **Hyperviseur Hyper-V** comme source. Recherchez les erreurs pour aider à identifier la cause initiale.
 
      Si votre processeur satisfait à la configuration requise mais que l'hyperviseur échoue encore, vérifiez si une mise à niveau du BIOS est disponible pour votre ordinateur. Si c'est le cas et que vous choisissez de mettre à niveau, veillez à respecter toutes les précautions du fabricant lors de la mise à niveau du BIOS (par exemple, assurez-vous que la mise à niveau du microprogramme BIOS n'est pas interrompue par une panne de courant, ce qui peut altérer définitivement le BIOS).
 
@@ -242,7 +242,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
      Après avoir désinstallé des produits tiers, vous devrez peut-être restaurer le commutateur interne de l'émulateur Windows Phone. Pour ce faire :
 
-  - Ouvrez Hyper V et accédez au Gestionnaire de commutateur virtuel. Créez un commutateur virtuel nommé « Commutateur interne de l'émulateur Windows Phone » et sélectionnez **Réseau interne**comme type de connexion.
+  - Ouvrez Hyper V et accédez au Gestionnaire de commutateur virtuel. Créez un commutateur virtuel nommé « Commutateur interne de l'émulateur Windows Phone » et sélectionnez **Réseau interne** comme type de connexion.
 
      ![Gestionnaire de commutateur virtuel](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
 

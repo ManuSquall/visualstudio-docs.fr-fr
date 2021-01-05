@@ -1,5 +1,7 @@
 ---
 title: Prise en charge de plusieurs vues de documents | Microsoft Docs
+description: Apprenez à fournir plusieurs vues d’un document en utilisant des données de document et des objets de vue de document distincts pour votre éditeur personnalisé dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699537"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716092"
 ---
 # <a name="supporting-multiple-document-views"></a>Prise en charge de vues de document multiples
 Vous pouvez fournir plusieurs vues d’un document en créant des données de document et des objets de vue de document distincts pour votre éditeur. Voici quelques cas dans lesquels une vue de document supplémentaire serait utile :

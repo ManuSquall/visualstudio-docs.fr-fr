@@ -1,5 +1,7 @@
 ---
 title: Coloration de la syntaxe dans les éditeurs personnalisés | Microsoft Docs
+description: Découvrez les couleurs de syntaxe dans les éditeurs personnalisés du kit de développement logiciel (SDK) de l’environnement Visual Studio, qui affichent les couleurs spécifiées pour un affichage de document donné.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72749d3a58b4adae149baefff9e9ae77f6b05f18
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 8aac72cbc26ff5e6abf96259fd161cba63b3b2af
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414176"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716066"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Couleurs de syntaxe dans les éditeurs personnalisés
 Éditeurs du kit de développement logiciel (SDK) de l’environnement Visual Studio, y compris l’éditeur de base, utilisent les services de langage pour identifier des éléments syntaxiques spécifiques et les afficher avec les couleurs spécifiées pour un affichage de document donné.

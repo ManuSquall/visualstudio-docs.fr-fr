@@ -1,5 +1,7 @@
 ---
 title: Assertions dans du code managé | Microsoft Docs
+description: 'En savoir plus sur les assertions en tant qu’outil de débogage pour C#, Visual Basic ou le code managé F # dans Visual Studio.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 824c711fc0ebb26a78338a65808c6fdbed768919
-ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
+ms.openlocfilehash: 2d546beb45be7f1473992ab9c2afc5f02ced1a1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646396"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729091"
 ---
 # <a name="assertions-in-managed-code"></a>Assertions dans du code managé
 Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez en tant qu'argument à l'instruction `Assert`. Si la condition a la valeur true, aucune action ne se produit. Si la condition a la valeur false, l'assertion échoue. S'il est exécuté avec une version Debug, votre programme passe en mode arrêt.

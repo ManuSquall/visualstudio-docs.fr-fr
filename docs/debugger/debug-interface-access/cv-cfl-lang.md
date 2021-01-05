@@ -1,5 +1,7 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
+description: Obtenir des informations sur le type d’énumération CV_CFL_LANG, qui spécifie le langage de code de l’application ou du module lié dans le kit de développement logiciel (SDK) debug interface Access.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8910ebe012e1edbaa6c26695027214db4e66c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07fff0b927fcc271c7671ab98683571adfa9830f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462133"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728588"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 Spécifie la langue du code source de l’application ou du module lié.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```C++
 typedef enum CV_CFL_LANG {
@@ -81,7 +83,7 @@ CV_CFL_MSIL langage de l’application est un langage MSIL (Microsoft Intermedia
 
 CV_CFL_HLSL langage de l’application est le langage de nuanceur de haut niveau.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .
 
 ## <a name="requirements"></a>Configuration requise

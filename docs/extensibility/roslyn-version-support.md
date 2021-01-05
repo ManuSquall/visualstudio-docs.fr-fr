@@ -1,5 +1,7 @@
 ---
 title: Mappages de version de package Roslyn pris en charge
+description: Cet article présente les versions de package Roslyn (.NET Compiler Platform) prises en charge pour les différentes versions de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd268dadd03ee5d648075ccea1763e949719c90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701324"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715741"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Référence de la version du package .NET Compiler Platform
 

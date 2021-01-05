@@ -1,5 +1,7 @@
 ---
 title: Raccordements d'allocation et allocations de la mémoire runtime C
+description: Comprendre les raccordements d’allocation et les allocations de mémoire Runtime C dans le débogage Visual Studio. Les fonctions de raccordement d’allocation doivent ignorer de façon explicite les blocs _CRT_BLOCK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851617"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729169"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Raccordements d'allocation et allocations de la mémoire runtime C
 Une restriction très importante sur les fonctions de raccordement d’allocation est qu’elles doivent ignorer les blocs de manière explicite `_CRT_BLOCK` . Ces blocs sont les allocations de mémoire effectuées en interne par les fonctions de la bibliothèque Runtime C s’ils effectuent des appels à des fonctions de la bibliothèque Runtime C qui allouent de la mémoire interne. Vous pouvez ignorer `_CRT_BLOCK` les blocs en incluant le code suivant au début de votre fonction de raccordement d’allocation :
@@ -40,4 +42,4 @@ Si votre raccordement d’allocation n’ignore pas les `_CRT_BLOCK` blocs, tout
 Si vous examinez les fichiers sources de la bibliothèque Runtime, vous verrez que la fonction de raccordement d’allocation par défaut, à savoir **CrtDefaultAllocHook** (qui renvoie simplement **TRUE**), se trouve dans un fichier distinct, à savoir DBGHOOK.C. Si vous voulez que votre raccordement d’allocation soit appelé même pour les allocations effectuées par le code de démarrage runtime exécuté avant la fonction **main** de votre application, vous pouvez remplacer cette fonction par défaut par une fonction à vous, plutôt que d’utiliser [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
 ## <a name="see-also"></a>Voir aussi
-- [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)
+- [Écriture de la fonction de raccordement de débogage](../debugger/debug-hook-function-writing.md)

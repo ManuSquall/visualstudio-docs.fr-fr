@@ -1,6 +1,7 @@
 ---
 title: Préparer le débogage des projets de console | Microsoft Docs
-ms.custom: seodec18
+description: 'Obtenir des informations sur la préparation du débogage des projets de console (C#, C++, Visual Basic, F #) dans Visual Studio.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916271"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728263"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Préparation du débogage : projets console (C#, C++, Visual Basic, F #)
 
@@ -41,7 +42,7 @@ La préparation du débogage d’un projet de console est semblable à la prépa
 
 Vous pouvez être amené à spécifier des arguments de ligne de commande pour votre application console. Pour plus d’informations, consultez [paramètres de projet pour une configuration de débogage C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)ou [paramètres de projet pour les configurations de débogage C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Comme toutes les propriétés de projet, ces arguments persistent entre les sessions de débogage et celles de Visual Studio. Par conséquent, si vous avez débogué précédemment l’application console, n’oubliez pas qu’il existe peut-être des arguments provenant des sessions précédentes dans la boîte de dialogue ** \<Project> pages de propriétés** .
+Comme toutes les propriétés de projet, ces arguments persistent entre les sessions de débogage et celles de Visual Studio. Par conséquent, si vous avez débogué précédemment l’application console, n’oubliez pas qu’il existe peut-être des arguments provenant des sessions précédentes dans la boîte de dialogue **\<Project> pages de propriétés** .
 
 ## <a name="start-the-application"></a>Lancer l’application
 
@@ -49,7 +50,7 @@ Comme toutes les propriétés de projet, ces arguments persistent entre les sess
 
 - Définissez un point d’arrêt dans votre code et démarrez votre application.
 
-- Démarrez votre application en utilisant **F10** (**Déboguer**  >  **pas à pas principal**) ou **F11** (pas à**Debug**  >  **pas détaillé dans**), puis parcourez le code à l’aide d’autres options, telles que **Exécuter jusqu’au clic**.
+- Démarrez votre application en utilisant **F10** (**Déboguer**  >  **pas à pas principal**) ou **F11** (pas à  >  **pas détaillé dans**), puis parcourez le code à l’aide d’autres options, telles que **Exécuter jusqu’au clic**.
 
 - Dans l’éditeur de code, cliquez avec le bouton droit sur une ligne et sélectionnez **Exécuter jusqu’au curseur**.
 
@@ -62,5 +63,5 @@ Comme toutes les propriétés de projet, ces arguments persistent entre les sess
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
 - [Préparer le débogage de projets C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Sécurité du débogueur](../debugger/debugger-security.md)

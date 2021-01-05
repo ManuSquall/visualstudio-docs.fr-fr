@@ -1,5 +1,7 @@
 ---
 title: Compiland | Microsoft Docs
+description: Recherchez des informations de référence sur le type de symbole compiland (SymTagCompiland) dans le kit de développement logiciel (SDK) de Visual Studio Debug interface Access.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6a9460415112f9d86af6d5cf8766ad7d55f97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 537b915269a6b7bcf345caf2545d38ca21337ecf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462259"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728787"
 ---
 # <a name="compiland"></a>Compiland
 Il y a un `SymTagCompiland` symbole pour chaque compiland lié au fichier. exe. Les informations de compiland sont réparties entre les symboles avec une `SymTagCompiland` balise, qui peuvent être récupérées sans charger des symboles compiland supplémentaires, et les symboles avec une `SymTagCompilandDetails` balise, qui peuvent nécessiter le chargement de symboles supplémentaires.

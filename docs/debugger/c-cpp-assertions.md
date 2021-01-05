@@ -1,5 +1,7 @@
 ---
 title: Assertions C/C++ | Microsoft Docs
+description: En savoir plus sur le fonctionnement des assertions C/C++ dans le débogage de Visual Studio. Une assertion spécifie une condition qui devrait être vraie à un point de votre programme.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600218"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729065"
 ---
 # <a name="cc-assertions"></a>Assertions C/C++
 Une instruction d’assertion spécifie une condition qui devrait être vraie à un point de votre programme. Si cette condition n’est pas remplie, l’assertion échoue, l’exécution de votre programme est interrompue et la [boîte de dialogue échec](../debugger/assertion-failed-dialog-box.md) de l’assertion s’affiche.

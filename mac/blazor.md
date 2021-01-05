@@ -10,20 +10,20 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584033"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729416"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Créer des Blazor applications Web
 
 Ce guide propose une introduction à la création de votre première Blazor application Web. Pour obtenir des conseils détaillés, consultez [Introduction à ASP.net Core Blazor ](/aspnet/core/blazor/index).
 
-ASP.NET Core Blazor prend en charge deux options d’hébergement différentes : Blazor WebAssembly (WASM) ou Blazor Server. Visual Studio pour Mac prend en charge les deux modèles d’hébergement. Visual Studio pour Mac 8.4 + prend en charge Blazor Server et Visual Studio pour Mac 8.6 + prend en charge les deux. Pour plus d’informations sur les Blazor modèles d’hébergement, consultez [ASP.net Core les modèles d' Blazor hébergement ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). La prise en charge du débogage des Blazor WebAssembly projets dans Visual Studio pour Mac est disponible dans la version préliminaire de v 8.8 (disponible via le canal de mise à jour en préversion dans **Visual Studio > Rechercher des mises à jour...** ).
+ASP.NET Core Blazor prend en charge deux options d’hébergement différentes : Blazor WebAssembly (WASM) ou Blazor Server. Visual Studio pour Mac prend en charge les deux modèles d’hébergement. Visual Studio pour Mac 8.4 + prend en charge Blazor Server et Visual Studio pour Mac 8.6 + prend en charge les deux. Pour plus d’informations sur les Blazor modèles d’hébergement, consultez [ASP.net Core les modèles d' Blazor hébergement ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1&preserve-view=true). La prise en charge du débogage des Blazor WebAssembly projets dans Visual Studio pour Mac est disponible dans la version préliminaire de v 8.8 (disponible via le canal de mise à jour en préversion dans **Visual Studio > Rechercher des mises à jour...** ).
 
-Qu’est-ce que c’est Blazor ? Blazor est une infrastructure permettant de créer une interface utilisateur Web interactive côté client avec .NET, qui offre les avantages suivants aux développeurs Web :
+Qu’est-ce que Blazor ? Blazor est une infrastructure permettant de créer une interface utilisateur Web interactive côté client avec .NET, qui offre les avantages suivants aux développeurs Web :
 
 * Écriture de code dans C# plutôt que dans JavaScript.
 * Tirez parti de l’écosystème .NET existant des bibliothèques .NET.
@@ -37,7 +37,7 @@ Qu’est-ce que c’est Blazor ? Blazor est une infrastructure permettant de cr�
 
    ![Visual Studio pour Mac la fenêtre de démarrage avec la nouvelle sélection mise en surbrillance](media/blazor-new-project.png)
 
-1. Dans la boîte de dialogue **nouveau projet** , sélectionnez application d’application **.net Core** , > **App** > ** Blazor WebAssembly ** puis sélectionnez **suivant**: ![ choisir un modèle pour votre boîte de dialogue Nouveau projet avec ::: No-Loc (éblouissant) ::: serveur modèle d’application sélectionné](media/blazor-wasm-project-template.png)
+1. Dans la boîte de dialogue **nouveau projet** , sélectionnez application d’application **.net Core** , >  > **Blazor WebAssembly** puis sélectionnez **suivant**: ![ capture d’écran de la boîte de dialogue Nouveau projet avec ::: No-Loc (éblouissant webassembly) ::: App en surbrillance dans le volet application sous ASP.net Core et le bouton suivant sélectionné.](media/blazor-wasm-project-template.png)
 
 1. Sélectionnez .NET Core 3,1 comme Framework cible, puis sélectionnez **suivant**. 
    ![Configurer la boîte de dialogue New ::: No-Loc (éblouissant webassembly) ::: app affichée avec la version cible de .NET Framework sélectionnée sur .NET Core 3,1](media/blazor-wasm-select-target-framework.png)
@@ -58,7 +58,7 @@ Qu’est-ce que c’est Blazor ? Blazor est une infrastructure permettant de cr�
 1. Dans la **fenêtre démarrer**, sélectionnez **nouveau** pour créer un nouveau projet :
 
    ![Visual Studio pour Mac la fenêtre de démarrage avec la nouvelle sélection mise en surbrillance](media/blazor-new-project.png)
-1. Dans la boîte de dialogue **nouveau projet** , sélectionnez application de serveur d’applications **.net Core** , > **App** > ** Blazor ** puis sélectionnez **suivant**: ![ choisir un modèle pour votre boîte de dialogue Nouveau projet avec ::: No-Loc (éblouissant) ::: modèle d’application serveur sélectionné](media/blazor-project-template.png)
+1. Dans la boîte de dialogue **nouveau projet** , sélectionnez application de serveur d’applications **.net Core** , >  > **Blazor** puis sélectionnez **suivant**: ![ capture d’écran de la boîte de dialogue Nouveau projet avec ::: No-Loc (éblouissant) ::: application serveur mise en surbrillance dans le volet de l’application sous ASP.net Core et bouton suivant sélectionné.](media/blazor-project-template.png)
 
 1. Sélectionnez .NET Core 3,1 comme Framework cible, puis sélectionnez **suivant**. 
    ![Configurer votre nouvelle boîte de dialogue d’application serveur ::: No-Loc (éblouissant) ::: serveur affichée avec la version cible du .NET Framework 3,1](media/blazor-select-target-framework.png)
@@ -101,7 +101,7 @@ Ce dossier contient les pages Web d’un projet, qui utilisent une extension de 
 
 Ce dossier comprend des composants partagés, également à l’aide de l’extension *. Razor* . Vous verrez que cela comprend *MainLayout. Razor*, qui est utilisé pour définir une disposition commune à travers l’application. Il comprend également le composant partagé *NavMenu. Razor* , qui est utilisé sur toutes les pages. Si vous créez des composants réutilisables, ceux-ci sont placés dans le dossier **partagé** .
 
-### <a name="app-settings"></a>Paramètres d’application
+### <a name="app-settings"></a>Paramètres de l’application
 
 Le *appSettings.js* fichier contient des données de configuration telles que des chaînes de connexion.
 
@@ -116,7 +116,7 @@ Ce dossier contient des fichiers statiques, tels que des fichiers HTML, JavaScri
 Ce fichier contient le point d’entrée du programme. Pour plus d’informations, consultez [Hôte web ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="no-locblazor-server-app-specific-files"></a>Blazor Fichiers spécifiques à l’application serveur
-#### <a name="app-settings"></a>Paramètres d’application
+#### <a name="app-settings"></a>Paramètres de l’application
 
 Le *appSettings.js* fichier contient des données de configuration telles que des chaînes de connexion.
 

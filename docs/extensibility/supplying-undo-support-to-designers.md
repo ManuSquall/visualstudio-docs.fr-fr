@@ -1,5 +1,7 @@
 ---
 title: Fourniture de la prise en charge de l’annulation aux concepteurs | Microsoft Docs
+description: Découvrez comment fournir une prise en charge de l’annulation dans les concepteurs, soit automatiquement, soit à l’aide des fonctionnalités du kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699675"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715573"
 ---
 # <a name="supply-undo-support-to-designers"></a>Fournir une prise en charge de l’annulation aux concepteurs
 
@@ -29,7 +31,7 @@ Implémentations de concepteur qui doivent assurer la prise en charge de la fonc
 
 - Fournir la prise en charge de la persistance et de CodeDOM en implémentant les <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  <xref:System.ComponentModel.Design.IComponentChangeService> classes et.
 
-Pour plus d’informations sur l’écriture de concepteurs à l’aide de .NET Framework, consultez [étendre la prise en charge au moment du design](/previous-versions/37899azc(v=vs.140)).
+Pour plus d’informations sur l’écriture de concepteurs à l’aide de .NET Framework, consultez [étendre la prise en charge des Design-Time](/previous-versions/37899azc(v=vs.140)).
 
 Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit une infrastructure d’annulation par défaut en procédant comme suit :
 
@@ -103,4 +105,4 @@ Les concepteurs qui implémentent un <xref:Microsoft.VisualStudio.Shell.Design.O
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Étendre la prise en charge au moment du design](/previous-versions/37899azc(v=vs.140))
+- [Étendre la prise en charge de Design-Time](/previous-versions/37899azc(v=vs.140))

@@ -1,5 +1,7 @@
 ---
 title: Document journal de graphisme | Microsoft Docs
+description: Comprendre le document du journal de graphisme dans Visual Studio, qui enregistre les événements graphiques qui se sont produits pendant l’exécution d’une application dans le cadre d’une session Graphics Diagnostics.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735519"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727656"
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
 Le document journal de graphisme est l’enregistrement des événements graphiques qui se sont produits pendant l’exécution de votre application sous une session Graphics Diagnostics. Une fois les événements enregistrés, vous pouvez examiner le journal dans Visual Studio Graphics Analyzer pour diagnostiquer les problèmes de rendu et de performances.
@@ -83,7 +85,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 |--------------|-----------------|
 |**Mémoire**|Quantité de mémoire installée sur l'ordinateur.|
 |**Architecture du système d’exploitation**|Architecture d'UC cible du système d'exploitation.|
-|**Version du système d’exploitation**|Version du système d'exploitation.|
+|**Version du SE**|Version du système d'exploitation.|
 |**Processeur**|Processeur installé dans l'ordinateur.|
 |**Architecture de l’application cible**|Architecture d'UC cible de l'application. Celle-ci peut être différente de l’**Architecture du système d’exploitation**.|
 

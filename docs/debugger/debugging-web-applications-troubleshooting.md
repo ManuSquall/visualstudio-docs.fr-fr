@@ -1,6 +1,7 @@
 ---
 title: Débogage d’applications Web-résolution des problèmes | Microsoft Docs
-ms.custom: seodec18
+description: Découvrez des liens vers des procédures courantes qui peuvent être utilisées pour déboguer et résoudre les erreurs dans les applications Web.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 569b967a91ea3a93ff75bc45aec8974f5474ce84
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188318"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728159"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Débogage d'applications Web : dépannage
 Cette section contient des procédures courantes qui peuvent servir à résoudre des erreurs.

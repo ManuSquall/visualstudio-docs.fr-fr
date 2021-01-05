@@ -1,6 +1,7 @@
 ---
 title: Déboguer un package d’application UWP installé | Microsoft Docs
-ms.custom: ''
+description: Déboguez un package d’application plateforme Windows universelle (UWP) installé dans Visual Studio sur les ordinateurs, les Xbox et les appareils Internet des objets (IoT) Windows 10.
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04ed043dbcb09c862fcdfc5f34d77fd938bd24dc
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350730"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728922"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Déboguer un package d’application UWP installé dans Visual Studio
 
@@ -98,7 +99,7 @@ Pour plus d’informations sur le déploiement à distance d’applications UWP,
 
 - [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
-- [Débogage distant](../debugger/remote-debugging.md)
-- [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Affectations de port du débogueur distant](../debugger/remote-debugger-port-assignments.md)
-- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Débogage à distance](../debugger/remote-debugging.md)
+- [Configurer le pare-feu Windows pour le débogage à distance](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Attributions de ports au débogueur distant](../debugger/remote-debugger-port-assignments.md)
+- [Erreurs de débogage à distance et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)

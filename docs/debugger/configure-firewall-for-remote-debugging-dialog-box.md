@@ -1,5 +1,7 @@
 ---
 title: Configurer le pare-feu pour le débogage distant, boîte de dialogue | Microsoft Docs
+description: En savoir plus sur la boîte de dialogue Configurer le pare-feu pour le débogage distant, qui apparaît lorsque le pare-feu Windows empêche le débogueur de recevoir des données sur le réseau.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2511fc2adfa63ff28f8459f48cbdf4b4623ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86a0cac2e42e1271e689f2b1880eef8ca6d14644
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745665"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728961"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Configurer le pare-feu pour le débogage distant (boîte de dialogue)
 Cette boîte de dialogue apparaît lorsque le Pare-feu Windows empêche le débogueur de recevoir des informations via le réseau. Pour poursuivre le débogage distant, vous devez ouvrir une faille dans le pare-feu pour que le débogueur puisse recevoir des informations.

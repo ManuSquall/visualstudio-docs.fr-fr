@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742787"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729221"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Comment afficher et diagnostiquer des conteneurs et des images dans Visual Studio
 
@@ -25,11 +25,11 @@ Vous pouvez voir ce qui se passe dans les conteneurs qui hébergent votre applic
 
 ## <a name="view-information-about-your-containers"></a>Afficher des informations sur vos conteneurs
 
-La fenêtre **conteneurs** s’ouvre automatiquement lorsque vous démarrez un projet .net en conteneur. Pour afficher vos conteneurs dans Visual Studio à tout moment, utilisez **CTRL** + **Q** pour activer la zone de recherche Visual Studio, puis tapez `Containers` et choisissez le premier élément. Vous pouvez également ouvrir la fenêtre **conteneurs** à partir du menu principal. Utilisez le chemin d’accès au menu **Afficher**les  >  **autres**  >  **conteneurs**Windows.  
+La fenêtre **conteneurs** s’ouvre automatiquement lorsque vous démarrez un projet .net en conteneur. Pour afficher vos conteneurs dans Visual Studio à tout moment, utilisez **CTRL** + **Q** pour activer la zone de recherche Visual Studio, puis tapez `Containers` et choisissez le premier élément. Vous pouvez également ouvrir la fenêtre **conteneurs** à partir du menu principal. Utilisez le chemin d’accès au menu **Afficher** les  >  **autres**  >  **conteneurs** Windows.  
 
-![Capture d’écran de l’onglet environnement dans la fenêtre conteneurs](media/view-and-diagnose-containers/container-window.png)
+![Capture d’écran de la fenêtre conteneurs dans Visual Studio avec un conteneur sélectionné dans le volet gauche et l’onglet environnement sélectionné dans le volet droit.](media/view-and-diagnose-containers/container-window.png)
 
-Sur le côté gauche, vous voyez la liste des conteneurs sur votre ordinateur local. Les conteneurs associés à votre solution s’affichent sous **conteneurs de solutions**. À droite, vous voyez un volet avec des onglets pour l' **environnement**, les **ports**, les **journaux**et les **fichiers**.
+Sur le côté gauche, vous voyez la liste des conteneurs sur votre ordinateur local. Les conteneurs associés à votre solution s’affichent sous **conteneurs de solutions**. À droite, vous voyez un volet avec des onglets pour l' **environnement**, les **ports**, les **journaux** et les **fichiers**.
 
 > [!TIP]
 > Vous pouvez facilement personnaliser l’emplacement où la fenêtre outil **conteneurs** est ancrée dans Visual Studio. Consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Par défaut, la fenêtre **conteneurs** est ancrée avec la fenêtre **Espion** lorsque le débogueur est en cours d’exécution.
@@ -38,7 +38,7 @@ Sur le côté gauche, vous voyez la liste des conteneurs sur votre ordinateur lo
 
 L’onglet **environnement** affiche les variables d’environnement dans le conteneur. Pour le conteneur de votre application, vous pouvez définir ces variables de nombreuses façons, par exemple dans le fichier dockerfile, dans un fichier. env ou à l’aide de l’option-e quand vous démarrez un conteneur à l’aide d’une commande Dockr.
 
-![Capture d’écran de l’onglet environnement dans la fenêtre conteneurs](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Capture d’écran de la fenêtre conteneurs dans Visual Studio montrant les variables d’environnement pour le conteneur WebApplication11.](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Les modifications apportées aux variables d’environnement ne sont pas reflétées en temps réel. En outre, les variables d’environnement de cet onglet sont les variables d’environnement système sur le conteneur et ne reflètent pas les variables d’environnement utilisateur locales pour l’application.
@@ -102,7 +102,7 @@ Vous pouvez attacher des processus managés dans le conteneur. Pour rechercher u
 
 Vous pouvez également afficher des images sur l’ordinateur local à l’aide de l’onglet **images** de la fenêtre **conteneurs** . Les images extraites des référentiels externes sont regroupées dans un contrôle TreeView. Sélectionnez une image pour inspecter les détails de l’image.
 
-Pour supprimer une image, cliquez avec le bouton droit sur l’image dans le TreeView, choisissez **supprimer**ou sélectionnez l’image, puis utilisez le bouton **supprimer** dans la barre d’outils.
+Pour supprimer une image, cliquez avec le bouton droit sur l’image dans le TreeView, choisissez **supprimer** ou sélectionnez l’image, puis utilisez le bouton **supprimer** dans la barre d’outils.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

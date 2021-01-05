@@ -1,5 +1,7 @@
 ---
 title: 'Débogage ASP.NET : configuration système requise | Microsoft Docs'
+description: Passez en revue les exigences logicielles et de sécurité pour le débogage local ASP.NET, dans lequel Visual Studio et l’application Web s’exécutent sur le même ordinateur, et le débogage distant.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745804"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729117"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : configuration requise
 Cette rubrique décrit les conditions de sécurité et les logiciels requis pour les scénarios de débogage de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :
@@ -34,10 +36,10 @@ Cette rubrique décrit les conditions de sécurité et les logiciels requis pour
 
 - Débogage distant, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s'exécute sur un ordinateur client et débogue une application Web qui s'exécute sur un ordinateur de serveur distant.
 
-## <a name="security-requirements"></a>Configuration de sécurité requise
+## <a name="security-requirements"></a>Spécifications de sécurité
  Pour le débogage distant, les ordinateurs locaux et distants doivent être sur une installation de domaine ou une installation de groupe de travail.
 
- Pour déboguer le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processus de travail (hébergé par un pool d’applications), vous devez être autorisé à déboguer ce processus. Par défaut, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] les applications antérieures à IIS 6,0 s’exécutent en tant qu’utilisateur **ASPNET** . Dans IIS 6,0 et IIS 7,0, le compte de **service réseau** est le compte par défaut. Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.
+ Pour déboguer le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processus de travail (hébergé par un pool d’applications), vous devez être autorisé à déboguer ce processus. Par défaut, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] les applications antérieures à IIS 6,0 s’exécutent en tant qu’utilisateur **ASPNET** . Dans IIS 6,0 et IIS 7,0, le compte de **service réseau** est le compte par défaut. Si le processus de traitement s'exécute en tant qu' **ASPNET** ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.
 
  > [!IMPORTANT]
  > À compter de Windows Server 2008 R2, nous vous recommandons d’utiliser [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.

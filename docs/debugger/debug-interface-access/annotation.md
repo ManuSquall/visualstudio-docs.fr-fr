@@ -1,5 +1,7 @@
 ---
 title: Annotation | Microsoft Docs
+description: Recherchez des informations de référence sur le type de symbole d’annotation (SymTagAnnotation) dans le kit de développement logiciel (SDK) de Visual Studio Debug interface Access.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1adc922021d1e2bcc9b55de0b5986ee0c1766d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cadd93b935e102cee2108be5c6fd6274f5a29e15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462378"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728901"
 ---
 # <a name="annotation"></a>Annotation
 Un code de programme d’emplacement peut être annoté avec un `SymTagAnnotation` symbole.

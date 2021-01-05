@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdc30b34c85a799827519af3cd2bba2c9f1735a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668805"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727513"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Présentation des projets et solutions
 
@@ -279,7 +279,17 @@ Dans le fichier *Calendar.cs*, la ligne qui contient l’attribut <xref:System.R
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si vous souhaitez vérifier que votre test unitaire fonctionne, sélectionnez série de **tests**  >    >  **tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
+::: moniker range="vs-2017"
+
+Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **tester**  >  **exécuter**  >  **tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **tester**  >  **exécuter tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
+
+::: moniker-end
 
 ![Explorateur de tests dans Visual Studio affichant le test réussi](media/tutorial-projects-test-explorer.png "Explorateur de tests dans Visual Studio présentant un test réussi.")
 

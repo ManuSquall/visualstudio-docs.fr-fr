@@ -1,5 +1,7 @@
 ---
 title: analyse des frames graphiques | Microsoft Docs
+description: Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 943436a64f50523905a03ed2a87e91508d1b7471
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87686290842e0bbc3c575b5c72e3d1eeb24f351
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911483"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727721"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.
@@ -173,7 +175,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 ## <a name="variants"></a><a name="Variants"></a> Variantes
  Chaque modification apportée par l’analyse des frames au mode d’affichage d’un frame en cours de lecture est appelée *variante*. Les variantes examinées par l'analyse des frames correspondent à des modifications courantes et relativement simples que vous pourriez apporter pour améliorer les performance de rendu ou la qualité visuelle de votre application (par exemple, en réduisant la taille des textures, en utilisant la compression de texture ou en autorisant différents types d'anticrénelage). Les variantes substituent le contexte et les paramètres de rendu habituels de votre application. Voici un résumé :
 
-|Variant|Description|
+|Variante|Description|
 |-------------|-----------------|
 |**Taille fenêtre d’affichage 1x1**|Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu à 1x1 pixels.<br /><br /> Pour plus d’informations, consultez [Variante de taille Viewport 1x1](1x1-viewport-size-variant.md)|
 |**MSAA 0x**|Désactive l'anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [Variantes MSAA 0x/2x/4x](0x-2x-4x-msaa-variants.md)|

@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363118"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729338"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 
@@ -40,7 +40,7 @@ Bien que les opérations de création puissent paraître différentes des opéra
 
 La responsabilité d’un EMD consiste à décider comment un objet ou un groupe d’objets doit être fusionné à un emplacement particulier dans le modèle. En particulier, il décide des relations qui doivent être instanciées pour lier le groupe fusionné au modèle. Vous pouvez également le personnaliser pour définir des propriétés et créer des objets supplémentaires.
 
-![&#45;DSL EMD&#95;fusion](../modeling/media/dsl-emd_merge.png)
+![Diagramme montrant une vue avant et après l’affichage d’une arborescence d’éléments et de leurs relations de référence quand une E M D détermine comment un nouvel élément est ajouté.](../modeling/media/dsl-emd_merge.png)
 
 Un EMD est généré automatiquement lorsque vous définissez une relation d’incorporation. Ce EMD par défaut crée une instance de la relation lorsque les utilisateurs ajoutent de nouvelles instances enfants au parent. Vous pouvez modifier ces EMDs par défaut, par exemple en ajoutant du code personnalisé.
 
@@ -50,7 +50,7 @@ Vous pouvez également ajouter votre propre EMDs dans la définition DSL, pour p
 
 Vous pouvez ajouter des directives de fusion d’éléments à des classes de domaine, des relations de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez les ajouter ou les trouver dans l’Explorateur DSL sous la classe de domaine réceptrice. La classe de réception est la classe de domaine de l’élément qui se trouve déjà dans le modèle, et sur lequel l’élément nouveau ou copié sera fusionné.
 
-![Détails de la&#95;EMD DSL&#45;](../modeling/media/dsl-emd_details.png)
+![Capture d’écran de l’Explorateur DSL montrant un E M D ajouté avec ExampleElement sélectionné comme classe d’indexation et l’option s’applique aux sous-classes activées.](../modeling/media/dsl-emd_details.png)
 
 La **classe d’indexation** est la classe de domaine des éléments qui peuvent être fusionnés dans les membres de la classe de réception. Les instances de sous-classes de la classe d’indexation seront également fusionnées par ce EMD, sauf si vous affectez la valeur false **à la propriété s’applique aux sous-classes** .
 
@@ -232,7 +232,7 @@ Dans le code de fusion personnalisé, vous pouvez définir ce qui se produit lor
 
 5. Inspectez le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherchez des méthodes nommées `MergeRelate` et examinez leur contenu. Cela vous aidera à écrire vos propres versions.
 
-6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la `MergeRelate` méthode. N’oubliez pas d’appeler la méthode de base. Par exemple :
+6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la `MergeRelate` méthode. N’oubliez pas d’appeler la méthode de base. Exemple :
 
     ```csharp
     partial class ExampleModel

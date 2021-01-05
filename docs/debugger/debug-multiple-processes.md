@@ -1,5 +1,7 @@
 ---
 title: Déboguer plusieurs processus | Microsoft Docs
+description: Déboguez plusieurs processus dans Visual Studio. Démarrer et basculer entre les processus, arrêter, continuer, parcourir la source, terminer ou détacher des processus individuels.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350600"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728629"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Déboguer plusieurs processus (C#, Visual Basic, C++)
 
@@ -48,9 +50,9 @@ Pour démarrer le débogage d’un projet à partir de **Explorateur de solution
 
 1. Sélectionnez **sélection actuelle**, **projet de démarrage unique** et fichier projet ou **plusieurs projets de démarrage**.
 
-   Si vous sélectionnez **plusieurs projets de démarrage**, vous pouvez modifier l’ordre de démarrage et l’action à entreprendre pour chaque projet : **Démarrer**, **exécuter sans débogage**ou **aucun**.
+   Si vous sélectionnez **plusieurs projets de démarrage**, vous pouvez modifier l’ordre de démarrage et l’action à entreprendre pour chaque projet : **Démarrer**, **exécuter sans débogage** ou **aucun**.
 
-1. Sélectionnez **appliquer**ou **OK** pour appliquer et fermer la boîte de dialogue.
+1. Sélectionnez **appliquer** ou **OK** pour appliquer et fermer la boîte de dialogue.
 
 ### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a> Attacher à un processus
 
@@ -75,7 +77,7 @@ Parfois, vous devrez peut-être déboguer le code de démarrage d’une applicat
 
 1. Démarrez l’éditeur du Registre Windows en exécutant *regedit.exe*.
 
-1. Dans l’éditeur du Registre, accédez à **HKEY_LOCAL_MACHINE options d’exécution de fichier \Software\microsoft\windows NT\CurrentVersion\Image File Execution**.
+1. Dans l’éditeur du Registre, accédez à **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options**.
 
 1. Sélectionnez le dossier de l’application à démarrer dans le débogueur.
 
@@ -106,12 +108,12 @@ Lors du débogage d’une application à l’aide de plusieurs processus, les co
 
 Le tableau suivant décrit les comportements des commandes de débogage lorsque la case à cocher **arrêter tous les processus lorsqu’un processus s’arrête** est activée ou désactivée :
 
-|**Commande**|Sélectionné|Désélectionné|
+|**Commande**|Sélectionnée|Désélectionné|
 |-|-|-|
 |**Débogage**   >  **Arrêter tout**|Tous les processus s'arrêtent.|Tous les processus s'arrêtent.|
 |**Débogage**  >  **Continuer**|Tout les processus reprennent.|Tous les processus suspendus reprennent.|
-|**Débogage**  >  **Pas à**pas détaillé, **pas à pas principal**ou **pas à pas sortant**|Tous les processus s'exécutent pendant les étapes de processus actuelles. <br />Puis, tous les processus s'arrêtent.|Étapes de processus actuel. <br />Les processus suspendus reprennent. <br />Les processus en cours d'exécution se poursuivent.|
-|**Débogage**  >  **Pas à pas détaillé du processus en cours**, **pas à pas principal du processus actuel**ou **pas à pas sortant du processus actuel**|N/A|Étapes de processus actuel.<br />D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|
+|**Débogage**  >  **Pas à** pas détaillé, **pas à pas principal** ou **pas à pas sortant**|Tous les processus s'exécutent pendant les étapes de processus actuelles. <br />Puis, tous les processus s'arrêtent.|Étapes de processus actuel. <br />Les processus suspendus reprennent. <br />Les processus en cours d'exécution se poursuivent.|
+|**Débogage**  >  **Pas à pas détaillé du processus en cours**, **pas à pas principal du processus actuel** ou **pas à pas sortant du processus actuel**|N/A|Étapes de processus actuel.<br />D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|
 |Point d' **arrêt** de la fenêtre source|Tous les processus s'arrêtent.|Seul le processus de fenêtre source est rompu.|
 |Fenêtre source **exécutée jusqu’au curseur**<br />La fenêtre source doit figurer dans le processus actuel.|Tous les processus s'exécutent pendant que le processus de fenêtre source s'exécute jusqu'au curseur puis s'arrête.<br />Puis, tous les autres processus s'arrêtent.|Le processus de fenêtre source s'exécute sur le curseur.<br />D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|
 |Fenêtre **processus** > **arrêt du processus**|N/A|Le processus sélectionné s'interrompt.<br />D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|
@@ -128,7 +130,7 @@ Vous pouvez attacher plusieurs processus lors du débogage, mais un seul process
 
 **Pour définir le processus en cours à partir de la barre d’outils emplacement de débogage :**
 
-1. Pour ouvrir la barre d’outils **emplacement de débogage** , sélectionnez **Afficher**les  >  **barres d’outils**  >  **emplacement de débogage**.
+1. Pour ouvrir la barre d’outils **emplacement de débogage** , sélectionnez **Afficher** les  >  **barres d’outils**  >  **emplacement de débogage**.
 
 1. Pendant le débogage, dans la barre d’outils **emplacement de débogage** , sélectionnez le processus que vous souhaitez définir comme processus actuel dans la liste déroulante **traiter** .
 
@@ -136,7 +138,7 @@ Vous pouvez attacher plusieurs processus lors du débogage, mais un seul process
 
 **Pour définir le processus en cours à partir de la fenêtre processus :**
 
-1. Pour ouvrir la fenêtre **processus** , pendant le débogage, sélectionnez **Déboguer**les  >  **Windows**  >  **processus**Windows.
+1. Pour ouvrir la fenêtre **processus** , pendant le débogage, sélectionnez **Déboguer** les  >    >  **processus** Windows.
 
 1. Dans la fenêtre **processus** , le processus actuel est marqué par une flèche jaune. Double-cliquez sur le processus que vous souhaitez définir comme processus actuel.
 
@@ -178,4 +180,4 @@ Le tableau suivant décrit les comportements des commandes arrêter, terminer et
 - [Attacher aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Navigation dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)

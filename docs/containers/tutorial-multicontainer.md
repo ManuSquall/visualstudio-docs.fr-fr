@@ -7,14 +7,14 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037209"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729286"
 ---
-# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Didacticiel : créer une application à plusieurs conteneurs avec Docker Compose
+# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Didacticiel : Créer une application multiconteneur avec Docker Compose
 
 Dans ce didacticiel, vous allez apprendre à gérer plusieurs conteneurs et à communiquer entre eux quand vous utilisez des outils de conteneur dans Visual Studio.  La gestion de plusieurs conteneurs nécessite l' *orchestration de conteneur* et nécessite un orchestrateur, comme docker compose, Kubernetes ou service fabric. Ici, nous allons utiliser Docker Compose. Docker Compose est idéal pour le débogage et les tests locaux au cours du cycle de développement.
 
@@ -38,7 +38,7 @@ Dans Visual Studio, créez un projet d' **application Web ASP.net Core** , nomm�
   
 ::: moniker range="vs-2017"
 
-Ne sélectionnez pas**Activer la prise en charge de Docker**. Vous ajouterez la prise en charge de l’ancrage ultérieurement.
+Ne sélectionnez pas **Activer la prise en charge de Docker**. Vous ajouterez la prise en charge de l’ancrage ultérieurement.
 
 ![Capture d’écran de la création du projet Web](./media/tutorial-multicontainer/docker-tutorial-enable-docker-support.png)
 
@@ -46,11 +46,11 @@ Ne sélectionnez pas**Activer la prise en charge de Docker**. Vous ajouterez la 
 
 ::: moniker range="vs-2019"
 
-![Capture d’écran de la création du projet Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Capture d’écran de l’écran configurer votre nouveau projet pour une application Web ASP.NET Core, les champs nom du projet et nom de la solution sont définis sur « WebFrontEnd ».](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
-Ne sélectionnez pas**Activer la prise en charge de Docker**. Vous ajouterez la prise en charge de l’ancrage ultérieurement.
+Ne sélectionnez pas **Activer la prise en charge de Docker**. Vous ajouterez la prise en charge de l’ancrage ultérieurement.
 
-![Capture d’écran de la création du projet Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Capture d’écran de l’écran créer une application Web ASP.NET Core avec l’application Web sélectionnée. L’option permettant d’activer la prise en charge de l’ancrage n’est pas sélectionnée.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 
@@ -153,7 +153,7 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
 
    Examinez la section **outils de conteneur** du volet de sortie pour plus d’informations sur les commandes en cours d’exécution.  Vous pouvez voir l’outil en ligne de commande dockr-compose est utilisé pour configurer et créer les conteneurs du Runtime.
 
-1. Dans le projet d’API Web, cliquez à nouveau avec le bouton droit sur le nœud du projet, puis sélectionnez **Ajouter**la  >  **prise en charge de Container Orchestrator**. Choisissez **docker compose**, puis sélectionnez le même système d’exploitation cible.  
+1. Dans le projet d’API Web, cliquez à nouveau avec le bouton droit sur le nœud du projet, puis sélectionnez **Ajouter** la  >  **prise en charge de Container Orchestrator**. Choisissez **docker compose**, puis sélectionnez le même système d’exploitation cible.  
 
     > [!NOTE]
     > Dans cette étape, Visual Studio propose de créer un fichier dockerfile. Si vous effectuez cette opération sur un projet qui dispose déjà de la prise en charge de l’ancrage, vous êtes invité à indiquer si vous souhaitez remplacer le fichier dockerfile existant. Si vous avez apporté des modifications à vos fichier dockerfile que vous souhaitez conserver, choisissez non.
@@ -179,7 +179,7 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
 
 1. Exécutez le site localement maintenant (F5 ou CTRL + F5) pour vérifier qu’il fonctionne comme prévu. Si tout est configuré correctement avec la version .NET Core 2. x, le message « Hello from WebFrontEnd and WebAPI (avec la valeur 1) » s’affiche.  Avec .NET Core 3, vous voyez des données de prévisions météorologiques.
 
-   Le premier projet que vous utilisez lorsque vous ajoutez une orchestration de conteneur est configuré pour être lancé lorsque vous exécutez ou déboguez. Vous pouvez configurer l’action de lancement dans les **Propriétés du projet** pour le projet dockr-compose.  Sur le nœud du projet dockr-compose, cliquez avec le bouton droit pour ouvrir le menu contextuel, puis choisissez **Propriétés**ou utilisez ALT + ENTRÉE.  La capture d’écran suivante montre les propriétés que vous souhaiteriez pour la solution utilisée ici.  Par exemple, vous pouvez modifier la page qui est chargée en personnalisant la propriété **URL du service** .
+   Le premier projet que vous utilisez lorsque vous ajoutez une orchestration de conteneur est configuré pour être lancé lorsque vous exécutez ou déboguez. Vous pouvez configurer l’action de lancement dans les **Propriétés du projet** pour le projet dockr-compose.  Sur le nœud du projet dockr-compose, cliquez avec le bouton droit pour ouvrir le menu contextuel, puis choisissez **Propriétés** ou utilisez ALT + ENTRÉE.  La capture d’écran suivante montre les propriétés que vous souhaiteriez pour la solution utilisée ici.  Par exemple, vous pouvez modifier la page qui est chargée en personnalisant la propriété **URL du service** .
 
    ![Capture d’écran des propriétés du projet dockr-compose](media/tutorial-multicontainer/launch-action.png)
 

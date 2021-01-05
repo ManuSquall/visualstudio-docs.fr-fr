@@ -1,5 +1,7 @@
 ---
 title: Débogage de serveur et de conteneur COM | Microsoft Docs
+description: En savoir plus sur le débogage de serveur et de conteneur COM. Déboguez un serveur COM et un conteneur dans la même solution, une application serveur sans informations sur le conteneur ou une application SDI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745674"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728974"
 ---
 # <a name="com-server-and-container-debugging"></a>Débogage de serveurs et de conteneurs COM
 Les applications COM effectuent des tâches en dehors du contrôle direct du programmeur. La communication entre les DLL, la fréquence d'utilisation des objets et les opérations du Presse-papiers sont quelques exemples pour lesquels un comportement inattendu peut se produire. Lorsque cela se produit, la première chose à faire est de trouver la source du problème.

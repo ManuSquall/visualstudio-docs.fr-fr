@@ -1,5 +1,7 @@
 ---
 title: Personnalisé (kit de développement logiciel de debug interface Access) | Microsoft Docs
+description: Recherchez des informations de référence sur les types de symboles personnalisés (identifiés avec la balise SymTagCustom) dans le kit de développement logiciel (Debug interface Access) de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 420090cb0b93d274517950982cd8f7fea07d250c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4bec65f766eee8bdf2c4ca34a2a801f26b7d69c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462217"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728733"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Personnalisé (Kit de développement logiciel de Debug Interface Access)
 Certains compilateurs introduisent des symboles qui ne sont pas identifiés par l’un des types de symboles lexicals standard. Ces symboles sont identifiés par une `SymTagCustom` balise.

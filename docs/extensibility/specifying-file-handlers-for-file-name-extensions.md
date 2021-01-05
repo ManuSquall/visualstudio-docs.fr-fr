@@ -1,5 +1,7 @@
 ---
 title: Spécification de gestionnaires de fichiers pour les extensions de nom de fichier | Microsoft Docs
+description: Découvrez comment déterminer quelle application gère une extension de fichier dans le kit de développement logiciel (SDK) Visual Studio à l’aide de OpenWithList et OpenWithProgids.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699752"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715598"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Spécification des gestionnaires de fichiers pour les extensions de nom de fichier
 Il existe plusieurs façons de déterminer l’application qui gère un fichier qui a une extension de fichier particulière. Les verbes OpenWithList et OpenWithProgids sont deux façons de spécifier des gestionnaires de fichiers sous l’entrée de Registre pour l’extension de fichier.
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> Les clés spécifiant des applications figurent dans la liste sous HKEY_CLASSES_ROOT \Applications.
+> Les clés qui spécifient les applications figurent dans la liste sous HKEY_CLASSES_ROOT\Applications.
 
  En ajoutant une clé OpenWithList, vous déclarez que votre application prend en charge une extension de fichier même si une autre application prend possession de l’extension. Il peut s’agir d’une version ultérieure de votre application ou d’une autre application.
 
@@ -47,12 +49,12 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |. extension|ProductName. extension. versionMajor. versionMinor|
 
- Vous pouvez inscrire différentes applications capables d’ouvrir une extension de fichier particulière en ajoutant des ProgID avec version comme valeurs à la \\ *\<extension>* clé HKEY_CLASSES_ROOT \OpenWithProgids. Cette clé de registre contient une liste d’autres ProgID associés à l’extension de fichier. Les applications associées aux ProgID répertoriés s’affichent dans le sous-menu **Ouvrir avec**le_nom de produit_ . Si la même application est spécifiée dans les deux `OpenWithList` `OpenWithProgids` clés et, le système d’exploitation fusionne les doublons.
+ Vous pouvez inscrire différentes applications capables d’ouvrir une extension de fichier particulière en ajoutant des ProgID avec version comme valeurs à la \\ *\<extension>* clé HKEY_CLASSES_ROOT \OpenWithProgids. Cette clé de registre contient une liste d’autres ProgID associés à l’extension de fichier. Les applications associées aux ProgID répertoriés s’affichent dans le sous-menu **Ouvrir avec** le _nom de produit_ . Si la même application est spécifiée dans les deux `OpenWithList` `OpenWithProgids` clés et, le système d’exploitation fusionne les doublons.
 
 > [!NOTE]
 > La `OpenWithProgids` clé est uniquement prise en charge dans Windows XP. Étant donné que les autres systèmes d’exploitation ignorent cette clé, ne l’utilisez pas comme seule inscription pour les gestionnaires de fichiers. Utilisez cette clé pour offrir une meilleure expérience utilisateur dans Windows XP.
 
- Ajoutez les ProgID souhaités en tant que valeurs de type REG_NONE. Le code suivant fournit un exemple d’inscription de ProgID pour une extension de fichier (.* ext*).
+ Ajoutez les ProgID souhaités en tant que valeurs de type REG_NONE. Le code suivant fournit un exemple d’inscription de ProgID pour une extension de fichier (.*ext*).
 
 ```
 HKEY_CLASSES_ROOT\
@@ -63,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- Le ProgID spécifié comme valeur par défaut pour l’extension de fichier est le gestionnaire de fichiers par défaut. Si vous modifiez le ProgID pour une extension de fichier fournie avec une version précédente de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou qui peut être prise en charge par d’autres applications, vous devez inscrire la `OpenWithProgids` clé pour votre extension de fichier et spécifier le nouveau ProgID dans la liste avec les anciens ProgID pris en charge. Par exemple :
+ Le ProgID spécifié comme valeur par défaut pour l’extension de fichier est le gestionnaire de fichiers par défaut. Si vous modifiez le ProgID pour une extension de fichier fournie avec une version précédente de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou qui peut être prise en charge par d’autres applications, vous devez inscrire la `OpenWithProgids` clé pour votre extension de fichier et spécifier le nouveau ProgID dans la liste avec les anciens ProgID pris en charge. Exemple :
 
 ```
 HKEY_CLASSES_ROOT\

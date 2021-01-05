@@ -1,5 +1,7 @@
 ---
 title: BasicType | Microsoft Docs
+description: Recherchez des informations de référence sur l’énumération BasicType, qui spécifie le type de base d’un symbole dans le kit de développement logiciel (SDK) debug interface Access de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7d9df59d5a3075bf63d619a03e8fe31da6991a1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fd166b094f74cfbf9b6a37a87804031dedcbc7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462280"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728876"
 ---
 # <a name="basictype"></a>BasicType
 Spécifie le type de base du symbole.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```C++
 enum BasicType {
@@ -86,7 +88,7 @@ btBSTR type de base est une chaîne de base ou binaire ( `BSTR` ).
 
 btHresult type de base est un `HRESULT` .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées par la méthode [IDiaSymbol :: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .
 
 ## <a name="requirements"></a>Configuration requise

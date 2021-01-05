@@ -1,6 +1,7 @@
 ---
 title: Déployer des applications UWP | Microsoft Docs
-ms.custom: seodec18
+description: Déployez des applications plateforme Windows universelle (UWP) à partir de Visual Studio. Spécifiez un appareil cible local ou distant pour le déploiement. Comprendre les options de déploiement.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188281"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728198"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
 
@@ -49,7 +50,7 @@ Le déploiement est automatique quand vous déboguez votre application à partir
 
 ## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> Comment spécifier un périphérique distant
 
-**Conditions préalables**
+**Composants requis**
 
 Sur un appareil distant Windows 10, vous devez activer le [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). Sur les appareils Windows 10 qui exécutent la mise à jour du créateur ou une version ultérieure, les outils de contrôle à distance sont installés automatiquement lorsque vous déployez votre application. Pour plus d’informations, consultez [Déboguer un package d’application installé](../debugger/debug-installed-app-package.md).
 
@@ -98,9 +99,9 @@ Vous pouvez définir les options de déploiement suivantes sur la page de propri
 
 **Autoriser le bouclage de réseau**
 
-Pour des raisons de sécurité, une application UWP ou une [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] application installée en mode standard n’est pas autorisée à effectuer des appels réseau vers l’appareil sur lequel elle est installée. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], vous devez la tester sans l'exemption.
+Pour des raisons de sécurité, une application UWP ou une [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] application installée en mode standard n’est pas autorisée à effectuer des appels réseau vers l’appareil sur lequel elle est installée. Par défaut, le déploiement de Visual Studio crée une exemption à cette règle pour l’application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul et même ordinateur. Avant d'envoyer votre application au [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], vous devez la tester sans l'exemption.
 
-Pour supprimer de l'application l'exemption du bouclage de réseau :
+Pour supprimer l’exemption de bouclage réseau de l’application :
 
 - Dans la page de propriétés C# et Visual Basic débogage, désactivez la case à cocher **autoriser le bouclage réseau** .
 
@@ -108,7 +109,7 @@ Pour supprimer de l'application l'exemption du bouclage de réseau :
 
 **Ne pas lancer, mais déboguer mon code au démarrage (C# et Visual Basic)/lancer l’application (C++)**
 
-Pour configurer le déploiement afin qu'il démarre automatiquement une session de débogage au lancement de l'application :
+Pour configurer le déploiement afin de démarrer automatiquement une session de débogage au lancement de l’application :
 
 - Dans la page de propriétés de débogage C# et Visual Basic, activez la case à cocher **ne pas lancer, mais déboguer mon code au démarrage** .
 
@@ -116,6 +117,6 @@ Pour configurer le déploiement afin qu'il démarre automatiquement une session 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Options avancées de déploiement à distance](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
+- [Options avancées de déploiement distant](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Déboguer un package d’application installé](../debugger/debug-installed-app-package.md)
 - [Exécuter des applications à partir de Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

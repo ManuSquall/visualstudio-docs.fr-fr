@@ -1,5 +1,7 @@
 ---
 title: Fonctions de raccordement d’allocation | Microsoft Docs
+description: En savoir plus sur l’utilisation des fonctions de raccordement d’allocation, qui sont installées à l’aide de _CrtSetAllocHook, lorsque vous devez effectuer un débogage au moment de l’exécution C (CRT) dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f684c6c66448fdab2ee7607a81ff7ed769a5e607
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0bea73a044dabce5270c06f68658f85c612574c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745821"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729182"
 ---
 # <a name="allocation-hook-functions"></a>Fonctions de raccordement d'allocation
 Une fonction de raccordement d’allocation, installée à l’aide de [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), est appelée chaque fois que la mémoire est allouée, réallouée ou libérée. Vous pouvez utiliser ce type de raccordement à de nombreuses fins différentes. Utilisez-le pour tester la façon dont une application gère les situations de mémoire insuffisante, par exemple pour examiner les modèles d’allocation ou pour enregistrer les informations d’allocation pour une analyse ultérieure.
@@ -50,9 +52,9 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
     (int, void *, size_t, int, long, const unsigned char *, int);
 ```
 
- Lorsque la bibliothèque Runtime appelle votre raccordement, l’argument *nAllocType* indique l’opération d’allocation sur le point d’être effectuée (**_HOOK_ALLOC**, **_HOOK_REALLOC**ou **_HOOK_FREE**). Dans un gratuit ou dans une réallocation, `pvData` a un pointeur vers l’article utilisateur du bloc sur le point d’être libéré. Toutefois, pour une allocation, ce pointeur est null, car l’allocation n’a pas eu lieu. Les arguments restants contiennent la taille de l’allocation en question, son type de bloc, le numéro de requête séquentiel qui lui est associé et un pointeur vers le nom de fichier. S’ils sont disponibles, les arguments incluent également le numéro de ligne dans lequel l’allocation a été effectuée. Une fois que la fonction de raccordement a effectué l’analyse et les autres tâches voulues par son auteur, elle doit retourner **TRUE** pour indiquer que l’opération d’allocation peut se poursuivre, ou **FALSE** pour indiquer que l’opération doit échouer. Un simple raccordement de ce type pourrait vérifier la quantité de mémoire allouée jusqu’à ce stade et retourner **FALSE** si cette quantité dépassait une petite limite. L'application serait alors confrontée au type d'erreurs d'allocation qui, en temps normal, survient uniquement lorsque la mémoire disponible est très faible. Des raccordements plus complexes permettraient d'assurer le suivi des modèles d'allocation, d'analyser l'utilisation de la mémoire ou de reporter des situations spécifiques.
+ Lorsque la bibliothèque Runtime appelle votre raccordement, l’argument *nAllocType* indique l’opération d’allocation sur le point d’être effectuée (**_HOOK_ALLOC**, **_HOOK_REALLOC** ou **_HOOK_FREE**). Dans un gratuit ou dans une réallocation, `pvData` a un pointeur vers l’article utilisateur du bloc sur le point d’être libéré. Toutefois, pour une allocation, ce pointeur est null, car l’allocation n’a pas eu lieu. Les arguments restants contiennent la taille de l’allocation en question, son type de bloc, le numéro de requête séquentiel qui lui est associé et un pointeur vers le nom de fichier. S’ils sont disponibles, les arguments incluent également le numéro de ligne dans lequel l’allocation a été effectuée. Une fois que la fonction de raccordement a effectué l’analyse et les autres tâches voulues par son auteur, elle doit retourner **TRUE** pour indiquer que l’opération d’allocation peut se poursuivre, ou **FALSE** pour indiquer que l’opération doit échouer. Un simple raccordement de ce type pourrait vérifier la quantité de mémoire allouée jusqu’à ce stade et retourner **FALSE** si cette quantité dépassait une petite limite. L'application serait alors confrontée au type d'erreurs d'allocation qui, en temps normal, survient uniquement lorsque la mémoire disponible est très faible. Des raccordements plus complexes permettraient d'assurer le suivi des modèles d'allocation, d'analyser l'utilisation de la mémoire ou de reporter des situations spécifiques.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Raccordements d'allocation et allocations de la mémoire runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)
-- [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)
+- [Raccordements d’allocation et allocations de mémoire C Run-Time](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)
+- [Écriture de la fonction de raccordement de débogage](../debugger/debug-hook-function-writing.md)

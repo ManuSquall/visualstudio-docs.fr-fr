@@ -1,5 +1,7 @@
 ---
 title: Déboguer des projets DLL | Microsoft Docs
+description: Déboguez les fichiers de bibliothèque de liens dynamiques (DLL) dans Visual Studio. Utilisez Visual Studio pour créer, générer, configurer et déboguer des dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315068"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728497"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Déboguer des dll dans Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -35,7 +37,7 @@ Les modèles de projet Visual Studio suivants peuvent créer des dll :
 
 - Bibliothèque de classes C#, Visual Basic ou F #
 - Bibliothèque C# ou Visual Basic Windows Forms de contrôle (WCF)
-- Bibliothèque de liens dynamiques (DLL) C++
+- Bibliothèque de Dynamic-Link C++ (DLL)
 
 Pour plus d’informations, consultez [techniques de débogage MFC](../debugger/mfc-debugging-techniques.md).
 
@@ -47,9 +49,9 @@ En général, vous appelez une DLL à partir d’un autre projet. Lorsque vous d
 
 Quand vous utilisez un modèle de projet Visual Studio pour créer une application, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée automatiquement les paramètres requis pour les configurations de build Debug et Release. Vous pouvez modifier ces paramètres si nécessaire. Pour plus d’informations, consultez les articles suivants :
 
-- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Paramètres de projet pour les configurations de débogage C#](../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Comment : définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)
 
 ### <a name="set-c-debuggableattribute"></a>Définir C++ DebuggableAttribute
@@ -60,13 +62,13 @@ Pour que le débogueur s’attache à une DLL C++, le code C++ doit émettre `De
 
 1. Sélectionnez le projet DLL C++ dans **Explorateur de solutions** puis sélectionnez l’icône **Propriétés** , ou cliquez avec le bouton droit sur le projet et sélectionnez **Propriétés**.
 
-1. Dans le volet **Propriétés** , sous débogage de l' **éditeur de liens**  >  **Debugging**, sélectionnez **Oui (/ASSEMBLYDEBUG)** pour l' **assembly pouvant être débogué**.
+1. Dans le volet **Propriétés** , sous débogage de l' **éditeur de liens**  >  , sélectionnez **Oui (/ASSEMBLYDEBUG)** pour l' **assembly pouvant être débogué**.
 
 Pour plus d’informations, consultez [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> Définir des emplacements de fichiers DLL C/C++
 
-Pour déboguer une DLL externe, un projet appelant doit être en mesure de trouver la DLL, son [fichier. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)et tout autre fichier requis par la dll. Vous pouvez créer une tâche de génération personnalisée pour copier ces fichiers dans votre dossier de sortie * \<project folder> \Debug.* , ou vous pouvez copier les fichiers manuellement.
+Pour déboguer une DLL externe, un projet appelant doit être en mesure de trouver la DLL, son [fichier. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)et tout autre fichier requis par la dll. Vous pouvez créer une tâche de génération personnalisée pour copier ces fichiers dans votre dossier de sortie *\<project folder> \Debug.* , ou vous pouvez copier les fichiers manuellement.
 
 Pour les projets C/C++, vous pouvez définir les emplacements des fichiers d’en-tête et LIB dans les pages de propriétés du projet, au lieu de les copier dans le dossier de sortie.
 
@@ -80,7 +82,7 @@ Pour les projets C/C++, vous pouvez définir les emplacements des fichiers d’e
 
 1. Sous **éditeur de liens**  >  **général**  >  **bibliothèques supplémentaires répertoires**, spécifiez le dossier qui contient des fichiers lib.
 
-1. Sous **Linker**  >  **Input**  >  les**dépendances supplémentaires**d’entrée de l’éditeur de liens, spécifiez le chemin d’accès complet et le nom de fichier des fichiers lib.
+1. Sous   >    >  les **dépendances supplémentaires** d’entrée de l’éditeur de liens, spécifiez le chemin d’accès complet et le nom de fichier des fichiers lib.
 
 1. Sélectionnez **OK**.
 
@@ -90,7 +92,7 @@ Pour plus d’informations sur les paramètres de projet C++, consultez Référe
 
 Veillez à créer une version de débogage de la DLL avant de commencer le débogage. Pour déboguer une DLL, une application appelante doit être en mesure de trouver son [fichier. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et tous les autres fichiers requis par la dll.
 
-Vous pouvez créer une tâche de génération personnalisée pour copier les fichiers DLL dans votre dossier de sortie * \<calling project folder> \Debug.* , ou vous pouvez copier les fichiers manuellement.
+Vous pouvez créer une tâche de génération personnalisée pour copier les fichiers DLL dans votre dossier de sortie *\<calling project folder> \Debug.* , ou vous pouvez copier les fichiers manuellement.
 
 Veillez à appeler la DLL à l’emplacement approprié. Cela peut paraître évident, mais si une application appelante trouve et charge une copie différente de la DLL, le débogueur n’atteint jamais les points d’arrêt que vous définissez.
 
@@ -121,7 +123,7 @@ Pour déboguer une DLL à partir d’une application appelante, vous pouvez :
 
 Avant de commencer le débogage de l’application appelante, définissez un point d’arrêt dans la DLL. Consultez [utilisation de points d’arrêt](../debugger/using-breakpoints.md). Lorsque le point d’arrêt de la DLL est atteint, vous pouvez exécuter le code pas à pas, en observant l’action sur chaque ligne. Pour plus d’informations, consultez [Parcourir le code dans le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
 
-Pendant le débogage, vous pouvez utiliser la fenêtre **modules** pour vérifier les dll et les fichiers *. exe* chargés par l’application. Pour ouvrir la fenêtre **modules** , pendant le débogage, sélectionnez **Déboguer**les  >  **Windows**  >  **modules**Windows. Pour plus d’informations, consultez [Comment : utiliser la fenêtre modules](../debugger/how-to-use-the-modules-window.md).
+Pendant le débogage, vous pouvez utiliser la fenêtre **modules** pour vérifier les dll et les fichiers *. exe* chargés par l’application. Pour ouvrir la fenêtre **modules** , pendant le débogage, sélectionnez **Déboguer** les  >    >  **modules** Windows. Pour plus d’informations, consultez [Comment : utiliser la fenêtre modules](../debugger/how-to-use-the-modules-window.md).
 
 ### <a name="use-the-immediate-window"></a><a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utiliser la fenêtre exécution
 
@@ -132,7 +134,7 @@ Vous pouvez utiliser la fenêtre **exécution** pour évaluer les fonctions ou l
 
 Par exemple, pour tester une méthode nommée `Test` dans la classe `Class1` :
 
-1. Une fois le projet dll ouvert, ouvrez la fenêtre **exécution** en sélectionnant **Déboguer**les  >  **fenêtres**  >  **immédiatement** ou en appuyant sur **CTRL** + **ALT** + **I**.
+1. Une fois le projet dll ouvert, ouvrez la fenêtre **exécution** en sélectionnant **Déboguer** les  >  **fenêtres**  >  **immédiatement** ou en appuyant sur **CTRL** + **ALT** + **I**.
 
 1. Instanciez un objet de type `Class1` en tapant le code C# suivant dans la fenêtre **exécution** et en appuyant sur **entrée**. Ce code managé fonctionne pour C# et Visual Basic, avec les modifications de syntaxe appropriées :
 

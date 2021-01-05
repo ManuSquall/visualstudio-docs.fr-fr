@@ -1,5 +1,7 @@
 ---
 title: Modèles composites pour Visual Studio | Microsoft Docs
+description: En savoir plus sur les modèles composites importants pour la cohérence dans Visual Studio. Les modèles composites combinent les éléments d’interaction et de conception.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114074"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715819"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 Les modèles composites combinent des éléments d’interaction et de conception dans des configurations distinctes. Voici quelques-uns des modèles composites les plus importants dans Visual Studio en ce qui concerne la cohérence :
@@ -68,7 +70,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 ### <a name="other-charting-considerations"></a>Autres considérations relatives aux graphiques
 
-#### <a name="color"></a>Couleur
+#### <a name="color"></a>Color
  Une palette spécifique de couleurs de graphiques est définie pour être utilisée dans Visual Studio. La palette est accessible pour les principaux types de cécité des couleurs, et les couleurs peuvent être différenciées même si elles sont utilisées comme des secteurs de couleur très étroits. Vous pouvez utiliser ces couleurs dans n’importe quelle combinaison pour n’importe quel type de graphique ou graphique dans votre interface utilisateur. Vous n’avez pas besoin d’utiliser les sept couleurs si vous n’avez pas besoin de nombreuses couleurs distinctes. Ces couleurs n’ont pas été conçues pour être utilisées avec des éléments de premier plan, par conséquent, ne placez pas de texte ou de glyphes par-dessus ces couleurs. Ces teintes doivent être codées en dur et exposées à la personnalisation utilisateur sous **outils > options** (voir [exposition des couleurs pour les utilisateurs finaux](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Echantillon|Hex|RGB|
@@ -393,7 +395,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apparence de la sélection d’objets graphiques
  Les poignées de sélection sont des carrés dessinés dans un motif rectangulaire autour du cadre englobant de l’objet. Le graphique ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec la poignée, le dimensionnement et l’apparence de modification sur place. La taille des handles doit être liée à la bordure de fenêtre et aux métriques de bord à l’aide de l’API **GetSystemMetrics** .
 
-| State | Apparence | Détails visuels |
+| État | Apparence | Détails visuels |
 |-------------------------|---------------| - |
 | **Non sélectionné** | Default | ![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Sélection principale** | Redimensionnable | ![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -482,7 +484,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 |Boîte de dialogue|Emplacement de la boîte de dialogue, si elle a été déplacée<br /><br /> Affichage que l’utilisateur a utilisé en dernier dans la boîte de dialogue|Quand la boîte de dialogue se ferme<br /><br /> À la fin de la session Visual Studio|En mémoire<br /><br /> Registre dans **HKEY_CURRENT_USER**|
 |Fenêtre|La taille et l’emplacement de la fenêtre|Quand la fenêtre se ferme<br /><br /> En cas de modification du mode Visual Studio<br /><br /> À la fin de la session Visual Studio|Fichier d' **options utilisateur (. suo)** pour le projet<br /><br /> Fichier d’options personnalisées pour les paramètres de fenêtre|
 |Document|Sélection actuelle dans le document<br /><br /> Vue du document<br /><br /> Les derniers emplacements visités par l’utilisateur|Lors de l’enregistrement du document|Fichier d' **options utilisateur (. suo)** pour le projet|
-|Project|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Components<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
+|Project|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Composants<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
 |Solution|Références aux projets<br /><br /> Références aux fichiers|Lors de l’enregistrement du projet ou de la solution|Fichier **solution (. sln)**|
 |Paramètres dans **outils > options**|Personnalisations du clavier<br /><br /> Personnalisations de la barre d’outils<br /><br /> Modèles de couleurs|Quand la boîte de dialogue **outils > options** se ferme<br /><br /> À la fin de la session Visual Studio|Registre dans **HKEY_CURRENT_USER**|
 

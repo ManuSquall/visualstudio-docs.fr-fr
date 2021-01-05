@@ -1,5 +1,7 @@
 ---
-title: Débogage des applications en mode mixte | Microsoft Docs
+title: Débogage d’applications Mixed-Mode | Microsoft Docs
+description: Déboguez une application en mode mixte, qui est une application qui combine du code natif avec du code managé qui s’exécute sur le common language runtime, dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba41447af829a378f70d2286ed7a7b9295ed109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4137e7a73032a34276416b9640dd608b96b660a4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916291"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728328"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Débogage des applications en mode mixte
 Une application en mode mixte est une application qui combine du code natif (C++) avec du code managé (tel que Visual Basic, Visual C# ou C++ qui s'exécute sur le Common Language Runtime). Le débogage d'applications en mode mixte est largement transparent dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il n'est pas très différent du débogage d'une application en mode unique. Quelques considérations spéciales sont toutefois à prendre en compte.

@@ -1,5 +1,7 @@
 ---
 title: CV_HREG_e | Microsoft Docs
+description: Obtenir des informations de référence sur le type d’énumération CV_HREG_e, qui spécifie un registre cible dans le kit de développement logiciel (SDK) debug interface Access.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f24476bc00293f204dfa28d57ca2d961c2d55d9d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462106"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728554"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 Spécifie un registre cible.
@@ -25,7 +27,7 @@ Spécifie un registre cible.
 > [!NOTE]
 > Étant donné que l' `CV_HREG_e` énumération est trop volumineuse pour être dupliquée dans son intégralité ici, une version abrégée est fournie en tant que référence. Les entrées manquantes sont nonotées en italique. L’énumération complète est disponible dans le fichier d’en-tête cvconst. h.
 
-## <a name="syntax"></a>Syntaxe
+## <a name="syntax"></a>Syntax
 
 ```C++
 enum CV_HREG_e {
@@ -431,7 +433,7 @@ CV_AM33_ * registres utilisés par Matsushita/Panasonic AM33 et les processeurs 
 
 CV_M32R_ * registres utilisés par le processeur M32R Mitsubishi.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Chaque type de processeur utilise son propre ensemble unique de registres.
 
 Les valeurs de cette énumération sont passées aux méthodes suivantes :

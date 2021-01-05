@@ -1,7 +1,8 @@
 ---
 title: Analyseurs Roslyn et bibliothèques de code pour ImmutableArrays
-titleSuffix: ''
+description: Découvrez comment créer un analyseur Roslyn réel pour intercepter les erreurs courantes lors de l’utilisation du package NuGet System. Collections. immuable.
 ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037645"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715767"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs Roslyn et bibliothèque prenant en charge le code pour ImmutableArrays
 
@@ -26,7 +27,7 @@ Le [.NET Compiler Platform](https://github.com/dotnet/roslyn) (« Roslyn ») v
 Pour générer cet exemple, vous avez besoin des éléments suivants :
 
 * Visual Studio 2015 (pas une édition Express) ou une version ultérieure. Vous pouvez utiliser l' [édition Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) gratuite
-* [SDK Visual Studio](../extensibility/visual-studio-sdk.md). Vous pouvez également, lors de l’installation de Visual Studio, cocher **Outils d’extensibilité de Visual Studio** sous **outils courants** pour installer le kit de développement logiciel (SDK) en même temps. Si vous avez déjà installé Visual Studio, vous pouvez également installer ce kit de développement logiciel (SDK) en accédant au menu principal **fichier**  >  **nouveau**  >  **projet**, en choisissant **C#** dans le volet de navigation de gauche, puis en choisissant **extensibilité**. Quand vous choisissez le modèle de projet «**installer le outils d’extensibilité de Visual Studio**», vous êtes invité à télécharger et à installer le kit de développement logiciel (SDK).
+* [SDK Visual Studio](../extensibility/visual-studio-sdk.md). Vous pouvez également, lors de l’installation de Visual Studio, cocher **outils d’extensibilité de Visual Studio** sous **outils courants** pour installer le kit de développement logiciel (SDK) en même temps. Si vous avez déjà installé Visual Studio, vous pouvez également installer ce kit de développement logiciel (SDK) en accédant au menu principal **fichier**  >  **nouveau**  >  **projet**, en choisissant **C#** dans le volet de navigation de gauche, puis en choisissant **extensibilité**. Quand vous choisissez le modèle de projet «**installer le outils d’extensibilité de Visual Studio**», vous êtes invité à télécharger et à installer le kit de développement logiciel (SDK).
 * [Kit de développement logiciel (SDK) .NET Compiler Platform (« Roslyn »)](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Vous pouvez également installer ce kit de développement logiciel (SDK) en accédant au menu principal **fichier**  >  **nouveau**  >  **projet**, en choisissant **C#** dans le volet de navigation gauche, puis en choisissant **extensibilité**. Lorsque vous choisissez le modèle de projet «**Télécharger le kit de développement logiciel (SDK) .NET Compiler Platform**», vous êtes invité à télécharger et à installer le kit de développement logiciel (SDK). Ce kit de développement logiciel (SDK) comprend le [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Cet outil utile vous aide à déterminer les types de modèles de code que vous devez rechercher dans votre analyseur. L’infrastructure de l’analyseur appelle dans votre code pour des types de modèle de code spécifiques, de sorte que votre code s’exécute uniquement lorsque cela est nécessaire et peut se concentrer uniquement sur l’analyse du code pertinent.
 
 ## <a name="whats-the-problem"></a>Quel est le problème?
@@ -57,7 +58,7 @@ L’erreur avec les initialiseurs de collection se produit parce que la `Immutab
 
 ## <a name="find-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Rechercher les types de nœuds de syntaxe appropriés pour déclencher votre analyseur
 
- Pour commencer à créer l’analyseur, commencez par déterminer le type de SyntaxNode que vous devez rechercher. Lancez l' **Syntax Visualizer** à partir de la **vue**de menu  >  **autres**  >  **Syntax Visualizer Roslyn**Windows.
+ Pour commencer à créer l’analyseur, commencez par déterminer le type de SyntaxNode que vous devez rechercher. Lancez l' **Syntax Visualizer** à partir de la **vue** de menu  >  **autres**  >  **Syntax Visualizer Roslyn** Windows.
 
 Placez le signe insertion de l’éditeur sur la ligne qui déclare `b1` . Vous verrez que le Syntax Visualizer vous indique que vous êtes dans un `LocalDeclarationStatement` nœud de l’arborescence de syntaxe. Ce nœud a un, `VariableDeclaration` qui a à son tour un `VariableDeclarator` , qui a à son tour un `EqualsValueClause` , et enfin, il y a un `ObjectCreationExpression` . Lorsque vous cliquez dans l’arborescence Syntax Visualizer de nœuds, la syntaxe de la fenêtre de l’éditeur est mise en surbrillance pour vous montrer le code représenté par ce nœud. Les noms des sous-types SyntaxNode correspondent aux noms utilisés dans la grammaire C#.
 
@@ -141,7 +142,7 @@ Vous voyez toujours des tildes rouges sous. `ImmutableArray` Placez le signe ins
 
 Dans la première instance de Visual Studio, définissez un point d’arrêt au début de votre `AnalyzeObjectCreation` méthode en appuyant sur **F9** avec le signe insertion sur la première ligne.
 
-Lancez à nouveau votre analyseur à l’aide de la touche **F5**et, dans la deuxième instance de Visual Studio, rouvrez l’application console que vous avez créée pour la dernière fois.
+Lancez à nouveau votre analyseur à l’aide de la touche **F5** et, dans la deuxième instance de Visual Studio, rouvrez l’application console que vous avez créée pour la dernière fois.
 
 Vous revenez à la première instance de Visual Studio au point d’arrêt, car le compilateur Roslyn a vu une expression de création d’objet et a été appelée dans votre analyseur.
 

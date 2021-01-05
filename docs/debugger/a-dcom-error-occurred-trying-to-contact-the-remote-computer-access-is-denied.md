@@ -1,6 +1,8 @@
 ---
 title: Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé.
 titleSuffix: ''
+description: "'Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé.» Affichez les informations relatives à cette référence des erreurs de débogage distant Visual Studio."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 093f2e46178d8734e7499c9f7a340396bbbdc9ed
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c430462a224cb4604c09984a5397e540ce752b8a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851630"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729195"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé.
 Le débogage distant utilise DCOM pour les communications entre l’ordinateur hôte et l’ordinateur distant dans les situations suivantes :

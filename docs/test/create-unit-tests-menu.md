@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441857"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756628"
 ---
-# <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
+# <a name="create-unit-test-method-stubs-from-code"></a>Créer des stubs de méthode de test unitaire à partir du code
 
 La commande **Créer des tests unitaires** permet de créer des stubs de méthodes de tests unitaires. Cette fonctionnalité permet de configurer facilement un projet de test, la classe de test et le stub de méthode de test qui y est contenu.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> La commande de menu **créer des tests unitaires** est uniquement disponible pour le code C# qui cible .NET Framework (mais pas .net Core).
+> La commande de menu **créer des tests unitaires** est uniquement disponible pour le code C# qui cible .NET Framework (mais pas .net Core ni .NET standard).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
@@ -33,11 +33,13 @@ La commande **Créer des tests unitaires** permet de créer des stubs de méthod
 
 La commande de menu **Créer des tests unitaires** est extensible et peut servir à générer des tests pour MSTest, MSTest V2, NUnit et xUnit.
 
-## <a name="get-started"></a>Bien démarrer
+## <a name="get-started"></a>Prise en main
 
 Pour bien démarrer, sélectionnez une méthode, un type ou un espace de noms dans l’éditeur de code du projet à tester, cliquez avec le bouton droit, puis choisissez **Créer des tests unitaires**. La boîte de dialogue **Créer des tests unitaires** s’ouvre et vous permet de configurer la façon de créer les tests.
 
 ![Utilisation de la commande Créer des tests unitaires](media/createunittestcommand.png)
+
+Si vous ne voyez pas les options de Framework de test pour NUnit ou xUnit, consultez [utiliser des infrastructures de tests unitaires tierces](#use-third-party-unit-test-frameworks).
 
 ## <a name="set-unit-test-traits"></a>Définir des caractéristiques des tests unitaires
 

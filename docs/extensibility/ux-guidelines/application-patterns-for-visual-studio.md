@@ -1,5 +1,7 @@
 ---
 title: Modèles d’application pour Visual Studio | Microsoft Docs
+description: Découvrez la différence entre les fenêtres de document, les fenêtres outil et les boîtes de dialogue non modales, y compris les modèles d’utilisation de fenêtre pour les nouvelles fonctionnalités de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698597"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716118"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interactions entre les fenêtres
@@ -33,7 +35,7 @@ Réfléchissez bien au type de conteneur dont vous avez besoin. Les considérati
 ||Fenêtre de document|Fenêtre outil|Boîte de dialogue non modale|
 |-|---------------------|-----------------|---------------------|
 | **Position** | Toujours positionné dans le même document et n’est pas ancré autour des bords de l’IDE. Elle peut être « extraite » pour qu’elle flotte séparément de l’interpréteur de commandes principal. | Généralement, les onglets sont ancrés autour des bords de l’IDE, mais ils peuvent être personnalisés pour être flottants, masqués automatiquement (désépinglés) ou ancrés dans le même document.|Grande fenêtre flottante distincte de l’IDE. |
-| **Valider le modèle** | *Validation différée*<br /><br /> Pour enregistrer les données dans un document, l’utilisateur doit émettre la commande **fichier &gt; Enregistrer**, **Enregistrer sous**ou **enregistrer tout** . Une fenêtre de document a le concept de données qui est « modifié », puis validé sur l’une des commandes d’enregistrement. Lors de la fermeture d’une fenêtre de document, tout le contenu est enregistré sur le disque ou perdu. | *Validation immédiate*<br /><br /> Il n’existe aucun modèle d’enregistrement. Pour les fenêtres outil de l’inspecteur qui aident à modifier un fichier, le fichier doit être ouvert dans l’éditeur ou le concepteur actif, et l’éditeur ou le concepteur est propriétaire de l’enregistrement. | *Validation différée ou immédiate*<br /><br /> La plupart du temps, une boîte de dialogue non modale nécessite une action pour valider les modifications et permet une opération d’annulation, qui annule toutes les modifications apportées dans la session de dialogue.  Cela fait la différence entre une boîte de dialogue non modale et une fenêtre outil dans laquelle les fenêtres outil disposent toujours d’un modèle de validation immédiate. |
+| **Valider le modèle** | *Validation différée*<br /><br /> Pour enregistrer les données dans un document, l’utilisateur doit émettre la commande **fichier &gt; Enregistrer**, **Enregistrer sous** ou **enregistrer tout** . Une fenêtre de document a le concept de données qui est « modifié », puis validé sur l’une des commandes d’enregistrement. Lors de la fermeture d’une fenêtre de document, tout le contenu est enregistré sur le disque ou perdu. | *Validation immédiate*<br /><br /> Il n’existe aucun modèle d’enregistrement. Pour les fenêtres outil de l’inspecteur qui aident à modifier un fichier, le fichier doit être ouvert dans l’éditeur ou le concepteur actif, et l’éditeur ou le concepteur est propriétaire de l’enregistrement. | *Validation différée ou immédiate*<br /><br /> La plupart du temps, une boîte de dialogue non modale nécessite une action pour valider les modifications et permet une opération d’annulation, qui annule toutes les modifications apportées dans la session de dialogue.  Cela fait la différence entre une boîte de dialogue non modale et une fenêtre outil dans laquelle les fenêtres outil disposent toujours d’un modèle de validation immédiate. |
 | **Visibilité** | *Ouvrir/créer (fichier) et fermer*<br /><br /> Pour ouvrir une fenêtre de document, vous pouvez ouvrir un document existant ou utiliser un modèle pour créer un nouveau document. Il n’y a aucune \<specific editor> commande « ouvrir ». | *Masquer et afficher*<br /><br /> Les fenêtres outil à instance unique peuvent être masquées ou affichées. Le contenu et les États au sein de la fenêtre outil sont rendus persistants en vue ou masqués. Les fenêtres outil multi-instances peuvent être fermées et masquées. Quand une fenêtre outil à instances multiples est fermée, le contenu et l’état de la fenêtre outil sont ignorés. | *Lancé à partir d’une commande*<br /><br /> Les boîtes de dialogue sont lancées à partir d’une commande basée sur des tâches. |
 | **Fois** | *Multi-instance*<br /><br /> Plusieurs éditeurs peuvent être ouverts en même temps et en modifiant différents fichiers, tandis que certains éditeurs autorisent également l’ouverture du même fichier dans plusieurs éditeurs (à l’aide de la commande **fenêtre &gt; nouvelle fenêtre** ).<br /><br /> Un seul éditeur peut modifier un ou plusieurs fichiers en même temps (Concepteur de projets). | *Une seule ou plusieurs instances*<br /><br /> Le contenu change pour refléter le contexte (comme dans l’Explorateur de propriétés) ou le focus ou le contexte Push vers d’autres fenêtres (Liste des tâches, Explorateur de solutions).<br /><br /> Les fenêtres outil à instance unique et à instances multiples doivent être associées à la fenêtre de document active, à moins qu’il y ait une raison impérieuse de ne pas les utiliser. | *Instance unique* |
 | **Exemples** | **Éditeurs de texte**, comme l’éditeur de code<br /><br /> Des **aires de conception**, comme un concepteur de formulaires ou une surface de modélisation<br /><br /> **Contrôler les dispositions similaires aux boîtes de dialogue**, comme le concepteur de manifeste | L' **Explorateur de solutions** fournit une solution et des projets contenus dans la solution.<br /><br /> L' **Explorateur de serveurs** fournit une vue hiérarchique des serveurs et des connexions de données que l’utilisateur choisit d’ouvrir dans la fenêtre. L’ouverture d’un objet à partir de la hiérarchie de la base de données, comme une requête, ouvre une fenêtre de document et permet à l’utilisateur de modifier la requête.<br /><br /> L' **Explorateur de propriétés** affiche les propriétés de l’objet sélectionné dans une fenêtre de document ou dans une autre fenêtre outil. Les propriétés sont présentées dans une vue de grille hiérarchique ou dans des contrôles de type dialogue complexes et permettent à l’utilisateur de définir les valeurs de ces propriétés. | |
@@ -77,7 +79,7 @@ Les fenêtres outil sont de type instance unique ou multi-instance. Certaines fe
 
 ![Fenêtre outil activant la commande’nouvelle fenêtre’lorsqu’une instance de la fenêtre est active](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Fenêtre outil activant la commande’nouvelle fenêtre’lorsqu’une instance de la fenêtre est active
 
-Les fenêtres outil à instance unique peuvent être masquées ou affichées, tandis que les fenêtres outil multi-instances peuvent être fermées et masquées. Toutes les fenêtres Outil peuvent être ancrées, liées par tabulation, flottantes ou définies en tant que fenêtre enfant MDI (semblable à une fenêtre de document). Toutes les fenêtres outil doivent répondre aux commandes de gestion de fenêtre appropriées dans le menu fenêtre :
+Les fenêtres outil à instance unique peuvent être masquées ou affichées, tandis que les fenêtres outil multi-instances peuvent être fermées et masquées. Toutes les fenêtres Outil peuvent être ancrées, liées par tabulation, flottantes ou définies en tant que fenêtre enfant d’interface Multiple-Document (MDI) (similaire à une fenêtre de document). Toutes les fenêtres outil doivent répondre aux commandes de gestion de fenêtre appropriées dans le menu fenêtre :
 
 ![Commandes de gestion des fenêtres dans le menu fenêtre de Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Commandes de gestion des fenêtres dans le menu fenêtre de Visual Studio
 
@@ -151,7 +153,7 @@ Voici des exemples de fenêtres d’outils de liste navigable : Explorateur de 
 | --- | --- |
 | Autos ||
 | Immédiat ||
-| Output | La fenêtre sortie peut être utilisée chaque fois que vous avez des événements textuels ou un État à déclarer. |
+| Sortie | La fenêtre sortie peut être utilisée chaque fois que vous avez des événements textuels ou un État à déclarer. |
 | Mémoire ||
 | Points d’arrêt ||
 | Exécution en cours ||
@@ -176,7 +178,7 @@ La modification des documents nécessite une expérience utilisateur cohérente.
 
 - Met à jour les fonctionnalités associées dans les fenêtres et les menus connexes lorsque la fenêtre de document s’ouvre.
 
-- Les commandes de menu sont correctement intégrées à des menus courants tels que les menus **Edition**, **format**et **affichage** . Si un grand nombre de commandes spécialisées sont disponibles, vous pouvez créer un nouveau menu. Ce nouveau menu doit être visible uniquement lorsque le document a le focus.
+- Les commandes de menu sont correctement intégrées à des menus courants tels que les menus **Edition**, **format** et **affichage** . Si un grand nombre de commandes spécialisées sont disponibles, vous pouvez créer un nouveau menu. Ce nouveau menu doit être visible uniquement lorsque le document a le focus.
 
 - Une barre d’outils incorporée peut être placée en haut de l’éditeur. Il est préférable d’avoir une barre d’outils distincte qui s’affiche en dehors de l’éditeur.
 
@@ -337,7 +339,7 @@ Les boîtes de dialogue en couches incluent des onglets, des tableaux de bord et
 
 Dans le cas le plus simple, le mécanisme de basculement entre les regroupements est un contrôle onglet. Plusieurs solutions sont disponibles. Pour savoir comment choisir le style le plus approprié, consultez hiérarchisation et structuration en couches.
 
-La boîte de dialogue ** &gt; Options des outils** est un exemple de boîte de dialogue en couches utilisant une arborescence incorporée :
+La boîte de dialogue **&gt; Options des outils** est un exemple de boîte de dialogue en couches utilisant une arborescence incorporée :
 
 ![Outils > options est un exemple de boîte de dialogue en couches dans Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Outils > options est un exemple de boîte de dialogue en couches dans Visual Studio.
 
@@ -398,7 +400,7 @@ Soyez cohérent avec les configurations de contrôle existantes qui accomplissen
   ![Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio
 
 #### <a name="control-buttons"></a>Boutons de contrôle
-En général, les boutons **OK**, **Annuler**et **aide** doivent être disposés horizontalement dans le coin inférieur droit de la boîte de dialogue. L’autre pile verticale est autorisée si une boîte de dialogue contient plusieurs autres boutons au bas de la boîte de dialogue qui présentent une confusion visuelle avec les boutons de contrôle.
+En général, les boutons **OK**, **Annuler** et **aide** doivent être disposés horizontalement dans le coin inférieur droit de la boîte de dialogue. L’autre pile verticale est autorisée si une boîte de dialogue contient plusieurs autres boutons au bas de la boîte de dialogue qui présentent une confusion visuelle avec les boutons de contrôle.
 
 ![Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio
 
@@ -411,11 +413,11 @@ La boîte de dialogue doit inclure un bouton de contrôle par défaut. Pour dét
 Évitez de choisir une action destructrice permanente pour la commande par défaut. Si une telle commande est présente, choisissez plutôt une commande plus sûre.
 
 #### <a name="access-keys"></a>Clés d'accès
-N’utilisez pas de touches d’accès pour les boutons **OK**, **Annuler**ou **aide** . Ces boutons sont mappés par défaut aux touches de raccourci :
+N’utilisez pas de touches d’accès pour les boutons **OK**, **Annuler** ou **aide** . Ces boutons sont mappés par défaut aux touches de raccourci :
 
 | Nom du bouton | Raccourci clavier |
 | --- | --- |
-| OK | Entrez |
+| Ok | Entrez |
 | Annuler | Échap |
 | Aide | F1 |
 
@@ -436,9 +438,9 @@ Il existe des avantages et des inconvénients pour les différentes méthodes de
 
 | Mécanisme de commutation | Avantages et utilisation appropriée | Inconvénients et utilisation inappropriée |
 | --- | --- | --- |
-| Contrôle Tab | Regrouper logiquement les pages de boîtes de dialogue dans les jeux associés<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent sur une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Les étiquettes d’onglet doivent être courtes : un ou deux mots qui peuvent facilement identifier le contenu.<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : ** &gt; Propriétés** d’un élément de l’Explorateur de fichiers | Il peut être difficile de créer des étiquettes courtes descriptives<br /><br />Ne redimensionne généralement pas les cinq derniers onglets dans une boîte de dialogue<br /><br />Inapproprié si vous disposez d’un trop grand nombre d’onglets pour une ligne (utilisez une autre technique de superposition)<br /><br />Non extensible |
+| Contrôle Tab | Regrouper logiquement les pages de boîtes de dialogue dans les jeux associés<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent sur une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Les étiquettes d’onglet doivent être courtes : un ou deux mots qui peuvent facilement identifier le contenu.<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : **&gt; Propriétés** d’un élément de l’Explorateur de fichiers | Il peut être difficile de créer des étiquettes courtes descriptives<br /><br />Ne redimensionne généralement pas les cinq derniers onglets dans une boîte de dialogue<br /><br />Inapproprié si vous disposez d’un trop grand nombre d’onglets pour une ligne (utilisez une autre technique de superposition)<br /><br />Non extensible |
 | Navigation dans la barre latérale | Appareil de commutation simple qui peut accueillir plus de catégories que les onglets<br /><br />Liste plate de catégories (aucune hiérarchie)<br /><br />Extensible<br /><br />Exemple : **personnaliser... &gt; Ajouter une commande** | Il ne s’agit pas d’une bonne utilisation de l’espace horizontal s’il y a moins de trois groupes<br /><br />La tâche peut être mieux adaptée à une liste déroulante |
-| Contrôle Tree | Autorise des catégories illimitées<br /><br />Permet le regroupement et/ou la hiérarchie des catégories<br /><br />Extensible<br /><br />Exemple : ** &gt; Options des outils** | Des hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessif<br /><br />Visual Studio présente un surabondance des arborescences |
+| Contrôle Tree | Autorise des catégories illimitées<br /><br />Permet le regroupement et/ou la hiérarchie des catégories<br /><br />Extensible<br /><br />Exemple : **&gt; Options des outils** | Des hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessif<br /><br />Visual Studio présente un surabondance des arborescences |
 | Assistant | Facilite l’achèvement des tâches en guidant l’utilisateur par le biais d’étapes séquentielles basées sur des tâches : l’Assistant représente une tâche de haut niveau et les panneaux individuels représentent les sous-tâches nécessaires pour accomplir la tâche globale.<br /><br />Utile lorsque la tâche franchit les limites de l’interface utilisateur, comme lorsque l’utilisateur aurait besoin d’utiliser plusieurs éditeurs et fenêtres outil pour terminer la tâche<br /><br />Utile lorsque la tâche nécessite une création de branche<br /><br />Utile lorsque la tâche contient des dépendances entre les étapes<br /><br />Utile lorsque plusieurs tâches similaires avec une fourche de décision peuvent être présentées dans une boîte de dialogue pour réduire le nombre de boîtes de dialogue similaires | Inapproprié pour une tâche qui n’a pas besoin d’un flux de travail séquentiel<br /><br />Les utilisateurs peuvent devenir submergés et déconcertés par un Assistant avec un trop grand nombre d’étapes<br /><br />Les assistants ont une surface d’écran limitée de manière intrinsèque |
 
 ##### <a name="hallways-or-dashboards"></a>Couloirs ou tableaux de bord

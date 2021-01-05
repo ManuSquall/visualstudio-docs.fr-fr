@@ -1,5 +1,7 @@
 ---
 title: Onglet classe de la boîte de dialogue Propriétés de la fenêtre | Microsoft Docs
+description: Sélectionnez l’onglet classe dans Visual Studio, déplacez le focus sur la fenêtre vue fenêtres, sélectionnez un nœud de fenêtre, puis choisissez afficher les propriétés de la > pour afficher la boîte de dialogue Propriétés de la fenêtre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62565011"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729026"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Onglet Classe de la boîte de dialogue Propriétés de la fenêtre
 Utilisez l’onglet **classe** pour afficher des informations sur la classe de la fenêtre sélectionnée. Pour afficher la [boîte de dialogue Propriétés](../debugger/window-properties-dialog-box.md)de la fenêtre, déplacez le focus vers la fenêtre [vue Windows](../debugger/windows-view.md) . Sélectionnez un nœud de fenêtre dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

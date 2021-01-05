@@ -1,5 +1,7 @@
 ---
 title: Table des objets Graphics | Microsoft Docs
+description: En savoir plus sur la table des objets Graphics, qui dans Visual Studio Graphics Analysis vous aide à comprendre les objets Direct3D qui prennent en charge un frame d’un jeu ou d’une application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735450"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727578"
 ---
 # <a name="graphics-object-table"></a>Table des objets Graphics
 La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'identifier les objets Direct3D qui prennent en charge un frame de votre jeu ou application.
@@ -31,7 +33,7 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 
  La Table des objets prend en charge le copier-coller, ce qui vous permet d'utiliser un autre outil (par exemple Microsoft Excel) pour examiner son contenu.
 
- En outre, vous pouvez utiliser la liste déroulante **type** située dans le coin supérieur gauche pour afficher ou masquer des objets de **mémoires tampons**de type, de **nuanceurs** ou de **textures**, ou tous ces éléments à la fois.  En outre, vous pouvez utiliser la zone de recherche située dans le coin supérieur droit pour rechercher des lignes spécifiques dans toutes les données présentées.  Par exemple, vous pouvez rechercher *D32_FLOAT* pour rechercher toutes les instances d’objets de ce format dans la liste.
+ En outre, vous pouvez utiliser la liste déroulante **type** située dans le coin supérieur gauche pour afficher ou masquer des objets de **mémoires tampons** de type, de **nuanceurs** ou de **textures**, ou tous ces éléments à la fois.  En outre, vous pouvez utiliser la zone de recherche située dans le coin supérieur droit pour rechercher des lignes spécifiques dans toutes les données présentées.  Par exemple, vous pouvez rechercher *D32_FLOAT* pour rechercher toutes les instances d’objets de ce format dans la liste.
 
 ### <a name="graphics-object-table-format"></a>Format de la Table des objets Graphics
  La Table des objets affiche les objets et ressources Direct3D qui prennent en charge le frame associé à l'événement sélectionné, par exemple, les objets d'état, les mémoires tampons, les nuanceurs, les textures et d'autres ressources. Les objets créés dans un frame précédent, mais qui ne sont pas utilisés dans le frame capturé sont omis de la table des objets. Les objets détruits par des événements précédents dans le frame capturé sont omis dans les événements postérieurs. Les objets qui ne sont pas définis dans D3D10Device ou D3D11DeviceContext sont affichés sous forme de texte grisé. Les objets sont affichés sous forme de tableau.
@@ -103,7 +105,7 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 |**double**|Valeur à virgule flottante 64 bits.|
 |**int**|Valeur entière signée 32 bits. Identique à **4byte**.|
 |**int64**|Valeur entière signée 64 bits. Identique à **8byte**.|
-|**xint**|Valeur hexadécimale 32 bits. Identique à **x4byte**.|
+|**xInt**|Valeur hexadécimale 32 bits. Identique à **x4byte**.|
 |**xint64**|Valeur hexadécimale 64 bits. Identique à **x8byte**.|
 |**uint**|Valeur entière non signée 32 bits. Identique à **u4byte**.|
 |**uint64**|Valeur entière non signée 64 bits. Identique à **u8byte**.|

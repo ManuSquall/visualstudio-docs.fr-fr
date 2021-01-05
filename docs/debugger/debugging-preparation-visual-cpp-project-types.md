@@ -1,6 +1,7 @@
 ---
 title: Préparer le débogage de projets C++ | Microsoft Docs
-ms.custom: seodec18
+description: Obtenir des informations sur la préparation du débogage des types de projet de base créés par les modèles de projet Visual C++ dans Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916318"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728302"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Préparation du débogage : types de projets C++
 Cette section explique le débogage de types de projets de base, créés par les modèles de projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -101,7 +102,7 @@ Cette section explique le débogage de types de projets de base, créés par les
 
  Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est semblable à celui réalisé dans les applications Windows Forms managées.
 
- Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres dans la boîte de dialogue ** \<project name> pages de propriétés** . Pour plus d’informations, consultez [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).
+ Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres dans la boîte de dialogue **\<project name> pages de propriétés** . Pour plus d’informations, consultez [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).
 
  Pour plus d’informations, consultez [paramètres de projet pour une configuration de débogage C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
@@ -111,7 +112,7 @@ Cette section explique le débogage de types de projets de base, créés par les
 
 ## <a name="see-also"></a>Voir aussi
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
-- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attachement à un ou plusieurs programmes en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Guide pratique pour créer un projet d’application Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

@@ -1,5 +1,7 @@
 ---
 title: Résoudre les problèmes de découverte de modèles dans Visual Studio | Microsoft Docs
+description: Découvrez comment activer la journalisation des diagnostics pour résoudre les problèmes de déploiement de projets et de modèles personnalisés dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235041"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716044"
 ---
 # <a name="troubleshooting-template-installation"></a>Dépannage de l’installation du modèle
 

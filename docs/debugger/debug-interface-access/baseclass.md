@@ -1,5 +1,7 @@
 ---
 title: BaseClass | Microsoft Docs
+description: Recherchez des informations de référence sur le type de symbole de BaseClass. Une classe de base pour les symboles de type défini par l’utilisateur (UDT) est identifiée par un enfant avec une balise SymTagBaseClass.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fcf4e7db87ecf8f0b1041dd013e4b1d8571533
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d813955c8b61965b41cd252aaa35cb7ca323234
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462301"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728887"
 ---
 # <a name="baseclass"></a>BaseClass
 Chaque classe de base pour un symbole de type défini par l’utilisateur (UDT) est identifiée par un enfant avec une `SymTagBaseClass` balise. La propriété [IDiaSymbol :: get_Type](../../debugger/debug-interface-access/idiasymbol-get-type.md) contient le symbole de l’UDT sous-jacent, et toutes les propriétés du type défini par l’utilisateur sous-jacent sont disponibles dans le cadre de ce symbole BaseClass.

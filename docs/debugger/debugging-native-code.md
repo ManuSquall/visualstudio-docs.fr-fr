@@ -1,5 +1,7 @@
 ---
 title: Débogage de code natif | Microsoft Docs
+description: Découvrez les problèmes de débogage courants et les techniques de haut niveau pour les applications natives dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738166"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728315"
 ---
 # <a name="debugging-native-code"></a>Débogage du code natif
 Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour savoir comment utiliser le débogueur Visual Studio, consultez [tout d’abord le débogueur](../debugger/debugger-feature-tour.md).
@@ -41,7 +43,7 @@ Cette section décrit des techniques et des problèmes de débogage courants pou
 
  [Techniques de débogage MFC](../debugger/mfc-debugging-techniques.md) Vous renvoie à des techniques de débogage pour les programmes MFC, notamment : afxDebugBreak, la macro TRACE, la détection des fuites de mémoire dans MFC, les assertions MFC et la réduction de la taille des versions Debug MFC.
 
- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md) Fournit des liens vers les techniques de débogage pour la bibliothèque Runtime C, notamment l’utilisation de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre malloc et _malloc_dbg, l’écriture de fonctions de raccordement de débogage et le tas de débogage CRT.
+ [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md) Fournit des liens vers les techniques de débogage pour la bibliothèque C Run-Time, notamment l’utilisation de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre malloc et _malloc_dbg, l’écriture de fonctions de raccordement de débogage et le tas de débogage CRT.
 
  [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md) Fournit des réponses aux questions fréquemment posées sur le débogage des programmes C++
 

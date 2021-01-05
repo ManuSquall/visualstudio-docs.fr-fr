@@ -18,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361649"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729390"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes du code pour déboguer vos applications
 
@@ -62,9 +62,9 @@ Pour plus d’informations sur les commandes et les actions que vous pouvez util
 ## <a name="navigate-and-examine-code-from-the-map"></a>Naviguer et examiner le code à partir de la carte
  Pour afficher la définition du code pour chaque champ, double-cliquez sur le champ sur la carte ou sélectionnez le champ et appuyez sur **F12**. La flèche verte se déplace entre les éléments de la carte. Votre curseur dans l'éditeur de code se déplace également automatiquement.
 
- ![Carte de code &#45; examiner la définition de champ](../modeling/media/codemapstoryboardpaint5.png)
+ ![Capture d’écran d’une fenêtre de carte de code avec le champ historique sélectionné et une fenêtre d’éditeur de code dans laquelle toutes les instances de l’historique sont mises en surbrillance.](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Carte de code &#45; examiner la définition de champ](../modeling/media/codemapstoryboardpaint5a.png)
+ ![Capture d’écran d’une fenêtre de carte de code avec le champ paintObjects sélectionné et une fenêtre d’éditeur de code dans laquelle toutes les instances de paintObjects sont mises en surbrillance.](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > Vous pouvez également déplacer la flèche verte sur la table en déplaçant le curseur dans l'éditeur de code.
@@ -81,24 +81,24 @@ Pour plus d’informations sur les commandes et les actions que vous pouvez util
 
  Modifiez la disposition pour réorganiser le flux des relations et simplifier la lecture de la carte. Vous pouvez également déplacer des éléments sur la carte en les faisant glisser.
 
- ![Carte de code &#45; modifier la disposition](../modeling/media/codemapstoryboardpaint7a.png)
+ ![Capture d’écran d’une fenêtre de carte de code avec le menu de disposition ouvert et la commande de gauche à Rgiht sélectionnée.](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > Par défaut, la **disposition incrémentielle** est activée. Ainsi, lorsque vous ajoutez de nouveaux éléments, la carte est réorganisée au minimum. Pour réorganiser la carte entière chaque fois que vous ajoutez de nouveaux éléments, désactivez la **mise en page incrémentielle**.
 
- ![Carte de code &#45; modifier la disposition](../modeling/media/codemapstoryboardpaint7.png)
+ ![Capture d’écran d’une fenêtre de carte de code avec les flèches relationshiop entre les champs qui pointent de gauche à droite.](../modeling/media/codemapstoryboardpaint7.png)
 
  Examinons ces méthodes. Sur la carte, double-cliquez sur la méthode **PaintCanvas** , ou sélectionnez cette méthode et appuyez sur **F12**. Vous apprenez que cette méthode crée `history` et `paintObjects` sous forme de listes vides.
 
- ![Carte de code &#45; examiner la définition de méthode](../modeling/media/codemapstoryboardpaint8.png)
+ ![Capture d’écran d’une fenêtre de carte de code avec la méthode PaintCanvas sélectionnée et une image d’extrait de code montrant le nom de la méthode PainCanvas mis en surbrillance.](../modeling/media/codemapstoryboardpaint8.png)
 
  Répétez maintenant les mêmes étapes pour examiner la définition de la méthode `clear`. Vous apprenez que `clear` effectue des tâches avec `paintObjects` et `history`. Elle appelle ensuite la méthode `Repaint`.
 
- ![Carte de code &#45; examiner la définition de méthode](../modeling/media/codemapstoryboardpaint9.png)
+ ![Capture d’écran d’une fenêtre de carte de code avec la méthode Clear sélectionnée et une image d’extrait de code montrant le code pour la méthode Clear.](../modeling/media/codemapstoryboardpaint9.png)
 
  Examinez maintenant la définition de méthode `addPaintObject`. Elle effectue également quelques tâches avec `history` et `paintObjects`. Elle appelle également `Repaint`.
 
- ![Carte de code &#45; examiner la définition de méthode](../modeling/media/codemapstoryboardpaint10.png)
+ ![Capture d’écran d’une fenêtre de carte de code avec la méthode addPaintObject sélectionnée et une image d’extrait de code montrant le code pour la méthode addPaintObject.](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Rechercher le problème en examinant la carte
  Il apparaît que toutes les méthodes qui modifient `history` et `paintObjects` appellent `Repaint`. Néanmoins la méthode `undo` n'appelle pas `Repaint`, même si `undo` modifie les mêmes champs. Vous pensez ainsi pouvoir résoudre ce problème en appelant `Repaint` depuis `undo`.

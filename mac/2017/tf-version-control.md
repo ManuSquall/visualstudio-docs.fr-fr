@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860552"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729377"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connexion à Team Foundation Version Control
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860552"
 >
 > Si vous avez précédemment utilisé la version de préversion de l’extension TFVC pour Visual Studio pour Mac, elle n’est plus prise en charge lors de la mise à niveau vers Visual Studio 2019 pour Mac.
 
-Azure Repos fournit deux modèles de contrôle de version : [git](/azure/devops/repos/git/?view=azure-devops), système de gestion de version distribué et [Team Foundation version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un système de gestion de version centralisé.
+Azure Repos fournit deux modèles de contrôle de version : [git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), système de gestion de version distribué et [Team Foundation version Control](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), un système de gestion de version centralisé.
 
 Visual Studio pour Mac assure une prise en charge complète des référentiels Git, mais des solutions de contournement sont nécessaires pour pouvoir travailler avec TFVC. Si vous utilisez actuellement TFVC pour la gestion de versions, voici quelques solutions qui vous permettront d’accéder à votre code source hébergé dans TFVC :
 
@@ -69,7 +69,7 @@ Pour **configurer manuellement TEE-CLC** :
 
 Une fois TEE-CLC installé, vous pouvez exécuter la commande `tf eula` pour afficher et accepter le contrat de licence du client.
 
-Enfin, pour vous authentifier avec votre environnement TFS/Azure DevOps, vous devrez créer un jeton d’accès personnel sur le serveur ([en savoir plus sur l’authentification avec des jetons d’accès personnels](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)). Lorsque vous créez et configurez un jeton d’accès personnel qui sera utilisé avec TFVC, veillez à accorder un accès complet.
+Enfin, pour vous authentifier avec votre environnement TFS/Azure DevOps, vous devrez créer un jeton d’accès personnel sur le serveur ([en savoir plus sur l’authentification avec des jetons d’accès personnels](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)). Lorsque vous créez et configurez un jeton d’accès personnel qui sera utilisé avec TFVC, veillez à accorder un accès complet.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Utiliser TEE-CLC pour se connecter au référentiel
 
@@ -247,11 +247,11 @@ Pour utiliser l’authentification de base, il est nécessaire d’activer **Inf
 
 2. Dans la barre d’outils de votre organisation, sélectionnez l’icône d’engrenage et sélectionnez **Stratégie** :
 
-    ![Option de paramètres de stratégie sélectionnée](media/tfvc-auth2.png)
+    ![Capture d’écran de la barre d’outils de l’organisation Azure DevOps avec l’icône d’engrenage sélectionnée et stratégie sélectionnée dans le menu déroulant.](media/tfvc-auth2.png)
 
 3. Passez en revue les paramètres de connexion de votre application. Changez ces paramètres en fonction de vos stratégies de sécurité :
 
-    ![Option de paramètres de stratégie sélectionnée](media/tfvc-auth.png)
+    ![Capture d’écran de l’écran de stratégie dans Azure DevOps Services, montrant les paramètres des stratégies de connexion d’application.](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>Je ne vois rien dans TFVC
 

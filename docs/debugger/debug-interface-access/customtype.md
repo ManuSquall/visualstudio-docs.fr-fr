@@ -1,5 +1,7 @@
 ---
 title: CustomType | Microsoft Docs
+description: Recherchez des informations de référence sur le type de symbole CustomType (SymTagCustomType) dans le kit de développement logiciel (SDK) debug interface Access de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5398cbd4b2678bd435673eb8b30155d3593d34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2a202cbf9f315dce647e8ccbdfdde0fd5a01cc5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462154"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728714"
 ---
 # <a name="customtype"></a>CustomType
 Les types définis par le fournisseur (types spécifiques au compilateur) sont identifiés par un `SymTagCustomType` symbole.

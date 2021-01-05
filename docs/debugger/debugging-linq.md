@@ -1,5 +1,7 @@
 ---
 title: Débogage de LINQ | Microsoft Docs
+description: Déboguez LINQ (Language Integrated Query) dans Visual Studio. Affichez les résultats LINQ. Comprenez les différences de comportement lors du pas à pas détaillé dans le code LINQ.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 903ffb5d3187da3bda961caca42cf7436a816b6d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509768"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728359"
 ---
 # <a name="debugging-linq"></a>Débogage LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prend en charge le débogage du code LINQ (Language Integrated Query) avec certaines restrictions. La plupart des fonctionnalités de débogage sont compatibles avec les instructions LINQ, notamment l'exécution pas à pas, la définition de points d'arrêt et la consultation des résultats dans les fenêtres du débogueur. Cette rubrique décrit les principales restrictions liées au débogage de LINQ.

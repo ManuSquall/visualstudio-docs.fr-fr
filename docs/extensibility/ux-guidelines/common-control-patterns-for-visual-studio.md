@@ -1,5 +1,7 @@
 ---
 title: Modèles de contrôle courants pour Visual Studio | Microsoft Docs
+description: Découvrez comment les contrôles communs de Visual Studio suivent les instructions d’interaction avec les ordinateurs de bureau Windows et les situations spéciales qui augmentent ces instructions.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698714"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715884"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Contrôles communs
@@ -31,7 +33,7 @@ Les contrôles communs constituent la majeure partie de l’interface utilisateu
 
 - [Cases à cocher](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
 
-- [Boutons de radio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
+- [Cases d’option](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
 - [Frames de groupe](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
 
@@ -41,7 +43,7 @@ Les contrôles communs constituent la majeure partie de l’interface utilisateu
 
 - [Arborescences](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 La première chose à prendre en compte lorsque vous appliquez un style aux contrôles est de savoir si les contrôles seront utilisés dans l’interface utilisateur. Les contrôles dans l’interface utilisateur standard sont des interfaces utilisateur sans thème et doivent suivre le [style de bureau Windows normal](/windows/desktop/uxguide/controls), ce qui signifie qu’ils ne sont pas remodèleés et doivent apparaître dans leur apparence de contrôle par défaut.
 
 - **Boîtes de dialogue standard (utilitaire) :** pas à thème. Ne pas recréer de modèle. Utilisez les valeurs par défaut du style de contrôle de base.
@@ -54,7 +56,7 @@ La première chose à prendre en compte lorsque vous appliquez un style aux cont
 ### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Champs d’entrée
  Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les zones de texte](/windows/desktop/uxguide/ctrl-text-boxes).
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 
 - Les champs d’entrée ne doivent pas être stylisés dans les boîtes de dialogue d’utilitaire. Utilisez le style de base intrinsèque au contrôle.
 
@@ -77,7 +79,7 @@ La première chose à prendre en compte lorsque vous appliquez un style aux cont
 ### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Zones de liste déroulante et listes déroulantes
 Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les listes déroulantes et les zones de liste](/windows/desktop/uxguide/ctrl-drop)déroulante.
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 
 - Dans les boîtes de dialogue de l’utilitaire, ne remodèleez pas le contrôle. Utilisez le style de base intrinsèque au contrôle.
 
@@ -93,7 +95,7 @@ Les zones de liste modifiable et les listes déroulantes doivent être dimension
 ### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Cases à cocher
 Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les cases à cocher](/windows/desktop/uxguide/ctrl-check-boxes).
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 
 - Dans les boîtes de dialogue de l’utilitaire, ne remodèleez pas le contrôle. Utilisez le style de base intrinsèque au contrôle.
 
@@ -112,7 +114,7 @@ Pour le comportement d’interaction standard, suivez les [instructions du burea
 ### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Cases d’option
 Pour le comportement d’interaction standard, suivez les [instructions relatives au bureau Windows pour les cases d’option](/windows/desktop/uxguide/ctrl-radio-buttons).
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 Dans les boîtes de dialogue d’utilitaire, n’appliquez pas de style aux cases d’option. Utilisez le style de base intrinsèque au contrôle.
 
 #### <a name="specialized-interactions"></a>Interactions spécialisées
@@ -121,7 +123,7 @@ Il n’est pas nécessaire d’utiliser un cadre de groupe pour encadrer les cho
 ### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Frames de groupe
 Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les cadres de groupe](/windows/desktop/uxguide/ctrl-group-boxes).
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 Dans les boîtes de dialogue de l’utilitaire, ne pas styliser les cadres de groupe. Utilisez le style de base intrinsèque au contrôle.
 
 #### <a name="layout"></a>Layout
@@ -255,7 +257,7 @@ Quand utiliser des boutons de commande :
 #### <a name="text"></a>Texte
 Suivez les instructions d’écriture dans [texte et terminologie de l’interface utilisateur](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 
 ##### <a name="standard-unthemed"></a>Standard (pas à thème)
 La plupart des boutons dans Visual Studio s’affichent dans les boîtes de dialogue de l’utilitaire et ne doivent pas être stylisés. Ils doivent refléter l’apparence standard des boutons, comme indiqué par le système d’exploitation.
@@ -320,7 +322,7 @@ Les liens hypertexte sont bien adaptés aux actions basées sur la navigation, t
 #### <a name="writing-style"></a>Style d’écriture
 Suivez les [conseils Windows Desktop pour le texte de l’interface utilisateur](/windows/desktop/uxguide/text-ui). N’utilisez pas « en savoir plus sur », « en savoir plus sur » ou « obtenir de l’aide pour cette formulation ». Au lieu de cela, le texte du lien aide sur les expressions est la question principale ayant obtenu une réponse du contenu de l’aide. Par exemple, «**Comment faire ajouter un serveur au Explorateur de serveurs ?**»
 
-#### <a name="visual-style"></a>Style visuel
+#### <a name="visual-style"></a>Style de visuel
 
 - Les liens hypertexte doivent toujours utiliser [le service VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Si le style d’un lien hypertexte n’est pas correct, il clignote en rouge ou affiche une couleur différente après avoir été visité.
 

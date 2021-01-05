@@ -1,6 +1,7 @@
 ---
 title: Prise en main de Graphics Diagnostics | Microsoft Docs
-ms.custom: seodec18
+description: Préparez-vous à utiliser Graphics Diagnostics pour la première fois, puis capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -8,17 +9,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 88b22364c92a17c7200ddb261d154c7896cd1696
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600097"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727862"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  D’autres éditions, y compris les Visual Studio Code, ne contiennent pas cette fonctionnalité.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
@@ -63,7 +64,7 @@ Téléchargez un exemple à partir de l' [exemple de jeu Direct3D](/samples/micr
 - [Exemple d’UAP Direct3D 12](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.
 ::: moniker-end
 
-Assurez-vous que vous pouvez générer et exécuter l’application avant de poursuivre. Choisissez **générer**générer la  >  **solution** pour vous assurer qu’il se génère sans erreur. Choisissez ensuite **Déboguer**  >  **exécuter sans débogage** (**CTRL + F5**) pour vous assurer qu’il s’exécute correctement. En fonction de l’ordinateur que vous testez avec l’outil, vous devrez peut-être ajuster la plateforme et la cible de débogage pour l’exemple. Par exemple, pour tester la plateforme x64 sur votre ordinateur hôte Visual Studio, choisissez **x64** comme plateforme de solution et **ordinateur local** comme cible de débogage. 
+Assurez-vous que vous pouvez générer et exécuter l’application avant de poursuivre. Choisissez **générer** générer la  >  **solution** pour vous assurer qu’il se génère sans erreur. Choisissez ensuite **Déboguer**  >  **exécuter sans débogage** (**CTRL + F5**) pour vous assurer qu’il s’exécute correctement. En fonction de l’ordinateur que vous testez avec l’outil, vous devrez peut-être ajuster la plateforme et la cible de débogage pour l’exemple. Par exemple, pour tester la plateforme x64 sur votre ordinateur hôte Visual Studio, choisissez **x64** comme plateforme de solution et **ordinateur local** comme cible de débogage. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Démarrer une session Graphics Diagnostics
  Maintenant, vous êtes prêt à démarrer votre première session Graphics Diagnostics. Dans Visual Studio, dans le menu principal, choisissez **Déboguer, graphiques, démarrer le débogage graphique**, ou appuyez simplement sur **Alt + F5**. Cela entraîne le démarrage de votre application dans Graphics Diagnostics et l’affichage des fenêtres de session de diagnostic dans Visual Studio.

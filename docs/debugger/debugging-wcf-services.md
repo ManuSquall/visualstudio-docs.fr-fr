@@ -1,5 +1,7 @@
 ---
 title: Débogage des services WCF | Microsoft Docs
+description: Recherchez des liens vers des articles sur le débogage des services de Windows Communication Foundation (WCF) dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6381a00216e0eabe97277d8c04b71f6377634497
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738069"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728185"
 ---
 # <a name="debugging-wcf-services"></a>Débogage de services WCF
 ## <a name="in-this-section"></a>Dans cette section
@@ -29,7 +31,7 @@ ms.locfileid: "72738069"
 
  [Comment : effectuer un pas à pas détaillé dans les services WCF](../debugger/how-to-step-into-wcf-services.md) Explique la prise en charge du débogueur pour l’exécution pas à pas d’un service WCF.
 
- [Comment : déboguer un service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Décrit comment déboguer un service WCF qui s’exécute en dehors d’IIS ou du [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serveur de développement.
+ [Comment : déboguer un Service Self-Hosted WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Décrit comment déboguer un service WCF qui s’exécute en dehors d’IIS ou du [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serveur de développement.
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)

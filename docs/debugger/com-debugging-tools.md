@@ -1,5 +1,7 @@
 ---
 title: Outils de débogage COM | Microsoft Docs
+description: Obtenir des descriptions des outils de débogage qui peuvent vous aider à tester et à inspecter les programmes COM, tels que l’Explorateur d’objets OLE/COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3c0961d541aaac1f2fd81fee7a0a8e06583dd
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 216d820e455ad9902f19fe3c48caa927b21a2f0f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600169"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728987"
 ---
 # <a name="com-debugging-tools"></a>Outils de débogage COM
 
@@ -43,7 +45,7 @@ Les exemples MFC ActiveX OCLIENT et SUPERPAD sont également disponibles pour te
 ### <a name="see-also"></a>Voir aussi
 
 - [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)
-- [Outils de débogage COM](../debugger/com-debugging-tools.md)
+- [Outils de débogage COM](../debugger/com-debugging-tools.md)
 - [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Exemple OCLIENT : illustre une application conteneur d’édition visuelle](/previous-versions/c2f86tzd(v=vs.100))

@@ -1,6 +1,7 @@
 ---
 title: Résoudre les problèmes du débogage de capture instantanée | Microsoft Docs
-ms.custom: ''
+description: Comprendre la résolution des problèmes et les problèmes connus liés au débogage des instantanés dans Visual Studio. Chargez ICorProfiler sans entraîner de temps d’arrêt sur votre site de production.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea7f1ea1f665f5180851e42814ad4e8c12c8c5
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668519"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728642"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Résolution des problèmes et problèmes connus du débogage de capture instantanée dans Visual Studio.
 

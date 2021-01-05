@@ -15,16 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348247"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729351"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
-Le débogueur Visual Studio peut vous aider à parcourir le code pour inspecter l’état d’une application et afficher son Workflow d’exécution. Vous pouvez utiliser les raccourcis clavier, les commandes de débogage, les points d’arrêt et d’autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Si vous êtes familiarisé avec les commandes de navigation et les raccourcis du débogueur, il est plus rapide et plus facile de trouver et de résoudre les problèmes liés aux applications.  S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
+Le débogueur Visual Studio peut vous aider à parcourir le code pour inspecter l’état d’une application et afficher son Workflow d’exécution. Vous pouvez utiliser les raccourcis clavier, les commandes de débogage, les points d’arrêt et d’autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Si vous êtes familiarisé avec les commandes de navigation et les raccourcis du débogueur, il est plus rapide et plus facile de trouver et de résoudre les problèmes liés aux applications.
+
+> [!NOTE]
+> S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
 
 ## <a name="get-into-break-mode"></a>Passer en mode arrêt
 
@@ -51,7 +54,7 @@ Les commandes de l’étape du débogueur vous aident à inspecter l’état de 
 
 ### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a> Pas à pas détaillé dans le code ligne par ligne
 
-Pour arrêter l’opération sur chaque instruction pendant le débogage, utilisez le **débogage**  >  **pas à pas**détaillé ou appuyez sur **F11**.
+Pour arrêter l’opération sur chaque instruction pendant le débogage, utilisez le **débogage**  >  **pas à pas** détaillé ou appuyez sur **F11**.
 
 Le débogueur parcourt les instructions de code, pas les lignes physiques. Par exemple, une clause `if` peut être écrite sur une ligne :
 
@@ -89,7 +92,7 @@ Vous préférerez peut-être exécuter directement à un emplacement ou une fonc
 
 ### <a name="run-to-a-breakpoint-in-code"></a>Exécuter jusqu’à un point d’arrêt dans le code
 
-Pour définir un point d’arrêt simple dans votre code, cliquez sur la marge la plus à gauche en regard de la ligne de code où vous souhaitez suspendre l’exécution. Vous pouvez également sélectionner la ligne et appuyer sur **F9**, **Sélectionner**  >  **basculer le point d’arrêt**ou cliquer avec le bouton droit et sélectionner point d' **arrêt**  >  **Insérer un point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche, en regard de la ligne de code. Le débogueur interrompt l’exécution juste avant l’exécution de la ligne.
+Pour définir un point d’arrêt simple dans votre code, cliquez sur la marge la plus à gauche en regard de la ligne de code où vous souhaitez suspendre l’exécution. Vous pouvez également sélectionner la ligne et appuyer sur **F9**, **Sélectionner**  >  **basculer le point d’arrêt** ou cliquer avec le bouton droit et sélectionner point d' **arrêt**  >  **Insérer un point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche, en regard de la ligne de code. Le débogueur interrompt l’exécution juste avant l’exécution de la ligne.
 
 ![Définir un point d’arrêt](../debugger/media/dbg_basics_setbreakpoint.png "Définir un point d'arrêt")
 
@@ -101,7 +104,7 @@ Vous pouvez demander au débogueur de s’exécuter jusqu’à ce qu’il atteig
 
 **Pour spécifier un point d’arrêt sur fonction par nom**
 
-1. Sélectionner **Debug**le  >  point d’arrêt**de**la  >  **fonction** de débogage
+1. Sélectionner le  >  point d’arrêt **de** la  >  **fonction** de débogage
 
 1. Dans la boîte de dialogue **nouveau point d’arrêt sur fonction** , tapez le nom de la fonction et sélectionnez sa langue.
 
@@ -115,7 +118,7 @@ Si la fonction est surchargée ou dans plusieurs espaces de noms, vous pouvez ch
 
 **Pour sélectionner un point d’arrêt sur fonction dans la pile des appels**
 
-1. Pendant le débogage, ouvrez la fenêtre **pile des appels** en sélectionnant **Déboguer**la pile des  >  **Windows**  >  **appels**Windows.
+1. Pendant le débogage, ouvrez la fenêtre **pile des appels** en sélectionnant **Déboguer** la pile des  >    >  **appels** Windows.
 
 1. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur une fonction et sélectionnez **Exécuter jusqu’au curseur**, ou appuyez sur **CTRL** + **F10**.
 
@@ -136,7 +139,7 @@ Lorsque vous êtes en pause dans le débogueur, vous pouvez pointer sur une inst
 
 ### <a name="manually-break-into-code"></a>S'arrêter manuellement dans le code
 
-Pour rompre la ligne de code suivante disponible dans une application en cours d’exécution, sélectionnez **Déboguer**  >  **tout**ou appuyez sur **CTRL** + **ALT** + **arrêter**.
+Pour rompre la ligne de code suivante disponible dans une application en cours d’exécution, sélectionnez **Déboguer**  >  **tout** ou appuyez sur **CTRL** + **ALT** + **arrêter**.
 
 ## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a> Déplacer le pointeur pour modifier le workflow d’exécution
 
@@ -163,7 +166,7 @@ Le compteur de programme accède directement au nouvel emplacement, et les instr
 
 Par défaut, le débogueur tente de déboguer uniquement le code de votre application en activant un paramètre appelé *uniquement mon code*. Pour plus d’informations sur le fonctionnement de cette fonctionnalité pour différents types de projets et langages, et sur la façon dont vous pouvez la personnaliser, consultez [uniquement mon code](../debugger/just-my-code.md).
 
-Pour examiner le code du Framework, le code de bibliothèque tiers ou les appels système pendant le débogage, vous pouvez désactiver Uniquement mon code. Dans **Outils** (ou **débogage**) > **options**de  >  **débogage**, désactivez la case à cocher **activer uniquement mon code** . Lorsque Uniquement mon code est désactivé, le code non-utilisateur apparaît dans les fenêtres du débogueur, et le débogueur peut effectuer un pas à pas détaillé dans le code non-utilisateur.
+Pour examiner le code du Framework, le code de bibliothèque tiers ou les appels système pendant le débogage, vous pouvez désactiver Uniquement mon code. Dans **Outils** (ou **débogage**) > **options** de  >  **débogage**, désactivez la case à cocher **activer uniquement mon code** . Lorsque Uniquement mon code est désactivé, le code non-utilisateur apparaît dans les fenêtres du débogueur, et le débogueur peut effectuer un pas à pas détaillé dans le code non-utilisateur.
 
 > [!NOTE]
 > Uniquement mon code n'est pas pris en charge pour les projets Smart Device.
@@ -176,12 +179,12 @@ Pour charger des symboles Microsoft, consultez [configurer les emplacements de s
 
 **Pour charger des symboles pour un composant système spécifique :**
 
-1. Pendant le débogage, ouvrez la fenêtre **modules** en sélectionnant **Déboguer**les  >  **Windows**  >  **modules**Windows, ou en appuyant sur **CTRL** + **ALT** + **U**.
+1. Pendant le débogage, ouvrez la fenêtre **modules** en sélectionnant **Déboguer** les  >    >  **modules** Windows, ou en appuyant sur **CTRL** + **ALT** + **U**.
 
 1. Dans la fenêtre **modules** , vous pouvez déterminer les modules dont les symboles sont chargés dans la colonne **État du symbole** . Cliquez avec le bouton droit sur le module pour lequel vous souhaitez charger des symboles, puis sélectionnez **charger les symboles**.
 
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé
- Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer le pas à pas détaillé des propriétés ou des opérateurs, choisissez Options de **débogage**  >  **Options**. Dans la page **débogage**  >  **général** , désactivez la case à cocher **pas à pas principal dans les propriétés et les opérateurs (managé uniquement)** .
+ Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer le pas à pas détaillé des propriétés ou des opérateurs, choisissez Options de **débogage**  >  . Dans la page **débogage**  >  **général** , désactivez la case à cocher **pas à pas principal dans les propriétés et les opérateurs (managé uniquement)** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)

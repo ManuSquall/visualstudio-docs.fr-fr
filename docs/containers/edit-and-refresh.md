@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298220"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729299"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Déboguer des applications dans un conteneur d’ancrage local
 
@@ -120,7 +120,7 @@ Vos modifications ont été appliquées !
 Souvent, les modifications nécessitent une inspection supplémentaire. Vous pouvez utiliser les fonctionnalités de débogage de Visual Studio pour cette tâche.
 
 1. Dans Visual Studio, ouvrez *index.cshtml.cs*.
-2. Remplacez le contenu de la `OnGet` méthode par le code suivant :
+2. Remplacez le contenu de la méthode `OnGet` par le code suivant :
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
@@ -130,19 +130,19 @@ Souvent, les modifications nécessitent une inspection supplémentaire. Vous pou
 4. Pour démarrer le débogage et atteindre le point d’arrêt, appuyez sur F5.
 5. Basculez vers Visual Studio pour afficher le point d’arrêt. Inspectez les valeurs.
 
-   ![Point d’arrêt](media/edit-and-refresh/breakpoint.png)
+   ![Capture d’écran montrant une partie du code pour Index.cshtml.cs dans Visual Studio avec un point d’arrêt défini à gauche d’une ligne de code mise en surbrillance en jaune.](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>Créer une application console .NET Framework
 
 Lorsque vous utilisez .NET Framework projets d’application console, l’option permettant d’ajouter la prise en charge de l’ancrage sans orchestration n’est pas prise en charge. Vous pouvez toujours utiliser la procédure suivante, même si vous n’utilisez qu’un seul projet d’ancrage.
 
 1. Créez un projet d’application console .NET Framework.
-1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le nœud du projet, puis sélectionnez **Ajouter**la  >  **prise en charge de l’orchestration de conteneur**.  Dans la boîte de dialogue qui s’affiche, sélectionnez **docker compose**. Un fichier dockerfile est ajouté à votre projet et un projet de Docker Compose avec les fichiers de support associés est ajouté.
+1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le nœud du projet, puis sélectionnez **Ajouter** la  >  **prise en charge de l’orchestration de conteneur**.  Dans la boîte de dialogue qui s’affiche, sélectionnez **docker compose**. Un fichier dockerfile est ajouté à votre projet et un projet de Docker Compose avec les fichiers de support associés est ajouté.
 
 ### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
 
 1. Dans Explorateur de solutions, ouvrez *Program.cs*.
-2. Remplacez le contenu de la `Main` méthode par le code suivant :
+2. Remplacez le contenu de la méthode `Main` par le code suivant :
 
    ```csharp
        System.Console.WriteLine("Hello, world!");
@@ -152,13 +152,13 @@ Lorsque vous utilisez .NET Framework projets d’application console, l’option
 4. Appuyez sur F5 pour démarrer le débogage et atteindre le point d’arrêt.
 5. Basculez vers Visual Studio pour afficher le point d’arrêt et inspecter les valeurs.
 
-   ![Point d’arrêt](media/edit-and-refresh/breakpoint-console.png)
+   ![Capture d’écran de la fenêtre de code pour Program.cs dans Visual Studio avec un point d’arrêt défini à gauche d’une ligne de code mise en surbrillance en jaune.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Réutilisation de conteneur
 
 Pendant le cycle de développement, Visual Studio reconstruit uniquement vos images conteneur et le conteneur lui-même lorsque vous modifiez le fichier dockerfile. Si vous ne modifiez pas le fichier dockerfile, Visual Studio réutilise le conteneur à partir d’une exécution antérieure.
 
-Si vous avez modifié votre conteneur manuellement et souhaitez redémarrer avec une image de conteneur propre, utilisez **Build**la  >  commande de**nettoyage** de build dans Visual Studio, puis générez la valeur normal.
+Si vous avez modifié votre conteneur manuellement et souhaitez redémarrer avec une image de conteneur propre, utilisez la  >  commande de **nettoyage** de build dans Visual Studio, puis générez la valeur normal.
 
 ## <a name="troubleshoot"></a>Dépanner
 

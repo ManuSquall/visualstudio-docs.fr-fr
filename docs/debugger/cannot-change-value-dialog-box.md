@@ -1,5 +1,7 @@
 ---
 title: Impossible de changer la valeur, boîte de dialogue | Microsoft Docs
+description: Passez en revue la boîte de dialogue impossible de modifier la valeur, qui s’affiche dans Visual Studio si vous essayez de modifier une variable en une valeur non conforme dans une fenêtre du débogueur ou dans espion Express.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf4181d7ff56bd1a5cf3f195bcea5b02aa023629
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745738"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729052"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Impossible de changer la valeur (boîte de dialogue)
-## <a name="error"></a>Error
- `The value of this variable cannot be changed`Nom de &#124; `The name` *name* `does not exist in the current context` &#124; *différents autres messages*
+## <a name="error"></a>Erreur
+ `The value of this variable cannot be changed`Nom de &#124; `The name`  `does not exist in the current context` &#124; *différents autres messages*
 
  Cette boîte de message s'affiche lorsque vous essayez de remplacer le contenu d'une variable par une valeur non conforme dans une fenêtre du débogueur (Automatique, Espion ou Variables locales) ou dans la boîte de dialogue Espion express. Par exemple, cette boîte de message s'affiche si vous essayez d'attribuer à la valeur d'une variable entière une chaîne de caractères.
 

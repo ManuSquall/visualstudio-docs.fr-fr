@@ -1,5 +1,7 @@
 ---
 title: Échec de l’assertion, boîte de dialogue | Microsoft Docs
+description: En savoir plus sur la boîte de dialogue échec de l’assertion, qui est une boîte de dialogue que vous pouvez rencontrer dans l’interface utilisateur de débogage de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,19 +22,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745768"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729078"
 ---
 # <a name="assertion-failed-dialog-box"></a>Échec de l'assertion (boîte de dialogue)
 Une instruction d'assertion spécifie une condition dont vous prévoyez qu'elle est vraie en un certain point de votre programme. Si cette condition n'est pas vraie, l'assertion échoue, l'exécution de votre programme est interrompue et cette boîte de dialogue apparaît.
 
-|Cliquez|Pour|
+|Cliquez sur|Pour|
 |-----------|--------|
-|Recommencer|Déboguer l'assertion ou obtenir de l'aide sur les assertions.|
+|Réessayer|Déboguer l'assertion ou obtenir de l'aide sur les assertions.|
 |Ignorer|Ignorer l'assertion et poursuivre l'exécution du programme.|
 |Abandon|Arrêter l'exécution du programme et clôturer la session de débogage.|
 

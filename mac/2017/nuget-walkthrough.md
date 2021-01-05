@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950409"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729429"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inclure un package NuGet dans votre projet
 
@@ -76,7 +76,7 @@ Les mises à jour d’un package peuvent être effectuées toutes en même temps
 
 Cliquez avec le bouton droit sur **Packages** pour accéder au menu contextuel :
 
-![Menu Packages](media/nuget-walkthrough-PackagesMenu.png)
+![Capture d’écran montrant le nœud Packages sélectionné et le menu contextuel de clic droit ouvert avec les commandes ajouter des packages, mettre à jour, restaurer et actualiser.](media/nuget-walkthrough-PackagesMenu.png)
 
 * **Ajouter des packages** : ouvre la fenêtre permettant d’ajouter plus de packages au projet.
 * **Mettre à jour** : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
@@ -86,7 +86,7 @@ Les options Mettre à jour et Restaurer sont également disponibles au niveau de
 
 Vous pouvez aussi cliquer avec le bouton droit sur des packages individuels pour accéder à un menu contextuel :
 
-![Menu Packages](media/nuget-walkthrough-PackageMenu.png)
+![Capture d’écran montrant un package individuel sélectionné et le menu contextuel ouvert avec des commandes de mise à jour, de suppression et d’actualisation.](media/nuget-walkthrough-PackageMenu.png)
 
 * **Numéro de version** : le numéro de version est un élément de menu désactivé. Il est fourni uniquement à titre d’information.
 * **Mettre à jour** : recherche une version plus récente sur le serveur source et si elle existe, la télécharge.
@@ -102,11 +102,11 @@ Dans Visual Studio pour Mac, accédez à **Visual Studio > préférences > les s
 
 Cliquez sur **Ajouter** pour configurer une nouvelle source. Entrez un nom convivial et l’URL (ou le chemin du fichier) vers la source du package. Si la source est un serveur web sécurisé, entrez le nom d’utilisateur et le mot de passe, sinon laissez ces entrées vides :
 
-![Ajouter des sources de packages](media/nuget-walkthrough-PackageSource2.png)
+![Capture d’écran de la boîte de dialogue Ajouter une source de package, contenant les champs nom, emplacement, nom d’utilisateur et mot de passe.](media/nuget-walkthrough-PackageSource2.png)
 
 Vous pouvez sélectionner différentes sources lors de la recherche de packages :
 
-![Ajouter des sources de packages](media/nuget-walkthrough-PackageSource3.png)
+![Capture d’écran de l’écran ajouter des packages, qui affiche une liste déroulante des sources pouvant être sélectionnées lors de la recherche de packages.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Gestion de version
 

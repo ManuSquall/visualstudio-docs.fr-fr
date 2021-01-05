@@ -1,5 +1,7 @@
 ---
 title: Écriture d’une fonction de raccordement de débogage | Microsoft Docs
+description: En savoir plus sur un certain nombre de fonctions de raccordement de débogage personnalisées que vous pouvez écrire pour vous permettre d’insérer votre code dans des points prédéfinis à l’intérieur du traitement normal du débogueur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350717"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728935"
 ---
 # <a name="debug-hook-function-writing"></a>Écriture de fonctions de raccordement de débogage
 Cette section décrit plusieurs fonctions de raccordement de débogage personnalisées que vous pouvez écrire pour vous permettre d'insérer votre code dans quelques points prédéfinis du traitement normal du débogueur.
@@ -42,4 +44,4 @@ Cette section décrit plusieurs fonctions de raccordement de débogage personnal
 
 ## <a name="related-sections"></a>Sections connexes
 
-- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md) : liens vers les techniques de débogage pour la bibliothèque Runtime C, notamment l’utilisation de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre `malloc` et `_malloc_dbg` , l’écriture de fonctions de raccordement de débogage et le tas de débogage CRT.
+- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md) : liens vers les techniques de débogage pour la bibliothèque C Run-Time, y compris l’utilisation de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre `malloc` et `_malloc_dbg` , l’écriture de fonctions de raccordement de débogage et le tas de débogage CRT.

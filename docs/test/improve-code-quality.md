@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328689"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756641"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Examinez d’abord les outils de test dans Visual Studio
 
@@ -51,11 +51,17 @@ Visual Studio est également extensible et accepte les adaptateurs de tests unit
 
 [Live Unit Testing](../test/live-unit-testing.md) exécute automatiquement des tests unitaires en arrière-plan et affiche les résultats de test et de couverture du code sous forme graphique dans l’éditeur de code Visual Studio.
 
+> [!NOTE]
+> Live Unit testing est uniquement disponible dans l’édition Enterprise et n’est pris en charge que pour le code .NET.
+
 ## <a name="intellitest"></a>IntelliTest
 
 IntelliTest génère automatiquement des tests unitaires et des données de test pour votre code managé. IntelliTest améliore la couverture et réduit considérablement l’effort de création et de maintenance de tests unitaires pour du code nouveau ou existant.
 
 ![IntelliTest en action](media/devtest-intellitest.png)
+
+> [!NOTE]
+> IntelliTest est disponible uniquement dans l’édition Enterprise. Il est pris en charge pour le code C# qui cible le .NET Framework. .NET Core et .NET Standard ne sont pas pris en charge actuellement.
 
 * [Générer des tests unitaires pour votre code avec IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest – One Test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -64,6 +70,9 @@ IntelliTest génère automatiquement des tests unitaires et des données de test
 ## <a name="code-coverage"></a>Couverture du code
 
 La [couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) détermine la proportion de code de votre projet qui sera réellement testée par les tests codés, comme des tests unitaires. Pour apporter une protection efficace contre les bogues, vos tests doivent s’effectuer sur ou « couvrir » une proportion importante de votre code.
+
+> [!NOTE]
+> La couverture du code est disponible uniquement dans l’édition Enterprise.
 
 L’analyse de couverture du code peut être appliquée à du code managé et non managé (natif).
 
@@ -77,9 +86,15 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) vous permet d’isoler le code que vous testez en remplaçant d’autres parties de l’application par des stubs ou des shims.
 
+> [!NOTE]
+> Les substituts Microsoft sont disponibles uniquement dans l’édition Enterprise et ne sont pris en charge que pour le code .NET.
+
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Tests codés de l’interface utilisateur et avec Selenium
 
 Les tests codés de l’interface utilisateur fournissent un moyen de créer des tests entièrement automatisés pour valider les fonctionnalités et le comportement de l’interface utilisateur de votre application. Ils peuvent automatiser les tests de l’interface utilisateur avec différentes technologies, notamment les applications UWP en XAML, les applications de navigateur et les applications SharePoint.
+
+> [!NOTE]
+> L’interface utilisateur codée est une fonctionnalité déconseillée.
 
 Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou des tests de l’interface utilisateur basés sur un navigateur générique avec Selenium, Visual Studio fournit tous les outils dont vous avez besoin.
 
@@ -89,10 +104,6 @@ Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou 
 * [Prise en main de la création, de la modification et de la maintenance d’un test codé de l’interface utilisateur](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Tester des applications UWP avec des tests codés de l’interface utilisateur](test-uwp-app-with-coded-ui-test.md)
 * [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
-
-## <a name="load-testing"></a>Test de charge
-
-Le [test de charge](../test/quickstart-create-a-load-test-project.md) simule la charge sur une application serveur en exécutant des tests unitaires et des tests de performances de site Web.
 
 ## <a name="related-scenarios"></a>Scénarios connexes
 

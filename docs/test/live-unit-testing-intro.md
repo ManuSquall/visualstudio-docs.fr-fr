@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f3a5e97153997908a0360bc123fd1b88fb5c009
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8716e980581ffe1103adddbc3c776def1166ff94
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596838"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756602"
 ---
 # <a name="live-unit-testing-overview"></a>Présentation de Live Unit Testing
 
@@ -26,7 +26,7 @@ Live Unit Testing indique si vos tests unitaires couvrent correctement votre cod
 Si vous disposez d’une solution qui comprend un ou plusieurs projets de test unitaire, vous pouvez activer Live Unit testing en sélectionnant **test**  >  **Live Unit testing**  >  **Démarrer** à partir de la barre de menus de niveau supérieur dans Visual Studio.
 
 > [!NOTE]
-> Live Unit Testing n’est disponible que dans l’édition Visual Studio Enterprise.
+> Live Unit Testing n’est disponible que dans l’édition Visual Studio Enterprise et n’est pris en charge que dans .NET.
 
 Pour en savoir plus sur Live Unit Testing :
 

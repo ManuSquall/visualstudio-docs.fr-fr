@@ -1,5 +1,7 @@
 ---
 title: Mise à jour de l’interface utilisateur | Microsoft Docs
+description: Découvrez comment ajouter du code pour mettre à jour l’interface utilisateur après avoir implémenté une nouvelle commande dans votre VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698887"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716027"
 ---
 # <a name="updating-the-user-interface"></a>Mise à jour de l'interface utilisateur
 Après avoir implémenté une commande, vous pouvez ajouter du code pour mettre à jour l’interface utilisateur avec l’état de vos nouvelles commandes.
