@@ -1,5 +1,7 @@
 ---
 title: Galeries privées | Microsoft Docs
+description: Découvrez comment partager les contrôles, les modèles et les outils que vous développez dans le kit de développement logiciel (SDK) Visual Studio en les publiant dans une galerie privée.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444646"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863495"
 ---
 # <a name="private-galleries"></a>Galeries privées
 Vous pouvez partager les contrôles, les modèles et les outils que vous développez en les publiant dans une *Galerie privée* sur l’intranet de votre organisation, comme suit :
@@ -51,7 +53,7 @@ Vous pouvez partager les contrôles, les modèles et les outils que vous dévelo
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)

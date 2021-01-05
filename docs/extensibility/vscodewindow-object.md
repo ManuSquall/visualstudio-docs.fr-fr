@@ -1,5 +1,7 @@
 ---
 title: Objet VSCodeWindow | Microsoft Docs
+description: En savoir plus sur les fenêtres de code, qui sont des fenêtres de document spécialisées qui peuvent inclure un ou plusieurs affichages de texte, généralement l’objet VsTextView.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d2cdbe12146dd5d3010b9bf8ffcdd130a0ea4bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: a778cde66bc85a6f3cd8a13b5f2bb6fdb41844de
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414358"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864007"
 ---
 # <a name="vscodewindow-object"></a>Objet VSCodeWindow
 Une fenêtre de code est une fenêtre de document spécialisée qui peut inclure un ou plusieurs affichages de texte, généralement l' <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> objet.

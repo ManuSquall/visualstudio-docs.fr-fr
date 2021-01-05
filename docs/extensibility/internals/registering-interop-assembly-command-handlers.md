@@ -1,5 +1,7 @@
 ---
 title: Inscription des gestionnaires de commandes d’assembly d’interopérabilité | Microsoft Docs
+description: En savoir plus sur le contrat de commande de base utilisé par tous les VSPackages implémentant des commandes à l’aide d’assemblys d’interopérabilité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012046"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875152"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Inscription des gestionnaires de commandes d’assemblys d’interopérabilité
 Un VSPackage doit s’inscrire auprès de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] afin que l’environnement de développement intégré (IDE) achemine correctement ses commandes.
@@ -28,10 +30,10 @@ Un VSPackage doit s’inscrire auprès de [!INCLUDE[vsprvs](../../code-quality/i
 - Les ressources de [référence de format de table de commandes](/previous-versions/bb164647(v=vs.100)) se trouvent dans des dll d’interface utilisateur satellite non managées.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Inscription du gestionnaire de commandes d’un VSPackage
- Un VSPackage agissant comme gestionnaire pour les commandes basées sur l’interface utilisateur requiert une entrée de Registre nommée après le VSPackage `GUID` . Cette entrée de Registre spécifie l’emplacement du fichier de ressources d’interface utilisateur du VSPackage et la ressource de menu dans ce fichier. L’entrée de Registre elle-même se trouve sous HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, où *\<Version>* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , par exemple 9,0.
+ Un VSPackage agissant comme gestionnaire pour les commandes basées sur l’interface utilisateur requiert une entrée de Registre nommée après le VSPackage `GUID` . Cette entrée de Registre spécifie l’emplacement du fichier de ressources d’interface utilisateur du VSPackage et la ressource de menu dans ce fichier. L’entrée de Registre elle-même se trouve sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version>* \Menus, où *\<Version>* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , par exemple 9,0.
 
 > [!NOTE]
-> Le chemin d’accès racine de HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* peut être substitué par une autre racine lorsque l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interpréteur de commandes est initialisé. Pour plus d’informations sur le chemin d’accès racine, consultez [installation de VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* peut être substitué par une autre racine lorsque l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interpréteur de commandes est initialisé. Pour plus d’informations sur le chemin d’accès racine, consultez [installation de VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>Entrée de registre de la ressource CTMENU
  La structure de l’entrée de Registre est la suivante :

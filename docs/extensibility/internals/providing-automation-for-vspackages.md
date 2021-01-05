@@ -1,5 +1,7 @@
 ---
 title: Mise à disposition de l’automatisation pour les VSPackages | Microsoft Docs
+description: Découvrez comment fournir une automatisation pour vos VSPackages en implémentant des objets spécifiques au VSPackage et en implémentant des objets Automation Standard.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705947"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875399"
 ---
 # <a name="providing-automation-for-vspackages"></a>Fourniture de l’automatisation pour VSPackages
 Il existe deux méthodes principales pour fournir une automatisation pour vos VSPackages : en implémentant des objets spécifiques au VSPackage et en implémentant des objets Automation Standard. En règle générale, ils sont utilisés ensemble pour étendre le modèle Automation de l’environnement.
 
-## <a name="vspackage-specific-objects"></a>Objets spécifiques au VSPackage
+## <a name="vspackage-specific-objects"></a>Objets VSPackage-Specific
  Certains emplacements dans le modèle Automation nécessitent que vous fournissiez des objets Automation qui sont uniques à votre VSPackage. Par exemple, les nouveaux projets nécessitent des objets distincts fournis par le VSPackage. Les noms de ces objets sont entrés dans le registre et obtenus par le biais d’appels à l’objet d’environnement `DTE` .
 
  Vous pouvez également obtenir des objets spécifiques au VSPackage lorsqu’un consommateur Automation utilise l’objet fourni par le biais de la propriété Object d’un objet standard. Par exemple, l' `Window` objet standard a une `Object` propriété, communément connue sous le nom de `Windows.Object` propriété. Lorsque les consommateurs appellent le `Window.Object` sur une fenêtre implémentée dans votre VSPackage, vous transmettez un objet Automation spécifique de votre propre conception.

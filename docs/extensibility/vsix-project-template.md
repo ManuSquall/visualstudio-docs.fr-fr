@@ -1,5 +1,7 @@
 ---
 title: Modèle de projet VSIX | Microsoft Docs
+description: Découvrez comment utiliser le modèle de projet VSIX pour encapsuler les extensions Visual Studio dans un projet VSIX, puis publier le package sur le Visual Studio Marketplace.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74791a77ee1c720fb60876a1efa6bd58fa94f68b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697937"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863876"
 ---
 # <a name="vsix-project-template"></a>Modèle de projet VSIX
 

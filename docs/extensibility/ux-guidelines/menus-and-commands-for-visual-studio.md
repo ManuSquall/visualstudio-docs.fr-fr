@@ -1,5 +1,7 @@
 ---
 title: Menus et commandes pour Visual Studio | Microsoft Docs
+description: Découvrez comment les barres de commandes offrent une certaine flexibilité dans l’interface utilisateur lorsque vous créez de nouvelles fonctionnalités pour Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f22b7ac4377b600208c079b6af1eff7fc3cbfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698388"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863539"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus et commandes pour Visual Studio
 ## <a name="command-usage"></a>Utilisation de la commande
@@ -49,13 +51,13 @@ ms.locfileid: "80698388"
  Il est utile de placer les commandes à proximité de la zone du focus de l’utilisateur. Pour ce faire, vous pouvez créer une barre d’outils incorporée en haut de la fenêtre outil ou de l’éditeur de document. Les commandes placées dans la barre d’outils doivent être spécifiques à la région de contenu dans la fenêtre. Ne dupliquez pas les commandes partagées sur ces barres d’outils. Par exemple, ne placez jamais l’icône « Enregistrer » dans une barre d’outils incorporée.
 
 ### <a name="content-and-command-visibility"></a>Visibilité du contenu et de la commande
- Les commandes existent dans les étendues suivantes : **environnement**, **hiérarchie**et **document**. Identifiez chaque étendue pour avoir confiance dans le positionnement de la commande.
+ Les commandes existent dans les étendues suivantes : **environnement**, **hiérarchie** et **document**. Identifiez chaque étendue pour avoir confiance dans le positionnement de la commande.
 
- Les commandes dans la portée de l' **environnement** établissent le contexte principal et sont partagées entre plusieurs contextes. Ils modifient la visibilité ou la disposition des documents et des fenêtres outil. Parmi les commandes dans l’étendue de l’environnement se trouvent les **nouveaux projets**, **se connectent au serveur**, **attachent le processus**, **coupez**, **copie**, **collent**, **recherche**, **options**, **personnaliser**, **nouvelle fenêtre**et **afficher l’aide**.
+ Les commandes dans la portée de l' **environnement** établissent le contexte principal et sont partagées entre plusieurs contextes. Ils modifient la visibilité ou la disposition des documents et des fenêtres outil. Parmi les commandes dans l’étendue de l’environnement se trouvent les **nouveaux projets**, **se connectent au serveur**, **attachent le processus**, **coupez**, **copie**, **collent**, **recherche**, **options**, **personnaliser**, **nouvelle fenêtre** et **afficher l’aide**.
 
- Les commandes dans l’étendue de la **hiérarchie** gèrent les hiérarchies dans Visual Studio, y compris le **projet**, l' **équipe**et les **données**. Ils se rapportent au sous-contexte d’un projet, par exemple, **Déboguer**, **générer**, **Tester**, **architecture**ou **analyser**. Parmi les commandes de l’étendue de la hiérarchie se trouvent les commandes **Ajouter un nouvel élément**, **nouvelle requête**, **paramètres du projet**, **Ajouter une nouvelle source de données**, lancer l' **Assistant Performance**et **nouveau diagramme**.
+ Les commandes dans l’étendue de la **hiérarchie** gèrent les hiérarchies dans Visual Studio, y compris le **projet**, l' **équipe** et les **données**. Ils se rapportent au sous-contexte d’un projet, par exemple, **Déboguer**, **générer**, **Tester**, **architecture** ou **analyser**. Parmi les commandes de l’étendue de la hiérarchie se trouvent les commandes **Ajouter un nouvel élément**, **nouvelle requête**, **paramètres du projet**, **Ajouter une nouvelle source de données**, lancer l' **Assistant Performance** et **nouveau diagramme**.
 
- Les commandes dans l’étendue du **document** agissent sur le contenu d’un document, tel que le code, la conception ou une requête d’élément de travail (wiq). Ils agissent également sur la vue d’une fenêtre outil ou sont spécifiques à cette fenêtre outil. Les commandes d’étendue de document agissent également sur les objets de fichier qui sont eux-mêmes des hiérarchies spécifiques à la hiérarchie, tels que **supprimer du projet**. Parmi les commandes dans l’étendue du document, vous pouvez **refactoriser > renommer**, **créer une copie de l’élément de travail**, **développer tout**, **réduire tout**et **créer une tâche utilisateur**.
+ Les commandes dans l’étendue du **document** agissent sur le contenu d’un document, tel que le code, la conception ou une requête d’élément de travail (wiq). Ils agissent également sur la vue d’une fenêtre outil ou sont spécifiques à cette fenêtre outil. Les commandes d’étendue de document agissent également sur les objets de fichier qui sont eux-mêmes des hiérarchies spécifiques à la hiérarchie, tels que **supprimer du projet**. Parmi les commandes dans l’étendue du document, vous pouvez **refactoriser > renommer**, **créer une copie de l’élément de travail**, **développer tout**, **réduire tout** et **créer une tâche utilisateur**.
 
 ### <a name="command-placement-decisions"></a>Décisions relatives au positionnement des commandes
  Une fois que vous avez décidé de créer une commande, vous devez déterminer son emplacement approprié et s’il faut créer un raccourci clavier. Suivez ce chemin de décision pour déterminer où placer la commande :
@@ -101,7 +103,7 @@ ms.locfileid: "80698388"
 
 - Données
 
-- Test
+- Tester
 
 - Architecture
 
@@ -224,7 +226,7 @@ ms.locfileid: "80698388"
 
 ## <a name="naming-commands"></a>Commandes de nom
 
-### <a name="naming-conventions"></a>Conventions d'attribution d'un nom
+### <a name="naming-conventions"></a>Conventions d’affectation de noms
  L’attribution d’un nom de commande cohérent est essentielle afin que les utilisateurs puissent Rechercher et exécuter des commandes, en utilisant la ligne de commande ou en liant une liaison à un raccourci clavier. Les noms de commande aident également l’utilisateur à comprendre à quoi sert une commande lorsqu’elle est affichée dans une barre d’outils ou dans un menu contextuel ou en cascade.
 
 #### <a name="when-naming-commands"></a>Lorsque vous nommez des commandes :

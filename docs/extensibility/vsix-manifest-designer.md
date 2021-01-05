@@ -1,5 +1,7 @@
 ---
 title: Concepteur de manifeste VSIX | Microsoft Docs
+description: Découvrez comment le concepteur de manifeste VSIX modifie un fichier manifeste de package VSIX, qui définit le comportement d’installation d’une extension Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697891"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863962"
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
 Modifie un fichier manifeste de package VSIX, qui définit le comportement d’installation d’une extension Visual Studio.

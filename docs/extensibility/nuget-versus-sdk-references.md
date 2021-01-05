@@ -1,5 +1,7 @@
 ---
 title: Ajout de références avec NuGet ou un kit SDK d’extension
+description: Découvrez les différences entre le Packaging logiciel en tant que package NuGet ou un kit de développement logiciel (SDK) lorsqu’il est référencé dans un projet Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7fc9132647988aee46a2bb07e992505109d33c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50197eeda1828156113fbbfa507447484618861a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702435"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863778"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet et kit de développement logiciel (SDK) comme référence de projet
 

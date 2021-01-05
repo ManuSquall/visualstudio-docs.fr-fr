@@ -1,5 +1,7 @@
 ---
 title: Objet VSTextView | Microsoft Docs
+description: L’objet VSTextView est une fenêtre qui permet aux utilisateurs d’afficher et de modifier le texte Unicode de la mémoire tampon de texte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a52b1d480aaef11296517f1b9c5bb049f2488a8d
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9d7309e05c3763794deb344a978dd188dbfddd79
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413929"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863809"
 ---
 # <a name="vstextview-object"></a>Objet VSTextView
 

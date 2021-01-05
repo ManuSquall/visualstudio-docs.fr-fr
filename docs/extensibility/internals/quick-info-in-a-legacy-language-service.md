@@ -1,5 +1,7 @@
 ---
 title: Info Express dans un service de langage hérité | Microsoft Docs
+description: En savoir plus sur la prise en charge de l’opération Info Express IntelliSense pour afficher des informations sur un identificateur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705941"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875074"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informations rapides dans un service de langage hérité
 Info Express IntelliSense affiche des informations sur un identificateur dans la source lorsque l’utilisateur place le signe insertion dans l’identificateur et sélectionne **Info Express** dans le menu **IntelliSense** ou maintient le curseur de la souris sur l’identificateur. Cela entraîne l’affichage d’une info-bulle avec des informations sur l’identificateur. Ces informations se composent généralement du type d’identificateur. Lorsque le moteur de débogage est actif, ces informations peuvent inclure la valeur actuelle. Le moteur de débogage fournit des valeurs d’expression, tandis que le service de langage gère uniquement les identificateurs.

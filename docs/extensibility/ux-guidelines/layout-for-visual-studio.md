@@ -1,5 +1,7 @@
 ---
 title: Disposition pour Visual Studio | Microsoft Docs
+description: En savoir plus sur la disposition des boîtes de dialogue Visual Studio, y compris les boîtes de dialogue sans thème et les nouvelles boîtes de dialogue qui présentent un aspect à thème.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698404"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863673"
 ---
 # <a name="layout-for-visual-studio"></a>Présentation pour Visual Studio
 La plupart des boîtes de dialogue Visual Studio sont [en mode de boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont les boîtes de dialogue qui suivent les principes de présentation standard de la [boîte de dialogue Windows Desktop](/windows/desktop/uxguide/win-dialog-box). À mesure que Visual Studio se déplace pour actualiser son interface utilisateur, certaines des boîtes de dialogue plus importantes ont une nouvelle conception qui les établit en tant qu’expériences de définition de produit. La [disposition](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) de ces boîtes de dialogue à thème a un aspect à thème.
@@ -103,11 +105,11 @@ La plupart des boîtes de dialogue Visual Studio sont [en mode de boîte de dial
 #### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a> Boutons de commande intérieurs
  Dans les boîtes de dialogue plus complexes, un contrôle interne peut avoir ses propres boutons associés, ce qui peut affecter l’emplacement des boutons de validation de la boîte de dialogue.
 
-- Utilisez un alignement vertical (colonne) de boutons intérieurs lorsque l’opération **OK** / sur**Annuler** est orientée horizontalement dans le coin inférieur droit.
+- Utilisez un alignement vertical (colonne) de boutons intérieurs lorsque l’opération **OK** / sur **Annuler** est orientée horizontalement dans le coin inférieur droit.
 
 - Utilisez un alignement horizontal (ligne) de boutons intérieurs lorsque **OK** / **Annuler** est orienté verticalement dans le coin supérieur droit. Cette situation est moins courante.
 
-- La taille du bouton intérieur doit viser la taille de bouton standard de 75x23 pixels, ce **qui correspond à la taille des** / boutons**Annuler** lorsque cela est possible. Si une étiquette de bouton fait passer le bouton au-delà de la taille de bouton standard, les autres boutons de cet ensemble doivent s’aligner sur cette taille plus grande.
+- La taille du bouton intérieur doit viser la taille de bouton standard de 75x23 pixels, ce **qui correspond à la taille des** / boutons **Annuler** lorsque cela est possible. Si une étiquette de bouton fait passer le bouton au-delà de la taille de bouton standard, les autres boutons de cet ensemble doivent s’aligner sur cette taille plus grande.
 
   ![Boutons OK et Annuler horizontaux](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")
 

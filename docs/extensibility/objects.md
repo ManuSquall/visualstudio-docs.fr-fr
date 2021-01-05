@@ -1,5 +1,7 @@
 ---
 title: Objets | Microsoft Docs
+description: Les Articles de cette section fournissent des informations de référence sur les objets utilisés pour créer une instance de l’éditeur de texte principal dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774a93e1accf67a9d97f00ce3a6dd3339f095d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bff2b16684c41d18f997e6aab7950aa19a7d1db1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702267"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863689"
 ---
 # <a name="objects"></a>Objets
 Les informations de référence suivantes décrivent les objets utilisés pour créer une instance de l’éditeur de texte principal.

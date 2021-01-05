@@ -1,5 +1,7 @@
 ---
 title: Décisions relatives à la conception du contrôle de code source | Microsoft Docs
+description: Découvrez plusieurs décisions de conception clés à prendre en compte pour les projets lors de l’implémentation du contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705255"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875516"
 ---
 # <a name="source-control-design-decisions"></a>Décisions de conception du contrôle de code source
 Les décisions de conception suivantes doivent être prises en compte pour les projets lors de l’implémentation du contrôle de code source.

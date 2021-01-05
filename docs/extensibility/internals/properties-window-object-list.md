@@ -1,5 +1,7 @@
 ---
 title: Liste des objets de la fenêtre Propriétés | Microsoft Docs
+description: En savoir plus sur les interfaces utilisées pour interagir avec la liste d’objets dans la Fenêtre Propriétés dans l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706148"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875425"
 ---
 # <a name="properties-window-object-list"></a>Liste d’objets de la fenêtre Propriétés
 La liste d’objets de la fenêtre **Propriétés** est une liste déroulante qui vous permet de remplacer la sélection par d’autres objets disponibles dans une ou plusieurs fenêtres sélectionnées. La sélection d’un autre objet dans cette liste déclenche un appel à <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> pour informer l’environnement qu’un nouvel objet a été sélectionné. Les informations affichées dans la fenêtre **Propriétés** sont ensuite modifiées pour afficher les propriétés associées à l’objet nouvellement sélectionné.

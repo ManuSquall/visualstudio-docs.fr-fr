@@ -1,5 +1,7 @@
 ---
 title: Glossaire du SDK Visual Studio | Microsoft Docs
+description: Ce glossaire fournit des définitions pour les termes utilisés dans la documentation du kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 332e606e689e9394f2fcdc8cbc902e2d4a6e5ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec8f6508c6b387ec51872f6e5b59b3f72a57d432
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698168"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863907"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossaire du SDK Visual Studio
 Ce glossaire fournit des définitions pour les termes utilisés dans la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentation.
 
-## <a name="terms"></a>Termes
+## <a name="terms"></a>Terminologie
  complément d’une application utilitaire, d’un pilote ou d’un autre logiciel ajouté à une application principale. Dans l’environnement de développement intégré (IDE) de Visual Studio, un complément est une application Automation qui étend les fonctionnalités de l’IDE.
 
  modèle Automation le modèle Automation, connu dans les versions précédentes de Visual Studio en tant que modèle d’extensibilité, est une interface de programmation qui vous donne accès aux routines sous-jacentes qui pilotent l’IDE. Les compléments, les assistants et les macros utilisent des objets dans le modèle Automation pour contrôler ou étendre les fonctionnalités de l’IDE.

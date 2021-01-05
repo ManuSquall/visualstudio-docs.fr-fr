@@ -1,5 +1,7 @@
 ---
 title: Utilisation de RDT_ReadLock | Microsoft Docs
+description: En savoir plus sur les _VSRDTFLAGS. RDT_ReadLock indicateur, qui fournit la logique de verrouillage d’un document dans la table de document en cours d’exécution.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c946d69cf1aded072d27e7c6ccbdf28f1122571
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705931"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875386"
 ---
 # <a name="rdt_readlock-usage"></a>Utilisation de RDT_ReadLock
 
@@ -36,7 +38,7 @@ Lorsqu’un utilisateur ouvre un document dans l’interface utilisateur, un <xr
 
 ## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock et modification de document
 
-L’indicateur précédent mentionné indique que l’ouverture invisible du document produira son lors de l' `RDT_EditLock` ouverture du document par l’utilisateur dans une **DocumentWindow**visible. Dans ce cas, l’utilisateur reçoit une invite d' **enregistrement** lorsque la fonction **DocumentWindow** visible est fermée. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` les implémentations qui utilisent le <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> service fonctionnent initialement lorsque seul un `RDT_ReadLock` est pris (c’est-à-dire lorsque le document est ouvert de façon invisible pour analyser les informations). Plus tard, si le document doit être modifié, le verrou est mis à niveau vers un **RDT_EditLock**faible. Si l’utilisateur ouvre ensuite le document dans un fichier **DocumentWindow**visible, le `CodeModel` faible `RDT_EditLock` est libéré.
+L’indicateur précédent mentionné indique que l’ouverture invisible du document produira son lors de l' `RDT_EditLock` ouverture du document par l’utilisateur dans une **DocumentWindow** visible. Dans ce cas, l’utilisateur reçoit une invite d' **enregistrement** lorsque la fonction **DocumentWindow** visible est fermée. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` les implémentations qui utilisent le <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> service fonctionnent initialement lorsque seul un `RDT_ReadLock` est pris (c’est-à-dire lorsque le document est ouvert de façon invisible pour analyser les informations). Plus tard, si le document doit être modifié, le verrou est mis à niveau vers un **RDT_EditLock** faible. Si l’utilisateur ouvre ensuite le document dans un fichier **DocumentWindow** visible, le `CodeModel` faible `RDT_EditLock` est libéré.
 
 Si l’utilisateur ferme ensuite la **DocumentWindow** et choisit **non** lorsqu’il est invité à enregistrer le document ouvert, l' `CodeModel` implémentation supprime toutes les informations du document et ouvre de nouveau le document à partir du disque, la prochaine fois que des informations supplémentaires sont requises pour le document. La subtilité de ce comportement est une instance où l’utilisateur ouvre la **DocumentWindow** du document ouvert invisible, le modifie, le ferme, puis choisit **non** lorsque vous êtes invité à enregistrer le document. Dans ce cas, si le document a un `RDT_ReadLock` , le document n’est pas réellement fermé et le document modifié reste ouvert de manière invisible, même si l’utilisateur a choisi de ne pas enregistrer le document.
 

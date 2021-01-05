@@ -1,5 +1,7 @@
 ---
 title: Objets de contexte de sélection | Microsoft Docs
+description: Découvrez les éléments internes de la façon dont l’IDE de Visual Studio utilise un objet de contexte de sélection globale pour déterminer ce qui doit être affiché dans l’IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e4f33dd0168a667b8f266ea606cecf0c26d62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705512"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875568"
 ---
 # <a name="selection-context-objects"></a>Objets de contexte de sélection
 L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) utilise un objet de contexte de sélection global pour déterminer ce qui doit être affiché dans l’IDE. Chaque fenêtre de l’IDE peut avoir son propre objet de contexte de sélection envoyé au contexte de sélection globale. L’IDE met à jour le contexte de sélection global avec les valeurs d’une fenêtre lorsque cette fenêtre a le focus. Pour plus d’informations, consultez [les commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md).

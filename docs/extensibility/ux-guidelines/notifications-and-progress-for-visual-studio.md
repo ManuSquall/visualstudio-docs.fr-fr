@@ -1,5 +1,7 @@
 ---
 title: Notifications et progression pour Visual Studio | Microsoft Docs
+description: Découvrez les différentes façons d’informer les utilisateurs de ce qui se passe dans Visual Studio en ce qui concerne leurs tâches de développement logiciel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56acfd96f8d9be575f6e13c727a294f28301bef4
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699881"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863783"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notifications et progression pour Visual Studio
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> Systèmes de notification
@@ -38,7 +40,7 @@ ms.locfileid: "80699881"
 ### <a name="choosing-the-right-method"></a>Choix de la méthode appropriée
  Utilisez ce tableau pour vous aider à choisir la méthode appropriée pour notifier l’utilisateur de votre message.
 
-|Méthode|Utilisation|À ne pas utiliser|
+|Méthode|Utiliser|À ne pas utiliser|
 |------------|---------|----------------|
 |[Boîtes de dialogue de message d’erreur modal](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Utilisez quand une réponse de l’utilisateur est requise avant de continuer.|N’utilisez pas lorsque vous n’avez pas besoin de bloquer l’utilisateur et d’interrompre son acheminement. Évitez d’utiliser des boîtes de dialogue modales s’il est possible d’afficher le message d’une manière moins intrusive.|
 |[Barre d’État IDE](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|À utiliser en cas d’informations textuelles ambiantes relatives à l’état d’un processus.|N’utilisez pas seul. Idéal avec un autre mécanisme de commentaires.|
@@ -181,9 +183,9 @@ ms.locfileid: "80699881"
  « Indéterminé » signifie que la progression globale d’une opération ou d’un processus ne peut pas être déterminée. Utilisez des barres de progression indéterminées pour les opérations qui nécessitent une durée illimitée ou qui accèdent à un nombre inconnu d’objets. Utilisez une description textuelle pour accompagner ce qui se passe. Utilisez des délais d’attente pour accorder des limites aux opérations basées sur le temps. Les barres de progression indéterminées utilisent des animations pour montrer que la progression est effectuée, mais ne fournit pas d’autres informations. Ne choisissez pas une barre de progression indéterminée uniquement en fonction du manque de précision possible uniquement.
 
 ##### <a name="determinate"></a>Déterminée
- ![Barre de progression déterminée](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
+ ![Barre de progression de l’arrêt](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
 
- **Barre de progression déterminée**
+ **Barre de progression de l’arrêt**
 
  « Terminate » signifie qu’une opération ou un processus requiert un laps de temps limité, même si cette durée ne peut pas être prédite avec précision. Indiquez clairement la fin de l’opération. Ne laissez pas une barre de progression aller à 100%, sauf si l’opération est terminée. L’animation de la barre de progression de l’arrêt se déplace de gauche à droite de 0 à 100%.
 
@@ -286,7 +288,7 @@ ms.locfileid: "80699881"
 ### <a name="overview"></a>Vue d’ensemble
  Barres donne à l’utilisateur un indicateur proche de son point d’attention et l’utilisation du contrôle de la barre d’informations partagée garantit la cohérence de l’apparence et de l’interaction visuelle.
 
- ![Barre d'informations](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
+ ![Barre](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
  **Barres dans Visual Studio**
 
@@ -409,7 +411,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 }
 ```
 
-### <a name="placement"></a>Placement
+### <a name="placement"></a>Sélection élective
  Les barres peuvent être affichés à un ou plusieurs des emplacements suivants :
 
 - Fenêtres d’outil

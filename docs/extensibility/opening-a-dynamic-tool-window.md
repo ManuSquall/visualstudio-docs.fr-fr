@@ -1,5 +1,7 @@
 ---
 title: Ouverture d’une fenêtre outil dynamique | Microsoft Docs
+description: Découvrez les fenêtres outil dynamiques qui s’ouvrent chaque fois qu’un contexte d’interface utilisateur spécifique s’applique et se ferme lorsque le contexte de l’interface utilisateur ne s’applique plus.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903708"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863518"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Ouvrir une fenêtre outil dynamique
 Les fenêtres outil sont généralement ouvertes à partir d’une commande dans un menu ou d’un raccourci clavier équivalent. Toutefois, il peut arriver que vous ayez besoin d’une fenêtre outil qui s’ouvre chaque fois qu’un contexte d’interface utilisateur spécifique s’applique, et se ferme lorsque le contexte de l’interface utilisateur ne s’applique plus. Ces types de fenêtres outil sont appelés *dynamiques* ou *visibles automatiquement*.

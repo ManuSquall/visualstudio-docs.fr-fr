@@ -1,5 +1,7 @@
 ---
 title: Inscription d’un Service1 de langage hérité | Microsoft Docs
+description: En savoir plus sur l’inscription d’un service de langage hérité à partir d’un VSPackage avec Visual Studio en ajoutant des clés et des entrées de registre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238879"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875200"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>Inscription d’un service de langage hérité 1
 Dans Managed package Framework (MPF), le service de langage est offerts par un VSPackage (voir [VSPackages](../../extensibility/internals/vspackages.md)) et est inscrit auprès de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en ajoutant des clés et des entrées de registre. Ce processus d’inscription s’effectue en partie pendant l’installation et en partie au moment de l’exécution.

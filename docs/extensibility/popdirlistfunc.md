@@ -1,5 +1,7 @@
 ---
 title: POPDIRLISTFUNC | Microsoft Docs
+description: En savoir plus sur la fonction de rappel POPDIRLISTFUNC, qui est passée aux répertoires de mise à jour pour déterminer ceux qui sont sous contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702080"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863448"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Il s’agit d’une fonction de rappel donnée à la fonction [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) pour mettre à jour une collection de répertoires et (éventuellement) des noms de fichiers pour déterminer ceux qui sont sous contrôle de code source.
@@ -56,7 +58,7 @@ dans Chemin d’accès local complet à un répertoire ou à un nom de fichier q
 |SCC_I_OPERATIONCANCELED|Arrêter le traitement.|
 |SCC_E_xxx|Toute erreur de contrôle de code source appropriée doit arrêter le traitement.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si le `fOptions` paramètre de la `SccPopulateDirList` fonction contient l' `SCC_PDL_INCLUDEFILES` indicateur, la liste peut contenir des noms de fichiers, ainsi que des noms de répertoires.
 
 ## <a name="see-also"></a>Voir aussi

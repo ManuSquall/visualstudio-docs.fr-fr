@@ -1,5 +1,7 @@
 ---
 title: Inscription de générateurs de fichiers uniques | Microsoft Docs
+description: Découvrez comment inscrire un outil personnalisé dans Visual Studio pour l’instancier et l’associer à un type de projet particulier.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012033"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875256"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , vous devez l’inscrire afin qu’il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puisse l’instancier et l’associe à un type de projet particulier.
@@ -36,7 +38,7 @@ Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Créez une clé de Registre dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ruche souhaitée sous GUID des générateurs, \\ *GUID* où *GUID* est le GUID défini par le service ou le système de projet du langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :
+2. Créez une clé de Registre dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ruche souhaitée sous GUID des générateurs, \\  où *GUID* est le GUID défini par le service ou le système de projet du langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :
 
    - (Par défaut)
 

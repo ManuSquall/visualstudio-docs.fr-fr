@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur le schéma d’extension VSIX 2,0 | Microsoft Docs
+description: Le schéma d’extension VSIX 2,0 définit le format de fichier d’un fichier manifeste de déploiement VSIX, qui décrit le contenu d’un package VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697914"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863763"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informations de référence sur le schéma d’extension VSIX 2,0
 Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX. Le format de fichier est régi par un schéma. La version 2,0 de ce schéma prend en charge l’ajout de types et d’attributs personnalisés.  Le schéma du manifeste est extensible. Le chargeur de manifeste ignore les éléments et les attributs XML qu’il ne comprend pas.

@@ -1,5 +1,7 @@
 ---
 title: Sélection et devise dans l’IDE | Microsoft Docs
+description: Découvrez comment les VSPackages participent au suivi des devises. L’IDE de Visual Studio gère les informations relatives aux objets actuellement sélectionnés à l’aide du contexte de sélection.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705579"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875594"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Sélection et devise dans l’IDE
-L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) gère les informations sur les objets actuellement sélectionnés par l’utilisateur à l’aide du *contexte*de sélection. Avec le contexte de sélection, les VSPackages peuvent participer au suivi des devises de deux manières :
+L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) gère les informations sur les objets actuellement sélectionnés par l’utilisateur à l’aide du *contexte* de sélection. Avec le contexte de sélection, les VSPackages peuvent participer au suivi des devises de deux manières :
 
 - En diffusant les informations de devise relatives aux VSPackages dans l’IDE.
 

@@ -1,5 +1,7 @@
 ---
 title: Inscription de modèles de projet et d’élément | Microsoft Docs
+description: Découvrez comment Visual Studio utilise les informations d’inscription de vos types de projets pour déterminer les éléments à afficher dans les boîtes de dialogue Ajouter un nouveau projet et ajouter un nouvel élément.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705824"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875269"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 Les types de projets doivent inscrire les répertoires dans lesquels se trouvent les modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projets pour déterminer les éléments à afficher dans les boîtes de dialogue **Ajouter un nouveau projet** et **Ajouter un nouvel élément** .
@@ -27,7 +29,7 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
  Pour plus d’informations sur les modèles, consultez [Ajout de modèles de projet et d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Entrées de Registre pour les projets
- Les exemples suivants montrent des entrées de Registre sous HKEY_LOCAL_MACHINE> de \\ < *version* \software\microsoft\visualstudio. Les tableaux qui l’accompagnent expliquent les éléments utilisés dans les exemples.
+ Les exemples suivants montrent des entrées de Registre sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio> de \\ < *version* . Les tableaux qui l’accompagnent expliquent les éléments utilisés dans les exemples.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,11 +39,11 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Nom|Type|Description|
+|Name|Type|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|Nom par défaut des projets de ce type.|
 |DisplayName|REG_SZ|ID de ressource du nom à récupérer à partir de la DLL satellite inscrite sous packages.|
-|Package|REG_SZ|ID de classe du package enregistré sous packages.|
+|Paquet|REG_SZ|ID de classe du package enregistré sous packages.|
 |ProjectTemplatesDir|REG_SZ|Chemin d’accès par défaut des fichiers de modèles de projet. Les fichiers de modèles de projet sont affichés par le nouveau modèle de **projet** .|
 
 ### <a name="registering-item-templates"></a>Inscription des modèles d’élément
@@ -55,7 +57,7 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 "SortPriority"=dword:00000064
 ```
 
-| Nom | Type | Description |
+| Name | Type | Description |
 |--------------------------|-----------| - |
 | @ | REG_SZ | ID de ressource pour ajouter des modèles d’élément. |
 | TemplatesDir | REG_SZ | Chemin d’accès aux éléments de projet affichés dans la boîte de dialogue de l’Assistant **Ajout d’un nouvel élément** . |
@@ -67,7 +69,7 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 
  **Fichiers Visual C# ( \* . cs, \* . resx, \* . Settings, \* . xsd,. \* WSDL); \* . CS, \* . resx, \* . Settings,. \* xsd, \* . WSDL)**
 
- Pour prendre en charge l’inscription de plusieurs filtres, chaque filtre est inscrit dans sa propre sous-clé sous HKEY_LOCAL_MACHINE \\ < *version* \software\microsoft\visualstudio> \projets \\ { \<*ProjectGUID*> } \\ <>*sous-clé* \Filters. Le nom de la sous-clé est arbitraire ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignore le nom de la sous-clé et utilise uniquement ses valeurs.
+ Pour prendre en charge l’inscription de plusieurs filtres, chaque filtre est inscrit dans sa propre sous-clé sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *version*> \\ \<*ProjectGUID*> \\ < *sous-clé* \projets {} \Filters>. Le nom de la sous-clé est arbitraire ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignore le nom de la sous-clé et utilise uniquement ses valeurs.
 
  Vous pouvez contrôler les contextes dans lesquels un filtre est utilisé en définissant des indicateurs, comme indiqué dans le tableau suivant. Si aucun indicateur n’est défini pour un filtre, celui-ci apparaîtra dans la liste des filtres communs de la boîte de dialogue **Ajouter un élément existant** et de la boîte de dialogue **ouvrir un fichier** , mais il ne sera pas utilisé dans la boîte de dialogue **Rechercher dans les fichiers** .
 
@@ -82,7 +84,7 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 "SortPriority"=dword:00000064
 ```
 
-|Nom|Type|Description|
+|Name|Type|Description|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Fait du filtre l’un des filtres courants dans la boîte de dialogue **Rechercher dans les fichiers** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|
 |CommonOpenFilesFilter|REG_DWORD|Fait du filtre l’un des filtres courants dans la boîte de dialogue **ouvrir un fichier** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|

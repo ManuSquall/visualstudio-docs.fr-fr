@@ -1,5 +1,7 @@
 ---
 title: UX Essentials pour Visual Studio | Microsoft Docs
+description: Passez en revue les meilleures pratiques de l’expérience utilisateur pour les nouvelles fonctionnalités que vous développez pour Visual Studio, notamment sur la résolution de l’écran.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698333"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864046"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials pour Visual Studio
 
@@ -154,7 +156,7 @@ Dans l’approche correcte illustrée dans la **figure C**, le paramètre est li
 
    ![Le service de couleur est ignoré et l’utilisation de « en savoir plus » pour les liens hypertexte est l’anti-modèle Visual Studio.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Le service de couleur est ignoré et l’utilisation de « en savoir plus » pour les liens hypertexte est l’anti-modèle Visual Studio.
 
-**Meilleure solution :** Posez la question demandée par l’utilisateur en cliquant sur le lien. Par exemple :
+**Meilleure solution :** Posez la question demandée par l’utilisateur en cliquant sur le lien. Exemple :
 
 - Comment fonctionnent les services Windows Azure ?
 

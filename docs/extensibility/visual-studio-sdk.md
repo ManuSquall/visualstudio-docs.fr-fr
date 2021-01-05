@@ -1,5 +1,7 @@
 ---
 title: SDK Visual Studio | Microsoft Docs
+description: Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités ou à ajouter de nouvelles fonctionnalités à Visual Studio. Découvrez quelques-unes des façons dont vous pouvez étendre Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 4be4b07e322b5be148593c70136eb44ec7fcfdf7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414382"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863845"
 ---
 # <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
 Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités de Visual Studio ou à intégrer de nouvelles fonctionnalités dans Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la Visual Studio Marketplace. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :
