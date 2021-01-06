@@ -1,5 +1,7 @@
 ---
 title: Grille d’affichage des propriétés | Microsoft Docs
+description: Découvrez où se trouvent les champs noms de propriété et valeurs de propriété dans la grille de la Fenêtre Propriétés et comment utiliser la grille dans extension des propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706191"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878025"
 ---
 # <a name="properties-display-grid"></a>Grille d’affichage des propriétés
 
@@ -29,7 +31,7 @@ La liste de deux colonnes affiche des propriétés indépendantes de la configur
 
 2. Définissez le `pfHide` paramètre dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> sur `TRUE` .
 
-Pour transmettre des informations à la fenêtre **Propriétés** , l’IDE utilise <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> est appelé par les VSPackages pour chaque fenêtre qui contient des objets sélectionnables avec les propriétés associées à afficher dans la fenêtre **Propriétés** . Implémentation de **Explorateur de solutions**des <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> appels `GetProperty` à l’aide de [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) dans votre hiérarchie de projet pour obtenir les objets consultables dans la hiérarchie.
+Pour transmettre des informations à la fenêtre **Propriétés** , l’IDE utilise <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> est appelé par les VSPackages pour chaque fenêtre qui contient des objets sélectionnables avec les propriétés associées à afficher dans la fenêtre **Propriétés** . Implémentation de **Explorateur de solutions** des <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> appels `GetProperty` à l’aide de [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) dans votre hiérarchie de projet pour obtenir les objets consultables dans la hiérarchie.
 
 Si votre VSPackage ne prend pas en charge [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), l’IDE tente d’utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> à l’aide de la valeur de [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) que le ou les éléments de la hiérarchie fournissent.
 

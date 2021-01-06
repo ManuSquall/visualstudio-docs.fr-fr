@@ -1,5 +1,7 @@
 ---
 title: Type de projet Essentials | Microsoft Docs
+description: En savoir plus sur le moment où vous devez créer un type de projet et le moment où vous pouvez étendre un type de projet existant à l’aide des sous-types de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012059"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877804"
 ---
 # <a name="project-type-essentials"></a>Éléments fondamentaux sur le type de projet
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comprend plusieurs types de projets pour les langages tels que [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet également de créer vos propres types de projets.

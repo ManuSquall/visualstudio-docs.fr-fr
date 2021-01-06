@@ -1,5 +1,7 @@
 ---
 title: Architecture du plug-in de contrôle de code source | Microsoft Docs
+description: Découvrez comment ajouter la prise en charge du contrôle de code source à l’IDE de Visual Studio en implémentant et en attachant un plug-in de contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f549ad2c4ee456860a08fbf20ccda813934a8582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705106"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878064"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architecture du plug-in de contrôle de code source
-Vous pouvez ajouter la prise en charge du contrôle de code source à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) en implémentant et en attachant un plug-in de contrôle de code source. L’IDE se connecte au plug-in de contrôle de code source via l’API de plug-in de contrôle de code source bien définie. L’IDE expose les fonctionnalités de contrôle de version du système de contrôle de code source en fournissant une interface utilisateur (IU) composée de barres d’outils et de commandes de menu. Le plug-in de contrôle de code source implémente la fonctionnalité de contrôle de code source.
+Vous pouvez ajouter la prise en charge du contrôle de code source à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) en implémentant et en attachant un plug-in de contrôle de code source. L’IDE se connecte au plug-in de contrôle de code source via l’API de contrôle de code source bien définie Plug-In. L’IDE expose les fonctionnalités de contrôle de version du système de contrôle de code source en fournissant une interface utilisateur (IU) composée de barres d’outils et de commandes de menu. Le plug-in de contrôle de code source implémente la fonctionnalité de contrôle de code source.
 
 ## <a name="source-control-plug-in-resources"></a>Ressources de plug-in de contrôle de code source
  Le plug-in de contrôle de code source fournit des ressources pour vous aider à créer et à connecter votre application de gestion de versions à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Le plug-in de contrôle de code source contient la spécification de l’API qui doit être implémentée par un plug-in de contrôle de code source afin qu’il puisse être intégré à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Il contient également un exemple de code (écrit en C++) qui implémente une structure de plug-in de contrôle de code source illustrant l’implémentation des fonctions essentielles conformes à l’API de plug-in de contrôle de code source.
 
  La spécification de l’API de plug-in de contrôle de code source vous permet de tirer parti de n’importe quel système de contrôle de code source de votre choix si vous créez une DLL de contrôle de code source avec l’ensemble requis de fonctions implémentées conformément à l’API de plug-in de contrôle de code source.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Composants
  Le package de l’adaptateur de contrôle de code source du diagramme est le composant de l’IDE qui traduit la demande de l’utilisateur d’une opération de contrôle de code source en un appel de fonction pris en charge par le plug-in de contrôle de code source. Pour que cela se produise, l’IDE et le plug-in de contrôle de code source doivent avoir une boîte de dialogue efficace qui transmet les informations entre l’IDE et le plug-in. Pour que cette boîte de dialogue ait lieu, ils doivent tous les deux parler le même langage. L’API de plug-in de contrôle de code source décrite dans cette documentation est le vocabulaire commun de cet échange.
 
  ![Diagramme de l’architecture de contrôle du code source](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch") Diagramme d’architecture montrant l’interaction entre le plug-in de contrôle de code source et VS

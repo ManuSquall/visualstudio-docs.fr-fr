@@ -1,5 +1,7 @@
 ---
 title: Boutons de la fenêtre Propriétés | Microsoft Docs
+description: En savoir plus sur les boutons affichés par défaut dans la barre d’outils de la Fenêtre Propriétés et sur l’implémentation des boutons.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706171"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878012"
 ---
 # <a name="properties-window-buttons"></a>Boutons de la fenêtre Propriétés
-Selon le langage de développement et le type de produit, certains boutons s’affichent par défaut dans la barre d’outils de la fenêtre **Propriétés** . Dans tous les cas, les boutons **classer**, classer par **alphabet**, **Propriétés**et **pages de propriétés** s’affichent. En Visual C# et Visual Basic, le bouton **événements** s’affiche également. Dans certains projets Visual C++, les boutons **VC + +** et les **remplacements VC** s’affichent. Des boutons supplémentaires peuvent s’afficher pour d’autres types de projets. Pour plus d’informations sur les boutons de la fenêtre **Propriétés** , consultez [fenêtre Propriétés](../../ide/reference/properties-window.md).
+Selon le langage de développement et le type de produit, certains boutons s’affichent par défaut dans la barre d’outils de la fenêtre **Propriétés** . Dans tous les cas, les boutons **classer**, classer par **alphabet**, **Propriétés** et **pages de propriétés** s’affichent. En Visual C# et Visual Basic, le bouton **événements** s’affiche également. Dans certains projets Visual C++, les boutons **VC + +** et les **remplacements VC** s’affichent. Des boutons supplémentaires peuvent s’afficher pour d’autres types de projets. Pour plus d’informations sur les boutons de la fenêtre **Propriétés** , consultez [fenêtre Propriétés](../../ide/reference/properties-window.md).
 
 ## <a name="implementation-of-properties-window-buttons"></a>Implémentation des boutons de la fenêtre Propriétés
  Lorsque vous cliquez sur le bouton **catégorisé** , Visual Studio appelle l' <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interface sur l’objet qui a le focus pour trier ses propriétés par catégorie. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> est implémenté sur l' `IDispatch` objet présenté dans la fenêtre **Propriétés** .

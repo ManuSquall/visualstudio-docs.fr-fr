@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : publication d’une extension Visual Studio | Microsoft Docs'
+description: Découvrez comment publier une extension Visual Studio dans le Visual Studio Marketplace, ce qui permet aux développeurs de rechercher les extensions nouvelles et mises à jour.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbdd283c5d147c53e7d82843207b48d0dbf6e6e9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904736"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877882"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procédure pas à pas : publication d’une extension Visual Studio
 
@@ -70,7 +72,7 @@ Cet article utilise une extension VSPackage par défaut, mais les étapes sont v
 
 7. Dans **1 : charger l’extension**, vous pouvez choisir de télécharger un fichier VSIX directement vers Visual Studio Marketplace ou simplement ajouter un lien vers votre propre site Web. Dans cet exemple, l’extension *TestPublish. vsix* est téléchargée. Glissez-déplacez votre extension ou utilisez le lien de **clic** pour rechercher le fichier. Recherchez votre extension dans le dossier \bin\Release du projet.  Cliquez sur **Continuer**.
 
-8. Dans **2 : fournir les détails**de l’extension, certains champs sont remplis automatiquement à partir du fichier *source. extension. vsixmanifest* de votre extension. Pour plus d’informations, consultez les informations ci-dessous :
+8. Dans **2 : fournir les détails** de l’extension, certains champs sont remplis automatiquement à partir du fichier *source. extension. vsixmanifest* de votre extension. Pour plus d’informations, consultez les informations ci-dessous :
 
     * Le **nom interne** est utilisé dans l’URL de la page de détails de l’extension. Par exemple, la publication d’une extension sous le nom de l’éditeur « myname » et la spécification du nom interne comme « mon extension » génère une URL « Marketplace. VisualStudio \. com/items ? ItemName = myname. MyExtension » pour la page de détails de votre extension.
 

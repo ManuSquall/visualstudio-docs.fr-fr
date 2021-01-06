@@ -1,5 +1,7 @@
 ---
 title: Spécification de l’emplacement du fichier VSPackage dans le shell VS | Microsoft Docs
+description: Découvrez comment vous pouvez permettre à Visual Studio de localiser la DLL d’assembly pour charger le VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f112da4e79bff06d12472f0af7a3fe47b2f25da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e59bea4894d6b0014542ea2a32bf6c73bc8d797c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704979"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877856"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Spécification de l’emplacement du fichier VSPackage au shell Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit être en mesure de localiser la DLL d’assembly pour charger le VSPackage. Vous pouvez le localiser de différentes manières, comme décrit dans le tableau suivant.

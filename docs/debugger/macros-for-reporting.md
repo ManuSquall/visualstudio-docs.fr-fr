@@ -1,5 +1,7 @@
 ---
 title: Macros pour la création de rapports | Microsoft Docs
+description: En savoir plus sur les macros de débogage _RPTn et _RPTFn fournies dans CRTDBG. H et sur la création de vos propres macros de débogage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731385"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903790"
 ---
 # <a name="macros-for-reporting"></a>Macros pour la création de rapports
-Pour le débogage, vous pouvez utiliser les macros **_RPTn** et **_RPTFn** , définies dans CRTDBG. H, pour remplacer l’utilisation des `printf` instructions. Vous n’avez pas besoin de les inverser dans **#ifdef**s, car ils disparaissent automatiquement dans votre version release lorsque **_DEBUG** n’est pas défini.
+Pour le débogage, vous pouvez utiliser les macros **_RPTn** et **_RPTFn** , définies dans CRTDBG. H, pour remplacer l’utilisation des `printf` instructions. Vous n’avez pas besoin de les inverser dans **#ifdef** s, car ils disparaissent automatiquement dans votre version release lorsque **_DEBUG** n’est pas défini.
 
 |Macro|Description|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Sort une chaîne de message et zéro à quatre arguments. Pour _RPT1 à **_RPT4**, la chaîne de message fait office de chaîne de mise en forme du style printf pour les arguments.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Ces macros sont identiques à **_RPTn**, mais elles montrent également le nom du fichier et le numéro de la ligne où est située la macro.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Sort une chaîne de message et zéro à quatre arguments. Pour **_RPT1** jusqu’à **_RPT4**, la chaîne de message sert de chaîne de mise en forme de style printf pour les arguments.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|Ces macros sont identiques à **_RPTn**, mais elles montrent également le nom du fichier et le numéro de la ligne où est située la macro.|
 
  Prenons l’exemple suivant :
 
@@ -80,4 +82,4 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
  Vous pouvez facilement modifier une macro personnalisée pour signaler plus ou moins d’informations à différentes destinations. Cette approche est particulièrement utile lorsque vos besoins de débogage évoluent.
 
 ## <a name="see-also"></a>Voir aussi
-- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)
+- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)

@@ -1,6 +1,7 @@
 ---
 title: Déboguer la méthode OnStart | Microsoft Docs
-description: Découvrez comment déboguer la méthode OnStart d’un service Windows dans Visual Studio en lançant le débogueur à l’intérieur de la méthode.
+description: Découvrez comment déboguer la méthode OnStart d’un service Windows dans Visual Studio, en lançant le débogueur à partir de la méthode.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27cb5a870166e1d8909c80dc617ca16690bf6619
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 488fe471552256e8fad62bb6f831448811ca343f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761405"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903140"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Comment : déboguer la méthode OnStart
 Vous pouvez déboguer un service Windows en le démarrant et en attachant le débogueur au processus de service. Pour plus d’informations, consultez [Guide pratique pour déboguer les applications de service Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Toutefois, pour déboguer la méthode <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> d’un service Windows, vous devez lancer le débogueur à l’intérieur de la méthode.

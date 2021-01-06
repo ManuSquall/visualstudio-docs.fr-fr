@@ -1,5 +1,7 @@
 ---
 title: Configuration du projet pour la génération | Microsoft Docs
+description: Découvrez comment une liste de configurations de solutions pour une solution particulière est gérée par la boîte de dialogue configurations de solutions dans un nouveau type de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706728"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877999"
 ---
 # <a name="project-configuration-for-building"></a>Configuration de projet pour la création
 La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue configurations de solution.

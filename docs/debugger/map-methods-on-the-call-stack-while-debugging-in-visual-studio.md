@@ -1,5 +1,7 @@
 ---
 title: Créer une carte visuelle de la pile des appels | Microsoft Docs
+description: Créez une carte de code pour suivre visuellement la pile des appels lors du débogage. Prenez des notes sur la carte pour suivre ce que fait le code, afin de pouvoir vous concentrer sur la recherche des bogues.
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf0cda942241ca77aa750624b6de25b5ae39391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965232f56fcd2bf0d459910e983fb10dcca7f96d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348533"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903829"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Créer une carte visuelle de la pile des appels pendant le débogage (C#, Visual Basic, C++, JavaScript)
 
@@ -55,7 +57,7 @@ Voici un aperçu rapide d’une carte de code :
 
 1. Dans un projet Visual Studio Enterprise C#, Visual Basic, C++ ou JavaScript, commencez le débogage en sélectionnant **Déboguer**  >  **Démarrer** le débogage ou en appuyant sur **F5**.
 
-1. Une fois que votre application passe en mode arrêt ou que vous exécutez pas à pas une fonction, sélectionnez **Déboguer**la  >  **carte de code**ou appuyez sur **CTRL** + **MAJ** + **`** .
+1. Une fois que votre application passe en mode arrêt ou que vous exécutez pas à pas une fonction, sélectionnez **Déboguer** la  >  **carte de code** ou appuyez sur **CTRL** + **MAJ** + **`** .
 
    La pile d'appels actuelle apparaît en orange sur une nouvelle carte de code :
 
@@ -77,7 +79,7 @@ Par défaut, seul votre propre code apparaît sur la carte. Pour afficher le cod
 - Cliquez avec le bouton droit dans la fenêtre **pile des appels** , puis sélectionnez **afficher le code externe**:
 
   ![Afficher du code externe à l'aide de la fenêtre Pile des appels](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- Ou désélectionnez **activer les uniquement mon code** dans Visual Studio **Tools** (ou **débogage**) > **options**de  >  **débogage**:
+- Ou désélectionnez **activer les uniquement mon code** dans Visual Studio **Tools** (ou **débogage**) > **options** de  >  **débogage**:
 
   ![Afficher du code externe à l'aide de la boîte de dialogue Options](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -97,7 +99,7 @@ Dans le menu **disposition** , vous pouvez :
 
 Vous pouvez ajouter des commentaires pour suivre ce qui se passe dans le code.
 
-Pour ajouter un commentaire, cliquez avec le bouton droit dans la carte de code et sélectionnez **modifier**le  >  **Nouveau commentaire**, puis tapez le commentaire.
+Pour ajouter un commentaire, cliquez avec le bouton droit dans la carte de code et sélectionnez **modifier** le  >  **Nouveau commentaire**, puis tapez le commentaire.
 
 Pour ajouter une nouvelle ligne dans un commentaire, appuyez sur **MAJ** + **entrée**.
 

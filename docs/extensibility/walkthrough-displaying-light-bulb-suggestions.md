@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : affichage des suggestions d’ampoules | Microsoft Docs'
+description: Découvrez comment créer une ampoule dans l’éditeur Visual Studio qui apparaît sur le mot actuel et comporte deux actions suggérées à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508949"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877960"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : afficher les suggestions d’ampoules
 Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.
 
- Dans les éditeurs Visual C# et Visual Basic, vous pouvez également utiliser le .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui affichent automatiquement des ampoules. Pour plus d'informations, consultez les pages suivantes :
+ Dans les éditeurs Visual C# et Visual Basic, vous pouvez également utiliser le .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui affichent automatiquement des ampoules. Pour plus d’informations, consultez :
 
 - [Comment : écrire un diagnostic et un correctif de code C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
@@ -34,7 +36,7 @@ Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent 
 
   ![aperçu d'ampoule](../extensibility/media/lightbulbpreview.png "LightBulbPreview")
 
-  Vous pouvez utiliser des ampoules pour fournir vos propres actions suggérées. Par exemple, vous pouvez fournir des actions pour déplacer des accolades ouvrantes vers une nouvelle ligne ou les déplacer à la fin de la ligne précédente. La procédure pas à pas suivante montre comment créer une ampoule qui apparaît sur le mot actuel et a deux actions suggérées : **convertir en majuscules** et **convertir en**minuscules.
+  Vous pouvez utiliser des ampoules pour fournir vos propres actions suggérées. Par exemple, vous pouvez fournir des actions pour déplacer des accolades ouvrantes vers une nouvelle ligne ou les déplacer à la fin de la ligne précédente. La procédure pas à pas suivante montre comment créer une ampoule qui apparaît sur le mot actuel et a deux actions suggérées : **convertir en majuscules** et **convertir en** minuscules.
 
 ## <a name="prerequisites"></a>Prérequis
  À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
@@ -222,8 +224,8 @@ Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent 
 2. Créez deux classes, la première nommée `UpperCaseSuggestedAction` et la seconde nommée `LowerCaseSuggestedAction`. Ces deux classes implémentent <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      Elles sont identiques, sauf que l’une appelle <xref:System.String.ToUpper%2A> et l’autre appelle <xref:System.String.ToLower%2A>. Les étapes suivantes traitent uniquement de la classe d’action de mise en majuscules, mais vous devez implémenter les deux classes. Appliquez les étapes d’implémentation de l’action de mise en majuscules comme modèle pour l’implémentation de l’action de mise en minuscules.
@@ -243,8 +245,8 @@ Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent 
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent 
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,7 +321,7 @@ Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent 
 9. Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> en remplaçant le texte dans l’étendue par son équivalent en majuscules.
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }

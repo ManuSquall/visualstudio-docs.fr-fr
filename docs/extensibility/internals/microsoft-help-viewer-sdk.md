@@ -1,5 +1,7 @@
 ---
 title: Kit de développement logiciel (SDK) Microsoft Help Viewer | Microsoft Docs
+description: Découvrez les tâches de la visionneuse d’aide de Visual Studio, telles que la création d’un article, la création d’un package de personnalisation de la visionneuse d’aide et le déploiement d’un ensemble d’articles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668857"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877843"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -704,7 +706,7 @@ Cette procédure pas à pas montre comment incorporer du contenu d’aide dans u
 
 2. [Redistribution de Shell isolé Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Présentation**
+**Vue d'ensemble**
 
 L' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] interpréteur de commandes est une version de l' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE sur laquelle vous pouvez baser une application. De telles applications contiennent l’interpréteur de commandes isolé avec les extensions que vous créez. Utilisez les modèles de projet Shell isolé, inclus dans le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Kit de développement logiciel (SDK), pour générer des extensions.
 

@@ -1,6 +1,7 @@
 ---
 title: Gérer les exceptions avec le débogueur | Microsoft Docs
-ms.custom: seodec18
+description: Découvrez comment spécifier les exceptions sur lesquelles le débogueur s’arrête, à quel moment vous souhaitez que le débogueur s’arrête et comment les sauts sont gérés.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348455"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903846"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
@@ -216,9 +217,9 @@ Pour ajouter des exceptions conditionnelles :
 
    ![Conditions supplémentaires pour une exception](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Pour chaque ligne de condition, tapez le nom du module, puis remplacez la liste d’opérateurs de **Equals** comparaison par égal **à ou différent**de. Vous pouvez spécifier des caractères génériques ( **\\\*** ) dans le nom pour spécifier plusieurs modules.
+3. Pour chaque ligne de condition, tapez le nom du module, puis remplacez la liste d’opérateurs de  comparaison par égal **à ou différent** de. Vous pouvez spécifier des caractères génériques (* *\\\** _) dans le nom pour spécifier plusieurs modules.
 
-4. Si vous devez supprimer une condition, choisissez la **Croix (X** ) à la fin de la ligne de condition.
+4. Si vous devez supprimer une condition, choisissez _ *X** à la fin de la ligne de condition.
 
 ## <a name="see-also"></a>Voir aussi
 

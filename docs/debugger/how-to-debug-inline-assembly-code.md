@@ -1,5 +1,7 @@
 ---
 title: Déboguer le code assembleur inline | Microsoft Docs
+description: Quand vous déboguez du code assembleur inline, utilisez la fenêtre Code machine pour afficher les instructions de l’assembly et utilisez la fenêtre registres pour afficher les valeurs du Registre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4366c84c87823d052452fa3fa81a3353e0c9e32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c40b8e35cd572c0075bb87f28fa1eda424cb2e8e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852398"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903933"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Comment : déboguer du code assembleur inline
 

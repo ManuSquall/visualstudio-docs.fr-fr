@@ -1,5 +1,7 @@
 ---
-title: 'Zone de test 3 : extraire-annuler l’extraction | Microsoft Docs'
+title: 'Zone de test 3 : vérifier Out-Undo Checkout | Microsoft Docs'
+description: Cette zone de test de plug-in de contrôle de code source couvre la modification et la restauration d’éléments à partir de la Banque des versions à l’aide des commandes extraire et annuler l’extraction.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5365da1e342df5aea9c1b1cd2ae5a446baea57f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6292051e6ddf11e3ce4b56648574e0207bb5a41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704619"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877687"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : Extraire/Annuler l’extraction
 Cette zone de test du plug-in de contrôle de code source couvre la modification et le rétablissement des éléments de la Banque des versions via les commandes **extraire** et **Annuler l’extraction** .
@@ -85,7 +87,7 @@ Lorsque l’utilisateur se reconnecte à la Banque des versions, les États d’
 |En cas de déconnexion, retirez un fichier, puis connectez-vous pour la synchronisation|1. Déconnectez un projet contrôlé à l’aide de la boîte de dialogue Modifier le contrôle de code source (**fichier**, **contrôle de code source**, **modifier le contrôle de code source**).<br />2. Vérifiez le fichier.<br />3. cliquez sur extraire (déconnecté) dans la boîte de dialogue d’avertissement.<br />4. modifiez le fichier.<br />5. Connectez-vous à l’aide de la boîte de dialogue Modifier le contrôle de code source.<br />6. Procurez-vous la dernière version du fichier modifié.|Comportement attendu courant|
 
 ### <a name="case-3c-query-editquery-save-qeqs"></a>Cas 3C : modification de requête/requête d’enregistrement (provenant QEQS)
- Les éléments sous contrôle de code source sont suivis pour les modifications, les modifications et les enregistrements pour aider les utilisateurs à gérer facilement leurs fichiers. Lorsqu’un élément contrôlé qui est « archivé » est modifié, provenant QEQS intercepte la tentative de modification et demande à l’utilisateur s’il souhaite extraire le fichier pour le modifier. En fonction des **Outils**, des paramètres d' **options** , l’utilisateur est contraint d’extraire le fichier pour le modifier ou peut être autorisé à modifier une copie en mémoire et à extraire ultérieurement. Si le paramètre **Outils**et **options** de l’utilisateur n’est pas défini pour afficher la boîte de dialogue Extraire et si vous souhaitez simplement l’extraire, lorsque l’utilisateur effectue sa modification, le fichier est automatiquement extrait chaque fois que cela est possible.
+ Les éléments sous contrôle de code source sont suivis pour les modifications, les modifications et les enregistrements pour aider les utilisateurs à gérer facilement leurs fichiers. Lorsqu’un élément contrôlé qui est « archivé » est modifié, provenant QEQS intercepte la tentative de modification et demande à l’utilisateur s’il souhaite extraire le fichier pour le modifier. En fonction des **Outils**, des paramètres d' **options** , l’utilisateur est contraint d’extraire le fichier pour le modifier ou peut être autorisé à modifier une copie en mémoire et à extraire ultérieurement. Si le paramètre **Outils** et **options** de l’utilisateur n’est pas défini pour afficher la boîte de dialogue Extraire et si vous souhaitez simplement l’extraire, lorsque l’utilisateur effectue sa modification, le fichier est automatiquement extrait chaque fois que cela est possible.
 
 #### <a name="expected-behavior"></a>Comportement attendu
 
@@ -104,7 +106,7 @@ Lorsque l’utilisateur se reconnecte à la Banque des versions, les États d’
 |Modifier un fichier projet archivé|Répétez les étapes décrites dans la section test précédent, mais au lieu de modifier un fichier texte, modifiez Project en modifiant les propriétés du projet.|Identique au test précédent.|
 
 ### <a name="case-3d-silent-check-out"></a>Cas 3D : extraction en mode silencieux
- Cette sous-zone aborde les scénarios d’extraction dans lesquels la boîte de dialogue **extraire** n’apparaît pas pour les **Outils**, les **options**et les paramètres de **contrôle de code source**de l’utilisateur.
+ Cette sous-zone aborde les scénarios d’extraction dans lesquels la boîte de dialogue **extraire** n’apparaît pas pour les **Outils**, les **options** et les paramètres de **contrôle de code source** de l’utilisateur.
 
 #### <a name="expected-behavior"></a>Comportement attendu
 

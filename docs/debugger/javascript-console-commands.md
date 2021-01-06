@@ -1,6 +1,7 @@
 ---
 title: Commandes de la console JavaScript | Microsoft Docs
-ms.custom: ''
+description: Utilisez les commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de la console JavaScript. Cet article s’applique aux applications Node.js, aux applications UWP et aux applications Apache Cordova.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211272"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903907"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Commandes de la console JavaScript dans Visual Studio
 
 Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). Les informations contenues dans cette rubrique s’appliquent à Node.js application, aux applications UWP et aux applications créées à l’aide de Visual Studio Tools pour Apache Cordova.
 
-Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer**la  >  **Windows**  >  **console Windows JavaScript**.
+Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer** la  >    >  **console Windows JavaScript**.
 
 > [!NOTE]
 > Si la fenêtre n’est pas disponible pendant une session de débogage, vérifiez que le type de débogueur est défini sur **Script** dans les propriétés de débogage du projet.
@@ -41,7 +42,7 @@ Utilisez la forme de commande plus longue `window.console.[command]` si vous dev
 > [!TIP]
 > Les versions antérieures de Visual Studio ne prennent pas en charge l’ensemble complet des commandes. Utilisez IntelliSense sur l’objet console pour obtenir rapidement des informations sur les commandes prises en charge.
 
-|Commande|Description|Exemple|
+|Commande|Description| Exemple|
 |-------------|-----------------|-------------|
 |`assert(expression, message)`|Envoie un message si `expression` correspond à **false**.|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|Efface les messages de la fenêtre de console, y compris les messages d’erreur de script. Efface également les scripts apparaissant dans la fenêtre de console. N’efface pas le script entré dans l’invite d’entrée de la console.|`console.clear();`|
@@ -67,7 +68,7 @@ Utilisez la forme de commande plus longue `window.console.[command]` si vous dev
 ## <a name="miscellaneous-commands"></a>Commandes diverses
 Ces commandes sont également disponibles dans la fenêtre de la console JavaScript (elles ne sont pas disponibles à partir du code).
 
-|Commande|Description|Exemple|
+|Commande|Description| Exemple|
 |-------------|-----------------|-------------|
 |`$0`, `$1`, `$2`, `$3`, `$4`|Retourne l’élément spécifié dans la fenêtre de console. `$0` retourne l'élément actuellement sélectionné dans l'Explorateur DOM, `$1` retourne l'élément précédemment sélectionné dans l'Explorateur DOM, et ainsi de suite, jusqu'au quatrième élément sélectionné précédemment.|3 $|
 |`$(id)`|Retourne un élément par ID. Il s’agit d’une commande de raccourci pour `document.getElementById(id)`, où `id` est une chaîne qui représente l’ID d’élément.|`$("contenthost")`|
@@ -87,7 +88,7 @@ if (console && console.log) {
 ```
 
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examen des objets de la fenêtre de console JavaScript
-Lorsque vous utilisez la fenêtre de console JavaScript, vous pouvez interagir avec un objet qui est dans la portée. Pour examiner un objet hors de portée dans la fenêtre de la console, utilisez les commandes `console.log` , `console.dir`ou d’autres commandes à partir de votre code. Vous pouvez également interagir avec l’objet à partir de la fenêtre de console pendant qu’il est dans la portée en définissant un point d’arrêt dans votre**code (point d’arrêt**  >  **Insérer point**d’arrêt).
+Lorsque vous utilisez la fenêtre de console JavaScript, vous pouvez interagir avec un objet qui est dans la portée. Pour examiner un objet hors de portée dans la fenêtre de la console, utilisez les commandes `console.log` , `console.dir`ou d’autres commandes à partir de votre code. Vous pouvez également interagir avec l’objet à partir de la fenêtre de console pendant qu’il est dans la portée en définissant un point d’arrêt dans votre **code (point d’arrêt**  >  **Insérer point** d’arrêt).
 
 ## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Mise en forme de la sortie de console. log
 Si vous passez plusieurs arguments à `console.log`, la console les traite sous forme de tableau et concatène la sortie.

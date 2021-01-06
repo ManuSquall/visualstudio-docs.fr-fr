@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341634"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903751"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Prise en main de Visual Studio et Unity
 
@@ -34,7 +34,7 @@ Outils Visual Studio pour Unity est une extension gratuite qui assure la prise e
 > [!NOTE]
 > Ce guide d’installation est destiné à Visual Studio. Si vous utilisez Visual Studio Code, consultez la [documentation sur le développement Unity avec vs code](https://code.visualstudio.com/docs/other/unity).
 
-1. [Téléchargez le programme d’installation de Visual Studio](/docs/install/install-visual-studio.md)ou exécutez-le s’il est déjà installé.
+1. [Téléchargez le programme d’installation de Visual Studio](/visualstudio/docs/install/install-visual-studio.md)ou exécutez-le s’il est déjà installé.
 2. Cliquez sur **Modifier** (s’il est déjà installé) ou **Installer** (pour les nouvelles installations) sur la version souhaitée de Visual Studio.
 3. Dans l’onglet **charges de travail** , accédez à la section **jeux** et sélectionnez la charge **de travail développement de jeux avec Unity** .
 
@@ -85,7 +85,7 @@ Par défaut, Unity doit déjà être configuré pour utiliser Visual Studio ou V
     ![Menu des préférences des outils externes de l’éditeur Unity sur Windows](../media/vs/preferences-external-tools.png)
 
 4. Si **Parcourir…** a été sélectionné, accédez au répertoire **Common7/IDE** à l’intérieur de votre répertoire d’installation de Visual Studio, puis sélectionnez **devenv.exe**. Cliquez ensuite sur **ouvrir**.
-5. Une fois Visual Studio sélectionné dans la liste **Éditeur de scripts externe** , vérifiez que la case **Attachement de l’éditeur** est cochée.
+5. Une fois Visual Studio sélectionné dans la liste **Éditeur de scripts externe**, vérifiez que la case **Attachement de l’éditeur** est cochée.
 6. Fermez la boîte de dialogue **Préférences** pour terminer le processus de configuration.
 
 :::zone-end

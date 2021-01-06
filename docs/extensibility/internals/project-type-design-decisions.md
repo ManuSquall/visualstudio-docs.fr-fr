@@ -1,5 +1,7 @@
 ---
 title: Décisions de conception de type de projet | Microsoft Docs
+description: Pour plus d’informations sur l’élément, la persistance de fichier projet et les décisions de conception de mécanicien, vous devez prendre des décisions avant d’étendre Visual Studio en créant un nouveau type de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706371"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877795"
 ---
 # <a name="project-type-design-decisions"></a>Décisions de conception de type de projet
 Avant de créer un nouveau type de projet, vous devez prendre plusieurs décisions de conception concernant votre type de projet. Vous devez décider quels types d’éléments vos projets contiendront, comment les fichiers projet seront rendus persistants et quel modèle d’engagement vous allez utiliser.

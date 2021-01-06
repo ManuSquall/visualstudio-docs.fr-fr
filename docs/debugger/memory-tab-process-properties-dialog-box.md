@@ -1,5 +1,7 @@
 ---
 title: Onglet mémoire de la boîte de dialogue Propriétés du processus | Microsoft Docs
+description: Utilisez l’onglet mémoire des propriétés du processus pour voir comment un processus utilise la mémoire. Des informations sur l’espace utilisé, l’espace partagé et l’espace virtuel sont utilisées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931280"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903725"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Onglet Mémoire de la boîte de dialogue Propriétés du processus
 Utilisez l’onglet **mémoire** pour afficher la façon dont un processus utilise la mémoire. Pour afficher la [boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md), déplacez le focus vers une fenêtre [vue processus](../debugger/processes-view.md) . Sélectionnez un nœud de processus dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

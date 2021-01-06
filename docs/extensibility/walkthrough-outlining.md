@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : mode plan | Microsoft Docs'
+description: Découvrez comment définir et afficher des régions en mode plan dans le contexte d’un service de langage ou pour votre propre extension de nom de fichier et type de contenu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508923"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877895"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
 Configurez des fonctionnalités basées sur le langage, telles que le mode plan, en définissant les genres de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou définir votre propre extension de nom de fichier et type de contenu, appliquer la définition de région à ce type uniquement ou appliquer les définitions de régions à un type de contenu existant (tel que « texte »). Cette procédure pas à pas montre comment définir et afficher des régions en mode plan.

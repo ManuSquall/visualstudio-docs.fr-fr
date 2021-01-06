@@ -1,5 +1,7 @@
 ---
 title: Commandes de menu | Microsoft Docs
+description: Consultez la liste des menus Spy + + et, pour chaque menu, un lien vers des informations supplémentaires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db2c4ebe4a6aa24e0df8f66442f6128ecee8d491
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931308"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97902971"
 ---
 # <a name="menu-commands"></a>Commandes de menu
 Les rubriques d’aide de cette section répertorient les commandes disponibles dans les menus Spy + +.

@@ -1,5 +1,7 @@
 ---
 title: Commandes du menu messages | Microsoft Docs
+description: Consultez la liste des commandes disponibles dans le menu messages, avec une brève description de chacune d’elles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13afea6033138fcca2542821893bce5a06826b53
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845888"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903205"
 ---
 # <a name="messages-menu-commands"></a>commandes du menu Messages
 Le menu **messages** fournit des commandes permettant de contrôler les affichages des messages.

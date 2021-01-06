@@ -1,5 +1,7 @@
 ---
-title: Déboguer sur un cluster à hautes performances | Microsoft Docs
+title: Déboguer sur un cluster High-Performance | Microsoft Docs
+description: Découvrez ce qui est particulier pour déboguer un programme multitraitement sur un cluster hautement performant. Deux fenêtres sont particulièrement utiles et il existe des techniques spéciales.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6b19f1d919095f30e4408056e49847c3c9ba5671
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852437"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903105"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Comment : déboguer sur un cluster à hautes performances (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Comment : déboguer sur un cluster High-Performance (C#, Visual Basic, C++)
 
 Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour connaître la configuration générale requise pour l’installation à distance, consultez [débogage à distance](../debugger/remote-debugging.md).
 
@@ -97,9 +99,9 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Débogage à distance](../debugger/remote-debugging.md)
 - [Comment : utiliser la fenêtre processus](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Prise en main du débogage des applications multithread](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Threads et processus](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
-- [Utilisation des points d'arrêt](../debugger/using-breakpoints.md)
+- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

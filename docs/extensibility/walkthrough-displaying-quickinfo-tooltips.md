@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : affichage des info-bulles Info-bulle | Microsoft Docs'
+description: Découvrez comment afficher des info-automatiques pour le contenu de texte à l’aide de cette procédure pas à pas. Info Express affiche des signatures et des descriptions de méthode pour un nom de méthode.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904828"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877934"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Procédure pas à pas : afficher les info-bulles Info Express
 Info Express est une fonctionnalité IntelliSense qui affiche des signatures et des descriptions de méthode lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Vous pouvez implémenter des fonctionnalités basées sur le langage, telles que Info Express, en définissant les identificateurs pour lesquels vous souhaitez fournir des descriptions Info Express, puis en créant une info-bulle dans laquelle afficher le contenu. Vous pouvez définir Info Express dans le contexte d’un service de langage, ou vous pouvez définir votre propre extension de nom de fichier et type de contenu et afficher l’info-automatique pour ce type, ou vous pouvez afficher info Express pour un type de contenu existant (tel que « texte »). Cette procédure pas à pas montre comment afficher info Express pour le type de contenu « texte ».

@@ -1,5 +1,6 @@
 ---
 title: Lier un type de contenu à une extension de nom de fichier
+description: Découvrez comment lier votre propre type de contenu à une extension de nom de fichier à l’aide des extensions Managed Extensibility Framework de l’éditeur dans cette procédure pas à pas.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034661"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877908"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier
 Vous pouvez définir votre propre type de contenu et y associer une extension de nom de fichier à l’aide des extensions Managed Extensibility Framework (MEF) de l’éditeur. Dans certains cas, l’extension de nom de fichier est déjà définie par un service de langage. Toutefois, pour l’utiliser avec MEF, vous devez toujours le lier à un type de contenu.
@@ -28,7 +29,7 @@ Vous pouvez définir votre propre type de contenu et y associer une extension de
 
 1. Créez un projet VSIX C#. (Dans la boîte de dialogue **nouveau projet** , sélectionnez **Visual C#/extensibilité**, puis **projet VSIX**.) Nommez la solution `ContentTypeTest` .
 
-2. Dans le **fichier source. extension. vsixmanifest** , accédez à l’onglet **ressources** , définissez le champ **type** sur **Microsoft. VisualStudio. MEFComponent**, le champ **source** sur **un projet dans la solution actuelle**et le champ **projet** sur le nom du projet.
+2. Dans le **fichier source. extension. vsixmanifest** , accédez à l’onglet **ressources** , définissez le champ **type** sur **Microsoft. VisualStudio. MEFComponent**, le champ **source** sur **un projet dans la solution actuelle** et le champ **projet** sur le nom du projet.
 
 ## <a name="define-the-content-type"></a>Définir le type de contenu
 

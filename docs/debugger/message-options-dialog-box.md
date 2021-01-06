@@ -1,5 +1,6 @@
 ---
 title: Boîte de dialogue Options des messages | Microsoft Docs
+description: Spécifiez dans les options de message les messages qui sont répertoriés dans la vue messages, ainsi que les données de message à afficher.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931322"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903582"
 ---
 # <a name="message-options-dialog-box"></a>Options des messages, boîte de dialogue
 Utilisez cette boîte de dialogue pour sélectionner les messages qui sont répertoriés dans la [vue messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **journaux des messages** dans le menu **Espion** .

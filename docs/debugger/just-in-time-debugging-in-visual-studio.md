@@ -1,5 +1,7 @@
 ---
 title: Désactiver le débogueur juste-à-temps | Microsoft Docs
+description: La boîte de dialogue débogueur juste-à-temps peut s’ouvrir lorsqu’une erreur se produit dans une application. Découvrez ce que vous pouvez faire quand cela se produit et comment l’éviter.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7904b4bbf56c0a547d9f7b1e94bb46af8dd48d98
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386119"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903894"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Désactiver le débogueur juste-à-temps
 
@@ -32,13 +34,13 @@ Si vous n’avez pas installé Visual Studio, vous pouvez empêcher le débogage
 
 - Si vous essayez d’exécuter une application Web, désactivez le débogage de script :
 
-  Dans **le panneau de configuration**Windows  >  **Network and Internet**  >  **Options Internet**et Internet, sélectionnez **désactiver le débogage de script (Internet Explorer)** et **désactivez le débogage de script (autre)**. Les étapes et les paramètres exacts dépendent de votre version de Windows et de votre navigateur.
+  Dans **le panneau de configuration** Windows  >    >  **Options Internet** et Internet, sélectionnez **désactiver le débogage de script (Internet Explorer)** et **désactivez le débogage de script (autre)**. Les étapes et les paramètres exacts dépendent de votre version de Windows et de votre navigateur.
 
   ![Options Internet JIT](../debugger/media/jitinternetoptions.png "Options Internet JIT")
 
 - Si vous hébergez une application Web ASP.NET dans IIS, désactivez le débogage côté serveur :
 
-  1. Dans l' **affichage fonctionnalités**du gestionnaire des services Internet, sous la section **ASP.net** , double-cliquez sur **compilation .net**, ou sélectionnez-la, puis sélectionnez **ouvrir la fonctionnalité** dans le volet **actions** .
+  1. Dans l' **affichage fonctionnalités** du gestionnaire des services Internet, sous la section **ASP.net** , double-cliquez sur **compilation .net**, ou sélectionnez-la, puis sélectionnez **ouvrir la fonctionnalité** dans le volet **actions** .
   1. Sous **comportement**  >  **Debug**, sélectionnez **false**. Les étapes sont différentes dans les versions antérieures d’IIS.
 
 Une fois que vous avez désactivé le débogage juste-à-temps, l’application peut être en mesure de gérer l’erreur et de s’exécuter normalement.

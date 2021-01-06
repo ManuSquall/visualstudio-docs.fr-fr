@@ -1,6 +1,7 @@
 ---
 title: Afficher la mémoire pour les variables dans le débogueur | Microsoft Docs
-ms.custom: ''
+description: Apprenez à utiliser la mémoire Windows au fur et à mesure du débogage pour voir l’espace mémoire utilisé par votre application. D’autres fenêtres affichent des variables et où elles résident en mémoire.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,18 +25,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c39024e32c899310b88c1b0583d5b292b063937
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348318"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903106"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Utiliser les fenêtres mémoire dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)
 
 Pendant le débogage, la fenêtre **mémoire** affiche l’espace mémoire utilisé par votre application.
 
-Les fenêtres du débogueur, telles que **Espion**, **automatique**, **variables locales**et la boîte de dialogue **Espion express** , affichent des variables qui sont stockées à des emplacements spécifiques en mémoire. La fenêtre **mémoire** vous montre l’image globale. La vue mémoire est pratique pour examiner de grands éléments de données (mémoires tampons ou chaînes volumineuses, par exemple) qui ne s’affichent pas correctement dans les autres fenêtres.
+Les fenêtres du débogueur, telles que **Espion**, **automatique**, **variables locales** et la boîte de dialogue **Espion express** , affichent des variables qui sont stockées à des emplacements spécifiques en mémoire. La fenêtre **mémoire** vous montre l’image globale. La vue mémoire est pratique pour examiner de grands éléments de données (mémoires tampons ou chaînes volumineuses, par exemple) qui ne s’affichent pas correctement dans les autres fenêtres.
 
 La fenêtre **mémoire** n’est pas limitée à l’affichage des données. Il affiche tout ce qui se trouve dans l’espace mémoire, y compris les données, le code et les bits aléatoires du garbage dans la mémoire non assignée.
 
@@ -46,15 +47,15 @@ La fenêtre **mémoire** n’est pas disponible pour le débogage de script ou S
 Comme les autres fenêtres du débogueur, les fenêtres de **mémoire** sont disponibles uniquement pendant une session de débogage.
 
 >[!IMPORTANT]
->Pour activer les fenêtres de **mémoire** , **activez le débogage au niveau** de l’adresse dans **Outils**  >  **options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**.
+>Pour activer les fenêtres de **mémoire** , **activez le débogage au niveau** de l’adresse dans **Outils**  >  **options** (ou options de **débogage**  >  ) > **débogage**  >  **général**.
 
 **Pour ouvrir une fenêtre Mémoire**
 
-1. Assurez-vous que l’option **activer le débogage au niveau** de l’adresse est sélectionnée dans **Outils**  >  **options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**.
+1. Assurez-vous que l’option **activer le débogage au niveau** de l’adresse est sélectionnée dans **Outils**  >  **options** (ou options de **débogage**  >  ) > **débogage**  >  **général**.
 
-1. Démarrez le débogage en sélectionnant la flèche verte, en appuyant sur **F5**ou **en sélectionnant déboguer**  >  **Démarrer le débogage**.
+1. Démarrez le débogage en sélectionnant la flèche verte, en appuyant sur **F5** ou **en sélectionnant déboguer**  >  **Démarrer le débogage**.
 
-2. Sous **Déboguer**la  >  **Windows**  >  **mémoire**Windows, sélectionnez **mémoire 1**, **mémoire 2**, **mémoire 3**ou **mémoire 4**. (Certaines éditions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent une seule fenêtre de **mémoire** .)
+2. Sous **Déboguer** la  >    >  **mémoire** Windows, sélectionnez **mémoire 1**, **mémoire 2**, **mémoire 3** ou **mémoire 4**. (Certaines éditions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent une seule fenêtre de **mémoire** .)
 
 ## <a name="move-around-in-the-memory-window"></a>Se déplacer dans la fenêtre mémoire
 

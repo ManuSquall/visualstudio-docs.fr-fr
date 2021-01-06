@@ -1,5 +1,7 @@
 ---
 title: Affichage des messages | Microsoft Docs
+description: Chaque fenêtre, thread et processus est associé à un flux de message qui peut être affiché dans une fenêtre d’affichage des messages. Découvrez comment ouvrir et contrôler une vue messages.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845848"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903401"
 ---
 # <a name="messages-view"></a>Affichage Messages
 Chaque fenêtre est associée à un flux de message. Une fenêtre d’affichage des messages affiche ce flux de message. Le handle de fenêtre, le code du message et le message sont affichés. Vous pouvez également créer une vue messages pour un thread ou un processus. Cela vous permet d’afficher les messages envoyés à toutes les fenêtres détenues par un processus ou un thread spécifique, ce qui est particulièrement utile pour la capture des messages d’initialisation de fenêtre.

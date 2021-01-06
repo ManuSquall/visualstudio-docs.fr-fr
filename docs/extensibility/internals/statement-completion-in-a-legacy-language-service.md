@@ -1,5 +1,7 @@
 ---
 title: Saisie semi-automatique des instructions dans un service de langage hérité | Microsoft Docs
+description: Découvrez comment fonctionne la saisie semi-automatique des instructions et comment l’implémenter dans votre service de langage hérité dans un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbeb360cf5bc0f74d6b2d9b93086382dd35da988
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704940"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877765"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Saisie semi-automatique des instructions dans un service de langage hérité
 La saisie semi-automatique des instructions est le processus par lequel le service de langage aide les utilisateurs à terminer un mot clé ou un élément de langage qu’ils ont commencé à taper dans l’éditeur principal. Cette rubrique décrit le fonctionnement de la saisie semi-automatique des instructions et comment l’implémenter dans votre service de langage.

@@ -1,5 +1,7 @@
 ---
 title: Migration d’un service de langage hérité | Microsoft Docs
+description: Apprenez à mettre à jour un service de langage avec la dernière version de Visual Studio en mettant à jour le projet et en ajoutant un fichier source. extension. vsixmanifest.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707114"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877830"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migration d’un service de langage hérité
 Vous pouvez migrer un service de langage hérité vers une version ultérieure de Visual Studio en mettant à jour le projet et en ajoutant un fichier. extension. vsixmanifest source au projet. Le service de langage lui-même continue à fonctionner comme avant, car l’éditeur Visual Studio l’adapte.
@@ -57,7 +59,7 @@ Vous pouvez migrer un service de langage hérité vers une version ultérieure d
 
     - Sous l’onglet **application** , remplacez la version **cible de .NET Framework** par **4.6.1**.
 
-    - Sous l’onglet **Déboguer** , dans la zone **Démarrer le programme externe** , tapez ** \<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
+    - Sous l’onglet **Déboguer** , dans la zone **Démarrer le programme externe** , tapez **\<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
 
          Dans la zone **arguments de ligne de commande** , tapez/**rootsuffix exp**.
 
@@ -87,7 +89,7 @@ Vous pouvez migrer un service de langage hérité vers une version ultérieure d
 
     - Ajoutez le fichier à votre projet.
 
-    - Dans les **Propriétés**du fichier, affectez à **action de génération** la valeur **aucun**.
+    - Dans les **Propriétés** du fichier, affectez à **action de génération** la valeur **aucun**.
 
     - Ouvrez le fichier avec l' **éditeur de manifeste VSIX**.
 
@@ -103,7 +105,7 @@ Vous pouvez migrer un service de langage hérité vers une version ultérieure d
 
     - Enregistrez et fermez le fichier.
 
-11. Générez la solution. Les fichiers générés sont déployés sur **%UserProfile%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **.
+11. Générez la solution. Les fichiers générés sont déployés sur **%UserProfile%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\**.
 
 12. Démarrez le débogage. Une deuxième instance de Visual Studio A été ouverte.
 

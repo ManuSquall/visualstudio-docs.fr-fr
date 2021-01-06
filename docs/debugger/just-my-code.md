@@ -1,5 +1,7 @@
 ---
 title: Déboguer le code utilisateur avec Uniquement mon code | Microsoft Docs
+description: Uniquement mon code est une fonctionnalité de débogage qui parcourt automatiquement les appels au code non-utilisateur. Découvrez comment activer, désactiver et utiliser cette fonctionnalité.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536563"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903881"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Déboguer uniquement le code utilisateur avec Uniquement mon code
 
@@ -25,7 +27,7 @@ Uniquement mon code fonctionne différemment dans les projets .NET, C++ et JavaS
 
 Pour la plupart des langages de programmation, Uniquement mon code est activé par défaut.
 
-- Pour activer ou désactiver les uniquement mon code dans Visual Studio, sous Options des **Outils**  >  **Options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**, sélectionnez ou désélectionnez **activer les uniquement mon code**.
+- Pour activer ou désactiver les uniquement mon code dans Visual Studio, sous Options des **Outils**  >   (ou options de **débogage**  >  ) > **débogage**  >  **général**, sélectionnez ou désélectionnez **activer les uniquement mon code**.
 
 ![Activez Uniquement mon code dans la boîte de dialogue Options](../debugger/media/dbg_justmycode_options.png "Activer Uniquement mon code")
 
@@ -43,7 +45,7 @@ Dans la fenêtre **pile des appels** ou **tâches** , uniquement mon code rédui
 ![Frame de code externe dans la fenêtre pile des appels](../debugger/media/dbg_justmycode_externalcode.png "Frame de code externe")
 
 >[!TIP]
->Pour ouvrir les **modules**, **pile des appels**, **tâches**ou la plupart des autres fenêtres de débogage, vous devez être dans une session de débogage. Pendant le débogage, sous **Debug**  >  **fenêtres**de débogage, sélectionnez les fenêtres que vous souhaitez ouvrir.
+>Pour ouvrir les **modules**, **pile des appels**, **tâches** ou la plupart des autres fenêtres de débogage, vous devez être dans une session de débogage. Pendant le débogage, sous   >  **fenêtres** de débogage, sélectionnez les fenêtres que vous souhaitez ouvrir.
 
 <a name="BKMK_Override_call_stack_filtering"></a> Pour afficher le code dans un frame **[code externe]** réduit, cliquez avec le bouton droit dans **la pile des appels** ou la fenêtre de **tâche** , puis sélectionnez **afficher le code externe** dans le menu contextuel. Les lignes de code externe développées remplacent le frame **[code externe**].
 
@@ -73,7 +75,7 @@ Lors du débogage .NET :
 
 S’il n’y a plus de code utilisateur, le débogage continue jusqu’à ce qu’il se termine, atteint un autre point d’arrêt ou génère une erreur.
 
-<a name="BKMK_NET_Breakpoint_behavior"></a>Si le débogueur s’arrête dans du code non-utilisateur (par exemple, vous utilisez l’instruction **Debug**  >  **break All** et la pause dans du code non-utilisateur), la fenêtre **aucune source** s’affiche. Vous pouvez ensuite utiliser une **Debug**  >  commande d'**étape** de débogage pour accéder à la ligne suivante du code utilisateur.
+<a name="BKMK_NET_Breakpoint_behavior"></a>Si le débogueur s’arrête dans du code non-utilisateur (par exemple, vous utilisez l’instruction **Debug**  >  **break All** et la pause dans du code non-utilisateur), la fenêtre **aucune source** s’affiche. Vous pouvez ensuite utiliser une   >  commande d'**étape** de débogage pour accéder à la ligne suivante du code utilisateur.
 
 Si une exception non gérée se produit dans du code non-utilisateur, le débogueur s’arrête au niveau de la ligne de code utilisateur où l’exception a été générée.
 
@@ -89,12 +91,12 @@ Pour le comportement de la pile des appels, par exemple dans la fenêtre **pile 
 
 - Fonctions avec des informations sources supprimées dans leur fichier de symboles.
 - Fonctions où les fichiers de symboles indiquent qu'il n'existe pas de fichier source correspondant au frame de pile.
-- Fonctions spécifiées dans les fichiers * \* .. natjmc* dans le dossier *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
+- Fonctions spécifiées dans les fichiers *\* .. natjmc* dans le dossier *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
 
 Pour le comportement d’exécution pas à pas du code, Uniquement mon code en C++ considère uniquement ces fonctions comme du *code non-utilisateur*:
 
 - Fonctions pour lesquelles le fichier PDB correspondant n’a pas été chargé dans le débogueur.
-- Fonctions spécifiées dans les fichiers * \* .. natjmc* dans le dossier *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
+- Fonctions spécifiées dans les fichiers *\* .. natjmc* dans le dossier *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
 
 > [!NOTE]
 > Pour la prise en charge de l’exécution pas à pas du code dans Uniquement mon code, le code C++ doit être compilé à l’aide des compilateurs MSVC dans Visual Studio 15,8 Preview 3 ou version ultérieure, et le commutateur du compilateur/JMC doit être activé (il est activé par défaut). Pour plus d’informations, consultez [personnaliser la pile des appels C++ et le comportement](#BKMK_CPP_Customize_call_stack_behavior)de l’exécution du code) et ce billet de [blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Pour le code compilé à l’aide d’un compilateur plus ancien, les fichiers *.. natstepfilter* sont le seul moyen de personnaliser l’exécution pas à pas du code, qui est indépendant de uniquement mon code. Consultez [personnaliser le comportement d’exécution pas à pas C++](#BKMK_CPP_Customize_stepping_behavior).
@@ -112,7 +114,7 @@ Si le débogueur rencontre une exception, il s’arrête sur l’exception, qu�
 
 ### <a name="customize-c-call-stack-and-code-stepping-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser la pile des appels C++ et le comportement du code pas à pas
 
-Pour les projets C++, vous pouvez spécifier les modules, les fichiers sources et les fonctions que la fenêtre **pile des appels** traite comme du code non-utilisateur en les spécifiant dans des fichiers * \* .. natjmc* . Cette personnalisation s’applique également au code pas à pas si vous utilisez le compilateur le plus récent (consultez [C++ uniquement mon code](#BKMK_CPP_User_and_non_user_code)).
+Pour les projets C++, vous pouvez spécifier les modules, les fichiers sources et les fonctions que la fenêtre **pile des appels** traite comme du code non-utilisateur en les spécifiant dans des fichiers *\* .. natjmc* . Cette personnalisation s’applique également au code pas à pas si vous utilisez le compilateur le plus récent (consultez [C++ uniquement mon code](#BKMK_CPP_User_and_non_user_code)).
 
 - Pour spécifier du code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le fichier *.. natjmc* au dossier *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
 - Pour spécifier du code non-utilisateur pour un utilisateur individuel, ajoutez le fichier *.. natjmc* au dossier *%UserProfile%\My documents \\<Visual Studio version \> \Visualizers* .
@@ -162,7 +164,7 @@ Un fichier *.. natjmc* est un fichier XML avec la syntaxe suivante :
 
 ### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement d’exécution pas à pas C++ indépendamment des paramètres de Uniquement mon code
 
-Dans les projets C++, vous pouvez spécifier des fonctions pour effectuer un pas à pas principal en les répertoriant comme du code non-utilisateur dans des fichiers * \* .. natstepfilter* . Les fonctions répertoriées dans les fichiers * \* .. natstepfilter* ne dépendent pas des paramètres de uniquement mon code.
+Dans les projets C++, vous pouvez spécifier des fonctions pour effectuer un pas à pas principal en les répertoriant comme du code non-utilisateur dans des fichiers *\* .. natstepfilter* . Les fonctions répertoriées dans les fichiers *\* .. natstepfilter* ne dépendent pas des paramètres de uniquement mon code.
 
 - Pour spécifier du code non-utilisateur pour tous les utilisateurs de Visual Studio locaux, ajoutez le fichier *.. natstepfilter* au dossier *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
 - Pour spécifier du code non-utilisateur pour un utilisateur individuel, ajoutez le fichier *.. natstepfilter* au dossier *%UserProfile%\My documents \\<Visual Studio version \> \Visualizers* .
@@ -188,7 +190,7 @@ Un fichier *.. natstepfilter* est un fichier XML avec la syntaxe suivante :
 |Élément|Description|
 |-------------|-----------------|
 |`Function`|Obligatoire. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|
-|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Par exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|
+|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|
 |`Module`|facultatif. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|
 |`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> `NoStepInto`  : indique au débogueur d’effectuer un pas à pas principal dans la fonction.<br /> `StepInto`  : indique au débogueur d’effectuer un pas à pas détaillé dans la fonction, en substituant tout autre élément `NoStepInto` pour la fonction correspondante.|
 
@@ -247,7 +249,7 @@ Si les exceptions de première chance sont activées pour l’exception et que l
 
 Pour classer par catégorie le code utilisateur et non-utilisateur pour un seul projet JavaScript, vous pouvez ajouter un fichier *. JSON* nommé *mycode.jsdans* le dossier racine du projet.
 
-Les spécifications de ce fichier remplacent les classifications par défaut et le *mycode.default.wwa.jssur* le fichier. Le *mycode.jssur* le fichier n’a pas besoin de répertorier toutes les paires clé/valeur. Les valeurs d' **MyCode**, de **bibliothèques**et non **liées** peuvent être des tableaux vides.
+Les spécifications de ce fichier remplacent les classifications par défaut et le *mycode.default.wwa.jssur* le fichier. Le *mycode.jssur* le fichier n’a pas besoin de répertorier toutes les paires clé/valeur. Les valeurs d' **MyCode**, de **bibliothèques** et non **liées** peuvent être des tableaux vides.
 
 *Mycode.jssur* les fichiers, utilisez la syntaxe suivante :
 

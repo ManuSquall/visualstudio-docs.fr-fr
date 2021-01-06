@@ -1,5 +1,7 @@
 ---
 title: Code optimisé pour le débogage | Microsoft Docs
+description: Si possible, ne générez pas de cible de version Win32 tant que votre programme n’est pas débogué, car l’optimisation peut compliquer le débogage. Consultez les détails dans cet article.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852385"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903179"
 ---
 # <a name="how-to-debug-optimized-code"></a>Comment : déboguer le code optimisé
 
@@ -58,7 +60,7 @@ ms.locfileid: "90852385"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Pour activer l'optimisation dans une configuration de build Debug
 
-1. Lorsque vous créez un projet, sélectionnez la cible `Win32 Debug`. Utilisez la cible `Win32``Debug` jusqu’à ce que votre programme soit entièrement débogué et que vous soyez prêt à générer une cible `Win32 Release`. Le compilateur n'optimise pas la cible `Win32 Debug`.
+1. Lorsque vous créez un projet, sélectionnez la cible `Win32 Debug`. Utilisez la cible `Win32 Debug` jusqu’à ce que votre programme soit entièrement débogué et que vous soyez prêt à générer une cible `Win32 Release`. Le compilateur n'optimise pas la cible `Win32 Debug`.
 
 2. Sélectionnez le projet dans l’Explorateur de solutions.
 

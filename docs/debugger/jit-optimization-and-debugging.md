@@ -1,5 +1,7 @@
 ---
 title: Optimisation et débogage JIT | Microsoft Docs
+description: Le code optimisé est plus difficile à déboguer que le code qui ne l’est pas. En savoir plus sur l’optimisation JIT et sur le moment et la façon de le supprimer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916218"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903920"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimisation JIT et débogage
 Si vous essayez de déboguer du code, il est plus facile de le faire lorsque ce code n’est **pas** optimisé. Lorsque le code est optimisé, le compilateur et le runtime apportent des modifications au code UC émis afin qu’il s’exécute plus rapidement, mais dispose d’un mappage moins direct au code source d’origine. Si le mappage est moins direct, les débogueurs sont souvent incapables de vous indiquer la valeur des variables locales, et le code pas à pas et les points d’arrêt peuvent ne pas fonctionner comme prévu.

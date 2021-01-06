@@ -1,5 +1,7 @@
 ---
 title: Description du répertoire de modèles (. Fichiers VSDir) | Microsoft Docs
+description: Découvrez comment un fichier de description de répertoire de modèle permet à l’IDE de Visual Studio d’afficher des dossiers, des fichiers. vsz et des modèles associés à votre projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704690"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877726"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Fichiers de description de répertoire de modèles (.Vsdir)
 Un fichier de description de répertoire de modèles (. vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) d’afficher des dossiers, des fichiers Assistant. vsz et des fichiers modèles associés à votre projet dans des boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers. vsdir d’un emplacement référencé sont fusionnés, bien qu’un seul fichier. vsdir soit généralement fourni pour décrire plusieurs dossiers, assistants ou fichiers de modèles.

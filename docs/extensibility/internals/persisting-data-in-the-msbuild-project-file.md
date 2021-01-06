@@ -1,5 +1,7 @@
 ---
 title: Persistance des données dans le fichier projet MSBuild | Microsoft Docs
+description: Découvrez comment rendre des données persistantes dans un fichier projet et utiliser IPersistXMLFragment pour conserver les données dans le fichier projet à travers les niveaux d’agrégation de sous-type de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83526007f676ae94ddce57936b627bcb4308c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706699"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878077"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Données persistantes dans le fichier projet MSBuild
 Un sous-type de projet peut avoir besoin de conserver des données spécifiques au sous-type dans le fichier projet pour une utilisation ultérieure. Un sous-type de projet utilise la persistance du fichier projet pour répondre aux exigences suivantes :
@@ -24,7 +26,7 @@ Un sous-type de projet peut avoir besoin de conserver des données spécifiques 
 
     1. Données indépendantes de la configuration. Autrement dit, les données stockées dans des éléments MSBuild avec des conditions vides ou manquantes.
 
-    2. Données dépendantes de la configuration. Autrement dit, les données stockées dans les éléments MSBuild qui sont conditionnés pour une configuration de projet particulière. Par exemple :
+    2. Données dépendantes de la configuration. Autrement dit, les données stockées dans les éléments MSBuild qui sont conditionnés pour une configuration de projet particulière. Exemple :
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -36,7 +38,7 @@ Un sous-type de projet peut avoir besoin de conserver des données spécifiques 
 
     2. Données dépendantes de la configuration.
 
-## <a name="persisting-build-related-information"></a>Persistance des informations relatives à la Build
+## <a name="persisting-build-related-information"></a>Persistance des informations de Build-Related
  La persistance des données utiles pour la génération d’un projet est gérée via MSBuild. Le système MSBuild gère une table principale d’informations relatives à la génération. Les sous-types de projet sont chargés d’accéder à ces données pour obtenir et définir des valeurs de propriété. Les sous-types de projet peuvent également augmenter la table de données liée à la génération en ajoutant des propriétés supplémentaires à rendre persistantes et en supprimant les propriétés afin qu’elles ne soient pas conservées.
 
  Pour modifier les données MSBuild, un sous-type de projet est responsable de la récupération de l’objet de propriété MSBuild à partir du système de projet de base via <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> est une interface implémentée sur le système de projet principal et les requêtes de sous-type de projet d’agrégation pour celle-ci en exécutant `QueryInterface` .

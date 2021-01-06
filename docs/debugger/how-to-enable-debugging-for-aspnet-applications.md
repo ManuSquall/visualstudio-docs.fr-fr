@@ -1,7 +1,7 @@
 ---
 title: Activer le débogage pour les applications ASP.NET | Microsoft Docs
-description: Découvrez comment activer le débogage pour les applications ASP.NET et ASP.NET Core dans Visual Studio et exécuter le processus sur un serveur IIS Express ou un serveur IIS local.
-ms.custom: ''
+description: Découvrez comment activer le débogage pour les applications ASP.NET et ASP.NET Core dans Visual Studio. Vous pouvez exécuter le processus sur un serveur IIS Express ou sur un serveur IIS local.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c5256def84f15fae535ac409349ce21cdd5c80ba
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761379"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903595"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Déboguer des applications ASP.NET ou ASP.NET Core dans Visual Studio
 

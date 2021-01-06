@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : affichage des accolades correspondantes | Microsoft Docs'
+description: Découvrez comment définir des accolades dans le contexte d’un langage, en appliquant des balises correspondantes au type de contenu texte à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904838"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877947"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procédure pas à pas : afficher les accolades correspondantes
 Implémentez des fonctionnalités basées sur le langage, telles que la correspondance d’accolades en définissant les accolades que vous souhaitez mettre en correspondance, et en ajoutant une balise de marqueur de texte aux accolades correspondantes lorsque le signe insertion se trouve sur l’une des accolades. Vous pouvez définir des accolades dans le contexte d’un langage, définir votre propre extension de nom de fichier et type de contenu, et appliquer les balises uniquement à ce type ou appliquer les balises à un type de contenu existant (tel que « texte »). La procédure pas à pas suivante montre comment appliquer des balises correspondantes au type de contenu « text ».

@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue Propriétés du message | Microsoft Docs
+description: Consultez les propriétés des messages pour en savoir plus sur un message.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62846113"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903062"
 ---
 # <a name="message-properties-dialog-box"></a>Boîte de dialogue Propriétés du message
 Utilisez cette boîte de dialogue pour en savoir plus sur un message spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre d' [affichage des messages](../debugger/messages-view.md) . Sélectionnez un nœud de message dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

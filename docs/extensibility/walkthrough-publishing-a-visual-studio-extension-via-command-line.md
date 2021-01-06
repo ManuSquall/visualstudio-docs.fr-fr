@@ -1,5 +1,7 @@
 ---
 title: Publier l’extension à l’aide de la ligne de commande
+description: Découvrez comment utiliser la ligne de commande pour publier une extension dans le Visual Studio Marketplace, ce qui permet aux développeurs de rechercher les extensions nouvelles et mises à jour.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904671"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877921"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procédure pas à pas : publication d’une extension Visual Studio à l’aide de la ligne de commande
 

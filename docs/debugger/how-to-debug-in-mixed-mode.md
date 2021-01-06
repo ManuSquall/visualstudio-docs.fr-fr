@@ -1,5 +1,7 @@
 ---
 title: Débogage en mode mixte | Microsoft Docs
+description: Consultez Comment activer le débogage en mode mixte (code managé et natif) dans les pages de propriétés du projet de l’application appelante.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 123fb61cb223d8db3c447f5925639df33a2b3e11
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852111"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903985"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Comment : déboguer en mode mixte (C#, C++, Visual Basic)
 
@@ -43,7 +45,7 @@ Si vous n’avez pas accès au projet d’une application appelante, vous pouvez
 
 1. Sélectionnez le projet C++ dans **Explorateur de solutions** puis cliquez sur l’icône **Propriétés** , appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
 
-1. Dans la boîte de dialogue ** \<Project> pages de propriétés** , développez **Propriétés de configuration**, puis sélectionnez **débogage**.
+1. Dans la boîte de dialogue **\<Project> pages de propriétés** , développez **Propriétés de configuration**, puis sélectionnez **débogage**.
 
 1. Définissez **Type de débogueur** sur **Mixte** ou **Automatique**.
 

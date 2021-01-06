@@ -1,5 +1,7 @@
 ---
 title: Limitations du débogage WCF | Microsoft Docs
+description: Découvrez comment commencer à déboguer un service WCF, les conditions requises et les limitations du débogage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 30ca43483c352a4f102ab196dc5ea8e8650cdf81
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407742"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903855"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitations du débogage WCF
 Il existe trois façons de commencer à déboguer un service WCF :
@@ -32,7 +34,7 @@ Il existe trois façons de commencer à déboguer un service WCF :
 
 - Vous utilisez **Attacher au processus** pour effectuer un attachement à un service en cours d’exécution. Le débogage commence à l'intérieur du service.
 
-  Cette rubrique décrit les limitations relatives à ces scénarios.
+Cette rubrique décrit les limitations relatives à ces scénarios.
 
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitations relatives au pas à pas détaillé dans un service
  Pour effectuer un pas à pas détaillé dans un service à partir d'une application cliente que vous déboguez, les conditions suivantes doivent être satisfaites :
@@ -76,7 +78,7 @@ Il existe trois façons de commencer à déboguer un service WCF :
 ## <a name="self-hosting"></a>Auto-hébergement
  Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’intérieur d’IIS, de l’hôte de service WCF ou du serveur de développement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Pour plus d’informations sur le débogage d’un service auto-hébergé, consultez [Comment : déboguer un service WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
- Pour permettre le débogage des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5 doit être installé avant que [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] soit installé. Si [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] est installé avant [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, une erreur se produit quand vous essayez de déboguer une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5. Le message d'erreur est « Impossible d'effectuer automatiquement un pas à pas détaillé sur le serveur ». Pour résoudre ce problème, utilisez les **Control Panel**  >  **programmes et fonctionnalités** du panneau de configuration Windows pour réparer votre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installation.
+ Pour permettre le débogage des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5 doit être installé avant que [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] soit installé. Si [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] est installé avant [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, une erreur se produit quand vous essayez de déboguer une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5. Le message d'erreur est « Impossible d'effectuer automatiquement un pas à pas détaillé sur le serveur ». Pour résoudre ce problème, utilisez les   >  **programmes et fonctionnalités** du panneau de configuration Windows pour réparer votre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installation.
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage de services WCF](../debugger/debugging-wcf-services.md)

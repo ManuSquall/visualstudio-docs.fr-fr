@@ -1,5 +1,7 @@
 ---
 title: Coloration de la syntaxe dans un service de langage hérité | Microsoft Docs
+description: Découvrez comment prendre en charge la colorisation de la syntaxe dans un service de langage hérité en fournissant un analyseur ou un scanneur qui peut identifier les types d’éléments lexicaux ou de jetons.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704710"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877752"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Couleurs de syntaxe dans un service de langage hérité
 La colorisation de syntaxe est une fonctionnalité qui permet d’afficher différents éléments d’un langage de programmation dans un fichier source dans des couleurs et des styles différents. Pour prendre en charge cette fonctionnalité, vous devez fournir un analyseur ou un scanneur qui peut identifier les types d’éléments lexicaux ou de jetons dans le fichier. De nombreux langages distinguent les mots clés, les délimiteurs (tels que les parenthèses ou les accolades) et les commentaires en les colorisant de différentes façons.

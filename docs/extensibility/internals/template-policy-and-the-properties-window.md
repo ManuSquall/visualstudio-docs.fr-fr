@@ -1,5 +1,7 @@
 ---
 title: Stratégie de modèle et fenêtre Propriétés | Microsoft Docs
+description: En savoir plus sur l’utilisation de la stratégie de modèle pour définir les valeurs par défaut des propriétés, masquer les propriétés et ajouter des propriétés dans le Fenêtre Propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08ed6f416441d06767661e63b5e32454dbe07f93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 105a90699689ff6eab6ea5bdfa3d4037e700ecb5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704665"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877713"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Stratégie de modèle et fenêtre Propriétés
 Lorsqu’un projet est contenu dans un projet de modèle d’entreprise, ce projet de modèle d’entreprise peut appliquer la stratégie. La stratégie de modèle devient un système de restriction qui peut être utilisé pour définir les valeurs par défaut des propriétés, masquer les propriétés, ajouter des propriétés, etc.

@@ -1,5 +1,7 @@
 ---
-title: 'Zone de test 1 : ajouter à-ouvrir à partir du contrôle de code source | Microsoft Docs'
+title: 'Zone de test 1 : ajouter des To-Open à partir du contrôle de code source | Microsoft Docs'
+description: Cette zone de test du plug-in de contrôle de code source traite le placement de solutions ou de projets sous contrôle de code source et leur récupération à partir du contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ac7b8e5a60fe25ac22272cc28fc3ed6f903b058
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704681"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877739"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter à/Ouvrir à partir du contrôle de code source
 Cette zone de test du plug-in de contrôle de code source traite le placement de solutions ou de projets sous contrôle de code source et leur récupération à partir du contrôle de code source.
@@ -24,11 +26,11 @@ Cette zone de test du plug-in de contrôle de code source traite le placement de
 ## <a name="command-menu-access"></a>Accès au menu commande
  Les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] chemins d’accès au menu de l’environnement de développement intégré suivants sont utilisés dans les cas de test :
 
-- Pour [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , ouvrez à partir du contrôle de code source : **fichier**, **ouvrir**, **Project** / **solution**de projet ; recherchez dans l' [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] emplacement.
+- Pour [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , ouvrez à partir du contrôle de code source : **fichier**, **ouvrir**,  / **solution** de projet ; recherchez dans l' [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] emplacement.
 
 - Pour d’autres plug-ins de contrôle de code source, ouvrez à partir du contrôle de code source : **fichier**, **contrôle de code source**, **ouvrir à partir du contrôle de code source**.
 
-- Ajouter au contrôle de code source : **fichier**, **contrôle de code source**, **Ajouter la solution au fichier de contrôle de code source**, **contrôle de code**source, **Ajouter les projets sélectionnés au contrôle de code**source.
+- Ajouter au contrôle de code source : **fichier**, **contrôle de code source**, **Ajouter la solution au fichier de contrôle de code source**, **contrôle de code** source, **Ajouter les projets sélectionnés au contrôle de code** source.
 
 - Menu contextuel (projet/solution), **Ajouter la solution au contrôle de code source**.
 
