@@ -1,5 +1,7 @@
 ---
 title: Notions fondamentales sur service | Microsoft Docs
+description: En savoir plus sur les services, qui sont des interfaces à utiliser par un autre VSPackage. Les services d’un VSPackage peuvent remplacer des services intégrés ou d’autres services.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705503"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875802"
 ---
 # <a name="service-essentials"></a>Éléments fondamentaux du service
 Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensemble spécifique d’interfaces à utiliser par un autre VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est lui-même une collection de VSPackages qui fournit des services à d’autres VSPackages.

@@ -1,5 +1,7 @@
 ---
 title: Prise en charge des propriétés de projet et de configuration | Microsoft Docs
+description: Découvrez comment fournir une page de propriétés pour votre propre type de projet dans l’IDE de Visual Studio, qui peut afficher les propriétés étendues du projet et de la configuration.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012020"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876595"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Prise en charge des propriétés de configuration et de projet
 La fenêtre **Propriétés** dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) peut afficher les propriétés de projet et de configuration. Vous pouvez fournir une page de propriétés pour votre propre type de projet afin que l’utilisateur puisse définir des propriétés pour votre application.
@@ -75,7 +77,7 @@ La fenêtre **Propriétés** dans l' [!INCLUDE[vsprvs](../../code-quality/includ
 
  Le VSPackage auquel est attaché l’attribut n’a pas d’importance. Lorsqu’un VSPackage est inscrit auprès de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , l’ID de classe (CLSID) de tout objet pouvant être créé est inscrit pour qu’un appel à <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> puisse le créer.
 
- Le chemin d’accès au registre d’un objet qui peut être créé est déterminé par la combinaison <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , le mot, le CLSID et le GUID du type d’objet. Si `MyProjectPropertyPage` la classe a un GUID de {3c693da2-5bca-49B3-bd95-ffe0a39dd723} et que UserRegistryRoot est HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp, le chemin d’accès au registre est HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\clsid \\ {3c693da2-5bca-49B3-bd95-ffe0a39dd723}.
+ Le chemin d’accès au registre d’un objet qui peut être créé est déterminé par la combinaison <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , le mot, le CLSID et le GUID du type d’objet. Si `MyProjectPropertyPage` la classe a un GUID de {3c693da2-5bca-49B3-bd95-ffe0a39dd723} et que le UserRegistryRoot est HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, le chemin d’accès au registre est HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\ {3c693da2-5bca-49B3-bd95-ffe0a39dd723}.
 
 ## <a name="project-and-configuration-property-attributes-and-layout"></a>Attributs et disposition des propriétés de projet et de configuration
  Les <xref:System.ComponentModel.CategoryAttribute> <xref:System.ComponentModel.DisplayNameAttribute> attributs, et <xref:System.ComponentModel.DescriptionAttribute> déterminent la disposition, l’étiquetage et la description des propriétés de projet et de configuration dans une page de propriétés générique. Ces attributs déterminent respectivement la catégorie, le nom complet et la description de l’option.

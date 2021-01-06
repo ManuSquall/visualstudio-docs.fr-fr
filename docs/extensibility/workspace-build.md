@@ -1,5 +1,7 @@
 ---
 title: Build d’espace de travail dans Visual Studio | Microsoft Docs
+description: En savoir plus sur l’extendeur qui fournit des données de contexte de fichier et indexées pour un espace de travail afin de prendre en charge un scénario d’ouverture de dossier.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e44c2398b873bbca95c971ae1b44ac3de831b2ae
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553326"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877102"
 ---
 # <a name="workspace-build"></a>Création de l’espace de travail
 

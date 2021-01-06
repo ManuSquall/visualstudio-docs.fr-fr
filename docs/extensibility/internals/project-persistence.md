@@ -1,5 +1,7 @@
 ---
 title: Persistance du projet | Microsoft Docs
+description: En savoir plus sur la persistance dans la conception de votre projet, notamment l’utilisation de IPersistFileFormat pour conserver à la fois des objets de projet de fichier et non basés sur des fichiers.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706459"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877440"
 ---
 # <a name="project-persistence"></a>Persistance d’un projet
 La persistance est un facteur clé de la conception de votre projet. La plupart des projets utilisent des éléments de projet qui représentent des fichiers ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend également en charge les projets dont les données ne sont pas basées sur des fichiers. Les fichiers appartenant au projet et au fichier projet doivent être rendus persistants. L’IDE indique au projet de s’enregistrer lui-même ou un élément de projet.

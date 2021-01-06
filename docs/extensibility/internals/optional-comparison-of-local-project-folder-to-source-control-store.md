@@ -1,5 +1,7 @@
 ---
 title: Comparer le dossier du projet au magasin de contrôle de code source | Microsoft Docs
+description: Dans l’API de plug-in de contrôle de code source, la comparaison entre le dossier de projet local et le contrôle de code source s’effectue à l’aide de SccDirQueryInfo et SccDirDiff.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706863"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877583"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Comparaison facultative du dossier de projet local avec le magasin de contrôle de code source
 Dans l’API de plug-in de contrôle de code source 1,2, la comparaison entre le dossier de projet local et le contrôle de code source s’effectue à l’aide des fonctions [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) et [SccDirDiff](../../extensibility/sccdirdiff-function.md).

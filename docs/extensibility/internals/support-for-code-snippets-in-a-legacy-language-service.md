@@ -1,5 +1,7 @@
 ---
 title: Prise en charge des extraits de code dans un service de langage hérité | Microsoft Docs
+description: Découvrez comment un service de langage hérité prend en charge les extraits de code. Un extrait de code est un morceau de code qui est inséré dans le fichier source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704913"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876608"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 Un extrait de code est un morceau de code qui est inséré dans le fichier source. L’extrait de code est un modèle XML avec un ensemble de champs. Ces champs sont mis en surbrillance après l’insertion de l’extrait de code et peuvent avoir des valeurs différentes en fonction du contexte dans lequel l’extrait de code est inséré. Immédiatement après l’insertion de l’extrait, le service de langage peut formater l’extrait de code.

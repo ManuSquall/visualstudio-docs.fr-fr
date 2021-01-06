@@ -1,5 +1,7 @@
 ---
 title: Sous-types de projet | Microsoft Docs
+description: Découvrez comment les sous-types de projet vous permettent de personnaliser le comportement des systèmes de projet de Visual Studio. Les VSPackages implémentent des sous-types de projet à l’aide de l’agrégation COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528486db99ddf07b2a2d1e18dcee4fc46e8713b
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 05240ee72aef85e50d07c7a39df1c819f04933a2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426974"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876296"
 ---
 # <a name="project-subtypes"></a>Sous-types de projets
 Les sous-types de projet vous permettent de personnaliser ou de parfumer le comportement des systèmes de projet de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Les personnalisations incluent l’enregistrement de données supplémentaires dans le fichier projet, l’ajout ou le filtrage d’éléments dans la boîte de dialogue **Ajouter un nouvel élément** , le contrôle de la façon dont les assemblys sont débogués et déployés et l’extension de la boîte de dialogue **pages de propriétés** du projet. Les VSPackages implémentent des sous-types de projet à l’aide de l’agrégation COM.

@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : implémentation d’extraits de code | Microsoft Docs'
+description: Vous pouvez créer des extraits de code et les inclure dans une extension d’éditeur. Découvrez comment créer/inscrire des extraits de code à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904706"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877115"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Procédure pas à pas : implémenter des extraits de code
 Vous pouvez créer des extraits de code et les inclure dans une extension d’éditeur afin que les utilisateurs de l’extension puissent les ajouter à leur propre code.
@@ -150,7 +152,7 @@ Vous pouvez créer des extraits de code et les inclure dans une extension d’é
 
 #### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Pour ajouter la commande Insérer un extrait au menu contextuel
 
-1. Ouvrez le `TestCompletionCommandHandler` fichier de classe.
+1. Ouvrez le fichier de classe `TestCompletionCommandHandler`.
 
      Étant donné que cette classe implémente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> , vous pouvez activer la commande **Insérer un extrait** de code dans la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode. Avant d’activer la commande, vérifiez que cette méthode n’est pas appelée à l’intérieur d’une fonction d’automatisation car, lorsque vous cliquez sur la commande **Insérer un extrait** , elle affiche l’interface utilisateur du sélecteur d’extraits de code.
 
@@ -243,7 +245,7 @@ Vous pouvez créer des extraits de code et les inclure dans une extension d’é
 
      N’appuyez pas sur **entrée** ou sur **Échap**.
 
-5. Appuyez sur les **touches** **Tab** et MAJ + **Tab** pour basculer entre « First » et « second ».
+5. Appuyez sur les **touches** **Tab** et MAJ +  pour basculer entre « First » et « second ».
 
 6. Acceptez l’insertion en appuyant sur **entrée** ou **Échap**.
 

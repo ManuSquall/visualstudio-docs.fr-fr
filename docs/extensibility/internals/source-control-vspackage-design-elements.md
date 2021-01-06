@@ -1,5 +1,7 @@
 ---
 title: Éléments de conception VSPackage de contrôle de code source | Microsoft Docs
+description: En savoir plus sur la structure que le VSPackage de contrôle de code source doit implémenter et les interfaces et les services que le VSPackage de contrôle de code source peut implémenter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e586470208989dce070c92963fc215f1053559a4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705007"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877648"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Éléments de conception de VSPackage de contrôle de source
 Les rubriques de cette section décrivent la structure que le VSPackage de contrôle de code source doit implémenter pour une intégration profonde. Il répertorie également les interfaces et les services que le VSPackage de contrôle de code source peut implémenter, ainsi que les interfaces et les services que le VSPackage de contrôle de code source peut utiliser à partir d’autres [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] composants pour prendre en charge son modèle et ses fonctionnalités de contrôle de code source.

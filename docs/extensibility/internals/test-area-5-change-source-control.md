@@ -1,5 +1,7 @@
 ---
 title: 'Zone de test 5 : modifier le contrôle de code source | Microsoft Docs'
+description: Cette zone de test du plug-in de contrôle de code source explique comment modifier le contrôle de code source à l’aide de la commande modifier le contrôle de code source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1c0df31fbecd532e6a5f7f317730cd995cd8225
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c4b0f33f0c898d4b9992acad6ed4035e350df2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704522"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876270"
 ---
 # <a name="test-area-5-change-source-control"></a>Zone de test 5 : Changer le contrôle de code source
 Cette zone de test du plug-in de contrôle de code source couvre la modification du contrôle de code source via la commande **modifier le contrôle de code source** .

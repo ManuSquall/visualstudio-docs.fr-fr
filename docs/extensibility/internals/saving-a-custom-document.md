@@ -1,5 +1,7 @@
 ---
 title: Enregistrement d’un document personnalisé | Microsoft Docs
+description: En savoir plus sur le processus qui se produit pour un document personnalisé pour un type de projet que vous ajoutez à l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04d588b4becfa778407269849032ea8ec56fb3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705617"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875677"
 ---
 # <a name="saving-a-custom-document"></a>Enregistrement d’un document personnalisé
-L’environnement gère les commandes **Save**, **Save As**et **Save all** . Lorsqu’un utilisateur clique sur **Enregistrer**, **Enregistrer sous**, **ou enregistrer tout** dans le menu **fichier** ou ferme la solution, ce qui entraîne un enregistrement tout, le processus suivant se produit.
+L’environnement gère les commandes **Save**, **Save As** et **Save all** . Lorsqu’un utilisateur clique sur **Enregistrer**, **Enregistrer sous**, **ou enregistrer tout** dans le menu **fichier** ou ferme la solution, ce qui entraîne un enregistrement tout, le processus suivant se produit.
 
- ![Éditeur du client-enregistrer](../../extensibility/internals/media/private.gif "Privées") Enregistrer, enregistrer sous et enregistrer la gestion de toutes les commandes pour un éditeur personnalisé
+ ![Éditeur du client-enregistrer](../../extensibility/internals/media/private.gif "Privé") Enregistrer, enregistrer sous et enregistrer la gestion de toutes les commandes pour un éditeur personnalisé
 
  Ce processus est détaillé dans les étapes suivantes :
 

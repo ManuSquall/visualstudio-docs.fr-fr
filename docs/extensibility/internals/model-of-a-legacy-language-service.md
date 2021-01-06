@@ -1,5 +1,7 @@
 ---
 title: Modèle d’un service de langage hérité | Microsoft Docs
+description: Utilisez ce modèle de service de langage minimal pour l’éditeur de base de Visual Studio comme guide pour la création de votre propre service de langage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707048"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876738"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un service de langage hérité
 Un service de langage définit les éléments et les fonctionnalités d’un langage spécifique, et est utilisé pour fournir à l’éditeur des informations spécifiques à ce langage. Par exemple, l’éditeur doit connaître les éléments et les mots clés du langage afin de prendre en charge la coloration syntaxique.
@@ -35,11 +37,11 @@ Un service de langage définit les éléments et les fonctionnalités d’un lan
 
   La fenêtre de document héberge la *vue de document* de l’éditeur, dans ce cas l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur principal. La vue de document et la mémoire tampon de texte sont détenues par l’éditeur. Ces objets fonctionnent avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] une fenêtre de document spécialisée appelée *fenêtre de code*. La fenêtre de code est contenue dans un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est créé et contrôlé par l’IDE.
 
-  Lorsqu’un fichier avec une extension donnée est chargé, l’éditeur localise le service de langage associé à cette extension et lui passe la fenêtre de code en appelant la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> méthode. Le service de langage retourne un *Gestionnaire de fenêtre de code*qui implémente l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.
+  Lorsqu’un fichier avec une extension donnée est chargé, l’éditeur localise le service de langage associé à cette extension et lui passe la fenêtre de code en appelant la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> méthode. Le service de langage retourne un *Gestionnaire de fenêtre de code* qui implémente l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.
 
   Le tableau suivant fournit une vue d’ensemble des objets dans le modèle.
 
-| Composant | Objet | Fonction |
+| Composant | Object | Fonction |
 |------------------| - | - |
 | Mémoire tampon de texte | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Flux de texte en lecture/écriture Unicode. Il est possible que du texte utilise d’autres encodages. |
 | Fenêtre de code | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Fenêtre de document qui contient un ou plusieurs affichages de texte. Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est en mode d’interface multidocument (MDI, multiple-document interface), la fenêtre de code est un enfant MDI. |

@@ -1,5 +1,7 @@
 ---
 title: Contexte du projet | Microsoft Docs
+description: Découvrez comment l’IDE de Visual Studio utilise le contexte de projet pour déterminer comment effectuer des opérations lorsque l’utilisateur ajoute ou travaille avec des projets et des éléments de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e411f0bca361f96cdffcfd89498908fd21d441
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc4234481023592595de2df482d5ff6c2227a95e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706584"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877661"
 ---
 # <a name="project-context"></a>Contexte de projet
 Quand l’utilisateur ajoute ou travaille avec des projets et des éléments de projet, l’IDE utilise la notion de contexte de projet pour déterminer comment diverses opérations doivent être exécutées.

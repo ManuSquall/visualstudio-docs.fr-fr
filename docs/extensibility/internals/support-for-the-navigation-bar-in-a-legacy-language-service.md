@@ -1,5 +1,6 @@
 ---
 title: Barre de navigation de prise en charge dans un service de langage hérité
+description: Découvrez comment prendre en charge la barre de navigation dans un service de langage hérité. La barre de navigation de la vue de l’éditeur affiche les types et les membres dans le fichier.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036559"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876543"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Prise en charge de la barre de navigation dans un service de langage hérité
 La barre de navigation en haut de la vue de l’éditeur affiche les types et les membres dans le fichier. Les types sont affichés dans la liste déroulante de gauche, et les membres s’affichent dans la liste déroulante de droite. Lorsque l’utilisateur sélectionne un type, le signe insertion est placé sur la première ligne du type. Lorsque l’utilisateur sélectionne un membre, le signe insertion est placé sur la définition du membre. Les zones de liste déroulante sont mises à jour pour refléter l’emplacement actuel du signe insertion.

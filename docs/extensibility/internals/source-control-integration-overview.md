@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble de l’intégration du contrôle de code source | Microsoft Docs
+description: 'Découvrez les différences entre les deux façons d’intégrer le contrôle de code source dans Visual Studio : un plug-in de contrôle de code source et un VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705126"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876010"
 ---
 # <a name="source-control-integration-overview"></a>Présentation de l’intégration du contrôle de code source
 Cette section compare les deux façons d’intégrer dans le contrôle de code source de Visual Studio. un plug-in de contrôle de code source et un VSPackage qui fournit une solution de contrôle de code source et met en évidence les nouvelles fonctionnalités de contrôle de code source. Visual Studio permet un basculement manuel entre les VSPackages de contrôle de code source et les plug-ins de contrôle de code source, ainsi que le basculement automatique basé sur une solution.
@@ -74,7 +76,7 @@ Cette section compare les deux façons d’intégrer dans le contrôle de code s
 - Le VSPackage n’est pas limité à un modèle de contrôle de code source particulier.
 
 ## <a name="see-also"></a>Voir aussi
-- [Contrôle de code source](../../extensibility/internals/source-control.md)
+- [contrôle de code source ;](../../extensibility/internals/source-control.md)
 - [Création d’un plug-in de contrôle de code source](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md)
 - [Nouveautés du contrôle de code source](../../extensibility/internals/what-s-new-in-source-control.md)

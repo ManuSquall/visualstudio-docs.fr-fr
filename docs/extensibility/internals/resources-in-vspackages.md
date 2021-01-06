@@ -1,5 +1,7 @@
 ---
 title: Ressources dans les VSPackages | Microsoft Docs
+description: Découvrez les types de ressources localisées qui peuvent être incorporés dans les VSPackages. Vous pouvez également incorporer des ressources dans des dll d’interface utilisateur satellite natives ou des dll satellites managées.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705601"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875724"
 ---
 # <a name="resources-in-vspackages"></a>Ressources dans VSPackages
 Vous pouvez incorporer des ressources localisées dans des dll d’interface utilisateur satellite natives, des dll satellites managées ou dans un VSPackage géré lui-même.
@@ -80,7 +82,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
-## <a name="implementation-notes"></a>Notes d’implémentation
+## <a name="implementation-notes"></a>Remarques relatives à l’implémentation
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] retarde le chargement des VSPackages chaque fois que cela est possible. La conséquence de l’incorporation d’un fichier de directeur technique dans un VSPackage est que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit charger tous ces VSPackages en mémoire pendant l’installation, ce qui est le cas lorsqu’il crée une table de commandes fusionnée. Les ressources peuvent être extraites d’un VSPackage en examinant les métadonnées sans exécuter de code dans le VSPackage. Le VSPackage n’est pas initialisé pour l’instant, la perte de performances est donc minime.
 
  Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] demande une ressource à partir d’un VSPackage après l’installation, ce package est susceptible d’être déjà chargé et initialisé, de sorte que la perte de performances est minime.

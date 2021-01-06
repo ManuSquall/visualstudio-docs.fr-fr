@@ -1,5 +1,7 @@
 ---
 title: Persistance et la table de documents en cours d’exécution | Microsoft Docs
+description: Découvrez comment les projets coordonnent l’ouverture, l’enregistrement et le changement de nom des documents dans la table de document en cours d’exécution, qui effectue le suivi de l’état des documents dans l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba698f20b83d1a7af42aeca046aa2a8c943838ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc480c8b4a41fe29900681289ad08c54d3c1f31
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706716"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875958"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Persistance et table de document en cours d’exécution
 Dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, les projets sont entièrement responsables de la gestion de la persistance de leurs éléments de projet, qu’ils effectuent à l’aide du service, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . Les documents sont l’unité de persistance de base dans l’environnement Visual Studio. Les projets coordonnent l’ouverture, l’enregistrement et le changement de nom des documents avec la table de documents en cours d’exécution (RDT), une ressource qui suit l’état de tous les documents ouverts.

@@ -1,6 +1,7 @@
 ---
 title: Services et interfaces associés (VSPackage de contrôle de code source)
 titleSuffix: ''
+description: Découvrez les interfaces associées au contrôle de code source dans le kit de développement logiciel (SDK) Visual Studio. Le package implémente certaines interfaces et utilise d’autres pour le contrôle de code source.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af08c8e0ea15751f5d8e6c0a1a01549fdb9227c3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: af5c971b804e1c288bf710f6627c0e769e790ee1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034791"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876335"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Services et interfaces associés (VSPackage de contrôle de code source)
 
@@ -53,7 +54,7 @@ Cette section répertorie toutes les interfaces associées au VSPackage de contr
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccEnlistmentPathTranslation> | Cette interface fournit la prise en charge de la gestion de l’inscription pour les projets Web. | VSPackage de contrôle de code source | Recommandé |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip> | Cette interface est utilisée pour récupérer des info-bulles pour les fichiers sous contrôle de code source dans les projets. | VSPackage de contrôle de code source | Facultatif |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl> | Cette interface fournit la prise en charge de l’extension d’espace de noms. | VSPackage de contrôle de code source | Facultatif |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | Le VSPackage utilise cette interface pour intégrer une extension d’espace de noms dans les boîtes **de dialogue Nouveau**, **ouvrir**ou **Enregistrer** . Par conséquent, les projets peuvent être automatiquement ajoutés au contrôle de code source lors de la création ou ajoutés au contrôle de code source lorsqu’une opération d’enregistrement est en vigueur. | VSPackage de contrôle de code source | Facultatif |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | Le VSPackage utilise cette interface pour intégrer une extension d’espace de noms dans les boîtes **de dialogue Nouveau**, **ouvrir** ou **Enregistrer** . Par conséquent, les projets peuvent être automatiquement ajoutés au contrôle de code source lors de la création ou ajoutés au contrôle de code source lorsqu’une opération d’enregistrement est en vigueur. | VSPackage de contrôle de code source | Facultatif |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | Le VSPackage utilise cette interface pour définir des glyphes supplémentaires en tant que glyphes de contrôle de code source pour les nœuds dans **Explorateur de solutions**. | VSPackage de contrôle de code source | Facultatif |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | La boîte de dialogue **Ajouter** pour les projets Web utilise cette interface. Il fournit des méthodes pour rechercher un emplacement de contrôle de code source et pour ouvrir un projet Web précédemment ajouté dans le référentiel de contrôle de code source à cet emplacement. | VSPackage de contrôle de code source | Recommandé |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Cette interface fournit la prise en charge du chargement asynchrone (arrière-plan) des projets à partir du contrôle de code source. | VSPackage de contrôle de code source | Facultatif |

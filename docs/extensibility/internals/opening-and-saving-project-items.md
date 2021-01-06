@@ -1,5 +1,7 @@
 ---
 title: Ouverture et enregistrement d’éléments de projet | Microsoft Docs
+description: Découvrez les différentes approches de l’ouverture et de l’enregistrement de fichiers pour votre nouveau type de projet dans l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706967"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877635"
 ---
 # <a name="opening-and-saving-project-items"></a>Ouverture et enregistrement d’éléments de projet
 Lorsque vous ajoutez un nouveau type de projet, vous devez gérer l’ouverture et l’enregistrement de vos fichiers de projet dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE). Les rubriques suivantes décrivent les différentes approches de l’ouverture et de l’enregistrement des fichiers.
@@ -45,11 +47,11 @@ Lorsque vous ajoutez un nouveau type de projet, vous devez gérer l’ouverture 
 
 - [Enregistrement d’un document standard](../../extensibility/internals/saving-a-standard-document.md)
 
- Fournit une explication détaillée de la façon dont l’IDE gère les commandes **Enregistrer**, **Enregistrer sous**et **enregistrer toutes les** commandes d’un document ouvert dans un éditeur standard.
+ Fournit une explication détaillée de la façon dont l’IDE gère les commandes **Enregistrer**, **Enregistrer sous** et **enregistrer toutes les** commandes d’un document ouvert dans un éditeur standard.
 
 - [Enregistrement d’un document personnalisé](../../extensibility/internals/saving-a-custom-document.md)
 
- Fournit un diagramme et une explication détaillée de la façon dont l’IDE gère les commandes **Enregistrer**, **Enregistrer sous**et **enregistrer toutes les** documents ouverts dans un éditeur personnalisé.
+ Fournit un diagramme et une explication détaillée de la façon dont l’IDE gère les commandes **Enregistrer**, **Enregistrer sous** et **enregistrer toutes les** documents ouverts dans un éditeur personnalisé.
 
 - [Déterminer quel éditeur ouvre un fichier dans un projet](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 

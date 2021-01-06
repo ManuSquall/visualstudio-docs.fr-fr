@@ -1,5 +1,7 @@
 ---
 title: Optimisation des commandes de menu et de barre d’outils | Microsoft Docs
+description: Découvrez comment Visual Studio peut réduire la confusion des commandes provoquée par l’ajout de VSPackages et leurs commandes correspondantes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b35f3a87f819885685b54888031883f4c2776d04
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706920"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877596"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimisation des commandes de menu et de barre d’outils
 L’ajout de VSPackages et de leurs commandes correspondantes [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut entraîner une interface utilisateur encombrée. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit des méthodes pour réduire la confusion entre les commandes d’interface utilisateur.

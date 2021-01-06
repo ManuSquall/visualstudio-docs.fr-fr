@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : affichage de la saisie semi-automatique des instructions Microsoft Docs'
+description: Découvrez comment implémenter la saisie semi-automatique des instructions basées sur le langage pour le contenu en texte en clair en utilisant cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,17 +15,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904793"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877154"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procédure pas à pas : afficher la saisie semi-automatique des instructions
 Vous pouvez implémenter la saisie semi-automatique des instructions basées sur le langage en définissant les identificateurs pour lesquels vous souhaitez fournir la saisie semi-automatique, puis en déclenchant une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définir votre propre extension de nom de fichier et le type de contenu, puis afficher la saisie semi-automatique uniquement pour ce type. Ou vous pouvez déclencher l’achèvement d’un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « texte » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.
 
- La saisie semi-automatique des instructions est généralement déclenchée par la saisie de certains caractères, par exemple en tapant le début d’un identificateur, tel que « using ». En général, il est rejeté en appuyant sur la **barre d’espace**, sur la touche **Tab**ou sur la touche **entrée** pour valider une sélection. Vous pouvez implémenter les fonctionnalités IntelliSense qui se déclenchent lors de la saisie d’un caractère en utilisant un gestionnaire de commandes pour les séquences de touches (l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) et un fournisseur de gestionnaires qui implémente l' <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Pour créer la source de saisie semi-automatique, qui est la liste des identificateurs qui participent à la saisie semi-automatique, implémentez l' <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface et un fournisseur de source de saisie semi-automatique (l' <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). Les fournisseurs sont des composants de Managed Extensibility Framework (MEF). Ils sont chargés d’exporter les classes de contrôleur et de source et d’importer les services et les courtiers, par exemple, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , qui permet la navigation dans la mémoire tampon de texte, et le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , qui déclenche la session de saisie semi-automatique.
+ La saisie semi-automatique des instructions est généralement déclenchée par la saisie de certains caractères, par exemple en tapant le début d’un identificateur, tel que « using ». En général, il est rejeté en appuyant sur la **barre d’espace**, sur la touche **Tab** ou sur la touche **entrée** pour valider une sélection. Vous pouvez implémenter les fonctionnalités IntelliSense qui se déclenchent lors de la saisie d’un caractère en utilisant un gestionnaire de commandes pour les séquences de touches (l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) et un fournisseur de gestionnaires qui implémente l' <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Pour créer la source de saisie semi-automatique, qui est la liste des identificateurs qui participent à la saisie semi-automatique, implémentez l' <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface et un fournisseur de source de saisie semi-automatique (l' <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). Les fournisseurs sont des composants de Managed Extensibility Framework (MEF). Ils sont chargés d’exporter les classes de contrôleur et de source et d’importer les services et les courtiers, par exemple, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , qui permet la navigation dans la mémoire tampon de texte, et le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , qui déclenche la session de saisie semi-automatique.
 
  Cette procédure pas à pas montre comment implémenter la saisie semi-automatique des instructions pour un ensemble d’identificateurs codés en dur. Dans les implémentations complètes, le service de langage et la documentation du langage sont responsables de la fourniture de ce contenu.
 
@@ -202,7 +204,7 @@ Vous pouvez implémenter la saisie semi-automatique des instructions basées sur
 
 3. Créez un fichier texte et tapez du texte qui contient le mot « ajouter ».
 
-4. Lorsque vous tapez en premier « a », puis « d », une liste contenant « addition » et « adaptation » doit apparaître. Notez que l’addition est sélectionnée. Lorsque vous tapez un autre « d », la liste doit contenir uniquement « addition », qui est maintenant sélectionnée. Vous pouvez valider « addition » en appuyant sur la **barre d’espace**, l' **onglet**ou la touche **entrée** , ou faire disparaître la liste en tapant ESC ou toute autre touche.
+4. Lorsque vous tapez en premier « a », puis « d », une liste contenant « addition » et « adaptation » doit apparaître. Notez que l’addition est sélectionnée. Lorsque vous tapez un autre « d », la liste doit contenir uniquement « addition », qui est maintenant sélectionnée. Vous pouvez valider « addition » en appuyant sur la **barre d’espace**, l' **onglet** ou la touche **entrée** , ou faire disparaître la liste en tapant ESC ou toute autre touche.
 
 ## <a name="see-also"></a>Voir aussi
 - [Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

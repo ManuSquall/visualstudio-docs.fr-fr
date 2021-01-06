@@ -1,5 +1,7 @@
 ---
 title: Modélisation de projet | Microsoft Docs
+description: En savoir plus sur les objets de projet standard qui sont requis pour créer l’automatisation pour votre nouveau type de projet et le chemin d’accès que l’Automation de projet suit.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706556"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877414"
 ---
 # <a name="project-modeling"></a>Modélisation de projet
 L’étape suivante de l’automatisation de votre projet consiste à implémenter les objets de projet standard : les <xref:EnvDTE.Projects> `ProjectItems` collections et, les `Project` <xref:EnvDTE.ProjectItem> objets et et les objets restants propres à votre implémentation. Ces objets standard sont définis dans le fichier Dteinternal. h. Une implémentation des objets standard est fournie dans l’exemple BscPrj. Vous pouvez utiliser ces classes en tant que modèles pour créer vos propres objets de projet standard qui résident côte à côte avec des objets de projet issus d’autres types de projets.

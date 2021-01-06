@@ -1,5 +1,7 @@
 ---
 title: Informations sur les paramètres dans un langage hérité Service2 | Microsoft Docs
+description: Découvrez comment prendre en charge l’opération informations sur les paramètres IntelliSense pour afficher une signature de méthode, car la méthode est tapée dans un service de langage hérité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237956"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875945"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Informations sur les paramètres dans un service de langage hérité 2
 Infos sur les paramètres IntelliSense est une info-bulle qui affiche la signature d’une méthode lorsque l’utilisateur tape le caractère de début de la liste de paramètres (généralement une parenthèse ouvrante) pour la liste des paramètres de la méthode. À mesure que chaque paramètre est entré et que le séparateur de paramètres (généralement une virgule) est tapé, l’info-bulle est mise à jour pour afficher le paramètre suivant en gras.

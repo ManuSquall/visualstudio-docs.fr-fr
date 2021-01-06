@@ -1,5 +1,7 @@
 ---
 title: Configuration du projet pour la sortie | Microsoft Docs
+description: Découvrez les processus de génération que chaque configuration peut prendre en charge, ainsi que les interfaces et les méthodes par lesquelles les éléments de sortie peuvent être mis à disposition.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706669"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876322"
 ---
 # <a name="project-configuration-for-output"></a>Configuration de projet pour la sortie
 Chaque configuration peut prendre en charge un ensemble de processus de génération qui génèrent des éléments de sortie tels que des fichiers exécutables ou des fichiers de ressources. Ces éléments de sortie sont privés pour l’utilisateur et peuvent être placés dans des groupes qui lient des types de sortie associés tels que des fichiers exécutables (. exe,. dll,. lib) et des fichiers sources (fichiers. idl,. h).

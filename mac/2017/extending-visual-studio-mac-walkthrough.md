@@ -1,16 +1,18 @@
 ---
 title: 'Procédure pas à pas : Extension de Visual Studio pour Mac'
+description: Découvrez comment créer un package d’extension simple pour Visual Studio pour Mac, qui crée une nouvelle commande dans le menu Edition.
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985029"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876192"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Procédure pas à pas : Extension de Visual Studio pour Mac
 

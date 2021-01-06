@@ -1,5 +1,7 @@
 ---
 title: Services fournis (VSPackage de contrôle de code source) | Microsoft Docs
+description: Découvrez comment les VSPackages partagent les fonctionnalités par le biais de services, y compris l’interaction avec l’IDE de Visual Studio et ses VSPackages.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f08ebe49756b442ef474ac2a032a72894f6bec15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a97ed69d37330132196f0334f5684c0704c5fd2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705409"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876075"
 ---
 # <a name="services-provided-source-control-vspackage"></a>Services fournis (VSPackage de contrôle de code source)
 Les services sont le mécanisme principal par le biais duquel les fonctionnalités sont partagées entre les VSPackages et entre l’environnement de développement intégré (IDE) de Visual Studio et les VSPackages installés. Pour obtenir une description détaillée des services et leur importance dans l’IDE de Visual Studio, consultez[utilisation et fourniture de services](../../extensibility/using-and-providing-services.md).

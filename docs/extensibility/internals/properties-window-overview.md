@@ -1,5 +1,7 @@
 ---
 title: Vue d’ensemble de la fenêtre Propriétés | Microsoft Docs
+description: En savoir plus sur les interfaces utilisées pour interagir avec le Fenêtre Propriétés dans l’IDE de Visual Studio dans cette vue d’ensemble.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 445a43cec976f363873c89dfe9b8e05429aebaf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706031"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875893"
 ---
 # <a name="properties-window-overview"></a>Vue d'ensemble de la fenêtre Propriétés
 La fenêtre **Propriétés** permet d’afficher les propriétés des objets sélectionnés dans les deux principaux types de fenêtres disponibles dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE). Ces deux types de fenêtres sont les suivants :

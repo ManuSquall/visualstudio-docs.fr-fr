@@ -1,5 +1,7 @@
 ---
 title: Interface utilisateur de la propriété de projet | Microsoft Docs
+description: Découvrez comment les sous-types de projet peuvent modifier la boîte de dialogue pages de propriétés du projet telle qu’elle est fournie par le projet de base.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011851"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877388"
 ---
 # <a name="project-property-user-interface"></a>Interface utilisateur des propriétés du projet
 

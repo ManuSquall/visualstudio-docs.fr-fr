@@ -1,5 +1,7 @@
 ---
 title: Contrôle de code source pris en charge | Microsoft Docs
+description: Découvrez comment Visual Studio prend en charge les extractions de fichiers, les archivages et d’autres opérations de contrôle de code source pour votre projet ou votre éditeur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704727"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876452"
 ---
 # <a name="supporting-source-control"></a>Prise en charge du contrôle de code source
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge les extractions de fichiers, les archivages et d’autres opérations de contrôle de code source pour votre projet ou votre éditeur. En tant que client de contrôle de code source, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est conçu pour interagir avec un package de contrôle de code source, tel que [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , qui fournit des fonctionnalités d’archivage, de contrôle de version et de contrôle pour un ensemble de fichiers défini dynamiquement.
@@ -41,7 +43,7 @@ ms.locfileid: "80704727"
 
  Décrit comment inscrire un projet lorsqu’un utilisateur l’ajoute à un système de contrôle de code source.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Indique à l’environnement ou au package de contrôle de code source qu’un fichier va être modifié en mémoire ou enregistré.
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> Permet aux projets et aux hiérarchies de s’inscrire auprès du contrôle de code source et d’obtenir des informations sur l’état du contrôle de code source.

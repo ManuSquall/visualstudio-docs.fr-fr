@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : affichage de l’aide sur la signature | Microsoft Docs'
+description: Découvrez comment afficher l’aide sur les signatures pour le type de contenu texte à l’aide de cette procédure pas à pas. L’aide sur la signature affiche la signature d’une méthode dans une info-bulle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904817"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876244"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procédure pas à pas : afficher l’aide sur les signatures
 L’aide sur la signature (également appelée *informations sur les paramètres*) affiche la signature d’une méthode dans une info-bulle lorsqu’un utilisateur tape le caractère de début de liste de paramètres (généralement une parenthèse ouvrante). Comme un paramètre et un séparateur de paramètres (généralement une virgule) sont tapés, l’info-bulle est mise à jour pour afficher le paramètre suivant en gras. Vous pouvez définir l’aide de la signature des manières suivantes : dans le contexte d’un service de langage, définissez votre propre extension de nom de fichier et le type de contenu, ainsi que la signature d’affichage pour ce type, ou affichez l’aide de signature pour un type de contenu existant (par exemple, « texte »). Cette procédure pas à pas montre comment afficher l’aide sur la signature pour le type de contenu « text ».

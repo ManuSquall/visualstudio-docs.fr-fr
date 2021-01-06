@@ -1,5 +1,7 @@
 ---
 title: Automatisation du code | Microsoft Docs
+description: En savoir plus sur l’implémentation d’un modèle de code, qui requiert l’implémentation d’interfaces qui sont déterminées par votre structure de données interne.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd8d0745ae971f4039ffccf3431614325236e63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705993"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875854"
 ---
 # <a name="providing-automation-for-code"></a>Fourniture de l’automatisation pour le code
 La création d’un modèle Automation pour votre code n’est pas obligatoire. Le kit de développement logiciel (SDK) Environment ne fournit pas d’exemple pour ce faire. Pour obtenir des informations sur les modèles de code, consultez l' <xref:EnvDTE.CodeModel> objet.

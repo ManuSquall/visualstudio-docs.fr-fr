@@ -1,5 +1,7 @@
 ---
 title: Mode plan dans un service de langage hérité | Microsoft Docs
+description: Découvrez comment prendre en charge le mode plan à l’aide de l’implémentation de régions masquées dans un service de langage hérité.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706812"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876829"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Mode Plan dans un service de langage hérité
 Le mode plan permet de réduire un programme complexe en vue d’une vue d’ensemble ou d’une structure. Par exemple, dans C#, toutes les méthodes peuvent être réduites sur une seule ligne, ce qui indique uniquement la signature de la méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des structures et des classes. À l’intérieur d’une méthode unique, une logique complexe peut être réduite pour afficher le déroulement global en affichant uniquement la première ligne d’instructions telles que `foreach` , `if` et `while` .

@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : enregistrement des paramètres utilisateur sur une page de démarrage | Microsoft Docs'
+description: Découvrez comment conserver les paramètres utilisateur pour votre page de démarrage en enregistrant un paramètre dans le registre à l’aide de cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903169"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876179"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Procédure pas à pas : enregistrer les paramètres utilisateur sur une page de démarrage
 
 Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. En suivant cette procédure pas à pas, vous pouvez créer un contrôle qui enregistre un paramètre dans le registre lorsque l’utilisateur clique sur un bouton, puis récupère ce paramètre chaque fois que la page de démarrage est chargée. Étant donné que le modèle de projet page de démarrage comprend un contrôle utilisateur personnalisable et que le code XAML de la page de démarrage par défaut appelle ce contrôle, vous n’êtes pas obligé de modifier la page de démarrage elle-même.
 
-La Banque de paramètres instanciée dans cette procédure pas à pas est une instance de l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interface, qui lit et écrit dans l’emplacement de Registre suivant quand elle est appelée : **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName> **
+La Banque de paramètres instanciée dans cette procédure pas à pas est une instance de l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interface, qui lit et écrit dans l’emplacement de Registre suivant quand elle est appelée : **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
 Lorsqu’il s’exécute dans l’instance expérimentale de Visual Studio, le magasin de paramètres lit et écrit dans **HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ \<CollectionName> .**
 
@@ -77,7 +79,7 @@ Pour plus d’informations sur la façon de rendre des paramètres persistants, 
 
 1. Dans le volet XAML, cliquez avec le bouton droit sur l' `Click` attribut de l' <xref:System.Windows.Controls.Button> élément, puis cliquez sur **naviguer vers le gestionnaire d’événements**.
 
-     Cette étape ouvre *myControl.Xaml.cs*et crée un gestionnaire de stub pour l' `Button_Click` événement.
+     Cette étape ouvre *myControl.Xaml.cs* et crée un gestionnaire de stub pour l' `Button_Click` événement.
 
 2. Ajoutez les `using` directives suivantes au début du fichier.
 
@@ -166,7 +168,7 @@ Pour plus d’informations sur la façon de rendre des paramètres persistants, 
 
 2. Dans l’instance expérimentale, dans le menu **Outils** , cliquez sur **options**.
 
-3. Dans le nœud **environnement** , cliquez sur **démarrage**puis, dans la liste **personnaliser la page de démarrage** , sélectionnez **[extension installée] enregistrer mes paramètres page de démarrage**.
+3. Dans le nœud **environnement** , cliquez sur **démarrage** puis, dans la liste **personnaliser la page de démarrage** , sélectionnez **[extension installée] enregistrer mes paramètres page de démarrage**.
 
      Cliquez sur **OK**.
 

@@ -1,5 +1,7 @@
 ---
 title: Composants de base du modèle de projet | Microsoft Docs
+description: Cet article contient des descriptions des interfaces et des services identifiés dans le modèle de projet Core, ainsi que des interfaces et des services associés aux objets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012410"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876894"
 ---
 # <a name="project-model-core-components"></a>Principaux composants d’un modèle de projet
 Les tableaux suivants s’étendent sur le modèle de projet. Les tableaux présentent de brèves descriptions des interfaces et des services identifiés dans le modèle, ainsi que les interfaces et les services associés à des objets spécifiques. En outre, les tables détaillent les autres interfaces facultatives lors de la création et de la maintenance du projet en fonction des exigences de votre type de projet spécifique.
 
- Pour plus d’informations, consultez [prise en charge des outils de navigation de symboles](../../extensibility/internals/supporting-symbol-browsing-tools.md).
+ Pour plus d’informations, consultez [prise en charge des outils de Symbol-Browsing](../../extensibility/internals/supporting-symbol-browsing-tools.md).
 
 ### <a name="package-object"></a>Objet de package
 

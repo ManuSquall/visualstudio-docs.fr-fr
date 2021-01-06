@@ -1,5 +1,7 @@
 ---
-title: Prise en charge des outils de navigation de symboles | Microsoft Docs
+title: Prise en charge des outils de Symbol-Browsing | Microsoft Docs
+description: Visual Studio fournit des fonctionnalités de navigation des symboles dans Visual Studio. Découvrez comment étendre ces fonctionnalités avec des bibliothèques pour les symboles de vos composants.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704765"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876439"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Prise en charge des outils de consultation de symbole
 Les outils **Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et rechercher les **résultats de symboles** fournissent des fonctionnalités de navigation de symboles dans Visual Studio. Ces outils affichent des arborescences hiérarchiques de symboles et affichent les relations entre les symboles dans l’arborescence. Les symboles peuvent représenter des espaces de noms, des objets, des classes, des membres de classe et d’autres éléments de langage contenus dans différents composants. Les composants incluent les projets Visual Studio, les composants .NET Framework externes et les bibliothèques de types (. tlb). Pour plus d’informations, consultez [affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).
 
-## <a name="symbol-browsing-libraries"></a>Bibliothèques de navigation de symboles
+## <a name="symbol-browsing-libraries"></a>Bibliothèques Symbol-Browsing
  En tant qu’implémenteur de langage, vous pouvez étendre les fonctionnalités de navigation de symboles de Visual Studio en créant des bibliothèques qui effectuent le suivi des symboles dans vos composants et fournissent les listes de symboles au gestionnaire d’objets de Visual Studio via un ensemble d’interfaces. Une bibliothèque est décrite par l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interface. Le gestionnaire d’objets Visual Studio répond aux demandes de nouvelles données à partir des outils de navigation de symboles en obtenant les données des bibliothèques et en les organisant. Par la suite, il remplit ou met à jour les outils avec les données demandées. Pour obtenir une référence au gestionnaire d’objets Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> , transmettez l' <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID de service à la `GetService` méthode.
 
  Chaque bibliothèque doit s’inscrire auprès du gestionnaire d’objets Visual Studio, qui collecte les informations sur toutes les bibliothèques. Pour inscrire une bibliothèque, appelez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> méthode. En fonction de l’outil qui lance la demande, le gestionnaire d’objets Visual Studio recherche la bibliothèque appropriée et demande les données. Les données transitent entre les bibliothèques et le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets dans les listes de symboles décrites par l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface.

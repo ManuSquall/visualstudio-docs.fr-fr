@@ -1,5 +1,6 @@
 ---
 title: Utiliser une touche de raccourci avec une extension d’éditeur
+description: Découvrez comment ajouter un ornement de vue à un affichage de texte à l’aide d’une touche de raccourci. Cette procédure pas à pas est basée sur le modèle de l’éditeur d’ornements Viewport.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037456"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875841"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procédure pas à pas : utiliser une touche de raccourci avec une extension d’éditeur
 Vous pouvez répondre aux touches de raccourci dans votre extension d’éditeur. La procédure pas à pas suivante montre comment ajouter un ornement de vue à un affichage de texte à l’aide d’une touche de raccourci. Cette procédure pas à pas est basée sur le modèle de l’éditeur d’ornements Viewport et vous permet d’ajouter l’ornement à l’aide du caractère +.
@@ -78,7 +79,7 @@ Avant Visual Studio 2017 version 15,6, le seul moyen de gérer les commandes dan
 3. La classe nommée KeyBindingCommandFilter doit hériter de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. Ajoutez des champs privés pour l’affichage de texte, la commande suivante dans la chaîne de commande et un indicateur pour indiquer si le filtre de commande a déjà été ajouté.
@@ -86,8 +87,8 @@ Avant Visual Studio 2017 version 15,6, le seul moyen de gérer les commandes dan
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. Ajoutez un constructeur qui définit l’affichage de texte.

@@ -1,5 +1,7 @@
 ---
 title: Options utilisateur de solution (. Suo) fichier | Microsoft Docs
+description: Découvrez le fichier d’options utilisateur de solution (. suo), qui contient des options de solution par utilisateur dans un fichier de stockage structuré stocké dans un format binaire.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705317"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876752"
 ---
 # <a name="solution-user-options-suo-file"></a>Fichiers des options utilisateur de solution (.Suo)
 Le fichier d’options utilisateur de solution (. suo) contient des options de solution par utilisateur. Ce fichier ne doit pas être archivé dans le contrôle de code source.

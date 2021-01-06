@@ -1,5 +1,7 @@
 ---
 title: Espaces de travail dans Visual Studio | Microsoft Docs
+description: Découvrez comment Visual Studio utilise un espace de travail pour représenter une collection de fichiers dans le dossier ouvert, y compris les fournisseurs d’espace de travail et les services.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952761"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876946"
 ---
 # <a name="workspaces"></a>Workspaces
 
@@ -59,7 +61,7 @@ La puissance des paramètres de l’espace de travail se concentre autour des «
 1. Tous les autres répertoires parents jusqu’à la racine de l’espace de travail, y compris.
 1. « Paramètres globaux », qui se trouve dans un répertoire utilisateur.
 
-Le résultat est une instance de <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> . Cet objet contient les paramètres d’un type particulier et peut être interrogé pour définir des noms de clés stockés sous la forme `string` . Les méthodes <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> et les <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> méthodes d’extension s’attendent à ce que l’appelant sache le type de la valeur de paramètre demandée. Étant donné que la plupart des fichiers de paramètres sont persistants en tant que fichiers _. JSON_ , de nombreux appels utilisent `string` les tableaux,, `bool` `int` et de ces types. Les types d’objets sont également pris en charge. Dans ce cas, vous pouvez utiliser `IWorkspaceSettings` lui-même comme argument de type. Par exemple :
+Le résultat est une instance de <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> . Cet objet contient les paramètres d’un type particulier et peut être interrogé pour définir des noms de clés stockés sous la forme `string` . Les méthodes <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> et les <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> méthodes d’extension s’attendent à ce que l’appelant sache le type de la valeur de paramètre demandée. Étant donné que la plupart des fichiers de paramètres sont persistants en tant que fichiers _. JSON_ , de nombreux appels utilisent `string` les tableaux,, `bool` `int` et de ces types. Les types d’objets sont également pris en charge. Dans ce cas, vous pouvez utiliser `IWorkspaceSettings` lui-même comme argument de type. Exemple :
 
 ```json
 {
@@ -76,7 +78,7 @@ Le résultat est une instance de <xref:Microsoft.VisualStudio.Workspace.Settings
 }
 ```
 
-En supposant que ces paramètres se trouvaient dans le _VSWorkspaceSettings.js_d’un utilisateur, les données sont accessibles en tant que :
+En supposant que ces paramètres se trouvaient dans le _VSWorkspaceSettings.js_ d’un utilisateur, les données sont accessibles en tant que :
 
 ```csharp
 using System.Collections.Generic;
@@ -171,7 +173,7 @@ Les packages chargés peuvent implémenter `IVsSolutionEvents7` et appeler `IVsS
 
 Un contexte d’interface utilisateur peut être utilisé pour charger automatiquement votre package. La valeur est `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Le package SourceExplorerPackage n’a pas été chargé correctement
 
@@ -179,13 +181,13 @@ L’extensibilité de l’espace de travail est fortement basée sur MEF, et les
 
 ::: moniker range="vs-2017"
 
-Les détails de l’erreur se trouvent dans _%localappdata%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Résolvez les erreurs pour les types implémentés par votre extension.
+Les détails de l’erreur se trouvent dans _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Résolvez les erreurs pour les types implémentés par votre extension.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Les détails de l’erreur se trouvent dans _%localappdata%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Résolvez les erreurs pour les types implémentés par votre extension.
+Les détails de l’erreur se trouvent dans _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Résolvez les erreurs pour les types implémentés par votre extension.
 
 ::: moniker-end
 

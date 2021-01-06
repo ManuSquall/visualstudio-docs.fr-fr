@@ -1,5 +1,7 @@
 ---
 title: Projets fichiers divers | Microsoft Docs
+description: Découvrez les deux types d’éditeurs qui peuvent être utilisés pour ouvrir des fichiers dans un projet Visual Studio et le rôle du projet dans la détermination de l’éditeur à utiliser.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707096"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876777"
 ---
 # <a name="miscellaneous-files-project"></a>Projet Fichiers divers
 Quand un utilisateur ouvre des éléments de projet, l’IDE affecte au projet fichiers divers tous les éléments qui ne sont pas membres de projets dans une solution.
 
  Les projets jouent un rôle important dans la détermination de l’éditeur qui est utilisé lorsqu’un utilisateur ouvre un élément de projet. Un projet peut être conçu pour ouvrir certains fichiers à l’aide d’un éditeur spécifique à un projet ou d’un éditeur standard.
 
- Un éditeur spécifique au projet requiert généralement que l’utilisateur ait une connaissance particulière ou utilise des interfaces spéciales du projet. Pour plus d’informations, consultez [Comment : ouvrir des éditeurs spécifiques à un projet](../../extensibility/how-to-open-project-specific-editors.md).
+ Un éditeur spécifique au projet requiert généralement que l’utilisateur ait une connaissance particulière ou utilise des interfaces spéciales du projet. Pour plus d’informations, consultez [Comment : ouvrir des éditeurs de Project-Specific](../../extensibility/how-to-open-project-specific-editors.md).
 
  Un éditeur standard peut ouvrir n’importe quel fichier d’une extension spécifique dans n’importe quel projet. L’utilisateur peut personnaliser certains éditeurs standard, tels que l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur de texte, pour les projets tout en conservant leur caractère public. Les éditeurs standard sont créés à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> méthode.
 

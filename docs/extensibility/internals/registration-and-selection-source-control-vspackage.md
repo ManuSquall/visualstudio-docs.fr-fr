@@ -1,5 +1,7 @@
 ---
 title: Inscription et sélection (VSPackage de contrôle de code source) | Microsoft Docs
+description: Découvrez comment inscrire un VSPackage de contrôle de code source avec Visual Studio et comment sélectionner le package à charger à partir de plusieurs packages de contrôle de code source inscrits.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705721"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877349"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Inscription et sélection (VSPackage de contrôle de code source)
 Un VSPackage de contrôle de code source doit être inscrit pour l’exposer à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Si plus d’un VSPackage de contrôle de code source est inscrit, l’utilisateur peut sélectionner le VSPackage à charger aux moments opportuns. Pour plus d’informations sur les VSPackages et sur la manière de les inscrire, consultez [VSPackages](../../extensibility/internals/vspackages.md) .
@@ -24,7 +26,7 @@ Un VSPackage de contrôle de code source doit être inscrit pour l’exposer à 
 ## <a name="registering-a-source-control-package"></a>Inscription d’un package de contrôle de code source
  Le package de contrôle de code source est inscrit afin que l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement puisse le trouver et rechercher les fonctionnalités prises en charge. Cela est conforme à un schéma de chargement différé dans lequel une instance d’un package est créée uniquement lorsque ses fonctionnalités ou commandes sont requises ou demandées de manière explicite.
 
- Les VSPackages placent les informations dans une clé de Registre spécifique à la version, HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. Y*, où *X* est le numéro de version principale et *Y* le numéro de version secondaire. Cette pratique offre la possibilité de prendre en charge l’installation côte à côte de plusieurs versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ Les VSPackages placent les informations dans une clé de Registre spécifique à la version, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. Y*, où *x* est le numéro de version principale et *Y* est le numéro de version secondaire. Cette pratique offre la possibilité de prendre en charge l’installation côte à côte de plusieurs versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface utilisateur prend en charge la sélection parmi plusieurs plug-ins de contrôle de code source installés (via le package de l’adaptateur de contrôle de code source), ainsi que les VSPackages de contrôle de code source. Il ne peut y avoir qu’un seul plug-in ou VSPackage de contrôle de code source actif à la fois. Toutefois, comme décrit ci-dessous, l’IDE permet de basculer entre les plug-ins de contrôle de code source et les VSPackages via un mécanisme de permutation automatique basé sur une solution. Certaines conditions sont requises sur la partie du VSPackage de contrôle de code source pour activer ce mécanisme de sélection.
 

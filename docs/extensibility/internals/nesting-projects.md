@@ -1,5 +1,7 @@
 ---
 title: Imbrication de projets | Microsoft Docs
+description: En savoir plus sur l’imbrication de projets, qui permet aux développeurs d’applications qui utilisent votre VSPackage de regrouper des types de projets similaires dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707034"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876660"
 ---
 # <a name="nesting-projects"></a>Imbriquer des projets
 Les développeurs d’applications d’entreprise qui utilisent votre package VS peuvent facilement regrouper des types similaires de projets dans à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’aide de l' *imbrication de projet*. Par exemple, le projet de modèle d’entreprise utilise des projets imbriqués pour regrouper des projets en catégories. Les projets de façade métier, les projets d’interface utilisateur Web, etc., sont regroupés dans une même catégorie.

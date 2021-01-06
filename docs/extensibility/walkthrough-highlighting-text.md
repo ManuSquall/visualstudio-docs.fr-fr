@@ -1,5 +1,7 @@
 ---
 title: 'Procédure pas à pas : mise en surbrillance du texte | Microsoft Docs'
+description: Apprenez à mettre en surbrillance chaque occurrence du mot actuel dans un fichier texte en ajoutant des effets visuels à l’éditeur dans cette procédure pas à pas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32af7033eb29d223a5ecfafaccb0a3123ab88d06
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86418069"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877128"
 ---
 # <a name="walkthrough-highlight-text"></a>Procédure pas à pas : texte en surbrillance
 Vous pouvez ajouter différents effets visuels à l’éditeur en créant des composants de Managed Extensibility Framework (MEF). Cette procédure pas à pas montre comment mettre en surbrillance chaque occurrence du mot actuel dans un fichier texte. Si un mot apparaît plusieurs fois dans un fichier texte et que vous placez le signe insertion dans une occurrence, chaque occurrence est mise en surbrillance.
@@ -157,7 +159,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     NormalizedSnapshotSpanCollection WordSpans { get; set; }
     SnapshotSpan? CurrentWord { get; set; }
     SnapshotPoint RequestedPoint { get; set; }
-    object updateLock = new object();
+    object updateLock = new object();
 
     ```
 
@@ -184,7 +186,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     ```csharp
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
     {
-        // If a new snapshot wasn't generated, then skip this layout 
+        // If a new snapshot wasn't generated, then skip this layout 
         if (e.NewSnapshot != e.OldSnapshot)
         {
             UpdateAtCaretPosition(View.Caret.Position);
@@ -212,7 +214,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
         if (!point.HasValue)
             return;
 
-        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it 
+        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it 
         if (CurrentWord.HasValue
             && CurrentWord.Value.Snapshot == View.TextSnapshot
             && point.Value >= CurrentWord.Value.Start
@@ -232,10 +234,10 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
         //Find all words in the buffer like the one the caret is on
         TextExtent word = TextStructureNavigator.GetExtentOfWord(currentRequest);
         bool foundWord = true;
-        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit
+        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit
         if (!WordExtentIsValid(currentRequest, word))
         {
-            //Before we retry, make sure it is worthwhile 
+            //Before we retry, make sure it is worthwhile 
             if (word.Span.Start != currentRequest
                  || currentRequest == currentRequest.GetContainingLine().Start
                  || char.IsWhiteSpace((currentRequest - 1).GetChar()))
@@ -244,11 +246,11 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
             }
             else
             {
-                // Try again, one character previous.  
+                // Try again, one character previous.  
                 //If the caret is at the end of a word, pick up the word.
                 word = TextStructureNavigator.GetExtentOfWord(currentRequest - 1);
 
-                //If the word still isn't valid, we're done 
+                //If the word still isn't valid, we're done 
                 if (!WordExtentIsValid(currentRequest, word))
                     foundWord = false;
             }
@@ -262,7 +264,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
         }
 
         SnapshotSpan currentWord = word.Span;
-        //If this is the current word, and the caret moved within a word, we're done. 
+        //If this is the current word, and the caret moved within a word, we're done. 
         if (CurrentWord.HasValue && currentWord == CurrentWord)
             return;
 
@@ -272,11 +274,11 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
 
         wordSpans.AddRange(TextSearchService.FindAll(findData));
 
-        //If another change hasn't happened, do a real update 
+        //If another change hasn't happened, do a real update 
         if (currentRequest == RequestedPoint)
             SynchronousUpdate(currentRequest, new NormalizedSnapshotSpanCollection(wordSpans), currentWord);
     }
-    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)
+    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)
     {
         return word.IsSignificant
             && currentRequest.Snapshot.GetText(word.Span).Any(c => char.IsLetter(c));
@@ -314,7 +316,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     public IEnumerable<ITagSpan<HighlightWordTag>> GetTags(NormalizedSnapshotSpanCollection spans)
     {
         if (CurrentWord == null)
-            yield break;
+            yield break;
 
         // Hold on to a "snapshot" of the word spans and current word, so that we maintain the same
         // collection throughout
@@ -322,9 +324,9 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
         NormalizedSnapshotSpanCollection wordSpans = WordSpans;
 
         if (spans.Count == 0 || wordSpans.Count == 0)
-            yield break;
+            yield break;
 
-        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot 
+        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot 
         if (spans[0].Snapshot != wordSpans[0].Snapshot)
         {
             wordSpans = new NormalizedSnapshotSpanCollection(
@@ -333,16 +335,16 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
             currentWord = currentWord.TranslateTo(spans[0].Snapshot, SpanTrackingMode.EdgeExclusive);
         }
 
-        // First, yield back the word the cursor is under (if it overlaps) 
-        // Note that we'll yield back the same word again in the wordspans collection; 
-        // the duplication here is expected. 
+        // First, yield back the word the cursor is under (if it overlaps) 
+        // Note that we'll yield back the same word again in the wordspans collection; 
+        // the duplication here is expected. 
         if (spans.OverlapsWith(new NormalizedSnapshotSpanCollection(currentWord)))
-            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());
+            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());
 
-        // Second, yield all the other words in the file 
+        // Second, yield all the other words in the file 
         foreach (SnapshotSpan span in NormalizedSnapshotSpanCollection.Overlap(spans, wordSpans))
         {
-            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());
+            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());
         }
     }
     ```
@@ -381,14 +383,14 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     ```csharp
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag
     {
-        //provide highlighting only on the top buffer 
+        //provide highlighting only on the top buffer 
         if (textView.TextBuffer != buffer)
-            return null;
+            return null;
 
         ITextStructureNavigator textStructureNavigator =
             TextStructureNavigatorSelector.GetTextStructureNavigator(buffer);
 
-        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;
+        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;
     }
     ```
 

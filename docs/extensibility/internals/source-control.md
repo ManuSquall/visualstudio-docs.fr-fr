@@ -1,5 +1,7 @@
 ---
 title: Contrôle de code source | Microsoft Docs
+description: Ces articles décrivent les options permettant d’implémenter le contrôle de code source en tant que fonctionnalité intégrée de Visual Studio, via un plug-in ou un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33437994770ee78327d130f288d9d2e9689774fe
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704995"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876101"
 ---
 # <a name="source-control"></a>Contrôle de code source
 Cette section décrit les options permettant d’implémenter le contrôle de code source en tant que fonctionnalité intégrée de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , à l’aide d’un plug-in de contrôle de code source ou d’un VSPackage de contrôle de code source.
