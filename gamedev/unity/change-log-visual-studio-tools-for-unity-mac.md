@@ -2,7 +2,7 @@
 title: Journal des modifications (Visual Studio Tools pour Unity, Mac) | Microsoft Docs
 description: Affichez le journal des modifications pour Outils Visual Studio pour Unity, Mac. Consultez les modifications de version 1.0.0.0 à 2.7.0.0 et au-delà.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 12/18/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,21 +12,30 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672845"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917909"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Journal des modifications (Outils Visual Studio pour Unity, Mac)
 
 Journal des modifications Visual Studio Tools pour Unity
 
+## <a name="2840"></a>2.8.4.0
+Publiée le 15 décembre 2020
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+- **Intégration**
+
+  - Résolution d’un problème de fiabilité lors de la fermeture de l’Assistant Création d’événement Unity.
+
 ## <a name="2830"></a>2.8.3.0
 Publication : 10 novembre 2020
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -62,7 +71,7 @@ Publication : 13 octobre 2020
   
   - Amélioration de l’expérience utilisateur lors de la génération de messages Unity avec un Assistant.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -71,7 +80,7 @@ Publication : 13 octobre 2020
 ## <a name="2800"></a>2.8.0.0 
 Publiée le 14 septembre 2020
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -94,7 +103,7 @@ Publiée le 5 août 2020
   
   - Ajout `MenuItem` de la prise en charge du [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) suppresseur.  
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -117,7 +126,7 @@ Publiée le 23 juin 2020
 
   - Ajout d’un [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md) diagnostic. `SetPixels` l’appel est lent.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -138,7 +147,7 @@ Publiée le 23 juin 2020
 ## <a name="2610"></a>2.6.1.0
 Publiée le 19 mai 2020
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -171,7 +180,7 @@ Publiée le 14 avril 2020
 
   - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) et [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) fonctionnent à présent pour les `SerializeReference` `SerializeField` attributs et.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -193,7 +202,7 @@ Publiée le 14 avril 2020
 
 Publication : 23 mars 2020
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -209,7 +218,7 @@ Publication : 3 mars 2020
 
   - Ajout [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) d’un suppresseur pour `IDE0051` . Les méthodes privées utilisées avec Invoke, InvokeRepeating, StartCoroutine ou StopCoroutine ne doivent pas être marquées comme étant inutilisées.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -223,7 +232,7 @@ Publication : 3 mars 2020
 
 Publiée le 19 février 2020
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -247,7 +256,7 @@ Publiée le 22 janvier 2020
 
   - Ajout [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) d’un suppresseur pour `CS0649` . Les champs avec l' `SerializeField` attribut ne doivent pas être marqués comme non assignés.  
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -261,7 +270,7 @@ Publiée le 22 janvier 2020
 
 Publication : 3 décembre 2019
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -281,7 +290,7 @@ Publication : 6 novembre 2019
 
   - Ajout d’une info-bulle rapide pour les messages Unity, affichant la documentation associée.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -361,7 +370,7 @@ Publication : 4 septembre 2019
 
 Publication : 13 août 2019
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Analyse**
 
@@ -377,7 +386,7 @@ Publication : 13 août 2019
 
 Date de publication : 25 juillet 2019
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Analyse**
 
@@ -405,7 +414,7 @@ Date de publication : 9 juillet 2019
 
   - Passage en mode Renommage quand un fichier est ajouté à partir d’un modèle (pour imiter le comportement de l’éditeur Unity).
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -419,7 +428,7 @@ Date de publication : 9 juillet 2019
 
 Date de publication : 2 juillet 2019
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Analyse**
 
@@ -435,7 +444,7 @@ Publication : 27 juin 2019
 
   - Mise à jour de l’API MonoBehaviour vers 2019.1.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -481,7 +490,7 @@ Publication : 2 avril 2019
 
   - Ajout d’un menu contextuel au nouvel éditeur.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -491,7 +500,7 @@ Publication : 2 avril 2019
  
  Publication : 26 mars 2019
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -533,7 +542,7 @@ Publication : 5 mars 2019
 
   - Mise à jour de l' `ScriptableObject` API.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -557,7 +566,7 @@ Publication : 5 mars 2019
 
   - Prise en charge des fonctions locales.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -573,7 +582,7 @@ Date de publication : 4 février 2019
 
   - Mise à jour de l’API MonoBehaviour.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -583,7 +592,7 @@ Date de publication : 4 février 2019
 
 Publication : 4 décembre 2018
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -608,7 +617,7 @@ Publication : 4 décembre 2018
 
   - Prise en charge des pseudo-variables (identificateurs d’exception et d’objet).
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -624,7 +633,7 @@ Publication : 13 novembre 2018
 
   - Ajout d’informations client supplémentaires (adresse IP, nom de la machine) dans la boîte de dialogue d’attachement.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Débogueur**
 
@@ -640,7 +649,7 @@ Publication : 13 novembre 2018
 
 Publiée le 24 juillet 2018
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -650,7 +659,7 @@ Publiée le 24 juillet 2018
 
 Publiée le 10 juillet 2018
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -660,7 +669,7 @@ Publiée le 10 juillet 2018
 
 Publiée le 26 juin 2018
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Assistants**
 
@@ -722,7 +731,7 @@ Publiée le 5 mars 2018
 
 Publiée le 24 janvier 2018
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Génération de projet :**
 
@@ -738,7 +747,7 @@ Publiée le 24 janvier 2018
 
 Publiée le 23 janvier 2018
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -754,7 +763,7 @@ Publiée le 13 décembre 2017
 
   - Ajout de la prise en charge de .NET Standard.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -764,7 +773,7 @@ Publiée le 13 décembre 2017
 
 Publiée le 12 décembre 2017
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -796,7 +805,7 @@ Publiée le 23 octobre 2017
 
   - Ajout de la prise en charge des fichiers de symboles de débogage portables.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Génération de projet :**
 
@@ -856,7 +865,7 @@ Publiée le 12 juillet 2017
 
   - Correction des définitions avec des niveaux d’API.
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 
@@ -866,7 +875,7 @@ Publiée le 12 juillet 2017
 
 Publiée le 4 mai 2017
 
-### <a name="bug-fixes"></a>Résolution des bogues
+### <a name="bug-fixes"></a>Correctifs de bogues
 
 - **Intégration**
 

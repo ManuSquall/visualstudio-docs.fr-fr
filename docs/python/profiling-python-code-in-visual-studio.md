@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e6a37301477b43063169143456fc21a3c783968
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973806"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917925"
 ---
 # <a name="profile-python-code"></a>Profiler du code Python
 
@@ -32,7 +32,7 @@ Lorsque vous sélectionnez **OK**, le profileur s’exécute et ouvre un rapport
 ![Rapport de performances de profilage](media/profiling-results.png)
 
 > [!Note]
-> Actuellement, Visual Studio ne prend en charge que ce niveau de profilage sur l’application tout entière, mais nous serions ravis de recevoir vos commentaires sur les fonctionnalités à venir. Utilisez le bouton **Commentaires sur les produits** en bas de cette page.
+> Lorsque vous profilez une application Python, Visual Studio collecte des données pendant la durée de vie du processus. À l’heure actuelle, il n’est pas possible de suspendre le profilage. Nous souhaitons connaître vos commentaires sur les futures fonctionnalités. Utilisez le bouton **Commentaires sur les produits** en bas de cette page.
 
 ## <a name="profiling-for-ironpython"></a>Profilage pour IronPython
 
