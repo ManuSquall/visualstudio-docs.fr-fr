@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue Propriétés du processus | Microsoft Docs
+description: 'Utilisez les propriétés de processus pour en savoir plus sur un processus que vous sélectionnez dans la vue processus. Il existe quatre onglets : général, mémoire, fichier d’échange et espace.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903754"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975106"
 ---
 # <a name="process-properties-dialog-box"></a>Boîte de dialogue Propriétés du processus
 Utilisez cette boîte de dialogue pour en savoir plus sur un processus spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre [vue processus](../debugger/processes-view.md) . Sélectionnez un nœud de processus dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

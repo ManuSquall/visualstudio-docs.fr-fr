@@ -1,6 +1,7 @@
 ---
 title: Paramètres de projet pour une configuration de débogage C++
-ms.custom: seodec18
+description: Configurez le débogage C et C++ dans les pages de propriétés. Cet article décrit les paramètres et vous indique leur catégorie.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72450378"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975288"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Paramètres de projet pour une configuration Debug C++
 Vous pouvez modifier les paramètres du projet pour une configuration Debug C ou C++ dans la boîte de dialogue **pages de propriétés** , comme indiqué dans [Comment : définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.

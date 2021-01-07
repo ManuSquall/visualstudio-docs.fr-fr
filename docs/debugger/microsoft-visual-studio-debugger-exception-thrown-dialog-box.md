@@ -1,7 +1,8 @@
 ---
 title: Boîte de dialogue Microsoft Visual Studio débogueur (exception levée) | Microsoft Docs
 titleSuffix: ''
-ms.custom: seodec18
+description: 'Découvrez ce qu’il faut faire lorsqu’une exception se produit et que votre programme doit gérer. Vous pouvez : 1) arrêter dans le débogueur ; 2) continuer ; ou 3) ignorer.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731210"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975275"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Débogueur Microsoft Visual Studio (Exception levée) (boîte de dialogue)
 Une exception s'est produite dans votre programme. Cette boîte de dialogue indique le type d'exception levé. Votre code doit gérer cette exception. Pour ce faire, vous avez le choix entre les options suivantes :

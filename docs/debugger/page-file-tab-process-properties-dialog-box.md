@@ -1,5 +1,7 @@
 ---
 title: Onglet fichier d’échange de la boîte de dialogue Propriétés du processus | Microsoft Docs
+description: Utilisez l’onglet fichier d’échange des propriétés du processus pour examiner le fichier d’échange d’un processus. Cet article décrit les paramètres disponibles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904105"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975054"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Onglet Fichier d'échange de la boîte de dialogue Propriétés du processus
 Utilisez l’onglet **fichier** d’échange pour examiner le fichier d’échange d’un processus. Pour afficher la [boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md), déplacez le focus vers une fenêtre [vue processus](../debugger/processes-view.md) . Sélectionnez un nœud de processus dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

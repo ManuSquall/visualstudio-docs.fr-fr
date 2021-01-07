@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829864"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975145"
 ---
 # <a name="container-tools-in-visual-studio"></a>Outils de conteneur dans Visual Studio
 
@@ -76,7 +76,7 @@ Vous pouvez activer la prise en charge de Docker lors de la création d’un pro
 > [!NOTE]
 > Pour les projets .NET Framework (pas .NET Core), seuls les conteneurs Windows sont disponibles.
 
-Vous pouvez ajouter la prise en charge de l’ancrage à un projet existant en sélectionnant **Ajouter**la  >  **prise en charge** de l’ancrage dans **Explorateur de solutions**. Les commandes **Ajouter > Prise en charge de Docker** et **Ajouter > Prise en charge des orchestrateurs de conteneurs** se trouvent dans le contextuel du nœud du projet pour un projet ASP.NET Core dans l’**Explorateur de solutions**, comme illustré dans la capture d’écran suivante :
+Vous pouvez ajouter la prise en charge de l’ancrage à un projet existant en sélectionnant **Ajouter** la  >  **prise en charge** de l’ancrage dans **Explorateur de solutions**. Les commandes **Ajouter > Prise en charge de Docker** et **Ajouter > Prise en charge des orchestrateurs de conteneurs** se trouvent dans le contextuel du nœud du projet pour un projet ASP.NET Core dans l’**Explorateur de solutions**, comme illustré dans la capture d’écran suivante :
 
 ![Option de menu Ajouter la prise en charge de Docker dans Visual Studio](./media/overview/add-docker-support-menu.png)
 
@@ -119,9 +119,9 @@ Répétez le processus avec les autres projets que vous souhaitez contrôler à 
 Pour ajouter la prise en charge de Kubernetes, installez [Visual Studio Tools pour Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Avec la prise en charge de Kubernetes, vous pouvez établir une connexion entre votre projet local et un cluster Kubernetes exécuté dans [Azure Kubernetes Service (AKS)](/azure/aks) et ainsi modifier et déboguer vos services en cours d’exécution dans AKS à l’aide de Visual Studio.  Ce service est fourni par [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces vous permet également de définir des branches distinctes de vos services Kubernetes, appelées *dev spaces*, à des fins de développement, et ainsi d’isoler efficacement les services de production des versions en cours de développement, tout en séparant de façon nette les différentes modifications.
+Avec la prise en charge de Kubernetes, vous pouvez activer une connexion entre votre projet local et un cluster Kubernetes s’exécutant dans [Azure Kubernetes service (AKS)](/azure/aks), et ainsi modifier et déboguer vos services s’exécutant à l’aide de Visual Studio.  Ce service est fourni par [Bridge à Kubernetes](overview-bridge-to-kubernetes.md). Bridge to Kubernetes vous permet également de configurer des branches distinctes de vos services Kubernetes à des fins de développement. vous pouvez ainsi isoler efficacement les services de production des versions de travail en cours de développement et conserver les modifications distinctes indépendamment les unes des autres.
 
-Pour ajouter la prise en charge de Kubernetes à vos projets, choisissez **Kubernetes/Helm** lorsque vous ajoutez la prise en charge de l’orchestration de conteneur. Plusieurs fichiers sont ajoutés à votre projet, y compris *azds.yaml*, qui configure Azure Dev Spaces, ainsi que des graphiques Helm qui décrivent la structure de vos services Kubernetes.
+Pour ajouter la prise en charge de Kubernetes à vos projets, choisissez **Kubernetes/Helm** lorsque vous ajoutez la prise en charge de l’orchestration de conteneur. Plusieurs fichiers sont ajoutés à votre projet, y compris les graphiques Helm qui décrivent la structure de vos services Kubernetes. Pour commencer à utiliser Bridge sur Kubernetes, consultez la page [utilisation de Bridge to Kubernetes](bridge-to-kubernetes.md).
 
 ## <a name="service-fabric-support"></a>Prise en charge de Service Fabric
 

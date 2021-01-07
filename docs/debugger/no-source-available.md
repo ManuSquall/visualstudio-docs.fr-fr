@@ -1,5 +1,7 @@
 ---
 title: Aucune source disponible | Microsoft Docs
+description: Découvrez ce que vous pouvez faire quand votre projet n’a pas de code source pour le code que vous souhaitez afficher.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f08ed499e61e54ffbc6508bc8353ea955d9a20c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cf7bf067602586d90271eab1f9289a3b6b884ce
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730874"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975184"
 ---
 # <a name="no-source-available"></a>Aucune source disponible
 Votre projet ne contient pas de code source pour le code que vous essayez d'afficher. La cause habituelle est le double-clic sur un module qui n’a pas de code source dans la **Fenêtre Pile des appels** ou la **Fenêtre Threads**. Vous pouvez poursuivre le débogage, mais vous ne pouvez pas utiliser la fenêtre source pour définir les points d'arrêt et accomplir d'autres actions à cet emplacement. Si vous avez besoin de définir un point d’arrêt, utilisez plutôt la **Fenêtre Code Machine**.
@@ -36,6 +38,6 @@ Votre projet ne contient pas de code source pour le code que vous essayez d'affi
  **Toujours afficher le code machine pour les fichiers sources manquants** Sélectionnez cette option pour afficher automatiquement la **fenêtre Code machine** quand aucune source n’est disponible. Ce paramètre peut également être modifié dans la boîte de dialogue **Options**, catégorie **Débogage**, page **Général**, en activant ou en désactivant **Afficher le code machine si la source n’est pas disponible**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers sources pour le débogage, Propriétés communes, boîte de dialogue Pages de propriétés de Solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+- [Fichiers sources pour le débogage, propriétés communes, boîte de dialogue pages de propriétés de solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 - [Spécifier les fichiers de symboles (.pdb) et les fichiers source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [SOS.dll (extension de débogage SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

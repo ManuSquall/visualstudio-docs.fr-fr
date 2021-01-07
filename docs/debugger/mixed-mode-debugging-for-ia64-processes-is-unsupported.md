@@ -1,5 +1,7 @@
 ---
 title: Le débogage en mode mixte des processus IA64 n’est pas pris en charge
+description: Visual Studio ne prend pas en charge le débogage en mode mixte du code managé et natif dans les processus IA64 (Itanium). Consultez cet article pour obtenir des solutions de contournement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a083bd9299570ba2b04a0879d5c9acde24ec4e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 65969e354a5d1ed2dc1cf54ca31e6088cc19de7a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810677"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975249"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Le débogage en mode mixte des processus IA64 n'est pas pris en charge.
 Visual Studio ne prend pas en charge le débogage en mode mixte du code natif et managé dans les processus IA64. Autrement dit, vous ne pouvez pas passer du code managé au code natif, ou inversement, lorsque vous procédez au débogage.

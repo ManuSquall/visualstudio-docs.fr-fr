@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue recherche de processus | Microsoft Docs
+description: Utilisez la recherche de processus pour rechercher et sélectionner le nœud d’un processus spécifique dans la vue processus. Vous pouvez spécifier l’ID de processus, la chaîne de module et le sens de la recherche.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903767"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975093"
 ---
 # <a name="process-search-dialog-box"></a>Boîte de dialogue Recherche d'un processus
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans la [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre vue **processus** . Choisissez ensuite **Rechercher le processus** dans le menu **Rechercher** .

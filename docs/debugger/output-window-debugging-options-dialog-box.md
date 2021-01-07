@@ -1,5 +1,7 @@
 ---
 title: Fenêtre Sortie, débogage, boîte de dialogue Options | Microsoft Docs
+description: Vous pouvez spécifier les types d'informations de débogage qui apparaissent dans la fenêtre Sortie. Découvrez où procéder et les types d’informations que vous pouvez contrôler.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904785"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975015"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Fenêtre Sortie, Débogage, boîte de dialogue Options
 Vous pouvez spécifier les types d’informations de débogage qui apparaissent dans la fenêtre **Sortie**. Pour afficher ces options, ouvrez le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage** et cliquez sur **Fenêtre Sortie**.
@@ -37,4 +39,4 @@ Si vous devez restaurer les paramètres par défaut, vous pouvez le faire à l�
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)
-- [Sortie, fenêtre](../ide/reference/output-window.md)
+- [Fenêtre Sortie](../ide/reference/output-window.md)

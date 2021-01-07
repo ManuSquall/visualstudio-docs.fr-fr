@@ -1,5 +1,7 @@
 ---
-title: Personnalisation des contrôles natifs à l’exécution | Microsoft Docs
+title: Personnalisation des vérifications de Run-Time natives | Microsoft Docs
+description: 'Découvrez comment personnaliser la vérification au moment de l’exécution, notamment : spécifier une destination de message, écrire une fonction de rapport d’erreurs et interroger les informations d’erreur.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b5f5aa55ac9d8c13da605a09986569c534a30bf
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730889"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975197"
 ---
 # <a name="native-run-time-checks-customization"></a>Personnalisation des contrôles natifs à l'exécution
 Quand vous compilez avec **/RTC** (vérifications au moment de l’exécution) ou utilisez le `runtime_checks` pragma, la bibliothèque Runtime C fournit des contrôles natifs à l’exécution. Dans certains cas, il est utile de personnaliser le contrôle à l'exécution :
@@ -40,7 +42,7 @@ Quand vous compilez avec **/RTC** (vérifications au moment de l’exécution) o
 
   Pour personnaliser le contrôle des erreurs d'exécution, vous pouvez :
 
-- Écrire une fonction permettant d'obtenir un rapport sur les erreurs d'exécution. Pour plus d’informations, consultez [Comment : écrire une fonction de création de rapports d’erreurs au moment de l’exécution](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- Écrire une fonction permettant d'obtenir un rapport sur les erreurs d'exécution. Pour plus d’informations, consultez [Comment : écrire une fonction de rapport d’erreurs Run-Time](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - Personnaliser la destination des messages d'erreur.
 
@@ -55,6 +57,6 @@ Quand vous compilez avec **/RTC** (vérifications au moment de l’exécution) o
  `_RTC_NumErrors` retourne le nombre de types d’erreurs détectés par les vérifications des erreurs au moment de l’exécution. Pour obtenir une brève description de chaque erreur, faites une boucle allant de 0 à la valeur de retour `_RTC_NumErrors`, en transmettant, à chaque boucle, la valeur de l'itération à `_RTC_GetErrDesc`. Pour plus d’informations, consultez [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) et [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment : utiliser les contrôles natifs au moment de l’exécution](../debugger/how-to-use-native-run-time-checks.md)
+- [Comment : utiliser les contrôles de Run-Time natifs](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

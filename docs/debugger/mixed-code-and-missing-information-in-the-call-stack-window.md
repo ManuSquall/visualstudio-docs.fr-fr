@@ -1,5 +1,6 @@
 ---
 title: Code mixte & informations manquantes dans la fenêtre pile des appels
+description: Dans les programmes en mode mixte (natif et managé), le débogueur ne peut pas toujours afficher la pile des appels complète. Découvrez les différences possibles lorsque le code natif appelle du code managé.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32fe52b31daa384718eae629d3051bade93959d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8d3a469b957444935150f91567636aef0fb38a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808153"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975262"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Code mixte et informations manquantes dans la fenêtre Pile des appels
 En raison de différences entre la pile des appels du code managé et celle du code natif, le débogueur ne peut pas toujours afficher la pile des appels complète en cas de types de code mixtes. Quand du code natif appelle du code managé, vous pouvez noter les divergences suivantes dans la fenêtre **Pile des appels** :

@@ -1,5 +1,7 @@
 ---
 title: Vue processus | Microsoft Docs
+description: Vue processus affiche une arborescence de tous les processus actifs sur votre système. En savoir plus sur son contenu et ses utilisations, et suivre les liens vers des informations supplémentaires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904225"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975132"
 ---
 # <a name="processes-view"></a>Vue Processus
 La vue processus affiche une arborescence de tous les processus actifs sur votre système. L’ID de processus et le nom du module sont affichés. Utilisez la vue processus si vous souhaitez examiner un processus système particulier, qui correspond généralement à un programme en cours d’exécution. Les processus sont identifiés par des noms de module ou sont des « processus système » désignés.

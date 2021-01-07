@@ -1,5 +1,7 @@
 ---
 title: Déboguer à l’aide de contenu de prérécupération dans les applications UWP | Microsoft Docs
+description: Pour rendre votre application UWP plus réactive, utilisez ContentPrefetcher pour demander à Windows de prérécupérer du contenu Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 65b889452a23bb970cbee4c65455679a3473abab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33eb7aa0559fc7a6170da658ccc9f00653968bb6
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348065"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975028"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Déboguer des applications UWP à l’aide de contenu pré-récupéré dans Visual Studio
 

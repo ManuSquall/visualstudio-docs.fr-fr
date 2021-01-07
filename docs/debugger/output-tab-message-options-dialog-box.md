@@ -1,5 +1,7 @@
 ---
 title: Onglet sortie de la boîte de dialogue Options des messages | Microsoft Docs
+description: Utilisez l’onglet sortie des options de message pour spécifier les données de message qui s’affichent dans la vue messages. Cet article décrit les paramètres disponibles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62905073"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975080"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Onglet Sortie de la boîte de dialogue Options des messages
 Utilisez l’onglet **sortie** pour spécifier les données de chaque message à répertorier dans la [vue messages](../debugger/messages-view.md). Pour afficher la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **journaux des messages** dans le menu **Espion** .

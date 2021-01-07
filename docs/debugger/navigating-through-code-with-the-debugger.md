@@ -1,6 +1,7 @@
 ---
 title: Naviguer dans le code avec le débogueur | Microsoft Docs
-ms.custom: seodec18
+description: 'Découvrez comment utiliser le débogueur Visual Studio pour dépanner votre code. Les rubriques sont les suivantes : mise en mode arrêt, exécution pas à pas du code et exécution dans une cible.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729351"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975210"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 

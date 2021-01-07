@@ -1,5 +1,7 @@
 ---
 title: Techniques de débogage MFC | Microsoft Docs
+description: 'Découvrez les techniques de débogage des programmes MFC, notamment : points d’arrêt codés, traçage, détection des fuites de mémoire, images mémoire de l’objet et réduction de la taille du programme.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600235"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975119"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.
@@ -140,7 +142,7 @@ Avant d'utiliser les fonctions de diagnostic de la mémoire, vous devez activer 
 
 - Si vous voulez contrôler plus précisément les fonctionnalités de diagnostic de la mémoire, vous pouvez les activer et les désactiver individuellement, de façon sélective, en définissant la valeur de la variable globale MFC [afxMemDF](/previous-versions/ahe4a83t(v=vs.140)). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF**:
 
-  |Value|Description|
+  |Valeur|Description|
   |-----------|-----------------|
   |**allocMemDF**|Activer l'allocateur de mémoire de diagnostic (par défaut).|
   |**delayFreeMemDF**|Différer la libération de la mémoire lors des appels à `delete` ou `free` jusqu'à ce que le programme s'arrête. Votre programme allouera alors la quantité maximale de mémoire possible.|
@@ -430,7 +432,7 @@ La génération de modules sélectionnés avec les bibliothèques de débogage M
 
 3. Vous commencerez par créer une nouvelle configuration de projet.
 
-   1. Dans la boîte de dialogue ** \<Project> pages de propriétés** , cliquez sur le bouton **Configuration Manager** .
+   1. Dans la boîte de dialogue **\<Project> pages de propriétés** , cliquez sur le bouton **Configuration Manager** .
 
    2. Dans la [boîte de dialogue Gestionnaire de configurations](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localisez votre projet à l'intérieur de la grille. Dans la colonne **configuration** , sélectionnez **\<New...>** .
 
@@ -472,7 +474,7 @@ La génération de modules sélectionnés avec les bibliothèques de débogage M
 
    6. Cliquez sur les paramètres de **Format des informations de débogage** et sélectionnez l'option voulue (généralement **/ZI**) pour les informations de débogage.
 
-   7. Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le paramètre **créer/utiliser des en-têtes précompilés** dans la boîte de dialogue ** \<Project> Propriétés** (dossier**Propriétés de configuration** , sous-dossier **C/C++** , catégorie **en-têtes précompilés** ).
+   7. Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le paramètre **créer/utiliser des en-têtes précompilés** dans la boîte de dialogue **\<Project> Propriétés** (dossier **Propriétés de configuration** , sous-dossier **C/C++** , catégorie **en-têtes précompilés** ).
 
 7. Dans le menu **Générer** , cliquez sur **Générer** pour régénérer les fichiers projet  qui sont obsolètes.
 
