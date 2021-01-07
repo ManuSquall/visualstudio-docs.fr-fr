@@ -1,20 +1,22 @@
 - name: Outils de test dans Visual Studio
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: Découvrir les outils de test
       href: improve-code-quality.md
-- name: Test unitaire
-  items:
-    - name: Vue d’ensemble des outils de test unitaire
+    - name: Tâches et outils de test unitaire
       href: unit-test-your-code.md
+- name: Tutoriels
+  items:
     - name: Prise en main
       href: getting-started-with-unit-testing.md
+- name: Test unitaire
+  items:
     - name: Concepts de base des tests unitaires
       href: unit-test-basics.md
     - name: Créer un projet de test unitaire
       href: create-a-unit-test-project.md
-    - name: 'Créer des tests unitaires, commande'
+    - name: Créer des tests unitaires à partir du code
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:

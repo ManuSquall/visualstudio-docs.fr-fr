@@ -1,6 +1,6 @@
 - name: Documentation sur le profilage
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: Présentation du profilage
       href: profiling-feature-tour.md
@@ -34,6 +34,8 @@
       href: perftips.md
     - name: .NET Async
       href: analyze-async.md
+    - name: .NET Counters
+      href: dotnet-counters-tool.md
     - name: Base de données
       href: analyze-database.md
     - name: Observateur d’événements
