@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760924"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031040"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 
@@ -199,7 +199,7 @@ Pour sélectionner rapidement un processus en cours d’exécution à attacher, 
 |Déboguer une application C#, Visual Basic ou C++ sur l’ordinateur local|Utiliser le débogage standard (**F5**) ou l' **attachement au processus**|*\<appname>. exe*|Dans la plupart des scénarios, utilisez le débogage standard et non l' **attachement au processus**.|
 |Débogage à distance d’une application de bureau Windows|outils de contrôle à distance.|N/A| Voir [Déboguer à distance une application C# ou Visual Basic](../debugger/remote-debugging-csharp.md) , ou [Déboguer à distance une application C++](../debugger/remote-debugging-cpp.md)|
 |Déboguer .NET Core sur Linux|Utiliser l' **attachement au processus**|*dotnet.exe* ou un nom de processus unique|Pour utiliser SSH, consultez [Déboguer à distance .net Core s’exécutant sur Linux à l’aide de SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Pour les applications en conteneur, consultez [attacher à un processus en cours d’exécution dans un conteneur d’ancrage](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
-|Déboguer une application en conteneur|*dotnet.exe* ou un nom de processus unique|Consultez [attacher à un processus en cours d’exécution dans un conteneur d’ancrage](../debugger/attach-to-process-running-in-docker-container.md)|
+|Déboguer une application en conteneur|Utiliser l' **attachement au processus**|*dotnet.exe* ou un nom de processus unique|Consultez [attacher à un processus en cours d’exécution dans un conteneur d’ancrage](../debugger/attach-to-process-running-in-docker-container.md)|
 |Déboguer à distance Python sur Linux|Utiliser l' **attachement au processus**|*debugpy*|Voir [attachement à distance à partir des outils python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Déboguer une application ASP.NET sur l’ordinateur local après avoir démarré l’application sans le débogueur|Utiliser l' **attachement au processus**|*iiexpress.exe*|Cela peut être utile pour accélérer le chargement de votre application, par exemple lors du profilage. |
 |Déboguer d’autres types d’applications pris en charge sur un processus serveur|Si le serveur est distant, utilisez les outils de contrôle à distance et **Attachez-le au processus**|*chrome.exe*, *iexplore.exe* ou autres processus|Si nécessaire, utilisez moniteur de ressource pour aider à identifier le processus. Consultez [Débogage à distance](../debugger/remote-debugging.md).|
@@ -253,4 +253,4 @@ Si vous souhaitez des informations plus spécifiques sur la raison pour laquelle
 
 - [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Débogage à distance](../debugger/remote-debugging.md)
+- [Débogage distant](../debugger/remote-debugging.md)
