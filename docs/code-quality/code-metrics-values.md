@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6f843df01059adef3a94bb46501e4e75bd67d5a7
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348643"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069485"
 ---
 # <a name="code-metrics-values"></a>Valeurs de la métrique du code
 
@@ -36,19 +36,19 @@ Pour plus d’informations sur la façon de générer des données de métriques
 
 La liste suivante affiche les résultats de la métrique du code que Visual Studio calcule :
 
-- **Index de maintenabilité** : calcule une valeur d’index comprise entre 0 et 100 qui représente la simplicité relative de la gestion du code. Une valeur élevée signifie une meilleure maintenabilité. Les évaluations codées en couleurs peuvent être utilisées pour identifier rapidement les zones problématiques dans votre code. Une évaluation verte est comprise entre 20 et 100 et indique que le code a une bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code peut être géré de façon modérée. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité faible. Pour plus d’informations, consultez la [plage d’index de maintenabilité et la signification](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) du billet de blog.
+- **Index de maintenabilité** : calcule une valeur d’index comprise entre 0 et 100 qui représente la simplicité relative de la gestion du code. Une valeur élevée signifie une meilleure maintenabilité. Les évaluations codées en couleurs peuvent être utilisées pour identifier rapidement les zones problématiques dans votre code. Une évaluation verte est comprise entre 20 et 100 et indique que le code a une bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code peut être géré de façon modérée. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité faible. Pour plus d’informations, consultez [plage d’index de maintenabilité et signification](code-metrics-maintainability-index-range-and-meaning.md).
 
 - **Complexité cyclomatic** : mesure la complexité structurelle du code. Elle est créée en calculant le nombre de chemins de code différents dans le déroulement du programme. Un programme avec un workflow de contrôle complexe nécessite davantage de tests pour obtenir une bonne couverture du code et est moins gérable. Pour plus d’informations, consultez l' [entrée Wikipédia pour la complexité cyclomatic](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
 - **Profondeur d’héritage** : indique le nombre de classes différentes qui héritent les unes des autres, jusqu’à la classe de base. La profondeur d’héritage est semblable au couplage de classe dans la mesure où une modification dans une classe de base peut affecter n’importe laquelle de ses classes héritées. Plus cette valeur est élevée, plus l’héritage est profond et plus le risque de modification de la classe de base est élevé, plus il s’agit d’une modification avec rupture. Pour la profondeur d’héritage, une valeur faible est bonne et une valeur élevée est incorrecte.
 
-- **Couplage de classe** : mesure le couplage à des classes uniques via des paramètres, des variables locales, des types de retour, des appels de méthode, des instanciations génériques ou de modèle, des classes de base, des implémentations d’interface, des champs définis sur des types externes et une décoration d’attribut. Une bonne conception logicielle impose que les types et les méthodes aient une cohésion élevée et un faible couplage. Le couplage élevé indique une conception qui est difficile à réutiliser et à gérer en raison de ses nombreuses interdépendances sur d’autres types. Pour plus d’informations, consultez le billet de blog sur la [classe couplage](/archive/blogs/zainnab/code-metrics-class-coupling) .
+- **Couplage de classe** : mesure le couplage à des classes uniques via des paramètres, des variables locales, des types de retour, des appels de méthode, des instanciations génériques ou de modèle, des classes de base, des implémentations d’interface, des champs définis sur des types externes et une décoration d’attribut. Une bonne conception logicielle impose que les types et les méthodes aient une cohésion élevée et un faible couplage. Le couplage élevé indique une conception qui est difficile à réutiliser et à gérer en raison de ses nombreuses interdépendances sur d’autres types. Pour plus d’informations, consultez [couplage de classes](code-metrics-class-coupling.md).
 
 ::: moniker range=">=vs-2019"
 
 - **Lignes de code source** -indique le nombre exact de lignes de code source présentes dans votre fichier source, y compris les lignes vides. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Lignes de code exécutable** -indique le nombre approximatif de lignes de code ou d’opérations exécutables. Il s’agit du nombre d’opérations dans le code exécutable. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. Metrics (2.9.5). La valeur est généralement une correspondance proche de la métrique précédente, **lignes de code** , qui est la métrique basée sur les instructions MSIL utilisée en mode hérité.
+- **Lignes de code exécutable** -indique le nombre approximatif de lignes de code ou d’opérations exécutables. Il s’agit du nombre d’opérations dans le code exécutable. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. Metrics (2.9.5). La valeur est généralement une correspondance proche de la métrique précédente, **lignes de code**, qui est la métrique basée sur les instructions MSIL utilisée en mode hérité.
 ::: moniker-end
 ::: moniker range="vs-2017"
 
