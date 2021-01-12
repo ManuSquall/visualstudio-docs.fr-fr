@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 1bb738e0e12598fd31c51c6b3cf2fa684badae40
+ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833362"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98113596"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -376,6 +376,14 @@ Les tests peuvent être exécutés à partir de l’Explorateur de tests en cliq
 
 > [!NOTE]
 > Vous ne pouvez pas exécuter un test dans une classe abstraite, car les tests sont seulement définis dans les classes abstraites et ne sont pas instanciés. Pour exécuter des tests dans des classes abstraites, créez une classe qui dérive de la classe abstraite.
+
+## <a name="test-audio-cue"></a>Tester le signal audio
+L’Explorateur de tests peut émettre un signal sonore lorsqu’une série de tests est terminée. Il y a deux sons : un pour indiquer que la série de tests a réussi avec tous les tests réussis et un second pour indiquer que la série de tests s’est terminée avec au moins un test ayant échoué. Vous pouvez configurer ces sons dans la boîte de dialogue audio Windows 10 par défaut. Cette fonctionnalité est disponible à partir de Visual Studio 2019 Update 16,9 Preview 3.
+
+1. Ouvrez la boîte de dialogue audio Windows 10 par défaut.
+2. Accédez à l’onglet **sons** .
+3. Recherchez la catégorie **Microsoft Visual Studio** . Choisissez la **série de tests réussie** ou les sons de la **série de tests ayant échoué** pour sélectionner les sons prédéfinis ou accédez à votre propre fichier audio.  
+![Boîte de dialogue de son Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
 ## <a name="see-also"></a>Voir aussi
 
