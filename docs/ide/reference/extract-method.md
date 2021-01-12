@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569697"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129469"
 ---
 # <a name="extract-a-method-refactoring"></a>Extraire une méthode (refactorisation)
 
@@ -40,11 +40,11 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-       ![Code mis en surbrillance (C#)](media/extractmethod-highlight-cs.png)
+       ! Capture d’écran montrant le code C# de la classe Program. Dans la fonction main de cette classe, une ligne de code est mise en surbrillance.] (média/extractmethod-highlight-cs.png)
 
    - Visual Basic :
 
-       ![Code mis en surbrillance (Visual Basic)](media/extractmethod-highlight-vb.png)
+       ![Capture d’écran montrant Visual Basic code pour le Sub principal. Dans ce Sub, une ligne de code est mise en surbrillance.](media/extractmethod-highlight-vb.png)
 
 2. Effectuez ensuite l'une des opérations suivantes :
 
@@ -63,11 +63,11 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-      ![Renommer la méthode (C#)](media/extractmethod-rename-cs.png)
+      ![Capture d’écran montrant le code C# de la classe Program. Un nom de méthode est mis en surbrillance et la fenêtre contextuelle de renommage est ouverte.](media/extractmethod-rename-cs.png)
 
    - Visual Basic :
 
-      ![Renommer la méthode (Visual Basic)](media/extractmethod-rename-vb.png)
+      ![Capture d’écran montrant Visual Basic code pour le Sub principal. Un nom de méthode est mis en surbrillance et la fenêtre contextuelle de renommage est ouverte.](media/extractmethod-rename-vb.png)
 
 3. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 

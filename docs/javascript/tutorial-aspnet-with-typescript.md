@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781050"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129482"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio
 
@@ -47,10 +47,10 @@ Dans ce tutoriel, vous allez apprendre à :
 * Vous devez avoir installé Visual Studio et la charge de travail de développement Web ASP.NET.
 
     ::: moniker range=">=vs-2019"
-    Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)pour l'   installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)pour l'   installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
     ::: moniker-end
 
     Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
@@ -69,7 +69,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 1. Créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Si la fenêtre de démarrage n’est pas ouverte **File**, choisissez  >  **fenêtre démarrage**de fichier. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. Dans la liste déroulante langue, choisissez **C#**. Dans la zone de recherche, tapez **ASP.net**, puis choisissez **ASP.net Core application Web**. Choisissez **Suivant**.
+    Si la fenêtre de démarrage n’est pas ouverte , choisissez  >  **fenêtre démarrage** de fichier. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. Dans la liste déroulante langue, choisissez **C#**. Dans la zone de recherche, tapez **ASP.net**, puis choisissez **ASP.net Core application Web**. Choisissez **Suivant**.
 
     Tapez un nom pour le projet et choisissez **créer**.
     ::: moniker-end
@@ -100,6 +100,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
    ```json
    {
+     "compileOnSave": true,
      "compilerOptions": {
        "noImplicitAny": false,
        "noEmitOnError": true,
@@ -190,7 +191,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
    Les fichiers de mappage source sont requis pour le débogage.
 
-## <a name="run-the-application"></a>Exécution de l'application
+## <a name="run-the-application"></a>Exécuter l’application
 
 1. Appuyez sur **F5** (**Déboguer** > **Démarrer le débogage**) pour exécuter l’application.
 
@@ -238,7 +239,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
 1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le dossier scripts et choisissez **Ajouter**  >  **un nouvel élément**.
 
-1. Choisissez **fichier d’accès**à la machine, tapez *Library. TS*, puis choisissez **Ajouter**.
+1. Choisissez **fichier d’accès** à la machine, tapez *Library. TS*, puis choisissez **Ajouter**.
 
 1. Dans *Library. TS*, ajoutez le code suivant.
 
