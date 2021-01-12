@@ -453,6 +453,12 @@
           href: how-to-generate-code-metrics-data.md
         - name: Utiliser les données des métriques du code
           href: working-with-code-metrics-data.md
+        - name: Ressources
+          items:
+            - name: Plage d’index de maintenabilité et signification
+              href: code-metrics-maintainability-index-range-and-meaning.md
+            - name: Couplage de classes
+              href: code-metrics-class-coupling.md
 - name: Analyse du code C++
   items:
     - name: Analyser le code C et C++
