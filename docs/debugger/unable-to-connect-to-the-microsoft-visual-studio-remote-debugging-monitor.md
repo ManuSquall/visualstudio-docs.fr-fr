@@ -1,5 +1,7 @@
 ---
 title: Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
+description: Découvrez la signification de « impossible de se connecter au Microsoft Visual Studio Remote Debugging Monitor », les causes possibles et les solutions.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852242"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150832"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut s’afficher, car le moniteur de débogage à distance n’est pas correctement configuré sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes réseau ou de la présence d’un pare-feu.
@@ -103,7 +105,7 @@ L’ordinateur distant existe, mais Visual Studio n’a pas pu se connecter au d
 
 - Un problème DNS empêche la connexion. Consultez [ces étapes](#dns).
 
-- Le débogueur distant peut s’exécuter sous un compte d’utilisateur différent. Procédez comme [suit](#user_accounts).
+- Le débogueur distant peut s’exécuter sous un compte d’utilisateur différent. Procédez [comme suit](#user_accounts).
 
 - Le port est bloqué sur le pare-feu. Assurez-vous que le pare-feu ne [bloque pas votre demande](#firewall), surtout si vous utilisez un pare-feu tiers.
 
@@ -153,7 +155,7 @@ Pour résoudre ce problème, vous pouvez procéder de différentes façons :
     > [!NOTE]
     > Si vous exécutez le débogueur distant sur un serveur distant, cliquez avec le bouton droit sur l’application du débogueur distant et choisissez **exécuter en tant qu’administrateur** (ou, vous pouvez exécuter le débogueur distant en tant que service). Si vous ne l’exécutez pas sur un serveur distant, il vous suffit de le démarrer normalement.
 
-- Vous pouvez démarrer le débogueur distant à partir de la ligne de commande avec le paramètre **/allow \<username> ** : `msvsmon /allow <username@computer>` .
+- Vous pouvez démarrer le débogueur distant à partir de la ligne de commande avec le paramètre **/allow \<username>** : `msvsmon /allow <username@computer>` .
 
 - Vous pouvez également autoriser n’importe quel utilisateur à effectuer un débogage distant. Dans la fenêtre du débogueur distant, accédez à la boîte de dialogue **Outils > Options**. Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, vous devez essayer cette option uniquement si les autres options échouent, ou si vous êtes sur un réseau privé.
 

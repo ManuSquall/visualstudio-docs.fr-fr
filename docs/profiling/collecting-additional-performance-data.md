@@ -1,5 +1,7 @@
 ---
 title: Collecte de données de performances supplémentaires | Microsoft Docs
+description: Affichez des liens vers des tâches courantes lorsque vous souhaitez collecter des données de performances supplémentaires dans Visual Studio Outils de profilage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4201895fd93d3fa3a9ccb9072382432d6f6e02be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8dd95a9fbf4cba0841488132e3c2ab84f4f6385
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779699"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150403"
 ---
 # <a name="collect-additional-performance-data"></a>Collecter des données de performances supplémentaires
 

@@ -1,5 +1,7 @@
 ---
 title: Modifications du code prises en charge (C++) | Microsoft Docs
+description: Découvrez les modifications de code prises en charge lorsque vous utilisez la fonctionnalité Modifier & Continuer lors du débogage d’un projet C++ dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77629584"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150494"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
 Modifier & Continuer pour les projets C++ gère la plupart des types de modifications de code. Toutefois, certaines modifications ne peuvent pas être appliquées pendant l'exécution du programme. Pour appliquer ces modifications, vous devez arrêter l'exécution et générer une nouvelle version du code.
@@ -116,10 +118,10 @@ Modifier & Continuer pour les projets C++ gère la plupart des types de modifica
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Options de l'Éditeur de liens désactivant Modifier & Continuer
  Les options suivantes de l'Éditeur de liens désactivent Modifier & Continuer :
 
-- Définir **/OPT:REF**, **/OPT:ICF**ou **/INCREMENTAL:NO** désactive Modifier &amp; Continuer avec l'avertissement suivant :  
+- Définir **/OPT:REF**, **/OPT:ICF** ou **/INCREMENTAL:NO** désactive Modifier &amp; Continuer avec l'avertissement suivant :  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- La définition de **/Order**, **/Release**ou **/force** désactive modifier & continuer avec l’avertissement suivant :  
+- La définition de **/Order**, **/Release** ou **/force** désactive modifier & continuer avec l’avertissement suivant :  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - Définir toute option empêchant la création d'un fichier de base de données de programme (.pdb) désactive Modifier & Continuer sans avertissement spécifique.
@@ -161,7 +163,7 @@ Modifier & Continuer pour les projets C++ gère la plupart des types de modifica
  2. Exécutez la commande suivante :  
      `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
 
- Si vous définissez cette valeur au début d’une session de débogage, les divers composants de modifier & continuer à spew la journalisation détaillée dans le volet de **Output Window**  >  **débogage** de la fenêtre sortie.
+ Si vous définissez cette valeur au début d’une session de débogage, les divers composants de modifier & continuer à spew la journalisation détaillée dans le volet de   >  **débogage** de la fenêtre sortie.
 
 ## <a name="see-also"></a>Voir aussi
 - [Modifier &amp; Continuer (C++)](../debugger/edit-and-continue-visual-cpp.md)

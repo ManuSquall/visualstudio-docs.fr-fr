@@ -1,5 +1,7 @@
 ---
 title: Afficher des informations personnalisées à l’aide de DebuggerDisplay | Microsoft Docs
+description: Utilisez une instance de DebuggerDisplayAttribute pour contrôler l’affichage d’un objet, d’une propriété ou d’un champ dans les fenêtres de variables du débogueur.
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d846fd5e423ed17f7754260f169e32dbef5486b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418780"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150754"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquez au débogueur ce qui doit être affiché à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
 
@@ -183,5 +185,5 @@ class MyHashtable
 
 - [Utilisation de l'attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-managed-objects.md)
-- [Spécificateurs de format en C #](../debugger/format-specifiers-in-csharp.md)
+- [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)
 - [Amélioration du débogage avec les attributs d'affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

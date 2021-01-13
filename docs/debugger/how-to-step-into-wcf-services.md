@@ -1,5 +1,7 @@
 ---
 title: Effectuer un pas à pas détaillé dans les services WCF | Microsoft Docs
+description: Effectuer un pas à pas détaillé dans un service Windows Communication Foundation (WCF). S’il se trouve dans la même solution Visual Studio que le client, appuyez sur des points d’arrêt dans le service WCF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ca1e4d2b7e0349ea5a41c6fc66726226ecab4f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 428f5576b595797605abff2ebc5f4669e2927389
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851890"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150728"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Comment : effectuer un pas à pas détaillé dans les services WCF
 Dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], vous pouvez effectuer un pas à pas détaillé dans un service WCF. Si le service WCF est dans la même solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que le client, vous pouvez atteindre des points d'arrêt à l'intérieur du service WCF.
@@ -43,4 +45,4 @@ Dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], vous
 ## <a name="see-also"></a>Voir aussi
 - [Débogage de services WCF](../debugger/debugging-wcf-services.md)
 - [Limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md)
-- [Comment : déboguer un service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Comment : déboguer un service Self-Hosted WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -1,6 +1,7 @@
 ---
 title: Basculer vers un autre thread pendant un débogage
-ms.custom: seodec18
+description: Passez en revue les différentes méthodes pour basculer vers un autre thread lors du débogage d’une application multithread dans Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/27/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9306e68c7d8906c6956eb5e3810327898bc56567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df37beafe7a6c8f88631568ea9eb36394c105a5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348910"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150715"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Comment : basculer vers un autre thread pendant le débogage dans Visual Studio (C#, Visual Basic, C++)
 Quand vous déboguez une application multithread, vous pouvez utiliser l’une des méthodes suivantes pour basculer du thread que vous avez utilisé à un autre thread.
@@ -48,4 +49,4 @@ Lorsque vous examinez les threads dans l’éditeur de code et les différentes 
 2. Dans la liste, cliquez sur le thread vers lequel vous souhaitez basculer.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)

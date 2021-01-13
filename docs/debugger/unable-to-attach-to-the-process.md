@@ -1,5 +1,7 @@
 ---
 title: Impossible de s’attacher au processus | Microsoft Docs
+description: Découvrez la signification de « impossible d’attacher au processus », les deux scénarios qui l’empêchent et les solutions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7a90d2e08d16ddfb7ac22baafe58cf76b4895d3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728873"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150845"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossible de s'attacher au processus
 Impossible de s'attacher au processus Le composant Débogueur sur le serveur s'est vu refuser l'accès pendant la connexion à cet ordinateur.

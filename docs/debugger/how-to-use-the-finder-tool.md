@@ -1,5 +1,7 @@
 ---
 title: Utiliser l’outil Finder | Microsoft Docs
+description: Utilisez l’outil recherche de la boîte de dialogue Rechercher une fenêtre de l’outil Spy + + pour afficher les propriétés ou les messages de la fenêtre pendant une session de débogage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851838"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150598"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
 Vous pouvez utiliser l’outil recherche de la boîte de dialogue **Rechercher une fenêtre** pour afficher des propriétés ou des messages de la fenêtre. L’outil Finder peut également localiser les fenêtres enfants désactivées et déterminer la fenêtre à mettre en évidence si les fenêtres enfants désactivées se chevauchent.

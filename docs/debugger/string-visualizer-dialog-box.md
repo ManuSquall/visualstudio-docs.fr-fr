@@ -1,7 +1,8 @@
 ---
 title: Visualiseur de chaîne, boîte de dialogue | Microsoft Docs
+description: Affichez les chaînes avec la boîte de dialogue visualiseur de chaîne intégré pendant le débogage dans Visual Studio.
 ms.date: 10/10/2018
-ms.custom: seoapril2019
+ms.custom: seoapril2019, SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c33459312cb0c5c4dd4be3bc043956ccb33a6e1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72430822"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150273"
 ---
 # <a name="string-visualizer-dialog-box"></a>Visualiseur de chaîne, boîte de dialogue
 

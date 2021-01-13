@@ -1,5 +1,7 @@
 ---
 title: Afficher un type personnalisé à l’aide de DebuggerTypeProxy | Microsoft Docs
+description: Utilisez une instance de DebuggerTypeProxyAttribute pour spécifier un proxy (de préversion) pour un type, afin de modifier la façon dont le type est affiché dans les fenêtres du débogueur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85347961"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150377"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indiquer au débogueur le type à afficher à l’aide de l’attribut DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 

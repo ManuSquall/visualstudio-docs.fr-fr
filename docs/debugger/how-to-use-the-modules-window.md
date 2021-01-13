@@ -1,7 +1,8 @@
 ---
 title: Afficher les dll et les exécutables
+description: Affichez les dll et les exécutables (fichiers. exe) que votre application utilise dans la fenêtre modules pendant une session de débogage dans Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 titleSuffix: Visual Studio Modules window
-ms.custom: seodec18
 ms.date: 11/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348676"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150559"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Afficher les dll et les exécutables dans la fenêtre modules (C#, C++, Visual Basic, F #)
 
@@ -41,13 +42,13 @@ Lors du débogage de Visual Studio, la fenêtre **modules** répertorie et affic
 
 ## <a name="use-the-modules-window"></a>Utiliser la fenêtre Modules
 
-Pour ouvrir la fenêtre modules pendant le débogage, sélectionnez **Déboguer**les  >  **Windows**  >  **modules** Windows (ou appuyez sur **Ctrl + Alt + U**).
+Pour ouvrir la fenêtre modules pendant le débogage, sélectionnez **Déboguer** les  >    >  **modules** Windows (ou appuyez sur **Ctrl + Alt + U**).
 
 Par défaut, la fenêtre **Modules** trie les modules dans l’ordre de chargement. Pour trier selon une colonne de la fenêtre, sélectionnez l’en-tête en haut de la colonne.
 
 ## <a name="load-symbols"></a>Charger les symboles
 
-La colonne **État du symbole** dans la fenêtre **modules** indique les modules dont les symboles de débogage sont chargés. Si l’État est **ignoré lors du chargement des symboles**, si vous **ne parvenez pas à trouver ou à ouvrir le fichier PDB**ou à charger le **paramètre inclure/exclure**, vous pouvez charger les symboles manuellement. Pour plus d’informations sur le chargement et l’utilisation de symboles, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+La colonne **État du symbole** dans la fenêtre **modules** indique les modules dont les symboles de débogage sont chargés. Si l’État est **ignoré lors du chargement des symboles**, si vous **ne parvenez pas à trouver ou à ouvrir le fichier PDB** ou à charger le **paramètre inclure/exclure**, vous pouvez charger les symboles manuellement. Pour plus d’informations sur le chargement et l’utilisation de symboles, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 **Pour charger les symboles manuellement :**
 
@@ -67,7 +68,7 @@ La colonne **État du symbole** dans la fenêtre **modules** indique les modules
 
 1. Sélectionnez **paramètres des symboles**.
 
-1. Sélectionnez **charger tous les symboles**ou sélectionnez les modules à inclure ou à exclure.
+1. Sélectionnez **charger tous les symboles** ou sélectionnez les modules à inclure ou à exclure.
 
 1. Sélectionnez **OK**. Les modifications prennent effet lors de la prochaine session de débogage.
 

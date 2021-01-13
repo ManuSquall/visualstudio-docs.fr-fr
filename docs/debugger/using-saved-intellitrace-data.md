@@ -1,5 +1,7 @@
 ---
 title: Utilisation des données IntelliTrace enregistrées | Microsoft Docs
+description: Utilisez un fichier IntelliTrace (. iTrace) pour démarrer le débogage à un point d’exécution spécifique. Le fichier contient des informations qu’IntelliTrace a enregistrées à partir d’une exécution de votre application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911325"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150936"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Utilisation des données IntelliTrace enregistrées (C#, Visual Basic, C++)
 
 Accédez aux points spécifiques de l’exécution de votre application lorsque vous démarrez le débogage à partir d’un fichier journal IntelliTrace (.iTrace). Ce fichier contient des événements de performance, des exceptions, des threads, des étapes de test, des modules et d’autres informations système qu’IntelliTrace enregistre pendant que votre application s’exécute.
 
- Vérifiez que vous disposez des éléments suivants :
+ Vérifiez que vous avez effectué ces actions :
 
 - Fichiers sources et fichiers de symboles (.pdb) correspondants pour votre code d’application. Dans le cas contraire, Visual Studio ne peut pas résoudre les emplacements source et le message « Symboles introuvables » s’affiche. Consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et [diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
 
@@ -34,7 +36,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 - Fichier .iTrace de l’une des sources suivantes :
 
-    |**Source**|**Verr**|
+    |**Source**|**Consultez**|
     |----------------|-------------|
     |Session IntelliTrace dans Visual Studio Enterprise (mais pas dans les éditions Professional ou Community).|[Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)|
     |Microsoft Monitoring Agent, seul ou avec System Center 2012 R2 Operations Manager, pour les applications web ASP.NET et les applications SharePoint en cours d’exécution dans le déploiement|-   [Diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md)<br />-   [Nouveautés de System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
@@ -158,7 +160,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 1. Copiez l’ID de corrélation SharePoint à partir de sa source.
 
-    Par exemple :
+    Exemple :
 
     ![&#45; d’IntelliTrace &#45; d’erreur SharePoint ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
@@ -222,7 +224,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |**Colonne**|**Affiche**|
 |----------------|-------------------|
 |**Identifiant**|Numéro d’ID de thread|
-|**Name**|Nom du thread. Les threads sans nom apparaissent en tant que « \<No Name> ».|
+|**Nom**|Nom du thread. Les threads sans nom apparaissent en tant que « \<No Name> ».|
 |**Start Time**|Heure de création du thread.|
 |**Heure de fin**|Heure à laquelle le thread s’est terminé|
 

@@ -1,5 +1,7 @@
 ---
 title: Vue Appelant/Appelé - Données d’instrumentation | Microsoft Docs
+description: En savoir plus sur la façon dont la vue appelant/appelé affiche les informations d’instrumentation dans l’arborescence des appels de Explorateur de performances.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cd9f65fbce6f0326fab89acfef601652c9bc7b9
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773294"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150884"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Vue Appelant/appelé - Données d’instrumentation
 La vue Appelant/Appelé affiche des données de profilage pour la fonction sélectionnée, ainsi que pour ses fonctions parents et enfants dans l’arborescence des appels. La vue Appelant/Appelé comprend trois grilles.

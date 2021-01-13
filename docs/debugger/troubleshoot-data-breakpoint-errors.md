@@ -1,5 +1,7 @@
 ---
 title: Impossible de définir le point d’arrêt de données | Microsoft Docs
+description: Recherchez des explications, des solutions et des solutions de contournement pour « impossible de définir les erreurs de point d’arrêt sur variable » qui se produisent lors de l’utilisation de « arrêter lorsque la valeur change ».
+ms.custom: SEO-VS-2020
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668779"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150455"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Dépannage des erreurs de point d’arrêt de données
 Cette page vous guidera lors de la résolution des erreurs courantes rencontrées lors de l’utilisation de l’instruction « arrêter quand la valeur est modifiée »

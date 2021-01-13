@@ -1,6 +1,7 @@
 ---
 title: Écrire une fonction de création de rapports d’erreurs au moment de l’exécution | Microsoft Docs
-ms.custom: seodec18
+description: Consultez des exemples d’écriture d’une fonction personnalisée de création de rapports d’erreurs au moment de l’exécution dans Visual Studio. Elle doit avoir la même déclaration que _CrtDbgReportW et retourner la valeur 1.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 046384e664ab4aa9c031b76a1ecd6285a9de5502
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407638"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150468"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Guide pratique pour écrire une fonction de création de rapports d’erreurs d’exécution (C++)
 Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.
@@ -123,4 +124,4 @@ int main()
 ```
 
 ## <a name="see-also"></a>Voir aussi
-[Personnalisation des contrôles natifs à l'exécution](../debugger/native-run-time-checks-customization.md)
+[Personnalisation des contrôles de Run-Time natifs](../debugger/native-run-time-checks-customization.md)

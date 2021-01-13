@@ -1,5 +1,7 @@
 ---
 title: Avertissement de code périmé, boîte de dialogue | Microsoft Docs
+description: En savoir plus sur la boîte de dialogue d’avertissement relatif au code périmé, qui apparaît lorsque vous avez apporté des modifications au code natif que modifier & Continuer n’a pas pu appliquer immédiatement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bb2666b3b57c8f84c81e181355f096674543445
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729543"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150325"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Avertissement : code périmé (boîte de dialogue)
 
@@ -37,5 +39,5 @@ Si vous activez cette case à cocher, Modifier &amp; Continuer appliquera à l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modifications du code prises en charge (C++)](supported-code-changes-cpp.md)
+- [Modifications de code prises en charge (C++)](supported-code-changes-cpp.md)
 - [Modifier & Continuer, Débogage, Boîte de dialogue Options](edit-and-continue.md)

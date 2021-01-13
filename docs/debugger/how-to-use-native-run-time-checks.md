@@ -1,5 +1,7 @@
 ---
-title: Utiliser les contrôles natifs au moment de l’exécution | Microsoft Docs
+title: Utiliser les contrôles de Run-Time natifs | Microsoft Docs
+description: Utilisez les contrôles natifs à l’exécution dans Visual Studio pour intercepter les erreurs d’exécution courantes, telles que l’altération du pointeur de pile, les dépassements de tableaux locaux et l’altération de la pile.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 586f43f14a8638ab9c3c67f8ffef52ef52a70c53
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852665"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150637"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Comment : utiliser les contrôles natifs à l'exécution
 Dans un projet Visual Studio C++, vous pouvez utiliser des [runtime_checks](/cpp/preprocessor/runtime-checks) natifs pour intercepter les erreurs d’exécution courantes, telles que :
@@ -67,7 +69,7 @@ Dans un projet Visual Studio C++, vous pouvez utiliser des [runtime_checks](/cpp
 
 - [Personnalisation des contrôles d'exécution avec la bibliothèque Runtime C](../debugger/native-run-time-checks-customization.md)
 
-- [Utilisation de contrôles d’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
+- [Utilisation des contrôles de Run-Time sans la bibliothèque C Run-Time](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Pour activer les contrôles natifs à l'exécution dans une version Debug
 

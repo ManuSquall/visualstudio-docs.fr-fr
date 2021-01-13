@@ -1,5 +1,7 @@
 ---
 title: Affichage des threads GPU dans le débogueur | Microsoft Docs
+description: Utilisez la fenêtre threads GPU pour examiner et utiliser les threads qui s’exécutent sur le GPU dans l’application que vous déboguez dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348715"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150585"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Comment : utiliser la fenêtre threads GPU (C++)
 Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [C++ amp vue d’ensemble](/cpp/parallel/amp/cpp-amp-overview).
@@ -103,6 +105,6 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
 - Cliquez sur le bouton indicateur dans la fenêtre Threads GPU.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Comment : utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Procédure pas à pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

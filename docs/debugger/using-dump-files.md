@@ -1,6 +1,7 @@
 ---
 title: Utiliser des fichiers dump dans le débogueur | Microsoft Docs
-ms.custom: seodec18
+description: Un fichier dump est un instantané d’une application en cours d’exécution et des modules chargés. Envisagez de créer un fichier dump pour les situations où vous n’avez pas d’accès de débogage à l’application.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970622"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150871"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers dump dans le débogueur Visual Studio
 
@@ -39,7 +40,7 @@ Les vidages sont principalement utilisés pour déboguer les problèmes des ordi
 
 Le débogueur Visual Studio peut enregistrer des fichiers dump pour le code managé ou natif. Il peut déboguer des fichiers dump créés par Visual Studio ou par d’autres applications qui enregistrent des fichiers au format *Minidump* .
 
-## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> Spécifications et limitations
+## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> Configuration requise et limitations
 
 - Pour déboguer des fichiers de vidage à partir d’ordinateurs 64 bits, Visual Studio doit s’exécuter sur un ordinateur 64 bits.
 

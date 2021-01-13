@@ -1,5 +1,7 @@
 ---
 title: Utiliser modifier & Continuer (C#) | Microsoft Docs
+description: Utilisez modifier & Continuer pour apporter et appliquer les modifications à votre code en mode arrêt pendant le débogage, sans arrêter et redémarrer la session de débogage dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851851"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150650"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Comment : utiliser Modifier &amp; Continuer (C#)
 Avec modifier & continuer, vous pouvez apporter et appliquer des modifications à votre code en mode arrêt pendant le débogage, sans avoir à arrêter et redémarrer la session de débogage.
 
-Modifier & Continuer pour C# se produit automatiquement lorsque vous apportez des modifications de code en mode arrêt, puis continuez le débogage à l’aide de l’instruction **continue**, **Step**ou **Set Next**, ou évaluez une fonction dans une fenêtre du débogueur.
+Modifier & Continuer pour C# se produit automatiquement lorsque vous apportez des modifications de code en mode arrêt, puis continuez le débogage à l’aide de l’instruction **continue**, **Step** ou **Set Next**, ou évaluez une fonction dans une fenêtre du débogueur.
 
 Pour plus d’informations, consultez [modifier & continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md).
 
@@ -36,7 +38,7 @@ Pour plus d’informations, consultez [modifier & continuer (Visual C#)](../debu
 
 1. Si vous êtes dans une session de débogage, arrêtez le débogage (**Déboguer**  >  **arrêter le débogage** ou **MAJ** + **F5**).
 
-1. Dans **Tools**  >  **options** des outils (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**, activez ou désactivez la case à cocher **activer modifier et continuer** .
+1. Dans   >  **options** des outils (ou options de **débogage**  >  ) > **débogage**  >  **général**, activez ou désactivez la case à cocher **activer modifier et continuer** .
 
 Le paramètre prend effet lorsque vous démarrez ou redémarrez la session de débogage.
 
@@ -44,7 +46,7 @@ Le paramètre prend effet lorsque vous démarrez ou redémarrez la session de d�
 
 1. Lors du débogage, en mode arrêt, apportez une modification à votre code source.
 
-1. Dans le menu **Déboguer** , cliquez sur **Continuer**, **exécuter pas à pas**ou **définir l’instruction suivante**, ou évaluer une fonction dans une fenêtre du débogueur.
+1. Dans le menu **Déboguer** , cliquez sur **Continuer**, **exécuter pas à pas** ou **définir l’instruction suivante**, ou évaluer une fonction dans une fenêtre du débogueur.
 
    Le débogage se poursuit avec le nouveau code compilé.
 

@@ -1,5 +1,7 @@
 ---
 title: Spécifier les paramètres du débogueur | Microsoft Docs
+description: Spécifiez différents paramètres pour le comportement du débogueur dans Visual Studio, par exemple comment afficher des variables, Quels avertissements sont présentés et comment définir des points d’arrêt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851942"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150767"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Comment : spécifier les paramètres du débogueur
 Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez utiliser divers paramètres pour spécifier le comportement du débogueur, notamment le mode d'affichage des variables, la présentation ou non des avertissements, la définition des points d'arrêt, ainsi que la manière dont les programmes sont affectés par les interruptions. Vous indiquez les paramètres du débogueur dans la boîte de dialogue **Options**.
@@ -42,7 +44,7 @@ Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez util
 4. Activez ou désactivez les options souhaitées. Appuyez sur F1 pour obtenir de l'aide concernant les options.
 
 ## <a name="see-also"></a>Voir aussi
-- [Général, Débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md)
+- [Général, débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md)
 - [Modifier & Continuer, Débogage, Boîte de dialogue Options](./edit-and-continue.md)
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
 - [Macros courantes pour les propriétés et les commandes de génération](/cpp/build/reference/common-macros-for-build-commands-and-properties)

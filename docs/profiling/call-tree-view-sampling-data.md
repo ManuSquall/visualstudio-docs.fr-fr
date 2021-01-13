@@ -1,5 +1,7 @@
 ---
 title: Vue Arborescence des appels - Données d’échantillonnage | Microsoft Docs
+description: Lisez comment la vue arborescence des appels affiche les données d’échantillonnage pour les chemins d’exécution des fonctions qui ont été parcourus dans l’application profilée dans Explorateur de performances.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779751"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150520"
 ---
 # <a name="call-tree-view---sampling-data"></a>Vue Arborescence des appels - Données d’échantillonnage
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée.
