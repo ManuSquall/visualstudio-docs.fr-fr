@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: f12da1b45520de87bfd94f5b4597d10820968a11
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915970"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147478"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Je ne parviens pas à voir mon crédit mensuel Azure dans le Portail Azure.
 
@@ -29,10 +29,12 @@ Vous pouvez également associer un [autre compte](https://docs.microsoft.com/vis
 
 Vous devez vous connecter au [portail Azure](https://portal.azure.com/) avec l’adresse de messagerie avec laquelle vous avez défini le compte. Par exemple, si vous avez activé votre crédit mensuel avec votre autre compte, vous devez toujours vous connecter à votre abonnement Azure avec cet e-mail. 
 
-## <a name="azure-directories"></a>Répertoires Azure 
+## <a name="azure-directories"></a>Répertoires Azure
+ 
 Vous pouvez avoir plusieurs répertoires dans le cadre de votre abonnement Azure. Assurez-vous que vous utilisez le répertoire dans lequel vous configurez l’abonnement Azure. Vous pouvez afficher et changer de répertoire en cliquant sur l’icône du compte dans le coin supérieur droit de la Portail Azure. 
 
-## <a name="how-to-activate"></a>Comment effectuer l’activation
+## <a name="how-to-activate-your-azure-monthly-credit"></a>Comment activer votre crédit mensuel Azure
+
 1. Se connecter au [portail des abonnements](https://my.visualstudio.com/benefits)  
 1. Recherchez la vignette Azure dev/test individuel Credit dans la section outils de la page avantages, puis cliquez sur le lien activer en bas de la vignette de l’avantage. Si vous ne trouvez pas la vignette de crédit mensuel Azure, utilisez la [page comparaison des avantages](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) pour vérifier que votre abonnement comprend un crédit mensuel. 
 1. Si vous n’avez pas d’abonnement Azure, vous êtes invité à renseigner les informations personnelles requises pour en créer un.  
@@ -42,7 +44,7 @@ Vous pouvez avoir plusieurs répertoires dans le cadre de votre abonnement Azure
 
 Les abonnements Azure créés via l’avantage des abonnements Visual Studio peuvent être affectés par des restrictions qui ne sont pas imposées aux abonnements payants. Certaines zones géographiques peuvent ne pas être disponibles pour la création de machines virtuelles et de services Azure, et certains types de service peuvent ne pas être disponibles. Il peut y avoir un quota par défaut inférieur à celui des abonnements payants. 
 
-## <a name="more-information"></a>Informations complémentaires 
+## <a name="more-information-about-azure-monthly-credits"></a>Plus d’informations sur les crédits mensuels Azure
 
 [En savoir plus](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) sur l’activation, l’éligibilité et d’autres ressources de support.  
 

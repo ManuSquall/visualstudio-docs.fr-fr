@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: c862de5bc5006abc60650a26132453f260a51a89
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916000"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147635"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Je ne parviens pas à trouver le produit que je dois télécharger.
 
@@ -30,8 +30,8 @@ Vous pouvez [Télécharger une liste complète](https://download.microsoft.com/d
 1. Ici, vous pouvez voir une liste de téléchargements populaires ou effectuer une recherche dans un produit spécifique. Remarque : Si vous avez plusieurs abonnements associés à la même adresse de connexion, vous verrez les téléchargements inclus avec l’abonnement de niveau le plus élevé, quel que soit l’abonnement que vous consultez.
 1. Cliquez sur « obtenir la clé » pour voir toutes les clés disponibles pour le produit que vous souhaitez télécharger. Cliquez ensuite sur « clé de revendication » pour demander une clé de produit si le téléchargement requiert une clé pour démarrer. 
 
-## <a name="product-keys-page"></a>Page clés de produit 
+## <a name="find-available-product-keys"></a>Rechercher les clés de produit disponibles
 Vous pouvez également visiter la page [clés de produit](https://my.visualstudio.com/productkeys)   dans laquelle toutes les clés sont disponibles dans l’agrégat. Vous pouvez modifier la colonne remarques pour identifier quand et pourquoi vous avez demandé la clé. 
 
-## <a name="more-information"></a>Informations complémentaires 
+## <a name="more-information-about-product-keys"></a>Plus d’informations sur les clés de produit
 [En savoir plus](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) sur la recherche et la revendication des clés de produit et des téléchargements.  

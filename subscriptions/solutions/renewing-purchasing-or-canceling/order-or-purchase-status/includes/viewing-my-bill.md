@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915994"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147596"
 ---
 ## <a name="how-do-i-view-my-bill"></a>Comment faire afficher ma facture ?
 
@@ -34,5 +34,5 @@ La fonctionnalité limite de dépense dans Azure vous permet de définir une lim
 
 Si vous avez supprimé la limite de dépense de votre abonnement Azure, convertie en paiement à l’utilisation, tirez parti de la tarification de développement/test d’entreprise uniquement disponible pour les abonnés Visual Studio, ou si vous souhaitez utiliser des services en dehors de ceux utilisés pour le développement et les tests couverts par le crédit mensuel, vous serez facturé mensuellement pour les services.  
 
-## <a name="more-information"></a>Informations complémentaires 
+## <a name="more-information-about-billing"></a>Plus d’informations sur la facturation
 Recevez des réponses aux questions les plus fréquentes sur votre utilisation et vos frais. Consultez le [Forum aux questions](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started)sur la facturation. 

@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916024"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147480"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>Acheter des abonnements via Microsoft Store 
 
@@ -37,7 +37,7 @@ Chacun de ces abonnements offre la possibilité d’effectuer un achat initial o
 1. Cliquez sur « Download-New » et ajoutez-le au panier. Remarque : parfois, le magasin affiche par défaut le prix de renouvellement, veuillez vérifier que vous achetez un nouvel abonnement. Le magasin ne pourra pas valider que vous disposez d’un abonnement actif lors de l’achat au tarif de renouvellement. Vous ne pouvez pas activer le renouvellement sans abonnement correspondant actuel.
 1. Vérifier. Dans la page confirmation, vous recevrez une clé de produit que vous devrez utiliser pour activer l’abonnement. Consultez les instructions ci-dessous. 
 
-## <a name="how-to-activate"></a>Comment effectuer l’activation  
+## <a name="how-to-activate-your-subscription"></a>Comment activer votre abonnement 
 
 Après avoir acheté un abonnement Visual Studio par le biais du Microsoft Store, vous pouvez commencer le processus d’activation à partir de la page de confirmation du paiement ou de l’e-mail de confirmation que vous avez reçu après votre achat. 
 
@@ -47,7 +47,7 @@ Après avoir acheté un abonnement Visual Studio par le biais du Microsoft Store
 
 L’abonnement doit maintenant être visible sur la [page abonnements](https://my.visualstudio.com/subscriptions) et vous devez avoir accès à tous les avantages de votre abonnement. 
 
-## <a name="more-information"></a>Informations complémentaires 
+## <a name="compare-subscription-benefits"></a>Comparer les avantages des abonnements
 
 [Comparez les avantages et les prix des abonnements](https://visualstudio.microsoft.com/vs/pricing/) pour comprendre les avantages de chaque abonnement Visual Studio. 
 
