@@ -1,5 +1,7 @@
 ---
 title: Considérations sur la sécurité du visualiseur | Microsoft Docs
+description: Un visualiseur pour le débogueur Visual Studio doit s’exécuter avec une confiance totale. À mesure que vous écrivez le vôtre, tenez compte des menaces de sécurité possibles et prenez les précautions nécessaires.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187150"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149740"
 ---
 # <a name="visualizer-security-considerations"></a>Considérations sur la sécurité du visualiseur
 L'écriture d'un visualiseur implique d'éventuelles menaces pour la sécurité. Aucune attaque connue n'a été répertoriée concernant ces menaces potentielles, mais les développeurs doivent en être informés et prendre les précautions de sécurité appropriées, tel qu'indiqué ici, pour se protéger contre de futures attaques.
@@ -38,7 +40,7 @@ L'écriture d'un visualiseur implique d'éventuelles menaces pour la sécurité.
  Afin d'atténuer cette vulnérabilité, faites attention aux interfaces exposées par votre visualiseur.
 
 ## <a name="see-also"></a>Voir aussi
-- [Architecture d'un visualiseur](../debugger/visualizer-architecture.md)
+- [Architecture du visualiseur](../debugger/visualizer-architecture.md)
 - [Comment : écrire un visualiseur](create-custom-visualizers-of-data.md)
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)
 - [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)

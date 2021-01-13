@@ -1,5 +1,7 @@
 ---
 title: Utilisation du collecteur autonome IntelliTrace | Microsoft Docs
+description: Utilisez le collecteur autonome IntelliTrace pour collecter des données sans installer Visual Studio et sans modifier l’environnement du système cible.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536491"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150078"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Utilisation du collecteur autonome IntelliTrace (C#, Visual Basic)
 
@@ -28,7 +30,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 > [!NOTE]
 > Vous pouvez également collecter les mêmes données IntelliTrace pour les applications web et SharePoint s’exécutant sur des ordinateurs distants à l’aide de **Microsoft Monitoring Agent** en mode **Trace** .
 >
-> Vous pouvez collecter les événements de performances dans les données IntelliTrace en exécutant l’agent en mode **Monitor** . Le mode**Monitor** a moins d’impact sur les performances que le mode **Trace** ou le **collecteur autonome IntelliTrace**. Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé. Consultez [utilisation de l’Microsoft Monitoring agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Vous pouvez collecter les événements de performances dans les données IntelliTrace en exécutant l’agent en mode **Monitor** . Le mode **Monitor** a moins d’impact sur les performances que le mode **Trace** ou le **collecteur autonome IntelliTrace**. Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé. Consultez [utilisation de l’Microsoft Monitoring agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > Le collecteur autonome IntelliTrace ne prend pas en charge les instantanés de processus.
 
  **Configuration requise**
@@ -40,7 +42,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   > [!NOTE]
   > Assurez-vous d’enregistrer vos fichiers de symboles (.pdb). Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants. Consultez [diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
 
-  **Questions fréquentes (FAQ)**
+  **FORUM AUX QUESTIONS**
 
 - [Quelles applications fonctionnent avec le collecteur ?](#WhatApps)
 
@@ -70,7 +72,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 5. [Collecter les données d’une application web ou d’une application SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     - ou -
+     -ou-
 
      [Collecter les données d’une application managée](#BKMK_Collect_Data_from_Executables)
 
@@ -121,7 +123,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1. Sur le serveur de votre application, ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.
 
-2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :
+2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Exemple :
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -129,13 +131,13 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     1. Accordez à l’utilisateur qui exécutera les applets de commande PowerShell IntelliTrace toutes les autorisations d’accès au répertoire du collecteur.
 
-         Par exemple :
+         Exemple :
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.
 
-         Par exemple :
+         Exemple :
 
         - Pour une application web du pool d’applications **DefaultAppPool** :
 
@@ -165,7 +167,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     2. Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
-         Par exemple :
+         Exemple :
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -183,7 +185,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 2. Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).
 
-    Par exemple :
+    Exemple :
 
    - Pour définir des autorisations avec la commande Windows **icacls** :
 
@@ -195,7 +197,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       - ou -
+       -ou-
 
    - Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :
 

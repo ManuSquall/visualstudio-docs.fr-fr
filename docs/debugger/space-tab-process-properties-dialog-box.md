@@ -1,5 +1,7 @@
 ---
 title: Onglet espace de la boîte de dialogue Propriétés du processus | Microsoft Docs
+description: Découvrez comment afficher la boîte de dialogue Propriétés du processus dans Spy + + lors du débogage. Passez en revue les paramètres qui sont disponibles sous l’onglet espace.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929822"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149077"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Onglet Espace de la boîte de dialogue Propriétés du processus
 Utilisez l’onglet **espace** pour examiner l’espace d’adressage d’un processus. Pour afficher la [boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md), déplacez le focus vers une fenêtre [vue processus](../debugger/processes-view.md) . Sélectionnez un nœud de processus dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .
@@ -31,5 +33,5 @@ Utilisez l’onglet **espace** pour examiner l’espace d’adressage d’un pro
 |**Octets de copie exec-Write**|Pour la catégorie sélectionnée, somme de tous les espaces d’adressage qui peuvent être exécutés par les programmes, ainsi que de la lecture et de l’écriture. Ce type de protection est utilisé lorsque la mémoire doit être partagée entre les processus. Si les processus de partage ne lisent que la mémoire, ils utilisent tous la même mémoire. Si un processus de partage souhaite un accès en écriture, une copie de cette mémoire est effectuée pour le processus.|
 |**Octets sans accès**|Pour la catégorie sélectionnée, somme de tout l’espace d’adressage qui empêche un processus de l’utiliser. Une violation d’accès est générée en cas de tentative d’écriture ou de lecture.|
 |**Octets lecture seule**|Pour la catégorie sélectionnée, somme de tous les espaces d’adressage qui peuvent être exécutés et lus.|
-|**Octets lecture-écriture**|Pour la catégorie sélectionnée, somme de l’ensemble de l’espace d’adressage qui autorise la lecture et l’écriture.|
+|**Octets en lecture/écriture**|Pour la catégorie sélectionnée, somme de l’ensemble de l’espace d’adressage qui autorise la lecture et l’écriture.|
 |**Octets écriture-copie**|Pour la catégorie sélectionnée, somme de tout l’espace d’adressage qui autorise le partage de mémoire pour la lecture, mais pas pour l’écriture. Lorsque des processus lisent cette mémoire, ils peuvent partager la même mémoire. Toutefois, lorsqu’un processus de partage souhaite disposer d’un accès en lecture/écriture à cette mémoire partagée, une copie de cette mémoire est créée pour l’écriture.|

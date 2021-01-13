@@ -1,5 +1,7 @@
 ---
 title: Afficher les threads dans la fenêtre piles parallèles | Microsoft Docs
+description: Utilisez des piles parallèles pour déboguer les applications multithread. Vous pouvez afficher les informations de pile pour tous les threads et les informations de pile des appels centrés sur les tâches.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902307"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150169"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Afficher les threads et les tâches dans la fenêtre piles parallèles (C#, Visual Basic, C++)
 
@@ -38,7 +40,7 @@ La fenêtre **Piles parallèles** est utile pour déboguer des applications mult
 
 ## <a name="use-the-parallel-stacks-window"></a>Utiliser la fenêtre Piles parallèles
 
-Pour ouvrir la fenêtre **Piles parallèles** , vous devez être dans une session de débogage. Sélectionnez **Déboguer**les  >  **Windows**  >  **Piles parallèles**Windows.
+Pour ouvrir la fenêtre **Piles parallèles** , vous devez être dans une session de débogage. Sélectionnez **Déboguer** les  >    >  **Piles parallèles** Windows.
 
 ### <a name="toolbar-controls"></a>Contrôles de barre d’outils
 
@@ -46,7 +48,7 @@ La fenêtre **Piles parallèles** contient les contrôles de barre d’outils su
 
 ![Barre d'outils dans la fenêtre Piles parallèles](../debugger/media/parallel_stackstoolbar.png "Barre d’outils piles parallèles")
 
-|Icône|Contrôler|Description|
+|Icône|Control|Description|
 |-|-|-|
 |![Zone de liste déroulante Threads/Tâches](media/parallel_toolbar1.png "Zone de liste déroulante Threads/Tâches")|**Threads** / Zone de liste déroulante **tâches**|Bascule entre la vue des piles d’appels de threads et la vue des piles d’appels de tâches. Pour plus d’informations, consultez [Vue Tâches](#tasks-view) et [Vue Threads](#threads-view).|
 |![Icône Afficher uniquement les indicateurs](media/parallel_toolbar2.png "Icône Afficher uniquement les indicateurs")|Afficher uniquement avec indicateur|Affiche les piles d’appels uniquement pour les threads signalés dans d’autres fenêtres du débogueur, telles que la fenêtre **Threads GPU** et la fenêtre **Espion parallèle** .|
@@ -142,4 +144,4 @@ Si vous basculez vers un nouveau frame de pile, vous faites de cette méthode la
 - [Débogage de code managé](../debugger/debugging-managed-code.md)
 - [Programmation parallèle](/dotnet/standard/parallel-programming/index)
 - [Utiliser la fenêtre Tâches](../debugger/using-the-tasks-window.md)
-- [Classe Task](../extensibility/debugger/task-class-internal-members.md)
+- [Classe de tâche](../extensibility/debugger/task-class-internal-members.md)

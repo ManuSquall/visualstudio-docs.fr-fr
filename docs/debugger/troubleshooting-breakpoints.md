@@ -1,6 +1,7 @@
 ---
 title: Résoudre les problèmes de points d’arrêt dans le débogueur | Microsoft Docs
-ms.custom: seodec18
+description: Si un point d’arrêt est désactivé ou n’a pas pu être défini, il est affiché sous la forme d’un cercle vide. Consultez cette page pour obtenir des informations sur les problèmes qui peuvent se produire lors de la définition de points d’arrêt.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535935"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148050"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio
 
@@ -25,7 +26,7 @@ Les deux sections suivantes décrivent les avertissements importants et comment 
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>« Aucun symbole n’a été chargé pour ce document »
 
-Accédez à la fenêtre **modules** (**Déboguer**les  >  **Windows**  >  **modules**Windows) et vérifiez si votre module est chargé.
+Accédez à la fenêtre **modules** (**Déboguer** les  >    >  **modules** Windows) et vérifiez si votre module est chargé.
 * Si votre module est chargé, consultez la colonne **État du symbole** pour voir si les symboles ont été chargés.
   * Si les symboles ne sont pas chargés, vérifiez l’état du symbole pour diagnostiquer le problème. Dans le menu contextuel d’un module de la fenêtre **modules** , cliquez sur informations sur le **chargement des symboles...** pour voir où le débogueur a essayé de charger les symboles. Pour plus d’informations sur le chargement de symboles, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   * Si les symboles sont chargés, le fichier PDB ne contient pas d’informations sur vos fichiers sources. Voici quelques causes possibles :
@@ -35,7 +36,7 @@ Accédez à la fenêtre **modules** (**Déboguer**les  >  **Windows**  >  **modu
 
 * Si votre module n’est pas chargé, vérifiez les éléments suivants pour trouver la cause :
   * Vérifiez que vous déboguez le processus correct.
-  * Vérifiez que vous déboguez le type de code approprié. Vous pouvez déterminer le type de code que le débogueur est configuré pour déboguer dans la fenêtre **processus** (**Déboguer**les  >  **Windows**  >  **processus**Windows). Par exemple, si vous essayez de déboguer du code C#, vérifiez que votre débogueur est configuré pour le type et la version appropriés de .NET (par exemple, managé (v4 \* ) et managé (v2 \* /v3 \* ) par rapport à managé (CoreCLR)).
+  * Vérifiez que vous déboguez le type de code approprié. Vous pouvez déterminer le type de code que le débogueur est configuré pour déboguer dans la fenêtre **processus** (**Déboguer** les  >    >  **processus** Windows). Par exemple, si vous essayez de déboguer du code C#, vérifiez que votre débogueur est configuré pour le type et la version appropriés de .NET (par exemple, managé (v4 \* ) et managé (v2 \* /v3 \* ) par rapport à managé (CoreCLR)).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… le code source actuel est différent de la version intégrée à...»
 

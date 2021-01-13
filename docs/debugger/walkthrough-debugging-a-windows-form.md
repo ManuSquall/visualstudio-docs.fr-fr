@@ -1,6 +1,7 @@
 ---
 title: Débogage d’un Windows Form | Microsoft Docs
-ms.custom: seodec18
+description: 'Suivez une procédure pas à pas pour voir comment créer et déboguer un Windows Form, une application managée commune. Vous pouvez utiliser C#, Visual Basic, C++ ou F #.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599471"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148089"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
 Un Windows Form est l’une des applications gérées les plus courantes. Un Windows Form crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, C# ou C++.

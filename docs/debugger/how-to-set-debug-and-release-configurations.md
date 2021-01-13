@@ -1,5 +1,7 @@
 ---
 title: Définir les configurations Debug et Release | Microsoft Docs
+description: Définissez les configurations Debug et Release dans Visual Studio. Vous générez la version Debug pour le débogage et la version Release pour la distribution de la version finale.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599904"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149545"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Définir des configurations Debug et Release dans Visual Studio
 
@@ -56,7 +58,7 @@ Pour modifier la configuration de build, effectuez l’une des opérations suiva
 
 * Dans le menu **générer** , sélectionnez **Configuration Manager**, puis sélectionnez **Debug** ou **Release**.
 
-ou
+or
 
 * Dans la barre d’outils, choisissez **Debug** ou **Release** dans la liste **Configurations de solutions**.
 
@@ -85,7 +87,7 @@ Pour plus d’informations sur les paramètres de projet pour les configurations
 
 5. Sélectionnez le bouton **avancé** (ou le bouton **Options avancées de compilation** dans Visual Basic).
 
-6. Dans la **liste informations de débogage** (ou générer la liste d’informations de **débogage** dans Visual Basic), choisissez **Full**, **PDB uniquement**ou **portable**.
+6. Dans la **liste informations de débogage** (ou générer la liste d’informations de **débogage** dans Visual Basic), choisissez **Full**, **PDB uniquement** ou **portable**.
 
    Le format portable est le format multiplateforme le plus récent pour .NET Core. Pour plus d’informations sur les options, consultez [paramètres de build avancés, boîte de dialogue (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
@@ -121,7 +123,7 @@ Pour plus d’informations sur les paramètres de projet pour les configurations
 
 - [Spécifier les fichiers de symboles (. pdb) et les fichiers sources dans le débogueur Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)<br/>
-- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 - [Paramètres de projet pour une configuration Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-- [Paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
 - [Comment : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md)

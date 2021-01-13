@@ -1,5 +1,7 @@
 ---
 title: Vues Spy + + | Microsoft Docs
+description: En savoir plus sur les vues dans l’outil de débogage Spy + +. Spy + + affiche les arborescences des fenêtres, des messages, des processus et des threads disponibles sur votre ordinateur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caf275443f01ade5914b85dee8ef7105b3f6c9ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902567"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148063"
 ---
 # <a name="spy-views"></a>Vues Spy++
 Spy + + affiche les arborescences des fenêtres, des messages, des processus et des threads disponibles sur votre ordinateur.

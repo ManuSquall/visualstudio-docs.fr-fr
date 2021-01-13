@@ -1,5 +1,6 @@
 ---
 title: 'Ligne de commande du profileur : collecter les statistiques des applications autonomes'
+description: Collectez les statistiques d’application pour les applications autonomes en utilisant la ligne de commande du profileur dans Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 150a1a010a33a3b4fcfe0954ec70db2ff4de7816
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6567b0116227bf259eb3591bc6880a6841252869
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808914"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148299"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecter des statistiques d’applications pour des applications autonomes en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des statistiques de performances d’une application cliente (autonome) utilisant la méthode d’échantillonnage à partir de la ligne de commande.

@@ -1,5 +1,7 @@
 ---
 title: Vue Appelant/Appelé - Données d’échantillonnage | Microsoft Docs
+description: Lisez comment la vue appelant/appelé affiche les informations de profilage pour une fonction sélectionnée et ses fonctions parentes et enfants dans Explorateur de performances.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 008aa6bd9402cde760ffc61a613aba778c8ec96f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f01d2b9fbff4864c8e3fa4d96dccdda54da7e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773268"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148349"
 ---
 # <a name="callercallee-view---sampling-data"></a>Vue Appelant/Appelé - Données d’échantillonnage
 La vue Appelant/Appelé affiche des données de profilage pour la fonction sélectionnée, ainsi que pour ses fonctions parents et enfants. La vue Appelant/Appelé comprend trois grilles.

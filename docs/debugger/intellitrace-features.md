@@ -1,5 +1,7 @@
 ---
 title: Fonctionnalités IntelliTrace | Microsoft Docs
+description: En savoir plus sur les fonctionnalités IntelliTrace dans Visual Studio. Utilisez IntelliTrace pour enregistrer des événements et des appels de méthode dans votre application.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f5d4603e052cd5968055304290559b8a8d5a56a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536576"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148635"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Fonctionnalités IntelliTrace (C#, Visual Basic, C++)
 

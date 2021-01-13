@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue recherche dans la fenêtre | Microsoft Docs
+description: Utilisez la recherche de fenêtre pour rechercher et sélectionner le nœud pour une fenêtre spécifique listée dans l’affichage Windows. Consultez cet article pour obtenir une description des paramètres.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900921"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148986"
 ---
 # <a name="window-search-dialog-box"></a>Boîte de dialogue Recherche d'une fenêtre
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour une fenêtre spécifique dans la [vue fenêtres](../debugger/windows-view.md). Pour afficher cette boîte de dialogue, déplacez le focus sur la fenêtre vue Windows. Choisissez ensuite **Rechercher une fenêtre** dans le menu **Rechercher** .

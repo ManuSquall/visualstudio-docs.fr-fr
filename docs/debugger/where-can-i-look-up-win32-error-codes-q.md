@@ -1,5 +1,7 @@
 ---
 title: Où puis-je trouver les codes des erreurs Win32 ? | Microsoft Docs
+description: Pour rechercher un code d’erreur Win32, entrez-le dans Watch ou espion Express. Par exemple, « 0x80000004, HR ». Les définitions des codes d’erreur se trouvent dans INCLUDE\WINERROR.H.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44a006be3b6ecad3ef723c00154354cb35df0049
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728031"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149285"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Où puis-je trouver les codes des erreurs Win32 ?
 WINERROR.H, dans le répertoire INCLUDE de votre installation de système par défaut, contient les définitions des codes d'erreur correspondant aux fonctions API Win32.
@@ -33,5 +35,5 @@ WINERROR.H, dans le répertoire INCLUDE de votre installation de système par d�
 `0x80000004,hr`
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Débogage du code natif](../debugger/debugging-native-code.md)

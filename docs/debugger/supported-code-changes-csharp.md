@@ -1,5 +1,7 @@
 ---
 title: Modifications du code prises en charge (C# et Visual Basic) | Microsoft Docs
+description: Comprenez les modifications de code prises en charge lorsque vous utilisez la fonctionnalité Modifier & Continuer lors du débogage d’un projet C# ou Visual Basic dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509417"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149207"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifications de code prises en charge (C# et Visual Basic)
 Modifier &amp; Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.

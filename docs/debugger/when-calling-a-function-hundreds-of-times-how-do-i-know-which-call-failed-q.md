@@ -1,5 +1,6 @@
 ---
 title: Rechercher l’échec de l’appel lors de l’appel d’une fonction plusieurs fois
+description: Consultez une technique permettant de définir un point d’arrêt sur une fonction de telle sorte que l’arrêt se produit uniquement sur l’appel pour lequel la fonction échoue.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de3d186b7800efc3e807e3f775b48d91b44072b4
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 567450f11572cc998f952117c33992cdba33570d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810482"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149298"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Lorsque j'appelle une fonction des centaines de fois, comment puis-je savoir quel appel a échoué ?
 ## <a name="problem-description"></a>Description du problème
@@ -49,6 +50,6 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
  Vous savez à présent que la fonction a échoué au 101e appel. Si vous réinitialisez le point d'arrêt avec un nombre d'accès égal à 101, puis que vous réexécutez le programme, ce dernier s'arrête au niveau de l'appel à `CnvtV` qui a provoqué son échec.
 
 ## <a name="see-also"></a>Voir aussi
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Définition de points d’arrêt](/previous-versions/ktf38f66(v=vs.100))
 - [Débogage du code natif](../debugger/debugging-native-code.md)

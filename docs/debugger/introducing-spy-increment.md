@@ -1,5 +1,7 @@
 ---
 title: Présentation de Spy + + | Microsoft Docs
+description: En savoir plus sur l’outil de débogage Spy + +. Afficher une arborescence graphique des relations entre les objets système. Obtenir les propriétés des fenêtres, threads, processus ou messages sélectionnés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d04b2e9e04e1f2b952baadbdf0cca32cc3b301b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb8debef874dd32f52994d0edd4a27d81b340834
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731820"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148791"
 ---
 # <a name="introducing-spy"></a>Présentation de Spy++
 Spy++ vous permet d’effectuer les tâches suivantes :

@@ -1,6 +1,7 @@
 ---
 title: Revenir à la fonction qui a appelé MFC en cas d’arrêt | Microsoft Docs
-ms.custom: seodec18
+description: Découvrez comment revenir à la fonction qui a appelé MFC en cas d’arrêt de l’exécution dans le débogueur Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b05e703958fe7a1c630b542522f1f33b0fe5981
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 751688b72a7603e76733906775c594cd28e78c28
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600273"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148947"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Comment : retourner à la fonction qui a appelé l'application MFC en cas d'arrêt
 
@@ -46,5 +47,5 @@ Il peut arriver que votre code se trouve dans la pompe de messages. Dans ce cas,
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
+- [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 - [Débogage du code natif](../debugger/debugging-native-code.md)

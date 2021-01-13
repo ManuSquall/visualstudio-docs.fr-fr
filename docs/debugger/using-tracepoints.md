@@ -1,5 +1,7 @@
 ---
 title: Enregistrer les informations avec des points de trace | Microsoft Docs
+description: Définissez les points de trace pour enregistrer les informations de sortie sans modifier ou arrêter votre code. Spécifiez simplement une chaîne de sortie sous la case à cocher action dans les paramètres de point d’arrêt.
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561336"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150091"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Enregistrer les informations dans la fenêtre sortie à l’aide de points de trace dans Visual Studio
 
@@ -53,7 +55,7 @@ Vous pouvez définir des points de trace en spécifiant une chaîne de sortie so
 
    ![Zone des conditions vérifiées](../debugger/media/checkedconditionsbox.png "Zone des conditions vérifiées")
 
-   Vous avez trois possibilités pour les conditions : **expression conditionnelle** , **filtre** et **nombre d’accès** .
+   Vous avez trois possibilités pour les conditions : **expression conditionnelle**, **filtre** et **nombre d’accès**.
 
 ## <a name="actions-menu"></a>Menu Actions
 
@@ -63,7 +65,7 @@ Par exemple, si vous souhaitez afficher la valeur de la `counter` variable dans 
 
 ![Message de sortie du compteur](../debugger/media/counteroutputmessage.png "Message de sortie du compteur")
 
-Si vous cliquez sur **Fermer** , puis déboguez le programme ( **F5** ), la sortie suivante s’affiche dans la fenêtre sortie.
+Si vous cliquez sur **Fermer** , puis déboguez le programme (**F5**), la sortie suivante s’affiche dans la fenêtre sortie.
 
 ![Message d’action dans Fenêtre Sortie](../debugger/media/actionsmessageinoutputwindow.png "Message d’action dans Fenêtre Sortie")
 
@@ -110,7 +112,7 @@ Pour le nombre d’accès, vous pouvez choisir de générer un message lorsque l
 
 ![Nombre d’accès aux expressions conditionnelles](../debugger/media/conditionalexpressionhitcount.png "Nombre d’accès aux expressions conditionnelles")
 
-### <a name="filter"></a>Filtrer
+### <a name="filter"></a>Filtre
 Pour une condition de filtre, spécifiez la sortie des appareils, des processus ou des threads.
 
 ![Filtre d’expression conditionnelle](../debugger/media/conditionalexpressionfilter.png "Filtre d’expression conditionnelle")

@@ -1,6 +1,7 @@
 ---
 title: Afficher les valeurs de Registre dans le débogueur | Microsoft Docs
-ms.custom: seodec18
+description: Affichez les valeurs de Registre dans la fenêtre registres de Visual Studio. Pendant le débogage, les valeurs de Registre sont modifiées au fur et à mesure que le code s’exécute dans votre application.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348572"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148037"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Afficher les valeurs de Registre dans la fenêtre registres (C#, C++, Visual Basic, F #)
 
@@ -48,9 +49,9 @@ Il est possible de modifier les valeurs des registres. Pour plus d’information
 
 **Pour ouvrir la fenêtre registres**
 
-1. Activez le débogage au niveau de l’adresse, en sélectionnant **activer le débogage au niveau** de l’adresse dans **Outils** (ou **débogage**) > **options**de  >  **débogage**.
+1. Activez le débogage au niveau de l’adresse, en sélectionnant **activer le débogage au niveau** de l’adresse dans **Outils** (ou **débogage**) > **options** de  >  **débogage**.
 
-1. Pendant que le débogage est en cours d’exécution ou à un point d’arrêt, sélectionnez **Déboguer**les  >  **Windows**  >  **registres**Windows ou appuyez sur **ALT** + **5**.
+1. Pendant que le débogage est en cours d’exécution ou à un point d’arrêt, sélectionnez **Déboguer** les  >    >  **registres** Windows ou appuyez sur **ALT** + **5**.
 
 >[!NOTE]
 >Les boîtes de dialogue et les commandes de menu peuvent différer en fonction de votre édition ou de vos paramètres Visual Studio. Pour modifier vos paramètres, sélectionnez **importation et exportation de paramètres** dans le menu **Outils** de Visual Studio. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).

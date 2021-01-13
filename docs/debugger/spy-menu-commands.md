@@ -1,5 +1,7 @@
 ---
 title: Commandes du menu Spy | Microsoft Docs
+description: Explorez le menu Spy, qui offre des commandes pour travailler avec les fenêtres et les vues Spy + +. Les commandes disponibles sont les fenêtres, les processus, les threads, les messages de journal et la fenêtre Rechercher.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c737bef539e541d1dc1e130eb0c9dedb3e00f2c4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929754"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148128"
 ---
 # <a name="spy-menu-commands"></a>commandes du menu Spy
 Le menu **Spy** fournit des commandes pour travailler avec les fenêtres et les vues Spy + +.

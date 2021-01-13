@@ -1,5 +1,7 @@
 ---
 title: Utilisation de la fenêtre tâches | Microsoft Docs
+description: Les tâches sont des opérations asynchrones qui peuvent s’exécuter simultanément. Plusieurs tâches peuvent s’exécuter sur le même thread. Utilisez des tâches pour afficher les informations sur les objets Task et WinJS. promise.
+ms.custom: SEO-VS-2020
 ms.date: 03/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901583"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150065"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Utilisation de la fenêtre tâches (C#, Visual Basic, C++)
 
@@ -50,7 +52,7 @@ Les colonnes de la fenêtre **Tâches** contiennent les informations suivantes.
 |**Indicateurs**|Affiche les tâches avec indicateur et vous permet d’ajouter un indicateur à une tâche ou d’en supprimer un.|
 |**Icônes**|La flèche jaune indique la tâche actuelle. La tâche actuelle est la tâche supérieure du thread actuel.<br /><br /> Une flèche blanche indique la tâche d’arrêt, autrement dit, celle qui était actuelle lorsque le débogueur a été appelé.<br /><br /> L'icône de pause indique une tâche gelée par l'utilisateur. Vous pouvez geler et libérer une tâche en cliquant dessus avec le bouton droit dans la liste.|
 |**Identifiant**|Numéro fourni par le système pour la tâche. En code natif, il s’agit de l’adresse de la tâche.|
-|**Statut**|État actuel (planifié, actif, bloqué, bloqué, en attente ou terminé) de la tâche. Une tâche planifiée est une tâche qui n’a pas encore été exécutée et, par conséquent, qui de possède pas encore une pile d’appels, un thread assigné ou des informations connexes.<br /><br /> Une tâche active est une tâche qui était en train d'exécuter du code avant de s'arrêter dans le débogueur.<br /><br /> Une tâche en attente ou bloquée est une tâche qui est bloquée, car elle attend un événement à signaler, un verrou à libérer ou une autre tâche à terminer.<br /><br /> Une tâche bloquée est une tâche en attente dont le thread est bloqué par un autre thread.<br /><br /> Pointez sur la cellule **État** d’une tâche bloquée ou en attente pour obtenir plus d’informations sur le bloc. **Avertissement :**  La fenêtre **tâches** signale un blocage uniquement pour une tâche bloquée qui utilise une primitive de synchronisation prise en charge par le parcours de chaîne d’attente (WCT). Par exemple, pour un objet bloqué <xref:System.Threading.Tasks.Task> , qui utilise WCT, le débogueur signale **en attente**d’un blocage. Pour une tâche bloquée gérée par le runtime d’accès concurrentiel qui n’utilise pas Wait Chain Traversal, le débogueur signale **En attente**. Pour plus d'informations sur WCT, consultez [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal) (page éventuellement en anglais).|
+|**État**|État actuel (planifié, actif, bloqué, bloqué, en attente ou terminé) de la tâche. Une tâche planifiée est une tâche qui n’a pas encore été exécutée et, par conséquent, qui de possède pas encore une pile d’appels, un thread assigné ou des informations connexes.<br /><br /> Une tâche active est une tâche qui était en train d'exécuter du code avant de s'arrêter dans le débogueur.<br /><br /> Une tâche en attente ou bloquée est une tâche qui est bloquée, car elle attend un événement à signaler, un verrou à libérer ou une autre tâche à terminer.<br /><br /> Une tâche bloquée est une tâche en attente dont le thread est bloqué par un autre thread.<br /><br /> Pointez sur la cellule **État** d’une tâche bloquée ou en attente pour obtenir plus d’informations sur le bloc. **Avertissement :**  La fenêtre **tâches** signale un blocage uniquement pour une tâche bloquée qui utilise une primitive de synchronisation prise en charge par le parcours de chaîne d’attente (WCT). Par exemple, pour un objet bloqué <xref:System.Threading.Tasks.Task> , qui utilise WCT, le débogueur signale **en attente** d’un blocage. Pour une tâche bloquée gérée par le runtime d’accès concurrentiel qui n’utilise pas Wait Chain Traversal, le débogueur signale **En attente**. Pour plus d'informations sur WCT, consultez [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal) (page éventuellement en anglais).|
 |**Start Time**|Heure à laquelle la tâche est devenue active.|
 |**Durée**|Nombre de secondes durant lesquelles la tâche a été active.|
 |**Heure d'achèvement**|Heure à laquelle la tâche s’est terminée.|

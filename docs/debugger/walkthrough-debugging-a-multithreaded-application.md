@@ -1,5 +1,7 @@
 ---
 title: Afficher les threads dans le débogueur | Microsoft Docs
+description: Utilisez des threads pour examiner et contrôler les threads. Vous pouvez regrouper, trier, marquer, figer, libérer et Rechercher des threads, sélectionner des colonnes et afficher des piles d’appels.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821587"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149701"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Afficher les threads dans le débogueur Visual Studio à l’aide de la fenêtre threads (C#, Visual Basic, C++)
 Dans la fenêtre **Threads** , vous pouvez examiner et utiliser des threads dans l’application que vous déboguez. Pour obtenir des instructions pas à pas sur l’utilisation de la fenêtre **Threads** , consultez [procédure pas à pas : déboguer à l’aide de la fenêtre threads](../debugger/how-to-use-the-threads-window.md).
@@ -168,5 +170,5 @@ Dans un programme multithread, chaque thread possède sa propre pile d'appel. La
 - Dans la barre d’outils en haut de la fenêtre **Threads** , sélectionnez **développer les piles des appels** ou réduire les piles d' **appels**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Bien démarrer avec le débogage d’applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md)

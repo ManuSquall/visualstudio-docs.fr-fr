@@ -1,5 +1,7 @@
 ---
 title: Architecture du visualiseur | Microsoft Docs
+description: Un visualiseur affiche un type d’élément de données spécifique et peut également permettre une modification. En savoir plus sur l’architecture d’un visualiseur.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9166cc3c98f72e43042a26c0787d1cbf45223a74
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187156"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149753"
 ---
 # <a name="visualizer-architecture"></a>Architecture d'un visualiseur
 L'architecture d'un visualiseur du débogueur comporte deux parties :

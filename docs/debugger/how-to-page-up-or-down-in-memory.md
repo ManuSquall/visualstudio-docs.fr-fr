@@ -1,5 +1,7 @@
 ---
 title: Page vers le haut ou vers le haut dans la mémoire | Microsoft Docs
+description: Consultez Comment paginer en mémoire pour afficher le contenu de la mémoire dans une fenêtre mémoire ou la fenêtre Code machine lors du débogage dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852046"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148882"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Comment : se déplacer d'une page vers le haut ou vers le bas dans la mémoire
 

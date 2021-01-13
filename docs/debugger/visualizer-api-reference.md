@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur l’API du visualiseur | Microsoft Docs
+description: Un visualiseur affiche un type d’élément de données spécifique et peut également permettre une modification. Pour en créer un, utilisez l’API du visualiseur documenté dans cette section.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37346c77b1488bb89ac071a0290f7b5219731591
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187211"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149766"
 ---
 # <a name="visualizer-api-reference"></a>Référence des API du visualiseur
 

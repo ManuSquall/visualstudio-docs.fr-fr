@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue Propriétés de la fenêtre | Microsoft Docs
+description: Découvrez comment afficher les propriétés d’une fenêtre qui est affichée dans la vue fenêtres. Cet article contient des liens vers d’autres articles qui documentent les propriétés.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929211"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149220"
 ---
 # <a name="window-properties-dialog-box"></a>boîte de dialogue Propriétés de la fenêtre
 Utilisez cette boîte de dialogue pour en savoir plus sur une fenêtre spécifique. Pour afficher cette boîte de dialogue, déplacez le focus sur la fenêtre [vue Windows](../debugger/windows-view.md) . Sélectionnez un nœud de fenêtre dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

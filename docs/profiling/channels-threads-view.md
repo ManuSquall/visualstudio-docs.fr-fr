@@ -1,5 +1,7 @@
 ---
 title: Canaux (vue Threads) | Microsoft Docs
+description: En savoir plus sur la vue threads lors de l’utilisation de canaux dans le visualiseur concurrentiel Visual Studio. Afficher les canaux de thread, les canaux de disques, les canaux de marqueurs et les canaux GPU.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537083"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148609"
 ---
 # <a name="channels-threads-view"></a>Canaux (vue Threads)
 Le visualiseur concurrentiel montre quatre types de canaux : les canaux de threads, les canaux de disques, les canaux de marqueurs et les canaux GPU.

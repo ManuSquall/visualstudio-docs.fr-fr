@@ -1,5 +1,7 @@
 ---
 title: Quand le point d’arrêt est atteint, boîte de dialogue | Microsoft Docs
+description: À utiliser lorsque le point d’arrêt est atteint pour spécifier une action en cas d’interruption. Vous pouvez spécifier qu’un message soit imprimé et que l’exécution doit se poursuivre ultérieurement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728146"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149311"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Lorsque le point d'arrêt est atteint, boîte de dialogue
 Cette boîte de dialogue vous permet de personnaliser l’action qui se produit lorsqu’un point d’arrêt est atteint.
@@ -35,5 +37,5 @@ Cette boîte de dialogue vous permet de personnaliser l’action qui se produit 
  **Continuer l’exécution** Ce contrôle est activé uniquement lorsque l’option **imprimer un message** est sélectionnée. Une fois ce contrôle sélectionné, vous pouvez utiliser un point d’arrêt comme point de trace pour suivre l’exécution de votre programme, au lieu de l’arrêter lorsque l’emplacement est atteint.
 
 ## <a name="see-also"></a>Voir aussi
-- [Utilisation des points d'arrêt](../debugger/using-breakpoints.md)
+- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)
 - [Utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

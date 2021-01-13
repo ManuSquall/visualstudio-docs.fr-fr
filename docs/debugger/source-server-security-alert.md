@@ -1,5 +1,7 @@
 ---
 title: Alerte de sécurité du serveur source | Microsoft Docs
+description: En savoir plus sur l’avertissement d’alerte de sécurité du serveur source dans le débogueur Visual Studio. Tenez compte des menaces de sécurité potentielles lors de l’utilisation du serveur source.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69511c2f83570abf37ef4bea8b71c8f59431a128
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf62abb91411048f46bfe7240074bd86c119bcd4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729571"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149116"
 ---
 # <a name="source-server-security-alert"></a>Alerte de sécurité du serveur source
 Lors de l'utilisation du serveur source, n'utilisez que des fichiers de symboles provenant d'un emplacement connu et fiable.
 
- Cet avertissement apparaît lorsque vous activez le support du serveur source. Les commandes du serveur source sont incorporées dans les fichiers de symboles de débogage (fichiers** \* . pdb** ). Assurez-vous que vous savez d'où vos fichiers PDB proviennent.
+ Cet avertissement apparaît lorsque vous activez le support du serveur source. Les commandes du serveur source sont incorporées dans les fichiers de symboles de débogage (fichiers **\* . pdb** ). Assurez-vous que vous savez d'où vos fichiers PDB proviennent.
 
 > [!IMPORTANT]
 > Tenez compte des risques potentiels suivants sur la sécurité lorsque vous utilisez le serveur source : comme des commandes arbitraires peuvent s'insérer dans le fichier PDB de l'application, veillez à ne mettre dans le fichier srcsrv.ini que celles que vous souhaitez exécuter. Toute tentative d'exécution d'une commande ne se trouvant pas dans le fichier srcsvr.ini provoque l'apparition d'une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, vous avez confiance en cmd.exe, mais un utilisateur malveillant a pu spécifier des paramètres qui rendent la commande dangereuse.

@@ -1,6 +1,7 @@
 ---
 title: Écrire un visualiseur en C# | Microsoft Docs
-ms.custom: seodec18
+description: Suivez une procédure pas à pas pour créer un visualiseur simple en C#. Il montre les étapes requises avec et sans utiliser le modèle d’élément de visualiseur.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286302"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149714"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d’un visualiseur en C\#
 
@@ -62,7 +63,7 @@ Suivez les étapes ci-dessous pour créer un visualiseur.
 
 4. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir** et recherchez le Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    Vous pouvez trouver la DLL dans le sous-répertoire * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* du répertoire d’installation de Visual Studio.
+    Vous pouvez trouver la DLL dans le sous-répertoire *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* du répertoire d’installation de Visual Studio.
 
 5. Cliquez sur **OK**.
 
@@ -231,7 +232,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
     L’application console démarre et le visualiseur apparaît et affiche la chaîne « Hello, World ».
 
-   Félicitations. Vous venez de générer et de tester votre premier visualiseur.
+   Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
 
    Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 
@@ -274,6 +275,6 @@ Tout d’abord, vous devez créer un projet de bibliothèque de classes.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Architecture d'un visualiseur](../debugger/visualizer-architecture.md)
+- [Architecture du visualiseur](../debugger/visualizer-architecture.md)
 - [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

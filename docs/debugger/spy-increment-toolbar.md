@@ -1,5 +1,7 @@
 ---
 title: Barre d’outils Spy + + | Microsoft Docs
+description: Comprenez les éléments de l’interface utilisateur dans la barre d’outils Spy + +, qui apparaît sous la barre de menus. Pour afficher ou masquer la barre d’outils, dans le menu Affichage, cliquez sur barre d’outils.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729734"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148193"
 ---
 # <a name="spy-toolbar"></a>Barre d'outils Spy++
 La barre d’outils s’affiche sous la barre de menus dans Spy + +. Pour afficher ou masquer la barre d’outils, dans le menu **affichage** , cliquez sur **barre d’outils**.

@@ -1,5 +1,7 @@
 ---
 title: Afficher des chaînes dans un visualiseur de chaîne | Microsoft Docs
+description: Utilisez le visualiseur de chaîne dans le débogueur Visual Studio pour afficher les chaînes de texte, XML, HTML et JSON. Vous pouvez afficher d’autres types d’objets, notamment DataSet et DataTable.
+ms.custom: SEO-VS-2020
 ms.date: 04/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72450394"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149935"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Afficher des chaînes dans un visualiseur de chaîne dans Visual Studio
 

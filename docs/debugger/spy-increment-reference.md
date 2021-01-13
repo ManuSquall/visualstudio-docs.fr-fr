@@ -1,5 +1,7 @@
 ---
 title: Informations de référence sur Spy + + | Microsoft Docs
+description: Passez en revue une liste de liens de référence vers des articles qui décrivent chaque commande de menu et boîte de dialogue dans l’outil de débogage Spy + +.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902554"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98147972"
 ---
 # <a name="spy-reference"></a>Référence Spy++
 Consultez les sections listées ci-dessous pour obtenir une description de chaque menu et boîte de dialogue Spy + + :

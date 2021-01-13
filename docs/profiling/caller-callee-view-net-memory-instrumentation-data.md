@@ -1,5 +1,7 @@
 ---
 title: Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET | Microsoft Docs
+description: Passez en revue la vue appelant/appelé des données de profilage de la mémoire .NET, qui affiche les données d’allocation et de minutage pour une fonction sélectionnée et les fonctions parentes et enfants de celle-ci.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c51f4bc1e823f565670bf1f6df77553ff4658d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa4928f9da81b2141eec76e54bce7887f50a074
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779725"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148076"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET
 La vue Appelant/Appelé des données de profilage de la mémoire .NET, collectées à l’aide de la méthode d’instrumentation, affiche les données d’allocation et de durée de la fonction sélectionnée et de ses fonctions parents et enfants. La vue Appelant/Appelé comprend trois grilles.
@@ -94,7 +96,7 @@ La vue Appelant/Appelé des données de profilage de la mémoire .NET, collecté
 |**Temps inclusif d’application min.**|Temps inclusif d’application minimal d’un appel à cette fonction dans ce contexte.|
 
 ## <a name="application-exclusive-values"></a>Valeurs de temps exclusif d’application
- Les valeurs de temps exclusif d’application indiquent le temps passé dans la fonction, mais pas dans ses fonctions enfants. Cette valeur n’inclut pas non plus le temps consacré aux appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.
+ Les valeurs de temps exclusif d’application indiquent le temps passé dans la fonction, mais pas dans ses fonctions enfants. L’heure indiquée exclut également le temps passé dans les appels au système d’exploitation, tels que les changements de contexte et les opérations d’e/s.
 
 |Colonne|Description|
 |------------|-----------------|

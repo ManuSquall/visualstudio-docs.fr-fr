@@ -1,6 +1,7 @@
 ---
 title: Spécifier une version de .NET Framework pour le débogage | Microsoft Docs
-ms.custom: seodec18
+description: Spécifiez une version plus ancienne de .NET Framework pour le débogage. Le débogueur Visual Studio prend en charge le débogage des versions antérieures de .NET Framework ainsi que la version actuelle.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349066"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149415"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Spécifier une ancienne version de .NET Framework pour le débogage (C#, Visual Basic, F #)
 
@@ -52,7 +53,7 @@ Dans les rares cas où cette erreur s’affiche, vous pouvez définir une clé d
 
 5. Après avoir accédé à {449EC4CC-30D2-4032-9256-EE18EB41B62B}, recherchez la clé CLRVersionForDebugging dans la colonne **Nom**.
 
-   1. Si la clé n’existe pas, cliquez avec le bouton droit sur {449EC4CC-30D2-4032-9256-EE18EB41B62B}, puis cliquez sur **Nouvelle valeur de chaîne**. Cliquez ensuite avec le bouton droit sur la nouvelle valeur de chaîne, cliquez sur **Renommer**et tapez `CLRVersionForDebugging` .
+   1. Si la clé n’existe pas, cliquez avec le bouton droit sur {449EC4CC-30D2-4032-9256-EE18EB41B62B}, puis cliquez sur **Nouvelle valeur de chaîne**. Cliquez ensuite avec le bouton droit sur la nouvelle valeur de chaîne, cliquez sur **Renommer** et tapez `CLRVersionForDebugging` .
 
 6. Double-cliquez sur **CLRVersionForDebugging**.
 

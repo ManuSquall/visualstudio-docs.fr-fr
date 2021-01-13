@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: Utilisez IntelliTrace pour enregistrer et effectuer le suivi de l’historique d’exécution de votre code dans Visual Studio. Enregistrez des événements spécifiques, examinez le code connexe et les erreurs de débogage.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600251"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148999"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -47,7 +49,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Quelles applications peuvent être déboguées à l'aide d'IntelliTrace ?
 
-| Niveau de support| Types d’applications |
+| Niveau de support| Types d'applications |
 |---------------------| - |
 | **Prise en charge complète** | - Applications Visual Basic et Visual C# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une application SharePoint à l’aide d’IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Prise en charge limitée** | -Les applications C++ ciblant Windows prennent en charge l’affichage des instantanés à l’aide d’IntelliTrace. Seuls les événements de débogueur et d’exception sont pris en charge.<br />-Applications .NET Core et ASP.NET Core prises en charge pour certains événements uniquement (événements du contrôleur MVC, ADO.NET et HTTPClient) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou ASP.NET Core.<br />- Applications F# à titre expérimental<br />-Applications UWP prises en charge pour les événements uniquement |
@@ -106,7 +108,7 @@ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace :
 
   - Valeurs situées dans DataTips qui apparaissent lorsque vous déplacez le pointeur de la souris au-dessus d'une variable dans la fenêtre source pour afficher sa valeur. IntelliTrace ne collecte pas de valeurs dans les DataTips épinglés.
 
-    Quand les événements IntelliTrace et le mode instantanés sont activés, IntelliTrace prend un instantané du processus de l’application à chaque **point d’arrêt** et événement d' **étape** du débogueur. Cela permet d’enregistrer des valeurs dans les fenêtres **variables locales**, **automatique**et **Espion** , que les fenêtres soient ouvertes ou non. Les valeurs des info-bulles de données épinglées sont également collectées.
+    Quand les événements IntelliTrace et le mode instantanés sont activés, IntelliTrace prend un instantané du processus de l’application à chaque **point d’arrêt** et événement d' **étape** du débogueur. Cela permet d’enregistrer des valeurs dans les fenêtres **variables locales**, **automatique** et **Espion** , que les fenêtres soient ouvertes ou non. Les valeurs des info-bulles de données épinglées sont également collectées.
 
 - **Exceptions**
 

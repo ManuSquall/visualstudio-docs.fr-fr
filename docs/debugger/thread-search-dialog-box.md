@@ -1,5 +1,7 @@
 ---
 title: Boîte de dialogue recherche de thread | Microsoft Docs
+description: En savoir plus sur la boîte de dialogue recherche de threads dans l’outil de débogage Spy + +. Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un thread spécifique dans la vue threads.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901860"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148752"
 ---
 # <a name="thread-search-dialog-box"></a>Boîte de dialogue Recherche d'un thread
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un thread spécifique dans la [vue threads](../debugger/threads-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre vue **Threads** . Ensuite, choisissez **Rechercher un thread** dans le menu **Rechercher** .

@@ -1,6 +1,7 @@
 ---
 title: Déboguer au moment du design | Microsoft Docs
-ms.custom: ''
+description: Utilisez la fenêtre exécution pour déboguer le code au moment du design, sans exécuter l’application. Vous pouvez exécuter une fonction et examiner l’État lorsqu’un point d’arrêt est atteint.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183559"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148845"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Débogage au moment du design dans Visual Studio (C#, C++/CLI, Visual Basic, F #)
 
@@ -59,7 +60,7 @@ L’exemple suivant se trouve dans Visual Basic. Vous pouvez également utiliser
 
 1. Définissez un point d’arrêt sur la **fonction line end**.
 
-1. Ouvrez la fenêtre **exécution** en sélectionnant **Déboguer**les  >  **fenêtres**  >  **immédiates**. Tapez `?MyFunction` dans la fenêtre, puis appuyez sur **entrée**.
+1. Ouvrez la fenêtre **exécution** en sélectionnant **Déboguer** les  >  **fenêtres**  >  **immédiates**. Tapez `?MyFunction` dans la fenêtre, puis appuyez sur **entrée**.
 
    Le point d’arrêt est atteint et la valeur de **MyFunction** dans la fenêtre **variables locales** est **1**. Vous pouvez examiner la pile des appels et les autres fenêtres de débogage pendant que l’application est en mode arrêt.
 
@@ -89,7 +90,7 @@ L’exemple suivant se trouve dans Visual Basic. Vous pouvez également utiliser
 
 1. Dans la deuxième instance de Visual Studio, ouvrez le menu **Déboguer** , puis choisissez **attacher au processus...**.
 
-1. Selon le type de projet (voir les étapes précédentes), sélectionnez le *UwpSurface.exe*, *WpfSurface.exe*ou le processus *XDesProc.exe* dans la liste des processus disponibles.
+1. Selon le type de projet (voir les étapes précédentes), sélectionnez le *UwpSurface.exe*, *WpfSurface.exe* ou le processus *XDesProc.exe* dans la liste des processus disponibles.
 
 1. Dans le champ **attacher à** de la boîte de dialogue **attacher au processus** , choisissez le type de code approprié pour le contrôle personnalisé que vous souhaitez déboguer.
 

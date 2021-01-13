@@ -1,6 +1,7 @@
 ---
 title: Écrire un visualiseur dans Visual Basic | Microsoft Docs
-ms.custom: seodec18
+description: Suivez une procédure pas à pas pour créer un visualiseur simple dans Visual Basic. Vous créez également un atelier de test pour tester votre visualiseur.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4354a226503ef11b8e596cff609912afa7fd34f0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84180530"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149623"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procédure pas à pas : écriture d'un visualiseur en Visual Basic
 
@@ -63,7 +64,7 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
 4. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir** et recherchez le Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    Vous pouvez trouver la DLL dans le sous-répertoire * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* du répertoire d’installation de Visual Studio.
+    Vous pouvez trouver la DLL dans le sous-répertoire *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* du répertoire d’installation de Visual Studio.
 
 5. Cliquez sur **OK**.
 
@@ -232,12 +233,12 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
     L'application console démarre. Le visualiseur apparaît et affiche la chaîne « Hello, World ».
 
-   Félicitations. Vous venez de générer et de tester votre premier visualiseur.
+   Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
 
    Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Architecture d'un visualiseur](../debugger/visualizer-architecture.md)
+- [Architecture du visualiseur](../debugger/visualizer-architecture.md)
 - [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

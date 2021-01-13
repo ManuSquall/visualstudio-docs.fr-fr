@@ -1,5 +1,7 @@
 ---
 title: Collecter des statistiques pour des applications web ASP.NET
+description: Passez en revue les procédures et les options de collecte des statistiques de performances pour les applications Web ASP.NET à l’aide de l’outil VSPerfASPNETCmd et VSPerfCmd et de la méthode de profilage par échantillonnage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 017195cc86e958c70204a588de7678a5f15e6e09
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ef1f4ef1c50db1234425ab164f377dab5ff12ea6
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808927"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149532"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Collecter des statistiques pour des applications web ASP.NET
 

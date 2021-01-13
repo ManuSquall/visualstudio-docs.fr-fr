@@ -1,5 +1,7 @@
 ---
 title: Vue threads | Microsoft Docs
+description: Comprendre la vue threads dans l’outil de débogage Spy + +. La vue threads est une liste plate de tous les threads associés à Windows sur votre système.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929943"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150208"
 ---
 # <a name="threads-view"></a>vue Threads
 La vue threads est une liste plate de tous les threads associés à Windows sur votre système. L’ID de thread et le nom de module pour chaque thread sont affichés. Les processus ne sont pas inclus, mais vous pouvez facilement trouver le processus qui possède un thread sélectionné.
