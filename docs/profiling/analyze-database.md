@@ -1,5 +1,7 @@
 ---
 title: Analyser l’utilisation des bases de données pour les projets .NET Core | Microsoft Docs
+description: Utilisez l’outil de base de données pour enregistrer les requêtes de base de données de votre application, puis analysez-les pour trouver des moyens d’améliorer les performances.
+ms.custom: SEO-VS-2020
 ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a8518e3f43bec3a9d5f696a07613dee84829dbc2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352314"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205461"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analyser les performances de base de données à l’aide de l’outil base de données
 
@@ -23,7 +25,7 @@ Utilisez l’outil de base de données pour enregistrer les requêtes de base de
 > [!NOTE]
 > L’outil de base de données nécessite Visual Studio 2019 version 16,3 ou ultérieure et un projet .NET Core sur Windows à l’aide de [ADO.net]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) ou [Entity Framework Core](/ef/core/).
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 

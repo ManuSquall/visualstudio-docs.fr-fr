@@ -1,5 +1,7 @@
 ---
 title: Paramètres avancés, boîte de dialogue (visualiseur concurrentiel) | Microsoft Docs
+description: Utilisez les paramètres avancés du visualiseur concurrentiel pour contrôler le contenu de la trace. Il existe des onglets pour les symboles, les Uniquement mon code, la mise en mémoire tampon, etc.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911220"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205500"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.
@@ -70,7 +72,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Exclure les données de marqueur des rapports du visualiseur concurrentiel
  Si vous ne voulez pas que les données d’un fournisseur particulier s’affichent dans les futures traces, décochez la case située à coté du fournisseur à supprimer.
 
-## <a name="files"></a>Fichiers
+## <a name="files"></a>Files
  Sous l’onglet **Fichiers**, vous pouvez spécifier le répertoire dans lequel les fichiers de trace sont stockés chaque fois qu’une trace est collectée.  Le visualiseur concurrentiel génère quatre fichiers pour chaque trace qu’il collecte :
 
 - Un fichier ETL (Event Trace Log) en mode noyau (<em>.</em>kernel.etl*)

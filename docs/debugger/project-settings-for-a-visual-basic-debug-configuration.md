@@ -1,6 +1,7 @@
 ---
 title: Paramètres de projet pour une configuration de débogage VB | Microsoft Docs
-ms.custom: seodec18
+description: Découvrez comment modifier les paramètres du projet pour une configuration de débogage Visual Basic dans la fenêtre pages de propriétés de Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 277d78b225afae13d73e091c1228e181df30e532
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72730606"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205591"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Paramètres de projet pour une configuration Debug Visual Basic
 Vous pouvez modifier les paramètres de projet d’une configuration Debug [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] dans la fenêtre **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la fenêtre **Pages de propriétés**.

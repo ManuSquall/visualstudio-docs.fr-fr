@@ -1,6 +1,7 @@
 ---
 title: Analyser la consommation des ressources dans les applications XAML
-ms.custom: seodec18
+description: Utilisez le profileur chronologie de l’application pour rechercher des problèmes de performances dans les applications XAML. Vous pouvez analyser le temps passé pour différentes tâches dans différents scénarios.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038346"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205734"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 
@@ -100,7 +101,7 @@ C’est dans la vue Détails que vous passez le plus de temps à analyser le rap
 
 Les événements suivants sont pris en charge :
 
-|Nom|Description|
+|Name|Description|
 |-|-|
 |**Analyse**|Temps passé à l'analyse de fichiers XAML et à la création d'objets.<br /><br /> Le développement d’un nœud **Analyse** dans **Détails de la chronologie** affiche la chaîne des dépendances de tous les fichiers XAML qui ont été analysés en raison de l’événement racine. Ceci vous permet d’identifier l’analyse de fichiers et la création d’objets inutiles dans les scénarios critiques de performances, et de les optimiser.|
 |**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut aboutir à un débit faible des images de l’interface utilisateur et à la faible réactivité de l’application qui en découle. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans Arrange, Measure, ApplyTemplate, ArrangeOverride et MeasureOverride). Il génère également les arborescences d’éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer les arborescences logiques à élaguer, ou pour évaluer d’autres mécanismes de report pour optimiser votre passe de disposition.|
@@ -116,7 +117,7 @@ Les événements suivants sont pris en charge :
 
 Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer et spécifier les annotations des entrées de la vue **Détails de la chronologie** .
 
-|Nom|Description|
+|Name|Description|
 |-|-|
 |**Trier par**|Triez par heure de début ou sur la longueur des événements.|
 |![Regrouper les événements par frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Ajoute ou supprime une catégorie **Image** qui regroupe les événements par image.|

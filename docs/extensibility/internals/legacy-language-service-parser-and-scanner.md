@@ -1,5 +1,7 @@
 ---
 title: Analyseur et analyseur de service de langage hérité | Microsoft Docs
+description: En savoir plus sur l’analyseur et le scanneur du service de langage hérité qui sélectionnent des informations sur le code affiché.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707312"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204603"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 L’analyseur est le cœur du service de langage. Les classes de langages MPF (Managed package Framework) requièrent un analyseur de langage pour sélectionner des informations sur le code affiché. Un analyseur sépare le texte en jetons lexicals, puis identifie ces jetons par type et par fonctionnalité.
 
-## <a name="discussion"></a>Discussion
+## <a name="discussion"></a>Discussions
  Voici une méthode C#.
 
 ```csharp
@@ -48,7 +50,7 @@ namespace MyNamespace
 |MyNamespace|espace de noms|
 |MyClass|class|
 |MyFunction|method|
-|arg1|paramètre|
+|arg1|parameter|
 |var1|variable locale|
 
  Le rôle de l’analyseur est d’identifier les jetons. Certains jetons peuvent avoir plusieurs types. Une fois que l’analyseur a identifié les jetons, le service de langage peut utiliser ces informations pour fournir des fonctionnalités utiles, telles que la mise en surbrillance de la syntaxe, la correspondance des accolades et les opérations IntelliSense.

@@ -1,6 +1,7 @@
 ---
 title: Débogage à distance ASP.NET Core sur un ordinateur IIS distant | Microsoft Docs
-ms.custom: remotedebugging
+description: Déboguez une application ASP.NET Core qui a été déployée sur un ordinateur Internet Information Services distant (IIS) à l’aide du débogueur distant Visual Studio.
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298759"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205812"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Débogage à distance ASP.NET Core sur un ordinateur IIS distant dans Visual Studio
 
@@ -39,7 +40,7 @@ Ces procédures ont été testées sur ces configurations de serveur :
 * Windows Server 2016 et IIS 10
 * Windows Server 2019 et IIS 10
 
-## <a name="network-requirements"></a>Configuration requise pour le réseau
+## <a name="network-requirements"></a>Conditions requises en matière de réseau
 
 Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Le débogage sur une connexion à latence élevée ou à faible bande passante, tel qu’Internet à distance ou sur Internet dans les différents pays, n’est pas recommandé et peut échouer ou être trop lent. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -188,13 +189,13 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
 3. Définissez le champ Qualificateur sur **\<remote computer name>** et appuyez sur **entrée**.
 
-    Vérifiez que Visual Studio ajoute le port requis au nom de l’ordinateur, qui apparaît au format suivant : ** \<remote computer name> :p Trier**
+    Vérifiez que Visual Studio ajoute le port requis au nom de l’ordinateur, qui apparaît au format suivant : **\<remote computer name> :p Trier**
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, vous devez voir ** \<remote computer name> : 4024**
+    Dans Visual Studio 2019, vous devez voir **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans Visual Studio 2017, vous devez voir ** \<remote computer name> : 4022**
+    Dans Visual Studio 2017, vous devez voir **\<remote computer name> : 4022**
     ::: moniker-end
     Le port est obligatoire. Si vous ne voyez pas le numéro de port, ajoutez-le manuellement.
 
@@ -224,7 +225,7 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
 7. Cliquez sur **Attacher**.
 
-8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http:// \<remote computer name> **.
+8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http:// \<remote computer name>**.
 
     La page web ASP.NET doit s’afficher.
 
@@ -261,7 +262,7 @@ Ports requis :
 5. Sélectionnez un ou plusieurs types de réseau à activer pour le port, puis cliquez sur **suivant**.
 
     Les types que vous sélectionnez doivent inclure le réseau auquel l’ordinateur distant est connecté.
-6. Ajoutez le nom (par exemple, **IIS**, **Web Deploy**ou **msvsmon**) pour la règle de trafic entrant, puis cliquez sur **Terminer**.
+6. Ajoutez le nom (par exemple, **IIS**, **Web Deploy** ou **msvsmon**) pour la règle de trafic entrant, puis cliquez sur **Terminer**.
 
     Vous devez voir votre nouvelle règle dans la liste Règles de trafic entrant ou Règles de trafic sortant.
 

@@ -1,6 +1,7 @@
 ---
 title: Analyser l’utilisation de la mémoire
-ms.custom: seodec18
+description: Découvrez les outils que vous pouvez utiliser pour rechercher les fuites de mémoire et l’utilisation inefficace de la mémoire, des outils tels que l’outil utilisation de la mémoire et l’outil d’allocation d’objets .NET.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918095"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205721"
 ---
 # <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 
@@ -31,7 +32,7 @@ Les développeurs C++ peuvent utiliser l’outil d’utilisation de la mémoire 
 - [Analyser l’utilisation de la mémoire avec le débogueur](../profiling/memory-usage.md)
 - [Analyser l’utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md)
 
-Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic** ).
+Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
 ## <a name="blogs-and-videos"></a>Blogs et vidéos
 

@@ -1,5 +1,7 @@
 ---
 title: Déboguer des applications UWP sur des ordinateurs distants | Microsoft Docs
+description: Découvrez comment utiliser Visual Studio pour exécuter, déboguer, Profiler et tester une application plateforme Windows universelle (UWP) à distance sur un autre ordinateur ou appareil.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a28769237f0c1b0078e9c9c117695e68e5b521ac
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "92298713"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204954"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Déboguer des applications UWP sur des ordinateurs distants à partir de Visual Studio
 
@@ -100,7 +102,7 @@ Le débogage distant fonctionne de la même façon que le débogage local.
 
 1. Sur l’ordinateur Visual Studio, assurez-vous que la cible de débogage appropriée (machine ou **périphérique****distant** ) s’affiche en regard de la flèche verte dans la barre d’outils.
 
-1. Démarrez le débogage en sélectionnant **Déboguer**  >  **Démarrer le débogage**, en appuyant sur **F5**ou en sélectionnant la flèche verte dans la barre d’outils.
+1. Démarrez le débogage en sélectionnant **Déboguer**  >  **Démarrer le débogage**, en appuyant sur **F5** ou en sélectionnant la flèche verte dans la barre d’outils.
 
    Le projet est recompilé, puis déployé et démarré sur le périphérique distant. Le débogueur interrompt l’exécution aux points d’arrêt et vous pouvez effectuer un pas à pas détaillé, principal et sortant du code.
 

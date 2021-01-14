@@ -1,5 +1,7 @@
 ---
 title: Gestion des options de configuration | Microsoft Docs
+description: Apprenez à gérer les paramètres de configuration de projet et de solution dans Visual Studio pour contrôler la façon dont votre projet sera généré, empaqueté, déployé et exécuté.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707310"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204525"
 ---
 # <a name="managing-configuration-options"></a>Gestion des options de configuration
 Lorsque vous créez un nouveau type de projet, vous devez gérer les paramètres de configuration de projet et de solution qui déterminent la façon dont votre projet sera généré, empaqueté, déployé et exécuté. Les rubriques suivantes traitent de la configuration des projets et des solutions.
 
 ## <a name="in-this-section"></a>Dans cette section
-- [Vue d'ensemble](../../extensibility/internals/configuration-options-overview.md)
+- [Vue d’ensemble](../../extensibility/internals/configuration-options-overview.md)
 
  Décrit comment les projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peuvent prendre en charge plusieurs configurations.
 

@@ -1,6 +1,7 @@
 ---
 title: Paramètres de projet pour une configuration Debug C# | Microsoft Docs
-ms.custom: seodec18
+description: Découvrez comment modifier les paramètres du projet pour une configuration Debug C# dans Visual Studio, à l’aide de l’onglet déboguer et de l’onglet générer des pages de propriétés du projet.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 262e46436f1391ae21df0ccdd3ca308eecb347da
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903957"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205565"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Paramètres de projet pour des configurations Debug C#
 
@@ -43,13 +44,13 @@ Pour plus d’informations, consultez [Configurations Debug et Release](how-to-s
 
 |Paramètre|Description|
 |-------------------------------------| - |
-| **Configuration** | Définit le mode de génération de l’application. Dans la liste déroulante, sélectionnez **active (débogage)**, **Debug**, **Release**ou **toutes les configurations** . |
+| **Configuration** | Définit le mode de génération de l’application. Dans la liste déroulante, sélectionnez **active (débogage)**, **Debug**, **Release** ou **toutes les configurations** . |
 | **Action de démarrage** | Spécifie l’action lorsque vous sélectionnez **Démarrer** dans une configuration de débogage.<br />- **Démarrer le projet** est la valeur par défaut et lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [choisir le projet de démarrage](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Démarrer le programme externe** démarre et se connecte à une application qui ne fait pas partie d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attacher aux processus en cours d’exécution avec le débogueur](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Démarrer le navigateur avec l’URL** vous permet de déboguer une application Web. |
 | **Options**  >  de démarrage **Arguments de ligne de commande** | Spécifie les arguments de ligne de commande pour l’application en cours de débogage. Le nom de la commande est le nom de l’application spécifié dans **Démarrer le programme externe**. |
 | **Options**  >  de démarrage **Répertoire de travail** | Spécifie le répertoire de travail de l’application en cours de débogage. En C#, le répertoire de travail est *\bin\Debug* par défaut.
 | **Options**  >  de démarrage **Utiliser l’ordinateur distant**|Pour le débogage distant, sélectionnez cette option et entrez le nom de la cible de débogage distant, ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). <br />L’emplacement d’une application sur l’ordinateur distant est spécifié par la propriété **chemin de sortie** sous l’onglet **générer** . L’emplacement doit être un répertoire partageable sur l’ordinateur distant.
-| Moteur du débogueur **Debugger engine**  >  **Activer le débogage de code non managé** | Débogue les appels au code Win32 natif (non managé) à partir de l’application gérée. |
-| Moteur du débogueur **Debugger engine**  >  **Activer le débogage SQL Server** | Débogue SQL Server objets de base de données. |
+| Moteur du débogueur   >  **Activer le débogage de code non managé** | Débogue les appels au code Win32 natif (non managé) à partir de l’application gérée. |
+| Moteur du débogueur   >  **Activer le débogage SQL Server** | Débogue SQL Server objets de base de données. |
 
 ## <a name="build-tab"></a>Onglet Générer
 

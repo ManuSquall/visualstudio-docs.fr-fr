@@ -1,5 +1,7 @@
 ---
 title: Séquence d’initialisation des sous-types de projet | Microsoft Docs
+description: En savoir plus sur la séquence d’initialisation dans l’environnement Visual Studio pour un système de projet agrégé par plusieurs sous-types de projet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05a3c312f61dd2b2c63c3f38ef8bac2203b326db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707629"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204707"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Séquence d’initialisation des sous-types de projets
 L’environnement construit un projet en appelant l’implémentation de la fabrique de projet de base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . La construction d’un sous-type de projet démarre lorsque l’environnement détermine que la liste de GUID de type de projet pour l’extension d’un fichier projet n’est pas vide. L’extension de fichier projet et le GUID du projet spécifient si le projet est un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] type de projet ou. Par exemple, l’extension. vbproj et {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifient un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet.
@@ -43,7 +45,7 @@ L’environnement construit un projet en appelant l’implémentation de la fabr
 
     5. `HrCreateInnerProj` est appelé de manière récursive jusqu’à ce que le dernier GUID (le projet de base) dans la liste soit atteint. Pour chacun de ces appels, les étapes, c à d, sont répétées. `pOuter` pointe vers le sous-type de projet le plus à l’extérieur `IUnknown` pour chaque niveau d’agrégation.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant décrit en détail le processus de programmation dans une représentation approximative de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> méthode telle qu’elle est implémentée par l’environnement. Le code n’est qu’un exemple. elle n’est pas destinée à être compilée et toutes les vérifications d’erreurs ont été supprimées pour plus de clarté.
 

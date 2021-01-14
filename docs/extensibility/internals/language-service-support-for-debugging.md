@@ -1,5 +1,7 @@
 ---
 title: Prise en charge du service de langage pour le débogage | Microsoft Docs
+description: Découvrez les fonctionnalités du service de langage dans l’interface IVsLanguageDebugInfo qui assurent la prise en charge du débogage dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c80e8e1f584b1728f342cb596b689f6a22c9297
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17b11ce3639664a8097abeaa2a2de9a6faaadc7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707437"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205162"
 ---
 # <a name="language-service-support-for-debugging"></a>Prise en charge du service de langage pour le débogage
 Un service de langage peut fournir des fonctionnalités qui prennent en charge un débogueur par le biais de l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interface. Ces fonctionnalités incluent la validation des points d’arrêt et la fourniture d’une liste d’expressions dans la fenêtre **automatique** .

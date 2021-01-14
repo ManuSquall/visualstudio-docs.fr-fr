@@ -1,8 +1,10 @@
 ---
 title: Débogage à distance | Microsoft Docs
+description: Déboguez une application Visual Studio qui a été déployée sur un autre ordinateur à l’aide du débogueur distant Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
+- SEO-VS-2020
 ms.date: 07/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8051b83e0022361e4cb1cb61602dfcf8991062e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e97fd8979235f8ea89b43c6466b3119debe5b3ca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92298677"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205669"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -93,7 +95,7 @@ Vous pouvez modifier certains aspects de la configuration du débogueur distant 
      > [!IMPORTANT]
      > Vous pouvez exécuter le débogueur distant sous un compte d’utilisateur différent du compte d’utilisateur que vous utilisez sur l’ordinateur Visual Studio, mais vous devez ajouter le compte d’utilisateur différent aux autorisations du débogueur distant.
 
-     Vous pouvez également démarrer le débogueur distant à partir de la ligne de commande avec le paramètre ** \<username> /allow** : **msvsmon \<username@computer> /allow **.
+     Vous pouvez également démarrer le débogueur distant à partir de la ligne de commande avec le paramètre **\<username> /allow** : **msvsmon \<username@computer> /allow**.
 
 - Si vous avez besoin de modifier le mode d’authentification ou le numéro de port, ou de spécifier une valeur de délai d’attente pour les outils de contrôle à distance : choisissez **outils > options**.
 
@@ -134,7 +136,7 @@ Pour le débogage dans ASP.NET et d’autres environnements de serveur, vous dev
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
-- [Configurer le Pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Affectations de port du débogueur distant](../debugger/remote-debugger-port-assignments.md)
 - [Débogage à distance ASP.NET Core sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -1,5 +1,7 @@
 ---
 title: Notions fondamentales du service de langage hérité | Microsoft Docs
+description: Découvrez les fonctionnalités essentielles disponibles dans les services de langage hérité qui vous permettent d’intégrer un langage de programmation dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707425"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205136"
 ---
 # <a name="legacy-language-service-essentials"></a>Éléments fondamentaux du service de langage hérité
 Vous devez fournir un service de langage pour intégrer un langage de programmation dans Visual Studio. Cette rubrique explique les fonctionnalités disponibles dans les services de langage hérités.
@@ -45,4 +47,4 @@ Vous devez fournir un service de langage pour intégrer un langage de programmat
 | Fonctionnalité | Description |
 |-----------------------| - |
 | Évaluateur d’expression | Prend en charge le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur en validant des points d’arrêt et en fournissant une liste d’expressions à afficher dans la fenêtre de débogage **automatique** .<br /><br /> Pour plus d’informations, consultez [prise en charge du service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Outils de navigation de symboles | Prend en charge l' **Explorateur d’objets**, les **Affichage de classes**, les **Explorateur d’appels**et les résultats de **recherche de symbole**. |
+| Outils de navigation de symboles | Prend en charge l' **Explorateur d’objets**, les **Affichage de classes**, les **Explorateur d’appels** et les résultats de **recherche de symbole**. |

@@ -1,5 +1,7 @@
 ---
 title: Liste des services disponibles | Microsoft Docs
+description: Affichez la liste des services disponibles pris en charge par Visual Studio et le kit de développement logiciel (SDK) Visual Studio, y compris les GUID de service pour obtenir une interface pour chaque service.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707343"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204642"
 ---
 # <a name="list-of-available-services"></a>Liste des services disponibles
 
@@ -26,7 +28,7 @@ Utilisez les GUID de service répertoriés ici ou obtenus à partir d’une autr
 
 ## <a name="the-services"></a>Les services
 
-| Service | Interface | Visual Studio | Visual Studio 2005 : | Description |
+| Service | Interface | Visual Studio | Visual Studio 2005 | Description |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Oui | Oui | Utilisé par les VSPackages pour obtenir une <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interface à partir d’un contrôle ActiveX pour faciliter les transferts de données asynchrones. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Non | Oui | Obtient l’objet DTE (Design Time Extensibility) utilisé pour l’automatisation.<br /><br /> ID C/C++ : SID_SDTE |
@@ -140,7 +142,7 @@ Utilisez les GUID de service répertoriés ici ou obtenus à partir d’une autr
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | Oui | Oui | Fournit l’accès à une liste d’étendues de texte dans une image de texte ou une mémoire tampon. Ce service est généralement implémenté sur un conteneur de documents et fait référence au document actif. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | Non | Oui | Permet à un VSPackage d’afficher une boîte de dialogue qui attend un thread différent (utilisé pour attendre des tâches en arrière-plan). |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | Non | Oui | Permet à un VSPackage de lancer des tâches en arrière-plan qui sont ensuite gérées par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Oui | Oui | Fournit l’accès à la **boîte à outils**de l’IDE. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Oui | Oui | Fournit l’accès à la **boîte à outils** de l’IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | Oui | Oui | Permet à un VSPackage d’obtenir des informations à partir d’éléments de **boîte à outils** . |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | Non | Oui | Permet à un VSPackage d’inscrire un fournisseur de données de boîte à outils sans impliquer le coût de performance du préchargement de l’ensemble de la **boîte à outils**. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | Non | Oui | Permet à un VSPackage de déterminer si la boîte de dialogue **options** est ouverte et d’actualiser la visibilité de toutes les pages d’options. |

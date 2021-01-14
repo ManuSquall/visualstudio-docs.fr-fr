@@ -1,5 +1,7 @@
 ---
 title: Service de langage hérité Features2 | Microsoft Docs
+description: Découvrez quelques-unes des fonctionnalités du service de langage hérité que vous pouvez fournir à l’aide des extensions Managed Extensibility Framework (MEF) dans le kit de développement logiciel (SDK) Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04e7df7fc5c7532d2db45bc2b643a249d1e566c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a6f9658608006c792f8cc295a9a8d2acc96a5c4
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237904"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204967"
 ---
 # <a name="legacy-language-service-features-2"></a>Fonctionnalités du service de langage hérité 2
 Les rubriques suivantes répertorient certaines des fonctionnalités du service de langage hérité que vous pouvez fournir.

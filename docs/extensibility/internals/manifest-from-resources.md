@@ -1,5 +1,7 @@
 ---
 title: Manifest from Resources | Microsoft Docs
+description: Découvrez comment utiliser l’outil Manifest from Resources pour ajouter des fichiers. png ou. Xaml à un fichier. imagemanifest pour une utilisation avec le service d’images Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536226"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204499"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 L’outil Manifest from Resources est une application console qui prend une liste de ressources d’image (fichiers. png ou. Xaml) et génère un fichier. imagemanifest qui permet d’utiliser ces images avec le service d’images Visual Studio. En outre, cet outil peut être utilisé pour ajouter des images à un. imagemanifest existant. Cet outil est utile pour ajouter la prise en charge de la haute résolution et de l’utilisation des images à une extension Visual Studio. Le fichier. imagemanifest généré doit être inclus dans et déployé dans le cadre d’une extension Visual Studio (. VSIX).
@@ -48,7 +50,7 @@ L’outil Manifest from Resources est une application console qui prend une list
 
 - ManifestFromResources/resources:D:\Images\Image1.png ;D : \Images\Image1.xaml/assembly : My. assembly. Name/guidName : MyImages/newGuids/newIds
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>Remarques
 
 - L’outil prend en charge uniquement les fichiers. png et. Xaml. Toutes les autres types d’images ou de fichiers seront ignorés. Un avertissement est généré pour tous les types non pris en charge rencontrés lors de l’analyse des ressources. Si aucune image prise en charge n’est trouvée lorsque l’outil a terminé l’analyse des ressources, une erreur est générée.
 

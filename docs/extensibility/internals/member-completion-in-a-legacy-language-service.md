@@ -1,5 +1,7 @@
 ---
 title: Saisie semi-automatique des membres dans un service de langage hérité | Microsoft Docs
+description: Découvrez comment fonctionne l’info-bulle de l’outil de saisie semi-automatique des membres IntelliSense dans un service de langage hérité, et comment il est pris en charge par Managed package Framework (MPF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fbf88dab2f1ffad0b4a6e5dc6b2ad516c28afca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707199"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205799"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de membre dans un service de langage hérité
 

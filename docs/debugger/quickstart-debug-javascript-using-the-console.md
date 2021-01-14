@@ -1,5 +1,7 @@
 ---
 title: Déboguer du code JavaScript à l’aide de la console | Microsoft Docs
+description: Utilisez la fenêtre de la console JavaScript de Visual Studio pour interagir avec et déboguer des applications plateforme Windows universelle (UWP) générées à l’aide de JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211074"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205006"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Déboguer du code JavaScript à l’aide de la console dans Visual Studio
 
@@ -42,7 +44,7 @@ La fenêtre de la console JavaScript permet les actions suivantes :
 - Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) pour obtenir la liste complète des commandes.
 
 > [!TIP]
-> Si la fenêtre de la console JavaScript est fermée, choisissez **Déboguer**la >  **Windows**  >  **console Windows JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
+> Si la fenêtre de la console JavaScript est fermée, choisissez **Déboguer** la >    >  **console Windows JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
 
 À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de l’Explorateur DOM et la définition de points d’arrêt, consultez [démarrage rapide : déboguer des applications HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
@@ -203,7 +205,7 @@ Lorsqu’un programme est en mode arrêt, vous pouvez utiliser la fenêtre de la
 
 2. Sélectionnez **ordinateur local** dans la liste déroulante en regard du bouton **Démarrer le débogage** de la barre d’outils **Déboguer** .
 
-3. Choisissez **Déboguer**  >  **Démarrer le débogage**ou appuyez sur F5.
+3. Choisissez **Déboguer**  >  **Démarrer le débogage** ou appuyez sur F5.
 
     L’application passe en mode arrêt lorsque l’exécution atteint la fonction `updateImages()` , et la ligne en cours du programme d’exécution est mise en surbrillance en jaune.
 

@@ -1,5 +1,7 @@
 ---
 title: Rendre les commandes disponibles | Microsoft Docs
+description: Découvrez comment contrôler la disponibilité des commandes ajoutées à l’IDE de Visual Studio dans les VSPackages, en utilisant le chargement différé, le contexte et la visibilité.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707336"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204536"
 ---
 # <a name="making-commands-available"></a>Rendre les commandes disponibles
 
@@ -105,7 +107,7 @@ Si aucun GUID de contexte de commande approprié n’est déjà défini, vous po
     > [!CAUTION]
     > Assurez-vous que votre VSPackage n’affecte pas l’état d’un GUID de contexte existant, car d’autres VSPackages peuvent en dépendre.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 L’exemple suivant d’une commande VSPackage illustre la visibilité dynamique d’une commande qui est gérée par des contextes de commande sans charger le VSPackage.
 

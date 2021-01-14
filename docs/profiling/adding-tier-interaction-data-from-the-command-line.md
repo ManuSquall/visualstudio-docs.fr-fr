@@ -1,5 +1,7 @@
 ---
 title: Ajout des données d’interaction de couche à partir de la ligne de commande | Microsoft Docs
+description: Pour les applications multicouches qui communiquent avec une ou plusieurs bases de données, utilisez le profilage d’interaction de couche pour les informations de durée d’exécution pour les appels synchrones.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5e3dc7fc3ebbb3d06e85f7322237ecb72b22b0e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779868"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205539"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Ajouter des données d’interaction de couche à partir de la ligne de commande
 
@@ -32,7 +34,7 @@ Pour collecter des données de profilage d’interaction de couche, vous pouvez 
 
 **Collecter des données TIP sur un ordinateur distant**
 
-Pour collecter les données d’interaction de couche sur un ordinateur distant, vous devez copier le fichier ** \_ vs_profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** du dossier _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio sur l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
+Pour collecter les données d’interaction de couche sur un ordinateur distant, vous devez copier le fichier **\_ vs_profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** du dossier _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio sur l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
 
 **Rapports TIP**
 

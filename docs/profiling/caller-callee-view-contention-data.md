@@ -1,6 +1,6 @@
 ---
 title: Vue Appelant/Appelé - Données de conflit | Microsoft Docs
-description: En savoir plus sur la façon dont la vue appelant/appelé affiche les informations de conflit pour une fonction sélectionnée et ses fonctions parentes et enfants dans Explorateur de performances.
+description: En savoir plus sur la façon dont la vue appelant/appelé affiche les informations de conflit pour une fonction sélectionnée, ainsi que ses fonctions parentes et enfants, dans Explorateur de performances.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150910"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204798"
 ---
 # <a name="callercallee-view----contention-data"></a>Vue Appelant/Appelé - Données de conflit
 La vue Appelant/Appelé affiche des données de conflit pour la fonction sélectionnée, ainsi que pour ses fonctions parentes et enfants. La vue Appelant/Appelé comprend trois grilles.

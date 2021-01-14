@@ -1,5 +1,7 @@
 ---
 title: Page Déboguer, Concepteur de projets
+description: Utilisez la page déboguer du concepteur de projets pour définir les propriétés de débogage dans un projet Visual Basic ou C#. Consultez cet article pour obtenir une description des paramètres.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418741"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205773"
 ---
 # <a name="debug-page-project-designer"></a>Page Déboguer, Concepteur de projets
 
 Utilisez la page **Déboguer** du **Concepteur de projets** afin de définir des propriétés pour le comportement de débogage dans un projet Visual Basic ou C#.
 
-Pour accéder à la page **Déboguer**, sélectionnez un nœud de projet dans **l’Explorateur de solutions**. Dans le menu **projet** , choisissez ** \<ProjectName> Propriétés**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Déboguer**.
+Pour accéder à la page **Déboguer**, sélectionnez un nœud de projet dans **l’Explorateur de solutions**. Dans le menu **projet** , choisissez **\<ProjectName> Propriétés**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Déboguer**.
 
 > [!NOTE]
 > Cette rubrique ne s’applique pas aux applications UWP. Consultez [Démarrer une session de débogage (VB, C#, C++ et XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) pour les applications UWP.
@@ -85,7 +87,7 @@ Cochez ou décochez cette case pour activer ou désactiver le débogage des proc
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation du débogueur](../../debugger/debugger-feature-tour.md)
-- [Paramètres de projet pour des configurations Debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Paramètres de projet pour une configuration Debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Paramètres de projet pour les configurations de débogage C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Paramètres de projet pour une configuration de débogage Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Sécuriser les applications ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)

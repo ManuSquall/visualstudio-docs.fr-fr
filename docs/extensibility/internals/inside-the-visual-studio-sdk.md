@@ -1,5 +1,7 @@
 ---
 title: Dans le kit de développement logiciel (SDK) Visual Studio | Microsoft Docs
+description: Découvrez les extensions du kit de développement logiciel (SDK) Visual Studio, y compris l’architecture, les composants, les services, les schémas et les utilitaires Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707575"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205331"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 
@@ -26,7 +28,7 @@ Cette section fournit des informations détaillées sur les extensions Visual St
 ## <a name="extensibility-architecture"></a>Architecture d’extensibilité
  L’illustration suivante montre l’architecture d’extensibilité de Visual Studio. Les VSPackages fournissent des fonctionnalités d’application, qui sont partagées dans l’environnement de développement intégré (IDE) en tant que services. L’IDE standard offre également un large éventail de services, tels que <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> , qui fournissent l’accès aux fonctionnalités de fenêtrage de l’IDE.
 
- ![Graphique architecture d’environnement](../../extensibility/internals/media/environment.gif "environnement") Vue généralisée de l’architecture Visual Studio
+ ![Graphique architecture d’environnement](../../extensibility/internals/media/environment.gif "Environnement") Vue généralisée de l’architecture Visual Studio
 
 ## <a name="vspackages"></a>VSPackages
  Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale centrale de Visual Studio. Pour plus d'informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
@@ -47,7 +49,7 @@ Cette section fournit des informations détaillées sur les extensions Visual St
  Pour plus d’informations, consultez [commandes, menus et barres d’outils](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menus et barres d’outils
- Les menus et les barres d’outils permettent aux utilisateurs d’appeler des commandes. Les menus sont des lignes ou des colonnes de commandes qui sont généralement affichées en tant qu’éléments de texte individuels en haut d’une fenêtre outil. Les sous-menus sont des menus secondaires qui s’affichent lorsqu’un utilisateur clique sur des commandes qui incluent une petite flèche. Les menus contextuels apparaissent quand un utilisateur clique avec le bouton droit sur certains éléments de l’interface utilisateur. Les noms de menu courants sont **fichier**, **Edition**, **affichage**et **fenêtre**. Pour plus d’informations, consultez [extension des menus et des commandes](../../extensibility/extending-menus-and-commands.md).
+ Les menus et les barres d’outils permettent aux utilisateurs d’appeler des commandes. Les menus sont des lignes ou des colonnes de commandes qui sont généralement affichées en tant qu’éléments de texte individuels en haut d’une fenêtre outil. Les sous-menus sont des menus secondaires qui s’affichent lorsqu’un utilisateur clique sur des commandes qui incluent une petite flèche. Les menus contextuels apparaissent quand un utilisateur clique avec le bouton droit sur certains éléments de l’interface utilisateur. Les noms de menu courants sont **fichier**, **Edition**, **affichage** et **fenêtre**. Pour plus d’informations, consultez [extension des menus et des commandes](../../extensibility/extending-menus-and-commands.md).
 
  Les barres d’outils sont des lignes ou des colonnes de boutons et d’autres contrôles, tels que les zones de liste modifiable, les zones de liste et les zones de texte. Les boutons de la barre d’outils ont généralement des images d’icône, telles qu’une icône de dossier pour une commande **ouvrir un fichier** ou une imprimante pour une commande **Imprimer** . Tous les éléments de la barre d’outils sont associés à des commandes. Lorsque vous cliquez sur un bouton de barre d’outils, la commande qui lui est associée s’exécute. Dans le cas d’un contrôle déroulant, chaque élément de la liste déroulante est associé à une commande différente. Certains contrôles de barre d’outils, tels qu’un contrôle Splitter, sont des hybrides. Un côté du contrôle est un bouton de barre d’outils et l’autre côté est une flèche vers le bas qui affiche plusieurs commandes lorsque l’utilisateur clique dessus.
 

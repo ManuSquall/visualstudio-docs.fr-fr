@@ -1,5 +1,7 @@
 ---
 title: Pseudo-variables | Microsoft Docs
+description: Passez en revue Pseudo-variables dans le débogueur Visual Studio. Les pseudo-variables sont des termes utilisés pour afficher certaines données dans une fenêtre de variables ou dans la boîte de dialogue Espion express.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75776083"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205526"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo-variables dans le débogueur Visual Studio
 Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou dans la boîte de dialogue **Espion express**. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Supposez que vous écrivez une application en code natif et que vous voulez afficher le nombre de handles alloués à votre application. Dans la fenêtre **Espion**, entrez la pseudo-variable suivante dans la colonne **Nom**, puis appuyez sur Entrée pour l’évaluer :
 
 `$handles`
@@ -43,7 +45,7 @@ Les pseudo-variables sont des termes utilisés pour afficher certaines informati
 |`$env`|Affiche le bloc environnement de l'explorateur de chaînes.|
 |`$cmdline`|Affiche la chaîne de ligne de commande qui a lancé le programme.|
 |`$pid`|Affiche l'ID de processus.|
-|`$` *registername*<br /><br /> or<br /><br /> `@` *registername*|Affiche le contenu du registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. Vous pouvez alors utiliser `$`*registername* ou `@`*registername*.|
+|`$` *registername*<br /><br /> ou<br /><br /> `@` *registername*|Affiche le contenu du registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. Vous pouvez alors utiliser `$`*registername* ou `@`*registername*.|
 |`$clk`|Affiche le temps en cycles d'horloge.|
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|
 |`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack` fonctionne uniquement dans les applications UWP. `$ exceptionstack` n’est pas pris en charge pour les exceptions C++ et SEH|
@@ -64,7 +66,7 @@ Les pseudo-variables sont des termes utilisés pour afficher certaines informati
 |`$exception`|Affiche des informations sur la dernière exception. Si aucune exception ne s'est produite, l'évaluation de `$exception` affiche un message d'erreur.|
 |`$delete` ou `$$delete`|Supprime une variable implicite créée dans la fenêtre **Exécution**. La syntaxe est `$delete,` *variable* ou `$delete,` *variable*`.`|
 |`$objectids` ou `$listobjectids`|Affiche tous les ID d'objet actifs en tant qu'enfants de l'expression spécifiée. La syntaxe est `$objectid,` *expression* ou `$listobjectids,` *expression*`.`|
-|`$` *N* `#`|Affiche l’objet dont l’ID d’objet est égal à *N*.|
+|`$`*N*`#`|Affiche l’objet dont l’ID d’objet est égal à *N*.|
 |`$dynamic`|Affiche le nœud spécial **Affichage dynamique** pour un objet qui implémente le `IDynamicMetaObjectProvider`. Interface. La syntaxe est `$dynamic,` *objet*. Cette fonctionnalité s’applique uniquement au code qui utilise .NET Framework version 4 ou ultérieure.|
 
 ## <a name="see-also"></a>Voir aussi

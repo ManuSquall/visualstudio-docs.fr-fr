@@ -1,5 +1,7 @@
 ---
 title: Interception des commandes du service de langage hérité | Microsoft Docs
+description: Découvrez comment utiliser les filtres de commande dans Visual Studio pour intercepter les commandes du service de langage hérité et ajouter un comportement spécifique à la langue.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707449"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205188"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Interception des commandes du service de langage hérité
 Avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , vous pouvez faire en sorte que le service de langage intercepte les commandes que l’affichage de texte gérerait autrement. Cela est utile pour le comportement spécifique à la langue que l’affichage de texte ne gère pas. Vous pouvez intercepter ces commandes en ajoutant un ou plusieurs filtres de commande à la vue de texte à partir de votre service de langage.

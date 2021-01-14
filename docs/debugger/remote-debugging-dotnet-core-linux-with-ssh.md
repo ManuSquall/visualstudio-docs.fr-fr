@@ -1,5 +1,7 @@
 ---
 title: Déboguer .NET Core sur Linux
+description: Déboguez .NET Core sur Linux à l’aide de Secure Shell (SSH) en vous attachant à un processus. Préparez votre application pour le débogage. Générez et déployez l’application. Attachez le débogueur.
+ms.custom: SEO-VS-2020
 ms.date: 02/26/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b77d68e7f8876f7e0d038166f4b2a6517bb3cb
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671504"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204889"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Déboguer .NET Core sur Linux à l’aide de SSH en vous attachant à un processus
 
@@ -40,11 +42,11 @@ Pour préparer votre application pour le débogage :
 
 - Envisagez d’utiliser une configuration de débogage lorsque vous générez l’application. Il est beaucoup plus difficile de déboguer le code compilé au détail (une configuration Release) que le code compilé par débogage. Si vous devez utiliser une configuration Release, désactivez d’abord Uniquement mon code. Pour désactiver ce paramètre, choisissez **Outils**  >  **options** de  >  **débogage**, puis désélectionnez **activer uniquement mon code**.
 
-- Assurez-vous que votre projet est configuré pour produire des fichiers [PDB portables](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (qui est le paramètre par défaut) et assurez-vous que les fichiers PDB se trouvent au même emplacement que la dll. Pour configurer cela dans Visual Studio, cliquez avec le bouton droit sur le projet, puis choisissez **Propriétés**  >  **générer** des informations de  >  **Advanced**  >  **débogage** avancées.
+- Assurez-vous que votre projet est configuré pour produire des fichiers [PDB portables](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (qui est le paramètre par défaut) et assurez-vous que les fichiers PDB se trouvent au même emplacement que la dll. Pour configurer cela dans Visual Studio, cliquez avec le bouton droit sur le projet, puis choisissez **Propriétés**  >  **générer** des informations de  >    >  **débogage** avancées.
 
 ## <a name="build-and-deploy-the-application"></a>Générer et déployer l’application
 
-Vous pouvez utiliser plusieurs méthodes pour déployer l’application avant le débogage. Par exemple, vous pouvez :
+Vous pouvez utiliser plusieurs méthodes pour déployer l’application avant le débogage. Vous pouvez par exemple :
 
 - Copiez les sources sur l’ordinateur cible et créez avec ```dotnet build``` sur l’ordinateur Linux.
 

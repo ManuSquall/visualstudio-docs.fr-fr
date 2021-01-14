@@ -1,5 +1,7 @@
 ---
 title: Vue fenêtres | Microsoft Docs
+description: La vue fenêtres affiche une arborescence de tous les contrôles et fenêtres. Utilisez-le comme point de départ pour obtenir des informations sur les fenêtres qui vous intéressent.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900855"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205370"
 ---
 # <a name="windows-view"></a>Vue Fenêtres
 Lorsque vous ouvrez Spy + + pour la première fois, la vue fenêtres affiche une arborescence de toutes les fenêtres et de tous les contrôles du système. Le handle de fenêtre et le nom de classe sont affichés. La fenêtre du Bureau active se trouve en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriées en fonction de la hiérarchie de la fenêtre standard. Les fenêtres sœurs apparaissent dans les listes expansible en retrait sous leurs parents.

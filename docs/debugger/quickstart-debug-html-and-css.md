@@ -1,5 +1,7 @@
 ---
 title: Déboguer du code HTML et CSS dans les applications UWP | Microsoft Docs
+description: Savez comment déboguer des applications HTML et CSS dans les applications plateforme Windows universelle (UWP) dans Visual Studio. Les fonctionnalités de débogage JavaScript sont prises en charge pour les applications UWP.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211087"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205474"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer du code HTML et CSS dans les applications UWP dans Visual Studio
 
@@ -49,7 +51,7 @@ Vous pouvez utiliser l’explorateur DOM pour effectuer les tâches suivantes :
   Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications UWP prennent également en charge les onglets **événements** et **modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).
 
 > [!TIP]
-> Si la fenêtre de l’Explorateur DOM est fermée, choisissez **Déboguer**l' > **Windows**  >  **Explorateur DOM** Windows pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
+> Si la fenêtre de l’Explorateur DOM est fermée, choisissez **Déboguer** l' >   >  **Explorateur DOM** Windows pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
 
 Dans la procédure qui suit, nous examinerons le processus de débogage interactif d’une application à l’aide de l’explorateur DOM. Nous créerons une application qui utilise un contrôle `FlipView` , puis nous la déboguerons. L’application contient plusieurs erreurs.
 
@@ -149,7 +151,7 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
     ![Sélectionner la liste cible de débogage](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Choisissez **Déboguer**  >  **Démarrer le débogage**ou appuyez sur F5 pour exécuter votre application en mode débogage.
+8. Choisissez **Déboguer**  >  **Démarrer le débogage** ou appuyez sur F5 pour exécuter votre application en mode débogage.
 
     L’application est exécutée, mais vous verrez un écran essentiellement vide, car le style contient quelques bogues. La première image `FlipView` apparaît dans un petit carré non loin du milieu de l’écran.
 
@@ -182,7 +184,7 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 14. Dans la fenêtre principale, double-cliquez sur `width: 100px;height: 100px;` , appuyez sur la touche **Suppr** , puis appuyez sur **entrée**. Une fois que vous avez appuyé sur entrée, les nouvelles valeurs sont immédiatement reflétées dans l’application, même si vous n’avez pas arrêté votre session de débogage.
 
     > [!IMPORTANT]
-    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** .
+    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé** et **Disposition** .
 
 15. Basculez vers l’application en la sélectionnant ou en utilisant les touches Alt + Tab.
 

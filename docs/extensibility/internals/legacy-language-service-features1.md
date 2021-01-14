@@ -1,5 +1,7 @@
 ---
 title: Service de langage hérité Features1 | Microsoft Docs
+description: En savoir plus sur les fonctionnalités de Visual Studio prises en charge dans un service de langage Managed package Framework (MPF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f2a4010529d3d9727ceb76d6a34f2cbc41b959
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238478"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205058"
 ---
 # <a name="legacy-language-service-features-1"></a>Fonctionnalités du service de langage hérité 1
 Un service de langage MPF (Managed package Framework) peut prendre en charge une ou plusieurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités, telles que la mise en surbrillance syntaxique, IntelliSense et la validation de point d’arrêt. Chaque fonctionnalité peut être implémentée indépendamment des autres, mais tous requièrent un analyseur et un scanneur, à l’exception de la mise en surbrillance syntaxique, qui requiert uniquement un scanneur.

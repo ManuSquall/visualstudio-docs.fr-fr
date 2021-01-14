@@ -1,5 +1,7 @@
 ---
 title: Onglet fenêtres de la boîte de dialogue Options des messages | Microsoft Docs
+description: Utilisez l’onglet Windows des options de message pour spécifier les fenêtres dont les messages sont affichés. Consultez cet article pour obtenir une description des paramètres.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 320a31afcbe4d99518ce92002e8e2733fded9164
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929171"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205409"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Onglet Fenêtres de la boîte de dialogue Options des messages
 Utilisez l’onglet **Windows** pour définir l’étendue des messages listés dans la [vue messages](../debugger/messages-view.md). Pour afficher la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **journaux des messages** dans le menu **Espion** .

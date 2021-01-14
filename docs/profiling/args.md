@@ -1,5 +1,7 @@
 ---
 title: Args | Microsoft Docs
+description: Utilisez l’option ARGS de VSPerfCmd.exe pour passer une liste d’arguments à l’application cible de la sous-commande Launch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff16d67d0c7168524ff145183f49a662e1f660f0
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779816"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205708"
 ---
 # <a name="args"></a>Args
 L’option **Args** de VSPerfCmd.exe spécifie la liste des arguments qui sont passés à l’application cible de la sous-commande **Launch**.
@@ -33,7 +35,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
 ## <a name="required-options"></a>Options obligatoires
  **Lancer :** `AppName` Démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple suivant utilise l’option **Args** pour passer des arguments à TestApp.exe.
 
 ```cmd

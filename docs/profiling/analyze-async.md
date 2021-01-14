@@ -1,5 +1,7 @@
 ---
 title: Analyser les performances du code .NET Asynchronous | Microsoft Docs
+description: Utilisez l’outil .NET Async pour analyser les performances du code asynchrone. Il existe un minutage pour chaque tâche indiquée. Pour afficher le code, utilisez atteindre le fichier source.
+ms.custom: SEO-VS-2020
 ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 86575cd71c41ac8ac874e9b62f8273ee46e02c57
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037541"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205487"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Analyser les performances du code asynchrone .NET
 
