@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329976"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240307"
 ---
 # <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
 
@@ -23,7 +23,7 @@ L’Explorateur de tests Visual Studio peut exécuter des tests depuis n’impor
 Une solution Visual Studio peut contenir des projets de test unitaire qui utilisent des frameworks différents et qui sont destinés à des langages différents.
 
 ::: moniker range=">=vs-2019"
-Pour .NET, [MSTest, nunit et xUnit](getting-started-with-unit-testing.md) sont les frameworks de test fournis par Visual Studio, qui sont installés par défaut.
+Pour .NET, [MSTest, nunit et xUnit](getting-started-with-unit-testing.md) sont les frameworks de test fournis par Visual Studio, qui sont installés par défaut. Pour C++, un ensemble différent d’infrastructures de test est fourni, par exemple CTest.
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) est le framework de tests fourni par Visual Studio et installé par défaut.
