@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238621"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533443"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 
-Dans MSBuild, un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Tous les types de projets dans Visual Studio ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd* .
+Dans MSBuild, un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Tous les types de projets dans Visual Studio ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd*.
 
 ## <a name="common-items"></a>Éléments communs
 
@@ -43,7 +43,7 @@ Représente une référence (managée) d'assembly dans le projet.
 |FusionName|Chaîne facultative. Spécifie le nom de fusion simple ou fort de l'élément.<br /><br /> La présence de cet attribut peut faire gagner du temps, car il vous évite d'ouvrir le fichier d'assembly pour obtenir le nom de fusion.|
 |SpecificVersion|Valeur booléenne facultative. Indique si seule la version figurant dans le nom de fusion doit être référencée.|
 |Alias|Chaîne facultative. Alias éventuels de la référence.|
-|Privées|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
+|Privé|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -84,7 +84,7 @@ Représente une référence à un autre projet. `ProjectReference` les élément
 |---------------|-----------------|
 |Nom|Chaîne facultative. Nom complet de la référence.|
 |GlobalPropertiesToRemove|`string[]` optionnel. Noms des propriétés à supprimer lors de la génération du projet référencé, par exemple `RuntimeIdentifier;PackOnBuild` . Vide par défaut.|
-|Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|
+|Project|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|
 |OutputItemType|Chaîne facultative. Type d’élément dans lequel émettre des sorties cibles. La valeur par défaut est vide. Si les métadonnées de référence ont la valeur « true » (valeur par défaut), les sorties cibles deviennent des références pour le compilateur.|
 |ReferenceOutputAssembly|Valeur booléenne facultative. Si sa valeur est `false`, n’inclut pas la sortie du projet référencé comme [Référence](#reference) de ce projet, mais fait quand même en sorte que l’autre projet se génère avant celui-ci. La valeur par défaut est `true`.|
 |SetConfiguration|Chaîne facultative. Définit la propriété globale `Configuration` pour le projet référencé, par exemple `Configuration=Release` .|
@@ -120,7 +120,7 @@ Représente les ressources à incorporer dans l'assembly généré.
 | CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 | LogicalName | Chaîne obligatoire. Nom logique de la ressource incorporée. |
 
-### <a name="content"></a>Contenu
+### <a name="content"></a>Content
 
 Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuvent être incorporés ou publiés en même temps.
 
@@ -136,7 +136,7 @@ Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuv
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **Explorateur de solutions** dans Visual Studio. |
 | CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 
-### <a name="none"></a>Aucun
+### <a name="none"></a>None
 
 Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
 
@@ -157,7 +157,7 @@ Représente les attributs d’assembly à générer comme `[AssemblyMetadata(key
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | Inclure | Devient le premier paramètre (la clé) dans le `AssemblyMetadataAttribute` constructeur d’attribut. |
-| Valeur | Chaîne obligatoire. Devient le deuxième paramètre (la valeur) dans le `AssemblyMetadataAttribute` constructeur d’attribut. |
+| Value | Chaîne obligatoire. Devient le deuxième paramètre (la valeur) dans le `AssemblyMetadataAttribute` constructeur d’attribut. |
 
 > [!NOTE]
 > Cet élément s’applique aux projets qui utilisent le kit de développement logiciel (SDK) pour .NET 5 (et .NET Core) et versions ultérieures.
@@ -189,5 +189,4 @@ Représente les assemblys dont les espaces de noms doivent être importés par l
 ## <a name="see-also"></a>Voir aussi
 
 - [Propriétés communes des projets MSBuild](../msbuild/common-msbuild-project-properties.md)
-- [Propriétés MSBuild pour les projets kit SDK .NET Core](/dotnet/core/project-sdk/msbuild-props)
 - [Métadonnées communes d’éléments MSBuild](common-msbuild-item-metadata.md)

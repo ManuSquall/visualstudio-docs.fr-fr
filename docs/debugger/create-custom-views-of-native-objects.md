@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248058"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533964"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Créer des vues personnalisées d’objets C++ dans le débogueur à l’aide de l’infrastructure Natvis
 
@@ -74,11 +74,11 @@ Vous pouvez ajouter un fichier *. natvis* à n’importe quel projet C++.
 
 1. Sélectionnez le nœud de projet C++ dans **Explorateur de solutions**, puis sélectionnez **projet**  >  **Ajouter un nouvel élément**, ou cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter**  >  **un nouvel élément**.
 
-1. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Visual C++**  >  **Utility**  >  **fichier de visualisation du débogueur de l’utilitaire (. natvis)**.
+1. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Visual C++**  >    >  **fichier de visualisation du débogueur de l’utilitaire (. natvis)**.
 
 1. Nommez le fichier, puis sélectionnez **Ajouter**.
 
-   Le nouveau fichier est ajouté à **Explorateur de solutions**et s’ouvre dans le volet de document de Visual Studio.
+   Le nouveau fichier est ajouté à **Explorateur de solutions** et s’ouvre dans le volet de document de Visual Studio.
 
 Le débogueur Visual Studio charge automatiquement les fichiers *. natvis* dans les projets C++, et les intègre par défaut également dans le fichier *. pdb* lorsque le projet est généré. Si vous déboguez l’application générée, le débogueur charge le fichier *. natvis* à partir du fichier *. pdb* , même si vous n’avez pas ouvert le projet. Si vous ne voulez pas que le fichier *. natvis* soit inclus dans le fichier. *PDB*, vous pouvez l’exclure du fichier *. pdb* généré.
 
@@ -167,6 +167,12 @@ Les visualisations Natvis utilisent des expressions C++ pour spécifier les él�
 
 - Pour contrôler l’affichage d’une expression, vous pouvez utiliser l’un des spécificateurs de format décrits dans [spécificateurs de format en C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Les spécificateurs de format sont ignorés quand l’entrée est utilisée en interne par Natvis, comme l' `Size` expression dans une [expansion ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
 
+>[!NOTE]
+> Étant donné que le document natvis est au format XML, vos expressions ne peuvent pas utiliser directement les opérateurs esperluette, supérieur à, inférieur à ou Shift. Vous devez placer ces caractères dans une séquence d’échappement à la fois dans le corps de l’élément et dans les instructions de condition. Exemple :<br>
+> \<Item Name="HiByte"\>poids (_flags \& gt ; \& TB 24), x\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>None\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>Certains\</Item\>
+
 ## <a name="natvis-views"></a>Vues Natvis
 
 Vous pouvez définir différentes vues Natvis pour afficher les types de différentes façons. Par exemple, voici une visualisation de `std::vector` qui définit une vue simplifiée nommée `simple` . Le `DisplayString` et les `ArrayItems` éléments s’affichent dans la vue par défaut et la `simple` vue, tandis que les `[size]` `[capacity]` éléments et ne s’affichent pas dans la `simple` vue.
@@ -195,7 +201,7 @@ Quand le débogueur rencontre des erreurs dans une entrée de visualisation, il 
 
 **Pour activer les diagnostics Natvis :**
 
-- Sous **Tools**  >  **options** des outils (ou options de **débogage**  >  **Options**) > fenêtre sortie de **débogage**  >  **Output Window**, affectez aux **messages de diagnostic Natvis (C++ uniquement)** la valeur **erreur**, **Avertissement**ou **Commentaires**, puis sélectionnez **OK**.
+- Sous   >  **options** des outils (ou options de **débogage**  >  ) > fenêtre sortie de **débogage**  >  , affectez aux **messages de diagnostic Natvis (C++ uniquement)** la valeur **erreur**, **Avertissement** ou **Commentaires**, puis sélectionnez **OK**.
 
 Les erreurs s’affichent dans la fenêtre **sortie** .
 
@@ -400,7 +406,7 @@ Pendant le débogage, vous pouvez sélectionner l’icône de loupe en regard de
 
  ![Données CStringT avec visualiseur StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "Données CStringT avec visualiseur StringView")
 
-L’expression `{m_pszData,su}` comprend un spécificateur de format C++ **su**pour afficher la valeur sous la forme d’une chaîne Unicode. Pour plus d’informations, consultez [spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md).
+L’expression `{m_pszData,su}` comprend un spécificateur de format C++ **su** pour afficher la valeur sous la forme d’une chaîne Unicode. Pour plus d’informations, consultez [spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md).
 
 ### <a name="expand-element"></a><a name="BKMK_Expand"></a> Développer l’élément
 
@@ -683,7 +689,7 @@ Voici un exemple d'élément UIVisualizer :
 
 - Une `ServiceId`  -  `Id` paire d’attributs identifie un `UIVisualizer` . `ServiceId`Est le GUID du service exposé par le package du visualiseur. `Id` identificateur unique qui différencie les visualiseurs, si un service en fournit plusieurs. Dans l’exemple précédent, le même service de visualiseur fournit deux visualiseurs.
 
-- L' `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe dans le débogueur. Par exemple :
+- L' `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe dans le débogueur. Exemple :
 
   ![Menu contextuel du menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu contextuel du menu UIVisualizer")
 
@@ -704,7 +710,7 @@ Il y a beaucoup plus de travail pour écrire un visualiseur personnalisé qu’u
 
  Vous pouvez utiliser les `Condition` `IncludeView` attributs, et `ExcludeView` sur les `CustomVisualizer` éléments.
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 Les personnalisations Natvis fonctionnent avec les classes et les structs, mais pas les typedefs.
 

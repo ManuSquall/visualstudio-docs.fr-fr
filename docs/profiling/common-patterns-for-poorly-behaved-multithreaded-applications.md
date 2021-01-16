@@ -1,6 +1,6 @@
 ---
 title: Modèles courants pour les applications multithread à comportement médiocre
-description: Découvrez les modèles courants pour les applications multithread à comportement médiocre qui sont incluses dans l’outil visualiseur concurrentiel Visual Studio.
+description: Le visualiseur concurrentiel fournit des graphiques pour les applications multithreads, ainsi qu’une galerie de modèles communs dont le comportement est médiocre.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815787"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533548"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 

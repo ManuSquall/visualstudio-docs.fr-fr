@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 958f33a39126f8f48cf29bad1c25c7d962513ed0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049108"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533860"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Version cible de .NET Framework et plateforme cible MSBuild
 
-Un projet peut être généré pour s’exécuter sur un *framework cible* , qui est une version particulière du .NET Framework, et sur une *plateforme cible* , qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2,0 sur une plateforme 32 bits qui est compatible avec la famille de processeurs 80x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible* .
+Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2,0 sur une plateforme 32 bits qui est compatible avec la famille de processeurs 80x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.
 
 > [!IMPORTANT]
 > Cet article présente l’ancienne façon de spécifier un framework cible. Les projets de style SDK permettent l’utilisation de différents frameworks cibles, comme .NET Standard. Pour plus d’informations, consultez [Frameworks cibles](/dotnet/standard/frameworks).
@@ -78,7 +78,7 @@ La version cible du .NET Framework est spécifiée dans la propriété `TargetFr
 
 - `x86` désigne un système d'exploitation Windows 32 bits qui s'exécute sur un processeur Intel 80x86 ou son équivalent.
 
-- `x64` désigne un système d’exploitation Windows 64 bits qui s’exécute sur un processeur Intel x64 ou son équivalent.
+- `x64` désigne un système d’exploitation Windows 64 bits qui s’exécute sur un processeur Intel x64 ou son équivalent.
 
 - `Xbox` désigne la plateforme Microsoft Xbox 360.
 
@@ -91,7 +91,7 @@ Une *plateforme cible* est la plateforme particulière sur laquelle votre projet
 
 ```
 
-Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exemple, la configuration `x86` `Debug` n’inclut pas la plupart des optimisations du code. La configuration cible est spécifiée dans la propriété de build `Configuration` d'un fichier projet. Vous pouvez changer la configuration cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations** .
+Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exemple, la configuration `x86` `Debug` n’inclut pas la plupart des optimisations du code. La configuration cible est spécifiée dans la propriété de build `Configuration` d'un fichier projet. Vous pouvez changer la configuration cible en utilisant les pages de propriétés du projet ou le **Gestionnaire de configurations**.
 
 ```xml
 <PropertyGroup>
@@ -103,4 +103,4 @@ Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exe
 
 ## <a name="see-also"></a>Voir aussi
 
-- [MULTICIBLAGE](../msbuild/msbuild-multitargeting-overview.md)
+- [Multi-ciblage](../msbuild/msbuild-multitargeting-overview.md)

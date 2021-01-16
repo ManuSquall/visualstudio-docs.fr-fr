@@ -1,5 +1,7 @@
 ---
 title: Comparaison des fichiers de données de performances | Microsoft Docs
+description: Utilisez Outils de profilage pour comparer deux fichiers de rapport (. vsp ou. vsps). La comparaison présente les différences, les régressions de performances et les améliorations.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777853"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533496"
 ---
 # <a name="compare-performance-data-files"></a>Comparer des fichiers de données de performances
 
-Outils de profilage fonctionnalité de comparaison de fichiers de données vous permet de sélectionner deux fichiers de rapport (.* vsp* /. *vsps*) fichiers et générer un rapport qui affiche les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.
+Outils de profilage fonctionnalité de comparaison de fichiers de données vous permet de sélectionner deux fichiers de rapport (.*vsp* ou. *vsps*) fichiers et générer un rapport qui affiche les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.
 
 Dans un rapport de comparaison de fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], les résultats d’une analyse d’un fichier de données de profilage sont comparés aux résultats d’une analyse de base de référence d’un autre fichier de données. Les deux fichiers de données doivent avoir été générés à l’aide de la même méthode de profilage. Le rapport des comparaisons analysées est enregistré sous la forme d’un. fichier *vsps* .
 

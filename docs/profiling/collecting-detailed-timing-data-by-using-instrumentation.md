@@ -1,5 +1,6 @@
 ---
 title: Collecter les données temporelles détaillées à l’aide de l’instrumentation
+description: Utilisez la méthode d’instrumentation Outils de profilage pour obtenir des informations de temporisation détaillées sur une section de votre code, et pour comprendre l’impact des opérations d’e/s.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5082066de22bee3954b297f30eebb7d89ec607
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 17c569a9f5a50b769af0881d47fe810afe18058e
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810768"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533847"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Collecter les données temporelles détaillées à l’aide de l’instrumentation
 La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] injecte le code de profilage dans une copie d’un module. Le code enregistre chaque entrée, sortie et appel des fonctions dans le module pendant une exécution du profilage. La méthode d’instrumentation est utile pour rassembler des informations de temporisation détaillées sur une section de votre code et comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application.
@@ -36,7 +37,7 @@ La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../cod
 
 - Dans **Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.
 
-  Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue des**pages de propriétés** de la _session de performance_lorsque vous profilez à l’aide de la méthode d’instrumentation.
+  Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue des **pages de propriétés** de la _session de performance_ lorsque vous profilez à l’aide de la méthode d’instrumentation.
 
 |Tâche|Contenu associé|
 |----------|---------------------|
