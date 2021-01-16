@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: Écrire une fonction permettant d’obtenir un rapport sur les erreurs d’exécution
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: "Utiliser des vérifications à l’exécution sans la bibliothèque Runtime\_C"
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: Spécifier les fichiers de symboles (.pdb) et sources dans le débogueur
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Déboguer le code utilisateur
