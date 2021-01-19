@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6092b02f5f8f94b3c87b68afe344fffba96c1a7d
+ms.sourcegitcommit: 987ed5f5adf85771d77c0efafc36d939fb9a356f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524084"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571984"
 ---
 # <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
@@ -92,7 +92,7 @@ Au fur et à mesure de votre travail, Visual Studio effectue le suivi des modifi
 
 Lorsque vous êtes prêt à modifier les modifications, cliquez sur le **+** bouton (plus) de chaque fichier que vous souhaitez mettre en scène, ou cliquez avec le bouton droit sur un fichier, puis sélectionnez **étape**. Vous pouvez également mettre en place tous vos fichiers modifiés d’un seul clic en cliquant sur le bouton « stage tout » **+** (plus) en haut de la section **modifications** .
 
-Lorsque vous mettez en place une modification, Visual Studio crée une section **modifications intermédiaires** . Seules les modifications apportées à la section **modifications intermédiaires** sont ajoutées à la validation suivante, ce que vous pouvez faire en sélectionnant **valider les étapes intermédiaires**. Les modifications peuvent également être désactivées en cliquant sur le bouton **–** (moins). La commande équivalente pour cette action est `git commit -m "Your commit message"` .
+Lorsque vous mettez en place une modification, Visual Studio crée une section **modifications intermédiaires** . Seules les modifications apportées à la section **modifications intermédiaires** sont ajoutées à la validation suivante, ce que vous pouvez faire en sélectionnant **valider les étapes intermédiaires**. La commande équivalente pour cette action est `git commit -m "Your commit message"` . Les modifications peuvent également être désactivées en cliquant sur le bouton **–** (moins). La commande équivalente pour cette action consiste `git reset <file_path>` à annuler l’étape d’un seul fichier ou `git reset <directory_path>` à désorganiser tous les fichiers d’un répertoire.
 
 Vous pouvez également choisir de ne pas déployer vos fichiers modifiés en ignorant la zone de transit. Dans ce cas, Visual Studio vous permet de valider vos modifications directement sans avoir à les déployer. Entrez simplement votre message de validation, puis sélectionnez **valider tout**. La commande équivalente pour cette action est `git commit -a` .
 
