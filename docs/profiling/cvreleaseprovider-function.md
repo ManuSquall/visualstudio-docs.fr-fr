@@ -1,5 +1,7 @@
 ---
 title: CvReleaseProvider, fonction | Microsoft Docs
+description: Consultez les informations de référence pour la fonction SDK du visualiseur concurrentiel Cvreleaseprovider, (bibliothèque C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347d3e2345defb13a67e0e0d730e010be618a21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5175f7f649dad3feed9f93a6e34ae5986ecda11b
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332180"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686413"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider, fonction
 Libère le fournisseur de marqueurs. La libération du fournisseur de marqueurs n’affecte pas les séries de marqueurs précédemment créées par ce fournisseur. Les séries de marqueurs doivent être libérées séparément par un appel CvReleaseMarkerSeries. Si la libération du fournisseur échoue, une fuite de mémoire se produit.
@@ -36,7 +38,7 @@ HRESULT CvReleaseProvider(
 ## <a name="return-value"></a>Valeur renvoyée
  S_OK lorsque le fournisseur est correctement libéré, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi

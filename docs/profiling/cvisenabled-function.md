@@ -1,5 +1,7 @@
 ---
 title: CvIsEnabled, fonction | Microsoft Docs
+description: Consultez les informations de référence pour la fonction SDK du visualiseur concurrentiel Cvisenabled, (bibliothèque C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f1bb96480fe054c729b11a3fabd311407fa858
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330058"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686478"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled, fonction
 Détermine si une session a activé le fournisseur ETW spécifié.

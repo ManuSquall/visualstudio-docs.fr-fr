@@ -1,5 +1,7 @@
 ---
 title: Événements de tas ETW natifs personnalisés | Microsoft Docs
+description: Découvrez comment utiliser un tas personnalisé pour réduire la surcharge d’allocation, mais également fournir des informations d’allocation au profileur de mémoire pour l’analyse de l’allocation.
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62552969"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686322"
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
@@ -49,7 +51,7 @@ Un instantané effectué à partir de l’outil [Utilisation de la mémoire](../
 
 ![Allocation des tas Windows](media/heap-example-windows-heap.png)
 
-En procédant aux étapes suivantes, nous pouvons utiliser ce même outil pour effectuer le suivi de l’utilisation de la mémoire dans notre tas personnalisé.
+En effectuant les étapes suivantes, nous pouvons utiliser ce même outil pour suivre l’utilisation de la mémoire dans notre tas personnalisé.
 
 ## <a name="how-to-use"></a>Procédure d'utilisation
 
@@ -90,7 +92,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   ou
+   or
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
