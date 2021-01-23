@@ -1,5 +1,7 @@
 ---
 title: Visualiseur concurrentiel | Microsoft Docs
+description: Utilisez le visualiseur concurrentiel pour afficher des graphiques qui indiquent la durée de thread dans votre application multithread, ce qui vous permet de résoudre les problèmes de performances.
+ms.custom: SEO-VS-2020
 ms.date: 07/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5e6f36568568a59980316f3070f902027898e39e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037339"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720954"
 ---
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 

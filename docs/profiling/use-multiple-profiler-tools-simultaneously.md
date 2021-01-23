@@ -1,5 +1,6 @@
 ---
 title: Utilisation simultanée de plusieurs outils de profileur | Microsoft Docs
+description: Découvrez comment le profileur de performances a été conçu avec l’idée que plusieurs outils peuvent être utilisés dans la même session pour aider à comprendre les problèmes de performances.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332039"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721175"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>Utilisation simultanée de plusieurs outils de profileur
 

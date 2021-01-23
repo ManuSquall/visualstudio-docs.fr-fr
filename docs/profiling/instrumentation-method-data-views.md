@@ -1,5 +1,6 @@
 ---
 title: Vues de données de la méthode d’instrumentation | Microsoft Docs
+description: En savoir plus sur les informations de référence pour les vues et les rapports des fichiers de données du profileur générés à l’aide de la méthode d’instrumentation.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774161"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721539"
 ---
 # <a name="instrumentation-method-data-views"></a>Vues de données de la méthode d'instrumentation
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’instrumentation.
@@ -43,14 +44,14 @@ Cette section contient des informations de référence pour les vues et rapports
 
  Répertorie les données de profilage par fonction.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Vue Informations relatives à la fonction](../profiling/function-details-view.md)
 
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.
 
 - [Vue Processus](../profiling/process-view.md)
 
- Affiche le début, la fin et la durée de vie des tous les processus qui ont été profilés.
+ Répertorie le début, la fin et la durée de vie du processus pour tous les processus qui ont été profilés.
 
 ## <a name="related-sections"></a>Sections connexes
 - [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)

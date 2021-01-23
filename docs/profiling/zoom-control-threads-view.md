@@ -1,5 +1,6 @@
 ---
 title: Contrôle Zoom (vue Threads) | Microsoft Docs
+description: Découvrez que le contrôle de zoom est un curseur qui vous permet d’effectuer un zoom avant et arrière sur la chronologie afin que vous puissiez vous concentrer sur des zones d’intérêt particulier.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00cf79b23de47c1ac808b9287f387a16b51e5c3e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62960158"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719121"
 ---
 # <a name="zoom-control-threads-view"></a>Contrôle Zoom (vue Threads)
 Le contrôle de zoom est un curseur qui vous permet d’effectuer un zoom avant et arrière sur la chronologie afin que vous puissiez vous concentrer sur les zones dignes d’intérêt. Étant donné que ce contrôle effectue un zoom avant sur le centre de l’affichage de la chronologie, centrez la zone digne d’intérêt avant d’effectuer un zoom avant.

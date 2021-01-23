@@ -1,5 +1,6 @@
 ---
 title: Pointeurs d’instructions (IP), vue - Données de conflit | Microsoft Docs
+description: Découvrez comment la vue IP des données de conflit répertorie les données des instructions d’assembly dont l’exécution a été bloquée dans l’exécution du profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3877afb4beb48259d737112d61a36edc7a4fd4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774310"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721591"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Pointeurs d’instructions (IP), vue - données de conflit
 La vue IP des données de conflit répertorie les données des instructions d’assembly dont l’exécution a été bloquée dans le cadre de l’exécution du profilage.

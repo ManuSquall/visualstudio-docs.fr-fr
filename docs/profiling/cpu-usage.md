@@ -1,5 +1,7 @@
 ---
 title: Analyser l’utilisation de l’UC dans le profileur de performances
+description: En savoir plus sur l’outil performance de l’utilisation de l’UC, qui indique le temps processeur et le pourcentage d’exécution du code dans les applications C++, C#, Visual Basic et JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007100"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719355"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analyser l’utilisation de l’UC sans débogage dans le profileur de performances
 
@@ -34,7 +36,7 @@ En règle générale, c’est l’ordinateur local qui réplique le mieux l’ex
 
     ![Sélectionner la version et l'ordinateur local](../profiling/media/cpuuse_selectreleaselocalmachine.png "Sélectionner la version et l'ordinateur local")
 
-1. Sélectionnez **Déboguer**le  >  **profileur de performances**.
+1. Sélectionnez **Déboguer** le  >  **profileur de performances**.
 
 1. Sous **Outils disponibles**, sélectionnez **Utilisation de l’UC**, puis **Démarrer**.
 
@@ -58,7 +60,7 @@ Le rapport de diagnostic est trié par **Total UC**, du plus élevé au plus bas
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Colonnes de données d’utilisation de l’UC
 
-|Nom|Description|
+|Name|Description|
 |-|-|
 |**Total UC [unité, %]**|![Équation de données total (%)](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction, et fonctions appelées par la fonction, durant la plage de temps sélectionnée. Cette information est différente du graphe chronologique **Utilisation de l’UC**, qui compare l’activité totale de l’UC durant une plage de temps à la quantité totale d’UC disponible.|
 |**Temps UC exclusif [unité, %]**|![Équation auto (%)](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction durant la plage de temps sélectionnée, à l’exclusion des fonctions appelées par la fonction.|

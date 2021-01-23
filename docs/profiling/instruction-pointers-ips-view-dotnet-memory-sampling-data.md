@@ -1,5 +1,6 @@
 ---
 title: Vue pointeurs d’instructions (IP)-données d’échantillonnage de la mémoire .NET
+description: La vue IP pour les données de profilage d’allocation de mémoire .NET qui ont été collectées à l’aide de la méthode d’échantillonnage répertorie les instructions d’assembly qui ont alloué de la mémoire.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6f02c2cea714b6c9688efff217ed546490f61764
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d89ede5d7b58bf2605413d8e0621d81983549f34
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809948"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721578"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Pointeurs d’instruction, vue - données d’échantillonnage de la mémoire .NET
 La vue Pointeurs d’instruction pour les données de profilage de l’allocation de mémoire de .NET qui ont été collectées avec la méthode d’échantillonnage répertorie les instructions d’assembly qui ont alloué de la mémoire lors de l’exécution du profilage. Les colonnes de la vue indiquent également la taille et le nombre d’allocations.

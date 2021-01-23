@@ -1,5 +1,6 @@
 ---
 title: Pointeurs d’instruction (IP), vue - Données d’échantillonnage | Microsoft Docs
+description: Découvrez comment la vue IP des données d’échantillonnage répertorie les données de performances pour les instructions d’assembly qui s’exécutaient directement lorsque les échantillons ont été collectés.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f08821516ca25ed4e1746e13e506b9c0094b0227
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774254"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721552"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Pointeurs d’instruction (IP), vue - données d’échantillonnage
 La vue Pointeurs d’instruction des données d’échantillonnage répertorie les données de performance pour les instructions d’assembly qui s’exécutaient directement lors de la collecte des échantillons dans le cadre de l’exécution du profilage.

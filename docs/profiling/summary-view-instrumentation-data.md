@@ -1,5 +1,6 @@
 ---
 title: Vue Résumé - Données d’instrumentation | Microsoft Docs
+description: Découvrez comment le mode Résumé affiche des informations sur les fonctions les plus gourmandes en performances et une description des liens de notification et des listes de rapports.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a9431f6f7a2adfee06f4fa007eafc109d3c32d0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778217"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722657"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vue Résumé - Données d’instrumentation
 La vue Résumé affiche des informations sur les fonctions dont le coût est le plus élevé quant aux performances dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [vue Résumé](../profiling/summary-view.md).
@@ -31,7 +32,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la fonction.|
+|**Nom**|Nom de la fonction.|
 |**% de temps inclusif écoulé**|Pourcentage du temps total dans les données de profilage que la fonction a passé à exécuter du code dans son corps de fonction et dans les fonctions qu’elle a appelées.|
 |**% de temps exclusif écoulé**|Pourcentage du temps total dans les données de profilage que la fonction a passé à exécuter du code dans son corps de fonction. Le temps passé dans les fonctions appelées par la fonction n’est pas inclus.|
 
@@ -42,7 +43,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la fonction.|
+|**Nom**|Nom de la fonction.|
 |**% de durée exclusive**|Pourcentage du temps total dans les données de profilage que la fonction a passé à exécuter du code dans son corps de fonction. Le temps passé dans les fonctions appelées par la fonction n’est pas inclus.|
 
 ## <a name="see-also"></a>Voir aussi

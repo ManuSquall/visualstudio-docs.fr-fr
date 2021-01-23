@@ -1,5 +1,6 @@
 ---
 title: Vue Threads dans le visualiseur concurrentiel | Microsoft Docs
+description: Découvrez que dans la vue threads, vous pouvez identifier les threads qui exécutent du code pendant un segment d’exécution.
 ms.date: 11/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 619e76b3db67314119782ebc3010465ac7fa622f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62973750"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722722"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Vue Threads dans le visualiseur concurrentiel
 
@@ -47,7 +48,7 @@ Vous pouvez utiliser la vue **Threads** pour :
 
 ## <a name="use-threads-view"></a>Utiliser la vue Threads
 
-Pour démarrer le visualiseur concurrentiel, sélectionnez **analyser**le  >  **visualiseur concurrentiel**, puis sélectionnez une option, telle que **lancer un nouveau processus**.
+Pour démarrer le visualiseur concurrentiel, sélectionnez **analyser** le  >  **visualiseur concurrentiel**, puis sélectionnez une option, telle que **lancer un nouveau processus**.
 
 Le visualiseur concurrentiel démarre l’application et collecte une trace jusqu’à ce que vous sélectionniez **Arrêter la collecte**. Le visualiseur analyse ensuite la trace et affiche les résultats dans la page de rapport de la trace.
 

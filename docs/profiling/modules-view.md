@@ -1,5 +1,6 @@
 ---
 title: Vue Modules | Microsoft Docs
+description: Découvrez comment la vue modules répertorie les modules des données de profilage. Chaque module est le nœud racine d’une arborescence hiérarchique.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d9146b3f724b4883f21a43689a495eef252777
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0ff17c128af78c1772ad85597153332a0848062
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778516"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722943"
 ---
 # <a name="modules-view"></a>Vue Modules
 La vue Modules liste les modules des données de profilage. Chaque module est le nœud racine d’une arborescence hiérarchique. Les fonctions profilées du module sont répertoriées sous le nœud du module. Si les données de profilage ont été collectées avec la méthode d’échantillonnage, les informations de ligne figurent sous le nœud de fonction et les données de pointeur d’instruction sont répertoriées sous le nœud de ligne.

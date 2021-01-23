@@ -1,5 +1,6 @@
 ---
 title: Vue Interaction de couche | Microsoft Docs
+description: Découvrez comment le profilage d’interaction de couche fournit des informations sur les durées d’exécution dans les fonctions des applications multicouches qui communiquent avec les bases de données.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778139"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722514"
 ---
 # <a name="tier-interactions-view"></a>Interactions de couche (vue)
 
@@ -39,8 +40,8 @@ La vue Interactions affiche les données d’interaction de couche dans deux vol
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|- Pour une ligne de haut niveau, le nom de la page web ou du processus profilé.<br />- Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|
-|**Sauvegarde de la base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|
+|**Nom**|- Pour une ligne de haut niveau, le nom de la page web ou du processus profilé.<br />- Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|
+|**Base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|
 |**Count**|Nombre total de demandes qui sont générées par le processus, une page web ou une connexion de base de données.|
 |**Temps écoulé total**|Temps total passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
 |**Temps écoulé max.**|Temps maximal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|

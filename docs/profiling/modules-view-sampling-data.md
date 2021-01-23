@@ -1,5 +1,6 @@
 ---
 title: Modules, vue - Données d’échantillonnage | Microsoft Docs
+description: Découvrez comment la vue modules des données d’échantillonnage affiche les données de performances regroupées selon les modules qui ont été échantillonnés dans les données de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772712"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722956"
 ---
 # <a name="modules-view---sampling-data"></a>Modules, vue - données d’échantillonnage
 La vue Modules des données d’échantillonnage affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions échantillonnées du module sont répertoriées sous le nœud du module.
@@ -29,7 +30,7 @@ La vue Modules des données d’échantillonnage affiche les données de perform
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse du pointeur d’instruction.|
+|**Nom**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse du pointeur d’instruction.|
 |**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Nom du module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|

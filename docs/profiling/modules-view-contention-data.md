@@ -1,5 +1,6 @@
 ---
 title: Vue Modules - Données de conflit | Microsoft Docs
+description: Découvrez comment la vue modules des données de conflit affiche les données d’accès concurrentiel regroupées par les modules qui ont été échantillonnés dans les données de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780011"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723320"
 ---
 # <a name="modules-view---contention-data"></a>Modules, vue - données de conflit
 La vue Modules des données de conflit affiche les données de concurrence regroupées selon les modules qui ont été échantillonnés dans les données de profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module dans lequel les événements de concurrence se sont produits sont répertoriés sous le nœud du module.
@@ -38,7 +39,7 @@ La vue Modules des données de conflit affiche les données de concurrence regro
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nom du module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|
 |**Chemin du module**|Chemin du module qui contient le module, la fonction, la ligne ou le pointeur d’instruction.|
-|**Name**|Nom du module ou de la fonction.|
+|**Nom**|Nom du module ou de la fonction.|
 |**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Source File**|Fichier source contenant la définition pour cette fonction.|

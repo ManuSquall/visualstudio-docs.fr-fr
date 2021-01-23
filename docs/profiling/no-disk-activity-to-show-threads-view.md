@@ -1,5 +1,6 @@
 ---
 title: Aucune activité du disque à afficher (affichage Threads) | Microsoft Docs
+description: Découvrez que l’activité du disque pour l’intervalle de temps actuel dans les canaux d’e/s disque ne peut pas être affichée. Elle peut s’afficher si vous effectuez un zoom arrière ou un défilement.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25ef8fd7d149a489458f28a7e276476c8fa09776
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794453"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722891"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Aucune activité du disque à afficher (vue Threads)
 L’activité du disque ne peut pas être affichée pour l’intervalle de temps actuel dans les canaux d’E/S de disque. Elle peut s’afficher si vous effectuez un zoom arrière ou un défilement. Vérifiez également qu’aucun canal de disque n’est masqué.

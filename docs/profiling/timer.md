@@ -1,5 +1,6 @@
 ---
 title: Timer | Microsoft Docs
+description: Découvrez comment l’option de minuterie VSPerfCmd.exe définit l’événement de profilage qui est échantillonné aux cycles d’horloge du processeur.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 908685b49a08b3084c31e768675e64bc087bc727
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778113"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722436"
 ---
 # <a name="timer"></a>Minuteur
 L’option de **minuterie** *VSPerfCmd.exe* définit l’événement de profilage qui est échantillonné aux cycles d’horloge du processeur et modifie éventuellement le nombre de cycles dans un intervalle d’échantillonnage à partir de la valeur par défaut 10 millions. Sur un processeur d'1 GHz (un gigahertz), 10 000 000 de cycles d'horloge correspondent environ à 100 échantillons par seconde. Vous pouvez spécifier au minimum 50 000 cycles.
@@ -52,7 +53,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 
  **GC**[**:**{**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut (**allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont également collectées à chaque événement garbage collection.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Cet exemple illustre comment définir l'intervalle d'échantillonnage du profileur sur 1 000 000 de cycles du processeur.
 
 ```cmd

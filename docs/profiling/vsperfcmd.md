@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
+description: Découvrez comment l’outil VSPerfCmd.exe est utilisé pour démarrer et arrêter la collecte des données de performances. En savoir plus sur les différentes options de l’outil VSPerfCmd.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330005"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719186"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 L’outil *VSPerfCmd.exe* est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :
@@ -39,7 +40,7 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Active le profilage entre des sessions Windows. À utiliser seulement avec **Start**, **Attach** ou **Launch**.|
 |[Utilisateur](../profiling/user-vsperfcmd.md) **:**[ `domain\` ]`username`|Permet au compte spécifié d’accéder au service du profileur. À utiliser uniquement avec **Start**.|
 |[WaitStart](../profiling/waitstart.md)[**:** `n` ]|Attend que le journal de collecte de données soit initialisé. Si `n` est spécifié, **VSPerfCmd** attend au plus `n` secondes. Si `n` n’est pas spécifié, **VSPerfCmd** attend indéfiniment. Ceci facilite l’utilisation de **VSPerfCmd** dans le cadre d’un traitement par lots.|
-|[Compteur](../profiling/counter.md) **:**`cfg`|Quand l’exemple de méthode de profilage par échantillonnage est utilisée, spécifie un compteur d’UC et le nombre d’événements à utiliser comme intervalle d’échantillonnage. Vous ne pouvez échantillonner qu’une seule valeur de compteur.<br /><br /> Quand la méthode de profilage par instrumentation est utilisée, spécifie un compteur d’UC à collecter à chaque point d’instrumentation. À utiliser uniquement avec **Start :** `Trace` , **Attach**ou **Launch**.|
+|[Compteur](../profiling/counter.md) **:**`cfg`|Quand l’exemple de méthode de profilage par échantillonnage est utilisée, spécifie un compteur d’UC et le nombre d’événements à utiliser comme intervalle d’échantillonnage. Vous ne pouvez échantillonner qu’une seule valeur de compteur.<br /><br /> Quand la méthode de profilage par instrumentation est utilisée, spécifie un compteur d’UC à collecter à chaque point d’instrumentation. À utiliser uniquement avec **Start :** `Trace` , **Attach** ou **Launch**.|
 |[QueryCounters](../profiling/querycounters.md)|Affiche une liste des compteurs d’UC valides pour la machine active.|
 |[WinCounter](../profiling/wincounter.md) **:** *chemin d’accès*|Spécifie un événement de compteur de performance Windows à inclure avec les données de marque du profil. À utiliser uniquement avec **Start**.|
 |[AutoMark](../profiling/automark.md) **:** *n*|Spécifie l’intervalle de temps (en millisecondes) entre les événements de collecte des données du compteur de performances Windows. À utiliser avec **WinCounter**.|

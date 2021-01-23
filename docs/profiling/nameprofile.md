@@ -1,5 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
+description: Découvrez comment la fonction NameProfile assigne une chaîne au processus ou au thread spécifié. En outre, l’API NameProfile est disponible uniquement pour le profilage par instrumentation.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541698"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722917"
 ---
 # <a name="nameprofile"></a>NameProfile
 La fonction `NameProfile` affecte une chaîne au processus ou au thread spécifié.
@@ -95,7 +96,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |**Bibliothèque**|Utiliser *VSPerf.lib*|
 |**Unicode**|Implémenté en tant que `NameProfileW` (Unicode) et `NameProfileA` (ANSI).|
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Le code suivant illustre l’appel de la fonction NameProfile. L’exemple suppose l’utilisation de macros de chaîne Win32 et les paramètres de compilateur pour ANSI afin de déterminer si le code appelle la fonction compatible ANSI.
 
 ```cpp

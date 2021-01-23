@@ -1,5 +1,6 @@
 ---
 title: Modules, vue - Données d’instrumentation | Microsoft Docs
+description: Découvrez comment la vue modules affiche les données de performances regroupées par les modules qui se trouvaient dans les données de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7012f2deffa2e01057fd79f52ec2fcac3674f7eb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778529"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722969"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modules, vue - données d’instrumentation
 La vue Modules affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Les fonctions du module sont répertoriées sous le nœud du module.
@@ -26,7 +27,7 @@ La vue Modules affiche les données de performances regroupées selon les module
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la fonction ou du module.|
+|**Nom**|Nom de la fonction ou du module.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d’appels effectués à cette fonction ou à ce module.|
 |**Source File**|Fichier source contenant la définition pour cette fonction.|

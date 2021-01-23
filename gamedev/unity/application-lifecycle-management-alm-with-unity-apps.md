@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9c078f3500a5a00edadae73f04f04e60d7c199d6
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341577"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722982"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps avec les applications Unity
 
@@ -61,8 +61,8 @@ Commentaire général : bien que ces fonctionnalités de conception soient ind�
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
-|[Utiliser Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) ou Azure Repos|Oui|Les projets Unity se résument à une collection de fichiers qui peuvent être placés dans des systèmes de gestion de version comme n’importe quel autre projet. Toutefois, vous devez prendre en compte certaines considérations particulières décrites après le tableau ci-dessous.|
-|[Bien démarrer avec Git dans Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Oui|Consultez les remarques après le tableau.|
+|[Utiliser Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) ou Azure Repos|Oui|Les projets Unity se résument à une collection de fichiers qui peuvent être placés dans des systèmes de gestion de version comme n’importe quel autre projet. Toutefois, vous devez prendre en compte certaines considérations particulières décrites après le tableau ci-dessous.|
+|[Bien démarrer avec Git dans Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|Oui|Consultez les remarques après le tableau.|
 |[Améliorer la qualité du code](/test/improve-code-quality.md)|Oui||
 |[Rechercher les modifications de code et autres historiques](/ide/find-code-changes-and-other-history-with-codelens.md)|Oui||
 |[Utiliser des cartes du code pour déboguer vos applications](/modeling/use-code-maps-to-debug-your-applications.md)|Oui||

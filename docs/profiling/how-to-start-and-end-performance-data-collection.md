@@ -1,5 +1,6 @@
 ---
 title: Démarrer et terminer la collecte des données de performances | Microsoft Docs
+description: Découvrez comment vous pouvez ajouter le fichier binaire cible que vous souhaitez profiler à la session de performance avant de commencer le profilage.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1f22a09070aea8d2a63979c9d6d1bd267269cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0db420bbc6da16460e599ff8912569f97b506f22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851110"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721721"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Guide pratique pour démarrer et terminer la collecte des données de performances
 Vous devez ajouter le fichier binaire cible à profiler à la session de performance avant de démarrer le profilage. Pour ajouter une cible, cliquez avec le bouton droit sur **Cibles** dans l’**Explorateur de performances**, puis cliquez sur **Ajouter un fichier binaire cible**. Dans la boîte de dialogue **Ajouter un fichier binaire cible**, sélectionnez le nom du fichier, puis cliquez sur **Ouvrir**. Un nouveau fichier binaire est ajouté.

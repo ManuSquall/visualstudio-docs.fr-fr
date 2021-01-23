@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329534"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719654"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isoler du code testé avec Microsoft Fakes
 
@@ -255,11 +255,11 @@ Vous pouvez également créer des shims pour des instances spécifiques, des con
 ## <a name="using-microsoft-fakes-in-the-ci"></a>Utilisation de substituts Microsoft dans l’intégration continue
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Microsoft simule la génération d’assembly
-Étant donné que les substituts de Microsoft requièrent Visual Studio Enterprise, la génération d’assemblys substituts nécessite que vous génériez votre projet à l’aide de la [tâche de génération Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+Étant donné que les substituts de Microsoft requièrent Visual Studio Enterprise, la génération d’assemblys substituts nécessite que vous génériez votre projet à l’aide de la [tâche de génération Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Une alternative à cela consiste à vérifier vos assemblys de simulation dans l’élément de configuration et à utiliser la [tâche MSBuild](../msbuild/msbuild-task.md?view=vs-2019). Dans ce cas, vous devez vous assurer que vous disposez d’une référence d’assembly à l’assembly substituts généré dans votre projet de test, similaire à l’extrait de code suivant :
+> Une alternative à cela consiste à vérifier vos assemblys de simulation dans l’élément de configuration et à utiliser la [tâche MSBuild](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true). Dans ce cas, vous devez vous assurer que vous disposez d’une référence d’assembly à l’assembly substituts généré dans votre projet de test, similaire à l’extrait de code suivant :
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ Cette référence doit être ajoutée dans des projets de type SDK spécifiques 
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Exécution de tests de simulation Microsoft
-Tant que les assemblys simulés par Microsoft sont présents dans le `FakesAssemblies` répertoire configuré (valeur par défaut `$(ProjectDir)FakesAssemblies` ), vous pouvez exécuter des tests à l’aide de la [tâche VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+Tant que les assemblys simulés par Microsoft sont présents dans le `FakesAssemblies` répertoire configuré (valeur par défaut `$(ProjectDir)FakesAssemblies` ), vous pouvez exécuter des tests à l’aide de la [tâche VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true).
 
 ::: moniker range=">=vs-2019"
-Tests distribués avec la [tâche VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) les projets .net core à l’aide de Microsoft simulations nécessitent Visual Studio 2019 Update 9 preview `20201020-06` et versions ultérieures.
+Tests distribués avec la [tâche VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) les projets .net core à l’aide de Microsoft simulations nécessitent Visual Studio 2019 Update 9 preview `20201020-06` et versions ultérieures.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -307,7 +307,7 @@ Vous aurez besoin de modifications minimes dans votre .NET Framework configurer 
 - La prise en charge de la couverture du code pour les projets de test ciblant .NET Core à l’aide de Microsoft simulation est en cours de développement
 
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 [Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [Utiliser des shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

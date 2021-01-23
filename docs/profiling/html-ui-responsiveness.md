@@ -1,5 +1,6 @@
 ---
 title: Analyser la réactivité de l’interface utilisateur HTML dans les applications UWP | Microsoft Docs
+description: Découvrez comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, un outil de performances disponible pour les applications Windows universelles.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331415"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721877"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications avec le profileur de réactivité de l’interface utilisateur, qui est un outil d’analyse des performances disponible pour les applications Windows universelles.
@@ -188,7 +189,7 @@ if (performance.mark && performance.measure) {
 - Un événement de navigation, qui se produit lorsque vous accédez à une autre page. L'info-bulle de cet événement indique l'URL de la page de destination.
 
 ### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Visualiser l'utilisation de l'UC
- Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu**et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#profiler-event-reference) plus loin dans cette rubrique.
+ Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu** et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#profiler-event-reference) plus loin dans cette rubrique.
 
  Le graphique d'utilisation de l'UC illustre le temps passé sur tous les threads d'application, en combinant les valeurs d'utilisation de l'UC pour un ou plusieurs processeurs en une seule valeur de pourcentage. La valeur d'utilisation de l'UC peut dépasser 100 % lorsque plusieurs processeurs sont en cours d'utilisation.
 
@@ -340,7 +341,7 @@ if (performance.mark && performance.measure) {
 |Minuteur|Scripts|Une minuterie planifiée s'est écoulée et a provoqué l'exécution de sa fonction de rappel associée.|
 |Fonction de rappel asynchrone Windows Runtime|Scripts|Une opération asynchrone qui a déclenché une fonction de rappel `Promise` a été effectuée par un objet Runtime Windows.|
 |Événement Windows Runtime|Scripts|Un événement qui s'est produit sur un objet Windows Runtime a déclenché un écouteur inscrit.|
-|Nettoyage de la mémoire|GC|Du temps a été passé à collecter de la mémoire pour des objets qui n'étaient plus utilisés.|
+|Garbage collection|GC|Du temps a été passé à collecter de la mémoire pour des objets qui n'étaient plus utilisés.|
 |Calcul du code CSS|Styles|Des modifications ont été apportées au DOM qui ont nécessité de recalculer les propriétés de style de tous les éléments affectés.|
 |Layout|Styles|Des modifications ont été apportées au DOM qui ont nécessité de recalculer la taille et/ou la position de tous les éléments affectés.|
 |Peinture|Rendu|Des modifications visuelles ont été apportées au DOM et il a été tenté d'effectuer un nouveau rendu de parties de la page.|

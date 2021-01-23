@@ -1,5 +1,7 @@
 ---
 title: Kit SDK du visualiseur concurrentiel | Microsoft Docs
+description: Découvrez comment utiliser le kit de développement logiciel (SDK) du visualiseur concurrentiel pour instrumenter votre code afin d’afficher des marqueurs. Les marqueurs sont des icônes qui s’affichent dans le visualiseur concurrentiel pour marquer les événements.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037352"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720980"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit de développement logiciel (SDK) du visualiseur concurrentiel
 Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).

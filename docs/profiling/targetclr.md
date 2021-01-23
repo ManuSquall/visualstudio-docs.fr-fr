@@ -1,5 +1,6 @@
 ---
 title: TargetCLR | Microsoft Docs
+description: Découvrez comment l’option TargetCLR spécifie la version du Common Language Runtime à profiler lorsque plusieurs versions du CLR sont chargées dans une application.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dff098dc5b893ce394698118d53ae6a96fc8b28a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771599"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719810"
 ---
 # <a name="targetclr"></a>TargetCLR
 L’option **TargetCLR** spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du CLR sont chargées dans une application.
@@ -37,7 +38,7 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 
  **Attacher :** `PID` Démarre le profilage du processus spécifié.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Dans cet exemple, l’option TargetCLR est utilisée pour profiler la version 4.0.11003 du CLR.
 
 ```cmd

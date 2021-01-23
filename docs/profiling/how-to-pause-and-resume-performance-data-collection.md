@@ -1,5 +1,6 @@
 ---
 title: Suspendre et reprendre la collecte de données de performances | Microsoft Docs
+description: Découvrez comment vous pouvez contrôler la collecte des données de profilage de manière interactive à partir de la fenêtre de la page de session de profilage.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5abdd7f8324e76f452d5e090aba861f8e7cf8301
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3e9cd58eb6563298a0ee38fbad0cbae5d85e57e9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851383"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723346"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Guide pratique pour suspendre et reprendre la collecte de données de performances
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.
@@ -26,7 +27,7 @@ ms.locfileid: "90851383"
  ![Page de session de profilage](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
-> Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu ** dans le menu **Déboguer**.
+> Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu** dans le menu **Déboguer**.
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>Pour suspendre, reprendre ou arrêter le profilage
 

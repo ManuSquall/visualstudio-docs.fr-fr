@@ -1,5 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
+description: Découvrez comment l’outil VSInstr est utilisé pour instrumenter des binaires et d’autres options de l’outil VSInstr.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 576e83e5440607b06aca1b80171f8ca30d716e24
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330499"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723112"
 ---
 # <a name="vsinstr"></a>VSInstr
 L’outil VSInstr est utilisé pour instrumenter des ressources binaires. Il est appelé à l’aide de la syntaxe suivante :
@@ -41,7 +42,7 @@ VSInstr [/U] filename [/options]
 |`@filename`|Spécifie le nom d’un fichier réponse qui contient une option de commande par ligne.  N’utilisez pas de guillemets.|
 |**OutputPath**`:path`|Spécifie un répertoire de destination pour l’image instrumentée. Si aucun chemin de sortie n’est spécifié, le binaire d’origine est renommé en ajoutant « Orig » au nom de fichier dans le même répertoire, et une copie du binaire est instrumentée.|
 |**Exclure :**`funcspec`|Spécifie une spécification de fonction à exclure de l’instrumentation par les sondes. Cette option est utile quand le profilage d’une insertion de sondes dans une fonction provoque des résultats inattendus ou non souhaités.<br /><br /> N’utilisez pas d’options **Exclude** et **Include** qui font référence à des fonctions dans le même binaire.<br /><br /> Vous pouvez spécifier plusieurs spécifications de fonction avec différentes options **Exclude**.<br /><br /> `funcspec` est défini comme suit :<br /><br /> [espace de noms \<separator1> ] [classe \<separator2> ] fonctionnalités<br /><br /> \<separator1> est `::` pour le code natif et `.` pour le code managé.<br /><br /> \<separator2> a toujours la valeur `::`<br /><br /> **Exclude** est pris en charge avec la couverture du code.<br /><br /> Le caractère générique \* est pris en charge. Par exemple, pour exclure toutes les fonctions dans un espace de noms, utilisez :<br /><br /> nom_espace_de_noms::\*<br /><br /> Vous pouvez utiliser **VSInstr /DumpFuncs** pour répertorier les noms complets des fonctions dans le binaire spécifié.|
-|**Inclure :**`funcspec`|Spécifie une spécification de fonction dans un binaire à instrumenter avec les sondes. Toutes les autres fonctions dans les binaires ne sont pas instrumentées.<br /><br /> Vous pouvez spécifier plusieurs spécifications de fonction avec différentes options **Include**.<br /><br /> N’utilisez pas d’options **Include** et **Exclude** qui font référence à des fonctions dans le même binaire.<br /><br /> **Include** n’est pas pris en charge avec la couverture du code.<br /><br /> `funcspec` est défini comme suit :<br /><br /> [espace de noms \<separator1> ] [classe \<separator2> ] fonctionnalités<br /><br /> \<separator1> est `::` pour le code natif et `.` pour le code managé.<br /><br /> \<separator2> a toujours la valeur `::`<br /><br /> Le caractère générique \* est pris en charge. Par exemple, pour inclure toutes les fonctions dans un espace de noms, utilisez :<br /><br /> nom_espace_de_noms::\*<br /><br /> Vous pouvez utiliser **VSInstr /DumpFuncs** pour répertorier les noms complets des fonctions dans le binaire spécifié.|
+|**Inclusion :** `funcspec`|Spécifie une spécification de fonction dans un binaire à instrumenter avec les sondes. Toutes les autres fonctions dans les binaires ne sont pas instrumentées.<br /><br /> Vous pouvez spécifier plusieurs spécifications de fonction avec différentes options **Include**.<br /><br /> N’utilisez pas d’options **Include** et **Exclude** qui font référence à des fonctions dans le même binaire.<br /><br /> **Include** n’est pas pris en charge avec la couverture du code.<br /><br /> `funcspec` est défini comme suit :<br /><br /> [espace de noms \<separator1> ] [classe \<separator2> ] fonctionnalités<br /><br /> \<separator1> est `::` pour le code natif et `.` pour le code managé.<br /><br /> \<separator2> a toujours la valeur `::`<br /><br /> Le caractère générique \* est pris en charge. Par exemple, pour inclure toutes les fonctions dans un espace de noms, utilisez :<br /><br /> nom_espace_de_noms::\*<br /><br /> Vous pouvez utiliser **VSInstr /DumpFuncs** pour répertorier les noms complets des fonctions dans le binaire spécifié.|
 |**DumpFuncs**|Répertorie les fonctions dans l’image spécifiée. Aucune instrumentation n’est effectuée.|
 |**ExcludeSmallFuncs**|Exclut de l’instrumentation les petites fonctions (fonctions courtes qui n’effectuent pas d’appels de fonction). L’option **ExcludeSmallFuncs** permet de réduire la charge liée à l’instrumentation et donc d’accélérer celle-ci.<br /><br /> L’exclusion des petites fonctions réduit également la taille du fichier .*vsp* et le temps nécessaire à l’analyse.|
 |**Mark:**{**Before**\|**After**\|**Top**\|**Bottom**}`,funcname,markid`|Insère une marque de profil (identificateur utilisé pour délimiter les données dans les rapports) que vous pouvez utiliser pour identifier le début ou la fin d’une plage de données dans le fichier de rapport .vsp.<br /><br /> **Before** : juste avant l’entrée dans la fonction cible.<br /><br /> **After** : juste après la sortie de la fonction cible.<br /><br /> **Top** : juste après l’entrée de la fonction cible.<br /><br /> **Bottom** : juste avant chaque retour dans la fonction cible.<br /><br /> `funcname` : nom de la fonction cible<br /><br /> `Markid` : entier positif (long) à utiliser comme identificateur de la marque de profil.|

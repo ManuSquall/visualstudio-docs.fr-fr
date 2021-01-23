@@ -1,5 +1,6 @@
 ---
 title: Contrôle Zoom (vue Utilisation) | Microsoft Docs
+description: Découvrez comment le contrôle de zoom vous permet d’effectuer un zoom avant sur le graphique d’utilisation de l’UC afin de vous concentrer sur des zones d’intérêt particulier.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f28a0f8bd60ad169715ba72b6fab957e7699a5b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62960105"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723021"
 ---
 # <a name="zoom-control-utilization-view"></a>Contrôle Zoom (vue Utilisation)
 Le contrôle de zoom vous permet de faire un zoom avant sur le graphique d’utilisation du processeur afin de vous concentrer sur des zones dignes d’intérêt. Ce contrôle effectue un zoom avant sur le centre de la vue. Vous devez donc centrer la zone digne d’intérêt avant d’effectuer un zoom avant.

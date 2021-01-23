@@ -1,5 +1,6 @@
 ---
 title: Vue Résumé - Vue Conflit de ressources | Microsoft Docs
+description: La vue Résumé affiche des informations sur les événements de votre application dans lesquels un thread ou un processus a été interrompu dans l’attente de pouvoir à une ressource.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40d922d8728e53d0098ad67c8b8140f9045c32b0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771446"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722644"
 ---
 # <a name="summary-view---resource-contention-view"></a>Vue Résumé - Vue Conflit de ressources
 La vue Résumé affiche des informations sur les événements de votre application dans lesquels un thread ou un processus a été interrompu dans l’attente de pouvoir à une ressource.
@@ -33,7 +34,7 @@ La vue Résumé affiche des informations sur les événements de votre applicati
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la ressource.|
+|**Nom**|Nom de la ressource.|
 |**% de conflits**|Pourcentage de tous les événements de conflit dans les données de profilage qui étaient des conflits sur cette ressource.|
 
 ## <a name="most-contended-thread"></a>Thread présentant le plus de conflits
@@ -44,5 +45,5 @@ La vue Résumé affiche des informations sur les événements de votre applicati
 |Colonne|Description|
 |------------|-----------------|
 |**Identifiant**|Identificateur du thread.|
-|**Name**|Nom du processus propriétaire du thread.|
+|**Nom**|Nom du processus propriétaire du thread.|
 |**% de conflits**|Pourcentage de tous les événements de conflit dans les données de profilage qui étaient des conflits sur cette ressource.|

@@ -1,5 +1,6 @@
 ---
 title: Propriétés d’une session de performance | Microsoft Docs
+description: Découvrez comment une session de performance vous permet de configurer les paramètres qui déterminent le mode de profilage de l’application.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02ddf15251cf40dd340465563068b114940f9318
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772200"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721227"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 

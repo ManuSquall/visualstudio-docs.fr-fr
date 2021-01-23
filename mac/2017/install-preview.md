@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
-ms.openlocfilehash: aecc309cfd9bf4af59e10cda8b33e43bb5e75d7c
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 7d7408ad837dac789c3632361e83673d288ea053
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862480"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721084"
 ---
 # <a name="install-a-preview-release"></a>Installer une préversion
 
 > [!NOTE]
-> La préversion de Visual Studio 2019 pour Mac est [maintenant disponible à des fins d’installation](./installation.md?view=vsmac-2019) et de test.
+> La préversion de Visual Studio 2019 pour Mac est [maintenant disponible à des fins d’installation](./installation.md?view=vsmac-2019&preserve-view=true) et de test.
 
 ## <a name="install-an-update-for-visual-studio-for-mac"></a>Installer une mise à jour pour Visual Studio pour Mac
 

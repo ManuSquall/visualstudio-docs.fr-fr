@@ -1,5 +1,6 @@
 ---
 title: Durée des E/S (vue Threads) | Microsoft Docs
+description: Découvrez comment les segments de temps d’e/s sont associés à des temps de blocage catégorisés comme e/s, ce qui signifie qu’un thread attend qu’une opération d’e/s se termine.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ba29383ddddc02160967a90b56046128d2f19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915ab6aef595fba7e13321d4e23c08bdd2eadaf3
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62995444"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721630"
 ---
 # <a name="io-time-threads-view"></a>temps consacré aux E/S (vue Threads)
 Ces segments de la chronologie sont associés aux durées de blocage classées dans la catégorie des E/S. Cela signifie qu’un thread attend qu’une opération d’E/S se termine. Le thread peut avoir été bloqué dans une API ou par une attente du noyau liée à des E/S que le visualiseur concurrentiel traite comme E/S. Les API comme `CreateFile()`, `ReadFile()` et `WSARecv()` appartiennent à ce groupe.

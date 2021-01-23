@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.topic: overview
-ms.openlocfilehash: 532a245b8e217ea278bf5a3424a194ce87ae43f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5613a47785f1bb3fbb2a56f8458bba1946930e7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950045"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719799"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilation et génération dans Visual Studio pour Mac
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur l’utilisation de MSBuild, consultez [MSBuild](/
 
 ## <a name="building-from-azure-pipelines"></a>Génération à partir d’Azure Pipelines
 
-* [Créer votre application Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
+* [Créer votre application Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&preserve-view=true&tabs=vsts)
 * [Intégration continue avec Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)
 
 ## <a name="see-also"></a>Voir aussi

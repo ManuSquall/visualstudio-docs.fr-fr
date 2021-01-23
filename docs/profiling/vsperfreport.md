@@ -1,5 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
+description: Découvrez que l’outil en ligne de commande VSPerfReport est utilisé pour créer des rapports à l’aide de Visual Studio Outils de profilage les fichiers de données de profilage.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329952"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719771"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 L’outil en ligne de commande VSPerfReport permet de créer des rapports à l’aide des fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le format de rapport par défaut est un fichier .*csv*.

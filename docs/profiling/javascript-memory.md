@@ -1,5 +1,6 @@
 ---
 title: Analyser l’utilisation de mémoire JavaScript dans les applications UWP | Microsoft Docs
+description: Découvrez comment l’analyseur de mémoire JavaScript est disponible pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows à l’aide de JavaScript.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a29d12a4ca2e6a7a620c5197f76c0ad35ac33a40
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037482"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721682"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -51,7 +52,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
 2. Si vous exécutez l’application à partir de Visual Studio, dans la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez la cible de débogage de votre projet : **Ordinateur local** ou **Appareil**.
 
-3. Dans la barre de menus, choisissez **Déboguer**le  >  **profileur de performances**.
+3. Dans la barre de menus, choisissez **Déboguer** le  >  **profileur de performances**.
 
      Par défaut, le projet de démarrage actif est analysé. Si vous souhaitez modifier la cible d'analyse, sélectionnez **Modifier la cible**.
 
@@ -193,11 +194,11 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
 - Taille du tas. Ce nombre comprend les éléments DOM et les objets que le moteur d'exécution JavaScript ajoute au tas JavaScript. La taille du tas est liée à la vue Types de l'instantané.
 
-- Taille différentielle de tas. Cette valeur indique la différence entre la taille du tas de l'instantané actuel et celle de l'instantané précédent. Cette valeur est suivie d'une flèche rouge vers le haut en cas d'augmentation de la mémoire ou d'une flèche verte vers le bas en cas de diminution de la mémoire. Si la taille du tas n'a pas changé entre les instantanés, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base**s'affiche. La taille différentielle de tas est liée à la vue Types de la comparaison des instantanés.
+- Taille différentielle de tas. Cette valeur indique la différence entre la taille du tas de l'instantané actuel et celle de l'instantané précédent. Cette valeur est suivie d'une flèche rouge vers le haut en cas d'augmentation de la mémoire ou d'une flèche verte vers le bas en cas de diminution de la mémoire. Si la taille du tas n'a pas changé entre les instantanés, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base** s'affiche. La taille différentielle de tas est liée à la vue Types de la comparaison des instantanés.
 
 - Nombre d'objets. Ce nombre indique uniquement les objets créés dans votre application et exclut les objets intégrés créés par le runtime JavaScript. Le nombre d'objets est lié à la vue Types des détails d'un instantané.
 
-- Nombre différentiel d'objets. Il indique deux valeurs : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent. Par exemple, l'illustration montre que 1 859 objets ont été ajoutés et 1 733 objets ont été supprimés depuis l'instantané n°1. Cette information est suivie d'une flèche rouge vers le haut si le nombre total d'objets a augmenté ou d'une flèche verte vers le bas s'il a diminué. Si le nombre d'objets n'a pas changé, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base**s'affiche. Le nombre différentiel d'objets est lié à la vue Types de la comparaison d'instantanés.
+- Nombre différentiel d'objets. Il indique deux valeurs : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent. Par exemple, l'illustration montre que 1 859 objets ont été ajoutés et 1 733 objets ont été supprimés depuis l'instantané n°1. Cette information est suivie d'une flèche rouge vers le haut si le nombre total d'objets a augmenté ou d'une flèche verte vers le bas s'il a diminué. Si le nombre d'objets n'a pas changé, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base** s'affiche. Le nombre différentiel d'objets est lié à la vue Types de la comparaison d'instantanés.
 
 - Capture d'écran lors de la prise de l'instantané.
 
@@ -260,7 +261,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   > [!TIP]
   > Pour afficher les informations les plus utiles dans ce filtre, suivez les étapes décrites dans [Isolate a memory leak](#isolate-a-memory-leak).
 
-- **Objets ajoutés entre les instantanés n ° \<number> et # \<number> **. Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.
+- **Objets ajoutés entre les instantanés n ° \<number> et # \<number>**. Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.
 
 - **Tous les objets de l' \<number> instantané n °**. Ce paramètre de filtre ne filtre aucun objet du tas.
 
@@ -347,7 +348,7 @@ if (performance && performance.mark) {
 
 ## <a name="tips-to-identify-memory-issues"></a>Conseils pour identifier les problèmes de mémoire
 
-- Suivez le flux de travail décrit dans [isoler une fuite de mémoire](#isolate-a-memory-leak) et utilisez les **objets restants à partir de l’instantané # \<number> ** Filter dans une vue diff pour identifier les candidats potentiels aux fuites de mémoire.
+- Suivez le flux de travail décrit dans [isoler une fuite de mémoire](#isolate-a-memory-leak) et utilisez les **objets restants à partir de l’instantané # \<number>** Filter dans une vue diff pour identifier les candidats potentiels aux fuites de mémoire.
 
 - Utilisez [Rechercher un objet dans l'arborescence des objets](#find-an-object-in-the-object-tree) pour voir où un objet est référencé dans la hiérarchie de la mémoire. La vue Racines montre comment un objet est enraciné à l'objet global, ce qui l'empêche de faire l'objet d'un garbage collection.
 

@@ -1,5 +1,6 @@
 ---
 title: Vues Interaction de couche | Microsoft Docs
+description: Découvrez comment le profilage d’interaction de couche fournit des informations sur les durées d’exécution des fonctions des applications multicouches qui communiquent avec les bases de données.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b358409b83a924672880cef5972ffbd3bd9a17f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778126"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722540"
 ---
 # <a name="tier-interaction-views"></a>Interaction de couche, vues
 

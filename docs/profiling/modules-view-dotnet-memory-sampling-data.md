@@ -1,5 +1,6 @@
 ---
 title: Modules, vue - Données d’échantillonnage de mémoire .NET | Microsoft Docs
+description: En savoir plus sur la vue modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’échantillonnage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e05a3e1d915853689c436b192de9e266e86b13d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772725"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723294"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modules, vue - données d’échantillonnage de la mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’échantillonnage regroupe les données de mémoire selon les modules exécutés dans le cadre de l’exécution du profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module sont répertoriées sous le nœud du module.
@@ -25,7 +26,7 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|
+|**Nom**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|
 |**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Nom du module**|Nom du module qui contient la fonction.|

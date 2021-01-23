@@ -1,5 +1,6 @@
 ---
 title: Lignes, vue - Données de conflit | Microsoft Docs
+description: Découvrez comment la vue lignes des données de conflit répertorie les données de performances pour les instructions qui étaient en cours d’exécution lorsque les exemples ont été collectés dans l’exécution du profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778594"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721344"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - données de conflit
 La vue Lignes des données de conflit répertorie les données de performance pour les instructions qui étaient en cours d’exécution au moment de la collecte des échantillons dans le cadre de l’exécution du profilage. Dans un fichier source, une instruction peut couvrir plusieurs lignes d'un fichier source, et une ligne unique peut inclure plusieurs instructions.

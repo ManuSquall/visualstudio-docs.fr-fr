@@ -1,5 +1,7 @@
 ---
 title: Marqueurs du visualiseur concurrentiel | Microsoft Docs
+description: 'En savoir plus sur les marqueurs dans le visualiseur concurrentiel. Les marqueurs sont des icônes qui représentent les événements générés par une application. Il existe trois types : indicateurs, messages et étendues.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63001048"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720993"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marqueurs du visualiseur concurrentiel
 Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représentent les événements d’une application.  En règle générale, l’application génère ces événements pour désigner les phases ou les occurrences d’une application.  Les événements peuvent être générés par l’application ou par les bibliothèques et les runtimes qu’utilise l’application.
@@ -45,7 +47,7 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
 
 - [Bibliothèque parallèle de tâches](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
-- [DataFlow](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
+- [Dataflow](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
 - [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 

@@ -1,5 +1,6 @@
 ---
 title: Analyser l’utilisation du réseau dans les applications UWP
+description: Découvrez comment l’outil de diagnostic réseau de Visual Studio collecte des données sur les opérations réseau effectuées à l’aide de l’API Windows. Web. http.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541711"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722904"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analyser l’utilisation du réseau dans les applications UWP
 L’outil de diagnostic **Réseau** de Visual Studio collecte les données relatives aux opérations réseau effectuées à l’aide de l’[API Windows.Web.Http](/uwp/api/windows.web.http). L'analyse des données peut vous aider à résoudre les problèmes tels que les problèmes d'accès et d'authentification, l'utilisation incorrecte du cache et les médiocres performances d'affichage et de téléchargement.
@@ -53,7 +54,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 
  ![Volet de détails de l'outil de réseau](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|Nom|Description|
+|Name|Description|
 |-|-|
 |**En-têtes**|Informations sur les en-têtes de demande de l'événement.|
 |**Corps**|Données de charge utile de la demande et de la réponse.|

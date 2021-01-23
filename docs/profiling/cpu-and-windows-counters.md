@@ -1,5 +1,7 @@
 ---
 title: Compteurs UC et Windows | Microsoft Docs
+description: Les compteurs UC (matériel) et Windows (logiciels) fournissent des données de performances. Apprenez à les afficher et à collecter des données à partir de celles-ci.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779547"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719160"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -53,27 +55,27 @@ Les événements portables contiennent les événements suivants :
 
 **Événements généraux**
 
-|Nom de l’événement|Description de l’événement|
+|Nom de l'événement|Description de l'événement|
 |----------------|-----------------------|
 |Instructions retirées|Indique le nombre d’instructions qui ont été exécutées avant la fin de l’événement.|
 |Cycles hors interruption|Indique uniquement les cycles au cours desquels le processeur n’est pas arrêté, comme pour une attente d’E/S.|
 
 **Événements frontaux**
 
-|Nom de l’événement|Description de l’événement|
+|Nom de l'événement|Description de l'événement|
 |----------------|-----------------------|
 |Échecs dans ITLB|Indique le nombre de recherches dans le tampon de traduction ITLB qui ont échoué.|
 
 **Événements de branche**
 
-|Nom de l’événement|Description de l’événement|
+|Nom de l'événement|Description de l'événement|
 |----------------|-----------------------|
 |Branches retirées|Indique le nombre d’instructions de branche qui ont été exécutées avant la fin de l’événement.|
 |Branches mal prédites|Indique les branches mal prédites qui sont dues à la mauvaise prédiction du chemin par le processeur. Les branches mal prédites affectent les performances, car le processeur doit abandonner tout le travail effectué et recommencer sur le bon chemin.|
 
 **Événements mémoire**
 
-|Nom de l’événement|Description de l’événement|
+|Nom de l'événement|Description de l'événement|
 |----------------|-----------------------|
 |Échecs de l'accès en lecture au cache L2|Indique le nombre d’échecs de lecture du cache de deuxième niveau (L2).|
 |Références de lecture du cache L2|Indique le nombre de références de lecture du cache de deuxième niveau (L2). Cela comprend les échecs de chargement, ainsi que les échecs et les réussites RFO (Read For Ownership).|
@@ -96,7 +98,7 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
       **Remarque** Cliquez sur **Annuler** pour revenir à la configuration d’échantillonnage précédente.
 
-     - ou -
+     -ou-
 
    - Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.
 
@@ -130,7 +132,7 @@ L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vues d’ensemble](../profiling/overviews-performance-tools.md) 
- [Comment : choisir des événements](../profiling/how-to-choose-sampling-events.md) 
- d’échantillonnage [Procédure : collecter les données](../profiling/how-to-collect-cpu-counter-data.md) 
- des compteurs UC [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [Vues d'ensemble](../profiling/overviews-performance-tools.md)
+- [Comment : choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)
+- [Procédure : collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)
+- [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)

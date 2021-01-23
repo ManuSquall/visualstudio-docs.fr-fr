@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 070bcc04d79231d074e30d1e87d3ad512ce5dca1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150936"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723034"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Utilisation des données IntelliTrace enregistrées (C#, Visual Basic, C++)
 
@@ -160,7 +160,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 1. Copiez l’ID de corrélation SharePoint à partir de sa source.
 
-    Exemple :
+    Par exemple :
 
     ![&#45; d’IntelliTrace &#45; d’erreur SharePoint ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
@@ -261,7 +261,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)
 
- [Collecter plus de données de diagnostic dans des tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+ [Collecter plus de données de diagnostic dans des tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 
  [IntelliTrace](../debugger/intellitrace.md)
 
