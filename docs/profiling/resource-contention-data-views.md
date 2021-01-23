@@ -1,5 +1,6 @@
 ---
 title: Vues des données de conflit de ressources | Microsoft Docs
+description: En savoir plus sur les informations de référence pour les vues et les rapports des fichiers de données du profileur qui contiennent les données de profilage de conflit de threads.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771528"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720330"
 ---
 # <a name="resource-contention-data-views"></a>Vues de données de conflit de ressources
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage des conflits de threads.
@@ -67,7 +68,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Liste les conflits de ressources par processus et par thread.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Vue Informations relatives à la fonction](../profiling/function-details-view.md)
 
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.

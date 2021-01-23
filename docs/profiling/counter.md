@@ -1,5 +1,7 @@
 ---
 title: Counter | Microsoft Docs
+description: En savoir plus sur l’option de compteur de VSPerfCmd.exe. Il spécifie un intervalle d’échantillonnage ou est une mesure d’intervalles d’événements dans le profilage par instrumentation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85ed799cac54d630dfff1b285d3f2257e5eb99b5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331191"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720694"
 ---
 # <a name="counter"></a>Compteur
 L’option **Counter** collecte les données des compteurs de performance de processeur (matériels).
@@ -51,7 +53,7 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 
  **Attacher :** `PID` Démarre le profileur et l’attache au processus spécifié par l’ID de processus. Le profileur doit être initialisé pour utiliser la méthode par échantillonnage.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’exemple de méthode par échantillonnage montre comment échantillonner une application toutes les 1 000 occurrences du compteur de profileur générique NonHaltedCycles.
 
  L’exemple de méthode par instrumentation montre comment initialiser le profileur pour collecter les événements de compteur L2InstructionFetches. Le nom de compteur L2InstructionFetches est spécifique au processeur.

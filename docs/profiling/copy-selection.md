@@ -1,5 +1,7 @@
 ---
 title: Copier une sélection | Microsoft Docs
+description: Pour copier l’intégralité de la pile des appels à partir de l’onglet Rapport, cliquez sur Copier. Vous pouvez ensuite coller la pile des appels dans n’importe quel programme prenant en charge cette action.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da16256579f414d33434295fc355f368597d868d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553225"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720863"
 ---
 # <a name="copy-selection"></a>Copier la sélection
 Pour copier l’intégralité de la pile des appels à partir de l’onglet Rapport, cliquez sur **Copier**. Vous pouvez ensuite coller la pile des appels dans n’importe quel programme prenant en charge cette action.

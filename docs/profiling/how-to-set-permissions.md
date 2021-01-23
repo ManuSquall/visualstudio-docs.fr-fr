@@ -1,5 +1,6 @@
 ---
 title: Définir les autorisations | Microsoft Docs
+description: Découvrez comment un administrateur d’un ordinateur accorde les autorisations de sécurité requises pour le profilage à un utilisateur ou un groupe qui ne dispose pas d’autorisations d’administrateur.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851825"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721994"
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 
@@ -64,7 +65,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 2. Cliquez avec le bouton droit sur le dossier, puis cliquez sur **Propriétés**.
 
-     La boîte de dialogue ** \<folder name> Propriétés** s’affiche.
+     La boîte de dialogue **\<folder name> Propriétés** s’affiche.
 
 3. Cliquez sur l’onglet **Security** .
 

@@ -1,5 +1,6 @@
 ---
 title: Vue Durée de vie des objets | Microsoft Docs
+description: Découvrez comment la vue durée de vie des objets est disponible lorsque la case à cocher collecter également les données de durée de vie des objets .NET est activée dans les pages de propriétés de session de performance.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772622"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722865"
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
 La vue durée de vie des objets est disponible lorsque la case à cocher **collecter également les données de durée de vie des objets .net** est activée dans les pages de propriétés **session de performance** .

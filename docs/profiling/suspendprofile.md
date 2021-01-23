@@ -1,5 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
+description: Découvrez comment la méthode SuspendProfile incrémente le compteur Suspend/Resume pour le niveau de profilage spécifié.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778191"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719264"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 La méthode `SuspendProfile` incrémente le compteur Suspend/Resume pour le niveau de profilage spécifié.
@@ -70,7 +71,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 
  Bibliothèque d’importation : *VSPerf.lib*
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’exemple suivant montre la méthode SuspendProfile. Cet exemple suppose qu’un appel antérieur à StartProfile a été effectué pour le processus ou le thread identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp

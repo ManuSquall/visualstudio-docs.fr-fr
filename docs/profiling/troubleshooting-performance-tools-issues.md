@@ -1,5 +1,6 @@
 ---
 title: Dépannage des outils d’analyse des performances | Microsoft Docs
+description: Découvrez les différents que vous pouvez rencontrer lors de la résolution des problèmes liés aux outils de performances, par exemple quand aucune donnée n’est collectée par les outils de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d079c2fbd41f6a3eff881a544e8b88c50938e3bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778100"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722410"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Résoudre les problèmes liés aux outils d’analyse des performances
 Vous pouvez rencontrer les problèmes suivants quand vous utilisez les outils de profilage :

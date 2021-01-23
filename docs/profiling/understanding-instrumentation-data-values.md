@@ -1,5 +1,6 @@
 ---
 title: Fonctionnement des valeurs de données d’instrumentation | Microsoft Docs
+description: Découvrez comment la méthode de profilage par instrumentation enregistre les informations de minutage détaillées pour les appels de fonction, les lignes et les instructions de l’application profilée.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778074"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722345"
 ---
 # <a name="understand-instrumentation-data-values"></a>Comprendre le fonctionnement des valeurs de données d’instrumentation
 

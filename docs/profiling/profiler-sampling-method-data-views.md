@@ -1,5 +1,6 @@
 ---
 title: Vues des données de la méthode d’échantillonnage du profileur | Microsoft Docs
+description: En savoir plus sur les vues et les rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772158"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719433"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vues des données de la méthode d’échantillonnage du profileur
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés avec la méthode d’instrumentation.
@@ -54,7 +55,7 @@ Cette section contient des informations de référence pour les vues et rapports
 
  Répertorie les lignes de code source qui s’exécutaient pendant la collecte des échantillons.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Vue processus](../profiling/process-view.md)
 
  Répertorie les heures de début et de fin des processus et des threads.

@@ -1,5 +1,6 @@
 ---
 title: Output | Microsoft Docs
+description: Découvrez comment l’option de sortie spécifie le nom du fichier de données de profilage pour la session de performance. Output doit être utilisé avec l’option Start.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
@@ -9,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6067e13e33875be778ff59739f5511c4116937ed
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778503"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722800"
 ---
-# <a name="output"></a>Output
+# <a name="output"></a>Sortie
 L’option **Output** spécifie le nom du fichier de données de profilage pour la session de performances. **Output** doit être utilisé avec l’option **Start**.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,7 +34,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Démarrer :** `Method` Spécifie le nom du fichier de sortie.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Dans l’exemple suivant, le fichier de données de profilage est créé dans le répertoire actif.
 
 ```cmd

@@ -1,5 +1,6 @@
 ---
 title: Lignes, vue - Données d’échantillonnage de mémoire .NET | Microsoft Docs
+description: Découvrez comment la vue lignes pour les données de profilage d’allocation de mémoire .NET répertorie les instructions qui ont alloué de la mémoire lors de l’exécution du profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0033b3d50531bebe087f43930324db0431dee03f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774078"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721331"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Lignes, vue - données d’échantillonnage de mémoire .NET
 La vue Lignes des données de profilage d’allocation de mémoire .NET qui utilisent la méthode d’échantillonnage répertorie les instructions ayant alloué la mémoire pendant l’exécution du profilage. Les colonnes incluent également la taille et le nombre d’allocations.

@@ -1,5 +1,6 @@
 ---
 title: Présentation des valeurs de données d’échantillonnage | Microsoft Docs
+description: Découvrez comment la méthode de profilage par échantillonnage de Visual Studio Outils de profilage interrompt le processeur de l’ordinateur à des intervalles définis et collecte la pile des appels de fonction.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81efd0f20ba971555ec8c1333dfc322112f13e17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778048"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722163"
 ---
 # <a name="understand-sampling-data-values"></a>Comprendre le fonctionnement des valeurs de données d’échantillonnage
 

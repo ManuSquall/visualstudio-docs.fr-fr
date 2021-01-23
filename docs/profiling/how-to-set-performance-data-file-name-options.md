@@ -1,5 +1,6 @@
 ---
 title: Définir les options de nom de fichier de données de profilage | Microsoft Docs
+description: Découvrez comment vous pouvez modifier n’importe quel paramètre de nommage sur la page général de la boîte de dialogue Propriétés de la session de performance.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851565"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722046"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Guide pratique pour définir les options de nom de fichier des données de performance
 
@@ -39,7 +40,7 @@ Vous pouvez modifier tout paramètre d’attribution de nom dans la page **Gén�
 
 3. Sous **Rapport**, modifiez les paramètres suivants :
 
-    |Nom|Description|
+    |Name|Description|
     |-|-|
     |**Emplacement du rapport**|Spécifiez un répertoire pour le stockage des fichiers de données de profilage.|
     |**Nom du rapport**|Spécifiez un nom de base pour les fichiers.|

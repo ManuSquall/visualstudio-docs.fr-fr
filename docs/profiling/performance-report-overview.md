@@ -1,5 +1,6 @@
 ---
 title: Vue d’ensemble du rapport Performances | Microsoft Docs
+description: Affichez les données de profilage dans la fenêtre rapport de performances de l’environnement de développement intégré de Visual Studio Team System Development Edition.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95fbb51cbcc4d2467b9d1636c7e9f61232791d62
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772230"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722761"
 ---
 # <a name="performance-report-overview"></a>Vue d’ensemble du rapport Performances
 Vous pouvez afficher les données de profilage d’une session de performance dans la fenêtre **Rapport de performances** de l’environnement de développement intégré (IDE) de Visual Studio Team System Development Edition. Les données de profilage sont enregistrées dans des fichiers .vsp et .vsps. Grâce aux fenêtres de vue Rapport, vous pouvez afficher et analyser les problèmes de performances d’une application.
@@ -26,7 +27,7 @@ Vous pouvez afficher les données de profilage d’une session de performance da
 > [!CAUTION]
 > Un fichier de données de profilage contient des informations sensibles telles que le nom de l’ordinateur, la version du système d’exploitation, les chemins des fichiers, les informations sur la mémoire et d’autres informations relatives à la configuration de l’ordinateur. Vous devez maintenir un contrôle strict sur la distribution des données, à la fois dans son natif. le format *vsp* et le moment où il est exporté vers un. *CSV* ou. fichier *XML* .
 >
-> Si les données de suivi d’événements sont collectées dans le cadre de la session de performance, des informations supplémentaires peuvent s’afficher dans le journal de suivi d’événements (.* fichier ETL*). Ces informations incluent votre nom de domaine et d’utilisateur ; par conséquent, vous devez maintenir un contrôle strict sur la distribution du fichier journal.
+> Si les données de suivi d’événements sont collectées dans le cadre de la session de performance, des informations supplémentaires peuvent s’afficher dans le journal de suivi d’événements (.*fichier ETL*). Ces informations incluent votre nom de domaine et d’utilisateur ; par conséquent, vous devez maintenir un contrôle strict sur la distribution du fichier journal.
 
 ## <a name="performance-report-window"></a>Fenêtre Rapport de performances
  La fenêtre Rapport de performances est une fenêtre Outil permettant d’afficher, de gérer et de filtrer les données de performance et qui inclut un contrôle de requête personnalisable.

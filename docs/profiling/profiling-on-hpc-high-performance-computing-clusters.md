@@ -1,5 +1,6 @@
 ---
 title: Profilage sur des clusters HPC (High Performance Computing) | Microsoft Docs
+description: Découvrez comment vous pouvez Profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage de Visual Studio Outils de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06a160adda25debe21d8262d9064c23849011dc9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772118"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720525"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
@@ -140,7 +141,7 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 |---------------------------------------| - |
 | **Nom du projet** | Nom du projet ou de la solution [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actuels. |
 | **Nettoyer après l’arrêt du profileur** | Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés. |
-| **Fichiers supplémentaires à déployer** | Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection (**... **) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue. |
+| **Fichiers supplémentaires à déployer** | Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection (**...**) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue. |
 | **Commande Mpiexec** | Spécifie l’application qui démarre l’application MPI. La valeur par défaut est **mpiexec.exe**. |
 | **Arguments Mpiexec** | Spécifie les arguments à passer à la commande mpiexec.exe. |
 | **Nœuds demandés sur le cluster** | Spécifie le nombre de nœuds sur le cluster sur lequel l’application doit être exécutée. |

@@ -1,5 +1,7 @@
 ---
 title: Outil Zoom de la vue Cœurs | Microsoft Docs
+description: En savoir plus sur le contrôle de zoom de la vue cœurs, qui vous permet d’effectuer un zoom avant et arrière sur la chronologie, et d’en savoir plus sur les autres façons d’effectuer un zoom.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df2ffebee150ae106003ed5113e4c7354458143c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553043"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720720"
 ---
 # <a name="cores-view-zoom-tool"></a>Outil Zoom de la vue Cœurs
 Le contrôle Zoom est un curseur qui vous permet d’effectuer un zoom avant et arrière sur la chronologie, et de vous concentrer ainsi sur les zones qui vous intéressent. Ce contrôle effectue le zoom sur le centre de la vue active : ajustez donc la vue avant d’effectuer un zoom avant.

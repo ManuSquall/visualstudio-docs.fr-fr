@@ -1,5 +1,6 @@
 ---
 title: Utiliser des méthodes de profilage de ligne de commande pour obtenir des données de performances
+description: Découvrez comment le choix des outils et options de ligne de commande de Visual Studio Outils de profilage dépend de facteurs tels que le type d’application que vous profilez.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779972"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723242"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Utiliser des méthodes de profilage pour collecter des données de performances à partir de la ligne de commande
 Votre choix d’outils et d’options de ligne de commande des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dépend de facteurs comme le type d’application que vous profilez, la méthode de profilage que vous voulez utiliser, et de ce que l’application cible est écrite en code natif ou en code .NET Framework.

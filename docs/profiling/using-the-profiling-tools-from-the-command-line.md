@@ -1,5 +1,6 @@
 ---
 title: Utilisation des outils de profilage à partir de la ligne de commande | Microsoft Docs
+description: Utilisez les outils en ligne de commande de Visual Studio Outils de profilage pour profiler des applications et automatiser le profilage à l’aide de fichiers de commandes et de scripts.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dea893340c038909057dd652472c10c8264786a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d6e159e28a1401548f0cda7b795a5bbe70a257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328341"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723229"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Utiliser les outils de profilage à partir de la ligne de commande
 Vous pouvez utiliser les outils en ligne de commande des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour profiler des applications à l’invite de commandes et pour automatiser le profilage à l’aide de fichiers de commandes et de scripts. Vous pouvez également générer des fichiers de rapports à une invite de commandes. Vous pouvez utiliser le profileur autonome léger pour collecter des données sur les ordinateurs où [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n’est pas installé.
@@ -37,7 +38,7 @@ Vous pouvez utiliser les outils en ligne de commande des outils de profilage de 
 | **Créer des rapports .xml et .csv :** le profilage à l’invite de commande crée des fichiers de données qui peuvent être visualisés dans l’interface pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez également générer des fichiers de données .*xml* ou de valeurs séparées par des virgules (.*csv*) à l’aide de l’outil en ligne de commande VSPerfReport. | -   [Créer des rapports de profileur à partir de la ligne de commande](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
 | **Profiler du code sur des ordinateurs sans Visual Studio :** vous pouvez utiliser le profileur autonome des outils de profilage pour collecter des données pour les applications sur des ordinateurs où [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n’est pas installé. | -   [Comment : installer le profileur autonome](../profiling/how-to-install-the-stand-alone-profiler.md) |
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Référence des Outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="see-also"></a>Voir aussi

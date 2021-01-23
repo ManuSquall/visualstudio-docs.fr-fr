@@ -1,5 +1,6 @@
 ---
 title: Spécifier les emplacements des fichiers de symboles à partir de la ligne de commande
+description: Découvrez comment l’outil en ligne de commande VSPerfReport requiert l’accès aux fichiers de symboles (. pdb) pour afficher des informations de symbole telles que les noms de fonctions et les numéros de ligne.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f06bf9482bf719eb2025a8ee6c496b6b679046
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a9a801ccf7493675e49a3cde6ef91675e5f1189
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809581"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721916"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande
 Pour pouvoir afficher des informations de symboles telles que les noms de fonctions et les numéros de ligne, l’outil en ligne de commande VSPerfReport nécessite l’accès aux fichiers de symboles (.*pdb*) des composants profilés, ainsi qu’aux fichiers système Windows. Les fichiers de symboles sont créés lors de la compilation d’un composant. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport recherche automatiquement les fichiers de symboles dans les emplacements suivants :
@@ -54,7 +55,7 @@ Pour pouvoir afficher des informations de symboles telles que les noms de foncti
 ## <a name="specify-component-symbol-files"></a>Spécifier des fichiers de symboles de composants
  Les Outils de profilage recherchent les fichiers .*pdb* des composants que vous souhaitez profiler dans leurs emplacements d’origine, qui sont stockés dans les composants ou dans le dossier contenant le fichier de données de profilage. Vous pouvez spécifier d’autres emplacements dans lesquels effectuer la recherche en ajoutant un ou plusieurs chemins à **_NT_SYMBOL_PATH** ou à l’option **/SymbolPath**. Séparez les chemins par des points-virgules.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemples
  La ligne de commande suivante définit le serveur de symboles Windows comme valeur de la variable d’environnement **_NT_SYMBOL_PATH** et **C:\Symbols** comme répertoire local.
 
  ```cmd

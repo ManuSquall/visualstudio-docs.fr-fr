@@ -1,5 +1,6 @@
 ---
 title: Profilage et sécurité de Windows Vista | Microsoft Docs
+description: En fonction des paramètres des autorisations d’accès utilisateur disponibles, un utilisateur individuel peut avoir l’autorisation de sécurité pour profiler un processus sur cet ordinateur.
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778373"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719407"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilage et sécurité Windows Vista
 

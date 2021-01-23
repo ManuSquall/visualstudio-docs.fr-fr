@@ -1,5 +1,6 @@
 ---
 title: ProcessOn et ProcessOff | Microsoft Docs
+description: Découvrez comment les sous-commandes VSPerfCmd.exe ProcessOff et ProcessOn s’interrompent et reprennent le profilage pour le processus spécifié dans une session de profilage en ligne de commande.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778386"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719446"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn et ProcessOff
 Les sous commandes **ProcessOff** et **ProcessOn** de VSPerfCmd.exe permettent de suspendre et de reprendre le profilage pour le processus spécifié dans une session de profilage en ligne de commande. **ProcessOff** arrête le profilage du processus et **ProcessOn** le démarre.
@@ -42,7 +43,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` Identificateur sous forme d’entier du processus à démarrer ou à arrêter. Les ID de processus sont répertoriés sous l’onglet **processus** du gestionnaire des tâches de Windows.
 
 ## <a name="required-subcommands"></a>Sous-commandes obligatoires
- None
+ Aucun
 
 ## <a name="valid-subcommands"></a>Sous-commandes valides
  Vous pouvez spécifier **ProcessOn** et **ProcessOff** sur des lignes de commande qui contiennent également les sous-commandes suivantes.
@@ -57,7 +58,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
  {**Threadoff**&#124;**ThreadOn**} **:**`TID` Arrête ou démarre le profilage pour le thread spécifié (méthode d’instrumentation uniquement).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Dans cet exemple, la sous-commande **ProcessOff** est utilisé pour collecter des données de profilage pour le démarrage de l’application.
 
 ```cmd

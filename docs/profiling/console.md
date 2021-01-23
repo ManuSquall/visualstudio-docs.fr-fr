@@ -1,5 +1,7 @@
 ---
 title: Console | Microsoft Docs
+description: Utilisez l’option de console de VSPerfCmd.exe pour démarrer l’application spécifiée dans une nouvelle fenêtre d’invite de commandes. Vous devez l’utiliser avec l’option Launch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b70c44f72d8f9d8fb25eb1c459946797cfb97913
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93c39bfb503bec9858e33b7acf04e0f0433264b9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331565"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720902"
 ---
 # <a name="console"></a>Console
 L’option **Console** de VSPerfCmd.exe démarre l’application spécifiée dans une nouvelle fenêtre d’invite de commandes. L’option **Console** peut être utilisée seulement avec l’option **Launch** de VSPerfCmd. Si l’application n’est pas une application en ligne de commande, **Console** n’a aucun effet.

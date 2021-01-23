@@ -1,5 +1,6 @@
 ---
 title: Définition des options générales d’une session de performances | Microsoft Docs
+description: Découvrez comment vous pouvez définir la méthode de collecte et les conventions de nommage des données de profilage pour une session de performance Outils de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 698905f5e924bd8ddd424207a508ceaa4562ec57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2691d9d8868343291f3be4d9f5b3002e24605b85
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544467"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720187"
 ---
 # <a name="set-general-performance-session-options"></a>Définir les options générales d’une session de performances
 

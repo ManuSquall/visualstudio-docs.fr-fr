@@ -1,5 +1,6 @@
 ---
 title: Vues du rapport de performances | Microsoft Docs
+description: Découvrez comment les vues des fichiers de données de profilage s’affichent dans le environmentIDE de développement intégré de Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772286"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722748"
 ---
 # <a name="performance-report-views"></a>Vues du rapport des performances
 Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les vues des fichiers de données de profilage s’affichent dans l’environnement de développement intégré (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les rapports sont générés par l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).

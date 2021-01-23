@@ -1,5 +1,6 @@
 ---
 title: Enregistrement et exportation de données des outils d’analyse des performances | Microsoft Docs
+description: Découvrez comment vous pouvez enregistrer des vues filtrées ou non filtrées de fichiers de données de profilage (. vsp) en tant que fichiers de rapports analysés (. vsps).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +12,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b340abd81cef7183c2ba25af58ae432d8c80e6a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773897"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720150"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Enregistrer et exporter les données des outils d’analyse des performances
 Cet article décrit comment enregistrer et exporter des fichiers de données de performances.
 
 ## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>Comment enregistrer des fichiers de données de performances en tant que fichiers de rapports analysés
- Vous pouvez enregistrer des vues filtrées ou non filtrées de données de profilage (.* vsp*) en tant que rapport analysé (.* vsps*). Un fichier de rapport analysé peut être affiché dans la fenêtre d’affichage des rapports et est beaucoup plus petit que l’original. fichier *vsp* . Toutefois, vous ne pouvez pas appliquer un filtre aux données d’un. fichier *vsps* . Vous pouvez créer un fichier de rapport analysé à partir de la Explorateur de performances sans ouvrir le fichier dans l’environnement de développement intégré (IDE), ou vous pouvez ouvrir et filtrer le. *vsp* , puis enregistrez les résultats.
+ Vous pouvez enregistrer des vues filtrées ou non filtrées de données de profilage (.*vsp*) en tant que rapport analysé (.*vsps*). Un fichier de rapport analysé peut être affiché dans la fenêtre d’affichage des rapports et est beaucoup plus petit que l’original. fichier *vsp* . Toutefois, vous ne pouvez pas appliquer un filtre aux données d’un. fichier *vsps* . Vous pouvez créer un fichier de rapport analysé à partir de la Explorateur de performances sans ouvrir le fichier dans l’environnement de développement intégré (IDE), ou vous pouvez ouvrir et filtrer le. *vsp* , puis enregistrez les résultats.
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Pour enregistrer un rapport de performances analysé à partir de l’Explorateur de performances
 
@@ -34,7 +35,7 @@ Cet article décrit comment enregistrer et exporter des fichiers de données de 
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Pour enregistrer un rapport de performances analysé à partir de la fenêtre d’affichage des rapports
 
-1. Ouvrez les données de profilage (.* vsp*) dans la fenêtre d’affichage des rapports.
+1. Ouvrez les données de profilage (.*vsp*) dans la fenêtre d’affichage des rapports.
 
 2. (Facultatif) Appliquez un filtre aux données. Pour plus d’informations, consultez filtre de la [vue rapport de performances](../profiling/performance-report-view-filter.md).
 

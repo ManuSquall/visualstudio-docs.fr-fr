@@ -1,5 +1,6 @@
 ---
 title: Lignes, vue - Données d’échantillonnage | Microsoft Docs
+description: Découvrez comment la vue lignes des données d’échantillonnage répertorie les données de performance pour les instructions qui étaient en cours d’exécution lorsque les exemples ont été collectés dans l’exécution du profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778581"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721318"
 ---
 # <a name="lines-view---sampling-data"></a>Lignes, vue - données d’échantillonnage
 La vue Lignes des données d'échantillonnage répertorie les données de performance sur les instructions qui étaient en cours d'exécution lorsque les exemples ont été collectés dans l'exécution du profilage.

@@ -1,5 +1,6 @@
 ---
 title: Vue Processus | Microsoft Docs
+description: Découvrez comment la vue processus affiche les données de profilage pour les processus et les threads qui ont été exécutés pendant l’exécution du profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: da3097c276557238e6f5b521f6f7d3231434cd10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd4dfd4657d6ca2f42c234f576e362ffacb9e693
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772174"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719460"
 ---
 # <a name="process-view"></a>Vue Processus
 La vue Processus affiche les données de profilage pour les processus et les threads exécutés pendant l’exécution du profilage.
@@ -37,7 +38,7 @@ La vue Processus affiche les données de profilage pour les processus et les thr
 |------------|-----------------|
 |**ID unique**|Identificateur généré par le profileur unique pour le processus ou le thread.|
 |**Identifiant**|Identificateur du processus ou du thread généré par le système.|
-|**Name**|Nom du processus ou du thread.|
+|**Nom**|Nom du processus ou du thread.|
 |**Heure de début**|Nombre de millisecondes ou de cycles processeur entre le début du profilage et le début du processus ou du thread.|
 |**Heure de fin**|Nombre de millisecondes ou de cycles processeur entre le début du profilage et la fin du processus ou du thread.|
 

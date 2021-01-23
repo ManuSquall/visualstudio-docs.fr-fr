@@ -1,5 +1,6 @@
 ---
 title: Processus, vue - Données de conflit | Microsoft Docs
+description: Découvrez comment la vue processus affiche les données de conflit pour les processus et les threads qui ont été exécutés pendant l’exécution du profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778399"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719468"
 ---
 # <a name="process-view---contention-data"></a>Processus, vue - données de conflit
 La vue Processus affiche les données de conflit pour les processus et les threads exécutés pendant l’exécution du profilage.
@@ -36,7 +37,7 @@ La vue Processus affiche les données de conflit pour les processus et les threa
 |**Identifiant**|Identificateur du processus ou du thread généré par le système.|
 |**Durée de vie**|Nombre de millisecondes ou de cycles processeur entre le début du processus ou du thread et soit la fin du processus ou du thread, soit la fin du profilage.|
 |**Type**|Type de ligne (processus ou thread).<br /><br /> Uniquement dans les rapports en ligne de commande **VSReport**. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).|
-|**Name**|Nom du processus ou du thread.|
+|**Nom**|Nom du processus ou du thread.|
 |**ID unique**|Identificateur généré par le profileur unique pour le processus ou le thread.|
 
 ## <a name="see-also"></a>Voir aussi

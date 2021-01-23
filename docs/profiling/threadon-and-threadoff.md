@@ -1,5 +1,6 @@
 ---
 title: ThreadOn et ThreadOff | Microsoft Docs
+description: Découvrez comment les sous-commandes VSPerfCmd.exe ThreadOff et ThreadOn sont uniquement disponibles dans les sessions de profilage en ligne de commande qui utilisent la méthode d’instrumentation.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778152"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718770"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn et ThreadOff
 Les *VSPerfCmd.exe* sous-commandes **ThreadOff** et **ThreadOn** ne sont disponibles que dans les sessions de profilage en ligne de commande qui utilisent la méthode d’instrumentation. **ThreadOff** et **ThreadOn** suspendent et reprennent le profilage du thread spécifié. **ThreadOff** arrête le profilage du thread et **ThreadOn** démarre le profilage du thread.
 
- Dans la plupart des cas, vous spécifiez **ThreadOn** ou **ThreadOff** comme seule option dans une ligne de commande *VSPerfCmd.exe* , mais elles peuvent également être combinées avec les sous-commandes **GlobalOn**, **globaloff**, **ProcessOn**et **ProcessOff** .
+ Dans la plupart des cas, vous spécifiez **ThreadOn** ou **ThreadOff** comme seule option dans une ligne de commande *VSPerfCmd.exe* , mais elles peuvent également être combinées avec les sous-commandes **GlobalOn**, **globaloff**, **ProcessOn** et **ProcessOff** .
 
  Les sous-commandes **ThreadOn** et **ThreadOff** interagissent avec les sous-commandes **GlobalOn** et **GlobalOff**, qui contrôlent la collecte de données de tous les processus d’une session de profilage en ligne de commande, et avec les sous-commandes **ProcessOn** et **ProcessOff**, qui contrôlent la collecte de données d’un processus spécifié.
 
@@ -50,7 +51,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 
  {**ProcessOff**&#124;**ProcessOn**} **:**`TID` Arrête ou démarre le profilage pour le processus spécifié.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Dans cet exemple, la sous-commande **ThreadOff** est utilisée pour arrêter la collecte de données de profilage et collecter seulement les données de démarrage de l’application.
 
 ```cmd

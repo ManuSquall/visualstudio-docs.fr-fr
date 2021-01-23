@@ -1,5 +1,6 @@
 ---
 title: Rapport basé sur un intervalle de temps visible | Microsoft Docs
+description: Découvrez comment la vue de profil affiche des rapports basés sur la plage de temps et les canaux actuellement visibles.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63002345"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720369"
 ---
 # <a name="report-based-on-visible-time-range"></a>Rapport basé sur une plage horaire visible
 La vue Profil affiche des rapports basés sur l’intervalle de temps et les canaux actuellement visibles. Pour plus de détails sur les différents sous-ensembles de données, cliquez sur les éléments dans la légende.
@@ -29,7 +30,7 @@ La vue Profil affiche des rapports basés sur l’intervalle de temps et les can
 - [Profil d’exécution, rapport](../profiling/execution-profile-report.md)
 - [Durée de synchronisation](../profiling/synchronization-time.md)
 - [Temps d’e/s (vue threads)](../profiling/i-o-time-threads-view.md)
-- [Durée de veille](../profiling/sleep-time.md)
+- [Temps de veille](../profiling/sleep-time.md)
 - [Période de gestion de la mémoire](../profiling/memory-management-time.md)
 - [Durée de préemption](../profiling/preemption-time.md)
 - [Temps de traitement UI](../profiling/ui-processing-time.md)

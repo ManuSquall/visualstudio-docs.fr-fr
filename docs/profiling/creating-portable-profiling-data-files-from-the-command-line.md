@@ -1,5 +1,6 @@
 ---
 title: Ligne de commande de profilage-créer des fichiers de données portables
+description: Pour faciliter le partage des données de profilage, utilisez l’outil en ligne de commande VSPerfReport.exe pour incorporer les symboles pour une exécution de profilage dans le fichier. vsp.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0584cd2a476a7552beec483dd72ad1e957800ec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5df9f14fecce23eb72d08dcba87dee360269e078
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808836"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718965"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Créer des fichiers de données de profilage portables à partir de la ligne de commande
 Pour faciliter le partage des données de profilage, vous pouvez utiliser l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md) afin d’incorporer les symboles d’une exécution de profilage dans le fichier .*vsp*.

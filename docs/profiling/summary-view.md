@@ -1,5 +1,6 @@
 ---
 title: Vue Résumé | Microsoft Docs
+description: Découvrez comment le mode Résumé affiche des informations sur les fonctions ou objets les plus coûteux en matière de performances dans une exécution de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546885"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719277"
 ---
 # <a name="summary-view"></a>Vue Résumé
 La vue Résumé affiche des informations sur les fonctions ou les objets dont le coût est le plus pénalisant quant aux performances lors d’une exécution du profilage. Cette vue fournit un graphique chronologique et plusieurs listes de fonctions ou d’objets dont le coût est le plus pénalisant quant aux métriques de performances de la méthode de profilage. Les données de cette vue dépendent de la méthode de profilage qui a été utilisée (échantillonnage, instrumentation ou concurrence) et de l’allocation de mémoire .NET si elle a été collectée ou non.
@@ -40,7 +41,7 @@ La vue Résumé affiche des informations sur les fonctions ou les objets dont le
 |Option|Description|
 |-|-|
 |**Afficher le code autre que le code utilisateur**<br /><br /> **Afficher Uniquement mon code**|Non disponible pour le code natif ou pour les données de profilage qui ont été collectées avec la méthode d’instrumentation. Bascule entre l’affichage des données du code utilisateur uniquement (**Afficher Uniquement mon code**) et l’affichage des données de tout le code, notamment le code système (**Afficher le code autre que le code utilisateur**). Par défaut, les données sont limitées au code utilisateur. Pour modifier ce paramètre, consultez [Comment : filtrer les vues de rapport des outils de profilage pour afficher uniquement mon code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
-|**Afficher l’aide**|Affiche les avertissements des règles de performance dans la fenêtre **Liste d’erreurs**. Pour plus d’informations, consultez [Utiliser des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)|
+|**Afficher les conseils**|Affiche les avertissements des règles de performance dans la fenêtre **Liste d’erreurs**. Pour plus d’informations, consultez [Utiliser des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)|
 
 ## <a name="report"></a>Rapport
  Vous pouvez cliquer sur les liens dans la liste Rapport pour ouvrir différentes vues et pour comparer, enregistrer ou filtrer le rapport. La liste est à droite du graphique chronologique.

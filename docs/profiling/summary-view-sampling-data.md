@@ -1,5 +1,6 @@
 ---
 title: Vue Résumé - Données d’échantillonnage | Microsoft Docs
+description: Découvrez comment le mode Résumé affiche des informations sur les fonctions les plus coûteuses en matière de performances dans une exécution de profilage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5d75574e29118beacb6312d2dd013a19894a176
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778204"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718952"
 ---
 # <a name="summary-view---sampling-data"></a>Vue Résumé - Données d’échantillonnage
 La vue Résumé affiche des informations sur les fonctions dont le coût est le plus élevé quant aux performances dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).
@@ -35,7 +36,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la fonction.|
+|**Nom**|Nom de la fonction.|
 |**% des échantillons inclusifs**|Pourcentage de tous les échantillons collectés quand cette fonction ou une fonction appelée par cette fonction s’exécutait.|
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés quand la fonction exécutait du code du corps de la fonction. Ce pourcentage n’inclut pas les échantillons collectés dans les fonctions appelées par cette fonction.|
 
@@ -48,7 +49,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la fonction.|
+|**Nom**|Nom de la fonction.|
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution de la fonction collectés quand la fonction exécutait du code du corps de la fonction. Le pourcentage ne comprend pas les échantillons collectés quand des fonctions appelées par cette fonction étaient en cours d’exécution.|
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,5 +1,6 @@
 ---
 title: Marqueurs, rapport | Documents Microsoft
+description: Découvrez comment le rapport marqueurs répertorie les marqueurs dans le laps de temps affiché et comment le panoramique ou le zoom peut entraîner l’apparition ou la disparition de marqueurs.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808270"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722111"
 ---
 # <a name="markers-report"></a>Rapport des marqueurs
 Le rapport Marqueurs répertorie les marqueurs dans le délai affiché.  Des marqueurs peuvent apparaître ou disparaître en fonction des mouvements panoramiques, des zooms ou des masquages de couloirs effectués. Le rapport contient les informations suivantes sur chaque marqueur :

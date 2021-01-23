@@ -1,5 +1,6 @@
 ---
 title: span, classe | Microsoft Docs
+description: En savoir plus sur la classe span et la façon dont elle définit une phase de l’application. En savoir plus sur les constructeurs publics et la hiérarchie d’héritage de la classe span.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979755"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720044"
 ---
 # <a name="span-class"></a>span, classe
 Définit une phase de l’application.
@@ -32,7 +33,7 @@ class span;
 
 ### <a name="public-constructors"></a>Constructeurs publics
 
-|Nom|Description|
+|Name|Description|
 |----------|-----------------|
 |[span::span, constructeur](../profiling/span-span-constructor.md)|Initialise une nouvelle instance de la classe `span`.|
 |[span::~span, destructeur](../profiling/span-tilde-span-destructor.md)|Détruit l’objet `span` et libère ses ressources.|

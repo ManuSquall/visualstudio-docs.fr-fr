@@ -1,5 +1,6 @@
 ---
 title: Présentation des valeurs des données de conflit de ressources | Microsoft Docs
+description: Découvrez comment le profilage de conflit de ressources collecte des informations détaillées lorsque les threads en concurrence dans une application sont obligés d’attendre l’accès à une ressource partagée.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f522d1854cae86d9dc6e757ef0c9a62f4511800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a724c360641926bcb64552f6f26e92d3c524011
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779985"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722202"
 ---
 # <a name="understand-resource-contention-data-values"></a>Comprendre le fonctionnement des valeurs de données de contention de ressources
 

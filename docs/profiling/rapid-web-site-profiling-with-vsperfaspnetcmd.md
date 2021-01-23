@@ -1,5 +1,6 @@
 ---
 title: Profilage de site web rapide avec VSPerfASPNETCmd | Microsoft Docs
+description: Découvrez comment l’outil en ligne de commande VSPerfASPNETCmd vous permet de Profiler facilement des applications Web ASP.NET.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08604b95f49f55a5fea254447046d305d8feff9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771690"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720421"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage rapide de sites web avec VSPerfASPNETCmd
 
@@ -103,5 +104,5 @@ Vous pouvez ajouter les options suivantes aux commandes répertoriées plus haut
 
 |Option|Description|
 |------------|-----------------|
-|**/Output :**`VspFile`|Par défaut, les données de profilage (.* vsp*) est créé dans le répertoire actif avec le nom de fichier **PerformanceReport. vsp**. Utilisez l’option /output pour spécifier un autre emplacement, le nom du fichier ou les deux.|
+|**/Output :**`VspFile`|Par défaut, les données de profilage (.*vsp*) est créé dans le répertoire actif avec le nom de fichier **PerformanceReport. vsp**. Utilisez l’option /output pour spécifier un autre emplacement, le nom du fichier ou les deux.|
 |**/PackSymbols:Off**|Par défaut, VsPerfASPNETCmd incorpore les symboles (noms de fonctions et de paramètres, etc.) dans le fichier .*vsp*. L’incorporation des symboles peut rendre le fichier de données de profilage très volumineux. Si vous avez accès au. fichiers *PDB* qui contiennent les symboles quand vous analysez les données, utilisez l’option/packsymbols : OFF pour désactiver l’incorporation des symboles.|

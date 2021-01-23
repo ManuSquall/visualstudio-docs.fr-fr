@@ -1,5 +1,6 @@
 ---
 title: Ligne de commande de profilage-créer des rapports de base
+description: Découvrez les options Résumé et CallTrace de VSPerfReport.exe, qui créent des rapports. csv (valeurs séparées par des virgules) à partir d’un fichier de données de profilage. vsp ou. vsps.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808849"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718939"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Créer des rapports de profilage de base à partir de la ligne de commande
 Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rapports de valeurs séparées par des virgules (.*csv*) à partir d’un fichier de données de profilage .*vsp* ou .*vsps*. Pour une description de toutes les options de rapport, consultez [VSPerfReport](../profiling/vsperfreport.md).
@@ -39,7 +40,7 @@ Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rap
 |**CallTree**|Représente les chemins d’exécution et les données de profilage des fonctions dans l’exécution du profilage.|-   [Données d’instrumentation](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Échantillonnage des données](../profiling/call-tree-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Données de conflit](../profiling/call-tree-view-contention-data.md)|
 |**Compteur**|Répertorie les marques de profilage et les valeurs de compteur de performances Windows qui ont été collectés pendant l’exécution du profilage.|-   [Affichage des marques](../profiling/marks-view.md)|
 |**AdressesIP**|Répertorie les données de profilage par instruction.|-   [Échantillonnage des données](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Données de conflit](../profiling/instruction-pointers-ips-view-contention-data.md)|
-|**Life**|Répertorie la durée de vie des objets alloués.|-   [Vue durée de vie des objets](../profiling/object-lifetime-view.md)|
+|**Assurance**|Répertorie la durée de vie des objets alloués.|-   [Vue durée de vie des objets](../profiling/object-lifetime-view.md)|
 |**Ligne**|Répertorie les données de profilage par ligne de code source.|-   [Échantillonnage des données](../profiling/lines-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Données de conflit](../profiling/lines-view-contention-data.md)|
 |**En-tête**|Informations d’en-tête du fichier de données de profilage.|Spécifique au fichier.|
 |**Marque**|Marques de profilage collectées lors de l’exécution du profilage.|-   [Affichage des marques](../profiling/marks-view.md)|

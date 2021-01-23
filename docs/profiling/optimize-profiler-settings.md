@@ -1,5 +1,6 @@
 ---
 title: Optimisation des paramètres du profileur | Microsoft Docs
+description: Découvrez comment le profileur de performances et la fenêtre de Outils de diagnostic dans Visual Studio présentent de nombreux paramètres différents qui affectent les performances globales des outils.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400309"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722839"
 ---
 # <a name="optimizing-profiler-settings"></a>Optimisation des paramètres du profileur
 
@@ -22,7 +23,7 @@ Le profileur de performances et la fenêtre de Outils de diagnostic dans Visual 
 
 ## <a name="symbol-settings"></a>Paramètres des symboles
 
-Les paramètres de symboles disponibles dans les options du débogueur (options de débogage **> > symboles** ou **outils > options > le débogage > symboles** ) ont un impact significatif sur la durée nécessaire à la génération des résultats dans les outils. L’activation des serveurs de symboles ou l’utilisation du **_NT_SYMBOL_PATH** amène le profileur à demander des symboles pour chaque module chargé dans un rapport. Actuellement, le profileur charge toujours automatiquement tous les symboles, quelle que soit la préférence de chargement automatique des symboles.
+Les paramètres de symboles disponibles dans les options du débogueur (options de débogage **> > symboles** ou **outils > options > le débogage > symboles**) ont un impact significatif sur la durée nécessaire à la génération des résultats dans les outils. L’activation des serveurs de symboles ou l’utilisation du **_NT_SYMBOL_PATH** amène le profileur à demander des symboles pour chaque module chargé dans un rapport. Actuellement, le profileur charge toujours automatiquement tous les symboles, quelle que soit la préférence de chargement automatique des symboles.
 
 ![Page chargement de symboles](../profiling/media/symbolloading.png "Chargement de symboles")
 

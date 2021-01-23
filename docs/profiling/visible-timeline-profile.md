@@ -1,5 +1,6 @@
 ---
 title: Profil de chronologie visible | Microsoft Docs
+description: Découvrez que le profil de chronologie visible pour la vue de blocage des threads fournit des informations statistiques et des liens vers des rapports.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4b8725a6336218bdac413b12a20ff201dd0c287
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823463"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723164"
 ---
 # <a name="visible-timeline-profile"></a>Profil de chronologie visible
 Le profil de chronologie visible pour la vue du blocage des threads fournit des informations statistiques et des liens vers des rapports. Quand vous effectuez un zoom avant ou arrière, que vous faites défiler horizontalement ou bien que vous affichez ou masquez les canaux, les nombres dans la légende active changent pour refléter le contenu actuel de la vue. Pour afficher un rapport sur un élément dans la légende, cliquez sur cet élément.

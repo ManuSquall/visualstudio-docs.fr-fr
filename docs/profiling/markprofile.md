@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
+description: La méthode MarkProfile insère une marque de profil dans le fichier. vsp. Le profilage du thread contenant la fonction MarkProfile doit être ON pour que la marque soit insérée.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778568"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718861"
 ---
 # <a name="markprofile"></a>MarkProfile
 La méthode `MarkProfile` insère une marque de profil dans le fichier .*vsp*. Le profilage pour le thread contenant la fonction `MarkProfile` doit être activé pour la marque à insérer.
@@ -63,7 +64,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 
  Bibliothèque d’importation : *VSPerf.lib*
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Le code suivant illustre la fonction MarkProfile.
 
 ```cpp

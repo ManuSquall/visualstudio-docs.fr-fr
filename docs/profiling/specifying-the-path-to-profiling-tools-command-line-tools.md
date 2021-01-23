@@ -1,5 +1,6 @@
 ---
 title: Spécification du chemin d’accès aux outils en ligne de commande de profilage
+description: Spécifiez le chemin d’accès aux outils en ligne de commande des outils de profilage lorsque le chemin d’accès de Outils de profilage outils en ligne de commande n’est pas ajouté à la variable d’environnement PATH.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fb445e23b5d507bafb7fece40bf606bbfb76c370
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa1cb81d46f0977de2db9d78c6db53f542faa70f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809183"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720031"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Spécifier le chemin des outils en ligne de commande des outils de profilage
 

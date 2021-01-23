@@ -1,5 +1,6 @@
 ---
 title: PF | Microsoft Docs
+description: Découvrez comment l’option VSPerfCmd.exe PF définit l’événement de profilage qui est échantillonné sur les défauts de page et modifie le nombre de défauts de page dans un intervalle d’échantillonnage.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: b920b641a7bfc4583af7b0ec5a9692a25c19adb5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "74778412"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719550"
 ---
 # <a name="pf"></a>PF
 L’option *VSPerfCmd.exe* **PF** définit l’événement de profilage qui est échantillonné sur les défauts de page et, éventuellement, modifie le nombre de défauts de page dans un intervalle d’échantillonnage à partir de la valeur par défaut de 10.
@@ -55,7 +56,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 
  **GC**[**:**{**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut (**allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont également collectées à chaque événement garbage collection.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  Cet exemple montre comment définir l’événement d’échantillonnage du profilage sur les défauts de page, et comment définir l’intervalle d’échantillonnage sur 20 défauts de page.
 
 ```cmd

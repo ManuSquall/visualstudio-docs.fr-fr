@@ -1,5 +1,6 @@
 ---
 title: Marqueurs de messages | Microsoft Docs
+description: Découvrez comment vous pouvez exporter des messages dans un fichier texte pour les utiliser avec d’autres outils et placer le pointeur sur un message dans le visualiseur concurrentiel pour afficher la chaîne de message.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d8e4d493173cb50f62510a9b776701a0b199f47
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62830076"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720564"
 ---
 # <a name="message-markers"></a>Marqueurs de messages
 Un jeton de message représente une sortie de journal. Un message est une chaîne émise par un thread spécifique à un moment donné. Vous pouvez exporter des messages vers un fichier texte en vue de les utiliser avec d’autres outils. Vous pouvez placer le pointeur sur un message dans le visualiseur concurrentiel pour afficher la chaîne du message. Vous pouvez afficher tous les marqueurs de messages dans le [rapport marqueurs](../profiling/markers-report.md).  L’illustration suivante présente un marqueur de message.
