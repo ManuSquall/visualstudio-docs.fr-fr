@@ -1,5 +1,7 @@
 ---
 title: Personnaliser les colonnes de vue des rapports | Microsoft Docs
+description: Vous pouvez ajouter, supprimer et réorganiser des colonnes dans les vues des outils de performances de Visual Studio, par exemple, dans la vue fonctions, la vue processus et l’appelant/appelé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851175"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800446"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Guide pratique pour personnaliser les colonnes de la vue de rapport
 Les outils d’analyse des performances de Visual Studio Team System Development Edition sont entièrement intégrés à l’environnement de développement intégré (IDE) pour fournir une expérience utilisateur transparente. La liste qui suit répertorie les vues que vous pouvez personnaliser en ajoutant, en supprimant et en réorganisant des colonnes :

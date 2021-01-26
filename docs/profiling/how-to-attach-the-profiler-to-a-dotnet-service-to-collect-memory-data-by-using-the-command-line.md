@@ -1,5 +1,6 @@
 ---
 title: Attacher le profileur au service .NET pour collecter des données de mémoire
+description: Utilisez les outils en ligne de commande Visual Studio Outils de profilage pour attacher le profileur à un service .NET Framework et collecter des données de mémoire.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e31404c07fb7093bb2bd1114340cdb87d3c8558a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811069"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800586"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Comment : attacher le profileur à un service de .NET Framework pour collecter des données de mémoire à l’aide de la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service .NET Framework et collecter des données de mémoire. Vous pouvez collecter des données sur le nombre et la taille des allocations de mémoire, ainsi que des données sur la durée de vie des objets en mémoire.
@@ -87,7 +88,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    - Spécifiez l’ID de processus ou le nom de processus du service. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.
 
-   - **TargetCLR :** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.
+   - **TargetCLR :** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. facultatif.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
  Pendant l’exécution du service, vous pouvez utiliser les options de *VSPerfCmd.exe* pour démarrer et arrêter l’écriture des données dans le fichier de données du profileur. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, comme le démarrage ou l’arrêt de l’application.
@@ -111,7 +112,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - Arrête le service.
 
-         - ou -
+         -ou-
 
     - Tapez **VSPerfCmd/detach**
 
@@ -123,7 +124,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
      **VSPerfClrEnv /globaloff**
 
-4. Redémarrez l’ordinateur.
+4. Redémarrez l'ordinateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

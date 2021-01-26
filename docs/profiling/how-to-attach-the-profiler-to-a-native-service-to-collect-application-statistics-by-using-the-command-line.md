@@ -1,5 +1,6 @@
 ---
 title: Attacher le profileur à un service natif pour obtenir des statistiques d’application
+description: Utilisez Visual Studio Outils de profilage à partir de la ligne de commande pour collecter des statistiques de performances à partir d’un service natif.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb36988c17ecf55a5a53d14da03dc993b4d59250
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fa6b1733d7c3d31d32294c3e08b29a072d37730
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808013"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801096"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>Comment : attacher le profileur à un service natif pour collecter des statistiques d’applications à l’aide de la ligne de commande (VSPerfCmd)
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service natif et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.
@@ -44,7 +45,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    - L’option **/Start : Sample** Initialise le profileur.
 
-   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.* vsp*).
+   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.*vsp*).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
@@ -54,7 +55,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | Option | Description |
    | - | - |
    | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Spécifie le nom de domaine et d’utilisateur du compte propriétaire du processus profilé. Cette option n’est nécessaire que si le processus s’exécute sous le compte d’un utilisateur autre que celui connecté. Le propriétaire du processus est répertorié dans la colonne Nom d’utilisateur, sous l’onglet Processus du gestionnaire des tâches de Windows. |
-   | [/CrossSession](../profiling/crosssession.md) | Active le profilage des processus dans d’autres sessions. Cette option est nécessaire si l’application s’exécute dans une autre session. L’ID de session est répertorié dans la colonne ID de session, sous l’onglet Processus du gestionnaire des tâches de Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**. |
+   | [/CrossSession](../profiling/crosssession.md) | Active le profilage des processus dans d’autres sessions. Cette option est nécessaire si l’application s’exécute dans une autre session. L’ID de session est répertorié dans la colonne ID de session, sous l’onglet Processus du Gestionnaire des tâches de Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**. |
    | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/AutoMark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl). |
@@ -96,7 +97,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - Arrête le service.
 
-         - ou -
+         -ou-
 
     - Tapez **VSPerfCmd/detach**
 

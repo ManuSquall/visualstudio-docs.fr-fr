@@ -1,5 +1,7 @@
 ---
 title: Bouton Exporter (visualiseur concurrentiel) | Microsoft Docs
+description: Passez en revue le bouton Exporter dans le visualiseur concurrentiel. Le bouton Exporter vous permet d’exporter la pile des appels dans un fichier. csv pour vos propres enregistrements.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec5395dccaf3d97d7b2b517cbecfec12826594e2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969899"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801451"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Exporter, bouton (visualiseur concurrentiel)
 Le bouton **Exporter** vous permet d’exporter la pile des appels en tant que. fichier *CSV* pour vos propres enregistrements ou pour une utilisation avec un autre outil tel que Microsoft Excel.

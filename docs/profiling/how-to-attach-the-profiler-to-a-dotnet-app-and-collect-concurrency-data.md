@@ -1,5 +1,6 @@
 ---
 title: Attacher le profileur à .NET pour collecter des données d’accès concurrentiel
+description: Apprenez à obtenir des données de concurrence de processus et de threads à l’aide de Visual Studio Outils de profilage les outils en ligne de commande pour attacher le profileur à une application .NET Framework en cours d’exécution.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e071df829d01d638fb268f4f52df2ce731f75c1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4d584d9d6cecc4d5df0f3c32172d4aeec9c02c97
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808036"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801127"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des données de concurrence en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application .NET Framework autonome (cliente) en cours d’exécution et collecter des données de concurrence sur les processus et les threads.
@@ -55,7 +56,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - [/lineoff](../profiling/lineoff.md) désactive la collecte des données de numéro de ligne.
 
-    - [/TargetCLR](../profiling/targetclr.md) **:** `Version` spécifie la version du Common Language Runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.
+    - [/TargetCLR](../profiling/targetclr.md) **:** `Version` spécifie la version du Common Language Runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. facultatif.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
  Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de *VSPerfCmd.exe*. En contrôlant la collecte des données, vous pouvez collecter des données pour une phase spécifique de l’exécution du programme, comme le démarrage ou l’arrêt de l’application.
@@ -79,7 +80,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - Tapez **VSPerfCmd/detach**
 
-         - ou -
+         -ou-
 
     - Fermez l’application cible.
 

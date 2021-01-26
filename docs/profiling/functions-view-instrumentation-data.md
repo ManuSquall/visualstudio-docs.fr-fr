@@ -1,5 +1,7 @@
 ---
 title: Vue Fonctions - Données d’instrumentation | Microsoft Docs
+description: Lisez les descriptions des colonnes de données de profilage dans la vue rapport de fonctions, qui répertorie les données de profilage par nom de fonction.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779218"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801364"
 ---
 # <a name="functions-view---instrumentation-data"></a>Fonctions, vue - données d’instrumentation
 La vue du rapport Fonctions répertorie les données de profilage par nom de fonction.

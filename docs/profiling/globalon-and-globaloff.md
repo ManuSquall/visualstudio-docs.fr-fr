@@ -1,5 +1,7 @@
 ---
 title: GlobalOn et GlobalOff | Microsoft Docs
+description: Passez en revue les options GlobalOn et GlobalOff dans VSPerfCmd.exe. Ces options suspendent et reprennent le profilage des processus et des threads dans une session de profilage en ligne de commande.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74776964"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801346"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn et GlobalOff
 Les options **globaloff** et **GlobalOn** *VSPerfCmd.exe* suspendent et reprennent le profilage de tous les processus et threads dans une session de profilage en ligne de commande.

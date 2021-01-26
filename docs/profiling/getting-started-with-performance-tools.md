@@ -1,5 +1,7 @@
 ---
 title: Bien démarrer avec les outils d’analyse des performances | Microsoft Docs
+description: Découvrez les différentes façons dont Visual Studio permet de collecter, d’afficher et d’analyser les données de performances du code.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f168c4c88ba12ff1f1c9bd0543e9d2b74ae095c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779205"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801508"
 ---
 # <a name="getting-started-with-performance-tools"></a>Bien démarrer avec les outils d’analyse des performances
 
@@ -27,9 +29,9 @@ Visual Studio propose plusieurs façons de collecter, afficher et analyser les d
 
 - Des rapports de performances offrent des vues des différents niveaux de votre structure d’application, des lignes de code source et des processus. Des rapports de performances affichent les données d’exécution d’application, des fonctions appelantes et appelées d’une fonction spécifique jusqu’à l’arborescence des appels de l’application entière.
 
-Pour profiler rapidement un projet, une application ou un site Web ASP.net, sélectionnez **Déboguer**le  >  **profileur de performances**et sélectionnez **Assistant Performance**. Pour obtenir des instructions détaillées, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md) et [Guide pratique pour collecter les données de performances d’un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+Pour profiler rapidement un projet, une application ou un site Web ASP.net, sélectionnez **Déboguer** le  >  **profileur de performances** et sélectionnez **Assistant Performance**. Pour obtenir des instructions détaillées, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md) et [Guide pratique pour collecter les données de performances d’un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
 
-Pour spécifier et configurer manuellement une session de profilage des performances, sélectionnez **Déboguer**le  >  **profileur**  >  **Explorateur de performances**. Utilisez le dossier **Cibles** et les pages de **Propriétés** dans l’**Explorateur de performances** pour configurer des sessions. Pour obtenir des instructions, consultez [Guide pratique pour créer manuellement des sessions de performance](../profiling/how-to-manually-create-performance-sessions.md).
+Pour spécifier et configurer manuellement une session de profilage des performances, sélectionnez **Déboguer** le  >  **profileur**  >  **Explorateur de performances**. Utilisez le dossier **Cibles** et les pages de **Propriétés** dans l’**Explorateur de performances** pour configurer des sessions. Pour obtenir des instructions, consultez [Guide pratique pour créer manuellement des sessions de performance](../profiling/how-to-manually-create-performance-sessions.md).
 
 **Voir aussi :**
 

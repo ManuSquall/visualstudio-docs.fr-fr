@@ -1,5 +1,6 @@
 ---
 title: Créer un rapport de comparaison du profileur (ligne de commande)
+description: Utilisez VSPerfReport.exe à partir de la ligne de commande pour comparer les résultats de deux fichiers de données du profileur. La comparaison présente les différences entre les sessions de profilage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d370a7465428da4f2582f4f765c1d81ae017af48
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e647d467dcbc397fe261c2ea83f6fa9ab1bba7b6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809386"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800388"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Guide pratique pour créer un rapport de comparaison du profileur à partir d’une invite de commandes
 Vous pouvez générer un rapport des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui compare les données de performances de deux fichiers de données de profilage (.*vsp* ou .*vsps*). Le rapport montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre. Les valeurs du rapport présentent le delta, ou la modification, à partir de la base de référence du premier fichier que vous spécifiez. Le delta est calculé en déterminant la différence entre l’ancienne valeur, qui est la valeur de la base de référence, et la valeur résultant de la nouvelle analyse. Les comparaisons des données du profileur peuvent être basées sur les fonctions du code, les modules de l’application, les lignes, les pointeurs d’instruction et les types.

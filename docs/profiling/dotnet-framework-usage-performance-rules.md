@@ -1,5 +1,7 @@
 ---
 title: Règles de performances de l’utilisation du .NET Framework | Microsoft Docs
+description: Comprendre les règles de performance dans la catégorie utilisation .NET Framework. Identifiez des méthodes spécifiques qui peuvent être optimisées et identifier des modèles d’utilisation plus généraux.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532000"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801298"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Règles de performance de l’utilisation du .NET Framework
 Les règles de performances de la catégorie Utilisation du .NET Framework permettent d’identifier les méthodes qui peuvent être optimisées, ainsi que des modèles d’utilisation plus généraux, tels que le garbage collection et les conflits de verrou, qui peuvent être examinés pour comprendre les problèmes de performances.

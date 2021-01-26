@@ -1,5 +1,7 @@
 ---
 title: Vue Fonctions - Données d’échantillonnage | Microsoft Docs
+description: En savoir plus sur la vue rapport de fonctions pour la méthode de profil d’échantillonnage, qui répertorie les fonctions échantillonnées pendant l’exécution du profilage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f30849ff7503d9301ee94408df0cd7b14f65fea
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780024"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801250"
 ---
 # <a name="functions-view---sampling-data"></a>Fonctions, vue - données d’échantillonnage
 La vue de rapport Fonctions de la méthode de profilage par échantillonnage répertorie les fonctions échantillonnées pendant l’exécution du profilage.

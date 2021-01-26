@@ -1,5 +1,7 @@
 ---
 title: Vue Fonctions - Données de conflit | Microsoft Docs
+description: Obtenir des détails sur la vue de rapport des fonctions des données de conflit, qui répertorie les fonctions de l’exécution du profilage qui ont été bloquées pendant l’exécution du profilage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780050"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801667"
 ---
 # <a name="functions-view---contention-data"></a>Fonctions, vue - données de conflit
 La vue de rapport Fonctions des données de conflit répertorie les fonctions dans l’exécution du profilage dont l’exécution a été bloquée pendant l’exécution du profilage.

@@ -1,5 +1,7 @@
 ---
 title: Collecter les données des compteurs UC | Microsoft Docs
+description: Découvrez comment utiliser des compteurs d’événements UC (matériel) pour collecter les données de performances spécifiques au matériel. Cet article répertorie les différents types d’événements.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851279"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801562"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Guide pratique pour collecter les données des compteurs UC
 
@@ -30,9 +32,9 @@ Il existe deux types d’événements de compteur UC :
 
 - Événements de plateforme : événements UC associés à un processeur particulier.
 
-  Les événements portables sont des événements généraux, tels que des instructions retirées, des cycles hors interruption, des événements de mémoire tampon UC, des événements de branche et des événements du cache L2. Les compteurs d’événements de plateforme disponibles dépendent du fabricant du processeur.
+Les événements portables sont des événements généraux, tels que des instructions retirées, des cycles hors interruption, des événements de mémoire tampon UC, des événements de branche et des événements du cache L2. Les compteurs d’événements de plateforme disponibles dépendent du fabricant du processeur.
 
-  Les catégories d’événements peuvent être partagées entre les compteurs d’événements portables et de plateforme. Par exemple, les catégories de données suivantes sont souvent communes aux deux types :
+Les catégories d’événements peuvent être partagées entre les compteurs d’événements portables et de plateforme. Par exemple, les catégories de données suivantes sont souvent communes aux deux types :
 
 - Événements mémoire
 
@@ -40,7 +42,7 @@ Il existe deux types d’événements de compteur UC :
 
 - Événements de branche
 
-  Vous pouvez collecter les données de compteur de performances de deux manières dans le profileur :
+Vous pouvez collecter les données de compteur de performances de deux manières dans le profileur :
 
 - Collecter des données à partir d’un ou plusieurs compteurs lors d’un profilage par instrumentation
 

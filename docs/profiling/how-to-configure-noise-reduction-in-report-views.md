@@ -1,5 +1,7 @@
 ---
 title: Configurer la réduction du bruit dans les vues des rapports | Microsoft Docs
+description: Utilisez la suppression et le repli, tous deux activés par défaut, pour réduire le bruit et rendre les problèmes de performances plus évidents dans vos rapports.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851227"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800436"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Guide pratique pour configurer la réduction du bruit dans les vues Rapports
 Vous pouvez configurer la réduction du bruit dans les rapports de performances en limitant la quantité de données affichées dans la vue Arborescence des appels et la vue Allocation. La réduction du bruit vous permet de repérer plus rapidement les problèmes de performances. Cette fonctionnalité est utile lorsque vous analysez des rapports de performances.

@@ -1,5 +1,6 @@
 ---
 title: Attacher le profileur à un service natif pour obtenir des données de concurrence
+description: Utilisez Visual Studio Outils de profilage à partir de la ligne de commande pour collecter des données de concurrence de processus et de thread à partir d’un service natif (C/C++).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55398d2ab914ea03b431557775e1bd1064969590
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 233d6d77fad3997fead9126065b2f867ac8ffd2e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808000"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801079"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>Comment : attacher le profileur à un service natif pour collecter des données d’accès concurrentiel à l’aide de la ligne de commande (VSPerfCmd)
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service natif (C/C++) et collecter des données de concurrence sur les processus et les threads à l’aide de la méthode d’échantillonnage.

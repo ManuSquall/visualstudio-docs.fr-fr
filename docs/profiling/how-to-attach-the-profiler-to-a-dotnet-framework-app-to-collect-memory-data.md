@@ -1,5 +1,6 @@
 ---
 title: Attacher le profileur à .NET pour collecter des données de mémoire
+description: Apprenez à utiliser les outils en ligne de commande de Visual Studio Outils de profilage pour attacher le profileur à une application en cours d’exécution .NET Framework autonome (client) et obtenir des données de mémoire.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88b3eedf8989b4c7421ecb7504b18997058a0204
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a80e4201f04565aaa163d58bca8e13ae715b09f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811108"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801108"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des données de mémoire en utilisant la ligne de commande
 
@@ -71,7 +72,7 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
     - `PID` spécifie l’ID de processus de l’application cible. `ProcessName` spécifie le nom du processus. Notez que si vous spécifiez `ProcessName` et que plusieurs processus de même nom sont en cours d’exécution, les résultats sont imprévisibles. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.
 
-    - **/TargetCLR :** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.
+    - **/TargetCLR :** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. facultatif.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
 
@@ -97,7 +98,7 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
     - Tapez **VSPerfCmd/detach**
 
-         - ou -
+         -ou-
 
     - Fermez l’application cible.
 

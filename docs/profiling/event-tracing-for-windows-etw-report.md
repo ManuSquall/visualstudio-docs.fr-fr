@@ -1,5 +1,7 @@
 ---
 title: Suivi des événements pour Windows (ETW), rapport | Microsoft Docs
+description: En savoir plus sur le rapport Suivi d’v nements pour Windows (ETW), qui répertorie les événements ETW enregistrés dans une session de performance de Visual Studio Outils de profilage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7167f2fb5c78a6fa8c3d83fb56c2c2eba217516
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779296"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801417"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Suivi des événements pour Windows (ETW), rapport
-Le rapport Suivi des événements pour Windows (ETW) liste les événements ETW enregistrés dans une session de performances des Outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données ETW sont collectées dans un fichier binaire (.* fichier ETL*).
+Le rapport Suivi des événements pour Windows (ETW) liste les événements ETW enregistrés dans une session de performances des Outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données ETW sont collectées dans un fichier binaire (.*fichier ETL*).
 
 > [!NOTE]
 > Vous ne pouvez pas afficher les rapports de suivi des événements pour Windows dans l’interface de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

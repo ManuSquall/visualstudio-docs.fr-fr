@@ -1,5 +1,7 @@
 ---
-title: collecter des données de performances pour un site web | Microsoft Docs
+title: Collecter les données de performances d’un site Web | Librairie
+description: Découvrez comment utiliser l’Assistant Performance pour collecter des données de performances pour une application Web ASP.NET. L’application s’exécute sur votre ordinateur local et peut être ouverte dans Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92e70ff7c6d10ad060086230955c27b781dd73be
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851474"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801051"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Guide pratique pour collecter les données de performances d’un site web
 
@@ -46,7 +48,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
 1. Ouvrez le projet web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dans Visual Studio.
 
-2. Dans le menu **Analyser**, sélectionnez **Profileur de performances**, **Explorateur de performances**, puis**Démarrer**.
+2. Dans le menu **Analyser**, sélectionnez **Profileur de performances**, **Explorateur de performances**, puis **Démarrer**.
 
 3. Sur la première page de l’Assistant, sélectionnez une méthode de profilage, puis cliquez sur **Suivant**. Pour plus d’informations sur les méthodes de profilage, consultez [Présenter les méthodes de collecte des performances](../profiling/understanding-performance-collection-methods.md). Notez que la méthode de profilage du visualiseur concurrentiel n’est pas disponible pour les applications web.
 
@@ -70,7 +72,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
 1. Ouvrez Visual Studio.
 
-2. Dans le menu **Analyser**, sélectionnez **Profileur de performances**, **Explorateur de performances**, puis**Démarrer**.
+2. Dans le menu **Analyser**, sélectionnez **Profileur de performances**, **Explorateur de performances**, puis **Démarrer**.
 
 3. Sur la première page de l’Assistant, sélectionnez une méthode de profilage, puis cliquez sur **Suivant**. Pour plus d’informations, consultez [Understanding Performance Collection Methods](../profiling/understanding-performance-collection-methods.md) (Fonctionnement des méthodes de collecte des données de performances).
 

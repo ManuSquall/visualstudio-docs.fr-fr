@@ -1,5 +1,7 @@
 ---
 title: Segment de chronologie vide | Microsoft Docs
+description: Dans le visualiseur concurrentiel Visual Studio, comprenez la raison pour laquelle une section d’une chronologie peut être vide (a un arrière-plan blanc) pour un type de canal.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970107"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801432"
 ---
 # <a name="empty-timeline-segment"></a>Segment de chronologie vide
 Dans le visualiseur concurrentiel, la raison d’un segment de chronologie vide (avec un arrière-plan blanc) dépend du type de canal.

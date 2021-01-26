@@ -1,5 +1,7 @@
 ---
 title: Marqueurs indicateurs | Microsoft Docs
+description: En savoir plus sur les marqueurs d’indicateur dans le visualiseur concurrentiel Visual Studio. Un marqueur indicateur représente un événement qui s’est produit à un instant donné dans une application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969945"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801476"
 ---
 # <a name="flag-markers"></a>Marqueurs indicateurs
 Un marqueur indicateur représente un événement qui s’est produit à un instant donné dans une application. Un indicateur peut représenter de nombreux types d’événements d’application. Par exemple, un indicateur peut apparaître lorsqu’un élément de travail a été planifié ou lorsqu’une exception a été levée. Les runtimes, tels que la bibliothèque parallèle de tâches, peuvent également générer des indicateurs.

@@ -1,5 +1,7 @@
 ---
 title: Vues de données de mémoire .NET | Microsoft Docs
+description: Consultez des liens vers des informations de référence pour les vues et les rapports des fichiers de données du profileur qui contiennent des données de profilage de mémoire .NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779270"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801277"
 ---
 # <a name="net-memory-data-views"></a>Vues des données de la mémoire .NET
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage de mémoire .NET.
@@ -75,7 +77,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les données d’allocation de mémoire des fonctions instrumentées lors de l’exécution du profilage.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Vue Informations relatives à la fonction](../profiling/function-details-view.md)
 
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.

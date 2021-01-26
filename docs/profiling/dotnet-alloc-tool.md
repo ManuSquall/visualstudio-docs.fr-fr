@@ -1,5 +1,7 @@
 ---
 title: Analyser l’utilisation de la mémoire pour les objets .NET | Microsoft Docs
+description: Affichez la quantité de mémoire utilisée par votre application et les chemins de code qui allouent le plus de mémoire à l’aide de l’outil d’allocation d’objets .NET.
+ms.custom: SEO-VS-2020
 ms.date: 12/9/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970228"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801491"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .NET
 
@@ -22,7 +24,7 @@ Vous pouvez voir la quantité de mémoire utilisée par votre application et les
 
 Après avoir exécuté l’outil, vous pouvez voir les chemins d’exécution des fonctions où les objets sont alloués. Vous pouvez ensuite effectuer le suivi jusqu’à la racine de l’arborescence des appels qui occupe la plus grande partie de la mémoire.
 
-## <a name="setup"></a>Programme d’installation
+## <a name="setup"></a>Configuration
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 

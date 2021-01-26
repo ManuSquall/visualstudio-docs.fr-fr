@@ -1,5 +1,7 @@
 ---
 title: Filtrage des vues des rapports | Microsoft Docs
+description: Dans Visual Studio, appliquez des filtres aux fichiers de données de profilage pour limiter les données de profilage affichées dans les vues de rapport de performances et exportées vers les fichiers de rapport.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6ba3e207b180b26ea4b53765926b16fb2e85d48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779244"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801445"
 ---
 # <a name="filter-report-views"></a>Filtrer les vues des rapports
 Vous pouvez appliquer des filtres aux fichiers de données de profilage pour limiter les données qui sont affichées dans les vues des rapports de performances et exportées dans les fichiers de rapport. Vous pouvez limiter un rapport aux données entre des valeurs d’horodatage, et limiter les données à des processus et des threads spécifiques. Vous pouvez enregistrer les filtres dans un fichier, puis créer un filtre sur un autre fichier de données de profilage en important le filtre enregistré.

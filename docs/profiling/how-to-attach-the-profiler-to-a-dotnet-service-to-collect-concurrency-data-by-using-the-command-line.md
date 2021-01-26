@@ -1,6 +1,7 @@
 ---
 title: Attacher le profileur à .NET pour collecter des données d’accès concurrentiel-ligne de commande
 titleSuffix: ''
+description: Utilisez Visual Studio Outils de profilage pour attacher le profileur à un service .NET Framework et pour obtenir des données de concurrence de processus et de threads à l’aide de la méthode d’échantillonnage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7b9b2e9a90df1b9dcfaaa2fd7b77410e24e32a9a
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: c3b7a8e255094cb03cac8708dbaa4cb4a938db24
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421805"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800373"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service .NET et collecter des données de concurrence en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service .NET Framework et collecter des données de concurrence sur les processus et les threads à l’aide de la méthode d’échantillonnage.
@@ -45,7 +46,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - **/samplelineoff** désactive l’assignation des données collectées à des lignes de code source spécifiques. Lorsque cette option est spécifiée, les données sont assignées uniquement aux fonctions.
 
-4. Redémarrez l’ordinateur.
+4. Redémarrez l'ordinateur.
 
 5. Démarrez le profileur. Tapez :
 
@@ -64,7 +65,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
     |[/CrossSession](../profiling/crosssession.md)|Active le profilage des processus dans d’autres sessions. Cette option est nécessaire si le service s’exécute dans une autre session. L’ID de session est répertorié dans la colonne **ID de session**, sous l’onglet **Processus** du Gestionnaire des tâches de Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**.|
     |[/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath`|Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage.|
     |[/AutoMark](../profiling/automark.md) **:**`Interval`|À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.|
-    |[/Events](../profiling/events-vsperfcmd.md) **:**`Config`|Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.* fichier ETL*).|
+    |[/Events](../profiling/events-vsperfcmd.md) **:**`Config`|Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.*fichier ETL*).|
 
 6. Si nécessaire, démarrez le service.
 
@@ -100,7 +101,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - Arrête le service.
 
-         - ou -
+         -ou-
 
     - Tapez **VSPerfCmd /detach**.
 

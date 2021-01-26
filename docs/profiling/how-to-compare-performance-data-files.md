@@ -1,5 +1,7 @@
 ---
 title: Comparer des fichiers de données de performances | Microsoft Docs
+description: Découvrez comment comparer les résultats de deux fichiers de données du profileur (. vsp ou. vsps) pour trouver les différences, les régressions de performances et les améliorations des performances.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,15 +16,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 40988d23dd8e9b848ea410aa75f4d4c1f45d524d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851240"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800456"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Guide pratique pour comparer des fichiers de données de performances
-Vous pouvez comparer les résultats de deux fichiers de données du profileur (.* vsp* ou. *vsps*) en créant un rapport de comparaison (« diff ») ou une vue. Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.
+Vous pouvez comparer les résultats de deux fichiers de données du profileur (.*vsp* ou. *vsps*) en créant un rapport de comparaison (« diff ») ou une vue. Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.
 
  Le rapport Différences présente les données sous forme de tableau. Le tableau présente les données delta, c’est-à-dire ce qui a été modifié par rapport à la base de référence. Ces données sont calculées en déterminant la différence entre l’ancienne valeur, la valeur de base de référence et la valeur résultante de la nouvelle analyse.
 
@@ -54,6 +56,6 @@ Vous pouvez comparer les résultats de deux fichiers de données du profileur (.
 
 1. Dans le menu **Analyser**, sélectionnez **Comparer les rapports de performances**.
 
-2. Dans la fenêtre **Sélectionner les fichiers d’analyse pour la comparaison** , recherchez et sélectionnez le fichier d’analyse de fichier de **base** (.* vsp* ou. *vsps*) et le **fichier de comparaison** (.* vsp* ou. *vsps*).
+2. Dans la fenêtre **Sélectionner les fichiers d’analyse pour la comparaison** , recherchez et sélectionnez le fichier d’analyse de fichier de **base** (.*vsp* ou. *vsps*) et le **fichier de comparaison** (.*vsp* ou. *vsps*).
 
 3. Cliquez sur **OK**.

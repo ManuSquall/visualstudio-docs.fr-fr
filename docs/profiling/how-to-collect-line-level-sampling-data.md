@@ -1,5 +1,7 @@
 ---
 title: Collecter des données d’échantillonnage au niveau de la ligne | Microsoft Docs
+description: Découvrez comment l’échantillonnage au niveau des lignes du profileur peut révéler le code qui utilise de grandes quantités de temps processeur. Il fonctionne avec le code managé et le code natif.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4653cf4b8c921a0c464dcb148963d3ab33506c25
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3a760980b16fab17fed7180b0bc74e0271c61e1d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851253"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801073"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Guide pratique pour collecter des données d’échantillonnage au niveau ligne
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.
@@ -54,7 +56,7 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
 
      — ou —
 
-- Quand vous démarrez une application, tapez **VSPerfCmd \<other arguments> /LineOff **.
+- Quand vous démarrez une application, tapez **VSPerfCmd \<other arguments> /LineOff**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)

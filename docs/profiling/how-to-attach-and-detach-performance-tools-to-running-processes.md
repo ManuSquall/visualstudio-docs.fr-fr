@@ -1,6 +1,7 @@
 ---
 title: Attacher les outils d’analyse des performances à des processus en cours d’exécution
-ms.custom: seodec18
+description: Apprenez à utiliser le profileur Visual Studio pour attacher ou détacher un processus en cours d’exécution pour faciliter l’échantillonnage et la collecte des données de performances.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331137"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801155"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.

@@ -1,5 +1,7 @@
 ---
 title: Activité GPU (ce processus) | Microsoft Docs
+description: En savoir plus sur les segments activité GPU (ce processus) dans la vue threads du visualiseur concurrentiel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e85fc44977a3d9756965de12e25d13d62dbb89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcfc96f9b29b8fae3bf9a97273ed6c675d1655fb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969536"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801166"
 ---
 # <a name="gpu-activity-this-process"></a>Activité GPU (ce processus)
 Les segments **Activité GPU (ce processus)** de la vue Threads du visualiseur concurrentiel représentent les périodes auxquelles le GPU a traité des demandes pour le compte du processus en cours. Ces demandes sont envoyées au GPU sous forme de paquets d’accès direct à la mémoire (DMA). La longueur d’un segment représente la durée pendant laquelle le GPU a traité un paquet DMA pour le compte du processus en cours.

@@ -1,5 +1,6 @@
 ---
 title: Attacher le profileur à ASP.NET pour collecter les données de mémoire
+description: Utilisez Visual Studio Outils de profilage pour attacher le profileur à une application Web ASP.NET et obtenir des données sur le nombre et la taille des allocations de mémoire .NET Framework.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 22a3f7d20b02839ae677b12e5ce8454e63358914
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 918a370df43e2754721dd715ea6e2559e14160f8
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807974"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801597"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application web ASP.NET et collecter des données de mémoire en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et collecter des données sur le nombre et la taille des allocations de mémoire du .NET Framework. Vous pouvez également collecter des données sur la durée de vie des objets en mémoire du .NET Framework.
@@ -108,7 +109,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    - Tapez **VSPerfCmd** [/detach](../profiling/detach.md)
 
-      - ou -
+      -ou-
 
    - Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Tapez :
 
@@ -122,7 +123,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfCmd /globaloff**
 
-4. Redémarrez l’ordinateur. Si nécessaire, redémarrez Internet Information Services (IIS). Tapez :
+4. Redémarrez l'ordinateur. Si nécessaire, redémarrez Internet Information Services (IIS). Tapez :
 
     **IISReset /start**
 

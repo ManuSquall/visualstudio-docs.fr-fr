@@ -1,5 +1,7 @@
 ---
 title: Vue Fonctions | Microsoft Docs
+description: Obtenir des informations sur la vue fonctions dans le Explorateur de performances Visual Studio. La vue Fonctions répertorie les fonctions appelées lors du profilage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f85e8ddf17e220ff9235fd3d405a61b2efec16e5
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779192"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801234"
 ---
 # <a name="functions-view"></a>Vue Fonctions
 La vue Fonctions répertorie les fonctions appelées lors du profilage.

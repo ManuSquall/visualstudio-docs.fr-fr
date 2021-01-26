@@ -1,5 +1,7 @@
 ---
 title: Durée d’exécution (vue Threads) | Microsoft Docs
+description: Examinez le temps d’exécution dans la vue threads du visualiseur concurrentiel. Le temps d’exécution est représenté par des segments qui indiquent quand un thread fonctionne activement sur un cœur logique.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0cf2a60fd194176b7cd9091f4e7dc7a758006f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f26df8f724d4a17f55ea54c3e7c61e5e1630e635
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969912"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801486"
 ---
 # <a name="execution-time-threads-view"></a>Durée d’exécution (vue Threads)
 Ces segments de la chronologie de la vue Threads représentent la durée d’exécution, lorsque le thread effectue un travail sur un cœur logique du système.
