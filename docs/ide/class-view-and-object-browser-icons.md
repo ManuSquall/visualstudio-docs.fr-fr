@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903999"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773348"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
 
@@ -42,7 +42,7 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |![Symbole de méthode d'extension](../ide/media/extensionmethod.gif)|Méthode d’extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
 |![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|Délégué|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Error|
 |![Symbole d'exception](../ide/media/vxexception_icon.gif)|Exception|![Symbole du modèle](../ide/media/vxtemplate_icon.gif)|Modèle|
-|![Symbole de carte](../ide/media/vxmap_icon.gif)|Mappage|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Inconnu|
+|![Symbole de carte](../ide/media/vxmap_icon.gif)|Mappage|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Unknown|
 |![Symbole de transfert de type](../ide/media/ob_type_forward.gif)|Transfert de type|||
 
 > [!TIP]
@@ -65,6 +65,9 @@ Les icônes de signalisation suivantes s’appliquent à toutes les icônes pré
 
 > [!NOTE]
 > Si votre projet est inclus dans une base de données contenant le contrôle de code source, des icônes de signalisation supplémentaires peuvent s’afficher pour indiquer l’état du contrôle de code source (par exemple, archivé ou extrait).
+
+> [!TIP]
+> Pour afficher d’autres images d’application et icônes qui apparaissent dans Visual Studio, téléchargez la [**bibliothèque d’images Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ## <a name="see-also"></a>Voir aussi
 

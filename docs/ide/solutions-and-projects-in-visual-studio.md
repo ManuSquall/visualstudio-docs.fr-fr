@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847030"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773337"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -65,7 +65,7 @@ Un projet est contenu dans une *solution*. Malgré son nom, une solution n’est
 
 Visual Studio utilise deux types de fichiers (*. sln* et *. suo*) pour stocker les paramètres des solutions :
 
-|Extension|Name|Description|
+|Extension|Nom|Description|
 |---------------|----------|-----------------|
 |.sln|Solution Visual Studio|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|
 |.suo|Options utilisateur de solution|Stocke les personnalisations et les paramètres au niveau de l’utilisateur, tels que les points d’arrêt.|
@@ -102,10 +102,13 @@ La barre d’outils en haut de **Explorateur de solutions** contient des boutons
 
 De nombreuses commandes de menu sont disponibles dans le menu contextuel, accessible par un clic droit, sur les différents éléments de **Explorateur de solutions**. Ces commandes incluent la génération d’un projet, la gestion de packages NuGet, l’ajout d’une référence, l’affectation d’un nouveau nom de fichier et l’exécution de tests, entre autres.
 
-> [!TIP]
-> Si vous avez fermé Explorateur de solutions et que vous souhaitez l’ouvrir à nouveau, choisissez **fenêtre**  >  **Réinitialiser la disposition de fenêtre** dans la barre de menus.
-
 Pour les projets ASP.NET Core, vous pouvez personnaliser la façon dont les fichiers sont imbriqués dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions](file-nesting-solution-explorer.md).
+
+> [!TIP]
+> Si vous avez fermé Explorateur de solutions et que vous souhaitez l’ouvrir à nouveau, choisissez **Afficher** les  >  **Explorateur de solutions** dans la barre de menus ou appuyez sur **CTRL** + **ALT** + **L**. Et, si vous avez fermé les onglets latéraux et que vous souhaitez les restaurer à leurs emplacements par défaut, choisissez **fenêtre**  >  **Réinitialiser la disposition de fenêtre** dans la barre de menus.
+
+> [!NOTE]
+> Pour afficher les images d’application et les icônes qui apparaissent dans Visual Studio, téléchargez la [**bibliothèque d’images Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ## <a name="see-also"></a>Voir aussi
 
