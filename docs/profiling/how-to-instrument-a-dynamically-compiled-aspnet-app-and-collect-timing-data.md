@@ -1,5 +1,7 @@
 ---
 title: Ligne de commande du profileur-instrumentation dynamique ASP.NET application, recevoir des données de minutage
+description: Découvrez comment utiliser les outils en ligne de commande Outils de profilage Visual Studio pour collecter des données de temporisation détaillées pour une application ASP.NET compilée dynamiquement.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f510878c3952cb98bcbee3bfecedf05b87b2658f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 318728a78e6f15d8858aa2f037b890a3bfe8aeca
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327974"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883629"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données temporelles détaillées avec le profileur en utilisant la ligne de commande
 
@@ -38,7 +40,7 @@ Démarrez le profileur, puis exécutez l’application cible. Lorsque le profile
 
     - **/globaltraceon** permet le profilage à l’aide de la méthode d’instrumentation.
 
-4. Redémarrez l’ordinateur.
+4. Redémarrez l'ordinateur.
 
 ## <a name="run-the-profiling-session"></a>Exécuter la session de profilage
 
@@ -50,7 +52,7 @@ Démarrez le profileur, puis exécutez l’application cible. Lorsque le profile
 
    - L’option **/Start : trace** Initialise le profileur.
 
-   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.* vsp*).
+   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.*vsp*).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:trace**.
 
@@ -65,7 +67,7 @@ Démarrez le profileur, puis exécutez l’application cible. Lorsque le profile
      | [/Counter](../profiling/counter.md) **:**`Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans `Config`. Les informations du compteur sont ajoutées aux données collectées à chaque événement de profilage. |
      | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
      | [/AutoMark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
-     | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.* fichier ETL*). |
+     | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.*fichier ETL*). |
 
 3. Démarrez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de manière habituelle.
 
@@ -111,7 +113,7 @@ Lorsque vous avez terminé tout le profilage, remplacez le fichier *web.config* 
 
      **VSPerfCmd /globaloff**
 
-3. Redémarrez l’ordinateur.
+3. Redémarrez l'ordinateur.
 
 ## <a name="see-also"></a>Voir aussi
 

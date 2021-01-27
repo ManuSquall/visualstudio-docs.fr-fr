@@ -1,5 +1,7 @@
 ---
 title: Limiter l’instrumentation à des DLL spécifiques | Microsoft Docs
+description: Apprenez à utiliser la méthode de profilage par instrumentation pour limiter la collection de données de profilage à une ou plusieurs dll dans une application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7bd781f2c62a313a8e0c0b044103ca5da28021f8
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851019"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883369"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Guide pratique pour limiter l’instrumentation à des DLL spécifiques
 
@@ -51,9 +53,9 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 
 4. Dans la deuxième page de l’Assistant, effectuez les étapes suivantes :
 
-    - Tapez le chemin d’accès et le nom de fichier du. fichier *dll* que vous souhaitez profiler dans le **chemin d’accès**de la dll. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Bibliothèque de liens dynamiques à profiler**. Notez que vous devez spécifier la copie de. fichier *dll* qui sera lancé par l’exécutable (.* exe*) que vous sélectionnez suivant.
+    - Tapez le chemin d’accès et le nom de fichier du. fichier *dll* que vous souhaitez profiler dans le **chemin d’accès** de la dll. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Bibliothèque de liens dynamiques à profiler**. Notez que vous devez spécifier la copie de. fichier *dll* qui sera lancé par l’exécutable (.*exe*) que vous sélectionnez suivant.
 
-    - Tapez le chemin d’accès et le nom de fichier de l’exécutable (.* exe*) qui effectuera l’opération. *dll* dans le **chemin d’accès de l’exécutable**. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.
+    - Tapez le chemin d’accès et le nom de fichier de l’exécutable (.*exe*) qui effectuera l’opération. *dll* dans le **chemin d’accès de l’exécutable**. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.
 
     - facultatif. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.
 
@@ -66,7 +68,7 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 7. facultatif. Pour en ajouter d’autres. fichiers *dll* , cliquez avec le bouton droit sur **cibles** , puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.
 
     > [!NOTE]
-    > Ne spécifiez pas le fichier exécutable (.* exe*) qui exerce les dll.
+    > Ne spécifiez pas le fichier exécutable (.*exe*) qui exerce les dll.
 
 ## <a name="see-also"></a>Voir aussi
 

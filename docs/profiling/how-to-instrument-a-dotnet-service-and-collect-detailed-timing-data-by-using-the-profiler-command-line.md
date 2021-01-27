@@ -1,5 +1,7 @@
 ---
 title: Ligne de commande du profileur-instrument .NET Service, afficher les détails de minutage
+description: Découvrez comment utiliser les outils en ligne de commande Outils de profilage Visual Studio pour collecter des données de temporisation détaillées pour un service .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6002af64474c6ed15aa9807b804c588f20f1443b
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331480"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883603"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter un service .NET et collecter des données chronologiques détaillées en utilisant la ligne de commande du profileur
 
@@ -44,7 +46,7 @@ Pour mettre fin à une session de profilage, vous désactivez le service, puis v
 
      **VSPerfClrEnv /globaltraceon**
 
-5. Redémarrez l’ordinateur.
+5. Redémarrez l'ordinateur.
 
 6. Ouvrir une fenêtre d’invite de commandes.
 
@@ -54,7 +56,7 @@ Pour mettre fin à une session de profilage, vous désactivez le service, puis v
 
    - L’option [/start](../profiling/start.md)**:trace** initialise le profileur.
 
-   - L’option [/Output](../profiling/output.md)**:** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.* vsp*).
+   - L’option [/Output](../profiling/output.md)**:** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.*vsp*).
 
      Vous pouvez utiliser une des options suivantes avec l’option **/start:trace**.
 
@@ -70,7 +72,7 @@ Pour mettre fin à une session de profilage, vous désactivez le service, puis v
      | [/Counter](../profiling/counter.md) **:**`Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans la configuration. Les informations de compteur sont ajoutées aux données collectées à chaque événement de profilage. |
      | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
      | [/AutoMark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
-     | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.* fichier ETL*). |
+     | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.*fichier ETL*). |
 
 8. Démarrez le service à partir du Gestionnaire de contrôle des services Windows.
 
@@ -104,7 +106,7 @@ Vous devez redémarrer l’ordinateur pour que les nouveaux paramètres d’envi
 
 4. Remplacez le module instrumenté par l’original. Si nécessaire, reconfigurez le type de démarrage du service.
 
-5. Redémarrez l’ordinateur.
+5. Redémarrez l'ordinateur.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,7 @@
 ---
 title: Ligne de commande du profileur-instrumenter une application ASP.NET statique, récupérer des données de mémoire
+description: Découvrez comment utiliser les outils en ligne de commande Outils de profilage Visual Studio pour collecter des données de mémoire et de minutage pour un composant Web ou un site Web ASP.NET précompilé.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51523991ece7322eef6db38a7b5738ce07a471ea
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327931"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883459"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée statiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant web ou un site web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] précompilé, et pour collecter des données d’allocation de mémoire .NET, des données de durée de vie des objets et des données chronologiques détaillées.
@@ -40,7 +42,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfClrEnv /globaltracegc**
 
-    - ou -
+    -ou-
 
     **VSPerfClrEnv /globaltracegclife**
 
@@ -48,7 +50,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    - **/globaltracegclife** collecte les données chronologiques, d’allocation de mémoire .NET. et de durée de vie des objets.
 
-4. Redémarrez l’ordinateur.
+4. Redémarrez l'ordinateur.
 
 5. Ouvrir une fenêtre d’invite de commandes.
 
@@ -108,7 +110,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfCmd /globaloff**
 
-5. Redémarrez l’ordinateur. Si nécessaire, redémarrez IIS. Tapez :
+5. Redémarrez l'ordinateur. Si nécessaire, redémarrez IIS. Tapez :
 
     **IISReset /start**
 

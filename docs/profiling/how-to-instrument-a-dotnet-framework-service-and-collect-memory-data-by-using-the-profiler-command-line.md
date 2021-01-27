@@ -1,5 +1,7 @@
 ---
 title: Ligne de commande du profileur-service .NET d’instrumentation, récupération des données de mémoire
+description: Découvrez comment utiliser les outils en ligne de commande de Visual Studio Outils de profilage pour collecter les données d’allocation de mémoire et de durée de vie des objets pour un service .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d17a80a04ad7ecd8e7dcb35226b3b1815db4bb
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809607"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883655"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter un service .NET Framework et collecter des données de mémoire en utilisant la ligne de commande du profileur
 
@@ -56,7 +58,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
        |**/globaltracegc**|Collecte uniquement les données d’allocation de mémoire.|
        |**/globaltracegclife**|Collecte les données d’allocation de mémoire et les données de durée de vie des objets.|
 
-5. Redémarrez l’ordinateur.
+5. Redémarrez l'ordinateur.
 
 6. Ouvrir une fenêtre d’invite de commandes.
 
@@ -82,7 +84,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/Counter](../profiling/counter.md) **:**`Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans la configuration. Les informations de compteur sont ajoutées aux données collectées à chaque événement de profilage. |
    | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/AutoMark](../profiling/automark.md) **:**`Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
-   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.* fichier ETL*). |
+   | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un (.*fichier ETL*). |
 
 8. Si nécessaire, démarrez le service.
 
@@ -122,7 +124,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
      Remplacez le module instrumenté par l’original. Si nécessaire, reconfigurez le type de démarrage du service.
 
-4. Redémarrez l’ordinateur.
+4. Redémarrez l'ordinateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

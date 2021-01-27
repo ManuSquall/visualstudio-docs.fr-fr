@@ -1,5 +1,6 @@
 ---
 title: Web.Config l’application dynamique ASP.NET de profil de & d’instrumentation de fichier
+description: Découvrez comment utiliser l’Outils de profilage Visual Studio pour collecter des données d’activité de mémoire et de minutage pour une application Web ASP.NET compilée dynamiquement.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809594"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883457"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications Web ASP.NET compilées dynamiquement
 Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour collecter des données de minutage détaillées, des données d’allocation de mémoire .NET et des données de durée de vie des objets .NET à partir d’applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilées dynamiquement.
@@ -63,7 +64,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
-   | **culture** | **Neutre** |
+   | **culture** | **Neutralisant** |
 
 7. Ajoutez un élément **codeBase** en tant qu’enfant de l’élément **dependentAssembly**.
 
@@ -175,7 +176,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
     </configuration>
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Voici un fichier *web.config* complet qui active l’instrumentation et le profilage d’applications Web compilées dynamiquement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . Cet exemple suppose qu’il n’y avait pas d’autres paramètres dans le fichier avant la modification.
 
 ```xml
