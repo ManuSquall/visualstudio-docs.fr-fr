@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19d6a95ceeab9af2b6a6f874ae4f889dd2180ba6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f9276fa25651d3f453302a1fc87d10b37e4d49e4
+ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524028"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049465"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 
@@ -100,7 +100,7 @@ Reference: 4.0
 
  Le traitement par lot des cibles est rarement utilisé dans les scénarios de génération réels. Le traitement par lot des tâches, en revanche, est plus courant. Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).
 
-## <a name="incremental-builds"></a>Builds incrémentielles
+## <a name="incremental-builds"></a>builds incrémentiels
 
  Les builds incrémentielles sont des builds optimisées qui permettent de ne pas exécuter les cibles dont les fichiers de sortie sont à jour par rapport à leurs fichiers d’entrée correspondants. Un élément cible peut avoir à la fois un attribut `Inputs`, qui indique les éléments que la cible attend comme entrée, et un attribut `Outputs` qui indique les éléments qu’il produit comme sortie.
 
@@ -254,7 +254,7 @@ assemblies from the various directories, and to support multi-targeting
 
 ===================================================
 AssignLinkMetadata
-For items of a certain set of whitelisted types, make sure that
+For items of a certain set of allowed types, make sure that
 if they are defined in a file other than the project file, that 
 they have "Link" metadata set to an appropriate default. 
 ===================================================
