@@ -1,20 +1,21 @@
 ---
 title: Comment acheter des abonnements Visual Studio ?
-description: Découvrez les différents moyens d’acheter des abonnements Visual Studio
-ms.faqid: group4_1
+description: En savoir plus sur les différentes façons d’acheter des abonnements Visual Studio
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104420"
+ms.locfileid: "99104507"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Comment acheter des abonnements Visual Studio ?
+
 Vous pouvez acheter des abonnements Visual Studio par le biais de différents canaux, notamment le programme  [Licence en volume](https://www.microsoft.com/licensing/default), le  [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) et le [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
 [Comparez les avantages et les prix des abonnements](https://visualstudio.microsoft.com/vs/pricing/) pour comprendre les avantages de chaque abonnement Visual Studio. Consultez la [page des avantages des abonnements](https://visualstudio.microsoft.com/vs/benefits/) pour vous aider à identifier l’abonnement qui vous convient.   
@@ -35,4 +36,4 @@ Avec les abonnements mensuels, vous pouvez louer Visual Studio et Azure DevOps s
 [Découvrez-en plus](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) sur la facturation des abonnements Visual Studio mensuels. 
 
 ### <a name="volume-licensing"></a>Licences en volume 
-Les abonnements aux licences en volume sont disponibles lorsqu’une organisation doit acheter un grand nombre d’abonnements. [En savoir plus](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) sur l’achat via le programme de licence en volume.  
+Les abonnements aux licences en volume sont disponibles lorsqu’une organisation doit acheter un grand nombre d’abonnements. [En savoir plus](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) sur l’achat via le programme de licence en volume.

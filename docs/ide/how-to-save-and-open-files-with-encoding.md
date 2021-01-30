@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597091"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104277"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Guide pratique pour enregistrer et ouvrir des fichiers avec encodage
 
@@ -39,6 +39,9 @@ Vous pouvez enregistrer des fichiers ayant un codage de caractères spécifique 
      Cette option est utile si vous souhaitez échanger le fichier avec des utilisateurs d’un système d’exploitation différent.
 
      Si vous souhaitez utiliser un fichier qui est codé de manière spécifique, vous pouvez indiquer à Visual Studio d’utiliser cet encodage à l’ouverture du fichier. La méthode que vous utilisez varie selon que le fichier fait ou non partie de votre projet.
+
+> [!NOTE]
+> Si vous souhaitez enregistrer le fichier projet avec l’encodage, l’option **enregistrer le fichier sous** n’est pas activée tant que vous n’avez pas déchargé le projet.
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Pour ouvrir un fichier encodé qui fait partie d’un projet
 

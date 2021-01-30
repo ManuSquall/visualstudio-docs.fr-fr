@@ -188,7 +188,9 @@
           href: ide/create-new-project.md
         - name: Utiliser des solutions et des projets
           href: ide/creating-solutions-and-projects.md
-        - name: Ouvrir un projet à partir d’un référentiel
+        - name: Ouvrir un projet à partir d’un référentiel dans Visual Studio 2017
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
+        - name: Ouvrir un projet à partir d’un référentiel dans Visual Studio
           href: get-started/tutorial-open-project-from-repo.md
         - name: 'Porter, migrer et mettre à niveau des projets'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -705,7 +707,7 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: "Tutoriel\_3\_: Créer un jeu de combinaisons (C#)"
                   items:
-                    - name: Vue d'ensemble
+                    - name: Vue d’ensemble
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: "Étape\_1\_: Créer un projet et ajouter une table à votre formulaire"
