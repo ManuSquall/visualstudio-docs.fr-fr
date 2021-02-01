@@ -338,8 +338,6 @@
       items:
         - name: Attacher aux processus en cours d’exécution avec le débogueur
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: Déboguer .NET Core sur Linux
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Attacher à un processus exécuté dans un conteneur Docker
           href: attach-to-process-running-in-docker-container.md
     - name: Débogage d’applications multithread
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: Enregistrer un débogage par voyage dans le temps d’une application de machine virtuelle Azure
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Débogage Linux
+      items:
+        - name: Déboguer des applications .NET Core dans WSL 2
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: Déboguer .NET Core sur Linux à l’aide de SSH
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: Déboguer avec les outils de conteneur >>
+          href: ../containers/edit-and-refresh.md
     - name: Types d'applications
       items:
         - name: Déboguer des types d’application spécifiques

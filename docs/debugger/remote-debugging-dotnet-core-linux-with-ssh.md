@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204889"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224351"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Déboguer .NET Core sur Linux à l’aide de SSH en vous attachant à un processus
 
-À compter de Visual Studio 2017, vous pouvez attacher des processus .NET Core s’exécutant sur un déploiement Linux local ou distant via SSH. Cet article explique comment configurer le débogage et comment déboguer. Pour obtenir des scénarios de débogage à l’aide de conteneurs dockers, consultez [attacher à un processus s’exécutant sur un conteneur d’ancrage à la](../debugger/attach-to-process-running-in-docker-container.md) place.
+À compter de Visual Studio 2017, vous pouvez attacher des processus .NET Core s’exécutant sur un déploiement Linux local ou distant via SSH. Cet article explique comment configurer le débogage et comment déboguer. Pour obtenir des scénarios de débogage à l’aide de conteneurs dockers, consultez [attacher à un processus en cours d’exécution sur un conteneur d’ancrage](../debugger/attach-to-process-running-in-docker-container.md) et les articles d' [outils de conteneur](../containers/edit-and-refresh.md) à la place. Pour déboguer Linux sur WSL 2 à partir de Visual Studio (pas d’attachement au processus), consultez [Déboguer des applications .net core dans WSL 2 avec Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md).
 
 ## <a name="prerequisites"></a>Prérequis
 
