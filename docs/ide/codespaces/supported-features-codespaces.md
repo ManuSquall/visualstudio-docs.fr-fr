@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 20d42b45cc98a64d86306b81f14d781becb8b7a6
-ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049478"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251438"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Fonctionnalités Visual Studio prises en charge (version préliminaire)
 
@@ -109,7 +109,7 @@ Pas encore disponible :
 
 Lorsque vous travaillez avec Visual Studio connecté à un codeSpace, vous bénéficiez des mêmes fonctionnalités d’accessibilité que lorsque vous travaillez localement.
 
-* Contrôle de code source-prise en charge complète de git via la nouvelle [interface git intégrée](../git-with-visual-studio.md).
+* Contrôle de code source-prise en charge complète de git via la nouvelle [interface git intégrée](../git-with-visual-studio.md). Pour que les sous-modules git soient clonés dans un codeSpace, vous devrez peut-être exécuter `git submodule update` à partir du terminal.
 * Accessibilité : il existe un problème connu avec la technologie d’assistance qui ne peut pas accéder au appcasting d’une application déboguée. Outre cette limitation, nous ne pensons pas qu’il existe d’autres problèmes de compatibilité qui n’existent pas encore dans l’expérience locale de Visual Studio. Faites-nous savoir si vous détectez des bogues en soumettant un problème à la [communauté des développeurs](https://aka.ms/feedback/report?space=8).
 * La publication-publier sur Azure via des actions GitHub est prise en charge.
 * Services connectés : application Insights, keyvault, stockage, SQL, Redims, Cosmos, openAPI et gRPC sont partiellement pris en charge.
