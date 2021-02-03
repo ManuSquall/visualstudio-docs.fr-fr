@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: En savoir plus sur les responsabilités des administrateurs d’abonnements.
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467464"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511291"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous pouvez gérer les abonnements de votre organisation.  Le rôle d’administrateur assume également des responsabilités pour s’assurer que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article décrit les responsabilités, les avantages et les limitations du rôle d’administrateur.
@@ -41,6 +41,7 @@ Les abonnements Visual Studio permettent aux développeurs d’installer et d’
 - [Documentation Azure DevOps](/azure/devops/)
 - [Documentation Azure](/azure/)
 - [Documentation Microsoft 365](/microsoft-365/)
+- [Prise en charge de l’administration et des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités pour les administrateurs :
