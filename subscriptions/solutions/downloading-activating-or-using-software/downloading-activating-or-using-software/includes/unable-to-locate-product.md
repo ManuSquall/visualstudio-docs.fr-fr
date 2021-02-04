@@ -1,5 +1,5 @@
 ---
-title: Je ne parviens pas à localiser un produit
+title: Impossible de trouver un produit
 description: Je ne parviens pas à localiser un produit à télécharger avec mon abonnement Visual Studio.
 ms.topic: include
 ms.assetid: a3635d25-8f9d-4cf8-a9c3-db41d155f989
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 03ffd1e9a80b69652040653d2cacfdfd2ebb4e2d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147635"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541220"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Je ne parviens pas à trouver le produit que je dois télécharger.
 
@@ -34,4 +34,4 @@ Vous pouvez [Télécharger une liste complète](https://download.microsoft.com/d
 Vous pouvez également visiter la page [clés de produit](https://my.visualstudio.com/productkeys)   dans laquelle toutes les clés sont disponibles dans l’agrégat. Vous pouvez modifier la colonne remarques pour identifier quand et pourquoi vous avez demandé la clé. 
 
 ## <a name="more-information-about-product-keys"></a>Plus d’informations sur les clés de produit
-[En savoir plus](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) sur la recherche et la revendication des clés de produit et des téléchargements.  
+En savoir plus sur la [recherche et la revendication des clés de produit et des téléchargements](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  

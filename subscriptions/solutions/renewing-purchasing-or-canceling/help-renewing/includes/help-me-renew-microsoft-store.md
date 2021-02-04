@@ -1,5 +1,5 @@
 ---
-title: Aidez-moi à renouveler mon abonnement au Microsoft Store.
+title: Aidez-moi à renouveler mon abonnement au Microsoft Store
 description: Aidez-moi à renouveler mes abonnements Visual Studio achetés sur le Microsoft Store.
 ms.topic: include
 ms.assetid: 3b36270b-aa3b-4c05-b12e-4df8d6f823c1
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: f518f4458181d39a140ee5652b08ea861f2130ee
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: e337fc3df5b930dc09f9d3b13be3f64efc7dd749
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147634"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541086"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>Renouvellement des abonnements via Microsoft Store 
 

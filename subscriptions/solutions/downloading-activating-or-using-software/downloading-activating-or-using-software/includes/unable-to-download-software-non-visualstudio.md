@@ -1,5 +1,5 @@
 ---
-title: Je ne parviens pas à télécharger ou à activer le logiciel (à l’exception de la famille Visual Studio)
+title: Impossible de télécharger ou d’activer le logiciel (à l’exclusion de la famille Visual Studio)
 description: Je ne parviens pas à télécharger ou à activer le logiciel (à l’exception de la famille Visual Studio), inclus dans mon abonnement Visual Studio.
 ms.topic: include
 ms.assetid: 4e67a935-40f9-4c26-b836-e06aa8582bad
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 81c9013c59ffa8fc503e71202941b044f90b139a
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 477753ab93205aa838389313a0ad2c96487aacc3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147355"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541007"
 ---
 ## <a name="im-unable-to-download-or-activate-software-excluding-visual-studio-family"></a>Je ne parviens pas à télécharger ou à activer le logiciel (à l’exception de la famille Visual Studio)
 
@@ -34,4 +34,4 @@ Vous pouvez [Télécharger une liste complète](https://download.microsoft.com/d
 Vous pouvez également visiter la page [clés de produit](https://my.visualstudio.com/productkeys)   dans laquelle toutes les clés sont disponibles dans l’agrégat. Vous pouvez modifier la colonne remarques pour identifier quand et pourquoi vous avez demandé la clé. 
 
 ## <a name="more-information-about-downloads"></a>Plus d’informations sur les téléchargements 
-[En savoir plus](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) sur la recherche et la revendication des clés de produit et des téléchargements.  
+En savoir plus sur la [recherche et la revendication des clés de produit et des téléchargements](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  

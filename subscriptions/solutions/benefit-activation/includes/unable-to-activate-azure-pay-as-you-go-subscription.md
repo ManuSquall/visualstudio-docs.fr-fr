@@ -1,5 +1,5 @@
 ---
-title: Je ne parviens pas à activer mon abonnement Azure dev/test-paiement à l’accès.
+title: Impossible d’activer mon abonnement Azure dev/test-paiement à l’accès
 description: Je ne parviens pas à activer mon abonnement Azure dev/test-paiement à l’accès inclus dans mon abonnement Visual Studio ?
 ms.topic: include
 ms.assetid: 6ad8bb6e-e571-450e-860b-acf1e78921d7
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 2a6e02721512d9780cd94d2d9601fe7099eac956
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 83907b80a67193230a31d9bad155ce72bd02a373
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147488"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541280"
 ---
 ## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>Je ne parviens pas à activer mon abonnement Azure dev/test-paiement à l’accès.
 
@@ -29,4 +29,4 @@ En tant qu’abonné Visual Studio, vous recevez des taux horaires exclusifs pou
 
 ## <a name="more-information-about-subscriptions"></a>Plus d’informations sur les abonnements
  
-[En savoir plus sur les abonnements de paiement à l’accès Azure dev/test](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg).
+En savoir plus [sur les abonnements de paiement à l’accès Azure dev/test](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg).
