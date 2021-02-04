@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168747"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533563"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Mettre à jour Visual Studio avec une disposition hors connexion minimale
 
@@ -69,7 +69,7 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 
 #### <a name="options"></a>Options 
 
-|Options    |Description    |Obligatoire ou facultatif |Exemple |
+|Options    |Description    |Obligatoire ou facultatif | Exemple |
 |:----------|:-----------|:------------|:--------------|
 |--targetLocation &lt; dir&gt; |Spécifie un répertoire dans lequel créer une disposition hors connexion minimale.       |Obligatoire        |--targetLocation c:\VSLayout\ |
 |--version de paramètre &lt;&gt;|La disposition hors connexion minimale sera générée à partir de cette version.   |Obligatoire|--Paramètre 16.4.0 |
@@ -91,6 +91,8 @@ Créez une disposition minimale à l’aide de la commande **générer** pour la
 Avant de créer la disposition, vous pouvez déterminer la taille totale du téléchargement et le nombre de packages inclus à l’aide de la commande **Aperçu** . Cette commande utilise les mêmes options que la commande **generate** , et les détails sont écrits dans la console.
 
 Passons en revue quelques exemples illustrant comment prévisualiser, générer et régénérer une disposition minimale :
+
+::: moniker range="vs-2019"
 
 - Tout d’abord, voici un exemple de la façon d’afficher un aperçu d’une disposition pour Visual Studio Enterprise versions 16.4.0 vers 16.4.4 pour l’anglais uniquement.
 
@@ -123,6 +125,44 @@ Voici quelques autres exemples d’utilisation de la commande **generate** :
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- Tout d’abord, voici un exemple de la façon d’afficher un aperçu d’une disposition pour Visual Studio Enterprise versions 15.0.0 vers 15.9.31 pour l’anglais uniquement.
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- Voici comment générer cette même disposition avec une charge de travail.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- Et voici comment régénérer une disposition hors connexion minimale à l’aide d’un fichier réponse existant. 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+Voici quelques autres exemples d’utilisation de la commande **generate** :
+
+- Voici comment ajouter une charge de travail supplémentaire et inclure uniquement les packages recommandés. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- Enfin, voici comment inclure plusieurs langues dans votre disposition minimale. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>Comment conserver une disposition minimale
 
