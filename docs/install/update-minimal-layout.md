@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: bd2e8c94bbfc24b731a40b2d4d4c298a528c622d
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99533563"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572952"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Mettre à jour Visual Studio avec une disposition hors connexion minimale
 
@@ -67,9 +67,11 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 * **Vérifier**: utilisez cette commande pour déterminer si le dossier de disposition est endommagé.
 * **Correctif**: utilisez cette commande pour corriger un dossier de disposition endommagé, y compris pour remplacer tous les packages manquants du dossier de disposition.
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>Options 
 
-|Options    |Description    |Obligatoire ou facultatif | Exemple |
+|Options    |Description    |Obligatoire ou facultatif |Exemple |
 |:----------|:-----------|:------------|:--------------|
 |--targetLocation &lt; dir&gt; |Spécifie un répertoire dans lequel créer une disposition hors connexion minimale.       |Obligatoire        |--targetLocation c:\VSLayout\ |
 |--version de paramètre &lt;&gt;|La disposition hors connexion minimale sera générée à partir de cette version.   |Obligatoire|--Paramètre 16.4.0 |
@@ -80,6 +82,26 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 |--Ajouter &lt; un ou plusieurs ID de charge de travail ou de composant&gt;    |Spécifie un ou plusieurs ID de charge de travail ou de composant à ajouter. Des composants supplémentaires peuvent être ajoutés globalement à l’aide de--includeRecommended et/ou <br> –-includeOptional. Plusieurs charges de travail ou ID de composant peuvent être spécifiés, séparés par un espace.    |Facultatif    |--Ajoutez le composant Microsoft. VisualStudio. Workload. ManagedDesktop Microsoft. VisualStudio. Workload. NetWeb. GitHub. VisualStudio |
 |--includeRecommended    |Inclut les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs.    |Facultatif    |Pour une charge de travail spécifique : <br> --Ajoutez Microsoft. VisualStudio. Workload. ManagedDesktop ; includeRecommended <br><br> À appliquer à toutes les charges de travail :--includeRecommended |
 |--includeOptional |Inclut les composants facultatifs pour toutes les charges de travail installées, y compris les composants recommandés.    |Facultatif    |Pour une charge de travail spécifique : <br>--Ajoutez Microsoft. VisualStudio. Workload. ManagedDesktop ; includeOptional <br><br> À appliquer à toutes les charges de travail :--includeOptional |
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>Options 
+
+|Options    |Description    |Obligatoire ou facultatif |Exemple |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt; dir&gt; |Spécifie un répertoire dans lequel créer une disposition hors connexion minimale.       |Obligatoire        |--targetLocation c:\VSLayout\ |
+|--version de paramètre &lt;&gt;|La disposition hors connexion minimale sera générée à partir de cette version.   |Obligatoire|--Paramètre 15.0.0 |
+|--version de targetVersion &lt;&gt;|La disposition en mode hors connexion minimale sera générée jusqu’à cette version, y compris.|Obligatoire|--targetVersion 15.9.31|
+|--langues    |Spécifie les langues à inclure dans la disposition hors connexion minimale. Vous pouvez spécifier plusieurs valeurs, séparées par des espaces.    |Obligatoire    |--langues en-US fr-FR |
+|-- &lt; ID ProductID&gt;    |ID du produit à partir duquel la disposition hors connexion minimale sera générée. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obligatoire|--productId Microsoft. VisualStudio. Product. Enterprise |
+|--filePath    |Chemin d’accès au fichier de l' MinimalLayout.jsdans un fichier à partir d’une disposition déjà créée. Cette option est utilisée uniquement avec la commande régénérer.     |Requis pour la commande régénérer    |--filePath C:\VSLayout\minimalLayout.jssur <br><br> **Notez que la commande régénérer ne prend que le chemin d’une option.** |
+|--Ajouter &lt; un ou plusieurs ID de charge de travail ou de composant&gt;    |Spécifie un ou plusieurs ID de charge de travail ou de composant à ajouter. Des composants supplémentaires peuvent être ajoutés globalement à l’aide de--includeRecommended et/ou <br> –-includeOptional. Plusieurs charges de travail ou ID de composant peuvent être spécifiés, séparés par un espace.    |Facultatif    |--Ajoutez le composant Microsoft. VisualStudio. Workload. ManagedDesktop Microsoft. VisualStudio. Workload. NetWeb. GitHub. VisualStudio |
+|--includeRecommended    |Inclut les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs.    |Facultatif    |Pour une charge de travail spécifique : <br> --Ajoutez Microsoft. VisualStudio. Workload. ManagedDesktop ; includeRecommended <br><br> À appliquer à toutes les charges de travail :--includeRecommended |
+|--includeOptional |Inclut les composants facultatifs pour toutes les charges de travail installées, y compris les composants recommandés.    |Facultatif    |Pour une charge de travail spécifique : <br>--Ajoutez Microsoft. VisualStudio. Workload. ManagedDesktop ; includeOptional <br><br> À appliquer à toutes les charges de travail :--includeOptional |
+
+::: moniker-end
 
 ### <a name="generating-a-minimal-layout"></a>Génération d’une disposition minimale
 
