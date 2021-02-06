@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 5efed99b9934ed91b2194b5a38c99134d6d4b5e5
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833310"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628030"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -28,7 +28,7 @@ L’explorateur de tests peut également exécuter des infrastructures de tests 
 
 Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer du code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour le code .net](generate-unit-tests-for-your-code-with-intellitest.md).
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l’explorateur de tests
 
-Quand vous générez le projet de test, les tests s’affichent dans **l’explorateur de tests**. Si **l’explorateur de tests** n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
+Quand vous générez le projet de test, les tests s’affichent dans **l’explorateur de tests**. Si **l’Explorateur de tests** n’est pas visible, choisissez **test** dans le menu Visual Studio, choisissez **fenêtres**, puis **Explorateur de tests** (ou appuyez sur **CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ La barre d’outils de **l’explorateur de tests** vous permet de découvrir, d
 ![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-Vous pouvez choisir **exécuter tout** pour exécuter tous vos tests, ou choisir **exécuter** pour choisir un sous-ensemble de tests à exécuter. Sélectionnez un test pour en afficher les spécificités dans le volet de détails. Choisissez **ouvrir un test** dans le menu contextuel (clavier : **F12**) pour afficher le code source du test sélectionné.
+Vous pouvez choisir **exécuter tout** pour exécuter tous vos tests (ou appuyer sur **CTRL**  +  **r**, **V**), ou choisir **exécuter** pour choisir un sous-ensemble de tests à exécuter (**CTRL**  +  **r**, **T**). Sélectionnez un test pour en afficher les spécificités dans le volet de détails. Choisissez **ouvrir un test** dans le menu contextuel (clavier : **F12**) pour afficher le code source du test sélectionné.
 
 ::: moniker range="vs-2017"
 

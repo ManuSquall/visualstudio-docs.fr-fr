@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 0e136339ae5f34a7e65c19cf14c9ff840c620b25
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761431"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628056"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -93,7 +93,7 @@ Cette commande reprend l’exécution de l’application (et fait avancer le dé
 
 ## <a name="run-to-cursor"></a>Exécuter jusqu'au curseur
 
-Lorsque vous modifiez du code (au lieu d’être suspendu dans le débogueur), cliquez avec le bouton droit sur une ligne de code dans votre application, puis choisissez **Exécuter jusqu’au curseur**. Cette commande démarre le débogage et définit un point d’arrêt temporaire sur la ligne de code active.
+Lorsque vous modifiez du code (au lieu d’être suspendu dans le débogueur), cliquez avec le bouton droit sur une ligne de code dans votre application, puis choisissez **Exécuter jusqu’au curseur** (ou appuyez sur **CTRL** pour **F10**). Cette commande démarre le débogage et définit un point d’arrêt temporaire sur la ligne de code active.
 
 ![Exécuter jusqu’au curseur](../debugger/media/dbg-tour-run-to-cursor.png "Exécuter jusqu'au curseur")
 
@@ -108,7 +108,7 @@ Cette commande est pratique quand vous modifiez du code, et que vous voulez déf
 
 ## <a name="restart-your-app-quickly"></a>Redémarrer rapidement votre application
 
-Cliquez sur le bouton **redémarrer** l' ![application de redémarrage](../debugger/media/dbg-tour-restart.png "Redémarrer l’application") dans la barre d’outils déboguer (**Ctrl + Maj + F5**).
+Cliquez sur le bouton **redémarrer** l' ![application de redémarrage](../debugger/media/dbg-tour-restart.png "Redémarrer l’application") dans la barre d’outils déboguer (ou appuyez sur **Ctrl + Maj + F5**).
 
 Quand vous appuyez sur **Redémarrer**, vous gagnez du temps par rapport à l’action consistant à arrêter l’application, puis à redémarrer le débogueur. Le débogueur se met en pause sur le premier point d’arrêt qui est atteint par l’exécution du code.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 52a910bddd2f75c631f130dddee22f8b2e05510b
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150507"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628043"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -34,7 +34,7 @@ Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le co
 
 ## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l’explorateur de tests
 
-Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
+Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’Explorateur de tests n’est pas visible, choisissez **test** dans le menu Visual Studio, choisissez **fenêtres**, puis **Explorateur de tests** (ou appuyez sur **CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Vous pouvez effectuer la majeure partie du travail de recherche, d’organisatio
 ::: moniker range="vs-2017"
 Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
-- Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
+- Pour exécuter tous les tests d’une solution, choisissez **exécuter tout** (ou appuyez sur **CTRL** + **R**, **V**).
 
 - Pour exécuter tous les tests dans un groupe par défaut, choisissez **Exécuter**, puis le groupe dans le menu.
 
-- Sélectionnez les différents tests à exécuter, ouvrez le menu contextuel (clic droit) de l’un d’entre eux, puis choisissez **Exécuter les tests sélectionnés**.
+- Sélectionnez les tests individuels que vous souhaitez exécuter, ouvrez le menu contextuel d’un test sélectionné, puis choisissez exécuter les **tests sélectionnés** (ou appuyez sur **CTRL** + **R**, **T**).
 
 - Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![Capture d’écran du bouton bascule d’exécution des tests parallèles dans la barre d’outils de l’Explorateur de tests Visual Studio. Lorsque ce bouton est sélectionné, les tests s’exécutent en parallèle.](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
@@ -77,11 +77,11 @@ La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** es
 ::: moniker range=">=vs-2019"
 Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
-- Pour exécuter tous les tests d’une solution, choisissez l’icône **Exécuter tout**.
+- Pour exécuter tous les tests d’une solution, choisissez l’icône **exécuter tout** (ou appuyez sur **CTRL** + **R**, **V**).
 
 - Pour exécuter tous les tests d’un groupe par défaut, choisissez l’icône **Exécuter**, puis choisissez le groupe souhaité dans le menu.
 
-- Sélectionnez les différents tests à exécuter, ouvrez le menu contextuel (clic droit) de l’un d’entre eux, puis choisissez **Exécuter les tests sélectionnés**.
+- Sélectionnez les tests individuels que vous souhaitez exécuter, ouvrez le menu contextuel d’un test sélectionné, puis choisissez exécuter les **tests sélectionnés** (ou appuyez sur **CTRL** + **R**, **T**).
 
 - Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests dans le menu Paramètres de la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 ::: moniker-end
@@ -130,7 +130,7 @@ Si le test échoue, le volet d'informations affiche également :
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Afficher le code source d'une méthode de test
 
-Pour afficher le code source d’une méthode de test dans l’éditeur Visual Studio, sélectionnez le test, puis choisissez **ouvrir un test** dans le menu contextuel (clavier : **F12**).
+Pour afficher le code source d’une méthode de test dans l’éditeur Visual Studio, sélectionnez le test, puis choisissez **ouvrir un test** dans le menu contextuel (ou appuyez sur **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Regrouper et filtrer la liste de tests
 

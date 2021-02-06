@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 328f7540846f923fe186a76c4dcc03347f9c3214
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628017"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -180,13 +180,13 @@ Cette section décrit comment créer un projet de test unitaire.
 1. Ouvrez l' [Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Pour ouvrir l’Explorateur de tests, sélectionnez **tester** > l' **Explorateur de tests** dans la barre de menus supérieure.
+   Pour ouvrir l’Explorateur de tests, sélectionnez **tester** > l' **Explorateur de tests** dans la barre de menus supérieure (ou appuyez sur **CTRL** + **E**, **T**).
    ::: moniker-end
    ::: moniker range="vs-2017"
    Pour ouvrir l’Explorateur de tests, choisissez **tester** >  > l' **Explorateur de tests** Windows dans la barre de menus supérieure.
    ::: moniker-end
 
-1. Exécutez vos tests unitaires en cliquant sur **Tout exécuter**.
+1. Exécutez vos tests unitaires en cliquant sur **exécuter tout** (ou appuyez sur **CTRL**  +  **R**, **V**).
 
    ![Exécuter des tests unitaires dans l'Explorateur de tests](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ Pour ajouter un projet de test unitaire :
 
    ![Ajouter du code à votre fichier de code de test unitaire](media/vs-2019/unit-test-method.png)
 
-6. Exécutez le test à partir de l’**Explorateur de tests**, ou en cliquant avec le bouton droit sur le code de test et en choisissant **Exécuter les tests**.
+6. Exécutez le test à partir de l' **Explorateur de tests** ou en cliquant avec le bouton droit sur le code de test et en choisissant **exécuter les tests** (ou **CTRL**  +  **R**, **T**).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

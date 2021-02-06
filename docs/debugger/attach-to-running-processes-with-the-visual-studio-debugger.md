@@ -29,16 +29,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3250eff2b5691ab344e2fedde80054415ec8ffcd
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627965"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 
-Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus en cours d’exécution, sélectionnez **Déboguer**  >  **attacher au processus** ou appuyez sur **CTRL** + **ALT** + **P** dans Visual Studio, puis utilisez la boîte de dialogue **attacher au processus** pour attacher le débogueur au processus.
+Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus en cours d’exécution, sélectionnez **Déboguer**  >  **attacher au processus** ou appuyez sur **CTRL** + **ALT** + **p** dans Visual Studio, puis utilisez la boîte de dialogue **attacher au processus** pour attacher le débogueur au processus.
 
 Vous pouvez utiliser **attacher au processus** pour déboguer des applications en cours d’exécution sur des ordinateurs locaux ou distants, déboguer plusieurs processus simultanément, déboguer des applications qui n’ont pas été créées dans Visual Studio, ou déboguer une application que vous n’avez pas démarrée à partir de Visual Studio avec le débogueur attaché. Par exemple, si vous exécutez une application sans le débogueur et que vous n’avez pas atteint une exception, vous pouvez attacher le débogueur au processus qui exécute l’application et commencer le débogage.
 

@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f734435f93c60ab0b66bd258417d90541575e398
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627978"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 
@@ -138,7 +138,7 @@ Cet article décrit la création, l’exécution et la personnalisation d’une 
 
 6. Renommez le fichier *BankAccount.cs* en effectuant un clic droit et en choisissant **Renommer** dans l’**Explorateur de solutions**.
 
-7. Dans le menu **Générer**, cliquez sur **Générer la solution**.
+7. Dans le menu **générer** , cliquez sur **générer la solution** (ou appuyez sur **CTRL**  +  **MAJ**  +  **B**).
 
 Vous disposez maintenant d’un projet avec des méthodes que vous pouvez tester. Dans cet article, les tests se limitent à la méthode `Debit`. La méthode `Debit` est appelée quand de l’argent est retiré sur un compte.
 
@@ -187,7 +187,7 @@ Créez une classe de test pour vérifier la classe `BankAccount`. Vous pouvez ut
 
 ### <a name="rename-a-file-and-class"></a>Renommer un fichier et une classe
 
-1. Pour renommer le fichier, dans l’**Explorateur de solutions**, sélectionnez le fichier *UnitTest1.cs* dans le projet BankTests. Dans le menu contextuel (clic droit), choisissez **Renommer**, puis renommez le fichier *BankAccountTests.cs*.
+1. Pour renommer le fichier, dans l’**Explorateur de solutions**, sélectionnez le fichier *UnitTest1.cs* dans le projet BankTests. Dans le menu contextuel, choisissez **Renommer** (ou appuyez sur **F2**), puis renommez le fichier *BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ Créez une classe de test pour vérifier la classe `BankAccount`. Vous pouvez ut
 
 ::: moniker range=">=vs-2019"
 
-2. Pour renommer la classe, positionnez le curseur sur `UnitTest1` dans l’éditeur de code, cliquez avec le bouton droit, puis choisissez **Renommer**. Tapez **BankAccountTests**, puis appuyez sur **Entrée**.
+2. Pour renommer la classe, positionnez le curseur `UnitTest1` dans l’éditeur de code, cliquez avec le bouton droit, puis choisissez **Renommer** (ou appuyez sur **F2**). Tapez **BankAccountTests**, puis appuyez sur **Entrée**.
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ Une méthode de test doit répondre aux spécifications suivantes :
 
 ## <a name="build-and-run-the-test"></a>Générer et exécuter le test
 
-1. Dans le menu **Générer** , choisissez **Générer la solution**.
+1. Dans le menu **générer** , choisissez **générer la solution** (ou appuyez sur **CTRL**  +  **MAJ**  +  **B**).
 
-2. Si l’**Explorateur de tests** n’est pas ouvert, ouvrez-le en choisissant **Test** > **Fenêtres** > **Explorateur de tests** à partir de la barre de menus supérieure.
+2. Si l' **Explorateur de tests** n’est pas ouvert, ouvrez-le en sélectionnant **tester**  >    >  l'**Explorateur de tests** Windows dans la barre de menus supérieure (ou appuyez sur **CTRL**  +  **E**, **T**).
 
-3. Sélectionnez **Exécuter tout** pour exécuter le test.
+3. Choisissez **exécuter tout** pour exécuter le test (ou appuyez sur **CTRL**  +  **R**, **V**).
 
    Pendant que le test s’exécute, la barre d’état en haut de la fenêtre **Explorateur de tests** s’anime. À l’issue de la série de tests, la barre devient verte si toutes les méthodes de test ont réussi, ou rouge si l’un des tests a échoué.
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Réexécuter le test
 
-Dans l' **Explorateur de tests**, choisissez **exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi.
+Dans l' **Explorateur de tests**, choisissez **exécuter tout** pour réexécuter le test (ou appuyez sur **CTRL**  +  **R**, **V**). La barre rouge/verte devient verte pour indiquer que le test a réussi.
 
 ![Explorateur de tests dans Visual Studio 2019 indiquant la réussite du test](media/test-explorer-banktests-passed.png)
 

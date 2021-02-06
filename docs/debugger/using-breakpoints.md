@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3fba148b409d8e2b5b9cbc3b629f9f7116509c74
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627991"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
 
@@ -85,7 +85,7 @@ Vous pouvez contrôler quand et où un point d’arrêt s’exécute en définis
 
 **Pour définir une condition de point d’arrêt :**
 
-1. Cliquez avec le bouton droit sur le symbole du point d’arrêt et sélectionnez **conditions**. Ou pointez sur le symbole de point d’arrêt, sélectionnez l’icône des **paramètres** , puis sélectionnez **conditions** dans la fenêtre **paramètres de point d’arrêt** .
+1. Cliquez avec le bouton droit sur le symbole du point d’arrêt et sélectionnez **conditions** (ou appuyez sur **ALT**  +  **F9**, **C**). Ou pointez sur le symbole de point d’arrêt, sélectionnez l’icône des **paramètres** , puis sélectionnez **conditions** dans la fenêtre **paramètres de point d’arrêt** .
 
    Vous pouvez également définir des conditions dans la fenêtre **points d’arrêt** en cliquant avec le bouton droit sur un point d’arrêt et en sélectionnant **paramètres**, puis en sélectionnant **conditions**.
 
@@ -124,7 +124,7 @@ Si vous définissez une condition de point d’arrêt dont la syntaxe est incorr
 
 1. Définissez un point d’arrêt dans le code après la création de l’objet.
 
-2. Démarrez le débogage et, lorsque l’exécution s’interrompt au point d’arrêt, sélectionnez **Déboguer**  >    >  les **paramètres régionaux** Windows ou **ALT** + **4** pour ouvrir la fenêtre **variables locales** .
+2. Démarrez le débogage, et lorsque l’exécution s’interrompt au point d’arrêt, sélectionnez **Déboguer**  >    >  les **paramètres régionaux** Windows (ou appuyez sur **CTRL**  +  **ALT**  +  **V**, **L**) pour ouvrir la fenêtre **variables locales** .
 
    Recherchez l’instance d’objet spécifique dans la fenêtre **variables locales** , cliquez dessus avec le bouton droit, puis sélectionnez **créer un ID d’objet**.
 
@@ -169,7 +169,7 @@ Vous pouvez arrêter l’exécution lorsqu’une fonction est appelée. Cela est
 
 **Pour définir un point d’arrêt sur fonction :**
 
-1. Sélectionnez **Déboguer** le point d’arrêt de la fonction de point d'  >  **arrêt**  >  ou appuyez sur **ALT** + **F9**  >  **CTRL** + **B**.
+1. Sélectionnez **Déboguer** le point d’arrêt de la fonction de point d'  >  **arrêt**  >  ou appuyez sur **CTRL**  +  **K**, **B**.
 
    Vous pouvez également sélectionner **nouveau**  >  **point d’arrêt sur fonction** dans la fenêtre **points d’arrêt** .
 
@@ -206,7 +206,7 @@ Vous pouvez arrêter l’exécution lorsqu’une fonction est appelée. Cela est
 
 2. Recherchez l’adresse de l’instance (par exemple, `0xcccccccc` ).
 
-3. Sélectionnez **Déboguer** le point d’arrêt de la fonction de point d'  >  **arrêt**  >  ou appuyez sur **ALT** + **F9**  >  **CTRL** + **B**.
+3. Sélectionnez **Déboguer** le point d’arrêt de la fonction de point d'  >  **arrêt**  >  ou appuyez sur **CTRL**  +  **K**, **B**.
 
 4. Ajoutez le code suivant à la zone nom de la **fonction** , puis sélectionnez langage **C++** .
 
@@ -243,7 +243,7 @@ Les points d’arrêt sur variable dans .NET Core ne fonctionnent pas pour :
 
 **Pour définir un point d’arrêt sur variable :**
 
-1. Dans un projet C++, démarrez le débogage et attendez qu’un point d’arrêt soit atteint. Dans le menu **Déboguer** , choisissez **nouveau** point d’arrêt des  >  **données** de point d’arrêt
+1. Dans un projet C++, démarrez le débogage et attendez qu’un point d’arrêt soit atteint. Dans le menu **Déboguer** , choisissez nouveau point d’arrêt des données de **point d’arrêt**  >  .
 
     Vous pouvez également sélectionner **nouveau**  >  **point d’arrêt** sur les données dans la fenêtre **points d’arrêt** ou cliquer avec le bouton droit sur un élément dans la fenêtre **automatique**, **Espion** ou **variables locales** et sélectionner **arrêter lorsque des modifications de valeur sont effectuées** dans le menu contextuel.
 
@@ -268,7 +268,7 @@ Les points d’arrêt sur variable ne fonctionnent pas dans les conditions suiva
 
 Dans la fenêtre **points d’arrêt** , vous pouvez rechercher, trier, filtrer, activer/désactiver ou supprimer des points d’arrêt. Vous pouvez également définir des conditions et des actions, ou ajouter une nouvelle fonction ou un point d’arrêt de données.
 
-Pour ouvrir la fenêtre **points d’arrêt** , sélectionnez **Déboguer** les points d'  >    >  **arrêt** Windows, ou appuyez sur **ALT** + **F9** ou **CTRL** + **ALT** + **B**.
+Pour ouvrir la fenêtre **points d’arrêt** , sélectionnez **Déboguer** les points d'  >    >  **arrêt** Windows ou appuyez sur **CTRL** + **ALT** + **B**.
 
 ![Fenêtre points d’arrêt](../debugger/media/breakpointswindow.png "Points d'arrêt (fenêtre)")
 
@@ -314,7 +314,7 @@ Pour suivre visuellement des points d’arrêt pendant l’exécution du code, c
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Définir un point d’arrêt dans la fenêtre Code machine
 
-1. Pour ouvrir la fenêtre **code machine** , vous devez être suspendu pendant le débogage. Sélectionnez **Déboguer** le  >    >  **code machine** Windows ou appuyez sur **ALT** + **8**.
+1. Pour ouvrir la fenêtre **code machine** , vous devez être suspendu pendant le débogage. Sélectionnez **Déboguer** le  >    >  **code machine** Windows ou appuyez sur **CTRL** + **ALT** + **D**.
 
 2. Dans la fenêtre **code machine** , cliquez dans la marge de gauche de l’instruction que vous souhaitez arrêter. Vous pouvez également le sélectionner et appuyer sur **F9**, ou cliquer avec le bouton droit et sélectionner **point d’arrêt**  >  **Insérer un point d’arrêt**.
 
