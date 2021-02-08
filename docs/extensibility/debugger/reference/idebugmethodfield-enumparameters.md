@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13df02cf5870e630c4aecb34e9295d218ba7a0eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c164fa08f4195d685bf7dd2faa120ff030e44c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837721"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Crée un énumérateur pour les paramètres de la méthode.
@@ -28,7 +28,7 @@ Crée un énumérateur pour les paramètres de la méthode.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumParameters( 
+HRESULT EnumParameters( 
    IEnumDebugFields** ppParams
 );
 ```
@@ -43,10 +43,10 @@ int EnumParameters(
 `ppParams`\
 à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des paramètres de la méthode. Sinon, retourne une valeur null s’il n’y a aucun paramètre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a aucun paramètre. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Chaque élément est un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) représentant différents types de paramètres. Appelez la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sur chaque objet pour déterminer exactement le type de paramètre représenté par l’objet.
 
  Un paramètre comprend à la fois son nom de variable et son type. Le premier paramètre d’une méthode de classe est généralement le pointeur « this ».

@@ -4,19 +4,19 @@ description: Exécuter un modèle TensorFlow localement dans Visual Studio Tools
 keywords: ia, visual studio, tensorflow, local
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ceb21701958630c8b783d5b6850c5e0a0ab229a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80638741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841378"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Former un modèle TensorFlow localement
 
@@ -54,7 +54,7 @@ Téléchargez ce [dépôt GitHub](https://github.com/Microsoft/samples-for-ai) c
 
 - Recherchez le projet MNIST dans **l’Explorateur de solutions**, cliquez avec le bouton droit et sélectionnez **Définir comme projet de démarrage**.
 
-- Cliquez sur **Start** (Démarrer).
+- Cliquez sur **Start**.
 
 - La sortie est imprimée dans la console.
 

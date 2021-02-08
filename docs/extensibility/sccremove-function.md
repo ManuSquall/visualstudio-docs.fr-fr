@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17889d50dbdcf68dd4cca161d6703b8b6d69ad47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67b0691c3f58ad859051f0018e7b32a5a4e087da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836707"
 ---
 # <a name="sccremove-function"></a>Fonction SccRemove
 Cette fonction supprime les fichiers du système de contrôle de code source.
@@ -65,7 +65,7 @@ dans Indicateurs de commande (inutilisé).
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -79,7 +79,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_NONSPECIFICERROR|Échec non spécifique ; le fichier n’a pas été supprimé.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction supprime les fichiers du système de contrôle de code source, mais ne les supprime pas du disque dur local de l’utilisateur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837238"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , vous devez l’inscrire afin qu’il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puisse l’instancier et l’associe à un type de projet particulier.
@@ -42,7 +42,7 @@ Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-
 
    - (Par défaut)
 
-        facultatif. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif, mais recommandé.
+        Facultatif. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif, mais recommandé.
 
    - CLSID
 

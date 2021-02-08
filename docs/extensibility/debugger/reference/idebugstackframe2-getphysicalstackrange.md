@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c4c4bbc468403aaf94aca1b5133a732e0c050b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837474"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtient une représentation dépendante de l’ordinateur de la plage d’adresses physiques associée à un frame de pile.
@@ -28,14 +28,14 @@ Obtient une représentation dépendante de l’ordinateur de la plage d’adress
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetPhysicalStackRange ( 
+HRESULT GetPhysicalStackRange ( 
    UINT64* paddrMin,
    UINT64* paddrMax
 );
 ```
 
 ```csharp
-int GetPhysicalStackRange ( 
+int GetPhysicalStackRange ( 
    out ulong paddrMin,
    out ulong paddrMax
 );
@@ -48,10 +48,10 @@ int GetPhysicalStackRange ( 
 `paddrMax`\
 à Retourne l’adresse physique la plus élevée associée à ce frame de pile.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les informations retournées par cette méthode sont utilisées par le gestionnaire de débogage de session (SDM) pour trier les frames de pile.
 
  Il est supposé que la pile des appels augmente, c’est-à-dire que les nouveaux frames de pile sont ajoutés à des adresses mémoire plus basses. Une architecture au moment de l’exécution doit fournir des plages de piles physiques qui correspondent à cette hypothèse.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839558"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 L’analyseur est le cœur du service de langage. Les classes de langages MPF (Managed package Framework) requièrent un analyseur de langage pour sélectionner des informations sur le code affiché. Un analyseur sépare le texte en jetons lexicals, puis identifie ces jetons par type et par fonctionnalité.

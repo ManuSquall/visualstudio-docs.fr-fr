@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839844"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Séquence d’initialisation des sous-types de projets
 L’environnement construit un projet en appelant l’implémentation de la fabrique de projet de base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . La construction d’un sous-type de projet démarre lorsque l’environnement détermine que la liste de GUID de type de projet pour l’extension d’un fichier projet n’est pas vide. L’extension de fichier projet et le GUID du projet spécifient si le projet est un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] type de projet ou. Par exemple, l’extension. vbproj et {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifient un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet.
@@ -45,7 +45,7 @@ L’environnement construit un projet en appelant l’implémentation de la fabr
 
     5. `HrCreateInnerProj` est appelé de manière récursive jusqu’à ce que le dernier GUID (le projet de base) dans la liste soit atteint. Pour chacun de ces appels, les étapes, c à d, sont répétées. `pOuter` pointe vers le sous-type de projet le plus à l’extérieur `IUnknown` pour chaque niveau d’agrégation.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 L’exemple suivant décrit en détail le processus de programmation dans une représentation approximative de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> méthode telle qu’elle est implémentée par l’environnement. Le code n’est qu’un exemple. elle n’est pas destinée à être compilée et toutes les vérifications d’erreurs ont été supprimées pour plus de clarté.
 

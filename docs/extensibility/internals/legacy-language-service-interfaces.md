@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839597"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces du service de langage hérité
 Pour un langage de programmation particulier, il ne peut y avoir qu’une seule instance d’un service de langage à la fois. Toutefois, un service de langage unique peut servir plusieurs éditeurs.

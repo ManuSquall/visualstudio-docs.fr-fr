@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 173da18ca3b38dd64b8a2594c03abd83987f58f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839320"
 ---
 # <a name="symbols-element"></a>Élément Symbols
 Définit les GUID et les ID utilisés par d’autres éléments VSCT. Pour le code non managé, ces informations proviennent généralement des fichiers d’en-tête spécifiés par l' [élément extern](../extensibility/extern-element.md). Le code managé utilise les éléments enfants de l’élément Symbols pour définir ces informations.
@@ -27,7 +27,7 @@ Définit les GUID et les ID utilisés par d’autres éléments VSCT. Pour le co
 
  L’élément Symbols ne doit pas être confondu avec l' [élément define](../extensibility/define-element.md), qui définit des paires nom-valeur pour une utilisation par le préprocesseur.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```
 <Symbols>

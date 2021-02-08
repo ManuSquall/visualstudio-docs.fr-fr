@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec49e5184071e0640d671ba0baaad8ac049fea25
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c3ab4493d1d3acce3ad28c834136d25264a74180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839818"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installation de VSPackages avec Windows Installer
 L’intégration de votre VSPackage dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nécessite plus qu’une simple copie de fichiers sur l’ordinateur d’un utilisateur. Le programme d’installation de votre VSPackage doit installer le VSPackage et ses fichiers dépendants, puis l’inscrire et l’intégrer dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Votre VSPackage peut tirer parti des fonctionnalités d’intégration, telles que l’affichage d’une icône sur l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] écran de démarrage et la boîte de dialogue à propos de.

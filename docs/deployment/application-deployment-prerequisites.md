@@ -18,23 +18,23 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c87b0f6ded2960054cb553dbeb85681aa447668b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: fe8312a4dcaa2efb0b783e89540e5ff9f71f15e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837799"
 ---
 # <a name="application-deployment-prerequisites"></a>Prérequis pour le déploiement d’applications
 
 Pour que votre application soit installée et exécutée correctement, installez d’abord tous les composants dont dépend votre application sur l’ordinateur cible. Par exemple, la plupart des applications créées à l’aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ont une dépendance sur le .NET Framework. Dans ce cas, la version correcte du common language runtime doit être présente sur l’ordinateur de destination avant l’installation de l’application.
 
- Vous pouvez sélectionner ces composants requis dans la **boîte de dialogue composants requis** et installer le .NET Framework et tout autre redistribuable dans le cadre de votre installation. Cette pratique est connue sous le nom d’ *amorçage*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère un programme exécutable Windows nommé *Setup.exe* , également appelé *programme d’amorçage*. Le programme d'amorçage effectue l'installation des composants requis avant que votre application ne s'exécute. Pour plus d’informations sur la sélection de ces conditions préalables, consultez [boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md).
+ Vous pouvez sélectionner ces composants requis dans la **boîte de dialogue composants requis** et installer le .NET Framework et tout autre redistribuable dans le cadre de votre installation. Cette pratique est connue sous le nom d’*amorçage*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère un programme exécutable Windows nommé *Setup.exe*, également appelé *programme d’amorçage*. Le programme d'amorçage effectue l'installation des composants requis avant que votre application ne s'exécute. Pour plus d’informations sur la sélection de ces conditions préalables, consultez [boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md).
 
- Chaque composant requis est un package de programme d'amorçage. Un package de programme d’amorçage est un groupe de répertoires et de fichiers contenant les fichiers manifeste qui décrivent comment les composants requis sont installés. Si les prérequis de votre application ne sont pas listés dans la boîte de dialogue **Composants requis** , vous pouvez créer des packages de programme d’amorçage personnalisés, puis les ajouter à Visual Studio. Sélectionnez ensuite les prérequis dans la boîte de dialogue **Composants requis**. Pour plus d’informations, consultez [créer des packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).
+ Chaque composant requis est un package de programme d'amorçage. Un package de programme d’amorçage est un groupe de répertoires et de fichiers contenant les fichiers manifeste qui décrivent comment les composants requis sont installés. Si les prérequis de votre application ne sont pas listés dans la boîte de dialogue **Composants requis**, vous pouvez créer des packages de programme d’amorçage personnalisés, puis les ajouter à Visual Studio. Sélectionnez ensuite les prérequis dans la boîte de dialogue **Composants requis**. Pour plus d’informations, consultez [créer des packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).
 
  Par défaut, l'amorçage est activé pour le déploiement ClickOnce. Le programme d'amorçage généré pour le déploiement ClickOnce est signé. Vous pouvez désactiver l’amorçage pour un composant, mais uniquement si vous êtes sûr que la version correcte du composant est déjà installée sur tous les ordinateurs cibles.
 
@@ -50,7 +50,7 @@ Pour que votre application soit installée et exécutée correctement, installez
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut détecter les composants requis manquants et vous pouvez installer les composants requis à l’aide d’un programme d’amorçage. Pour plus d’informations, consultez [Comment : installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
-> Pour modifier les valeurs dans les manifestes générés par des outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et *MageUI.exe* , vous devez modifier le manifeste d’application dans un éditeur de texte, puis signer à nouveau les manifestes d’application et de déploiement. Pour plus d’informations, consultez [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+> Pour modifier les valeurs dans les manifestes générés par des outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et *MageUI.exe*, vous devez modifier le manifeste d’application dans un éditeur de texte, puis signer à nouveau les manifestes d’application et de déploiement. Pour plus d’informations, consultez [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
  Si vous utilisez Visual Studio et ClickOnce pour déployer votre application, les packages de programme d'amorçage sélectionnés par défaut dépendent de la version du .NET Framework de la solution. Cependant, si vous changez la version du .NET Framework cible, vous devez mettre à jour manuellement les options de la boîte de dialogue **Composants requis**.
 

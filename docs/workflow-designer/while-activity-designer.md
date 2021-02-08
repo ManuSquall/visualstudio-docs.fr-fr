@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9447d32f17283e7123e2f99490acc49c1613360d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837994"
 ---
 # <a name="while-activity-designer"></a>Concepteur d'activités While
 
@@ -27,11 +27,11 @@ L' <xref:System.Activities.Statements.While> activité exécute l’activité co
 
 Le tableau suivant répertorie les propriétés les plus utiles de l'activité <xref:System.Activities.Statements.While> et décrit comment elles sont utilisées dans le concepteur.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.While> dans l'en-tête. La valeur par défaut est While. La valeur peut être modifiée dans la fenêtre **Propriétés** ou directement dans l’en-tête du concepteur d’activités.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.While.Body%2A>|Faux|Contient l’activité à exécuter pendant que <xref:System.Activities.Statements.While.Condition%2A> prend la **valeur true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|Vrai|Contient l’expression Visual Basic qui est évaluée pour déterminer si l’activité dans le <xref:System.Activities.Statements.While.Body%2A> doit être exécutée.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.While> dans l'en-tête. La valeur par défaut est While. La valeur peut être modifiée dans la fenêtre **Propriétés** ou directement dans l’en-tête du concepteur d’activités.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
+|<xref:System.Activities.Statements.While.Body%2A>|False|Contient l’activité à exécuter pendant que <xref:System.Activities.Statements.While.Condition%2A> prend la **valeur true**.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Contient l’expression Visual Basic qui est évaluée pour déterminer si l’activité dans le <xref:System.Activities.Statements.While.Body%2A> doit être exécutée.|
 
 ## <a name="see-also"></a>Voir aussi
 

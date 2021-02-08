@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3978fc3cbe2a0e4447e0a4325178dcec32fa4e14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8f21bc37570fc75db5f573003aba8f70afc5f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724350"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840169"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 Définit le serveur principal pour le fournisseur de port.
@@ -41,7 +41,7 @@ int SetServer(
 `pServer`\
 Serveur principal à définir pour le fournisseur de port.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

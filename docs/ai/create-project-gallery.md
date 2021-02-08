@@ -1,21 +1,21 @@
 ---
-title: Création d’un projet
+title: Créer un projet
 description: créer un projet à l’aide d’un exemple de la galerie azure machine learning
 keywords: ia, visual studio, azure machine learning
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e6c5b8201b39f82e4c4645196ca543e2567b6e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841547"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Créer un projet IA à partir de la galerie Azure Machine Learning dans Visual Studio
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4317133b2f215e0f9af447e5c042785561231f63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fdcd8cd94914763d103a6232c4f87c3ec93f216
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836668"
 ---
 # <a name="sccuncheckout-function"></a>Fonction SccUncheckout
 Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu du ou des fichiers sélectionnés à l’état antérieur à l’extraction. Toutes les modifications apportées au fichier depuis l’extraction sont perdues.
@@ -60,7 +60,7 @@ dans Indicateurs de commande (non utilisés).
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -74,7 +74,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert à partir du contrôle de code source.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Après cette opération, les `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` indicateurs et seront tous deux désactivés pour les fichiers sur lesquels l’extraction d’annulation a été effectuée.
 
 ## <a name="see-also"></a>Voir aussi

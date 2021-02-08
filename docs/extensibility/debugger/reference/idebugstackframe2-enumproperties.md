@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837708"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crée un énumérateur pour les propriétés associées au frame de pile, telles que les variables locales.
@@ -28,7 +28,7 @@ Crée un énumérateur pour les propriétés associées au frame de pile, telles
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumProperties ( 
+HRESULT EnumProperties ( 
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,
    UINT                      nRadix,
    REFIID                    refiid,
@@ -39,7 +39,7 @@ HRESULT EnumProperties ( 
 ```
 
 ```csharp
-int EnumProperties ( 
+int EnumProperties ( 
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,
    uint                        nRadix,
    ref Guid                    refiid,
@@ -68,10 +68,10 @@ dans Durée d’attente maximale, en millisecondes, avant le retour de cette mé
 `ppEnum`\
 à Retourne un objet [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenant une liste des propriétés souhaitées.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Étant donné que cette méthode permet de récupérer toutes les propriétés sélectionnées avec un seul appel, il est plus rapide d’appeler les méthodes [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) et [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) .
 
 ## <a name="see-also"></a>Voir aussi

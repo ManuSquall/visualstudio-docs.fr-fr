@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5412e930937d029f803f5c6c2b4ddc9d396d9485
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bd1720553592b0cfbac8be412002ef1b39bfd5bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836954"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrictions sur les longueurs de chaîne
 L’API de plug-in de contrôle de code source limite les longueurs de chaînes utilisées dans différentes fonctions.

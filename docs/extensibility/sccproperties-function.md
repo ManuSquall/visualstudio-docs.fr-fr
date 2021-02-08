@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2dd87efbb50346093144db6e069eea30138e37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68694388f49d59c7e8e872f0fc70994130e2990
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836772"
 ---
 # <a name="sccproperties-function"></a>Fonction SccProperties
 Cette fonction affiche les propriétés du contrôle de code source pour un fichier ou un projet.
@@ -45,7 +45,7 @@ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut u
 
 dans Nom de chemin d’accès qualifié complet du fichier ou du projet.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -57,7 +57,7 @@ dans Nom de chemin d’accès qualifié complet du fichier ou du projet.
 |SCC_E_FILENOTCONTROLLED|Le fichier ou le projet spécifié n’est pas sous contrôle de code source.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Une erreur inconnue ou générale s’est produite.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le plug-in de contrôle de code source affiche les propriétés dans sa propre boîte de dialogue.
 
  Les propriétés sont définies par le plug-in de contrôle de code source et peuvent différer d’un plug-in à un plug-in. Si le plug-in permet à l’utilisateur de modifier les propriétés du contrôle de code source d’un fichier, il doit retourner `SCC_I_RELOAD` pour signaler à l’IDE que ce fichier ou ce projet doit être rechargé.

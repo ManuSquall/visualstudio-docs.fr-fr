@@ -5,16 +5,16 @@ ms.date: 02/28/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de86c2021a2abf3cd5346c684199e8f59e2d314e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70154879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839186"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
 
@@ -94,7 +94,7 @@ Pour tirer pleinement parti de l’intégration de SQL Server, utilisez le progr
 
 ![Charge de travail de stockage et traitement des données](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Options de la charge de travail Stockage et traitement des données](media/workload/data-storage-workload-options.png)
 
-Pour plus d’informations :
+Pour plus d'informations :
 
 ::: moniker range="vs-2017"
 - [Utiliser SQL Server et R](../rtvs/integrating-sql-server-with-r.md)

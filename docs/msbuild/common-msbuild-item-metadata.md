@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 152967fb99442b58d96016e10d8899b57ef35bf6
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 8dda627f748773bc4cb5598b133ac05597ffe1d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839307"
 ---
 # <a name="common-msbuild-item-metadata"></a>Métadonnées communes d’éléments MSBuild
 
@@ -30,7 +30,7 @@ Le tableau suivant décrit les métadonnées d’élément facultatives qui ont 
 
 | Métadonnées d’élément | Kits SDK | Description |
 |---------------| ------- | -------------|
-|% (Lien)| Tous |Le système de projet Visual Studio utilise des `Link` métadonnées (le cas échéant) pour modifier les éléments qui s’affichent dans l’arborescence de projet ; vous pouvez placer un fichier dans une structure de dossiers logiques différente dans **Explorateur de solutions** .<br />En outre, la `AssignTargetPath` tâche examine `Link` pour déterminer où copier un fichier dans le répertoire de sortie, s’il s’agit de l’un des éléments copiés.|
+|% (Lien)| Tous |Le système de projet Visual Studio utilise des `Link` métadonnées (le cas échéant) pour modifier les éléments qui s’affichent dans l’arborescence de projet ; vous pouvez placer un fichier dans une structure de dossiers logiques différente dans **Explorateur de solutions**.<br />En outre, la `AssignTargetPath` tâche examine `Link` pour déterminer où copier un fichier dans le répertoire de sortie, s’il s’agit de l’un des éléments copiés.|
 |% (Lien ressources)| SDK .NET Core | Utilisé pour définir le dossier à utiliser pour les `Link` métadonnées des groupes d’éléments. |
 
 ## <a name="see-also"></a>Voir aussi

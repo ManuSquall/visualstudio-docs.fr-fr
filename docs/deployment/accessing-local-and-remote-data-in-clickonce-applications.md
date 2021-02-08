@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837812"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Accéder aux données locales et distantes dans les applications ClickOnce
 La plupart des applications consomment ou produisent des données. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vous propose diverses options pour lire et écrire les données, à la fois localement et à distance.
@@ -39,7 +39,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 ### <a name="clickonce-data-directory"></a>Répertoire de données ClickOnce
  Chaque application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installée sur un ordinateur local possède un répertoire de données stocké dans le dossier Documents and Settings de l'utilisateur. Tous les fichiers inclus dans une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et marqués en tant que fichiers de « données » sont copiés dans ce répertoire quand une application est installée. Les fichiers de données peuvent être associés à tout type de fichier, les plus fréquemment utilisés étant les fichiers texte, XML et les fichiers de base de données tels que les fichiers .mdb de Microsoft Access.
 
- Le répertoire de données est destiné aux données gérées par l'application, c'est-à-dire les données que l'application stocke et gère explicitement. Tous les fichiers statiques qui ne sont pas des dépendances et ne sont pas marqués en tant que « données » dans le manifeste d'application résident plutôt dans le répertoire de l'application. Ce répertoire contient les fichiers exécutables ( *.exe* ) et les assemblys de l’application.
+ Le répertoire de données est destiné aux données gérées par l'application, c'est-à-dire les données que l'application stocke et gère explicitement. Tous les fichiers statiques qui ne sont pas des dépendances et ne sont pas marqués en tant que « données » dans le manifeste d'application résident plutôt dans le répertoire de l'application. Ce répertoire contient les fichiers exécutables (*.exe*) et les assemblys de l’application.
 
 > [!NOTE]
 > Quand une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est désinstallée, son répertoire de données est également supprimé. N’utilisez jamais le répertoire de données pour stocker les données gérées par l’utilisateur final, comme des documents.
@@ -62,7 +62,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 
  Vous pouvez également obtenir le chemin d'accès au répertoire de données en utilisant les variables appropriées sur la classe <xref:System.Windows.Forms.Application> , telles que <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- La manipulation d'autres types de fichiers peut nécessiter des autorisations supplémentaires. Par exemple, si vous souhaitez utiliser un fichier de base de données Access ( *. mdb* ), votre application doit déclarer une confiance totale pour pouvoir utiliser les \<xref:System.Data> classes appropriées.
+ La manipulation d'autres types de fichiers peut nécessiter des autorisations supplémentaires. Par exemple, si vous souhaitez utiliser un fichier de base de données Access (*. mdb*), votre application doit déclarer une confiance totale pour pouvoir utiliser les \<xref:System.Data> classes appropriées.
 
 #### <a name="data-directory-and-application-versions"></a>Répertoire de données et versions d’application
  Chaque version d'une application possède son propre répertoire de données, qui est isolé des autres versions. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crée ce répertoire que des fichiers de données soient inclus ou non dans le déploiement, afin que l'application dispose d'un emplacement pour créer des fichiers de données au moment de l'exécution. Quand une nouvelle version d'une application est installée, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] copie tous les fichiers de données existants du répertoire de données de la version précédente dans le répertoire de données de la nouvelle version, qu'ils aient été inclus dans le déploiement d'origine ou créés par l'application.

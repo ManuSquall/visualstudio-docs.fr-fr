@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837002"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Verbes Register pour les extensions de nom de fichier
 L’Association d’une extension de nom de fichier à une application a généralement une action préférée qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action par défaut est liée à un verbe, par exemple Open, qui correspond à l’action.
@@ -35,7 +35,7 @@ L’Association d’une extension de nom de fichier à une application a génér
 
 - Imprimer
 
-- Préversion
+- PRÉVERSION
 
   Dans la mesure du possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe Edit uniquement s’il existe une différence nette entre l’ouverture du fichier et la modification du fichier. Par exemple, l’ouverture d’un fichier *. htm* l’affiche dans le navigateur, tandis que la modification d’un fichier *. htm* démarre un éditeur HTML. Les verbes standard sont localisés avec les paramètres régionaux du système d’exploitation.
 

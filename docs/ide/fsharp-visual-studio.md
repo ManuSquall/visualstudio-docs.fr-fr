@@ -9,15 +9,15 @@ f1_keywords:
 - fs.ProjectPropertiesDebug
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a97bd1010a9c739c253f9b5f0a536800fd1f8b69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838615"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -25,7 +25,7 @@ Cet article contient des informations sur les fonctionnalités de Visual Studio 
 
 ## <a name="install-f-support"></a>Installer la prise en charge de F#
 
-Pour développer avec F# dans Visual Studio, installez d’abord la charge de travail **Développement .NET Desktop** si ce n’est déjà fait. Vous installez les charges de travail Visual Studio par le biais de Visual Studio installer, que vous pouvez ouvrir en sélectionnant **Outils**pour  >  **accéder aux outils et aux fonctionnalités**.
+Pour développer avec F# dans Visual Studio, installez d’abord la charge de travail **Développement .NET Desktop** si ce n’est déjà fait. Vous installez les charges de travail Visual Studio par le biais de Visual Studio installer, que vous pouvez ouvrir en sélectionnant **Outils** pour  >  **accéder aux outils et aux fonctionnalités**.
 
 ![Charge de travail Développement .NET Desktop dans Visual Studio](media/dotnet-desktop-development-workload.png)
 

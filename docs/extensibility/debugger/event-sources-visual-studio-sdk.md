@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ab0bc2bb61069e20276c471d1245d167715cc7a
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 268c22060d22bc69385cf07d1d5151e7dfe3ccb9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840507"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (kit de développement logiciel Visual Studio)
 Il existe deux sources d’événements : le moteur de débogage (DE) et le gestionnaire de débogage de session (SDM). Les événements envoyés à partir d’un DE ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 L’exemple suivant montre comment envoyer le **IDebugProgramCreateEvent2** de l’adresse de au SDM.
 
 ```csharp

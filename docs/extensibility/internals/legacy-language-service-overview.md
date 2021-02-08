@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 5226f9a3464786f85ad9d5348226e82e070cf57e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839584"
 ---
 # <a name="legacy-language-service-overview"></a>Présentation du service de langage hérité
 Un service de langage fournit une prise en charge de l’éditeur qui vous permet d’implémenter certaines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités. Les classes du service de langage de l’infrastructure de package managé (MPF) fournissent une prise en charge complète des fonctionnalités fréquemment utilisées et de la prise en charge partielle des autres fonctionnalités.

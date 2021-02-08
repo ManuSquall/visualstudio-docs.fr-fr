@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbf566e593bb1ddbc31c70de1570d746a14fbdcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836941"
 ---
 # <a name="sccopenproject-function"></a>Fonction SccOpenProject
 Cette fonction ouvre un projet de contrôle de code source existant ou en crée un.
@@ -75,7 +75,7 @@ dans Fonction de rappel facultative permettant d’afficher la sortie de texte �
 
 dans Signale si un nouveau projet doit être créé si le projet est inconnu du plug-in de contrôle de code source. La valeur peut être une combinaison de `SCC_OP_CREATEIFNEW` et `SCC_OP_SILENTOPEN.`
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -91,7 +91,7 @@ dans Signale si un nouveau projet doit être créé si le projet est inconnu du 
 |SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
 |SCC_E_NONSPECFICERROR|Une défaillance non spécifique ; le système de contrôle de code source n’a pas été initialisé.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’IDE peut passer un nom d’utilisateur ( `lpUser` ), ou il peut simplement passer un pointeur vers une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passé, ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur à se connecter et retourne le nom valide dans `lpUser` lorsqu’il reçoit une connexion valide, `.` car le plug-in peut changer la chaîne SCC_USER_SIZE de nom d’utilisateur `SCC_USER_LEN` .
 
 > [!NOTE]

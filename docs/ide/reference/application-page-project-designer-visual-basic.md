@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 986179e66335403cda85ba48d1652ac95b9f8171
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836525"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
 
 Utilisez la page **Application** du Concepteur de projet pour spécifier les paramètres d’application et les propriétés du projet.
 
-Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite **Project**  >  **Propriétés** du projet dans la barre de menus. Quand le **Concepteur de projet** apparaît, sélectionnez l’onglet **Application**.
+Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite   >  **Propriétés** du projet dans la barre de menus. Quand le **Concepteur de projet** apparaît, sélectionnez l’onglet **Application**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -104,7 +104,7 @@ Cliquez sur ce bouton pour afficher la [boîte de dialogue Informations de l’a
 
 ### <a name="enable-application-framework"></a>Activer l’infrastructure d’application
 
-Spécifie si un projet utilise le framework d’application. La valeur de cette option affecte les options disponibles dans l’objet de démarrage du formulaire de **démarrage** / **Startup object**.
+Spécifie si un projet utilise le framework d’application. La valeur de cette option affecte les options disponibles dans l’objet de démarrage du formulaire de **démarrage** / .
 
 Si cette case est cochée, votre application utilise le `Sub Main` standard. En cochant cette case, vous activez les fonctionnalités de la section **Propriétés de l’infrastructure d’application Windows** et vous êtes invité à sélectionner un formulaire de démarrage.
 

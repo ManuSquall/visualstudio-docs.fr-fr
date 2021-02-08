@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836720"
 ---
 # <a name="sccquerychanges-function"></a>Fonction SccQueryChanges
 Cette fonction énumère une liste donnée de fichiers, en fournissant des informations sur les modifications de nom pour chaque fichier via une fonction de rappel.
@@ -25,7 +25,7 @@ Cette fonction énumère une liste donnée de fichiers, en fournissant des infor
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-SCCRTN SccQueryChanges(
+SCCRTN SccQueryChanges(
    LPVOID           pContext,
    LONG             nFiles,
    LPCSTR*          lpFileNames,
@@ -55,7 +55,7 @@ dans Fonction de rappel à appeler pour chaque nom de fichier dans la liste (pou
 
 dans Valeur qui sera passée sans modification à la fonction de rappel.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -65,7 +65,7 @@ dans Valeur qui sera passée sans modification à la fonction de rappel.
 |SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les modifications interrogées concernent l’espace de noms : en particulier, en renommant, en ajoutant et en supprimant un fichier.
 
 ## <a name="see-also"></a>Voir aussi

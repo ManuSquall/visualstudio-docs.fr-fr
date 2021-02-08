@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47589b909ee2b7ee367c81684ac53e2b5e4e7d70
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c3e8737a29fed109e82240a74569011be60a586c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840858"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifeste de déploiement ClickOnce
 Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], y compris l'identification de la version actuelle de l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à déployer.
@@ -34,12 +34,12 @@ Un manifeste de déploiement est un fichier XML qui décrit un déploiement [!IN
 | [\<assembly> Appartient](../deployment/assembly-element-clickonce-deployment.md) | Obligatoire. Élément de niveau supérieur. | `manifestVersion` |
 | [\<assemblyIdentity> Appartient](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obligatoire. Identifie le manifeste d'application pour cette application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
 | [\<description> Appartient](../deployment/description-element-clickonce-deployment.md) | Obligatoire. Identifie les informations de l’application utilisées pour créer la présence d’un shell et l’élément **Ajout/Suppression de programmes** dans le Panneau de configuration. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
-| [\<deployment> Appartient](../deployment/deployment-element-clickonce-deployment.md) | facultatif. Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [\<deployment> Appartient](../deployment/deployment-element-clickonce-deployment.md) | Facultatif. Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
 | [\<compatibleFrameworks> Appartient](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Obligatoire. Identifie les versions du .NET Framework pour lesquelles cette application peut s'installer et s'exécuter. | `SupportUrl` |
 | [\<dependency> Appartient](../deployment/dependency-element-clickonce-deployment.md) | Obligatoire. Identifie la version de l'application à installer pour le déploiement et l'emplacement du manifeste d'application. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
 | [\<publisherIdentity> Appartient](../deployment/publisheridentity-element-clickonce-deployment.md) | Requis pour les manifestes signés. Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Signature> Appartient](../deployment/signature-element-clickonce-deployment.md) | facultatif. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement. | Aucune |
-| [\<customErrorReporting> Appartient](../deployment/customerrorreporting-element-clickonce-deployment.md) | facultatif. Spécifie un URI à afficher en cas d'erreur. | Uri |
+| [\<Signature> Appartient](../deployment/signature-element-clickonce-deployment.md) | Facultatif. Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement. | None |
+| [\<customErrorReporting> Appartient](../deployment/customerrorreporting-element-clickonce-deployment.md) | Facultatif. Spécifie un URI à afficher en cas d'erreur. | Uri |
 
 ## <a name="remarks"></a>Remarques
  Le fichier manifeste de déploiement identifie le déploiement d'une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], y compris la version actuelle et d'autres paramètres de déploiement. Il fait référence au manifeste d'application, qui décrit la version actuelle de l'application et tous les fichiers contenus dans le déploiement.

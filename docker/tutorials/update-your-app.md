@@ -4,17 +4,17 @@ description: Décrit comment mettre à jour une application Dockr.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: df2102c38250aa5c1bda52b4324cba808501db3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841742"
 ---
 # <a name="update-the-app"></a>Mettre à jour l’application
 
@@ -80,7 +80,7 @@ Pour supprimer un conteneur, vous devez d’abord l’arrêter. Une fois qu’el
     ```
 
 > [!TIP]
-> Vous pouvez arrêter et supprimer un conteneur dans une seule commande en ajoutant l’indicateur « force » à la `docker rm` commande. Par exemple : `docker rm -f <the-container-id>`
+> Vous pouvez arrêter et supprimer un conteneur dans une seule commande en ajoutant l’indicateur « force » à la `docker rm` commande. Par exemple : `docker rm -f <the-container-id>`
 
 ### <a name="remove-a-container-using-the-docker-view"></a>Supprimer un conteneur à l’aide de la vue Dockr
 

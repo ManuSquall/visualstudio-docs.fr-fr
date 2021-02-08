@@ -4,18 +4,18 @@ description: Découvrez comment vous pouvez utiliser Visual Studio pour visualis
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 650189c4418355ae06b296bac7e16eece0ea88ad
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: edb6fe17902ad84ec6d7a6e5b9929bd965e7c29b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841391"
 ---
 # <a name="monitor-with-tensorboard"></a>Surveiller avec TensorBoard
 

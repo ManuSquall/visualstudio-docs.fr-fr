@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db59d4938911d0c47f0122a8727be8f1c8acd67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840195"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Permet [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] à l’interface utilisateur d’afficher du texte dans la section **informations de transport** de la boîte de dialogue **attacher au processus** .

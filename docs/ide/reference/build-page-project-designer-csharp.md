@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836447"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 
@@ -121,7 +121,7 @@ Les paramètres suivants sont utilisés pour spécifier quels avertissements son
 > [!TIP]
 > Si vous ne souhaitez pas que les avertissements de l’analyse du code soient traités comme des erreurs, consultez [FAQ sur l’analyse du code](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
-## <a name="output"></a>Sortie
+## <a name="output"></a>Output
 
 Les paramètres suivants sont utilisés pour configurer les options de sortie pour le processus de génération.
 

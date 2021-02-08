@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836694"
 ---
 # <a name="sccsetoption-function"></a>Fonction SccSetOption
 Cette fonction définit des options qui contrôlent le comportement du plug-in de contrôle de code source.
@@ -45,7 +45,7 @@ dans Option définie.
 
 dans Paramètres de l’option.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -54,7 +54,7 @@ dans Paramètres de l’option.
 |SCC_I_SHARESUBPROJOK|Retourné si `nOption` a `SCC_OPT_SHARESUBPROJ` la valeur et que le plug-in de contrôle de code source permet à l’IDE de définir le dossier de destination.|
 |SCC_E_OPNOTSUPPORTED|L’option n’a pas été définie et ne doit pas être fiable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’IDE appelle cette fonction pour contrôler le comportement du plug-in de contrôle de code source. Le premier paramètre, `nOption` , indique la valeur qui est définie, tandis que la seconde, `dwVal` , indique que faire avec cette valeur. Le plug-in stocke ces informations associées à un `pvContext``,` , de sorte que l’IDE doit appeler cette fonction après l’appel de [SccInitialize](../extensibility/sccinitialize-function.md) (mais pas nécessairement après chaque appel à [SccOpenProject](../extensibility/sccopenproject-function.md)).
 
  Résumé des options et de leurs valeurs :

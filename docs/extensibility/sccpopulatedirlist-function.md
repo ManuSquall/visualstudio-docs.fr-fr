@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836915"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
 Cette fonction détermine quels répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, à partir d’une liste de répertoires à examiner.
@@ -25,7 +25,7 @@ Cette fonction détermine quels répertoires et (éventuellement) les fichiers s
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-SCCRTN SccPopulateDirList(
+SCCRTN SccPopulateDirList(
    LPVOID        pContext,
    LONG          nDirs,
    LPCSTR*       lpDirPaths,
@@ -60,7 +60,7 @@ dans Valeur qui doit être passée sans modification à la fonction de rappel.
 
 dans Combinaison de valeurs qui contrôlent le mode de traitement des répertoires (consultez la section « indicateurs PopulateDirList » de [indicateurs utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -68,7 +68,7 @@ dans Combinaison de valeurs qui contrôlent le mode de traitement des répertoir
 |SCC_OK|L’opération s’est terminée correctement.|
 |SCC_E_UNKNOWNERROR|Une erreur est survenue.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Seuls les répertoires et (éventuellement) les noms de fichiers qui se trouvent dans le référentiel de contrôle de code source sont passés à la fonction de rappel.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: d34ce48d9543107831ec358a9cf7eeed74d2787b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839662"
 ---
 # <a name="legacy-language-service-features-1"></a>Fonctionnalités du service de langage hérité 1
 Un service de langage MPF (Managed package Framework) peut prendre en charge une ou plusieurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités, telles que la mise en surbrillance syntaxique, IntelliSense et la validation de point d’arrêt. Chaque fonctionnalité peut être implémentée indépendamment des autres, mais tous requièrent un analyseur et un scanneur, à l’exception de la mise en surbrillance syntaxique, qui requiert uniquement un scanneur.

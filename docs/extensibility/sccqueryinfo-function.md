@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1efae18f15588f4dacf3409ea95e30af05397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2794e915efe35c2fee593d677ffd228c055a565a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836733"
 ---
 # <a name="sccqueryinfo-function"></a>Fonction SccQueryInfo
 Cette fonction obtient les informations d’état d’un ensemble de fichiers sélectionnés sous contrôle de code source.
@@ -50,7 +50,7 @@ dans Tableau de noms des fichiers à interroger.
 
 [in, out] Tableau dans lequel le plug-in de contrôle de code source retourne les indicateurs d’état de chaque fichier. Pour plus d’informations, consultez [code d’État du fichier](../extensibility/file-status-code-enumerator.md).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -60,7 +60,7 @@ dans Tableau de noms des fichiers à interroger.
 |SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert sous le contrôle de code source.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si `lpFileName` est une chaîne vide, il n’existe actuellement aucune information d’État à mettre à jour. Dans le cas contraire, il s’agit du nom de chemin d’accès complet du fichier pour lequel les informations d’État ont peut-être changé.
 
  Le tableau de retour peut être un masque de `SCC_STATUS_xxxx` bits de bits. Pour plus d’informations, consultez [code d’État du fichier](../extensibility/file-status-code-enumerator.md). Un système de contrôle de code source ne prend peut-être pas en charge tous les types de bits. Par exemple, si `SCC_STATUS_OUTOFDATE` n’est pas proposé, le bit n’est pas défini.

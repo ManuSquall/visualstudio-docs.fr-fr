@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9214d1ce4a873d6caea98b814e8d489f544944c5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: eceb0776fd1cb5e850dab2b97ab6e7e56a684ebd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838020"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Concepteur d'activités TransactedReceiveScope
 
@@ -37,7 +37,7 @@ Accédez au concepteur d’activités **TransactedReceiveScope** dans la catégo
 
 Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.TransactedReceiveScope> et décrit comment elles sont utilisées dans le concepteur. Ces <xref:System.Activities.Activity.DisplayName%2A> propriétés peuvent être modifiées dans la grille des propriétés ou sur l’aire de concepteur de flux de travail, mais les autres doivent être modifiées sur l’aire de conception.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.TransactedReceiveScope>. La valeur par défaut est TransactedReceiveScope.<br /><br /> Bien que le nom de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Supprime une <xref:System.ServiceModel.Activities.Receive> activité dans le bloc de **requête** sur l’aire du concepteur d’activités.|
@@ -47,7 +47,7 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Recevoir](../workflow-designer/receive-activity-designer.md)
+- [Çoive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Envoi](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

@@ -9,15 +9,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.XAML_Designer.General
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 0955a6644e8f1dc1d42a1b22b15399a6d1ca452d
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836187"
 ---
 # <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
 
@@ -36,7 +36,7 @@ Les paramètres suivants s’appliquent uniquement quand le concepteur XAML est 
 
 Utilisez ce paramètre pour contrôler si le mode Design apparaît quand des documents XAML sont chargés.
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Mode Source**|Spécifie si seule la source XAML apparaît dans la vue XAML. Cela est utile quand vous chargez des documents volumineux.|
 |**Vue de conception**|Spécifie si seul un concepteur visuel XAML apparaît dans la vue XAML.|
@@ -46,7 +46,7 @@ Utilisez ce paramètre pour contrôler si le mode Design apparaît quand des doc
 
 Utilisez ce paramètre pour contrôler le moment et la façon dont le concepteur XAML s’affiche quand vous modifiez un document XAML. Ces paramètres s’appliquent uniquement quand le **Mode Document par défaut** est défini sur **Mode fractionné**.
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Vertical**|La source XAML s’affiche sur le côté gauche de la vue XAML et le concepteur XAML sur l’autre côté.|
 |**Horizontal**|Le concepteur XAML s’affiche en haut de la vue XAML et la source XAML apparaît en dessous.|
@@ -56,7 +56,7 @@ Utilisez ce paramètre pour contrôler le moment et la façon dont le concepteur
 
 Utilisez ce paramètre pour déterminer le fonctionnement du zoom pendant la modification d’un document XAML.
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en faisant tourner la roulette de la souris.|
 |**Ctrl + roulette de la souris**|Effectuez un zoom avant sur la Concepteur XAML en appuyant sur la touche **CTRL** tout en faisant défiler la roulette de la souris.|
@@ -64,7 +64,7 @@ Utilisez ce paramètre pour déterminer le fonctionnement du zoom pendant la mod
 
 Ces paramètres déterminent le comportement du concepteur pendant la modification d’un document XAML.
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Nommer automatiquement les éléments interactifs à la création**|Spécifie si un nom par défaut est fourni pour un nouvel élément interactif quand vous l’ajoutez au concepteur.|
 |**Insérer automatiquement des propriétés de disposition après la création d’éléments**|Spécifie si des propriétés de disposition sont fournies pour un nouvel élément quand vous l’ajoutez au concepteur. Les propriétés de disposition sont celles qui influent sur la disposition d’un contrôle, par exemple, Marge et Alignement vertical. Le code XAML suivant illustre la création d’un bouton avec et sans cette option :<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
@@ -75,7 +75,7 @@ Ces paramètres déterminent le comportement du concepteur pendant la modificati
 
 Utilisez ces options pour déterminer des paramètres pendant de la modification de fichiers XAML à l’aide de Blend.
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Zoomer en utilisant**|Effectuez un zoom avant dans le Concepteur XAML en faisant tourner la roulette de la souris, ou en appuyant sur la touche **Ctrl** ou **Alt** tout en faisant tourner la roulette de la souris.|
 |**Unités de type**|Spécifie si les mesures dans le concepteur sont basées sur des points ou des pixels. Comme les applications Windows universelles ne prennent pas en charge les points, les unités sont automatiquement converties en pixels si l’option **Points** est sélectionnée.|
@@ -86,7 +86,7 @@ Utilisez ces paramètres pour déterminer le comportement du concepteur XAML pen
 
 ### <a name="snapping"></a>Accrochage
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Afficher la grille d’accrochage**|Quand cette option est sélectionnée, le quadrillage apparaît dans le concepteur pour vous aider à aligner les contrôles. Les contrôles ajoutés dans le concepteur s’accrochent au quadrillage quand l’option **Accrocher sur le quadrillage** est sélectionnée.|
 |**Accrocher sur le quadrillage**|Quand vous ajoutez ou déplacez des contrôles dans le concepteur, ils s’accrochent sur le quadrillage.|
@@ -99,11 +99,11 @@ Utilisez ces paramètres pour déterminer le comportement du concepteur XAML pen
 
 Utilisez ce paramètre pour déterminer si un avertissement s’affiche quand des animations dépendantes (non accélérées) sont activées dans Blend.
 
-### <a name="effects"></a>Effets
+### <a name="effects"></a>Effects (Effets)
 
 Utilisez ces paramètres pour déterminer si des effets sont affichés pendant la modification de fichiers XAML dans le concepteur XAML à l’aide de Blend.
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Prévisualiser les effets**|Spécifie si les effets sont affichés pendant la modification de fichiers XAML dans le concepteur XAML à l’aide de Blend.|
 |**Seuil du zoom**|Spécifie le pourcentage de zoom pour l’affichage des effets quand la case **Prévisualiser les effets** est cochée. Si vous effectuez un zoom au-delà de ce paramètre, les effets ne sont plus affichés dans le concepteur XAML.|

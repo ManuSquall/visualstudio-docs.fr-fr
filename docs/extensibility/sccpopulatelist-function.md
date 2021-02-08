@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f518413adba1546bcff4f7cf2e62b4563cf1bcc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2deb30b606de686269e095fffe369a7d56adb453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836928"
 ---
 # <a name="sccpopulatelist-function"></a>Fonction SccPopulateList
 Cette fonction met à jour une liste de fichiers pour une commande de contrôle de code source particulière et fournit l’état du contrôle de code source sur tous les fichiers donnés.
@@ -70,7 +70,7 @@ dans Valeur qui doit être passée sans modification à la fonction de rappel.
 
 dans Indicateurs de commande (consultez la section « indicateur PopulateList » de [indicateurs utilisée par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour plus d’informations).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -78,7 +78,7 @@ dans Indicateurs de commande (consultez la section « indicateur PopulateList 
 |SCC_OK|Réussite.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction examine la liste des fichiers pour déterminer son état actuel. Elle utilise la `pfnPopulate` fonction de rappel pour notifier l’appelant lorsqu’un fichier ne correspond pas aux critères de `nCommand` . Par exemple, si la commande est `SCC_COMMAND_CHECKIN` et qu’un fichier de la liste n’est pas extrait, le rappel est utilisé pour informer l’appelant. Parfois, le plug-in de contrôle de code source peut trouver d’autres fichiers qui peuvent faire partie de la commande et les ajouter. Cela permet, par exemple, à un utilisateur de Visual Basic d’extraire un fichier. bmp utilisé par son projet, mais qui n’apparaît pas dans le fichier de projet Visual Basic. Un utilisateur choisit la commande **obtenir** dans l’IDE. L’IDE affiche une liste de tous les fichiers qu’il estime que l’utilisateur peut obtenir, mais avant l’affichage de la liste, la `SccPopulateList` fonction est appelée pour s’assurer que la liste à afficher est à jour.
 
 ## <a name="example"></a>Exemple

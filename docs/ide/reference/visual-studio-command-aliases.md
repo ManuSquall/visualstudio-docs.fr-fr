@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 54a33d56542065311b2614bad72593132b7908cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836200"
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
 
@@ -46,7 +46,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Basculer le point d'arrêt|bp|Debug.ToggleBreakPoint|
 |Fenêtre Pile des appels|CallStack|Debug.CallStack|
 |Effacer les signets|ClearBook|Edit.ClearBookmarks|
-|Fermer|Fermer|File.Close|
+|fermez|fermez|File.Close|
 |Fermer tous les documents|CloseAll|Window.CloseAllDocuments|
 |Effacer tout|sécurité au niveau des colonnes|Edit.ClearAll|
 |Mode Commande|cmd|View.CommandWindow|
@@ -55,7 +55,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) sous la forme de caractères ANSI|da|Debug.ListMemory /Ansi|
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) (format Un octet)|db|Debug.ListMemory /Format:OneByte|
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) sous la forme de caractères ANSI (format Quatre octets)|dc|Debug.ListMemory /Format:FourBytes /Ansi|
-|[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) (format Quatre octets)|dd|Debug.ListMemory /Format:FourBytes|
+|[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) (format Quatre octets)|jj|Debug.ListMemory /Format:FourBytes|
 |Supprimer jusqu'au début de la ligne|DelBOL|Edit.DeleteToBOL|
 |Supprimer jusqu'à la fin de la ligne|DelEOL|Edit.DeleteToEOL|
 |Supprimer l’espace horizontal|DelHSp|Edit.DeleteHorizontalWhitespace|
@@ -122,7 +122,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Mettre en majuscules|Ucase|Edit.MakeUppercase|
 |Annuler|phase de restauration|Edit.Undo|
 |Remplacer les tabulations par des espaces dans la sélection|Untabify|Edit.UntabifySelection|
-|Fenêtre Espion|Regardez|Debug.WatchN|
+|Fenêtre Espion|Espion|Debug.WatchN|
 |Activer/Désactiver le retour automatique à la ligne|WordWrap|Edit.ToggleWordWrap|
 |Afficher les processus|&#124;|Debug.ListProcesses|
 |[Liste des threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|

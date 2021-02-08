@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836486"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Récupération automatique, Environnement, boîte de dialogue Options
 
 Utilisez cette page de la boîte de dialogue **Options** pour spécifier si les fichiers sont automatiquement sauvegardés ou non. Vous pouvez aussi spécifier si vous souhaitez restaurer les fichiers modifiés en cas d’arrêt inattendu de Visual Studio.
 
-Pour accéder à cette boîte de dialogue, accédez à **Outils**  >  **options**  >  **Environment**  >  **récupération automatique** de l’environnement.
+Pour accéder à cette boîte de dialogue, accédez à **Outils**  >  **options**  >    >  **récupération automatique** de l’environnement.
 
 :::image type="content" source="media/autorecover-options.png" alt-text="Capture d’écran de la section récupération automatique de la boîte de dialogue Options":::
 
@@ -38,10 +38,10 @@ Pour accéder à cette boîte de dialogue, accédez à **Outils**  >  **options*
 
 ::: moniker range="vs-2019"
 
-Utilisez cette option pour personnaliser la fréquence d’enregistrement automatique d’un fichier dans l’éditeur. Pour les fichiers précédemment enregistrés, Visual Studio 2019 version 16,2 et les versions ultérieures enregistrent une copie du fichier dans **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [ProjectName]_* _. Si le fichier est nouveau et que vous ne l’avez pas encore enregistré, Visual Studio l’enregistre automatiquement à l’aide d’un nom de fichier généré de manière aléatoire.
+Utilisez cette option pour personnaliser la fréquence d’enregistrement automatique d’un fichier dans l’éditeur. Pour les fichiers précédemment enregistrés, Visual Studio 2019 version 16,2 et les versions ultérieures enregistrent une copie du fichier dans ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [ProjectName]***. Si le fichier est nouveau et que vous ne l’avez pas encore enregistré, Visual Studio l’enregistre automatiquement à l’aide d’un nom de fichier généré de manière aléatoire.
 
 > [!NOTE]
-> Si vous utilisez Visual Studio 2019 version 16,1 ou antérieure, l’emplacement du fichier est _% USERPROFILE% \ Documents \ Visual Studio [version] fichiers \Sauvegarde \\ [ProjectName] *. Pour plus d’informations, consultez la page [historique des notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
+> Si vous utilisez Visual Studio 2019 version 16,1 ou antérieure, l’emplacement du fichier est *%USERPROFILE%\Documents\Visual Studio [version] \Sauvegarde Files \\ [ProjectName]*. Pour plus d’informations, consultez la page [historique des notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
 
 ::: moniker-end
 

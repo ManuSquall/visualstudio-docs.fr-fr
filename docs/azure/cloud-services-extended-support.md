@@ -1,24 +1,24 @@
 ---
-title: Utiliser cloud services (prise en charge étendue) (version préliminaire)
+title: Utiliser Cloud Services (support étendu) (préversion)
 description: En savoir plus sur la création et le déploiement d’un service Cloud (prise en charge étendue) à l’aide de Azure Resource Manager avec Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841131"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Créer et déployer des services Cloud (prise en charge étendue) dans Visual Studio (version préliminaire)
 
-À compter de [Visual Studio 2019 version 16,9 (actuellement en préversion](https://visualstudio.microsoft.com/vs/preview) ), vous pouvez travailler avec des services Cloud à l’aide de Azure Resource Manager, ce qui simplifie et modernise grandement la maintenance et la gestion des ressources Azure. Cette option est activée par un nouveau service Azure appelé *services Cloud (prise en charge étendue)*. Vous pouvez publier un service Cloud existant dans cloud services (prise en charge étendue). Pour plus d’informations sur ce service Azure, consultez [la documentation services Cloud (support étendu)](/azure/cloud-services-extended-support/overview).
+À compter de [Visual Studio 2019 version 16,9 (actuellement en préversion](https://visualstudio.microsoft.com/vs/preview) ), vous pouvez travailler avec des services Cloud à l’aide de Azure Resource Manager, ce qui simplifie et modernise grandement la maintenance et la gestion des ressources Azure. Cette option est activée par un nouveau service Azure appelé *services Cloud (prise en charge étendue)*. Vous pouvez publier un service cloud existant dans Cloud Services (support étendu). Pour plus d’informations sur ce service Azure, consultez la [documentation de Cloud Services (support étendu)](/azure/cloud-services-extended-support/overview).
 
 ## <a name="publish-to-cloud-services-extended-support"></a>Publier dans cloud services (prise en charge étendue)
 
@@ -30,7 +30,7 @@ Avant de publier un service Cloud Azure classique dans cloud services (prise en 
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>Pour publier un projet de service Cloud Azure classique dans cloud services (prise en charge étendue)
 
-1. Cloud services (support étendu) est actuellement en version préliminaire. Inscrivez la fonctionnalité pour votre abonnement comme suit :
+1. Cloud Services (support étendu) est actuellement en préversion. Inscrivez la fonctionnalité pour votre abonnement comme suit :
 
    ```azurepowershell-interactive
    Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
@@ -48,7 +48,7 @@ Avant de publier un service Cloud Azure classique dans cloud services (prise en 
 
 1. **Choisir votre abonnement** : choisissez l’abonnement à utiliser pour votre déploiement.
 
-1. Choisissez **suivant** pour passer à la page **paramètres** .
+1. Choisissez **Suivant** pour passer à la page **Paramètres**.
 
    ![Paramètres courants](./media/cloud-services-extended-support/publish-settings.png)
 
@@ -62,23 +62,23 @@ Avant de publier un service Cloud Azure classique dans cloud services (prise en 
 
 1. **Configuration de service** : sélectionnez **Cloud** ou **Local**.
 
-1. **Compte de stockage** : sélectionnez le compte de stockage à utiliser pour ce déploiement, ou **créez** -en un pour créer un compte de stockage. La région s’affiche entre parenthèses pour chaque compte de stockage. Il est recommandé que l’emplacement du centre de données du compte de stockage soit identique à celui du service cloud (Paramètres avancés).
+1. **Compte de stockage** : sélectionnez le compte de stockage à utiliser pour ce déploiement, ou **Créer** pour créer un compte de stockage. La région s’affiche entre parenthèses pour chaque compte de stockage. Il est recommandé que l’emplacement du centre de données du compte de stockage soit identique à celui du service cloud (Paramètres avancés).
 
    Le compte de stockage Azure stocke le package pour le déploiement de l'application.
 
 1. **Coffre de clés** : spécifiez le coffre de clés qui contient les secrets pour ce service Cloud (prise en charge étendue). Cette option est activée si le Bureau à distance est activé ou si des certificats sont ajoutés à la configuration.
 
-1. **Activer le Bureau à distance pour tous les rôles** : Sélectionnez cette option si vous souhaitez pouvoir vous connecter à distance au service. Vous êtes invité à spécifier les informations d’identification.
+1. **Activer le Bureau à distance pour tous les rôles** : Sélectionnez cette option si vous souhaitez pouvoir vous connecter à distance au service. Vous êtes invité à spécifier des informations d’identification.
 
-   ![Paramètres du Bureau à distance](./media/cloud-services-extended-support/remote-desktop-configuration.png)
+   ![Paramètres du bureau à distance](./media/cloud-services-extended-support/remote-desktop-configuration.png)
 
-1. Choisissez **suivant** pour accéder à la page des **paramètres de diagnostic** .
+1. Choisissez **Suivant** pour passer à la page **Paramètres de diagnostic**.
 
    ![Paramètres de diagnostic](./media/cloud-services-extended-support/diagnostics-settings.png)
 
    Les diagnostics vous permettent de dépanner un service Cloud Azure (prise en charge étendue). Pour en savoir plus sur les diagnostics, consultez [Configuration de Diagnostics pour les services cloud et les machines virtuelles Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Pour plus d’informations sur Application Insights, consultez [Présentation d’Application Insights](/azure/application-insights/app-insights-overview).
 
-1. Choisissez **suivant** pour passer à la page **Résumé** .
+1. Cliquez sur **Suivant** pour accéder à la page **Résumé**.
 
    ![Résumé](./media/cloud-services-extended-support/publish-summary.png)
 
@@ -87,9 +87,9 @@ Avant de publier un service Cloud Azure classique dans cloud services (prise en 
    > [!Note]
    > Le profil de publication s’affiche dans Explorateur de solutions dans Visual Studio, et les paramètres du profil sont écrits dans un fichier avec une extension *. azurePubxml* . Les paramètres sont enregistrés en tant qu'attributs de balises XML.
 
-1. Une fois que vous avez configuré tous les paramètres de déploiement de votre projet, sélectionnez **Publier** en bas de la boîte de dialogue. Vous pouvez surveiller l’état du processus dans la fenêtre sortie du **Journal d’activité Azure** dans Visual Studio. Choisissez le lien **ouvrir dans le portail** pour 
+1. Une fois que vous avez configuré tous les paramètres de déploiement de votre projet, sélectionnez **Publier** en bas de la boîte de dialogue. Vous pouvez superviser l’état du processus dans la fenêtre de sortie **Journal d’activité Azure** dans Visual Studio. Choisissez le lien **ouvrir dans le portail** pour 
 
-Félicitations ! Vous avez publié votre projet de service de Cloud Computing (support étendu) sur Azure. Pour publier à nouveau avec les mêmes paramètres, vous pouvez réutiliser le profil de publication ou répéter ces étapes pour en créer un nouveau. Le modèle et les paramètres Azure Resource Manager (ARM) qui sont utilisés pour le déploiement sont enregistrés dans le dossier *bin/ \<configuration\> /Publish* .
+Félicitations ! Vous avez publié votre projet de service de Cloud Computing (support étendu) sur Azure. Pour effectuer une nouvelle publication avec les mêmes paramètres, vous pouvez réutiliser le profil de publication ou répéter ces étapes pour en créer un nouveau. Le modèle et les paramètres Azure Resource Manager (ARM) qui sont utilisés pour le déploiement sont enregistrés dans le dossier *bin/ \<configuration\> /Publish* .
 
 ## <a name="clean-up-azure-resources"></a>Nettoyage des ressources Azure
 
@@ -97,4 +97,4 @@ Pour nettoyer les ressources Azure que vous avez créées en suivant ce didactic
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Configurez l’intégration continue (CI) à l’aide du bouton **configurer** sur l’écran de **publication** . Pour plus d’informations, consultez [la documentation Azure pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
+Configurez l’intégration continue (CI) à l’aide du bouton **Configurer** sur l’écran **Publier**. Pour plus d’informations, consultez la [documentation Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).

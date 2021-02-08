@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 741d0829-0943-49bf-b56e-61e836043006
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f56e412d0312de4b6e9522da24004ca37d522aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcfafa5d104ded3ace847ac659171f423b07128a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840390"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
 Obtient l’identificateur du fournisseur de port.
@@ -28,13 +28,13 @@ Obtient l’identificateur du fournisseur de port.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetPortSupplierId( 
+HRESULT GetPortSupplierId( 
    GUID* pguidPortSupplier
 );
 ```
 
 ```csharp
-HRESULT GetPortSupplierId( 
+HRESULT GetPortSupplierId( 
    out Guid pguidPortSupplier
 );
 ```
@@ -43,7 +43,7 @@ HRESULT GetPortSupplierId( 
 `pguidPortSupplier`\
 à Retourne le GUID du fournisseur de port.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

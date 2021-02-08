@@ -4,18 +4,18 @@ description: Découvrez comment utiliser Visual Studio Tools for AI pour intégr
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62b0a5f3fac00aba0648008a47d35e0adc89f4
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7746d8dd39bb4400a7779ad43e489cf6e7475fb9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841625"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Créer un projet AI à partir d’un code existant
 

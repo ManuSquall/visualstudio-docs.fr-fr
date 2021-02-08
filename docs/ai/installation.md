@@ -4,18 +4,18 @@ description: Explique comment installer des outils d’intelligence artificielle
 keywords: ia, visual studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841443"
 ---
 # <a name="installation"></a>Installation
 
@@ -156,7 +156,7 @@ Rendez-vous [ici](https://caffe2.ai/docs/getting-started.html) pour une généra
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (en développement)](https://mxnet.incubator.apache.org/) est un framework deep learning conçu pour l’efficacité et la flexibilité. Il vous permet de **mélanger une ** [programmation symbolique et impérative](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) afin d’optimiser l’efficacité et la productivité.
+[Apache MXNet (en développement)](https://mxnet.incubator.apache.org/) est un framework deep learning conçu pour l’efficacité et la flexibilité. Il vous permet de **mélanger une** [programmation symbolique et impérative](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) afin d’optimiser l’efficacité et la productivité.
 
 Pour installer MXNet, exécutez la commande suivante dans un terminal :
 

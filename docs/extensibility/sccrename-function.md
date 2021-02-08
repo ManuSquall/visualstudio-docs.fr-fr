@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a917e43729b3049e488264c260f8455ab08fe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836746"
 ---
 # <a name="sccrename-function"></a>Fonction SccRename
 Cette fonction renomme un fichier dans le système de contrôle de code source.
@@ -50,7 +50,7 @@ dans Nom de fichier complet du fichier renommé.
 
 [in] Nom qualifié complet du nouveau nom. Si le chemin d’accès au répertoire est différent, le fichier a été déplacé d’un sous-répertoire à un autre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
@@ -64,7 +64,7 @@ dans Nom de fichier complet du fichier renommé.
 |SCC_E_OPNOTPERFORMED|L’opération n’a pas été effectuée.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction peut être utilisée pour renommer un fichier ou le déplacer d’un emplacement à un autre dans le système de contrôle de code source. Le plug-in de contrôle de code source ne doit pas tenter d’accéder au fichier sur le disque. Il incombe à l’IDE de renommer le fichier local.
 
 ## <a name="see-also"></a>Voir aussi

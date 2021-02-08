@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837242"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 Les types de projets doivent inscrire les répertoires dans lesquels se trouvent les modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projets pour déterminer les éléments à afficher dans les boîtes de dialogue **Ajouter un nouveau projet** et **Ajouter un nouvel élément** .
@@ -39,11 +39,11 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Name|Type|Description|
+|Nom|Type|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|Nom par défaut des projets de ce type.|
 |DisplayName|REG_SZ|ID de ressource du nom à récupérer à partir de la DLL satellite inscrite sous packages.|
-|Paquet|REG_SZ|ID de classe du package enregistré sous packages.|
+|Package|REG_SZ|ID de classe du package enregistré sous packages.|
 |ProjectTemplatesDir|REG_SZ|Chemin d’accès par défaut des fichiers de modèles de projet. Les fichiers de modèles de projet sont affichés par le nouveau modèle de **projet** .|
 
 ### <a name="registering-item-templates"></a>Inscription des modèles d’élément
@@ -57,7 +57,7 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 "SortPriority"=dword:00000064
 ```
 
-| Name | Type | Description |
+| Nom | Type | Description |
 |--------------------------|-----------| - |
 | @ | REG_SZ | ID de ressource pour ajouter des modèles d’élément. |
 | TemplatesDir | REG_SZ | Chemin d’accès aux éléments de projet affichés dans la boîte de dialogue de l’Assistant **Ajout d’un nouvel élément** . |
@@ -84,7 +84,7 @@ Les types de projets doivent inscrire les répertoires dans lesquels se trouvent
 "SortPriority"=dword:00000064
 ```
 
-|Name|Type|Description|
+|Nom|Type|Description|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Fait du filtre l’un des filtres courants dans la boîte de dialogue **Rechercher dans les fichiers** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|
 |CommonOpenFilesFilter|REG_DWORD|Fait du filtre l’un des filtres courants dans la boîte de dialogue **ouvrir un fichier** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|

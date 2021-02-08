@@ -25,15 +25,15 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e5d02d7840f1b16098509a6549816746c0a5bfbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838059"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Vue d’ensemble de Visual Studio Tools pour Office Runtime
   Pour exécuter des solutions créées à l’aide des outils de développement Microsoft Office dans Visual Studio, Visual Studio 2010 Tools pour Office Runtime doit être installé sur les ordinateurs des utilisateurs finaux. Pour plus d’informations, consultez [Comment : installer le Visual Studio Tools pour le package redistribuable Office Runtime](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools pour Office Runtime se compose de deux composants principaux :
@@ -108,7 +108,7 @@ ms.locfileid: "97526277"
 |------------------------|---------------------------------|--------------------------------------------------------------------|
 |32 bits|32 bits|32 bits|
 |64 bits|32 bits|64 bits|
-|64 bits|64 bits|64 bits|
+|64 bits|64 bits|64 bits|
 
  Quand vous installez Office, la version requise de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] est installée avec Office. Par exemple, quand vous installez l'édition 64 bits d'Office sur une version 64 bits de Windows, la version 64 bits de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] est également installée. Pour plus d’informations sur l’installation de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] avec Office, consultez [Visual Studio Tools pour les scénarios d’installation d’Office Runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
