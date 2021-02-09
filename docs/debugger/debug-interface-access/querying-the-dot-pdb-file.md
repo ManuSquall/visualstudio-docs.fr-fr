@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8da07d1c-2712-45f9-8fbf-f34040408a8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a7cff092d06b8845993dcf1a35b271da0c0a33c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ff2a0cc850930a960e518e4039d6cb970005cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853232"
 ---
 # <a name="querying-the-pdb-file"></a>Interrogation du fichier .Pdb
 Un fichier de base de données de programme (extension. pdb) est un fichier binaire qui contient des informations de débogage de type et symboliques rassemblées au cours de la compilation et de la liaison du projet. Un fichier PDB est créé quand vous compilez un programme C/C++ avec **/Zi** ou **/Zi** , ou un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] programme, ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] avec l’option **/Debug** . Les fichiers objets contiennent des références dans le fichier. pdb pour les informations de débogage. Pour plus d’informations sur les fichiers PDB, consultez [fichiers PDB](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Une application DIA peut utiliser les étapes générales suivantes pour obtenir des détails sur les différents symboles, objets et éléments de données dans une image exécutable.

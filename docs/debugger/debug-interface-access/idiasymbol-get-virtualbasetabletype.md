@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0581c4f-0343-49b5-9754-a48477460e9f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 858f149abb0bec444c43ea706e638def4ff930ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e31fd1b8d3ea014b5fde2f57969871fe4237800a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862436"
 ---
 # <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 Récupère le type d’un pointeur de table de base virtuelle.
@@ -36,13 +36,13 @@ HRESULT get_virtualBaseTableType(
 |---------------|-----------------|
 |`pRetVal`|à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui spécifie le type de table de base.|
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un pointeur de table de base virtuelle ( `vbtptr` ) est un pointeur masqué dans un [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable qui gère l’héritage à partir de classes de base virtuelles. Un `vbtptr` peut avoir des tailles différentes en fonction des classes héritées.
 
  Cette méthode retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui peut être utilisé pour déterminer la taille du vbtptr.

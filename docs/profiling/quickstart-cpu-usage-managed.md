@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d3cdb022dce8a9f4b7037e3770cb0ae46c6863c
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861644"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (C#, Visual Basic)
 
@@ -27,7 +27,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 1. Ouvrez Visual Studio et créez le projet.
 
@@ -39,7 +39,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
    Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Si la fenêtre de démarrage n’est pas ouverte **File** , choisissez > **fenêtre démarrage**de fichier.
+   Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
@@ -175,7 +175,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
     ```
 
     > [!NOTE]
-    > Dans Visual Basic, assurez-vous que l’objet de démarrage est défini sur (propriétés de l’objet de démarrage de l' `Sub Main` **Properties**  >  **application**  >  **Startup Object**).
+    > Dans Visual Basic, assurez-vous que l’objet de démarrage est défini sur (propriétés de l’objet de démarrage de l' `Sub Main`   >  **application**  >  ).
 
 ## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage
 

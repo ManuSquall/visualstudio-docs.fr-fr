@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4b74e20d21ad2c67eed36add90051119c7b8b56e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861164"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Guide pratique pour créer des associations de fichiers pour une application ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications peuvent être associées à une ou plusieurs extensions de nom de fichier, afin que l’application démarre automatiquement lorsque l’utilisateur ouvre un fichier de ces types. L’ajout de la prise en charge de l’extension de nom de fichier à une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est simple.

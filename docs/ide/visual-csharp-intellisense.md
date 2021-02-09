@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IntelliSense [C#]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862061"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -164,5 +164,5 @@ Si vous appuyez sur la touche **Tab**, IntelliSense choisit une méthode avec la
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisez IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)
 - [IDE Visual Studio](../get-started/visual-studio-ide.md)

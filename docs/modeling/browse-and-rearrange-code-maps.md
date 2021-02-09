@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861932"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Parcourir et réorganiser des cartes de code
 
@@ -282,9 +282,9 @@ Vous pouvez modifier les icônes sur les éléments de code et les couleurs des 
 
     |**Pour modifier l'élément suivant**|**Choisissez**|
     |-|-|
-    |Couleur d'arrière-plan|**Contexte**|
+    |Couleur d’arrière-plan|**Contexte**|
     |Couleur du contour|**Stroke**|
-    |Couleur du texte (la lettre « f » s’affiche pour afficher le résultat)|**Premier plan**|
+    |Couleur du texte (la lettre « f » s’affiche pour afficher le résultat)|**Sombre**|
     |Icône|**Icônes**|
 
      La boîte de dialogue **Sélecteur de jeu de couleurs** ou sélecteur de jeu d' **icônes** s’affiche pour vous permettant de sélectionner une couleur ou une icône.
@@ -309,7 +309,7 @@ Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dan
 
     |**To**|**Choisissez**|
     |-|-|
-    |Désactiver l'élément de code|**Désactiver**|
+    |Désactiver l'élément de code|**Disable**|
     |Supprimer l'élément de code|**Supprimer**|
     |Déplacer le style vers le haut|**Monter**|
     |Déplacer l'élément de code vers le bas|**Descendre**|

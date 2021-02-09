@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74259a6e15446d8ca0b07f3b694d0285427f8d9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62430715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861554"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutoriel : Utiliser Python dans Visual Studio
 
@@ -42,7 +42,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 
 1. Dans Visual Studio, sélectionnez **fichier**  >  **nouveau**  >  **projet** (**CTRL** + **MAJ** + **N**), qui affiche la boîte de dialogue **nouveau projet** . Ici, vous parcourez les modèles pour différents langages, puis vous en sélectionnez un pour votre projet et vous spécifiez l’emplacement où Visual Studio place les fichiers.
 
-1. Pour afficher les modèles Python, **Installed**sélectionnez l’option  >  **python** installé sur la gauche, ou recherchez « Python ». L’utilisation de la recherche est un bon moyen de trouver un modèle quand vous ne vous souvenez pas de son emplacement dans l’arborescence des langages.
+1. Pour afficher les modèles Python, sélectionnez l’option  >  **python** installé sur la gauche, ou recherchez « Python ». L’utilisation de la recherche est un bon moyen de trouver un modèle quand vous ne vous souvenez pas de son emplacement dans l’arborescence des langages.
 
     ![Boîte de dialogue Nouveau projet avec les projets Python](media/vs-getting-started-python-01-new-project.png)
 

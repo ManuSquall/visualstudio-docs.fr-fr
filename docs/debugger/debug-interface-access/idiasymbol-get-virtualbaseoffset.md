@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 103b034f-36c4-42d5-aa34-1449a1e66d03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc7d0e8f1f8421623ed592a2a524af42e51a886
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32f37a2e912e6e7ad315a1c92a495fcb5ad98a0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862445"
 ---
 # <a name="idiasymbolget_virtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
 Récupère le décalage dans la table de fonctions virtuelles d’une fonction virtuelle.
@@ -25,7 +25,7 @@ Récupère le décalage dans la table de fonctions virtuelles d’une fonction v
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_virtualBaseOffset ( 
+HRESULT get_virtualBaseOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_virtualBaseOffset ( 
 
 à Retourne l’offset dans la table de fonctions virtuelles d’une fonction virtuelle.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

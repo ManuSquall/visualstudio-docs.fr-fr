@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62912be9fdfecc98a264a58c9713cc12ccaf28f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861138"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Cette interface représente un port de débogage sur un ordinateur.
@@ -48,7 +48,7 @@ IDebugPort2 : IUnknown
 |[GetProcess,](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Retourne une interface au processus en fonction de l’identificateur du processus.|
 |[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Énumère tous les processus en cours d’exécution sur un port.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le port local permet d’accéder à tous les processus et programmes en cours d’exécution sur l’ordinateur local. D’autres ports peuvent représenter une connexion de câble série à un appareil Windows CE ou une connexion réseau à un ordinateur non-DCOM. L' `IDebugPort2` interface permet de rechercher le nom et l’identificateur d’un port et d’énumérer tous les processus en cours d’exécution sur le port. Les fonctionnalités de lancement et de fin des processus sur le port sont implémentées dans l' `IDebugPortEx2` interface.
 
 ## <a name="requirements"></a>Configuration requise

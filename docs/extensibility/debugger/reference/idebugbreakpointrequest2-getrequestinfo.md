@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a327207f5fde99aac482cf0b77d29af04b082524
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862140"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Obtient les informations de demande de point d’arrêt qui décrivent cette demande de point d’arrêt.
@@ -28,14 +28,14 @@ Obtient les informations de demande de point d’arrêt qui décrivent cette dem
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetRequestInfo( 
+HRESULT GetRequestInfo( 
    BPREQI_FIELDS    dwFields,
    BP_REQUEST_INFO* pBPRequestInfo
 );
 ```
 
 ```csharp
-int GetRequestInfo( 
+int GetRequestInfo( 
    eunm_BPREQI_FIELDS  dwFields,
    BP_REQUEST_INFO[]   pBPRequestInfo
 );
@@ -48,7 +48,7 @@ dans Combinaison d’indicateurs de l’énumération [BPREQI_FIELDS](../../../e
 `pBPRequestInfo`\
 à Spécifie la structure [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) à remplir avec la description de la demande de point d’arrêt.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

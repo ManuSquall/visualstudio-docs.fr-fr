@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 984b9d5d9bfd5c3800ec816e1f57489e0348f53c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44d7ad28ff2fdc5c6f71daca1d5479cd05263ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862401"
 ---
 # <a name="idiatable"></a>IDiaTable
 Énumère une table de source de données DIA.
@@ -25,7 +25,7 @@ ms.locfileid: "85461286"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaTable : IEnumUnknown
+IDiaTable : IEnumUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -38,7 +38,7 @@ Le tableau suivant présente les méthodes de `IDiaTable` .
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Récupère le nombre d’éléments dans la table.|
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Récupère une référence à un index d’entrée particulier.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette interface implémente les `IEnumUnknown` méthodes d’énumération dans l’espace de noms Microsoft. VisualStudio. OLE. Interop. L' `IEnumUnknown` interface d’énumération est plus efficace pour itérer au sein du contenu de la table que les méthodes [IDiaTable :: Get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) et [IDiaTable :: Item](../../debugger/debug-interface-access/idiatable-item.md) .
 
 L’interprétation de l' `IUnknown` interface retournée par la `IDiaTable::Item` méthode ou la `Next` méthode (dans l’espace de noms Microsoft. VisualStudio. OLE. Interop) dépend du type de table. Par exemple, si l' `IDiaTable` interface représente une liste de sources injectées, l’interface `IUnknown` doit être interrogée pour l’interface [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
@@ -130,7 +130,7 @@ void UseTable(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : Dia2. h
 
 Bibliothèque : diaguids. lib

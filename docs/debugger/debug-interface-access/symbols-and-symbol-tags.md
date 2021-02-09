@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: acef0d6809e33b969e1b6ecd874a842f0da32ae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12f1927e4290ff9d008eff9f497c9d570d9d44f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862282"
 ---
 # <a name="symbols-and-symbol-tags"></a>Balises Symbols et Symbol
 Les informations de débogage relatives à un programme compilé sont stockées dans le fichier de base de données du programme (. pdb) sous forme de symboles accessibles à l’aide des API du kit de développement logiciel (SDK) debug interface Access (DIA). Tous les symboles ont un [IDiaSymbol :: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) et une propriété [IDiaSymbol :: get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) . La `symTag` propriété indique le type de symbole tel que défini par l’énumération d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) . La `symIndexId` propriété est une `DWORD` valeur qui contient l’identificateur unique pour chaque instance d’un symbole.

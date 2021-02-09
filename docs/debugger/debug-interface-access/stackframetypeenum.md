@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 707b22693afe83f82a30055f0c59ff89272b5bc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862289"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Spécifie le type de frame de pile.
@@ -48,7 +48,7 @@ enum StackFrameTypeEnum {
 
 `FrameTypeUnknown` Frame qui ne contient aucune information de débogage.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaStackFrame :: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
 ## <a name="requirements"></a>Configuration requise

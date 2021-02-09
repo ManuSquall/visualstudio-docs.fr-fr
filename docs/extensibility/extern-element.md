@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862094"
 ---
 # <a name="extern-element"></a>Élément extern
 L’élément extern fait référence à tous les fichiers d’en-tête externes (*. h*) à fusionner avec le fichier *. vsct* au moment de la compilation. Les fichiers à fusionner doivent se trouver sur le chemin d’accès include donné au compilateur VSCT ou référencés par un [élément Include](../extensibility/include-element.md). Les fichiers peuvent être d’autres fichiers *. vsct* ou des fichiers d’en-tête C++.
@@ -43,8 +43,8 @@ L’élément extern fait référence à tous les fichiers d’en-tête externes
 |Attribut|Description|
 |---------------|-----------------|
 |href|Obligatoire. Chemin d’accès au fichier d’en-tête :<br /><br /> href = "stdidcmd. h"|
-|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|langage|facultatif. Langue par défaut de tous les [\<Strings>](../extensibility/strings-element.md) éléments de la table de commandes :<br /><br /> Language = "en-US"|
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|langage|Facultatif. Langue par défaut de tous les [\<Strings>](../extensibility/strings-element.md) éléments de la table de commandes :<br /><br /> Language = "en-US"|
 
 ### <a name="child-elements"></a>Éléments enfants
 

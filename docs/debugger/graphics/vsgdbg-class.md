@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67bce62612a85e0bcff5e51cd07d4c374e13b01e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861398"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg, classe
 Représente une interface pour le contrôle par programmation du composant dans l’application de Graphics Diagnostics.
@@ -47,5 +47,5 @@ class VsgDbg;
 |[ToggleHUD](togglehud.md)|Active ou désactive la superposition HUD Graphics Diagnostics.|
 |[UnInit](uninit.md)|Finalise le fichier journal de graphisme, le ferme et libère les ressources qui ont été utilisées pendant que l’application enregistrait activement des informations graphiques.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La `VsgDbg` classe représente une interface que vous pouvez utiliser pour contrôler les fonctionnalités des diagnostics de graphiques par programmation. Vous pouvez utiliser certaines fonctionnalités même si vous ne parvenez pas à capturer et à enregistrer activement des informations graphiques. Cela comprend la `AddMessage` fonction membre et la `ToggleHUD` fonction membre. Les autres fonctions membres préparent le composant dans l’application de Graphics Diagnostics pour démarrer ou arrêter la capture active des informations graphiques, ou doivent être appelées pendant que l’application capture et enregistre activement des informations graphiques dans un fichier journal de graphisme.

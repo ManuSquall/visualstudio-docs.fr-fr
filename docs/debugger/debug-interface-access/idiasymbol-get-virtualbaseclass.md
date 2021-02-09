@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 474eddc6-bf16-4731-9145-6db2f2a0b4fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 859a8d7696cf1b1ebc3932f41713a988558efd96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd6c2b08915c83d041d11cc9b65c1e35c725e56c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862457"
 ---
 # <a name="idiasymbolget_virtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est une classe de base virtuelle.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si le type de données défini par l’ut
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_virtualBaseClass ( 
+HRESULT get_virtualBaseClass ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_virtualBaseClass ( 
 
 à Retourne `TRUE` si le type de données défini par l’utilisateur est une classe de base virtuelle ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

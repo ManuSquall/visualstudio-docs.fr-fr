@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c2aa1e49c0465fcf75917f0d9bd134962794c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861749"
 ---
 # <a name="code-maps-for-c-projects"></a>Cartes de code pour les projets C++
 
@@ -40,7 +40,7 @@ Ces éléments ne sont pas pris en charge pour le code C et C++ :
 
 Ces problèmes peuvent se produire lorsque vous créez des cartes de code pour du code C et C++ :
 
-|**Problème**|**Cause possible**|**Résolution**|
+|**Problème**|**Cause possible**|**Résolution :**|
 |-|-|-|
 |Échec de la génération de la carte de code.|Aucun projet de la solution n’a été généré correctement.|Corrigez les erreurs de build qui se sont produites, puis régénérez la carte.|
 |Visual Studio cesse de répondre lorsque vous essayez de générer une carte de code à partir du menu **architecture** .|Le fichier de base de données du programme (.pdb) peut être endommagé.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Régénérez la solution puis recommencez.|

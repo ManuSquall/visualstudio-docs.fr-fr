@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 304576391b2287aee7567b3ccc2e4514ce5cb2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed60fb5262a6af07966ff974b8535ae299f3fc51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62848453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861411"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 Définit par sa présence si une instance par défaut de la classe de [classe vsgdbg,](vsgdbg-class.md) , qui fournit l’interface de capture par programmation, est fournie.
@@ -33,7 +33,7 @@ Définit par sa présence si une instance par défaut de la classe de [classe vs
 VsgDbg *g_pVsgDbg;
 ```
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’instance par défaut est souvent suffisante, mais pour utiliser l’interface de capture par programmation à l’intérieur d’une DLL lorsque l’appareil D3D a été créé en dehors de cette DLL, vous devez créer et gérer votre propre instance de la `VsgDbg` classe. Si vous gérez votre propre interface avec l’API de capture par programmation de cette manière, désactivez l’instance par défaut en définissant `VSG_NODEFAULT_INSTANCE` pour éviter une surcharge.
 
  Si l’instance par défaut n’est pas désactivée, elle est automatiquement initialisée avant l’exécution de votre programme et est automatiquement détruite à la fin de votre programme. Vous n’avez pas besoin d’initialiser ou d’initialiser cette instance explicitement.

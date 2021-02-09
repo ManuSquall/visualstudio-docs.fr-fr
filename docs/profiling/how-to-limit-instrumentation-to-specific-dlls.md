@@ -8,16 +8,16 @@ helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd781f2c62a313a8e0c0b044103ca5da28021f8
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 170a701e4eb8d42a15a475b1336a0ba33c20b01a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860774"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Guide pratique pour limiter l’instrumentation à des DLL spécifiques
 
@@ -39,7 +39,7 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 
 7. Dans la liste **Ajouter un projet cible**, sélectionnez le projet exécutable que vous voulez utiliser pour la DLL.
 
-     facultatif. Vous pouvez ajouter autant de projets de DLL que vous le voulez pour le profilage.
+     Facultatif. Vous pouvez ajouter autant de projets de DLL que vous le voulez pour le profilage.
 
 8. Pour empêcher la collecte de données pour un projet ajouté, cliquez sur le nom du projet, puis décochez la case **Instrumenter**.
 
@@ -57,7 +57,7 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 
     - Tapez le chemin d’accès et le nom de fichier de l’exécutable (.*exe*) qui effectuera l’opération. *dll* dans le **chemin d’accès de l’exécutable**. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.
 
-    - facultatif. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.
+    - Facultatif. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.
 
     - Cliquez sur **Suivant**.
 
@@ -65,7 +65,7 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 
 6. Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.
 
-7. facultatif. Pour en ajouter d’autres. fichiers *dll* , cliquez avec le bouton droit sur **cibles** , puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.
+7. Facultatif. Pour en ajouter d’autres. fichiers *dll* , cliquez avec le bouton droit sur **cibles** , puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.
 
     > [!NOTE]
     > Ne spécifiez pas le fichier exécutable (.*exe*) qui exerce les dll.
