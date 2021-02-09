@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12e575979e5bd1527dfa0d8e15b290d6b78e36ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df7b90d4096f651e0f055f9c92343df2a2712fe9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723904"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894892"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 Obtient le GUID pour ce processus.
@@ -28,14 +28,14 @@ Obtient le GUID pour ce processus.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetProcessId(
-   GUID* pguidProcessId
+HRESULT GetProcessId(
+   GUID* pguidProcessId
 );
 ```
 
 ```csharp
-int GetProcessId(
-   out Guid pguidProcessId
+int GetProcessId(
+   out Guid pguidProcessId
 );
 ```
 
@@ -43,10 +43,10 @@ int GetProcessId(
 `pguidProcessId`\
 à Retourne le GUID de ce processus.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’identificateur global unique (GUID) identifie ce processus à partir de tous les autres processus en cours d’exécution dans le système.
 
 ## <a name="see-also"></a>Voir aussi

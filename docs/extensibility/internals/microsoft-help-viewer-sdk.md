@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895750"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -565,7 +565,7 @@ Le fichier branding.js contient du code JavaScript utilisé par les éléments d
 
 Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios de communication des informations clés pour aider les utilisateurs du contenu, par exemple une page d’accueil contenant une section décrivant les jeux de contenu installés et des pages indiquant à l’utilisateur quand les rubriques sont introuvables dans l’ensemble de rubriques local. Ces fichiers HTM peuvent être modifiés par produit.  Les fournisseurs de l’interpréteur de commandes ISO sont en mesure de prendre le package de personnalisation par défaut et de modifier le comportement et le contenu de ces pages en fonction de leurs besoins.  Ces fichiers font référence à leur package de personnalisation respectif pour que les balises de personnalisation obtiennent le contenu correspondant à partir du fichier branding.xml.
 
-|**File**|**Utilisation**|**Source de contenu affichée**|
+|**Fichier**|**Utilisation**|**Source de contenu affichée**|
 |-|-|-|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise \<HomePageTitle>|
@@ -599,7 +599,7 @@ Personnalisation des fichiers. CSS inclut les définitions pour la présentation
 
 Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres graphiques.  La liste complète des fichiers graphiques dans le package de personnalisation de la visionneuse d’aide Visual Studio est indiquée ci-dessous.
 
-|**File**|**Utilisation**|**Exemples**|
+|**Fichier**|**Utilisation**|**Exemples**|
 |-|-|-|
 |clear.gif|Utilisé pour restituer la zone réductible||
 |footer_slice.gif|Présentation du pied de page||

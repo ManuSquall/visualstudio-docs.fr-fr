@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba192a0cda2e63453984d3de7d6007744cc401b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dcd81b79fa43d86036a7fd1ac0ad813e6e2ebb78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894970"
 ---
 # <a name="create-a-breakpoint"></a>Créer un point d’arrêt
 Les éléments suivants décrivent le processus de création d’un point d’arrêt.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: df851f304cd6c62e1447f791a23618a6de5cb0bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895594"
 ---
 # <a name="opening-and-saving-project-items"></a>Ouverture et enregistrement d’éléments de projet
 Lorsque vous ajoutez un nouveau type de projet, vous devez gérer l’ouverture et l’enregistrement de vos fichiers de projet dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE). Les rubriques suivantes décrivent les différentes approches de l’ouverture et de l’enregistrement des fichiers.

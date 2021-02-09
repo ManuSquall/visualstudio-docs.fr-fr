@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 728913596ce8c3947756906dffb144eecd3d71ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895269"
 ---
 # <a name="the-experimental-instance"></a>Instance expérimentale
 Pour protéger votre environnement de développement Visual Studio des applications non testées susceptibles de le modifier, VSSDK fournit un espace expérimental que vous pouvez utiliser pour expérimenter. Vous développez de nouvelles applications à l’aide de Visual Studio comme d’habitude, mais vous les exécutez à l’aide de cette instance expérimentale.

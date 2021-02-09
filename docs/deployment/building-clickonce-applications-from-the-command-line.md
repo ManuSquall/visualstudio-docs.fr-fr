@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895152"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Générer des applications ClickOnce à partir de la ligne de commande
 
@@ -33,7 +33,7 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
  Quand vous appelez MSBuild/target : publish sur la ligne de commande, il indique au système MSBuild de générer le projet et de créer une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans le dossier Publish. Cela équivaut à sélectionner la commande **publier** dans l’IDE.
 
- Cette commande exécute *msbuild.exe* , qui se trouve sur le chemin d’accès dans l’environnement d’invite de commandes de Visual Studio.
+ Cette commande exécute *msbuild.exe*, qui se trouve sur le chemin d’accès dans l’environnement d’invite de commandes de Visual Studio.
 
  Une « cible » est un indicateur de MSBuild sur la manière de traiter la commande. Les cibles principales sont la cible « Build » et la cible « Publish ». La cible Build équivaut à sélectionner la commande de génération (ou à appuyer sur F5) dans l’IDE. Si vous souhaitez uniquement générer votre projet, vous pouvez y parvenir en tapant `msbuild` . Cette commande fonctionne, car la cible de génération est la cible par défaut pour tous les projets générés par [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Cela signifie que vous n’avez pas besoin de spécifier explicitement la cible de génération. Par conséquent, `msbuild` le typage est la même opération que la saisie `msbuild /target:build` .
 
@@ -67,9 +67,9 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 1. Quittez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. Dans le menu **Démarrer** de Windows, cliquez sur **tous les programmes** , **Microsoft Visual Studio** , **Visual Studio Tools** , puis sur **invite de commandes de Visual Studio**. Cela doit ouvrir une invite de commandes dans le dossier racine de l’utilisateur actuel.
+2. Dans le menu **Démarrer** de Windows, cliquez sur **tous les programmes**, **Microsoft Visual Studio**, **Visual Studio Tools**, puis sur **invite de commandes de Visual Studio**. Cela doit ouvrir une invite de commandes dans le dossier racine de l’utilisateur actuel.
 
-3. Dans l' **invite de commandes de Visual Studio** , remplacez le répertoire actif par l’emplacement du projet que vous venez de générer. Par exemple, tapez `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. Dans l' **invite de commandes de Visual Studio**, remplacez le répertoire actif par l’emplacement du projet que vous venez de générer. Par exemple, tapez `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Pour supprimer les fichiers existants générés dans « pour créer et publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projet », tapez `rmdir /s publish` .
 
@@ -77,7 +77,7 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 5. Tapez `msbuild /target:publish`.
 
-   Les étapes ci-dessus produiront un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application complet dans un sous-dossier de votre projet nommé **Publish**. *CmdLineDemo. application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *CmdLineDemo_1.0.0.0* contient les fichiers *CmdLineDemo.exe* et *CmdLineDemo.exe. manifest* , le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de l’application. *Setup.exe* est le programme d’amorçage, qui est configuré par défaut pour installer le .NET Framework. Le dossier DotNetFX contient les fichiers redistribuables du .NET Framework. Il s’agit de l’ensemble complet des fichiers dont vous avez besoin pour déployer votre application sur le Web ou via un UNC ou un CD/DVD.
+   Les étapes ci-dessus produiront un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application complet dans un sous-dossier de votre projet nommé **Publish**. *CmdLineDemo. application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *CmdLineDemo_1.0.0.0* contient les fichiers *CmdLineDemo.exe* et *CmdLineDemo.exe. manifest*, le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de l’application. *Setup.exe* est le programme d’amorçage, qui est configuré par défaut pour installer le .NET Framework. Le dossier DotNetFX contient les fichiers redistribuables du .NET Framework. Il s’agit de l’ensemble complet des fichiers dont vous avez besoin pour déployer votre application sur le Web ou via un UNC ou un CD/DVD.
 
 > [!NOTE]
 > Le système MSBuild utilise l’option **PublishDir** pour spécifier l’emplacement de sortie, par exemple `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -99,7 +99,7 @@ Une fois que vous avez créé le profil de publication, vous pouvez fournir le f
 
  Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant publication ou dans le fichier de profil de publication pour .NET Core 3,1 ou des projets ultérieurs. Ces propriétés influencent directement la manière dont l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est générée.
 
- Dans *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
+ Dans *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -130,7 +130,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 Pour .NET Core 3,1 ou version ultérieure, les projets de ces paramètres sont fournis dans le fichier pubxml.
 
- Les propriétés de publication sont contrôlées dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir des pages de propriétés **publier** , **sécurité** et **signature** du **Concepteur de projets**. Vous trouverez ci-dessous une description des propriétés de publication, ainsi qu’une indication de la façon dont chacune est définie dans les différentes pages de propriétés du concepteur d’application :
+ Les propriétés de publication sont contrôlées dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir des pages de propriétés **publier**, **sécurité** et **signature** du **Concepteur de projets**. Vous trouverez ci-dessous une description des propriétés de publication, ainsi qu’une indication de la façon dont chacune est définie dans les différentes pages de propriétés du concepteur d’application :
 
 > [!NOTE]
 > Pour les projets de bureau Windows .NET, ces paramètres se trouvent désormais dans l’Assistant Publication
@@ -205,9 +205,9 @@ Pour les applications Windows .NET, ce paramètre reste dans le fichier projet
 |Option URL|Description|
 |----------------|-----------------|
 |`PublishURL`|Obligatoire si vous publiez votre application ClickOnce sur un site Web.|
-|`InstallURL`|facultatif. Définissez cette option d’URL si le site d’installation est différent du `PublishURL` . Par exemple, vous pouvez définir `PublishURL` sur un chemin d’accès FTP et définir `InstallURL` sur une URL Web.|
-|`SupportURL`|facultatif. Définissez cette option d’URL si le site de support est différent du `PublishURL` . Par exemple, vous pouvez définir le `SupportURL` sur le site Web du support technique de votre entreprise.|
-|`UpdateURL`|facultatif. Définissez cette option d’URL si l’emplacement de mise à jour est différent du `InstallURL` . Par exemple, vous pouvez définir `PublishURL` sur un chemin d’accès FTP et définir `UpdateURL` sur une URL Web.|
+|`InstallURL`|Facultatif. Définissez cette option d’URL si le site d’installation est différent du `PublishURL` . Par exemple, vous pouvez définir `PublishURL` sur un chemin d’accès FTP et définir `InstallURL` sur une URL Web.|
+|`SupportURL`|Facultatif. Définissez cette option d’URL si le site de support est différent du `PublishURL` . Par exemple, vous pouvez définir le `SupportURL` sur le site Web du support technique de votre entreprise.|
+|`UpdateURL`|Facultatif. Définissez cette option d’URL si l’emplacement de mise à jour est différent du `InstallURL` . Par exemple, vous pouvez définir `PublishURL` sur un chemin d’accès FTP et définir `UpdateURL` sur une URL Web.|
 
 ## <a name="see-also"></a>Voir aussi
 

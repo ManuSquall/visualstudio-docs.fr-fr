@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: f4c20689c79529edf4a34edca857dedf1420b03f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383168"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895113"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Choisir une stratégie de déploiement ClickOnce
 Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], trois stratégies sont possibles. Celle que vous choisissez dépend principalement du type d'application que vous déployez. Les trois stratégies de déploiement sont les suivantes :
@@ -57,7 +57,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
  Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur **Ne pas installer l’application** dans la page **Installer ou exécuter à partir d’un site web** de l’Assistant Publication.
 
- Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **install** dans le manifeste de déploiement. (Sa valeur peut être **true** ou **false**. Dans *Mage.exe* , utilisez l’option **Online Only** dans la liste **Application Type**.)
+ Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **install** dans le manifeste de déploiement. (Sa valeur peut être **true** ou **false**. Dans *Mage.exe*, utilisez l’option **Online Only** dans la liste **Application Type**.)
 
 ## <a name="install-from-a-cd"></a>Installation à partir d'un CD-ROM
  Cette stratégie permet de déployer votre application sur un média amovible tel qu'un CD-ROM ou un DVD. Comme pour l’option précédente, lorsque l’utilisateur choisit d’installer l’application, cette dernière est installée et lancée et des éléments sont ajoutés au menu **Démarrer** et au groupe **Ajout/Suppression de programmes** dans le **Panneau de configuration**.
@@ -66,7 +66,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
  Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur **À partir d’un CD-ROM ou DVD-ROM** dans la page **Comment les utilisateurs installeront-ils l’application ?** de l’Assistant Publication.
 
- Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **deploymentProvider** dans le manifeste de déploiement. (Dans Visual Studio, cette propriété est exposée comme **URL d’installation** sur la page **Publier** du Concepteur de projets. Dans *Mage.exe* , il s’agit de **Start Location**.)
+ Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **deploymentProvider** dans le manifeste de déploiement. (Dans Visual Studio, cette propriété est exposée comme **URL d’installation** sur la page **Publier** du Concepteur de projets. Dans *Mage.exe*, il s’agit de **Start Location**.)
 
 ## <a name="web-browser-support"></a>Prise en charge du navigateur web
  Les applications destinées à .NET Framework 3.5 peuvent être installées à l'aide de n'importe quel navigateur.

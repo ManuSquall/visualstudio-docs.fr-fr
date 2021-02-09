@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 87b2718b6cd9db5b66635ca165253bd1e93f17d5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 5b3fa6ea89b91ccfc2c24b0b2eea162760eae29c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896538"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher des événements de suspension, de reprise et d’arrière-plan lors du débogage d’applications UWP dans Visual Studio
 

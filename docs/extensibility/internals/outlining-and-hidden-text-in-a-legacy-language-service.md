@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: de9bc6e4b742326e979c2701bb5792127539274a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895464"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Mode Plan et texte masqué dans un service de langage hérité
 Le mode plan permet de réduire une séquence de lignes de texte en une seule ligne. Par exemple, dans C++, toutes les méthodes peuvent être réduites sur une seule ligne, ce qui indique uniquement la signature de la méthode. Le texte masqué est la séquence de lignes de texte qui peut être affichée ou masquée.

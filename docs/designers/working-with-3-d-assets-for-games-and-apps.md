@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 8b622200832e42aa3900061125fe08271f5f3458
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896349"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Utiliser des composants 3D pour les jeux et les applications
 
@@ -25,7 +25,7 @@ Cet article décrit les outils Visual Studio que vous pouvez utiliser pour crée
 
 ## <a name="directx-app-development-in-visual-studio"></a>Développement d’applications DirectX dans Visual Studio
 
-Une application DirectX combine généralement la logique de programmation, l’API DirectX et les programmes HLSL (High Level Shading Language) avec les ressources visuelle3D et audio pour fournir une expérience multimédia riche et interactive. Visual Studio inclut des outils que vous pouvez utiliser avec des images et des textures, des modèles 3D et des nuanceurs sans qu’il soit nécessaire de quitter l’IDE pour utiliser un autre outil. Les outils Visual Studio sont particulièrement adaptés pour créer les ressources *d’espace réservé* , que vous pouvez utiliser pour tester du code ou générer des prototypes avant de mettre en service les ressources prêtes pour la production, ainsi que pour examiner et modifier les ressources prêtes pour la production quand vous déboguez votre application.
+Une application DirectX combine généralement la logique de programmation, l’API DirectX et les programmes HLSL (High Level Shading Language) avec les ressources visuelle3D et audio pour fournir une expérience multimédia riche et interactive. Visual Studio inclut des outils que vous pouvez utiliser avec des images et des textures, des modèles 3D et des nuanceurs sans qu’il soit nécessaire de quitter l’IDE pour utiliser un autre outil. Les outils Visual Studio sont particulièrement adaptés pour créer les ressources *d’espace réservé*, que vous pouvez utiliser pour tester du code ou générer des prototypes avant de mettre en service les ressources prêtes pour la production, ainsi que pour examiner et modifier les ressources prêtes pour la production quand vous déboguez votre application.
 
 Voici plus d’informations sur les types de ressources que vous pouvez utiliser dans Visual Studio.
 
@@ -37,7 +37,7 @@ Vous pouvez utiliser l’éditeur d’images Visual Studio pour travailler avec 
 
 ### <a name="3d-models"></a>Modèles 3D
 
-Les modèles 3D créent des espaces et des formes dans les jeux et les applications. Au minimum, les modèles encodent la position des points dans l’espace 3D, appelés *sommets* , en même temps que les données d’indexation pour définir des lignes ou des triangles qui représentent la forme du modèle. Des données supplémentaires peuvent être associées à ces sommets, par exemple les informations de couleur, les vecteurs normaux ou les attributs spécifiques à l’application. Chaque modèle peut également définir des attributs spécifiques à l’objet, comme le nuanceur utilisé pour calculer l’apparence de la surface de l’objet ou la texture appliquée à celui-ci.
+Les modèles 3D créent des espaces et des formes dans les jeux et les applications. Au minimum, les modèles encodent la position des points dans l’espace 3D, appelés *sommets*, en même temps que les données d’indexation pour définir des lignes ou des triangles qui représentent la forme du modèle. Des données supplémentaires peuvent être associées à ces sommets, par exemple les informations de couleur, les vecteurs normaux ou les attributs spécifiques à l’application. Chaque modèle peut également définir des attributs spécifiques à l’objet, comme le nuanceur utilisé pour calculer l’apparence de la surface de l’objet ou la texture appliquée à celui-ci.
 
 Vous pouvez utiliser l’éditeur de modèle Visual Studio pour travailler avec des modèles 3D dans plusieurs formats courants.
 

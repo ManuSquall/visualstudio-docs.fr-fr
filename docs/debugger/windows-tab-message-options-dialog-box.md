@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 320a31afcbe4d99518ce92002e8e2733fded9164
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b076d2268719e894632ee13142e8388a93450810
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896427"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Onglet Fenêtres de la boîte de dialogue Options des messages
 Utilisez l’onglet **Windows** pour définir l’étendue des messages listés dans la [vue messages](../debugger/messages-view.md). Pour afficher la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **journaux des messages** dans le menu **Espion** .

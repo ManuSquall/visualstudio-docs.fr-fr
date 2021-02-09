@@ -13,15 +13,15 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3ee25ea397af3805ac88b51d12a862bffdb20a00
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ae7ddc628d364fb57e835af63c595d416fdf688e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895178"
 ---
 # <a name="troubleshoot-office-solutions"></a>Résoudre les problèmes des solutions Office
   Cette section contient des conseils pour la résolution des problèmes courants que vous pouvez rencontrer lors de la création de solutions à l’aide des outils de développement Office dans Visual Studio.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896724"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn &gt; , élément (développement Office dans Visual Studio)
   L’élément **AddIn** de l' `vstav3` espace de noms contient des informations qui sont spécifiques à Microsoft Office compléments VSTO et aux personnalisations au niveau du document développées avec Visual Studio.
@@ -63,7 +63,7 @@ ms.locfileid: "85543765"
  Obligatoire. L’élément **Update** est décrit dans [&#60;élément Update&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>postActions
- facultatif. L’élément **postActions** est décrit dans [&#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
+ Facultatif. L’élément **postActions** est décrit dans [&#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
 ### <a name="application"></a>application
  Obligatoire. L’élément **application** est décrit dans [&#60;élément application&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).

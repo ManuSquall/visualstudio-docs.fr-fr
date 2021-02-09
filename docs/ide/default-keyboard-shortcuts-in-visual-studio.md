@@ -12,15 +12,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8a4901cecf36208f3ed2141e5baef15ecbe43a6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894736"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -43,7 +43,7 @@ Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez 
 - [Menus contextuels Projet et Solution](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
 - [Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
 - [Créer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
-- [File](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
+- [Fichier](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
 - [Refactorisation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
 - [outils](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
 - [Menus contextuels de l’affichage de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
@@ -184,7 +184,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.Cut|**Ctrl + X**<br /><br /> or<br /><br /> **Maj + Suppr**|
 |Edit.CycleClipboardRing|**Ctrl + Maj + V**<br /><br /> or<br /><br /> **Ctrl+Maj+Insert**|
 |Edit.Delete|**Supprimer**|
-|Edit.Duplicate|**Ctrl + D**|
+|Edit.Duplicate|**Ctrl+D**|
 |Edit.Find|**Ctrl + F**|
 |Edit.FindAllReferences|**Maj + F12**|
 |Edit.FindinFiles|**Ctrl + Maj + F**|
@@ -202,9 +202,9 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.GoToPrevLocation|**Maj+F8** (erreur précédente dans la Liste d’erreurs ou une fenêtre de production)|
 |Edit.InsertSnippet|**Ctrl + K, CTRL + X**|
 |Edit.MoveControlDown|**Ctrl + flèche bas**|
-|Edit.MoveControlDownGrid|**Flèche bas**|
+|Edit.MoveControlDownGrid|**Flèche Bas**|
 |Edit.MoveControlLeft|**Ctrl + flèche gauche**|
-|Edit.MoveControlLeftGrid|**Flèche gauche**|
+|Edit.MoveControlLeftGrid|**Gauche**|
 |Edit.MoveControlRight|**Ctrl + flèche droite**|
 |Edit.MoveControlRightGrid|**Flèche droite**|
 |Edit.MoveControlUp|**Ctrl + flèche haut**|
@@ -221,9 +221,9 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.Replace|**Ctrl + H**|
 |Edit.ReplaceinFiles|**Ctrl + Maj + H**|
 |Edit.SelectAll|**Ctrl + A**|
-|Edit.SelectNextControl|**Onglet**|
+|Edit.SelectNextControl|**Tab**|
 |Edit.SelectPreviousControl|**Maj + Tab**|
-|Edit.ShowTileGrid|**Entrez**|
+|Edit.ShowTileGrid|**Entrée**|
 |Edit.SizeControlDown|**Ctrl+Maj+Bas**|
 |Edit.SizeControlDownGrid|**Maj + Flèche bas**|
 |Edit.SizeControlLeft|**Ctrl+Maj+Gauche**|
@@ -488,7 +488,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.ExpandCollapseBaseTypeList|**Maj+Alt+B**|
 |Edit.NavigateToLollipop|**Maj+Alt+L**|
 |Edit.RemovefromDiagram|**Supprimer**|
-|View.ViewCode|**Entrez**|
+|View.ViewCode|**Entrée**|
 
 ## <a name="coded-ui-test-editor"></a>Éditeur de test codé de l'interface utilisateur
 
@@ -579,7 +579,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Format.Bold|**CTRL + B**|
 |Format.ConverttoHyperlink|**Ctrl + L**|
 |Format.InsertBookmark|**Ctrl + Maj + L**|
-|Format.Italic|**Ctrl + I**|
+|Format.Italic|**Ctrl+I**|
 |Format.Underline|**Ctrl + U**|
 |Project.AddContentPage|**Ctrl+M, Ctrl+C**|
 |Table.ColumntotheLeft|**Ctrl + Alt + flèche gauche**|
@@ -616,7 +616,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Supprimer**|
 |Edit.RemoveRow|**Ctrl + Suppr**|
-|Edit.SelectionCancel|**Sortie**|
+|Edit.SelectionCancel|**Caractère d'échappement**|
 |Resources.Audio|**CTRL + 4**|
 |Resources.Files|**Ctrl + 5**|
 |Resources.Icons|**Ctrl + 3**|
@@ -721,13 +721,13 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|Edit.BreakLine|**Entrez**|
-|Edit.CharLeft|**Flèche gauche**|
+|Edit.BreakLine|**Entrée**|
+|Edit.CharLeft|**Gauche**|
 |Edit.CharLeftExtend|**Maj + Flèche gauche**|
 |Edit.CharRight|**Flèche droite**|
 |Edit.CharRightExtend|**Maj + Flèche droite**|
-|Edit.InsertTab|**Onglet**|
-|Edit.LineDown|**Flèche bas**|
+|Edit.InsertTab|**Tab**|
+|Edit.LineDown|**Flèche Bas**|
 |Edit.LineDownExtend|**Maj + Flèche bas**|
 |Edit.LineUp|**Flèche haut**|
 |Edit.LineUpExtend|**Maj + haut**|
@@ -800,8 +800,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 | Commandes | Raccourcis clavier |
 | - | - |
-| Edit.BreakLine | **Entrez**<br /><br /> or<br /><br /> **Maj + Entrée** |
-| Edit.CharLeft | **Flèche gauche** |
+| Edit.BreakLine | **Entrée**<br /><br /> or<br /><br /> **Maj + Entrée** |
+| Edit.CharLeft | **Gauche** |
 | Edit.CharLeftExtend | **Maj + Flèche gauche** |
 | Edit.CharLeftExtendColumn | **Maj + Alt + flèche gauche** |
 | Edit.CharRight | **Flèche droite** |
@@ -837,19 +837,19 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | Edit.GotoPreviousIssueinFile | **Alt+Pg préc** |
 | Edit.HideSelection | **Ctrl + M, Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt +.** |
-| Edit.IncrementalSearch | **Ctrl + I** |
+| Edit.IncrementalSearch | **Ctrl+I** |
 | Edit.InsertCaretsatAllMatching | **Maj + Alt +;** |
 | Edit.InsertNextMatchingCaret | **Maj + Alt +.** |
-| Edit.InsertTab | **Onglet** |
+| Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl + L** |
 | Edit.LineDelete | **Ctrl + Maj + L** |
-| Edit.LineDown | **Flèche bas** |
+| Edit.LineDown | **Flèche Bas** |
 | Edit.LineDownExtend | **Maj + Flèche bas** |
 | Edit.LineDownExtendColumn | **Maj+Alt+Bas** |
 | Edit.LineEnd | **End** |
 | Edit.LineEndExtend | **Maj+Fin** |
 | Edit.LineEndExtendColumn | **Maj + Alt + fin** |
-| Edit.LineOpenAbove | **Ctrl + Entrée** |
+| Edit.LineOpenAbove | **CTRL+ Enter** |
 | Edit.LineOpenBelow | **Ctrl+Shift+Enter** |
 | Edit.LineStart | **Page d'accueil** |
 | Edit.LineStartExtend | **Maj+Origine** |
@@ -880,7 +880,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | Edit.ScrollLineDown | **Ctrl + flèche bas** |
 | Edit.ScrollLineUp | **Ctrl + flèche haut** |
 | Edit.SelectCurrentWord | **CTRL + W** |
-| Edit.SelectionCancel | **Sortie** |
+| Edit.SelectionCancel | **Caractère d'échappement** |
 | Edit.SelectToLastGoBack | **Ctrl + =** |
 | Edit.ShowCodeLensMenu | **Ctrl + K, Ctrl +\`** |
 | Edit.ShowNavigateMenu | **Alt +\`** |
@@ -950,8 +950,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|Edit.MoveControlDown|**Flèche bas**|
-|Edit.MoveControlLeft|**Flèche gauche**|
+|Edit.MoveControlDown|**Flèche Bas**|
+|Edit.MoveControlLeft|**Gauche**|
 |Edit.MoveControlRight|**Flèche droite**|
 |Edit.MoveControlUp|**Flèche haut**|
 |Edit.ScrollColumnLeft|**Ctrl + flèche gauche**|
@@ -976,7 +976,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Format.SizetoContent|**Maj+F7**|
 |Format.SpaceAcross|**Alt + Flèche droite**<br /><br /> or<br /><br /> **Alt + Flèche gauche**|
 |Format.SpaceDown|**Alt + Flèche haut**<br /><br /> or<br /><br /> **Alt + flèche bas**|
-|Format.TabOrder|**Ctrl + D**|
+|Format.TabOrder|**Ctrl+D**|
 |Format.TestDialog|**Ctrl + T**|
 |Format.ToggleGuides|**CTRL + G**|
 
@@ -1006,7 +1006,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Image.OutlinedEllipseTool|**Maj+Alt+P**|
 |Image.OutlinedRectangleTool|**Maj+Alt+R**|
 |Image.OutlinedRoundedRectangleTool|**Maj+Alt+W**|
-|Image.PencilTool|**Ctrl + I**|
+|Image.PencilTool|**Ctrl+I**|
 |Image.PreviousColor|**Ctrl + [**<br /><br /> or<br /><br /> **Ctrl + flèche gauche**|
 |Image.PreviousRightColor|**Ctrl + Maj + [**<br /><br /> or<br /><br /> **Ctrl+Maj+Gauche**|
 |Image.RectangleSelectionTool|**Maj+Alt+S**|
@@ -1051,8 +1051,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|Edit.BreakLine|**Entrez**|
-|Edit.CharLeft|**Flèche gauche**|
+|Edit.BreakLine|**Entrée**|
+|Edit.CharLeft|**Gauche**|
 |Edit.CharLeftExtend|**Maj + Flèche gauche**|
 |Edit.CharRight|**Flèche droite**|
 |Edit.CharRightExtend|**Maj + Flèche droite**|
@@ -1060,8 +1060,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.DocumentEndExtend|**Maj+Fin**|
 |Edit.DocumentStart|**Page d'accueil**|
 |Edit.DocumentStartExtend|**Maj+Origine**|
-|Edit.InsertTab|**Onglet**|
-|Edit.LineDown|**Flèche bas**|
+|Edit.InsertTab|**Tab**|
+|Edit.LineDown|**Flèche Bas**|
 |Edit.LineDownExtend|**Maj + haut**|
 |Edit.LineUp|**Flèche haut**|
 |Edit.LineUpExtend|**Maj + Flèche bas**|
@@ -1069,7 +1069,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.MoveControlLeft|**Ctrl + flèche gauche**|
 |Edit.MoveControlRight|**Ctrl + flèche droite**|
 |Edit.MoveControlUp|**Ctrl + flèche haut**|
-|Edit.SelectionCancel|**Sortie**|
+|Edit.SelectionCancel|**Caractère d'échappement**|
 |Edit.SizeControlDown|**Ctrl+Maj+Bas**|
 |Edit.SizeControlLeft|**Ctrl+Maj+Gauche**|
 |Edit.SizeControlRight|**Ctrl + Maj + droite**|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896258"
 ---
 # <a name="create-a-settings-category"></a>Créer une catégorie de paramètres
 
@@ -94,7 +94,7 @@ Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la pre
 
 1. Démarrez le projet en mode débogage en appuyant sur **F5**. Cela démarre l’instance expérimentale.
 
-2. Ouvrez la **Tools**  >  boîte de dialogue **options** des outils.
+2. Ouvrez la   >  boîte de dialogue **options** des outils.
 
 3. Dans l’arborescence dans le volet gauche, développez **ma catégorie** , puis cliquez sur **ma page de grille**.
 

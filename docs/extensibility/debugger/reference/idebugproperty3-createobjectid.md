@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896121"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Crée un ID unique pour cette propriété afin de s’assurer qu’elle est unique parmi toutes les autres propriétés.
@@ -28,19 +28,19 @@ Crée un ID unique pour cette propriété afin de s’assurer qu’elle est uniq
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT CreateObjectID(
+HRESULT CreateObjectID(
    void
 );
 ```
 
 ```csharp
-int CreateObjectID();
+int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode est appelée lorsque le gestionnaire de débogage de session souhaite s’assurer que cette propriété est identifiée de manière unique parmi toutes les autres propriétés. Le moteur DE débogage (DE) prend en charge cette méthode, sauf si les propriétés qu’elle traite sont déjà identifiées de manière unique. Si le DE ne prend pas en charge cette méthode, il retourne `E_NOTIMPL` .
 
  Tout ID unique créé avec `CreateObjectID` est détruit lorsque la méthode [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) est appelée ; cela signale également la fin de la nécessité d’identifier cette propriété de manière unique.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265c77acdb15069c1fcd7f33d93d4ff74a528eca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896147"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Écrit un dump dans un fichier.
@@ -28,14 +28,14 @@ ms.locfileid: "80722736"
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT WriteDump( 
+HRESULT WriteDump( 
    DUMPTYPE  DumpType,
    LPCOLESTR pszDumpUrl
 );
 ```
 
 ```csharp
-int WriteDump( 
+int WriteDump( 
    enum_DUMPTYPE  DumpType,
    string         pszDumpUrl
 );
@@ -48,10 +48,10 @@ dans Valeur de l’énumération [DUMPTYPE](../../../extensibility/debugger/refe
 `pszDumpUrl`\
 dans URL vers laquelle écrire le vidage. En général, il se présente sous la forme de `file://c:\path\filename.ext` , mais peut être une URL valide.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un vidage de programme inclut généralement le frame de pile actuel, la pile elle-même, une liste des threads en cours d’exécution dans le programme et éventuellement la mémoire dont le programme est propriétaire.
 
 ## <a name="see-also"></a>Voir aussi

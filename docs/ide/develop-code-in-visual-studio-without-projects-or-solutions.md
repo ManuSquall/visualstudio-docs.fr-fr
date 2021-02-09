@@ -10,15 +10,15 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: fcff44b64045e85a06fdc7a8f15f8780c8453713
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894749"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 

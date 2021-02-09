@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a29b1b3af1e92ee6f247ba07e3b4e468401415e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895425"
 ---
 # <a name="source-control-vspackage-features"></a>Fonctionnalités de VSPackage de contrôle de code source
 Cette section décrit les différentes fonctionnalités d’un VSPackage de contrôle de code source. Il présente les détails de l’inscription et de la sélection pour un tel VSPackage, et présente trois des principales fonctionnalités liées au contrôle de code source : la gestion des événements de Query-Edit Query-Save (provenant QEQS), le remplacement de glyphes et l’interface utilisateur personnalisée pour les fonctions de contrôle de code source.

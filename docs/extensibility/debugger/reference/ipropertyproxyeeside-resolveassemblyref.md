@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc14d3aff5116f7bfb18244f39d14ec2dbbd37f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895958"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Détermine l’emplacement de la référence d’assembly managée spécifiée.
@@ -63,10 +63,10 @@ dans Nom de l’assembly à résoudre.
 `alr`\
 à Retourne une valeur de l’énumération [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) indiquant l’emplacement de l’assembly de cette référence.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode n’est généralement pas implémentée par un évaluateur d’expression personnalisé.
 
 ## <a name="see-also"></a>Voir aussi
