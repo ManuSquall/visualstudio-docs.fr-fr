@@ -11,17 +11,17 @@ helpviewer_keywords:
 - use the D drive
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4db3a31c8baa578a17d14b3a740ff40a444ba208
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868632"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Sélectionner les emplacements d’installation dans Visual Studio
 
@@ -40,7 +40,7 @@ Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votr
    > [!NOTE]
    > L’emplacement d’installation de certains outils et SDK est régi par des règles différentes. Ces outils et SDK sont toujours installés sur votre lecteur système, même si vous choisissez un autre emplacement.
 
-Prêt à vous lancer ? Voici comment faire.
+Vous êtes prêt à commencer ? Voici comment faire.
 
 ::: moniker range="vs-2017"
 

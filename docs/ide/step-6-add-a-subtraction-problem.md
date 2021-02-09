@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 64d28df03c18207a3f0ded58caa48d4b41800824
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868931"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Étape 6 : Ajouter un problème de soustraction
 Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de soustraction et apprendre à effectuer les tâches suivantes :
@@ -62,12 +62,12 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
      Vous pouvez appeler la méthode `Next()` de la classe aléatoire, que vous avez nommée « randomizer » précédemment dans ce tutoriel, de plusieurs façons. Les méthodes que vous appelez de plusieurs façons sont désignées comme étant surchargées, et vous pouvez utiliser IntelliSense pour les explorer. Examinez à nouveau l'info-bulle de la fenêtre IntelliSense pour la méthode `Next()`.
 
      ![Info-bulle de la fenêtre IntelliSense](../ide/media/express_overloads.png)<br/>
-*Info-bulle *_IntelliSense_* _ _window *
+*Info-bulle **IntelliSense** _ _window *
 
      L’info-bulle affiche **(+ 2 surcharge(s))**, ce qui signifie que vous pouvez appeler la méthode `Next()` de deux manières différentes. Les surcharges contiennent des nombres ou des types d’arguments leur permettant de fonctionner un peu différemment les unes des autres. Par exemple, une méthode peut prendre un seul argument entier, alors qu’une de ses surcharges peut prendre un entier et une chaîne. Choisissez la surcharge appropriée en fonction de ce que vous souhaitez qu'elle fasse. Quand vous ajoutez du code à la méthode `StartTheQuiz()`, plus d’informations apparaissent dans la fenêtre IntelliSense dès que vous entrez `randomizer.Next(`. Pour parcourir les surcharges, actionnez les touches **Flèche haut** et **Flèche bas**, comme indiqué dans l’illustration suivante :
 
      ![Surcharge pour la méthode Next&#40;&#41; dans IntelliSense](../ide/media/express_nextoverload.png)<br/>
-*Surcharge pour*  * Méthode **Next ()** _ _dans * ***IntelliSense**_
+*Surcharge pour*  * **Next ()** _ _method dans * ***IntelliSense***
 
      Dans ce cas, vous souhaitez choisir la dernière surcharge, car vous pouvez spécifier les valeurs minimales et maximales.
 
@@ -88,7 +88,7 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
      Votre programme inclut un problème de soustraction, comme le montre l’illustration suivante :
 
      ![Questionnaire mathématique avec problème de soustraction](../ide/media/express_addsubtract.png)<br/>
-_*_Questionnaire mathématique_*_ _with problème de soustraction *
+***Questionnaire mathématique** _ _with problème de soustraction *
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

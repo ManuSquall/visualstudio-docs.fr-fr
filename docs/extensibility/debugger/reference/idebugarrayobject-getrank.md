@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c645683cf1f842afdecba3c3dee8942a3fd6971a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe662f6e6ed2db50fb905ad8918a7b7216853f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870101"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Obtient le rang du tableau, autrement dit le nombre de dimensions.
@@ -28,7 +28,7 @@ Obtient le rang du tableau, autrement dit le nombre de dimensions.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetRank( 
+HRESULT GetRank( 
    DWORD* pdwRank
 );
 ```
@@ -43,10 +43,10 @@ int GetRank(
 `pdwRank`\
 à Retourne le rang.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Utilisez la méthode [GetDimensions,](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) pour récupérer la taille de chaque dimension de l’objet Array.
 
 ## <a name="see-also"></a>Voir aussi

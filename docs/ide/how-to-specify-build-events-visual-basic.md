@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869256"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Guide pratique pour spécifier des événements de build (Visual Basic)
 
@@ -46,7 +46,7 @@ Les événements de build sont spécifiés dans la boîte de dialogue **Événem
 4. Entrez les arguments de ligne de commande pour votre action pré-build ou post-build, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* .  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* . Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
@@ -118,7 +118,7 @@ La procédure suivante indique comment définir la version minimale du système 
    End Sub
    ```
 
-   La commande prend deux arguments. Le premier argument est le chemin d’accès au manifeste d’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général * \<ProjectName> . Publish*). Le second argument est la nouvelle version du système d’exploitation.
+   La commande prend deux arguments. Le premier argument est le chemin d’accès au manifeste d’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général *\<ProjectName> . Publish*). Le second argument est la nouvelle version du système d’exploitation.
 
 5. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 

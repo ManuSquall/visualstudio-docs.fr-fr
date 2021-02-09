@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e12288471bed62014f9a307d609ef3d588e0026a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 1973dcb992da8bfafc13fc897e2499b16d24bccc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868424"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Collecter des données d’accès concurrentiel d’une application web ASP.NET en utilisant la ligne de commande du profileur
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de collecter des données de conflit de ressources.
@@ -30,7 +30,7 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 |----------|---------------------|
 |Attacher le profileur à une application ASP.NET en cours d’exécution|-   [Comment : attacher le profileur à une application ASP.NET pour collecter des données d’accès concurrentiel](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Informations de référence sur les outils de profilage de la ligne de commande](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="related-tasks"></a>Tâches associées

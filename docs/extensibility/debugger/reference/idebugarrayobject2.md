@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8a6580d0cbdead7866bbc6dd106a2aa0ea56f76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870023"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ IDebugArrayObject2 : IDebugArrayObject
 |[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Récupère les index de base (limites inférieures) pour chaque index en fonction du nombre de dimensions dans le tableau.|
 |[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Détermine si le tableau a des index de base (limites inférieures) définis.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un évaluateur d’expression utilise cette interface pour représenter des tableaux managés dans une arborescence d’analyse.
 
 ## <a name="requirements"></a>Configuration requise

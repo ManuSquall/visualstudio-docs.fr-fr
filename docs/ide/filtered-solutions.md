@@ -10,14 +10,14 @@ helpviewer_keywords:
 - solution filtering
 author: jillre
 ms.author: stsu
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 73cb7afe913f7656ac6124d1f54fbc1cb7b611cb
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: eae0d02e1fff3f9ad5b35384e6ccab599805372b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869386"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Solutions filtrées dans Visual Studio
 
@@ -39,7 +39,7 @@ Vous pouvez ouvrir une solution sans charger ses projets directement à partir d
 
 Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de dialogue **Ouvrir un projet** :
 
-1. **File**  >  **Open**  >  Dans la barre de menus, choisissez Fichier Ouvrir le **projet/la solution** .
+1.   >    >  Dans la barre de menus, choisissez Fichier Ouvrir le **projet/la solution** .
 
 2. Dans la boîte de dialogue **Ouvrir un projet**, sélectionnez la solution, puis **Ne pas charger les projets**.
 

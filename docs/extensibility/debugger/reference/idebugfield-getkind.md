@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d0f69d95aaf5313e2d2140b90339e23852ba1a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869880"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Cette méthode obtient le type de champ.
@@ -28,7 +28,7 @@ Cette méthode obtient le type de champ.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetKind( 
+HRESULT GetKind( 
    FIELD_KIND* pdwKind
 );
 ```
@@ -43,7 +43,7 @@ int GetKind(
 `pdwKind`\
 à Retourne le type de champ sous la forme d’une combinaison de constantes de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

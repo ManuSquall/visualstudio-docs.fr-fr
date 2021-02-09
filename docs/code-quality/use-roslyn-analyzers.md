@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 974de3094c7384f8170a42892a17f0eb49162094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867787"
 ---
 # <a name="overview"></a>Vue d’ensemble
 
@@ -46,7 +46,7 @@ Le tableau suivant présente les différentes options de gravité :
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Informations | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
 | Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.

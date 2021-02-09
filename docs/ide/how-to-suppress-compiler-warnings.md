@@ -7,19 +7,19 @@ ms.technology: vs-ide-compile
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ab79521cfd4cc122fa398f88b56ca37e2f2673a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869178"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
 
-Vous pouvez nettoyer un journal de génération en filtrant un ou plusieurs types d’avertissements du compilateur. Par exemple, vous souhaiterez peut-être passer en revue uniquement une partie de la sortie générée lorsque vous définissez le niveau de détail du journal de génération sur **normal**, **détaillé**ou **diagnostic**. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
+Vous pouvez nettoyer un journal de génération en filtrant un ou plusieurs types d’avertissements du compilateur. Par exemple, vous souhaiterez peut-être passer en revue uniquement une partie de la sortie générée lorsque vous définissez le niveau de détail du journal de génération sur **normal**, **détaillé** ou **diagnostic**. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Supprimer des avertissements spécifiques pour Visual C# ou F\#
 
@@ -27,7 +27,7 @@ Utilisez la page de propriétés **Générer** pour supprimer des avertissements
 
 1. Dans l’**Explorateur de solutions**, choisissez le projet dans lequel vous souhaitez supprimer les avertissements.
 
-1. Dans la barre de menus, choisissez **Afficher**les  >  **pages de propriétés**.
+1. Dans la barre de menus, choisissez **Afficher** les  >  **pages de propriétés**.
 
 1. Choisissez la page **Générer**.
 
@@ -41,7 +41,7 @@ Utilisez la page de propriétés **Propriétés de configuration** pour supprime
 
 1. Dans l’**Explorateur de solutions**, choisissez le projet ou fichier source dans lequel vous souhaitez supprimer les avertissements.
 
-1. Dans la barre de menus, choisissez **Afficher**les  >  **pages de propriétés**.
+1. Dans la barre de menus, choisissez **Afficher** les  >  **pages de propriétés**.
 
 1. Choisissez la catégorie **Propriétés de configuration**, la catégorie **C/C++**, puis la page **Avancé**.
 
@@ -108,7 +108,7 @@ Cet exemple montre comment modifier le fichier *.vbproj* pour supprimer des aver
 
 1. Dans la barre de menus, **Choisissez projet**  >  **recharger le projet**.
 
-1. Dans la barre de menus, choisissez **générer générer**la  >  **solution**.
+1. Dans la barre de menus, choisissez **générer générer** la  >  **solution**.
 
     La fenêtre **Sortie** n’affiche plus les avertissements que vous avez spécifiés.
 

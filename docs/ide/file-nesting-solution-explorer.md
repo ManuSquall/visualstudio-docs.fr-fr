@@ -9,13 +9,13 @@ helpviewer_keywords:
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: jillfra
-ms.openlocfilehash: 5425c255e85a2785383f1e8e718340fc2049e0c4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: aa3ca640fed4e32c19defd925a49369890219035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869451"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Imbrication de fichiers dans l’Explorateur de solutions
 

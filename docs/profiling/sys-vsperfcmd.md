@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8090a39426455e0f6d877c26a7f0a50f00f10c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 66815265544afdee263490ed5eec92301911e3cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868164"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 L’option *VSPerfCmd.exe* **sys** définit l’événement de profilage qui est échantillonné aux événements d’appel système (appels de fonction de l’application profilée au système d’exploitation) et modifie éventuellement le nombre d’appels système dans un intervalle d’échantillonnage à partir de la valeur par défaut de 10.
@@ -53,7 +53,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 
  **GC**[**:**{**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut (**allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont également collectées à chaque événement garbage collection.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple montre comment définir le l’événement d’échantillonnage du profileur comme étant les appels système, et comment définir l’intervalle d’échantillonnage sur 20 appels par échantillon.
 
 ```cmd

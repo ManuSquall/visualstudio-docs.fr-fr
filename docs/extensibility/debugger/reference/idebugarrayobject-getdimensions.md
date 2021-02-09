@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 527f79724aeac0de58d0ae63c9c2408ed2eca9ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c0c71032fc8f5c75522f6b1f9e0d8cb1308f63f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870192"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Obtient les dimensions du tableau.
@@ -25,7 +25,7 @@ Obtient les dimensions du tableau.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDimensions( 
+HRESULT GetDimensions( 
    DWORD dwCount,
    DWORD dwDimensions[]
 );
@@ -45,10 +45,10 @@ dans Nombre de dimensions à récupérer.
 `dwDimensions`\
 [in, out] Tableau qui est rempli avec la taille de chaque dimension. `dwCount` spécifie la taille maximale du `dwDimensions` tableau.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un tableau multidimensionnel peut avoir des tailles différentes pour chaque dimension. Par exemple, étant donné le tableau à trois dimensions `myarray[3][2][6]` , cette méthode retourne 3, 2 et 6 dans le `dwDimensions` paramètre dans cet ordre.
 
 ## <a name="see-also"></a>Voir aussi

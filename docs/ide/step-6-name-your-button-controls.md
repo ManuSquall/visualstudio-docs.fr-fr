@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868879"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 
@@ -35,7 +35,7 @@ Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **butto
 
 1. Dans le formulaire, choisissez le bouton **Fermer** . (Si tous les boutons sont encore sélectionnés, appuyez sur la touche **Échap** pour annuler la sélection.) Faites défiler la fenêtre **Propriétés** jusqu’à ce que la propriété **(Name)** s’affiche. (La propriété **(Name)** se trouve vers le haut lorsque les propriétés sont classées par ordre alphabétique.) Remplacez le nom par **BoutonFermer**, comme illustré dans la capture d’écran suivante.
 
-    ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)<br>**_Properties_* _ _Window avec * ***BoutonFermer**_ _name *
+    ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)<br>***Properties** _ _Window avec * ***BoutonFermer**_ _name *
 
     > [!NOTE]
     > Essayez de modifier le nom de votre bouton pour **Fermer le bouton**, avec un espace entre les mots « Close » et « Button ». Dans ce cas, l’IDE affiche un message d’erreur : « la valeur de la propriété n’est pas valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
@@ -48,7 +48,7 @@ Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélect
    Cet onglet affiche le fichier de code derrière le formulaire, comme illustré dans la capture d’écran suivante.
 
     ![Onglet Form1.cs avec code Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-**_Form1.cs_* _ _tab avec code C# *
+***Form1.cs** _ _tab avec code C# *
 
     > [!NOTE]
     > Votre onglet Form1.cs ou Form1. vb peut afficher **showButton** comme **showButton** à la place.
@@ -76,7 +76,7 @@ Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélect
 1. Pour ajouter une méthode supplémentaire, ouvrez le fichier de code pour le contrôle de **case à cocher** dans **Concepteur Windows Forms** pour que l’IDE ajoute une `checkBox1_CheckedChanged()` méthode. Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.
 
    > [!TIP]
-   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur *Form1.cs* dans C# ou sur *Form1. vb* dans Visual Basic, ou dans la barre de menus, choisissez Concepteur de **vues**  >  **Designer**.
+   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur *Form1.cs* dans C# ou sur *Form1. vb* dans Visual Basic, ou dans la barre de menus, choisissez Concepteur de **vues**  >  .
 
     Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.
 

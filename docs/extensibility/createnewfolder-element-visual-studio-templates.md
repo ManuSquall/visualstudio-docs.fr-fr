@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9169d90eb10c0595b7dc7fe940463f57354dfffa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870309"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Élément CreateNewFolder (modèles Visual Studio)
 Détermine s'il convient de vérifier que le répertoire cible où le projet doit être créé n'existe pas. Si le répertoire existe, un nouveau répertoire peut être créé pour le projet. Ce paramètre est généralement remplacé par l'indicateur de registre `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que tous les types de projets courants utilisent pour déterminer s'il convient de créer un nouveau projet dans un nouveau répertoire.

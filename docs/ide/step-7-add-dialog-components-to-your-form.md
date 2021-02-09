@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868853"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire
 
@@ -34,7 +34,7 @@ Pour permettre à votre application d’ouvrir des fichiers image et de choisir 
 
 1. Pour ajouter un composant appelé **openFileDialog1** à votre formulaire, double-cliquez sur **OpenFileDialog**. Pour ajouter un composant appelé **colorDialog1** à votre formulaire, double-cliquez sur **ColorDialog** dans la **boîte à outils**. (Vous l’utilisez dans l’étape suivante du didacticiel.) Vous devez voir une zone en bas de **Concepteur Windows Forms** (sous le formulaire de la **visionneuse d’images** ) qui contient une icône pour chacun des deux composants de boîte de dialogue que vous avez ajoutés, comme illustré dans l’image suivante.
 
-     ![Composants de boîte de dialogue](../ide/media/express_dialogsadded.png)<br>**_Boîte de dialogue_* _ _components *
+     ![Composants de boîte de dialogue](../ide/media/express_dialogsadded.png)<br>***Boîte de dialogue** _ _components *
 
 1. Choisissez l’icône **openFileDialog1** dans la zone située en bas du **Concepteur Windows Forms**. Définissez deux propriétés :
 

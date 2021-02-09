@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c9f3b33eab8428cd14aa26896c3813422d3dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b6437daa245343f5a7fc40e5564ee6f2f885e14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537070"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868297"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002 : VSPerfCorProf.dll est manquant
 
@@ -31,7 +31,7 @@ ms.locfileid: "85537070"
 |Message|Il semble que le fichier ait été collecté sans définir correctement les variables d’environnement avec *VSPerfCLREnv. cmd*. Les symboles pour des fichiers binaires managés peuvent ne pas être résolus.|
 |Type de règle|Information|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Le profileur n’a pas trouvé *VSPerfCorProf.dll* lors de l’exécution du profilage. Cet avertissement se produit quand les outils en ligne de commande pour la collecte de données du profileur sont utilisés sans l’outil *VSPerfCLREnv.cmd* pour initialiser les variables d’environnement nécessaires. L’avertissement peut également se déclencher si un autre profileur est en cours d’exécution quand les outils de profilage démarrent.
 
 ## <a name="rule-description"></a>Description de la règle

@@ -1,17 +1,17 @@
 ---
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: e92399e6efafba7c250fdf82882d44e2e0051412
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a126eaccf4db4e5921469b34c7057d46ae758a85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79437478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868577"
 ---
 Lorsque vous définissez des dépendances dans votre manifeste VSIX, vous devez spécifier les ID de composant uniquement. Utilisez les tableaux de cette page pour déterminer les dépendances minimales des composants. Dans certains scénarios, cela peut vouloir dire que vous ne spécifiez qu’un composant à partir d’une charge de travail. Dans d’autres, cela peut vouloir dire que vous spécifiez plusieurs composants à partir d’une charge de travail unique ou plusieurs composants à partir de plusieurs charges de travail. Pour plus d’informations, consultez la page [Comment : migrer des projets d’extensibilité vers Visual Studio](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) .
 

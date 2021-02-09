@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868996"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de génération avancés, boîte de dialogue (C#)
 
@@ -58,7 +58,7 @@ Spécifie si une instruction arithmétique entière hors de portée des mots cl�
 
 Spécifie si mscorlib.dll doit être importé dans votre programme, en définissant l’intégralité de l’espace de noms <xref:System>. Cochez cette case pour définir ou créer vos propres objets et espaces de noms <xref:System>. Pour plus d’informations, consultez [/nostdlib (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
-## <a name="output"></a>Sortie
+## <a name="output"></a>Output
 
 Les options suivantes permettent de spécifier des options de sortie avancées.
 
@@ -90,7 +90,7 @@ Pour plus d’informations, consultez [/debug (options du compilateur C#)](/dotn
 
 **Alignement des fichiers**
 
-Spécifie la taille des sections dans le fichier de sortie. Les valeurs valides sont **512**, **1024**, **2048**, **4096**et **8192**. Ces valeurs sont mesurées en octets. Chaque section est alignée sur une limite qui est un multiple de cette valeur, affectant ainsi la taille du fichier de sortie. Pour plus d’informations, consultez [/filealign (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Spécifie la taille des sections dans le fichier de sortie. Les valeurs valides sont **512**, **1024**, **2048**, **4096** et **8192**. Ces valeurs sont mesurées en octets. Chaque section est alignée sur une limite qui est un multiple de cette valeur, affectant ainsi la taille du fichier de sortie. Pour plus d’informations, consultez [/filealign (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Adresse de base de la bibliothèque**
 

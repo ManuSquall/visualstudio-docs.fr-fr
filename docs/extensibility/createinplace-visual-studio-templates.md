@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fa138923f8d23c59613ce1bbc51460fd3c8c9acb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870335"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Élément CreateInPlace (modèles Visual Studio)
 Spécifie s’il faut créer le projet et effectuer le remplacement des paramètres à l’emplacement spécifié, ou effectuer le remplacement des paramètres dans un emplacement temporaire, puis enregistrer le projet à l’emplacement spécifié.

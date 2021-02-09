@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869126"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Prolonger une version d’évaluation ou mettre à jour une licence
 
@@ -26,7 +26,7 @@ Pour continuer à utiliser Visual Studio après la fin d’une période d’éva
 
 ## <a name="use-an-online-subscription"></a>Utiliser un abonnement en ligne
 
-1. Choisissez le bouton **se connecter** dans l’angle supérieur droit de l’IDE (ou accédez à **File**  >  **paramètres du compte** de fichier pour ouvrir la boîte de dialogue **paramètres du compte** , puis choisissez le bouton **se connecter** ).
+1. Choisissez le bouton **se connecter** dans l’angle supérieur droit de l’IDE (ou accédez à   >  **paramètres du compte** de fichier pour ouvrir la boîte de dialogue **paramètres du compte** , puis choisissez le bouton **se connecter** ).
 
 1. Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement Visual Studio ou une organisation Azure DevOps associé à votre compte.
 
@@ -66,9 +66,9 @@ Si vous n’entrez pas à nouveau vos informations d’identification, le jeton 
 
 ## <a name="update-an-expired-license"></a>Mettre à jour une licence expirée
 
-Si votre abonnement a expiré et que vous n’avez plus de droits d’accès à Visual Studio, vous devez renouveler votre abonnement ou ajouter un autre compte disposant d’un abonnement. Pour plus d’informations sur la licence que vous utilisez, accédez à **File**  >  **paramètres du compte** de fichier et consultez les informations de licence sur le côté droit de la boîte de dialogue. Si vous avez un autre abonnement associé à un autre compte, ajoutez ce compte à la liste **tous les comptes** sur le côté gauche de la boîte de dialogue en sélectionnant le lien **Ajouter un compte** .
+Si votre abonnement a expiré et que vous n’avez plus de droits d’accès à Visual Studio, vous devez renouveler votre abonnement ou ajouter un autre compte disposant d’un abonnement. Pour plus d’informations sur la licence que vous utilisez, accédez à   >  **paramètres du compte** de fichier et consultez les informations de licence sur le côté droit de la boîte de dialogue. Si vous avez un autre abonnement associé à un autre compte, ajoutez ce compte à la liste **tous les comptes** sur le côté gauche de la boîte de dialogue en sélectionnant le lien **Ajouter un compte** .
 
-## <a name="get-support"></a>Obtenir de l’aide
+## <a name="get-support"></a>Obtenir un support
 
 Parfois, des problèmes surgissent. Si vous rencontrez un problème, voici quelques options de support :
 

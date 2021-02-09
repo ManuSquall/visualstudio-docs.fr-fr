@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: e1ea031391b93d571b9f34ad820f1a6957dab242
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869243"
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
 
@@ -46,7 +46,7 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
 5. Dans la zone **Ligne de commande de l’événement post-build**, spécifiez la syntaxe de l’événement de build.
 
    > [!NOTE]
-   > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* .  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* . Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.
 
@@ -58,7 +58,7 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
    > [!NOTE]
    > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement postbuild (fichier *.exe.manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour définir la version minimale du système d’exploitation, la commande modifie la section `<dependentOS>` du manifeste :
 

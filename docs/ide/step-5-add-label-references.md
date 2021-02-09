@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a009f5667f2eb01b22c45c9439a582d2319e6df9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868970"
 ---
 # <a name="step-5-add-label-references"></a>Étape 5 : Ajouter des références aux étiquettes
 Le programme doit effectuer le suivi des contrôles d’étiquette choisis par le joueur. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.

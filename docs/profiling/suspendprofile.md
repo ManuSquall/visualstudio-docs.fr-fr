@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6be94fafb1e41390236977a7a06b59cf7ac71a84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868203"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 La méthode `SuspendProfile` incrémente le compteur Suspend/Resume pour le niveau de profilage spécifié.
@@ -56,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|L’appel de fonction du profilage, le niveau de profilage ou la combinaison d’appel et de niveau n’est pas encore implémenté.|
 |PROFILE_OK|L’appel a réussi.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La valeur initiale du compteur de pauses/reprises est 0. Chaque appel à SuspendProfile ajoute 1 au nombre de Suspend/Resume ; chaque appel à ResumeProfile soustrait 1.
 
  Quand le nombre de Suspend/Resume est supérieur à 0, l’état Suspend/Resume pour le niveau est ON. Quand le nombre est inférieur ou égal à 0, l’état Suspend/Resume est ON.
@@ -71,7 +71,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 
  Bibliothèque d’importation : *VSPerf.lib*
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple suivant montre la méthode SuspendProfile. Cet exemple suppose qu’un appel antérieur à StartProfile a été effectué pour le processus ou le thread identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp

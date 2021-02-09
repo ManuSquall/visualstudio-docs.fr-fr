@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868749"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné
 Vous avez créé un jeu divertissant, mais il a besoin d'un élément supplémentaire pour être complet. Le jeu doit se terminer en cas de victoire du joueur : vous devez donc ajouter une méthode `CheckForWinner()` pour vérifier si le joueur a gagné.
@@ -45,10 +45,10 @@ Vous avez créé un jeu divertissant, mais il a besoin d'un élément supplémen
 3. Enregistrez et exécutez le programme. Jouez au jeu et associez toutes les icônes. Lorsque vous gagnez, le programme affiche un **MessageBox** (comme illustré dans la capture d’écran suivante), puis ferme la boîte.
 
      ![Jeu de combinaisons avec MessageBox](../ide/media/express_tut4step8.png)<br/>
-**_Jeu de combinaisons_* _ _avec * ***MessageBox**_
+***Jeu de combinaisons** _ _With * ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez _ *[étape 9 : essayer d’autres fonctionnalités](../ide/step-9-try-other-features.md)* *.
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 9 : essayer d’autres fonctionnalités](../ide/step-9-try-other-features.md)**.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md).

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 17c569a9f5a50b769af0881d47fe810afe18058e
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: ecdbc5c3b94e83f0b8d38cec161f94a65e64fdf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868300"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Collecter les données temporelles détaillées à l’aide de l’instrumentation
 La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] injecte le code de profilage dans une copie d’un module. Le code enregistre chaque entrée, sortie et appel des fonctions dans le module pendant une exécution du profilage. La méthode d’instrumentation est utile pour rassembler des informations de temporisation détaillées sur une section de votre code et comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application.

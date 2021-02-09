@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869763"
 ---
 # <a name="idebugfield"></a>IDebugField
 Cette interface représente un champ, autrement dit, une description d’un symbole ou d’un type.
@@ -44,12 +44,12 @@ IDebugField : IUnknown
 |[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Obtient le type de champ.|
 |[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Obtient le conteneur du champ.|
 |[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Obtient l’adresse du champ.|
-|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Obtient la taille d’un champ, en octets.|
+|[GetSize,](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Obtient la taille d’un champ, en octets.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Obtient des informations étendues sur un champ.|
 |[Égal](../../../extensibility/debugger/reference/idebugfield-equal.md)|Compare deux champs.|
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Obtient des informations indépendantes du type sur le symbole ou le type.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un type est équivalent à un langage C `typedef` .
 
  Dans l’exemple de langage C++ suivant, `weather` est un type de classe et `sunny` et sont des `stormy` symboles :

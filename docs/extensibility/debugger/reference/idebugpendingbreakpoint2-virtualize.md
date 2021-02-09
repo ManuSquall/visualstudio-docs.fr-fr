@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ad5aac997cf694a7cf8fa887ae63fbef54ca07f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 242caf91b8f25f8bea6ff9c17820ed84c5fc98f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869672"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Active/désactive l’État virtualisé de ce point d’arrêt en attente. Lorsqu’un point d’arrêt en attente est virtualisé, le moteur de débogage tente de le lier chaque fois que le nouveau code se charge dans le programme.
@@ -44,10 +44,10 @@ int Virtualize(
 `fVirtualize`\
 dans Définissez sur une valeur différente de zéro ( `TRUE` ) pour virtualiser le point d’arrêt en attente, ou sur zéro ( `FALSE` ) pour désactiver la virtualisation.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Un point d’arrêt virtualisé est lié chaque fois que le code est chargé.
 
 ## <a name="example"></a>Exemple

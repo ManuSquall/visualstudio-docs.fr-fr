@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9d5e322b7bcd5238335c74caa21989f1f1962ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9750b2982ad0b2d70375fe0519a9fd888bcac8a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870218"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 Obtient le nombre d’éléments dans le tableau.
@@ -28,7 +28,7 @@ Obtient le nombre d’éléments dans le tableau.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetCount( 
+HRESULT GetCount( 
    DWORD* pdwElements
 );
 ```
@@ -43,10 +43,10 @@ int GetCount(
 `pdwElements`\
 à Retourne le nombre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode voit tous les éléments d’un objet tableau sous la forme d’un tableau unidimensionnel, même si l’objet tableau est multidimensionnel. Par exemple, étant donné le tableau `myarray[3][2][6]` , cette méthode retourne 36 dans le `pdwElements` paramètre. Utilisez la méthode [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) pour récupérer individuellement les éléments un par un.
 
 ## <a name="see-also"></a>Voir aussi

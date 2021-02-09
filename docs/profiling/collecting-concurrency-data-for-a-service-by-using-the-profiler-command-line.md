@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4d65490c0ae75c7ab17fd7764d499cb39824f7
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 8ae2d3678ec05ce583c9c0b7daf202f3272f4b77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868450"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Collecter des données de concurrence pour un service en utilisant la ligne de commande du profileur
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permet de collecter des données de conflit de ressources et des données d’activité de thread montrant l’utilisation du processeur, les conflits de threads, la migration des threads, les délais de synchronisation, les zones d’E/S avec chevauchement, et autres événements système.
@@ -54,5 +54,5 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 - [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Informations de référence sur les outils de profilage de la ligne de commande](../profiling/command-line-profiling-tools-reference.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54773ee6f770855122992f49bebad44fa1f6129a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870296"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
 Spécifie la portée du flux de code machine.
@@ -59,7 +59,7 @@ Quand elle est retournée par la `IDebugDisassemblyStream2::GetScope` méthode, 
 `DSS_ALL`\
 Spécifie le code machine pour l’intégralité de l’espace d’adressage.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Passé comme argument à la méthode [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) et retourné par la méthode [GetScope,](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
 Ces valeurs peuvent être combinées avec une opération de bits `OR` .

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - .NET analyzers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867891"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Activer ou installer des analyseurs .NET internes
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Les analyseurs .NET Compiler Platform (Roslyn) inspectent la qualité et les problèmes de styles de code de votre code C# ou Visual Basic. Les analyseurs .NET de premier tiers sont **indépendants de la plateforme cible**. Autrement dit, votre projet n’a pas besoin de cibler une plateforme .NET spécifique. Les analyseurs fonctionnent pour les projets qui ciblent ainsi que les `net5.0` versions antérieures de .net, telles que `netcoreapp` , `netstandard` et `net472` .
 
