@@ -10,17 +10,17 @@ helpviewer_keywords:
 - debugging JavaScript, console [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: d874b2831d906a42856e71d42dac6df1a1fe8d6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906379"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Commandes de la console JavaScript dans Visual Studio
 
@@ -42,7 +42,7 @@ Utilisez la forme de commande plus longue `window.console.[command]` si vous dev
 > [!TIP]
 > Les versions antérieures de Visual Studio ne prennent pas en charge l’ensemble complet des commandes. Utilisez IntelliSense sur l’objet console pour obtenir rapidement des informations sur les commandes prises en charge.
 
-|Commande|Description| Exemple|
+|Commande|Description|Exemple|
 |-------------|-----------------|-------------|
 |`assert(expression, message)`|Envoie un message si `expression` correspond à **false**.|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|Efface les messages de la fenêtre de console, y compris les messages d’erreur de script. Efface également les scripts apparaissant dans la fenêtre de console. N’efface pas le script entré dans l’invite d’entrée de la console.|`console.clear();`|
@@ -68,7 +68,7 @@ Utilisez la forme de commande plus longue `window.console.[command]` si vous dev
 ## <a name="miscellaneous-commands"></a>Commandes diverses
 Ces commandes sont également disponibles dans la fenêtre de la console JavaScript (elles ne sont pas disponibles à partir du code).
 
-|Commande|Description| Exemple|
+|Commande|Description|Exemple|
 |-------------|-----------------|-------------|
 |`$0`, `$1`, `$2`, `$3`, `$4`|Retourne l’élément spécifié dans la fenêtre de console. `$0` retourne l'élément actuellement sélectionné dans l'Explorateur DOM, `$1` retourne l'élément précédemment sélectionné dans l'Explorateur DOM, et ainsi de suite, jusqu'au quatrième élément sélectionné précédemment.|3 $|
 |`$(id)`|Retourne un élément par ID. Il s’agit d’une commande de raccourci pour `document.getElementById(id)`, où `id` est une chaîne qui représente l’ID d’élément.|`$("contenthost")`|

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3576bdc41f25b95b68230e09e07b1a5ed97016c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906655"
 ---
 # <a name="secure-office-solutions"></a>Sécuriser les solutions Office
   Le modèle de sécurité pour les solutions Office implique plusieurs technologies : [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , le centre de gestion de la confidentialité dans Microsoft Office et la zone sites sensibles d’Internet Explorer. Les sections suivantes décrivent le fonctionnement de ces différentes fonctionnalités de sécurité :

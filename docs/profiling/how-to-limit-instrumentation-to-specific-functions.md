@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 2b1ce5af864a87691fab5b4026e797dc6eb970bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907265"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Guide pratique pour limiter l’instrumentation à des fonctions spécifiques
 Vous pouvez limiter l’instrumentation et la collecte de données à une ou plusieurs fonctions en configurant des options dans la page **Avancé** de la **Session de performance** ou dans les pages de propriétés des fichiers binaires cibles :
@@ -44,10 +44,10 @@ Vous pouvez limiter l’instrumentation et la collecte de données à une ou plu
 
     **/include :** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le `Namespace` **suivant :** `FunctionName` . Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include : MyNS :: \\** _ spécifie toutes les fonctions dans l’espace de noms MyNS.
+    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le `Namespace` **suivant :** `FunctionName` . Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include:MyNS::\\*** spécifie toutes les fonctions de l’espace de noms MyNS.
 
    > [!NOTE]
-   > Pour répertorier les fonctions dans un fichier binaire, ouvrez une fenêtre d’invite de commandes dans le répertoire d’installation de Outils de profilage (consultez [spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), puis tapez _ *VSInstr/DumpFuncs**
+   > Pour répertorier les fonctions d’un fichier binaire, ouvrez une fenêtre d’invite de commandes dans le répertoire d’installation des outils de profilage (consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), puis tapez **vsinstr /DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Pour limiter l’instrumentation à certaines fonctions d’un fichier binaire
 
@@ -63,10 +63,10 @@ Vous pouvez limiter l’instrumentation et la collecte de données à une ou plu
 
     **/include :** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le `Namespace` **suivant :** `FunctionName` . Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include : MyNS :: \\** _ spécifie toutes les fonctions dans l’espace de noms MyNS.
+    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le `Namespace` **suivant :** `FunctionName` . Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include:MyNS::\\*** spécifie toutes les fonctions de l’espace de noms MyNS.
 
    > [!NOTE]
-   > Pour répertorier les fonctions dans un fichier binaire, ouvrez une fenêtre d’invite de commandes dans le répertoire d’installation de Outils de profilage (consultez [spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), puis tapez _ *VSInstr/DumpFuncs**
+   > Pour répertorier les fonctions d’un fichier binaire, ouvrez une fenêtre d’invite de commandes dans le répertoire d’installation des outils de profilage (consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), puis tapez **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>Voir aussi
 - [Contrôler la collecte des données](../profiling/controlling-data-collection.md)

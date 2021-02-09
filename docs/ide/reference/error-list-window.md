@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: df8d9545ce8179451530e2eb30bef7f98ba365d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907551"
 ---
 # <a name="error-list-window"></a>Fenêtre Liste d'erreurs
 
@@ -68,7 +68,7 @@ Si un filtre est actuellement appliqué aux résultats de la recherche, le nom d
 
 La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.
 
-## <a name="search"></a>Rechercher
+## <a name="search"></a>Recherche
 
 Utilisez la zone de texte **Rechercher dans la liste des erreurs** située à droite de la barre d’outils **Liste d’erreurs** pour rechercher des erreurs spécifiques dans la liste d’erreurs. Vous pouvez rechercher sur toute colonne visible dans la liste et les résultats de la recherche sont toujours triés selon la colonne de tri prioritaire au lieu de la requête ou du filtre appliqué. Si vous choisissez la touche **Échap** tandis que le focus est dans la **Liste d’erreurs**, vous pouvez effacer le terme de recherche et les résultats de la recherche filtrés. Vous pouvez également cliquer sur la croix (**X**) à droite de la zone de texte pour l’effacer.
 
@@ -78,7 +78,7 @@ Vous pouvez copier la liste d'erreurs et l'enregistrer dans un fichier. Sélecti
 
 ## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
 
-Gravité
+severity
 
 Affiche les différents types d’entrée de la **Liste d’erreurs** (**Erreur**, **Message**, **Avertissement**, **Avertissement (actif)**, **Avertissement (inactif)**).
 
@@ -98,6 +98,6 @@ Fichier
 
 Affiche le nom de fichier.
 
-Ligne
+Lignes
 
 Affiche la ligne où apparaît le problème.

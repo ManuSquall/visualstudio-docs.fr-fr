@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b70fd48adacdbbf936c6997fc373ad4a8d7e696b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4692fdbc08655553a829c0f44037221f2e8b410
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907861"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 Obtient le nom de la session qui débogue ce processus. Un IDE peut afficher ces informations à un utilisateur qui débogue un processus particulier sur un ordinateur particulier.
@@ -39,7 +39,7 @@ HRESULT GetAttachedSessionName(
 ## <a name="parameters"></a>Paramètres
 `pbstrSessionName`\
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Cette méthode doit toujours retourner `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Voir aussi

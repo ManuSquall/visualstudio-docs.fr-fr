@@ -6,16 +6,16 @@ ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 110199375aef4f4a1168c761a5dad9d77da215b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907000"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Guide pratique pour définir les options de nom de fichier des données de performance
 
@@ -40,7 +40,7 @@ Vous pouvez modifier tout paramètre d’attribution de nom dans la page **Gén�
 
 3. Sous **Rapport**, modifiez les paramètres suivants :
 
-    |Name|Description|
+    |Nom|Description|
     |-|-|
     |**Emplacement du rapport**|Spécifiez un répertoire pour le stockage des fichiers de données de profilage.|
     |**Nom du rapport**|Spécifiez un nom de base pour les fichiers.|
