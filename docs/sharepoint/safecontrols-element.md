@@ -11,18 +11,18 @@ helpviewer_keywords:
 - SafeControls element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23e31e3df59d6d580ac94ffcb83f7a17e186a267
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889445"
 ---
 # <a name="safecontrols-element"></a>SafeControls (élément)
-  Collection de contrôles et de composants WebPart ASPX qui sont désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.
+  Collection de contrôles et de WebParts ASPX qui sont désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,7 +50,7 @@ ms.locfileid: "95440673"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Représente un élément de projet SharePoint. Cet élément est l’élément racine requis du fichier *. les données* .|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour plus d’informations sur les contrôles sécurisés, consultez [fournir des informations sur l’empaquetage et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informations sur les éléments

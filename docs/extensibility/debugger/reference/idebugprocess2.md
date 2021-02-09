@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72659491ec6718397a4fbb494175eea0896c7f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd644a728f049cf8b94f22ef961464b8bfcb5816
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891070"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Cette interface représente un processus en cours d’exécution sur un port. Si le port est le port local, `IDebugProcess2` représente généralement un processus physique sur l’ordinateur local.
@@ -58,7 +58,7 @@ IDebugProcess2 : IUnknown
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Demande que le prochain programme qui exécute le code dans ce processus s’arrête.|
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Obtient le port sur lequel ce processus s’exécute.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un `IDebugProcess2` contient une ou plusieurs interfaces [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) .
 
 ## <a name="requirements"></a>Configuration requise

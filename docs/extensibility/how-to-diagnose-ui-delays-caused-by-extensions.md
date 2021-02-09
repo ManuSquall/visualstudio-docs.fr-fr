@@ -6,14 +6,14 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: jillfra
+manager: jmartens
 ms.workload: multiple
-ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 508fdd44a1c73f66d88317b7ec304e810f5f12e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890797"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Guide pratique pour diagnostiquer les délais de l’interface utilisateur causés par les extensions
 
@@ -114,7 +114,7 @@ Nous allons tout d’abord utiliser la vue **événements** pour obtenir l’int
 
 1. Ouvrez la vue **événements** en sélectionnant `Events` nœud sous la trace et en choisissant **ouvrir** dans le menu contextuel.
 2. `Microsoft-VisualStudio/ExtensionUIUnresponsiveness`Dans le volet gauche, sélectionnez «».
-3. Appuyez sur Entrée
+3. Appuyez sur entrée
 
 La sélection est appliquée et tous les `ExtensionUIUnresponsiveness` événements s’affichent dans le volet droit.
 

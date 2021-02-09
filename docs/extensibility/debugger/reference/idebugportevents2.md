@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891187"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Cette interface notifie un écouteur (en général, le gestionnaire de débogage de session [SDM] ou un moteur de débogage) de la création et de la destruction des processus et des programmes sur un port particulier. Ces informations peuvent être utilisées pour présenter une vue en temps réel des processus et des programmes en cours d’exécution sur le port.
@@ -41,7 +41,7 @@ IDebugPortEvents2 : IUnknown
 |------------|-----------------|
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Envoie des événements qui décrivent la création et la destruction des processus et des programmes sur le port.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `IDebugPortEvents2` est également utilisé par le SDM pour déboguer des programmes qui s’exécutent dans un processus qui est déjà en cours de débogage.
 
  Les événements de port sont passés au SDM par cette interface.

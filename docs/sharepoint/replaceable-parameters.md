@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload: office
-ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3eb6e737a1f939e05e6a6be7f2c9ba950fc411d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889497"
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Les paramètres remplaçables, ou *jetons*, peuvent être utilisés dans les fichiers projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment de la conception. Elles sont similaires en fonction des jetons de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modèle standard. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).

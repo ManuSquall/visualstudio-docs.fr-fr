@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2aa1e20dd8639ce089ebe851116a15bf61e35ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ac35b3bd3757e804840478c586100a3f56e656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890927"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Cette méthode obtient l’objet représenté par ce visualiseur.
@@ -28,14 +28,14 @@ Cette méthode obtient l’objet représenté par ce visualiseur.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetObjectForVisualizer(
-   IDebugObject** ppObject
+HRESULT GetObjectForVisualizer(
+   IDebugObject** ppObject
 );
 ```
 
 ```csharp
-int GetObjectForVisualizer(
-   out IDebugObject ppObject
+int GetObjectForVisualizer(
+   out IDebugObject ppObject
 );
 ```
 
@@ -43,10 +43,10 @@ int GetObjectForVisualizer(
 `ppObject`\
 à Objet représenté par ce visualiseur
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `GetObjectForVisualizer` est autorisé à retourner une version mise en cache de l’objet. Si l’appelant souhaite s’assurer que l’objet est à jour, il appellera [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
 ## <a name="see-also"></a>Voir aussi

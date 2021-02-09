@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890303"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Guide pratique pour configurer le comportement de l’invite d’approbation ClickOnce
 Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux ont la possibilité d’installer des applications ClickOnce, telles que des applications Windows Forms, des applications Windows Presentation Foundation, des applications console, des applications de navigateur WPF et des solutions Office. Vous configurez l’invite d’approbation en définissant les clés de Registre sur l’ordinateur de chaque utilisateur final.
@@ -57,7 +57,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer** , puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
 
     2. Dans la zone **ouvrir** , tapez `regedit` , puis cliquez sur **OK**.
 
@@ -67,7 +67,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
      Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes comme **valeur de chaîne** , si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
@@ -116,7 +116,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer** , puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
 
     2. Dans la zone **ouvrir** , tapez `regedit` , puis cliquez sur **OK**.
 
@@ -126,7 +126,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
      Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes comme **valeur de chaîne** , si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
@@ -173,7 +173,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 1. Ouvrez l’éditeur du Registre :
 
-    1. Cliquez sur **Démarrer** , puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer**, puis sur **Exécuter**.
 
     2. Dans la zone **ouvrir** , tapez `regedit` , puis cliquez sur **OK**.
 
@@ -183,7 +183,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
      Si la clé n’existe pas, créez-la.
 
-3. Ajoutez les sous-clés suivantes comme **valeur de chaîne** , si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées indiquées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|

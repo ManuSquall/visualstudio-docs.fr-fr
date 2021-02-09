@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18cb56b083386c3ac8358a101c1d52fb14cb39ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890238"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 Retourne une interface qui représente l’objet managé.
@@ -28,7 +28,7 @@ Retourne une interface qui représente l’objet managé.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetManagedObject( 
+HRESULT GetManagedObject( 
    IUnknown** ppManagedObject
 );
 ```
@@ -43,10 +43,10 @@ int GetManagedObject(
 `ppManagedObject`\
 à Retourne une interface qui représente l’objet managé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’interface retournée par cette méthode peut être interrogée pour toute interface implémentée par la classe managée, ce qui permet d’appeler ses méthodes.
 
 ## <a name="see-also"></a>Voir aussi

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29835e993d287c981ad1c4014af3dc276891af5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890498"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Comment : modifier l’espace de noms d’un langage spécifique à un domaine
 
@@ -49,9 +49,9 @@ Vous pouvez modifier l’espace de noms d’un langage spécifique à un domaine
 
 10. Réinitialisez l’instance expérimentale de Visual Studio.
 
-    1. Supprimer **\Utilisateurs \\ **_{votre nom}_**\AppData\Local\Microsoft\VisualStudio \\ \* exp**.
+    1. Supprimer **\Utilisateurs \\**_{votre nom}_**\AppData\Local\Microsoft\VisualStudio \\ \* exp**.
 
-    2. Dans le menu **Démarrer** de Windows, choisissez **tous les programmes**  >  **Microsoft Visual Studio outils du kit de développement logiciel (SDK) 2010**  >  **Tools**  >  **Réinitialiser l’instance expérimentale**.
+    2. Dans le menu **Démarrer** de Windows, choisissez **tous les programmes**  >  **Microsoft Visual Studio outils du kit de développement logiciel (SDK) 2010**  >    >  **Réinitialiser l’instance expérimentale**.
 
 11. Dans le menu **générer** , choisissez **régénérer la solution**.
 

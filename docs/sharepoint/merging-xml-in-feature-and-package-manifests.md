@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889562"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Fusionner des données XML dans des manifestes de fonctionnalités et de packages
   Les fonctionnalités et les packages sont définis par des [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichiers manifestes. Ces manifestes empaquetés sont une combinaison de données générées par les concepteurs et personnalisées [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] entrées dans le modèle de manifeste par les utilisateurs. Au moment de l’empaquetage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fusionne les instructions personnalisées [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] avec le concepteur fourni [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour former le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier manifeste empaqueté. Les éléments similaires, avec les exceptions notées plus loin dans les exceptions de fusion, sont fusionnés pour éviter les [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Erreurs de validation après le déploiement des fichiers sur SharePoint, et pour rendre les fichiers manifeste plus petits et plus efficaces.
@@ -52,7 +52,7 @@ ms.locfileid: "96304236"
 |Fonctionnalité (tous les attributs)|*Nom* de l’attribut (chaque nom d’attribut de l’élément de fonctionnalité est une clé unique.)|
 |ElementFile|Emplacement|
 |ElementManifests/ElementManifest|Emplacement|
-|Propriétés/propriété|Clé :|
+|Propriétés/propriété|Clé|
 |CustomUpgradeAction|Nom|
 |CustomUpgradeActionParameter|Nom|
 

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b47156b73d81f427c08e62006dc6e457e5780b
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 88c37bbdf49fe1c73a3f087058256a2c58ae9602
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889756"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -51,7 +51,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
   Chemin complet et nom d’un fichier projet.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Ce commutateur affecte l’environnement IDE de Visual Studio dans les propriétés du projet de **Répertoires VC++**. Si le commutateur `/UseEnv` est spécifié, le nœud **Répertoires VC++** affiche les valeurs des variables d’environnement PATH, INCLUDE, LIBPATH et LIB. (Il affiche également les valeurs des **répertoires sources** et des **répertoires d’exclusion**.) Dans le cas contraire, le nœud remplace les variables d’environnement par cinq valeurs de répertoire : **répertoires exécutables**, **répertoires Include**, répertoires de **référence**, **répertoires de bibliothèques** et **répertoires WinRT** de la bibliothèque.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c766ab8f12d9cda4348b9916d41b6182ccf67e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890186"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 Récupère une liste de tous les threads qui s’exécutent dans le processus.
@@ -28,14 +28,14 @@ Récupère une liste de tous les threads qui s’exécutent dans le processus.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumThreads(
-   IEnumDebugThreads2** ppEnum
+HRESULT EnumThreads(
+   IEnumDebugThreads2** ppEnum
 );
 ```
 
 ```csharp
-int EnumThreads(
-   out IEnumDebugThreads2 ppEnum
+int EnumThreads(
+   out IEnumDebugThreads2 ppEnum
 );
 ```
 
@@ -43,10 +43,10 @@ int EnumThreads(
 `ppEnum`\
 à Retourne un objet [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) qui contient une liste de tous les threads dans tous les programmes du processus.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode énumère les threads en cours d’exécution dans chaque programme, puis les combine dans une vue de processus des threads. Un seul thread peut s’exécuter dans plusieurs programmes. Cette méthode énumère ce thread une seule fois.
 
  Cette méthode présente une liste des threads du processus sans doublons. Dans le cas contraire, pour énumérer les threads en cours d’exécution dans un programme particulier, utilisez la méthode [enumthreads,](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .

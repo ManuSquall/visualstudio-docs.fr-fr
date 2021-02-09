@@ -6,17 +6,17 @@ ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0283cb4332e9137550b74a85c38d7963f3c77a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890472"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Utiliser Python dans Visual Studio sur Windows
 
@@ -63,7 +63,7 @@ Pour plus d'informations :
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Large éventail de fonctionnalités de modification, IntelliSense et d’inclusion de code
 
-Visual Studio fournit un éditeur Python de première classe, notamment la coloration syntaxique, la saisie semi-automatique dans l’ensemble du code et des bibliothèques, la mise en forme du code, l’aide sur les signatures, la refactorisation, la validation lint et les affinages de type. Visual Studio fournit également des fonctionnalités uniques telles que l’affichage de classes, **atteindre la définition**, **Rechercher toutes les références et les**extraits de code. L’intégration directe avec la [fenêtre interactive](#interactive-window) vous permet de développer rapidement du code Python qui est déjà enregistré dans un fichier.
+Visual Studio fournit un éditeur Python de première classe, notamment la coloration syntaxique, la saisie semi-automatique dans l’ensemble du code et des bibliothèques, la mise en forme du code, l’aide sur les signatures, la refactorisation, la validation lint et les affinages de type. Visual Studio fournit également des fonctionnalités uniques telles que l’affichage de classes, **atteindre la définition**, **Rechercher toutes les références et les** extraits de code. L’intégration directe avec la [fenêtre interactive](#interactive-window) vous permet de développer rapidement du code Python qui est déjà enregistré dans un fichier.
 
 ![Complétions de code pour le code Python dans Visual Studio](media/code-editing-completions-simple.png)
 
@@ -81,7 +81,7 @@ Pour chaque environnement Python connu de Visual Studio, vous pouvez facilement 
 
 ![Fenêtre interactive Python dans Visual Studio](media/interactive-window.png)
 
-Visual Studio fournit également une intégration étroite entre l’éditeur de code Python et la fenêtre **interactive** . Le **Ctrl** + raccourci clavier Ctrl**Enter** envoie aisément la ligne de code (ou le bloc de code) actuelle dans l’éditeur à la fenêtre **interactive** , puis passe à la ligne suivante (ou bloc). **CTRL** + **Entrée** vous permet d’effectuer un pas à pas détaillé dans le code sans avoir à exécuter le débogueur. Vous pouvez également envoyer le code sélectionné à la fenêtre **interactive** avec la même séquence de touches et coller facilement du code de la fenêtre **interactive** dans l’éditeur. Ensemble, ces fonctionnalités vous permettent de traiter les détails d’un segment de code dans la fenêtre **interactive** et d’enregistrer facilement les résultats dans un fichier dans l’éditeur.
+Visual Studio fournit également une intégration étroite entre l’éditeur de code Python et la fenêtre **interactive** . Le  + raccourci clavier Ctrl **Enter** envoie aisément la ligne de code (ou le bloc de code) actuelle dans l’éditeur à la fenêtre **interactive** , puis passe à la ligne suivante (ou bloc). **CTRL** + **Entrée** vous permet d’effectuer un pas à pas détaillé dans le code sans avoir à exécuter le débogueur. Vous pouvez également envoyer le code sélectionné à la fenêtre **interactive** avec la même séquence de touches et coller facilement du code de la fenêtre **interactive** dans l’éditeur. Ensemble, ces fonctionnalités vous permettent de traiter les détails d’un segment de code dans la fenêtre **interactive** et d’enregistrer facilement les résultats dans un fichier dans l’éditeur.
 
 Visual Studio prend également en charge IPython/Jupyter dans l’environnement REPL, notamment les tracés inline, .NET et WPF (Windows Presentation Foundation).
 

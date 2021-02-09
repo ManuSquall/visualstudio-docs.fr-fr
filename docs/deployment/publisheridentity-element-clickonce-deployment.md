@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 34c579db-d2f2-4b66-b9c8-47207f33d950
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 65f225f8e3dd3f6d2b3afb2d2a5284d172d4fab1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891291"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;élément publisherIdentity (déploiement ClickOnce)
 Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement.
@@ -51,7 +51,7 @@ Contient des informations sur l'éditeur qui a signé ce manifeste de déploieme
 
 ## <a name="exceptions"></a>Exceptions
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="requirements"></a>Spécifications
 

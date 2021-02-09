@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee86b12b16cc76b8e2c06ede5ec0110322b515ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891226"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 Cette méthode récupère l’exception associée à un objet, le cas échéant.
@@ -28,16 +28,16 @@ Cette méthode récupère l’exception associée à un objet, le cas échéant.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetExceptionObjectAndType(
-   IDebugObject** ppException,
-   IDebugField**  ppField
+HRESULT GetExceptionObjectAndType(
+   IDebugObject** ppException,
+   IDebugField**  ppField
 );
 ```
 
 ```csharp
-int GetExceptionObjectAndType(
-   out IDebugObject ppException,
-   out IDebugField  ppField
+int GetExceptionObjectAndType(
+   out IDebugObject ppException,
+   out IDebugField  ppField
 );
 ```
 
@@ -48,7 +48,7 @@ int GetExceptionObjectAndType(
 `ppField`\
 à Retourne l’objet représentant un champ spécifique qui peut avoir provoqué l’exception (il peut s’agir d’une valeur null).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 > [!NOTE]

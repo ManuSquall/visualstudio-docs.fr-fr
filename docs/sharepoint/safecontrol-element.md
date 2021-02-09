@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControl element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f08046666ff00d4a0e5489bc78c0c70967774f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889471"
 ---
 # <a name="safecontrol-element"></a>SafeControl (élément)
   Représente un contrôle ASPX ou un composant WebPart qui est désigné comme sécurisé pour tout utilisateur qui peut accéder à n’importe quelle page ASPX sur le site SharePoint.
@@ -56,9 +56,9 @@ ms.locfileid: "95440621"
 
 |Élément|Description|
 |-------------|-----------------|
-|[SafeControls](../sharepoint/safecontrols-element.md)|Représente une collection de contrôles ASPX et composants WebPart désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.|
+|[SafeControls](../sharepoint/safecontrols-element.md)|Représente une collection de contrôles ASPX et WebParts désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour plus d’informations sur les contrôles sécurisés, consultez [fournir des informations sur l’empaquetage et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informations sur les éléments
