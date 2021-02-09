@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880084"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Cette structure spécifie différents genres d’informations sur le type d’un champ.
@@ -68,7 +68,7 @@ public struct TYPE_INFO {
  `unionmember`\
  [C# uniquement] Marshalez-le vers le type de structure approprié en fonction de `dwKind` .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette structure est transmise à la méthode [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) où elle est remplie. La façon dont le contenu de la structure est interprété est basée sur le `dwKind` champ.
 
 > [!NOTE]

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 544bb2ed8a5526c04c46c6609c6bca3b6bf57bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4e3a99e35bd16f9986d1c4e9c59578a39cda1f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880851"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 Retourne le nom associé au jeton spécifié en fonction de son objet de métadonnées.
@@ -52,7 +52,7 @@ dans Jeton à nommer.
 `pbstrName`\
 à Nom qui correspond au jeton.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

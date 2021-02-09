@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e31bdd47297a532a2eba69513aef01554791690e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881046"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Obtient les informations de résolution de point d’arrêt qui décrivent ce point d’arrêt.
@@ -28,14 +28,14 @@ Obtient les informations de résolution de point d’arrêt qui décrivent ce po
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetResolutionInfo( 
+HRESULT GetResolutionInfo( 
    BPRESI_FIELDS       dwFields,
    BP_RESOLUTION_INFO* pBPResolutionInfo
 );
 ```
 
 ```csharp
-int GetResolutionInfo( 
+int GetResolutionInfo( 
    enum BPRESI_FIELDS   dwFields,
    BP_RESOLUTION_INFO[] pBPResolutionInfo
 );
@@ -48,7 +48,7 @@ dans Combinaison d’indicateurs de l’énumération [BPRESI_FIELDS](../../../e
 `pBPResolutionInfo`\
 à Structure [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) à remplir avec des informations sur ce point d’arrêt.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
 ## <a name="example"></a>Exemple

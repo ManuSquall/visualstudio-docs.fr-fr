@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 845f83d2078999e3b3e32e048f9a3fa716300b19
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 45d0b1342ea0e53c4897881ebb5cfee0a7241d6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882073"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -35,11 +35,11 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  Optionnel. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
+  Facultatif. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
 
 - *FileN*
 
-  Optionnel. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
+  Facultatif. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
 
 ## <a name="remarks"></a>Remarques
 

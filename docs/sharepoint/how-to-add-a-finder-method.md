@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], Finder method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879681"
 ---
 # <a name="how-to-add-a-finder-method"></a>Comment : ajouter une méthode de recherche
   Pour permettre au service BDC (Business Data Connectivity) d’afficher une liste d’entités dans un composant WebPart ou une liste, vous devez créer une méthode de *recherche* . Une méthode de recherche est une méthode spéciale qui retourne une collection d’instances d’entité. Pour plus d’informations, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).

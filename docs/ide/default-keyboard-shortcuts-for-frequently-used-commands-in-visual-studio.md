@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 12dc587e25fef4e8b62d6ede0a13d5eb4aa7e3fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880500"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier populaires pour Visual Studio
 
@@ -25,7 +25,7 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 > [!NOTE]
 > Vous pouvez [rechercher le raccourci](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**.
 
-## <a name="build"></a>Générer
+## <a name="build"></a>Build
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
@@ -105,7 +105,7 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |Edit.WordDeleteToEnd|**Ctrl + Suppr** [éditeur de texte]|
 |Edit.WordDeleteToStart|**Ctrl + Retour arrière** [éditeur de texte]|
 
-## <a name="file"></a>File
+## <a name="file"></a>Fichier
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |
@@ -140,7 +140,7 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |-------------| - |
 |Tools.AttachtoProcess|**CTRL + ALT + P** [global]|
 
-## <a name="view"></a>Vue
+## <a name="view"></a>Affichage
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |

@@ -7,13 +7,13 @@ ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881332"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Raccourcis clavier pour le concepteur XAML
 
@@ -36,7 +36,7 @@ Le tableau ci-après répertorie les raccourcis utilisables avec les éléments 
 |Sélectionner tous les éléments|Appuyez sur **CTRL** + **A**|
 |Effacer la sélection de tous les éléments|Appuyez sur **CTRL** + **MAJ** + **A**|
 |Afficher ou masquer les poignées d'élément|Appuyez sur **F9**|
-|Sélectionner une propriété d'un élément|Avec un élément sélectionné et le focus sur le Fenêtre Propriétés, appuyez sur la touche **Tab** . (Utilisez **CTRL** + **Pour modifier le focus sur la** fenêtre Propriétés.) Vous pouvez utiliser les touches de direction pour sélectionner des valeurs de propriété dans des listes déroulantes.|
+|Sélectionner une propriété d'un élément|Avec un élément sélectionné et le focus sur le Fenêtre Propriétés, appuyez sur la touche **Tab**. (Utilisez **CTRL** + **Pour modifier le focus sur la** fenêtre Propriétés.) Vous pouvez utiliser les touches de direction pour sélectionner des valeurs de propriété dans des listes déroulantes.|
 
 ## <a name="document-outline-window-shortcuts"></a>Raccourcis de la fenêtre Structure du document
 

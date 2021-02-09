@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c19109215a9e8824f1648860c39ccb33836ca93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879993"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Cette structure représente une adresse relative à un `this` pointeur ( `Me` en Visual Basic).
@@ -53,7 +53,7 @@ public struct UNMANAGED_THIS_RELATIVE {
  `dwBitLength`\
  Nombre de bits représentant l’adresse (toujours 0, sauf si vous faites référence à un champ de bits).
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette structure fait partie de l’Union de la structure [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) lorsque le `dwKind` champ de la `DEBUG_ADDRESS_UNION` structure a la valeur `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (une valeur de l’énumération [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Configuration requise

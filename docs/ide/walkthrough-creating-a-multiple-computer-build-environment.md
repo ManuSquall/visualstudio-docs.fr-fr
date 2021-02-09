@@ -10,15 +10,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881956"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs
 
@@ -341,7 +341,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         to
+         par
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -351,7 +351,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         to
+         par
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 

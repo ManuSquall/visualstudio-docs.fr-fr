@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 172f3ea546565554c5f0701b81a88b9ca99b4100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881098"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Dependency &gt; , élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste de l’application.
@@ -83,10 +83,10 @@ Identifie la version de l’application à installer et l’emplacement du manif
 | Attribut | Description |
 |------------------| - |
 | `preRequisite` | facultatif. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true` , et que l’assembly spécifié n’existe pas dans le GAC, l’exécution de l’application échoue. |
-| `visible` | facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage et l’activation des applications. |
+| `visible` | Facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage et l’activation des applications. |
 | `dependencyType` | Obligatoire. Relation entre cette dépendance et l’application. Les valeurs autorisées sont :<br /><br /> -   `install`. Le composant représente une installation distincte de l’application actuelle.<br />-   `preRequisite`. Le composant est requis par l’application actuelle. |
-| `codebase` | facultatif. Chemin d’accès complet au manifeste d’application. |
-| `size` | facultatif. Taille du manifeste de l’application, en octets. |
+| `codebase` | Facultatif. Chemin d’accès complet au manifeste d’application. |
+| `size` | Facultatif. Taille du manifeste de l’application, en octets. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
  Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly` . Le contenu de `assemblyIdentity` doit être le même que celui décrit dans le manifeste de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Le tableau suivant présente les attributs de l' `assemblyIdentity` élément.
@@ -97,8 +97,8 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |`Version`|Obligatoire. Spécifie le numéro de version de l’application, au format suivant : `major.minor.build.revision`|
 |`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets du hachage SHA-1 de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour la signature doit être supérieure ou égale à 2048 bits.|
 |`processorArchitecture`|Obligatoire. Spécifie le microprocesseur. Les valeurs valides sont `x86` pour les fenêtres 32 bits et `IA64` pour Windows 64 bits.|
-|`Language`|facultatif. Identifie les codes de langue en deux parties de l’assembly. Par exemple, en-US, qui correspond à l’anglais (États-Unis). La valeur par défaut est `neutral`. Cet élément se trouve dans l' `asmv2` espace de noms.|
-|`type`|facultatif. Pour la compatibilité descendante avec la technologie d’installation côte à côte Windows. La seule valeur autorisée est `win32` .|
+|`Language`|Facultatif. Identifie les codes de langue en deux parties de l’assembly. Par exemple, en-US, qui correspond à l’anglais (États-Unis). Par défaut, il s’agit de `neutral`. Cet élément se trouve dans l' `asmv2` espace de noms.|
+|`type`|Facultatif. Pour la compatibilité descendante avec la technologie d’installation côte à côte Windows. La seule valeur autorisée est `win32` .|
 
 ## <a name="hash"></a>Hachage
  L' `hash` élément est un enfant facultatif de l' `file` élément. L’élément `hash` ne comporte pas d’attributs.

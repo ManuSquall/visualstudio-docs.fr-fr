@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53cd7d4b5302652fc371f27b76d7e789a6942640
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 8a19ec1d5c615e31e62961707ad8f76f1386eb3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880656"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent, élément (modèles Visual Studio)
 
@@ -66,7 +66,7 @@ Hiérarchie d’éléments :
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Élément requis.<br /><br /> Contient toutes les métadonnées pour le modèle de projet, le modèle d’élément ou le starter kit.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `TemplateContent` est un élément obligatoire.
 
 ## <a name="example"></a>Exemple

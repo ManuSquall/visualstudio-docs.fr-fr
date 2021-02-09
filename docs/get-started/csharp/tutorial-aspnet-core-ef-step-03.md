@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: aa3df844d5fad5dc968a9bab5d02e9a3e8e06719
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879967"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Étape 3 : utiliser des données à l’aide de Entity Framework
 
@@ -54,7 +54,7 @@ public class Game
 
 Nous sommes maintenant prêts à créer les pages qui serviront à gérer notre bibliothèque de jeux. Si l’entreprise peut sembler colossale, elle est en fait extrêmement simple. Nous devons d’abord décider où devra se trouver cette fonctionnalité dans notre application. Ouvrez le dossier Pages dans le projet web et ajoutez-y un nouveau dossier. Appelez-le *Games*.
 
-Maintenant, cliquez avec le bouton droit sur Games et choisissez **Ajouter**  >  **un nouvel élément de génération de modèles**automatique. Choisissez Razor Pages avec l’option **Entity Framework (CRUD)**. CRUD signifie « create, read, update, delete » pour « créer, lire, mettre à jour, supprimer » ; ce modèle créera des pages pour chacune de ces opérations (y compris une page « Tout lister » et une page « Afficher les détails d’un élément »).
+Maintenant, cliquez avec le bouton droit sur Games et choisissez **Ajouter**  >  **un nouvel élément de génération de modèles** automatique. Choisissez Razor Pages avec l’option **Entity Framework (CRUD)**. CRUD signifie « create, read, update, delete » pour « créer, lire, mettre à jour, supprimer » ; ce modèle créera des pages pour chacune de ces opérations (y compris une page « Tout lister » et une page « Afficher les détails d’un élément »).
 
 ![Visual Studio 2019 ASP.NET Core – Ajouter des pages générées automatiquement](media/vs-2019/vs2019-add-scaffold.png)
 

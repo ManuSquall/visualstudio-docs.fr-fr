@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03cfb29cc54a2f0ab18bce3ec0761cfab62e20df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca8a33626ad68dcac690ca288d4bc375679a4e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880773"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 Représente une somme de contrôle pour un document de débogage et permet de passer la somme de contrôle entre les composants.

@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39be066e63a04c08eecd92395757d09b88333965
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 2a4df840a2eaa6077589b86b28aab1a7f83c8f55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879798"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Démarrage rapide : Créer un projet Python à partir du code existant
 
@@ -26,7 +26,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-Si vous le souhaitez, exécutez le programme en appuyant sur **CTRL** + **F5** ou en sélectionnant **Déboguer**exécuter  >  **sans débogage**.
+Si vous le souhaitez, exécutez le programme en appuyant sur **CTRL** + **F5** ou en sélectionnant **Déboguer** exécuter  >  **sans débogage**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

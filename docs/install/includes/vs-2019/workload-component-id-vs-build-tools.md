@@ -5,17 +5,17 @@ description: ID de composant et de charge de travail Visual Studio pour créer d
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 8b99b3e92ace96fcf87f7fb5a4e575cb0ca15ee5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fcf85223bbec03594fc64e221b23b5f99c704abf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881927"
 ---
 ## <a name="azure-development-build-tools"></a>Outils de build pour le développement Azure
 

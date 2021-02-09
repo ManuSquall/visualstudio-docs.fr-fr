@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 279732f6019757c1a0d9fef566e8aaf1898dbdfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880050"
 ---
 # <a name="handle-specialized-deployment"></a>Gérer le déploiement spécialisé
 Un déploiement est une opération facultative pour les projets. Un projet Web, par exemple, prend en charge un déploiement pour permettre à un projet de mettre à jour un serveur Web. De même, un projet **Smart Device** prend en charge un déploiement pour copier une application générée sur le périphérique cible. Les sous-types de projet peuvent fournir un comportement de déploiement spécialisé en implémentant l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Cette interface définit un ensemble complet des opérations de déploiement :

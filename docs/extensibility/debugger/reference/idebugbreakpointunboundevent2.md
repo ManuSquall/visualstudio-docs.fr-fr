@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881007"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Cette interface indique au gestionnaire de débogage de session (SDM) qu’un point d’arrêt lié a été indépendant d’un programme chargé.
@@ -42,7 +42,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Obtient le point d’arrêt qui est devenu non lié.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Obtient la raison pour laquelle le point d’arrêt a été indépendant.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Lors du déchargement d’une DLL ou d’une classe de moteur de débogage, tous les points d’arrêt qui étaient liés au code dans ce module doivent être détachés du programme en cours de débogage. Un `IDebugBreakpointUnboundEvent2` est envoyé pour chaque point d’arrêt non lié.
 
 ## <a name="requirements"></a>Configuration requise

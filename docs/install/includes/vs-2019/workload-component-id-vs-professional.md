@@ -5,17 +5,17 @@ description: Utilisez les ID de composant et de charge de travail pour installer
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1612245ed8c0f8d49beefc2012a50bd7c414cba7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: efda248f78cb606c57175b3c164960f2a78fa8c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881692"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Éditeur de base de Visual Studio (inclus avec Visual Studio Professional 2019)
 
@@ -766,7 +766,7 @@ Microsoft.VisualStudio.Component.Windows10SDK | Runtime C Windows universel | 16
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK Windows 10 (10.0.18362.0) | 16.1.28829.92 | Facultatif
 Microsoft.VisualStudio.ComponentGroup.Web | Prérequis des outils de développement web et ASP.NET | 16.4.29318.151 | Facultatif
 
-## <a name="universal-windows-platform-development"></a>Développement de la plateforme universelle Windows
+## <a name="universal-windows-platform-development"></a>Développement pour la plateforme Windows universelle
 
 **ID :** Microsoft.VisualStudio.Workload.Universal
 

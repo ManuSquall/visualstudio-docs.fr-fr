@@ -28,15 +28,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 504488bdd08e80c34ebeed727e7b95badf12ca37
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 897001a5ac10e8a8e1eef96feca4113afa5e1ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880565"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -44,12 +44,12 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |**Type**|**Membres qu’il peut contenir**|
 |--------------| - |
-|Classe|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
+|Class|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
 |Énumération|member|
 |Interface|méthode, propriété, événement (pour C# et Visual Basic)|
 |Classe abstraite|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
 |Structure (Struct en C#)|méthode, propriété (pour C# et Visual Basic) champ, événement (pour C# et Visual Basic), constructeur (méthode), constante|
-|Délégué|paramètre|
+|Délégué|parameter|
 |Module (VB uniquement)|méthode, propriété, champ, événement, constructeur, constante|
 
 > [!NOTE]
@@ -141,7 +141,7 @@ Chaque ligne membre affiche les éléments suivants :
 
      Chaque genre de membre est représenté par sa propre icône. Pointez la souris sur l’icône de membre pour afficher la signature du membre. Cliquez sur l'icône de membre ou sur l'espace blanc à gauche de l'icône de membre pour sélectionner la ligne.
 
-- **Member Name**
+- **Nom du membre**
 
      La colonne **Nom** d’une ligne membre affiche le nom du membre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Utilisez cette cellule pour modifier le nom d'un membre qui dispose d'autorisations en lecture-écriture.
 

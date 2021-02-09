@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881644"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -95,7 +95,7 @@ Pour tester rapidement la prise en charge de Python après avoir suivi les étap
 
     ![Lancement, modification ou désinstallation de Visual Studio à partir du programme d’installation](media/installation-vs-launch.png)
 
-### <a name="troubleshooting"></a>Dépannage
+### <a name="troubleshooting"></a>Résolution des problèmes
 
 Si vous rencontrez des problèmes lors de l’installation ou de l’exécution de Python dans Visual Studio, essayez ce qui suit :
 
@@ -121,7 +121,7 @@ Si vous rencontrez des problèmes lors de l’installation ou de l’exécution 
 
 1. Installez la version de Python Tools pour Visual Studio adaptée à votre version de Visual Studio :
 
-    - Visual Studio 2013 : [PTVS 2.2.2 pour Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2). La **File**  >  boîte de dialogue fichier**nouveau projet** de Visual Studio 2013 vous donne un raccourci pour ce processus.
+    - Visual Studio 2013 : [PTVS 2.2.2 pour Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2). La   >  boîte de dialogue fichier **nouveau projet** de Visual Studio 2013 vous donne un raccourci pour ce processus.
     - Visual Studio 2010 et 2012 : [PTVS 2.1.1 pour Visual studio 2010 et 2012](https://github.com/Microsoft/PTVS/releases/v2.1.1)
 
 1. [Installez un interpréteur Python de votre choix](installing-python-interpreters.md). Si vous disposez déjà d’un interpréteur et que Visual Studio ne le détecte pas automatiquement, consultez [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).

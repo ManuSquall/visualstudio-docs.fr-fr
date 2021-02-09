@@ -14,26 +14,26 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 588b2af3672851bf7f452287d8383aa2d319347d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881579"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sécurité pour les solutions SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] intègre les fonctionnalités suivantes pour aider à améliorer la sécurité des applications SharePoint.
 
 ## <a name="safe-control-entries"></a>Entrées de contrôle sécurisé
- Chaque élément de projet SharePoint créé dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] a une propriété **entrées de contrôle sécurisé** qui représente une collection de contrôles sécurisés. Sa sous-propriété **Safe** vous permet de spécifier les contrôles que vous envisagez de sécuriser. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [spécification de composants WebPart sécurisés](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
+ Chaque élément de projet SharePoint créé dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] a une propriété **entrées de contrôle sécurisé** qui représente une collection de contrôles sécurisés. Sa sous-propriété **Safe** vous permet de spécifier les contrôles que vous envisagez de sécuriser. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [spécification de WebParts sécurisés](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>attribut AllowPartiallyTrustedCallers
  Par défaut, seules les applications entièrement approuvées par le système de sécurité d’accès du code (CAS) du Runtime peuvent accéder à un assembly de code managé partagé. Le marquage d’un assembly avec un niveau de confiance suffisant avec l’attribut AllowPartiallyTrustedCallers permet aux assemblys de confiance partielle d’y accéder.
 
- L’attribut AllowPartiallyTrustedCallers est ajouté à toute solution SharePoint qui n’est pas déployée sur le système Global Assembly Cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ). Cela comprend les solutions ou les solutions bac à sable (sandbox) déployées dans le répertoire bin de l’application SharePoint. Pour plus d’informations, consultez [modifications de sécurité de la version 1 pour le Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) et [déploiement de composants WebPart dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
+ L’attribut AllowPartiallyTrustedCallers est ajouté à toute solution SharePoint qui n’est pas déployée sur le système Global Assembly Cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ). Cela comprend les solutions ou les solutions bac à sable (sandbox) déployées dans le répertoire bin de l’application SharePoint. Pour plus d’informations, consultez [modifications de sécurité de la version 1 pour le Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) et [déploiement de WebParts dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
 ## <a name="safe-against-script-property"></a>Propriété de script sécurisée
  L' *injection de script* est l’insertion de code potentiellement malveillant dans des contrôles ou des pages Web. Pour aider à protéger les sites SharePoint 2010 contre l’injection de script, les contributeurs ne peuvent pas afficher ou modifier des composants WebPart ou leurs propriétés par défaut. Ce comportement est contrôlé par un attribut SafeControl appelé SafeAgainstScript. Dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] , définissez cet attribut dans le sous-ensemble d' **entrées de contrôle sécurisé** d’un élément de projet **par rapport à un script**. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [Comment : marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md).
@@ -75,7 +75,7 @@ ms.locfileid: "95970446"
 
 - [Centre de ressources de sécurité SharePoint](/sharepoint/dev/)
 
-- [Sécurisation de composants WebPart dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768613(v=office.14))
+- [Sécurisation de WebParts dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768613(v=office.14))
 
 - [Amélioration de la sécurité des applications Web : menaces et contre-mesures](/previous-versions/msp-n-p/ff649874(v=pandp.10))
 

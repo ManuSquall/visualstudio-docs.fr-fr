@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a259f813d2bfbcb8ec92b039d44af74e431752ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880214"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Cette méthode crée un énumérateur pour les espaces de noms associés à l’adresse de débogage.
@@ -28,7 +28,7 @@ Cette méthode crée un énumérateur pour les espaces de noms associés à l’
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetNamespacesUsedAtAddress( 
+HRESULT GetNamespacesUsedAtAddress( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppEnum
 );
@@ -48,10 +48,10 @@ dans Adresse de débogage.
 `ppEnum`\
 à Retourne un énumérateur [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) pour les espaces de noms.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Il peut y avoir plusieurs espaces de noms associés à une adresse de débogage donnée, par exemple, des espaces de noms imbriqués ou plusieurs `using` instructions.
 
 ## <a name="see-also"></a>Voir aussi

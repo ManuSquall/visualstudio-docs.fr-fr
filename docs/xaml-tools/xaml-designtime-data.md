@@ -5,14 +5,14 @@ ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880409"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio
 
@@ -173,11 +173,11 @@ Pour créer un espace de noms xmlns personnalisé dans WPF .NET Core, vous devez
 [assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
    ```
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Si vous rencontrez un problème qui n’est pas mentionné dans cette section, faites-le nous savoir en utilisant l’outil [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) .
 
-### <a name="requirements"></a>Spécifications
+### <a name="requirements"></a>Configuration requise
 
 - Les données au moment du design nécessitent Visual Studio 2019 version [16,7](/visualstudio/releases/2019/release-notes-v16.7) ou ultérieure.
 

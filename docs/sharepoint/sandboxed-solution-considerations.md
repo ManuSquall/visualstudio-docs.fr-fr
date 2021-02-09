@@ -17,18 +17,18 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23424c1681a9967d9d50df47f9e67ec895a308a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881605"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considérations sur les solutions bac à sable
-  Les *solutions bac à sable (sandbox)* sont une fonctionnalité de Microsoft SharePoint 2010 qui permet aux utilisateurs de collections de sites de télécharger leurs propres solutions de code personnalisées. Une solution bac à sable (sandbox) courante est que les utilisateurs chargent leurs propres composants WebPart.
+  Les *solutions bac à sable (sandbox)* sont une fonctionnalité de Microsoft SharePoint 2010 qui permet aux utilisateurs de collections de sites de télécharger leurs propres solutions de code personnalisées. Une solution bac à sable (sandbox) courante est que les utilisateurs chargent leurs propres WebParts.
 
  Une application SharePoint bac à sable (sandbox) s’exécute dans un processus contrôlé et sécurisé qui a accès à une partie limitée de la batterie de serveurs Web. Microsoft SharePoint 2010 utilise une combinaison de fonctionnalités, de galeries de solutions, d’analyse de solution et d’une infrastructure de validation pour activer les solutions sandbox.
 
@@ -117,13 +117,13 @@ ms.locfileid: "95970461"
 
 - SPWebEventReceiver
 
-- Prise en charge de tous les composants WebPart qui dérivent de `System.Web.UI.WebControls.WebParts.WebPart`
+- Prise en charge de tous les WebParts qui dérivent de `System.Web.UI.WebControls.WebParts.WebPart`
 
 - composants WebPart
 
 - Éléments de fonctionnalité WebTemplate (au lieu de *Webtemp.xml*)
 
-- composants WebPart visuel
+- WebParts visuel
 
   Les solutions bac à sable (sandbox) ne prennent pas en charge les fonctionnalités et les éléments suivants :
 

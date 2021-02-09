@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0ff17c128af78c1772ad85597153332a0848062
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 412b40fdb38e4931bcefb05bde8d695955d6c05a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879733"
 ---
 # <a name="modules-view"></a>Vue Modules
 La vue Modules liste les modules des données de profilage. Chaque module est le nœud racine d’une arborescence hiérarchique. Les fonctions profilées du module sont répertoriées sous le nœud du module. Si les données de profilage ont été collectées avec la méthode d’échantillonnage, les informations de ligne figurent sous le nœud de fonction et les données de pointeur d’instruction sont répertoriées sous le nœud de ligne.
