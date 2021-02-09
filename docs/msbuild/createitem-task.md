@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f2d0e165171cb3619d3690e129e18f778504969e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901394"
 ---
 # <a name="createitem-task"></a>CreateItem (tâche)
 
@@ -45,7 +45,7 @@ Remplit des collections d’éléments avec les éléments d’entrée. Cela per
 |`Include`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments à inclure dans la collection d’éléments de sortie. Ce paramètre peut contenir des spécifications de caractères génériques.|
 |`PreserveExistingMetadata`|Paramètre `Boolean` facultatif.<br /><br /> Si `True`, appliquer uniquement les métadonnées supplémentaires si elles n’existent pas.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -53,7 +53,7 @@ Remplit des collections d’éléments avec les éléments d’entrée. Cela per
 
  L’exemple de code suivant crée une collection d’éléments nommée `MySourceItemsWithMetadata` à partir de la collection d’éléments `MySourceItems`. La tâche `CreateItem` remplit la nouvelle collection d’éléments avec les éléments contenus dans l’élément `MySourceItems`. Elle ajoute ensuite une entrée de métadonnées supplémentaire nommée `MyMetadata` avec la valeur `Hello` à chaque élément de la nouvelle collection.
 
- Une fois la tâche exécutée, la collection d’éléments `MySourceItemsWithMetadata` contient les éléments *file1.resx* et *file2.resx* , tous deux avec des entrées de métadonnées pour `MyMetadata`. La collection d’éléments `MySourceItems` est inchangée.
+ Une fois la tâche exécutée, la collection d’éléments `MySourceItemsWithMetadata` contient les éléments *file1.resx* et *file2.resx*, tous deux avec des entrées de métadonnées pour `MyMetadata`. La collection d’éléments `MySourceItems` est inchangée.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -78,7 +78,7 @@ Remplit des collections d’éléments avec les éléments d’entrée. Cela per
 
  Le tableau suivant décrit la valeur de l’élément de sortie après l’exécution de la tâche. Les métadonnées de l’élément sont affichées entre parenthèses après l’élément.
 
-|Collection d'éléments.|Contents|
+|Collection d'éléments.|Contenu|
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*fichier1. resx* ( `MyMetadata="Hello"` )<br /><br /> *fichier2. resx* ( `MyMetadata="Hello"` )|
 

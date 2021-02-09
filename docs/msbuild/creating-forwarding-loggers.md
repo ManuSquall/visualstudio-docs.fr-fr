@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 0ffe175d9ea73640cae1197fe91656d3565525f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901358"
 ---
 # <a name="create-forwarding-loggers"></a>Créer des journaux de transfert
 
@@ -38,7 +38,7 @@ Les journaux de transfert améliorent l’efficacité de la journalisation en vo
 
 ## <a name="specify-a-forwarding-logger"></a>Spécifier un journal de transfert
 
- Une fois que le journal de transfert a été compilé dans un assembly, vous devez indiquer à MSBuild de l’utiliser pendant les builds. Pour ce faire, utilisez les `-FileLogger` `-FileLoggerParameters` `-DistributedFileLogger` commutateurs, et avec *MSBuild.exe* . Le `-FileLogger` commutateur indique *MSBuild.exe* que l’enregistreur d’événements est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs *MSBuild.exe* , consultez [référence de la ligne de commande](../msbuild/msbuild-command-line-reference.md).
+ Une fois que le journal de transfert a été compilé dans un assembly, vous devez indiquer à MSBuild de l’utiliser pendant les builds. Pour ce faire, utilisez les `-FileLogger` `-FileLoggerParameters` `-DistributedFileLogger` commutateurs, et avec *MSBuild.exe*. Le `-FileLogger` commutateur indique *MSBuild.exe* que l’enregistreur d’événements est directement attaché. Le commutateur `-DistributedFileLogger` signifie qu’il existe un fichier journal par nœud. Pour définir des paramètres sur le journal de transfert, utilisez le commutateur `-FileLoggerParameters`. Pour plus d’informations sur ces commutateurs *MSBuild.exe* , consultez [référence de la ligne de commande](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Enregistreurs d’événements prenant en charge plusieurs processeurs
 

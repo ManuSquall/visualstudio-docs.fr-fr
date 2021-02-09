@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7dd8d7f5a50998832a8fac6f47bf66e9a6bbe9
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 6ea412f67629998eab035b8cca79111659ab8a0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901365"
 ---
 # <a name="createproperty-task"></a>CreateProperty (tâche)
 
@@ -40,7 +40,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `CreateProperty` .
 | `Value` | Paramètre de sortie `String` facultatif.<br /><br /> Spécifie la valeur à copier dans la nouvelle propriété. |
 | `ValueSetByTask` | Paramètre de sortie `String` facultatif.<br /><br /> Contient la même valeur que le paramètre `Value`. Utilisez ce paramètre uniquement lorsque vous souhaitez éviter que la propriété de sortie ne soit définie par MSBuild quand elle ignore la cible englobante, car les sorties sont à jour. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -70,7 +70,7 @@ L’exemple suivant utilise la tâche `CreateProperty` pour créer la propriét�
 </Project>
 ```
 
-Après l’exécution du projet, la valeur de la propriété `NewFile` est *Module1.vb* .
+Après l’exécution du projet, la valeur de la propriété `NewFile` est *Module1.vb*.
 
 ## <a name="see-also"></a>Voir aussi
 

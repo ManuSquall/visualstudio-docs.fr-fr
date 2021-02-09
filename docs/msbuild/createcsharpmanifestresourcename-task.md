@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f13293a6967456b153d14464b65182153eca2549
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 3406a5f61c9a4aa1c9e2a3c6388741c3ae0fa0f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901449"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName (tâche)
 
@@ -41,7 +41,7 @@ Crée un nom de manifeste de style C# à partir d’un nom de fichier *. resx* d
 | `PrependCultureAsDirectory` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le nom de culture est ajouté comme nom de répertoire juste avant le nom de ressource de manifeste. La valeur par défaut est `true`. |
 | `ResourceFilesWithManifestResourceNames` | Paramètre de sortie `String` en lecture seule facultatif.<br /><br /> Retourne le nom du fichier de ressources qui inclut maintenant le nom de ressource de manifeste. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  La [tâche CreateVisualBasicManifestResourceName,](../msbuild/createvisualbasicmanifestresourcename-task.md) détermine le nom de ressource de manifeste approprié à assigner à un fichier *. resx* donné ou à un autre fichier de ressources. La tâche fournit un nom logique à un fichier de ressources, puis l’attache à un paramètre de sortie en tant que métadonnées.
 

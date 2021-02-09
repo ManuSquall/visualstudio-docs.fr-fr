@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: a0b58dfec2d0dd04f146c3a473736fa6911f194c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901255"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.
@@ -72,7 +72,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Exclure les données de marqueur des rapports du visualiseur concurrentiel
  Si vous ne voulez pas que les données d’un fournisseur particulier s’affichent dans les futures traces, décochez la case située à coté du fournisseur à supprimer.
 
-## <a name="files"></a>Files
+## <a name="files"></a>Fichiers
  Sous l’onglet **Fichiers**, vous pouvez spécifier le répertoire dans lequel les fichiers de trace sont stockés chaque fois qu’une trace est collectée.  Le visualiseur concurrentiel génère quatre fichiers pour chaque trace qu’il collecte :
 
 - Un fichier ETL (Event Trace Log) en mode noyau (<em>.</em>kernel.etl*)
