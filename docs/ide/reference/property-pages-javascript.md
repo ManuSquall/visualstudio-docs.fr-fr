@@ -16,15 +16,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 30c16e1c76e6f4e12d822f68f2a9530290c15de5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919462"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés, JavaScript
 

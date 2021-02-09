@@ -13,15 +13,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918586"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Comment : gérer la disposition des contrôles dans les volets actions
   Un volet actions est ancré par défaut à droite d’un document ou d’une feuille de calcul ; Toutefois, elle peut être ancrée à gauche, en haut ou en bas. Si vous utilisez plusieurs contrôles utilisateur, vous pouvez écrire du code pour empiler correctement les contrôles utilisateur dans le volet Actions. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
@@ -58,7 +58,7 @@ ms.locfileid: "96848246"
 
 6. Exécutez le projet et vérifiez que les contrôles du volet actions sont empilés de gauche à droite lorsque le volet actions est ancré en haut du document, et les contrôles sont empilés de haut en bas lorsque le volet actions est ancré à la partie droite du document.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
  [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]
 

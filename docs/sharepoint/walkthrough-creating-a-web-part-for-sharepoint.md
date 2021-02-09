@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918623"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart pour SharePoint
 
-Composants WebPart permettre aux utilisateurs de modifier directement le contenu, l’apparence et le comportement des pages de site SharePoint à l’aide d’un navigateur. Cette procédure pas à pas vous montre comment créer un composant WebPart à l’aide du modèle d’élément **WebPart** dans Visual Studio 2010.
+WebParts permettre aux utilisateurs de modifier directement le contenu, l’apparence et le comportement des pages de site SharePoint à l’aide d’un navigateur. Cette procédure pas à pas vous montre comment créer un composant WebPart à l’aide du modèle d’élément **WebPart** dans Visual Studio 2010.
 
 Le composant WebPart affiche les employés dans une grille de données. L’utilisateur spécifie l’emplacement du fichier qui contient les données de l’employé. L’utilisateur peut également filtrer la grille de données afin que les employés qui sont des responsables apparaissent dans la liste uniquement.
 

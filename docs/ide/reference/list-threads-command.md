@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7b3ed8b28a43c31efe68c6512f08883cb4187a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f3abcd7182c8bb5b94b2f35a9463f845cc6bb5bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919387"
 ---
 # <a name="list-threads-command"></a>Afficher les threads, commande
 Affiche une liste des threads du programme en cours.
@@ -35,7 +35,7 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Arguments
 `index`
 
-facultatif. Sélectionne un thread par son index pour en faire le thread actuel.
+Facultatif. Sélectionne un thread par son index pour en faire le thread actuel.
 
 ## <a name="remarks"></a>Remarques
 Une fois spécifié, l’argument `index` marque le thread indiqué comme étant le thread actuel. Un astérisque (*) est affiché dans la liste en regard du thread actuel.

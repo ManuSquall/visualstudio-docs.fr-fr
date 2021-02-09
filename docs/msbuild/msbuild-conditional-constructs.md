@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 614a59771ea63637ee7c0576f67bf4798cb90c1f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 10b26e9bdc0c632f924a29cd2ad09c21f8048d31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919132"
 ---
 # <a name="msbuild-conditional-constructs"></a>Constructions conditionnelles MSBuild
 
@@ -98,4 +98,4 @@ Dans cet exemple, une condition sur une constante de compilateur `DEFINED_CONSTA
 - [Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [When, élément (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Otherwise, élément (MSBuild)](../msbuild/otherwise-element-msbuild.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 419fa9f917358ae19a073b5f864ee76d92c33e75
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 5b8b3a1482a01f0fcef6a8a64fcb3ec0a0023850
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918327"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au déploiement ClickOnce
 Cette section contient des exemples d’applications, un exemple de code et des procédures pas à pas qui illustrent la syntaxe, la structure et les techniques utilisées pour déployer des applications de Windows Forms, WPF et console.

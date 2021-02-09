@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: bdfe683d6afc518ea7981e016587413e0b9cb2f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918822"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecter des données de temporisation détaillées pour une application autonome en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées d’un composant client (autonome) utilisant la méthode d’instrumentation à partir de la ligne de commande.
@@ -52,5 +52,5 @@ Cette section décrit les procédures et les options de collecte des données de
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>Analyser des vues et des rapports de données d’instrumentation
 - [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Informations de référence sur les outils de profilage de la ligne de commande](../profiling/command-line-profiling-tools-reference.md)

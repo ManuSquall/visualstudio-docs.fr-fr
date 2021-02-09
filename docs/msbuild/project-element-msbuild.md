@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 223ccd9e823bef4ee458a7aa1ce2d785788c6238
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c4aa00df0a1a0b622040a3f808515b9a62fc8f66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918840"
 ---
 # <a name="project-element-msbuild"></a>Élément Project (MSBuild)
 
 Élément racine requis d’un fichier projet MSBuild.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <Project InitialTargets="TargetA;TargetB"
@@ -64,7 +64,7 @@ ms.locfileid: "93048861"
 | `InitialTargets` | Attribut facultatif.<br /><br /> Cible ou cibles initiales à exécuter avant les cibles spécifiées dans l’attribut `DefaultTargets` ou sur la ligne de commande. Plusieurs cibles sont séparées par un point-virgule (`;`). Si plusieurs fichiers importés définissent `InitialTargets`, toutes les cibles indiquées seront exécutées, dans l’ordre où elles sont trouvées. |
 | `Sdk` | Attribut facultatif. <br /><br /> Le nom et la version facultative du kit SDK à utiliser pour créer des instructions d’importation implicites qui sont ajoutées au fichier .proj. Si aucune version n’est spécifiée, MSBuild tente de résoudre une version par défaut.  Par exemple, `<Project Sdk="Microsoft.NET.Sdk" />` ou `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Attribut facultatif.<br /><br /> Version de l’ensemble d’outils utilisée par MSBuild pour déterminer les valeurs de $(MSBuildBinPath) et de $(MSBuildToolsPath). |
-| `TreatAsLocalProperty` | Attribut facultatif.<br /><br /> Noms des propriétés qui ne sont pas considérées comme étant globales. Cet attribut empêche des propriétés de ligne de commande particulières de remplacer les valeurs de propriété définies dans un fichier projet ou de cibles et dans toutes les importations ultérieures. Plusieurs propriétés sont séparées par un point-virgule (;).<br /><br /> Normalement, les propriétés globales remplacent les valeurs de propriété qui sont définies dans le fichier projet ou de cible. Si la propriété est indiquée dans la valeur `TreatAsLocalProperty`, la valeur de propriété globale ne remplace pas les valeurs de propriété qui sont définies dans ce fichier et dans toutes les importations ultérieures. Pour plus d’informations, voir [Guide pratique : Générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Remarque :**  Vous définissez les propriétés globales à partir d’une invite de commandes à l’aide du commutateur **-Property** (ou **-p** ). Vous pouvez également définir ou modifier des propriétés globales pour des projets enfants d’une génération multiprojet à l’aide de l’attribut `Properties` de la tâche MSBuild. Pour plus d’informations, consultez [MSBuild, tâche](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Attribut facultatif.<br /><br /> Noms des propriétés qui ne sont pas considérées comme étant globales. Cet attribut empêche des propriétés de ligne de commande particulières de remplacer les valeurs de propriété définies dans un fichier projet ou de cibles et dans toutes les importations ultérieures. Plusieurs propriétés sont séparées par un point-virgule (;).<br /><br /> Normalement, les propriétés globales remplacent les valeurs de propriété qui sont définies dans le fichier projet ou de cible. Si la propriété est indiquée dans la valeur `TreatAsLocalProperty`, la valeur de propriété globale ne remplace pas les valeurs de propriété qui sont définies dans ce fichier et dans toutes les importations ultérieures. Pour plus d’informations, voir [Guide pratique : Générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Remarque :**  Vous définissez les propriétés globales à partir d’une invite de commandes à l’aide du commutateur **-Property** (ou **-p**). Vous pouvez également définir ou modifier des propriétés globales pour des projets enfants d’une génération multiprojet à l’aide de l’attribut `Properties` de la tâche MSBuild. Pour plus d’informations, consultez [MSBuild, tâche](../msbuild/msbuild-task.md). |
 | `xmlns` | Attribut facultatif.<br /><br /> Quand il est spécifié, l’attribut `xmlns` doit avoir la valeur `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
 ### <a name="child-elements"></a>Éléments enfants

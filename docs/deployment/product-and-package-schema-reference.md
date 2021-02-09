@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918374"
 ---
 # <a name="product-and-package-schema-reference"></a>Informations de référence sur le schéma de produit et de package
 Un *fichier de produit* est un manifeste XML qui décrit toutes les dépendances externes requises par une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Les .NET Framework et MDAC (Microsoft Data Access Components) sont des exemples de dépendances externes. Un fichier de package est semblable à un fichier de produit, mais il est utilisé pour installer les composants dépendants de la culture d’une dépendance, tels que les assemblys localisés, les contrats de licence et la documentation.
@@ -41,20 +41,20 @@ Un *fichier de produit* est un manifeste XML qui décrit toutes les dépendances
 
 |Élément|Description|Attributs|
 |-------------|-----------------|----------------|
-|[\<Product> Appartient](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de produit.|Aucun|
+|[\<Product> Appartient](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de produit.|None|
 |[\<Package> Appartient](../deployment/package-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de package.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts> Appartient](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers produits. Les autres produits que ce produit installe ou dont il dépend.|Aucun|
-|[\<InstallChecks> Appartient](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance à effectuer sur l’ordinateur local au cours de l’installation.|Aucun|
-|[\<Commands> Appartient](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute une ou plusieurs vérifications d’installation comme décrit par `InstallChecks` , et indique le package à installer en cas d’échec de la vérification.|Aucun|
-|[\<PackageFiles> Appartient](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun|
+|[\<RelatedProducts> Appartient](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers produits. Les autres produits que ce produit installe ou dont il dépend.|None|
+|[\<InstallChecks> Appartient](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance à effectuer sur l’ordinateur local au cours de l’installation.|None|
+|[\<Commands> Appartient](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute une ou plusieurs vérifications d’installation comme décrit par `InstallChecks` , et indique le package à installer en cas d’échec de la vérification.|None|
+|[\<PackageFiles> Appartient](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|None|
 |[\<Strings> Appartient](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes de nom de produit et d’erreur.|None|
 
-## <a name="remarks"></a>Notes
- Le schéma de package est consommé par *Setup.exe* , un programme stub généré par la tâche de démarrage MS Build qui contient peu de logique codée en dur. Le schéma pilote tous les aspects du processus d’installation.
+## <a name="remarks"></a>Remarques
+ Le schéma de package est consommé par *Setup.exe*, un programme stub généré par la tâche de démarrage MS Build qui contient peu de logique codée en dur. Le schéma pilote tous les aspects du processus d’installation.
 
  `InstallChecks` tests que setup.exe doit effectuer pour l’existence d’un package donné. `PackageFiles` répertorie tous les packages que le processus d’installation peut avoir à installer, en cas d’échec d’un test donné. Chaque entrée de commande sous Commands exécute l’un des tests décrits par `InstallChecks` et spécifie `PackageFile` l’exécution du test en cas d’échec du test. Vous pouvez utiliser l' `Strings` élément pour localiser les noms de produits et les messages d’erreur, afin de pouvoir utiliser un seul fichier binaire d’installation pour installer votre application dans un nombre quelconque de langues.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple de code suivant illustre un fichier produit complet pour l’installation de l' .NET Framework.
 
 ```xml

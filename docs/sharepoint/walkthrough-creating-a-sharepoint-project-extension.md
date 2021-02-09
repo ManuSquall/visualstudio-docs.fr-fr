@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918760"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procédure pas à pas : créer une extension de projet SharePoint
   Cette procédure pas à pas illustre la création d’une extension pour les projets SharePoint. Vous pouvez utiliser une extension de projet pour répondre aux événements au niveau du projet, par exemple lors de l’ajout, de la suppression ou du changement de nom d’un projet. Vous pouvez également ajouter des propriétés personnalisées ou répondre en cas de modification d’une valeur de propriété. Contrairement aux extensions d’élément de projet, les extensions de projet ne peuvent pas être associées à un type de projet SharePoint particulier. Lorsque vous créez une extension de projet, l’extension est chargée lorsque l’un des types de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .

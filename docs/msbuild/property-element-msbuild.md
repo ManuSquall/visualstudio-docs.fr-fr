@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 617a6d3712b137d76334d4063f36a1b8dde1d101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918844"
 ---
 # <a name="property-element-msbuild"></a>Élément Property (MSBuild)
 
@@ -31,7 +31,7 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
  \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <Property Condition="'String A' == 'String B'">
@@ -65,9 +65,9 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
  Ce texte spécifie la valeur de propriété et peut contenir du code XML.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
- Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` est résolu en *build\classes* , si la `builddir` propriété avait la valeur `build` . Pour plus d’informations sur les propriétés, consultez [propriétés MSBuild](../msbuild/msbuild-properties.md).
+ Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` est résolu en *build\classes*, si la `builddir` propriété avait la valeur `build` . Pour plus d’informations sur les propriétés, consultez [propriétés MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Exemple
 
