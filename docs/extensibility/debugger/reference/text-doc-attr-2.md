@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7113cfead52348a1d1a85973b90014ca53226ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850724"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 Décrit les attributs d’un document.
@@ -40,14 +40,14 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
  `TEXT_DOC_ATTR_READONLY_2`\
  Indique que le document est en lecture seule.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 > [!NOTE]
 > Cette valeur n’est pas réellement définie dans l’assembly pour C#. Au lieu de cela, vous devez copier la définition dans votre fichier source.
 
  Passé comme argument à la méthode [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

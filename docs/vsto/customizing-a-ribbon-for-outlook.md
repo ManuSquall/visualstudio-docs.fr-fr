@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], Outlook
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25b4faa994a99bccdc2122ad6b9d124f7391e9f8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c12e92ef77130ca2d9b55ccec737f37c73396c2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849877"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personnaliser un ruban pour Outlook
   Quand vous personnalisez le ruban dans Microsoft Office Outlook, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application. Outlook affiche le ruban dans l'interface utilisateur principale de l'application et dans les fenêtres qui s'ouvrent lorsque les utilisateurs effectuent certaines tâches, telles que la création de messages électroniques. Ces fenêtres d'application sont appelées inspecteurs.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850672"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procédure : ouvrir les éditeurs pour les documents ouverts
 Avant qu’un projet n’ouvre une fenêtre de document, le projet doit d’abord déterminer si le fichier est déjà ouvert dans la fenêtre de document pour un autre éditeur. Le fichier peut être ouvert dans un éditeur spécifique au projet ou dans l’un des éditeurs standard inscrits auprès de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

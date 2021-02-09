@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e63b93728f41dcff360da8ee9d14e2830d216be5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849942"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;élément de personnalisation (développement Office dans Visual Studio)
   L’élément `customization` de l’espace de noms `vstov4` décrit une solution Office spécifique. Les éléments enfants sont différents pour les personnalisations au niveau du document et les compléments VSTO.

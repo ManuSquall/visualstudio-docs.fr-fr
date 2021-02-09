@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2eb7abf897cf4891f08228dd5f0c918f580a1ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850659"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Décrit les propriétés d’un thread.
@@ -28,7 +28,7 @@ Décrit les propriétés d’un thread.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-typedef struct _tagTHREADPROPERTIES { 
+typedef struct _tagTHREADPROPERTIES { 
    THREADPROPERTY_FIELDS dwFields;
    DWORD                 dwThreadId;
    DWORD                 dwSuspendCount;
@@ -40,7 +40,7 @@ typedef struct _tagTHREADPROPERTIES { 
 ```
 
 ```csharp
-public struct THREADPROPERTIES { 
+public struct THREADPROPERTIES { 
    public uint   dwFields;
    public uint   dwThreadId;
    public uint   dwSuspendCount;
@@ -73,10 +73,10 @@ public struct THREADPROPERTIES { 
  `bstrLocation`\
  L’emplacement du thread (généralement le frame de pile le plus haut), généralement exprimé sous la forme du nom de la méthode dans laquelle l’exécution est actuellement interrompue.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette structure est remplie par un appel à la méthode [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) . Les informations retournées sont généralement utilisées dans le remplissage de la fenêtre **Threads** .
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

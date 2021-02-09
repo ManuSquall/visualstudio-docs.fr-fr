@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848095"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Spécification des gestionnaires de fichiers pour les extensions de nom de fichier
 Il existe plusieurs façons de déterminer l’application qui gère un fichier qui a une extension de fichier particulière. Les verbes OpenWithList et OpenWithProgids sont deux façons de spécifier des gestionnaires de fichiers sous l’entrée de Registre pour l’extension de fichier.
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- Le ProgID spécifié comme valeur par défaut pour l’extension de fichier est le gestionnaire de fichiers par défaut. Si vous modifiez le ProgID pour une extension de fichier fournie avec une version précédente de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou qui peut être prise en charge par d’autres applications, vous devez inscrire la `OpenWithProgids` clé pour votre extension de fichier et spécifier le nouveau ProgID dans la liste avec les anciens ProgID pris en charge. Exemple :
+ Le ProgID spécifié comme valeur par défaut pour l’extension de fichier est le gestionnaire de fichiers par défaut. Si vous modifiez le ProgID pour une extension de fichier fournie avec une version précédente de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou qui peut être prise en charge par d’autres applications, vous devez inscrire la `OpenWithProgids` clé pour votre extension de fichier et spécifier le nouveau ProgID dans la liste avec les anciens ProgID pris en charge. Par exemple :
 
 ```
 HKEY_CLASSES_ROOT\

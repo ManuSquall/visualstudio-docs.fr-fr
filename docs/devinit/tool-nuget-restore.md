@@ -5,24 +5,24 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8e525451ffcd691b0dab1260584946ad3d0a561c
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f805b5c1c7b3b994c984dfdb6ce937f8cd51edf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848231"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
 Les `nuget-restore` dépendances de restauration de l’outil et les outils spécifiques au projet qui sont spécifiés dans le fichier projet. En savoir plus sur la restauration NuGet [ici](/nuget/reference/cli-reference/cli-ref-restore).
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 

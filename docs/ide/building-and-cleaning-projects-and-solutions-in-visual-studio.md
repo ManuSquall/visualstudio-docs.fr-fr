@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ab8a723b69f4c5930c91a10719a2107ad83003
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850384"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Générer et nettoyer des projets et des solutions dans Visual Studio
 
@@ -73,7 +73,7 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 
 2. Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.
 
-     La boîte de dialogue **générer et exécuter**des  >  **projets et des solutions**  >  **Options** s’ouvre.
+     La boîte de dialogue **générer et exécuter** des  >  **projets et des solutions**  >   s’ouvre.
 
 3. Cochez la case **Générer des projets de démarrage et des dépendances à l’exécution**.
 
@@ -87,7 +87,7 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Pour générer uniquement le projet Visual C++ sélectionné
 
-Choisissez un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projet, puis, dans la barre de menus, choisissez **générer**le  >  **projet uniquement**et l’une des commandes suivantes :
+Choisissez un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projet, puis, dans la barre de menus, choisissez **générer** le  >  **projet uniquement** et l’une des commandes suivantes :
 
 - **Générer uniquement** *nom_projet*
 

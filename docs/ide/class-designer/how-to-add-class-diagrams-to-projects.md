@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fbde07ec9825f094777f7e9b962e8394595e180
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a27f5ae8320e942d5167fcc8260179f8cec96e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850280"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Guide pratique pour ajouter des diagrammes de classes aux projets
 
@@ -61,7 +61,7 @@ Pour ajouter plusieurs diagrammes de classes, répétez les étapes de la procé
 
 Dans **l’Explorateur de solutions**, ouvrez le menu contextuel d’un fichier de classe (clic droit), puis choisissez **Afficher le diagramme de classes**.
 
-- ou -
+-ou-
 
 Dans **Affichage de classes**, ouvrez le menu contextuel de l’espace de noms ou du type, puis choisissez **Afficher le diagramme de classes**.
 

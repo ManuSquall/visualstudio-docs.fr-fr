@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 719460b36f926df19e76db1aab4e90b4d959fdc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850492"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Comment : ouvrir des éditeurs spécifiques à un projet
 Si un fichier d’élément qui est ouvert par un projet est lié intrinsèquement à l’éditeur spécifique de ce projet, le projet doit ouvrir le fichier à l’aide d’un éditeur spécifique au projet. Le fichier ne peut pas être délégué au mécanisme de l’IDE pour sélectionner un éditeur. Par exemple, au lieu d’utiliser un éditeur de bitmaps standard, vous pouvez utiliser cette option de l’éditeur spécifique au projet pour spécifier un éditeur de bitmaps spécifique qui reconnaît les informations du fichier qui sont uniques à votre projet.

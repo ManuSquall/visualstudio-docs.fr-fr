@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebb3b16504a76c516408f997486279f52256294f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850711"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 Décrit l’emplacement de la ligne et de la colonne dans le texte donné.
@@ -28,14 +28,14 @@ Décrit l’emplacement de la ligne et de la colonne dans le texte donné.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-typedef struct _tagTEXT_POSITION { 
+typedef struct _tagTEXT_POSITION { 
    DWORD dwLine;
    DWORD dwColumn;
 } TEXT_POSITION;
 ```
 
 ```csharp
-public struct TEXT_POSITION { 
+public struct TEXT_POSITION { 
    public uint dwLine;
    public uint dwColumn;
 };
@@ -49,7 +49,7 @@ Index de la ligne dans le fichier source.
 `dwColumn`\
 Offset de caractère dans la ligne.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Cette structure est utilisée dans les structures [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) et [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
@@ -61,7 +61,7 @@ Cette structure est remplie par un appel aux méthodes suivantes :
 
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)
 
-- [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
+- [GetOffset,](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
 Cette structure est passée en tant que paramètre aux méthodes suivantes :
 
@@ -75,7 +75,7 @@ Cette structure est passée en tant que paramètre aux méthodes suivantes :
 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
  En-tête : msdbg. h
 
@@ -89,7 +89,7 @@ Cette structure est passée en tant que paramètre aux méthodes suivantes :
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)
-- [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
+- [GetOffset,](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

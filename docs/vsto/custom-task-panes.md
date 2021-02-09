@@ -24,15 +24,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850033"
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d'interface utilisateur généralement ancrés à l'un des côtés d'une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.

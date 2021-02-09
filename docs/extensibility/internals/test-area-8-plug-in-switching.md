@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c3a25aa9312073d3ce4a60752d41585fcee7b3
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848206"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Zone de test 8 : Commutation de plug-in
 L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) dispose de l’interface utilisateur pour modifier le plug-in de contrôle de code source actuel. Cette zone de test fournit des cas de test pour le processus de sélection du plug-in à utiliser pour le contrôle de code source de la solution.

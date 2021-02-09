@@ -12,13 +12,13 @@ dev_langs:
 - CPP
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: c74a39c81de2612bca5c3fc39286a4432916eb11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850072"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -34,7 +34,7 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 ::: moniker-end
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
