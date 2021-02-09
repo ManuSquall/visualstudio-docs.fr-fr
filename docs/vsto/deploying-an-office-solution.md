@@ -22,15 +22,15 @@ helpviewer_keywords:
 - solutions [Office development in Visual Studio], deploying Office solutions (2007 system)
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e10e922e346dc2ff1d289de94b398b7afd8f3f18
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 07e4734916f312f40def034a78dd007310e96d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888899"
 ---
 # <a name="deploy-an-office-solution"></a>Déployer une solution Office
   Vous pouvez déployer des solutions Office à l'aide des technologies de déploiement ClickOnce ou Windows Installer. En utilisant ClickOnce, vous réduisez le nombre d'étapes que nécessitent le déploiement et la mise à jour de votre solution. Si vous utilisez Windows Installer, vous pouvez contrôler la manière dont une solution est installée et les pages du programme d'installation qui s'affichent lorsque les utilisateurs installent votre solution.

@@ -7,27 +7,27 @@ ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b801713e6fdccf65bb580b017f011e65e0b84e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 655a291cec967663422011ca620a15d7cb080ce2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889224"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] pour les découvrir. Le tableau suivant répertorie les raccourcis qui modifient une action, par exemple le redimensionnement d’un objet.
 
 |Pour effectuer cette action|Action|
 | - |-------------|
-|Sélectionner temporairement l’outil **Sélection** tandis qu’un autre outil reste sélectionné (cela réduit le nombre de clics à effectuer sur un élément du panneau **Outils** , en faisant des allées et venues entre les outils **Sélection** et les autres)|Maintenez la **touche Ctrl** enfoncée|
+|Sélectionner temporairement l’outil **Sélection** tandis qu’un autre outil reste sélectionné (cela réduit le nombre de clics à effectuer sur un élément du panneau **Outils**, en faisant des allées et venues entre les outils **Sélection** et les autres)|Maintenez la **touche Ctrl** enfoncée|
 |Déplacer les objets sélectionnés alors que l’outil **Sélection** est sélectionné|Appuyez sur les touches de direction.|
 |Effectuer un panoramique de la planche graphique|Maintenez la **touche espace** enfoncée et faites glisser la planche graphique|
 |Effectuer un zoom avant ou arrière sur la planche graphique|Faire tourner la roulette de la souris|
-|Effectuer un zoom avant sur la planche graphique|Maintenez la **touche Ctrl** enfoncée + **Spacebar** tout en cliquant n’importe où sur la planche graphique|
-|Effectuer un zoom arrière sur la planche graphique|Maintenez la touche **CTRL** enfoncée + **Alt** + **Spacebar** tout en cliquant n’importe où sur la planche graphique|
+|Effectuer un zoom avant sur la planche graphique|Maintenez la **touche Ctrl** enfoncée +  tout en cliquant n’importe où sur la planche graphique|
+|Effectuer un zoom arrière sur la planche graphique|Maintenez la touche **CTRL** enfoncée +  +  tout en cliquant n’importe où sur la planche graphique|
 |Déplacer la planche graphique vers la gauche et la droite|Maintenez la **touche Maj** enfoncée et faites tourner la roulette de la souris|
 |Déplacer la planche graphique vers le haut et le bas|Maintenez la **touche Ctrl** enfoncée et faites tourner la roulette de la souris|
 |Limiter les proportions des objets dessinés ou transformés|Maintenez la **touche Maj** enfoncée|

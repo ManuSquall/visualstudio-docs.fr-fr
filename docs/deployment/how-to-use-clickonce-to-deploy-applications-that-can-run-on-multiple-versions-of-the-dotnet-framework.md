@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c87ed73d2c3a26ecc4522c6497ac71e33e46a6c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889120"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Guide pratique pour utiliser ClickOnce pour déployer des applications pouvant s’exécuter sur plusieurs versions du .NET Framework
 Vous pouvez déployer une application qui cible plusieurs versions du .NET Framework à l’aide de la technologie de déploiement ClickOnce. Pour cela, vous devez générer et mettre à jour les manifestes d’application et de déploiement.

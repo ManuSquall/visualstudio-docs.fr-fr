@@ -9,21 +9,21 @@ f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889263"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Vue d’ensemble de Blend for Visual Studio
 
 Blend pour Visual Studio vous aide à concevoir des applications web et Windows basées sur XAML. Il fournit la même expérience de conception XAML de base que Visual Studio et ajoute des concepteurs visuels pour des tâches avancées telles que les animations et les comportements. Pour obtenir une comparaison entre Blend et Visual Studio, consultez [Conception XAML dans Visual Studio et Blend pour Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md).
 
-Blend pour Visual Studio est un composant de Visual Studio. Pour installer Blend, dans le **programme d’installation de Visual Studio** , choisissez la charge de travail **Développement de la plateforme universelle Windows** ou **Développement .NET Desktop** . Ces deux charges de travail incluent le composant Blend pour Visual Studio.
+Blend pour Visual Studio est un composant de Visual Studio. Pour installer Blend, dans le **programme d’installation de Visual Studio**, choisissez la charge de travail **Développement de la plateforme universelle Windows** ou **Développement .NET Desktop**. Ces deux charges de travail incluent le composant Blend pour Visual Studio.
 
 ![Composants de la charge de travail UWP](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Composants de la charge de travail Développement .NET Desktop](media/installer-dotnet-desktop.png)
 
@@ -64,7 +64,7 @@ Accédez au panneau Composants pour voir le dernier composant utilisé de la bib
 
 ## <a name="assets-window"></a>Fenêtre Composants
 
-La fenêtre **Composants** contient tous les contrôles disponibles. Elle est similaire à la **boîte à outils** dans Visual Studio. En plus des contrôles, vous trouverez tout ce que vous pouvez ajouter à la planche graphique dans la fenêtre **Composants** , notamment des styles, des médias, des comportements et des effets. Pour ouvrir la fenêtre **Composants** , choisissez **Affichage** > **Fenêtre Composants** ou appuyez sur **Ctrl**+**Alt**+**X** .
+La fenêtre **Composants** contient tous les contrôles disponibles. Elle est similaire à la **boîte à outils** dans Visual Studio. En plus des contrôles, vous trouverez tout ce que vous pouvez ajouter à la planche graphique dans la fenêtre **Composants**, notamment des styles, des médias, des comportements et des effets. Pour ouvrir la fenêtre **Composants**, choisissez **Affichage** > **Fenêtre Composants** ou appuyez sur **Ctrl**+**Alt**+**X**.
 
 ![Fenêtre Composants dans Blend pour Visual Studio](media/blend-assets-window.png)
 
@@ -73,7 +73,7 @@ La fenêtre **Composants** contient tous les contrôles disponibles. Elle est si
 
 ## <a name="objects-and-timeline-window"></a>Fenêtre Objets et chronologie
 
-Utilisez cette fenêtre pour organiser les objets sur la planche graphique et éventuellement les animer. Pour ouvrir la fenêtre **Objets et chronologie** , choisissez **Afficher** > **Structure du document** . En plus des fonctionnalités fournies dans la [fenêtre Structure du document](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) de Visual Studio, la fenêtre Objets et chronologie de Blend pour Visual Studio comprend une zone de création de la chronologie sur la droite. Utilisez la chronologie lorsque vous créez et modifiez des animations.
+Utilisez cette fenêtre pour organiser les objets sur la planche graphique et éventuellement les animer. Pour ouvrir la fenêtre **Objets et chronologie**, choisissez **Afficher** > **Structure du document**. En plus des fonctionnalités fournies dans la [fenêtre Structure du document](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) de Visual Studio, la fenêtre Objets et chronologie de Blend pour Visual Studio comprend une zone de création de la chronologie sur la droite. Utilisez la chronologie lorsque vous créez et modifiez des animations.
 
 ![Fenêtre Objets et chronologie en mode animation](media/storyboard-timeline.png)
 
