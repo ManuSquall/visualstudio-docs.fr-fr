@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a58af8098a49992e81380c6567755c31709d1dc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88246482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916600"
 ---
 Visual Studio peut lancer et déboguer des applications python localement et à distance sur un ordinateur Windows (consultez [débogage distant](../../../debugger/remote-debugging.md)). Il peut également effectuer un débogage à distance sur un autre système d’exploitation, un appareil différent ou une implémentation Python autre que CPython à l’aide de la [bibliothèque ptvsd](https://pypi.python.org/pypi/ptvsd).
 
@@ -114,7 +114,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
     - Si vous devez utiliser un port différent, vous pouvez le spécifier dans l’appel à `enable_attach` avec l’argument `address`, comme ceci : `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. Dans ce cas, ouvrez ce port spécifique dans le pare-feu.
 1. Vérifiez que la version du ptvsd installée sur l’ordinateur distant, et qui est retournée par `pip3 list`, correspond à celle utilisée par la version des outils Python utilisés dans Visual Studio, comme indiqué dans le tableau suivant. Si nécessaire, mettez à jour ptvsd sur l’ordinateur distant.
 
-    | Version Visual Studio | Version des outils Python/ptvsd |
+    | Version de Visual Studio | Version des outils Python/ptvsd |
     | --- | --- |
     | 2017 15.8 | 4.1.1a9 (débogueur hérité : 3.2.1.0) |
     | 2017 15.7 | 4.1.1a1 (débogueur hérité : 3.2.1.0) |

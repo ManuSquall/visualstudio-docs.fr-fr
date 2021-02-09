@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cd1eba56f8e3c5a1a779acc3330790e9ba2bc96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8af09c2db00b1f24631418c5332811cf4cb9202c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916265"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Cette méthode évalue l’expression de manière asynchrone.
@@ -48,10 +48,10 @@ dans Combinaison d’indicateurs de l’énumération [EVALFLAGS](../../../exten
 `pExprCallback`\
 dans Ce paramètre est toujours une valeur null.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Voici un exemple de code d’erreur :
 
-|Error|Description|
+|Erreur|Description|
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|Une autre expression est actuellement en cours d’évaluation, et l’évaluation d’expression simultanée n’est pas prise en charge.|
 

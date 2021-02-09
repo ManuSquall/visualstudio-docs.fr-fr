@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3408237de91e822e2ea3cbd95fad40c859267c1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916310"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Cette méthode récupère un objet de mémoire qui représente la mémoire à laquelle cet objet est lié.
@@ -28,18 +28,18 @@ Cette méthode récupère un objet de mémoire qui représente la mémoire à la
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetMemoryObject(
-   IDebugField*   pField,
-   UINT64         uConstant,
-   IDebugObject** ppObject
+HRESULT GetMemoryObject(
+   IDebugField*   pField,
+   UINT64         uConstant,
+   IDebugObject** ppObject
 );
 ```
 
 ```csharp
-int GetMemoryObject(
-   IDebugField      pField,
-   long             uConstant,
-   out IDebugObject ppObject
+int GetMemoryObject(
+   IDebugField      pField,
+   long             uConstant,
+   out IDebugObject ppObject
 );
 ```
 
@@ -53,7 +53,7 @@ dans Représente une adresse mémoire ou une valeur pour une valeur constante.
 `ppObject`\
 à [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant la mémoire à laquelle cet objet est lié.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

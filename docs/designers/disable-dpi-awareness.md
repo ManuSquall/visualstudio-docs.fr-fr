@@ -4,14 +4,14 @@ description: Décrit les limitations du Concepteur Windows Forms sur des moniteu
 ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
-ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
-ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
+ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91493307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917099"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Désactiver la prise en charge DPI dans Visual Studio
 
@@ -88,7 +88,7 @@ Le fait de définir la mise à l’échelle de l’affichage avec la valeur 100�
 
 Vous pouvez choisir de ne pas être informé des problèmes de mise à l’échelle DPI dans Visual Studio. Vous pouvez par exemple désactiver les notifications si vous ne travaillez pas dans le concepteur.
 
-Pour désactiver les notifications, choisissez **Outils**  >  **options** pour ouvrir la boîte de dialogue **options** . Ensuite, choisissez **Concepteur Windows Forms**  >  **général**et définissez les **notifications de mise à l’échelle dpi** sur **false**.
+Pour désactiver les notifications, choisissez **Outils**  >  **options** pour ouvrir la boîte de dialogue **options** . Ensuite, choisissez **Concepteur Windows Forms**  >  **général** et définissez les **notifications de mise à l’échelle dpi** sur **false**.
 
 ![Option Notifications de mise à l’échelle PPP dans Visual Studio](./media/notifications-option.png)
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ebeb885d427cf6a9a6ca80d4d0ad572b23d7f685
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917801"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
 Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.
@@ -31,7 +31,7 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
 |Heure de Début|Trie les threads sur leur heure de début. Il s’agit de l’ordre de tri par défaut.|
 |Heure de fin|Trie les threads sur leur heure de fin.|
 |Exécution|Trie les threads sur le pourcentage de temps consacré à l’exécution.|
-|Synchronization|Trie les threads sur le pourcentage de temps consacré à la synchronisation.|
+|Synchronisation|Trie les threads sur le pourcentage de temps consacré à la synchronisation.|
 |E/S|Trie les threads sur le pourcentage de temps consacré aux E/S (lecture et écriture de données).|
 |Veille|Trie les threads sur le pourcentage de temps passé en veille.|
 |Pagination|Trie les threads sur le pourcentage de temps consacré à la pagination.|

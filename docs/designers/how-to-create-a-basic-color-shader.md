@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d966a8fdc565eae5254d21dba4ab9dfaa440de94
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 0b3c90496050754cc79c8bd774c0faa246e21512
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917036"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Guide pratique pour créer un nuanceur de couleur de base
 
@@ -29,13 +29,13 @@ Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boît
 
 1. Créez un shader DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
-2. Supprimez le nœud **Couleur du point** . À l’aide de l’outil **Sélection** , sélectionnez le nœud **Couleur du point** puis, dans la barre de menus, choisissez **Modifier** > **Supprimer** .
+2. Supprimez le nœud **Couleur du point**. À l’aide de l’outil **Sélection**, sélectionnez le nœud **Couleur du point** puis, dans la barre de menus, choisissez **Modifier** > **Supprimer**.
 
-3. Ajoutez un nœud **Constante de couleur** au graphique. Dans la **Boîte à outils** , sous **Constantes** , sélectionnez **Constante de couleur** et déplacez-la vers l’aire de conception.
+3. Ajoutez un nœud **Constante de couleur** au graphique. Dans la **Boîte à outils**, sous **Constantes**, sélectionnez **Constante de couleur** et déplacez-la vers l’aire de conception.
 
-4. Spécifiez une valeur de couleur pour le nœud **Constante de couleur** . À l’aide de l’outil **Sélection** , sélectionnez le nœud **Constante de couleur** , puis, dans la fenêtre **Propriétés** , dans la propriété **Sortie** , spécifiez une valeur de couleur. Pour l’orange, spécifiez la valeur (1,0, 0,5, 0,2, 1,0).
+4. Spécifiez une valeur de couleur pour le nœud **Constante de couleur**. À l’aide de l’outil **Sélection**, sélectionnez le nœud **Constante de couleur**, puis, dans la fenêtre **Propriétés**, dans la propriété **Sortie**, spécifiez une valeur de couleur. Pour l’orange, spécifiez la valeur (1,0, 0,5, 0,2, 1,0).
 
-5. Connectez la constante de couleur à la couleur finale. Pour créer les connexions, déplacez le terminal **RVB** du nœud **Constante de couleur** vers le terminal **RVB** du nœud **Couleur finale** , puis le terminal **Alpha** du nœud **Constante de couleur** vers le terminal **Alpha** du nœud **Couleur finale** . Ces connexions définissent la couleur finale sur la constante de couleur définie à l’étape précédente.
+5. Connectez la constante de couleur à la couleur finale. Pour créer les connexions, déplacez le terminal **RVB** du nœud **Constante de couleur** vers le terminal **RVB** du nœud **Couleur finale**, puis le terminal **Alpha** du nœud **Constante de couleur** vers le terminal **Alpha** du nœud **Couleur finale**. Ces connexions définissent la couleur finale sur la constante de couleur définie à l’étape précédente.
 
 L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un cube.
 

@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdd080e87e8fad44c7b8943d0d017749b8c30b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0e8895f45524526fc8007ff909a9c541e9899b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917266"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procédure pas à pas : déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation
 Lorsque vous créez une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et que vous la transmettez à un client pour la publication et le déploiement, le client a traditionnellement dû mettre à jour le manifeste de déploiement et le signer à nouveau. Bien qu’il s’agit toujours de la méthode recommandée dans la plupart des cas, le .NET Framework 3,5 vous permet de créer des [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements qui peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [déployer des applications ClickOnce pour les serveurs de test et de production sans avoir à vous reconnecter](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -113,9 +113,9 @@ Lorsque vous créez une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
    MageUI.exe
    ```
 
-6. Créez un nouveau manifeste d’application en sélectionnant **fichier** , **nouveau** , **manifeste d’application** dans le menu.
+6. Créez un nouveau manifeste d’application en sélectionnant **fichier**, **nouveau**, **manifeste d’application** dans le menu.
 
-7. Sous l’onglet **nom** par défaut, entrez le nom et le numéro de version de ce déploiement. Fournissez également une valeur pour **éditeur** , qui sera utilisée comme nom de dossier pour le lien de raccourci de l’application dans le menu Démarrer lors de son déploiement.
+7. Sous l’onglet **nom** par défaut, entrez le nom et le numéro de version de ce déploiement. Fournissez également une valeur pour **éditeur**, qui sera utilisée comme nom de dossier pour le lien de raccourci de l’application dans le menu Démarrer lors de son déploiement.
 
 8. Sélectionnez l’onglet **options d’application** , puis cliquez sur utiliser le **manifeste d’application pour obtenir des informations d’approbation**. Cette opération active la personnalisation de tiers pour cette [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
@@ -125,17 +125,17 @@ Lorsque vous créez une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 
 11. Cliquez sur le bouton **Populate** pour ajouter tous les fichiers de votre application à la liste des fichiers. Si votre application contient plusieurs fichiers exécutables, marquez le fichier exécutable principal de ce déploiement en tant qu’application de démarrage en sélectionnant **point d’entrée** dans la liste déroulante **type de fichier** . (Si votre application ne contient qu’un seul fichier exécutable, *MageUI.exe* la marque pour vous.)
 
-12. Sélectionnez l’onglet **autorisations requises** et sélectionnez le niveau de confiance que votre application doit déclarer. La valeur par défaut est **confiance totale** , ce qui convient à la plupart des applications.
+12. Sélectionnez l’onglet **autorisations requises** et sélectionnez le niveau de confiance que votre application doit déclarer. La valeur par défaut est **confiance totale**, ce qui convient à la plupart des applications.
 
-13. Sélectionnez **fichier** , **Enregistrer** dans le menu, puis enregistrez le manifeste de l’application. Vous serez invité à signer le manifeste de l’application lors de son enregistrement.
+13. Sélectionnez **fichier**, **Enregistrer** dans le menu, puis enregistrez le manifeste de l’application. Vous serez invité à signer le manifeste de l’application lors de son enregistrement.
 
-14. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez l’option **signer le fichier de certificat** et sélectionnez le certificat dans le système de fichiers à l’aide du bouton de sélection ( **...** ).
+14. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez l’option **signer le fichier de certificat** et sélectionnez le certificat dans le système de fichiers à l’aide du bouton de sélection (**...**).
 
-     - ou -
+     -ou-
 
-     Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l' **option signer avec le certificat stocké** , puis sélectionnez le certificat dans la liste fournie.
+     Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l' **option signer avec le certificat stocké**, puis sélectionnez le certificat dans la liste fournie.
 
-15. Sélectionnez **fichier** , **nouveau** , **manifeste de déploiement** dans le menu pour créer votre manifeste de déploiement, puis sous l’onglet **nom** , fournissez un nom et un numéro de version ( **1.0.0.0** dans cet exemple).
+15. Sélectionnez **fichier**, **nouveau**, **manifeste de déploiement** dans le menu pour créer votre manifeste de déploiement, puis sous l’onglet **nom** , fournissez un nom et un numéro de version (**1.0.0.0** dans cet exemple).
 
 16. Basculez vers l’onglet **mettre à jour** et spécifiez la fréquence à laquelle vous souhaitez que cette application soit mise à jour. Si votre application utilise l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API de déploiement pour rechercher des mises à jour, désactivez la case à cocher intitulée **cette application doit rechercher les mises à jour**.
 
@@ -152,7 +152,7 @@ Lorsque vous créez une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-21. Une fois le certificat généré, le client signe maintenant le manifeste de déploiement en ouvrant le manifeste de déploiement dans *MageUI.exe* , puis en l’enregistrant. Quand la boîte de dialogue signature s’affiche, le client sélectionne l’option **signer le fichier de certificat** et choisit le fichier PFX qu’il a enregistré sur le disque.
+21. Une fois le certificat généré, le client signe maintenant le manifeste de déploiement en ouvrant le manifeste de déploiement dans *MageUI.exe*, puis en l’enregistrant. Quand la boîte de dialogue signature s’affiche, le client sélectionne l’option **signer le fichier de certificat** et choisit le fichier PFX qu’il a enregistré sur le disque.
 
 22. Le client déploie l’application auprès de ses utilisateurs.
 

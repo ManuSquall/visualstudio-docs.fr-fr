@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2086aded4361049d722ec36ba1d470ed8f7ac6e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f91b00d2f448aea2f187e37813782ce568ad859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916038"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Obtient la propriété la plus dérivée d’une propriété.
@@ -28,13 +28,13 @@ Obtient la propriété la plus dérivée d’une propriété.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDerivedMostProperty ( 
+HRESULT GetDerivedMostProperty ( 
    IDebugProperty2** ppDerivedMost
 );
 ```
 
 ```csharp
-int GetDerivedMostProperty ( 
+int GetDerivedMostProperty ( 
    out IDebugProperty2 ppDerivedMost
 );
 ```
@@ -43,7 +43,7 @@ int GetDerivedMostProperty ( 
 `ppDerivedMost`\
 à Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente la propriété la plus dérivée.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Retourne `S_GETDERIVEDMOST_NO_DERIVED_MOST` s’il n’existe aucune propriété la plus dérivée à récupérer.
 
 ## <a name="remarks"></a>Notes

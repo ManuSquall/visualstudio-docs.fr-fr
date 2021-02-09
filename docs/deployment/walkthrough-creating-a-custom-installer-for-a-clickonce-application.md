@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917289"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : créer un programme d’installation personnalisé pour une application ClickOnce
 Toutes les applications ClickOnce basées sur un fichier *. exe* peuvent être installées sans assistance et mises à jour par un programme d’installation personnalisé. Un programme d’installation personnalisé peut implémenter l’expérience utilisateur personnalisée au cours de l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de sécurité et de maintenance. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui installe silencieusement une application ClickOnce.
@@ -75,7 +75,7 @@ Toutes les applications ClickOnce basées sur un fichier *. exe* peuvent être i
     ```
 
 ## <a name="next-steps"></a>Étapes suivantes
- Une application ClickOnce peut également ajouter une logique de mise à jour personnalisée, y compris une interface utilisateur personnalisée à afficher pendant le processus de mise à jour. Pour plus d'informations, consultez <xref:System.Deployment.Application.UpdateCheckInfo>. Une application ClickOnce peut également supprimer l’entrée de menu Démarrer standard, le raccourci et l’entrée ajout/suppression de programmes à l’aide d’un `<customUX>` élément. Pour plus d’informations, consultez [ \<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) et <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .
+ Une application ClickOnce peut également ajouter une logique de mise à jour personnalisée, y compris une interface utilisateur personnalisée à afficher pendant le processus de mise à jour. Pour plus d’informations, consultez <xref:System.Deployment.Application.UpdateCheckInfo>. Une application ClickOnce peut également supprimer l’entrée de menu Démarrer standard, le raccourci et l’entrée ajout/suppression de programmes à l’aide d’un `<customUX>` élément. Pour plus d’informations, consultez [ \<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) et <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .
 
 ## <a name="see-also"></a>Voir aussi
 - [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

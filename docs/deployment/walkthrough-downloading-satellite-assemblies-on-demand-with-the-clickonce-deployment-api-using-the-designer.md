@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 74e6641eff7fcaecfab300afe4747bb2ab7b75b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350333"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917308"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.
@@ -45,11 +45,11 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 2. Cliquez avec le bouton droit sur le nom de votre projet dans l’Explorateur de solutions, puis cliquez sur **Propriétés**.
 
-3. Cliquez sur l’onglet **Publier** , puis sur **Fichiers d’application**.
+3. Cliquez sur l’onglet **Publier**, puis sur **Fichiers d’application**.
 
 4. Cochez la case **Afficher tous les fichiers** pour afficher les assemblys satellites. Par défaut, tous les assemblys satellites sont inclus dans votre déploiement et sont visibles dans cette boîte de dialogue.
 
-     Un assembly satellite aura un nom sous la forme *\<isoCode>\ApplicationName.resources.dll* , où \<isoCode> est un identificateur de langue au format RFC 1766.
+     Un assembly satellite aura un nom sous la forme *\<isoCode>\ApplicationName.resources.dll*, où \<isoCode> est un identificateur de langue au format RFC 1766.
 
 5. Cliquez sur **Nouveau** dans la liste **Groupe de téléchargement** pour chaque identificateur de langue. Quand vous êtes invité à entrer un nom de groupe de téléchargement, indiquez l'identificateur de langue. Par exemple, pour un assembly satellite japonais, vous devez spécifier le nom du groupe de téléchargement `ja-JP` .
 
@@ -57,7 +57,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pour télécharger des assemblys satellites à la demande en C\#
 
-1. Ouvrez le fichier *Program.cs* . Si ce fichier ne s’affiche pas dans l’Explorateur de solutions, sélectionnez votre projet et, dans le menu **Projet** , cliquez sur **Afficher tous les fichiers**.
+1. Ouvrez le fichier *Program.cs* . Si ce fichier ne s’affiche pas dans l’Explorateur de solutions, sélectionnez votre projet et, dans le menu **Projet**, cliquez sur **Afficher tous les fichiers**.
 
 2. Utilisez le code suivant pour télécharger l'assembly satellite approprié et démarrer votre application.
 

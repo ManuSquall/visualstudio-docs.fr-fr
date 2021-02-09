@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916058"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtient des informations étendues pour la propriété.
@@ -28,14 +28,14 @@ Obtient des informations étendues pour la propriété.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetExtendedInfo ( 
+HRESULT GetExtendedInfo ( 
    REFGUID* guidExtendedInfo,
    VARIANT* pExtendedInfo
 );
 ```
 
 ```csharp
-int GetExtendedInfo ( 
+int GetExtendedInfo ( 
    ref Guid guidExtendedInfo,
    out object pExtendedInfo
 );
@@ -48,7 +48,7 @@ dans GUID qui détermine le type d’informations étendues à récupérer. Pour
 `pExtendedInfo`\
 à Retourne un `VARIANT` (C++) ou un objet (C#) qui peut être utilisé pour récupérer les informations sur les propriétés étendues. Par exemple, ce paramètre peut retourner une `IUnknown` interface qui peut être interrogée pour une interface [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) . Pour plus de détails, consultez la section Notes.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Retourne `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` s’il n’y a pas d’informations étendues à récupérer.
 
 ## <a name="remarks"></a>Notes

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917316"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API de déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.
@@ -56,7 +56,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 4. Cliquez sur l’onglet **Files** .
 
-5. Cliquez sur le bouton d’ **ellipse** ( **...** ) et sélectionnez le répertoire contenant tous les assemblys et fichiers de votre application, y compris les assemblys satellites que vous avez générés à l’aide de *Resgen.exe*. (Un assembly satellite aura un nom sous la forme *\<isoCode>\ApplicationName.resources.dll* , où \<isoCode> est un identificateur de langue au format RFC 1766.)
+5. Cliquez sur le bouton d’**ellipse** (**...**) et sélectionnez le répertoire contenant tous les assemblys et fichiers de votre application, y compris les assemblys satellites que vous avez générés à l’aide de *Resgen.exe*. (Un assembly satellite aura un nom sous la forme *\<isoCode>\ApplicationName.resources.dll*, où \<isoCode> est un identificateur de langue au format RFC 1766.)
 
 6. Cliquez sur **Populate** pour ajouter les fichiers à votre déploiement.
 

@@ -6,16 +6,16 @@ ms.topic: reference
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 595a8003992c92871a8476743288d3072aff63c8
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: eaa5482ba1bad297fd1cfdf20810ad985b050c25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915931"
 ---
 # <a name="wincounter"></a>WinCounter
 L’option **WinCounter** spécifie un compteur de performances Windows ou d’application à collecter à des intervalles définis pendant l’exécution du profil. Les compteurs de performances Windows et d’application sont répertoriés en tant que marques dans le fichier de données de profilage. Vous pouvez spécifier plusieurs compteurs de performances à collecter dans des options distinctes.
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 
  **Marque AutoMark :** `Milliseconds` Spécifie le nombre de millisecondes entre la collecte des données du compteur de performance Windows.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Dans l’exemple suivant, deux compteurs de performance Windows sont configurés être collectés à un intervalle de 1 000 millisecondes.
 
 ```cmd

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917335"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API de déploiement ClickOnce
 Par défaut, tous les assemblys inclus dans une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application sont téléchargés lors de la première exécution de l’application. Toutefois, vous pouvez avoir des parties de votre application qui sont utilisées par un petit ensemble d’utilisateurs. Dans ce cas, vous souhaiterez sans doute télécharger un assembly uniquement quand vous créez l’un de ses types. La procédure suivante montre comment marquer certains assemblys de votre application comme « facultatifs » et comment les télécharger à l’aide de classes dans l’espace de noms <xref:System.Deployment.Application> quand le Common Language Runtime en a besoin.
@@ -59,7 +59,7 @@ Par défaut, tous les assemblys inclus dans une [!INCLUDE[ndptecclick](../deploy
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. Enregistrez le texte sous la forme d’un fichier nommé *ClickOnceLibrary.cs* ou *ClickOnceLibrary. vb* , selon le langage que vous utilisez, dans le répertoire *ClickOnceOnDemand* .
+6. Enregistrez le texte sous la forme d’un fichier nommé *ClickOnceLibrary.cs* ou *ClickOnceLibrary. vb*, selon le langage que vous utilisez, dans le répertoire *ClickOnceOnDemand* .
 
 7. Compilez le fichier dans un assembly.
 
@@ -102,7 +102,7 @@ Par défaut, tous les assemblys inclus dans une [!INCLUDE[ndptecclick](../deploy
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Pour marquer des assemblys comme facultatifs dans votre application ClickOnce à l’aide de MageUI.exe
 
-1. À l’aide de *MageUI.exe* , créez un manifeste d’application comme décrit dans [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilisez les paramètres suivants pour le manifeste d’application :
+1. À l’aide de *MageUI.exe*, créez un manifeste d’application comme décrit dans [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilisez les paramètres suivants pour le manifeste d’application :
 
     - Nommez le manifeste de l’application `ClickOnceOnDemand` .
 
@@ -110,7 +110,7 @@ Par défaut, tous les assemblys inclus dans une [!INCLUDE[ndptecclick](../deploy
 
     - Dans la page **fichiers** , dans la ligne *ClickOnceLibrary.dll* , tapez `ClickOnceLibrary.dll` dans la colonne **groupe** .
 
-2. À l’aide de *MageUI.exe* , créez un manifeste de déploiement comme décrit dans [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilisez les paramètres suivants pour le manifeste de déploiement :
+2. À l’aide de *MageUI.exe*, créez un manifeste de déploiement comme décrit dans [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Utilisez les paramètres suivants pour le manifeste de déploiement :
 
     - Nommez le manifeste de déploiement `ClickOnceOnDemand` .
 

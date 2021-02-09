@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ec3592049e00d6a492c489e8fb60254003ac6d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a141e713dd03f99db6ce47224c64236a0219cdd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917901"
 ---
 # <a name="lineoff"></a>LineOff
 Par défaut, le profileur collecte le numéro de ligne du code source et le décalage de numéro de ligne quand vous utilisez la méthode de profilage par échantillonnage. L’option **LineOff** de VSPerfCmd désactive la collecte des numéros de ligne quand VSPerfCmd est utilisé pour démarrer l’application. Les données de profilage sont collectées au niveau de la fonction quand **LineOff** est spécifié.
@@ -36,7 +36,7 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 
  **Lancer :** `AppName` Démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple démarre l’application et le profileur, et désactive l’échantillonnage au niveau des lignes.
 
 ```cmd

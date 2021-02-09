@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 924b990e1626842778c0b3577ddb25a53a4eb910
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 5c60c30c593e67f47a620062e2b2f4958120a1a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917102"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Guide pratique pour créer un modèle 3D de base
 
@@ -44,15 +44,15 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
 1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur l’ajout d’un modèle à votre projet, consultez la section Getting Started (Prise en main) de l’article [Model Editor (Éditeur de modèle)](../designers/model-editor.md).
 
-2. Ajoutez un cube à la scène. Dans la fenêtre **Boîte à outils** , sous **Formes** , sélectionnez **Cube** , puis faites glisser cette option vers l’aire de conception.
+2. Ajoutez un cube à la scène. Dans la fenêtre **Boîte à outils**, sous **Formes**, sélectionnez **Cube**, puis faites glisser cette option vers l’aire de conception.
 
-3. Passez à la sélection des faces. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner la face** .
+3. Passez à la sélection des faces. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner la face**.
 
-4. Subdivisez le haut du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez le haut du cube pour sélectionner la face supérieure. Dans la barre d’outils de l’éditeur de modèle, choisissez **Subdiviser la face** . De nouveaux sommets sont ajoutés en haut du cube qui le fractionnent en quatre partitions de même taille.
+4. Subdivisez le haut du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez le haut du cube pour sélectionner la face supérieure. Dans la barre d’outils de l’éditeur de modèle, choisissez **Subdiviser la face**. De nouveaux sommets sont ajoutés en haut du cube qui le fractionnent en quatre partitions de même taille.
 
     ![Le haut du cube a été subdivisé](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5. Extrudez deux côtés adjacents du cube, par exemple, les côtés avant et droit du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez un côté du cube. Maintenez enfoncée la touche **Ctrl** , choisissez un autre côté du cube adjacent au côté que vous avez sélectionné en premier, puis choisissez **Extruder la face** dans la barre d’outils de l’éditeur de modèle.
+5. Extrudez deux côtés adjacents du cube, par exemple, les côtés avant et droit du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez un côté du cube. Maintenez enfoncée la touche **Ctrl**, choisissez un autre côté du cube adjacent au côté que vous avez sélectionné en premier, puis choisissez **Extruder la face** dans la barre d’outils de l’éditeur de modèle.
 
     ![Les côtés du cube ont été extrudés](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,13 +60,13 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
     ![Un côté du cube a été plus extrudé.](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Effectuez une triangulation du modèle. Dans la barre d’outils de l' **Advanced** éditeur de modèle, choisissez  >  **Outils** de  >  **triangulation** avancés.
+7. Effectuez une triangulation du modèle. Dans la barre d’outils de l' éditeur de modèle, choisissez  >  **Outils** de  >  **triangulation** avancés.
 
 8. Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Maintenez enfoncée la touche **Ctrl** tout en sélectionnant les arêtes illustrées ici :
 
     ![Bords qui forment la pointe du toit](../designers/media/gfx_model_demo_house_edges.png)
 
-    Lorsque les bords sont sélectionnés, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater** , puis déplacez le manipulateur de translation au-dessus pour créer le toit de la maison.
+    Lorsque les bords sont sélectionnés, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater**, puis déplacez le manipulateur de translation au-dessus pour créer le toit de la maison.
 
    Le modèle de maison simplifié est terminé. Voici à nouveau le modèle final, avec l'ombrage constant appliqué :
 
