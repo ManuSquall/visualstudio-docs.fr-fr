@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7379038d1c2bf203f7787e69408ddd9b2e30f372
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 9554cad786669ae4aa3b9aa84ecd6b996ee196f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888470"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Créer des applications ClickOnce destinées à être déployées par des tiers
 Tous les développeurs qui créent des déploiements ClickOnce ne planifient pas le déploiement des applications elles-mêmes. Un grand nombre d’entre elles empaquetent simplement leur application à l’aide de ClickOnce, puis remet les fichiers à un client, par exemple une grande entreprise. Le client devient celui qui est responsable de l’hébergement de l’application sur son réseau. Cette rubrique décrit certains des problèmes inhérents à ces déploiements dans les versions de .NET Framework antérieures à la version 3,5. Il décrit ensuite une nouvelle solution fournie à l’aide de la nouvelle fonctionnalité « utiliser le manifeste pour l’approbation » dans le .NET Framework 3,5. Enfin, il conclut par des stratégies recommandées pour la création de déploiements ClickOnce pour les clients qui utilisent encore des versions antérieures du .NET Framework.
@@ -52,7 +52,7 @@ Tous les développeurs qui créent des déploiements ClickOnce ne planifient pas
  Même si le développeur et le client conviennent que le client doit signer le manifeste de l’application, cela soulève d’autres problèmes qui entourent l’identité de l’application, en particulier s’il s’applique au déploiement d’applications approuvées. (Pour plus d’informations sur cette fonctionnalité, consultez [vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md).) Disons qu’Adventure Works souhaite configurer ses ordinateurs clients de sorte que toute application qui leur est fournie par Microsoft Corporation s’exécute avec une confiance totale. Si Adventure Works signe le manifeste de déploiement, ClickOnce utilise la signature de sécurité de Adventure Work pour déterminer le niveau de confiance de l’application.
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Créer des déploiements clients à l’aide du manifeste d’application pour l’approbation
- ClickOnce dans le .NET Framework 3,5 contient une nouvelle fonctionnalité qui offre aux développeurs et aux clients une nouvelle solution dans le scénario de signature des manifestes. Le manifeste d’application ClickOnce prend en charge un nouvel élément nommé `<useManifestForTrust>` qui permet à un développeur de signifier que la signature numérique du manifeste d’application est ce qui doit être utilisé pour prendre des décisions d’approbation. Le développeur utilise les outils d’empaquetage ClickOnce, tels que *Mage.exe* , *MageUI.exe* et Visual Studio, pour inclure cet élément dans le manifeste de l’application, ainsi que pour incorporer à la fois son nom d’éditeur et le nom de l’application dans le manifeste.
+ ClickOnce dans le .NET Framework 3,5 contient une nouvelle fonctionnalité qui offre aux développeurs et aux clients une nouvelle solution dans le scénario de signature des manifestes. Le manifeste d’application ClickOnce prend en charge un nouvel élément nommé `<useManifestForTrust>` qui permet à un développeur de signifier que la signature numérique du manifeste d’application est ce qui doit être utilisé pour prendre des décisions d’approbation. Le développeur utilise les outils d’empaquetage ClickOnce, tels que *Mage.exe*, *MageUI.exe* et Visual Studio, pour inclure cet élément dans le manifeste de l’application, ainsi que pour incorporer à la fois son nom d’éditeur et le nom de l’application dans le manifeste.
 
  Lors de l’utilisation de `<useManifestForTrust>` , le manifeste de déploiement n’a pas besoin d’être signé avec un certificat Authenticode émis par une autorité de certification. Au lieu de cela, il peut être signé avec ce qui est connu sous le nom de certificat auto-signé. Un certificat auto-signé est généré par le client ou par le développeur à l’aide des outils du kit de développement logiciel (SDK) standard .NET Framework, puis appliqué au manifeste de déploiement à l’aide des outils de déploiement ClickOnce standard. Pour plus d’informations, consultez [Makecert](/windows/desktop/SecCrypto/makecert).
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888691"
 ---
 # <a name="ribbon-object-model-overview"></a>Vue d’ensemble du modèle objet de ruban
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban au moment de l’exécution. Par exemple, vous pouvez remplir dynamiquement des contrôles de menu ou afficher et masquer des contrôles en contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant que le ruban soit chargé par l’application Office. Pour plus d’informations, consultez [définir les propriétés qui passent en lecture seule](#SettingReadOnlyProperties).
@@ -56,7 +56,7 @@ ms.locfileid: "97527987"
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
 |**Liste déroulante**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**Office**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Groupe**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Étiquette**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|

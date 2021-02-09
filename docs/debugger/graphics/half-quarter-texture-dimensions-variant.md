@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3cc5d5517818934a20c9064e718cf65f9d3a65
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 87add3c771fdc79e4b41658a68ef7e77e2c18b21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995146"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888522"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de dimensions de la texture moitié/un quart
 Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
@@ -29,7 +29,7 @@ Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
 
  Si vos textures occupent plus de mémoire GPU que vous n'en disposez, songez à réduire la taille des textures, mais seulement après avoir envisagé de compresser les textures appropriées. Comme les textures de petite taille, les textures compressées occupent moins de mémoire et font moins appel à la pagination en mémoire système, mais elles pâtissent d'une moindre fidélité des couleurs. Si la compression ne convient pas à toutes les textures (par exemple, celles qui présentent une forte variation de couleurs sur une petite surface), ce qui dépend de leur contenu, dans bien des cas, la compression donne de meilleurs résultats en termes de qualité d'image globale que la réduction de la taille.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les dimensions des textures sont réduites à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus spécifiquement, les dimensions des textures sont réduites quand l'objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une texture utilisée dans le rendu, à savoir :
 
 - Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.

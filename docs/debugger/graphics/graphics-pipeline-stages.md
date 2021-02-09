@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61cc2737fbe6bdbcb331da4e1d27a77d356735aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888652"
 ---
 # <a name="graphics-pipeline-stages"></a>Étapes de canalisation Graphics
 La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment un appel de dessin individuel est transformé par chaque étape de canalisation graphismes Direct3D.
