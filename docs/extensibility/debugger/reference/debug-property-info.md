@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899099"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contient des informations sur une propriété de débogage.
@@ -73,7 +73,7 @@ Objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty
 `dwAttrib`\
 Combinaison d’indicateurs de l’énumération [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) décrivant les attributs de cette propriété.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Une propriété est un objet d’une nature hiérarchique qui a un nom, un type et une valeur. Par exemple, une propriété peut décrire des variables locales, des paramètres, des variables et des expressions espionnes et des registres.
 
 Cette structure est transmise à la méthode [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) où elle est remplie. Cette structure est également retournée dans le cadre d’une liste de cette structure à partir de l’interface [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) qui, à son tour, est retournée à partir d’un appel aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) et [EnumProperties,](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .

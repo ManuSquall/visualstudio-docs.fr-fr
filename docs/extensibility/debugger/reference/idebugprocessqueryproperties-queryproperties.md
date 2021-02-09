@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900163"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Cette méthode recherche les valeurs de propriété spécifiées du processus de débogage.
@@ -55,10 +55,10 @@ dans Tableau qui contient les définitions des propriétés interrogées. Les va
 `pvarPropValue`\
 à Tableau contenant les valeurs de propriété.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode est rarement utilisée.
 
 ## <a name="see-also"></a>Voir aussi

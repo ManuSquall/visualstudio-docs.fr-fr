@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5236d73bb965d4f25634ad9e61a52608c9030146
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 918cb7e60f4e3fed2beee024d51b94499b14b632
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900417"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Guide pratique pour spécifier le mode d’installation en ligne et hors connexion ClickOnce
-`Install Mode`Pour une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application détermine si l’application sera disponible hors connexion ou en ligne. Lorsque vous choisissez **l’application est disponible en ligne uniquement** , l’utilisateur doit avoir accès à l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] emplacement de publication (une page Web ou un partage de fichiers) pour exécuter l’application. Lorsque vous choisissez **l’application est également disponible hors connexion** , l’application ajoute des entrées au menu **Démarrer** et à la boîte de dialogue **Ajout/suppression de programmes** . l’utilisateur peut exécuter l’application quand elle n’est pas connectée.
+`Install Mode`Pour une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application détermine si l’application sera disponible hors connexion ou en ligne. Lorsque vous choisissez **l’application est disponible en ligne uniquement**, l’utilisateur doit avoir accès à l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] emplacement de publication (une page Web ou un partage de fichiers) pour exécuter l’application. Lorsque vous choisissez **l’application est également disponible hors connexion**, l’application ajoute des entrées au menu **Démarrer** et à la boîte de dialogue **Ajout/suppression de programmes** . l’utilisateur peut exécuter l’application quand elle n’est pas connectée.
 
 `Install Mode`Peut être défini sur la page **publier** du concepteur de **projets**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "94350931"
 
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Pour rendre une application ClickOnce disponible en ligne uniquement
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 
@@ -45,7 +45,7 @@ ms.locfileid: "94350931"
 
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Pour rendre une application ClickOnce disponible en ligne ou hors connexion
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

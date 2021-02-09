@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900468"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Guide pratique pour publier une application WPF avec les styles visuels activés
 
@@ -51,7 +51,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
     **Pour ouvrir le fichier manifeste dans un projet Visual Basic**
 
-    1. Dans la barre de menus, choisissez **projet** , **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
+    1. Dans la barre de menus, choisissez **projet**, **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
 
          Les pages de propriétés de votre projet WPF s’affichent.
 
@@ -61,7 +61,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
     **Pour ouvrir le fichier manifeste dans un projet C#**
 
-    1. Dans la barre de menus, choisissez **projet** , **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
+    1. Dans la barre de menus, choisissez **projet**, **Propriétés** *ProjectName* , où *NOM_PROJET* est le nom de votre projet WPF.
 
          Les pages de propriétés de votre projet WPF s’affichent.
 
@@ -70,7 +70,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
         > [!NOTE]
         > Si l’option **incorporer le manifeste avec les paramètres par défaut** ou **créer une application sans manifeste** apparaît dans le champ manifeste, les styles visuels ne sont pas activés. Si le nom d’un fichier manifeste apparaît dans le champ manifeste, passez à l’étape suivante de cette procédure.
 
-    3. Dans l’ **Explorateur de solutions** , choisissez **Afficher tous les fichiers**.
+    3. Dans l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**.
 
          Ce bouton affiche tous les éléments de projet, y compris ceux qui ont été exclus et ceux qui sont normalement masqués. Le fichier manifeste apparaît en tant qu’élément de projet.
 
@@ -97,7 +97,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
     </asmv1:assembly>
     ```
 
-2. Dans le Bloc-notes, cliquez sur **Fichier** , puis sur **Enregistrer sous.**
+2. Dans le Bloc-notes, cliquez sur **Fichier**, puis sur **Enregistrer sous.**
 
 3. Dans la boîte de dialogue **Enregistrer sous** , dans la liste déroulante **type** de fichier, sélectionnez **tous les fichiers**.
 
@@ -112,7 +112,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
 1. Ouvrez l' **invite de commandes de Visual Studio**.
 
-    Pour plus d’informations sur l’ouverture de l' **invite de commandes de Visual Studio** , consultez [invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Pour plus d’informations sur l’ouverture de l' **invite de commandes de Visual Studio**, consultez [invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > Les étapes restantes font les hypothèses suivantes sur votre solution :

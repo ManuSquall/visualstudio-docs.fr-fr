@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 520f9aea1dbd3d3f742293a95b4dd7bdbac62a3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900755"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Guide pratique pour suspendre l’activation des URL des applications ClickOnce à l’aide du concepteur
 En règle générale, une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application se lance automatiquement immédiatement après son installation à partir d’un serveur Web. Pour des raisons de sécurité, vous pouvez décider de désactiver ce comportement et demander aux utilisateurs de démarrer l’application à partir du menu **Démarrer** à la place. La procédure suivante décrit comment désactiver l'activation d'URL.
@@ -36,7 +36,7 @@ En règle générale, une [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Pour désactiver l'activation d'URL pour votre application
 
-1. Cliquez avec le bouton droit sur le nom de votre projet dans **Explorateur de solutions** , puis cliquez sur **Propriétés**.
+1. Cliquez avec le bouton droit sur le nom de votre projet dans **Explorateur de solutions**, puis cliquez sur **Propriétés**.
 
 2. Dans la page **Propriétés** , cliquez sur l’onglet **publier** .
 

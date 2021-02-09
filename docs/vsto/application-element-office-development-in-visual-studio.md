@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 895a695f1de56c3041ad1723f1b6b30356c839df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900913"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application &gt; , élément (développement Office dans Visual Studio)
   L’élément `application` de l’espace de noms `vstav3` encapsule la description de solutions Office. Les éléments enfants sont différents pour les personnalisations au niveau du document et les compléments VSTO.

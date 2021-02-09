@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf3cac6d49ef2d09a9952ac41b2bb36262fbc7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899037"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Crée un énumérateur pour tous les points d’arrêt qui ont été déclenchés à l’emplacement de code actuel.
@@ -43,10 +43,10 @@ int EnumBreakpoints(
 `ppEnum`\
 à Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère tous les points d’arrêt associés à l’emplacement de code actuel.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Tous les points d’arrêt d’un emplacement particulier ne peuvent pas être activés à un moment donné (par exemple, un point d’arrêt avec une condition ne se déclenche pas tant que cette condition n’est pas remplie).
 
 ## <a name="see-also"></a>Voir aussi

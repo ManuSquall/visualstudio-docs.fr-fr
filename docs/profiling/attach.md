@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c97dee50d58b49092d9b23a497192b29746e0c22
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 0098ec24047e6e16efd27c6aec26943671743bb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901098"
 ---
 # <a name="attach"></a>Attach
 L’option *VSPerfCmd.exe* **Attach** commence le profilage des exemples du processus en cours d’exécution spécifié par l’ID de processus (PID).
@@ -61,7 +61,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
 - **Counter** : échantillonne tous les nombres de `Reload` du compteur de performance de l’UC spécifié par `Name`. En option, `FriendlyName` peut spécifier une chaîne à utiliser comme en-tête de colonne dans les rapports du profileur.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Cet exemple montre comment s’attacher à une instance en cours d’exécution d’une application avec l’ID de processus 12345.
 
 ```cmd

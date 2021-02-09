@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ed3df72b98454c4669e7d9bcd21c0612a6fef3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b157df8666223e72a1e36d58505a5c087b0351bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900680"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Guide pratique pour activer le démarrage automatique pour les installations de CD
 Lors du déploiement d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application au moyen d’un support amovible tel qu’un CD-ROM ou un DVD-ROM, vous pouvez activer `AutoStart` afin que l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application soit lancée automatiquement lorsque le média est inséré.
@@ -32,7 +32,7 @@ Lors du déploiement d’une [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
 ### <a name="to-enable-autostart"></a>Pour activer le démarrage automatique
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

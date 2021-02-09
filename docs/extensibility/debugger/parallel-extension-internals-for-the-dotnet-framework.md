@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9625af464e2695c6dd4302f4f7590d20e8f6af7
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b3c17c36112d383528e97c1eb04c858b89406c36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900319"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Éléments internes de l’extension parallèle pour le .NET Framework
 Cette section décrit les types, méthodes et champs internes des classes qui vous permettent d’implémenter un débogueur personnalisé pour les extensions parallèles au .NET Framework.

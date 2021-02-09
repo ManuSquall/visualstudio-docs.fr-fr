@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 40fc899aecc3b8aea239703080d8db4efcfaec52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901194"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 
@@ -101,7 +101,7 @@ C’est dans la vue Détails que vous passez le plus de temps à analyser le rap
 
 Les événements suivants sont pris en charge :
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Analyse**|Temps passé à l'analyse de fichiers XAML et à la création d'objets.<br /><br /> Le développement d’un nœud **Analyse** dans **Détails de la chronologie** affiche la chaîne des dépendances de tous les fichiers XAML qui ont été analysés en raison de l’événement racine. Ceci vous permet d’identifier l’analyse de fichiers et la création d’objets inutiles dans les scénarios critiques de performances, et de les optimiser.|
 |**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut aboutir à un débit faible des images de l’interface utilisateur et à la faible réactivité de l’application qui en découle. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans Arrange, Measure, ApplyTemplate, ArrangeOverride et MeasureOverride). Il génère également les arborescences d’éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer les arborescences logiques à élaguer, ou pour évaluer d’autres mécanismes de report pour optimiser votre passe de disposition.|
@@ -117,7 +117,7 @@ Les événements suivants sont pris en charge :
 
 Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer et spécifier les annotations des entrées de la vue **Détails de la chronologie** .
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**Trier par**|Triez par heure de début ou sur la longueur des événements.|
 |![Regrouper les événements par frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Ajoute ou supprime une catégorie **Image** qui regroupe les événements par image.|

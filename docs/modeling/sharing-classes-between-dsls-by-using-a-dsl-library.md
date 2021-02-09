@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e1685fe4fc7db6728ebc1ca6a12e27bb6f42589b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 61e4785ab99ecccc61a097dd27140e250f103de2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899811"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 Dans le kit de développement logiciel (SDK) de visualisation et de modélisation Visual Studio, vous pouvez créer une définition DSL incomplète que vous pouvez importer dans un autre langage DSL. Cela vous permet de factoriser des parties courantes de modèles similaires.

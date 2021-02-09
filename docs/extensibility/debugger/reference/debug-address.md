@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe778ba3ed80930a4cd7b4fa1170f286b3ccf6ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e02f78e82c87bceb10b71bcb303a78f25a9a623e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899120"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 Cette structure représente une adresse.
@@ -61,7 +61,7 @@ Jeton identifiant la classe ou le type de cette adresse.
 `addr`\
 Structure [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , qui contient une Union de structures qui décrivent les types d’adresses individuels. Valeur `addr` .`dwKind` provient de l’énumération [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , qui explique comment interpréter l’Union.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette structure est passée à la méthode [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) à remplir.
 
 **Avertissement (C++ uniquement)**
@@ -75,7 +75,7 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 }
 ```
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : SH. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

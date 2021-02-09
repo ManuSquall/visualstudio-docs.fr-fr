@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cad0893a-9c5f-45b7-952a-e2294f83e324
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 440e2517a0138ca84be87090d9636288a7a5d9af
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 6bd335c5787f86fdbf6434cf3a8f78532c7a6d51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899931"
 ---
 # <a name="vspackages"></a>VSPackages
 Les VSPackages sont des modules logiciels qui étendent l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) en fournissant des éléments d’interface utilisateur, des services, des projets, des éditeurs et des concepteurs.

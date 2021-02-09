@@ -19,29 +19,29 @@ helpviewer_keywords:
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb63d217249cd24d6777fb4d87ae4fe4d00c755
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4059d2d4b8a5d69c0c3433699c42c5e88bc6b668
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900522"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Guide pratique pour publier un projet qui a des paramètres régionaux spécifiques
 Une application peut contenir des composants ayant des paramètres régionaux différents. Dans ce scénario, vous devez créer une solution avec plusieurs projets, puis publier des projets distincts pour chacun des paramètres régionaux. Cette procédure montre comment utiliser une macro pour publier le premier projet dans une solution avec les paramètres régionaux « en ». Si vous souhaitez essayer cette procédure avec d'autres paramètres régionaux, veillez à définir `localeString` dans la macro pour que sa valeur corresponde aux paramètres régionaux que vous utilisez (par exemple, « fr » ou « fr-FR »).
 
 > [!NOTE]
-> Quand vous utilisez cette macro, l'emplacement de publication doit être une URL ou un partage UNC (Universal Naming Convention) valide. De plus, les services IIS (Internet Information Services) doivent être installés sur votre ordinateur. Pour installer IIS, dans le menu **Démarrer** , cliquez sur **Panneau de configuration**. Double-cliquez sur **Ajouter ou supprimer des programmes**. Dans **Ajouter ou supprimer des programmes** , cliquez sur **Ajouter ou supprimer des composants Windows**. Dans l’ **Assistant Composants Windows** , cochez la case **Gestionnaire des services Internet (IIS)** dans la liste **Composants**. Cliquez ensuite sur **Terminer** pour fermer l'Assistant.
+> Quand vous utilisez cette macro, l'emplacement de publication doit être une URL ou un partage UNC (Universal Naming Convention) valide. De plus, les services IIS (Internet Information Services) doivent être installés sur votre ordinateur. Pour installer IIS, dans le menu **Démarrer**, cliquez sur **Panneau de configuration**. Double-cliquez sur **Ajouter ou supprimer des programmes**. Dans **Ajouter ou supprimer des programmes**, cliquez sur **Ajouter ou supprimer des composants Windows**. Dans l’**Assistant Composants Windows**, cochez la case **Gestionnaire des services Internet (IIS)** dans la liste **Composants**. Cliquez ensuite sur **Terminer** pour fermer l'Assistant.
 
 ### <a name="to-create-the-publishing-macro"></a>Pour créer la macro de publication
 
-1. Pour ouvrir l’Explorateur de macros, dans le menu **Outils** , pointez sur **Macros** , puis cliquez sur **Explorateur de macros**.
+1. Pour ouvrir l’Explorateur de macros, dans le menu **Outils**, pointez sur **Macros**, puis cliquez sur **Explorateur de macros**.
 
-2. Créez un module de macro. Dans l’Explorateur de macros, sélectionnez **MyMacros**. Dans le menu **Outils** , pointez sur **macros** , puis cliquez sur **nouveau module macro**. Nommez le module **PublishSpecificCulture**.
+2. Créez un module de macro. Dans l’Explorateur de macros, sélectionnez **MyMacros**. Dans le menu **Outils** , pointez sur **macros**, puis cliquez sur **nouveau module macro**. Nommez le module **PublishSpecificCulture**.
 
-3. Dans l’Explorateur de macros, développez le nœud **MyMacros** , puis ouvrez le module **PublishAllProjects** en double-cliquant dessus (ou, dans le menu **Outils** , pointez sur **Macros** , puis cliquez sur **Éditeur de macros** ).
+3. Dans l’Explorateur de macros, développez le nœud **MyMacros**, puis ouvrez le module **PublishAllProjects** en double-cliquant dessus (ou, dans le menu **Outils**, pointez sur **Macros**, puis cliquez sur **Éditeur de macros**).
 
 4. Dans l'Éditeur de macros, ajoutez le code suivant au module, après les instructions `Import` :
 
@@ -141,17 +141,17 @@ Une application peut contenir des composants ayant des paramètres régionaux di
 
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>Pour publier un projet avec des paramètres régionaux spécifiques
 
-1. Pour créer un projet d’application Windows Visual Basic, dans le menu **Fichier** , pointez sur **Nouveau** , puis cliquez sur **Projet**.
+1. Pour créer un projet d’application Windows Visual Basic, dans le menu **Fichier**, pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet** , sélectionnez **Application Windows** dans le nœud **Visual Basic**. Nommez le projet *PublishLocales*.
+2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez **Application Windows** dans le nœud **Visual Basic**. Nommez le projet *PublishLocales*.
 
-3. Cliquez sur Form1. Dans la fenêtre **Propriétés** , sous **Design** , changez la propriété **Langue** de **(Par défaut)** en **Anglais**. Changez la propriété **Texte** du formulaire en **MyForm**.
+3. Cliquez sur Form1. Dans la fenêtre **Propriétés**, sous **Design**, changez la propriété **Langue** de **(Par défaut)** en **Anglais**. Changez la propriété **Texte** du formulaire en **MyForm**.
 
      Notez que les DLL de ressource localisées ne sont pas créées tant qu'elles ne sont pas requises. Par exemple, elles sont créées quand vous modifiez le texte du formulaire ou l'un de ses contrôles, une fois les nouveaux paramètres régionaux spécifiés.
 
 4. Publiez *PublishLocales* à l’aide de l’IDE de Visual Studio.
 
-     Dans l’ **Explorateur de solutions** , sélectionnez *PublishLocales*. Dans le menu **Projet** , sélectionnez **Propriétés**. Dans le concepteur de projet, sur la page **publier** , spécifiez un emplacement de publication **http://localhost/PublishLocales** , puis cliquez sur **publier maintenant**.
+     Dans l’**Explorateur de solutions**, sélectionnez *PublishLocales*. Dans le menu **Projet**, sélectionnez **Propriétés**. Dans le concepteur de projet, sur la page **publier** , spécifiez un emplacement de publication **http://localhost/PublishLocales** , puis cliquez sur **publier maintenant**.
 
      Quand la page web de publication apparaît, fermez-la. (Pour cette étape, vous devez uniquement publier le projet, sans l'installer.)
 

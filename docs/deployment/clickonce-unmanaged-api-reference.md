@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 88d8147dded05c6bec54682e76c6a8c1826b43e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900804"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Informations de référence sur les API non managées ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API publiques non managées à partir de dfshim.dll.
@@ -43,7 +43,7 @@ ms.locfileid: "94382609"
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache
  Nettoie ou désinstalle toutes les applications en ligne du cache d' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
-### <a name="return-value"></a>Valeur retournée
+### <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0x80020009 (DISP_E_EXCEPTION).
 
 ### <a name="remarks"></a>Remarques
@@ -67,7 +67,7 @@ ms.locfileid: "94382609"
 |`pwzDeploymentProvider`|Pointeur vers une mémoire tampon destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie le fournisseur de déploiement du manifeste, le cas échéant. Dans le cas contraire, une chaîne vide est retournée.|LPWSTR|
 |`pdwProviderBufferLength`|Pointeur vers une valeur DWORD qui correspond à la longueur de `pwzProviderBufferLength` .|LPDWORD|
 
-### <a name="return-value"></a>Valeur retournée
+### <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Retourne HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) si une mémoire tampon est trop petite.
 
 ### <a name="remarks"></a>Remarques
@@ -85,10 +85,10 @@ ms.locfileid: "94382609"
 |Paramètre|Description|Type|
 |---------------|-----------------|----------|
 |`deploymentUrl`|Pointeur vers une chaîne se terminant par un caractère NULL qui contient l’URL du manifeste de déploiement.|LPCWSTR|
-|`data`|Réservé à un usage ultérieur. Doit être NULL.|LPVOID|
-|`flags`|Réservé à un usage ultérieur. Doit être égal à 0.|DWORD|
+|`data`|Réservé pour un usage futur. Doit être NULL.|LPVOID|
+|`flags`|Réservé pour un usage futur. Doit être égal à 0.|DWORD|
 
-### <a name="return-value"></a>Valeur retournée
+### <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0x80020009 (DISP_E_EXCEPTION).
 
 ## <a name="see-also"></a>Voir aussi

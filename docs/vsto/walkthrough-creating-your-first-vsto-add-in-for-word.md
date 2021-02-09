@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899436"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procédure pas à pas : créer votre premier complément VSTO pour Word
   Cette première procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Word. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les documents ouverts.

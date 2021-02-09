@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 20718e0ef9351b055bbefa28eb751eac88a67b1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901164"
 ---
 # <a name="analyze-performance-tools-data"></a>Analyser les données des outils d’analyse des performances
 Les rapports de performances des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permettent d’afficher et d’analyser les problèmes de performances des applications. Cette section fournit une présentation des rapports et des vues de performances qui peuvent être utilisés pour examiner les données de performances.

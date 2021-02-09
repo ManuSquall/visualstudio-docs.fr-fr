@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900440"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Guide pratique pour resigner des manifestes d’application et de déploiement
 Après avoir apporté des modifications aux propriétés de déploiement dans le manifeste d’application pour les applications Windows Forms, les applications Windows Presentation Foundation (XBAP) ou les solutions Office, vous devez signer à nouveau les manifestes d’application et de déploiement avec un certificat. Ce processus aide à garantir que des fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.
@@ -33,7 +33,7 @@ Après avoir apporté des modifications aux propriétés de déploiement dans le
  Un autre scénario dans lequel vous pouvez signer à nouveau les manifestes est lorsque vos clients souhaitent signer les manifestes d’application et de déploiement avec leur propre certificat.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Resigner les manifestes d’application et de déploiement
- Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier de manifeste d’application ( *. manifest* ). Pour plus d’informations, consultez [Comment : modifier les propriétés de déploiement](/previous-versions/cc442869(v=vs.110)).
+ Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier de manifeste d’application (*. manifest*). Pour plus d’informations, consultez [Comment : modifier les propriétés de déploiement](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour signer à nouveau les manifestes d’application et de déploiement avec Mage.exe
 
@@ -69,10 +69,10 @@ Après avoir apporté des modifications aux propriétés de déploiement dans le
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Vous pouvez également copier le manifeste de déploiement principal ( *Publish \\ \<appname> . application* ) dans votre répertoire de déploiement de version ( *publish\Application Files \\ \<appname> _ \<version>* ).
+5. Vous pouvez également copier le manifeste de déploiement principal (*Publish \\ \<appname> . application*) dans votre répertoire de déploiement de version (*publish\Application Files \\ \<appname> _ \<version>*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Mettre à jour et signer à nouveau les manifestes d’application et de déploiement
- Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier de manifeste d’application ( *. manifest* ), mais que d’autres fichiers ont été mis à jour. Lorsque les fichiers sont mis à jour, le hachage qui représente le fichier doit également être mis à jour.
+ Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier de manifeste d’application (*. manifest*), mais que d’autres fichiers ont été mis à jour. Lorsque les fichiers sont mis à jour, le hachage qui représente le fichier doit également être mis à jour.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour mettre à jour et signer à nouveau les manifestes d’application et de déploiement avec Mage.exe
 
@@ -112,7 +112,7 @@ Après avoir apporté des modifications aux propriétés de déploiement dans le
 
 6. Rajoutez l’extension de fichier *. deploy* aux fichiers, à l’exception des fichiers de manifeste de déploiement et d’application.
 
-7. Vous pouvez également copier le manifeste de déploiement principal ( *Publish \\ \<appname> . application* ) dans votre répertoire de déploiement de version ( *publish\Application Files \\ \<appname> _ \<version>* ).
+7. Vous pouvez également copier le manifeste de déploiement principal (*Publish \\ \<appname> . application*) dans votre répertoire de déploiement de version (*publish\Application Files \\ \<appname> _ \<version>*).
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)

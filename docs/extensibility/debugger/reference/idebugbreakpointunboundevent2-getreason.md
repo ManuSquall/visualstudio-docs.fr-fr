@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21b1eaf51f9f533fccb5275e0659367a43adb2c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900216"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 Obtient la raison pour laquelle le point d’arrêt a été indépendant.
@@ -43,10 +43,10 @@ int GetReason(
 `pdwUnboundReason`\
 à Retourne une valeur de l’énumération [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) spécifiant la raison pour laquelle le point d’arrêt a été indépendant.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Il peut s’agir d’un point d’arrêt qui est relié à un autre emplacement après une opération modifier & continuer, ou d’une détermination qu’un point d’arrêt a été lié dans une erreur.
 
 ## <a name="example"></a>Exemple

@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 94578571a9cfe6a170fd94019615eeec3071356a
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 3712246256618debfb8d85ebfb0c273511eb9558
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901084"
 ---
 # <a name="automark"></a>AutoMark
 L’option **AutoMark** spécifie le nombre de millisecondes écoulées entre les collectes des événements des compteurs de performances logiciels Windows. Les compteurs de performances Windows sont spécifiés dans l’option **WinCounter**.
@@ -35,7 +35,7 @@ VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds
 ## <a name="required-options"></a>Options obligatoires
  **WinCounter :** `Path` Spécifie le compteur de performances Windows à collecter. Quand vous utilisez la méthode d’instrumentation, vous pouvez spécifier plusieurs compteurs Windows. Quand vous utilisez la méthode d’échantillonnage, vous ne pouvez spécifier qu’un seul compteur Windows. L’option **WinCounter** doit être spécifiée dans une ligne de commande qui contient l’option **Start**.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Dans cet exemple, un intervalle d’échantillonnage de 1 000 millisecondes est défini pour deux compteurs de performances Windows.
 
 ```cmd

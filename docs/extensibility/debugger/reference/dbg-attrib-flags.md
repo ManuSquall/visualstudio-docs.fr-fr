@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c8b3f52eff80c187d3c43b87cea804ace483169
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899157"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 Décrit différents attributs pour un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou une interface [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Membre de la structure [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
@@ -203,7 +203,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indique que la valeur de `DEBUG_PROPERTY_INFO::bstrValue` n'est pas valide.
 
  `DBG_ATTRIB_VALUE_NAT`\
- Indique que la valeur de `DEBUG_PROPERTY_INFO::bstrValue` n’est*pas un élément*(NAT). NAT décrit un indicateur de Registre dans les processeurs Intel 64 bits qui indiquent des exceptions spéculatives différées.
+ Indique que la valeur de `DEBUG_PROPERTY_INFO::bstrValue` n’est *pas un élément*(NAT). NAT décrit un indicateur de Registre dans les processeurs Intel 64 bits qui indiquent des exceptions spéculatives différées.
 
  `DBG_ATTRIB_VALUE_AUTOEXPANDED`\
  Indique que la valeur dans `DEBUG_PROPERTY_INFO::bstrValue` a peut-être été développée automatiquement.
@@ -290,7 +290,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indique que cet objet est une classe interne.
 
  `DBG_ATTRIB_MOSTDERIVED`\
- Indique que cet objet est « le*plus dérivé*». Le terme « le*plus dérivé*» signifie le type réel de l’objet, et non le type de sa référence.
+ Indique que cet objet est « le *plus dérivé*». Le terme « le *plus dérivé*» signifie le type réel de l’objet, et non le type de sa référence.
 
  `DBG_ATTRIB_CHILD_ALL`\
  Indique un masque de `DBG_ATTRIB_DATA` par le biais de `DBG_ATTRIB_MOSTDERIVED` .
@@ -298,7 +298,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
  Indique que plusieurs visionneuses personnalisées sont associées à l’objet.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 > [!NOTE]
 > Les valeurs de cette énumération ne sont pas réellement définies dans l’assembly pour C#. Au lieu de cela, vous devez copier les définitions dans votre fichier source.

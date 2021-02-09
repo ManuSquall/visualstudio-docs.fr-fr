@@ -11,16 +11,16 @@ helpviewer_keywords:
 - mixed mode debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0b51a41a2b2df5ac685caebbf08606ae86b4230a
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899421"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et du code C++ dans la même session de débogage
 
@@ -28,7 +28,7 @@ Visual Studio vous permet d’activer plusieurs types de débogueur dans une ses
 
 Ce tutoriel montre comment déboguer le code natif d’une application managée, mais vous pouvez également [déboguer le code managé d’une application native](../debugger/how-to-debug-in-mixed-mode.md). Le débogueur prend également en charge d’autres types de débogage en mode mixte, comme le débogage [de code Python et de code natif](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), ainsi que l’utilisation du débogueur de script dans des types d’applications comme ASP.NET.
 
-Dans ce tutoriel, vous allez :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Créer une DLL native simple
@@ -42,7 +42,7 @@ Dans ce tutoriel, vous allez :
 
 Vous devez disposer de Visual Studio avec les charges de travail suivantes :
 - **Développement Desktop en C++**
-- **Développement .NET Desktop** ou **Développement multiplateforme .NET Core** , selon le type d’application que vous voulez créer.
+- **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, selon le type d’application que vous voulez créer.
 
 Si vous n’avez pas Visual Studio, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
 
@@ -55,35 +55,35 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **projet vide** , choisissez **modèles** , puis **projet vide** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**. Ensuite, tapez un nom comme **Mixed_Mode_Debugging** , puis cliquez sur **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **projet vide**, choisissez **modèles**, puis **projet vide** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**. Ensuite, tapez un nom comme **Mixed_Mode_Debugging**, puis cliquez sur **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet** , sous **Visual C++** , choisissez **Autre** puis, dans le volet central, choisissez **Projet vide**. Ensuite, tapez un nom comme **Mixed_Mode_Debugging** , puis cliquez sur **OK**.
+    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C++**, choisissez **Autre** puis, dans le volet central, choisissez **Projet vide**. Ensuite, tapez un nom comme **Mixed_Mode_Debugging**, puis cliquez sur **OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **Projet vide** , accédez à **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++** , puis choisissez **Modifier**.
+    Si vous ne voyez pas le modèle de projet **Projet vide**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
 
     Visual Studio crée le projet.
 
-1. Dans **l’Explorateur de solutions** , sélectionnez **Fichiers sources** , puis sélectionnez **Projet** > **Ajouter un nouvel élément**. Vous pouvez aussi cliquer avec le bouton droit sur **Fichiers sources** et sélectionner **Ajouter** > **Nouvel élément**.
+1. Dans **l’Explorateur de solutions**, sélectionnez **Fichiers sources**, puis sélectionnez **Projet** > **Ajouter un nouvel élément**. Vous pouvez aussi cliquer avec le bouton droit sur **Fichiers sources** et sélectionner **Ajouter** > **Nouvel élément**.
 
-1. Dans la boîte de dialogue **Nouvel élément** , sélectionnez **Fichier C++ (.cpp)**. Tapez **Mixed_Mode.cpp** dans le champ **Nom** , puis sélectionnez **Ajouter**.
+1. Dans la boîte de dialogue **Nouvel élément**, sélectionnez **Fichier C++ (.cpp)**. Tapez **Mixed_Mode.cpp** dans le champ **Nom**, puis sélectionnez **Ajouter**.
 
     Visual Studio ajoute le nouveau fichier C++ à **l’Explorateur de solutions**.
 
-1. Copiez le code suivant dans *Mixed_Mode.cpp*  :
+1. Copiez le code suivant dans *Mixed_Mode.cpp* :
 
     ```cpp
     #include "Mixed_Mode.h"
     ```
 
-1. Dans **l’Explorateur de solutions** , sélectionnez **Fichiers d’en-tête** , puis sélectionnez **Projet** > **Ajouter un nouvel élément**. Vous pouvez aussi cliquer avec le bouton droit sur **Fichiers d’en-tête** et sélectionner **Ajouter** > **Nouvel élément**.
+1. Dans **l’Explorateur de solutions**, sélectionnez **Fichiers d’en-tête**, puis sélectionnez **Projet** > **Ajouter un nouvel élément**. Vous pouvez aussi cliquer avec le bouton droit sur **Fichiers d’en-tête** et sélectionner **Ajouter** > **Nouvel élément**.
 
-1. Dans la boîte de dialogue **Nouvel élément** , sélectionnez **Fichier d’en-tête (.h)**. Tapez **Mixed_Mode.h** dans le champ **Nom** , puis sélectionnez **Ajouter**.
+1. Dans la boîte de dialogue **Nouvel élément**, sélectionnez **Fichier d’en-tête (.h)**. Tapez **Mixed_Mode.h** dans le champ **Nom**, puis sélectionnez **Ajouter**.
 
    Visual Studio ajoute le nouveau fichier d’en-tête à **l’Explorateur de solutions**.
 
-1. Copiez le code suivant dans *Mixed_Mode.h*  :
+1. Copiez le code suivant dans *Mixed_Mode.h* :
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -104,20 +104,20 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 
 1. Dans la barre d’outils de Visual Studio, sélectionnez la configuration **Débogage** et la plateforme **x86** ou **x64**. Si votre application appelante est .NET Core, qui s’exécute toujours en mode 64 bits, sélectionnez **x64** comme plateforme.
 
-1. Dans **l’Explorateur de solutions** , sélectionnez le nœud du projet **Mixed_Mode_Debugging** et sélectionnez l’icône **Propriétés** , ou cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Propriétés**.
+1. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet **Mixed_Mode_Debugging** et sélectionnez l’icône **Propriétés**, ou cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Propriétés**.
 
-1. En haut du volet **Propriétés** , vérifiez que **Configuration** est défini sur **Active (Déboguer)** et que la **Plateforme** est identique à ce que vous avez défini dans la barre d’outils : **x64** , ou **Win32** pour la plateforme x86.
+1. En haut du volet **Propriétés**, vérifiez que **Configuration** est défini sur **Active (Déboguer)** et que la **Plateforme** est identique à ce que vous avez défini dans la barre d’outils : **x64**, ou **Win32** pour la plateforme x86.
 
    > [!IMPORTANT]
    > Si vous faites passer la plateforme de **x86** à **x64** ou vice versa, vous devez reconfigurer les propriétés pour la nouvelle plateforme.
 
-1. Sous **Propriétés de configuration** dans le volet gauche, sélectionnez **Éditeur de liens** > **Avancé** et, dans la liste déroulante en regard de **Aucun point d’entrée** , sélectionnez **Non**. Si vous avez dû le changer en **Non** , sélectionnez **Appliquer**.
+1. Sous **Propriétés de configuration** dans le volet gauche, sélectionnez **Éditeur de liens** > **Avancé** et, dans la liste déroulante en regard de **Aucun point d’entrée**, sélectionnez **Non**. Si vous avez dû le changer en **Non**, sélectionnez **Appliquer**.
 
-1. Sous **Propriétés de configuration** , sélectionnez **Général** et, dans la liste déroulante en regard de **Type de configuration** , sélectionnez **Bibliothèque dynamique (.dll)**. Sélectionnez **Apply** (Appliquer), puis **OK**.
+1. Sous **Propriétés de configuration**, sélectionnez **Général** et, dans la liste déroulante en regard de **Type de configuration**, sélectionnez **Bibliothèque dynamique (.dll)**. Sélectionnez **Apply** (Appliquer), puis **OK**.
 
    ![Passer à une DLL native](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Sélectionnez le projet dans **l’Explorateur de solutions** , puis sélectionnez **Générer** > **Générer la solution** , appuyez sur **F7** , ou cliquez avec le bouton droit sur le projet et sélectionnez **Générer**.
+1. Sélectionnez le projet dans **l’Explorateur de solutions**, puis sélectionnez **Générer** > **Générer la solution**, appuyez sur **F7**, ou cliquez avec le bouton droit sur le projet et sélectionnez **Générer**.
 
    Le projet doit être généré sans erreur.
 
@@ -126,17 +126,17 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **console** , choisissez **modèles** , puis choisissez **application console (.net Core)** ou **application console (.NET Framework)** pour C#. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **modèles**, puis choisissez **application console (.net Core)** ou **application console (.NET Framework)** pour C#. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
 
-    Ensuite, tapez un nom comme **Mixed_Mode_Calling_App** , puis cliquez sur **Créer**.
+    Ensuite, tapez un nom comme **Mixed_Mode_Calling_App**, puis cliquez sur **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet** , sous **Visual C#** , choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)** ou **Application console (.NET Core)**.
+    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)** ou **Application console (.NET Core)**.
 
-    Ensuite, tapez un nom comme **Mixed_Mode_Calling_App** , puis cliquez sur **OK**.
+    Ensuite, tapez un nom comme **Mixed_Mode_Calling_App**, puis cliquez sur **OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **Application console** , accédez à **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **développement .net Desktop** , puis choisissez **modifier**.
+    Si vous ne voyez pas le modèle de projet **Application console**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **développement .net Desktop** , puis choisissez **modifier**.
 
     > [!NOTE]
     > Vous pouvez également ajouter le nouveau projet managé à votre solution C++ existante. Nous créons le projet dans une nouvelle solution pour rendre la tâche de débogage en mode mixte plus difficile.
@@ -177,15 +177,15 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 
 ## <a name="configure-mixed-mode-debugging"></a>Configurer le débogage en mode mixte
 
-1. Dans **l’Explorateur de solutions** , sélectionnez le nœud du projet **Mixed_Mode_Calling_App** et sélectionnez l’icône **Propriétés** , ou cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Propriétés**.
+1. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet **Mixed_Mode_Calling_App** et sélectionnez l’icône **Propriétés**, ou cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Propriétés**.
 
-1. Sélectionnez **Déboguer** dans le volet gauche, cochez la case **Activer le débogage du code natif** , puis fermez la page des propriétés pour enregistrer les modifications.
+1. Sélectionnez **Déboguer** dans le volet gauche, cochez la case **Activer le débogage du code natif**, puis fermez la page des propriétés pour enregistrer les modifications.
 
     ![Activer le débogage en mode mixte](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>Définir un point d’arrêt et démarrer le débogage
 
-1. Dans le projet C#, ouvrez *Program.cs*. Définissez un point d’arrêt sur la ligne de code suivante en cliquant dans la marge de gauche, en sélectionnant la ligne et en appuyant sur **F9** , ou en cliquant avec le bouton droit sur la ligne et en sélectionnant **Point d’arrêt** > **Insérer un point d’arrêt**.
+1. Dans le projet C#, ouvrez *Program.cs*. Définissez un point d’arrêt sur la ligne de code suivante en cliquant dans la marge de gauche, en sélectionnant la ligne et en appuyant sur **F9**, ou en cliquant avec le bouton droit sur la ligne et en sélectionnant **Point d’arrêt** > **Insérer un point d’arrêt**.
 
     ```csharp
     int result = Multiply(7, 7);
@@ -193,7 +193,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 
     Un cercle rouge apparaît là dans la marge gauche où vous avez défini le point d’arrêt.
 
-1. Appuyez sur **F5** , sélectionnez la flèche verte dans la barre d’outils de Visual Studio, ou sélectionnez **Déboguer** > **Démarrer le débogage** pour démarrer le débogage.
+1. Appuyez sur **F5**, sélectionnez la flèche verte dans la barre d’outils de Visual Studio, ou sélectionnez **Déboguer** > **Démarrer le débogage** pour démarrer le débogage.
 
    Le débogueur se met en pause sur point d’arrêt que vous avez défini. Une flèche jaune indique l’endroit où le débogueur est actuellement en pause.
 
@@ -219,7 +219,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 
 1. Appuyez sur **F5** ou sélectionnez la flèche verte pour continuer le débogage de l’application.
 
-Félicitations ! Vous avez terminé le didacticiel sur le débogage en mode mixte.
+Félicitations ! Vous avez terminé le didacticiel sur le débogage en mode mixte.
 
 ## <a name="next-step"></a>Étape suivante
 

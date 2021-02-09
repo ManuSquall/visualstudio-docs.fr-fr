@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 61c81ab15a3f4f6ec89d1b37a2c96d963bbdf67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900409"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation
 
@@ -39,7 +39,7 @@ La `Installation URL` propriété peut être définie sur la page **publier** du
 
 ### <a name="to-specify-an-installation-url"></a>Pour spécifier une URL d’installation
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

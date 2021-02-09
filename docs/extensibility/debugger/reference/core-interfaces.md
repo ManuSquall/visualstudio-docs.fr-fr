@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf01ffceb122ad99d5ecca8fabfaa102a8fc505
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899170"
 ---
 # <a name="core-interfaces"></a>Interfaces de base
 Les interfaces suivantes sont les interfaces principales permettant d’étendre le débogueur à l’aide de [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
 
-## <a name="discussion"></a>Discussion
+## <a name="discussion"></a>Discussions
  Ces interfaces sont principalement utilisées pour créer le moteur DE débogage (DE). Ils sont organisés ici par catégories :
 
 - [Points d'arrêt](#Breakpoints)

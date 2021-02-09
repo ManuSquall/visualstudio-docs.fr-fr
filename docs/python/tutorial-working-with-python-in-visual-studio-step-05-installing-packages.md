@@ -6,17 +6,17 @@ ms.date: 03/09/2020
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47eacf0c9977e7342bfda17e03ea53728ee9215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901153"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Étape 5 : Installer des packages dans votre environnement Python
 
@@ -26,7 +26,7 @@ La communauté des développeurs Python a produit des milliers de packages utile
 
 ## <a name="view-environments"></a>Afficher les environnements
 
-1. Sélectionnez la commande de menu **Afficher**d'  >  **autres**  >  **environnements Windows python** . La fenêtre **environnements python** s’ouvre en tant qu’homologue à **Explorateur de solutions** et affiche les différents environnements disponibles. La liste affiche les deux environnements que vous avez installés à l’aide du programme d’installation de Visual Studio et de ceux que vous avez installés séparément. Cela comprend les environnements globaux, virtuels et Conda. L’environnement en gras est l’environnement par défaut qui est utilisé pour les nouveaux projets. Pour plus d’informations sur l’utilisation des environnements, consultez [comment créer et gérer des environnements python dans des environnements Visual Studio](managing-python-environments-in-visual-studio.md).
+1. Sélectionnez la commande de menu **Afficher** d'  >  **autres**  >  **environnements Windows python** . La fenêtre **environnements python** s’ouvre en tant qu’homologue à **Explorateur de solutions** et affiche les différents environnements disponibles. La liste affiche les deux environnements que vous avez installés à l’aide du programme d’installation de Visual Studio et de ceux que vous avez installés séparément. Cela comprend les environnements globaux, virtuels et Conda. L’environnement en gras est l’environnement par défaut qui est utilisé pour les nouveaux projets. Pour plus d’informations sur l’utilisation des environnements, consultez [comment créer et gérer des environnements python dans des environnements Visual Studio](managing-python-environments-in-visual-studio.md).
 
    ![Fenêtre Environnements Python](media/environments/environments-default-view-2019.png)
 
