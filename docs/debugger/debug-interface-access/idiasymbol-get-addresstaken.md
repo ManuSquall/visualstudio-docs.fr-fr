@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d366188-f5e1-4226-b392-58c09539d097
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b62a848d70b59a1764220c806123b0edd03edf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f2ae3ecac3e173d190f7393946dd07e4633b15b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854569"
 ---
 # <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 Récupère un indicateur qui indique si un autre symbole fait référence à l’adresse de ce symbole.
@@ -25,7 +25,7 @@ Récupère un indicateur qui indique si un autre symbole fait référence à l�
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_addressTaken ( 
+HRESULT get_addressTaken ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_addressTaken ( 
 
 à Retourne `TRUE` si un autre symbole fait référence à cette adresse ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

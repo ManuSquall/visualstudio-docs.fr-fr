@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a69d00be-2a89-415c-b116-385c422e2fd5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 270fc706f94e8048ef1c4cc1477a4372ed8988a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c66a98d5570628325968ba7389c87ffe0a962e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853876"
 ---
 # <a name="idiasymbolget_managed"></a>IDiaSymbol::get_managed
 Récupère un indicateur qui spécifie si le symbole fait référence au code managé.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si le symbole fait référence au code ma
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_managed ( 
+HRESULT get_managed ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_managed ( 
 
 à Retourne `TRUE` si le symbole fait référence au code managé ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

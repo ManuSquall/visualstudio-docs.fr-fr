@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dbc3e544-578a-4f0b-8d20-f21ad4cbb604
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a812b51f8f874baf0a954b33d8fe25cc382e2d83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2a78811b39243c31385201ee327fbe7b5c5416b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854912"
 ---
 # <a name="idiastackframeget_lengthlocals"></a>IDiaStackFrame::get_lengthLocals
 Récupère le nombre d’octets de variables locales faisant l’objet d’un push sur la pile.
@@ -25,7 +25,7 @@ Récupère le nombre d’octets de variables locales faisant l’objet d’un pu
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_lengthLocals ( 
+HRESULT get_lengthLocals ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_lengthLocals ( 
 
 à Retourne le nombre d’octets de variables locales.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

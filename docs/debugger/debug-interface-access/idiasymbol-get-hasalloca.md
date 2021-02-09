@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebf6a450aa9b2b5fdd05d6573fc9ee10c6f83e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6dfbb3d12e01656117c0b1a3391af5a0578358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854289"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 Récupère un indicateur qui spécifie si la fonction contient un appel à `alloca` (qui est utilisé pour allouer de la mémoire sur la pile).
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si la fonction contient un appel à `allo
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT get_hasAlloca(   BOOL *pFlag);
+HRESULT get_hasAlloca(   BOOL *pFlag);
 ```
 
 #### <a name="parameters"></a>Paramètres
@@ -33,7 +33,7 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 
 à Retourne `TRUE` si la fonction contient un appel à `alloca` ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

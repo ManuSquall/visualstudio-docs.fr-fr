@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c759ad3c-1c21-4234-869b-86aa3a608a38
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7dc0a0a640a9d3921801a9077b32ade5921ff7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 530bfc0b977cd99f1924461d52417deb49e7330e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853967"
 ---
 # <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
 Récupère la langue de la source.
@@ -25,7 +25,7 @@ Récupère la langue de la source.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_language ( 
+HRESULT get_language ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_language ( 
 
 à Retourne une valeur de l’énumération d' [énumération CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) qui spécifie le langage de la source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e2f0ec5f176ab32e6bfed1e959f68c04550f67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f5e4e55c85312033cc79c140381068a64a1ef28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854807"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Récupère un énumérateur de frame de pile pour un type de plateforme spécifique.
@@ -26,7 +26,7 @@ Récupère un énumérateur de frame de pile pour un type de plateforme spécifi
 
 ```C++
 
-      HRESULT getEnumFrames2( 
+      HRESULT getEnumFrames2( 
    enum  CV_CPU_TYPE_e    cpuid,
    IDiaStackWalkHelper*   pHelper,
    IDiaEnumStackFrames**  ppEnum
@@ -46,10 +46,10 @@ dans Objet [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastack
 
 à Retourne un objet [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) contenant une liste d’objets [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour obtenir une liste de frames de pile uniquement pour la plateforme x86, appelez la méthode [IDiaStackWalker :: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) .
 
 ## <a name="see-also"></a>Voir aussi

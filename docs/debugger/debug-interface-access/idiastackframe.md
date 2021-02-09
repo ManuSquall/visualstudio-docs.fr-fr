@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 486d25b8-a590-41c1-bdb5-faff3ae35632
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cadcfd8fed1818e18d276503c0843e0567addf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b374860c98e1d8ec53de482eecf804bd0bde7a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854842"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Expose les propriétés d’un frame de pile.
@@ -50,7 +50,7 @@ Voici les méthodes prises en charge par cette interface :
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Récupère un indicateur qui spécifie que la gestion des exceptions système est en vigueur.|
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Récupère le type de frame.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Un frame de pile est une abstraction d’un appel de fonction pendant son exécution.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

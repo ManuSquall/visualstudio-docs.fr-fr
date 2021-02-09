@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a91e9c8e-c5e3-4887-a60b-f03b5a98f30c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60b6d132e177be9abb325782c1a43497462690f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6740a183e730293c6791a7f9ca9dcc67c4fe16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854940"
 ---
 # <a name="idiastackframeget_allocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 Récupère un indicateur qui indique si le pointeur de base est alloué pour le code de cette plage d’adresses.
@@ -25,7 +25,7 @@ Récupère un indicateur qui indique si le pointeur de base est alloué pour le 
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_allocatesBasePointer ( 
+HRESULT get_allocatesBasePointer ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_allocatesBasePointer ( 
 
 à Retourne `TRUE` si un pointeur de base est alloué pour le code dans ce frame ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0615933715c0e78513f9ee33ee171cc764f5d743
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a971ccb8511d54e934ebe241b3f3285d0b44c321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855052"
 ---
 # <a name="idiasessionget_loadaddress"></a>IDiaSession::get_loadAddress
 Récupère l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles.
@@ -25,7 +25,7 @@ Récupère l’adresse de chargement du fichier exécutable qui correspond aux s
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_loadAddress ( 
+HRESULT get_loadAddress ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -35,10 +35,10 @@ HRESULT get_loadAddress ( 
 
 à Retourne une adresse virtuelle (VA) où un fichier. exe ou. dll est chargé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’adresse de chargement retournée est toujours égale à zéro, sauf si elle est définie spécifiquement à l’aide de la méthode [IDiaSession ::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) .
 
 ## <a name="see-also"></a>Voir aussi

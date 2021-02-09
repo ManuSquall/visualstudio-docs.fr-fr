@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e5b44a81-0804-429b-97d8-467cbba3132a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cee48dcfcd79c12d31d843aa20523e6d7214f740
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a85192d0ee5bc36241177a0e2e7c91933ec8e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855346"
 ---
 # <a name="idiasectioncontribget_virtualaddress"></a>IDiaSectionContrib::get_virtualAddress
 Récupère l’adresse virtuelle (VA) de la contribution.
@@ -25,7 +25,7 @@ Récupère l’adresse virtuelle (VA) de la contribution.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_virtualAddress ( 
 
 à Retourne le VA de la contribution.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

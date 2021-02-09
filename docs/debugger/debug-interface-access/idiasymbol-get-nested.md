@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ae46d43-8486-48d6-a6f2-d73ebf4023e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f2fda5fb6effff1d528ac3c98d84b670ea2c09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04de0500105a460006d49788c5563eba3820685f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853834"
 ---
 # <a name="idiasymbolget_nested"></a>IDiaSymbol::get_nested
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est imbriqué.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si le type de données défini par l’ut
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_nested ( 
+HRESULT get_nested ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_nested ( 
 
 à Retourne `TRUE` si le type de données défini par l’utilisateur est imbriqué ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

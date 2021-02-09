@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e37219e3-c021-4057-9ec8-4f7cf3c13a15
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7ff0b8a9227cd05086f84e5db1a569fb2ffb2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 693bf46ceb3194f699d9a5a4dbb0a8828e723fe5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853666"
 ---
 # <a name="idiasymbolget_relativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
 Récupère l’adresse virtuelle relative (RVA) de l’emplacement. Utilisez lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsStatic` .
@@ -25,7 +25,7 @@ Récupère l’adresse virtuelle relative (RVA) de l’emplacement. Utilisez lor
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_relativeVirtualAddress ( 
+HRESULT get_relativeVirtualAddress ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_relativeVirtualAddress ( 
 
 à Retourne l’adresse virtuelle relative de l’emplacement.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

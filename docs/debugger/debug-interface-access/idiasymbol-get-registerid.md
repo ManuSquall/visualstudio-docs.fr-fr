@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f252d02a137ada627c0c546e1f1ac79118f76de9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7c63c9464b0d8c716b4946dab5c5b86d198a14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853673"
 ---
 # <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
 Récupère l’indicateur de registre de l’emplacement lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsEnregistered` .
@@ -25,7 +25,7 @@ Récupère l’indicateur de registre de l’emplacement lorsque l' [énumérati
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_registerId ( 
+HRESULT get_registerId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_registerId ( 
 
 à Retourne l’indicateur de registre de l’emplacement.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si le symbole est relatif à un registre, autrement dit, si l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) du symbole est définie sur `LocIsRegRel` , utilisez la `get_registerId` méthode suivie d’un appel à la méthode [IDiaSymbol :: get_Offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) pour obtenir le décalage à partir du registre où se trouve le symbole.
 
 ## <a name="see-also"></a>Voir aussi

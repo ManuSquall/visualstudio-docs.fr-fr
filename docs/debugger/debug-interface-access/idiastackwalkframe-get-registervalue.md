@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca3c20a9-934a-4b2c-a7f6-7d06e8611ff2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bba448e11cd8a3be269f0824df1597ac1c6ce95a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d79a3d8fdc0a1e2c6da53b744357b92a0cc0573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854793"
 ---
 # <a name="idiastackwalkframeget_registervalue"></a>IDiaStackWalkFrame::get_registerValue
 Récupère la valeur d’un registre.
@@ -25,7 +25,7 @@ Récupère la valeur d’un registre.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_registerValue ( 
+HRESULT get_registerValue ( 
    DWORD      index,
    ULONGLONG* pRetVal
 );
@@ -40,7 +40,7 @@ dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/deb
 
 à Retourne la valeur actuelle du Registre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 17a20542-5b45-478f-bb80-0d56031aadb5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1110f0882e8281955fa4efdf41a1355405bdd557
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3be4e4fb0ca31c94378685bd117ca4ee18371601
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854156"
 ---
 # <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 Récupère un indicateur qui signale si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un C++ AMP Accelerator.
@@ -32,7 +32,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 
 à Pointeur vers un `BOOL` qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un C++ amp Accelerator. Si `TRUE` la valeur est, les `get_baseDataSlot` `get_baseDataOffset` méthodes et peuvent être utilisées pour obtenir les informations relatives à l’emplacement de stockage de la variable.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

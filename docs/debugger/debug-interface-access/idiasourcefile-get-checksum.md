@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff6b04322bca213d5eeddfbc0f7ea4b01bb9226
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 787cdd98bd049704accbe7a1aca9562bd8b9835d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854989"
 ---
 # <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
 Récupère les octets de somme de contrôle.
@@ -25,7 +25,7 @@ Récupère les octets de somme de contrôle.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_checksum ( 
+HRESULT get_checksum ( 
    DWORD  cbData,
    DWORD* pcbData,
    BYTE   data[]
@@ -45,10 +45,10 @@ dans Taille de la mémoire tampon de données, en octets.
 
 [in, out] Mémoire tampon remplie avec les octets de somme de contrôle. Si ce paramètre a `NULL` la valeur, `pcbData` retourne le nombre d’octets requis.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour déterminer le type d’algorithme de somme de contrôle utilisé pour générer les octets de somme de contrôle, appelez la méthode [IDiaSourceFile :: get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) .
 
  La somme de contrôle est généralement générée à partir de l’image du fichier source, de sorte que les modifications apportées au fichier source sont reflétées dans les modifications de la somme de contrôle en octets. Si les octets de somme de contrôle ne correspondent pas à une somme de contrôle générée à partir de l’image chargée du fichier, le fichier doit être considéré comme endommagé ou falsifié.

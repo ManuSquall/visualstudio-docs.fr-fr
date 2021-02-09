@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ddb3ff0e-cb3d-4fa0-af56-f064b218b264
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be9203b3ed22093863710eb7689b16226988efe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae878043729787b80102d4ad6ed3bf2158d3cba0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855171"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
 Récupère une énumération qui permet à un client d’itérer au sein de tous les frames insérés sur une adresse virtuelle relative (RVA) spécifiée.
@@ -23,7 +23,7 @@ Récupère une énumération qui permet à un client d’itérer au sein de tous
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findInlineFramesByRVA ( 
+HRESULT findInlineFramesByRVA ( 
    IDiaSymbol*       parent,   DWORD             rva,
    IDiaEnumSymbols** ppResult
 );
@@ -42,7 +42,7 @@ dans Spécifie l’adresse en tant qu’adresse RVA.
 
 à Contient un `IDiaEnumSymbols` objet qui contient la liste des frames récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

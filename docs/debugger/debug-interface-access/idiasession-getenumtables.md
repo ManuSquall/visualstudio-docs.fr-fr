@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66e0fba2-ca63-4e24-a46a-c99c7fb61dd1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b9b229de3818b00379d95a5c19e35c7e83c845e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33599f6315589edd5b3485e086b89f6c92d1c895
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855045"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Récupère un énumérateur pour toutes les tables contenues dans le magasin de symboles.
@@ -35,7 +35,7 @@ HRESULT getEnumTables (
 
 à Retourne un objet [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Utilisez cette interface pour énumérer les tables dans le magasin de symboles.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

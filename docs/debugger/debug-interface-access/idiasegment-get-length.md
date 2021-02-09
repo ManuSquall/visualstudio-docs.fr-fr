@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d92e394-649b-49f2-bce7-12dd9d666d85
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d878e831e18149df63243abd7c6a4ceee051d550
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a887ddad0b22cd1ccc478ab7caed1ed22c25f5d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855311"
 ---
 # <a name="idiasegmentget_length"></a>IDiaSegment::get_length
 Récupère le nombre d’octets dans le segment.
@@ -25,7 +25,7 @@ Récupère le nombre d’octets dans le segment.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_ length ( 
+HRESULT get_ length ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_ length ( 
 
 à Retourne le nombre d’octets dans le segment.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

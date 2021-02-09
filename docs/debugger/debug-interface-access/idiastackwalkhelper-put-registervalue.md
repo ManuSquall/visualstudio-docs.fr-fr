@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a2fd6c7fbca54593a547a1f014fbe7726c814c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dd354553568ec517f6816f5b279ccbe214f101c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854758"
 ---
 # <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 Définit la valeur d’un registre.
@@ -25,7 +25,7 @@ Définit la valeur d’un registre.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT put_registerValue ( 
+HRESULT put_registerValue ( 
    DWORD     index,
    ULONGLONG NewVal
 );
@@ -40,10 +40,10 @@ dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/deb
 
 dans Nouvelle valeur de registre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  En dépit de la taille de la valeur, une implémentation doit stocker uniquement ce que le registre contient normalement. Par exemple, un registre 8 bits contiendra uniquement les 8 bits les plus bas de la valeur donnée.
 
 ## <a name="see-also"></a>Voir aussi

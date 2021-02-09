@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2bae3d054aa8e331db3a345743e4f0e9c20b49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbdeb9b4a5bf6f173cbb2a0bd593202317d62342
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853995"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 Récupère un indicateur qui spécifie si le symbole de données a été fractionné en une agrégation ou une collection d’autres symboles. le compilateur traite les symboles comme des entités distinctes, même s’ils font vraiment partie d’un plus grand symbole.
@@ -35,13 +35,13 @@ HRESULT get_isSplitted(
 
 à Retourne `TRUE` si le symbole a été fractionné en un agrégat de symboles ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La méthode [IDiaSymbol :: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) retourne `TRUE` pour tous les symboles qui font partie d’un symbole de fractionnement.
 
 ## <a name="requirements"></a>Configuration requise

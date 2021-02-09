@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fe7573a-e48b-428d-9c17-7421b7209246
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f1fe583ba4932f4f534886ed1c9af34e900ba67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a61a85e36159c361f01dd4048a06c040415860d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854702"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Récupère les enfants du symbole.
@@ -25,7 +25,7 @@ Récupère les enfants du symbole.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findChildren ( 
+HRESULT findChildren ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,
@@ -50,10 +50,10 @@ dans Spécifie les options de comparaison appliquées à la correspondance de no
 
 à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode est identique à l’appel de la méthode [IDiaSession :: findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md) avec ce symbole comme premier paramètre.
 
 ## <a name="see-also"></a>Voir aussi

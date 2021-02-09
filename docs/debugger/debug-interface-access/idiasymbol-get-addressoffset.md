@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5971b5d7cf55e75c3350c72575856326be62feba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5d5c865ca503890f3f29df44bcd65dd10343bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854597"
 ---
 # <a name="idiasymbolget_addressoffset"></a>IDiaSymbol::get_addressOffset
 Récupère la partie de décalage d’un emplacement d’adresse. Utilisez lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsStatic` .
@@ -25,7 +25,7 @@ Récupère la partie de décalage d’un emplacement d’adresse. Utilisez lorsq
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_addressOffset ( 
 
 à Retourne la partie de décalage d’un emplacement d’adresse.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour les membres statiques situés dans une DLL externe, l’offset retourné par cette méthode peut être 0, car cette méthode s’appuie sur l’obtention de l’adresse virtuelle du membre. Les adresses virtuelles ne sont valides que si la méthode [IDiaSession ::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) de l’interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) a été appelée avec un paramètre différent de zéro spécifiant l’adresse de chargement de la dll.
 
  Pour accéder à la partie de section d’une adresse, appelez la méthode [IDiaSymbol :: get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) .

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aafbc86d-352c-4e1a-911a-1472d2d59212
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f350f41fab4915b7ad067038b215412e058fe838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4da4a37a59eddde4e4f7a67efe9bcc1902a29fcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855297"
 ---
 # <a name="idiasegmentget_read"></a>IDiaSegment::get_read
 Récupère un indicateur qui signale si le segment peut être lu.
@@ -25,7 +25,7 @@ Récupère un indicateur qui signale si le segment peut être lu.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_read ( 
+HRESULT get_read ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_read ( 
 
 à Retourne `TRUE` si le segment peut être lu ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

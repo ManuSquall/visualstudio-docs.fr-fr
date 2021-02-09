@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 240eb3196ac47bf48bc6d6c3ef3ca844ec010dde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2486d3cbbecad1dee6b171f105d155d95a4e231
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855129"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 Détermine les numéros de ligne du module de journalisation que le numéro de ligne spécifié dans un fichier source se trouve à l’intérieur ou à proximité.
@@ -25,7 +25,7 @@ Détermine les numéros de ligne du module de journalisation que le numéro de l
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findLinesByLinenum ( 
+HRESULT findLinesByLinenum ( 
     IDiaSymbol*           compiland,
     IDiaSourceFile*       file,
     DWORD                 linenum,
@@ -58,7 +58,7 @@ dans Spécifie le numéro de colonne. Utilisez zéro pour spécifier toutes les 
 
 à Retourne un objta [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste des numéros de ligne récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

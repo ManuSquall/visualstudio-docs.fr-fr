@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d248bd5dcacf2c852076bc1dddbcd40d149ebf67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe7d30fdf5c669f572c66a975494490ed7c4e954
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855262"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mappe les données du numéro de section aux segments de l’espace d’adressage.
@@ -25,7 +25,7 @@ Mappe les données du numéro de section aux segments de l’espace d’adressag
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaSegment : IUnknown
+IDiaSegment : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -43,7 +43,7 @@ Le tableau suivant présente les méthodes de `IDiaSegment` .
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Récupère l’adresse virtuelle relative (RVA) du début de la section.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) du début de la section.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Étant donné que le kit de développement logiciel (SDK) DIA effectue déjà des traductions du décalage de section vers des adresses virtuelles relatives, la plupart des applications n’utilisent pas les informations de la carte de segment.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

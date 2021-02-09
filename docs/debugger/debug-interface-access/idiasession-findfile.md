@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a215dc21-b316-40d7-9923-55bfa014976b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ba8422ed2be8f06ac64fb9c7fa81c5b1b3c3f3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6358f1968b9ca2da04e5e0fff62b5a5f2acbb3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855213"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 Récupère les fichiers sources par compiland et nom.
@@ -25,7 +25,7 @@ Récupère les fichiers sources par compiland et nom.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findFile ( 
+HRESULT findFile ( 
    IDiaSymbol*           pCompiland,
    LPCOLESTR             name,
    DWORD                 option,
@@ -50,7 +50,7 @@ dans Spécifie les options de comparaison appliquées à la recherche de nom. Le
 
 à Retourne un objet [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) qui contient une liste des fichiers sources récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

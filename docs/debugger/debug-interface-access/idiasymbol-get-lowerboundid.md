@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12ce98e9-a225-4947-88c9-5fda39dd67e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8adc32ab715ee81ce5a74c01431d452475c74e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1780a1ec3af3a066bae698d7e2b0db8b25c4e69b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853883"
 ---
 # <a name="idiasymbolget_lowerboundid"></a>IDiaSymbol::get_lowerBoundId
 Récupère l’identificateur de symbole de la limite inférieure d’une dimension de tableau FORTRAN.
@@ -25,7 +25,7 @@ Récupère l’identificateur de symbole de la limite inférieure d’une dimens
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_lowerBoundId ( 
+HRESULT get_lowerBoundId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_lowerBoundId ( 
 
 à Retourne l’ID de symbole du symbole qui représente la limite inférieure d’une dimension de tableau FORTRAN.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’identificateur est une valeur unique créée par le kit de développement logiciel (SDK) DIA pour marquer tous les symboles comme étant uniques.
 
 ## <a name="see-also"></a>Voir aussi

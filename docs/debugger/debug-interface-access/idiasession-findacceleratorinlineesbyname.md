@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6f8afb7275503fa3de855575e9dcb6dad0fb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a2ce0d808a21a793115c6f065ca4ab95b1507e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855234"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.
@@ -23,7 +23,7 @@ Retourne une énumération de symboles pour les frames insérés correspondant a
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findAcceleratorInlineeLinesByName ( 
+HRESULT findAcceleratorInlineeLinesByName ( 
    LPCOLESTR             name,
    DWORD                 option,
    IDiaEnumSymbols**     ppResult
@@ -43,10 +43,10 @@ dans Options de recherche de nom à utiliser lors de la recherche de frames Inli
 
 à Pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette fonction recherche des Inlines uniquement dans les fonctions d’accélérateur. Elle ignore les enregistrements de procédures C++ natifs.
 
 ## <a name="see-also"></a>Voir aussi

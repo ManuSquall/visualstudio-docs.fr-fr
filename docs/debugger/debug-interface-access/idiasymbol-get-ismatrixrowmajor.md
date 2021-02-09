@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 36b1e881-ea76-48b0-b67f-e9eb0d19bec7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eca3d36c0b0cf82ae3fe67ac527e292b401187c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f211c7c8d57b02dc6fdc615a253434c005152b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463371"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854086"
 ---
 # <a name="idiasymbolget_ismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
 Spécifie si la matrice est une ligne principale.
@@ -32,7 +32,7 @@ HRESULT get_isMatrixRowMajor(
 
 à Pointeur vers un `BOOL` qui spécifie si la matrice est une ligne principale.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

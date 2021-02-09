@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bd9207a802a919e1dd86624584bda6963d2f278
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26a617f01c56e417ed9d0a05c4fea72bc1e0b88b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854240"
 ---
 # <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
 Récupère un indicateur qui spécifie si la fonction contient un assembly inline.
@@ -35,7 +35,7 @@ HRESULT get_hasInlAsm(
 
 à Retourne `TRUE` si la fonction a un assembly inline ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8c29c91a-062d-4566-a9b7-49251036a15a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 596656930e511d68f20916bd34044410aa706c75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a0b746b639bceb49f576e6834ad0b86da75ebd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855367"
 ---
 # <a name="idiasectioncontribget_relocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 Récupère la vérification de redondance cyclique (CRC) des informations de réadressage pour la section.
@@ -25,7 +25,7 @@ Récupère la vérification de redondance cyclique (CRC) des informations de ré
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_relocationsCrc ( 
+HRESULT get_relocationsCrc ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_relocationsCrc ( 
 
 à Retourne le CRC des informations de réadressage pour la section.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

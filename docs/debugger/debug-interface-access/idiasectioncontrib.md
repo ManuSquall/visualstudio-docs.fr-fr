@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d1a52616273a1cfe1d54580c91ec4ba6e1c09e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3e4566796d65818fcf85abc70494122fe5f14d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855339"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 Récupère des données décrivant une contribution de section, autrement dit, un bloc de mémoire contigu apporté à l’image par un module de la mémoire.
@@ -25,7 +25,7 @@ Récupère des données décrivant une contribution de section, autrement dit, u
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaSectionContrib : IUnknown
+IDiaSectionContrib : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -58,7 +58,7 @@ Le tableau suivant présente les méthodes de `IDiaSectionContrib` .
 |[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Récupère le CRC des informations de réadressage pour la section.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur compiland pour la section.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Cette interface est obtenue en appelant les méthodes [IDiaEnumSectionContribs :: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) et [IDiaEnumSectionContribs :: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) . Pour obtenir un exemple d’obtention de l’interface, consultez l’interface [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) `IDiaSectionContrib` .

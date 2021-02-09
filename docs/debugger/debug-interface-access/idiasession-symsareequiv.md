@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9941d520-e203-46c0-83c3-b3a967f4fc59
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe609d53571e6ffcd8e18919f0351e29c0329b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10aa5f1b086856793fe32512867834848b6f7162
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855017"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Vérifie si deux symboles sont équivalents.
@@ -25,7 +25,7 @@ Vérifie si deux symboles sont équivalents.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT symsAreEquiv ( 
+HRESULT symsAreEquiv ( 
    IDiaSymbol* symbolA,
    IDiaSymbol* symbolB
 );
@@ -40,7 +40,7 @@ dans Premier objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol
 
 dans Deuxième `IDiaSymbol` objet utilisé dans la comparaison.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Si les symboles sont équivalents, retourne `S_OK` ; sinon, retourne `S_FALSE` , les symboles ne sont pas équivalents. Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

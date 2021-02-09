@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6469180cada412fe5f08db1bd982f5a6e250e9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853743"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 Récupère le décalage de l’emplacement du symbole. Utilisez lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) est `LocIsRegRel` ou `LocIsBitField` .
@@ -25,7 +25,7 @@ Récupère le décalage de l’emplacement du symbole. Utilisez lorsque l' [énu
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_offset ( 
+HRESULT get_offset ( 
    LONG* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_offset ( 
 
 à Retourne le décalage en octets de l’emplacement du symbole.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le décalage provient d’un point connu précédemment déterminé. Par exemple, le décalage d’un `LocIsBitField` type d’emplacement est généralement à partir du début de la classe conteneur.
 
 ## <a name="requirements"></a>Configuration requise

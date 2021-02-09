@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24e832eb-80b3-484c-a41b-11477ec9de99
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62bb2f29d737aeb09cc228038be96480922e204c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1f5deb0854a10e3d8947af7ed4c78d0432c21a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854415"
 ---
 # <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
 Cette fonction récupère un pointeur vers un symbole représentant le parent/conteneur de ce symbole.
@@ -35,7 +35,7 @@ HRESULT get_container(
 
 à Retourne un pointeur vers un `IDiaSymbol` contenant des informations sur le conteneur de ce symbole.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne S_FALSE ou un code d’erreur.
 
 > [!NOTE]

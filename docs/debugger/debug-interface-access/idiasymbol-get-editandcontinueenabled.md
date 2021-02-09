@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd703c64-9ff8-4654-8493-8cde9309cb22
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d2de1dab8fda2deacf43d9c3072d0e6fe0efa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4168ab7ba3351dc8abe5f9c781fccea881fb7df0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854352"
 ---
 # <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Récupère un indicateur qui spécifie si le module a été compilé avec le commutateur de compilateur [/Z7,/Zi,/ZI (format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format) .
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si le module a été compilé avec le com
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_editAndContinueEnabled ( 
+HRESULT get_editAndContinueEnabled ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_editAndContinueEnabled ( 
 
 à Retourne `TRUE` si Modifier & continuer a été activé lors de la compilation ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

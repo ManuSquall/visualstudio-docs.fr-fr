@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30073dd0-c864-4c4a-8863-80f243419f6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd06959a382c56a888d8d39da0c40b39a028ed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff92473577b1870fbfcb0de7731f9f4c8b94e816
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855269"
 ---
 # <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
 Récupère l’adresse virtuelle (VA) du début de la section.
@@ -25,7 +25,7 @@ Récupère l’adresse virtuelle (VA) du début de la section.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_virtualAddress ( 
 
 à Retourne le VA du début de la section.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc8128ec5c9693b399c08a134326b1f6d135d1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dc951b069342478301b0cf815d1c226f9f1da11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854135"
 ---
 # <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 Indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé pour un accélérateur qui correspond à un `parallel_for_each` appel.
@@ -32,7 +32,7 @@ HRESULT get_isAcceleratorStubFunction(
 
 à Pointeur vers un `BOOL` qui indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé pour un accélérateur qui correspond à un `parallel_for_each` appel.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

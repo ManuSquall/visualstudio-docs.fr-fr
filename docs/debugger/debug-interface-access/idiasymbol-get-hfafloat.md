@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73ddcffe-cdac-4b03-be42-82ef985d17ee
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55af1a117a089fb2a851cfdbd55a1e797e990790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f76bcfee990ac6fc55f97480886f751ae24bc00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854205"
 ---
 # <a name="idiasymbolget_hfafloat"></a>IDiaSymbol::get_hfaFloat
 Récupère un indicateur qui spécifie si un type défini par l’utilisateur (UDT) contient des données d’agrégat à virgule flottante (HFA) homogènes de type float.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si un type défini par l’utilisateur (U
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_hfaFloat( 
+HRESULT get_hfaFloat( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_hfaFloat( 
 
 à Retourne `TRUE` si l’UDT contient des données HFA de type float ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

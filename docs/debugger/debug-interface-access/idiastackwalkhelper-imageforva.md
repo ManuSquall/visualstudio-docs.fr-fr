@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f28af62a4e5eaa89e92db533bf461dbecaf039d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7f3ee8df56a0015e0ad0fc34b139a7bcaca29b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99854765"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 Retourne le début de l’image d’un exécutable en mémoire en fonction d’une adresse virtuelle quelque part dans l’espace mémoire de l’exécutable.
@@ -40,7 +40,7 @@ dans Adresse virtuelle qui se trouve dans l’espace de l’exécutable.
 
 à Retourne l’adresse virtuelle de début de l’image de l’exécutable.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
