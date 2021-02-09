@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3d98dfd0-614f-4d68-90c6-8a9b9cab66f1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e72c87bfe7649b483e744cbccffa93d7ad721a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5a27156ef9a4a7bee795261069a7df3fa1eb8a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928482"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
 Récupère la liste de tous les ports disponibles.
@@ -28,14 +28,14 @@ Récupère la liste de tous les ports disponibles.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumPorts( 
-   IEnumDebugPorts2** ppEnum
+HRESULT EnumPorts( 
+   IEnumDebugPorts2** ppEnum
 );
 ```
 
 ```csharp
-int EnumPorts( 
-   out IEnumDebugPorts2 ppEnum
+int EnumPorts( 
+   out IEnumDebugPorts2 ppEnum
 );
 ```
 
@@ -43,7 +43,7 @@ int EnumPorts( 
 `ppEnum`\
 à Retourne un objet [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) qui contient une liste de tous les ports de tous les fournisseurs de ports.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

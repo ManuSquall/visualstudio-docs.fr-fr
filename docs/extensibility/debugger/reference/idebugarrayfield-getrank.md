@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10f42ca10496d89955032bd531651186d0aecf37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926346"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 Obtient le rang ou le nombre de dimensions du tableau.
@@ -28,7 +28,7 @@ Obtient le rang ou le nombre de dimensions du tableau.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetRank( 
+HRESULT GetRank( 
    DWORD* pdwRank
 );
 ```
@@ -43,7 +43,7 @@ int GetRank(
 `pdwRank`\
 à Retourne le rang.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

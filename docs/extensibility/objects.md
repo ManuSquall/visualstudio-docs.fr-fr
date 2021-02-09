@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bff2b16684c41d18f997e6aab7950aa19a7d1db1
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: abee929ecb92605d9fd6dd576ecdf63a124349db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926883"
 ---
 # <a name="objects"></a>Objets
 Les informations de référence suivantes décrivent les objets utilisés pour créer une instance de l’éditeur de texte principal.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Objet VSCodeWindow](../extensibility/vscodewindow-object.md) Décrit l’objet de fenêtre de code, une fenêtre de document spécialisée qui peut encadrer un ou plusieurs affichages de texte.
 
 - [Objet VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) Décrit l’objet gestionnaire de fenêtre de code qui est implémenté par le service de langage et qui est responsable de la gestion des ornements.

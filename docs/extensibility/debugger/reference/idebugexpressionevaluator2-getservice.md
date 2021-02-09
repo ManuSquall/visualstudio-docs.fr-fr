@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: f8988a9e-9d18-42af-84a7-55f41e9adf63
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb0f822011a5f54cf97e58f53ec1cf03b5d26a23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926341"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Récupère un objet de service en fonction de son identificateur unique.
@@ -47,7 +47,7 @@ dans Identificateur unique du service à récupérer.
 `ppService`\
 à Retourne un objet qui représente le service.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

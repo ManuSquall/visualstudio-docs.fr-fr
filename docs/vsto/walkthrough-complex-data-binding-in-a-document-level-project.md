@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927663"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules d’un Microsoft Office feuille de calcul Excel aux champs de la base de données Northwind SQL Server.
@@ -51,7 +51,7 @@ ms.locfileid: "97527114"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
  La première étape consiste à créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -140,7 +140,7 @@ ms.locfileid: "97527114"
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vérifier que les données apparaissent comme prévu et que vous pouvez manipuler les données dans l’objet de liste.
 
 ### <a name="to-test-the-data-binding"></a>Pour tester la liaison de données
@@ -177,17 +177,17 @@ ms.locfileid: "97527114"
 
 1. Sélectionnez une cellule à l’intérieur de l’objet de liste.
 
-    Une nouvelle ligne apparaît en bas de la liste, avec un astérisque (* *\** _) dans la première cellule de la nouvelle ligne.
+    Une nouvelle ligne apparaît en bas de la liste, avec un astérisque ( **\*** ) dans la première cellule de la nouvelle ligne.
 
 2. Ajoutez les informations suivantes dans la ligne vide.
 
-   |EmployeeID|LastName|FirstName|Titre|
+   |EmployeeID|LastName|FirstName|Title|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Directeur commercial|
 
 ### <a name="to-delete-rows"></a>Suppression de lignes
 
-- Cliquez avec le bouton droit sur le nombre 16 (ligne 16) situé à l’extrême gauche de la feuille de calcul, puis cliquez sur _ * supprimer * *.
+- Cliquez avec le bouton droit sur le nombre 16 (ligne 16) situé à l’extrême gauche de la feuille de calcul, puis cliquez sur **supprimer**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Pour trier les lignes de la liste
 

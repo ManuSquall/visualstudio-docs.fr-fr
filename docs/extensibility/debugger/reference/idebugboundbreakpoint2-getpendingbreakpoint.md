@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717081905d55a4df50601bbbfc7336265cef60d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927156"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 Obtient le point d’arrêt en attente à partir duquel le point d’arrêt lié spécifié a été créé.
@@ -29,13 +29,13 @@ Obtient le point d’arrêt en attente à partir duquel le point d’arrêt lié
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetPendingBreakpoint( 
+HRESULT GetPendingBreakpoint( 
     IDebugPendingBreakpoint2** ppPendingBreakpoint
 );
 ```
 
 ```csharp
-int GetPendingBreakpoint( 
+int GetPendingBreakpoint( 
     out IDebugPendingBreakpoint2 ppPendingBreakpoint
 );
 ```
@@ -44,7 +44,7 @@ int GetPendingBreakpoint( 
 `ppPendingBreakpoint`\
 à Retourne l’objet [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) qui représente le point d’arrêt en attente qui a été utilisé pour créer ce point d’arrêt lié.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

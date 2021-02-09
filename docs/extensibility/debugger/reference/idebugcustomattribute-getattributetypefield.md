@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51341b3c9b351307d2662538cc3a6797c58b62f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa72b6dfc02f29e5efd8d3e04f98f078cba66a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928443"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 Obtient le type de classe d’attributs personnalisés.
@@ -28,7 +28,7 @@ Obtient le type de classe d’attributs personnalisés.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetAttributeTypeField( 
+HRESULT GetAttributeTypeField( 
    IDebugClassField** ppCAType
 );
 ```
@@ -43,7 +43,7 @@ int GetAttributeTypeField(
 `ppCAType`\
 à Retourne l’objet [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) qui représente la classe dont l’attribut personnalisé est une instance.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

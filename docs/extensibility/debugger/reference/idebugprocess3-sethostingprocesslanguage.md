@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926256"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Cette méthode définit le langage sous lequel le processus sera hébergé. Ce langage peut ensuite être utilisé par le moteur de débogage (DE) pour charger l’évaluateur d’expression approprié.
@@ -28,8 +28,8 @@ Cette méthode définit le langage sous lequel le processus sera hébergé. Ce l
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetHostingProcessLanguage(
-   REFGUID guidLang
+HRESULT SetHostingProcessLanguage(
+   REFGUID guidLang
 );
 ```
 
@@ -43,7 +43,7 @@ int SetHostingProcessLanguage(
 `guidLang`\
 [in] `GUID` du langage que le DE doit utiliser. Spécifiez `GUID_NULL` (C++) ou `Guid.Empty` (C#) pour que le de utilise la langue par défaut.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="remarks"></a>Notes

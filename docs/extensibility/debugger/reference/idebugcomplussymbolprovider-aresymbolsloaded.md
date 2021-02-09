@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df11531cc90081aad45b887066ce0799af771747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928716"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Détermine si les symboles de débogage sont chargés pour le module spécifié en fonction de l’identificateur de domaine d’application.
@@ -47,7 +47,7 @@ dans Identificateur du domaine d’application.
 `guidModule`\
 dans Identificateur unique du module.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 Si les symboles de débogage sont chargés, retourne `S_OK` ; sinon, retourne `S_FALSE` .
 
 ## <a name="example"></a>Exemple

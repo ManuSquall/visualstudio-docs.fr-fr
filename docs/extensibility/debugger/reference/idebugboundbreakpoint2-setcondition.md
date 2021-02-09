@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4c90c75d1ddfe4edaeb47e132f5b049ee8d29a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927104"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Définit ou modifie la condition associée à ce point d’arrêt lié.
@@ -29,13 +29,13 @@ Définit ou modifie la condition associée à ce point d’arrêt lié.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetCondition( 
+HRESULT SetCondition( 
    BP_CONDITION bpCondition
 );
 ```
 
 ```csharp
-int SetCondition( 
+int SetCondition( 
    enum_BP_CONDITION bpCondition
 );
 ```
@@ -44,7 +44,7 @@ int SetCondition( 
 `bpCondition`\
 dans Valeur de l’énumération [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) qui décrit la condition.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Notes

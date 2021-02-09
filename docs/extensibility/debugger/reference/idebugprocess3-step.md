@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69f7c1736f786b2c59678826b71f7f9349629057
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926248"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Fait en sorte que le processus effectue un pas à pas détaillé d’une instruction ou d’une instruction.
@@ -56,7 +56,7 @@ dans Une des valeurs [STEPKIND](../../../extensibility/debugger/reference/stepki
 `step`\
 dans Une des valeurs [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne le code d’erreur.
 
 ## <a name="remarks"></a>Notes

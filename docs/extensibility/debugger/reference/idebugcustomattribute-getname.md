@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aade49d77861d6aacdf955a167aeccbbaca4071
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928430"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Obtient le nom de l’attribut personnalisé.
@@ -28,7 +28,7 @@ Obtient le nom de l’attribut personnalisé.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* bstrName
 );
 ```
@@ -43,7 +43,7 @@ int GetName(
 `bstrName`\
 à Retourne une chaîne contenant le nom de l’attribut personnalisé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

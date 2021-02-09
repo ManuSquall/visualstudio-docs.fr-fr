@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f62e3a4f33193f36e76b1286ae3d35d26706b3ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928092"
 ---
 # <a name="simplified-embedding"></a>Incorporation simplifiée
 L’incorporation simplifiée est activée dans un éditeur lorsque son objet de vue de document est apparenté à (autrement dit, a rendu un enfant de) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et que l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface est implémentée pour gérer ses commandes de fenêtre. Les éditeurs d’incorporation simplifiés ne peuvent pas héberger des contrôles actifs. Les objets utilisés pour créer un éditeur avec incorporation simplifiée sont indiqués dans l’illustration suivante.

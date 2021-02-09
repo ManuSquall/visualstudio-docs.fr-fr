@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cef6cd23a1e5ff1e00e2d4d93313ee1e9355ece2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927559"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Guide pratique pour créer un manifeste de package
 Pour déployer les composants requis pour votre application, vous pouvez utiliser un package du programme d’amorçage. Un package du programme d’amorçage contient un fichier manifeste de produit unique, mais un manifeste de package pour chaque paramètre régional. Les fonctionnalités partagées entre différentes versions localisées doivent être placées dans le manifeste du produit.
@@ -40,7 +40,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
 
 2. Créez un sous-répertoire avec le nom des paramètres régionaux *, par exemple en pour* l’anglais.
 
-3. Dans Visual Studio, créez un fichier XML nommé *package.xml* , puis enregistrez-le dans le dossier *C:\package\en*
+3. Dans Visual Studio, créez un fichier XML nommé *package.xml*, puis enregistrez-le dans le dossier *C:\package\en*
 
 4. Ajoutez XML pour répertorier le nom du package du programme d’amorçage, la culture pour ce manifeste du package localisé et le contrat de licence facultatif. Le code XML suivant utilise les variables `DisplayName` et `Culture` , qui sont définies dans un élément ultérieur.
 
@@ -75,7 +75,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
 
 7. Copiez le dossier *C:\package* dans le répertoire du programme d’amorçage de Visual Studio. Pour Visual Studio 2010, il s’agit du répertoire *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Le manifeste du package contient des informations spécifiques aux paramètres régionaux, telles que les messages d’erreur, les termes du contrat de licence logiciel et les modules linguistiques.
 
 ```xml

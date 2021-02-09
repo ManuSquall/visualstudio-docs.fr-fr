@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927429"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Déployer une application dans un dossier à l’aide de Visual Studio
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser l’outil de **publication** pour publier des applications 
 
 ## <a name="deploy-to-a-local-folder"></a>Déployer sur un dossier local
 
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier** ).
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
     ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
@@ -82,7 +82,7 @@ Vous pouvez utiliser l’outil de **publication** pour publier des applications 
 
 1. Pour republier, sélectionnez **Publier**.
 
-Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vous pouvez les empaqueter dans un fichier *.zip* , utiliser une simple commande de copie ou les déployer avec le package d’installation de votre choix.
+Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vous pouvez les empaqueter dans un fichier *.zip*, utiliser une simple commande de copie ou les déployer avec le package d’installation de votre choix.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

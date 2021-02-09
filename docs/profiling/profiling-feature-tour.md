@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929106"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
 
@@ -31,7 +31,7 @@ Pour voir la prise en charge des outils de profilage pour différents types d’
 
 ## <a name="measure-performance-while-debugging"></a>Mesurer les performances pendant le débogage
 
-Les outils de profilage auxquels vous avez accès pendant une session de débogage sont disponibles dans la fenêtre Outils de diagnostic. Cette fenêtre apparaît automatiquement, sauf si vous l’avez désactivée. Pour afficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic** . Une fois la fenêtre ouverte, vous pouvez sélectionner les outils dont vous souhaitez collecter les données.
+Les outils de profilage auxquels vous avez accès pendant une session de débogage sont disponibles dans la fenêtre Outils de diagnostic. Cette fenêtre apparaît automatiquement, sauf si vous l’avez désactivée. Pour afficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**. Une fois la fenêtre ouverte, vous pouvez sélectionner les outils dont vous souhaitez collecter les données.
 
 ![Fenêtre Outils de diagnostic](../profiling/media/prof-tour-diagnostic-tools.png "Outils de diagnostic")
 
@@ -47,13 +47,13 @@ Les outils disponibles dans la fenêtre de Outils de diagnostic ou au cours d’
 - [Conseils sur les performances](../profiling/perftips.md)
 
 > [!NOTE]
-> Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic** ). Vous pouvez utiliser les outils d' [autopsie](#post_mortem) avec Windows 7 et versions ultérieures. 
+> Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Vous pouvez utiliser les outils d' [autopsie](#post_mortem) avec Windows 7 et versions ultérieures. 
 
 ## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> Mesurer les performances dans les versions release
 
 Les outils du profileur de performances sont conçus pour fournir une analyse des versions **Release** . Dans le profileur de performances, vous pouvez collecter des informations de diagnostic pendant que l’application est en cours d’exécution, puis examiner les informations collectées après l’arrêt de l’application (une analyse postale).
 
-Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2** ).
+Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2**).
 
 ![Profileur de performances](../profiling/media/prof-tour-performance-profiler.png "Profileur de performances")
 
@@ -91,7 +91,7 @@ PerfTips affiche les événements qui apparaissent également dans la vue **év�
 
 L’outil Utilisation de l’UC est un bon point de départ pour analyser les performances de votre application. Il vous en dit plus sur les ressources du processeur qu’utilise votre application. Vous pouvez utiliser l' [outil utilisation de l’UC intégré au débogueur](../profiling/beginners-guide-to-performance-profiling.md) ou l' [outil d’utilisation](../profiling/cpu-usage.md)de l’UC.
 
-Lorsque vous utilisez l’outil de l’utilisation de l’UC intégré au débogueur, ouvrez la fenêtre de l’outil de diagnostic (si elle est fermée, choisissez **Déboguer/fenêtres/afficher les outils de diagnostic** ). Pendant le débogage, ouvrez la vue  **Résumé** , puis sélectionnez **enregistrer le profil** de l’UC.
+Lorsque vous utilisez l’outil de l’utilisation de l’UC intégré au débogueur, ouvrez la fenêtre de l’outil de diagnostic (si elle est fermée, choisissez **Déboguer/fenêtres/afficher les outils de diagnostic**). Pendant le débogage, ouvrez la vue  **Résumé** , puis sélectionnez **enregistrer le profil** de l’UC.
 
 ![Activer l’utilisation de l’UC dans le Outils de diagnostic](../profiling/media/prof-tour-enable-cpu-profiling.png "Outils de diagnostic activer l’utilisation de l’UC")
 
@@ -122,11 +122,11 @@ Lorsque vous sélectionnez l’un des liens de direction, vous recevez une vue d
 
 ![Vue diff du tas Outils de diagnostic](../profiling/media/prof-tour-mem-usage-diff-heap.png "Vue diff du tas Outils de diagnostic")
 
-Par contre, si vous cliquez sur le lien sur la gauche dans la vue **Utilisation de la mémoire** , la vue du tas est organisée par nombre d’objets ; les objets d’un type particulier dont le nombre a le plus augmenté sont affichés en haut (en fonction de la colonne **Différence de nombre** ).
+Par contre, si vous cliquez sur le lien sur la gauche dans la vue **Utilisation de la mémoire**, la vue du tas est organisée par nombre d’objets ; les objets d’un type particulier dont le nombre a le plus augmenté sont affichés en haut (en fonction de la colonne **Différence de nombre**).
 
 ## <a name="analyze-resource-consumption-xaml"></a>Analyser la consommation des ressources (XAML)
 
-Dans les applications XAML, comme les applications WPF pour poste de travail Windows et les applications UWP, vous pouvez analyser la consommation des ressources avec l’outil Chronologie de l’application. Par exemple, vous pouvez analyser le temps passé par votre application à préparer les trames de l’interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l’application, le chargement des pages et le redimensionnement des fenêtres. Pour utiliser l’outil, choisissez **Chronologie de l’application** dans le profileur de performances, puis choisissez **Démarrer** . Dans votre application, effectuez le scénario susceptible de présenter un problème de consommation de ressources, puis choisissez **Arrêter la collecte** pour générer le rapport.
+Dans les applications XAML, comme les applications WPF pour poste de travail Windows et les applications UWP, vous pouvez analyser la consommation des ressources avec l’outil Chronologie de l’application. Par exemple, vous pouvez analyser le temps passé par votre application à préparer les trames de l’interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l’application, le chargement des pages et le redimensionnement des fenêtres. Pour utiliser l’outil, choisissez **Chronologie de l’application** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario susceptible de présenter un problème de consommation de ressources, puis choisissez **Arrêter la collecte** pour générer le rapport.
 
 La présence de taux de trames faibles dans le graphique **Débit visuel** peut correspondre à des problèmes visuels que vous constatez quand vous exécutez votre application. De même, la présence de nombres élevés dans le graphique **Utilisation du thread d’interface utilisateur** peut également indiquer des problèmes de réactivité de l’interface utilisateur. Dans le rapport, vous pouvez sélectionner une période de temps susceptible de présenter un problème de performances, puis examiner les activités de thread de l’interface utilisateur détaillées dans la vue Détails de la chronologie (volet inférieur).
 
@@ -140,7 +140,7 @@ Pour plus d’informations, consultez [Chronologie de l’application](../profil
 
 ## <a name="examine-application-events"></a>Examiner les événements d’application
 
-L' [Observateur d’événements](../profiling/events-viewer.md) génériques vous permet d’afficher l’activité de votre application via une liste d’événements, tels que le chargement de module, le démarrage de thread et les configurations système, afin de mieux diagnostiquer le fonctionnement de votre application dans le profileur Visual Studio. Cet outil est disponible dans le profileur de performances. Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2** ).
+L' [Observateur d’événements](../profiling/events-viewer.md) génériques vous permet d’afficher l’activité de votre application via une liste d’événements, tels que le chargement de module, le démarrage de thread et les configurations système, afin de mieux diagnostiquer le fonctionnement de votre application dans le profileur Visual Studio. Cet outil est disponible dans le profileur de performances. Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2**).
 
 L’outil affiche chaque événement dans un affichage de liste. Les colonnes fournissent des informations sur chaque événement, telles que le nom de l’événement, l’horodatage et l’ID du processus.
 
@@ -148,7 +148,7 @@ L’outil affiche chaque événement dans un affichage de liste. Les colonnes fo
 
 ## <a name="analyze-asynchronous-code-net"></a>Analyser le code asynchrone (.NET)
 
-L' [outil .net Async](../profiling/analyze-async.md) vous permet d’analyser les performances du code asynchrone dans votre application. Cet outil est disponible dans le profileur de performances. Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2** ).
+L' [outil .net Async](../profiling/analyze-async.md) vous permet d’analyser les performances du code asynchrone dans votre application. Cet outil est disponible dans le profileur de performances. Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2**).
 
 L’outil affiche chaque opération asynchrone dans un affichage de liste. Vous pouvez voir des informations telles que l’heure de début, l’heure de fin et la durée totale d’une opération asynchrone.
 
@@ -156,7 +156,7 @@ L’outil affiche chaque opération asynchrone dans un affichage de liste. Vous 
 
 ## <a name="analyze-database-performance-net-core"></a>Analyser les performances d’une base de données (.NET Core)
 
-Pour les applications .NET Core qui utilisent ADO.NET ou Entity Framework Core, l' [outil de base de données](../profiling/analyze-database.md) vous permet d’enregistrer les requêtes de base de données que votre application effectue pendant une session de diagnostic. Vous pouvez ensuite analyser des informations sur des requêtes individuelles afin de trouver les endroits où les performances de votre application peuvent être améliorées. Cet outil est disponible dans le profileur de performances. Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2** ).
+Pour les applications .NET Core qui utilisent ADO.NET ou Entity Framework Core, l' [outil de base de données](../profiling/analyze-database.md) vous permet d’enregistrer les requêtes de base de données que votre application effectue pendant une session de diagnostic. Vous pouvez ensuite analyser des informations sur des requêtes individuelles afin de trouver les endroits où les performances de votre application peuvent être améliorées. Cet outil est disponible dans le profileur de performances. Ouvrez le profileur de performances en choisissant **Déboguer** le  >  **profileur de performances** (ou **ALT + F2**).
 
 L’outil affiche chaque requête dans un affichage de liste. Vous pouvez voir des informations telles que l’heure de début et la durée de la requête.
 
@@ -172,9 +172,9 @@ Dans vos applications UWP, vous pouvez activer l’analyse de l' **interface uti
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analyser l’utilisation du GPU (Direct3D)
 
-Dans les applications Direct3D (les composants Direct3D doivent être en C++), vous pouvez examiner l’activité sur le GPU et analyser les problèmes de performances. Pour plus d’informations, consultez [Utilisation du GPU](./gpu-usage.md). Pour utiliser l’outil, choisissez **Utilisation du GPU** dans le profileur de performances, puis choisissez **Démarrer** . Dans votre application, effectuez le scénario à profiler, puis choisissez **Arrêter la collecte** pour générer un rapport.
+Dans les applications Direct3D (les composants Direct3D doivent être en C++), vous pouvez examiner l’activité sur le GPU et analyser les problèmes de performances. Pour plus d’informations, consultez [Utilisation du GPU](./gpu-usage.md). Pour utiliser l’outil, choisissez **Utilisation du GPU** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario à profiler, puis choisissez **Arrêter la collecte** pour générer un rapport.
 
-Quand vous sélectionnez une période de temps dans les graphiques et que vous choisissez **Afficher les détails** , une vue détaillée s’affiche dans le volet inférieur. Dans la vue détaillée, vous pouvez consulter le volume d’activité qui se produit sur chaque UC et GPU. Sélectionnez les événements dans le volet inférieur pour afficher des fenêtres contextuelles dans la chronologie. Par exemple, sélectionnez l’événement **Présent** pour afficher les fenêtres contextuelles des appels **Présent** . (Les lignes VSync verticales gris clair peuvent être utilisées comme référence pour déterminer si certains appels **présents** ont manqué Vsync. Il doit y avoir un seul appel **présent** entre chaque VSyncs pour que l’application atteigne régulièrement 60 fps.)
+Quand vous sélectionnez une période de temps dans les graphiques et que vous choisissez **Afficher les détails**, une vue détaillée s’affiche dans le volet inférieur. Dans la vue détaillée, vous pouvez consulter le volume d’activité qui se produit sur chaque UC et GPU. Sélectionnez les événements dans le volet inférieur pour afficher des fenêtres contextuelles dans la chronologie. Par exemple, sélectionnez l’événement **Présent** pour afficher les fenêtres contextuelles des appels **Présent**. (Les lignes VSync verticales gris clair peuvent être utilisées comme référence pour déterminer si certains appels **présents** ont manqué Vsync. Il doit y avoir un seul appel **présent** entre chaque VSyncs pour que l’application atteigne régulièrement 60 fps.)
 
 ![Outil de profilage de l’utilisation du GPU](../profiling/media/prof-tour-gpu-usage.png "Utilisation du GPU diag")
 
@@ -197,7 +197,7 @@ Pour diagnostiquer la réactivité de l’interface utilisateur, la lenteur du t
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analyser l’utilisation du réseau (UWP)
 
-Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées à l’aide de l' `Windows.Web.Http` API. Cet outil peut vous aider à résoudre des problèmes tels que les problèmes d’accès et d’authentification, l’utilisation incorrecte du cache et les performances d’affichage et de téléchargement médiocres. Pour utiliser l’outil, choisissez **Réseau** dans le profileur de performances, puis choisissez **Démarrer** . Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
+Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées à l’aide de l' `Windows.Web.Http` API. Cet outil peut vous aider à résoudre des problèmes tels que les problèmes d’accès et d’authentification, l’utilisation incorrecte du cache et les performances d’affichage et de téléchargement médiocres. Pour utiliser l’outil, choisissez **Réseau** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
 
 ![Outil de profilage de l’utilisation du réseau](../profiling/media/prof-tour-network-usage.png "Utilisation du réseau de diagnostic")
 
@@ -215,7 +215,7 @@ Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outi
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Dans Visual Studio 2019, les Explorateur de performances héritées et les outils de profilage associés tels que l’Assistant Performance ont été repliés dans le profileur de performances, que vous pouvez ouvrir à l’aide de **Debug**  >  **performance Profiler** . Dans le profileur de performances, les outils de diagnostic disponibles dépendent de la cible choisie et du projet de démarrage actuel ouvert. L’outil utilisation de l’UC fournit la fonctionnalité d’échantillonnage précédemment prise en charge dans l’Assistant performance. L’outil d’instrumentation fournit la fonctionnalité de profilage instrumenté (pour les nombres d’appels et les durées précis) qui étaient dans l’Assistant performance. Des outils mémoire supplémentaires s’affichent également dans le profileur de performances.
+Dans Visual Studio 2019, les Explorateur de performances héritées et les outils de profilage associés tels que l’Assistant Performance ont été repliés dans le profileur de performances, que vous pouvez ouvrir à l’aide de **Debug**  >  **performance Profiler**. Dans le profileur de performances, les outils de diagnostic disponibles dépendent de la cible choisie et du projet de démarrage actuel ouvert. L’outil utilisation de l’UC fournit la fonctionnalité d’échantillonnage précédemment prise en charge dans l’Assistant performance. L’outil d’instrumentation fournit la fonctionnalité de profilage instrumenté (pour les nombres d’appels et les durées précis) qui étaient dans l’Assistant performance. Des outils mémoire supplémentaires s’affichent également dans le profileur de performances.
 ::: moniker-end
 
 ![Outil Explorateur de performances](../profiling/media/prof-tour-performance-explorer.png "Explorateur de performances")
