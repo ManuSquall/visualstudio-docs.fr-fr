@@ -11,15 +11,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9eaa78a04c7dfda42a82a5d5a9ff3b407e6502d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842009"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procédure pas à pas : conception d’une zone de formulaire Outlook
   Les zones de formulaire personnalisées étendent les formulaires Microsoft Office Outlook standard et personnalisés. Dans cette procédure pas à pas, vous allez concevoir une zone de formulaire personnalisée qui s'affiche comme une nouvelle page dans la fenêtre Inspecteur d'un élément de contact. Cette zone de formulaire affiche une carte de toutes les adresses répertoriées pour le contact, en envoyant les informations d’adresse au site web Windows Live Local Search. Pour plus d’informations sur les zones de formulaire, consultez [créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).
@@ -157,7 +157,7 @@ ms.locfileid: "97524206"
     |------------------|-------------|
     |**Métier**|**4567 principale St. Buffalo, NY**|
     |**Page d'accueil**|**1234 nord du Saint-buffle, NY**|
-    |**Autres**|**3456 principale St. Seattle, WA**|
+    |**Autre**|**3456 principale St. Seattle, WA**|
 
 4. Enregistrez et fermez l'élément de contact.
 

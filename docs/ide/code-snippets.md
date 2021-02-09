@@ -12,19 +12,19 @@ helpviewer_keywords:
 - code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 642bfe9fdccaa607476facb792120502437cb4b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841964"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
@@ -39,7 +39,7 @@ Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visua
 
 Pour accéder aux extraits de code, plusieurs méthodes générales s’offrent à vous :
 
-- Dans la barre de menus, choisissez **modifier** l’extrait de code d'  >  **IntelliSense**  >  **insertion** IntelliSense
+- Dans la barre de menus, choisissez **modifier** l’extrait de code d'  >    >  **insertion** IntelliSense
 
 - Dans le menu contextuel, cliquez avec le bouton droit dans l’éditeur de code, choisissez **extrait**  >  **Insérer un extrait**
 
