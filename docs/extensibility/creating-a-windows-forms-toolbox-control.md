@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902192"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Créer un contrôle de boîte à outils Windows Forms
 
@@ -36,9 +36,9 @@ Le Windows Forms modèle de contrôle de boîte à outils crée un contrôle uti
 
 1. Créez un projet VSIX nommé `MyWinFormsControl` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** , en recherchant « VSIX ».
 
-2. Lorsque le projet s’ouvre, ajoutez un Windows Forms modèle d’élément de **contrôle de boîte à outils** nommé `Counter` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **Windows Forms contrôle de boîte à outils**
+2. Lorsque le projet s’ouvre, ajoutez un Windows Forms modèle d’élément de **contrôle de boîte à outils** nommé `Counter` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **Windows Forms contrôle de boîte à outils**
 
-3. Cela ajoute un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> pour placer le contrôle dans la **boîte à outils**et une entrée de ressource **Microsoft. VisualStudio. ToolboxControl** dans le manifeste VSIX pour le déploiement.
+3. Cela ajoute un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> pour placer le contrôle dans la **boîte à outils** et une entrée de ressource **Microsoft. VisualStudio. ToolboxControl** dans le manifeste VSIX pour le déploiement.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Créer une interface utilisateur pour le contrôle
 
@@ -56,7 +56,7 @@ Le `Counter` contrôle requiert deux contrôles enfants : un <xref:System.Windo
 
 5. Dans la fenêtre **Propriétés** , définissez les valeurs suivantes pour les contrôles sur l’aire de conception.
 
-    |Contrôler|Propriété|Valeur|
+    |Control|Propriété|Valeur|
     |-------------|--------------|-----------|
     |`Label1`|**Text**|""|
     |`Button1`|**Nom**|btnReset|
@@ -80,16 +80,16 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 3. Créez les déclarations de propriété publiques suivantes.
 
     ```csharp
-    public int Value {
+    public int Value {
         get { return currentValue; }
     }
 
-    public string Message {
+    public string Message {
         get { return displayText; }
         set { displayText = value; }
     }
 
-    public bool ShowReset {
+    public bool ShowReset {
         get { return btnReset.Visible; }
         set { btnReset.Visible = value; }
     }
@@ -101,7 +101,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 4. Placez le code suivant dans l' `Load` événement pour le contrôle.
 
     ```csharp
-    private void Counter_Load(object sender, EventArgs e)
+    private void Counter_Load(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = Message + Value;
@@ -109,12 +109,12 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
     ```
 
-    La définition du texte de l' **étiquette** dans l' <xref:System.Windows.Forms.UserControl.Load> événement permet de charger les propriétés cibles avant que leurs valeurs ne soient appliquées. La définition du texte de l' **étiquette** dans le constructeur entraînerait une **étiquette**vide.
+    La définition du texte de l' **étiquette** dans l' <xref:System.Windows.Forms.UserControl.Load> événement permet de charger les propriétés cibles avant que leurs valeurs ne soient appliquées. La définition du texte de l' **étiquette** dans le constructeur entraînerait une **étiquette** vide.
 
 5. Créez la méthode publique suivante pour incrémenter le compteur.
 
     ```csharp
-    public void Increment()
+    public void Increment()
     {
         currentValue++;
         label1.Text = displayText + Value;
@@ -126,7 +126,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 6. Ajoutez une déclaration pour l' `Incremented` événement à la classe de contrôle.
 
     ```csharp
-    public event EventHandler Incremented;
+    public event EventHandler Incremented;
     ```
 
     Les appelants peuvent ajouter des gestionnaires à cet événement pour répondre aux modifications apportées à la valeur du compteur.
@@ -134,7 +134,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 7. Revenez en mode conception et double-cliquez sur le bouton **Réinitialiser** pour générer le `btnReset_Click` Gestionnaire d’événements. Ensuite, remplissez-le comme indiqué dans l’exemple suivant.
 
     ```csharp
-    private void btnReset_Click(object sender, EventArgs e)
+    private void btnReset_Click(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = displayText + Value;
@@ -142,13 +142,13 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
     ```
 
-8. Immédiatement au-dessus de la définition de classe, dans la déclaration d’attribut `ProvideToolboxControl` , remplacez la valeur `"MyWinFormsControl.Counter"` du premier paramètre par `"General"`. Le nom du groupe d’éléments qui va héberger le contrôle dans la **boîte à outils**est ainsi défini.
+8. Immédiatement au-dessus de la définition de classe, dans la déclaration d’attribut `ProvideToolboxControl` , remplacez la valeur `"MyWinFormsControl.Counter"` du premier paramètre par `"General"`. Le nom du groupe d’éléments qui va héberger le contrôle dans la **boîte à outils** est ainsi défini.
 
     L’exemple suivant illustre l’attribut `ProvideToolboxControl` et la définition de classe ajustée.
 
     ```csharp
     [ProvideToolboxControl("General", false)]
-    public partial class Counter : UserControl
+    public partial class Counter : UserControl
     ```
 
 ### <a name="test-the-control"></a>Tester le contrôle
@@ -214,7 +214,7 @@ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un év
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Quand vous générez un contrôle de **boîte à outils** , Visual Studio crée un fichier nommé *ProjectName. vsix* dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le fichier *. vsix* sur un réseau ou un site Web. Quand un utilisateur ouvre le fichier *. vsix* , le contrôle est installé et ajouté à la **boîte à outils** Visual Studio sur l’ordinateur de l’utilisateur. Vous pouvez également télécharger le fichier *. vsix* sur [Visual Studio Marketplace](https://marketplace.visualstudio.com/) afin que les utilisateurs puissent le trouver en parcourant la **Tools**  >  boîte de dialogue**extensions et mises à jour** des outils.
+Quand vous générez un contrôle de **boîte à outils** , Visual Studio crée un fichier nommé *ProjectName. vsix* dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le fichier *. vsix* sur un réseau ou un site Web. Quand un utilisateur ouvre le fichier *. vsix* , le contrôle est installé et ajouté à la **boîte à outils** Visual Studio sur l’ordinateur de l’utilisateur. Vous pouvez également télécharger le fichier *. vsix* sur [Visual Studio Marketplace](https://marketplace.visualstudio.com/) afin que les utilisateurs puissent le trouver en parcourant la   >  boîte de dialogue **extensions et mises à jour** des outils.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99e250dab652ff0d63033f8b40423e76975eeee5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902090"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 Décrit le nombre et les conditions sur lesquelles un point d’arrêt conditionnel est déclenché.
@@ -48,7 +48,7 @@ Nombre de fois où passer le point d’arrêt avant de le déclencher.
 `stylePassCount`\
 Valeur de l’énumération [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) qui spécifie le style du nombre de passes de point d’arrêt.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette structure est un membre de la structure [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) .
 
 Cette structure est également transmise en tant que paramètre aux méthodes[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) et[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) .

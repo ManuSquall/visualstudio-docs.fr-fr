@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903237"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Cette interface est utilisée pour demander au gestionnaire de débogage de session (SDM) s’il doit s’arrêter à l’emplacement de code actuel.
@@ -46,7 +46,7 @@ IDebugCanStopEvent2 : IUknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtient le contexte de document qui décrit l’emplacement de cet événement.|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtient le contexte de code qui décrit l’emplacement de cet événement.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le DE envoie cette interface si l’utilisateur effectue un pas à pas détaillé dans une fonction et que le DE ne trouve pas d’informations de débogage ou si des informations de débogage existent, mais que ne sait pas si le code source peut être affiché pour cet emplacement.
 
 ## <a name="requirements"></a>Configuration requise

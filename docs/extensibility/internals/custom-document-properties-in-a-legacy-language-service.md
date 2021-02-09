@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7a9bd5b41d1c04e52d16ecb2fc327e648d9f81aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902999"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriétés de document personnalisées dans un service de langage hérité
 Les propriétés du document peuvent être affichées dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fenêtre **Propriétés** . Les langages de programmation n’ont généralement pas de propriétés associées à des fichiers sources individuels. Toutefois, XML prend en charge les propriétés de document qui affectent l’encodage, le schéma et la feuille de style.
@@ -32,7 +32,7 @@ Les propriétés du document peuvent être affichées dans la [!INCLUDE[vsprvs](
 ## <a name="customize-the-documentproperties-class"></a>Personnaliser la classe DocumentProperties
  Pour prendre en charge les propriétés de document personnalisées, vous devez dériver une classe de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> classe et ajouter le nombre de propriétés dont vous avez besoin. Vous devez également fournir des attributs utilisateur pour les organiser dans l’affichage de la fenêtre **Propriétés** . Si une propriété a uniquement un `get` accesseur, elle est affichée en lecture seule dans la fenêtre **Propriétés** . Si une propriété possède des `get` `set` accesseurs et, la propriété peut également être mise à jour dans la fenêtre **Propriétés** .
 
-### <a name="example"></a> Exemple
+### <a name="example"></a>Exemple
  Voici un exemple de classe dérivée de <xref:Microsoft.VisualStudio.Package.DocumentProperties> , qui présente deux propriétés, `Filename` et `Description` . Quand une propriété est mise à jour, une méthode personnalisée sur la <xref:Microsoft.VisualStudio.Package.LanguageService> classe est appelée pour écrire la propriété dans le fichier source.
 
 ```csharp
@@ -125,7 +125,7 @@ namespace TestLanguagePackage
 ## <a name="instantiate-the-custom-documentproperties-class"></a>Instancier la classe personnalisée DocumentProperties
  Pour instancier votre classe de propriétés de document personnalisée, vous devez substituer la <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> méthode dans votre version de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe pour retourner une seule instance de votre <xref:Microsoft.VisualStudio.Package.DocumentProperties> classe.
 
-### <a name="example"></a> Exemple
+### <a name="example"></a>Exemple
 
 ```csharp
 using System.ComponentModel;
@@ -152,7 +152,7 @@ namespace TestLanguagePackage
 ## <a name="properties-in-the-source-file"></a>Propriétés dans le fichier source
  Étant donné que les propriétés de document sont généralement spécifiques au fichier source, les valeurs sont stockées dans le fichier source lui-même. Cela nécessite la prise en charge de l’analyseur de langage ou du scanneur pour définir ces propriétés. Par exemple, les propriétés d’un document XML sont stockées sur le nœud racine. Les valeurs du nœud racine sont modifiées lorsque les valeurs de la fenêtre **Propriétés** sont modifiées, et le nœud racine est mis à jour dans l’éditeur.
 
-### <a name="example"></a> Exemple
+### <a name="example"></a>Exemple
  Cet exemple stocke les propriétés `Filename` et `Description` dans les deux premières lignes du fichier source, incorporées dans un en-tête de commentaire spécial, comme suit :
 
 ```

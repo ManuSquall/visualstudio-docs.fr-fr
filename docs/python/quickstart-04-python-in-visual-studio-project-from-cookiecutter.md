@@ -5,17 +5,17 @@ ms.date: 02/25/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6868b4c581674c8015d30bf81f64f2ab24ea2ee0
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 4c8a3727faa01b69962dd3dc456ac7b704f62882
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902440"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Démarrage rapide : Créer un projet à partir d’un modèle Cookiecutter
 
@@ -37,7 +37,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. Une fois le processus terminé, le message suivant s’affiche : les **fichiers ont été créés avec succès à l’aide du modèle...** Le projet est ouvert dans Explorateur de solutions automatiquement.
 
-1. Appuyez sur **CTRL** + **F5** ou sélectionnez **Déboguer**exécuter  >  **sans débogage** pour exécuter le programme.
+1. Appuyez sur **CTRL** + **F5** ou sélectionnez **Déboguer** exécuter  >  **sans débogage** pour exécuter le programme.
 
     ![Sortie du projet de modèle python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 

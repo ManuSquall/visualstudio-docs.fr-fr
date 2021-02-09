@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901616"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 Cette interface représente un thread qui s’exécute dans un programme.
@@ -55,7 +55,7 @@ IDebugThread2 : IUnknown
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Obtient les propriétés qui décrivent un thread.|
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Obtient le thread logique associé à ce thread physique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Étant donné qu’un seul thread physique peut s’exécuter dans plusieurs programmes, plusieurs `IDebugThread2` d’entre eux peuvent représenter le même thread physique.
 
  Lorsqu’un point d’arrêt ou une exception se produit, un événement est envoyé en appelant l' [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). L’un des arguments de cette méthode est une `IDebugThread2` interface qui représente le thread actuel. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) est utilisé pour obtenir l’interface [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) pour le frame de pile actuel.

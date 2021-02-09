@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fca0b999f4c5878debbdee556431d56b7977c719
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901854"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Cette interface fournit plusieurs méthodes pour accéder aux fonctionnalités de serveur et de notification d’un port.
@@ -43,7 +43,7 @@ IDebugDefaultPort2 : IDebugPort2
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtient l’interface du serveur qui héberge ce port.|
 |[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Détermine si ce port est en cours d’exécution sur l’ordinateur local.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le nom « `IDebugDefaultPort2` » est un peu d’un impropre, car il ne représente pas un port par défaut. Elle peut être appelée « IDebugPort3 ».
 
 ## <a name="requirements"></a>Configuration requise

@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55db74b2b2882aac12ac1587c4e972e31f7dfe10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64543144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902403"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Démarrage rapide : Cloner un dépôt de code Python dans Visual Studio
 
@@ -54,7 +54,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
     ![Définition du répertoire de travail pour un projet Python](media/projects-set-working-directory.png)
 
-1. Appuyez sur **CTRL** + **F5** ou sélectionnez **Déboguer**exécuter  >  **sans débogage** pour exécuter le programme. Si vous voyez s’afficher un message **FileNotFoundError** pour *koans.txt*, vérifiez le paramètre du répertoire de travail, comme indiqué à l’étape précédente.
+1. Appuyez sur **CTRL** + **F5** ou sélectionnez **Déboguer** exécuter  >  **sans débogage** pour exécuter le programme. Si vous voyez s’afficher un message **FileNotFoundError** pour *koans.txt*, vérifiez le paramètre du répertoire de travail, comme indiqué à l’étape précédente.
 
 1. Quand le programme s’exécute correctement, une erreur d’assertion s’affiche à la ligne 17 de *python3/koans/about_asserts.py*. Ceci est intentionnel : le programme est conçu pour vous apprendre Python en vous demandant de corriger toutes les erreurs intentionnelles. (Vous pouvez trouver plus d’informations sur [Ruby Koans](https://rubykoans.com/), qui a inspiré Python Koans.)
 

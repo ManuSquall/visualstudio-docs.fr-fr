@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 550baf52347c1128ef50509e7787861355c9428f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903400"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; , élément (programme d’amorçage)
 L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre de tests sur l’ordinateur local pour s’assurer que toutes les conditions préalables appropriées pour une application ont été installées.
@@ -80,8 +80,8 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 |`Name`|Obligatoire. Nom qualifié complet de l’assembly à vérifier.|
 |`PublicKeyToken`|Obligatoire. La forme abrégée de la clé publique associée à cet assembly avec nom fort. Tous les assemblys stockés dans le GAC doivent avoir un nom, une version et une clé publique.|
 |`Version`|Obligatoire. Version de l'assembly.<br /><br /> Le numéro de version a le format \<*major version*> . \<*minor version*> . \<*build version*> . \<*revision version*> .|
-|`Language`|facultatif. Langage d’un assembly localisé. La valeur par défaut est `neutral`.|
-|`ProcessorArchitecture`|facultatif. Processeur de l’ordinateur ciblé par cette installation. La valeur par défaut est `msil`.|
+|`Language`|Facultatif. Langage d’un assembly localisé. La valeur par défaut est `neutral`.|
+|`ProcessorArchitecture`|Facultatif. Processeur de l’ordinateur ciblé par cette installation. La valeur par défaut est `msil`.|
 
 ## <a name="externalcheck"></a>ExternalCheck
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `ExternalCheck` , le programme d’amorçage exécute le programme externe nommé dans un processus distinct et stocke son code de sortie dans la propriété indiquée par `Property` . `ExternalCheck` est utile pour implémenter des contrôles de dépendance complexes, ou lorsque la seule façon de vérifier l’existence d’un composant consiste à l’instancier.
@@ -92,7 +92,7 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 |---------------|-----------------|
 |`Property`|Obligatoire. Nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous l' `InstallConditions` élément, qui est un enfant de l' `Command` élément. Pour plus d’informations, consultez [ \<Commands> élément](../deployment/commands-element-bootstrapper.md).|
 |`PackageFile`|Obligatoire. Programme externe à exécuter. Le programme doit faire partie du package de distribution du programme d’installation.|
-|`Arguments`|facultatif. Fournit des arguments de ligne de commande à l’exécutable nommé par `PackageFile` .|
+|`Arguments`|Facultatif. Fournit des arguments de ligne de commande à l’exécutable nommé par `PackageFile` .|
 
 ## <a name="filecheck"></a>FileCheck
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `FileCheck` , le programme d’amorçage détermine si le fichier nommé existe et retourne le numéro de version du fichier. Si le fichier n’a pas de numéro de version, le programme d’amorçage définit la propriété nommée par `Property` sur 0. Si le fichier n’existe pas, `Property` n’est pas défini sur une valeur.
@@ -104,8 +104,8 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 | `Property` | Obligatoire. Nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous l' `InstallConditions` élément, qui est un enfant de l' `Command` élément. Pour plus d’informations, consultez [ \<Commands> élément](../deployment/commands-element-bootstrapper.md). |
 | `FileName` | Obligatoire. Nom du fichier à rechercher. |
 | `SearchPath` | Obligatoire. Disque ou dossier dans lequel rechercher le fichier. Il doit s’agir d’un chemin d’accès relatif si `SpecialFolder` est assigné ; sinon, il doit s’agir d’un chemin d’accès absolu. |
-| `SpecialFolder` | facultatif. Un dossier qui a une signification spéciale pour Windows ou pour [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . La valeur par défaut consiste à interpréter `SearchPath` comme un chemin d’accès absolu. Les valeurs valides sont les suivantes :<br /><br /> `AppDataFolder`. Le dossier Application Data pour cette [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application ; propre à l’utilisateur actuel.<br /><br /> `CommonAppDataFolder`. Le dossier Application Data utilisé par tous les utilisateurs.<br /><br /> `CommonFilesFolder`. Dossier Fichiers communs de l’utilisateur actuel.<br /><br /> `LocalDataAppFolder`. Dossier de données pour les applications non itinérantes.<br /><br /> `ProgramFilesFolder`. Le dossier Program Files standard pour les applications 32 bits.<br /><br /> `StartUpFolder`. Dossier qui contient toutes les applications lancées au démarrage du système.<br /><br /> `SystemFolder`. Dossier qui contient les DLL système 32 bits.<br /><br /> `WindowsFolder`. Dossier qui contient l’installation du système Windows.<br /><br /> `WindowsVolume`. Lecteur ou partition qui contient l’installation du système Windows. |
-| `SearchDepth` | facultatif. Profondeur à laquelle rechercher les sous-dossiers pour le fichier nommé. La recherche est prioritaire. La valeur par défaut est 0, ce qui limite la recherche au dossier de niveau supérieur spécifié par `SpecialFolder` et **SearchPath**. |
+| `SpecialFolder` | Facultatif. Un dossier qui a une signification spéciale pour Windows ou pour [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . La valeur par défaut consiste à interpréter `SearchPath` comme un chemin d’accès absolu. Les valeurs valides sont les suivantes :<br /><br /> `AppDataFolder`. Le dossier Application Data pour cette [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application ; propre à l’utilisateur actuel.<br /><br /> `CommonAppDataFolder`. Le dossier Application Data utilisé par tous les utilisateurs.<br /><br /> `CommonFilesFolder`. Dossier Fichiers communs de l’utilisateur actuel.<br /><br /> `LocalDataAppFolder`. Dossier de données pour les applications non itinérantes.<br /><br /> `ProgramFilesFolder`. Le dossier Program Files standard pour les applications 32 bits.<br /><br /> `StartUpFolder`. Dossier qui contient toutes les applications lancées au démarrage du système.<br /><br /> `SystemFolder`. Dossier qui contient les DLL système 32 bits.<br /><br /> `WindowsFolder`. Dossier qui contient l’installation du système Windows.<br /><br /> `WindowsVolume`. Lecteur ou partition qui contient l’installation du système Windows. |
+| `SearchDepth` | Facultatif. Profondeur à laquelle rechercher les sous-dossiers pour le fichier nommé. La recherche est prioritaire. La valeur par défaut est 0, ce qui limite la recherche au dossier de niveau supérieur spécifié par `SpecialFolder` et **SearchPath**. |
 
 ## <a name="msiproductcheck"></a>MsiProductCheck
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `MsiProductCheck` , le programme d’amorçage vérifie si l’installation de Microsoft Windows Installer spécifiée s’est exécutée jusqu’à ce qu’elle soit terminée. La valeur de la propriété est définie en fonction de l’état de ce produit installé. Une valeur positive indique que le produit est installé, 0 ou-1 indique qu’il n’est pas installé. (Pour plus d’informations, consultez la fonction Windows Installer SDK MsiQueryFeatureState.) . Si Windows Installer n’est pas installé sur l’ordinateur, `Property` n’est pas défini.
@@ -116,7 +116,7 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 |---------------|-----------------|
 |`Property`|Obligatoire. Nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous l' `InstallConditions` élément, qui est un enfant de l' `Command` élément. Pour plus d’informations, consultez [ \<Commands> élément](../deployment/commands-element-bootstrapper.md).|
 |`Product`|Obligatoire. GUID du produit installé.|
-|`Feature`|facultatif. GUID pour une fonctionnalité spécifique de l’application installée.|
+|`Feature`|Facultatif. GUID pour une fonctionnalité spécifique de l’application installée.|
 
 ## <a name="registrycheck"></a>RegistryCheck
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `RegistryCheck` , le programme d’amorçage vérifie si la clé de Registre spécifiée existe, ou s’il a la valeur indiquée.
@@ -127,7 +127,7 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 |---------------|-----------------|
 |`Property`|Obligatoire. Nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous l' `InstallConditions` élément, qui est un enfant de l' `Command` élément. Pour plus d’informations, consultez [ \<Commands> élément](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obligatoire. Nom de la clé de Registre.|
-|`Value`|facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` il doit s’agir d’une chaîne ou d’une valeur DWORD.|
+|`Value`|Facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` il doit s’agir d’une chaîne ou d’une valeur DWORD.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `RegistryFileCheck` , le programme d’amorçage récupère la version du fichier spécifié, en essayant d’abord de récupérer le chemin d’accès au fichier à partir de la clé de Registre spécifiée. Cela s’avère particulièrement utile si vous souhaitez rechercher un fichier dans un répertoire spécifié comme valeur dans le registre.
@@ -138,11 +138,11 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 |---------------|-----------------|
 |`Property`|Obligatoire. Nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous l' `InstallConditions` élément, qui est un enfant de l' `Command` élément. Pour plus d’informations, consultez [ \<Commands> élément](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obligatoire. Nom de la clé de Registre. Sa valeur est interprétée comme le chemin d’accès à un fichier, à moins que l' `File` attribut ne soit défini. Si cette clé n’existe pas, `Property` n’est pas défini.|
-|`Value`|facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne.|
-|`FileName`|facultatif. Nom d’un fichier. S’il est spécifié, la valeur obtenue à partir de la clé de Registre est supposée être un chemin d’accès de répertoire, et ce nom est ajouté à celui-ci. S’il n’est pas spécifié, la valeur retournée par le Registre est supposée être le chemin d’accès complet à un fichier.|
-|`SearchDepth`|facultatif. Profondeur à laquelle rechercher les sous-dossiers pour le fichier nommé. La recherche est prioritaire. La valeur par défaut est 0, ce qui limite la recherche au dossier de niveau supérieur spécifié par la valeur de la clé de registre.|
+|`Value`|Facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne.|
+|`FileName`|Facultatif. Nom d’un fichier. S’il est spécifié, la valeur obtenue à partir de la clé de Registre est supposée être un chemin d’accès de répertoire, et ce nom est ajouté à celui-ci. S’il n’est pas spécifié, la valeur retournée par le Registre est supposée être le chemin d’accès complet à un fichier.|
+|`SearchDepth`|Facultatif. Profondeur à laquelle rechercher les sous-dossiers pour le fichier nommé. La recherche est prioritaire. La valeur par défaut est 0, ce qui limite la recherche au dossier de niveau supérieur spécifié par la valeur de la clé de registre.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Tandis que les éléments sous `InstallChecks` définissent les tests à exécuter, ils ne les exécutent pas. Pour exécuter les tests, vous devez créer des `Command` éléments sous l' `Commands` élément.
 
 ## <a name="example"></a>Exemple

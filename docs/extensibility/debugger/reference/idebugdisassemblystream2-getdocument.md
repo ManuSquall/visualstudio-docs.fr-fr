@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf5d1a73e15ad38bf14d954718ce97c088b2e525
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ad0b4d4fcb316447ca836fbc5ac15170a71270e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901763"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 Obtient le document source associé à ce flux d’entrée.
@@ -28,14 +28,14 @@ Obtient le document source associé à ce flux d’entrée.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDocument( 
+HRESULT GetDocument( 
    BSTR              bstrDocumentUrl,
    IDebugDocument2** ppDocument
 );
 ```
 
 ```csharp
-int GetDocument( 
+int GetDocument( 
    string              bstrDocumentUrl,
    out IDebugDocument2 ppDocument
 );
@@ -48,10 +48,10 @@ dans URL du document.
 `ppDocument`\
 à Retourne un objet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) qui représente le document.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode est implémentée par les moteurs de débogage qui ont des documents texte qui ne sont pas stockés dans un fichier réel.
 
 ## <a name="see-also"></a>Voir aussi

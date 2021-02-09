@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 97c82254516c78a3aff9884e91e44adc45b95981
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902977"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface utilisateur personnalisée (VSPackage de contrôle de code source)
 Un VSPackage déclare ses éléments de menu et leurs États par défaut par le biais du fichier de table de commandes Visual Studio (*. vsct*). L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) affiche les éléments de menu dans leur état par défaut jusqu’à ce que le VSPackage soit chargé. Par la suite, la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est appelée pour activer ou désactiver les éléments de menu.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c98fde516a3e836302cd7eb2c73abd730d5cc8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15f52f9b71bcb18131e03a7d7fbdd9f56ac4fa6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902125"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 Spécifie le type de structure utilisé pour décrire l’emplacement du point d’arrêt.
@@ -90,7 +90,7 @@ Valeur de l’énumération [BP_LOCATION_TYPE](../../../extensibility/debugger/r
 `unionmember4`\
 [C# uniquement] Consultez la section Notes sur la façon d’interpréter.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette structure est un membre des structures [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
  [C# uniquement] Les `unionmemberX` membres sont interprétés d’après le tableau suivant. Recherchez la valeur dans la colonne de gauche, `bpLocationType` puis examinez les autres colonnes pour déterminer ce que chaque `unionmemberX` membre représente et marshaler en `unionmemberX` conséquence. Consultez l’exemple pour obtenir une façon d’interpréter une partie de cette structure en C#.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92e2561d28c3d4c7133208c78b9a492bc2614fd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729644"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901658"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 Cette interface représente un contexte pour l’évaluation de l’expression
@@ -42,7 +42,7 @@ IDebugExpressionContext2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Récupère le nom du contexte d’évaluation.|
 |[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analyse une expression basée sur du texte à des fins d’évaluation.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un contexte d’évaluation peut être considéré comme une étendue pour effectuer une évaluation d’expression.
 
  Lorsqu’un programme s’est arrêté, le gestionnaire de débogage de session (SDM) obtient un frame de pile de l’un des appels à [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Le SDM appelle ensuite [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pour accéder à l' `IDebugExpressionContext2` interface. Ceci est suivi d’un appel à [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour créer une interface [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , qui représente l’expression analysée prête à être évaluée.

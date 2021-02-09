@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 71c6e632-642a-42d8-a995-77e4ac190a5b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 222a3b2c6110f1998a4848f382694b6b999cd632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28c0d07dd389814c0aa06792f4509ed9da1b4ef9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901689"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 Obtient la portée du flux de code machine.
@@ -28,13 +28,13 @@ Obtient la portée du flux de code machine.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetScope( 
+HRESULT GetScope( 
    DISASSEMBLY_STREAM_SCOPE* pdwScope
 );
 ```
 
 ```csharp
-int GetScope( 
+int GetScope( 
    out enum_ DISASSEMBLY_STREAM_SCOPE pdwScope
 );
 ```
@@ -43,10 +43,10 @@ int GetScope( 
 `pdwScope`\
 à Retourne une valeur de l’énumération [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) qui décrit la portée de ce flux de code machine.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La portée d’un code machine peut être une fonction ou l’ensemble du module, par exemple.
 
 ## <a name="see-also"></a>Voir aussi

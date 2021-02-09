@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc55cceb8db392d590ff414ac3df5b807d1e52e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901646"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analyse une expression sous forme de texte pour une évaluation ultérieure.
@@ -68,10 +68,10 @@ dans Base à utiliser pour l’analyse de toutes les informations numériques da
 `pichError`\
 à Retourne l’index de caractère de l’erreur dans `pszCode` si l’expression contient une erreur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Lorsque cette méthode est appelée, un moteur DE débogage (DE) doit analyser l’expression et la valider pour l’exactitude. Les `pbstrError` `pichError` paramètres et peuvent être remplis si l’expression n’est pas valide.
 
 Notez que l’expression n’est pas évaluée, analysée uniquement. Un appel ultérieur aux méthodes [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) évalue l’expression analysée.

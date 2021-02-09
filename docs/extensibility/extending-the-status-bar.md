@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7776c7fa35cd7ac06dec60ced3604cb67c96da4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903197"
 ---
 # <a name="extend-the-status-bar"></a>Étendre la barre d’État
 Vous pouvez utiliser la barre d’état de Visual Studio au bas de l’IDE pour afficher des informations.
@@ -112,7 +112,7 @@ Vous pouvez utiliser la barre d’état de Visual Studio au bas de l’IDE pour 
 
 ### <a name="display-an-animation"></a>Afficher une animation
 
-1. La barre d’état affiche une animation en boucle qui indique une opération de longue durée (par exemple, la génération de plusieurs projets dans une solution). Si vous ne voyez pas cette animation, vérifiez que vous disposez des paramètres d’options d' **Outils** appropriés  >  **Options** :
+1. La barre d’état affiche une animation en boucle qui indique une opération de longue durée (par exemple, la génération de plusieurs projets dans une solution). Si vous ne voyez pas cette animation, vérifiez que vous disposez des paramètres d’options d' **Outils** appropriés  >   :
 
      Accédez à l’onglet **Outils**  >  **options**  >  **général** et décochez l’option **Ajuster automatiquement l’expérience visuelle en fonction des performances du client**. Cochez ensuite la sous-option **activer l’expérience visuelle des clients enrichis**. Vous devez maintenant être en mesure de voir l’animation lorsque vous générez le projet dans votre instance expérimentale de Visual Studio.
 

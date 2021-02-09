@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 735acca4d4b2e2881c49a236dadae44aaa3cc1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902140"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 Spécifie le type d’emplacement du point d’arrêt pour une demande de point d’arrêt.
@@ -114,7 +114,7 @@ Spécifie un masque de bits, afin que le type de point d’arrêt puisse être e
 `BPLT_LOCATION_TYPE_MASK`\
 Spécifie un masque de bits, afin que le type d’emplacement du point d’arrêt puisse être extrait de la valeur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Passé en tant que paramètre à la méthode [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) .
 
 Un type d’emplacement de point d’arrêt est composé d’un type de point d’arrêt et d’un type d’emplacement. Cela signifie qu’un type d’emplacement de point d’arrêt n’est jamais simplement un type de point d’arrêt (par exemple, `BPT_CODE` ) ou un type d’emplacement (par exemple, `BPLT_FILE_LINE` ). Les constantes prédéfinies pour tous les types d’emplacement de point d’arrêt actuellement pris en charge sont incluses dans cette énumération ( `BPLT_CODE_FILE_LINE` jusqu’à `BPLT_DATA_STRING` ).
