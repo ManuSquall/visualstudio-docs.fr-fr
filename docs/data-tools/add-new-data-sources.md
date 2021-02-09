@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867436"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 
@@ -97,10 +97,10 @@ Vous pouvez créer une source de données à partir des types de services suivan
 
 - [Services WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- SERVICES WEB
+- Services web
 
     > [!NOTE]
-    > Les éléments qui s’affichent dans la fenêtre **sources de données** dépendent des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’ **Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lorsque vous terminez l’Assistant. Cela est dû au fait que les datasets non typés ne fournissent pas de schéma et, par conséquent, que l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
+    > Les éléments qui s’affichent dans la fenêtre **sources de données** dépendent des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lorsque vous terminez l’Assistant. Cela est dû au fait que les datasets non typés ne fournissent pas de schéma et, par conséquent, que l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
 
 ## <a name="data-source-for-an-object"></a>Source de données d’un objet
 
@@ -118,7 +118,7 @@ Si vous souhaitez établir une liaison à un objet d’un assembly ou d’un pro
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Source de données d’une liste SharePoint
 
-Vous pouvez créer une source de données à partir d’une liste SharePoint en exécutant l **'Assistant Configuration de source de données** et en sélectionnant le type de source de données **SharePoint** . SharePoint expose des données par le biais de WCF Data Services, donc la création d’une source de données SharePoint est identique à la création d’une source de données à partir d’un service. La sélection de l’élément **SharePoint** dans l **'Assistant Configuration de source de données** ouvre la boîte de dialogue **Ajouter une référence de service** , où vous vous connectez au service de données SharePoint en pointant sur le serveur SharePoint. Cela nécessite le kit de développement logiciel (SDK) SharePoint.
+Vous pouvez créer une source de données à partir d’une liste SharePoint en exécutant l **'Assistant Configuration de source de données** et en sélectionnant le type de source de données **SharePoint** . SharePoint expose des données par le biais de Services de données WCF, donc la création d’une source de données SharePoint est identique à la création d’une source de données à partir d’un service. La sélection de l’élément **SharePoint** dans l **'Assistant Configuration de source de données** ouvre la boîte de dialogue **Ajouter une référence de service** , où vous vous connectez au service de données SharePoint en pointant sur le serveur SharePoint. Cela nécessite le kit de développement logiciel (SDK) SharePoint.
 
 ## <a name="see-also"></a>Voir aussi
 

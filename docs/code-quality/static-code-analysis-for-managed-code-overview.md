@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e8d9ddf88086772e0cd21bde856184954bc7143b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867683"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Vue d’ensemble de l’analyse héritée du code managé dans Visual Studio
 
@@ -36,7 +36,7 @@ Vous pouvez exécuter l’analyse du code sur votre projet manuellement ou autom
 
 Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez l’option sur la page de propriétés **analyse du code** du projet. Pour plus d’informations, consultez [Comment : activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser** exécuter l’analyse du code  >  **Run Code Analysis**  >  **exécuter l’analyse du code sur \<project>**.
+Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser** exécuter l’analyse du code  >    >  **exécuter l’analyse du code sur \<project>**.
 
 ## <a name="rule-sets"></a>Ensembles de règles
 

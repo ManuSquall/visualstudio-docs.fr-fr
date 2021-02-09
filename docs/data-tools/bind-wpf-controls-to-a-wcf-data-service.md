@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867358"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 
@@ -52,7 +52,7 @@ Vous devez disposer des éléments suivants pour exécuter cette procédure pas 
 
 La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :
 
-- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [Services de données WCF](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modèles de données dans les [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -64,7 +64,7 @@ La connaissance préalable des concepts suivants s'avère également utile, mais
 
 1. Démarrez cette procédure pas à pas en créant un projet d' **application Web** C# ou Visual Basic ASP.net. Nommez le projet **AdventureWorksService**.
 
-2. Dans l’ **Explorateur de solutions** , cliquez avec le bouton droit sur **Default.aspx** et sélectionnez **Supprimer**. Ce fichier n’est pas nécessaire pour la procédure pas à pas.
+2. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **Default.aspx** et sélectionnez **Supprimer**. Ce fichier n’est pas nécessaire pour la procédure pas à pas.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Créer un Entity Data Model pour le service
 
@@ -72,23 +72,23 @@ Pour exposer des données à une application à l’aide d’un service de donn�
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2. Dans la liste Modèles installés, cliquez sur **Données** , puis sélectionnez l’élément de projet **ADO.NET Entity Data Model**.
+2. Dans la liste Modèles installés, cliquez sur **Données**, puis sélectionnez l’élément de projet **ADO.NET Entity Data Model**.
 
 3. Remplacez le nom par `AdventureWorksModel.edmx` , puis cliquez sur **Ajouter**.
 
      L’Assistant **Entity Data Model** s’ouvre.
 
-4. Dans la page **Choisir le contenu du modèle** , cliquez sur **Générer à partir de la base de données** , puis sur **Suivant**.
+4. Dans la page **Choisir le contenu du modèle**, cliquez sur **Générer à partir de la base de données**, puis sur **Suivant**.
 
-5. Dans la page **Choisir votre connexion de données** , sélectionnez une des options suivantes :
+5. Dans la page **Choisir votre connexion de données**, sélectionnez une des options suivantes :
 
     - Si une connexion de données à l'exemple de base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la.
 
     - Cliquez sur **Nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.
 
-6. Dans la page **Choisir votre connexion de données** , vérifiez que l’option **Enregistrer les paramètres de connexion de l’entité dans App.Config en tant que** est sélectionnée, puis cliquez sur **Suivant**.
+6. Dans la page **Choisir votre connexion de données**, vérifiez que l’option **Enregistrer les paramètres de connexion de l’entité dans App.Config en tant que** est sélectionnée, puis cliquez sur **Suivant**.
 
-7. Dans la page **Choisir vos objets de base de données** , développez **Tables** , puis sélectionnez la table **SalesOrderHeader**.
+7. Dans la page **Choisir vos objets de base de données**, développez **Tables**, puis sélectionnez la table **SalesOrderHeader**.
 
 8. Cliquez sur **Terminer**.
 
@@ -96,9 +96,9 @@ Pour exposer des données à une application à l’aide d’un service de donn�
 
 Créez un service de données WCF pour exposer les données de l’Entity Data Model à une application WPF :
 
-1. Dans le menu **Projet** , sélectionnez **Ajouter un nouvel élément**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
-2. Dans la liste **Modèles installés** , cliquez sur **Web** , puis sélectionnez l’élément de projet **Service de données WCF**.
+2. Dans la liste **Modèles installés**, cliquez sur **Web**, puis sélectionnez l’élément de projet **Service de données WCF**.
 
 3. Dans la zone **nom** , tapez `AdventureWorksService.svc` , puis cliquez sur **Ajouter**.
 
@@ -121,13 +121,13 @@ Vous devez configurer le service pour qu’il fonctionne sur l’Entity Data Mod
 
 Pour afficher les données à partir du service de données WCF, créez une application WPF avec une source de données basée sur le service. Plus loin dans cette procédure pas à pas, vous allez ajouter à l'application des contrôles liés aux données.
 
-1. Dans l’ **Explorateur de solutions** , cliquez avec le bouton droit sur le nœud de la solution, cliquez sur **Ajouter** , puis sélectionnez **Nouveau projet**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution, cliquez sur **Ajouter**, puis sélectionnez **Nouveau projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet** , développez **Visual C#** ou **Visual Basic** , puis sélectionnez **Windows**.
+2. Dans la boîte de dialogue **Nouveau projet**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Windows**.
 
 3. Sélectionnez le modèle de projet **Application WPF**.
 
-4. Dans la zone **Nom** , tapez `AdventureWorksSalesEditor`, puis cliquez sur **OK**.
+4. Dans la zone **Nom**, tapez `AdventureWorksSalesEditor`, puis cliquez sur **OK**.
 
    Visual Studio ajoute le `AdventureWorksSalesEditor` projet à la solution.
 
@@ -139,19 +139,19 @@ Pour afficher les données à partir du service de données WCF, créez une appl
 
    L’Assistant **configuration de source de données** s’ouvre.
 
-7. Dans la page **Choisir un type de source de données** de l’Assistant, sélectionnez **Service** , puis cliquez sur **Suivant**.
+7. Dans la page **Choisir un type de source de données** de l’Assistant, sélectionnez **Service**, puis cliquez sur **Suivant**.
 
-8. Dans la boîte de dialogue **Ajouter une référence de service** , cliquez sur **Découvrir**.
+8. Dans la boîte de dialogue **Ajouter une référence de service**, cliquez sur **Découvrir**.
 
    Visual Studio recherche dans la solution actuelle les services disponibles et `AdventureWorksService.svc` s’ajoute à la liste des services disponibles dans la zone **services** .
 
-9. Dans la zone **Espace de noms** , tapez **AdventureWorksService**.
+9. Dans la zone **Espace de noms**, tapez **AdventureWorksService**.
 
-10. Dans la zone **Services** , cliquez sur **AdventureWorksService.svc** , puis sur **OK**.
+10. Dans la zone **Services**, cliquez sur **AdventureWorksService.svc**, puis sur **OK**.
 
     Visual Studio télécharge les informations du service et revient à l’Assistant **Configuration de source de données**.
 
-11. Dans la boîte de dialogue **Ajouter une référence de service** , cliquez sur **Terminer**.
+11. Dans la boîte de dialogue **Ajouter une référence de service**, cliquez sur **Terminer**.
 
     Visual Studio ajoute des nœuds représentant les données retournées par le service dans la fenêtre **Sources de données**.
 
@@ -159,7 +159,7 @@ Pour afficher les données à partir du service de données WCF, créez une appl
 
 Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Concepteur WPF. Plus loin dans cette procédure pas à pas, vous allez ajouter du code permettant aux utilisateurs d'afficher et de mettre à jour les enregistrements de vente à l'aide de ces boutons.
 
-1. Dans l’ **Explorateur de solutions** , double-cliquez sur **MainWindow.xaml**.
+1. Dans l’**Explorateur de solutions**, double-cliquez sur **MainWindow.xaml**.
 
    La fenêtre s'ouvre dans le Concepteur WPF.
 
@@ -181,11 +181,11 @@ Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Conce
 
 Créez des contrôles qui affichent les enregistrements des clients en faisant glisser le `SalesOrderHeaders` nœud de la fenêtre **sources de données** vers le concepteur.
 
-1. Dans la fenêtre **Sources de données** , cliquez sur le menu déroulant pour le nœud **SalesOrderHeaders** , puis sélectionnez **Détails**.
+1. Dans la fenêtre **Sources de données**, cliquez sur le menu déroulant pour le nœud **SalesOrderHeaders**, puis sélectionnez **Détails**.
 
 2. Développez le nœud **SalesOrderHeaders**.
 
-3. Pour cet exemple, certains champs ne vont pas s’afficher. Cliquez alors sur le menu déroulant situé à côté des nœuds suivants, puis sélectionnez **Aucun**  :
+3. Pour cet exemple, certains champs ne vont pas s’afficher. Cliquez alors sur le menu déroulant situé à côté des nœuds suivants, puis sélectionnez **Aucun** :
 
     - **CreditCardApprovalCode**
 
@@ -199,13 +199,13 @@ Créez des contrôles qui affichent les enregistrements des clients en faisant g
 
     Cette action empêche Visual Studio de créer des contrôles liés aux données pour ces nœuds à l'étape suivante. Pour cette procédure pas à pas, supposez que l’utilisateur final n’a pas besoin de voir ces données.
 
-4. Dans la fenêtre **Sources de données** , faites glisser le nœud **SalesOrderHeaders** dans la ligne de la grille située en dessous de la ligne contenant les boutons.
+4. Dans la fenêtre **Sources de données**, faites glisser le nœud **SalesOrderHeaders** dans la ligne de la grille située en dessous de la ligne contenant les boutons.
 
      Visual Studio génère du XAML et du code qui créent un ensemble de contrôles liés aux données de la table **Product**. Pour plus d’informations sur le code XAML et le code générés, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 5. Dans le concepteur, cliquez sur la zone de texte à côté de l’étiquette **Customer ID**.
 
-6. Dans la fenêtre **Propriétés** , cochez la case en regard de la propriété **IsReadOnly**.
+6. Dans la fenêtre **Propriétés**, cochez la case en regard de la propriété **IsReadOnly**.
 
 7. Définissez la propriété **IsReadOnly** pour chacune des zones de texte suivantes :
 
@@ -250,7 +250,7 @@ Ajoutez du code qui permet aux utilisateurs de faire défiler les enregistrement
 
 ## <a name="save-changes-to-sales-records"></a>Enregistrer les modifications apportées aux enregistrements de ventes
 
-Ajoutez du code permettant aux utilisateurs d’afficher et d’enregistrer les modifications apportées aux enregistrements de vente à l’aide du bouton **Enregistrer les modifications**  :
+Ajoutez du code permettant aux utilisateurs d’afficher et d’enregistrer les modifications apportées aux enregistrements de vente à l’aide du bouton **Enregistrer les modifications** :
 
 1. Dans le concepteur, double-cliquez sur le bouton **Enregistrer les modifications**.
 
@@ -261,7 +261,7 @@ Ajoutez du code permettant aux utilisateurs d’afficher et d’enregistrer les 
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
 
 Générez et exécutez l’application pour vérifier que vous pouvez afficher et mettre à jour les enregistrements de clients :
 
@@ -271,9 +271,9 @@ Générez et exécutez l’application pour vérifier que vous pouvez afficher e
 
      Visual Studio démarre le projet **AdventureWorksService** sans le déboguer.
 
-3. Dans l’ **Explorateur de solutions** , cliquez avec le bouton droit sur le projet **AdventureWorksSalesEditor**.
+3. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet **AdventureWorksSalesEditor**.
 
-4. Dans le menu contextuel (menu contextuel), sous **Déboguer** , cliquez sur **Démarrer une nouvelle instance**.
+4. Dans le menu contextuel (menu contextuel), sous **Déboguer**, cliquez sur **Démarrer une nouvelle instance**.
 
      L'application s'exécute. Vérifiez les éléments suivants :
 

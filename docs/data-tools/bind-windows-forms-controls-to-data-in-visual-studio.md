@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 3da0c4e9835c9b6f6498aa28b82f2e631d1717ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867410"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Lier des contrôles Windows Forms à des données dans Visual Studio
 
@@ -69,7 +69,7 @@ Vous pouvez également faire glisser des éléments depuis la fenêtre **sources
 
 ## <a name="bind-to-data-in-individual-controls"></a>Lier à des données dans des contrôles individuels
 
-Lorsque vous liez une source de données à des **Détails** , chaque colonne du DataSet est liée à un contrôle distinct.
+Lorsque vous liez une source de données à des **Détails**, chaque colonne du DataSet est liée à un contrôle distinct.
 
 ![Lier la source de données aux détails](../data-tools/media/raddata-bind-data-source-to-details.png)
 

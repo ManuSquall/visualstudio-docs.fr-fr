@@ -8,15 +8,15 @@ keywords: Bridge to Kubernetes, Azure Dev Spaces, dev Spaces, Dockr, Kubernetes,
 monikerRange: '>=vs-2019'
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: bd28921b7812689554e1dd707c500434bb021c9c
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+manager: jmartens
+ms.openlocfilehash: b250454fe5e80ec18f75add92c8c2f653893e994
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867618"
 ---
-# <a name="configure-bridge-to-kubernetes"></a>Configurer Bridge sur Kubernetes
+# <a name="configure-bridge-to-kubernetes"></a>Configurer Bridge to Kubernetes
 
 Le `KubernetesLocalProcessConfig.yaml` fichier vous permet de répliquer des variables d’environnement et des fichiers montés disponibles pour vos Pod dans votre cluster AKS. Vous pouvez spécifier les actions suivantes dans un `KubernetesLocalProcessConfig.yaml` fichier :
 
@@ -56,7 +56,7 @@ env:
     value: $(volumeMounts:default-token-*)
 ```
 
-L’exemple ci-dessus utilise l’entrée dans *env* pour télécharger un volume correspondant à un * \* jeton par défaut*, tel que *default-Token-1111* ou *default-Token-1234-5678-90abcdef*. Dans les cas où plusieurs volumes correspondent, le premier volume correspondant est utilisé. Tous les fichiers sont téléchargés sur `/var/run/secrets/kubernetes.io/serviceaccount` votre ordinateur de développement à l’aide de l’entrée dans *volumeMounts*. La variable d’environnement *KUBERNETES_IN_CLUSTER_CONFIG_OVERRIDE* a la valeur `/var/run/secrets/kubernetes.io/serviceaccount` .
+L’exemple ci-dessus utilise l’entrée dans *env* pour télécharger un volume correspondant à un *\* jeton par défaut*, tel que *default-Token-1111* ou *default-Token-1234-5678-90abcdef*. Dans les cas où plusieurs volumes correspondent, le premier volume correspondant est utilisé. Tous les fichiers sont téléchargés sur `/var/run/secrets/kubernetes.io/serviceaccount` votre ordinateur de développement à l’aide de l’entrée dans *volumeMounts*. La variable d’environnement *KUBERNETES_IN_CLUSTER_CONFIG_OVERRIDE* a la valeur `/var/run/secrets/kubernetes.io/serviceaccount` .
 
 ## <a name="make-a-service-available"></a>Rendre un service disponible
 
@@ -71,7 +71,7 @@ env:
     value: $(services:myapp1)/api/v1/
 ```
 
-L’exemple ci-dessus rend le service *MyApp1* disponible pour votre ordinateur de développement et la variable d’environnement *MYAPP1_SERVICE_HOST* est définie sur l’adresse IP locale du service *MyApp1* avec le `/api/v1` chemin d’accès (autrement dit, `127.1.1.4/api/v1` ). Le service *MyApp1* est accessible à l’aide de la variable d’environnement, *MyApp1*ou *MyApp1. svc. cluster. local*.
+L’exemple ci-dessus rend le service *MyApp1* disponible pour votre ordinateur de développement et la variable d’environnement *MYAPP1_SERVICE_HOST* est définie sur l’adresse IP locale du service *MyApp1* avec le `/api/v1` chemin d’accès (autrement dit, `127.1.1.4/api/v1` ). Le service *MyApp1* est accessible à l’aide de la variable d’environnement, *MyApp1* ou *MyApp1. svc. cluster. local*.
 
 > [!NOTE]
 > Le fait de rendre un service disponible sur votre ordinateur de développement rend le service complet disponible quel que soit le chemin d’accès que vous définissez. Le chemin d’accès est utilisé uniquement pour définir la variable d’environnement à utiliser sur l’ordinateur de développement.

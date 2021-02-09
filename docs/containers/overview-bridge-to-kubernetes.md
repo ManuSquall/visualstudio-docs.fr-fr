@@ -6,15 +6,15 @@ ms.topic: conceptual
 description: Décrit les processus d’utilisation de Bridge vers Kubernetes pour connecter votre ordinateur de développement à votre cluster Kubernetes
 keywords: Pont vers Kubernetes, Dockr, Kubernetes, Azure, conteneurs
 monikerRange: '>=vs-2019'
-manager: jillfra
+manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
-ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
+ms.openlocfilehash: 253b50ff4778458b28375b06b7fb7f24f4d85054
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96595264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867566"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Comment fonctionne Bridge to Kubernetes
 
@@ -138,7 +138,7 @@ Appliquez les autorisations à l’aide de la commande :
 kubectl -n <namespace> apply -f <yaml file name>
 ```
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 Bridge vers Kubernetes présente les limitations suivantes :
 

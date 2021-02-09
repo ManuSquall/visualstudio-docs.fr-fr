@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ba8ecdd3a1aae382d1b74d75e26e614ba07e6a66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867605"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur d’ensembles de règles d’analyse du code
 
@@ -28,10 +28,10 @@ Le tableau suivant présente les options de gravité :
 |Action (gravité)|Description|
 |-|-|
 |Avertissement|Génère un avertissement dans le **liste d’erreurs** et également au moment de la génération.|
-|Error|Génère une erreur dans le **liste d’erreurs** et également au moment de la génération.|
+|Erreur|Génère une erreur dans le **liste d’erreurs** et également au moment de la génération.|
 |Informations|Génère un message dans le **liste d’erreurs**.|
 |Hidden|La violation n’est pas visible pour l’utilisateur. Toutefois, l’IDE est averti de la violation.|
-|Aucun|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
+|None|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
 
 L’éditeur affiche les règles dans une arborescence qui regroupe les règles par un champ d’ensemble de règles que vous spécifiez. Pour ajouter ou supprimer des règles dans un ensemble de règles, effectuez une ou plusieurs des étapes suivantes :
 
@@ -44,7 +44,7 @@ L’éditeur affiche les règles dans une arborescence qui regroupe les règles 
 
 - Activez ou désactivez la case à cocher d’une règle individuelle. Lorsque vous activez la case à cocher d’une règle, la règle est définie sur l’action d' **Avertissement** .
 
-## <a name="toolbar"></a>Barre d'outils
+## <a name="toolbar"></a>Barre d’outils
 
 Vous pouvez utiliser la barre d’outils de l’éditeur d’ensembles de règles pour regrouper, filtrer et rechercher les données qui s’affichent dans la grille d’ensemble de règles.
 
