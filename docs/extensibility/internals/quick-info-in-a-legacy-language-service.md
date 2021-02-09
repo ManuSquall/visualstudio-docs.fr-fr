@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a2798f54bc89b9dddea3e3727084bae0086fab0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915244"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informations rapides dans un service de langage hérité
 Info Express IntelliSense affiche des informations sur un identificateur dans la source lorsque l’utilisateur place le signe insertion dans l’identificateur et sélectionne **Info Express** dans le menu **IntelliSense** ou maintient le curseur de la souris sur l’identificateur. Cela entraîne l’affichage d’une info-bulle avec des informations sur l’identificateur. Ces informations se composent généralement du type d’identificateur. Lorsque le moteur de débogage est actif, ces informations peuvent inclure la valeur actuelle. Le moteur de débogage fournit des valeurs d’expression, tandis que le service de langage gère uniquement les identificateurs.

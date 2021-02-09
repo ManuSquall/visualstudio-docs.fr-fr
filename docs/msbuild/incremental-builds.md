@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: f1237128852cec39ff49204e1c269f10153b42ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914082"
 ---
 # <a name="incremental-builds"></a>builds incrémentiels
 
@@ -40,7 +40,7 @@ Les correspondances « 1 à 1 » sont généralement produites par des transform
 </Target>
 ```
 
-Le jeu de fichiers représenté par le type d’élément `Compile` est copié dans un répertoire de sauvegarde. Les fichiers de sauvegarde ont l’extension de nom de fichier *.bak* . Si les fichiers représentés par le type d’élément `Compile`, ou les fichiers de sauvegarde correspondants, ne sont pas supprimés ou modifiés après l’exécution de la cible de sauvegarde, celle-ci est ignorée dans les builds suivantes.
+Le jeu de fichiers représenté par le type d’élément `Compile` est copié dans un répertoire de sauvegarde. Les fichiers de sauvegarde ont l’extension de nom de fichier *.bak*. Si les fichiers représentés par le type d’élément `Compile`, ou les fichiers de sauvegarde correspondants, ne sont pas supprimés ou modifiés après l’exécution de la cible de sauvegarde, celle-ci est ignorée dans les builds suivantes.
 
 ## <a name="output-inference"></a>Inférence de sortie
 
@@ -54,7 +54,7 @@ Celle-ci s’utilise dans trois cas :
 
 - La cible ne comprend aucune sortie obsolète, et est donc ignorée. MSBuild évalue la cible et apporte des modifications aux éléments et aux propriétés comme si la cible avait été exécutée.
 
-Pour que la compilation incrémentielle soit prise en charge, les tâches doivent vérifier que la valeur de l’attribut `TaskParameter` d’un élément `Output` est égale à un paramètre d’entrée de tâche. Voici quelques exemples :
+Pour que la compilation incrémentielle soit prise en charge, les tâches doivent vérifier que la valeur de l’attribut `TaskParameter` d’un élément `Output` est égale à un paramètre d’entrée de tâche. En voici quelques exemples :
 
 ```xml
 <CreateProperty Value="123">

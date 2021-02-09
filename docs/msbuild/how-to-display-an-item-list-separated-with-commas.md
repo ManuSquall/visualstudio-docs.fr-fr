@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 3ac0295b2d6f4300fa29c893d61616977ad44b87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914421"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Guide pratique pour afficher une liste d’éléments séparés par des virgules
 
@@ -30,7 +30,7 @@ Par défaut, MSBuild utilise des points-virgules pour séparer les éléments d�
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Lorsque la `@(TXTFile)` liste d’éléments contient les éléments *App1.txt*, *App2.txt*et *App3.txt*, le message est :
+Lorsque la `@(TXTFile)` liste d’éléments contient les éléments *App1.txt*, *App2.txt* et *App3.txt*, le message est :
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -73,5 +73,5 @@ Pour cet exemple, la commande équivalente de ligne de commande est la suivante�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Éléments](../msbuild/msbuild-items.md)

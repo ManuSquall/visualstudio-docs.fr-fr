@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: bd9d77e32f9c287ac2dfcf3905fe9335e119a3a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914489"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Guide pratique pour générer les mêmes fichiers sources avec des options différentes
 
@@ -193,5 +193,5 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Project, élément (MSBuild)](../msbuild/project-element-msbuild.md)

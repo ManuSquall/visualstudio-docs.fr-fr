@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c552e57c43b5abc1a41ecd468747b4ce32241a6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75b5e75362330def308bc3b0b836d22807aea66a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912727"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 Ignore le nombre spécifié d'éléments.
@@ -43,7 +43,7 @@ int Skip(
 `celt`\
 [in] Nombre d'éléments à ignorer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

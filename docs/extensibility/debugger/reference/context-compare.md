@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f273bbab4a85f03a7da0d155d8b9e081693987c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912976"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 Spécifie les critères de comparaison de deux contextes de mémoire.
@@ -89,7 +89,7 @@ Passé comme argument à la méthode [compare](../../../extensibility/debugger/r
 
 Ces valeurs sont utilisées pour rechercher le premier contexte de mémoire dans une liste qui répond aux critères de comparaison spécifiés. Un contexte de mémoire reçoit une liste de contextes de mémoire à comparer par rapport à la `IDebugMemoryContext2::Compare` méthode. Le premier contexte de mémoire dans la liste pour lequel l’opérateur de comparaison est `true` alors retourné.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

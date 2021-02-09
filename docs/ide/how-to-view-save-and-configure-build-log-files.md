@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bca2ae08037a63cfbf8647808c7b1c7329ad2aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914925"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération
 

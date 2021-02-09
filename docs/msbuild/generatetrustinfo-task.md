@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a90188244e32b6f593affd2c29a227a2810227d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 831f6fa76ba3d6cfdebbb6b850862155ad280641
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914726"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo (tâche)
 
@@ -41,7 +41,7 @@ Génère le niveau de confiance de l’application à partir du manifeste de bas
 |`TargetZone`|Paramètre `String` facultatif.<br /><br /> Spécifie un jeu d’autorisations de zone par défaut, obtenu à partir de la stratégie de l’ordinateur.|
 |`TrustInfoFile`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> obligatoire.<br /><br /> Spécifie le fichier qui contient les informations d’approbation de sécurité de l’application.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

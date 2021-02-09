@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913947"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
 
@@ -95,13 +95,13 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément grouping pour d’autres éléments.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 L’utilisation de la notation @ ( \<myType> ) permet d’étendre une collection d’éléments de type \<myType> dans une liste de chaînes délimitées par des points-virgules, et de la passer à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe @(\<myType>, '\<separator>').
 
-Le moteur MSBuild peut évaluer des caractères génériques tels que `*` et `?` et des caractères génériques récursifs, tels que */ \* \* / \* . cs* . Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Le moteur MSBuild peut évaluer des caractères génériques tels que `*` et `?` et des caractères génériques récursifs, tels que */ \* \* / \* . cs*. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Exemples
 

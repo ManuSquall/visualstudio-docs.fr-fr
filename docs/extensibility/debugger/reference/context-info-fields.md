@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c0d67afa2b20e239180848ef1e68d0f0a0c3079
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912965"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 Spécifie les informations à récupérer sur un contexte de mémoire.
@@ -28,7 +28,7 @@ Spécifie les informations à récupérer sur un contexte de mémoire.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-enum enum_CONTEXT_INFO_FIELDS {
+enum enum_CONTEXT_INFO_FIELDS {
     CIF_MODULEURL =       0x00000001,
     CIF_FUNCTION =        0x00000002,
     CIF_FUNCTIONOFFSET =  0x00000004,
@@ -78,7 +78,7 @@ Ces indicateurs sont également utilisés pour indiquer les champs de la `CONTEX
 
 Ces valeurs peuvent être combinées avec une opération or au niveau du bit.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

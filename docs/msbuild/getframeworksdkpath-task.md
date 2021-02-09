@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4061dbe96c84648aacf136c0d59b92a2af037e2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c0fe468f593d085c10f8d077246af6858d0571fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914640"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (tâche)
 
@@ -42,7 +42,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkSdkPath`
 |`FrameworkSdkVersion40Path`|Paramètre de sortie en lecture seule `String` facultatif.<br /><br /> Retourne le chemin du SDK .NET version 4.0, s’il est présent. Sinon, retourne `String.Empty`.|
 |`Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin de la dernière version du SDK .NET, si une version est présente. Sinon, retourne `String.Empty`.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

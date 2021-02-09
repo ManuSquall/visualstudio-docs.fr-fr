@@ -5,18 +5,18 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72983664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912433"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projets de service cloud Azure pour Python
 
@@ -26,7 +26,7 @@ Un [service cloud](/azure/cloud-services/) se compose d’un nombre quelconque d
 
 Cet article contient des détails sur le modèle de projet et les autres prises en charge dans Visual Studio 2017 et ultérieur (les versions antérieures sont similaires, mais présentent quelques différences). Pour plus d’informations sur l’utilisation d’Azure à partir de Python, visitez le [centre de développement Azure Python](/azure/python/).
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 1. Installez le [Kit de développement logiciel (SDK) Azure .net pour Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), qui est requis pour utiliser le modèle de service Cloud.
 1. Dans Visual Studio, sélectionnez **fichier**  >  **nouveau**  >  **projet**, puis recherchez « Azure Python » et sélectionnez **service Cloud Azure** dans la liste :
@@ -89,7 +89,7 @@ Notez que les instances de service cloud n’incluent aucun compilateur C, ce qu
 
 pip et ses dépendances, ainsi que les packages contenus dans le fichier *requirements.txt*, sont téléchargés automatiquement et peuvent être pris en compte dans l’utilisation de la bande passante facturable. Consultez [Gérer les packages nécessaires](managing-required-packages-with-requirements-txt.md) pour plus d’informations sur la gestion des fichiers *requirements.txt*.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Si votre rôle web ou de travail ne se comporte pas correctement après le déploiement, vérifiez les points suivants :
 

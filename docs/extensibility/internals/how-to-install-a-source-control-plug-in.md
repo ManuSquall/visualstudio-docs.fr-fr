@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912752"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Comment : installer un plug-in de contrôle de code source
 La création d’un plug-in de contrôle de code source implique trois étapes :
@@ -37,7 +37,7 @@ La création d’un plug-in de contrôle de code source implique trois étapes 
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>Pour inscrire la DLL du plug-in de contrôle de code source
 
-1. Ajoutez deux entrées sous la clé **HKEY_LOCAL_MACHINE** dans la sous-clé **Software** qui spécifie la sous-clé de nom de votre société, suivie de la sous-clé de nom de produit. Le modèle est **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valeur \<entry>**  =  *value*. Les deux entrées sont toujours appelées **SCCServerName** et **SCCServerPath**. Chaque est une chaîne normale.
+1. Ajoutez deux entrées sous la clé **HKEY_LOCAL_MACHINE** dans la sous-clé **Software** qui spécifie la sous-clé de nom de votre société, suivie de la sous-clé de nom de produit. Le modèle est **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valeur \<entry>**  =  . Les deux entrées sont toujours appelées **SCCServerName** et **SCCServerPath**. Chaque est une chaîne normale.
 
     Par exemple, si le nom de votre société est Microsoft et que votre produit de contrôle de code source est nommé SourceSafe, ce chemin d’accès au registre est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. Dans cette sous-clé, la première entrée, **SCCServerName**, est une chaîne lisible par l’utilisateur qui nomme votre produit. La deuxième entrée, **SCCServerPath**, est le chemin d’accès complet à la dll du plug-in de contrôle de code source à laquelle l’IDE doit se connecter. Vous trouverez ci-dessous des exemples d’entrées de Registre :
 
@@ -55,7 +55,7 @@ La création d’un plug-in de contrôle de code source implique trois étapes 
 
       **HideInVisualStudio** est une valeur DWORD et est définie sur *1* pour masquer le plug-in ou sur *0* pour afficher le plug-in. Si l’entrée de Registre n’apparaît pas, le comportement par défaut consiste à afficher le plug-in.
 
-   - L’entrée de Registre **DisableSccManager** peut être utilisée pour désactiver ou masquer l’option de menu de **\<Source Control Server> lancement** qui apparaît normalement dans le sous **File**  >  -menu **contrôle de source** de fichier. La sélection de cette option de menu appelle la fonction [SccRunScc](../../extensibility/sccrunscc-function.md) . Votre plug-in de contrôle de code source ne prend peut-être pas en charge un programme externe. par conséquent, vous souhaiterez peut-être désactiver ou même masquer l’option de menu **lancer** .
+   - L’entrée de Registre **DisableSccManager** peut être utilisée pour désactiver ou masquer l’option de menu de **\<Source Control Server> lancement** qui apparaît normalement dans le sous   >  -menu **contrôle de source** de fichier. La sélection de cette option de menu appelle la fonction [SccRunScc](../../extensibility/sccrunscc-function.md) . Votre plug-in de contrôle de code source ne prend peut-être pas en charge un programme externe. par conséquent, vous souhaiterez peut-être désactiver ou même masquer l’option de menu **lancer** .
 
       **DisableSccManager** est une valeur DWORD qui est définie sur *0* pour activer l’option de menu **Launch \<Source Control Server>** , à la valeur *1* pour désactiver l’option de menu et à la valeur *2* pour masquer l’option de menu. Si cette entrée de Registre n’apparaît pas, le comportement par défaut consiste à afficher l’option de menu.
 

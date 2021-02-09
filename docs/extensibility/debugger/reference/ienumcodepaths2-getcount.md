@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab16a27257229bf97145403b99af9e478eae65db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b85490c3641158ecff6881e139dbec54796e0f5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912917"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 Retourne le nombre d’éléments dans l’énumération.
@@ -43,10 +43,10 @@ int GetCount(
 `pcelt`\
 à Retourne le nombre d’éléments dans l’énumération.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode ne fait pas partie de l’interface d’énumération com personnalisée qui spécifie que seules les `Next` `Clone` méthodes,, `Skip` et `Reset` doivent être implémentées.
 
 ## <a name="see-also"></a>Voir aussi

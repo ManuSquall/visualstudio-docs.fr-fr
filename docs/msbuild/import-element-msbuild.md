@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c3a0d22019a0c7722b135392c53c7f9bfbcaab69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914098"
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 
@@ -55,7 +55,7 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 
 ### <a name="child-elements"></a>Éléments enfants
 
- Aucun
+ None
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -64,7 +64,7 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contient une collection d’éléments `Import` regroupés sous une condition facultative. |
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  L’élément `Import` vous permet de réutiliser du code commun à de nombreux fichiers projet. Cela facilite la maintenance du code, car les mises à jour que vous apportez au code partagé sont propagées à tous les projets qui l’importent.
 

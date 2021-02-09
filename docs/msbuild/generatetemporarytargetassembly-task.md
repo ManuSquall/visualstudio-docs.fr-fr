@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: f4a41a5cbecea69d4843cbd70479a604f91b2218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914736"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly, tâche
 
@@ -45,7 +45,7 @@ La <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> tâche g
 | `ReferencePath` | Paramètre **ITaskItem []** facultatif.<br /><br /> Spécifie une liste d’assemblys, par chemin et nom de fichier, qui sont référencés par les types qui sont compilés dans l’assembly cible temporaire. |
 | `ReferencePathTypeName` | Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le paramètre utilisé par le paramètre de cible de compilation (**CompileTargetName**) qui spécifie la liste des références d’assembly (**ReferencePath**). La valeur appropriée est **ReferencePath**. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 La première passe de compilation du balisage, qui est exécutée par [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compile les fichiers XAML au format binaire. Par conséquent, le compilateur a besoin d’une liste des assemblys référencés qui contiennent les types utilisés par les fichiers XAML. Toutefois, si un fichier XAML utilise un type défini dans le même projet, un assembly correspondant pour ce projet n’est pas créé tant que le projet n’est pas généré. Ainsi, une référence d’assembly ne peut pas être fournie pendant la première passe de compilation du balisage.
 
@@ -79,7 +79,7 @@ L’exemple suivant génère un assembly temporaire, car *Page1.xaml* contient u
 
 - [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
 - [Vue d’ensemble des applications de navigateur XAML WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

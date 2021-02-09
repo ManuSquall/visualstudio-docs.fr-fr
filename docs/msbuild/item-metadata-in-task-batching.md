@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913880"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’élément dans le traitement par lots des tâches
 
@@ -231,4 +231,4 @@ Items in ExampColl: Item2;Item5
 - [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Traitement par lot](../msbuild/msbuild-batching.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

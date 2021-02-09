@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 810cbd4987277416b5be545603908d9818bff890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914755"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tâche)
 
@@ -38,7 +38,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateResource` .
 |Paramètre|Description|
 |---------------|-----------------|
 |`AdditionalInputs`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient des entrées supplémentaires pour la vérification des dépendances effectuée par cette tâche. Par exemple, les fichiers projet et cibles doivent généralement être des entrées, pour que toutes les ressources soient régénérées en cas de mise à jour.|
-|`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Spécifie un tableau de paires nom-valeur de variables d’environnement qui doivent être passées au *resgen.exe*généré, en plus (ou en substituant de manière sélective) le bloc environnement normal.|
+|`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Spécifie un tableau de paires nom-valeur de variables d’environnement qui doivent être passées au *resgen.exe* généré, en plus (ou en substituant de manière sélective) le bloc environnement normal.|
 |`ExcludedInputPaths`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie un tableau d’éléments qui indiquent les chemins à partir desquels les entrées suivies seront ignorées pendant la vérification de mise à jour.|
 |`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si `true` , exécute *tlbimp.exe* et *aximp.exe* à partir de la version cible de .NET Framework appropriée pour générer les assemblys de wrapper nécessaires. Ce paramètre autorise le multi-ciblage de `ResolveComReferences`.|
 |`FilesWritten`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les noms de tous les fichiers écrits sur disque. Cela comprend le fichier cache, le cas échéant. Ce paramètre est utile pour les implémentations de Clean.|
@@ -64,7 +64,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateResource` .
 |`TrackFileAccess`|Paramètre <xref:System.Boolean> facultatif.<br /><br /> Si la valeur est true, le répertoire du fichier d’entrée est utilisé pour résoudre les chemins de fichiers relatifs.|
 |`UseSourcePath`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, indique que le répertoire du fichier d’entrée doit être utilisé pour résoudre les chemins de fichiers relatifs.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Étant donné que les fichiers *.resx* peuvent contenir des liens vers d’autres fichiers de ressources, il ne suffit pas de simplement comparer les horodatages des fichiers *.resx* et *.resources* pour savoir si les sorties sont à jour. Au lieu de cela, la tâche `GenerateResource` suit les liens figurant dans les fichiers *.resx* et vérifie aussi les horodatages des fichiers liés. Cela signifie qu’en général vous ne devez pas utiliser d’attributs `Inputs` et `Outputs` sur la cible contenant la tâche `GenerateResource`, car elle risque dans ce cas d’être ignorée alors qu’elle doit être exécutée.
 

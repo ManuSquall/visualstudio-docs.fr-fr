@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912734"
 ---
 # <a name="image-service-and-catalog"></a>Service d’images et catalogue
 Ce livre de recettes contient des conseils et des pratiques recommandées pour l’adoption du service d’images Visual Studio et du catalogue d’images introduit dans Visual Studio 2015.
@@ -103,11 +103,11 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 </Symbols>
 ```
 
-|**Sous-élément**|**Définition**|
+|**Sous-élément**|**Definition**|
 |-|-|
-|Importation|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|
+|Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID|
-|ID|Le symbole représente un ID et doit être un entier non négatif|
+|id|Le symbole représente un ID et doit être un entier non négatif|
 |String|Le symbole représente une valeur de chaîne arbitraire|
 
  Les symboles respectent la casse et sont référencés à l’aide de la syntaxe $ (Symbol-Name) :
@@ -143,10 +143,10 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 </Image>
 ```
 
-|**Attribut**|**Définition**|
+|**Attribut**|**Definition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
-|ID|Souhaitée La partie ID du moniker d’image|
+|id|Souhaitée La partie ID du moniker d’image|
 |AllowColorInversion|[Facultatif, valeur par défaut true] Indique si les couleurs de l’image peuvent être inversées par programmation lorsqu’elles sont utilisées sur un arrière-plan sombre.|
 
  **Source**
@@ -159,14 +159,14 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
  </Source>
 ```
 
-|**Attribut**|**Définition**|
+|**Attribut**|**Definition**|
 |-|-|
 |Uri|Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’autorité application:///<br />-Référence de ressource de composant absolue<br />-Chemin d’accès à un fichier contenant une ressource native|
 |Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> *Clair :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> *Foncé :* La source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut Background est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si Background est *clair*, *Dark*, *HighContrastLight* ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si Background est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
 
 Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :
 
-|**Element**|**Attributs (tous obligatoires)**|**Définition**|
+|**Element**|**Attributs (tous obligatoires)**|**Definition**|
 |-|-|-|
 |\<Size>|Valeur|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|
 |\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images comprises entre MinSize et MaxSize (en unités de périphérique). L’image sera carrée.|
@@ -179,10 +179,10 @@ Un \<Source> élément peut avoir exactement l’un des sous-éléments facultat
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribut**|**Définition**|
+|**Attribut**|**Definition**|
 |-|-|
 |Type|Souhaitée Type de la ressource native (XAML ou PNG)|
-|ID|Souhaitée La partie ID d’entier de la ressource native|
+|id|Souhaitée La partie ID d’entier de la ressource native|
 
  **ImageList**
 
@@ -195,10 +195,10 @@ Un \<Source> élément peut avoir exactement l’un des sous-éléments facultat
  </ImageList>
 ```
 
-|**Attribut**|**Définition**|
+|**Attribut**|**Definition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
-|ID|Souhaitée La partie ID du moniker d’image|
+|id|Souhaitée La partie ID du moniker d’image|
 |Externe|[Facultatif, valeur par défaut false] Indique si le moniker d’image référence une image dans le manifeste actuel.|
 
  Le moniker de l’image contenue n’a pas besoin de référencer une image définie dans le manifeste actuel. Si l’image contenue est introuvable dans la bibliothèque d’images, une image d’espace réservé vide sera utilisée à la place.

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bb6b44713ba61d14c508c0db2a51391a350015
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 93dbe9d3bf49118328cb53dcd6602bb5fda77b13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436475"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914871"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tâche)
 
@@ -152,7 +152,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper
 
    Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

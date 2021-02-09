@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06329fcfcefe3ea75b772495f6a7e0dd14ced087
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 925bc0f123649bd0d5d29f5a7bec83227829b8af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915222"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Points d’extension du service de langage et de l’éditeur
 L’éditeur fournit des points d’extension que vous pouvez étendre en tant que composants de Managed Extensibility Framework (MEF), y compris la plupart des fonctionnalités du service de langage. Voici les principales catégories de points d’extension :
@@ -28,7 +28,7 @@ L’éditeur fournit des points d’extension que vous pouvez étendre en tant q
 
 - Marges et barres de défilement
 
-- Étiquettes
+- Balises
 
 - Ornements
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dea1b70335f7a1cc98bc1ee111ff58d69023c18a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914661"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (tâche)
 
@@ -45,7 +45,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkPath` .
 |`FrameworkVersion40Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin des assemblys du .NET Framework version 4.0, s’ils existent. Sinon, retourne `null`.|
 |`Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin des assemblys de la version la plus récente du .NET Framework, s’ils sont disponibles. Sinon, retourne `null`.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Si plusieurs versions de la .NET Framework sont installées, cette tâche retourne la version sur laquelle MSBuild est conçu pour s’exécuter.
 

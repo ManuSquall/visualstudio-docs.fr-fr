@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 000b46223811490695562159822f61240d0cea66
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: b4cb6cbdaee7e5bed6cb80cea1f431a6db4d286e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915039"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer du code Visual Basic avec Visual Studio
 
@@ -63,7 +63,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Tout d’abord, vous allez créer un projet d’application console .NET Core. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -104,7 +104,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
    
 ::: moniker-end
 
-## <a name="create-the-application"></a>Création de l'application
+## <a name="create-the-application"></a>Créer l’application
 
 1. Dans *Program. vb*, remplacez tout le code par défaut par le code suivant à la place :
 

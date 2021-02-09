@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0384ee6cbfa749589e15ab073cc31ffebb53985e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912528"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference, tâche
 
@@ -40,7 +40,7 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |`DelaySign`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, place la clé publique dans l’assembly. Si la valeur est `false`, signe complètement l’assembly.|
 |`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont passées à la *tlbimp.exe* et à la *aximp.exe* générées en plus du bloc environnement normal ou en remplacement de manière sélective.|
 |`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si `true` , exécute *tlbimp.exe* et *aximp.exe* à partir de la version cible de .NET Framework appropriée pour générer les assemblys de wrapper nécessaires. Ce paramètre permet le multiciblage.|
-|`IncludeVersionInInteropName`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la version de la typelib sera incluse dans le nom du wrapper. La valeur par défaut est `false`.|
+|`IncludeVersionInInteropName`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la version de la typelib sera incluse dans le nom du wrapper. Par défaut, il s’agit de `false`.|
 |`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur qui contient une paire de clés publique/privée.|
 |`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie un élément qui contient une paire de clés publique/privée.|
 |`NoClassMembers`|Paramètre `Boolean` facultatif.|
@@ -49,8 +49,8 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |`ResolvedModules`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.|
 |`SdkToolsPath`|Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Si `ExecuteAsTool` a la valeur `true`, ce paramètre doit être défini sur le chemin des outils du SDK de la version du framework ciblée.|
 |`StateFile`|Paramètre `String` facultatif.<br /><br /> Spécifie le fichier cache pour les horodateurs de composant COM. S’il n’est pas présent, chaque exécution régénère tous les wrappers.|
-|`TargetFrameworkVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la version du framework cible du projet.<br /><br /> La valeur par défaut est `String.Empty`. ce qui signifie qu’il n’existe pas de filtrage pour une référence basée sur le framework cible.|
-|`TargetProcessorArchitecture`|Paramètre `String` facultatif.<br /><br /> Spécifie l’architecture de processeur cible préférée. Passé à l’indicateur *tlbimp.exe* /machine après traduction.<br /><br /> La valeur du paramètre doit être un membre de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
+|`TargetFrameworkVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la version du framework cible du projet.<br /><br /> Par défaut, il s’agit de `String.Empty`. ce qui signifie qu’il n’existe pas de filtrage pour une référence basée sur le framework cible.|
+|`TargetProcessorArchitecture`|Paramètre `String` facultatif.<br /><br /> Spécifie l’architecture de processeur cible préférée. Passé à l’indicateur *tlbimp.exe*/machine après traduction.<br /><br /> La valeur du paramètre doit être un membre de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
 |`TypeLibFiles`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le chemin du fichier de bibliothèque de types vers les références COM. Les éléments inclus dans ce paramètre peuvent contenir des métadonnées d’élément. Pour plus d’informations, consultez la section [Métadonnées d’élément TypeLibFiles](#typelibfiles-item-metadata) ci-dessous.|
 |`TypeLibNames`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les noms de bibliothèques de types à résoudre. Les éléments inclus dans ce paramètre doivent contenir certaines métadonnées d’élément. Pour plus d’informations, consultez la section [Métadonnées d’élément TypeLibNames](#typelibnames-item-metadata) ci-dessous.|
 |`WrapperOutputDirectory`|Paramètre `String` facultatif.<br /><br /> Emplacement sur le disque où se trouve l’assembly d’interopérabilité généré. Si ces métadonnées d’élément ne sont pas spécifiée, la tâche utilise le chemin absolu du répertoire où se trouve le fichier projet.|
@@ -80,7 +80,7 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 > [!NOTE]
 > Plus vous fournissez d’informations pour identifier de façon univoque une bibliothèque de types, plus grande est la possibilité que la tâche aboutisse au fichier correct sur le disque.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base de tâche](../msbuild/task-base-class.md).
 

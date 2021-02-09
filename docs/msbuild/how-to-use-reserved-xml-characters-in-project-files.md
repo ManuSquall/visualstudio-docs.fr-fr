@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f98044378b717536c42f25f5033b072ac3680675
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 64a45bae9665c0c39e9b709cec185f0434f3889b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914169"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Guide pratique pour utiliser des caractères XML réservés dans les fichiers projet
 
@@ -77,5 +77,5 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)
