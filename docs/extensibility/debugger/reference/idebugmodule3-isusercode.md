@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 435ec50ef5437e5aca5d3722a2041115882d15f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8b313ecdbc1168238bad517f34350a420fb30ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929769"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 Récupère des informations indiquant si le module représente ou non le code utilisateur.
@@ -28,8 +28,8 @@ Récupère des informations indiquant si le module représente ou non le code ut
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT IsUserCode(
-   BOOL* pfUser
+HRESULT IsUserCode(
+   BOOL* pfUser
 );
 ```
 
@@ -43,7 +43,7 @@ int IsUserCode(
 `pfUser`\
 à Différent de zéro ( `TRUE` ) si le module représente le code utilisateur, zéro ( `FALSE` ) si ce n’est pas le cas.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

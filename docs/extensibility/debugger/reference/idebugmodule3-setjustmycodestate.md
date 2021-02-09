@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09617dda06cf2c3132ba4d8fb26a90f0b7cea08d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c387f44f6e16717ee01d73d633d0cfa791e1325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929717"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 Marque le module comme étant du code utilisateur ou non.
@@ -28,8 +28,8 @@ Marque le module comme étant du code utilisateur ou non.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetJustMyCodeState(
-   BOOL fIsUserCode
+HRESULT SetJustMyCodeState(
+   BOOL fIsUserCode
 );
 ```
 
@@ -43,7 +43,7 @@ int SetJustMyCodeState(
 `fIsUserCode`\
 dans Différent de zéro ( `TRUE` ) si le module doit être considéré comme du code utilisateur, zéro ( `FALSE` ) si ce n’est pas le cas.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

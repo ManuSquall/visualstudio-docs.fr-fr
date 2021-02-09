@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8bb0bdeae09f22a2b45e3029fbc9097c00911d2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930016"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows à mise à jour automatique qui peuvent être installées et exécutées avec une intervention minimale de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre une prise en charge complète de la publication et de la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual C#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les applications Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -40,7 +40,7 @@ ms.locfileid: "94382671"
   Par le passé, ces problèmes ont parfois amené les développeurs à décider de créer des applications Web plutôt que des applications Windows, en sacrifiant une interface utilisateur riche pour faciliter l’installation. En utilisant des applications déployées à l’aide [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de, vous pouvez bénéficier du meilleur des deux technologies.
 
 ## <a name="what-is-a-clickonce-application"></a>Qu’est-ce qu’une application ClickOnce ?
- Une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est un Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *. exe* ), une application console ( *. exe* ) ou une solution Office ( *. dll* ) publiée à l’aide de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie. Vous pouvez publier une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application de trois façons différentes : à partir d’une page Web, à partir d’un partage de fichiers réseau ou à partir d’un support tel qu’un CD-ROM. Une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut être installée sur l’ordinateur d’un utilisateur final et s’exécuter localement, même lorsque l’ordinateur est hors connexion, ou elle peut être exécutée en mode en ligne uniquement sans installer définitivement quoi que ce soit sur l’ordinateur de l’utilisateur final. Pour plus d’informations, consultez [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est un Windows Presentation Foundation (*. XBAP*), Windows Forms (*. exe*), une application console (*. exe*) ou une solution Office (*. dll*) publiée à l’aide de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie. Vous pouvez publier une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application de trois façons différentes : à partir d’une page Web, à partir d’un partage de fichiers réseau ou à partir d’un support tel qu’un CD-ROM. Une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut être installée sur l’ordinateur d’un utilisateur final et s’exécuter localement, même lorsque l’ordinateur est hors connexion, ou elle peut être exécutée en mode en ligne uniquement sans installer définitivement quoi que ce soit sur l’ordinateur de l’utilisateur final. Pour plus d’informations, consultez [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications peuvent être mises à jour automatiquement ; ils peuvent rechercher les versions plus récentes dès qu’elles sont disponibles et remplacer automatiquement les fichiers mis à jour. Le développeur peut définir le comportement de mise à jour, et un administrateur réseau peut aussi contrôler les stratégies de mise à jour, par exemple en marquant une mise à jour comme étant obligatoire. Les mises à jour peuvent également être restaurées vers une version antérieure par l’utilisateur final ou par un administrateur. Pour plus d’informations, consultez [choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -62,7 +62,7 @@ ms.locfileid: "94382671"
  L' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] architecture de déploiement de base est basée sur deux fichiers manifeste XML : un manifeste d’application et un manifeste de déploiement. Les fichiers sont utilisés pour décrire l’emplacement d’installation des applications ClickOnce, comment elles sont mises à jour et quand elles sont mises à jour.
 
 ### <a name="publish-clickonce-applications"></a>Publier des applications ClickOnce
- Le manifeste d’application décrit l’application elle-même. Cela comprend les assemblys, les dépendances et les fichiers qui composent l’application, les autorisations requises et l’emplacement où les mises à jour seront disponibles. Le développeur d’applications crée le manifeste d’application à l’aide de l’Assistant Publication dans Visual Studio ou du Outil Manifest Generation and Editing ( *Mage.exe* ) dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Le manifeste d’application décrit l’application elle-même. Cela comprend les assemblys, les dépendances et les fichiers qui composent l’application, les autorisations requises et l’emplacement où les mises à jour seront disponibles. Le développeur d’applications crée le manifeste d’application à l’aide de l’Assistant Publication dans Visual Studio ou du Outil Manifest Generation and Editing (*Mage.exe*) dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  Le manifeste de déploiement décrit la façon dont l’application est déployée. Cela comprend l’emplacement du manifeste d’application et la version de l’application que les clients doivent exécuter.
 
@@ -106,7 +106,7 @@ ms.locfileid: "94382671"
 
  Le tableau suivant indique la version .NET Framework requise pour prendre en charge les applications ClickOnce dans ces navigateurs.
 
-|Browser|Version du .NET Framework|
+|Navigateur|Version du .NET Framework|
 |-------------|----------------------------|
 |Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|
 |Firefox|2.0 SP1, 3.5 SP1, 4|

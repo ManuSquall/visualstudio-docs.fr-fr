@@ -14,15 +14,15 @@ dev_langs:
 ms.assetid: 20bc1e38-049b-4388-87c4-936815d85b46
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65969e354a5d1ed2dc1cf54ca31e6088cc19de7a
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 19232155a802e0e883b6169fe71fe5005711031c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930263"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Le débogage en mode mixte des processus IA64 n'est pas pris en charge.
 Visual Studio ne prend pas en charge le débogage en mode mixte du code natif et managé dans les processus IA64. Autrement dit, vous ne pouvez pas passer du code managé au code natif, ou inversement, lorsque vous procédez au débogage.
@@ -31,7 +31,7 @@ Visual Studio ne prend pas en charge le débogage en mode mixte du code natif et
 
 - Déboguez votre code managé et natif dans des sessions de débogage distinctes.
 
-     - ou -
+     -ou-
 
      Déboguez votre code mixte en tant que processus 32 bits, de la façon décrite dans les procédures suivantes.
 

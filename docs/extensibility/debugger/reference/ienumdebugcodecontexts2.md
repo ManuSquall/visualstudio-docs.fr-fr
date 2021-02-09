@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6917c44bb3ddc80513e7c45a6aa4ea0207fd46c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929392"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 Cette interface énumère les contextes de code associés à la session de débogage, ou à un programme ou un document particulier.
@@ -44,7 +44,7 @@ IEnumDebugCodeContexts2 : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Récupère un nombre spécifié de contextes de code dans une séquence d’énumération.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Ignore un nombre spécifié de contextes de code dans une séquence d’énumération.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|Réinitialise une séquence d'énumération.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
+|[Répliqué](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Obtient le nombre de contextes de code dans un énumérateur.|
 
 ## <a name="remarks"></a>Notes

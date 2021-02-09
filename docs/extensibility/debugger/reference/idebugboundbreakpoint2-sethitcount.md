@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5daff1f0bd1928633a32021f96addcacd291694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930471"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Définit le nombre d’accès pour le point d’arrêt lié.
@@ -29,13 +29,13 @@ Définit le nombre d’accès pour le point d’arrêt lié.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetHitCount( 
+HRESULT SetHitCount( 
    DWORD dwHitCount
 );
 ```
 
 ```csharp
-int SetHitCount( 
+int SetHitCount( 
    uint dwHitCount
 );
 ```
@@ -44,7 +44,7 @@ int SetHitCount( 
 `dwHitCount`\
 dans Nombre d’accès à définir.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Notes

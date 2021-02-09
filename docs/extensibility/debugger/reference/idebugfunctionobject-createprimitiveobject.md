@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad4328d2ae94a23ebaa9fb4fd0aa0d2cff7c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929980"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 Crée un objet de données primitif, tel qu’un entier simple.
@@ -28,7 +28,7 @@ Crée un objet de données primitif, tel qu’un entier simple.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT CreatePrimitiveObject( 
+HRESULT CreatePrimitiveObject( 
    OBJECT_TYPE    ot,
    IDebugObject** ppObject
 );
@@ -48,7 +48,7 @@ dans Valeur de l’énumération [OBJECT_TYPE](../../../extensibility/debugger/r
 `ppObject`\
 à Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet nouvellement créé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

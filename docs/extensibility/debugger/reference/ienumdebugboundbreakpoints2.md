@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421d46efbef189fd6ffc86812d2bfdd28f5da5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d52aad69397be315cf9c06b5f49a2c55d2fce28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929522"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 Cette interface énumère les points d’arrêt liés associés à un point d’arrêt ou un événement lié à un point d’arrêt en attente.
@@ -48,7 +48,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Récupère un nombre spécifié de points d’arrêt liés dans une séquence d’énumération.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Ignore un nombre spécifié de points d’arrêt liés dans une séquence d’énumération.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|Réinitialise une séquence d'énumération.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
+|[Répliqué](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Obtient le nombre de points d’arrêt liés dans un énumérateur.|
 
 ## <a name="remarks"></a>Notes

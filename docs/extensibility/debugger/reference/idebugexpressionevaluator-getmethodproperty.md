@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ebcf24ee39505091ff79c1f2f31d505217f77efb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29a8e22301cbcd074c12d100d13601b57871a91a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930406"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 Cette méthode obtient un objet de propriété qui contient les variables locales, les arguments et les autres propriétés d’une méthode.
@@ -28,7 +28,7 @@ Cette méthode obtient un objet de propriété qui contient les variables locale
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetMethodProperty( 
+HRESULT GetMethodProperty( 
    IDebugSymbolProvider* pSymbolProvider,
    IDebugAddress*        pAddress,
    IDebugBinder*         pBinder,
@@ -63,7 +63,7 @@ dans Une valeur différente `TRUE` de zéro () signifie que les variables locale
 `ppProperty`\
 à Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente la méthode.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

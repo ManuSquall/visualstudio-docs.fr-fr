@@ -17,15 +17,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 10b914ac60e19e39fb7712aa8021c5d988aada50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930302"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -41,7 +41,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 ## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?
 
-|Scénario|Intitulé|
+|Scénario|Title|
 |-|-|
 |**Déboguer mon application avec IntelliTrace :**<br /><br /> - Me montrer les événements passés.<br />- Me montrer les informations sur les appels avec les événements passés.<br />- Enregistrer ma session IntelliTrace.<br />- Vérifier les données collectées par IntelliTrace.|- [Inspecter les États d’application précédents à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procédure pas à pas : utilisation d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)|
 |**Collecter des données IntelliTrace à partir d'applications déployées**|- [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -49,7 +49,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a>Quelles applications peuvent être déboguées à l'aide d'IntelliTrace ?
 
-| Niveau de support| Types d'applications |
+| Niveau de support| Types d’applications |
 |---------------------| - |
 | **Prise en charge complète** | - Applications Visual Basic et Visual C# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une application SharePoint à l’aide d’IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Prise en charge limitée** | -Les applications C++ ciblant Windows prennent en charge l’affichage des instantanés à l’aide d’IntelliTrace. Seuls les événements de débogueur et d’exception sont pris en charge.<br />-Applications .NET Core et ASP.NET Core prises en charge pour certains événements uniquement (événements du contrôleur MVC, ADO.NET et HTTPClient) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou ASP.NET Core.<br />- Applications F# à titre expérimental<br />-Applications UWP prises en charge pour les événements uniquement |

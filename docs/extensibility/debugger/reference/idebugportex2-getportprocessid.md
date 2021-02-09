@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae974461e312c68e6fcc14150a08879ac7709950
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a5648fa4b251e96327a35ecf29c2684a312fa99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929652"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 Obtient l’ID de processus du port lui-même.
@@ -28,13 +28,13 @@ Obtient l’ID de processus du port lui-même.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetPortProcessId ( 
+HRESULT GetPortProcessId ( 
    DWORD* pdwProcessId
 );
 ```
 
 ```csharp
-int GetPortProcessId ( 
+int GetPortProcessId ( 
    out uint pdwProcessId
 );
 ```
@@ -43,7 +43,7 @@ int GetPortProcessId ( 
 `pdwProcessId`\
 à Retourne l’ID de processus physique du port lui-même.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6ba87d6c1a1f7370ce5e209440589f362b87035
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13759bc8598c4739fbb9d2263dd8dc7d1b84c16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930419"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 Cette méthode convertit un emplacement et un offset de méthode en une adresse mémoire.
@@ -28,7 +28,7 @@ Cette méthode convertit un emplacement et un offset de méthode en une adresse 
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetMethodLocationProperty( 
+HRESULT GetMethodLocationProperty( 
    LPCOLESTR             upstrFullyQualifiedMethodPlusOffset,
    IDebugSymbolProvider* pSymbolProvider,
    IDebugAddress*        pAddress,
@@ -63,7 +63,7 @@ dans Binder exprimé sous la forme d’un objet [IDebugBinder](../../../extensib
 `ppProperty`\
 à Retourne une interface [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente l’adresse mémoire.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

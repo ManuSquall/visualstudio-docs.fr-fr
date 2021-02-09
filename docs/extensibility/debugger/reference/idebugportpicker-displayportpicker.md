@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0a02169b37bba804034990ed5d972f973244769
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49cc4500e887a3fbfcd8f6da8a62c42c75ef56aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929535"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 Affiche la boîte de dialogue spécifiée qui permet à l’utilisateur de sélectionner un port.
@@ -47,7 +47,7 @@ dans Handle de la boîte de dialogue parente.
 `pbstrPortId`\
 à Chaîne de l’identificateur de port.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Une valeur de retour `S_FALSE` (ou une valeur de retour de `S_OK` avec la valeur `BSTR` `NULL` ) indique que l’utilisateur a cliqué sur **Annuler**.
 
 ## <a name="see-also"></a>Voir aussi

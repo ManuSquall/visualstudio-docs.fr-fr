@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1fe98d10-c8f9-4b39-a920-99169bfd542e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 2982912a0bf165f25b7777311d6db9a1bbe01a8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975275"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930276"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Débogueur Microsoft Visual Studio (Exception levée) (boîte de dialogue)
 Une exception s'est produite dans votre programme. Cette boîte de dialogue indique le type d'exception levé. Votre code doit gérer cette exception. Pour ce faire, vous avez le choix entre les options suivantes :
