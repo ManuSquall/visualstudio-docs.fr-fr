@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e5d113718c2ecc73ad942dd58ddf92216fe6c83
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875118"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 
@@ -58,7 +58,7 @@ Le **liste des tâches** répertorie toutes les erreurs de compilation dans la f
 Le **liste des tâches** comprend les erreurs qui se produisent dans les blocs de script dans le fichier XSLT.
 
 > [!NOTE]
-> Le débogueur XSLT n’a pas d’avertissements, donc ils n’apparaissent jamais dans le **liste des tâches** .
+> Le débogueur XSLT n’a pas d’avertissements, donc ils n’apparaissent jamais dans le **liste des tâches**.
 
 ## <a name="breakpoints-window"></a>Points d'arrêt (fenêtre)
 

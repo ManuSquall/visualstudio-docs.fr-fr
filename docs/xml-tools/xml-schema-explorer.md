@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c4b16c1baa039a2f1e812d35e7a4994ffc0d5e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874884"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 
@@ -37,7 +37,7 @@ L' **Explorateur de schémas XML** vous permet d’effectuer les opérations sui
 
 - générer un exemple de code XML pour les éléments globaux.
 
-L' **Explorateur de schémas XML** fournit une vue hiérarchique du jeu de schémas via une arborescence. L' **Explorateur de schémas XML** fournit également des opérations de recherche, de filtrage, de navigation et de tri. Pour accéder à l' **Explorateur de schémas XML** , effectuez l’une des opérations suivantes :
+L' **Explorateur de schémas XML** fournit une vue hiérarchique du jeu de schémas via une arborescence. L' **Explorateur de schémas XML** fournit également des opérations de recherche, de filtrage, de navigation et de tri. Pour accéder à l' **Explorateur de schémas XML**, effectuez l’une des opérations suivantes :
 
 - Si vous êtes dans la [vue de départ](../xml-tools/start-view.md), cliquez sur le lien **Explorateur de schémas XML** .
 
@@ -45,7 +45,7 @@ L' **Explorateur de schémas XML** fournit une vue hiérarchique du jeu de sché
 
 - Vous pouvez également sélectionner l' **Explorateur de schémas XML** dans le menu **affichage** .
 
-- Vous pouvez accéder à l' **Explorateur de schémas XML** à partir d’un fichier *. vb* qui a un littéral XML Visual Basic associé à un fichier *. xsd* . Pour afficher le jeu de schémas dans l' **Explorateur de schémas XML** , cliquez avec le bouton droit sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML, puis sélectionnez la commande **afficher dans l’Explorateur de schémas** . Pour plus d’informations, consultez [intégration de littéraux XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- Vous pouvez accéder à l' **Explorateur de schémas XML** à partir d’un fichier *. vb* qui a un littéral XML Visual Basic associé à un fichier *. xsd* . Pour afficher le jeu de schémas dans l' **Explorateur de schémas XML**, cliquez avec le bouton droit sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML, puis sélectionnez la commande **afficher dans l’Explorateur de schémas** . Pour plus d’informations, consultez [intégration de littéraux XML avec l’Explorateur de schémas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Arborescence
 L' **Explorateur de schémas XML** affiche des informations sur le jeu de schémas précompilés dans une arborescence. L'arborescence est organisée comme suit :

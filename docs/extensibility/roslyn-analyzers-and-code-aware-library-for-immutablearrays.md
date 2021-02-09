@@ -8,21 +8,21 @@ ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875521"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs Roslyn et bibliothèque prenant en charge le code pour ImmutableArrays
 
 Le [.NET Compiler Platform](https://github.com/dotnet/roslyn) (« Roslyn ») vous aide à générer des bibliothèques prenant en charge le code. Une bibliothèque de prise en charge du code fournit des fonctionnalités que vous pouvez utiliser et outils (analyseurs Roslyn) pour vous aider à utiliser la bibliothèque de la manière la plus appropriée ou pour éviter les erreurs. Cette rubrique vous montre comment créer un analyseur Roslyn réel pour intercepter les erreurs courantes lors de l’utilisation du package NuGet [System. Collections. immuable](https://www.nuget.org/packages/System.Collections.Immutable) . L’exemple montre également comment fournir un correctif de code pour un problème de code trouvé par l’analyseur. Les utilisateurs voient les corrections de code dans l’interface utilisateur de l’ampoule Visual Studio et peuvent appliquer automatiquement un correctif pour le code.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 Pour générer cet exemple, vous avez besoin des éléments suivants :
 

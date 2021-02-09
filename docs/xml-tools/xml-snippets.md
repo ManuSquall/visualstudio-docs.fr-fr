@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9114d50abd8f12e19f67d593927b94afcb010f6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 158f51ddc8db8f83d98c34aa03b3ee4f5a1a4d01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874819"
 ---
 # <a name="xml-snippets"></a>extraits XML
 
-L’éditeur XML offre une fonctionnalité, appelée *extraits XML* , qui vous permet de créer des fichiers XML plus rapidement. Vous pouvez en effet réutiliser des extraits XML en les insérant dans vos fichiers. Vous pouvez également générer des données XML basées sur un schéma en langage XSD (XML Schema Definition).
+L’éditeur XML offre une fonctionnalité, appelée *extraits XML*, qui vous permet de créer des fichiers XML plus rapidement. Vous pouvez en effet réutiliser des extraits XML en les insérant dans vos fichiers. Vous pouvez également générer des données XML basées sur un schéma en langage XSD (XML Schema Definition).
 
 ## <a name="reusable-xml-snippets"></a>Extraits XML réutilisables
 

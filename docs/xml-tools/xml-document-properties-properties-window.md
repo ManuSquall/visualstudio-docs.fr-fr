@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e12118f2f7f5d9189ca768f7be65a35b490eb54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875014"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriétés de document XML, Fenêtre Propriétés
 
@@ -30,7 +30,7 @@ Encodage de caractères utilisé pour le fichier. La modification de cette propr
 
 **Entrée**
 
-Document d'entrée associé à la feuille de style XSLT. Elle est utilisée par les commandes de **démarrage XSLT** , par exemple, **XML**  >  **Start XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation ( **...** ).
+Document d'entrée associé à la feuille de style XSLT. Elle est utilisée par les commandes de **démarrage XSLT** , par exemple, **XML**  >  **Start XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation (**...**).
 
 Cette propriété est visible uniquement lorsqu’un fichier XSLT est ouvert dans l’éditeur.
 

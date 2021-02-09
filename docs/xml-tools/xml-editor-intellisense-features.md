@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 330dbdfb6d6db8d33a2b8ea3caa7e1a840d84dd0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874897"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
 
@@ -89,7 +89,7 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
 
 ## <a name="brace-matching"></a>Correspondance d’accolade
 
-L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier ( **CTRL** + **]** ) pour passer d’une accolade à l’accolade correspondante.
+L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**CTRL** + **]**) pour passer d’une accolade à l’accolade correspondante.
 
 L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
@@ -109,7 +109,7 @@ L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
 ## <a name="modify-the-intellisense-options"></a>Modifier les options IntelliSense
 
-Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant les **Tools**  >  paramètres **options** des outils.
+Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant les   >  paramètres **options** des outils.
 
 La section **insertion automatique** de la page **divers** contrôle le comportement suivant :
 
@@ -123,7 +123,7 @@ La section **insertion automatique** de la page **divers** contrôle le comporte
 
 1. Sélectionnez **Options** dans le menu **Outils**.
 
-2. Développez **éditeur de texte** , développez **XML** , puis sélectionnez **divers**.
+2. Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.
 
 3. Apportez des modifications à la section **insertion automatique** , puis cliquez sur **OK**.
 

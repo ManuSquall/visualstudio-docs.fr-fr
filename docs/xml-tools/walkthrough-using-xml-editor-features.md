@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 45d0bb8b47162966974499fed20c826b52dcfaa4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875079"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : Utiliser les fonctionnalités de l’éditeur XML
 
@@ -26,13 +26,13 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1. Dans le menu **fichier** , pointez sur **nouveau** , puis cliquez sur **fichier**.
+1. Dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **fichier**.
 
 2. Sélectionnez **fichier XML** dans le volet **modèles** , puis cliquez sur **ouvrir**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
@@ -98,7 +98,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-format-the-xml-document"></a>Pour mettre en forme le document XML
 
-- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL** + **E** , **D**.
+- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL** + **E**,**D**.
 
    ![Bouton mettre en forme le document XML dans Visual Studio](media/format-xml-document.png)
 
@@ -106,7 +106,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-save-the-xml-document"></a>Pour enregistrer le document XML
 
-1. Dans le menu **Fichier** , sélectionnez **Enregistrer sous**.
+1. Dans le menu **Fichier**, sélectionnez **Enregistrer sous**.
 
      La boîte de dialogue **enregistrer le fichier sous** s’affiche. Le nom de fichier par défaut est *« XMLFile1 »*.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4dfbf2808071d47e1f84eef660d936181227f3
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3255af161bd37d16eefeb6d41115cf0114059e81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875430"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Guide pratique pour configurer des projets et cibler plusieurs plateformes
 
