@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887092"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exposer des types à des concepteurs visuels
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit avoir accès aux définitions de classe et de type au moment du design pour afficher un concepteur visuel. Les classes sont chargées à partir d’un ensemble prédéfini d’assemblys qui incluent l’ensemble de dépendances complet du projet actuel (références et leurs dépendances). Il peut également être nécessaire pour les concepteurs visuels d’accéder aux classes et aux types définis dans les fichiers générés par les outils personnalisés.

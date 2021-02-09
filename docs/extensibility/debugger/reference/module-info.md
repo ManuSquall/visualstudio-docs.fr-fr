@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888171"
 ---
 # <a name="module_info"></a>MODULE_INFO
 Décrit un module particulier (DLL, EXE ou assembly).
@@ -28,7 +28,7 @@ Décrit un module particulier (DLL, EXE ou assembly).
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-typedef struct tagMODULE_INFO { 
+typedef struct tagMODULE_INFO { 
    MODULE_INFO_FIELDS dwValidFields;
    BSTR               m_bstrName;
    BSTR               m_bstrUrl;
@@ -45,7 +45,7 @@ typedef struct tagMODULE_INFO { 
 ```
 
 ```csharp
-public struct MODULE_INFO { 
+public struct MODULE_INFO { 
    public uint     dwValidFields;
    public string   m_bstrName;
    public string   m_bstrUrl;
@@ -98,12 +98,12 @@ public struct MODULE_INFO { 
  `m_dwModuleFlags`\
  Combinaison d’indicateurs de l’énumération [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) qui décrit le module.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) où elle est remplie.
 
  Cette structure correspond à chaque module listé dans la fenêtre **modules** .
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

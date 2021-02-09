@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 622cbebdb4073dfd9b4237e9dfbcb8bbf4a506de
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b44777f41c4fac3d36cb79222d48a93c5c1cf0b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888002"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 
@@ -44,11 +44,11 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 
  Nom racine du nom du fichier journal.
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur de retour
 
  **HRESULT** avec le bit **Succeeded** défini si le contexte de suivi a été créé.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
  **En-tête :** *FileTracker.h*
 

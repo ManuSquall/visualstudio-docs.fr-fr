@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73024722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888054"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
@@ -119,7 +119,7 @@ L’utilisation de la commande **Exécuter Mypy** sur ce code génère l’erreu
 > [!Tip]
 > Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [créer des stubs pour les modules python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) dans le wiki de projet mypy.
 >
-> Visual Studio inclut un ensemble de groupes de fichiers Typeshed pour Python 2 et 3, des téléchargements supplémentaires ne sont donc pas nécessaires. Toutefois, si vous souhaitez utiliser un autre ensemble de fichiers, vous pouvez spécifier le chemin d’accès dans les options des **Outils**options du  >  **Options**  >  serveur de**Python**  >  **langage** Python. Consultez [Options - Serveur de langage](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+> Visual Studio inclut un ensemble de groupes de fichiers Typeshed pour Python 2 et 3, des téléchargements supplémentaires ne sont donc pas nécessaires. Toutefois, si vous souhaitez utiliser un autre ensemble de fichiers, vous pouvez spécifier le chemin d’accès dans les options des **Outils** options du  >    >  serveur de  >  **langage** Python. Consultez [Options - Serveur de langage](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
 > Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
 ::: moniker-end
@@ -131,7 +131,7 @@ Quand vous écrivez du code qui appelle une fonction, l’aide de signature appa
 ![Assistance pour la signature dans l’éditeur Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Pour désactiver l’aide sur les signatures, accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **python**  >  **général** et effacez les informations sur les paramètres de **saisie semi-automatique des instructions**  >  **Parameter information**.
+> Pour désactiver l’aide sur les signatures, accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **python**  >  **général** et effacez les informations sur les paramètres de **saisie semi-automatique des instructions**  >  .
 
 ### <a name="quick-info"></a>Info express
 
@@ -166,11 +166,11 @@ Appuyez sur **Tab** pour générer le reste de la classe. Vous pouvez ensuite ta
 
 ### <a name="menu-commands"></a>Commandes de menu
 
-Quand vous utilisez la **Edit**  >  commande de menu modifier l’extrait de code d’insertion**IntelliSense**  >  , vous sélectionnez d’abord **python**, puis vous sélectionnez un extrait de**code** :
+Quand vous utilisez la   >  commande de menu modifier l’extrait de code d’insertion **IntelliSense**  >  , vous sélectionnez d’abord **python**, puis vous sélectionnez un extrait de **code** :
 
 ![Sélection d’un extrait de code via la commande Insérer un extrait de code](media/code-editing-code-snippet-insert.png)
 
-La commande **modifier**l'  >  **IntelliSense**  >  **Entourage IntelliSense avec** , de la même façon, place la sélection actuelle dans l’éditeur de texte à l’intérieur d’un élément structurel choisi. Par exemple, supposons que vous ayez un peu de code comme suit :
+La commande **modifier** l'  >    >  **Entourage IntelliSense avec** , de la même façon, place la sélection actuelle dans l’éditeur de texte à l’intérieur d’un élément structurel choisi. Par exemple, supposons que vous ayez un peu de code comme suit :
 
 ```python
 sum = 0
@@ -203,7 +203,7 @@ La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et
 ![Barre de navigation dans l’éditeur Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> Pour masquer la barre de navigation, accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **python**  >  **général** et désactivez la barre de **Settings**  >  **navigation**paramètres.
+> Pour masquer la barre de navigation, accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **python**  >  **général** et désactivez la barre de   >  **navigation** paramètres.
 
 ### <a name="go-to-definition"></a>Atteindre la définition
 
@@ -215,7 +215,7 @@ La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et
 
 La commande **modifier**  >  **naviguer vers** (**CTRL** + **,**) affiche une zone de recherche dans l’éditeur dans laquelle vous pouvez taper n’importe quelle chaîne et voir les correspondances possibles dans votre code qui définit une fonction, une classe ou une variable contenant cette chaîne. Cette fonctionnalité permet de bénéficier d’une fonction similaire à **Atteindre la définition**, mais sans avoir à localiser une utilisation d’un identificateur.
 
-Double-cliquez sur un nom, ou sélectionnez avec les touches de direction et **entrée**pour accéder à la définition de cet identificateur.
+Double-cliquez sur un nom, ou sélectionnez avec les touches de direction et **entrée** pour accéder à la définition de cet identificateur.
 
 ![Commande Naviguer vers dans Visual Studio](media/code-editing-navigate-to.png)
 

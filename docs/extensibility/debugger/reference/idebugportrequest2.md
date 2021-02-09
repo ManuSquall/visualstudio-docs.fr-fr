@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44e0bc66d9f385a41f0f43af7217738e40e69126
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887118"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Cette interface décrit un port. Cette description est utilisée pour ajouter le port à un fournisseur de port.
@@ -41,7 +41,7 @@ IDebugPortRequest2 : IUnknown
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Obtient le nom du port à créer.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  En général, un moteur de débogage n’interagit pas avec un fournisseur de port et n’a pas d’utilisation pour cette interface.
 
 ## <a name="requirements"></a>Configuration requise

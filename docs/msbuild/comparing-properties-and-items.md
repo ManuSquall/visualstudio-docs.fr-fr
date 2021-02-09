@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 226b86d621de2faee5a71d9fdb3fea39f20b984e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888119"
 ---
 # <a name="compare-properties-and-items"></a>Comparer des propriétés et des éléments
 
@@ -29,7 +29,7 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 
 ## <a name="scalars-and-vectors"></a>Scalaires et vecteurs
 
-Comme les propriétés MSBuild sont des paires nom-valeur qui ont seulement une valeur de chaîne, elles sont souvent décrites en tant que *scalaires* . Comme les types d’élément MSBuild sont des listes d’éléments, ils sont souvent décrits comme des *vecteurs* . Toutefois, en pratique, les propriétés peuvent représenter plusieurs valeurs, et les types d’élément peuvent posséder zéro ou un élément.
+Comme les propriétés MSBuild sont des paires nom-valeur qui ont seulement une valeur de chaîne, elles sont souvent décrites en tant que *scalaires*. Comme les types d’élément MSBuild sont des listes d’éléments, ils sont souvent décrits comme des *vecteurs*. Toutefois, en pratique, les propriétés peuvent représenter plusieurs valeurs, et les types d’élément peuvent posséder zéro ou un élément.
 
 ### <a name="target-dependency-injection"></a>Injection de dépendances cibles
 

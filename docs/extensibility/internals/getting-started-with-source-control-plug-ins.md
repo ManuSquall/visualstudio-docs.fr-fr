@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: eefd2b20afe94a19b21f9b8361123c193f3ec59f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886936"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Prise en main des plug-ins de contrôle de code source
 Pour créer un plug-in de contrôle de code source, vous devez créer une DLL qui implémente les fonctions définies dans l’API de plug-in de contrôle de code source, puis inscrire la DLL auprès [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de afin de la rendre disponible pour une utilisation dans le contrôle de version de code source.

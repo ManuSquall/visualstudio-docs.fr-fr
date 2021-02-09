@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 709a5a64164ed6c80c29a8e554d2b07050e18339
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886520"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gérer la signature d’assemblys et de manifestes
 
@@ -40,13 +40,13 @@ Pour plus d’informations sur la signature d’assemblys dans les projets C++, 
 
 Vous pouvez signer les manifestes d’application et les assemblys .NET :
 
-- Exécutables ( *.exe* )
+- Exécutables (*.exe*)
 
-- Manifestes d’application ( *.exe.manifest* )
+- Manifestes d’application (*.exe.manifest*)
 
-- Manifestes de déploiement ( *.application* )
+- Manifestes de déploiement (*.application*)
 
-- Assemblys de composants partagés ( *.dll* )
+- Assemblys de composants partagés (*.dll*)
 
 Signez les types de composants suivants :
 
@@ -60,7 +60,7 @@ En général, vous ne devez pas signer les exécutables. Un composant avec nom f
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Guide pratique pour signer un assembly dans Visual Studio
 
-Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’ **Explorateur de solutions** et sélectionnez **Propriétés** ). Sélectionnez l’onglet **Signature** , puis cochez la case **Signer l’assembly**.
+Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**). Sélectionnez l’onglet **Signature**, puis cochez la case **Signer l’assembly**.
 
 Spécifiez un fichier de clé. Si vous choisissez de créer un fichier de clé, les fichiers de ce type sont toujours créés au format *.pfx*. Vous avez besoin d’un nom et d’un mot de passe pour le nouveau fichier.
 

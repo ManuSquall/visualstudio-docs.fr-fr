@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887365"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Créer un système de projet de base, partie 1
 Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources. Les projets apparaissent en tant qu’enfants des solutions dans le **Explorateur de solutions**. Les projets vous permettent d’organiser, de générer, de déboguer et de déployer du code source et de créer des références à des services Web, des bases de données et d’autres ressources.
@@ -63,7 +63,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
  Vous devez également télécharger le code source de l' [infrastructure de package managée pour les projets](https://github.com/tunnelvisionlabs/MPFProj10). Extrayez le fichier vers un emplacement accessible à la solution que vous allez créer.
 
 ## <a name="create-a-basic-project-type"></a>Créer un type de projet de base
- Créez un projet VSIX C# nommé **SimpleProject**. (**Fichier**  >  **Nouveau**  >  **Projet** , puis projet VSIX d’extensibilité **Visual C#**  >  **Extensibility**  >  **VSIX Project**). Ajoutez un modèle d’élément de projet de package Visual Studio (sur le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter** un  >  **nouvel élément**, puis accédez à **extensibilité**  >  **package Visual Studio**). Nommez le fichier *SimpleProjectPackage*.
+ Créez un projet VSIX C# nommé **SimpleProject**. (**Fichier**  >  **Nouveau**  >  **Projet** , puis projet VSIX d’extensibilité **Visual C#**  >    >  ). Ajoutez un modèle d’élément de projet de package Visual Studio (sur le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter** un  >  **nouvel élément**, puis accédez à **extensibilité**  >  **package Visual Studio**). Nommez le fichier *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Création d’un modèle de projet de base
  À présent, vous pouvez modifier ce VSPackage de base pour implémenter le nouveau type de projet *. MyProj* . Pour créer un projet basé sur le type de projet *. MyProj* , Visual Studio doit connaître les fichiers, les ressources et les références à ajouter au nouveau projet. Pour fournir ces informations, placez les fichiers projet dans un dossier de modèle de projet. Quand un utilisateur utilise le projet *. MyProj* pour créer un projet, les fichiers sont copiés dans le nouveau projet.
@@ -105,7 +105,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
    > [!IMPORTANT]
    > Il ne s’agit pas de la forme finale du code *Program.cs* . les paramètres de remplacement seront traités dans une étape ultérieure. Vous pouvez voir des erreurs de compilation, mais tant que le **BuildAction** du fichier est de type **contenu**, vous devez être en mesure de générer et d’exécuter le projet comme d’habitude.
 
-7. Enregistrez le fichier.
+7. Enregistrez le fichier .
 
 8. Copiez le fichier *AssemblyInfo.cs* du dossier *Properties* dans le dossier *Projects\SimpleProject* .
 
@@ -154,7 +154,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
     </Project>
     ```
 
-11. Enregistrez le fichier.
+11. Enregistrez le fichier .
 
 12. Dans la fenêtre **Propriétés** , affectez à l' **Action de génération** *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico* et *SimpleProject. MyProj* la valeur **contenu**, puis affectez à leurs propriétés **inclure dans VSIX** la **valeur true**.
 
@@ -638,4 +638,4 @@ Templates
 
     ![Commande de projet simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   Félicitations ! Vous avez implémenté un système de projet managé de base.
+   Félicitations ! Vous avez implémenté un système de projet managé de base.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4e3d7ad3f19aedc59288d6799e97d91499939c9
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 23541124e48df0c3760d38ff8205f086281034fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887040"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>Étendre le modèle objet du projet de base
 
@@ -31,7 +31,7 @@ Un sous-type de projet peut étendre le modèle objet Automation du projet de ba
 
 - Project. Properties : cette collection expose les propriétés indépendantes de la configuration de l' `Project` objet. Pour plus d’informations sur les propriétés `Project`, consultez <xref:EnvDTE.Project.Properties%2A>. Un sous-type de projet peut utiliser des extendeurs Automation pour ajouter ses propriétés à cette collection. L' <xref:EnvDTE80.IInternalExtenderProvider> interface implémentée sur l’agrégateur de sous-type de projet principal doit proposer son objet pour le `VSHPROPID_BrowseObjectCATID` de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (correspondant à une `itemid` valeur de [VSITEMID. Racine](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
 
-- Configuration. Properties : cette collection expose les propriétés dépendantes de la configuration du projet pour une configuration particulière (par exemple, Debug). Pour plus d'informations, consultez <xref:EnvDTE.Configuration>. Un sous-type de projet peut utiliser des extendeurs Automation pour ajouter ses propriétés à cette collection. L' <xref:EnvDTE80.IInternalExtenderProvider> interface implémentée sur l’agrégateur de sous-type de projet principal offre son objet pour le CATID `VSHPROPID_CfgBrowseObjectCATID` (correspondant à une `itemid` valeur de [VSITEMID. Racine](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> interface est utilisée pour distinguer un objet de navigation de configuration d’un autre.
+- Configuration. Properties : cette collection expose les propriétés dépendantes de la configuration du projet pour une configuration particulière (par exemple, Debug). Pour plus d’informations, consultez <xref:EnvDTE.Configuration>. Un sous-type de projet peut utiliser des extendeurs Automation pour ajouter ses propriétés à cette collection. L' <xref:EnvDTE80.IInternalExtenderProvider> interface implémentée sur l’agrégateur de sous-type de projet principal offre son objet pour le CATID `VSHPROPID_CfgBrowseObjectCATID` (correspondant à une `itemid` valeur de [VSITEMID. Racine](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> interface est utilisée pour distinguer un objet de navigation de configuration d’un autre.
 
 ## <a name="see-also"></a>Voir aussi
 

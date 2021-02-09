@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7d4607afd9b46d35db416baed73007c67a7832
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 00d6b3e27b87e4bac8cee196a60e7fc934f6187d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886741"
 ---
 # <a name="message-enumerator"></a>Énumérateur de message
 Les indicateurs suivants sont utilisés pour la `TEXTOUTPROC` fonction, qui est une fonction de rappel fournie par l’IDE lorsqu’il appelle le [SccOpenProject](../extensibility/sccopenproject-function.md) (consultez [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) pour plus d’informations sur la fonction de rappel).

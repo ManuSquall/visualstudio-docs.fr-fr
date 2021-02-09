@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b65144271f91d518dd6649fa1e97fc627d1b0009
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d0a02cb0659df431b3e6eca7c9ad1f13f8c3676b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886481"
 ---
 # <a name="toggle-breakpoint-command"></a>Basculer le point d'arrêt, commande
 Active ou désactive le point d’arrêt, en fonction de son état actuel, à l’emplacement actuel dans le fichier.
@@ -35,9 +35,9 @@ Debug.ToggleBreakpoint [text]
 ## <a name="arguments"></a>Arguments
 
 `text`\
-facultatif. Si l’argument text est spécifié, la ligne est marquée en tant que point d’arrêt nommé. Sinon, la ligne est marquée en tant que point d’arrêt non nommé, ce qui revient à appuyer sur la touche F9.
+Facultatif. Si l’argument text est spécifié, la ligne est marquée en tant que point d’arrêt nommé. Sinon, la ligne est marquée en tant que point d’arrêt non nommé, ce qui revient à appuyer sur la touche F9.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 L’exemple suivant bascule le point d’arrêt actuel.
 
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886871"
 ---
 # <a name="web-project-essentials"></a>Éléments fondamentaux de projet web
 Les projets Web créent des applications Web. Vous pouvez utiliser un projet Web pour créer une application Web qui a des pages Web intelligentes. Une page Web intelligente contient du code côté serveur qui restitue la page Web à la demande.

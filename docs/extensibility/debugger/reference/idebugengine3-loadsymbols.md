@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c846a440-1d91-4d48-b8f1-82e902ae152b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7963d39601a0d3a90ca2daa7632902d7aa506de8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f823f0087ee612a7850e000469271e0c2a778b62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887300"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 Charge (si nécessaire) les symboles pour tous les modules en cours de débogage par ce moteur de débogage.
@@ -38,10 +38,10 @@ int LoadSymbols();
 ## <a name="parameters"></a>Paramètres
  Aucun.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne le code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cela charge les symboles de débogage pour tous les modules référencés par ce moteur de débogage. Les symboles sont chargés uniquement s’ils n’ont pas encore été chargés. Les symboles sont recherchés sur les chemins d’accès définis par un appel à [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).
 
 ## <a name="see-also"></a>Voir aussi

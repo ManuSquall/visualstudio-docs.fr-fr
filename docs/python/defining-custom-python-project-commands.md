@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43270ee1ec956f45b76d23a6b649ad2d870638c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887924"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Définir des commandes personnalisées pour les projets Python
 
@@ -36,7 +36,7 @@ Chaque commande personnalisée peut faire référence à un fichier Python, un m
 > [!Tip]
 > Chaque fois que vous changez un fichier projet dans un éditeur de texte, vous devez recharger le projet dans Visual Studio pour appliquer ces changements. Par exemple, après avoir ajouté des définitions de commandes personnalisées, vous devez recharger un projet pour qu’elles apparaissent dans le menu contextuel du projet.
 >
-> Comme vous le savez peut-être, Visual Studio permet de modifier directement le fichier projet. Vous commencez par cliquer avec le bouton droit sur le fichier projet et sélectionnez **décharger le projet**, puis cliquez à nouveau avec le bouton droit et sélectionnez ** \<project-name> modifier** pour ouvrir le projet dans l’éditeur Visual Studio. Apportez vos modifications et enregistrez-les, refaites un clic droit sur le projet, puis sélectionnez **Recharger le projet**. Vous êtes alors invité à confirmer la fermeture du fichier projet dans l’éditeur.
+> Comme vous le savez peut-être, Visual Studio permet de modifier directement le fichier projet. Vous commencez par cliquer avec le bouton droit sur le fichier projet et sélectionnez **décharger le projet**, puis cliquez à nouveau avec le bouton droit et sélectionnez **\<project-name> modifier** pour ouvrir le projet dans l’éditeur Visual Studio. Apportez vos modifications et enregistrez-les, refaites un clic droit sur le projet, puis sélectionnez **Recharger le projet**. Vous êtes alors invité à confirmer la fermeture du fichier projet dans l’éditeur.
 >
 > Quand vous développez une commande personnalisée, tous ces clics peuvent devenir fastidieux. Pour améliorer l’efficacité de votre workflow, chargez le projet dans Visual Studio et ouvrez également le fichier *.pyproj* dans un éditeur distinct (par exemple, une autre instance de Visual Studio, Visual Studio Code, le Bloc-notes, etc.). Lorsque vous enregistrez des modifications dans l’éditeur et basculez vers Visual Studio, Visual Studio détecte les modifications et vous demande s’il faut recharger le projet (**le projet \<name> a été modifié en dehors de l’environnement**). Sélectionnez **Recharger**. Vos changements sont alors appliqués immédiatement en une seule étape.
 
@@ -134,8 +134,8 @@ Pour faire référence aux propriétés du projet ou aux variables d’environne
 | Attribut | Obligatoire | Description |
 | --- | --- | --- |
 | Nom | Oui | Identificateur de la commande dans le projet Visual Studio. Ce nom doit être ajouté au groupe de propriétés `<PythonCommands>` pour que la commande apparaisse dans le sous-menu Python. |
-| Etiquette | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
-| Retours | Oui | Doit contenir `@(Commands)`, qui identifie la cible en tant que commande. |
+| Étiquette | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
+| retourne : | Oui | Doit contenir `@(Commands)`, qui identifie la cible en tant que commande. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Attributs CreatePythonCommandItem
 
@@ -347,7 +347,7 @@ Pour explorer comment les commandes **Démarrer le serveur** et **Démarrer le s
 
 *À partir de [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilisé avec l’autorisation.*
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="message-the-project-file-could-not-be-loaded"></a>Message : « Impossible de charger le fichier projet. »
 
@@ -386,7 +386,7 @@ Les valeurs d’attribut peuvent être vides si vous faites référence à une p
 
 ### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio cesse de répondre et se bloque lors de l’exécution de la commande
 
-Vous tentez probablement d’exécuter une commande de console avec `ExecuteIn="output"`, auquel cas Visual Studio peut se bloquer quand il tente d’analyser la sortie. Utilisez plutôt `ExecuteIn="console"`. (Consultez le [problème 3682](https://github.com/Microsoft/PTVS/issues/3681).)
+Vous tentez probablement d’exécuter une commande de console avec `ExecuteIn="output"`, auquel cas Visual Studio peut se bloquer quand il tente d’analyser la sortie. Utilisez `ExecuteIn="console"` à la place. (Consultez le [problème 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>La commande executable « n’est pas reconnue en tant que commande interne ou externe, un programme exécutable ou un fichier de commandes »
 

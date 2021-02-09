@@ -5,26 +5,26 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b03e99a70edd587c9dfe2a43d326a64d14b9193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887885"
 ---
 # <a name="format-python-code"></a>Mettre en forme le code Python
 
 Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les options de mise en forme préconfigurées.
 
-- Pour mettre en forme une sélection : sélectionnez **modifier**la sélection du  >  **Advanced**  >  **format** avancé ou appuyez sur **CTRL** + **E**  >  **F**.
-- Pour mettre en forme l’ensemble du fichier : sélectionnez **modifier**le  >  **Advanced**  >  **document au format** avancé ou appuyez sur **CTRL** + **E**  >  **D**.
+- Pour mettre en forme une sélection : sélectionnez **modifier** la sélection du  >    >  **format** avancé ou appuyez sur **CTRL** + **E**  >  **F**.
+- Pour mettre en forme l’ensemble du fichier : sélectionnez **modifier** le  >    >  **document au format** avancé ou appuyez sur **CTRL** + **E**  >  **D**.
 
-Les options sont définies via **Outils**  >  **options**  >  **éditeur de texte**  >  **Python**  >  **mise en forme** Python et leurs onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
+Les options sont définies via **Outils**  >  **options**  >  **éditeur de texte**  >    >  **mise en forme** Python et leurs onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
 
 ![Options de mise en forme Python dans Visual Studio](media/options-editor-formatting.png)
 

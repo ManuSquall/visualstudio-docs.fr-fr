@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00fd8b4b42f11d18958f8a969bc4ccd58754ab93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1af67a00b9a692e5156ec7a6a14ef3fadcc3ac32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888340"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Cette interface spécifie un message d’erreur à signaler à l’utilisateur.
@@ -41,7 +41,7 @@ IDebugErrorEvent2 : IUnknown
 |------------|-----------------|
 |`GetErrorMessage`|Retourne une erreur sous la forme d’une chaîne lisible par l’utilisateur.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si le moteur de débogage rencontre une erreur, il peut utiliser cette interface pour signaler le message à l’utilisateur dans Visual Studio.
 
 ## <a name="requirements"></a>Configuration requise

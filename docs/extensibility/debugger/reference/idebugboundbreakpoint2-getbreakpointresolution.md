@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51912fce3bf98502be7ae05f815fce60e595e89c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887339"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Obtient la résolution de point d’arrêt qui décrit ce point d’arrêt.
@@ -29,13 +29,13 @@ Obtient la résolution de point d’arrêt qui décrit ce point d’arrêt.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetBreakpointResolution( 
+HRESULT GetBreakpointResolution( 
     IDebugBreakpointResolution2** ppBPResolution
 );
 ```
 
 ```csharp
-int GetBreakpointResolution( 
+int GetBreakpointResolution( 
     out IDebugBreakpointResolution2 ppBPResolution
 );
 ```
@@ -48,10 +48,10 @@ int GetBreakpointResolution( 
 
 - Emplacement des données auquel un point d’arrêt de données est lié.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Appelez la méthode [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) pour déterminer si la résolution du point d’arrêt est pour le code ou les données.
 
 ## <a name="example"></a>Exemple

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b2913756c30bf3b1c8436434da71337a2100aa8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63af55f55dbeb43bfa30aaca5354c4d4fa8afc06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887235"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Cette méthode définit l’état de toutes les exceptions en suspens.
@@ -28,8 +28,8 @@ Cette méthode définit l’état de toutes les exceptions en suspens.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetAllExceptions(
-   EXCEPTION_STATE dwState
+HRESULT SetAllExceptions(
+   EXCEPTION_STATE dwState
 );
 ```
 
@@ -43,7 +43,7 @@ int SetAllExceptions(
 `dwState`\
 dans L’une des valeurs [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

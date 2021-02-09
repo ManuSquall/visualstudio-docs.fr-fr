@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dca403e2b4b7ac9b572e73db397433b1fae1b1ae
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d093438dc30bee08abbc45c6cf3c2555fbe208c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887482"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Guide pratique pour spécifier les fichiers publiés par ClickOnce
 Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, tous les fichiers qui ne sont pas du code dans le projet sont déployés en même temps que l’application. Dans certains cas, il se peut que vous ne souhaitiez pas ou ayez besoin de publier certains fichiers, ou que vous souhaitiez installer certains fichiers en fonction de conditions. Visual Studio fournit les fonctionnalités permettant d’exclure des fichiers, de marquer des fichiers comme fichiers de données ou composants requis, et de créer des groupes de fichiers pour une installation conditionnelle.
@@ -37,9 +37,9 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
  Les fichiers dont la propriété **action de génération** a la valeur **contenu** sont désignés en tant que fichiers d’application et sont marqués comme inclus par défaut. Ils peuvent être inclus, exclus ou marqués comme fichiers de données. Les exceptions sont les suivantes :
 
-- Les fichiers de données tels que les fichiers SQL Database ( *. mdf* et *. mdb* ) et les fichiers XML sont marqués comme fichiers de données par défaut.
+- Les fichiers de données tels que les fichiers SQL Database (*. mdf* et *. mdb*) et les fichiers XML sont marqués comme fichiers de données par défaut.
 
-- Les références aux assemblys (fichiers *. dll* ) sont désignées comme suit quand vous ajoutez la référence : si **copie locale** a la **valeur false** , elle est marquée par défaut comme un assembly requis ( **condition préalable (auto)** ) qui doit être présent dans le GAC avant l’installation de l’application. Si **copie locale** a la **valeur true** , l’assembly est marqué par défaut en tant qu’assembly d’application ( **include (auto)** ) et sera copié dans le dossier de l’application au moment de l’installation. Une référence COM apparaîtra dans la boîte de dialogue **fichiers d’application** (sous la forme d’un fichier *. ocx* ) uniquement si sa propriété **isolé** a la valeur **true**. Par défaut, il est inclus.
+- Les références aux assemblys (fichiers *. dll* ) sont désignées comme suit quand vous ajoutez la référence : si **copie locale** a la **valeur false**, elle est marquée par défaut comme un assembly requis (**condition préalable (auto)**) qui doit être présent dans le GAC avant l’installation de l’application. Si **copie locale** a la **valeur true**, l’assembly est marqué par défaut en tant qu’assembly d’application (**include (auto)**) et sera copié dans le dossier de l’application au moment de l’installation. Une référence COM apparaîtra dans la boîte de dialogue **fichiers d’application** (sous la forme d’un fichier *. ocx* ) uniquement si sa propriété **isolé** a la valeur **true**. Par défaut, il est inclus.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Pour ajouter des fichiers à la boîte de dialogue fichiers d’application
 
@@ -49,7 +49,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-exclude-files-from-clickonce-publishing"></a>Pour exclure des fichiers de la publication ClickOnce
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 
@@ -61,7 +61,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-mark-files-as-data-files"></a>Pour marquer des fichiers en tant que fichiers de données
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 
@@ -73,7 +73,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-mark-files-as-prerequisites"></a>Pour marquer les fichiers comme composants requis
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 
@@ -85,7 +85,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-add-a-new-file-group"></a>Pour ajouter un nouveau groupe de fichiers
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 
@@ -102,7 +102,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-add-a-file-to-a-group"></a>Pour ajouter un fichier à un groupe
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc250f485e5507a9b50bc5a8e1c5b4c3bea37ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888184"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) quand un thread a terminé son exécution.
@@ -41,7 +41,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 |------------|-----------------|
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Obtient le code de sortie du thread.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Visual Studio utilise cet événement pour mettre à jour la fenêtre **Threads** .
 
 ## <a name="requirements"></a>Configuration requise

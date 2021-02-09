@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 651d3937e51be4ec1deeb748f2e4f32cfd08ee81
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 44cc68a900475c77856053de41ef8b7c5c810d6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887677"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriétés des paramètres d’exécution des tests de charge
 
@@ -45,7 +45,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |-|----------------|
 |**Nombre maximal de journaux des tests**|Indique le nombre maximum de journaux des tests à enregistrer pour le test de charge. Lorsque la valeur entrée pour le nombre maximum de journaux des tests est atteint, le test de charge arrête de collecter les journaux. Par conséquent, les journaux seront collectés au début du test, non à la fin. Le test de charge continue de fonctionner jusqu'à ce qu'il soit terminé.|
 |**Enregistrer la fréquence d’entrée au journal pour les tests terminés**|Spécifie la fréquence d'écriture du journal des tests. Cette valeur indique qu'un test sur le nombre de tests entré doit être enregistré dans le journal des tests. Par exemple, si vous entrez la valeur dix, cela indique que le dixième test, le vingtième test, le trentième test, et ainsi de suite, doivent être écrits dans le journal des tests. La valeur 0 indique qu'aucun journal des tests ne sera enregistré.|
-|**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. La valeur par défaut est `True`.<br /><br /> Pour plus d’informations, consultez [Comment : spécifier si les échecs de test sont enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. Par défaut, il s’agit de `True`.<br /><br /> Pour plus d’informations, consultez [Comment : spécifier si les échecs de test sont enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
 Pour plus d’informations, consultez [Modifier les paramètres de journalisation des tests de charge](../test/modify-load-test-logging-settings.md).
 
@@ -80,7 +80,7 @@ Pour plus d’informations, consultez [Comment : spécifier le nombre d’itér
 |-|----------------|
 |**Durée de refroidissement**|Durée de la période de refroidissement du test, exprimée au format hh:mm:ss. Les tests individuels d'un test de charge peuvent continuer à s'exécuter lorsque le test de charge se termine. Durant la période de refroidissement, ces tests peuvent continuer jusqu'à être terminés ou jusqu'à la fin de la période de refroidissement. Par défaut, il n'y a pas de période de refroidissement et les tests individuels sont terminés lorsque le test de charge se termine selon le paramètre Durée d'exécution.|
 |**Durée d’exécution**|Longueur du test, au format hh:mm:ss.|
-|**Échantillonnage**|Intervalle auquel capturer des valeurs de compteur de performance, au format hh:mm:ss.<br /><br /> Pour plus d’informations, voir [Guide pratique : Spécifier l’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
+|**Taux d’échantillonnage**|Intervalle auquel capturer des valeurs de compteur de performance, au format hh:mm:ss.<br /><br /> Pour plus d’informations, voir [Guide pratique : Spécifier l’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Durée de préchauffage**|Période entre le début du test et le moment où les échantillons de données commencent à être enregistrés, au format hh:mm:ss. Fréquemment utilisé pour charger pas à pas des utilisateurs virtuels de façon à atteindre un certain niveau de charge avant d'enregistrer des valeurs d'échantillonnage. Les valeurs d’échantillonnage capturées avant la période de préchauffage sont affichées dans **l’analyseur de test de charge**.|
 
 ## <a name="webtest-connections-properties"></a>Propriétés de connexions WebTest

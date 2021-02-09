@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 10e3e990637faf15c64aa6b0f18c4eb9114bea7b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: ac7fa64b143127d8efe030a94242b237ff9e0d49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887716"
 ---
 # <a name="load-test-results-summary-overview"></a>Présentation du récapitulatif des résultats des tests de charge
 
@@ -86,7 +86,7 @@ La valeur du centile pour **95% du temps de test (s)** indique que 95 % des test
 
 Si le traçage SQL est activé dans le test de charge, la section relative aux requêtes les plus lentes contient les 5 premières requêtes les plus lentes du test de charge. Le nom et la durée de l'opération sont affichés pour chaque test. La durée est affichée en microsecondes (SQL Server 2005) ou en millisecondes (SQL Server 2000 et versions antérieurs). Les tests sont répertoriés dans l'ordre décroissant en fonction de la durée. Vous pouvez choisir le nom d’une opération pour ouvrir la table **Trace SQL** et obtenir plus de détails sur cette opération. Pour plus d’informations, consultez [la table des données de trace SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
-## <a name="test-results"></a>Résultats du test
+## <a name="test-results"></a>Résultats des tests
 
 La section relative aux résultats des tests contient une liste de tous les tests et scénarios du test de charge. Le nom du test, le scénario, le nombre de fois où il a été exécuté, le nombre de fois où il a échoué et la durée moyenne du test sont affichés. Vous pouvez choisir le nom d’un test pour ouvrir la table **Tests** et obtenir plus de détails sur ce test. Pour plus d’informations, consultez [analyser les résultats et les erreurs des tests de charge dans la vue tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6e7168b78303f93ccf89fad324992dd580481ac2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888444"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Guide pratique pour vérifier la disponibilité de mises à jour des applications par programmation à l’aide de l’API du déploiement ClickOnce
 ClickOnce offre deux moyens de mettre à jour une application une fois qu’elle est déployée. Dans la première méthode, vous pouvez configurer le déploiement ClickOnce pour vérifier automatiquement les mises à jour à certains intervalles. Dans la deuxième méthode, vous pouvez écrire du code qui utilise la <xref:System.Deployment.Application.ApplicationDeployment> classe pour rechercher les mises à jour en fonction d’un événement, tel qu’une demande de l’utilisateur.
@@ -58,7 +58,7 @@ ClickOnce offre deux moyens de mettre à jour une application une fois qu’elle
 
 - Suivez les instructions de déploiement de votre application à l’aide de Mage.exe, comme expliqué dans [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Sous l’onglet **options de déploiement** , définissez le champ emplacement de **départ** sur le manifeste d’application ClickOnce doit vérifier les mises à jour. Sous l’onglet **options de mise à jour** , désactivez la case à cocher **cette application doit vérifier les mises à jour** .
 
-## <a name="net-framework-security"></a>Sécurité .NET Framework
+## <a name="net-framework-security"></a>Sécurité du .NET Framework
  Votre application doit avoir des autorisations de confiance totale pour utiliser la mise à jour par programmation.
 
 ## <a name="see-also"></a>Voir aussi
