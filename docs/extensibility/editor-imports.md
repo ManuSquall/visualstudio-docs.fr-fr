@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883478"
 ---
 # <a name="editor-imports"></a>Importations de l’éditeur
 Vous pouvez importer un certain nombre de services de l’éditeur, de fabriques et de courtiers qui fournissent votre extension avec différents types d’accès à l’éditeur principal. Par exemple, vous pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> pour fournir un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pour un type de contenu donné. (Ce navigateur vous permet d’effectuer différents types de recherches sur une mémoire tampon de texte.)
@@ -71,7 +71,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="services"></a>Services
  Les services de l’éditeur sont généralement des entités uniques qui fournissent un service et qui sont partagées entre plusieurs composants.
 
-|Importation|offre les services|
+|Importer|offre les services|
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Relation entre les extensions de fichier et les <xref:Microsoft.VisualStudio.Utilities.IContentType> objets.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d'objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|
@@ -113,7 +113,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Autres importations
  Les fabriques de fournisseurs et les courtiers sont généralement des entités qui peuvent avoir plusieurs instances dans plusieurs composants.
 
-|Importation|offre les services|
+|Importer|offre les services|
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601>De type <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> ) pour la mémoire tampon donnée.|
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Balise de marqueur de texte ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> de type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> ).|

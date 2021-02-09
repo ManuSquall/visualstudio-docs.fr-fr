@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883192"
 ---
 # <a name="idsymbol-element"></a>Élément IDSymbol
 L' `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Le GUID provient de l' `GuidSymbol` élément parent. L' `IDSymbol` élément a un `name` attribut qui fournit un nom convivial pour l’ID, qui est contenu dans l' `value` attribut.
@@ -37,7 +37,7 @@ L' `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
 |Attribut|Description|
 |---------------|-----------------|
 |name|Obligatoire. Nom du symbole d’ID.|
-|value|Obligatoire. Valeur d’ID numérique du symbole d’ID.|
+|valeur|Obligatoire. Valeur d’ID numérique du symbole d’ID.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -48,7 +48,7 @@ L' `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
 |-------------|-----------------|
 |[Élément GuidSymbol](../extensibility/guidsymbol-element.md)|Contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Groupe les éléments `IDSymbol`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Chaque `IDSymbol` élément d’un `GuidSymbol` élément donné doit avoir un unique `value` . Toutefois, les `IDSymbol` éléments qui ont des valeurs identiques peuvent exister dans un package, à condition qu’ils aient des parents différents.
 
 ## <a name="see-also"></a>Voir aussi

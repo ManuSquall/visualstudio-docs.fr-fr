@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883166"
 ---
 # <a name="property-pages"></a>Pages de propriétés
 Les utilisateurs peuvent afficher et modifier les propriétés dépendantes et indépendantes de la configuration de projet à l’aide des pages de propriétés. Le bouton **pages de propriétés** est activé dans la fenêtre **Propriétés** ou dans la barre d’outils Explorateur de solutions pour les objets qui fournissent une vue de page de propriétés de l’objet sélectionné. Les pages de propriétés sont créées par l’environnement et sont disponibles pour les solutions et les projets. Toutefois, elles peuvent également être mises à disposition pour les éléments de projet qui utilisent des propriétés dépendantes de la configuration. Cette fonctionnalité peut être utilisée lorsque des fichiers dans un projet requièrent des paramètres de commutateur de compilateur différents pour une génération correcte.

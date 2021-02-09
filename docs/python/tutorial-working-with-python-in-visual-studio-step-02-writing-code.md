@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ca28446377c2e04766f70c9146e09dc47b8f089
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62430032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882776"
 ---
 # <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
 
@@ -84,7 +84,7 @@ Même si **Explorateur de solutions** est l’emplacement où vous gérez les fi
         print(cos(radians(i)))
     ```
 
-1. Exécutez de nouveau le programme en **appuyant sur CTRL** + **F5** ou **Déboguer**exécuter  >  **sans débogage**. Fermez la fenêtre de sortie quand vous avez terminé.
+1. Exécutez de nouveau le programme en **appuyant sur CTRL** + **F5** ou **Déboguer** exécuter  >  **sans débogage**. Fermez la fenêtre de sortie quand vous avez terminé.
 
 ## <a name="next-step"></a>Étape suivante
 

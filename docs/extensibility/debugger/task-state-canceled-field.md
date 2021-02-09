@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d59335a418febef45ebe35d4590c72b486921639
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76de853cfa1fbd524c87384da38a9438c6ac66bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883569"
 ---
 # <a name="task_state_canceled-field"></a>Champ TASK_STATE_CANCELED
 La tâche a été annulée avant d’atteindre l’État en cours d’exécution, ou elle a confirmé son annulation et s’est terminée sans exception.

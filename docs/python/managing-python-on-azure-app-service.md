@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882789"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Guide pratique pour configurer un environnement Python sur Azure App Service (Windows)
 
@@ -94,7 +94,7 @@ Cette action ouvre la page de description de l’extension, qui contient le chem
 
 Si vous avez des difficultés à voir le chemin pour l’extension, vous pouvez le trouver manuellement en utilisant la console :
 
-1. Sur la page App service, sélectionnez la **console outils de développement**  >  **Console**.
+1. Sur la page App service, sélectionnez la **console outils de développement**  >  .
 1. Entrez la commande `ls ../home` ou `dir ..\home` pour afficher les dossiers des extensions de niveau supérieur, par exemple *Python361x64*.
 1. Entrez une commande telle que `ls ../home/python361x64` ou `dir ..\home\python361x64` pour vérifier qu’il contient *python.exe* et d’autres fichiers de l’interpréteur.
 
@@ -162,7 +162,7 @@ L’interpréteur Python installé via une extension de site n’est qu’une pa
 
 Pour installer des packages directement dans l’environnement du serveur, utilisez une des méthodes suivantes :
 
-| Méthodes | Usage |
+| Méthodes | Utilisation |
 | --- | --- |
 | [Console Kudu d’Azure App Service](#azure-app-service-kudu-console) | Installe des packages de façon interactive. Les packages doivent être du Python pur ou doivent publier des wheels. |
 | [API REST Kudu](#kudu-rest-api) | Peut être utilisée pour automatiser l’installation de packages.  Les packages doivent être du Python pur ou doivent publier des wheels. |

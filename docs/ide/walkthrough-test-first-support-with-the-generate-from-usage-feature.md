@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Test-First Development
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d763a937ac23b397151aec163c2d0d90d7ebe6ba
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4ea04a9c70f23c30a5f603fa9411780223fff563
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883049"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -165,6 +165,6 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
 
 - [Générer à partir de l’utilisation](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Utilisez IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)
 - [Test unitaire de votre code](../test/unit-test-your-code.md)
 - [Actions rapides](../ide/quick-actions.md)

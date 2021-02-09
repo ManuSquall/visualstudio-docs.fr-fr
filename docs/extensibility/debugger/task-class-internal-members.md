@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 10fbc46ad66ec6265bac0a3f2fc7c9b2994915d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883621"
 ---
 # <a name="task-class---internal-members"></a>Classe de tâche-membres internes
 Cet article décrit les membres internes de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe qui vous aident à implémenter un débogueur personnalisé. Pour obtenir des informations générales sur cette classe, consultez l' <xref:System.Threading.Tasks.Task> article de référence.
@@ -66,7 +66,7 @@ Cet article décrit les membres internes de la <xref:System.Threading.Tasks.Task
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|Indique que l’exécution de la tâche s’est terminée avec succès.|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|Indique que la tâche a terminé l’exécution de son délégué et qu’elle attend implicitement la fin des tâches enfants attachées.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les méthodes internes suivantes sont utiles à un moteur du débogueur, car elles marquent l’entrée pour <xref:System.Threading.Tasks.Task> l’exécution du code :
 
 - `Execute`

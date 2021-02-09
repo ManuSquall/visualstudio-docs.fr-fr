@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882867"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Étape 4 : Utiliser le modèle Projet web Flask complet
 
@@ -69,7 +69,7 @@ Le modèle « Projet web Flask » crée la structure ci-dessous. Le contenu est 
   - *runserver.py*, un script pour exécuter l’application dans un serveur de développement.
   - *requirements.txt*, qui contient une dépendance sur Flask 0.x.
 - Le dossier *FlaskWeb* contient tous les fichiers de l’application :
-  - init.py marque le code de l’application en tant que module Python, crée l’objet de la fiole et importe les vues de l’application. * \_ \_ \_ \_ *
+  - init.py marque le code de l’application en tant que module Python, crée l’objet de la fiole et importe les vues de l’application. *\_ \_ \_ \_*
   - *views.py* contient le code pour afficher les pages.
   - Le dossier *static* contient des sous-dossiers nommés *content* (fichiers CSS), *fonts* (fichiers de polices) et *scripts* (fichiers JavaScript).
   - Le dossier *templates* contient un modèle de base *layout.html* avec *about.html*, *contact.html* et *index.html* pour des pages spécifiques qui étendent chacune *layout.html*.
@@ -164,7 +164,7 @@ Comme mentionné au début de cet article, Visual Studio fournit un modèle de �
 
 Pour activer Jade, le modèle de projet inclut d’abord le package pyjade dans *requirements.txt*.
 
-Le fichier * \_ \_ init \_ \_ . py* de l’application contient une ligne à
+Le fichier *\_ \_ init \_ \_ . py* de l’application contient une ligne à
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883400"
 ---
 # <a name="error-codes"></a>Codes d’erreur
 Lorsqu’une fonction d’API de plug-in de contrôle de code source retourne une erreur, il doit s’agir de l’un des codes d’erreur suivants. Toutes les erreurs sont négatives, les avertissements ou les codes d’erreur d’information sont positifs et la réussite est 0.
@@ -74,7 +74,7 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 ```
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Toutes les fonctions API de plug-in de contrôle de code source (à l’exception de [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md)et [SccDiff](../extensibility/sccdiff-function.md)) sont supposées réussies lorsque les fichiers locaux qui sont passés comme arguments n’existent pas dans le dossier de travail. Par exemple, l’IDE peut émettre un appel à [SccCheckout](../extensibility/scccheckout-function.md) ou [SccUncheckout](../extensibility/sccuncheckout-function.md) sur un fichier qui n’existe pas dans le dossier de travail, mais qui existe dans le système de contrôle de code source. Cet appel a échoué. La fonction devrait échouer uniquement lorsqu’il n’y a aucun fichier dans le dossier de travail ou dans le système de contrôle de code source.
 
  Certaines fonctions, telles que `SccAdd` et `SccCheckin` , doivent retourner spécifiquement `SCC_E_FILENOTEXIST` lorsque le fichier du dossier de travail n’existe pas. D’autres fonctions sont supposées parvenir lorsque le fichier de travail n’existe pas, si les fonctions fonctionnent sur un nom de fichier valide dans le système de contrôle de code source.
