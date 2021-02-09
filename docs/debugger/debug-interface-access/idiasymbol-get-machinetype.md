@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30870b10-6f32-45c6-a0d7-020dea707710
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdfbab41c5382661e022d38a190d3bd19c38c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd903d49ed036533195f2fcb8dc61eef9176ba42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862982"
 ---
 # <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
 Récupère le type de l’UC cible.
@@ -25,7 +25,7 @@ Récupère le type de l’UC cible.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_machineType ( 
+HRESULT get_machineType ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_machineType ( 
 
 à Retourne une valeur à partir de la [IMAGE_FILE_MACHINE_ constantes](/windows/desktop/SysInfo/image-file-machine-constants) qui spécifie le type d’unité centrale cible.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

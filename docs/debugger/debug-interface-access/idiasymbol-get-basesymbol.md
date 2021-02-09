@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cabb5a18-bda7-47e8-9e46-5f4718579fc9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d775ad1035b01eed4d2537b5d388e664843a0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832a4c6fbd2c0571d9e87d877c7a013af62cf202
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863549"
 ---
 # <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
 Récupère le symbole à partir duquel le pointeur est basé.
@@ -32,7 +32,7 @@ HRESULT get_baseSymbol(
 
 à Pointeur vers le symbole à partir duquel le pointeur est basé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

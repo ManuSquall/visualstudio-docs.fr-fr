@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 141df0e9-f4d9-4330-a043-5d9ea865257f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9977ea604af65c288bde49dcf0f44eeb1e241b6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0f06b6fa14af959d051409ce721807fc939f8ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863423"
 ---
 # <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
 Récupère un indicateur qui spécifie si la fonction contient un retour lointain.
@@ -35,7 +35,7 @@ HRESULT get_farReturn(
 
 dans Retourne `TRUE` si la fonction utilise un retour Far, sinon retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

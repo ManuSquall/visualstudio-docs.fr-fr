@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0a33142e-5d31-44ea-874a-a2e94d95cbd2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68fbecf9dd085ec229f42a5af12b48d1a712ee1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 097bc8f1d2cadd800db78623523b26d6fe7587e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863752"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
 Recherche dans le frame de pile spécifié une adresse de retour à l’adresse de la pile spécifiée ou à proximité de celle-ci.
@@ -25,7 +25,7 @@ Recherche dans le frame de pile spécifié une adresse de retour à l’adresse 
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT searchForReturnAddressStart( 
+HRESULT searchForReturnAddressStart( 
    IDiaFrameData*  frame,
    ULONGLONG       startAddress,
    ULONGLONG*      returnAddress
@@ -45,7 +45,7 @@ dans Adresse mémoire virtuelle à partir de laquelle commencer la recherche.
 
 à Retourne l’adresse de retour de la fonction la plus proche de `startAddress` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

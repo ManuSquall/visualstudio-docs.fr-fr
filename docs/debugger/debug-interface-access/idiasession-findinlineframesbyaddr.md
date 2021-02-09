@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: e7dc1ac7-bb09-45be-96d2-365a9b7336e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94d910f49120fcbf22f4d6830d2bd89eeb3492af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b9cc3d4399963113c2fc4d30011201d274a3cff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864228"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
 Récupère une énumération qui permet à un client d’itérer au sein de tous les frames insérés sur une adresse donnée.
@@ -23,7 +23,7 @@ Récupère une énumération qui permet à un client d’itérer au sein de tous
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findInlineFramesByAddr ( 
+HRESULT findInlineFramesByAddr ( 
    IDiaSymbol*       parent,   DWORD             isect,
    DWORD             offset,
    IDiaEnumSymbols** ppResult
@@ -47,7 +47,7 @@ dans Spécifie le composant de décalage de l’adresse.
 
 à Contient un `IDiaEnumSymbols` objet qui contient la liste des frames récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

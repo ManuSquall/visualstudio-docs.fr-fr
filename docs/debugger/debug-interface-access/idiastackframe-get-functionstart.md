@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3e6e88b-0594-4d82-9457-480239a2e85a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 261ee4aee81eef06294c8fe2393d56663957b27a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73230694e120e361f102cf149ba7f9822d04fe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863969"
 ---
 # <a name="idiastackframeget_functionstart"></a>IDiaStackFrame::get_functionStart
 Récupère un indicateur qui signale si le bloc contient le point d’entrée d’une fonction.
@@ -25,7 +25,7 @@ Récupère un indicateur qui signale si le bloc contient le point d’entrée d�
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_functionStart ( 
+HRESULT get_functionStart ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_functionStart ( 
 
 à Retourne `TRUE` si le frame de pile contient le point d’entrée d’une fonction ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

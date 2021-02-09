@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 261a43ab176669a2b06e1481f1ee2e1d62e73162
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fc3c967f296e87ef46fe9121eaca055fd879025
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863416"
 ---
 # <a name="idiasymbolget_frontendbuild"></a>IDiaSymbol::get_frontEndBuild
 Récupère le numéro de build du serveur frontal.
@@ -25,7 +25,7 @@ Récupère le numéro de build du serveur frontal.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_frontEndBuild ( 
+HRESULT get_frontEndBuild ( 
    DWORD* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_frontEndBuild ( 
 
 à Retourne le numéro de build du serveur frontal. Consultez la section Notes.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un compilateur se compose généralement de deux éléments principaux : le serveur frontal (l’analyseur), qui gère l’analyse du code source dans un formulaire intermédiaire et un back end (générateur de code), qui convertit le formulaire intermédiaire en assembly. Il n’est pas rare que le serveur frontal ait une version différente de celle du back end.
 
  Un numéro de version frontale ou de back end est composé de trois parties : \<major> . \<minor> . \<build> , où \<major> est le numéro de version principale, \<minor> est le numéro de version mineure et \<build> est le numéro de Build. Par exemple, 13.10.3077.

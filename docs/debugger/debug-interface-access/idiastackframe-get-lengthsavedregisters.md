@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b75fad6e-1ef4-44e6-89e3-c31c6fba10b3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 246152e781faf233b944b16149d4e7d0c11c31dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bd9d10c64de0d6683d7369aee8f44721b6e9c26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863962"
 ---
 # <a name="idiastackframeget_lengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
 Récupère le nombre d’octets de registres enregistrés ayant fait l’objet d’un push sur la pile.
@@ -25,7 +25,7 @@ Récupère le nombre d’octets de registres enregistrés ayant fait l’objet d
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_lengthSavedRegisters ( 
+HRESULT get_lengthSavedRegisters ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_lengthSavedRegisters ( 
 
 à Retourne le nombre d’octets des registres enregistrés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

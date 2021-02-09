@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf2f54c585a8a5406a0772dc1c580112036671d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b84661f5cd51da17cf20577490b2fe458e71ef71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863738"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Facilite le parcours de la pile à l’aide du fichier de base de données de débogage de programme (. pdb).
@@ -45,7 +45,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Retourne le bloc de données PDATA associé à l’adresse virtuelle spécifiée.|
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Récupère l’adresse virtuelle de début d’un exécutable, en fonction d’une adresse virtuelle à un endroit quelconque dans l’espace mémoire de l’exécutable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface est appelée par le code DIA pour obtenir des informations sur l’exécutable afin de construire une liste de frames de pile pendant l’exécution du programme.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

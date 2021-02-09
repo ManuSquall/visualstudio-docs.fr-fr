@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b34714ccd23929d4aaa3ea734fc80941d04103dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb6336ea900cc7ae23848d67b5a2e6545a404ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863521"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Récupère un indicateur qui spécifie si le symbole fait référence à une adresse de code.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si le symbole fait référence à une adr
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_code ( 
+HRESULT get_code ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_code ( 
 
 à Retourne `TRUE` si le symbole fait référence à une adresse de code ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

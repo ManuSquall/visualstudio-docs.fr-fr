@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: df9e68f6-e0a4-4cf6-b11d-61c40351e0cd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c241662b2d80beb31fb62bcd3b5b9f4ff133a2ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1189830a8478167cf3756b08b02646e879ad0850
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864221"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
 Récupère une énumération qui permet à un client d’itérer au sein de tous les frames insérés sur une adresse virtuelle spécifiée (VA).
@@ -23,7 +23,7 @@ Récupère une énumération qui permet à un client d’itérer au sein de tous
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findInlineFramesByVA ( 
+HRESULT findInlineFramesByVA ( 
    IDiaSymbol*       parent,   ULONGLONG         va,
    IDiaEnumSymbols** ppResult
 );
@@ -42,7 +42,7 @@ dans Spécifie l’adresse en tant que VA.
 
 à Contient un `IDiaEnumSymbols` objet qui contient la liste des frames récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

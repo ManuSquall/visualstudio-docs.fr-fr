@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e14a713772a183100753212effcb696e5d5f1f05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a25d2eb12529461a9787deadf3f3babff6b6cbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863668"
 ---
 # <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 Récupère le modificateur d’accès d’un membre de classe.
@@ -25,7 +25,7 @@ Récupère le modificateur d’accès d’un membre de classe.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_access ( 
+HRESULT get_access ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_access ( 
 
 à Retourne une valeur de l’énumération d' [énumération CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) qui spécifie le modificateur d’accès d’un membre de classe.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

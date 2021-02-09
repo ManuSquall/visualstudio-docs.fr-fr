@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a8306bd-10dd-40a9-81fc-01f71c348484
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe569737440cc9d974196eaa2a73c2fab5b7e143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 117bbed95e4adf79270072888c8ac1ac71215433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863311"
 ---
 # <a name="idiasymbolget_hasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des définitions de type imbriquées.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si le type de données défini par l’ut
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_hasNestedTypes ( 
+HRESULT get_hasNestedTypes ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_hasNestedTypes ( 
 
 à Retourne `TRUE` si le type de données défini par l’utilisateur a des définitions de type imbriquées ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

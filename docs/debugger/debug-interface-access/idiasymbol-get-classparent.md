@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8b20552d29f5d649ddf669187632814986a388b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b556529a0cf4a30cd84f83700947cb52c671de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863528"
 ---
 # <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
 Récupère une référence à la classe parente du symbole.
@@ -25,7 +25,7 @@ Récupère une référence à la classe parente du symbole.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_classParent ( 
+HRESULT get_classParent ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_classParent ( 
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le parent de la classe du symbole.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
@@ -48,7 +48,7 @@ HRESULT get_classParent ( 
 |En-tête :|dia2.h|
 |Version :|DIA SDK v 7.0|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les types de symboles qui peuvent être des parents de classe sont documentés dans la [hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>Voir aussi

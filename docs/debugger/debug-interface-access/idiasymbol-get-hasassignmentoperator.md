@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d0d2410e8bb027aebf767970877870f1558a9c2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709ffb3327359e41693d524e5b9eaab79dc64790
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863395"
 ---
 # <a name="idiasymbolget_hasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 Récupère un indicateur qui spécifie si des opérateurs d’assignation sont définis pour le type de données défini par l’utilisateur.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si des opérateurs d’assignation sont d
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_hasAssignmentOperator ( 
+HRESULT get_hasAssignmentOperator ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_hasAssignmentOperator ( 
 
 à Retourne `TRUE` si le type de données défini par l’utilisateur a des opérateurs d’assignation définis ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

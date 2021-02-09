@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66eaaf72-68d4-40ee-b132-97bea9fe395c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49491d2d9934a20e9d40c0dcd5aadeed3ef27ca7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 810197226185e848cdc9ace69654e1b40ce05a5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863479"
 ---
 # <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
 Retourne le nom du compilateur utilisé pour générer le [compiland](../../debugger/debug-interface-access/compiland.md).
@@ -33,7 +33,7 @@ HRESULT get_compilerName (
 #### <a name="parameters"></a>Paramètres
  `pName` Pointeur vers un BSTR qui contient le nom Unicode du compilateur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

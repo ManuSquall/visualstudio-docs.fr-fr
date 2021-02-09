@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b48f91dcb68f44f070e596d674461367dcf22966
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5099eb9d8ba1f56419cd1cf0138e29a79e2c28f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863262"
 ---
 # <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
 Récupère un indicateur qui spécifie si la fonction est une fonction virtuelle d’introduction.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si la fonction est une fonction virtuelle
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_intro ( 
+HRESULT get_intro ( 
     BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_intro ( 
 
 à Retourne `TRUE` si la fonction est virtuelle Intro ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

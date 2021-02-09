@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14484cb1-43b0-47a1-a9a8-081b55566886
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa43688b8fd3bb69cd8d44181da22924932e900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0f7107f498ca5a7a46a3c47cfa131d7f5396bae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863325"
 ---
 # <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
 Récupère un indicateur qui spécifie si la fonction contient une utilisation de la commande [longjmp](/cpp/c-runtime-library/reference/longjmp) (associée à une commande [setjmp](/cpp/c-runtime-library/reference/setjmp) , qui constituent la méthode de gestion des exceptions de style C).
@@ -35,7 +35,7 @@ HRESULT get_hasLongJump
 
 à Retourne `TRUE` si la fonction contient une `longjmp` commande ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

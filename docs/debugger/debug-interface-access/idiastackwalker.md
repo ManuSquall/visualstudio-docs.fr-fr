@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d80e20200966c65258485782fec5865158f114a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9ec4267a0f5de93b32a4a56a61742a9148f2d9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863857"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 Fournit des méthodes pour effectuer un parcours de la pile à l’aide des informations contenues dans le fichier. pdb.
@@ -36,7 +36,7 @@ Le tableau suivant présente les méthodes de `IDiaStackWalker` .
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Récupère un énumérateur de frame de pile pour les plateformes x86.|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Récupère un énumérateur de frame de pile pour un type de plateforme spécifique.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette interface est utilisée pour obtenir une liste de frames de pile pour un module chargé. Chaque méthode reçoit un objet [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) (implémenté par l’application cliente) qui fournit les informations nécessaires à la création de la liste des frames de pile.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

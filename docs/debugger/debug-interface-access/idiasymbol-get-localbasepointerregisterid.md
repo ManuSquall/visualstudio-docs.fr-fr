@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fee917c4d275ec0f76cd3442d1ae56887667ca6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdec2a9d4c1cb089ef813123bab6f84daa26a826
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862996"
 ---
 # <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 Récupère l’ID du Registre qui contient un pointeur de base vers des variables locales sur la pile. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction` .
@@ -25,7 +25,7 @@ Récupère l’ID du Registre qui contient un pointeur de base vers des variable
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_localBasePointerRegisterId ( 
+HRESULT get_localBasePointerRegisterId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_localBasePointerRegisterId ( 
 
 à Retourne l’ID du Registre qui contient un pointeur de base vers des variables locales sur la pile.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

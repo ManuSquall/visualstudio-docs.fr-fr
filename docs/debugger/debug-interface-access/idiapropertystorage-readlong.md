@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32054cbc-db55-4513-a1b4-de80e77aac8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 697d93af1256d76e5448de5cbc34e04ffc26927f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8e2ceabd73d95d1606359346a1e6d52bbd20eae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864578"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 Lit les `LONG` valeurs dans un jeu de propriétés.
@@ -25,7 +25,7 @@ Lit les `LONG` valeurs dans un jeu de propriétés.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT ReadDLONG ( 
+HRESULT ReadDLONG ( 
    PROPID id,
    LONG*  pValue
 );
@@ -40,10 +40,10 @@ dans Identificateur de la propriété à lire ( `PROPID` défini dans WTypes. h 
 
 à Retourne la valeur de la propriété.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `LONG` .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un `LONG` est défini par Windows comme un entier signé 32 bits.
 
 ## <a name="see-also"></a>Voir aussi

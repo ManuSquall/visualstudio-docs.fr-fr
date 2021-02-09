@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 050ec02f-b7b3-48fc-8e35-58bdf7d938b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf03315fe2f78ccfc4acd9d8c0aed8f6729f679
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7258f8bb3ed5ff90ec944d65ebc2e28a1bb029b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862968"
 ---
 # <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
 Récupère le nom du symbole.
@@ -25,7 +25,7 @@ Récupère le nom du symbole.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_name ( 
+HRESULT get_name ( 
    BSTR* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_name ( 
 
 à Retourne le nom du symbole.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

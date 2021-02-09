@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 124f86e2-6f66-4541-87c3-799f435b731e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4570585362da1475277f899bcb3c483d085918db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48a3be4d7aa3d2f7fcc096c3d8c101733bd71fff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464302"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863584"
 ---
 # <a name="idiasymbolget_arrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 Récupère l’identificateur de type d’index de tableau du symbole.
@@ -25,7 +25,7 @@ Récupère l’identificateur de type d’index de tableau du symbole.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_arrayIndexTypeId ( 
+HRESULT get_arrayIndexTypeId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_arrayIndexTypeId ( 
 
 à Retourne l’ID de type d’index de tableau du symbole.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’identificateur est une valeur unique créée par le kit de développement logiciel (SDK) DIA pour marquer tous les symboles comme étant uniques.
 
 ## <a name="requirements"></a>Configuration requise

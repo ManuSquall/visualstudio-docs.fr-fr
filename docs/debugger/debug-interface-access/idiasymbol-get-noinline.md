@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c610b78-f1a3-494a-acf8-c42b97935be1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a2cd3daa2c1ca466b0e302c916a220fa31e7d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3ac08460995cbaec149c5dda9ffc4c1e3e5bfbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862961"
 ---
 # <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
 Récupère un indicateur qui spécifie si la fonction a été marquée comme n’étant pas inline (à l’aide de l’attribut [noinline](/cpp/cpp/noinline) ).
@@ -35,7 +35,7 @@ HRESULT get_noInline(
 
 à Retourne `TRUE` si la fonction a l' `noinline` attribut ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

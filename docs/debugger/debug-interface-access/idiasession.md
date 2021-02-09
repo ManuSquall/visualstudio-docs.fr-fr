@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7fb8c5336a14180b3742fa02a91e6532b6e5831
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12337385d2ac9b586176c47d8579ec8ee7a5bd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864032"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fournit un contexte de requête pour les symboles de débogage.
@@ -25,7 +25,7 @@ Fournit un contexte de requête pour les symboles de débogage.
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaSession : IUnknown
+IDiaSession : IUnknown
 ```
 
 ## <a name="methods"></a>Méthodes
@@ -70,7 +70,7 @@ Le tableau suivant présente les méthodes de `IDiaSession` .
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.|
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Retourne une énumération de symboles pour les frames inclus qui correspondent à l’emplacement source spécifié.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Il est important d’appeler la méthode [IDiaSession ::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) après la création de l' `IDiaSession` objet, et la valeur transmise à la `put_loadAddress` méthode doit être différente de zéro, pour que les propriétés d’adresse virtuelle (va) des symboles soient accessibles. L’adresse de chargement provient du programme chargé de l’exécutable en cours de débogage. Par exemple, vous pouvez appeler la fonction Win32 `GetModuleInformation` pour récupérer l’adresse de chargement de l’exécutable, en fonction d’un handle de l’exécutable.
 
 ## <a name="example"></a>Exemple

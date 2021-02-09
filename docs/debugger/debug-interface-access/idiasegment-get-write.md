@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fcda988-6be1-4b2f-8660-b59aa78fc35d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 498a72888ff59d09abf4f8d4dd830db25678761c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f804267175bfffef0a21cabf7c1c9549551f74aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864298"
 ---
 # <a name="idiasegmentget_write"></a>IDiaSegment::get_write
 Récupère un indicateur qui signale si le segment peut être modifié.
@@ -25,7 +25,7 @@ Récupère un indicateur qui signale si le segment peut être modifié.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_write ( 
+HRESULT get_write ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_write ( 
 
 à Retourne `TRUE` si le segment peut être écrit ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

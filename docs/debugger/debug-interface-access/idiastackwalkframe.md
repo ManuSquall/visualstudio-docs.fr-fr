@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee80b9bbb6d16f2aa4264491593d1864bdade690
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05db065b047629e1eaac49e5f6aeeb05eed4307e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863822"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Conserve le contexte de la pile entre les appels de la méthode [IDiaFrameData :: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) .
@@ -25,7 +25,7 @@ Conserve le contexte de la pile entre les appels de la méthode [IDiaFrameData 
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaStackWalkFrame : IUnknown
+IDiaStackWalkFrame : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -39,7 +39,7 @@ IDiaStackWalkFrame : IUnknown
 |[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Recherche l’adresse de retour de la fonction la plus proche dans le frame de pile spécifié.|
 |[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Recherche dans le frame de pile spécifié une adresse de retour à l’adresse spécifiée ou à proximité de celle-ci.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface est utilisée pendant l’exécution du programme pour lire et écrire des registres, ainsi que pour accéder à la mémoire et rechercher les adresses de retour.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

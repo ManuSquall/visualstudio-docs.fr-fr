@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aea1205abf5c7a4bf7e4fd6b035651cc7ad52be6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e41b8f3825da25878ac81ba91b59106ac60d857
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863542"
 ---
 # <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
 Récupère le type de base pour ce symbole<em>.</em>
@@ -35,13 +35,13 @@ HRESULT get_baseType (
 
 à Retourne une valeur de l’énumération d' [énumération BasicType](../../debugger/debug-interface-access/basictype.md) qui spécifie le type de base du symbole.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Le type de base pour un symbole peut être déterminé en obtenant tout d’abord le type du symbole, puis en interrogeant ce type retourné pour le type de base. Notez que certains symboles peuvent ne pas avoir de type de base (par exemple, un nom de structure).
 
 ## <a name="example"></a>Exemple

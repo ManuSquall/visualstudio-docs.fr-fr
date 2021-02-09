@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbe3d8ac-319a-40ac-bc3e-4eb81b2d7807
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bd724e4f25b5475f89af32f5793ede8d66594a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f11d99a3e3a8a78b6c8152dd94a28f27d800772
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863941"
 ---
 # <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 Récupère la valeur d’un registre spécifié, telle qu’elle est stockée dans le frame de pile.
@@ -40,7 +40,7 @@ dans L’une des CV_HREG_e valeurs d’énumération d' [énumération](../../de
 
 à Valeur stockée dans le registre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 257546e54cb04713f2f13892ec782aca1712cfba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e7216c5878a13b4312d737ae266004d757c24db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864571"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 Récupère les noms de chaîne correspondants pour les identificateurs de propriété donnés.
@@ -45,10 +45,10 @@ dans Tableau d’ID de propriété pour lequel obtenir les noms ( `PROPID` est d
 
 [in, out] Tableau de noms de propriété pour les ID de propriété spécifiés. Le tableau doit être pré-alloué pour contenir le nombre demandé de noms de propriétés et doit pouvoir contenir au moins `cpropid``BSTR` chaînes.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les noms de propriété retournés doivent être libérés (en appelant la `SysFreeString` fonction) lorsqu’ils ne sont plus nécessaires.
 
 ## <a name="see-also"></a>Voir aussi

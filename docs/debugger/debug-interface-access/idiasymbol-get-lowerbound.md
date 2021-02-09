@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e9a6440b-d068-4de4-a240-6723d20812b9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d190ae0d2652eee465526aec6122326b6108f322
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3689eaa25e49780ee47421451592005b1c35a8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862989"
 ---
 # <a name="idiasymbolget_lowerbound"></a>IDiaSymbol::get_lowerBound
 Récupère la limite inférieure d’une dimension de tableau FORTRAN.
@@ -25,7 +25,7 @@ Récupère la limite inférieure d’une dimension de tableau FORTRAN.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_lowerBound ( 
+HRESULT get_lowerBound ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_lowerBound ( 
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente la limite inférieure d’une dimension de tableau Fortran.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

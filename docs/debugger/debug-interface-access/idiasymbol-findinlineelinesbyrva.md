@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ac108db1-9dbf-4dc4-bf48-159ca8d3725c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26941012b28bb114771472452e158823d988faab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a959de9f17969ca5c759988b7781b65936409005
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863696"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, dans ce symbole dans l’adresse virtuelle relative (RVA) spécifiée.
@@ -23,7 +23,7 @@ Récupère une énumération qui permet à un client d’itérer au sein des inf
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,
    IDiaEnumLineNumbers** ppResult
 );
 ```
@@ -41,7 +41,7 @@ dans Spécifie la plage d’adresses, en nombre d’octets, à couvrir avec cett
 
 à Contient un `IDiaEnumLineNumbers` objet qui contient la liste des numéros de ligne qui sont récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

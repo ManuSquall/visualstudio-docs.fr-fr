@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9665da6c-4cc0-41d7-b2e2-0d9e50174cf8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3173eb31ec10b812f6ca300d1e95a3c938fa1368
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0981f103d9914e9d8d13f02449187fdfef0ff61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863269"
 ---
 # <a name="idiasymbolget_interruptreturn"></a>IDiaSymbol::get_interruptReturn
 Récupère un indicateur qui spécifie si la fonction contient un retour de l’instruction d’interruption (par exemple, le code de l’assembly x86 `iret` ).
@@ -35,7 +35,7 @@ HRESULT get_interruptReturn(
 
 à Retourne `TRUE` si la fonction a un retour de l’instruction d’interruption ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e9b3e812311ef3d9555584d72ebb966098232a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d150e777f657fcf63dc66dbe3e686c1b445dd473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863808"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Retourne le bloc de données PDATA associé à l’adresse virtuelle.
@@ -25,7 +25,7 @@ Retourne le bloc de données PDATA associé à l’adresse virtuelle.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT pdataForVA( 
+HRESULT pdataForVA( 
    ULONGLONG  va,
    DWORD      cbData,
    DWORD*     pcbData,
@@ -50,10 +50,10 @@ dans Taille des données en octets à obtenir.
 
 [in, out] Mémoire tampon qui est remplie avec les données demandées. Ne peut pas être `NULL`.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe aucun pData pour l’adresse spécifiée. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le PDATA (la section nommée « . pdata ») d’un compiland contient des informations sur la gestion des exceptions pour les fonctions.
 
  L’appelant sait la quantité de données à retourner pour que l’appelant n’ait pas besoin de demander la quantité de données disponibles. Par conséquent, il est acceptable pour une implémentation de cette méthode de retourner une erreur si le `pbData` paramètre est `NULL` .

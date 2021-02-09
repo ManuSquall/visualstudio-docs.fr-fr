@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 78005efa-2883-4823-b4e4-711a66672c78
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b454c90e67573a248f9359b25968866d7383e072
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5841d6d38f202b8ea89dbe7e6909e20a37c7248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863955"
 ---
 # <a name="idiastackframeget_lengthparams"></a>IDiaStackFrame::get_lengthParams
 Récupère le nombre d’octets de paramètres faisant l’objet d’un push sur la pile.
@@ -25,7 +25,7 @@ Récupère le nombre d’octets de paramètres faisant l’objet d’un push sur
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_lengthParams ( 
+HRESULT get_lengthParams ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_lengthParams ( 
 
 à Retourne le nombre d’octets de paramètres.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

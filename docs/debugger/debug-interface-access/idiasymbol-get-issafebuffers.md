@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84123d88bc379ea670caca90d66207fc6e16f26f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c32382468c4d67dae9e94a3fc9882fd61213cf00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863122"
 ---
 # <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Récupère un indicateur qui spécifie si la directive de préprocesseur pour une mémoire tampon sécurisée est utilisée. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction` .
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si la directive de préprocesseur pour un
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_isSafeBuffers( 
+HRESULT get_isSafeBuffers( 
    BOOL* pRetVal)
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_isSafeBuffers( 
 
 à Retourne `TRUE` si le pointeur utilise une directive de préprocesseur pour une mémoire tampon sécurisée ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 807025265de5c088f1af24ec76402cdbf3a516a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd3290afb5116661f62983ce3a6fae8653312f24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864130"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 Récupère un type de symbole spécifié qui contient ou est le plus proche de, une adresse virtuelle relative (RVA) et un offset spécifiés.
@@ -25,7 +25,7 @@ Récupère un type de symbole spécifié qui contient ou est le plus proche de, 
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findSymbolByRVAEx ( 
+HRESULT findSymbolByRVAEx ( 
    DWORD        rva,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol,
@@ -50,7 +50,7 @@ dans Type de symbole à trouver. Les valeurs sont extraites de l’énumération
 
 à Retourne une valeur spécifiant un offset à partir de l’adresse virtuelle relative spécifiée dans `rva` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

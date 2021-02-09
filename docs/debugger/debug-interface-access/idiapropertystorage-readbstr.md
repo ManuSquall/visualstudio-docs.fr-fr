@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7214643b-3286-48ed-90aa-0fe95b4cae5b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e87c2ed168a262fc1a12f06fc6a18bcf73e7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83d31d36f7d6c067cd3dbd4d64f804ca6f9ebd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864641"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Lit les `BSTR` valeurs dans un jeu de propriétés.
@@ -25,7 +25,7 @@ Lit les `BSTR` valeurs dans un jeu de propriétés.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT ReadBSTR ( 
+HRESULT ReadBSTR ( 
    PROPID id,
    BSTR*  pValue
 );
@@ -40,10 +40,10 @@ dans Identificateur de la propriété à lire ( `PROPID` défini dans WTypes. h 
 
 à Retourne la valeur de la propriété.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BSTR` .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un `BSTR` est défini par Windows comme une chaîne de caractères larges se terminant par zéro.
 
 ## <a name="see-also"></a>Voir aussi

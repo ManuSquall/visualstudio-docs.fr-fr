@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1893a361ab4043ad5969a7fa899c07fe18253b9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 172a02a2b2d818132131b94192af39d45e390254
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864256"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 Récupère un fichier source par identificateur de fichier source.
@@ -25,7 +25,7 @@ Récupère un fichier source par identificateur de fichier source.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findFileById ( 
+HRESULT findFileById ( 
    DWORD            uniqueId,
    IDiaSourceFile** ppResult
 );
@@ -40,10 +40,10 @@ dans Spécifie l’identificateur du fichier source.
 
 à Retourne un objet [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) qui représente le fichier source récupéré.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’identificateur du fichier source est une valeur unique utilisée en interne par le kit de développement logiciel (SDK) DIA pour rendre tous les fichiers sources uniques. Cette méthode est généralement utilisée en interne dans le kit de développement logiciel (SDK) DIA.
 
 ## <a name="see-also"></a>Voir aussi

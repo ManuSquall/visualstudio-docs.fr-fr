@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb78b4cbdfa2130731e3847b1a3325ab4cb3eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5df55043c1a29a95cd0f8883c2a6546e8153320
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863815"
 ---
 # <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 Récupère la valeur d’un registre.
@@ -25,7 +25,7 @@ Récupère la valeur d’un registre.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_registerValue ( 
+HRESULT get_registerValue ( 
    DWORD      index,
    ULONGLONG* pRetVal
 );
@@ -40,10 +40,10 @@ dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/deb
 
 à Retourne la valeur actuelle du Registre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  En dépit de la taille du `pRetVal` paramètre, une implémentation doit stocker uniquement ce que le registre contient normalement. Par exemple, un registre 8 bits contient uniquement les 8 bits les plus bas de la valeur donnée. Cette valeur de 8 bits est étendue à 64 bits quand elle est retournée à partir de cette méthode.
 
 ## <a name="see-also"></a>Voir aussi

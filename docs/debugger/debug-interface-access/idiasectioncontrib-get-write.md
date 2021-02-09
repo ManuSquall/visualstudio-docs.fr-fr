@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7e75348e-c12c-44ec-b004-e97767580a3f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3f91077dfeadaad60dee88ded5998b81593867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1855472e70f79d54696c63096767985393ff85fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466076"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864382"
 ---
 # <a name="idiasectioncontribget_write"></a>IDiaSectionContrib::get_write
 Récupère un indicateur qui signale si la section peut être modifiée.
@@ -25,7 +25,7 @@ Récupère un indicateur qui signale si la section peut être modifiée.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_write ( 
+HRESULT get_write ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_write ( 
 
 à Retourne `TRUE` si la section peut être écrite dans ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

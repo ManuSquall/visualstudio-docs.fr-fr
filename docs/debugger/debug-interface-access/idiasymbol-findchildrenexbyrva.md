@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 936aa9006fac088efbb155d44ca8e4257ce94302
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2ef64d288bdb8e6e5a7cf8befa1f6d7c90ecf0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863703"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 Récupère les enfants du symbole qui sont valides à une adresse virtuelle relative (RVA) spécifiée.
@@ -25,7 +25,7 @@ Récupère les enfants du symbole qui sont valides à une adresse virtuelle rela
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT findChildrenExByRVA ( 
+HRESULT findChildrenExByRVA ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,
@@ -55,10 +55,10 @@ dans Spécifie l’adresse RVA.
 
 à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les symboles locaux retournés incluent des informations de plage dynamique.
 
 ## <a name="requirements"></a>Configuration requise

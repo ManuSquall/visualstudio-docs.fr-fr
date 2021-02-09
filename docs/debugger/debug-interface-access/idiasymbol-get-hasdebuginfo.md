@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 84cd2b67-0d83-4589-9ecb-a4bcbeed55f5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c158d15f7d60000bfd022e8cab10c3f2bc060c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8914c0eae31e7faac8cea523f4c558a9f00749a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863388"
 ---
 # <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 Récupère un indicateur qui spécifie si le [compiland](../../debugger/debug-interface-access/compiland.md) contient des informations de débogage.
@@ -35,7 +35,7 @@ HRESULT get_hasDebugInfo(
 
 à Retourne `TRUE` si le compiland contient des informations de débogage ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

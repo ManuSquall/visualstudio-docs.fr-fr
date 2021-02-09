@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c961641-3ce3-4bc3-bd6e-a802fa3bec49
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a8db3960aebe4edc1669f2e7fbe4d40b60618bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84cf920182e3eae25d9cb4a6f7d630ec37df7de8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864557"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Permet à une application cliente de fournir des octets d’un fichier exécutable comme spécifié par la position de fichier.
@@ -25,7 +25,7 @@ Permet à une application cliente de fournir des octets d’un fichier exécutab
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaReadExeAtOffsetCallback : IUnknown
+IDiaReadExeAtOffsetCallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -35,7 +35,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 |------------|-----------------|
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Lit le nombre d’octets spécifié en commençant à l’offset spécifié à partir d’un fichier exécutable.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’application cliente implémente cette interface afin de fournir les octets de l’exécutable à l’aide d’un offset absolu dans le fichier de l’exécutable. Pour utiliser une adresse virtuelle relative, implémentez l’interface [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
