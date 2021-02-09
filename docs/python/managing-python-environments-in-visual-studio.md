@@ -5,16 +5,16 @@ ms.date: 08/06/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923745"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -37,19 +37,19 @@ Si vous découvrez Python dans Visual Studio, les articles suivants fournissent 
 
 ::: moniker range="vs-2017"
 > [!Note]
-> Vous ne pouvez pas gérer les environnements pour le code Python qui est ouvert uniquement en tant que dossier à l’aide de la commande **fichier**  >  **ouvrir**le  >  **dossier** . Il faut au contraire [créer un projet Python à partir de code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md) pour bénéficier des fonctionnalités d’environnement de Visual Studio.
+> Vous ne pouvez pas gérer les environnements pour le code Python qui est ouvert uniquement en tant que dossier à l’aide de la commande **fichier**  >  **ouvrir** le  >  **dossier** . Il faut au contraire [créer un projet Python à partir de code existant](quickstart-01-python-in-visual-studio-project-from-existing-code.md) pour bénéficier des fonctionnalités d’environnement de Visual Studio.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Vous pouvez gérer les environnements pour le code python ouvert en tant que dossier à l’aide de la commande **fichier**  >  **ouvrir**le  >  **dossier** . La barre d’outils Python vous permet de basculer entre tous les environnements détectés et d’ajouter un nouvel environnement. Les informations d’environnement sont stockées dans le fichier PythonSettings.json dans le dossier .vs Workspace.
+> Vous pouvez gérer les environnements pour le code python ouvert en tant que dossier à l’aide de la commande **fichier**  >  **ouvrir** le  >  **dossier** . La barre d’outils Python vous permet de basculer entre tous les environnements détectés et d’ajouter un nouvel environnement. Les informations d’environnement sont stockées dans le fichier PythonSettings.json dans le dossier .vs Workspace.
 ::: moniker-end
 
 ## <a name="the-python-environments-window"></a>Fenêtre Environnements Python
 
 Les environnements connus de Visual Studio s’affichent sur la fenêtre **Environnements Python**. Pour ouvrir cette fenêtre, suivez l’une des méthodes ci-dessous :
 
-- Sélectionnez la commande de menu **Afficher**d'  >  **autres**  >  **environnements Windows python** .
+- Sélectionnez la commande de menu **Afficher** d'  >  **autres**  >  **environnements Windows python** .
 - Cliquez avec le bouton droit sur le nœud **environnements python** d’un projet dans **Explorateur de solutions** , puis sélectionnez **Afficher tous les environnements python**:
 
     ::: moniker range="vs-2017"
@@ -159,8 +159,8 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
 
     | Champ | Description |
     | --- | --- |
-    | Projet | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
-    | Name | Nom de l’environnement conda. |
+    | Project | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
+    | Nom | Nom de l’environnement conda. |
     | Ajouter des packages depuis | Choisissez **Fichier d’environnement** si vous avez un fichier *environment.yml* décrivant vos dépendances de fichiers, ou choisissez **un ou plusieurs noms de packages Anaconda** et répertoriez au moins un package Python ou une version de Python dans le champ situé en dessous. La liste des packages indique à conda de créer un environnement Python. Pour installer la dernière version de Python, utilisez `python` ; pour installer une version spécifique, utilisez `python=,major>.<minor>` comme dans `python=3.7`. Vous pouvez également utiliser le bouton de package pour sélectionner des versions de Python et des packages communs à partir d’une série de menus. |
     | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
     | Définir en tant qu’environnement par défaut pour les nouveaux projets | Définit et active automatiquement l’environnement conda dans tous les nouveaux projets créés dans Visual Studio. Cette option est identique à l’option **Définir cet environnement comme valeur par défaut pour les nouveaux projets** dans la fenêtre **Environnements Python**. |
@@ -171,7 +171,7 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
     >
     > S’il vous créez un environnement conda sans version de Python, utilisez la commande `conda info` pour afficher les emplacements de dossiers d’environnement conda, puis supprimer manuellement le sous-dossier de l’environnement de cet emplacement.
 
-1. Sélectionnez **Créer**et observez la progression dans la fenêtre **Sortie**. Une fois la création terminée, la sortie inclut avec quelques instructions CLI :
+1. Sélectionnez **Créer** et observez la progression dans la fenêtre **Sortie**. Une fois la création terminée, la sortie inclut avec quelques instructions CLI :
 
     ![Création réussie d’un environnement conda](media/environments/environments-conda-2-2019.png)
 
@@ -239,7 +239,7 @@ Suivez les étapes ci-dessous pour identifier un environnement installé à un e
 
     ![Onglet Environnement personnalisé dans la boîte de dialogue Ajouter un environnement](media/environments/environments-custom-2-2019.png)
 
-1. Dans les champs de la boîte de dialogue, entrez ou recherchez (à l’aide de **... **) le chemin d’accès de l’interpréteur sous **Chemin du préfixe**, qui renseigne la plupart des autres champs. Une fois les valeurs révisées et modifiées si nécessaire, sélectionnez **Ajouter**.
+1. Dans les champs de la boîte de dialogue, entrez ou recherchez (à l’aide de **...**) le chemin d’accès de l’interpréteur sous **Chemin du préfixe**, qui renseigne la plupart des autres champs. Une fois les valeurs révisées et modifiées si nécessaire, sélectionnez **Ajouter**.
 
     ![Champs pour spécifier les détails d’une option d’environnement personnalisé dans la boîte de dialogue Ajouter un environnement](media/environments/environments-custom-3-2019.png)
 
@@ -262,7 +262,7 @@ Pour corriger un environnement que vous souhaitez conserver, essayez d’abord d
 Pour corriger un environnement qui n’a pas d’option de réparation, ou pour supprimer un environnement non valide, effectuez les étapes suivantes afin de modifier directement le Registre. Visual Studio met automatiquement à jour la fenêtre **environnements python** quand vous apportez des modifications au registre.
 
 1. Exécutez *regedit.exe*.
-1. Accédez à **HKEY_LOCAL_MACHINE \software\python** ou **HKEY_CURRENT_USER \software\python**. Pour IronPython, recherchez plutôt **IronPython**.
+1. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Python** ou **HKEY_CURRENT_USER\SOFTWARE\Python**. Pour IronPython, recherchez plutôt **IronPython**.
 1. Développez le nœud qui correspond à la distribution, tel que **PythonCore** pour CPython ou **ContinuumAnalytics** pour Anaconda. Pour IronPython, développez le nœud de numéro de version.
 1. Inspectez les valeurs sous le nœud **InstallPath** :
 
@@ -270,7 +270,7 @@ Pour corriger un environnement qui n’a pas d’option de réparation, ou pour 
 
     - Si l’environnement existe toujours sur votre ordinateur, remplacez la valeur de **ExecutablePath** par l’emplacement correct. Corrigez également les valeurs **(Par défaut)** et **WindowedExecutablePath** valeurs en fonction des besoins.
     - Si l’environnement n’existe plus sur votre ordinateur et que vous souhaitez le supprimer de la fenêtre **Environnements Python**, supprimez le nœud parent d’**InstallPath**, par exemple **3.6**, dans l’image ci-dessus.
-    - Paramètres non valides dans **HKEY_CURRENT_USER \software\python** remplacer les paramètres dans **HKEY_LOCAL_MACHINE \software\python**
+    - Paramètres non valides dans **HKEY_CURRENT_USER\SOFTWARE\Python** substituer les paramètres dans **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
 
 ## <a name="see-also"></a>Voir aussi
 

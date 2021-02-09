@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0523f9a21dbdb655a02fb6263a6eb644458ab6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a72cb56209176e968f9198808f25c20edee96d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923833"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003 : Nombreux échantillons de noyau
 
@@ -31,7 +31,7 @@ ms.locfileid: "85548224"
 |Message|Vous avez une proportion élevée d’échantillons en mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de reprofiler votre application avec le mode Instrumentation.|
 |Type de règle|Information|
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Une proportion importante des échantillons de pile des appels qui ont été collectés pour l’application s’exécutaient en mode noyau. Envisagez de profiler votre application avec une autre méthode de profilage.
 
 ## <a name="rule-description"></a>Description de la règle

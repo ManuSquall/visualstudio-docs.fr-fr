@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ad786b19-7c4c-46ee-bfb6-c4752b373a09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 22224e375c1d1f463f1c07d41ca5a03efa5cabdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923740"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic, espace de noms
 L’espace de noms `diagnostics` fournit des fonctionnalités permettant d’émettre des marqueurs du visualiseur concurrentiel.
@@ -34,18 +34,18 @@ namespace diagnostic;
 
 ### <a name="classes"></a>Classes
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |[marker_series, classe](../profiling/marker-series-class.md)|Représente un canal série d’événements générés par un fournisseur unique.|
 |[span, classe](../profiling/span-class.md)|Définit une phase de l’application.|
 
 ### <a name="enumerations"></a>Énumérations
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |[marker_importance, énumération](../profiling/marker-importance-enumeration.md)|Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms :** Concurrency

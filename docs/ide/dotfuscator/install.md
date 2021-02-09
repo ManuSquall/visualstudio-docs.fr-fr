@@ -21,13 +21,13 @@ description: Découvrez comment installer la copie gratuite de Dotfuscator Commu
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: befa47e5718d3d2f5d492c49e173b22fc63310e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+manager: jmartens
+ms.openlocfilehash: 9f4ca634aa226437b6d8790837c9f95f778a00c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924761"
 ---
 # <a name="install-dotfuscator-community"></a>Installer Dotfuscator Community
 

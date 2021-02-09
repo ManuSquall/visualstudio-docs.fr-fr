@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924328"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -202,7 +202,7 @@ Pour gérer les erreurs dans la fenêtre de Liste d’erreurs, consultez [résou
 
 Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [résoudre les problèmes de validation de couche](#troubleshoot-layer-validation-issues).
 
-|**Problème**|**Cause possible**|**Résolution**|
+|**Problème**|**Cause possible**|**Résolution :**|
 |-|-|-|
 |Les erreurs de validation ne se produisent pas comme prévu.|La validation ne fonctionne pas sur les diagrammes de dépendance qui sont copiés à partir d’autres diagrammes de dépendance dans Explorateur de solutions et qui se trouvent dans le même projet de modélisation. les diagrammes de dépendance copiés de cette façon contiennent les mêmes références que le diagramme de dépendance d’origine.|Ajoutez un nouveau diagramme de dépendance au projet de modélisation.<br /><br /> Copiez les éléments du diagramme de dépendance source vers le nouveau diagramme.|
 

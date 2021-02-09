@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924887"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Didacticiel : créer une application simple avec C\#
 
@@ -44,7 +44,7 @@ Quand vous ouvrez Visual Studio pour la première fois, vous êtes invité à vo
 
 ![Boîte de dialogue Choisir les paramètres](../media/exploreide-settings.png)
 
-Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus, les barres d’outils et l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage**est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus, les barres d’outils et l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage** est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
 ![IDE Visual Studio 2017 avec les paramètres généraux appliqués](../media/exploreide-idewithgeneralsettings.png "Capture d’écran de l’IDE de Visual Studio 2017 avec les paramètres généraux appliqués")
 
@@ -66,7 +66,7 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
      ![Dans la barre de menus, choisissez Fichier, nouveau, projet](../media/exploreide-filenewproject.png "Capture d’écran de la barre de menus dans laquelle vous choisissez Fichier, nouveau, projet")
 
-1. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
+1. Dans la boîte de dialogue **Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
 
      ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/exploreide-newprojectcsharp.png "Capture d’écran du modèle d’application WPF dans la boîte de dialogue Nouveau projet")
 
@@ -294,7 +294,7 @@ Maintenant, fermez la fenêtre d’application pour arrêter le débogage.
 
 ### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
 
-Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer**  >  le**point d’arrêt**, en cliquant dans la marge de gauche de l’éditeur à côté de la ligne de code où vous souhaitez que le saut se produise, ou en appuyant sur **F9**.
+Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer**  >  le **point d’arrêt**, en cliquant dans la marge de gauche de l’éditeur à côté de la ligne de code où vous souhaitez que le saut se produise, ou en appuyant sur **F9**.
 
 #### <a name="add-breakpoints"></a>Ajouter des points d’arrêt
 
@@ -340,7 +340,7 @@ Dans l’application en cours d’exécution, vous devriez voir un widget qui ap
 
 Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l’application.
 
-1. Dans le menu principal, sélectionnez **générer**une  >  **solution propre** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
+1. Dans le menu principal, sélectionnez **générer** une  >  **solution propre** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
 
 1. Remplacez la configuration de build **Debug** pour HelloWPFApp par **Release** à l’aide du contrôle de liste déroulante de la barre d’outils (« Debug » est actuellement affiché).
 

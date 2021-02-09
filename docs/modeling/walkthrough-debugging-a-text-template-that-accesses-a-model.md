@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924118"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous pouvez recevoir des erreurs lorsque le moteur transforme le modèle en code source ou lors de la compilation du code généré. La procédure pas à pas suivante présente certaines des opérations que vous pouvez effectuer pour déboguer un modèle de texte.
@@ -22,7 +22,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 > [!NOTE]
 > Pour plus d’informations sur les modèles de texte en général, consultez [génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : débogage d’un modèle de texte](debugging-a-t4-text-template.md).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Création d’une solution de langage spécifique à un domaine
+## <a name="creating-a-domain-specific-language-solution"></a>Création d’une solution de langage Domain-Specific
  Dans cette procédure, vous créez une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
 
 - Nom : DebuggingTestLanguage
@@ -33,7 +33,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 - Nom de la société : fabrikam
 
-  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [How to : Create a Domain-Specific Language solution](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Création d’un modèle de texte
  Ajoutez un modèle de texte à votre solution.

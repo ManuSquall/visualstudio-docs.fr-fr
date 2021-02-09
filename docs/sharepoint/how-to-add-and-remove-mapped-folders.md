@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e6771482925a935d1b6424412d4176db5e9ad6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923473"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Procédure : ajouter et supprimer des dossiers mappés
   Certains dossiers couramment utilisés dans SharePoint, tels que les images et les mises en page, sont profondément incorporés dans la hiérarchie des fichiers. Vous pouvez mapper ces dossiers à un projet SharePoint pour y accéder plus facilement. Les dossiers mappés sont des dossiers du projet SharePoint qui correspondent à l’emplacement physique des fichiers dans l’installation de SharePoint Server.

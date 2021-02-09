@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: cc672a8a0ff7edd66504b5ecbf48e622fad085ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923624"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Comment : ajouter et supprimer des assemblys supplémentaires
   Si un package SharePoint dépend d’autres assemblys pour des fonctionnalités ou des données, vous pouvez ajouter les assemblys à votre package de solution (. wsp). De cette façon, le serveur SharePoint vérifie que les assemblys personnalisés sont installés avec un package.
@@ -29,7 +29,7 @@ ms.locfileid: "96914970"
  Vous pouvez également ajouter et modifier les contrôles sécurisés et les fichiers de ressources de classe associés aux assemblys.
 
 ## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Ajouter des assemblys, des contrôles sécurisés et des ressources de classe supplémentaires
- Vous pouvez ajouter des assemblys supplémentaires dans le package de solution SharePoint. Les assemblys supplémentaires d’une solution bac à sable (sandbox) sont déployés sur le Global Assembly Cache, mais les éléments de projet SharePoint dans une solution bac à sable (sandbox) sont ajoutés à la base de données de contenu. Vous pouvez également ajouter des contrôles sécurisés et des ressources de classe à ces assemblys supplémentaires. Pour plus d’informations sur les contrôles sécurisés, consultez [fourniture d’informations sur l’empaquetage et le déploiement dans des éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ou « création d’une entrée SafeControl » dans déploiement d' [composants WebPart dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
+ Vous pouvez ajouter des assemblys supplémentaires dans le package de solution SharePoint. Les assemblys supplémentaires d’une solution bac à sable (sandbox) sont déployés sur le Global Assembly Cache, mais les éléments de projet SharePoint dans une solution bac à sable (sandbox) sont ajoutés à la base de données de contenu. Vous pouvez également ajouter des contrôles sécurisés et des ressources de classe à ces assemblys supplémentaires. Pour plus d’informations sur les contrôles sécurisés, consultez [fourniture d’informations sur l’empaquetage et le déploiement dans des éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ou « création d’une entrée SafeControl » dans déploiement d' [WebParts dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
 #### <a name="to-add-an-existing-assembly"></a>Pour ajouter un assembly existant
 

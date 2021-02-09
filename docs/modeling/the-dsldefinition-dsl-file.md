@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924496"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 
@@ -277,7 +277,7 @@ Chaque outil de connexion peut appeler un générateur de connexion spécifique.
 
 Aucun de ces types d'outils ne construit directement des formes ou des connecteurs. Chacun instancie une classe de domaine ou une relation de domaine ; les mappages Forme et Connecteur déterminent ensuite comment cette classe de domaine ou cette relation de domaine apparaît.
 
-## <a name="paths"></a>Chemins
+## <a name="paths"></a>Chemins d'accès
 
 Les chemins d'accès de domaine apparaissent à plusieurs emplacements dans le fichier DslDefinition.dsl. Ces chemins d'accès spécifient une série de liens d'un élément du modèle (autrement dit, une instance du langage spécifique à un domaine) à un autre. La syntaxe de chemin d'accès est simple mais détaillée.
 
