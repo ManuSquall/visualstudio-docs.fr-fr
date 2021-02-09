@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871622"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Erreur : L'authentification Kerberos a échoué
 Lorsque vous essayez d'effectuer un débogage distant, le message d'erreur suivant peut s'afficher :

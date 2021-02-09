@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8cfc3ac5cb606637fe5c2818750168a239a46fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 01f8bf0b018ed5dd91cedcc221a037f3502815e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871492"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Erreur : Le débogage en mode mixte des processus x64 est pris en charge uniquement lorsque vous utilisez Microsoft .NET Framework 4 ou version ultérieure
 Pour déboguer du code natif et managé mixte dans un processus 64 bits, vous devez disposer de .NET Framework version 4. Le débogage en mode mixte des processus 64 bits avec des versions de .NET Framework antérieures à la version 4 n’est pas pris en charge.

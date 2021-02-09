@@ -15,15 +15,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f6c236d306d952785e4d1974b5a31e8040e74b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870842"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec d'ouverture de session à distance du groupe de travail
 Cette erreur affiche le message suivant :
@@ -32,7 +32,7 @@ Cette erreur affiche le message suivant :
 
  **Cause**
 
- Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant. Les causes possibles sont les suivantes :
+ Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant. Les causes possibles sont les suivantes :
 
 - Il n'existe pas de compte avec le nom et le mot de passe correspondants sur l'ordinateur distant.
 

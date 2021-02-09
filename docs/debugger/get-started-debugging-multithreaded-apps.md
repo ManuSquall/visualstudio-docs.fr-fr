@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870517"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Prise en main du débogage des applications multithread (C#, Visual Basic, C++)
 
@@ -42,7 +42,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
 
    ::: moniker range=">=vs-2019"
 
-   Si la fenêtre de démarrage n’est pas ouverte **File** , choisissez > **fenêtre démarrage**de fichier.
+   Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
@@ -70,7 +70,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
    Sélectionnez **OK**.
    ::: moniker-end
 
-   Un nouveau projet console s'affiche. Une fois le projet créé, un fichier source s’affiche. Selon le langage que vous avez choisi, le fichier source peut être appelé *Program.cs*, *MyThreadWalkthroughApp. cpp*ou *Module1. vb*.
+   Un nouveau projet console s'affiche. Une fois le projet créé, un fichier source s’affiche. Selon le langage que vous avez choisi, le fichier source peut être appelé *Program.cs*, *MyThreadWalkthroughApp. cpp* ou *Module1. vb*.
 
 1. Supprimez le code qui apparaît dans le fichier source et remplacez-le par l’exemple de code ci-dessous.
 
@@ -242,7 +242,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
 
 3. Dans l’éditeur de code source, localisez la ligne qui contient le point d’arrêt.
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Détection du marqueur de thread  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Détection du marqueur de thread  
 
 1. Dans la barre d’outils déboguer, sélectionnez le bouton **afficher les threads dans la source** ![afficher les threads dans la source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
@@ -260,7 +260,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
 
 Dans la fenêtre **Piles parallèles** , vous pouvez basculer entre une vue threads et (pour la programmation basée sur des tâches) et vous pouvez afficher les informations de la pile des appels pour chaque thread. Dans cette application, vous pouvez utiliser la vue threads.
 
-1. Ouvrez la fenêtre **Piles parallèles** en choisissant **Déboguer**  >  **Windows**  >  **Piles parallèles**Windows. Un résultat similaire à ce qui suit doit s’afficher. Les informations exactes diffèrent en fonction de l’emplacement actuel de chaque thread, de votre matériel et de votre langage de programmation.
+1. Ouvrez la fenêtre **Piles parallèles** en choisissant **Déboguer**  >    >  **Piles parallèles** Windows. Un résultat similaire à ce qui suit doit s’afficher. Les informations exactes diffèrent en fonction de l’emplacement actuel de chaque thread, de votre matériel et de votre langage de programmation.
 
     ![Fenêtre piles parallèles](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
@@ -362,7 +362,7 @@ Vous pouvez définir des points d’arrêt sur différentes conditions, telles q
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 - [Comment : utiliser la fenêtre pile parallèle](../debugger/using-the-parallel-stacks-window.md)
 - [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)

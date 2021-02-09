@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe0fc33c142c1bc70655817f833ae7c80fc628e7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8ecb8a0a3c725403d57769090229f690281026a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871505"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
 Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instance appropriée de Visual Studio Remote Debugging Monitor sur l’ordinateur distant. Visual Studio Remote Debugging Monitor doit être installé pour que le débogage distant fonctionne. Pour plus d’informations sur le téléchargement et la configuration du débogueur distant, consultez [débogage distant](../debugger/remote-debugging.md).
@@ -51,7 +51,7 @@ Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instanc
 
 - Vous pouvez arrêter le débogueur distant et le redémarrer avec le compte que vous utilisez sur l’ordinateur local.
 
-- Vous pouvez démarrer le débogueur distant à partir de la ligne de commande avec le paramètre **/allow \<username> ** :`msvsmon /allow <username@computer>`
+- Vous pouvez démarrer le débogueur distant à partir de la ligne de commande avec le paramètre **/allow \<username>** :`msvsmon /allow <username@computer>`
 
 - Vous pouvez ajouter l’utilisateur aux autorisations du débogueur distant (dans la fenêtre du débogueur distant, **Outils > Autorisations**).
 

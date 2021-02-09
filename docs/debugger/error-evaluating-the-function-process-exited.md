@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871635"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erreur : le processus cible s’est terminé avec le code &#39;code&#39; lors de l’évaluation de la fonction &#39;fonction&#39;
 
@@ -28,20 +28,20 @@ Ce problème est souvent dû au fait que lorsque le débogueur évalue une propr
 
 Il existe deux solutions possibles à ce problème.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solution #1 : empêcher le débogueur d’appeler la propriété Getter ou la méthode ToString 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solution #1 : empêcher le débogueur d’appeler la propriété Getter ou la méthode ToString 
 
 Le message d’erreur indique le nom de la fonction que le débogueur a essayé d’appeler. Avec le nom de la fonction, vous pouvez essayer de réévaluer cette fonction à partir de la fenêtre **exécution** pour déboguer l’évaluation. Le débogage est possible lors de l’évaluation à partir de la fenêtre **exécution** car, contrairement aux évaluations implicites des fenêtres **automatique/variables locales/espion** , le débogueur s’arrête sur les exceptions non gérées.
 
 Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur d’appeler la méthode ou l’accesseur Get de propriété `ToString` . Essayez l’une des opérations suivantes :
 
 * Remplacez la méthode par un autre type de code, en plus d’une méthode Getter ou d’une méthode ToString de propriété. le problème disparaît.
-    - ou -
+    -ou-
 * (Pour `ToString` ) Définissez un `DebuggerDisplay` attribut sur le type et vous pouvez faire en sorte que le débogueur évalue autre chose que `ToString` .
-    - ou -
+    -ou-
 * (Pour un accesseur Get de propriété) Placez l' `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais qu’elle doit être une méthode.
 
 Si vous ne pouvez pas modifier cette méthode, vous pourrez peut-être interrompre le processus cible à une autre instruction et retenter l’évaluation.
 
 ### <a name="solution-2-disable-all-implicit-evaluation"></a>#2 de solution : désactiver toutes les évaluations implicites
 
-Si les solutions précédentes ne résolvent pas le problème, accédez à **Outils**  >  **options**et décochez la case définir le **débogage**  >  **général**  >  **activer l’évaluation de la propriété et d’autres appels de fonction implicite**. Cela désactivera la plupart des évaluations de fonctions implicites et devrait résoudre le problème.
+Si les solutions précédentes ne résolvent pas le problème, accédez à **Outils**  >  **options** et décochez la case définir le **débogage**  >  **général**  >  **activer l’évaluation de la propriété et d’autres appels de fonction implicite**. Cela désactivera la plupart des évaluations de fonctions implicites et devrait résoudre le problème.

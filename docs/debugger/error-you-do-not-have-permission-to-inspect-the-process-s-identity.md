@@ -9,15 +9,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 90cd775f18dd505d2f734a8d337daadfd9f0dd7b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6903cba8d048d5ed2969d5aa7436fc6eca17561e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870805"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : vous n’êtes pas autorisé à inspecter l’identité du processus&#39;s
 Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut être dû à la configuration de votre système.
@@ -44,7 +44,7 @@ Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut êtr
 
 8. Cliquez sur **OK**.
 
-9. Redémarrez l’ordinateur.
+9. Redémarrez l'ordinateur.
 
      Cette procédure n'active pas automatiquement le Bureau à distance. Pour activer le Bureau à distance sur votre ordinateur, effectuez la procédure supplémentaire suivante.
 

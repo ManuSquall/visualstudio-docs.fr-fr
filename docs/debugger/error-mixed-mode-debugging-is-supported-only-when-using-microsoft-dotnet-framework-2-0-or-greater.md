@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bf6e42936c1917e76f8ad5bf2877aba3050edc9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1d4146ff8acd3b1f1673d3ba25963e02aee36514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871518"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erreur : Le débogage en mode mixte est uniquement pris en charge lorsque vous utilisez Microsoft .NET Framework 2.0 ou version ultérieure
 Pour déboguer du code natif et managé mixte, vous devez avoir .NET Framework version 2,0, 3,0. 3.5 ou 4. Le débogage en mode mixte avec des versions antérieures du .NET Framework n’est pas pris en charge.

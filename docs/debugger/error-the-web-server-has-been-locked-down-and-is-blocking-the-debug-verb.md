@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75ebf2d134c1c0e33b6f787e03c1ea56b0650ee0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e68ab09d7fc398d45a8942c3df4ca0dee5754d2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871207"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Erreur : le serveur Web est verrouillé et bloque l'exécution du verbe DEBUG
 L’exécution pas à pas d’une application Web ou d’un service web XML a échoué, car l’outil de verrouillage IIS a été exécuté et URLScan a été installé et activé. Cette condition empêche IIS de recevoir le verbe DEBUG.
@@ -44,7 +44,7 @@ L’exécution pas à pas d’une application Web ou d’un service web XML a é
 
 5. Recherchez la section [DenyVerbs]. Si DEBUG apparaît dans la section [DenyVerbs], supprimez-le.
 
-6. Enregistrez le fichier.
+6. Enregistrez le fichier .
 
 7. Redémarrez le serveur ou redémarrez IIS.
 

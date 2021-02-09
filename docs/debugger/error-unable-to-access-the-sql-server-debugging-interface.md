@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2d0ba3abf66aefe56921c51669787186d49f12
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f14143052ed3eb65e74e284e0877d9b32cb17bf7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871089"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Erreur : Impossible d'accéder à l'interface de débogage SQL Server
 Ce message se produit lorsque vous essayez de lancer le débogage SQL sur un ordinateur où le débogage SQL n'est pas activé.

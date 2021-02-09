@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870634"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Spécificateurs de format pour C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans les fenêtres **Espion**, **automatique** et **variables locales** à l’aide de spécificateurs de format.
@@ -157,7 +157,7 @@ Les spécificateurs en **gras** sont pris en charge uniquement pour le débogage
 |x<br /><br />X|entier hexadécimal|61541|0x0000f065|
 |**l**<br /><br />**h**|préfixe long ou court pour : d, i, u, o, x, X|00406042|0x0c22|
 |**f**|virgule flottante signée|(3./2.), f|1.500000|
-|**e**|notation scientifique signée|(3.0/2.0)|1.500000e+000|
+|**Envoyer**|notation scientifique signée|(3.0/2.0)|1.500000e+000|
 |**activée**|virgule flottante signée ou notation scientifique signée,<br/> selon celui qui est le plus court|(3.0/2.0)|1.5|
 |c|caractère unique|\<location>|101 ’e’|
 |s|const char * (avec guillemets)|\<location>|« Hello World »|

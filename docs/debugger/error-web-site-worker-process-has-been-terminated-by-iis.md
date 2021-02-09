@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870894"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erreur : le processus de travail de site Web a été interrompu par IIS.
 Le débogueur a arrêté l’exécution du code sur le site web. Résultat : Internet Information Services (IIS) a supposé que le processus de travail avait cessé de répondre. Par conséquent, IIS a mis fin au processus de traitement.

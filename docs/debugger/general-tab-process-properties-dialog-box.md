@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dae82479044df6c031e5aa9f023b17c5e7902965
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870556"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Onglet Général de la boîte de dialogue Propriétés du processus
 Utilisez l’onglet **général** pour en savoir plus sur un processus spécifique. Pour afficher la [boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md), déplacez le focus vers une fenêtre [vue processus](../debugger/processes-view.md) . Sélectionnez un nœud de processus dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .

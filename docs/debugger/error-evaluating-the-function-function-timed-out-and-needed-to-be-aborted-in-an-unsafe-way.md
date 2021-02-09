@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256b7858ed5714d716b31fa28c8cd463b96dbb8a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871648"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erreur : l’évaluation de la fonction &#39;fonction&#39; a dépassé le délai d’attente et devait être abandonnée de manière non sécurisée
 
@@ -33,9 +33,9 @@ Il existe plusieurs solutions possibles à ce problème.
 Le message d’erreur indique le nom de la fonction que le débogueur a essayé d’appeler. Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur d’appeler la méthode Getter ou ToString de la propriété. Essayez l’une des opérations suivantes :
 
 * Remplacez la méthode par un autre type de code, en plus d’une méthode Getter ou d’une méthode ToString de propriété. le problème disparaît.
-    - ou -
+    -ou-
 * (Pour ToString) Définissez un attribut DebuggerDisplay sur le type et vous pouvez faire en sorte que le débogueur évalue autre chose que ToString.
-    - ou -
+    -ou-
 * (Pour un accesseur Get de propriété) Placez l' `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais qu’elle doit être une méthode.
 
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 de solution : demandez au débogueur d’abandonner l’évaluation du code cible
@@ -44,7 +44,7 @@ Le message d’erreur indique le nom de la fonction que le débogueur a essayé 
 
 ### <a name="solution-3-disable-all-implicit-evaluation"></a>#3 de solution : désactiver toutes les évaluations implicites
 
-Si les solutions précédentes ne résolvent pas le problème, accédez à **Outils**  >  **options**et décochez la case définir le **débogage**  >  **général**  >  **activer l’évaluation de la propriété et d’autres appels de fonction implicite**. Cela désactivera la plupart des évaluations de fonctions implicites et devrait résoudre le problème.
+Si les solutions précédentes ne résolvent pas le problème, accédez à **Outils**  >  **options** et décochez la case définir le **débogage**  >  **général**  >  **activer l’évaluation de la propriété et d’autres appels de fonction implicite**. Cela désactivera la plupart des évaluations de fonctions implicites et devrait résoudre le problème.
 
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>#4 de solution : activer le mode de compatibilité managé
 

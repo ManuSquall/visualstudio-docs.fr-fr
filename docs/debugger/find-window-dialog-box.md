@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 571cee3b1e3a391a8dc328fcc76a0ca0d06ed14f
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 58812616e36a52668af908ec1af287579a1ca83f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870738"
 ---
 # <a name="find-window-dialog-box"></a>Boîte de dialogue Rechercher une fenêtre
 Utilisez cette boîte de dialogue pour sélectionner une fenêtre et afficher ses propriétés ou ses messages. Pour afficher cette boîte de dialogue, choisissez **Rechercher une fenêtre** dans le menu **Espion** .

@@ -13,29 +13,29 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871258"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service Débogueur distant Visual Studio sur l'ordinateur cible ne peut pas se reconnecter à cet ordinateur
 Cette erreur signifie que le service du débogueur distant s’exécute sous un compte d’utilisateur qui ne peut pas s’authentifier lorsqu’il tente de se connecter à l’ordinateur à partir duquel vous déboguez. Cette erreur peut se produire lors du débogage à distance à l’aide du moteur de débogage hérité et que le débogueur distant s’exécute en tant que service.
 
  Le tableau suivant répertorie les comptes autorisés à accéder à l'ordinateur:
 
-|Scénario|Compte LocalSystem|Compte du domaine|Comptes locaux avec les mêmes nom d'utilisateur et mot de passe sur les deux ordinateurs|
+|Scénario|Compte LocalSystem|Compte de domaine|Comptes locaux avec les mêmes nom d'utilisateur et mot de passe sur les deux ordinateurs|
 |-|-|-|-|
 |Deux ordinateurs sur le même domaine|Oui|Oui|Oui|
 |Deux ordinateurs sur des domaines qui ont un niveau de confiance bidirectionnel|Non|Non|Oui|
 |Un ordinateur, ou les deux, dans un groupe de travail|Non|Non|Oui|
 |Ordinateurs sur des domaines différents|Non|Non|Oui|
 
- En outre :
+ De plus :
 
 - Le compte sous lequel vous exécutez le service Débogueur distant Visual Studio doit être un administrateur sur l'ordinateur distant afin qu'il puisse déboguer tout processus.
 
