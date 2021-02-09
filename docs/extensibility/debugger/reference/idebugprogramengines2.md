@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94df9acc6a0478ba2cb36022bc8618c69be97b8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56c74b265331b67564856baa003632d8d778bfb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898904"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Cette interface est utilisée par les nœuds de programme pour spécifier tous les moteurs de débogage possibles pouvant déboguer ce programme.
@@ -42,7 +42,7 @@ IDebugProgramEngines2 : IUnknown
 |[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Indique tous les possibles DEs qui peuvent déboguer ce programme.|
 |[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Sélectionne le DE à utiliser pour déboguer ce programme.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Une fois qu’un utilisateur est choisi par l’utilisateur, ce choix est inscrit auprès du nœud de programme en appelant [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Le moteur sélectionné devient le moteur retourné par [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
 ## <a name="requirements"></a>Configuration requise

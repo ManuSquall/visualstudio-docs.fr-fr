@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b188b386dea7279530e186073847e26915af63d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897283"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Récupère la chaîne associée à cette propriété et la stocke dans une mémoire tampon fournie par l’utilisateur.
@@ -55,10 +55,10 @@ dans Nombre maximal de caractères que la mémoire tampon fournie par l’utilis
 `pceltFetched`\
 à Où le nombre de caractères réellement stockés dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 En C++, vous devez veiller à ce que la mémoire tampon soit au moins un `buflen` caractère Unicode long. Notez qu’un caractère Unicode a une longueur de 2 octets.
 
 > [!NOTE]

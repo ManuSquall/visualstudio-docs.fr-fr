@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 105a90699689ff6eab6ea5bdfa3d4037e700ecb5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 40f29eb5da5c8377c31a39a1e55868bf89f444a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898245"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Stratégie de modèle et fenêtre Propriétés
 Lorsqu’un projet est contenu dans un projet de modèle d’entreprise, ce projet de modèle d’entreprise peut appliquer la stratégie. La stratégie de modèle devient un système de restriction qui peut être utilisé pour définir les valeurs par défaut des propriétés, masquer les propriétés, ajouter des propriétés, etc.

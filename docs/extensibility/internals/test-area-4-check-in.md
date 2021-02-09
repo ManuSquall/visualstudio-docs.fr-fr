@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe0e7838c3bde048df2514c54e534cf7a9b3475
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898111"
 ---
 # <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
 Cette zone de test du plug-in de contrôle de code source traite de l’envoi d’éléments mis à jour à la Banque des versions via la commande **Archiver** .

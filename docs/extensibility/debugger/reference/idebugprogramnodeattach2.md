@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d527dfcfcd09e4d70adca86436aa56e1852bee70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898502"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 Permet à un nœud de programme d’être averti d’une tentative d’attachement au programme associé.
@@ -41,7 +41,7 @@ IDebugProgramNodeAttach2 : IUnknown
 |------------|-----------------|
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Joint au programme associé ou diffère le processus d’attachement à la méthode d' [attachement](../../../extensibility/debugger/reference/idebugengine2-attach.md) .|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface est l’alternative recommandée à la méthode de [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) déconseillée. Tous les moteurs de débogage sont toujours chargés avec la `CoCreateInstance` fonction, autrement dit, ils sont instanciés en dehors de l’espace d’adressage du programme en cours de débogage.
 
  Si une implémentation précédente de la `IDebugProgramNode2::Attach_V7` méthode définissait simplement le `GUID` du programme en cours de débogage, seule la méthode [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) doit être implémentée.

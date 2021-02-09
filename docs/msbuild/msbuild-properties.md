@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a8f53613c71a51ab2e5bd8441cb4605da795e8a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897758"
 ---
 # <a name="msbuild-properties"></a>MSBuild (propriétés)
 
@@ -66,7 +66,7 @@ Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour co
 
 ## <a name="registry-properties"></a>Propriétés de Registre
 
- Vous pouvez lire les valeurs du Registre système à l’aide de la syntaxe suivante, où `Hive` est la ruche du Registre (par exemple, **HKEY_LOCAL_MACHINE** ), `MyKey` est le nom de clé, `MySubKey` est le nom de la sous-clé et `Value` est la valeur de la sous-clé.
+ Vous pouvez lire les valeurs du Registre système à l’aide de la syntaxe suivante, où `Hive` est la ruche du Registre (par exemple, **HKEY_LOCAL_MACHINE**), `MyKey` est le nom de clé, `MySubKey` est le nom de la sous-clé et `Value` est la valeur de la sous-clé.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -90,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Propriétés globales
 
- MSBuild vous permet de définir des propriétés sur la ligne de commande à l’aide du commutateur **-Property** (ou **-p** ). Les valeurs de ces propriétés globales remplacent les valeurs de propriétés qui sont définies dans le fichier projet. Cela inclut les propriétés d’environnement, mais pas les propriétés réservées, qui ne peuvent pas être modifiées.
+ MSBuild vous permet de définir des propriétés sur la ligne de commande à l’aide du commutateur **-Property** (ou **-p**). Les valeurs de ces propriétés globales remplacent les valeurs de propriétés qui sont définies dans le fichier projet. Cela inclut les propriétés d’environnement, mais pas les propriétés réservées, qui ne peuvent pas être modifiées.
 
  L’exemple suivant définit la propriété globale `Configuration` sur `DEBUG`.
 

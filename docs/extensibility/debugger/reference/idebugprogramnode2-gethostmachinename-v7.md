@@ -9,18 +9,18 @@ helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 843e5fdf91fe817681b95422474d3887de5756b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898614"
 ---
 # <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -46,11 +46,11 @@ int GetHostMachineName_V7 (
 `pbstrHostMachineName`\
 à Retourne le nom de l’ordinateur sur lequel le programme est en cours d’exécution.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 
 Une implémentation doit toujours retourner `E_NOTIMPL` .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 > [!WARNING]
 > À compter de Visual Studio 2005, cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL` .

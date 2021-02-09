@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899005"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Retourne les GUID pour tous les moteurs de débogage possibles (DE) qui peuvent déboguer ce programme.
@@ -28,7 +28,7 @@ Retourne les GUID pour tous les moteurs de débogage possibles (DE) qui peuvent 
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumPossibleEngines( 
+HRESULT EnumPossibleEngines( 
    DWORD  celtBuffer,
    GUID*  rgguidEngines,
    DWORD* pceltEngines
@@ -36,7 +36,7 @@ HRESULT EnumPossibleEngines( 
 ```
 
 ```csharp
-int EnumPossibleEngines( 
+int EnumPossibleEngines( 
    uint      celtBuffer,
    GUID[]    rgguidEngines,
    ref DWORD pceltEngines
@@ -53,10 +53,10 @@ dans Nombre de de GUID à retourner. Cela spécifie également la taille maximal
 `pceltEngines`\
 à Retourne le nombre réel de de GUID retournés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou [C#] 0x8007007A si la mémoire tampon n’est pas assez grande.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour déterminer le nombre de moteurs, appelez cette méthode une fois avec le `celtBuffer` paramètre défini sur 0 et le `rgguidEngines` paramètre défini sur une valeur null. Cela retourne `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A pour C#) et le `pceltEngines` paramètre retourne la taille nécessaire de la mémoire tampon.
 
 ## <a name="see-also"></a>Voir aussi

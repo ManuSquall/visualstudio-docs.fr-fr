@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b8c84f90373743fb94fa0fe7115656642e0384a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898512"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 Obtient le nom du programme.
@@ -43,10 +43,10 @@ int GetProgramName (
 `pbstrProgramName`\
 à Retourne le nom du programme.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Le nom d’un programme n’est pas identique au chemin d’accès au programme, même si le nom du programme peut faire partie d’un tel chemin d’accès.
 
 ## <a name="example"></a>Exemple

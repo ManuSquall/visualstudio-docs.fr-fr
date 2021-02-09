@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ff6805537327b29b1d43b1bf4009b431452fc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896973"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 Cette interface énumère les points d’arrêt d’erreur associés à un point d’arrêt en attente.
@@ -42,10 +42,10 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|Récupère un nombre spécifié de points d’arrêt sur erreur dans une séquence d’énumération.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|Ignore un nombre spécifié de points d’arrêt sur erreur dans une séquence d’énumération.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|Réinitialise une séquence d'énumération.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
+|[Répliqué](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Obtient le nombre de points d’arrêt sur erreur dans un énumérateur.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface contient une liste d’interfaces [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , chacune décrivant un point d’arrêt qui n’a pas pu être lié et la raison pour laquelle elle n’a pas pu être liée. Visual Studio utilise l' `IEnumDebugErrorBreakpoint2` interface pour mettre à jour les points d’arrêt affichés dans l’IDE.
 
 ## <a name="requirements"></a>Configuration requise

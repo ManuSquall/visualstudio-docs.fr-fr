@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 80e511d8-9b40-4a85-aa5d-952fa5ee6ae7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e6eac7c97b9d375f32e36a372d6f31175c79098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e6460653795720f10dca7f304035c49e4d8e035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898525"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 Cette interface représente un programme pouvant être débogué.
@@ -47,7 +47,7 @@ IDebugProgramNode2 : IUnknown
 |[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)|Obtient le nom et l’identificateur du en cours d’exécution de ce programme.|
 |[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|Déconseillé. N’UTILISEZ PAS.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le gestionnaire de débogage de session (SDM) appelle généralement [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) pour obtenir cette interface.
 
 ## <a name="requirements"></a>Configuration requise

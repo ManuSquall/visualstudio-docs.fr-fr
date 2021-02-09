@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f206de825d021d8daa2977a839f96fabd5e9db7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898863"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 Cette interface permet au gestionnaire de débogage de session (SDM) de s’attacher à un programme et d’obtenir le nœud de programme associé à un programme.
@@ -42,7 +42,7 @@ IDebugProgramEx2 : IUnknown
 |[Attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Joint un programme à une session.|
 |[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Obtient le nœud de programme associé à un programme.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface est privée entre le SDM et le programme.
 
 ## <a name="requirements"></a>Configuration requise

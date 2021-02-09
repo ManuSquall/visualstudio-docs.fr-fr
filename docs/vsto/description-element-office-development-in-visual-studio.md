@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <description> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 377599e770a93faca9e283ec543091508b773bc7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9f065dd07e901ee0d59b39f1096cc351cd70bc02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897594"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;description &gt; , élément (développement Office dans Visual Studio)
   L’élément `description` de l’espace de noms `vstov4` stocke la description de la solution Office qui s’affiche dans la boîte de dialogue des compléments COM des applications Microsoft Office.
@@ -35,7 +35,7 @@ ms.locfileid: "96846231"
 ```
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
- facultatif. L’élément `description` se trouve dans l’espace de noms `vstov4` . Il contient la description du complément qui s’affiche dans la boîte de dialogue des compléments COM des applications Microsoft Office.
+ Facultatif. L’élément `description` se trouve dans l’espace de noms `vstov4` . Il contient la description du complément qui s’affiche dans la boîte de dialogue des compléments COM des applications Microsoft Office.
 
  L’élément `description` n’a aucun attribut ou élément.
 

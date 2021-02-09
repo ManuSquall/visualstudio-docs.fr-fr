@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896902"
 ---
 # <a name="project-model-core-components"></a>Principaux composants d’un modèle de projet
 Les tableaux suivants s’étendent sur le modèle de projet. Les tableaux présentent de brèves descriptions des interfaces et des services identifiés dans le modèle, ainsi que les interfaces et les services associés à des objets spécifiques. En outre, les tables détaillent les autres interfaces facultatives lors de la création et de la maintenance du projet en fonction des exigences de votre type de projet spécifique.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30818627f8ebc293e444b43adb0590db077da4a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898830"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 Attacher une session à un programme.
@@ -28,7 +28,7 @@ Attacher une session à un programme.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT Attach( 
+HRESULT Attach( 
    IDebugEventCallback2* pCallback,
    DWORD                 dwReason,
    IDebugSession2*       pSession
@@ -36,7 +36,7 @@ HRESULT Attach( 
 ```
 
 ```csharp
-int Attach( 
+int Attach( 
    IDebugEventCallback2 pCallback,
    uint                 dwReason,
    IDebugSession2       pSession
@@ -53,10 +53,10 @@ dans Valeur de l’énumération [ATTACH_REASON](../../../extensibility/debugger
 `pSession`\
 dans Valeur qui identifie de façon unique la session qui est attachée au programme.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Cette méthode doit retourner `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si le programme est déjà attaché.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Le port qui contient le programme peut utiliser la valeur dans `pSession` pour déterminer la session qui tente de s’attacher au programme. Par exemple, si un port n’autorise qu’une seule session de débogage à s’attacher à un processus à la fois, le port peut déterminer si la même session est déjà attachée à d’autres programmes dans le processus.
 
 > [!NOTE]

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 028ee16e7b9c5a30effc683494f68b2bd4eb604f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbf8149b0689921c80ed148e11ad61524d3b57b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898583"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Obtient le nom du processus hébergeant le programme.
@@ -48,7 +48,7 @@ dans Valeur de l’énumération [GETHOSTNAME_TYPE](../../../extensibility/debug
 `pbstrHostName`\
 à Retourne le nom du processus d’hébergement.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

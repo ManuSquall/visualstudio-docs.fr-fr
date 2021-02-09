@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898263"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Couleurs de syntaxe dans un service de langage hérité
 La colorisation de syntaxe est une fonctionnalité qui permet d’afficher différents éléments d’un langage de programmation dans un fichier source dans des couleurs et des styles différents. Pour prendre en charge cette fonctionnalité, vous devez fournir un analyseur ou un scanneur qui peut identifier les types d’éléments lexicaux ou de jetons dans le fichier. De nombreux langages distinguent les mots clés, les délimiteurs (tels que les parenthèses ou les accolades) et les commentaires en les colorisant de différentes façons.

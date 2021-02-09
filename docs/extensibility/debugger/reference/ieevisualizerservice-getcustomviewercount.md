@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90f040c4ca0736a0312829d196d0991788357edc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d4aa1f082351e84348854457506b5428935a903
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897156"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 Cette méthode obtient le nombre de visualiseurs de types disponibles à partir de ce service.
@@ -28,14 +28,14 @@ Cette méthode obtient le nombre de visualiseurs de types disponibles à partir 
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetCustomViewerCount(
-   ULONG* pcelt
+HRESULT GetCustomViewerCount(
+   ULONG* pcelt
 );
 ```
 
 ```csharp
-int GetCustomViewerCount(
-   out uint pcelt
+int GetCustomViewerCount(
+   out uint pcelt
 );
 ```
 
@@ -43,10 +43,10 @@ int GetCustomViewerCount(
 `pcelt`\
 à Retourne le nombre de visualiseurs de type disponibles.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) transmet la requête à cette méthode dans sa prise en charge des visualiseurs de type.
 
 ## <a name="see-also"></a>Voir aussi

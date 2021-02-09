@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e73834888009ff547bb4252aaedafb713ce9c2fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897465"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Comment : générer un extrait XML à partir d’un schéma XML
 
@@ -52,13 +52,13 @@ Les étapes de cette section vous montrent comment utiliser la fonctionnalité d
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1. Dans le menu **fichier** , pointez sur **nouveau** , puis cliquez sur **fichier**.
+1. Dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **fichier**.
 
 2. Sélectionnez **fichier XML** dans le volet **modèles** , puis cliquez sur **ouvrir**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
@@ -141,7 +141,7 @@ La procédure pas à pas utilise le fichier de schéma suivant.
 </xs:schema>
 ```
 
-### <a name="output"></a>Sortie
+### <a name="output"></a>Output
 
 Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` désignent des champs modifiables dans l’extrait XML.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e96db32d7ba5a01f89530623c949500a265cdb60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3593dd8d139bbb23cbb8128378399642bee03fdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897333"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 Demande que le programme arrête l’exécution la prochaine fois qu’un de ses threads tente de s’exécuter.
@@ -28,8 +28,8 @@ Demande que le programme arrête l’exécution la prochaine fois qu’un de ses
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT CauseBreak( 
-   void 
+HRESULT CauseBreak( 
+   void 
 );
 ```
 
@@ -40,7 +40,7 @@ int CauseBreak();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un événement [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) est envoyé lorsque le programme tente ensuite d’exécuter du code après l’appel de cette méthode.
 
  Cette méthode est asynchrone en ce que la méthode retourne immédiatement une valeur sans nécessairement attendre l’arrêt du programme.

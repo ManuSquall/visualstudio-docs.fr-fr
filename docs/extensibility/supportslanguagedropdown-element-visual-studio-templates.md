@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02e4b88b22257e7187e334f8c1064b68c6ef49d
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 79141361253df4e1ccaf29ff15332d534ceade84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898088"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown, élément (modèles Visual Studio)
 
@@ -61,7 +61,7 @@ Spécifie si le modèle d’élément Web est identique pour plusieurs langues e
 
  Le texte doit être `true` ou `false` , indiquant si l’option de **langue** est disponible ou non dans la boîte de dialogue **Ajouter un nouvel élément** .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  `SupportsLanguageDropDown` est un élément facultatif. La valeur par défaut est `false`.
 

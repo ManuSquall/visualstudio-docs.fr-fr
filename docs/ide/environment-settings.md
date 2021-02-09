@@ -1,20 +1,20 @@
 ---
-title: Paramètres d’environnement
+title: Paramètres d'environnement
 description: En savoir plus sur les paramètres de l’environnement Visual Studio et sur la manière de les ajuster pour le type de développement que vous effectuez.
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e38505b800037be63b326003bfa6c7fc5396126
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 11696d095623d27811b1fb02ef295350d9e33e1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898016"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Paramètres d’environnement pour Visual Studio
 
