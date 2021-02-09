@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c0b5386-321f-4f8f-85cc-e2ee7b4cc3d2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408145d83b3b78f8392603466980495ab32d24b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f44f30b063a34a0d5d5549cd1923b66c1dde9cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864865"
 ---
 # <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Récupère les octets de code source.
@@ -25,7 +25,7 @@ Récupère les octets de code source.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_source ( 
+HRESULT get_source ( 
    DWORD  cbData,
    DWORD* pcbData,
    BYTE   data[]
@@ -45,7 +45,7 @@ dans Nombre d’octets qui représente la taille de la mémoire tampon de donné
 
 à Mémoire tampon qui doit être remplie avec les octets sources.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

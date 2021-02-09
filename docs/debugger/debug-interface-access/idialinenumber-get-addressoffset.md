@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3bcb5500-b26c-4d3c-9d81-0a389a3715c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27539f993934f230525c02ebcb7e80e6e8f325c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8593277312a168355cef1db3142feaf5af936a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864858"
 ---
 # <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
 Récupère la partie offset de l’adresse mémoire à laquelle commence un bloc.
@@ -25,7 +25,7 @@ Récupère la partie offset de l’adresse mémoire à laquelle commence un bloc
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_addressOffset ( 
 
 à Retourne la partie du décalage de l’adresse mémoire à laquelle commence un bloc.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

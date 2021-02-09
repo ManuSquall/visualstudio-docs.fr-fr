@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ecdda93-950e-40d6-b79b-4ae3c55b6cfc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b67072fe2928556d355aac2e65cf5d011873edd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e346352d802404beca57054ab649366035baa908
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864837"
 ---
 # <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
 Récupère un contrôle de redondance cyclique (CRC) calculé à partir des octets du code source.
@@ -25,7 +25,7 @@ Récupère un contrôle de redondance cyclique (CRC) calculé à partir des octe
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_crc ( 
+HRESULT get_crc ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_crc ( 
 
 à Retourne le CRC calculé à partir des octets du code source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

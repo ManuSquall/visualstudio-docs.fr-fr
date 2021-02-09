@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9977075-8fd1-4b11-bfff-d87e9f2586dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f883d22e677d4401e6bee476cf88527a24787145
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78bb087f7e5b66d68e24d66315d9edcd15b06544
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864872"
 ---
 # <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 Récupère le nom donné au code source qui n’est pas un fichier. autrement dit, le code qui a été injecté.
@@ -25,7 +25,7 @@ Récupère le nom donné au code source qui n’est pas un fichier. autrement di
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_virtualFilename ( 
+HRESULT get_virtualFilename ( 
    BSTR* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_virtualFilename ( 
 
 à Retourne le nom donné au code source non-fichier injecté.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
