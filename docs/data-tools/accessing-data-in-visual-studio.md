@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b5e3d8b8cf0b2c74a5b5a862539bbf3b201b4ffd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859435"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Utiliser des données dans Visual Studio
 
@@ -40,7 +40,7 @@ La plupart des autres produits de base de données SQL et NoSQL répertoriés ic
 
 **Microsoft Azure**
 
-- SQL Database
+- Base de données SQL
 - Azure Cosmos DB
 - Stockage (objets BLOB, tables, files d’attente, fichiers)
 - SQL Data Warehouse
@@ -72,13 +72,13 @@ La plupart des autres produits de base de données SQL et NoSQL répertoriés ic
 
 ::: moniker range="vs-2017"
 
-De nombreux fournisseurs de bases de données et tiers prennent en charge l’intégration de Visual Studio par les packages NuGet. Vous pouvez explorer les offres sur NuGet.org ou par le biais du gestionnaire de package NuGet dans Visual Studio ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ). D’autres produits de base de données s’intègrent à Visual Studio en tant qu’extension. Vous pouvez parcourir ces offres dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou en accédant à **Outils**  >  **extensions et mises à jour** , puis en sélectionnant **en ligne** dans le volet gauche de la boîte de dialogue. Pour plus d’informations, consultez [systèmes de base de données compatibles pour Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+De nombreux fournisseurs de bases de données et tiers prennent en charge l’intégration de Visual Studio par les packages NuGet. Vous pouvez explorer les offres sur NuGet.org ou par le biais du gestionnaire de package NuGet dans Visual Studio (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**). D’autres produits de base de données s’intègrent à Visual Studio en tant qu’extension. Vous pouvez parcourir ces offres dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou en accédant à **Outils**  >  **extensions et mises à jour** , puis en sélectionnant **en ligne** dans le volet gauche de la boîte de dialogue. Pour plus d’informations, consultez [systèmes de base de données compatibles pour Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-De nombreux fournisseurs de bases de données et tiers prennent en charge l’intégration de Visual Studio par les packages NuGet. Vous pouvez explorer les offres sur NuGet.org ou par le biais du gestionnaire de package NuGet dans Visual Studio ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ). D’autres produits de base de données s’intègrent à Visual Studio en tant qu’extension. Vous pouvez parcourir ces offres dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou en accédant à **Extensions**  >  **gérer les extensions** , puis en sélectionnant **en ligne** dans le volet gauche de la boîte de dialogue. Pour plus d’informations, consultez [systèmes de base de données compatibles pour Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+De nombreux fournisseurs de bases de données et tiers prennent en charge l’intégration de Visual Studio par les packages NuGet. Vous pouvez explorer les offres sur NuGet.org ou par le biais du gestionnaire de package NuGet dans Visual Studio (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**). D’autres produits de base de données s’intègrent à Visual Studio en tant qu’extension. Vous pouvez parcourir ces offres dans le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou en accédant à **Extensions**  >  **gérer les extensions** , puis en sélectionnant **en ligne** dans le volet gauche de la boîte de dialogue. Pour plus d’informations, consultez [systèmes de base de données compatibles pour Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ Si vous vous connectez aux services Azure, veillez à télécharger les derniers
 
 Pour qu’une base de données soit consommable dans ADO.NET, elle doit avoir un *fournisseur de données ADO.net* personnalisé ou doit exposer une interface ODBC ou OLE DB. Microsoft fournit une [liste de fournisseurs de données ADO.net](/dotnet/framework/data/adonet/ado-net-overview) pour les produits SQL Server, ainsi que les fournisseurs ODBC et OLE DB.
 
-### <a name="data-modeling"></a>Modélisation de données
+### <a name="data-modeling"></a>modélisation de données ;
 
 Dans .NET, vous avez trois possibilités de modélisation et de manipulation des données en mémoire après les avoir récupérées d’une source de données :
 
@@ -151,7 +151,7 @@ Installez la [prise en charge de Python dans Visual Studio](../python/overview-o
 
 [ADO.NET Entity Framework](/ef/ef6/) &mdash; Décrit comment créer des applications de données qui permettent aux développeurs de programmer par rapport à un modèle conceptuel plutôt que directement sur une base de données relationnelle.
 
-[WCF Data Services 4,5](/dotnet/framework/data/wcf/index) &mdash; Décrit comment utiliser [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pour déployer des services de données sur le Web ou sur un intranet qui implémente le [Open Data Protocol (OData)](https://www.odata.org/).
+[Services de données WCF 4,5](/dotnet/framework/data/wcf/index) &mdash; Décrit comment utiliser [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pour déployer des services de données sur le Web ou sur un intranet qui implémente le [Open Data Protocol (OData)](https://www.odata.org/).
 
 [Données dans les solutions Office](../vsto/data-in-office-solutions.md) &mdash; Contient des liens vers des rubriques qui expliquent le fonctionnement des données dans les solutions Office. Cela comprend des informations sur la programmation orientée schéma, la mise en cache des données et l’accès aux données côté serveur.
 

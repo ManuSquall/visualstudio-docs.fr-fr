@@ -72,20 +72,20 @@ helpviewer_keywords:
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 984253f6c4ccb9d64fc1cefb34b2b5d7962e3eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857660"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
 Cette rubrique présente en détail le tas de débogage CRT.
 
-## <a name="contents"></a><a name="BKMK_Contents"></a> Matières
+## <a name="contents"></a><a name="BKMK_Contents"></a> Contents
 [Rechercher les dépassements de mémoire tampon avec le tas de débogage](#BKMK_Find_buffer_overruns_with_debug_heap)
 
 [Types de bloc sur le tas de débogage](#BKMK_Types_of_blocks_on_the_debug_heap)
@@ -140,7 +140,7 @@ Blocs libérés (0xDD) les blocs libérés conservés inutilisés dans la liste 
 
 Nouveaux objets (0xCD) les nouveaux objets sont remplis avec 0xCD lorsqu’ils sont alloués.
 
-![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
+![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [](#BKMK_Contents)
 
 ## <a name="types-of-blocks-on-the-debug-heap"></a><a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Types de blocs sur le tas de débogage
 Chaque bloc de mémoire dans le tas de débogage est assigné à l'un des cinq types d'allocations. Ces types sont suivis et reportés différemment pour la détection des fuites et la création de rapports d'état. Vous pouvez spécifier un type de bloc en l’allouant avec un appel direct à l’une des fonctions d’allocation du tas de débogage, comme [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Les cinq types de bloc de mémoire dans le tas de débogage (défini dans le membre **nBlockUse** de la structure **_CrtMemBlockHeader**) sont les suivants :
@@ -169,7 +169,7 @@ Pour déterminer le type et le sous-type d’un bloc donné, utilisez la fonctio
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)
 ```
 
-![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
+![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [](#BKMK_Contents)
 
 ## <a name="check-for-heap-integrity-and-memory-leaks"></a><a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Contrôler l’intégrité et les fuites de mémoire de tas
 L'accès à de nombreuses fonctionnalités du tas de débogage doit s'effectuer à partir de votre code. La section suivante décrit certaines fonctionnalités et la façon de les utiliser.
@@ -180,7 +180,7 @@ L'accès à de nombreuses fonctionnalités du tas de débogage doit s'effectuer 
 
 L’indicateur **_crtDbgFlag** contient les champs de bits suivants :
 
-|Champ de bits|Default<br /><br /> value|Description|
+|Champ de bits|Default<br /><br /> valeur|Description|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|Activé|Active l'allocation de débogage. Quand ce bit est désactivé, les allocations restent enchaînées, mais leur type de bloc est **_IGNORE_BLOCK**.|
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Désactivé|Interdit la libération réelle de la mémoire, comme pour la simulation de conditions de mémoire insuffisante. Quand ce bit est activé, les blocs libérés sont conservés dans la liste liée du tas de débogage, mais sont marqués en tant que **_FREE_BLOCK** et remplis avec une valeur d’octet spéciale.|
@@ -188,7 +188,7 @@ L’indicateur **_crtDbgFlag** contient les champs de bits suivants :
 |**_CRTDBG_CHECK_CRT_DF**|Désactivé|Entraîne l’inclusion des blocs marqués avec le type **_CRT_BLOCK** dans les opérations de détection des fuites et de différence des états. Lorsque ce bit est à 0, la mémoire utilisée en interne par la bibliothèque Runtime est ignorée pendant ces opérations.|
 |**_CRTDBG_LEAK_CHECK_DF**|Désactivé|Provoque une vérification des fuites à l’arrêt du programme par l’intermédiaire d’un appel à **_CrtDumpMemoryLeaks**. Un rapport d'erreurs est généré si l'application n'a pas pu libérer toute la mémoire qu'elle a allouée.|
 
-![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
+![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [](#BKMK_Contents)
 
 ## <a name="configure-the-debug-heap"></a><a name="BKMK_Configure_the_debug_heap"></a> Configurer le tas de débogage
 Tous les appels aux fonctions du tas, telles que `malloc`, `free`, `calloc`, `realloc`, `new` et `delete`, sont traduits dans les versions Debug de ces fonctions qui opèrent dans le tas de débogage. Lorsque vous libérez un bloc de mémoire, le tas de débogage vérifie automatiquement l'intégrité des mémoires tampons de chaque côté de votre zone allouée et envoie un rapport d'erreur si un remplacement a eu lieu.
@@ -223,7 +223,7 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );
 ```
 
-![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
+![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [](#BKMK_Contents)
 
 ## <a name="new-delete-and-_client_blocks-in-the-c-debug-heap"></a><a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> nouvelles, DELETE et \_ blocs clients \_ dans le tas de débogage C++
 Les versions de débogage de la bibliothèque Runtime C contiennent les versions de débogage des opérateurs C++ `new` et `delete`. Si vous utilisez le type d'allocation `_CLIENT_BLOCK`, vous devez appeler la version Debug de l'opérateur `new` directement ou créer des macros qui remplacent l'opérateur `new` en mode debug, comme le montre l'exemple suivant :
@@ -261,7 +261,7 @@ int main( )   {
 
 La version Debug de l’opérateur `delete` fonctionne avec tous les types de bloc et ne nécessite aucune modification dans votre programme lorsque vous compilez une version Release.
 
-![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
+![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [](#BKMK_Contents)
 
 ## <a name="heap-state-reporting-functions"></a><a name="BKMK_Heap_State_Reporting_Functions"></a> Fonctions de création de rapports sur l’état du tas
  **_CrtMemState**
@@ -298,7 +298,7 @@ Les fonctions suivantes reportent l'état et le contenu du tas, et utilisent les
 |[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Fait un dump des informations sur tous les objets alloués depuis la capture d'un instantané donné du tas ou le début de l'exécution. Chaque fois qu’elle fait un vidage d’un bloc **_CLIENT_BLOCK**, elle appelle une fonction de raccordement fournie par l’application, si une telle fonction a été installée avec **_CrtSetDumpClient**.|
 |[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Détermine si des fuites de mémoire se sont produites depuis le début de l'exécution du programme et, dans ce cas, fait un dump de tous les objets alloués. Chaque fois que la fonction **_CrtDumpMemoryLeaks** fait un vidage d’un bloc **_CLIENT_BLOCK**, elle appelle une fonction de raccordement fournie par l’application, si une telle fonction a été installée avec **_CrtSetDumpClient**.|
 
-![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
+![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [](#BKMK_Contents)
 
 ## <a name="track-heap-allocation-requests"></a><a name="BKMK_Track_Heap_Allocation_Requests"></a> Suivre les demandes d’allocation du tas
 La localisation du nom du fichier source et du numéro de ligne où une macro d'assertion ou de création de rapports est exécutée facilite souvent l'identification de la cause d'un problème. Dans le cas des fonctions d'allocation du tas, cela est moins sûr. Alors que les macros peuvent être insérées en de nombreux points appropriés dans l'arborescence logique d'une application, une allocation est souvent enfouie dans une routine spéciale appelée à partir de nombreux emplacements distincts et à différentes heures. En général, la question n'est pas de savoir quelle ligne de code a effectué une mauvaise allocation, mais plutôt quelle est, parmi les milliers d'allocations effectuées par cette ligne de code, celle qui était incorrecte, et pour quelle raison elle l'était.
@@ -353,7 +353,7 @@ int addNewRecord(struct RecStruct *prevRecord,
 
 Dorénavant, le nom du fichier source et le numéro de ligne où `addNewRecord` a été appelé seront stockés à l'intérieur de chaque bloc résultant alloué dans le tas de débogage et seront reportés lors de l'examen de ce bloc.
 
-![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)
+![Retour au contenu du haut](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [](#BKMK_Contents)
 
 ## <a name="see-also"></a>Voir aussi
 [Débogage du code natif](../debugger/debugging-native-code.md)

@@ -14,27 +14,27 @@ helpviewer_keywords:
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e1c594ab1f74cddb962cc2a6d4030ede1e53c8f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bfc0f68f38f801d63367b1ee9150c723767ec667
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435076"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858876"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Étendre les fonctionnalités d’un TableAdapter
 
 Vous pouvez étendre les fonctionnalités d’un TableAdapter en ajoutant du code au fichier de classe partielle du TableAdapter.
 
-Le code qui définit un TableAdapter est régénéré lorsqu’une modification est apportée au TableAdapter dans le **Concepteur de DataSet** , ou lorsqu’un Assistant modifie la configuration d’un TableAdapter. Pour empêcher la suppression de votre code pendant la régénération d’un TableAdapter, ajoutez du code au fichier de classe partielle du TableAdapter.
+Le code qui définit un TableAdapter est régénéré lorsqu’une modification est apportée au TableAdapter dans le **Concepteur de DataSet**, ou lorsqu’un Assistant modifie la configuration d’un TableAdapter. Pour empêcher la suppression de votre code pendant la régénération d’un TableAdapter, ajoutez du code au fichier de classe partielle du TableAdapter.
 
 Les classes partielles permettent à du code pour une classe spécifique d’être divisé entre plusieurs fichiers physiques. Pour plus d’informations, consultez [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [Partial (type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 ## <a name="locate-tableadapters-in-code"></a>Localiser des TableAdapters dans le code
 
-Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet** , les classes TableAdapter générées ne sont pas des classes imbriquées de <xref:System.Data.DataSet> . Les TableAdapters se trouvent dans un espace de noms basé sur le nom du jeu de données associé du TableAdapter. Par exemple, si votre application contient un dataset nommé `HRDataSet` , les TableAdapters se trouvent dans l' `HRDataSetTableAdapters` espace de noms. (La Convention d’affectation de noms suit ce modèle : *NomGroupeDonnées*  +  `TableAdapters` ).
+Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter générées ne sont pas des classes imbriquées de <xref:System.Data.DataSet> . Les TableAdapters se trouvent dans un espace de noms basé sur le nom du jeu de données associé du TableAdapter. Par exemple, si votre application contient un dataset nommé `HRDataSet` , les TableAdapters se trouvent dans l' `HRDataSetTableAdapters` espace de noms. (La Convention d’affectation de noms suit ce modèle : *NomGroupeDonnées*  +  `TableAdapters` ).
 
 L’exemple suivant suppose qu’un TableAdapter nommé `CustomersTableAdapter` est dans un projet avec `NorthwindDataSet` .
 

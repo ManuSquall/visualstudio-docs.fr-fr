@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 137d8970ebfc70dcf102fa70d7bcf18d81677535
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859266"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 
@@ -35,7 +35,7 @@ Pour obtenir des informations générales sur la création de contrôles liés a
 
 Le tableau suivant liste les tâches qui peuvent être accomplies en faisant glisser des éléments de la fenêtre **Sources de données** vers le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
-|Tâche|Plus d’informations|
+|Tâche|Informations complémentaires|
 |----------| - |
 |Créer des contrôles liés aux données.<br /><br /> Lier des contrôles existants à des données.|[Lier des contrôles WPF à un dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Créer des contrôles qui affichent les données connexes d'une relation parent-enfant : lorsque l'utilisateur sélectionne un enregistrement de données parentes dans un contrôle, un autre contrôle affiche les données enfants connexes pour l'enregistrement sélectionné.|[Afficher des données associées dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md)|

@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 5a219ae5257bce2a84dc17556939a44ecb02dcce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857738"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Créer des vues personnalisées d’objets C++ dans le débogueur à l’aide de l’infrastructure Natvis
 
@@ -168,7 +168,7 @@ Les visualisations Natvis utilisent des expressions C++ pour spécifier les él�
 - Pour contrôler l’affichage d’une expression, vous pouvez utiliser l’un des spécificateurs de format décrits dans [spécificateurs de format en C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Les spécificateurs de format sont ignorés quand l’entrée est utilisée en interne par Natvis, comme l' `Size` expression dans une [expansion ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
 
 >[!NOTE]
-> Étant donné que le document natvis est au format XML, vos expressions ne peuvent pas utiliser directement les opérateurs esperluette, supérieur à, inférieur à ou Shift. Vous devez placer ces caractères dans une séquence d’échappement à la fois dans le corps de l’élément et dans les instructions de condition. Exemple :<br>
+> Étant donné que le document natvis est au format XML, vos expressions ne peuvent pas utiliser directement les opérateurs esperluette, supérieur à, inférieur à ou Shift. Vous devez placer ces caractères dans une séquence d’échappement à la fois dans le corps de l’élément et dans les instructions de condition. Par exemple :<br>
 > \<Item Name="HiByte"\>poids (_flags \& gt ; \& TB 24), x\</Item\><br>
 > \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>None\</Item\><br>
 > \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>Certains\</Item\>
@@ -689,7 +689,7 @@ Voici un exemple d'élément UIVisualizer :
 
 - Une `ServiceId`  -  `Id` paire d’attributs identifie un `UIVisualizer` . `ServiceId`Est le GUID du service exposé par le package du visualiseur. `Id` identificateur unique qui différencie les visualiseurs, si un service en fournit plusieurs. Dans l’exemple précédent, le même service de visualiseur fournit deux visualiseurs.
 
-- L' `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe dans le débogueur. Exemple :
+- L' `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe dans le débogueur. Par exemple :
 
   ![Menu contextuel du menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu contextuel du menu UIVisualizer")
 
@@ -710,7 +710,7 @@ Il y a beaucoup plus de travail pour écrire un visualiseur personnalisé qu’u
 
  Vous pouvez utiliser les `Condition` `IncludeView` attributs, et `ExcludeView` sur les `CustomVisualizer` éléments.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 Les personnalisations Natvis fonctionnent avec les classes et les structs, mais pas les typedefs.
 

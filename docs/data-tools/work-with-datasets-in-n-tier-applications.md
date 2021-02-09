@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d450bb60bdb604f658f73d0b5df4b9bd739cf923
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 93a221640ff7383b39bfdec73cbaa9659156e33f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858070"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utilisation de datasets dans des applications multiniveaux
 
@@ -36,7 +36,7 @@ Les datasets typés ont été améliorés de sorte que les TableAdapters et les 
 
 La prise en charge multiniveau dans les jeux de données typés permet le développement itératif de l’architecture de l’application vers une conception multicouche. Elle supprime également la nécessité de séparer manuellement le code en plusieurs projets. Commencez à concevoir la couche de données à l’aide de l' **Concepteur de DataSet**. Quand vous êtes prêt à faire évoluer l’architecture de l’application vers une conception multiniveaux, définissez la propriété **DataSet Project** d’un dataset pour qu’elle génère la classe DataSet dans un projet distinct.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>

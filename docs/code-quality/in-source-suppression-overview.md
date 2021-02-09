@@ -9,19 +9,19 @@ helpviewer_keywords:
 - code analysis, source suppression
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c61803c21832367ede01817029b8d0318ac741a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859903"
 ---
 # <a name="suppress-code-analysis-violations"></a>Supprimer les violations de l’analyse du code
 
@@ -52,7 +52,7 @@ En C++/CLI, utilisez l’autorité de certification macros \_ supprimer le \_ me
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attribut)
 
-Lorsque vous sélectionnez **supprimer** dans le menu contextuel ou le menu contextuel d’un avertissement d’analyse du code dans la **liste d’erreurs** , un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est ajouté dans votre code ou dans le fichier de suppression globale du projet.
+Lorsque vous sélectionnez **supprimer** dans le menu contextuel ou le menu contextuel d’un avertissement d’analyse du code dans la **liste d’erreurs**, un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est ajouté dans votre code ou dans le fichier de suppression globale du projet.
 
 L' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut a le format suivant :
 

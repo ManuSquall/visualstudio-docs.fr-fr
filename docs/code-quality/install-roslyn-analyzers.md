@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3d4833ba922ddde1a1770cfd75cf446f210e2c79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859851"
 ---
 # <a name="install-third-party-analyzers"></a>Installer des analyseurs tiers
 
@@ -35,7 +35,7 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
    > [!NOTE]
    > La page www.nuget.org pour chaque package de l’analyseur vous indique la commande à coller dans la **console du gestionnaire de package**. Il y a même un bouton pratique pour copier le texte dans le presse-papiers.
 
-   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous les **References**  >  **analyseurs** de références.
+   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous les   >  **analyseurs** de références.
 
 ## <a name="to-install-vsix-analyzers"></a>Pour installer les analyseurs VSIX
 

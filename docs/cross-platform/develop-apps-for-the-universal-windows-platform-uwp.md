@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 54849cc004bdae4d4f50c1492ff79c762c2cb41b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 906097e0356922cdcc5afbabb1771348962ea4ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859500"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 
@@ -34,7 +34,7 @@ Pour la première fois, Windows a été refactorisé pour avoir un noyau commun 
 
 La plateforme Windows universelle est simplement un ensemble de contrats et de versions. qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation, mais une ou plusieurs familles d’appareils. Pour obtenir plus de détails, consultez [Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Les outils de développement d’applications Windows universelles sont fournis avec des émulateurs qui vous permettent de vérifier l’apparence de votre application sur différents appareils. Si vous souhaitez utiliser ces émulateurs, vous devez installer ce logiciel sur un ordinateur physique. L’ordinateur physique doit exécuter Windows 8.1 (x64) Professionnel ou une version ultérieure, et être équipé d’un processeur qui prend en charge Hyper-V Client et la conversion SLAT (Second Level Address Translation). Vous ne pouvez pas utiliser les émulateurs quand Visual Studio est installé sur un ordinateur virtuel.
 

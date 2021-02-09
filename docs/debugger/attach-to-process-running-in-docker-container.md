@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857927"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Attacher à un processus en cours d’exécution sur un conteneur d’ancrage 
 
@@ -52,13 +52,13 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
     > [!NOTE]
     > Il existe deux options pour la connexion à distance à un processus en cours d’exécution dans un conteneur d’ancrage. La première option, pour utiliser SSH, est idéale si vous n’avez pas installé les outils de l’outil d’ancrage sur votre ordinateur local.  Si vous avez installé les outils de l’outil d’amarrage localement et que vous disposez d’un démon de station d’accueil configuré pour accepter les demandes distantes, essayez la deuxième option, à l’aide d’un démon de station d’accueil.
 
-    1. **_Pour vous connecter à une machine distante via ssh :_* _
-        1. Select _ *Ajouter..* . * pour se connecter à un système distant.<br/>
+    1. ***Pour vous connecter à une machine distante via SSH :***
+        1. Sélectionnez **Ajouter...** pour vous connecter à un système distant.<br/>
         ![Se connecter à un système distant](../debugger/media/connect-remote-system.png "Se connecter à un système distant")
         1. Sélectionnez un conteneur en cours d’exécution auquel effectuer l’attachement après vous être connecté au démon SSH ou démon, puis cliquez sur **OK**.
 
-    1. **_Pour définir la cible sur un conteneur distant qui exécute un processus via un [démon d’ancrage](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-        1. Spécifiez l’adresse du démon (par exemple, via TCP, IP, etc.) sous _ *ordinateur hôte de l’animateur (facultatif)**, puis cliquez sur le lien Actualiser.
+    1. ***Pour définir la cible sur un conteneur distant exécutant un processus via un [démon d’ancrage](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+        1. Spécifiez l’adresse du démon (par exemple, via TCP, IP, etc.) sous hôte de l' **ordinateur de point de connexion (facultatif)** , puis cliquez sur le lien Actualiser.
         1. Sélectionnez un conteneur en cours d’exécution auquel effectuer l’attachement après avoir réussi à vous connecter au démon et cliqué sur **OK**.
 
 4. Choisissez le processus de conteneur correspondant dans la liste des **processus disponibles** , puis sélectionnez **attacher** pour démarrer le débogage de votre processus de conteneur C# dans Visual Studio.
@@ -86,8 +86,8 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
 
    La définition de la cible sur un conteneur distant via SSH n’est pas disponible et ne peut être effectuée qu’à l’aide d’un démon de station d’accueil.
 
-    **_Pour définir la cible sur un conteneur distant qui exécute un processus via un [démon d’ancrage](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-    1. Spécifiez l’adresse du démon (par exemple, via TCP, IP, etc.) sous _ *ordinateur hôte de l’animateur (facultatif)**, puis cliquez sur le lien Actualiser.
+    ***Pour définir la cible sur un conteneur distant exécutant un processus via un [démon d’ancrage](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+    1. Spécifiez l’adresse du démon (par exemple, via TCP, IP, etc.) sous hôte de l' **ordinateur de point de connexion (facultatif)** , puis cliquez sur le lien Actualiser.
 
     1. Sélectionnez un conteneur en cours d’exécution auquel effectuer l’attachement après avoir réussi à vous connecter au démon, puis cliquez sur OK.
 

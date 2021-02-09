@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858668"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insérer de nouveaux enregistrements dans une base de données
 
@@ -36,7 +36,7 @@ Si votre application utilise des jeux de données pour stocker des données, uti
 
 Si votre application utilise des objets pour stocker des données, ou si vous souhaitez un contrôle plus fin sur la création d’enregistrements dans la base de données, utilisez la `TableAdapter.Insert` méthode.
 
-Si votre TableAdapter n’a pas de `Insert` méthode, cela signifie que le TableAdapter est configuré pour utiliser des procédures stockées ou que sa `GenerateDBDirectMethods` propriété a la valeur `false` . Essayez de définir la propriété du TableAdapter `GenerateDBDirectMethods` à `true` partir de dans le **Concepteur de DataSet** , puis enregistrez le jeu de données. Cela permet de régénérer le TableAdapter. Si le TableAdapter n’a toujours `Insert` pas de méthode, il est probable que la table ne fournisse pas suffisamment d’informations de schéma pour faire la distinction entre des lignes individuelles (par exemple, il se peut qu’il n’y ait pas de clé primaire définie sur la table).
+Si votre TableAdapter n’a pas de `Insert` méthode, cela signifie que le TableAdapter est configuré pour utiliser des procédures stockées ou que sa `GenerateDBDirectMethods` propriété a la valeur `false` . Essayez de définir la propriété du TableAdapter `GenerateDBDirectMethods` à `true` partir de dans le **Concepteur de DataSet**, puis enregistrez le jeu de données. Cela permet de régénérer le TableAdapter. Si le TableAdapter n’a toujours `Insert` pas de méthode, il est probable que la table ne fournisse pas suffisamment d’informations de schéma pour faire la distinction entre des lignes individuelles (par exemple, il se peut qu’il n’y ait pas de clé primaire définie sur la table).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Insérer de nouveaux enregistrements à l’aide de TableAdapters
 

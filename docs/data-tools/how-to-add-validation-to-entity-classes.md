@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 08d60b254867c02c7cc406709a95117a11d669c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858811"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Guide pratique pour ajouter une validation à des classes d’entité
 La *validation* de classes d’entité est le processus qui consiste à valider que les valeurs entrées dans des objets de données sont conformes aux contraintes du schéma d’un objet et également aux règles établies pour l’application. Il est conseillé de valider les données avant d'envoyer des mises à jour à la base de données sous-jacente pour réduire les erreurs. Une telle validation permet aussi de réduire le nombre potentiel d'allers-retours entre une application et la base de données.
@@ -35,9 +35,9 @@ Cette procédure indique comment valider des données lorsque la valeur d'une co
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Pour valider des données pendant la modification de valeur d'une colonne
 
-1. Ouvrez ou créez un fichier de classes LINQ to SQL (fichier **. dbml** ) dans le **Concepteur O/R**. (Double-cliquez sur le fichier **.dbml** dans l’ **Explorateur de solutions**.)
+1. Ouvrez ou créez un fichier de classes LINQ to SQL (fichier **. dbml** ) dans le **Concepteur O/R**. (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)
 
-2. Dans le **Concepteur O/R** , cliquez avec le bouton droit sur la classe à laquelle vous souhaitez ajouter la validation, puis cliquez sur **Afficher le code**.
+2. Dans le **Concepteur O/R**, cliquez avec le bouton droit sur la classe à laquelle vous souhaitez ajouter la validation, puis cliquez sur **Afficher le code**.
 
      Une classe partielle pour la classe d'entité sélectionnée s'ouvre dans l'éditeur de code.
 
@@ -81,7 +81,7 @@ Outre la vérification des valeurs lors des modifications, vous avez la possibil
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Pour valider des données pendant une mise à jour de classe d'entité
 
-1. Ouvrez ou créez un fichier de classes LINQ to SQL (fichier **. dbml** ) dans le **Concepteur O/R**. (Double-cliquez sur le fichier **.dbml** dans l’ **Explorateur de solutions**.)
+1. Ouvrez ou créez un fichier de classes LINQ to SQL (fichier **. dbml** ) dans le **Concepteur O/R**. (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)
 
 2. Cliquez avec le bouton droit sur une zone vide du **Concepteur O/R** et cliquez sur **Afficher le code**.
 

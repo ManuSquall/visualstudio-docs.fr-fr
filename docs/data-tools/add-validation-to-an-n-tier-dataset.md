@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c7891df6de9f12df324c8d79eed5dda0e091d9a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 4911cc5ced991389d2c7b03a405c4fe9e28c5cc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859357"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Ajouter la validation à un dataset multiniveau
 L’ajout de la validation à un DataSet qui est séparé dans une solution multiniveau est fondamentalement le même que l’ajout d’une validation à un DataSet à fichier unique (un DataSet dans un projet unique). L’emplacement suggéré pour effectuer la validation sur les données est au cours des <xref:System.Data.DataTable.ColumnChanging> événements et/ou <xref:System.Data.DataTable.RowChanging> d’une table de données.

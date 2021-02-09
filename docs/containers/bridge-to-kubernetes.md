@@ -9,13 +9,13 @@ keywords: Bridge to Kubernetes, Azure Dev Spaces, dev Spaces, Dockr, Kubernetes,
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
-manager: jillfra
-ms.openlocfilehash: 7bbeec2baab018ea770dbee60db507399ebeb745
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+manager: jmartens
+ms.openlocfilehash: 23d060489a13aa8e02316e253d9367e9e3372bbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859630"
 ---
 # <a name="use-bridge-to-kubernetes"></a>Utiliser Bridge pour Kubernetes
 

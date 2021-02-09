@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859565"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Utiliser la fenêtre résultats de la métrique du code
 
@@ -32,7 +32,7 @@ La fenêtre résultats de la **métrique du code** s’affiche automatiquement l
 
 Vous pouvez afficher la fenêtre résultats de la métrique du code à l’aide de l’une des séquences de menu suivantes :
 
-- Dans le menu **analyser** , choisissez résultats de la métrique du **Windows**  >  **code** Windows.
+- Dans le menu **analyser** , choisissez résultats de la métrique du   >  **code** Windows.
 
 - Dans le menu **affichage** , choisissez **autres** résultats de la  >  **métrique du code** Windows.
 
@@ -52,9 +52,9 @@ La zone de liste déroulante **filtre** contient les noms des colonnes de résul
 
 1. Dans la liste **filtre** , sélectionnez le nom de la colonne.
 
-2. Dans **min** , tapez la valeur minimale à afficher.
+2. Dans **min**, tapez la valeur minimale à afficher.
 
-3. Dans **Max** , tapez la valeur maximale à afficher.
+3. Dans **Max**, tapez la valeur maximale à afficher.
 
 4. Cliquez sur le bouton **appliquer le filtre** .
 
@@ -92,7 +92,7 @@ Pour plus d’informations sur Azure Boards éléments de travail, consultez [é
 
 1. Cliquez avec le bouton droit sur le résultat.
 
-2. Pointez sur **créer un élément de travail** , puis cliquez sur le type d’élément de travail que vous souhaitez créer ( **bogue** , **tâche** , etc.).
+2. Pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail que vous souhaitez créer (**bogue**, **tâche**, etc.).
 
 3. Complétez le formulaire d’élément de travail en remplissant tous les champs obligatoires.
 

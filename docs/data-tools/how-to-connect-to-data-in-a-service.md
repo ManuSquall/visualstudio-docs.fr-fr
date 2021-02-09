@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d8e3692f376a502a2cd924fa9604eddab445333f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858759"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Guide pratique pour se connecter à des données dans un service
 
@@ -32,7 +32,7 @@ Pour connecter votre application aux données retournées par un service, exécu
 Une fois l’Assistant terminé, une référence de service est ajoutée à votre projet et est immédiatement disponible dans la [fenêtre sources de données](add-new-data-sources.md#data-sources-window).
 
 > [!NOTE]
-> Les éléments qui s’affichent dans la fenêtre **Sources de données** dépendent des informations retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’ **Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lors de la fin de l’Assistant. En effet, comme les datasets non typés ne fournissent pas de schéma, l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
+> Les éléments qui s’affichent dans la fenêtre **Sources de données** dépendent des informations retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lors de la fin de l’Assistant. En effet, comme les datasets non typés ne fournissent pas de schéma, l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - code analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859799"
 ---
 # <a name="overview-of-source-code-analysis"></a>Vue d’ensemble de l’analyse du code source
 
@@ -43,7 +43,7 @@ Chaque analyseur a l’un des niveaux de gravité suivants :
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Informations | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
 | Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
@@ -54,7 +54,7 @@ Les violations de l’analyseur signalées dans la liste d’erreurs corresponde
 
 ![Tildes dans l’éditeur de code dans Visual Studio](media/diagnostics-severity-colors.png)
 
-De nombreuses règles de l’analyseur, ou *Diagnostics* , ont une ou plusieurs *corrections de code* associées que vous pouvez appliquer pour corriger la violation de règle. Les correctifs de code sont affichés dans l’icône du menu Ampoule, avec d’autres types d’[Actions rapides](../ide/quick-actions.md). Pour plus d’informations sur ces correctifs de code, consultez [Actions rapides courantes](../ide/quick-actions.md).
+De nombreuses règles de l’analyseur, ou *Diagnostics*, ont une ou plusieurs *corrections de code* associées que vous pouvez appliquer pour corriger la violation de règle. Les correctifs de code sont affichés dans l’icône du menu Ampoule, avec d’autres types d’[Actions rapides](../ide/quick-actions.md). Pour plus d’informations sur ces correctifs de code, consultez [Actions rapides courantes](../ide/quick-actions.md).
 
 ![Violation d’analyseur et correctif de code par action rapide](../code-quality/media/built-in-analyzer-code-fix.png)
 

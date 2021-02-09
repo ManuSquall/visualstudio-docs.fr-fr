@@ -13,25 +13,25 @@ helpviewer_keywords:
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: da4db396d718fcd8b88b476278a2470663b58a8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859474"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Ajouter du code aux TableAdapters dans des applications multiniveaux
 Vous pouvez étendre les fonctionnalités d’un TableAdapter en créant un fichier de classe partielle pour le TableAdapter et en y ajoutant du code (au lieu d’ajouter du code au fichier *NomGroupeDonnées. DataSet. designer* ). Les classes partielles permettent à du code pour une classe spécifique d’être divisé entre plusieurs fichiers physiques. Pour plus d’informations, consultez [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [Partial (type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 Le code qui définit un TableAdapter est généré chaque fois que des modifications sont apportées au TableAdapter dans le DataSet. Ce code est également généré lorsque des modifications sont apportées pendant l’exécution d’un assistant qui modifie la configuration du TableAdapter. Pour empêcher la suppression de votre code pendant la régénération d’un TableAdapter, ajoutez du code au fichier de classe partielle du TableAdapter.
 
-Par défaut, après avoir séparé le jeu de données et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé *NomGroupeDonnées. Designer. vb* (ou *DataSetName.Designer.cs* ) qui contient le code du TableAdapter. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées. DataSet. Designer. vb* (ou *DataSetName.DataSet.Designer.cs* ) qui contient le code du DataSet.
+Par défaut, après avoir séparé le jeu de données et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé *NomGroupeDonnées. Designer. vb* (ou *DataSetName.Designer.cs*) qui contient le code du TableAdapter. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées. DataSet. Designer. vb* (ou *DataSetName.DataSet.Designer.cs*) qui contient le code du DataSet.
 
 > [!NOTE]
-> Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet** ), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes de DataSet partielles existantes doivent être déplacées manuellement vers le projet de DataSet.
+> Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet**), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes de DataSet partielles existantes doivent être déplacées manuellement vers le projet de DataSet.
 
 > [!NOTE]
 > Le DataSet fournit des fonctionnalités pour générer des <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> gestionnaires d’événements et lorsque la validation est nécessaire. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).

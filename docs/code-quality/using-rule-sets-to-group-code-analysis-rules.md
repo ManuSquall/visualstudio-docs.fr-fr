@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 980c77067ac237dba13c8c888c358a0adeab6d1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859656"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser des ensembles de règles pour regrouper des règles d’analyse du code
 
@@ -30,7 +30,7 @@ Les ensembles de règles sont disponibles pour l’analyse du [code managé](/do
 
 ## <a name="rule-set-format"></a>Format de l’ensemble de règles
 
-Un ensemble de règles est spécifié au format XML dans un fichier *. RuleSet* . Les règles, qui consistent en un ID et une *action* , sont regroupées par ID et espace de noms de l’analyseur dans le fichier.
+Un ensemble de règles est spécifié au format XML dans un fichier *. RuleSet* . Les règles, qui consistent en un ID et une *action*, sont regroupées par ID et espace de noms de l’analyseur dans le fichier.
 
 Le contenu d’un fichier *. RuleSet* ressemble à ce code XML :
 

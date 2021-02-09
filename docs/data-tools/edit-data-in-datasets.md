@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858915"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 Vous pouvez modifier des données dans des tables de données de la même façon que vous modifiez les données d’une table dans une base de données. Le processus peut inclure l’insertion, la mise à jour et la suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier les champs modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère l’ensemble du suivi des modifications afin que les modifications puissent être renvoyées ultérieurement à la base de données. Si vous apportez par programmation des modifications aux données et que vous envisagez de les envoyer à la base de données, vous devez utiliser les objets et méthodes qui effectuent le suivi des modifications pour vous.

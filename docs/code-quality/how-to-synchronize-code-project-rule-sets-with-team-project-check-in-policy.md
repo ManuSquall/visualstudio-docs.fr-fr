@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d2908f7ec93d8704b52798121bd0076a7f5fddc1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859916"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procédure : synchroniser des ensembles de règles de projet de code avec une stratégie d’archivage de projet Azure DevOps
 
@@ -33,7 +33,7 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Pour spécifier un ensemble de règles standard Microsoft
 
-1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
 
 2. Cliquez sur **Analyse du code**.
 
@@ -53,7 +53,7 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 1. Si nécessaire, effectuez une opération d’extraction sur le fichier d’ensemble de règles qui spécifie la stratégie d’archivage.
 
-2. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
+2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
 
 3. Cliquez sur **Analyse du code**.
 

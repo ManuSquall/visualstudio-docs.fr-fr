@@ -1,17 +1,17 @@
 ---
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 04/25/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 4bd769ebd2605d98b4c8a3c473dfca00f86b0f06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec1aa8ca289ebb5d434ad70f16f0018ac4c96ee3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76159101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850167"
 ---
 | **Valeur** | **Résultat** |
 | --------- | ---------- |
@@ -24,4 +24,4 @@ ms.locfileid: "76159101"
 | 5005 | Erreur d’analyse de la ligne de commande du programme d’amorçage |
 | 5007 | L’opération a été bloquée - l’ordinateur ne répond pas à la configuration requise |
 | -1073741510 | Microsoft Visual Studio Installer a été arrêté (par l’utilisateur ou par un processus externe) |
-| Autres<br>(par exemple :<br>-1, 1, 1603) | Une condition d’échec s’est produite - Pour plus d’informations, consultez les journaux |
+| Autre<br>(par exemple :<br>-1, 1, 1603) | Une condition d’échec s’est produite - Pour plus d’informations, consultez les journaux |

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858473"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procédure pas à pas : enregistrer des données dans une transaction
 
@@ -52,15 +52,15 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 La première étape consiste à créer une **Application Windows Forms**.
 
-1. Dans Visual Studio, dans le menu **Fichier** , sélectionnez **Nouveau** > **Projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
-4. Nommez le projet **SavingDataInATransactionWalkthrough** , puis choisissez **OK**.
+4. Nommez le projet **SavingDataInATransactionWalkthrough**, puis choisissez **OK**.
 
-     Le projet **SavingDataInATransactionWalkthrough** est créé et ajouté à l’ **Explorateur de solutions**.
+     Le projet **SavingDataInATransactionWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.
 
 ## <a name="create-a-database-data-source"></a>Créer une source de données de base de données
 
@@ -68,7 +68,7 @@ Cette étape utilise l' **Assistant Configuration de source de données** pour c
 
 1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , sélectionnez Afficher les **sources de données**.
 
-2. Dans la fenêtre **Sources de données** , sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’ **Assistant Configuration de source de données**.
+2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’**Assistant Configuration de source de données**.
 
 3. Dans l’écran **choisir un type de source de données** , sélectionnez **base de** données, puis sélectionnez **suivant**.
 
@@ -76,7 +76,7 @@ Cette étape utilise l' **Assistant Configuration de source de données** pour c
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         - ou -
+         -ou-
 
     - Sélectionnez **Nouvelle connexion** pour lancer la boîte de dialogue **Ajouter/Modifier une connexion** et créez une connexion à la base de données Northwind.
 
@@ -110,7 +110,7 @@ Les transactions utilisent l’espace de noms <xref:System.Transactions>. Une r�
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Pour ajouter une référence au fichier DLL System.Transactions
 
-1. Dans le menu **Projet** , sélectionnez **Ajouter une référence**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter une référence**.
 
 2. Sélectionnez **System. transactions** (sous l’onglet **.net** ), puis sélectionnez **OK**.
 
@@ -141,28 +141,28 @@ L'ordre de rapprochement des modifications des données associées est comme sui
 
 ### <a name="to-delete-existing-orders"></a>Pour supprimer des commandes existantes
 
-- Ajoutez la méthode `DeleteOrders` suivante à **Form1**  :
+- Ajoutez la méthode `DeleteOrders` suivante à **Form1** :
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Pour supprimer des clients existants
 
-- Ajoutez la méthode `DeleteCustomers` suivante à **Form1**  :
+- Ajoutez la méthode `DeleteCustomers` suivante à **Form1** :
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Pour ajouter de nouveaux clients
 
-- Ajoutez la méthode `AddNewCustomers` suivante à **Form1**  :
+- Ajoutez la méthode `AddNewCustomers` suivante à **Form1** :
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Pour ajouter de nouvelles commandes
 
-- Ajoutez la méthode `AddNewOrders` suivante à **Form1**  :
+- Ajoutez la méthode `AddNewOrders` suivante à **Form1** :
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859344"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles à des données dans Visual Studio
 
@@ -30,7 +30,7 @@ Cette rubrique décrit les sources de données que vous pouvez utiliser pour cr�
 
 ## <a name="data-sources"></a>Sources de données
 
-Dans le contexte de la liaison de données, une source de données représente les données en mémoire qui peuvent être liées à votre interface utilisateur. En pratique, une source de données peut être une classe Entity Framework, un DataSet, un point de terminaison de service encapsulé dans un objet proxy .NET, une classe LINQ to SQL ou n’importe quel objet ou collection .NET. Certaines sources de données vous permettent de créer des contrôles liés aux données en faisant glisser des éléments de la fenêtre **Sources de données** , contrairement à d’autres sources de données. Le tableau suivant affiche les sources de données qui sont prises en charge.
+Dans le contexte de la liaison de données, une source de données représente les données en mémoire qui peuvent être liées à votre interface utilisateur. En pratique, une source de données peut être une classe Entity Framework, un DataSet, un point de terminaison de service encapsulé dans un objet proxy .NET, une classe LINQ to SQL ou n’importe quel objet ou collection .NET. Certaines sources de données vous permettent de créer des contrôles liés aux données en faisant glisser des éléments de la fenêtre **Sources de données**, contrairement à d’autres sources de données. Le tableau suivant affiche les sources de données qui sont prises en charge.
 
 | Source de données | Prise en charge du glisser-déplacer dans le **Concepteur Windows Forms** | Prise en charge du glisser-déplacer dans le **Concepteur WPF** | Prise en charge du glisser-déplacer dans le **Concepteur Silverlight** |
 | - | - | - | - |
@@ -51,13 +51,13 @@ Les sources de données peuvent être utilisées par votre projet sous la forme 
 
 ![Fenêtre Sources de données](../data-tools/media/raddata-data-sources-window.png)
 
-Pour chaque type de données qui apparaît dans la fenêtre **Sources de données** , un contrôle par défaut est créé quand vous faites glisser l’élément vers le concepteur. Avant de faire glisser un élément de la fenêtre **sources de données** , vous pouvez modifier le contrôle qui est créé. Pour plus d’informations, consultez [définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+Pour chaque type de données qui apparaît dans la fenêtre **Sources de données**, un contrôle par défaut est créé quand vous faites glisser l’élément vers le concepteur. Avant de faire glisser un élément de la fenêtre **sources de données** , vous pouvez modifier le contrôle qui est créé. Pour plus d’informations, consultez [définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Tâches impliquées dans la liaison de contrôles à des données
 
 Le tableau suivant répertorie certaines des tâches les plus courantes que vous effectuez pour lier des contrôles à des données.
 
-|Tâche|Plus d’informations|
+|Tâche|Informations complémentaires|
 |----------| - |
 |Ouvrez la fenêtre **Sources de données**.|Ouvrez une aire de conception dans l’éditeur, puis choisissez **Afficher** les  >  **sources de données**.|
 |Ajoutez une source de données à votre projet.|[Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)|

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858486"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Guide pratique pour enregistrer des données avec une transaction
 
@@ -39,9 +39,9 @@ Pour restaurer la transaction, levez une exception avant d’appeler la <xref:Sy
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Pour ajouter une référence au System.Transactions.dll
 
-1. Dans le menu **Projet** , sélectionnez **Ajouter une référence**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter une référence**.
 
-2. Sous l’onglet **.net** (onglet **SQL Server** pour les projets SQL Server), sélectionnez **System. transactions** , puis cliquez sur **OK**.
+2. Sous l’onglet **.net** (onglet **SQL Server** pour les projets SQL Server), sélectionnez **System. transactions**, puis cliquez sur **OK**.
 
      Une référence à *System.Transactions.dll* est ajoutée au projet.
 

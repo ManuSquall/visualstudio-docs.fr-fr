@@ -3,7 +3,7 @@ title: Résolution des problèmes liés aux erreurs du client Docker sur Windows
 description: Résolvez les problèmes d’utilisation de Visual Studio pour créer et déployer des applications web dans Docker sur Windows avec Visual Studio.
 ms.technology: vs-azure
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859526"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Résoudre les problèmes de développement Visual Studio avec Docker
 
@@ -76,7 +76,7 @@ Dans PowerShell, utilisez la fonction [Add-LocalGroupMember](/powershell/module/
 
 ## <a name="low-disk-space"></a>Espace disque insuffisant
 
-Par défaut, Dockr stocke les images dans le dossier *% ProgramData%/docker/* , qui se trouve généralement sur le lecteur système, * C:\ProgramData\Docker \* . Pour empêcher les images d’occuper de l’espace sur le lecteur système, vous pouvez modifier l’emplacement du dossier d’images. Pour ce faire :
+Par défaut, Dockr stocke les images dans le dossier *% ProgramData%/docker/* , qui se trouve généralement sur le lecteur système, * C:\ProgramData\Docker \* . Pour empêcher les images d’occuper de l’espace sur le lecteur système, vous pouvez modifier l’emplacement du dossier d’images. Pour cela, procédez de la façon suivante :
 
  1. Cliquez avec le bouton droit sur l’icône de l’ancrage dans la barre des tâches et sélectionnez **paramètres**.
  1. Sélectionnez **moteur** de l’ancrage. 

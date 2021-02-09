@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998302"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858239"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 La validation des données est le processus qui consiste à confirmer que les valeurs entrées dans les objets de données sont conformes aux contraintes dans le schéma d’un DataSet. Le processus de validation confirme également que ces valeurs suivent les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour à la base de données sous-jacente. Cela réduit les erreurs ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.
@@ -66,7 +66,7 @@ Si votre application utilise un DataSet typé, vous pouvez créer des gestionnai
 
 ## <a name="data-update-events"></a>Événements de mise à jour des données
 
-|événement|Description|
+|Événement|Description|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|La valeur d’une colonne est en cours de modification. L’événement passe la ligne et la colonne à vous, ainsi que la nouvelle valeur proposée.|
 |<xref:System.Data.DataTable.ColumnChanged>|La valeur d’une colonne a été modifiée. L’événement passe la ligne et la colonne à vous, ainsi que la valeur proposée.|

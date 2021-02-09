@@ -7,28 +7,28 @@ ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30091a5bfd613ba9bd3738731e23153565ec4c8e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 64b5643704024ee689a011f5285b41be818dc5cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858967"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext, méthodes (Concepteur O/R)
 
 <xref:System.Data.Linq.DataContext> les méthodes (dans le contexte des [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) sont des méthodes de la <xref:System.Data.Linq.DataContext> classe qui exécutent des procédures stockées et des fonctions dans une base de données.
 
-La classe <xref:System.Data.Linq.DataContext> est une classe [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] qui agit comme un conduit entre une base de données SQL Server et les classes d'entité [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] mappées à cette base de données. La classe <xref:System.Data.Linq.DataContext> contient les informations de chaîne de connexion et les méthodes pour se connecter à une base de données et manipuler les données dans celle-ci. Par défaut, la classe <xref:System.Data.Linq.DataContext> contient plusieurs méthodes que vous pouvez appeler, telles que la méthode <xref:System.Data.Linq.DataContext.SubmitChanges%2A> qui envoie des données mises à jour des classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] vers la base de données. Vous pouvez également créer des méthodes <xref:System.Data.Linq.DataContext> supplémentaires pour mapper aux procédures stockées et aux fonctions. En d’autres termes, l’appel de ces méthodes personnalisées exécute la procédure stockée ou la fonction dans la base de données à laquelle la <xref:System.Data.Linq.DataContext> méthode est mappée. Vous pouvez ajouter de nouvelles méthodes à la classe <xref:System.Data.Linq.DataContext> en procédant comme pour l'ajout de toute autre méthode destinée à étendre une classe. Toutefois, dans les discussions sur les <xref:System.Data.Linq.DataContext> méthodes dans le contexte du **Concepteur O/R** , il s’agit des <xref:System.Data.Linq.DataContext> méthodes qui mappent aux procédures stockées et aux fonctions qui sont discutées.
+La classe <xref:System.Data.Linq.DataContext> est une classe [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] qui agit comme un conduit entre une base de données SQL Server et les classes d'entité [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] mappées à cette base de données. La classe <xref:System.Data.Linq.DataContext> contient les informations de chaîne de connexion et les méthodes pour se connecter à une base de données et manipuler les données dans celle-ci. Par défaut, la classe <xref:System.Data.Linq.DataContext> contient plusieurs méthodes que vous pouvez appeler, telles que la méthode <xref:System.Data.Linq.DataContext.SubmitChanges%2A> qui envoie des données mises à jour des classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] vers la base de données. Vous pouvez également créer des méthodes <xref:System.Data.Linq.DataContext> supplémentaires pour mapper aux procédures stockées et aux fonctions. En d’autres termes, l’appel de ces méthodes personnalisées exécute la procédure stockée ou la fonction dans la base de données à laquelle la <xref:System.Data.Linq.DataContext> méthode est mappée. Vous pouvez ajouter de nouvelles méthodes à la classe <xref:System.Data.Linq.DataContext> en procédant comme pour l'ajout de toute autre méthode destinée à étendre une classe. Toutefois, dans les discussions sur les <xref:System.Data.Linq.DataContext> méthodes dans le contexte du **Concepteur O/R**, il s’agit des <xref:System.Data.Linq.DataContext> méthodes qui mappent aux procédures stockées et aux fonctions qui sont discutées.
 
 ## <a name="methods-pane"></a>Volet Méthodes
 
 <xref:System.Data.Linq.DataContext> les méthodes qui mappent aux procédures stockées et aux fonctions sont affichées dans le volet de **méthodes** du **Concepteur O/R**. Le volet **Méthodes** est le volet situé le long du côté du volet **Entités** (l’aire de conception principale). Le volet **méthodes** répertorie toutes les <xref:System.Data.Linq.DataContext> méthodes que vous avez créées à l’aide du **Concepteur O/R**. Par défaut, le volet de **méthodes** est vide. Faites glisser des procédures stockées ou des fonctions de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R** pour créer <xref:System.Data.Linq.DataContext> des méthodes et remplir le volet de **méthodes** . Pour plus d’informations, consultez [Comment : créer des méthodes DataContext mappées à des procédures stockées et des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).
 
 > [!NOTE]
-> Ouvrez et fermez le volet méthodes en cliquant avec le bouton droit sur le **Concepteur O/R** , puis en cliquant sur **masquer le volet méthodes** ou **afficher le volet méthodes** , ou utilisez le raccourci clavier **CTRL** + **1**.
+> Ouvrez et fermez le volet méthodes en cliquant avec le bouton droit sur le **Concepteur O/R** , puis en cliquant sur **masquer le volet méthodes** ou **afficher le volet méthodes**, ou utilisez le raccourci clavier **CTRL** + **1**.
 
 ## <a name="two-types-of-datacontext-methods"></a>Deux types de méthodes DataContext
 
@@ -44,7 +44,7 @@ Les méthodes DataContext sont les méthodes qui mappent aux procédures stocké
 
 ## <a name="return-types-of-datacontext-methods"></a>Types de retour des méthodes DataContext
 
-Lorsque vous faites glisser des procédures stockées et des fonctions de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R** , le type de retour de la <xref:System.Data.Linq.DataContext> méthode générée diffère selon l’endroit où vous déposez l’élément. Le déplacement direct des éléments vers une classe d’entité existante crée une <xref:System.Data.Linq.DataContext> méthode avec le type de retour de la classe d’entité ; la suppression d’éléments dans une zone vide du **Concepteur O/R** (dans l’un ou l’autre volet) crée une <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement. Le type généré automatiquement porte le nom qui correspond au nom de la procédure stockée ou de la fonction et aux propriétés, qui mappent aux champs retournés par la procédure stockée ou la fonction.
+Lorsque vous faites glisser des procédures stockées et des fonctions de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R**, le type de retour de la <xref:System.Data.Linq.DataContext> méthode générée diffère selon l’endroit où vous déposez l’élément. Le déplacement direct des éléments vers une classe d’entité existante crée une <xref:System.Data.Linq.DataContext> méthode avec le type de retour de la classe d’entité ; la suppression d’éléments dans une zone vide du **Concepteur O/R** (dans l’un ou l’autre volet) crée une <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement. Le type généré automatiquement porte le nom qui correspond au nom de la procédure stockée ou de la fonction et aux propriétés, qui mappent aux champs retournés par la procédure stockée ou la fonction.
 
 > [!NOTE]
 > Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et inspectez la propriété **Type de retour** dans la fenêtre **Propriétés**. Pour plus d’informations, consultez [Comment : modifier le type de retour d’une méthode DataContext (Concepteur O/R)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).

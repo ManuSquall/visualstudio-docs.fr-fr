@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 45f201e2c647a1b1074585d59c7618e1ddeb9084
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859994"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Comment : exécuter manuellement l’analyse du code hérité pour le code managé
 
@@ -31,6 +31,6 @@ L’outil d’analyse du code vous fournit des informations sur les erreurs poss
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. Dans **Explorateur de solutions** , cliquez sur le projet.
+2. Dans **Explorateur de solutions**, cliquez sur le projet.
 
 3. Dans le menu **analyser** , cliquez sur **exécuter l’analyse du code sur** le nom du *projet*.

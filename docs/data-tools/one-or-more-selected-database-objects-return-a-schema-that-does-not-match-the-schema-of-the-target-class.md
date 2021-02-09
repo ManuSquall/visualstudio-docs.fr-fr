@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f16d4bc03d2f2562321caa0e57e61dd0b597cfdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858590"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible
 

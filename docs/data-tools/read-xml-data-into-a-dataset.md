@@ -19,21 +19,21 @@ helpviewer_keywords:
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858551"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 
 ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dans cette procédure pas à pas, vous allez créer une application Windows qui charge des données XML dans un DataSet. Le DataSet est ensuite affiché dans un <xref:System.Windows.Forms.DataGridView> contrôle. Enfin, un schéma XML basé sur le contenu du fichier XML est affiché dans une zone de texte.
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
 
 Créez un projet d' **application Windows Forms** pour C# ou Visual Basic. Nommez le projet **ReadingXML**.
 
@@ -41,9 +41,9 @@ Créez un projet d' **application Windows Forms** pour C# ou Visual Basic. Nomme
 
 Étant donné que cette procédure pas à pas porte sur la lecture de données XML dans un DataSet, le contenu d’un fichier XML est fourni.
 
-1. Dans le menu **Projet** , sélectionnez **Ajouter un nouvel élément**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
-2. Sélectionnez **fichier XML** , nommez le fichier **authors.xml** , puis sélectionnez **Ajouter**.
+2. Sélectionnez **fichier XML**, nommez le fichier **authors.xml**, puis sélectionnez **Ajouter**.
 
    Le fichier XML se charge dans le concepteur et est prêt pour la modification.
 
@@ -129,7 +129,7 @@ L’interface utilisateur de cette application se compose des éléments suivant
 
 1. Ouvrez `Form1` en mode Design.
 
-2. À partir de la **boîte à outils** , faites glisser les contrôles suivants sur le formulaire :
+2. À partir de la **boîte à outils**, faites glisser les contrôles suivants sur le formulaire :
 
     - Un <xref:System.Windows.Forms.DataGridView> contrôle
 
@@ -152,11 +152,11 @@ L’interface utilisateur de cette application se compose des éléments suivant
 
 Dans cette étape, vous allez créer un nouveau jeu de données nommé `authors` . Pour plus d’informations sur les datasets, consultez [outils de jeu de données dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1. Dans **Explorateur de solutions** , sélectionnez le fichier source pour **Form1** , puis sélectionnez le bouton **Concepteur de vues** dans la barre d’outils **Explorateur de solutions** .
+1. Dans **Explorateur de solutions**, sélectionnez le fichier source pour **Form1**, puis sélectionnez le bouton **Concepteur de vues** dans la barre d’outils **Explorateur de solutions** .
 
 2. À partir de l' [onglet données de la boîte à outils](../ide/reference/toolbox-data-tab.md), faites glisser un **DataSet** sur **Form1**.
 
-3. Dans la boîte de dialogue **Ajouter un DataSet** , sélectionnez **DataSet non typé** , puis cliquez sur **OK**.
+3. Dans la boîte de dialogue **Ajouter un DataSet** , sélectionnez **DataSet non typé**, puis cliquez sur **OK**.
 
      **DataSet1** est ajouté à la barre d’état des composants.
 
@@ -166,7 +166,7 @@ Dans cette étape, vous allez créer un nouveau jeu de données nommé `authors`
 
 Le bouton **lire XML** lit le fichier XML dans le jeu de données. Il définit ensuite les propriétés du <xref:System.Windows.Forms.DataGridView> contrôle qui le lient au DataSet.
 
-1. Dans **Explorateur de solutions** , sélectionnez **Form1** , puis cliquez sur le bouton **Concepteur de vues** dans la barre d’outils **Explorateur de solutions** .
+1. Dans **Explorateur de solutions**, sélectionnez **Form1**, puis cliquez sur le bouton **Concepteur de vues** dans la barre d’outils **Explorateur de solutions** .
 
 2. Sélectionnez le bouton **lire XML** .
 
@@ -183,7 +183,7 @@ Le bouton **lire XML** lit le fichier XML dans le jeu de données. Il définit e
 
 Le bouton **afficher le schéma** crée un <xref:System.IO.StringWriter> objet qui est rempli avec le schéma et s’affiche dans le <xref:System.Windows.Forms.TextBox> contrôle.
 
-1. Dans **Explorateur de solutions** , sélectionnez **Form1** , puis cliquez sur le bouton **Concepteur de vues** .
+1. Dans **Explorateur de solutions**, sélectionnez **Form1**, puis cliquez sur le bouton **Concepteur de vues** .
 
 2. Sélectionnez le bouton **afficher le schéma** .
 
@@ -212,7 +212,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
 Cette procédure pas à pas vous apprend les bases de la lecture d’un fichier XML dans un jeu de données, ainsi que la création d’un schéma basé sur le contenu du fichier XML. Voici quelques tâches que vous pouvez effectuer ensuite :
 
-- Modifiez les données dans le DataSet et Réécrivez-les en tant que XML. Pour plus d'informations, consultez <xref:System.Data.DataSet.WriteXml%2A>.
+- Modifiez les données dans le DataSet et Réécrivez-les en tant que XML. Pour plus d’informations, consultez <xref:System.Data.DataSet.WriteXml%2A>.
 
 - Modifiez les données dans le DataSet et écrivez-les dans une base de données.
 

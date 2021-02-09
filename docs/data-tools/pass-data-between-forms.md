@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858564"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires
 
@@ -69,15 +69,15 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 ## <a name="create-the-windows-forms-app-project"></a>Créer le projet d’application Windows Forms
 
-1. Dans Visual Studio, dans le menu **Fichier** , sélectionnez **Nouveau** > **Projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
-4. Nommez le projet **PassingDataBetweenForms** , puis choisissez **OK**.
+4. Nommez le projet **PassingDataBetweenForms**, puis choisissez **OK**.
 
-     Le projet **PassingDataBetweenForms** est créé et ajouté à l’ **Explorateur de solutions**.
+     Le projet **PassingDataBetweenForms** est créé et ajouté à l’**Explorateur de solutions**.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
@@ -87,7 +87,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
-4. Dans la page **Choisir un modèle de base de données** , vérifiez que **Dataset** est spécifié, puis cliquez sur **Suivant**.
+4. Dans la page **Choisir un modèle de base de données**, vérifiez que **Dataset** est spécifié, puis cliquez sur **Suivant**.
 
 5. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
@@ -99,9 +99,9 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 7. Dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **suivant**.
 
-8. Dans la page **Choisir vos objets de base de données** , développez le nœud **Tables**.
+8. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
 
-9. Sélectionnez les tables **Customers** et **Orders** , puis cliquez sur **Terminer**.
+9. Sélectionnez les tables **Customers** et **Orders**, puis cliquez sur **Terminer**.
 
      **NorthwindDataSet** est ajouté à votre projet, et les tables **Customers** et **Orders** apparaissent dans la fenêtre **Sources de données**.
 
@@ -119,9 +119,9 @@ Vous pouvez créer une grille liée aux données (un contrôle <xref:System.Wind
 
 Crée un deuxième formulaire auquel passer des données.
 
-1. Dans le menu **Projet** , choisissez **Ajouter un formulaire Windows**.
+1. Dans le menu **Projet**, choisissez **Ajouter un formulaire Windows**.
 
-2. Laissez le nom par défaut ( **Form2** ), puis cliquez sur **Ajouter**.
+2. Laissez le nom par défaut (**Form2**), puis cliquez sur **Ajouter**.
 
 3. Faites glisser le nœud **Orders** principal depuis la fenêtre **Sources de données** vers **Form2**.
 
@@ -135,13 +135,13 @@ Crée un deuxième formulaire auquel passer des données.
 
 Ajoutez une requête TableAdapter à Form2 pour charger les commandes du client sélectionné sur Form1.
 
-1. Double-cliquez sur le fichier **NorthwindDataSet.xsd** dans l’ **Explorateur de solutions**.
+1. Double-cliquez sur le fichier **NorthwindDataSet.xsd** dans l’**Explorateur de solutions**.
 
 2. Cliquez avec le bouton droit sur **OrdersTableAdapter** et sélectionnez **Ajouter une requête**.
 
-3. Laissez l’option par défaut ( **Utiliser des instructions SQL** ), puis cliquez sur **Suivant**.
+3. Laissez l’option par défaut (**Utiliser des instructions SQL**), puis cliquez sur **Suivant**.
 
-4. Laissez l’option par défaut ( **SELECT qui retourne des lignes** ), puis cliquez sur **Suivant**.
+4. Laissez l’option par défaut (**SELECT qui retourne des lignes**), puis cliquez sur **Suivant**.
 
 5. Ajoutez une clause WHERE à la requête pour retourner `Orders` en fonction de `CustomerID`. La requête doit ressembler à la suivante :
 
@@ -156,15 +156,15 @@ Ajoutez une requête TableAdapter à Form2 pour charger les commandes du client 
 
 6. Cliquez sur **Suivant**.
 
-7. Pour le **nom DataTableMethod** , tapez `FillByCustomerID` .
+7. Pour le **nom DataTableMethod**, tapez `FillByCustomerID` .
 
-8. Désactivez l’option **Retourner un DataTable** , puis cliquez sur **Suivant**.
+8. Désactivez l’option **Retourner un DataTable**, puis cliquez sur **Suivant**.
 
 9. Cliquez sur **Terminer**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Créer une méthode sur Form2 pour passer des données à
 
-1. Cliquez avec le bouton droit sur **Form2** et sélectionnez **Afficher le code** pour ouvrir **Form2** dans l’ **Éditeur de code**.
+1. Cliquez avec le bouton droit sur **Form2** et sélectionnez **Afficher le code** pour ouvrir **Form2** dans l’**Éditeur de code**.
 
 2. Ajoutez le code suivant à **Form2** après la méthode `Form2_Load` :
 
@@ -173,9 +173,9 @@ Ajoutez une requête TableAdapter à Form2 pour charger les commandes du client 
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Créer une méthode sur Form1 pour passer des données et afficher Form2
 
-1. Dans **Form1** , cliquez avec le bouton droit sur la grille de données Customer, puis cliquez sur **Propriétés**.
+1. Dans **Form1**, cliquez avec le bouton droit sur la grille de données Customer, puis cliquez sur **Propriétés**.
 
-2. Dans la fenêtre **Propriétés** , cliquez sur **Événements**.
+2. Dans la fenêtre **Propriétés**, cliquez sur **Événements**.
 
 3. Double-cliquez sur l’événement **CellDoubleClick**.
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858187"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simple qui est hébergé dans une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], puis comment y accéder à partir d’une application Windows Forms.
@@ -94,7 +94,7 @@ Dans la première étape, vous ajoutez un projet Web pour héberger le service.
 
     - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
 
-         - ou -
+         -ou-
 
     - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
@@ -106,7 +106,7 @@ Dans la première étape, vous ajoutez un projet Web pour héberger le service.
 7. Dans la page **Choisir votre version**, choisissez la case d’option **Entity Framework 5.0**, puis le bouton **Suivant**.
 
     > [!NOTE]
-    > Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les services WCF, vous devez installer le package NuGet du fournisseur Entity Framework de services de données WCF. Consultez [utilisation de WCF Data Services 5.6.0 avec Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les services WCF, vous devez installer le package NuGet du fournisseur Entity Framework de services de données WCF. Consultez [utilisation de services de données WCF 5.6.0 avec Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**, cochez la case **Customers**, puis choisissez le bouton **Terminer**.
 

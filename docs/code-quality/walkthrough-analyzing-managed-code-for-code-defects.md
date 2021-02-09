@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859604"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procédure pas à pas : utiliser l’analyse statique du code pour rechercher les erreurs de code
 
@@ -77,7 +77,7 @@ Cet article vous guide tout au long du processus d’utilisation de l’analyse 
 
 ::: moniker-end
 
-6. Dans le menu **fichier** , cliquez sur **enregistrer les éléments sélectionnés** , puis fermez les pages de propriétés.
+6. Dans le menu **fichier** , cliquez sur **enregistrer les éléments sélectionnés**, puis fermez les pages de propriétés.
 
 7. Dans le menu **générer** , cliquez sur **générer CodeAnalysisManagedDemo**.
 
@@ -89,7 +89,7 @@ Cet article vous guide tout au long du processus d’utilisation de l’analyse 
 
     En fonction du profil de développeur que vous avez choisi, vous devrez peut-être pointer sur **autres fenêtres** dans le menu **affichage** , puis choisir **liste d’erreurs**.
 
-1. Dans l’ **Explorateur de solutions** , choisissez **Afficher tous les fichiers**.
+1. Dans l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**.
 
 1. Développez le nœud Propriétés, puis ouvrez le fichier *AssemblyInfo.cs* .
 
@@ -129,11 +129,11 @@ Cet article vous guide tout au long du processus d’utilisation de l’analyse 
 
       La boîte de dialogue **Créer une clé de nom fort** s'affiche.
 
-   1. Pour le **nom du fichier de clé** , entrez **TestKey**.
+   1. Pour le **nom du fichier de clé**, entrez **TestKey**.
 
    1. Entrez un mot de passe, puis choisissez **OK**.
 
-   1. Dans le menu **fichier** , sélectionnez **enregistrer les éléments sélectionnés** , puis fermez les pages de propriétés.
+   1. Dans le menu **fichier** , sélectionnez **enregistrer les éléments sélectionnés**, puis fermez les pages de propriétés.
 
    Une fois toutes les modifications terminées, le fichier Class1.cs doit ressembler à ce qui suit :
 

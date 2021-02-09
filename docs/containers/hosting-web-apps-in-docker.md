@@ -2,19 +2,19 @@
 title: Déployer le conteneur d’ancrage ASP.NET dans le registre ACR
 description: Découvrez comment utiliser les outils de conteneur Visual Studio pour déployer une application Web ASP.NET ou ASP.NET Core dans un registre de conteneurs
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
 ms.topic: how-to
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 4626b64f5e733fec049d56dfe53407cc0fe31566
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a74e17dcc909b529a0afad1d66959000c80455
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859539"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Déployer un conteneur ASP.NET dans un registre de conteneurs à l’aide de Visual Studio
 
@@ -59,10 +59,10 @@ La procédure suivante vous accompagne dans la création d’une application ASP
 
     | Paramètre      | Valeur suggérée  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
+    | **Préfixe DNS** | Nom global unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -85,10 +85,10 @@ La procédure suivante vous accompagne dans la création d’une application ASP
 
     | Paramètre      | Valeur suggérée  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
+    | **Préfixe DNS** | Nom global unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png)
@@ -102,4 +102,4 @@ Vous pouvez désormais extraire le conteneur à partir du registre sur tout hôt
 
 ## <a name="see-also"></a>Voir aussi
 
-[Démarrage rapide : déployer une instance de conteneur dans Azure à l’aide du Azure CLI](/azure/container-instances/container-instances-quickstart)
+[Démarrage rapide : Déployer un instance de conteneur dans Azure à l’aide d’Azure CLI](/azure/container-instances/container-instances-quickstart)
