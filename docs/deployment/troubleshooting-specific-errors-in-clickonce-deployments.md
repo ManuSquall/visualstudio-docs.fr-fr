@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4697aa4869535d63c522ae25c978dd89bfe51697
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876171"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Dépanner des erreurs spécifiques dans les déploiements ClickOnce
 Cet article répertorie les erreurs courantes suivantes qui peuvent se produire lorsque vous déployez une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, et fournit des étapes pour résoudre chaque problème.
@@ -91,7 +91,7 @@ Cet article répertorie les erreurs courantes suivantes qui peuvent se produire 
  Pour utiliser PrivatePath (chemins de détection de fusion), l’application doit demander une autorisation de confiance totale. Essayez de modifier le manifeste d’application pour demander un niveau de confiance totale, puis réessayez.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Lors de la désinstallation, un message s’affiche, indiquant « échec de la désinstallation de l’application »
- Ce message indique généralement que l’application a déjà été supprimée ou que le magasin est endommagé. Une fois que vous avez cliqué sur **OK** , l’entrée **Ajouter/supprimer un programme** est supprimée.
+ Ce message indique généralement que l’application a déjà été supprimée ou que le magasin est endommagé. Une fois que vous avez cliqué sur **OK**, l’entrée **Ajouter/supprimer un programme** est supprimée.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Pendant l’installation, un message s’affiche indiquant que les dépendances de plateforme ne sont pas installées
  Vous ne disposez pas d’une condition préalable dans le GAC (Global Assembly Cache) dont l’application a besoin pour s’exécuter.
@@ -114,7 +114,7 @@ Cet article répertorie les erreurs courantes suivantes qui peuvent se produire 
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Vous avez essayé de vous connecter avec un certificat dans votre magasin de certificats et une boîte de message vide a été reçue
  Dans la boîte de dialogue **signature** , vous devez :
 
-- Sélectionnez **signer avec un certificat stocké** , puis
+- Sélectionnez **signer avec un certificat stocké**, puis
 
 - Sélectionnez un certificat dans la liste. le premier certificat n’est pas la sélection par défaut.
 

@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: fc6c05b925c8dac5c488ce3eea79ca683b590b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876418"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio
 
 Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visuels conçus pour générer des interfaces utilisateur attrayantes et des expériences multimédias élaborées avec XAML pour différents types d’applications. Ces deux environnements de développement intégré (IDE) partagent un ensemble de fonctionnalités, y compris un éditeur XAML visuel (concepteur). Blend pour Visual Studio, qui prend en charge les plateformes WPF et UWP, fournit des outils supplémentaires pour concevoir des états visuels et créer des animations.
 
-Vous pouvez basculer entre Visual Studio et Blend pour Visual Studio, et vous pouvez même ouvrir un même projet simultanément dans les deux environnements IDE. Les modifications qui ont été enregistrées dans les fichiers XAML dans l’un des environnements IDE peuvent être appliquées par le biais d’un rechargement automatique, lorsque vous basculez vers l’autre environnement IDE. Vous pouvez contrôler le comportement de rechargement en accédant à **Outils**  >  **options**  >  **Environment**  >  **documents** d’environnement dans l’un ou l’autre IDE.
+Vous pouvez basculer entre Visual Studio et Blend pour Visual Studio, et vous pouvez même ouvrir un même projet simultanément dans les deux environnements IDE. Les modifications qui ont été enregistrées dans les fichiers XAML dans l’un des environnements IDE peuvent être appliquées par le biais d’un rechargement automatique, lorsque vous basculez vers l’autre environnement IDE. Vous pouvez contrôler le comportement de rechargement en accédant à **Outils**  >  **options**  >    >  **documents** d’environnement dans l’un ou l’autre IDE.
 
 ## <a name="installation"></a>Installation
 
@@ -44,7 +44,7 @@ Pour la plupart des tâches de développement de base, Visual Studio et Blend po
 
 - **Débogage :** Vous pouvez déboguer dans [Visual Studio](inspect-xaml-properties-while-debugging.md) et [Blend pour Visual Studio](../xaml-tools/debug-xaml-in-blend.md), y compris définir des points d’arrêt dans le code pour déboguer une application en cours d’exécution et utiliser le [rechargement à chaud](../xaml-tools/xaml-hot-reload.md) pour modifier votre code XAML pendant que l’application est en cours d’exécution. Pour maintenir une expérience de débogage cohérente avec Visual Studio, Blend pour Visual Studio inclut la plupart des fenêtres de débogage et barres d’outils de Visual Studio.
 
-- **Rechargement de fichier :** Vous pouvez modifier vos fichiers XAML dans Visual Studio ou Blend pour Visual Studio. Les fichiers modifiés qui ont été enregistrés sont rechargés automatiquement lorsque vous passez d’un IDE à l’autre. Vous pouvez contrôler le comportement de rechargement en accédant à **Outils**  >  **options**  >  **Environment**  >  **documents** d’environnement dans l’un ou l’autre IDE.
+- **Rechargement de fichier :** Vous pouvez modifier vos fichiers XAML dans Visual Studio ou Blend pour Visual Studio. Les fichiers modifiés qui ont été enregistrés sont rechargés automatiquement lorsque vous passez d’un IDE à l’autre. Vous pouvez contrôler le comportement de rechargement en accédant à **Outils**  >  **options**  >    >  **documents** d’environnement dans l’un ou l’autre IDE.
 
 - **Dispositions et paramètres synchronisés :** Conception de la fenêtre outil de personnalisation les préférences et les paramètres de configuration pour Visual Studio ou Blend pour Visual Studio sont synchronisés entre vos appareils et versions lorsque vous vous connectez avec le même compte de personnalisation. Consultez [Synchroniser les paramètres sur plusieurs ordinateurs](../ide/synchronized-settings-in-visual-studio.md).
 

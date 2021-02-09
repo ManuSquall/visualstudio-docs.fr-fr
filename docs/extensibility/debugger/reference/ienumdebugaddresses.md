@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875794"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Cette interface représente une collection d’objets qui implémentent l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
@@ -42,10 +42,10 @@ IEnumDebugAdresses : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Récupère le jeu d’objets [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) suivant de l’énumération.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Ignore un nombre spécifié d’entrées.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Rétablit la première entrée de l’énumération.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Récupère une copie de l’énumération actuelle.|
+|[Répliqué](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Récupère une copie de l’énumération actuelle.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Récupère le nombre d’entrées dans l’énumération.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface est généralement utilisée par le moteur de débogage pour aider à déterminer l’adresse appropriée à attribuer à l’évaluateur d’expression.
 
 ## <a name="requirements"></a>Configuration requise

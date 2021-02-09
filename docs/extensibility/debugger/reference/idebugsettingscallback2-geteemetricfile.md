@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef2242d26aad4bf439a3ea33bb9d35cca1d7f8cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875859"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Récupère le fichier métrique de l’évaluateur d’expression en fonction du nom ou de la métrique.
@@ -56,7 +56,7 @@ dans Nom de la métrique.
 `pbstrValue`\
 à Retourne le contenu du fichier métrique sous forme de chaîne.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

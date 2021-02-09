@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ef46275d9c7365cfcc837b8e4dfc73f0b48b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876054"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) lorsqu’elle crée une propriété associée à un document spécifique.
@@ -41,7 +41,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Obtient la nouvelle propriété.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si un document ou un script spécifique est associé à une propriété, le DE peut envoyer cet événement au SDM afin de mettre à jour la fenêtre **documents de script** avec le nom du document. Le SDM appellera [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) avec l’argument `guidDocument` pour récupérer un `VARIANT` contenant un pointeur [IUnknown](/cpp/atl/iunknown) . Le SDM appellera [QueryInterface](/cpp/atl/queryinterface) sur ce pointeur pour récupérer l’interface [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) utilisée pour mettre à jour la fenêtre **documents de script** .
 
 ## <a name="requirements"></a>Configuration requise

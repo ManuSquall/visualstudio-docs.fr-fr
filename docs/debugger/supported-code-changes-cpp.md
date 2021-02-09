@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d000d2757321701c2e14427c6bbb4d3e4164d26f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876301"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
 Modifier & Continuer pour les projets C++ gère la plupart des types de modifications de code. Toutefois, certaines modifications ne peuvent pas être appliquées pendant l'exécution du programme. Pour appliquer ces modifications, vous devez arrêter l'exécution et générer une nouvelle version du code.

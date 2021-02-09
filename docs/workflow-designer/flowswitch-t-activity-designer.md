@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eff69f1da5d2bc8c5f397b0cc6d21492a0a8d20
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6f61dd3f14ba527e9f5be0e009825902e683fb1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876561"
 ---
 # <a name="flowswitcht-activity-designer"></a>Concepteur d’activités FlowSwitch\<T>
 
@@ -32,21 +32,21 @@ L' <xref:System.Activities.Statements.FlowSwitch%601> activité contient un <xre
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Utilisation du \<T> Concepteur d’activités FlowSwitch
 
-Le concepteur d’activités **FlowSwitch \<T>** se trouve dans la catégorie **organigramme** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **FlowSwitch \<T>** se trouve dans la catégorie **organigramme** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur d’activités **FlowSwitch \<T>** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail dans un concepteur d’activités **Flowchart** . Utilisez la fenêtre **Sélectionner les types** qui s’affiche pour spécifier le type (associé au code avec le <xref:System.Activities.Statements.FlowSwitch%601> par son paramètre générique) obtenu à partir de l’évaluation de <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . Cette procédure crée une <xref:System.Activities.Statements.FlowSwitch%601> activité nommée **switch** dans l' <xref:System.Activities.Statements.Flowchart> activité. Le <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> peut être tapé dans la zone **expression** de la fenêtre **Propriétés** en cliquant sur l’emplacement où le texte d’indication indique « entrer une expression VB ».
 
-Placez la souris sur le concepteur d’activités **FlowSwitch \<T>** pour faire apparaître les poignées carrées utilisées pour établir une liaison <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> avec ses bords. Après avoir fait glisser le concepteur d’activités **FlowSwitch<T \>** et les autres concepteurs d’activités dans l' **organigramme** , les <xref:System.Activities.Activity> objets qu’ils représentent sont prêts à être liés pour spécifier l’ordre d’exécution. Pour créer l’un des <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> associés au <xref:System.Activities.Statements.FlowSwitch%601> , cliquez sur l’une des poignées de cas carré sur le périmètre du **FlowSwitch<T \>** et faites-la glisser (en maintenant enfoncé le bouton de la souris) sur l’une des poignées qui s’affichent de la même façon autour de l’activité de destination lorsque la souris pointe sur son concepteur. Relâchez le bouton de la souris et une flèche à partir du **FlowSwitch<T \>** vers le concepteur de destination apparaît et représente ce cas. La valeur par défaut de ce cas s’affiche sur la flèche et peut être modifiée dans **la zone case de la fenêtre** **Propriétés** .
+Placez la souris sur le concepteur d’activités **FlowSwitch \<T>** pour faire apparaître les poignées carrées utilisées pour établir une liaison <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> avec ses bords. Après avoir fait glisser le concepteur d’activités **FlowSwitch<T \>** et les autres concepteurs d’activités dans l' **organigramme**, les <xref:System.Activities.Activity> objets qu’ils représentent sont prêts à être liés pour spécifier l’ordre d’exécution. Pour créer l’un des <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> associés au <xref:System.Activities.Statements.FlowSwitch%601> , cliquez sur l’une des poignées de cas carré sur le périmètre du **FlowSwitch<T \>** et faites-la glisser (en maintenant enfoncé le bouton de la souris) sur l’une des poignées qui s’affichent de la même façon autour de l’activité de destination lorsque la souris pointe sur son concepteur. Relâchez le bouton de la souris et une flèche à partir du **FlowSwitch<T \>** vers le concepteur de destination apparaît et représente ce cas. La valeur par défaut de ce cas s’affiche sur la flèche et peut être modifiée dans **la zone case de la fenêtre** **Propriétés** .
 
 ### <a name="the-flowswitcht-properties"></a>Propriétés FlowSwitch \<T>
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.FlowSwitch%601> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Vrai|Spécifie l’expression qui est évaluée pour déterminer le cas du jeu de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> vers lequel basculer dans le chemin d’exécution.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|Faux|Spécifie un mappage unique, à partir des résultats possibles obtenus de l'évaluation de la propriété <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, à un jeu d'objets <xref:System.Activities.Statements.FlowNode>.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Vrai|Spécifie le mappage lorsque l'évaluation de la propriété <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> ne correspond pas à l'une des valeurs contenues dans l'objet <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|Spécifie l’expression qui est évaluée pour déterminer le cas du jeu de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> vers lequel basculer dans le chemin d’exécution.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Spécifie un mappage unique, à partir des résultats possibles obtenus de l'évaluation de la propriété <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, à un jeu d'objets <xref:System.Activities.Statements.FlowNode>.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|Spécifie le mappage lorsque l'évaluation de la propriété <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> ne correspond pas à l'une des valeurs contenues dans l'objet <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>.|
 
 ## <a name="see-also"></a>Voir aussi
 

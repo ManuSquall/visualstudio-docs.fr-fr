@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c074e62b47b926351948e94d78621a8a41c9c3e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876847"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Étendre les outils SharePoint dans Visual Studio
   Les outils SharePoint dans Visual Studio répondent aux besoins de nombreux scénarios de développement d’applications. Toutefois, vous pouvez découvrir les cas où ils ne fournissent pas de fonctionnalité dont vous ou d’autres développeurs avez besoin. Dans ce cas, vous pouvez étendre les outils SharePoint pour créer les fonctionnalités dont vous avez besoin.
@@ -30,7 +30,7 @@ ms.locfileid: "94672624"
  Vous pouvez étendre le système de projet SharePoint et le nœud **Connexions SharePoint** dans la fenêtre de **Explorateur de serveurs** .
 
 ### <a name="extend-the-sharepoint-project-system"></a>Étendre le système de projet SharePoint
- Visual Studio comprend un ensemble de modèles de projet et de modèles d’élément que vous pouvez utiliser pour créer des solutions SharePoint. Par exemple, il existe des modèles pour les récepteurs d’événements, les définitions de listes, les flux de travail et les composants WebPart. Toutefois, vous pouvez également définir vos propres types d’éléments de projet SharePoint pour la création de composants SharePoint, tels que des champs ou des actions personnalisées. Vous pouvez également créer des extensions pour les types d’éléments de projet SharePoint qui sont déjà installés dans Visual Studio, et vous pouvez créer des extensions pour les projets SharePoint.
+ Visual Studio comprend un ensemble de modèles de projet et de modèles d’élément que vous pouvez utiliser pour créer des solutions SharePoint. Par exemple, il existe des modèles pour les récepteurs d’événements, les définitions de listes, les flux de travail et les WebParts. Toutefois, vous pouvez également définir vos propres types d’éléments de projet SharePoint pour la création de composants SharePoint, tels que des champs ou des actions personnalisées. Vous pouvez également créer des extensions pour les types d’éléments de projet SharePoint qui sont déjà installés dans Visual Studio, et vous pouvez créer des extensions pour les projets SharePoint.
 
  Pour plus d’informations, consultez [étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 

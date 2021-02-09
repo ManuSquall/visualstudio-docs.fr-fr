@@ -14,18 +14,18 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aab3d3b73fac086c4ff5aee8b5319a76e9aaea15
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a8fbf218f032c9d580c490f91f6169681dc93cef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876691"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Instructions pour l’importation de flux de travail réutilisables
-  Pour importer des flux de travail réutilisables créés dans SharePoint Designer, utilisez le modèle de projet importer le flux de travail SharePoint 2010 réutilisable dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Ce modèle importe un *declarative* *flux de travail* déclaratif ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] uniquement) et le convertit en un *flux* de travail de code, qui est un flux de travail que vous pouvez améliorer à l’aide de ou du [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] code. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Procédure pas à pas : importation d’un flux de travail réutilisable SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
+  Pour importer des flux de travail réutilisables créés dans SharePoint Designer, utilisez le modèle de projet importer le flux de travail SharePoint 2010 réutilisable dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Ce modèle importe un  *flux de travail* déclaratif ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] uniquement) et le convertit en un *flux* de travail de code, qui est un flux de travail que vous pouvez améliorer à l’aide de ou du [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] code. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Procédure pas à pas : importation d’un flux de travail réutilisable SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
 
  Toutefois, le modèle de flux de travail SharePoint 2010 d’importation réutilisable peut importer uniquement des solutions de batterie de serveurs. Si vous souhaitez déployer votre workflow comme une solution bac à sable (sandbox), importez-le avec le modèle importer le package de solution SharePoint 2010. Toutefois, en procédant ainsi, vous ne pouvez pas le convertir en flux de travail de code et vous ne pourrez pas le modifier en tant que tel.
 

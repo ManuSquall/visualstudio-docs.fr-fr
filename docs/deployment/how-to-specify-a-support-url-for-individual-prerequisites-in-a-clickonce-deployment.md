@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876314"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Guide pratique pour spécifier une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement peut tester un certain nombre de conditions préalables qui doivent être disponibles sur l’ordinateur client pour que l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application puisse s’exécuter. Ces dépendances incluent la version minimale requise du .NET Framework, la version du système d’exploitation et tous les assemblys qui doivent être préinstallés dans le Global Assembly Cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Toutefois, ne peut pas installer l’une de ces conditions préalables. Si un composant requis est introuvable, il interrompt simplement l’installation et affiche une boîte de dialogue qui explique pourquoi l’installation a échoué.
@@ -67,7 +67,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiemen
      </dependency>
    ```
 
-5. Optionnel. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (fichier *. application* ) de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans un éditeur de texte.
+5. Facultatif. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (fichier *. application* ) de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans un éditeur de texte.
 
 6. Pour une condition préalable .NET Framework 4, ajoutez l' `supportUrl` attribut à l' `compatibleFrameworks` élément :
 
