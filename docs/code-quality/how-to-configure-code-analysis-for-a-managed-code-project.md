@@ -17,15 +17,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8b76678b1e5c0f53502e24f8baee87ede3bd3ef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860176"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Comment : configurer l’analyse héritée pour le code managé
 
@@ -38,9 +38,9 @@ Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles
 
 1. Ouvrez l’onglet **analyse du code** dans les pages de propriétés du projet. Plusieurs méthodes sont possibles :
 
-   - Dans **Explorateur de solutions** , choisissez le projet. Dans la barre de menus, sélectionnez **analyser**  >  **configurer l’analyse**  >  **du code pour \<projectname>**.
+   - Dans **Explorateur de solutions**, choisissez le projet. Dans la barre de menus, sélectionnez **analyser**  >  **configurer l’analyse**  >  **du code pour \<projectname>**.
 
-   - Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés** , puis sélectionnez l’onglet **analyse du code** .
+   - Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **analyse du code** .
 
 2. Dans les listes **configuration** et **plateforme** , choisissez la configuration de build et la plateforme cible.
 
@@ -87,7 +87,7 @@ Par défaut, tous les projets managés d’une solution se voient affecter l’e
 
 2. Dans le menu **analyser** , sélectionnez **configurer l’analyse du code pour la solution**.
 
-3. Si nécessaire, développez **Propriétés communes** , puis sélectionnez **paramètres d’analyse du code**.
+3. Si nécessaire, développez **Propriétés communes**, puis sélectionnez **paramètres d’analyse du code**.
 
 4. Vous pouvez spécifier un ensemble de règles pour un ou plusieurs projets :
 

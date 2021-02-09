@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 373e062ad7f2d8600fd28f098cbc0cae1c8d5a65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859006"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
 
@@ -42,7 +42,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 - Créez un TableAdapter, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     - ou -
+     -ou-
 
 - Ajoutez une requête à un TableAdapter existant, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL.
 
@@ -52,7 +52,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 2. Dans le menu **données** , sélectionnez **Ajouter une requête**.
 
-3. Utilisez la boîte de dialogue **Générateur de critères de recherche** , en ajoutant une clause WHERE avec les paramètres souhaités à l’instruction SQL.
+3. Utilisez la boîte de dialogue **Générateur de critères de recherche**, en ajoutant une clause WHERE avec les paramètres souhaités à l’instruction SQL.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Pour ajouter une requête à un formulaire lié aux données existant
 
@@ -61,13 +61,13 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 2. Dans le menu **données** , sélectionnez **Ajouter une requête** ou des **balises actives de données**.
 
     > [!NOTE]
-    > Si l’option **Ajouter une requête** n’est pas disponible dans le menu **Données** , sélectionnez un contrôle dans le formulaire qui affiche la source de données à laquelle ajouter le paramétrage. Par exemple, si le formulaire affiche des données dans un contrôle <xref:System.Windows.Forms.DataGridView>, sélectionnez-le. Si le formulaire affiche des données dans des contrôles individuels, sélectionnez n'importe quel contrôle lié aux données.
+    > Si l’option **Ajouter une requête** n’est pas disponible dans le menu **Données**, sélectionnez un contrôle dans le formulaire qui affiche la source de données à laquelle ajouter le paramétrage. Par exemple, si le formulaire affiche des données dans un contrôle <xref:System.Windows.Forms.DataGridView>, sélectionnez-le. Si le formulaire affiche des données dans des contrôles individuels, sélectionnez n'importe quel contrôle lié aux données.
 
 3. Dans la zone **Sélectionner une table de source de données** , sélectionnez la table à laquelle vous souhaitez ajouter le paramétrage.
 
 4. Tapez un nom dans la zone **Nom de la nouvelle requête** si vous créez une requête.
 
-     - ou -
+     -ou-
 
      Sélectionnez une requête dans la zone **Nom de la requête existante**.
 
@@ -94,9 +94,9 @@ S’il s’agissait d’une requête sur un TableAdapter, vous pouvez interroger
 
 Pour permettre à une requête d’accepter des valeurs NULL :
 
-1. Dans le **Concepteur de DataSet** , sélectionnez la requête TableAdapter qui doit accepter des valeurs de paramètre null.
+1. Dans le **Concepteur de DataSet**, sélectionnez la requête TableAdapter qui doit accepter des valeurs de paramètre null.
 
-2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres** , puis cliquez sur le bouton de sélection ( **...** ) pour ouvrir l' **éditeur de collections Parameters**.
+2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres**, puis cliquez sur le bouton de sélection (**...**) pour ouvrir l' **éditeur de collections Parameters**.
 
 3. Sélectionnez le paramètre qui autorise les valeurs NULL et affectez à la propriété **AllowDBNull** la valeur `true` .
 

@@ -6,13 +6,13 @@ ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: c10aa602c2c9af3c51812073d62d5bd9bff06664
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860072"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse du code binaire pour le code managé
 
@@ -23,7 +23,7 @@ Vous pouvez configurer l’analyse du code hérité (analyse binaire) pour qu’
 
 Pour activer ou désactiver l’analyse du code hérité :
 
-1. Dans **Explorateur de solutions** , sélectionnez le projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Propriétés**.
+1. Dans **Explorateur de solutions**, sélectionnez le projet et maintenez-le enfoncé (ou cliquez dessus avec le bouton droit), puis sélectionnez **Propriétés**.
 
 2. Dans la boîte de dialogue Propriétés du projet, accédez à l’onglet **analyse du code** .
 

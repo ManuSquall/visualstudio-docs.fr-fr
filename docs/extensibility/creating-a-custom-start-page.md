@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853083"
 ---
 # <a name="creating-a-custom-start-page"></a>Création d’une page de démarrage personnalisée
 
@@ -77,7 +77,7 @@ Ne définissez pas l’instance principale de Visual Studio pour exécuter la pa
 
 3. À une invite de commandes Visual Studio, tapez **devenv/Rootsuffix exp** pour ouvrir une instance expérimentale de Visual Studio.
 
-4. Dans l’instance expérimentale, accédez à la **Tools**  >  page de démarrage de l’environnement **options**  >  **Environment**  >  **Startup** des outils et sélectionnez votre fichier XAML dans la liste déroulante personnaliser la **page de démarrage** .
+4. Dans l’instance expérimentale, accédez à la   >  page de démarrage de l’environnement **options**  >    >   des outils et sélectionnez votre fichier XAML dans la liste déroulante personnaliser la **page de démarrage** .
 
 5. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.
 

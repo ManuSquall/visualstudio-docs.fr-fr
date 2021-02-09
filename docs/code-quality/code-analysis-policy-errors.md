@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860553"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -31,7 +31,7 @@ La configuration requise pour l’analyse du code dans le contrôle de code sour
 
 - L’analyse du code n’est pas activée sur la build pour tous les projets de la solution.
 
-- L’ensemble de règles local pour le projet dans Visual Studio a un paramètre d' **action** moins restrictif que la règle de projet définie par exemple, une règle qui est définie sur erreur d' **action** = **Error** sur le serveur a son **action** définie sur **Avertissement** ou **aucun** dans l’ensemble de règles en cours d’exécution dans Visual Studio.
+- L’ensemble de règles local pour le projet dans Visual Studio a un paramètre d' **action** moins restrictif que la règle de projet définie par exemple, une règle qui est définie sur erreur d' **action** =  sur le serveur a son **action** définie sur **Avertissement** ou **aucun** dans l’ensemble de règles en cours d’exécution dans Visual Studio.
 
 - L’ensemble de règles spécifié dans Visual Studio ne contient pas toutes les règles qui sont spécifiées dans l’ensemble de règles spécifié dans la stratégie d’archivage de l’analyse du code pour le projet.
 

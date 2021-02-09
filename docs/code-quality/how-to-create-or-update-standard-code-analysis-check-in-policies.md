@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860111"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -37,7 +37,7 @@ Une fois que vous avez spécifié une stratégie d’archivage pour le code mana
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’archivage
 
-1. Dans Team Explorer, cliquez avec le bouton droit sur le nom du projet, pointez sur **paramètres du projet** , puis cliquez sur **contrôle de code source**.
+1. Dans Team Explorer, cliquez avec le bouton droit sur le nom du projet, pointez sur **paramètres du projet**, puis cliquez sur **contrôle de code source**.
 
 1. Dans la boîte de dialogue **contrôle de code source** , sélectionnez l’onglet **stratégie d’archivage** .
 

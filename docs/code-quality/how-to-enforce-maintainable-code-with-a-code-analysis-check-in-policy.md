@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9f061d9d10d66857a0b2506d13d6d6671f7df401
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860038"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
 
@@ -29,7 +29,7 @@ Les administrateurs du contrôle de version pour Team Foundation peuvent ajouter
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’analyse du code
 
-1. Dans **Team Explorer** , cliquez avec le bouton droit sur le projet, cliquez sur **paramètres du projet** , puis sur **contrôle de code source**.
+1. Dans **Team Explorer**, cliquez avec le bouton droit sur le projet, cliquez sur **paramètres du projet**, puis sur **contrôle de code source**.
 
      La boîte de dialogue **contrôle de code source** s’affiche.
 
@@ -43,7 +43,7 @@ Les administrateurs du contrôle de version pour Team Foundation peuvent ajouter
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Pour activer les règles de maintenabilité de l’analyse du code
 
-1. Dans la boîte de dialogue **éditeur de stratégie d’analyse du code** , sous paramètres de **règle** , développez le nœud **règles de maintenabilité** .
+1. Dans la boîte de dialogue **éditeur de stratégie d’analyse du code** , sous paramètres de **règle**, développez le nœud **règles de maintenabilité** .
 
 2. Activez les cases à cocher correspondant aux règles suivantes :
 
