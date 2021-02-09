@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eceb9f898b4329940408e4063dc73d81e2a604a4
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 3f906fd39ed9b0b0af5a9ade344ab05a33e469a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877679"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Comment : examiner du code système après une exception
 Lorsqu'une exception est levée, il peut s'avérer nécessaire d'examiner le code dans un appel système afin de déterminer la cause de l'exception. Pour ce faire, suivez la procédure ci-dessous si aucun symbole n'est chargé pour le code système ou si l'option Uniquement mon code est activée.

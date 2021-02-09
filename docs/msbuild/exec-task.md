@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877159"
 ---
 # <a name="exec-task"></a>Exec (tâche)
 

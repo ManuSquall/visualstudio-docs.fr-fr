@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <postActions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879434"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;&gt;élément postActions (développement Office)
   L’élément `postActions` de l’espace de noms `vstav3` contient tous les éléments `postAction` qui décrivent des actions de post-déploiement, lesquelles s’exécutent après l’installation des solutions Office.
@@ -46,7 +46,7 @@ ms.locfileid: "91583708"
  `postActions` possède l’élément suivant.
 
 ### <a name="postaction"></a>postAction
- facultatif. Le rôle de l' `postAction` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément postAction&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
+ Facultatif. Le rôle de l' `postAction` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément postAction&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Exemple d’action de postconnexion
 

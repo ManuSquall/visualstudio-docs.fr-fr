@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e811ce2e387c299ff3655799bf35185c1d2029b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29756b3be6d2c46d39b581dd3db0af61bfaa18f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878927"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 Supprime l’exception spécifiée afin qu’elle ne soit plus gérée par le moteur de débogage.
@@ -28,13 +28,13 @@ Supprime l’exception spécifiée afin qu’elle ne soit plus gérée par le mo
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT RemoveSetException( 
+HRESULT RemoveSetException( 
    EXCEPTION_INFO* pException
 );
 ```
 
 ```csharp
-int RemoveSetException( 
+int RemoveSetException( 
    EXCEPTION_INFO[] pException
 );
 ```
@@ -43,10 +43,10 @@ int RemoveSetException( 
 `pException`\
 dans Structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui décrit l’exception à supprimer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’exception en cours de suppression doit avoir été précédemment définie par un appel antérieur à la méthode [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
  Pour supprimer toutes les exceptions de jeu à la fois, appelez la méthode [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) .

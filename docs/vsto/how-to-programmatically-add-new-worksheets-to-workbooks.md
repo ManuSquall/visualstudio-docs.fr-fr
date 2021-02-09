@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets, adding to workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3397b2ad8f656a7ada82ce0be17dcf21064d0ee3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: babf029550907cb7faef77b71bdfae25a1307f38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96843982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879460"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Comment : ajouter des feuilles de calcul à des classeurs par programmation
   Vous pouvez créer par programmation une feuille de calcul, puis ajouter la feuille de calcul à la collection de feuilles de calcul du classeur.

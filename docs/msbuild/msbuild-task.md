@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8241188b484447f94c60aa0e0c9bf05e477dd39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878277"
 ---
 # <a name="msbuild-task"></a>MSBuild (tâche)
 
@@ -55,7 +55,7 @@ Génère des projets MSBuild à partir d’un autre projet MSBuild.
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
- Contrairement à l’utilisation de la [tâche exec](../msbuild/exec-task.md) pour démarrer *MSBuild.exe* , cette tâche utilise le même processus MSBuild pour générer les projets enfants. La liste des cibles déjà générées qui peuvent être ignorées est partagée entre la génération parente et les générations enfants. Cette tâche est également plus rapide, car aucun nouveau processus MSBuild n’est créé.
+ Contrairement à l’utilisation de la [tâche exec](../msbuild/exec-task.md) pour démarrer *MSBuild.exe*, cette tâche utilise le même processus MSBuild pour générer les projets enfants. La liste des cibles déjà générées qui peuvent être ignorées est partagée entre la génération parente et les générations enfants. Cette tâche est également plus rapide, car aucun nouveau processus MSBuild n’est créé.
 
  Cette tâche peut traiter non seulement les fichiers projet, mais également les fichiers solution.
 

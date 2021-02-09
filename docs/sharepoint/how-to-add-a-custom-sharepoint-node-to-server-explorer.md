@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: be772075be27cc8d6e58b6b54bb281a127f4677f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878121"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procédure : ajouter un nœud SharePoint personnalisé à Explorateur de serveurs
   Vous pouvez ajouter des nœuds personnalisés sous le nœud **Connexions SharePoint** dans **Explorateur de serveurs**. Cela est utile lorsque vous souhaitez afficher des composants SharePoint supplémentaires qui ne s’affichent pas dans **Explorateur de serveurs** par défaut. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

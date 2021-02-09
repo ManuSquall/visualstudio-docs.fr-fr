@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879291"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   L’élément Ruban (XML) vous permet de personnaliser un ruban à l’aide de XML. Utilisez l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une façon qui n’est pas prise en charge par l’élément Ruban (concepteur visuel). Pour une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).

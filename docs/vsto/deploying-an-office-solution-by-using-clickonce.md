@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877930"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Déployer une solution Office à l’aide de ClickOnce
   Vous pouvez déployer votre solution Office plus rapidement en utilisant ClickOnce. Si vous publiez des mises à jour, votre solution les détecte et les installe automatiquement. Toutefois, avec ClickOnce, vous devez installer votre solution séparément pour chaque utilisateur d'un ordinateur. Par conséquent, vous devez envisager d’utiliser Windows Installer (*. msi*) si plusieurs utilisateurs exécutent votre solution sur le même ordinateur.
@@ -157,7 +157,7 @@ ms.locfileid: "96845646"
 
 2. Choisissez le nom de l’ordinateur, le dossier **sites Web** ou le site Web que vous configurez.
 
-3. Dans la barre de menus, choisissez Propriétés de l' **action**  >  **Properties**.
+3. Dans la barre de menus, choisissez Propriétés de l' **action**  >  .
 
 4. Dans l’onglet **en-têtes http** , choisissez le bouton **types MIME** .
 
@@ -426,7 +426,7 @@ ms.locfileid: "96845646"
 
      La zone **valeur** contient l’identificateur du manifeste de déploiement.
 
-4. Avant l’identificateur, entrez le chemin d’accès complet du document, suivi d’une barre, dans l’identificateur de *chemin d’accès* de format | *Identifier* (par exemple, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Avant l’identificateur, entrez le chemin d’accès complet du document, suivi d’une barre, dans l’identificateur de *chemin d’accès* de format |  (par exemple, *file://servername/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Pour plus d’informations sur la façon de mettre en forme cet identificateur, consultez [vue d’ensemble des propriétés de document personnalisé](../vsto/custom-document-properties-overview.md).
 

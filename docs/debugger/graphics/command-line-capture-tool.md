@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: ee7acfd6256affee7a8204c2e70e18210c5f3dcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877731"
 ---
 # <a name="command-line-capture-tool"></a>Outil en ligne de commande de capture
 DXCap.exe est un outil en ligne de commande pour la capture et la lecture de Graphics Diagnostics. Il prend en charge tous les niveaux de fonctionnalités des versions Direct3D 10 à Direct3D 12.
@@ -77,7 +77,7 @@ DXCap.exe -info
 
  `-info` Affiche des informations sur les machines et capture les DLL.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  DXCap.exe fonctionne en trois modes :
 
  Mode de capture (-c) permet de capturer des informations graphiques à partir d’une application en cours d’exécution et de les enregistrer dans un fichier journal de graphisme. Les fonctionnalités de capture et le format de fichier sont identiques à ceux de Visual Studio.

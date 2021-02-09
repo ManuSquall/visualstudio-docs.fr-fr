@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5d95398285d9106719f3c2444d54202b81cfee4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349280"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877497"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Élément signature (déploiement ClickOnce)
 Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement.
@@ -40,7 +40,7 @@ Contient les informations nécessaires pour signer numériquement ce manifeste d
 
  Si vous souhaitez signer votre manifeste, des hachages doivent être fournis pour tous les fichiers. Un manifeste avec des fichiers qui ne sont pas hachés ne peut pas être signé, car les utilisateurs ne peuvent pas vérifier le contenu des fichiers non hachés.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple de code suivant illustre un `Signature` élément dans un manifeste de déploiement utilisé dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement.
 
 ```xml

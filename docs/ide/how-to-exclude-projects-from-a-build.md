@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0e164c24770048495d16da852523b3dd50a43a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: aaa36e7089be12cb0775b3300a134eb77b2eb618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878667"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d’une build
 
@@ -54,11 +54,11 @@ Pour plus d’informations, consultez [Présentation des configurations de build
 
 6. Dans la barre d’outils **Standard**, vérifiez que la nouvelle configuration de solution est la configuration active dans la zone **Configurations de solutions**.
 
-7. Dans la barre de menus, choisissez **générer générer**la  >  **solution**.
+7. Dans la barre de menus, choisissez **générer générer** la  >  **solution**.
 
 ## <a name="skipped-projects"></a>Projets ignorés
 
-Les projets peuvent être ignorés pendant la génération, car ils ne sont pas à jour ou parce qu’ils sont exclus de la configuration. Visual Studio utilise MSBuild pour générer vos projets. MSBuild génère uniquement une cible si la sortie est antérieure à l’entrée, comme déterminé par les horodateurs de fichier. Pour forcer une régénération, utilisez la **solution générer la génération**de la commande  >  **Rebuild Solution**.
+Les projets peuvent être ignorés pendant la génération, car ils ne sont pas à jour ou parce qu’ils sont exclus de la configuration. Visual Studio utilise MSBuild pour générer vos projets. MSBuild génère uniquement une cible si la sortie est antérieure à l’entrée, comme déterminé par les horodateurs de fichier. Pour forcer une régénération, utilisez la **solution générer la génération** de la commande  >  .
 
 Dans le volet de **génération** de la fenêtre **sortie** , Visual Studio signale le nombre de projets à jour, le nombre qui a été généré avec succès, le nombre qui a échoué et le nombre qui a été ignoré. Le nombre ignoré n’inclut pas les projets qui n’ont pas été générés, car ils étaient à jour. Lorsque les projets sont exclus de la configuration active, ils sont ignorés pendant la génération. Dans la sortie de la génération, vous voyez un message indiquant que le projet est ignoré :
 

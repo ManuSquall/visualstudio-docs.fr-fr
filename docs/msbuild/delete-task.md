@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877341"
 ---
 # <a name="delete-task"></a>Delete (tâche)
 
@@ -41,7 +41,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Delete` .
 |`Files`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les fichiers à supprimer.|
 |`TreatErrorsAsWarnings`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les erreurs sont consignées en tant qu’avertissements. La valeur par défaut est `false`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

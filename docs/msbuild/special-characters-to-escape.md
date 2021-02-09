@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5e665c214ea75de67a6c339bb516dfb812936448
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878147"
 ---
 # <a name="special-characters-to-escape"></a>Caractères d’échappement spéciaux
 
@@ -50,4 +50,4 @@ Les caractères spéciaux doivent être échappés uniquement s'ils ont une sign
 ## <a name="see-also"></a>Voir aussi
 
 - [Comment : échapper des caractères spéciaux dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

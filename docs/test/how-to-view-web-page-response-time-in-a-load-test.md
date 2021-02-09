@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: a20e8dc21e2ff5d76ea582b6ea3a9a0e36f7ed74
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 540dad5ba6629095c5901b123ebdc4ecb7fb5770
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879525"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Guide pratique pour afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
 
@@ -54,10 +54,10 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
    |**Total**|Nombre total de requêtes effectuées pour la page web. Il s'agit du nombre total d'itérations dans le test de charge.|
    |**Moy.**|Temps de réponse moyen de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Min**|Temps de réponse minimum de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
-   |**Médiane**|Temps de réponse médian de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
+   |**Quartile**|Temps de réponse médian de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**90%**|90e centile pour le temps de réponse. Cela indique que 90 % des pages ont répondu plus rapidement que ce nombre, et 10 % des pages ont répondu plus lentement.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**95%**|95e centile pour le temps de réponse. Cela indique que 95 % des pages ont répondu plus rapidement que ce nombre, et 5 % des pages ont répondu plus lentement.|
-   |**99 %**|99e centile pour le temps de réponse. Cela indique que 99 % des pages ont répondu plus rapidement que ce nombre, et 1 % des pages ont répondu plus lentement.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
+   |**99%**|99e centile pour le temps de réponse. Cela indique que 99 % des pages ont répondu plus rapidement que ce nombre, et 1 % des pages ont répondu plus lentement.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Max**|Temps de réponse maximum de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**STD dev**|Par défaut, les données d'écart type ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Temps de réponse de la page**|Temps de réponse moyen pour toutes les requêtes effectuées pour la page web.|

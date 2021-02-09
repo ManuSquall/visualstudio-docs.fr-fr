@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d9ca2249e6119e27574791a2cbd9e8b09a9bde63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878180"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Métadonnées d’éléments connus MSBuild
 
@@ -45,7 +45,7 @@ Le premier tableau de cet article décrit les métadonnées assignées à chaque
 |%(Extension)|Contient l’extension de nom de fichier de l’élément. Par exemple :<br /><br /> *. cs*|
 |%(RelativeDir)|Contient le chemin spécifié dans l’attribut `Include`, jusqu’à la dernière barre oblique inverse (\\). Par exemple :<br /><br /> *Source\\*<br /><br /> Si l' `Include` attribut est un chemin d’accès complet, `%(RelativeDir)` commence par le répertoire racine `%(RootDir)` .  Par exemple : <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|Contient le répertoire de l’élément, sans le répertoire racine. Par exemple :<br /><br /> *MyProject\\Source\\*|
-|%(RecursiveDir)|Si l’attribut `Include` contient le caractère générique \*\*, ces métadonnées spécifient la partie du chemin qui remplace le caractère générique. Pour plus d’informations sur les caractères génériques, consultez [How to : Select the files to Build](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si le dossier *C:\MySolution\MyProject\Source \\* contient le fichier *Program.cs* , et si le fichier projet contient cet élément :<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> la valeur de `%(MyItem.RecursiveDir)` est *MySolution\MyProject\Source\\* .|
+|%(RecursiveDir)|Si l’attribut `Include` contient le caractère générique \*\*, ces métadonnées spécifient la partie du chemin qui remplace le caractère générique. Pour plus d’informations sur les caractères génériques, consultez [How to : Select the files to Build](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si le dossier *C:\MySolution\MyProject\Source \\* contient le fichier *Program.cs*, et si le fichier projet contient cet élément :<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> la valeur de `%(MyItem.RecursiveDir)` est *MySolution\MyProject\Source\\*.|
 |%(Identity)|Élément spécifié dans l' `Include` attribut. Par exemple :<br /><br /> *Source\Program.cs*|
 |%(ModifiedTime)|Contient l’horodatage de la dernière modification de l’élément. Par exemple :<br /><br /> `2004-07-01 00:21:31.5073316`|
 |%(CreatedTime)|Contient l’horodatage de création de l’élément. Par exemple :<br /><br /> `2004-06-25 09:26:45.8237425`|
@@ -56,4 +56,4 @@ Le premier tableau de cet article décrit les métadonnées assignées à chaque
 - [Métadonnées communes d’éléments MSBuild](common-msbuild-item-metadata.md)
 - [Éléments](../msbuild/msbuild-items.md)
 - [Traitement par lot](../msbuild/msbuild-batching.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

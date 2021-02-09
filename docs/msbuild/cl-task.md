@@ -20,23 +20,23 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878433"
 ---
 # <a name="cl-task"></a>CL (tâche)
 
-Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit des fichiers exécutables ( *. exe* ), des fichiers de bibliothèque de liens dynamiques ( *. dll* ) ou des fichiers de module de code ( *. netmodule* ). Pour plus d’informations, consultez [Options du compilateur](/cpp/build/reference/compiler-options) et [Utiliser MSBuild à partir de la ligne de commande](/cpp/build/msbuild-visual-cpp) et [Utilisez l’ensemble d’outils Microsoft C++ à partir de la ligne de commande](/cpp/build/building-on-the-command-line).
+Encapsule l’outil compilateur Microsoft C++, *cl.exe*. Le compilateur produit des fichiers exécutables (*. exe*), des fichiers de bibliothèque de liens dynamiques (*. dll*) ou des fichiers de module de code (*. netmodule*). Pour plus d’informations, consultez [Options du compilateur](/cpp/build/reference/compiler-options) et [Utiliser MSBuild à partir de la ligne de commande](/cpp/build/msbuild-visual-cpp) et [Utilisez l’ensemble d’outils Microsoft C++ à partir de la ligne de commande](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Paramètres
 
- La liste ci-dessous décrit les paramètres de la tâche **CL** . La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
+ La liste ci-dessous décrit les paramètres de la tâche **CL**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
 - **AdditionalIncludeDirectories**
 
@@ -58,7 +58,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre String[] facultatif.
 
-   Spécifie un répertoire dans lequel le compilateur doit faire une recherche en vue de résoudre les références de fichiers transmises à la directive **#using** .
+   Spécifie un répertoire dans lequel le compilateur doit faire une recherche en vue de résoudre les références de fichiers transmises à la directive **#using**.
 
    Pour plus d’informations, consultez [/ai (spécifier les répertoires de métadonnées)](/cpp/build/reference/ai-specify-metadata-directories).
 
@@ -66,7 +66,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre de chaîne facultatif.
 
-   Chaîne qui toujours est émise sur la ligne de commande. Sa valeur par défaut est «  **/c**  ».
+   Chaîne qui toujours est émise sur la ligne de commande. Sa valeur par défaut est «  **/c** ».
 
 - **AssemblerListingLocation**
 
@@ -92,7 +92,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
   - **Tout**  -  **/FACS**
 
-    Pour plus d’informations, consultez les options **/Fa** , **/FAC** , **/FAS** et **/FACS** dans [/FA,/FA (fichier listing)](/cpp/build/reference/fa-fa-listing-file).
+    Pour plus d’informations, consultez les options **/Fa**, **/FAC**, **/FAS** et **/FACS** dans [/FA,/FA (fichier listing)](/cpp/build/reference/fa-fa-listing-file).
 
 - **BasicRuntimeChecks**
 
@@ -198,7 +198,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre booléen facultatif.
 
-   Si `true`, indique au compilateur de préparer une image pour la *création d’images corrigeables en mémoire* . Ce paramètre vérifie que la première instruction de chaque fonction utilise deux octets, comme cela est requis pour la création d’images corrigeables en mémoire.
+   Si `true`, indique au compilateur de préparer une image pour la *création d’images corrigeables en mémoire*. Ce paramètre vérifie que la première instruction de chaque fonction utilise deux octets, comme cela est requis pour la création d’images corrigeables en mémoire.
 
    Pour plus d’informations, consultez [/hotpatch (créer une image corrigeable en mémoire)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
 
@@ -206,7 +206,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre de chaîne facultatif.
 
-   Sélectionne le type d’informations de débogage créées pour votre programme et indique si ces informations sont conservées dans des fichiers objets ( *. obj* ) ou dans une base de données de programme (PDB).
+   Sélectionne le type d’informations de débogage créées pour votre programme et indique si ces informations sont conservées dans des fichiers objets (*. obj*) ou dans une base de données de programme (PDB).
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
@@ -222,7 +222,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre booléen facultatif.
 
-   Si **true** , indique au compilateur d’émettre une erreur pour les constructions de langage qui ne sont compatibles ni avec ANSI C ni avec ANSI C++.
+   Si **true**, indique au compilateur d’émettre une erreur pour les constructions de langage qui ne sont compatibles ni avec ANSI C ni avec ANSI C++.
 
    Pour plus d’informations, consultez l’option **/za** dans [/za,/Ze (désactiver les extensions de langage)](/cpp/build/reference/za-ze-disable-language-extensions).
 
@@ -268,7 +268,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre de chaîne facultatif.
 
-   Vous permet de signaler les erreurs internes du compilateur (ICE) directement à Microsoft. Par défaut, dans les générations en mode IDE, le paramètre est **Prompt** tandis que dans les générations en mode ligne de commande, il s’agit du paramètre **Queue** .
+   Vous permet de signaler les erreurs internes du compilateur (ICE) directement à Microsoft. Par défaut, dans les générations en mode IDE, le paramètre est **Prompt** tandis que dans les générations en mode ligne de commande, il s’agit du paramètre **Queue**.
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
@@ -330,7 +330,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Si `true`, active le modèle de virgule flottante fiable. Des exceptions sont levées dès leur déclenchement.
 
-   Pour plus d’informations, consultez l’option/ **FP : except** dans [/FP (spécifier le comportement de virgule flottante)](/cpp/build/reference/fp-specify-floating-point-behavior).
+   Pour plus d’informations, consultez l’option/**FP : except** dans [/FP (spécifier le comportement de virgule flottante)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **FloatingPointModel**
 
@@ -456,7 +456,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre `Boolean` facultatif.
 
-   Si `true` , omet le nom par défaut de la bibliothèque Runtime C à partir du fichier objet ( *. obj* ). Par défaut, le compilateur place le nom de la bibliothèque dans le fichier *. obj* pour diriger l’éditeur de liens vers la bibliothèque correcte.
+   Si `true` , omet le nom par défaut de la bibliothèque Runtime C à partir du fichier objet (*. obj*). Par défaut, le compilateur place le nom de la bibliothèque dans le fichier *. obj* pour diriger l’éditeur de liens vers la bibliothèque correcte.
 
    Pour plus d’informations, consultez [/zl (omettre le nom de la bibliothèque par défaut)](/cpp/build/reference/zl-omit-default-library-name).
 
@@ -498,7 +498,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre de **chaîne** facultatif.
 
-   Créez ou utilisez un fichier d’en-tête précompilé ( *. pch* ) au cours de la génération.
+   Créez ou utilisez un fichier d’en-tête précompilé (*. pch*) au cours de la génération.
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
@@ -576,7 +576,7 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre `Integer` facultatif.
 
-   Spécifie le nombre maximal de processeurs à utiliser dans une compilation multiprocesseur. Utilisez ce paramètre conjointement avec le paramètre **MultiProcessorCompilation** .
+   Spécifie le nombre maximal de processeurs à utiliser dans une compilation multiprocesseur. Utilisez ce paramètre conjointement avec le paramètre **MultiProcessorCompilation**.
 
 - **ProgramDataBaseFileName**
 
@@ -784,17 +784,17 @@ Encapsule l’outil compilateur Microsoft C++, *cl.exe* . Le compilateur produit
 
    Paramètre `ITaskItem[]` facultatif.
 
-   Spécifie un tableau des éléments qui représentent les *journaux de suivi des fichiers lus* .
+   Spécifie un tableau des éléments qui représentent les *journaux de suivi des fichiers lus*.
 
-   Un journal de suivi des fichiers lus ( *. TLog* ) contient les noms des fichiers d’entrée qui sont lus par une tâche et est utilisé par le système de génération de projet pour prendre en charge les builds incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
+   Un journal de suivi des fichiers lus (*. TLog*) contient les noms des fichiers d’entrée qui sont lus par une tâche et est utilisé par le système de génération de projet pour prendre en charge les builds incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
 
 - **TLogWriteFiles**
 
    Paramètre `ITaskItem[]` facultatif.
 
-   Spécifie un tableau des éléments qui représentent les *journaux de suivi des fichiers écrits* .
+   Spécifie un tableau des éléments qui représentent les *journaux de suivi des fichiers écrits*.
 
-   Un journal de suivi des fichiers d’écriture ( *. TLog* ) contient les noms des fichiers de sortie écrits par une tâche, et est utilisé par le système de génération de projet pour prendre en charge les builds incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
+   Un journal de suivi des fichiers d’écriture (*. TLog*) contient les noms des fichiers de sortie écrits par une tâche, et est utilisé par le système de génération de projet pour prendre en charge les builds incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
 
 - **TrackFileAccess**
 

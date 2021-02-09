@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 9625ce43d94158732c2d6af738a1f1abc84f666e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878771"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Étape 4 : exposer une API Web à partir de votre application ASP.NET Core
 
@@ -37,7 +37,7 @@ Ouvrez votre application ASP.NET Core dans Visual Studio 2019. L’application d
 
 ## <a name="add-an-api-controller"></a>Ajouter un contrôleur d’API
 
-Cliquez avec le bouton droit sur le projet et ajoutez un dossier nommé *Api*. Ensuite, cliquez avec le bouton droit sur ce dossier et choisissez **Ajouter**  >  **un nouvel élément de génération de modèles**automatique. Choisissez **Contrôleur d’API avec actions, à l’aide d’Entity Framework**. Maintenant, choisissez une classe de modèle existante et cliquez sur **Ajouter**.
+Cliquez avec le bouton droit sur le projet et ajoutez un dossier nommé *Api*. Ensuite, cliquez avec le bouton droit sur ce dossier et choisissez **Ajouter**  >  **un nouvel élément de génération de modèles** automatique. Choisissez **Contrôleur d’API avec actions, à l’aide d’Entity Framework**. Maintenant, choisissez une classe de modèle existante et cliquez sur **Ajouter**.
 
 ![Visual Studio 2019 – Contrôleur d’API généré automatiquement ASP.NET Core](media/vs-2019/vs2019-add-scaffold-api.png)
 

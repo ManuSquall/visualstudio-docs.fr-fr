@@ -5,21 +5,21 @@ ms.date: 06/28/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0355f1017bb661b4f72325fb74f60653f69cd182
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878174"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Utiliser la fenêtre interactive R
 
 Outils R pour Visual Studio (RTVS) comprend une fenêtre interactive R, également appelée fenêtre **REPL** (Read-Evaluate-Print-Loop), dans laquelle vous pouvez entrer du code R et voir immédiatement les résultats. Les modules, la syntaxe, les variables et les fonctionnalités IntelliSense sont tous disponibles dans la fenêtre interactive.
 
-La fenêtre interactive est également intégrée aux fenêtres normales de l’éditeur R. Vous pouvez sélectionner du code et appuyer sur **CTRL** + **entrée**, ou cliquer avec le bouton droit et sélectionner **exécuter en mode interactif**pour exécuter le code ligne par ligne dans la fenêtre interactive comme si vous l’aviez tapé directement. Lorsque le curseur se trouve sur une seule ligne dans une fenêtre de l’éditeur, **CTRL** + **entrée** envoie cette ligne à la fenêtre interactive, puis déplace le curseur sur la ligne suivante. De cette façon, vous pouvez simplement appuyer sur **CTRL** + **entrée** à plusieurs reprises pour parcourir le code.
+La fenêtre interactive est également intégrée aux fenêtres normales de l’éditeur R. Vous pouvez sélectionner du code et appuyer sur **CTRL** + **entrée**, ou cliquer avec le bouton droit et sélectionner **exécuter en mode interactif** pour exécuter le code ligne par ligne dans la fenêtre interactive comme si vous l’aviez tapé directement. Lorsque le curseur se trouve sur une seule ligne dans une fenêtre de l’éditeur, **CTRL** + **entrée** envoie cette ligne à la fenêtre interactive, puis déplace le curseur sur la ligne suivante. De cette façon, vous pouvez simplement appuyer sur **CTRL** + **entrée** à plusieurs reprises pour parcourir le code.
 
 Pour vous familiariser avec ces fonctionnalités, suivez la procédure pas à pas [Bien démarrer avec R](getting-started-with-r.md), ainsi que les sections de cet article. Les [extraits de code](code-snippets-for-r.md) fonctionnent aussi bien dans la fenêtre interactive que dans les fenêtres de l’éditeur R.
 
@@ -48,13 +48,13 @@ Voici la fenêtre interactive avec sa barre d’outils :
 
 ![Fenêtre interactive avec sa barre d’outils](media/repl-window.png)
 
-Les commandes de la barre d’outils sont les suivantes, dont la plupart ont des équivalents au clavier et sont également disponibles dans les menus session **Outils r**  >  **Session** et répertoire de travail **Outils r**  >  **Working Directory** (ou comme indiqué) :
+Les commandes de la barre d’outils sont les suivantes, dont la plupart ont des équivalents au clavier et sont également disponibles dans les menus session **Outils r**  >   et répertoire de travail **Outils r**  >   (ou comme indiqué) :
 
 | Bouton | Commande | Combinaison de touches | Description |
 | --- | --- | --- | --- |
 | ![Bouton de réinitialisation](media/repl-toolbar-01-reset.png) | Réinitialiser | **CTRL** + **MAJ** + **F10** | Réinitialise la session de la fenêtre interactive. Toutes les variables et l’historique sont effacés. |
-| ![Bouton Effacer](media/repl-toolbar-02-clear.png) | Désactiver | **CTRL** + **L** | Efface la sortie affichée dans la fenêtre interactive ; n’affecte pas les variables ou l’historique de la session. |
-| ![Boutons Historique](media/repl-toolbar-03-history.png) | Commande précédente de l’historique<br/>Commande suivante de l’historique | **Haut**, **Bas**<br/>**ALT** + **Haut**, **ALT** + **Down** | Fait défiler l’historique, avec certains comportements pour les blocs de code multiligne. Consultez [Historique](#history). |
+| ![Bouton Effacer](media/repl-toolbar-02-clear.png) | Clear | **CTRL** + **L** | Efface la sortie affichée dans la fenêtre interactive ; n’affecte pas les variables ou l’historique de la session. |
+| ![Boutons Historique](media/repl-toolbar-03-history.png) | Commande précédente de l’historique<br/>Commande suivante de l’historique | **Haut**, **Bas**<br/>**ALT** + **Haut**, **ALT** +  | Fait défiler l’historique, avec certains comportements pour les blocs de code multiligne. Consultez [Historique](#history). |
 | ![Bouton Charger l’espace de travail](media/repl-toolbar-04-load-workspace.png) | Charger l’espace de travail | n/a | Charge un espace de travail précédemment enregistré (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
 | ![Bouton Enregistrer l’espace de travail sous](media/repl-toolbar-05-save-workspace-as.png)| Enregistrer l’espace de travail sous | n/a | Enregistre l’état actuel de la session en tant qu’espace de travail (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
 | ![Bouton Script R source](media/repl-toolbar-06-source-r-script.png) | Script R source | **CTRL** + **MAJ** + **S** | Appelle `source` avec le script R actuellement actif dans l’éditeur Visual Studio, qui exécute le code.  Ce bouton n’apparaît que si un fichier R est ouvert dans l’éditeur Visual Studio. |
@@ -79,7 +79,7 @@ Utilisez le bouton **Réinitialiser** ou la commande **Outils R** > **Session**
 
 ## <a name="working-directory"></a>Répertoire de travail
 
-Les développeurs sont souvent amenés à changer de répertoire de travail au cours d’une session interactive. Diverses commandes, disponibles dans la barre d’outils, le menu du répertoire de travail **Outils R**  >  **Working directory** et le menu contextuel du projet vous permettent de définir facilement un répertoire de travail à l’emplacement d’un fichier source, de l’emplacement ou de votre projet, ou de tout autre emplacement arbitraire. Cela vous évitera de taper des noms de chemin complets ou des noms de chemin relatifs de grande taille pour faire référence aux fichiers.
+Les développeurs sont souvent amenés à changer de répertoire de travail au cours d’une session interactive. Diverses commandes, disponibles dans la barre d’outils, le menu du répertoire de travail **Outils R**  >   et le menu contextuel du projet vous permettent de définir facilement un répertoire de travail à l’emplacement d’un fichier source, de l’emplacement ou de votre projet, ou de tout autre emplacement arbitraire. Cela vous évitera de taper des noms de chemin complets ou des noms de chemin relatifs de grande taille pour faire référence aux fichiers.
 
 ## <a name="history"></a>Historique
 
@@ -91,7 +91,7 @@ L’historique dans la fenêtre interactive traite également de façon intellig
 
 Ce comportement prend en compte le cas typique de réexécution du dernier élément de l’historique avec une flèche vers le haut et la combinaison de touches **entrée** , tout en autorisant naturellement la modification d’un bloc de code multiligne en appuyant sur la flèche vers le haut pour y accéder.
 
-Pour éviter de naviguer dans des blocs de code multilignes, utilisez les boutons de la barre d’outils ou **Appuyez sur Alt** + **Up** et **ALT** - **Down**, et tous les blocs de ce type sont traités comme une seule ligne.
+Pour éviter de naviguer dans des blocs de code multilignes, utilisez les boutons de la barre d’outils ou **Appuyez sur Alt** +  et **ALT** - , et tous les blocs de ce type sont traités comme une seule ligne.
 
 Le moyen le plus simple de comprendre les fonctionnalités d’historique consiste à les tester dans la fenêtre interactive. Le code ci-dessous fournit plusieurs instructions appropriées sur une ou plusieurs lignes. Veillez à copier-coller les instructions une par une pour créer l’historique approprié. (Vous pouvez également coller le code dans un fichier de code séparé, puis envoyer les lignes dans la fenêtre interactive avec **CTRL** + **Entrée**.)
 

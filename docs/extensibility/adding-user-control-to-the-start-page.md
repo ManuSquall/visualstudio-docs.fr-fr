@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879174"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Ajouter un contrôle utilisateur à la page de démarrage
 
@@ -185,7 +185,7 @@ Pour rendre ce contrôle disponible pour le projet de page de démarrage, dans l
 
 3. À une invite de commandes Visual Studio, tapez **devenv/Rootsuffix exp** pour ouvrir une instance expérimentale de Visual Studio.
 
-4. Dans l’instance expérimentale, accédez à la **Tools**  >  page de démarrage de l’environnement **options**  >  **Environment**  >  **Startup** des outils et sélectionnez votre fichier XAML dans la liste déroulante personnaliser la **page de démarrage** .
+4. Dans l’instance expérimentale, accédez à la   >  page de démarrage de l’environnement **options**  >    >   des outils et sélectionnez votre fichier XAML dans la liste déroulante personnaliser la **page de démarrage** .
 
 5. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.
 

@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd305b6506471a40de90fbd954e54461d2a139d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecb1e4aace5fb0c4f8c76b53a597b5b4b62110f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879031"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Récupère la plage pour la position actuelle du document.
@@ -46,10 +46,10 @@ public int GetRange(
 `pdwEndOffset`\
 [in, out] Décalage de la position de fin de la plage. Affectez à ce paramètre une valeur null si ces informations ne sont pas nécessaires.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La plage spécifiée dans une position de document pour un point d’arrêt d’emplacement est utilisée par le moteur de débogage (DE) pour rechercher une instruction qui contribue en fait au code. Considérons par exemple le code suivant :
 
 ```

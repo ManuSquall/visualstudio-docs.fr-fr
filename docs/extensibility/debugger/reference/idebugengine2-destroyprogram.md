@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 485875f2ca4cd54c41d959ffaf769368db265243
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879044"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informe un moteur de débogage (DE) que le programme spécifié a été arrêté de manière atypique et que le DE doit nettoyer toutes les références au programme et envoyer un événement de destruction du programme.
@@ -28,13 +28,13 @@ Informe un moteur de débogage (DE) que le programme spécifié a été arrêté
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT DestroyProgram( 
+HRESULT DestroyProgram( 
    IDebugProgram2* pProgram
 );
 ```
 
 ```cpp
-int DestroyProgram( 
+int DestroyProgram( 
    IDebugProgram2 pProgram
 );
 ```
@@ -43,10 +43,10 @@ int DestroyProgram( 
 `pProgram`\
 dans Objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme qui s’est arrêté de façon inattendue.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Une fois cette méthode appelée, la méthode DE envoie par la suite un événement [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) au gestionnaire de débogage de session (SDM).
 
  Cette méthode n’est pas implémentée (retourne `E_NOTIMPL` ) si le de s’exécute dans le même processus que le programme en cours de débogage. Cette méthode est implémentée uniquement si le DE s’exécute dans le même processus que le SDM.

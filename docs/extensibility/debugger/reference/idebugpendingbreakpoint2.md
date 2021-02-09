@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6f2c1df37e953a5d8c66bad9d0a3574a463fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877406"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Cette interface représente un point d’arrêt qui est prêt à être lié à un emplacement de code.
@@ -51,7 +51,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Énumère tous les points d’arrêt d’erreur qui résultent de ce point d’arrêt en attente.|
 |[Supprimer](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Supprime ce point d’arrêt en attente et tous les points d’arrêt liés à celui-ci.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `IDebugPendingBreakpoint2` peut être considéré comme un fournisseur de toutes les informations nécessaires pour lier un point d’arrêt à du code qui peut être appliqué à un ou plusieurs programmes.
 
  Un point d’arrêt en attente peut potentiellement produire plus d’un point d’arrêt lié. Par exemple, un point d’arrêt dans un modèle de style C++ peut produire un point d’arrêt lié pour chaque instance unique de ce modèle.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f26c3c1b8256597c795fa8bcd815fd605f895fa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878381"
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 
@@ -33,7 +33,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 | Paramètre | Description |
 |-------------------| - |
 | `Condition` | Paramètre `String` facultatif.<br /><br /> `Boolean`Expression utilisée par le moteur MSBuild pour déterminer si cette tâche sera exécutée. Pour plus d’informations sur les conditions prises en charge par MSBuild, consultez [conditions](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true** . En cas d’échec d’une tâche, les tâches suivantes dans l’élément [cible](../msbuild/target-element-msbuild.md) et la build continuent à s’exécuter, et toutes les erreurs de la tâche sont traitées comme des avertissements.<br />-   **ErrorAndContinue** . En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (valeur par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, consultez [Comment : ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, les tâches suivantes dans l’élément [cible](../msbuild/target-element-msbuild.md) et la build continuent à s’exécuter, et toutes les erreurs de la tâche sont traitées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (valeur par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, consultez [Comment : ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -55,7 +55,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [AspNetCompiler (tâche)](../msbuild/aspnetcompiler-task.md)
 
- Encapsule *aspnet_compiler.exe* , un utilitaire permettant de précompiler des applications ASP.net.
+ Encapsule *aspnet_compiler.exe*, un utilitaire permettant de précompiler des applications ASP.net.
 
 - [AssignCulture (tâche)](../msbuild/assignculture-task.md)
 
@@ -311,6 +311,6 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Écriture de tâches](../msbuild/task-writing.md)
 - [Tâches](../msbuild/msbuild-tasks.md)

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6abff7accf5e1990792b52f1fdf6a013edd0f9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 39a988ed4742f34fa2a3e6e2680d5eec8ccd2b07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879304"
 ---
 # <a name="graph-view"></a>Affichage du graphique
 
@@ -103,16 +103,16 @@ Les boutons suivants de la barre d'outils XSD sont activés lorsque la vue du gr
 
 |Option|Description|
 |-|-----------------|
-|**Afficher la vue de départ**|Bascule vers la [vue de départ](../xml-tools/start-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **1** .|
-|**Afficher la vue de modèle de contenu**|Bascule vers la [vue de modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **2** .|
-|**Afficher la vue du graphique**|Bascule vers la [vue du graphique](../xml-tools/graph-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **3** .|
+|**Afficher la vue de départ**|Bascule vers la [vue de départ](../xml-tools/start-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **1**.|
+|**Afficher la vue de modèle de contenu**|Bascule vers la [vue de modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **2**.|
+|**Afficher la vue du graphique**|Bascule vers la [vue du graphique](../xml-tools/graph-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **3**.|
 |**Effacer l'espace de travail**|Efface l'espace de travail et l'aire de conception.|
 |**Supprimer de l'espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
 |**Supprimer tout, sauf la sélection de l'espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|
-|**De gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche droite** .|
-|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche gauche** .|
-|**De haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible à l’aide de la flèche de raccourci clavier : **ALT** + **bas** .|
-|**De bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche haut** .|
+|**De gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche droite**.|
+|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche gauche**.|
+|**De haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible à l’aide de la flèche de raccourci clavier : **ALT** + **bas**.|
+|**De bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche haut**.|
 
 ## <a name="panscroll"></a>Panoramique/Défilement
 

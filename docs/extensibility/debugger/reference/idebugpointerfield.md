@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9904f02183da73df496e858fa8a81e5290a8950c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877393"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Cette interface représente un type pointeur.
@@ -41,7 +41,7 @@ IDebugPointerField : IDebugContainerField
 |------------|-----------------|
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant la cible du pointeur.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  En C/C++, un pointeur peut être un conteneur s’il est utilisé avec la notation de tableau. Par exemple, donné `char *pString` , `pString` a un type de pointeur vers `char` . `pString[3]` a le type d’un conteneur qui est un pointeur vers `char` qui fait référence au quatrième élément de ce conteneur.
 
 ## <a name="requirements"></a>Configuration requise
