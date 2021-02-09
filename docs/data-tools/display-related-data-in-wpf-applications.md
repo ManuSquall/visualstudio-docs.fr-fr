@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3467b2a3c4f49b22ab36b44ff0d3ea47d143e971
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866955"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Afficher des données associées dans des applications WPF
 
@@ -33,7 +33,7 @@ Vous pouvez créer des contrôles liés aux données qui affichent les données 
 
 ## <a name="to-create-controls-that-display-related-records"></a>Pour créer des contrôles qui affichent des enregistrements connexes
 
-1. Dans le menu **Données** , cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
+1. Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.
 
 2. Cliquez sur **Ajouter une nouvelle source de données** et suivez les étapes de l’Assistant **Configuration de source de données**.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867202"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
 
@@ -45,7 +45,7 @@ Pour effectuer cette procédure pas à pas, vous avez besoin des charges de trav
 
 ### <a name="add-a-data-source"></a>Ajouter une source de données
 
-1. Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en appuyant sur **MAJ** + **ALT** + **D** ou en sélectionnant **Afficher**  >  **Other Windows**  >  d’autres**sources de données** Windows dans la barre de menus.
+1. Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en appuyant sur **MAJ** + **ALT** + **D** ou en sélectionnant **Afficher**  >    >  d’autres **sources de données** Windows dans la barre de menus.
 
 1. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données**.
 
@@ -67,7 +67,7 @@ Pour effectuer cette procédure pas à pas, vous avez besoin des charges de trav
 
 Vous pouvez afficher la chaîne de connexion pour le fichier *SampleDatabase. mdf* en ouvrant le fenêtre Propriétés de la connexion de données :
 
-- Sélectionnez **Afficher**  >  **Explorateur d’objets SQL Server** pour ouvrir la fenêtre **Explorateur d’objets SQL Server** . Développez **(localdb)\MSSQLLocalDB**  >  **bases de données**(\MSSQLLocalDB), puis cliquez avec le bouton droit sur *SampleDatabase. mdf* et sélectionnez **Propriétés**.
+- Sélectionnez **Afficher**  >  **Explorateur d’objets SQL Server** pour ouvrir la fenêtre **Explorateur d’objets SQL Server** . Développez   >  **bases de données**(\MSSQLLocalDB), puis cliquez avec le bouton droit sur *SampleDatabase. mdf* et sélectionnez **Propriétés**.
 
 - Vous pouvez également sélectionner **Afficher**  >  **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez le Fenêtre Propriétés en développant le nœud **connexions de données** , en cliquant avec le bouton droit sur *SampleDatabase. mdf*, puis en sélectionnant **Propriétés**.
 
@@ -170,13 +170,13 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 
 2. Ouvrez le menu contextuel du nœud **tables** , sélectionnez **Actualiser**, puis développez le nœud **tables** .
 
-3. Ouvrez le menu contextuel de la table Customers, puis sélectionnez **afficher les données**de la table.
+3. Ouvrez le menu contextuel de la table Customers, puis sélectionnez **afficher les données** de la table.
 
 4. Ajoutez toutes les données que vous souhaitez pour certains clients.
 
     Vous pouvez spécifier cinq caractères de votre choix comme ID de client, mais choisissez-en au moins un que vous pouvez mémoriser pour l'utiliser ultérieurement dans cette procédure.
 
-5. Ouvrez le menu contextuel de la table Orders, puis sélectionnez **afficher les données**de la table.
+5. Ouvrez le menu contextuel de la table Orders, puis sélectionnez **afficher les données** de la table.
 
 6. Ajoutez des données pour certaines commandes.
 

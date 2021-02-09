@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e6c289038c3f8cb9d1586ae4a1f7a84b563239f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8d728df5f8af5dff5a7ea2456e1d40d47ddc7f76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866890"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Guide pratique pour ajouter, mettre à jour ou supprimer une référence de service de données WCF
 
@@ -29,7 +29,7 @@ ms.locfileid: "94436431"
 Une *référence de service* permet à un projet d’accéder à un ou plusieurs [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Utilisez la boîte de dialogue **Ajouter une référence de service** pour rechercher [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] dans la solution actuelle, localement, sur un réseau local ou sur Internet.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solutions** pour accéder au **Microsoft WCF Web Service Reference Provider** , qui vous permet de gérer les références de service de données Windows Communication Foundation (WCF).
+Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solutions** pour accéder au **Microsoft WCF Web Service Reference Provider**, qui vous permet de gérer les références de service de données Windows Communication Foundation (WCF).
 ::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -40,7 +40,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 ::: moniker range="vs-2017"
 
-1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nom du projet auquel vous souhaitez ajouter le service, puis cliquez sur **Ajouter une référence de service**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nom du projet auquel vous souhaitez ajouter le service, puis cliquez sur **Ajouter une référence de service**.
 
    **La boîte de dialogue** Ajouter une référence de service s'affiche.
 
@@ -55,14 +55,14 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Dans la liste des **services** , développez le nœud du service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.
 
-1. Dans la zone **Espace de noms** , entrez l'espace de noms que vous souhaitez utiliser pour la référence.
+1. Dans la zone **Espace de noms**, entrez l'espace de noms que vous souhaitez utiliser pour la référence.
 
 1. Cliquez sur **Ok** pour ajouter la référence au projet.
 
      Un client de service (proxy) est généré, et les métadonnées qui décrivent le service sont ajoutées au fichier *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. Dans **Explorateur de solutions** , double-cliquez ou appuyez sur le nœud **services connectés** .
+1. Dans **Explorateur de solutions**, double-cliquez ou appuyez sur le nœud **services connectés** .
 
    L’onglet **configurer les services** s’ouvre.
 
@@ -84,7 +84,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Dans la liste des **services** , développez le nœud du service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.
 
-1. Dans la zone **Espace de noms** , entrez l'espace de noms que vous souhaitez utiliser pour la référence.
+1. Dans la zone **Espace de noms**, entrez l'espace de noms que vous souhaitez utiliser pour la référence.
 
 1. Cliquez sur **Terminer** pour ajouter la référence au projet.
 
@@ -96,7 +96,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 ::: moniker range="vs-2017"
 
-1. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nom du projet auquel vous souhaitez ajouter le service, puis cliquez sur **Ajouter une référence de service**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nom du projet auquel vous souhaitez ajouter le service, puis cliquez sur **Ajouter une référence de service**.
 
     **La boîte de dialogue** Ajouter une référence de service s'affiche.
 
@@ -106,14 +106,14 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Dans la liste des **services** , développez le nœud du service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.
 
-1. Dans la zone **Espace de noms** , entrez l'espace de noms que vous souhaitez utiliser pour la référence.
+1. Dans la zone **Espace de noms**, entrez l'espace de noms que vous souhaitez utiliser pour la référence.
 
 1. Cliquez sur **Ok** pour ajouter la référence au projet.
 
     Un client de service (proxy) génère, et les métadonnées qui décrivent le service sont ajoutées au fichier *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. Dans **Explorateur de solutions** , double-cliquez ou appuyez sur le nœud **services connectés** . 
+1. Dans **Explorateur de solutions**, double-cliquez ou appuyez sur le nœud **services connectés** . 
 
    L’onglet **configurer les services** s’ouvre.
 
@@ -127,7 +127,7 @@ Vous pouvez utiliser le nœud **services connectés** dans **Explorateur de solu
 
 1. Dans la liste des **services** , développez le nœud du service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.
 
-1. Dans la zone **Espace de noms** , entrez l'espace de noms que vous souhaitez utiliser pour la référence.
+1. Dans la zone **Espace de noms**, entrez l'espace de noms que vous souhaitez utiliser pour la référence.
 
 1. Cliquez sur **Terminer** pour ajouter la référence au projet.
 
@@ -141,7 +141,7 @@ La Entity Data Model pour une [!INCLUDE[ssAstoria](../data-tools/includes/ssasto
 
 ### <a name="to-update-a-service-reference"></a>Pour mettre à jour une référence de service
 
-- Dans **Explorateur de solutions** , cliquez avec le bouton droit sur la référence de service, puis cliquez sur **mettre à jour la référence de service**.
+- Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la référence de service, puis cliquez sur **mettre à jour la référence de service**.
 
      Une boîte de dialogue de progression s’affiche lorsque la référence est mise à jour à partir de son emplacement d’origine, et le client de service est régénéré pour refléter les modifications apportées aux métadonnées.
 
@@ -151,7 +151,7 @@ Si une référence de service n’est plus utilisée, vous pouvez la supprimer d
 
 ### <a name="to-remove-a-service-reference"></a>Pour supprimer une référence de service
 
-- Dans **Explorateur de solutions** , cliquez avec le bouton droit sur la référence de service, puis cliquez sur **supprimer**.
+- Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la référence de service, puis cliquez sur **supprimer**.
 
      Le client de service sera supprimé de la solution, et les métadonnées qui décrivent le service seront supprimées du fichier *app.config* .
 

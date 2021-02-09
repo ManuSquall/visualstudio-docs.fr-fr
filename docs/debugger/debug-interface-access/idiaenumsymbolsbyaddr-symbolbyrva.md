@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7828029-f2ee-4ccd-afac-785adc60a4c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6f2f4486f943064ef4c29d16c98003aa3ff088
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaa0d07a32653d03db6ac14b7507e0073c33d4e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865124"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 Positionne l’énumérateur en effectuant une recherche par adresse virtuelle relative (RVA).
@@ -25,7 +25,7 @@ Positionne l’énumérateur en effectuant une recherche par adresse virtuelle r
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT symbolByRVA ( 
+HRESULT symbolByRVA ( 
    DWORD**      relativeVirtualAddress,
    IDiaSymbol** ppsymbol
 );
@@ -40,7 +40,7 @@ dans Adresse relative au début de l’image.
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant le symbole trouvé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a65bdca680bac7c3a5b2e6a5a671045cdef093
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f1ddf3982275429428635754c488993e2058ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865075"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 Récupère une table au moyen d’un index ou d’un nom.
@@ -25,7 +25,7 @@ Récupère une table au moyen d’un index ou d’un nom.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    VARIANT     index,
    IDiaTable** table
 );
@@ -40,10 +40,10 @@ dans Index ou nom du [IDiaTable](../../debugger/debug-interface-access/idiatable
 
 à Retourne un objet [IDiaTable](../../debugger/debug-interface-access/idiatable.md) représentant la table souhaitée.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si un variant de chaîne est spécifié, la chaîne désigne une table particulière. Le nom doit correspondre à l’un des noms de table définis dans [constantes (kit de développement logiciel de debug interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
 
 ## <a name="example"></a>Exemple

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866578"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 
@@ -47,7 +47,7 @@ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer** , vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
 
 2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
@@ -67,13 +67,13 @@ Créez un projet d' **application Windows Forms** pour C# ou Visual Basic. Attri
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
-Cette étape crée une source de données à partir de la base de données Northwind à l’aide de l’ **Assistant Configuration de source de données**. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/installing-database-systems-tools-and-samples.md).
+Cette étape crée une source de données à partir de la base de données Northwind à l’aide de l’**Assistant Configuration de source de données**. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Dans le menu **données** , sélectionnez **afficher les sources de données**.
 
    La fenêtre **Sources de données** s’ouvre.
 
-2. Dans la fenêtre **Sources de données** , sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’ **Assistant Configuration de source de données**.
+2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’**Assistant Configuration de source de données**.
 
 3. Dans l’écran **choisir un type de source de données** , sélectionnez **base de** données, puis sélectionnez **suivant**.
 
@@ -81,13 +81,13 @@ Cette étape crée une source de données à partir de la base de données North
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         - ou -
+         -ou-
 
     - Sélectionnez **Nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter/Modifier la connexion**.
 
 5. Si votre base de données requiert un mot de passe, sélectionnez l’option permettant d’inclure des données sensibles, puis sélectionnez **suivant**.
 
-6. Dans la **chaîne de connexion enregistrer dans le fichier de configuration de l’application** , sélectionnez **suivant**.
+6. Dans la **chaîne de connexion enregistrer dans le fichier de configuration de l’application**, sélectionnez **suivant**.
 
 7. Dans l’écran **choisir vos objets de base de données** , développez le nœud **tables** .
 
@@ -136,7 +136,7 @@ Vous pouvez mettre à jour la base de données en appelant les méthodes `Update
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
 
 1. Appuyez sur **F5**.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 41cf31c6cae310eb151969df0776788d6ea5b1e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866695"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Systèmes de base de données compatibles pour Visual Studio
 
@@ -31,7 +31,7 @@ Si vous utilisez des API de stockage Azure, installez les émulateurs de stockag
 
 La liste suivante répertorie certains des systèmes de base de données les plus populaires qui peuvent être utilisés dans les projets Visual Studio. La liste n’est pas exhaustive. Pour obtenir la liste des fournisseurs tiers qui proposent des fournisseurs de données ADO.NET qui permettent une intégration profonde avec les outils Visual Studio, consultez [fournisseurs de données ADO.net](/dotnet/framework/data/adonet/data-providers).
 
-## <a name="microsoft-sql-server"></a>Microsoft SQL Server
+## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
 SQL Server est l’offre de base de données phare de Microsoft. SQL Server 2016 offre des performances exceptionnelles, une sécurité avancée et des fonctionnalités de génération de rapports et d’analytique riches et intégrées. Il est fourni dans différentes éditions conçues pour différentes utilisations : de l’analyse commerciale hautement évolutive et hautes performances, à utiliser sur un seul ordinateur. SQL Server Express est une édition complète de SQL Server adaptée pour la redistribution et l’incorporation.  La base de données locale est une édition simplifiée de SQL Server Express qui ne requiert aucune configuration et s’exécute dans le processus de votre application. Vous pouvez télécharger l’un ou l’autre ou les deux produits à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). La plupart des exemples SQL de cette section utilisent SQL Server base de données locale. SQL Server Management Studio (SSMS) est une application de gestion de base de données autonome qui offre plus de fonctionnalités que celles fournies dans Visual Studio Explorateur d’objets SQL Server. Vous pouvez accéder à SSMS à partir du lien précédent.
 
@@ -41,15 +41,15 @@ Vous pouvez télécharger une version payante ou gratuite de la base de données
 
 ## <a name="mysql"></a>MySQL
 
-MySQL est un système de base de données Open source populaire qui est largement utilisé dans les entreprises et les sites Web. Les téléchargements pour MySQL, MySQL pour Visual Studio et les produits connexes se trouvent dans [MySQL sur Windows](https://www.mysql.com/why-mysql/windows/). Les tiers proposent différentes extensions Visual Studio et des applications de gestion autonomes pour MySQL. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ).
+MySQL est un système de base de données Open source populaire qui est largement utilisé dans les entreprises et les sites Web. Les téléchargements pour MySQL, MySQL pour Visual Studio et les produits connexes se trouvent dans [MySQL sur Windows](https://www.mysql.com/why-mysql/windows/). Les tiers proposent différentes extensions Visual Studio et des applications de gestion autonomes pour MySQL. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL est un système de base de données relationnel objet Open source gratuit. Pour l’installer sur Windows, vous pouvez le télécharger à partir de la [page de téléchargement de PostgreSQL](https://www.postgresql.org/download/windows/). Vous pouvez également générer PostgreSQL à partir du code source. Le système PostgreSQL Core comprend une interface en langage C. De nombreux tiers fournissent des packages NuGet pour l’utilisation de PostgreSQL à partir des applications .NET. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ). Par exemple, le package le plus populaire est fourni par [npgsql.org](http://www.npgsql.org).
+PostgreSQL est un système de base de données relationnel objet Open source gratuit. Pour l’installer sur Windows, vous pouvez le télécharger à partir de la [page de téléchargement de PostgreSQL](https://www.postgresql.org/download/windows/). Vous pouvez également générer PostgreSQL à partir du code source. Le système PostgreSQL Core comprend une interface en langage C. De nombreux tiers fournissent des packages NuGet pour l’utilisation de PostgreSQL à partir des applications .NET. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**). Par exemple, le package le plus populaire est fourni par [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite est un moteur de base de données SQL incorporé qui s’exécute dans le processus propre à l’application. Vous pouvez le télécharger à partir de la [page de téléchargement de SQLite](https://www.sqlite.org/download.html). De nombreux packages NuGet tiers pour SQLite sont également disponibles. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet ( **Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution** ).
+SQLite est un moteur de base de données SQL incorporé qui s’exécute dans le processus propre à l’application. Vous pouvez le télécharger à partir de la [page de téléchargement de SQLite](https://www.sqlite.org/download.html). De nombreux packages NuGet tiers pour SQLite sont également disponibles. Vous pouvez parcourir les offres dans le gestionnaire de package NuGet (**Outils**  >  **Gestionnaire de package NuGet**  >  **gérer les packages NuGet pour la solution**).
 
 ## <a name="firebird"></a>Firebird
 

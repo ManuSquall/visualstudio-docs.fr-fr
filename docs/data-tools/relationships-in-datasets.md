@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 92e1a03a9a72b550c77aa734c4a9ff2d0b184839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866604"
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les datasets
-Les jeux de données qui contiennent des tables de données associées utilisent des <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner les enregistrements associés les uns des autres. L’ajout de tables associées à des jeux de données à l’aide de l' **Assistant Configuration de source de données** , ou du **Concepteur de DataSet** , crée et configure l' <xref:System.Data.DataRelation> objet pour vous.
+Les jeux de données qui contiennent des tables de données associées utilisent des <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner les enregistrements associés les uns des autres. L’ajout de tables associées à des jeux de données à l’aide de l' **Assistant Configuration de source de données**, ou du **Concepteur de DataSet**, crée et configure l' <xref:System.Data.DataRelation> objet pour vous.
 
 L' <xref:System.Data.DataRelation> objet exécute deux fonctions :
 
@@ -70,9 +70,9 @@ Pour plus d’informations sur les mises à jour dans les tables de DataSet, con
 Lorsque vous créez un <xref:System.Data.DataRelation> objet, vous avez la possibilité de spécifier que la relation doit être utilisée uniquement pour appliquer des contraintes, c’est-à-dire qu’elle ne sera pas également utilisée pour accéder aux enregistrements associés. Vous pouvez utiliser cette option pour générer un jeu de données qui est légèrement plus efficace et qui contient moins de méthodes que l’autre avec la fonction related-Records. Toutefois, vous ne pourrez pas accéder aux enregistrements associés. Par exemple, une relation de contrainte uniquement vous empêche de supprimer un enregistrement parent qui possède encore des enregistrements enfants, et vous ne pouvez pas accéder aux enregistrements enfants par le biais du parent.
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Création manuelle d’une relation de données dans le Concepteur de DataSet
-Lorsque vous créez des tables de données à l’aide des outils de conception de données dans Visual Studio, les relations sont créées automatiquement si les informations peuvent être collectées à partir de la source de vos données. Si vous ajoutez manuellement des tables de données à partir de l’onglet **DataSet** de la **boîte à outils** , vous devrez peut-être créer la relation manuellement. Pour plus d’informations sur la création d' <xref:System.Data.DataRelation> objets par programme, consultez [Ajout de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
+Lorsque vous créez des tables de données à l’aide des outils de conception de données dans Visual Studio, les relations sont créées automatiquement si les informations peuvent être collectées à partir de la source de vos données. Si vous ajoutez manuellement des tables de données à partir de l’onglet **DataSet** de la **boîte à outils**, vous devrez peut-être créer la relation manuellement. Pour plus d’informations sur la création d' <xref:System.Data.DataRelation> objets par programme, consultez [Ajout de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
 
-Les relations entre les tables de données apparaissent sous forme de lignes dans le **Concepteur de DataSet** , avec une clé et un glyphe infini représentant l’aspect un-à-plusieurs de la relation. Par défaut, le nom de la relation n’apparaît pas sur l’aire de conception.
+Les relations entre les tables de données apparaissent sous forme de lignes dans le **Concepteur de DataSet**, avec une clé et un glyphe infini représentant l’aspect un-à-plusieurs de la relation. Par défaut, le nom de la relation n’apparaît pas sur l’aire de conception.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -96,7 +96,7 @@ Les relations entre les tables de données apparaissent sous forme de lignes dan
 
 8. Activez ou désactivez la case à cocher **relation imbriquée** . La sélection de cette option affecte la valeur <xref:System.Data.DataRelation.Nested%2A> à la propriété `true` et entraîne l’imbrication des lignes enfants de la relation dans la colonne parent lorsque ces lignes sont écrites sous forme de données XML ou synchronisées avec <xref:System.Xml.XmlDataDocument> . Pour plus d’informations, consultez [imbrication de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
-9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements de ces tables. Pour plus d'informations, consultez <xref:System.Data.Rule>.
+9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements de ces tables. Pour plus d’informations, consultez <xref:System.Data.Rule>.
 
 10. Cliquez sur **OK** pour créer la relation. Une ligne de relation apparaît sur le concepteur entre les deux tables.
 

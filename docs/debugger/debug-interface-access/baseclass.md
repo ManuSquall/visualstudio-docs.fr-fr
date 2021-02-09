@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9375ca35-cb91-45f5-8903-7344ee4528e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d813955c8b61965b41cd252aaa35cb7ca323234
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f0cb578e55ed5559c9ac5e88aca4db9abf31a2e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865581"
 ---
 # <a name="baseclass"></a>BaseClass
 Chaque classe de base pour un symbole de type défini par l’utilisateur (UDT) est identifiée par un enfant avec une `SymTagBaseClass` balise. La propriété [IDiaSymbol :: get_Type](../../debugger/debug-interface-access/idiasymbol-get-type.md) contient le symbole de l’UDT sous-jacent, et toutes les propriétés du type défini par l’utilisateur sous-jacent sont disponibles dans le cadre de ce symbole BaseClass.

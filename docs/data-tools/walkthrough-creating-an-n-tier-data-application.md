@@ -13,22 +13,22 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ed395c60ec16eeff6a5aac88a99698193e8bacbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866149"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : création d’une application de données multicouches
 Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d’accès aux données, une couche logique métier et des composants partagés tels que l’authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
 
 Pour séparer plusieurs couches d'une application multicouche, il est possible de créer des projets distincts pour chaque couche que vous voulez inclure dans votre application. Les datasets typés contiennent une propriété `DataSet Project` qui détermine les projets dans lesquels le code du dataset et des `TableAdapter`s générés doit intervenir.
 
-Cette procédure pas à pas décrit comment séparer le code du dataset et `TableAdapter` en projets de bibliothèque de classes discrètes à l’aide du **Concepteur de DataSet**. Une fois que vous avez séparé le code du DataSet et du TableAdapter, vous créez un [Windows Communication Foundation services et WCF Data Services dans le service Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) pour appeler la couche d’accès aux données. Enfin, vous créez un Windows Forms application en tant que couche présentation. Cette couche accède aux données à partir du service de données.
+Cette procédure pas à pas décrit comment séparer le code du dataset et `TableAdapter` en projets de bibliothèque de classes discrètes à l’aide du **Concepteur de DataSet**. Une fois que vous avez séparé le code du DataSet et du TableAdapter, vous créez un [Windows Communication Foundation services et services de données WCF dans le service Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) pour appeler la couche d’accès aux données. Enfin, vous créez un Windows Forms application en tant que couche présentation. Cette couche accède aux données à partir du service de données.
 
 Au cours de cette procédure pas à pas, vous effectuez les étapes suivantes :
 
@@ -124,7 +124,7 @@ L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont 
 
      Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-     - ou -
+     -ou-
 
      Sélectionnez **nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter une connexion** .
 
@@ -371,7 +371,7 @@ La valeur par défaut de `maxReceivedMessageSize` n’est pas assez grande pour 
 
 2. Accédez à l’attribut de taille **maxReceivedMessage** et changez la valeur en `6553600`.
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
 Exécutez l’application en appuyant sur **F5**. Les données des `Customers` tables et `Orders` sont récupérées à partir du service de données et affichées sur le formulaire.
 
 ## <a name="next-steps"></a>Étapes suivantes

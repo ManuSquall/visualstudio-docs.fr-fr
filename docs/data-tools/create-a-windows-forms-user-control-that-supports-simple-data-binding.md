@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 30f6d338b4e27677c14dfa4e5ff8793e67f4c6ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867111"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données simples
 
@@ -59,7 +59,7 @@ Pendant cette procédure pas à pas, vous allez apprendre à :
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer** , vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
 
 2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
@@ -75,27 +75,27 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 ## <a name="create-a-windows-forms-application"></a>Créer une application Windows Forms
 
-La première étape consiste à créer une **Application Windows Forms** :
+La première étape consiste à créer une **Application Windows Forms**:
 
-1. Dans Visual Studio, dans le menu **Fichier** , sélectionnez **Nouveau** > **Projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
-4. Nommez le projet **SimpleControlWalkthrough** , puis choisissez **OK**.
+4. Nommez le projet **SimpleControlWalkthrough**, puis choisissez **OK**.
 
-     Le projet **SimpleControlWalkthrough** est créé et ajouté à l’ **Explorateur de solutions**.
+     Le projet **SimpleControlWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Ajouter un contrôle utilisateur au projet
 
 Cette procédure pas à pas crée un contrôle simple pouvant être lié aux données à partir d’un **contrôle utilisateur**. Ajoutez un élément de **contrôle utilisateur** au projet **SimpleControlWalkthrough** :
 
-1. Dans le menu **Projet** , choisissez **Ajouter un contrôle utilisateur**.
+1. Dans le menu **Projet**, choisissez **Ajouter un contrôle utilisateur**.
 
 2. Tapez **PhoneNumberBox** dans la zone Nom, puis cliquez sur **Ajouter**.
 
-     Le contrôle **PhoneNumberBox** est ajouté à l’ **Explorateur de solutions** et s’ouvre dans le concepteur.
+     Le contrôle **PhoneNumberBox** est ajouté à l’**Explorateur de solutions** et s’ouvre dans le concepteur.
 
 ## <a name="design-the-phonenumberbox-control"></a>Concevoir le contrôle PhoneNumberBox
 
@@ -111,7 +111,7 @@ Cette procédure pas à pas se développe sur le existant <xref:System.Windows.F
 
 Pour des contrôles simples prenant en charge la liaison de données, implémentez <xref:System.ComponentModel.DefaultBindingPropertyAttribute> :
 
-1. Basculez le contrôle **PhoneNumberBox** en mode Code. (Dans le menu **Affichage** , choisissez **Code**.)
+1. Basculez le contrôle **PhoneNumberBox** en mode Code. (Dans le menu **Affichage**, choisissez **Code**.)
 
 2. Remplacez le code dans **PhoneNumberBox** par ce qui suit :
 
@@ -128,7 +128,7 @@ Cette étape utilise l’Assistant **configuration de source de données** pour 
 
 2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
-3. Dans la page **Choisir un type de source de données** , sélectionnez **Base de données** , puis cliquez sur **Suivant**.
+3. Dans la page **Choisir un type de source de données**, sélectionnez **Base de données**, puis cliquez sur **Suivant**.
 
 4. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
@@ -140,7 +140,7 @@ Cette étape utilise l’Assistant **configuration de source de données** pour 
 
 6. Dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **suivant**.
 
-7. Dans la page **Choisir vos objets de base de données** , développez le nœud **Tables**.
+7. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
 
 8. Sélectionnez la table `Customers`, puis cliquez sur **Terminer**.
 

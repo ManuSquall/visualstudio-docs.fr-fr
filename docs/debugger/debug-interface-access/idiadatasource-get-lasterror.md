@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf08850b-8b75-4e8c-90bd-bd0214756f99
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 231c6b082f7a641ee78d10003d544c3fb9644c1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 950e6453a75878cd871532c2e5557e2e6314c932
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865292"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 Récupère le nom de fichier de la dernière erreur de chargement.
@@ -35,7 +35,7 @@ HRESULT get_lastError (
 
 à Retourne une chaîne qui contient le nom de fichier. pdb associé à la dernière erreur de chargement.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Retourne le dernier code d’erreur provoqué par une opération de chargement. Retourne `E_INVALIDARG` si le `pRetVal` paramètre a la valeur `NULL` .
 
 ## <a name="example"></a>Exemple

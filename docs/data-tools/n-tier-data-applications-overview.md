@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c4a25cc340216e3410e0ca4b6cfabec77a73662e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866682"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d’ensemble des applications de données multiniveaux
 Les applications de données *multicouches* sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelés « applications distribuées » et « applications multicouches », les applications multicouches séparent le traitement en niveaux discrets distribués entre le client et le serveur. Lorsque vous développez des applications qui accèdent à des données, vous devez disposer d’une séparation claire entre les différents niveaux qui composent l’application.
@@ -42,7 +42,7 @@ La *couche présentation* est le niveau dans lequel les utilisateurs interagisse
 
 - Représentations d’objets de données, telles que les [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) les classes d’entité à utiliser dans la couche de présentation.
 
-La couche présentation accède généralement à la couche intermédiaire à l’aide d’une référence de service (par exemple, un [Windows Communication Foundation services et WCF Data Services dans l’application Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ). La couche présentation n’accède pas directement à la couche données. La couche présentation communique avec la couche données par le biais du composant d’accès aux données de la couche intermédiaire.
+La couche présentation accède généralement à la couche intermédiaire à l’aide d’une référence de service (par exemple, un [Windows Communication Foundation services et services de données WCF dans l’application Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ). La couche présentation n’accède pas directement à la couche données. La couche présentation communique avec la couche données par le biais du composant d’accès aux données de la couche intermédiaire.
 
 ## <a name="middle-tier"></a>Niveau intermédiaire
 La couche *intermédiaire* est la couche que la couche de présentation et la couche de données utilisent pour communiquer entre elles. Les composants de niveau intermédiaire classiques sont les suivants :

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b68e2e68-6483-4936-bf97-1b0a13cb75e2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b48e1a0f5f0655c80e501740eae5fc4152f998a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33fb0719ee1c4f472b3c139e7e89a918884cf95b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865012"
 ---
 # <a name="idiaframedataget_addressoffset"></a>IDiaFrameData::get_addressOffset
 Récupère la partie d’offset de l’adresse de code pour le frame.
@@ -25,7 +25,7 @@ Récupère la partie d’offset de l’adresse de code pour le frame.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_addressOffset ( 
 
 à Retourne la partie d’offset de l’adresse de code du frame.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

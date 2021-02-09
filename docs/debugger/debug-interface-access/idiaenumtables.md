@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 016190c5-09e4-48f2-bf60-9b02603a03e0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f1e2997ebf6916c684751b3d19f68cf044d992f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f753ec5d4dcfba7f41d8e0d6e566fed9b7910ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865058"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
 Énumère les différentes tables contenues dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85467455"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumTables : IUnknown
+IDiaEnumTables : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -41,7 +41,7 @@ IDiaEnumTables : IUnknown
 |[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant la méthode [IDiaSession :: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) .

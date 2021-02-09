@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a40caf8f2f974386f43ba9aeecfbdc4c71c766
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9409c7a3e30f080df4a821cdd6f0003a016ea31f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864935"
 ---
 # <a name="idiaframedataget_systemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Récupère un indicateur qui signale si la gestion des exceptions système est en vigueur.
@@ -25,7 +25,7 @@ Récupère un indicateur qui signale si la gestion des exceptions système est e
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_systemExceptionHandling ( 
+HRESULT get_systemExceptionHandling ( 
    BOOL* pRetVal
 );
 ```
@@ -35,10 +35,10 @@ HRESULT get_systemExceptionHandling ( 
 
 à Retourne `TRUE` si la gestion des exceptions système est activée ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La gestion des exceptions système est plus communément connue sous le nom de gestion structurée des exceptions.
 
  Pour déterminer si la gestion des exceptions C++ est activée, appelez la méthode [IDiaFrameData :: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) .

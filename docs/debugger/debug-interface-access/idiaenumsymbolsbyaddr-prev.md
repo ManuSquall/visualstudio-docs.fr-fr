@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: da3b3dca-68cb-4cb0-b25c-e28a1ffe49d3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe7ced486524c7409532e140f48f841b5e55078
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 352e9b1892285d8cc33c86c595462da84273eac1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467644"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865131"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Récupère les symboles précédents dans l’ordre par adresse.
@@ -25,7 +25,7 @@ Récupère les symboles précédents dans l’ordre par adresse.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Prev ( 
+HRESULT Prev ( 
    ULONG        celt,
    IDiaSymbol** rgelt,
    ULONG*       pceltFetched
@@ -45,10 +45,10 @@ dans Nombre de symboles dans l’énumérateur à récupérer.
 
 à Retourne le nombre de symboles dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a pas de symboles précédents. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.
 
 ## <a name="see-also"></a>Voir aussi

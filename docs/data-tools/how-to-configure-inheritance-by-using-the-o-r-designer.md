@@ -7,22 +7,22 @@ ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4bc36bca3cc5bd13b3dcfad5ebed66eca7eeb019
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fee2c42e6ec84280f4090a8ae1dfea83a81ee369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866825"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Guide pratique pour configurer l’héritage à l’aide du Concepteur O/R
-Le **Concepteur Objet Relationnel** ( **Concepteur O/R** ) prend en charge le concept d’héritage de table unique, car il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.
+Le **Concepteur Objet Relationnel** (**Concepteur O/R**) prend en charge le concept d’héritage de table unique, car il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.
 
 Prenons l’exemple d’une `Persons` table qui contient tout le monde employé par une société. Certaines personnes sont des employés et d'autres des responsables. La `Persons` table contient une colonne nommée `EmployeeType` qui a une valeur de 1 pour les responsables et une valeur de 2 pour les employés ; il s’agit de la colonne de discriminateur. Dans ce scénario, vous pouvez créer une sous-classe d'employés et remplir la classe avec uniquement des enregistrements ayant une valeur `EmployeeType` de 2. Vous pouvez également supprimer les colonnes qui ne s'appliquent à aucune de ces classes.
 
-La création d'un modèle objet qui utilise l'héritage (et correspond aux données relationnelles) peut prêter à confusion. La procédure suivante décrit les étapes requises pour configurer l’héritage avec le **Concepteur O/R**. Les étapes génériques suivantes sans référence à une table et des colonnes existantes peuvent être difficiles, donc une procédure pas à pas qui utilise des données est fournie. Pour obtenir des instructions détaillées sur la configuration de l’héritage à l’aide du **Concepteur o/r** , consultez [procédure pas à pas : création de LINQ to SQL classes à l’aide de l’héritage de table unique (concepteur o/r)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
+La création d'un modèle objet qui utilise l'héritage (et correspond aux données relationnelles) peut prêter à confusion. La procédure suivante décrit les étapes requises pour configurer l’héritage avec le **Concepteur O/R**. Les étapes génériques suivantes sans référence à une table et des colonnes existantes peuvent être difficiles, donc une procédure pas à pas qui utilise des données est fournie. Pour obtenir des instructions détaillées sur la configuration de l’héritage à l’aide du **Concepteur o/r**, consultez [procédure pas à pas : création de LINQ to SQL classes à l’aide de l’héritage de table unique (concepteur o/r)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
 
 ## <a name="to-create-inherited-data-classes"></a>Pour créer des classes de données héritées
 
@@ -32,7 +32,7 @@ La création d'un modèle objet qui utilise l'héritage (et correspond aux donn�
 
 3. Faites glisser une deuxième copie de la table vers le **Concepteur O/R** et renommez-la. C'est la classe dérivée, ou sous-classe.
 
-4. Cliquez sur **Héritage** sous l’onglet **Concepteur Objet Relationnel** de la **Boîte à outils** , puis sur la sous-classe (la table que vous avez renommée) et connectez-la à la classe de base.
+4. Cliquez sur **Héritage** sous l’onglet **Concepteur Objet Relationnel** de la **Boîte à outils**, puis sur la sous-classe (la table que vous avez renommée) et connectez-la à la classe de base.
 
     > [!NOTE]
     > Cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l’étape 3, puis cliquez sur la première classe que vous avez créée à l’étape 2. La flèche sur la ligne d’héritage pointe vers la première classe.

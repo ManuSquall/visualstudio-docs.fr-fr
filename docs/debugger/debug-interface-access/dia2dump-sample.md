@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fe6d65e70399ccac5b9ef4e2f1234ef4e3698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fee6f04b3ee0aefe0aac99f8079e2f31733ce08b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865418"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump, exemple
 
@@ -44,7 +44,7 @@ Par défaut, le répertoire d’installation est un répertoire protégé. Cela 
 
 1. Ouvrez la boîte de dialogue **Pages de propriété** du projet. Pour plus d’informations, consultez [Utilisation des propriétés de projet](/cpp/build/working-with-project-properties).
 
-1. Ouvrez la page de propriétés général de **Propriétés de configuration**  >  **C/C++**  >  **General** .
+1. Ouvrez la page de propriétés général de **Propriétés de configuration**  >  **C/C++**  >   .
 
 1. Dans la propriété **autres répertoires Include** , choisissez le contrôle DropDown, puis choisissez **modifier**.
 
@@ -64,13 +64,13 @@ Par défaut, le répertoire d’installation est un répertoire protégé. Cela 
 
 ## <a name="run-the-dia2dump-sample"></a>Exécuter l’exemple Dia2Dump
 
-Dia2Dump.exe s’appuie sur le serveur COM*version*. dll MSDIA pour fournir ses services. À compter de Visual Studio 2015, la version est msdia140.dll. Si le serveur COM MSDIA*version*. dll n’est pas initialisé, vous devez l’inscrire pour que dia2dump.exe puisse fonctionner. Le répertoire DIA SDK possède un sous-répertoire bin qui contient la version x86 de la DLL. Une version pour les machines d’architecture x64 est dans bin\amd64, et une version pour ARM est dans bin\arm. Pour inscrire la dll, ouvrez une fenêtre d’invite de commandes développeur avec élévation de privilèges, puis accédez au répertoire qui contient la version de votre architecture d’ordinateur. Entrez la commande `regsvr32 msdia140.dll` pour inscrire le serveur com.
+Dia2Dump.exe s’appuie sur le serveur COM *version*. dll MSDIA pour fournir ses services. À compter de Visual Studio 2015, la version est msdia140.dll. Si le serveur COM MSDIA *version*. dll n’est pas initialisé, vous devez l’inscrire pour que dia2dump.exe puisse fonctionner. Le répertoire DIA SDK possède un sous-répertoire bin qui contient la version x86 de la DLL. Une version pour les machines d’architecture x64 est dans bin\amd64, et une version pour ARM est dans bin\arm. Pour inscrire la dll, ouvrez une fenêtre d’invite de commandes développeur avec élévation de privilèges, puis accédez au répertoire qui contient la version de votre architecture d’ordinateur. Entrez la commande `regsvr32 msdia140.dll` pour inscrire le serveur com.
 
 ### <a name="to-run-the-sample"></a>Exécution de l'exemple
 
 1. Ouvrez une invite de commandes et accédez au répertoire qui contient les dia2dump.exe que vous avez générés.
 
-1. Entrez la commande `dia2dump filename` où *filename* est le nom d’un fichier PDB à examiner. Si le fichier PDB se trouve dans un autre répertoire, utilisez le chemin d’accès complet au fichier en tant que *nom*de fichier. Cette commande répertorie toutes les données du fichier PDB.
+1. Entrez la commande `dia2dump filename` où *filename* est le nom d’un fichier PDB à examiner. Si le fichier PDB se trouve dans un autre répertoire, utilisez le chemin d’accès complet au fichier en tant que *nom* de fichier. Cette commande répertorie toutes les données du fichier PDB.
 
 1. Dia2Dump offre d’autres options pour afficher uniquement les informations sélectionnées. Utilisez la `dia2dump -?` commande pour répertorier toutes les options disponibles.
 

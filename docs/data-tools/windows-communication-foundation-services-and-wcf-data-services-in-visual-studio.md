@@ -1,6 +1,6 @@
 ---
-title: Windows Communication Foundation et WCF Data Services
-description: Explorez les services Windows Communication Foundation (WCF) et les WCF Data Services dans Visual Studio, afin de pouvoir créer des applications distribuées.
+title: Windows Communication Foundation et Services de données WCF
+description: Explorez les services Windows Communication Foundation (WCF) et les Services de données WCF dans Visual Studio, afin de pouvoir créer des applications distribuées.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
@@ -34,27 +34,27 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: fb5ace269d7770d0e7d360734268d3e7adfda319
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866123"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 
-Visual Studio fournit des outils pour l’utilisation de Windows Communication Foundation (WCF) et WCF Data Services, des technologies Microsoft pour la création d’applications distribuées. Cette rubrique fournit une introduction aux services du point de vue de Visual Studio. Pour obtenir la documentation complète, consultez [WCF Data Services 4,5](/dotnet/framework/data/wcf/index).
+Visual Studio fournit des outils pour l’utilisation de Windows Communication Foundation (WCF) et Services de données WCF, des technologies Microsoft pour la création d’applications distribuées. Cette rubrique fournit une introduction aux services du point de vue de Visual Studio. Pour obtenir la documentation complète, consultez [Services de données WCF 4,5](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>Qu’est-ce que WCF ?
 
 Windows Communication Foundation (WCF) est une infrastructure unifiée pour la création d’applications distribuées sécurisées, fiables, transactionnelles et interopérables. Il remplace les anciennes technologies de communication interprocessus, telles que les services Web ASMX, .NET Remoting, Enterprise Services (DCOM) et MSMQ. WCF réunit les fonctionnalités de toutes ces technologies dans le cadre d’un modèle de programmation unifié. Cela simplifie l’expérience du développement d’applications distribuées.
 
-### <a name="what-are-wcf-data-services"></a>Que sont les WCF Data Services
+### <a name="what-are-wcf-data-services"></a>Que sont les Services de données WCF
 
-WCF Data Services est une implémentation de la norme de protocole OData (Open Data).  WCF Data Services vous permet d’exposer des données tabulaires sous la forme d’un ensemble d’API REST, ce qui vous permet de retourner des données à l’aide de verbes HTTP standard, tels que obtenir, poster, PUT ou DELETE. Côté serveur, WCF Data Services sont remplacés par [API Web ASP.net](https://dotnet.microsoft.com/apps/aspnet/apis) pour la création de nouveaux services OData. La bibliothèque cliente WCF Data Services continue d’être un bon choix pour l’utilisation des services OData dans une application .net à partir de Visual Studio (**projet**  >  **Ajouter une référence de service**). Pour plus d’informations, consultez [WCF Data Services 4.5](/dotnet/framework/data/wcf).
+Services de données WCF est une implémentation de la norme de protocole OData (Open Data).  Services de données WCF vous permet d’exposer des données tabulaires sous la forme d’un ensemble d’API REST, ce qui vous permet de retourner des données à l’aide de verbes HTTP standard, tels que obtenir, poster, PUT ou DELETE. Côté serveur, Services de données WCF sont remplacés par [API Web ASP.net](https://dotnet.microsoft.com/apps/aspnet/apis) pour la création de nouveaux services OData. La bibliothèque cliente services de données WCF continue d’être un bon choix pour l’utilisation des services OData dans une application .net à partir de Visual Studio (**projet**  >  **Ajouter une référence de service**). Pour plus d’informations, consultez [WCF Data Services 4.5](/dotnet/framework/data/wcf).
 
 ### <a name="wcf-programming-model"></a>Modèle de programmation WCF
 
@@ -173,7 +173,7 @@ Dans ce cas, vous pouvez spécifier le `endpointConfigurationName` en tant que p
 
      Si la référence de service fournit plusieurs points de terminaison, il y aura au moins deux `<Endpoint` balises.
 
-4. À l’intérieur de la `<EndPoint>` balise, vous trouverez un `name="` *SomeService* `"` paramètre SomeService (où *SomeService* représente un nom de point de terminaison). Il s’agit du nom du point de terminaison qui peut être passé à la `endpointConfigurationName As String` surcharge d’un constructeur pour une référence de service.
+4. À l’intérieur de la `<EndPoint>` balise, vous trouverez un `name="`  `"` paramètre SomeService (où *SomeService* représente un nom de point de terminaison). Il s’agit du nom du point de terminaison qui peut être passé à la `endpointConfigurationName As String` surcharge d’un constructeur pour une référence de service.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Comment : appeler une méthode de service de façon asynchrone
 
@@ -257,7 +257,7 @@ Pour éviter ce problème, les types des assemblys référencés sont partagés 
 | Titre | Description |
 | - | - |
 | [Procédure pas à pas : création d’un service WPF simple dans Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fournit une démonstration pas à pas de la création et de l’utilisation des services WCF dans Visual Studio. |
-| [Procédure pas à pas : création d’un service de données WCF avec WPF et Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fournit une démonstration pas à pas de la création et de l’utilisation de WCF Data Services dans Visual Studio. |
+| [Procédure pas à pas : création d’un service de données WCF avec WPF et Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fournit une démonstration pas à pas de la création et de l’utilisation de Services de données WCF dans Visual Studio. |
 | [Utilisation des outils de développement WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Explique comment créer et tester des services WCF dans Visual Studio. |
 | | [Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [Dépannage des références de service](../data-tools/troubleshooting-service-references.md) | Présente des erreurs courantes qui peuvent se produire avec les références de service et comment les empêcher. |
@@ -265,7 +265,7 @@ Pour éviter ce problème, les types des assemblys référencés sont partagés 
 | [Procédure pas à pas : création d’une application de données multicouches](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fournit des instructions pas à pas pour créer un dataset typé et diviser le code du TableAdapter et du dataset en plusieurs projets. |
 | [Configurer la référence de service, boîte de dialogue](../data-tools/configure-service-reference-dialog-box.md) | Décrit les éléments de l’interface utilisateur de la boîte de dialogue **configurer la référence de service** . |
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

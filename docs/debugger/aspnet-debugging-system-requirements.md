@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 8ab32e855ee93ceb328bc33340597ce65e3ee871
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866097"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : configuration requise
 Cette rubrique décrit les conditions de sécurité et les logiciels requis pour les scénarios de débogage de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37d3dcdf-e4fa-4354-b5e1-8843566b52ac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 92062883ea97fdc6251ffa600e31230fb448f73b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 479534179d1dc54c84ebb2c53647272112dea77b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865103"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Énumère par adresse les différents symboles contenus dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85467581"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumSymbolsByAddr : IUnknown
+IDiaEnumSymbolsByAddr : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -40,7 +40,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumSymbolsByAddr` .
 |[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Récupère les symboles précédents dans l’ordre par adresse. Met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Effectue une copie d’un objet.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette interface fournit des symboles regroupés par adresse. Pour utiliser des symboles regroupés par type, par exemple `SymTagUDT` (type défini par l’utilisateur) ou `SymTagBaseClass` , utilisez l’interface [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

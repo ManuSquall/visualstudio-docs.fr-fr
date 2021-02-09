@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Visual Studio], complex data binding
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 25bdda6a1b62f47c752a2975fa3acfd1379a470c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867145"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexes
 
@@ -57,7 +57,7 @@ Au cours de cette procédure pas à pas, vous apprendrez à :
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer** , vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
 
 1. Installez l’exemple de base de données Northwind en procédant comme suit :
 
@@ -77,13 +77,13 @@ La première étape consiste à créer un projet d' **application Windows Forms*
 
 ## <a name="add-a-user-control-to-the-project"></a>Ajouter un contrôle utilisateur au projet
 
-Étant donné que cette procédure pas à pas crée un contrôle complexe pouvant être lié aux données à partir d’un **contrôle utilisateur** , ajoutez un élément de **contrôle utilisateur** au projet :
+Étant donné que cette procédure pas à pas crée un contrôle complexe pouvant être lié aux données à partir d’un **contrôle utilisateur**, ajoutez un élément de **contrôle utilisateur** au projet :
 
-1. Dans le menu **Projet** , choisissez **Ajouter un contrôle utilisateur**.
+1. Dans le menu **Projet**, choisissez **Ajouter un contrôle utilisateur**.
 
-1. Tapez **ComplexDataGridView** dans la zone **Nom** , puis cliquez sur **Ajouter**.
+1. Tapez **ComplexDataGridView** dans la zone **Nom**, puis cliquez sur **Ajouter**.
 
-    Le contrôle **ComplexDataGridView** est ajouté à l’ **Explorateur de solutions** et s’ouvre dans le concepteur.
+    Le contrôle **ComplexDataGridView** est ajouté à l’**Explorateur de solutions** et s’ouvre dans le concepteur.
 
 ## <a name="design-the-complexdatagridview-control"></a>Concevoir le contrôle ComplexDataGridView
 
@@ -93,7 +93,7 @@ Pour ajouter un <xref:System.Windows.Forms.DataGridView> au contrôle utilisateu
 
 Pour des contrôles complexes prenant en charge la liaison de données, vous pouvez implémenter l’attribut<xref:System.ComponentModel.ComplexBindingPropertiesAttribute> :
 
-1. Basculez le contrôle **ComplexDataGridView** en mode Code. (Dans le menu **Affichage** , choisissez **Code**.)
+1. Basculez le contrôle **ComplexDataGridView** en mode Code. (Dans le menu **Affichage**, choisissez **Code**.)
 
 1. Remplacez le code de `ComplexDataGridView` par le code suivant :
 
@@ -112,7 +112,7 @@ Utilisez l’Assistant **configuration de source de données** pour créer une s
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
-4. Dans la page **Choisir votre connexion de données** , effectuez l’une des opérations suivantes :
+4. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
 
    - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
@@ -122,7 +122,7 @@ Utilisez l’Assistant **configuration de source de données** pour créer une s
 
 6. Dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **suivant**.
 
-7. Dans la page **Choisir vos objets de base de données** , développez le nœud **Tables**.
+7. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
 
 8. Sélectionnez la table `Customers`, puis cliquez sur **Terminer**.
 

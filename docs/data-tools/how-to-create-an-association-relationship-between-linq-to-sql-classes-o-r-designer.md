@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96932dca3d7f8799c316e05dc36c3f38a0e8110f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a4a13de7c6d9f9627332852be26356f26109c92d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866838"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Comment : créer une association entre des classes LINQ to SQL (Concepteur O/R)
 Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sont analogues aux relations entre les tables dans une base de données. Vous pouvez créer des associations entre des classes d’entité en utilisant la boîte de dialogue **Éditeur d’associations**.
@@ -23,22 +23,22 @@ Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../data-tool
 Vous devez sélectionner une classe parente et une classe enfant quand vous utilisez la boîte de dialogue **Éditeur d’associations** pour créer une association. La classe parente est la classe d'entité qui contient la clé primaire ; la classe enfant est la classe d'entité qui contient la clé étrangère. Par exemple, si des classes d’entité ont été créées et sont mappées aux `Northwind Customers` `Orders` tables et, la classe est la classe `Customer` parente et la classe est `Order` la classe enfant.
 
 > [!NOTE]
-> Lorsque vous faites glisser des tables à partir de **Explorateur de serveurs** ou **explorateur de base de données** vers le **Concepteur Objet Relationnel** ( **Concepteur O/R** ), les associations sont créées automatiquement en fonction des relations de clé étrangère existantes dans la base de données.
+> Lorsque vous faites glisser des tables à partir de **Explorateur de serveurs** ou **explorateur de base de données** vers le **Concepteur Objet Relationnel** (**Concepteur O/R**), les associations sont créées automatiquement en fonction des relations de clé étrangère existantes dans la base de données.
 
 ## <a name="association-properties"></a>Propriétés d’association
-Après avoir créé une association, quand vous sélectionnez l’association dans le **Concepteur O/R** , la fenêtre **Propriétés** contient des propriétés configurables. (L’Association est la ligne entre les classes connexes.) Le tableau suivant fournit des descriptions pour les propriétés d’une association.
+Après avoir créé une association, quand vous sélectionnez l’association dans le **Concepteur O/R**, la fenêtre **Propriétés** contient des propriétés configurables. (L’Association est la ligne entre les classes connexes.) Le tableau suivant fournit des descriptions pour les propriétés d’une association.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Cardinalité**|Détermine s'il s'agit d'une l'association est un-à-plusieurs ou un-à-un.|
-|**Propriété enfant**|Spécifie s’il faut créer, dans le parent, une propriété qui est une collection ou une référence aux enregistrements enfants sur le côté clé étrangère de l’association. Par exemple, dans l’association entre `Customer` et `Order` , si la **propriété enfant** a la valeur **true** , une propriété nommée `Orders` est créée sur la classe parente.|
+|**Propriété enfant**|Spécifie s’il faut créer, dans le parent, une propriété qui est une collection ou une référence aux enregistrements enfants sur le côté clé étrangère de l’association. Par exemple, dans l’association entre `Customer` et `Order` , si la **propriété enfant** a la valeur **true**, une propriété nommée `Orders` est créée sur la classe parente.|
 |**Propriété parent**|Propriété de la classe enfant qui fait référence à la classe parente associée. Par exemple, dans l’association entre `Customer` et `Order` , une propriété nommée `Customer` qui fait référence au client associé pour une commande est créée sur la `Order` classe.|
 |**Propriétés participantes**|Affiche les propriétés d’association et fournit un bouton de **sélection** (…) qui rouvre la boîte de dialogue **Éditeur d’associations**.|
 |**Unique**|Spécifie si les colonnes cibles étrangères ont une contrainte d'unicité.|
 
 ## <a name="to-create-an-association-between-entity-classes"></a>Pour créer une association entre des classes d'entité
 
-1. Cliquez avec le bouton droit sur la classe d’entité qui représente la classe parente dans l’association, pointez sur **Ajouter** , puis cliquez sur **Association**.
+1. Cliquez avec le bouton droit sur la classe d’entité qui représente la classe parente dans l’association, pointez sur **Ajouter**, puis cliquez sur **Association**.
 
 2. Vérifiez que la **Classe parente** correcte est sélectionnée dans la boîte de dialogue **Éditeur d’associations**.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d94a1068-f53f-44b5-b6fb-00dec361a7f2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed61f8ffc95d0004213483d5b5d507c45ef2647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd56e200ffe382cf8803598d9a1006403aeb393
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865257"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Ouvre et prépare les données de débogage associées au fichier. exe/. dll.
@@ -45,7 +45,7 @@ pCallback
 
 dans `IUnknown` Interface pour un objet qui prend en charge une interface de rappel de débogage, telle que [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)et/ou les interfaces [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant présente certains des codes d’erreur possibles pour cette méthode.
 
 |Valeur|Description|
@@ -57,7 +57,7 @@ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tab
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 L’en-tête debug du fichier. exe/. dll nomme l’emplacement des données de débogage associé.
 
 Cette méthode lit l’en-tête de débogage, puis recherche et prépare les données de débogage. La progression de la recherche peut éventuellement être signalée et contrôlée par le biais de rappels. Par exemple, [IDiaLoadCallback :: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) est appelé lorsque la `IDiaDataSource::loadDataForExe` méthode recherche et traite un répertoire de débogage.

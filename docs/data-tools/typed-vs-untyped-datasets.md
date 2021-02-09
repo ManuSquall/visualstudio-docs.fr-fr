@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866331"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Datasets typés et non typés
 Un DataSet typé est un DataSet qui est dérivé d’abord de la classe de base, <xref:System.Data.DataSet> puis qui utilise les informations de la **Concepteur de DataSet**, qui est stockée dans un fichier. xsd, pour générer une nouvelle classe DataSet fortement typée. Les informations du schéma (tables, colonnes, etc.) sont générées et compilées dans cette nouvelle classe DataSet sous la forme d’un ensemble d’objets et de propriétés de première classe. Étant donné qu’un DataSet typé hérite de la classe de base <xref:System.Data.DataSet> , la classe typée utilise toutes les fonctionnalités de la <xref:System.Data.DataSet> classe et peut être utilisée avec les méthodes qui prennent une instance d’une <xref:System.Data.DataSet> classe comme paramètre.

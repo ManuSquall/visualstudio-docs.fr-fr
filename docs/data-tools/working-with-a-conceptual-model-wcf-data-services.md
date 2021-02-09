@@ -1,6 +1,6 @@
 ---
 title: Utilisation d’un modèle conceptuel (services de données WCF)
-description: Utilisez un modèle conceptuel dans WCF Data Services. Interroger des données à l’aide d’objets au lieu de les traduire entre les schémas de base de données et les modèles d’objet.
+description: Utilisez un modèle conceptuel dans Services de données WCF. Interroger des données à l’aide d’objets au lieu de les traduire entre les schémas de base de données et les modèles d’objet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866110"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Utiliser un modèle conceptuel (WCF Data Services)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Utiliser un modèle conceptuel (Services de données WCF)
 
 Lorsque vous utilisez un modèle conceptuel pour décrire les données d’une base de données, vous pouvez interroger les données via vos objets au lieu de passer d’un schéma de base de données à un modèle d’objet.
 
-Vous pouvez utiliser des modèles conceptuels avec des applications WCF Data Services. Les rubriques suivantes montrent comment interroger des données via un modèle conceptuel.
+Vous pouvez utiliser des modèles conceptuels avec des applications Services de données WCF. Les rubriques suivantes montrent comment interroger des données via un modèle conceptuel.
 
 | Rubrique | Description |
 | - | - |
@@ -34,7 +34,7 @@ Vous pouvez utiliser des modèles conceptuels avec des applications WCF Data Ser
 
 Lorsque vous utilisez un modèle conceptuel, vous pouvez définir le type de données valide dans la langue qui correspond à votre domaine. Vous pouvez définir des données valides dans le modèle, ou vous pouvez ajouter la validation aux opérations que vous effectuez sur une entité ou un service de données.
 
-Les rubriques suivantes montrent comment ajouter la validation aux applications WCF Data Services.
+Les rubriques suivantes montrent comment ajouter la validation aux applications Services de données WCF.
 
 |Rubrique|Description|
 |-----------|-----------------|

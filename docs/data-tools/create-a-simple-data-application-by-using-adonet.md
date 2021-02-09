@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867189"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
@@ -49,7 +49,7 @@ Créez l’exemple de base de données en procédant comme suit :
 
 3. Dans la zone de texte **nom du serveur** , entrez **(\mssqllocaldb)**.
 
-4. Dans la zone **de texte nom de la nouvelle base de données** , entrez **Sales** , puis choisissez **OK**.
+4. Dans la zone **de texte nom de la nouvelle base de données** , entrez **Sales**, puis choisissez **OK**.
 
      La base de données des **ventes** vide est créée et ajoutée au nœud Connexions de données dans Explorateur de serveurs.
 
@@ -124,10 +124,10 @@ Créez l’exemple de base de données en procédant comme suit :
 ## <a name="store-the-connection-string"></a>Stocker la chaîne de connexion
 Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stockez la chaîne dans le fichier *App.config* de votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.
 
-Vous pouvez trouver la chaîne de connexion en cliquant avec le bouton droit sur la connexion de données de **vente** dans **Explorateur de serveurs** et en choisissant **Propriétés**. Recherchez la propriété **ConnectionString** , puis utilisez **CTRL** + **A** , **CTRL** + **C** pour sélectionner et copier la chaîne dans le presse-papiers.
+Vous pouvez trouver la chaîne de connexion en cliquant avec le bouton droit sur la connexion de données de **vente** dans **Explorateur de serveurs** et en choisissant **Propriétés**. Recherchez la propriété **ConnectionString** , puis utilisez **CTRL** + **A**, **CTRL** + **C** pour sélectionner et copier la chaîne dans le presse-papiers.
 
-1. Si vous utilisez C#, dans **Explorateur de solutions** , développez le nœud **Propriétés** sous le projet, puis ouvrez le fichier **Settings. Settings** .
-    Si vous utilisez Visual Basic, dans **Explorateur de solutions** , cliquez sur **Afficher tous les fichiers** , développez le nœud **mon projet** , puis ouvrez le fichier **Settings. Settings** .
+1. Si vous utilisez C#, dans **Explorateur de solutions**, développez le nœud **Propriétés** sous le projet, puis ouvrez le fichier **Settings. Settings** .
+    Si vous utilisez Visual Basic, dans **Explorateur de solutions**, cliquez sur **Afficher tous les fichiers**, développez le nœud **mon projet** , puis ouvrez le fichier **Settings. Settings** .
 
 2. Dans la colonne **nom** , entrez `connString` .
 
@@ -150,9 +150,9 @@ Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le bouton *
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Faire du formulaire Navigation le formulaire de démarrage
 
-Si vous utilisez C#, dans l’ **Explorateur de solutions** , ouvrez **Program.cs** , puis remplacez la ligne `Application.Run` par `Application.Run(new Navigation());`
+Si vous utilisez C#, dans l’**Explorateur de solutions**, ouvrez **Program.cs**, puis remplacez la ligne `Application.Run` par `Application.Run(new Navigation());`
 
-Si vous utilisez Visual Basic, dans **Explorateur de solutions** , ouvrez la fenêtre **Propriétés** , sélectionnez l’onglet **application** , puis sélectionnez **SimpleDataApp. navigation** dans la liste **formulaire de démarrage** .
+Si vous utilisez Visual Basic, dans **Explorateur de solutions**, ouvrez la fenêtre **Propriétés** , sélectionnez l’onglet **application** , puis sélectionnez **SimpleDataApp. navigation** dans la liste **formulaire de démarrage** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements générés automatiquement
 
