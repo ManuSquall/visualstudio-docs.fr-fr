@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f987d8dc6decf90e44eef0123f6ad4fc194805
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c964cda5cbe2903cf9511659b9a8f9bfb9f4aad6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884518"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.
@@ -37,7 +37,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 |File d'attente Direct3D 12|Color|
 |-----------------------|-----------|
 |File d'attente de rendu|Vert|
-|File d'attente de calcul|Jaune|
+|File d'attente de calcul|Yellow|
 |File d'attente de copie|Orange|
 
  Dans la mesure où Direct3D 11 n'expose pas plusieurs files d'attente, les événements ne sont pas affichés sous forme d'événements à code de couleurs dans la liste des événements quand vous travaillez sur une capture d'une application Direct3D 11.

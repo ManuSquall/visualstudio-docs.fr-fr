@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 551f929e4d42b208dd222f052b27720edb273761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62950591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885766"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Aide dans Outil R pour Visual Studio
 
@@ -24,7 +24,7 @@ L’aide R est intégrée directement à la fenêtre interactive de Visual Stud
 > [!Tip]
 > À l’instar des autres fenêtres dans Visual Studio, vous pouvez réorganiser et ancrer la fenêtre d’aide comme bon vous semble. Consultez [Personnaliser les dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Pour ouvrir les résultats de l’aide dans un navigateur, sélectionnez le menu **Outils R**  >  **Options** et affectez à la propriété **aide R Browser** la valeur `External` . Consultez [options](options-for-r-tools-in-visual-studio.md).
+> Pour ouvrir les résultats de l’aide dans un navigateur, sélectionnez le menu **Outils R**  >   et affectez à la propriété **aide R Browser** la valeur `External` . Consultez [options](options-for-r-tools-in-visual-studio.md).
 
 Pour lancer une recherche dans l’aide, utilisez la commande `??` suivie du terme de recherche. Utilisez des guillemets si le terme de recherche contient des espaces :
 
@@ -56,7 +56,7 @@ Outre la documentation R, les développeurs consultent souvent StackOverflow qu
 
 ![Résultats d’une recherche web dans Visual Studio](media/help-web-search-results.png)
 
-Vous pouvez modifier la chaîne de portée ajoutée, `R site:stackoverflow` , par le biais de l’option de chaîne de recherche Web de l’option **Outils R**  >  **Options**  >  **F1** :
+Vous pouvez modifier la chaîne de portée ajoutée, `R site:stackoverflow` , par le biais de l’option de chaîne de recherche Web de l’option **Outils R**  >    >  **F1** :
 
 ![Changement de l’option de chaîne de recherche web (F1)](media/options-dialog.png)
 

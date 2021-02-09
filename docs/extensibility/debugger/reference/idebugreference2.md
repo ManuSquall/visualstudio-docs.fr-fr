@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52f655afd35ed316080a3a85ccfae047aa50d87f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883803"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Cette interface représente une référence à une propriété de frame de pile ou à une autre propriété.
@@ -50,11 +50,11 @@ IDebugReference2 : IUnknown
 |[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Obtient la référence la plus dérivée de cette référence.|
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Obtient les octets de mémoire auxquels cette référence fait référence.|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Obtient un contexte de mémoire pour cette référence.|
-|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Obtient la taille, en octets, de cette référence.|
+|[GetSize,](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Obtient la taille, en octets, de cette référence.|
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Définit ce type de référence.|
 |[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Compare cette référence à une autre.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 > [!NOTE]
 > Cette utilisation de « Property » ne doit pas être confondue avec une variable membre d’une classe, bien qu’un `IDebugReference2` puisse représenter une telle entité.

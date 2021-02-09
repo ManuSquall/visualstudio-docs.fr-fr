@@ -8,19 +8,19 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3435b7a270d89dc38f5ff10a1350418a24f91c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883933"
 ---
 # <a name="what-is-debugging"></a>Qu’est-ce que le débogage ?
 
-Le débogueur Visual Studio est un outil puissant. Avant de montrer comment l’utiliser, nous souhaitons parler de certains termes tels que le *débogueur*, le *débogage*et le *mode débogage*. De cette façon, lorsque nous parlons plus tard de la recherche et de la résolution des bogues, nous parlerons de la même chose.
+Le débogueur Visual Studio est un outil puissant. Avant de montrer comment l’utiliser, nous souhaitons parler de certains termes tels que le *débogueur*, le *débogage* et le *mode débogage*. De cette façon, lorsque nous parlons plus tard de la recherche et de la résolution des bogues, nous parlerons de la même chose.
 
 ## <a name="debugger-vs-debugging"></a>Débogueur et débogage
 

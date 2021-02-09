@@ -5,17 +5,17 @@ ms.date: 11/19/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885935"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
 
@@ -91,7 +91,7 @@ Pour plus d’informations, consultez [Installation de la prise en charge de Pyt
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. Exécutez le programme en utilisant **Déboguer**exécuter  >  **sans débogage** (**CTRL** + **F5**) pour afficher les résultats. Vous pouvez ajuster la variable `COUNT` pour modifier la durée d’exécution des benchmarks. Pour les besoins de cette procédure pas à pas, définissez cette valeur pour que le benchmark dure environ deux secondes.
+1. Exécutez le programme en utilisant **Déboguer** exécuter  >  **sans débogage** (**CTRL** + **F5**) pour afficher les résultats. Vous pouvez ajuster la variable `COUNT` pour modifier la durée d’exécution des benchmarks. Pour les besoins de cette procédure pas à pas, définissez cette valeur pour que le benchmark dure environ deux secondes.
 
 > [!TIP]
 > Lors de l’exécution des tests d’évaluation, utilisez toujours l’exécution du **débogage**  >  **sans débogage** pour éviter la surcharge générée lors de l’exécution du code dans le débogueur Visual Studio.
@@ -122,7 +122,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
 
     | Onglet | Propriété | Valeur |
     | --- | --- | --- |
-    | **Général** | **Général**  >  **Nom** de la cible | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. |
+    | **Généralités** | **Général**  >  **Nom** de la cible | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous souhaitez utiliser le nom du projet comme nom de module, laissez la valeur par défaut **$(ProjectName)**. |
     | | **Général**  >  **Extension cible** | **.pyd** |
     | | **Valeurs par défaut**  >  du projet **Type de configuration** | **Bibliothèque dynamique (.dll)** |
     | **C/C++**  >  **Général** | **Autres répertoires Include** | Ajoutez le dossier *include* Python en fonction de votre installation, par exemple `c:\Python36\include`.  |
@@ -134,7 +134,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
     > Si vous ne voyez pas l’onglet C/C++ dans les propriétés du projet, cela signifie que le projet ne contient aucun fichier qu’il identifie en tant que fichier source C/C++. Cette situation peut se produire si vous créez un fichier source sans extension *.c* ou *.cpp*. Par exemple, si vous avez accidentellement entré `module.coo` plutôt que `module.cpp` dans la boîte de dialogue Nouvel élément, Visual Studio crée le fichier mais ne définit pas le type de fichier sur « C/c + code », ce qui active l’onglet Propriétés c/C++. Ce type d’inversion reste le cas même si vous renommez le fichier avec `.cpp` . Pour définir correctement le type de fichier, cliquez avec le bouton droit sur le fichier dans **Explorateur de solutions**, sélectionnez **Propriétés**, puis définissez  **type de fichier** sur **code C/C++**.
 
     > [!Warning]
-    > Définissez toujours l' **C/C++**  >  **Code Generation**  >  option de**bibliothèque Runtime** de génération de code C/C++ sur **DLL multithread (/MD)**, même pour une configuration Debug, car ce paramètre est celui avec lequel les binaires python non débogués sont générés. Avec CPython, si vous définissez l’option **dll de débogage multithread (/MDD)** , la génération d’une configuration **Debug** génère une erreur **C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG**. En outre, si vous supprimez `Py_LIMITED_API` (requis avec CPython, mais pas avec PyBind11) pour éviter l’erreur de build, Python se bloque en tentant d’importer le module. (L’incident se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type **Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel**.)
+    > Définissez toujours l'   >    >  option de **bibliothèque Runtime** de génération de code C/C++ sur **DLL multithread (/MD)**, même pour une configuration Debug, car ce paramètre est celui avec lequel les binaires python non débogués sont générés. Avec CPython, si vous définissez l’option **dll de débogage multithread (/MDD)** , la génération d’une configuration **Debug** génère une erreur **C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG**. En outre, si vous supprimez `Py_LIMITED_API` (requis avec CPython, mais pas avec PyBind11) pour éviter l’erreur de build, Python se bloque en tentant d’importer le module. (L’incident se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type **Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel**.)
     >
     > L’option/MDd permet de générer les binaires de débogage Python (par exemple, *python_d.exe*), mais sa sélection pour une DLL d’extension provoque toujours l’erreur de build avec `Py_LIMITED_API` .
 
@@ -206,7 +206,7 @@ Si vous utilisez Python 2.7, reportez-vous plutôt aux rubriques [Extending Pyth
     };
     ```
 
-1. Ajoutez une structure qui définit le module tel que vous souhaitez y faire référence dans votre code Python, en particulier lors de l’utilisation de l’instruction `from...import`. (Faire correspondre la valeur dans les propriétés du projet sous **Propriétés**  >  de configuration **Général**  >  **Nom**de la cible.) Dans l’exemple suivant, le nom du module « superfastcode » signifie que vous pouvez utiliser `from superfastcode import fast_tanh` dans Python, car `fast_tanh` est défini dans `superfastcode_methods` . (Les noms de fichiers internes au projet C++, tels que *module. cpp*, ne sont pas apparentés.)
+1. Ajoutez une structure qui définit le module tel que vous souhaitez y faire référence dans votre code Python, en particulier lors de l’utilisation de l’instruction `from...import`. (Faire correspondre la valeur dans les propriétés du projet sous **Propriétés**  >  de configuration **Général**  >  **Nom** de la cible.) Dans l’exemple suivant, le nom du module « superfastcode » signifie que vous pouvez utiliser `from superfastcode import fast_tanh` dans Python, car `fast_tanh` est défini dans `superfastcode_methods` . (Les noms de fichiers internes au projet C++, tels que *module. cpp*, ne sont pas apparentés.)
 
     ```cpp
     static PyModuleDef superfastcode_module = {
@@ -218,7 +218,7 @@ Si vous utilisez Python 2.7, reportez-vous plutôt aux rubriques [Extending Pyth
     };
     ```
 
-1. Ajoutez une méthode que Python appelle quand il charge le module, qui doit être nommé `PyInit_<module-name>` , où &lt; module-name &gt; correspond exactement à la propriété nom **cible général**du projet C++  >  **Target Name** (autrement dit, il correspond au nom du fichier *. pyd* généré par le projet).
+1. Ajoutez une méthode que Python appelle quand il charge le module, qui doit être nommé `PyInit_<module-name>` , où &lt; module-name &gt; correspond exactement à la propriété nom **cible général** du projet C++  >   (autrement dit, il correspond au nom du fichier *. pyd* généré par le projet).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {
@@ -260,13 +260,13 @@ Si vous avez effectué les étapes de la section précédente, vous avez certain
 
 1. Définissez la configuration cible sur **Release**, puis générez le projet C++ pour vérifier votre code. Si vous rencontrez des erreurs, consultez la section suivante sur la résolution des problèmes.
 
-### <a name="troubleshooting"></a>Dépannage
+### <a name="troubleshooting"></a>Résolution des problèmes
 
 La compilation du module C++ peut échouer pour les raisons suivantes :
 
 - Impossible de localiser *Python.h* (**E1696 : impossible d’ouvrir le fichier source « Python.h »** et/ou **C1083 : impossible d’ouvrir le fichier Include : « Python.h » : fichier ou répertoire inexistant**) : vérifiez que le chemin indiqué dans **C/C++** > **Général** > **Autres répertoires Include** dans les propriétés du projet pointe vers le dossier *include* de votre installation de Python. Consultez l’étape 6 sous [Créer le projet C++ principal](#create-the-core-c-projects).
 
-- Impossible de localiser les bibliothèques Python : Vérifiez que le chemin **Linker**d’accès des  >  **General**  >  **répertoires de bibliothèque généraux supplémentaires** dans l’éditeur de liens dans les propriétés du projet pointe vers le dossier *libs* de votre installation Python. Consultez l’étape 6 sous [Créer le projet C++ principal](#create-the-core-c-projects).
+- Impossible de localiser les bibliothèques Python : Vérifiez que le chemin d’accès des  >    >  **répertoires de bibliothèque généraux supplémentaires** dans l’éditeur de liens dans les propriétés du projet pointe vers le dossier *libs* de votre installation Python. Consultez l’étape 6 sous [Créer le projet C++ principal](#create-the-core-c-projects).
 
 - Erreurs de l’éditeur de liens liées à l’architecture cible : modifiez l’architecture de projet de la cible C++ pour qu’elle corresponde à celle de votre installation Python. Par exemple, si vous ciblez x64 avec le projet C++, mais que votre installation de Python est x86, modifiez le projet C++ de façon à cibler x86.
 

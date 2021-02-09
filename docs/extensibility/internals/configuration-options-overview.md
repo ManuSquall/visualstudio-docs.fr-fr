@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884687"
 ---
 # <a name="configuration-options-overview"></a>Vue d’ensemble des options de configuration
 Les projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peuvent prendre en charge plusieurs configurations qui peuvent être générées, déboguées, exécutées et/ou déployées. Une configuration est un type de build décrit avec un jeu nommé de propriétés, généralement les commutateurs de compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations, *Debug* et *Release*. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut, ou modifiées pour répondre à vos besoins spécifiques en matière de solution et/ou de projet. Certains Packages peuvent être générés de deux manières : en tant qu’éditeur ActiveX ou en tant que composant sur place. Toutefois, les projets n’ont pas besoin de prendre en charge plusieurs configurations. Si une seule configuration est disponible, cette configuration est mappée dans toutes les configurations de solution.

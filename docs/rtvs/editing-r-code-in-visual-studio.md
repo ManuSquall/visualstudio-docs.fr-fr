@@ -5,15 +5,15 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4aea7f5371dc425a77e10b64a9389571b06f80b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315094"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885857"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modifier le code R dans Visual Studio
 
@@ -27,7 +27,7 @@ En plus de colorer différentes parties de votre code, comme les chaînes, les c
 
 ![Couleurs de syntaxe pour le code R](media/editing-syntax-colors.png)
 
-Pour personnaliser les polices et certaines couleurs de surbrillance, sélectionnez la commande **Outils**  >  **options** , accédez à **Environment**  >  **polices et couleurs**de l’environnement, puis modifiez les paramètres pour les éléments liés à R dans la zone **afficher les éléments** :
+Pour personnaliser les polices et certaines couleurs de surbrillance, sélectionnez la commande **Outils**  >  **options** , accédez à   >  **polices et couleurs** de l’environnement, puis modifiez les paramètres pour les éléments liés à R dans la zone **afficher les éléments** :
 
 ![Polices et options de couleur pour le code R](media/editing-syntax-colors-options.png)
 
@@ -35,7 +35,7 @@ Visual Studio souligne également les erreurs de syntaxe dans l’éditeur :
 
 ![Mise en surbrillance des erreurs de syntaxe dans le code R](media/editing-syntax-error.png)
 
-Pour modifier ce comportement, consultez le **Advanced**paramètre de vérification de la  >  **syntaxe** avancée sous options de l' [éditeur](#editor-options).
+Pour modifier ce comportement, consultez le paramètre de vérification de la  >  **syntaxe** avancée sous options de l' [éditeur](#editor-options).
 
 ## <a name="edit-and-organize-code"></a>Modifier et organiser le code
 
@@ -49,7 +49,7 @@ Quand vous tapez des appels à des fonctions qui ont plusieurs paramètres, souv
 
 Pour changer ce comportement, consultez les [options de l’éditeur](#editor-options) pour le groupe **Onglets**.
 
-Les régions de code réductibles vous permettent de masquer temporairement une partie de code dans l’éditeur. Visual Studio crée plusieurs régions pour vous automatiquement, comme pour les instructions sur plusieurs lignes, sauf si l’option mode plan du code en mode plan **avancé**  >  **Outlining**  >  **Code outlining** est désactivée.
+Les régions de code réductibles vous permettent de masquer temporairement une partie de code dans l’éditeur. Visual Studio crée plusieurs régions pour vous automatiquement, comme pour les instructions sur plusieurs lignes, sauf si l’option mode plan du code en mode plan **avancé**  >    >   est désactivée.
 
 Pour créer une région de votre choix, entourez le code souhaité avec des commentaires qui se terminent par `---`. Les contrôles +/- à gauche du code vous permettent ensuite de développer et réduire des régions :
 
@@ -89,11 +89,11 @@ L’application de la mise en forme la transforme en ce qui suit :
 f <- function(a) { return(a + 1) }
 ```
 
-Pour reformater l’intégralité du fichier de code, sélectionnez **modifier**le  >  **Advanced**  >  **document au format** avancé (**CTRL** + **E**,**D**).
+Pour reformater l’intégralité du fichier de code, sélectionnez **modifier** le  >    >  **document au format** avancé (**CTRL** + **E**,**D**).
 
 La mise en forme automatique est une opération distincte qui peut être annulée. Par exemple, si vous collez du code dans l’éditeur et que la mise en forme s’applique, la sélection de l’option **modifier**  >  l'**annulation** ou en appuyant sur **CTRL** + **Z** annule la mise en forme. une deuxième **annulation** inverse le collage lui-même.
 
-Les options de mise en forme (notamment la désactivation de la **Tools**mise en forme) sont définies via  >  les**options** outils de l’onglet **éditeur de texte**  >  **R**  >  **avancé** . Vous pouvez accéder directement à cette page à l’aide de la commande Options de l’éditeur d' **Outils R**  >  **Editor options** ou en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **options de mise en forme**. Consultez la section des [options de l’éditeur](#editor-options) pour plus d’informations.
+Les options de mise en forme (notamment la désactivation de la mise en forme) sont définies via  >  les **options** outils de l’onglet **éditeur de texte**  >  **R**  >  **avancé** . Vous pouvez accéder directement à cette page à l’aide de la commande Options de l’éditeur d' **Outils R**  >   ou en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **options de mise en forme**. Consultez la section des [options de l’éditeur](#editor-options) pour plus d’informations.
 
 ## <a name="inserting-roxygen-comments"></a>Insertion de commentaires Roxygen
 
@@ -113,7 +113,7 @@ Les options des onglets **Général**, **Barres de défilement** et **Onglets** 
 
 Les options de l’onglet **R**  >  **avancé** sont spécifiques à RTVS :
 
-| Grouper | Option | Default | Description |
+| Group | Option | Default | Description |
 | --- | --- | --- | --- |
 | Mise en forme | Mise en forme automatique | Activé | Remet en forme le code à mesure que vous tapez. N’affecte pas les commandes **Mettre la sélection en forme** ou **Mettre le document en forme**. |
 | | Accolades développées | Désactivé | Place une { ouvrante sur une nouvelle ligne. |
@@ -125,7 +125,7 @@ Les options de l’onglet **R**  >  **avancé** sont spécifiques à RTVS :
 | | Espace autour de = | Activé | Place des espaces autour d’un signe égal. |
 | IntelliSense | Valider après la touche Entrée | Désactivé | Valide la sélection de saisie semi-automatique quand vous appuyez sur **entrée** . |
 | | Valider après la touche Espace | Désactivé | Valide la sélection de saisie semi-automatique lorsque l' **espace** est enfoncé.|
-| | Liste de saisie semi-automatique après le premier caractère | Activé | Affiche la liste de saisie semi-automatique quand vous tapez les premiers caractères. Lorsqu’elle est désactivée, une liste de saisie semi-automatique s’affiche avec **modifier**  >  **IntelliSense**  >  **les membres** de la liste IntelliSense (**CTRL** + **J**). |
+| | Liste de saisie semi-automatique après le premier caractère | Activé | Affiche la liste de saisie semi-automatique quand vous tapez les premiers caractères. Lorsqu’elle est désactivée, une liste de saisie semi-automatique s’affiche avec **modifier**  >    >  **les membres** de la liste IntelliSense (**CTRL** + **J**). |
 | | Liste de saisie semi-automatique sur la touche **Tab** | Désactivé | Appelle la liste de saisie semi-automatique en tapant un ou plusieurs caractères et en appuyant sur la touche **Tab**. |
 | | Correspondance partielle de noms d’argument de types | Désactivé | Quand vous tapez des noms d’argument dans un appel de fonction, l’aide de la signature affiche une description de l’argument qui correspond le mieux. |
 | Fenêtre interactive | Vérification syntaxique dans la console R | Désactivé | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. |

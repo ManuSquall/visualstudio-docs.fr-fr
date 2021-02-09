@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2cc320baf310af0ec2b4cdd84fabff951b2a9cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885285"
 ---
 # <a name="password-protection-on-office-documents"></a>Protection par mot de passe sur les documents Office
   Il est possible de définir un mot de passe dans vos documents Word Microsoft Office et Microsoft Office classeurs Excel afin qu’ils ne puissent pas être ouverts par une personne qui ne connaît pas le mot de passe. Cette option est appelée **mot de passe à l’ouverture**.

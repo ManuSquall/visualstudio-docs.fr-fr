@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94a13890f0b5e60b1da204b89a01c1cadc6d00c4
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e3fdc5705cad0ec696a520350042d7f18aaec146
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884635"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuer à la boîte de dialogue Ajouter un nouvel élément
 Un sous-type de projet peut fournir un nouveau répertoire complet d’éléments pour la boîte de dialogue **Ajouter un nouvel élément** en inscrivant ajouter des modèles d' **élément** sous la sous-clé de Registre **projects** .
