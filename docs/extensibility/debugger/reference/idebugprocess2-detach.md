@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6418a7f628eef4e00ea0555c07122555eb6d600c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874085"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Détache le débogueur de ce processus en détachant tous les programmes dans le processus.
@@ -28,8 +28,8 @@ Détache le débogueur de ce processus en détachant tous les programmes dans le
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT Detach( 
-   void 
+HRESULT Detach( 
+   void 
 );
 ```
 
@@ -40,7 +40,7 @@ int Detach();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Tous les programmes et le processus continuent à s’exécuter, mais ne font plus partie de la session de débogage. Une fois l’opération de détachement terminée, aucun autre événement de débogage n’est envoyé pour ce processus (et ses programmes).
 
 ## <a name="see-also"></a>Voir aussi

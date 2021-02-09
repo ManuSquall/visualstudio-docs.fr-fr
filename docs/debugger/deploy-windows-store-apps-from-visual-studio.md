@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6d8819f92e19960aefc7e485acb2fb7fa827b6ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872168"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
 
@@ -50,7 +50,7 @@ Le déploiement est automatique quand vous déboguez votre application à partir
 
 ## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> Comment spécifier un périphérique distant
 
-**Composants requis**
+**Conditions préalables**
 
 Sur un appareil distant Windows 10, vous devez activer le [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). Sur les appareils Windows 10 qui exécutent la mise à jour du créateur ou une version ultérieure, les outils de contrôle à distance sont installés automatiquement lorsque vous déployez votre application. Pour plus d’informations, consultez [Déboguer un package d’application installé](../debugger/debug-installed-app-package.md).
 

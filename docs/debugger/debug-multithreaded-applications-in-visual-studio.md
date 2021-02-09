@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e7a133b4b59b11525a7f7ba776b3b4a4a1e6a31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727136"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873208"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Déboguer les applications multithread dans Visual Studio
 Un thread est une séquence d’instructions à laquelle le système d’exploitation accorde du temps processeur. Chaque processus exécuté dans le système d'exploitation se compose d'au moins un thread. Les processus qui comportent plusieurs threads sont appelés multithread.
@@ -106,4 +106,4 @@ Attribuez au thread un nom qui s’affiche dans la fenêtre **Threads**.
 - [Multithreading dans les composants](/previous-versions/3es4b6yy(v=vs.140))
 - [Prise en charge du multithreading pour le code plus ancien](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Déboguer les threads et processus](../debugger/debug-threads-and-processes.md)
-- [Débogage à distance](../debugger/remote-debugging.md)
+- [Débogage distant](../debugger/remote-debugging.md)

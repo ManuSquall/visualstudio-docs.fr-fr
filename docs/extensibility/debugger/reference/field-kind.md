@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a18739ebe30a41e9dca837287d58db57795f878b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874367"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 Spécifie le type de champ contenu dans un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -28,7 +28,7 @@ Spécifie le type de champ contenu dans un objet [IDebugField](../../../extensib
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-enum enum_FIELD_KIND {
+enum enum_FIELD_KIND {
     FIELD_KIND_NONE       = 0x00000000,
 
     // Type of field
@@ -58,7 +58,7 @@ enum enum_FIELD_KIND {
     FIELD_TYPE_EXTENDED   = 0x00800000,
 
     // Specific information about symbols
-    FIELD_SYM_MEMBER      = 0x01000000,
+    FIELD_SYM_MEMBER      = 0x01000000,
     FIELD_SYM_LOCAL       = 0x02000000,
     FIELD_SYM_PARAM       = 0x04000000,
     FIELD_SYM_THIS        = 0x08000000,
@@ -107,7 +107,7 @@ public enum enum_FIELD_KIND {
     FIELD_TYPE_EXTENDED   = 0x00800000,
 
     // Specific information about symbols
-    FIELD_SYM_MEMBER      = 0x01000000,
+    FIELD_SYM_MEMBER      = 0x01000000,
     FIELD_SYM_LOCAL       = 0x02000000,
     FIELD_SYM_PARAM       = 0x04000000,
     FIELD_SYM_THIS        = 0x08000000,
@@ -189,7 +189,7 @@ Indique que le champ est une classe interne.
 Indique que le champ est une référence.
 
 `FIELD_TYPE_EXTENDED`\
-Réservé à un usage ultérieur.
+Réservé pour un usage futur.
 
 `FIELD_SYM_MEMBER`\
 Indique que le champ est un membre.
@@ -213,7 +213,7 @@ Indique que le champ récupère les propriétés.
 Indique que le champ définit des propriétés.
 
 `FIELD_SYM_EXTENDED`\
-Réservé à un usage ultérieur.
+Réservé pour un usage futur.
 
 `FIELD_KIND_MASK`\
 Indique un masque pour les genres de champs.
@@ -224,7 +224,7 @@ Indique un masque pour les types de champs.
 `FIELD_SYM_MASK`\
 Indique un masque pour les informations de symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Retourné à partir d’un appel à la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
 
 Selon le type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelé sur l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour une forme d’interface plus spécifique. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD` , vous pouvez appeler `QueryInterface` sur I `DebugField` pour obtenir l’interface [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .

@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873825"
 ---
 # <a name="walkthrough-build-an-application"></a>Procédure pas à pas : Générer une application
 
@@ -45,7 +45,7 @@ Vous pouvez modifier ou créer des configurations et des paramètres de platefor
 
 1. Dans la liste plateforme de la **solution active** , choisissez **\<New...\>** .
 
-1. Dans la boîte de dialogue **nouvelle plateforme de solution** , choisissez **x64**et ne copiez pas les paramètres de la plateforme x86.
+1. Dans la boîte de dialogue **nouvelle plateforme de solution** , choisissez **x64** et ne copiez pas les paramètres de la plateforme x86.
 
    ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -95,7 +95,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.
 
-1. Dans la barre de menus, choisissez **Afficher**les  >  **pages de propriétés**.
+1. Dans la barre de menus, choisissez **Afficher** les  >  **pages de propriétés**.
 
      Le **Concepteur de projets** s’ouvre.
 
@@ -115,7 +115,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.
 
-2. Dans la barre de menus, choisissez **Afficher**les  >  **pages de propriétés**.
+2. Dans la barre de menus, choisissez **Afficher** les  >  **pages de propriétés**.
 
      Le **Concepteur de projets** s’ouvre.
 
@@ -150,18 +150,18 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
 1. Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez **Normal**, puis cliquez sur le bouton **OK**.
 
-1. Dans la barre de menus, choisissez **générer**une  >  **solution propre**.
+1. Dans la barre de menus, choisissez **générer** une  >  **solution propre**.
 
 1. Générez la solution, puis passez en revue les informations contenues dans la fenêtre **Sortie**.
 
      Les informations de build comprennent l’heure à laquelle la génération a commencé (située au début), et l’ordre dans lequel les fichiers ont été traités. Ces informations comprennent également la syntaxe de compilateur que Visual Studio exécute pendant la génération.
 
-     Par exemple, dans la build C#, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) répertorie le code d’avertissement **0168**que vous avez spécifié précédemment dans cette rubrique, ainsi que trois autres avertissements.
+     Par exemple, dans la build C#, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) répertorie le code d’avertissement **0168** que vous avez spécifié précédemment dans cette rubrique, ainsi que trois autres avertissements.
 
      Dans la build Visual Basic, comme [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) n’inclut pas d’avertissements à exclure, aucun avertissement ne s’affiche.
 
     > [!TIP]
-    > Pour effectuer une recherche dans la fenêtre **Sortie**, affichez la boîte de dialogue **Rechercher** en appuyant sur les touches**Ctrl**+**F**.
+    > Pour effectuer une recherche dans la fenêtre **Sortie**, affichez la boîte de dialogue **Rechercher** en appuyant sur les touches **Ctrl**+**F**.
 
 Pour plus d’informations, consultez [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
@@ -221,7 +221,7 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
    Le fichier exécutable est copié sur le chemin réseau que vous avez spécifié. Son chemin est `\\myserver\builds\\FileName.exe`.
 
-Félicitations ! La procédure pas à pas est terminée.
+Félicitations ! La procédure pas à pas est terminée.
 
 ## <a name="see-also"></a>Voir aussi
 

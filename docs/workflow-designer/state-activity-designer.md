@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d5dbe0a14b007ad8e916aa9b2d8d765402dbe66b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: abf4e81ecd258668c93b674410f029e6be0f5bf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873513"
 ---
 # <a name="state-activity-designer"></a>Concepteur d'activités d'état
 
@@ -31,12 +31,12 @@ Pour ajouter un <xref:System.Activities.Statements.State> à un workflow, faites
 
 Le tableau suivant indique les propriétés  <xref:System.Activities.Statements.State> qui peuvent être définies à l'aide du concepteur de workflow et explique comment elles sont utilisées dans le concepteur. Certaines de ces propriétés peuvent être modifiées dans la grille des propriétés et certaines peuvent être modifiées dans l'aire de conception.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|Faux|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.State> dans l'en-tête. La valeur par défaut est **State**. La valeur peut être modifiée dans la grille Propriétés ou directement dans l'en-tête du concepteur d'activités. <xref:System.Activities.Statements.State.DisplayName%2A> est utilisé dans l'exploration à l'aide de la barre de navigation qui est affichée en haut du concepteur de workflow.<br /><br /> Bien que la propriété <xref:System.Activities.Statements.State.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.State.Entry%2A>|Faux|Spécifie l'action qui se produit lorsque cet état subit une transition. Lorsque l' <xref:System.Activities.Statements.State> activité est développée, cette valeur peut être définie en faisant glisser une activité de la **boîte à outils** et en la déposant sur la section d' **entrée** de l’État.|
-|<xref:System.Activities.Statements.State.Exit%2A>|Faux|Spécifie l'action qui se produit lorsque cet état subit une transition. Lorsque l' <xref:System.Activities.Statements.State> activité est développée, cette valeur peut être définie en faisant glisser une activité de la **boîte à outils** et en la déposant sur la section **Exit** de l’État.|
-|<xref:System.Activities.Statements.State.Transitions%2A>|Faux|Répertorie les transitions possibles qui proviennent de <xref:System.Activities.Statements.State>. Chaque élément de la liste inclut un lien vers le <xref:System.Activities.Statements.Transition> associé et <xref:System.Activities.Statements.State> de destination. Cliquez sur le lien pour faire basculer le concepteur dans un affichage développé de <xref:System.Activities.Statements.Transition> ou <xref:System.Activities.Statements.State>.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.State> dans l'en-tête. La valeur par défaut est **State**. La valeur peut être modifiée dans la grille Propriétés ou directement dans l'en-tête du concepteur d'activités. <xref:System.Activities.Statements.State.DisplayName%2A> est utilisé dans l'exploration à l'aide de la barre de navigation qui est affichée en haut du concepteur de workflow.<br /><br /> Bien que la propriété <xref:System.Activities.Statements.State.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|Spécifie l'action qui se produit lorsque cet état subit une transition. Lorsque l' <xref:System.Activities.Statements.State> activité est développée, cette valeur peut être définie en faisant glisser une activité de la **boîte à outils** et en la déposant sur la section d' **entrée** de l’État.|
+|<xref:System.Activities.Statements.State.Exit%2A>|False|Spécifie l'action qui se produit lorsque cet état subit une transition. Lorsque l' <xref:System.Activities.Statements.State> activité est développée, cette valeur peut être définie en faisant glisser une activité de la **boîte à outils** et en la déposant sur la section **Exit** de l’État.|
+|<xref:System.Activities.Statements.State.Transitions%2A>|False|Répertorie les transitions possibles qui proviennent de <xref:System.Activities.Statements.State>. Chaque élément de la liste inclut un lien vers le <xref:System.Activities.Statements.Transition> associé et <xref:System.Activities.Statements.State> de destination. Cliquez sur le lien pour faire basculer le concepteur dans un affichage développé de <xref:System.Activities.Statements.Transition> ou <xref:System.Activities.Statements.State>.|
 
 ## <a name="see-also"></a>Voir aussi
 

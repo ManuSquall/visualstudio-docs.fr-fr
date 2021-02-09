@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: b6ad51d6b791def360f12b2d64e4ef6841c7bcda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872792"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Déboguer des dll dans Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -117,7 +117,7 @@ Pour déboguer une DLL à partir d’une application appelante, vous pouvez :
 
 - Ouvrez le projet pour l’application appelante et démarrez le débogage **en sélectionnant déboguer**  >  **Démarrer le débogage** ou en appuyant sur **F5**.
 
-  ou
+  or
 
 - Attachement à une application déjà déployée et en cours d’exécution sur un ordinateur de test ou de production. Utilisez cette méthode pour les dll sur des sites Web ou dans des applications Web. Pour plus d’informations, consultez [Comment : attacher à un processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 

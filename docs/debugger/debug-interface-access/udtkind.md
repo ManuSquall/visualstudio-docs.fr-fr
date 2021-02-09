@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 400b59b9-373c-42cb-aae1-570494214328
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 746ff69de6f58f85d16982522c6ac13dcbf4ce6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44c543d09a360bfb7eadad11d7fca84764bb2006
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873393"
 ---
 # <a name="udtkind"></a>UdtKind
 Décrit la variété d’un type défini par l’utilisateur (UDT).
@@ -42,7 +42,7 @@ UdtUnion UDT est une Union.
 
 UdtInterface UDT est une interface.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les valeurs de cette énumération sont retournées par la méthode [IDiaSymbol :: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
 
 ## <a name="requirements"></a>Configuration requise

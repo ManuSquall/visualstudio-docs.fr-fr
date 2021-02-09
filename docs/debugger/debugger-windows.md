@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 0e626302e4ec311aeaccef77af2870ae69ee76aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872909"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspecter des données à l’aide des fenêtres du débogueur dans Visual Studio
 
@@ -26,7 +26,7 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Points d’arrêt|Ctrl+Alt+B|[Utiliser des points d’arrêt](../debugger/using-breakpoints.md)|
 |Paramètres d’exception|Ctrl+Alt+E|[Gérer les exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)|
 |Output|Ctrl+Alt+O|[Fenêtre Sortie](../ide/reference/output-window.md)|
-|Regardez|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
+|Espion|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
 |Espion express|Maj+F9|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
 |Autos|Ctrl+Alt+V, A|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|
 |Locals|Ctrl+Alt+V, L|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|

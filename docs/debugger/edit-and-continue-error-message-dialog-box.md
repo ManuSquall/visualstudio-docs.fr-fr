@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0835746b94412380bee314bc3fac59b4c48f86d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871999"
 ---
 # <a name="edit-and-continue-error-message"></a>Message d’erreur modifier & continuer
 
@@ -42,7 +42,7 @@ Les raisons possibles de ce message d’erreur sont les suivantes :
 - Tentative de modification du code lors du débogage d’un vidage Dr. Watson.
 - La tentative de modification du code après une exception non gérée se produit, et l’option **dérouler la pile des appels sur les exceptions non gérées** n’est pas sélectionnée.
 - Tentative de modification du code lors du débogage d’une application Runtime incorporée.
-- Tentative de modification du code managé à l’aide d’une version .NET Framework antérieure à 4.5.1 avec une cible d’application 64 bits. Pour utiliser modifier & Continuer pour .NET Framework antérieur à la version 4.5.1, définissez la cible sur **x86** dans l’onglet Propriétés de la **\<ProjectName>**  >  **Properties**  >  **compilation** , paramètres **avancés du compilateur** .
+- Tentative de modification du code managé à l’aide d’une version .NET Framework antérieure à 4.5.1 avec une cible d’application 64 bits. Pour utiliser modifier & Continuer pour .NET Framework antérieur à la version 4.5.1, définissez la cible sur **x86** dans l’onglet Propriétés de la **\<ProjectName>**  >    >  **compilation** , paramètres **avancés du compilateur** .
 - Tentative de modification du code dans un assembly qui a été modifié pendant le débogage et qui a été rechargé.
 - Tentative de modification du code dans un assembly qui n’a pas été chargé.
 - Démarrage du débogage d’une ancienne version d’une application, car la version la plus récente contient des erreurs de Build.

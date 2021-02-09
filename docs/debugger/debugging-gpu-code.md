@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36359f8d5f2044c97e3479981290aff07d3f2e31
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 19191d8d46e17da52b13f692db605168b06b38d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872675"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement graphique (GPU). La prise en charge du débogage GPU dans Visual Studio inclut la détection de concurrence, les processus de lancement et leur attachement, ainsi que l'intégration dans les fenêtres de débogage.
@@ -49,7 +49,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 2. La commande **Exécuter le tile actuel au curseur** exécute votre application jusqu’à ce que tous les threads de la mosaïque active atteignent le curseur, puis s’interrompt.
 
 ## <a name="debugging-windows"></a>Fenêtres de débogage
- L'utilisation de certaines fenêtres de débogage vous permet d'examiner, de marquer et de geler des threads GPU. Pour plus d’informations, consultez :
+ L'utilisation de certaines fenêtres de débogage vous permet d'examiner, de marquer et de geler des threads GPU. Pour plus d'informations, consultez les pages suivantes :
 
 - [Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)
 

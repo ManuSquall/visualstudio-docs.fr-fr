@@ -5,24 +5,24 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c69d9464622e1814f6289c925423a6674f113a2f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 4ed32fba72a50adf8c657cc34de9cd61d01e7abc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874525"
 ---
 # <a name="npm-install"></a>npm-install
 
 L' `npm-install` outil peut être utilisé pour installer des packages [NPM](https://www.npmjs.com/) .
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil ne fait rien.
 

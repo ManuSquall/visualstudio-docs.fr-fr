@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 67af3509-3a7d-435d-bc37-5262448da915
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e1dd2868f5b29a12f3f54f46e5cb5833d270af
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ad3c913e6c983749e53940f5e75ad3bdba48bf92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873630"
 ---
 # <a name="memory-management-time"></a>Période de gestion de la mémoire
 Ces segments de la chronologie sont associés aux temps de blocage classés dans la catégorie de gestion de la mémoire. Ce scénario implique qu’un thread est bloqué par un événement associé à une opération de gestion de la mémoire telle que la pagination. Pendant cette période, un thread a été bloqué dans un état d’API ou de noyau que le visualiseur concurrentiel considère comme de la gestion de la mémoire. Cela inclut la pagination et l’allocation de mémoire.

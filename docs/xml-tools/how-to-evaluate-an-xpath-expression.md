@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 894263883cbb34c8d41ec67a5e595e801f723390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873422"
 ---
 # <a name="evaluate-xpath-expressions"></a>Évaluer les expressions XPath
 
@@ -36,7 +36,7 @@ La procédure suivante utilise les fichiers *Below-Average. xsl* et *books.xml* 
 
 1. Insérez un point d’arrêt à l’étiquette de début `xsl:if`.
 
-2. Pour démarrer le débogage, choisissez **XML**  >  **Démarrer le débogage XSLT** dans la barre de menus (ou appuyez sur **ALT** + **F5** ).
+2. Pour démarrer le débogage, choisissez **XML**  >  **Démarrer le débogage XSLT** dans la barre de menus (ou appuyez sur **ALT** + **F5**).
 
    Le débogueur démarre et s'arrête à la balise `xsl:if`.
 

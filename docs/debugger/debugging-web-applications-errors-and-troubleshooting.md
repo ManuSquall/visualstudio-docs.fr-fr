@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f827dd2bb8081787a4883b2d67ee41d8b6d43876
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 8cce4bcbf946dad69fc3e11a7b54365fc549c699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872298"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.

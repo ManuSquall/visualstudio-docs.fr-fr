@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 44855237adb4eb9edfb7d4ee383ff5777cf4b6b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872012"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Boîte de dialogue Modifier & Continuer
 (Natif uniquement) Cette boîte de dialogue s’affiche lorsque vous avez modifié du code pendant le débogage et que **Modifier & Continuer** reconnaît pouvoir appliquer ces modifications. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).

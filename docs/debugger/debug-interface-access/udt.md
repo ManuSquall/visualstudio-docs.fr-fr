@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f94ab1404e4134c086230217bb2857176e6a7d11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d49d41c6f399391ac748125cb9012630784827c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873400"
 ---
 # <a name="udt"></a>UDT
 Chaque classe, structure et Union est identifiée par un `SymTagUDT` symbole. Chaque membre, fonction, donnée ou type imbriqué, ainsi que chaque classe de base, apparaît en tant qu’enfant de classe du type défini par l’utilisateur (UDT).

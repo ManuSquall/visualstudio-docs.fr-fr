@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: cd48cbe0eac8438bb761029bbca4cd27e13f2319
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 2364e20d7da6bb574f6321142ab94b46ba43b241
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874392"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -25,7 +25,7 @@ L' `wsl-install` outil permet d’installer Linux distributions pour le [sous-sy
 > [!IMPORTANT]
 > L' `wsl-install` outil requiert que WSL 2 soit déjà activé sur Windows. Si, pour une raison quelconque, WSL 2 n’est pas activé, vous pouvez suivre la [documentation d’installation de WSL](https://docs.microsoft.com/windows/wsl/install-win10). Vous pouvez également utiliser l’outil [WindowsFeature-Enable](tool-windowsfeature-enable.md) pour activer les fonctionnalités Windows nécessaires.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 

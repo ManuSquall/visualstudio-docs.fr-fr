@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9ab441b9-cc72-47fa-83e2-87b3c2b891b4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb0b4fd242f53b3e115c44c35c80b22ff08e3116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aaaafb263e2276e760750d2f13217e72869a6aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873414"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (Kit de développement logiciel de Debug Interface Access)
 Les symboles avec des `SymTagTypedef` balises introduisent des noms pour d’autres types.
@@ -54,7 +54,7 @@ Les symboles avec des `SymTagTypedef` balises introduisent des noms pour d’aut
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|ID du symbole de forme de la table virtuelle.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Si ce typedef est marqué comme volatile.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Comme un typedef peut représenter une classe, un pointeur ou un type défini par l’utilisateur (UDT), le symbole d’un typedef partage les mêmes propriétés que l’un de ces autres types de symboles.
 
 ## <a name="see-also"></a>Voir aussi

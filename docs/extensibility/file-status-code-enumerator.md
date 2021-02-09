@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0093e3a79a5a9caf9846c4b418226568e37828f0
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 981e4e4561db7bc7fb8a9f0ce92522d34e4b34fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874046"
 ---
 # <a name="file-status-code-enumerator"></a>Énumérateur de code d’état de fichier
 L' `SccStatus` énumérateur contient des valeurs constantes nommées qui spécifient l’état d’un fichier dans le système de contrôle de code source. Cette énumération est utilisée par [SccQueryInfo](../extensibility/sccqueryinfo-function.md) et la `POPLISTFUNC` fonction de rappel (pour plus d’informations, consultez [POPLISTFUNC](../extensibility/poplistfunc.md) ).

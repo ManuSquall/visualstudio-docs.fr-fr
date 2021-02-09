@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 885f17b0841a39672c87be5bc7c947b2e0d9c7e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35ae5661127c0e19e87c96a47a2985161beae7c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874380"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 Cette structure spécifie des informations sur un type de champ issu de métadonnées.
@@ -53,7 +53,7 @@ GUID du module qui contient ce champ.
 `pUnderlyingField`\
 Objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identifiant le champ sous-jacent associé à ce champ généré.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette structure apparaît dans le cadre de l’Union dans la structure [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) lorsque le `dwKind` champ de la `TYPE_INFO` structure a la valeur `TYPE_KIND_BUILT` (une valeur de l’énumération [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
 ## <a name="requirements"></a>Configuration requise
