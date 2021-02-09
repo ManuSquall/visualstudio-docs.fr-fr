@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90ef0ae096618b776182b397d196f2a4477abe5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10c2b8b7154e5286d295df2c87398c57277325ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842522"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Remplace les symboles de débogage actuels par ceux du flux de données spécifié.
@@ -52,7 +52,7 @@ dans Identificateur unique du module.
 `pStream`\
 dans Flux de données qui contient les nouveaux symboles.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

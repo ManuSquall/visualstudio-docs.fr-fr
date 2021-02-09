@@ -2,17 +2,17 @@
 title: Publier un service cloud Azure
 description: Découvrez comment configurer les différents paramètres de l’Assistant Publication d’application Azure dans Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844058"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Utilisation de l’Assistant Publication d’application Azure dans Visual Studio
 
@@ -51,7 +51,7 @@ Vous pouvez accéder à l’Assistant Publication d’application Azure de deux�
 
 ![Paramètres courants](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**Service cloud** : dans la liste déroulante, sélectionnez un service cloud existant ou **&lt;Créer un nouveau&gt;**, puis créez un service cloud. Le centre de données s’affiche entre parenthèses pour chaque service cloud. Il est recommandé que l’emplacement du centre de données du service cloud soit identique à celui du compte de stockage (Paramètres avancés).
+**Service Cloud** : à l’aide de la liste déroulante, sélectionnez un service Cloud existant ou **&lt; créer un nouveau>**, puis créez un service Cloud. Le centre de données s’affiche entre parenthèses pour chaque service cloud. Il est recommandé que l’emplacement du centre de données du service cloud soit identique à celui du compte de stockage (Paramètres avancés).
 
 **Environnement** : sélectionnez **Production** ou **Intermédiaire**. Choisissez l’environnement intermédiaire si vous souhaitez déployer votre application dans un environnement de test.
 
@@ -97,7 +97,7 @@ Diagnostics vous permet de résoudre les problèmes d’un service cloud Azure (
 
 ![Page de résumé](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Profil cible** : vous pouvez choisir de créer un profil de publication à partir des paramètres que vous avez choisis. Par exemple, vous pouvez créer un profil pour un environnement de test et un autre pour la production. Pour enregistrer ce profil, choisissez l'icône **Enregistrer**. L'Assistant crée le profil et l'enregistre dans le projet Visual Studio. Pour modifier le nom du profil, ouvrez la liste **Profil cible**, puis sélectionnez **&lt;Gérer...&gt;**.
+**Profil cible** : vous pouvez choisir de créer un profil de publication à partir des paramètres que vous avez choisis. Par exemple, vous pouvez créer un profil pour un environnement de test et un autre pour la production. Pour enregistrer ce profil, choisissez l'icône **Enregistrer**. L'Assistant crée le profil et l'enregistre dans le projet Visual Studio. Pour modifier le nom du profil, ouvrez la liste **profil cible** , puis cliquez sur **&lt; gérer.. &gt; .**.
 
    > [!Note]
    > Le profil de publication s'affiche dans l'Explorateur de solutions dans Visual Studio, et les paramètres du profil sont écrits dans un fichier portant l'extension .azurePubxml. Les paramètres sont enregistrés en tant qu'attributs de balises XML.

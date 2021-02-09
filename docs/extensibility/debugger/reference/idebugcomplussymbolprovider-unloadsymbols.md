@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 53e3ddc1-ab47-4097-8fef-b26e5504b37a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ab4e3d45d34e2db00a3f2adc20a43050d9ba391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e826f8190650eed26228b9ce54b7128139f981a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842483"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 Décharge les symboles de débogage pour le module spécifié à partir de la mémoire.
@@ -47,7 +47,7 @@ dans Identificateur du domaine d’application.
 `guidModule`\
 dans Identificateur unique du module.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

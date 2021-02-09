@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c7c8d415da1de7be9cafdad6e5dea531dd59a7b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845137"
 ---
 # <a name="graphics-event-call-stack"></a>Pile des appels des événements Graphics
 La pile des appels des événements Graphics dans Visual Studio Graphics Analyzer vous permet de mapper la relation entre les événements graphiques problématiques et le code source de votre application.
@@ -37,7 +37,7 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
 |Colonne|Description|
 |------------|-----------------|
 |**Nom**|Symbole qui identifie de manière unique la fonction qui contient le site d'appel. Le symbole de débogage de la fonction est affiché quand il est disponible. Par ailleurs, le décalage de fonction est affiché.|
-|**File**|Nom de fichier du fichier de code source ou du fichier bibliothèque qui contient le site d'appel.|
+|**Fichier**|Nom de fichier du fichier de code source ou du fichier bibliothèque qui contient le site d'appel.|
 |**Lieu**|Numéro de ligne du site d'appel.|
 
 ### <a name="links-to-graphics-objects"></a>Liens vers les objets graphiques

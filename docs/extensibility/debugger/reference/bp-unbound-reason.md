@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4750b4d1a9c1f972c0445dfcf3ea2f4fa5be328
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842653"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 Indique la raison pour laquelle un point d’arrêt a été indépendant.
@@ -59,7 +59,7 @@ Le point d’arrêt a été relié à un autre emplacement. Cela peut se produir
 `BPUR_ BREAKPOINT_ERROR`\
 Le point d’arrêt est déterminé comme étant une erreur une fois qu’il est lié. Cela se produit dans les points d’arrêt gérés dont les conditions ne sont plus valides.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Retourné par la méthode [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Configuration requise

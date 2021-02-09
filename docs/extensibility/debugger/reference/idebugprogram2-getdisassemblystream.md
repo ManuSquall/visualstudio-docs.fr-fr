@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2160f963ad1f3f37291519ced30b8096e33a6116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e499d7b655cb79873b1cd3ef2954f054bba84f60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844695"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 Obtient le flux de code machine pour ce programme ou une partie de ce programme.
@@ -28,7 +28,7 @@ Obtient le flux de code machine pour ce programme ou une partie de ce programme.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDisassemblyStream( 
+HRESULT GetDisassemblyStream( 
    DISASSEMBLY_STREAM_SCOPE   dwScope,
    IDebugCodeContext2*        pCodeContext,
    IDebugDisassemblyStream2** ppDisassemblyStream
@@ -36,7 +36,7 @@ HRESULT GetDisassemblyStream( 
 ```
 
 ```csharp
-int GetDisassemblyStream( 
+int GetDisassemblyStream( 
    enum_DISASSEMBLY_STREAM_SCOPE  dwScope,
    IDebugCodeContext2             pCodeContext,
    out IDebugDisassemblyStream2   ppDisassemblyStream
@@ -53,10 +53,10 @@ dans Objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebug
 `ppDisassemblyStream`\
 à Retourne un objet [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) qui représente le flux de code machine.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_DISASM_NOTSUPPORTED` si le code machine n’est pas pris en charge pour cette architecture particulière.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si le `dwScopes` paramètre a l' `DSS_HUGE` indicateur du jeu d’énumération [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) , le code machine est supposé retourner un grand nombre d’instructions de code machine, par exemple, pour un fichier ou un module entier. Si l' `DSS_HUGE` indicateur n’est pas défini, le désassemblage est supposé être confiné dans une petite zone, généralement celle d’une fonction unique.
 
 ## <a name="see-also"></a>Voir aussi

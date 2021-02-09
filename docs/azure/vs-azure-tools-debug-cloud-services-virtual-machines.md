@@ -2,18 +2,18 @@
 title: Débogage d’un service cloud ou d’une machine virtuelle Azure
 description: Débogage d’un service cloud ou d’une machine virtuelle dans Visual Studio
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c6e03bb4048b077bb4e1faa8b0382a3f4dbaf856
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844331"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Débogage d'un service cloud ou d'une machine virtuelle Azure dans Visual Studio
 
@@ -77,7 +77,7 @@ L’activation du débogage distant pour un service cloud n’entraîne pas de b
 
     ![Boîte de dialogue Sélectionner le type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Pour identifier les processus auxquels le débogueur est attaché, dans la barre de menus, sélectionnez **Déboguer** les  >  **Windows**  >  **processus** Windows, puis ouvrez la boîte de dialogue **processus** . (Raccourci : Ctrl+Alt+Z) Pour détacher un processus spécifique, ouvrez son menu contextuel, puis sélectionnez **Détacher le processus**. Vous pouvez aussi afficher le nœud d’instance dans l’Explorateur de serveurs, rechercher le processus et ouvrir son menu contextuel, puis sélectionnez **Détacher le processus**.
+4. Pour identifier les processus auxquels le débogueur est attaché, dans la barre de menus, sélectionnez **Déboguer** les  >    >  **processus** Windows, puis ouvrez la boîte de dialogue **processus** . (Raccourci : Ctrl+Alt+Z) Pour détacher un processus spécifique, ouvrez son menu contextuel, puis sélectionnez **Détacher le processus**. Vous pouvez aussi afficher le nœud d’instance dans l’Explorateur de serveurs, rechercher le processus et ouvrir son menu contextuel, puis sélectionnez **Détacher le processus**.
 
     ![Processus de débogage](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 

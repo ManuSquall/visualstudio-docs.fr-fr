@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844747"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Récupère une liste des chemins de code pour une position donnée dans un fichier source.
@@ -28,7 +28,7 @@ Récupère une liste des chemins de code pour une position donnée dans un fichi
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumCodePaths( 
+HRESULT EnumCodePaths( 
    LPCOLESTR            pszHint,
    IDebugCodeContext2*  pStart,
    IDebugStackFrame2*   pFrame,
@@ -39,7 +39,7 @@ HRESULT EnumCodePaths( 
 ```
 
 ```csharp
-int EnumCodePaths( 
+int EnumCodePaths( 
    string                 pszHint,
    IDebugCodeContext2     pStart,
    IDebugStackFrame2      pFrame,
@@ -68,10 +68,10 @@ dans Valeur différente de zéro ( `TRUE` ) si dans la vue **source** , ou zéro
 `ppSafety`\
 à Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente un contexte de code supplémentaire à définir comme point d’arrêt si le chemin d’accès au code choisi est ignoré. Cela peut se produire dans le cas d’une expression booléenne de court-circuit, par exemple.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un chemin d’accès de code décrit le nom d’une méthode ou d’une fonction qui a été appelée pour atteindre le point actuel dans l’exécution du programme. Une liste de chemins de code représente la pile des appels.
 
 ## <a name="see-also"></a>Voir aussi

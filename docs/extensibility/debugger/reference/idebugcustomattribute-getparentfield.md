@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fae84a4d02438335aea00c50dd9b89520d08bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9845954a2be9ec57edb6ca555fb89a6ad20f7d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842470"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Obtient le champ auquel l’attribut personnalisé est attaché.
@@ -28,7 +28,7 @@ Obtient le champ auquel l’attribut personnalisé est attaché.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetParentField( 
+HRESULT GetParentField( 
    IDebugField** ppField
 );
 ```
@@ -43,10 +43,10 @@ int GetParentField(
 `ppField`\
 à Retourne l’objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente le champ auquel l’attribut personnalisé est attaché.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Appelez la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sur l’objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) retourné pour déterminer le type de champ du parent.
 
 ## <a name="see-also"></a>Voir aussi

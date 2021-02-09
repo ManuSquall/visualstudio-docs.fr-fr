@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7be649a5d65f88d8263bbe8950fda1a157855ed2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 808c2f57d0fdf8f5f629b21d3c02507eecd49bd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842418"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 Détermine si un attribut personnalisé existe par son nom.
@@ -28,7 +28,7 @@ Détermine si un attribut personnalisé existe par son nom.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT IsCustomAttributeDefined( 
+HRESULT IsCustomAttributeDefined( 
    LPCOLESTR pszCustomAttributeName
 );
 ```
@@ -43,10 +43,10 @@ int IsCustomAttributeDefined(
 `pszCustomAttributeName`\
 dans Chaîne contenant le nom de l’attribut personnalisé à rechercher.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Retourne S_OK si l’attribut personnalisé est défini sur ce champ ; sinon, retourne S_FALSE.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pour obtenir les octets d’attribut associés à l’attribut personnalisé, appelez la méthode [GetCustomAttributeByName,](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) .
 
 ## <a name="see-also"></a>Voir aussi

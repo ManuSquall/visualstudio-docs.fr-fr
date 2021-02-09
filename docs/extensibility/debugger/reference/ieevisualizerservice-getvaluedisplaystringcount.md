@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c1a664594e55b8db21562a650c2c750668c2584
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97b06179027549c0bebe83b2b4866e53c8fd9569
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842257"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Récupère le nombre de chaînes de valeurs à afficher pour la propriété ou le champ spécifié.
@@ -52,7 +52,7 @@ dans Interface [IDebugField](../../../extensibility/debugger/reference/idebugfie
 `pcelt`\
 à Retourne le nombre de chaînes de valeurs à afficher.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

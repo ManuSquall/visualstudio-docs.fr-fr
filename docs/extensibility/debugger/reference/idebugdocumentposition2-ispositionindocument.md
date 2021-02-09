@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d92dddda8fd9831f5d66b602cd48fdbbc3dbcf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17a3623ab0a674b49d96d6eb77f04ec0de9a2fb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842250"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Détermine si la position du document est contenue dans le document donné.
@@ -28,13 +28,13 @@ Détermine si la position du document est contenue dans le document donné.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT IsPositionInDocument( 
+HRESULT IsPositionInDocument( 
    IDebugDocument2* pDoc
 );
 ```
 
 ```csharp
-int IsPositionInDocument( 
+int IsPositionInDocument( 
    IDebugDocument2 pDoc
 );
 ```
@@ -43,10 +43,10 @@ int IsPositionInDocument( 
 `pDoc`\
 dans Objet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) qui représente le candidat au document conteneur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode est principalement utilisée pour définir des points d’arrêt dans les interfaces [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) . À mesure que des documents sont chargés, la position du point d’arrêt est appelée pour déterminer si le document contient cette position.
 
 ## <a name="see-also"></a>Voir aussi

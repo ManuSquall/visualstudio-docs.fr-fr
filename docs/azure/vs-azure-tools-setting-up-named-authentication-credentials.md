@@ -2,17 +2,17 @@
 title: Configurer les informations d’authentification nommées | Microsoft Docs
 description: Découvrez comment fournir des informations d’identification que Visual Studio pourra utiliser pour authentifier les demandes effectuées auprès d’Azure, afin que vous puissiez publier une application dans Azure à partir de Visual Studio ou surveiller un service cloud existant.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 059ac654f13ed833e80464e74e18a6cb8b0f8132
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: bd4c1864539d915e34b286debb3f6b2f739049d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843798"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurer les informations d’authentification nommées
 

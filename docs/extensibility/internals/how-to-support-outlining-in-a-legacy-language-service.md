@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a7d2dc2b12ee20b96cad27cb56bf0e4552e3f7c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844591"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Comment : prendre en charge le mode plan dans un service de langage hérité
 Le mode plan est utilisé pour développer ou réduire différentes zones de texte. La façon dont le mode plan est utilisé peut être définie différemment selon les différentes langues. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md).

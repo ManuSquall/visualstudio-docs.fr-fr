@@ -2,17 +2,17 @@
 title: Créer un projet de service cloud Azure
 description: Apprenez dès maintenant à créer un projet de service cloud Azure avec Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d652172bde2ecd3aea4bb027e46173eaa5fe7b17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844500"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Créer un projet de service cloud Azure avec Visual Studio
 
@@ -58,10 +58,10 @@ Cette section vous guide dans le processus de création d’un projet de service
 
 Le projet Azure Visual Studio est associé aux projets de rôle de la solution. Le projet comprend également le *fichier de définition de service* et le *fichier de configuration de service* :
 
-- **Fichier de définition de service** : définit les paramètres d’exécution de votre application, y compris les rôles requis, les points de terminaison et la taille de la machine virtuelle.
+- **Fichier de définition de service** : définit les paramètres d’exécution de votre application, notamment les rôles nécessaires, les points de terminaison et la taille de la machine virtuelle.
 - **Fichier de configuration de service** : configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle.
 
-Pour plus d’informations sur ces fichiers,voir [Configuration des rôles pour un service cloud Azure avec Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
+Pour plus d’informations sur ces fichiers, consultez [configurer les rôles pour un service Cloud Azure avec Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 - [Gestion des rôles dans les projets de service cloud Azure avec Visual Studio](./vs-azure-tools-cloud-service-project-managing-roles.md)
