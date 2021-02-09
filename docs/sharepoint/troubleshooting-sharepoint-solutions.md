@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970280"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892292"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Résoudre les problèmes des solutions SharePoint
   Les problèmes ou alertes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide du [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de solutions de flux de travail SharePoint 2007](/previous-versions/bb386166(v=vs.100)).

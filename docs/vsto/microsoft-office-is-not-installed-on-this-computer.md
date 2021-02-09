@@ -11,15 +11,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f09c7c454836c0eb957b9ecc459b75b7fba868db
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc04cf3d6217792b105da7df3215d65116fd47f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892045"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office n’est pas installé sur l’ordinateur
   Visual Studio ne peut pas trouver l’application Microsoft Office qui correspond au type de projet. Si vous développez un projet de complément VSTO, cela signifie que vous ne pouvez pas déboguer ou exécuter le projet. Si vous essayez de créer un projet au niveau du document, cela signifie que vous ne pouvez pas créer le projet.

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 491a2c5ab0bcb923d9999bd55249150d33a650ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891863"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage
 Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Graphics Diagnostics pour examiner un objet qui est mal coloré en raison d’un bogue de nuanceur.
@@ -35,7 +35,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code
 
  ![Objet rendu avec des couleurs incorrectes.](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
 
-## <a name="investigation"></a>Examen
+## <a name="investigation"></a>Investigation
  À l'aide des outils Graphics Diagnostics, vous pouvez charger le document du journal de graphisme pour examiner les frames capturés pendant le test.
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphisme
@@ -94,7 +94,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code
 output.color = float3(0.0f, 0.0f, 0.0f);
 ```
 
- to
+ par
 
 ```hlsl
 output.color = input.color;

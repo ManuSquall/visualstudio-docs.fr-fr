@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970371"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892331"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modèles de projet et d’élément de projet SharePoint
   Les sections suivantes décrivent les modèles de projet et d’élément de projet SharePoint disponibles, ainsi que leur utilisation.
@@ -59,7 +59,7 @@ ms.locfileid: "95970371"
  Les projets *WebPart Silverlight SharePoint 2010* vous permettent de créer des composants WebPart pour SharePoint qui affichent des applications Silverlight. Lorsque vous créez ce projet, vous pouvez spécifier s’il faut y ajouter une nouvelle application Silverlight ou en faire référence. Pour plus d’informations, consultez [créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) et [procédure pas à pas : créer un composant WebPart Silverlight qui affiche OData pour SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).
 
 ### <a name="sharepoint-2010-visual-web-part"></a>Composant Visual Web part de SharePoint 2010
- Un projet de *composant Visual Web Part SharePoint 2010* comprend un fichier de définition de *Elements.xml* , un élément de **composant WebPart** et un élément de **contrôle utilisateur** . Vous pouvez concevoir l’apparence du composant Visual Web part en faisant glisser ou en copiant des contrôles de la boîte à outils Visual Studio vers la surface du contrôle utilisateur. Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) et d’un [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
+ Un projet de *composant Visual Web Part SharePoint 2010* comprend un fichier de définition de *Elements.xml* , un élément de **composant WebPart** et un élément de **contrôle utilisateur** . Vous pouvez concevoir l’apparence du composant Visual Web part en faisant glisser ou en copiant des contrôles de la boîte à outils Visual Studio vers la surface du contrôle utilisateur. Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) et d’un [bloc de construction : WebParts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
 ### <a name="import-sharepoint-2010-solution-package"></a>Importer le package de solution SharePoint 2010
  Importer des projets de *package de solution sharepoint 2010* vous permet d’importer la totalité ou une partie d’un site SharePoint 2010 existant, exporté vers un fichier de solution SharePoint (*. wsp*), dans Visual Studio. Une fois importés dans Visual Studio, vous pouvez personnaliser ses éléments et les redéployer. Pour plus d’informations, consultez [importer des éléments à partir d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).
@@ -134,13 +134,13 @@ ms.locfileid: "95970371"
  Un *flux de travail d’ordinateur d’État* est un ensemble d’États, de transitions et d’actions de logique métier. Les étapes d’un workflow d’ordinateur d’État ne sont pas effectuées dans l’ordre. au lieu de cela, ils sont déclenchés par des actions et des États. À l’instar d’un workflow séquentiel, les flux de travail d’ordinateur d’État sont associés à des éléments SharePoint, tels que des listes et des documents. Une fois encore, vous pouvez créer des flux de travail au niveau du site (Global) ou des flux de travail au niveau de la liste (local). Vous pouvez également choisir si un flux de travail démarre automatiquement ou manuellement. Cet élément de projet ne peut être utilisé que dans les solutions de batterie. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md), [flux de travail dans SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))et [Nouveautés : améliorations du flux](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))de travail.
 
 ### <a name="user-control-farm-solution-only"></a>Contrôle utilisateur (solution de batterie uniquement)
- Un *contrôle utilisateur* est un contrôle personnalisé, réutilisable, auquel vous pouvez ajouter d’autres contrôles ASP.net et contrôles SharePoint. Le contrôle utilisateur peut être ajouté aux pages d’application et aux composants WebPart qui s’exécutent dans SharePoint. Cet élément de projet ne peut être utilisé que dans les solutions de batterie. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [création de contrôles réutilisables pour des composants WebPart ou des pages d’application](creating-reusable-controls-for-web-parts-or-application-pages.md).
+ Un *contrôle utilisateur* est un contrôle personnalisé, réutilisable, auquel vous pouvez ajouter d’autres contrôles ASP.net et contrôles SharePoint. Le contrôle utilisateur peut être ajouté aux pages d’application et aux composants WebPart qui s’exécutent dans SharePoint. Cet élément de projet ne peut être utilisé que dans les solutions de batterie. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [création de contrôles réutilisables pour des WebParts ou des pages d’application](creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ### <a name="visual-web-part"></a>Composant Visual Web part
- Un élément de projet de *composant Visual Web part* comprend un fichier de définition de *Elements.xml* , un élément de **composant WebPart** et un élément de **contrôle utilisateur** . Vous pouvez concevoir l’apparence du composant Visual Web part en faisant glisser ou en copiant des contrôles de la boîte à outils Visual Studio vers la surface du contrôle utilisateur. Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) et d’un [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
+ Un élément de projet de *composant Visual Web part* comprend un fichier de définition de *Elements.xml* , un élément de **composant WebPart** et un élément de **contrôle utilisateur** . Vous pouvez concevoir l’apparence du composant Visual Web part en faisant glisser ou en copiant des contrôles de la boîte à outils Visual Studio vers la surface du contrôle utilisateur. Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) et d’un [bloc de construction : WebParts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
 ### <a name="web-part"></a>Composant WebPart
- Un *composant WebPart* est un contrôle côté serveur qui s’exécute à l’intérieur d’un type de page spécial appelé page de composants WebPart. Il s’agit des blocs de construction des pages qui s’affichent sur un site SharePoint. L’élément WebPart fournit des fichiers qui vous permettent de concevoir un composant WebPart pour un site SharePoint. Pour plus d’informations, consultez [procédure : créer un composant WebPart SharePoint et un](../sharepoint/how-to-create-a-sharepoint-web-part.md) [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
+ Un *composant WebPart* est un contrôle côté serveur qui s’exécute à l’intérieur d’un type de page spécial appelé page de composants WebPart. Il s’agit des blocs de construction des pages qui s’affichent sur un site SharePoint. L’élément WebPart fournit des fichiers qui vous permettent de concevoir un composant WebPart pour un site SharePoint. Pour plus d’informations, consultez [procédure : créer un composant WebPart SharePoint et un](../sharepoint/how-to-create-a-sharepoint-web-part.md) [bloc de construction : WebParts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
 ## <a name="see-also"></a>Voir aussi
 - [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)

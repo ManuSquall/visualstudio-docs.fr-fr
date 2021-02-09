@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168b0813eb99f4f70c8a5d8ffbdae4f6fce2094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730357"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892617"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 Surveille l’exécution (ou arrête la surveillance de l’exécution) sur le thread donné.
@@ -28,7 +28,7 @@ Surveille l’exécution (ou arrête la surveillance de l’exécution) sur le t
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT WatchForThreadStep( 
+HRESULT WatchForThreadStep( 
    IDebugProgram2* pOriginatingProgram,
    DWORD           dwTid,
    BOOL            fWatch,
@@ -37,7 +37,7 @@ HRESULT WatchForThreadStep( 
 ```
 
 ```csharp
-int WatchForThreadStep( 
+int WatchForThreadStep( 
    IDebugProgram2 pOriginatingProgram,
    uint           dwTid,
    int            fWatch,
@@ -58,10 +58,10 @@ dans Une valeur différente de zéro ( `TRUE` ) signifie que commence à surveil
 `dwFrame`\
 dans Spécifie un index de frame qui contrôle le type d’étape. Quand la valeur est égale à zéro (0), le type d’étape est « pas à pas détaillé » et le programme doit s’arrêter chaque fois que le thread identifié par `dwTid` s’exécute. Lorsque `dwFrame` est différent de zéro, le type d’étape est « pas à pas principal » et le programme doit s’arrêter uniquement si le thread identifié par `dwTid` s’exécute dans un frame dont l’index est supérieur ou égal à la pile `dwFrame` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Quand le gestionnaire de débogage de session (SDM) suit un programme, identifié par le `pOriginatingProgram` paramètre, il notifie tous les autres programmes attachés en appelant cette méthode.
 
  Cette méthode s’applique uniquement au pas à pas du même thread.

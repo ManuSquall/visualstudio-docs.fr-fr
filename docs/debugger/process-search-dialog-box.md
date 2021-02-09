@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891515"
 ---
 # <a name="process-search-dialog-box"></a>Boîte de dialogue Recherche d'un processus
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans la [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre vue **processus** . Choisissez ensuite **Rechercher le processus** dans le menu **Rechercher** .

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892318"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Procédures pas à pas pour le développement SharePoint
   Les procédures pas à pas suivantes montrent comment développer et déployer des solutions SharePoint à l’aide de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -47,7 +47,7 @@ ms.locfileid: "95970321"
 |[Procédure pas à pas : créer un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Montre comment créer un composant WebPart à l’aide du modèle d’élément **WebPart** dans Visual Studio.|
 |[Procédure pas à pas : créer un composant WebPart pour SharePoint à l’aide d’un concepteur](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Montre comment créer visuellement un composant WebPart à l’aide du modèle de projet **composant Visual Web part** SharePoint dans Visual Studio.|
 
-## <a name="workflows"></a>Flux de travail
+## <a name="workflows"></a>Workflows
 
 |Rubrique|Description|
 |-----------|-----------------|
@@ -70,7 +70,7 @@ ms.locfileid: "95970321"
 |-----------|-----------------|
 |[Procédure pas à pas : création d’une liste externe dans SharePoint à l’aide de données d’entreprise](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Montre comment créer un modèle pour le service BDC qui retourne des informations sur les contacts dans un exemple de base de données.|
 
-## <a name="packaging-and-deployment"></a>Empaquetage et déploiement
+## <a name="packaging-and-deployment"></a>Déploiement et packaging
 
 |Rubrique|Description|
 |-----------|-----------------|
@@ -92,8 +92,8 @@ ms.locfileid: "95970321"
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Procédure pas à pas : étendre Explorateur de serveurs pour afficher des composants WebPart](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Montre comment ajouter de nouveaux nœuds pour afficher les composants WebPart dans les sites SharePoint qui sont affichés dans Explorateur de serveurs. Cette procédure pas à pas montre également comment créer une commande SharePoint pour appeler le modèle d’objet serveur SharePoint.|
-|[Procédure pas à pas : appel du modèle d’objet client SharePoint dans une extension de Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Montre comment ajouter de nouveaux nœuds pour afficher les composants WebPart dans les sites SharePoint qui sont affichés dans Explorateur de serveurs. Cette procédure pas à pas montre également comment utiliser le modèle d’objet client SharePoint.|
+|[Procédure pas à pas : étendre Explorateur de serveurs pour afficher des composants WebPart](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Montre comment ajouter de nouveaux nœuds pour afficher les WebParts dans les sites SharePoint qui sont affichés dans Explorateur de serveurs. Cette procédure pas à pas montre également comment créer une commande SharePoint pour appeler le modèle d’objet serveur SharePoint.|
+|[Procédure pas à pas : appel du modèle d’objet client SharePoint dans une extension de Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Montre comment ajouter de nouveaux nœuds pour afficher les WebParts dans les sites SharePoint qui sont affichés dans Explorateur de serveurs. Cette procédure pas à pas montre également comment utiliser le modèle d’objet client SharePoint.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Exemples et procédures pas à pas relatifs au développement SharePoint](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 03da1c8052140bbe23ce4d99c12d72baef18898f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891954"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Vue d’ensemble du développement des solutions Office (VSTO)
   En utilisant Microsoft Office comme partie frontale des solutions, vous pouvez tirer parti des interfaces utilisateur et outils Microsoft Office familiers tels que les fonctionnalités de traitement de texte dans Word, les fonctionnalités d'analyse des données d'Excel et les fonctionnalités de gestion de la messagerie électronique d'Outlook. Vous pouvez développer des solutions dans Visual Studio pour personnaliser des applications Office et ajouter les fonctionnalités spécifiques dont vous avez besoin pour vos processus métier. Par exemple, vous pouvez transformer Word en générateur de contrats qui assemble des contrats à partir de parties préexistantes qui peuvent être modifiables ou non. Avec Excel, vous pouvez créer une feuille de calcul de budget automatisée personnalisée pour différents projets. Vos utilisateurs peuvent aussi mettre des solutions Office hors connexion, ce qui permet de rendre des solutions complexes plus pratiques qu'elles ne le seraient en utilisant une architecture basée sur le Web.
@@ -81,7 +81,7 @@ ms.locfileid: "97527709"
 ### <a name="deployment-options"></a>Options de déploiement
  Utilisez ClickOnce ou Windows Installer pour déployer les solutions que vous créez à l'aide des Outils de développement Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le déploiement ClickOnce vous permet de créer des solutions à mise à jour automatique qui peuvent être installées et exécutées avec une intervention minimale de l'utilisateur. Les fichiers Windows Installer (*. msi*) peuvent être facilement distribués aux ordinateurs des utilisateurs finaux ou distribués à l’aide de Systems Management Server (SMS). Pour plus d’informations sur le déploiement de solutions Office VSTO, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
-### <a name="install-prerequisites"></a>Installer les prérequis
+### <a name="install-prerequisites"></a>Prérequis à installer
  Avant que les utilisateurs finaux ne puissent exécuter une solution créée à l'aide des Outils de développement Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], certains composants doivent être installés sur leur ordinateur. Si vous déployez votre solution en utilisant ClickOnce ou en créant un fichier Windows Installer, ces composants requis peuvent être installés avec votre solution. Pour plus d’informations, consultez [Configuration requise pour la solution Office pour le déploiement](/previous-versions/bb608617(v=vs.110)) et [procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](/previous-versions/bb608608(v=vs.110)).
 
 ### <a name="security"></a>Sécurité

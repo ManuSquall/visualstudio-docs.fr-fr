@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c2ab7b701163e22a5cc3ff386f447c5199ff15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892565"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 Cette méthode obtient le nom de la constante d’énumération en fonction de sa valeur.
@@ -48,7 +48,7 @@ dans Valeur pour laquelle obtenir le nom de la constante d’énumération.
 `pbstrValue`\
 à Retourne le nom de la constante d’énumération.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` si la valeur n’a pas de nom associé ou retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

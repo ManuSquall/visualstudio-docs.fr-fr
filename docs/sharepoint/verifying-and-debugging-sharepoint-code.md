@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, unit testing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d406afbc0a8506262f1bdc17310802b7f41a931a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892136"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Vérifier et déboguer le code SharePoint
 À l’aide d’IntelliTrace et du test unitaire, déboguez vos solutions SharePoint plus facilement et assurez-vous que chacune de leur méthode fonctionne correctement. Vous pouvez utiliser ces fonctionnalités pour les projets SharePoint dans Visual Studio en suivant les mêmes procédures que pour d’autres types de projets.

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892305"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Résoudre les problèmes d’empaquetage et de déploiement SharePoint
   Cette rubrique couvre différents problèmes que vous pouvez rencontrer lorsque vous empaquetez et déployez des solutions SharePoint.
@@ -52,7 +52,7 @@ ms.locfileid: "95969945"
 |Valeur|Description|
 |-----------|-----------------|
 |Automatique|Détecte les collisions et résout automatiquement les conflits.|
-|Prompt|Détecte les collisions et les signale au développeur avant de résoudre les conflits.|
+|Invite|Détecte les collisions et les signale au développeur avant de résoudre les conflits.|
 |None|Ne détecte pas les collisions.|
 
 ## <a name="differences-between-f5-deployment"></a>Différences entre le déploiement F5

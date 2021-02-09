@@ -36,15 +36,15 @@ helpviewer_keywords:
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70f047fa84513821812a13f7dee3136d2d431d9a
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: be6684ed1801bc825bcb0db236737f33fe3901af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891798"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Comment : utiliser les contrôles natifs à l'exécution
 Dans un projet Visual Studio C++, vous pouvez utiliser des [runtime_checks](/cpp/preprocessor/runtime-checks) natifs pour intercepter les erreurs d’exécution courantes, telles que :

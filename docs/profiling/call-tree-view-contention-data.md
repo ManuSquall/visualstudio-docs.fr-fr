@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 974eeccbb1f4691c00fafad65fadef7c909a7ed2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d6c444bba23ca216b058544d0ceae0d3d312fd4d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892370"
 ---
 # <a name="call-tree-view---contention-data"></a>Vue Arborescence des appels - Données de conflit
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction répertorie toutes les fonctions appelées, le nombre de fois où la fonction a été bloquée, et la durée pendant laquelle la fonction a été bloquée car elle était en conflit pour une ressource avec d’autres threads ou processus.

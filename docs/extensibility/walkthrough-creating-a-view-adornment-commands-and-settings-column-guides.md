@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892448"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : créer un ornement, des commandes et des paramètres d’affichage (repères de colonne)
 Vous pouvez étendre l’éditeur de texte/Code de Visual Studio avec des commandes et des effets de vue. Cet article explique comment prendre en main une fonctionnalité d’extension populaire, repères de colonne. Les repères de colonne sont des lignes visuelles qui s’affichent dans la vue de l’éditeur de texte pour vous aider à gérer votre code à des largeurs de colonne spécifiques. Plus précisément, le code mis en forme peut être important pour les exemples que vous incluez dans des documents, des billets de blog ou des rapports de bogues.
@@ -33,7 +33,7 @@ Lors de cette procédure pas à pas, vous allez effectuer les opérations suivan
   > [!NOTE]
   > Dans cette procédure pas à pas, vous collez une grande quantité de code dans quelques fichiers générés par les modèles d’extension Visual Studio. Mais bientôt, cette procédure pas à pas fera référence à une solution terminée sur GitHub avec d’autres exemples d’extensions. Le code complet est légèrement différent en ce qu’il contient des icônes de commandes réelles au lieu d’utiliser des icônes generictemplate.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Configurer la solution

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892279"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Référence du schéma d’élément de projet SharePoint
   Visual Studio utilise le schéma d’élément de projet SharePoint pour valider le contenu des fichiers *. resdonnées* . Un fichier *. resdonnées* spécifie le contenu et le comportement d’un élément de projet SharePoint. Pour plus d’informations sur le contenu des éléments de projet SharePoint, consultez [créer des modèles d’élément et des modèles de projet pour les éléments de projet SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -51,7 +51,7 @@ ms.locfileid: "95442545"
 |[ProjectItemFolder,](../sharepoint/projectitemfolder-element.md)|Représente un dossier mappé.|
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Représente la sortie d’un projet à inclure avec l’élément de projet lorsqu’il est déployé sur SharePoint.|
 |[SafeControl](../sharepoint/safecontrol-element.md)|Représente un contrôle ASPX ou un composant WebPart qui est désigné comme sécurisé pour tout utilisateur qui peut accéder à n’importe quelle page ASPX sur le site SharePoint.|
-|[SafeControls](../sharepoint/safecontrols-element.md)|Représente une collection de contrôles ASPX et composants WebPart désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.|
+|[SafeControls](../sharepoint/safecontrols-element.md)|Représente une collection de contrôles ASPX et WebParts désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des modèles d’élément et des modèles de projet pour les éléments de projet SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

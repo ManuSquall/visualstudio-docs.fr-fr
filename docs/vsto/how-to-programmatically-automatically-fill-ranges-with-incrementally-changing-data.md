@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892071"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Comment : remplir automatiquement des plages par programmation avec des données à modification incrémentielle
   La <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode de l' <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de remplir automatiquement une plage dans une feuille de calcul avec des valeurs. La plupart du temps, la <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode est utilisée pour stocker de façon incrémentielle des valeurs croissantes ou décroissantes dans une plage. Vous pouvez spécifier le comportement en fournissant une constante facultative à partir de l' <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> énumération.
@@ -39,7 +39,7 @@ ms.locfileid: "96847206"
     > [!NOTE]
     > Vous ne pouvez pas passer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à la place de <xref:Microsoft.Office.Interop.Excel.Range> . Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
  [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
 

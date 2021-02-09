@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c73af4f40abddaaba15e3b2cc785ab412e8884e4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2f924e46fa4d32fbea9071bd8a19268f2ee1652e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891876"
 ---
 # <a name="search-the-schema-set"></a>Effectuer des recherches dans le jeu de schémas
 
@@ -45,7 +45,7 @@ L' **Explorateur de schémas XML** comprend également des recherches intégrée
 
 ## <a name="display-and-navigate-search-results"></a>Afficher et parcourir les résultats de la recherche
 
-Une fois la recherche terminée, le volet de synthèse des résultats est ajouté à la barre d'outils avec les résultats de la recherche. Les résultats de la recherche sont également mis en surbrillance dans l' **Explorateur de schémas XML** et marqués par des graduations sur la barre de défilement verticale. Vous pouvez parcourir les résultats de la recherche en utilisant les boutons **aller au résultat de la recherche suivant** et **aller au résultat de la recherche précédent** dans le volet des résultats Résumé de la barre d’outils de l' **Explorateur de schémas XML** . en utilisant les touches du clavier **F3** et **MAJ** + **F3** ; ou en cliquant sur les graduations dans la barre de défilement.
+Une fois la recherche terminée, le volet de synthèse des résultats est ajouté à la barre d'outils avec les résultats de la recherche. Les résultats de la recherche sont également mis en surbrillance dans l' **Explorateur de schémas XML** et marqués par des graduations sur la barre de défilement verticale. Vous pouvez parcourir les résultats de la recherche en utilisant les boutons **aller au résultat de la recherche suivant** et **aller au résultat de la recherche précédent** dans le volet des résultats Résumé de la barre d’outils de l' **Explorateur de schémas XML** . en utilisant les touches du clavier **F3** et **MAJ** + **F3**; ou en cliquant sur les graduations dans la barre de défilement.
 
 Vous pouvez ajouter les résultats de la recherche à l’espace de travail en cliquant sur le bouton **Ajouter les nœuds en surbrillance à l’espace de travail** dans le volet des résultats de résumé.
 

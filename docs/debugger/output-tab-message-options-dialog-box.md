@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: d9cb48f061cfda78e3dec8ef515df82fdefb8193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891577"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Onglet Sortie de la boîte de dialogue Options des messages
 Utilisez l’onglet **sortie** pour spécifier les données de chaque message à répertorier dans la [vue messages](../debugger/messages-view.md). Pour afficher la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **journaux des messages** dans le menu **Espion** .
