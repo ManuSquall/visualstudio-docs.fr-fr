@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 104e52619a34f1f2fd5b7aedbac98eafd7fdc189
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 233ee9e4583e893d38700088d54e4b0e5eacffb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846268"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Plume dans Blend pour Visual Studio
 
@@ -34,8 +34,8 @@ Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modi
 |Supprimer un point dans un tracé|Placez le curseur sur un point existant et cliquez.|![Supprimer un point du chemin](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Pointeur de suppression du stylet|
 |Fermer un tracé avec un angle aigu|Cliquez sur le point de départ.|![Fermer un tracé avec un angle aigu](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Pointeur de fermeture du stylet|
 |Fermer un tracé avec une courbe lisse au niveau de l'angle|Cliquez sur le point de départ et faites glisser pour modifier la poignée de tangente, avant de relâcher le bouton de la souris.|![Fermer un tracé avec une courbe lisse au niveau de l'angle](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Pointeur de fermeture du stylet|
-|Créer un angle aigu lors de la jonction de deux tracés|Sélectionnez deux tracés, cliquez sur l’outil **Plume** , et cliquez sur un point de terminaison de l’un des tracés, puis sur un point de terminaison de l’autre tracé.|![Créer un angle aigu lors de la jonction de deux tracés](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Pointeur de jonction du stylet|
-|Créer un angle arrondi lors de la jonction de deux tracés|Sélectionnez deux tracés, cliquez sur l’outil **Plume** , et cliquez sur un point de terminaison de l’un des tracés, puis faites glisser un point de terminaison de l’autre tracé.|![Créer un angle arrondi lors de la jonction de deux tracés](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Pointeur de jonction du stylet|
+|Créer un angle aigu lors de la jonction de deux tracés|Sélectionnez deux tracés, cliquez sur l’outil **Plume**, et cliquez sur un point de terminaison de l’un des tracés, puis sur un point de terminaison de l’autre tracé.|![Créer un angle aigu lors de la jonction de deux tracés](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Pointeur de jonction du stylet|
+|Créer un angle arrondi lors de la jonction de deux tracés|Sélectionnez deux tracés, cliquez sur l’outil **Plume**, et cliquez sur un point de terminaison de l’un des tracés, puis faites glisser un point de terminaison de l’autre tracé.|![Créer un angle arrondi lors de la jonction de deux tracés](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Pointeur de jonction du stylet|
 |Créer un tracé|Maintenez la touche **Ctrl** enfoncée et cliquez en dehors du tracé précédent pour cesser d’ajouter des points à ce tracé, puis cliquez ou faites glisser jusqu’à l’endroit où vous voulez que le nouveau tracé commence.|![Créer un tracé](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Pointeur de départ du stylet|
 
 ## <a name="see-also"></a>Voir aussi

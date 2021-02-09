@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9fdaf7172c00d80e5e7615bfcadcc1fb6233c257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847360"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>Concepteur d’activités RemoveFromCollection\<T>
 
@@ -36,7 +36,7 @@ Le concepteur d’activités **RemoveFromCollection \<T>** peut être déplacé 
 
 Le tableau suivant présente les <xref:System.Activities.Statements.RemoveFromCollection%601> Propriétés et décrit comment elles sont utilisées dans le concepteur :
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.RemoveFromCollection%601>. La valeur par défaut est RemoveFromCollection<Int32 \> .<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Élément à supprimer de la **collection \<T>**. Cet élément est de type *T*, qui est de type *TypeArgument*. Pour spécifier l'élément, tapez une expression Visual Basic dans la grille des propriétés.|

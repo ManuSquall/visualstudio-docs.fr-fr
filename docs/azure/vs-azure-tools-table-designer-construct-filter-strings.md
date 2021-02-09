@@ -2,17 +2,17 @@
 title: Construction de chaînes de filtrage pour le Concepteur de tables | Microsoft Docs
 description: Construction de chaînes de filtrage pour le Concepteur de tables
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846203"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construction de chaînes de filtrage pour le Concepteur de tables
 ## <a name="overview"></a>Vue d’ensemble
@@ -25,15 +25,15 @@ Les opérateurs logiques suivants sont pris en charge par tous les types de prop
 
 | Opérateur logique | Description | Exemple de chaîne de filtrage |
 | --- | --- | --- |
-| eq |Égal à |Ville eq 'Redmond' |
+| eq |Equal |Ville eq 'Redmond' |
 | gt |Supérieur à |Prix gt 20 |
 | ge |Supérieur ou égal à |Prix ge 10 |
 | lt |Inférieur à |Prix lt 20 |
 | le |Inférieur ou égal à |Prix le 100 |
 | ne |Différent de |Ville ne 'Londres' |
-| et |and |Prix le 200 and prix gt 3,5 |
+| and |and |Prix le 200 and prix gt 3,5 |
 | or |ou |Prix le 3,5 or prix gt 200 |
-| not |not |not isAvailable |
+| not |Not |not isAvailable |
 
 Quand vous créez une chaîne de filtrage, il est important de suivre les règles suivantes :
 

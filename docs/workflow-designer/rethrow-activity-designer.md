@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9195fc95ac905213b048aa16882ea6584adacd33
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2e3615c73583e8c5c313d23fd5f9aa6d9fcd5ff4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847321"
 ---
 # <a name="rethrow-activity-designer"></a>Concepteur d'activités Rethrow
 
@@ -35,9 +35,9 @@ Accédez au concepteur d’activités **Rethrow** dans la catégorie **gestion d
 
 Le tableau suivant présente les <xref:System.Activities.Statements.Rethrow> Propriétés et décrit comment elles sont utilisées dans le concepteur :
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Rethrow>. La valeur par défaut est Rethrow.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Rethrow>. La valeur par défaut est Rethrow.|
 
 ## <a name="see-also"></a>Voir aussi
 

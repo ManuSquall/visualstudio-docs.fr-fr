@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3efe97518b0952c1207eac97fe9151f36c686f43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846554"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 Spécifie les informations sur un thread à récupérer.
@@ -28,7 +28,7 @@ Spécifie les informations sur un thread à récupérer.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-enum enum_THREADPROPERTY_FIELDS { 
+enum enum_THREADPROPERTY_FIELDS { 
    TPF_ID           = 0x0001,
    TPF_SUSPENDCOUNT = 0x0002,
    TPF_STATE        = 0x0004,
@@ -41,7 +41,7 @@ typedef DWORD THREADPROPERTY_FIELDS;
 ```
 
 ```csharp
-public enum enum_THREADPROPERTY_FIELDS { 
+public enum enum_THREADPROPERTY_FIELDS { 
    TPF_ID           = 0x0001,
    TPF_SUSPENDCOUNT = 0x0002,
    TPF_STATE        = 0x0004,
@@ -74,14 +74,14 @@ public enum enum_THREADPROPERTY_FIELDS { 
  `TPF_ALLFIELDS`\
  Spécifie tous les champs.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Ces valeurs sont passées en tant qu’arguments à la méthode [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) pour indiquer les champs de la structure [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) à initialiser.
 
  Ces valeurs sont également utilisées dans `dwFields` le membre de la `THREADPROPERTIES` structure pour indiquer les champs qui sont utilisés et valides.
 
  Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

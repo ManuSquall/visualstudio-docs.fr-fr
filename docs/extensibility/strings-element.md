@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848010"
 ---
 # <a name="strings-element"></a>Élément Strings
 L’élément Strings doit contenir au moins un élément enfant **ButtonText** . Tous les autres éléments enfants sont facultatifs. Les caractères XML non valides tels que' & 'et' < 'doivent être codés en tant qu’entités (' &amp; 'et' &lt; ', etc.).
 
  Une esperluette dans la chaîne de texte spécifie le raccourci clavier de la commande.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```
 <Strings>
@@ -41,7 +41,7 @@ L’élément Strings doit contenir au moins un élément enfant **ButtonText** 
 
 |Attribut|Description|
 |---------------|-----------------|
-|langage|facultatif. Language = ".".|
+|langage|Facultatif. Language = ".".|
 
 ### <a name="child-elements"></a>Éléments enfants
 

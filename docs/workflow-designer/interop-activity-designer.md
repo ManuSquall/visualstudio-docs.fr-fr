@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: edf4658743bb719c1c23f93b2d1d3cc33afdbaba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847386"
 ---
 # <a name="interop-activity-designer"></a>Concepteur d'activités Interop
 
@@ -29,7 +29,7 @@ L'activité <xref:System.Activities.Statements.Interop> gère l'exécution des t
 
 ### <a name="use-the-interop-activity-designer"></a>Utiliser le concepteur d’activités Interop
 
-Le concepteur d’activités **Interop** se trouve dans la catégorie **migration** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** . Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **Interop** se trouve dans la catégorie **migration** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** . Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 La catégorie de [migration](../workflow-designer/migration-activity-designers.md) qui contient l' <xref:System.Activities.Statements.Interop> activité s’affiche uniquement dans la **boîte à outils** si votre projet cible .NET Framework 4 (complète) ou version ultérieure. Si nécessaire, vous pouvez modifier la version du Framework ciblée par votre projet.
 
@@ -41,10 +41,10 @@ Cliquez sur le **bouton Parcourir pour parcourir** le texte dans la zone **Activ
 
 Le tableau suivant présente les <xref:System.Activities.Statements.Interop> Propriétés et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou sur l’aire de Concepteur de flux de travail.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial de l'activité <xref:System.Activities.Statements.Interop>. La valeur par défaut est **Interop**. Bien que le nom d’affichage ne soit pas obligatoire, il est recommandé d’en fournir un.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Vrai|Spécifie le type de l'activité contenue par l'activité <xref:System.Activities.Statements.Interop>. Le type spécifié doit dériver d'<xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.Interop>. La valeur par défaut est **Interop**. Bien que le nom d’affichage ne soit pas obligatoire, il est recommandé d’en fournir un.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Spécifie le type de l'activité contenue par l'activité <xref:System.Activities.Statements.Interop>. Le type spécifié doit dériver d'<xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Voir aussi
 

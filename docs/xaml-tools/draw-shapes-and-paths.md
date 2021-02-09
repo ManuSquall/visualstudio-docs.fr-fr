@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847347"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 
@@ -26,7 +26,7 @@ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s�
 
 ## <a name="draw-a-shape"></a>Dessiner une forme
 
-Recherchez des formes dans la fenêtre **Composants** .
+Recherchez des formes dans la fenêtre **Composants**.
 
 :::image type="content" source="media/blend-shapes.png" alt-text="Capture d’écran de la catégorie formes de la fenêtre composants dans Blend pour Visual Studio":::
 
@@ -36,13 +36,13 @@ Faites glisser la forme de votre choix vers la planche graphique. Vous pouvez en
 
 ## <a name="draw-a-path"></a>Dessiner un tracé
 
-Un tracé est une série de lignes et de courbes reliées. Les tracés permettent de créer des formes intéressantes qui ne sont pas disponibles dans la fenêtre **Composants** .
+Un tracé est une série de lignes et de courbes reliées. Les tracés permettent de créer des formes intéressantes qui ne sont pas disponibles dans la fenêtre **Composants**.
 
-Vous pouvez dessiner un tracé à l'aide d'une ligne, d'une plume ou d'un crayon. Ces outils se trouvent dans la fenêtre **Outils** .
+Vous pouvez dessiner un tracé à l'aide d'une ligne, d'une plume ou d'un crayon. Ces outils se trouvent dans la fenêtre **Outils**.
 
 ### <a name="draw-a-straight-line"></a>Tracer une ligne droite
 
-Utilisez l’outil **Plume** ou l’outil **Ligne** .
+Utilisez l’outil **Plume** ou l’outil **Ligne**.
 
 **Utilisation de l’outil Plume**
 
@@ -54,7 +54,7 @@ Sur la planche graphique, faites glisser le curseur du point de départ de la li
 
 ### <a name="draw-a-curve"></a>Tracer une courbe
 
-Utilisez l’outil **Plume** .
+Utilisez l’outil **Plume**.
 
 Sur la planche graphique, cliquez une fois pour définir le point de départ d'une ligne, puis cliquez et faites glisser le pointeur pour créer la courbe souhaitée.
 
@@ -62,19 +62,19 @@ Si vous voulez clore le tracé, cliquez sur le premier point de la ligne.
 
 ### <a name="change-the-shape-of-a-curve"></a>Modifier la forme d'une courbe
 
-Utilisez l’outil **Sélection directe** .
+Utilisez l’outil **Sélection directe**.
 
 Cliquez sur la forme, puis faites glisser n'importe quel point sur la forme pour modifier les formes courbes.
 
 ### <a name="draw-a-free-form-path"></a>Dessiner un tracé de forme libre
 
-Utilisez l’outil **Crayon** .
+Utilisez l’outil **Crayon**.
 
 Sur la planche graphique, dessinez un tracé de forme libre comme vous le feriez avec un vrai crayon.
 
 ### <a name="remove-part-of-a-path"></a>Supprimer une partie d'un tracé
 
-Utilisez l’outil **Sélection directe** .
+Utilisez l’outil **Sélection directe**.
 
 Sélectionnez le tracé qui contient le segment à supprimer, puis cliquez sur le bouton **Supprimer** .
 
@@ -88,7 +88,7 @@ Utilisez l’outil **Sélection** pour sélectionner le tracé. Utilisez l’out
 
 ## <a name="convert-a-shape-to-a-path"></a>Convertir une forme en tracé
 
-Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé. Sélectionnez la forme, puis sélectionnez **Format**  >  **chemin d’accès** au format  >  **convertir en tracé** .
+Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé. Sélectionnez la forme, puis sélectionnez   >  **chemin d’accès** au format  >  **convertir en tracé**.
 
 **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : convertir une forme en tracé](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
@@ -101,7 +101,7 @@ Vous pouvez combiner des tracés et des formes pour en faire un seul et même tr
 
 ![Combiner des tracés](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Action|
+|Nombre|Action|
 |-|-|
 |![Les deux formes avant d'être combinées](../designers/media/b1_1.png)|Les deux formes avant d'être combinées|
 |![Unir](../designers/media/b1_2.png)|Unir|

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], common tasks in Visio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 49809b1d67ae8427ae1230987cb4ceb05e08fa44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847464"
 ---
 # <a name="work-with-visio-documents"></a>Utiliser des documents Visio
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l’utilisation du modèle objet de Microsoft Office Visio pour travailler avec des documents dans les projets Office.

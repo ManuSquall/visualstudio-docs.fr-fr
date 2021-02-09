@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c351eacc6fc3793065bcd11eb5456eebdc1864f3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 339e7a4ae7e75a58a8c0e96a1418232061393c99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846866"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Comment : rechercher un message dans la vue Messages
 Vous pouvez rechercher un message spécifique dans la vue messages en utilisant son handle, son type ou son ID de message en tant que critère de recherche. L’une d’entre elles (ou une combinaison) sera un critère de recherche valide. La direction initiale de la recherche peut également être spécifiée. Les champs de la boîte de dialogue sont préchargés avec les attributs du message actuellement sélectionné.

@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847828"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart Silverlight qui affiche OData pour SharePoint
   SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData. svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche les informations de liste d’annonces SharePoint à l’aide de ListData. svc. Pour plus d’informations, consultez [interface REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) et [Open Data Protocol](https://www.odata.org/).
@@ -224,7 +224,7 @@ ms.locfileid: "96914788"
 
 6. Dans la zone **catégories** , choisissez le dossier **personnalisé** .
 
-7. Dans la liste **composants WebPart** , choisissez le composant WebPart Silverlight, puis cliquez sur le bouton **Ajouter** pour ajouter le composant WebPart au concepteur.
+7. Dans la liste **WebParts** , choisissez le composant WebPart Silverlight, puis cliquez sur le bouton **Ajouter** pour ajouter le composant WebPart au concepteur.
 
 8. Une fois que vous avez apporté tous les ajouts à la page Web souhaités, choisissez l’onglet **page** , puis choisissez le bouton **Enregistrer & fermer** dans la barre d’outils.
 
