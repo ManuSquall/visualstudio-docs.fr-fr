@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6199c959a7186a1c10d6efdc30bb0763941c347a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926112"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Cette interface représente un processus en cours d’exécution et ses programmes. Cette interface existe en remplacement de plusieurs méthodes dans l’interface [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) . Il permet de contrôler tous les programmes du processus.
@@ -54,7 +54,7 @@ IDebugProcess3 : IDebugProcess2
 |[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Obtient l’État ENC pour ce processus.<br /><br /> Un fournisseur de port personnalisé n’implémente pas cette méthode (il doit toujours retourner `E_NOTIMPL` ).|
 |[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Récupère un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

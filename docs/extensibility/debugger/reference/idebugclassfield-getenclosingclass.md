@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91a4e04e26a57247a541c565ea4f0f392a413d39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925052"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 Obtient la classe qui englobe cette classe.
@@ -43,7 +43,7 @@ int GetEnclosingClass(
 `ppClassField`\
 à Retourne un objet [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) représentant la classe englobante. Retourne une valeur null s’il n’existe aucune classe englobante.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

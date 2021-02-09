@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f15cd788d19540bdea416b36ab0f8e8d8aa95e3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925603"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Comment : créer un composant WebPart SharePoint
   Vous pouvez créer et personnaliser un composant WebPart en ajoutant un élément **WebPart** à un projet SharePoint, puis en modifiant le fichier de code du composant WebPart ou à l’aide d’un concepteur. Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).

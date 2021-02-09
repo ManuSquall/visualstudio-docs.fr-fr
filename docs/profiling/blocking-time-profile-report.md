@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cfeb0b93b1819b4491b18b8e455b3c8d49be4d
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f5bdf15b220560562ccc2ae5c99100b5285b025
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925614"
 ---
 # <a name="blocking-time-profile-report"></a>Rapport du profil de temps de blocage
 Les rapports de profil rassemblent des données relatives au temps de blocage pour les piles d’appels qui sont spécifiques à chaque catégorie de blocage (par exemple « E/S » ou « Synchronisation »). Le rapport Anticipation répertorie les processus qui ont anticipé le processus en cours, ainsi que le nombre d’instances d’anticipations. Pour générer le rapport de profil de blocage, l’outil collecte des appels d’API bloquants et les rassemble au sein d’une arborescence de piles d’appels. Les données figurant dans ces rapports varient selon la plage horaire, les threads masqués et les deux filtres suivants qui peuvent être appliqués :
@@ -36,13 +36,13 @@ Les rapports de profil rassemblent des données relatives au temps de blocage po
 |Nom de la colonne|Description|
 |-----------------|-----------------|
 |**Nom**|Nom de la fonction pour chaque niveau de la pile des appels.|
-|**Fois**|Nombre d’instances de l’appel bloquant pendant la période visible.|
+|**Instances**|Nombre d’instances de l’appel bloquant pendant la période visible.|
 |**Durée de blocage inclusif**|Durée totale de blocage pour toutes les piles qui atteignent ce niveau de l’arborescence de la pile des appels. Le nombre inclusif correspond à la somme du temps de blocage exclusif de cette fonction et de celui de tous ses nœuds enfants.|
 |**Durée de blocage exclusif**|Durée totale de blocage au cours de laquelle cette fonction se trouve au niveau le plus bas de la pile des appels. Une entrée de pile d’appels unique dont le temps de blocage exclusif est élevé peut être une fonction intéressante.|
 |**API /Catégorie d’attente**|S’affiche uniquement pour les fonctions situées au niveau le plus bas de la pile des appels. Lorsque la signature de l’appel bloquant est reconnue, le nom de l’API bloquante est fourni. Si la signature n’est pas reconnue, les informations indiquées par le noyau sont fournies.|
 |**Détails**|Nom complet de la fonction. Peut contenir le nombre de lignes lorsque celui-ci est disponible.|
 
-### <a name="synchronization"></a>Synchronization
+### <a name="synchronization"></a>Synchronisation
  Le rapport Synchronisation affiche les appels responsables des segments qui se bloquent lors de la synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de synchronisation](../profiling/synchronization-time.md).
 
 ### <a name="sleep"></a>Veille

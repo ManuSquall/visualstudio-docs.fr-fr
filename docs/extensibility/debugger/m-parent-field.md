@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: da9e3dc7-8e9b-4c3a-a9e0-12921b5300c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d9d21cdd7fd89e075d15c0db1b0696deaa5cb46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3faec0c07af34de9dde796a2b49965a136f1af2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925250"
 ---
 # <a name="m_parent-field"></a>champ m_parent
 
@@ -35,4 +35,4 @@ Champ de stockage pour le parent de la tâche <xref:System.Threading.Tasks.Task>
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+- [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)

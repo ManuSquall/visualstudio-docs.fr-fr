@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f53d122138845c0b9711a78d2237972512710cb
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 7146abea7ddaba944a913e5f51164c5497c643c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925892"
 ---
 # <a name="visual-studio-sdk-reference"></a>Référence du kit de développement logiciel Visual Studio
 
 Cette section contient des informations sur les espaces de noms Visual Studio, les espaces de noms associés et d’autres domaines intéressants pour les développeurs qui utilisent le kit de développement logiciel (SDK) Visual Studio.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 - <xref:Microsoft.VisualStudio.TextManager.Interop> Interfaces d’interopérabilité héritées utilisées pour l’éditeur et les services de langage.
 

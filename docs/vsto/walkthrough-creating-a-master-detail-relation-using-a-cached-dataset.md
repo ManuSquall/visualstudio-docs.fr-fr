@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], Master/Detail Relation
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925503"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procédure pas à pas : créer une relation de détail maître à l’aide d’un DataSet mis en cache
   Cette procédure pas à pas illustre la création d’une relation maître/détail sur une feuille de calcul et la mise en cache des données afin que la solution puisse être utilisée en mode hors connexion.
@@ -51,7 +51,7 @@ ms.locfileid: "97524868"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
  Dans cette étape, vous allez créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -164,7 +164,7 @@ ms.locfileid: "97524868"
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que les données apparaissent comme prévu et que vous pouvez utiliser la solution en mode hors connexion.
 
 ### <a name="to-test-the-data-caching"></a>Pour tester la mise en cache des données
