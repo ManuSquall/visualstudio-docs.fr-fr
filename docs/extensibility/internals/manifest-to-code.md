@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839413"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 L’outil Manifest to Code est une application console qui accepte un fichier. imagemanifest pour le service d’images Visual Studio et génère un ou des fichiers de wrapper pour référencer les valeurs du manifeste d’image dans les fichiers C++, C#, VB ou. vsct pour les extensions Visual Studio. Cet outil génère des fichiers wrapper qui peuvent être utilisés pour demander directement des images du service d’images Visual Studio, ou pour transmettre les valeurs de manifeste via des API si le code ne gère pas sa propre interface utilisateur et son propre rendu.
@@ -27,7 +27,7 @@ L’outil Manifest to Code est une application console qui accepte un fichier. i
 
  **Arguments**
 
-|**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|
+|**Nom du commutateur**|**Remarques**|**Obligatoire ou facultatif**|
 |-|-|-|
 |/manifest|Chemin d’accès au manifeste d’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|
 |/Language|Langage dans lequel le wrapper de code doit être généré.<br /><br /> Valeurs valides : CPP, C++, CS, CSharp, C#, VB ou VSCT les valeurs ne respectent pas la casse.<br /><br /> Pour l’option de langue VSCT, les options/monikerClass,/classAccess et/namespace sont ignorées.|Obligatoire|
@@ -47,7 +47,7 @@ L’outil Manifest to Code est une application console qui accepte un fichier. i
 
 - ManifestToCode/manifest : D:\MyManifest.imagemanifest/Language : VSCT/imageIdClass : MyImageIds
 
-## <a name="notes"></a>Remarques
+## <a name="notes"></a>Notes
 
 - Nous vous recommandons d’utiliser cet outil avec les manifestes d’image générés par l’outil Manifest from Resources.
 

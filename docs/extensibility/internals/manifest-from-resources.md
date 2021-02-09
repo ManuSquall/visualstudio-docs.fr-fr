@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839426"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 L’outil Manifest from Resources est une application console qui prend une liste de ressources d’image (fichiers. png ou. Xaml) et génère un fichier. imagemanifest qui permet d’utiliser ces images avec le service d’images Visual Studio. En outre, cet outil peut être utilisé pour ajouter des images à un. imagemanifest existant. Cet outil est utile pour ajouter la prise en charge de la haute résolution et de l’utilisation des images à une extension Visual Studio. Le fichier. imagemanifest généré doit être inclus dans et déployé dans le cadre d’une extension Visual Studio (. VSIX).
@@ -27,7 +27,7 @@ L’outil Manifest from Resources est une application console qui prend une list
 
  **Arguments**
 
-|**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|
+|**Nom du commutateur**|**Remarques**|**Obligatoire ou facultatif**|
 |-|-|-|
 |/resources|Liste délimitée par des points-virgules d’images ou de répertoires. Cette liste doit toujours contenir la liste complète des images qui seront dans le manifeste. Si seule une liste partielle est indiquée, les entrées non incluses seront perdues.<br /><br /> Si un fichier de ressources donné est une bande d’image, l’outil le fractionne en images séparées avant d’ajouter chaque sous-image au manifeste.<br /><br /> Si l’image est un fichier. png, nous vous recommandons de mettre en forme le nom comme ceci afin que l’outil puisse remplir les attributs appropriés pour l’image : \<Name> .. \<Width> \<Height> . format.|Obligatoire|
 |/assembly|Nom de l’assembly managé (sans l’extension), ou chemin d’accès au moment de l’exécution de l’assembly natif qui héberge les ressources (relatif à l’emplacement d’exécution du manifeste).|Obligatoire|
@@ -50,7 +50,7 @@ L’outil Manifest from Resources est une application console qui prend une list
 
 - ManifestFromResources/resources:D:\Images\Image1.png ;D : \Images\Image1.xaml/assembly : My. assembly. Name/guidName : MyImages/newGuids/newIds
 
-## <a name="notes"></a>Remarques
+## <a name="notes"></a>Notes
 
 - L’outil prend en charge uniquement les fichiers. png et. Xaml. Toutes les autres types d’images ou de fichiers seront ignorés. Un avertissement est généré pour tous les types non pris en charge rencontrés lors de l’analyse des ressources. Si aucune image prise en charge n’est trouvée lorsque l’outil a terminé l’analyse des ressources, une erreur est générée.
 
