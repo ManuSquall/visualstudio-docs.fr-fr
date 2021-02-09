@@ -12,15 +12,15 @@ helpviewer_keywords:
 - shapes [Office development in Visual Studio], common tasks with Visio shapes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 928e4888c52e5b75a721bb7a1837d8db1ce267ea
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3e4ffa7cebc337127bf6c1c79be21b376d87568c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920207"
 ---
 # <a name="work-with-visio-shapes"></a>Utiliser des formes Visio
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l’utilisation du modèle objet de Microsoft Office Visio pour travailler avec des formes dans des projets Office.

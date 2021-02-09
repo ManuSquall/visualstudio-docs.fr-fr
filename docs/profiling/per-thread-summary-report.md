@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03797190097d3495a315fd0e0343fa9999100147
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2dcdc05697b3c23a050ee975fd4395a6822db3b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922300"
 ---
 # <a name="per-thread-summary-report"></a>Rapport Récapitulatif par thread
 Cet histogramme présente la proportion de temps que chaque thread non masqué passe dans chaque catégorie d’activité pendant la plage horaire actuellement visible. « Exécution » signifie que le thread est en cours d’exécution ; toutes les autres catégories impliquent que le thread est en attente d’une opération.

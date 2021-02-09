@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6433c1f2c540b040a3b3beccc264377e69592387
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab1462c30f1012eb1002f692672fc470cac3b39a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921003"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "80728491"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDebugFunctionObject : IDebugObject
+IDebugFunctionObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
@@ -49,7 +49,7 @@ IDebugFunctionObject : IDebugObject
 |[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|Crée un objet String.|
 |[Évaluer](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|Appelle la fonction et retourne la valeur résultante sous la forme d’un objet.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette interface permet à l’évaluateur d’expression de représenter des fonctions dans une arborescence d’analyse. Les `Create` méthodes de cette interface sont utilisées pour construire des objets représentant les paramètres d’entrée de la méthode. La fonction peut ensuite être exécutée en appelant la méthode [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) , qui retourne un objet représentant la valeur de retour de la fonction.
 
 ## <a name="requirements"></a>Configuration requise

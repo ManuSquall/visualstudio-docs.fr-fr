@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 124782a832d818cb405fd980f9d224f9e0b62fbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922449"
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
 La vue durée de vie des objets est disponible lorsque la case à cocher **collecter également les données de durée de vie des objets .net** est activée dans les pages de propriétés **session de performance** .
@@ -47,7 +47,7 @@ La vue durée de vie des objets est disponible lorsque la case à cocher **colle
 
 |Colonne|Description|
 |------------|-----------------|
-|**Fois**|Nombre d’allocations d’objets de ce type.|
+|**Instances**|Nombre d’allocations d’objets de ce type.|
 |**% du nombre total d’instances**|Pourcentage du nombre total d’allocations qui ont été effectuées lors de l’exécution du profilage.|
 |**Instances de la génération 0 collectées**|Nombre d’instances du type qui ont été désallouées dans la génération 0 de l’algorithme de garbage collection.|
 |**Instances de la génération 1 collectées**|Nombre d’instances du type qui ont été désallouées dans la génération 1 de l’algorithme de garbage collection.|

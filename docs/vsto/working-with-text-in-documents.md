@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 07b3ed9cc39e4eb23bec587516786cf28a940e40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920222"
 ---
 # <a name="work-with-text-in-documents"></a>Utiliser du texte dans des documents
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l'utilisation du modèle objet de Microsoft Office Word avec du texte dans des projets Office.

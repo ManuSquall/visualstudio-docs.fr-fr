@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5def7f6cc4ac5ced91ca0a273ce750003dca20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72993a4a02ce7d25858bf3bd4f0690e0d30f5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923097"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Cette interface représente un document texte.
@@ -25,7 +25,7 @@ Cette interface représente un document texte.
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDebugDocumentText2 : IDebugDocument2
+IDebugDocumentText2 : IDebugDocument2
 ```
 
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
@@ -39,7 +39,7 @@ IDebugDocumentText2 : IDebugDocument2
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Récupère la taille du texte à cette position dans le document.|
+|[GetSize,](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Récupère la taille du texte à cette position dans le document.|
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Récupère le texte à partir de la position spécifiée dans le document.|
 
 ## <a name="remarks"></a>Notes

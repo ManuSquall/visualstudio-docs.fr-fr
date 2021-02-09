@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Visio object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9278cede2dc7f105b2741d5d63b01b4cd966c790
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8d7a83b5a900defb63ceffe4f63d57e2b200c47b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921775"
 ---
 # <a name="visio-object-model-overview"></a>Vue d’ensemble du modèle objet Visio
   Pour développer les solutions Office pour Microsoft Office Visio, vous pouvez interagir avec le modèle objet Visio. Ce modèle objet se compose de classes et d'interfaces qui sont fournies dans l'assembly PIA de Visio et définies dans l'espace de noms `Microsoft.Office.Interop.Visio`.

@@ -8,15 +8,15 @@ dev_langs:
 helpviewer_keywords: ''
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 605c1dc7a7b0d24ba082767930fd53148cccbd95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920333"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddIn::Load
   Appelée quand un complément VSTO managé est chargé.
@@ -35,13 +35,13 @@ HRESULT Load([in] BSTR bstrManifestURL,
 |*bstrManifestURL*|Chemin d’accès complet du manifeste du complément VSTO.|
 |*pdispApplication*|Pointeur vers un IDispatch qui représente l’application hôte qui charge le complément VSTO.|
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Valeur HRESULT qui indique si la méthode a réussi.
 
 ## <a name="remarks"></a>Notes
  Un manifeste est un fichier (en général, un fichier XML) qui fournit des informations qui sont utilisées pour charger le complément VSTO. Par exemple, un manifeste peut spécifier l’emplacement de l’assembly du complément VSTO et la classe de point d’entrée à instancier lors du chargement du complément VSTO.
 
- Le paramètre *bstrManifestURL* contient la valeur de l' `Manifest` entrée sous la clé de Registre **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \\ _\<add-in ID>_ \Addins** pour le complément VSTO. Pour plus d’informations, consultez [IManagedAddin interface](../vsto/imanagedaddin-interface.md).
+ Le paramètre *bstrManifestURL* contient la valeur de l' `Manifest` entrée sous la clé de Registre **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_** pour le complément VSTO. Pour plus d’informations, consultez [IManagedAddin interface](../vsto/imanagedaddin-interface.md).
 
  Implémentez la méthode [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) pour effectuer des tâches telles que la configuration de la stratégie de sécurité et du domaine d’application pour le complément VSTO chargé.
 

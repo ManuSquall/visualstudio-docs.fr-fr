@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 424599d322c2c8dd4db8ff4e19bab60eceaefc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920992"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 Crée un objet qui utilise un constructeur donné des paramètres d’indicateur d’évaluation et une valeur de délai d’attente.
@@ -67,10 +67,10 @@ dans Durée d’attente maximale, en millisecondes, avant le retour de cette mé
 `ppObject`\
 à Retourne un **IDebugObject** représentant l’objet nouvellement créé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Appelez cette méthode pour créer un objet qui représente une instance d’une classe ou un autre type complexe qui requiert un constructeur, c’est-à-dire un paramètre.
 
 ## <a name="see-also"></a>Voir aussi

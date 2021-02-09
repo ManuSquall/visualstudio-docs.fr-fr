@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca6c8e92cd0b4755bd79b8e142a7e1d283f868d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 318e535d86dcd51f9c9bbfcfae8e228c8d7c20b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921348"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>Méthode GetScheduledTasksForDebugger
 Récupère un tableau de toutes les tâches planifiées.
@@ -35,7 +35,7 @@ Récupère un tableau de toutes les tâches planifiées.
 ## <a name="return-value"></a>Valeur de retour
  Tableau de toutes les tâches planifiées. Chaque tâche est en cours d’exécution ou a terminé son exécution.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode n’est pas thread-safe et vous ne devez pas l’utiliser simultanément avec d’autres instances de <xref:System.Threading.Tasks.TaskScheduler> . Appelez cette méthode à partir d’un débogueur uniquement lorsque le débogueur a suspendu tous les autres threads.
 
 ## <a name="see-also"></a>Voir aussi

@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920779"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactive
 
@@ -27,7 +27,7 @@ La fenêtre **interactive** de Visual Studio pour Python offre une expérience d
 > [!NOTE]
 > Pour les problèmes liés à REPL, vérifiez que les packages `ipython` et `ipykernel` sont installés. Pour obtenir de l’aide sur l’installation des packages, consultez [Onglet packages, Environnements Python](./python-environments-window-tab-reference.md#packages-tab).
 
-1. Ouvrez la fenêtre **interactive** en cliquant avec le bouton droit sur l’environnement python du projet dans **Explorateur de solutions** (par exemple **python 3,6 (32 bits)** présenté dans un graphique précédent) et en sélectionnant **ouvrir la fenêtre interactive**. Vous pouvez également sélectionner **Afficher**  >  les**autres**  >  **fenêtres Windows python interactives** dans le menu principal de Visual Studio.
+1. Ouvrez la fenêtre **interactive** en cliquant avec le bouton droit sur l’environnement python du projet dans **Explorateur de solutions** (par exemple **python 3,6 (32 bits)** présenté dans un graphique précédent) et en sélectionnant **ouvrir la fenêtre interactive**. Vous pouvez également sélectionner **Afficher**  >  les **autres**  >  **fenêtres Windows python interactives** dans le menu principal de Visual Studio.
 
 1. La fenêtre **interactive** s’ouvre en dessous de l’éditeur avec l' **>>>** invite de commandes REPL python standard. La liste déroulante **Environnement** vous permet de sélectionner un interpréteur spécifique à utiliser. Souvent, vous souhaitez également agrandir la fenêtre **interactive** , ce que vous pouvez faire en faisant glisser le séparateur entre les deux fenêtres :
 
@@ -59,7 +59,7 @@ La fenêtre **interactive** de Visual Studio pour Python offre une expérience d
     ![Envoi de code dans la fenêtre interactive et test de ce code](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
-    > L’utilisation de la **touche Ctrl** + **Enter** dans l’éditeur *sans* sélection exécute la ligne de code active dans la fenêtre **interactive** et place automatiquement le signe insertion sur la ligne suivante. Avec cette fonctionnalité, l’utilisation de la **touche Ctrl** + **entrée** à plusieurs reprises offre un moyen pratique de parcourir votre code, ce qui n’est pas possible avec la ligne de commande Python. Elle vous permet également de parcourir votre code pas à pas sans exécuter le débogueur et sans nécessairement démarrer votre programme à partir du début.
+    > L’utilisation de la **touche Ctrl** +  dans l’éditeur *sans* sélection exécute la ligne de code active dans la fenêtre **interactive** et place automatiquement le signe insertion sur la ligne suivante. Avec cette fonctionnalité, l’utilisation de la **touche Ctrl** + **entrée** à plusieurs reprises offre un moyen pratique de parcourir votre code, ce qui n’est pas possible avec la ligne de commande Python. Elle vous permet également de parcourir votre code pas à pas sans exécuter le débogueur et sans nécessairement démarrer votre programme à partir du début.
 
 1. Vous pouvez également copier et coller plusieurs lignes de code dans la fenêtre **interactive** à partir de n’importe quelle source, comme l’extrait de code ci-dessous, ce qui est difficile à effectuer avec la réplication de la ligne de commande Python. Une fois collée, la fenêtre **interactive** exécute ce code comme si vous l’aviez tapée dans :
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d2ce7eeb28627f7cb0a1dfbe399bd55f04ff7be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921231"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
 Spécifie la raison pour laquelle le processus a été lancé pour le débogage.
@@ -28,18 +28,18 @@ Spécifie la raison pour laquelle le processus a été lancé pour le débogage.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-enum enum_DEBUG_REASON {
+enum enum_DEBUG_REASON {
     DEBUG_REASON_ERROR         = 0,
     DEBUG_REASON_USER_LAUNCHED = 1,
     DEBUG_REASON_USER_ATTACHED = 2,
     DEBUG_REASON_AUTO_ATTACHED = 3,
     DEBUG_REASON_CAUSALITY     = 4
 };
-typedef DWORD DEBUG_REASON;
+typedef DWORD DEBUG_REASON;
 ```
 
 ```csharp
-public enum enum_DEBUG_REASON {
+public enum enum_DEBUG_REASON {
     DEBUG_REASON_ERROR         = 0,
     DEBUG_REASON_USER_LAUNCHED = 1,
     DEBUG_REASON_USER_ATTACHED = 2,
@@ -64,7 +64,7 @@ Le processus a été automatiquement attaché à lorsqu’il a été lancé.
 `DEBUG_REASON_CAUSALITY`\
 Le processus a été lancé en raison d’un événement de débogage *juste-à-temps* (JIT).
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Retourné par la méthode [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .
 
 ## <a name="requirements"></a>Configuration requise

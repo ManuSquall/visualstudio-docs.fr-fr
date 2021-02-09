@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b611657db104a4b74e784df8925627ff41f3c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920681"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Sélectionner l’infrastructure de test pour un projet python
 
@@ -24,7 +24,7 @@ Visual Studio prend en charge deux infrastructures de test pour Python, [UnitTes
 * Pour l’infrastructure **UnitTest** , le répertoire racine du projet est utilisé pour la découverte de test. Cet emplacement, ainsi que le modèle de texte pour l’identification des tests, peuvent être modifiés dans l’onglet **test** avec les valeurs spécifiées par l’utilisateur.
 * Pour l’infrastructure **pytest** , les options de test, telles que l’emplacement de test et les modèles de nom de fichier, sont spécifiées à l’aide du fichier de configuration pytest. ini standard. Pour plus d’informations, consultez la [documentation de référence pytest](https://docs.pytest.org/en/latest/reference.html#ini-options-ref) .
 
-Une fois que vous avez enregistré la sélection et les paramètres de votre infrastructure, la découverte des tests est lancée dans l’Explorateur de tests. Si la fenêtre Explorateur de tests n’est pas déjà ouverte, accédez à la barre d’outils et sélectionnez **tester**l'  >  **Explorateur de tests**.
+Une fois que vous avez enregistré la sélection et les paramètres de votre infrastructure, la découverte des tests est lancée dans l’Explorateur de tests. Si la fenêtre Explorateur de tests n’est pas déjà ouverte, accédez à la barre d’outils et sélectionnez **tester** l'  >  **Explorateur de tests**.
 
 ## <a name="configure-testing-for-python-without-a-project"></a>Configurer des tests pour Python sans projet
 Visual Studio vous permet d’exécuter et de tester le code python existant sans projet, en [ouvrant un dossier avec le](../../quickstart-05-python-visual-studio-open-folder.md) code Python. Dans ce cas, vous devez utiliser un **PythonSettings.jssur** fichier pour configurer le test. 
@@ -91,7 +91,7 @@ Par défaut, Visual Studio identifie les tests **UnitTest** et **pytest** comme 
         unittest.main()
     ```
 
-1. Enregistrez le fichier si nécessaire, puis ouvrez l' **Explorateur de tests** avec la commande de menu de l’Explorateur de tests **test**  >  **Test Explorer** .
+1. Enregistrez le fichier si nécessaire, puis ouvrez l' **Explorateur de tests** avec la commande de menu de l’Explorateur de tests **test**  >   .
 
 1. L' **Explorateur de tests** recherche des tests dans votre projet et les affiche comme indiqué ci-dessous. Double-cliquez sur un test pour ouvrir son fichier source.
 
@@ -130,7 +130,7 @@ Les tests s’exécutent en arrière-plan et l' **Explorateur de tests** met à 
 Étant donné que les tests unitaires sont des éléments de code, ils sont exposés à des bogues tout comme n’importe quel autre code et doivent parfois être exécutés dans un débogueur. Dans le débogueur, vous pouvez définir des points d’arrêt, examiner des variables et parcourir le code. Visual Studio fournit également des outils de diagnostic pour les tests unitaires.
 
 > [!Note]
-> Par défaut, le débogage de test utilise le débogueur ptvsd 4 pour Visual Studio 2017 (versions 15,8 et ultérieures) et debugpy pour Visual Studio 2019 (versions 16,5 et ultérieures). Si vous souhaitez utiliser à la place ptvsd 3, vous pouvez sélectionner l’option **utiliser le débogueur hérité** dans **Outils**  >  **options**  >  **Python**  >  **débogage**Python. 
+> Par défaut, le débogage de test utilise le débogueur ptvsd 4 pour Visual Studio 2017 (versions 15,8 et ultérieures) et debugpy pour Visual Studio 2019 (versions 16,5 et ultérieures). Si vous souhaitez utiliser à la place ptvsd 3, vous pouvez sélectionner l’option **utiliser le débogueur hérité** dans **Outils**  >  **options**  >    >  **débogage** Python. 
 
 Pour démarrer le débogage, définissez un point d’arrêt initial dans votre code, cliquez avec le bouton droit sur le test (ou une sélection) dans l' **Explorateur de tests** , puis sélectionnez **déboguer les tests sélectionnés**. Visual Studio démarre le débogueur Python comme il le ferait pour un code d’application.
 

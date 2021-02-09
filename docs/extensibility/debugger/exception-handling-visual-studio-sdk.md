@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af5dc1007a4624a24bef59dd822f6e9fe3861551
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ed8db28a7196551e2f1c8236d71e0f2291fce934
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921515"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Gestion des exceptions (kit de développement logiciel Visual Studio)
 Les éléments suivants décrivent le processus qui se produit lorsque des exceptions sont levées.
@@ -36,7 +36,7 @@ Les éléments suivants décrivent le processus qui se produit lorsque des excep
 
     - Si la méthode retourne S_OK, appelle [IDebugExceptionEvent2 ::P asstodebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).
 
-         - ou -
+         -ou-
 
          Si la méthode retourne S_FALSE, le programme en cours de débogage reçoit une seconde chance de gérer l’exception.
 

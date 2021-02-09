@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce03984d199fd404b7430b5342a06b51801af2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6028a2859da79812440339adb3efbce6dd710b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923067"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 Notifie le package de débogage que du texte a été inséré dans le document.
@@ -28,14 +28,14 @@ Notifie le package de débogage que du texte a été inséré dans le document.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT onInsert( 
+HRESULT onInsert( 
    TEXT_POSITION pos,
    DWORD         dwNumToInsert
 );
 ```
 
 ```csharp
-int onInsert( 
+int onInsert( 
    enum_TEXT_POSITION pos,
    uint               dwNumToInsert
 );
@@ -48,7 +48,7 @@ dans Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-po
 `dwNumToInsert`\
 dans Spécifie le nombre de caractères du texte inséré.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

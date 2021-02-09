@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 771dbe369154200805fb9d344dd5b457353e34dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d26574dd05f5f7dcdb7414df1ffb71f2ef2e4cd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921016"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 Obtient le nom de la fonction vers laquelle cette position pointe.
@@ -28,7 +28,7 @@ Obtient le nom de la fonction vers laquelle cette position pointe.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetFunctionName( 
+HRESULT GetFunctionName( 
    BSTR* pbstrFunctionName
 );
 ```
@@ -43,7 +43,7 @@ int GetFunctionName(
 `pbstrFunctionName`\
 à Retourne le nom de la fonction.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

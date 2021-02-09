@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920435"
 ---
 # <a name="imanagedaddin-interface"></a>interface IManagedAddin
   Implémentez l’interface IManagedAddin pour créer un composant qui charge les compléments VSTO managés. Cette interface a été ajoutée au système 2007 Microsoft Office.
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. L’application découvre les compléments VSTO en recherchant des entrées sous la clé de Registre suivante :
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     Chaque entrée sous cette clé de Registre est un ID unique du complément VSTO. En règle générale, il s’agit du nom de l’assembly du complément VSTO.
 
 2. L’application cherche une entrée `Manifest` sous l’entrée de chaque complément VSTO.
 
-    Les compléments VSTO managés peuvent stocker le chemin d’accès complet d’un manifeste dans l' `Manifest` entrée sous **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **. Un manifeste est un fichier (en général, un fichier XML) qui fournit des informations qui sont utilisées pour charger le complément VSTO.
+    Les compléments VSTO managés peuvent stocker le chemin d’accès complet d’un manifeste dans l' `Manifest` entrée sous **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_**. Un manifeste est un fichier (en général, un fichier XML) qui fournit des informations qui sont utilisées pour charger le complément VSTO.
 
 3. Si l’application trouve une entrée `Manifest` , elle essaie de charger un composant de chargeur de complément VSTO géré. Pour ce faire, l’application essaie de créer un objet COM qui implémente l’interface IManagedAddin.
 

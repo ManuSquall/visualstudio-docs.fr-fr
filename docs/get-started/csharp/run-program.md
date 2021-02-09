@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922836"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Comment : exécuter un programme C# dans Visual Studio
 
@@ -60,7 +60,7 @@ Pour un deuxième fichier, cliquez avec le bouton droit sur le nœud du projet d
 
 1. Créez un nouveau projet de type approprié (utilisez l' **application console** C# si vous n’en êtes pas sûr).
 
-2. Cliquez avec le bouton droit sur le nœud du projet, se **Ajouter**un  >  **élément existant** pour sélectionner les fichiers et les importer dans votre projet.  
+2. Cliquez avec le bouton droit sur le nœud du projet, se **Ajouter** un  >  **élément existant** pour sélectionner les fichiers et les importer dans votre projet.  
 
 ### <a name="starting-from-a-folder"></a>Démarrage à partir d’un dossier
 
@@ -74,9 +74,9 @@ Si le code que vous souhaitez exécuter se trouve dans GitHub ou dans un référ
 
 ## <a name="run-the-program"></a>Exécuter le programme
 
-Pour démarrer le programme, appuyez sur la flèche verte (bouton**Démarrer** ) de la barre d’outils principale de Visual Studio, ou appuyez sur **F5** ou sur **CTRL** + **F5** pour exécuter le programme. Quand vous utilisez le bouton **Démarrer** , il s’exécute sous le débogueur.  Visual Studio tente de générer le code dans votre projet et de l’exécuter.  Si cela fonctionne, parfait ! Mais si ce n’est pas le cas, poursuivez la lecture pour obtenir des idées sur la manière de réussir la génération.
+Pour démarrer le programme, appuyez sur la flèche verte (bouton **Démarrer** ) de la barre d’outils principale de Visual Studio, ou appuyez sur **F5** ou sur **CTRL** + **F5** pour exécuter le programme. Quand vous utilisez le bouton **Démarrer** , il s’exécute sous le débogueur.  Visual Studio tente de générer le code dans votre projet et de l’exécuter.  Si cela fonctionne, parfait ! Mais si ce n’est pas le cas, poursuivez la lecture pour obtenir des idées sur la manière de réussir la génération.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Votre code peut contenir des erreurs, mais si le code est correct, mais dépend simplement d’autres assemblys ou packages NuGet, ou a été écrit pour cibler une version différente de .NET, vous pouvez peut-être le corriger facilement.
 

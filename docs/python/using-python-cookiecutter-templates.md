@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920619"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Utiliser l’extension Cookiecutter
 
@@ -40,7 +40,7 @@ La page d’accueil Cookiecutter affiche une liste des modèles que vous pouvez 
 | **Installé** | Les modèles qui ont été installés sur votre ordinateur local. Quand un modèle en ligne est utilisé, son dépôt est automatiquement cloné dans un sous-dossier de *~/.cookiecutters*. Vous pouvez supprimer un modèle installé sélectionné en appuyant sur **Suppr**. |
 | **Recommandé** | Les modèles chargés à partir du flux recommandé. Le flux par défaut est organisé par Microsoft. Consultez la section [Options de Cookiecutter](#cookiecutter-options) ci-dessous pour plus d’informations sur la personnalisation du flux. |
 | **GitHub** | Les résultats de recherche GitHub pour le mot clé cookiecutter. Les résultats de GitHub reviennent paginés ; si plus de résultats sont disponibles, **Load More** (Charger plus) apparaît à la fin de la liste. |
-| **Personnalisé** | Lorsqu’un emplacement personnalisé est entré dans la zone de recherche, il apparaît dans ce groupe. Vous pouvez renseigner un chemin complet vers le référentiel GitHub, ou le chemin complet vers un dossier sur votre disque local. |
+| **Personnalisée** | Lorsqu’un emplacement personnalisé est entré dans la zone de recherche, il apparaît dans ce groupe. Vous pouvez renseigner un chemin complet vers le référentiel GitHub, ou le chemin complet vers un dossier sur votre disque local. |
 
 ### <a name="cloning"></a>clonage
 
@@ -75,7 +75,7 @@ Une fois les fichiers créés, Cookiecutter propose une option permettant d’ou
 
 ## <a name="cookiecutter-options"></a>Options de Cookiecutter
 
-Les options Cookiecutter sont disponibles via les options **Outils**  >  **Options**  >  **Cookiecutter**:
+Les options Cookiecutter sont disponibles via les options **Outils**  >    >  **Cookiecutter**:
 
 ![Options de Cookiecutter](media/cookiecutter-tools-options.png)
 
@@ -189,7 +189,7 @@ Les arguments peuvent faire référence à d’autres variables Cookiecutter. Da
 
 Notez que la commande `Python.InstallProjectRequirements` fonctionne uniquement lorsque vous ajoutez des fichiers à un projet existant. Cette limitation existe, car la commande est traitée par le projet Python dans l’**Explorateur de solutions**, et il n’existe aucun projet pour recevoir le message dans **Explorateur de solutions** - **Affichage des dossiers**. Nous espérons que cette limitation gagne une version future (et offrira une meilleure prise en charge de l' **affichage des dossiers** en général).
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="error-loading-template"></a>Erreur lors du chargement du modèle
 

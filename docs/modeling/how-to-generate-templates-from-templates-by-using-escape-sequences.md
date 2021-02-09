@@ -7,16 +7,16 @@ helpviewer_keywords:
 - text templates, generating templates from templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: d7ef983525842023247433e7a3c2b51e206a1cee
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: e3debeeafa55e483e9625c67534694debff6acfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922789"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Comment : générer des modèles à partir de modèles à l'aide de séquences d'échappement
 Vous pouvez créer un modèle de texte qui crée un autre modèle de texte comme sortie de texte générée. Pour ce faire, vous devez utiliser des séquences d’échappement pour détourer les balises de modèle de texte. Si vous n’utilisez pas de séquences d’échappement, votre modèle de texte généré aura une signification prédéfinie. Pour plus d’informations sur l’utilisation de séquences d’échappement dans les modèles de texte, consultez [utilisation de séquences d’échappement dans des modèles de texte](../modeling/using-escape-sequences-in-text-templates.md).
@@ -32,7 +32,7 @@ Vous pouvez créer un modèle de texte qui crée un autre modèle de texte comme
     \<#+ classfeature \#>
     ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple suivant utilise des caractères d’échappement pour produire un modèle de texte à partir d’un modèle de texte. La `output` directive définit le type de fichier de destination sur le type de fichier de modèle de texte (. TT).
 
 ```csharp

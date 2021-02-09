@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922678"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Comment : ouvrir un modèle depuis un fichier dans le code de programme
 
@@ -35,7 +35,7 @@ Définissez la version **cible de .NET Framework** de votre projet d’applicati
 > [!NOTE]
 > La version cible de .NET Framework ne doit pas être **.NET Framework 4 profil client**.
 
-## <a name="references"></a>References
+## <a name="references"></a>Références
 
 Ajoutez ces références à votre projet d’application Visual Studio :
 

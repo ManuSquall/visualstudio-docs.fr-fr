@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db5a8857a6b6610fdc60b05158379ef69995ddf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72289719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920749"
 ---
 # <a name="step-6-work-with-git"></a>Étape 6 : Utiliser Git
 
@@ -74,4 +74,4 @@ Félicitations, vous avez terminé ce didacticiel sur Python dans Visual Studio.
 - [Créer une extension C++ pour Python](working-with-c-cpp-python-in-visual-studio.md)
 - [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Profilage](profiling-python-code-in-visual-studio.md)
-- [Test unitaire](unit-testing-python-in-visual-studio.md)
+- [Tests unitaires](unit-testing-python-in-visual-studio.md)

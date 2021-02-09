@@ -1,5 +1,5 @@
 ---
-title: AsyncVoidMethodBuilder. m_objectIdForDebugger le champ | Microsoft Docs
+title: Champ AsyncVoidMethodBuilder.m_objectIdForDebugger | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10d63a92e2648c269c51faddc9521323c76116b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5d3ac36df42fb3e375d79424c38c46a3194ef44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921661"
 ---
-# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>Champ AsyncVoidMethodBuilder. m_objectIdForDebugger
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>Champ AsyncVoidMethodBuilder.m_objectIdForDebugger
 Représente l’objet initialisé tardivement utilisé par le débogueur pour identifier ce générateur de manière unique.
 
  **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>

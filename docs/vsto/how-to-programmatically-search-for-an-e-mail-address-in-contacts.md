@@ -13,15 +13,15 @@ helpviewer_keywords:
 - searching contacts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7fa6578612fb81d9d025e613697c4342bac11bee
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43baafee82cf38dfd346ebe50e9b348857a3fdc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920459"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Comment : Rechercher une adresse de messagerie dans les contacts par programmation
   Cet exemple recherche dans un dossier de contacts les contacts dont l’adresse de messagerie contient le nom de domaine **example.com** .

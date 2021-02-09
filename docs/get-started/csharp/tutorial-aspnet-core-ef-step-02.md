@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: e560d9028a7c2044964f5a2ec54e8daefea26372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922816"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : créer votre première ASP.NET Core application Web
 
@@ -70,7 +70,7 @@ L’hôte web créé dans *Program.cs* fait référence à la classe Startup et 
 
 La page d’accueil du site inclut des balises HTML et du code Razor côté serveur. Elle utilise Razor pour spécifier le modèle de page, `IndexModel`, qui se trouve dans le fichier *Index.cshtml.cs* associé. Elle définit également le titre de la page en définissant une valeur dans ViewData. Cette valeur ViewData est lue dans le fichier *\_ Layout. cshtml* , situé dans le dossier partagé à l’intérieur du dossier pages. Le fichier Layout est partagé par de nombreuses Razor Pages et fournit l’aspect commun de l’application. Le contenu de chaque page est rendu dans le code HTML du fichier Layout.
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 Exécutez à présent l’application pour la voir dans le navigateur. Vous pouvez exécuter l’application à l’aide de la **touche Ctrl** + **F5** ou en choisissant **Déboguer** exécuter  >  **sans débogage** dans le menu de Visual Studio.
 

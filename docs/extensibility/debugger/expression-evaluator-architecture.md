@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921416"
 ---
 # <a name="expression-evaluator-architecture"></a>Architecture de l’évaluateur d’expression
 > [!IMPORTANT]

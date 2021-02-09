@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920903"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Cette interface représente une position abstraite d’une fonction dans un document source.
@@ -40,7 +40,7 @@ IDebugFunctionPosition2 : IUnknown
 |Méthode|Description|
 |------------|-----------------|
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Obtient le nom de la fonction à laquelle cette position est relative.|
-|[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Obtient l’offset à partir du début de la fonction.|
+|[GetOffset,](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Obtient l’offset à partir du début de la fonction.|
 
 ## <a name="remarks"></a>Notes
  La position représentée par cette interface est basée sur du texte, en particulier une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) .

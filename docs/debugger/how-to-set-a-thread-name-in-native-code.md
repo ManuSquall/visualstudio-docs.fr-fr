@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a713b6db074586898ff72cd8595c4cc0d20d99cf
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 024926123e8a9967947d11635558eb6ea06077cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921666"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Comment : définir un nom de thread dans le code natif
 Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. L’attribution de noms aux threads est utile pour identifier les threads intéressants dans la fenêtre **Threads** lors du débogage d’un processus en cours d’exécution. Le fait de disposer de threads de nom reconnaissables peut également être utile pour effectuer un débogage après un vidage sur incident et lors de l’analyse des captures de performances à l’aide de différents outils.

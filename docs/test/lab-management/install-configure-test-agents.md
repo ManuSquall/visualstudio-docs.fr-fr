@@ -8,15 +8,15 @@ helpviewer_keywords:
 - configure test agents, test lab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 29f4951fbd64bd02c8f70b93ea319ab0d46f89e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920424"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
@@ -24,11 +24,11 @@ Pour les scénarios de test qui utilisent Visual Studio et Azure Test Plans ou T
 
 Vous pouvez aussi vous demander s’il ne serait pas plus facile [d’utiliser la gestion de build et de mise en production](use-build-or-rm-instead-of-lab-management.md) à la place de Lab Management.
 
-## <a name="system-requirements"></a>Configuration système requise
+## <a name="system-requirements"></a>Configuration requise
 
 Le tableau suivant présente la configuration système requise pour l’installation de l’agent de test ou du contrôleur de test pour Visual Studio :
 
-| Élément | Spécifications |
+| Élément | Configuration requise |
 | ---- | ------------ |
 | **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
 | **Contrôleur** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard et Datacenter<br />Windows Server 2012 R2 |
