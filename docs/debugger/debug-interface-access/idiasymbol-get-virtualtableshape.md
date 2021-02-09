@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92360cbd-0761-446e-93f9-04dc8f4b66c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0842c5bfcb98a730f1f23862a45b01d2e65a977
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62eb3879fd30bfd4820dd0f53b864140127f51a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853372"
 ---
 # <a name="idiasymbolget_virtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 Récupère l’interface de symboles du type de la table virtuelle pour un type défini par l’utilisateur.
@@ -25,7 +25,7 @@ Récupère l’interface de symboles du type de la table virtuelle pour un type 
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_virtualTableShape ( 
+HRESULT get_virtualTableShape ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_virtualTableShape ( 
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant la table virtuelle pour un type défini par l’utilisateur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

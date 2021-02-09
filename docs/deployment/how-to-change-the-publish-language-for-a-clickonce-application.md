@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fed8c137b5bce225d8a231bb5a263b87c2bf361
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0d9c3d49dde0bdef41e89ee71139fb1ab621297
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851463"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Guide pratique pour changer la langue de publication pour une application ClickOnce
 
@@ -36,7 +36,7 @@ La `Publish language` propriété peut être définie dans la boîte de dialogue
 
 ## <a name="to-change-the-publish-language"></a>Pour modifier la langue de publication
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

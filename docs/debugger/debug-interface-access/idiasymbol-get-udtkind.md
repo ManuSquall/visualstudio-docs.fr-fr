@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ef8254433fc67291b47247f376e22a5ac8f2bf0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0b93f8369b4cc1e733b89c9aa25e04150849b2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853449"
 ---
 # <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
 Récupère la variété d’un type défini par l’utilisateur (UDT).
@@ -25,7 +25,7 @@ Récupère la variété d’un type défini par l’utilisateur (UDT).
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_udtKind ( 
+HRESULT get_udtKind ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_udtKind ( 
 
 à Retourne une valeur de l’énumération d' [énumération UdtKind](../../debugger/debug-interface-access/udtkind.md) qui spécifie le type d’un UDT : structure, Class ou Union.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

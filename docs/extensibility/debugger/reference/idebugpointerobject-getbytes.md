@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1961aaf45478f25ed8eb55d8eda91a5c4eafc4dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852945"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtient la valeur pointée sous la forme d’une série d’octets consécutifs.
@@ -28,7 +28,7 @@ Obtient la valeur pointée sous la forme d’une série d’octets consécutifs.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetBytes( 
+HRESULT GetBytes( 
    DWORD  dwStart,
    DWORD  dwCount,
    BYTE*  pBytes,
@@ -58,10 +58,10 @@ dans Nombre d’octets à récupérer.
 `pdwBytes`\
 à Retourne le nombre d’octets réellement récupérés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode est utilisée si le pointeur représenté par ce [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) pointe vers un type primitif ou un tableau simple de types primitifs (autrement dit, un tableau qui peut être représenté par une séquence simple d’octets).
 
 ## <a name="see-also"></a>Voir aussi

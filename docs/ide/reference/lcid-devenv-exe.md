@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3e5aad581babafe882fccc13e8594aa60437d9df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96043983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852139"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -45,7 +45,7 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="remarks"></a>Remarques
 
-Charge l’IDE et définit le langage naturel par défaut pour l’environnement. Cette modification est conservée entre les sessions, et l’IDE affiche cette modification dans la zone de langue **Outils**  >  **options**  >  **environnement**  >  **paramètres internationaux**  >  **Language** .
+Charge l’IDE et définit le langage naturel par défaut pour l’environnement. Cette modification est conservée entre les sessions, et l’IDE affiche cette modification dans la zone de langue **Outils**  >  **options**  >  **environnement**  >  **paramètres internationaux**  >   .
 
 Si la langue spécifiée n’est pas disponible sur le système, le commutateur `/LCID` est ignoré.
 

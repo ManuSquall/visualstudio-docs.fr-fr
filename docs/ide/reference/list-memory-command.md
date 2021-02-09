@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4fb0d62f6f4ade51fe0224917a1e3ec3a199de14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852048"
 ---
 # <a name="list-memory-command"></a>Afficher la mémoire, commande
 Affiche le contenu de la plage de mémoire spécifiée.
@@ -36,24 +36,24 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Arguments
 `expression`
 
-facultatif. Adresse mémoire à partir de laquelle la mémoire doit être affichée.
+Facultatif. Adresse mémoire à partir de laquelle la mémoire doit être affichée.
 
 ## <a name="switches"></a>Commutateurs
 /ANSI&#124;Unicode
 
-facultatif. Affiche la mémoire sous la forme de caractères ANSI ou Unicode correspondant aux octets de mémoire.
+Facultatif. Affiche la mémoire sous la forme de caractères ANSI ou Unicode correspondant aux octets de mémoire.
 
 /Count:`number`
 
-facultatif. Détermine le nombre d’octets de mémoire à afficher, à partir de l’argument `expression`.
+Facultatif. Détermine le nombre d’octets de mémoire à afficher, à partir de l’argument `expression`.
 
 /Format:`formattype`
 
-facultatif. Type du format selon lequel les informations sur la mémoire sont affichées dans la fenêtre **Mémoire** ; le format peut être OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bits) ou Double (64 bits). Si le format OneByte est utilisé, `/Unicode` n’est pas disponible.
+Facultatif. Type du format selon lequel les informations sur la mémoire sont affichées dans la fenêtre **Mémoire** ; le format peut être OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bits) ou Double (64 bits). Si le format OneByte est utilisé, `/Unicode` n’est pas disponible.
 
 /Hex&#124;Signed&#124;Unsigned
 
-facultatif. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
+Facultatif. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
 
 ## <a name="remarks"></a>Remarques
 Au lieu d’écrire une commande **Debug.ListMemory** complète avec tous ses commutateurs, vous pouvez appeler la commande à l’aide d’alias préparamétrés avec certains commutateurs prédéfinis à des valeurs spécifiées. Par exemple, au lieu d’entrer :

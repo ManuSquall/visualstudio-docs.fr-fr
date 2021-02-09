@@ -5,15 +5,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 35850293b1ef739506fe6848e000396f6bacf1d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852295"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -47,7 +47,7 @@ Cette génération de code s’applique à :
       - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Capture d’écran de l’icône de tournevis qui apparaît dans la marge de gauche du menu actions rapides et refactorisations.](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
+      - Cliquez sur l’icône ![Capture d’écran de l’icône de tournevis qui apparaît dans la marge de gauche du menu actions rapides et refactorisations.](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
 
    ![Introduire un aperçu local](media/local-preview-cs.png)
 
@@ -72,4 +72,4 @@ Cette génération de code s’applique à :
 ## <a name="see-also"></a>Voir aussi
 
 - [Génération de code](../code-generation-in-visual-studio.md)
-- [Aperçu des modifications](../../ide/preview-changes.md)
+- [Prévisualiser les modifications](../../ide/preview-changes.md)

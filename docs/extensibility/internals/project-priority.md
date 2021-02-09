@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1389668bbcd1239fbb1ae0e865478bf0e0f6a7e8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 75ea6485e2ae613ca03fb3900e3e2ba9d415af95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852594"
 ---
 # <a name="project-priority"></a>Priorité de projet
 Un élément de projet est généralement membre d’un seul projet dans la solution. Par conséquent, l’IDE peut facilement déterminer quel projet est utilisé pour ouvrir l’élément. Toutefois, si un élément est membre de plusieurs projets, l’IDE utilise un schéma de priorité pour déterminer le projet le mieux adapté à l’ouverture de l’élément.

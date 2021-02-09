@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64b5ac36edf6c5f506628f9af88ba36bd62c71c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851827"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Créer des tracés de données visuels avec R
 
@@ -48,7 +48,7 @@ Le redimensionnement d’une fenêtre de tracé provoque toujours le réaffichag
 
 ## <a name="plot-window-commands"></a>Commandes de la fenêtre de tracés
 
-La barre d’outils de la fenêtre de tracés contient les commandes applicables, dont la **R Tools**plupart sont également disponibles via le menu des  >  **tracés** d’outils R.
+La barre d’outils de la fenêtre de tracés contient les commandes applicables, dont la plupart sont également disponibles via le menu des  >  **tracés** d’outils R.
 
 | Bouton | Commande | Description |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ La barre d’outils de la fenêtre de tracés contient les commandes applicables
 
 Comme les scientifiques des données travaillent souvent avec de nombreux tracés provenant de différents datasets, RTVS vous permet de créer autant de fenêtres de tracés indépendantes que vous le souhaitez. Vous pouvez ensuite organiser ces fenêtres comme vous le souhaitez dans le cadre de Visual Studio ou en dehors de ce cadre. (Pour obtenir des informations générales sur l’ancrage et le redimensionnement des fenêtres, consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).)
 
-Vous créez une nouvelle fenêtre de tracés à l’aide du **bouton de barre d’outils ou de**la  >  **Plots**  >  **fenêtre de tracés**tracés. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils **Activer la fenêtre de tracés** ou cliquez sur **Outils R** > **Tracés** > **Activer la fenêtre de tracés**.
+Vous créez une nouvelle fenêtre de tracés à l’aide du **bouton de barre d’outils ou de** la  >    >  **fenêtre de tracés** tracés. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils **Activer la fenêtre de tracés** ou cliquez sur **Outils R** > **Tracés** > **Activer la fenêtre de tracés**.
 
 Les tracés sont aussi des objets indépendants, ce qui signifie que vous pouvez les copier ou les déplacer entre les fenêtres de tracés à l’aide d’une opération de glisser-déplacer avec la souris, ou à l’aide des commandes **Copier**, **Couper** et **Coller** du menu contextuel et du menu **Edition**.
 
@@ -75,9 +75,9 @@ Le comportement par défaut pour le glisser-déplacer est copier ; pour déplac
 
 ## <a name="plot-history"></a>Historique de tracés
 
-Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour naviguer dans l’historique, utilisez les boutons fléchés de la barre d’outils de la fenêtre de tracés, ou **Appuyez sur CTRL** + **ALT** + **F11** et **CTRL** + **ALT** + **F12**. Vous pouvez également supprimer des tracés uniques ou effacer tous les tracés de la fenêtre à l’aide des boutons de la barre d’outils ou des commandes de menu des **Outils R**  >  **Plots** .
+Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour naviguer dans l’historique, utilisez les boutons fléchés de la barre d’outils de la fenêtre de tracés, ou **Appuyez sur CTRL** + **ALT** + **F11** et **CTRL** + **ALT** + **F12**. Vous pouvez également supprimer des tracés uniques ou effacer tous les tracés de la fenêtre à l’aide des boutons de la barre d’outils ou des commandes de menu des **Outils R**  >   .
 
-Pour afficher l’intégralité de la collection de tracés, ouvrez la fenêtre historique des tracés **R Tools**à l’aide du bouton de barre d’outils ou de la  >  **Plots**  >  **fenêtre historique des tracés**des outils R.
+Pour afficher l’intégralité de la collection de tracés, ouvrez la fenêtre historique des tracés à l’aide du bouton de barre d’outils ou de la  >    >  **fenêtre historique des tracés** des outils R.
 L’historique vous donne une liste des miniatures pour les tracés qui ont été affichés dans cette fenêtre, regroupés par fenêtres de tracés (ou appareils). Les boutons de zoom dans la barre d’outils permettent de changer la taille des miniatures.
 
 ![Fenêtre d’historique des tracés](media/plotting-plot-history-window.png)

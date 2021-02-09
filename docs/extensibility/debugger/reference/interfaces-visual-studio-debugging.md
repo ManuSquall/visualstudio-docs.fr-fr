@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 2b7fad96ddd62767b67b65b83121498079a81b07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852841"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (débogage Visual Studio)
 Les méthodes sont répertoriées par ordre alphabétique sous chaque interface dans la table des matières et sur la page interface dans l’ordre vtable.

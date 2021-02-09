@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d947eed08ba28cfdd68e2cd7d34998412fc8bc3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb8ee1519dd2613ec823aa2d13e60f296baa4415
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853463"
 ---
 # <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 Récupère un tableau de types spécifiques au compilateur pour ce symbole.
@@ -25,7 +25,7 @@ Récupère un tableau de types spécifiques au compilateur pour ce symbole.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_types ( 
+HRESULT get_types ( 
    DWORD       cTypes,
    DWORD*      pcTypes,
    IDiaSymbol* types[]
@@ -45,7 +45,7 @@ dans Taille de la mémoire tampon pour stocker les données.
 
 à Tableau à remplir avec les objets [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représentent tous les types pour ce symbole.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

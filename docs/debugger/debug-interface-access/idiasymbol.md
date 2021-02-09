@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0214d3e8d097efa31b3f8b02e67f419226a093a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da51eda00bd2c80152029e503cfb33089e608683
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853309"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Décrit les propriétés d’une instance de symbole.
@@ -25,7 +25,7 @@ Décrit les propriétés d’une instance de symbole.
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaSymbol : IUnknown
+IDiaSymbol : IUnknown
 ```
 
 ## <a name="methods-in-alphabetical-order"></a>Méthodes par ordre alphabétique
@@ -220,7 +220,7 @@ Le tableau suivant présente les méthodes de `IDiaSymbol` .
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Récupère l’identificateur de forme de la table virtuelle du symbole.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est volatile.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant l’une des méthodes suivantes :
@@ -335,7 +335,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }
 ```
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 `Header:` Dia2.h
 
 Bibliothèque : diaguids. lib

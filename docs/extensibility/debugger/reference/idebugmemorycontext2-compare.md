@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b2551f8554d96186b90a1eed97a5a48ec5f0405
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e54a2bf7cd37b411dbc2d18d23a3466a4b47ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851203"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Compare le contexte de mémoire à chaque contexte dans le tableau donné de la manière indiquée par les indicateurs de comparaison, en retournant un index du premier contexte qui correspond.
@@ -29,7 +29,7 @@ Compare le contexte de mémoire à chaque contexte dans le tableau donné de la 
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT Compare( 
+HRESULT Compare( 
    CONTEXT_COMPARE        compare,
    IDebugMemoryContext2** rgpMemoryContextSet,
    DWORD                  dwMemoryContextSetLen,
@@ -59,10 +59,10 @@ dans Nombre de contextes dans le `rgpMemoryContextSet` tableau.
 `pdwMemoryContext`\
 à Retourne l’index du premier contexte de mémoire qui satisfait à la comparaison.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_COMPARE_CANNOT_COMPARE` si les deux contextes ne peuvent pas être comparés.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Un moteur de débogage (de) n’a pas besoin de prendre en charge tous les types de comparaisons, mais il doit prendre en charge au moins `CONTEXT_EQUAL` , `CONTEXT_LESS_THAN` , `CONTEXT_GREATER_THAN` et `CONTEXT_SAME_SCOPE` .
 
 ## <a name="see-also"></a>Voir aussi

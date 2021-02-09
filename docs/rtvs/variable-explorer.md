@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f69e5b61e80d3a00522307dd7481f74418407d99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62809805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851801"
 ---
 # <a name="variable-explorer"></a>Explorateur de variables
 
@@ -45,7 +45,7 @@ Les données étant souvent sous forme de tableau, vous pouvez afficher n’impo
 
 Un clic sur un en-tête de colonne permet de trier les données par colonne (alternant entre croissant et décroissant). Si vous maintenez la **touche Maj** enfoncée et cliquez sur des colonnes supplémentaires, ces colonnes sont également ajoutées au tri. Un clic sur une colonne sans appui sur la touche **Maj** rétablit le tri de colonne unique.
 
-L’ordre dans lequel vous cliquez sur les en-têtes de colonnes détermine l’ordre dans lequel le tri est effectué. Par exemple, **Shift** + **cliquez sur** la colonne **cyl** , **Shift**puis + **sur** Maj pour trier la liste des cylindres croissants et décroissant les miles par gallon : **mpg**
+L’ordre dans lequel vous cliquez sur les en-têtes de colonnes détermine l’ordre dans lequel le tri est effectué. Par exemple, **Shift** + **cliquez sur** la colonne **cyl** , puis + **sur** Maj pour trier la liste des cylindres croissants et décroissant les miles par gallon : 
 
 ![Vue de tableau du tri des données d’après deux colonnes.](media/variable-explorer-table-view-sorting.png)
 

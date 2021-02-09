@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a77dcafa-ea3f-45da-826d-8f9b4489a03f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b34f8e807a6aad5acc9ac07e6805d0faf488de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 002d198411a421d0209e238f6021dbdf9d8f4b31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853400"
 ---
 # <a name="idiasymbolget_upperbound"></a>IDiaSymbol::get_upperBound
 Récupère un symbole représentant la limite supérieure d’une dimension de tableau FORTRAN.
@@ -25,7 +25,7 @@ Récupère un symbole représentant la limite supérieure d’une dimension de t
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_upperBound ( 
+HRESULT get_upperBound ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_upperBound ( 
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente la limite supérieure d’une dimension de tableau Fortran.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96078d1b2fdb5a54c912cbf214024726ce102e4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75850064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851840"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurer des espaces de travail distants
 
@@ -76,7 +76,7 @@ Pour installer le certificat sur l’ordinateur distant, exécutez *certlm.msc* 
 Une fois le certificat importé, accordez des autorisations au compte `NETWORK SERVICE` pour lire la clé privée, comme indiqué dans les instructions suivantes. `NETWORK_SERVICE` est le compte utilisé pour exécuter le répartiteur R Services, qui est le service qui met fin aux connexions SSL entrantes sur le serveur.
 
 1. Exécutez *certlm.msc* (le gestionnaire de certificats) à partir d’une invite de commandes administrateur.
-1. Développez **Personal**  >  **certificats**personnels, cliquez avec le bouton droit sur votre certificat, puis sélectionnez **toutes les tâches**  >  **gérer les clés privées**.
+1. Développez   >  **certificats** personnels, cliquez avec le bouton droit sur votre certificat, puis sélectionnez **toutes les tâches**  >  **gérer les clés privées**.
 1. Cliquez avec le bouton droit sur le certificat et sélectionnez la commande **Gérer les clés privées** sous **Toutes les tâches**.
 1. Dans la boîte de dialogue qui s’affiche, sélectionnez **Ajouter** et entrez `NETWORK SERVICE` comme nom de compte :
 
@@ -197,7 +197,7 @@ Une fois que R Services est en cours d’exécution sur l’ordinateur distant,
 
     Enregistrez le fichier et redémarrez l’ordinateur pour appliquer les modifications.
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 **Question. L’ordinateur R Server ne répond pas, que dois-je faire ?**
 

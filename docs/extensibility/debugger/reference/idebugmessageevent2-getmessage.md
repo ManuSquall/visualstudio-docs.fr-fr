@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 819b796a656f0ef8775fbb1c9e800e3019b81729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e1b1d379f235729614f257e38ea2b84b856507b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851047"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Obtient le message à afficher.
@@ -29,7 +29,7 @@ Obtient le message à afficher.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetMessage( 
+HRESULT GetMessage( 
    MESSAGETYPE* pMessageType,
    BSTR*        pbstrMessage,
    DWORD*       pdwType,
@@ -39,7 +39,7 @@ HRESULT GetMessage( 
 ```
 
 ```csharp
-int GetMessage( 
+int GetMessage( 
    out enum_MESSAGETYPE pMessageType,
    out string           pbstrMessage,
    out uint             pdwType,
@@ -64,7 +64,7 @@ int GetMessage( 
 `pdwHelpId`\
 [in, out] Retourne l’identificateur d’aide. Peut avoir la valeur 0 si aucune aide n’est associée à ce message.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

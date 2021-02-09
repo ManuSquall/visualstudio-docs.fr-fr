@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 2a5e318d-3225-4abd-83f1-28323baff6c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6271566ce701e27164026fdce4ef6ea1455693e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851021"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 Définit la réponse, le cas échéant, dans la boîte de message.
@@ -29,13 +29,13 @@ Définit la réponse, le cas échéant, dans la boîte de message.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetResponse( 
+HRESULT SetResponse( 
    DWORD dwResponse
 );
 ```
 
 ```csharp
-int SetResponse( 
+int SetResponse( 
    uint dwResponse
 );
 ```
@@ -44,7 +44,7 @@ int SetResponse( 
 `dwResponse`\
 dans Spécifie la réponse à l’aide des conventions de la `MessageBox` fonction Win32. Pour plus d’informations, consultez la fonction [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

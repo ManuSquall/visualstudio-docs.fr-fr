@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e2b8037059824bd514024e6fb86561406895c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852828"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Crée une copie d’un objet de données spécifique à l’évaluateur d’expression (EE).
@@ -28,16 +28,16 @@ Crée une copie d’un objet de données spécifique à l’évaluateur d’expr
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT CreateReplacementObject(
-   IEEDataStorage*  dataIn,
-   IEEDataStorage** dataOut
+HRESULT CreateReplacementObject(
+   IEEDataStorage*  dataIn,
+   IEEDataStorage** dataOut
 );
 ```
 
 ```csharp
-int CreateReplacementObject(
-   IEEDataStorage     dataIn,
-   out IEEDataStorage dataOut
+int CreateReplacementObject(
+   IEEDataStorage     dataIn,
+   out IEEDataStorage dataOut
 );
 ```
 
@@ -48,10 +48,10 @@ dans Objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatasto
 `dataOut`\
 [out] Retourne un nouvel objet `IEEDataStorage`.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode reçoit un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) représentant un tableau d’octets. En général, cet objet de données entrant n’est pas implémenté par EE. Toutefois, l’objet retourné par cette méthode est toujours implémenté par EE, qui permet à EE d’implémenter l' `IEEDataStorage` interface sur la classe souhaitée.
 
  Notez que les données fournies par l' `IEEDataStorage` objet entrant doivent être identiques à celles de l' `IEEDataStorage` objet sortant.

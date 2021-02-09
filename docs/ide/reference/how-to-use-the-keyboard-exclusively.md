@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 7daa0bfc6f67bd0dc9fee0775ba8dce591ce8148
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852529"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 
@@ -43,7 +43,7 @@ Pour obtenir la liste complète des touches de raccourci de commande de Visual S
 
 Pour ajouter un contrôle sur la boîte à outils à un formulaire ou concepteur sans utiliser la souris :
 
-1. Dans la barre de menus, sélectionnez **Afficher**la  >  **boîte à outils**.
+1. Dans la barre de menus, sélectionnez **Afficher** la  >  **boîte à outils**.
 
 2. Utilisez les touches **CTRL** + **haut** ou **CTRL** + **bas** pour vous déplacer parmi les sections de l’onglet **boîte à outils** .
 
@@ -63,7 +63,7 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
    - Pour les cases à cocher, utilisez la touche **Barre d’espace** pour cocher ou décocher.
 
-   - Pour les listes déroulantes, **Utilisez** + la**flèche vers le bas** Alt pour afficher les éléments, puis utilisez les touches de direction **haut** et **bas** pour modifier l’élément sélectionné.
+   - Pour les listes déroulantes, **Utilisez** + la **flèche vers le bas** Alt pour afficher les éléments, puis utilisez les touches de direction **haut** et **bas** pour modifier l’élément sélectionné.
 
    - Pour les boutons, appuyez sur **Entrée** pour les actionner.
 
@@ -71,7 +71,7 @@ Pour vous déplacer entre les options d’une boîte de dialogue et modifier les
 
 ## <a name="navigate-between-windows-and-files"></a>Naviguer entre fenêtres et fichiers
 
-- Pour vous déplacer entre des fichiers dans un éditeur ou un concepteur **Ctrl**, utilisez le + raccourci clavier de l'**onglet** Ctrl pour afficher le navigateur IDE avec les **fichiers actifs** sélectionnés. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
+- Pour vous déplacer entre des fichiers dans un éditeur ou un concepteur , utilisez le + raccourci clavier de l'**onglet** Ctrl pour afficher le navigateur IDE avec les **fichiers actifs** sélectionnés. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
 
 - Pour vous déplacer parmi les fenêtres d’outils ancrées, utilisez le raccourci clavier **ALT** + **F7** pour afficher le navigateur IDE avec les **fenêtres d’outils actives** sélectionnées. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
 

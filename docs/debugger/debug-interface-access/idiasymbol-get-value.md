@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a36da3feecfe1af664e35fa50d616d2a94fb0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e04a21f5f0a8273975f0a0437f28808696de2da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853393"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 Récupère la valeur d’une constante.
@@ -35,13 +35,13 @@ HRESULT get_value (
 
 [in, out] `VARIANT` Objet qui est rempli avec la valeur d’une constante.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 La variante fournie doit être initialisée avant d’être passée à cette méthode. Pour plus d'informations, reportez-vous à l'exemple.
 
 ## <a name="example"></a>Exemple

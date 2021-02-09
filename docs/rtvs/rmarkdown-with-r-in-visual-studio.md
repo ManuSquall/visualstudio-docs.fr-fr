@@ -5,15 +5,15 @@ ms.date: 11/16/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2cfad81c44822e59abb704e5e830357bfd32067d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e74966e71a7d440aed918e8aa609eeb8e68c355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851879"
 ---
 # <a name="create-r-markdown-documents"></a>Créer des documents R Markdown
 
@@ -66,8 +66,8 @@ Les outils R pour Visual Studio (RTVS) fournissent un modèle d’élément R 
 
 ## <a name="previews"></a>Versions préliminaires
 
-Visual Studio 2017 versions 15.5 et ultérieures fournissent automatiquement un aperçu instantané pour R Markdown. Pour activer la synchronisation automatique entre l’éditeur et l’aperçu, sélectionnez **Outils R**  >  **démarque**  >  **Automatique synchronisation** (**CTRL** + **MAJ** + **Y**). Si vous n’utilisez pas la synchronisation automatique, vous pouvez actualiser la version préliminaire à l’aide des **Outils R**  >  **Markdown**  >  **rechargement de la déchargement R Markdown**.
+Visual Studio 2017 versions 15.5 et ultérieures fournissent automatiquement un aperçu instantané pour R Markdown. Pour activer la synchronisation automatique entre l’éditeur et l’aperçu, sélectionnez **Outils R**  >  **démarque**  >  **Automatique synchronisation** (**CTRL** + **MAJ** + **Y**). Si vous n’utilisez pas la synchronisation automatique, vous pouvez actualiser la version préliminaire à l’aide des **Outils R**  >    >  **rechargement de la déchargement R Markdown**.
 
-Vous pouvez également afficher un aperçu du fichier au format HTML, PDF et Microsoft Word en cliquant avec le bouton droit dans l’éditeur et en sélectionnant une des commandes **Aperçu**. Les mêmes commandes sont également disponibles dans le **R Tools**  >  menu**démarque** des outils R. (Dans les versions antérieures de Visual Studio, ces commandes se trouvent dans **Outils R**  >  Menu **publier** .)
+Vous pouvez également afficher un aperçu du fichier au format HTML, PDF et Microsoft Word en cliquant avec le bouton droit dans l’éditeur et en sélectionnant une des commandes **Aperçu**. Les mêmes commandes sont également disponibles dans le   >  menu **démarque** des outils R. (Dans les versions antérieures de Visual Studio, ces commandes se trouvent dans **Outils R**  >  Menu **publier** .)
 
 ![Aperçu instantané R Markdown et autres commandes de menu d’aperçu](media/rmarkdown-live-preview.png)
