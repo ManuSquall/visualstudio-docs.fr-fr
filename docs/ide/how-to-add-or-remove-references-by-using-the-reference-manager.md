@@ -20,15 +20,15 @@ helpviewer_keywords:
 - referencing components, assemblies not listed
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 82300d90d890cf632693fe07b5873423a29da0ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893358"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
@@ -210,7 +210,7 @@ Lors d’une référence de fichier à un WinMD, la disposition attendue est que
 
 Les **assemblys**, **com**, **Windows** et **Parcourir** prennent tous en charge un onglet **récent** , qui énumère la liste des composants récemment ajoutés aux projets.
 
-## <a name="search"></a>Rechercher
+## <a name="search"></a>Recherche
 
 La barre de recherche de la boîte de dialogue Gestionnaire de références fonctionne sur l’onglet actif. Par exemple, si un utilisateur tape « System » dans la barre de recherche alors que l’onglet **Solution** est actif, la recherche ne renvoie aucun résultat à moins que la solution soit composée d’un nom de projet contenant « System ».
 

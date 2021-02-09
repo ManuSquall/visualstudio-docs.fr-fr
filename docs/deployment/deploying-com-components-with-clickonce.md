@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e2285706f2d15c5497a83d27c95cd613191e0fe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893969"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Déployer des composants COM avec ClickOnce
 Le déploiement de composants COM hérités a traditionnellement été une tâche difficile. Les composants doivent être inscrits globalement, ce qui peut entraîner des effets secondaires indésirables entre les applications qui se chevauchent. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés dans une application ou sont compatibles côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur le système d’exploitation Windows XP ou version ultérieure.
@@ -37,7 +37,7 @@ Le déploiement de composants COM hérités a traditionnellement été une tâch
 ## <a name="registration-free-com"></a>COM sans inscription
  Le modèle COM sans inscription est une nouvelle technologie pour le déploiement et l’activation de composants COM isolés. Il fonctionne en plaçant toutes les informations de bibliothèque de types et d’inscription du composant qui sont généralement installées dans le registre système dans un fichier XML appelé manifeste, stocké dans le même dossier que l’application.
 
- L’isolation d’un composant COM requiert qu’il soit inscrit sur l’ordinateur du développeur, mais qu’il n’a pas besoin d’être inscrit sur l’ordinateur de l’utilisateur final. Pour isoler un composant COM, il vous suffit de définir la propriété **isolated** de sa référence sur **true**. Par défaut, cette propriété a la valeur **false** , ce qui indique qu’elle doit être traitée comme une référence com inscrite. Si cette propriété a la **valeur true** , elle provoque la génération d’un manifeste pour ce composant au moment de la génération. Cela entraîne également la copie des fichiers correspondants dans le dossier de l’application lors de l’installation.
+ L’isolation d’un composant COM requiert qu’il soit inscrit sur l’ordinateur du développeur, mais qu’il n’a pas besoin d’être inscrit sur l’ordinateur de l’utilisateur final. Pour isoler un composant COM, il vous suffit de définir la propriété **isolated** de sa référence sur **true**. Par défaut, cette propriété a la valeur **false**, ce qui indique qu’elle doit être traitée comme une référence com inscrite. Si cette propriété a la **valeur true**, elle provoque la génération d’un manifeste pour ce composant au moment de la génération. Cela entraîne également la copie des fichiers correspondants dans le dossier de l’application lors de l’installation.
 
  Lorsque le générateur de manifeste rencontre une référence COM isolée, il énumère toutes les `CoClass` entrées dans la bibliothèque de types du composant, en faisant correspondre chaque entrée avec ses données d’inscription correspondantes et en générant des définitions de manifeste pour toutes les classes com dans le fichier bibliothèque de types.
 
@@ -59,14 +59,14 @@ Le déploiement de composants COM hérités a traditionnellement été une tâch
 
 ##### <a name="to-create-a-native-com-component"></a>Pour créer un composant COM natif
 
-1. À l’aide de Visual Basic 6,0, dans le menu **fichier** , cliquez sur **nouveau** , puis sur **projet**.
+1. À l’aide de Visual Basic 6,0, dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , sélectionnez le nœud **Visual Basic** et sélectionnez un projet **DLL ActiveX** . Dans le champ **Nom** , saisissez `VB6Hello`.
+2. Dans la boîte de dialogue **nouveau projet** , sélectionnez le nœud **Visual Basic** et sélectionnez un projet **DLL ActiveX** . Dans le champ **Nom**, saisissez `VB6Hello`.
 
     > [!NOTE]
     > Seuls les types de projets DLL ActiveX et contrôle ActiveX sont pris en charge avec COM sans inscription ; Les types de projets EXE ActiveX et document ActiveX ne sont pas pris en charge.
 
-3. Dans **Explorateur de solutions** , double-cliquez sur **Class1. vb** pour ouvrir l’éditeur de texte.
+3. Dans **Explorateur de solutions**, double-cliquez sur **Class1. vb** pour ouvrir l’éditeur de texte.
 
 4. Dans Class1. vb, ajoutez le code suivant après le code généré pour la `New` méthode :
 
@@ -76,7 +76,7 @@ Le déploiement de composants COM hérités a traditionnellement été une tâch
     End Sub
     ```
 
-5. Générez le composant. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+5. Générez le composant. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 > [!NOTE]
 > COM sans inscription prend en charge uniquement les types de projets dll et contrôles COM. Vous ne pouvez pas utiliser les fichiers exe avec COM sans inscription.
@@ -85,11 +85,11 @@ Le déploiement de composants COM hérités a traditionnellement été une tâch
 
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Pour créer une application basée sur Windows à l’aide d’un composant COM
 
-1. À l’aide de Visual Basic, dans le menu **fichier** , cliquez sur **nouveau** , puis sur **projet**.
+1. À l’aide de Visual Basic, dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , sélectionnez le nœud **Visual Basic** , puis sélectionnez **application Windows**. Dans le champ **Nom** , saisissez `RegFreeComDemo`.
+2. Dans la boîte de dialogue **nouveau projet** , sélectionnez le nœud **Visual Basic** , puis sélectionnez **application Windows**. Dans le champ **Nom**, saisissez `RegFreeComDemo`.
 
-3. Dans **Explorateur de solutions** , cliquez sur le bouton **Afficher tous les fichiers** pour afficher les références de projet.
+3. Dans **Explorateur de solutions**, cliquez sur le bouton **Afficher tous les fichiers** pour afficher les références de projet.
 
 4. Cliquez avec le bouton droit sur le nœud **références** et sélectionnez **Ajouter une référence** dans le menu contextuel.
 
@@ -97,7 +97,7 @@ Le déploiement de composants COM hérités a traditionnellement été une tâch
 
     Une référence **VB6Hello** s’affiche dans la liste Références.
 
-6. Pointez sur la **boîte à outils** , sélectionnez un contrôle **Button** , puis faites-le glisser vers le formulaire **Form1** .
+6. Pointez sur la **boîte à outils**, sélectionnez un contrôle **Button** , puis faites-le glisser vers le formulaire **Form1** .
 
 7. Dans la fenêtre **Propriétés** , affectez à la propriété **Text** du bouton la valeur **Hello**.
 
@@ -110,7 +110,7 @@ Le déploiement de composants COM hérités a traditionnellement été une tâch
    End Sub
    ```
 
-9. Exécutez l'application. Dans le menu **Déboguer** , cliquez sur **Démarrer le débogage**.
+9. Exécutez l'application. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.
 
    Vous devez ensuite isoler le contrôle. Chaque composant COM utilisé par votre application est représenté dans votre projet sous la forme d’une référence COM. Ces références sont visibles sous le nœud **références** dans la fenêtre **Explorateur de solutions** . (Notez que vous pouvez ajouter des références directement à l’aide de la commande **Ajouter une référence** dans le menu **projet** , ou indirectement en faisant glisser un contrôle ActiveX sur votre formulaire.)
 
@@ -118,11 +118,11 @@ Le déploiement de composants COM hérités a traditionnellement été une tâch
 
 ##### <a name="to-isolate-a-com-component"></a>Pour isoler un composant COM
 
-1. Dans **Explorateur de solutions** , dans le nœud **références** , sélectionnez la référence **VB6Hello** .
+1. Dans **Explorateur de solutions**, dans le nœud **références** , sélectionnez la référence **VB6Hello** .
 
 2. Dans la fenêtre **Propriétés** , remplacez la valeur **false** de la propriété **isolated** par **true**.
 
-3. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+3. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
    Désormais, lorsque vous appuyez sur F5, l’application fonctionne comme prévu, mais elle s’exécute maintenant sous COM sans inscription. Pour prouver cela, essayez d’annuler l’inscription du composant VB6Hello.dll et d’exécuter RegFreeComDemo1.exe en dehors de l’IDE de Visual Studio. Cette fois, lorsque vous cliquez sur le bouton, il fonctionne toujours. Si vous renommez temporairement le manifeste de l’application, il échouera à nouveau.
 

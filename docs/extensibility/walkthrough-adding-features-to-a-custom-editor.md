@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c18b73b22d1ce4d4b2a7720d3d80081b4e2c075c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893397"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procédure pas à pas : ajouter des fonctionnalités à un éditeur personnalisé
 Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autres fonctionnalités.
@@ -53,7 +53,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
         > [!NOTE]
         > Appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> pour obtenir un pointeur vers `IVsFileChangeEx` .
 
-7. Coordonner les événements de modification de document avec le contrôle de code source. Effectuez les étapes suivantes :
+7. Coordonner les événements de modification de document avec le contrôle de code source. Procédez comme suit :
 
     1. Obtient un pointeur vers `IVsQueryEditQuerySave2` en appelant `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -65,13 +65,13 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
 
          Cette méthode invite l’utilisateur à enregistrer le fichier s’il n’a pas été enregistré ou s’il a été modifié depuis le dernier enregistrement.
 
-8. Activez la fenêtre **Propriétés** pour afficher les propriétés du texte sélectionné dans l’éditeur. Effectuez les étapes suivantes :
+8. Activez la fenêtre **Propriétés** pour afficher les propriétés du texte sélectionné dans l’éditeur. Procédez comme suit :
 
     1. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> chaque fois que la sélection de texte est modifiée, en passant votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Appelez `QueryService` sur le <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> service pour obtenir un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Permet aux utilisateurs de glisser-déplacer des éléments entre l’éditeur et la **boîte à outils**, ou entre des éditeurs externes (tels que Microsoft Word) et la **boîte à outils**. Effectuez les étapes suivantes :
+9. Permet aux utilisateurs de glisser-déplacer des éléments entre l’éditeur et la **boîte à outils**, ou entre des éditeurs externes (tels que Microsoft Word) et la **boîte à outils**. Procédez comme suit :
 
     1. Implémentez `IDropTarget` sur votre éditeur pour alerter l’IDE que votre éditeur est une cible de déplacement.
 

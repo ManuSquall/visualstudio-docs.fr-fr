@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e7dfb6714283fa2db1dc2fd8435a91a5c8dc56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893813"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Obtient l’identificateur de thread système.
@@ -43,10 +43,10 @@ int GetThreadId (
 `pdwThreadId`\
 à Retourne l’identificateur de thread système.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Un ID de thread est utilisé pour identifier un thread parmi tous les autres threads d’un processus.
 
 ## <a name="example"></a>Exemple

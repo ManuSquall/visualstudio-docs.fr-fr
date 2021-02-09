@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 0356f05c3f0dac636813d1632f628dd02dd28923
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893124"
 ---
 # <a name="macros-for-reporting"></a>Macros pour la création de rapports
 Pour le débogage, vous pouvez utiliser les macros **_RPTn** et **_RPTFn** , définies dans CRTDBG. H, pour remplacer l’utilisation des `printf` instructions. Vous n’avez pas besoin de les inverser dans **#ifdef** s, car ils disparaissent automatiquement dans votre version release lorsque **_DEBUG** n’est pas défini.

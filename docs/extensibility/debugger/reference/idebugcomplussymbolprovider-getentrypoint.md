@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c686659d2a3d5e81e8e466bf1707337842cf8317
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42475afc8a9b5e2f86b2892a091efb738dd8d88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892890"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 Récupère le point d’entrée de l’application.
@@ -52,7 +52,7 @@ dans Identificateur unique du module.
 `ppAddress`\
 à Retourne le point d’entrée représenté par une interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

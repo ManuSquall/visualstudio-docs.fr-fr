@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892825"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Cette méthode lance un processus au moyen du moteur de débogage (DE).
@@ -28,7 +28,7 @@ Cette méthode lance un processus au moyen du moteur de débogage (DE).
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT LaunchSuspended ( 
+HRESULT LaunchSuspended ( 
    LPCOLESTR             pszMachine,
    IDebugPort2*          pPort,
    LPCOLESTR             pszExe,
@@ -103,10 +103,10 @@ dans Objet [IDebugEventCallback2](../../../extensibility/debugger/reference/ideb
 `ppDebugProcess`\
 à Retourne l’objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) résultant qui représente le processus lancé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Normalement, [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] lance un programme à l’aide de la méthode [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) , puis attache le débogueur au programme suspendu. Toutefois, dans certains cas, le moteur de débogage peut avoir besoin de lancer un programme (par exemple, si le moteur de débogage fait partie d’un interpréteur et si le programme en cours de débogage est un langage interprété), auquel cas [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] utilise la `IDebugEngineLaunch2::LaunchSuspended` méthode.
 
  La méthode [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) est appelée pour démarrer le processus une fois que le processus a été lancé avec succès dans un état suspendu.

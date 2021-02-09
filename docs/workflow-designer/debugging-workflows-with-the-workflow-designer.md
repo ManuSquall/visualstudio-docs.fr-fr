@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 45219da52cdd1ff87b7243c3cc742bb4c97a74e7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0acc0cb0a37543b1462a4d5241eb63706868d372
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894333"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Déboguer des flux de travail avec le Concepteur de flux de travail
 
@@ -43,8 +43,8 @@ En général, vous déboguez des workflows comme vous déboguez des programmes �
 
 - **Pas à pas sortant :** Pas à pas sortant d’une activité en appuyant sur **MAJ** + **F11**. La commande de pas à pas sortant permet d'exécuter totalement l'activité en cours et toutes ses activités frères. Le débogueur marque ensuite un arrêt sur le parent de l'activité en cours. Lorsque la commande de pas à pas sortant est exécutée à partir d'un gestionnaire de code, le débogueur marque un arrêt sur l'activité à laquelle le gestionnaire est associé.
 
-- **Pas à pas principal** : pas à pas principal dans une activité en appuyant sur **F10**. Lorsque vous effectuez un pas à pas sur une activité composite, le débogueur marque un arrêt sur le premier enfant exécutable de l'activité composite. Lorsque vous effectuez un pas à pas sur une activité non composite (sur une activité <xref:System.Activities.Statements.Assign>, par exemple), le débogueur exécute l'activité et ses gestionnaires associés, et marque un arrêt sur l'activité suivante. Si l'activité exécutée est la dernière activité enfant d'une activité composite, après l'exécution, le débogueur marque un arrêt sur l'activité parente.
+- **Pas à pas principal**: pas à pas principal dans une activité en appuyant sur **F10**. Lorsque vous effectuez un pas à pas sur une activité composite, le débogueur marque un arrêt sur le premier enfant exécutable de l'activité composite. Lorsque vous effectuez un pas à pas sur une activité non composite (sur une activité <xref:System.Activities.Statements.Assign>, par exemple), le débogueur exécute l'activité et ses gestionnaires associés, et marque un arrêt sur l'activité suivante. Si l'activité exécutée est la dernière activité enfant d'une activité composite, après l'exécution, le débogueur marque un arrêt sur l'activité parente.
 
 ## <a name="debug-with-f5"></a>Déboguer avec F5
 
-Si vous générez une application console de workflow, appuyez simplement sur **F5** pour commencer le débogage dans votre application et votre flux de travail. Si vous générez une bibliothèque d’activités de manière autonome, vous devez spécifier une application hôte exécutable comme projet de démarrage. Pour définir un projet de démarrage dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nom de l’ordinateur hôte et sélectionnez **définir comme projet de démarrage**.
+Si vous générez une application console de workflow, appuyez simplement sur **F5** pour commencer le débogage dans votre application et votre flux de travail. Si vous générez une bibliothèque d’activités de manière autonome, vous devez spécifier une application hôte exécutable comme projet de démarrage. Pour définir un projet de démarrage dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nom de l’ordinateur hôte et sélectionnez **définir comme projet de démarrage**.

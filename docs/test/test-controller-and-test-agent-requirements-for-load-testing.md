@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 6668e669fdc26db9d81c7176aeee16e5af42987b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: a123a147d038a41f799c2fdf9d4fb26eaa4f3490
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894489"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Configuration requise du contrôleur de test et de l’agent de test pour le test de charge
 
@@ -34,8 +34,8 @@ Le tableau suivant affiche la configuration matérielle requise recommandée pou
 
 |**Configuration**|**Composant**|**UC**|**Disque dur**|**Mémoire**|
 |-|-------------------|-|------------|-|
-|< 500 utilisateurs virtuels|Agent de test|2,6 GHz|10 Go|2 Go|
-|< 1 000 utilisateurs virtuels|Agent de test|Biprocesseur, 2,6 GHz|10 Go|2 Go|
+|< 500 utilisateurs virtuels|Agent de test|2,6 GHz|10 Go|2 Go|
+|< 1 000 utilisateurs virtuels|Agent de test|Biprocesseur, 2,6 GHz|10 Go|2 Go|
 |N x 1 000 utilisateurs virtuels|Agent de test|Évolutivité à N agents avec, chacun, un biprocesseur 2,6 GHz|10 Go|2 Go|
 |\< 30 ordinateurs dans l’environnement de test. Avec agents et serveurs en cours de test.|Test Controller|2,6 GHz|||
 |N x 30 ordinateurs dans l'environnement de test. Avec agents et serveurs en cours de test.|Test Controller|N processeurs 2,6 GHz|||

@@ -7,21 +7,21 @@ ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a9aad147f0d8f47a64b6d083cf3e008dec8f6a2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 600b500ae5672dfd5332168ec11f05c7b27b14bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894164"
 ---
 # <a name="flowchart-activity-designers"></a>Concepteurs d'activités d'organigramme
 
 Concepteur de flux de travail comprend un certain nombre d’activités fournies par le système que vous pouvez utiliser lors de la construction de vos flux de travail. Cette section contient les activités fournies par le système utilisées pour gérer des organigrammes dans un workflow. Les rubriques suivantes décrivent ces activités et fournissent des conseils sur la façon de les utiliser.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>

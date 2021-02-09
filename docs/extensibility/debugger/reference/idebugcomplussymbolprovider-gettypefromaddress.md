@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87dfa102916b55c8445ecbf99d7033c0391ec254
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65b94be12bab00b44f12bc23239de90f5e8c0ddc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892838"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Récupère un type de symbole en fonction de son adresse de débogage.
@@ -47,7 +47,7 @@ dans Adresse de débogage qui est représentée par une interface [IDebugAddress
 `ppField`\
 à Retourne le type de tableau tel qu’il est représenté par une interface [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

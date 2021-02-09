@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8385fe376f56738d76e066dc172e7b6b516f9a08
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6e117fcbea0488c4b6a42125971984b86cf78251
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894255"
 ---
 # <a name="dowhile-activity-designer"></a>Concepteur d'activités DoWhile
 
@@ -27,10 +27,10 @@ L' <xref:System.Activities.Statements.DoWhile> activité exécute l’activité 
 
 Le tableau suivant répertorie les <xref:System.Activities.Statements.DoWhile> propriétés d’activité les plus utiles et décrit comment les utiliser dans le concepteur :
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|Faux|Activité à exécuter lorsque la condition a la **valeur true**. Pour ajouter l' <xref:System.Activities.Statements.DoWhile.Body%2A> activité, déplacez une activité de la boîte à outils vers la zone **Body** sur le concepteur d’activités en **cours** avec le texte d’indication « déposer l’activité ici ».|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|Vrai|Condition à évaluer après chaque itération de la boucle. Pour définir le <xref:System.Activities.Statements.DoWhile.Condition%2A> , tapez une expression Visual Basic dans la zone **condition** sur le concepteur d’activités en **cours** ou dans la grille des propriétés.|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|Activité à exécuter lorsque la condition a la **valeur true**. Pour ajouter l' <xref:System.Activities.Statements.DoWhile.Body%2A> activité, déplacez une activité de la boîte à outils vers la zone **Body** sur le concepteur d’activités en **cours** avec le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|Condition à évaluer après chaque itération de la boucle. Pour définir le <xref:System.Activities.Statements.DoWhile.Condition%2A> , tapez une expression Visual Basic dans la zone **condition** sur le concepteur d’activités en **cours** ou dans la grille des propriétés.|
 
 ## <a name="see-also"></a>Voir aussi
 

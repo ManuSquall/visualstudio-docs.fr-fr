@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893774"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtient les propriétés qui décrivent ce thread.
@@ -48,10 +48,10 @@ dans Combinaison d’indicateurs de l’énumération [THREADPROPERTY_FIELDS](..
 `ptp`\
 [in, out] Structure [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) remplie avec les propriétés du thread.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Les informations retournées par cette méthode sont généralement affichées dans la fenêtre de débogage des **Threads** .
 
 ## <a name="example"></a>Exemple

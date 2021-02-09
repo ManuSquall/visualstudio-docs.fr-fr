@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1b661dddf6c07bca34e5ea044fd1338da68f4e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894307"
 ---
 # <a name="delay-activity-designer"></a>Concepteur d'activités Delay
 
@@ -29,7 +29,7 @@ L'activité <xref:System.Activities.Statements.Delay> retarde l'exécution d'un 
 
 ### <a name="use-the-delay-activity-designer"></a>Utiliser le concepteur d’activités Delay
 
-Le concepteur d’activités **delay** se trouve dans la catégorie **primitives** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **delay** se trouve dans la catégorie **primitives** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur d’activités **delay** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . La suppression du concepteur d’activités crée une <xref:System.Activities.Statements.Delay> activité avec un <xref:System.Activities.Activity.DisplayName%2A> délai par défaut. La <xref:System.Activities.Activity.DisplayName%2A> propriété peut être modifiée dans l’en-tête du concepteur d’activités **delay** ou dans la zone **DisplayName** de la grille des propriétés.
 
@@ -37,10 +37,10 @@ Le concepteur d’activités **delay** peut être déplacé de la **boîte à ou
 
 Le tableau suivant présente les <xref:System.Activities.Statements.Delay> Propriétés et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d’entre elles peuvent être modifiées sur l’aire de Concepteur de flux de travail.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial de l'activité <xref:System.Activities.Statements.Delay>. La valeur par défaut est Delay. Bien que la <xref:System.Activities.Activity.DisplayName%2A> valeur ne soit pas strictement obligatoire, il est recommandé d’en utiliser une.|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|Vrai|Durée pendant laquelle retarder le workflow. Cette propriété est définie dans la grille des propriétés. Tapez une valeur <xref:System.TimeSpan> littérale au format 00:00:00 ou une expression Visual Basic pour spécifier la durée.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.Delay>. La valeur par défaut est Delay. Bien que la <xref:System.Activities.Activity.DisplayName%2A> valeur ne soit pas strictement obligatoire, il est recommandé d’en utiliser une.|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|True|Durée pendant laquelle retarder le workflow. Cette propriété est définie dans la grille des propriétés. Tapez une valeur <xref:System.TimeSpan> littérale au format 00:00:00 ou une expression Visual Basic pour spécifier la durée.|
 
 ## <a name="see-also"></a>Voir aussi
 

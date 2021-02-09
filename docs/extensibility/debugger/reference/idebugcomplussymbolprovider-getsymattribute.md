@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53d0f3ae185a8f13a76547b5afdad1e3b6558918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892864"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Récupère les symboles de débogage avec l’attribut parent donné pour le module spécifié.
@@ -72,7 +72,7 @@ dans Nombre d’octets requis pour la sortie `buffer` .
 `buffer`\
 à Tableau qui contient les symboles.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

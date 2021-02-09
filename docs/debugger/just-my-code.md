@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 9d4ea8bb6a1d03d3b61ab5be51992a7b51f661d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893254"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Déboguer uniquement le code utilisateur avec Uniquement mon code
 
@@ -146,7 +146,7 @@ Un fichier *.. natjmc* est un fichier XML avec la syntaxe suivante :
 |Attribut|Description|
 |---------------|-----------------|
 |`Name`|Obligatoire. Chemin d’accès complet du ou des modules. Vous pouvez utiliser les caractères génériques Windows `?` (zéro ou un caractère) et `*` (zéro, un ou plusieurs caractères). Par exemple,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indique au débogueur de traiter tous les modules dans *\3rdParty\UtilLibs* sur n’importe quel lecteur comme du code externe.|
-|`Company`|facultatif. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|
+|`Company`|Facultatif. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|
 
  **Attributs des éléments File**
 
@@ -159,7 +159,7 @@ Un fichier *.. natjmc* est un fichier XML avec la syntaxe suivante :
 |Attribut|Description|
 |---------------|-----------------|
 |`Name`|Obligatoire. Le nom complet de la fonction à traiter comme du code externe.|
-|`Module`|facultatif. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|
+|`Module`|Facultatif. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|
 
 ### <a name="customize-c-stepping-behavior-independent-of-just-my-code-settings"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement d’exécution pas à pas C++ indépendamment des paramètres de Uniquement mon code
@@ -190,15 +190,15 @@ Un fichier *.. natstepfilter* est un fichier XML avec la syntaxe suivante :
 |Élément|Description|
 |-------------|-----------------|
 |`Function`|Obligatoire. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|
-|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|
-|`Module`|facultatif. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|
+|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Par exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|
+|`Module`|Facultatif. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|
 |`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> `NoStepInto`  : indique au débogueur d’effectuer un pas à pas principal dans la fonction.<br /> `StepInto`  : indique au débogueur d’effectuer un pas à pas détaillé dans la fonction, en substituant tout autre élément `NoStepInto` pour la fonction correspondante.|
 
 ## <a name="javascript-just-my-code"></a><a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript
 
 <a name="BKMK_JS_User_and_non_user_code"></a> JavaScript Uniquement mon code contrôle l’affichage pas à pas et la pile des appels en classant le code dans l’une de ces classifications :
 
-|classification ;|Description|
+|Classification|Description|
 |-|-|
 |**MyCode**|Code utilisateur dont vous êtes propriétaire et que vous contrôlez.|
 |**LibraryCode**|Le code non-utilisateur des bibliothèques que vous utilisez régulièrement et votre application s’appuie sur pour fonctionner correctement (par exemple, WinJS ou jQuery).|

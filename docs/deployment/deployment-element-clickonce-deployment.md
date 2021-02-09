@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 369d48c76ed82825021622af35141ef12ff42c76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893904"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Deployment &gt; , élément (déploiement ClickOnce)
 Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système.
@@ -65,7 +65,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
 | Attribut | Description |
 |--------------------------| - |
 | `install` | Obligatoire. Spécifie si cette application définit une présence dans le menu **Démarrer** de Windows et dans l’application **Ajout/suppression de programmes** du panneau de configuration. Les valeurs valides sont `true` et `false`. Si `false` , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] exécute toujours la version la plus récente de cette application à partir du réseau et ne reconnaît pas l' `subscription` élément. |
-| `minimumRequiredVersion` | facultatif. Spécifie la version minimale de cette application qui peut s’exécuter sur le client. Si le numéro de version de l’application est inférieur au numéro de version fourni dans le manifeste de déploiement, l’application ne s’exécute pas. Les numéros de version doivent être spécifiés au format `N.N.N.N` , où `N` est un entier non signé. Si l' `install` attribut a `false` la `minimumRequiredVersion` valeur, ne doit pas être défini. |
+| `minimumRequiredVersion` | Facultatif. Spécifie la version minimale de cette application qui peut s’exécuter sur le client. Si le numéro de version de l’application est inférieur au numéro de version fourni dans le manifeste de déploiement, l’application ne s’exécute pas. Les numéros de version doivent être spécifiés au format `N.N.N.N` , où `N` est un entier non signé. Si l' `install` attribut a `false` la `minimumRequiredVersion` valeur, ne doit pas être défini. |
 | `mapFileExtensions` | facultatif. La valeur par défaut est `false`. Si `true` , tous les fichiers du déploiement doivent avoir une extension. deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] supprime cette extension de ces fichiers dès qu’elle les télécharge à partir du serveur Web. Si vous publiez votre application à l’aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , elle ajoute automatiquement cette extension à tous les fichiers. Ce paramètre permet à tous les fichiers d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’être téléchargés à partir d’un serveur Web qui bloque la transmission de fichiers se terminant par des extensions « non sécurisées » telles que. exe. |
 | `disallowUrlActivation` | facultatif. La valeur par défaut est `false`. Si `true` la, empêche le démarrage d’une application installée en cliquant sur l’URL ou en entrant l’URL dans Internet Explorer. Si l' `install` attribut n’est pas présent, cet attribut est ignoré. |
 | `trustURLParameters` | facultatif. La valeur par défaut est `false`. Si `true` la valeur est, autorise l’URL à contenir des paramètres de chaîne de requête qui sont passés à l’application, tout comme les arguments de ligne de commande passés à une application de ligne de commande. Pour plus d’informations, consultez [Comment : récupérer des informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si l' `disallowUrlActivation` attribut a `true` la `trustUrlParameters` valeur, doit être exclu du manifeste ou défini explicitement sur `false` . |
@@ -73,7 +73,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
  L' `deployment` élément contient également les éléments enfants suivants.
 
 ## <a name="subscription"></a>subscription
- facultatif. Contient l' `update` élément. L’élément `subscription` ne comporte pas d’attributs. Si l' `subscription` élément n’existe pas, l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application ne recherchera jamais les mises à jour. Si l' `install` attribut de l' `deployment` élément est `false` , l' `subscription` élément est ignoré, car une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application lancée à partir du réseau utilise toujours la version la plus récente.
+ Facultatif. Contient l' `update` élément. L’élément `subscription` ne comporte pas d’attributs. Si l' `subscription` élément n’existe pas, l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application ne recherchera jamais les mises à jour. Si l' `install` attribut de l' `deployment` élément est `false` , l' `subscription` élément est ignoré, car une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application lancée à partir du réseau utilise toujours la version la plus récente.
 
 ## <a name="update"></a>update
  Obligatoire. Cet élément est un enfant de l' `subscription` élément et contient l' `beforeApplicationStartup` `expiration` élément ou. `beforeApplicationStartup` et `expiration` ne peuvent pas être spécifiés dans le même manifeste de déploiement.
@@ -81,10 +81,10 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
  L’élément `update` ne comporte pas d’attributs.
 
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup
- facultatif. Cet élément est un enfant de l' `update` élément et n’a pas d’attributs. Lorsque l' `beforeApplicationStartup` élément existe, l’application est bloquée lors [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de la recherche de mises à jour, si le client est en ligne. Si cet élément n’existe pas, commence [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] par Rechercher les mises à jour en fonction des valeurs spécifiées pour l' `expiration` élément. `beforeApplicationStartup` et `expiration` ne peuvent pas être spécifiés dans le même manifeste de déploiement.
+ Facultatif. Cet élément est un enfant de l' `update` élément et n’a pas d’attributs. Lorsque l' `beforeApplicationStartup` élément existe, l’application est bloquée lors [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de la recherche de mises à jour, si le client est en ligne. Si cet élément n’existe pas, commence [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] par Rechercher les mises à jour en fonction des valeurs spécifiées pour l' `expiration` élément. `beforeApplicationStartup` et `expiration` ne peuvent pas être spécifiés dans le même manifeste de déploiement.
 
 ## <a name="expiration"></a>expiration
- facultatif. Cet élément est un enfant de l' `update` élément et n’a pas d’enfants. `beforeApplicationStartup` et `expiration` ne peuvent pas être spécifiés dans le même manifeste de déploiement. Lorsque la vérification de mise à jour se produit et qu’une version mise à jour est détectée, la nouvelle version met en cache pendant l’exécution de la version existante. La nouvelle version s’installe ensuite au lancement suivant de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
+ Facultatif. Cet élément est un enfant de l' `update` élément et n’a pas d’enfants. `beforeApplicationStartup` et `expiration` ne peuvent pas être spécifiés dans le même manifeste de déploiement. Lorsque la vérification de mise à jour se produit et qu’une version mise à jour est détectée, la nouvelle version met en cache pendant l’exécution de la version existante. La nouvelle version s’installe ensuite au lancement suivant de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
  L' `expiration` élément prend en charge les attributs suivants.
 
