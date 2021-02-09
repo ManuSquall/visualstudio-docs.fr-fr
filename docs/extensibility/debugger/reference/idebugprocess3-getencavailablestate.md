@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dce751223c4513733c5cd9ce815155b7f659b54a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915280"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Cette méthode obtient l’état de modification et de continuation actuel du processus. Un fournisseur de port personnalisé doit toujours retourner `E_NOTIMPL` .
@@ -28,8 +28,8 @@ Cette méthode obtient l’état de modification et de continuation actuel du pr
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetENCAvailableState(
-   EncUnavailableReason* pReason
+HRESULT GetENCAvailableState(
+   EncUnavailableReason* pReason
 );
 ```
 
@@ -43,7 +43,7 @@ int GetENCAvailableState(
 `pReason`\
 à Valeur de l’énumération [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 > [!NOTE]

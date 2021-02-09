@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ccb7ecb0-f189-4e80-b5b2-221a095e01f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3f22a55b9a02f567b2f5ab353d4b15ac9532fdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a36066ef14ceb10160067f146574e1495f856f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915290"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 Récupère un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
@@ -42,7 +42,7 @@ public int GetEngineFilter(
 `pEngineArray`\
 à Référence à une structure qui contient des identificateurs uniques pour les moteurs de débogage.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

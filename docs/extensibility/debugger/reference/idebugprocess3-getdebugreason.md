@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2fa12b74b44761761a08e232a9f3efa845fa73a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45b51d90ec1d1c67ea722d2877e06c2a8d0d2745
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915396"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 Cette méthode retourne la raison pour laquelle le processus a été lancé pour le débogage.
@@ -28,8 +28,8 @@ Cette méthode retourne la raison pour laquelle le processus a été lancé pour
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDebugReason(
-   DEBUG_REASON* pReason
+HRESULT GetDebugReason(
+   DEBUG_REASON* pReason
 );
 ```
 
@@ -43,7 +43,7 @@ int GetDebugReason(
 `pReason`\
 à Retourne une valeur de l’énumération [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

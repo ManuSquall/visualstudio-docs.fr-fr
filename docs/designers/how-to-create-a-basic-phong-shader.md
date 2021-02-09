@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: b5319526da9aa59951729389749e53f3df65b643
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915715"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Guide pratique pour créer un nuanceur Phong de base
 
@@ -31,20 +31,20 @@ Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boît
 
 1. Créez un nuanceur Lambert en suivant les étapes décrites dans [Guide pratique pour créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2. Déconnectez le nœud **Lambert** du nœud **Couleur finale** . Choisissez le terminal **RVB** du nœud **Lambert** , puis choisissez **Rompre les liaisons** . Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
+2. Déconnectez le nœud **Lambert** du nœud **Couleur finale**. Choisissez le terminal **RVB** du nœud **Lambert**, puis choisissez **Rompre les liaisons**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
 
-3. Ajoutez un nœud **Ajouter** au graphique. Dans la **Boîte à outils** , sous **Math** , sélectionnez **Ajouter** et déplacez-le vers l’aire de conception.
+3. Ajoutez un nœud **Ajouter** au graphique. Dans la **Boîte à outils**, sous **Math**, sélectionnez **Ajouter** et déplacez-le vers l’aire de conception.
 
-4. Ajoutez un nœud **Spéculaire** au graphique. Dans la **Boîte à outils** , sous **Utilitaire** , sélectionnez **Spéculaire** et déplacez-le vers l’aire de conception.
+4. Ajoutez un nœud **Spéculaire** au graphique. Dans la **Boîte à outils**, sous **Utilitaire**, sélectionnez **Spéculaire** et déplacez-le vers l’aire de conception.
 
-5. Ajoutez la contribution spéculaire. Déplacez le terminal **Sortie** du nœud **Spéculaire** vers le terminal **X** du nœud **Ajouter** , puis le terminal **Sortie** du nœud **Lambert** vers le terminal **Y** du nœud **Ajouter** . Ces connexions combinent les contributions de couleur spéculaire et diffuse totale du pixel.
+5. Ajoutez la contribution spéculaire. Déplacez le terminal **Sortie** du nœud **Spéculaire** vers le terminal **X** du nœud **Ajouter**, puis le terminal **Sortie** du nœud **Lambert** vers le terminal **Y** du nœud **Ajouter**. Ces connexions combinent les contributions de couleur spéculaire et diffuse totale du pixel.
 
-6. Connectez la valeur de couleur calculée à la couleur finale. Déplacez le terminal **Sortie** du nœud **Ajouter** vers le terminal **RVB** du nœud **Couleur finale** .
+6. Connectez la valeur de couleur calculée à la couleur finale. Déplacez le terminal **Sortie** du nœud **Ajouter** vers le terminal **RVB** du nœud **Couleur finale**.
 
    L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un modèle de théière.
 
 > [!NOTE]
-> Pour mettre en évidence l’effet du nuanceur dans cette illustration, une couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur, et un fini d’aspect métallique a été spécifié à l’aide des paramètres **MaterialSpecular** et **MaterialSpecularPower** . Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+> Pour mettre en évidence l’effet du nuanceur dans cette illustration, une couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur, et un fini d’aspect métallique a été spécifié à l’aide des paramètres **MaterialSpecular** et **MaterialSpecularPower**. Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
 ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-lighting-graph.png)
 

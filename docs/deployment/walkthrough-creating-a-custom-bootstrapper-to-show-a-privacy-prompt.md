@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915750"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procédure pas à pas : Créer un programme d’amorçage personnalisé avec une invite de confidentialité
 Vous pouvez configurer des applications ClickOnce pour qu’elles soient automatiquement mises à jour lorsque des assemblys avec des versions de fichiers et des versions d’assembly plus récentes deviennent disponibles. Pour vous assurer que vos clients acceptent ce comportement, vous pouvez afficher une invite de confidentialité. Ils peuvent ensuite choisir d’accorder ou non l’autorisation de mise à jour automatique à l’application. Si l’application n’est pas autorisée à se mettre à jour automatiquement, elle ne s’installe pas.
@@ -43,17 +43,17 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
 #### <a name="to-create-a-consent-dialog-box"></a>Pour créer une boîte de dialogue de consentement
 
-1. Dans le menu **Fichier** , pointez sur **Nouveau** , puis cliquez sur **Projet**.
+1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , cliquez sur **Windows** , puis sur **WindowsFormsApplication**.
+2. Dans la boîte de dialogue **nouveau projet** , cliquez sur **Windows**, puis sur **WindowsFormsApplication**.
 
-3. Pour le **nom** , tapez **ConsentDialog** , puis cliquez sur **OK**.
+3. Pour le **nom**, tapez **ConsentDialog**, puis cliquez sur **OK**.
 
 4. Dans le concepteur, cliquez sur le formulaire.
 
 5. Dans la fenêtre **Propriétés** , modifiez la propriété **Text** pour **mettre à jour la boîte de dialogue de consentement**.
 
-6. Dans la **boîte à outils** , développez **tous les Windows Forms** , puis faites glisser un contrôle **label** vers le formulaire.
+6. Dans la **boîte à outils**, développez **tous les Windows Forms**, puis faites glisser un contrôle **label** vers le formulaire.
 
 7. Dans le concepteur, cliquez sur le contrôle Label.
 
@@ -61,17 +61,17 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
     L’application que vous êtes sur le point d’installer recherche les dernières mises à jour sur le Web. En cliquant sur « J’accepte », vous autorisez l’application à rechercher et installer automatiquement les mises à jour à partir d’Internet.
 
-9. Dans la **boîte à outils** , faites glisser un contrôle **CheckBox** au milieu du formulaire.
+9. Dans la **boîte à outils**, faites glisser un contrôle **CheckBox** au milieu du formulaire.
 
 10. Dans la fenêtre **Propriétés** , remplacez la propriété **texte** sous **disposition** par **J’accepte**.
 
-11. Dans la **boîte à outils** , faites glisser un contrôle **Button** vers le coin inférieur gauche du formulaire.
+11. Dans la **boîte à outils**, faites glisser un contrôle **Button** vers le coin inférieur gauche du formulaire.
 
 12. Dans la fenêtre **Propriétés** , modifiez la propriété **texte** sous **disposition** pour **Continuer**.
 
 13. Dans la fenêtre **Propriétés** , modifiez la propriété **(nom)** sous **conception** en **ProceedButton**.
 
-14. Dans la **boîte à outils** , faites glisser un contrôle **Button** vers le coin inférieur droit du formulaire.
+14. Dans la **boîte à outils**, faites glisser un contrôle **Button** vers le coin inférieur droit du formulaire.
 
 15. Dans la fenêtre **Propriétés** , affectez à la propriété **Text** sous **disposition** la valeur **Annuler**.
 
@@ -112,15 +112,15 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
      Pour les développeurs Visual Basic uniquement :
 
-    1. Dans **Explorateur de solutions** , cliquez sur **ConsentDialog**.
+    1. Dans **Explorateur de solutions**, cliquez sur **ConsentDialog**.
 
-    2. Dans le menu **projet** , cliquez sur **Ajouter un module** , puis sur **Ajouter**.
+    2. Dans le menu **projet** , cliquez sur **Ajouter un module**, puis sur **Ajouter**.
 
     3. Dans le fichier de code *Module1. vb* , ajoutez le code suivant.
 
         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
 
-    4. Dans le menu **projet** , cliquez sur **Propriétés de ConsentDialog** , puis cliquez sur l’onglet **application** .
+    4. Dans le menu **projet** , cliquez sur **Propriétés de ConsentDialog**, puis cliquez sur l’onglet **application** .
 
     5. Décochez **activer l’infrastructure** de l’application.
 
@@ -234,7 +234,7 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Pour définir l’application de consentement des mises à jour comme condition préalable
 
-1. Dans **Explorateur de solutions** , cliquez sur le nom de l’application que vous souhaitez déployer.
+1. Dans **Explorateur de solutions**, cliquez sur le nom de l’application que vous souhaitez déployer.
 
 2. Dans le menu **projet** , cliquez sur **Propriétés** de *NomProjet* .
 
@@ -252,7 +252,7 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Pour créer et tester le programme d’installation en ne cliquant pas sur J’accepte
 
-1. Dans **Explorateur de solutions** , cliquez sur le nom de l’application que vous souhaitez déployer.
+1. Dans **Explorateur de solutions**, cliquez sur le nom de l’application que vous souhaitez déployer.
 
 2. Dans le menu **projet** , cliquez sur **Propriétés** de *NomProjet* .
 
@@ -278,7 +278,7 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Pour créer et tester le programme d’installation en cliquant sur J’accepte
 
-1. Dans **Explorateur de solutions** , cliquez sur le nom de l’application que vous souhaitez déployer.
+1. Dans **Explorateur de solutions**, cliquez sur le nom de l’application que vous souhaitez déployer.
 
 2. Dans le menu **projet** , cliquez sur **Propriétés** de *NomProjet* .
 
@@ -294,7 +294,7 @@ Vous pouvez configurer des applications ClickOnce pour qu’elles soient automat
 
      L’application de la boîte de dialogue de consentement des mises à jour apparaît et affiche le texte suivant : l’application que vous êtes sur le point d’installer recherche les dernières mises à jour sur le Web. En cliquant sur J’accepte, vous autorisez l’application à rechercher des mises à jour automatiquement sur Internet.
 
-7. Cliquez sur **J’accepte** , puis sur **Continuer**.
+7. Cliquez sur **J’accepte**, puis sur **Continuer**.
 
      L’application commence à s’installer.
 
