@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c1aa39ee-d645-431e-bf5f-0640c0998934
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d83747d3db9336c00d8c770db415093de693f1c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1fa997d8552efec7fdfbcd97fa3e300975d4f58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862688"
 ---
 # <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 Récupère le nom du fichier à partir duquel les symboles ont été chargés.
@@ -25,7 +25,7 @@ Récupère le nom du fichier à partir duquel les symboles ont été chargés.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_symbolsFileName ( 
+HRESULT get_symbolsFileName ( 
    BSTR* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_symbolsFileName ( 
 
 à Retourne le nom du fichier à partir duquel les symboles ont été chargés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette propriété est valide uniquement pour les symboles avec une valeur d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) de `SymTagExe` qui ont également une portée globale.
 
 ## <a name="see-also"></a>Voir aussi

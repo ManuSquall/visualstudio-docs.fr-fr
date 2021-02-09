@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 41c751ba-81be-4bd3-838f-8373fc146157
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 64cc4dbae33e8522e323681196a7401735f0257b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70463ad786afda31f6cba97131582e16820d64dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862737"
 ---
 # <a name="idiasymbolget_samplerslot"></a>IDiaSymbol::get_samplerSlot
 Récupère l’emplacement de l’échantillonneur.
@@ -32,7 +32,7 @@ HRESULT get_samplerSlot(
 
 à Pointeur vers un `DWORD` qui contient l’emplacement de l’échantillonneur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

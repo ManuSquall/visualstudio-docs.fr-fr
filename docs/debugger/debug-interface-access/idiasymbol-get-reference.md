@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a97cb74-6a14-41fd-8e24-2a42d7a1e529
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4bf904e6f9387610fbdb83e33d4738cfa7a528
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2337dbe13b6d6fed1b12bbcee86f943831dff3d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862772"
 ---
 # <a name="idiasymbolget_reference"></a>IDiaSymbol::get_reference
 Récupère un indicateur qui spécifie si un type pointeur est une référence.
@@ -25,7 +25,7 @@ Récupère un indicateur qui spécifie si un type pointeur est une référence.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_reference ( 
+HRESULT get_reference ( 
    BOOL* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_reference ( 
 
 à Retourne `TRUE` si un type pointeur est une référence ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

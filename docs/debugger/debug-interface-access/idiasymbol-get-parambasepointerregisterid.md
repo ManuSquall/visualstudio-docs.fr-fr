@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f5caeb4-5c88-4054-bf8b-50d34bbbf8c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fe29506c0d25d2afc9914c21774dbf353a7a341
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f2ea60722775d706bdbf4753c9dd8d6e0b18b20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862828"
 ---
 # <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 Récupère l’ID du Registre qui contient un pointeur de base vers les paramètres. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction` .
@@ -25,7 +25,7 @@ Récupère l’ID du Registre qui contient un pointeur de base vers les paramèt
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_paramBasePointerRegisterId ( 
+HRESULT get_paramBasePointerRegisterId ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_paramBasePointerRegisterId ( 
 
 à Retourne l’ID du Registre qui contient un pointeur de base vers les paramètres.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

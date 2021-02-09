@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: a70648f2-3b25-439f-8099-239ac602515a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c0d4afea1525a52453d83b804cfb06a95bce932c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba6c88200ea935b0061e2b1939a13c6c376ee96f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862562"
 ---
 # <a name="idiasymbolget_uavslot"></a>IDiaSymbol::get_uavSlot
 Récupère l’emplacement UAV.
@@ -32,7 +32,7 @@ HRESULT get_uavSlot(
 
 à Pointeur vers un `DWORD` qui contient l’emplacement UAV.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

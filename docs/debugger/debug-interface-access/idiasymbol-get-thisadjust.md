@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 56b9a147-e8c0-4d4b-a42a-398214dd5f86
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2475ccf14d892a7f7d1b130c63dbea458038dd41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ae752826e1e57527087140ab1ecdad7b52e25ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862597"
 ---
 # <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
 Récupère le réglage logique `this` de la méthode.
@@ -25,7 +25,7 @@ Récupère le réglage logique `this` de la méthode.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_thisAdjust ( 
+HRESULT get_thisAdjust ( 
    LONG* pRetVal
 );
 ```
@@ -35,13 +35,13 @@ HRESULT get_thisAdjust ( 
 
 à Retourne le `this` réglage logique de la méthode.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Dans certains cas d’héritage multiples, la méthode elle-même doit calculer une `this` valeur true en ajoutant un offset à `this` .
 
 ## <a name="see-also"></a>Voir aussi
