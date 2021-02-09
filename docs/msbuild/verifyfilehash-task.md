@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild, VerifyFileHash task
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cfd6bb88a5bfbbffb7c99f7f43036cf9fee4d6ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908801"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash, tâche
 

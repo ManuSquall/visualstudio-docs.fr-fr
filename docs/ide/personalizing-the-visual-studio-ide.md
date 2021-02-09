@@ -6,15 +6,15 @@ ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909024"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
@@ -70,7 +70,7 @@ Vous pouvez personnaliser le menu **Outils** pour lancer les outils externes. Po
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Paramètres d’environnement](environment-settings.md)
+- [Paramètres d'environnement](environment-settings.md)
 - [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Démarrage rapide : premier aperçu de l’IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personnaliser l’IDE Visual Studio pour Mac](/visualstudio/mac/customizing-the-ide)

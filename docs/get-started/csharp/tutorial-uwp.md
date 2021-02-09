@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 342fb2ba0d094299b41707b93b52f3b28a3afdce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909260"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Didacticiel : créer votre première plateforme Windows universelle application dans Visual Studio avec XAML et C&#35;
 
@@ -32,7 +32,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Créez tout d’abord un projet de plateforme Windows universelle. Le type de projet inclut tous les fichiers de modèle dont vous avez besoin au départ.
 
@@ -79,7 +79,7 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
    > S’il s’agit de la première fois que vous avez utilisé Visual Studio pour créer une application UWP, une boîte de dialogue **Paramètres** peut s’afficher. Choisissez **Mode développeur**, puis **Oui**.<br><br>
    > ![Activer le mode développeur dans la boîte de dialogue Paramètres du projet UWP](media/enable-developer-mode.png)<br><br>Visual Studio installe un autre package en mode développeur pour vous. Une fois l’installation du package terminée, fermez la boîte de dialogue **Paramètres**.
 
-## <a name="create-the-application"></a>Création de l'application
+## <a name="create-the-application"></a>Créer l’application
 
 Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton, ajouter une action au bouton, puis démarrer l’application « Hello World » pour voir à quoi elle ressemble.
 
@@ -102,7 +102,7 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
    ![Cliquer sur Boîte à outils pour ouvrir la fenêtre volante Boîte à outils](media/uwp-toolbox.png)
 
-   (Si vous ne voyez pas l’option **boîte à outils** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, choisissez **Afficher**la  >  **barre d’outils**. Ou appuyez sur **CTRL** + **ALT** + **X**.)
+   (Si vous ne voyez pas l’option **boîte à outils** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, choisissez **Afficher** la  >  **barre d’outils**. Ou appuyez sur **CTRL** + **ALT** + **X**.)
 
 1. Cliquez sur l’icône **épingler** pour ancrer la fenêtre boîte à outils.
 

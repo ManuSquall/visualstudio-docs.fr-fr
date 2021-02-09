@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f909ac3d2e2993879e4c24140abbf23c2ee8d545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81a6ce40457243e5492d5c6a44dd5d9dd590920f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909930"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Lit une séquence d’octets, en commençant à un emplacement donné.
@@ -29,7 +29,7 @@ Lit une séquence d’octets, en commençant à un emplacement donné.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT ReadAt( 
+HRESULT ReadAt( 
    IDebugMemoryContext2* pStartContext,
    DWORD                 dwCount,
    BYTE*                 rgbMemory,
@@ -64,7 +64,7 @@ dans Nombre d’octets à lire. Spécifie également la longueur du `rgbMemory` 
 `pdwUnreadable`\
 [in, out] Retourne le nombre d’octets illisibles. Peut être une valeur null si le client n’est pas intéressé par le nombre d’octets illisibles.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6c95c3953b70235daa739e48b5de50b4a815b13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908061"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 Tente de déterminer la raison de l’échec de l’attachement automatique.
@@ -28,14 +28,14 @@ Tente de déterminer la raison de l’échec de l’attachement automatique.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT DiagnoseWebDebuggingError(
-   LPCWSTR pszUrl
+HRESULT DiagnoseWebDebuggingError(
+   LPCWSTR pszUrl
 );
 ```
 
 ```csharp
-int DiagnoseWebDebuggingError(
-   string pszUrl
+int DiagnoseWebDebuggingError(
+   string pszUrl
 );
 ```
 
@@ -43,7 +43,7 @@ int DiagnoseWebDebuggingError(
 `pszUrl`\
 dans Non utilisé actuellement ; doit toujours être défini sur une valeur null.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Voici d’autres codes de retour classiques :
 
 |Code|Description|

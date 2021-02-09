@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 475ffab931445718d27ae6e1fe1242f6a5a76512
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7028d6e958de0d1c15d0e0c7c40a78e29a815736
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909474"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 Récupère les informations d’importation des métadonnées.
@@ -52,7 +52,7 @@ dans Identificateur du domaine d’application.
 `ppImport`\
 à Retourne un objet qui contient les informations d’importation de métadonnées.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

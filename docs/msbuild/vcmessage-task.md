@@ -18,27 +18,27 @@ helpviewer_keywords:
 ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c01c86a5374c14ac27de1535020c5deed29a89f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c8db60044080726b61a02a59cad68d93f683e282
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908830"
 ---
 # <a name="vcmessage-task"></a>VCMessage (tâche)
 
 Journalise les messages d’avertissement et d’erreur lors de la génération.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
- Cette tâche aide à implémenter MSBuild pour les projets C++ et n’est pas destinée à être appelée par l’utilisateur. Pour plus d'informations, consultez <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
+ Cette tâche aide à implémenter MSBuild pour les projets C++ et n’est pas destinée à être appelée par l’utilisateur. Pour plus d’informations, consultez <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-dessous décrit les paramètres de la tâche **VCMessage** .
+ Le tableau ci-dessous décrit les paramètres de la tâche **VCMessage**.
 
 |Paramètre|Description|
 |---------------|-----------------|

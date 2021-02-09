@@ -14,15 +14,15 @@ helpviewer_keywords:
 - outlining code
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 04a2156723bc33e25a658814b9348655f7ba86d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909059"
 ---
 # <a name="outlining"></a>mode Plan
 
@@ -40,7 +40,7 @@ Les commandes **Annuler** et **Restaurer** du menu **Edition** affectent ces act
 > [!CAUTION]
 > Quand vous modifiez une zone en mode Plan, vous risquez de perdre le mode Plan. Par exemple, les suppressions ou les opérations de **recherche et de remplacement** peuvent effacer la fin de la région.
 
-Les commandes suivantes se trouvent dans le sous **Edit**  >  -menu modifier le**mode plan** .
+Les commandes suivantes se trouvent dans le sous   >  -menu modifier le **mode plan** .
 
 |Nom|Description|
 |-|-|

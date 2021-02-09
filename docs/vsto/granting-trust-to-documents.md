@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e2871741d7297b6efabf53bb6f258355c41cac49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910256"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder un niveau de confiance à des documents
   Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l'application : il convient de signer les manifestes à l'aide d'un certificat ou de cliquer sur l'invite d'approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.

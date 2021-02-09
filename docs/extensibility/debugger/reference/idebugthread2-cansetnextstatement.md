@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ce1d04303edb34de98ead8d416221e7f71338ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909286"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 Détermine si le pointeur d’instruction actuel peut être défini sur le frame de pile donné.
@@ -28,14 +28,14 @@ Détermine si le pointeur d’instruction actuel peut être défini sur le frame
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT CanSetNextStatement ( 
+HRESULT CanSetNextStatement ( 
    IDebugStackFrame2*  pStackFrame,
    IDebugCodeContext2* pCodeContext
 );
 ```
 
 ```csharp
-int CanSetNextStatement ( 
+int CanSetNextStatement ( 
    IDebugStackFrame2  pStackFrame,
    IDebugCodeContext2 pCodeContext
 );
@@ -48,7 +48,7 @@ Réservé à une utilisation ultérieure ; défini sur une valeur null. S’il 
 `pCodeContext`\
 dans Objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui décrit l’emplacement du code sur le point d’être exécuté et son contexte.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

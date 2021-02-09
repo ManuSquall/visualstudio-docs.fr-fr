@@ -16,20 +16,20 @@ helpviewer_keywords:
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 88880110ca00141382d7038ec001f3cc4159f2b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908326"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo-variables dans le débogueur Visual Studio
 Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou dans la boîte de dialogue **Espion express**. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Supposez que vous écrivez une application en code natif et que vous voulez afficher le nombre de handles alloués à votre application. Dans la fenêtre **Espion**, entrez la pseudo-variable suivante dans la colonne **Nom**, puis appuyez sur Entrée pour l’évaluer :
 
 `$handles`
@@ -45,7 +45,7 @@ Les pseudo-variables sont des termes utilisés pour afficher certaines informati
 |`$env`|Affiche le bloc environnement de l'explorateur de chaînes.|
 |`$cmdline`|Affiche la chaîne de ligne de commande qui a lancé le programme.|
 |`$pid`|Affiche l'ID de processus.|
-|`$` *registername*<br /><br /> ou<br /><br /> `@` *registername*|Affiche le contenu du registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. Vous pouvez alors utiliser `$`*registername* ou `@`*registername*.|
+|`$` *registername*<br /><br /> or<br /><br /> `@` *registername*|Affiche le contenu du registre *registername*.<br /><br /> En règle générale, vous pouvez afficher le contenu du registre en entrant simplement son nom. Vous n'avez besoin d'utiliser cette syntaxe que lorsque le nom de registre surcharge le nom d'une variable. Si le nom de registre est le même que celui d'une variable dans la portée actuelle, le débogueur interprète le nom comme étant celui de la variable. Vous pouvez alors utiliser `$`*registername* ou `@`*registername*.|
 |`$clk`|Affiche le temps en cycles d'horloge.|
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|
 |`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack` fonctionne uniquement dans les applications UWP. `$ exceptionstack` n’est pas pris en charge pour les exceptions C++ et SEH|

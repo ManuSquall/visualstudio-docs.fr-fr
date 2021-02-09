@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82f3214783a35e668bf3164c8659f60f863e9a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab1d9be5e4405cea3bb75d7837d4ff3ad9a91e9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909791"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Obtient une interface DE moteur DE débogage personnalisé (DE).
@@ -28,13 +28,13 @@ Obtient une interface DE moteur DE débogage personnalisé (DE).
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetEngineInterface( 
+HRESULT GetEngineInterface( 
    IUnknown** ppUnk
 );
 ```
 
 ```csharp
-int GetEngineInterface( 
+int GetEngineInterface( 
    out object ppUnk
 );
 ```
@@ -43,7 +43,7 @@ int GetEngineInterface( 
 `ppUnk`\
 à Retourne un `IUnknown` objet qui représente le moteur de débogage (de) et qui peut être interrogé pour toute autre interface valide associée à un de (par exemple, [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) ou [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be498154a8141c61f114682893d0aaf8b841cf95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01b7ee4b0220fcd83573d29954c03d738ed53051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909377"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Appelée par un gestionnaire d’événements pour récupérer les résultats relatifs à un processus de chargement de symboles.
@@ -56,7 +56,7 @@ int GetSymbolSearchInfo(
 `pdwModuleInfoFlags`\
 à Combinaison d’indicateurs de l’énumération [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) indiquant si des symboles ont été chargés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

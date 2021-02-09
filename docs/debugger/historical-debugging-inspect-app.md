@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d51327f67429071d08f6dfd02c0ec0a1fc55822f
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 87987beed3750d8eda5d680b561a46b0866473b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908404"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecter votre application avec le débogage d’historique IntelliTrace dans Visual Studio (C#, Visual Basic, C++)
 
@@ -53,7 +53,7 @@ private static int AddInt(int add)
 }
 ```
 
-Nous partons du principe que la valeur attendue de `resultInt` après l’appel de `AddAll()` est 20 (le résultat de 20 incrémentations de `testInt`). (Nous partons également du principe que vous ne pouvez pas voir le bogue dans `AddInt()` ). Mais le résultat est en fait 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour simplifier et accélérer l’identification du bogue. Voici comment faire :
+Nous partons du principe que la valeur attendue de `resultInt` après l’appel de `AddAll()` est 20 (le résultat de 20 incrémentations de `testInt`). (Nous partons également du principe que vous ne pouvez pas voir le bogue dans `AddInt()` ). Mais le résultat est en fait 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour simplifier et accélérer l’identification du bogue. Voici comment procéder :
 
 1. Dans **outils > Options > intellitrace > général**, assurez-vous qu’IntelliTrace est activé, puis sélectionnez **événements IntelliTrace et informations sur les appels**. Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation (comme expliqué ci-dessous).
 

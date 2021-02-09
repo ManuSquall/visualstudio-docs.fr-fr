@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 21d3b402bbffd9528755098131ff9ed1ee636906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908153"
 ---
 # <a name="work-with-textures-and-images"></a>Utiliser des textures et des images
 
@@ -48,7 +48,7 @@ Les mappages de hauteur comportent les données des champs de hauteur. Elles son
 
 ### <a name="cube-maps"></a>Mappages de cube
 
-Les mappages de cube peuvent contenir différents types de données, par exemple, des couleurs ou des normales, mais sont organisées avec six textures sur les faces d’un cube. De ce fait, des mappages de cube ne sont pas échantillonnés en fournissant des coordonnées de texture, mais en fournissant un vecteur dont l’origine est le centre du cube ; l’échantillon est prélevé au point d’intersection entre le vecteur et le cube. Les mappages de cube sont utilisés pour fournir une approximation de l’environnement pouvant être utilisé pour calculer les réflexions, appelée *mappage de l’environnement* , ou fournir une texture aux objets sphériques avec moins de distorsion que les textures de base, à deux dimensions.
+Les mappages de cube peuvent contenir différents types de données, par exemple, des couleurs ou des normales, mais sont organisées avec six textures sur les faces d’un cube. De ce fait, des mappages de cube ne sont pas échantillonnés en fournissant des coordonnées de texture, mais en fournissant un vecteur dont l’origine est le centre du cube ; l’échantillon est prélevé au point d’intersection entre le vecteur et le cube. Les mappages de cube sont utilisés pour fournir une approximation de l’environnement pouvant être utilisé pour calculer les réflexions, appelée *mappage de l’environnement*, ou fournir une texture aux objets sphériques avec moins de distorsion que les textures de base, à deux dimensions.
 
 ## <a name="related-topics"></a>Rubriques connexes
 

@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909233"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>En savoir plus sur l’utilisation de l’éditeur de code avec C\#
 
@@ -58,7 +58,7 @@ Vous allez commencer par créer un fichier et y ajouter du code.
 
 ::: moniker-end
 
-2. Dans le menu **fichier** de la barre de menus, choisissez **nouveau**  >  **fichier**ou appuyez sur **CTRL** + **N**.
+2. Dans le menu **fichier** de la barre de menus, choisissez **nouveau**  >  **fichier** ou appuyez sur **CTRL** + **N**.
 
 3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#**, puis choisissez **Ouvrir**.
 
@@ -195,4 +195,4 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [mode Plan](../../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
-- [Utilisez IntelliSense](../../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../../ide/using-intellisense.md)

@@ -5,18 +5,18 @@ ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 863c2715b7dfbc2c331bb57f6cf06851401c51df
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 47859d00861c2361ed03931bf1417e22425d6e68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908123"
 ---
 # <a name="devinit-configuration-file"></a>fichier de configuration devinit
 
@@ -66,17 +66,17 @@ Dans un `.devinit.json` , vous pouvez spécifier plusieurs outils à exécuter. 
 
 | Nom         | Type   | Obligatoire | Valeur                              |
 |--------------|--------|----------|------------------------------------|
-| **commentaires** | string | No       | Commentaires pour le fichier.             |
+| **commentaires** | string | Non       | Commentaires pour le fichier.             |
 | **Utilisez**      | tableau  | Oui      | [Objet RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Exécuter l’objet outil
 
 | Nom                  | Type   | Obligatoire | Valeur                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
-| **commentaires**          | string | No       | Commentaires pour l’entrée de l’outil.                                                                               |
+| **commentaires**          | string | Non       | Commentaires pour l’entrée de l’outil.                                                                               |
 | **outil**              | string | Oui      | Nom de l'outil. Pour obtenir la `devinit list` liste des outils disponibles, consultez la commande.                            |
-| **input**             | string | No       | Entrée de l’outil. Varie en fonction de l’outil. Par exemple, la version requise, l’ID de package, le nom de fichier ou le dossier.|
-| **additionalOptions** | string | No       | Arguments de ligne de commande supplémentaires à passer à l’outil.                                                |
+| **input**             | string | Non       | Entrée de l’outil. Varie en fonction de l’outil. Par exemple, la version requise, l’ID de package, le nom de fichier ou le dossier.|
+| **additionalOptions** | string | Non       | Arguments de ligne de commande supplémentaires à passer à l’outil.                                                |
 
 ## <a name="examples"></a>Exemples
 

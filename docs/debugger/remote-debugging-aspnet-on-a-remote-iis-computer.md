@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b288836b3868f561e86a801d5d26f7d59dd17535
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908267"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Débogage à distance ASP.NET Core sur un ordinateur IIS distant dans Visual Studio
 
@@ -40,7 +40,7 @@ Ces procédures ont été testées sur ces configurations de serveur :
 * Windows Server 2016 et IIS 10
 * Windows Server 2019 et IIS 10
 
-## <a name="network-requirements"></a>Conditions requises en matière de réseau
+## <a name="network-requirements"></a>Configuration requise pour le réseau
 
 Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Le débogage sur une connexion à latence élevée ou à faible bande passante, tel qu’Internet à distance ou sur Internet dans les différents pays, n’est pas recommandé et peut échouer ou être trop lent. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
