@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f27bc3f261e66791f41034923989b2cd61e09db6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904769"
 ---
 # <a name="debug-tasks"></a>Tâches de débogage
 Pour déboguer un programme, celui-ci doit être lancé et un moteur de débogage (DE) doit être attaché à celui-ci, sinon le DE doit être attaché à un programme lancé précédemment. Une fois attaché, le DE doit générer certains événements DE démarrage. En réponse, le package de débogage tente de lier les points d’arrêt définis dans l’IDE. Lorsque le programme atteint un point d’arrêt lié, il s’arrête et attend une entrée de l’utilisateur.

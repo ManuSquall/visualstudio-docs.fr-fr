@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e126612ed8b081e5ba0b703d14399ac74d78a9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906303"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Ajoute un port.
@@ -28,14 +28,14 @@ Ajoute un port.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT AddPort( 
+HRESULT AddPort( 
    IDebugPortRequest2* pRequest,
    IDebugPort2**       ppPort
 );
 ```
 
 ```csharp
-int AddPort( 
+int AddPort( 
    IDebugPortRequest2 pRequest,
    out IDebugPort2    ppPort
 );
@@ -48,10 +48,10 @@ dans Objet [IDebugPortRequest2](../../../extensibility/debugger/reference/idebug
 `ppPort`\
 à Retourne un objet [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) qui représente le port.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode crée en fait le port demandé et l’ajoute à la liste interne des ports actifs du fournisseur de port. La méthode [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) peut être appelée en premier pour éviter des retards fastidieux.
 
 ## <a name="see-also"></a>Voir aussi

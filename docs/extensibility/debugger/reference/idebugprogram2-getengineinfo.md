@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b26d6dcde31d3599c8aa8f8223c1f3cf00a59437
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906256"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Obtient le nom et le GUID du moteur de débogage (DE) qui exécute ce programme.
@@ -28,14 +28,14 @@ Obtient le nom et le GUID du moteur de débogage (DE) qui exécute ce programme.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetEngineInfo( 
+HRESULT GetEngineInfo( 
    BSTR* pbstrEngine,
    GUID* pguidEngine
 );
 ```
 
 ```csharp
-int GetEngineInfo( 
+int GetEngineInfo( 
    out string pbstrEngine,
    out GUID   pguidEngine
 );
@@ -48,10 +48,10 @@ int GetEngineInfo( 
 `pguidEngine`\
 à Retourne le GUID du DE l’exécution de ce programme.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Chaque DE définit son propre GUID pour l’identification.
 
 ## <a name="see-also"></a>Voir aussi

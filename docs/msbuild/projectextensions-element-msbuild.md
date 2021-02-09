@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f01f9e6a82d89ca99455f160bda1e9b7e24345
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b7b186fa1d7a5ecb8297045d4b0bbb111d136d1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905287"
 ---
 # <a name="projectextensions-element-msbuild"></a>Élément ProjectExtensions (MSBuild)
 
@@ -33,7 +33,7 @@ Permet aux fichiers projet MSBuild de contenir des informations non MSBuild. Tou
 
  \<Project> \<ProjectExtensions>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <ProjectExtensions>
@@ -47,11 +47,11 @@ Permet aux fichiers projet MSBuild de contenir des informations non MSBuild. Tou
 
 ### <a name="attributes"></a>Attributs
 
- Aucun
+ None
 
 ### <a name="child-elements"></a>Éléments enfants
 
- Aucun
+ None
 
 ### <a name="parent-elements"></a>Éléments parents
 

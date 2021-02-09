@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1d52989d5687e922e0cb0ab306efc5321ffecef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904757"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Décrit un frame de pile.
@@ -103,7 +103,7 @@ Valeur différente de zéro ( `TRUE` ) si le frame de pile est associé à du co
 `m_fAnnotatedFrame`\
 Différent de zéro ( `TRUE` ) si le frame de pile est annoté par le gestionnaire de débogage de session (SDM).
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) à remplir. Cette structure est également contenue dans une liste contenue dans l’interface [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) qui, à son tour, est retournée à partir d’un appel à la méthode [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Configuration requise

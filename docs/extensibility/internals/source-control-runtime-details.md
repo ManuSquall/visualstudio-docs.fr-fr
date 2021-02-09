@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbe1e0e915a28412fcfd411e72b6d622e065b8f8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 213b0096f2bea541fa55840f8f1ea78e8f195cd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905755"
 ---
 # <a name="source-control-runtime-details"></a>Détails du Runtime du contrôle de code source
 Un projet est ajouté au contrôle de code source lorsque l’utilisateur ajoute un fichier dans le projet au contrôle de code source ou via un contrôleur Automation, tel qu’un Assistant. Un projet ne spécifie pas lui-même qu’il est sous contrôle de code source ; Il prend en charge le contrôle de code source, mais doit être ajouté manuellement.

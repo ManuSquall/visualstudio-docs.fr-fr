@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904770"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 Spécifie les informations à récupérer sur un objet de frame de pile.
@@ -28,7 +28,7 @@ Spécifie les informations à récupérer sur un objet de frame de pile.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-enum enum_FRAMEINFO_FLAGS {
+enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -65,7 +65,7 @@ typedef DWORD FRAMEINFO_FLAGS;
 ```
 
 ```csharp
-public enum enum_FRAMEINFO_FLAGS {
+public enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -194,7 +194,7 @@ N’autorisez pas l' `ToString()` évaluation ou la mise en forme des fonctions 
 `FIF_DESIGN_TIME_EXPR_EVAL`\
 Les informations de frame doivent être extraites du domaine App-Domain hébergé et non du processus d’hébergement.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Ces indicateurs sont passés aux méthodes [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) et [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) pour indiquer les champs à initialiser dans la structure ou les structures [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
 Ces indicateurs sont également utilisés pour indiquer les champs de la structure [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) qui sont utilisés et valides lorsque la structure est retournée. Ces valeurs peuvent être combinées avec une opération de bits `OR` .

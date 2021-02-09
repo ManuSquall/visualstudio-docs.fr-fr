@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76e66e857da87afeee105267fb35ddebdb692637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f51d294372d233edc8b35f7fccc562e5a650e9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906192"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 Obtient le nom du programme.
@@ -28,13 +28,13 @@ Obtient le nom du programme.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName( 
+int GetName( 
    out string pbstrName
 );
 ```
@@ -43,7 +43,7 @@ int GetName( 
 `pbstrName`\
 à Retourne le nom du programme.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -40,15 +40,15 @@ helpviewer_keywords:
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e66654c8ceefa2cb7983c29f441cbb0f9cf97aff
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: c429b8e6dbf6931ebf68717b6d43fcf746cf13ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96043970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905555"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Options, Éditeur de texte, Tous les langages, Onglets
 
@@ -65,7 +65,7 @@ None
 
 Lorsque cette option est sélectionnée, les nouvelles lignes ne sont pas mises en retrait. Le point d'insertion est placé dans la première colonne d'une nouvelle ligne.
 
-Bloquer
+Block
 
 Lorsque cette option est sélectionnée, les nouvelles lignes sont automatiquement mises en retrait. Le point d'insertion est placé sur le même point de départ que la ligne précédente.
 
@@ -75,7 +75,7 @@ Lorsque cette option est sélectionnée, les nouvelles lignes sont positionnées
 
 Par exemple, les lignes comprises entre une accolade ouvrante ( { ) et une accolade fermante ( } ) peuvent automatiquement être mises en retrait d’un taquet de tabulation supplémentaire à partir de la position des accolades alignées.
 
-## <a name="tabs"></a>Tabulations
+## <a name="tabs"></a>Onglets
 
 Taille des tabulation
 

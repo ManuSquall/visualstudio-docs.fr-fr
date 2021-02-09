@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ec3168a7e104e20bbb53607b4bd7a6acd8e79e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904654"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 Le moteur de débogage (DE) utilise cette interface pour demander le chargement d’un document.
@@ -42,7 +42,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 |[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Obtient le document à activer.|
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Obtient le contexte de document qui décrit la position dans le document.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Une erreur d’analyse se produit généralement dans le code de script d’une page HTML dans le cas où cette interface est utilisée : le script DE envoie cette interface au SDM afin que le document avec l’erreur d’analyse puisse être affiché.
 
 ## <a name="requirements"></a>Configuration requise

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904953"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniques et outils de débogage pour vous aider à écrire du code plus performant
 
@@ -44,7 +44,7 @@ Pour créer l’application :
 
 1. Vous devez avoir installé Visual Studio et le **développement .net Core multiplateforme** ou la charge de travail **développement .net Desktop** , selon le type d’application que vous souhaitez créer.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)pour l'   installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
 
     Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, cliquez sur **Outils**  >  **obtenir des outils et des fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail développement **multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
 
@@ -57,7 +57,7 @@ Pour créer l’application :
     Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , sous **Visual C#**, choisissez **application console**, puis dans le volet central, choisissez **application console (.net Core)** ou **application console (.NET Framework)**. Tapez un nom comme **Console_Parse_JSON** , puis cliquez sur **OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **application console (.net Core)** ou **application console (.NET Framework)** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités**pour ouvrir le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
+    Si vous ne voyez pas le modèle de projet **application console (.net Core)** ou **application console (.NET Framework)** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités** pour ouvrir le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
 
     Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
 
@@ -204,7 +204,7 @@ Notez que cette erreur affiche une icône d’ampoule en bas à gauche. En plus 
 
 Lorsque vous cliquez sur cet élément, Visual Studio ajoute l' `using System.Text` instruction en haut du fichier *Program.cs* et le tilde rouge disparaît. (Lorsque vous n’êtes pas sûr de ce qu’il faut résoudre, choisissez le lien **aperçu des modifications** à droite avant d’appliquer le correctif.)
 
-L’erreur précédente est une erreur courante que vous corrigez généralement en ajoutant une nouvelle `using` instruction à votre code. Il existe plusieurs erreurs courantes similaires à celles-ci, telles que ```The type or namespace `Name` cannot be found.``` ces types d’erreurs peuvent indiquer une référence d’assembly manquante (cliquez avec le bouton droit sur le projet, choisissez **Ajouter**  >  une**référence**), un nom mal orthographié ou une bibliothèque manquante que vous devez ajouter (pour C#, cliquez avec le bouton droit sur le projet et choisissez **gérer les packages NuGet**).
+L’erreur précédente est une erreur courante que vous corrigez généralement en ajoutant une nouvelle `using` instruction à votre code. Il existe plusieurs erreurs courantes similaires à celles-ci, telles que ```The type or namespace `Name` cannot be found.``` ces types d’erreurs peuvent indiquer une référence d’assembly manquante (cliquez avec le bouton droit sur le projet, choisissez **Ajouter**  >  une **référence**), un nom mal orthographié ou une bibliothèque manquante que vous devez ajouter (pour C#, cliquez avec le bouton droit sur le projet et choisissez **gérer les packages NuGet**).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Corriger les erreurs et avertissements restants
 

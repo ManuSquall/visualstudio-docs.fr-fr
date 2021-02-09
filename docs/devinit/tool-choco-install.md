@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 586f503569f7218e78cda79e7a40e33f7ec30ff6
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 386b41dd7f1b19d223703570b0423de0855e983a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904801"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -26,11 +26,11 @@ L' `choco-install` outil peut être utilisé pour installer et mettre à jour de
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil ne fait rien.
 
-| Name                                             | Type   | Obligatoire  | Valeur                                                                                                          |
+| Nom                                             | Type   | Obligatoire  | Valeur                                                                                                          |
 |--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
-| **commentaires**                                     | string | No        | Propriété de commentaires facultative. Non utilisé.                                                                          |
+| **commentaires**                                     | string | Non        | Propriété de commentaires facultative. Non utilisé.                                                                          |
 | [**entrée**](#input)                              | string | Oui       | Le package à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                 |
-| [**additionalOptions**](#additional-options)     | string | No        | Options supplémentaires à passer à l’outil. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.       |
+| [**additionalOptions**](#additional-options)     | string | Non        | Options supplémentaires à passer à l’outil. Pour plus d’informations, consultez les [options supplémentaires](#additional-options) ci-dessous.       |
 
 ### <a name="input"></a>Entrée
 
@@ -47,7 +47,7 @@ Si vous souhaitez ajouter un nouveau flux à un chocolat, à l’instar d’une 
 
 L' `choco-install` outil définit un certain nombre d' `choco` arguments de ligne de commande pour s’assurer que `choco` peut s’exécuter sans affichage. Ces arguments sont répertoriés ci-dessous et leur documentation est disponible dans la [documentation en chocolat](https://chocolatey.org/docs/).
 
-| Name                  | Description                                                                                        |
+| Nom                  | Description                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--Oui**             | Confirmer toutes les invites : choisit la réponse affirmative au lieu de vous demander. Entraîne `--accept-license.` |
 | **--non-Progress**     | Ne pas afficher la progression-les pourcentages de progression ne s’affichent pas.                                         |

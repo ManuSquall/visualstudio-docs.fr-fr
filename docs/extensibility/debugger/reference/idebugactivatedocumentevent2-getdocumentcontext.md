@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1b68c10c290dcf685e1eaa5fef907e27be7452f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32bc4715438c7197628b4df66203aadb753bec25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904682"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Obtient le contexte de document qui décrit la position dans le document qui doit être rendue active par le package de débogage.
@@ -29,13 +29,13 @@ Obtient le contexte de document qui décrit la position dans le document qui doi
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDocumentContext ( 
+HRESULT GetDocumentContext ( 
    IDebugDocumentContext2** ppDocContext
 );
 ```
 
 ```csharp
-int GetDocumentContext ( 
+int GetDocumentContext ( 
    out IDebugDocumentContext2 ppDocContext
 );
 ```
@@ -44,10 +44,10 @@ int GetDocumentContext ( 
 `ppDocContext`\
 à Retourne un objet [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) qui représente une position dans un document de fichier source.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette position peut être utilisée pour afficher le signe insertion, par exemple.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

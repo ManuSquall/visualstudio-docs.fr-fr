@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c38869b4c8daa4cb4433f9f6a64afcc7398c9a9c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7de150064ee493795bdeed579715dbf1370573a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905071"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Variantes de filtrage de texture ponctuelle, bilinéaire, trilinéaire et anisotropique
 Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
@@ -35,7 +35,7 @@ Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
 
    Si vous trouvez que le coût en termes de performances est négligeable ou stable d'un mode de filtrage à un autre (par exemple, quand le GPU ciblé offre une bande passante de mémoire et un débit de nuanceur généreux), préférez le filtrage anisotropique pour accéder à une qualité d'image optimale dans votre application.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Ces variantes substituent les états de l'échantillonneur lors des appels à `ID3D11DeviceContext::PSSetSamplers` quand le mode de filtrage de l'échantillonneur fourni par l'application est l'un des suivants :
 
 - `D3D11_FILTER_MIN_MAG_MIP_POINT`
