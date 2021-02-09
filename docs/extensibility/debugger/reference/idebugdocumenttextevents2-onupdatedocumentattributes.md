@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5ed964905db6aa591252018b408cf67fa43d310
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e73b4c071f28abf80e9d35da05b0b49c96af265
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919963"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 Avertit le destinataire de l’événement que les attributs du document ont été mis à jour.
@@ -28,13 +28,13 @@ Avertit le destinataire de l’événement que les attributs du document ont ét
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT onUpdateDocumentAttributes( 
+HRESULT onUpdateDocumentAttributes( 
    TEXT_DOC_ATTR_2 textdocattr
 );
 ```
 
 ```csharp
-int onUpdateDocumentAttributes( 
+int onUpdateDocumentAttributes( 
    enum_TEXT_DOC_ATTR_2 textdocattr
 );
 ```
@@ -43,7 +43,7 @@ int onUpdateDocumentAttributes( 
 `textdocattr`\
 dans Combinaison d’indicateurs de l’énumération [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) qui spécifie les attributs mis à jour du document.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

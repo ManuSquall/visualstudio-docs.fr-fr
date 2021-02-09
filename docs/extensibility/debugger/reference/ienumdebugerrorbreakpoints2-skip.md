@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a5a02b38-4e3a-4f0e-b529-f770c3485c8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6e72c20f98c5a912666ad9516da173d5310b71d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0d7bf485886dc85ca0546cea6c3f90ffa14724d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919826"
 ---
 # <a name="ienumdebugerrorbreakpoints2skip"></a>IEnumDebugErrorBreakpoints2::Skip
 Ignore le nombre spécifié d'éléments.
@@ -43,10 +43,10 @@ int Skip(
 `celt`\
 [in] Nombre d'éléments à ignorer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si `celt` spécifie une valeur supérieure au nombre d’éléments restants, l’énumération est définie à la fin et `S_FALSE` est retournée.
 
 ## <a name="see-also"></a>Voir aussi
