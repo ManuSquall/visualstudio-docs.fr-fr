@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910986"
 ---
 # <a name="solution-configuration"></a>Configuration de la solution
 Les configurations de solution stockent les propriétés au niveau de la solution. Ils dirigent le comportement de la clé de **démarrage** (F5) et des commandes de **génération** . Par défaut, ces commandes génèrent et démarrent la configuration Debug. Les deux commandes s’exécutent dans le contexte d’une configuration de solution. Cela signifie que l’utilisateur peut s’attendre à ce que la touche F5 démarre et génère la configuration de la solution active par le biais des paramètres. L’environnement est conçu pour optimiser les solutions plutôt que les projets lorsqu’il s’agit de générer et d’exécuter.
@@ -47,7 +47,7 @@ Les configurations de solution stockent les propriétés au niveau de la solutio
 
    Si un projet ne prend pas en charge les plateformes, la colonne plate-forme pour ce projet affiche aucun et est désactivée.
 
-- Générer
+- Build
 
    Spécifie si le projet est généré par la configuration de solution actuelle. Les projets non sélectionnés ne sont pas générés lorsque les commandes de génération au niveau de la solution sont appelées malgré les dépendances de projet qu’ils contiennent. Les projets qui ne sont pas sélectionnés pour être générés sont toujours inclus dans le débogage, l’exécution, l’empaquetage et le déploiement de la solution.
 

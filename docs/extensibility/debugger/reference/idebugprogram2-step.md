@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 544ca22d263a3fca47f9484ac126031e83cde4e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911908"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Exécute une étape.
@@ -31,7 +31,7 @@ Exécute une étape.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT Step( 
+HRESULT Step( 
    IDebugThread2*  pThread,
    STEPKIND        sk,
    STEPUNIT        step
@@ -39,7 +39,7 @@ HRESULT Step( 
 ```
 
 ```csharp
-int Step( 
+int Step( 
    IDebugThread2  pThread,
    enum_STEPKIND  sk,
    enum_STEPUNIT  step
@@ -56,7 +56,7 @@ dans Valeur de l’énumération [STEPKIND](../../../extensibility/debugger/refe
 `step`\
 dans Valeur de l’énumération [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) qui spécifie l’unité de l’étape (par exemple, par instruction ou instruction).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

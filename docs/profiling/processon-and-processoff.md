@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 82a976700137255a5c6adb074058b33b15fb7c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910679"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn et ProcessOff
 Les sous commandes **ProcessOff** et **ProcessOn** de VSPerfCmd.exe permettent de suspendre et de reprendre le profilage pour le processus spécifié dans une session de profilage en ligne de commande. **ProcessOff** arrête le profilage du processus et **ProcessOn** le démarre.
@@ -43,7 +43,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` Identificateur sous forme d’entier du processus à démarrer ou à arrêter. Les ID de processus sont répertoriés sous l’onglet **processus** du gestionnaire des tâches de Windows.
 
 ## <a name="required-subcommands"></a>Sous-commandes obligatoires
- Aucun
+ None
 
 ## <a name="valid-subcommands"></a>Sous-commandes valides
  Vous pouvez spécifier **ProcessOn** et **ProcessOff** sur des lignes de commande qui contiennent également les sous-commandes suivantes.
@@ -58,7 +58,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
  {**Threadoff**&#124;**ThreadOn**} **:**`TID` Arrête ou démarre le profilage pour le thread spécifié (méthode d’instrumentation uniquement).
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Dans cet exemple, la sous-commande **ProcessOff** est utilisé pour collecter des données de profilage pour le démarrage de l’application.
 
 ```cmd

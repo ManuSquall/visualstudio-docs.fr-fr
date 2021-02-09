@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d48e9b580d25b521721fafa7dc475bdbe3532656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912234"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
 Vous pouvez utiliser l’outil recherche de la boîte de dialogue **Rechercher une fenêtre** pour afficher des propriétés ou des messages de la fenêtre. L’outil Finder peut également localiser les fenêtres enfants désactivées et déterminer la fenêtre à mettre en évidence si les fenêtres enfants désactivées se chevauchent.

@@ -19,18 +19,18 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffa19de6abff0bb73c91c4a8e79d707d0941e00
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912202"
 ---
 # <a name="create-bootstrapper-packages"></a>Créer des packages de programme d’amorçage
-Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables, comme les fichiers Windows Installer ( *.msi* ) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou condition préalable, qui apparaît dans la boîte de dialogue **composants requis** pour ClickOnce est un package du programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé.
+Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables, comme les fichiers Windows Installer (*.msi*) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou condition préalable, qui apparaît dans la boîte de dialogue **composants requis** pour ClickOnce est un package du programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé.
 
 Le programme d'amorçage détecte d'abord si l'un des composants requis est déjà installé. Si des composants requis ne sont pas installés, le programme d'amorçage commence par afficher les contrats de licence. Une fois que l’utilisateur a accepté les contrats de licence, l’installation des prérequis commence. Si tous les composants requis sont détectés, le programme d'amorçage démarre simplement le programme d'installation de l'application.
 
@@ -39,9 +39,9 @@ Vous pouvez générer les manifestes du programme d’amorçage à l’aide de l
 
 Pour créer un package de programme d’amorçage, vous devez créer un manifeste de produit et, pour chaque version localisée d’un composant, un manifeste de package également.
 
-* Le manifeste de produit, *product.xml* , contient toutes les métadonnées indépendantes du langage pour le package. Il contient les métadonnées communes à toutes les versions localisées du composant redistribuable.  Pour créer ce fichier, consultez [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md).
+* Le manifeste de produit, *product.xml*, contient toutes les métadonnées indépendantes du langage pour le package. Il contient les métadonnées communes à toutes les versions localisées du composant redistribuable.  Pour créer ce fichier, consultez [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md).
 
-* Le manifeste du package, *package.xml* , contient des métadonnées spécifiques au langage. Il contient généralement des messages d’erreur localisés. Un composant doit avoir au moins un manifeste du package pour chacune de ses versions localisées. Pour créer ce fichier, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).
+* Le manifeste du package, *package.xml*, contient des métadonnées spécifiques au langage. Il contient généralement des messages d’erreur localisés. Un composant doit avoir au moins un manifeste du package pour chacune de ses versions localisées. Pour créer ce fichier, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).
 
 Une fois ces fichiers créés, placez le fichier manifeste du produit dans un dossier nommé en fonction du programme d'amorçage personnalisé. Le fichier manifeste du package est placé dans un dossier nommé en fonction des paramètres régionaux. Par exemple, si le fichier manifeste du package est destiné à une redistribution en anglais, placez le fichier dans un dossier nommé en. Répétez ce processus pour chacun des paramètres régionaux, par exemple ja pour le japonais et de pour l'allemand. Le package de programme d'amorçage personnalisé final peut avoir la structure de dossiers suivante.
 
@@ -72,7 +72,7 @@ ou, pour les versions antérieures de Visual Studio
 *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 ```
 
-ou
+or
 
 ```
 *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
@@ -98,7 +98,7 @@ Le tableau suivant présente les propriétés qui sont automatiquement remplies 
 
 |Propriété|Description|
 |--------------|-----------------|
-|ApplicationName|Nom de l'application.|
+|ApplicationName|Le nom de l’application.|
 |ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|
 |[Version9x](/windows/desktop/Msi/version9x)|Numéro de version des systèmes d'exploitation Microsoft Windows 95, Windows 98 ou Windows ME. La syntaxe de la version est Major.Minor.ServicePack.|
 |[VersionNT](/windows/desktop/Msi/versionnt)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d6a014afff6c26b8cfe8f4f7fae508f78ef5905f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912243"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Déboguer des applications ClickOnce qui utilisent System.Deployment.Application
 Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le déploiement vous permet de configurer la façon dont une application est mise à jour. Toutefois, si vous devez utiliser et personnaliser des [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fonctionnalités de déploiement avancées, vous devrez accéder au modèle objet de déploiement fourni par <xref:System.Deployment.Application> . Vous pouvez utiliser les <xref:System.Deployment.Application> API pour des tâches avancées telles que :
@@ -45,11 +45,11 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 2. Déployez la version 1 de l’application.
 
-3. Créez une nouvelle solution vide. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**. Dans la boîte de dialogue **nouveau projet** , ouvrez le nœud **autres types de projets** , puis sélectionnez le dossier **solutions Visual Studio** . Dans le volet **modèles** , sélectionnez **solution vide**.
+3. Créez une nouvelle solution vide. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**. Dans la boîte de dialogue **nouveau projet** , ouvrez le nœud **autres types de projets** , puis sélectionnez le dossier **solutions Visual Studio** . Dans le volet **modèles** , sélectionnez **solution vide**.
 
-4. Ajoutez l’emplacement source archivé aux propriétés de cette nouvelle solution. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le nœud de la solution, puis cliquez sur **Propriétés**. Dans la boîte de dialogue **pages de propriétés** , sélectionnez fichiers sources pour le **débogage** , puis ajoutez le répertoire du code source archivé. Dans le cas contraire, le débogueur trouvera les fichiers sources obsolètes, car les chemins d’accès aux fichiers sources sont enregistrés dans le fichier. pdb. Si le débogueur utilise des fichiers sources obsolètes, un message s’affiche pour vous indiquer que la source ne correspond pas.
+4. Ajoutez l’emplacement source archivé aux propriétés de cette nouvelle solution. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution, puis cliquez sur **Propriétés**. Dans la boîte de dialogue **pages de propriétés** , sélectionnez fichiers sources pour le **débogage**, puis ajoutez le répertoire du code source archivé. Dans le cas contraire, le débogueur trouvera les fichiers sources obsolètes, car les chemins d’accès aux fichiers sources sont enregistrés dans le fichier. pdb. Si le débogueur utilise des fichiers sources obsolètes, un message s’affiche pour vous indiquer que la source ne correspond pas.
 
-5. Assurez-vous que le débogueur peut trouver les fichiers *. pdb* . Si vous les avez déployées avec votre application, le débogueur les trouve automatiquement. Elle apparaît toujours en regard de l’assembly en question en premier. Dans le cas contraire, vous devrez ajouter le chemin d’archivage aux **emplacements du fichier de symboles (. pdb)** (pour accéder à cette option, dans le menu **Outils** , cliquez sur **options** , puis ouvrez le nœud **débogage** et cliquez sur **symboles** ).
+5. Assurez-vous que le débogueur peut trouver les fichiers *. pdb* . Si vous les avez déployées avec votre application, le débogueur les trouve automatiquement. Elle apparaît toujours en regard de l’assembly en question en premier. Dans le cas contraire, vous devrez ajouter le chemin d’archivage aux **emplacements du fichier de symboles (. pdb)** (pour accéder à cette option, dans le menu **Outils** , cliquez sur **options**, puis ouvrez le nœud **débogage** et cliquez sur **symboles**).
 
 6. Déboguez ce qui se passe entre les `CheckForUpdate` `Download` / `Update` appels de méthode et.
 

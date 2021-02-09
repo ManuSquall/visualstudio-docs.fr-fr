@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910849"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
@@ -48,7 +48,7 @@ Le menu **fenêtre** affiche les options d’ancrage, de flottement et de masqua
 
 Quand vous devez afficher ou modifier deux emplacements à la fois dans un document, vous pouvez fractionner les fenêtres. Pour diviser votre document en deux sections qui défilent indépendamment, cliquez sur **Fractionner** dans le menu **Fenêtre** . Cliquez sur **Supprimer le fractionnement** dans le menu **Fenêtre** pour revenir à la vue unique.
 
-### <a name="tabs"></a>Tabulations
+### <a name="tabs"></a>Onglets
 
 Vous pouvez utiliser les onglets pour réorganiser votre disposition de différentes façons. Par exemple, vous pouvez afficher un aperçu d’un fichier dans l’éditeur sans ouvrir le fichier, vous pouvez regrouper vos onglets, et bien plus encore.
 
@@ -64,7 +64,7 @@ Dans l’onglet **Aperçu** , vous pouvez afficher les fichiers dans l’éditeu
 
 Vous pouvez appliquer les onglets de document verticaux des manières suivantes :
 
-- **Tools**  >  **Options**  >  **Environment**  >  Dans la barre de menus, choisissez outils options **onglets d’environnement et fenêtres** . Ensuite, dans le contrôle disposition de l' **onglet définir** , choisissez **haut**, **gauche** ou **droite** dans la liste déroulante.
+-   >    >    >  Dans la barre de menus, choisissez outils options **onglets d’environnement et fenêtres** . Ensuite, dans le contrôle disposition de l' **onglet définir** , choisissez **haut**, **gauche** ou **droite** dans la liste déroulante.
 
 - Cliquez avec le bouton droit sur un onglet, choisissez **définir la disposition des onglets**, puis choisissez **gauche** ou **droite**. (Pour ramener les onglets à leur position par défaut, choisissez **haut**.)
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38ee3ccd1ffd3130bc918da18c631cf08683f064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c283d4b07458368a4ea5f143dc83bf13453302
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912013"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 Crée un énumérateur pour les énumérateurs imbriqués de cette classe.
@@ -43,7 +43,7 @@ int EnumNestedEnums(
 `ppEnum`\
 à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des énumérations imbriquées. Retourne une valeur null s’il n’existe aucune énumération imbriquée.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas d’énumérateurs imbriqués. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

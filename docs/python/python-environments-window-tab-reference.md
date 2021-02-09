@@ -5,23 +5,23 @@ ms.date: 03/18/2019
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d00f8cc05e4a2a2ce1e947207997cc2e46d9d9f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912369"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
 Pour ouvrir la fenêtre **Environnements Python** :
 
-- Sélectionnez la commande de menu **Afficher**d'  >  **autres**  >  **environnements Windows python** .
+- Sélectionnez la commande de menu **Afficher** d'  >  **autres**  >  **environnements Windows python** .
 - Cliquez avec le bouton droit sur le nœud **environnements python** d’un projet dans **Explorateur de solutions** , puis sélectionnez **Afficher tous les environnements python**.
 
 Si vous agrandissez suffisamment la fenêtre **environnements python** , ces options s’affichent sous la forme d’onglets, que vous pouvez trouver plus pratique à utiliser. Dans un souci de clarté, les onglets de cet article apparaissent dans l’affichage développé.
@@ -60,7 +60,7 @@ Quand vous utilisez des fenêtres interactives dans votre flux de travail quotid
 
 Les scripts de démarrage contiennent du code que la fenêtre **interactive** charge et exécute automatiquement, y compris les importations, les définitions de fonctions et littéralement tout autre caractère. Ces scripts sont référencés de deux manières :
 
-1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio \<version> \Python scripts \\ \<environment> * où &lt; version &gt; est la version de Visual Studio (par exemple, 2017 ou 2019) et &lt; &gt; l’environnement correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
+1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio \<version> \Python scripts \\ \<environment>* où &lt; version &gt; est la version de Visual Studio (par exemple, 2017 ou 2019) et &lt; &gt; l’environnement correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
 
 1. Le contrôle **Scripts** sous l’onglet **Outils** > **Options** > **Python** > **Fenêtres interactives** (consultez [Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) est destiné à spécifier un dossier supplémentaire pour les scripts de démarrage qui sont chargés et exécutés dans tous les environnements. Toutefois, cette fonctionnalité ne fonctionne pas actuellement.
 
@@ -105,7 +105,7 @@ La saisie d’un terme de recherche filtre la liste des packages installés, ain
 ![Onglet packages, Environnements Python, avec recherche de « num »](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Comme vous pouvez le voir dans l’image ci-dessus, les résultats de la recherche affichent un certain nombre de packages qui correspondent au terme de recherche ; la première entrée de la liste, toutefois, est une commande permettant d’exécuter l' **installation \<name> PIP** directement. Si vous êtes sous l’onglet **packages (Conda)** , vous voyez à la place **Conda installer \<name> **:
+Comme vous pouvez le voir dans l’image ci-dessus, les résultats de la recherche affichent un certain nombre de packages qui correspondent au terme de recherche ; la première entrée de la liste, toutefois, est une commande permettant d’exécuter l' **installation \<name> PIP** directement. Si vous êtes sous l’onglet **packages (Conda)** , vous voyez à la place **Conda installer \<name>**:
 
 ::: moniker range="vs-2017"
 ![Onglet de packages Conda montrant une commande d’installation conda](media/environments/environments-conda-tab-install.png)
@@ -157,7 +157,7 @@ Affiche l’état actuel de la base de données de saisie semi-automatique Intel
 ![Onglet IntelliSense, Environnements Python](media/environments/environments-intellisense-tab.png)
 
 - Dans Visual Studio 2017 version 15.5 et antérieures, les complétions IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code.
-- Visual Studio 2017 versions 15.6 et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option Options des **Outils**  >  **Options**  >  **python**  >  **expérimental**  >  **utiliser le nouveau style IntelliSense pour les environnements**.
+- Visual Studio 2017 versions 15.6 et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option Options des **Outils**  >    >  **python**  >  **expérimental**  >  **utiliser le nouveau style IntelliSense pour les environnements**.
 
 Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et prend un certain temps pour compiler la base de données.) Une fois l’opération terminée, vous bénéficiez d’IntelliSense détaillé et vous n’avez pas besoin d’actualiser à nouveau la base de données (avec le bouton **Actualiser** la base de données) jusqu’à ce que vous installiez
 

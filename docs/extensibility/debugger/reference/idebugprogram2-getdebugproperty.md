@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d194224e-f0e6-46ab-85d4-9e2639e28946
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33bc10aadf25eb95414cc5fd334c572b2f270429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb0bb520d3a821d777d5deaeaa200c4b7e526f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911954"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 Obtient les propriétés du programme.
@@ -28,13 +28,13 @@ Obtient les propriétés du programme.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDebugProperty( 
+HRESULT GetDebugProperty( 
    IDebugProperty2** ppProperty
 );
 ```
 
 ```csharp
-int GetDebugProperty( 
+int GetDebugProperty( 
    out IDebugProperty2 ppProperty
 );
 ```
@@ -43,7 +43,7 @@ int GetDebugProperty( 
 `ppProperty`\
 à Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente les propriétés du programme.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -5,17 +5,17 @@ ms.date: 02/11/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912287"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -27,7 +27,7 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 
 | REPL | Description | Modification | Débogage | Images |
 | --- | --- | --- | --- | --- |
-| Standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
+| standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
 | Débogage | REPL par défaut, communique avec le processus Python débogué | Modification standard | Débogage uniquement | Non |
 | IPython | REPL qui communique avec le serveur principal IPython | Commandes IPython, avantages de Pylab | Non | Oui, inline dans REPL |
 | IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non | Oui, fenêtre distincte |
@@ -40,11 +40,11 @@ Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment 
 
 Il existe plusieurs façons d’ouvrir la fenêtre **interactive** pour un environnement.
 
-Tout d’abord, basculez vers la fenêtre environnements Python (**Afficher**d'  >  **autres**  >  **environnements Windows python** ou **CTRL** + **K**  >  **CTRL** + **`** ) et sélectionnez la commande ou le bouton **ouvrir une fenêtre interactive** pour un environnement choisi.
+Tout d’abord, basculez vers la fenêtre environnements Python (**Afficher** d'  >  **autres**  >  **environnements Windows python** ou **CTRL** + **K**  >  **CTRL** + **`** ) et sélectionnez la commande ou le bouton **ouvrir une fenêtre interactive** pour un environnement choisi.
 
 ![Lien vers la fenêtre interactive dans la fenêtre des environnements Python](media/interactive-window-opening.png)
 
-Deuxièmement, près du bas du menu **Afficher**les  >  **autres fenêtres** , il existe une commande de **fenêtre interactive Python** pour votre environnement par défaut, ainsi qu’une commande pour basculer vers la fenêtre **environnements** :
+Deuxièmement, près du bas du menu **Afficher** les  >  **autres fenêtres** , il existe une commande de **fenêtre interactive Python** pour votre environnement par défaut, ainsi qu’une commande pour basculer vers la fenêtre **environnements** :
 
 ![Éléments de menu de la fenêtre interactive dans View > Other Windows (Affichage > Autres fenêtres)](media/interactive-window-menu.png)
 
@@ -107,7 +107,7 @@ En plus de travailler directement dans la fenêtre **interactive** , vous pouvez
 Cette commande est utile dans le cadre du développement de code itératif ou évolutionnaire, car elle permet notamment de tester votre code à mesure que vous le développez. Par exemple, une fois que vous avez envoyé un morceau de code à la fenêtre **interactive** et que vous avez vu sa sortie, vous pouvez appuyer sur la flèche vers le haut pour afficher à nouveau le code, le modifier et le tester rapidement en appuyant sur **CTRL** + **entrée**. (Appuyez sur **entrée** à la fin de l’entrée pour l’exécuter, mais Appuyez sur **entrée** au milieu de l’entrée insère un saut de ligne.) Une fois que vous avez le code souhaité, vous pouvez le copier à nouveau dans votre fichier projet.
 
 > [!Tip]
-> Par défaut, Visual Studio supprime **>>>** et **...** Réplication des invites lors du collage du code à partir de la fenêtre **interactive** dans l’éditeur. Vous pouvez modifier ce comportement dans l’onglet **Outils**  >  **options**de l'  >  **éditeur de texte**  >  **python**  >  **avancé** en utilisant l’option **coller supprime les invites de réplication** . Consultez [options-options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Par défaut, Visual Studio supprime **>>>** et **...** Réplication des invites lors du collage du code à partir de la fenêtre **interactive** dans l’éditeur. Vous pouvez modifier ce comportement dans l’onglet **Outils**  >  **options** de l'  >  **éditeur de texte**  >  **python**  >  **avancé** en utilisant l’option **coller supprime les invites de réplication** . Consultez [options-options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
