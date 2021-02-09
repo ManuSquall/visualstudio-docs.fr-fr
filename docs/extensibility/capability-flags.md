@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882282"
 ---
 # <a name="capability-flags"></a>Indicateurs de capacité
 Les indicateurs SCC_CAP_ *xxx* sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Les indicateurs SCC_EXCAP_ *xxx* sont des indicateurs incrémentiels qui indiquent des capacités étendues et sont résolus en valeurs entières.

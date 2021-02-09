@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6bdf05878c08b1c175b78ff2205b74c4ea5669b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 35dcc390dcf58e02a2c7c1fa2dba62840d433785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882308"
 ---
 # <a name="switcht-activity-designer"></a>Concepteur d’activités Switch\<T>
 
@@ -38,10 +38,10 @@ Voici les propriétés du **commutateur<T \>** designer. Toutes ces propriétés
 
 Le tableau suivant répertorie les propriétés de l'activité <xref:System.Activities.Statements.Switch%601> qui sont les plus utiles et décrit comment elles sont utilisées dans le concepteur.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.Switch%601>. La valeur par défaut est Switch<Int32 \> . La valeur peut être modifiée dans la fenêtre **Propriétés** ou directement dans l’en-tête du concepteur.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Vrai|Spécifie l'expression à comparer aux clés dans la collection de cas pour déterminer le cas à exécuter.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.Switch%601>. La valeur par défaut est Switch<Int32 \> . La valeur peut être modifiée dans la fenêtre **Propriétés** ou directement dans l’en-tête du concepteur.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Spécifie l'expression à comparer aux clés dans la collection de cas pour déterminer le cas à exécuter.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Spécifie l'activité exécutée si aucune correspondance n'est trouvée. Cliquez sur le bouton **Ajouter une activité** dans le concepteur pour ouvrir la zone **par défaut** dans laquelle l’activité peut être supprimée.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Spécifie les cas à évaluer. Pour ajouter un cas, cliquez sur le bouton **Ajouter un nouveau cas** en bas du concepteur de **commutateur \<T>** . Le bouton se transforme en zone de texte (zone de liste déroulante si le type générique sélectionné lors de l’ajout du commutateur \<T> est une chaîne ou une énumération). Après l’ajout d’une clé dans la zone **valeur de cas** , la zone de cas se développe et une activité peut être supprimée là où le texte d’indication « déposer l’activité ici » pour définir la logique d’exécution du cas.|
 

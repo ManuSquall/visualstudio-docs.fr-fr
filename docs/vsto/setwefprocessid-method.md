@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9c3d745f14185d46dce08d46b8c56391b108627d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882406"
 ---
 # <a name="setwefprocessid-method"></a>Méthode Setwefprocessid,
   Fournit l’identificateur de processus qui exécutera le contenu WEF (Web extensions Framework).
@@ -36,10 +36,10 @@ HRESULT SetWefProcessId(
 |---------------|-----------------|
 |*dwProcessId*|Identificateur de processus qui sera utilisé pour exécuter le contenu WEF.|
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur de retour
  Valeur HRESULT qui indique si la méthode a réussi.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode doit être appelée après la création du processus de contenu WEF, mais avant l’exécution de tout contenu WEF.
 
  Si vous souhaitez que l’environnement de développement attache un débogueur au processus de contenu WEF, l’environnement doit effectuer cette opération dans votre implémentation de cette méthode.

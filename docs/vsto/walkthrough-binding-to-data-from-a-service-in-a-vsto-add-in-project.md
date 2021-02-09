@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a420f89fda4afd710f652223a9be594caba32f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882399"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procédure pas à pas : liaison à des données à partir d’un service dans un projet de complément VSTO
   Vous pouvez lier des données à des contrôles hôtes dans les projets de complément VSTO. Cette procédure pas à pas montre comment ajouter des contrôles à un document Microsoft Office Word, comment lier les contrôles aux données extraites du service de contenu MSDN et comment répondre aux événements au moment de l’exécution.
@@ -45,7 +45,7 @@ ms.locfileid: "97527485"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
  La première étape consiste à créer un projet de complément VSTO Word.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
