@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ee44dd55-39a0-4b7b-97ff-2e1226eeb2bd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e03c01efb9f2dca13009a7dc7eeb8282b5c9082c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcccb480ec8e84200f149d06a6e3b581c43f50fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856348"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Récupère un segment au moyen d’un index.
@@ -25,7 +25,7 @@ Récupère un segment au moyen d’un index.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD         index,
    IDiaSegment** segment
 );
@@ -40,7 +40,7 @@ dans Index de l’objet [IDiaSegment](../../debugger/debug-interface-access/idia
 
 à Retourne un objet [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) représentant le segment souhaité.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

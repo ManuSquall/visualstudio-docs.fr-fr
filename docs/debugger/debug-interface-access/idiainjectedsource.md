@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75192c5c-812d-4675-9dc5-4c2cff3ba503
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae7095d2be479c5e7789a478b8d27632a1d2faa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8282ee5d887ed8ad7c8d19eb0d7891947e32350e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855773"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Accède au code source injecté stocké dans la source de données DIA.
@@ -25,7 +25,7 @@ Accède au code source injecté stocké dans la source de données DIA.
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaInjectedSource : IUnknown
+IDiaInjectedSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaInjectedSource` .
 |[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Récupère l’indicateur de la compression source utilisé.|
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Récupère les octets de code source.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 La source injectée est le texte injecté pendant la compilation. Cela ne signifie pas que le préprocesseur est `#include` utilisé en C++.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

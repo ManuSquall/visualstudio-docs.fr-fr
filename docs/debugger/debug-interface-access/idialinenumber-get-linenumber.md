@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2dff3fd9-097d-4645-bc1b-cb65ecbc42a6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 172ef1631dedc3caf90d3facf1d2061dc8590fa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60fcb463b4705a13cbdcf9802fb8fcf74df32246
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855731"
 ---
 # <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
 Récupère le numéro de ligne dans le fichier source.
@@ -25,7 +25,7 @@ Récupère le numéro de ligne dans le fichier source.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_lineNumber ( 
+HRESULT get_lineNumber ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_lineNumber ( 
 
 à Retourne le numéro de ligne dans le fichier source.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

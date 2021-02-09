@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6d6deee-dc12-4b38-af15-f917b2d4368e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aef31e953c8e73e38c91afe53d821d80be725fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: daf8fb5e66bcf214781c2aa15256e32e21d60959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855857"
 ---
 # <a name="idiaimagedataget_relativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
 Récupère l’emplacement de la mémoire virtuelle du module par rapport à l’application.
@@ -25,7 +25,7 @@ Récupère l’emplacement de la mémoire virtuelle du module par rapport à l�
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_relativeVirtualAddress ( 
+HRESULT get_relativeVirtualAddress ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_relativeVirtualAddress ( 
 
 à Retourne l’offset de la mémoire virtuelle relative du module.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

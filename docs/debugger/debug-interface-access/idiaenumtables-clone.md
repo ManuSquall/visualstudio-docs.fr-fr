@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68727c09b03ba8cf53f865c51698256b60742410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b7abdc5545c25f0e4dfa68657a0867c4c97b483
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856046"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.
@@ -25,7 +25,7 @@ Crée un énumérateur qui contient le même état d’énumération que l’én
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumTables** ppenum
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Clone ( 
 
 à Retourne un objet [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) qui contient un doublon de l’énumérateur. Les tables ne sont pas dupliquées, mais uniquement l’énumérateur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

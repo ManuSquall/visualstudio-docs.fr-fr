@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec67039f-da8c-4e70-8db7-957d7d5281e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a17d8be6292a67475ae259e519749ba2422894a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfb2c23c0d2d751482bbd6e778ff236f7e4040db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856326"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
 Ignore un nombre spécifié de segments dans une séquence d’énumération.
@@ -25,7 +25,7 @@ Ignore un nombre spécifié de segments dans une séquence d’énumération.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Skip ( 
 
 dans Nombre de segments dans la séquence d’énumération à ignorer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus de segments à ignorer.
 
 ## <a name="see-also"></a>Voir aussi

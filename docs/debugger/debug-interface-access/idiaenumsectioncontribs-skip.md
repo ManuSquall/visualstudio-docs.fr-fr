@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7471a178-5134-41b2-80a6-51ff96abe916
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e13f9290c76eb558bea397f7921f7cfd765613f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ef9bde1498f555a14736d95a6aa9e4695f36324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856445"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 Ignore un nombre spécifié de contributions de section dans une séquence d’énumération.
@@ -25,7 +25,7 @@ Ignore un nombre spécifié de contributions de section dans une séquence d’�
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Skip( 
+HRESULT Skip( 
    ULONG celt
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Skip( 
 
 dans Nombre de contributions de section dans la séquence d’énumération à ignorer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus de contribution de section à ignorer.
 
 ## <a name="see-also"></a>Voir aussi

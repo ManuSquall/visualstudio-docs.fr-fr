@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f56cdcdb-dc71-43c7-82fe-e2500986f5bc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 87cc4640f8edcc34a3a06046d50a4e98b4a66198
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2233c625fe1b27ffb749b8d29eb734ecddcb3700
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856732"
 ---
 # <a name="idiaenuminjectedsourcesget__newenum"></a>IDiaEnumInjectedSources::get__NewEnum
 Récupère la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.
@@ -25,7 +25,7 @@ Récupère la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versio
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get__NewEnum ( 
+HRESULT get__NewEnum ( 
    IUnknown** pRetVal
 );
 ```
@@ -34,7 +34,7 @@ HRESULT get__NewEnum ( 
  pRetVal
 - [out, retval] Retourne l' `IUnknown` interface qui représente la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

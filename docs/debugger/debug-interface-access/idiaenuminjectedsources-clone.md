@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 18038691-c140-426a-8617-27f0360650f3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a16b1c42bc7eedd04636a9b7bbdd6f9216463e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0426dd3226d0796187b2c03e7b2291bd6c1bf2b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856746"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.
@@ -25,7 +25,7 @@ Crée un énumérateur qui contient le même état d’énumération que l’én
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumInjectedSources** ppenum
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Clone ( 
 
 à Retourne un objet [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) qui contient un doublon de l’énumérateur. Les sources injectées ne sont pas dupliquées, mais uniquement l’énumérateur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

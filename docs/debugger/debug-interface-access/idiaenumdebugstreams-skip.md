@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ec7753c-d7af-4879-b107-1b3442e0b025
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dac8022970384d4fd2c205d3553cd02b9cbf1856
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a0ce0ecb65d18c3c5a3c4e11bbcf80171c25ac2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856907"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
 Ignore un nombre spécifié de flux de débogage dans une séquence d’énumération.
@@ -25,7 +25,7 @@ Ignore un nombre spécifié de flux de débogage dans une séquence d’énumér
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Skip ( 
 
 dans Nombre de flux de débogage dans la séquence d’énumération à ignorer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus d’enregistrements à ignorer.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ac84339f-70c6-48ed-85d0-6d7d1b5194e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f74f28dfd9b2a5ffdff4d6b5021dfbe4c7576bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3e4d5e4fcaad973ef21263e4eb3e5af6b42265e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856053"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 Positionne l’énumérateur en effectuant une recherche par adresse virtuelle (VA).
@@ -25,7 +25,7 @@ Positionne l’énumérateur en effectuant une recherche par adresse virtuelle (
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT symbolByVA ( 
+HRESULT symbolByVA ( 
    DWORD**      virtualAddress,
    IDiaSymbol** ppsymbol
 );
@@ -40,7 +40,7 @@ dans Adresse virtuelle.
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant le symbole trouvé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

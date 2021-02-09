@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0b6f5a68-8402-4f29-8219-20576fda8166
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9750c57bc9a6cacc8d945b0acdd7723769e74e53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9453cb9cd703fd22d9dcff0f1606449dd0fe2cac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467630"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856061"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 Positionne l’énumérateur en effectuant une recherche par numéro et décalage de section d’image.
@@ -25,7 +25,7 @@ Positionne l’énumérateur en effectuant une recherche par numéro et décalag
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT symbolByAddr ( 
+HRESULT symbolByAddr ( 
    DWORD**      isect,
    DWORD**      offsect,
    IDiaSymbol** ppsymbol
@@ -45,7 +45,7 @@ dans Offset dans la section.
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant le symbole trouvé.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14846955-7270-451d-91d2-9cb34bb65187
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e89c89bca8b164645c71df6083b230850e61ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 029c47cc04a09dc1168ff755c1640da9c9662207
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856711"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 Récupère une source injectée au moyen d’un index.
@@ -25,7 +25,7 @@ Récupère une source injectée au moyen d’un index.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD                index,
    IDiaInjectedSource** injectedSource
 );
@@ -40,7 +40,7 @@ dans Index de l’objet [IDiaInjectedSource](../../debugger/debug-interface-acce
 
 à Retourne un objet [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) qui représente la source injectée.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

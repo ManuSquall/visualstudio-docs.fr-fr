@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c99d9587de85941721ae404fefdcac7586fb08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1f2483971b8bb9deb59174fab77bd2c5692f830
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856753"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Énumère les différents éléments de données de frame contenus dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85468300"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumFrameData : IUnknown
+IDiaEnumFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -43,7 +43,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumFrameData` .
 |[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Retourne un frame par adresse virtuelle relative (RVA).|
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Retourne un frame par adresse virtuelle (VA).|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface à partir de la méthode [IDiaSession :: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Pour plus de détails, voir les exemples.

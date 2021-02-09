@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c9db956-0654-4f1a-8775-530aa980d8ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27daf70a3cc5f155bfbe6b2678cce42b50801153
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 739c8e0684e435d4b6747a7127907ec424d90c4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856018"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 Ignore un nombre spécifié de tables dans une séquence d’énumération.
@@ -25,7 +25,7 @@ Ignore un nombre spécifié de tables dans une séquence d’énumération.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Skip ( 
 
 dans Nombre de tables dans la séquence d’énumération à ignorer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus de tables à ignorer.
 
 ## <a name="see-also"></a>Voir aussi

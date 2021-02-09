@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e73087786e43c254c9635b239f59e7b4dd982090
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cf372d6885398994010aeb98f8ef57c28209a6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856893"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 Énumère les différents flux de débogage contenus dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85468370"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumDebugStreams : IUnknown
+IDiaEnumDebugStreams : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumDebugStreams` .
 |[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Le contenu des flux de débogage est dépendant de l’implémentation et les formats de données ne sont pas documentés.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

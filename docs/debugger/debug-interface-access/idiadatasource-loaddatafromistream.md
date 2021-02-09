@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fe33eea-1457-4b8c-ae19-f1ede5578483
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6a19d926ead4c2c38ff69544311caa1f726b3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf9d25f2ba6afac0510c95790dc8608b22243c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857138"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Prépare les données de débogage stockées dans un fichier de base de données du programme (. pdb) accessible via un flux de données en mémoire.
@@ -25,7 +25,7 @@ Prépare les données de débogage stockées dans un fichier de base de données
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT loadDataFromIStream ( 
+HRESULT loadDataFromIStream ( 
    IStream* pIStream
 );
 ```
@@ -35,7 +35,7 @@ HRESULT loadDataFromIStream ( 
 
 dans <xref:IStream> Objet représentant le flux de données à utiliser.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
 |Valeur|Description|
@@ -44,7 +44,7 @@ dans <xref:IStream> Objet représentant le flux de données à utiliser.
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode permet d’obtenir les données de débogage d’un fichier exécutable à partir de la mémoire via un <xref:IStream> objet.
 
  Pour charger un fichier. pdb sans validation, utilisez la méthode [IDiaDataSource :: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .

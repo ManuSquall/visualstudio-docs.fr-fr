@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a44277d-cbed-4811-9bad-5a2aa0f09323
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 248e73d9a17ed8baab1bcaf583e71cf02f821bfe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d58a109c3eb63bd3a1f59fb0009ba01809eca1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855626"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Reçoit des rappels de la procédure de localisation de symboles DIA, ce qui permet d’imposer des restrictions au processus de localisation.
@@ -38,7 +38,7 @@ IDiaLoadCallback2 : IDiaLoadCallback
 |[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Détermine si la recherche d’informations de débogage est autorisée à partir des fichiers. dbg.|
 |[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Détermine si la recherche de fichiers. pdb est autorisée dans le répertoire racine système.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  L’application cliente implémente cette interface et fournit une référence à celle-ci dans l’appel à la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) . N’oubliez pas d’implémenter toutes les méthodes dans l’interface [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) également.
 
 ## <a name="requirements"></a>Configuration requise

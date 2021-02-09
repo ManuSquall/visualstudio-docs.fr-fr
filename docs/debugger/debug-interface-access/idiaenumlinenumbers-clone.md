@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3892b10465c197e4c3ebfbde7fdb574bafb3ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8593fca731f96bb0d04b7cba12143eaf65614bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856620"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.
@@ -25,7 +25,7 @@ Crée un énumérateur qui contient le même état d’énumération que l’én
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumLineNumbers** ppenum
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Clone ( 
 
 à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient un doublon de l’énumérateur. Les numéros de ligne ne sont pas dupliqués, mais uniquement l’énumérateur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

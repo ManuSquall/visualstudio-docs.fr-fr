@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b388fe1-eabc-4720-9d59-dc09b0ceaeac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27484ce70b9e98ef7351d03d00ed91515b34e9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bca409a40b69111edcf7f13ae2749f8cc5abf679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856949"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Récupère un flux de débogage au moyen d’un index ou d’un nom.
@@ -40,7 +40,7 @@ flux
 
 à Retourne un objet [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) qui représente le flux de débogage spécifié.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

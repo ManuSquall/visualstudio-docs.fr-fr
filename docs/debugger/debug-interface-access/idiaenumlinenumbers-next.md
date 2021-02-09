@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 363d5b40-1316-4ab8-836f-63637f619e0a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1546c0bc7b8682b918d583769a9f580323c9dda4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d65791fddfd09aa90a65320b4663b17ea4e8260f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856592"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 Récupère un nombre spécifié de numéros de ligne dans la séquence d’énumération.
@@ -25,7 +25,7 @@ Récupère un nombre spécifié de numéros de ligne dans la séquence d’énum
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG            celt,
    IDiaLineNumber** rgelt,
    ULONG*           pceltFetched
@@ -45,7 +45,7 @@ dans Nombre de numéros de ligne dans l’énumérateur à récupérer.
 
 à Retourne le nombre de numéros de ligne dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de numéros de ligne. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

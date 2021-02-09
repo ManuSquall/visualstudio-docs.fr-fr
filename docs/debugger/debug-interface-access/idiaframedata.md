@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2f68066de6a41e6fd6a1cf4143613a7597d6f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f596cd67ce7d31440b40fb24ef3b1c141e98186
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855878"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Expose les détails d’un frame de pile.
@@ -25,7 +25,7 @@ Expose les détails d’un frame de pile.
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaFrameData : IUnknown
+IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -52,7 +52,7 @@ Le tableau suivant présente les méthodes de `IDiaFrameData` .
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Récupère l’interface de données de frame pour la fonction englobante.|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Effectue le déroulement de la pile et retourne l’état actuel des registres dans une interface de frame de parcours de la pile.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les détails disponibles pour un cadre sont ceux des points d’exécution dans la plage d’adresses indiquée par l’adresse et la longueur du bloc.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f97e2392-22e1-48da-b7ce-ad94c8b684b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ecd669e546f12972c2a11c3b038322ceaf18fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe4fdd42682b5336f8202dd94e37904dbc1bcf12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856627"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Énumérez les diverses sources injectées contenues dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85468244"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumInjectedSources : IUnknown
+IDiaEnumInjectedSources : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumInjectedSources` .
 |[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Cette interface est obtenue en appelant la méthode [IDiaSession :: findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) avec le nom d’un fichier source spécifique ou en appelant la méthode [IDiaSession :: GETENUMTABLES](../../debugger/debug-interface-access/idiasession-getenumtables.md) avec le GUID de l' `IDiaEnumInjectedSources` interface.

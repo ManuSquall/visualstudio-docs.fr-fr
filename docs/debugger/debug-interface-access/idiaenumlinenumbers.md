@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f84e14aa3942f512ef1f4cd19bad0372c60e9fbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d4a470a2e3037d77b07786e6f37d588162278a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856529"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Énumère les différents numéros de ligne contenus dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85468188"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumLineNumbers : IUnknown
+IDiaEnumLineNumbers : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumLineNumbers` .
 |[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Cette interface est obtenue en appelant l’une des méthodes suivantes dans l’interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) :

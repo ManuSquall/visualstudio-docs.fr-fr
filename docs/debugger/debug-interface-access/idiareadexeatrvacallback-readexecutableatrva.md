@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c1e965f-8f05-41a8-86d8-01830b2377c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a417669c381036fffac87b4d7e56c66fa31f728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 798a3af92a58cde7504db6232ce62c6e2aa292cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855500"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 Lit le nombre d’octets spécifié en commençant à l’adresse virtuelle relative (RVA) spécifiée à partir du fichier exécutable.
@@ -25,7 +25,7 @@ Lit le nombre d’octets spécifié en commençant à l’adresse virtuelle rela
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT ReadExecutableAtRVA ( 
+HRESULT ReadExecutableAtRVA ( 
    DWORD  relativeVirtualAddress,
    DWORD  cbData,
    DWORD* pcbData,
@@ -50,7 +50,7 @@ dans Nombre d’octets à lire.
 
 [in, out] Tableau qui est rempli avec des octets lus à partir du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Cette méthode est appelée par le code de prise en charge de DIA pour charger des octets de données à partir d’un exécutable à l’aide d’une adresse virtuelle relative. Cette méthode est appelée pour la prise en charge de la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
 ## <a name="see-also"></a>Voir aussi

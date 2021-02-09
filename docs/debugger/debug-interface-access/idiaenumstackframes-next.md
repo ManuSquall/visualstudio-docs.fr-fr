@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 77d50a6c59ea376950d8cd4653f29ba7d04f36ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e96190e76d13f6934333b4d743a1d7d2e5ee2e80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856186"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 Récupère un nombre spécifié d’éléments de frame de pile à partir de la séquence d’énumération.
@@ -25,7 +25,7 @@ Récupère un nombre spécifié d’éléments de frame de pile à partir de la 
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Next( 
+HRESULT Next( 
    ULONG             celt,
    IDiaStackFrame**  rgelt,
    ULONG*            pceltFetched
@@ -45,7 +45,7 @@ dans Nombre d’éléments StackFrame dans l’énumérateur à récupérer.
 
 à Retourne le nombre d’éléments de frame de pile dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de frames de pile. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

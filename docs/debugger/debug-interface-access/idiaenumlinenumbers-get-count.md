@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dbb55936-b754-4a27-8b82-9537a7adb664
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f321588efaebea683b9526b1813e129f0b409b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16ff9e0e6071f76e6e569790044b70a4d1d87b10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856613"
 ---
 # <a name="idiaenumlinenumbersget_count"></a>IDiaEnumLineNumbers::get_Count
 Récupère le nombre de numéros de ligne.
@@ -25,7 +25,7 @@ Récupère le nombre de numéros de ligne.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_Count ( 
 
 à Retourne le nombre de numéros de ligne.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

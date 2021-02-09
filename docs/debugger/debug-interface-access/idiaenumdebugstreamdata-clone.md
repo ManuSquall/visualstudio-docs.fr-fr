@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e7f17750-0694-4634-bf34-c821cd265c2f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd406b7e66afb7b9d2c3155fc2ca77bfe482ef0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60a6976e181f8286e66784d6cd98bca0eaf2387e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857103"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
 Crée un énumérateur qui contient la même séquence énumérée que l’énumérateur actuel.
@@ -25,7 +25,7 @@ Crée un énumérateur qui contient la même séquence énumérée que l’énum
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumDebugStreamData** ppenum
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Clone ( 
 
 à Retourne un objet [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) qui contient la séquence dupliquée des enregistrements de flux de données de débogage.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 33c05d65-abb4-4800-a382-54a3805ea7b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b2cfea273d0b98c178c3cf9bcf3894042f760f
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 68dc8ca76e9250cd06009a990c0136912b0d31e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857376"
 ---
 # <a name="cv_access_e"></a>CV_access_e
 Spécifie la portée de la visibilité (niveau d’accès) des variables et des fonctions membres.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```C++
 typedef enum CV_access_e {

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b8dec05-e76c-4cc4-9644-2369d583849f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb00e661fc3976201abb4ab7304422195fda272
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aa30598dcae08842c935d0d404cbb8b3303aefe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856879"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Retourne un frame par adresse virtuelle relative (RVA).
@@ -25,7 +25,7 @@ Retourne un frame par adresse virtuelle relative (RVA).
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT frameByRVA( 
+HRESULT frameByRVA( 
    DWORD           relativeVirtualAddress,
    IDiaFrameData** frame
 );
@@ -40,7 +40,7 @@ dans Adresse RVA du cadre qui vous intéresse.
 
 à Retourne un objet [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) représentant le frame qui contient l’adresse fournie.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucune donnée de frame ne correspond à l’adresse spécifiée. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4d569323-0e11-456d-9f92-a218bf292ecf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 661c24a3d9fffc35e5fc581b1fc8a4f96452ef1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41be98ab0c44cfb41b7ee9c5f55e99b0fae17ae7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855493"
 ---
 # <a name="idiasectioncontribget_addressoffset"></a>IDiaSectionContrib::get_addressOffset
 Récupère la partie offset de l’adresse de la contribution.
@@ -25,7 +25,7 @@ Récupère la partie offset de l’adresse de la contribution.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -35,7 +35,7 @@ HRESULT get_addressOffset ( 
 
 à Retourne la partie du décalage de l’adresse de la contribution.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

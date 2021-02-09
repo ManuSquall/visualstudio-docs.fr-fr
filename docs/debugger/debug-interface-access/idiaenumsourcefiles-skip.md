@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4821e6dd-d33f-403d-857d-e3ae81e4a9e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6dd38782a7618259d802ae898c643d2a504c3fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8474899ac5f1a0617bc0adfc110dbb773d6b6b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856200"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 Ignore un nombre spécifié de fichiers sources dans une séquence d’énumération.
@@ -25,7 +25,7 @@ Ignore un nombre spécifié de fichiers sources dans une séquence d’énuméra
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -35,7 +35,7 @@ HRESULT Skip ( 
 
 dans Nombre de fichiers sources dans la séquence d’énumération à ignorer.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus de fichiers sources à ignorer.
 
 ## <a name="see-also"></a>Voir aussi

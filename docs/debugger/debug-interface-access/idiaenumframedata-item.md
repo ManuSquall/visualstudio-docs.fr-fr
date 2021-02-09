@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2761a72d-1868-4f5b-a32e-c2a1d9358c91
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de3a87d62195ae28e83efefa641dde5667f0a6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8d2335cf84ece792b710725156d2f74e3f33770
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856816"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 Récupère un élément de données de frame au moyen d’un index.
@@ -25,7 +25,7 @@ Récupère un élément de données de frame au moyen d’un index.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD           index,
    IDiaFrameData** section
 );
@@ -40,7 +40,7 @@ dans Index de l’objet [IDiaFrameData](../../debugger/debug-interface-access/id
 
 à Retourne un objet [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) qui représente l’élément de données de frame souhaité.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

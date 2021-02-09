@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6018558ead8ae8b5532253cfa32180491514b040
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6710ebfec5f0c76bee217f9f75fb24c7efabd18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856102"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Énumère les différents symboles contenus dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85467679"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumSymbols : IUnknown
+IDiaEnumSymbols : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumSymbols` .
 |[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 Cette interface fournit des symboles regroupés par un type spécifique de symbole, par exemple, `SymTagUDT` (types définis par l’utilisateur) ou `SymTagBaseClass` . Pour travailler avec des symboles regroupés par adresse, utilisez l’interface [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) .
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

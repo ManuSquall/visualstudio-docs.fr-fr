@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09622b1b152a8d1efd105b9b18a3c1fa74835378
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55c4dcef489c56688321497c93448d83ce342b1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856459"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Récupère un nombre spécifié de contributions de section dans la séquence d’énumération.
@@ -25,7 +25,7 @@ Récupère un nombre spécifié de contributions de section dans la séquence d�
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT Next( 
+HRESULT Next( 
    ULONG                celt,
    IDiaSectionContrib** rgelt,
    ULONG*               pceltFetched
@@ -45,7 +45,7 @@ dans Nombre de contributions de section dans l’énumérateur à récupérer.
 
 à Retourne le nombre de contributions de section dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de contributions de section. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 63b67a93-2910-4fff-aa70-6b2eaa08e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd54587127d434f79cf8d80aa130f5135bb7aeb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc062581f49c0b4a109fc1c0257eac0bb3470743
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855619"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 Détermine si la recherche d’informations de débogage est autorisée à partir des fichiers. dbg.
@@ -31,7 +31,7 @@ HRESULT RestrictDBGAccess();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Toute valeur de retour autre que `S_OK` pour empêcher la recherche d’informations de débogage à partir de fichiers. dbg.
 
 ## <a name="see-also"></a>Voir aussi

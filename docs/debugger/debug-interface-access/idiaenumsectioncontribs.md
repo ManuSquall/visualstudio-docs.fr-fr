@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d6c0632-310f-4a99-8921-58149a1817e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc0fe8391c6390d62cffbb591c4cef1ea52976f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4960dec3f12959355caeb7ff62c88bb18d8b63df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856431"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 Énumère les différentes contributions de section contenues dans la source de données.
@@ -25,7 +25,7 @@ ms.locfileid: "85468071"
 ## <a name="syntax"></a>Syntaxe
 
 ```
-IDiaEnumSectionContribs : IUnknown
+IDiaEnumSectionContribs : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumSectionContribs` .
 |[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 ## <a name="note-for-callers"></a>Remarque pour les appelants
 Obtenez cette interface à partir de la méthode [IDiaSession :: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Pour plus de détails, voir les exemples.

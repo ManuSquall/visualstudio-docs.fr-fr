@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ccc9397-ce41-4f72-b261-72ac252cd4a5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8681032840f09bcc4a90df66b3a6f37d664739ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45eaed0b3306ba0ab1c448d5e61657f0461a9474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855549"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 Lit les propriétés spécifiées à partir du jeu de propriétés actuel.
@@ -25,7 +25,7 @@ Lit les propriétés spécifiées à partir du jeu de propriétés actuel.
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT ReadMultiple( 
+HRESULT ReadMultiple( 
    ULONG          cpspec,
    PROPSPEC const rgpspec,
    PROPVARIANT    rgvar
@@ -45,10 +45,10 @@ dans Tableau de propriétés à lire. Les propriétés peuvent être spécifiée
 
 [in, out] Tableau de `PROPVARIANT` structures (dans l’espace de noms Microsoft. VisualStudio. OLE. Interop) à remplir avec les valeurs de chaque propriété. La taille du tableau doit être au moins égale à `cpspec` . L’appelant n’a pas besoin d’initialiser les valeurs dans le tableau.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si une ou plusieurs des propriétés sont introuvables. Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si une propriété est introuvable, l’entrée correspondante dans le `rgvar` tableau contient un `VARIANT` avec le type de `VT_EMPTY` .
 
 ## <a name="see-also"></a>Voir aussi

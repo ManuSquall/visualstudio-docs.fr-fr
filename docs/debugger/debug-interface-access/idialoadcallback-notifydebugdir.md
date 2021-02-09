@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 032e628512b7c601a6409f6f70ba0b0c3cabb37c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5844cc235d604e8433940920eb9244044732d54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855647"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Appelé lorsqu’un répertoire de débogage a été trouvé dans le fichier. exe.
@@ -25,7 +25,7 @@ Appelé lorsqu’un répertoire de débogage a été trouvé dans le fichier. ex
 ## <a name="syntax"></a>Syntaxe
 
 ```C++
-HRESULT NotifyDebugDir ( 
+HRESULT NotifyDebugDir ( 
    BOOL  fExecutable,
    DWORD cbData,
    BYTE  data[]
@@ -45,10 +45,10 @@ dans Nombre d’octets de données dans le répertoire de débogage.
 
 dans Tableau qui est renseigné avec le répertoire de débogage.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le code de retour est généralement ignoré.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) appelle ce rappel lorsqu’il trouve un répertoire de débogage pendant le traitement du fichier exécutable.
 
  Cette méthode supprime la nécessité pour le client de rétroconcevoir le fichier exécutable et/ou de débogage pour prendre en charge les informations de débogage autres que celles figurant dans le fichier. pdb. Avec ces données, le client peut reconnaître le type d’informations de débogage disponibles et s’il réside dans le fichier exécutable ou le fichier. dbg.
