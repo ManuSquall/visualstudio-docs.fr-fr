@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5bb2a260f0b9903837b6f1bb8ce8a2e4a2fe691e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931784"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (tâche)
 
@@ -40,7 +40,7 @@ Supprime les éléments en double de la collection d’éléments spécifiée.
 |`Filtered`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient une collection d’éléments dont tous les doublons ont été supprimés. L’ordre des éléments d’entrée est préservé, en conservant la première instance de chaque élément en double.|
 |`Inputs`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Collection d’éléments de laquelle supprimer les éléments en double.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  Cette tâche ne prend pas en compte la casse et ne compare pas les métadonnées des éléments lors de la recherche des doublons.
 
@@ -72,7 +72,7 @@ Supprime les éléments en double de la collection d’éléments spécifiée.
 </Project>
 ```
 
- L’exemple suivant montre que la tâche `RemoveDuplicates` conserve son ordre d’entrée. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient les éléments *MyFile2.cs* , *MyFile1.cs* et *MyFile3.cs* dans cet ordre.
+ L’exemple suivant montre que la tâche `RemoveDuplicates` conserve son ordre d’entrée. Lorsque la tâche est terminée, la collection d’éléments `FilteredItems` contient les éléments *MyFile2.cs*, *MyFile1.cs* et *MyFile3.cs* dans cet ordre.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

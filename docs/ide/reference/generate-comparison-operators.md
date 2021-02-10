@@ -6,15 +6,15 @@ ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: ee0ac916bcc13e6bc89485171b2ce145b31dd919
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932564"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Générer des opérateurs de comparaison pour les types qui implémentent IComparable
 
@@ -34,9 +34,9 @@ Dans les **cas suivants :** Vous disposez d’un type qui implémente IComparab
 
 2. Effectuez ensuite l'une des opérations suivantes :
 
-   - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations** .
+   - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
-   - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations** .
+   - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
 
    - Cliquez sur l’icône ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
 

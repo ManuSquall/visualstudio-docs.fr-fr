@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cb8d468971a578f68ba64fe754ed788493400a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934049"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Retourne le contexte de code représentant un emplacement si une opération de déroulement de la pile s’est produite.
@@ -43,7 +43,7 @@ int GetUnwindCodeContext(
 `ppCodeContext`\
 à Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente l’emplacement du contexte de code si un déroulement de la pile s’est produit.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

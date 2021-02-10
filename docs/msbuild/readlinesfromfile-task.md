@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: a18af929-b53a-4d9e-b7bf-e3d3737ee85f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2c43af40ea429714f0624db67c53fa46eb6427
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0361d0103afbe662a37b50358e125018a7378f39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931966"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (tâche)
 
@@ -40,7 +40,7 @@ Lit une liste d’éléments à partir d’un fichier texte.
 |`File`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le fichier à lire. Le fichier doit comporter un seul élément sur chaque ligne.|
 |`Lines`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les lignes lues dans le fichier.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

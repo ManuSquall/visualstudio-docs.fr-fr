@@ -7,20 +7,20 @@ ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931290"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : afficher les suggestions d’ampoules
 Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.
 
- Dans les éditeurs Visual C# et Visual Basic, vous pouvez également utiliser le .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui affichent automatiquement des ampoules. Pour plus d’informations, consultez :
+ Dans les éditeurs Visual C# et Visual Basic, vous pouvez également utiliser le .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui affichent automatiquement des ampoules. Pour plus d'informations, consultez les pages suivantes :
 
 - [Comment : écrire un diagnostic et un correctif de code C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 

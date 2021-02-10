@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 94050565e6c5619781434c7a18307bfbf80b51f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933672"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild WPF
 
@@ -59,7 +59,7 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Incorpore une ou plusieurs ressources ( *. jpg* , *. ico* , *. bmp* , XAML au format binaire et d’autres types d’extensions) dans un fichier *. Resources* .
+ Incorpore une ou plusieurs ressources (*. jpg*, *. ico*, *. bmp*, XAML au format binaire et d’autres types d’extensions) dans un fichier *. Resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -67,7 +67,7 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Ajoute l' **\<hostInBrowser />** élément au manifeste d’application ( *\<projectname> . exe. manifest* ) lors de la génération d’un projet d’application de navigateur XAML (XBAP).
+ Ajoute l' **\<hostInBrowser />** élément au manifeste d’application (*\<projectname> . exe. manifest*) lors de la génération d’un projet d’application de navigateur XAML (XBAP).
 
 ## <a name="see-also"></a>Voir aussi
 

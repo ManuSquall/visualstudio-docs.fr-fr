@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932343"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Boîte de dialogue Options : éditeur de texte JavaScript/de la machine à inverser \> \>
 
-Utilisez la page **Linting** de la boîte de dialogue **Options** pour définir les options d’analyse du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur de texte**  >  **JavaScript/machine**à  >  **enpelucher**.
+Utilisez la page **Linting** de la boîte de dialogue **Options** pour définir les options d’analyse du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur de texte**  >  **JavaScript/machine** à  >  **enpelucher**.
 
 ## <a name="eslint-settings"></a>Paramètres d’ESLint
 

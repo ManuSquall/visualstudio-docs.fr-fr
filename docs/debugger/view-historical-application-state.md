@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933100"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecter les précédents états des applications à l’aide du retour en arrière IntelliTrace dans Visual Studio (Visual Studio Enterprise)
 
@@ -89,15 +89,15 @@ Ce didacticiel présente les procédures suivantes :
 
     Pour en savoir plus sur la façon d’inspecter des variables dans Visual Studio, consultez la [visite guidée du débogueur](../debugger/debugger-feature-tour.md)
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions (FAQ)
 
 #### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>En quoi la fonctionnalité Retour en arrière d’IntelliTrace diffère-t-elle du mode Événements IntelliTrace uniquement ?
 
 IntelliTrace en mode Événements uniquement vous permet d’activer le débogage d’historique sur les points d’arrêt et les étapes du débogueur. Toutefois, IntelliTrace capture les données des fenêtres **Variables locales** et **Automatique** uniquement si ces fenêtres sont ouvertes, et il capture uniquement les données qui sont développées et dans la vue. En mode Événements uniquement, vous avez rarement une vue complète des variables et des objets complexes. De plus, l’évaluation des expressions et l’affichage des données dans la fenêtre **Espion** ne sont pas prises en charge.
 
-En mode Événements et captures instantanées, IntelliTrace crée une capture instantanée complète du processus de l’application, y compris les objets complexes. Sur une ligne de code, vous pouvez voir les mêmes informations que si vous étiez arrêtés à un point d’arrêt (et peu importe si vous avez auparavant développé les informations). L’évaluation des expressions est également prise en charge lors de l’affichage d’une capture instantanée.  
+En mode Événements et captures instantanées, IntelliTrace crée une capture instantanée complète du processus de l’application, y compris les objets complexes. Sur une ligne de code, vous pouvez voir les mêmes informations que si vous étiez arrêtés à un point d’arrêt (et peu importe si vous avez auparavant développé les informations). L’évaluation des expressions est également prise en charge lors de l’affichage d’une capture instantanée.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qu’est l’impact de cette fonctionnalité sur les performances ? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qu’est l’impact de cette fonctionnalité sur les performances ? 
 
 L’impact sur les performances globales du pas à pas dépend de votre application. La surcharge liée à la création de capture instantanée est d’environ 30 ms. Quand une capture instantanée est créée, le processus de l’application est dupliqué et la copie dupliquée est suspendue. Quand vous affichez une capture instantanée, Visual Studio s’attache à la copie dupliquée du processus. Pour chaque capture instantanée, Visual Studio copie uniquement la table des pages et définit les pages sur « copie pour écriture ». Si des objets sur le tas changent entre les étapes du débogueur avec des captures instantanées associées, la table des pages correspondante est alors copiée, ce qui entraîne un coût mémoire minimal. Si Visual Studio détecte qu’il n’y a pas suffisamment de mémoire pour créer une capture instantanée, il n’en crée pas.
 

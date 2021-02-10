@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 89ecd1d0f7697a38ef7318ddf93a91a4397b5d72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934062"
 ---
 # <a name="usedcommands-element"></a>Élément UsedCommands
 L’élément UsedCommands groupe les éléments UsedCommand et d’autres regroupements UsedCommands.
 
  L’élément UsedCommands est facultatif. Si vous n’appelez pas de commandes définies en dehors de votre package, vous n’avez pas besoin d’inclure cette section dans votre fichier. vsct.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```
 <UsedCommands condition="Defined(DEBUG)">
@@ -42,7 +42,7 @@ L’élément UsedCommands groupe les éléments UsedCommand et d’autres regro
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

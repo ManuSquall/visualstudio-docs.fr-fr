@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2ba7234ee0c5a4ab8096c020cb44345f17830540
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931212"
 ---
 # <a name="invokemethod-activity-designer"></a>Concepteur d'activités InvokeMethod
 
@@ -37,15 +37,15 @@ Le tableau suivant présente les <xref:System.Activities.Statements.InvokeMethod
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial de l'activité <xref:System.Activities.Statements.InvokeMethod>. La valeur par défaut est InvokeMethod.<br /><br /> Bien que le ne <xref:System.Activities.Activity.DisplayName%2A> soit pas strictement obligatoire, il est préférable d’en utiliser un.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Vrai|Nom de la méthode à appeler lorsque l'activité s'exécute. La méthode appelée doit être déclarée comme **publique**. Cette propriété peut être modifiée dans l’aire du concepteur et est obligatoire.|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|Faux|Collection de paramètres de la méthode appelée. Les paramètres doivent être ajoutés à la collection selon leur ordre d’affichage dans la signature de méthode. Pour afficher la boîte de dialogue **paramètres** dans laquelle vous pouvez définir cette propriété, cliquez sur le bouton de sélection dans le champ **paramètres** de la grille des propriétés. Cliquez sur le bouton **créer un argument** pour ajouter les paramètres.|
-|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|Faux|Valeur de retour de l'appel de méthode.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Vrai|Spécifie si la méthode est appelée de façon asynchrone. La valeur par défaut est **False**.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Faux|Objet qui contient la méthode à appeler. Cette propriété peut être modifiée dans l'aire du concepteur.<br /><br /> La propriété <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> ou <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> doit obligatoirement être définie.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Faux|Type d'élément <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Cette propriété peut être modifiée dans l'aire du concepteur. Elle doit être définie uniquement si la méthode appelée est statique.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.InvokeMethod>. La valeur par défaut est InvokeMethod.<br /><br /> Bien que le ne <xref:System.Activities.Activity.DisplayName%2A> soit pas strictement obligatoire, il est préférable d’en utiliser un.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|Nom de la méthode à appeler lorsque l'activité s'exécute. La méthode appelée doit être déclarée comme **publique**. Cette propriété peut être modifiée dans l’aire du concepteur et est obligatoire.|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|Collection de paramètres de la méthode appelée. Les paramètres doivent être ajoutés à la collection selon leur ordre d’affichage dans la signature de méthode. Pour afficher la boîte de dialogue **paramètres** dans laquelle vous pouvez définir cette propriété, cliquez sur le bouton de sélection dans le champ **paramètres** de la grille des propriétés. Cliquez sur le bouton **créer un argument** pour ajouter les paramètres.|
+|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|Valeur de retour de l'appel de méthode.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|Spécifie si la méthode est appelée de façon asynchrone. La valeur par défaut est **False**.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Objet qui contient la méthode à appeler. Cette propriété peut être modifiée dans l'aire du concepteur.<br /><br /> La propriété <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> ou <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> doit obligatoirement être définie.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Type d'élément <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Cette propriété peut être modifiée dans l'aire du concepteur. Elle doit être définie uniquement si la méthode appelée est statique.|
 
-Pour passer des paramètres en tant que paramètre de **sortie** C# (par exemple, `Method1(out myParam))` Utilisez l' **argument** InOutArgument à la place de **InOutArgument**
+Pour passer des paramètres en tant que paramètre de **sortie** C# (par exemple, `Method1(out myParam))` Utilisez l' **argument** InOutArgument à la place de 
 
 Les méthodes avec des arguments appelés **TargetObject** ou **result** ne peuvent pas être appelées à l’aide de l' <xref:System.Activities.Statements.InvokeMethod> activité. En effet, l'activité <xref:System.Activities.Statements.InvokeMethod> inscrit <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> et <xref:System.Activities.Statements.InvokeMethod.Result%2A> dans <xref:System.Activities.Activity.CacheMetadata%2A>.
 

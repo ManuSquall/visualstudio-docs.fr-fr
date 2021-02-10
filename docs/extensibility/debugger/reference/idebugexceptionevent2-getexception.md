@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d9b9a174843b4c48dccc00370176668c582b53c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933282"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 Obtient une description détaillée de l’exception qui a déclenché cet événement.
@@ -28,13 +28,13 @@ Obtient une description détaillée de l’exception qui a déclenché cet évé
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetException( 
+HRESULT GetException( 
    EXCEPTION_INFO* pExceptionInfo
 );
 ```
 
 ```csharp
-int GetException( 
+int GetException( 
    EXCEPTION_INFO[] pExceptionInfo
 );
 ```
@@ -43,7 +43,7 @@ int GetException( 
 `pExceptionInfo`\
 [in, out] Structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui est remplie avec la description de l’exception.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

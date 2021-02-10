@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d1e032150035258df4b1cc88253cefc555d826
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 43c9e7d5947796bb1598bf9dc02420b31e43d167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933828"
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
 Ajoute un fichier existant à la solution actuelle et l’ouvre.
@@ -37,7 +37,7 @@ Obligatoire. Chemin complet et nom de fichier, avec l’extension, de l’élém
 
 ## <a name="switches"></a>Commutateurs
 /e: `editorname`\
-facultatif. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
+Facultatif. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
 
 La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la **boîte de dialogue Ouvrir avec**, entre guillemets. Par exemple, pour ouvrir une feuille de style dans l’éditeur de code source, entrez les informations suivantes pour l’argument /e:`editorname`.
 
@@ -45,7 +45,7 @@ La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
 ## <a name="example"></a>Exemple

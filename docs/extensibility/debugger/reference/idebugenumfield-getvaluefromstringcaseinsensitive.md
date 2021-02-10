@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933347"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Cette méthode utilise une recherche ne respectant pas la casse pour retourner la valeur associée au nom d’une constante d’énumération.
@@ -48,7 +48,7 @@ dans Chaîne spécifiant le nom pour lequel obtenir la valeur. Notez que pour C+
 `pValue`\
 à Retourne la valeur numérique associée.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` , si le nom ne fait pas partie de l’énumération ou un code d’erreur.
 
 ## <a name="remarks"></a>Notes

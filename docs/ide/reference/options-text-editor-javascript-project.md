@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932330"
 ---
 # <a name="options-text-editor-javascript-project"></a>Options, Éditeur de texte, JavaScript, Projet
 
-Utilisez la page **Projet** de la boîte de dialogue **Options** pour spécifier les options de projet JavaScript et TypeScript dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur de texte**  >  **projet JavaScript/machine à écrire**  >  **Project**.
+Utilisez la page **Projet** de la boîte de dialogue **Options** pour spécifier les options de projet JavaScript et TypeScript dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur de texte**  >  **projet JavaScript/machine à écrire**  >  .
 
 ## <a name="project-analysis-options"></a>Options d’analyse du projet
 

@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932356"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Boîte de dialogue Options : éditeur de texte \> JavaScript \> IntelliSense
 
@@ -40,7 +40,7 @@ Vous pouvez utiliser ces options pour modifier le comportement de la saisie semi
 
 Quand vous cochez cette case, l’éditeur de code JavaScript ajoute des instructions avec les éléments sélectionnés dans la liste de complétion seulement quand vous appuyez sur la touche **Tab** ou **Entrée**. Quand vous décochez cette case, d’autres caractères, comme un point, une virgule, deux-points, une parenthèse ouvrante et une accolade ouvrante ({), peuvent également ajouter des instructions avec les éléments sélectionnés.
 
-## <a name="references"></a>References
+## <a name="references"></a>Références
 
 Vous pouvez utiliser ces options pour spécifier les types de fichiers IntelliSense .js qui sont dans la portée pour différents types de projet JavaScript. Les références IntelliSense sont généralement utilisées pour fournir une prise en charge IntelliSense pour les objets globaux. Vous pouvez également utiliser cette page pour définir l'ordre de chargement des scripts qui doivent être chargés au moment de l'exécution, et ajouter des fichiers d'extension IntelliSense.
 
@@ -52,7 +52,7 @@ Cette option spécifie le type de groupe de référence. Trois groupes de réfé
 
 Vous pouvez utiliser les groupes de référence prédéfinis pour spécifier les fichiers IntelliSense .js particuliers qui sont dans la portée des projets JavaScript. Quatre groupes de référence sont disponibles :
 
-- Implicite ( *version*de Windows) pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] en JavaScript. Les fichiers inclus dans ce groupe se trouvent dans la portée pour chaque fichier .js ouvert dans l’éditeur de code pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] utilisant JavaScript.
+- Implicite ( *version* de Windows) pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] en JavaScript. Les fichiers inclus dans ce groupe se trouvent dans la portée pour chaque fichier .js ouvert dans l’éditeur de code pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] utilisant JavaScript.
 
 - Implicite (Web) pour les projets HTML5. Les fichiers inclus dans ce groupe figurent dans la portée de chaque fichier .js ouvert dans l'éditeur de code pour ces types de projet.
 
@@ -62,7 +62,7 @@ Vous pouvez utiliser les groupes de référence prédéfinis pour spécifier les
 
 **Fichiers inclus**
 
-Cette option spécifie l'ordre dans lequel les fichiers sont chargés dans le contexte du service de langage. Vous pouvez configurer l'ordre à l'aide des boutons **Supprimer**, **Monter**et **Descendre** . Pour qu'IntelliSense fonctionne correctement, un fichier qui dépend des autres doit être chargé après l'autre fichier.
+Cette option spécifie l'ordre dans lequel les fichiers sont chargés dans le contexte du service de langage. Vous pouvez configurer l'ordre à l'aide des boutons **Supprimer**, **Monter** et **Descendre** . Pour qu'IntelliSense fonctionne correctement, un fichier qui dépend des autres doit être chargé après l'autre fichier.
 
 > [!CAUTION]
 > Si un objet est défini de manière inconditionnelle dans deux références implicites ou plus, la dernière référence de cette liste sera utilisée pour définir l'objet.

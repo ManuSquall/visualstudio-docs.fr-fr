@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a1babf518a3579246903f6479f999d8912dfe5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7f00e0b5cd0575613add2698058ba6b1357aec0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931979"
 ---
 # <a name="rc-task"></a>RC (tâche)
 
-Encapsule l’outil Compilateur de ressources Microsoft, *rc.exe* . La tâche **RC** compile des ressources, telles que des curseurs, des icônes, des images bitmap, des boîtes de dialogue et des polices, dans un fichier de ressources ( *.res* ). Pour plus d’informations, consultez [Compilateur de ressources](/windows/desktop/menurc/resource-compiler).
+Encapsule l’outil Compilateur de ressources Microsoft, *rc.exe*. La tâche **RC** compile des ressources, telles que des curseurs, des icônes, des images bitmap, des boîtes de dialogue et des polices, dans un fichier de ressources (*.res*). Pour plus d’informations, consultez [Compilateur de ressources](/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Paramètres
 
@@ -42,15 +42,15 @@ Encapsule l’outil Compilateur de ressources Microsoft, *rc.exe* . La tâche **
 |Paramètre|Description|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Paramètre **String []** facultatif.<br /><br /> Ajoute un répertoire à la liste des répertoires dans lesquels sont recherchés les fichiers include.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/I** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
-|**AdditionalOptions**|Paramètre de **chaîne** facultatif.<br /><br /> Liste d’options de ligne de commande ; par exemple,/ \<option1>  / \<option2>  / \<option#> . Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche **RC** .<br /><br /> Pour plus d’informations, lisez la section relative aux options dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
-|**Culturel**|Paramètre de **chaîne** facultatif.<br /><br /> Spécifie un ID de paramètres régionaux qui représente la culture utilisée dans les ressources.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
+|**AdditionalOptions**|Paramètre de **chaîne** facultatif.<br /><br /> Liste d’options de ligne de commande ; par exemple,/ \<option1>  / \<option2>  / \<option#> . Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche **RC**.<br /><br /> Pour plus d’informations, lisez la section relative aux options dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
+|**Culture**|Paramètre de **chaîne** facultatif.<br /><br /> Spécifie un ID de paramètres régionaux qui représente la culture utilisée dans les ressources.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**IgnoreStandardIncludePath**|Paramètre **booléen** facultatif.<br /><br /> Si `true`, empêche le compilateur de ressources de vérifier la variable d’environnement INCLUDE lorsqu’il recherche des fichiers d’en-tête ou des fichiers de ressources.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/x** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**NullTerminateStrings**|Paramètre **booléen** facultatif.<br /><br /> Si `true`, termine par la valeur Null toutes les chaînes de la table de chaînes.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/n** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**PreprocessorDefinitions**|Paramètre **String []** facultatif.<br /><br /> Définissez un ou plusieurs symboles de préprocesseur pour le compilateur de ressources. Spécifiez une liste de symboles de macro.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/d** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-). Regardez également **UndefinePreprocessorDefinitions** dans ce tableau.|
 |**ResourceOutputFileName**|Paramètre de **chaîne** facultatif.<br /><br /> Spécifie le nom du fichier de ressources. Spécifiez un nom de fichier de ressources.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/fo** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**ShowProgress**|Paramètre **booléen** facultatif.<br /><br /> Si `true`, affiche les messages qui signale la progression du compilateur.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/v** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**Source**|Paramètre `ITaskItem[]` requis.<br /><br /> Définit un tableau d’éléments de fichier source MSBuild pouvant être consommés et émis par des tâches.|
-|**SuppressStartupBanner**|Paramètre **booléen** facultatif.<br /><br /> Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.<br /><br /> Pour plus d’informations, tapez l’option de ligne de commande **/?** , puis regardez l’option **/nologo** .|
+|**SuppressStartupBanner**|Paramètre **booléen** facultatif.<br /><br /> Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.<br /><br /> Pour plus d’informations, tapez l’option de ligne de commande **/?**, puis regardez l’option **/nologo**.|
 |**TrackerLogDirectory**|Paramètre de **chaîne** facultatif.<br /><br /> Spécifie le répertoire des journaux de suivi.|
 |**UndefinePreprocessorDefinitions**|Annule la définition d’un symbole du préprocesseur.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/u** dans [Utilisation de RC (ligne de commande RC)](/windows/win32/menurc/using-rc-the-rc-command-line-). Regardez également **PreprocessorDefinitions** dans ce tableau.|
 

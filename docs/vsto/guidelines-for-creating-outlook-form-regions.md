@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933607"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Instructions pour créer des zones de formulaire Outlook
   Les informations suivantes peuvent vous aider à optimiser vos zones de formulaire et à éviter d’éventuels problèmes :

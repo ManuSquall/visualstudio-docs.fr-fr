@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931264"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procédure pas à pas : utiliser une touche de raccourci avec une extension d’éditeur
 Vous pouvez répondre aux touches de raccourci dans votre extension d’éditeur. La procédure pas à pas suivante montre comment ajouter un ornement de vue à un affichage de texte à l’aide d’une touche de raccourci. Cette procédure pas à pas est basée sur le modèle de l’éditeur d’ornements Viewport et vous permet d’ajouter l’ornement à l’aide du caractère +.

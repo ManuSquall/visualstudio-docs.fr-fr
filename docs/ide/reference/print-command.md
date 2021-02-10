@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0524ce015ea4675254615c11e5768e59049c37f6
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 08150654a7a4f062555a1d12382b9d51aacca25f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932031"
 ---
 # <a name="print-command"></a>Imprimer (commande)
 
@@ -39,7 +39,7 @@ ms.locfileid: "96304127"
 
 Obligatoire. Expression à évaluer ou texte à afficher.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Vous pouvez utiliser le point d’interrogation (?) comme alias pour cette commande. Ainsi, la commande
 

@@ -5,22 +5,22 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4a735c374216b1810b3abd99ffab89000cec8b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933087"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installer les symboles de débogage pour les interpréteurs Python
 
 Pour offrir une expérience de débogage complète, le [débogueur Python en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) dans Visual Studio nécessite des symboles de débogage pour l’interpréteur Python utilisé afin d’analyser de nombreuses structures de données internes. Par exemple, pour *python27.dll*, le fichier de symboles correspondant est *python27. pdb*; par *python36.dll*, le fichier de symboles est *python36. pdb*. Chaque version de l’interpréteur fournit également des fichiers de symboles pour différents modules.
 
-Dans Visual Studio 2017 et ultérieur, les interpréteurs Python 3 et Anaconda 3 installent automatiquement leurs symboles respectifs, qui sont ensuite automatiquement détectés par Visual Studio. Pour Visual Studio 2015 et versions antérieures, ou lorsque vous utilisez d’autres interpréteurs, vous devez télécharger les symboles séparément, puis pointer Visual Studio **Tools**vers ceux-ci via la  >  boîte de dialogue outils**options** sous l’onglet **débogage**  >  **symboles** . Ces étapes sont détaillées dans les sections suivantes.
+Dans Visual Studio 2017 et ultérieur, les interpréteurs Python 3 et Anaconda 3 installent automatiquement leurs symboles respectifs, qui sont ensuite automatiquement détectés par Visual Studio. Pour Visual Studio 2015 et versions antérieures, ou lorsque vous utilisez d’autres interpréteurs, vous devez télécharger les symboles séparément, puis pointer Visual Studio vers ceux-ci via la  >  boîte de dialogue outils **options** sous l’onglet **débogage**  >  **symboles** . Ces étapes sont détaillées dans les sections suivantes.
 
 Visual Studio peut vous inviter à fournir les symboles dont il a besoin, en général au moment du démarrage d’une session de débogage en mode mixte. Dans ce cas, il affiche une boîte de dialogue avec deux options possibles :
 
@@ -48,7 +48,7 @@ Visual Studio peut vous inviter à fournir les symboles dont il a besoin, en gé
 
 Si vous avez téléchargé les symboles séparément, suivez les étapes ci-dessous pour indiquer à Visual Studio où les trouver. Si vous avez installé les symboles par le biais du programme d’installation de Python 3.5 ou version ultérieure, Visual Studio les trouve alors automatiquement.
 
-1. Sélectionnez le menu **Outils**  >  **options** et naviguez jusqu’à symboles de **débogage**  >  **Symbols**.
+1. Sélectionnez le menu **Outils**  >  **options** et naviguez jusqu’à symboles de **débogage**  >  .
 
 1. Sélectionnez le bouton **Ajouter** dans la barre d’outils (illustrée ci-dessous), entrez le dossier où vous avez développé les symboles téléchargés (à savoir le dossier contenant *python.pdb*, par exemple le dossier *c:\python34\Symbols* illustré ci-dessous), puis sélectionnez **OK**.
 

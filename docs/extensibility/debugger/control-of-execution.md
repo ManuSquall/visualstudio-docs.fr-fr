@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b00e0529c1d2ac7224881067628618251ba03898
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930510"
 ---
 # <a name="control-of-execution"></a>Contrôle de l’exécution
 Le moteur de débogage (DE) envoie généralement l’un des événements suivants comme dernier événement de démarrage :
@@ -41,11 +41,11 @@ Le moteur de débogage (DE) envoie généralement l’un des événements suivan
 
 5. Si l’utilisateur choisit d’effectuer un pas à pas détaillé, au-dessus ou à l’extérieur d’une fonction, l’IDE invite la session de débogage à appeler la méthode du programme `Step` . L’IDE passe ensuite l’unité de l’étape (instruction, instruction ou ligne) et le type d’étape (s’il faut effectuer un pas à pas détaillé, au-dessus ou à l’extérieur de la fonction). Lorsque l’étape est terminée, le DE envoie un événement étape terminer à la session de débogage, qui est un événement d’arrêt.
 
-    - ou -
+    -ou-
 
     Si l’utilisateur choisit de continuer l’exécution à partir du pointeur d’instruction actuel, l’IDE invite la session de débogage à appeler la méthode **Execute** du programme. Le programme reprend l’exécution jusqu’à ce qu’il rencontre la prochaine condition d’arrêt.
 
-    - ou -
+    -ou-
 
     Si la session de débogage doit ignorer un événement d’arrêt particulier, la session de débogage appelle la méthode **continue** du programme. Si le programme a effectué un pas à pas détaillé, dépassé ou sortant d’une fonction lorsqu’il a rencontré la condition d’arrêt, il continue l’étape.
 

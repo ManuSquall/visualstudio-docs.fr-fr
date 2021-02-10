@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d712365cc296c54f0e5d1a58660df1051e2f20
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 4f3814eabb38e205acedd6bd2b00fd98901568c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931030"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Guide pratique pour créer un nuanceur de géométrie dégradé
 
@@ -29,21 +29,21 @@ Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boît
 
 1. Créez un nuanceur DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
-2. Déconnectez le nœud **Couleur du point** du nœud **Couleur finale** . Choisissez le terminal **RVB** du nœud **Couleur du point** , puis choisissez **Rompre les liaisons** . Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
+2. Déconnectez le nœud **Couleur du point** du nœud **Couleur finale**. Choisissez le terminal **RVB** du nœud **Couleur du point**, puis choisissez **Rompre les liaisons**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
 
-3. Ajouter un nœud **Multiplier** au graphique. Dans la **Boîte à outils** , sous **Math** , sélectionnez **Multiplier** et déplacez-le vers l’aire de conception.
+3. Ajouter un nœud **Multiplier** au graphique. Dans la **Boîte à outils**, sous **Math**, sélectionnez **Multiplier** et déplacez-le vers l’aire de conception.
 
-4. Ajoutez un nœud **Vecteur de masque** au graphique. Dans la **Boîte à outils** , sous **Utilitaire** , sélectionnez **Vecteur de masque** et déplacez-le vers l’aire de conception.
+4. Ajoutez un nœud **Vecteur de masque** au graphique. Dans la **Boîte à outils**, sous **Utilitaire**, sélectionnez **Vecteur de masque** et déplacez-le vers l’aire de conception.
 
-5. Spécifiez des valeurs de masque pour le nœud **Vecteur de masque** . En mode **Sélection** , sélectionnez le nœud **Vecteur de masque** , puis, dans la fenêtre **Propriétés** , définissez la propriété **Vert / Y** sur **True** , puis les propriétés **Rouge / X** , **Bleu / Z** et **Alpha / W** sur **False** . Dans cet exemple, les propriétés **Rouge / X** , **Vert / Y** et **Bleu / Z** correspondent aux composants x, y et z du nœud **Position universelle** , et la propriété **Alpha / W** n’est pas utilisée. Comme seule la propriété **Vert / Y** est définie sur **True** , seul le composant y du vecteur d’entrée demeure après le masquage.
+5. Spécifiez des valeurs de masque pour le nœud **Vecteur de masque**. En mode **Sélection**, sélectionnez le nœud **Vecteur de masque**, puis, dans la fenêtre **Propriétés**, définissez la propriété **Vert / Y** sur **True**, puis les propriétés **Rouge / X**, **Bleu / Z** et **Alpha / W** sur **False**. Dans cet exemple, les propriétés **Rouge / X**, **Vert / Y** et **Bleu / Z** correspondent aux composants x, y et z du nœud **Position universelle**, et la propriété **Alpha / W** n’est pas utilisée. Comme seule la propriété **Vert / Y** est définie sur **True**, seul le composant y du vecteur d’entrée demeure après le masquage.
 
-6. Ajoutez un nœud **Position universelle** au graphique. Dans la **Boîte à outils** , sous **Constantes** , sélectionnez **Position universelle** et déplacez-la vers l’aire de conception.
+6. Ajoutez un nœud **Position universelle** au graphique. Dans la **Boîte à outils**, sous **Constantes**, sélectionnez **Position universelle** et déplacez-la vers l’aire de conception.
 
-7. Masquez la position du fragment dans l’espace universel. En mode **Sélection** , déplacez le terminal **Sortie** du nœud **Position universelle** vers le terminal **Vecteur** du nœud **Vecteur de masque** . Cette connexion masque la position du fragment pour ignorer les composants x et z.
+7. Masquez la position du fragment dans l’espace universel. En mode **Sélection**, déplacez le terminal **Sortie** du nœud **Position universelle** vers le terminal **Vecteur** du nœud **Vecteur de masque**. Cette connexion masque la position du fragment pour ignorer les composants x et z.
 
-8. Multipliez la constante de couleur RVB par la position masquée dans l’espace universel. Déplacez le terminal **RVB** du nœud **Couleur du point** vers le terminal **Y** du nœud **Multiplier** , puis le terminal **Sortie** du nœud **Vecteur de masque** vers le terminal **X** du nœud **Multiplier** . Cette connexion met à l’échelle la valeur de couleur en fonction de la hauteur du pixel dans l’espace universel.
+8. Multipliez la constante de couleur RVB par la position masquée dans l’espace universel. Déplacez le terminal **RVB** du nœud **Couleur du point** vers le terminal **Y** du nœud **Multiplier**, puis le terminal **Sortie** du nœud **Vecteur de masque** vers le terminal **X** du nœud **Multiplier**. Cette connexion met à l’échelle la valeur de couleur en fonction de la hauteur du pixel dans l’espace universel.
 
-9. Connectez la valeur de couleur mise à l’échelle à la couleur finale. Déplacez le terminal **Sortie** du nœud **Multiplier** vers le terminal **RVB** du nœud **Couleur finale** .
+9. Connectez la valeur de couleur mise à l’échelle à la couleur finale. Déplacez le terminal **Sortie** du nœud **Multiplier** vers le terminal **RVB** du nœud **Couleur finale**.
 
 L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à une sphère.
 

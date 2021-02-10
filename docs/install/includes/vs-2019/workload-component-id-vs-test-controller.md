@@ -5,17 +5,17 @@ description: Utiliser les ID de composant et de charge de travail Visual Studio 
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f43addc5574bd377e60947710ddfc32f0aee263b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a7b882660ebaad05d8d24df6ce339c47590428e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932080"
 ---
 ## <a name="test-controller"></a>Test Controller
 

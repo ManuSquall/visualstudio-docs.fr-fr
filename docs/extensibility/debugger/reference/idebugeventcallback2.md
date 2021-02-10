@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a74825a955afdde03e63673c4b1b6afda5904953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe81a7d8a07a80f38e771e2cfbac3ec23da54b62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933360"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Cette interface est utilisée par le moteur de débogage (DE) pour envoyer des événements de débogage au gestionnaire de débogage de session (SDM).

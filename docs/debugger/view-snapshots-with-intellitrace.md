@@ -7,15 +7,15 @@ helpviewer_keywords:
 - IntelliTrace step-back
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 767181ce917e4cbef69001e07a018e20c89a01f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c21cfce692474c0d729db69f1e72c42ac6a0363e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65676432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933009"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>Afficher des captures instantanées avec le retour en arrière IntelliTrace (Visual Studio Enterprise) (C#, Visual Basic, C++)
 

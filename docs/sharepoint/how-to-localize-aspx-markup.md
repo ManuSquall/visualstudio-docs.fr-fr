@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 1876e06348d60f8a960b352525fd72ad06795101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931732"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Comment : localiser le balisage ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] les pages (. aspx) utilisent généralement des valeurs de chaîne codées en dur. Pour localiser ces chaînes, remplacez-les par des expressions qui référencent des ressources localisées.
@@ -62,7 +62,7 @@ ms.locfileid: "96304667"
     </asp:Content>
     ```
 
-     to
+     par
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
