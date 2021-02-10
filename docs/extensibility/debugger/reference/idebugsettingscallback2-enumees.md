@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19e0763ad74b3486b8bc2548ec129d9e95feb771
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af31c78058ffa0816a566a090288cb1e31c17b70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963027"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Énumère les évaluateurs d’expressions disponibles en fonction des identificateurs de langue et de fournisseur.
@@ -56,7 +56,7 @@ dans Nombre d’éléments dans la `pceltEEs` mémoire tampon.
 `pceltEEs`\
 [in, out] Tableau d’évaluateurs d’expression.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

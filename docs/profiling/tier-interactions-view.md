@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 350810bba477f5a86963862fb496cf05eaf2c810
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963183"
 ---
 # <a name="tier-interactions-view"></a>Interactions de couche (vue)
 
@@ -41,7 +41,7 @@ La vue Interactions affiche les données d’interaction de couche dans deux vol
 |Colonne|Description|
 |------------|-----------------|
 |**Nom**|- Pour une ligne de haut niveau, le nom de la page web ou du processus profilé.<br />- Pour une ligne de connexion de base de données, le nom du serveur qui héberge la base de données.|
-|**Base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|
+|**Sauvegarde de la base de données**|Nom de la base de données (lignes de connexion de base de données uniquement).|
 |**Count**|Nombre total de demandes qui sont générées par le processus, une page web ou une connexion de base de données.|
 |**Temps écoulé total**|Temps total passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|
 |**Temps écoulé max.**|Temps maximal passé dans l’exécution d’une demande provenant du processus, de la page web ou de la connexion de base de données.|

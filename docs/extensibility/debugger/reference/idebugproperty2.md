@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721228"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962195"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Cette interface représente une propriété de frame de pile, une propriété de document de programme ou une autre propriété. La propriété est généralement le résultat d’une évaluation d’expression.
@@ -58,7 +58,7 @@ IDebugProperty2 : IUnknown
 |[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Retourne la propriété qui décrit la propriété la plus dérivée d’une propriété.|
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Retourne les octets de mémoire qui composent la valeur d’une propriété.|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Retourne le contexte de la mémoire pour une valeur de propriété.|
-|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Retourne la taille, en octets, de la valeur de la propriété.|
+|[GetSize,](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Retourne la taille, en octets, de la valeur de la propriété.|
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Retourne une référence à la valeur de cette propriété.|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Retourne les informations étendues d’une propriété.|
 

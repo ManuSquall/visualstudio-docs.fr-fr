@@ -7,24 +7,24 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d2c7ec425767e432105bfcec493599197e2fd5ec
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962715"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
 npm vous permet d’installer et de gérer des packages pour une utilisation dans vos applications Node.js. Visual Studio simplifie l’interaction avec npm et l’exécution de commandes npm par le biais de l’interface utilisateur ou directement. Si vous ne connaissez pas npm et souhaitez en savoir plus, consultez la [documentation de npm](https://docs.npmjs.com/).
 
 L’intégration de Visual Studio à NPM est différente selon le type de votre projet.
-* [Node.js](#nodejs-projects)
+* [Node.JS](#nodejs-projects)
 * [ASP.NET Core](#aspnet-core-projects)
 * [Ouvrir le dossier (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
 

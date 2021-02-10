@@ -1,23 +1,23 @@
 ---
-title: Extraire la classe de base
+title: Extraire une classe de base
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8eb87ff8e3acc141c49a495b155fb769e03fb89b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8c389ac6285b3f20dcdf05833f1ff3202d155c4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962806"
 ---
-# <a name="extract-base-class"></a>Extraire la classe de base
+# <a name="extract-base-class"></a>Extraire une classe de base
 
 Cette refactorisation s’applique à :
 

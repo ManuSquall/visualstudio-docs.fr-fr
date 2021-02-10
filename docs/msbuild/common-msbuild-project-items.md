@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: cd43be13351309e0f4715ee889fb910f4f7e49a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963196"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 
@@ -32,7 +32,7 @@ Dans MSBuild, un élément est une référence nommée à un ou plusieurs fichie
 
 Voici une liste de tous les éléments de projet communs.
 
-### <a name="reference"></a>Informations de référence
+### <a name="reference"></a>Référence
 
 Représente une référence (managée) d'assembly dans le projet.
 
@@ -43,7 +43,7 @@ Représente une référence (managée) d'assembly dans le projet.
 |FusionName|Chaîne facultative. Spécifie le nom de fusion simple ou fort de l'élément.<br /><br /> La présence de cet attribut peut faire gagner du temps, car il vous évite d'ouvrir le fichier d'assembly pour obtenir le nom de fusion.|
 |SpecificVersion|Valeur booléenne facultative. Indique si seule la version figurant dans le nom de fusion doit être référencée.|
 |Alias|Chaîne facultative. Alias éventuels de la référence.|
-|Privé|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
+|Blockchain privée|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -91,7 +91,7 @@ Représente une référence à un autre projet. `ProjectReference` les élément
 |SetPlatform|Chaîne facultative. Définit la propriété globale `Platform` pour le projet référencé, par exemple `Platform=AnyCPU` .|
 |SetTargetFramework|Chaîne facultative. Définit la propriété globale `TargetFramework` pour le projet référencé, par exemple `TargetFramework=netstandard2.0` .|
 |SkipGetTargetFrameworkProperties|Valeur booléenne facultative. Si `true` , génère le projet référencé sans négocier la valeur la plus compatible `TargetFramework` . La valeur par défaut est `false`.|
-|Cibles|`string[]` optionnel. Liste de cibles séparées par des points-virgules dans les projets référencés qui doivent être générés. La valeur par défaut est la valeur `$(ProjectReferenceBuildTargets)` qui est vide par défaut, ce qui indique les cibles par défaut.|
+|Targets|`string[]` optionnel. Liste de cibles séparées par des points-virgules dans les projets référencés qui doivent être générés. La valeur par défaut est la valeur `$(ProjectReferenceBuildTargets)` qui est vide par défaut, ce qui indique les cibles par défaut.|
 
 ### <a name="compile"></a>Compiler
 
@@ -157,7 +157,7 @@ Représente les attributs d’assembly à générer comme `[AssemblyMetadata(key
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | Inclure | Devient le premier paramètre (la clé) dans le `AssemblyMetadataAttribute` constructeur d’attribut. |
-| Value | Chaîne obligatoire. Devient le deuxième paramètre (la valeur) dans le `AssemblyMetadataAttribute` constructeur d’attribut. |
+| Valeur | Chaîne obligatoire. Devient le deuxième paramètre (la valeur) dans le `AssemblyMetadataAttribute` constructeur d’attribut. |
 
 > [!NOTE]
 > Cet élément s’applique aux projets qui utilisent le kit de développement logiciel (SDK) pour .NET 5 (et .NET Core) et versions ultérieures.
@@ -169,7 +169,7 @@ Spécifie les assemblys à émettre en tant qu' `[InternalsVisibleTo(..)]` attri
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | Inclure | Nom de l'assembly. |
-| Clé : | Chaîne facultative. Clé publique de l’assembly. |
+| Clé | Chaîne facultative. Clé publique de l’assembly. |
 
 > [!NOTE]
 > Cet élément s’applique aux projets qui utilisent le kit de développement logiciel (SDK) pour .NET 5 (et .NET Core) et versions ultérieures.

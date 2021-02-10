@@ -6,13 +6,13 @@ ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+manager: jmartens
+ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962312"
 ---
 # <a name="xaml-code-editor"></a>Éditeur de code XAML
 
@@ -116,7 +116,7 @@ Vous pouvez également accéder à cette fonctionnalité à partir de la barre d
 
 Pour plus d’informations sur l’utilisation des paramètres, consultez la page trier les données [using](../ide/reference/sort-usings.md) . Pour plus d’informations sur IntelliSense, consultez la page [IntelliSense dans Visual Studio](../ide/using-intellisense.md) . Et, pour plus d’informations sur les façons courantes pour les développeurs d’utiliser des actions rapides, consultez la page [actions rapides communes](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>Change tracking
+#### <a name="change-tracking"></a>Suivi des modifications
 
 La couleur de la marge de gauche vous permet de conserver une trace des modifications effectuées dans un fichier. Voici comment les couleurs sont liées aux actions que vous effectuez :
 
@@ -277,17 +277,17 @@ Vous pouvez utiliser la boîte de dialogue [options](../ide/reference/options-di
 
 Dans la boîte de dialogue [options](../ide/reference/options-text-editor-xaml-formatting.md) pour XAML, les trois premiers éléments suivants sont universels pour tous les langages de programmation pris en charge par l’IDE de Visual Studio. Consultez les informations liées dans le tableau suivant pour en savoir plus sur ces options et leur utilisation.
 
-|Name  |Plus d’informations  |
+|Nom  |En savoir plus  |
 |---------|---------|
 |Général  | [Boîte de dialogue Options : éditeur de texte > tous les langages](../ide/reference/options-text-editor-all-languages.md) |
 |Barres de défilement | [Options, Éditeur de texte, Tous les langages, Barres de défilement](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
-|Tabulations  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
+|Onglets  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
 
 ### <a name="xaml-specific-text-editor-options"></a>Options de l’éditeur de texte spécifique à XAML
 
 Le tableau suivant répertorie les paramètres de la boîte de dialogue [options](../ide/reference/options-text-editor-xaml-formatting.md) qui peuvent améliorer votre expérience de modification lorsque vous développez des applications basées sur XAML. Visitez les informations liées pour en savoir plus sur ces options et leur utilisation.
 
-|Name  |Plus d’informations  |
+|Nom  |En savoir plus  |
 |---------|---------|
 |Mise en forme | [Options, Éditeur de texte, XAML, Mise en forme](../ide/reference/options-text-editor-xaml-formatting.md) |
 |Divers |  [Options, Éditeur de texte, XAML, Divers](../ide/reference/options-text-editor-xaml-miscellaneous.md) |

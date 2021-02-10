@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 31ad1fbdf44283a0dc7f5f6374299aab27303db1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960258"
 ---
 # <a name="report-based-on-visible-time-range"></a>Rapport basé sur une plage horaire visible
 La vue Profil affiche des rapports basés sur l’intervalle de temps et les canaux actuellement visibles. Pour plus de détails sur les différents sous-ensembles de données, cliquez sur les éléments dans la légende.

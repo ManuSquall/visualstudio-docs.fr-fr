@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3627a8944941fc77bb9b19fe3dd0a1549f41892a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961584"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Décider où s’exécute le code R avec des espaces de travail
 
@@ -29,20 +29,20 @@ Dans cette fenêtre, la coche verte indique l’espace de travail actif auquel R
 
 Par défaut, RTVS n’enregistre pas l’état de l’espace de travail quand vous fermez et rouvrez un projet. Vous pouvez changer ce comportement dans les [Options d’espace de travail](options-for-r-tools-in-visual-studio.md#workspace).
 
-La **R Tools**  >  **Session**  >  commande de**réinitialisation** de session outils R et le bouton Réinitialiser de la barre d’outils dans la fenêtre interactive réinitialisent également l’état de l’espace de travail à tout moment. Dans le cas d’espaces de travail distants, une réinitialisation supprime le profil utilisateur créé lors de la première connexion au serveur distant, ce qui supprime tous les fichiers stockés à cet endroit.
+La   >    >  commande de **réinitialisation** de session outils R et le bouton Réinitialiser de la barre d’outils dans la fenêtre interactive réinitialisent également l’état de l’espace de travail à tout moment. Dans le cas d’espaces de travail distants, une réinitialisation supprime le profil utilisateur créé lors de la première connexion au serveur distant, ce qui supprime tous les fichiers stockés à cet endroit.
 
 ## <a name="local-workspaces"></a>Espaces de travail locaux
 
 La liste des espaces de travail locaux affiche tous les interpréteurs R que vous avez installés sur votre ordinateur.
 
-Lorsque Visual Studio démarre, il tente de détecter automatiquement toutes les versions de R que vous avez installées en examinant la clé de Registre **HKEY_LOCAL_MACHINE \software\r-Core \\ ** . Comme cette vérification est effectuée uniquement au démarrage, vous devez redémarrer Visual Studio si vous installez un nouvel interpréteur R.
+Au démarrage de Visual Studio, il tente de détecter automatiquement toutes les versions de R que vous avez installées en examinant la clé de Registre **HKEY_LOCAL_MACHINE\Software\R-Core\\** . Comme cette vérification est effectuée uniquement au démarrage, vous devez redémarrer Visual Studio si vous installez un nouvel interpréteur R.
 
 RTVS peut ne pas détecter un interpréteur R installé de manière non standard (par exemple, quand vous copiez simplement des fichiers dans un dossier au lieu d’exécuter un programme d’installation). Dans ce cas, créez manuellement un nouvel espace de travail R local comme suit :
 
 1. Sélectionnez le bouton **Ajouter** dans la fenêtre Espaces de travail.
 1. Entrez un nom pour le nouvel espace de travail.
 1. Entrez le chemin du dossier racine R, qui est celui qui contient le dossier *bin* avec l’interpréteur, ainsi que les arguments de ligne de commande facultatifs à passer à l’interpréteur au démarrage de RTVS.
-1. Sélectionnez **Enregistrer** lorsque vous avez terminé.
+1. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
 
 ![Ajout d’un nouvel espace de travail](media/workspaces-add-new.png)
 
@@ -77,7 +77,7 @@ RTVS est lié à un seul espace de travail à la fois. L’espace de travail li�
 Pour changer l’espace de travail actif, sélectionnez la flèche bleue à côté de l’espace de travail de votre choix. Vous êtes alors invité à enregistrer votre session, l’espace de travail actuel se ferme et vous basculez sur le nouvel espace de travail.
 
 > [!Tip]
-> Pour désactiver l’invite d’enregistrement, sélectionnez la commande **Outils R**,  >  **Options** puis activez la case à cocher **afficher la boîte de dialogue de confirmation avant de changer d’espace de travail** `No` . Consultez [Options de l’espace de travail](options-for-r-tools-in-visual-studio.md#workspace).
+> Pour désactiver l’invite d’enregistrement, sélectionnez la commande **Outils R**,  >   puis activez la case à cocher **afficher la boîte de dialogue de confirmation avant de changer d’espace de travail** `No` . Consultez [Options de l’espace de travail](options-for-r-tools-in-visual-studio.md#workspace).
 
 Si vous essayez de basculer vers un espace de travail local qui a été désinstallé ou un espace de travail distant non disponible, il est possible que RTVS ne soit lié à aucun espace de travail. Par conséquent, vous pouvez obtenir une erreur quand vous entrez du code dans la fenêtre interactive ou tentez d’exécuter le code d’une autre façon :
 
@@ -99,13 +99,13 @@ Toutefois, cet avertissement s’affiche également si un *certificat auto-sign�
 
 ## <a name="directories-on-local-and-remote-computers"></a>Répertoires sur des ordinateurs locaux et distants
 
-Par défaut, quand vous démarrez un nouvel interpréteur R dans un espace de travail local, votre répertoire de travail actuel est *%userprofile%\Documents*. Vous pouvez modifier le répertoire à tout moment à **R Tools**l’aide des commandes du  >  **Répertoire de travail** outils R ou en cliquant avec le bouton droit sur un projet dans Visual Studio Explorateur de solutions et en sélectionnant des commandes telles que **définir le répertoire de travail ici**.
+Par défaut, quand vous démarrez un nouvel interpréteur R dans un espace de travail local, votre répertoire de travail actuel est *%userprofile%\Documents*. Vous pouvez modifier le répertoire à tout moment à l’aide des commandes du  >  **Répertoire de travail** outils R ou en cliquant avec le bouton droit sur un projet dans Visual Studio Explorateur de solutions et en sélectionnant des commandes telles que **définir le répertoire de travail ici**.
 
-Lors de votre première connexion à un ordinateur distant, RTVS crée automatiquement un profil utilisateur d’après vos informations d’identification, ce qui permet de définir le répertoire de travail sur le dossier * Documents* sous ce profil. Ce dossier est utilisé pour toutes les sessions à distance suivantes qui utilisent les mêmes informations d’identification.
+Lors de votre première connexion à un ordinateur distant, RTVS crée automatiquement un profil utilisateur d’après vos informations d’identification, ce qui permet de définir le répertoire de travail sur le dossier *Documents* sous ce profil. Ce dossier est utilisé pour toutes les sessions à distance suivantes qui utilisent les mêmes informations d’identification.
 
 Par conséquent, l’endroit exact où s’exécute votre code peut différer entre les espaces de travail locaux et distants. Dans votre code, utilisez donc toujours des chemins relatifs vers les fichiers de données de sorte que votre code soit portable entre les espaces de travail.
 
-Notez également qu’avec les espaces de travail distants, tous les fichiers du répertoire de travail restent en place entre les sessions pour le même profil utilisateur. Comme indiqué précédemment, vous pouvez supprimer ces fichiers à l’aide **R Tools**de la commande de  >  **Session**  >  **réinitialisation** de session des outils R (ou du bouton Réinitialiser dans la fenêtre interactive) lors de l’utilisation d’un espace de travail distant. Cette commande supprime à nouveau le profil utilisateur du serveur, qui est recréé quand vous vous reconnectez.
+Notez également qu’avec les espaces de travail distants, tous les fichiers du répertoire de travail restent en place entre les sessions pour le même profil utilisateur. Comme indiqué précédemment, vous pouvez supprimer ces fichiers à l’aide de la commande de  >    >  **réinitialisation** de session des outils R (ou du bouton Réinitialiser dans la fenêtre interactive) lors de l’utilisation d’un espace de travail distant. Cette commande supprime à nouveau le profil utilisateur du serveur, qui est recréé quand vous vous reconnectez.
 
 ## <a name="copy-project-files-to-remote-workspaces"></a>Copier des fichiers projet dans des espaces de travail distants
 
