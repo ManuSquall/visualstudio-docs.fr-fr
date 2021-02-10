@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941838"
 ---
 # <a name="field_info"></a>FIELD_INFO
 Cette structure décrit une variable locale, un paramètre ou un autre champ.
@@ -66,7 +66,7 @@ Combinaison d’indicateurs de l’énumération [FIELD_MODIFIERS](../../../exte
 ## <a name="remarks"></a>Notes
 Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) où elle est remplie.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : SH. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop
