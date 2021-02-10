@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Unload method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1ec01ebc32472e315fe2c905ecfd2cfef0f4bbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a36599259a38d0b9b8eb814a457b3625d593b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934596"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   Appelée juste avant qu’un complément VSTO managé soit déchargé.
@@ -28,7 +28,7 @@ ms.locfileid: "85541009"
 HRESULT Unload();
 ```
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur de retour
  Valeur HRESULT qui indique si la méthode a réussi.
 
 ## <a name="remarks"></a>Notes

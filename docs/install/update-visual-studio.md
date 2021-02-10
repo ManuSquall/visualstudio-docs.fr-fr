@@ -14,15 +14,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01bc8fe18ff32d5da3f56eb39465b3fc696239b4
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935714"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -182,7 +182,7 @@ Voici comment mettre à jour Visual&nbsp;Studio&nbsp;2019.
 
    Dans le menu Démarrer de Windows, vous pouvez rechercher « programme d’installation ».
 
-   ![Programme d’installation de Visual Studio](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
+   ![Visual Studio Installer](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
 
    Vous devrez peut-être mettre à jour le programme d’installation avant de continuer. Dans ce cas, suivez les invites.
 
@@ -206,7 +206,7 @@ Voici comment mettre à jour Visual&nbsp;Studio&nbsp;2019.
 
 Pour rechercher une mise à jour et l’installer, vous pouvez utiliser la barre de menus ou la zone de recherche dans Visual Studio 2019.
 
-### <a name="open-visual-studio"></a>Ouvrir Visual Studio
+### <a name="open-visual-studio"></a>Ouvrez Visual Studio.
 
 1. Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019**.
 
@@ -275,7 +275,7 @@ Il existe deux modes d’installation au choix :
 
 Vous pouvez également choisir le paramètre **Télécharger automatiquement les mises à jour**, qui autorise le téléchargement des mises à jour à télécharger alors que votre ordinateur est inactif.
 
-Voici comment faire :
+Voici comment procéder :
 
 1. Dans la barre de menus, choisissez **Outils** > **Options**.
 

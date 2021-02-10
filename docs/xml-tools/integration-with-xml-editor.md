@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9569e33f8f9f861bc5d89030c6fe38b0ab853a6f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9fe1bfcd422dbfc5f010ae7819e2fccbeafb8227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934622"
 ---
 # <a name="integration-with-xml-editor"></a>Intégration avec l’éditeur XML
 
@@ -23,7 +23,7 @@ Le concepteur de schémas XML est intégré à l’éditeur XML. Si vous modifie
 
 - Dans l’éditeur XML, cliquez avec le bouton droit sur un nœud et sélectionnez **afficher dans l’Explorateur de schémas XML**.
 
-- Dans la vue du graphique et l' **Explorateur de schémas XML** , double-cliquez sur un nœud, ou cliquez avec le bouton droit sur un nœud et sélectionnez **afficher le code**. Dans la vue de modèle de contenu, cliquez avec le bouton droit sur un nœud et sélectionnez **afficher le code**.
+- Dans la vue du graphique et l' **Explorateur de schémas XML**, double-cliquez sur un nœud, ou cliquez avec le bouton droit sur un nœud et sélectionnez **afficher le code**. Dans la vue de modèle de contenu, cliquez avec le bouton droit sur un nœud et sélectionnez **afficher le code**.
 
 La capture d’écran suivante montre un schéma XML ouvert dans l' **Explorateur de schémas XML**. L' **Explorateur de schémas XML** affiche le jeu de schémas dans une arborescence. L’éditeur XML affiche la vue de texte du nœud qui est actuellement actif dans l' **Explorateur de schémas XML**.
 

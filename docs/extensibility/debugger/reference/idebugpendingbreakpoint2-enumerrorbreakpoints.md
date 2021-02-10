@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11caf8c2af92a14e001d7403f2457f0fc66ff3ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34336c51d51c50f6dee7239a38588f36c935edbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934349"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 Obtient une liste de tous les points d’arrêt d’erreur qui résultent de ce point d’arrêt en attente.
@@ -29,14 +29,14 @@ Obtient une liste de tous les points d’arrêt d’erreur qui résultent de ce 
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumErrorBreakpoints( 
+HRESULT EnumErrorBreakpoints( 
    BP_ERROR_TYPE                 bpErrorType,
    IEnumDebugErrorBreakpoints2** ppEnum
 );
 ```
 
 ```csharp
-int EnumErrorBreakpoints( 
+int EnumErrorBreakpoints( 
    enum_BP_ERROR_TYPE              bpErrorType,
    out IEnumDebugErrorBreakpoints2 ppEnum
 );
@@ -49,7 +49,7 @@ dans Combinaison de valeurs de l’énumération [BP_ERROR_TYPE](../../../extens
 `ppEnum`\
 à Retourne un objet [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) qui contient une liste d’objets [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="example"></a>Exemple

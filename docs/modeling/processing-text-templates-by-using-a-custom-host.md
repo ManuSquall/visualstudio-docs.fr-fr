@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b1a4e4c2177e388db1de0b42fe10d92daa1a3e67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934908"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Traiter des modèles de texte à l’aide d’un hôte personnalisé
 
@@ -55,7 +55,7 @@ string output = engine.ProcessTemplate(templateString, host);
 ## <a name="in-this-section"></a>Dans cette section
  [Procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md) Montre comment créer un hôte de modèle de texte personnalisé qui rend la fonctionnalité de modèle de texte disponible en dehors de Visual Studio.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Sections connexes

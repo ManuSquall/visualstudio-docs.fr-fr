@@ -8,15 +8,15 @@ helpviewer_keywords:
 - tests and requirements
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e4884ec4eb3e316e22e4ba54cd8defe71d4b8018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935168"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
@@ -133,7 +133,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Attacher des cas de test à des éléments de modèle
  Si votre projet utilise [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.
 
- Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :
+ Vous pouvez lier des tests à tous les types d'éléments. En voici quelques exemples :
 
 - Lier un cas d'usage aux tests qui l'utilisent.
 

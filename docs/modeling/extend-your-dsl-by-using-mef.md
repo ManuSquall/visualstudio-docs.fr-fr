@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935064"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
 
@@ -131,7 +131,7 @@ Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’u
 
    - Cet assembly a généralement un nom qui se termine par « .Dsl.dll ».
 
-   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le répertoire ** \\ DSL \\ \* bin* _
+   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le **répertoire \\ DSL \\ \* bin** .
 
    - Si vous avez accès au fichier VSIX DSL, vous pouvez trouver l’assembly en remplaçant l’extension de nom de fichier du fichier VSIX par « . zip ». Décompressez le fichier. zip.
 
@@ -147,7 +147,7 @@ Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’u
 
    - System.Windows.Forms.dll
 
-4. Créez un projet _ *VSIX Project**.
+4. Créez un projet de **projet VSIX** .
 
 5. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet VSIX, puis choisissez **définir comme projet de démarrage**.
 
@@ -159,11 +159,11 @@ Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’u
 
    1. Dans **source. extension. vsixmanifest**, cliquez sur **Ajouter une référence** .
 
-   2. Dans la boîte de dialogue, cliquez sur **Ajouter une charge utile** , puis recherchez le fichier VSIX du DSL. Le fichier VSIX est créé dans la solution DSL, dans **DslPackage \\ bin \\ \** _.
+   2. Dans la boîte de dialogue, cliquez sur **Ajouter une charge utile** , puis recherchez le fichier VSIX du DSL. Le fichier VSIX est créé dans la solution DSL, dans **DslPackage \\ bin \\ \***.
 
        Cela permet aux utilisateurs d’installer le DSL et votre extension en même temps. Si l’utilisateur a déjà installé le DSL, seule votre extension sera installée.
 
-9. Examinez et mettez à jour les autres champs de _ * source. extension. vsixmanifest * *. Cliquez sur **Sélectionner des éditions** et vérifiez que les éditions de Visual Studio appropriées sont définies.
+9. Passez en revue et mettez à jour les autres champs de **source. extension. vsixmanifest**. Cliquez sur **Sélectionner des éditions** et vérifiez que les éditions de Visual Studio appropriées sont définies.
 
 10. Ajoutez du code au projet de bibliothèque de classes. Utilisez les exemples de la section suivante comme guide.
 

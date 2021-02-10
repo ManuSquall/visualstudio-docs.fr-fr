@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935532"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personnaliser le stockage de fichiers et la sérialisation XML
 
@@ -275,11 +275,11 @@ Ces éléments se trouvent dans l’Explorateur DSL sous **sérialisation XML Be
 |Classe de domaine|Classe de domaine à laquelle ce nœud de données de classe s’applique. Lecture seule.|
 |Nom de l’élément|Nom de nœud XML pour les éléments de cette classe. La valeur par défaut est une version en minuscules du nom de classe de domaine.|
 |Nom d’attribut de moniker|Nom de l’attribut utilisé dans les éléments moniker pour contenir la référence. Si vide, le nom de la propriété ou l'identificateur de clé est utilisé.<br /><br /> Dans cet exemple, il s’agit de « Name » :  `<personMoniker name="/Mike Nash"/>`|
-|Nom de l’élément moniker|Nom de l’élément XML utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscules du nom de classe avec le suffixe « moniker ». Par exemple, `personMoniker`.|
+|Nom de l’élément moniker|Nom de l’élément XML utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscules du nom de classe avec le suffixe « moniker ». Par exemple : `personMoniker`.|
 |Nom de type de moniker|Nom du type XSD généré pour les monikers aux éléments de cette classe. Le schéma XSD se trouve dans **Dsl\Generated code \\ \* Schema. xsd**|
 |ID de sérialisation|Si la valeur est true, le GUID de l’élément est inclus dans le fichier. Cela doit avoir la valeur true s’il n’y a aucune propriété marquée comme **clé de moniker** et que la DSL définit des relations de référence à cette classe.|
 |Nom de type|Nom du type XML généré dans XSD à partir de la classe de domaine indiquée.|
-|Remarques|Notes informelles associées à cet élément|
+|Notes|Notes informelles associées à cet élément|
 
 ### <a name="xml-property-data"></a>Données de propriété XML
 
@@ -292,7 +292,7 @@ Les nœuds de propriété XML se trouvent sous les nœuds de classe.
 |Qualificateur de moniker|Si la valeur est True, la propriété est utilisée pour créer le qualificateur dans les monikers. Si la valeur est false et si SerializeId n’a pas la valeur true pour cette classe de domaine, les monikers sont qualifiés par le moniker de l’élément parent dans l’arborescence d’incorporation.|
 |Représentation|Si Attribute, la propriété est sérialisée en tant qu'attribut XML ; si Element, elle est sérialisée en tant qu'élément ; si Ignore, elle n'est pas sérialisée.|
 |Nom XML|Nom utilisé pour l'attribut ou l'élément XML représentant la propriété. Par défaut, il s’agit d’une version en minuscules du nom de la propriété de domaine.|
-|Remarques|Notes informelles associées à cet élément|
+|Notes|Notes informelles associées à cet élément|
 
 ### <a name="xml-role-data"></a>Données de rôle XML
 

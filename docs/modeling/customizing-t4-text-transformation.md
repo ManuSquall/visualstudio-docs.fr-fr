@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b168e0e66b7704c3e78a241f76ee4122278c9ed
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4565e710d1b3172507cb3f966cd2a920d3b3aaa8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935402"
 ---
 # <a name="customize-t4-text-transformation"></a>Personnaliser une transformation de texte T4
 
@@ -35,6 +35,6 @@ Les modèles de texte sont une fonctionnalité de Visual Studio qui vous permet 
 
  Si vous écrivez une extension Visual Studio, envisagez d’utiliser le service de transformation de texte existant au lieu d’écrire votre propre hôte. Pour plus d’informations, consultez [appel de la transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 
 - L' [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md) fournit la syntaxe des directives et des blocs de contrôle de modèle de texte.

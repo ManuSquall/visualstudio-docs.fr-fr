@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: john-hart
 ms.author: JohnHart
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d7b500caacf320df599843e45cc4e93b4f3e69
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 5a6f7c2c8d6c79270df94c100bbd4625856efa15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94441318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934505"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>Déployer une application de bureau Windows .NET à l’aide de ClickOnce
 
@@ -27,7 +27,7 @@ ms.locfileid: "94441318"
 
 ## <a name="publishing-with-clickonce"></a>Publication avec ClickOnce
 
-1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier** ).
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
     ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-clickonce-solution-explorer.png "Choisir Publier")
 

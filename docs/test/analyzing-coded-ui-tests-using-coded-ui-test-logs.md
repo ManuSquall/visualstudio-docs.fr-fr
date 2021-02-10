@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 41863ccc845b0f74c300e927708e238193f223ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934856"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur
 
@@ -40,7 +40,7 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
       <add name="EqtTraceLevel" value="4" />
       ```
 
-   3. Enregistrez le fichier.
+   3. Enregistrez le fichier .
 
 - S’il y a un fichier *App.config* présent dans votre projet de test :
 
@@ -73,7 +73,7 @@ Quand vous exécutez un test codé de l’interface utilisateur avec les modific
      Les tests automatisés s’exécutent, puis un message indique s’ils sont une réussite ou un échec.
 
     > [!TIP]
-    > Pour afficher l' **Explorateur de tests**, choisissez fenêtres **test**  >  **Windows**, puis **Explorateur de tests**.
+    > Pour afficher l' **Explorateur de tests**, choisissez fenêtres **test**  >  , puis **Explorateur de tests**.
 
 4. Choisissez le lien **Sortie** dans les résultats de l’**Explorateur de tests**.
 

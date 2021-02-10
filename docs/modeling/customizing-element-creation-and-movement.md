@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 01867bf4c5d3e9c60ad4a2ba0ed76c45eca055c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935584"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 
@@ -232,7 +232,7 @@ Dans le code de fusion personnalisé, vous pouvez définir ce qui se produit lor
 
 5. Inspectez le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherchez des méthodes nommées `MergeRelate` et examinez leur contenu. Cela vous aidera à écrire vos propres versions.
 
-6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la `MergeRelate` méthode. N’oubliez pas d’appeler la méthode de base. Exemple :
+6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la `MergeRelate` méthode. N’oubliez pas d’appeler la méthode de base. Par exemple :
 
     ```csharp
     partial class ExampleModel

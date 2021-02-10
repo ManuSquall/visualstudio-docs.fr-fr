@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4ada7beb72c27594b637b2c090c96581d4a6eb49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934570"
 ---
 # <a name="how-to-use-xml-snippets"></a>Comment : utiliser des extraits XML
 
@@ -104,7 +104,7 @@ Les procédures suivantes décrivent comment accéder à la commande **surround*
 
 Une fois que vous avez choisi un extrait XML, le texte de cet extrait de code est automatiquement inséré à l'emplacement du curseur. Tous les champs modifiables contenus dans l'extrait sont surlignés et le premier de ces champs est automatiquement sélectionné. Le champ actuellement sélectionné est encadré.
 
-Après avoir sélectionné un champ, vous pouvez y entrer une nouvelle valeur. La pression sur la touche **Tab** parcourt les champs modifiables de l’extrait de code. en appuyant sur la **touche Maj** + **Tab** , vous les Parcourez dans l’ordre inverse. Cliquer dans un champ place le curseur dans ce champ ; double-cliquer sur un champ permet de le sélectionner. Lorsqu'un champ est en évidence, une info-bulle peut s'afficher pour le décrire.
+Après avoir sélectionné un champ, vous pouvez y entrer une nouvelle valeur. La pression sur la touche **Tab** parcourt les champs modifiables de l’extrait de code. en appuyant sur la **touche Maj** +  , vous les Parcourez dans l’ordre inverse. Cliquer dans un champ place le curseur dans ce champ ; double-cliquer sur un champ permet de le sélectionner. Lorsqu'un champ est en évidence, une info-bulle peut s'afficher pour le décrire.
 
 Seule la première instance d'un champ donné est modifiable. Lorsque ce champ est surligné, les autres instances du même champ sont mises en évidence. Lorsque vous modifiez la valeur d'un champ modifiable, ce champ change partout où il est utilisé dans l'extrait.
 

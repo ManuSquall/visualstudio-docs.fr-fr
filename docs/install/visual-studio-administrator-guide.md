@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935610"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -40,11 +40,11 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***options de support pour les entreprises et les clients professionnels** _ de la page [cycle de vie et maintenance du produit Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , ainsi que la page [mise à jour de Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***options de support pour les entreprises et les clients professionnels*** de la page [cycle de vie et maintenance du produit Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , ainsi que la page [mettre à jour Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 
-_ Décider du modèle de mise à jour.
+* Choisissez le modèle de mise à jour.
 
   D’où doivent provenir les mises à jour pour les machines clientes ? Concrètement, déterminez si vous voulez obtenir les mises à jour d’Internet ou d’un partage local à l’échelle de l’entreprise. Ensuite, si vous choisissez d’utiliser un partage local, décidez si chaque utilisateur doit pouvoir mettre à jour son propre client ou si vous voulez qu’un administrateur mette à jour les clients par programmation.
 
@@ -66,11 +66,11 @@ _ Décider du modèle de mise à jour.
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***prise en charge des versions antérieures de Visual Studio** _ de la page de [maintenance et du cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , ainsi que la page [mise à jour de Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***prise en charge des versions antérieures de Visual Studio*** dans la page de [maintenance et de cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , ainsi que la page [mise à jour de Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 
-_ Décider du modèle de mise à jour.
+* Choisissez le modèle de mise à jour.
 
   D’où doivent provenir les mises à jour pour les machines clientes ? Concrètement, déterminez si vous voulez obtenir les mises à jour d’Internet ou d’un partage local à l’échelle de l’entreprise. Ensuite, si vous choisissez d’utiliser un partage local, décidez si chaque utilisateur doit pouvoir mettre à jour son propre client ou si vous voulez qu’un administrateur mette à jour les clients par programmation.
 

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935415"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API d’immuabilité du kit de développement logiciel (SDK) de visualisation et de modélisation de Visual Studio permet à un programme de verrouiller tout ou partie d’un modèle de langage spécifique à un domaine (DSL) afin qu’il puisse être lu mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, pour qu’un utilisateur puisse demander aux collègues d’annoter et de passer en revue un modèle DSL, mais peut les empêcher de modifier l’original.
@@ -83,7 +83,7 @@ partition.SetLocks(Locks.Delete);
 |Propriété|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
 |Ajouter|Impossible de créer des éléments et des liens dans une partition ou un magasin.<br /><br /> Non applicable à `ModelElement` .|
 |Déplacer|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true, ou si `targetPartition.IsLocked(Move)` a la valeur true.|
-|Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur l’un des éléments dans lequel la suppression se propage, comme des éléments et des formes incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour déterminer si un élément peut être supprimé.|
+|DELETE|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur l’un des éléments dans lequel la suppression se propage, comme des éléments et des formes incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour déterminer si un élément peut être supprimé.|
 |Réorganiser|L’ordre des liens au niveau d’un rolePlayer ne peut pas être modifié.|
 |RolePlayer|L’ensemble de liens qui sont associés à cet élément ne peut pas être modifié. Par exemple, les nouveaux éléments ne peuvent pas être incorporés sous cet élément. Cela n’affecte pas les liens pour lesquels cet élément est la cible.<br /><br /> Si cet élément est un lien, sa source et sa cible ne sont pas affectées.|
 |Tous|Or au niveau du bit des autres valeurs.|

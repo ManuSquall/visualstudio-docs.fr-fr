@@ -5,17 +5,17 @@ ms.date: 12/13/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: cec6a19d525f89b5ca8873344d3dce9c830fd4c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935688"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>En savoir plus sur l’utilisation de l’éditeur de code pour JavaScript
 
@@ -125,4 +125,4 @@ Vous pouvez consulter les extraits de code disponibles pour votre langage en cho
 - [mode Plan](../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../ide/refactoring-in-visual-studio.md)
-- [Utilisez IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)

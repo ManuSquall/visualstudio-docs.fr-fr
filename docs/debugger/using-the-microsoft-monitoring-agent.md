@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16c0655cdd55a1825f0a872ef013392bc9e5db79
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: aee937b382e3fa4731516c05acf46276d3059e8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934544"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Utilisation de l’Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -79,7 +79,7 @@ ms.locfileid: "98150104"
 3. [Visitez TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) pour obtenir le contenu d’aide le plus récent.
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> Q : Comment faire définir des autorisations pour le pool d’applications ?
- **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Exemple :
+ **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Par exemple :
 
 - Pour définir des autorisations avec la commande Windows **icacls** :
 
@@ -136,7 +136,7 @@ ms.locfileid: "98150104"
 
     |Nom|Description|
     |-|-|
-    |*"\<appName>"*|Spécifiez le chemin d’accès au site web et le nom de l’application web dans IIS. Vous pouvez également inclure le chemin d’accès à IIS, si vous le souhaitez.<br /><br /> *« \<IISWebsiteName> \\<IISWebAppName \> »*<br /><br /> -ou-<br /><br /> **« IIS : \ sites** *\\<IISWebsiteName \> \\<IISWebAppName \> »*<br /><br /> Ce chemin d’accès est indiqué dans le Gestionnaire des services IIS. Exemple :<br /><br /> ![Chemin d'accès vers le site web IIS et l'application web](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Vous pouvez aussi utiliser les commandes [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) et [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) .|
+    |*"\<appName>"*|Spécifiez le chemin d’accès au site web et le nom de l’application web dans IIS. Vous pouvez également inclure le chemin d’accès à IIS, si vous le souhaitez.<br /><br /> *« \<IISWebsiteName> \\<IISWebAppName \> »*<br /><br /> -ou-<br /><br /> **« IIS : \ sites** *\\<IISWebsiteName \> \\<IISWebAppName \> »*<br /><br /> Ce chemin d’accès est indiqué dans le Gestionnaire des services IIS. Par exemple :<br /><br /> ![Chemin d'accès vers le site web IIS et l'application web](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Vous pouvez aussi utiliser les commandes [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) et [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) .|
     |*\<monitoringMode>*|Spécifiez un mode de surveillance :<br /><br /> <ul><li>**Monitor**: enregistre le minimum de détails sur les événements d’exception et les événements de performances. Ce mode utilise le plan de collecte par défaut.</li><li>**Trace**: enregistre les détails au niveau des fonctions ou surveille les applications SharePoint 2010 et SharePoint 2013 à l’aide du plan de collecte spécifié. Ce mode peut ralentir votre application.<br /><br /> <ul><li>[Q : Comment définir les autorisations pour le pool d’applications ?](#FullPermissionsITLog)</li><li>[Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)</li></ul><br />     Cet exemple enregistre les événements pour une application SharePoint hébergée sur un site SharePoint :<br /><br />     **Start-WebApplicationMonitoring « FabrikamSharePointSite\FabrikamSharePointApp » trace « C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml » « C:\IntelliTraceLogs »**</li><li>**Custom**: enregistre les détails personnalisés sur la base du plan de collecte personnalisé spécifié. Si vous modifiez le plan de collecte au cours d’un processus de surveillance, vous devrez redémarrer la surveillance.</li></ul>|
     |*"\<outputPath>"*|Spécifiez le chemin d’accès complet du répertoire de stockage des journaux IntelliTrace. Veillez à créer ce répertoire avant de commencer la surveillance.|
     |*\<UInt32>*|Spécifiez la taille maximale du journal IntelliTrace. Par défaut, la taille maximale du journal IntelliTrace est de 250 Mo.<br /><br /> Quand le journal atteint cette limite, l’agent supprime les entrées les plus anciennes du journal pour faire de la place aux nouvelles entrées. Pour changer cette limite, utilisez l’option **-MaximumFileSizeInMegabytes** ou modifiez l’attribut `MaximumLogFileSize` défini dans le plan de collecte.|
@@ -161,7 +161,7 @@ ms.locfileid: "98150104"
 
    Si l’attribut `enabled` n’existe pas, l’événement est activé.
 
-   Exemple :
+   Par exemple :
 
   - Désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.
 
@@ -246,7 +246,7 @@ L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l�
 
     **Checkpoint-WebApplicationMonitoring "IIS : \ sites** *\\<IISWebsiteName \> \\<IISWebAppName \> "*
 
-    Exemple :
+    Par exemple :
 
     **PS C : \\>Checkpoint-WebApplicationMonitoring « Fabrikam\FabrikamFiber.Web »**
 
@@ -280,7 +280,7 @@ L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l�
 
     **Stop-WebApplicationMonitoring -All**
 
-    Exemple :
+    Par exemple :
 
     **PS C : \\>Stop-WebApplicationMonitoring « Fabrikam\iFabrikamFiber.Web »**
 
