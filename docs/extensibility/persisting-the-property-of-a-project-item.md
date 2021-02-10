@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967421"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Rendre persistante la propriété d’un élément de projet
 Vous pouvez conserver une propriété que vous ajoutez à un élément de projet, telle que l’auteur d’un fichier source. Pour ce faire, vous pouvez stocker la propriété dans le fichier projet.

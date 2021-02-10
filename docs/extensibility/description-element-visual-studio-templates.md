@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: a88535f4d41772c8d3b6ebc8a62e5c8aaea866ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968331"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description, élément (modèles Visual Studio)
 Spécifie la description du modèle telle qu’elle apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .
@@ -62,7 +62,7 @@ Spécifie la description du modèle telle qu’elle apparaît dans la boîte de 
 
  Le texte fournit une description du modèle.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `Description` est un élément enfant obligatoire de l' `TemplateData` élément.
 
 ## <a name="example"></a>Exemple

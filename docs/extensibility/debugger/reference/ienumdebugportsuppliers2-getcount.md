@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 355b7434bb6c0392b93e4395c2ae7a04e796e708
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8b6a73549e304029946fa3cf3f1cc074dcbc3c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967759"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 Retourne le nombre d’éléments dans l’énumération.
@@ -43,7 +43,7 @@ int GetCount(
 `pcelt`\
 à Retourne le nombre d’éléments dans l’énumération.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

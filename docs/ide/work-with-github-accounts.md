@@ -6,16 +6,16 @@ ms.topic: conceptual
 description: Découvrez comment utiliser Visual Studio avec des comptes GitHub.
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 9da0f2c2df796f50530f19252c7236c2bb606a10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960479"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>Utiliser des comptes GitHub dans Visual Studio
 
@@ -25,7 +25,7 @@ Si vous avez un compte public GitHub ou GitHub Enterprise, vous pouvez l’ajout
 
 Vous pouvez ajouter votre compte GitHub public si vous êtes déjà connecté à Visual Studio à l’aide d’un compte Microsoft ou d’un compte professionnel ou scolaire.
 
-1. Sélectionnez l’icône avec vos initiales dans l’angle supérieur droit de l’environnement Visual Studio. Ensuite, sélectionnez **paramètres du compte...** pour gérer vos comptes. Vous pouvez également ouvrir la boîte de dialogue Paramètres du compte en accédant à paramètres du compte de **fichier**  >  **Account Settings**.
+1. Sélectionnez l’icône avec vos initiales dans l’angle supérieur droit de l’environnement Visual Studio. Ensuite, sélectionnez **paramètres du compte...** pour gérer vos comptes. Vous pouvez également ouvrir la boîte de dialogue Paramètres du compte en accédant à paramètres du compte de **fichier**  >  .
 
     :::image type="content" source="../ide/media/account-picker.png" alt-text="Paramètres de compte":::
 
@@ -41,7 +41,7 @@ Vous pouvez ajouter votre compte GitHub public si vous êtes déjà connecté à
 
     :::image type="content" source="../ide/media/show-both-accounts.png" alt-text="Les deux comptes affichés":::
 
-Si vous n’êtes pas déjà connecté à Visual Studio avec un autre compte, sélectionnez le lien **se connecter** dans l’angle supérieur droit de l’environnement Visual Studio. Vous pouvez également ouvrir la boîte de dialogue Paramètres du compte en accédant à paramètres du compte de **fichier**  >  **Account Settings**. Ensuite, suivez les instructions ci-dessus pour ajouter votre compte GitHub.
+Si vous n’êtes pas déjà connecté à Visual Studio avec un autre compte, sélectionnez le lien **se connecter** dans l’angle supérieur droit de l’environnement Visual Studio. Vous pouvez également ouvrir la boîte de dialogue Paramètres du compte en accédant à paramètres du compte de **fichier**  >  . Ensuite, suivez les instructions ci-dessus pour ajouter votre compte GitHub.
 
 ![Utilisateur non connecté](../ide/media/vs2019_usernotsignedin.png)
 

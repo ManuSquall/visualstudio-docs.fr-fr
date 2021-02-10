@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3841ba0698c5e63bbf58e47e0e4a8b8f75d068e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961208"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Rend un programme non disponible pour le débogage.
@@ -28,14 +28,14 @@ Rend un programme non disponible pour le débogage.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT UnpublishProgram(
-   IUnknown* pDebuggeeInterface
+HRESULT UnpublishProgram(
+   IUnknown* pDebuggeeInterface
 );
 ```
 
 ```csharp
-int UnpublishProgram(
-   object pDebuggeeInterface
+int UnpublishProgram(
+   object pDebuggeeInterface
 );
 ```
 
@@ -43,7 +43,7 @@ int UnpublishProgram(
 `pDebuggeeInterface`\
 dans `IUnknown` Interface pour le programme. Il s’agit de la même valeur fournie à la méthode [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) et identifie de façon unique le programme en cours de suppression (autrement dit, il est utilisé comme cookie).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cdd10489-1772-47e3-815f-a6cfd32a3c60
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0b8d59fa008a9685ca80a2f6b33f6c4503c19ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 494f8d3d2f6a870f2d0b95a1d152f077f0514055
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967811"
 ---
 # <a name="ienumdebugframeinfo2clone"></a>IEnumDebugFrameInfo2::Clone
 Retourne une copie de l'énumération actuelle comme un objet distinct.
@@ -43,7 +43,7 @@ int Clone(
 `ppEnum`\
 [out] Retourne une copie de cette énumération en tant qu'objet distinct.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

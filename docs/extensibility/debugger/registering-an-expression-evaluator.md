@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1074e8dea5dfdb05571d3b1aa04e5c411530bb1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961103"
 ---
 # <a name="register-an-expression-evaluator"></a>Inscrire un évaluateur d’expression
 > [!IMPORTANT]
@@ -32,7 +32,7 @@ ms.locfileid: "96847141"
  Une méthode de la classe principale est marquée avec <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> , ce qui indique que la méthode doit être appelée lorsque la dll est inscrite auprès de com. Cette méthode d’inscription, souvent appelée `RegisterClass` , exécute la tâche d’inscription de la dll auprès de Visual Studio. Un correspondant `UnregisterClass` (marqué avec <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ), annule les effets de `RegisterClass` la désinstallation de la dll.
 Les mêmes entrées de Registre sont effectuées comme pour un EE écrit dans du code non managé. la seule différence réside dans le fait qu’il n’existe aucune fonction d’assistance telle que `SetEEMetric` pour effectuer le travail pour vous. Voici un exemple de processus d’inscription et de désinscription.
 
-### <a name="example"></a> Exemple
+### <a name="example"></a>Exemple
  La fonction suivante montre comment un code managé EE s’inscrit et annule son inscription auprès de Visual Studio.
 
 ```csharp
@@ -124,7 +124,7 @@ namespace EEMC
 
 3. S’inscrit auprès de Visual Studio en créant des clés sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, où *x. y* est la version de Visual Studio à inscrire.
 
-### <a name="example"></a> Exemple
+### <a name="example"></a>Exemple
  La fonction suivante montre comment un code non managé (C++) EE s’inscrit et se désinscrit lui-même avec Visual Studio.
 
 ```cpp

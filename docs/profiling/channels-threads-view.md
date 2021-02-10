@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 135796b09689915d81132abb4f8f36888b64f393
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960284"
 ---
 # <a name="channels-threads-view"></a>Canaux (vue Threads)
 Le visualiseur concurrentiel montre quatre types de canaux : les canaux de threads, les canaux de disques, les canaux de marqueurs et les canaux GPU.

@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4bf43fa5dd3e95500b036d5ef5d65055b5d5870f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946278"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006404"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utiliser des shims pour isoler votre application pour les tests unitaires
 
@@ -30,7 +30,7 @@ Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [i
 - Visual Studio Enterprise
 - Un projet .NET Framework
 ::: moniker range=">=vs-2019"
-- La prise en charge des projets de type .NET Core et SDK est prévisualisée dans Visual Studio 2019 Update 6, et est activée par défaut dans Update 8. Pour plus d’informations, consultez [Microsoft Resubstituts for .net Core and SDK-style Projects](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- .NET Core, .NET 5,0 et le kit de développement logiciel (SDK) prennent en charge l’aperçu dans Visual Studio 2019 Update 6, et est activé par défaut dans Update 8. Pour plus d’informations, consultez [Microsoft Resubstituts for .net Core and SDK-style Projects](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Exemple : Le bogue de l'an 2000
@@ -71,7 +71,7 @@ Tout d’abord, ajoutez un assembly de simulation :
 1. Dans **Explorateur de solutions**, 
     - Pour un projet de .NET Framework plus ancien (style non-SDK), développez le nœud **références** de votre projet de test unitaire.
     ::: moniker range=">=vs-2019"
-    - Pour un projet de type SDK ciblant .NET Framework ou .NET Core, développez le nœud **dépendances** pour trouver l’assembly que vous souhaitez falsifier sous **assemblys**, **projets** ou **packages**.
+    - Pour un projet de type SDK ciblant .NET Framework, .NET Core ou .NET 5,0, développez le nœud **dépendances** pour trouver l’assembly que vous souhaitez falsifier sous **assemblys**, **projets** ou **packages**.
     ::: moniker-end
     - Si vous utilisez Visual Basic, sélectionnez **Afficher tous les fichiers** dans la barre d’outils **Explorateur de solutions** pour afficher le nœud **références** .
 
@@ -524,9 +524,9 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Limites
 
-Les shims ne peuvent pas être utilisés sur tous les types de la bibliothèque de classes de base .NET **mscorlib** et **System** dans .NET Framework, et dans **System. Runtime** dans .net core.
+Les shims ne peuvent pas être utilisés sur tous les types de la bibliothèque de classes de base .NET **mscorlib** et **System** dans .NET Framework, et dans **System. Runtime** dans .net Core ou .net 5,0.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Blog de Peter Provost : shims Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)

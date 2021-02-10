@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: da499ee9bbdcdff95456a4e4d5f5dc63f2acfb2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967395"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Il s’agit d’une fonction de rappel donnée à la fonction [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) pour mettre à jour une collection de répertoires et (éventuellement) des noms de fichiers pour déterminer ceux qui sont sous contrôle de code source.
@@ -58,7 +58,7 @@ dans Chemin d’accès local complet à un répertoire ou à un nom de fichier q
 |SCC_I_OPERATIONCANCELED|Arrêter le traitement.|
 |SCC_E_xxx|Toute erreur de contrôle de code source appropriée doit arrêter le traitement.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si le `fOptions` paramètre de la `SccPopulateDirList` fonction contient l' `SCC_PDL_INCLUDEFILES` indicateur, la liste peut contenir des noms de fichiers, ainsi que des noms de répertoires.
 
 ## <a name="see-also"></a>Voir aussi

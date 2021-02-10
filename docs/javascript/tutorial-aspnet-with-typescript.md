@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98129482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960427"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio
 
@@ -191,7 +191,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
    Les fichiers de mappage source sont requis pour le débogage.
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Appuyez sur **F5** (**Déboguer** > **Démarrer le débogage**) pour exécuter l’application.
 

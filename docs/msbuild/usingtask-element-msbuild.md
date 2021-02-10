@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3adc3d648e73fc1f3596cc7a5c2cb2148a8f611b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960336"
 ---
 # <a name="usingtask-element-msbuild"></a>Élément UsingTask (MSBuild)
 
@@ -33,7 +33,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
  \<Project> \<UsingTask>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <UsingTask TaskName="TaskName"
@@ -74,14 +74,14 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 | - | - |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
 > Les propriétés et éléments de niveau projet n’ont aucune signification si l’élément `UsingTask` provient de l’un des fichiers *.tasks* inscrits globalement auprès du moteur MSBuild. Les valeurs au niveau du projet ne sont pas globales pour MSBuild.
 
- Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask* .
+ Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask*.
 
 L’assembly contenant la tâche personnalisée est chargé lors de la `Task` première utilisation de.
 

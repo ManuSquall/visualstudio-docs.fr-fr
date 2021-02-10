@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], updating entity instances
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967499"
 ---
 # <a name="how-to-add-an-updater-method"></a>Comment : ajouter une méthode de mise à jour
   Vous pouvez permettre aux utilisateurs de mettre à jour des données d’entreprise dans une liste externe SharePoint en créant une méthode de mise *à jour.* Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).

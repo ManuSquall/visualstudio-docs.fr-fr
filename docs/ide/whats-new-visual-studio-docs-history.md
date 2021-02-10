@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 511DAFC7-896E-449A-BFF7-0E8F7BBA8A78
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 899334e6ac4a952ea2d33f01d95ecfbe0a972653
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960531"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
@@ -43,7 +43,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
   - Réorganiser la table des matières pour les analyseurs .NET
 - [Migrer des analyseurs FxCop vers des analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter plus de clarté aux documents de migration pour FxCopAnalyzers vers les analyseurs
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -109,7 +109,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Vue d’ensemble](../code-quality/use-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -239,7 +239,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 **Articles mis à jour**
 - [Analyseurs de code](../code-quality/index.yml) -refactorisation de l’autorité de certification pour .net 5
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -336,7 +336,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Vue d’ensemble de l’analyse du code source](../code-quality/roslyn-analyzers-overview.md) -mises à jour de l’analyse du code pour refactorisation .net
 - [Configurer l’analyse](../code-quality/use-roslyn-analyzers.md) de la qualité du code-mises à jour de l’analyse du code pour le refactorisation .net
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Nouveaux articles**
 
@@ -429,7 +429,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -plus de règles de DataSet/DataTable
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -modification de la structure et des titres pour la documentation de l’analyse du code
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Articles mis à jour**
 
@@ -504,7 +504,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [CA2355 : jeu de données ou DataTable non sécurisés dans le graphique d’objets désérialisés](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) -documents de désérialisation de DataSet/DataTable initiaux
 - [CA2356 : type de données ou DataSet non sécurisé dans le graphique d’objets désérialisés Web](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) -données de désérialisation du DataSet/DataTable initial (docs)
 
-### <a name="containers"></a>Conteneurs
+### <a name="containers"></a>Containers
 
 **Nouveaux articles**
 

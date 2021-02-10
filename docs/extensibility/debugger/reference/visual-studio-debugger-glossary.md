@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961194"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossaire du débogueur Visual Studio
 Voici les termes utilisés dans le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Kit de développement logiciel (SDK) de débogage.
 
-## <a name="terms"></a>Terminologie
+## <a name="terms"></a>Termes
  point d’arrêt lié une abstraction pour un point d’arrêt défini dans le code. Il existe une relation un-à-un entre un point d’arrêt lié et une instruction de point d’arrêt dans le flux de code. Lors du déchargement du code, les points d’arrêt liés peuvent être dissociés.
 
  la causalité offre la possibilité d’effectuer le suivi d’un thread logique d’exécution sur plusieurs threads physiques, processus et ordinateurs, et de reconstruire la pile des appels de ce thread logique à un point donné dans la durée de vie de ce thread.

@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f36704405776a790c3ec634856f54ee51bc23dc6
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b2c14869fa8e4a14a209f8fe5ad440d3ae0e569b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967954"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
 
@@ -83,7 +83,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
     }
     ```
 
-10. Enregistrez le fichier.
+10. Enregistrez le fichier .
 
 ### <a name="run-the-wpf-app"></a>Exécuter l’application WPF
 
@@ -335,7 +335,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Bien démarrer avec les tests codés de l’interface utilisateur](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 [FAQ concernant les tests codés de l’interface utilisateur](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

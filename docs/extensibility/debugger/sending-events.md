@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0262868ae442bfdd8b99c16f59e000f4ebfc35c5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eb86be560f45941b1ca5eb04f38087c23c431fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960856"
 ---
 # <a name="send-events"></a>Envoyer des événements
 Le mécanisme de communication entre le débogueur et le moteur de débogage (DE) est un modèle d’événement basé sur DCOM. Les événements sont envoyés en tant qu’objets COM, et chaque événement possède des paramètres qui spécifient les éléments suivants :

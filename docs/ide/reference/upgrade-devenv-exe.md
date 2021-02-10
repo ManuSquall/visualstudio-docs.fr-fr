@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb0565783efb27cf4194bb25982ee0f717be776
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: e7dc759cefae4ae262362265daf67ee5b1cb50f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960557"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -43,9 +43,9 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 - `/Out`*OutputFileName*
 
-  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
+  Facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Les sauvegardes sont créées et copiées automatiquement dans un répertoire nommé Backup, créé dans le répertoire actif.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 0a34fa9fd362f7a344dc13f1c557f8362e9e10b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968461"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Élément DefaultName (modèles Visual Studio)
 Spécifie le nom que le système de projet Visual Studio va générer pour le projet ou l’élément lors de sa création.
@@ -56,7 +56,7 @@ Spécifie le nom que le système de projet Visual Studio va générer pour le pr
 
  Ce texte spécifie le nom par défaut du projet ou de l’élément.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `DefaultName` est un élément facultatif.
 
  Pour les projets, cet élément spécifie le nom du répertoire qui stocke le projet sur le disque. Pour les éléments, il spécifie le nom de fichier du fichier source.

@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: ecba59e633bf6d456f16e6098f47719e052ac0de
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441631"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006349"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
@@ -25,7 +25,7 @@ Cet article traite des options et des problèmes dans la génération et la comp
 - Visual Studio Enterprise
 - Un projet .NET Framework
 ::: moniker range=">=vs-2019"
-- La prise en charge des projets de type .NET Core et SDK est prévisualisée dans Visual Studio 2019 Update 6, et est activée par défaut dans Update 8. Pour plus d’informations, consultez [Microsoft Resubstituts for .net Core and SDK-style Projects](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- .NET Core, .NET 5,0 et le kit de développement logiciel (SDK) prennent en charge l’aperçu dans Visual Studio 2019 Update 6, et est activé par défaut dans Update 8. Pour plus d’informations, consultez [Microsoft Resubstituts for .net Core and SDK-style Projects](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Génération et compilation de code
@@ -276,6 +276,6 @@ Les règles suivantes s'appliquent de manière récursive :
 
 - Si un nom résultant est en conflit avec un membre du type déclarant, un modèle de numérotation est utilisé en ajoutant un compteur à deux chiffres commençant à 01.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - [Isolation du code testé avec les substituts Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)

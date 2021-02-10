@@ -19,32 +19,32 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960323"
 ---
 # <a name="xsd-task"></a>XSD (tâche)
 
-Encapsule l’outil XML Schema Definition ( *xsd.exe* ), qui génère des fichiers de schéma ou de classe à partir d’une source.
+Encapsule l’outil XML Schema Definition (*xsd.exe*), qui génère des fichiers de schéma ou de classe à partir d’une source.
 
 > [!NOTE]
 > À partir de Visual Studio 2017, *xsd.exe* n’est plus pris en charge par les projets C++. Vous pouvez toujours utiliser les API **Microsoft.VisualC.CppCodeProvider** en ajoutant manuellement *CppCodeProvider.dll* au GAC.
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-dessous décrit les paramètres de la tâche **XSD** .
+ Le tableau ci-dessous décrit les paramètres de la tâche **XSD**.
 
 - **AdditionalOptions**
 
      Paramètre de **chaîne** facultatif.
 
-     Liste des options comme indiqué sur la ligne de commande. Par exemple,/ \<option1>  / \<option2>  / \<option#> . Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD** .
+     Liste des options comme indiqué sur la ligne de commande. Par exemple,/ \<option1>  / \<option2>  / \<option#> . Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.
 
 - **GenerateFromSchema**
 

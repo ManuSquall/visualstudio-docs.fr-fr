@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code editor [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2363d350c91ac72b21784f490778010eba12007
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: ec1b8f9d9ce44b494d1d9ad13e3dd46b88d0def5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960401"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
@@ -63,7 +63,7 @@ Vous pouvez trouver un certain nombre de fonctionnalités avancées dans le menu
 |Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : **ALT** + **flèche haut**.|
 |Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : **ALT** + **flèche bas**.|
 |Supprimer les espaces blancs horizontaux|Supprime les tabulations et les espaces à la fin de la ligne active. Raccourci : **CTRL** + **K**, **CTRL**+**\\**|
-|Afficher les espaces blancs|Affiche les espaces sous forme de points et les tabulations sous forme de flèches. La fin d’un fichier est indiquée par un glyphe rectangulaire. Si **Outils**  >  **options**  >  **éditeur de texte**  >  **tous les langages**  >  **Word Wrap**  >  ,**afficher les glyphes visibles pour le retour automatique à la ligne** est sélectionné, ce glyphe s’affiche également.|
+|Afficher les espaces blancs|Affiche les espaces sous forme de points et les tabulations sous forme de flèches. La fin d’un fichier est indiquée par un glyphe rectangulaire. Si **Outils**  >  **options**  >  **éditeur de texte**  >  **tous les langages**  >    >  ,**afficher les glyphes visibles pour le retour automatique à la ligne** est sélectionné, ce glyphe s’affiche également.|
 |Retour automatique à la ligne|Rend visibles toutes les lignes d’un document dans la fenêtre de code. Vous pouvez activer et désactiver cette fonctionnalité dans les paramètres **Éditeur de texte – Tous les langages** (**Outils** > **Options** > **Éditeur de texte** > **Tous les langages**).|
 |Commenter la sélection|Ajoute des caractères de commentaire à la sélection ou à la ligne active. Raccourci : **CTRL** + **K**, **CTRL** + **C**|
 |Supprimer les marques de commentaire de la sélection|Supprime les caractères de commentaire de la sélection ou de la ligne active. Raccourci : **CTRL** + **K**, **CTRL** + **U**|

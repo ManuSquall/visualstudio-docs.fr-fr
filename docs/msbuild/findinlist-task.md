@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4afc20b7845f3af71de1fbbb89f074801e08d1d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 45ad1cc57412161e2510f93cacb5a043be59802e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967551"
 ---
 # <a name="findinlist-task"></a>FindInList (tâche)
 
@@ -42,7 +42,7 @@ Dans une liste spécifiée, recherche un élément associé à la spécification
 |`List`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Liste dans laquelle rechercher la spécification d’éléments (itemspec).|
 |`MatchFileNameOnly`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, effectue une comparaison avec uniquement la partie de nom de fichier de l’itemspec ; sinon, effectue une comparaison avec l’intégralité de l’itemspec. La valeur par défaut est `true`.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
