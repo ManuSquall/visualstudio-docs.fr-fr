@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e54c3055-6030-4dc9-9f7a-5e3ce75f252f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99b2bc35b63a4e97f888365f1d11231ae620b69c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ef009a4801e40859e2b757465bb15ffac97395a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957112"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 Cette méthode retourne le jeu d’éléments suivant de l’énumération.
@@ -53,7 +53,7 @@ int Next(
 `pceltFetched`\
 à Retourne le nombre d’éléments réellement retournés dans `rgelt` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si un nombre inférieur au nombre d’éléments demandés peut être retourné ; sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

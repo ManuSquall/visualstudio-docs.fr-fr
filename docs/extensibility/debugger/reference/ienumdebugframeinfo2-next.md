@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 64a64eeb-5dea-4119-8a22-03771015d1e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a5fe15c46066fdbc94b0b7f005ef7a06e1f10cc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cff37c8cf557c3857a5e078d864755cb219c1bc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956319"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 Retourne l'ensemble d'éléments suivants de l'énumération.
@@ -53,7 +53,7 @@ int Next(
 `pceltFetched`\
 à Retourne le nombre d’éléments réellement retournés dans `rgelt` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si un nombre inférieur au nombre d’éléments demandés peut être retourné ; sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

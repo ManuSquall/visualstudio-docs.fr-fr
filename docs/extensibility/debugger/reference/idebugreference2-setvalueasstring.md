@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0a2e481df64aeb4d5193ed011dc9f5cc669799b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956547"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-Définit la valeur d’une référence à partir d’une chaîne. Réservé à un usage ultérieur.
+Définit la valeur d’une référence à partir d’une chaîne. Réservé pour un usage futur.
 
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetValueAsString ( 
+HRESULT SetValueAsString ( 
    LPCOLESTR pszValue,
    DWORD     dwRadix,
    DWORD     dwTimeout
@@ -36,7 +36,7 @@ HRESULT SetValueAsString ( 
 ```
 
 ```csharp
-int SetValueAsString ( 
+int SetValueAsString ( 
    string pszValue,
    uint   dwRadix,
    uint   dwTimeout
@@ -53,7 +53,7 @@ dans Base à utiliser pour mettre en forme les informations numériques.
 `dwTimeout`\
 dans Durée d’attente maximale, en millisecondes, avant le retour de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Retourne toujours `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Voir aussi

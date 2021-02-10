@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Settings page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d8ee71e717d2287b4e6deb32b1b94c142cf7de73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957671"
 ---
 # <a name="settings-page-project-designer"></a>Paramètres, page du Concepteur de projet
 
@@ -75,7 +75,7 @@ Entrez le nom du paramètre d’application dans ce champ.
 
 Utilisez la liste déroulante pour sélectionner un type pour le paramètre. Les types les plus fréquemment utilisés apparaissent dans la liste déroulante, par exemple **Chaîne**, **(Chaîne de connexion)** et **System.Drawing.Font**. Vous pouvez choisir un autre type en sélectionnant **Parcourir** à la fin de la liste, puis en sélectionnant dans la boîte de dialogue **Sélectionner un type**. Une fois que vous avez choisi un type, il est ajouté aux types communs dans la liste déroulante (pour la solution actuelle uniquement).
 
-**Étendue**
+**Portée**
 
 Sélectionnez **Application** ou **Utilisateur**.
 

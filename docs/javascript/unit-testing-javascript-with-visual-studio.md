@@ -6,17 +6,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86033349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957476"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
 
@@ -67,7 +67,7 @@ Si vous n’avez pas défini les options de test unitaire dans les propriétés 
 > [!Note]
 > Les options de test unitaire sont prioritaires sur les paramètres des fichiers individuels.
 
-Après l’ouverture de l’Explorateur de tests (choisissez **tester**l’Explorateur de  >  **Windows**  >  **tests**Windows), Visual Studio Découvre et affiche les tests. Si les tests ne sont pas visibles au départ, regénérez le projet pour actualiser la liste.
+Après l’ouverture de l’Explorateur de tests (choisissez **tester** l’Explorateur de  >    >  **tests** Windows), Visual Studio Découvre et affiche les tests. Si les tests ne sont pas visibles au départ, regénérez le projet pour actualiser la liste.
 
 ![Explorateur de tests](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -90,7 +90,7 @@ Vous pouvez exécuter les tests en cliquant sur le lien **Exécuter tout** dans 
 Pour la machine à écrire, les tests unitaires sont exécutés sur le code JavaScript généré.
 
 > [!NOTE]
-> Dans la plupart des scénarios de création d’une machine à écrire, vous pouvez déboguer un test unitaire en définissant un point d’arrêt dans le **Debug**code machine à écrire, en cliquant avec le bouton droit sur un test dans l’Explorateur de tests, puis Dans les scénarios plus complexes, tels que certains scénarios qui utilisent des mappages de source, vous pouvez avoir des difficultés à atteindre des points d’arrêt dans le code machine à écrire. Pour résoudre ce problème, essayez d’utiliser le `debugger` mot clé.
+> Dans la plupart des scénarios de création d’une machine à écrire, vous pouvez déboguer un test unitaire en définissant un point d’arrêt dans le code machine à écrire, en cliquant avec le bouton droit sur un test dans l’Explorateur de tests, puis Dans les scénarios plus complexes, tels que certains scénarios qui utilisent des mappages de source, vous pouvez avoir des difficultés à atteindre des points d’arrêt dans le code machine à écrire. Pour résoudre ce problème, essayez d’utiliser le `debugger` mot clé.
 
 > [!NOTE]
 > Nous ne prenons actuellement pas en charge les tests de profilage, ou couverture du code.

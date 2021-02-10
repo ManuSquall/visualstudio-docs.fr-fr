@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 6b520d3bedf31bc09dc0cf48e86777872176e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957619"
 ---
 # <a name="shell-command"></a>Shell, commande
 Lance les programmes exécutables à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -43,22 +43,22 @@ Obligatoire. Chemin et nom du fichier à exécuter ou du document à ouvrir. Un 
 
 `args`
 
-facultatif. Arguments à passer au programme appelé.
+Facultatif. Arguments à passer au programme appelé.
 
 ## <a name="switches"></a>Commutateurs
 /commandwindow [ou] /command [ou] /c [ou] /cmd
 
-facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
+Facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
 
 /dir:`folder` [ou] /d: `folder`
 
-facultatif. Spécifie le répertoire de travail à définir quand le programme est exécuté.
+Facultatif. Spécifie le répertoire de travail à définir quand le programme est exécuté.
 
 /outputwindow [ou] /output [ou] /out [ou] /o
 
-facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
+Facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.
 
 L’alias prédéfini `Shell` peut être utilisé à la place de `Tools.Shell`.
@@ -79,7 +79,7 @@ Chaque groupe de trois guillemets (""") est interprété par le processeur `Shel
 > [!CAUTION]
 > Si vous ne mettez pas la chaîne de chemin entre guillemets ("""), Windows utilisera uniquement la partie de la chaîne jusqu’au premier espace. Par exemple, si la chaîne de chemin ci-dessus n’a pas été correctement mise entre guillemets, Windows recherche un fichier nommé « Program » situé dans le répertoire racine C:\. Si un fichier exécutable C:\Program.exe est effectivement disponible, même installé de manière illicite, Windows essaie d’exécuter ce programme à la place du programme « C:\Program Files\SomeFile.exe » voulu.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans le dossier `Text`. La sortie de xcopy.exe s’affiche à la fois dans la fenêtre **Commande** et dans la fenêtre **Sortie**.
 
 ```cmd

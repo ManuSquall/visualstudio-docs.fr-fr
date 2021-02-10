@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fcc42b999039abe5d682394e378cb95f12b9283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956930"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Créer une application Windows Forms dans Visual Studio avec C\#
 
@@ -39,7 +39,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Vous allez d’abord créer un projet d’application C#. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -90,7 +90,7 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Création de l'application
+## <a name="create-the-application"></a>Créer l’application
 
 Une fois que vous avez sélectionné votre modèle de projet C# et que vous avez nommé votre fichier, Visual Studio ouvre un formulaire pour vous. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
 
@@ -100,7 +100,7 @@ Une fois que vous avez sélectionné votre modèle de projet C# et que vous avez
 
      ![Choisissez la boîte à outils pour ouvrir la fenêtre boîte à outils](../ide/media/csharp-toolbox-toolwindow.png)
 
-     (Si vous ne voyez pas l’option de survol de la **boîte à outils** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, **Affichez**la  >  **boîte à outils**. Ou appuyez sur **CTRL** + **ALT** + **X**.)
+     (Si vous ne voyez pas l’option de survol de la **boîte à outils** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, **Affichez** la  >  **boîte à outils**. Ou appuyez sur **CTRL** + **ALT** + **X**.)
 
 1. Choisissez l’icône **épingler** pour ancrer la fenêtre **boîte à outils** .
 
@@ -114,7 +114,7 @@ Une fois que vous avez sélectionné votre modèle de projet C# et que vous avez
 
      ![Ajouter du texte au bouton du formulaire](../ide/media/vb-button-control-text.png)
 
-     (Si vous ne voyez pas la fenêtre **Propriétés** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, choisissez **Afficher**la  >  **fenêtre Propriétés**. Ou appuyez sur **F4**.)
+     (Si vous ne voyez pas la fenêtre **Propriétés** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, choisissez **Afficher** la  >  **fenêtre Propriétés**. Ou appuyez sur **F4**.)
 
 1. Dans la section **Design** de la fenêtre **Propriétés**, remplacez le nom **Button1** par `btnClickThis`, puis appuyez sur **Entrée**.
 
@@ -133,7 +133,7 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
 ### <a name="add-code-to-the-form"></a>Ajouter du code au formulaire
 
-1. Dans la fenêtre **Form1.cs &#91;&#93;de conception ** , double-cliquez sur le bouton **cliquez sur ce** bouton pour ouvrir la fenêtre **Form1.cs** .
+1. Dans la fenêtre **Form1.cs &#91;&#93;de conception** , double-cliquez sur le bouton **cliquez sur ce** bouton pour ouvrir la fenêtre **Form1.cs** .
 
       (Vous pouvez également développer **Form1.cs** dans **Explorateur de solutions**, puis choisir **Form1**.)
 

@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: d3b8413673318f2e0cd2a5f00cfb9d1d7f0b4097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957528"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 
@@ -176,7 +176,7 @@ L’application utilise Pug en tant que framework JavaScript frontend. Pug utili
 
     Pour illustrer plusieurs fonctionnalités de Visual Studio, une erreur délibérée figure dans la ligne de code contenant `res.render`. Vous devez corriger l’erreur pour que l’application puisse s’exécuter, ce que vous allez faire dans la section suivante.
 
-## <a name="use-intellisense"></a>Utilisez IntelliSense
+## <a name="use-intellisense"></a>Utiliser IntelliSense
 
 IntelliSense est un outil Visual Studio qui vous aide pendant que vous écrivez du code.
 
@@ -184,7 +184,7 @@ IntelliSense est un outil Visual Studio qui vous aide pendant que vous écrivez 
 
 1. Placez votre curseur après la chaîne `data`, tapez `: get`, et IntelliSense vous affichera la fonction `getData` définie plus tôt dans le code. Sélectionnez `getData`.
 
-    ![Utilisez IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
+    ![Utiliser IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
 
 1. Ajoutez les parenthèses pour en faire un appel de fonction, `getData()` .
 
@@ -216,7 +216,7 @@ Vous allez ensuite exécuter l’application avec le débogueur Visual Studio at
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Sélectionnez la cible de débogage dans la barre d’outils déboguer, par exemple **serveur Web (Google Chrome)** ou **serveur Web (Microsoft Edge)**.
 

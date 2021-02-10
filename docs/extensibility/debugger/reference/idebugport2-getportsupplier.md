@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7a7b0615-df6b-4726-ab35-39dfa1ebed8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e0cc5f037631193b371078639ba3078be5b3fa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86df4fac348dd32b061ca1bfb95a8d2efa66f868
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957164"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 Obtient le fournisseur de port pour ce port.
@@ -28,13 +28,13 @@ Obtient le fournisseur de port pour ce port.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetPortSupplier( 
+HRESULT GetPortSupplier( 
    IDebugPortSupplier2** ppSupplier
 );
 ```
 
 ```csharp
-int GetPortSupplier( 
+int GetPortSupplier( 
    out IDebugPortSupplier2 ppSupplier
 );
 ```
@@ -43,7 +43,7 @@ int GetPortSupplier( 
 `ppSupplier`\
 à Retourne un objet [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) qui représente le fournisseur de ports pour un port.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

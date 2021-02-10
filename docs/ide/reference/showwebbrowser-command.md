@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 9117360d795a8027812b2534311a846d0ee56e09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957606"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
 
@@ -40,16 +40,16 @@ Obligatoire. URL (Uniform Resource Locator) du site web.
 ## <a name="switches"></a>Commutateurs
 /new
 
-facultatif. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.
+Facultatif. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.
 
 /ext
 
-facultatif. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
+Facultatif. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 L’exemple suivant affiche la page d’accueil de Microsoft Docs dans un navigateur web en dehors de l’IDE. S’il y a déjà une instance du navigateur web ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
 
 ```cmd

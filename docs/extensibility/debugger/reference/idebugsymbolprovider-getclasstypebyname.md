@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a1be0aaaf9e960b95deaa7c949993a950647ce89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6843eee8e6de7ec3e8cfd52362ee4463dea7da4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956423"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Cette méthode obtient le type de champ de classe qui représente un nom de classe complet.
@@ -28,7 +28,7 @@ Cette méthode obtient le type de champ de classe qui représente un nom de clas
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetClassTypeByName( 
+HRESULT GetClassTypeByName( 
    LPCOLESTR          pszClassName,
    NAME_MATCH         nameMatch,
    IDebugClassField** ppField
@@ -53,7 +53,7 @@ dans Sélectionne le type de correspondance, par exemple en respectant la casse.
 `ppField`\
 à Retourne le type de classe tel que représenté par l’interface [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

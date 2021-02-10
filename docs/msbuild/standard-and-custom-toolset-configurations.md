@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956098"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisées des ensembles d’outils
 
@@ -76,9 +76,9 @@ Visual Studio 2017 et versions ultérieures n’utilise pas une clé de Registre
 
 ## <a name="custom-toolset-definitions"></a>Définitions d’ensembles d’outils personnalisés
 
- Quand un ensemble d’outils standard ne répond pas à vos spécifications pour la génération, vous pouvez créer un ensemble d’outils personnalisé. Par exemple, vous pouvez avoir un scénario de laboratoire de génération dans lequel vous devez disposer d’un système distinct pour la génération de projets C++. À l’aide d’un ensemble d’outils personnalisé, vous pouvez assigner des valeurs personnalisées à l' `ToolsVersion` attribut lorsque vous créez des projets ou exécutez *MSBuild.exe* . En procédant ainsi, vous pouvez également utiliser la `$(MSBuildToolsPath)` propriété pour importer des fichiers *. targets* à partir de ce répertoire, ainsi que définir vos propres propriétés d’ensemble d’outils personnalisées qui peuvent être utilisées pour n’importe quel projet qui utilise cet ensemble d’outils.
+ Quand un ensemble d’outils standard ne répond pas à vos spécifications pour la génération, vous pouvez créer un ensemble d’outils personnalisé. Par exemple, vous pouvez avoir un scénario de laboratoire de génération dans lequel vous devez disposer d’un système distinct pour la génération de projets C++. À l’aide d’un ensemble d’outils personnalisé, vous pouvez assigner des valeurs personnalisées à l' `ToolsVersion` attribut lorsque vous créez des projets ou exécutez *MSBuild.exe*. En procédant ainsi, vous pouvez également utiliser la `$(MSBuildToolsPath)` propriété pour importer des fichiers *. targets* à partir de ce répertoire, ainsi que définir vos propres propriétés d’ensemble d’outils personnalisées qui peuvent être utilisées pour n’importe quel projet qui utilise cet ensemble d’outils.
 
- Spécifiez un ensemble d’outils personnalisé dans le fichier de configuration pour *MSBuild.exe* (ou pour l’outil personnalisé qui héberge le moteur MSBuild si c’est ce que vous utilisez). Par exemple, le fichier de configuration de *MSBuild.exe* pourrait comporter la définition d’ensemble d’outils suivante si l’objectif est de définir un ensemble d’outils nommé *MyCustomToolset* .
+ Spécifiez un ensemble d’outils personnalisé dans le fichier de configuration pour *MSBuild.exe* (ou pour l’outil personnalisé qui héberge le moteur MSBuild si c’est ce que vous utilisez). Par exemple, le fichier de configuration de *MSBuild.exe* pourrait comporter la définition d’ensemble d’outils suivante si l’objectif est de définir un ensemble d’outils nommé *MyCustomToolset*.
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">

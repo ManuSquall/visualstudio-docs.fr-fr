@@ -13,21 +13,21 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 426179eb20fcb71ac02039c3b2be20dab6f685b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957853"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 
 La page **Sécurité** du **Concepteur de projets** permet de configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées avec un déploiement ClickOnce. Pour plus d’informations, consultez [sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
-Pour accéder à la page **Sécurité** , cliquez sur un nœud de projet dans **l’Explorateur de solutions** , puis cliquez sur **Propriétés** dans le menu **Projet**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Sécurité**.
+Pour accéder à la page **Sécurité**, cliquez sur un nœud de projet dans **l’Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Sécurité**.
 
 ## <a name="security-settings"></a>Paramètres de sécurité
 
@@ -36,7 +36,7 @@ Pour accéder à la page **Sécurité** , cliquez sur un nœud de projet dans **
 Détermine si les paramètres de sécurité sont activés au moment du design. Quand cette option est désactivée, aucune autre option de la page **Sécurité** n’est disponible.
 
 > [!NOTE]
-> Lors de la publication d’une application à l’aide de l’Assistant **Publication** , cette option est automatiquement activée.
+> Lors de la publication d’une application à l’aide de l’Assistant **Publication**, cette option est automatiquement activée.
 
 Quand vous sélectionnez cette option, vous avez la possibilité de sélectionner l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.
 
