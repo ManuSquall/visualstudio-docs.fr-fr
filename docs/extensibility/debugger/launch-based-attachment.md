@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e041c692a833b7d0a1891c078388a3f5b2d11e4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 1f898bcb040b5b46144fd7c4f3fc2260b480872d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945940"
 ---
 # <a name="launch-based-attachment"></a>Pièce jointe basée sur le lancement
 La pièce jointe basée sur le lancement d’un programme est automatique. Lorsque le processus hébergeant le programme est lancé par le SDM, la pièce jointe basée sur le lancement suit un chemin d’accès similaire à celui de la méthode manuelle des pièces jointes. Pour plus d’informations, consultez [attacher au programme](../../extensibility/debugger/attaching-to-the-program.md).

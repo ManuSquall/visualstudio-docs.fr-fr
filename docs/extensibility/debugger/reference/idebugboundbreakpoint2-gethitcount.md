@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c821470cc81c1f4c495f6d71565d79cc9745f65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 875f1e55953d412e0c6dc49f1b00bd24cf589446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945823"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 Obtient le nombre d’accès actuel pour ce point d’arrêt lié.
@@ -29,13 +29,13 @@ Obtient le nombre d’accès actuel pour ce point d’arrêt lié.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetHitCount( 
+HRESULT GetHitCount( 
    DWORD* pdwHitCount
 );
 ```
 
 ```csharp
-int GetHitCount( 
+int GetHitCount( 
    out uint pdwHitCount
 );
 ```
@@ -44,7 +44,7 @@ int GetHitCount( 
 `pdwHitCount`\
 à Retourne le nombre d’accès.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Notes

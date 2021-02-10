@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: bb088954833f42e35de6c8316e5553d0f9e3fc68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945589"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gérer les extensions pour Visual Studio
 
@@ -152,7 +152,7 @@ Lorsque ces notifications s’affichent, vous pouvez ignorer la notification ou 
 
 ::: moniker range="vs-2017"
 
-- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la **Tools**  >  boîte de dialogue **extensions et mises à jour** des outils si vous le souhaitez.
+- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la   >  boîte de dialogue **extensions et mises à jour** des outils si vous le souhaitez.
 
 ::: moniker-end
 

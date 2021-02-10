@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944893"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Créer une extension avec un VSPackage
 
@@ -29,13 +29,13 @@ Cette procédure pas à pas vous montre comment créer un projet VSIX et ajouter
 
 1. Créez un projet VSIX nommé **FirstPackage**. Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **package Visual Studio**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstPackage.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **package Visual Studio**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstPackage.cs*.
 
 3. Générez le projet et commencez le débogage.
 
     L’instance expérimentale de Visual Studio s’affiche. Pour plus d’informations sur l’instance expérimentale, consultez [l’instance expérimentale](../extensibility/the-experimental-instance.md).
 
-4. Dans l’instance expérimentale, ouvrez la **Tools**  >  fenêtre **extensions et mises à jour** des outils. Vous devez voir l’extension **FirstPackage** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstPackage**).
+4. Dans l’instance expérimentale, ouvrez la   >  fenêtre **extensions et mises à jour** des outils. Vous devez voir l’extension **FirstPackage** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstPackage**).
 
 ## <a name="load-the-vspackage"></a>Charger le VSPackage
 

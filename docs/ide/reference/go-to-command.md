@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ef161cb8108ed3244c263ee51fee4251fc05d8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 29f81e5a17a573fdca25482479111a9f83e95a16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946447"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
 Déplace le curseur à la ligne spécifiée.
@@ -33,9 +33,9 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>Arguments
 `linenumber`\
-facultatif. Nombre entier représentant le numéro de la ligne à atteindre.
+Facultatif. Nombre entier représentant le numéro de la ligne à atteindre.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
 
 Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.

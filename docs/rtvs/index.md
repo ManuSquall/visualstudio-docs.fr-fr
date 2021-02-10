@@ -5,15 +5,15 @@ ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 89aa8b9d1b1f288e19252b8a111666f5b4e3e087
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
-ms.translationtype: HT
+ms.openlocfilehash: 76230555defd9367800f6c3c4e5ea0fe24a5195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946343"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Utiliser R dans Visual Studio
 
@@ -51,6 +51,6 @@ Voir aussi la [Foire aux questions](faq.md).
 
 1. **Problèmes GitHub** : la meilleure façon de contacter l’équipe RTVS est de [signaler un problème sur GitHub](https://github.com/Microsoft/RTVS/issues) ou d’utiliser le menu **R Tools** > **Commentaires**.
 
-1. **Envoyer un sourire / smiley mécontent** : le menu **R Tools** > ** Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans *%temp%/RTVSlogs.zip* au cas où vous souhaitez les envoyer séparément.) La journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide** > **Commentaires** > **Paramètres** ou lors de l’installation.
+1. **Envoyer un sourire / smiley mécontent** : le menu **R Tools** > **Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans *%temp%/RTVSlogs.zip* au cas où vous souhaitez les envoyer séparément.) La journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide** > **Commentaires** > **Paramètres** ou lors de l’installation.
 
 1. **E-mail** : vous pouvez envoyer des commentaires directement à l’équipe *rtvsuserfeedback (at) microsoft.com*.

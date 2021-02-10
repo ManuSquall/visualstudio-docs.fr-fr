@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 23174667827e63afb93d82679a51d65512731710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946070"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Guide pratique pour définir une zone de sécurité pour une application ClickOnce
 Quand vous définissez des autorisations de sécurité d’accès du code pour une application ClickOnce, vous devez d’abord définir un ensemble d’autorisations de base dans la page **Sécurité** du **Concepteur de projet**.
@@ -32,7 +32,7 @@ Quand vous définissez des autorisations de sécurité d’accès du code pour u
 
 ### <a name="to-set-a-security-zone"></a>Pour définir une zone de sécurité
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l’onglet **Security** .
 

@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.assetid: a34ba40e-01b1-4386-90b1-c8e628a8c527
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0bffb825b06b6fd807f08542e2c591aa87ad07
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 35037334c31209a54cff4ea29dcb229a6adfd28e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945124"
 ---
 # <a name="command-line-profiling-tools-reference"></a>Informations de référence sur les outils de profilage de la ligne de commande
 Les outils de performances en ligne de commande permettent aux programmeurs de profiler leurs applications à l’invite de commandes. Les outils de profilage en ligne de commande suivants vous permettent de profiler du code à l’invite de commandes.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [VSInstr](../profiling/vsinstr.md)
 
  Répertorie les options d’instrumentation de VSInstr.exe.

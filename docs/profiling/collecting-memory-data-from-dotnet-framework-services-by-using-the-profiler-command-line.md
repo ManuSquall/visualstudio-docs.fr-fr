@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef6ec36dc9c0fb0e6431dcb92ee292050c5d25f3
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: aec34feedeba8f16d9664a029815d52100c58a02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945212"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecter des données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service .NET Framework utilisant la méthode d’échantillonnage à partir de la ligne de commande.
@@ -49,5 +49,5 @@ Cette section décrit les procédures et les options de collecte des données d�
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analyser des vues et des rapports de données de mémoire .NET
 - [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 - [Informations de référence sur les outils de profilage de la ligne de commande](../profiling/command-line-profiling-tools-reference.md)

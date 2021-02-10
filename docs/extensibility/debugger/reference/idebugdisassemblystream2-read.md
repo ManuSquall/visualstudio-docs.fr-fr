@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944665"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Lit les instructions à partir de la position actuelle dans le flux de code machine.
@@ -28,7 +28,7 @@ Lit les instructions à partir de la position actuelle dans le flux de code mach
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT Read( 
+HRESULT Read( 
    DWORD                     dwInstructions,
    DISASSEMBLY_STREAM_FIELDS dwFields,
    DWORD*                    pdwInstructionsRead,
@@ -37,7 +37,7 @@ HRESULT Read( 
 ```
 
 ```csharp
-int Read( 
+int Read( 
    uint                           dwInstructions,
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,
    out uint                       pdwInstructionsRead,
@@ -58,7 +58,7 @@ dans Combinaison d’indicateurs de l’énumération [DISASSEMBLY_STREAM_FIELDS
 `prgDisassembly`\
 à Tableau de structures [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) qui est rempli avec le code désassemblé, une structure par instruction désassemblée. La longueur de ce tableau est dictée par le `dwInstructions` paramètre.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
@@ -72,5 +72,5 @@ dans Combinaison d’indicateurs de l’énumération [DISASSEMBLY_STREAM_FIELDS
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
+- [GetSize,](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
 - [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)

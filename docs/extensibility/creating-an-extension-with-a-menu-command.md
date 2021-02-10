@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 4ada5870bc06465b97bdf767eb64910f62e15f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974275"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944906"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Créer une extension avec une commande de menu
 
@@ -36,13 +36,13 @@ Cette procédure pas à pas montre comment créer une extension avec une command
 
 ::: moniker range="vs-2017"
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ Cette procédure pas à pas montre comment créer une extension avec une command
 
 ::: moniker range="vs-2017"
 
-4. Dans l’instance expérimentale, ouvrez la **Tools**  >  fenêtre **extensions et mises à jour** des outils. Vous devez voir l’extension **FirstMenuCommand** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstMenuCommand**).
+4. Dans l’instance expérimentale, ouvrez la   >  fenêtre **extensions et mises à jour** des outils. Vous devez voir l’extension **FirstMenuCommand** ici. (Si vous ouvrez **extensions et mises à jour** dans votre instance de Visual Studio qui fonctionne, vous ne voyez pas **FirstMenuCommand**).
 
 ::: moniker-end
 

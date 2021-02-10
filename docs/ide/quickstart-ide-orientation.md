@@ -7,15 +7,15 @@ ms.date: 02/21/2019
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945498"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
@@ -63,7 +63,7 @@ L’option **Continuer sans code** ouvre simplement l’environnement de dévelo
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons créer un projet.
 

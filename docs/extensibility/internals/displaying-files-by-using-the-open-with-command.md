@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946720"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Afficher les fichiers à l’aide de la commande Ouvrir avec
 Un projet peut demander à l’IDE d’afficher la boîte de dialogue **Ouvrir avec** . Cette demande invite l’utilisateur à ouvrir un fichier qui a une sélection de éditeurs standard. Les étapes suivantes décrivent ce processus :

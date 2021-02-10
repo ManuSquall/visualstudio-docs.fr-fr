@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a923691afdfe145931ab31d0e9bbc6142e7c8d1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd0a08889507c03ec1a8c5c72a615edfb195e7d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946850"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 Obtient la plage de la position de ce document.
@@ -28,14 +28,14 @@ Obtient la plage de la position de ce document.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetRange( 
+HRESULT GetRange( 
    TEXT_POSITION* pBegPosition,
    TEXT_POSITION* pEndPosition
 );
 ```
 
 ```csharp
-int GetRange( 
+int GetRange( 
    TEXT_POSITION[] pBegPosition,
    TEXT_POSITION[] pEndPosition
 );
@@ -48,7 +48,7 @@ int GetRange( 
 `pEndPosition`\
 [in, out] Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec la position de fin. Définissez cet argument sur une valeur null si cette information n’est pas nécessaire.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

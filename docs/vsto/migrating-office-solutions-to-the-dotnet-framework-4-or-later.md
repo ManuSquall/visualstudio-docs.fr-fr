@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8c11b2f107414ac5ffb048d7c5e49609ba0b17b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946135"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Migrer des solutions Office vers le .NET Framework 4 ou version ultérieure
   Si la version cible du .NET Framework d’un projet Office est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] version ou ultérieure d’une version antérieure du .NET Framework, certaines étapes supplémentaires peuvent être nécessaires pour continuer à exécuter la solution sur les ordinateurs de développement et les ordinateurs des utilisateurs finaux. Pour plus d’informations, consultez [modifications requises pour exécuter des projets Office que vous migrez vers le .NET Framework 4 ou le .NET Framework 4,5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).

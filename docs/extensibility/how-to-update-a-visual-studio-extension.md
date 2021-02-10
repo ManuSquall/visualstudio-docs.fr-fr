@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a79944fbb558e3e7a5debcfc6a64fe4b75aeb0c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946837"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Comment : mettre à jour une extension Visual Studio
 Vous pouvez mettre à jour une extension Visual Studio sur votre système en utilisant des **extensions et des mises à jour** pour installer la version mise à jour. Si vous créez une version mise à jour d’une extension, vous pouvez la signaler comme étant mise à jour en incrémentant le numéro de version dans le manifeste VSIX.

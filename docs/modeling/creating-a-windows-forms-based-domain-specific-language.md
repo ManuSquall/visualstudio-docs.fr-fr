@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945407"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>Créer un langage spécifique à un domaine basé sur Windows Forms
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Créer un langage de Domain-Specific basé sur Windows Forms
 
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide tout au long de la liaison d’un Windows Form à une solution DSL à l’aide du kit de développement logiciel de visualisation et de modélisation de Visual Studio.
 
@@ -33,7 +33,7 @@ Le modèle DSL du **Concepteur WinForm minimal** crée un DSL minimal que vous p
     Dans cette procédure pas à pas, les noms suivants sont utilisés :
 
     - Nom de la solution et du DSL : `FarmApp`
-    - Joint `Company.FarmApp`
+    - Espace de noms : `Company.FarmApp`
 
 2. Expérimentez l’exemple initial fourni par le modèle :
 
@@ -79,7 +79,7 @@ L’image suivante est la définition DSL utilisée dans cette procédure pas à
 
 3. Renommez la classe de domaine **ExampleModel** en `Farm` .
 
-     Donnez-lui des propriétés de domaine supplémentaires nommées `Size` de type **Int32**et `IsOrganic` de type **Boolean**.
+     Donnez-lui des propriétés de domaine supplémentaires nommées `Size` de type **Int32** et `IsOrganic` de type **Boolean**.
 
     > [!NOTE]
     > Si vous supprimez la classe de domaine racine, puis créez une nouvelle racine, vous devez réinitialiser la propriété de la classe racine de l’éditeur. Dans l' **Explorateur DSL**, sélectionnez **éditeur**. Ensuite, dans la Fenêtre Propriétés, définissez la **classe racine** sur `Farm` .
@@ -149,14 +149,14 @@ L’image suivante est la définition DSL utilisée dans cette procédure pas à
 
 5. Supprimez **farmBindingNavigator**. Cela est également généré automatiquement dans le `FarmControl` Concepteur, mais il n’est pas utile pour cette application.
 
-6. À l’aide de la boîte à outils, créez deux instances de **DataGridView**et nommez-les `AnimalGridView` et `FieldGridView` .
+6. À l’aide de la boîte à outils, créez deux instances de **DataGridView** et nommez-les `AnimalGridView` et `FieldGridView` .
 
    > [!NOTE]
    > Une autre étape consiste à faire glisser les éléments animaux et champs de la fenêtre sources de données vers le contrôle. Cette action crée automatiquement des grilles de données et des liaisons entre l’affichage de grille et la source de données. Toutefois, cette liaison ne fonctionne pas correctement pour DSL. Par conséquent, il est préférable de créer manuellement les grilles et les liaisons de données.
 
 7. Si la boîte à outils ne contient pas l’outil **ModelingBindingSource** , ajoutez-la. Dans le menu contextuel de l’onglet **données** , choisissez **choisir les éléments**. Dans la boîte de dialogue **choisir des éléments de boîte à outils** , sélectionnez **ModelingBindingSource** sous l’onglet **.NET Framework** .
 
-8. À l’aide de la boîte à outils, créez deux instances de **ModelingBindingSource**et nommez-les `AnimalBinding` et `FieldBinding` .
+8. À l’aide de la boîte à outils, créez deux instances de **ModelingBindingSource** et nommez-les `AnimalBinding` et `FieldBinding` .
 
 9. Définissez la propriété **DataSource** de chaque **ModelingBindingSource** sur **farmBindingSource**.
 
@@ -241,7 +241,7 @@ La solution DSL peut désormais être générée et exécutée, bien que vous pu
 
 2. Dans le Fenêtre Propriétés, développez **DataBindings** et ouvrez **(avancé)**.
 
-     Dans la boîte de dialogue **mise en forme et liaison avancée** , sous **mode de mise à jour**de la source de données, choisissez **OnPropertyChanged**.
+     Dans la boîte de dialogue **mise en forme et liaison avancée** , sous **mode de mise à jour** de la source de données, choisissez **OnPropertyChanged**.
 
 3. Créez et exécutez la solution.
 
@@ -325,6 +325,6 @@ Par conséquent, nous vous recommandons <xref:Microsoft.VisualStudio.Modeling.El
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
-- [Écrire du code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md)
+- [Écrire du code pour personnaliser un langage de Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

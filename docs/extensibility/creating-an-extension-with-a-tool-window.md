@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2bcbce3c97830663b43a94191d84d81418b423
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944919"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Créer une extension avec une fenêtre outil
 
@@ -29,7 +29,7 @@ Dans cette procédure, vous allez apprendre à utiliser le modèle de projet VSI
 
 1. Créez un projet VSIX nommé **FirstWindow**. Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de fenêtre outil nommé **myWindow**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >  **Extensibility** et sélectionnez **fenêtre outil personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom de fichier de la fenêtre outil par *myWindow.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de fenêtre outil nommé **myWindow**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **fenêtre outil personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom de fichier de la fenêtre outil par *myWindow.cs*.
 
 3. Générez le projet et commencez le débogage.
 

@@ -5,21 +5,21 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945160"
 ---
 # <a name="python-item-templates"></a>Modèles d’éléments Python
 
-Les modèles d’élément sont disponibles dans les projets python **Project**par le biais de la  >  commande de menu**Ajouter un nouvel élément** du projet ou de la commande **Ajouter**  >  **un nouvel élément** du menu contextuel dans **Explorateur de solutions**.
+Les modèles d’élément sont disponibles dans les projets python par le biais de la  >  commande de menu **Ajouter un nouvel élément** du projet ou de la commande **Ajouter**  >  **un nouvel élément** du menu contextuel dans **Explorateur de solutions**.
 
 ![Boîte de dialogue Ajouter un nouvel élément](media/project-item-templates.png)
 
@@ -31,7 +31,7 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 | --- | --- |
 | **Fichier Python vide** | Un fichier vide avec l’extension *.py*. |
 | **Classe Python** | Un fichier *.py* contenant une seule définition de classe Python vide. |
-| **Package Python** | Dossier qui contient un fichier * \_ \_ init \_ \_ . py* . |
+| **Package Python** | Dossier qui contient un fichier *\_ \_ init \_ \_ . py* . |
 | **Test unitaire Python** | Un fichier *.py* avec un test unitaire unique basé sur le framework `unittest`, ainsi qu’un appel à `unittest.main()` pour exécuter les tests dans le fichier. |
 | **Page HTML** | Un fichier *.html* avec une structure de page simple composée d’un élément `<head>` et d’un élément `<body>`. |
 | **JavaScript** | Un fichier *.js* vide. |

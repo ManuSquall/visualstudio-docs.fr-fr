@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 96f92aa921c7bb78511ed685d846e288518258fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946824"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Afficher les fichiers à l’aide de la commande ouvrir un fichier
 Les étapes suivantes décrivent comment l’IDE gère la commande **ouvrir un fichier** , qui est disponible dans le menu **fichier** de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Les étapes décrivent également comment les projets doivent répondre aux appels qui proviennent de cette commande.
