@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940863"
 ---
 # <a name="ribbon-overview"></a>Vue d’ensemble du ruban
   Le ruban est un moyen d’organiser les commandes associées afin qu’elles soient plus faciles à trouver. Les commandes apparaissent sous forme de contrôles sur le ruban. Les contrôles sont organisés en *groupes* le long d’une bande horizontale au bord supérieur d’une fenêtre d’application. Les groupes connexes sont organisés sur les onglets.

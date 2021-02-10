@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cebcb16708e42f8102e2dc235b52a81e16c588c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940902"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Développement Office et SharePoint dans Visual Studio
   Vous pouvez étendre Microsoft Office et SharePoint en créant une application légère ou un complément que les utilisateurs téléchargent à partir d’ [Office Store](https://store.office.com/) ou d’un catalogue d’organisation, ou en créant une solution .NET Framework que les utilisateurs installent sur un ordinateur.
@@ -92,7 +92,7 @@ ms.locfileid: "97525340"
 
  **En savoir plus**
 
-|À|Lecture|
+|À|Lire|
 |--------|----------|
 |Comparer les différentes façons dont vous pouvez étendre Office et déterminer si vous devez utiliser un complément VSTO ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Créer un complément VSTO.|[Création de compléments VSTO avec Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|

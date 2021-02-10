@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Liste des versions publiées et des numéros de build de Visual Studio, triées par date.
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 1/21/2021
 ms.topic: reference
 ms.workload:
@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 2cc67c299f11a43c21f7890090415a83587c976f
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 263a8bd8e2452944920a664e7dc70295e9cbf011
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939771"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -161,7 +161,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.1.2 | Libérer | 5 juin 2019 | 16.1.29001.49 |
 | 16.1.1 | Libérer | 24 mai 2019 | 16.1.28922.388 |
 | 16.1.0 | Libérer | 21 mai 2019 | 16.1.28917.181 |
-| 16.2.0 | Preview 1 | 21 mai 2019 | 16.2.28917.182 |
+| 16.2.0 | Preview 1 | 21 mai 2019 | 16.2.28917.182 |
 | 16.0.4 | Libérer | 14 mai 2019 | 16.0.28803.452 |
 | 16.1.0 | Preview 3 | 6 mai 2019 | 16.1.28902.138 |
 | 16.0.3 | Libérer | 30 avril 2019 | 16.0.28803.352 |
@@ -198,7 +198,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 ::: moniker range="vs-2017"
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 Le tableau suivant répertorie les numéros de build et les dates de publication de Visual Studio 2017, à ce jour.
 
@@ -230,7 +230,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.0.24 | Libérer | 11 juin 2019 | 15.0.26228.88 |
 | 15.9.12 | Libérer | 14 mai 2019 | 15.9.28307.665 |
 | 15.0.23 | Libérer | 14 mai 2019 | 15.0.26228.85 |
-| 15.9.11 | Libérer | 2 avril 2019 | 15.9.28307.586 |
+| 15.9.11 | Libérer | 2 avril 2019 | 15.9.28307.586 |
 | 15.9.10 | Libérer | 25 mars 2019 | 15.9.28307.557 |
 | 15.9.9 | Libérer | 12 mars 2019 | 15.9.28307.518 |
 | 15.0.22 | Libérer | 12 mars 2019 | 15.0.26228.76 |
@@ -346,7 +346,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.3.1  | Libérer | 18 août 2017 | 15.0.26730.08 |
 | 15.4 préversion 1 | PRÉVERSION | 24 août 2017 | 15.0.26823.1 |
 | 15.3.0 | Libérer | 14 août 2017 | 15.0.26730.3 |
-| 15.3 préversion 7.1 | PRÉVERSION | 11 août 2017 | 15.0.26730.3 |
+| 15.3 préversion 7.1 | PRÉVERSION | 11 août 2017 | 15.0.26730.3 |
 | 15.3 préversion 7 | PRÉVERSION | 1er août 2017 | 15.0.26730.0 |
 | 15.3 préversion 6 | PRÉVERSION | 26 juillet 2017 | 15.0.26724.1 |
 | 15.3 préversion 5 | PRÉVERSION | 24 juillet 2017 | 15.0.26720.02 |

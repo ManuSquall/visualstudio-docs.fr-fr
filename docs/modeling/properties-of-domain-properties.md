@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941357"
 ---
 # <a name="properties-of-domain-properties"></a>Propriétés des propriétés de domaine
 Une *propriété de domaine* est une fonctionnalité d’un élément de modèle qui peut contenir une valeur. Par exemple, la classe de domaine `Person` pourrait avoir des propriétés `Name` et `BirthDate`. Dans la définition DSL, les propriétés de domaine sont énumérées dans la zone de classe de domaine sur le diagramme et sous la classe de domaine dans l'Explorateur DSL. Pour plus d’informations, consultez [comment définir un langage de Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
@@ -46,7 +46,7 @@ Une *propriété de domaine* est une fonctionnalité d’un élément de modèle
 |**Is UI Read Only**|Si `True`, la valeur de la propriété de domaine ne peut pas être modifiée à l'aide de l'interface utilisateur. Elle peut quand même être définie par des programmes et sera visible dans la fenêtre Propriétés.<br /><br /> Si vous souhaitez masquer la propriété de domaine de l’utilisateur, Set **peut être exploré**. Si vous souhaitez contrôler l’accès par les programmes, définissez le **modificateur d’accès Setter**.|`False`|
 |**Type**|Genre de propriété de domaine (`Normal`, `Calculated` ou `CustomStorage`). Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
 |**Nom**|Nom de cette propriété de domaine. Il doit s’agir d’un identificateur valide, par exemple **titremorceau**.|\<none>|
-|**Notes**|Remarques informelles associées à cette propriété de domaine.|\<none>|
+|**Remarques**|Remarques informelles associées à cette propriété de domaine.|\<none>|
 |**Setter Access Modifier**|Modificateur d'accès pour la méthode Setter. Contrôle l'étendue selon laquelle le code de programme peut définir la propriété.|`public`|
 |**Type**|Type de propriété. Pour ajouter à la liste des types disponibles, cliquez avec le bouton droit sur la racine du DSL dans l’Explorateur DSL, puis cliquez sur **Ajouter un type externe**.|`String`|
 

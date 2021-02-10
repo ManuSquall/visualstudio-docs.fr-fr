@@ -10,19 +10,19 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2ee29fb7a0a832dd3076cbd47a7f9cd1414d96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939472"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Options des Outils R dans Visual Studio
 
-Les paramètres sont accessibles par le biais du menu **Outils R**  >  **Options** , ou via les **Tools**  >  **options** outils et en faisant défiler vers **Outils r**:
+Les paramètres sont accessibles par le biais du menu **Outils R**  >   , ou via les   >  **options** outils et en faisant défiler vers **Outils r**:
 
   ![Boîte de dialogue Options pour les Outils R](media/options-dialog.png)
 
@@ -43,7 +43,7 @@ L’élément de menu **Outils R > Paramètres de science des données** configu
 
 ![Disposition de fenêtre pour scientifique des données dans Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Pour revenir ultérieurement à d’autres paramètres de Visual Studio, utilisez d’abord la commande **Outils**  >  **Importer et exporter les paramètres** , sélectionnez **Exporter les paramètres d’environnement sélectionnés**et spécifiez un nom de fichier. Pour restaurer ces paramètres, utilisez la même commande et sélectionnez **Importer les paramètres d'environnement sélectionnés**. Vous pouvez aussi utiliser les mêmes commandes si vous changez la disposition pour les scientifiques des données et que vous souhaitez y revenir plus tard, au lieu d’utiliser directement la commande **Paramètres de science des données**.
+Pour revenir ultérieurement à d’autres paramètres de Visual Studio, utilisez d’abord la commande **Outils**  >  **Importer et exporter les paramètres** , sélectionnez **Exporter les paramètres d’environnement sélectionnés** et spécifiez un nom de fichier. Pour restaurer ces paramètres, utilisez la même commande et sélectionnez **Importer les paramètres d'environnement sélectionnés**. Vous pouvez aussi utiliser les mêmes commandes si vous changez la disposition pour les scientifiques des données et que vous souhaitez y revenir plus tard, au lieu d’utiliser directement la commande **Paramètres de science des données**.
 
 ## <a name="text-editor--r--advanced-options"></a>Éditeur de texte > R > Options avancées
 
@@ -57,7 +57,7 @@ Chaque option est activée ou désactivée pour contrôler le comportement en qu
 
 ## <a name="r-tools--advanced-options"></a>Outils R > Options avancées
 
-La **R Tools**  >  **Options** commande de menu Outils r permet d’ouvrir la boîte de dialogue **options** pour les options r :
+La   >   commande de menu Outils r permet d’ouvrir la boîte de dialogue **options** pour les options r :
 
   ![Boîte de dialogue Options pour les Outils R](media/options-dialog.png)
 

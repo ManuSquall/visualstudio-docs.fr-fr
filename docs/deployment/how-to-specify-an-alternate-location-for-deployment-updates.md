@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f0832105ccc203dd046461e40d27f8d50efc3009
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349644"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940369"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Guide pratique pour spécifier un autre emplacement pour les mises à jour du déploiement
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application initialement à partir d’un CD ou d’un partage de fichiers, mais l’application doit rechercher les mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application puisse se mettre à jour à partir du Web après son installation initiale.
@@ -40,7 +40,7 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 
 3. Sélectionnez l’onglet **Options de déploiement**.
 
-4. Dans la zone de texte nommée **emplacement de lancement** , entrez l’URL du répertoire qui contiendra le manifeste de déploiement pour les mises à jour d’application.
+4. Dans la zone de texte nommée **emplacement de lancement**, entrez l’URL du répertoire qui contiendra le manifeste de déploiement pour les mises à jour d’application.
 
 5. Enregistrez le manifeste de déploiement.
 
@@ -52,12 +52,12 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 
     **Mage-Update HelloWorld.exe. application-ProviderUrl http : \/ /adatum.com/Update/Path**
 
-3. Enregistrez le fichier.
+3. Enregistrez le fichier .
 
    > [!NOTE]
    > Vous devez à présent signer à nouveau le fichier avec *Mage.exe*. Pour plus d’informations, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-## <a name="net-framework-security"></a>Sécurité .NET Framework
+## <a name="net-framework-security"></a>Sécurité du .NET Framework
  Si vous installez votre application à partir d’un support hors connexion, tel qu’un CD-ROM, et que l’ordinateur est en ligne, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vérifie tout d’abord l’URL spécifiée par la `<deploymentProvider>` balise dans le manifeste de déploiement pour déterminer si l’emplacement de la mise à jour contient une version plus récente de l’application. Si c’est le cas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installe l’application directement à partir de là, et non à partir du répertoire d’installation initial, et le Common Language Runtime (CLR) détermine le niveau de confiance de votre application à l’aide de `<deploymentProvider>` . Si l’ordinateur est hors connexion ou `<deploymentProvider>` inaccessible, s' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installe à partir du CD-ROM et le CLR accorde l’approbation en fonction du point d’installation ; pour une installation à partir d’un CD, cela signifie que votre application reçoit une confiance totale. Toutes les mises à jour suivantes héritent de ce niveau de confiance.
 
  Toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications qui utilisent `<deploymentProvider>` doivent déclarer explicitement les autorisations dont ils ont besoin dans leur manifeste d’application, afin que l’application ne reçoive pas différents niveaux d’approbation sur des ordinateurs différents.

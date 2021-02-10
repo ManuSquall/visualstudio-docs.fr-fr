@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939537"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -37,7 +37,7 @@ Tous les autres modèles reposent sur les frameworks web Bottle, Flask ou Django
 
 ### <a name="blank-group"></a>Groupe Vide
 
-Tous les modèles de ** \<framework> projet Web vides** créent un projet avec un code réutilisable plus ou moins faible et les dépendances nécessaires déclarées dans un fichier *requirements.txt* .
+Tous les modèles de **\<framework> projet Web vides** créent un projet avec un code réutilisable plus ou moins faible et les dépendances nécessaires déclarées dans un fichier *requirements.txt* .
 
 | Modèle | Description |
 | --- | --- |
@@ -47,7 +47,7 @@ Tous les modèles de ** \<framework> projet Web vides** créent un projet avec u
 
 ### <a name="web-group"></a>Groupe web
 
-Tous les modèles de ** \<Framework> projet Web** créent une application Web de démarrage avec une conception identique, quelle que soit l’infrastructure choisie. Cette application contient les pages Accueil, À propos de et Contact, ainsi qu’une barre de navigation et une conception réactive grâce à Bootstrap. Chaque application est configurée de manière appropriée pour servir les fichiers statiques (CSS, JavaScript et polices) et utilise un mécanisme de modèle de page approprié pour le framework.
+Tous les modèles de **\<Framework> projet Web** créent une application Web de démarrage avec une conception identique, quelle que soit l’infrastructure choisie. Cette application contient les pages Accueil, À propos de et Contact, ainsi qu’une barre de navigation et une conception réactive grâce à Bootstrap. Chaque application est configurée de manière appropriée pour servir les fichiers statiques (CSS, JavaScript et polices) et utilise un mécanisme de modèle de page approprié pour le framework.
 
 | Modèle | Description |
 | --- | --- |
@@ -58,7 +58,7 @@ Tous les modèles de ** \<Framework> projet Web** créent une application Web de
 
 ### <a name="polls-group"></a>Groupe Sondages
 
-Les modèles de ** \<framework> projet Web d’interrogation** créent une application Web de démarrage via laquelle les utilisateurs peuvent voter sur différentes questions de sondage. Chaque application repose sur la structure des modèles de projet **Web** pour utiliser une base de données afin de gérer les sondages et les réponses des utilisateurs. Les applications contiennent les modèles de données appropriés et une page d’application spéciale (/seed) qui charge les sondages à partir d’un fichier *samples.json*.
+Les modèles de **\<framework> projet Web d’interrogation** créent une application Web de démarrage via laquelle les utilisateurs peuvent voter sur différentes questions de sondage. Chaque application repose sur la structure des modèles de projet **Web** pour utiliser une base de données afin de gérer les sondages et les réponses des utilisateurs. Les applications contiennent les modèles de données appropriés et une page d’application spéciale (/seed) qui charge les sondages à partir d’un fichier *samples.json*.
 
 | Modèle | Description |
 | --- | --- |

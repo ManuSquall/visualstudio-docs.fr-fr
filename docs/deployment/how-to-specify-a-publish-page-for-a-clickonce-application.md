@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf70f5ffdd81688943892c06fdf98aae73d6c57
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f58b7d8d4244f7c429c3866bf76c514bf24164ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940447"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Guide pratique pour spécifier une page de publication pour une application ClickOnce
 Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, une page Web par défaut (publish.htm) est générée et publiée avec l’application. Cette page contient le nom de l’application, un lien pour installer l’application et/ou les composants requis, ainsi qu’un lien vers une rubrique d’aide décrivant [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . La propriété **page de publication** de votre projet vous permet de spécifier un nom pour la page Web de votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
@@ -35,7 +35,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Pour spécifier une page Web personnalisée pour une application ClickOnce
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Sélectionnez le volet **publier** .
 
@@ -49,7 +49,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Pour empêcher le lancement de la page de publication chaque fois que vous publiez
 
-1. Quand un projet est sélectionné dans **Explorateur de solutions** , dans le menu **projet** , cliquez sur **Propriétés**.
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.
 
 2. Sélectionnez le volet **publier** .
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0802b91bb9cbbbe31cb156104bb7b5df3fda1282
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 32d7730d36f7e99a2557e764c2adb92862515e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941045"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider, fonction
 Crée des séries de marqueurs par défaut d’un fournisseur par défaut.
@@ -41,7 +41,7 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le fournisseur et la série de marqueurs sont tous deux correctement créés, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi

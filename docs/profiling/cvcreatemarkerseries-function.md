@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a80d833396644fa6c2a025dc24b6db473b2b393
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 8915724c39a656917d6565c60ddc7dfbb0737564
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941032"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries, fonction
 Crée des séries de marqueurs pour un fournisseur donné.
@@ -50,7 +50,7 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque la série de marqueurs est correctement créée, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
  **Unicode** : CvCreateMarkerSeriesW

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d1b41d9d62bbf5a159ec3a9d60f4e2edf5cc115
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: f23d3ceadf2ee8d1a0c6b53b395c379caf505179
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940993"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider, fonction
 Initialise le fournisseur de marqueurs. Doit être appelée avant toute autre fonction du kit SDK du visualiseur concurrentiel.
@@ -41,7 +41,7 @@ HRESULT CvInitProvider(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le fournisseur est correctement initialisé, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi

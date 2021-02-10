@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3a2f124fa7e83e9f85e572276eed1851f42f7047
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939550"
 ---
 # <a name="calltarget-task"></a>CallTarget (tâche)
 
@@ -40,7 +40,7 @@ Appelle les cibles spécifiées dans le fichier projet.
 | `Targets` | Paramètre `String[]` facultatif.<br /><br /> Spécifie la ou les cibles à générer. |
 | `UseResultsCache` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le résultat mis en cache est retourné, le cas échéant.<br /><br /> **Remarque** Si une tâche MSBuild est exécutée, son résultat est mis en cache dans une portée (ProjectFileName, GlobalProperties)[TargetNames] sous la forme d’une liste d’éléments de build. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  Si une cible spécifiée dans `Targets` échoue, et si `RunEachTargetSeparately` est `true`, la tâche continue à générer les cibles restantes.
 

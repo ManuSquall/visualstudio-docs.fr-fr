@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 5dd59467292769608ea2eaea4a2520870906aaed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941240"
 ---
 # <a name="compare-performance-data-files"></a>Comparer des fichiers de données de performances
 
@@ -35,6 +35,6 @@ Les données de profilage qui peuvent être utilisées pour la comparaison compr
 
 Vous pouvez définir un seuil pour réduire le bruit et exclure de l’affichage les lignes du tableau de comparaison dont la valeur n’a pas changé de manière significative.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 [Comment : comparer des fichiers de données de performances](../profiling/how-to-compare-performance-data-files.md)

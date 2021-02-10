@@ -14,15 +14,15 @@ dev_langs:
 ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2412aeade894b32ce3c42855ecf3f3dacf9bc16
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 73766012220d2c77d667dd01f922abc539aaf108
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940721"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Informations sur le chargement de symboles, boîte de dialogue
 La boîte de dialogue **Informations sur le chargement de symboles** s’ouvre quand vous cliquez avec le bouton droit sur la fenêtre **Modules** et que vous choisissez **Informations sur le chargement de symboles**.

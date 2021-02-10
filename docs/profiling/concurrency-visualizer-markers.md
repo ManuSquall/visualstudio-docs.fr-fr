@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c3ff013f546393447b8303575489164a3a7be00a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941136"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marqueurs du visualiseur concurrentiel
 Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représentent les événements d’une application.  En règle générale, l’application génère ces événements pour désigner les phases ou les occurrences d’une application.  Les événements peuvent être générés par l’application ou par les bibliothèques et les runtimes qu’utilise l’application.

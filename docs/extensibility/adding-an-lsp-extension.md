@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939290"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -109,7 +109,7 @@ textDocument/renommer | Oui
 
 Pour créer une extension de service de langage à l’aide d’un serveur de langage LSP, commencez par vérifier que la charge de travail **développement d’extension Visual Studio** est installée pour votre instance de vs.
 
-Ensuite, créez un projet VSIX en accédant à **fichier**  >  **nouveau projet**  >  **extension Visual C#**  >  **Extensibility**  >  **projet VSIX**:
+Ensuite, créez un projet VSIX en accédant à **fichier**  >  **nouveau projet**  >  **extension Visual C#**  >    >  **projet VSIX**:
 
 ![créer un projet VSIX](media/lsp-vsix-project.png)
 
@@ -482,7 +482,7 @@ La fonctionnalité de couche intermédiaire est toujours en cours de développem
 
 Pour afficher le code source d’un exemple d’extension à l’aide de l’API cliente LSP dans Visual Studio, consultez l’exemple VSSDK-Extensibility-Samples [LSP](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol).
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 **Je souhaite créer un système de projet personnalisé pour compléter mon serveur de langage LSP afin d’offrir une prise en charge plus riche des fonctionnalités dans Visual Studio. Comment faire ?**
 

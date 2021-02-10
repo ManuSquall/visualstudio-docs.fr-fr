@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4fc3f49038a44b2b2bd5b467d6e1874f8a9a9803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940759"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifications de code prises en charge (C# et Visual Basic)
 Modifier &amp; Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.
@@ -59,7 +59,7 @@ Le tableau ci-dessous montre les modifications qui peuvent être apportées à C
 |-|-|
 |Tous les éléments de code|Renommage|
 |Espaces de noms|Ajouter|
-|Espaces de noms, types, membres|Supprimer|
+|Espaces de noms, types, membres|DELETE|
 |Génériques|Ajouter ou modifier|
 |Interfaces|Modifier|
 |Types|Ajouter un membre abstrait ou virtuel, ajouter un remplacement (voir les [Détails](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|

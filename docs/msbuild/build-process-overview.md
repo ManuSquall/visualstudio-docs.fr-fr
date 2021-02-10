@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, build process overview
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939654"
 ---
 # <a name="how-msbuild-builds-projects"></a>Comment MSBuild génère des projets
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59206c206f04aaf3506771ee2310daebd0af273a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68919522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939745"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
 
@@ -60,12 +60,12 @@ Voici d’autres raccourcis clavier utiles.
 |Fonctionnalité|Description|Raccourci clavier|
 |-------------|-----------------| - |
 |IDE|Activer et désactiver le contraste élevé. <br> <br> **Remarque :** Raccourci clavier Windows standard|**ALT gauche** + **Décalage vers** + la gauche **Impr** . écran|
-|Boîte de dialogue|Cocher ou décocher une case dans une boîte de dialogue. <br> <br> **Remarque :** Raccourci clavier Windows standard|**Espace**|
+|Boîte de dialogue|Cocher ou décocher une case dans une boîte de dialogue. <br> <br> **Remarque :** Raccourci clavier Windows standard|**Touche**|
 |Menu contextuels|Ouvrir un menu contextuel (clic droit). <br> <br> **Remarque :** Raccourci clavier Windows standard|**MAJ** + **F10**|
 |Menus|Accéder rapidement à un élément de menu à l’aide de ses touches accélérateur. Choisissez la touche **ALT** suivie des lettres soulignées dans un menu pour activer la commande. Par exemple, pour afficher la boîte de dialogue Ouvrir un projet dans Visual Studio, choisissez **ALT** + **F** + **O** + **P**.  <br><br> **Remarque :** Raccourci clavier Windows standard|**ALT**  +  **[lettre]**|
 |Zone de recherche|Utiliser la fonctionnalité de recherche dans Visual Studio.|**CTRL** + **Q**|
-|Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils.|**CTRL** + **Flèche haut**<br /><br /> et<br /><br /> **CTRL** + **Flèche bas**|
-|Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur.|**Entrez**|
+|Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils.|**CTRL** + **Flèche haut**<br /><br /> and<br /><br /> **CTRL** + **Flèche bas**|
+|Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur.|**Entrée**|
 |Boîte de dialogue Options : environnement > clavier|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**.|**Retour arrière**|
 |Fenêtre Outil Notifications|Ouvrez la fenêtre Outil Notifications à l’aide de deux combinaisons de touches de raccourci clavier, l’une après de l’autre. Affichez ensuite une notification en utilisant les touches de direction pour la sélectionner.| **CTRL** + **&#92;**, **CTRL** + **N**|
 

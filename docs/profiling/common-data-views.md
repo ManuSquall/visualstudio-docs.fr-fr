@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: acb27aa2d5a1a0dd032612635f4b6549fa6671e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941279"
 ---
 # <a name="common-data-views"></a>Vues de données communes
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui sont communs à toutes les méthodes de profilage.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Mode Résumé](../profiling/summary-view.md)
 
  Décrit la vue et le rapport Résumé. Les colonnes de données qui s’affichent dépendent de la méthode de profilage.

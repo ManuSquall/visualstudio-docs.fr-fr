@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6a8ffbaa0fb10929d013a351ebffa8e3f4b529
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62999126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939433"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -31,7 +31,7 @@ IntelliSense fournit également des suggestions pour les membres des objets R 
 
 ![Suggestions IntelliSense pour les membres d’objet](media/intellisense-auto-complete-r-objects.png)
 
-Appuyez sur **Échap** pour fermer complètement le menu. Vous pouvez le rétablir avec l’espace **CTRL** + **Space**.
+Appuyez sur **Échap** pour fermer complètement le menu. Vous pouvez le rétablir avec l’espace **CTRL** + .
 
 Le fait de taper la parenthèse ouvrante `(` pour un appel de fonction insère la parenthèse fermante `)` et affiche l’aide de la signature comme indiqué plus haut :
 

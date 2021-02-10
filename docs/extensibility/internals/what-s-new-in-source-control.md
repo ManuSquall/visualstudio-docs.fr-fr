@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2af2c321eb91407808e71f4c0126b86d79980c53
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5a7df9af8dbd4af708483b638c0a86470a7d2220
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940044"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Nouveautés du contrôle de code source pour le kit de développement logiciel (SDK) Visual Studio 2015
 
@@ -53,5 +53,5 @@ Les étapes suivantes fournissent une vue d’ensemble de ce qui est nécessaire
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>
-- [Présentation](../../extensibility/internals/source-control-integration-overview.md)
+- [Vue d'ensemble](../../extensibility/internals/source-control-integration-overview.md)
 - [Création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md)

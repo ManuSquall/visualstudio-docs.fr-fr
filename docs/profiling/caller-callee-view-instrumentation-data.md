@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd9f65fbce6f0326fab89acfef601652c9bc7b9
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 06de8e10c57bdf6278310467d3cf0505b9c8ce4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939485"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Vue Appelant/appelé - Données d’instrumentation
 La vue Appelant/Appelé affiche des données de profilage pour la fonction sélectionnée, ainsi que pour ses fonctions parents et enfants dans l’arborescence des appels. La vue Appelant/Appelé comprend trois grilles.

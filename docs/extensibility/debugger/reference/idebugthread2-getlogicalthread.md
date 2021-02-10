@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05d788f63d4807ccfd8e99d36cbf858df2be499f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940252"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 Les moteurs de débogage n’implémentent pas cette méthode.
@@ -28,14 +28,14 @@ Les moteurs de débogage n’implémentent pas cette méthode.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetLogicalThread( 
+HRESULT GetLogicalThread( 
    IDebugStackFrame2*     pStackFrame,
    IDebugLogicalThread2** ppLogicalThread
 );
 ```
 
 ```csharp
-int GetLogicalThread( 
+int GetLogicalThread( 
    IDebugStackFrame2        pStackFrame,
    out IDebugLogicalThread2 ppLogicalThread
 );
@@ -48,7 +48,7 @@ dans Objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugs
 `ppLogicalThread`\
 à Retourne une `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage doit définir cette valeur sur une valeur null.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  Les implémentations du moteur de débogage retournent toujours `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Voir aussi

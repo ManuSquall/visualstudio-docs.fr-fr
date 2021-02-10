@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940343"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package &gt; , élément (programme d’amorçage)
 L' `Package` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de package.
@@ -149,9 +149,9 @@ L' `Package` élément est l’élément XML de niveau supérieur à l’intéri
 |--------------------| - |
 | `Culture` | Obligatoire. Définit la culture pour ce package, qui détermine la langue à utiliser. Cet attribut est une clé de l' `Strings` élément, qui répertorie les chaînes spécifiques à la culture pour les noms de produits et les messages d’erreur pendant l’installation. |
 | `Name` | Obligatoire. Nom du package affiché au développeur dans un outil tel que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Cet attribut est une clé de l' `Strings` élément, qui doit contenir un `String` élément dont les `Name` Propriétés et sont `Culture` définies de façon à correspondre aux `Name` `Culture` Propriétés et de `Package` . |
-| `LicenseAgreement` | Optionnel. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence End-User (CLUF).  Il peut s’agir d’un fichier de texte brut ( *. txt* ) ou d’un format de texte enrichi. ( *. rtf* ) |
+| `LicenseAgreement` | Facultatif. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence End-User (CLUF).  Il peut s’agir d’un fichier de texte brut (*. txt*) ou d’un format de texte enrichi. (*. rtf*) |
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple de code suivant montre un fichier de package complet pour redistribuer le .NET Framework 2,0.
 
 ```xml

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940915"
 ---
 # <a name="ribbon-designer"></a>Concepteur de ruban
   Le concepteur de ruban est une zone de conception visuelle. Utilisez le concepteur de ruban pour ajouter des onglets, des groupes et des contrôles personnalisés au ruban d’une application Microsoft Office.
@@ -147,7 +147,7 @@ ms.locfileid: "97528001"
 |**ComboBox**|Zone d’édition avec une zone de liste jointe. Les utilisateurs peuvent taper ou sélectionner leur choix. La zone affiche la sélection actuelle. Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> propriété pour ajouter et supprimer des éléments au moment de l’exécution avant ou après le chargement du ruban dans l’application Office.|
 |**Liste déroulante**|Liste des éléments que l’utilisateur peut sélectionner. L’utilisateur ne peut pas taper un nouvel élément dans une liste déroulante.<br /><br /> Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propriété pour ajouter des éléments à la liste. Vous pouvez ajouter et supprimer des éléments au moment de l’exécution.<br /><br /> Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propriété pour ajouter des boutons à la liste. Toutefois, vous ne pouvez pas ajouter ni supprimer des boutons au moment de l’exécution après le chargement du ruban dans l’application Office.|
 |**EditBox**|Zone dans laquelle l’utilisateur peut taper du texte.|
-|**Galerie**|Menu qui présente un tableau ou une grille de choix visuels à partir de laquelle les utilisateurs peuvent sélectionner. Vous pouvez contrôler la disposition des sélections dans le menu. Utilisez les <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> Propriétés et <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> pour spécifier le nombre de lignes et de colonnes qui afficheront les éléments et les boutons de la Galerie.|
+|**Office**|Menu qui présente un tableau ou une grille de choix visuels à partir de laquelle les utilisateurs peuvent sélectionner. Vous pouvez contrôler la disposition des sélections dans le menu. Utilisez les <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> Propriétés et <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> pour spécifier le nombre de lignes et de colonnes qui afficheront les éléments et les boutons de la Galerie.|
 |**Étiquette**|Texte que vous pouvez utiliser pour identifier les contrôles sur le ruban.|
 |**Menu**|Liste déroulante qui peut contenir l’un des contrôles suivants :<br /><br /> -Button<br />-Case à cocher<br />-Galerie<br />-Menu<br />-Bouton partagé<br />-Bouton bascule<br />-Séparateur<br /><br /> Pour ajouter un contrôle à un menu dans le concepteur de ruban, cliquez sur la flèche vers le bas dans le menu pour exposer l’aire de conception de menu. Vous pouvez ensuite faire glisser des contrôles du ruban de la **boîte à outils** vers le menu. Pour réorganiser les contrôles, faites-les glisser vers les positions souhaitées.<br /><br /> Pour ajouter des contrôles au <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> après le chargement du ruban dans l’application Office, vous devez affecter <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> à la propriété la **valeur true** avant le chargement du ruban. Pour plus d’informations sur la façon de procéder, consultez [vue d’ensemble du modèle d’objet de ruban](../vsto/ribbon-object-model-overview.md).|
 |**Séparateur**|Barre fine utilisée pour séparer des éléments dans une liste. En cas d’ajout à un groupe, la barre est verticale. En cas d’ajout à un menu, la barre est horizontale.|

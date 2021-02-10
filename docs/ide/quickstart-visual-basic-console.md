@@ -9,17 +9,17 @@ ms.topic: quickstart
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f3dc8642e2cf8e965e2ad303bed79931d2645c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e34bbd72810932f385d53a25ca1670fa059c1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939927"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
 
@@ -37,7 +37,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Tout d’abord, vous allez créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -97,7 +97,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Création de l'application
+## <a name="create-the-application"></a>Créer l’application
 
 Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nommé votre projet, Visual Studio crée une application « Hello World » simple. Il appelle la méthode <xref:System.Console.WriteLine%2A> pour afficher la chaîne littérale « Hello World ! » dans la fenêtre de console.
 

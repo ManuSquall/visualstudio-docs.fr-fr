@@ -11,15 +11,15 @@ helpviewer_keywords:
 - C#, code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e4656e0769075be26db5bd06108093a49fb5e2af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941539"
 ---
 # <a name="c-code-snippets"></a>Extraits de code C#
 
@@ -59,7 +59,7 @@ Par défaut, les extraits de code suivants sont inclus dans Visual Studio pour C
 |iterindex|Crée une paire itérateur/indexeur « named » à l’aide d’une classe imbriquée.|Dans une classe ou un struct.|
 |lock|Crée un bloc [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |mbox|Crée un appel à <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Il peut être nécessaire d’ajouter une référence à *System.Windows.Forms.dll*.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
-|namespace|Crée une déclaration [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dans un espace de noms (notamment l’espace de noms global).|
+|espace de noms|Crée une déclaration [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dans un espace de noms (notamment l’espace de noms global).|
 |prop|Crée une déclaration de [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dans une classe ou un struct.|
 |propfull|Crée une déclaration de propriété avec des accesseurs `get` et `set`.|Dans une classe ou un struct.|
 |propg|Crée une [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) en lecture seule avec un accesseur `set` private.|Dans une classe ou un struct.|

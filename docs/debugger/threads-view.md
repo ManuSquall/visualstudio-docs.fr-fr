@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fb0a0f4a1610eb23d68b6965e3f45a661ba25366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940590"
 ---
 # <a name="threads-view"></a>vue Threads
 La vue threads est une liste plate de tous les threads associés à Windows sur votre système. L’ID de thread et le nom de module pour chaque thread sont affichés. Les processus ne sont pas inclus, mais vous pouvez facilement trouver le processus qui possède un thread sélectionné.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30318e1f17f93d1c9fc68bf5a4a9a0d4ae4cf353
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3454624feab268af089a5e82e38c0cce3d23ab03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940304"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Obtient le nombre d’éléments contenus dans le tableau.
@@ -28,7 +28,7 @@ Obtient le nombre d’éléments contenus dans le tableau.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetNumberOfElements( 
+HRESULT GetNumberOfElements( 
    DWORD* pdwNumElements
 );
 ```
@@ -43,7 +43,7 @@ int GetNumberOfElements(
 `pdwNumElements`\
 à Retourne le nombre d’éléments dans le tableau.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

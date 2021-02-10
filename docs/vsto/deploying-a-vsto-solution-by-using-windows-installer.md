@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 75c2d97e8cd30bb3cf5605d50e65a68513590647
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939368"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Déploiement d’une solution VSTO à l’aide de Windows Installer
 
@@ -42,7 +42,7 @@ Cet article a été mis à jour par Microsoft avec l’autorisation des auteurs 
 
 **S’applique à :** Visual Studio Tools pour Office, Microsoft Office Microsoft Visual Studio.
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Vous pouvez développer une solution VSTO et déployer la solution à l’aide d’un package Windows Installer. Cette discussion comprend les étapes de déploiement d’un complément Office simple.
 

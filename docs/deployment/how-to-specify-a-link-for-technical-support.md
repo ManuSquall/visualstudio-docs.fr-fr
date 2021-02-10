@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 335f41abf0ca2914ca603f7adbce7dea98eee028
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940486"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Guide pratique pour spécifier un lien pour le support technique
 Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, la propriété **URL de support** identifie une page Web ou un partage de fichiers où les utilisateurs peuvent accéder pour obtenir des informations sur l’application. Cette propriété est facultative. s’il est spécifié, l’URL s’affiche dans la boîte de dialogue **Ajout/suppression de programmes** de l’entrée de l’application.
@@ -36,7 +36,7 @@ Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
 ### <a name="to-specify-a-support-url"></a>Pour spécifier une URL de support technique
 
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions** , dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l'onglet **Publier**.
 

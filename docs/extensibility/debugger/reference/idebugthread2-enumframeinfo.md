@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a254de60995eb5e7902eda80cf50c4af227a756f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940278"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Récupère une liste des frames de pile pour ce thread.
@@ -28,7 +28,7 @@ Récupère une liste des frames de pile pour ce thread.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumFrameInfo ( 
+HRESULT EnumFrameInfo ( 
    FRAMEINFO_FLAGS        dwFieldSpec,
    UINT                   nRadix,
    IEnumDebugFrameInfo2** ppEnum
@@ -36,7 +36,7 @@ HRESULT EnumFrameInfo ( 
 ```
 
 ```csharp
-int EnumFrameInfo ( 
+int EnumFrameInfo ( 
    enum_FRAMEINFO_FLAGS     dwFieldSpec,
    uint                     nRadix,
    out IEnumDebugFrameInfo2 ppEnum
@@ -53,7 +53,7 @@ dans Base utilisée pour mettre en forme les informations numériques dans l’�
 `ppEnum`\
 à Retourne un objet [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) qui contient une liste de structures [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) décrivant le frame de pile.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

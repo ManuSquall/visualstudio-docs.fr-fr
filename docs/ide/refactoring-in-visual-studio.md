@@ -10,15 +10,15 @@ f1_keywords:
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c4b00ce4ebdfc253735783d20fb90c62bae49b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c1399689b2df82102a193b5ab698c0cd9bd2f7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939784"
 ---
 # <a name="refactor-code"></a>Refactoriser du code
 
@@ -37,5 +37,5 @@ Diverses opérations de refactorisation sont disponibles pour les différents la
 - [Actions rapides](../ide/quick-actions.md)
 - [IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Aperçu des modifications](../ide/preview-changes.md)
+- [Prévisualiser les modifications](../ide/preview-changes.md)
 - [Refactorisation (Visual Studio pour Mac)](/visualstudio/mac/refactoring)
