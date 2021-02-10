@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6cab0d0d0f5f1c2e491c9aa0fe9efd26b39e51df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216d1e0e007376b88b8befd2bf654a65192b13c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953641"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 Détermine si l’objet est un proxy transparent.
@@ -42,7 +42,7 @@ int IsProxy (
 `pfIsProxy`\
 [out] `TRUE` Si l’objet est un proxy transparent ; Sinon, `FALSE` .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

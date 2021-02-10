@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd50f81a75ce3ca189c47db12f1f4024b244856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953706"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 Teste si cet objet est une référence null.
@@ -28,7 +28,7 @@ Teste si cet objet est une référence null.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT IsNullReference( 
+HRESULT IsNullReference( 
    BOOL* pfIsNull
 );
 ```
@@ -43,7 +43,7 @@ int IsNullReference(
 `pfIsNull`\
 à Retourne une valeur différente de zéro ( `TRUE` ) si cet objet est une référence null ; sinon, retourne zéro ( `FALSE` ).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

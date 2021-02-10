@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6801176964a47646f03091131e1be89cf63c97f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953576"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ IDebugObject : IUnknown
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|Obtient la taille de l’objet.|
+|[GetSize,](../../../extensibility/debugger/reference/idebugobject-getsize.md)|Obtient la taille de l’objet.|
 |[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|Obtient la valeur de l’objet sous la forme d’une série d’octets consécutive.|
 |[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|Définit la valeur de l’objet à partir d’une série consécutive d’octets.|
 |[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|Définit la valeur de référence de cet objet.|

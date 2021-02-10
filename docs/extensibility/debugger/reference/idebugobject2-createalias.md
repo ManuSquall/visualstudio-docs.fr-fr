@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48badc2f418dec9fd34906b6925db1c2a9dfd490
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953511"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Crée un alias ou un ID unique pour cet objet ou retourne un alias existant.
@@ -28,14 +28,14 @@ Crée un alias ou un ID unique pour cet objet ou retourne un alias existant.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT CreateAlias(
-   IDebugAlias** ppAlias
+HRESULT CreateAlias(
+   IDebugAlias** ppAlias
 );
 ```
 
 ```csharp
-int CreateAlias(
-   out IDebugAlias ppAlias
+int CreateAlias(
+   out IDebugAlias ppAlias
 );
 ```
 
@@ -43,7 +43,7 @@ int CreateAlias(
 `ppAlias`\
 à Alias nouveau (ou existant).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

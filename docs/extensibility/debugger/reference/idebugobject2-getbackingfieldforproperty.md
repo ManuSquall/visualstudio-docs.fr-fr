@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5b9fed9b071f34c119c8e4a5af12c1df7990f4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f502479d4c74eb0b5cfa71db52698121830e66e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953472"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 Obtient le champ ou la variable (le cas échéant) qui peut sauvegarder la propriété représentée par cet objet.
@@ -28,14 +28,14 @@ Obtient le champ ou la variable (le cas échéant) qui peut sauvegarder la propr
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetBackingFieldForProperty(
-   IDebugObject2** ppObject
+HRESULT GetBackingFieldForProperty(
+   IDebugObject2** ppObject
 );
 ```
 
 ```csharp
-int GetBackingFieldForProperty(
-   out IDebugObject2 ppObject
+int GetBackingFieldForProperty(
+   out IDebugObject2 ppObject
 );
 ```
 
@@ -43,7 +43,7 @@ int GetBackingFieldForProperty(
 `ppObject`\
 à Objet [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) décrivant le champ de stockage.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
