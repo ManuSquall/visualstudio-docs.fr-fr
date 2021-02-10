@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c04b8d700d7739f0e4ef1fba259aab0595cea28c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947812"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Guide pratique pour ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce
 Avec le déploiement d’applications approuvées, vous pouvez configurer les ordinateurs clients pour que vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] s’exécutent avec un niveau de confiance supérieur sans solliciter l’utilisateur. Les procédures suivantes montrent comment utiliser l’outil en ligne de commande CertMgr.exe pour ajouter le certificat d’un éditeur au magasin d’éditeurs approuvés sur un ordinateur client.
@@ -40,7 +40,7 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
 
 1. Obtenez un certificat numérique à partir d’une autorité de certification.
 
-2. Exportez le certificat au format Base64 X.509 ( *.cer* ). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exportez le certificat au format Base64 X.509 (*.cer*). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :
 
@@ -50,7 +50,7 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
 
 1. Obtenez un certificat numérique à partir d’une autorité de certification.
 
-2. Exportez le certificat au format Base64 X.509 ( *.cer* ). Pour plus d’informations sur les formats de certificats, consultez [exporter un certificat](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exportez le certificat au format Base64 X.509 (*.cer*). Pour plus d’informations sur les formats de certificats, consultez [exporter un certificat](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :
 

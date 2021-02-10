@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 607f4f4af3021389628fcc1be446ebbe95628b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05226572d7f1b708745887338c654674e71d0f5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947080"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Crée un énumérateur pour les constructeurs pour cette classe.
@@ -28,7 +28,7 @@ Crée un énumérateur pour les constructeurs pour cette classe.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumConstructors( 
+HRESULT EnumConstructors( 
    CONSTRUCTOR_ENUM   cMatch,
    IEnumDebugFields** ppEnum
 );
@@ -48,7 +48,7 @@ dans Valeur de l’énumération [CONSTRUCTOR_ENUM](../../../extensibility/debug
 `ppEnum`\
 à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des constructeurs. Retourne une valeur null s’il n’existe aucun constructeur.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a aucun constructeur. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

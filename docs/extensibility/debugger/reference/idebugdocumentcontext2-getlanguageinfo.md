@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d139029bf65149ae59fb037434f6e7d6298f1d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce260e172e8f09ffac38fa8c267c286af15c32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947071"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 Obtient le langage associé à ce contexte de document.
@@ -46,9 +46,9 @@ int GetLanguageInfo(
 à Retourne le nom du langage qui implémente le code dans ce contexte de document.
 
 `pguidLanguage`\
-à Retourne le GUID du langage qui implémente le code dans ce contexte de document.  Par exemple, `guidVBScriptLang` ou `guidCPPLang`. Ce GUID n’est pas limité aux langues fournies par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
+à Retourne le GUID du langage qui implémente le code dans ce contexte de document. Par exemple, `guidVBScriptLang` ou `guidCPPLang`. Ce GUID n’est pas limité aux langues fournies par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

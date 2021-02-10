@@ -16,15 +16,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 51039c71c97614cb9e43df263b3d7155c9cb86f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947799"
 ---
 # <a name="custom-document-properties-overview"></a>Vue d’ensemble des propriétés de document personnalisées
 
@@ -32,7 +32,7 @@ Quand vous générez un projet au niveau du document, Visual Studio ajoute deux 
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="_assemblyname"></a>\_AssemblyName
+## <a name="_assemblyname"></a>\_NomAssembly
 
 Cette propriété contient le CLSID d’une interface dans le composant chargeur de solution Office de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . La valeur du CLSID est 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B. Vous ne devez jamais modifier cette valeur.
 

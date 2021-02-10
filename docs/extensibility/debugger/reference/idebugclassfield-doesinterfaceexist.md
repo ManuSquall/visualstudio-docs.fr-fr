@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba732b698f7372772142fda73e71d9e22aa443a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b7116b9e675605863805fb413340ea8b45ec608
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947110"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Détermine si une interface spécifique est définie dans la classe.
@@ -28,7 +28,7 @@ Détermine si une interface spécifique est définie dans la classe.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT DoesInterfaceExist( 
+HRESULT DoesInterfaceExist( 
    LPCOLESTR pszInterfaceName
 );
 ```
@@ -43,7 +43,7 @@ int DoesInterfaceExist(
 `pszInterfaceName`\
 dans Chaîne contenant le nom de l’interface à rechercher.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK, retourne S_FALSE si l’interface n’existe pas ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
