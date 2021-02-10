@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537719"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089591"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
 
 ## <a name="activation-steps"></a>Étapes d’activation
 Pour utiliser votre compte de développeur Windows, vous devez créer un compte ou vous connecter à l’aide d’un compte existant.
+
+> [!IMPORTANT]
+> La création d’un compte de développeur Windows requiert l’utilisation d’un compte Microsoft (MSA).  L’utilisation de comptes de Azure Active Directory n’est pas prise en charge.  
 
 Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privée » pour ce processus.  Par exemple, dans Google Chrome, créez une nouvelle fenêtre « incognito ».  Dans Internet Explorer, ouvrez une nouvelle fenêtre de navigation InPrivate.
 
@@ -65,7 +68,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 - [Documentation de Visual Studio](/visualstudio/)
 - [Documentation Azure DevOps](/azure/devops/)
 - [Documentation Azure](/azure/)
