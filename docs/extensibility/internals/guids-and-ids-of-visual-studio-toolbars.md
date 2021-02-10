@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970216"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID et ID des barres d’outils de Visual Studio
 Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses dans l’environnement de développement intégré (IDE) de Visual Studio et des groupes qu’ils contiennent. Ces valeurs sont définies dans les fichiers *. vsct* installés dans le cadre du kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [commandes, menus et groupes définis par l’IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -40,9 +40,9 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 
  Seuls les groupes peuvent être directement issus des barres d’outils. Pour ajouter un groupe, affectez à son parent le GUID et l’ID de la barre d’outils. Pour ajouter un bouton à une barre d’outils, définissez son parent sur un groupe dans la barre d’outils.
 
-|Barre d'outils|ID|
+|Barre d’outils|id|
 |-------------|--------|
-|Standard|IDM_VS_TOOL_STANDARD|
+|standard|IDM_VS_TOOL_STANDARD|
 |Build|IDM_VS_TOOL_BUILD|
 |Éditeur de texte|IDM_VS_TOOL_TEXTEDITOR|
 |Débogage|guidVSDebugGroup : IDM_DEBUG_TOOLBAR|
@@ -51,7 +51,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 ### <a name="special-toolbars"></a>Barres d’outils spéciales
  Ces barres d’outils sont définies par l’IDE de Visual Studio, mais elles servent des fonctions spécialisées et n’hébergent pas de groupes de commandes.
 
-|Barre d'outils|ID|
+|Barre d’outils|id|
 |-------------|--------|
 |Add, commande|IDM_VS_TOOL_ADDCOMMAND|
 |Indéfini|IDM_VS_TOOL_UNDEFINED|
@@ -88,7 +88,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |Retrait|IDG_VS_EDITTOOLBAR_INDENT|
-|Comment|IDG_VS_EDITTOOLBAR_COMMENT|
+|Commentaire|IDG_VS_EDITTOOLBAR_COMMENT|
 |Signets|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>Déboguer les groupes de barres d’outils
@@ -97,7 +97,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 |----------|--------|
 |Exécution|IDM_DEBUG_TOOLBAR|
 |Exécution pas à pas|IDG_DEBUG_TOOLBAR_STEPPING|
-|Regardez|IDG_DEBUG_TOOLBAR_WATCH|
+|Espion|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>Groupes de barres d’outils d’emplacement de débogage
@@ -112,7 +112,7 @@ Cette rubrique énumère les valeurs GUID et ID des barres d’outils incluses d
 > [!NOTE]
 > Les barres d’outils et les groupes utilisent le GUID `guidSHLMainMenu` , sauf spécification contraire à l’aide de la syntaxe GUID : ID. Lorsqu’un GUID est spécifié pour une barre d’outils, il s’applique également aux groupes qui descendent de cette barre d’outils.
 
-|Fenêtre outil|Barre d'outils|Groupes|
+|Fenêtre outil|Barre d’outils|Groupes|
 |-----------------|-------------|------------|
 |Explorateur de solutions|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.. 5,5|
 |Explorateur de serveurs|guid_SE_MenuGroup : IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|

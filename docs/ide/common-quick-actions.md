@@ -5,18 +5,18 @@ ms.date: 03/28/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d24b03bc79c32c32c570d26b7607d1ba36c1c1df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970905"
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
@@ -30,7 +30,7 @@ Les actions rapides de cette section corrigent les erreurs dans le code qui prov
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Symbole ou mot clé mal orthographié correct
 
-Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu ampoule en tant que **« changer » en \<misspelled word> \<correct word> **«». Par exemple :
+Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu ampoule en tant que **« changer » en \<misspelled word> \<correct word>**«». Par exemple :
 
 ```csharp
 // Before

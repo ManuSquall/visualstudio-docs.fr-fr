@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970008"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Champs et interfaces de la fenêtre Propriétés
 Le modèle de sélection permettant de déterminer les informations qui s’affichent dans la fenêtre **Propriétés** est basé sur la fenêtre qui a le focus dans l’IDE. Chaque fenêtre et objet dans la fenêtre sélectionnée peut faire l’objet d’un push de l’objet de contexte de sélection dans le contexte de sélection global. L’environnement met à jour le contexte de sélection global avec les valeurs d’un frame de fenêtre lorsque cette fenêtre a le focus. Lorsque le focus change, le contexte de sélection est donc sélectionné.

@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969618"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : Passer en revue, commenter et tester votre code
 
@@ -74,17 +74,17 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
 1. Avant d’exécuter votre application, enregistrez-la en choisissant le bouton **enregistrer tout** de la barre d’outils, qui doit ressembler à la capture d’écran suivante.
 
      ![Enregistrer tout, bouton de barre d’outils](../ide/media/express_iconsaveall.png)<br>
-**_Enregistrer tout_* _ _button *
+***Enregistrer tout** _ _button *
 
      Vous pouvez également enregistrer votre application en choisissant **fichier**  >  **enregistrer tout** dans la barre de menus (ou en appuyant sur **CTRL** + **MAJ** + **S**). Il est conseillé d'enregistrer votre travail régulièrement.
 
      Lorsqu’il est en cours d’exécution, votre programme doit ressembler à l’image suivante.
 
-     ![Visionneuse d'images](../ide/media/express_pictureviewerdonerun.png)<br>**_Visionneuse d’images_* _
+     ![Visionneuse d'images](../ide/media/express_pictureviewerdonerun.png)<br>***Visionneuse d'images***
 
 ## <a name="to-test-your-app"></a>Pour tester votre application
 
-1. Choisissez la touche _ *F5** ou cliquez sur le bouton **Démarrer le débogage** de la barre d’outils.
+1. Appuyez sur la touche **F5** ou choisissez le bouton **Démarrer le débogage** de la barre d’outils.
 
 1. Choisissez le bouton **Afficher une image** pour exécuter le code que vous venez d’écrire. Tout d’abord, l’application ouvre une boîte de dialogue **ouvrir un fichier** . Vérifiez que vos filtres s’affichent dans la liste déroulante **Types de fichiers** en bas de la boîte de dialogue. Ensuite, naviguez jusqu'à une image et ouvrez-la. En général, des échantillons d’images sont fournis avec le système d’exploitation Windows. Ils se trouvent dans votre dossier *Mes documents*, à l’intérieur du dossier *Mes images\Échantillons d’images*.
 

@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 46b0a8005ea76445a1d6205c8635963dbaedd0d4
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 6521df812d708744a617c0e3fe95285fdbfa0262
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970606"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Guide pratique pour sélectionner l’environnement Python d’un projet
 
@@ -78,7 +78,7 @@ Une fois qu’un environnement virtuel est ajouté à votre projet, il apparaît
 
 Vous pouvez créer un nouvel environnement virtuel directement dans Visual Studio de la façon suivante :
 
-1. Cliquez avec le bouton droit sur **environnements python** dans **Explorateur de solutions** , puis sélectionnez **Ajouter un environnement virtuel**pour faire apparaître la boîte de dialogue suivante :
+1. Cliquez avec le bouton droit sur **environnements python** dans **Explorateur de solutions** , puis sélectionnez **Ajouter un environnement virtuel** pour faire apparaître la boîte de dialogue suivante :
 
     ![Création d’un environnement virtuel](media/environments/environments-add-virtual-1.png)
 
@@ -169,7 +169,7 @@ Sachez que les entrées affichées ne sont pas toujours exactes, et que l’inst
 Sachez également que Visual Studio ne prend pas en charge pour le moment l’utilisation de `conda` pour installer des packages dans un environnement conda. Utilisez plutôt `conda` en ligne de commande.
 
 > [!Tip]
-> Une situation courante dans laquelle PIP ne parvient pas à installer un package est lorsque le package contient du code source pour les composants natifs dans les fichiers * \* . pyd* . Si la version requise de Visual Studio n’est pas installée, pip n’est pas en mesure de compiler ces composants. Le message d’erreur affiché dans ce cas est **erreur : vcvarsall.bat est introuvable**. `easy_install` est souvent en mesure de télécharger des fichiers binaires précompilés, et vous pouvez télécharger un compilateur approprié pour les versions antérieures de Python à partir de [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Pour plus d’informations, consultez le billet [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Comment gérer l’erreur « unable to find vcvarsallbat ») sur le blog de l’équipe Python Tools.
+> Une situation courante dans laquelle PIP ne parvient pas à installer un package est lorsque le package contient du code source pour les composants natifs dans les fichiers *\* . pyd* . Si la version requise de Visual Studio n’est pas installée, pip n’est pas en mesure de compiler ces composants. Le message d’erreur affiché dans ce cas est **erreur : vcvarsall.bat est introuvable**. `easy_install` est souvent en mesure de télécharger des fichiers binaires précompilés, et vous pouvez télécharger un compilateur approprié pour les versions antérieures de Python à partir de [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266) . Pour plus d’informations, consultez le billet [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Comment gérer l’erreur « unable to find vcvarsallbat ») sur le blog de l’équipe Python Tools.
 
 ## <a name="see-also"></a>Voir aussi
 

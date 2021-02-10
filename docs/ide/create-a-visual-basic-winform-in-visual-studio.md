@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970918"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Créer une application Windows Forms dans Visual Studio avec Visual Basic
 
@@ -39,7 +39,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Tout d’abord, vous allez créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -90,7 +90,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Création de l'application
+## <a name="create-the-application"></a>Créer l’application
 
 Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nommé votre fichier, Visual Studio ouvre un formulaire. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
 
@@ -100,7 +100,7 @@ Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nom
 
      ![Cliquer sur la boîte à outils pour ouvrir la fenêtre Boîte à outils](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Si vous ne voyez pas l’option de survol de la **boîte à outils** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, **Affichez**la  >  **boîte à outils**. Ou appuyez sur **CTRL** + **ALT** + **X**.)
+     (Si vous ne voyez pas l’option de survol de la **boîte à outils** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, **Affichez** la  >  **boîte à outils**. Ou appuyez sur **CTRL** + **ALT** + **X**.)
 
 1. Cliquez sur l’icône **épingler** pour ancrer la fenêtre **boîte à outils** .
 
@@ -114,7 +114,7 @@ Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nom
 
      ![Ajouter du texte au bouton du formulaire](../ide/media/vb-button-control-text.png)
 
-     (Si vous ne voyez pas la fenêtre **Propriétés** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, cliquez sur **Afficher**la  >  **fenêtre Propriétés**. Ou appuyez sur **F4**.)
+     (Si vous ne voyez pas la fenêtre **Propriétés** , vous pouvez l’ouvrir à partir de la barre de menus. Pour ce faire, cliquez sur **Afficher** la  >  **fenêtre Propriétés**. Ou appuyez sur **F4**.)
 
 1. Dans la section **Design** de la fenêtre **Propriétés**, remplacez le nom **Button1** par `btnClickThis`, puis appuyez sur **Entrée**.
 

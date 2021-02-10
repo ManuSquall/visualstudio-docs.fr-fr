@@ -5,17 +5,17 @@ ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 375f56d8a367c6d5cb090e10069b714b5a3843f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969540"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compiler le code de la machine à écrire (ASP.NET Core)
 
@@ -108,7 +108,7 @@ Pour obtenir un exemple d’utilisation de Gulp avec la tâche Runner pour gén�
 
 Si vous rencontrez des problèmes où Visual Studio utilise une version de Node.js ou un outil tiers différent de la version attendue, vous devrez peut-être définir le chemin d’accès de Visual Studio à utiliser. Choisissez **Outils**  >  **options**. Sous **projets et solutions**, choisissez **Web Package Management**  >  **Outils Web externes**.
 
-### <a name="run-the-application"></a>Exécuter l’application
+### <a name="run-the-application"></a>Exécution de l'application
 
 Pour obtenir des instructions sur l’exécution de l’application après sa compilation, consultez [créer votre première Node.js application](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 

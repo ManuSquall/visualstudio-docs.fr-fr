@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 396981533502f2687040f470ded9b490cab1ef7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970632"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 
@@ -29,19 +29,19 @@ Par défaut, les paramètres suivants sont synchronisés :
 
 - Alias de commande définis par l'utilisateur. Pour plus d’informations sur la façon de définir des alias de commande, consultez [Alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- Dispositions des fenêtres définies par l’utilisateur dans la page gérer les dispositions des fenêtres de **la fenêtre**  >  **Manage Window Layouts** .
+- Dispositions des fenêtres définies par l’utilisateur dans la page gérer les dispositions des fenêtres de **la fenêtre**  >   .
 
 - Les options suivantes sont disponibles dans les pages **Outils**  >  **options** :
 
-  - Paramètres de la casse du thème et de **Environment** la barre de menus dans la  >  page options **générales** de l’environnement.
+  - Paramètres de la casse du thème et de la barre de menus dans la  >  page options **générales** de l’environnement.
 
   - Tous les paramètres de la page d’options **environnement**  >  **polices et couleurs** .
 
-  - Tous les raccourcis clavier de **Environment** la  >  page Options de **clavier** de l’environnement.
+  - Tous les raccourcis clavier de la  >  page Options de **clavier** de l’environnement.
 
-  - Tous les paramètres sur **Environment** les  >  **onglets environnement et** la page options Windows.
+  - Tous les paramètres sur les  >  **onglets environnement et** la page options Windows.
 
-  - Tous les paramètres de **Environment** la  >  page Options de **démarrage** de l’environnement.
+  - Tous les paramètres de la  >  page Options de **démarrage** de l’environnement.
 
   - Tous les paramètres des pages d’options de l’**éditeur de texte**, par exemple, les [préférences de style de code](code-styles-and-code-cleanup.md).
 
@@ -49,12 +49,12 @@ Par défaut, les paramètres suivants sont synchronisés :
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Désactiver les paramètres synchronisés sur un ordinateur particulier
 
-Les paramètres synchronisés pour Visual Studio sont activés par défaut. Vous pouvez désactiver les paramètres synchronisés sur un ordinateur en accédant à la page **Outils**  >  **options**  >  **Environment**  >  **comptes** d’environnement et en désactivant la case à cocher **synchroniser les paramètres entre les appareils quand ils sont connectés à Visual Studio**.
+Les paramètres synchronisés pour Visual Studio sont activés par défaut. Vous pouvez désactiver les paramètres synchronisés sur un ordinateur en accédant à la page **Outils**  >  **options**  >    >  **comptes** d’environnement et en désactivant la case à cocher **synchroniser les paramètres entre les appareils quand ils sont connectés à Visual Studio**.
 
 Par exemple, si vous décidez de ne pas synchroniser les paramètres dans Visual Studio sur l’ordinateur « A », les modifications de paramètres effectuées sur l’ordinateur « A » n’apparaissent pas sur l’ordinateur « B » ou sur l’ordinateur « C ». Les ordinateurs « B » et « C » continuent à se synchroniser entre eux, mais pas avec l’ordinateur « A ».
 
 > [!NOTE]
-> Si vous choisissez de ne pas synchroniser les paramètres en désélectionnant l’option sur la page **Outils**  >  **options**  >  **Environment**  >  **comptes** d’environnement, les autres versions ou éditions de Visual Studio sur le même ordinateur ne sont pas affectées. Ces installations côte à côte de Visual Studio continuent de synchroniser leurs paramètres (sauf si vous décochez l’option).
+> Si vous choisissez de ne pas synchroniser les paramètres en désélectionnant l’option sur la page **Outils**  >  **options**  >    >  **comptes** d’environnement, les autres versions ou éditions de Visual Studio sur le même ordinateur ne sont pas affectées. Ces installations côte à côte de Visual Studio continuent de synchroniser leurs paramètres (sauf si vous décochez l’option).
 
 ## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Synchroniser les paramètres entre les éditions et les produits de l’IDE Visual Studio
 
@@ -94,6 +94,6 @@ Pour rétablir les valeurs par défaut de tous les paramètres, connectez-vous �
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Paramètres d’environnement](../ide/environment-settings.md)
+- [Paramètres d'environnement](../ide/environment-settings.md)
 - [Environnement > Comptes, boîte de dialogue Options](reference/accounts-environment-options-dialog-box.md)
 - [Installer des versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md)

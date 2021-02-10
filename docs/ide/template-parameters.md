@@ -11,13 +11,13 @@ helpviewer_keywords:
 - item templates, parameters
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8e575011f76370083b5a0f461fbb62bbbc839ea3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+manager: jmartens
+ms.openlocfilehash: 133fbec68ff0e6b04793c2e168c730ee37024ad4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970646"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 

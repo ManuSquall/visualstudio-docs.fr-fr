@@ -6,15 +6,15 @@ ms.date: 04/25/2018
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: ef2ddd4011f807099c6bc82447f888b56f151e72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969410"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
@@ -64,7 +64,7 @@ Si l’utilisation de la **mémoire** ne vous donne pas les données dont vous a
      > [!NOTE]
      > Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Lorsque la fenêtre **outils de diagnostic** s’affiche, choisissez l’onglet **utilisation** de la mémoire, puis choisissez le **profilage du tas**.
      >
-     >  ![Activer les captures instantanées](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
+     >  ![Activer les instantanés](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  Arrêtez (touche de raccourci : **MAJ** + **F5**) et redémarrez le débogage.
 

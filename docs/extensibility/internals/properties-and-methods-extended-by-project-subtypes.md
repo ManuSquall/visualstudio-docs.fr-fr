@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cff332d7b573bb2fdff886b4206ea1267c091c48
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8d5d81135a2571db3c84b67acb2fa08e4f83f57d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970060"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propriétés et méthodes étendues par les sous-types de projets
 Un sous-type de projet a beaucoup de puissance pour influencer le comportement du projet, car il est construit comme un agrégateur d’un projet de base. Cette section résume certaines des fonctionnalités qui peuvent être améliorées ou modifiées par les sous-types de projet.
