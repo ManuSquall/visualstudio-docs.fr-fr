@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955162"
 ---
 # <a name="debug-engine"></a>Moteur de débogage
 Un moteur DE débogage (DE) fonctionne avec l’interpréteur ou le système d’exploitation pour fournir des services de débogage tels que le contrôle d’exécution, les points d’arrêt et l’évaluation d’expression. Le DE est chargé de surveiller l’état d’un programme en cours de débogage. Pour ce faire, le service DE utilise les méthodes disponibles dans le runtime pris en charge, que ce soit à partir de l’UC ou des API fournies par le Runtime.

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4928dcd7a9e1b83ba797614545315022d0f36ac3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0227a300160434d0052e81d7c1ccd107c5a11a01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955656"
 ---
 # <a name="confirm-activity-designer"></a>Concepteur d'activités Confirm
 
@@ -29,7 +29,7 @@ Le concepteur d’activités **Confirm** est utilisé pour créer et configurer 
  L'objet <xref:System.Activities.Statements.CompensationToken> spécifié par la propriété <xref:System.Activities.Statements.Compensate.Target%2A> fournit un moyen de confirmer ou de compenser explicitement un objet <xref:System.Activities.Statements.CompensableActivity> une fois que le <xref:System.Activities.Statements.CompensableActivity.Body%2A> de <xref:System.Activities.Statements.CompensableActivity> est terminé.
 
 ### <a name="using-the-confirm-activity-designer"></a>Utilisation du concepteur d'activités Confirm
- Le concepteur d’activités **Confirm** se trouve dans la catégorie **transaction** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+ Le concepteur d’activités **Confirm** se trouve dans la catégorie **transaction** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
  Le concepteur d’activités **Confirm** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . Cette action crée une activité <xref:System.Activities.Statements.Confirm> avec Confirm comme <xref:System.Activities.Activity.DisplayName%2A> par défaut. La <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête du concepteur d’activités **Confirm** ou dans la zone **DisplayName** de la grille des propriétés.
 
@@ -38,8 +38,8 @@ Le concepteur d’activités **Confirm** est utilisé pour créer et configurer 
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.CancellationScope>. La valeur par défaut est Confirm.|
-|<xref:System.Activities.Statements.Confirm.Target%2A>|Vrai|Spécifie l'objet <xref:System.Activities.InArgument%601> qui contient l'objet <xref:System.Activities.Statements.CompensationToken> pour cette activité <xref:System.Activities.Statements.Confirm>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.CancellationScope>. La valeur par défaut est Confirm.|
+|<xref:System.Activities.Statements.Confirm.Target%2A>|True|Spécifie l'objet <xref:System.Activities.InArgument%601> qui contient l'objet <xref:System.Activities.Statements.CompensationToken> pour cette activité <xref:System.Activities.Statements.Confirm>.|
 
 ## <a name="see-also"></a>Voir aussi
 

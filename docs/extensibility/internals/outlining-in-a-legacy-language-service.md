@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8a2f00cc4e968551983a8b943d256b49e33d7d6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954629"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Mode Plan dans un service de langage hérité
 Le mode plan permet de réduire un programme complexe en vue d’une vue d’ensemble ou d’une structure. Par exemple, dans C#, toutes les méthodes peuvent être réduites sur une seule ligne, ce qui indique uniquement la signature de la méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des structures et des classes. À l’intérieur d’une méthode unique, une logique complexe peut être réduite pour afficher le déroulement global en affichant uniquement la première ligne d’instructions telles que `foreach` , `if` et `while` .

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 36ab20854adb952d098f71904cdd3cb092e27ac9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955682"
 ---
 # <a name="compensate-activity-designer"></a>Concepteur d'activités Compensate
 
@@ -31,7 +31,7 @@ L'objet <xref:System.Activities.Statements.CompensationToken> spécifié par la 
 
 ### <a name="using-the-compensate-activity-designer"></a>Utilisation du concepteur d'activités Compensate
 
-Le concepteur d’activités **Compensate** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils** , sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **Compensate** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils**, sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur d’activités **Compensate** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . La suppression du concepteur d’activités crée une <xref:System.Activities.Statements.Compensate> activité avec <xref:System.Activities.Activity.DisplayName%2A> compenser par défaut. La <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête du concepteur d’activités **Compensate** ou dans la zone **DisplayName** de la grille des propriétés.
 
@@ -41,8 +41,8 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Compensate>. La valeur par défaut est Compensate.|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|Vrai|Spécifie l'objet <xref:System.Activities.InArgument%601> qui contient l'objet <xref:System.Activities.Statements.CompensationToken> pour cette activité <xref:System.Activities.Statements.Compensate>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Compensate>. La valeur par défaut est Compensate.|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|True|Spécifie l'objet <xref:System.Activities.InArgument%601> qui contient l'objet <xref:System.Activities.Statements.CompensationToken> pour cette activité <xref:System.Activities.Statements.Compensate>.|
 
 ## <a name="see-also"></a>Voir aussi
 

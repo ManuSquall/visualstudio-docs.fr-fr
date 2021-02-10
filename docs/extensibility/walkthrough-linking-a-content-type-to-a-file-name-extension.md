@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: fb65f581994c6ba90cbb49166612d81bc00de803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955500"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier
 Vous pouvez définir votre propre type de contenu et y associer une extension de nom de fichier à l’aide des extensions Managed Extensibility Framework (MEF) de l’éditeur. Dans certains cas, l’extension de nom de fichier est déjà définie par un service de langage. Toutefois, pour l’utiliser avec MEF, vous devez toujours le lier à un type de contenu.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d2011cd8686f3210ee534fdaefaa26d2f3b4ad5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954447"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Données persistantes dans le fichier projet MSBuild
 Un sous-type de projet peut avoir besoin de conserver des données spécifiques au sous-type dans le fichier projet pour une utilisation ultérieure. Un sous-type de projet utilise la persistance du fichier projet pour répondre aux exigences suivantes :
@@ -26,7 +26,7 @@ Un sous-type de projet peut avoir besoin de conserver des données spécifiques 
 
     1. Données indépendantes de la configuration. Autrement dit, les données stockées dans des éléments MSBuild avec des conditions vides ou manquantes.
 
-    2. Données dépendantes de la configuration. Autrement dit, les données stockées dans les éléments MSBuild qui sont conditionnés pour une configuration de projet particulière. Exemple :
+    2. Données dépendantes de la configuration. Autrement dit, les données stockées dans les éléments MSBuild qui sont conditionnés pour une configuration de projet particulière. Par exemple :
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

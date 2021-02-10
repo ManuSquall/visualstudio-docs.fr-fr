@@ -12,15 +12,15 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 94cf4d256cafa03ee4604138f7233ff9fd3cf6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953992"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Comment : personnaliser un onglet intégré
   Vous pouvez ajouter des groupes et des contrôles à un onglet intégré. Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, l’onglet **données** est un onglet intégré dans Excel. Lorsque vous créez un groupe personnalisé, il apparaît en dernier sous l'onglet, mais vous pouvez déplacer votre groupe n'importe où sur l'onglet.

@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e2575e034dbabe5e380857edd95e4bc46f56d2
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 554562a567975f6663f05c5de77cd1dd572e16c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955422"
 ---
 # <a name="configure-performance-sessions"></a>Configurer des sessions de performance
 Les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permettent de collecter une grande variété de données de performances pour de nombreux types d’applications. Cette section vous montre comment utiliser l’Assistant performance et les propriétés de la session de performance et du fichier binaire cible pour configurer Outils de profilage afin de collecter les données qui vous intéressent. Vous pouvez aussi utiliser les propriétés de configuration des outils de profilage pour contrôler la quantité de données collectées dans une exécution de profilage. Pour plus d’informations, consultez [Contrôler la collecte de données](../profiling/controlling-data-collection.md).

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a4a3265c3b31653d94a686fa8fda12f7699596e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955266"
 ---
 # <a name="empty-timeline-segment"></a>Segment de chronologie vide
 Dans le visualiseur concurrentiel, la raison d’un segment de chronologie vide (avec un arrière-plan blanc) dépend du type de canal.

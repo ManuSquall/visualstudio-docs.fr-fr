@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a7c6dd7fc46dc8616eddc164bcf2ec801657cb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955136"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile (élément)
   Représente un fichier SharePoint, tel qu’un fichier d’élément de fonctionnalité, à inclure avec l’élément de projet lorsqu’il est déployé sur SharePoint.
@@ -56,7 +56,7 @@ ms.locfileid: "95440803"
 |[Fichiers](../sharepoint/files-element.md)|Spécifie les fichiers à inclure dans l’élément de projet SharePoint lorsqu’il est déployé sur SharePoint.|
 
 ## <a name="remarks"></a>Notes
- Les fichiers SharePoint qui sont généralement référencés dans les éléments **ProjectItemFile** incluent des fichiers d’éléments de fonctionnalité (*Elements.xml*), des fichiers de schéma pour les définitions de listes (*Schema.xml*) et des fichiers de définition de composant WebPart pour composants WebPart (*. WebPart*).
+ Les fichiers SharePoint qui sont généralement référencés dans les éléments **ProjectItemFile** incluent des fichiers d’éléments de fonctionnalité (*Elements.xml*), des fichiers de schéma pour les définitions de listes (*Schema.xml*) et des fichiers de définition de composant WebPart pour WebParts (*. WebPart*).
 
 ## <a name="element-information"></a>Informations sur les éléments
 

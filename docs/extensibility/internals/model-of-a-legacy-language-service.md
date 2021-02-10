@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954637"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un service de langage hérité
 Un service de langage définit les éléments et les fonctionnalités d’un langage spécifique, et est utilisé pour fournir à l’éditeur des informations spécifiques à ce langage. Par exemple, l’éditeur doit connaître les éléments et les mots clés du langage afin de prendre en charge la coloration syntaxique.

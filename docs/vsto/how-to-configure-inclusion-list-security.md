@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954018"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Comment : configurer la sécurité de la liste d’inclusion
   Si vous disposez d’autorisations d’administrateur, vous pouvez configurer l' [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux ont la possibilité d’installer des solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [approuver des solutions Office à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -54,13 +54,13 @@ ms.locfileid: "96846725"
 
 3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Value|
+    |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Désactivé**|
-    |**MyComputer**|**Activé**|
-    |**LocalIntranet**|**Activé**|
-    |**TrustedSites**|**Activé**|
+    |**MyComputer**|**Enabled**|
+    |**LocalIntranet**|**Enabled**|
+    |**TrustedSites**|**Enabled**|
 
      Par défaut, **Internet** a la valeur **AuthenticodeRequired** et **UntrustedSites** a la valeur **Disabled**.
 
@@ -113,7 +113,7 @@ ms.locfileid: "96846725"
 
 3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Value|
+    |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
     |**UntrustedSites**|**Désactivé**|
     |**Internet**|**AuthenticodeRequired**|
@@ -170,7 +170,7 @@ ms.locfileid: "96846725"
 
 3. Ajoutez les sous-clés suivantes comme **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées.
 
-    |Sous-clé de valeur de chaîne|Value|
+    |Sous-clé de valeur de chaîne|Valeur|
     |-------------------------|-----------|
     |**UntrustedSites**|**Désactivé**|
     |**Internet**|**Désactivé**|

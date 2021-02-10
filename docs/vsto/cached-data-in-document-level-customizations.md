@@ -17,15 +17,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955773"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Données mises en cache dans les personnalisations au niveau du document
   L’objectif principal des personnalisations au niveau du document est de séparer les données de la vue dans les documents Office. Les données font référence aux informations stockées dans le document, y compris les nombres et le texte. La vue fait référence à l’interface utilisateur et au modèle objet de Microsoft Office Word et Microsoft Office Excel.

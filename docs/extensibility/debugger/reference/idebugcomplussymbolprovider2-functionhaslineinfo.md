@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a574766b884bf1aeed253754534fee66967e9ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6492f0899592074e003f49afb06fd9bf7303ddc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954980"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 Détermine si la méthode spécifiée a des informations de ligne.
@@ -42,7 +42,7 @@ int FunctionHasLineInfo(
 `pAddress`\
 dans Adresse de débogage qui est représentée par une interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Cette adresse doit être un METHOD_ADDRESS.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` .
 
 ## <a name="example"></a>Exemple

@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 1a60b51571d33a619cdc04c534f6b77fafcb584f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955279"
 ---
 # <a name="net-memory-data-views"></a>Vues des données de la mémoire .NET
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage de mémoire .NET.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)
 
  Répertorie les fonctions et les types qui ont alloué le plus de mémoire.

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e9edd755465cf812c1572c62f1c6335fc5295281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955517"
 ---
 # <a name="correlationscope-activity-designer"></a>Concepteur d'activités CorrelationScope
 
@@ -29,7 +29,7 @@ La propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesW
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Utiliser le concepteur d’activités CorrelationScope
 
-Le concepteur d’activités **CorrelationScope** se trouve dans la catégorie **messagerie** de la **boîte à outils** , accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
+Le concepteur d’activités **CorrelationScope** se trouve dans la catégorie **messagerie** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** + **ALT** + **X**.
 
 Le concepteur d’activités **CorrelationScope** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail. Cette opération crée une <xref:System.ServiceModel.Activities.CorrelationScope> activité avec un **DisplayName** par défaut de CorrelationScope. La <xref:System.Activities.Activity.DisplayName%2A> propriété peut être modifiée dans l’en-tête du concepteur d’activités **CorrelationScope** ou dans la zone **DisplayName** de la fenêtre **Propriétés** .
 
@@ -43,9 +43,9 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|Faux|Spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants. Si vous ne définissez pas cette propriété, <xref:System.ServiceModel.Activities.CorrelationScope> crée automatiquement un objet <xref:System.ServiceModel.Activities.CorrelationHandle> implicite.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|Faux|Spécifie les activités dans l'étendue de la corrélation.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants. Si vous ne définissez pas cette propriété, <xref:System.ServiceModel.Activities.CorrelationScope> crée automatiquement un objet <xref:System.ServiceModel.Activities.CorrelationHandle> implicite.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Spécifie les activités dans l'étendue de la corrélation.|
 
 ## <a name="see-also"></a>Voir aussi
 

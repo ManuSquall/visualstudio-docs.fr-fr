@@ -11,15 +11,15 @@ helpviewer_keywords:
 - postAction element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0490e9423cb747782029eb0fd7254407adb3a607
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955760"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;élément postAction (développement Office dans Visual Studio)
   L’élément `postAction` de l’espace de noms `vstav3` contient les éléments `entrypoint` et tous les éléments `postActionData` associés à des actions de post-déploiement, lesquelles s’exécutent après l’installation des solutions Office.
@@ -43,10 +43,10 @@ ms.locfileid: "85546937"
  `postAction` comporte les éléments suivants.
 
 ### <a name="entrypoint"></a>entryPoint
- facultatif. Le rôle de l' `entryPoint` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément entryPoints&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Facultatif. Le rôle de l' `entryPoint` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément entryPoints&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- facultatif. Le rôle de l' `postActionData` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément postActionData&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ Facultatif. Le rôle de l' `postActionData` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément postActionData&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Exemple d’action de postconnexion
 

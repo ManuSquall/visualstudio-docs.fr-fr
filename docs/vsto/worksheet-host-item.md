@@ -19,15 +19,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b25b921d29bee832ef37b943fd57edc38b7518db
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 12dc0823f1c7d1eb78867cb3529f955851f45b66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955734"
 ---
 # <a name="worksheet-host-item"></a>Élément hôte de feuille de calcul
   L’élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> est un type qui étend le type <xref:Microsoft.Office.Interop.Excel.Worksheet> à partir de l’assembly PIA (Primary Interop Assembly) pour Excel. L’élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> fournit les mêmes propriétés, méthodes et événements qu’un objet <xref:Microsoft.Office.Interop.Excel.Worksheet> , mais il expose également des événements supplémentaires et agit comme conteneur pour les contrôles hôtes et les contrôles Windows Forms.
