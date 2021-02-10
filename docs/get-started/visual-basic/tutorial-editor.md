@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944535"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>En savoir plus sur l’utilisation de l’éditeur de code avec Visual Basic
 
@@ -194,4 +194,4 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [mode Plan](../../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
-- [Utilisez IntelliSense](../../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../../ide/using-intellisense.md)

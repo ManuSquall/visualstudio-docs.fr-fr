@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f6cea04557fb0bf3075461b22979cac2168af322
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942982"
 ---
 # <a name="single-and-multi-tab-views"></a>Vues à onglet unique et onglets multiples
 Un éditeur peut créer différents types de vues. Par exemple, une fenêtre de l’éditeur de code, une autre est un concepteur de formulaires.

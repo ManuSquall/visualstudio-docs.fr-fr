@@ -33,15 +33,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c76ea1729fa84bee97458f131e18f64281b76567
-ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
+ms.openlocfilehash: e39febb27a74b0a2cef54098542bba087e2e0180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943872"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Boîte de dialogue Options : éditeur de texte \> général
 
@@ -75,7 +75,7 @@ Quand cette option est sélectionnée, vous pouvez appuyer sur **Ctrl** et point
 
 Cochez la case **Ouvrir la définition dans l’aperçu** pour afficher la définition de l’élément dans une fenêtre sans être obligé de quitter votre emplacement actuel dans l’éditeur de code.
 
-## <a name="display"></a>Affichage
+## <a name="display"></a>Afficher
 
 ### <a name="selection-margin"></a>Marge de sélection
 

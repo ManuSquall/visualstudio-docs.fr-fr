@@ -6,23 +6,23 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942488"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
 
 **Étape précédente : [utiliser le modèle de projet Web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Étant donné que l’authentification est un besoin courant pour les applications Web, le modèle « Projet Web de Django » contient un flux de l’authentification de base. (Le modèle de « projet Web Django d’interrogation » abordé à l’étape 6 de ce didacticiel comprend également le même fluide.) Lorsque vous utilisez l’un des modèles de projet Django, Visual Studio comprend tous les modules nécessaires pour l’authentification dans le *Settings.py*du projet Django.
+Étant donné que l’authentification est un besoin courant pour les applications Web, le modèle « Projet Web de Django » contient un flux de l’authentification de base. (Le modèle de « projet Web Django d’interrogation » abordé à l’étape 6 de ce didacticiel comprend également le même fluide.) Lorsque vous utilisez l’un des modèles de projet Django, Visual Studio comprend tous les modules nécessaires pour l’authentification dans le *Settings.py* du projet Django.
 
 Dans cette étape vous apprenez :
 

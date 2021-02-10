@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943392"
 ---
 # <a name="guidsymbol-element"></a>Élément GuidSymbol
 L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. L’ID provient d’un `IDSymbol` élément dans l' `GuidSymbol` élément. L' `GuidSymbol` élément a un `name` attribut qui fournit un nom convivial pour le GUID, qui est contenu dans l' `value` attribut.
@@ -40,7 +40,7 @@ L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représent
 |Attribut|Description|
 |---------------|-----------------|
 |name|Obligatoire. Nom du symbole GUID.|
-|value|Obligatoire. GUID du symbole GUID.|
+|valeur|Obligatoire. GUID du symbole GUID.|
 
 ### <a name="child-elements"></a>Éléments enfants
 

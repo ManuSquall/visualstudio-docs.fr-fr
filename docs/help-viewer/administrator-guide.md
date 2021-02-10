@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944301"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l’administrateur Help Viewer
 
@@ -131,7 +131,7 @@ Vous devez ensuite créer un package du contenu pour qu’il puisse être déplo
 
 1. Créez un partage réseau et copiez le contenu d’aide à cet emplacement.
 
-     Par exemple, copiez le contenu dans *C:\VSHelp* dans * \\ \myserver\VSHelp*.
+     Par exemple, copiez le contenu dans *C:\VSHelp* dans *\\ \myserver\VSHelp*.
 
 2. Créez un fichier *.bat* qui va contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour. Par exemple :
 

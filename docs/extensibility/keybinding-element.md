@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2ce96da36a8c6eff0fda71d8a5d077721876ab8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943346"
 ---
 # <a name="keybinding-element"></a>KeyBinding (élément)
 L’élément KeyBinding spécifie les raccourcis clavier pour les commandes.
@@ -42,11 +42,11 @@ L’élément KeyBinding spécifie les raccourcis clavier pour les commandes.
 |id|Obligatoire.|
 |éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour lequel ce raccourci clavier est actif. La valeur de portée de liaison globale est « guidVSStd97 ».|
 |key1|Obligatoire. Les valeurs valides incluent tous les alphanumériques typable, ainsi que les valeurs hexadécimales à deux chiffres précédées de 0x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod1|facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT** et **MAJ** sont séparées par un espace.|
-|key2|facultatif. Les valeurs valides incluent tous les alphanumériques typable, ainsi que les valeurs hexadécimales à deux chiffres précédées de 0x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod2|facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT** et **MAJ** sont séparées par un espace.|
-|émulateur|facultatif.|
-|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|mod1|Facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT** et **MAJ** sont séparées par un espace.|
+|key2|Facultatif. Les valeurs valides incluent tous les alphanumériques typable, ainsi que les valeurs hexadécimales à deux chiffres précédées de 0x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|Facultatif. Toutes les combinaisons de **touches Ctrl**, **ALT** et **MAJ** sont séparées par un espace.|
+|émulateur|Facultatif.|
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

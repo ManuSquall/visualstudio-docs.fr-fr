@@ -3,19 +3,19 @@ title: Améliorer votre productivité pour le développement .NET
 description: Vue d’ensemble de la navigation, de l’analyse du code, des tests unitaires et d’autres fonctionnalités qui vont vous aider à écrire du code .NET plus performant plus rapidement.
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942943"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -62,7 +62,7 @@ Le tableau suivant liste les principaux raccourcis de Visual Studio :
 | **CTRL** + **MAJ**+**/** | Activer/désactiver les marques de commentaire pour les blocs | Cette commande ajoute ou retire les commentaires de bloc en fonction de ce que vous avez sélectionné |
 
 > [!NOTE]
-> Certaines extensions dissocient les combinaisons de touches de Visual Studio par défaut. Pour utiliser les commandes ci-dessus, restaurez vos combinaisons de touches aux valeurs par défaut de Visual Studio en accédant à **Outils**  >  **importation et exportation de paramètres**  >  **Réinitialiser tous les paramètres** ou **Outils**  >  **options**  >  **Keyboard**  >  **Réinitialiser**le clavier.
+> Certaines extensions dissocient les combinaisons de touches de Visual Studio par défaut. Pour utiliser les commandes ci-dessus, restaurez vos combinaisons de touches aux valeurs par défaut de Visual Studio en accédant à **Outils**  >  **importation et exportation de paramètres**  >  **Réinitialiser tous les paramètres** ou **Outils**  >  **options**  >    >  **Réinitialiser** le clavier.
 
 Pour plus d’informations sur les raccourcis clavier et les commandes, consultez [Raccourcis de productivité](../ide/productivity-shortcuts.md) et [Raccourcis clavier populaires](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
 
@@ -89,7 +89,7 @@ Vous pouvez utiliser un fichier EditorConfig pour codifier les conventions de co
 
 ::: moniker range=">=vs-2019"
 
-- Créez automatiquement un fichier *.editorconfig* à partir de vos paramètres de style de code dans **Outils** > **Options** > **Éditeur de texte ** > ** C# ** > **Style de code**.
+- Créez automatiquement un fichier *.editorconfig* à partir de vos paramètres de style de code dans **Outils** > **Options** > **Éditeur de texte** > **C#** > **Style de code**.
 
    ![Générer un fichier .editorconfig à partir des paramètres dans VS 2019](media/vs-2019/generate-editorconfig-file.png)
 
@@ -169,7 +169,7 @@ Visual Studio contient de nombreuses fonctionnalités qui vous permettent de rec
 
 Utilisez IntelliCode pour Visual Studio pour obtenir des [complétions de code sensibles au contexte](/visualstudio/intellicode/intellicode-visual-studio) au lieu d’une simple une liste alphabétique. Vous pouvez également entraîner un [modèle IntelliSense personnalisé](/visualstudio/intellicode/custom-model-faq) en vous basant sur vos propres bibliothèques spécifiques à un domaine.
 
-## <a name="unit-testing"></a>Test des unités
+## <a name="unit-testing"></a>Test unitaire
 
 À partir de Visual Studio 2017, les améliorations de l’expérience de test sont nombreuses. Vous pouvez tester avec les frameworks de test MSTest v1, MSTest v2, NUnit ou XUnit.
 

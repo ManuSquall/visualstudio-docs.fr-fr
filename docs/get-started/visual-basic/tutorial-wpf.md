@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944366"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Didacticiel : créer une application simple avec Visual Basic
 
@@ -45,7 +45,7 @@ Quand vous ouvrez Visual Studio pour la première fois, vous êtes invité à vo
 
 ![Boîte de dialogue Choisir les paramètres](../media/exploreide-settings.png)
 
-Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus, les barres d’outils et l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage**est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus, les barres d’outils et l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. La **page de démarrage** est située au centre de la fenêtre d'application. Lorsque vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l'espace où se trouve la **Page de démarrage** . Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
 ![IDE Visual Studio 2017 avec paramètres généraux appliqués](../media/exploreide-idewithgeneralsettings.png)
 
@@ -261,7 +261,7 @@ Redémarrez le débogueur (appuyez sur **F5**). Vous devez voir la fenêtre **Gr
 
 ### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
 
-Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer**  >  le**point d’arrêt**, en cliquant dans la marge de gauche de l’éditeur à côté de la ligne de code où vous souhaitez que le saut se produise, ou en appuyant sur **F9**.
+Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer**  >  le **point d’arrêt**, en cliquant dans la marge de gauche de l’éditeur à côté de la ligne de code où vous souhaitez que le saut se produise, ou en appuyant sur **F9**.
 
 #### <a name="add-breakpoints"></a>Ajouter des points d’arrêt
 
@@ -307,7 +307,7 @@ Dans l’application en cours d’exécution, vous devriez voir un widget qui ap
 
 Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l’application.
 
-1. Dans le menu principal, sélectionnez **générer**une  >  **solution propre** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
+1. Dans le menu principal, sélectionnez **générer** une  >  **solution propre** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
 
 2. Remplacez la configuration de build **Debug** pour HelloWPFApp par **Release** à l’aide du contrôle de liste déroulante de la barre d’outils (« Debug » est actuellement affiché).
 

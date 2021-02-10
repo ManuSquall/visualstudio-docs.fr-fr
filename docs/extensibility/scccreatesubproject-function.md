@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943125"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject fonction)
 Cette fonction crée un sous-projet portant le nom donné sous un projet parent existant spécifié par l' `lpParentProjPath` argument.
@@ -92,7 +92,7 @@ dans Nom de sous-projet suggéré (jusqu’à SCC_PRJPATH_SIZE, y compris la mar
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Notes techniques pour SccCreateSubProject et SccGetParentProjectPath
  L’ajout de solutions et de projets au contrôle de code source a été simplifié dans Visual Studio afin de réduire le nombre de fois où un utilisateur est invité à sélectionner des emplacements dans le système de contrôle de code source. Ces modifications sont activées par Visual Studio si un plug-in de contrôle de code source prend en charge les nouvelles fonctions, `SccCreateSubProject` et `SccGetParentProjectPath` . Toutefois, l’entrée de Registre suivante peut être utilisée pour désactiver ces modifications et rétablir le comportement précédent de Visual Studio (API de plug-in de contrôle de code source version 1,1) :
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword : 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword : 00000001**
 
  Si cette entrée de Registre n’existe pas ou est définie sur DWORD : 00000000, Visual Studio tente d’utiliser les nouvelles fonctions, `SccCreateSubProject` et `SccGetParentProjectPath` .
 

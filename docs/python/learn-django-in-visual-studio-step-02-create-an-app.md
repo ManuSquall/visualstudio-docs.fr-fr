@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d91e587f354efe14db7cd669fa89a0f4658a538
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942592"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -51,7 +51,7 @@ Une application Django commence généralement par un ensemble standard de fichi
 | Élément | Description |
 | --- | --- |
 | **\_\_init \_ \_ . py** | Le fichier qui identifie l’application en tant que package. |
-| **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont décrites à l’étape 6. pour le moment, le dossier contient simplement un fichier * \_ \_ init \_ \_ . py* (indiquant que le dossier définit son propre package Python). |
+| **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont décrites à l’étape 6. pour le moment, le dossier contient simplement un fichier *\_ \_ init \_ \_ . py* (indiquant que le dossier définit son propre package Python). |
 | **templates** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 15,7 et versions antérieures, le fichier est contenu directement sous *modèles* et étape 2-4 vous demande de créer le sous-dossier.) Les modèles sont des blocs de code HTML dans lesquels des vues peuvent ajouter des informations pour afficher dynamiquement une page. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
 | **admin.py** | Le fichier Python dans lequel vous étendez l’interface d’administration de l’application (reportez-vous à l’étape 6), utilisée pour initialiser une base de données et modifier ses données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
 | **apps.py** | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
@@ -70,7 +70,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 ### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Question : la création d’une application Django dans Visual Studio diffère-t-elle de la création d’une application sur la ligne de commande ?
 
-Réponse : l’exécution de la commande **Ajouter**  >  une**application Django** ou l’utilisation de l’option **Ajouter**  >  un**nouvel élément** avec un modèle d’application Django produit les mêmes fichiers que la commande Django `manage.py startapp <app_name>` . L’avantage de la création de l’application dans Visual Studio est que le dossier de l’application et tous ses fichiers sont automatiquement intégrés dans le projet. Vous pouvez utiliser la même commande de Visual Studio pour créer toutes les applications que vous désirez dans votre projet.
+Réponse : l’exécution de la commande **Ajouter**  >  une **application Django** ou l’utilisation de l’option **Ajouter**  >  un **nouvel élément** avec un modèle d’application Django produit les mêmes fichiers que la commande Django `manage.py startapp <app_name>` . L’avantage de la création de l’application dans Visual Studio est que le dossier de l’application et tous ses fichiers sont automatiquement intégrés dans le projet. Vous pouvez utiliser la même commande de Visual Studio pour créer toutes les applications que vous désirez dans votre projet.
 
 ## <a name="step-2-2-run-the-app-from-the-django-project"></a>Étape 2-2 : exécuter l’application à partir du projet Django
 
@@ -111,7 +111,7 @@ Réponse : l’exécution de la commande **Ajouter**  >  une**application Djang
 
     ![Le contrôle de code source modifie le bouton sur la barre d’état de Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. Dans **Team Explorer**, entrez un message de validation comme « Créer une application Django initiale » et sélectionnez **Valider tout**. Une fois la validation terminée, vous voyez s’afficher une validation de message ** \<hash> créée localement. Synchronisez pour partager vos modifications avec le serveur.** Si vous souhaitez envoyer les modifications vers votre référentiel distant, sélectionnez **Synchronisation**, puis sélectionnez **Envoyer** sous **Validations sortantes**. Vous pouvez également accumuler plusieurs validations locales avant d’envoyer à distance.
+1. Dans **Team Explorer**, entrez un message de validation comme « Créer une application Django initiale » et sélectionnez **Valider tout**. Une fois la validation terminée, vous voyez s’afficher une validation de message **\<hash> créée localement. Synchronisez pour partager vos modifications avec le serveur.** Si vous souhaitez envoyer les modifications vers votre référentiel distant, sélectionnez **Synchronisation**, puis sélectionnez **Envoyer** sous **Validations sortantes**. Vous pouvez également accumuler plusieurs validations locales avant d’envoyer à distance.
 
     ![Envoyer des validations à distance dans Team Explorer](media/django/step02-source-control-push-to-remote.png)
 
@@ -149,7 +149,7 @@ def index(request):
 Exécutez le projet à nouveau pour afficher le message tel que «**Bonjour, Django !** le lundi 16 avril 2018 à 16:28:10 ». Actualisez la page pour mettre à jour l’heure et confirmer que le contenu est généré à chaque requête. Arrêtez le serveur lorsque vous avez terminé.
 
 > [!Tip]
-> Un raccourci pour arrêter et redémarrer le projet consiste à utiliser la commande de menu redémarrer le **débogage**  >  **Restart** (**CTRL** + **MAJ** + **F5**) ou le bouton **redémarrer** dans la barre d’outils de débogage :
+> Un raccourci pour arrêter et redémarrer le projet consiste à utiliser la commande de menu redémarrer le **débogage**  >   (**CTRL** + **MAJ** + **F5**) ou le bouton **redémarrer** dans la barre d’outils de débogage :
 >
 > ![Bouton Redémarrer de la barre d’outils de débogage dans Visual Studio](media/debugging-restart-toolbar-button.png)
 

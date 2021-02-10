@@ -7,21 +7,21 @@ ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 253a634e095bc98311ffb837f4a28949f51b9ad2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 5d304e2579be2ea75cd8ff30c263c0ebdd517a4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943592"
 ---
 # <a name="state-machine-activity-designers"></a>Concepteurs d'activités d'ordinateur d'état
 
 Concepteur de flux de travail comprend un certain nombre de concepteurs d’activités que vous pouvez utiliser lors de la construction de vos flux de travail. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>

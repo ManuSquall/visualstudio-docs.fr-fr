@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62961680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942553"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Django complet
 
@@ -73,7 +73,7 @@ Au niveau le plus large, le modèle « Projet Web de Django » crée la struct
   - *requirements.txt*, qui contient une dépendance sur Django 1.x.
   - *readme.html*, un fichier qui s’affiche dans Visual Studio après avoir créé le projet. Comme indiqué dans la section précédente, suivez les instructions suivantes pour créer un compte de superutilisateur (administrateur) pour l’application.
 - Le dossier *app* contient tous les fichiers d’application, y compris les affichages, modèles, tests, formulaires et fichiers statiques (voir l’étape 4-2). En règle générale, vous renommez ce dossier pour utiliser un nom d’application plus significatif.
-- Le dossier *DjangoWeb* (projet Django) contient les fichiers de projet Django typiques : * \_ \_ init \_ \_ . py*, *Settings.py*, *URLs.py*et *WSGI.py*. À l’aide du modèle de projet, *settings.py* est déjà configuré pour l’application et le fichier de base de données, et *urls.py* est déjà configuré avec des routes pour toutes les pages d’application, y compris le formulaire de connexion.
+- Le dossier *DjangoWeb* (projet Django) contient les fichiers de projet Django typiques : *\_ \_ init \_ \_ . py*, *Settings.py*, *URLs.py* et *WSGI.py*. À l’aide du modèle de projet, *settings.py* est déjà configuré pour l’application et le fichier de base de données, et *urls.py* est déjà configuré avec des routes pour toutes les pages d’application, y compris le formulaire de connexion.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Question : est-il possible de partager un environnement virtuel entre des projets Visual Studio ?
 

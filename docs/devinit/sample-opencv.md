@@ -5,18 +5,18 @@ ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 6524cec090f20c475724f1ae8615c5dd24cfa2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943504"
 ---
 # <a name="opencv"></a>OpenCV
 
@@ -28,10 +28,10 @@ Les personnalisations suivantes sont déjà appliquées à l’embranchement [Mi
 
 Le `.devcontainer` répertoire doit contenir les fichiers suivants :
 
-* devcontainer.js
+* devcontainer.json
 * devinit.js
 
-### <a name="devcontainerjson"></a>devcontainer.js
+### <a name="devcontainerjson"></a>devcontainer.json
 
 Voici le contenu du _devcontainer.jssur_ le fichier.
 
@@ -41,7 +41,7 @@ Voici le contenu du _devcontainer.jssur_ le fichier.
 }
 ```
 
-Le `postCreateCommand` lance l’outil  [devinit](devinit-and-codespaces.md) , qui consomme _devinit.js_ .
+Le `postCreateCommand` lance l’outil  [devinit](devinit-and-codespaces.md) , qui consomme _devinit.js_.
 
 ### <a name="devinitjson"></a>devinit.js
 
@@ -60,7 +60,7 @@ Voici le contenu du [_devinit.jssur_](devinit-json.md) le fichier.
 }
 ```
 
-Le _devinit.jssur_ est le fichier utilisé par l’outil [devinit](devinit-and-codespaces.md) et il doit se trouver dans le même répertoire de _devcontainer.js_ .
+Le _devinit.jssur_ est le fichier utilisé par l’outil [devinit](devinit-and-codespaces.md) et il doit se trouver dans le même répertoire de _devcontainer.js_.
 
 Dans cet exemple, l’outil [WSL-install](tool-wsl-install.md) est utilisé pour créer une instance WSL exécutant Ubuntu 20,04 et en l’approvisionnant avec les outils de développement C++ essentiels.
 ## <a name="targeting-windows-or-linux"></a>Ciblage de Windows ou Linux
