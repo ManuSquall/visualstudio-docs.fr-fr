@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7debd5323e753c6c5fd1476eac3c062fb63393b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963547"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Appelée par le débogueur sur le frame de pile actuel lorsqu’il souhaite intercepter l’exception actuelle.
@@ -43,17 +43,17 @@ int InterceptCurrentException(
 
 ## <a name="parameters"></a>Paramètres
 `dwFlags`\
-dans Spécifie des actions différentes. Actuellement, seule la [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) valeur INTERCEPT_EXCEPTION_ACTION `IEA_INTERCEPT` est prise en charge et doit être spécifiée.
+dans Spécifie des actions différentes. Actuellement, seule la [](../../../extensibility/debugger/reference/intercept-exception-action.md) valeur INTERCEPT_EXCEPTION_ACTION `IEA_INTERCEPT` est prise en charge et doit être spécifiée.
 
 `pqwCookie`\
 à Valeur unique identifiant une exception particulière.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
  Voici les erreurs les plus courantes retournées.
 
-|Error|Description|
+|Erreur|Description|
 |-----------|-----------------|
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|L’exception actuelle ne peut pas être interceptée.|
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Le gestionnaire n’a pas encore été recherché dans la frame d’exécution en cours.|

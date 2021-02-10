@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7d9000889d082826f46bdceb0476dd5d06c24d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a18ae08500bd457f6e9ab316514836a30538a42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965510"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 Retourne le nombre d’octets contenus dans cet objet.
@@ -43,7 +43,7 @@ int GetSize(
 `size`\
 à Nombre d’octets contenus dans cet objet.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 1f27f2fb082c478aecff3d64f418ed0e864e15df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964977"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 
@@ -32,7 +32,7 @@ Affiche des objets de données que vous pouvez ajouter à un formulaire et à de
 
 Pour accéder directement à la page de référence .NET d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **Boîte à outils** ou sur le composant dans la barre d’état du concepteur.
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Ajoute une instance d’un dataset typé ou non typé au formulaire ou composant. Quand vous faites glisser cet objet dans un concepteur, il affiche une boîte de dialogue qui permet de sélectionner une classe de dataset typée existante ou de spécifier que vous souhaitez créer un dataset vide et non typé. **Remarque :** N’utilisez pas l’objet <xref:System.Data.DataSet> de la **boîte à outils** pour créer un schéma et une classe de dataset typés. Pour plus d’informations, consultez [Créer et configurer des datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Offre un moyen puissant et souple d’afficher des données sous forme de tableau.|

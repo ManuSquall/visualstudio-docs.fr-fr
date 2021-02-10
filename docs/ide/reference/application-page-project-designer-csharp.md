@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 30f0951073214a70ec2865bce89426d0758b19cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965107"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
 Utilisez la page **Application** du **Concepteur de projet** pour spécifier les paramètres d’application et les propriétés du projet.
 
-Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite **Project**  >  **Propriétés** du projet dans la barre de menus. Quand le **Concepteur de projet** s’affiche, cliquez sur l’onglet **Application**.
+Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite   >  **Propriétés** du projet dans la barre de menus. Quand le **Concepteur de projet** s’affiche, cliquez sur l’onglet **Application**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

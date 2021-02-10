@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], referring to worksheet ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9756123038de33e8f8e69bd9a824822c26e2dc00
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 89a4b7c594f942405777145f94ed0a3503e9b16f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963755"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Comment : faire référence aux plages de la feuille de calcul dans le code par programmation
   Vous utilisez un processus similaire pour faire référence au contenu d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou d’un objet de plage Excel natif.

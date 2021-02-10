@@ -16,15 +16,15 @@ helpviewer_keywords:
 - workbooks, protecting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 05587b067fb5e8365433049c7da7fd3d5949a831
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963846"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Comment : protéger des classeurs par programmation
   Vous pouvez protéger un classeur Excel Microsoft Office afin que les utilisateurs ne puissent pas ajouter ou supprimer des feuilles de calcul, et également ôter la protection du classeur par programmation. Vous pouvez éventuellement spécifier un mot de passe, indiquer si vous souhaitez que la structure soit protégée (afin que les utilisateurs ne puissent pas déplacer les feuilles) et indiquer si vous souhaitez que les fenêtres du classeur soient protégées.

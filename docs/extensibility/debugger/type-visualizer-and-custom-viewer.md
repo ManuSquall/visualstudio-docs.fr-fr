@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3fe647d8a5a4bf3485b1d7b9f7b9699997bf3da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965432"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualiseur de type et visionneuse personnalisée
 Un visualiseur de type est un composant qui affiche un élément de données dans un format spécifique. Le format est entièrement destiné aux personnes qui implémentent le visualiseur, qu’il s’agit de l’utilisateur final ou d’un fournisseur tiers de visualiseurs.

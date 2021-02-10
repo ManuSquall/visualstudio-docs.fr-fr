@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a7168c6b80657fe0e5ba7c8ae8511c1e000db4cb
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e9ff98654da8d7125ecf788fadc9cbf7ff4bdfc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964067"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Comment : créer des documents par programmation
   Quand vous créez un document par programmation, le nouveau document est un objet <xref:Microsoft.Office.Interop.Word.Document>natif. Cet objet ne possède pas les fonctionnalités de liaison de données et les événements supplémentaires d’un élément hôte <xref:Microsoft.Office.Tools.Word.Document>. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
