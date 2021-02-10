@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947995"
 ---
 # <a name="content-controls"></a>Contrôles de contenu
   Les contrôles de contenu vous permettent de concevoir des documents et des modèles qui ont les fonctionnalités suivantes :
@@ -96,7 +96,7 @@ ms.locfileid: "96848038"
 ### <a name="drop-down-list"></a>Liste déroulante
  Une liste déroulante affiche la liste des éléments que les utilisateurs peuvent sélectionner. Contrairement à une zone de liste modifiable, la liste déroulante ne permet pas aux utilisateurs d’ajouter ou de modifier des éléments. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.
 
-### <a name="group"></a>Groupe
+### <a name="group"></a>Group
  Un contrôle de groupe définit une zone protégée d'un document que les utilisateurs ne peuvent pas modifier ou supprimer. Un contrôle de groupe peut contenir tous types d'éléments de document : du texte, des tableaux, des graphiques et d'autres contrôles de contenu. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
 ### <a name="picture"></a>Image
@@ -165,7 +165,7 @@ ms.locfileid: "96848038"
 |---------------|-----------------------------|----------------------------------------------------------------|
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
-|<xref:System.Drawing.Image><br /><br /> Tableau <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Aucun|
+|<xref:System.Drawing.Image><br /><br /> Tableau <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|None|
 
  Dans les projets au niveau du document et les projets de complément VSTO, vous pouvez lier par programmation un contrôle de contenu à une source de données en utilisant la méthode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> de la propriété <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> du contrôle. Si vous procédez ainsi, transmettez le **texte** de chaîne au paramètre *PropertyName* de la <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> méthode. La propriété **Text** est la propriété de liaison de données par défaut des contrôles de contenu.
 

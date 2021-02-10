@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: febf7c6966fcf3f2ac64d62bb46f0aaf398c6bc4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 66cc91a544d0d0729593b4be09f82ae0eb2081ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948476"
 ---
 # <a name="process-debug-manager"></a>Gestionnaire de débogage de processus
 Le gestionnaire de débogage de processus (PDM) est un composant de Visual Studio qui gère les programmes et les processus, ce qui les rend disponibles pour le gestionnaire de débogage de session et les moteurs de débogage.

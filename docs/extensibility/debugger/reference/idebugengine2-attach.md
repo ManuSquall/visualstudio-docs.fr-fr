@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948307"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Joint un moteur de débogage (DE) à un programme ou à des programmes. Appelée par le gestionnaire de débogage de session (SDM) quand le DE est exécuté dans le processus vers le SDM.
@@ -28,22 +28,22 @@ Joint un moteur de débogage (DE) à un programme ou à des programmes. Appelée
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT Attach( 
-   IDebugProgram2**      pProgram,
-   IDebugProgramNode2**  rgpProgramNodes,
-   DWORD                 celtPrograms,
-   IDebugEventCallback2* pCallback,
-   ATTACH_REASON         dwReason
+HRESULT Attach( 
+   IDebugProgram2**      pProgram,
+   IDebugProgramNode2**  rgpProgramNodes,
+   DWORD                 celtPrograms,
+   IDebugEventCallback2* pCallback,
+   ATTACH_REASON         dwReason
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugProgram2[]     pProgram,
-   IDebugProgramNode2[] rgpProgramNodes,
-   uint                 celtPrograms,
-   IDebugEventCallback2 pCallback,
-   Enum_ATTACH_REASON   dwReason
+int Attach( 
+   IDebugProgram2[]     pProgram,
+   IDebugProgramNode2[] rgpProgramNodes,
+   uint                 celtPrograms,
+   IDebugEventCallback2 pCallback,
+   Enum_ATTACH_REASON   dwReason
 );
 ```
 
@@ -61,9 +61,9 @@ dans Nombre de programmes et/ou de nœuds de programme dans les `pProgram` `rgpP
 dans Objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) à utiliser pour envoyer des événements de débogage au SDM.
 
 `dwReason`\
-dans Valeur de l’énumération [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) qui spécifie la raison de l’attachement de ces programmes. Pour plus d'informations, consultez la section Remarques.
+dans Valeur de l’énumération [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) qui spécifie la raison de l’attachement de ces programmes. Pour plus d'informations, consultez la section Notes.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947878"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Actions personnalisées dans les zones de formulaire Outlook
   Les actions affichent des boutons qui permettent aux utilisateurs de répondre à une Microsoft Office élément Outlook. Par exemple, pour répondre à un élément de messagerie, les utilisateurs cliquent sur les boutons **répondre**, **répondre à tous** ou **transférer** l’action. Chacune de ces actions crée un nouvel élément de messagerie et remplit les champs de l’élément à l’aide des informations de l’élément d’origine.
@@ -42,7 +42,7 @@ ms.locfileid: "96848194"
 |--------------|-----------------|
 |**AddressLike**|Spécifie comment le formulaire cible sera adressé.|
 |**Corps**|Spécifie comment le corps de l’élément d’origine est ajouté au formulaire cible.|
-|**Activé**|Indique si l’action personnalisée est activée. Si cette propriété a la valeur **false**, l’action personnalisée est désactivée.|
+|**Enabled**|Indique si l’action personnalisée est activée. Si cette propriété a la valeur **false**, l’action personnalisée est désactivée.|
 |**Méthode**|Spécifie le type de réponse disponible lors de l’exécution de l’action personnalisée. L’action personnalisée peut envoyer le formulaire, ouvrir le formulaire ou demander à l’utilisateur s’il souhaite envoyer ou ouvrir le formulaire.|
 |**Nom**|Spécifie le nom interne que vous pouvez utiliser pour référencer cette action personnalisée dans le code.|
 |**ShowOnRibbon**|Indique s’il faut afficher l’action personnalisée sur le ruban de l’élément d’origine.|

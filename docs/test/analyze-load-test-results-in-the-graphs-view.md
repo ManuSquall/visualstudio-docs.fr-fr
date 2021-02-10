@@ -16,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: cbd15d57090f2248cdd97eba1898e363cc2d21b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948073"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 
@@ -69,7 +69,7 @@ La légende contient les colonnes suivantes :
 |Instance|Nom de l'instance de compteur.|
 |Category|Nom de la catégorie de compteur.|
 |Computer|Le nom de l'ordinateur sur lequel les données du compteur sont collectées.|
-|Couleur|Couleur de la ligne sur le graphique.|
+|Color|Couleur de la ligne sur le graphique.|
 |Plage|Indique le nombre représenté par 100 sur le graphique de ce compteur. Par exemple, pour une plage dont la limite supérieure est 10 000, l'étiquette 100 au sommet du graphique, représente 10 000.|
 |Min|Indique la valeur minimale du compteur en millisecondes.|
 |Max|Indique la valeur maximale du compteur en millisecondes.|

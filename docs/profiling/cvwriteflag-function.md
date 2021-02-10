@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3c82a84e9a6523a0a969639f26b28d64cdfc9e
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 6e24782f38ec3512349efa123f5aed5a068c6b59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948164"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag, fonction
 Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.
@@ -78,7 +78,7 @@ HRESULT CvWriteFlagExVA(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
  **Unicode** : CvWriteFlagExW, CvWriteFlagExVW

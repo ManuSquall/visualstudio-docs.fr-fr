@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 05db6f02f2d00a5c0aca1ff91e15c61cf6bf8d4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948594"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 
@@ -83,9 +83,9 @@ Les boutons de la barre d'outils du Concepteur XSD suivants sont activés lorsqu
 
 |Option|Description|
 |-|-----------------|
-|**Afficher la vue de départ**|Bascule vers la [vue de départ](../xml-tools/start-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **1** .|
-|**Afficher la vue de modèle de contenu**|Bascule vers la [vue de modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **2** .|
-|**Afficher la vue du graphique**|Bascule vers la [vue du graphique](../xml-tools/graph-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **3** .|
+|**Afficher la vue de départ**|Bascule vers la [vue de départ](../xml-tools/start-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **1**.|
+|**Afficher la vue de modèle de contenu**|Bascule vers la [vue de modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **2**.|
+|**Afficher la vue du graphique**|Bascule vers la [vue du graphique](../xml-tools/graph-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **3**.|
 |**Effacer l'espace de travail**|Efface l'espace de travail et l'aire de conception.|
 |**Supprimer de l'espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
 |**Supprimer tout, sauf la sélection de l'espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|

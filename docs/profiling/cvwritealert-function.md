@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2cc6f7408fc5d9af0215dbccf166477876ac23
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 015a25e57e042c86bee28c42489ce3d4f63e8553
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948177"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert, fonction
 Écrit une alerte dans le fichier de trace du visualiseur concurrentiel.
@@ -66,7 +66,7 @@ HRESULT CvWriteAlertVA(
 ## <a name="return-value"></a>Valeur retournée
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkers.h*
 
  **Unicode** : CvWriteAlertW, CvWriteAlertVW

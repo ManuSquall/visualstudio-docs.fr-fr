@@ -14,15 +14,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9dff2cd6b762b2f81581963de6186cdd36e3ab
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 18294a9a6b6a0b967748d6a00817e4194e4cc32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948529"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procédure : Utiliser des composants 3D dans votre jeu ou votre application
 
@@ -32,15 +32,15 @@ Une fois que vous avez utilisé les outils de Visual Studio pour créer des comp
 
 ## <a name="configure-your-project"></a>Configurer votre projet
 
-Avant de déployer vos composants 3D dans le cadre de votre build, Visual Studio doit savoir quels types de composants vous voulez déployer. Visual Studio connaît déjà de nombreux types de fichiers courants, mais comme seuls certains types d’applications utilisent des composants 3D, il ne fait pas l’hypothèse qu’un projet va générer ces types de fichiers. Vous pouvez indiquer à Visual Studio que votre application utilise ces types de composants avec des *personnalisations de build* , qui sont des fichiers fournis pour chaque type de composant, indiquant à Visual Studio comment traiter pratiquement les différents types de fichiers. Comme ces personnalisations sont appliquées projet par projet, tout ce que vous avez à faire est d'ajouter les personnalisations appropriées à votre projet.
+Avant de déployer vos composants 3D dans le cadre de votre build, Visual Studio doit savoir quels types de composants vous voulez déployer. Visual Studio connaît déjà de nombreux types de fichiers courants, mais comme seuls certains types d’applications utilisent des composants 3D, il ne fait pas l’hypothèse qu’un projet va générer ces types de fichiers. Vous pouvez indiquer à Visual Studio que votre application utilise ces types de composants avec des *personnalisations de build*, qui sont des fichiers fournis pour chaque type de composant, indiquant à Visual Studio comment traiter pratiquement les différents types de fichiers. Comme ces personnalisations sont appliquées projet par projet, tout ce que vous avez à faire est d'ajouter les personnalisations appropriées à votre projet.
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Pour ajouter les personnalisations de la build à votre projet
 
-1. Dans l’ **Explorateur de solutions** , ouvrez le menu contextuel du projet et choisissez **Dépendances de build** > **Personnalisations de la build** .
+1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Dépendances de build** > **Personnalisations de la build**.
 
    La boîte de dialogue **Fichiers de personnalisation de la build Visual C++** apparaît.
 
-2. Sous **Fichiers de personnalisation de la build disponibles** , cochez les cases qui correspondent aux types de ressources que vous voulez utiliser dans votre projet, comme décrit dans le tableau suivant :
+2. Sous **Fichiers de personnalisation de la build disponibles**, cochez les cases qui correspondent aux types de ressources que vous voulez utiliser dans votre projet, comme décrit dans le tableau suivant :
 
     |Type de ressource|Nom de personnalisation de la build|
     |----------------| - |
@@ -48,7 +48,7 @@ Avant de déployer vos composants 3D dans le cadre de votre build, Visual Studio
     |Modèles 3D|**MeshContentTask(.targets, .props)**|
     |Nuanceurs|**ShaderGraphContentTask(.targets, .props)**|
 
-3. Choisissez le bouton **OK** .
+3. Choisissez le bouton **OK**.
 
 ## <a name="include-assets-in-your-build"></a>Inclure des composants dans votre build
 
@@ -56,26 +56,26 @@ Maintenant que votre projet sait quels types de ressources 3D vous voulez utilis
 
 ### <a name="to-add-an-asset-to-your-build"></a>Pour ajouter une ressource à votre build
 
-1. Dans **l’Explorateur de solutions** , dans votre projet, ouvrez le menu contextuel d’une ressource, puis choisissez **Propriétés** .
+1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel d’une ressource, puis choisissez **Propriétés**.
 
    La boîte de dialogue **Page de propriétés** de la ressource apparaît.
 
 2. Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.
 
-3. Sous **Propriétés de configuration** , choisissez **Général** puis, dans la grille des propriétés, sous **Général** , affectez à la propriété **Type d’élément** le type d’élément de pipeline de contenu approprié. Par exemple, pour un fichier image ou de texture, choisissez le **pipeline de contenu d’image** .
+3. Sous **Propriétés de configuration**, choisissez **Général** puis, dans la grille des propriétés, sous **Général**, affectez à la propriété **Type d’élément** le type d’élément de pipeline de contenu approprié. Par exemple, pour un fichier image ou de texture, choisissez le **pipeline de contenu d’image**.
 
     > [!IMPORTANT]
-    > Par défaut, Visual Studio considère que de nombreux types de fichiers image doivent être classés dans la catégorie des types d’éléments **Image** , qui est intégrée à Visual Studio. Ainsi, vous devez modifier la propriété **Type d’élément** de chaque image qui doit être traitée par le pipeline de contenu d’image. Les autres types de fichiers sources du pipeline de contenu pour les modèles 3D et les graphismes des nuanceurs visuels ont pour valeur par défaut le **Type d’élément** approprié.
+    > Par défaut, Visual Studio considère que de nombreux types de fichiers image doivent être classés dans la catégorie des types d’éléments **Image**, qui est intégrée à Visual Studio. Ainsi, vous devez modifier la propriété **Type d’élément** de chaque image qui doit être traitée par le pipeline de contenu d’image. Les autres types de fichiers sources du pipeline de contenu pour les modèles 3D et les graphismes des nuanceurs visuels ont pour valeur par défaut le **Type d’élément** approprié.
 
-4. Choisissez le bouton **OK** .
+4. Choisissez le bouton **OK**.
 
 Voici les trois types d’éléments de pipeline de contenu et leurs types de fichiers sources et de sortie associés.
 
 |Type d'élément|Types de fichiers sources|Format des fichiers de sortie|
 |---------------| - | - |
-|**Pipeline de contenu d’image**|Portable Network Graphics ( *. png* )<br /><br /> JPEG ( *. jpg* , *. jpeg* , *. jpe* , *. JFIF* )<br /><br /> Surface de dessin directe ( *. DDS* )<br /><br /> Format Graphics Interchange ( *. gif* )<br /><br /> Bitmap ( *. bmp* , *. dib* )<br /><br /> Tagged Image File Format ( *.tif* , *.tiff* )<br /><br /> Targa ( *. tga* )|DirectDraw Surface ( *.dds* )|
-|**Pipeline de contenu de maillage**|Fichier d’échange AutoDesk FBX ( *.fbx* )<br /><br /> Fichier DAE Collada ( *.dae* )<br /><br /> Fichier Wavefront OBJ ( *.obj* )|fichier de maillage 3D ( *. Directeur marketing* )|
-|**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel ( *.dgsl* )|Sortie du nuanceur compilé ( *. CSO* )|
+|**Pipeline de contenu d’image**|Portable Network Graphics (*. png*)<br /><br /> JPEG (*. jpg*, *. jpeg*, *. jpe*, *. JFIF*)<br /><br /> Surface de dessin directe (*. DDS*)<br /><br /> Format Graphics Interchange (*. gif*)<br /><br /> Bitmap (*. bmp*, *. dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*. tga*)|DirectDraw Surface (*.dds*)|
+|**Pipeline de contenu de maillage**|Fichier d’échange AutoDesk FBX (*.fbx*)<br /><br /> Fichier DAE Collada (*.dae*)<br /><br /> Fichier Wavefront OBJ (*.obj*)|fichier de maillage 3D (*. Directeur marketing*)|
+|**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel (*.dgsl*)|Sortie du nuanceur compilé (*. CSO*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurer les propriétés du pipeline de contenu des composants
 
@@ -83,15 +83,15 @@ Vous pouvez définir les propriétés du pipeline de contenu de chaque fichier d
 
 ### <a name="to-configure-content-pipeline-properties"></a>Pour configurer les propriétés du pipeline de contenu
 
-1. Dans **l’Explorateur de solutions** , dans votre projet, ouvrez le menu contextuel du fichier de ressources, puis choisissez **Propriétés** .
+1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel du fichier de ressources, puis choisissez **Propriétés**.
 
    La boîte de dialogue **Page de propriétés** de la ressource apparaît.
 
 2. Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.
 
-3. Sous **Propriétés de configuration** , choisissez le nœud de pipeline de contenu (par exemple **Pipeline de contenu d’image** pour des ressources de texture et d’image) puis, dans la grille des propriétés, affectez aux propriétés les valeurs appropriées. Par exemple, pour générer des mipmaps pour une ressource de texture au moment de la génération, affectez à la propriété **Générer des mips** la valeur **Oui** .
+3. Sous **Propriétés de configuration**, choisissez le nœud de pipeline de contenu (par exemple **Pipeline de contenu d’image** pour des ressources de texture et d’image) puis, dans la grille des propriétés, affectez aux propriétés les valeurs appropriées. Par exemple, pour générer des mipmaps pour une ressource de texture au moment de la génération, affectez à la propriété **Générer des mips** la valeur **Oui**.
 
-4. Choisissez le bouton **OK** .
+4. Choisissez le bouton **OK**.
 
 ### <a name="image-content-pipeline-configuration"></a>Configuration du pipeline de contenu d'image
 
@@ -99,9 +99,9 @@ Quand vous utilisez l'outil de pipeline de contenu d'image pour générer une re
 
 |Propriété|Description|
 |--------------|-----------------|
-|**Dens**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Options disponibles :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
-|Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non** . Seul le fichier de sortie est modifié ; l'image source est inchangée.|
-|**Générer des mips**|**Oui** pour générer une chaîne MIP complète au moment de la génération et l’inclure dans le fichier de sortie ; sinon, **Non** . Si la valeur **Non** est sélectionnée et que le fichier source contient déjà une chaîne mipmap, le fichier de sortie a une chaîne MIP ; sinon, le fichier de sortie n’a pas de chaîne MIP.|
+|**Dens**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Les options disponibles sont les suivantes :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
+|Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non**. Seul le fichier de sortie est modifié ; l'image source est inchangée.|
+|**Générer des mips**|**Oui** pour générer une chaîne MIP complète au moment de la génération et l’inclure dans le fichier de sortie ; sinon, **Non**. Si la valeur **Non** est sélectionnée et que le fichier source contient déjà une chaîne mipmap, le fichier de sortie a une chaîne MIP ; sinon, le fichier de sortie n’a pas de chaîne MIP.|
 |**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Configuration du pipeline de contenu de maillage

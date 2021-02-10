@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b223f85ff7453eba5777b3a6bde85350d7864e1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948346"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtient le nom de l’indexeur par défaut.
@@ -28,7 +28,7 @@ Obtient le nom de l’indexeur par défaut.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetDefaultIndexer( 
+HRESULT GetDefaultIndexer( 
    BSTR* pbstrIndexer
 );
 ```
@@ -42,7 +42,7 @@ int GetDefaultIndexer(
 ## <a name="parameters"></a>Paramètres
 `pbstrIndexer` à Retourne une chaîne contenant le nom de l’indexeur par défaut.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas d’indexeur par défaut. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

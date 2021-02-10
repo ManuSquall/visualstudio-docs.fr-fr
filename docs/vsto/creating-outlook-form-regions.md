@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba2c4412b344a37e1b1db74cdddea8c5b60b69d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947891"
 ---
 # <a name="create-outlook-form-regions"></a>Créer des zones de formulaire Outlook
   Vous pouvez utiliser des zones de formulaire pour personnaliser des formulaires Microsoft Office Outlook. Visual Studio fournit des outils avancés qui simplifient la conception, le développement et le débogage des zones de formulaire.
@@ -42,7 +42,7 @@ ms.locfileid: "96847960"
 
 - [Ajouter du code personnalisé à une zone de formulaire](#AddingCustomCode)
 
-- [Générer le projet](#Building)
+- [Créer le projet](#Building)
 
 - [Déboguer une zone de formulaire](#Debugging)
 

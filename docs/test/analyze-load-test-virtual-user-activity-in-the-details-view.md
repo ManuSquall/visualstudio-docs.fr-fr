@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 5c05a907bf75ffcdff5bb579ec2624e0dc8a7df9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: f7ae7afa183e2f23a46c8aa4c0b175aecdb44bd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948086"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analyse de l’activité des utilisateurs virtuels d’un test de charge dans la vue Détails de l’analyseur de test de charge
 

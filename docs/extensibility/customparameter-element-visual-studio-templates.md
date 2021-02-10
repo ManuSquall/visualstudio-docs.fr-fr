@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 98f7df8593b09acb2fa4db81ebfa734aeb1ddcaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947734"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Élément CustomParameter (modèles Visual Studio)
 Contient le nom et la valeur d’un paramètre personnalisé à utiliser lors de la création d’un projet ou d’un élément à partir du modèle.
@@ -50,7 +50,7 @@ Contient le nom et la valeur d’un paramètre personnalisé à utiliser lors de
 |-------------|-----------------|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque l’Assistant effectue des remplacements de paramètres.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Lorsqu’un modèle contient des `CustomParameter` éléments, chaque instance de l' `Name` attribut est remplacée par l' `Value` attribut dans les fichiers de projet ou d’élément créés.
 
 ## <a name="example"></a>Exemple
