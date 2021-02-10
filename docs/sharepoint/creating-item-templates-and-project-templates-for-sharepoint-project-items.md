@@ -17,15 +17,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59710eb4651f363d669dc27b6190f8d224d9917f
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 538bc709ed3af1c7b1424b56c1bd843b127c6ab7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949153"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Créer des modèles d’élément et des modèles de projet pour les éléments de projet SharePoint
 
@@ -52,7 +52,7 @@ Les modèles d’élément et les modèles de projet sont des fichiers *. zip* q
 |----------------------| - |
 | *Elements.xml* | Fichier d' *élément de fonctionnalité* . Ce fichier définit l’interface utilisateur et le comportement de la personnalisation créée par l’élément de projet. Chaque type de personnalisation, comme les instances de liste, les types de contenu ou les actions personnalisées, a un schéma différent qui définit le contenu de ce fichier. Pour plus d’informations, consultez [bloc de construction : fonctionnalités](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) et [schémas](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14))de fonctionnalités. |
 | *Schema.xml* | Fichier de schéma pour les définitions de liste. Pour plus d’informations, consultez [bloc de construction : listes et bibliothèques de documents](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)) et [Schema.xml](/previous-versions/office/developer/sharepoint-2010/ms459356(v=office.14)). |
-| *. WebPart* | Fichier de *définition de composant WebPart* . Ce fichier contient les paramètres de propriété d’un composant WebPart. Pour plus d’informations, consultez [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)). |
+| *. WebPart* | Fichier de *définition de composant WebPart* . Ce fichier contient les paramètres de propriété d’un composant WebPart. Pour plus d’informations, consultez [bloc de construction : WebParts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)). |
 | *.ascx* | Fichier UserControl ASP.NET. Ce fichier définit l’interface utilisateur d’un composant Visual Web part. |
 | *. aspx* | Fichier de page ASP.NET. Ce fichier contient un balisage XML qui définit une page d’application. |
 | fichiers *. cs* ou *. vb* | Ces fichiers de code définissent le comportement des personnalisations SharePoint qui ont un modèle de programmation accessible à partir de Visual C# ou de Visual Basic Code, tels que les pages d’application, les composants WebPart et les flux de travail. |

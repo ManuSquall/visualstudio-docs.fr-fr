@@ -1,5 +1,5 @@
 ---
-title: Création de composants WebPart pour SharePoint | Microsoft Docs
+title: Création de WebParts pour SharePoint | Microsoft Docs
 description: Créer des composants WebPart pour SharePoint. À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et le comportement des pages d’un site SharePoint à l’aide d’un navigateur.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -22,18 +22,18 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ae28ab44b12c979f3c405bd7d853d7a2d196aae4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948932"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
-  À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et le comportement des pages d’un site SharePoint à l’aide d’un navigateur. Les composants WebPart sont des contrôles côté serveur qui s’exécutent dans une page de composants WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez le [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
+  À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et le comportement des pages d’un site SharePoint à l’aide d’un navigateur. Les composants WebPart sont des contrôles côté serveur qui s’exécutent dans une page de composants WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez le [bloc de construction : WebParts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
  Vous pouvez créer et déboguer des composants WebPart sur un site SharePoint à l’aide de modèles de Visual Studio.
 
@@ -85,7 +85,7 @@ ms.locfileid: "94672793"
 
 - Les contrôles utilisateur ou les composants Visual Web Parts ne peuvent pas être déplacés ni copiés dans des composants Visual Web Parts. Cette action provoque une erreur de génération.
 
-- Les composants Visual Web Parts ne prennent pas directement en charge les jetons SharePoint Server tels que les $SPUrl. Pour plus d’informations, consultez « restrictions de jeton dans les composants WebPart visuels sandbox » dans la rubrique [résolution des problèmes liés aux solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
+- Les composants Visual Web Parts ne prennent pas directement en charge les jetons SharePoint Server tels que les $SPUrl. Pour plus d’informations, consultez « restrictions de jeton dans les WebParts visuels sandbox » dans la rubrique [résolution des problèmes liés aux solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 - Les composants Visual Web parts dans une solution bac à sable (sandbox) reçoivent parfois l’erreur « la demande d’exécution du code en mode bac à sable (sandbox) a été refusée car le service hôte de code sandbox était trop occupé pour traiter la demande. » Pour plus d’informations sur cette erreur, consultez ce billet sur le blog de l' [équipe de développement SharePoint](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157).
 

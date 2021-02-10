@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f1a6abfbafcbafb9daa52fdc6af85156700efef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948945"
 ---
 # <a name="debug-sharepoint-solutions"></a>Déboguer des solutions SharePoint
   Vous pouvez déboguer des solutions SharePoint à l’aide du [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Lorsque vous démarrez le débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] déploie les fichiers projet sur le serveur SharePoint, puis ouvre une instance du site SharePoint dans le navigateur Web. Les sections suivantes expliquent comment déboguer des applications SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .

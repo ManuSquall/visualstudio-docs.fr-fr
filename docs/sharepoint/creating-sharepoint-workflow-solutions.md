@@ -19,15 +19,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 28a5bc44b0f6fa04d32c574e9772369709736ddd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949075"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Créer des solutions de flux de travail SharePoint
 
@@ -136,7 +136,7 @@ Pour plus d’informations sur SharePoint, consultez [produits et technologies M
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Procédure pas à pas : créer et déboguer une solution de flux de travail SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Vous guide pas à pas dans la création et le débogage d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] flux de travail simple.|
 |[Procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Vous guide pas à pas pour créer un flux de travail plus complet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] complet avec des formulaires d’association et d’initiation.|

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948997"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Créer des définitions de site pour SharePoint
   Le projet de définition de site SharePoint dans vous [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] permet de créer une *définition de site*, qui sert de base pour un nouveau site SharePoint. Ces définitions déterminent non seulement l’apparence et le comportement du site SharePoint, mais également son contenu et ses fonctionnalités par défaut. Dans la définition, vous pouvez placer des listes préconfigurées, des types de contenu, des récepteurs d’événements, des images et d’autres éléments. SharePoint comprend des définitions de site telles que le BLOG, par exemple. Lorsque vous créez un site basé sur la définition du site de BLOG, le site contient les listes, les composants WebPart et les autres éléments requis par un site de blog.
@@ -46,14 +46,14 @@ ms.locfileid: "94850570"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Procédure pas à pas : Création d'un projet de définition de site de base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Vous guide pas à pas dans la création d’un projet de définition de site de base dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Comment : créer une définition de site personnalisée et une configuration](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Décrit comment créer une définition de site personnalisée dans SharePoint en copiant une définition de site existante, puis en modifiant la copie.|
 |[*WebTemp.xml*](/previous-versions/office/developer/sharepoint-2010/ms447717(v=office.14))|Décrit le fichier d’origine qui spécifie les définitions de site disponibles dans la section **sélection du modèle** de la page **nouveau site SharePoint** .|
 |[Localiser des solutions SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Décrit comment préparer vos solutions SharePoint pour une utilisation globale.|
 |[Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Décrit comment vous pouvez créer des parties d’une page SharePoint que les utilisateurs peuvent modifier.|
-|[Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Décrit comment créer des contrôles réutilisables qui s’exécutent dans des pages d’application et des composants WebPart.|
+|[Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Décrit comment créer des contrôles réutilisables qui s’exécutent dans des pages d’application et des WebParts.|
 |[Visual Web Developer](/previous-versions/visualstudio/visual-studio-2010/ms178093(v=vs.100))|Décrit comment utiliser le concepteur qui s’affiche lorsque vous ouvrez une page Web dans votre projet.|
 |[Présentation de pages Web ASP.NET](/previous-versions/aspnet/428509ah(v=vs.100))|Fournit des informations générales sur la structure des [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pages Web, sur le mode de traitement des pages et sur la [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] manière dont les [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pages affichent le balisage conforme aux normes XHTML.|
 |[Syntaxe de la page Web ASP.NET](/previous-versions/aspnet/k33801s3(v=vs.100))|Décrit les éléments de balisage qui composent une page ASP.NET.|

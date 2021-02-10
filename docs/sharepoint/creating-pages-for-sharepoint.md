@@ -16,15 +16,15 @@ helpviewer_keywords:
 - page layouts[SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 702d2c4d5cafd6f4ff4ef2e4104da9f6cc02c5fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949166"
 ---
 # <a name="create-pages-for-sharepoint"></a>Créer des pages pour SharePoint
   Vous pouvez créer des pages d’application, des pages de site, des pages maîtres et des mises en page pour un site SharePoint.
@@ -39,7 +39,7 @@ ms.locfileid: "94850622"
 |Type de page|Description|
 |---------------|-----------------|
 |Pages d’application|Créer une page d’application si vous souhaitez que la page contienne du code personnalisé ou que vous souhaitiez que la page soit partagée entre plusieurs sites. Dans le cas contraire, une page de site peut être le meilleur choix.|
-|Pages de site|Créez une page de site si vous souhaitez effectuer l’une des tâches suivantes :<br /><br /> -Ajoutez la page à une bibliothèque SharePoint.<br />-Activer la page pour héberger des fonctionnalités telles que des composants WebPart dynamiques et des zones de composants WebPart.<br />-Permettre aux utilisateurs de personnaliser la page à l’aide de SharePoint Designer.<br /><br /> Ne créez pas de page de site si vous souhaitez que la page contienne du code personnalisé. Bien que vous puissiez ajouter du code personnalisé à une page de site, le code cesse de s’exécuter lorsque l’utilisateur personnalise la page à l’aide de SharePoint Designer.|
+|Pages de site|Créez une page de site si vous souhaitez effectuer l’une des tâches suivantes :<br /><br /> -Ajoutez la page à une bibliothèque SharePoint.<br />-Activer la page pour héberger des fonctionnalités telles que des WebParts dynamiques et des zones de composants WebPart.<br />-Permettre aux utilisateurs de personnaliser la page à l’aide de SharePoint Designer.<br /><br /> Ne créez pas de page de site si vous souhaitez que la page contienne du code personnalisé. Bien que vous puissiez ajouter du code personnalisé à une page de site, le code cesse de s’exécuter lorsque l’utilisateur personnalise la page à l’aide de SharePoint Designer.|
 |Pages maîtres|Créez une page maître si vous souhaitez définir une structure commune pour les pages de site et les pages d’application.|
 |Dispositions de pages|Les mises en page sont spécifiques à [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] et vous permettent de définir plus précisément une structure commune pour les pages de site et les pages d’application.|
 
@@ -64,7 +64,7 @@ ms.locfileid: "94850622"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Décrit comment ajouter des pages d’applications : le contenu *. aspx* qui est fusionné avec une page maître SharePoint.|
 |[Comment : créer une page d’application](../sharepoint/how-to-create-an-application-page.md)|Montre comment créer des pages ASP.NET qui s’exécutent sur un site SharePoint.|

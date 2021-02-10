@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948906"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Extensions de débogage pour les outils SharePoint dans Visual Studio
   Vous pouvez déboguer des extensions d’outils SharePoint dans l’instance expérimentale ou l’instance normale de Visual Studio. Si vous devez résoudre le comportement d’une extension, vous pouvez également modifier les valeurs de Registre pour afficher des informations supplémentaires sur l’erreur et configurer la façon dont Visual Studio exécute les commandes SharePoint.
@@ -53,7 +53,7 @@ ms.locfileid: "94671218"
 
 3. Dans la boîte de dialogue **programme d’installation des extensions Visual Studio** , choisissez l’édition de Visual Studio sur laquelle vous voulez installer l’extension, puis cliquez sur le bouton **installer** .
 
-     Visual Studio installe les fichiers d’extension dans%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions nom de l’extension de \\ *nom d’auteur* \\ *extension name* \\ *version*. Les trois derniers dossiers dans ce chemin d’accès sont construits à partir des `Author` `Name` éléments, et du `Version` fichier *extension. vsixmanifest* pour l’extension.
+     Visual Studio installe les fichiers d’extension dans%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions nom de l’extension de \\ *nom d’auteur* \\  \\ *version*. Les trois derniers dossiers dans ce chemin d’accès sont construits à partir des `Author` `Name` éléments, et du `Version` fichier *extension. vsixmanifest* pour l’extension.
 
 4. Une fois que Visual Studio a installé l’extension, cliquez sur le bouton **Fermer** .
 

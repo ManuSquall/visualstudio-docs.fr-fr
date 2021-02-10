@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949179"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Créer des pages d’application pour SharePoint
   Une *page d’application* est une page Web ASP.net conçue pour être utilisée sur un site Web SharePoint. Les pages d’application sont un type spécialisé de page ASP.NET. La principale différence entre une page d’application et une page ASP.NET standard est qu’une page d’application contient du contenu fusionné avec une page maître SharePoint. Une page maître permet aux pages d’application de partager la même apparence et le même comportement que les autres pages d’un site.
@@ -33,7 +33,7 @@ ms.locfileid: "94850440"
 ## <a name="application-pages"></a>Pages d’application
  Les pages d’application sont partagées entre tous les sites sur le serveur, alors qu’une page de site est spécifique à un site. Pour plus d’informations, retrouvez les [types de pages SharePoint](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14)).
 
- Par défaut, la plupart des pages qui s’affichent lorsque vous créez un site SharePoint sont des pages de site. Une page de site peut être ajoutée à une bibliothèque de pages SharePoint. Les utilisateurs peuvent personnaliser une page de site à l’aide d’outils tels que SharePoint Designer. Une page de site peut également héberger des fonctionnalités telles que des composants WebPart dynamiques et des zones de composants WebPart.
+ Par défaut, la plupart des pages qui s’affichent lorsque vous créez un site SharePoint sont des pages de site. Une page de site peut être ajoutée à une bibliothèque de pages SharePoint. Les utilisateurs peuvent personnaliser une page de site à l’aide d’outils tels que SharePoint Designer. Une page de site peut également héberger des fonctionnalités telles que des WebParts dynamiques et des zones de composants WebPart.
 
  Les pages d’application ne peuvent pas effectuer ces opérations. Toutefois, une page d’application est le meilleur type de page à créer si vous souhaitez que la page contienne du code personnalisé. Bien que vous puissiez ajouter du code personnalisé à une page de site, le code cesse de s’exécuter lorsque l’utilisateur personnalise la page à l’aide d’outils tels que SharePoint Designer.
 

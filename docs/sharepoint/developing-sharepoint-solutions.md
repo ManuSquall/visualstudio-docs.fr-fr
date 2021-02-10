@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 2f085f5679db2c5c4a1e3cf0cc8d7bbf7cad58eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948828"
 ---
 # <a name="develop-sharepoint-solutions"></a>Développer des solutions SharePoint
   Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour obtenir la liste des types de projets disponibles, consultez modèles de projet [et d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.
@@ -38,7 +38,7 @@ ms.locfileid: "95970383"
  Chaque projet SharePoint contient deux nœuds qui ne peuvent pas être renommés, supprimés, coupés, copiés ou déplacés du projet. Il s'agit des nœuds suivants :
 
 - Fonctionnalités
-- Paquet
+- Package
 
   Ces deux nœuds apparaissent toujours dans tous les projets SharePoint même si aucune fonctionnalité ou package n'est défini pour le projet.
 
@@ -97,19 +97,19 @@ ms.locfileid: "95970383"
 |Nom de la propriété|Description|
 |-------------------|-----------------|
 |Action de génération|Indique le lien entre le fichier et les processus de génération et de déploiement. Pour plus d’informations, consultez [Propriétés du fichier](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
-|Copier dans le répertoire de sortie|Indique si le ou les fichiers source seront copiés vers le répertoire de sortie. Il peut s'agir de l'une des valeurs suivantes :<br /><br /> -   *Ne pas copier*<br />-   *Toujours copier*<br />-   *Copier si plus récent*<br /><br /> Pour plus d’informations, consultez [Propriétés du fichier](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
+|Copier dans le répertoire de sortie|Indique si le ou les fichiers source seront copiés vers le répertoire de sortie. Peut avoir l’une des valeurs suivantes :<br /><br /> -   *Ne pas copier*<br />-   *Toujours copier*<br />-   *Copier si plus récent*<br /><br /> Pour plus d’informations, consultez [Propriétés du fichier](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Outil personnalisé|Spécifie le nom de l'outil utilisé (le cas échéant) pour transformer le fichier au moment du design et placer le résultat de la transformation dans un autre fichier. Par exemple, un fichier dataset (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) est fourni avec un outil personnalisé par défaut. Pour plus d’informations, consultez [Propriétés du fichier](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Espace de noms de l'outil personnalisé|Espace de noms dans lequel est copié le résultat de l'outil personnalisé. Pour plus d’informations, consultez [Propriétés du fichier](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Emplacement de déploiement|Chemin d'accès complet du fichier sur le serveur SharePoint. Ce chemin d'accès est composé des sous-propriétés Racine du déploiement et Chemin d'accès du déploiement.|
 |Chemin d'accès du déploiement|Le chemin d’accès relatif du fichier sur le fichier SharePoint Server, par exemple Workflow1 \\ . Le chemin d'accès qualifié complet du fichier est obtenu par concaténation de la valeur *Deployment Path* à la fin de la valeur *Deployment Root* .<br /><br /> Si vous sélectionnez la valeur *RootFile* pour la propriété *type de déploiement* , la propriété racine de *déploiement* est remplacée par \<SharePointRoot> \\ , ce qui donne un chemin d’accès complet à \<SharePointRoot> \Workflow1 \\ . Pour plus d’informations, consultez [empaquetage et déploiement de solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Deployment Root|Chaîne. Dossier racine dans lequel le fichier est déployé sur le serveur SharePoint. Par exemple, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> La valeur de la propriété *Deployment Root* est déterminée par le paramètre *Deployment Type* .|
-|Type de déploiement|Type de déploiement du fichier, lequel détermine sa valeur *Deployment Root* . Il peut s'agir de l'une des valeurs suivantes :<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest : *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> ElementFile : *\<SharePointRoot> \\ \<FeatureName> \Template\Features \\*<br /><br /> TemplateFile : *\<SharePointRoot> \Template \\*<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource : *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Type de déploiement|Type de déploiement du fichier, lequel détermine sa valeur *Deployment Root* . Peut avoir l’une des valeurs suivantes :<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest : *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> ElementFile : *\<SharePointRoot> \\ \<FeatureName> \Template\Features \\*<br /><br /> TemplateFile : *\<SharePointRoot> \Template \\*<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource : *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Nom de fichier|Nom du fichier ou du dossier pour le fichier d'élément.|
 |Chemin d'accès complet|Emplacement du fichier pour l'élément. (En lecture seule.)|
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Modèles de projets et d'éléments de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Décrit le projet SharePoint et les modèles d'élément de projet disponibles dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Guide pratique pour ajouter des éléments à un projet SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Explique comment ajouter de nouveaux éléments ou des éléments existants à un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|

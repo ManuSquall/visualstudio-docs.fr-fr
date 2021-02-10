@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8fb1aa194688533855b7c5bd1d58a4e3b97ac749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948840"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Concevoir un modèle de connectivité de données métiers
   Vous pouvez développer un modèle pour le service de connectivité de données métiers (BDC) en ajoutant des entités et des méthodes à un fichier de modèle. Une entité décrit une collection de champs de données. Par exemple, une entité peut représenter une table dans une base de données. Une méthode effectue une tâche, telle que l’ajout, la suppression ou la mise à jour des données représentées par les entités. Pour plus d’informations, consultez [intégrer des données métier dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -56,7 +56,7 @@ ms.locfileid: "94672650"
 ## <a name="add-filter-descriptors"></a>Ajouter des descripteurs de filtre
  Les consommateurs du modèle peuvent souhaiter récupérer des instances d’une entité qui correspondent à certains critères. Pour activer cette fonctionnalité, vous pouvez ajouter un descripteur de filtre à une méthode. Les descripteurs de filtre permettent aux consommateurs de modèles de filtrer les jeux de résultats de méthode en passant des valeurs aux méthodes avant leur exécution. Pour plus d’informations, consultez [Comment : ajouter des paramètres de filtre à des opérations pour limiter les instances du système externe](/previous-versions/office/developer/sharepoint-2010/ee554889(v=office.14)).
 
- SharePoint fournit plusieurs fonctionnalités qui permettent aux utilisateurs de fournir des valeurs de filtre. Par exemple, les composants WebPart de données d’entreprise fournissent une zone de texte de filtre. Les utilisateurs peuvent limiter les données dans une liste en entrant une valeur dans la zone de texte. Pour plus d’informations sur l’ajout d’un descripteur de filtre à une méthode, consultez [Comment : ajouter un descripteur de filtre à une méthode de recherche](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
+ SharePoint fournit plusieurs fonctionnalités qui permettent aux utilisateurs de fournir des valeurs de filtre. Par exemple, les WebParts de données d’entreprise fournissent une zone de texte de filtre. Les utilisateurs peuvent limiter les données dans une liste en entrant une valeur dans la zone de texte. Pour plus d’informations sur l’ajout d’un descripteur de filtre à une méthode, consultez [Comment : ajouter un descripteur de filtre à une méthode de recherche](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ### <a name="filter-descriptor-properties"></a>Propriétés du descripteur de filtre
  Vous devez définir la valeur du **descripteur de type associé**, du **nom** et des propriétés de **type** d’un descripteur de filtre. Toutes les autres propriétés sont facultatives.
@@ -90,7 +90,7 @@ ms.locfileid: "94672650"
 |Tâche|Option|
 |----------|------------|
 |Pour déployer des modèles dans le service BDC.|Modifier|
-|Pour créer des listes et des composants WebPart à l’aide de types de contenu externes (entités) dans votre modèle.|Sélectionnable dans les clients|
+|Pour créer des listes et des WebParts à l’aide de types de contenu externes (entités) dans votre modèle.|Sélectionnable dans les clients|
 |Pour créer, lire, mettre à jour et supprimer des données d’entité.|Execute|
 
  Pour plus d’informations sur ces paramètres, consultez [gestion des services Business Data Connectivity](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
@@ -126,7 +126,7 @@ ms.locfileid: "94672650"
 |[Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Montre comment définir des types de données de paramètre dans le modèle.|
 |[Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)|Montre comment créer une instance d’une méthode exécutée par le BDC.|
 |[Comment : ajouter un descripteur de filtre à une méthode de recherche](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Montre comment permettre aux utilisateurs de limiter le nombre d’instances retournées par une méthode de recherche.|
-|[Création d'une association entre des entités](../sharepoint/creating-an-association-between-entities.md)|Décrit comment vous pouvez définir des relations entre des entités dans le modèle. Les composants WebPart de données métiers, les listes externes et les applications personnalisées peuvent afficher ces relations de données dans une interface utilisateur (IU).|
+|[Création d'une association entre des entités](../sharepoint/creating-an-association-between-entities.md)|Décrit comment vous pouvez définir des relations entre des entités dans le modèle. Les WebParts de données métiers, les listes externes et les applications personnalisées peuvent afficher ces relations de données dans une interface utilisateur (IU).|
 |[Comment : créer une association entre des entités](../sharepoint/how-to-create-an-association-between-entities.md)|Montre comment définir des relations entre des entités dans le modèle.|
 |[Procédure pas à pas : Createan liste externe dans SharePoint à l’aide de données d’entreprise](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Fournit des instructions pas à pas qui vous montrent comment créer et tester un modèle qui affiche des contacts dans une liste externe SharePoint.|
 |[Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Fournit une vue d’ensemble de la création et de la conception de modèles pour le service BDC.|

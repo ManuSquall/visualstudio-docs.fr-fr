@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85118cebfa862a1575762985d41df61ef76b5cc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949322"
 ---
 # <a name="debug-python-and-c-together"></a>Déboguer conjointement Python et C++
 
@@ -48,7 +48,7 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
     > [!Tip]
     > Quand vous activez le débogage du code natif, la fenêtre de sortie Python peut disparaître immédiatement une fois le programme terminé sans afficher la pause habituelle **Appuyez sur une touche pour continuer**. Pour forcer une pause, ajoutez l' `-i` option au champ **exécuter**  >  des arguments de l'**interpréteur** sous l’onglet **Déboguer** lorsque vous activez le débogage de code natif. Cet argument met l’interpréteur Python en mode interactif à la fin du code, à partir duquel il attend que vous appuyiez sur **CTRL** + **Z**  >  **entrée** pour quitter.
 
-1. Quand vous attachez le débogueur en mode mixte à un processus existant (**Déboguer**l'  >  **attachement au processus**), utilisez le bouton **Sélectionner** pour ouvrir la boîte de dialogue Sélectionner le **type de code** . Définissez ensuite l’option **Déboguer ces types de codes**, puis sélectionnez à la fois **Natif** et **Python** dans la liste :
+1. Quand vous attachez le débogueur en mode mixte à un processus existant (**Déboguer** l'  >  **attachement au processus**), utilisez le bouton **Sélectionner** pour ouvrir la boîte de dialogue Sélectionner le **type de code** . Définissez ensuite l’option **Déboguer ces types de codes**, puis sélectionnez à la fois **Natif** et **Python** dans la liste :
 
     ![Sélection des types de codes Natif et Python](media/mixed-mode-debugging-code-type.png)
 
@@ -105,7 +105,7 @@ Un double-clic sur un frame d’appel quelconque active ce dernier et ouvre le c
 
 ### <a name="step-between-python-and-native-code"></a>Pas à pas détaillé alternant entre du code Python et natif
 
-Quand vous utilisez les commandes **Pas à pas détaillé** (**F11**) ou **Pas à pas sortant ** (**Maj**+**F11**), le débogueur en mode mixte gère correctement l’alternance entre ces types de codes. Par exemple, lorsque Python appelle une méthode d’un type implémenté en C, le pas à pas détaillé sur un appel de cette méthode s’arrête au début de la fonction native implémentant la méthode. De même, lorsqu’un code natif appelle une fonction API Python, un code Python est appelé. Par exemple, l’exécution d’un pas à pas détaillé dans `PyObject_CallObject` sur une valeur de fonction initialement définie dans Python s’arrête au début de la fonction Python. L’exécution d’un pas à pas détaillé alternant entre un code Python et natif est également prise en charge pour les fonctions natives appelées à partir de Python par le biais de [ctypes](https://docs.python.org/3/library/ctypes.html).
+Quand vous utilisez les commandes **Pas à pas détaillé** (**F11**) ou **Pas à pas sortant** (**Maj**+**F11**), le débogueur en mode mixte gère correctement l’alternance entre ces types de codes. Par exemple, lorsque Python appelle une méthode d’un type implémenté en C, le pas à pas détaillé sur un appel de cette méthode s’arrête au début de la fonction native implémentant la méthode. De même, lorsqu’un code natif appelle une fonction API Python, un code Python est appelé. Par exemple, l’exécution d’un pas à pas détaillé dans `PyObject_CallObject` sur une valeur de fonction initialement définie dans Python s’arrête au début de la fonction Python. L’exécution d’un pas à pas détaillé alternant entre un code Python et natif est également prise en charge pour les fonctions natives appelées à partir de Python par le biais de [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>Vue des valeurs PyObject dans le code natif
 

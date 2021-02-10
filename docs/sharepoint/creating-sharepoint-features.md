@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949114"
 ---
 # <a name="create-sharepoint-features"></a>Créer des fonctionnalités SharePoint
   Vous pouvez utiliser une fonctionnalité SharePoint pour regrouper des éléments de projet SharePoint connexes pour faciliter le déploiement. Vous pouvez créer des fonctionnalités, définir des étendues et marquer d’autres fonctionnalités en tant que dépendances à l’aide du concepteur de fonctionnalités SharePoint. Le concepteur génère également un manifeste, qui est un fichier XML décrivant chaque fonctionnalité.
@@ -42,7 +42,7 @@ ms.locfileid: "94850583"
 
 |Propriété|Description|
 |--------------|-----------------|
-|Intitulé|facultatif. Le titre par défaut de la fonctionnalité a la valeur *SolutionName* *NomFonctionnalité*.|
+|Title|Facultatif. Le titre par défaut de la fonctionnalité a la valeur *SolutionName* *NomFonctionnalité*.|
 |Description|facultatif. Description de la fonctionnalité SharePoint.|
 |Étendue|Obligatoire. Si une fonctionnalité est créée à l’aide de **Explorateur de solutions**, l’étendue est définie sur Web par défaut.<br /><br /> -Batterie de serveurs : activer une fonctionnalité pour une batterie de serveurs entière.<br /><br /> -Site : active une fonctionnalité pour tous les sites Web d’une collection de sites.<br /><br /> -Web : active une fonctionnalité pour un site Web spécifique.<br /><br /> -WebApplication : active une fonctionnalité pour tous les sites Web d’une application Web.|
 |Éléments de la solution|Tous les éléments SharePoint qui peuvent être ajoutés à la fonctionnalité.|

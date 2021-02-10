@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949088"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Créer des packages de solution SharePoint
   À l’aide du concepteur de packages, vous pouvez créer et personnaliser des packages de déploiement. Par exemple, vous pouvez ajouter des fonctionnalités et des éléments de projet SharePoint, réinitialiser le serveur IIS, définir des étendues d’activation de fonctionnalité et identifier les dépendances de fonctionnalités. Le concepteur génère également un manifeste, un fichier XML qui décrit chaque package.
@@ -38,10 +38,10 @@ ms.locfileid: "94850557"
 |Propriété du concepteur de packages|Description du paramètre par défaut|
 |-------------------------------|------------------------------------|
 |Nom|Obligatoire. Le nom par défaut du package est défini sur *ProjectName*.|
-|Réinitialiser le serveur|facultatif. Sélectionnez cette option si vous souhaitez redémarrer le serveur Web après l’installation du fichier *. wsp* sur le serveur SharePoint.|
-|Type de serveur de déploiement|facultatif. Représente le type de serveur qui héberge le package. Si ce paramètre n’est pas défini, la valeur par défaut est WebFrontEnd.<br /><br /> ApplicationServer : décrit un serveur qui héberge des services.<br /><br /> WebFrontEnd : décrit un serveur qui héberge des sites Web.|
+|Réinitialiser le serveur|Facultatif. Sélectionnez cette option si vous souhaitez redémarrer le serveur Web après l’installation du fichier *. wsp* sur le serveur SharePoint.|
+|Type de serveur de déploiement|Facultatif. Représente le type de serveur qui héberge le package. Si ce paramètre n’est pas défini, la valeur par défaut est WebFrontEnd.<br /><br /> ApplicationServer : décrit un serveur qui héberge des services.<br /><br /> WebFrontEnd : décrit un serveur qui héberge des sites Web.|
 |Éléments de la solution|Tous les éléments et fonctionnalités de projet SharePoint qui peuvent être ajoutés au package.|
-|Éléments du package|facultatif. Tous les éléments et fonctionnalités SharePoint que vous souhaitez déployer dans votre package.|
+|Éléments du package|Facultatif. Tous les éléments et fonctionnalités SharePoint que vous souhaitez déployer dans votre package.|
 
 ## <a name="configure-the-packaging-process"></a>Configurer le processus d’empaquetage
  Après avoir développé des solutions SharePoint dans Visual Studio, vous pouvez personnaliser la façon dont les projets sont empaquetés.
