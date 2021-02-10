@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950846"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Étape 2 : exécuter votre application visionneuse d’images
 
@@ -34,12 +34,12 @@ Voici comment exécuter votre application.
     - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage** , qui se présente comme suit :
 
       ![Bouton de barre d'outils Démarrer le débogage](../ide/media/express_icondebug.png)<br>
-      **_Démarrer le débogage_* _ _toolbar bouton *
+      ***Démarrer le débogage** _ _toolbar bouton *
 
 1. Visual Studio exécute votre application et une fenêtre nommée **Form1** s’affiche. La capture d’écran suivante montre l’application que vous venez de créer. L’application est en cours d’exécution, et vous y ajoutez bientôt.
 
      ![Windows Forms application en cours d’exécution](../ide/media/express_firstrun.png)<br>
-**_Windows Forms l’application_* _, _running *
+***Windows Forms l’application** _, _running *
 
 1. Revenez à l’environnement de développement intégré (IDE) de Visual Studio, puis examinez la nouvelle barre d’outils. Des boutons supplémentaires apparaissent dans la barre d’outils lorsque vous exécutez une application. Ces boutons vous permettent d’effectuer des opérations telles que arrêter et démarrer votre application, et vous aider à identifier les erreurs (bogues) qu’elle peut avoir. Pour cet exemple, nous l’utilisons pour démarrer et arrêter l’application.
 

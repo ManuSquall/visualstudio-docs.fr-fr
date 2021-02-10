@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFolder element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d1a5b5086ef90b9d8399a6f0f76bdee77c07288e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950573"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder (élément)
   Représente un dossier mappé.

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951002"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Étape 1 : Créer un projet d’application Windows Forms
 
@@ -29,7 +29,7 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
 1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**. La boîte de dialogue doit ressembler à la capture d’écran suivante.
 
-     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>**_Nouveau projet_* _ _dialog Box *
+     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>***Nouveau projet** _ _dialog Box *
 
 2. Sur le côté gauche de la boîte de dialogue **nouveau projet** , choisissez **Visual C#** ou **Visual Basic**, puis choisissez **Bureau Windows**.
 
@@ -107,7 +107,7 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
      Vous pouvez également cliquer sur le bouton **enregistrer tout** de la barre d’outils, comme le montre l’image suivante.
 
      ![Enregistrer tout, bouton de barre d’outils](../ide/media/express_iconsaveall.png)<br/>
-     *Bouton *_enregistrer tout_* _ _toolbar *
+     *Bouton **enregistrer tout** _ _toolbar *
 
      Visual Studio renseigne automatiquement le nom du dossier et le nom du projet, puis crée le projet dans votre dossier de projets.
 

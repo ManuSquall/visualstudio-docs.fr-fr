@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 69a7c6a472023dd8bd41b087b3749e5451382a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950304"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives, tâche
 
@@ -40,7 +40,7 @@ La <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> tâche fusio
 
 ## <a name="remarks"></a>Notes
 
-Vous pouvez ajouter des commentaires et des attributs de localisation au contenu XAML. Avec la prise en charge de la localisation Windows Presentation Foundation (WPF), vous pouvez supprimer les attributs et les commentaires de localisation et les placer dans un fichier *. loc* distinct de l’assembly généré. Vous pouvez pour cela utiliser l’attribut **LocalizationPropertyStorage** . Pour plus d’informations sur les commentaires et attributs de localisation, et sur **LocalizationPropertyStorage** , consultez [Attributs et commentaires de localisation](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+Vous pouvez ajouter des commentaires et des attributs de localisation au contenu XAML. Avec la prise en charge de la localisation Windows Presentation Foundation (WPF), vous pouvez supprimer les attributs et les commentaires de localisation et les placer dans un fichier *. loc* distinct de l’assembly généré. Vous pouvez pour cela utiliser l’attribut **LocalizationPropertyStorage**. Pour plus d’informations sur les commentaires et attributs de localisation, et sur **LocalizationPropertyStorage**, consultez [Attributs et commentaires de localisation](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Exemple
 
@@ -63,6 +63,6 @@ L’exemple suivant fusionne les commentaires de localisation de plusieurs fichi
 
 - [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Référence des tâches MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Référence des tâches MSBuild](../msbuild/msbuild-task-reference.md)
 - [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

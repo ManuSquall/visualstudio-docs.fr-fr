@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 427d7bc0ec59b98394b292745985be7fdf69b904
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950508"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;élément appAddin (développement Office dans Visual Studio)
   L’élément **appAddin** de l' `vstov4` espace de noms stocke des informations spécifiques à la personnalisation pour les compléments VSTO.
@@ -46,16 +46,16 @@ ms.locfileid: "96844749"
 |Attribut|Description|
 |---------------|-----------------|
 |**application**|Obligatoire. Identifie l’application Microsoft Office. La valeur peut être l’une des suivantes : Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|
-|**loadBehavior**|facultatif. Par défaut, le **LoadBehavior** est activé en définissant cette valeur sur. Pour le débogage, vous pouvez désactiver le complément VSTO en définissant la valeur sur deux. Pour plus d’informations, consultez le tableau intitulé valeurs LoadBehavior dans les [entrées de Registre pour les compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**loadBehavior**|Facultatif. Par défaut, le **LoadBehavior** est activé en définissant cette valeur sur. Pour le débogage, vous pouvez désactiver le complément VSTO en définissant la valeur sur deux. Pour plus d’informations, consultez le tableau intitulé valeurs LoadBehavior dans les [entrées de Registre pour les compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 |**keyName**|Obligatoire. Cette valeur est le nom de la clé de Registre que l’application utilise pour charger le complément VSTO. Pour plus d’informations, consultez [entrées du Registre pour les compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  L’élément **appAddin** contient les éléments enfants suivants.
 
 ### <a name="friendlyname"></a>friendlyName
- facultatif. L’élément **FriendlyName** est expliqué dans [&#60;&#62; élément FriendlyName &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
+ Facultatif. L’élément **FriendlyName** est expliqué dans [&#60;&#62; élément FriendlyName &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
 
 ### <a name="description"></a>description
- facultatif. L’élément **Description** est expliqué dans [&#60;description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).
+ Facultatif. L’élément **Description** est expliqué dans [&#60;description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).
 
 ### <a name="formregions"></a>formRegions
  Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire. L’élément **FormRegions** est expliqué dans [&#60;&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).

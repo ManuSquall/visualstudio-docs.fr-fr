@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950729"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
 
@@ -35,7 +35,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 1. Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **texte**, tapez **visionneuse d’images**, puis appuyez sur **entrée**.  La **visionneuse d’images** de texte doit maintenant être présente dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à la capture d’écran suivante.
 
     ![Fenêtre Propriétés](../ide/media/express_edittextproperty.png)<br>
-   **_Propriétés_* _ _window *
+   ***Propriétés** _ _window *
 
    > [!NOTE]
    > Les propriétés peuvent être classées selon une vue par **catégorie** ou par **ordre alphabétique** . Vous pouvez passer d’une vue à l’autre à l’aide des boutons de la fenêtre **Propriétés**. Dans ce didacticiel, il est plus facile de rechercher des propriétés via la vue **alphabétique** .
@@ -58,7 +58,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
    - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage**, qui se présente comme suit.
 
       ![Bouton de barre d'outils Démarrer le débogage](../ide/media/express_icondebug.png)<br>
-     **_Démarrer le débogage_* _ _toolbar bouton *
+     ***Démarrer le débogage** _ _toolbar bouton *
 
      Comme auparavant, l’IDE génère et exécute votre application, et une fenêtre s’affiche.
 

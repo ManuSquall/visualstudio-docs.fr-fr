@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b700359977e13e4664067ef62af4913d41cbabb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 5607efbf9e979ff427d772089731af01cdd71867
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950154"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 La méthode `ResumeProfile` décrémente le compteur Suspend/Resume pour le niveau de profilage spécifié.
@@ -71,7 +71,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 
  Bibliothèque d’importation : *VSPerf.lib*
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple suivant illustre la fonction ResumeProfile. L’exemple suppose qu’un appel à la méthode SuspendProfile a été effectué pour le même thread ou processus identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp

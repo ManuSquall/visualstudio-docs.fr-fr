@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 496bf75495d864024ef587849edd554bfd435db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950885"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Étape 2 : ajouter un objet aléatoire et une liste d'icônes
 
@@ -44,7 +44,7 @@ Dans cette étape, vous créez un ensemble de symboles correspondants pour le je
 
 3. Quand vous ajoutez l’objet de la liste, notez que la fenêtre **IntelliSense** s’ouvre. Voici un exemple C#, mais un texte similaire s’affiche lorsque vous ajoutez une liste dans Visual Basic.
 
-     ![Fenêtre Propriétés affichant l’événement Click](../ide/media/express_listintellisense.png)<br/>*Fenêtre *_IntelliSense_**
+     ![Fenêtre Propriétés affichant l’événement Click](../ide/media/express_listintellisense.png)<br/>*Fenêtre **IntelliSense***
 
     > [!NOTE]
     > La fenêtre IntelliSense apparaît seulement quand vous entrez du code manuellement. Si vous effectuez un copier-coller du code, elle n'apparaît pas.

@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 059e7dfc9d7c16be3aa699eea47b1a64882e689e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949309"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn et ThreadOff
 Les *VSPerfCmd.exe* sous-commandes **ThreadOff** et **ThreadOn** ne sont disponibles que dans les sessions de profilage en ligne de commande qui utilisent la méthode d’instrumentation. **ThreadOff** et **ThreadOn** suspendent et reprennent le profilage du thread spécifié. **ThreadOff** arrête le profilage du thread et **ThreadOn** démarre le profilage du thread.
@@ -51,7 +51,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 
  {**ProcessOff**&#124;**ProcessOn**} **:**`TID` Arrête ou démarre le profilage pour le processus spécifié.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Dans cet exemple, la sous-commande **ThreadOff** est utilisée pour arrêter la collecte de données de profilage et collecter seulement les données de démarrage de l’application.
 
 ```cmd

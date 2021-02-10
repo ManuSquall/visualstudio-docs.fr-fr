@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2cfffe78264f5721bbf3f3434199a542ec1ce14
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ac62edc3830d60a99448e2faf4cb20949b7081e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949907"
 ---
 # <a name="stopprofile"></a>StopProfile
 La fonction `StopProfile` définit le compteur sur 0 (désactivé) pour le niveau de profilage spécifié.
@@ -71,7 +71,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 
  Bibliothèque d’importation : VSPerf.lib
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple suivant montre la méthode StopProfile. L’exemple suppose qu’un appel à la méthode StartProfile a été effectué pour le même thread ou le même processus identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp

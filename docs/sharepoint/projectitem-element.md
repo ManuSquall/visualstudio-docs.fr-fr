@@ -11,20 +11,20 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 2b94b44bfa442805c4c785a48c9f60f56eb8e002
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950586"
 ---
 # <a name="projectitem-element"></a>ProjectItem (élément)
   Représente un élément de projet SharePoint. Cet élément est l’élément racine requis du fichier *. les données* .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <ProjectItem DefaultFile = "File that opens in the editor when you open the project item"
@@ -63,7 +63,7 @@ ms.locfileid: "96305051"
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Élément facultatif.<br /><br /> Représente une collection de valeurs de propriétés qui sont incluses avec une fonctionnalité lorsqu’elle est déployée sur SharePoint.<br /><br /> Vous ne pouvez inclure qu’un seul élément **FeatureProperties** .|
 |[Fichiers](../sharepoint/files-element.md)|Élément **FileCollectionType** facultatif.<br /><br /> Spécifie les fichiers à déployer avec l’élément de projet SharePoint, tels que les fichiers d’élément de fonctionnalité et la sortie des projets non SharePoint dépendants.<br /><br /> Incluez un **fichier** ou un élément **ProjectItemFolder,** , mais pas les deux.|
 |[ProjectItemFolder,](../sharepoint/projectitemfolder-element.md)|Élément **ProjectItemFolderType** facultatif.<br /><br /> Représente un dossier mappé.<br /><br /> Incluez un **fichier** ou un élément **ProjectItemFolder,** , mais pas les deux.|
-|[SafeControls](../sharepoint/safecontrols-element.md)|Élément facultatif.<br /><br /> Représente une collection de contrôles ASPX et composants WebPart désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.<br /><br /> Vous ne pouvez inclure qu’un seul élément **SafeControls** .|
+|[SafeControls](../sharepoint/safecontrols-element.md)|Élément facultatif.<br /><br /> Représente une collection de contrôles ASPX et WebParts désignés comme sécurisés pour n’importe quel utilisateur à accéder à n’importe quelle page ASPX sur le site SharePoint.<br /><br /> Vous ne pouvez inclure qu’un seul élément **SafeControls** .|
 
 ### <a name="parent-elements"></a>Éléments parents
  Aucun.

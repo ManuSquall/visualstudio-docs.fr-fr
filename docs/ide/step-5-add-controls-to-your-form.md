@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950664"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Étape 5 : Ajouter des contrôles à votre formulaire
 
@@ -45,7 +45,7 @@ Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment
 
 1. Choisissez le **TableLayoutPanel** sur le formulaire, puis ajoutez un contrôle CheckBox au formulaire. Double-cliquez sur l’élément **CheckBox** dans la **boîte à outils** pour ajouter un nouveau contrôle CheckBox à la cellule libre suivante de votre tableau. Étant donné qu'un contrôle PictureBox occupe les deux premières cellules du contrôle TableLayoutPanel, le contrôle CheckBox est ajouté à la cellule inférieure gauche. Choisissez la propriété **Text** et tapez le mot **Stretch**, comme illustré dans l’image suivante.
 
-    ![Contrôle TextBox avec propriété Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _Control avec * ***Stretch**_ _property *
+    ![Contrôle TextBox avec propriété Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox** _ _Control avec * ***Stretch**_ _property *
 
 1. Choisissez le **TableLayoutPanel** dans le formulaire, puis accédez au groupe **conteneurs** dans la **boîte à outils** (où vous avez obtenu votre contrôle TableLayoutPanel) et double-cliquez sur l’élément **FlowLayoutPanel** pour ajouter un nouveau contrôle à la dernière cellule (en bas à droite). Ancrez ensuite le FlowLayoutPanel dans le TableLayoutPanel. Pour ce faire, vous pouvez soit choisir **ancrer dans le conteneur parent** dans la liste des tâches triangle noir du contrôle FlowLayoutPanel, soit définir la propriété **Dock** de FlowLayoutPanel sur **Fill**.
 
@@ -76,7 +76,7 @@ Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment
 
    Vos boutons doivent maintenant avoir des dimensions correctes et se trouver dans le bon ordre. (Tant que les quatre boutons sont sélectionnés, vous pouvez modifier les quatre propriétés **AutoSize** en même temps.) L’illustration suivante montre les quatre boutons.
 
-    ![Visionneuse d’images avec quatre boutons](../ide/media/express_autosize.png)<br/>**_Visionneuse d’images_* _ _with quatre boutons *
+    ![Visionneuse d’images avec quatre boutons](../ide/media/express_autosize.png)<br/>***Visionneuse d’images** _ _with quatre boutons *
 
 1. Maintenant, exécutez à nouveau votre programme pour voir vos modifications.
 

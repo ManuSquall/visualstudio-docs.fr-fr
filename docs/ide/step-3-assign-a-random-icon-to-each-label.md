@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3330daeed243f96c44825a4be5516c573bb005
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 82356ce29f46388f9c74318c05dc6a4b68fcbbae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950768"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Affecter une icône aléatoire à chaque étiquette
 
@@ -57,7 +57,7 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
 
      Rappelez-vous que si vous n'êtes pas sûr de ce que fait une partie du code, vous pouvez placez le pointeur de la souris sur un élément du code et lire l'info-bulle qui s'affiche. Vous pouvez également parcourir pas à pas chaque ligne de code pendant l'exécution du programme en utilisant le débogueur Visual Studio. Pour plus d’informations, consultez [Comment utiliser le débogueur dans Visual Studio ?](https://msdn.microsoft.com/vstudio/ee672313.aspx) ou [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
 
-3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez C#, ajoutez une instruction juste sous l’appel à la `InitializeComponent()` méthode dans le constructeur **Form1** _constructor_, afin que votre formulaire appelle votre nouvelle méthode pour se configurer avant de s’afficher. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) ou [Utilisation des constructeurs et des destructeurs](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) (Visual Basic).
+3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez C#, ajoutez une instruction juste sous l’appel à la `InitializeComponent()` méthode dans le constructeur **Form1** , afin que votre formulaire appelle votre nouvelle méthode pour se configurer avant de s’afficher. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) ou [Utilisation des constructeurs et des destructeurs](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) (Visual Basic).
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

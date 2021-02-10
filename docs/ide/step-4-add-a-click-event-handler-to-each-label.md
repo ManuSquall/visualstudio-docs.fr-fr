@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f620b097e2a565bbacf3322d03385aa70fd0356f
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f37d0f89ad5124956198df1bde94bdb6cf54f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950677"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette
 
@@ -36,7 +36,7 @@ Le jeu de combinaisons fonctionne comme suit :
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Pour ajouter un gestionnaire d'événements Click à chaque étiquette
 
-1. Ouvrez le formulaire dans le **Concepteur Windows Forms**. Dans l'**Explorateur de solutions**, choisissez *Form1.cs* ou *Form1.vb*. Dans la barre de menus, choisissez Concepteur de **vues**  >  **Designer**.
+1. Ouvrez le formulaire dans le **Concepteur Windows Forms**. Dans l'**Explorateur de solutions**, choisissez *Form1.cs* ou *Form1.vb*. Dans la barre de menus, choisissez Concepteur de **vues**  >  .
 
 2. Choisissez le premier contrôle Label pour le sélectionner. Ensuite, maintenez la touche **Ctrl** enfoncée tout en choisissant d'autres étiquettes pour les sélectionner. Assurez-vous que chaque contrôle Label est sélectionné.
 

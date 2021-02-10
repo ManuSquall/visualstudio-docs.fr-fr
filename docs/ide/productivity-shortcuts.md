@@ -5,15 +5,15 @@ ms.date: 11/02/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd11a05ed6b19fe5d6236bec2c6b4926bbcdefd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951106"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Conseils d’utilisation des raccourcis pour Visual Studio
 
@@ -44,7 +44,7 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 |Tâche|Raccourci|
 |-|-|
 |Recherche Explorateur de solutions|**CTRL** + **;**|
-|Placer le focus dans la zone de recherche d’une fenêtre outil (à l’exception de l’éditeur)|**Alt** + Alt **`** Quand la fenêtre outil a le focus|
+|Placer le focus dans la zone de recherche d’une fenêtre outil (à l’exception de l’éditeur)| + Alt **`** Quand la fenêtre outil a le focus|
 |Recherche Visual Studio|**CTRL** + **Q**|
 |Filtre de résultats de zone de recherche|@opt - Options<br />@cmd - Commandes<br />@mru - Les dernières utilisées<br />@doc - Documents ouverts|
 |Rechercher dans les options d'outils|**CTRL** + **E**|
@@ -54,7 +54,7 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 |Tâche|Raccourci|
 |-|-|
 |Recherche rapide|**CTRL** + **F**|
-|Recherche rapide - Résultat suivant|**Entrez**|
+|Recherche rapide - Résultat suivant|**Entrée**|
 |Recherche rapide - Résultat précédent|**MAJ** + **Entrez**|
 |Recherche rapide - Zone combinée Développer|**ALT** + **Flèche bas**|
 |Faire disparaître la recherche|**Échap**|
@@ -74,14 +74,14 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 |Ajout de sélections correspondantes avec plusieurs signes insertion|**MAJ** + **ALT** + **Compléments**|
 |Mettre le document en forme|**CTRL** + **K**,**D**|
 |Mode de suggestion IntelliSense|**CTRL** + **ALT** + **Espace** (bascule)|
-|Forcer l'affichage d'IntelliSense|**CTRL** + **J**|
+|Forcer l'affichage d'IntelliSense|**Ctrl**+**J**|
 |Actions rapides|**CTRL** + **.**|
 |Sélecteur d'extraits|**CTRL** + **K**,**X** ou **?**,**onglet** (Visual Basic)|
 |Entourer de|**CTRL** + **K**,**S**|
 |Afficher les informations express|**CTRL** + **K**,**I**|
 |Naviguer vers|**CTRL** + **,**|
 |Parcourir les références en surbrillance|**CTRL** + **MAJ** + **Haut** (précédent)<br />**CTRL** + **MAJ** + **Vers le dessous** (suivant)|
-|Éditeur de zoom|**CTRL** + **Shift** + MAJ **>** Dans<br />**CTRL** + **Shift** + MAJ **<** À|
+|Éditeur de zoom|**CTRL** +  + MAJ **>** Dans<br />**CTRL** +  + MAJ **<** À|
 |Sélection de bloc|Maintenez la touche **Alt** et faites glisser la souris<br />**MAJ** + **ALT** + **Touches de direction**|
 |Déplacer la ligne vers le haut/le bas|**ALT** + **Flèche haut**  /  **ALT** + **Flèche bas**|
 |Dupliquer la ligne|**CTRL** + **E**,**V**|
@@ -92,7 +92,7 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 |Atteindre une pile de définitions|**CTRL** + **MAJ** + **8** (arrière)<br />**CTRL** + **MAJ** + **7** (suivant)|
 |Fermer la fenêtre Aperçu de définition|**Échap**|
 |Promouvoir la fenêtre Aperçu de définition dans un onglet de document normal|**CTRL** + **ALT** + **Page d’hébergement**|
-|Naviguer entre plusieurs fenêtres d'aperçu de définition|**CTRL** + **Alt** + Alt **-** et **CTRL** + **ALT**+**=**|
+|Naviguer entre plusieurs fenêtres d'aperçu de définition|**CTRL** +  + Alt **-** et **CTRL** + **ALT**+**=**|
 |Naviguer entre plusieurs résultats d'aperçu de définition|**F8** et **Maj**+**F8**|
 |Permuter entre la fenêtre de l'éditeur de code et la fenêtre Aperçu de définition|**MAJ** + **Echap**|
 |Accéder à Bloc englobant|**CTRL** + **ALT** + **Flèche haut**|

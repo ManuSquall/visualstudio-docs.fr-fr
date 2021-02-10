@@ -6,15 +6,15 @@ ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 01367d821ffc74de0e9d087bfe52680508fad9e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951158"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guide de productivité pour Visual Studio
 
@@ -42,13 +42,13 @@ Gagnez du temps dans l’exploration des menus en recherchant rapidement les él
 
 Écrivez le code plus rapidement à l’aide des fonctionnalités suivantes.
 
-- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, vous pouvez choisir une commande pour dupliquer facilement une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **modifier** le  >  **doublon** ou appuyez sur **CTRL** + **E**,**V**. Vous pouvez également développer ou réduire rapidement une sélection de texte en choisissant **modifier** le  >  **Advanced**  >  **développement** avancé ou **modifier** la sélection de  >  **Advanced**  >  **contrat** avancée, ou en appuyant sur **MAJ** + **ALT** + **=** ou **MAJ** + **ALT** + **-** .
+- **Utilisez des commandes pratiques**. Visual Studio propose différentes commandes pour vous aider à accomplir plus rapidement des tâches d’édition. Par exemple, vous pouvez choisir une commande pour dupliquer facilement une ligne de code sans avoir à la copier, à repositionner le curseur, puis à coller la ligne. Choisissez **modifier** le  >  **doublon** ou appuyez sur **CTRL** + **E**,**V**. Vous pouvez également développer ou réduire rapidement une sélection de texte en choisissant **modifier** le  >    >  **développement** avancé ou **modifier** la sélection de  >    >  **contrat** avancée, ou en appuyant sur **MAJ** + **ALT** + **=** ou **MAJ** + **ALT** + **-** .
 
 - **Utilisez IntelliSense**. Lorsque vous écrivez du code dans l'éditeur, les informations IntelliSense, telles que Liste des membres, Informations sur les paramètres, Info express, l'assistance de signature et Compléter le mot, s'affichent. Ces fonctionnalités prennent en charge la correspondance approximative de texte. par exemple, les listes de résultats pour les membres de liste incluent non seulement les entrées qui commencent par les caractères que vous avez entrés, mais également celles qui contiennent la combinaison de caractères n’importe où dans leurs noms. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md).
 
 - **Modifier l’insertion automatique des options IntelliSense quand vous entrez du code**. En basculant IntelliSense en mode suggestion, vous pouvez spécifier que les options IntelliSense ne sont insérées que si vous les choisissez explicitement.
 
-     Pour activer le mode de suggestion, appuyez sur les touches **CTRL** + **ALT** + **espace** ou, dans la barre de menus, choisissez **modifier** le mode de  >  **IntelliSense**  >  **saisie semi-automatique** IntelliSense.
+     Pour activer le mode de suggestion, appuyez sur les touches **CTRL** + **ALT** + **espace** ou, dans la barre de menus, choisissez **modifier** le mode de  >    >  **saisie semi-automatique** IntelliSense.
 
 - **Utilisez des extraits de code**. Vous pouvez utiliser des extraits de code intégrés ou créer les vôtres.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 24f13e61f783b041134dc38a4c9bc1690421b6cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951132"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Touches de raccourci dans Help Viewer
 
@@ -33,7 +33,7 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |Barre d’outils|**ALT** + **Page d’hébergement**|Afficher la page d’accueil de la **visionneuse d’aide**.|
 |Barre d’outils|**CTRL** + **S**|Mettre en surbrillance la rubrique actuelle dans la table des matières (dans l’onglet **Sommaire**).|
 |Barre d’outils|**CTRL** + **D**|Ajouter la rubrique actuelle à l’onglet **Favoris**.|
-|Barre d’outils|**CTRL** + **F**|Afficher la barre de **recherche**dans la zone de rubrique afin de pouvoir rechercher du texte dans la rubrique actuelle.|
+|Barre d’outils|**CTRL** + **F**|Afficher la barre de **recherche** dans la zone de rubrique afin de pouvoir rechercher du texte dans la rubrique actuelle.|
 |Barre d’outils|**CTRL** + **P**|Imprimer la page active.|
 |Barre d’outils|**CTRL** + **F2**|Afficher un aperçu avant impression de la page active.|
 |Barre d’outils|**CTRL** + **O**|Afficher la boîte de dialogue **Options de la visionneuse**.|
@@ -45,11 +45,11 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |Navigateurs|**ALT** + **M**<br /><br /> OU<br /><br /> **CTRL** + **MAJ** + **M**|Afficher l’onglet **Gérer le contenu**.|
 |Rubrique|Touche **Menu contextuel**<br /><br /> OR<br /><br /> **MAJ** + **F10**|Afficher le menu contextuel de l’élément d’interface utilisateur actuel.|
 |Rubrique|**Flèche haut**|Faire défiler vers le début du document, une ligne à la fois.|
-|Rubrique|**Flèche bas**|Faire défiler vers la fin du document, une ligne à la fois.|
+|Rubrique|**Flèche Bas**|Faire défiler vers la fin du document, une ligne à la fois.|
 |Rubrique|**Page précédente**|Faire défiler vers le début du document, écran par écran.|
 |Rubrique|**Page suivante**|Faire défiler vers la fin du document, écran par écran.|
-|Rubrique|**Accueil**|Accéder au début du document.|
-|Rubrique|**Effet**|Accéder à la fin du document.|
+|Rubrique|**Page d'accueil**|Accéder au début du document.|
+|Rubrique|**End**|Accéder à la fin du document.|
 |Rubrique|**CTRL** + **F**|Rechercher le texte de recherche dans cette page.|
 |Rubrique|**F5**|Actualiser la page active.|
 |Rubrique|**CTRL** + **P**|Imprimer la page active.|
@@ -60,12 +60,12 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |Rubrique|**CTRL** + **Onglet**|Basculer entre les onglets de gauche à droite.|
 |Rubrique|**CTRL** + **MAJ** + **Onglet**|Basculer entre les onglets de droite à gauche.|
 |Rubrique|**CTRL** + **W**|Fermer l’onglet actif.|
-|Rubrique|**CTRL** + ** _Nombre_**|Basculez vers un onglet spécifique où **_nombre_** est compris entre 1 et 9 et indique l’onglet dans la séquence.|
+|Rubrique|**CTRL** + **_Nombre_**|Basculez vers un onglet spécifique où **_nombre_** est compris entre 1 et 9 et indique l’onglet dans la séquence.|
 |Rubrique|**CTRL** + **ALT** + **F4**|Fermer les autres onglets de contenu.|
 |Rubrique|**CTRL** + **MAJ** + Signe **plus**|Augmenter le zoom de 10 %.|
 |Rubrique|**CTRL** + **Signe moins**|Réduire le zoom de 10 %.|
 |Rubrique|**CTRL** + **0** (zéro)|Définir le zoom sur 100 %.|
-|Index|**Onglet**|Déplacer le focus de l’entrée de mot clé à la liste de mots clés.|
+|Index|**Tab**|Déplacer le focus de l’entrée de mot clé à la liste de mots clés.|
 |Index|**CTRL** + **K**|Basculer entre l’affichage des entrées qui contiennent le mot clé que vous spécifiez et des entrées qui commencent par le mot clé que vous spécifiez.|
 |Favoris|**CTRL** + **MAJ** + **Suppr**|Effacer votre historique de navigation.|
 |Favoris|**Suppr**|Supprimer l’élément spécifié.|
@@ -80,8 +80,8 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |Options de la visionneuse|**ALT** + **S**|Définir le focus sur la liste **Nombre maximal de résultats de recherche**.|
 |Options de la visionneuse|**ALT** + **H**|Définir le focus sur la liste **Nombre maximal d’entrées d’historique enregistrées**.|
 |Options de la visionneuse|**ALT** + **E**|Cocher ou décocher la case **Inclure le contenu en anglais dans tous les onglets de navigation et l’aide demandée via la touche F1** si elle est activée.|
-|Options de la visionneuse|**ALT** + **O**|Cocher ou décocher la case **Se connecter pour obtenir du contenu et rechercher les mises à jour du contenu **.|
-|Rechercher|**Entrez**|Définir le focus sur l’élément suivant.|
+|Options de la visionneuse|**ALT** + **O**|Cocher ou décocher la case **Se connecter pour obtenir du contenu et rechercher les mises à jour du contenu**.|
+|Rechercher|**Entrée**|Définir le focus sur l’élément suivant.|
 |Rechercher|**MAJ** + **Entrez**|Définir le focus sur l’élément précédent.|
 |Rechercher|**Échap**|Masquer la zone de texte **Rechercher**.|
 |Barre d'état|**ALT** + **E**|Ouvrir la boîte de dialogue **Erreur** si la barre d’état indique qu’une erreur s’est produite.|
@@ -102,14 +102,14 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |-|-|
 |**ALT** + **D**|Remplacer la source d’installation par le disque.|
 |**ALT** + **O**|Remplacer la source d’installation par « en ligne ».|
-|**Onglet**|Définir le focus sur la zone de texte **Chemin d’accès au stockage local**.|
-|**Onglet**|Définir le focus sur le bouton **Déplacer**.|
+|**Tab**|Définir le focus sur la zone de texte **Chemin d’accès au stockage local**.|
+|**Tab**|Définir le focus sur le bouton **Déplacer**.|
 |**ALT** + **V**|Ouvrir la boîte de dialogue **Déplacer le contenu**.|
 |**CTRL** + **ALT** + **F**|Définir le focus sur la zone de texte **Filtrer la documentation**.|
-|**Onglet**|Définir le focus sur la liste de documentation.|
+|**Tab**|Définir le focus sur la liste de documentation.|
 |**Haut** et **Bas**|Parcourir la liste de documentation.|
 |**Espace**|Ajouter un élément à la liste **Modifications en attente**.|
-|**Onglet**|Définir le focus sur la liste **Modifications en attente**.|
+|**Tab**|Définir le focus sur la liste **Modifications en attente**.|
 |**Haut** et **Bas**|Parcourir la liste **Modifications en attente**.|
 |**Espace**|Supprimer un élément de la liste **Modifications en attente**.|
 |**ALT** + **T**|Appliquer toutes les modifications en attente.|

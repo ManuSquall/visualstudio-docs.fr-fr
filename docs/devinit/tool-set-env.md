@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 20f2d142c0e253cf5ad5a7ec5d85974ff5522508
-ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
+ms.openlocfilehash: 89f62550d75a86c6d48848a31c99ca169964faa0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96356833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950421"
 ---
 # <a name="set-env"></a>set-env
 
@@ -36,7 +36,7 @@ Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente le
 
 L' `set-env` outil prend une chaîne unique comme entrée sur la `input` propriété. La chaîne doit être mise en forme sous la forme d’une chaîne de points-virgules (;) des paires clé/valeur délimitées (nom = valeur) et quatre actions possibles en fonction de la valeur de la `input` propriété.
 
-| Action       | Entrée            | Description                                                                                                                                                              |  Exemple             |
+| Action       | Entrée            | Description                                                                                                                                                              | Exemple             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | **list all** | vide ou omis | Répertorie toutes les variables d’environnement actuelles.                                                                                                                           | `"input":""`        |
 | **Liste 1** | string           | Répertorie la valeur d’une variable d’environnement spécifique par nom.                                                                                                               | `"input":"foo"`     |

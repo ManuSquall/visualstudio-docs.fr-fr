@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5e4b124-1e30-47c8-a511-80084a02dba5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2e23ad4f673e4e150ea677d993c5b36a4e386c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949582"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 Cette interface représente une expression analysée prête pour la liaison et l’évaluation.

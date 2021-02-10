@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], scrolling records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e6d4decf3d314654c4417f71bd7a2bad358b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949725"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Comment : faire défiler des enregistrements de base de données dans une feuille de calcul
   La procédure suivante indique comment utiliser le concepteur pour afficher un champ unique à partir d’une table de base de données dans une feuille de calcul Excel Microsoft Office, avec des contrôles qui permettent à l’utilisateur final de faire défiler tous les enregistrements.

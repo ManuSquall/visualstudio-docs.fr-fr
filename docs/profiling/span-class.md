@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: fff7f91326cac47100f5b2b1b42e22b9c0fc1d9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949959"
 ---
 # <a name="span-class"></a>span, classe
 Définit une phase de l’application.
@@ -33,7 +33,7 @@ class span;
 
 ### <a name="public-constructors"></a>Constructeurs publics
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |[span::span, constructeur](../profiling/span-span-constructor.md)|Initialise une nouvelle instance de la classe `span`.|
 |[span::~span, destructeur](../profiling/span-tilde-span-destructor.md)|Détruit l’objet `span` et libère ses ressources.|

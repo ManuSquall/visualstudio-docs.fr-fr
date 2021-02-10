@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcc7bd57ce0c392a2874f107c6e4d8d5753399d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f02d74b1c826b9e9ef7fa7406ca9a61d19b7311
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951301"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 Définit ou modifie le nombre de tests associés à ce point d’arrêt lié.
@@ -29,13 +29,13 @@ Définit ou modifie le nombre de tests associés à ce point d’arrêt lié.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT SetPassCount( 
+HRESULT SetPassCount( 
    BP_PASSCOUNT bpPassCount
 );
 ```
 
 ```csharp
-int SetPassCount( 
+int SetPassCount( 
    BP_PASSCOUNT bpPassCount
 );
 ```
@@ -44,7 +44,7 @@ int SetPassCount( 
 `bpPassCount`\
 dans Structure [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui spécifie le nombre de passes.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Notes

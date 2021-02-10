@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f76eb5ba3ccab85a4cf6c8ca5ad4a8fa3e021f47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951210"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -79,7 +79,7 @@ Visual Studio fournit des *extraits de code* qui vous aident à créer rapidemen
 
    La signature de la méthode `static void Main()` est ajoutée au fichier.
 
-Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier** les extraits de code  >  **IntelliSense**  >  **Insert Snippet**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
+Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier** les extraits de code  >  **IntelliSense**  >  , puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
 
 ![Liste d’extraits de code C#](media/tutorial-code-snippet-list.png)
 
@@ -194,4 +194,4 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [mode Plan](../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../ide/refactoring-in-visual-studio.md)
-- [Utilisez IntelliSense](../ide/using-intellisense.md)
+- [Utiliser IntelliSense](../ide/using-intellisense.md)
