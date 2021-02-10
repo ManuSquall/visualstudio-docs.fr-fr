@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952133"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch fonction)
 Cette fonction démarre une séquence de traitement par lots des opérations de contrôle de code source. Le [SccEndBatch](../extensibility/sccendbatch-function.md) sera appelé pour terminer le traitement. Ces lots ne peuvent pas être imbriqués.
@@ -31,7 +31,7 @@ SCCRTN SccBeginBatch(void);
 ### <a name="parameters"></a>Paramètres
  Aucun.
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|

@@ -7,15 +7,15 @@ ms.date: 02/05/2019
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 2dd480bb214acf2529d271d085711f21effea23a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952926"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Premier aperçu de l’IDE Visual Studio
 
@@ -63,7 +63,7 @@ Si vous fermez la **page de démarrage** et que vous souhaitez la voir à nouvea
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons créer un projet.
 

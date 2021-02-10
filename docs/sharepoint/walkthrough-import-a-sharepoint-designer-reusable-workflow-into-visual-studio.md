@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952588"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer
 
@@ -198,7 +198,7 @@ ms.locfileid: "95970190"
 
     3. Renseignez les valeurs manquantes dans l’Assistant Personnalisation de SharePoint, puis choisissez le bouton **Terminer** .
 
-12. Choisissez le fichier. xoml, puis, dans la barre de menus, choisissez **View**  >  **Concepteur** de vues pour afficher le flux de travail importé dans le concepteur de flux de travail.
+12. Choisissez le fichier. xoml, puis, dans la barre de menus, choisissez   >  **Concepteur** de vues pour afficher le flux de travail importé dans le concepteur de flux de travail.
 
 13. Dans le nœud **Windows Workflow v 3.0** de la **boîte à outils**, effectuez l’une des opérations suivantes :
 

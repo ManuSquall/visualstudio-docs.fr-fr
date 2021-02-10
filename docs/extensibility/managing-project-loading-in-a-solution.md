@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ca17eae2b4f21e9705788faa1a2371a066be6475
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952159"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Gérer le chargement du projet dans une solution
 Les solutions Visual Studio peuvent contenir un grand nombre de projets. Le comportement de Visual Studio par défaut consiste à charger tous les projets d’une solution au moment de l’ouverture de la solution, et non à permettre à l’utilisateur d’accéder à tous les projets jusqu’à ce qu’ils aient terminé le chargement. Lorsque le processus de chargement du projet dure plus de deux minutes, une barre de progression s’affiche, affichant le nombre de projets chargés et le nombre total de projets. L’utilisateur peut décharger des projets tout en travaillant dans une solution avec plusieurs projets, mais cette procédure présente quelques inconvénients : les projets déchargés ne sont pas générés dans le cadre d’une commande Rebuild solution, et les descriptions IntelliSense des types et des membres des projets fermés ne sont pas affichées.

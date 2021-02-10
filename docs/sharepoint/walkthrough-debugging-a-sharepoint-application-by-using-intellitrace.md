@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IntelliTrace
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: e2ce8bc2c493d59b8a06a64ff69838e828315bf2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952653"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : déboguer une application SharePoint à l’aide d’IntelliTrace
 

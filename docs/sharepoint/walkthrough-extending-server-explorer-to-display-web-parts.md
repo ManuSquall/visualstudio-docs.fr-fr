@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : extension de Explorateur de serveurs pour afficher composants WebPart | Microsoft Docs'
+title: 'Procédure pas à pas : extension de Explorateur de serveurs pour afficher WebParts | Microsoft Docs'
 titleSuffix: ''
 description: Dans cette procédure pas à pas, étendez Explorateur de serveurs afin qu’il affiche la Galerie de composants WebPart sur chaque site SharePoint connecté.
 ms.custom: SEO-VS-2020
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952666"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procédure pas à pas : étendre Explorateur de serveurs pour afficher des composants WebPart
   Dans Visual Studio, vous pouvez utiliser le nœud **Connexions SharePoint** de **Explorateur de serveurs** pour afficher les composants sur les sites SharePoint. Toutefois, **Explorateur de serveurs** n’affiche pas certains composants par défaut. Dans cette procédure pas à pas, vous allez étendre **Explorateur de serveurs** afin qu’il affiche la Galerie de composants WebPart sur chaque site SharePoint connecté.
@@ -56,7 +56,7 @@ ms.locfileid: "95970217"
 
 - Utilisation du modèle d’objet serveur pour SharePoint. Pour plus d’informations, consultez [utilisation du modèle d’objet Server-Side SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
-- Composants WebPart dans les solutions SharePoint. Pour plus d’informations, consultez [composants WebPart vue d’ensemble](/previous-versions/office/ms432401(v=office.14)).
+- WebParts dans les solutions SharePoint. Pour plus d’informations, consultez [WebParts vue d’ensemble](/previous-versions/office/ms432401(v=office.14)).
 
 ## <a name="create-the-projects"></a>Créer les projets
  Pour effectuer cette procédure pas à pas, vous devez créer trois projets :
@@ -252,7 +252,7 @@ ms.locfileid: "95970217"
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Créer les commandes SharePoint personnalisées
- Créez des commandes personnalisées qui appellent le modèle objet serveur pour SharePoint pour récupérer des données sur le composants WebPart sur le site SharePoint. Chaque commande est une méthode à laquelle est <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> appliqué.
+ Créez des commandes personnalisées qui appellent le modèle objet serveur pour SharePoint pour récupérer des données sur le WebParts sur le site SharePoint. Chaque commande est une méthode à laquelle est <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> appliqué.
 
 #### <a name="to-define-the-sharepoint-commands"></a>Pour définir les commandes SharePoint
 
@@ -319,7 +319,7 @@ ms.locfileid: "95970217"
      Par défaut, le dossier de sortie de la génération est le.. dossier \bin\Debug sous le dossier qui contient votre fichier projet.
 
 ## <a name="test-the-extension"></a>Tester l’extension
- Vous êtes maintenant prêt à tester le nouveau nœud de la **Galerie de composants WebPart** dans **Explorateur de serveurs**. Tout d’abord, commencez à déboguer l’extension dans une instance expérimentale de Visual Studio. Ensuite, utilisez le nouveau nœud **composants WebPart** dans l’instance expérimentale de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
+ Vous êtes maintenant prêt à tester le nouveau nœud de la **Galerie de composants WebPart** dans **Explorateur de serveurs**. Tout d’abord, commencez à déboguer l’extension dans une instance expérimentale de Visual Studio. Ensuite, utilisez le nouveau nœud **WebParts** dans l’instance expérimentale de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 #### <a name="to-start-debugging-the-extension"></a>Pour démarrer le débogage de l’extension
 
@@ -351,9 +351,9 @@ ms.locfileid: "95970217"
 
 6. Vérifiez que le code de l’autre instance de Visual Studio s’arrête sur le point d’arrêt que vous avez défini précédemment dans la méthode, puis appuyez sur `CreateWebPartNodes` la touche **F5** pour continuer à déboguer le projet.
 
-7. Dans l’instance expérimentale de Visual Studio, vérifiez que tous les composants WebPart sur le site connecté s’affichent sous le nœud **Galerie de composants WebPart** dans **Explorateur de serveurs**.
+7. Dans l’instance expérimentale de Visual Studio, vérifiez que tous les WebParts sur le site connecté s’affichent sous le nœud **Galerie de composants WebPart** dans **Explorateur de serveurs**.
 
-8. Dans **Explorateur de serveurs**, ouvrez le menu contextuel de l’un des composants WebPart, puis choisissez **Propriétés**.
+8. Dans **Explorateur de serveurs**, ouvrez le menu contextuel de l’un des WebParts, puis choisissez **Propriétés**.
 
 9. Dans l’instance de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que vous déboguez, vérifiez que les détails sur le composant WebPart s’affichent dans la fenêtre **Propriétés** .
 

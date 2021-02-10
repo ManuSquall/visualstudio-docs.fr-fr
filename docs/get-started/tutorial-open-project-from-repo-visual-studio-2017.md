@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6989de1c5b4542998d048e5eadd47f48dc7e05b1
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99181295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951925"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Didacticiel : ouvrir un projet à partir d’un référentiel dans Visual Studio 2017
 
@@ -43,7 +43,7 @@ Dans ce didacticiel, vous allez utiliser Visual Studio 2017 pour vous connecter 
 
     ![Choisir Cloner dans la section Référentiels Git locaux](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Dans la zone qui indique **_Entrez l’URL d’un référentiel git à cloner_*_, tapez ou collez l’URL de votre référentiel, puis appuyez sur* entrée**. (Vous pouvez recevoir une invite de connexion GitHub. Si c’est le cas, faites-le.)
+1. Dans la zone qui indique ***Entrez l’URL d’un référentiel git à cloner** _, tapez ou collez l’URL de votre référentiel, puis appuyez sur _ * ENTER * *. (Vous pouvez recevoir une invite de connexion GitHub. Si c’est le cas, faites-le.)
 
    Lorsque Visual Studio a cloné votre référentiel, Team Explorer est fermé et l’Explorateur de solutions s’affiche. Le message *Cliquez sur "Solutions et dossiers" ci-dessus pour afficher une liste de solutions* s’affiche. Choisissez **Solutions et dossiers**.
 

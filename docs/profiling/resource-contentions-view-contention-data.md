@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc8e6c39efea24ac8a4a493099f3bcdb39dc4fe6
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: eac43dca403479d4a19ee9bbf9d5291f4db3aad0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952692"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Mode Conflits de ressources - Données de conflit
 Le mode Conflits de ressources répertorie des données de conflit pour les ressources qui étaient la source d’événements de conflit. Un événement de conflit se produit quand une fonction dans un thread est forcée à attendre l’accès à la ressource parce qu’une fonction dans un autre thread a acquis l’accès exclusif à la ressource. Chaque ressource est le nœud racine d’une arborescence des appels qui affiche les chemins d’exécution de fonctions qui ont entraîné les événements de conflit.

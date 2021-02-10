@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07625f7249092e2de3d3dccaaef31a2869755e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89781298dc9134f80f8f57cc0e008068fa47bad3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953199"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Détermine si ce point d’arrêt en attente peut être lié à un emplacement de code.
@@ -29,13 +29,13 @@ Détermine si ce point d’arrêt en attente peut être lié à un emplacement d
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT CanBind ( 
+HRESULT CanBind ( 
    IEnumDebugErrorBreakpoints2** ppErrorEnum
 );
 ```
 
 ```csharp
-int CanBind ( 
+int CanBind ( 
    out IEnumDebugErrorBreakpoints2 ppErrorEnum
 );
 ```
@@ -44,7 +44,7 @@ int CanBind ( 
 `ppErrorEnum`\
 à Retourne un objet [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) qui contient une liste d’objets [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) s’il peut y avoir des erreurs.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne la `S_OK.` valeur `S_FALSE` si le point d’arrêt ne peut pas être lié. dans ce cas, les erreurs sont retournées par le `ppErrorEnum` paramètre. Sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="remarks"></a>Notes

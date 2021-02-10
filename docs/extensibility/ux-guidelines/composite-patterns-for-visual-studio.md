@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952094"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 Les modèles composites combinent des éléments d’interaction et de conception dans des configurations distinctes. Voici quelques-uns des modèles composites les plus importants dans Visual Studio en ce qui concerne la cohérence :
@@ -395,7 +395,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apparence de la sélection d’objets graphiques
  Les poignées de sélection sont des carrés dessinés dans un motif rectangulaire autour du cadre englobant de l’objet. Le graphique ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec la poignée, le dimensionnement et l’apparence de modification sur place. La taille des handles doit être liée à la bordure de fenêtre et aux métriques de bord à l’aide de l’API **GetSystemMetrics** .
 
-| État | Apparence | Détails visuels |
+| State | Apparence | Détails visuels |
 |-------------------------|---------------| - |
 | **Non sélectionné** | Default | ![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Sélection principale** | Redimensionnable | ![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -437,11 +437,11 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
  Les sélections dans les listes peuvent être contiguës, disjointes ou régionales. Lorsque plusieurs sélections sont autorisées, la sélection contiguë et disjointe doit toujours être prise en charge, tandis que la prise en charge des sélections de région (zone) est facultative. Les sélections de régions sont lancées en faisant glisser l’espace blanc du corps de la liste.
 
-| Object | Sélection |
+| Object | d’un certificat SSTP |
 |--------|------------|
-| Liste | Contiguë |
-| Liste | Disjoint |
-| Liste | Région |
+| List | Contiguë |
+| List | Disjoint |
+| List | Région |
 
  Cliquez une fois sur une liste pour sélectionner la ligne où le clic s’est produit. Si l’utilisateur clique dans une cellule de liste qui prend en charge la modification sur place, la cellule est également immédiatement activée pour la modification sur place. Dans le cas contraire, la ligne entière est immédiatement sélectionnée et montre une mise en surbrillance.
 
@@ -523,7 +523,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 ||Expérience de base|Expérience optimisée|Expérience élevée|
 |-|----------------------|--------------------------|-------------------------|
 |**Permet aux utilisateurs de...**|Correction du code et de la solution/de la lecture au niveau du projet sans les fins mortes|Effectuer des tâches de maintenance, de refactorisation et de navigation|Travaillez dans une expérience cohérente, intuitive et fluide en toute confiance|
-|**Éditeur**|Panoramique tactile et sélection<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Zoom de pince<br /><br /> Défilement rapide<br /><br /> Sélection<br /><br /> Utilisation facile du menu contextuel||
+|**Éditeur**|Panoramique tactile et sélection<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Zoom de pince<br /><br /> Défilement rapide<br /><br /> d’un certificat SSTP<br /><br /> Utilisation facile du menu contextuel||
 |**Fenêtres d’outils principales**|Afficher le panorama<br /><br /> Sélection d’élément<br /><br /> Touche de défilement pour sauter et appuyer sur + glisser|Défilement et sélection faciles des éléments||
 |**Fenêtrage**||Redimensionner la fenêtre<br /><br /> Accès rapide||
 |**Barre d’outils document**||Navigation facile entre les fichiers ouverts||

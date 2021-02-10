@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6655b65ec2505794f29f5c6ad9142c8690ea474b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b65e36552ccdf8bf30777f13761183eb38e6700
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953095"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 Énumère tous les points d’arrêt liés à ce point d’arrêt en attente.
@@ -29,13 +29,13 @@ ms.locfileid: "80725863"
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT EnumBoundBreakpoints( 
+HRESULT EnumBoundBreakpoints( 
    IEnumDebugBoundBreakpoints2** ppEnum
 );
 ```
 
 ```csharp
-int EnumBoundBreakpoints( 
+int EnumBoundBreakpoints( 
    out IEnumDebugBoundBreakpoints2 ppEnum
 );
 ```
@@ -44,7 +44,7 @@ int EnumBoundBreakpoints( 
 `ppEnum`\
 à Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère les points d’arrêt liés.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="example"></a>Exemple

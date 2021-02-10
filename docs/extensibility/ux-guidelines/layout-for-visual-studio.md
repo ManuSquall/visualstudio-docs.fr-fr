@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16a4178231c575f590a13b8205cd872668f46143
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951938"
 ---
 # <a name="layout-for-visual-studio"></a>Présentation pour Visual Studio
 La plupart des boîtes de dialogue Visual Studio sont [en mode de boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont les boîtes de dialogue qui suivent les principes de présentation standard de la [boîte de dialogue Windows Desktop](/windows/desktop/uxguide/win-dialog-box). À mesure que Visual Studio se déplace pour actualiser son interface utilisateur, certaines des boîtes de dialogue plus importantes ont une nouvelle conception qui les établit en tant qu’expériences de définition de produit. La [disposition](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) de ces boîtes de dialogue à thème a un aspect à thème.

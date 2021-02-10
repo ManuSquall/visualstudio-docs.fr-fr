@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f76e34f0a806a524c1305796bddabebd155e680c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 7e7174e15992ab6ae077847e5ee6e3467435d8ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952939"
 ---
 # <a name="project-properties-reference"></a>Référence de propriétés de projet
 
@@ -26,7 +26,7 @@ Découvrez-en plus sur la façon de configurer et personnaliser les propriétés
 
 ## <a name="project-properties-pages"></a>Pages de propriétés de projet
 
-| Intitulé | Description |
+| Titre | Description |
 | - | - |
 | [Page Application, Concepteur de projet (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Utilisez cette page pour spécifier les paramètres d’application et les propriétés d’un projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Page Application, Concepteur de projet (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Utilisez cette page pour spécifier les paramètres d’application et les propriétés d’un projet [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |

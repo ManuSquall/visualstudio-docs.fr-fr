@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7cc99747571feb5b443f10355d867da7c22f44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952913"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d’accessibilité IDE
 
@@ -62,7 +62,7 @@ Vous pouvez également modifier les paramètres d’affichage du texte dans l’
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
-1. Choisissez **Environment**  >  **les polices et les couleurs de**l’environnement.
+1. Choisissez   >  **les polices et les couleurs de** l’environnement.
 
 1. Sélectionnez une option dans le menu déroulant **Afficher les paramètres de**.
 
@@ -102,7 +102,7 @@ Vous pouvez choisir de modifier les couleurs par défaut pour le texte, les indi
 1. Choisissez **OK**.
 
 > [!TIP]
-> Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application sur votre système d’exploitation, appuyez sur **ALT**gauche + **MAJ gauche** + **Impr**. écran. Si Visual Studio est ouvert, fermez-le et rouvrez-le pour implémenter complètement les couleurs à contraste élevé.
+> Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application sur votre système d’exploitation, appuyez sur **ALT** gauche + **MAJ gauche** + **Impr**. écran. Si Visual Studio est ouvert, fermez-le et rouvrez-le pour implémenter complètement les couleurs à contraste élevé.
 
 ## <a name="toolbars"></a>Barres d'outils
 

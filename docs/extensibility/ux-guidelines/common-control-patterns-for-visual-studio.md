@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952185"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Contrôles communs
@@ -85,7 +85,7 @@ Pour le comportement d’interaction standard, suivez les [instructions du burea
 
 - Dans l’interface utilisateur à thème, les zones de liste déroulante et les listes déroulantes suivent les thèmes standard pour les contrôles.
 
-#### <a name="layout"></a>Layout
+#### <a name="layout"></a>Mise en page
 Les zones de liste modifiable et les listes déroulantes doivent être dimensionnées pour s’ajuster au contenu, et non pour s’ajuster à la largeur de la fenêtre dans laquelle elles sont affichées, ni pour correspondre arbitrairement à la longueur d’un champ long, comme un chemin d’accès.
 
 ![Incorrect : la largeur de liste déroulante est trop longue pour le contenu qui sera affiché.](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrect : la largeur de liste déroulante est trop longue pour le contenu qui sera affiché.
@@ -126,7 +126,7 @@ Pour le comportement d’interaction standard, suivez les [instructions du burea
 #### <a name="visual-style"></a>Style de visuel
 Dans les boîtes de dialogue de l’utilitaire, ne pas styliser les cadres de groupe. Utilisez le style de base intrinsèque au contrôle.
 
-#### <a name="layout"></a>Layout
+#### <a name="layout"></a>Mise en page
 
 - Il n’est pas nécessaire d’utiliser un cadre de groupe pour encadrer les choix radio, sauf si vous devez maintenir la distinction entre les groupes dans une disposition serrée.
 
@@ -309,7 +309,7 @@ Certains boutons doivent toujours utiliser une image graphique et n’incluent j
 | Supprimer tout | ![Bouton graphique « Supprimer tout »](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Monter | ![Bouton graphique « Monter »](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
 | Descendre | ![Bouton graphique « Descendre »](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
-| Supprimer | ![Bouton graphique « Supprimer »](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| DELETE | ![Bouton graphique « Supprimer »](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>Dimensionnement et espacement
 Le dimensionnement des boutons graphiques est le même que pour la version abrégée du bouton **[Parcourir...]** (26x23 pixels) :
@@ -343,7 +343,7 @@ Les contrôles d’arborescence doivent être conformes à la conception de l’
 
 ![Incorrect : style de nœud d’arborescence incorrect](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />Incorrect : style de nœud d’arborescence incorrect
 
-#### <a name="selection"></a>Sélection
+#### <a name="selection"></a>d’un certificat SSTP
 Lorsqu’un nœud est sélectionné dans l’arborescence, la surbrillance doit se développer jusqu’à la largeur totale du contrôle arborescence. Cela permet aux utilisateurs d’identifier clairement l’élément qu’ils ont sélectionné. Les couleurs de sélection doivent refléter le thème Visual Studio actuel.
 
 ![Correct : la mise en surbrillance du nœud sélectionné s’ajuste à la largeur totale du contrôle TreeView.](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Correct : la mise en surbrillance du nœud sélectionné s’ajuste à la largeur totale du contrôle TreeView.

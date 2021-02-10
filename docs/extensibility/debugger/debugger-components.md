@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: de941be8c5535a2cef5995e3be9954ee32dcdc71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952445"
 ---
 # <a name="debugger-components"></a>Composants du débogueur
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur est implémenté en tant que VSPackage et gère l’intégralité de la session de débogage. La session de débogage comprend les éléments suivants :
@@ -65,4 +65,4 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur est i
  [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md) Contient des liens vers différentes tâches de débogage, telles que le lancement d’un programme et l’évaluation d’expressions.
 
 ## <a name="see-also"></a>Voir aussi
-- [Prise en main](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+- [Bien démarrer](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

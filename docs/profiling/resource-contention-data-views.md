@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 148e72cedafa075c8b03229a5f44063713d7cd23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952770"
 ---
 # <a name="resource-contention-data-views"></a>Vues de données de conflit de ressources
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage des conflits de threads.

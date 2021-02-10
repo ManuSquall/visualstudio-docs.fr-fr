@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: f79a9f5178959b9a1ec79dc3c22d8da9c0f6735e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80411981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952835"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET Core)
 
@@ -27,7 +27,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 1. Ouvrez Visual Studio et créez le projet.
 
@@ -42,7 +42,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
    Dans la boîte de dialogue qui s’affiche, choisissez **MVC** dans le volet central, puis cliquez sur **OK**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Si la fenêtre de démarrage n’est pas ouverte **File** , choisissez > **fenêtre démarrage**de fichier.
+   Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
 
    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
@@ -61,7 +61,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
    Visual Studio ouvre votre nouveau projet.
 
-1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le dossier modèles, puis choisissez **Ajouter**une  >  **classe**.
+1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le dossier modèles, puis choisissez **Ajouter** une  >  **classe**.
 
 1. Nommez la nouvelle classe `Data.cs` et choisissez **Ajouter**.
 

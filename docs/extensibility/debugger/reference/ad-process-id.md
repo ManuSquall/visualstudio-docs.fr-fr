@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303c05b241347922a4253ef3654e06bed8e824ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952419"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
 Spécifie l’ID de processus, qui peut être un ID système ou un GUID.
@@ -31,9 +31,9 @@ Spécifie l’ID de processus, qui peut être un ID système ou un GUID.
 typedef struct _AD_PROCESS_ID {
     AD_PROCESS_ID_TYPE ProcessIdType;
     union {
-        DWORD dwProcessId; 
-        GUID  guidProcessId; 
-        DWORD dwUnused; 
+        DWORD dwProcessId; 
+        GUID  guidProcessId; 
+        DWORD dwUnused; 
     } ProcessId;
 } AD_PROCESS_ID;
 ```
@@ -41,9 +41,9 @@ typedef struct _AD_PROCESS_ID {
 ```csharp
 public struct AD_PROCESS_ID {
     AD_PROCESS_ID_TYPE ProcessIdType;
-    DWORD              dwProcessId; 
-    GUID               guidProcessId; 
-    DWORD              dwUnused; 
+    DWORD              dwProcessId; 
+    GUID               guidProcessId; 
+    DWORD              dwUnused; 
 };
 ```
 
