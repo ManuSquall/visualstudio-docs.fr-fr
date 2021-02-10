@@ -14,13 +14,13 @@ ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966485"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Créer une IU à l’aide du concepteur XAML
 
@@ -33,9 +33,9 @@ Les utilisateurs expérimentés peuvent même [personnaliser le concepteur XAML]
 
 ## <a name="xaml-designer-workspace"></a>Espace de travail du concepteur XML
 
-L'espace de travail du concepteur XML se compose de plusieurs éléments d'interface graphique. Ceux-ci incluent la *planche graphique* (c’est-à-dire, l’aire de conception visuelle), l’éditeur XAML, la fenêtre Structure du document (ou la fenêtre Objets et chronologie dans Blend pour Visual Studio), ainsi que la fenêtre Propriétés. Pour ouvrir le concepteur XAML, cliquez avec le bouton droit sur un fichier XAML dans l' **Explorateur de solutions** et choisissez **Concepteur de vues** .
+L'espace de travail du concepteur XML se compose de plusieurs éléments d'interface graphique. Ceux-ci incluent la *planche graphique* (c’est-à-dire, l’aire de conception visuelle), l’éditeur XAML, la fenêtre Structure du document (ou la fenêtre Objets et chronologie dans Blend pour Visual Studio), ainsi que la fenêtre Propriétés. Pour ouvrir le concepteur XAML, cliquez avec le bouton droit sur un fichier XAML dans l' **Explorateur de solutions** et choisissez **Concepteur de vues**.
 
-Le concepteur XAML fournit un mode XAML et un mode Création synchronisé du balisage XAML rendu de votre application. Quand un fichier XAML est ouvert dans Visual Studio ou dans Blend pour Visual Studio, vous pouvez basculer entre le mode Création et le mode XAML à l’aide des onglets **Conception** et **XAML** . Vous pouvez utiliser le bouton **Permuter les volets**![bouton Permuter les volets dans le concepteur XAML](media/swap-panes.PNG) pour définir la fenêtre qui doit s’afficher au premier plan : la planche graphique ou l’éditeur XAML.
+Le concepteur XAML fournit un mode XAML et un mode Création synchronisé du balisage XAML rendu de votre application. Quand un fichier XAML est ouvert dans Visual Studio ou dans Blend pour Visual Studio, vous pouvez basculer entre le mode Création et le mode XAML à l’aide des onglets **Conception** et **XAML**. Vous pouvez utiliser le bouton **Permuter les volets**![bouton Permuter les volets dans le concepteur XAML](media/swap-panes.PNG) pour définir la fenêtre qui doit s’afficher au premier plan : la planche graphique ou l’éditeur XAML.
 
 ### <a name="design-view"></a>Mode création
 
@@ -63,11 +63,11 @@ Les ornements de grille permettent de contrôler la largeur et la hauteur des li
 
 **Poignées de redimensionnement**
 
-Des poignées de redimensionnement apparaissent sur les contrôles sélectionnés et vous permettent de redimensionner le contrôle. Quand vous redimensionnez un contrôle, les valeurs de largeur et de hauteur s'affichent généralement pour permettre de déterminer la taille du contrôle. Pour plus d’informations sur la manipulation des contrôles en mode **Création** , consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+Des poignées de redimensionnement apparaissent sur les contrôles sélectionnés et vous permettent de redimensionner le contrôle. Quand vous redimensionnez un contrôle, les valeurs de largeur et de hauteur s'affichent généralement pour permettre de déterminer la taille du contrôle. Pour plus d’informations sur la manipulation des contrôles en mode **Création**, consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 **Marges**
 
-Les marges représentent la quantité d'espace fixe entre le bord d'un contrôle et le bord du conteneur associé. Vous pouvez définir les marges d’un contrôle à l’aide des propriétés [Margin](xref:Windows.UI.Xaml.FrameworkElement.Margin) sous **Disposition** dans la fenêtre **Propriétés** .
+Les marges représentent la quantité d'espace fixe entre le bord d'un contrôle et le bord du conteneur associé. Vous pouvez définir les marges d’un contrôle à l’aide des propriétés [Margin](xref:Windows.UI.Xaml.FrameworkElement.Margin) sous **Disposition** dans la fenêtre **Propriétés**.
 
 **Ornements de marge**
 
@@ -77,7 +77,7 @@ Utilisez des ornements de marge pour modifier les marges d’un élément par ra
 
 Vous pouvez modifier un élément à l'aide des poignées d'élément qui apparaissent sur la planche graphique quand vous déplacez le pointeur sur les angles de la zone bleue qui entoure un élément. Ces poignées permettent de faire pivoter un élément, de le redimensionner, retourner, déplacer ou d'y ajouter un rayon d'angle. Le symbole d’une poignée d’élément varie selon les fonctions et selon l’emplacement exact du pointeur. Si les poignées d'élément ne s'affichent pas, vérifiez que l'élément est sélectionné.
 
-En mode **Création** , des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la fenêtre, comme indiqué ci-après :
+En mode **Création**, des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la fenêtre, comme indiqué ci-après :
 
 ![Commandes du mode Design](media/xaml-design-view-controls.png)
 
@@ -85,11 +85,11 @@ Les commandes suivantes sont disponibles dans cette barre d'outils :
 
 **Zoom**
 
-Le zoom vous permet de dimensionner l'aire de conception. Vous pouvez effectuer un zoom de 12,5% à 800 %, ou sélectionner des options comme **Ajuster la sélection** ou **Ajuster tout** .
+Le zoom vous permet de dimensionner l'aire de conception. Vous pouvez effectuer un zoom de 12,5% à 800 %, ou sélectionner des options comme **Ajuster la sélection** ou **Ajuster tout**.
 
 **Afficher/Masquer la grille d'accrochage**
 
-Affiche ou masque la grille d'accrochage qui indique le quadrillage. Le quadrillage est utilisé quand vous activez l’ **alignement sur le quadrillage** ou l’ **alignement sur les lignes d’alignement** .
+Affiche ou masque la grille d'accrochage qui indique le quadrillage. Le quadrillage est utilisé quand vous activez l’**alignement sur le quadrillage** ou l’**alignement sur les lignes d’alignement**.
 
 **Activer/Désactiver l'alignement sur le quadrillage**
 
@@ -109,7 +109,7 @@ Désactive le [code de projet](debugging-or-disabling-project-code-in-xaml-desig
 
 ### <a name="xaml-view"></a>Mode XAML
 
-En mode **XAML** , la fenêtre de l’éditeur XAML est la fenêtre active, et l’éditeur XAML est votre principal outil de création. Le langage XAML (Extensible Application Markup Language) fournit un vocabulaire XML déclaratif permettant de spécifier l'interface utilisateur d'une application. Le mode XAML inclut IntelliSense, la mise en forme automatique, la mise en surbrillance de la syntaxe et la navigation de balises. L’image suivante montre le mode XAML avec le menu IntelliSense ouvert :
+En mode **XAML**, la fenêtre de l’éditeur XAML est la fenêtre active, et l’éditeur XAML est votre principal outil de création. Le langage XAML (Extensible Application Markup Language) fournit un vocabulaire XML déclaratif permettant de spécifier l'interface utilisateur d'une application. Le mode XAML inclut IntelliSense, la mise en forme automatique, la mise en surbrillance de la syntaxe et la navigation de balises. L’image suivante montre le mode XAML avec le menu IntelliSense ouvert :
 
 ![Mode XAML](media/xaml-editor.png)
 
@@ -125,8 +125,8 @@ Dans Visual Studio, la fenêtre Structure du document est similaire à la fenêt
 
 - [Créer des animations](animate-objects-in-xaml-designer.md) (Blend pour Visual Studio uniquement).
 
-Pour afficher la fenêtre structure du document dans Visual Studio, dans la barre de menus, sélectionnez **Afficher** le plan du  >  **Other Windows**  >  **document** Windows.
-Pour afficher la fenêtre de objets et chronologie dans Blend pour Visual Studio, dans la barre de menus, sélectionnez **Afficher** la  >  **structure du document** .
+Pour afficher la fenêtre structure du document dans Visual Studio, dans la barre de menus, sélectionnez **Afficher** le plan du  >    >  **document** Windows.
+Pour afficher la fenêtre de objets et chronologie dans Blend pour Visual Studio, dans la barre de menus, sélectionnez **Afficher** la  >  **structure du document**.
 
 ![Fenêtre Structure du document dans Visual Studio](media/document-outline-window.png)
 
@@ -150,12 +150,12 @@ La fenêtre **Propriétés** vous permet de définir des valeurs de propriété 
 
 ![Fenêtre Propriétés](media/xaml-designer-properties-window.png)
 
-Plusieurs options apparaissent en haut de la fenêtre **Propriétés**  :
+Plusieurs options apparaissent en haut de la fenêtre **Propriétés** :
 
-- Modifiez le nom de l’élément actuellement sélectionné dans la zone **Nom** .
+- Modifiez le nom de l’élément actuellement sélectionné dans la zone **Nom**.
 - Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné.
-- Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie** , **Nom** ou **Source** dans la liste **Réorganiser par** .
-- Pour afficher la liste des événements d’un contrôle, cliquez sur le bouton **Événements** , qui est représenté par un éclair.
+- Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom** ou **Source** dans la liste **Réorganiser par** .
+- Pour afficher la liste des événements d’un contrôle, cliquez sur le bouton **Événements**, qui est représenté par un éclair.
 - Pour rechercher une propriété, commencez à taper son nom dans la zone de recherche. La fenêtre **Propriétés** affiche les propriétés correspondant aux termes de recherche en cours de frappe.
 
 Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas.

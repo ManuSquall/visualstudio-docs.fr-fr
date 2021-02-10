@@ -11,22 +11,22 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72938f316be22cd9b2eab2d7dab893c9370fb0ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965848"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Procédure : définir des commandes de déploiement SharePoint
   Vous pouvez personnaliser le processus de déploiement en définissant des commandes de pré-déploiement et de prédéploiement. Ces commandes s’exécutent avant et après d’autres actions de déploiement lorsque vous déboguez des solutions SharePoint à partir de Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Pour ajouter une commande de prédéploiement
 
-1. Dans la barre de menus, **Project** choisissez  >  **\<*ProjectName*> Propriétés** du projet.
+1. Dans la barre de menus,  choisissez  >  **\<*ProjectName*> Propriétés** du projet.
 
 2. Choisissez l’onglet **SharePoint** .
 
@@ -36,7 +36,7 @@ ms.locfileid: "96304385"
 
 ### <a name="to-add-a-post-deployment-command"></a>Pour ajouter une commande de publication
 
-1. Dans la barre de menus, **Project** choisissez  >  **\<*ProjectName*> Propriétés** du projet.
+1. Dans la barre de menus,  choisissez  >  **\<*ProjectName*> Propriétés** du projet.
 
 2. Choisissez l’onglet **SharePoint** .
 

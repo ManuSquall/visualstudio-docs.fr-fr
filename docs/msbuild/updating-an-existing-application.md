@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965926"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Mettre à jour une application existante vers MSBuild 15
 
@@ -24,7 +24,7 @@ Pour permettre la prise en charge d’installations côte à côte, plus rapides
 
 ## <a name="use-msbuild-from-visual-studio"></a>Utiliser MSBuild à partir de Visual Studio
 
-Pour que les builds programmatiques de votre application correspondent à celles effectuées dans Visual Studio ou *MSBuild.exe* , chargez les assemblys MSBuild à partir de Visual Studio et utilisez les kits SDK disponibles dans Visual Studio. Le package NuGet Microsoft.Build.Locator simplifie ce processus.
+Pour que les builds programmatiques de votre application correspondent à celles effectuées dans Visual Studio ou *MSBuild.exe*, chargez les assemblys MSBuild à partir de Visual Studio et utilisez les kits SDK disponibles dans Visual Studio. Le package NuGet Microsoft.Build.Locator simplifie ce processus.
 
 ## <a name="use-microsoftbuildlocator"></a>Utiliser Microsoft.Build.Locator
 
@@ -71,7 +71,7 @@ Référencez le package Microsoft. Build. Locator pour vous assurer que votre ap
 
 ### <a name="ensure-output-is-clean"></a>Vérifier la propreté de la sortie
 
-Générez votre projet et inspectez le répertoire de sortie pour vérifier qu’il ne contient pas d’assemblys *Microsoft.Build.\*.dll* (à part *Microsoft.Build.Locator.dll* , ajouté à l’étape suivante).
+Générez votre projet et inspectez le répertoire de sortie pour vérifier qu’il ne contient pas d’assemblys *Microsoft.Build.\*.dll* (à part *Microsoft.Build.Locator.dll*, ajouté à l’étape suivante).
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Ajouter une référence de package pour Microsoft.Build.Locator
 

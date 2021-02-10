@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 231ffd185eaf06fb91a709631082c2b68db372ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966121"
 ---
 # <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 
@@ -33,7 +33,7 @@ Contient un ensemble de tâches que MSBuild doit exécuter séquentiellement.
 
  \<Project> \<Target>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <Target Name="Target Name"
@@ -87,7 +87,7 @@ Contient un ensemble de tâches que MSBuild doit exécuter séquentiellement.
 | - | - |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur MSBuild exécute les dépendances dans l’ordre dans lequel elles apparaissent dans l' `DependsOnTargets` attribut, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).
 

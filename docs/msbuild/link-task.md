@@ -29,23 +29,23 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 99e545cc4ae6a037816fd727d63fce16d3626484
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966316"
 ---
 # <a name="link-task"></a>Lier la tâche
 
-Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable ( *.exe* ) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez Options de l' [éditeur de liens](/cpp/build/reference/linker-options) et [Utiliser MSBuild à partir de la ligne de commande](/cpp/build/msbuild-visual-cpp) et [Utilisez l’ensemble d’outils Microsoft C++ à partir de la ligne de commande](/cpp/build/building-on-the-command-line).
+Encapsule l’outil Microsoft C++ linker, *link.exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (*.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez Options de l' [éditeur de liens](/cpp/build/reference/linker-options) et [Utiliser MSBuild à partir de la ligne de commande](/cpp/build/msbuild-visual-cpp) et [Utilisez l’ensemble d’outils Microsoft C++ à partir de la ligne de commande](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-dessous décrit les paramètres de la tâche **Link** . La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
+ Le tableau ci-dessous décrit les paramètres de la tâche **Link**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
 - **AdditionalDependencies**
 
@@ -75,7 +75,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre de **chaîne** facultatif.
 
-  Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple,/ \<option1>  / \<option2>  / \<option#> . Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link** .
+  Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple,/ \<option1>  / \<option2>  / \<option#> . Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link**.
 
   Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).
 
@@ -99,7 +99,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre **booléen** facultatif.
 
-  Si `true`, émet l’attribut **DebuggableAttribute** avec le suivi des informations de débogage, et désactive les optimisations JIT. Si `false`, émet l’attribut **DebuggableAttribute** , mais désactive le suivi des informations de débogage et active les optimisations JIT.
+  Si `true`, émet l’attribut **DebuggableAttribute** avec le suivi des informations de débogage, et désactive les optimisations JIT. Si `false`, émet l’attribut **DebuggableAttribute**, mais désactive le suivi des informations de débogage et active les optimisations JIT.
 
   Pour plus d’informations, consultez l’article [/ASSEMBLYDEBUG (Ajouter DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
@@ -255,7 +255,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre **String []** facultatif.
 
-  Incorpore un fichier de ressources dans un assembly. Spécifiez le nom du fichier de ressources requis. Spécifiez éventuellement le nom logique, qui permet de charger la ressource, ainsi que l’option **PRIVATE** , qui indique dans le manifeste de l’assembly que le fichier de ressources est privé.
+  Incorpore un fichier de ressources dans un assembly. Spécifiez le nom du fichier de ressources requis. Spécifiez éventuellement le nom logique, qui permet de charger la ressource, ainsi que l’option **PRIVATE**, qui indique dans le manifeste de l’assembly que le fichier de ressources est privé.
 
   Pour plus d’informations, consultez [/ASSEMBLYRESOURCE (incorporer une ressource managée)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
@@ -343,7 +343,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre **booléen** facultatif.
 
-  Si `true`, crée un *fichier de mappage* . L’extension de nom de fichier du fichier de mappage est *. map* .
+  Si `true`, crée un *fichier de mappage*. L’extension de nom de fichier du fichier de mappage est *. map*.
 
   Pour plus d’informations, consultez [/Map (générer le mappage)](/cpp/build/reference/map-generate-mapfile).
 
@@ -353,7 +353,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Spécifie la quantité de mémoire physique sur le tas à allouer à la fois.
 
-  Pour plus d’informations, consultez l’argument `commit` dans [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapReserveSize** .
+  Pour plus d’informations, consultez l’argument `commit` dans [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapReserveSize**.
 
 - **HeapReserveSize**
 
@@ -375,7 +375,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre **booléen** facultatif.
 
-  Si la valeur est `true`, spécifie que les attributs IDL définis dans le code source ne doivent pas être traités dans un fichier *.idl* .
+  Si la valeur est `true`, spécifie que les attributs IDL définis dans le code source ne doivent pas être traités dans un fichier *.idl*.
 
   Pour plus d’informations, consultez [/IGNOREIDL (Ne pas traiter les attributs dans MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
@@ -423,7 +423,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Spécifie un fichier qui contient la clé d’un assembly signé.
 
-  Pour plus d’informations, consultez [/keyfile (spécifier une clé ou une paire de clés pour signer un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Reportez-vous également au paramètre **KeyContainer** .
+  Pour plus d’informations, consultez [/keyfile (spécifier une clé ou une paire de clés pour signer un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Reportez-vous également au paramètre **KeyContainer**.
 
 - **LargeAddressAware**
 
@@ -531,7 +531,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre de **chaîne** facultatif.
 
-  Indique le nom et l’extension de nom du fichier *.idl* .
+  Indique le nom et l’extension de nom du fichier *.idl*.
 
   Pour plus d’informations, consultez [/Idlout (nommer les fichiers de sortie MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
@@ -607,7 +607,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre **booléen** facultatif.
 
-  Si `true` et si l’inscription de la sortie est activée, force les entrées de Registre écrites dans **HKEY_CLASSES_ROOT** à être redirigées vers **HKEY_CURRENT_USER** .
+  Si `true` et si l’inscription de la sortie est activée, force les entrées de Registre écrites dans **HKEY_CLASSES_ROOT** à être redirigées vers **HKEY_CURRENT_USER**.
 
 - **PreprocessOutput**
 
@@ -627,7 +627,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre **booléen** facultatif.
 
-  Si `true`, génère un fichier de sortie utilisable avec le profileur **Outils d’analyse des performances** .
+  Si `true`, génère un fichier de sortie utilisable avec le profileur **Outils d’analyse des performances**.
 
   Pour plus d’informations, consultez [/PROFILE (Profileur des outils d’analyse des performances)](/cpp/build/reference/profile-performance-tools-profiler).
 
@@ -673,7 +673,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre **booléen** facultatif.
 
-  Si la valeur est `true`, définit la somme de contrôle dans l’en-tête d’un fichier *.exe* .
+  Si la valeur est `true`, définit la somme de contrôle dans l’en-tête d’un fichier *.exe*.
 
   Pour plus d’informations, consultez [/Release (définir la somme de contrôle)](/cpp/build/reference/release-set-the-checksum).
 
@@ -799,7 +799,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Si `true`, indique au système d’exploitation de copier tout d’abord la sortie de l’Éditeur de liens dans un fichier d’échange, puis d’y exécuter l’image.
 
-  Pour plus d’informations, consultez l' `CD` argument de [/SWAPRUN (charger la sortie de l’éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consultez également le paramètre **SwapRunFromNET** .
+  Pour plus d’informations, consultez l' `CD` argument de [/SWAPRUN (charger la sortie de l’éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consultez également le paramètre **SwapRunFromNET**.
 
 - **SwapRunFromNET**
 
@@ -923,7 +923,7 @@ Encapsule l’outil Microsoft C++ linker, *link.exe* . L’outil de l’éditeur
 
   Paramètre de **chaîne** facultatif.
 
-  Insère un numéro de version dans l’en-tête du fichier *.exe* ou *.dll* . Spécifiez « `major[.minor]` ». Les arguments `major` et `minor` sont des nombres décimaux compris entre 0 et 65535.
+  Insère un numéro de version dans l’en-tête du fichier *.exe* ou *.dll*. Spécifiez « `major[.minor]` ». Les arguments `major` et `minor` sont des nombres décimaux compris entre 0 et 65535.
 
   Pour plus d’informations, consultez [/version (informations de version)](/cpp/build/reference/version-version-information).
 

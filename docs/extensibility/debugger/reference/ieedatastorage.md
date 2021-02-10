@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966433"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Cette interface représente un tableau d’octets.
@@ -40,7 +40,7 @@ IEEDataStorage : IUnknown
 |Méthode|Description|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Récupère le nombre spécifié d’octets de données dans une mémoire tampon fournie.|
-|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Récupère le nombre d’octets de données disponibles.|
+|[GetSize,](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Récupère le nombre d’octets de données disponibles.|
 
 ## <a name="remarks"></a>Notes
  Cette interface est utilisée par un visualiseur de type pour accéder aux données détenues par un objet spécifique. Les données sont traitées comme un tableau d’octets, ce qui permet au visualiseur de type de le manipuler de la manière qui est nécessaire pour le présenter à l’utilisateur.

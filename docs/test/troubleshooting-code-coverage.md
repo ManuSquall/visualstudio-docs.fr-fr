@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: d99dcc3a141bc3734c5c356601d0e1e7474f06a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967967"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 
@@ -65,7 +65,7 @@ Le fichier *. pdb* doit être généré à partir de la même build que les fich
 
 Résolution Assurez-vous &mdash; que vos paramètres de génération génèrent le fichier *. pdb* . Si les fichiers *. pdb* ne sont pas mis à jour lors de la génération du projet, ouvrez les propriétés du projet, sélectionnez la page **générer** , choisissez **avancé**, puis inspecter les **informations de débogage**.
 
-Pour les projets C++, vérifiez que les fichiers. pdb générés contiennent des informations de débogage complètes. Ouvrez les propriétés du projet et vérifiez que le débogage de l' **éditeur de liens**  >  **Debugging**  >  **générer** des informations de débogage est défini pour **générer des informations de débogage optimisées pour le partage et la publication (/Debug : Full)**.
+Pour les projets C++, vérifiez que les fichiers. pdb générés contiennent des informations de débogage complètes. Ouvrez les propriétés du projet et vérifiez que le débogage de l' **éditeur de liens**  >    >  **générer** des informations de débogage est défini pour **générer des informations de débogage optimisées pour le partage et la publication (/Debug : Full)**.
 
 Si les fichiers *. pdb* et *. dll* ou *. exe* se trouvent dans des emplacements différents, copiez le fichier *. pdb* dans le même répertoire. Il est également possible de configurer le moteur de couverture du code pour rechercher des fichiers *. pdb* dans un autre emplacement. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 
