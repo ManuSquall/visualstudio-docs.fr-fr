@@ -11,17 +11,17 @@ f1_keywords:
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 7d7c4400d553d8244d3b9239f0b0a984d382c99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959166"
 ---
 # <a name="uninstall-visual-studio"></a>Désinstaller Visual Studio
 
@@ -43,7 +43,7 @@ Cette page vous guide dans la désinstallation de Visual Studio, notre suite int
 
      Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10 ou une version ultérieure, sélectionnez **Démarrer**, puis faites défiler la liste jusqu’à la lettre **V**, où se trouve **Visual Studio Installer**.
 
-     ![Programme d’installation de Visual Studio](media/locate-the-visual-studio-installer.png "Localiser le programme d’installation de Microsoft Visual Studio")
+     ![Visual Studio Installer](media/locate-the-visual-studio-installer.png "Localiser le programme d’installation de Microsoft Visual Studio")
 
    > [!NOTE]
    > Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -74,7 +74,7 @@ Pour supprimer complètement toutes les installations de Visual Studio 2017 et 
 
      Dans le menu Démarrer de Windows, vous pouvez rechercher « programme d’installation ».
 
-     ![Programme d’installation de Visual Studio](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
+     ![Visual Studio Installer](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :
@@ -91,7 +91,7 @@ Pour supprimer complètement toutes les installations de Visual Studio 2017 et 
 
      ![Désinstaller la confirmation de Visual Studio](media/vs-2019/uninstall-visualstudio-confirm.png "Confirmer que vous souhaitez désinstaller Visual Studio 2019")
 
-Si vous changez d’avis ultérieurement et voulez réinstaller Visual Studio 2019, redémarrez Visual Studio Installer, choisissez l’onglet **Disponibles**, choisissez l’édition de Visual Studio à installer, puis sélectionnez ** Installer**.
+Si vous changez d’avis ultérieurement et voulez réinstaller Visual Studio 2019, redémarrez Visual Studio Installer, choisissez l’onglet **Disponibles**, choisissez l’édition de Visual Studio à installer, puis sélectionnez **Installer**.
 
 ## <a name="uninstall-visual-studio-installer"></a>Désinstaller Visual Studio Installer
 

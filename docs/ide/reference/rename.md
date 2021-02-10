@@ -6,7 +6,7 @@ ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2e3d4d5d0abc335cfb857e5a4de9c5189a1ca5cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958100"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
 
@@ -70,7 +70,7 @@ Cette refactorisation s’applique à :
 
 4. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 - À compter de Visual Studio 2019 version 16,3, lorsque vous renommez un type qui correspond au nom du fichier dans lequel il se trouve, une case à cocher s’affiche pour vous permettre de renommer le fichier en même temps. Cette option apparaît lorsque vous renommez une classe, une interface ou une énumération. Cette option n’est pas prise en charge pour les types partiels avec plusieurs définitions.
 

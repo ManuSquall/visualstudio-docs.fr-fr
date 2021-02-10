@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958659"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procédure pas à pas : modifier la mise en forme d’un document à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre comment utiliser des contrôles Windows Forms dans une personnalisation au niveau du document pour Microsoft Office Word afin de modifier la mise en forme du texte.
@@ -50,7 +50,7 @@ ms.locfileid: "97527248"
 ## <a name="create-the-project"></a>Créer le projet
  La première étape consiste à créer un projet de document Word.
 
-### <a name="create-a-new-project"></a>Créer un projet
+### <a name="create-a-new-project"></a>Création d'un projet
 
 1. Créez un projet de document Word portant le nom **My Word Formatting**. Dans l’Assistant, sélectionnez **créer un nouveau document**.
 
@@ -140,7 +140,7 @@ ms.locfileid: "97527248"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre document pour vérifier que le texte est mis en forme correctement lorsque vous activez ou désactivez une case à cocher.
 
 ### <a name="test-your-document"></a>Tester votre document

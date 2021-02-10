@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f105bdb8cd73812c4c6f5efdf6b2a102df490a39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959647"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Autorise le processus à être notifié des événements de port.
@@ -28,24 +28,24 @@ Autorise le processus à être notifié des événements de port.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT WatchForProviderEvents(
-   PROVIDER_FLAGS       Flags,
-   IDebugDefaultPort2*  pPort,
-   AD_PROCESS_ID        processId,
-   CONST_GUID_ARRAY     EngineFilter,
-   REFGUID              guidLaunchingEngine,
-   IDebugPortNotify2*   pEventCallback
+HRESULT WatchForProviderEvents(
+   PROVIDER_FLAGS       Flags,
+   IDebugDefaultPort2*  pPort,
+   AD_PROCESS_ID        processId,
+   CONST_GUID_ARRAY     EngineFilter,
+   REFGUID              guidLaunchingEngine,
+   IDebugPortNotify2*   pEventCallback
 );
 ```
 
 ```csharp
-int WatchForProviderEvents(
-   enum_PROVIDER_FLAGS   Flags,
-   IDebugDefaultPort2    pPort,
-   AD_PROCESS_ID         ProcessId,
-   CONST_GUID_ARRAY      EngineFilter,
-   ref Guid              guidLaunchingEngine,
-   IDebugPortNotify2     pEventCallback
+int WatchForProviderEvents(
+   enum_PROVIDER_FLAGS   Flags,
+   IDebugDefaultPort2    pPort,
+   AD_PROCESS_ID         ProcessId,
+   CONST_GUID_ARRAY      EngineFilter,
+   ref Guid              guidLaunchingEngine,
+   IDebugPortNotify2     pEventCallback
 );
 ```
 
@@ -75,7 +75,7 @@ dans GUID du moteur de débogage qui a lancé ce processus (le cas échéant).
 `pEventCallback`\
 dans Objet [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) qui reçoit les notifications d’événements.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

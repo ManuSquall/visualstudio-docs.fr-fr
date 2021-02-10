@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 30e3847c87559fd7a916af8ad3be48343d649671
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958139"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 
@@ -70,7 +70,7 @@ Sélectionnez une référence web dans la liste **Références** et cliquez sur 
 
 Vous pouvez taper votre propre espace de noms dans cette zone et cliquer sur **Ajouter une importation utilisateur** pour l’ajouter à la liste d’espaces de noms.
 
-Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms dans *alias* l' = *espace de noms* alias de format. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms dans l' = *espace de noms* alias de format. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Ajouter une importation utilisateur**
 

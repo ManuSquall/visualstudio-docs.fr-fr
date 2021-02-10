@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959556"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Cette méthode rend un programme disponible pour les moteurs de débogage (DEs) et le gestionnaire de débogage de session.
@@ -28,18 +28,18 @@ Cette méthode rend un programme disponible pour les moteurs de débogage (DEs) 
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   LPCOLESTR        szFriendlyName,
-   IUnknown*        pDebuggeeInterface
+HRESULT PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   LPCOLESTR        szFriendlyName,
+   IUnknown*        pDebuggeeInterface
 );
 ```
 
 ```csharp
-int PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   string           szFriendlyName,
-   object           pDebuggeeInterface
+int PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   string           szFriendlyName,
+   object           pDebuggeeInterface
 );
 ```
 
@@ -53,7 +53,7 @@ dans Nom convivial du programme (ce qui apparaît dans les menus ou les boîtes 
 `pDebuggeeInterface`\
 [in] `IUnknown` interface du programme (cette valeur est utilisée comme cookie pour identifier de manière unique le programme ; cette même valeur est utilisée pour annuler la publication du programme).
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

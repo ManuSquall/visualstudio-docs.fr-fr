@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: f1889b20f96e051867d470bc96df36b7018abdc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958204"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 
@@ -44,7 +44,7 @@ Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des
 |Documents|@doc<br /><br /> Par exemple : `@doc program.cs`|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|
 
 > [!NOTE]
-> Vous pouvez modifier les touches de raccourci dans **General** la  >  page **clavier** général de la boîte de dialogue **options** .
+> Vous pouvez modifier les touches de raccourci dans la  >  page **clavier** général de la boîte de dialogue **options** .
 
 ## <a name="show-previous-results"></a>Afficher les résultats précédents
 

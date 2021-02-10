@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33437994770ee78327d130f288d9d2e9689774fe
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 33c13b1bc0c7b3b700d65b67e0aa6b856372dffa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958464"
 ---
 # <a name="source-control"></a>Contrôle de code source
 Cette section décrit les options permettant d’implémenter le contrôle de code source en tant que fonctionnalité intégrée de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , à l’aide d’un plug-in de contrôle de code source ou d’un VSPackage de contrôle de code source.

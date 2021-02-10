@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07dac3f407b6869dad90f06d778911fdd9cfed41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c361291532a79e7e4dd466d07359f0fe9faf2be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958633"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Définit le fournisseur de services.
@@ -41,7 +41,7 @@ public int SetSite(
 `pSP`\
 dans Référence à l’interface du fournisseur de services.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

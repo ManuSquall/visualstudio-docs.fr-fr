@@ -12,34 +12,34 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13edc1b2e2e235eaf5a475764a98067aa4b0150d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 32bbd09b087639c362fbb5d6a137241c1aab85af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958321"
 ---
 # <a name="publish-page-project-designer"></a>Page Publier, Concepteur de projets
 
 La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce.
 
-Pour accéder à la boîte de dialogue **Publier** , sélectionnez un nœud de projet dans l’ **Explorateur de solutions** , puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projets** apparaît, cliquez sur l'onglet **Publier** .
+Pour accéder à la boîte de dialogue **Publier** , sélectionnez un nœud de projet dans l’ **Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projets** apparaît, cliquez sur l'onglet **Publier** .
 
 > [!NOTE]
-> Certaines des propriétés ClickOnce décrites ici peuvent également être définies dans **l’Assistant Publication** , accessible à partir du menu **Générer** ou en cliquant sur le bouton **Assistant Publication** dans cette page.
+> Certaines des propriétés ClickOnce décrites ici peuvent également être définies dans **l’Assistant Publication**, accessible à partir du menu **Générer** ou en cliquant sur le bouton **Assistant Publication** dans cette page.
 
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
  **Emplacement du dossier de publication**
 
-Spécifie l’emplacement où l’application est publiée. Peut être un chemin de lecteur (`C:\deploy\myapplication`), un partage de fichiers (`\\server\myapplication`) ou un serveur FTP (`ftp://ftp.microsoft.com/myapplication`). Notez que du texte doit figurer dans la zone **Emplacement de publication** pour que le bouton de navigation ( **...** ) fonctionne.
+Spécifie l’emplacement où l’application est publiée. Peut être un chemin de lecteur (`C:\deploy\myapplication`), un partage de fichiers (`\\server\myapplication`) ou un serveur FTP (`ftp://ftp.microsoft.com/myapplication`). Notez que du texte doit figurer dans la zone **Emplacement de publication** pour que le bouton de navigation (**...**) fonctionne.
 
  **URL du dossier d'installation**
 
-Optionnel. Spécifie un site web auquel les utilisateurs accèdent pour installer l’application. Cette URL est nécessaire uniquement si elle diffère de l’ **Emplacement de publication** , par exemple quand l’application est publiée sur un serveur intermédiaire.
+Facultatif. Spécifie un site web auquel les utilisateurs accèdent pour installer l’application. Cette URL est nécessaire uniquement si elle diffère de l’ **Emplacement de publication**, par exemple quand l’application est publiée sur un serveur intermédiaire.
 
  **Mode et paramètres d'installation**
 
@@ -51,7 +51,7 @@ Pour les applications du navigateur web WPF, l’option **L’application est é
 
 Ouvre la boîte de dialogue Fichiers d’application, qui permet de spécifier comment et où les fichiers sont installés.
 
- **Composants requis**
+ **Conditions préalables**
 
 Ouvre la boîte de dialogue Composants requis, qui permet de spécifier les composants requis, tels que le .NET Framework, à installer avec l’application.
 
@@ -65,13 +65,13 @@ Ouvre la boîte de dialogue Options de publication, qui permet de spécifier des
 
  **Version de publication**
 
-Définit le numéro de version de publication de l’application. Quand vous changez le numéro de version, l’application est publiée en tant que mise à jour. Chaque partie de la version de publication ( **Principale** , **Secondaire** , **Build** , **Révision** ) peut avoir une valeur maximale de 65355 (<xref:System.UInt16.MaxValue>), la valeur maximale autorisée par <xref:System.Version>.
+Définit le numéro de version de publication de l’application. Quand vous changez le numéro de version, l’application est publiée en tant que mise à jour. Chaque partie de la version de publication (**Principale**, **Secondaire**, **Build**, **Révision**) peut avoir une valeur maximale de 65355 (<xref:System.UInt16.MaxValue>), la valeur maximale autorisée par <xref:System.Version>.
 
 Quand vous installez plusieurs versions d'une application via ClickOnce, l'installation déplace les versions antérieures de cette application dans un dossier nommé Archive, à l'emplacement de publication que vous avez spécifié. Cet archivage permet d’éviter la présence de dossiers de la version précédente dans le répertoire d’installation.
 
  **Incrémenter automatiquement la révision avec chaque publication**
 
-Optionnel. Quand cette option est activée (valeur par défaut), la partie **Révision** du numéro de version de publication est incrémentée d’une unité chaque fois que l’application est publiée. Cela entraîne la publication de l’application en tant que mise à jour.
+Facultatif. Quand cette option est activée (valeur par défaut), la partie **Révision** du numéro de version de publication est incrémentée d’une unité chaque fois que l’application est publiée. Cela entraîne la publication de l’application en tant que mise à jour.
 
  **Assistant Publication**
 

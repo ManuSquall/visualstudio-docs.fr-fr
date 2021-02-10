@@ -5,15 +5,15 @@ ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 78f847acaf67a61064e64b765d9c138ec2fe93a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959023"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 
@@ -109,7 +109,7 @@ La liste des événements dans la partie inférieure du rapport utilisation du G
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom de l’événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU. Les noms d’événements peuvent être *désattributés* si l’utilisation du GPU ne peut pas déterminer le nom d’un événement. Pour plus d’informations, consultez la remarque qui suit ce tableau.|
+|**Nom de l'événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU. Les noms d’événements peuvent être *désattributés* si l’utilisation du GPU ne peut pas déterminer le nom d’un événement. Pour plus d’informations, consultez la remarque qui suit ce tableau.|
 |**Début UC (ns)**|Heure à laquelle l'événement a débuté sur l'UC en appelant une API Direct3D. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Début GPU (ns)**|Heure à laquelle l'événement a débuté sur le GPU. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Durée GPU (ns)**|Durée, en nanosecondes, nécessaire pour terminer l’événement sur le GPU.|

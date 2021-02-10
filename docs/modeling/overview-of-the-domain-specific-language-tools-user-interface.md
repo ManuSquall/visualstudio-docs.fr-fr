@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de l’interface utilisateur Outils Domain-Specific Language
+title: Vue d’ensemble de l’interface utilisateur des outils de langage Domain-Specific
 description: Fournit une vue d’ensemble de l’interface utilisateur d’une solution d’outils de langage spécifique à un domaine dans Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa47b10edc3804468f6ca0766872849ae9e8a949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959127"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
-Lorsque vous ouvrez pour la première fois une solution Outils Domain-Specific Language (outils DSL) dans Visual Studio, l’interface utilisateur doit ressembler à l’image suivante.
+Lorsque vous ouvrez pour la première fois une solution Domain-Specific Language Tools (outils DSL) dans Visual Studio, l’interface utilisateur ressemble à l’image suivante.
 
  ![concepteur dsl](../modeling/media/dsl_designer.png)
 
  Le tableau suivant explique comment les parties de l’interface utilisateur sont utilisées.
 
-|**Element**|**Définition**|
+|**Element**|**Definition**|
 |-|-|
 |Diagramme|Le diagramme affiche le modèle de domaine.<br /><br /> Le diagramme comporte deux parties. Une partie définit les types des éléments de vos modèles. L’autre partie définit comment vos modèles apparaissent à l’écran.|
 |Boîte à outils|Faites glisser les outils de la boîte à outils vers le diagramme pour ajouter des classes de domaine et des types de forme. Pour ajouter des connecteurs, des relations et des mappages de formes, cliquez sur l’outil, sur le nœud source du diagramme, puis sur le nœud cible.|

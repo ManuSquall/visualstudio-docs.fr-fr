@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958451"
 ---
 # <a name="saving-a-standard-document"></a>Enregistrement d’un document standard
 L’environnement gère les commandes Save, Save As et Save all. Lorsqu’un utilisateur sélectionne **Enregistrer**, **Enregistrer sous** ou **enregistrer tout** à partir du menu **fichier** ou ferme la solution, ce qui entraîne un **enregistrement tout**, le processus suivant se produit.
 
- ![Éditeur standard](../../extensibility/internals/media/public.gif "Public") Enregistrer, enregistrer sous et enregistrer toute la gestion des commandes pour un éditeur standard
+ ![Éditeur standard](../../extensibility/internals/media/public.gif "Blockchain publique") Enregistrer, enregistrer sous et enregistrer toute la gestion des commandes pour un éditeur standard
 
  Ce processus est détaillé dans les étapes suivantes :
 

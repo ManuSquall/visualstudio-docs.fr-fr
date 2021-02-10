@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: c822b6e8cbce1279a14c5a947d70208fc7f5480a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958373"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
 

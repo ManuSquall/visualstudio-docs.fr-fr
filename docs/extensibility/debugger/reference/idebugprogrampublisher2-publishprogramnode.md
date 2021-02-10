@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93ce91b664a1d0ccb13534eb6109538df46f35b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959543"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Rend un nœud de programme disponible pour une utilisation par les moteurs de débogage (DEs) et le gestionnaire de débogage de session (SDM).
@@ -28,14 +28,14 @@ Rend un nœud de programme disponible pour une utilisation par les moteurs de d�
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT PublishProgramNode(
+HRESULT PublishProgramNode(
    IDebugProgramNode2 *pProgramNode
 );
 ```
 
 ```csharp
-int PublishProgramNode(
-   IDebugProgramNode2 pProgramNode
+int PublishProgramNode(
+   IDebugProgramNode2 pProgramNode
 );
 ```
 
@@ -43,7 +43,7 @@ int PublishProgramNode(
 `pProgramNode`\
 dans Objet [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) qui représente le nœud de programme à rendre disponible.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

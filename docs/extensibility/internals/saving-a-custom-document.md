@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958516"
 ---
 # <a name="saving-a-custom-document"></a>Enregistrement d’un document personnalisé
 L’environnement gère les commandes **Save**, **Save As** et **Save all** . Lorsqu’un utilisateur clique sur **Enregistrer**, **Enregistrer sous**, **ou enregistrer tout** dans le menu **fichier** ou ferme la solution, ce qui entraîne un enregistrement tout, le processus suivant se produit.
 
- ![Éditeur du client-enregistrer](../../extensibility/internals/media/private.gif "Privé") Enregistrer, enregistrer sous et enregistrer la gestion de toutes les commandes pour un éditeur personnalisé
+ ![Éditeur du client-enregistrer](../../extensibility/internals/media/private.gif "Blockchain privée") Enregistrer, enregistrer sous et enregistrer la gestion de toutes les commandes pour un éditeur personnalisé
 
  Ce processus est détaillé dans les étapes suivantes :
 

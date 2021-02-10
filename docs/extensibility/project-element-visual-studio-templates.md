@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959452"
 ---
 # <a name="project-element-visual-studio-templates"></a>Élément Project (modèles Visual Studio)
 Spécifie les fichiers ou répertoires à ajouter au projet.
@@ -66,7 +66,7 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Élément requis.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `Project` est un élément enfant facultatif de `TemplateContent`.
 
  L' `Project` élément est utilisé pour spécifier un projet et, par conséquent, est uniquement valide dans les modèles de projet.

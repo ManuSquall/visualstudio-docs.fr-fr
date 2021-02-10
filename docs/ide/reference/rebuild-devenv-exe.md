@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8086e5ffb2ebdd154e95eda18e04ed5b64cd3dd2
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 975e93fb2bb9f09810c8b6c6c1877bec983ca0a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958165"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -41,21 +41,21 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - *SolnConfigName*
 
-  Optionnel. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à utiliser pour regénérer la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
+  Facultatif. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à utiliser pour regénérer la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
 
 - `/Project` *NomProjet*
 
-  Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
+  Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Optionnel. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) à utiliser lors de la regénération du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *SolnConfigName*.
+  Facultatif. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) à utiliser lors de la regénération du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *SolnConfigName*.
 
 - `/Out`*OutputFileName*
 
-  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
+  Facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 - Ce commutateur a la même fonction que la commande de menu **Régénérer la solution** dans l’environnement IDE.
 

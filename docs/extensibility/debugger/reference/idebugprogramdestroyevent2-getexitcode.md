@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc887cdcd2975bdfb4042acb1831a7482baa52c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8718700b968501144038f987be7970979941e87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959751"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 Obtient le code de sortie du programme.
@@ -28,13 +28,13 @@ Obtient le code de sortie du programme.
 ## <a name="syntax"></a>Syntaxe
 
 ```cpp
-HRESULT GetExitCode( 
+HRESULT GetExitCode( 
    DWORD* pdwExit
 );
 ```
 
 ```csharp
-int GetExitCode( 
+int GetExitCode( 
    out uint pdwExit
 );
 ```
@@ -43,7 +43,7 @@ int GetExitCode( 
 `pdwExit`\
 à Retourne le code de sortie du programme.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

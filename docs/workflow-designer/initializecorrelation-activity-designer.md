@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9591ef604fcf9374e9aa498e74c5a7761459589f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959790"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Concepteur d'activités InitializeCorrelation
 
@@ -50,7 +50,7 @@ Le tableau suivant présente les <xref:System.ServiceModel.Activities.Initialize
 ## <a name="see-also"></a>Voir aussi
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Recevoir](../workflow-designer/receive-activity-designer.md)
+- [Çoive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Envoi](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
