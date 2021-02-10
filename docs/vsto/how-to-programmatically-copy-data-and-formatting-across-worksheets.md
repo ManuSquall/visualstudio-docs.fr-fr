@@ -15,15 +15,15 @@ helpviewer_keywords:
 - copying data, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d768eb086707af2eeddeb18a77bad1ef1f101839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964236"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Comment : copier des données et la mise en forme par programmation dans des feuilles de calcul
   Vous pouvez copier des données à partir d’une plage d’une feuille vers toutes les autres feuilles d’un classeur à l’aide de la <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> méthode. Spécifiez une plage et indiquez si vous souhaitez copier des données, une mise en forme ou les deux.

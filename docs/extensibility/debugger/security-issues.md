@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 632150101b966e128e8a34636b01a369a1db5c64
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7e7b834dc41fb019e70aa40bca995770985d4c05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960921"
 ---
 # <a name="security-issues"></a>Problèmes de sécurité
 Pour déboguer un programme à l’aide de Visual Studio, les seules autorisations nécessaires sont les mêmes que celles requises par un développeur pour exécuter le programme. Cela comprend le débogage à distance pour la plupart des situations. Certaines situations, impliquant d’autres services, tels que Internet Information Service, peuvent nécessiter un niveau d’autorisations plus élevé.
@@ -30,4 +30,4 @@ Pour déboguer un programme à l’aide de Visual Studio, les seules autorisatio
 ## <a name="see-also"></a>Voir aussi
 - [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)
 - [Gestionnaire de débogage de processus](../../extensibility/debugger/process-debug-manager.md)
-- [Débogage à distance](../../debugger/remote-debugging.md)
+- [Débogage distant](../../debugger/remote-debugging.md)

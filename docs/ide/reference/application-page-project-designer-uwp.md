@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 21dd08f81802661cae9d77ee3449f4e9369ca768
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965081"
 ---
 # <a name="application-property-page-uwp-projects"></a>Page de propriétés de l’application (projets UWP)
 
@@ -26,7 +26,7 @@ Utilisez la page de propriétés **Application** pour spécifier l’assembly du
 
 ![Page de propriétés de l'application](media/application-page-uwp.png)
 
-Pour accéder à la page **Application**, choisissez le nœud du projet dans **l’Explorateur de solutions**. Choisissez ensuite **Project**  >  **Propriétés** du projet dans la barre de menus. Les pages de propriétés s’ouvrent sous l’onglet **Application**.
+Pour accéder à la page **Application**, choisissez le nœud du projet dans **l’Explorateur de solutions**. Choisissez ensuite   >  **Propriétés** du projet dans la barre de menus. Les pages de propriétés s’ouvrent sous l’onglet **Application**.
 
 ## <a name="general-section"></a>Section Général
 

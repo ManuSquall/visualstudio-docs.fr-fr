@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: cdfd4294511752e201c2291a03f89d0bded2506b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971451"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : créer une visionneuse d'images
 
@@ -48,7 +48,7 @@ Lorsque vous avez terminé, votre application doit ressembler à l’image suiva
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Étape 1 : Créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Commencez par créer un projet d’application Windows Forms.|
 |[Étape 2 : exécuter votre application visionneuse d’images](../ide/step-2-run-your-program.md)|Exécutez le projet d’application Windows Forms que vous avez créé à l’étape précédente.|

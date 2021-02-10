@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d28242b70c0c9808cc7eb066341cd2973d2372a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971581"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus et commandes pour Visual Studio
 ## <a name="command-usage"></a>Utilisation de la commande
@@ -103,7 +103,7 @@ ms.locfileid: "97863539"
 
 - Données
 
-- Tester
+- Test
 
 - Architecture
 
@@ -269,7 +269,7 @@ ms.locfileid: "97863539"
  Évitez d’utiliser des clés dupliquées lorsque cela est possible. Dans les cas où la duplication est inévitable, le système de menus gère les conflits en parcourant toutes les commandes qui utilisent la clé. Par exemple, pour une commande hypothétique « nombre » dans le menu fichier qui duplique la clé d’accès « N », **ALT, f, n** créerait un nouveau fichier, et **ALT, f, n, n** exécuterait la commande « nombre ».
 
 ### <a name="assigning-shortcut-keys"></a>Affecter des touches de raccourci
- Évitez d’assigner de nouvelles touches de raccourci, car elles ne sont pas requises pour chaque commande et les taxes du système (et de la mémoire utilisateur) en cas de surutilisation. Les données de l’Programme d’amélioration du produit (CEIP) indiquent que les utilisateurs de Visual Studio n’utilisent qu’un petit sous-ensemble des raccourcis intégrés.
+ Évitez d’assigner de nouvelles touches de raccourci, car elles ne sont pas requises pour chaque commande et les taxes du système (et de la mémoire utilisateur) en cas de surutilisation. Les données de l’Programme d’amélioration des services (CEIP) indiquent que les utilisateurs de Visual Studio n’utilisent qu’un petit sous-ensemble des raccourcis intégrés.
 
  Quand vous définissez des raccourcis, procédez comme suit :
 

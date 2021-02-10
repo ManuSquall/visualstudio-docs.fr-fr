@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c09b50a4f7089367a82a54f285cb4bf401360b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722904"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964717"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analyser l’utilisation du réseau dans les applications UWP
 L’outil de diagnostic **Réseau** de Visual Studio collecte les données relatives aux opérations réseau effectuées à l’aide de l’[API Windows.Web.Http](/uwp/api/windows.web.http). L'analyse des données peut vous aider à résoudre les problèmes tels que les problèmes d'accès et d'authentification, l'utilisation incorrecte du cache et les médiocres performances d'affichage et de téléchargement.
@@ -54,7 +54,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 
  ![Volet de détails de l'outil de réseau](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 |**En-têtes**|Informations sur les en-têtes de demande de l'événement.|
 |**Corps**|Données de charge utile de la demande et de la réponse.|

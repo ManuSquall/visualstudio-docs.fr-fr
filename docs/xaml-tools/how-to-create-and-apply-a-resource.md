@@ -10,43 +10,43 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8502b3d5058294efe102564453bb23a3eb3b98
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971607"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
 
 Les styles et les modèles des éléments du concepteur XAML sont stockés dans des entités réutilisables appelées ressources. Les styles vous permettent de définir les propriétés des éléments et de réutiliser ces paramètres pour que l'apparence des différents éléments demeure cohérente. Un [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) définit l’apparence d’un contrôle et peut également être appliqué en tant que ressource. Pour plus d’informations, consultez [Styles XAML](/windows/uwp/design/controls-and-patterns/xaml-styles) et [Modèles de contrôles](/windows/uwp/design/controls-and-patterns/control-templates).
 
-Quand vous créez une ressource à partir d’une propriété existante ( [Style](xref:Windows.UI.Xaml.Style) ou [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate)), la boîte de dialogue **Créer une ressource** vous permet de définir la ressource au niveau de l’application, du document ou de l’élément. Ces niveaux déterminent où vous pouvez utiliser la ressource. Par exemple, si vous définissez la ressource au niveau de l'élément, elle peut être appliquée uniquement à l'élément sur lequel vous l'avez créée. Vous pouvez également choisir de stocker la ressource dans un [dictionnaire de ressources](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references). Il s'agit d'un fichier distinct que vous pouvez réutiliser dans un autre projet.
+Quand vous créez une ressource à partir d’une propriété existante ([Style](xref:Windows.UI.Xaml.Style) ou [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate)), la boîte de dialogue **Créer une ressource** vous permet de définir la ressource au niveau de l’application, du document ou de l’élément. Ces niveaux déterminent où vous pouvez utiliser la ressource. Par exemple, si vous définissez la ressource au niveau de l'élément, elle peut être appliquée uniquement à l'élément sur lequel vous l'avez créée. Vous pouvez également choisir de stocker la ressource dans un [dictionnaire de ressources](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references). Il s'agit d'un fichier distinct que vous pouvez réutiliser dans un autre projet.
 
 ## <a name="create-a-new-resource"></a>Créer une nouvelle ressource
 
 1. Après avoir ouvert un fichier XAML dans le concepteur XAML, créez un élément ou choisissez un élément dans la fenêtre Structure du document.
 
-2. Dans la fenêtre **Propriétés** , choisissez le marqueur de propriété, qui apparaît sous la forme d’un symbole de boîte à droite d’une valeur de propriété, puis choisissez **Convertir en nouvelle ressource** . Un symbole de zone blanche indique une valeur par défaut, tandis qu’un symbole de zone noire indique généralement qu’une ressource locale a été appliquée.
+2. Dans la fenêtre **Propriétés**, choisissez le marqueur de propriété, qui apparaît sous la forme d’un symbole de boîte à droite d’une valeur de propriété, puis choisissez **Convertir en nouvelle ressource**. Un symbole de zone blanche indique une valeur par défaut, tandis qu’un symbole de zone noire indique généralement qu’une ressource locale a été appliquée.
 
      La boîte de dialogue appropriée pour la création d'une ressource s'affiche. Cette boîte de dialogue apparaît quand vous créez une ressource à partir d'un pinceau :
 
      ![Boîte de dialogue Créer une ressource](../designers/media/xaml_create_resource.png)
 
-3. Dans la zone **Nom (Clé)** , entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
+3. Dans la zone **Nom (Clé)**, entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
 
-4. Sous **Définir dans** , choisissez l’option qui spécifie où vous voulez définir la ressource :
+4. Sous **Définir dans**, choisissez l’option qui spécifie où vous voulez définir la ressource :
 
-    - Pour que la ressource soit disponible pour n’importe quel document dans votre application, choisissez **Application** .
+    - Pour que la ressource soit disponible pour n’importe quel document dans votre application, choisissez **Application**.
 
-    - Pour qu’elle soit disponible seulement pour le document actif, choisissez **Ce document** .
+    - Pour qu’elle soit disponible seulement pour le document actif, choisissez **Ce document**.
 
-    - Pour qu’elle soit disponible seulement pour l’élément à partir duquel vous l’avez créée ou pour ses éléments enfants, choisissez **Ce document** puis, dans la liste déroulante, sélectionnez **élément** : **nom** .
+    - Pour qu’elle soit disponible seulement pour l’élément à partir duquel vous l’avez créée ou pour ses éléments enfants, choisissez **Ce document** puis, dans la liste déroulante, sélectionnez **élément**:**nom**.
 
-    - Pour définir la ressource dans un fichier de [dictionnaire de ressources](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) qui peut être réutilisé dans d’autres projets, cliquez sur **Dictionnaire de ressources** . Sélectionnez ensuite un fichier de dictionnaire de ressources existant, par exemple **StandardStyles.xaml** , dans la liste déroulante.
+    - Pour définir la ressource dans un fichier de [dictionnaire de ressources](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) qui peut être réutilisé dans d’autres projets, cliquez sur **Dictionnaire de ressources**. Sélectionnez ensuite un fichier de dictionnaire de ressources existant, par exemple **StandardStyles.xaml**, dans la liste déroulante.
 
 5. Choisissez le bouton **OK** pour créer la ressource et l’appliquer à l’élément à partir duquel vous l’avez créée.
 
@@ -56,11 +56,11 @@ Quand vous créez une ressource à partir d’une propriété existante ( [Style
 
 2. Effectuez l’une des actions suivantes :
 
-   - Appliquer une ressource à une propriété. Dans la fenêtre **Propriétés** , choisissez le marqueur de propriété en regard de la valeur de propriété, choisissez **ressource locale** ou **ressource système** , puis choisissez une ressource disponible dans la liste qui s’affiche.
+   - Appliquer une ressource à une propriété. Dans la fenêtre **Propriétés** , choisissez le marqueur de propriété en regard de la valeur de propriété, choisissez **ressource locale** ou **ressource système**, puis choisissez une ressource disponible dans la liste qui s’affiche.
 
       L’absence d’une ressource peut s’expliquer par le fait que son type ne correspond pas au type de la propriété.
 
-   - Appliquer une ressource de modèle de style ou de contrôle à un contrôle. Ouvrez le menu contextuel (clic droit) d’un des contrôles de la fenêtre Structure du document, choisissez **Modifier le modèle** ou **Modifier d’autres modèles** , **Appliquer la ressource** , puis le nom du modèle de contrôle dans la liste qui s’affiche.
+   - Appliquer une ressource de modèle de style ou de contrôle à un contrôle. Ouvrez le menu contextuel (clic droit) d’un des contrôles de la fenêtre Structure du document, choisissez **Modifier le modèle** ou **Modifier d’autres modèles**, **Appliquer la ressource**, puis le nom du modèle de contrôle dans la liste qui s’affiche.
 
      > [!NOTE]
      > **Modifier le modèle** applique des modèles de contrôle. **Modifier d’autres modèles** applique d’autres types de modèle.
@@ -71,7 +71,7 @@ Quand vous créez une ressource à partir d’une propriété existante ( [Style
 
 1. Choisissez un élément sur la planche graphique ou dans la fenêtre Structure du document.
 
-2. Choisissez le marqueur de propriété Par défaut ou Local à droite de la propriété dans la fenêtre **Propriétés** , puis choisissez **Modifier la ressource** pour ouvrir la boîte de dialogue **Modifier la ressource** .
+2. Choisissez le marqueur de propriété Par défaut ou Local à droite de la propriété dans la fenêtre **Propriétés**, puis choisissez **Modifier la ressource** pour ouvrir la boîte de dialogue **Modifier la ressource**.
 
 3. Modifiez les options de la ressource.
 

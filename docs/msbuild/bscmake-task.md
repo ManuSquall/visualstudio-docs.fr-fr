@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7618d7e4e16de151c296d66a0c5798475f7ca43
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: ceda15402b3588e407388d71140b73f571c03b24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964925"
 ---
 # <a name="bscmake-task"></a>BscMake, tâche
 

@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3c6037bd6ed3b7899ff00bce202df7707356683a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971399"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
@@ -75,7 +75,7 @@ La configuration et la plateforme ciblées par un projet sont utilisées ensembl
 
 ## <a name="building-multiple-configurations"></a>Génération de plusieurs configurations
 
-Lorsque vous générez une solution à l’aide de la commande **générer**une  >  **solution de génération** , Visual Studio ne génère que la configuration active. Tous les projets spécifiés dans cette configuration de solution sont générés, et la seule configuration de projet créée est celle spécifiée dans la configuration de solution active et la plateforme de solution active, qui est affichée dans la barre d’outils de Visual Studio. Par exemple, **Debug** et **x86**. D’autres configurations et plateformes définies ne sont pas générées.
+Lorsque vous générez une solution à l’aide de la commande **générer** une  >  **solution de génération** , Visual Studio ne génère que la configuration active. Tous les projets spécifiés dans cette configuration de solution sont générés, et la seule configuration de projet créée est celle spécifiée dans la configuration de solution active et la plateforme de solution active, qui est affichée dans la barre d’outils de Visual Studio. Par exemple, **Debug** et **x86**. D’autres configurations et plateformes définies ne sont pas générées.
 
 Si vous souhaitez générer plusieurs configurations et plateformes en une seule action, vous pouvez **utiliser l’option générer un**  >  **Build batch** dans Visual Studio. Pour accéder à cette fonctionnalité, appuyez sur **CTRL** + **Q** pour ouvrir la zone de recherche, puis entrez `Batch build` . La génération de lots n’est pas disponible pour tous les types de projets. Consultez [Comment : générer plusieurs configurations simultanément](how-to-build-multiple-configurations-simultaneously.md).
 
@@ -83,7 +83,7 @@ Si vous souhaitez générer plusieurs configurations et plateformes en une seule
 
 Lorsque vous définissez une nouvelle configuration de solution sans copier les paramètres d'une configuration existante, Visual Studio utilise les critères ci-après pour assigner des configurations de projet par défaut. Les critères sont évalués dans l'ordre indiqué.
 
-1. Si un projet a un nom de configuration* \<configuration name> \<platform name> *() qui correspond exactement au nom de la nouvelle configuration de solution, cette configuration est assignée. Les noms de configuration ne respectent pas la casse.
+1. Si un projet a un nom de configuration *\<configuration name> \<platform name>*() qui correspond exactement au nom de la nouvelle configuration de solution, cette configuration est assignée. Les noms de configuration ne respectent pas la casse.
 
 1. Si le projet a un nom de configuration dont une partie indique un nom de configuration identique à la nouvelle configuration de solution, cette configuration est assignée, même si l'autre partie du nom indique une plateforme différente.
 
@@ -97,7 +97,7 @@ Visual Studio utilise les critères ci-après pour assigner des configurations d
 
 - Si une configuration de projet ne spécifie pas de plateforme ou spécifie seulement une plateforme, une configuration de solution portant le même nom que la nouvelle configuration de projet est utilisée si elle existe déjà, ou ajoutée dans le cas contraire. Le nom par défaut de cette configuration de solution n’inclut pas de nom de plateforme. Il prend la forme *\<project configuration name>* .
 
-- Si un projet prend en charge plusieurs plateformes, une configuration de solution est trouvée ou ajoutée pour chaque plateforme prise en charge. Le nom de chaque configuration de solution comprend le nom de la configuration du projet et le nom de la plateforme * \<project configuration name> \<platform name> *, et se présente sous la forme.
+- Si un projet prend en charge plusieurs plateformes, une configuration de solution est trouvée ou ajoutée pour chaque plateforme prise en charge. Le nom de chaque configuration de solution comprend le nom de la configuration du projet et le nom de la plateforme *\<project configuration name> \<platform name>*, et se présente sous la forme.
 
 ## <a name="see-also"></a>Voir aussi
 

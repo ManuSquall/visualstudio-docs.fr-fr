@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965120"
 ---
 # <a name="supporting-multiple-document-views"></a>Prise en charge de vues de document multiples
 Vous pouvez fournir plusieurs vues d’un document en créant des données de document et des objets de vue de document distincts pour votre éditeur. Voici quelques cas dans lesquels une vue de document supplémentaire serait utile :

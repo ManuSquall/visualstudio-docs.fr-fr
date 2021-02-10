@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f52a30eef50c783ea96d403c25837f9bf2515a52
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 47ab3cfd9ae57e48e7a5884729efce8413b543be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964795"
 ---
 # <a name="net-memory-allocations-view"></a>Mode Allocations de mémoire .NET
 La vue Allocations liste les types qui ont été créés au cours de l’exécution du profilage. Chaque type est le nœud racine d’une arborescence des appels qui affiche les chemins d’exécution des fonctions qui ont entraîné les allocations du type.

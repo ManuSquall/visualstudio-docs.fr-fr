@@ -8,15 +8,15 @@ helpviewer_keywords:
 - unit testing, create unit tests
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964418"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>Créer des stubs de méthode de test unitaire à partir du code
 
@@ -33,7 +33,7 @@ La commande **Créer des tests unitaires** permet de créer des stubs de méthod
 
 La commande de menu **Créer des tests unitaires** est extensible et peut servir à générer des tests pour MSTest, MSTest V2, NUnit et xUnit.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 Pour bien démarrer, sélectionnez une méthode, un type ou un espace de noms dans l’éditeur de code du projet à tester, cliquez avec le bouton droit, puis choisissez **Créer des tests unitaires**. La boîte de dialogue **Créer des tests unitaires** s’ouvre et vous permet de configurer la façon de créer les tests.
 

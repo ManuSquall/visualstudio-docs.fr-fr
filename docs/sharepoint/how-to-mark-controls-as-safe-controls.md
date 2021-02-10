@@ -13,15 +13,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bf7e2f2c5b0de59a5f1cac91f0df9cefbf15bda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964704"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Comment : marquer des contrôles comme des contrôles sécurisés
   Pour la sécurité, SharePoint fait la distinction entre les contrôles Web protégés contre l’injection de scripts et les contrôles Web qui ne le sont pas. Les contrôles protégés, ou *contrôles sécurisés*, sont accessibles aux utilisateurs non approuvés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, consultez la rubrique
@@ -81,7 +81,7 @@ ms.locfileid: "96304503"
 
 10. Pour cet exemple, laissez l’option **Deployment Target** sur GlobalAssemblyCache.
 
-     Cette étape entraîne le déploiement de l’assembly dans le global assembly cache (GAC) du système. Si vous souhaitez que l’assembly soit déployé dans le dossier de l’application Web (bin), sélectionnez plutôt cette option. Pour plus d’informations, consultez [déploiement d’composants WebPart dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
+     Cette étape entraîne le déploiement de l’assembly dans le global assembly cache (GAC) du système. Si vous souhaitez que l’assembly soit déployé dans le dossier de l’application Web (bin), sélectionnez plutôt cette option. Pour plus d’informations, consultez [déploiement d’WebParts dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
 11. Dans la zone **contrôles sécurisés** , choisissez le bouton **cliquez ici pour ajouter un nouvel élément** .
 

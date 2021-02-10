@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971152"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Comment personnaliser un codeSpace (version préliminaire)
 
@@ -38,7 +38,7 @@ Windows codespaces est fourni avec de nombreux frameworks et outils déjà insta
 | Microsoft Build                             | MSBuild    | 16.7               |
 | Édition Microsoft SQL Server Express 2019   | N/A        | 15.0               |
 | Ninja                                       | Ninja      | 1.8.2              |
-| Node.js                                     | node       | 12.16              |
+| Node.js                                     | nœud       | 12.16              |
 | NPM                                         | npm        | 6.14               |
 | Python                                      | python     | 3.7                |
 | Gestionnaire de Package VC                          | vcpkg      | 2020,02            |
@@ -126,7 +126,7 @@ En spécifiant `devinit init` , `devinit` est exécuté à l’aide de votre *de
 
 Voici un exemple simple d’installation de l’outil en ligne de commande Entity Framework .NET Core, `dotnet-ef` .
 
-**devcontainer.js**
+**devcontainer.json**
 
 Contenu de l' *.devcontainer.jssur* le fichier dans la racine référentiel. 
 
@@ -166,7 +166,7 @@ S’il existe un ou plusieurs ports qui doivent être transférés par défaut p
 
 ## <a name="installed-software-specifics"></a>Caractéristiques logicielles installées
 
-### <a name="microsoft-sql-server"></a>Microsoft SQL Server
+### <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
 Microsoft SQL Server 2019 Express Edition est disponible et s’exécute en tant que service local dans l’environnement Windows codeSpace. L’utilisateur actuel, sur lequel votre application et le terminal Visual Studio s’exécutent, disposent de droits d’administrateur SQL sur le serveur SQL Server. Pour administrer le serveur, vous devez utiliser PowerShell dans le terminal Visual Studio ou d’autres outils de ligne de commande tels que `dotnet-ef` . Actuellement SQL Server Management Studio et d’autres outils d’administration à distance ne sont pas disponibles.
 

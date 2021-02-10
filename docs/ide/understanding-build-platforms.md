@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 7cfe141f186f192d17dc64ea3fae58a469e1d063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971360"
 ---
 # <a name="understand-build-platforms"></a>Présentation des plateformes de build
 
 Vous pouvez stocker différentes versions de propriétés de solution et de projet qui s’appliquent à diverses plateformes cibles. Par exemple, vous pouvez créer une configuration de débogage qui cible une plateforme x86 et une autre qui cible une plateforme x64. Vous pouvez rapidement changer la plateforme active et ainsi générer facilement plusieurs configurations.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 
 [Comment : configurer des projets pour cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)\
 Explique comment configurer un projet pour cibler une plateforme spécifique.

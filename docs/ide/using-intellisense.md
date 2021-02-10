@@ -14,15 +14,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971321"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense dans Visual Studio
 
@@ -44,7 +44,7 @@ Vous pouvez appeler la fonctionnalité **Liste des membres** manuellement en app
 
 Pour désactiver par défaut la liste des membres (afin qu’elle n’apparaisse pas sauf si elle est appelée spécifiquement), accédez à **Outils**  >  **options**  >  **tous les langages** et désélectionnez **Répertorier automatiquement les membres**. Si vous souhaitez désactiver la liste des membres uniquement pour un langage spécifique, accédez à la page de paramètres **Général** pour ce langage.
 
-Vous pouvez également passer en mode suggestion, où seul le texte que vous tapez est inséré dans le code. Par exemple, si vous entrez un identificateur qui ne figure pas dans la liste et que vous appuyez sur **Tab**, en mode de saisie semi-automatique, l’entrée remplace l’identificateur typé. Pour basculer entre le mode de saisie semi-automatique et le mode de suggestion, appuyez sur **CTRL** + **ALT** + **espace** ou choisissez **modifier** le mode de  >  **IntelliSense**  >  **saisie semi-automatique** IntelliSense.
+Vous pouvez également passer en mode suggestion, où seul le texte que vous tapez est inséré dans le code. Par exemple, si vous entrez un identificateur qui ne figure pas dans la liste et que vous appuyez sur **Tab**, en mode de saisie semi-automatique, l’entrée remplace l’identificateur typé. Pour basculer entre le mode de saisie semi-automatique et le mode de suggestion, appuyez sur **CTRL** + **ALT** + **espace** ou choisissez **modifier** le mode de  >    >  **saisie semi-automatique** IntelliSense.
 
 ## <a name="parameter-info"></a>Informations sur les paramètres
 
@@ -56,7 +56,7 @@ Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour 
 
 Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres. Pour plus d’informations, consultez [Insérer des commentaires dans le code XML](reference/generate-xml-documentation-comments.md).
 
-Vous pouvez appeler manuellement les informations sur les paramètres en choisissant **modifier**  >  **IntelliSense**  >  les informations sur les **paramètres** IntelliSense, en appuyant sur **CTRL** + **+** + **espace** ou en cliquant sur le bouton informations sur les **paramètres** dans la barre d’outils de l’éditeur.
+Vous pouvez appeler manuellement les informations sur les paramètres en choisissant **modifier**  >    >  les informations sur les **paramètres** IntelliSense, en appuyant sur **CTRL** + **+** + **espace** ou en cliquant sur le bouton informations sur les **paramètres** dans la barre d’outils de l’éditeur.
 
 ## <a name="quick-info"></a>Infos express
 
@@ -68,7 +68,7 @@ Quand vous sélectionnez un membre dans la zone **Liste des membres**, l’info-
 
 ![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015_paraminfo.png)
 
-Vous pouvez appeler manuellement Info Express en choisissant **modifier**  >  **IntelliSense**  >  **Info Express** IntelliSense, en appuyant sur **CTRL** + **I** ou en cliquant sur le bouton **Info Express** dans la barre d’outils de l’éditeur.
+Vous pouvez appeler manuellement Info Express en choisissant **modifier**  >    >  **Info Express** IntelliSense, en appuyant sur **CTRL** + **I** ou en cliquant sur le bouton **Info Express** dans la barre d’outils de l’éditeur.
 
 Si une fonction est surchargée, il est possible que la fonctionnalité IntelliSense n'affiche pas les informations de toutes les formes de la surcharge.
 
@@ -76,7 +76,7 @@ Vous pouvez activer l’option infos rapides pour le code C++ en accédant à **
 
 ## <a name="complete-word"></a>Compléter le mot
 
-La fonctionnalité Compléter le mot entre automatiquement la fin du nom de variable, de commande ou de fonction dès que vous avez entré assez de caractères pour lever toute ambiguïté sur le nom. Vous pouvez appeler la fonctionnalité compléter le mot en choisissant **modifier**  >  **IntelliSense**  >  le **mot complet** IntelliSense, en appuyant sur **CTRL** + **espace** ou en choisissant le bouton **compléter le mot** dans la barre d’outils de l’éditeur.
+La fonctionnalité Compléter le mot entre automatiquement la fin du nom de variable, de commande ou de fonction dès que vous avez entré assez de caractères pour lever toute ambiguïté sur le nom. Vous pouvez appeler la fonctionnalité compléter le mot en choisissant **modifier**  >    >  le **mot complet** IntelliSense, en appuyant sur **CTRL** + **espace** ou en choisissant le bouton **compléter le mot** dans la barre d’outils de l’éditeur.
 
 ## <a name="intellisense-options"></a>Options IntelliSense
 

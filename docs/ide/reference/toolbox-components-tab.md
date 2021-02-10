@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: adbc2611cf0d0e08ef356e91e25ed0c4854c4386
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965042"
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 
@@ -46,7 +46,7 @@ Crée une instance du composant <xref:System.DirectoryServices.DirectorySearcher
 
 Crée une instance du composant <xref:System.Windows.Forms.ErrorProvider> qui indique à l’utilisateur final qu’une erreur est associée à un contrôle sur un formulaire. Pour plus d’informations, consultez [ErrorProvider, composant](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
-**EventLog**
+**Événements**
 
 Crée une instance du composant <xref:System.Diagnostics.EventLog> que vous pouvez utiliser pour interagir avec des journaux des événements système et personnalisés, ce qui inclut l’écriture d’événements dans un journal et la lecture de données de journal.
 

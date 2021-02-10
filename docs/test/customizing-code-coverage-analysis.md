@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964405"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -120,9 +120,9 @@ Le tableau suivant montre les différentes façons dont les assemblys et les mem
 
 Les nœuds Inclure et Exclure utilisent des expressions régulières, qui ne sont pas identiques à des caractères génériques. Les correspondances ne respectent pas la casse. Quelques exemples :
 
-- **.\** _ correspond à une chaîne de caractères quelconques
+- **.\*** correspond à une chaîne de caractères quelconques
 
-- _ *\\.* * correspond à un point « . »
+- **\\.** correspond à un point « . »
 
 - **\\ ( \\ )** correspond aux parenthèses « () »
 

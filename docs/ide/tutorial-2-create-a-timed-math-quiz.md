@@ -8,15 +8,15 @@ ms.topic: tutorial
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0044e5d3a08e46318a325443e9f05742e141127
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f86dbfd1d39b6a2c16b992fc6fe3a9313320d113
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971425"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : créer un questionnaire mathématique chronométré
 
@@ -41,7 +41,7 @@ Lorsque vous avez terminé, votre quiz ressemble à la capture d’écran suivan
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Commencez par créer le projet, modifier ses propriétés et ajouter des contrôles `Label`.|
 |[Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md)|Créez un problème d'addition et utilisez la classe `Random` pour générer des nombres aléatoires.|

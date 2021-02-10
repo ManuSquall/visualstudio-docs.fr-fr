@@ -18,18 +18,18 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 94162e2fca66fd86b2ac8b237c518e391d0a9908
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964678"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Intégrer des données métiers dans SharePoint
-  Vous pouvez intégrer des données métier dans SharePoint. Les données métier peuvent provenir d’applications serveur principales, telles que [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] , Siebel et SAP, ou d’un service Web. Les utilisateurs peuvent afficher, ajouter, mettre à jour ou supprimer des données d’entreprise à l’aide de listes externes ou de composants WebPart de données d’entreprise dans SharePoint.  Les utilisateurs peuvent également accéder à ces données hors connexion dans une application Microsoft Office telle que Microsoft Outlook. Pour plus d’informations, consultez la page [où vous pouvez afficher des données externes](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
+  Vous pouvez intégrer des données métier dans SharePoint. Les données métier peuvent provenir d’applications serveur principales, telles que [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] , Siebel et SAP, ou d’un service Web. Les utilisateurs peuvent afficher, ajouter, mettre à jour ou supprimer des données d’entreprise à l’aide de listes externes ou de WebParts de données d’entreprise dans SharePoint.  Les utilisateurs peuvent également accéder à ces données hors connexion dans une application Microsoft Office telle que Microsoft Outlook. Pour plus d’informations, consultez la page [où vous pouvez afficher des données externes](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
 
  Pour intégrer des données dans SharePoint, créez un modèle pour le service de connectivité de données métiers (BDC). Le service BDC est une application dans SharePoint qui stocke des informations sur les données des applications d’entreprise. Pour plus d’informations, consultez [service de connectivité de données métiers (BDC)](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14)).
 

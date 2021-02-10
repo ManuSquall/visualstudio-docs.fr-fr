@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965211"
 ---
 # <a name="sccget-function"></a>SccGet fonction)
 Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués en lecture seule.
