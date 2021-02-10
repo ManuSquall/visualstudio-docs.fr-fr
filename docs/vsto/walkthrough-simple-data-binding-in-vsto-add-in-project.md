@@ -14,15 +14,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], simple binding data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e6162c8cc508c1eaada6c2be90bd28d430779cb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937366"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : liaison de données simple dans un projet de complément VSTO
 
@@ -54,7 +54,7 @@ Vous devez disposer des éléments suivants pour exécuter cette procédure pas 
 
   - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
 
 La première étape consiste à créer un projet de complément VSTO Word.
 

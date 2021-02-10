@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937431"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procédure pas à pas : insertion de données dans un classeur sur un serveur
   Cette procédure pas à pas montre comment insérer des données dans un DataSet mis en cache dans un Microsoft Office classeur Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936000"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance SDK pour le débogage
 Ces fonctions et déclarations sont des fonctions d’assistance globales pour l’implémentation de moteurs de débogage, d’évaluateur d’expression et de fournisseurs de symboles en C++.

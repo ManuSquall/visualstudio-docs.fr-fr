@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937392"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procédure pas à pas : programmer sur les événements d’un contrôle NamedRange
   Cette procédure pas à pas montre comment ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à une feuille de calcul Microsoft Office Excel et programmer par rapport à ses événements à l’aide des outils de développement Office dans Visual Studio.
@@ -136,7 +136,7 @@ ms.locfileid: "97526129"
     > [!NOTE]
     > Étant donné que le fait de double-cliquer sur une cellule dans une plage Excel provoque le déplacement de la sélection dans la plage, un <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> événement se produit avant que l' <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> événement se produise.
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vérifier que le texte décrivant les événements d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle est inséré dans une autre plage nommée lorsque les événements sont déclenchés.
 
 ### <a name="to-test-your-document"></a>Pour tester votre document

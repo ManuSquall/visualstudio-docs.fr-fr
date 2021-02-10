@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938133"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres propriétés, Liste des tâches, sortie et options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations sur votre fenêtre outil dans une nouvelle page d' **options** et un nouveau paramètre dans la page **Propriétés** , et comment écrire dans les fenêtres de **liste des tâches** et de **sortie** .
@@ -367,7 +367,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 8. Testez votre code. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
 
-9. Ouvrez la **Tools**  >  page **options** des outils. Vous devez voir la catégorie ToDo dans le volet gauche. Les catégories sont répertoriées par ordre alphabétique, donc Regardez sous le TS.
+9. Ouvrez la   >  page **options** des outils. Vous devez voir la catégorie ToDo dans le volet gauche. Les catégories sont répertoriées par ordre alphabétique, donc Regardez sous le TS.
 
 10. Dans la page options **TODO** , la propriété doit être `DaysAhead` définie sur **0**. Remplacez-la par **2**.
 
@@ -490,7 +490,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
      Une date d’échéance de 2 jours après la date du jour est ajoutée à la zone de liste. Aucune erreur n’est générée, et la **liste des tâches** (**vue**  >  **liste des tâches**) ne doit pas contenir d’entrées.
 
-4. À présent, remplacez le paramètre **Tools** de la  >  **Options**  >  page **TODO** des **2** options outils par **0**.
+4. À présent, remplacez le paramètre de la  >    >  page **TODO** des  options outils par **0**.
 
 5. Tapez un autre nom dans le **TodoWindow** , puis cliquez à nouveau sur **Ajouter** . Cela déclenche une erreur et également une entrée dans le **liste des tâches**.
 

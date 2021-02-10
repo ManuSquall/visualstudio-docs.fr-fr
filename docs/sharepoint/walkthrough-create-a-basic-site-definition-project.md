@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937704"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : création d’un projet de définition de site de base
   Cette procédure pas à pas vous montre comment créer une définition de site de base contenant un composant Visual Web part avec des contrôles. Par souci de clarté, le composant Visual Web part que vous créez n’a que quelques contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent davantage de fonctionnalités.

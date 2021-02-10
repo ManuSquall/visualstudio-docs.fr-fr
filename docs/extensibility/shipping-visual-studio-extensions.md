@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938094"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Publication d’extensions Visual Studio
 Une fois que vous avez terminé le développement de votre extension, vous pouvez l’installer sur d’autres machines, la partager avec vos amis et vos collègues, ou la publier sur le Visual Studio Marketplace. Dans cette section, nous expliquons toutes les choses que vous devez effectuer pour publier et gérer votre extension : utilisation des fichiers. vsix, publication, localisation et mise à jour.

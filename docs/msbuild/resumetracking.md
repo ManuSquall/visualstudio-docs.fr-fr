@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af7c90342638fb0c154e7de21fa111d560905d0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: fd6722ca0b930d66a386732dac466a8e4fe36976
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048421"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937912"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 
@@ -38,7 +38,7 @@ HRESULT WINAPI ResumeTracking();
 
  **HRESULT** avec le bit **Succeeded** défini si le suivi a été repris. **E_FAIL** est retourné si le suivi ne peut pas être repris car le contexte n’était pas disponible.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
  **En-tête :** *FileTracker.h*
 

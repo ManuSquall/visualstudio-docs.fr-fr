@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937440"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Procédure pas à pas : récupération des données mises en cache d’un classeur sur un serveur
   Cette procédure pas à pas montre comment récupérer des données d’un DataSet mis en cache dans un Microsoft Office classeur Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.

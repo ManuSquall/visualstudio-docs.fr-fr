@@ -5,15 +5,15 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42cdc6e964d23b5aafdfe225c04d5d35b151cc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936403"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Créer des projets R dans Visual Studio
 
@@ -33,7 +33,7 @@ Cette commande crée un projet avec un fichier *script.R* vide ouvert dans l’�
 
 ![Contenu d’un projet R créé à partir du modèle](media/projects-template-results.png)
 
-Le fichier *.Rhistory* enregistre toutes les commandes que vous entrez dans la Fenêtre [interactive R](interactive-repl-for-r-in-visual-studio.md). Vous pouvez ouvrir une fenêtre d’historique dédiée avec la commande de l’historique Windows **Outils R**  >  **Windows**  >  **History** . Cette fenêtre comporte un bouton de barre d’outils et des éléments de menu contextuel pour effacer le contenu de l’historique.
+Le fichier *.Rhistory* enregistre toutes les commandes que vous entrez dans la Fenêtre [interactive R](interactive-repl-for-r-in-visual-studio.md). Vous pouvez ouvrir une fenêtre d’historique dédiée avec la commande de l’historique Windows **Outils R**  >    >   . Cette fenêtre comporte un bouton de barre d’outils et des éléments de menu contextuel pour effacer le contenu de l’historique.
 
 Le fichier *rproject.rproj* tient à jour certains paramètres de projet propres à R qui ne sont pas tenus à jour par Visual Studio :
 
@@ -56,7 +56,7 @@ Si vous avez un dossier de fichiers *.R* que vous souhaitez gérer dans un proje
 
 1. Créez un projet dans Visual Studio comme décrit dans la section précédente.
 1. Copiez vos fichiers dans le dossier du projet.
-1. Dans l’Explorateur de solutions Visual Studio, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter**un  >  **élément existant**, puis accédez aux fichiers que vous souhaitez ajouter. Quand vous sélectionnez **OK**, ils apparaissent dans l’arborescence du projet.
+1. Dans l’Explorateur de solutions Visual Studio, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter** un  >  **élément existant**, puis accédez aux fichiers que vous souhaitez ajouter. Quand vous sélectionnez **OK**, ils apparaissent dans l’arborescence du projet.
 1. Pour organiser le code en sous-dossiers, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter**  >  **un nouveau dossier** , puis copiez vos fichiers dans ce dossier et ajoutez les éléments existants à l’étape 3.
 
 ## <a name="project-properties"></a>Propriétés d’un projet
@@ -86,7 +86,7 @@ Les projets Visual Studio prennent en charge plusieurs commandes générales par
 
 ## <a name="r-specific-item-templates"></a>Modèles d’élément propres à R
 
-Les outils R pour Visual Studio incluent plusieurs modèles pour des types de fichiers spécifiques. Vous accédez aux modèles en cliquant avec le bouton droit sur un projet R et en sélectionnant **Ajouter**  >  **un nouvel élément**, en sélectionnant **projet**  >  **Ajouter un nouvel élément**ou en utilisant **fichier**  >  **nouveau**  >  **fichier** et en sélectionnant l’onglet **R** . La meilleure façon d’explorer un modèle consiste à créer un projet et à insérer des fichiers de chaque type.
+Les outils R pour Visual Studio incluent plusieurs modèles pour des types de fichiers spécifiques. Vous accédez aux modèles en cliquant avec le bouton droit sur un projet R et en sélectionnant **Ajouter**  >  **un nouvel élément**, en sélectionnant **projet**  >  **Ajouter un nouvel élément** ou en utilisant **fichier**  >  **nouveau**  >  **fichier** et en sélectionnant l’onglet **R** . La meilleure façon d’explorer un modèle consiste à créer un projet et à insérer des fichiers de chaque type.
 
 > [!Note]
 > Les commandes **Ajouter**  >  **un nouvel élément** affichent également les types de fichiers généraux qui ne sont pas répertoriés dans le tableau ; avec **fichier**  >  **nouveau**  >  **fichier** , ces types sont contenus à la place sous l’onglet **général** .

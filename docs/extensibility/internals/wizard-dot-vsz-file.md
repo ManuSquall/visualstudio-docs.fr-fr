@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5fa9b9e06ccb20e6a2859770c0637fc85422fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935857"
 ---
 # <a name="wizard-vsz-file"></a>Fichier Assistant (.Vsz)
 
@@ -38,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 Voici les parties du fichier. vsz.
 
-|Élément|Description|
+|Partie|Description|
 |----------|-----------------|
 |VSWizard|Le premier paramètre dans le fichier est le numéro de version du format de fichier de modèle. Ce numéro de version doit être 6,0, 7,0, 7,1 ou 8,0. Les autres numéros ne peuvent pas être démarrés et provoquent une erreur de format non valide.|
 |Assistant|Ce champ contient l’identificateur de programme (ProgID) OLE de l’Assistant ou une représentation sous forme de chaîne GUID du CLSID de l’Assistant qui est cocréé par l’IDE.|

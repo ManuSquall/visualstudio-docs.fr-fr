@@ -8,21 +8,21 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3a6066a40ea09698bec6caba38d5d55aa8b269e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937938"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Répondre aux modifications et les propager
 
 Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification à d’autres parties du modèle, ou à des ressources externes telles que des fichiers, des bases de données ou d’autres composants.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 
 À titre indicatif, envisagez ces techniques dans l’ordre suivant :
 

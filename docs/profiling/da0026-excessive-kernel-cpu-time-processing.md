@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3d96ccf3fc8463908ab5cf27b52e91fb1d05ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b1f3231fce4954d3ace5e04e470cda386a9ceebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936741"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026 : Traitement temps CPU noyaux excessif
 
@@ -32,7 +32,7 @@ ms.locfileid: "85544623"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Le temps processeur qui a été exécuté en mode noyau a dépassé le temps passé en mode utilisateur. Effectuez de nouveau un profilage et un échantillonnage du nombre d’appels système (syscalls) pour déterminer la cause des durées élevées d’exécution en mode noyau.
 
 ## <a name="rule-description"></a>Description de la règle

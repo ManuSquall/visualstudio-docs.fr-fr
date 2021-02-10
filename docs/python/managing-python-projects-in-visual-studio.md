@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09203557fd9adcd6580dfafa981d6ed4f80eca16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936455"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -43,9 +43,9 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Ajouter des fichiers, attribuer un fichier de démarrage et définir des environnements
 
-Quand vous développez votre application, vous devez généralement ajouter de nouveaux fichiers de différents types au projet. Pour ajouter de tels fichiers, cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter**un  >  **élément existant** avec lequel vous recherchez un fichier à ajouter, ou **Ajoutez**un  >  **nouvel élément**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément. Comme décrit dans la référence [Modèle d’élément](python-item-templates.md), les options incluent des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Vous pouvez explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
+Quand vous développez votre application, vous devez généralement ajouter de nouveaux fichiers de différents types au projet. Pour ajouter de tels fichiers, cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter** un  >  **élément existant** avec lequel vous recherchez un fichier à ajouter, ou **Ajoutez** un  >  **nouvel élément**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément. Comme décrit dans la référence [Modèle d’élément](python-item-templates.md), les options incluent des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Vous pouvez explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
 
-Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier qui est exécuté quand vous démarrez le débogage**F5** (F5 **ou Déboguer**  >  **Démarrer le débogage**) ou lorsque vous exécutez votre projet dans la fenêtre **interactive** (**MAJ** + **ALT** + **F5** ou **Déboguer**  >  **exécuter le projet dans python interactive**). Pour le modifier, cliquez avec le bouton droit sur le nouveau fichier et sélectionnez **Définir comme élément de démarrage** (ou **Définir comme fichier de démarrage** dans les versions antérieures de Visual Studio).
+Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier qui est exécuté quand vous démarrez le débogage (F5 **ou Déboguer**  >  **Démarrer le débogage**) ou lorsque vous exécutez votre projet dans la fenêtre **interactive** (**MAJ** + **ALT** + **F5** ou **Déboguer**  >  **exécuter le projet dans python interactive**). Pour le modifier, cliquez avec le bouton droit sur le nouveau fichier et sélectionnez **Définir comme élément de démarrage** (ou **Définir comme fichier de démarrage** dans les versions antérieures de Visual Studio).
 
 > [!Tip]
 > Si vous supprimez le fichier de démarrage sélectionné d’un projet et que vous n’en sélectionnez pas un autre, Visual Studio ne sait pas avec quel fichier Python démarrer lorsque vous essayez d’exécuter le projet. Dans ce cas, Visual Studio 2017 versions 15.6 et ultérieures présente une erreur ; les versions antérieures ouvrent une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche mais disparaît presque immédiatement. Si vous rencontrez l’un de ces comportements, vérifiez que vous avez un fichier de démarrage assigné.
@@ -69,7 +69,7 @@ Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’envi
 
 ## <a name="project-templates"></a>Modèles de projet
 
-Visual Studio vous propose diverses méthodes pour configurer un projet Python, que ce soit à partir de zéro ou en utilisant du code existant. Pour utiliser un modèle, sélectionnez la **File**  >  **New**  >  commande de menu fichier nouveau**projet** , ou cliquez avec le bouton droit sur la solution dans **Explorateur de solutions** et sélectionnez **Ajouter**  >  **un nouveau projet**, tous deux qui affichent la boîte de dialogue **nouveau projet** ci-dessous. Pour afficher les modèles spécifiques à python, effectuez une recherche sur « Python » ou **Installed**sélectionnez le  >  nœud**python** installé :
+Visual Studio vous propose diverses méthodes pour configurer un projet Python, que ce soit à partir de zéro ou en utilisant du code existant. Pour utiliser un modèle, sélectionnez la   >    >  commande de menu fichier nouveau **projet** , ou cliquez avec le bouton droit sur la solution dans **Explorateur de solutions** et sélectionnez **Ajouter**  >  **un nouveau projet**, tous deux qui affichent la boîte de dialogue **nouveau projet** ci-dessous. Pour afficher les modèles spécifiques à python, effectuez une recherche sur « Python » ou sélectionnez le  >  nœud **python** installé :
 
 ![Boîte de dialogue Nouveau projet avec les modèles Python](media/projects-new-project-dialog.png)
 
@@ -121,7 +121,7 @@ Les fichiers liés sont ignorés si l’une des conditions suivantes se présent
 
 ### <a name="work-with-linked-files"></a>Utiliser des fichiers liés
 
-Pour ajouter un élément existant en tant que lien, cliquez avec le bouton droit sur le dossier du projet dans lequel vous souhaitez ajouter le fichier, puis sélectionnez **Ajouter**un  >  **élément existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez un fichier et choisissez **Ajouter en tant que lien** dans la liste déroulante du bouton **Ajouter**. Si aucun fichier n’est en conflit, cette commande crée un lien dans le dossier sélectionné. Toutefois, le lien n’est pas ajouté s’il existe déjà un fichier portant le même nom ou si un lien vers ce fichier existe déjà dans le projet.
+Pour ajouter un élément existant en tant que lien, cliquez avec le bouton droit sur le dossier du projet dans lequel vous souhaitez ajouter le fichier, puis sélectionnez **Ajouter** un  >  **élément existant**. Dans la boîte de dialogue qui s’affiche, sélectionnez un fichier et choisissez **Ajouter en tant que lien** dans la liste déroulante du bouton **Ajouter**. Si aucun fichier n’est en conflit, cette commande crée un lien dans le dossier sélectionné. Toutefois, le lien n’est pas ajouté s’il existe déjà un fichier portant le même nom ou si un lien vers ce fichier existe déjà dans le projet.
 
 Si vous tentez de créer un lien vers un fichier qui existe déjà dans les dossiers du projet, il est ajouté en tant que fichier normal et non en tant que lien. Pour convertir un fichier en lien, sélectionnez **fichier**  >  **Enregistrer sous** pour enregistrer le fichier dans un emplacement en dehors de la hiérarchie de projet. Visual Studio le convertit automatiquement en lien. De même, un lien peut être reconverti en utilisant **fichier**  >  **Enregistrer sous** pour enregistrer le fichier quelque part dans la hiérarchie du projet.
 
@@ -129,7 +129,7 @@ Si vous déplacez un fichier lié dans **l’Explorateur de solutions**, le lien
 
 Les fichiers liés ne peuvent pas être renommés.
 
-## <a name="references"></a>References
+## <a name="references"></a>Références
 
 Les projets Visual Studio prennent en charge l’ajout de références aux projets et aux extensions, qui apparaissent sous le nœud **Références** dans **l’Explorateur de solutions** :
 

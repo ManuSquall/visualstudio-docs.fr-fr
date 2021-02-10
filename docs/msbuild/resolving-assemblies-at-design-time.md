@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f7927ff370ab05f4931cb0346f00f65157a411d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937925"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Résoudre des assemblys au moment du design
 
-Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet **.NET** de la boîte de dialogue **Ajouter une référence** , la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais pas nécessairement du code. L’onglet **.NET** liste les assemblys de référence qui correspondent aux assemblys runtime de .NET Framework. Il présente aussi ceux qui correspondent aux assemblys runtime des dossiers AssemblyFoldersEx inscrits et utilisés par des tiers.
+Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet **.NET** de la boîte de dialogue **Ajouter une référence**, la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais pas nécessairement du code. L’onglet **.NET** liste les assemblys de référence qui correspondent aux assemblys runtime de .NET Framework. Il présente aussi ceux qui correspondent aux assemblys runtime des dossiers AssemblyFoldersEx inscrits et utilisés par des tiers.
 
 ## <a name="multi-targeting"></a>Multi-ciblage
 

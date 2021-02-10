@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937314"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : mise à jour d'un graphique dans une feuille de calcul à l'aide de cases d'option
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation des cases d’option dans une feuille de calcul Excel Microsoft Office pour permettre à l’utilisateur de basculer rapidement entre les options. Dans ce cas, les options modifient le style d’un graphique.
@@ -88,7 +88,7 @@ ms.locfileid: "97526068"
 
 9. Quittez Excel.
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
  Dans cette étape, vous allez créer un projet de classeur Excel basé sur le classeur **ExcelChart** .
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -231,7 +231,7 @@ ms.locfileid: "97526068"
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vérifier que le style du graphique est correct quand vous sélectionnez une case d’option.
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur

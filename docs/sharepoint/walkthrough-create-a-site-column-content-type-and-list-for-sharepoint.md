@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937691"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : création d’une colonne de site, d’un type de contenu et d’une liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou des *champs*, ainsi qu’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.
@@ -220,7 +220,7 @@ ms.locfileid: "96914008"
 
 15. Dans la liste **nom** de la colonne, choisissez **nom du patient**, assurez-vous que la colonne de **Tri** est définie sur **croissant**, puis choisissez le bouton **OK** .
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Maintenant que les colonnes de site personnalisées, le type de contenu et la liste sont prêts, déployez-les sur SharePoint et exécutez l’application pour la tester.
 
 #### <a name="to-test-the-application"></a>Pour tester l'application

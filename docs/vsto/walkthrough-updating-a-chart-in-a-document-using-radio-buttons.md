@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], updating documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0db8cd113983231ee45252fec8fb47e3a7b75b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937327"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : mise à jour d’un graphique dans un document à l’aide de cases d’option
   Cette procédure pas à pas montre comment utiliser des cases d'option dans une personnalisation de document pour Microsoft Office Word dans le but de donner aux utilisateurs la possibilité de sélectionner des styles de graphique dans le document.
@@ -197,7 +197,7 @@ ms.locfileid: "97528393"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  À présent, vous pouvez tester votre document et vérifier que le style de graphique est mis à jour correctement quand vous sélectionnez une case d'option.
 
 ### <a name="to-test-your-document"></a>Pour tester votre document

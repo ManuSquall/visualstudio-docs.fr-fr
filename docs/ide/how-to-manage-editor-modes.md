@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86859f5f5718871499bb1f3e2014da59f956db
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 112fbd727f28ce1dd3f72626c03e3cc6594da213
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935885"
 ---
 # <a name="how-to-manage-editor-modes"></a>Guide pratique pour gérer les modes de l’éditeur
 
@@ -56,7 +56,7 @@ En mode **Espace virtuel**, des espaces sont insérés à la fin de chaque ligne
 
 1. Sélectionnez **Options** dans le menu **Outils**.
 
-2. Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez **Basic** le  >  nœud Éditeur de **texte** de base.
+2. Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez le  >  nœud Éditeur de **texte** de base.
 
 3. Sélectionnez les options **Général**, puis, sous **Paramètres**, sélectionnez **Activer l’espace virtuel**.
 

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: cc1dc50c379ab2eac7d44c48e06834dd73c477f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936429"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vues des données de la méthode d’échantillonnage du profileur
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés avec la méthode d’instrumentation.
@@ -26,7 +26,7 @@ Cette section contient des informations de référence pour les vues et rapports
 > [!NOTE]
 > Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Mode Résumé](../profiling/summary-view-sampling-data.md)
 
  Répertorie les fonctions qui ont été exécutées le plus fréquemment lors de la collecte des échantillons, et les fonctions qui ont effectué le plus de travail individuel.

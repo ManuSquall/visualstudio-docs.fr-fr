@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937678"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : appel du modèle d’objet client SharePoint dans une extension de Explorateur de serveurs
   Cette procédure pas à pas montre comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le nœud **Connexions SharePoint** dans **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation du modèle d’objet client SharePoint, consultez [appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -52,7 +52,7 @@ La connaissance des concepts suivants est utile, mais pas obligatoire, pour effe
 
 - Utilisation du modèle d’objet client SharePoint. Pour plus d’informations, consultez [modèle objet client géré](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).
 
-- Composants WebPart dans SharePoint. Pour plus d’informations, consultez [composants WebPart vue d’ensemble](/previous-versions/office/ms432401(v=office.14)).
+- Composants WebPart dans SharePoint. Pour plus d’informations, consultez [WebParts vue d’ensemble](/previous-versions/office/ms432401(v=office.14)).
 
 ## <a name="create-the-projects"></a>Créer les projets
  Pour effectuer cette procédure pas à pas, vous devez créer deux projets :
@@ -221,7 +221,7 @@ La connaissance des concepts suivants est utile, mais pas obligatoire, pour effe
      Par défaut, le dossier de sortie de la génération est le.. dossier \bin\Debug sous le dossier qui contient votre fichier projet.
 
 ## <a name="test-the-extension"></a>Tester l’extension
- Vous êtes maintenant prêt à tester le nouveau nœud de la **Galerie de composants WebPart** dans **Explorateur de serveurs**. Tout d’abord, commencez par déboguer le projet d’extension dans une instance expérimentale de Visual Studio. Utilisez ensuite le nouveau nœud **composants WebPart** dans l’instance expérimentale de Visual Studio.
+ Vous êtes maintenant prêt à tester le nouveau nœud de la **Galerie de composants WebPart** dans **Explorateur de serveurs**. Tout d’abord, commencez par déboguer le projet d’extension dans une instance expérimentale de Visual Studio. Utilisez ensuite le nouveau nœud **WebParts** dans l’instance expérimentale de Visual Studio.
 
 #### <a name="to-start-debugging-the-extension"></a>Pour démarrer le débogage de l’extension
 
@@ -253,7 +253,7 @@ La connaissance des concepts suivants est utile, mais pas obligatoire, pour effe
 
 6. Vérifiez que le code de l’autre instance de Visual Studio s’arrête sur le point d’arrêt que vous avez défini précédemment dans la méthode, puis appuyez sur `CreateWebPartNodes` la touche **F5** pour continuer à déboguer le projet.
 
-7. Dans l’instance expérimentale de Visual Studio, vérifiez que tous les composants WebPart sur le site connecté s’affichent sous le nœud **Galerie de composants WebPart** dans **Explorateur de serveurs**.
+7. Dans l’instance expérimentale de Visual Studio, vérifiez que tous les WebParts sur le site connecté s’affichent sous le nœud **Galerie de composants WebPart** dans **Explorateur de serveurs**.
 
 8. Ouvrez le menu contextuel d’un composant WebPart, puis choisissez **Propriétés**.
 

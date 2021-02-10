@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 3c07dd32b889a9d75222bc8ff5a245f516fab528
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935922"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Procédure pas à pas : afficher les info-bulles Info Express
 Info Express est une fonctionnalité IntelliSense qui affiche des signatures et des descriptions de méthode lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Vous pouvez implémenter des fonctionnalités basées sur le langage, telles que Info Express, en définissant les identificateurs pour lesquels vous souhaitez fournir des descriptions Info Express, puis en créant une info-bulle dans laquelle afficher le contenu. Vous pouvez définir Info Express dans le contexte d’un service de langage, ou vous pouvez définir votre propre extension de nom de fichier et type de contenu et afficher l’info-automatique pour ce type, ou vous pouvez afficher info Express pour un type de contenu existant (tel que « texte »). Cette procédure pas à pas montre comment afficher info Express pour le type de contenu « texte ».

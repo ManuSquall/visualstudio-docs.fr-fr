@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: dc33d2fb37db7e021ce1752c642492a80956b61f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935935"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interface de l’Assistant (IDTWizard)
 L’environnement de développement intégré (IDE) utilise l' <xref:EnvDTE.IDTWizard> interface pour communiquer avec les assistants. Les assistants doivent implémenter cette interface pour être installés dans l’IDE.

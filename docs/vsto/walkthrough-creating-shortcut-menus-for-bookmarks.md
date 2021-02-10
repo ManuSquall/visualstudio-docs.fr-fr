@@ -14,15 +14,15 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937416"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procédure pas à pas : créer des menus contextuels pour les signets
   Cette procédure pas à pas montre comment créer des menus contextuels pour les <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans une personnalisation au niveau du document pour Word. Quand un utilisateur clique avec le bouton droit sur le texte d’un signet, un menu contextuel s’affiche et donne à l’utilisateur des options pour mettre en forme le texte.
@@ -172,7 +172,7 @@ ms.locfileid: "97524223"
 
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Testez votre document pour vérifier que les éléments de menu gras et italique s’affichent dans le menu contextuel lorsque vous cliquez avec le bouton droit sur le texte d’un signet et que le texte est correctement mis en forme.
 
 ### <a name="to-test-your-document"></a>Pour tester votre document

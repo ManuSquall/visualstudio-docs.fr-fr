@@ -15,15 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937379"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : insertion de texte dans un document à partir d’un volet Actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Word Microsoft Office. Le volet Actions contient deux contrôles qui collectent l’entrée, puis envoient le texte au document.
@@ -164,7 +164,7 @@ ms.locfileid: "97524164"
      [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Testez votre document pour vérifier que le volet actions s’ouvre lorsque le document est ouvert et que le texte tapé dans les zones de texte est inséré dans les signets lorsque l’utilisateur clique sur le bouton.
 
 ### <a name="to-test-your-document"></a>Pour tester votre document

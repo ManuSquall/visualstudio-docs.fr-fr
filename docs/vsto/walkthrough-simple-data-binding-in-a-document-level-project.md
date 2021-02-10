@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937406"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données dans un projet au niveau du document. Un champ de données unique dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler tous les enregistrements de la table.
@@ -52,7 +52,7 @@ ms.locfileid: "97524100"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
  Dans cette étape, vous allez créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -172,7 +172,7 @@ ms.locfileid: "97524100"
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que vous pouvez parcourir les enregistrements de la base de données.
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur

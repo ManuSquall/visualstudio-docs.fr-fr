@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccd8389859de3ffce7b04e2da648b2ac2e807a79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936182"
 ---
 # <a name="clickonce-application-manifest"></a>Manifeste d’application ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application est un fichier XML qui décrit une application déployée à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -33,13 +33,13 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d
 | - | - | - |
 | [\<assembly> Appartient](../deployment/assembly-element-clickonce-application.md) | Obligatoire. Élément de niveau supérieur. | `manifestVersion` |
 | [\<assemblyIdentity> Appartient](../deployment/assemblyidentity-element-clickonce-application.md) | Obligatoire. Identifie l’assembly principal de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo> Appartient](../deployment/trustinfo-element-clickonce-application.md) | Identifie les exigences de sécurité de l’application. | Aucune |
+| [\<trustInfo> Appartient](../deployment/trustinfo-element-clickonce-application.md) | Identifie les exigences de sécurité de l’application. | None |
 | [\<entryPoint> Appartient](../deployment/entrypoint-element-clickonce-application.md) | Obligatoire. Identifie le point d’entrée de code d’application. | `name` |
-| [\<dependency> Appartient](../deployment/dependency-element-clickonce-application.md) | Obligatoire. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés. | Aucune |
-| [\<file> Appartient](../deployment/file-element-clickonce-application.md) | facultatif. Identifie chaque fichier non assembly utilisé par l’application. Peut inclure les données d’isolation COM (Component Object Model) associées au fichier. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation> Appartient](../deployment/fileassociation-element-clickonce-application.md) | facultatif. Identifie une extension de fichier à associer à l’application. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<dependency> Appartient](../deployment/dependency-element-clickonce-application.md) | Obligatoire. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés. | None |
+| [\<file> Appartient](../deployment/file-element-clickonce-application.md) | Facultatif. Identifie chaque fichier non assembly utilisé par l’application. Peut inclure les données d’isolation COM (Component Object Model) associées au fichier. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation> Appartient](../deployment/fileassociation-element-clickonce-application.md) | Facultatif. Identifie une extension de fichier à associer à l’application. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichier manifeste de l’application identifie une application déployée à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Pour plus d’informations sur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consultez [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
 ## <a name="file-location"></a>Emplacement du fichier

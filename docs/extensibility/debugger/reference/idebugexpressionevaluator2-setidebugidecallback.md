@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: f01c40ad-ef4b-477b-8304-602c6972bc88
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 461c0ea446c1fefcc730a95eb856963e5b82cec5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a3f1acf1921afe81a8874bde6c18081e429ce93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938211"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 Permet à un moteur de débogage de passer un rappel à l’évaluateur d’expression pendant l’initialisation.
@@ -42,7 +42,7 @@ int SetIDebugIDECallback (
 `pCallback`\
 dans Interface pour le rappel.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

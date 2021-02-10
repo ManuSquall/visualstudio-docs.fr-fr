@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 8f1c1627-217f-4405-8141-7a2eb80310a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b17479868b3f394c4e55aa9d04d92fd87e59aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4463085b021f2de5f9237817b6d8ffade88612a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936156"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 Récupère le lecteur de symboles à utiliser par le code non managé.
@@ -52,7 +52,7 @@ dans Identificateur unique du module.
 `ppSymUnmanagedReader`\
 à Retourne l’objet qui représente le lecteur de symboles.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
