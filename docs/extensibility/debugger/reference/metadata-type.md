@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afe5ea128775c7be0e48035ab4c7e7d370c9d233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938730"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 Cette structure spécifie des informations sur un type de champ issu de métadonnées.

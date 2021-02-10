@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 53e50e408166eb2d2e1545549cdd6c72018c9553
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938783"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Indicateurs de la ligne de commande du compilateur VSCT
 Le compilateur de table de commandes Visual Studio (VSCT) fournit des commutateurs de ligne de commande pour garantir la réussite de la compilation des fichiers. vsct.
@@ -30,7 +30,7 @@ Le compilateur de table de commandes Visual Studio (VSCT) fournit des commutateu
 vsct /?
 ```
 
- Cette demande renvoie :
+ Elle retourne ce qui suit :
 
 ```
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000

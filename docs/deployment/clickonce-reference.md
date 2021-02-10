@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6f71f042df1ef683ed48e2389e2c781dfb22bff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383025"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939251"
 ---
 # <a name="clickonce-reference"></a>Informations de référence sur ClickOnce
 Les pages suivantes décrivent la structure des fichiers XML utilisés pour représenter les applications ClickOnce.
 
 ## <a name="in-this-section"></a>Dans cette section
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)
 
  Répertorie et décrit les éléments et les attributs qui composent un manifeste d’application.
 
@@ -44,7 +44,7 @@ Les pages suivantes décrivent la structure des fichiers XML utilisés pour repr
 
  Répertorie les API publiques non managées à partir de dfshim.dll.
 
-## <a name="reference"></a>Informations de référence
+## <a name="reference"></a>Référence
 
 ## <a name="related-sections"></a>Sections connexes
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

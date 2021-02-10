@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938497"
 ---
 # <a name="localize-clickonce-applications"></a>Localiser des applications ClickOnce
 La localisation consiste à adapter votre application à une culture spécifique. Ce processus implique la traduction du texte de l'IU (interface utilisateur) dans une langue propre à la région, en utilisant la mise en forme appropriée de date et de devise, en ajustant la taille des contrôles sur un formulaire et en mettant en miroir les contrôles de droite à gauche, si nécessaire.
@@ -48,7 +48,7 @@ La localisation consiste à adapter votre application à une culture spécifique
 
  Cette méthode est utilisée par défaut dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour utiliser cette méthode dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous n'avez aucune autre tâche à effectuer.
 
- Pour utiliser cette méthode avec *MageUI.exe* , vous devez définir la culture de votre application avec la valeur **neutre** dans *MageUI.exe*. Ensuite, vous devez inclure manuellement tous les assemblys satellites dans votre déploiement. Dans *MageUI.exe* , vous pouvez ajouter les assemblys satellites à l’aide du bouton **Populate** sous l’onglet **Files** du manifeste de votre application.
+ Pour utiliser cette méthode avec *MageUI.exe*, vous devez définir la culture de votre application avec la valeur **neutre** dans *MageUI.exe*. Ensuite, vous devez inclure manuellement tous les assemblys satellites dans votre déploiement. Dans *MageUI.exe*, vous pouvez ajouter les assemblys satellites à l’aide du bouton **Populate** sous l’onglet **Files** du manifeste de votre application.
 
  L'avantage de cette approche est de créer un déploiement unique et de simplifier votre histoire de déploiement localisé. Au moment de l'exécution, l'assembly satellite approprié est utilisé, en fonction de la culture par défaut du système d'exploitation Windows de l'utilisateur. L'inconvénient de cette approche est le téléchargement de tous les assemblys satellites chaque fois que l'application est installée ou mise à jour sur un ordinateur client. Si votre application comporte un grand nombre de chaînes ou que vos clients disposent d'une connexion réseau lente, ce processus peut affecter les performances pendant la mise à jour de l'application.
 

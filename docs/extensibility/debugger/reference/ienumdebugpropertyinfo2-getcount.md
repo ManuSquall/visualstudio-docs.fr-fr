@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9b0b3ce6-08cb-46fd-a6d9-92b36e60da19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7434825f52bf1fa5291ccd2729a8134b10142458
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b017d80008edfa02f429d14700d42e927eca80cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939043"
 ---
 # <a name="ienumdebugpropertyinfo2getcount"></a>IEnumDebugPropertyInfo2::GetCount
 Retourne le nombre d’éléments dans l’énumération.
@@ -43,7 +43,7 @@ int GetCount(
 `pcelt`\
 à Retourne le nombre d’éléments dans l’énumération.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

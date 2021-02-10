@@ -23,15 +23,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c5f66042dad7051c856aa6158ea0a666a81e9b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938523"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combiner VBA et les personnalisations au niveau du document
   Vous pouvez utiliser du code Visual Basic pour Applications (VBA) dans un document faisant partie d'une personnalisation au niveau du document pour Microsoft Office Word ou Microsoft Office Excel. Vous pouvez appeler du code VBA dans le document à partir de l'assembly de personnalisation ou configurer votre projet pour permettre au code VBA du document d'appeler du code dans l'assembly de personnalisation.
@@ -85,7 +85,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]
 > Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word. Elle ne peut l'être que dans des projets de document Word, de classeur Excel ou de modèle Excel.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  Avant de pouvoir autoriser le code VBA à exécuter un appel dans l'assembly de personnalisation, votre projet doit remplir les conditions suivantes :
 
 - Le document doit avoir l'une des extensions de nom de fichier suivantes :
@@ -244,7 +244,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ## <a name="troubleshoot"></a>Dépanner
  Le tableau suivant répertorie quelques erreurs courantes et des suggestions pour les résoudre.
 
-|Error|Suggestion|
+|Erreur|Suggestion|
 |-----------|----------------|
 |Après avoir défini la propriété **EnableVbaCallers** ou **ReferenceAssemblyFromVbaProject** , un message d'erreur déclare que le document ne contient pas de projet VBA ou que vous n'avez pas l'autorisation d'accéder au projet VBA du document.|Vérifiez que le document dans le projet contient au moins une macro VBA, que le projet VBA dispose d'un niveau de confiance suffisant pour s'exécuter et qu'il n'est pas protégé par un mot de passe.|
 |Après avoir défini la propriété **EnableVbaCallers** ou **ReferenceAssemblyFromVbaProject** , un message d'erreur indique que la déclaration <xref:System.Runtime.InteropServices.GuidAttribute> est manquante ou endommagée.|Vérifiez que la <xref:System.Runtime.InteropServices.GuidAttribute> déclaration se trouve dans le fichier *AssemblyInfo.cs* ou *AssemblyInfo. vb* de votre projet, et que cet attribut est défini sur un GUID valide.|

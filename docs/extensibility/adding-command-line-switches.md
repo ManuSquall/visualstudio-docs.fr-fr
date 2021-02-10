@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939225"
 ---
 # <a name="add-command-line-switches"></a>Ajouter des commutateurs de ligne de commande
 Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lors de l’exécution de *devenv.exe* . Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommée **AddCommandSwitchPackage** sans arguments et avec le VSPackage chargé automatiquement.
@@ -31,12 +31,12 @@ Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à 
 
  Les paramètres nommés sont présentés dans les descriptions suivantes.
 
-|Name|Description|
+|Nom|Description|
 |-|-|
 | Arguments | Nombre d’arguments pour le commutateur. Peut être « * » ou une liste d’arguments. |
 | DemandLoad | Charger le VSPackage automatiquement si cette valeur est définie sur 1, sinon, sur 0. |
 | HelpString | Chaîne d’aide ou ID de ressource de la chaîne à afficher avec **devenv/ ?**. |
-| Name | Commutateur. |
+| Nom | Commutateur. |
 | PackageGuid | GUID du package. |
 
  La première valeur des arguments est généralement 0 ou 1. Une valeur spéciale de' * 'peut être utilisée pour indiquer que tout le reste de la ligne de commande est l’argument. Cela peut être utile pour déboguer des scénarios où un utilisateur doit passer une chaîne de commande du débogueur.
@@ -74,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Utilitaire CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [Fichiers. pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [. Fichiers pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

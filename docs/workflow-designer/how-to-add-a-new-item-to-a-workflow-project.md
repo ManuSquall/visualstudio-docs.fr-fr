@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e0cc4b24462583a5f704f47c16e6e8d30456512b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938458"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de workflow
 
@@ -32,7 +32,7 @@ Le tableau suivant répertorie les éléments de Windows Workflow Foundation (WF
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 
-1. Dans le menu **Projet** , sélectionnez **Ajouter un nouvel élément**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
    La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
