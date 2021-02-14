@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934648"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335259"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Débogage à distance d’un projet C++ dans Visual Studio
 Pour déboguer une application Visual Studio sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous allez déployer votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis déployez et exécutez votre application.
@@ -99,7 +99,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
     > [!TIP]
     > Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **mymfc**, puis choisissez **Déployer**.
 
-    Si vous avez des fichiers non-code requis par l’application, vous pouvez les spécifier dans **des fichiers supplémentaires à déployer** sur la page du **débogueur Windows distant** .
+    Si vous avez des fichiers non-code requis par l’application, vous pouvez les spécifier dans une liste délimitée par des points-virgules dans **fichiers supplémentaires à déployer** sur la page du **débogueur Windows distant** .
 
     Vous pouvez également inclure les fichiers de votre projet et définir la propriété de **contenu** sur **Oui** dans la page **Propriétés** de chaque fichier. Ces fichiers sont copiés dans le **Répertoire de déploiement** spécifié sur la page du **débogueur Windows distant** . Vous pouvez également modifier le **type d’élément** pour **copier le fichier** et spécifier des propriétés supplémentaires ici si vous avez besoin de copier les fichiers dans un sous-dossier du **Répertoire de déploiement**.
 

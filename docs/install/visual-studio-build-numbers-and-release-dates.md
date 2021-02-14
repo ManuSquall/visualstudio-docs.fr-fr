@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 2/9/2021
+ms.date: 2/10/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: e79d14679d3e006a6e3d05fe03fbf98b18035317
-ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
+ms.openlocfilehash: 21c74207df3026922d54837882c496f5f13f6530
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089578"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335237"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +29,8 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.19 | Libérer | 10 février 2021 | 16.4.31009.304 |
+| 16.7.12 | Libérer | 10 février 2021 | 16.7.31009.191 |
 | 16.8.5 | Libérer | Le 9 février 2021 | 16.8.31005.135 |
 | 16.9.0 | Preview 4 | Le 9 février 2021 | 16.9.31004.235 | 
 | 16.7.11 | Libérer | Le 9 février 2021 | 16.7.30928.143 |
@@ -208,6 +210,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.33 | Libérer | 10 février 2021 | 15.9.28307.1401 |
 | 15.9.32 | Libérer | Le 9 février 2021 | 15.9.28307.1382 |
 | 15.9.31 | Libérer | 12 janvier 2021 | 15.9.28307.1342 |
 | 15.9.30 | Libérer | 8 décembre 2020 | 15.9.28307.1321 |
@@ -218,7 +221,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.9.25 | Libérer | 14 juillet 2020 | 15.9.28307.1216 |
 | 15.9.24 | Libérer | 9 juin 2020 | 15.9.28307.1177 |
 | 15.9.23 | Libérer | 12 mai 2020 | 15.9.28307.1146 |
-| 15.9.22 | Libérer | 14 avril 2020 | 15.9.28307.1093 |
+| 15.9.22 | Libérer | 14 avril 2020 | 15.9.28307.1093 |
 | 15.9.21 | Libérer | 10 mars 2020 | 15.9.28307.1064 |
 | 15.9.20 | Libérer | Février 11, 2020 | 15.9.28307.1033 |
 | 15.9.19 | Libérer | 14 janvier 2020 | 15.9.28307.1000 |
@@ -250,138 +253,138 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.9.2 | Libérer | 19 novembre 2018 | 15.9.28307.108 |
 | 15.9.1 | Libérer | 15 novembre 2018 | 15.9.28307.105 |
 | 15.9.0 | Libérer | 13 novembre 2018 | 15.9.28307.53 |
-| 15.9.0 Preview 6 | PRÉVERSION | 13 novembre 2018 | 15.9.28307.53 |
-| 15.9.0 Preview 5 | PRÉVERSION | 6 novembre 2018 | 15.9.28302.56 |
+| 15.9.0 Preview 6 | Preview | 13 novembre 2018 | 15.9.28307.53 |
+| 15.9.0 Preview 5 | Preview | 6 novembre 2018 | 15.9.28302.56 |
 | 15.8.9 | Libérer | 2 novembre 2018 | 15.8.28010.2050 |
 | 15.8.8 | Libérer | 24 octobre 2018 | 15.8.28010.2048 |
-| 15.9.0 Preview 4 | PRÉVERSION | 23 octobre 2018 | 15.9.28219.56 |
+| 15.9.0 Preview 4 | Preview | 23 octobre 2018 | 15.9.28219.56 |
 | 15.8.7 | Libérer | 10 octobre 2018 | 15.8.28010.2046 |
 | 15.0.19 | Libérer | 10 octobre 2018 | 15.0.26228.57 |
-| 15.9.0 Preview 3 | PRÉVERSION | 2 octobre 2018 | 15.9.28128.56 |
+| 15.9.0 Preview 3 | Preview | 2 octobre 2018 | 15.9.28128.56 |
 | 15.8.6 | Libérer | 2 octobre 2018 | 15.8.28010.2041 |
 | 15.8.5 | Libérer | 20 septembre 2018 | 15.8.28010.2036 |
-| 15.9.0 Préversion 2 | PRÉVERSION | 11 septembre 2018 | 15.9.28107.0 |
+| 15.9.0 Préversion 2 | Preview | 11 septembre 2018 | 15.9.28107.0 |
 | 15.8.4 | Libérer | 11 septembre 2018 | 15.8.28010.2026 |
 | 15.8.3 | Libérer | 6 septembre 2018 | 15.8.28010.2019 |
 | 15.8.2 | Libérer | 28 Août 2018 | 15.8.28010.2016 |
 | 15.0.18 | Libérer | 28 Août 2018 | 15.0.26228.52 |
-| 15.9.0 Préversion 1 | PRÉVERSION | 20 août 2018 | 15.9.28016.0 |
+| 15.9.0 Préversion 1 | Preview | 20 août 2018 | 15.9.28016.0 |
 | 15.8.1 | Libérer | 17 août 2018 | 15.8.28010.2003 |
 | 15.8.0 | Libérer | 14 août 2018 | 15.8.28010.0 |
 | 15.0.17 | Libérer | 14 août 2018 | 15.0.26228.49 |
 | 15.7.6 | Libérer | 2 août 2018 | 15.7.27703.2047 |
 | 15.0.16 | Libérer | 2 août 2018 | 15.0.26228.48 |
-| 15.8.0 Preview 5 | PRÉVERSION | 26 juillet 2018 | 15.8.27924.0 |
-| 15.8.0 Préversion 4 | PRÉVERSION | 10 juillet 2018 | 15.8.27906.1 |
+| 15.8.0 Preview 5 | Preview | 26 juillet 2018 | 15.8.27924.0 |
+| 15.8.0 Préversion 4 | Preview | 10 juillet 2018 | 15.8.27906.1 |
 | 15.7.5 | Libérer | 10 juillet 2018 | 15.7.27703.2042 |
 | 15.0.15 | Libérer | 10 juillet 2018 | 15.0.26228.43 |
-| 15.8.0 Préversion 3 | PRÉVERSION | 26 juin 2018 | 15.8.27825.0 |
+| 15.8.0 Préversion 3 | Preview | 26 juin 2018 | 15.8.27825.0 |
 | 15.7.4 | Libérer | 18 juin 2018 | 15.7.27703.2035 |
 | 15.7.3 | Libérer | 31 mai 2018 | 15.7.27703.2026 |
 | 15.0.14 | Libérer | 31 mai 2018 | 15.0.26228.37 |
-| 15.8.0 Préversion 2 | PRÉVERSION | 31 mai 2018 | 15.8.27729.1 |
+| 15.8.0 Préversion 2 | Preview | 31 mai 2018 | 15.8.27729.1 |
 | 15.7.2 | Libérer | 21 mai 2018 | 15.7.27703.2018 |
-| 15.8.0 Préversion 1 | PRÉVERSION | 8 mai 2018 | 15.8.27705.2000 |
+| 15.8.0 Préversion 1 | Preview | 8 mai 2018 | 15.8.27705.2000 |
 | 15.7.1 | Libérer | 8 mai 2018 | 15.7.27703.2000 |
-| 15.8.0 Préversion 1 | PRÉVERSION | 7 mai 2018 | 15.8.27705.0 |
+| 15.8.0 Préversion 1 | Preview | 7 mai 2018 | 15.8.27705.0 |
 | 15.7.0 | Libérer | 7 mai 2018 | 15.7.27703.1 |
-| 15.7.0 Préversion 6 | PRÉVERSION | 3 mai 2018 | 15.7.27701.1 |
-| 15.7.0 Préversion 5 | PRÉVERSION | 26 avril 2018 | 15.7.27625.0 |
+| 15.7.0 Préversion 6 | Preview | 3 mai 2018 | 15.7.27701.1 |
+| 15.7.0 Préversion 5 | Preview | 26 avril 2018 | 15.7.27625.0 |
 | 15.6.7 | Libérer | 26 avril 2018 | 15.6.27428.2043 |
 | 15.0.13 | Libérer | 26 avril 2018 | 15.0.26228.31 |
-| 15.7.0 Préversion 4 | PRÉVERSION | 18 avril 2018 | 15.7.27617.1 |
+| 15.7.0 Préversion 4 | Preview | 18 avril 2018 | 15.7.27617.1 |
 | 15.6.6 | Libérer | 10 avril 2018 | 15.6.27428.2037 |
 | 15.0.12 | Libérer | 10 avril 2018 | 15.0.26228.30 |
-| 15.7.0 Préversion 3 | PRÉVERSION | 9 avril 2018 | 15.7.27604.0 |
+| 15.7.0 Préversion 3 | Preview | 9 avril 2018 | 15.7.27604.0 |
 | 15.6.5 | Libérer | 4 avril 2018 | 15.6.27428.2027 |
 | 15.6.4 | Libérer | 22 mars 2018 | 15.6.27428.2015 |
-| 15.7.0 Préversion 2 | PRÉVERSION | 21 mars 2018 | 15.7.27520.0 |
+| 15.7.0 Préversion 2 | Preview | 21 mars 2018 | 15.7.27520.0 |
 | 15.6.3 | Libérer | 19 mars 2018 | 15.6.27428.2011 |
-| 15.7.0 Préversion 1 | PRÉVERSION | 13 mars 2018 | 15.7.27512.0 |
+| 15.7.0 Préversion 1 | Preview | 13 mars 2018 | 15.7.27512.0 |
 | 15.6.2 | Libérer | 13 mars 2018 | 15.6.27428.2005 |
 | 15.0.11 | Libérer | 13 mars 2018 | 15.0.26228.29 |
 | 15.6.1 | Libérer | 8 mars 2018 | 15.6.27428.2002 |
-| 15.6.1 Préversion 1 | PRÉVERSION | 8 mars 2018 | 15.6.27428.2002 |
+| 15.6.1 Préversion 1 | Preview | 8 mars 2018 | 15.6.27428.2002 |
 | 15.6.0 | Libérer | 5 mars 2018 | 15.6.27428.1 |
-| 15.6.0 Préversion 7 | PRÉVERSION | 2 mars 2018 | 15.6.27428.1 |
-| 15.6.0 Préversion 6 | PRÉVERSION | 23 février 2018 | 15.6.27421.1 |
+| 15.6.0 Préversion 7 | Preview | 2 mars 2018 | 15.6.27428.1 |
+| 15.6.0 Préversion 6 | Preview | 23 février 2018 | 15.6.27421.1 |
 | 15.0.10 | Libérer | 21 février 2018 | 15.0.26228.28 |
 | 15.5.7 | Libérer | 20 février 2018 | 15.0.27130.2036 |
-| 15.6.0 Préversion 5 | PRÉVERSION | 14 février 2018 | 15.6.27413.0 |
-| 15.6.0 Préversion 4 | PRÉVERSION | 7 février 2018 | 15.6.27406.0 |
+| 15.6.0 Préversion 5 | Preview | 14 février 2018 | 15.6.27413.0 |
+| 15.6.0 Préversion 4 | Preview | 7 février 2018 | 15.6.27406.0 |
 | 15.0.9 | Libérer | 2 février 2018 | 15.0.26228.23 |
 | 15.5.6 | Libérer | 29 janvier 2018 | 15.0.27130.2027 |
 | 15.5.5 | Libérer | 25 janvier 2018 | 15.0.27130.2026 |
-| 15.6.0 Préversion 3 | PRÉVERSION | 25 janvier 2018 | 15.6.27323.2 |
+| 15.6.0 Préversion 3 | Preview | 25 janvier 2018 | 15.6.27323.2 |
 | 15.5.4 | Libérer | 16 janvier 2018 | 15.0.27130.2024 |
-| 15.6.0 Préversion 2 | PRÉVERSION | 10 janvier 2018 | 15.6.27309.0 |
+| 15.6.0 Préversion 2 | Preview | 10 janvier 2018 | 15.6.27309.0 |
 | 15.5.3 | Libérer |  9 janvier 2018 | 15.0.27130.2020 |
 | 15.0.8 | Libérer |  9 janvier 2018 | 15.0.26228.21 |
 | 15.5.2 | Libérer | 14 décembre 2017 | 15.0.27130.2010 |
-| 15.6.0 Préversion 1 | PRÉVERSION | 14 décembre 2017 | 15.6.27205.2004 |
+| 15.6.0 Préversion 1 | Preview | 14 décembre 2017 | 15.6.27205.2004 |
 | 15.5.1 | Libérer | 7 décembre 2017 | 15.0.27130.2003 |
-| 15.6.0 Préversion 1 | PRÉVERSION | 7 décembre 2017 | 15.6.27205.0 |
+| 15.6.0 Préversion 1 | Preview | 7 décembre 2017 | 15.6.27205.0 |
 | 15.0.7 | Libérer | 6 décembre 2017 | 15.0.26228.18 |
 | 15.5.0 | Libérer | 4 décembre 2017 | 15.0.27130.0 |
-| 15.5.0 Préversion 5 | PRÉVERSION | 30 novembre 2017 | 15.0.27128.1 |
+| 15.5.0 Préversion 5 | Preview | 30 novembre 2017 | 15.0.27128.1 |
 | 15.4.5 | Libérer | 27 novembre 2017 | 15.0.27004.2010 |
-| 15.5.0 Préversion 4 | PRÉVERSION | 14 novembre 2017 | 15.0.27110.0 |
+| 15.5.0 Préversion 4 | Preview | 14 novembre 2017 | 15.0.27110.0 |
 | 15.4.4 | Libérer | 14 novembre 2017 | 15.0.27004.2009 |
 | 15.0.6 | Libérer | 14 novembre 2017 | 15.0.26228.17 |
 | 15.4.3 | Libérer | 8 novembre 2017 | 15.0.27004.2008 |
-| 15.5.0 Préversion 3 | PRÉVERSION | 6 novembre 2017 | 15.0.27102.0 |
+| 15.5.0 Préversion 3 | Preview | 6 novembre 2017 | 15.0.27102.0 |
 | 15.4.2 | Libérer | 31 octobre 2017 | 15.0.27004.2006 |
-| 15.5.0 Préversion 2 | PRÉVERSION | 23 octobre 2017 | 15.0.27019.1 |
+| 15.5.0 Préversion 2 | Preview | 23 octobre 2017 | 15.0.27019.1 |
 | 15.4.1 | Libérer | 19 octobre 2017 | 15.0.27004.2005 |
-| 15.5 préversion 1 | PRÉVERSION | 11 octobre 2017 | 15.0.27009.1 |
+| 15.5 préversion 1 | Preview | 11 octobre 2017 | 15.0.27009.1 |
 | 15.4.0 | Libérer | 9 octobre 2017 | 15.0.27004.2002 |
-| 15.4 préversion 6 | PRÉVERSION | 9 octobre 2017| 15.0.27004.20002 |
-| 15.4 préversion 5 | PRÉVERSION | 6 octobre 2017 | 15.0.27004.2000 |
-| 15.4 préversion 4 | PRÉVERSION | 2 octobre 2017 | 15.0.26929.2 |
-| 15.4 préversion 3 | PRÉVERSION | 21 septembre 2017 | 15.0.26923.00 |
+| 15.4 préversion 6 | Preview | 9 octobre 2017| 15.0.27004.20002 |
+| 15.4 préversion 5 | Preview | 6 octobre 2017 | 15.0.27004.2000 |
+| 15.4 préversion 4 | Preview | 2 octobre 2017 | 15.0.26929.2 |
+| 15.4 préversion 3 | Preview | 21 septembre 2017 | 15.0.26923.00 |
 | 15.3.5 | Libérer | 19 septembre 2017 | 15.0.26730.16 |
 | 15.0.5 | Libérer | 18 septembre 2017 | 15.0.26228.16 |
 | 15.3.4 | Libérer | 12 septembre 2017 | 15.0.26730.15 |
-| 15.4 préversion 2 | PRÉVERSION | 11 septembre 2017 | 15.0.26906.1 |
+| 15.4 préversion 2 | Preview | 11 septembre 2017 | 15.0.26906.1 |
 | 15.3.3| Libérer | 29 août 2017 | 15.0.26730.12 |
-| 15.4 préversion 1 | PRÉVERSION | 24 août 2017 | 15.0.26823.01 |
+| 15.4 préversion 1 | Preview | 24 août 2017 | 15.0.26823.01 |
 | 15.3.2 | Libérer | 22 août 2017 | 15.0.26730.10 |
 | 15.3.1 | Libérer | 18 août 2017 | 15.0.26730.08 |
-| 15.3.1 préversion 1 | PRÉVERSION | 18 août 2017 | 15.0.26730.08 |
+| 15.3.1 préversion 1 | Preview | 18 août 2017 | 15.0.26730.08 |
 | 15.3.1  | Libérer | 18 août 2017 | 15.0.26730.08 |
-| 15.4 préversion 1 | PRÉVERSION | 24 août 2017 | 15.0.26823.1 |
+| 15.4 préversion 1 | Preview | 24 août 2017 | 15.0.26823.1 |
 | 15.3.0 | Libérer | 14 août 2017 | 15.0.26730.3 |
-| 15.3 préversion 7.1 | PRÉVERSION | 11 août 2017 | 15.0.26730.3 |
-| 15.3 préversion 7 | PRÉVERSION | 1er août 2017 | 15.0.26730.0 |
-| 15.3 préversion 6 | PRÉVERSION | 26 juillet 2017 | 15.0.26724.1 |
-| 15.3 préversion 5 | PRÉVERSION | 24 juillet 2017 | 15.0.26720.02 |
+| 15.3 préversion 7.1 | Preview | 11 août 2017 | 15.0.26730.3 |
+| 15.3 préversion 7 | Preview | 1er août 2017 | 15.0.26730.0 |
+| 15.3 préversion 6 | Preview | 26 juillet 2017 | 15.0.26724.1 |
+| 15.3 préversion 5 | Preview | 24 juillet 2017 | 15.0.26720.02 |
 | 15.2.6  | Libérer | 17 juillet 2017 | 15.0.26430.16 |
-| 15.3 préversion 4 | PRÉVERSION | 12 juillet 2017 | 15.0.26711.1 |
+| 15.3 préversion 4 | Preview | 12 juillet 2017 | 15.0.26711.1 |
 | 15.2.5  | Libérer | 6 juillet 2017 | 15.0.26430.15 |
-| 15.3 préversion 3 | PRÉVERSION | 26 juin 2017 | 15.0.26621.2 |
+| 15.3 préversion 3 | Preview | 26 juin 2017 | 15.0.26621.2 |
 | 15.2.4  | Libérer | 21 juin 2017 | 15.0.26430.14 |
-| 15.3 préversion 2.1 | PRÉVERSION | 20 juin 2017 | 15.0.26608.5 |
+| 15.3 préversion 2.1 | Preview | 20 juin 2017 | 15.0.26608.5 |
 | 15.2.3  | Libérer | 9 juin 2017 | 15.0.26430.13 |
-| 15.3 préversion 2 | PRÉVERSION | 8 juin 2017 | 15.0.26606.0 |
+| 15.3 préversion 2 | Preview | 8 juin 2017 | 15.0.26606.0 |
 | 15.2.2  | Libérer | 30 mai 2017 | 15.0.26430.12 |
 | 15.0.4  | Libérer | 23 mai 2017 | 15.0.26228.13 |
 | 15.2.1  | Libérer | 12 mai 2017 | 15.0.26430.6 |
-| 15.3 préversion 1.1 | PRÉVERSION | 11 mai 2017 | 15.0.26510.0 |
-| 15.3 préversion 1 | PRÉVERSION | 10 mai 2017 | 15.0.26507.0 |
+| 15.3 préversion 1.1 | Preview | 11 mai 2017 | 15.0.26510.0 |
+| 15.3 préversion 1 | Preview | 10 mai 2017 | 15.0.26507.0 |
 | 15.2.0 | Libérer | 10 mai 2017 | 15.0.26430.4 |
-| 15.2 préversion 4 | PRÉVERSION | 3 mai 2017 | 15.0.26430.1 |
-| 15.2 préversion 3 | PRÉVERSION | 26 avril 2017 | 15.0.26424.2 |
-| 15.2 préversion 2 | PRÉVERSION | 20 avril 2017 | 15.0.26419.1 |
-| 15.2 préversion 1 | PRÉVERSION | 17 avril 2017 | 15.0.26412.1 |
+| 15.2 préversion 4 | Preview | 3 mai 2017 | 15.0.26430.1 |
+| 15.2 préversion 3 | Preview | 26 avril 2017 | 15.0.26424.2 |
+| 15.2 préversion 2 | Preview | 20 avril 2017 | 15.0.26419.1 |
+| 15.2 préversion 1 | Preview | 17 avril 2017 | 15.0.26412.1 |
 | 15.1.2  | Libérer | 17 avril 2017 | 15.0.26403.7 |
 | 15.1.1 | Libérer | 10 avril 2017 | 15.0.26403.3 |
 | 15.1.0 | Libérer | 5 avril 2017 | 15.0.26403.0 |
 | 15.0.3  | Libérer | 31 mars 2017 | 15.0.26228.12 |
 | 15.0.2 | Libérer | 28 mars 2017 | 15.0.26228.10 |
-| 15.1 préversion 3 | PRÉVERSION | 27 mars 2017 | 15.0.26323.1 |
-| 15.1 préversion 2 | PRÉVERSION | 16 mars 2017 | 15.0.26315.0 |
+| 15.1 préversion 3 | Preview | 27 mars 2017 | 15.0.26323.1 |
+| 15.1 préversion 2 | Preview | 16 mars 2017 | 15.0.26315.0 |
 | 15.0.1  | Libérer | 14 mars 2017 | 15.0.26228.9 |
-| 15.1 préversion 1 | PRÉVERSION | 7 mars 2017 | 15.0.26304.0 |
+| 15.1 préversion 1 | Preview | 7 mars 2017 | 15.0.26304.0 |
 | 15.0.0 | Libérer | 7 mars 2017 | 15.0.26228.4 |
 
 > [!NOTE]
@@ -391,7 +394,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 * [Feuille de route Visual Studio](/visualstudio/productinfo/vs-roadmap)
 * [Fréquence des versions de Visual Studio](/visualstudio/productinfo/release-rhythm)
