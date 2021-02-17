@@ -2,19 +2,19 @@
 title: Écrire des tests unitaires pour des DLL C++
 description: Découvrez les différentes façons de tester le code de la DLL, selon que la DLL exporte les fonctions que vous voulez tester.
 ms.custom: SEO-VS-2020
-ms.date: 05/01/2019
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 06ad7bd437fca98c7be92a1e12ce31234d876b28
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328624"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563422"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
 
@@ -28,13 +28,13 @@ Passez à la procédure [Pour référencer des fonctions exportées depuis le pr
 
 Passez à la procédure [Pour lier les tests aux fichiers objets ou bibliothèques](#objectRef).
 
-**Les tests unitaires appellent des fonctions non-membres qui ne sont pas exportées depuis la DLL, et la DLL peut être générée sous forme de bibliothèque statique :** modifiez le projet DLL pour qu’il soit compilé en un fichier *.lib*. Ajoutez un projet de test distinct qui référence le projet testé.
+**Les tests unitaires appellent des fonctions non-membres qui ne sont pas exportées à partir de la dll, et la dll peut être générée en tant que bibliothèque statique :** Modifiez le projet DLL afin qu’il soit compilé en un fichier *. lib* . Ajoutez un projet de test distinct qui référence le projet testé.
 
 Cette approche présente l’avantage de permettre à vos tests d’utiliser des membres non exportés, mais de conserver les tests dans un projet distinct.
 
 Passez à la procédure [Pour changer la DLL en une bibliothèque statique](#staticLink).
 
-**Les tests unitaires doivent appeler des fonctions non-membres qui ne sont pas exportées, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (DLL) :** ajoutez des tests unitaires dans le même projet que le code du produit.
+**Les tests unitaires doivent appeler des fonctions non-membres qui ne sont pas exportées, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (dll) :** Ajoutez des tests unitaires dans le même projet que le code du produit.
 
 Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](#sameProject).
 
@@ -42,7 +42,7 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
 ### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a> Pour changer la DLL en une bibliothèque statique
 
-- Si vos tests doivent utiliser des membres qui ne sont pas exportés par le projet DLL et que le projet de test est généré sous forme d’une bibliothèque dynamique, envisagez de le convertir en bibliothèque statique.
+- Si vos tests doivent utiliser des membres qui ne sont pas exportés par le projet DLL et que le projet testé est généré sous la forme d’une bibliothèque dynamique, envisagez de le convertir en bibliothèque statique.
 
   1. Dans **Explorateur de solutions**, dans le menu contextuel du projet testé, choisissez **Propriétés**. La fenêtre **Propriétés** du projet s’ouvre.
 
@@ -86,7 +86,7 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
 ### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> Pour lier les tests aux fichiers objets ou bibliothèques
 
-- Si la DLL n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter le fichier de sortie *.obj* ou *.lib* aux dépendances du projet de test.
+- Si la DLL n’exporte pas les fonctions que vous souhaitez tester, vous pouvez ajouter le fichier de sortie *. obj* ou *. lib* aux dépendances du projet de test.
 
   1. Créez un projet de test unitaire natif.
 
@@ -102,17 +102,17 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
       ::: moniker-end
 
-  2. Dans **Explorateur de solutions**, dans le menu contextuel du projet de test, choisissez **Propriétés**.
+  1. Dans **Explorateur de solutions**, dans le menu contextuel du projet de test, choisissez **Propriétés**.
 
-  3. Choisissez **Propriétés de configuration** de l'  >  **éditeur de liens**  >  **Input**  >  **dépendances supplémentaires**.
+  1. Choisissez **Propriétés de configuration** de l'  >  **éditeur de liens**  >    >  **dépendances supplémentaires**.
 
-       Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les chemins d’accès complets.
+       Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les noms de chemins d’accès complets.
 
-  4. Choisissez **Propriétés de configuration**  >  **éditeur de liens**  >  **général**  >  **répertoires de bibliothèque supplémentaires**.
+  1. Choisissez **Propriétés de configuration**  >  **éditeur de liens**  >  **général**  >  **répertoires de bibliothèque supplémentaires**.
 
        Choisissez **Modifier**, puis ajoutez le chemin d’accès au répertoire des fichiers **.obj** ou **.lib**. Le chemin d’accès se trouve généralement dans le dossier de build du projet testé.
 
-  5. Choisissez **Propriétés de configuration**  >  **Répertoires VC + +** répertoires  >  **include**.
+  1. Choisissez **Propriétés de configuration**  >  **Répertoires VC + +** répertoires  >  **include**.
 
        Choisissez **Modifier**, puis ajoutez le répertoire d’en-tête du projet testé.
 
@@ -124,18 +124,20 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
    1. Dans **l’Explorateur de solutions**, dans le menu contextuel du projet testé, choisissez **Propriétés**. La fenêtre **Propriétés** du projet s’ouvre.
 
-   2. Choisissez **Propriétés de configuration**  >  **Répertoires VC + +**.
+   1. Choisissez **Propriétés de configuration**  >  **Répertoires VC + +**.
 
-   3. Modifiez les répertoires Include et de bibliothèques :
+   1. Modifiez les répertoires Include et de bibliothèques :
 
        |Répertoire|Propriété|
        |-|-|
-       |**Répertoires Include** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-       |**Répertoires de bibliothèques** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
+       |**Répertoires Include** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+       |**Répertoires de bibliothèques** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
-2. Ajoutez un fichier de test unitaire C++ :
+1. Ajoutez un fichier de test unitaire C++ :
 
-   - Dans **l’Explorateur de solutions**, dans le menu contextuel du projet, choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
+   1. Cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** et choisissez **Ajouter**  >  **un nouvel élément**.
+
+   1. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez  **fichier C++ (. cpp)**, donnez-lui un nom approprié, puis choisissez **Ajouter**.
 
    Passez à [Écrire les tests unitaires](#addTests).
 
@@ -143,7 +145,7 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
 1. Dans chaque fichier de code de test unitaire, ajoutez une instruction `#include` pour les en-têtes du projet testé.
 
-2. Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Par exemple :
+1. Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Par exemple :
 
     ```cpp
     #include "stdafx.h"
@@ -167,9 +169,9 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
 1. Dans le menu **Test**, choisissez **Fenêtres** > **Explorateur de tests**.
 
-1. Si tous vos tests ne sont pas visibles dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
+1. Si tous vos tests ne sont pas visibles dans la fenêtre, générez le projet de test : cliquez avec le bouton droit sur son nœud dans **Explorateur de solutions** et choisissez **générer** ou **régénérer**.
 
-1. Dans l' **Explorateur de tests**, choisissez **exécuter tout** ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
+1. Dans l' **Explorateur de tests**, choisissez **exécuter tout** ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour d’autres options, par exemple, pour l’exécuter en mode débogage avec des points d’arrêt activés.
 
 ## <a name="see-also"></a>Voir aussi
 

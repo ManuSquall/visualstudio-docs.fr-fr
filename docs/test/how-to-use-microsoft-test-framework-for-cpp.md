@@ -1,19 +1,19 @@
 ---
 title: Utiliser le framework de tests unitaires Microsoft pour C++
 description: Utilisez l’infrastructure de tests unitaires Microsoft pour C++ pour créer des tests unitaires pour votre code C++.
-ms.date: 01/08/2020
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76c6ac83956cd1e6514ff958278d0b4cbcf0d2f
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287114"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563434"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -33,7 +33,7 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
    1. Dans la boîte de dialogue pages de propriétés, sélectionnez **Propriétés de configuration**  >  **Répertoires VC + +**.
 
-   1. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Edit>** . Ajoutez ces chemins :
+   1. Sélectionnez la flèche vers le bas dans les lignes suivantes et choisissez **\<Edit>** . Ajoutez ces chemins :
 
       | Répertoire | Propriété |
       |-| - |
@@ -42,23 +42,25 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
 1. Ajoutez un fichier de test unitaire C++ :
 
-   - Cliquez avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Fichier C++ (.cpp)**.
+   1. Cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** et choisissez **Ajouter**  >  **un nouvel élément**.
+
+   1. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez  **fichier C++ (. cpp)**, donnez-lui un nom approprié, puis choisissez **Ajouter**.
 
 ## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a> Pour lier les tests aux fichiers objets ou bibliothèques
 
-Si le code testé n’exporte pas les fonctions que vous souhaitez tester, vous pouvez ajouter le fichier de sortie **. obj** ou **. lib** aux dépendances du projet de test. Modifiez les propriétés du projet de test pour inclure les en-têtes et les fichiers d’objets ou de bibliothèque requis pour le test unitaire.
+Si le code testé n’exporte pas les fonctions que vous souhaitez tester, vous pouvez ajouter le fichier de sortie *. obj* ou *. lib* aux dépendances du projet de test. Modifiez les propriétés du projet de test pour inclure les en-têtes et les fichiers d’objets ou de bibliothèque requis pour le test unitaire.
 
 1. Dans l’Explorateur de solutions, dans le menu contextuel du projet de test, choisissez **Propriétés**. La fenêtre des propriétés du projet s'ouvre.
 
-1. Sélectionnez la page d’entrée de l’éditeur de liens **Propriétés de configuration**  >  **Linker**  >  **Input** , puis sélectionnez **dépendances supplémentaires**.
+1. Sélectionnez la page d’entrée de l’éditeur de liens **Propriétés de configuration**  >    >   , puis sélectionnez **dépendances supplémentaires**.
 
-   Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les noms de chemins d’accès complets.
+   Choisissez **Modifier**, puis ajoutez les noms des fichiers *.obj* ou *.lib*. N’utilisez pas les noms de chemins d’accès complets.
 
 1. Sélectionnez la page **Propriétés de configuration**  >  **éditeur de liens**  >  **général** , puis sélectionnez **autres répertoires de bibliothèque**.
 
-   Choisissez **Modifier**, puis ajoutez le chemin d’accès au répertoire des fichiers **.obj** ou **.lib**. Le chemin d’accès se trouve généralement dans le dossier de build du projet testé.
+   Choisissez **Modifier**, puis ajoutez le chemin d’accès au répertoire des fichiers *.obj* ou *.lib*. Le chemin d’accès se trouve généralement dans le dossier de build du projet testé.
 
-1. Sélectionnez la page **Propriétés de configuration**des  >  **Répertoires VC + +** , puis sélectionnez **répertoires Include**.
+1. Sélectionnez la page **Propriétés de configuration** des  >  **Répertoires VC + +** , puis sélectionnez **répertoires Include**.
 
    Choisissez **Modifier**, puis ajoutez le répertoire d’en-tête du projet testé.
 
@@ -76,7 +78,7 @@ Utilisez les méthodes statiques de la classe [Assert](microsoft-visualstudio-te
 
 1. Si tous vos tests ne sont pas visibles dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **Explorateur de solutions** et en choisissant **générer** ou **régénérer**.
 
-1. Dans l' **Explorateur de tests**, choisissez **exécuter tout**ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
+1. Dans l' **Explorateur de tests**, choisissez **exécuter tout** ou sélectionnez les tests spécifiques que vous souhaitez exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
 
 1. Dans la **fenêtre Sortie** choisissez **tests** dans la liste déroulante pour afficher les messages écrits par la `Logger` classe :
 
@@ -108,7 +110,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>Macros d'attribut de fonctionnalités C++
 
-Les caractéristiques prédéfinies suivantes se trouvent dans `CppUnitTest.h`. Pour plus d’informations, consultez [la référence sur l’API de l’infrastructure de tests unitaires Microsoft pour C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+Les caractéristiques prédéfinies suivantes sont disponibles dans *`CppUnitTest.h`* . Pour plus d’informations, consultez [la référence sur l’API de l’infrastructure de tests unitaires Microsoft pour C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Description|
 |-|-----------------|
