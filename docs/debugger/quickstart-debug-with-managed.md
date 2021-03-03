@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840884"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683012"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code C# ou Visual Basic avec le débogueur Visual Studio
 
@@ -28,13 +28,21 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console (.NET Core)**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Si la fenêtre de démarrage n’est pas ouverte , choisissez  >  **fenêtre démarrage** de fichier. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
+
+    Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes.
+
+    Après avoir appliqué les filtres de langue et de plateforme, choisissez le modèle **application console** pour .net Core, puis choisissez **suivant**.
+
+    Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
+
+    Si vous ne voyez pas le modèle de projet d' **application console** pour .net Core, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **.NET Core** puis, dans le volet central, choisissez **Application console (.NET Core)**. Tapez ensuite un nom tel que **MyDbgApp** et cliquez sur **OK**.
-    ::: moniker-end
 
-     Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** et **.NET Core**, puis choisissez **Modifier**.
+    Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
+    ::: moniker-end
 
     Visual Studio crée le projet.
 
@@ -155,17 +163,17 @@ L’application poursuit son exécution en appelant `doWork`, puis s’arrête �
 
 **F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, voir [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Inspecter des variables dans une bulle d’informations (datatip)
+## <a name="inspect-variables-in-a-data-tip"></a>Inspecter des variables dans une bulle d’informations
 
-1. Dans la ligne de code active (indiquée par le pointeur d’exécution jaune), placez le curseur de la souris sur l’objet `c1` pour afficher un datatip.
+1. Dans la ligne de code active (marquée par le pointeur d’exécution jaune), pointez sur l' `c1` objet à l’aide de la souris pour afficher une bulle d’informations.
 
-    ![Afficher un datatip](../debugger/media/dbg-qs-data-tip-csharp.png "Afficher un datatip")
+    ![Afficher une bulle d’informations](../debugger/media/dbg-qs-data-tip-csharp.png "Afficher une bulle d’informations")
 
-    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.
+    La bulle d’informations affiche la valeur actuelle de la `c1` variable et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel.
 
-2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c1`.
+2. Développez la bulle d’informations pour examiner les valeurs de propriété actuelles de l' `c1` objet.
 
-3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c1` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé vers un emplacement approprié.)
+3. Si vous souhaitez épingler la bulle de données afin que vous puissiez continuer à voir la valeur de `c1` pendant que vous exécutez le code, cliquez sur l’icône représentant un petit pin. (Vous pouvez déplacer la bulle de données épinglées vers un emplacement pratique.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Modifier le code et continuer le débogage
 

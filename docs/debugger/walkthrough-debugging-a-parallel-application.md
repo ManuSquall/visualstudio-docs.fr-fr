@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8f739ab99f060005f7bbfebc400c424c50ba7d5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884284"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684133"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : débogage d’une application parallèle dans Visual Studio (C#, Visual Basic, C++)
 
@@ -70,14 +70,16 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
-   Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#**, **C++** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme. 
+   Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#**, **C++** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme.
 
-   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou, pour C++, le modèle **application console** , puis choisissez **suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console** pour .net Core ou C++, puis choisissez **suivant**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
+   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez un nom ou utilisez le nom par défaut dans la zone **nom du projet** . Ensuite, choisissez **créer**.
+   Dans la fenêtre **configurer votre nouveau projet** , tapez un nom ou utilisez le nom par défaut dans la zone **nom du projet** . Ensuite, choisissez **suivant** ou **créer**, quelle que soit l’option disponible.
+
+   Pour .NET Core, choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"

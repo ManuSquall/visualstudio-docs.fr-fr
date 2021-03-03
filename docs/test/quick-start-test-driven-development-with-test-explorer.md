@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943729"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683950"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procédure pas à pas : développement piloté par les tests à l’aide de l’Explorateur de tests
 
@@ -26,7 +26,11 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
 
 1. Créez un projet de **bibliothèque de classes (.NET Standard)** C#. Ce projet contiendra le code que nous voulons tester. Nommez le projet **MyMath**.
 
-2. Dans la même solution, ajoutez un nouveau projet **Projet de test MSTest (.NET Core)**. Nommez le projet **MathTests**.
+2. Dans la même solution, ajoutez un nouveau projet de test MSTest.
+
+   À compter de Visual Studio 2019 version 16,9, le nom du modèle de projet MSTest a été remplacé par le projet de **test MSTest (.net Core)** par le **projet de test unitaire**.
+
+   Nommez le projet **MathTests**.
 
    ![Nouveaux codes et projets de test](../test/media/test-driven-development-ide.png)
 

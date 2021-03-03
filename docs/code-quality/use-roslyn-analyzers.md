@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 974de3094c7384f8170a42892a17f0eb49162094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 956e63384619a82b7f0abb7dd3771ed2db9cba01
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867787"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684376"
 ---
 # <a name="overview"></a>Vue d’ensemble
 
@@ -42,11 +42,11 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Informations | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
 | Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
@@ -419,3 +419,4 @@ Dans un projet .NET Core, si vous ajoutez une référence à un projet qui a des
 - [Soumettre un bogue de l’analyseur de code](https://github.com/dotnet/roslyn-analyzers/issues)
 - [Utiliser des ensembles de règles](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
 - [Supprimer les avertissements d’analyse du code](../code-quality/in-source-suppression-overview.md)
+- [Options de configuration pour l’analyse du code (.NET)](/dotnet/fundamentals/code-analysis/configuration-options)

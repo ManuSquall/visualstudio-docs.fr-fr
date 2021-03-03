@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fd3d8e17d90cde50f583dfc0393debf460de7f6
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904953"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684080"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniques et outils de débogage pour vous aider à écrire du code plus performant
 
@@ -42,22 +42,26 @@ Le code suivant présente des bogues que vous pouvez corriger à l’aide de l�
 
 Pour créer l’application :
 
-1. Vous devez avoir installé Visual Studio et le **développement .net Core multiplateforme** ou la charge de travail **développement .net Desktop** , selon le type d’application que vous souhaitez créer.
+1. Vous devez avoir installé Visual Studio et la charge de travail **développement multiplateforme .net Core** installée.
 
     Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/) pour l’installer gratuitement.
 
-    Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, cliquez sur **Outils**  >  **obtenir des outils et des fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail développement **multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
+    Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, cliquez sur **Outils**  >  **obtenir des outils et des fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
 1. Ouvrez Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. Tapez **console** dans la zone de recherche, puis choisissez **application console (.net Core)** ou **application console (.NET Framework)**. Choisissez **Suivant**. Tapez un nom de projet comme **Console_Parse_JSON** , puis cliquez sur **créer**.
+    Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. Tapez **console** dans la zone de recherche, puis choisissez **application console** pour .net core. Choisissez **Suivant**. Tapez un nom de projet comme **Console_Parse_JSON** , puis cliquez sur **suivant** ou sur **créer**, quelle que soit l’option disponible.
+
+    Pour .NET Core, choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
+
+    Si vous ne voyez pas le modèle de projet **application console** pour .net Core, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités** pour ouvrir la Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , sous **Visual C#**, choisissez **application console**, puis dans le volet central, choisissez **application console (.net Core)** ou **application console (.NET Framework)**. Tapez un nom comme **Console_Parse_JSON** , puis cliquez sur **OK**.
-    ::: moniker-end
+    Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , sous **Visual C#**, choisissez **application console**, puis dans le volet central, choisissez **application console (.net Core)**. Tapez un nom comme **Console_Parse_JSON** , puis cliquez sur **OK**.
 
-    Si vous ne voyez pas le modèle de projet **application console (.net Core)** ou **application console (.NET Framework)** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités** pour ouvrir le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
+    Si vous ne voyez pas le modèle de projet **application console (.net Core)** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités** pour ouvrir la Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
+    ::: moniker-end
 
     Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
 

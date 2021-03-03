@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 411fbd757eb063202136eba5c1e5fbec27f56523
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960427"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683633"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio
 
@@ -69,18 +69,18 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 1. Créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Si la fenêtre de démarrage n’est pas ouverte , choisissez  >  **fenêtre démarrage** de fichier. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. Dans la liste déroulante langue, choisissez **C#**. Dans la zone de recherche, tapez **ASP.net**, puis choisissez **ASP.net Core application Web**. Choisissez **Suivant**.
+    Dans Visual Studio 2019, choisissez **créer un nouveau projet** dans la fenêtre démarrer. Si la fenêtre de démarrage n’est pas ouverte , choisissez  >  **fenêtre démarrage** de fichier. Tapez **application Web**, choisissez **C#** comme langage, puis **ASP.net Core application Web (Model-View-Controller)**, puis choisissez **suivant**. Dans l’écran suivant, nommez le projet, puis choisissez **suivant**.
 
-    Tapez un nom pour le projet et choisissez **créer**.
+    Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , développez **Visual C#**, puis choisissez **.net Core**. Dans le volet central, choisissez **ASP.net Core application Web-C#**, puis cliquez sur **OK**.
+
+    Dans la boîte de dialogue qui s’affiche, sélectionnez **application Web (Model-View-Controller)** dans la boîte de dialogue, puis choisissez **créer** (ou **OK**).
+
+    ![Choisir le modèle MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
     ::: moniker-end
     Si vous ne voyez pas le modèle de projet d' **application web ASP.net Core** , vous devez ajouter la charge de travail **ASP.net et développement Web** . Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
-
-1. Dans la boîte de dialogue qui s’affiche, sélectionnez **application Web (Model-View-Controller)** dans la boîte de dialogue, puis choisissez **créer** (ou **OK**).
-
-   ![Choisir le modèle MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
 
     Visual Studio crée la solution et ouvre votre projet dans le volet droit.
 
@@ -191,7 +191,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 
    Les fichiers de mappage source sont requis pour le débogage.
 
-## <a name="run-the-application"></a>Exécution de l'application
+## <a name="run-the-application"></a>Exécuter l’application
 
 1. Appuyez sur **F5** (**Déboguer** > **Démarrer le débogage**) pour exécuter l’application.
 

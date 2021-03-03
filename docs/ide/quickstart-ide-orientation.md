@@ -3,19 +3,19 @@ title: 'Démarrage rapide : visite guidée de l’IDE de Visual Studio'
 description: Découvrez quelques-unes des fenêtres, des menus et d’autres fonctionnalités de l’interface utilisateur de l’environnement de développement intégré (IDE) de Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
-ms.date: 02/21/2019
+ms.date: 03/02/2021
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945498"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683958"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
@@ -63,7 +63,7 @@ L’option **Continuer sans code** ouvre simplement l’environnement de dévelo
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons créer un projet.
 
@@ -83,15 +83,25 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
 1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
-   Une boîte de dialogue indiquant **Créer un projet** s’affiche. Ici, vous pouvez rechercher, filtrer et sélectionner un modèle de projet. Elle montre également la liste des modèles de projet récemment utilisés.
+    :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Capture d’écran de la fenêtre créer un nouveau projet dans Visual Studio 2019.":::
 
-1. Dans la zone de recherche située en haut, tapez **console** pour filtrer la liste des types de projets à ceux dont le nom contient le mot « console ». Affinez davantage les résultats de la recherche en sélectionnant **C#** (ou un autre langage de votre choix) dans le sélecteur **Langage**.
+   La fenêtre **Créer un projet** s’affiche et présente plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base requis pour un type de projet donné.
 
-   ![Boîte de dialogue Nouveau projet dans Visual Studio 2019](media/vs-2019/create-a-new-project.png)
+   Ici, vous pouvez rechercher, filtrer et sélectionner un modèle de projet. Elle montre également la liste des modèles de projet récemment utilisés.
 
-1. Si vous avez sélectionné le langage C#, Visual Basic ou F#, sélectionnez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**. (Si vous avez sélectionné un autre langage, choisissez n’importe quel modèle. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
+1. Dans la zone de recherche située en haut, tapez **console** pour filtrer la liste des types de projets à ceux dont le nom contient le mot « console ». Affinez les résultats de la recherche en choisissant **C#** (ou une autre langue de votre choix) dans la liste déroulante **tous les langages** .
 
-1. Dans la page **Configurer votre nouveau projet**, acceptez le nom et l’emplacement de projet par défaut, puis choisissez **Créer**.
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Capture d’écran de la fenêtre créer un nouveau projet dans Visual Studio 2019, où vous sélectionnez le modèle souhaité.":::
+
+1. Si vous avez sélectionné C#, Visual Basic ou F # comme langage, sélectionnez le modèle **application console** , puis choisissez **suivant**. (Si vous avez sélectionné un autre langage, choisissez n’importe quel modèle. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
+
+1. Dans la fenêtre **configurer votre nouveau projet** , acceptez le nom et l’emplacement du projet par défaut, puis choisissez **suivant**.
+
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Capture d’écran de la fenêtre « Configurer un nouveau projet » dans Visual Studio 2019, où vous entrez le nom du projet.":::
+
+1. Dans la fenêtre **informations supplémentaires** , vérifiez que **.net Core 3,1** s’affiche dans le menu déroulant **Framework cible** , puis cliquez sur **créer**.
+
+    :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Capture d’écran de la fenêtre « informations supplémentaires » dans Visual Studio 2019, où vous sélectionnez la version de .NET Core Framework que vous souhaitez.":::
 
 ::: moniker-end
 

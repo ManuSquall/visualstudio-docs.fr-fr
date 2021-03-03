@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741c22e8116d47a51a75369b5b114725c1f64bf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eac51637b3f3b732f1293337080ef851f34c459
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909267"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682757"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
 
@@ -28,7 +28,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 
 Bien que l’application de démonstration soit écrite en C#, la plupart des fonctionnalités sont applicables à C++, Visual Basic, F#, Python, JavaScript et d’autres langages pris en charge par Visual Studio (F# ne prend pas en charge Modifier et continuer. F# et JavaScript ne prennent pas en charge la fenêtre **Automatique**). Les captures d’écran sont en C#.
 
-Ce didacticiel présente les procédures suivantes :
+Dans ce tutoriel, vous allez :
 
 > [!div class="checklist"]
 > * Démarrer le débogueur et atteindre des points d’arrêt
@@ -63,7 +63,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, vous allez créer un projet d’application console .NET Core. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -91,17 +91,19 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez le modèle **application console** pour .net Core, puis choisissez **suivant**.
 
-   ![Choisir le modèle C# pour l’application console (.NET Core)](../csharp/media/vs-2019/get-started-create-console-project.png)
+   ![Choisir le modèle C# pour l’application console](../csharp/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
+   > Si vous ne voyez pas le modèle d' **application console** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
 
-1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *GetStartedDebugging* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
+1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *GetStartedDebugging* dans la zone **nom du projet** . Ensuite, choisissez **suivant**.
+
+1. Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
 
    Visual Studio ouvre votre nouveau projet.
-   
+
 ::: moniker-end
 
 ## <a name="create-the-application"></a>Créer l’application

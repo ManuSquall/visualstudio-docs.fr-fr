@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872519"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683036"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Préparation du débogage : projets console (C#, C++, Visual Basic, F #)
 
-La préparation du débogage d’un projet de console est semblable à la préparation du débogage d’un projet Windows, avec des considérations supplémentaires telles que la définition des arguments de ligne de commande et la façon de suspendre l’application pour le débogage. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : applications Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
+La préparation du débogage d’un projet de console est semblable à la préparation du débogage d’un projet Windows, avec des considérations supplémentaires telles que la définition des arguments de ligne de commande et la façon de suspendre l’application pour le débogage. Pour plus d’informations, consultez [préparation du débogage pour les applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
 
 - Application console C#, Visual Basic et F #
 

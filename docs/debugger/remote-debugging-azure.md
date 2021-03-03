@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3ce27c692e96423bbec89914caeab3afd3e62ba4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947917"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684159"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de débogage à distance sur IIS dans Azure dans Visual Studio
 
@@ -58,10 +58,12 @@ Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en 
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio
 
-1. Créez une application de ASP.NET Core.
+1. Créez une application web ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **ASP.net**, choisissez **modèles**, puis **créer une application Web de ASP.net Core**. Dans la boîte de dialogue qui s’affiche, nommez le projet **MyASPApp**, puis choisissez **créer**. Ensuite, choisissez **application Web (Model-View-Controller)**, puis cliquez sur **créer**.
+    Dans Visual Studio 2019, choisissez **créer un nouveau projet** dans la fenêtre démarrer. Si la fenêtre de démarrage n’est pas ouverte , choisissez  >  **fenêtre démarrage** de fichier. Tapez **application Web**, choisissez **C#** comme langage, puis **ASP.net Core application Web (Model-View-Controller)**, puis choisissez **suivant**. Dans l’écran suivant, nommez le projet **MyASPApp**, puis choisissez **suivant**.
+
+    Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans Visual Studio 2017, choisissez **fichier > nouveau > projet**, puis sélectionnez **Visual C# > Web > ASP.net Core application Web**. Dans la section modèles de ASP.NET Core, sélectionnez **application Web (Model-View-Controller)**. Assurez-vous que ASP.NET Core 2,1 est sélectionné, et que l’option **activer la prise en charge** de l’ancrage n’est pas sélectionnée et que **l’authentification** est définie sur **aucune authentification**. Nommez le projet **MyASPApp**.

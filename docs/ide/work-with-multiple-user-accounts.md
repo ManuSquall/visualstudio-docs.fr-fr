@@ -2,19 +2,19 @@
 title: Utiliser plusieurs comptes d’utilisateur
 description: Découvrez comment ajouter tous vos comptes Microsoft à Visual Studio afin de pouvoir accéder aux ressources à partir de n’importe quel compte sans avoir à vous y connecter séparément.
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960453"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683794"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
@@ -65,7 +65,7 @@ Pour voir comment cela fonctionne, créez un projet **Application web ASP.NET Co
 
 ::: moniker range=">=vs-2019"
 
-Pour voir comment cela fonctionne, créez un projet **Application web ASP.NET Core**. Dans la boîte de dialogue **Créer une application web ASP.NET Core**, choisissez le modèle **Application web**, puis **Modifier** sous **Authentification**.
+Pour voir cela en action, créez un projet d' **application Web ASP.net Core** . Sur la page **créer une application web ASP.net Core** , choisissez **ASP.net Core 3,1** dans la liste déroulante, choisissez le modèle **application Web** , puis choisissez **modifier** sous **authentification**.
 
 ::: moniker-end
 

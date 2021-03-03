@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc5232d616466ec5aa0916d5d1ad9e7bd5b1247c
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870517"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684115"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Prise en main du débogage des applications multithread (C#, Visual Basic, C++)
 
@@ -48,12 +48,14 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
 
    Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#**, **C++** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme. 
 
-   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou, pour C++, le modèle **application console** , puis choisissez **suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez le modèle **application console** pour .net Core ou C++, puis choisissez **suivant**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
+   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
+   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Ensuite, choisissez **suivant** ou **créer**, quelle que soit l’option disponible.
+
+   Pour un projet .NET Core, choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -63,7 +65,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
    - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)**.
    - Pour une application C++, sous **Visual C++**, choisissez **Bureau Windows**,, puis **application console Windows**.
 
-   Si vous ne voyez pas l' **application console (.net Core)** ou, pour C++, le modèle de projet d' **application console** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
+   Si vous ne voyez pas l' **application console (.NET Framework)** pour, pour C++, le modèle de projet d' **application console** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
    Ensuite, tapez un nom tel que *MyThreadWalkthroughApp* , puis cliquez sur **OK**.
 

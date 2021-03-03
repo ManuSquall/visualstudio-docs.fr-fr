@@ -1,17 +1,17 @@
 ---
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925004"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750189"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -85,7 +85,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Refactorisation dans Visual Studio](../media/refactoring-menu.png)
 
-- [IntelliSense](../../ide/using-intellisense.md)
+- [Semi](../../ide/using-intellisense.md)
 
    IntelliSense est un terme désignant un ensemble de fonctionnalités qui affichent des informations relatives au code directement dans l’éditeur et qui, dans certains cas, écrivent de petits bouts de code à votre place. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher ailleurs des informations sur les types. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [C# IntelliSense](../../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../../ide/javascript-intellisense.md) et [Visual Basic IntelliSense](../../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre comment IntelliSense affiche une liste des membres d’un type :
 
@@ -237,17 +237,23 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Choisissez **créer un nouveau projet**.
 
-   ![Fenêtre de démarrage de Visual Studio - Créer un projet](../media/vs-2019/start-window-create-new-project.png)
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Capture d’écran de la fenêtre créer un nouveau projet dans Visual Studio 2019.":::
 
-   La fenêtre **Créer un projet** s’affiche et présente plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
+   La fenêtre **Créer un projet** s’affiche et présente plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base requis pour un type de projet donné.
 
-1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats de modèles en choisissant **C#** dans la liste déroulante **Langage**. Sélectionnez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats du modèle en choisissant **C#** dans la liste déroulante **tous les langages** , **Windows** dans la liste **toutes les plateformes** et la **console** dans la liste tous les **types de projets** .
 
-    ![Création d'un projet dans Visual Studio](../media/vs-2019/create-new-project.png)
+    Sélectionnez le modèle **application console** , puis cliquez sur **suivant**.
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, entrez **HelloWorld** dans la zone **Nom du projet**, changez éventuellement l’emplacement du répertoire pour vos fichiers projet, puis choisissez **Créer**.
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Capture d’écran de la fenêtre créer un nouveau projet dans Visual Studio 2019, où vous sélectionnez le modèle souhaité.":::
 
-   ![Configurer un nouveau projet dans Visual Studio](../media/vs-2019/configure-new-project.png)
+1. Dans la fenêtre **configurer votre nouveau projet** , entrez **HelloWorld** dans la zone **nom du projet** , modifiez éventuellement l’emplacement du répertoire pour vos fichiers projet (les paramètres régionaux par défaut sont `C:\Users\<name>\source\repos` ), puis cliquez sur **suivant**.
+
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Capture d’écran de la fenêtre « configurer votre nouveau projet » dans Visual Studio 2019, où vous entrez le nom du projet.":::
+
+1. Dans la fenêtre **informations supplémentaires** , vérifiez que **.net Core 3,1** s’affiche dans le menu déroulant **Framework cible** , puis cliquez sur **créer**.
+
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Capture d’écran de la fenêtre « informations supplémentaires » dans Visual Studio 2019, où vous sélectionnez la version de .NET Core Framework que vous souhaitez.":::
 
    Visual Studio crée le projet. Il s’agit d’une application « Hello world » simple, qui appelle la méthode <xref:System.Console.WriteLine?displayProperty=nameWithType> pour afficher la chaîne littérale « Hello World! » dans la fenêtre de console (sortie du programme).
 

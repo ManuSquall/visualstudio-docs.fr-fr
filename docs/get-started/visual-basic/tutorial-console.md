@@ -2,7 +2,7 @@
 title: 'Didacticiel : prise en main de Visual Basic'
 description: Découvrez comment créer des applications console Visual Basic dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915025"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682653"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -37,7 +37,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, nous allons créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -84,14 +84,14 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
    ![Afficher la fenêtre « Créer un projet »](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
+1. Dans la fenêtre **créer un nouveau projet** , choisissez **Visual Basic** dans la liste langue. Ensuite, choisissez **Windows** dans la liste des plateformes et dans la **console** de la liste types de projets.
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langue, de plateforme et de type de projet, choisissez le modèle **application console** , puis cliquez sur **suivant**.
 
-   ![Choisir le modèle Visual Basic pour l’application console (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="Choisir le modèle de Visual Basic pour l’application console":::
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   > Si vous ne voyez pas le modèle **application console** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
    > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -101,9 +101,13 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Ensuite, choisissez **créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Ensuite, choisissez **suivant**.
 
-   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »":::
+
+1. Dans la fenêtre **informations supplémentaires** , **.net Core 3,1** doit déjà être sélectionné pour votre version cible de .NET Framework. Si ce n’est pas le cas, sélectionnez **.net Core 3,1**. Ensuite, choisissez **créer**.
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="Dans la fenêtre « informations supplémentaires », vérifiez que .NET Core 3,1 est sélectionné":::
 
    Visual Studio ouvre votre nouveau projet.
 
@@ -111,7 +115,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 ## <a name="create-a-what-is-your-name-application"></a>Créer une application « Quel est votre nom »
 
-Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment procéder :
+Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment faire :
 
  ::: moniker range="vs-2017"
 
@@ -208,11 +212,13 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
 1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**. 
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
+1. Dans la fenêtre **créer un nouveau projet** , choisissez **Visual Basic** dans la liste langue. Ensuite, choisissez **Windows** dans la liste des plateformes et dans la **console** de la liste types de projets.
 
-1. Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+1. Après avoir appliqué les filtres de langue, de plateforme et de type de projet, choisissez le modèle **application console** , puis cliquez sur **suivant**.
 
-   Puis, dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *CalculateThis* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
+   Puis, dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *CalculateThis* dans la zone **nom du projet** . Ensuite, choisissez **suivant**.
+
+1. Dans la fenêtre **informations supplémentaires** , **.net Core 3,1** doit déjà être sélectionné pour votre version cible de .NET Framework. Si ce n’est pas le cas, sélectionnez **.net Core 3,1**. Ensuite, choisissez **créer**.
 
 1. Entrez le code suivant entre les lignes `Module Program` et `End Module` :
 

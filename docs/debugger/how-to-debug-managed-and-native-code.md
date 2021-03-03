@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899421"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683322"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et du code C++ dans la même session de débogage
 
@@ -28,7 +28,7 @@ Visual Studio vous permet d’activer plusieurs types de débogueur dans une ses
 
 Ce tutoriel montre comment déboguer le code natif d’une application managée, mais vous pouvez également [déboguer le code managé d’une application native](../debugger/how-to-debug-in-mixed-mode.md). Le débogueur prend également en charge d’autres types de débogage en mode mixte, comme le débogage [de code Python et de code natif](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), ainsi que l’utilisation du débogueur de script dans des types d’applications comme ASP.NET.
 
-Ce didacticiel présente les procédures suivantes :
+Dans ce tutoriel, vous allez :
 
 > [!div class="checklist"]
 > * Créer une DLL native simple
@@ -126,9 +126,11 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **modèles**, puis choisissez **application console (.net Core)** ou **application console (.NET Framework)** pour C#. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **modèles**, puis choisissez **application console** pour .net Core ou **application console (.NET Framework)** pour C#. Dans la boîte de dialogue qui s’affiche, cliquez sur **suivant**.
 
-    Ensuite, tapez un nom comme **Mixed_Mode_Calling_App**, puis cliquez sur **Créer**.
+    Ensuite, tapez un nom comme **Mixed_Mode_Calling_App** , puis cliquez sur **suivant** ou sur **créer**, quelle que soit l’option disponible.
+
+    Pour .NET Core, choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)** ou **Application console (.NET Core)**.
@@ -136,7 +138,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
     Ensuite, tapez un nom comme **Mixed_Mode_Calling_App**, puis cliquez sur **OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **Application console**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **développement .net Desktop** , puis choisissez **modifier**.
+    Si vous ne voyez pas le modèle de projet approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail développement **multiplateforme .net Core** ou **développement bureautique .net** , en fonction de votre infrastructure cible, puis choisissez **modifier**.
 
     > [!NOTE]
     > Vous pouvez également ajouter le nouveau projet managé à votre solution C++ existante. Nous créons le projet dans une nouvelle solution pour rendre la tâche de débogage en mode mixte plus difficile.
@@ -219,7 +221,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 
 1. Appuyez sur **F5** ou sélectionnez la flèche verte pour continuer le débogage de l’application.
 
-Félicitations ! Vous avez terminé le didacticiel sur le débogage en mode mixte.
+Félicitations ! Vous avez terminé le didacticiel sur le débogage en mode mixte.
 
 ## <a name="next-step"></a>Étape suivante
 

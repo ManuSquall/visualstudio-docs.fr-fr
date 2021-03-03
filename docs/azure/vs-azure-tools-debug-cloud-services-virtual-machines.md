@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844331"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683229"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Débogage d'un service cloud ou d'une machine virtuelle Azure dans Visual Studio
 
@@ -21,7 +21,7 @@ Visual Studio vous offre différentes options de débogage des machines virtuell
 
 ## <a name="debug-your-cloud-service-on-your-local-computer"></a>Déboguer votre service cloud sur votre ordinateur local
 
-L’utilisation de l’émulateur de calcul Azure pour déboguer votre service cloud sur une machine locale constitue un gain de temps et d’argent. Déboguer un service localement avant de le déployer vous permet d’améliorer la fiabilité et les performances, tout en évitant les coûts de temps de calcul. Certaines erreurs peuvent toutefois se produire quand vous exécutez un service cloud directement dans Azure. Vous pouvez déboguer ces erreurs si vous activez le débogage distant quand vous publiez votre service, puis attachez le débogueur à une instance de rôle.
+Vous pouvez gagner du temps et de l’argent en utilisant l’émulateur de calcul Azure pour déboguer votre service Cloud sur un ordinateur local. Déboguer un service localement avant de le déployer vous permet d’améliorer la fiabilité et les performances, tout en évitant les coûts de temps de calcul. Certaines erreurs peuvent toutefois se produire quand vous exécutez un service cloud directement dans Azure. Vous pouvez déboguer ces erreurs si vous activez le débogage distant quand vous publiez votre service, puis attachez le débogueur à une instance de rôle.
 
 L’émulateur simule le service de calcul Azure et s’exécute dans votre environnement local pour vous permettre de tester et déboguer votre service cloud avant son déploiement. Il gère le cycle de vie de vos instances de rôle et donne accès aux ressources simulées, telles que le stockage local. Quand vous déboguez ou exécutez votre service à partir de Visual Studio, le programme démarre automatiquement l’émulateur comme une application d’arrière-plan, puis déploie votre service vers l’émulateur. Vous pouvez utiliser l’émulateur pour voir votre service en cours d’exécution dans l’environnement local. Vous pouvez exécuter la version complète ou express de l’émulateur. (À partir d’Azure 2,3, la version Express de l’émulateur est celle par défaut.) Consultez [utilisation de l’émulateur Express pour exécuter et déboguer un service Cloud localement](vs-azure-tools-emulator-express-debug-run.md).
 

@@ -2,7 +2,7 @@
 title: Personnaliser les dispositions de fenêtres
 description: Découvrez comment personnaliser les caractéristiques que Windows présente pour créer des dispositions qui fonctionnent le mieux pour différents flux de travail de développement.
 ms.custom: SEO-VS-2020
-ms.date: 07/31/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910849"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682584"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
@@ -163,7 +163,17 @@ Commencez par créer une solution de test qui comporte deux projets, chacun avec
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Créer un projet d'interface utilisateur et personnaliser la disposition
 
+::: moniker range="vs-2017"
+
 1. Créez un projet **Application WPF** C#. Imaginez que dans ce projet, vous allez développer une interface utilisateur. Vous voulez maximiser l’espace de la fenêtre du concepteur et écarter les autres fenêtres Outil.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Créez un projet d' **application WPF** C#. Imaginez que dans ce projet, vous allez développer une interface utilisateur. Vous voulez maximiser l’espace de la fenêtre du concepteur et écarter les autres fenêtres Outil.
+
+::: moniker-end
 
 2. Si vous avez plusieurs moniteurs, extrayez la fenêtre de **Explorateur de solutions** et la fenêtre **Propriétés** sur votre deuxième écran. Dans un système à un seul écran, essayez de fermer toutes les fenêtres à l'exception de celle du concepteur.
 

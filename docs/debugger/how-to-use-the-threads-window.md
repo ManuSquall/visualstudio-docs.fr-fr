@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbde477e076203625e35ebf0109ed344679563f8
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925395"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683315"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procédure pas à pas : déboguer une application multithread à l’aide de la fenêtre threads (C#, Visual Basic, C++)
 
@@ -44,12 +44,14 @@ Créez le projet d’application multithread suivant à utiliser dans ce didacti
 
    Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** ou **C++** dans la liste langue, puis choisissez **Windows** dans la liste plateforme. 
 
-   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou, pour C++, le modèle **application console** , puis choisissez **suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console** pour .net Core ou pour C++, puis choisissez **suivant**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
+   > Si vous ne voyez pas le modèle approprié, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
+   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyThreadWalkthroughApp* dans la zone **nom du projet** . Ensuite, choisissez **suivant** ou **créer**, quelle que soit l’option disponible.
+
+   Pour .NET Core, choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -58,7 +60,7 @@ Créez le projet d’application multithread suivant à utiliser dans ce didacti
    - Pour une application C#, sous **Visual c#**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)**.
    - Pour une application C++, sous **Visual C++**, choisissez **Bureau Windows**,, puis **application console Windows**.
 
-   Si vous ne voyez pas l' **application console (.net Core)** ou, pour C++, le modèle de projet d' **application console** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
+   Si vous ne voyez pas l' **application console (.NET Framework)** ou, pour C++, le modèle de projet d' **application console** , accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Choisissez la charge de travail **développement de bureau .net** ou **développement bureautique avec C++** , puis choisissez **modifier**.
 
    Ensuite, tapez un nom tel que *MyThreadWalkthroughApp* , puis cliquez sur **OK**.
 
@@ -147,7 +149,7 @@ Sélectionnez une icône d’indicateur pour définir l’état du thread sur ma
 
 Vous pouvez également cliquer avec le bouton droit sur une ligne et sélectionner **marquer, supprimer** l' **indicateur** ou supprimer l' **indicateur de tous les threads** dans le menu contextuel.
 
-La barre d’outils de la fenêtre **Threads** comporte également un bouton **afficher les threads avec indicateur uniquement** , qui est le bouton à droite des deux icônes d’indicateur. Il fonctionne de la même façon que le bouton dans la barre d’outils **emplacement de débogage** , et l’un ou l’autre bouton contrôle l’affichage dans les deux emplacements.
+La barre d’outils de la fenêtre **Threads** comporte également un bouton **afficher les threads avec indicateur uniquement** , qui est la droite des deux icônes d’indicateur. Il fonctionne de la même façon que le bouton dans la barre d’outils **emplacement de débogage** , et l’un ou l’autre bouton contrôle l’affichage dans les deux emplacements.
 
 ### <a name="other-threads-window-features"></a>Autres fonctionnalités de la fenêtre threads
 

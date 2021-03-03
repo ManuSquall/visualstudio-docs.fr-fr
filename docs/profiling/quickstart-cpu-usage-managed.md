@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861644"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683544"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (C#, Visual Basic)
 
@@ -27,7 +27,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 1. Ouvrez Visual Studio et créez le projet.
 
@@ -45,12 +45,14 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
    Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme.
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez le modèle **application console** pour .net Core, puis choisissez **suivant**.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
+   > Si vous ne voyez pas le modèle d' **application console** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
 
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyProfilerApp* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
+   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyProfilerApp* dans la zone **nom du projet** . Ensuite, choisissez **suivant**.
+
+   Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
 
    ::: moniker-end
 

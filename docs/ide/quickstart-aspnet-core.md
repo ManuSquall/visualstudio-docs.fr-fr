@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f9f442757b60b7dc9dc0e2dd0b8eba0c4928976b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68ccba785643b8f4f29143e5e72dc65cfedcd512
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959517"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684048"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -45,7 +45,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Ce tutoriel de démarrage rapide contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](quickstart-personalize-the-ide.md) pour savoir comment faire.
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Pour commencer, vous allez créer un projet d’application web ASP.NET Core. Le type de projet s’accompagne d’entrée de jeu de tous les modèles de fichiers permettant de créer une application web.
 
@@ -83,36 +83,40 @@ Peu après, Visual Studio ouvre votre fichier projet.
 
 ::: moniker range="vs-2019"
 
-1. Ouvrez Visual Studio.
-
 1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
-   ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="Afficher la fenêtre « Créer un projet »":::
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *ASP.NET* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes.
+1. Dans la fenêtre **créer un nouveau projet** , choisissez **C#** dans la liste langue. Ensuite, choisissez **Windows** dans la liste plateforme et **Web** dans la liste types de projets.
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application web ASP.NET Core**, puis choisissez **Suivant**.
+      Après avoir appliqué les filtres de langue, de plateforme et de type de projet, choisissez le modèle d' **application Web ASP.net Core** , puis choisissez **suivant**.
 
-   ![Choisir le modèle C# pour l’application web ASP.NET Core](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Choisir le modèle C# pour l’application Web ASP.NET Core":::
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application web ASP.NET Core**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   > Si vous ne voyez pas le modèle d' **application Web ASP.net Core** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
    > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement web et ASP.NET**.
    >
-   > ![Charge de travail Application web ASP.NET Core dans Visual Studio Installer](../get-started/media/aspnet-core-web-dev-workload.png)
+   > ![Charge de travail Développement multiplateforme .Net Core dans le programme d’installation de Visual Studio](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
+   > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Si vous êtes invité à enregistrer votre travail, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Ensuite, choisissez **créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Ensuite, choisissez **suivant**.
 
-   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « HelloWorld »](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+    :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png" alt-text="Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « MyCoreApp »":::
 
-1. Dans la fenêtre **créer une nouvelle ASP.net Core application Web** , vérifiez que **ASP.net Core 3,0** s’affiche dans le menu déroulant supérieur. Ensuite, choisissez **Application web**, qui inclut des exemples Razor Pages. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **informations supplémentaires** , vérifiez que **.net Core 3,1** s’affiche dans le menu déroulant supérieur. Notez que vous pouvez choisir d’activer la prise en charge de l’ancrage en activant la case à cocher. Vous pouvez également ajouter la prise en charge de l’authentification en cliquant sur le bouton modifier l’authentification. Plusieurs options sont disponibles :
+    - None : aucune authentification.
+    - Comptes individuels : ceux-ci sont stockés dans une base de données locale ou basée sur Azure.
+    - Plateforme d’identité Microsoft : cette option utilise Active Directory, Azure AD ou Microsoft 365 pour l’authentification.
+    - Windows : adapté aux applications intranet.
+    
+    Laissez la case **activer l’ancrage** désactivée et sélectionnez **aucune** pour type d’authentification. Sélectionnez ensuite **Create** (Créer).
 
-   ![La fenêtre « Créez une application web ASP.NET Core »](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="../get-started/csharp/media/vs-2019/aspnet-core-additional-information.png" alt-text="dans la fenêtre « informations supplémentaires », vérifiez que .NET Core 3,1 est sélectionné et laissez tous les paramètres par défaut":::
 
    Visual Studio ouvre votre nouveau projet.
 

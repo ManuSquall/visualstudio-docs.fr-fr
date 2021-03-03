@@ -3,16 +3,16 @@ title: Visual Studio Tools pour Docker avec ASP.NET
 author: ghogen
 description: Découvrez comment utiliser les outils Visual Studio 2019 et Docker pour Windows
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 02/22/2021
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a2c0d9ac31857fb2389455b0262373414981c5b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88186250"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750279"
 ---
 Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications .NET, ASP.NET et ASP.NET Core en conteneur, et les publier sur Azure Container Registry (ACR), sur le hub d’ancrage, Azure App Service ou sur votre propre registre de conteneurs. Dans cet article, nous allons publier une application ASP.NET Core sur ACR.
 
@@ -30,9 +30,9 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 ## <a name="add-a-project-to-a-docker-container"></a>Ajouter un projet à un conteneur Docker
 
 1. Créez un projet à l’aide du modèle d' **application web ASP.net Core** ou si vous souhaitez utiliser le .NET Framework au lieu de .net Core, choisissez **application web ASP.net (.NET Framework)**.
-1. Sélectionnez **application Web**et assurez-vous que la case **activer la prise en charge** de l’ancrage est cochée.
+1. Dans l’écran **informations supplémentaires** , assurez-vous que la case **activer la prise en charge** de l’ancrage est cochée.
 
-   ![Case Activer la prise en charge de Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+   ![Case Activer la prise en charge de Docker](../../media/container-tools/vs-2019/webapp-additional-information-31-docker.png)
 
    La capture d’écran montre .NET Core ; Si vous utilisez .NET Framework, cela semble un peu différent.
 
@@ -113,7 +113,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
     | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio][0]

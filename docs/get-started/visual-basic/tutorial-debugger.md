@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cb6cbdaee7e5bed6cb80cea1f431a6db4d286e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6bc1cd4dd994a744e814ab893bfe67e24f110bb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915039"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682681"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer du code Visual Basic avec Visual Studio
 
@@ -28,7 +28,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 
 Bien que l’application de démonstration soit Visual Basic, la plupart des fonctionnalités s’appliquent à C#, C++, F #, Python, JavaScript et à d’autres langages pris en charge par Visual Studio (F # ne prend pas en charge la fonctionnalité modifier et continuer. F# et JavaScript ne prennent pas en charge la fenêtre **Automatique**). Les captures d’écran sont en Visual Basic.
 
-Ce didacticiel présente les procédures suivantes :
+Dans ce tutoriel, vous allez :
 
 > [!div class="checklist"]
 > * Démarrer le débogueur et atteindre des points d’arrêt
@@ -63,7 +63,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Si vous devez installer la charge de travail mais que vous disposez déjà de Visual Studio, accédez à **Outils**  >  **obtenir des outils et des fonctionnalités...**, qui ouvre le Visual Studio installer. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, vous allez créer un projet d’application console .NET Core. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -91,14 +91,16 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez le modèle **application console** pour .net Core, puis choisissez **suivant**.
 
-   ![Choisir le modèle de Visual Basic pour l’application console (.NET Core)](../visual-basic/media/vs-2019/get-started-create-console-project.png)
+   ![Choisir le modèle de Visual Basic pour l’application console](../visual-basic/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
+   > Si vous ne voyez pas le modèle d' **application console** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
 
-1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez « *Démarrer-démarré-débogage »* dans la zone Nom du **projet** . Ensuite, choisissez **créer**.
+1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez « *Démarrer-démarré-débogage »* dans la zone Nom du **projet** . Ensuite, choisissez **suivant**.
+
+1. Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
 
    Visual Studio ouvre votre nouveau projet.
    

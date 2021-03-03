@@ -5,15 +5,15 @@ ms.custom: SEO-VS-2020
 author: ghogen
 description: Découvrez comment créer une application réactive en conteneur SPA avec les outils de conteneur et l’outil d’ancrage de Visual Studio
 ms.author: ghogen
-ms.date: 05/14/2020
+ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502186"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684339"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Démarrage rapide : utiliser l’amarrage avec une application à page unique REACT dans Visual Studio
 
@@ -55,11 +55,16 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 
 1. Sélectionnez le type de conteneur, puis cliquez sur **OK**.
 ::: moniker-end
-::: moniker range=">=vs-2019"
-1. Créez un nouveau projet à l’aide du modèle **Application web ASP.NET Core**.
-1. Sélectionnez **React.js**, puis cliquez sur **Créer**. Vous ne pouvez pas sélectionner **Activer le support Docker**, mais ne vous inquiétez pas, vous pouvez ajouter ce support plus tard.
 
-   ![Capture d’écran du nouveau projet React.js](media/container-tools-react/vs-2019/new-react-project.png)
+::: moniker range=">=vs-2019"
+
+1. Créez un nouveau projet à l’aide de l' **ASP.net core avec React.js** modèle.
+
+   ![Capture d’écran de la création d’un projet de React.js](media/container-tools-react/vs-2019/create-reactjs-project.png)
+
+1. Dans l’écran **informations supplémentaires** , vous ne pouvez pas sélectionner **activer la prise en charge** de l’ancrage, mais ne vous inquiétez pas, vous pouvez ajouter cette prise en charge ultérieurement.
+
+   ![Capture d’écran de la création d’un projet de React.js-écran d’informations supplémentaires](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
 1. Cliquez avec le bouton de droite sur le nœud du projet, puis choisissez **Ajouter** > **Support Docker** pour ajouter un fichier Dockerfile à votre projet.
 

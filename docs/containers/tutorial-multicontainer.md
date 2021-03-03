@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729286"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684278"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Didacticiel : Créer une application multiconteneur avec Docker Compose
 
@@ -34,7 +34,7 @@ Dans ce didacticiel, vous allez apprendre à gérer plusieurs conteneurs et à c
 
 ## <a name="create-a-web-application-project"></a>Créer un projet d’application Web
 
-Dans Visual Studio, créez un projet d' **application Web ASP.net Core** , nommé `WebFrontEnd` . Sélectionnez **application Web** pour créer une application Web avec les pages Razor. 
+Dans Visual Studio, créez un projet d’application **web ASP.net Core** , nommé `WebFrontEnd` , pour créer une application Web avec les pages Razor.
   
 ::: moniker range="vs-2017"
 
@@ -46,11 +46,11 @@ Ne sélectionnez pas **Activer la prise en charge de Docker**. Vous ajouterez la
 
 ::: moniker range="vs-2019"
 
-![Capture d’écran de l’écran configurer votre nouveau projet pour une application Web ASP.NET Core, les champs nom du projet et nom de la solution sont définis sur « WebFrontEnd ».](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Créer ASP.NET Core projet d’application Web](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 Ne sélectionnez pas **Activer la prise en charge de Docker**. Vous ajouterez la prise en charge de l’ancrage ultérieurement.
 
-![Capture d’écran de l’écran créer une application Web ASP.NET Core avec l’application Web sélectionnée. L’option permettant d’activer la prise en charge de l’ancrage n’est pas sélectionnée.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Capture d’écran de l’écran d’informations supplémentaires lors de la création d’un projet Web. L’option permettant d’activer la prise en charge de l’ancrage n’est pas sélectionnée.](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
    ![Capture d’écran de la création du projet d’API Web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![Capture d’écran de la création du projet d’API Web](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
+   ![Capture d’écran de la création du projet d’API Web](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>Ajouter du code pour appeler l’API Web

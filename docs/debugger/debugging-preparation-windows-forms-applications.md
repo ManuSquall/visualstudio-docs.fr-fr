@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f370fc0e3f97d53fb63bfdabb637edff90960442
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872402"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684144"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Préparation du débogage : applications Windows Forms
-Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’application Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+
+Le modèle de projet d’application Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est assez simple. Pour plus d’informations sur la création d’un projet de ce type, consultez [créer une application Windows Form](../ide/create-csharp-winform-visual-studio.md).
 
  Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres. Ces paramètres peuvent être modifiés dans la boîte de dialogue **\<project name> pages de propriétés** (**mon projet** dans Visual Basic).
 

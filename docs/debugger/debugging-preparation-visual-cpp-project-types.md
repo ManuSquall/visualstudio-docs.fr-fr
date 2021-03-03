@@ -5,9 +5,6 @@ ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - project templates, debugging
@@ -20,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcd4375b475106b0428f21057f5b44fc8bee8700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872422"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683035"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Préparation du débogage : types de projets C++
 Cette section explique le débogage de types de projets de base, créés par les modèles de projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -40,8 +37,6 @@ Cette section explique le débogage de types de projets de base, créés par les
 - [Pour déboguer une application Win32 C ou C++](#BKMK_To_debug_a_C_or_C___Win32_application)
 
 - [Pour définir manuellement une configuration Debug](#BKMK_To_manually_set_a_Debug_configuration)
-
-  [Applications Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
 ## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> Paramètres de propriété recommandés
  Certaines propriétés doivent être définies de la même manière pour tous les scénarios de débogage non managé. Les tableaux suivants présentent les paramètres de propriété recommandés. Les paramètres qui n'y sont pas répertoriés peuvent varier parmi les différents types de projet non managés. Pour plus d’informations, consultez [paramètres de projet pour une configuration de débogage C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
@@ -97,22 +92,8 @@ Cette section explique le débogage de types de projets de base, créés par les
 
    [Dans cette rubrique](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="windows-forms-applications-net"></a><a name="BKMK_Windows_Forms_Applications___NET_"></a> Applications Windows Forms (.NET)
- Le modèle **Application Windows Forms (.NET)** crée une application Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d'informations, consultez [How to: Create a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
-
- Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est semblable à celui réalisé dans les applications Windows Forms managées.
-
- Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres dans la boîte de dialogue **\<project name> pages de propriétés** . Pour plus d’informations, consultez [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).
-
- Pour plus d’informations, consultez [paramètres de projet pour une configuration de débogage C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
-
- Une autre façon de déboguer une application Windows Forms consiste à démarrer l'application en dehors de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et à l'attacher à celui-ci. Pour plus d’informations, consultez [Attachement à un ou plusieurs programmes en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
-
- [Dans cette rubrique](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
-
 ## <a name="see-also"></a>Voir aussi
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attachement à un ou plusieurs programmes en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Guide pratique pour créer un projet d’application Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

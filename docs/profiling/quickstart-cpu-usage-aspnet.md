@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952835"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683626"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET Core)
 
@@ -27,7 +27,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
 Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 1. Ouvrez Visual Studio et créez le projet.
 
@@ -42,24 +42,17 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
    Dans la boîte de dialogue qui s’affiche, choisissez **MVC** dans le volet central, puis cliquez sur **OK**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Si la fenêtre de démarrage n’est pas ouverte  , choisissez > **fenêtre démarrage** de fichier.
+   Dans Visual Studio 2019, choisissez **créer un nouveau projet** dans la fenêtre démarrer. Si la fenêtre démarrer n’est pas ouverte, choisissez  >  **fenêtre démarrer** le fichier, puis **créer un nouveau projet**.
 
-   Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
+   Tapez **application Web** dans la zone de recherche, choisissez **C#** comme langage, choisissez **ASP.net Core application Web (Model-View-Controller)**, puis cliquez sur **suivant**. Dans l’écran suivant, nommez le projet *MyProfilingApp_MVC*, puis choisissez **suivant**.
 
-   Dans la fenêtre **créer un nouveau projet** , entrez ou tapez *ASP.net* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes.
-
-   Après avoir appliqué les filtres de langue et de plateforme, choisissez le modèle **application Web ASP.net (.net Core)** , puis choisissez **suivant**.
+   Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle d' **application Web ASP.net (.net Core)** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement web et ASP.NET**.
-
-   Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *MyProfilingApp_MVC* dans la zone **nom du projet** . Ensuite, choisissez **créer**.
-
-   Dans la fenêtre qui s’affiche, choisissez **application Web (Model-View-Controller)** , puis choisissez **créer**.
-
    ::: moniker-end
 
-   Visual Studio ouvre votre nouveau projet.
+   Visual Studio crée et ouvre votre nouveau projet.
 
 1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le dossier modèles, puis choisissez **Ajouter** une  >  **classe**.
 

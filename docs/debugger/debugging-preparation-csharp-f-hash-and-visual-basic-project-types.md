@@ -22,31 +22,35 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88dc5beeace4b88f5591853d932976d987b0d3c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cba30488046724332f4160e25a24a15d779e6cd4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872417"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684183"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Préparation du débogage : types de projets C#, F# et Visual Basic
+
 Les rubriques de cette section décrivent le débogage de types de projets C#, F# et [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] créés par les modèles de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
  Notez que les types de projet qui créent des dll en tant que sortie ont été regroupés en [projets de dll de débogage](../debugger/debugging-dll-projects.md) en raison des fonctionnalités communes qu’ils partagent.
 
 ## <a name="in-this-section"></a>Dans cette section
+
  [Paramètres de propriété recommandés](../debugger/managed-debugging-recommended-property-settings.md) Cette section décrit les paramètres de propriété de débogage recommandés pour les projets C#, F # et Visual Basic.
 
- [Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) Décrit un projet d’application Windows et fournit des instructions pour le débogage, la modification de la configuration de débogage par défaut et le démarrage de l’application en dehors de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et l’attachement à celle-ci.
+ [Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) Décrit une Windows Forms projet d’application et fournit des instructions pour le débogage, la modification de la configuration de débogage par défaut et le démarrage de l’application en dehors de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et l’attachement à celle-ci.
 
  [Projets de console](../debugger/debugging-preparation-console-projects.md) Fournit des considérations supplémentaires pour le débogage des [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] applications de console ou C#. Parmi celles-ci figurent la spécification des arguments de ligne de commande, le démarrage de l'application à partir de l'invite de commandes, l'écriture dans la fenêtre Sortie et le dépannage de la fenêtre de console.
 
  [Services Windows](../debugger/debugging-preparation-windows-services.md) Décrit un service Windows et fournit un lien permettant de déboguer les applications de service Windows.
 
 ## <a name="related-sections"></a>Sections connexes
+
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md) Décrit les paramètres et la préparation que vous devez effectuer pour déboguer votre programme à l’aide du [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] débogueur.
 
  [Débogage de code managé](../debugger/debugging-managed-code.md) Décrit les problèmes et techniques de débogage courants pour les applications écrites en code managé.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Sécurité du débogueur](../debugger/debugger-security.md)

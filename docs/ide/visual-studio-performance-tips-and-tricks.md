@@ -2,19 +2,19 @@
 title: Conseils pour améliorer les performances
 description: Découvrez comment optimiser certaines fonctionnalités de Visual Studio que vous n’utilisez peut-être pas pour améliorer les performances.
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873864"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683770"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -142,6 +142,10 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 - **Supprimer des charges de travail**
 
     Vous pouvez utiliser Visual Studio Installer pour supprimer des charges de travail qui ne sont plus utilisées. Cette action permet de rationaliser le coût du démarrage et de l’exécution en ignorant les packages et les assemblys qui ne sont plus nécessaires.
+
+- **Ajouter des fichiers non suivis à local. gitignore**
+
+    Visual Studio exécute la commande git `git status` avec des fichiers non suivis pour fournir une expérience transparente lorsque vous ajoutez de nouveaux fichiers à un référentiel. Lorsqu’il y a un grand nombre de fichiers non suivis, `git status` peut consommer de la mémoire supplémentaire. Pour ignorer ces fichiers et améliorer les performances de `git status` , vous pouvez ajouter ces fichiers ou dossiers à votre fichier local. gitignore. Pour accéder au fichier, accédez à **git**  >  **paramètres**  >  **référentiel git paramètres**. Ensuite, dans la section **fichiers git** , cliquez sur **Ajouter** pour créer un fichier. gitignore ou sur **modifier** si vous en avez déjà un.
 
 ## <a name="force-a-garbage-collection"></a>Forcer une opération de garbage collection
 

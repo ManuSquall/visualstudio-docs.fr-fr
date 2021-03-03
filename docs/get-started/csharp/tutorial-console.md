@@ -2,7 +2,7 @@
 title: 'Didacticiel : créer une application console C# simple'
 description: Découvrez comment créer une application console C# dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
-ms.date: 02/18/2020
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40e3d82c21e88b2d2144abf5902858eda1b1c293
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909356"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682800"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application console C# simple dans Visual Studio
 
@@ -38,7 +38,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Commençons par créer un projet d’application C#. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
@@ -83,14 +83,14 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
    ![Afficher la fenêtre « Créer un projet »](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** Dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
+1. Dans la fenêtre **créer un nouveau projet** , choisissez **C#** dans la liste langue. Ensuite, choisissez **Windows** dans la liste des plateformes et dans la **console** de la liste types de projets. 
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+   Après avoir appliqué les filtres de langue, de plateforme et de type de projet, choisissez le modèle **application console** , puis cliquez sur **suivant**.
 
-   ![Choisissez le modèle C# pour l’application console (.NET Framework).](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+    :::image type="content" source="./media/vs-2019/csharp-create-new-project-console-net-core.png" alt-text="Choisissez le modèle C# pour l’application console (.NET Framework).":::
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Application console (.NET Core)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   > Si vous ne voyez pas le modèle **application console** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
    > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -100,15 +100,19 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *Calculator* dans la zone **Nom du projet**. Ensuite, choisissez **créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *Calculator* dans la zone **Nom du projet**. Ensuite, choisissez **suivant**.
 
-   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « Calculator »](./media/vs-2019/csharp-name-your-calculator-project.png)
+    :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « Calculator »":::
+   
+1. Dans la fenêtre **informations supplémentaires** , **.net Core 3,1** doit déjà être sélectionné pour votre version cible de .NET Framework. Si ce n’est pas le cas, sélectionnez **.net Core 3,1**. Ensuite, choisissez **créer**.
+
+    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="dans la fenêtre « informations supplémentaires », vérifiez que .NET Core 3,1 est sélectionné":::
 
    Visual Studio ouvre votre nouveau projet, qui inclut le code de « Hello World » par défaut.
-   
+
 ::: moniker-end
 
-## <a name="create-the-app"></a>Créer l’application
+## <a name="create-the-app"></a>Créer l'application
 
 Tout d’abord, nous allons découvrir certaines notions mathématiques de base relatives aux entiers en C#. Nous ajouterons ensuite du code pour créer une calculatrice de base. Après cela, nous allons déboguer l’application pour rechercher et corriger les erreurs. Enfin, nous affinerons le code pour le rendre plus efficace.
 

@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b288836b3868f561e86a801d5d26f7d59dd17535
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908267"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683080"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Débogage à distance ASP.NET Core sur un ordinateur IIS distant dans Visual Studio
 
@@ -57,7 +57,9 @@ Cet article explique comment configurer une configuration de base d’IIS sur Wi
 1. Créez une application web ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **ASP.net**, choisissez **modèles**, puis **créer une application Web de ASP.net Core**. Dans la boîte de dialogue qui s’affiche, nommez le projet **MyASPApp**, puis choisissez **créer**. Ensuite, choisissez **application Web (Model-View-Controller)**, puis cliquez sur **créer**.
+    Dans Visual Studio 2019, choisissez **créer un nouveau projet** dans la fenêtre démarrer. Si la fenêtre de démarrage n’est pas ouverte , choisissez  >  **fenêtre démarrage** de fichier. Tapez **application Web**, choisissez **C#** comme langage, puis **ASP.net Core application Web (Model-View-Controller)**, puis choisissez **suivant**. Dans l’écran suivant, nommez le projet **MyASPApp**, puis choisissez **suivant**.
+
+    Choisissez le Framework cible recommandé (.NET Core 3,1) ou .NET 5, puis choisissez **créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans Visual Studio 2017, choisissez **fichier > nouveau > projet**, puis sélectionnez **Visual C# > Web > ASP.net Core application Web**. Dans la section modèles de ASP.NET Core, sélectionnez **application Web (Model-View-Controller)**. Assurez-vous que ASP.NET Core 2,1 est sélectionné, et que l’option **activer la prise en charge** de l’ancrage n’est pas sélectionnée et que **l’authentification** est définie sur **aucune authentification**. Nommez le projet **MyASPApp**.
@@ -90,7 +92,7 @@ Lorsque vous téléchargez le logiciel, vous pouvez recevoir des demandes pour a
     > [!NOTE]
     > Si le système n’a pas de connexion Internet, obtenez et installez *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* avant d’installer le bundle d’hébergement .NET Core Windows Server.
 
-3. Redémarrez le système ou exécutez **net stop was /y** suivi de **net start w3svc** à partir d’une invite de commandes pour prendre en compte une modification de la variable système PATH.
+2. Redémarrez le système ou exécutez **net stop was /y** suivi de **net start w3svc** à partir d’une invite de commandes pour prendre en compte une modification de la variable système PATH.
 
 ## <a name="choose-a-deployment-option"></a>Choisir une option de déploiement
 
