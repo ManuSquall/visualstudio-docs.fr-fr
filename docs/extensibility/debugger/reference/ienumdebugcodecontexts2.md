@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les contextes de code associés à la session de débogage, ou à un programme ou un document particulier.
 title: IEnumDebugCodeContexts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82e3583333c784fffa55abf2e86f5a7335aeb7c1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929392"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226928"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 Cette interface énumère les contextes de code associés à la session de débogage, ou à un programme ou un document particulier.
@@ -50,7 +51,7 @@ IEnumDebugCodeContexts2 : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio appelle [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) pour remplir une liste de contextes de code que l’utilisateur peut choisir lors de la définition de l’instruction suivante ou de l’indication du code machine pour un fichier source. Plusieurs contextes de code peuvent se produire, par exemple, lorsqu’il existe plusieurs instances d’un modèle de style C++.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

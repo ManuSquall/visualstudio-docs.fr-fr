@@ -1,4 +1,5 @@
 ---
+description: Retourne une copie de l’énumération de contextes de code en cours sous la forme d’un objet distinct.
 title: 'IEnumDebugCodeContexts2 :: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a877fcda76cca704e12d228cf4e51ab070aa5c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbbfe0436cbe9234d4e5b21a1de242ea823c0aa7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929509"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224965"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 Retourne une copie de l'énumération actuelle comme un objet distinct.
@@ -43,7 +44,7 @@ int Clone(
 `ppEnum`\
 [out] Retourne une copie de cette énumération en tant qu'objet distinct.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

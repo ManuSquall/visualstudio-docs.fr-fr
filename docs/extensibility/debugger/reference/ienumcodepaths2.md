@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente une liste de chemins de code.
 title: IEnumCodePaths2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69a65488d38fe2562392be152e448369ff081915
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9758bacf6dc22ad65dc4d8db9b21d0f6728efaf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962156"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227084"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Cette interface représente une liste de chemins de code.
@@ -48,7 +49,7 @@ IEnumCodePaths2 : IUnknown
 ## <a name="remarks"></a>Notes
  Un chemin d’accès de code représente un point de branche ou un appel de fonction dans un programme. Une liste de chemins de code représente le chemin d’accès utilisé par l’exécution du code.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

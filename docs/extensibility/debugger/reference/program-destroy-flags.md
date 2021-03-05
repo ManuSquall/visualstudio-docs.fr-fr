@@ -1,4 +1,5 @@
 ---
+description: Énumère les valeurs valides des indicateurs de destruction du programme.
 title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b7d144658065c32fd15b4b2b21ed0f53fe02a08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a695ae921bb9fb0e6b137e258cd8bd70d278eba7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962949"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225316"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 Énumère les valeurs valides des indicateurs de destruction du programme.
@@ -47,7 +48,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 ## <a name="remarks"></a>Notes
  L’énumération est retournée par la méthode [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

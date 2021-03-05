@@ -2,7 +2,7 @@
 title: Détecter un problème et créer des journaux pour les problèmes MSBuild
 description: Découvrez comment vous pouvez diagnostiquer les problèmes de build dans votre projet Visual Studio et, si nécessaire, créer un journal à envoyer à Microsoft pour investigation.
 ms.custom: SEO-VS-2020
-ms.date: 06/27/2019
+ms.date: 02/08/2021
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880487"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225198"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Détecter un problème et créer des journaux pour les problèmes MSBuild
 
@@ -46,7 +46,7 @@ La dernière définition d’une propriété est ce que consomme la build. Si la
 - PropertyGroup et importations
 - ItemDefinitionGroups
 - ItemGroup
-- Targets
+- Cibles
 
 Par conséquent, étant donné l’ordre suivant :
 
@@ -99,22 +99,41 @@ Si vous compilez dans l’IDE Visual Studio (avec commentaires relatifs à la Fe
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>Créer un journal binaire msbuild
+## <a name="create-a-binary-msbuild-log-at-the-command-prompt"></a>Créer un journal MSBuild binaire à l’invite de commandes
 
 1. Ouvrir l’invite de commandes développeur de votre version de Visual Studio
+
 1. À partir de l’invite de commandes, exécutez les commandes suivantes. (N’oubliez pas d’utiliser vos valeurs de projet et de configuration réelles.) :
 
-    ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
-    ```
+   ```cmd
+   Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
+   ```
 
-    or
+   or
 
-    ```cmd
-    Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
-    ```
+   ```cmd
+   Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
+   ```
 
-Un fichier Msbuild.binlog sera créé dans le répertoire à partir duquel que vous avez exécuté MSBuild. Vous pouvez l’afficher et le rechercher à l’aide de la [Visionneuse du journal Msbuild structuré](http://www.msbuildlog.com/).
+Un fichier *MSBuild. binlog* est créé dans le répertoire à partir duquel vous avez exécuté MSBuild.
+
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>Créer un journal MSBuild binaire à l’aide de l’extension outils de système de projet
+
+1. Téléchargez et installez l' [extension outils système de projet](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools).
+
+1. Une fois l’extension installée, certains nouveaux éléments s’affichent dans le menu **Afficher** les  >  **autres fenêtres** .
+
+   ![Menu autres fenêtres](../ide/media/view-menu.png)
+
+1. Sélectionnez **Afficher**  >  d'**autres**  >  **journaux Windows Build** pour afficher la fenêtre de **journalisation de build** dans Visual Studio. Choisissez la première icône de la barre d’outils pour commencer à enregistrer les builds régulières et au moment du design dans le système de projet.
+
+   ![Fenêtre journalisation de la génération](../ide/media/build-logging-click-to-record.png)
+
+1. Une fois qu’une build est enregistrée, elle apparaît dans la fenêtre de journalisation de la génération. Cliquez avec le bouton droit sur l’élément et sélectionnez **enregistrer les journaux** dans le menu contextuel pour enregistrer votre fichier *. binlog* .
+
+   ![Menu contextuel de journalisation de build](../ide/media/build-logging-context-menu.png)
+
+Vous pouvez afficher et rechercher vos fichiers *. binlog* à l’aide de la [visionneuse du journal structuré MSBuild](http://www.msbuildlog.com/).
 
 ## <a name="create-a-detailed-log"></a>Créer un journal détaillé
 

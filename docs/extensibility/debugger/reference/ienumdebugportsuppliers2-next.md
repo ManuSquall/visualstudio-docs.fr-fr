@@ -1,4 +1,5 @@
 ---
+description: Retourne le jeu d’éléments suivant de l’énumération fournisseurs de port.
 title: 'IEnumDebugPortSuppliers2 :: suivant | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04f1b428f76198c0bb06ae6d12c58d5f779a0e79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29badfc9c42875b981f99fbfe215c7a336dc1535
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846736"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226252"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 Retourne l'ensemble d'éléments suivants de l'énumération.
@@ -53,7 +54,7 @@ int Next(
 `pceltFetched`\
 à Retourne le nombre d’éléments réellement retournés dans `rgelt` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si un nombre inférieur au nombre d’éléments demandés peut être retourné ; sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

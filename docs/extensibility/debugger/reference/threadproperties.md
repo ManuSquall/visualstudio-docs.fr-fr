@@ -1,4 +1,5 @@
 ---
+description: Décrit les propriétés d’un thread.
 title: THREADPROPERTIES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2eb7abf897cf4891f08228dd5f0c918f580a1ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 186d9b0cd4f9ee3a822a528ab16788902d9ff1af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850659"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225258"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Décrit les propriétés d’un thread.
@@ -73,10 +74,10 @@ public struct THREADPROPERTIES {
  `bstrLocation`\
  L’emplacement du thread (généralement le frame de pile le plus haut), généralement exprimé sous la forme du nom de la méthode dans laquelle l’exécution est actuellement interrompue.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette structure est remplie par un appel à la méthode [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) . Les informations retournées sont généralement utilisées dans le remplissage de la fenêtre **Threads** .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

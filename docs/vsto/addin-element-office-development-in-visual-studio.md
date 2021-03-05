@@ -1,4 +1,5 @@
 ---
+description: L’élément AddIn de l’espace de noms vstav3 contient des informations qui sont spécifiques à Microsoft Office compléments VSTO et aux personnalisations au niveau du document développées avec Visual Studio.
 title: '&lt;AddIn &gt; , élément (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cfc59475b01fbf42c387b4a7a5ca533b313a322
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896724"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227383"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn &gt; , élément (développement Office dans Visual Studio)
   L’élément **AddIn** de l' `vstav3` espace de noms contient des informations qui sont spécifiques à Microsoft Office compléments VSTO et aux personnalisations au niveau du document développées avec Visual Studio.
@@ -63,7 +64,7 @@ ms.locfileid: "99896724"
  Obligatoire. L’élément **Update** est décrit dans [&#60;élément Update&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>postActions
- Facultatif. L’élément **postActions** est décrit dans [&#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
+ facultatif. L’élément **postActions** est décrit dans [&#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
 ### <a name="application"></a>application
  Obligatoire. L’élément **application** est décrit dans [&#60;élément application&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).

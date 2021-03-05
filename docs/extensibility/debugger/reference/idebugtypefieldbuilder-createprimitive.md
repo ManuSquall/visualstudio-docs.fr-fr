@@ -1,4 +1,5 @@
 ---
+description: Crée un objet qui représente un type primitif.
 title: 'IDebugTypeFieldBuilder :: CreatePrimitive | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1f7601d2533a52fdee709413a97d203a6556cb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c480b32d56708569d3ac05e309e8bd06e17db4e5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965718"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227357"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 Crée un objet qui représente un type primitif.
@@ -47,7 +48,7 @@ dans Valeur de l' [énumération CorElementType](/dotnet/framework/unmanaged-api
 `pTypeField`\
 à Retourne l’interface IDebugField pour le nouveau type.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

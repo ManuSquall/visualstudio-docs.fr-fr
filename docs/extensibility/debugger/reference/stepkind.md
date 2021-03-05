@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type d’étape pour l’exécution pas à pas.
 title: STEPKIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4c87a2c221149f8478a083d1efea6e9edfb542d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9cb230eac9e8851437614a590615ad2402923f6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965471"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225290"
 ---
 # <a name="stepkind"></a>STEPKIND
 Spécifie le type d’étape pour l’exécution pas à pas.
@@ -62,7 +63,7 @@ public enum enum_STEPKIND {
 ## <a name="remarks"></a>Notes
  Passé comme argument à la méthode [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

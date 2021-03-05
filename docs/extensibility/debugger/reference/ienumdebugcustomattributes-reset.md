@@ -1,4 +1,5 @@
 ---
+description: Rétablit le début de la séquence d’énumération des attributs personnalisés.
 title: 'IEnumDebugCustomAttributes :: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8879b910de378ae4358ca092ee2c4b3ab6204bfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3393f2b87043345156337976ed12d10928572d2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929243"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226889"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 Réinitialise la séquence d'énumération au début.

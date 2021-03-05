@@ -1,4 +1,5 @@
 ---
+description: Spécifie l’état du thread.
 title: THREADSTATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21b683e8f7797743d5ae78f932edfa5c862dbb8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36c44eaf3b5ab8d3515b2c3e2128e8ac9562492e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967681"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225253"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Spécifie l’état du thread.
@@ -67,7 +68,7 @@ public enum enum_THREADSTATE {
 ## <a name="remarks"></a>Notes
  Utilisé pour le `dwThreadState` champ de la structure [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

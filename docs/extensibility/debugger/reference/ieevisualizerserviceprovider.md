@@ -1,4 +1,5 @@
 ---
+description: Cette interface donne accès à une méthode qui peut créer un service de visualiseur, qui est utilisé pour gérer les tâches de visualiseur de type pour l’IDE.
 title: IEEVisualizerServiceProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e811d33d23b35553ffb23338bed19dc207e1e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4fc53ae13588a0e285e4a62691da4d88a94d5f5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907800"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227175"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -43,12 +44,12 @@ IEEVisualizerServiceProvider : IUnknown
 |------------|-----------------|
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Crée le service du visualiseur|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L' `IEEVisualizerServiceProvider` interface est obtenue pendant l’implémentation de [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Le service du visualiseur créé par cette interface est utilisé pour fournir des fonctionnalités à une interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , que l’EE est chargée d’implémenter. EE est également chargé d’implémenter une interface [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) qui permet aux visualiseurs de type d’afficher et de modifier la valeur d’une propriété.
 
  Pour plus d’informations sur la façon dont ces interfaces interagissent [, consultez visualisation et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : EE. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop
