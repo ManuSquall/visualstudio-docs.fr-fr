@@ -1,4 +1,5 @@
 ---
+description: Cette fonction détermine quels répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, à partir d’une liste de répertoires à examiner.
 title: SccPopulateDirList fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 991803511e48e72012c868eaa4b0afbd889b2380
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836915"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221507"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
 Cette fonction détermine quels répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, à partir d’une liste de répertoires à examiner.
@@ -60,15 +61,15 @@ dans Valeur qui doit être passée sans modification à la fonction de rappel.
 
 dans Combinaison de valeurs qui contrôlent le mode de traitement des répertoires (consultez la section « indicateurs PopulateDirList » de [indicateurs utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’opération s’est terminée correctement.|
 |SCC_E_UNKNOWNERROR|Une erreur est survenue.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Seuls les répertoires et (éventuellement) les noms de fichiers qui se trouvent dans le référentiel de contrôle de code source sont passés à la fonction de rappel.
 
 ## <a name="see-also"></a>Voir aussi

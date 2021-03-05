@@ -1,4 +1,5 @@
 ---
+description: Cette fonction ajoute de nouveaux fichiers au système de contrôle de code source.
 title: SccAdd fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926857"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221721"
 ---
 # <a name="sccadd-function"></a>SccAdd fonction)
 Cette fonction ajoute de nouveaux fichiers au système de contrôle de code source.
@@ -68,7 +69,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’opération d’ajout a réussi.|
 |SCC_E_FILEALREADYEXISTS|Le fichier sélectionné est déjà sous contrôle de code source.|

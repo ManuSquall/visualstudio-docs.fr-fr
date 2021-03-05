@@ -1,4 +1,5 @@
 ---
+description: Cette fonction supprime les fichiers du système de contrôle de code source.
 title: SccRemove fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67b0691c3f58ad859051f0018e7b32a5a4e087da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f55b82ae428870f1d5a08feaa3ae1ef7eb0b5f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836707"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221416"
 ---
 # <a name="sccremove-function"></a>Fonction SccRemove
 Cette fonction supprime les fichiers du système de contrôle de code source.
@@ -65,10 +66,10 @@ dans Indicateurs de commande (inutilisé).
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|La suppression a réussi.|
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|
@@ -79,7 +80,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_NONSPECIFICERROR|Échec non spécifique ; le fichier n’a pas été supprimé.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette fonction supprime les fichiers du système de contrôle de code source, mais ne les supprime pas du disque dur local de l’utilisateur.
 
 ## <a name="see-also"></a>Voir aussi

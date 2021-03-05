@@ -1,4 +1,5 @@
 ---
+description: Étend le IDebugTypeFieldBuilder pour pouvoir créer des types de tableau.
 title: IDebugTypeFieldBuilder2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321004d1d0ef37597d477cff71435091a3123ccf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e73642024cb379e804559ba8dd55eb44722cf580
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965640"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223002"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 Étend le **IDebugTypeFieldBuilder** pour pouvoir créer des types de tableau.
@@ -36,7 +37,7 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
 |------------|-----------------|
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crée un tableau du type et de la taille spécifiés.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : SH. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

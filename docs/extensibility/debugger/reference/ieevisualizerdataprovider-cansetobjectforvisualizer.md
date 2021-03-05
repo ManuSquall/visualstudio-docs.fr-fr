@@ -1,4 +1,5 @@
 ---
+description: Cette méthode détermine si le visualiseur peut avoir l’objet de données qu’il représente mis à jour.
 title: 'IEEVisualizerDataProvider :: CanSetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b6f3b3ebf41ebd3fd4c04b0cb7451f57a41fa73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0a7f69ea57e14e7a1960712631f03a3becc8b80
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222937"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 Cette méthode détermine si le visualiseur peut avoir l’objet de données qu’il représente mis à jour.
@@ -43,10 +44,10 @@ int CanSetObjectForVisualizer(
 `b`\
 à Différent de zéro ( `TRUE` ) si l’objet sur le visualiseur peut être mis à jour, zéro ( `FALSE` ) si ce n’est pas le cas.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un objet peut ne pas être modifiable s’il est lié à la mémoire en lecture seule, par exemple.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: La tâche a été annulée avant d’atteindre l’État en cours d’exécution, ou elle a confirmé son annulation et s’est terminée sans exception.
 title: Champ TASK_STATE_CANCELED | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76de853cfa1fbd524c87384da38a9438c6ac66bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e99148c223f86a0307a0588e7803a5fadf52d6a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223327"
 ---
 # <a name="task_state_canceled-field"></a>Champ TASK_STATE_CANCELED
 La tâche a été annulée avant d’atteindre l’État en cours d’exécution, ou elle a confirmé son annulation et s’est terminée sans exception.

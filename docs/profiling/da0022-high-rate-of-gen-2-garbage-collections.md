@@ -1,4 +1,5 @@
 ---
+description: Les données relatives aux performances système qui ont été collectées pendant le profilage indiquent qu’une importante quantité de mémoire allouée aux objets .NET Framework a été récupérée dans la génération 2 du garbage collection, par rapport aux garbage collections de génération 0 et 1.
 title: DA0022-taux élevé de garbage collection Gen 2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 61fb953b1eae3ecfb0aa9c87e8b10a25099cb12a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0949dcf7bf55d079037ffa9cb160edeb35294d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967005"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223670"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022 : Taux élevé de garbage collection Gen 2
 

@@ -1,4 +1,5 @@
 ---
+description: À partir d’une liste de noms de fichiers complets, cette fonction les extrait sur le lecteur local.
 title: SccCheckout fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4112190e145242da591fa3d8e4db7d054bd07466
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ed6b494957374244d98f0cca59a063e5a6648c4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943138"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221625"
 ---
 # <a name="scccheckout-function"></a>SccCheckout fonction)
 À partir d’une liste de noms de fichiers complets, cette fonction les extrait sur le lecteur local. Le commentaire s’applique à tous les fichiers en cours d’extraction. L’argument de commentaire peut être une `null` chaîne.
@@ -68,7 +69,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’extraction a réussi.|
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous le contrôle de code source.|

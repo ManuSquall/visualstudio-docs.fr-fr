@@ -1,4 +1,5 @@
 ---
+description: Cette fonction initialise le plug-in de contrôle de code source et fournit des fonctionnalités et des limites à l’environnement de développement intégré (IDE).
 title: SccInitialize fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846359"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220584"
 ---
 # <a name="sccinitialize-function"></a>Fonction SccInitialize
 Cette fonction initialise le plug-in de contrôle de code source et fournit des fonctionnalités et des limites à l’environnement de développement intégré (IDE).
@@ -70,17 +71,17 @@ dans Nom du programme appelant le plug-in de contrôle de code source.
 
 à Retourne la longueur maximale autorisée pour les autres commentaires.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Initialisation du contrôle de code source réussie.|
 |SCC_E_INITIALIZEFAILED|Le système n’a pas pu être initialisé.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer l’opération spécifiée.|
 |SCC_E_NONSPECFICERROR|Échec non spécifique ; le système de contrôle de code source n’a pas été initialisé.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’IDE appelle cette fonction lorsqu’il charge pour la première fois le plug-in de contrôle de code source. Il permet à l’IDE de transmettre certaines informations, telles que le nom de l’appelant, au plug-in. L’IDE récupère également certaines informations, telles que la longueur maximale autorisée pour les commentaires et les fonctionnalités du plug-in.
 
  `ppvContext`Pointe vers un `NULL` pointeur. Le plug-in de contrôle de code source peut allouer une structure pour sa propre utilisation et stocker un pointeur vers cette structure dans `ppvContext` . L’IDE transmet ce pointeur à toute autre fonction API VSSCI, ce qui permet au plug-in d’accéder à des informations de contexte sans avoir recours au stockage global et à prendre en charge plusieurs instances du plug-in. Cette structure doit être désallouée lors de l’appel de [SccUninitialize](../extensibility/sccuninitialize-function.md) .

@@ -1,4 +1,5 @@
 ---
+description: Cette fonction appelle l’outil d’administration du contrôle de code source.
 title: SccRunScc fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836759"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221364"
 ---
 # <a name="sccrunscc-function"></a>Fonction SccRunScc
 Cette fonction appelle l’outil d’administration du contrôle de code source.
@@ -50,10 +51,10 @@ dans Nombre de fichiers spécifiés dans le `lpFileNames` tableau.
 
 dans Tableau de noms de fichiers sélectionnés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’outil d’administration du contrôle de code source a été appelé avec succès.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée.|
@@ -63,7 +64,7 @@ dans Tableau de noms de fichiers sélectionnés.
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette fonction permet à l’appelant d’accéder à la gamme complète des fonctionnalités du système de contrôle de code source via un outil d’administration externe. Si le système de contrôle de code source n’a pas d’interface utilisateur, le plug-in de contrôle de code source peut implémenter une interface pour exécuter les fonctions d’administration nécessaires.
 
  Cette fonction est appelée avec un nombre et un tableau de noms de fichiers pour les fichiers actuellement sélectionnés. Si l’outil d’administration le prend en charge, la liste des fichiers peut être utilisée pour présélectionner des fichiers dans l’interface d’administration. dans le cas contraire, la liste peut être ignorée.

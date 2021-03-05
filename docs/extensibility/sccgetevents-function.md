@@ -1,4 +1,5 @@
 ---
+description: Cette fonction récupère un événement d’État mis en file d’attente.
 title: SccGetEvents fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 069e9399a91a39d8005d9137bd19f4032773b24a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220792"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents fonction)
 Cette fonction récupère un événement d’État mis en file d’attente.
@@ -53,7 +54,7 @@ dans Structure de contexte du plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Événements d’extraction réussis.|
 |SCC_E_OPNOTSUPPORTED|Cette fonction n'est pas prise en charge.|

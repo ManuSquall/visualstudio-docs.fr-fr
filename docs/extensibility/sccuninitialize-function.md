@@ -1,4 +1,5 @@
 ---
+description: Cette fonction nettoie toutes les allocations ou les connexions ouvertes créées par un appel précédent à SccInitialize en préparation de l’arrêt du plug-in de contrôle de code source.
 title: SccUninitialize fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7de3572b17bf47859a64451149a269988c91e5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 187451aba5151c95d8947bd4f5a1419894cc65e7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836681"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221325"
 ---
 # <a name="sccuninitialize-function"></a>Fonction SccUninitialize
 Cette fonction nettoie toutes les allocations ou les connexions ouvertes créées par un appel précédent à [SccInitialize](../extensibility/sccinitialize-function.md) en préparation de l’arrêt du plug-in de contrôle de code source.
@@ -35,14 +36,14 @@ SCCRTN SccUninitialize (
 
 dans Pointeur vers la structure de contexte du plug-in de contrôle de code source créée dans [SccInitialize](../extensibility/sccinitialize-function.md).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Le nettoyage s’est terminé correctement.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le plug-in de contrôle de code source est responsable de la préparation de l’arrêt et de la libération de mémoire allouée par le plug-in pour la structure de contexte. La fonction est appelée une fois pour chaque instance donnée d’un plug-in. Un appel à [SccInitialize](../extensibility/sccinitialize-function.md) précède cet appel. Aucun projet ne peut encore être ouvert au moment de l’appel à `SccUninitialize` .
 
 ## <a name="see-also"></a>Voir aussi

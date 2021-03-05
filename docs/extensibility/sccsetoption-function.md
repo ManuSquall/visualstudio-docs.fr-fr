@@ -1,4 +1,5 @@
 ---
+description: Cette fonction définit des options qui contrôlent le comportement du plug-in de contrôle de code source.
 title: SccSetOption fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836694"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221377"
 ---
 # <a name="sccsetoption-function"></a>Fonction SccSetOption
 Cette fonction définit des options qui contrôlent le comportement du plug-in de contrôle de code source.
@@ -45,16 +46,16 @@ dans Option définie.
 
 dans Paramètres de l’option.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’option a été correctement définie.|
 |SCC_I_SHARESUBPROJOK|Retourné si `nOption` a `SCC_OPT_SHARESUBPROJ` la valeur et que le plug-in de contrôle de code source permet à l’IDE de définir le dossier de destination.|
 |SCC_E_OPNOTSUPPORTED|L’option n’a pas été définie et ne doit pas être fiable.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’IDE appelle cette fonction pour contrôler le comportement du plug-in de contrôle de code source. Le premier paramètre, `nOption` , indique la valeur qui est définie, tandis que la seconde, `dwVal` , indique que faire avec cette valeur. Le plug-in stocke ces informations associées à un `pvContext``,` , de sorte que l’IDE doit appeler cette fonction après l’appel de [SccInitialize](../extensibility/sccinitialize-function.md) (mais pas nécessairement après chaque appel à [SccOpenProject](../extensibility/sccopenproject-function.md)).
 
  Résumé des options et de leurs valeurs :

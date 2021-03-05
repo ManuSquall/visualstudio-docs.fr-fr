@@ -1,4 +1,5 @@
 ---
+description: Spécifie comment analyser une expression.
 title: PARSEFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78890f088646842435198fa839c0f88cba5483b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 192e4de399540ce189bbf52cbb0f615b2b9bc855
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880188"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222144"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Spécifie comment analyser une expression.
@@ -54,10 +55,10 @@ public enum enum_PARSEFLAGS {
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
  Indique que l’expression est analysée au moment de la conception (autrement dit, lorsqu’un concepteur est ouvert).
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Passé en tant que paramètre aux méthodes [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) et [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

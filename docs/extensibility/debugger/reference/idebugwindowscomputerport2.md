@@ -1,4 +1,5 @@
 ---
+description: Permet d’obtenir des informations sur l’ordinateur cible.
 title: IDebugWindowsComputerPort2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90e63e8ea7b00ff7d342ef6b1a0e624779e13d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9c7e940c2284b5b39097226f9a5b0c3b34a0d18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965601"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222950"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 Permet d’obtenir des informations sur l’ordinateur cible.
@@ -36,7 +37,7 @@ IDebugWindowsComputerPort2 : IUnknown
 |------------|-----------------|
 |[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Récupère des informations sur l’ordinateur sur lequel le débogueur est en cours d’exécution.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

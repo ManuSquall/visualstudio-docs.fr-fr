@@ -1,4 +1,5 @@
 ---
+description: Décrit les attributs d’un document.
 title: TEXT_DOC_ATTR_2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7113cfead52348a1d1a85973b90014ca53226ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8351753c5e8da9a320bd93c17e8138dedaff03d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850724"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221858"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 Décrit les attributs d’un document.
@@ -40,14 +41,14 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
  `TEXT_DOC_ATTR_READONLY_2`\
  Indique que le document est en lecture seule.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 > [!NOTE]
 > Cette valeur n’est pas réellement définie dans l’assembly pour C#. Au lieu de cela, vous devez copier la définition dans votre fichier source.
 
  Passé comme argument à la méthode [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

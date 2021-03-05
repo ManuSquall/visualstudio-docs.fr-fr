@@ -1,4 +1,5 @@
 ---
+description: Détruit l’objet marker_series et libère toutes les ressources allouées.
 title: marker_series::~marker_series, destructeur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe38fa222157818a65bb2b6d58cb417d7ad346d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481ca4967e43dc1af6a994d6298f8173b96ddbf8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917639"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223951"
 ---
 # <a name="marker_seriesmarker_series-destructor"></a>marker_series::~marker_series, destructeur
 Détruit l’objet marker_series et libère toutes les ressources allouées.
@@ -28,7 +29,7 @@ Détruit l’objet marker_series et libère toutes les ressources allouées.
 ~marker_series();
 ```
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms** : Concurrency::diagnostic

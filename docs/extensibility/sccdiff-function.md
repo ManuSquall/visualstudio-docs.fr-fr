@@ -1,4 +1,5 @@
 ---
+description: Cette fonction affiche (ou vérifie éventuellement uniquement) les différences entre le fichier actif (sur le disque local) et sa dernière version archivée dans le système de contrôle de code source.
 title: SccDiff fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943112"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220844"
 ---
 # <a name="sccdiff-function"></a>SccDiff fonction)
 Cette fonction affiche (ou vérifie éventuellement uniquement) les différences entre le fichier actif (sur le disque local) et sa dernière version archivée dans le système de contrôle de code source.
@@ -58,7 +59,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|La copie de travail et la version du serveur sont identiques.|
 |SCC_I_FILESDIFFERS|La copie de travail diffère de la version sous contrôle de code source.|

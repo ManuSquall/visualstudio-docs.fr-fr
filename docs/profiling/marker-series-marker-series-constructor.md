@@ -1,4 +1,5 @@
 ---
+description: Initialise une nouvelle instance de la classe marker_series.
 title: marker_series::marker_series, constructeur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: afb15ceed45389d1c442c18cf14e8eaf4150631f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88d82c78bc6126f6b3d96b77b39c729c4f452a28
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917655"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223977"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series, constructeur
 Initialise une nouvelle instance de la classe `marker_series`.
@@ -43,7 +44,7 @@ marker_series(
 
  `_ProviderGuid` GUID du fournisseur de la série.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms** : Concurrency::diagnostic

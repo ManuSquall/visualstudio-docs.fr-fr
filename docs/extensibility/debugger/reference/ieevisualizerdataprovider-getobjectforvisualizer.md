@@ -1,4 +1,5 @@
 ---
+description: Cette méthode obtient l’objet représenté par ce visualiseur.
 title: 'IEEVisualizerDataProvider :: GetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7ac35b3bd3757e804840478c586100a3f56e656
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec4cef6cf7a0715ee31ce5a88736581a0abd610b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890927"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222911"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Cette méthode obtient l’objet représenté par ce visualiseur.
@@ -43,10 +44,10 @@ int GetObjectForVisualizer(
 `ppObject`\
 à Objet représenté par ce visualiseur
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `GetObjectForVisualizer` est autorisé à retourner une version mise en cache de l’objet. Si l’appelant souhaite s’assurer que l’objet est à jour, il appellera [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
 ## <a name="see-also"></a>Voir aussi

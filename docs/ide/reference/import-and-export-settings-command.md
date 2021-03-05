@@ -1,4 +1,5 @@
 ---
+description: Importe, exporte ou réinitialise les paramètres Visual Studio.
 title: Importation et exportation de paramètres (commande)
 ms.date: 11/21/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f2ea4811af2c44277b9a6dc285972c5267b28d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852451"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223669"
 ---
 # <a name="import-and-export-settings-command"></a>Importation et exportation de paramètres (commande)
 
@@ -34,21 +35,21 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 /export:`filename`
 
-Facultatif. Exporte les paramètres actuels dans le fichier spécifié.
+facultatif. Exporte les paramètres actuels dans le fichier spécifié.
 
 /import:`filename`
 
-Facultatif. Importe les paramètres figurant dans le fichier spécifié.
+facultatif. Importe les paramètres figurant dans le fichier spécifié.
 
 /reset
 
-Facultatif. Réinitialise les paramètres actuels.
+facultatif. Réinitialise les paramètres actuels.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 L’exécution de cette commande sans commutateur ouvre l’Assistant **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Synchroniser vos paramètres](../synchronized-settings-in-visual-studio.md) et [Paramètres d’environnement](../environment-settings.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemple : 
 
 La commande suivante exporte les paramètres actuels dans le fichier `MyFile.vssettings` :
 

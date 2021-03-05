@@ -1,4 +1,5 @@
 ---
+description: Décrit l’emplacement de la ligne et de la colonne dans le texte donné.
 title: TEXT_POSITION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ebb3b16504a76c516408f997486279f52256294f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7793870c91279b219a450463c921339b76565a62
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850711"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221845"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 Décrit l’emplacement de la ligne et de la colonne dans le texte donné.
@@ -49,7 +50,7 @@ Index de la ligne dans le fichier source.
 `dwColumn`\
 Offset de caractère dans la ligne.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Cette structure est utilisée dans les structures [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) et [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
@@ -75,7 +76,7 @@ Cette structure est passée en tant que paramètre aux méthodes suivantes :
 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
  En-tête : msdbg. h
 

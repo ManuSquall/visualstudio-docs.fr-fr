@@ -1,4 +1,5 @@
 ---
+description: Représente un canal série d’événements générés par un fournisseur unique.
 title: marker_series, classe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd4386b8eff7589993458f1f7f6baaf7f33d4a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4df579ff4eb43dfca4c386716c49f12dae04e9fa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917778"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223613"
 ---
 # <a name="marker_series-class"></a>marker_series, classe
 Représente un canal série d’événements générés par un fournisseur unique.
@@ -49,7 +50,7 @@ class marker_series;
 ## <a name="inheritance-hierarchy"></a>Hiérarchie d’héritage
  `marker_series`
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms** : Concurrency::diagnostic

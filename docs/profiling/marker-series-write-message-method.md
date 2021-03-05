@@ -1,4 +1,5 @@
 ---
+description: Écrit un message dans le fichier de trace du visualiseur concurrentiel.
 title: marker_series::write_message, méthode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5610cc623476fa395fae7bf68c2ffa127c96e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71a7e1783e470ee5ca1b7f1f18cd3d06cf1b5f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927897"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223873"
 ---
 # <a name="marker_serieswrite_message-method"></a>marker_series::write_message, méthode
 Écrit un message dans le fichier de trace du visualiseur concurrentiel.
@@ -54,7 +55,7 @@ void write_message(
 
  `_Category` Niveau Category.Importance.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms** : Concurrency::diagnostic

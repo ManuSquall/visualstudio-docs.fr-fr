@@ -1,4 +1,5 @@
 ---
+description: Spécifie la version minimale du .NET Framework requis par le modèle.
 title: Élément RequiredFrameworkVersion (modèles Visual Studio)
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 211393ea65f7ca31f80134c48863b0092478b3f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3700735f987da7320d569b2cee020f0d8a072bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836980"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221794"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Élément RequiredFrameworkVersion (modèles Visual Studio)
 
@@ -57,11 +58,11 @@ Spécifie la version minimale du .NET Framework requis par le modèle. Cela entr
 
  Le texte doit être le numéro de version minimal du .NET Framework requis pour le modèle.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 `RequiredFrameworkVersion` est un élément facultatif. Utilisez cet élément uniquement si le modèle prend en charge une version minimale spécifique (et les versions ultérieures, le cas échéant) du .NET Framework. Si vous spécifiez l' `RequiredFrameworkVersion` élément et que votre modèle ne prend pas en charge une version minimale spécifique du .NET Framework, la liste déroulante **version du Framework cible** s’affiche lorsqu’elle n’est pas applicable.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemple : 
 
 L’exemple suivant illustre les métadonnées pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modèle de classe standard.
 

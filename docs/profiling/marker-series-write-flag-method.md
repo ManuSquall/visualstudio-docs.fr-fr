@@ -1,4 +1,5 @@
 ---
+description: Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.
 title: marker_series::write_flag, méthode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99601d34a3ad996d8e9e7cd4baf02e51423d8b3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5223c466674ba0d7d623cc33a3989d359bbabea2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923714"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223886"
 ---
 # <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag, méthode
 Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.
@@ -54,7 +55,7 @@ void write_flag(
 
  `_Category` Catégorie.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms** : Concurrency::diagnostic

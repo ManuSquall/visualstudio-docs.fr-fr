@@ -1,4 +1,5 @@
 ---
+description: Cette fonction Archive les fichiers précédemment extraits dans le système de contrôle de code source, en stockant les modifications et en créant une nouvelle version.
 title: SccCheckin fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68b03f594ad686f2b3e23aab52cabfe4fa5d92a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a835ead5fb0404b78d9e9c9ecc92ee0c73eaf252
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952107"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220857"
 ---
 # <a name="scccheckin-function"></a>SccCheckin fonction)
 Cette fonction Archive les fichiers précédemment extraits dans le système de contrôle de code source, en stockant les modifications et en créant une nouvelle version. Cette fonction est appelée avec un nombre et un tableau de noms des fichiers à archiver.
@@ -68,7 +69,7 @@ dans Options spécifiques au plug-in SCC.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Le fichier a été archivé avec succès.|
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous le contrôle de code source.|

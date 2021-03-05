@@ -1,4 +1,5 @@
 ---
+description: Cette fonction obtient le numéro de version de l’API de plug-in de contrôle de code source pris en charge par le plug-in de contrôle de code source.
 title: SccGetVersion fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91daeca1df76f6b624d0eddf9d28222369b2cc4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a71d3374ffd65e0e7b9a7b2e654885d84e370a9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844539"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220597"
 ---
 # <a name="sccgetversion-function"></a>Fonction SccGetVersion
 Cette fonction obtient le numéro de version de l’API de plug-in de contrôle de code source pris en charge par le plug-in de contrôle de code source.
@@ -31,7 +32,7 @@ LONG SccGetVersion(void);
 #### <a name="parameters"></a>Paramètres
  Aucun.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  `LONG`Type de données qui contient le numéro de version de l’API de plug-in de contrôle de code source pris en charge :
 
 |WORD|Description|
@@ -39,7 +40,7 @@ LONG SccGetVersion(void);
 |HIWORD|Version principale|
 |LOWORD|Version secondaire|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Par exemple, si un plug-in de contrôle de code source prend en charge la version 1,3 de l’API de plug-in de contrôle de code source, cette fonction retourne 0x0103.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Cette fonction invite l’utilisateur à fournir des options avancées pour une commande donnée.
 title: SccGetCommandOptions fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965198"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220805"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions fonction)
 Cette fonction invite l’utilisateur à fournir des options avancées pour une commande donnée.
@@ -53,7 +54,7 @@ dans Structure de l’option (peut également être `NULL` ).
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Réussite.|
 |SCC_I_ADV_SUPPORT|Le plug-in de contrôle de code source prend en charge les options avancées de la commande.|

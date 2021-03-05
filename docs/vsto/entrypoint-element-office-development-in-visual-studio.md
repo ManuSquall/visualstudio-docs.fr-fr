@@ -1,4 +1,5 @@
 ---
+description: Chaque élément entryPoint de l’espace de noms vstav3 identifie un assembly de personnalisation qui doit être exécuté lorsque cette application ClickOnce est installée.
 title: '&lt;entryPoint &gt; , élément (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a75729d4be4aa96c3c118fed126af3ff84c18bcb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 581274ea58dafa8021cb456a0c7cb1e6bf98da32
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910469"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223717"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint &gt; , élément (développement Office dans Visual Studio)
   Chaque élément `entryPoint` de l’espace de noms `vstav3` identifie un assembly de personnalisation qui doit être exécuté lorsque cette application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] est installée.

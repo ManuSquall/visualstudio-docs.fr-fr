@@ -1,4 +1,5 @@
 ---
+description: Cette méthode retourne une copie de l’énumération de champs en cours sous la forme d’un objet distinct.
 title: 'IEnumDebugFields :: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2a9cc66e0e3b56d27c71147bd1b77ee3e559b6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 965bc201646c7e068c58f9238dccba9a9e587d26
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896948"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224900"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Cette méthode retourne une copie de l’énumération actuelle sous la forme d’un objet distinct.
@@ -46,7 +47,7 @@ int Clone(
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La copie de l’énumération a le même État que l’original au moment où cette méthode est appelée. Toutefois, le de la copie et les États de l’original sont séparés et peuvent être modifiés individuellement.
 
 ## <a name="see-also"></a>Voir aussi

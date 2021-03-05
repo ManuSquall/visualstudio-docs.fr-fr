@@ -1,4 +1,5 @@
 ---
+description: Cette fonction invite l’utilisateur à entrer un chemin d’accès au projet, qui est une chaîne qui est significative uniquement pour le plug-in de contrôle de code source.
 title: SccGetProjPath fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844565"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220701"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath fonction)
 Cette fonction invite l’utilisateur à entrer un chemin d’accès au projet, qui est une chaîne qui est significative uniquement pour le plug-in de contrôle de code source. Elle est appelée lorsque l’utilisateur est :
@@ -86,10 +87,10 @@ dans Si c’est `TRUE` le cas, le plug-in de contrôle de code source peut deman
 |TRUE|Un nouveau projet a été créé.|
 |FALSE|Un projet existant a été sélectionné.|
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Le projet a été correctement créé ou récupéré.|
 |SCC_I_OPERATIONCANCELED|L'opération a été annulée.|
@@ -97,7 +98,7 @@ dans Si c’est `TRUE` le cas, le plug-in de contrôle de code source peut deman
 |SCC_E_CONNECTIONFAILURE|Un problème est survenu lors de la tentative de connexion au système de contrôle de code source.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée s'est produite.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’objectif de cette fonction est que l’IDE obtienne les paramètres `lpProjName` et `lpAuxProjPath` . Une fois que le plug-in de contrôle de code source demande ces informations à l’utilisateur, il transmet ces deux chaînes à l’IDE. L’IDE conserve ces chaînes dans son fichier solution et les transmet à [SccOpenProject](../extensibility/sccopenproject-function.md) chaque fois que l’utilisateur ouvre ce projet. Ces chaînes permettent au plug-in de suivre les informations associées à un projet.
 
  Lorsque la fonction est appelée pour la première fois, la `lpAuxProjPath` valeur est une chaîne vide. `lProjName` peut également être vide ou contenir le nom du projet IDE, que le plug-in de contrôle de code source peut utiliser ou ignorer. Quand la fonction retourne avec succès, le plug-in retourne les deux chaînes correspondantes. L’IDE n’émet aucune hypothèse sur ces chaînes, ne les utilise pas et n’autorise pas l’utilisateur à les modifier. Si l’utilisateur souhaite modifier les paramètres, l’environnement de développement intégré (IDE) rappellera les `SccGetProjPath` mêmes valeurs qu’il avait reçues l’heure précédente. Cela donne au plug-in un contrôle total sur ces deux chaînes.

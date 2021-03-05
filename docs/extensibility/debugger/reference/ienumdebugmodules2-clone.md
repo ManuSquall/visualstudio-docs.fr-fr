@@ -1,4 +1,5 @@
 ---
+description: Retourne une copie de l’énumération des modules en cours sous la forme d’un objet distinct.
 title: 'IEnumDebugModules2 :: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f008cef55d45257ddd18dec69d6e72be8095ed57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699afcaabdf88ca8b2b6ea60b6ad06dfcb12e3bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932826"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224887"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 Retourne une copie de l'énumération actuelle comme un objet distinct.
@@ -43,7 +44,7 @@ int Clone(
 `ppEnum`\
 [out] Retourne une copie de cette énumération en tant qu'objet distinct.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

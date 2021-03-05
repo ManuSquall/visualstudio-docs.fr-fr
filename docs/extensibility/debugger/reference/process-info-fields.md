@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type d’informations à récupérer pour un processus.
 title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 451a6ea5334006bb23e8961595f4de85c985b8ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5869ede1e43cc6b47f271691de51b948d72a7849
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895945"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222105"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 Spécifie le type d’informations à récupérer pour un processus.
@@ -84,14 +85,14 @@ public enum enum_PROCESS_INFO_FIELDS {
  `PIF_ALL`\
  Remplit tous les champs.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Passé à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) pour indiquer les champs de la structure [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) qui doivent être initialisés.
 
  Également utilisé dans `Fields` le champ de la `PROCESS_INFO` structure pour indiquer les champs qui sont utilisés et valides.
 
  Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

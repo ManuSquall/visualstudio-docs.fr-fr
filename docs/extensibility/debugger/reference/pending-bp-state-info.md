@@ -1,4 +1,5 @@
 ---
+description: Contient des informations sur l’état d’un point d’arrêt qui est prêt à être lié à un emplacement de code.
 title: PENDING_BP_STATE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7c1e2b8b537607f6dc57d807d276c5b72ccb144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: edd4bbdde1c241d90329343be1fd5570129c675a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968565"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223925"
 ---
 # <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 Contient des informations sur l’état d’un point d’arrêt qui est prêt à être lié à un emplacement de code.
@@ -51,7 +52,7 @@ public struct PENDING_BP_STATE_INFO {
 ## <a name="remarks"></a>Notes
  Cette structure est transmise à la méthode [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) où elle est remplie.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

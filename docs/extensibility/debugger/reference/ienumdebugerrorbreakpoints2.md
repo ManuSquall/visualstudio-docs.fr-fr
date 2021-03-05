@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les points d’arrêt d’erreur associés à un point d’arrêt en attente.
 title: IEnumDebugErrorBreakpoints2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ff6805537327b29b1d43b1bf4009b431452fc1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d770f9613dad30d46f1788aeecb67997388eea75
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896973"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224913"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 Cette interface énumère les points d’arrêt d’erreur associés à un point d’arrêt en attente.
@@ -45,10 +46,10 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 |[Répliqué](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|Obtient le nombre de points d’arrêt sur erreur dans un énumérateur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette interface contient une liste d’interfaces [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) , chacune décrivant un point d’arrêt qui n’a pas pu être lié et la raison pour laquelle elle n’a pas pu être liée. Visual Studio utilise l' `IEnumDebugErrorBreakpoint2` interface pour mettre à jour les points d’arrêt affichés dans l’IDE.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

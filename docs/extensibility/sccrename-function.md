@@ -1,4 +1,5 @@
 ---
+description: Cette fonction renomme un fichier dans le système de contrôle de code source.
 title: SccRename fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836746"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221338"
 ---
 # <a name="sccrename-function"></a>Fonction SccRename
 Cette fonction renomme un fichier dans le système de contrôle de code source.
@@ -50,10 +51,10 @@ dans Nom de fichier complet du fichier renommé.
 
 [in] Nom qualifié complet du nouveau nom. Si le chemin d’accès au répertoire est différent, le fichier a été déplacé d’un sous-répertoire à un autre.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’opération de changement de nom s’est terminée avec succès.|
 |SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert sous le contrôle de code source.|
@@ -64,7 +65,7 @@ dans Nom de fichier complet du fichier renommé.
 |SCC_E_OPNOTPERFORMED|L’opération n’a pas été effectuée.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette fonction peut être utilisée pour renommer un fichier ou le déplacer d’un emplacement à un autre dans le système de contrôle de code source. Le plug-in de contrôle de code source ne doit pas tenter d’accéder au fichier sur le disque. Il incombe à l’IDE de renommer le fichier local.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Spécifie l’unité d’étape pour l’exécution pas à pas.
 title: STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f42c6af308770132343e18b95a9f839717f6d401
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f628039cdd9715d9463b0def9912da8f78ef6b84
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221884"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Spécifie l’unité d’étape pour l’exécution pas à pas.
@@ -54,10 +55,10 @@ enum enum_STEPUNIT {
  `STEP_INSTRUCTION`\
  Étapes par instruction.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Passé comme argument à la méthode [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Cette fonction détermine le chemin d’accès au projet parent d’un projet spécifié.
 title: SccGetParentProjectPath fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958399"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220610"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath fonction)
 Cette fonction détermine le chemin d’accès au projet parent d’un projet spécifié. Cette fonction est appelée lorsque l’utilisateur ajoute un projet Visual Studio au contrôle de code source.
@@ -63,7 +64,7 @@ dans Chaîne identifiant le chemin d’accès au projet (jusqu’à SCC_PRJPATH_
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Le chemin d’accès au projet parent a été obtenu avec succès.|
 |SCC_E_INITIALIZEFAILED|Impossible d’initialiser le projet.|

@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les programmes en cours d’exécution dans la session de débogage en cours.
 title: IEnumDebugPrograms2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890745"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224224"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Cette interface énumère les programmes en cours d’exécution dans la session de débogage en cours.
@@ -45,7 +46,7 @@ IEnumDebugPrograms2 : IUnknown
 |[Répliqué](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Obtient le nombre de programmes dans un énumérateur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Visual Studio utilise cette interface pour :
 
 - Remplissez la fenêtre **modules** (en appelant [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) , puis en appelant [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) sur chaque programme).
@@ -56,7 +57,7 @@ IEnumDebugPrograms2 : IUnknown
 
 - Appliquez les mises à jour de modifier & Continuer (ENC) à chaque programme (en appelant IDebugProcess2 :: EnumPrograms, puis en appelant [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Cette fonction détermine si le plug-in de contrôle de code source prend en charge la création du MSSCCPRJ. Fichier SCC pour chacun des fichiers donnés.
 title: SccWillCreateSccFile fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ef18e44579525df136bd770cda96124cb30c87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee01478858615aad135d07a5c10d5d6c58280926
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221286"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Fonction SccWillCreateSccFile
 Cette fonction détermine si le plug-in de contrôle de code source prend en charge la création du MSSCCPRJ. Fichier SCC pour chacun des fichiers donnés.
@@ -50,10 +51,10 @@ dans Tableau de noms de fichiers qualifiés complets à vérifier (le tableau do
 
 [in, out] Tableau dans lequel stocker les résultats.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Réussite.|
 |SCC_E_INVALIDFILEPATH|L’un des chemins d’accès dans le tableau n’est pas valide.|

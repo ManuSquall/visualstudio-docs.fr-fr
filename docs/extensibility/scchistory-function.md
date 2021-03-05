@@ -1,4 +1,5 @@
 ---
+description: Cette fonction affiche l’historique des fichiers spécifiés.
 title: SccHistory fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b7e1cd6fa6d5b9b3a5ab42cd1b4cafec215deca
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893566"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220571"
 ---
 # <a name="scchistory-function"></a>Fonction SccHistory
 Cette fonction affiche l’historique des fichiers spécifiés.
@@ -60,10 +61,10 @@ dans Indicateurs de commande (actuellement non utilisés).
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’historique des versions a été obtenu avec succès.|
 |SCC_I_RELOADFILE|Le système de contrôle de code source a en fait modifié le fichier sur le disque lors de la récupération de l’historique (par exemple, en obtenant une version antérieure), l’IDE doit donc recharger ce fichier.|
@@ -74,7 +75,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert.|
 |SCC_E_NONSPECIFICERROR|Échec non spécifique. Impossible d’obtenir l’historique des fichiers.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le plug-in de contrôle de code source peut afficher sa propre boîte de dialogue pour afficher l’historique de chaque fichier, en utilisant `hWnd` comme fenêtre parente. Vous pouvez également utiliser la fonction de rappel de sortie de texte facultative fournie à [SccOpenProject](../extensibility/sccopenproject-function.md) , si elle est prise en charge.
 
  Notez que dans certains cas, le fichier en cours d’examen peut changer pendant l’exécution de cet appel. Par exemple, la [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] commande History donne à l’utilisateur la possibilité d’obtenir une ancienne version du fichier. Dans ce cas, le plug-in de contrôle de code source retourne `SCC_I_RELOAD` pour avertir l’IDE qu’il doit recharger le fichier.
