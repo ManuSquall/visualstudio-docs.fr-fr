@@ -1,4 +1,5 @@
 ---
+description: Le kit de développement logiciel (SDK) debug interface Access (DIA) fournit une documentation pédagogique et un exemple qui illustre l’utilisation de l’API DIA.
 title: Prise en main (kit de développement logiciel de debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a60e7b685fe277cfe44e5dd3ab1c4825dba67af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82c206a823b39eda744fcd6be8a1085f6c6a0c45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865313"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151134"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Mise en route (Kit de développement logiciel de Debug Interface Access)
 Le kit de développement logiciel (SDK) debug interface Access (DIA) fournit une documentation pédagogique et un exemple qui illustre l’utilisation de l’API DIA. Utilisez les interfaces et les méthodes dans le kit de développement logiciel (SDK) DIA pour développer des applications personnalisées qui ouvrent les fichiers. pdb et. dbg et recherchent dans leur contenu des symboles, des valeurs, des attributs, des adresses et d’autres informations de débogage. Ce kit de développement logiciel (SDK) fournit également des tables de référence pour les propriétés associées aux symboles trouvés dans les applications C++.
