@@ -1,4 +1,5 @@
 ---
+description: Un emplacement dans le code de programme est identifié par un symbole SymTagLabel.
 title: Label (kit de développement logiciel Debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 254be1bd88151b962cf563de3ff8aa26a983bc1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f63adb3873cc94ea5631603b50387e5c9614a646
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862366"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155410"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Étiquette (Kit de développement logiciel de Debug Interface Access)
 Un emplacement dans le code de programme est identifié par un `SymTagLabel` symbole.

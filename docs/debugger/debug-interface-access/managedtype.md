@@ -1,4 +1,5 @@
 ---
+description: Un type managé (tout symbole défini par des métadonnées, ou natif pour la fonctionnalité de gestion des ressources et de la mémoire des langages tels que C#) est identifié par un symbole SymTagManagedType.
 title: ManagedType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8488c912b502fccbc91ef3a61d0e3d635f925e04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5285cc971b87054e5e024e2bbb787fa2023e1885
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853239"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155375"
 ---
 # <a name="managedtype"></a>ManagedType
 Un type managé (tout symbole défini par des métadonnées, ou natif pour la fonctionnalité de gestion des ressources et de la mémoire des langages tels que C#) est identifié par un `SymTagManagedType` symbole.

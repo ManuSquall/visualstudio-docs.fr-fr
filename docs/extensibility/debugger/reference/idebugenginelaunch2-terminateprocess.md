@@ -1,4 +1,5 @@
 ---
+description: 'IDebugEngineLaunch2 :: TerminateProcess termine un processus.'
 title: 'IDebugEngineLaunch2 :: TerminateProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19222c3cc6ec7e3b09cfa16bdb82820ecc702451
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 761e3c35e6f433f4bbaa280026e5879413231334
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892799"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153519"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 Termine un processus.
@@ -43,10 +44,10 @@ int TerminateProcess (
 `pProcess`\
 dans Objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) qui représente le processus à arrêter.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Appelez la méthode [CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md) avant d’appeler cette méthode.
 
 ## <a name="see-also"></a>Voir aussi

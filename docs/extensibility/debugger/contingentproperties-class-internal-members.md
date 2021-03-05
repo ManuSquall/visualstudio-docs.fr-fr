@@ -1,4 +1,5 @@
 ---
+description: Contient des propriétés supplémentaires pour un objet System. Threading. Tasks. Task.
 title: Classe ContingentProperties-membres internes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f332c715c8a182b30191cd96c8f1d1438cbdefd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2303318c7a5f36027ce7709c5b09b5846fc6fab6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930484"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154975"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties-membres internes
 Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.Task> objet.

@@ -1,6 +1,6 @@
 ---
 title: Déterminer si mes pointeurs endommagent une adresse mémoire | Microsoft Docs
-Description: Pour déterminer si votre pointeur endommage la mémoire, vous pouvez rechercher une altération du tas, et vous pouvez définir un point d’arrêt sur variable pour déterminer comment une valeur est modifiée.
+description: Pour déterminer si votre pointeur endommage la mémoire, vous pouvez rechercher une altération du tas, et vous pouvez définir un point d’arrêt sur variable pour déterminer comment une valeur est modifiée.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1857d349f339a537748f11154b43f7d30c7bdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d95e38c6393d6576f2867aad5d1224940f33cebc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910040"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155198"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ?
 ## <a name="problem-description"></a>Description du problème

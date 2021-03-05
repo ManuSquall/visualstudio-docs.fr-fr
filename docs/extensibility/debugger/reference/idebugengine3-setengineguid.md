@@ -1,4 +1,5 @@
 ---
+description: Cette méthode définit le GUID du moteur de débogage.
 title: 'IDebugEngine3 :: SetEngineGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aaf50076978d5a6d4562eddf54de4651b3c6410
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b1f614de2349d7bfae8339d516c991b2906ffe4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887209"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153714"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 Cette méthode définit le (DE) du moteur de débogage `GUID` .
@@ -43,7 +44,7 @@ int SetEngineGuid(
 `guidEngine`\
 [in] `GUID` du moteur.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

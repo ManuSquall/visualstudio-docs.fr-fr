@@ -1,4 +1,5 @@
 ---
+description: Obtient le champ auquel l’attribut personnalisé est attaché.
 title: 'IDebugCustomAttribute :: GetParentField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9845954a2be9ec57edb6ca555fb89a6ad20f7d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4af4569b64a41fc84a09c7e8f2ce0a8f6b42e86
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842470"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154507"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Obtient le champ auquel l’attribut personnalisé est attaché.
@@ -43,10 +44,10 @@ int GetParentField(
 `ppField`\
 à Retourne l’objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente le champ auquel l’attribut personnalisé est attaché.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Appelez la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sur l’objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) retourné pour déterminer le type de champ du parent.
 
 ## <a name="see-also"></a>Voir aussi

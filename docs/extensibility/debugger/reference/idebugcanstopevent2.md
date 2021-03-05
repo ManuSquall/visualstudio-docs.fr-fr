@@ -1,4 +1,5 @@
 ---
+description: Cette interface est utilisée pour demander au gestionnaire de débogage de session (SDM) s’il doit s’arrêter à l’emplacement de code actuel.
 title: IDebugCanStopEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903237"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154845"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Cette interface est utilisée pour demander au gestionnaire de débogage de session (SDM) s’il doit s’arrêter à l’emplacement de code actuel.
@@ -46,7 +47,7 @@ IDebugCanStopEvent2 : IUknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtient le contexte de document qui décrit l’emplacement de cet événement.|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtient le contexte de code qui décrit l’emplacement de cet événement.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le DE envoie cette interface si l’utilisateur effectue un pas à pas détaillé dans une fonction et que le DE ne trouve pas d’informations de débogage ou si des informations de débogage existent, mais que ne sait pas si le code source peut être affiché pour cet emplacement.
 
 ## <a name="requirements"></a>Configuration requise

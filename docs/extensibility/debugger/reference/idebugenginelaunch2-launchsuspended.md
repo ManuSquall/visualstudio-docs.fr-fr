@@ -1,4 +1,5 @@
 ---
+description: Cette méthode lance un processus au moyen du moteur de débogage (DE).
 title: 'IDebugEngineLaunch2 :: LaunchSuspended | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fd8b610f99161a9716b9bffc235196165306711
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892825"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153584"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Cette méthode lance un processus au moyen du moteur de débogage (DE).
@@ -103,10 +104,10 @@ dans Objet [IDebugEventCallback2](../../../extensibility/debugger/reference/ideb
 `ppDebugProcess`\
 à Retourne l’objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) résultant qui représente le processus lancé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Normalement, [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] lance un programme à l’aide de la méthode [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) , puis attache le débogueur au programme suspendu. Toutefois, dans certains cas, le moteur de débogage peut avoir besoin de lancer un programme (par exemple, si le moteur de débogage fait partie d’un interpréteur et si le programme en cours de débogage est un langage interprété), auquel cas [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] utilise la `IDebugEngineLaunch2::LaunchSuspended` méthode.
 
  La méthode [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) est appelée pour démarrer le processus une fois que le processus a été lancé avec succès dans un état suspendu.

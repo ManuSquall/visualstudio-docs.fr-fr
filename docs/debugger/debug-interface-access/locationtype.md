@@ -1,4 +1,5 @@
 ---
+description: Indique le type d’informations d’emplacement contenu dans un symbole.
 title: LocationType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aafc62f5920db70bd881bd3a541cfcfabfac360
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f111e269f0a61e827a6d1334aee8b9250f3f46f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862345"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155382"
 ---
 # <a name="locationtype"></a>LocationType
 Indique le type d’informations d’emplacement contenu dans un symbole.
@@ -66,7 +67,7 @@ enum LocationType {
 
 `LocTypeMax` Nombre de types d’emplacement dans cette énumération.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les propriétés disponibles pour l’interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dépendent de l’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md).
 
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .

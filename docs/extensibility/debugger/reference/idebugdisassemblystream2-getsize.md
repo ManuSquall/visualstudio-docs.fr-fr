@@ -1,4 +1,5 @@
 ---
+description: Obtient la taille dans les instructions de ce flux de code machine.
 title: 'IDebugDisassemblyStream2 :: obtient | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6d97c41023f0bc8ca80c36a5bfaf33735f48d07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94207c8e14306049068e838971aa778290de2ba6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901710"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154364"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 Obtient la taille dans les instructions de ce flux de code machine.
@@ -43,10 +44,10 @@ int GetSize(
 `pnSize`\
 à Retourne la taille, dans les instructions.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La valeur retournée par cette méthode peut être utilisée pour allouer un tableau de structures [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) qui est ensuite passé à la méthode [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
 ## <a name="see-also"></a>Voir aussi

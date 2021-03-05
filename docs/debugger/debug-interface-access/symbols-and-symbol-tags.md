@@ -1,4 +1,5 @@
 ---
+description: Les informations de débogage relatives à un programme compilé sont stockées dans le fichier de base de données du programme (. pdb) sous forme de symboles accessibles à l’aide des API du kit de développement logiciel (SDK) debug interface Access (DIA).
 title: Symboles et balises de symboles | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f1927e4290ff9d008eff9f497c9d570d9d44f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98631149e5a53c13bfc9b12b0d6de165c345e29a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862282"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155284"
 ---
 # <a name="symbols-and-symbol-tags"></a>Balises Symbols et Symbol
 Les informations de débogage relatives à un programme compilé sont stockées dans le fichier de base de données du programme (. pdb) sous forme de symboles accessibles à l’aide des API du kit de développement logiciel (SDK) debug interface Access (DIA). Tous les symboles ont un [IDiaSymbol :: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) et une propriété [IDiaSymbol :: get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) . La `symTag` propriété indique le type de symbole tel que défini par l’énumération d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) . La `symIndexId` propriété est une `DWORD` valeur qui contient l’identificateur unique pour chaque instance d’un symbole.

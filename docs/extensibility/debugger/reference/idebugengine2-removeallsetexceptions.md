@@ -1,4 +1,5 @@
 ---
+description: Supprime la liste des exceptions que l’IDE a définies pour une architecture ou un langage d’exécution spécifique.
 title: 'IDebugEngine2 :: RemoveAllSetExceptions | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca4fbf706fb9172aea2ac7a1304f1643a0061dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7832dd89ddfbdb15908934ff3ba36ab309d08fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878953"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153961"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 Supprime la liste des exceptions que l’IDE a définies pour une architecture ou un langage d’exécution spécifique.
@@ -43,10 +44,10 @@ int RemoveAllSetExceptions(
 `guidType`\
 dans GUID du langage ou GUID pour le moteur de débogage qui est spécifique à une architecture au moment de l’exécution.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les exceptions supprimées par cette méthode ont été définies par des appels antérieurs à la méthode [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .
 
  Pour supprimer une exception spécifique, appelez la méthode [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) .

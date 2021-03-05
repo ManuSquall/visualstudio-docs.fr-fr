@@ -1,4 +1,5 @@
 ---
+description: Cette interface fournit plusieurs méthodes pour accéder aux fonctionnalités de serveur et de notification d’un port.
 title: IDebugDefaultPort2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca0b999f4c5878debbdee556431d56b7977c719
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ec637daa197574710978af7cb22195c969f48b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901854"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154416"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Cette interface fournit plusieurs méthodes pour accéder aux fonctionnalités de serveur et de notification d’un port.
@@ -43,7 +44,7 @@ IDebugDefaultPort2 : IDebugPort2
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtient l’interface du serveur qui héberge ce port.|
 |[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Détermine si ce port est en cours d’exécution sur l’ordinateur local.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le nom « `IDebugDefaultPort2` » est un peu d’un impropre, car il ne représente pas un port par défaut. Elle peut être appelée « IDebugPort3 ».
 
 ## <a name="requirements"></a>Configuration requise

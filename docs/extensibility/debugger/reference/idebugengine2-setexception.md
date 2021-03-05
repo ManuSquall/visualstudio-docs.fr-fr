@@ -1,4 +1,5 @@
 ---
+description: Spécifie comment le moteur DE débogage (DE) doit gérer une exception donnée.
 title: 'IDebugEngine2 :: SetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e2a6dbd5d5700d4d64625490c016da2d04af6d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 543cccbbefd12accd75213f255f8e3b677cdea38
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878940"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153935"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Spécifie comment le moteur DE débogage (DE) doit gérer une exception donnée.
@@ -43,10 +44,10 @@ int SetException(
 `pException`\
 dans Structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui décrit l’exception et comment la déboguer.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un peut être demandé d’arrêter le programme qui génère une exception à la première chance, la deuxième chance ou pas du tout.
 
 ## <a name="see-also"></a>Voir aussi

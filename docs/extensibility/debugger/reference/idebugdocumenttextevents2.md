@@ -1,4 +1,5 @@
 ---
+description: Cette interface permet de notifier à Visual Studio les modifications apportées au document source qui sont fournies par le moteur de débogage.
 title: IDebugDocumentTextEvents2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bcbe6e44923172c3eac4da605848e972216837cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904012"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154182"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Cette interface permet de notifier à Visual Studio les modifications apportées au document source qui sont fournies par le moteur de débogage.
@@ -46,7 +47,7 @@ IDebugDocumentTextEvents2 : IUnknown
 |[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|Informe le package de débogage que des attributs de texte ont été mis à jour dans le document.|
 |[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|Avertit le destinataire de l’événement que les attributs du document ont été mis à jour.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Seuls les moteurs de débogage qui fournissent leurs propres documents tirent parti de l' `IDebugDocumentTextEvent2` interface. Par exemple, un moteur de débogage de script. Dans le processus d’interprétation des scripts, il est possible de générer un nouveau code source qui n’est présent dans aucun fichier disque et qui est connu uniquement du DE.
 
 ## <a name="requirements"></a>Configuration requise

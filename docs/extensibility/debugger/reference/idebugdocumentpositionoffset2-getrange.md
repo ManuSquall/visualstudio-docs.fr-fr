@@ -1,4 +1,5 @@
 ---
+description: Récupère la plage pour la position actuelle du document.
 title: 'IDebugDocumentPositionOffset2 :: GetRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ecb1e4aace5fb0c4f8c76b53a597b5b4b62110f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c56ac73d85f9cfbfdc17d40da9f0fec415e057d7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879031"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154234"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Récupère la plage pour la position actuelle du document.
@@ -46,10 +47,10 @@ public int GetRange(
 `pdwEndOffset`\
 [in, out] Décalage de la position de fin de la plage. Affectez à ce paramètre une valeur null si ces informations ne sont pas nécessaires.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La plage spécifiée dans une position de document pour un point d’arrêt d’emplacement est utilisée par le moteur de débogage (DE) pour rechercher une instruction qui contribue en fait au code. Considérons par exemple le code suivant :
 
 ```

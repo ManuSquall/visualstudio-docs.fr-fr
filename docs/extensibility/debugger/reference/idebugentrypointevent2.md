@@ -1,4 +1,5 @@
 ---
+description: Le moteur DE débogage (DE) envoie cette interface au gestionnaire de débogage de session (SDM) quand le programme est sur le point d’exécuter sa première instruction de code utilisateur.
 title: IDebugEntryPointEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0373557b13ae6532a34235ff53e1dc38d2813597
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da733292407c93327374a4c6fa54c558d3202caa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892578"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153389"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 Le moteur DE débogage (DE) envoie cette interface au gestionnaire de débogage de session (SDM) quand le programme est sur le point d’exécuter sa première instruction de code utilisateur.

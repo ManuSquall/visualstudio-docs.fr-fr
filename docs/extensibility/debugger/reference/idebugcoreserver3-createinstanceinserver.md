@@ -1,4 +1,5 @@
 ---
+description: Crée une instance d’un moteur de débogage sur le serveur.
 title: 'IDebugCoreServer3 :: CreateInstanceInServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b76c37d767ae38a33d537a96f9ad8f7087503ed2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc3a24e28c378bda34034822aedf4d35e5a6313e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909954"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154676"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Crée une instance d’un moteur de débogage sur le serveur.
@@ -63,7 +64,7 @@ dans ID d’interface de l’interface spécifique à récupérer de l’objet d
 `ppvObject`\
 [out] `IUnknown` interface de l’objet instancié. Effectuez un cast ou marshalez cet objet vers l’interface souhaitée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
