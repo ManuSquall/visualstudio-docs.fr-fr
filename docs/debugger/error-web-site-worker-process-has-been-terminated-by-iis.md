@@ -1,4 +1,5 @@
 ---
+description: Le débogueur a arrêté l’exécution du code sur le site web.
 title: Le processus de travail de site Web a été arrêté par IIS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca2b873a4d4b04362298d2d96b9d037cc80addd4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870894"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146273"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erreur : le processus de travail de site Web a été interrompu par IIS.
 Le débogueur a arrêté l’exécution du code sur le site web. Résultat : Internet Information Services (IIS) a supposé que le processus de travail avait cessé de répondre. Par conséquent, IIS a mis fin au processus de traitement.

@@ -1,4 +1,5 @@
 ---
+description: Lorsque vous exécutez pas à pas un service web XML à partir du code appelant, l’appel peut parfois dépasser le délai et, par conséquent, vous ne pouvez pas continuer le débogage.
 title: Délai d’expiration lors du débogage de services Web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a2d79fc24bdb433fbb5eb1480dbf5d15520a8c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 338dd92b69760c395554a878b36fc4bab05e09a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146507"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Erreur : délai d'attente lors du débogage de services Web
 Lorsque vous exécutez pas à pas un service web XML à partir du code appelant, l’appel peut parfois dépasser le délai et, par conséquent, vous ne pouvez pas continuer le débogage. Un message d'erreur, tel que celui-ci, peut s'afficher.

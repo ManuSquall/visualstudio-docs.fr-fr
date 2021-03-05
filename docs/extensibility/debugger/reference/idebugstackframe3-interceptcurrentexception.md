@@ -1,4 +1,5 @@
 ---
+description: Appelée par le débogueur sur le frame de pile actuel lorsqu’il souhaite intercepter l’exception actuelle.
 title: 'IDebugStackFrame3 :: InterceptCurrentException, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93fa7f73b3e13c655716ecbb16ff420605f76c90
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963547"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145779"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Appelée par le débogueur sur le frame de pile actuel lorsqu’il souhaite intercepter l’exception actuelle.
@@ -48,7 +49,7 @@ dans Spécifie des actions différentes. Actuellement, seule la [](../../../exte
 `pqwCookie`\
 à Valeur unique identifiant une exception particulière.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
  Voici les erreurs les plus courantes retournées.

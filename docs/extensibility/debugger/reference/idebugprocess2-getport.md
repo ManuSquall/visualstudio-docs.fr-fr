@@ -1,4 +1,5 @@
 ---
+description: Obtient le port sur lequel le processus s’exécute.
 title: 'IDebugProcess2 :: GetPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cfc4c4e0f12400ff0fe07b24acaed0b80039f94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 861917efe6ac4eebb67f63390ac2fd2a0c56e55f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907848"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146182"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 Obtient le port sur lequel le processus s’exécute.
@@ -43,7 +44,7 @@ int GetPort(
 `ppPort`\
 à Retourne un objet [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) qui représente le port sur lequel le processus a été lancé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Une erreur DCOM s'est produite lorsque l'ordinateur distant a tenté de communiquer avec l'ordinateur local.
 title: L’ordinateur distant n’a pas pu initialiser les communications DCOM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc23af6335aa29adcad6dbe9e7869ab26cc0bc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86d6c46f338d789d6b113551ac9d99c681290526
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871479"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146780"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Erreur : L'ordinateur distant n'a pas pu initier les communications DCOM
 Une erreur DCOM s'est produite lorsque l'ordinateur distant a tenté de communiquer avec l'ordinateur local. L'ordinateur local est l'ordinateur qui

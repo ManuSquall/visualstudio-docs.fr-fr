@@ -1,4 +1,5 @@
 ---
+description: Crée un énumérateur pour les propriétés associées au frame de pile, telles que les variables locales.
 title: 'IDebugStackFrame2 :: EnumProperties, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40298e505f0d3ccbba200c5487a1bf1d6723f5b2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837708"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145961"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crée un énumérateur pour les propriétés associées au frame de pile, telles que les variables locales.
@@ -68,10 +69,10 @@ dans Durée d’attente maximale, en millisecondes, avant le retour de cette mé
 `ppEnum`\
 à Retourne un objet [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenant une liste des propriétés souhaitées.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Étant donné que cette méthode permet de récupérer toutes les propriétés sélectionnées avec un seul appel, il est plus rapide d’appeler les méthodes [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) et [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) .
 
 ## <a name="see-also"></a>Voir aussi

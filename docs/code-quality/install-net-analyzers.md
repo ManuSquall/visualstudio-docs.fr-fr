@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 368fd5bc9c8b7e2659c86b6e3dc69a609da37617
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867891"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144661"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Activer ou installer des analyseurs .NET internes
 
@@ -26,7 +26,7 @@ Les analyseurs .NET Compiler Platform (Roslyn) inspectent la qualité et les pro
 
 Vous pouvez activer ou installer les analyseurs .NET du premier groupe de l’une des manières suivantes :
 
-- **Activation à partir du kit de développement logiciel (SDK) .net**: à compter de Visual Studio 2019 16,8 et .net 5,0, ces analyseurs sont [inclus dans le kit de développement logiciel (SDK) .net](/dotnet/fundamentals/code-analysis/overview). L’analyse est activée par défaut pour les projets qui ciblent .NET 5,0 ou une version ultérieure. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété la valeur `EnableNETAnalyzers` `true` . Vous pouvez également désactiver l’analyse du code pour votre projet en affectant à la valeur `EnableNETAnalyzers` `false` .
+- **Activation à partir du kit de développement logiciel (SDK) .net**: à compter de Visual Studio 2019 16,8 et .net 5,0, ces analyseurs sont [inclus dans le kit de développement logiciel (SDK) .net](/dotnet/fundamentals/code-analysis/overview). L’analyse est activée par défaut pour les projets qui ciblent .NET 5,0 ou une version ultérieure. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété MSBUILD [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) la valeur `true` . Vous pouvez également désactiver l’analyse du code pour votre projet en affectant à la valeur `EnableNETAnalyzers` `false` .
 
 - **Installer en tant que package NuGet**: Si vous ne souhaitez pas passer au kit de développement logiciel (SDK) .net 5 + ou si vous préférez un modèle basé sur un package NuGet, les analyseurs sont également disponibles dans le `Microsoft.CodeAnalysis.NetAnalyzers` [package nuget](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) sur Visual Studio 2019.  Vous préférerez peut-être un modèle basé sur des packages pour les mises à jour de version à la demande. Si vous utilisez Visual Studio 2017, installez la dernière `2.9.x` version du `Microsoft.CodeAnalysis.FxCopAnalyzers` [package NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) à la place.
 

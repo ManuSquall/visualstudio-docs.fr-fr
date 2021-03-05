@@ -1,4 +1,5 @@
 ---
+description: Obtient le contexte de document pour ce frame de pile.
 title: 'IDebugStackFrame2 :: GetDocumentContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8de85f157995db77653b71f7b25f3106caffb9ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e1645cb7daebb9dc344085d13a2fecb87fc0106
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837504"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145974"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Obtient le contexte de document pour ce frame de pile.
@@ -43,10 +44,10 @@ int GetDocumentContext (
 `ppCxt`\
 à Retourne un objet [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) qui représente la position actuelle dans un document source.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est plus rapide que l’appel de la méthode [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) , puis l’appel de la méthode [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) sur le contexte de code. Toutefois, il n’est pas garanti que chaque moteur DE débogage (DE) implémente cette méthode.
 
 ## <a name="see-also"></a>Voir aussi

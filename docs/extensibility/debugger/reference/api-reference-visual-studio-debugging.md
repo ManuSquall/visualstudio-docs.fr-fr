@@ -1,4 +1,5 @@
 ---
+description: La section de référence comprend une vue d’ensemble conceptuelle de l’API, un guide qui montre la syntaxe et l’utilisation de tous les éléments d’API, ainsi qu’un assortiment d’exemples de code.
 title: Référence d’API (débogage Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912037"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144635"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Informations de référence sur les API (débogage Visual Studio)
 La section de référence comprend une vue d’ensemble conceptuelle de l’API, un guide qui montre la syntaxe et l’utilisation de tous les éléments d’API, ainsi qu’un assortiment d’exemples de code. Toutes les références sont classées par catégorie dans l’ordre alphabétique.

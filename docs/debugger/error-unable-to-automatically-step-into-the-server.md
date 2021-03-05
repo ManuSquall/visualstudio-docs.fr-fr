@@ -1,5 +1,6 @@
 ---
 title: Impossible d’effectuer automatiquement un pas à pas détaillé sur le serveur | Microsoft Docs
+description: Impossible d’effectuer automatiquement un pas à pas détaillé sur le serveur. Le débogueur n’a pas été notifié avant l’exécution de la procédure distante.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d72b06ccad641afa2c83db88ce04f16b0e009c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a374afef2dea92fbad72c45e35ca06904d75cbbe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146481"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Erreur : Impossible d’effectuer automatiquement un pas à pas détaillé sur le serveur
 Le message d’erreur :

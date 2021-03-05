@@ -1,5 +1,6 @@
 ---
 title: Impossible de se connecter au nom de l’ordinateur &lt; &gt; . L’ordinateur est introuvable sur le réseau. | Microsoft Docs
+description: 'Ce comportement se produit si l’une des conditions suivantes est vraie : (1) votre connexion à l’ordinateur distant a été interrompue. (2) votre compte d’utilisateur sur l’ordinateur distant est désactivé. (3) votre mot de passe sur l’ordinateur distant a expiré.'
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcf52a258a46f44afaf6e890531496f57b11fc24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e0d83f043e020ad3c65ac0f986ec174fac95585
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871063"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146429"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Erreur : impossible de se connecter au nom de l’ordinateur &lt; &gt; . L’ordinateur est introuvable sur le réseau.
 Ce problème se produit si l'une des conditions suivantes est remplie :

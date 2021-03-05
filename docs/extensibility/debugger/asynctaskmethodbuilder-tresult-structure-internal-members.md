@@ -1,4 +1,5 @@
 ---
+description: Cette rubrique décrit les membres internes de la classe System. Runtime. CompilerServices. AsyncTaskMethodBuilder.
 title: '&lt;Structure TResult AsyncTaskMethodBuilder &gt; -membres internes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41cb409495b28b7dc2bc796859da413a32b90d85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35e1ca4d19727383bdd7c957bc59fd6b6568c9f5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921631"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145649"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>&lt;Structure TResult AsyncTaskMethodBuilder &gt; -membres internes
 Cette rubrique décrit les membres internes de la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> classe. Pour obtenir des informations générales sur cette classe, consultez la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> rubrique de référence.

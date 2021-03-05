@@ -2,7 +2,7 @@
 title: Prise en main des outils de profilage
 description: Examinez brièvement les différents outils de diagnostic disponibles dans Visual Studio.
 ms.custom: ''
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929106"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145376"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
 
@@ -42,7 +42,7 @@ Pendant le débogage, vous pouvez utiliser la fenêtre **Outils de diagnostic** 
 La fenêtre de **outils de diagnostic** est une méthode courante pour profiler des applications, mais pour les builds de version, vous pouvez également effectuer une analyse de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour voir la prise en charge des outils de profilage pour différents types d’applications, consultez [quel outil dois-je utiliser ?](#which-tool-should-i-use)
 
 Les outils disponibles dans la fenêtre de Outils de diagnostic ou au cours d’une session de débogage sont les suivants :
-- [Utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md)
+- [Utilisation du processeur](../profiling/beginners-guide-to-performance-profiling.md)
 - [Utilisation de la mémoire](../profiling/memory-usage.md)
 - [Conseils sur les performances](../profiling/perftips.md)
 
@@ -61,7 +61,7 @@ Pour plus d’informations sur l’utilisation de l’outil utilisation de l’U
 
 Les outils disponibles dans le profileur de performances sont les suivants :
 
-- [Utilisation de l’UC](../profiling/cpu-usage.md)
+- [Utilisation du processeur](../profiling/cpu-usage.md)
 - [Allocation d’objets .NET](../profiling/dotnet-alloc-tool.md)
 - [Utilisation de la mémoire](../profiling/memory-usage-without-debugging2.md)
 - [Outil .NET Async](../profiling/analyze-async.md)
@@ -162,6 +162,14 @@ L’outil affiche chaque requête dans un affichage de liste. Vous pouvez voir d
 
 ![Allocation](./media/db-gotosource.png "Allocation")
 
+## <a name="visualize-net-counters-net-core"></a>Visualiser les compteurs .NET (.NET Core)
+
+À compter de Visual Studio 2019 version 16,7, vous pouvez utiliser l' [outil compteurs .net](../profiling/dotnet-counters-tool.md) dans Visual Studio pour visualiser les compteurs de performances. Vous pouvez visualiser les compteurs créés à l’aide des [compteurs dotnet](/dotnet/core/diagnostics/dotnet-counters). les compteurs dotnet prennent en charge de nombreux compteurs tels que l’utilisation de l’UC et la taille du tas du garbage collector.
+
+L’outil affiche des valeurs dynamiques pour chaque compteur dans une vue liste.
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text="Collecte de l’outil de compteur .NET.":::
+
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examiner les événements d’accessibilité et de performances de l’IU (UWP)
@@ -235,6 +243,7 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |[Chronologie de l'application](../profiling/application-timeline.md)|Oui (XAML)|Oui|non|
 |[Observateur d’événements](../profiling/events-viewer.md)|Oui|Oui|Oui|
 |[.NET Async](../profiling/analyze-async.md)|Oui (.NET uniquement)|Oui|Oui|
+|[.NET Counters](../profiling/dotnet-counters-tool.md)|Oui (.NET Core uniquement)|non|Oui (ASP.NET Core uniquement)|
 |[Sauvegarde de la base de données](../profiling/analyze-database.md)|Oui (.NET Core uniquement)|non|Oui (ASP.NET Core uniquement)|
 |[Explorateur de performances](#analyze-performance-legacy-tools)|non|non|non|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|

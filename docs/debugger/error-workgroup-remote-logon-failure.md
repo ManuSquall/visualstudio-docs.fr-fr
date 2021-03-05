@@ -1,5 +1,6 @@
 ---
 title: Échec d’ouverture de session à distance du groupe de travail | Microsoft Docs
+description: Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 582b38b7a4115a140f6031b2d4c9227edfd438d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870842"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146234"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec d'ouverture de session à distance du groupe de travail
 Cette erreur affiche le message suivant :

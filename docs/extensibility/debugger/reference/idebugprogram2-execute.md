@@ -1,4 +1,5 @@
 ---
+description: 'IDebugProgram2 :: Execute poursuit l’exécution de ce programme à partir d’un état arrêté. Tout état d’exécution précédent (par exemple, une étape) est désactivé et le programme recommence à s’exécuter.'
 title: 'IDebugProgram2 :: Execute | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25f1544fe13c6dc44aa90b73f69854893beae14f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72b59066e8b7125216077dbf4f6ed83adfa0ad2c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844734"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146039"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 Poursuit l’exécution de ce programme à partir d’un état arrêté. Tout état d’exécution précédent (par exemple, une étape) est désactivé et le programme recommence à s’exécuter.
@@ -43,7 +44,7 @@ int Execute();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Lorsque l’utilisateur commence l’exécution à partir d’un état arrêté dans le thread d’un autre programme, cette méthode est appelée sur ce programme. Cette méthode est également appelée lorsque l’utilisateur sélectionne la commande **Démarrer** dans le menu **Déboguer** de l’IDE. L’implémentation de cette méthode peut être aussi simple que l’appel de la méthode [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) sur le thread actuel dans le programme.
 
 > [!WARNING]
