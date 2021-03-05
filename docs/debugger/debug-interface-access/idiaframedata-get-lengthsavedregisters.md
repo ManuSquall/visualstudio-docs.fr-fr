@@ -1,4 +1,5 @@
 ---
+description: 'IDiaFrameData :: get_lengthSavedRegisters récupère le nombre d’octets de registres enregistrés ayant fait l’objet d’un push sur la pile.'
 title: IDiaFrameData::get_lengthSavedRegisters | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf02feaa87e5f4ab4f3077543815cf48814f4c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dc5ebbd9cff11b6cc2f8e3b75fbea7fcb8db61e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864963"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157720"
 ---
 # <a name="idiaframedataget_lengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
 Récupère le nombre d’octets de registres enregistrés ayant fait l’objet d’un push sur la pile.
@@ -35,10 +36,10 @@ HRESULT get_lengthSavedRegisters (
 
 à Retourne le nombre d’octets des registres enregistrés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (consultez la méthode [IDiaFrameData :: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) pour la définition d’une chaîne de programme).
 
 ## <a name="see-also"></a>Voir aussi

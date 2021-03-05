@@ -1,4 +1,5 @@
 ---
+description: Récupère un identificateur de fichier source unique pour le fichier source qui a participé à cette ligne.
 title: IDiaLineNumber::get_sourceFileId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f3da87f0c307a4af6ff0fb54f4cfa1437ac371
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 052fb4aa594cd010e297dd87c7f29aa58d805a37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855689"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157475"
 ---
 # <a name="idialinenumberget_sourcefileid"></a>IDiaLineNumber::get_sourceFileId
 Récupère un identificateur de fichier source unique pour le fichier source qui a participé à cette ligne.
@@ -35,7 +36,7 @@ HRESULT get_sourceFileId (
 
 à Retourne l’identificateur unique du fichier source qui a participé à cette ligne.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

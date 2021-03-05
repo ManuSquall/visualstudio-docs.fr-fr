@@ -1,4 +1,5 @@
 ---
+description: Ouvre une session pour interroger les symboles.
 title: IDiaDataSource::openSession | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1221bac37b51d9aa55e31a07f2a301defa3af16e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d31e30c2044332d1e299d6a734ee5fecb22ec686
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857124"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158238"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Ouvre une session pour interroger les symboles.
@@ -35,7 +36,7 @@ ppSession
 
 à Retourne un objet [IDiaSession](../../debugger/debug-interface-access/idiasession.md) représentant la session ouverte.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
 |Valeur|Description|
@@ -44,7 +45,7 @@ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tab
 |E_INVALIDARG|Paramètre `ppSession` non valide.|
 |E_OUTOFMEMORY|Mémoire insuffisante pour ouvrir la session.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette méthode ouvre un objet [IDiaSession](../../debugger/debug-interface-access/idiasession.md) pour une source de données.
 
 `IDiaSession` les objets implémentent des requêtes dans la source de données. Une session gère un espace d’adressage pour chaque ensemble de symboles de débogage. Si le fichier. exe ou. dll décrit par les symboles de la source de données est actif dans plusieurs plages d’adresses (par exemple, parce que plusieurs processus ont été chargés), une session pour chaque plage d’adresses doit être utilisée.

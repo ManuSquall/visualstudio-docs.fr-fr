@@ -1,4 +1,5 @@
 ---
+description: Expose les détails de l’emplacement de base et des décalages de mémoire du module ou de l’image.
 title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2b27ac07cab49834d3f2364ab3b77fd162ced5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8cee712f393c3b006484eeda4a0ec1033c1f26b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157615"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Expose les détails de l’emplacement de base et des décalages de mémoire du module ou de l’image.
@@ -37,7 +38,7 @@ Le tableau suivant présente les méthodes de `IDiaImageData` .
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Récupère l’emplacement dans la mémoire virtuelle de l’image.|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Récupère l’emplacement de mémoire dans lequel l’image doit être basée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Certains flux de débogage (XDATA, PDATA) contiennent des copies de données également stockées dans l’image. Ces objets de données de flux peuvent être interrogés pour l' `IDiaImageData` interface. Pour plus d’informations, consultez la section « Remarques pour les appelants » dans cette rubrique.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

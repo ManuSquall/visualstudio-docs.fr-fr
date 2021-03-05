@@ -1,4 +1,5 @@
 ---
+description: Récupère le type de frame spécifique au compilateur.
 title: IDiaFrameData::get_type | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76696529440d6ecce34f623c51e2909d0b2d7f00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c362f6a781d7596c438a3fc2c8d0acfc47f070a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855885"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157685"
 ---
 # <a name="idiaframedataget_type"></a>IDiaFrameData::get_type
 Récupère le type de frame spécifique au compilateur.
@@ -35,7 +36,7 @@ HRESULT get_type (
 
 à Retourne une valeur de l’énumération d' [énumération StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) qui indique le type de frame spécifique au compilateur.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

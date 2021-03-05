@@ -1,4 +1,5 @@
 ---
+description: Obtient le rang du tableau, autrement dit le nombre de dimensions.
 title: 'IDebugArrayObject :: GetRank, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5fe662f6e6ed2db50fb905ad8918a7b7216853f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a246cda3f5b9395ae013b4bca9d4d27d6f8a5c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870101"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158538"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Obtient le rang du tableau, autrement dit le nombre de dimensions.
@@ -43,10 +44,10 @@ int GetRank(
 `pdwRank`\
 à Retourne le rang.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Utilisez la méthode [GetDimensions,](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) pour récupérer la taille de chaque dimension de l’objet Array.
 
 ## <a name="see-also"></a>Voir aussi

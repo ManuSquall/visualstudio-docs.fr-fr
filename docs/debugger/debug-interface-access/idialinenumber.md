@@ -1,4 +1,5 @@
 ---
+description: Accède aux informations qui décrivent le processus de mappage d’un bloc d’octets de texte image à un numéro de ligne de fichier source.
 title: IDiaLineNumber | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62552c6cce3c17da52de14669071bec43db548de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cffe65f66aee4ae53418e93480e9b3e457812247
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864704"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157454"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Accède aux informations qui décrivent le processus de mappage d’un bloc d’octets de texte image à un numéro de ligne de fichier source.
@@ -48,7 +49,7 @@ Le tableau suivant présente les méthodes de `IDiaLineNumber` .
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Récupère un indicateur qui spécifie que ces informations de ligne décrivent le début d’une instruction dans la source du programme.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur unique pour le compiland qui a participé à cette ligne.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant les méthodes [IDiaEnumLineNumbers :: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) ou [IDiaEnumLineNumbers :: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) .

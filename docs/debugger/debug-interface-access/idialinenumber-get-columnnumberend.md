@@ -1,4 +1,5 @@
 ---
+description: Récupère le numéro de colonne source de base 1 où l’expression ou l’instruction se termine.
 title: IDiaLineNumber::get_columnNumberEnd | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f2ea924ffd92b6e099302c1bb8e2857dab47479
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b11dcd94b0e51feb3b70070e5abf1139c6c9eff0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855759"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157608"
 ---
 # <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Récupère le numéro de colonne source de base 1 où l’expression ou l’instruction se termine.
@@ -35,10 +36,10 @@ HRESULT get_columnNumberEnd (
 
 à Retourne le numéro de la colonne où l’expression ou l’instruction se termine. Si la valeur est égale à zéro, les informations de fin de colonne ne sont pas présentes.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La valeur de colonne retournée par cette méthode est un décalage d’octet dans la ligne à la position après le dernier caractère de l’instruction sur la ligne.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Récupère un nombre spécifié de flux de débogage dans la séquence d’énumération.
 title: IDiaEnumDebugStreams::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f70b052746438516275b205676339b216eea70e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 645c04005263372df120f976e9dd402160594855
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856963"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158119"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Récupère un nombre spécifié de flux de débogage dans la séquence d’énumération.
@@ -45,7 +46,7 @@ dans Nombre de flux de débogage dans l’énumérateur à récupérer.
 
 à Retourne le nombre de flux de débogage retournés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de flux. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

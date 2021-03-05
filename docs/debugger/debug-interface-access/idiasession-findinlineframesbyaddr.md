@@ -1,4 +1,5 @@
 ---
+description: 'IDiaSession :: findInlineFramesByAddr récupère une énumération qui permet à un client d’itérer au sein de tous les frames insérés sur une adresse donnée.'
 title: IDiaSession::findInlineFramesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9cc3d4399963113c2fc4d30011201d274a3cff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b063828522a0ab1579b7ade1d5f780b01598e96f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864228"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157104"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
 Récupère une énumération qui permet à un client d’itérer au sein de tous les frames insérés sur une adresse donnée.
@@ -47,7 +48,7 @@ dans Spécifie le composant de décalage de l’adresse.
 
 à Contient un `IDiaEnumSymbols` objet qui contient la liste des frames récupérés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

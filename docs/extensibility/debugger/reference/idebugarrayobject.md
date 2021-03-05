@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un objet tableau.
 title: IDebugArrayObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83d6a37a5b83cd71123521db70920fd3d454e059
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16162cee8a02bf02b192336425101ec4bb579106
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870062"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158525"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
@@ -48,7 +49,7 @@ IDebugArrayObject : IDebugObject
 |[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|Obtient le rang du tableau.|
 |[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|Obtient les dimensions du tableau.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un évaluateur d’expression utilise cette interface pour représenter des tableaux dans une arborescence d’analyse.
 
 ## <a name="requirements"></a>Configuration requise

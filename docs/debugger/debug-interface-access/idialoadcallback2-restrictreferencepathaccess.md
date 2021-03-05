@@ -1,4 +1,5 @@
 ---
+description: Détermine si la recherche d’un fichier. pdb est autorisée dans le chemin d’accès où se trouve le fichier. exe.
 title: IDiaLoadCallback2::RestrictReferencePathAccess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62abe31d3f91125366d8dbe9d45f7b008039a382
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0801cd36af23e3a4e3ff911494e00f9bd232a4a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855612"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157398"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 Détermine si la recherche d’un fichier. pdb est autorisée dans le chemin d’accès où se trouve le fichier. exe.
@@ -31,7 +32,7 @@ HRESULT RestrictReferencePathAccess();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Tout code de retour autre que `S_OK` pour empêcher la recherche d’un fichier. pdb dans le chemin d’accès où se trouve le fichier. exe.
 
 ## <a name="see-also"></a>Voir aussi

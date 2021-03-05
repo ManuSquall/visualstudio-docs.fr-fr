@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la section ne doit pas être remplie à la limite de mémoire suivante.
 title: IDiaSectionContrib::get_nopad | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b132b5a15a29d4ab4a9ef6356897ab271de407e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48bbfdbd14cd7f2d00a9c0ba4530c78fed62141d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157209"
 ---
 # <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
 Récupère un indicateur qui spécifie si la section ne doit pas être remplie à la limite de mémoire suivante.
@@ -35,10 +36,10 @@ HRESULT get_nopad(
 
 à Retourne `TRUE` si la section ne doit pas être remplie à la limite de mémoire suivante ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Il s’agit d’une propriété généralement visible uniquement sur des fichiers plus anciens.
 
 ## <a name="see-also"></a>Voir aussi

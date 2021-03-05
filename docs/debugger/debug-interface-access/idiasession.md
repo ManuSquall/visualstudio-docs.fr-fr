@@ -1,4 +1,5 @@
 ---
+description: Fournit un contexte de requête pour les symboles de débogage.
 title: IDiaSession | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12337385d2ac9b586176c47d8579ec8ee7a5bd29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fc8e3b69321e89959ea2367488e4601269834d3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864032"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156964"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fournit un contexte de requête pour les symboles de débogage.
@@ -70,7 +71,7 @@ Le tableau suivant présente les méthodes de `IDiaSession` .
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.|
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Retourne une énumération de symboles pour les frames inclus qui correspondent à l’emplacement source spécifié.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Il est important d’appeler la méthode [IDiaSession ::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) après la création de l' `IDiaSession` objet, et la valeur transmise à la `put_loadAddress` méthode doit être différente de zéro, pour que les propriétés d’adresse virtuelle (va) des symboles soient accessibles. L’adresse de chargement provient du programme chargé de l’exécutable en cours de débogage. Par exemple, vous pouvez appeler la fonction Win32 `GetModuleInformation` pour récupérer l’adresse de chargement de l’exécutable, en fonction d’un handle de l’exécutable.
 
 ## <a name="example"></a>Exemple

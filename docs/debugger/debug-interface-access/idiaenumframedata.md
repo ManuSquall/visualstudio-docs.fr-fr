@@ -1,4 +1,5 @@
 ---
+description: Énumère les différents éléments de données de frame contenus dans la source de données.
 title: IDiaEnumFrameData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1f2483971b8bb9deb59174fab77bd2c5692f830
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd1ca95e2f7377c00548658634cbf1e2993e3d8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856753"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158007"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Énumère les différents éléments de données de frame contenus dans la source de données.
@@ -43,7 +44,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumFrameData` .
 |[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Retourne un frame par adresse virtuelle relative (RVA).|
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Retourne un frame par adresse virtuelle (VA).|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface à partir de la méthode [IDiaSession :: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Pour plus de détails, voir les exemples.

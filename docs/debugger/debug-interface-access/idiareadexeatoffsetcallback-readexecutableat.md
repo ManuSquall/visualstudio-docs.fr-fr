@@ -1,4 +1,5 @@
 ---
+description: Lit le nombre d’octets spécifié en commençant à l’offset spécifié à partir d’un fichier exécutable.
 title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d70ca331d56fd423e7bfbfc4596b8f3ef5954b03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9986ba6d493353644d8387b2df36a96cbf542933
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855514"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157362"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Lit le nombre d’octets spécifié en commençant à l’offset spécifié à partir d’un fichier exécutable.
@@ -50,7 +51,7 @@ dans Nombre d’octets à lire.
 
 [in, out] Tableau qui est renseigné avec des octets lus à partir du fichier.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est appelée par le code de prise en charge de DIA pour charger des octets de données à partir d’un exécutable à l’aide d’un offset de fichier absolu. Cette méthode est appelée pour la prise en charge de la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: 'IDiaStackWalkFrame :: get_registerValue récupère la valeur d’un registre.'
 title: IDiaStackWalkFrame::get_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d79a3d8fdc0a1e2c6da53b744357b92a0cc0573
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2740b8742ce09d0c88bc9c6c408f309299dbe12
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854793"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158935"
 ---
 # <a name="idiastackwalkframeget_registervalue"></a>IDiaStackWalkFrame::get_registerValue
 Récupère la valeur d’un registre.
@@ -40,7 +41,7 @@ dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/deb
 
 à Retourne la valeur actuelle du Registre.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

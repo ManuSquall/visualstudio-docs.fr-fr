@@ -1,4 +1,5 @@
 ---
+description: Initie l’accès à une source de symboles de débogage.
 title: IDiaDataSource | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bee496e8386185a3eb9393934b83da89286d0ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4932b3c787e1d17b5b32ea6a32bdd604692bda4b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865222"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158245"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 Initie l’accès à une source de symboles de débogage.
@@ -40,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaDataSource` .
 |[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prépare les données de débogage stockées dans un fichier de base de données du programme (. pdb) accessible via un flux de données en mémoire.|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Ouvre une session pour interroger les symboles.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un appel à l’une des méthodes Load de l' `IDiaDataSource` interface ouvre la source du symbole. Un appel réussi à la méthode [IDiaDataSource :: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) retourne une interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) qui prend en charge l’interrogation de la source de données. Si la méthode Load retourne une erreur liée à un fichier, la valeur de retour de la méthode [IDiaDataSource :: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) contient le nom de fichier associé à l’erreur.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

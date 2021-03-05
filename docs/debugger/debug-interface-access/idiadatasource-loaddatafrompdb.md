@@ -1,4 +1,5 @@
 ---
+description: Ouvre et prépare un fichier de base de données du programme (. pdb) comme source de données de débogage.
 title: IDiaDataSource::loadDataFromPdb | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4463d14b27c32cc9d74f578f41467db5dc95e815
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0766d951068c237e47f563a8d2ed5b3c84a9d74e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865243"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158259"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Ouvre et prépare un fichier de base de données du programme (. pdb) comme source de données de débogage.
@@ -35,7 +36,7 @@ pdbPath
 
 dans Chemin d’accès au fichier. pdb.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
 |Valeur|Description|
@@ -45,7 +46,7 @@ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tab
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette méthode charge les données de débogage directement à partir d’un fichier. pdb.
 
 Pour valider le fichier. pdb par rapport à des critères spécifiques, utilisez la méthode [IDiaDataSource :: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .

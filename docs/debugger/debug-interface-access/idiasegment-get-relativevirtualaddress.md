@@ -1,4 +1,5 @@
 ---
+description: Récupère l’adresse virtuelle relative (RVA) du début de la section.
 title: IDiaSegment::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e05cbb6afde88de95441a6ff9a6440f3e64a26b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52cd342270325e539cffc76ac34a7e4fc479d532
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864312"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157153"
 ---
 # <a name="idiasegmentget_relativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
 Récupère l’adresse virtuelle relative (RVA) du début de la section.
@@ -35,7 +36,7 @@ HRESULT get_relativeVirtualAddress (
 
 à Retourne l’adresse RVA du début de la section.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

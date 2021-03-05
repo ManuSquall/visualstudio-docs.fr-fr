@@ -1,4 +1,5 @@
 ---
+description: Récupère le nombre de tables.
 title: IDiaEnumTables::get_Count | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc48165b269e7164d710c23ed0ecbddedef36fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c69e1860e3a0b534e53d5431c77cdfa3753a6da1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865082"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102157860"
 ---
 # <a name="idiaenumtablesget_count"></a>IDiaEnumTables::get_Count
 Récupère le nombre de tables.
@@ -35,7 +36,7 @@ HRESULT get_Count (    LONG* pRetVal
 
 à Retourne le nombre de tables.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

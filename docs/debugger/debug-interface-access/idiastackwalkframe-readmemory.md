@@ -1,4 +1,5 @@
 ---
+description: Lit la mémoire à partir de l’image.
 title: IDiaStackWalkFrame::readMemory | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ffd85fd1a6878fd378931901098d90f2a24c8ccc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: edfe15c8303236f31ab50a948a8b5506cee0356b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854800"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158921"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 Lit la mémoire à partir de l’image.
@@ -55,7 +56,7 @@ dans Taille de la mémoire tampon de données, en octets.
 
 à Mémoire tampon qui doit être remplie avec des données provenant de l’emplacement spécifié.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

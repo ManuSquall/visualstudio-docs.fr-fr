@@ -1,4 +1,5 @@
 ---
+description: Ouvre et vérifie que le fichier de base de données du programme (. pdb) correspond aux informations de signature fournies et prépare le fichier. pdb en tant que source de données de débogage.
 title: IDiaDataSource::loadAndValidateDataFromPdb | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f903bde5121a9ece797f6eb97c29805a3290a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d55053271e38ee87533a11a8c5f6cd30d7e7333
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857166"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158287"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Ouvre et vérifie que le fichier de base de données du programme (. pdb) correspond aux informations de signature fournies et prépare le fichier. pdb en tant que source de données de débogage.
@@ -50,7 +51,7 @@ dans Signature 32 bits à vérifier par rapport à la signature du fichier. pdb.
 
 dans Valeur d’âge à vérifier. L’ancienneté ne correspond pas nécessairement à une valeur d’heure connue, elle est utilisée pour déterminer si un fichier. pdb n’est pas synchronisé avec un fichier. exe correspondant.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
 |Valeur|Description|
@@ -62,7 +63,7 @@ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tab
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un fichier. PDB contient à la fois des valeurs de signature et d’âge. Ces valeurs sont répliquées dans le fichier. exe ou. dll qui correspond au fichier. pdb. Avant de préparer la source de données, cette méthode vérifie que la signature et l’âge du fichier. PDB nommé correspondent aux valeurs fournies.
 
 Pour charger un fichier. pdb sans validation, utilisez la méthode [IDiaDataSource :: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .

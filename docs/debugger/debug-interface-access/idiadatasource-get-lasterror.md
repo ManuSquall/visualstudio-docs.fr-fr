@@ -1,4 +1,5 @@
 ---
+description: Récupère le nom de fichier de la dernière erreur de chargement.
 title: IDiaDataSource::get_lastError | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e6453a75878cd871532c2e5557e2e6314c932
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7edce9a2af6c849371360526d617d20738973cba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158314"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 Récupère le nom de fichier de la dernière erreur de chargement.
@@ -35,7 +36,7 @@ HRESULT get_lastError (
 
 à Retourne une chaîne qui contient le nom de fichier. pdb associé à la dernière erreur de chargement.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne le dernier code d’erreur provoqué par une opération de chargement. Retourne `E_INVALIDARG` si le `pRetVal` paramètre a la valeur `NULL` .
 
 ## <a name="example"></a>Exemple

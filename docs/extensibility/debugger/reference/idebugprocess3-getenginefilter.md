@@ -1,4 +1,5 @@
 ---
+description: Récupère un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
 title: 'IDebugProcess3 :: GetEngineFilter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a36066ef14ceb10160067f146574e1495f856f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77ad90af772bb210402cfd43449350ccf0f02058
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915290"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158460"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 Récupère un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
@@ -42,7 +43,7 @@ public int GetEngineFilter(
 `pEngineArray`\
 à Référence à une structure qui contient des identificateurs uniques pour les moteurs de débogage.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
