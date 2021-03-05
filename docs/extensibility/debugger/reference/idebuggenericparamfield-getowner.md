@@ -1,4 +1,5 @@
 ---
+description: Récupère le type ou le propriétaire de méthode de ce paramètre générique.
 title: 'IDebugGenericParamField :: GetOwner | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4914a61430d5f64b5e7b590749317c2cfe721b96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42198767ec7bb04cef6e65ecd08c9d46c010ffb2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838962"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172595"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 Récupère le type ou le propriétaire de méthode de ce paramètre générique.
@@ -41,7 +42,7 @@ int GetOwner(
 `ppOwner`\
 à Retourne l’objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui possède ce paramètre générique.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

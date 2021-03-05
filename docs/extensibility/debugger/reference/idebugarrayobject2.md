@@ -1,4 +1,5 @@
 ---
+description: Représente un objet tableau managé et permet à un évaluateur d’expression (EE) de déterminer l’index de base (limites inférieures) du tableau.
 title: IDebugArrayObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6bb73834f53e22df63682663539b5f01685b30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870023"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174122"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugArrayObject2 : IDebugArrayObject
 |[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Récupère les index de base (limites inférieures) pour chaque index en fonction du nombre de dimensions dans le tableau.|
 |[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Détermine si le tableau a des index de base (limites inférieures) définis.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un évaluateur d’expression utilise cette interface pour représenter des tableaux managés dans une arborescence d’analyse.
 
 ## <a name="requirements"></a>Configuration requise

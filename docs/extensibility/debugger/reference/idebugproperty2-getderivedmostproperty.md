@@ -1,4 +1,5 @@
 ---
+description: Obtient la propriété la plus dérivée d’une propriété.
 title: 'IDebugProperty2 :: GetDerivedMostProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f91b00d2f448aea2f187e37813782ce568ad859
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6069091295371ea017547cdac6540e68ba2885e8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916038"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171527"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Obtient la propriété la plus dérivée d’une propriété.
@@ -43,7 +44,7 @@ int GetDerivedMostProperty (
 `ppDerivedMost`\
 à Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente la propriété la plus dérivée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Retourne `S_GETDERIVEDMOST_NO_DERIVED_MOST` s’il n’existe aucune propriété la plus dérivée à récupérer.
 
 ## <a name="remarks"></a>Notes

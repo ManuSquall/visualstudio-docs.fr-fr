@@ -1,4 +1,5 @@
 ---
+description: Cette structure représente une adresse.
 title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e02f78e82c87bceb10b71bcb303a78f25a9a623e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a13a83b5622053593702409c44b6481ba76d17d8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899120"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170677"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 Cette structure représente une adresse.
@@ -61,7 +62,7 @@ Jeton identifiant la classe ou le type de cette adresse.
 `addr`\
 Structure [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , qui contient une Union de structures qui décrivent les types d’adresses individuels. Valeur `addr` .`dwKind` provient de l’énumération [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , qui explique comment interpréter l’Union.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette structure est passée à la méthode [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) à remplir.
 
 **Avertissement (C++ uniquement)**

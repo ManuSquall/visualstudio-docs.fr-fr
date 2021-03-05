@@ -1,4 +1,5 @@
 ---
+description: L’empaquetage d’applications en tant que MSI est souvent effectué à l’aide de l’extension de projets Visual Studio Installer.
 title: Projets Visual Studio Installer et .NET Core 3,1
 titleSuffix: ''
 ms.date: 08/18/2020
@@ -12,12 +13,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 86680a2b961af9182691422e02b42c6529f45639
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5a78c1cf4f7b1562408e0a3fb598075f2c114fc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852652"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171238"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Extension des projets Visual Studio Installer et NET.Core 3.1
 
@@ -36,7 +37,7 @@ Pour en savoir plus sur ces stratégies de déploiement, consultez [vue d’ense
 
 ### <a name="workflow-changes-for-net-core-31"></a>Modifications du flux de travail pour .NET Core 3,1
 
-1. Sélectionnez **publier les éléments** au lieu de la **sortie principale** pour obtenir la sortie correcte pour les projets .net Core 3,1.  Pour afficher cette boîte de dialogue, sélectionnez **Ajouter**  >  la**sortie du projet...** dans le menu contextuel du projet.
+1. Sélectionnez **publier les éléments** au lieu de la **sortie principale** pour obtenir la sortie correcte pour les projets .net Core 3,1.  Pour afficher cette boîte de dialogue, sélectionnez **Ajouter**  >  la **sortie du projet...** dans le menu contextuel du projet.
 
     ![Le groupe publier les éléments de sortie dans la boîte de dialogue Ajouter un groupe de sortie de projet](../deployment/media/installer-projects-net-core-publish-items-output.png "Choisir les éléments à publier")
 

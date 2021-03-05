@@ -1,4 +1,5 @@
 ---
+description: Structure qui décrit un tableau de chaînes.
 title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882210"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170970"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 Structure qui décrit un tableau de chaînes.
@@ -48,7 +49,7 @@ Nombre de chaînes dans le `Members` tableau.
 `Members`\
 Tableau de chaînes.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette structure est retournée par la méthode [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
 
  [C++ uniquement] Chaque chaîne individuelle doit être libérée à l’aide de `SysFreeString` , et le `Members` tableau doit être libéré avec `CoTaskMemFree` .

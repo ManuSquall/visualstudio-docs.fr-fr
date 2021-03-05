@@ -1,4 +1,5 @@
 ---
+description: Décrit différents attributs pour un IDebugProperty2 ou une interface IDebugReference2.
 title: DBG_ATTRIB_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f467c9ac66bc249974f919a48a1527bebb26f361
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899157"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170716"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 Décrit différents attributs pour un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou une interface [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Membre de la structure [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
@@ -298,7 +299,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
  Indique que plusieurs visionneuses personnalisées sont associées à l’objet.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 > [!NOTE]
 > Les valeurs de cette énumération ne sont pas réellement définies dans l’assembly pour C#. Au lieu de cela, vous devez copier les définitions dans votre fichier source.

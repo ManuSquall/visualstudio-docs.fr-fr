@@ -1,4 +1,5 @@
 ---
+description: Écrit un dump dans un fichier.
 title: 'IDebugProgram2 :: WriteDump | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 265c77acdb15069c1fcd7f33d93d4ff74a528eca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0e4c90034d19635993196a0cd00ffcb06f26433
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896147"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171925"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Écrit un dump dans un fichier.
@@ -48,10 +49,10 @@ dans Valeur de l’énumération [DUMPTYPE](../../../extensibility/debugger/refe
 `pszDumpUrl`\
 dans URL vers laquelle écrire le vidage. En général, il se présente sous la forme de `file://c:\path\filename.ext` , mais peut être une URL valide.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un vidage de programme inclut généralement le frame de pile actuel, la pile elle-même, une liste des threads en cours d’exécution dans le programme et éventuellement la mémoire dont le programme est propriétaire.
 
 ## <a name="see-also"></a>Voir aussi

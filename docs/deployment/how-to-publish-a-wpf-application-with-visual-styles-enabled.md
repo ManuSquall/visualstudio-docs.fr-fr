@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900468"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171277"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Guide pratique pour publier une application WPF avec les styles visuels activés
 
@@ -110,9 +110,9 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Incorporer le fichier manifeste dans le fichier exécutable de la solution publiée
 
-1. Ouvrez l' **invite de commandes de Visual Studio**.
+1. Ouvrez **invite de commandes développeur pour Visual Studio**.
 
-    Pour plus d’informations sur l’ouverture de l' **invite de commandes de Visual Studio**, consultez [invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Pour plus d’informations sur l’ouverture de Invite de commandes développeur pour Visual Studio, consultez [invite de commandes développeur et Developer PowerShell](../ide/reference/command-prompt-powershell.md).
 
    > [!NOTE]
    > Les étapes restantes font les hypothèses suivantes sur votre solution :
@@ -179,7 +179,7 @@ Les styles visuels permettent de modifier l’apparence des contrôles communs e
 
 ## <a name="see-also"></a>Voir aussi
 
--[Résolution des erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Dépannage d’erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Vue d’ensemble des styles visuels](/windows/desktop/Controls/visual-styles-overview)
 - [Activation des styles visuels](/windows/desktop/Controls/cookbook-overview)
-- [Invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [Invite de commandes développeur et Developer PowerShell](../ide/reference/command-prompt-powershell.md)

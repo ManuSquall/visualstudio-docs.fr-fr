@@ -1,4 +1,5 @@
 ---
+description: Crée un énumérateur pour le type de chaque argument requis pour appeler la méthode.
 title: 'IDebugMethodField :: EnumArguments | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b86fbdb87c0191ea8b43c64a542c37177a8ef1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04815bb1fc148893c5b594223f6b92bfb7e0d97f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900194"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172123"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 Crée un énumérateur pour le type de chaque argument requis pour appeler la méthode.
@@ -43,10 +44,10 @@ int EnumArguments(
 `ppParams`\
 à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des types d’arguments. Retourne une valeur null s’il n’y a pas d’arguments.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas d’arguments. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Chaque élément est un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente les types de chaque paramètre. Appelez la méthode [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) pour récupérer des informations sur le type de chaque paramètre.
 
  Si le nom du paramètre est requis avec le type, appelez la méthode [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) .

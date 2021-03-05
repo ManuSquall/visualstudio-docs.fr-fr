@@ -1,4 +1,5 @@
 ---
+description: Exécute une étape.
 title: 'IDebugProgram2 :: étape | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 544ca22d263a3fca47f9484ac126031e83cde4e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ff4ee710369aef80ac18603ac3fc117e17dba07
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911908"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171994"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Exécute une étape.
@@ -56,7 +57,7 @@ dans Valeur de l’énumération [STEPKIND](../../../extensibility/debugger/refe
 `step`\
 dans Valeur de l’énumération [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) qui spécifie l’unité de l’étape (par exemple, par instruction ou instruction).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

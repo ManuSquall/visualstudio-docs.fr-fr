@@ -1,4 +1,5 @@
 ---
+description: Décrit une méthode ou un appel de fonction.
 title: CODE_PATH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4bba942b0740fba98e88a3cddcecfcd43d7d215
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ecdbbfdbcffbb8b1aa6246e2e99ef6eabfa1f19
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900298"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170957"
 ---
 # <a name="code_path"></a>CODE_PATH
 Décrit une méthode ou un appel de fonction.
@@ -48,7 +49,7 @@ Nom du chemin d’accès du code.
 `pCode`\
 Objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui identifie l’emplacement dans le code pour effectuer un pas à pas détaillé dans une fonction.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette structure est utilisée pour implémenter le pas à pas détaillé dans une fonction. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) retourne tous les appels à partir de l’emplacement actuel dans le programme en cours de débogage. Cette structure représente un appel de ce type.
 
 ## <a name="requirements"></a>Configuration requise

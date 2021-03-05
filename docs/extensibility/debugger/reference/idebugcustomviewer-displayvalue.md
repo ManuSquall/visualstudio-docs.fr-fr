@@ -1,4 +1,5 @@
 ---
+description: Cette méthode est appelée pour afficher la valeur spécifiée.
 title: IDebugCustomViewer ::D isplayValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b754d9ebc7d8d8c1d21236faca5c5f331faa8e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 238bb4f9b453513f2fdcccb628eacdfc9ef4ae2b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842275"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173479"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Cette méthode est appelée pour afficher la valeur spécifiée.
@@ -58,10 +59,10 @@ dans ID des visionneuses personnalisées qui prennent en charge plusieurs types.
 `pDebugProperty`\
 dans Interface qui peut être utilisée pour récupérer la valeur à afficher.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’affichage est « modal » dans le fait que cette méthode crée la fenêtre nécessaire, affiche la valeur, attend une entrée, puis ferme la fenêtre, tout avant de retourner à l’appelant. Cela signifie que la méthode doit gérer tous les aspects de l’affichage de la valeur de la propriété, de la création d’une fenêtre pour la sortie, à l’attente de l’entrée de l’utilisateur, à la destruction de la fenêtre.
 
  Pour prendre en charge la modification de la valeur de l’objet [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) donné, vous pouvez utiliser la méthode [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) , si la valeur peut être exprimée sous la forme d’une chaîne. Dans le cas contraire, il est nécessaire de créer une interface personnalisée, à l’exception de l’évaluateur d’expression qui implémente cette `DisplayValue` méthode, sur le même objet qui implémente l' `IDebugProperty3` interface. Cette interface personnalisée fournit des méthodes pour modifier les données d’une taille ou d’une complexité arbitraire.

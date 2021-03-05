@@ -1,4 +1,5 @@
 ---
+description: Les interfaces suivantes sont les interfaces principales pour étendre le débogueur à l’aide du kit de développement logiciel (SDK) VS.
 title: Interfaces principales | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f24dd16656144fa155d0473d7f722487c0edd03
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899170"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170755"
 ---
 # <a name="core-interfaces"></a>Interfaces de base
 Les interfaces suivantes sont les interfaces principales permettant d’étendre le débogueur à l’aide de [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .

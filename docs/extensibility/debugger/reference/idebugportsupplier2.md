@@ -1,4 +1,5 @@
 ---
+description: Cette interface fournit des ports au gestionnaire de débogage de session (SDM).
 title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840364"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172037"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Cette interface fournit des ports au gestionnaire de débogage de session (SDM).
@@ -70,7 +71,7 @@ Le tableau suivant présente les méthodes de `IDebugPortSupplier2` .
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Ajoute un port.|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Supprime un port.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un fournisseur de ports peut s’identifier à l’aide d’un nom et d’un ID, ajouter et supprimer des ports et énumérer tous les ports fournis par le fournisseur de port.
 
 ## <a name="requirements"></a>Configuration requise

@@ -1,4 +1,5 @@
 ---
+description: Obtient le nombre de visionneuses personnalisées qui peuvent être disponibles pour cette propriété.
 title: 'IDebugProperty3 :: GetCustomViewerCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ffdca7e4a556a72c8fb7f3f533e69d47fa289732
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58ad7ffc1b3250f5002f9f08208c464d14a2cc15
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896088"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171394"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtient le nombre de visionneuses personnalisées qui peuvent être disponibles pour cette propriété.
@@ -43,10 +44,10 @@ int GetCustomViewerCount(
 `pcelt`\
 à Nombre de visionneuses personnalisées disponibles pour cette propriété.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Pour prendre en charge les visualiseurs de type, cette méthode transfère l’appel à la méthode [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) . Si l’évaluateur d’expression prend également en charge les visionneuses personnalisées pour le type de cette propriété, cette méthode ajoute le nombre de visionneuses personnalisées à la valeur retournée.
 
 Pour plus d’informations sur les différences entre les visualiseurs de type et les visionneuses personnalisées, consultez [visualiseur de type et visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).

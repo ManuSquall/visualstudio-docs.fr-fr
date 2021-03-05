@@ -1,4 +1,5 @@
 ---
+description: Crée un énumérateur pour toutes les variables locales de la méthode, y compris celles générées en interne par un compilateur.
 title: 'IDebugMethodField :: EnumAllLocals | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c10de4db63a7706326ff6f387366c75f860408bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38f14ba2d520974b9f8f567c7840737ed2763080
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928157"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172166"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Crée un énumérateur pour toutes les variables locales de la méthode, y compris celles générées en interne par un compilateur.
@@ -48,7 +49,7 @@ dans Objet [IDebugAddress](../../../extensibility/debugger/reference/idebugaddre
 `ppLocals`\
 à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste de tous les variables locales dans l’étendue spécifiée ; Sinon, retourne une valeur null indiquant qu’il n’y a pas de variables locales.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas de variables locales. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

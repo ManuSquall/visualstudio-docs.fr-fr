@@ -1,4 +1,5 @@
 ---
+description: Indique le protocole utilisé pour la communication entre un serveur de débogage et le package DE débogage (DE).
 title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d25068b71689ffbc9e472addbd6ca3663db267c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24ac267552166bea43df77f31cb79d8198fb7514
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891278"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170859"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 Indique le protocole utilisé pour la communication entre un serveur de débogage et le package DE débogage (DE).
@@ -73,7 +74,7 @@ La connexion utilise HTTP (via un serveur Web).
 `CONNECTION_OTHER`\
 Un autre type de connexion a été établi (cette valeur n’est pas utilisée actuellement).
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Ces valeurs sont retournées à partir de la méthode [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .
 
 ## <a name="requirements"></a>Configuration requise

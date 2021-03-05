@@ -1,4 +1,5 @@
 ---
+description: Crée un ID unique pour cette propriété afin de s’assurer qu’elle est unique parmi toutes les autres propriétés.
 title: 'IDebugProperty3 :: CreateObjectID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e82e11d83c77131e47d815529813484d2869cdc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896121"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171437"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Crée un ID unique pour cette propriété afin de s’assurer qu’elle est unique parmi toutes les autres propriétés.
@@ -40,7 +41,7 @@ int CreateObjectID();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est appelée lorsque le gestionnaire de débogage de session souhaite s’assurer que cette propriété est identifiée de manière unique parmi toutes les autres propriétés. Le moteur DE débogage (DE) prend en charge cette méthode, sauf si les propriétés qu’elle traite sont déjà identifiées de manière unique. Si le DE ne prend pas en charge cette méthode, il retourne `E_NOTIMPL` .
 
  Tout ID unique créé avec `CreateObjectID` est détruit lorsque la méthode [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) est appelée ; cela signale également la fin de la nécessité d’identifier cette propriété de manière unique.

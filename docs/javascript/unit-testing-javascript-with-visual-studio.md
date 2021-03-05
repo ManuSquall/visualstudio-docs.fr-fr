@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957476"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171316"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
 
@@ -97,7 +97,7 @@ Pour la machine à écrire, les tests unitaires sont exécutés sur le code Java
 
 ### <a name="run-tests-from-the-command-line"></a>Exécuter des tests à partir de la ligne de commande
 
-Vous pouvez exécuter les tests à partir de l' [invite de commandes développeur](/dotnet/framework/tools/developer-command-prompt-for-vs) pour Visual Studio à l’aide de la commande suivante :
+Vous pouvez exécuter les tests à partir de [invite de commandes développeur pour Visual Studio](../ide/reference/command-prompt-powershell.md) à l’aide de la commande suivante :
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -152,11 +152,12 @@ Pour obtenir un bon exemple des implémentations `find_tests` et `run_tests`, co
 La découverte des frameworks de tests disponibles se produit au démarrage de Visual Studio. Si un framework est ajouté pendant que Visual Studio est en cours d’exécution, redémarrez Visual Studio pour détecter le framework. Toutefois, vous n’avez pas besoin de redémarrer quand vous apportez des modifications à l’implémentation.
 
 ## <a name="unit-tests-in-other-project-types"></a>Tests unitaires dans d’autres types de projet
+
 Vous n’êtes pas limité à l’écriture de tests unitaires juste dans vos projets Node.js. Quand vous ajoutez les propriétés TestFramework et TestRoot à un projet C# ou Visual Basic, ces tests sont énumérés et vous pouvez les exécuter en utilisant la fenêtre Explorateur de tests.
 
 Pour ce faire, cliquez sur le nœud du projet dans l’Explorateur de solutions, choisissez **Décharger le projet**, puis choisissez **Modifier le projet**. Ensuite, dans le fichier projet, ajoutez les deux éléments suivants à un groupe de propriétés.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Vérifiez qu’aucune condition n’est spécifiée pour le groupe de propriétés auquel vous ajoutez les éléments.
 > Le cas échéant, cela peut entraîner un comportement inattendu.
 
@@ -170,6 +171,7 @@ Pour ce faire, cliquez sur le nœud du projet dans l’Explorateur de solutions,
 Ensuite, ajoutez vos tests dans le dossier racine de test que vous avez spécifié : ils sont alors disponibles pour être exécutés dans la fenêtre Explorateur de tests. S’ils n’apparaissent pas immédiatement, il peut être nécessaire de regénérer le projet.
 
 ### <a name="unit-test-net-core-and-net-standard"></a>Test unitaire dans .NET Core et .NET Standard
+
 En plus des propriétés ci-dessus, vous devez également installer le package NuGet [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) et définir la propriété :
 
 ```xml
