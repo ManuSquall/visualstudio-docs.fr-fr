@@ -1,4 +1,5 @@
 ---
+description: Cette interface marshale les interfaces relatives au programme à travers les limites du processus.
 title: IDebugProviderProgramNode2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e11472c2c883705c36ab71a37b1af10eb1cb5b10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a615c076fd34d7bc230efb0f36683b7167b66566
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909815"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167852"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Cette interface marshale les interfaces relatives au programme à travers les limites du processus.

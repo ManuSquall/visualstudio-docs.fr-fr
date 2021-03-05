@@ -1,4 +1,5 @@
 ---
+description: Crée un objet String.
 title: 'IDebugFunctionObject :: CreateStringObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f1fe290655781dd144e7c7b3951e021124e46086
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 78d9d0be09ee8fa6374273ad308616a7d294c8cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929951"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166474"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Crée un objet String.
@@ -48,7 +49,7 @@ dans Valeur de chaîne de l’objet String.
 `ppObject`\
 à Retourne un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui représente l’objet String nouvellement créé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

@@ -1,4 +1,5 @@
 ---
+description: Supprime un nœud de programme spécifié de la disponibilité aux moteurs de débogage (DEs) et au gestionnaire de débogage de session (SDM).
 title: 'IDebugProgramPublisher2 :: UnpublishProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69afe6dba5db73b2b2af80031612ada5b18ae0a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32c1384eadbf4e11a31534fccce21ab271000643
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916189"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166994"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Supprime un nœud de programme spécifié de la disponibilité aux moteurs de débogage (DEs) et au gestionnaire de débogage de session (SDM).
@@ -43,7 +44,7 @@ int UnpublishProgramNode(
 `pProgramNode`\
 dans Objet [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) qui représente le nœud de programme en cours de suppression.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

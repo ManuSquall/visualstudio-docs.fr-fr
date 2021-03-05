@@ -1,4 +1,5 @@
 ---
+description: Détache le débogueur de ce processus en détachant tous les programmes dans le processus.
 title: IDebugProcess2 ::D Etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6418a7f628eef4e00ea0555c07122555eb6d600c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5775ee9ffc3fa3c4151df999b64ba1160da6f7c3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874085"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166279"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Détache le débogueur de ce processus en détachant tous les programmes dans le processus.
@@ -40,7 +41,7 @@ int Detach();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Tous les programmes et le processus continuent à s’exécuter, mais ne font plus partie de la session de débogage. Une fois l’opération de détachement terminée, aucun autre événement de débogage n’est envoyé pour ce processus (et ses programmes).
 
 ## <a name="see-also"></a>Voir aussi

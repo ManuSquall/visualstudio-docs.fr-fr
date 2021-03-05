@@ -1,4 +1,5 @@
 ---
+description: Obtient l’état de ce point d’arrêt lié.
 title: 'IDebugBoundBreakpoint2 :: GetState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a8717dd840836a093325bae40e9dec89e5d0bb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c3bc40fa9cb382281134b92b2b6c9533804b520
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927117"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167553"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Obtient l’état de ce point d’arrêt lié.
@@ -44,7 +45,7 @@ int GetState(
 `pState`\
 à Retourne une valeur de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) qui décrit l’état du point d’arrêt.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

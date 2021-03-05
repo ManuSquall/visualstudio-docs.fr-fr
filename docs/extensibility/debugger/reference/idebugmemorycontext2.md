@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente une position dans l’espace d’adressage de l’ordinateur qui exécute le programme en cours de débogage.
 title: IDebugMemoryContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20750397eafa392ee7ad8bd742b0126b1fb9deeb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851073"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166344"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Cette interface représente une position dans l’espace d’adressage de l’ordinateur qui exécute le programme en cours de débogage.
@@ -45,7 +46,7 @@ IDebugMemoryContext2 : IUnknown
 |[Soustraire](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Soustrait une valeur spécifiée de l’adresse du contexte actuel pour créer un nouveau contexte.|
 |[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Compare deux contextes de la manière indiquée par les indicateurs de comparaison.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La fenêtre de **mémoire** de Visual Studio appelle [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) pour obtenir l' `IDebugMemoryContext2` interface qui contient l’expression évaluée utilisée pour l’adresse mémoire. Ce contexte est ensuite transmis à [readatum](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) et [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) pour spécifier l’adresse à lire ou à écrire.
 
 ## <a name="requirements"></a>Configuration requise

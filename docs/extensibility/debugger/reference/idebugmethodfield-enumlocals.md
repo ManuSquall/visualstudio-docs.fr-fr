@@ -1,4 +1,5 @@
 ---
+description: Crée un énumérateur pour les variables locales sélectionnées de la méthode.
 title: 'IDebugMethodField :: EnumLocals | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98d6d7c4d9f1df0c7c4346792d841de574859619
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d99b6e4b3cf30cccd4a2785f3712b34d9471bdd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861151"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166331"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Crée un énumérateur pour les variables locales sélectionnées de la méthode.
@@ -48,10 +49,10 @@ dans Objet [IDebugAddress](../../../extensibility/debugger/reference/idebugaddre
 `ppLocals`\
 à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant une liste de variables locales ; Sinon, retourne une valeur null s’il n’y a pas de variables locales.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas de variables locales. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Seules les variables définies dans le bloc qui contient l’adresse de débogage donnée sont énumérées. Si tous les paramètres régionaux, y compris les variables locales générées par le compilateur, sont nécessaires, appelez la méthode [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) .
 
 Une méthode peut contenir plusieurs contextes ou blocs d’étendue. Par exemple, la méthode fictif suivante contient trois portées, les deux blocs internes et le corps de méthode lui-même.

@@ -1,4 +1,5 @@
 ---
+description: Cette méthode localise un alias en fonction d’un nom.
 title: 'IDebugBinder3 :: FindAlias | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bac818844b69018bb9dc6a970a5659513dbe50d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db4d5cad6d0c2990141e0dd3a824425b8b53145b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925093"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167722"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Cette méthode localise un alias en fonction d’un nom. Cette opération recherche tous les alias dans le programme.
@@ -48,7 +49,7 @@ dans Nom de l’alias à rechercher.
 `ppAlias`\
 à Alias trouvé (le cas échéant) représenté par l’interface [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` (si l’alias est introuvable) ou un code d’erreur.
 
 ## <a name="remarks"></a>Notes

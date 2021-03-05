@@ -1,4 +1,5 @@
 ---
+description: Obtient la taille, en octets, de la valeur de la propriété.
 title: 'IDebugProperty2 :: obtient | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af31a88859f2afba735e0696124076eb82068404
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd6342efd1d9bcb2d2ac063438ee741df3c61325
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850905"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166812"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 Obtient la taille, en octets, de la valeur de la propriété.
@@ -43,7 +44,7 @@ int GetSize (
 `pdwSize`\
 à Retourne la taille, en octets, de la valeur de la propriété.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Retourne `S_GETSIZE_NO_SIZE` si la propriété n’a pas de taille.
 
 ## <a name="see-also"></a>Voir aussi

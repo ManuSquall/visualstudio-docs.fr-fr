@@ -1,4 +1,5 @@
 ---
+description: Récupère la chaîne associée à cette propriété et la stocke dans une mémoire tampon fournie par l’utilisateur.
 title: 'IDebugProperty3 :: GetStringChars | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8b188b386dea7279530e186073847e26915af63d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3b220fa02809015d1fa699c5e9eb5edac8cf2f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897283"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166682"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Récupère la chaîne associée à cette propriété et la stocke dans une mémoire tampon fournie par l’utilisateur.
@@ -55,10 +56,10 @@ dans Nombre maximal de caractères que la mémoire tampon fournie par l’utilis
 `pceltFetched`\
 à Où le nombre de caractères réellement stockés dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 En C++, vous devez veiller à ce que la mémoire tampon soit au moins un `buflen` caractère Unicode long. Notez qu’un caractère Unicode a une longueur de 2 octets.
 
 > [!NOTE]

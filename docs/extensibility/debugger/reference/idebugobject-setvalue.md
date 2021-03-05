@@ -1,4 +1,5 @@
 ---
+description: Définit la valeur de l’objet à partir d’une série consécutive d’octets.
 title: 'IDebugObject :: SetValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c282e5682cb01da56407cbbcb91a69984ded85de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 972281335b964679f38693182e42c4e64074dffa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953589"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167150"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Définit la valeur de l’objet à partir d’une série consécutive d’octets.
@@ -48,7 +49,7 @@ dans Tableau d’octets représentant la nouvelle valeur.
 `nSize`\
 dans Taille de la valeur en octets.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

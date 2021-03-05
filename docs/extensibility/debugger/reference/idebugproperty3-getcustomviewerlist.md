@@ -1,4 +1,5 @@
 ---
+description: Obtient une liste des visionneuses personnalisées associées à cette propriété.
 title: 'IDebugProperty3 :: GetCustomViewerList | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bdabe777bf2147dee2b98ca552183ae0e14d16f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e772987a6e27dbe72a927dd83f8d33d043408fd0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888210"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166668"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Obtient une liste des visionneuses personnalisées associées à cette propriété.
@@ -58,10 +59,10 @@ dans Nombre de visionneuses à récupérer (spécifie également la taille du `r
 `pceltFetched`\
 à Nombre réel de visionneuses retournées.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Pour prendre en charge les visualiseurs de type, cette méthode transfère l’appel à la méthode [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) . Si l’évaluateur d’expression prend également en charge les visionneuses personnalisées pour le type de cette propriété, cette méthode peut ajouter les visionneuses personnalisées appropriées à la liste.
 
 Pour plus d’informations sur les différences entre les visualiseurs de type et les visionneuses personnalisées, consultez [visualiseur de type et visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) .

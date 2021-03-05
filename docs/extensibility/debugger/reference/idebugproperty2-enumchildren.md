@@ -1,4 +1,5 @@
 ---
+description: Récupère une liste des enfants de la propriété.
 title: 'IDebugProperty2 :: EnumChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68880945d7534985e1788ae3b1f1e3755f79eeda
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c9cade8cb0468c78ba03e2beec682d7c2284be0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916172"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166955"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 Récupère une liste des enfants de la propriété.
@@ -73,7 +74,7 @@ dans Spécifie la durée d’attente maximale, en millisecondes, avant le retour
 `ppEnum`\
 à Retourne un objet [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenant une liste des propriétés enfants.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

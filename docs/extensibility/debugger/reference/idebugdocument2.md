@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un document source.
 title: IDebugDocument2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96bf5821cb463b8a99f7376cb99b81ab8cae2206
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884869"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167345"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Cette interface représente un document source.
@@ -42,7 +43,7 @@ IDebugDocument2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Obtient le nom du document dans l’un des plusieurs formulaires.|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Obtient l’identificateur de classe du document.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette interface est implémentée uniquement lorsque le DE fournit le code source. Par exemple, lorsque vous déboguez un script sur une page HTML, le DE fournit le code source, car la source est téléchargée ou générée dynamiquement et n’existe pas en tant que fichier disque. Lors du débogage de langages traditionnels, tels que C++, il n’est pas nécessaire d’implémenter cette interface.
 
 ## <a name="requirements"></a>Configuration requise

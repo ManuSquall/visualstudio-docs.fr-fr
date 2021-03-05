@@ -1,4 +1,5 @@
 ---
+description: 'IDebugFunctionObject2 :: Evaluate appelle la fonction et retourne la valeur résultante sous la forme d’un objet.'
 title: 'IDebugFunctionObject2 :: Evaluate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b7d69434a6bd6aefb073a252ee35c07fccbee6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 777553e1889e751cf84f6e4c58691e0c5f446648
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166461"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 Appelle la fonction et retourne la valeur résultante sous la forme d’un objet.
@@ -61,7 +62,7 @@ dans Spécifie la durée d’attente maximale, en millisecondes, avant le retour
 `ppResult`\
 à Retourne un **IDebugObject** qui représente la valeur de la fonction sous la forme d’un objet.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

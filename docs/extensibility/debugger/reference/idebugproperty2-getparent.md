@@ -1,4 +1,5 @@
 ---
+description: Obtient la propriété parente d’une propriété.
 title: 'IDebugProperty2 :: GetParent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9855ff168152ed68117569aab939e62da990f81b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9ae5557734ab59a2e71a67404a50519d72ca1ec0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850969"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166825"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Obtient la propriété parente d’une propriété.
@@ -43,7 +44,7 @@ int GetParent (
 `ppParent`\
 à Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente le parent de la propriété.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Retourne `S_GETPARENT_NO_PARENT` s'il n'y a aucun parent.
 
 ## <a name="see-also"></a>Voir aussi

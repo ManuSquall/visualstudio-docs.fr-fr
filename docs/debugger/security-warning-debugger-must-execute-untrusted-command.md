@@ -1,4 +1,5 @@
 ---
+description: Cette boîte de dialogue d'avertissement apparaît lorsque vous utilisez le serveur source.
 title: 'Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d845719b758d3d64280337a1ab4138f2948ee97b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ca71db31fc976a2bc3c652929fd9215f2f3123f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166656"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avertissement de sécurité : Le débogueur doit exécuter cette commande non approuvée
 Cette boîte de dialogue d'avertissement apparaît lorsque vous utilisez le serveur source. Elle indique que la commande que le débogueur a besoin d'exécuter pour obtenir le code source n'est pas dans la liste de commandes de confiance pour le serveur source contenue dans le fichier srcsvr.ini. Si c'est une commande valide, vous pouvez l'ajouter au fichier srcsvr.ini. Sinon, vous ne devez pas l'exécuter. Pour plus d’informations, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

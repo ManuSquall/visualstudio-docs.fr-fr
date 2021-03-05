@@ -1,4 +1,5 @@
 ---
+description: Met fin au processus.
 title: 'IDebugProcess2 :: Terminate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 235f2464c2302a19860e5414fb19ab042a8b5aa3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5a876f610118071e244673820d6154c1735bbfb9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890043"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167085"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 Met fin au processus.
@@ -40,7 +41,7 @@ int Terminate();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Lorsqu’un processus est terminé, tous les programmes de ce processus sont arrêtés. aucun n’est autorisé à exécuter davantage de code.
 
 ## <a name="see-also"></a>Voir aussi
