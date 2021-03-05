@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un programme qui s’exécute dans un processus.
 title: IDebugProgram2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c262f123e56bf9ed9751ad8b9e7d91770cbd2df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4854150d6581d80804b4c29246bf6db016b5acb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887105"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159911"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Cette interface représente un programme qui s’exécute dans un processus.
@@ -68,7 +69,7 @@ IDebugProgram2 : IUnknown
 
  Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un programme est un conteneur de thread s’exécutant dans une architecture Runtime particulière, tandis qu’un processus est constitué d’un ou de plusieurs programmes.
 
 ## <a name="see-also"></a>Voir aussi

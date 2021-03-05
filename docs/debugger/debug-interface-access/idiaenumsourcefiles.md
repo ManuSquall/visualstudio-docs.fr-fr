@@ -1,4 +1,5 @@
 ---
+description: Énumère les différents fichiers sources contenus dans la source de données.
 title: IDiaEnumSourceFiles | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f17deb28c8412743513f41ae3cd1df81aba0de83
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f6ebef58f2746ac99e2836ae486a45bdbebcedd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856193"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159180"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Énumère les différents fichiers sources contenus dans la source de données.
@@ -41,7 +42,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumSourceFiles` .
 |[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant la `QueryInterface` méthode sur un objet [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Pour plus de détails, voir les exemples.

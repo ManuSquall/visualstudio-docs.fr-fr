@@ -1,4 +1,5 @@
 ---
+description: Définit les en-têtes d’image pour activer la traduction d’adresses virtuelles relative.
 title: IDiaAddressMap::set_imageHeaders | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bf56b7749033ecc99c7ba1ef0c9357c95542d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5ae155c6491acf90c327b2503e6993a08c5f536
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865278"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159493"
 ---
 # <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
 Définit les en-têtes d’image pour activer la traduction d’adresses virtuelles relative.
@@ -45,10 +46,10 @@ dans Tableau de  `IMAGE_SECTION_HEADER` structures à utiliser comme en-têtes d
 
 dans Affectez la valeur `FALSE` si les en-têtes d’image proviennent de la nouvelle image, `TRUE` s’ils reflètent l’image d’origine avant une mise à niveau. En règle générale, il est défini sur `TRUE` uniquement en association avec les appels à la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La `IMAGE_SECTION_HEADER` structure est déclarée dans Winnt. h et représente le format d’en-tête de la section image de l’exécutable.
 
  Les calculs d’adresses virtuelles relatifs dépendent des `IMAGE_SECTION_HEADER` valeurs. En règle générale, le DIA les récupère à partir du fichier de base de données du programme (. pdb). Si ces valeurs sont manquantes, le DIA n’est pas en mesure de calculer des adresses virtuelles relatives et la méthode [IDiaAddressMap :: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) retourne `FALSE` . Le client doit ensuite appeler la méthode [IDiaAddressMap ::p ut_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) pour activer les calculs d’adresses virtuelles relatifs après avoir fourni les en-têtes d’image manquants à partir de l’image elle-même.

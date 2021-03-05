@@ -1,4 +1,5 @@
 ---
+description: Récupère des données décrivant une contribution de section, autrement dit, un bloc de mémoire contigu apporté à l’image par un module de la mémoire.
 title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba3e4566796d65818fcf85abc70494122fe5f14d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03ab7bd69c026ccab1972d57988ef68c7c55eca8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855339"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159089"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 Récupère des données décrivant une contribution de section, autrement dit, un bloc de mémoire contigu apporté à l’image par un module de la mémoire.
@@ -58,7 +59,7 @@ Le tableau suivant présente les méthodes de `IDiaSectionContrib` .
 |[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Récupère le CRC des informations de réadressage pour la section.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur compiland pour la section.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Cette interface est obtenue en appelant les méthodes [IDiaEnumSectionContribs :: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) et [IDiaEnumSectionContribs :: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) . Pour obtenir un exemple d’obtention de l’interface, consultez l’interface [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) `IDiaSectionContrib` .

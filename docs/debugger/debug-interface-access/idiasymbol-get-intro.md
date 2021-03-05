@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la fonction est une fonction virtuelle d’introduction.
 title: IDiaSymbol::get_intro | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5099eb9d8ba1f56419cd1cf0138e29a79e2c28f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad2e791995f4edc1b09655640bc339d577f7f37d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863262"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160875"
 ---
 # <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
 Récupère un indicateur qui spécifie si la fonction est une fonction virtuelle d’introduction.
@@ -35,7 +36,7 @@ HRESULT get_intro (
 
 à Retourne `TRUE` si la fonction est virtuelle Intro ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

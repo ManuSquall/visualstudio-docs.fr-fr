@@ -1,4 +1,5 @@
 ---
+description: La Débogueur de capture instantanée Visual Studio est maintenant connectée à votre service et vous pouvez commencer à collecter des instantanés pour faciliter le débogage.
 title: Page de démarrage de la Débogueur de capture instantanée
 ms.date: 07/14/2018
 robots: noindex, nofollow
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f237f121d0bd0a5eaa57cd2b198024d22951622
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e0c6196d99b8a2b7ac9b4187dbd1397111abbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941994"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160340"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Prise en main avec le Débogueur de capture instantanée
 

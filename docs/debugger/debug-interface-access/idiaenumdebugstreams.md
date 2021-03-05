@@ -1,4 +1,5 @@
 ---
+description: Énumère les différents flux de débogage contenus dans la source de données.
 title: IDiaEnumDebugStreams | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf372d6885398994010aeb98f8ef57c28209a6d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a2e8b831cb77fc4fcf908764f220a253ffe136ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856893"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159418"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 Énumère les différents flux de débogage contenus dans la source de données.
@@ -41,7 +42,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumDebugStreams` .
 |[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Réinitialise une séquence d'énumération.|
 |[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Le contenu des flux de débogage est dépendant de l’implémentation et les formats de données ne sont pas documentés.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

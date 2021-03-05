@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si le module est un. netmodule (un module MSIL (Microsoft Intermediate Language) qui contient uniquement des métadonnées et aucun symbole natif).
 title: IDiaSymbol::get_isMSILNetmodule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 943f496ff4c08a6f3b2047c977c4ed4588190587
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27d1294e5cbced8cd2f521a25858a37efe9f5b8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863157"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160763"
 ---
 # <a name="idiasymbolget_ismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Récupère un indicateur qui spécifie si le module est un. netmodule (un module MSIL (Microsoft Intermediate Language) qui contient uniquement des métadonnées et aucun symbole natif).
@@ -35,13 +36,13 @@ HRESULT get_isMSILNetmodule(
 
 à Retourne `TRUE` si le module est MSIL ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est disponible à partir du `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Configuration requise

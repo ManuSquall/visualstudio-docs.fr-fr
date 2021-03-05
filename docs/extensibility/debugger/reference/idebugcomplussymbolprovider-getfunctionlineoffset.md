@@ -1,4 +1,5 @@
 ---
+description: Récupère l’adresse dans une fonction qui représente l’offset de ligne donné.
 title: 'IDebugComPlusSymbolProvider :: GetFunctionLineOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42e11e527f31835a22273a2b8c31b90f231a9316
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb6d30c33ff647d4a414c85f596c5575f9807df8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880916"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160236"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 Récupère l’adresse dans une fonction qui représente l’offset de ligne donné.
@@ -52,7 +53,7 @@ dans Offset de ligne à partir du début de la fonction.
 `ppNewAddress`\
 à Nouvelle adresse qui représente l’offset de ligne à partir du début de la fonction.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

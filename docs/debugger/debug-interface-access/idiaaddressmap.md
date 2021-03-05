@@ -1,4 +1,5 @@
 ---
+description: Permet de contrôler la façon dont le kit de développement logiciel (SDK) DIA calcule les adresses virtuelles et virtuelles pour les objets de débogage.
 title: IDiaAddressMap | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 975321d9710e9b448fa0b6b860f76c2f0b84d52e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 085ba4e75eab1dd67585b3926b71edd5dce88d72
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159466"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 Permet de contrôler la façon dont le kit de développement logiciel (SDK) DIA calcule les adresses virtuelles et virtuelles pour les objets de débogage.
@@ -42,7 +43,7 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Définit les en-têtes d’image pour activer la traduction d’adresses virtuelles relatives.|
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fournit un mappage d’adresses pour prendre en charge les traductions de disposition d’image.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le contrôle fourni par cette interface est encapsulé dans deux jeux de données que vous fournissez : des en-têtes d’images et des mappages d’adresses. La plupart des clients utilisent la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) pour rechercher les informations de débogage appropriées pour une image et la méthode peut généralement découvrir tous les en-têtes nécessaires et mapper les données elles-mêmes. Toutefois, certains clients implémentent un traitement spécialisé et recherchent des données. Ces clients utilisent les méthodes de l' `IDiaAddressMap` interface pour fournir le kit de développement logiciel (SDK) dia avec les résultats de la recherche.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

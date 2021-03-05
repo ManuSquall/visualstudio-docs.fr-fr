@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la fonction contient un assembly inline.
 title: IDiaSymbol::get_hasInlAsm | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26a617f01c56e417ed9d0a05c4fea72bc1e0b88b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d422310a255e6442ee0d878f541882cdee254244
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854240"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160952"
 ---
 # <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
 Récupère un indicateur qui spécifie si la fonction contient un assembly inline.
@@ -35,7 +36,7 @@ HRESULT get_hasInlAsm(
 
 à Retourne `TRUE` si la fonction a un assembly inline ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

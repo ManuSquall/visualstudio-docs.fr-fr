@@ -1,4 +1,5 @@
 ---
+description: Définit le nom de fichier par défaut du fichier journal graphique.
 title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aff9836570b3af882e5863cc85834f5423f890e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f6bd07e54fc90bcc99f7462cc087ba01866727c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861424"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160478"
 ---
 # <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 Définit le nom de fichier par défaut du fichier journal graphique.
@@ -34,7 +35,7 @@ Définit le nom de fichier par défaut du fichier journal graphique.
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si le symbole de préprocesseur `DONT_SAVE_VSGLOG_TO_TEMP` est défini, le nom de fichier est relatif au répertoire actif de l’application capturée ou est un chemin d’accès absolu ; dans le cas contraire, il est relatif au répertoire de fichiers temporaires de l’utilisateur et ne peut pas être un chemin d’accès absolu.
 
  Pour modifier le nom de fichier défini, vous devez le redéfinir avant `vsgcapture.h` d’inclure dans votre programme.

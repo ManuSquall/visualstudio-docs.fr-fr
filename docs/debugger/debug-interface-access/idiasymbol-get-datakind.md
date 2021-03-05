@@ -1,4 +1,5 @@
 ---
+description: Récupère la classification des variables d’un symbole de données.
 title: IDiaSymbol::get_dataKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6448b30f94924d24358409715af0dec673e31d87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 833ff0fb6602d7f33aabbb9aa1a442bda07a379b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863437"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161008"
 ---
 # <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
 Récupère la classification des variables d’un symbole de données.
@@ -35,7 +36,7 @@ HRESULT get_dataKind (
 
 à Retourne une valeur de l’énumération [DataKind énumération](../../debugger/debug-interface-access/datakind.md) qui spécifie le type de données, par exemple global, static ou constant, par exemple.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

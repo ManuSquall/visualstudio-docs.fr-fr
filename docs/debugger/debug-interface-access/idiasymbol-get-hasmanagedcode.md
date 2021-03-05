@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si le module contient du code managé.
 title: IDiaSymbol::get_hasManagedCode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fe00b39fb451372d8d3a949d5f1d553b71d7507
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1cac64e0e6419749a07d75e0beb9f5f8d4a566c5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854233"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160945"
 ---
 # <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 Récupère un indicateur qui spécifie si le module contient du code managé.
@@ -35,13 +36,13 @@ HRESULT get_hasManagedCode(
 
 à Retourne `TRUE` si le module contient du code managé ; sinon, retourne `FALSE` , le code est du code non managé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est disponible à partir du `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Configuration requise

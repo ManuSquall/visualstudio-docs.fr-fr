@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si le symbole fait référence à une adresse de code.
 title: IDiaSymbol::get_code | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6336ea900cc7ae23848d67b5a2e6545a404ad7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8686a751e13ab24d6150a146578c1d010314cc23
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863521"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161085"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Récupère un indicateur qui spécifie si le symbole fait référence à une adresse de code.
@@ -35,7 +36,7 @@ HRESULT get_code (
 
 à Retourne `TRUE` si le symbole fait référence à une adresse de code ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

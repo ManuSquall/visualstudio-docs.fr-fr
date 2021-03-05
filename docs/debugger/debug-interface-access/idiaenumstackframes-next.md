@@ -1,4 +1,5 @@
 ---
+description: Récupère un nombre spécifié d’éléments de frame de pile à partir de la séquence d’énumération.
 title: IDiaEnumStackFrames::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e96190e76d13f6934333b4d743a1d7d2e5ee2e80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cee13aa9e26de77cf22cf7a51011a567cb14c25
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856186"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159159"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 Récupère un nombre spécifié d’éléments de frame de pile à partir de la séquence d’énumération.
@@ -45,7 +46,7 @@ dans Nombre d’éléments StackFrame dans l’énumérateur à récupérer.
 
 à Retourne le nombre d’éléments de frame de pile dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de frames de pile. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

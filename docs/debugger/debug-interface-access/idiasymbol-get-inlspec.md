@@ -1,4 +1,5 @@
 ---
+description: Cette fonction récupère un indicateur qui spécifie si la fonction a été marquée comme inline (à l’aide de l’un des attributs Inline, _inline, __forceinline)).
 title: IDiaSymbol::get_InlSpec | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efde91caaa4e7b79db01975c0691b2acb5f01bee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f727e83d067fed37698eb750bb39309a9454535a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854191"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160868"
 ---
 # <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
 Cette fonction récupère un indicateur qui spécifie si la fonction a été marquée comme inline (à l’aide de l’un des attributs [inline, __inline \_ _forceinline](/cpp/cpp/inline-functions-cpp) ).
@@ -35,7 +36,7 @@ HRESULT get_inlSpec(
 
 à Retourne `TRUE` si la fonction a été marquée comme Inline ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

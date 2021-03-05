@@ -1,4 +1,5 @@
 ---
+description: 'IDebugFunctionObject :: Evaluate appelle la fonction et retourne la valeur résultante sous la forme d’un objet.'
 title: 'IDebugFunctionObject :: Evaluate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94285bc0ca36d4a55c3cd3a3483f6e20f6914271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d15cdb09de32edcdf6159567db12e05cffd06e7e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920983"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160106"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 Appelle la fonction et retourne la valeur résultante sous la forme d’un objet.
@@ -58,10 +59,10 @@ dans Spécifie la durée d’attente maximale, en millisecondes, avant le retour
 `ppResult`\
 à Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant la valeur de la fonction sous la forme d’un objet.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode configure et exécute un appel à la fonction représentée par l’objet [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 ## <a name="see-also"></a>Voir aussi

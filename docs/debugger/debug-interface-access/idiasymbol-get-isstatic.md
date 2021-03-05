@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la couche de fonction ou de thunk a été marquée comme static.
 title: IDiaSymbol::get_isStatic | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 338c2e650b59f501bbf184e877ca1e1f08b924c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59a29412a95192306454b40335285f580d1120c8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863108"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160714"
 ---
 # <a name="idiasymbolget_isstatic"></a>IDiaSymbol::get_isStatic
 Récupère un indicateur qui spécifie si la couche de fonction ou de thunk a été marquée comme static.
@@ -35,7 +36,7 @@ HRESULT get_isStatic(
 
 à Retourne `TRUE` si la couche de fonction ou de thunk a été marquée comme static ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

@@ -1,6 +1,6 @@
 ---
 title: Déboguer les exceptions ASP.NET | Microsoft Docs
-Description: Apprenez à configurer afin que le débogueur s’arrête pour les exceptions non gérées dans votre application ASP.NET. Vous pouvez vous assurer que l’arrêt se produit dans un code non-système.
+description: Apprenez à configurer afin que le débogueur s’arrête pour les exceptions non gérées dans votre application ASP.NET. Vous pouvez vous assurer que l’arrêt se produit dans un code non-système.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebf53569e2c104b49acdadba36203f9d6409e215
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913259"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160419"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Comment : déboguer des exceptions ASP.NET
 Le débogage d’exceptions est une partie importante du développement d’une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] fiable. Pour plus d’informations sur le débogage des exceptions, consultez [gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md).

@@ -1,4 +1,5 @@
 ---
+description: Cette méthode ajoute un nœud de programme pour chaque moteur de débogage (DE) spécifié.
 title: 'IDebugProcessEx2 :: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ef9379edc9e02e8bed6761abf0aa4a2830fc415
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a4c6446c2106d79dd14fc0378fc848eac3df18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861086"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159989"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Cette méthode ajoute un nœud de programme pour chaque moteur de débogage (DE) spécifié.
@@ -53,10 +54,10 @@ dans Tableau des ( `GUID` s) pour les nœuds de programme à ajouter.
 `celtSpecificEngines`\
 dans Nombre de `GUID` s dans le `rgguidSpecificEngines` tableau.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 - Des [nœuds de programme](../../../extensibility/debugger/program-nodes.md) sont ajoutés pour chaque liste dans, à `rgguidSpecificEngines` l’exclusion du moteur de lancement (comme indiqué dans `guidLaunchingEngine` ), qui est supposé ajouter son propre nœud de programme lorsqu’il lance un programme.
 
 ## <a name="see-also"></a>Voir aussi

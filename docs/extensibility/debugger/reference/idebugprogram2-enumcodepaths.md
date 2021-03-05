@@ -1,4 +1,5 @@
 ---
+description: Récupère une liste des chemins de code pour une position donnée dans un fichier source.
 title: 'IDebugProgram2 :: EnumCodePaths | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c647379d0b72832a4068d720846f8a9331f9b939
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844747"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159963"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Récupère une liste des chemins de code pour une position donnée dans un fichier source.
@@ -68,10 +69,10 @@ dans Valeur différente de zéro ( `TRUE` ) si dans la vue **source** , ou zéro
 `ppSafety`\
 à Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente un contexte de code supplémentaire à définir comme point d’arrêt si le chemin d’accès au code choisi est ignoré. Cela peut se produire dans le cas d’une expression booléenne de court-circuit, par exemple.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un chemin d’accès de code décrit le nom d’une méthode ou d’une fonction qui a été appelée pour atteindre le point actuel dans l’exécution du programme. Une liste de chemins de code représente la pile des appels.
 
 ## <a name="see-also"></a>Voir aussi

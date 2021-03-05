@@ -1,4 +1,5 @@
 ---
+description: Récupère un nombre spécifié de segments dans la séquence d’énumération.
 title: IDiaEnumSegments::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a4533b34b35f5050e3bb13a9dee9c74fa69c61d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95d4ac6d566033472d7769e4a1a5df86cdf7ff70
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159229"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 Récupère un nombre spécifié de segments dans la séquence d’énumération.
@@ -45,7 +46,7 @@ dans Nombre de segments dans l’énumérateur à récupérer.
 
 à Retourne le nombre de segments dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de segments. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

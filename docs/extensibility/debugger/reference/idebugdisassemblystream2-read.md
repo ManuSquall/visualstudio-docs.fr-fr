@@ -1,4 +1,5 @@
 ---
+description: Lit les instructions à partir de la position actuelle dans le flux de code machine.
 title: 'IDebugDisassemblyStream2 :: Read | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b963bddc9d1ee04a6955b1110d73934b30196b21
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944665"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160197"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Lit les instructions à partir de la position actuelle dans le flux de code machine.
@@ -58,7 +59,7 @@ dans Combinaison d’indicateurs de l’énumération [DISASSEMBLY_STREAM_FIELDS
 `prgDisassembly`\
 à Tableau de structures [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) qui est rempli avec le code désassemblé, une structure par instruction désassemblée. La longueur de ce tableau est dictée par le `dwInstructions` paramètre.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

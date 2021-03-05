@@ -1,4 +1,5 @@
 ---
+description: Récupère un tableau de types spécifiques au compilateur pour ce symbole.
 title: IDiaSymbol::get_types | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8ee1519dd2613ec823aa2d13e60f296baa4415
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aec5db878c87ba257f1f83458d1ae742272a9b0f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853463"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160602"
 ---
 # <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 Récupère un tableau de types spécifiques au compilateur pour ce symbole.
@@ -45,7 +46,7 @@ dans Taille de la mémoire tampon pour stocker les données.
 
 à Tableau à remplir avec les objets [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représentent tous les types pour ce symbole.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

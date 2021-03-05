@@ -1,4 +1,5 @@
 ---
+description: Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.
 title: IDiaSession::findAcceleratorInlineesByName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a2ce0d808a21a793115c6f065ca4ab95b1507e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb2a6c67dc9f16d3a4ef98d36772681d3ab2638e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855234"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159026"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.
@@ -43,10 +44,10 @@ dans Options de recherche de nom à utiliser lors de la recherche de frames Inli
 
 à Pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette fonction recherche des Inlines uniquement dans les fonctions d’accélérateur. Elle ignore les enregistrements de procédures C++ natifs.
 
 ## <a name="see-also"></a>Voir aussi

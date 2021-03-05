@@ -1,4 +1,5 @@
 ---
+description: Crée un point d’arrêt en attente dans le moteur de débogage (DE).
 title: 'IDebugEngine2 :: CreatePendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93534a40d523c7b67a769ebea319463cf59e4b7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c364778fa857049139c058f144651edc28bb4692
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879018"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160159"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Crée un point d’arrêt en attente dans le moteur de débogage (DE).
@@ -48,10 +49,10 @@ dans Objet [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/
 `ppPendingBP`\
 à Retourne un objet [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) qui représente le point d’arrêt en attente.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne généralement `E_FAIL` la valeur si le `pBPRequest` paramètre ne correspond à aucun langage pris en charge par le de si le `pBPRequest` paramètre n’est pas valide ou est incomplet.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un point d’arrêt en attente est essentiellement une collection de toutes les informations nécessaires pour lier un point d’arrêt au code. Le point d’arrêt en attente retourné par cette méthode n’est pas lié au code tant que la méthode de [liaison](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) n’est pas appelée.
 
 Pour chaque point d’arrêt en attente défini par l’utilisateur, le gestionnaire de débogage de session appelle cette méthode dans chaque attachement DE. C’est à la valeur de de vérifier que le point d’arrêt est valide pour les programmes en cours d’exécution dans ce.
