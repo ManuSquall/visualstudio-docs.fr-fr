@@ -1,4 +1,5 @@
 ---
+description: Charge les symboles de débogage à l’aide de la méthode de rappel spécifiée.
 title: 'IDebugComPlusSymbolProvider2 :: LoadSymbolsFromCallback | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: def24a46e2ee2e040e717abe61e1f22d0b260711
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 039f763f08be681dbdf46acb31e2fa4fb7af71e2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954967"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163367"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Charge les symboles de débogage à l’aide de la méthode de rappel spécifiée.
@@ -72,7 +73,7 @@ dans Chemin d’accès pour rechercher le fichier de symboles.
 `pCallback`\
 dans Objet qui représente la méthode de rappel.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

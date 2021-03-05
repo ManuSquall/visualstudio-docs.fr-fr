@@ -1,4 +1,5 @@
 ---
+description: Détermine si l’adresse de débogage spécifiée est un point de séquence.
 title: 'IDebugComPlusSymbolProvider2 :: IsAddressSequencePoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99d16ebd2802bb31b7568f7f8b862543b4083a67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50e14f7e91457e2a7a0bd4719730e96d4019e82d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954993"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163380"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Détermine si l’adresse de débogage spécifiée est un point de séquence.
@@ -42,7 +43,7 @@ int IsAddressSequencePoint(
 `pAddress`\
 dans Adresse de débogage qui est représentée par l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 Si l’adresse de débogage est un point de séquence, retourne `S_OK` ; sinon, retourne `S_FALSE` .
 
 ## <a name="example"></a>Exemple

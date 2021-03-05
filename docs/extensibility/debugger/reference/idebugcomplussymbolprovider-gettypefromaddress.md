@@ -1,4 +1,5 @@
 ---
+description: Récupère un type de symbole en fonction de son adresse de débogage.
 title: 'IDebugComPlusSymbolProvider :: GetTypeFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65b94be12bab00b44f12bc23239de90f5e8c0ddc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dfcc7987c672ebf9647f33281b64d6d446a383e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892838"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163717"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Récupère un type de symbole en fonction de son adresse de débogage.
@@ -47,7 +48,7 @@ dans Adresse de débogage qui est représentée par une interface [IDebugAddress
 `ppField`\
 à Retourne le type de tableau tel qu’il est représenté par une interface [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la fonction est virtuelle pure.
 title: IDiaSymbol::get_pure | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad7d48615a29349562b76e8e93158ff4d3d5743
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c51066fe1e1bbc8d165e07bd2b2653d0e2912ebe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862821"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161920"
 ---
 # <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
 Récupère un indicateur qui spécifie si la fonction est virtuelle pure.
@@ -35,7 +36,7 @@ HRESULT get_pure (
 
 à Retourne `TRUE` si la fonction est virtuelle pure ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

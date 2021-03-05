@@ -1,4 +1,5 @@
 ---
+description: Cette méthode obtient les informations de demande de point d’arrêt qui décrivent cette demande de point d’arrêt.
 title: 'IDebugBreakpointRequest3 :: GetRequestInfo2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a11a317b4f14d94670a454a97be321b3097cffeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0d62b684fd171857870f59b2f3eec2e034cab11
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852984"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162327"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Cette méthode obtient les informations de demande de point d’arrêt qui décrivent cette demande de point d’arrêt.
@@ -48,10 +49,10 @@ dans Combinaison d’indicateurs de l’énumération [BPREQI_FIELDS](../../../e
 `bBPRequestInfo`\
 à Structure [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) à remplir.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette demande contient plus d’informations que celles retournées par la méthode [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .
 
 ## <a name="see-also"></a>Voir aussi

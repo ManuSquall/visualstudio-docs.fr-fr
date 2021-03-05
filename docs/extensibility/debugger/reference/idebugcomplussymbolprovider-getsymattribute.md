@@ -1,4 +1,5 @@
 ---
+description: Récupère les symboles de débogage avec l’attribut parent donné pour le module spécifié.
 title: 'IDebugComPlusSymbolProvider :: GetSymAttribute, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53d0f3ae185a8f13a76547b5afdad1e3b6558918
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66504d4b98de9f8435e4757a17a1970362e84ab9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892864"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163809"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Récupère les symboles de débogage avec l’attribut parent donné pour le module spécifié.
@@ -72,7 +73,7 @@ dans Nombre d’octets requis pour la sortie `buffer` .
 `buffer`\
 à Tableau qui contient les symboles.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si un type pointeur est une référence rvalue.
 title: IDiaSymbol::get_RValueReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a66ec650c1e12e795241ab31cafc50ebaacf20ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3be0c7f5a25459823911c27c39f80f3b6593cbbe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853652"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161857"
 ---
 # <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
 Récupère un indicateur qui spécifie si un type pointeur est une référence rvalue. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) est définie sur un type pointeur.
@@ -35,7 +36,7 @@ HRESULT get_RValueReference (
 
 à Retourne `TRUE` si le pointeur est une référence rvalue ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

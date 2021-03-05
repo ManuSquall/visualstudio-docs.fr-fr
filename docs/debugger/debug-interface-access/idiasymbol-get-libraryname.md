@@ -1,4 +1,5 @@
 ---
+description: Récupère le nom de fichier de la bibliothèque ou du fichier objet à partir duquel l’objet a été chargé.
 title: IDiaSymbol::get_libraryName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab6dc26ef8e449b27daf8c99982cf5fbb2a0d5fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e717e1794531114d7b68966ef19bdbb2158bfe60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853946"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161990"
 ---
 # <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
 Récupère le nom de fichier de la bibliothèque ou du fichier objet à partir duquel l’objet a été chargé.
@@ -35,7 +36,7 @@ HRESULT get_libraryName (
 
 à Retourne le nom de fichier de la bibliothèque ou du fichier objet à partir duquel l’objet a été chargé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

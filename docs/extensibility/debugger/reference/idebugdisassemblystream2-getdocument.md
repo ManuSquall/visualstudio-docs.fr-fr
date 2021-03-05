@@ -1,4 +1,5 @@
 ---
+description: Obtient le document source associé à ce flux d’entrée.
 title: 'IDebugDisassemblyStream2 :: GetDocument | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ad0b4d4fcb316447ca836fbc5ac15170a71270e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c8b71a1c8b12aecf8346f1e035269da722d59ad
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901763"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162937"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 Obtient le document source associé à ce flux d’entrée.
@@ -48,10 +49,10 @@ dans URL du document.
 `ppDocument`\
 à Retourne un objet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) qui représente le document.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est implémentée par les moteurs de débogage qui ont des documents texte qui ne sont pas stockés dans un fichier réel.
 
 ## <a name="see-also"></a>Voir aussi

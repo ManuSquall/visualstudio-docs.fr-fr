@@ -1,4 +1,5 @@
 ---
+description: Récupère le type de plateforme pour lequel le module de la plateforme a été compilé.
 title: IDiaSymbol::get_platform | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: acfd6945e0ae32a259a67f646c0fed80820b9f9b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 268fdb3d3e54518a05d2e8f0fe49da86dc08f114
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853694"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161927"
 ---
 # <a name="idiasymbolget_platform"></a>IDiaSymbol::get_platform
 Récupère le type de plateforme pour lequel le module de la plateforme a été compilé.
@@ -35,7 +36,7 @@ HRESULT get_platform (
 
 à Retourne une valeur de l’énumération d' [énumération CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) qui spécifie le type de plateforme pour lequel le module de la plateforme a été compilé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

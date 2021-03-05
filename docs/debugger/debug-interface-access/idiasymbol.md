@@ -1,4 +1,5 @@
 ---
+description: Décrit les propriétés d’une instance de symbole.
 title: IDiaSymbol | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da51eda00bd2c80152029e503cfb33089e608683
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f0d48d0a3ed09ea98c9bb299b921409b711b695a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161717"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Décrit les propriétés d’une instance de symbole.
@@ -220,7 +221,7 @@ Le tableau suivant présente les méthodes de `IDiaSymbol` .
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Récupère l’identificateur de forme de la table virtuelle du symbole.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est volatile.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant l’une des méthodes suivantes :

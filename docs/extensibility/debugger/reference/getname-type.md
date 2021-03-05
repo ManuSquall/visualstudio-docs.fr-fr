@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type de nom des fichiers à récupérer.
 title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 541f8b51d4ce56b167abd3ecdb28d08bec0c02c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9811312188e63017e074d12be6dfa67ab6929aa6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891265"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162444"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 Spécifie le type de nom des fichiers à récupérer.
@@ -74,7 +75,7 @@ Spécifie le titre du document, s’il en existe un.
 `GN_STARTPAGEURL`\
 Obtient l’URL de la page de démarrage pour les processus.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Ces valeurs sont passées en tant que paramètres aux méthodes [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)et [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) pour spécifier le genre de nom à retourner.
 
 ## <a name="requirements"></a>Configuration requise

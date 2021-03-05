@@ -1,4 +1,5 @@
 ---
+description: Spécifie les informations à récupérer à propos d’un échec de résolution d’un point d’arrêt.
 title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 287e6750ceaafc705c5d49bd5cd27201f16a692f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e26b5a7285c2e5c9135429777b4b58f35252e550
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876093"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162522"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 Spécifie les informations à récupérer à propos d’un échec de résolution d’un point d’arrêt.
@@ -69,7 +70,7 @@ Initialisez/utilisez le `dwType` champ (type de point d’arrêt) de la `BP_ERRO
 `BPERESI_ALLFIELDS`\
 Initialisez/Utilisez tous les champs de la `BP_ERROR_RESOLUTION_INFO` structure.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Passé en tant que paramètre à la méthode [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) pour indiquer les champs de la structure [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) qui doivent être initialisés.
 
 Ces valeurs sont également utilisées pour indiquer les champs de la `BP_ERROR_RESOLUTION_INFO` structure qui sont utilisés et valides lorsque cette structure est retournée.

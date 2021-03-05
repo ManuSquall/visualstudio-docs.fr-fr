@@ -1,4 +1,5 @@
 ---
+description: La plupart des symboles ont un emplacement défini dans le fichier image.
 title: Emplacements des symboles | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f7e5d9a02a8c928b64bcb6abd8054d8fa76f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2452d9aca52c281a96ea8f5738bc38ed21ee63e8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853190"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161626"
 ---
 # <a name="symbol-locations"></a>Emplacements des symboles
 La plupart des symboles ont un emplacement défini dans le fichier image. L’emplacement d’un symbole est spécifié avec une valeur de l’énumération d' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) . Le symbole peut prendre en charge des propriétés supplémentaires en fonction de son emplacement.
@@ -27,7 +28,7 @@ La plupart des symboles ont un emplacement défini dans le fichier image. L’em
 
 |Type d’emplacement|Propriétés supplémentaires|
 |-------------------|---------------------------|
-|`LocIsNull`|aucun|
+|`LocIsNull`|Aucun|
 |`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol :: get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (si les adresses virtuelles relatives sont activées)<br /><br /> [IDiaSymbol :: get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (si la base de l’image a été définie sur une valeur différente de zéro)|
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|

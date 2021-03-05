@@ -1,4 +1,5 @@
 ---
+description: Décrit un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
 title: GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ad4d1ba6a0aa0489b7f2c80e0ffe59cd35b2e58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbdc8465bef0795649fef5b169a221a3e7b7178c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904745"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162418"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 Décrit un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
@@ -48,7 +49,7 @@ Nombre d’identificateurs uniques dans le tableau.
 `Members`\
 Tableau qui contient des identificateurs uniques.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette structure est retournée par la méthode [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) .
 
 ## <a name="requirements"></a>Configuration requise

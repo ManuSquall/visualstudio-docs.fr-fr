@@ -1,4 +1,5 @@
 ---
+description: Récupère un type intégré du type HLSL.
 title: IDiaSymbol::get_builtInKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7bc90c83ec789920d89bb424e6c7a6464c0ce8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d71ad1c8986bb60238e8fce6a5f3c7c201cb4954
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863535"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162220"
 ---
 # <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
 Récupère un type intégré du type HLSL.
@@ -32,7 +33,7 @@ HRESULT get_buildInKind(
 
 à Pointeur vers un `DWORD` qui contient un type intégré de type HLSL.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

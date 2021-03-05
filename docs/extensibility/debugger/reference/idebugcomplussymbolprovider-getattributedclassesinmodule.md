@@ -1,4 +1,5 @@
 ---
+description: Récupère les classes avec l’attribut spécifié dans un module donné.
 title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62f9d7a9b9482190700680825865465cdfe341b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cdd1186fdea90e75fce7b2cb90fd6d477cd4140
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911982"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163835"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Récupère les classes avec l’attribut spécifié dans un module donné.
@@ -59,7 +60,7 @@ dans Chaîne d’attribut.
 `ppEnum`\
 à Retourne une énumération des classes avec attributs.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

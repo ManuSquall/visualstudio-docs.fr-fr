@@ -1,4 +1,5 @@
 ---
+description: Récupère la valeur de signature du symbole.
 title: IDiaSymbol::get_signature | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a846c445ff15c626335accd077af8ffb8d16051e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eee113e7998d983b601b93a90ad3ed6a9a97fa5d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853631"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161815"
 ---
 # <a name="idiasymbolget_signature"></a>IDiaSymbol::get_signature
 Récupère la valeur de signature du symbole.
@@ -35,7 +36,7 @@ HRESULT get_signature (
 
 à Retourne la valeur de signature du symbole.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

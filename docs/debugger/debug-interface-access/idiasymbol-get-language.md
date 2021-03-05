@@ -1,4 +1,5 @@
 ---
+description: Récupère la langue de la source.
 title: IDiaSymbol::get_language | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 530bfc0b977cd99f1924461d52417deb49e7330e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50d4ee9899b7d625a18babc3551d41b4e2ddc8bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853967"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162025"
 ---
 # <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
 Récupère la langue de la source.
@@ -35,7 +36,7 @@ HRESULT get_language (
 
 à Retourne une valeur de l’énumération d' [énumération CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) qui spécifie le langage de la source.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]

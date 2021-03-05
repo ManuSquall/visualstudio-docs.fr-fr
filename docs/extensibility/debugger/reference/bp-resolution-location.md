@@ -1,4 +1,5 @@
 ---
+description: Spécifie la structure de l’emplacement de résolution de point d’arrêt.
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87fef44d02911e84952f6eb8ab09dd9a1360dea6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881072"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162561"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Spécifie la structure de l’emplacement de résolution de point d’arrêt.
@@ -73,7 +74,7 @@ Valeur de l’énumération [BP_TYPE](../../../extensibility/debugger/reference/
 `unionmember4`\
 [C# uniquement] Consultez la section Notes sur la façon d’interpréter.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette structure est un membre des structures [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) et [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) .
 
  [C# uniquement] Les `unionmemberX` membres sont interprétés d’après le tableau suivant. Recherchez la valeur dans la colonne de gauche pour `bpType` déterminer ce que chaque `unionmemberX` membre représente et marshaler en `unionmemberX` conséquence. Consultez l’exemple pour obtenir une façon d’interpréter cette structure en C#.

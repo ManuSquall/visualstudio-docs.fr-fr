@@ -1,4 +1,5 @@
 ---
+description: Charge les symboles de débogage spécifiés en mémoire.
 title: 'IDebugComPlusSymbolProvider :: LoadSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d74480e68dda5f9cd4316b4eb6de2e140542071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d09cbe3afd5bc32f3143e5fb15387b7c5c7cb702
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911996"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163627"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Charge les symboles de débogage spécifiés en mémoire.
@@ -67,7 +68,7 @@ dans Nom du module.
 `bstrSymSearchPath`\
 dans Chemin d’accès pour rechercher le fichier de symboles.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

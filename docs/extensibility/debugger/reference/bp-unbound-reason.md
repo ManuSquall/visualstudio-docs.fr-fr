@@ -1,4 +1,5 @@
 ---
+description: Indique la raison pour laquelle un point d’arrêt a été indépendant.
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c4750b4d1a9c1f972c0445dfcf3ea2f4fa5be328
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 857f07e70809200567b6c2f79c5a22aff78b4af8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842653"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162548"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 Indique la raison pour laquelle un point d’arrêt a été indépendant.
@@ -59,7 +60,7 @@ Le point d’arrêt a été relié à un autre emplacement. Cela peut se produir
 `BPUR_ BREAKPOINT_ERROR`\
 Le point d’arrêt est déterminé comme étant une erreur une fois qu’il est lié. Cela se produit dans les points d’arrêt gérés dont les conditions ne sont plus valides.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Retourné par la méthode [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Configuration requise

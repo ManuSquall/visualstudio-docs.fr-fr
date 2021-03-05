@@ -1,4 +1,5 @@
 ---
+description: Récupère une référence à la classe parente du symbole.
 title: IDiaSymbol::get_classParent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b556529a0cf4a30cd84f83700947cb52c671de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61bab788c29a987ad7204d395c5e0d87fe2ab7dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863528"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162213"
 ---
 # <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
 Récupère une référence à la classe parente du symbole.
@@ -35,7 +36,7 @@ HRESULT get_classParent (
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le parent de la classe du symbole.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
@@ -48,7 +49,7 @@ HRESULT get_classParent (
 |En-tête :|dia2.h|
 |Version :|DIA SDK v 7.0|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les types de symboles qui peuvent être des parents de classe sont documentés dans la [hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>Voir aussi

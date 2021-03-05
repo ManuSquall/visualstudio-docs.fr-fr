@@ -1,4 +1,5 @@
 ---
+description: Active l’attachement automatique pour les moteurs de débogage spécifiés.
 title: 'IDebugCoreServer3 :: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7873480c979bba4f52203c02864d24aa88cf06cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 644d238db11c117b9068de8f7903361b9712f3aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907989"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163146"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Active l’attachement automatique pour les moteurs de débogage spécifiés.
@@ -58,10 +59,10 @@ dans URL de début à utiliser lors de l’attachement automatique.
 `pbstrSessionID`\
 à ID de la session qui a été attachée automatiquement.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Un code d’erreur est `E_AUTO_ATTACH_NOT_REGISTERED` , qui indique que la fabrique de classe d’attachement automatique n’a pas été inscrite.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Lorsqu’un programme associé à l’URL spécifiée est démarré, les moteurs de débogage spécifiés sont automatiquement démarrés et attachés.
 
 ## <a name="see-also"></a>Voir aussi

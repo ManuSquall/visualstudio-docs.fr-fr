@@ -1,4 +1,5 @@
 ---
+description: Détermine si la méthode spécifiée a des informations de ligne.
 title: 'IDebugComPlusSymbolProvider2 :: FunctionHasLineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6492f0899592074e003f49afb06fd9bf7303ddc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61c774c911f7b84ccba592cd73a04d13799da4d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954980"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163445"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 Détermine si la méthode spécifiée a des informations de ligne.
@@ -42,7 +43,7 @@ int FunctionHasLineInfo(
 `pAddress`\
 dans Adresse de débogage qui est représentée par une interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Cette adresse doit être un METHOD_ADDRESS.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` .
 
 ## <a name="example"></a>Exemple

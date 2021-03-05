@@ -1,4 +1,5 @@
 ---
+description: Décrit le résultat de la liaison d’un point d’arrêt de données.
 title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25756c00ba493dba866ab70693e69971333ae9ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1d33f05036965e500a007b97e7575a5c0d788158
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901933"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162613"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 Décrit le résultat de la liaison d’un point d’arrêt de données.
@@ -58,7 +59,7 @@ Nom du module (MyModule.dll, par exemple) auquel le point d’arrêt de données
 `dwFlags`\
 Valeur de l’énumération [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) , décrivant le mode d’implémentation du point d’arrêt de données.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette structure est un membre de la structure [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) , qui est à son tour membre de la structure [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) retournée par la méthode [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) .
 
 ## <a name="requirements"></a>Configuration requise
