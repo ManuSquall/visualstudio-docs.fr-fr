@@ -1,4 +1,5 @@
 ---
+description: Cette méthode retourne la valeur associée au nom d’une constante d’énumération.
 title: 'IDebugEnumField :: GetValueFromString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77cce7a6780c816fbee0ade1c795cb1174e3e7f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a4ab2950667ba9268335f2e0dbca1c0ce5183bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933451"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153298"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Cette méthode retourne la valeur associée au nom d’une constante d’énumération.
@@ -48,7 +49,7 @@ dans Chaîne spécifiant le nom pour lequel obtenir la valeur. Notez que pour C+
 `pValue`\
 à Retourne la valeur numérique associée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` , si le nom ne fait pas partie de l’énumération ou un code d’erreur.
 
 ## <a name="remarks"></a>Notes

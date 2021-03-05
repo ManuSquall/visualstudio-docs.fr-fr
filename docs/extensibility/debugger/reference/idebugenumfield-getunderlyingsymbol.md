@@ -1,4 +1,5 @@
 ---
+description: Cette méthode retourne un IDebugField qui représente le nom de l’énumération.
 title: 'IDebugEnumField :: GetUnderlyingSymbol | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c812117e59ca50e64fa6e987ebbe1d30d8d552c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cf657256be2998d1b1fb0c32d12ab9040b14115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933529"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153285"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 Cette méthode retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente le nom de l’énumération.
@@ -43,7 +44,7 @@ int GetUnderlyingSymbol(
 `ppField`\
 à Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant le nom de cette énumération.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
