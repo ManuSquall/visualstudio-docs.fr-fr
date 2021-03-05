@@ -1,4 +1,5 @@
 ---
+description: Obtient la méthode qui définit la propriété.
 title: 'IDebugPropertyField :: GetPropertySetter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab2c0b27d8befa13e68e6b28c6aee1f763138cba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd787b88ae0e45de7afe944a79fdd0a788aa1449
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900050"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167930"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 Obtient la méthode qui définit la propriété.
@@ -43,10 +44,10 @@ int GetPropertySetter(
 `ppField`\
 à Retourne un objet [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) qui représente la méthode qui définit la propriété.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Pour obtenir la méthode qui obtient la propriété, appelez la méthode [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) .
 
 ## <a name="see-also"></a>Voir aussi
