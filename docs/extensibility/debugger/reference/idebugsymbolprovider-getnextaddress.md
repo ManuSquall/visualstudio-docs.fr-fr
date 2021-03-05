@@ -1,4 +1,5 @@
 ---
+description: Obtient l’adresse de débogage qui suit une adresse de débogage donnée dans une méthode.
 title: 'IDebugSymbolProvider :: GetNextAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a370cf4591146a31627b80f6358a3d3f9202e306
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d177d03daef4f8d3344941658b85f71551af126b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888223"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168411"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Obtient l’adresse de débogage qui suit une adresse de débogage donnée dans une méthode.
@@ -53,7 +54,7 @@ dans Si la valeur est TRUE, limite les adresses de débogage à une seule instru
 `ppAddress`\
 à Retourne l’adresse de débogage suivante.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne un valide `HRESULT` , généralement S_OK.
 
 ## <a name="see-also"></a>Voir aussi

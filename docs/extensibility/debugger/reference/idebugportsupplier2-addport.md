@@ -1,4 +1,5 @@
 ---
+description: Ajoute un port.
 title: 'IDebugPortSupplier2 :: AddPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e126612ed8b081e5ba0b703d14399ac74d78a9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14232ac49b3862c635a41c25e79c7ab166fa24ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906303"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169234"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Ajoute un port.
@@ -48,10 +49,10 @@ dans Objet [IDebugPortRequest2](../../../extensibility/debugger/reference/idebug
 `ppPort`\
 à Retourne un objet [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) qui représente le port.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode crée en fait le port demandé et l’ajoute à la liste interne des ports actifs du fournisseur de port. La méthode [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) peut être appelée en premier pour éviter des retards fastidieux.
 
 ## <a name="see-also"></a>Voir aussi

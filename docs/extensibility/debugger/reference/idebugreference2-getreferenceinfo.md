@@ -1,4 +1,5 @@
 ---
+description: Obtient la structure DEBUG_REFERENCE_INFO qui décrit une référence.
 title: 'IDebugReference2 :: GetReferenceInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca23c5acd5f32d79cb76f2059b6a39066197150f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef953ccde844ac7a2fb5289affaf381f56af8719
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896036"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168922"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 Obtient la structure [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) qui décrit une référence. Réservé pour un usage futur.
@@ -68,7 +69,7 @@ dans Nombre d’arguments de référence dans le `rgpArgs` tableau. Réservé à
 `pReferenceInfo`\
 à Structure [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) qui est remplie avec une description de la propriété.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne toujours `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Voir aussi

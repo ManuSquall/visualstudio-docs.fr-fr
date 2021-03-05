@@ -1,4 +1,5 @@
 ---
+description: Obtient la valeur pointée sous la forme d’une série d’octets consécutifs.
 title: 'IDebugPointerObject :: GetBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1961aaf45478f25ed8eb55d8eda91a5c4eafc4dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51d5e4cf65c9e72dada225e042f7d3d11e9b4b4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852945"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169676"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtient la valeur pointée sous la forme d’une série d’octets consécutifs.
@@ -58,10 +59,10 @@ dans Nombre d’octets à récupérer.
 `pdwBytes`\
 à Retourne le nombre d’octets réellement récupérés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est utilisée si le pointeur représenté par ce [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) pointe vers un type primitif ou un tableau simple de types primitifs (autrement dit, un tableau qui peut être représenté par une séquence simple d’octets).
 
 ## <a name="see-also"></a>Voir aussi

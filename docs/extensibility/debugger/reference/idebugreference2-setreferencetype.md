@@ -1,4 +1,5 @@
 ---
+description: Définit le type de référence.
 title: 'IDebugReference2 :: SetReferenceType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f33ae0203dfb3f3e6a6af67b925add8948720638
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59b1b94cd6fec5cbb9fb7d5040df0299432b2c17
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963664"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168909"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 Définit le type de référence. Réservé pour un usage futur.
@@ -43,7 +44,7 @@ int SetReferenceType (
 `dwRefType`\
 dans Valeur de l’énumération [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) qui spécifie le type de référence.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne toujours `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Voir aussi

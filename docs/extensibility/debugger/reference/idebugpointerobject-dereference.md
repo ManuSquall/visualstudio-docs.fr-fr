@@ -1,4 +1,5 @@
 ---
+description: Obtient l’objet vers lequel pointe.
 title: IDebugPointerObject ::D votre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b3646df80dc93d3248c698efb172bb12a09925e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4aa96f726ec18e84aceba159fe9be6128456ce0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869633"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169689"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 Obtient l’objet vers lequel pointe.
@@ -48,10 +49,10 @@ dans Offset d’octet simple à partir du début de l’objet vers lequel pointe
 `ppObject`\
 à Retourne un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet vers lequel pointe, le décalage, le cas échéant.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur. Retourne E_FAIL si cet objet ne pointe pas vers un autre objet.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’objet pointé peut être un type primitif ou plus complexe, tel qu’une classe ou une structure.
 
 ## <a name="see-also"></a>Voir aussi

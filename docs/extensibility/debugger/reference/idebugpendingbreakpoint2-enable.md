@@ -1,4 +1,5 @@
 ---
+description: Active/désactive l’état activé du point d’arrêt en attente.
 title: 'IDebugPendingBreakpoint2 :: Enable | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d0e92cf469a48e2ace84861a36cb256835d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953108"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169923"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Active/désactive l’état activé du point d’arrêt en attente.
@@ -44,7 +45,7 @@ int Enable(
 `fEnable`\
 dans Définissez sur une valeur différente de zéro ( `TRUE` ) pour activer un point d’arrêt en attente, ou sur zéro ( `FALSE` ) pour désactiver.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="remarks"></a>Notes

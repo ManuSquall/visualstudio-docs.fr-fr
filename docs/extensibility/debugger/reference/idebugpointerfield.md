@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un type pointeur.
 title: IDebugPointerField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9904f02183da73df496e858fa8a81e5290a8950c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86b2b1902532a3ab827d8e8d65ebc285973ff0bd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877393"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169715"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Cette interface représente un type pointeur.
@@ -41,7 +42,7 @@ IDebugPointerField : IDebugContainerField
 |------------|-----------------|
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant la cible du pointeur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  En C/C++, un pointeur peut être un conteneur s’il est utilisé avec la notation de tableau. Par exemple, donné `char *pString` , `pString` a un type de pointeur vers `char` . `pString[3]` a le type d’un conteneur qui est un pointeur vers `char` qui fait référence au quatrième élément de ce conteneur.
 
 ## <a name="requirements"></a>Configuration requise

@@ -1,4 +1,5 @@
 ---
+description: Permet à un moteur de débogage de remplacer le comportement par défaut de l’interface utilisateur de Visual Studio quand vous terminez une session de débogage.
 title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd43b93f8a74e0e1fcb12ac9be4da47142a79519
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02b2d934c2a556d3556d494368145e52a8c97394
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848219"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168190"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 Permet à un moteur de débogage de substituer le comportement par défaut de l' [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface utilisateur quand vous terminez une session de débogage.
@@ -36,7 +37,7 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 |------------|-----------------|
 |[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Récupère les indicateurs de destruction du programme.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le comportement par défaut de l' [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface utilisateur consiste à revenir au mode création après que tous les programmes ont envoyé un événement de destruction de programme. Cette interface permet à un moteur de débogage de modifier ce comportement.
 
 ## <a name="requirements"></a>Configuration requise

@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un point d’arrêt qui est prêt à être lié à un emplacement de code.
 title: IDebugPendingBreakpoint2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05e66a0066abca5fb657960f2042b738a10e59ca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877406"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169728"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Cette interface représente un point d’arrêt qui est prêt à être lié à un emplacement de code.
@@ -51,7 +52,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Énumère tous les points d’arrêt d’erreur qui résultent de ce point d’arrêt en attente.|
 |[Supprimer](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Supprime ce point d’arrêt en attente et tous les points d’arrêt liés à celui-ci.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `IDebugPendingBreakpoint2` peut être considéré comme un fournisseur de toutes les informations nécessaires pour lier un point d’arrêt à du code qui peut être appliqué à un ou plusieurs programmes.
 
  Un point d’arrêt en attente peut potentiellement produire plus d’un point d’arrêt lié. Par exemple, un point d’arrêt dans un modèle de style C++ peut produire un point d’arrêt lié pour chaque instance unique de ce modèle.

@@ -1,4 +1,5 @@
 ---
+description: Obtient le nom du port.
 title: 'IDebugPortRequest2 :: GetPortName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 574ea2ecb69c944bdb47ff80d7b4e26db51933da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee0d0199a87dff6f29e82b691ed0a396f6d0162a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887157"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169247"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 Obtient le nom du port.
@@ -43,10 +44,10 @@ int GetPortName(
 `pbstrPortName`\
 à Retourne le nom du port.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’interface [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) est généralement passée d’un package de débogage (le client) à un fournisseur de port (serveur) pour obtenir une connexion à un port. Le package de débogage et le fournisseur de ports prennent en charge les choix possibles pour le port. Si une chaîne simple peut décrire le port, la `IDebugPortRequest2::GetPortName` méthode a suffisamment d’informations pour établir la connexion. Dans le cas contraire, des interfaces supplémentaires peuvent être fournies par le client, qui peut être obtenu par le serveur à l’aide de `IDebugPortRequest2::QueryInterface` .
 
 ## <a name="see-also"></a>Voir aussi

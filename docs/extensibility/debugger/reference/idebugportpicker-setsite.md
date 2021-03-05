@@ -1,4 +1,5 @@
 ---
+description: Définit le fournisseur de services.
 title: 'IDebugPortPicker :: SetSite | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c361291532a79e7e4dd466d07359f0fe9faf2be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1c222bd06a974e7f2b1a57096a120399b554b82
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958633"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169273"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Définit le fournisseur de services.
@@ -41,7 +42,7 @@ public int SetSite(
 `pSP`\
 dans Référence à l’interface du fournisseur de services.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

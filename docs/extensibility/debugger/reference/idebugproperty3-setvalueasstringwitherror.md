@@ -1,4 +1,5 @@
 ---
+description: Définit la valeur de cette propriété et retourne un message d’erreur, si nécessaire.
 title: 'IDebugProperty3 :: SetValueAsStringWithError | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4139d3c254c6d824c28e7ceb7fd5fe29b47a3737
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd789561a85f23cff2ec794d4877662441f9149e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897295"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168099"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Définit la valeur de cette propriété et retourne un message d’erreur, si nécessaire.
@@ -58,10 +59,10 @@ dans Durée d’attente de la définition de la valeur ( `INFINITE` signifie att
 `errorString`\
 à Si une erreur s’est produite lors de la définition de la valeur, cela contient la raison de l’échec.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 La valeur entrante peut être une expression à évaluer.
 
 ## <a name="example"></a>Exemple

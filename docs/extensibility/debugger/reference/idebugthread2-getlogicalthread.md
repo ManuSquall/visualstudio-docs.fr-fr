@@ -1,4 +1,5 @@
 ---
+description: Les moteurs de débogage n’implémentent pas cette méthode.
 title: 'IDebugThread2 :: GetLogicalThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05d788f63d4807ccfd8e99d36cbf858df2be499f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9193cde20ba1035552451143c676aab291d7c684
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168346"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 Les moteurs de débogage n’implémentent pas cette méthode.
@@ -48,7 +49,7 @@ dans Objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugs
 `ppLogicalThread`\
 à Retourne une `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage doit définir cette valeur sur une valeur null.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Les implémentations du moteur de débogage retournent toujours `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Voir aussi

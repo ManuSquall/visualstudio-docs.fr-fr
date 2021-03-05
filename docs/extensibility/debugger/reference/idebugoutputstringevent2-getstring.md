@@ -1,4 +1,5 @@
 ---
+description: Obtient le message affichable.
 title: 'IDebugOutputStringEvent2 :: GetString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3b952fcd849132ea39dbeaef47ea32da3994ba3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 958ea04c3366aebf248f50915668709a8438a2dc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953316"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169975"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 Obtient le message affichable.
@@ -43,7 +44,7 @@ int GetString(
 `pbstrString`\
 à Retourne le message affichable.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

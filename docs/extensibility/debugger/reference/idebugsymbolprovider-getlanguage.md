@@ -1,4 +1,5 @@
 ---
+description: Cette méthode obtient le langage utilisé pour compiler le code à l’adresse de débogage.
 title: 'IDebugSymbolProvider :: GetLanguage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 120434e44819d4c503336dffeaa1c255626270d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86387e86261a91b77793e9a31ae4b415983e2c5c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880227"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168554"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Cette méthode obtient le langage utilisé pour compiler le code à l’adresse de débogage.
@@ -53,10 +54,10 @@ dans Objet d’adresse représenté par une interface [IDebugAddress](../../../e
 `pguidLanguageVendor`\
 à Retourne un `GUID` qui spécifie le fournisseur de langage.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le moteur de débogage appelle cette méthode pour obtenir les informations dont il a besoin pour sélectionner l’évaluateur d’expression approprié.
 
 ## <a name="see-also"></a>Voir aussi

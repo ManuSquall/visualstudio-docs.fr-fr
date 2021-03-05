@@ -1,4 +1,5 @@
 ---
+description: 'IDebugProgram2 :: GetName obtient le nom du programme.'
 title: 'IDebugProgram2 :: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f51d294372d233edc8b35f7fccc562e5a650e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f46aaf8dc7ca56f76e67668522d28ff5e59294d8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906192"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169039"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 Obtient le nom du programme.
@@ -43,7 +44,7 @@ int GetName(
 `pbstrName`\
 à Retourne le nom du programme.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

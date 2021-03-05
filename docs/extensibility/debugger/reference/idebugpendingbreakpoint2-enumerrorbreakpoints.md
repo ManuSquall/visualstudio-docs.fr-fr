@@ -1,4 +1,5 @@
 ---
+description: Obtient une liste de tous les points d’arrêt d’erreur qui résultent de ce point d’arrêt en attente.
 title: 'IDebugPendingBreakpoint2 :: EnumErrorBreakpoints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34336c51d51c50f6dee7239a38588f36c935edbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 664a64896244f58e98c9fd600b4fab71b5e9fe35
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934349"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169806"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 Obtient une liste de tous les points d’arrêt d’erreur qui résultent de ce point d’arrêt en attente.
@@ -49,7 +50,7 @@ dans Combinaison de valeurs de l’énumération [BP_ERROR_TYPE](../../../extens
 `ppEnum`\
 à Retourne un objet [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) qui contient une liste d’objets [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="example"></a>Exemple

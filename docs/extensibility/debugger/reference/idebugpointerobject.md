@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un objet pointeur.
 title: IDebugPointerObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 134c1edabb7df7a5cb7f26ce1b7b7487daa78e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5275116ae16c03c4784cda7f227c46f57681120
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169611"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -46,7 +47,7 @@ IDebugPointerObject : IDebugObject
 |[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Obtient la valeur vers laquelle pointe l’interface sous la forme d’une série d’octets consécutifs.|
 |[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Définit la valeur à laquelle l’interface pointe d’une série d’octets consécutifs.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un évaluateur d’expression utilise cette interface pour représenter un pointeur dans une arborescence d’analyse.
 
 ## <a name="requirements"></a>Configuration requise
