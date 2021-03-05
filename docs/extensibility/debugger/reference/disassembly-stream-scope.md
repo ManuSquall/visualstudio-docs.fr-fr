@@ -1,4 +1,5 @@
 ---
+description: Spécifie la portée du flux de code machine.
 title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54773ee6f770855122992f49bebad44fa1f6129a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c688da1c850743f92fb9b87f7f5d72fb66d946d6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870296"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170443"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
 Spécifie la portée du flux de code machine.
@@ -59,7 +60,7 @@ Quand elle est retournée par la `IDebugDisassemblyStream2::GetScope` méthode, 
 `DSS_ALL`\
 Spécifie le code machine pour l’intégralité de l’espace d’adressage.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Passé comme argument à la méthode [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) et retourné par la méthode [GetScope,](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
 Ces valeurs peuvent être combinées avec une opération de bits `OR` .

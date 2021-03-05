@@ -1,4 +1,5 @@
 ---
+description: Obtient le champ ou la variable (le cas échéant) qui peut sauvegarder la propriété représentée par cet objet.
 title: 'IDebugObject2 :: GetBackingFieldForProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f502479d4c74eb0b5cfa71db52698121830e66e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f7a5427193aafe8a4aa35fdf331f62bb08e3fe6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953472"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170170"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 Obtient le champ ou la variable (le cas échéant) qui peut sauvegarder la propriété représentée par cet objet.
@@ -43,7 +44,7 @@ int GetBackingFieldForProperty(
 `ppObject`\
 à Objet [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) décrivant le champ de stockage.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

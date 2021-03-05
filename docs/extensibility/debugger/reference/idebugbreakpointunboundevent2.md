@@ -1,4 +1,5 @@
 ---
+description: Cette interface indique au gestionnaire de débogage de session (SDM) qu’un point d’arrêt lié a été indépendant d’un programme chargé.
 title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c23c060883ca3d2682659112bdc55de001e80e4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881007"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170222"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Cette interface indique au gestionnaire de débogage de session (SDM) qu’un point d’arrêt lié a été indépendant d’un programme chargé.
@@ -42,7 +43,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Obtient le point d’arrêt qui est devenu non lié.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Obtient la raison pour laquelle le point d’arrêt a été indépendant.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Lors du déchargement d’une DLL ou d’une classe de moteur de débogage, tous les points d’arrêt qui étaient liés au code dans ce module doivent être détachés du programme en cours de débogage. Un `IDebugBreakpointUnboundEvent2` est envoyé pour chaque point d’arrêt non lié.
 
 ## <a name="requirements"></a>Configuration requise

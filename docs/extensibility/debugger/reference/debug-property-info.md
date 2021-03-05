@@ -1,4 +1,5 @@
 ---
+description: Contient des informations sur une propriété de débogage.
 title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899099"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170586"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contient des informations sur une propriété de débogage.
@@ -73,7 +74,7 @@ Objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty
 `dwAttrib`\
 Combinaison d’indicateurs de l’énumération [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) décrivant les attributs de cette propriété.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Une propriété est un objet d’une nature hiérarchique qui a un nom, un type et une valeur. Par exemple, une propriété peut décrire des variables locales, des paramètres, des variables et des expressions espionnes et des registres.
 
 Cette structure est transmise à la méthode [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) où elle est remplie. Cette structure est également retournée dans le cadre d’une liste de cette structure à partir de l’interface [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) qui, à son tour, est retournée à partir d’un appel aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) et [EnumProperties,](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .

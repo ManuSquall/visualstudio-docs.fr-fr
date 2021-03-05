@@ -1,4 +1,5 @@
 ---
+description: Spécifie la raison pour laquelle le processus a été lancé pour le débogage.
 title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d2ce7eeb28627f7cb0a1dfbe399bd55f04ff7be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9404e4b5cfdd1f1690b0fe76d0cd5e98cc90d2a4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921231"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170547"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
 Spécifie la raison pour laquelle le processus a été lancé pour le débogage.
@@ -64,7 +65,7 @@ Le processus a été automatiquement attaché à lorsqu’il a été lancé.
 `DEBUG_REASON_CAUSALITY`\
 Le processus a été lancé en raison d’un événement de débogage *juste-à-temps* (JIT).
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Retourné par la méthode [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .
 
 ## <a name="requirements"></a>Configuration requise
