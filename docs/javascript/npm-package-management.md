@@ -2,7 +2,7 @@
 title: Gérer les packages npm
 description: Visual Studio vous aide à gérer les packages à l’aide du Gestionnaire de package Node.js (npm)
 ms.custom: seodec18
-ms.date: 04/16/2020
+ms.date: 02/23/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962715"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165811"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
@@ -179,5 +179,7 @@ L’installation d’un package peut prendre plusieurs minutes. Vérifiez la pro
 * Pour les projets Node.js, la charge de travail de **développementNode.js** doit être installée pour la prise en charge de NPM.
 
 * Dans certains scénarios, Explorateur de solutions peut ne pas afficher l’état correct des packages NPM installés en raison d’un problème connu décrit [ici](https://github.com/aspnet/Tooling/issues/479). Par exemple, le package peut apparaître comme n’étant pas installé lors de son installation. Dans la plupart des cas, vous pouvez mettre à jour Explorateur de solutions en supprimant *package.jssur*, en redémarrant Visual Studio, puis en rajoutant le *package.jssur* le fichier, comme décrit précédemment dans cet article. Ou, lors de l’installation de packages, vous pouvez utiliser la fenêtre Sortie NPM pour vérifier l’état de l’installation.
+
+* Dans certains scénarios de ASP.NET Core, le nœud NPM dans Explorateur de solutions peut ne pas être visible après la génération du projet. Pour afficher à nouveau le nœud, cliquez avec le bouton droit sur le nœud du projet et choisissez **décharger le projet.** Cliquez ensuite avec le bouton droit sur le nœud du projet et choisissez **recharger le projet**.
 
 * Si vous constatez des erreurs lors de la génération de votre application ou du code de la machine à écrire, recherchez les incompatibilités de packages NPM comme source potentielle d’erreurs. Pour identifier les erreurs, consultez la fenêtre Sortie NPM lors de l’installation des packages, comme décrit précédemment dans cet article. Par exemple, si une ou plusieurs versions de package NPM sont dépréciées et provoquent une erreur, vous devrez peut-être installer une version plus récente pour corriger les erreurs. Pour plus d’informations sur l’utilisation de *package.json* pour gérer les versions des packages npm, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md).

@@ -1,4 +1,5 @@
 ---
+description: Crée un énumérateur pour les constructeurs pour cette classe.
 title: 'IDebugClassField :: EnumConstructors | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05226572d7f1b708745887338c654674e71d0f5d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62b196b2fed8a3919968c72a7785a884196a86da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947080"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164329"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Crée un énumérateur pour les constructeurs pour cette classe.
@@ -48,7 +49,7 @@ dans Valeur de l’énumération [CONSTRUCTOR_ENUM](../../../extensibility/debug
 `ppEnum`\
 à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des constructeurs. Retourne une valeur null s’il n’existe aucun constructeur.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a aucun constructeur. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

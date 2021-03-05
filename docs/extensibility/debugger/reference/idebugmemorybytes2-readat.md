@@ -1,4 +1,5 @@
 ---
+description: Lit une séquence d’octets, en commençant à un emplacement donné.
 title: 'IDebugMemoryBytes2 :: readatum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81a6ce40457243e5492d5c6a44dd5d9dd590920f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f408e062fad4485fb159225e0639618d303e0806
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909930"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165161"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Lit une séquence d’octets, en commençant à un emplacement donné.
@@ -64,7 +65,7 @@ dans Nombre d’octets à lire. Spécifie également la longueur du `rgbMemory` 
 `pdwUnreadable`\
 [in, out] Retourne le nombre d’octets illisibles. Peut être une valeur null si le client n’est pas intéressé par le nombre d’octets illisibles.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

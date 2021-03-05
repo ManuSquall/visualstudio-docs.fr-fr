@@ -1,4 +1,5 @@
 ---
+description: À compter de Visual Studio 2019 version 16,8, vous pouvez utiliser l’outil de publication pour publier des applications de bureau Windows .NET Core 3,1, ou une version plus récente, à l’aide de ClickOnce à partir de Visual Studio.
 title: Déployer une application de bureau Windows .NET à l’aide de ClickOnce
 ms.date: 10/15/2020
 ms.topic: quickstart
@@ -11,12 +12,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6f7c2c8d6c79270df94c100bbd4625856efa15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3977408f191aabc734226fd6b637fcfaaf5e9de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934505"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165707"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>Déployer une application de bureau Windows .NET à l’aide de ClickOnce
 

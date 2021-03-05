@@ -1,4 +1,5 @@
 ---
+description: Compare le contexte de mémoire à chaque contexte dans le tableau donné de la manière indiquée par les indicateurs de comparaison, en retournant un index du premier contexte qui correspond.
 title: 'IDebugMemoryContext2 :: compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e54a2bf7cd37b411dbc2d18d23a3466a4b47ce0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f21b22574a780f5e9fcfa045c6786b13d82caa45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851203"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165096"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Compare le contexte de mémoire à chaque contexte dans le tableau donné de la manière indiquée par les indicateurs de comparaison, en retournant un index du premier contexte qui correspond.
@@ -59,10 +60,10 @@ dans Nombre de contextes dans le `rgpMemoryContextSet` tableau.
 `pdwMemoryContext`\
 à Retourne l’index du premier contexte de mémoire qui satisfait à la comparaison.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_COMPARE_CANNOT_COMPARE` si les deux contextes ne peuvent pas être comparés.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un moteur de débogage (de) n’a pas besoin de prendre en charge tous les types de comparaisons, mais il doit prendre en charge au moins `CONTEXT_EQUAL` , `CONTEXT_LESS_THAN` , `CONTEXT_GREATER_THAN` et `CONTEXT_SAME_SCOPE` .
 
 ## <a name="see-also"></a>Voir aussi

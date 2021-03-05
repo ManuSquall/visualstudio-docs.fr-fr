@@ -1,4 +1,5 @@
 ---
+description: Écrit le nombre spécifié d’octets de mémoire, en commençant à l’adresse spécifiée.
 title: 'IDebugMemoryBytes2 :: WriteAt | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ff77985bca8772d92c3b90e7a727c0077137e24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc1b5547290712f07cd51a935627182ddd12d31c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909907"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165148"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Écrit le nombre spécifié d’octets de mémoire, en commençant à l’adresse spécifiée.
@@ -54,7 +55,7 @@ dans Objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/ideb
 `rgbMemory`\
 dans Octets à écrire. Ce tableau est supposé avoir une taille d’au moins `dwCount` octets.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` si tous les octets n’ont pas pu être écrits ou retourne un code d’erreur (généralement `E_FAIL` ).
 
 ## <a name="remarks"></a>Notes

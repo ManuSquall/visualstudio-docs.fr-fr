@@ -1,4 +1,5 @@
 ---
+description: Reprend l’exécution d’un thread.
 title: 'IDebugThread2 :: Resume | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6156becc782adb054af37cf24efd64915729149c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 64a7d5509ac098f6b3a47c3606b6ec530bb6b65b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893722"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164498"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Reprend l’exécution d’un thread.
@@ -43,10 +44,10 @@ int Resume (
 `pdwSuspendCount`\
 à Retourne le nombre de suspensions après l’opération de reprise.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Chaque appel à cette méthode décrémente le nombre de suspension jusqu’à ce qu’il atteigne la valeur 0, à laquelle l’exécution reprend en fait. Ce nombre de suspensions s’affiche dans la fenêtre de débogage des **Threads** .
 
  Pour chaque appel à cette méthode, il doit y avoir un appel antérieur à la méthode [suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) . Le nombre de suspensions détermine le nombre de fois `IDebugThread2::Suspend` que la méthode a été appelée jusqu’à présent.

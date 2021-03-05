@@ -1,4 +1,5 @@
 ---
+description: Récupère une référence à l’interface du processus de débogage.
 title: 'IDebugCodeContext3 :: GetProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca8fb9bb69e98b907ef48620149a0a3fd16dbe53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d34409ad1d075df5520cf18124e5e3adbf16227
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928703"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164056"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Récupère une référence à l’interface du processus de débogage.
@@ -41,7 +42,7 @@ public int GetProcess(
 `ppProcess`\
 à Référence à l’interface du processus de débogage.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

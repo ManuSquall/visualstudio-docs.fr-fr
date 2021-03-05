@@ -1,4 +1,5 @@
 ---
+description: Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) après un pas à pas sortant ou sur une fonction.
 title: IDebugReturnValueEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc76d7e7aaf9e443fc1dec08d83b3eb9e343e0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b0566453d5ce34f829f43fab465b4310942e44e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963053"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165837"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) après un pas à pas sortant ou sur une fonction.

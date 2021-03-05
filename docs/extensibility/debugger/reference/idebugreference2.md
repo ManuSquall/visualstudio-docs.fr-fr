@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente une référence à une propriété de frame de pile ou à une autre propriété.
 title: IDebugReference2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883803"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165850"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Cette interface représente une référence à une propriété de frame de pile ou à une autre propriété.
@@ -54,7 +55,7 @@ IDebugReference2 : IUnknown
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Définit ce type de référence.|
 |[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Compare cette référence à une autre.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 > [!NOTE]
 > Cette utilisation de « Property » ne doit pas être confondue avec une variable membre d’une classe, bien qu’un `IDebugReference2` puisse représenter une telle entité.

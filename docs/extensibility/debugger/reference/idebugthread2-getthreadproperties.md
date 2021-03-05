@@ -1,4 +1,5 @@
 ---
+description: Obtient les propriétés qui décrivent ce thread.
 title: 'IDebugThread2 :: GetThreadProperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 293607e30fa8c5d1f4367b23a1f4904f94aa0bed
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893774"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164524"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtient les propriétés qui décrivent ce thread.
@@ -48,10 +49,10 @@ dans Combinaison d’indicateurs de l’énumération [THREADPROPERTY_FIELDS](..
 `ptp`\
 [in, out] Structure [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) remplie avec les propriétés du thread.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les informations retournées par cette méthode sont généralement affichées dans la fenêtre de débogage des **Threads** .
 
 ## <a name="example"></a>Exemple

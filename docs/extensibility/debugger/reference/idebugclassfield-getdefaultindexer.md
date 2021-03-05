@@ -1,4 +1,5 @@
 ---
+description: Obtient le nom de l’indexeur par défaut.
 title: 'IDebugClassField :: GetDefaultIndexer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b223f85ff7453eba5777b3a6bde85350d7864e1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29ebdcab870ba18d38fa6957d37f09abb65db000
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948346"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164212"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtient le nom de l’indexeur par défaut.
@@ -42,7 +43,7 @@ int GetDefaultIndexer(
 ## <a name="parameters"></a>Paramètres
 `pbstrIndexer` à Retourne une chaîne contenant le nom de l’indexeur par défaut.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas d’indexeur par défaut. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

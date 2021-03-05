@@ -1,4 +1,5 @@
 ---
+description: Récupère la chaîne de valeur de la mesure en fonction de son nom.
 title: 'IDebugSettingsCallback2 :: GetMetricString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 929783f0fa2c82babf9197f9a0a81108143d1f87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88942ac63be1bfc2f7dbfa29a14bbfb42b621358
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875820"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165733"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Récupère la chaîne de valeur de la mesure en fonction de son nom.
@@ -57,7 +58,7 @@ dans Nom de la métrique.
 `pbstrValue`\
 à Retourne la chaîne de valeur de la métrique.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

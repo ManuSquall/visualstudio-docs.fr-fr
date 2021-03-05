@@ -1,4 +1,5 @@
 ---
+description: Récupère une liste de chemins d’accès dans lesquels des symboles sont recherchés, ainsi que les résultats de la recherche de chaque chemin d’accès.
 title: 'IDebugModule3 :: GetSymbolInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2793c9b6d9d88997ce2e4e84c147f87183555cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929782"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164849"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Récupère une liste de chemins d’accès dans lesquels des symboles sont recherchés, ainsi que les résultats de la recherche de chaque chemin d’accès.
@@ -49,7 +50,7 @@ dans Combinaison d’indicateurs de l’énumération [SYMBOL_SEARCH_INFO_FIELDS
 `pInfo`\
 à Structure [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) dont les membres doivent être renseignés avec les informations spécifiées. S’il s’agit d’une valeur null, cette méthode retourne `E_INVALIDARG` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 Si la méthode est réussie, elle retourne `S_OK` ; sinon, elle retourne un code d’erreur.
 
 > [!NOTE]

@@ -1,4 +1,5 @@
 ---
+description: Étend l’interface IDebugCodeContext2 pour permettre la récupération d’interfaces de module et de processus.
 title: IDebugCodeContext3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14bcfb7498ad22156ae18998ebe5958aad1b9026
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db806a4b45e855533e4ded1419f2d2117fb4f912
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928755"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164017"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 Étend l’interface [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) pour permettre la récupération d’interfaces de module et de processus.

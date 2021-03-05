@@ -1,4 +1,5 @@
 ---
+description: Définit le pointeur d’instruction actuel sur le contexte de code donné.
 title: 'IDebugThread2 :: SetNextStatement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c8a7aff8c6e902b20c5569e2553aececae835ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d29b351662ce5cb8aeda9a1f65e278349a0a3b18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893709"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164472"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Définit le pointeur d’instruction actuel sur le contexte de code donné.
@@ -48,7 +49,7 @@ Réservé à une utilisation ultérieure ; défini sur une valeur null.
 `pCodeContext`\
 dans Objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui décrit l’emplacement du code sur le point d’être exécuté et son contexte.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant présente d’autres valeurs possibles.
 
 |Valeur|Description|
@@ -57,7 +58,7 @@ dans Objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebug
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|L’instruction suivante n’est associée à aucune image dans la pile.|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Certains moteurs de débogage ne peuvent pas définir l’instruction suivante après une exception.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le pointeur d’instruction indique l’instruction ou l’instruction suivante à exécuter. Cette méthode est utilisée pour effectuer une nouvelle tentative sur une ligne de code source ou pour forcer l’exécution à continuer dans une autre fonction, par exemple.
 
 ## <a name="see-also"></a>Voir aussi

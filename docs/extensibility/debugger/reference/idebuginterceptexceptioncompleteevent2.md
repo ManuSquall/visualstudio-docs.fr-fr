@@ -1,4 +1,5 @@
 ---
+description: Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) quand le DE a terminé la gestion d’un événement intercepté.
 title: IDebugInterceptExceptionCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98f8653d851eb338a96f969d73a2514b555f400
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93440facf13a230cd746400832afcb48971cd557
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890277"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165291"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) quand le DE a terminé la gestion d’un événement intercepté.
@@ -41,7 +42,7 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 |------------|-----------------|
 |[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Retourne la valeur unique associée à l’exception gérée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cet événement est envoyé par [InterceptCurrentException,](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) lorsque cette méthode a terminé la gestion d’une exception interceptée.
 
 ## <a name="requirements"></a>Configuration requise

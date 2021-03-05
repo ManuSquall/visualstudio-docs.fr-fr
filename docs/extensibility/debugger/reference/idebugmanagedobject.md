@@ -1,4 +1,5 @@
 ---
+description: Cette interface permet à l’évaluateur d’expression (EE) d’appeler des propriétés ou des méthodes sur des instances de classes de valeur (par exemple, System. Decimal) et de définir leur valeur sans appeler Evaluate sur le programme en cours de débogage.
 title: IDebugManagedObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cb90893ab39a95dd3bd8046d8ba61a32064ccf7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929808"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165218"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]

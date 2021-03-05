@@ -1,4 +1,5 @@
 ---
+description: Obtient le titre, le nom convivial ou le nom de fichier du processus.
 title: 'IDebugProcess2 :: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd0876a12c964ee3014e30abfb38a5c763669eba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 418da1be71b0299c93f2813397c28144425f81a4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911141"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164763"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 Obtient le titre, le nom convivial ou le nom de fichier du processus.
@@ -48,7 +49,7 @@ dans Valeur de l’énumération [GETNAME_TYPE](../../../extensibility/debugger/
 `pbstrName`\
 à Retourne le nom du processus.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Détermine si les symboles de débogage sont chargés pour le module spécifié en fonction de l’identificateur de domaine d’application.
 title: 'IDebugComPlusSymbolProvider :: AreSymbolsLoaded | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df11531cc90081aad45b887066ce0799af771747
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e071f18442f66711b59c1063e7c2770ed772c60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928716"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163978"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Détermine si les symboles de débogage sont chargés pour le module spécifié en fonction de l’identificateur de domaine d’application.
@@ -47,7 +48,7 @@ dans Identificateur du domaine d’application.
 `guidModule`\
 dans Identificateur unique du module.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 Si les symboles de débogage sont chargés, retourne `S_OK` ; sinon, retourne `S_FALSE` .
 
 ## <a name="example"></a>Exemple

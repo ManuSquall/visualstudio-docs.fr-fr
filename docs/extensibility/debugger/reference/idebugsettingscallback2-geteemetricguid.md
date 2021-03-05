@@ -1,4 +1,5 @@
 ---
+description: Récupère l’identificateur unique d’une mesure de l’évaluateur d’expression en fonction de son nom.
 title: 'IDebugSettingsCallback2 :: GetEEMetricGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49da8564ef5544c3c633dc7285b4357b8312182f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16bc9671ee9f982eaf924d8966f2fc39a274eb6e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875872"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165772"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Récupère l’identificateur unique d’une mesure de l’évaluateur d’expression en fonction de son nom.
@@ -56,7 +57,7 @@ dans Nom de la métrique.
 `pguidValue`\
 à Retourne l’identificateur unique de la mesure.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

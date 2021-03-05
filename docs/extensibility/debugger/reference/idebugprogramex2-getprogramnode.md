@@ -1,4 +1,5 @@
 ---
+description: Obtient le nœud de programme associé à un programme.
 title: 'IDebugProgramEx2 :: GetProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 203992c6ab5ca094b091ece56e810d4fef462456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d84669b9f4c05690827675435fdc60143a0814af
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898876"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164681"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 Obtient le nœud de programme associé à un programme.
@@ -43,7 +44,7 @@ int GetProgramNode(
 `ppProgramNode`\
 à Retourne un objet [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) qui représente le nœud de programme associé à ce programme.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

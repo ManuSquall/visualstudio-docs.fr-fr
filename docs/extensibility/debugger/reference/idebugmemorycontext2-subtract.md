@@ -1,4 +1,5 @@
 ---
+description: Soustrait la valeur spécifiée du contexte actuel et retourne un nouveau contexte.
 title: 'IDebugMemoryContext2 :: soustraire | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71e3191384a0ee45778cb7ee37b7e55e5f673578
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d77a0fcd4d791eefe98ae908bdf86ba49bec519
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851086"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165005"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Soustrait la valeur spécifiée du contexte actuel et retourne un nouveau contexte.
@@ -49,10 +50,10 @@ dans Nombre d’octets de mémoire à décrémenter.
 `ppMemCxt`\
 à Retourne un nouvel objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Comme un contexte de mémoire est une adresse, la soustraction d’une valeur d’une adresse génère une nouvelle adresse qui requiert une nouvelle interface de contexte.
 
  Cette méthode doit toujours produire un nouveau contexte, même si l’adresse résultante est en dehors de l’espace mémoire associé à ce contexte. La seule exception est si aucune mémoire ne peut être allouée pour le nouveau contexte ou si `ppMemCxt` est une valeur null (qui est une erreur).
