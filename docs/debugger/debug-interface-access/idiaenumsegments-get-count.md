@@ -1,4 +1,5 @@
 ---
+description: Récupère le nombre de segments.
 title: IDiaEnumSegments::get_Count | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c1ac1f9f955099d3c99da07784aa20054e80f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c2c415653678bece0dd05ed50c6971831502bd5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856389"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148863"
 ---
 # <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
 Récupère le nombre de segments.
@@ -34,7 +35,7 @@ HRESULT get_Count (
  pRetVal
 - [out, retval] Retourne le nombre de segments.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

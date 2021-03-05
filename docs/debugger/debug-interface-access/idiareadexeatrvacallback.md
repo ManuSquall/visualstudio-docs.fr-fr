@@ -1,4 +1,5 @@
 ---
+description: Permet à une application cliente de fournir des octets d’un fichier exécutable comme spécifié par une adresse virtuelle relative.
 title: IDiaReadExeAtRVACallback | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 98887e684d9bf2cbe282b7d9c4670fd18a355bd8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a8efb088012af4fbcba259182465d53ee7ce8eac
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864536"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148044"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 Permet à une application cliente de fournir des octets d’un fichier exécutable comme spécifié par une adresse virtuelle relative.
@@ -35,7 +36,7 @@ IDiaReadExeAtRVACallback : IUnknown
 |------------|-----------------|
 |[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Lit le nombre d’octets spécifié en commençant à l’adresse virtuelle relative (RVA) spécifiée à partir du fichier exécutable.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’application cliente implémente cette interface afin de fournir les octets de l’exécutable à l’aide d’une adresse virtuelle relative dans le fichier de l’exécutable. Pour utiliser un décalage de fichier absolu, implémentez l’interface [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) .
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

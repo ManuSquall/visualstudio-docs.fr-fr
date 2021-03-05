@@ -1,4 +1,5 @@
 ---
+description: Récupère un nombre spécifié de fichiers sources dans la séquence d’énumération.
 title: IDiaEnumSourceFiles::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e33abf7a38c5acab799b8a9f9342b2002d62a21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fdac59ba0998528cde8412a9fff9062edb56044
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856235"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148779"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Récupère un nombre spécifié de fichiers sources dans la séquence d’énumération.
@@ -45,7 +46,7 @@ dans Nombre de fichiers sources dans l’énumérateur à récupérer.
 
 à Retourne le nombre de fichiers sources dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de fichiers sources. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

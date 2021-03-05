@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si une classe est un type intrinsèque.
 title: IDiaSymbol::get_intrinsic | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bd69f0e194ebd9842c23081b4722dd9934e7fbb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bddec7880c69ccc9f4ce0ff20490ef355a71cfbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854177"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147309"
 ---
 # <a name="idiasymbolget_intrinsic"></a>IDiaSymbol::get_intrinsic
 Récupère un indicateur qui spécifie si une classe est un type intrinsèque.
@@ -35,7 +36,7 @@ HRESULT get_intrinsic(
 
 à Retourne `TRUE` si la classe est un type intrinsèque ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

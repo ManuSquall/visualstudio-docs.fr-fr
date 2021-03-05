@@ -1,4 +1,5 @@
 ---
+description: Récupère les contributions de section au moyen d’un index.
 title: IDiaEnumSectionContribs::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c753811378ee81deb5d0deacb8035c1768e80c50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b39ba7092f163602426aa6194e9109f1db1b4485
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856473"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148877"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
 Récupère les contributions de section au moyen d’un index.
@@ -40,7 +41,7 @@ dans Index de l’objet [IDiaSectionContrib](../../debugger/debug-interface-acce
 
 à Retourne un objet [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) représentant la contribution de la section souhaitée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

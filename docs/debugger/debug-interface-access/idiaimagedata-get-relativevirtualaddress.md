@@ -1,4 +1,5 @@
 ---
+description: Récupère l’emplacement de la mémoire virtuelle du module par rapport à l’application.
 title: IDiaImageData::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: daf8fb5e66bcf214781c2aa15256e32e21d60959
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98b3b6eaf0296d03d0120605eec69ee6c308426f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855857"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148443"
 ---
 # <a name="idiaimagedataget_relativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
 Récupère l’emplacement de la mémoire virtuelle du module par rapport à l’application.
@@ -35,7 +36,7 @@ HRESULT get_relativeVirtualAddress (
 
 à Retourne l’offset de la mémoire virtuelle relative du module.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

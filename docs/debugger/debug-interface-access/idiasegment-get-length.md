@@ -1,4 +1,5 @@
 ---
+description: Récupère le nombre d’octets dans le segment.
 title: IDiaSegment::get_length | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a887ddad0b22cd1ccc478ab7caed1ed22c25f5d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1bd18742b310e26f79f411f687c43e9b22b6833
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855311"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147904"
 ---
 # <a name="idiasegmentget_length"></a>IDiaSegment::get_length
 Récupère le nombre d’octets dans le segment.
@@ -35,7 +36,7 @@ HRESULT get_ length (
 
 à Retourne le nombre d’octets dans le segment.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

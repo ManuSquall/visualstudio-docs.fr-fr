@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui signale si la section peut être exécutée en tant que code.
 title: IDiaSectionContrib::get_execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b08eb94b500d67cb9bb9c8effd0d1e14c360933
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81f057e1b37f0d8ee758171da08c9c40c7808af0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864501"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148016"
 ---
 # <a name="idiasectioncontribget_execute"></a>IDiaSectionContrib::get_execute
 Récupère un indicateur qui signale si la section peut être exécutée en tant que code.
@@ -35,7 +36,7 @@ HRESULT get_excute (
 
 à Retourne `TRUE` si la section peut être exécutée en tant que code ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

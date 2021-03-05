@@ -1,4 +1,5 @@
 ---
+description: Appelé lorsqu’un répertoire de débogage a été trouvé dans le fichier. exe.
 title: IDiaLoadCallback::NotifyDebugDir | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e5844cc235d604e8433940920eb9244044732d54
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed83b79dea8f488be79a2161968876c9aa2a9a11
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855647"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148282"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Appelé lorsqu’un répertoire de débogage a été trouvé dans le fichier. exe.
@@ -45,10 +46,10 @@ dans Nombre d’octets de données dans le répertoire de débogage.
 
 dans Tableau qui est renseigné avec le répertoire de débogage.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le code de retour est généralement ignoré.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) appelle ce rappel lorsqu’il trouve un répertoire de débogage pendant le traitement du fichier exécutable.
 
  Cette méthode supprime la nécessité pour le client de rétroconcevoir le fichier exécutable et/ou de débogage pour prendre en charge les informations de débogage autres que celles figurant dans le fichier. pdb. Avec ces données, le client peut reconnaître le type d’informations de débogage disponibles et s’il réside dans le fichier exécutable ou le fichier. dbg.

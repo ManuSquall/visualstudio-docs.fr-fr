@@ -1,4 +1,5 @@
 ---
+description: Récupère une référence au symbole compiland qui a contribué à cette section.
 title: IDiaSectionContrib::get_compiland | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 146256d47d5217b63e2718b876e2636c5d6532aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddb088d2427c910bc8418923a2ffe794108340b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864515"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148030"
 ---
 # <a name="idiasectioncontribget_compiland"></a>IDiaSectionContrib::get_compiland
 Récupère une référence au symbole compiland qui a contribué à cette section.
@@ -35,7 +36,7 @@ HRESULT get_compiland (
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le compiland qui a participé à cette section.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

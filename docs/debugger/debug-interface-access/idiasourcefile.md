@@ -1,4 +1,5 @@
 ---
+description: Représente un fichier source.
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d7ae9a054da64dfc7ee3264734e03959016f53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2695fdb267d328b596673ed08f5dc0be63cfaeaa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147582"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Représente un fichier source.
@@ -39,7 +40,7 @@ Le tableau suivant présente les méthodes de `IDiaSourceFile` .
 |[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Récupère un énumérateur du compilands avec des numéros de ligne référençant ce fichier.|
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Récupère les octets de somme de contrôle.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant les méthodes [IDiaEnumSourceFiles :: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [IDiaEnumSourceFiles :: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) . Pour plus de détails, voir les exemples.

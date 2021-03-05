@@ -1,4 +1,5 @@
 ---
+description: Récupère une liste de sources qui ont été placées dans le magasin de symboles par des fournisseurs d’attributs ou d’autres composants du processus de compilation.
 title: IDiaSession::findInjectedSource | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a49af12ed317732271d755477a2f50e6bb424205
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1604bf91f70f2973dcd394f81569b5ee04e9a99
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855220"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147848"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 Récupère une liste de sources qui ont été placées dans le magasin de symboles par des fournisseurs d’attributs ou d’autres composants du processus de compilation.
@@ -40,7 +41,7 @@ dans Nom du fichier source à rechercher.
 
 à Retourne un objet [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) qui contient une liste de toutes les sources injectées.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

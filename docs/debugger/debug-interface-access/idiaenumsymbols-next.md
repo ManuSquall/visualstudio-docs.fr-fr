@@ -1,4 +1,5 @@
 ---
+description: Récupère un nombre spécifié de symboles dans la séquence d’énumération.
 title: IDiaEnumSymbols::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 788bbacdca0cdf03ed1a96a4c19c43ed38b9ec42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1effa2d3b861be076a18adaaeafa10549ec7478
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865145"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148709"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Récupère un nombre spécifié de symboles dans la séquence d’énumération.
@@ -45,7 +46,7 @@ dans Nombre de symboles dans l’énumérateur à récupérer.
 
 à Retourne le nombre de symboles dans l’énumérateur extrait.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de symboles. Sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

@@ -1,4 +1,5 @@
 ---
+description: Récupère un énumérateur de frame de pile pour les plateformes x86.
 title: IDiaStackWalker::getEnumFrames | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d4a30b9f4b37274872141c6e9ac18a9aab9206
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4dc2230bdbbdb626bece7ecec39f2c2c2578ab3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863850"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147351"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 Récupère un énumérateur de frame de pile pour les plateformes x86.
@@ -40,10 +41,10 @@ dans Objet [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastack
 
 à Retourne un objet [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) qui contient une liste d’objets [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Pour obtenir une liste de frames de pile sur n’importe quelle autre plateforme, appelez la méthode [IDiaStackWalker :: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) .
 
 ## <a name="see-also"></a>Voir aussi

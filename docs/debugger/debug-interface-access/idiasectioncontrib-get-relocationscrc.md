@@ -1,4 +1,5 @@
 ---
+description: Récupère la vérification de redondance cyclique (CRC) des informations de réadressage pour la section.
 title: IDiaSectionContrib::get_relocationsCrc | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0b746b639bceb49f576e6834ad0b86da75ebd5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 353344b93806bdf4cb000ed5b2307969f7e74bb6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855367"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148002"
 ---
 # <a name="idiasectioncontribget_relocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 Récupère la vérification de redondance cyclique (CRC) des informations de réadressage pour la section.
@@ -35,7 +36,7 @@ HRESULT get_relocationsCrc (
 
 à Retourne le CRC des informations de réadressage pour la section.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

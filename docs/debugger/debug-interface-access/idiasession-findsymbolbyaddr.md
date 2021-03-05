@@ -1,4 +1,5 @@
 ---
+description: Récupère un type de symbole spécifié qui contient ou est le plus proche d’une adresse spécifiée.
 title: IDiaSession::findSymbolByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5624bc6e5a4dc895f46534b8512a9c759ee78329
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42108d680f7303e9868065f15d320826baae7fdb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864144"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147708"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 Récupère un type de symbole spécifié qui contient ou est le plus proche d’une adresse spécifiée.
@@ -50,7 +51,7 @@ dans Type de symbole à trouver. Les valeurs sont extraites de l’énumération
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le symbole récupéré.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

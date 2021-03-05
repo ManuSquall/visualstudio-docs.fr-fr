@@ -1,4 +1,5 @@
 ---
+description: Récupère un segment au moyen d’un index.
 title: IDiaEnumSegments::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bcccb480ec8e84200f149d06a6e3b581c43f50fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a8714964bdf2e267e9f9c047fb1878655e58f489
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856348"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148849"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Récupère un segment au moyen d’un index.
@@ -40,7 +41,7 @@ dans Index de l’objet [IDiaSegment](../../debugger/debug-interface-access/idia
 
 à Retourne un objet [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) représentant le segment souhaité.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

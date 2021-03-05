@@ -1,4 +1,5 @@
 ---
+description: Récupère le décalage, en segments, où la section commence.
 title: IDiaSegment::get_offset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbfff4382df74052efdcc59aa813b9c002a9103f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 53618e4e8b47291f8a5200d0128adeb88c0499de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864361"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147926"
 ---
 # <a name="idiasegmentget_offset"></a>IDiaSegment::get_offset
 Récupère le décalage, en segments, où la section commence.
@@ -35,7 +36,7 @@ HRESULT get_offset (
 
 à Retourne le décalage, en segments, où la section commence.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

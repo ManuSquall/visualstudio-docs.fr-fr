@@ -1,4 +1,5 @@
 ---
+description: Mappe les données du numéro de section aux segments de l’espace d’adressage.
 title: IDiaSegment | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7d30fdf5c669f572c66a975494490ed7c4e954
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4823983519eef461e388952d5037f529f9fcdf2f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855262"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147876"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mappe les données du numéro de section aux segments de l’espace d’adressage.
@@ -43,7 +44,7 @@ Le tableau suivant présente les méthodes de `IDiaSegment` .
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Récupère l’adresse virtuelle relative (RVA) du début de la section.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) du début de la section.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Étant donné que le kit de développement logiciel (SDK) DIA effectue déjà des traductions du décalage de section vers des adresses virtuelles relatives, la plupart des applications n’utilisent pas les informations de la carte de segment.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

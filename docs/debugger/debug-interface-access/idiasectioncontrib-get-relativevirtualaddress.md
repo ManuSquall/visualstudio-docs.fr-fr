@@ -1,4 +1,5 @@
 ---
+description: Récupère l’adresse virtuelle relative (RVA) de l’image de la contribution.
 title: IDiaSectionContrib::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b7228b461db7beac8b208c198d3453db2295bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bd7e1271ed163e9efe4971ca4af08858e79c7ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864417"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147995"
 ---
 # <a name="idiasectioncontribget_relativevirtualaddress"></a>IDiaSectionContrib::get_relativeVirtualAddress
 Récupère l’adresse virtuelle relative (RVA) de l’image de la contribution.
@@ -35,7 +36,7 @@ HRESULT get_relativeVirtualAddress (
 
 à Retourne l’adresse RVA de l’image de la contribution.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

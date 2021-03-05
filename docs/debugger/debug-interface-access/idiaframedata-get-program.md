@@ -1,4 +1,5 @@
 ---
+description: Récupère la chaîne de programme utilisée pour calculer le jeu de registres avant l’appel à la fonction active.
 title: IDiaFrameData::get_program | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1480b7e3273e3746f95c01ab8913eb5c934edc39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3e16503d025771b3af34c7f4eee185c2f6aacab
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864942"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148492"
 ---
 # <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
 Récupère la chaîne de programme utilisée pour calculer le jeu de registres avant l’appel à la fonction active.
@@ -35,10 +36,10 @@ HRESULT get_program (
 
 à Retourne la chaîne de programme.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La chaîne de programme est une séquence de macros qui est interprétée afin d’établir le prologue. Par exemple, un frame de pile classique peut utiliser la chaîne de programme `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="` . Le format est la notation polonaise inverse, où les opérateurs suivent les opérandes. `T0` représente une variable temporaire sur la pile. Cet exemple effectue les étapes suivantes :
 
 1. Déplacer le contenu du Registre `ebp` vers `T0` .

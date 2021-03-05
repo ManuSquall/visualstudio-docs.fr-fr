@@ -1,4 +1,5 @@
 ---
+description: Expose les détails d’un frame de pile.
 title: IDiaFrameData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f596cd67ce7d31440b40fb24ef3b1c141e98186
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66899ff42c870606f6d41d17d920a21f84031eee
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99855878"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148457"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Expose les détails d’un frame de pile.
@@ -52,7 +53,7 @@ Le tableau suivant présente les méthodes de `IDiaFrameData` .
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Récupère l’interface de données de frame pour la fonction englobante.|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Effectue le déroulement de la pile et retourne l’état actuel des registres dans une interface de frame de parcours de la pile.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les détails disponibles pour un cadre sont ceux des points d’exécution dans la plage d’adresses indiquée par l’adresse et la longueur du bloc.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

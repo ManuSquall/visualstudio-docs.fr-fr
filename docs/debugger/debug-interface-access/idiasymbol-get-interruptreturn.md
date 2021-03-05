@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la fonction contient un retour de l’instruction d’interruption (par exemple, le code d’assembly x86 IRET').
 title: IDiaSymbol::get_interruptReturn | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0981f103d9914e9d8d13f02449187fdfef0ff61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91e88b4348e5bc778b71c0737a57effcf70ecac6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863269"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147323"
 ---
 # <a name="idiasymbolget_interruptreturn"></a>IDiaSymbol::get_interruptReturn
 Récupère un indicateur qui spécifie si la fonction contient un retour de l’instruction d’interruption (par exemple, le code de l’assembly x86 `iret` ).
@@ -35,7 +36,7 @@ HRESULT get_interruptReturn(
 
 à Retourne `TRUE` si la fonction a un retour de l’instruction d’interruption ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

@@ -1,4 +1,5 @@
 ---
+description: 'IDiaStackFrame :: get_maxStack récupère le nombre maximal d’octets ayant fait l’objet d’un push sur la pile dans le frame.'
 title: IDiaStackFrame::get_maxStack | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b342520e9ae72b8d48367390d1189179e7747d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7668d07db8717892951110b181ae2baa5cd7d153
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863948"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147449"
 ---
 # <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
 Récupère le nombre maximal d’octets ayant fait l’objet d’un push sur la pile dans le frame.
@@ -35,7 +36,7 @@ HRESULT get_maxStack (
 
 à Retourne le nombre maximal d’octets ayant fait l’objet d’un push sur la pile.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

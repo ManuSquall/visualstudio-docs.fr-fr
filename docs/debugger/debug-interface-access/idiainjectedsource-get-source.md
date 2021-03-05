@@ -1,4 +1,5 @@
 ---
+description: Récupère les octets de code source.
 title: IDiaInjectedSource::get_source | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f44f30b063a34a0d5d5549cd1923b66c1dde9cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 248fc00320f94b297a9b0697742dff6e3fbd2004
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148415"
 ---
 # <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Récupère les octets de code source.
@@ -45,7 +46,7 @@ dans Nombre d’octets qui représente la taille de la mémoire tampon de donné
 
 à Mémoire tampon qui doit être remplie avec les octets sources.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

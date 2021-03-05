@@ -1,4 +1,5 @@
 ---
+description: Récupère l’adresse de base des variables locales pour le frame.
 title: IDiaStackFrame::get_localsBase | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ebec528c0361ac9eab1149b0988c476f90d302ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2efe2d85f46ef18927be3c8667808ce51c761c90
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854905"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147456"
 ---
 # <a name="idiastackframeget_localsbase"></a>IDiaStackFrame::get_localsBase
 Récupère l’adresse de base des variables locales pour le frame.
@@ -35,7 +36,7 @@ HRESULT get_localsBase (
 
 à Retourne l’adresse de base des variables locales.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

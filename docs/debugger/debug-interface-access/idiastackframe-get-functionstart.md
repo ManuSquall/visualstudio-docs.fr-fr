@@ -1,4 +1,5 @@
 ---
+description: 'IDiaStackFrame :: get_functionStart récupère un indicateur qui indique si le bloc contient le point d’entrée d’une fonction.'
 title: IDiaStackFrame::get_functionStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73230694e120e361f102cf149ba7f9822d04fe1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0bbc7c90a83dde58a76f17a29a70b03419e11ea
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863969"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147491"
 ---
 # <a name="idiastackframeget_functionstart"></a>IDiaStackFrame::get_functionStart
 Récupère un indicateur qui signale si le bloc contient le point d’entrée d’une fonction.
@@ -35,7 +36,7 @@ HRESULT get_functionStart (
 
 à Retourne `TRUE` si le frame de pile contient le point d’entrée d’une fonction ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

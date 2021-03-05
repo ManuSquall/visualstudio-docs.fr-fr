@@ -1,4 +1,5 @@
 ---
+description: Récupère un type de symbole spécifié qui contient ou est le plus proche de, une adresse virtuelle relative (RVA) et un offset spécifiés.
 title: IDiaSession::findSymbolByRVAEx | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3290afb5116661f62983ce3a6fae8653312f24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0fd63e97a27b122a15e6edd8054f76edf34c4779
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864130"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147624"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 Récupère un type de symbole spécifié qui contient ou est le plus proche de, une adresse virtuelle relative (RVA) et un offset spécifiés.
@@ -50,7 +51,7 @@ dans Type de symbole à trouver. Les valeurs sont extraites de l’énumération
 
 à Retourne une valeur spécifiant un offset à partir de l’adresse virtuelle relative spécifiée dans `rva` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

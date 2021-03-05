@@ -1,4 +1,5 @@
 ---
+description: Récupère un symbole par son identificateur unique.
 title: IDiaSession::symbolById | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 423bf9a1c6d816d17bb36be6a4a84820617234ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 979825cd3e62c97334d55676b3bf32bf874f8445
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99864081"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147603"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 Récupère un symbole par son identificateur unique.
@@ -40,10 +41,10 @@ dans Identificateur unique.
 
 à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le symbole récupéré.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 L’identificateur spécifié est une valeur unique utilisée en interne par le kit de développement logiciel (SDK) DIA pour rendre tous les symboles uniques.
 
 Cette méthode peut être utilisée, par exemple, pour récupérer le symbole représentant le type d’un autre symbole (consultez l’exemple).

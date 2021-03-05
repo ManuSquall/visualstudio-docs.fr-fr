@@ -1,4 +1,5 @@
 ---
+description: IDiaStackWalkFrame ::p ut_registerValue définit la valeur d’un registre.
 title: IDiaStackWalkFrame::put_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4a827d05ab091ac9ff436f08a723bdca77eedf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 731993bb9074e6b67d9908c42999d53768abaa5b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147330"
 ---
 # <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 Définit la valeur d’un registre.
@@ -40,7 +41,7 @@ dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/deb
 
 dans Nouvelle valeur de registre.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
