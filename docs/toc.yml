@@ -842,7 +842,7 @@
           href: ide/globalizing-and-localizing-applications.md
 - name: Générer
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       displayName: Compile build
       href: ide/compiling-and-building-in-visual-studio.md
     - name: "Procédure pas à pas\_: Générer une application"
@@ -1070,6 +1070,8 @@
       items:
         - name: Hiérarchie d'appels
           href: ide/reference/call-hierarchy.md
+        - name: Invite de commandes développeur & Developer PowerShell
+          href: ide/reference/command-prompt-powershell.md
         - name: Aperçu des modifications
           href: ide/preview-changes.md
         - name: 'Choisir des éléments de boîte à outils, composants WPF'

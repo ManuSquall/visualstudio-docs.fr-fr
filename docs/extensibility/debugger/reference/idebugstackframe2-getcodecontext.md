@@ -1,4 +1,5 @@
 ---
+description: Obtient le contexte de code pour ce frame de pile.
 title: 'IDebugStackFrame2 :: GetCodeContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 83785f1fd2dd9ab2714b9ba30898f1016fd65f41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f01bf82a7ab7aafb6e43e343dfa1af89ea9cefe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837552"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142529"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 Obtient le contexte de code pour ce frame de pile.
@@ -43,7 +44,7 @@ int GetCodeContext (
 `ppCodeCxt`\
 à Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente le pointeur d’instruction actuel dans ce frame de pile.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

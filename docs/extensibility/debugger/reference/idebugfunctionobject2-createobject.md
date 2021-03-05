@@ -1,4 +1,5 @@
 ---
+description: Crée un objet qui utilise un constructeur donné des paramètres d’indicateur d’évaluation et une valeur de délai d’attente.
 title: 'IDebugFunctionObject2 :: CreateObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 424599d322c2c8dd4db8ff4e19bab60eceaefc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cd5eb81972af35b84c688e34b8cbc285c4723c2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143140"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 Crée un objet qui utilise un constructeur donné des paramètres d’indicateur d’évaluation et une valeur de délai d’attente.
@@ -67,10 +68,10 @@ dans Durée d’attente maximale, en millisecondes, avant le retour de cette mé
 `ppObject`\
 à Retourne un **IDebugObject** représentant l’objet nouvellement créé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Appelez cette méthode pour créer un objet qui représente une instance d’une classe ou un autre type complexe qui requiert un constructeur, c’est-à-dire un paramètre.
 
 ## <a name="see-also"></a>Voir aussi

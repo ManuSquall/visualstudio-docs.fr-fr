@@ -1,4 +1,5 @@
 ---
+description: Détermine si le tableau a des index de base (limites inférieures) définis.
 title: 'IDebugArrayObject2 :: HasBaseIndices | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e828c8d51d297d85aed9b23d75b99f2d9ac1a517
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6f140efbb28545e7efc06461265fd83f4f533d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870036"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143673"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 Détermine si le tableau a des index de base (limites inférieures) définis.
@@ -42,5 +43,5 @@ int HasBaseIndices (
 `pfHasBaseIndices`\
 à TRUE pour spécifier que le tableau a des index de base (limites inférieures); Sinon, FALSe.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.

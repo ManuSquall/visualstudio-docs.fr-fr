@@ -1,4 +1,5 @@
 ---
+description: Contient les informations requises pour implémenter un point d’arrêt, y compris le GUID du fournisseur, la contrainte et le point de trace.
 title: BP_REQUEST_INFO2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ad3c5492143f97559770c57d528971ac84f22fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1efeceb42d45822f232e5a2e5e2fbe33f9996e34
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903277"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144115"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
 Contient les informations requises pour implémenter un point d’arrêt, y compris le GUID du fournisseur, la contrainte et le point de trace.
@@ -103,7 +104,7 @@ Nom de la contrainte de point d’arrêt. Peut être une valeur null.
 `bstrTracepoint`\
 Nom du point de trace. Peut être une valeur null.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette structure est retournée par la méthode [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) .
 
 ## <a name="requirements"></a>Configuration requise

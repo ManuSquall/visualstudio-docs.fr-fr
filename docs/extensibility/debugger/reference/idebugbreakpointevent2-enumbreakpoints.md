@@ -1,4 +1,5 @@
 ---
+description: Crée un énumérateur pour tous les points d’arrêt qui ont été déclenchés à l’emplacement de code actuel.
 title: 'IDebugBreakpointEvent2 :: EnumBreakpoints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaf3cac6d49ef2d09a9952ac41b2bb36262fbc7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bccb263fbdfebe1a83dab5f2ce5f570338b6d2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899037"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143350"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Crée un énumérateur pour tous les points d’arrêt qui ont été déclenchés à l’emplacement de code actuel.
@@ -43,10 +44,10 @@ int EnumBreakpoints(
 `ppEnum`\
 à Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère tous les points d’arrêt associés à l’emplacement de code actuel.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Tous les points d’arrêt d’un emplacement particulier ne peuvent pas être activés à un moment donné (par exemple, un point d’arrêt avec une condition ne se déclenche pas tant que cette condition n’est pas remplie).
 
 ## <a name="see-also"></a>Voir aussi

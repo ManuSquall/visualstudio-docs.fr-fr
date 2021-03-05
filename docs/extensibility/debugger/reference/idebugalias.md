@@ -1,4 +1,5 @@
 ---
+description: Représente un alias numérique pour une variable.
 title: IDebugAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298d83efd16112a0cf1be3171601b93342a55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fd5639c510ba5a4a346c7a6f2630e7f14ddf036
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944717"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143881"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]

@@ -1,4 +1,5 @@
 ---
+description: Détermine si ce point d’arrêt en attente peut être lié à un emplacement de code.
 title: 'IDebugPendingBreakpoint2 :: CanBind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89781298dc9134f80f8f57cc0e008068fa47bad3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55b51049929941e868803242af8ef12bca368dd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143088"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Détermine si ce point d’arrêt en attente peut être lié à un emplacement de code.
@@ -44,7 +45,7 @@ int CanBind (
 `ppErrorEnum`\
 à Retourne un objet [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) qui contient une liste d’objets [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) s’il peut y avoir des erreurs.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne la `S_OK.` valeur `S_FALSE` si le point d’arrêt ne peut pas être lié. dans ce cas, les erreurs sont retournées par le `ppErrorEnum` paramètre. Sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="remarks"></a>Notes

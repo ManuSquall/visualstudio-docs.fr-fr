@@ -1,4 +1,5 @@
 ---
+description: Obtient les informations de résolution de point d’arrêt qui décrivent ce point d’arrêt.
 title: 'IDebugBreakpointResolution2 :: GetResolutionInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e31bdd47297a532a2eba69513aef01554791690e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6982053fc7fb723a2c1efe93c27d9ddf7f27a3d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881046"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143400"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Obtient les informations de résolution de point d’arrêt qui décrivent ce point d’arrêt.
@@ -48,7 +49,7 @@ dans Combinaison d’indicateurs de l’énumération [BPRESI_FIELDS](../../../e
 `pBPResolutionInfo`\
 à Structure [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) à remplir avec des informations sur ce point d’arrêt.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.
 
 ## <a name="example"></a>Exemple

@@ -1,4 +1,5 @@
 ---
+description: Cette interface permet au gestionnaire de débogage de session (SDM) de contrôler les programmes et les processus en cours d’exécution sur un port.
 title: IDebugPortEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2ff055f730d193b5294b98129e073a21428f8ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54da202e6bbaf08216b921afbde2e39f1da3a788
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919902"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142789"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 Cette interface permet au gestionnaire de débogage de session (SDM) de contrôler les programmes et les processus en cours d’exécution sur un port.
@@ -46,7 +47,7 @@ IDebugPortEx2 : IUnknown
 |[GetPortProcessId](../../../extensibility/debugger/reference/idebugportex2-getportprocessid.md)|Obtient l’ID de processus du port lui-même.|
 |[GetProgram](../../../extensibility/debugger/reference/idebugportex2-getprogram.md)|Obtient un programme associé à un nœud de programme.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette interface est normalement privée entre le SDM et le fournisseur de ports personnalisés.
 
  Si vous le souhaitez, un moteur de débogage (DE) peut rechercher cette interface sur l’interface [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) transmise à [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) et utiliser [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) pour lancer le programme. Toutefois, ce n’est pas obligatoire et un DE peut faire tout ce qu’il doit faire pour lancer le programme de demande.

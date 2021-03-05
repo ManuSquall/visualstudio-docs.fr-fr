@@ -1,4 +1,5 @@
 ---
+description: Spécifie le style de condition de point d’arrêt pour les points d’arrêt en attente et liés.
 title: BP_COND_STYLE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f98f02e7e756a744d8042a9955802165065d54d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c23549d1553902c00048f946d2711c497fbe2322
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144479"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
 Spécifie le style de condition de point d’arrêt pour les points d’arrêt en attente et liés.
@@ -54,7 +55,7 @@ Déclenche le point d’arrêt uniquement lorsque l’expression conditionnelle 
 `BP_COND_WHEN_CHANGED`\
 Déclenche le point d’arrêt uniquement lorsque la valeur de l’expression conditionnelle associée au point d’arrêt a été modifiée par rapport à son évaluation précédente.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Utilisé pour le `styleCondition` membre de la structure [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .
 
 ## <a name="requirements"></a>Configuration requise

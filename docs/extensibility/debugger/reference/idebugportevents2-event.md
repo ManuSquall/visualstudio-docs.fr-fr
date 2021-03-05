@@ -1,4 +1,5 @@
 ---
+description: Cette méthode envoie des événements qui signifient la création et la destruction des processus et des programmes sur un port.
 title: 'IDebugPortEvents2 :: Event | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcf8a827f09c1b8d0e83b92f7729635cbb0f7f18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc975c2f48c560d0f15f08a6cc957c67ecc13808
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896173"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142906"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Cette méthode envoie des événements qui signifient la création et la destruction des processus et des programmes sur un port.
@@ -76,7 +77,7 @@ dans Objet [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2
 `riidEvent`\
 dans GUID de l’événement. Étant donné que l’événement est casté en [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) avant d’appeler cette méthode, cet identificateur facilite la détermination de l’événement qui est envoyé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

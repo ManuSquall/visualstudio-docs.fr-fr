@@ -1,4 +1,5 @@
 ---
+description: Obtient le nombre d’éléments contenus dans le tableau.
 title: 'IDebugArrayField :: GetNumberOfElements | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3454624feab268af089a5e82e38c0cce3d23ab03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237cc74b2a34c78104e001bcc5a3b13dd6c7bd43
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940304"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143829"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Obtient le nombre d’éléments contenus dans le tableau.
@@ -43,7 +44,7 @@ int GetNumberOfElements(
 `pdwNumElements`\
 à Retourne le nombre d’éléments dans le tableau.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

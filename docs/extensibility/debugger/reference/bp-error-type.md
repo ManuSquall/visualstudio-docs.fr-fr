@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type d’erreur d’un point d’arrêt.
 title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853050"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144427"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 Spécifie le type d’erreur d’un point d’arrêt.
@@ -94,7 +95,7 @@ Spécifie une erreur de point d’arrêt de style erreur générale.
 `BPET_ALL`\
 Spécifie tous les types d’erreur de point d’arrêt.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Ces valeurs peuvent être combinées avec une opération de bits `OR` and utilisée pour le `dwType` membre de la structure [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Passé en tant que paramètre à la méthode [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
 Un type d’erreur de point d’arrêt est composé d’un type et d’un niveau de gravité. Cela signifie qu’un type d’erreur de point d’arrêt n’est jamais simplement un type (par exemple, `BPET_TYPE_ERROR` ,) ou une gravité (par exemple, `BPET_SEV_GENERAL` ) par lui-même. `BPET_GENERAL_WARNING` et `BPET_GENERAL_ERROR` fournissent des valeurs prédéfinies pour les points d’arrêt d’avertissement et d’erreur généraux.

@@ -1,4 +1,5 @@
 ---
+description: Cette interface indique au gestionnaire de débogage de session (SDM) qu’un point d’arrêt en attente n’a pas pu être lié à un programme chargé, en raison d’un avertissement ou d’une erreur.
 title: IDebugBreakpointErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89342f5d26c5aeec41222bba12a29f534798782b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901866"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143353"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Cette interface indique au gestionnaire de débogage de session (SDM) qu’un point d’arrêt en attente n’a pas pu être lié à un programme chargé, en raison d’un avertissement ou d’une erreur.
@@ -41,7 +42,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 |------------|-----------------|
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtient l’interface [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) qui décrit l’avertissement ou l’erreur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Chaque fois qu’un point d’arrêt est lié, un événement est envoyé au SDM. Si le point d’arrêt ne peut pas être lié, un `IDebugBreakpointErrorEvent2` est envoyé ; sinon, un [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) est envoyé.
 
  Par exemple, lorsque l’analyse ou l’évaluation de la condition associée au point d’arrêt en attente échoue, un avertissement indique que le point d’arrêt en attente ne peut pas être lié pour l’instant. Cela peut se produire si le code pour le point d’arrêt n’a pas encore été chargé.

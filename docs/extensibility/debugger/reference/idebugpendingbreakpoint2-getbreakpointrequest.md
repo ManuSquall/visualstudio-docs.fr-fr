@@ -1,4 +1,5 @@
 ---
+description: Obtient la demande de point d’arrêt qui a été utilisée pour créer ce point d’arrêt en attente.
 title: 'IDebugPendingBreakpoint2 :: GetBreakpointRequest | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbe9f8e5e5f4b6d416b3179aadf25e89543cdba3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85395fe88aaf29658695323f437eba08379cfce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934264"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143062"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Obtient la demande de point d’arrêt qui a été utilisée pour créer ce point d’arrêt en attente.
@@ -44,7 +45,7 @@ int GetBreakpointRequest(
 `ppBPRequest`\
 à Retourne un objet [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) représentant la demande de point d’arrêt qui a été utilisée pour créer ce point d’arrêt en attente.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="see-also"></a>Voir aussi
