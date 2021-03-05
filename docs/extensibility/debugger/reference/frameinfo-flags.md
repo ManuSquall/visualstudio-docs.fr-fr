@@ -1,4 +1,5 @@
 ---
+description: Spécifie les informations à récupérer sur un objet de frame de pile.
 title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4029212aae6d4557e17c42a0c0e024a83c94b0a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904770"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150820"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 Spécifie les informations à récupérer sur un objet de frame de pile.
@@ -194,7 +195,7 @@ N’autorisez pas l' `ToString()` évaluation ou la mise en forme des fonctions 
 `FIF_DESIGN_TIME_EXPR_EVAL`\
 Les informations de frame doivent être extraites du domaine App-Domain hébergé et non du processus d’hébergement.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Ces indicateurs sont passés aux méthodes [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) et [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) pour indiquer les champs à initialiser dans la structure ou les structures [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
 Ces indicateurs sont également utilisés pour indiquer les champs de la structure [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) qui sont utilisés et valides lorsque la structure est retournée. Ces valeurs peuvent être combinées avec une opération de bits `OR` .

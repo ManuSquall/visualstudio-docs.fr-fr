@@ -1,4 +1,5 @@
 ---
+description: Obtient des informations sur ce module.
 title: 'IDebugModule2 :: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 205a32c0c7c6bb10b8b0a58e62f5d6ba5cdca91f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a31c6e40f18e3b405449179e3e5a3ea1a42acc6f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941698"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150561"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Obtient des informations sur ce module.
@@ -49,7 +50,7 @@ dans Combinaison d’indicateurs de l’énumération [MODULE_INFO_FIELDS](../..
 `pInfo`\
 [in, out] Structure [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) qui est remplie avec une description du module.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

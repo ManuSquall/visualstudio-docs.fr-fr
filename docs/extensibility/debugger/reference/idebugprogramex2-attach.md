@@ -1,4 +1,5 @@
 ---
+description: Attacher une session à un programme.
 title: 'IDebugProgramEx2 :: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30818627f8ebc293e444b43adb0590db077da4a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa9a66bdec3da9b6d18772b4ff2c85a7874bde6c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898830"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150144"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 Attacher une session à un programme.
@@ -53,10 +54,10 @@ dans Valeur de l’énumération [ATTACH_REASON](../../../extensibility/debugger
 `pSession`\
 dans Valeur qui identifie de façon unique la session qui est attachée au programme.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Cette méthode doit retourner `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si le programme est déjà attaché.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le port qui contient le programme peut utiliser la valeur dans `pSession` pour déterminer la session qui tente de s’attacher au programme. Par exemple, si un port n’autorise qu’une seule session de débogage à s’attacher à un processus à la fois, le port peut déterminer si la même session est déjà attachée à d’autres programmes dans le processus.
 
 > [!NOTE]

@@ -1,4 +1,5 @@
 ---
+description: Exe est le seul symbole sans un parent lexical ou de classe, car il représente la portée globale du fichier. exe ou. dll.
 title: Exe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dc30078565f73d4d2f6cab19c57afade6d8e41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5394acaa19efed0c882d97f6ee5b633ffe1c68c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857271"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149150"
 ---
 # <a name="exe"></a>Exe
 Exe est le seul symbole sans un parent lexical ou de classe, car il représente la portée globale du fichier. exe ou. dll. Il n’y a qu’un seul symbole avec la `SymTagExe` balise par fichier. La méthode [IDiaSession :: get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) retourne le symbole.

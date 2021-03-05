@@ -1,4 +1,5 @@
 ---
+description: OBSOLÈTE. Recharge les symboles pour ce module.
 title: 'IDebugModule2 :: ReloadSymbols_Deprecated | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d4e484a1557ea99138f31fdc6f9103e6708b803
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d07f80a3dccef666c0608d79505816f73ff52013
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929752"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150521"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 OBSOLÈTE. N’UTILISEZ PAS. Recharge les symboles pour ce module.
@@ -48,7 +49,7 @@ dans Chemin d’accès au magasin de symboles.
 `pbstrDebugMessage`\
 à Retourne un message d’information, tel qu’un État ou un message d’erreur, qui s’affiche à droite du nom du module dans la fenêtre modules.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Un moteur de débogage doit toujours retourner `E_FAIL` .
 
 ## <a name="remarks"></a>Notes

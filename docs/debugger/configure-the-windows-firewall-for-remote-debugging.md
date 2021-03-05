@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865824"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149325"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurer le pare-feu Windows pour le débogage distant
 
@@ -49,6 +49,16 @@ Visual Studio et le débogueur distant essaient d’ouvrir les ports corrects pe
 1. Ajoutez un nom pour la règle (par exemple, **msvsmon**, **IIS** ou **Web Deploy**), puis sélectionnez **Terminer**.
 
    La nouvelle règle doit apparaître et être sélectionnée dans la liste **règles** de trafic entrant ou **règles de trafic sortant** .
+
+**Pour ouvrir un port à l’aide de PowerShell :**
+
+Pour le pare-feu Windows, vous pouvez utiliser des commandes PowerShell telles que [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps).
+
+L’exemple suivant ouvre le port 4024 pour le débogueur distant sur l’ordinateur distant. Le chemin d’accès que vous devez utiliser peut être différent.
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports sur l’ordinateur distant qui permettent le débogage distant
 

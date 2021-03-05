@@ -1,4 +1,5 @@
 ---
+description: L’interface IDebugBreakpointRequest3 représente les informations nécessaires à la création et à la liaison de tout type de point d’arrêt.
 title: IDebugBreakpointRequest3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 628a68cf6712e6863550d85a5f876afbe1b6bdb5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893059"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150742"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 Cette interface représente les informations nécessaires à la création et à la liaison de tout type de point d’arrêt. Il s’agit d’une extension de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
@@ -41,7 +42,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 |------------|-----------------|
 |[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Obtient les informations de demande de point d’arrêt qui décrivent cette demande de point d’arrêt.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette interface est utilisée pour fournir des informations supplémentaires au par le biais de la structure [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) . Ces informations supplémentaires incluent l’ID de fournisseur DE l’éditeur (sous la forme d’un GUID), le nom d’un point de trace et le nom d’une contrainte de point d’arrêt.
 
 ## <a name="requirements"></a>Configuration requise

@@ -1,4 +1,5 @@
 ---
+description: L’exemple Dia2dump montre comment utiliser le kit de développement logiciel (SDK) Microsoft Debug interface Access (DIA SDK) pour interroger un fichier PDB afin d’obtenir des informations.
 title: Exemple Dia2dump | Microsoft Docs
 ms.date: 07/24/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fee6f04b3ee0aefe0aac99f8079e2f31733ce08b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a94a16d8e9fd60b042ea7113304b6d14c649b6fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865418"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149185"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump, exemple
 

@@ -1,4 +1,5 @@
 ---
+description: Les énumérations sont identifiées par des symboles SymTagEnum.
 title: Enum (kit de développement logiciel Debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07342f4b67dd413296aad597b49426c15d619d75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a5ae6c3727e35ff8a021eb659dd59f220d8b3e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857299"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149163"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Énumération (Kit de développement logiciel SDK de Debug Interface Access)
 Les énumérations sont identifiées par des `SymTagEnum` symboles. Chaque valeur d’énumération apparaît en tant qu’enfant de classe avec une `SymTagConstant` balise.

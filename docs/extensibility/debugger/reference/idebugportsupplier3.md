@@ -1,4 +1,5 @@
 ---
+description: Cette interface permet à un appelant de déterminer si un fournisseur de ports peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur, puis obtenir la liste de ces ports conservés.
 title: IDebugPortSupplier3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8db7c2321d5a309f66b85a3f177e20cb3f9b1244
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840234"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150391"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Cette interface permet à un appelant de déterminer si un fournisseur de ports peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur, puis obtenir la liste de ces ports conservés.
@@ -42,7 +43,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 |[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Retourne une valeur indiquant si le fournisseur de ports peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur.|
 |[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Retourne un objet qui peut être utilisé pour énumérer tous les ports qui ont été écrits sur le disque par ce fournisseur de port.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si un fournisseur de ports peut conserver des ports entre les appels, il doit implémenter cette interface. Les ports doivent être chargés lorsque le fournisseur de port est instancié et écrits sur le disque lors de la destruction du fournisseur de port.
 
  En général, un moteur de débogage n’interagit pas avec un fournisseur de port et n’a pas d’utilisation pour cette interface.

@@ -1,4 +1,5 @@
 ---
+description: Fait en sorte que le processus effectue un pas à pas détaillé d’une instruction ou d’une instruction.
 title: 'IDebugProcess3 :: étape | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69f7c1736f786b2c59678826b71f7f9349629057
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b85df970c073fa2203873733073c5b6b85cabe06
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150131"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Fait en sorte que le processus effectue un pas à pas détaillé d’une instruction ou d’une instruction.
@@ -56,7 +57,7 @@ dans Une des valeurs [STEPKIND](../../../extensibility/debugger/reference/stepki
 `step`\
 dans Une des valeurs [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne le code d’erreur.
 
 ## <a name="remarks"></a>Notes

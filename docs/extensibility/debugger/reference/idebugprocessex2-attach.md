@@ -1,4 +1,5 @@
 ---
+description: Cette méthode informe le processus qu’une session est en train de déboguer le processus.
 title: 'IDebugProcessEx2 :: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9b9e2fa8f636581572b97da58fb9ddefeafd375
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1938ae8299612caabe2fe684b7b5c1af685d4596
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892539"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149741"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 Cette méthode informe le processus qu’une session est en train de déboguer le processus.
@@ -43,7 +44,7 @@ int Attach(
 `pSession`\
 dans Valeur qui identifie de façon unique la session attachée à ce processus.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

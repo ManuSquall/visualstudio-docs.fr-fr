@@ -1,4 +1,5 @@
 ---
+description: Récupère un tableau de tous les objets System. Threading. Tasks. TaskScheduler qui sont actuellement actifs.
 title: Méthode GetTaskSchedulersForDebugger | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9826681d2d322b1b240abb4062de007b564619
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f60ffa851e8b8821e3d07e1bfdd6e864104b5001
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921269"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150092"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>Méthode GetTaskSchedulersForDebugger
 Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> objets qui sont actuellement actifs.
@@ -32,10 +33,10 @@ Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> ob
 .method assembly hidebysig static class System.Threading.Tasks.TaskScheduler[] GetTaskSchedulersForDebugger() cil managed
 ```
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> objets actuellement actifs dans ce <xref:System.AppDomain> .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode n’est pas thread-safe et vous ne devez pas l’utiliser simultanément avec d’autres instances de <xref:System.Threading.Tasks.TaskScheduler> . Appelez cette méthode à partir d’un débogueur uniquement lorsque le débogueur a suspendu tous les autres threads.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Décrit une entrée dans une table d’adresses.
 title: DiaAddressMapEntry | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05475d2e6d48e7a8dacea834e5d7ca18c71d3260
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdac0233901ac8571bbfb2a5d6659adf69e35298
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149192"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Décrit une entrée dans une table d’adresses.
@@ -36,7 +37,7 @@ struct DiaAddressMapEntry {
 
 `rvaTo` L’adresse virtuelle relative `rva` est mappée à dans l’image B.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Une carte d’adresses fournit une traduction d’une disposition d’image (A) à une autre (B). Un tableau de `DiaAddressMapEntry` structures triées par `rva` définit un mappage d’adresses.
 
 Pour traduire une adresse, `addrA` , dans l’image A en une adresse, `addrB` , dans l’image B, procédez comme suit :

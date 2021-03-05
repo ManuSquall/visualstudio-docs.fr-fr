@@ -1,4 +1,5 @@
 ---
+description: Récupère des informations sur la méthode à l’adresse de débogage spécifiée.
 title: 'IDebugSymbolProviderDirect :: GetMethodFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cbcab2126ffa61f4bfb71fbf21abff8ecc5d798
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dea6367280217f42238a56a56a6ce0e0e6f92b47
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909439"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149494"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Récupère des informations sur la méthode à l’adresse de débogage spécifiée.
@@ -72,7 +73,7 @@ dans Adresse de débogage qui est représentée par l’interface [IDebugAddress
 `pdwVersion`\
 à Numéro de version de la méthode.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

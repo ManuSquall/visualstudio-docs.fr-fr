@@ -1,4 +1,5 @@
 ---
+description: Obtient la valeur de l’objet sous la forme d’une série d’octets consécutive.
 title: 'IDebugObject :: GetValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7534a05879bdae0a885ae0cbe23d072c30132d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63e07ccfbcf2117363ed3e2096d5f0bb4bcac806
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846801"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150443"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 Obtient la valeur de l’objet sous la forme d’une série d’octets consécutive.
@@ -48,10 +49,10 @@ int GetValue(
 `nSize`\
 dans Nombre maximal d’octets à extraire.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  [Obtient](../../../extensibility/debugger/reference/idebugobject-getsize.md) le nombre total d’octets de valeur qui peuvent être récupérés en appelant la méthode de recherche.
 
 ## <a name="see-also"></a>Voir aussi

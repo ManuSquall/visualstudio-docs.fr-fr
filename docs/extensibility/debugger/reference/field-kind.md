@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type de champ contenu dans un objet IDebugField.
 title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a18739ebe30a41e9dca837287d58db57795f878b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874367"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150859"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 Spécifie le type de champ contenu dans un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -224,7 +225,7 @@ Indique un masque pour les types de champs.
 `FIELD_SYM_MASK`\
 Indique un masque pour les informations de symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Retourné à partir d’un appel à la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
 
 Selon le type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelé sur l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour une forme d’interface plus spécifique. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD` , vous pouvez appeler `QueryInterface` sur I `DebugField` pour obtenir l’interface [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .

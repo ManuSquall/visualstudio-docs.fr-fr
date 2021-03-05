@@ -1,4 +1,5 @@
 ---
+description: Récupère une source injectée au moyen d’un index.
 title: IDiaEnumInjectedSources::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 029c47cc04a09dc1168ff755c1640da9c9662207
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1d1ab3a9ce19705a4d9ff22f33a1275efc0e8b02
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99856711"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102148996"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 Récupère une source injectée au moyen d’un index.
@@ -40,7 +41,7 @@ dans Index de l’objet [IDiaInjectedSource](../../debugger/debug-interface-acce
 
 à Retourne un objet [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) qui représente la source injectée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

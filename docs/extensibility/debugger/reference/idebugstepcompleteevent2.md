@@ -1,4 +1,5 @@
 ---
+description: Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) quand le programme en cours de débogage effectue une pas à pas détaillé, un pas à pas principal ou une étape en dehors d’une ligne de code source ou d’instruction ou d’instruction.
 title: IDebugStepCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71e9089dc2f0e4f6eec78e904987fc1d865ed90f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f366b9eb1d9406ba5207016ca97ea40d1fd48529
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897226"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149533"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) quand le programme en cours de débogage effectue une pas à pas détaillé, un pas à pas principal ou une étape en dehors d’une ligne de code source ou d’instruction ou d’instruction.
@@ -34,7 +35,7 @@ IDebugStepCompleteEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Notes pour les appelants
  Le DE crée et envoie cet objet d’événement pour signaler la fin d’une opération d’étape. L’événement est envoyé à l’aide de la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Une fois l’étape terminée, le programme en cours de débogage est suspendu une fois de plus, et l’IDE met à jour toutes ses fenêtres.
 
 ## <a name="requirements"></a>Configuration requise

@@ -1,4 +1,5 @@
 ---
+description: Chaque fonction est identifiée par un symbole SymTagFunction.
 title: Fonction (kit de développement logiciel de debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a294444cf03760ef83fb02ae012bcbf609a2982a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 850ecedbdacb8349dc8ff6450c79dee219b61418
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857250"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149136"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Fonction (Kit de développement logiciel de Debug Interface Access)
 Chaque fonction est identifiée par un `SymTagFunction` symbole.

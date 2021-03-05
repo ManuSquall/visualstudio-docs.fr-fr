@@ -1,4 +1,5 @@
 ---
+description: Le kit de développement logiciel (SDK) Microsoft Debug interface Access (DIA SDK) permet d’accéder aux informations de débogage stockées dans des fichiers de base de données du programme (. pdb) générés par les outils Microsoft post-compilation.
 title: Kit de développement logiciel Debug interface Access | Microsoft Docs
 ms.date: 07/24/2018
 ms.topic: reference
@@ -14,18 +15,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 398c6fac8460ceba07e7fd36df5b4242b15cd133
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbb7c9025094249715f1d69a8d58d8725d294107
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857313"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149302"
 ---
 # <a name="debug-interface-access-sdk"></a>Kit de développement logiciel de Debug Interface Access
 
 Le kit de développement logiciel (SDK) Microsoft Debug interface Access (DIA SDK) permet d’accéder aux informations de débogage stockées dans des fichiers de base de données du programme (. pdb) générés par les outils Microsoft post-compilation. Étant donné que le format du fichier. pdb généré par les outils post-compilation subit une révision constante, l’exposition du format est irréalisable. À l’aide de l’API DIA, vous pouvez développer des applications qui recherchent et parcourent les informations de débogage stockées dans un fichier. pdb. De telles applications peuvent, par exemple, signaler les informations de trace de la pile de rapports et analyser les données de performances.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 [Prise en main](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
 

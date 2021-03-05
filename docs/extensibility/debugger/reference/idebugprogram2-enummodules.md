@@ -1,4 +1,5 @@
 ---
+description: Récupère la liste des modules chargés et exécutés par ce programme.
 title: 'IDebugProgram2 :: EnumModules | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da3f3dcd150d35199458e9952074f76931969175
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26016510856de44c07ca9a123553e82d0d2a79f4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958581"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149624"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 Récupère la liste des modules chargés et exécutés par ce programme.
@@ -43,7 +44,7 @@ int EnumModules(
 `ppEnum`\
 à Retourne un objet [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) qui contient une liste des modules.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
