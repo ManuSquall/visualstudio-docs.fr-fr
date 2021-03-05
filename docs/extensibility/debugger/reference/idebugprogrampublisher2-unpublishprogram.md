@@ -1,4 +1,5 @@
 ---
+description: Rend un programme non disponible pour le débogage.
 title: 'IDebugProgramPublisher2 :: UnpublishProgram | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3841ba0698c5e63bbf58e47e0e4a8b8f75d068e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7160b3bd3b954b722828542e8eead4fc6fedebf5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961208"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161259"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Rend un programme non disponible pour le débogage.
@@ -43,7 +44,7 @@ int UnpublishProgram(
 `pDebuggeeInterface`\
 dans `IUnknown` Interface pour le programme. Il s’agit de la même valeur fournie à la méthode [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) et identifie de façon unique le programme en cours de suppression (autrement dit, il est utilisé comme cookie).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

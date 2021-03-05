@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161298"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -217,7 +217,7 @@ Vous pouvez créer des tâches pour tout fichier ou dossier en spécifiant son n
 
 |Macro|Description|
 |-|-|
-|`${env.<VARIABLE>}`| Spécifie toute variable d’environnement (par exemple, ${env.PATH}, ${env.COMSPEC}, etc.) définie pour l’invite de commandes développeur. Pour plus d’informations, consultez [Invite de commandes développeur pour Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
+|`${env.<VARIABLE>}`| Spécifie toute variable d’environnement (par exemple, ${env.PATH}, ${env.COMSPEC}, etc.) définie pour l’invite de commandes développeur. Pour plus d’informations, consultez [invite de commandes développeur et Developer PowerShell](../ide/reference/command-prompt-powershell.md).|
 |`${workspaceRoot}`| Le chemin complet vers le dossier de l’espace de travail (par exemple *C:\sources\hello*)|
 |`${file}`| Le chemin complet du fichier ou du dossier sur lequel exécuter cette tâche (par exemple *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| Le chemin relatif du fichier ou du dossier (par exemple *src\hello.js*)|

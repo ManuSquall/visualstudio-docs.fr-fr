@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942943"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161311"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -143,10 +143,23 @@ Vous pouvez [installer des analyseurs FxCop](../code-quality/install-fxcop-analy
 
 Plusieurs membres de la communauté ont écrit des extensions gratuites qui ajoutent de nouvelles inspections de code :
 
+::: moniker range="vs-2017"
+
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
 - [SonarLint pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
 - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 - [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
+- [SonarLint pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)
+- [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
+- [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/)
+
+::: moniker-end
 
 ![Refactorisations dans Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
@@ -169,7 +182,7 @@ Visual Studio contient de nombreuses fonctionnalités qui vous permettent de rec
 
 Utilisez IntelliCode pour Visual Studio pour obtenir des [complétions de code sensibles au contexte](/visualstudio/intellicode/intellicode-visual-studio) au lieu d’une simple une liste alphabétique. Vous pouvez également entraîner un [modèle IntelliSense personnalisé](/visualstudio/intellicode/custom-model-faq) en vous basant sur vos propres bibliothèques spécifiques à un domaine.
 
-## <a name="unit-testing"></a>Test unitaire
+## <a name="unit-testing"></a>Test des unités
 
 À partir de Visual Studio 2017, les améliorations de l’expérience de test sont nombreuses. Vous pouvez tester avec les frameworks de test MSTest v1, MSTest v2, NUnit ou XUnit.
 

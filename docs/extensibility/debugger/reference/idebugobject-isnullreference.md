@@ -1,4 +1,5 @@
 ---
+description: Teste si cet objet est une référence null.
 title: 'IDebugObject :: IsNullReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fd50f81a75ce3ca189c47db12f1f4024b244856
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 844e6c92385c1aa719d3c9d0ff399db9104dccc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953706"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161509"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 Teste si cet objet est une référence null.
@@ -43,7 +44,7 @@ int IsNullReference(
 `pfIsNull`\
 à Retourne une valeur différente de zéro ( `TRUE` ) si cet objet est une référence null ; sinon, retourne zéro ( `FALSE` ).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

@@ -1,4 +1,5 @@
 ---
+description: Récupère les enfants du symbole qui sont valides à une adresse spécifiée.
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec8c7136347406aa49aad65600e59950b308e4a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 254ab98e8b1f1ec88fc946221bb2e15e2af76ffd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854660"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161158"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 Récupère les enfants du symbole qui sont valides à une adresse spécifiée.
@@ -55,10 +56,10 @@ dans Adresse du symbole.
 
 à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les symboles locaux retournés incluent des informations de plage dynamique.
 
 ## <a name="requirements"></a>Configuration requise

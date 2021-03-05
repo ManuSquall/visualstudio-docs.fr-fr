@@ -1,4 +1,5 @@
 ---
+description: Chaque classe, structure et Union est identifiée par un symbole SymTagUDT.
 title: UDT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d49d41c6f399391ac748125cb9012630784827c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4479c41bfe68e5dcaa4265dd96091fe3938b775
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873400"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161577"
 ---
 # <a name="udt"></a>UDT
 Chaque classe, structure et Union est identifiée par un `SymTagUDT` symbole. Chaque membre, fonction, donnée ou type imbriqué, ainsi que chaque classe de base, apparaît en tant qu’enfant de classe du type défini par l’utilisateur (UDT).

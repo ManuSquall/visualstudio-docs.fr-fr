@@ -1,4 +1,5 @@
 ---
+description: Récupère les enfants du symbole qui sont valides à une adresse virtuelle spécifiée.
 title: IDiaSymbol::findChildrenExByVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed1d2e2cfda5bf16117c2bc4fbd8c13384055a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff9ed80ebd63baa8733fc3bab7d3d74ed3d4cc99
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854667"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161125"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Récupère les enfants du symbole qui sont valides à une adresse virtuelle spécifiée.
@@ -55,10 +56,10 @@ dans Spécifie l’adresse virtuelle.
 
 à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les symboles locaux retournés incluent des informations de plage dynamique.
 
 ## <a name="requirements"></a>Configuration requise

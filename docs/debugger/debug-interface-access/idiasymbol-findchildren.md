@@ -1,4 +1,5 @@
 ---
+description: Récupère les enfants du symbole.
 title: IDiaSymbol::findChildren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a61a85e36159c361f01dd4048a06c040415860d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 809157c8ffd4b3955b7a8d7b079f63398437e35c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854702"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161172"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Récupère les enfants du symbole.
@@ -50,10 +51,10 @@ dans Spécifie les options de comparaison appliquées à la correspondance de no
 
 à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est identique à l’appel de la méthode [IDiaSession :: findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md) avec ce symbole comme premier paramètre.
 
 ## <a name="see-also"></a>Voir aussi
