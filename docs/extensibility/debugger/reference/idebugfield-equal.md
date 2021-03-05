@@ -1,4 +1,5 @@
 ---
+description: Cette méthode compare l’égalité de ce champ avec le champ spécifié.
 title: 'IDebugField :: EQUAL | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c19e8860fb9ed9cbd65efe7fa72fd920a01622ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2bf9b3e4bbb988621e3b65e855b07322fba1795
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915483"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152089"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 Cette méthode compare l’égalité de ce champ avec le champ spécifié.
@@ -43,7 +44,7 @@ int Equal(
 `pField`\
 dans Champ à comparer à celui-ci.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Si les champs sont identiques, retourne `S_OK` . Si les champs sont différents, retourne la valeur dans le `S_FALSE.` cas contraire, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

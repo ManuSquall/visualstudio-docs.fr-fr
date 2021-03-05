@@ -1,4 +1,5 @@
 ---
+description: Cette méthode convertit une chaîne d’expression en expression analysée.
 title: IDebugExpressionEvaluator ::P faible | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: abcc66eb8a0f1419d447dfbd0081b39583e2941e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6a586c7e7cac1a4ef034b7941840db59d376180
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930289"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152492"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Cette méthode convertit une chaîne d’expression en expression analysée.
@@ -68,7 +69,7 @@ dans Base à utiliser pour interpréter toutes les informations numériques.
 `ppParsedExpression`\
 à Retourne l’expression analysée dans un objet [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

@@ -1,4 +1,5 @@
 ---
+description: Cette méthode évalue l’expression de manière asynchrone.
 title: 'IDebugExpression2 :: EvaluateAsync | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8af09c2db00b1f24631418c5332811cf4cb9202c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b01289c792e887c096d0a9068bac55b21a3a503
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916265"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152687"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Cette méthode évalue l’expression de manière asynchrone.
@@ -48,7 +49,7 @@ dans Combinaison d’indicateurs de l’énumération [EVALFLAGS](../../../exten
 `pExprCallback`\
 dans Ce paramètre est toujours une valeur null.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Voici un exemple de code d’erreur :
 
 |Erreur|Description|

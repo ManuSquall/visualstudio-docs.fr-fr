@@ -1,4 +1,5 @@
 ---
+description: Les classes Friend et les fonctions Friend sont identifiées par les symboles SymTagFriend.
 title: Friend (kit de développement logiciel de debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b895555ce1334fa306b64fe213787bdf5dc827e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a0e9784c864b2b591847f3d77ced553762911c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865383"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151215"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (Kit de développement logiciel de Debug Interface Access)
 Les classes Friend et les fonctions Friend sont identifiées par des `SymTagFriend` symboles. Il s’agit d’enfants de types définis par l’utilisateur (UDT) parents qui ont une propriété [IDiaSymbol :: get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) .

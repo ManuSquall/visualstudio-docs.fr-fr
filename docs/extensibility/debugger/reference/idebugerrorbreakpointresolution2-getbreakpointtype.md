@@ -1,4 +1,5 @@
 ---
+description: Obtient le type de point d’arrêt.
 title: 'IDebugErrorBreakpointResolution2 :: GetBreakpointType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ddcab108891526b64a101a471aaff2370d072f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30317369437b010950a3252960ebab68c565c73a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846853"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153129"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 Obtient le type de point d’arrêt.
@@ -43,10 +44,10 @@ int GetBreakpointType(
 `pBPType`\
 à Retourne une valeur de l’énumération [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) qui décrit le type de point d’arrêt.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette méthode retourne le type du point d’arrêt qui n’a pas pu être lié, ce qui nécessite un événement de point d’arrêt d’erreur.
 
 ## <a name="example"></a>Exemple

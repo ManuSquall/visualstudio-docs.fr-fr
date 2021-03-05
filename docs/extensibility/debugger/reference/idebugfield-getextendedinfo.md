@@ -1,4 +1,5 @@
 ---
+description: Cette méthode obtient des informations étendues sur un champ.
 title: 'IDebugField :: GetExtendedInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 911556cb615e373d620b496fb31e5d6093b7cc37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98d522222d57a0828ebcefe446262033d2d8dfc1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869932"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151960"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Cette méthode obtient des informations étendues sur un champ.
@@ -58,10 +59,10 @@ dans Sélectionne les informations à retourner. Les valeurs autorisées sont :
 `pdwLen`\
 [in, out] Retourne la taille des informations étendues, en octets.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Actuellement, cette méthode retourne uniquement le type ou la valeur d’une constante. L’appelant doit libérer la mémoire tampon retournée dans `prgBuffer` en appelant la fonction de com `CoTaskMemFree` (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).
 
 ## <a name="see-also"></a>Voir aussi

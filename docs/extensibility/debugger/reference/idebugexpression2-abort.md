@@ -1,4 +1,5 @@
 ---
+description: Cette méthode annule l’évaluation d’expression asynchrone telle qu’elle est démarrée par un appel à la méthode EvaluateAsync).
 title: 'IDebugExpression2 :: Abort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18e0e4b810e76bd5c5de7b0f8d77e7cd72ceb565
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37591b245a4bf47ba956a17e19b7d6c3f1608cae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901690"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152777"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 Cette méthode annule l’évaluation d’expression asynchrone telle qu’elle est démarrée par un appel à la méthode [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) .
@@ -40,7 +41,7 @@ int Abort();
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Lorsque l’évaluation d’une expression asynchrone est annulée, n’envoyez pas d’événement [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) au rappel d’événement passé aux méthodes [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) ou [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
 
 ## <a name="see-also"></a>Voir aussi

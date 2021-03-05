@@ -1,4 +1,5 @@
 ---
+description: Analyse une expression sous forme de texte pour une évaluation ultérieure.
 title: IDebugExpressionContext2 ::P arseText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc55cceb8db392d590ff414ac3df5b807d1e52e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2095a1d6e035c676ab92722f9ae785e1a42c5b78
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901646"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152636"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analyse une expression sous forme de texte pour une évaluation ultérieure.
@@ -68,10 +69,10 @@ dans Base à utiliser pour l’analyse de toutes les informations numériques da
 `pichError`\
 à Retourne l’index de caractère de l’erreur dans `pszCode` si l’expression contient une erreur.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Lorsque cette méthode est appelée, un moteur DE débogage (DE) doit analyser l’expression et la valider pour l’exactitude. Les `pbstrError` `pichError` paramètres et peuvent être remplis si l’expression n’est pas valide.
 
 Notez que l’expression n’est pas évaluée, analysée uniquement. Un appel ultérieur aux méthodes [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) évalue l’expression analysée.

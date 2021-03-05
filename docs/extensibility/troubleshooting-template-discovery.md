@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23e30ddb5f43a755fc2dc0206509e403e802c3e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ea99c1d74c06ab42ff86f07de4cf5c76e95de43
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893488"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151322"
 ---
 # <a name="troubleshooting-template-installation"></a>Dépannage de l’installation du modèle
 
@@ -39,7 +39,7 @@ Si vous rencontrez des problèmes lors du déploiement de vos modèles de projet
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. Ouvrez une [invite de commandes développeur](/dotnet/framework/tools/developer-command-prompt-for-vs) pour votre installation et exécutez `devenv /updateConfiguration` .
+3. Ouvrez une [invite de commandes développeur](../ide/reference/command-prompt-powershell.md) pour votre installation et exécutez `devenv /updateConfiguration` .
 
 ::: moniker range="vs-2017"
 

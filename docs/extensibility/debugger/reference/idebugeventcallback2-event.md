@@ -1,4 +1,5 @@
 ---
+description: Envoie une notification d’événements de débogage.
 title: 'IDebugEventCallback2 :: Event | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afa0cfd8f96d21a510370a4fc526a3cae053c77b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152921"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Envoie une notification d’événements de débogage.
@@ -73,7 +74,7 @@ dans GUID qui identifie l’interface d’événement à obtenir à partir du `p
 `dwAttrib`\
 dans Combinaison d’indicateurs de l’énumération [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

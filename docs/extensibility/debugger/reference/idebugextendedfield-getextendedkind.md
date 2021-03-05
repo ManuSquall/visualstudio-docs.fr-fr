@@ -1,4 +1,5 @@
 ---
+description: Récupère le type de champ étendu spécifié.
 title: 'IDebugExtendedField :: GetExtendedKind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f431278997dcc02ecc60cd6bd4e8b9171d88dfb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 334ed7f44c4b4c119a204af17a00b8329410d05e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915550"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152128"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 Récupère le type de champ étendu spécifié.
@@ -42,7 +43,7 @@ int GetExtendedKind(
 `pdwKind`\
 [in, out] Valeur de l’énumération [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) qui définit le type de champ.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

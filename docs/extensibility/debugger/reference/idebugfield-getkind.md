@@ -1,4 +1,5 @@
 ---
+description: Cette méthode obtient le type de champ.
 title: 'IDebugField :: GetKind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d0f69d95aaf5313e2d2140b90339e23852ba1a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cac900e35dd6de8a58a9daaadfe1ad8e5a638ed8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869880"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151907"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Cette méthode obtient le type de champ.
@@ -43,7 +44,7 @@ int GetKind(
 `pdwKind`\
 à Retourne le type de champ sous la forme d’une combinaison de constantes de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

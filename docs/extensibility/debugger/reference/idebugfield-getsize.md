@@ -1,4 +1,5 @@
 ---
+description: Cette méthode obtient la taille d’un champ, en octets.
 title: 'IDebugField :: obtient | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6330179f1bbfffcb1f590dfc09ae0c06385f12e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c588914f93d732dc1b8e6ddc4edc41713e97fd1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869854"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151894"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Cette méthode obtient la taille d’un champ, en octets.
@@ -43,10 +44,10 @@ int GetSize(
 `pdwSize`\
 à Retourne la taille.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Tous les champs ont un type et tous les types ont une taille. Par exemple, un champ dont le type est Byte a une taille de 1 octet.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Retourne des informations qui autorisent la construction d’un message d’erreur explicite.
 title: 'IDebugErrorEvent2 :: GetErrorMessage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d5fcb5f1f43aa9be16a1b2fe00bdec4eb3dd6014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f7933441eff3754b90385cfe62dc1314c2d1cb4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153012"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Retourne des informations qui autorisent la construction d’un message d’erreur explicite.
@@ -68,10 +69,10 @@ int GetErrorMessage(
 `pdwHelpId`\
 à ID de la rubrique d’aide à afficher (défini à 0 s’il n’y a aucune rubrique d’aide).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le message d’erreur doit être mis en forme le long des lignes de `"What I was doing.  %1"` . Le `"%1"` serait ensuite remplacé par l’appelant par le message d’erreur dérivé du code d’erreur (qui est retourné dans `hrErrorReason` ). Le `pMessageType` paramètre indique à l’appelant comment le dernier message d’erreur doit être affiché.
 
 ## <a name="see-also"></a>Voir aussi

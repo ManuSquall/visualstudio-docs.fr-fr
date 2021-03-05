@@ -1,4 +1,5 @@
 ---
+description: Indique l’étendue particulière d’une valeur de données.
 title: DataKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bab3bc1c79b6444e75ab75e3d25e8bc395c1be86
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24f13fc1157dd7f3de723474091a1f80e3717504
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857320"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151314"
 ---
 # <a name="datakind"></a>DataKind
 Indique l’étendue particulière d’une valeur de données.
@@ -60,7 +61,7 @@ DataIsStaticMember Data Item est une variable statique de classe.
 
 L’élément de données DataIsConstant est une valeur constante.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs de cette énumération sont retournées par la méthode [IDiaSymbol :: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .
 
 ## <a name="requirements"></a>Configuration requise

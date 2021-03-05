@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 03/02/2021
+ms.date: 03/04/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: bdbad2633136ead7cfe04a1ef82e3cc9db587212
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684027"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151413"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -47,11 +47,19 @@ Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez g
 
 ### <a name="improved-search"></a>Recherche améliorée
 
-Anciennement appelée Lancement rapide, notre nouvelle expérience de recherche est plus rapide et plus efficace. Désormais, les résultats de la recherche apparaissent dynamiquement à mesure que vous tapez. Les résultats de recherche peuvent souvent inclure des raccourcis clavier de commandes afin que vous puissiez plus facilement les mémoriser pour la suite.
+Anciennement appelée Lancement rapide, notre nouvelle expérience de recherche est plus rapide et plus efficace. Désormais, les résultats de la recherche apparaissent dynamiquement à mesure que vous tapez. De plus, les résultats de la recherche peuvent souvent inclure des raccourcis clavier pour les commandes, afin que vous puissiez les mémoriser pour une utilisation ultérieure.
 
    ![Animation de la nouvelle expérience de recherche dans Visual Studio 2019](media/vs-2019/new-search-feature.gif "Nouvelle expérience de recherche dans Visual Studio 2019.")
 
 La nouvelle logique de recherche approximative permet de trouver tout ce dont vous avez besoin, même en cas de fautes de frappe. Que vous recherchiez des commandes, des paramètres, de la documentation ou d’autres choses utiles, la nouvelle fonctionnalité de recherche vous permet de trouver plus facilement ce que vous cherchez.
+
+Pour plus d’informations, consultez [utiliser la recherche Visual Studio](visual-studio-search.md).
+
+#### <a name="intelligent-search-service"></a>Service de recherche intelligent
+
+**Nouveauté de 16,9**: en utilisant la technologie Cloud, l’intelligence artificielle et machine learning, nous avons amélioré nos résultats de recherche. Non seulement la recherche dans Visual Studio est plus pertinente, mais elle peut également vous aider à découvrir plus facilement les fonctionnalités du produit.
+
+Pour plus d’informations, consultez le billet de blog [intelligent Visual Studio Search service](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/) .
 
 ### <a name="refactorings"></a>Refactorisations
 

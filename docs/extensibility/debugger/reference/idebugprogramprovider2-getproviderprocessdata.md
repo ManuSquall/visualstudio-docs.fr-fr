@@ -1,4 +1,5 @@
 ---
+description: Récupère une liste des programmes en cours d’exécution à partir d’un processus spécifié.
 title: 'IDebugProgramProvider2 :: GetProviderProcessData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ce5bee4f2401e3895570f16a6de5567b5979d98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b878a6731a9a7f2bf58bf55530d0b5f83cc978de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151556"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Récupère une liste des programmes en cours d’exécution à partir d’un processus spécifié.
@@ -70,10 +71,10 @@ dans Tableau de GUID pour les moteurs de débogage affectés au débogage de ce 
 `pProcess`\
 à Structure [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) qui est renseignée avec les informations demandées.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est normalement appelée par un processus pour obtenir une liste de programmes en cours d’exécution dans ce processus. Les informations retournées sont une liste d’objets [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .
 
 ## <a name="see-also"></a>Voir aussi

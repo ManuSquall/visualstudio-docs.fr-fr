@@ -1,4 +1,5 @@
 ---
+description: Crée un objet sans constructeur.
 title: 'IDebugFunctionObject :: CreateObjectNoConstructor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c47f51fb0ddc47218b11fe5673e0ede8362ff89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f0f5ddd90f979c3646014bc82aa55402386a5f36
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921087"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151829"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 Crée un objet sans constructeur.
@@ -48,7 +49,7 @@ dans Objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.m
 `ppObject`\
 à Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet nouvellement créé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

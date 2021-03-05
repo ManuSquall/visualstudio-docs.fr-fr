@@ -1,4 +1,5 @@
 ---
+description: Récupère le nom du contexte d’évaluation.
 title: 'IDebugExpressionContext2 :: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8529e83de0f5de3d5d202885cf37b29d21fa3e59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43af7eeb733aca978a4c3b09fd4f97ca828fe5a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949530"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152647"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 Récupère le nom du contexte d’évaluation.
@@ -43,7 +44,7 @@ int GetName(
 `pbstrName`\
 à Retourne le nom du contexte d’évaluation.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

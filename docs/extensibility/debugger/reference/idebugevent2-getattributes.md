@@ -1,4 +1,5 @@
 ---
+description: Obtient les attributs de cet événement de débogage.
 title: 'IDebugEvent2 :: GetAttributes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64f4b404938143e5b1531798b1cded7ac6218de6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7402c2b5a367a3a0a681a9a17ef89872a7b3e96
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888275"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152973"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 Obtient les attributs de cet événement de débogage.
@@ -43,10 +44,10 @@ int GetAttribute(
 `pdwAttrib`\
 à Combinaison d’indicateurs de l’énumération [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) est commune à tous les événements. Cette méthode décrit le type d’événement. par exemple, est l’événement synchrone ou asynchrone et s’agit-il d’un événement d’arrêt.
 
 ## <a name="see-also"></a>Voir aussi

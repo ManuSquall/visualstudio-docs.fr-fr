@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un champ, autrement dit, une description d’un symbole ou d’un type.
 title: IDebugField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869763"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151842"
 ---
 # <a name="idebugfield"></a>IDebugField
 Cette interface représente un champ, autrement dit, une description d’un symbole ou d’un type.
@@ -49,7 +50,7 @@ IDebugField : IUnknown
 |[Égal](../../../extensibility/debugger/reference/idebugfield-equal.md)|Compare deux champs.|
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Obtient des informations indépendantes du type sur le symbole ou le type.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un type est équivalent à un langage C `typedef` .
 
  Dans l’exemple de langage C++ suivant, `weather` est un type de classe et `sunny` et sont des `stormy` symboles :

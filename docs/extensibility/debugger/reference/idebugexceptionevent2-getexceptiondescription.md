@@ -1,4 +1,5 @@
 ---
+description: Obtient une description affichable de l’exception.
 title: 'IDebugExceptionEvent2 :: GetExceptionDescription | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4454d9c77cad2050c260d0fbd86764b6bf703403
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 398b03161a00d14c21367a05607f611d1fc1b9c8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933260"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152869"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 Obtient une description affichable de l’exception.
@@ -43,7 +44,7 @@ int GetExceptionDescription(
 `pbstrDescription`\
 à Retourne une description affichable de l’exception.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

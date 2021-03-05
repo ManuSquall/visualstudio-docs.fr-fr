@@ -1,4 +1,5 @@
 ---
+description: Obtient le point d’arrêt en attente qui a provoqué l’erreur.
 title: 'IDebugErrorBreakpoint2 :: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50bed9b3bbfcfce660455a3e62676593d6429b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62863588919f6b49f4822452c9d08a82f5693cc5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946863"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153168"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 Obtient le point d’arrêt en attente qui a provoqué l’erreur.
@@ -43,7 +44,7 @@ int GetPendingBreakpoint (
 `ppPendingBreakpoint`\
 à Retourne un objet [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) qui représente le point d’arrêt en attente qui n’a pas pu être lié.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

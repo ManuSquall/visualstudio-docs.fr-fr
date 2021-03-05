@@ -1,4 +1,5 @@
 ---
+description: Obtient l’expression d’origine.
 title: IDebugExpressionEvaluationCompleteEvent2::GetExpression
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -17,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 873fd4236b627d93bce4029ef36861a720c19828
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0934e7674aeacdd923ef83975918a162fb127e5a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930432"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152622"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 Obtient l’expression d’origine.
@@ -45,7 +46,7 @@ int GetExpression(
 `ppExpr`\
 à Retourne un objet [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) qui représente l’expression analysée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
