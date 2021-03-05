@@ -1,4 +1,5 @@
 ---
+description: Récupère le modificateur d’accès d’un membre de classe.
 title: IDiaSymbol::get_access | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a25d2eb12529461a9787deadf3f3babff6b6cbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 691af7faecf964bf80fc13a8b4b50f079f16f3fb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863668"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156607"
 ---
 # <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 Récupère le modificateur d’accès d’un membre de classe.
@@ -35,7 +36,7 @@ HRESULT get_access (
 
 à Retourne une valeur de l’énumération d' [énumération CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) qui spécifie le modificateur d’accès d’un membre de classe.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

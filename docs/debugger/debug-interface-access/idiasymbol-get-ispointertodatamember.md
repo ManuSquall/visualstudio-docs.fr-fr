@@ -1,4 +1,5 @@
 ---
+description: Spécifie si ce symbole est un pointeur vers un membre de données.
 title: IDiaSymbol::get_isPointerToDataMember | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 847b7f933af7687e0bcfd6f140a10a05ab091bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45dba4978f4ff06b77bb9216cc836e8eaec9f0e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854051"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156089"
 ---
 # <a name="idiasymbolget_ispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
 Spécifie si ce symbole est un pointeur vers un membre de données.
@@ -32,7 +33,7 @@ HRESULT get_isPointerToDataMember(
 
 à Pointeur vers un `BOOL` qui spécifie si ce symbole est un pointeur vers un membre de données.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

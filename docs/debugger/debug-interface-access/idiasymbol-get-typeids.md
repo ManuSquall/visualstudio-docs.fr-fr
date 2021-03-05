@@ -1,4 +1,5 @@
 ---
+description: Récupère un tableau des valeurs d’identificateur de type spécifiques au compilateur pour ce symbole.
 title: IDiaSymbol::get_typeIds | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31cff55617e21c8ed750800fec982f2b1492d977
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04a39af21ebb8a409656bd8b8ae0b4323da33c60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155613"
 ---
 # <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 Récupère un tableau des valeurs d’identificateur de type spécifiques au compilateur pour ce symbole.
@@ -45,7 +46,7 @@ dans Taille de la mémoire tampon pour stocker les données.
 
 à Tableau à remplir avec les identificateurs de type.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

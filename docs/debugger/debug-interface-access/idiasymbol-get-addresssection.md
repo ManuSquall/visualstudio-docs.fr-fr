@@ -1,4 +1,5 @@
 ---
+description: Récupère la partie de section d’un emplacement d’adresse.
 title: IDiaSymbol::get_addressSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 274b2e4820c78618df8f048cd3607a9ec9436500
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e0b6554011a29a7b90d1d7c55deefced01b27c3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863612"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156586"
 ---
 # <a name="idiasymbolget_addresssection"></a>IDiaSymbol::get_addressSection
 Récupère la partie de section d’un emplacement d’adresse. Utilisez lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsStatic` .
@@ -35,13 +36,13 @@ HRESULT get_addressSection (
 
 à Retourne la partie de la section d’un emplacement d’adresse.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Pour les membres statiques situés dans une DLL externe, la section retournée par cette méthode peut être 0, car cette méthode s’appuie sur l’obtention de l’adresse virtuelle du membre. Les adresses virtuelles ne sont valides que si la méthode [IDiaSession ::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) de l’interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) a été appelée avec un paramètre différent de zéro spécifiant l’adresse de chargement de la dll.
 
  Pour récupérer la partie offset d’une adresse, appelez la méthode [IDiaSymbol :: get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) .

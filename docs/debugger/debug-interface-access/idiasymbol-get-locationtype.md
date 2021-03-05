@@ -1,4 +1,5 @@
 ---
+description: Récupère le type d’emplacement d’un symbole de données.
 title: IDiaSymbol::get_locationType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1419f8e26b3541ad648668b95b6d3316de3d7b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a4ef7d60db3eacc7f87699e8c6e20b93e56bcd4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853911"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156019"
 ---
 # <a name="idiasymbolget_locationtype"></a>IDiaSymbol::get_locationType
 Récupère le type d’emplacement d’un symbole de données.
@@ -35,7 +36,7 @@ HRESULT get_locationType (
 
 à Retourne une valeur de l’énumération d' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) qui spécifie le type d’emplacement d’un symbole de données, tel que `static` ou `local` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

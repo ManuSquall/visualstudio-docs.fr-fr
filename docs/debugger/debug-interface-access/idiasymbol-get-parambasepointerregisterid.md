@@ -1,4 +1,5 @@
 ---
+description: Récupère l’ID du Registre qui contient un pointeur de base vers les paramètres.
 title: IDiaSymbol::get_paramBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f2ea60722775d706bdbf4753c9dd8d6e0b18b20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 25430f835ffedce3fa890c189cabc358f160a4ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862828"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155858"
 ---
 # <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 Récupère l’ID du Registre qui contient un pointeur de base vers les paramètres. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction` .
@@ -35,7 +36,7 @@ HRESULT get_paramBasePointerRegisterId (
 
 à Retourne l’ID du Registre qui contient un pointeur de base vers les paramètres.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

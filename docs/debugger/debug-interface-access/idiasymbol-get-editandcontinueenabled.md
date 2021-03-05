@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si le module a été compilé avec le commutateur de compilateur/Z7,/Zi,/ZI (format des informations de débogage)).
 title: IDiaSymbol::get_editAndContinueEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4168ab7ba3351dc8abe5f9c781fccea881fb7df0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ead107b051dd898b549ee25f800a8b8d2e83973a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854352"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156348"
 ---
 # <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Récupère un indicateur qui spécifie si le module a été compilé avec le commutateur de compilateur [/Z7,/Zi,/ZI (format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format) .
@@ -35,7 +36,7 @@ HRESULT get_editAndContinueEnabled (
 
 à Retourne `TRUE` si Modifier & continuer a été activé lors de la compilation ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

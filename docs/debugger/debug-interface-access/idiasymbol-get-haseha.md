@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la fonction contient une gestion des exceptions asynchrones (structurées).
 title: IDiaSymbol::get_hasEHa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc96412402202f0e6e20c85778f14b6be444d9bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d944cc5fc190be0917016adb14febf74162a0ca4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863381"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156313"
 ---
 # <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
 Récupère un indicateur qui spécifie si la fonction contient une gestion des exceptions asynchrones (structurées).
@@ -35,13 +36,13 @@ HRESULT get_hasEHa(
 
 à Retourne `TRUE` si la fonction a une gestion des exceptions asynchrone ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Il est possible de mélanger la gestion asynchrone ou structurée des exceptions avec la gestion des exceptions de style C++, mais elle nécessite un commutateur de compilateur spécifique,/EHa, pour l’activer.
 
 ## <a name="requirements"></a>Configuration requise

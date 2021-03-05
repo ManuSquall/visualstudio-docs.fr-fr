@@ -1,4 +1,5 @@
 ---
+description: Récupère l’identificateur de symbole de forme de table virtuelle du symbole.
 title: IDiaSymbol::get_virtualTableShapeId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af945892bfc99e86e30457084481c8675804ffad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 195503d4d44062d7d1e60c907d70dac4e9264e37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862429"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155501"
 ---
 # <a name="idiasymbolget_virtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 Récupère l’identificateur de symbole de forme de table virtuelle du symbole.
@@ -35,13 +36,13 @@ HRESULT get_virtualTableShapeId (
 
 à Retourne l’ID de symbole de forme de table virtuelle du symbole.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’identificateur est une valeur unique créée par le kit de développement logiciel (SDK) DIA pour marquer tous les symboles comme étant uniques.
 
 ## <a name="see-also"></a>Voir aussi

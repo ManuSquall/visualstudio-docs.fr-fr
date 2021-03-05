@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la classe ou la méthode est sealed.
 title: IDiaSymbol::get_sealed | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03447b1b0b8d5b5a47db61cd75c8857508e3ab40
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfca3d05cdab630e029446ba1dfe80aea8e5b46c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862716"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155781"
 ---
 # <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
 Récupère un indicateur qui spécifie si la classe ou la méthode est sealed.
@@ -35,13 +36,13 @@ HRESULT get_sealed(
 
 à Retourne `TRUE` si la classe ou la méthode est sealed ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Une classe sealed ne peut pas être utilisée comme une classe de base. Une méthode sealed ne peut pas être substitué.
 
 ## <a name="requirements"></a>Configuration requise

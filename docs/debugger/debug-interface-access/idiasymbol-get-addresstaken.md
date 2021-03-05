@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui indique si un autre symbole fait référence à l’adresse de ce symbole.
 title: IDiaSymbol::get_addressTaken | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2ae3ecac3e173d190f7393946dd07e4633b15b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2db653509b0afa40f3b59e1a4a6232763da6ef1f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156565"
 ---
 # <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 Récupère un indicateur qui indique si un autre symbole fait référence à l’adresse de ce symbole.
@@ -35,7 +36,7 @@ HRESULT get_addressTaken (
 
 à Retourne `TRUE` si un autre symbole fait référence à cette adresse ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

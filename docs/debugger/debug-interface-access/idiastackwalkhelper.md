@@ -1,4 +1,5 @@
 ---
+description: Facilite le parcours de la pile à l’aide du fichier de base de données de débogage de programme (. pdb).
 title: IDiaStackWalkHelper | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b84661f5cd51da17cf20577490b2fe458e71ef71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb014ebf703a0775e4f18208bc17d74a3fa29f12
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863738"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156740"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Facilite le parcours de la pile à l’aide du fichier de base de données de débogage de programme (. pdb).
@@ -45,7 +46,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Retourne le bloc de données PDATA associé à l’adresse virtuelle spécifiée.|
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Récupère l’adresse virtuelle de début d’un exécutable, en fonction d’une adresse virtuelle à un endroit quelconque dans l’espace mémoire de l’exécutable.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette interface est appelée par le code DIA pour obtenir des informations sur l’exécutable afin de construire une liste de frames de pile pendant l’exécution du programme.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

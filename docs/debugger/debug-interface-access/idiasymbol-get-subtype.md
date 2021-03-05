@@ -1,4 +1,5 @@
 ---
+description: Récupère le sous-type.
 title: IDiaSymbol::get_subType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b5043404e7100af1b62e9aeea3f03f80d42d1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4f8a2e020558c887dc6dc8aff7ebb626b1b37eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862695"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155767"
 ---
 # <a name="idiasymbolget_subtype"></a>IDiaSymbol::get_subType
 Récupère le sous-type.
@@ -32,7 +33,7 @@ HRESULT get_subType(
 
 à Pointeur vers le sous-type.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi

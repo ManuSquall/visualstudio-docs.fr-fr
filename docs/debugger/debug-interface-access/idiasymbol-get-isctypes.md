@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si le fichier de symboles contient des types C.
 title: IDiaSymbol::get_isCTypes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c65b9e054f56c02c228c2e8b767c8c852f86d51f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0931223f8932a379a8db9aba6d1dea41a31b50f1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854114"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156208"
 ---
 # <a name="idiasymbolget_isctypes"></a>IDiaSymbol::get_isCTypes
 Récupère un indicateur qui spécifie si le fichier de symboles contient des types C.
@@ -35,13 +36,13 @@ HRESULT get_isCTypes(
 
 à Retourne `TRUE` si le fichier de symboles contient des types C ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est disponible à partir du `SymTagExe` type de symbole (consultez [exe](../../debugger/debug-interface-access/exe.md)).
 
 ## <a name="requirements"></a>Configuration requise

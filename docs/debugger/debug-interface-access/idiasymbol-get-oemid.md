@@ -1,4 +1,5 @@
 ---
+description: Récupère la valeur d’ID OEM (Original Equipment Manufacturer) du symbole.
 title: IDiaSymbol::get_oemId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85638411f7ca1da965993ffb41d98cfdbfb4198a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a7bde81aadd179e6b09b2e46e7f0789a7433232
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853771"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155914"
 ---
 # <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
 Récupère la valeur d’ID OEM (Original Equipment Manufacturer) du symbole.
@@ -35,13 +36,13 @@ HRESULT get_oemId (
 
 à Retourne une valeur unique qui identifie un OEM.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété s’applique uniquement aux symboles dont le type d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) est `SymTagCustomType` .
 
 ## <a name="see-also"></a>Voir aussi

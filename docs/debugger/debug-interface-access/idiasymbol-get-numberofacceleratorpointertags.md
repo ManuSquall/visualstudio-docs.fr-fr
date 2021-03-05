@@ -1,4 +1,5 @@
 ---
+description: Retourne le nombre de balises de pointeur d’accélérateur dans une fonction stub C++ AMP.
 title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a46f42e83587954dce158bdbd8b3bc0ae4cae749
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d428ea0a4837d8a1ddf79e6749d852279bb1c115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862891"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155928"
 ---
 # <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 Retourne le nombre de balises de pointeur d’accélérateur dans une fonction stub C++ AMP.
@@ -32,10 +33,10 @@ HRESULT get_numberOfAcceleratorPointerTags(
 
 à Pointeur vers un `DWORD` qui contient le nombre de balises de pointeur d’accélérateur dans une fonction stub C++ amp.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est appelée sur une `IDiaSymbol` interface qui correspond à une C++ amp fonction stub d’accélérateur.
 
 ## <a name="see-also"></a>Voir aussi

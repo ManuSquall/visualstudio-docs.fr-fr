@@ -1,4 +1,5 @@
 ---
+description: 'Conserve le contexte de la pile entre les appels de la méthode IDiaFrameData :: Execute).'
 title: IDiaStackWalkFrame | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05db065b047629e1eaac49e5f6aeeb05eed4307e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87fb733057272773d7cead9ceadbfe20020baf58
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863822"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156859"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Conserve le contexte de la pile entre les appels de la méthode [IDiaFrameData :: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) .
@@ -39,7 +40,7 @@ IDiaStackWalkFrame : IUnknown
 |[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Recherche l’adresse de retour de la fonction la plus proche dans le frame de pile spécifié.|
 |[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Recherche dans le frame de pile spécifié une adresse de retour à l’adresse spécifiée ou à proximité de celle-ci.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette interface est utilisée pendant l’exécution du programme pour lire et écrire des registres, ainsi que pour accéder à la mémoire et rechercher les adresses de retour.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

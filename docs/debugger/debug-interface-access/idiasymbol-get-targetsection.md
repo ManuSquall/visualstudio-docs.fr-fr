@@ -1,4 +1,5 @@
 ---
+description: Récupère la section d’adresse d’une cible de thunk.
 title: IDiaSymbol::get_targetSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76df469bb02f847827fd95c53ef2924e54185428
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d72ce83ada785cc598df123929b54a3cc8b6d7b2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853533"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155669"
 ---
 # <a name="idiasymbolget_targetsection"></a>IDiaSymbol::get_targetSection
 Récupère la section d’adresse d’une cible de thunk.
@@ -35,7 +36,7 @@ HRESULT get_targetSection (
 
 à Partie de section d’une adresse cible de thunk.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

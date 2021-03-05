@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si la directive de préprocesseur pour une mémoire tampon sécurisée est utilisée.
 title: IDiaSymbol::get_isSafeBuffers | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c32382468c4d67dae9e94a3fc9882fd61213cf00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9fd2114a1e4272296e97fa498c5c9137b49adeb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99863122"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156054"
 ---
 # <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Récupère un indicateur qui spécifie si la directive de préprocesseur pour une mémoire tampon sécurisée est utilisée. Utilisez lorsque l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) a la valeur `SymTagFunction` .
@@ -35,7 +36,7 @@ HRESULT get_isSafeBuffers(
 
 à Retourne `TRUE` si le pointeur utilise une directive de préprocesseur pour une mémoire tampon sécurisée ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

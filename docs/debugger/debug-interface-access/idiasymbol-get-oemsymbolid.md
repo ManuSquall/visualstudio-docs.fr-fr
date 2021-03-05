@@ -1,4 +1,5 @@
 ---
+description: Récupère la valeur d’ID du symbole OEM (Original Equipment Manufacturer).
 title: IDiaSymbol::get_oemSymbolId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bec0bcde96bbb55129cf3549afa48707e236ddeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd7ce01dea21a8d9fe2886fb5fe7b4277f458636
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862849"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155921"
 ---
 # <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 Récupère la valeur d’ID du symbole OEM (Original Equipment Manufacturer).
@@ -35,13 +36,13 @@ HRESULT get_oemSymbolId (
 
 à Retourne un ID de symbole assigné de manière interne par un OEM.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’identificateur est une valeur unique créée par le kit de développement logiciel (SDK) DIA pour marquer tous les symboles comme étant uniques.
 
  Cette propriété s’applique uniquement aux symboles dont le type d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) est `SymTagCustomType` .

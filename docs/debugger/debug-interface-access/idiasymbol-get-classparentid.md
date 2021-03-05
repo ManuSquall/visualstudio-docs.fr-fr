@@ -1,4 +1,5 @@
 ---
+description: Récupère l’identificateur parent de la classe du symbole.
 title: IDiaSymbol::get_classParentId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a965d04bf6cd41bcd19c2b5e987f610149f601c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95581d74b1ebfdc837383b96398ba1efb1d21120
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854485"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156439"
 ---
 # <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 Récupère l’identificateur parent de la classe du symbole.
@@ -35,13 +36,13 @@ HRESULT get_classParentId (
 
 à Retourne l’ID de la classe parente du symbole.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’identificateur est une valeur unique créée par le kit de développement logiciel (SDK) DIA pour marquer tous les symboles comme étant uniques.
 
 ## <a name="requirements"></a>Configuration requise

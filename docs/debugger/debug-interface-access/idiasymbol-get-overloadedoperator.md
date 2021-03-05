@@ -1,4 +1,5 @@
 ---
+description: Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des opérateurs surchargés.
 title: IDiaSymbol::get_overloadedOperator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b42c1c6a5a05d18ec4846b950bce46f4fa26787
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c30cfd825379e88293aa8f32b9b994798ea5f8a8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862835"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155865"
 ---
 # <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des opérateurs surchargés.
@@ -35,7 +36,7 @@ HRESULT get_overloadedOperator (
 
 à Retourne `TRUE` si le type de données défini par l’utilisateur a des opérateurs surchargés ; sinon, retourne `FALSE` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]

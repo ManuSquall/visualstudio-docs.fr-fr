@@ -1,4 +1,5 @@
 ---
+description: Récupère une partie ou l’intégralité d’un nom non décoré pour un nom décoré C++ (liaison).
 title: IDiaSymbol::get_undecoratedNameEx | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d34c362a64107bff94e271c01b57d45d09cf8d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35e1dcb2704b4a8e76fe8d7ffb172f0846fbdc78
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862548"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155529"
 ---
 # <a name="idiasymbolget_undecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Récupère une partie ou l’intégralité d’un nom non décoré pour un nom décoré C++ (liaison).
@@ -40,13 +41,13 @@ dans Spécifie une combinaison d’indicateurs qui contrôlent ce qui est retour
 
 à Retourne le nom non décoré pour un nom décoré C++.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `undecorateOptions`Peut être une combinaison des indicateurs suivants.
 
 > [!NOTE]

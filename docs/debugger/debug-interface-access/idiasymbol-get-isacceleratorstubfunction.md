@@ -1,4 +1,5 @@
 ---
+description: Indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé pour un accélérateur qui correspond à un appel de parallel_for_each.
 title: IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc951b069342478301b0cf815d1c226f9f1da11
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 710622fdb8fb10d0357c060097f13bab3be7d05f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99854135"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102156215"
 ---
 # <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 Indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé pour un accélérateur qui correspond à un `parallel_for_each` appel.
@@ -32,7 +33,7 @@ HRESULT get_isAcceleratorStubFunction(
 
 à Pointeur vers un `BOOL` qui indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé pour un accélérateur qui correspond à un `parallel_for_each` appel.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
