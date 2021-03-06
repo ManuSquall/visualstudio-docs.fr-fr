@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Découvrez comment contacter votre administrateur d’abonnement pour obtenir de l’aide concernant des questions ou des problèmes.
-ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
-ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
+ms.openlocfilehash: 4eb17f5480b3839248d0968b6c20434c149bb756
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93289978"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250048"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
 Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre école, il est probable qu’il vous a été attribué par un administrateur d’abonnements ou par un « administrateur ».  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
@@ -33,7 +33,7 @@ Compte tenu de la taille et de la complexité de nombreuses organisations, vous 
 > **Super administrateurs :**  Pour définir l’adresse de messagerie à laquelle les demandes « contacter mon administrateur » sont envoyées, spécifiez cette adresse dans les préférences de l' [accord](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
+- [Prise en charge des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

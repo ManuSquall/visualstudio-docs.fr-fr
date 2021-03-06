@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 619f1f1cc99cbab425bc1bcb2bac181e09db8fc4
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684159"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250072"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de débogage à distance sur IIS dans Azure dans Visual Studio
 
@@ -52,7 +52,7 @@ Visual Studio 2019 est requis pour suivre les étapes décrites dans cet article
 Visual Studio 2017 est requis pour suivre les étapes décrites dans cet article.
 ::: moniker-end
 
-### <a name="network-requirements"></a>Configuration requise pour le réseau
+### <a name="network-requirements"></a>Conditions requises en matière de réseau
 
 Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Le débogage sur une connexion à latence élevée ou à faible bande passante, tel qu’Internet à distance ou sur Internet dans les différents pays, n’est pas recommandé et peut échouer ou être trop lent. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -79,13 +79,23 @@ Dans Visual Studio, vous pouvez rapidement publier et déboguer votre applicatio
 
 1. Dans Visual Studio, cliquez avec le bouton droit sur le nœud du projet et choisissez **publier**.
 
-    Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Cliquez sur **nouveau profil**.
+    Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Sélectionnez **nouveau** ou **nouveau profil**.
 
-1. Choisissez **Azure App service** dans la boîte de dialogue **publier** , sélectionnez **créer**, puis suivez les invites pour créer un profil.
+1. Créez un profil de publication.
 
-    Pour des instructions détaillées, consultez [Déployer une application web ASP.NET Core sur Azure avec Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    ::: moniker range=">=vs-2019"
+    Choisissez **Azure** dans la boîte de dialogue **publier** et sélectionnez **suivant**. Sélectionnez ensuite **Azure App service (Windows)**, puis **suivant** et suivez les invites pour créer un profil.
+
+    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="Déployer une application web ASP.NET Core sur Azure avec Visual Studio":::
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+
+    Choisissez **Azure App service** dans la boîte de dialogue **publier** , sélectionnez **créer**, puis suivez les invites pour créer un profil.
 
     ![Publier sur Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ::: moniker-end
+
+    Pour obtenir des instructions plus détaillées, consultez [déployer une application web ASP.net Core sur Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 1. Dans la fenêtre publier, choisissez **modifier la configuration** et basculez vers une configuration de débogage, puis choisissez **publier**.
 
@@ -106,6 +116,7 @@ Dans Visual Studio, vous pouvez rapidement publier et déboguer votre applicatio
 Vous pouvez créer une machine virtuelle Azure pour Windows Server, puis installer et configurer IIS et les autres composants logiciels requis. Cela prend plus de temps que le déploiement sur un Azure App Service et nécessite que vous suiviez les étapes restantes de ce didacticiel.
 
 Ces procédures ont été testées sur ces configurations de serveur :
+
 * Windows Server 2012 R2 et IIS 8
 * Windows Server 2016 et IIS 10
 * Windows Server 2019 et IIS 10
@@ -143,7 +154,7 @@ Lorsque vous téléchargez le logiciel, vous pouvez recevoir des demandes pour a
     > [!NOTE]
     > Si le système n’a pas de connexion Internet, obtenez et installez *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* avant d’installer le bundle d’hébergement .NET Core Windows Server.
 
-3. Redémarrez le système ou exécutez **net stop was /y** suivi de **net start w3svc** à partir d’une invite de commandes pour prendre en compte une modification de la variable système PATH.
+2. Redémarrez le système ou exécutez **net stop was /y** suivi de **net start w3svc** à partir d’une invite de commandes pour prendre en compte une modification de la variable système PATH.
 
 ## <a name="choose-a-deployment-option"></a>Choisir une option de déploiement
 

@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 854d3e23252e63d6330abd9f1704890d3b90ae36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 104927d42f7ec68e43686278042c0712bb3c875e
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908305"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250086"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
+
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous avez déployé votre application, puis attachez-la à votre application en cours d’exécution à partir de Visual Studio.
 
 ![Composants du débogueur distant](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
@@ -39,9 +40,10 @@ Visual Studio 2017 est requis pour suivre les étapes décrites dans cet article
 ::: moniker-end
 
 Ces procédures ont été testées sur ces configurations de serveur :
+
 * Windows Server 2012 R2 et IIS 8 (pour Windows Server 2008 R2, les étapes de serveur sont différentes)
 
-## <a name="network-requirements"></a>Configuration requise pour le réseau
+## <a name="network-requirements"></a>Conditions requises en matière de réseau
 
 Le débogueur distant est pris en charge sur Windows Server à partir de Windows Server 2008 Service Pack 2. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -130,10 +132,17 @@ Vous pouvez utiliser cette option pour créer un fichier de paramètres de publi
 
 Une fois l’application déployée, elle doit démarrer automatiquement. Si l’application ne démarre pas à partir de Visual Studio, démarrez l’application dans IIS.
 
-1. Dans la boîte de dialogue **paramètres** , activez le débogage en cliquant sur **suivant**, choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
+1. Basculez vers une configuration de débogage.
 
-    > [!IMPORTANT]
-    > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *web.config* lors de la publication.
+   ::: moniker range=">=vs-2019"
+   Choisissez **modifier** pour modifier le profil, puis choisissez **paramètres**. Choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Dans la boîte de dialogue **paramètres** , activez le débogage en cliquant sur **suivant**, choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *web.config* lors de la publication.
 
 1. Cliquez sur **Enregistrer** , puis republiez l’application.
 

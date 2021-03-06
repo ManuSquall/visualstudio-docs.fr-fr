@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 2500a540a4135517c65736d7a0f3d039c90cc71e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168859"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249746"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>Invite de commandes développeur et Developer PowerShell
 
@@ -55,11 +55,11 @@ Pour ouvrir Invite de commandes développeur ou Developer PowerShell dans Visual
 
    ![Élément de menu d’invite de commandes dans Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-### <a name="use-the-windows-start-menu"></a>Utiliser le menu Démarrer de Windows
+## <a name="use-the-windows-start-menu"></a>Utiliser le menu Démarrer de Windows
 
 Vous pouvez avoir plusieurs invites de commande, en fonction de la version de Visual Studio et de tous les kits de développement logiciel (SDK) et charges de travail supplémentaires que vous avez installés. Si les étapes suivantes ne fonctionnent pas, vous pouvez essayer de [localiser manuellement les fichiers sur votre ordinateur](#manually-locate-the-file) ou [de démarrer l’interpréteur de commandes à partir de Visual Studio](#start-the-shell-from-inside-visual-studio).
 
-#### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 1. Sélectionnez **Démarrer** ![ la touche de logo Windows sur le clavier.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) et faites défiler jusqu’à la lettre **V**.
 
@@ -71,7 +71,7 @@ Vous pouvez avoir plusieurs invites de commande, en fonction de la version de Vi
 
    ![Image GIF animée montrant le comportement de recherche sur Windows 10](./media/developer-command-prompt-for-vs/windows-10-search.gif)
 
-#### <a name="windows-81"></a>Windows 8.1
+### <a name="windows-81"></a>Windows 8.1
 
 1. Accédez à l’écran **Démarrer** en appuyant sur la touche de logo Windows ![Touche de logo Windows de votre clavier.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) de votre clavier, par exemple.
 
@@ -79,7 +79,7 @@ Vous pouvez avoir plusieurs invites de commande, en fonction de la version de Vi
 
 1. Choisissez **invite de commandes développeur pour vs 2019** ou **Developer PowerShell pour vs 2019**.
 
-#### <a name="windows-7"></a>Windows 7
+### <a name="windows-7"></a>Windows 7
 
 1. Choisissez **Démarrer** , puis développez **tous les programmes**.
 
@@ -89,11 +89,11 @@ Vous pouvez avoir plusieurs invites de commande, en fonction de la version de Vi
 
 Si vous avez installé d’autres kits de [développement logiciel (SDK) Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) ou [versions antérieures](https://developer.microsoft.com/windows/downloads/sdk-archive), vous pouvez voir des invites de commandes supplémentaires. Consultez la documentation relatives aux divers outils afin de déterminer la version de l'invite de commandes que vous devez utiliser.
 
-### <a name="manually-locate-the-file"></a>Localiser manuellement le fichier
+## <a name="manually-locate-the-file"></a>Localiser manuellement le fichier
 
 En règle générale, les raccourcis des shells que vous avez installés sont placés dans le dossier **menu Démarrer** de Visual Studio, par exemple dans *%ProgramData%\Microsoft\Windows\Start c:\ProgramData\Microsoft\Windows\Menu Studio 2019 \ Visual Studio Tools*. Toutefois, si la recherche de l’invite de commandes ne produit pas les résultats attendus, vous pouvez essayer de localiser manuellement les fichiers sur votre ordinateur.
 
-#### <a name="developer-command-prompt"></a>Invite de commandes développeur
+### <a name="developer-command-prompt"></a>Invite de commandes développeur
 
 Recherchez le nom du fichier d’invite de commandes, qui est *VsDevCmd.bat*, ou accédez au dossier Tools pour Visual Studio, tel que *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools* (le chemin change en fonction de la version, de l’édition et de l’emplacement de l’installation de Visual Studio).
 
@@ -112,7 +112,7 @@ Ou entrez la commande suivante dans la boîte de dialogue **exécuter** de Windo
 > [!TIP]
 > Vous devez modifier le chemin d’accès pour qu’il corresponde à votre installation de Visual Studio.
 
-#### <a name="developer-powershell"></a>PowerShell Developer
+### <a name="developer-powershell"></a>PowerShell Developer
 
 Recherchez un fichier de script PowerShell nommé *Launch-VsDevShell.ps1* ou accédez au dossier Tools pour Visual Studio, tel que *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools*. (Le chemin d’accès change en fonction de la version, de l’édition et de l’emplacement d’installation de Visual Studio.) Une fois que vous avez localisé le fichier PowerShell, exécutez-le en entrant la commande suivante à une invite Windows PowerShell ou PowerShell 6 :
 

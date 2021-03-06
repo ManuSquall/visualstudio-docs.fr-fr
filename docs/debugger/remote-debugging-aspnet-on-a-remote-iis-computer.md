@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a364289ded27879c74767f03e89b9ea7b9f604fc
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683080"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249836"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Débogage à distance ASP.NET Core sur un ordinateur IIS distant dans Visual Studio
 
@@ -40,7 +40,7 @@ Ces procédures ont été testées sur ces configurations de serveur :
 * Windows Server 2016 et IIS 10
 * Windows Server 2019 et IIS 10
 
-## <a name="network-requirements"></a>Configuration requise pour le réseau
+## <a name="network-requirements"></a>Conditions requises en matière de réseau
 
 Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Le débogage sur une connexion à latence élevée ou à faible bande passante, tel qu’Internet à distance ou sur Internet dans les différents pays, n’est pas recommandé et peut échouer ou être trop lent. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -129,10 +129,17 @@ Vous pouvez utiliser cette option pour créer un fichier de paramètres de publi
 
 Une fois l’application déployée, elle doit démarrer automatiquement. Si l’application ne démarre pas à partir de Visual Studio, démarrez l’application dans IIS pour vérifier qu’elle s’exécute correctement. Par ASP.NET Core, vous devez également vous assurer que le champ pool d’applications pour **DefaultAppPool** est défini sur **aucun code managé**.
 
-1. Dans la boîte de dialogue **paramètres** , activez le débogage en cliquant sur **suivant**, choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
+1. Basculez vers une configuration de débogage.
 
-    > [!IMPORTANT]
-    > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *web.config* lors de la publication.
+   ::: moniker range=">=vs-2019"
+   Choisissez **modifier** pour modifier le profil, puis choisissez **paramètres**. Choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Dans la boîte de dialogue **paramètres** , activez le débogage en cliquant sur **suivant**, choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *web.config* lors de la publication.
 
 1. Cliquez sur **Enregistrer** , puis republiez l’application.
 
@@ -150,13 +157,13 @@ Vous pouvez utiliser cette option pour déployer votre application si vous souha
 
 4. Sélectionnez le **site Web par défaut**, choisissez **paramètres de base**, puis définissez le **chemin d’accès physique** sur **C:\Publish**.
 
-4. Cliquez avec le bouton droit sur le nœud **Site web par défaut** et sélectionnez **Ajouter une application**.
+5. Cliquez avec le bouton droit sur le nœud **Site web par défaut** et sélectionnez **Ajouter une application**.
 
-5. Définissez le champ **alias** sur **MyASPApp**, acceptez le pool d’applications par défaut (**DefaultAppPool**) et définissez le **chemin d’accès physique** sur **C:\Publish**.
+6. Définissez le champ **alias** sur **MyASPApp**, acceptez le pool d’applications par défaut (**DefaultAppPool**) et définissez le **chemin d’accès physique** sur **C:\Publish**.
 
-6. Sous **connexions**, sélectionnez **pools d’applications**. Ouvrez **DefaultAppPool** et définissez le champ pool d’applications sur **aucun code managé**.
+7. Sous **connexions**, sélectionnez **pools d’applications**. Ouvrez **DefaultAppPool** et définissez le champ pool d’applications sur **aucun code managé**.
 
-7. Cliquez avec le bouton droit sur le nouveau site dans le gestionnaire des services Internet, choisissez **modifier les autorisations**, puis assurez-vous que IUSR, IIS_IUSRS ou l’utilisateur configuré pour accéder à l’application Web est un utilisateur autorisé avec des droits lecture & exécuter.
+8. Cliquez avec le bouton droit sur le nouveau site dans le gestionnaire des services Internet, choisissez **modifier les autorisations**, puis assurez-vous que IUSR, IIS_IUSRS ou l’utilisateur configuré pour accéder à l’application Web est un utilisateur autorisé avec des droits lecture & exécuter.
 
     Si vous ne voyez pas l’un de ces utilisateurs avec un accès, passez en revue les étapes permettant d’ajouter IUSR en tant qu’utilisateur avec des droits lire & exécuter.
 

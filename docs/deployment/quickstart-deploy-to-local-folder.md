@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23ef2036af7b93ee6eeaaa14cb8733a4e0ced638
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927429"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249506"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Déployer une application dans un dossier à l’aide de Visual Studio
 
@@ -46,25 +46,34 @@ Vous pouvez utiliser l’outil de **publication** pour publier des applications 
 
 1. Dans la fenêtre **publier** , sélectionnez **dossier**.
 
-    ![Choisir un dossier en tant que cible de publication](../deployment/media/quickstart-publish-folder-new.png "Choisir un dossier")
+   ![Choisir un dossier en tant que cible de publication](../deployment/media/quickstart-publish-folder-new.png "Choisir un dossier")
 
-::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2019"
 
-4. Si vous déployez une application Windows .NET Core 3,1, ou une version plus récente, vous devrez peut-être sélectionner **dossier** dans la fenêtre **cible spécifique** .
+   Si vous déployez une application Windows .NET Core 3,1, ou une version plus récente, vous devrez peut-être sélectionner **dossier** dans la fenêtre **cible spécifique** .
 
-![Choisir un dossier comme cible spécifique](../deployment/media/quickstart-publish-folder-targets.png "Choisir une cible spécifique")
+   ![Choisir un dossier comme cible spécifique](../deployment/media/quickstart-publish-folder-targets.png "Choisir une cible spécifique")
 
-5. Si vous souhaitez publier une application Windows .NET Core 3,1, ou une version plus récente, avec ClickOnce, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   Si vous souhaitez publier une application Windows .NET Core 3,1, ou une version plus récente, avec ClickOnce, consultez [déployer une application Windows .net à l’aide de ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+   ::: moniker-end
 
- ::: moniker-end
+1. Entrez un chemin d’accès ou sélectionnez **Parcourir** pour spécifier un dossier.
 
-4. Entrez un chemin d’accès ou sélectionnez **Parcourir** pour spécifier un dossier.
+   ![Spécifier le chemin d’accès au dossier](../deployment/media/quickstart-publish-folder-path.png "Choisir un dossier")
 
-    ![Spécifier le chemin d’accès au dossier](../deployment/media/quickstart-publish-folder-path.png "Choisir un dossier")
+   ::: moniker range=">=vs-2019"
+   Cliquez sur **Terminer** pour enregistrer le profil.
 
-1. Sélectionnez **Publier**. Visual Studio génère le projet et le publie dans le dossier spécifié. Le volet **Publier** des propriétés de projet apparaît, affichant un récapitulatif du profil.
+   ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
-    ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-folder-summary.png)
+1. Sélectionnez **Publier**. Visual Studio génère le projet et le publie dans le dossier spécifié.
+
+   ::: moniker range="vs-2017"
+   Le volet **Publier** des propriétés de projet apparaît, affichant un récapitulatif du profil.
+
+   ![Volet de propriétés Publier affichant un récapitulatif du profil](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
 1. Pour configurer les paramètres de déploiement, sélectionnez **modifier** dans le résumé du profil de publication et sélectionnez l’onglet **paramètres** .
 

@@ -4,27 +4,27 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 03/02/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: En savoir plus sur la responsabilité des administrateurs pour suivre les attributions d’utilisateurs et traiter les commandes.
-ms.openlocfilehash: 90de1c426a387cb27fe35990394a41d34c1172ce
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467412"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249491"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Effectuer le suivi de l’attribution des utilisateurs et traiter les commandes
-L’administrateur des abonnements Visual Studio est censé suivre l’utilisation de Visual Studio et traiter les commandes pour toute augmentation de l’utilisation selon la planification indiquée dans le contrat de licence en volume ou le contrat de produits et services Microsoft. Le nouveau portail d’administration des abonnements Visual Studio facilite cette opération grâce à un dispositif de suivi utile qui affiche vos licences disponibles et utilisées.
+L’administrateur des abonnements Visual Studio doit suivre l’utilisation de Visual Studio et traiter les commandes pour toute augmentation de l’utilisation selon la planification dans le contrat de licence en volume ou le contrat de produits et services Microsoft. Le nouveau portail d’administration des abonnements Visual Studio facilite cette opération grâce à un dispositif de suivi utile qui affiche vos licences disponibles et utilisées.
 
 ## <a name="maximum-usage"></a>Utilisation maximale
 **L’obligation de votre société d’acheter des abonnements Visual Studio prend effet immédiatement dans les cas suivants :**
 - Une licence est affectée à un utilisateur **OU**
 - Un utilisateur interagit avec le logiciel Visual Studio.
 
-Votre obligation d’effectuer l’achat est déterminée par le nombre maximal d’abonnements que vous affectez aux utilisateurs. Ce niveau d’affectation d’abonnements constitue la limite des affectations d’utilisateurs quotidiennes ou des interactions des utilisateurs avec le logiciel Visual Studio, la valeur la plus élevée l’emportant.
+Votre obligation d’effectuer l’achat est déterminée par le nombre maximal d’abonnements que vous affectez aux utilisateurs. Ce niveau d’affectation d’abonnement est le point le plus élevé dans les attributions d’utilisateurs quotidiennes ou dans les individus utilisant le logiciel Visual Studio, selon la valeur la plus élevée.
 
-- L’affectation d’abonnements Visual Studio à des utilisateurs supplémentaires entraîne l’augmentation du niveau d’utilisation maximal.  
+- L’attribution d’abonnements Visual Studio à davantage d’utilisateurs augmente le niveau d’utilisation maximal.  
 - Les administrateurs des abonnements Visual Studio peuvent modifier le niveau d’abonnement attribué pour une personne, ce qui constituerait une baisse d’une attribution et une augmentation dans une autre. Quand vous réduisez le niveau d’abonnement attribué d’un abonné, la personne doit immédiatement cesser d’utiliser tout ce qui se trouve uniquement dans l’abonnement de niveau supérieur et le désinstaller. 
 - Les administrateurs des abonnements Visual Studio peuvent réattribuer des abonnements d’un abonné à un autre si 90 jours se sont écoulés depuis l’attribution d’origine. 
     > [!NOTE]
@@ -32,10 +32,13 @@ Votre obligation d’effectuer l’achat est déterminée par le nombre maximal 
 - Pour vous aider à surveiller l’utilisation maximale de votre organisation, il existe un rapport d' [utilisation maximal](maximum-usage.md) dans le [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio. 
 
 ## <a name="monthly-subscriptions-open-license-or-open-value"></a>Abonnements mensuels, licence Open ou Open Value
-Vous pouvez assigner des abonnements par le biais de programmes tels que Open License et Open Value ou via Visual Studio Marketplace sur une base mensuelle. Dans ce cas, vous devez traiter votre commande d’utilisateurs supplémentaires au cours du mois où les utilisateurs (employés ou prestataires externes) commencent à interagir avec les logiciels sous licence Visual Studio.
+Vous pouvez assigner des abonnements par le biais de programmes tels que Open License et Open Value ou via Visual Studio Marketplace sur une base mensuelle. Si c’est le cas, vous devez traiter votre commande pour obtenir plus d’utilisateurs au cours du mois où les utilisateurs (employés ou entrepreneurs externes) commencent à interagir avec les logiciels sous licence Visual Studio.
 
-## <a name="enterprise-mpsa-and-select-agreements"></a>Contrats Entreprise, MPSA et Select
-Les contrats Entreprise (EA), MPSA et Select Plus Microsoft vous donnent toute la souplesse nécessaire pour utiliser et concéder sous licence le logiciel Visual Studio au fil du temps. Les administrateurs Visual Studio doivent effectuer un True-Up annuel pour mettre leurs licences logicielles à l’usage maximal établi au cours de la période du contrat.
+## <a name="enterprise-mpsa-and-select-agreements"></a>Contrats Enterprise, MPSA et SELECT
+Les contrats entreprise Microsoft, MPSA et SELECT plus vous donnent la flexibilité nécessaire pour utiliser et attribuer une licence à Visual Studio dans le temps. Les administrateurs Visual Studio doivent effectuer un True-Up annuel pour mettre leurs licences logicielles à l’usage maximal établi au cours de la période du contrat.
+
+## <a name="resources"></a>Ressources
+- Vous avez besoin d’aide ?  Contactez le support pour les [abonnements](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

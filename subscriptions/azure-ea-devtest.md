@@ -1,22 +1,22 @@
 ---
-title: Offre Azure Accord Entreprise DevTest
+title: Offre Azure Contrat Entreprise DevTest
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Découvrez comment tirer parti des tarifs spéciaux d’Azure DevTest disponibles pour les clients disposant d’un contrat entreprise
-ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9043a2d8f3ab069bcc02375089780d16d1e8a18b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904465"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249466"
 ---
-# <a name="azure-enterprise-agreement-devtest-offer"></a>Offre Azure Accord Entreprise DevTest
+# <a name="azure-enterprise-agreement-devtest-offer"></a>Offre Azure Contrat Entreprise DevTest
 
-Cette offre, qui fait partie de la Accord Entreprise, est destinée aux équipes d’abonnés Visual Studio actifs pour exécuter des charges de travail de développement/test sur Microsoft Azure, offrant ainsi des tarifs réduits sur les machines virtuelles Windows et l’accès aux images exclusives de la Galerie Azure. Cette offre est limitée à l’utilisation uniquement du développement et du test et ne peut pas être utilisée en production.  
+Cette offre, qui fait partie de la Contrat Entreprise, est destinée aux équipes d’abonnés Visual Studio actifs pour exécuter des charges de travail de développement/test sur Microsoft Azure, offrant ainsi des tarifs réduits sur les machines virtuelles Windows et l’accès aux images exclusives de la Galerie Azure. Cette offre est limitée à l’utilisation uniquement du développement et du test et ne peut pas être utilisée en production.  
 
 L’utilisation des offres est un processus en deux étapes :
 1. Les offres doivent être activées par un administrateur dans le portail EA.
@@ -32,14 +32,17 @@ Pour activer les offres :
 0. Pointez sur le nom du compte. 
 0. Cliquez sur l’icône de **modification** (crayon) à l’extrême droite. 
 0. Cliquez sur la case à cocher **dev/test** .
-0. Cliquez sur **Enregistrer** .
+0. Cliquez sur **Enregistrer**.
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Créer des abonnements individuels au sein du compte
 Chaque abonné sur le compte peut créer un abonnement en procédant comme suit :
 1. Connectez-vous à [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Choisissez l’offre de **Enterprise dev/test** .
-0. Activez la case à cocher pour confirmer que l’abonnement est régi par le Accord Entreprise. 
-0. Cliquez sur **Achat** .  (Avec cette offre, vous n’achetez rien en fait.)
+0. Activez la case à cocher pour confirmer que l’abonnement est régi par le Contrat Entreprise. 
+0. Cliquez sur **Achat**.  (Avec cette offre, vous n’achetez rien en fait.)
+
+## <a name="resources"></a>Ressources
+- Vous avez besoin d’aide ?  Contactez le support pour les [abonnements](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

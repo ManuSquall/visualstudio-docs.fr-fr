@@ -3,15 +3,15 @@ title: Assigner des GUID spécifiques à des abonnés Visual Studio | Microsoft 
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 10/22/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent avoir un GUID d’abonnement spécifique aux abonnés
-ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467477"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249681"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Affecter des abonnements spécifiques dans le portail d’administration des abonnements Visual Studio
 
@@ -40,7 +40,7 @@ Pour effectuer l’exportation :
 
 Si vous avez déjà utilisé l’outil d’exportation, vous remarquerez que de nouveaux champs ont été ajoutés à la feuille de calcul produite.  Ceux-ci vous aideront à déterminer l’état de chaque abonnement et ceux que vous souhaitez attribuer aux utilisateurs.  
 
-- **État**de l’abonnement : ce champ indique « affecté » ou « non attribué ».  Si l’état d’un abonnement est « affecté », des informations sur l’utilisateur lui sont également associées, telles que le nom, l’adresse de messagerie, etc. 
+- **État** de l’abonnement : ce champ indique « affecté » ou « non attribué ».  Si l’état d’un abonnement est « affecté », des informations sur l’utilisateur lui sont également associées, telles que le nom, l’adresse de messagerie, etc. 
 - **État d’utilisation**: l’état d’utilisation indique « nouveau », ce qui signifie qu’il n’a jamais été affecté à un utilisateur, ou « utilisé », ce qui signifie qu’il a été affecté à un utilisateur à un moment donné.  
 
 Vous pouvez utiliser les valeurs de ces champs avec d’autres informations dans la feuille de calcul pour déterminer les abonnements que vous souhaitez attribuer à des utilisateurs individuels. Vous pouvez appliquer un filtre dans Excel pour affiner la liste par État, niveau d’abonnement, date d’expiration, etc. 
@@ -61,6 +61,9 @@ La dernière étape consiste à télécharger le modèle d' **Ajout en bloc** , 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q : Comment faire modifier l’abonnement actuellement attribué à un utilisateur individuel ?
 R : Si vous souhaitez modifier le GUID affecté à un utilisateur, vous devez d’abord supprimer l’abonnement de cet utilisateur.  Pour plus d’informations, consultez notre article sur la [suppression des abonnements](delete-license.md) pour plus d’informations.  Après avoir supprimé l’abonnement pour cet utilisateur, utilisez la procédure décrite ci-dessus pour exporter la liste et télécharger les nouvelles informations d’abonnement.  
+
+## <a name="resources"></a>Ressources
+- [Prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
