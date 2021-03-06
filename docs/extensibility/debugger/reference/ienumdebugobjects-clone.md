@@ -1,4 +1,5 @@
 ---
+description: Cette méthode retourne une copie de l’énumération IDebugObjects en cours sous la forme d’un objet distinct.
 title: 'IEnumDebugObjects :: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f051c1f0c64d99d4abac3c4466b1e9149ebb5cdc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca8a89f214ae3384d48051edf2f67a3f9e8ba68d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890784"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224731"
 ---
 # <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
 Cette méthode retourne une copie de l’énumération actuelle sous la forme d’un objet distinct.
@@ -43,10 +44,10 @@ int Clone(
 `ppEnum`\
 [out] Retourne une copie de cette énumération en tant qu'objet distinct.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La copie de l’énumération a le même État que l’original au moment où cette méthode est appelée. Toutefois, le de la copie et les États de l’original sont séparés et peuvent être modifiés individuellement.
 
 ## <a name="see-also"></a>Voir aussi

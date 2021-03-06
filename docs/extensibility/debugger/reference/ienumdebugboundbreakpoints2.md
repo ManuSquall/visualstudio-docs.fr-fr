@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les points d’arrêt liés associés à un point d’arrêt ou un événement lié à un point d’arrêt en attente.
 title: IEnumDebugBoundBreakpoints2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d52aad69397be315cf9c06b5f49a2c55d2fce28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e861465e2abf18a42af75d420dc58075d19ff253
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224991"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 Cette interface énumère les points d’arrêt liés associés à un point d’arrêt ou un événement lié à un point d’arrêt en attente.
@@ -54,7 +55,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio utilise les points d’arrêt liés représentés par cette interface pour mettre à jour l’affichage des points d’arrêt dans l’IDE.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

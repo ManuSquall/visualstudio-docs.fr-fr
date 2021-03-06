@@ -1,4 +1,5 @@
 ---
+description: Cette méthode réinitialise l’énumération des champs au premier élément.
 title: 'IEnumDebugFields :: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cbe3ecaf681a0fb88dab46b9c2dac2110b7beb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fedc24c3f51a2a4cbdfae9464f13791f9d8ec1d1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919676"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226603"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Cette méthode réinitialise l’énumération au premier élément.
@@ -38,10 +39,10 @@ int Reset();
 #### <a name="parameters"></a>Paramètres
  None
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Après l’appel de cette méthode, l’appel suivant à [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md) retourne le premier élément de l’énumération.
 
 ## <a name="see-also"></a>Voir aussi

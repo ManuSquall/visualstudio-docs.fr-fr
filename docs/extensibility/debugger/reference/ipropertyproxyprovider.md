@@ -1,4 +1,5 @@
 ---
+description: Cette interface fournit une interface de proxy permettant d’afficher et de modifier les données d’un objet.
 title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6082b06e6235a93b0e198d973b40efb728bd815
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d8d92f6d616d86b82a9f4efa443f459a082256e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962130"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225537"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Cette interface fournit une interface de proxy permettant d’afficher et de modifier les données d’un objet.
@@ -44,7 +45,7 @@ IPropertyProxyProvider : IUnknown
 ## <a name="remarks"></a>Notes
  Bien que l’EE implémente cette interface, l’implémentation de [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) est généralement gérée par [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Pour plus d’informations sur l’obtention de l’interface IEEVisualizerService [, consultez visualisation et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

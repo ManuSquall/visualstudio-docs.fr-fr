@@ -1,4 +1,5 @@
 ---
+description: Retourne le nombre d’éléments dans l’énumération des points d’arrêt d’erreur.
 title: 'IEnumDebugErrorBreakpoints2 :: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ff426a16a9dec71f809202a9ba0a70e9f2c4965
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32de3e1d6e154fd396dec0bf284853b0094258d5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897004"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226746"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 Retourne le nombre d’éléments dans l’énumération.
@@ -43,10 +44,10 @@ int GetCount(
 `pcelt`\
 à Retourne le nombre d’éléments dans l’énumération.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode ne fait pas partie de l’interface d’énumération com personnalisée qui spécifie que seules les `Next` `Clone` méthodes,, `Skip` et `Reset` doivent être implémentées.
 
 ## <a name="see-also"></a>Voir aussi

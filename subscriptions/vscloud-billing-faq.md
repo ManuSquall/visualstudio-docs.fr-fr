@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: 2c03871d11279b7c368ebd0c7012670fc92c9ee0
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572874"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249717"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 [Comparez les avantages des abonnements cloud et les prix](https://visualstudio.microsoft.com/vs/pricing/) afin de bien comprendre les avantages offerts par chaque abonnement Visual Studio. Découvrez les différences entre les abonnements standard et cloud de Visual Studio, obtenez des détails sur les avantages offerts aux abonnés et bien plus encore.
@@ -56,13 +56,13 @@ Quand vous augmentez la quantité payée ultérieurement, nous calculons égalem
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Q : Comment les frais d’abonnement cloud **annuels** sont-ils traités ?
 R : Lors de chaque achat, nous facturons immédiatement la quantité totale achetée. Les frais ne sont pas répartis sur l’année, et il n’existe aucun prorata. Si vous achetez des abonnements cloud annuels à différents moments de l’année, vous devrez renouveler vos abonnements à des dates différentes. Nous ne faisons pas en sorte que tous les abonnements cloud annuels d’un client se terminent en même temps, comme cela est courant avec les achats Contrat de licence en volume Microsoft.
 
-### <a name="q-how-do-cancelations-work"></a>Q : Que se passe-t-il en cas d’annulation ?
+### <a name="q-how-do-cancellations-work"></a>Q : Que se passe-t-il en cas d’annulation ?
 R : Quand vous annulez un abonnement cloud Visual Studio, vous annulez le renouvellement automatique. L’abonnement continue jusqu’à sa date de renouvellement normale, puis il arrive simplement à expiration.
 À l’expiration, l’abonné Visual Studio ne peut plus utiliser Visual Studio ni d’autres avantages de l’abonnement.
 
 Avec les abonnements cloud mensuels, les annulations prennent effet le premier jour du mois suivant. Si vous annulez uniquement certains de vos abonnements cloud mensuels, veillez à supprimer les utilisateurs le premier jour du mois suivant pour vous assurer que des abonnements actifs sont toujours affectés aux personnes appropriées.
 
-Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois suivant 12 mois à partir de l’achat initial, ou 12 mois à partir de la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Professional le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
+Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois qui suit les 12 mois suivant l’achat initial, ou les 12 mois suivant la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Professional le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Q : Quels sont les types de remise sur la quantité disponibles pour les abonnements Visual Studio ?
 R : Vous bénéficiez d’une remise de 5 % à partir du sixième abonnement *pour chaque type* d’abonnement :
@@ -93,6 +93,9 @@ R : Oui. Vous pouvez télécharger et exécuter les nouvelles versions dès leu
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>Q : Puis-je acheter des abonnements cloud Visual Studio auprès de mon revendeur de logiciels ?
 R : Oui, vous pouvez, si votre revendeur participe au programme fournisseur de solutions Cloud (CSP). Renseignez-vous auprès de lui.
+
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>Q : où puis-je trouver des informations sur les factures Azure ?
+R : consultez l’article [comprendre votre facture Azure](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice) dans la [documentation Azure](/azure/).
 
 ## <a name="related-resources"></a>Ressources associées
 - [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)

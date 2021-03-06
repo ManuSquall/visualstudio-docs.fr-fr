@@ -1,4 +1,5 @@
 ---
+description: Cette structure spécifie des informations sur un type de champ issu de métadonnées.
 title: METADATA_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8f0c8341213dfbe15dcf9a6f5a5fc421c0ebab3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938730"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225485"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 Cette structure spécifie des informations sur un type de champ issu de métadonnées.
@@ -60,7 +61,7 @@ public struct METADATA_TYPE {
 
  La `tokClass` valeur est un jeton de métadonnées qui identifie de façon unique un type. Pour plus d’informations sur la façon d’interpréter les bits supérieurs de l’ID de jeton de métadonnées, consultez l' `CorTokenType` énumération dans le fichier corhdr. h dans le kit de développement logiciel (SDK) .NET Framework.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : SH. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

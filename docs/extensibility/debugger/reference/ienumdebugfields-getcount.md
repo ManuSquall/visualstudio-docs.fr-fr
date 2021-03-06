@@ -1,4 +1,5 @@
 ---
+description: Cette méthode retourne le nombre d’éléments dans l’énumération Fields.
 title: 'IEnumDebugFields :: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5725d16577b9d22d280b17cc572b7335cd2331ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9dbce3c9f990e28b63ca3b600e89d12736021dbf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896923"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226642"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
 Cette méthode retourne le nombre d’éléments dans l’énumération.
@@ -43,10 +44,10 @@ int GetCount(
 `pcelt`\
 à Retourne le nombre d’éléments dans l’énumération.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode ne fait pas partie de l’interface d’énumération COM personnalisée qui spécifie que seuls les éléments suivants, de clonage, d’omission et de réinitialisation doivent être implémentés.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Utilisé pour décrire un module.
 title: MODULE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41201194ee76f92b4faa101c4811c35b44a0d890
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e671b3e578a78665a6a816582e0290119f77ea58
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961883"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225472"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 Utilisé pour décrire un module.
@@ -74,7 +75,7 @@ public enum enum_MODULE_FLAGS {
 
  Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

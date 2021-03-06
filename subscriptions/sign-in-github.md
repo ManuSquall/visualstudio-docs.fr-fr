@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 12/02/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: Découvrez comment vous connecter à vos abonnements Visual Studio avec votre compte GitHub.
-ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537992"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249734"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Connexion à vos abonnements Visual Studio avec votre compte GitHub 
 
@@ -59,7 +59,7 @@ R : en raison des restrictions de sécurité, Microsoft compte la connexion ave
 R : chaque fois que vous vous connectez à l’aide de votre alias de compte (adresse e-mail, numéro de téléphone, nom Skype), nous vous présenterons toutes les méthodes de connexion de votre compte. Si GitHub ne vous est pas proposé, c’est que vous ne l’avez pas encore configuré.
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>Q : Comment puis-je dissocier mes comptes Microsoft et GitHub ? 
-R : accédez à l' [onglet sécurité](https://account.microsoft.com/security) de Account.Microsoft.com et cliquez sur **autres options de sécurité** pour dissocier votre compte github. En dissociant votre compte GitHub, vous le soustrayez des méthodes de connexion et supprimez l’accès aux dépôts GitHub dans Visual Studio. Il est possible que d’autres produits Microsoft aient demandé un accès séparé à votre compte GitHub. Autrement dit, si vous supprimez l’accès ici, l’accès ne sera pas pour autant supprimé dans tous les produits. Accédez à la page [application permissions](https://github.com/settings/applications) de votre profil GitHub pour révoquer le consentement des applications listées dans cette page.
+R : accédez à l' [onglet sécurité](https://account.microsoft.com/security) de Account.Microsoft.com, puis cliquez sur **options de sécurité avancées** pour dissocier votre compte github. En dissociant votre compte GitHub, vous le soustrayez des méthodes de connexion et supprimez l’accès aux dépôts GitHub dans Visual Studio. Il est possible que d’autres produits Microsoft aient demandé un accès séparé à votre compte GitHub. Autrement dit, si vous supprimez l’accès ici, l’accès ne sera pas pour autant supprimé dans tous les produits. Accédez à la page [application permissions](https://github.com/settings/applications) de votre profil GitHub pour révoquer le consentement des applications listées dans cette page.
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q : J’essaie d’utiliser mon compte GitHub pour me connecter, mais je suis invité à indiquer que j’ai déjà une identité Microsoft que je dois utiliser à la place.  Que se passe-t-il ?
 R : Si vous avez une adresse de messagerie Azure Active Directory sur votre compte GitHub, cela signifie que vous disposez déjà d’une identité Microsoft qui peut accéder à Azure et exécuter des pipelines CI à l’aide de votre code GitHub. L’utilisation de ce compte est l’assurance que vos ressources et pipelines de build Azure restent dans les limites de votre organisation. Cependant, si vous effectuez un travail personnel, nous vous recommandons de placer une adresse e-mail personnelle sur votre compte GitHub, vous y aurez ainsi toujours accès. Après quoi, essayez à nouveau de vous connecter et choisissez **Utiliser une autre adresse de messagerie** quand vous êtes invité à vous connecter à votre compte professionnel ou scolaire. Cela vous permettra de créer un compte Microsoft avec cette adresse e-mail personnelle.

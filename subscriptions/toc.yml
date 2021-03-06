@@ -46,6 +46,8 @@
       href: manage-vs-subscriptions.md
     - name: À l’expiration des abonnements
       href: subscription-expiration.md
+    - name: Modifications de niveau d’abonnement
+      href: subscription-level-changes.md
     - name: Contacter votre administrateur d’abonnements
       href: contact-my-admin.md
     - name: Avantages

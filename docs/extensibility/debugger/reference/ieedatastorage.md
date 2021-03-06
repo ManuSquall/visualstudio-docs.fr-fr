@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente un tableau d’octets.
 title: IEEDataStorage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9434138114f2b4b0615e20c1b556ff6387c715de
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966433"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227331"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Cette interface représente un tableau d’octets.
@@ -47,7 +48,7 @@ IEEDataStorage : IUnknown
 
  Une visionneuse personnalisée peut également utiliser cette interface, si vous le souhaitez, bien que plus généralement, une visionneuse personnalisée utilise une interface personnalisée, [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) ou [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (pour les données orientées chaîne).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

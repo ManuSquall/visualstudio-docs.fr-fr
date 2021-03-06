@@ -1,4 +1,5 @@
 ---
+description: Spécifie les indicateurs de lancement du débogage.
 title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2457f6e18af75a515c0e27889ffecea521670db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e53cb955cda833d2172ed369e5573f257082b08
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225524"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
 Spécifie les indicateurs de lancement du débogage.
@@ -64,7 +65,7 @@ Ces valeurs sont passées en tant qu’arguments à la méthode [LaunchSuspended
 
 Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

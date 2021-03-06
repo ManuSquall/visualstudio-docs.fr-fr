@@ -1,4 +1,5 @@
 ---
+description: Crée un énumérateur qui contient le même état d’énumération que l’énumérateur des attributs personnalisés actuels.
 title: 'IEnumDebugCustomAttributes :: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1680c2e68a72c985236e501281100fa4e8b7d1f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4b1efc9df3988cc921a4ac68a82c3ed0bfe18af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929379"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224939"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.
@@ -43,7 +44,7 @@ int Clone(
 `ppEnum`\
 [out] Retourne une copie de cette énumération en tant qu'objet distinct.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

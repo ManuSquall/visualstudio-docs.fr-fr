@@ -1,4 +1,5 @@
 ---
+description: Cette méthode modifie l’objet représenté par le visualiseur.
 title: 'IEEVisualizerDataProvider :: SetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df5cfd2acef1a2214d4692a49c742c26cd420ffa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890836"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227227"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Cette méthode modifie l’objet représenté par le visualiseur.
@@ -53,10 +54,10 @@ dans Objet à définir.
 `pException`\
 à En cas d’erreur, cet objet contient les informations sur l’exception.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Il revient à l’implémenteur de déterminer la façon dont les informations d’erreur sont retournées. Toutefois, il est possible que certains appelants ne cherchent pas à voir si un objet exception a été retourné pour savoir qu’une erreur s’est produite. par conséquent, cette méthode doit toujours retourner un objet exception en cas d’erreur. La chaîne d’erreur doit également être fournie au cas où l’appelant souhaite l’utiliser.
 
 ## <a name="see-also"></a>Voir aussi

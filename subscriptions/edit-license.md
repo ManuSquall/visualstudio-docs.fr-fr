@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 11/09/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent modifier les affectations d’abonnements.
-ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433555"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249797"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur d’abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.
@@ -30,7 +30,6 @@ Pour modifier les informations d’un abonné, sélectionnez les points de suspe
 Vous pouvez mettre à jour le prénom, le nom, le niveau d’abonnement, l’adresse de messagerie, le pays, la langue, les téléchargements et le champ de référence de l’abonné. Modifiez les informations de l’abonné, puis cliquez sur **Enregistrer**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Modifier plusieurs abonnés à l’aide de la modification en bloc
-
 
 Vous pouvez modifier plusieurs abonnés à la fois en effectuant une modification en bloc. Cette fonctionnalité est principalement destinée aux organisations qui doivent changer les adresses e-mail de façon globale ou aux organisations qui souhaitent restreindre l’accès aux téléchargements.
 
@@ -55,6 +54,9 @@ Regardez cette vidéo ou lisez pour savoir comment modifier plusieurs abonnés �
    > ![Modification d’une licence - Chargement du fichier des modifications en bloc](_img/edit-license/edit-license-bulk-file-upload1.png "Accédez à l’emplacement de votre fichier Excel terminé, sélectionnez-le, puis cliquez sur OK.")
 
 5. Une fois que vous avez chargé le fichier, vous voyez s’afficher une notification confirmant le chargement. À ce stade, vos modifications apparaissent dans les informations de l’abonné.
+
+## <a name="resources"></a>Ressources
+- [Prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

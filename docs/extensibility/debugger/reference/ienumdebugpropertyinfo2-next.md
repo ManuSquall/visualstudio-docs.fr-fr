@@ -1,4 +1,5 @@
 ---
+description: Retourne le jeu d’éléments de DEBUG_PROPERTY_INFO suivant de l’énumération.
 title: 'IEnumDebugPropertyInfo2 :: suivant | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4ce9e9a434ac32d63199ae5af8524c6c9a752b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d14d77ca07a73ee1981609624a7d93465252719d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890732"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226005"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 Retourne l'ensemble d'éléments suivants de l'énumération.
@@ -53,7 +54,7 @@ int Next(
 `pceltFetched`\
 à Retourne le nombre d’éléments réellement retournés dans `rgelt` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si un nombre inférieur au nombre d’éléments demandés peut être retourné ; sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
