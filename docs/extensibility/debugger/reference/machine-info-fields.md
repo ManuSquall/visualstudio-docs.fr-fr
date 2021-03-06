@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type d’informations à récupérer pour un ordinateur particulier.
 title: MACHINE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70d289315219fd6e49f528a5ec95d560191b5cc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb07f679027c37ebc74343ba17051a7e7980c1c7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962065"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222560"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 Spécifie le type d’informations à récupérer pour un ordinateur particulier.
@@ -61,7 +62,7 @@ public enum enum_MACHINE_INFO_FIELDS {
 
  Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

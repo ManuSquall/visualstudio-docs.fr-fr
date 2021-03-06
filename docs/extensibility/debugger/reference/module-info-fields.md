@@ -1,4 +1,5 @@
 ---
+description: Spécifie les indicateurs pour les informations du module de débogage.
 title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 116eb36cf96284698a6d93730db39bb38d22b93e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc27420fc598d174b8e71c5ed3edd879a4a30d9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938705"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222365"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 Spécifie les indicateurs pour les informations du module de débogage.
@@ -111,7 +112,7 @@ public enum enum_MODULE_INFO_FIELDS {
 
  Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

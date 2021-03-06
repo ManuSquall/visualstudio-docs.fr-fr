@@ -1,4 +1,5 @@
 ---
+description: Cette fonction affiche les différences entre le répertoire local actuel sur le disque client et le projet correspondant sous contrôle de code source.
 title: SccDirDiff fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929210"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221598"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff fonction)
 Cette fonction affiche les différences entre le répertoire local actuel sur le disque client et le projet correspondant sous contrôle de code source.
@@ -58,7 +59,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Le répertoire sur le disque est le même que le projet dans le contrôle de code source.|
 |SCC_I_FILESDIFFER|Le répertoire sur le disque est différent du projet dans le contrôle de code source.|

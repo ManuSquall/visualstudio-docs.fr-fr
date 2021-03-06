@@ -1,4 +1,5 @@
 ---
+description: Ignore le nombre spécifié d’éléments DEBUG_REFERENCE_INFO.
 title: 'IEnumDebugReferenceInfo2 :: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9d2d3c5ebcd110d9bc6997b067e252a7efb8c22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a263c9c3cbb08620c90905d24b61da42f542b9bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954707"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224159"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 Ignore le nombre spécifié d'éléments.
@@ -43,7 +44,7 @@ int Skip(
 `celt`\
 [in] Nombre d'éléments à ignorer.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes

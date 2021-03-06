@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les fournisseurs de port.
 title: IEnumDebugPortSuppliers2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edff2cad101a6a6f0f19a4b384b8f2398b98b2e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 893135291be3126055fa139dacaf3cc12141d8f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883738"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224484"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Cette interface énumère les fournisseurs de port.
@@ -45,10 +46,10 @@ IEnumDebugPortSuppliers2 : IUnknown
 |[Répliqué](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Obtient le nombre de fournisseurs de port dans un énumérateur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un moteur de débogage n’a généralement pas besoin d’obtenir cette interface.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

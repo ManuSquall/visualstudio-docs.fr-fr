@@ -1,4 +1,5 @@
 ---
+description: Spécifie les propriétés souhaitées à obtenir d’un fournisseur de programme.
 title: PROVIDER_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 849046b3a365f58785ea23c9801c567bf566ff39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8851dffa0de1155edf401c0d0b0feadda199a5e9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922959"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222027"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
 Spécifie les propriétés souhaitées à obtenir d’un fournisseur de programme.
@@ -85,7 +86,7 @@ public enum enum_PROVIDER_FLAGS {
 
   Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

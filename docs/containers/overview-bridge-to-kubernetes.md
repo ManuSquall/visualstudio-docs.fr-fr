@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 253b50ff4778458b28375b06b7fb7f24f4d85054
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d44dc484da904d2692b90e23d10db6edc6f6e7b8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867566"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223158"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Comment fonctionne Bridge to Kubernetes
 
@@ -86,7 +86,7 @@ Le diagramme suivant montre le même cluster avec Bridge to Kubernetes activé e
 
 ![Diagramme du cluster avec pont vers Kubernetes activé](media/bridge-to-kubernetes/kubr-cluster-devcomputer.svg)
 
-Lorsqu’une demande avec le sous-domaine *GENERATED_NAME* est reçue sur le cluster, un en-tête *kubernetes-route-As = GENERATED_NAME* est ajouté au à la demande. Les Pod Envoy gèrent le routage qui demande au service approprié dans le cluster. Si la demande est routée vers le service sur lequel le travail est en cours d’isolation, cette demande est redirigée vers votre ordinateur de développement par l’agent distant.
+Lorsqu’une demande avec le sous-domaine *GENERATED_NAME* est reçue sur le cluster, un en-tête *kubernetes-route-As = GENERATED_NAME* est ajouté à la demande. Les Pod Envoy gèrent le routage qui demande au service approprié dans le cluster. Si la demande est routée vers le service sur lequel le travail est en cours d’isolation, cette demande est redirigée vers votre ordinateur de développement par l’agent distant.
 
 Lorsqu’une demande sans le sous-domaine *GENERATED_NAME* est reçue sur le cluster, aucun en-tête n’est ajouté à la demande. Les Pod Envoy gèrent le routage qui demande au service approprié dans le cluster. Si la demande est routée vers le service qui est remplacé, cette demande est routée vers le service d’origine au lieu de l’agent distant.
 

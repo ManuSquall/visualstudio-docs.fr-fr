@@ -1,4 +1,5 @@
 ---
+description: À partir de la liste des fichiers locaux, cette fonction détermine les fichiers qui sont différents des versions correspondantes dans la base de données de contrôle de code source.
 title: SccEnumChangedFiles fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e871f244082374bcf24ea49062cdcefd6e08d888
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9349172ac60f1e02f82327424cdbc3a3b1d4f865
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942995"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221533"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles fonction)
 À partir de la liste des fichiers locaux, cette fonction détermine les fichiers qui sont différents des versions correspondantes dans la base de données de contrôle de code source.
@@ -58,7 +59,7 @@ dans Tableau de noms de fichiers locaux à vérifier.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Opération exécutée avec succès.|
 |SCC_UNSPECIFIEDERROR|Erreur générique.|

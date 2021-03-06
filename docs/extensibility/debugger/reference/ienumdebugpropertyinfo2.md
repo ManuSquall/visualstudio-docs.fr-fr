@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les structures de DEBUG_PROPERTY_INFO.
 title: IEnumDebugPropertyInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecbb7db381261e1c836b48994eb0f208b619b3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fea2dc5cf958f87463af9dfca9f29bec5d01a82b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842210"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224185"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 Cette interface énumère les structures de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
@@ -45,10 +46,10 @@ IEnumDebugPropertyInfo2 : IUnknown
 |[Répliqué](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Obtient le nombre de structures de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) dans un énumérateur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  En général, une propriété est une hiérarchie d’informations qui peut inclure un nom, une valeur, une adresse et un type, ainsi que toute autre information appropriée à l’objet de propriété ou au frame de pile associé. Pour plus d’informations, consultez [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

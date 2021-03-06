@@ -1,4 +1,5 @@
 ---
+description: Récupère des informations sur la visionneuse pour ce type de propriété afin d’instancier cette visionneuse.
 title: 'IPropertyProxyEESide :: GetManagedViewerCreationData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee551ba78ceb91c2622af217d8863597e028be9d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2d7d4ef3f35cb0ad00f91033213449af8cb7306
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896010"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224133"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Récupère des informations sur la visionneuse pour ce type de propriété afin d’instancier cette visionneuse.
@@ -68,10 +69,10 @@ int GetManagedViewerCreationData(
 `replacementOk`\
 à Retourne une valeur différente `TRUE` de zéro () si la valeur de cet objet peut être modifiée ; zéro ( `FALSE` ) si l’objet est en lecture seule.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse managée.
 
 ## <a name="see-also"></a>Voir aussi

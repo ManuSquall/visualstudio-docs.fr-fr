@@ -1,4 +1,5 @@
 ---
+description: Spécifie l’état des symboles d’un module.
 title: MODULE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4856588a0ca5644317aba6a61d270b390d955b73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 158cc849e32fc0177b784c8898ec83fe58008f60
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961870"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222339"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 Spécifie l’état des symboles d’un module.
@@ -47,7 +48,7 @@ public enum enum_MODULE_INFO_FLAGS {
 ## <a name="remarks"></a>Notes
  Cette valeur est retournée par la méthode [GetSymbolSearchInfo,](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

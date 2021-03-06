@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type d’un objet de l’évaluateur d’expression.
 title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad51e8db72cba874d35f66c9759fb970ffff2716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3add4d46a258eb7e6c107f8d2eb16f7cd84ba919
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911710"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222157"
 ---
 # <a name="object_type"></a>Object_Type
 Spécifie le type d’un objet de l’évaluateur d’expression.
@@ -117,7 +118,7 @@ public enum enum_OBJECT_TYPE {
 ## <a name="remarks"></a>Notes
  Passé comme argument aux méthodes [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : EE. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9d6b4dd8bd21da7fcfc4d7cde54e5f5a7926472e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165720"
+ms.locfileid: "102221156"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*
 
@@ -81,6 +81,9 @@ Il existe trois façons de spécifier un fichier de paramètres d’exécution d
 - [Définir une propriété de build](#set-a-build-property)
 
 #### <a name="autodetect-the-run-settings-file"></a>Détection automatique du fichier de paramètres d’exécution
+
+> [!NOTE]
+> Cela ne fonctionne que pour un fichier nommé `.runsettings` .
 
 Pour détecter automatiquement le fichier de paramètres d’exécution, placez-le à la racine de votre solution.
 

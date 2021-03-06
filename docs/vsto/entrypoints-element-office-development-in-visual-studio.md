@@ -1,4 +1,5 @@
 ---
+description: L’élément entryPoints de l’espace de noms vstav3 contient tous les éléments entryPoint associés à une solution Office.
 title: '&lt;&gt;élément entryPoints (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481c67302c84ce08f60c571eb17084b96c0322bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910445"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223171"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;&gt;élément entryPoints (développement Office dans Visual Studio)
   L’élément `entryPoints` de l’espace de noms `vstav3` contient tous les éléments `entryPoint` associés à une solution Office.

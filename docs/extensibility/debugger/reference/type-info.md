@@ -1,4 +1,5 @@
 ---
+description: Cette structure spécifie différents genres d’informations sur le type d’un champ.
 title: TYPE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b37fbc4d2d812bfa10d8f05455050bb5a239d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880084"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223418"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Cette structure spécifie différents genres d’informations sur le type d’un champ.
@@ -68,7 +69,7 @@ public struct TYPE_INFO {
  `unionmember`\
  [C# uniquement] Marshalez-le vers le type de structure approprié en fonction de `dwKind` .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette structure est transmise à la méthode [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) où elle est remplie. La façon dont le contenu de la structure est interprété est basée sur le `dwKind` champ.
 
 > [!NOTE]
@@ -82,7 +83,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_PDB`|[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)|
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemple : 
  Cet exemple montre comment interpréter le `unionmember` membre de la `TYPE_INFO` structure en C#. Cet exemple illustre l’interprétation d’un seul type ( `TYPE_KIND_METADATA` ), mais les autres sont interprétés exactement de la même façon.
 
 ```csharp
@@ -106,7 +107,7 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : SH. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

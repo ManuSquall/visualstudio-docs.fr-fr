@@ -1,4 +1,5 @@
 ---
+description: Cette interface représente une collection d’objets qui implémentent l’interface IDebugObject.
 title: IEnumDebugObjects | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b86d632d35063aa31e6be9e11adb266e5e36fa6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eece06d64a4eeefefe4e132295f20e40a032434b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957073"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224627"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -51,7 +52,7 @@ IEnumDebugObjects : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface permet à un moteur de débogage d’énumérer un ensemble d’objets dans un tableau.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : EE. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

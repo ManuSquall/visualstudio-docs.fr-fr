@@ -1,4 +1,5 @@
 ---
+description: Cette fonction conclut un lot d’opérations de contrôle de code source.
 title: SccEndBatch fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d49fcd9920c442aa1736f1fb0f3e46ccd4eba0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4ea8ec19fcfe55da0666383408c2addbd42f2e6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943047"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221572"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch fonction)
 Cette fonction conclut un lot d’opérations de contrôle de code source. Ces lots ne peuvent pas être imbriqués.
@@ -34,7 +35,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Traitement des opérations réussi.|
 |SCC_E_UNKNOWNERROR|Échec non spécifique.|

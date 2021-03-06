@@ -1,4 +1,5 @@
 ---
+description: Cette fonction ajoute une liste de fichiers du contrôle de code source au projet actuellement ouvert.
 title: SccAddFilesFromSCC fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c230d1dae4b6ff9552a8ff464d3128eac9be1482
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27b695b2777aa32f77d49ced7b74436ce870df80
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926844"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220974"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC fonction)
 Cette fonction ajoute une liste de fichiers du contrôle de code source au projet actuellement ouvert.
@@ -78,7 +79,7 @@ dans Commentaire à appliquer à chacun des fichiers ajoutés.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert.|
 |SCC_E_OPNOTPERFORMED|La connexion n’est pas vers le même projet que celui spécifié par `lpAuxProjPath.`|

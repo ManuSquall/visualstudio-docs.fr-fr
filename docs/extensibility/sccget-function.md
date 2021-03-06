@@ -1,4 +1,5 @@
 ---
+description: Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais pas pour la modification.
 title: SccGet fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 799d51c607ce720502c269cf82fe5a857ec7a826
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965211"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220831"
 ---
 # <a name="sccget-function"></a>SccGet fonction)
 Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués en lecture seule.
@@ -63,7 +64,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Réussite de l’opération d’extraction.|
 |SCC_E_FILENOTCONTROLLED|Le fichier n'est pas soumis au contrôle de code source.|

@@ -1,4 +1,5 @@
 ---
+description: Cette structure représente une adresse native.
 title: NATIVE_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3f655bf3def231790cf77f007575301f794dc02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e243982eefbfbb8aab5797bf40031aa5d8aca4c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911732"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222183"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
@@ -49,7 +50,7 @@ L’adresse native (la signification dépend du runtime et du système d’explo
 
 Cette structure fait partie de l’Union de la structure [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) lorsque le `dwKind` champ de la `DEBUG_ADDRESS_UNION` structure a la valeur `ADDRESS_KIND_NATIVE` (une valeur de l’énumération [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 En-tête : SH. h
 

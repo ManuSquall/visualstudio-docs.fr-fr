@@ -1,4 +1,5 @@
 ---
+description: Cette fonction retourne des fonctionnalités supplémentaires prises en charge par le plug-in de contrôle de code source.
 title: SccGetExtendedCapabilities fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1409753559088c0f8129ebacd17387bfb7d111e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958412"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220779"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities fonction)
 Cette fonction retourne des fonctionnalités supplémentaires prises en charge par le plug-in de contrôle de code source.
@@ -48,7 +49,7 @@ dans Indicateur spécifiant une fonctionnalité étendue pour laquelle effectuer
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|L’opération d’extraction de la capacité s’est terminée avec succès.|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Une erreur inconnue ou non spécifiée s’est produite.|

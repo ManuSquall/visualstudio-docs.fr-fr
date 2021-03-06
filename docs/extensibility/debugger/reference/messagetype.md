@@ -1,4 +1,5 @@
 ---
+description: Spécifie le type de message et la raison.
 title: MESSAGETYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9735c394e0b88dbe7ea3a5113026d4012839b8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd7b10217313be30dd795a8ff108c3c30e214490
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961987"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222430"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Spécifie le type de message et la raison.
@@ -74,7 +75,7 @@ public enum enum_MESSAGETYPE {
 
  L’une des raisons possibles peut être combinée avec l’une des valeurs de destination de sortie à l’aide d’une opération de bits `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

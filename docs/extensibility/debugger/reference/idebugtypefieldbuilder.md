@@ -1,4 +1,5 @@
 ---
+description: Représente la capacité de créer un champ qui représente un type.
 title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a94f3f88d85d1e74ce7b1d67e1ef3d44546132
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1bc4f58470792cac8bdb68ede4ddf37567bac208
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965692"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223106"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 Représente la capacité de créer un champ qui représente un type.
@@ -37,7 +38,7 @@ IDebugTypeFieldBuilder : IUnknown
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Crée un objet qui représente un type primitif.|
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Crée un pointeur vers le type spécifié.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : SH. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Obtient des informations sur les applications pour Office qui doivent être insérées automatiquement pendant le débogage.
 title: Méthode Getautoinsertextensions,
 ms.date: 02/02/2017
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24fd5768a9eafa4a023aeabf21c862ea1a0d1891
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4a49942f50a79db604d2363cf2d85762c5ddce5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931524"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223431"
 ---
 # <a name="getautoinsertextensions-method"></a>Méthode Getautoinsertextensions,
   Obtient des informations sur les applications pour Office qui doivent être insérées automatiquement pendant le débogage.

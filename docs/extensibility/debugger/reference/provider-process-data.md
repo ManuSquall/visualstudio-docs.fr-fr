@@ -1,4 +1,5 @@
 ---
+description: Cette structure fournit des informations sur les processus qui s’exécutent sur un ordinateur.
 title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f49ef1c2990fe578738356cbe5db19cbc1c159ab
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922967"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221981"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 Cette structure fournit des informations sur les processus qui s’exécutent sur un ordinateur.
@@ -56,7 +57,7 @@ public struct PROVIDER_PROCESS_DATA {
 ## <a name="remarks"></a>Notes
  Cette structure est transmise à la méthode [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) où elle est remplie.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

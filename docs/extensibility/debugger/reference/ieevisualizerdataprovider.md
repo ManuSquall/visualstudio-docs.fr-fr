@@ -1,4 +1,5 @@
 ---
+description: Cette interface offre la possibilité de modifier la valeur d’un objet via un visualiseur de type.
 title: IEEVisualizerDataProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c2bea2a99b259ac255a4244501ee246fd83e8b5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890823"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222885"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -49,10 +50,10 @@ IEEVisualizerDataProvider : IUnknown
 |[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|Obtient un objet existant pour ce visualiseur (aucune évaluation n’est effectuée).|
 |[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|Met à jour l’objet pour ce visualiseur, en modifiant ainsi la valeur présente dans le visualiseur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le service du visualiseur (tel qu’il est représenté par l’interface [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) et retourné par [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) conserve une référence à l’objet qui implémente l' `IEEVisualizerDataProvider` interface. Par conséquent, l' `IEEVisualizerDataProvider` interface ne doit pas être implémentée sur le même objet qui implémente le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) si cet objet gère une référence à l' `IEEVisualizerService` objet : une référence circulaire se produit et un interblocage se produit lorsque les objets sont détruits. L’approche recommandée consiste à implémenter `IEEVisualizerDataProvider` sur un objet distinct auquel l' `IDebugProperty2` objet délègue sans appeler `IUnknown::AddRef` dessus.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : EE. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

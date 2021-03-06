@@ -1,4 +1,5 @@
 ---
+description: La tâche a terminé l’exécution de son délégué et attend implicitement la fin des tâches enfants attachées.
 title: Champ TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 052b1dd454ca091b0d83becbd02909c7cd92d00e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1533ef28b32450d9b039c27e49ba655dddfd6ebe
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837461"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223201"
 ---
 # <a name="task_state_waiting_on_children-field"></a>Champ TASK_STATE_WAITING_ON_CHILDREN
 La tâche a terminé l’exécution de son délégué et attend implicitement la fin des tâches enfants attachées.

@@ -1,4 +1,5 @@
 ---
+description: Cette fonction vérifie si le plug-in de contrôle de code source autorise les extractions multiples sur un fichier.
 title: SccIsMultiCheckoutEnabled fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 009bc5ba0bb307d0aaee78076266260aa5bb20ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 648b68f1575e31e81b6f12ca09abcb8e7305a985
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924818"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220558"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>Fonction SccIsMultiCheckoutEnabled
 Cette fonction vérifie si le plug-in de contrôle de code source autorise les extractions multiples sur un fichier.
@@ -40,10 +41,10 @@ dans Structure de contexte du plug-in de contrôle de code source.
 
 à Spécifie si plusieurs extractions sont activées pour ce projet (une valeur différente de zéro signifie que plusieurs extractions sont prises en charge).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|La vérification a réussi.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|

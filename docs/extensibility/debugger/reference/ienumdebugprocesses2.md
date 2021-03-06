@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les processus en cours d’exécution sur un port de débogage.
 title: IEnumDebugProcesses2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59cdc9a257f853f70afe2566d7b06e39f8edc02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75778ea0f02c0e7dcca1f7d2eb0ea8ace82c9b9c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846658"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224380"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Cette interface énumère les processus en cours d’exécution sur un port de débogage.
@@ -45,10 +46,10 @@ IEnumDebugProcesses : IUnknown
 |[Répliqué](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Obtient le nombre de processus dans un énumérateur.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Visual Studio utilise cette interface pour remplir la fenêtre **processus** .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

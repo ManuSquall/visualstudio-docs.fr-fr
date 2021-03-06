@@ -1,4 +1,5 @@
 ---
+description: Un nombre élevé d’objets mémoire .NET est actuellement récupéré dans le cadre d’un garbage collection de génération 2.
 title: 'DA0005 : Collections GC2 fréquentes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd27843ade6217f0b465645fed4b0abfaf9365e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73b24eba94791a9a24b80898fb7333665ed13caf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937665"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221026"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005 : Collections GC2 fréquentes
 

@@ -1,4 +1,5 @@
 ---
+description: Cette fonction énumère une liste donnée de fichiers, en fournissant des informations sur les modifications de nom pour chaque fichier via une fonction de rappel.
 title: SccQueryChanges fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e34c37ca999b05e7148d910032fe90c33470ce50
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836720"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220519"
 ---
 # <a name="sccquerychanges-function"></a>Fonction SccQueryChanges
 Cette fonction énumère une liste donnée de fichiers, en fournissant des informations sur les modifications de nom pour chaque fichier via une fonction de rappel.
@@ -55,17 +56,17 @@ dans Fonction de rappel à appeler pour chaque nom de fichier dans la liste (pou
 
 dans Valeur qui sera passée sans modification à la fonction de rappel.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Le processus de requête s’est terminé correctement.|
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert dans le contrôle de code source.|
 |SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les modifications interrogées concernent l’espace de noms : en particulier, en renommant, en ajoutant et en supprimant un fichier.
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,4 +1,5 @@
 ---
+description: Cette fonction crée un sous-projet portant le nom donné sous un projet parent existant spécifié par l’argument lpParentProjPath.
 title: SccCreateSubProject fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943125"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221611"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject fonction)
 Cette fonction crée un sous-projet portant le nom donné sous un projet parent existant spécifié par l' `lpParentProjPath` argument.
@@ -68,7 +69,7 @@ dans Nom de sous-projet suggéré (jusqu’à SCC_PRJPATH_SIZE, y compris la mar
 ## <a name="return-value"></a>Valeur retournée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Valeur|Description|
+|Value|Description|
 |-----------|-----------------|
 |SCC_OK|Le sous-projet a été créé avec succès.|
 |SCC_E_INITIALIZEFAILED|Impossible d’initialiser le projet parent.|

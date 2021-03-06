@@ -1,4 +1,5 @@
 ---
+description: L’élément document de l’espace de noms vstov4 stocke des informations spécifiques à la personnalisation pour les personnalisations au niveau du document.
 title: '&lt;&gt;élément document (développement Office dans Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e92c17d71b1c0959cb1918ce6fbad0e2cd44d5ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3563169bd9b567cd974248bf4185cb9bc8a7b022
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221039"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;&gt;élément document (développement Office dans Visual Studio)
   L' `document` élément de l' `vstov4` espace de noms stocke des informations spécifiques à la personnalisation pour les personnalisations au niveau du document.

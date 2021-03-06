@@ -1,4 +1,5 @@
 ---
+description: Utilisez cette fenêtre pour afficher et modifier les événements et propriétés au moment du design des objets sélectionnés qui sont situés dans les éditeurs et les concepteurs.
 title: Fenêtre Propriétés
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,12 +21,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff6435aa006de851a14f4f04570d086a86a5999
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddbfb4d001f73e30296a35c2cff4aae0e0c527f9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967980"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221117"
 ---
 # <a name="properties-window"></a>Fenêtre Propriétés
 

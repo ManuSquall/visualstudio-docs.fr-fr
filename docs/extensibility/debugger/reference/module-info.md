@@ -1,4 +1,5 @@
 ---
+description: Décrit un module particulier (DLL, EXE ou assembly).
 title: MODULE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d3fd390ca5491aa9dd3e97a0d820c8e02fd0147
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888171"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222352"
 ---
 # <a name="module_info"></a>MODULE_INFO
 Décrit un module particulier (DLL, EXE ou assembly).
@@ -98,12 +99,12 @@ public struct MODULE_INFO {
  `m_dwModuleFlags`\
  Combinaison d’indicateurs de l’énumération [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) qui décrit le module.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) où elle est remplie.
 
  Cette structure correspond à chaque module listé dans la fenêtre **modules** .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

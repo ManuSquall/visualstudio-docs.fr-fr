@@ -1,4 +1,5 @@
 ---
+description: Tâche terminée suite à une exception non gérée.
 title: Champ TASK_STATE_FAULTED | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 139893c7bb993180fd35aec1e02559f317ef8156
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5a8113f6145706d2863a4f0060a8627952eb0b3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968526"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223184"
 ---
 # <a name="task_state_faulted-field"></a>Champ TASK_STATE_FAULTED
 Tâche terminée suite à une exception non gérée.

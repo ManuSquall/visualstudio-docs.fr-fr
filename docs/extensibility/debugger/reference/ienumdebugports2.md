@@ -1,4 +1,5 @@
 ---
+description: Cette interface énumère les ports d’une machine ou d’un fournisseur de ports.
 title: IEnumDebugPorts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638b17490ba875f8ecab7bf6dcdff7fef161b66e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b93aa34870d05b9a4ec0a9a0aa92f681735dfe3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967798"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224458"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 Cette interface énumère les ports d’une machine ou d’un fournisseur de ports.
@@ -50,7 +51,7 @@ IEnumDebugPorts2 : IUnknown
 
  En général, un moteur de débogage n’utilise pas cette interface.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

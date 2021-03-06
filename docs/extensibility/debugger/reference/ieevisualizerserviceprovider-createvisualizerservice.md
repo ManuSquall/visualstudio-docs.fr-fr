@@ -1,4 +1,5 @@
 ---
+description: Cette méthode crée un service de visualiseur.
 title: 'IEEVisualizerServiceProvider :: CreateVisualizerService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f1149e9522803a199034395697e5c88bd988840
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b304dd8fe2845cf6c1201e6e128f8b89ec47b1b6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842187"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222820"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Cette méthode crée un service de visualiseur.
@@ -63,10 +64,10 @@ dans Objet implémentant l’interface [IEEVisualizerDataProvider](../../../exte
 `ppService`\
 à Service créé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les `binder` `pSymProv` paramètres, et `pAddress` ont tous été passés à la `IDebugParsedExpression::EvaluateSync` méthode. `CreateVisualizerService` doit être appelé uniquement à partir de dans le cadre `IDebugParsedExpression::EvaluateSync` de la prise en charge d’un évaluateur d’expression pour les visualiseurs de type.
 
 ## <a name="see-also"></a>Voir aussi

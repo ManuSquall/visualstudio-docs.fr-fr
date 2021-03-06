@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45f201e2c647a1b1074585d59c7618e1ddeb9084
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f214ac47ad3d831432b91652c5bbe3249ce5f1c5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859994"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223483"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Comment : exécuter manuellement l’analyse du code hérité pour le code managé
 
@@ -28,7 +28,7 @@ L’outil d’analyse du code vous fournit des informations sur les erreurs poss
 1. Si vous utilisez Visual Studio 2019 version 16,5 ou ultérieure, exécutez la commande suivante sur l’invite de commandes avant de démarrer Visual Studio :
 
 ```
-set EnableLegacyCodeAnalysis = true
+setx EnableLegacyCodeAnalysis true
 ```
 
 2. Dans **Explorateur de solutions**, cliquez sur le projet.
