@@ -2,19 +2,19 @@
 title: Générer des remplacements de méthode C# Equals et GetHashCode
 description: Découvrez comment utiliser le menu actions rapides et refactorisations pour générer des méthodes Equals et GetHashCode.
 ms.custom: SEO-VS-2020
-ms.date: 01/26/2018
+ms.date: 03/08/2021
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04c054dd73e437907c0943e3e6f0af5003dee37e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a9d0ea6f6cb0aedc4fa13a8014b1a8bd66ccca0
+ms.sourcegitcommit: 6ed6ae5a1693607dce57923a78d01eea3d88b29a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962780"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514944"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio
 
@@ -28,7 +28,7 @@ Cette génération de code s’applique à :
 
 **Pourquoi**
 
-- si vous implémentez un type de valeur, vous pouvez substituer la méthode **Equals** afin d’améliorer les performances par rapport à l’implémentation par défaut de la méthode Equals sur ValueType.
+- Si vous implémentez un type de valeur, vous devez envisager de substituer la méthode **Equals** . Vous pouvez améliorer les performances par rapport à l’implémentation par défaut de la méthode Equals sur ValueType lorsque vous procédez ainsi.
 
 - Si vous implémentez un type référence, vous devez envisager de substituer la méthode **Equals** si votre type ressemble à un type de base, tel que point, String, BigNumber, etc.
 
@@ -38,22 +38,32 @@ Cette génération de code s’applique à :
 
 1. Placez votre curseur quelque part sur la ligne de votre déclaration de type.
 
-   ![Code mis en surbrillance](media/overrides-highlight-cs.png)
+    ```csharp
+    public class ImaginaryNumber
+    {
+        public double RealNumber { get; set; }
+        public double ImaginaryUnit { get; set; }
+    }
+    ```
+
+   Votre code doit ressembler à la capture d’écran suivante :
+
+   ![Capture d’écran du code mis en surbrillance sur lequel appliquer la méthode générée](media/overrides-highlight-cs.png)
 
    > [!TIP]
    > N’effectuez pas de double-clic, sélectionnez le nom de type, sinon l’option de menu n’est pas disponible. Placez simplement le curseur quelque part sur la ligne.
 
-1. Effectuez ensuite l'une des opérations suivantes :
+1. Ensuite, choisissez l’une des actions suivantes :
 
    - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
    - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
 
-   - Cliquez sur l’icône ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
-
-   ![Générer un aperçu des substitutions](media/overrides-preview-cs.png)
+   - Cliquez sur le bouton ![Capture d’écran de l’icône du tournevis actions rapides dans Visual Studio](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
 
 1. Sélectionnez **Générer Equals(object)** ou **Générer Equals et GetHashCode** dans le menu déroulant.
+
+   ![Capture d’écran du menu déroulant générer des remplacements](media/overrides-preview-cs.png)
 
 1. Dans la boîte de dialogue **Choisir les membres**, sélectionnez les membres pour lesquels vous souhaitez générer des méthodes :
 
@@ -62,9 +72,36 @@ Cette génération de code s’applique à :
     > [!TIP]
     > Vous pouvez également choisir de générer des opérateurs à partir de cette boîte de dialogue en utilisant la case à cocher en bas de celle-ci.
 
-   Les méthodes `Equals` et `GetHashCode` sont générées avec des implémentations par défaut.
+   Les `Equals` `GetHashCode` méthodes et sont générées avec les implémentations par défaut, comme illustré dans le code suivant :
 
-   ![Résultat de l’action Générer une méthode](media/overrides-result-cs.png)
+    ```csharp
+   public class ImaginaryNumber : IEquatable<ImaginaryNumber>
+    {
+        public double RealNumber { get; set; }
+        public double ImaginaryUnit { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as ImaginaryNumber);
+        }
+
+        public bool Equals(ImaginaryNumber other)
+        {
+            return other != null &&
+                   RealNumber == other.RealNumber &&
+                   ImaginaryUnit == other.ImaginaryUnit;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(RealNumber, ImaginaryUnit);
+        }
+    }
+    ```
+
+   Votre code doit ressembler à la capture d’écran suivante :
+
+   ![Capture d’écran du résultat de la méthode générée](media/overrides-result-cs.png)
 
 ## <a name="see-also"></a>Voir aussi
 
