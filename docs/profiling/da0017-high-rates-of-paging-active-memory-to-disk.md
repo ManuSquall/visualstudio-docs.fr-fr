@@ -1,5 +1,6 @@
 ---
 title: DA0017-taux élevés de pagination de la mémoire active sur le disque | Microsoft Docs
+description: Les données de performances système qui ont été collectées durant l’exécution du profilage indiquent qu’un taux élevé de pagination de la mémoire active vers et depuis le disque a été relevé pendant toute la durée de l’exécution du profilage.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f66db4c727be1377b41da381b75609af6478c10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc3be6c354e7ac412ffa069caef4ee09396d6cb5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916773"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466087"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017 : Taux élevés de pagination de la mémoire active sur le disque
 

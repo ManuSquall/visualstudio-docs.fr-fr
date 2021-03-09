@@ -1,5 +1,6 @@
 ---
 title: Application DA0018-32 bits s’exécutant aux limites de la mémoire managée du processus | Microsoft Docs
+description: Les données système collectées pendant le profilage indiquent que les tas de mémoire .NET Framework approchent de la taille maximale autorisée pour les tas managés d’un processus 32 bits.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5730e96a47e7e931606269341d5f1cca302a0e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48f94f064b983ae671546f543dfbdfa380f35119
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886390"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466100"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
 

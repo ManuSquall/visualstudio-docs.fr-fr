@@ -1,5 +1,6 @@
 ---
 title: Le débogage &apos; n’est pas possible, car un débogueur du noyau est activé sur le système | Microsoft Docs
+description: Ce message s’affiche lorsque vous essayez de déboguer du code managé sur un système Windows 7 ou Windows Vista qui a été démarré en mode débogage et que l’application utilise la version CLR 2,0, 3,0 ou 3,5.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a06ed9092145188bf5fbecd2caeb42f5ad5c2e3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced7fb79a11321678ae2963241807e5ddd4600ab
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871765"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466457"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : le débogage n’est pas&#39;possible, car un débogueur du noyau est activé sur le système
 Lorsque vous déboguez du code managé, le message d'erreur suivant peut s'afficher :
@@ -32,7 +33,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
  Ce message se produit lorsque vous essayez de déboguer du code managé :
 
-- sur un système [!INCLUDE[win7](../debugger/includes/win7_md.md)] ou [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]qui a été démarré en mode débogage.
+- sur un [!INCLUDE[win7](../debugger/includes/win7_md.md)] [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] système ou qui a été démarré en mode débogage.
 
 - l'application utilise la version CLR CLR 2.0, 3.0, ou 3.5.
 

@@ -1,5 +1,6 @@
 ---
 title: DA0502-consommation processeur maximale par le processus en cours de profilage | Microsoft Docs
+description: Ce message indique le temps maximal, en pourcentage, pendant lequel un processeur a exécuté des instructions à partir de l’application.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e9576f7c5aacac4bc4335f06b08dd1176f847
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45071fb94b00be721e8c76c69dc5135a59f3a9b1
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918109"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465775"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502 : consommation UC maximale par le processus en cours de profilage
 

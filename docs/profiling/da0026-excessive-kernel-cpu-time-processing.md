@@ -1,5 +1,6 @@
 ---
 title: DA0026-traitement du temps processeur noyau excessif | Microsoft Docs
+description: Le temps processeur qui a été exécuté en mode noyau a dépassé le temps passé en mode utilisateur.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3231fce4954d3ace5e04e470cda386a9ceebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d39318433194693ee2b2cbbc8a94753cf2acd75d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936741"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465866"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026 : Traitement temps CPU noyaux excessif
 

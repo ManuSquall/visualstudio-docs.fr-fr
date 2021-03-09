@@ -1,5 +1,6 @@
 ---
 title: Vérifiez que DNS est correctement configuré sur l’ordinateur cible | Microsoft Docs
+description: Cette erreur se produit lorsque l'ordinateur cible ne peut pas résoudre le nom de l'ordinateur hôte du débogueur Visual Studio.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc16217b20d08e9ad2d3b43d3b074652fdffec95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf61e50cc1a6a831625d9cb7c0b12a286e20239f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871680"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466249"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Erreur : Assurez-vous que DNS est correctement configuré sur l'ordinateur cible
 Si vous essayez d'effectuer un débogage distant, vous risquez de recevoir ce message d'erreur :

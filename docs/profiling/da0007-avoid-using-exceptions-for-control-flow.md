@@ -1,5 +1,6 @@
 ---
 title: DA0007-éviter d’utiliser des exceptions pour le workflow de contrôle | Microsoft Docs
+description: Un taux élevé de gestionnaires d’exceptions .NET Framework ont été appelés dans les données de profilage.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4796fa1e998e75fcbbebe21df394ed41fe4807df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2648e287ea37e1ae78b14a65c02521f72a3491d0
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949387"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466126"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007 : Ne pas utiliser d’exceptions pour le flux de contrôle
 

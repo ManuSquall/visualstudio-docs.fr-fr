@@ -1,5 +1,6 @@
 ---
 title: DA0503-jeu de travail moyen en octets pour le processus en cours de profilage | Microsoft Docs
+description: Ce message signale la quantité moyenne de mémoire physique que le processus utilise actuellement, en octets (le jeu de travail).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a871925d4cde24675bd7d5c7f777b909ea633d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9913d3408a3219c2c07fa096c1f17b3a61afd8c
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918096"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465801"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : Jeu de travail moyenne en octets pour le processus en cours de profilage
 

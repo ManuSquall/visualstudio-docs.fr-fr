@@ -1,6 +1,7 @@
 ---
 title: '&lt;&gt;élément vstoRuntime (développement Office dans Visual Studio)'
 titleSuffix: ''
+description: L’élément vstoRuntime de l’espace de noms vstav3 contient une version prise en charge de l’Visual Studio Tools pour Office Runtime pour une solution Office spécifique.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c856836bd2ba107a2fa6c3017c5ecb2694fcf6b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921751"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468570"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;élément vstoRuntime (développement Office dans Visual Studio)
   L’élément `vstoRuntime` de l’espace de noms `vstav3` contient une version prise en charge du runtime Visual Studio Tools pour Office pour une solution Office spécifique.
@@ -43,7 +44,7 @@ ms.locfileid: "99921751"
 |---------------|-----------------|
 |`release`|Obligatoire. Version mise en production du runtime de Visual Studio Tools pour Office.|
 |`version`|Obligatoire. Numéro de version du runtime de Visual Studio Tools pour Office.|
-|`supportUrl`|Facultatif. Lien vers l’emplacement d’installation du runtime de Visual Studio Tools pour Office.|
+|`supportUrl`|facultatif. Lien vers l’emplacement d’installation du runtime de Visual Studio Tools pour Office.|
 
  `vstoRuntime` ne comporte aucun élément.
 

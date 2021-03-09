@@ -1,5 +1,6 @@
 ---
 title: '&lt;Update &gt; , élément (développement Office dans Visual Studio)'
+description: L’élément Update spécifie l’intervalle auquel la solution recherche les mises à jour.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59e7b21902c486bd78548cd79f2e79a5056042a5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968760"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468505"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Update &gt; , élément (développement Office dans Visual Studio)
   L' `update` élément spécifie l’intervalle auquel la solution recherchera les mises à jour.
