@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 07/22/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
-ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d644842eb5bdf8673a86ab0fbb5ebc579c1a0af5
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537693"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473281"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 En tant qu’abonné Visual Studio actif, vous avez accès à une large gamme de fonctionnalités dans Azure DevOps qui sont comprises dans votre abonnement sous forme d’avantages. Vous pouvez utiliser ces fonctionnalités dans chaque organisation Azure DevOps dont vous êtes membre, que vous ayez créé l’organisation ou que vous ayez été ajouté par quelqu’un d’autre.
@@ -53,7 +53,7 @@ Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été att
 R : Oui. Visual Studio Enterprise abonnés obtiennent un travail parallèle dans Team Foundation Server 2017 ou ultérieur et un travail parallèle auto-hébergé dans chaque Azure DevOps Services organisation où ils sont membres.
 
 ## <a name="support-resources"></a>Ressources de support
-- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps, ou d’autres produits ou services Visual Studio ?  Consultez la [prise en charge de Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Documentation Azure DevOps](/azure/devops/).
 

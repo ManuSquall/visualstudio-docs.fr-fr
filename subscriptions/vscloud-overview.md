@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 6aa17046726e19086f511c7ab59ab19228142e20
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92918082"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473385"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
-Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »** .
+Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »**.
 
 [Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -42,7 +42,7 @@ Vous devez être un contributeur ou un niveau supérieur pour un abonnement Azur
     > [!div class="mx-imgBorder"]
     > ![Sélectionner le nombre d’abonnements](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Choisissez le nombre d’abonnements à acheter")
 
-    Si vous ne voulez pas que les abonnements vous soient affectés, désactivez **M'attribuer cet abonnement** .
+    Si vous ne voulez pas que les abonnements vous soient affectés, désactivez **M'attribuer cet abonnement**.
 
 5. Confirmez et finalisez votre achat. Si vous vous êtes affecté un abonnement à vous-même, vous pouvez accéder au [portail des abonnés Visual Studio](https://my.visualstudio.com) pour commencer à télécharger des logiciels et à utiliser d’autres offres réservées aux abonnés.
 
@@ -72,7 +72,7 @@ Pour annuler des abonnements, vous devez simplement définir le nombre d’abonn
 > [!div class="mx-imgBorder"]
 > ![Afficher la vue d’ensemble de l’abonnement](_img/buy-vs-subscriptions/overview-button.png "Sélectionnez le bouton vue d’ensemble pour afficher les détails de l’abonnement")
 
-4. Recherchez l’entrée correspondant aux abonnements que vous souhaitez annuler, puis sélectionnez **modifier la quantité** .
+4. Recherchez l’entrée correspondant aux abonnements que vous souhaitez annuler, puis sélectionnez **modifier la quantité**.
 1. Définissez la quantité sur zéro (0). Vos abonnements resteront en place jusqu’à la date de facturation planifiée, mais ils ne seront pas renouvelés lorsque la date de facturation sera atteinte.   
 
 > [!div class="mx-imgBorder"]
@@ -125,9 +125,9 @@ R : bien qu’ils ne soient pas en mesure d’acheter un autre abonnement annue
 
 ## <a name="related-resources"></a>Ressources associées
 - [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)
-- [Support des abonnements Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [FAQ sur la facturation des abonnements cloud Visual Studio](vscloud-billing-faq.md)
 - [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
+- - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

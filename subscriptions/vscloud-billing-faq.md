@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/05/2021
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.openlocfilehash: 2c03871d11279b7c368ebd0c7012670fc92c9ee0
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: d3c370eecab49de5f4ea5001e6052c18ff83e00b
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249717"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473411"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 [Comparez les avantages des abonnements cloud et les prix](https://visualstudio.microsoft.com/vs/pricing/) afin de bien comprendre les avantages offerts par chaque abonnement Visual Studio. Découvrez les différences entre les abonnements standard et cloud de Visual Studio, obtenez des détails sur les avantages offerts aux abonnés et bien plus encore.
@@ -99,8 +99,8 @@ R : consultez l’article [comprendre votre facture Azure](https://docs.microso
 
 ## <a name="related-resources"></a>Ressources associées
 - [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)
-- [Support des abonnements Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
