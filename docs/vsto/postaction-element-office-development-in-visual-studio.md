@@ -1,5 +1,6 @@
 ---
 title: '&lt;&gt;élément postAction (développement Office dans Visual Studio)'
+description: L’élément postAction de l’espace de noms vstav3 contient les éléments EntryPoint et tous les éléments postActionData associés aux actions de postconnexion, qui s’exécutent après l’installation des solutions Office.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0490e9423cb747782029eb0fd7254407adb3a607
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04f8c92c52aeee9f7f1dd5ab67b3dcef3a295474
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955760"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470051"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;élément postAction (développement Office dans Visual Studio)
   L’élément `postAction` de l’espace de noms `vstav3` contient les éléments `entrypoint` et tous les éléments `postActionData` associés à des actions de post-déploiement, lesquelles s’exécutent après l’installation des solutions Office.
@@ -43,10 +44,10 @@ ms.locfileid: "99955760"
  `postAction` comporte les éléments suivants.
 
 ### <a name="entrypoint"></a>entryPoint
- Facultatif. Le rôle de l' `entryPoint` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément entryPoints&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ facultatif. Le rôle de l' `entryPoint` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément entryPoints&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Facultatif. Le rôle de l' `postActionData` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément postActionData&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ facultatif. Le rôle de l' `postActionData` élément dans l' `vstav3` espace de noms est défini dans [&#60;élément postActionData&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Exemple d’action de postconnexion
 

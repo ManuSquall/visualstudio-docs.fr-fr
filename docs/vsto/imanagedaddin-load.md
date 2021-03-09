@@ -1,5 +1,6 @@
 ---
 title: IManagedAddIn::Load
+description: Appelée quand un complément VSTO managé est chargé.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 605c1dc7a7b0d24ba082767930fd53148cccbd95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc89ba13e9fc0f62b264cdb926e1a8392c0b41bd
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920333"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469760"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddIn::Load
   Appelée quand un complément VSTO managé est chargé.
@@ -35,7 +36,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 |*bstrManifestURL*|Chemin d’accès complet du manifeste du complément VSTO.|
 |*pdispApplication*|Pointeur vers un IDispatch qui représente l’application hôte qui charge le complément VSTO.|
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Valeur HRESULT qui indique si la méthode a réussi.
 
 ## <a name="remarks"></a>Notes

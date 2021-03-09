@@ -1,5 +1,6 @@
 ---
 title: IDebugProperty3 | Microsoft Docs
+description: Cette interface fournit la prise en charge pour la récupération d’une chaîne arbitrairement longue associée à la propriété, en associant un ID unique à la propriété, en extrayant une liste de visionneuses personnalisées pour la propriété, en définissant la valeur d’une propriété avec la capacité de signaler les erreurs résultantes.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f24e7ec1842866011bb4d3735104a043bc77e01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65da477c47e88699cc479f632843f839b3d02f9d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897260"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469773"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Cette interface prend en charge les éléments suivants :
@@ -55,10 +56,10 @@ IDebugProperty3 : IDebugProperty2
 |[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Retourne la liste des visionneuses personnalisées avec lesquelles cette propriété peut être affichée.|
 |[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Définit la valeur de cette propriété, en renvoyant un message d’erreur en cas de problème.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) est la méthode recommandée pour le gestionnaire de débogage de session (SDM) pour définir la valeur d’une propriété.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

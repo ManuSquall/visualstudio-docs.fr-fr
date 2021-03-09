@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7c874a5cd2742f795c6d8b04db88b98b19a556d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882789"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470012"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Guide pratique pour configurer un environnement Python sur Azure App Service (Windows)
 
@@ -46,7 +46,7 @@ Une prise en charge personnalisable de Python pour Azure App Service est fournie
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Choisir une version de Python via Azure Resource Manager
 
-Si vous déployez un service App Service avec un modèle Azure Resource Manager, ajoutez l’extension de site en tant que ressource. En particulier, l’extension apparaît sous forme de ressource imbriquée (un objet `resources` sous `resources`) avec le type `siteextensions` et le nom issu de [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+Si vous déployez un service App Service avec un modèle Azure Resource Manager, ajoutez l’extension de site en tant que ressource. Plus précisément, l’extension apparaît comme une ressource imbriquée (un `resources` objet sous `resources` ) avec le type `siteextensions` .
 
 Par exemple, après l’ajout d’une référence à `python361x64` (Python 3.6.1 x64), votre modèle peut ressembler à ceci (certaines propriétés étant omises) :
 

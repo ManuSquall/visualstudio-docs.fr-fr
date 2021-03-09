@@ -1,5 +1,6 @@
 ---
 title: '&lt;&gt;élément postActionData (développement Office)'
+description: L’élément postActionData de l’espace de noms vstav3 spécifie les données associées à toute action de postconnexion qui s’exécute après l’installation des solutions Office.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 505b55b7513446a158adac66e7e0e38f401f0808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a75f61c6d1f80a127f49d96c4e3f4910c66dd8aa
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847685"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470064"
 ---
 # <a name="ltpostactiondatagt-element-office-development"></a>&lt;&gt;élément postActionData (développement Office)
   L’élément `postActionData` de l’espace de noms `vstav3` spécifie les données associées aux actions de post-déploiement qui s’exécutent après l’installation des solutions Office.
