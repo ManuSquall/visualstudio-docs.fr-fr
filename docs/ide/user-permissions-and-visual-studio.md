@@ -1,7 +1,7 @@
 ---
 title: Exécuter en tant qu'administrateur
 description: Découvrez comment exécuter Visual Studio en tant qu’administrateur.
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971295"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607247"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
 
@@ -72,7 +72,17 @@ Si vous avez besoin d’exécuter Visual Studio en tant qu’administrateur, sui
 
 ::: moniker-end
 
-Vous pouvez également modifier le raccourci de l’application afin de toujours l’exécuter avec des autorisations administratives.
+Vous pouvez également modifier le raccourci de l’application pour qu’il s’exécute toujours avec des autorisations d’administration :
+
+1. Ouvrez le menu **Démarrer** , faites défiler jusqu’à la version de Visual Studio que vous utilisez, puis sélectionnez **plus** d'  >  **emplacements de fichiers ouverts**.
+
+1. Dans l' **Explorateur de fichiers**, recherchez le raccourci **Visual Studio** correspondant à la version que vous utilisez. Ensuite, cliquez avec le bouton droit sur le raccourci et sélectionnez **Envoyer au**  >  **Bureau (créer un raccourci)**.
+
+1. Sur le bureau **Windows** , cliquez avec le bouton droit sur le raccourci **Visual Studio** , puis sélectionnez **Propriétés**.
+
+1. Sélectionnez le bouton **avancé** , puis activez la case à cocher **exécuter en tant qu’administrateur** .
+
+1. Sélectionnez **OK**, puis de nouveau **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

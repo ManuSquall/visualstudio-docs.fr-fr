@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 10/30/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Découvrez ce qui se passe lorsque votre abonnement Visual Studio expire
-ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.openlocfilehash: 26659cf70ace2ffb6eaa8f02146ed965c03df48a
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245015"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607130"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>Que se passe-t-il lorsque votre abonnement expire ?
 Les abonnements Visual Studio ont des durées spécifiques et, à moins qu’ils ne soient renouvelés, ils expirent.  Lorsqu’un abonnement expire, les avantages fournis par l’abonnement sont affectés de différentes façons.  Cet article explique comment l’expiration affecte les différents aspects d’un abonnement Visual Studio. 
@@ -39,6 +39,9 @@ Les unités de crédit Azure mensuelles se poursuivront pendant une période lim
 
 ### <a name="other-benefits"></a>Autres avantages 
 La plupart des avantages inclus dans les abonnements Visual Studio ont des durées spécifiques.  Les avantages offerts par les partenaires de Microsoft, tels que Pluralsight, DataCamp ou WhiteSource, ont des limites de temps lorsqu’ils sont activés.  Les avantages que vous avez déjà activés seront toujours disponibles pour le reste de leur contrat.  Par exemple, si vous avez activé un abonnement LinkedIn Learning de six mois et que vous avez toujours quatre mois pendant l’expiration de votre abonnement Visual Studio, vous aurez toujours quatre mois d’accès à l’abonnement LinkedIn Learning.  
+
+## <a name="resources"></a>Ressources
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: Découvrez plus d’informations sur la gamme complète des avantages disponibles sur le portail des abonnements Visual Studio
-ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904574"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607142"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Utilisation du portail des abonnés- my.visualstudio.com
 
@@ -47,9 +47,9 @@ La page Abonnements fournit les fonctionnalités nécessaires pour afficher vos 
 
 ## <a name="support"></a>Support
 
-Outre les avantages individuels figurant dans la catégorie Support de la page Avantages, la page Support fournit un accès aux ressources pour vous aider à tirer le meilleur parti de votre abonnement Visual Studio. Accédez aux [ressources de support](https://visualstudio.microsoft.com/subscriptions/support/) pour résoudre d’éventuels problèmes techniques ou questions liés à la vente d’abonnements, aux comptes et à la facturation.
+Outre les avantages individuels figurant dans la catégorie Support de la page Avantages, la page Support fournit un accès aux ressources pour vous aider à tirer le meilleur parti de votre abonnement Visual Studio. Accédez aux [ressources de support](https://aka.ms/vssubscriberhelp) pour résoudre d’éventuels problèmes techniques ou questions liés à la vente d’abonnements, aux comptes et à la facturation.
 
-## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
+## <a name="marketplace"></a>[Place de marché](https://marketplace.visualstudio.com/)
 
 Vous avez besoin de renouveler un abonnement cloud Visual Studio ?  Vous souhaitez télécharger les dernières extensions de la famille de produits Visual Studio ?  La Place de marché permet aux utilisateurs de rechercher des extensions, des outils et des services pour améliorer Azure DevOps, Azure DevOps Server et Visual Studio Code. Vous pouvez même devenir un serveur de publication et publier vos propres extensions sur Marketplace.
 

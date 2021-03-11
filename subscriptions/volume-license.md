@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/28/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: Découvrez comment les administrateurs des contrats de licence en volume peuvent accéder au portail d’administration des abonnements Visual Studio
-ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904214"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607286"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Accès au portail d’administration en tant qu’administrateur sur un contrat de licence en volume
 
@@ -23,10 +23,10 @@ Si vous êtes le contact principal ou l’interlocuteur pour les notifications s
 
 Une fois que vous êtes connecté, vous êtes automatiquement configuré en tant que Super administrateur et vous pouvez commencer à gérer les abonnements et autres administrateurs. Pour plus d’informations sur les différences entre les super administrateurs et les administrateurs, consultez notre article sur les [rôles d’administrateur](admin-roles.md).
 
-Cela s’applique à tous les types de contrats de licence en volume, y compris, mais sans s’y limiter, les contrats entreprise, les abonnements d’entreprise, les contrats Select, Select plus, Open, Open License, govt. et Academic. 
+Cela s’applique à tous les types de contrats de licence en volume, y compris, mais sans s’y limiter, les contrats entreprise, les abonnements d’entreprise, Select, Select, Open et Open licence, Government. et les contrats académiques. 
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements et des administrateurs Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

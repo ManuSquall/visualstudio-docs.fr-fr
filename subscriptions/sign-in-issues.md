@@ -1,18 +1,18 @@
 ---
 title: Problèmes de connexion aux abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Découvrez les problèmes qui peuvent se produire lors de la connexion aux abonnements Visual Studio.
-ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 5735e0c4178e6866539fff2edac6155642a1ba73
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903446"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607195"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problèmes de connexion aux abonnements Visual Studio
 Pour utiliser votre abonnement Visual Studio, vous devez tout d’abord vous connecter.  En fonction de votre abonnement, vous l’aurez peut-être configuré avec un compte Microsoft (MSA) ou une identité Azure Active Directory (AAD).  Cet article décrit certains problèmes que vous pouvez rencontrer lors de la connexion à votre abonnement.
@@ -61,7 +61,10 @@ L’utilisation d’alias fait référence aux utilisateurs qui emploient des id
 Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa connexion active (comme JohnD@contoso.com), mais les utilisateurs accèdent à leurs comptes de messagerie à l’aide d’alias ou de noms conviviaux (comme John.Doe@contoso.com). Pour de nombreux clients qui gèrent leurs abonnements à travers le Centre de gestion des licences en volume (VLSC), cela peut se traduire par un échec de la connexion, car l’adresse e-mail fournie (John.Doe@contoso.com) ne correspond pas à l’adresse d’annuaire (JohnD@contoso.com) requise pour une authentification correcte via l’option « Compte professionnel ou scolaire ».
 
 ### <a name="what-options-do-i-have"></a>Quelles sont les options dont je dispose ?
-Du point de vue de l’abonné, il est important de commencer par travailler avec votre administrateur pour comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur devra peut-être mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) à l’aide de votre adresse e-mail d’entreprise. Avant de suivre les étapes de création d’un MSA, contactez votre administrateur en ce qui concerne les stratégies ou problèmes liés à l’exécution de cette action. 
+Du point de vue de l’abonné, il est important de commencer par travailler avec votre administrateur pour comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur devra peut-être mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) à l’aide de votre adresse e-mail d’entreprise. Avant de suivre les étapes de création d’un MSA, contactez votre administrateur en ce qui concerne les stratégies ou problèmes liés à l’exécution de cette action.
+
+## <a name="resources"></a>Ressources
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio. 
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

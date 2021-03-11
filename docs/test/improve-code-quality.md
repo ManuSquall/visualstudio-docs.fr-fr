@@ -12,12 +12,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0c3f40900c30ca3632b3e82c4b197f28f9d108bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7efc8e5955f4d11004d8408cadf312e6cbcb43eb
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969241"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607403"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Examinez d’abord les outils de test dans Visual Studio
 
@@ -79,7 +79,7 @@ L’analyse de couverture du code peut être appliquée à du code managé et no
 Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des méthodes de test à l'aide de l'Explorateur de tests. La table des résultats affiche le pourcentage de code exécuté dans chaque assembly, classe et méthode. En outre, l'éditeur de code source vous indique quel code a été testé.
 
 * [Utiliser la couverture du code pour déterminer la quantité de code testé](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](https://azuredevopslabs.com/labs/devopsserver/liveunittesting)
 * [Personnaliser l’analyse de la couverture du code](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -103,7 +103,7 @@ Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou 
 * [Utiliser UI Automation pour tester votre code](use-ui-automation-to-test-your-code.md)
 * [Prise en main de la création, de la modification et de la maintenance d’un test codé de l’interface utilisateur](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Tester des applications UWP avec des tests codés de l’interface utilisateur](test-uwp-app-with-coded-ui-test.md)
-* [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](https://azuredevopslabs.com/labs/tfs/codedui)
 
 ## <a name="related-scenarios"></a>Scénarios connexes
 

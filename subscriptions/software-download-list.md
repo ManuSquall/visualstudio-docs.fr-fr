@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
-ms.date: 03/11/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Trouver une liste de téléchargements de logiciels inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903465"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607273"
 ---
 # <a name="what-software-is-available-for-download"></a>Quels sont les logiciels disponibles en téléchargement ?
 
@@ -29,6 +29,9 @@ Pour rechercher rapidement des produits, utilisez les fonctions de recherche en 
 > Si vous recherchez vos clés de produit, sélectionnez l’onglet **clés de produit** en haut de la page.
 
 Vous pouvez également télécharger une feuille de calcul Excel contenant une liste complète des [noms des logiciels disponibles](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) pour chaque type d’abonnement.
+
+## <a name="resources"></a>Ressources 
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio. 
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
