@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
-ms.date: 02/20/2020
+ms.date: 03/11/2021
 ms.topic: conceptual
 description: Découvrez comment les données des abonnés sont anonymisées quand l’accès aux abonnements est perdu.
-ms.openlocfilehash: 34059c20a65c41f7998efe344e2d8d4ac63cf7af
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467490"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225961"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisation des informations sur les abonnés Visual Studio
 Quand un événement (par exemple l’expiration d’un abonnement ou la suppression du compte de connexion d’un abonné) bloque l’utilisation d’un abonnement par un abonné, les informations personnelles de l’utilisateur, telles que son nom et son compte de connexion, sont brouillées afin de les rendre inutilisables.  Le but est de protéger les informations personnelles de l’abonné.
@@ -35,7 +35,9 @@ Les événements qui rendent un abonnement inutilisable par un abonné déclench
 R : Non.  L’anonymisation a lieu en réponse à un événement qui entraîne la perte d’accès à l’abonnement, mais elle n’entraîne pas l’absence d’accès.
 
 ### <a name="q--im-an-admin-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q : je suis administrateur pour les abonnements de mon organisation.  Si les informations de l’un de mes abonnés sont anonymisées, cet abonnement peut-il être réaffecté à un autre utilisateur ?
-R : Oui. Tant que l’abonnement n’a pas expiré, il peut être réaffecté à un autre abonné.
+R : Oui.  Les abonnements peuvent être réaffectés si ces critères sont satisfaits :
+- L’abonnement n’a pas expiré
+- Un minimum de 90 jours se sont écoulés depuis la dernière attribution de l’abonnement à un abonné.  Par exemple, si un abonnement a été attribué à un abonné le 1er juin, il ne peut pas être réaffecté jusqu’au 30 août.
 
 ### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q : Comment puis-je empêcher l’anonymisation due à la suppression d’une adresse de messagerie de connexion ?
 R : il existe deux façons d’éviter ce problème :

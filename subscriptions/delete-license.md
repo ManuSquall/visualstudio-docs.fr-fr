@@ -7,15 +7,17 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 02/18/2021
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent supprimer des affectations d’abonnements dans le portail d’administration des abonnements Visual Studio
-ms.openlocfilehash: 4eedc767e6397b371256c7957662147964782f75
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: efd0e149f390dd21a286b6ab7405ec36a43b8f78
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250016"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225974"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Supprimer des attributions dans les abonnements Visual Studio
-Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple quand il quitte l’entreprise, termine un projet ou change de fonction, vous pouvez supprimer son abonnement et l’attribuer à une autre personne. Notez que lorsque vous réattribuez un abonnement, tous les avantages de l’abonné ne sont pas réinitialisés.  Le nouvel utilisateur peut demander les clés non demandées et afficher celles précédemment demandées, mais le nombre maximal de demandes autorisées n’est **pas** réinitialisé.  Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés. 
+Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple quand il sort de l’entreprise, termine un projet ou bascule vers un nouveau rôle, vous pouvez supprimer son abonnement et l’attribuer à une autre personne. Notez que lorsque vous réattribuez un abonnement, tous les avantages de l’abonné ne sont pas réinitialisés.  Le nouvel utilisateur peut demander les clés non demandées et afficher celles précédemment demandées, mais le nombre maximal de demandes autorisées n’est **pas** réinitialisé.  Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés. 
+> [!Important]
+> Les abonnements ne peuvent être attribués qu’à des utilisateurs distincts si un minimum de 90 jours se sont écoulés depuis la dernière attribution de l’abonnement.  Par exemple, si un abonnement a été attribué à un abonné le 1er juin, il ne peut pas être attribué à un nouvel abonné jusqu’au 30 août. 
 
 Regardez cette vidéo ou lisez la suite pour apprendre à supprimer des affectations.  
 
