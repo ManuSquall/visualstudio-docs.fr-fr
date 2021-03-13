@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 354be4d3e31ead2d77e62f61600c20c1774353cd
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597409"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295787"
 ---
 # <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
@@ -117,7 +117,7 @@ La branche active est également disponible dans la barre d’État dans le coin
 
 ### <a name="create-a-new-branch"></a>Créer une branche
 
-Vous pouvez également créer une nouvelle branche. La commande équivalente pour cette action est `git checkout <branchname>` .
+Vous pouvez également créer une nouvelle branche. La commande équivalente pour cette action est `git checkout -b <branchname>` .
 
 La création d’une branche est aussi simple que l’entrée du nom de la branche et la base d’une branche existante.
 

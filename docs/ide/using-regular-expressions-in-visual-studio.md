@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925772"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295759"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -60,7 +60,7 @@ Le tableau suivant contient des caractères, des opérateurs, des constructions 
 |Correspond à n'importe quel [espace blanc](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` correspond à l’expression « public interface »|
 |Mettre en correspondance avec n’importe quel [caractère numérique décimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` correspond à « 4 » et « 0 » dans « WD40 »|
 
-Un exemple d’expression régulière qui combine certains des opérateurs et des constructions pour correspondre à un nombre hexadécimal est `\b0[xX]([0-9a-fA-F]+\)\b` . Cette expression correspond à « 0xc67f », mais pas à « 0xc67g ».
+Un exemple d’expression régulière qui combine certains des opérateurs et des constructions pour correspondre à un nombre hexadécimal est `\b0[xX]([0-9a-fA-F]+)\b` . Cette expression correspond à « 0xc67f », mais pas à « 0xc67g ».
 
 > [!TIP]
 > Dans les systèmes d’exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d’une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l’éditeur et transmis au service d’expression régulière .NET.
