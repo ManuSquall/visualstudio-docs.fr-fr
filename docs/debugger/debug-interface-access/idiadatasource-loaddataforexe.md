@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb7c774314a35f99de41af720b180475e0c55b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 649efd5202d8b153b5fe5b4dbf9ba5052883f352
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158273"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483183"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Ouvre et prépare les données de débogage associées au fichier. exe/. dll.
@@ -60,6 +60,8 @@ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tab
 
 ## <a name="remarks"></a>Notes
 L’en-tête debug du fichier. exe/. dll nomme l’emplacement des données de débogage associé.
+
+Si vous chargez des données de débogage à partir d’un serveur de symboles, *symsrv.dll* doit être présent dans le même répertoire que celui où l’application de l’utilisateur ou le *msdia140.dll* est installé, ou il doit être présent dans le répertoire système.
 
 Cette méthode lit l’en-tête de débogage, puis recherche et prépare les données de débogage. La progression de la recherche peut éventuellement être signalée et contrôlée par le biais de rappels. Par exemple, [IDiaLoadCallback :: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) est appelé lorsque la `IDiaDataSource::loadDataForExe` méthode recherche et traite un répertoire de débogage.
 
