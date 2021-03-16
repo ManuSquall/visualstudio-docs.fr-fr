@@ -1,4 +1,5 @@
 ---
+description: Vous avez tenté de passer un objet non JavaScript à une fonction intégrée qui attend un objet JavaScript.
 title: Objet JavaScript ATTENDU | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 754285b22f0da6f45d63f86f774d24279aeb7f22
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9ac73851ad8765fa81852e51f5759a0e511c3629
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862559"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571309"
 ---
 # <a name="javascript-object-expected"></a>Objet JavaScript attendu
 Vous avez tenté de passer un objet non- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] à une fonction intégrée qui attend un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet. Diverses fonctions intégrées requièrent des objets définis dans [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (par opposition aux objets définis par l’hôte, ou un composant externe comme un contrôle).  

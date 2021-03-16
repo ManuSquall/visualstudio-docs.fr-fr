@@ -30,14 +30,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e347bd8de6342a79d7523a1085f0e40cad8b0cbf
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865954"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571491"
 ---
 # <a name="cc-assertions"></a>Assertions C/C++
+
 Une instruction d’assertion spécifie une condition qui devrait être vraie à un point de votre programme. Si cette condition n’est pas remplie, l’assertion échoue, l’exécution de votre programme est interrompue et la [boîte de dialogue échec](../debugger/assertion-failed-dialog-box.md) de l’assertion s’affiche.
 
 Visual Studio prend en charge les instructions d’assertion C++ basées sur les constructions suivantes :
@@ -53,6 +54,7 @@ Visual Studio prend en charge les instructions d’assertion C++ basées sur les
   Vous pouvez utiliser des assertions pour intercepter des erreurs de logique, vérifier les résultats d’une opération et tester des conditions d’erreur qui auraient dû être gérées.
 
 ## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Dans cette rubrique
+
 [Fonctionnement des assertions](#BKMK_How_assertions_work)
 
 [Assertions dans les versions Debug et Release](#BKMK_Assertions_in_Debug_and_Release_builds)
@@ -76,6 +78,7 @@ Visual Studio prend en charge les instructions d’assertion C++ basées sur les
 - [Recherche d’erreurs non gérées](#BKMK_Testing_error_conditions_)
 
 ## <a name="how-assertions-work"></a><a name="BKMK_How_assertions_work"></a> Fonctionnement des assertions
+
 Quand le débogueur s’arrête en raison d’une assertion de bibliothèque Runtime MFC ou C, si la source est disponible, le débogueur accède au point du fichier source où l’assertion s’est produite. Le message d’assertion s’affiche à la fois dans la [fenêtre Sortie](../ide/reference/output-window.md) et dans la boîte de dialogue échec de l' **assertion** . Vous pouvez copier le message d’assertion de la fenêtre **sortie** vers une fenêtre de texte si vous souhaitez l’enregistrer pour référence ultérieure. La fenêtre **sortie** peut également contenir d’autres messages d’erreur. Examinez attentivement ces messages, car ils fournissent des indices sur la cause de l’échec de l’assertion.
 
 Utilisez des assertions pour détecter les erreurs au cours du développement. En règle générale, utilisez une assertion pour chaque hypothèse. Par exemple, si vous supposez qu’un argument n’est pas NULL, utilisez une assertion pour tester cette hypothèse.
@@ -83,9 +86,11 @@ Utilisez des assertions pour détecter les erreurs au cours du développement. E
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ## <a name="assertions-in-debug-and-release-builds"></a><a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Assertions dans les versions Debug et Release
+
 Les instructions d’assertion se compilent uniquement si `_DEBUG` est défini. Sinon, le compilateur traite les assertions comme des instructions null. Par conséquent, les instructions d’assertion n’imposent aucune surcharge ni aucun coût de performance dans votre programme de version finale, et vous permettent d’éviter d’utiliser des `#ifdef` directives.
 
 ## <a name="side-effects-of-using-assertions"></a><a name="BKMK_Side_effects_of_using_assertions"></a> Effets secondaires de l’utilisation d’assertions
+
 Lorsque vous ajoutez des assertions à votre code, assurez-vous que les assertions n’ont pas d’effets secondaires. Par exemple, considérez l’assertion suivante qui modifie la `nM` valeur :
 
 ```cpp
@@ -106,6 +111,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ## <a name="crt-assertions"></a><a name="BKMK_CRT_assertions"></a> Assertions CRT
+
 CRTDBG. Fichier d’en-tête H définit le [_ASSERT et les macros _ASSERTE](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) pour la vérification des assertions.
 
 | Macro | Résultats |
@@ -128,7 +134,10 @@ Lorsque `_DEBUG` est défini, la `_ASSERTE` macro est définie comme suit :
 
 Si l’expression déclarée prend la valeur FALSe, [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) est appelé pour signaler l’échec de l’assertion (à l’aide d’une boîte de dialogue de message par défaut). Si vous choisissez **Réessayer** dans la boîte de dialogue de message, `_CrtDbgReport` retourne 1 et `_CrtDbgBreak` appelle le débogueur via `DebugBreak` .
 
+Si vous devez désactiver temporairement toutes les assertions, utilisez [_CtrSetReportMode](/cpp/c-runtime-library/reference/crtsetreportmode).
+
 ### <a name="checking-for-heap-corruption"></a>Vérification de l’altération du tas
+
 L’exemple suivant utilise [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) pour vérifier l’altération du tas :
 
 ```cpp
@@ -136,6 +145,7 @@ _ASSERTE(_CrtCheckMemory());
 ```
 
 ### <a name="checking-pointer-validity"></a>Vérification de la validité du pointeur
+
 L’exemple suivant utilise [_CrtIsValidPointer](/cpp/c-runtime-library/reference/crtisvalidpointer) pour vérifier qu’une plage de mémoire donnée est valide pour la lecture ou l’écriture.
 
 ```cpp
@@ -149,6 +159,7 @@ _ASSERTE(_CrtIsValidPointer( myData );
 ```
 
 ### <a name="checking-a-memory-block"></a>Vérification d’un bloc de mémoire
+
 L’exemple suivant utilise [_CrtIsMemoryBlock](/cpp/c-runtime-library/reference/crtismemoryblock) pour vérifier qu’un bloc de mémoire se trouve dans le tas local et qu’il a un type de bloc valide.
 
 ```cpp
@@ -158,6 +169,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> Assertions MFC
+
 MFC définit la macro Assert pour la vérification des [assertions](/previous-versions/ew16s3zc(v=vs.140)) . Il définit également les `MFC ASSERT_VALID` `CObject::AssertValid` méthodes et pour vérifier l’état interne d’un `CObject` objet dérivé de.
 
 Si l’argument de la macro MFC prend la valeur `ASSERT` zéro ou false, la macro interrompt l’exécution du programme et avertit l’utilisateur ; dans le cas contraire, l’exécution continue.
@@ -180,6 +192,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 La `ASSERT` macro ne produit aucun code dans la version Release. Si vous devez évaluer l’expression dans la version Release, utilisez la macro [verify](/cpp/mfc/reference/diagnostic-services#verify) au lieu de la méthode Assert.
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID et CObject :: AssertValid
+
 La méthode [CObject :: AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) fournit des contrôles au moment de l’exécution de l’état interne d’un objet. Même si vous n’êtes pas obligé de substituer `AssertValid` lorsque vous dérivez votre classe de `CObject` , vous pouvez rendre votre classe plus fiable en procédant ainsi. `AssertValid` doit effectuer des assertions sur toutes les variables membres de l’objet pour vérifier qu’elles contiennent des valeurs valides. Par exemple, il doit vérifier que les variables de membre de pointeur ne sont pas NULL.
 
 L’exemple suivant montre comment déclarer une `AssertValid` fonction :
@@ -268,6 +281,7 @@ Une assertion déclenchée indique que l’objet est incorrect et que l’exécu
 ## <a name="using-assertions"></a><a name="BKMK_Using_assertions"></a> Utilisation d’assertions
 
 ### <a name="catching-logic-errors"></a><a name="BKMK_Catching_logic_errors"></a> Interception des erreurs de logique
+
 Vous pouvez définir une assertion sur une condition qui doit être vraie selon la logique de votre programme. L’assertion n’a aucun effet, à moins qu’une erreur logique ne se produise.
 
 Supposons, par exemple, que vous simuliez des molécules de gaz dans un conteneur et que la variable `numMols` représente le nombre total de molécules. Ce nombre ne peut pas être inférieur à zéro. vous pouvez donc inclure une instruction d’assertion MFC telle que la suivante :
@@ -287,6 +301,7 @@ Ces instructions ne font rien si votre programme fonctionne correctement. Toutef
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ### <a name="checking-results"></a><a name="BKMK_Checking_results_"></a> Vérification des résultats
+
 Les assertions sont précieuses pour les opérations de test dont les résultats ne sont pas évidents à partir d’une inspection visuelle rapide.
 
 Par exemple, considérez le code suivant, qui met à jour la variable `iMols` en fonction du contenu de la liste liée vers laquelle pointe `mols` :
@@ -310,6 +325,7 @@ Le nombre de molécules comptées par `iMols` doit toujours être inférieur ou 
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ### <a name="finding-unhandled-errors"></a><a name="BKMK_Testing_error_conditions_"></a> Recherche d’erreurs non gérées
+
 Vous pouvez utiliser des assertions pour tester les conditions d’erreur à un point de votre code où des erreurs doivent être traitées. Dans l’exemple suivant, une routine graphique retourne un code d’erreur ou zéro pour la réussite.
 
 ```cpp

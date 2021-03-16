@@ -1,4 +1,5 @@
 ---
+description: Vous avez commencé un bloc de commentaires sur plusieurs lignes, mais vous ne l’avez pas correctement terminé.
 title: Commentaire inachevé | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,15 +15,15 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8453b05d2d09537f381bd2947dccb6b0a19a6263
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 8d07d2370a245f50409de538a8c2cd63611c720b
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861843"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571516"
 ---
 # <a name="unterminated-comment"></a>Commentaire inachevé
-Vous avez commencé un bloc de commentaires sur plusieurs lignes, mais vous ne l’avez pas correctement terminé. Les commentaires sur plusieurs lignes commencent par une combinaison « /* » et se terminent par la \* combinaison « / » inverse. Voici un exemple :  
+Vous avez commencé un bloc de commentaires sur plusieurs lignes, mais vous ne l’avez pas correctement terminé. Les commentaires sur plusieurs lignes commencent par une combinaison « /* » et se terminent par la \* combinaison « / » inverse. Par exemple :  
   
 ```JavaScript  
 /* This is a comment  

@@ -1,4 +1,5 @@
 ---
+description: Vous avez tenté d’utiliser le mot clé break en dehors d’une boucle.
 title: Impossible d’avoir’Break’en dehors de Loop | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d761a1cff89f650e5fc465b6a6aef2713aafb765
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862797"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570646"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Impossible d'utiliser une instruction 'break' en dehors d'une boucle
 Vous avez tenté d’utiliser le mot clé **break** en dehors d’une boucle. Le mot clé **break** est utilisé pour mettre fin à une boucle ou une `switch` instruction. Elle doit être incorporée dans le corps d’une boucle ou d’une `switch` instruction. Toutefois, une **étiquette** peut suivre le mot clé Break.  

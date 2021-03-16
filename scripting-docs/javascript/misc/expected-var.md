@@ -1,5 +1,6 @@
 ---
 title: "'Var’attendu | Microsoft Docs"
+description: Le mot clé var n’a pas été ajouté lorsqu’il était requis.
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: 528b3be7-4766-42b2-a23a-66a5957d3dd2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0add2c3717d75f84b9fd4cabf7d0bc30c397da5f
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: bfb5398169400d70e96d975608efe51b79036222
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862201"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570475"
 ---
 # <a name="expected-var"></a>'var' attendu
 'Var’attendu (ERRnoVar 1034))  

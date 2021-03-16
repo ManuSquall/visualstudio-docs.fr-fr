@@ -1,4 +1,5 @@
 ---
+description: Vous avez tenté de placer plusieurs instructions sur une ligne, mais vous ne les avez pas séparées par des points-virgules.
 title: "'; 'Attendu | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2898a007e07dea326bbcd7b8d19f1a623941605d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49b039ef4e225693a2baa6cf434a672245ebd383
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862410"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570412"
 ---
 # <a name="expected-"></a>';' attendu
 Vous avez tenté de placer plusieurs instructions sur une ligne, mais vous ne les avez pas séparées par des points-virgules. Les points-virgules sont utilisés pour terminer les instructions. Bien que vous puissiez placer plusieurs instructions sur une seule ligne, chacune d’elles doit être délimitée de la suivante par un point-virgule.  

@@ -1,4 +1,5 @@
 ---
+description: Une tentative a été effectuée pour appeler JSON. stringify avec une valeur qui n’est pas valide.
 title: Référence circulaire dans l’argument de valeur non prise en charge | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -15,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa753a4ba3e0254ed7de026653759bbdcfce0631
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 88e4ead99f8c59a1300d018bff9d3e81b0874b51
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862319"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571140"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Référence circulaire dans l’argument de valeur non prise en charge
 Une tentative a été effectuée pour appeler `JSON.stringify` avec une valeur qui n’est pas valide. L' `value` argument, un tableau ou un objet, contient une référence circulaire.  

@@ -1,4 +1,5 @@
 ---
+description: Vous avez tenté d’assigner une valeur à ce.
 title: Impossible d’assigner à’This' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8985c7201a8e315353dd89ab5e1f5a3ad3b403ea
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3c52118ee78b7ecb7efa94dd6d86cc4fb34c7d1f
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862774"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571829"
 ---
 # <a name="cannot-assign-to-this"></a>Impossible d'affecter à 'this'
 Vous avez tenté d’assigner une valeur à **ce**. **il** s’agit d’un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mot clé qui fait référence à :

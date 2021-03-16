@@ -1,4 +1,5 @@
 ---
+description: Lors de la définition de la propriété Length d’un objet tableau existant, vous avez spécifié une longueur de tableau qui n’était pas un nombre positif ou zéro.
 title: Un nombre positif fini doit être assigné à la longueur du tableau | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e0016c7a0a6acb3f08121d8636ccdf848dcf201
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3938f240580564112915ab0ba3036b63dc96cd8f
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862814"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572141"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Un entier positif fini doit être assigné la longueur du tableau
 Lors de la définition de la propriété **Length** d’un objet **tableau** existant, vous avez spécifié une longueur de tableau qui n’était pas un nombre positif ou zéro. Cette erreur se produit lorsque vous affectez une valeur à la propriété **Length** d’un `Array` objet qui est négatif ou non un nombre ( `NaN` ). Notez que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] convertit automatiquement les nombres fractionnaires en entiers entiers.  

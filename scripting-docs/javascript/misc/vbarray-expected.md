@@ -1,4 +1,5 @@
 ---
+description: Vous avez fourni un objet qui n’était pas un Visual Basic safeArray, alors qu’il était attendu.
 title: VBArray ATTENDU | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b4e6521e5d363c21311b19e2ecc1679981acac3
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: e344e24b3fbef7b7f119a36513c222e085328072
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862693"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572076"
 ---
 # <a name="vbarray-expected"></a>VBArray attendu
 Vous avez fourni un objet qui n’était pas un Visual Basic safeArray, alors qu’il était attendu.  

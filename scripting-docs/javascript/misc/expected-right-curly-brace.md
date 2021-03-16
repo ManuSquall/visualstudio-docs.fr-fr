@@ -1,4 +1,5 @@
 ---
+description: Vous n’avez pas inclus l’accolade fermante qui marque la fin du corps de la fonction, de la boucle, du bloc de code ou de l’initialiseur d’objet.
 title: "'} 'Attendu | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55f91202184561aff5d0865b326415b3910b99b6
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 31ad11a551e76db30544baa59cd9c2f31e20fc31
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862120"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571725"
 ---
 # <a name="expected-"></a>'}' attendu
 Vous n’avez pas inclus l’accolade fermante qui marque la fin du corps de la fonction, de la boucle, du bloc de code ou de l’initialiseur d’objet. Un exemple de cette erreur serait une boucle **for** avec uniquement l’accolade ouvrante marquant le corps de la boucle.  

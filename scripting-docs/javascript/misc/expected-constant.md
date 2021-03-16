@@ -1,4 +1,5 @@
 ---
+description: Vous avez tenté d’utiliser une variable (de compilation non conditionnelle) dans une instruction de test de compilation conditionnelle.
 title: Constante attendue | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc791e97fcecf357177d140a3c30ee8c66db377b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3592b36568d388314ac1ce26513674df7dda58eb
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861970"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570451"
 ---
 # <a name="expected-constant"></a>Constante attendue
 Vous avez tenté d’utiliser une variable (de compilation non conditionnelle) dans une instruction de test de compilation conditionnelle. Les instructions de test de compilation conditionnelle doivent correspondre à une constante.  

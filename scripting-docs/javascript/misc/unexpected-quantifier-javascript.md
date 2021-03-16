@@ -1,4 +1,5 @@
 ---
+description: Lorsque vous composez votre modèle de recherche d’expression régulière, vous avez créé un élément de modèle avec un facteur de répétition non conforme.
 title: Quantificateur inattendu (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f67f9a2fc81b0bd950e171e4274eb09eacd88bbc
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9351f9306cea9e3f6346b007d6fe05c1d7bbf319
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861848"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571959"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Quantificateur inattendu (JavaScript)
 Lorsque vous composez votre modèle de recherche d’expression régulière, vous avez créé un élément de modèle avec un facteur de répétition non conforme. Par exemple, le modèle  

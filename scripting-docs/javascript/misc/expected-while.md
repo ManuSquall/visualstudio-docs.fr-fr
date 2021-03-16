@@ -1,4 +1,5 @@
 ---
+description: La condition while n’a pas été incluse dans une opération do... boucle while.
 title: "'While’attendu | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f2dfdaecc0e41e1c4d267a466f47ff26b76a720
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 79145a1fe63031fc1fa5eb9c6d831657f81d0a75
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862187"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570399"
 ---
 # <a name="expected-while"></a>'while' attendu
 Vous n’avez pas inclus la `while` condition dans une `do...while` boucle. Une instruction **do** doit avoir un `while` test correspondant à la fin du bloc de code.  

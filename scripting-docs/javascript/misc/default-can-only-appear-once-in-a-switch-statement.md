@@ -1,4 +1,5 @@
 ---
+description: Vous avez tenté d’utiliser l’instruction par défaut plusieurs fois dans une instruction switch.
 title: "'default’ne peut apparaître qu’une seule fois dans une instruction’switch' | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b49b5cfe7076a4a9504500a63f4d47d2f54bcc1a
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 346643f1ecaae6ab59c0fa265ffe5ff55fa66dc9
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862783"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571062"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' ne peut apparaître qu'une fois dans une instruction 'switch'
 Vous avez tenté d’utiliser l’instruction **par défaut** plusieurs fois dans une instruction switch. Le cas par défaut est toujours la dernière instruction case dans une instruction switch (il s’agit du cas de l’instruction de passage).  

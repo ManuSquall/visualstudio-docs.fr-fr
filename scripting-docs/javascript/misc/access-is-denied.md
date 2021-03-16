@@ -1,4 +1,5 @@
 ---
+description: Un script a essayé d'accéder aux données à partir d'une source autre que l'hôte de la page actuelle.
 title: Accès refusé | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -13,12 +14,12 @@ dev_langs:
 ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 874f7c0e5dcfaf4881c059a77f1c5e930d8c0578
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6be3bce0643a5892973235871191766cac140962
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814835"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571933"
 ---
 # <a name="access-is-denied"></a>l’accès est refusé.
 Un script a essayé d'accéder aux données à partir d'une source autre que l'hôte de la page actuelle. La stratégie d'origine suivie par Internet Explorer et d'autres navigateurs permet aux scripts d'accéder aux données uniquement à partir de sources avec les mêmes schéma, hôte et port de l'URL de la page actuelle.  

@@ -1,4 +1,5 @@
 ---
+description: Vous appelez le constructeur de tableau avec un argument qui n’est pas un nombre entier (les nombres entiers se composent de zéro plus le jeu d’entiers positifs).
 title: La longueur du tableau doit être un entier positif fini | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d3d2985706ad6cfca9b6ac441baa039ccf04af
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862208"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572115"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>La longueur du tableau doit être un entier positif fini
 Vous appelez le constructeur de **tableau** avec un argument qui n’est pas un nombre entier (les nombres entiers se composent de zéro plus le jeu d’entiers positifs).  

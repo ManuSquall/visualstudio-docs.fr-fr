@@ -1,4 +1,5 @@
 ---
+description: Vous avez tenté de créer une capture, une assertion ou un groupe d’expressions régulières, mais n’incluait pas la parenthèse fermante.
 title: "') 'Attendu dans l’expression régulière (JavaScript) | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29b25b5ab48ffe0a9a9dfafa9e60d66913c5e25e
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 4504a637625a1f15de12a721eb6fcba5dbc7fa6a
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861890"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571699"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>')' attendu dans l'expression régulière (JavaScript)
 Vous avez tenté de créer une capture, une assertion ou un groupe d’expressions régulières, mais n’incluait pas la parenthèse fermante. Les parenthèses ont plusieurs objectifs dans les expressions régulières. Ils sont principalement utilisés pour capturer des sous-expressions, pour spécifier des assertions ou pour regrouper des séquences afin que les éléments puissent être traités comme une seule unité par *, +, ?, et ainsi de suite.  
