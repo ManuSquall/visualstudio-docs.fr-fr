@@ -2,18 +2,18 @@
 title: L’expérience git dans Visual Studio
 titleSuffix: ''
 description: Découvrez comment la nouvelle expérience git intégrée dans Visual Studio 2019 peut vous aider à être plus productif.
-ms.date: 03/08/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e97088f11c32eae6b5d0ef4b7a3490e120a1b6d2
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103481416"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622645"
 ---
 # <a name="git-experience-in-visual-studio"></a>Expérience git dans Visual Studio
 
@@ -48,7 +48,7 @@ La boîte de dialogue **créer un dépôt git** vous permet de transmettre facil
 > [!TIP]
 > Que votre référentiel soit public ou privé, il est préférable de disposer d’une sauvegarde à distance de votre code stockée en toute sécurité sur GitHub, même si vous ne travaillez pas avec une équipe. Votre code est également mis à votre disposition, quel que soit l’ordinateur que vous utilisez.
 
-Vous pouvez choisir de créer un référentiel Git local uniquement à l’aide de l’option **local uniquement** . Vous pouvez également lier votre dépôt à un référentiel distant vide existant sur n’importe quel autre fournisseur git à l’aide de l’option **distante existante** .
+Vous pouvez choisir de créer un référentiel Git local uniquement à l’aide de l’option **local uniquement** . Vous pouvez également lier votre projet local à un référentiel distant vide existant sur Azure DevOps ou tout autre fournisseur git à l’aide de l’option **Remote existante** .
 
 ## <a name="clone-an-existing-git-repository"></a>Cloner un référentiel git existant
 

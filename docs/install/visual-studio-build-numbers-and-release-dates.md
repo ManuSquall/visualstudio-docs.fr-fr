@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 03/09/2021
+ms.date: 03/16/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 3f904c2528ce0daa228bc2cb8fbe1c48908ce0ea
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 90d28d2658bba70ffc45a0b52beaee06f2ba97da
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607377"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622619"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +29,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Channel** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.2 | Libérer | 16 mars, 2021 | 16.9.31112.23 |
 | 16.4.20 | Libérer | 9 mars, 2021 | 16.4.31026.101 |
 | 16.7.13 | Libérer | 9 mars, 2021 | 16.7.31026.100 |
 | 16.9.1 | Libérer | 9 mars, 2021 | 16.9.31105.61 |
@@ -39,7 +40,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 | 16.4.19 | Libérer | 10 février 2021 | 16.4.31009.304 |
 | 16.7.12 | Libérer | 10 février 2021 | 16.7.31009.191 |
 | 16.8.5 | Libérer | Le 9 février 2021 | 16.8.31005.135 |
-| 16.9.0 | Preview 4 | Le 9 février 2021 | 16.9.31004.235 | 
+| 16.9.0 | Preview 4 | Le 9 février 2021 | 16.9.31004.235 |
 | 16.7.11 | Libérer | Le 9 février 2021 | 16.7.30928.143 |
 | 16.4.18 | Libérer | Le 9 février 2021 | 16.4.30928.142 |
 | 16.9.0 | Preview 3 | 21 janvier 2021 | 16.9.30914.41 |

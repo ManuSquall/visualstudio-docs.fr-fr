@@ -2,7 +2,7 @@
 title: 'Documentation Visual Studio : historique des nouveautés '
 titleSuffix: ''
 description: Historique des nouveautés de la documentation Visual Studio
-ms.date: 02/01/2021
+ms.date: 03/08/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,21 +15,103 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960531"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622567"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
-Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents antérieurs au 2021 janvier (à compter du 1er juillet 2020). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article contient les modifications majeures apportées aux documents avant le 2021 du 1er février (à partir du 2020 juillet). Pour obtenir les dernières nouveautés, consultez [documentation de Visual Studio : nouveautés de la documentation](whats-new-visual-studio-docs.md).
+
+## <a name="january-2021"></a>Janvier 2021
+### <a name="azure"></a>Azure
+
+**Nouveaux articles**
+
+- [Créer et déployer dans cloud services (prise en charge étendue) dans Visual Studio (version préliminaire)](../azure/cloud-services-extended-support.md) -prise en charge étendue des services Cloud-aucun modèle
+
+### <a name="code-quality"></a>Qualité du code
+
+**Nouveaux articles**
+
+- [Métriques du code-couplage de classe](../code-quality/code-metrics-class-coupling.md) -actualisation des métriques du code
+- [Métriques du code-plage d’index de maintenabilité et signification](../code-quality/code-metrics-maintainability-index-range-and-meaning.md) -actualisation des métriques du code
+
+### <a name="debugger"></a>Débogueur
+
+**Nouveaux articles**
+
+- [Déboguer des applications .net core dans WSL 2 avec Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md) -débogage WSL2 .net Core
+
+**Articles mis à jour**
+
+- [Créer des vues personnalisées d’objets C++ dans le débogueur à l’aide de l’infrastructure Natvis](../debugger/create-custom-views-of-native-objects.md) -clarification pour la mise en forme XML des caractères spéciaux dans Natvis
+- [Avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous n’êtes pas sûr, ne pas attacher à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md) -mises à jour de l’avertissement de sécurité lors de l’attachement à un processus non fiable
+
+### <a name="deployment"></a>Déploiement
+
+**Articles mis à jour**
+
+- [ &lt; InstallChecks, &gt; élément (programme d’amorçage)](../deployment/installchecks-element-bootstrapper.md) -mettre à jour la documentation du package du programme d’amorçage pour inclure le nouvel élément BeforeInstallChecks
+
+### <a name="extensibility"></a>Extensibilité
+
+**Articles mis à jour**
+
+- [Procédure pas à pas : publication d’une extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) -[PUBLIC_MOVE] validation à partir du PUBLIC PR 6214
+
+### <a name="get-started"></a>Bien démarrer
+
+**Nouveaux articles**
+
+- [Didacticiel : ouvrir un projet à partir d’un référentiel dans Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) -mettre à jour ouvrir un projet à partir d’un didacticiel référentiel
+
+**Articles mis à jour**
+
+- [Didacticiel : ouvrir un projet à partir d’un référentiel](../get-started/tutorial-open-project-from-repo.md) -mettre à jour ouvrir un projet à partir d’un didacticiel référentiel
+
+### <a name="ide"></a>IDE
+
+**Nouveaux articles**
+
+- [Aide F1 JavaScript pour Visual Studio](./not-in-toc/default-f1-javascript.md) : pages F1 par défaut de js et TS ajoutées
+- [Machine à écrire F1 aide pour Visual Studio](./not-in-toc/default-f1-typescript.md) : pages F1 par défaut de js et TS ajoutées
+
+**Articles mis à jour**
+
+- [Solutions et projets dans Visual Studio](./solutions-and-projects-in-visual-studio.md) -ajouter un lien à la bibliothèque d’images Visual Studio
+
+### <a name="install"></a>Installer
+
+**Articles mis à jour**
+
+- [Numéros de build et dates de publication de Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md) -mises à jour patch Tuesday
+
+### <a name="msbuild"></a>MSBuild
+
+**Articles mis à jour**
+
+- [Glossaire MSBuild](../msbuild/msbuild-glossary.md) -promouvoir les clés de Glossaire sur H2
+
+### <a name="profiling"></a>Profilage
+
+**Nouveaux articles**
+
+- [Visualiser les compteurs dotnet à partir du profileur Visual Studio](../profiling/dotnet-counters-tool.md) -ajout d’un outil compteurs .net
+
+### <a name="test"></a>Tester
+
+**Articles mis à jour**
+
+- [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) -ajouter un document de signal audio de test
 
 ## <a name="december-2020"></a>Décembre 2020
 ### <a name="azure"></a>Azure
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Ajout de la configuration de Azure App à l’aide de Visual Studio services connectés](../azure/vs-azure-tools-connected-services-app-configuration.md) -didacticiel de configuration d’application Services connectés
 
@@ -43,7 +125,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
   - Réorganiser la table des matières pour les analyseurs .NET
 - [Migrer des analyseurs FxCop vers des analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter plus de clarté aux documents de migration pour FxCopAnalyzers vers les analyseurs
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 
@@ -80,7 +162,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
   - Mettre à jour tutorial-projects-solutions.md
   - option de menu manquant
 
-### <a name="test"></a>Test
+### <a name="test"></a>Tester
 
 **Articles mis à jour**
 
@@ -92,7 +174,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 ## <a name="november-2020"></a>Novembre 2020
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Activer ou installer les analyseurs .net](../code-quality/install-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Migrer des analyseurs FxCop vers les analyseurs .net](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -ajouter de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
@@ -109,7 +191,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 - [Vue d’ensemble](../code-quality/use-roslyn-analyzers.md) -ajout de la documentation pour la migration des analyseurs FxCop vers les analyseurs .net
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 
@@ -117,7 +199,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="debugger"></a>Débogueur
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Attacher à un processus en cours d’exécution sur un conteneur d’ancrage](../debugger/attach-to-process-running-in-docker-container.md) -Refactoriser attacher aux documents de processus pour les scénarios Linux
 
@@ -128,7 +210,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="deployment"></a>Déploiement
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Déployer une application de bureau Windows .net à l’aide de ClickOnce](../deployment/quickstart-deploy-using-clickonce-folder.md) -ajouter un démarrage rapide de ClickOnce pour les projets Windows .net
 
@@ -157,7 +239,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Utiliser des comptes GitHub dans Visual Studio](./work-with-github-accounts.md) : ajout de la page utilisation de GitHub et des informations sur la connexion de GitHub à d’autres pages
 - [Extrayez](./reference/extract-base-class.md) les fonctionnalités de la productivité dotnet ajoutées à la classe de base
@@ -201,7 +283,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="msbuild"></a>MSBuild
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Changer les vagues](../msbuild/change-waves.md) -MSBuild : modifier les vagues nouvelle rubrique
 
@@ -216,7 +298,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 - [Mesurer les performances de l’application à partir de la ligne de commande](../profiling/profile-apps-from-command-line.md) -mise à jour du profilage à partir de la ligne de commande docs
 
-### <a name="test"></a>Test
+### <a name="test"></a>Tester
 
 **Articles mis à jour**
 
@@ -239,7 +321,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 **Articles mis à jour**
 - [Analyseurs de code](../code-quality/index.yml) -refactorisation de l’autorité de certification pour .net 5
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 
@@ -251,7 +333,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="debugger"></a>Débogueur
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Prise en charge de DirectX 12 dans Visual Studio](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) -Vsdg DX12
 
@@ -273,7 +355,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Utiliser la recherche Visual Studio](./visual-studio-search.md) -document de recherche vs
 
@@ -317,7 +399,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="xaml-tools"></a>Outils XAML
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Utiliser des données au moment du design avec les Concepteur XAML dans Visual Studio](../xaml-tools/xaml-designtime-data.md)
   - Ajout de la section d’extensibilité aux documents au moment du design XAML
@@ -326,7 +408,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 ## <a name="september-2020"></a>Septembre 2020
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [CA1416 : valider la compatibilité](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) de la plateforme-documentation CA1416 valider la compatibilité de la plateforme
 - [CA1834 : utiliser StringBuilder. Append (Char) pour les chaînes de caractères uniques](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) -docs pour CA1834
@@ -336,7 +418,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Vue d’ensemble de l’analyse du code source](../code-quality/roslyn-analyzers-overview.md) -mises à jour de l’analyse du code pour refactorisation .net
 - [Configurer l’analyse](../code-quality/use-roslyn-analyzers.md) de la qualité du code-mises à jour de l’analyse du code pour le refactorisation .net
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Nouveaux articles**
 
@@ -352,7 +434,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Nouvelle expérience git dans Visual Studio (version préliminaire)](./git-with-visual-studio.md) -ajouter un nouveau contenu d’expérience git (préversion)
 - [Conventions de mise en forme C++ EditorConfig](./cpp-editorconfig-properties.md) -nouvel article
@@ -368,7 +450,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="install"></a>Installer
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Visual Studio sur des appareils alimentés par ARM](../install/visual-studio-on-arm-devices.md) -ajout de doc pour vs sur ARM
 
@@ -390,7 +472,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 ## <a name="august-2020"></a>Août 2020
 ### <a name="azure"></a>Azure
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Ajoutez Azure application Insights à l’aide](../azure/azure-app-insights-add-connected-service.md) des services connectés à Visual Studio services connectés pour VS 2019 16,7
 - [Ajouter le cache Azure pour les éléments ReDim à l’aide](../azure/azure-cache-for-redis-add-connected-service.md) des services connectés à Visual Studio services connectés pour VS 2019 16,7
@@ -406,7 +488,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Ca1310 : spécifiez StringComparison pour l’exactitude](/dotnet/fundamentals/code-analysis/quality-rules/ca1310) -ajoutez de la documentation pour ca1310 et mettez à jour la documentation pour CA1307
 - [CA1837 : utilisez Environment. ProcessID au lieu de process. GetCurrentProcess (). ID](/dotnet/fundamentals/code-analysis/quality-rules/ca1837) -docs pour CA1837
@@ -429,7 +511,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -plus de règles de DataSet/DataTable
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -modification de la structure et des titres pour la documentation de l’analyse du code
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Articles mis à jour**
 
@@ -438,7 +520,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="deployment"></a>Déploiement
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Extension des projets Visual Studio installer et .net core 3,1](../deployment/installer-projects-net-core.md) -création d’une nouvelle page d’aide pour les projets du programme d’installation fonctionnalités .net Core 3,1
 
@@ -461,7 +543,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Modifier la touche d’aide F1 dans Visual Studio](./not-in-toc/change-f1-help-key.md) -page d’aide par défaut de refactorisation F1
 - [Aide F1 pour l’éditeur de texte](./not-in-toc/default-f1-text-editor.md) -page d’aide F1 par défaut de refactorisation
@@ -490,7 +572,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 ## <a name="july-2020"></a>Juillet 2020
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Ca1417 : ne pas utiliser `OutAttribute` sur les paramètres de chaîne pour P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) -ajouter de la documentation pour ca1417
 - [CA1805 : ne pas initialiser inutilement.](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) -Ajouter des documents pour CA1805
@@ -504,7 +586,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 - [CA2355 : jeu de données ou DataTable non sécurisés dans le graphique d’objets désérialisés](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) -documents de désérialisation de DataSet/DataTable initiaux
 - [CA2356 : type de données ou DataSet non sécurisé dans le graphique d’objets désérialisés Web](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) -données de désérialisation du DataSet/DataTable initial (docs)
 
-### <a name="containers"></a>Containers
+### <a name="containers"></a>Conteneurs
 
 **Nouveaux articles**
 
@@ -523,41 +605,41 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cet article
 
 ### <a name="get-started"></a>Bien démarrer
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Didacticiel : étendre une simple console C# application](../get-started/csharp/tutorial-console-part-2.md) -version étendre la première version du didacticiel de trottoir
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Directives](./developer-community-guidelines.md) de la communauté des développeurs : ajout de directives Devcom
 - [Saisie semi-automatique IntelliSense pour les types et les méthodes d’extension inimportés](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
 ### <a name="install"></a>Installer
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Mettre à jour Visual Studio avec une disposition hors connexion minimale](../install/update-minimal-layout.md) -fonctionnalité de disposition minimale de document
 - [Guide Visual Studio Enterprise](../install/visual-studio-enterprise-guide.md) -Guide de l’entreprise
 
 ### <a name="javascript"></a>JavaScript
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Compiler du code machine (Node.js)](../javascript/compile-typescript-code-npm.md) -compiler et générer des générations
 - [Compiler du code machine (ASP.net Core)](../javascript/compile-typescript-code-nuget.md) -compiler et générer des générations
 
 ### <a name="msbuild"></a>MSBuild
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Métadonnées d’élément MSBuild courantes](../msbuild/common-msbuild-item-metadata.md) -MSBuild : ajouter une table pour les métadonnées facultatives avec lien et lien ressources
 - [Filtres de solution dans MSBuild](../msbuild/solution-filters.md) -filtres de solution MSBuild
 
-### <a name="test"></a>Test
+### <a name="test"></a>Tester
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Déboguer et analyser des tests unitaires avec l’Explorateur de tests](../test/debug-unit-tests-with-test-explorer.md) -travail des performances de l’Explorateur de tests
 
