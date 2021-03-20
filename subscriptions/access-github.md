@@ -4,23 +4,23 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: En savoir plus sur l’accès à GitHub Enterprise dans le cadre des abonnements Visual Studio
-ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 41cf3779f5572ecd63d11907eb80837e05e176c8
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511356"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757709"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Abonnements Visual Studio avec GitHub Enterprise 
 
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
 
-- Innovez à grande échelle avec Visual Studio et GitHub en intégrant de manière sécurisée du code open source, des ressources communautaires et des bonnes pratiques dans votre IDE et vos workflows.
+- Innovez à l’échelle avec Visual Studio et GitHub en offrant en toute sécurité du code source, de la communauté et des meilleures pratiques dans votre IDE et vos flux de travail.
 - Utilisez les meilleurs outils et services de développement pour les développeurs qui disposent de l’ensemble de ressources le plus complet pour créer, déployer et gérer des applications exceptionnelles. 
-- Travaillez à plusieurs, gérez les demandes de tirage (pull requests) sur GitHub Enterprise et passez en revue le code source où il a été écrit, c’est-à-dire dans l’éditeur. 
+- Collaborez et gérez les « requêtes de tirage » sur GitHub Enterprise et passez en revue le code source où il a été écrit dans l’éditeur. 
 
 ## <a name="whats-available"></a>Quelles sont les options disponibles ? 
 
@@ -31,7 +31,7 @@ Les options suivantes sont disponibles :
 
 Visual Studio Enterprise, Visual Studio Professional et GitHub Enterprise seront également disponibles séparément. 
 
-Pour en savoir plus sur les avantages et les options, visitez le site <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
+Pour en savoir plus sur les avantages et les options, visitez <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
 
 ## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>Qu’est-ce que l’abonnement Visual Studio avec le processus d’installation de GitHub Enterprise ?
 
@@ -78,14 +78,14 @@ Si vous débutez avec GitHub, voici quelques ressources utiles :
 R : le processus de configuration d’un compte GitHub Enterprise peut prendre un certain temps.  Si vous avez attendu et que vous n’avez rien entendu, vous souhaiterez peut-être contacter votre administrateur GitHub.  Il est possible que votre administrateur travaille encore dessus ou qu’il ait choisi de ne pas créer de compte GitHub Enterprise. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>Q : puis-je obtenir les avantages de l’abonnement Visual Studio complet ?
-R : en plus de GitHub Enterprise, vous bénéficiez de tous les avantages d’un abonnement Visual Studio standard, notamment les téléchargements de logiciels, les services Cloud, le support technique et les avantages des partenaires, comme vous le feriez si l’abonnement a été acheté séparément.
+R : en plus de GitHub Enterprise, vous bénéficiez de tous les avantages d’un abonnement Visual Studio standard, notamment les téléchargements de logiciels, les services Cloud, le support technique et les avantages des partenaires comme si l’abonnement avait été acheté séparément.
 
 ## <a name="support-resources"></a>Ressources de support
 - En savoir plus sur l’affectation de GitHub dans [GitHub docs](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
 - Trouvez des réponses aux questions sur une vaste gamme de rubriques GitHub dans [l’aide de GitHub](https://help.github.com).
 - Besoin d'aide ?  Contacter le [support GitHub](https://support.github.com/)
 - Vous pouvez également solliciter l’aide d’autres utilisateurs de GitHub dans le [forum de la communauté GitHub](https://github.community/).
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez notre page [obtenir de l’aide](https://my.visualstudio.com/GetHelp) .
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez notre page [obtenir de l’aide](https://aka.ms/vssubscriberhelp) .
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 - Contactez le [support technique](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) de GitHub Enterprise.   
 

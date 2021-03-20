@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 10/26/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: En savoir plus sur les avantages inclus dans les abonnements et sur la façon de les activer.
-ms.openlocfilehash: 351d81f29d01ec8322fcd6602d3ac4afccdb8ca1
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750154"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757631"
 ---
 # <a name="about-your-subscription-benefits"></a>À propos des avantages de votre abonnement
 En tant qu’abonné Visual Studio, vous avez accès à un grand nombre d’avantages en fonction de votre niveau d’abonnement. Il y a plusieurs points importants à noter sur les avantages.
@@ -42,6 +42,9 @@ Certains des avantages inclus avec les abonnements Visual Studio, y compris cert
 
 ## <a name="benefits-that-become-temporarily-unavailable"></a>Avantages qui deviennent temporairement indisponibles
 Bien qu’il soit rare, parfois des problèmes techniques peuvent rendre un avantage indisponible pendant une brève période. Dans ce cas, nous allons modifier la vignette de l’avantage dans le [portail des abonnements Visual Studio](https://my.visualstudio.com/benefits) pour indiquer que l’avantage est « temporairement indisponible » jusqu’à ce que le problème soit résolu. à ce moment-là, nous allons restaurer la vignette et l’avantage sera à nouveau disponible.
+
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

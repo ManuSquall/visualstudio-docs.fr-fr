@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: La connexion peut échouer si des alias ou des noms conviviaux sont utilisés.
-ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: d3a3cd962bafcf6a3e0c5aa20c98128233ace988
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467607"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757696"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à des abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
@@ -91,12 +91,14 @@ Ces deux options sont configurées dans le portail d’administration en procéd
 > [!NOTE]
 > Pour les modifications individuelles et en bloc, les abonnés reçoivent un message électronique contenant des instructions indiquant que leur adresse e-mail de connexion a changé et qu’ils doivent se connecter à l’aide de l’adresse e-mail mise à jour. Il est également important de noter que si l’abonné a déjà activé les avantages sous l’autre adresse de connexion, il doit continuer à utiliser l’autre adresse de connexion pour y accéder.  
 
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur l’administration des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vsadminhelp).
+
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
 - [Documentation Azure DevOps](/azure/devops/)
 - [Documentation Azure](/azure/)
 - [Documentation Microsoft 365](/microsoft-365/)
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur la gestion des abonnements Visual Studio.

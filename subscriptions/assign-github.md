@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: Gestion des abonnements dans les abonnements Visual Studio avec GitHub Enterprise
-ms.openlocfilehash: 5837ec33e6f17f0970178a0f1b306960e9c42668
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: c66932d9f0da5e7dbca6dccb8efc911b1453bb8e
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249692"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757657"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gérer des abonnements Visual Studio avec GitHub Enterprise
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
@@ -68,23 +68,20 @@ Une fois les abonnements GitHub Enterprise achetés, GitHub partenaires avec les
 GitHub est disponible dans le cloud à l’adresse GitHub.com ou au niveau local par le biais de GitHub Enterprise Server.  Les processus de gestion des deux versions diffèrent.  GitHub fournit plusieurs rubriques d’aide et guides d’administration pour vous aider à gérer les abonnements GitHub Enterprise.  Vous trouverez ci-dessous des liens vers certaines rubriques.  
 
 ## <a name="support-resources"></a>Ressources de support
-
 - En savoir plus sur l’affectation de GitHub dans [GitHub docs](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
 - Trouvez des réponses aux questions sur une vaste gamme de rubriques GitHub dans [l’aide de GitHub](https://help.github.com/en).
 - Vous pouvez également solliciter l’aide d’autres utilisateurs de GitHub dans le [forum de la communauté GitHub](https://github.community/).
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le support pour les [abonnements](https://visualstudio.microsoft.com/subscriptions/support/).
+- Pour obtenir de l’aide sur l’administration des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vsadminhelp).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 - Contactez le [support technique](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) de GitHub Enterprise.   
 
 ## <a name="see-also"></a>Voir aussi
-
 - [Documentation de Visual Studio](/visualstudio/)
 - [Documentation Azure DevOps](/azure/devops/)
 - [Documentation Azure](/azure/)
 - [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-
 En savoir plus sur la gestion des abonnements Visual Studio.
 - [Affecter des abonnements individuels](assign-license.md)
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)

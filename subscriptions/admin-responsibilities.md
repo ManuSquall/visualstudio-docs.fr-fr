@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 03/11/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: En savoir plus sur les responsabilités des administrateurs d’abonnements.
-ms.openlocfilehash: 14b8832a8031ddbc96ce82e10a015c730530ce3e
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: 817330093ce0a2e9df6379db42420057ded30486
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225987"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757683"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous pouvez gérer les abonnements de votre organisation.  Le rôle d’administrateur assume également des responsabilités pour s’assurer que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article décrit les responsabilités, les avantages et les limitations du rôle d’administrateur.
@@ -28,7 +28,7 @@ Un administrateur des abonnements Visual Studio a quatre responsabilités princi
 ## <a name="benefits-and-limitations"></a>Avantages et limitations
 Les abonnements Visual Studio permettent aux développeurs d’installer et d’utiliser des logiciels pour concevoir, développer, tester, évaluer et présenter d’autres logiciels. Les logiciels des abonnements Visual Studio ne sont pas concédés sous licence pour les environnements de production.
 
-| Catégorie                                 | Avantage ou limitation |
+| Category                                 | Avantage ou limitation |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Licences utilisateur                     | Les plateformes MSDN et tous les niveaux des abonnements Visual Studio sont concédés avec des licences par utilisateur. Chaque membre de l’équipe de développement qui va interagir (installer, configurer ou accéder) avec les logiciels inclus avec ces produits et services doit disposer de son propre abonnement Visual Studio.                                                                                                                                                                                                                                                                                                                                  |
 | Installations illimitées                  | Chaque utilisateur titulaire d’une licence peut installer et utiliser les logiciels sur un nombre illimité d’appareils pour concevoir, développer, tester, évaluer et présenter des logiciels. Microsoft Office, qui est concédé sous licence pour un seul ordinateur de bureau, fait exception. Les logiciels sous licence Visual Studio peuvent être installés et utilisés au bureau, à domicile, dans des établissements scolaires et sur des appareils se trouvant dans les bureaux d’un client ou sur du matériel dédié hébergé par un tiers.                                                                                                                                                                                                                                  |
@@ -41,7 +41,7 @@ Les abonnements Visual Studio permettent aux développeurs d’installer et d’
 - [Documentation Azure DevOps](/azure/devops/)
 - [Documentation Azure](/azure/)
 - [Documentation Microsoft 365](/microsoft-365/)
-- [Prise en charge de l’administration et des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
+- [Prise en charge de l’administration et des abonnements Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités pour les administrateurs :

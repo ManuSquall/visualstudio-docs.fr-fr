@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 02/02/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: En savoir plus sur les rôles d’administrateur et de Super administrateur, ainsi que sur la façon d’affecter des administrateurs.
-ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511330"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757592"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Super Admins et administrateurs pour les contrats d’abonnement Visual Studio
 
@@ -42,7 +42,7 @@ Pour affecter de nouveaux administrateurs (administrateurs) :
 5. Une fois que vous avez cliqué sur **Ajouter** pour affecter le nouvel administrateur, celui-ci reçoit un e-mail l’invitant à se connecter au portail.  
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge de l’administration et des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
+- [Prise en charge de l’administration et des abonnements Visual Studio](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 01/14/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: En savoir plus sur la responsabilité des administrateurs pour effectuer des inventaires de pré-production
-ms.openlocfilehash: da8146b9f7d2b758ac2d249534d43bd98beae385
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: f6b1e1ebc02a986be86fb48578a4be47ccc3dfaa
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511304"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757670"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventaire de l’environnement de préproduction
 Les abonnements Visual Studio simplifient la gestion des actifs en comptant les utilisateurs plutôt que les appareils.
@@ -30,7 +30,7 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 
 ## <a name="resources"></a>Ressources
 - [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Prise en charge des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
+- [Prise en charge des abonnements Visual Studio](https://aka.ms/vsadminhelp)
 - [Termes du contrat de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi

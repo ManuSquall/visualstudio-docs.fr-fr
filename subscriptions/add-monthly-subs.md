@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 09/03/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: Découvrez comment vous venez d’acheter des abonnements Visual Studio mensuels au portail d’administration des abonnements.
-ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 931f297a650926e4da5c13271a58091c9f00ddd3
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467594"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757644"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Ajouter de nouveaux abonnements Visual Studio mensuels au portail d’administration des abonnements
 Lorsque vous achetez de nouveaux abonnements Visual Studio mensuels à l’aide d’un abonnement Azure, vous devrez peut-être les ajouter au portail d’administration des abonnements pour pouvoir les affecter aux utilisateurs.  
@@ -40,6 +40,9 @@ Les étapes à suivre pour ajouter des abonnements mensuels dépendent des types
 ## <a name="things-to-keep-in-mind"></a>Points à prendre en compte
 - L’option permettant d’ajouter de nouveaux abonnements mensuels sera disponible la première fois que vous les achetez.  Une fois que vous avez ajouté des abonnements mensuels, nous vérifions les nouveaux abonnements à chaque fois que vous vous connectez au portail. 
 - Lorsque de nouveaux abonnements sont trouvés, vous pouvez voir qu’ils sont déjà affectés aux abonnés.  Cela est dû au fait que d’autres administrateurs ont accès à l’abonnement Azure et qu’ils ont déjà attribué les nouveaux abonnements Visual Studio aux utilisateurs.  Maintenant que vous les avez également ajoutés à votre portail, vous pouvez administrer ces abonnements. 
+
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur l’administration des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que vous avez ajouté des abonnements, vous êtes prêt à les affecter aux utilisateurs.  Vous pouvez le faire de plusieurs façons :
