@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 270dffd75a0b442e5f275d0840033e54be5fe883
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538083"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672013"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
@@ -29,7 +29,7 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
    > [!NOTE]
    > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.
 
-4. Une fois que votre compte a été créé, vous pouvez choisir un parcours d’apprentissage.  Options disponibles :
+4. Une fois que votre compte a été créé, vous pouvez choisir un parcours d’apprentissage.  Les options sont les suivantes :
     - Apprentissage de R pour la science des données
     - Commencer l’apprentissage de Python pour la science des données
     - Développer vos compétences en science des données
@@ -68,7 +68,7 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine.  Exclut : NFR de base*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -80,7 +80,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
   - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
   - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.
   - [envoyer une demande de support ;](https://support.datacamp.com/hc/requests/new)
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

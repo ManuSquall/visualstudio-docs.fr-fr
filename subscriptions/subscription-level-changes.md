@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bb2fa359-8170-4db0-a0c5-d49fc692b0aa
-ms.date: 03/05/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: En savoir plus sur les effets de la mise à niveau ou du téléchargement de votre niveau d’abonnement Visual Studio.
-ms.openlocfilehash: ac4355149ba66cd06ae5c1abaeb57e7065631050
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 93ea729280916cb62ba2b87ff820bb25069369d7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250096"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672980"
 ---
 # <a name="what-happens-when-you-change-visual-studio-subscription-levels"></a>Que se passe-t-il lorsque vous modifiez les niveaux d’abonnement Visual Studio ?
 Dans les abonnements Visual Studio, le logiciel, les outils, les services et les autres avantages disponibles dépendent de votre niveau d’abonnement.  En règle générale, plus votre niveau d’abonnement est élevé, plus les avantages qu’il offre sont robustes.  
@@ -63,7 +63,7 @@ Si vous utilisez un avantage qui est authentifié chaque fois que vous vous conn
 Si vous utilisez les avantages de votre abonnement actuel, mais pas ceux de l’abonnement pour lequel le vôtre est rétrogradé, vous risquez de perdre l’accès à ces avantages.  
 
 ## <a name="support-resources"></a>Ressources de support
-- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps, ou d’autres produits ou services Visual Studio ?  Consultez la [prise en charge de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f24ccfbe66075cdb5b9f0fb257e401b611862044
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e39a03fe70d2e4399b758e06e9acb2e0de59ef08
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842665"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672520"
 ---
 # <a name="require-mssql"></a>require-mssql
+
+> [!IMPORTANT]
+> Depuis le 12 avril 2021, la connexion à GitHub Codespaces à partir de Visual Studio 2019 ne sera plus prise en charge et cette version préliminaire privée s’est terminée. Nous nous concentrons sur les expériences en constante évolution d’une boucle interne basée sur le Cloud et de solutions VDI optimisées pour un large éventail de charges de travail Visual Studio. Dans le cadre de cet article `devinit` , les outils associés ne seront plus disponibles. Nous vous encourageons à participer au Forum de la communauté des développeurs pour Visual Studio afin d’obtenir des informations sur les futures versions préliminaires et les informations de feuille de route.
 
 L' `require-mssql` outil est utilisé pour installer [Microsoft SQL Server édition développeur 2019](https://www.microsoft.com/sql-server/application-development) à partir de l’aide de l’ISO de MS SQL Server. SQL Server sera disponible sur `localhost` l’authentification Windows intégrée. SQL Server sera accessible avec la chaîne de connexion `"Server=localhost;Integrated Security=true;"` .
 
@@ -36,7 +39,7 @@ Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’out
 
 La `input` propriété peut être une chaîne avec l’une des deux valeurs suivantes :
 
-| Valeur     | Description                              |
+| Value     | Description                              |
 |-----------|------------------------------------------|
 | installer   | Installe SQL Server.                     |
 | uninstall | Désinstalle toutes les installations de SQL Server. |

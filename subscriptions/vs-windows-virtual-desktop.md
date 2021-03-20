@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: Découvrez comment vous pouvez tirer parti du bureau virtuel Microsoft Windows via votre abonnement Visual Studio
-ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2e7aad5d3f8214d39e5671e4bf5c4d5d357cd930
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537953"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671737"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accéder au bureau virtuel Windows dans les abonnements 
 Les abonnés Visual Studio peuvent désormais utiliser leur crédit Azure dev/test pour les services de bureau virtuel Microsoft Windows.  
@@ -29,9 +29,9 @@ Voici ce que vous pouvez faire quand vous exécutez Windows Virtual Desktop sur 
 Les abonnés Visual Studio disposent désormais de plusieurs façons d’utiliser les abonnements Azure pour payer les services de bureau virtuel Windows :
 - [Crédits individuels Azure DevTest](vs-azure.md).  Les abonnés qui reçoivent des crédits Azure DevTest individuels dans le cadre de leur abonnement peuvent utiliser ces crédits pour payer les services de bureau virtuel Windows.  Le montant du crédit mensuel dépend du niveau d’abonnement.
 - [Abonnements Azure DevTest avec paiement à l’accès](vs-azure-payg.md).  Vous pouvez créer des abonnements Azure et associer un mode de paiement pour avoir un moyen transparent de payer l’utilisation de votre bureau virtuel Windows. 
-- [Offre Azure accord entreprise DevTest](azure-ea-devtest.md).  Grâce à cette offre, les abonnés disposant d’un contrat entreprise peuvent payer pour le bureau virtuel Windows avec Azure à prix réduit. 
+- [Offre Azure contrat entreprise DevTest](azure-ea-devtest.md).  Grâce à cette offre, les abonnés disposant d’un contrat entreprise peuvent payer pour le bureau virtuel Windows avec Azure à prix réduit. 
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 Le bureau virtuel Windows requiert une Azure Active Directory (Azure AD) à laquelle les machines virtuelles seront jointes.  Les utilisateurs doivent être membres de ce Azure AD.  Il existe deux options pour implémenter l’Azure AD :
 - Services d’annuaire Azure AD.  Pour la plupart des utilisateurs, il s’agit de l’option la plus simple à implémenter.
 - Une machine virtuelle exécutant une promotion de contrôleur de domaine.  Cette option nécessite plus de travail pour la configuration, mais offre aux utilisateurs un coût d’exploitation inférieur.
@@ -55,7 +55,7 @@ Une fois que toutes les conditions préalables sont en place, vous pouvez effect
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine, NFR Basic*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -65,6 +65,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 ## <a name="see-also"></a>Voir aussi
 - [Documentation Azure](/azure/)
 - [Documentation Windows Virtual Desktop](/azure/virtual-desktop/)
+- [Prise en charge des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Étapes suivantes
 -   Si vous avez besoin d’acheter des abonnements Visual Studio, consultez :

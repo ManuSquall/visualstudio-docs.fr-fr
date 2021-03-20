@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 12/02/2020
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Découvrez l’avantage Concierge Chat inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 468433ba6cc378fd422f1fee6c806c6a701a9e65
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538096"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672026"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat dans les abonnements Visual Studio
 Le service Concierge Chat vous aide à rechercher des informations sur les produits et de la documentation technique. Il vous permet également d’utiliser les avantages liés à votre abonnement Visual Studio.
@@ -46,7 +46,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Oui          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut : FTE, MVP (Most Valuable Professional), le directeur régional (RD), Microsoft Partner Network (MPN), imaginez.*
+<sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut : FTE, MVP (Most Valuable Professional), le directeur régional (RD), Microsoft Partner Network (MPN), imaginez.  Exclut : NFR de base*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -58,7 +58,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
    R : L’assistance pour les questions relatives aux comptes, à la facturation et aux abonnements est disponible dans plusieurs langues.  L’assistance pour la recherche de documentation technique et d’informations sur les produits est uniquement disponible en anglais.
 
 ## <a name="support-resources"></a>Ressources de support
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

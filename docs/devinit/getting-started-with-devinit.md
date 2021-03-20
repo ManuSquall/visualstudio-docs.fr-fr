@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 99daeeff40091bb3600b82b1f25cc9cf44c52cf9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 660bb5a2c3d235a347e478d55ae8176e87c5d626
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672480"
 ---
 # <a name="getting-started-with-devinit"></a>Prise en main avec devinit
+
+> [!IMPORTANT]
+> Depuis le 12 avril 2021, la connexion à GitHub Codespaces à partir de Visual Studio 2019 ne sera plus prise en charge et cette version préliminaire privée s’est terminée. Nous nous concentrons sur les expériences en constante évolution d’une boucle interne basée sur le Cloud et de solutions VDI optimisées pour un large éventail de charges de travail Visual Studio. Dans le cadre de cet article `devinit` , les outils associés ne seront plus disponibles. Nous vous encourageons à participer au Forum de la communauté des développeurs pour Visual Studio afin d’obtenir des informations sur les futures versions préliminaires et les informations de feuille de route.
 
 devinit est un outil que vous pouvez utiliser pour permettre à quiconque d’accéder au code et de rester productif dans votre référentiel en exécutant une commande simple. Vous pouvez utiliser devinit pour définir toutes les dépendances à l’ensemble du système dont votre référentiel a besoin, comme SQL Server, Node.js, docker ou IIS. Devinit peut appeler d’autres outils et gestionnaires de package pour installer ce dont votre référentiel a besoin. Vous définissez ces dépendances dans un fichier JSON nommé [.devinit.jssur](devinit-json.md) , puis la personne suivante pour utiliser votre référentiel doit simplement s’exécuter [`devinit init`](devinit-commands.md#init) pour installer toutes ces dépendances. Ainsi, au lieu de passer une demi-journée à un nouveau référentiel, cette opération peut être effectuée en quelques minutes.
 

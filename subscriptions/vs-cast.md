@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: 0acc7b62dbac66d25e61dcddfeee0c9124d66694
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: e8f218db14340171cc056075699dd80d3fb7ef55
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473320"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672052"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
 Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insights critiques. Avec la diffusion en surbrillance, les abonnés Visual Studio peuvent analyser rapidement le code source de leur application pour identifier la préparation du Cloud de leurs applications en vue d’une migration vers Azure et surveiller la progression de leur application pendant et après une migration.
@@ -86,7 +86,7 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine, NFR Basic*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.

@@ -2,7 +2,7 @@
 title: 'Didacticiel : ouvrir un projet à partir d’un référentiel dans Visual Studio 2019'
 description: Découvrez comment ouvrir un projet dans un référentiel git ou Azure DevOps à l’aide de Visual Studio 2019.
 ms.custom: get-started
-ms.date: 02/11/2021
+ms.date: 03/18/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: 5a637b2536c05e8f5678989f47dba61cd6ec7381
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 76dcd5061e2e12688f5119598071c3235e620967
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335496"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671711"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Didacticiel : ouvrir un projet à partir d’un référentiel
 
@@ -53,6 +53,9 @@ Mais quelle que soit la version que vous avez installée, vous pouvez toujours o
    ![Capture d’écran de la boîte de dialogue informations utilisateur git dans laquelle vous entrez ou modifiez les informations de votre compte dans Visual Studio 2019 version 16,8 et versions ultérieures](../ide/media/vs-2019/git-user-information-dialog.png)
 
     Sélectionnez **Enregistrer** pour ajouter les informations à votre fichier global. gitconfig. (Ou vous pouvez choisir de le faire plus tard en sélectionnant **Annuler**.)
+
+    > [!TIP]
+    > Pour plus d’informations sur la connexion à Visual Studio, consultez la page [se connecter à Visual Studio](../ide/signing-in-to-visual-studio.md) . Et pour obtenir des informations spécifiques sur l’utilisation de votre compte GitHub pour vous connecter, consultez la page [utiliser les comptes GitHub dans Visual Studio](../ide/work-with-github-accounts.md) .
 
     Ensuite, Visual Studio charge et ouvre automatiquement la solution à partir du référentiel.
 
@@ -207,5 +210,6 @@ Si vous êtes prêt à coder avec Visual Studio, suivez un des didacticiels spé
 
 - [Ouvrir un projet à partir d’un référentiel dans Visual Studio 2017](tutorial-open-project-from-repo-visual-studio-2017.md)
 - [Nouvelle expérience git dans Visual Studio 2019](../ide/git-with-visual-studio.md)
+- [Comparer git et Team Explorer côte à côte](../ide/git-team-explorer-feature-comparison.md)
 - [Azure DevOps Services : prise en main de Azure Repos et de Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn : prise en main d’Azure DevOps](/learn/modules/get-started-with-devops/)

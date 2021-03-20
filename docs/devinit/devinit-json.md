@@ -11,14 +11,17 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 47859d00861c2361ed03931bf1417e22425d6e68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f94ee609ba4c0783a06648ed037e58d864aa2a9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908123"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672206"
 ---
 # <a name="devinit-configuration-file"></a>fichier de configuration devinit
+
+> [!IMPORTANT]
+> Depuis le 12 avril 2021, la connexion à GitHub Codespaces à partir de Visual Studio 2019 ne sera plus prise en charge et cette version préliminaire privée s’est terminée. Nous nous concentrons sur les expériences en constante évolution d’une boucle interne basée sur le Cloud et de solutions VDI optimisées pour un large éventail de charges de travail Visual Studio. Nous vous encourageons à participer au Forum de la communauté des développeurs pour Visual Studio afin d’obtenir des informations sur les futures versions préliminaires et les informations de feuille de route.
 
 Le `.devinit.json` fichier définit les dépendances à l’ensemble du système nécessaires à l’exécution et à la génération de votre application. Les dépendances à l’ensemble du système sont des éléments tels que Node.js, SQL Server, IIS, RabbitMQ, docker, etc. Il s’agit de l’ordre des choses que vous devriez normalement installer sur votre boîte de développement qui ne sont pas installées par un référentiel spécifique. Il ne s’agit pas d’un endroit pour définir des dépendances spécifiques à l’application, comme vous le feriez dans des gestionnaires de packages tels que NuGet ou NPM. Toutefois, il s’agit d’un emplacement pour définir que vous avez besoin de ces gestionnaires de packages.
 
@@ -67,7 +70,7 @@ Dans un `.devinit.json` , vous pouvez spécifier plusieurs outils à exécuter. 
 | Nom         | Type   | Obligatoire | Valeur                              |
 |--------------|--------|----------|------------------------------------|
 | **commentaires** | string | Non       | Commentaires pour le fichier.             |
-| **Utilisez**      | tableau  | Oui      | [Objet RunTool](#run-tool-object) |
+| **Exécuter**      | tableau  | Oui      | [Objet RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Exécuter l’objet outil
 

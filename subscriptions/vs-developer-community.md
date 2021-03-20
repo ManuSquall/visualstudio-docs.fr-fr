@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: En savoir plus sur l’avantage du support de la communauté des développeurs inclus dans les abonnements Visual Studio sélectionnés.
-ms.openlocfilehash: 1b90a18c251e96f3c815129d81b3b09611594e99
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 68629db57397d42f91c778ee075f3a51ce2a9c78
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538044"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671987"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Forum de support de la communauté des développeurs dans les abonnements Visual Studio
 Posez des questions, trouvez des réponses et partagez vos connaissances sur les forums de la communauté des développeurs.
@@ -49,7 +49,7 @@ La disponibilité de l’avantage Azure Community dépend de votre niveau d’ab
 |                                       Plateformes MSDN (Standard)                                       |    Licences en volume, Détail     |   Disponible    |    Oui     |
 | Visual Studio Enterprise (Cloud mensuel), Visual Studio Professional (Cloud mensuel)|        Tous        | Non disponible |     Non     |
 
-<sup>1</sup>*comprend : la revente interdite (NFR), Microsoft FTE, MVP (Most Valuable Professional), le directeur régional (RD), le BizSpark, imagine, Microsoft Certified TRAINer (MCT* )  
+<sup>1</sup>  *comprend : la revente interdite (NFR), Microsoft FTE, MVP (Most Valuable Professional), le directeur régional (RD), le BizSpark, imagine, Microsoft Certified TRAINer (MCT).  Exclut : NFR de base*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -57,7 +57,7 @@ La disponibilité de l’avantage Azure Community dépend de votre niveau d’ab
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="support-resources"></a>Ressources de support
-- Besoin d’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio ?  Contactez le [Support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Besoin d’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio ?  Contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

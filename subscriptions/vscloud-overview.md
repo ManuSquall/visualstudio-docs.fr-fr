@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-ms.openlocfilehash: 6aa17046726e19086f511c7ab59ab19228142e20
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473385"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672541"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »**.
@@ -127,7 +127,7 @@ R : bien qu’ils ne soient pas en mesure d’acheter un autre abonnement annue
 - [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)
 - [FAQ sur la facturation des abonnements cloud Visual Studio](vscloud-billing-faq.md)
 - [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
-- - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
+- - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

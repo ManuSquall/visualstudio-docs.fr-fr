@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 10/28/2020
 ms.topic: overview
 description: Découvrez comment prendre en main la gestion des abonnements Visual Studio de votre organisation avec le portail d’administration des abonnements.
-ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3ac02dcd49af1c3277be0c3a15a2e3bf9c735f04
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904556"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673071"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
 
@@ -25,7 +25,7 @@ Découvrez le portail.
 ## <a name="important-considerations"></a>Points importants à prendre en compte
 Gardez ces points à l’esprit lorsque vous utilisez le portail d’administration des abonnements Visual Studio :
 - **Les abonnements Visual Studio sont fournis avec une licence par utilisateur.** Chaque abonné peut utiliser les logiciels sur un nombre illimité d’ordinateurs à des fins de développement et de test.
-- **Attribuez un seul niveau d’abonnement à chaque abonné** , en fonction de l’abonnement Visual Studio que votre organisation a acheté. Si des abonnés ont plusieurs niveaux d’abonnement, modifiez leurs paramètres de sorte qu’un seul niveau d’abonnement leur soit attribué.
+- **Attribuez un seul niveau d’abonnement à chaque abonné**, en fonction de l’abonnement Visual Studio que votre organisation a acheté. Si des abonnés ont plusieurs niveaux d’abonnement, modifiez leurs paramètres de sorte qu’un seul niveau d’abonnement leur soit attribué.
 - **Le niveau d’abonnement d’un abonné doit être mis à jour** quand l’abonnement est mis à niveau (après l’achat d’une licence de niveau supérieur) ou renouvelé à un niveau inférieur.
 - **Ne partagez pas d’abonnements entre abonnés.** Les abonnements doivent être attribués à des personnes nommées.  L’attribution d’abonnements à des équipes n’est pas autorisée.  Vous devez attribuer un abonnement à chaque personne qui utilise la totalité ou une partie des avantages de l’abonnement (logiciels de développement et de test, Microsoft Azure, eLearning, etc.).
 
@@ -57,7 +57,7 @@ Pour plus d’informations sur l’accord que vous consultez, cliquez sur la deu
 - [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Comparer les options et les prix des abonnements](https://visualstudio.microsoft.com/vs/pricing)
 - [Comparer les fonctionnalités IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare)
-- [Prise en charge des abonnements et des administrateurs Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

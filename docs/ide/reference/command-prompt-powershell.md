@@ -1,6 +1,6 @@
 ---
 title: Interpréteurs de ligne de commande pour les développeurs
-description: Découvrez comment rechercher et utiliser les Invite de commandes développeur pour Visual Studio, Developer PowerShell et Visual Studio terminal, qui vous permettent d’utiliser plus facilement les outils .NET et C++.
+description: Découvrez comment rechercher et utiliser Visual Studio Invite de commandes développeur, Visual Studio Developer PowerShell et Visual Studio terminal, qui vous permettent d’utiliser plus facilement les outils .NET et C++.
 ms.date: 03/04/2021
 ms.custom: contperf-fy21q3
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249746"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672323"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>Invite de commandes développeur et Developer PowerShell
 
 Visual Studio 2019 comprend deux interpréteurs de ligne de commande pour les développeurs :
 
-- **Invite de commandes développeur pour Visual Studio** : invite de commandes standard avec certaines variables d’environnement définies pour faciliter l’utilisation des outils de développement en ligne de commande.
-- **Developer PowerShell** -plus puissant qu’une invite de commandes. Par exemple, vous pouvez passer la sortie d’une commande (appelée *cmdlet* ) à une autre cmdlet . Ce Shell a les mêmes variables d’environnement que Invite de commandes développeur.
+- **Visual Studio invite de commandes développeur** : une invite de commandes standard avec certaines variables d’environnement définies pour faciliter l’utilisation des outils de développement en ligne de commande. Disponible depuis Visual Studio 2015.
+- **Visual Studio Developer PowerShell** -plus puissant qu’une invite de commandes. Par exemple, vous pouvez passer la sortie d’une commande (appelée *cmdlet* ) à une autre cmdlet . Ce Shell a les mêmes variables d’environnement que Invite de commandes développeur. Disponible depuis Visual Studio 2019.
 
 Les deux shells ont des variables d’environnement spécifiques qui vous permettent d’utiliser plus facilement les outils de développement en ligne de commande. Après avoir ouvert l’un de ces shells, vous pouvez entrer les commandes de différents utilitaires sans savoir où ils se trouvent. Les commandes que vous pouvez exécuter sont les suivantes :
 
@@ -40,10 +40,6 @@ Les deux shells ont des variables d’environnement spécifiques qui vous permet
 :::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="Terminal Visual Studio présentant plusieurs onglets":::
 
 Lorsque vous ouvrez l’un des shells de développement à partir de Visual Studio, soit en tant qu’application distincte, soit dans la fenêtre de terminal, il s’ouvre dans le répertoire de votre solution actuelle (si vous avez une solution chargée). Ce comportement permet d’exécuter des commandes sur la solution ou ses projets.
-
-## <a name="prerequisites"></a>Prérequis
-
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## <a name="start-the-shell-from-inside-visual-studio"></a>Démarrer l’interpréteur de commandes à partir de Visual Studio
 

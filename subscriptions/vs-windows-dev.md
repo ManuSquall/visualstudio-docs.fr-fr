@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 02/09/2021
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
-ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
+ms.openlocfilehash: 4ea61f0bdb131c20412c0b99bbd09cbc44777fb7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672759"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -55,7 +55,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
-<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & services DEVELOPer, MVP (Most Valuable Professional), Bureau régional. Exclut : Microsoft Partner Network (MPN), imagine, MCT Software & services.*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & services DEVELOPer, MVP (Most Valuable Professional), Bureau régional. Exclut : Microsoft Partner Network (MPN), imagine, MCT Software & services, NFR Basic.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -65,10 +65,10 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide pour l’utilisation de votre compte de développeur Windows ?  Consultez les ressources de [support](https://developer.microsoft.com/windows/support) du [Centre de développement Windows](https://developer.microsoft.com/windows).
 - [Développement Windows](/windows/)
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez la [prise en charge des abonnements](https://my.visualstudio.com/gethelp)Visual Studio Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
 - [Documentation Azure DevOps](/azure/devops/)
 - [Documentation Azure](/azure/)

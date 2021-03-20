@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Découvrir l’avantage CloudPilot disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: 4d9b7bea4b2165b8efc9f57396b078c42a5fc8eb
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 466358af00fe0f174043989c6eb54e976d98d3be
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473359"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672065"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Avantage CloudPilot dans les abonnements Visual Studio
 Migrez vos applications vers Microsoft Azure en quelques étapes simples. Identifiez en quelques minutes tous les changements de code nécessaires, jusqu’à la ligne de code, pour réussir la migration vers des conteneurs, des machines virtuelles, App Services, SQL Azure et/ou SQL MI. Ensuite, migrez les applications vers Azure à l’aide d’Assistants tirant parti des fonctionnalités ASR, DMA et DMS.
@@ -68,7 +68,7 @@ Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à m
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine, NFR Basic*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -79,8 +79,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Besoin d’aide pour utiliser CloudPilot ?  Consultez les ressources suivantes :
   - [Contactez UnifyCloud](https://www.unifycloud.com/contacts/) pour toute demande de renseignements sur les produits UnifyCloud.
   - [Manuel de l’utilisateur de CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-  - [envoyer une demande de support ;](https://support.datacamp.com/hc/requests/new)
-
 - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, consultez [prise en charge des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 

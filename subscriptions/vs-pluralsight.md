@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: 6d12fcf49184d8e8293d4f4e3a3c552e859d3afe
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100542988"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671698"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -82,7 +82,7 @@ Une fois votre abonnement Pluralsight expiré, son état passe à « 0 jour res
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programme      | Non disponible |       N/D       |
 ||
 
-<sup>1</sup>  *comprend : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & service, MVP (Most Valuable Professional), RD (Regional Director), Microsoft Partner Network (MPN), ETP, imagine.*
+<sup>1</sup>  *comprend : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & service, MVP (Most Valuable Professional), RD (Regional Director), Microsoft Partner Network (MPN), ETP, imagine. Exclut : NFR de base.*
 
 <sup>2</sup>  *l’avantage de Pluralsight dans les abonnements Visual Studio sélectionnés renouvelle votre abonnement. Par exemple, si vous avez un abonnement annuel que vous renouvelez chaque année, l’avantage est disponible chaque année lorsque vous le renouvelez. Si vous avez un abonnement de plusieurs années, l’avantage Pluralsight est disponible une fois pendant la durée de l’abonnement.  Si vous renouvelez un abonnement de plusieurs années, l’avantage sera à nouveau disponible après le renouvellement.*
 
@@ -110,7 +110,7 @@ R : À la fin de votre abonnement Pluralsight gratuit, vous pouvez choisir d’
 
 ## <a name="support-resources"></a>Ressources de support
 - [Pluralsight Help Center](https://help.pluralsight.com/help) vous aide à sélectionner des cours Pluralsight ou à utiliser le site web de Pluralsight.
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 1801ed8deae3294837078401420e16efdc016979
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538070"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672902"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -72,7 +72,7 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 | Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |N/D|
 ||
 
-<sup>1</sup>  *comprend : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & service, MVP (Most Valuable Professional), Bureau régional.  Exclut : Microsoft Partner Network (MPN), FTE, imagine.*
+<sup>1</sup>  *comprend : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & service, MVP (Most Valuable Professional), Bureau régional.  Exclut : Microsoft Partner Network (MPN), FTE, imagine, NFR de base.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -110,7 +110,7 @@ R : Non.  Les locataires de type Secteur public ne peuvent pas bénéficier de 
   - Consultez la [documentation en ligne](/power-bi/).
   - Problèmes d’inscription ?  Consultez [Inscription individuelle à Power BI](/power-bi/service-self-service-signup-for-power-bi).
   - Découvrez les principaux problèmes, obtenez de l’aide auprès de la communauté ou envoyez un ticket de support sur la [page de support](https://powerbi.microsoft.com/support/).
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

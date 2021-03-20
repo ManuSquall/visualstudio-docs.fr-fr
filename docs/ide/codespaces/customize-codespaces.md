@@ -11,14 +11,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e23ca3255761f4d93f89251d00c12c14aecf7b9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971152"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672349"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Comment personnaliser un codeSpace (version préliminaire)
+
+> [!Important] 
+> Depuis le 12 avril 2021, la connexion à GitHub Codespaces à partir de Visual Studio 2019 ne sera plus prise en charge et cette version préliminaire privée s’est terminée. Nous nous concentrons sur les expériences en constante évolution d’une boucle interne basée sur le Cloud et de solutions VDI optimisées pour un large éventail de charges de travail Visual Studio. Nous vous encourageons à participer au [Forum](https://developercommunity.visualstudio.com/home) de la communauté des développeurs pour Visual Studio afin d’obtenir des informations sur les futures versions préliminaires et les informations de feuille de route. 
 
 GitHub Codespaces fournit un environnement de développement complet dans le Cloud. Pour le développement basé sur Windows à l’aide de Visual Studio 2019, les instances par défaut de GitHub Codespaces fournissent un excellent point de départ, mais vous pouvez également personnaliser l’environnement pour votre projet spécifique.
 
@@ -166,7 +169,7 @@ S’il existe un ou plusieurs ports qui doivent être transférés par défaut p
 
 ## <a name="installed-software-specifics"></a>Caractéristiques logicielles installées
 
-### <a name="microsoft-sql-server"></a>Microsoft SQL Server
+### <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
 Microsoft SQL Server 2019 Express Edition est disponible et s’exécute en tant que service local dans l’environnement Windows codeSpace. L’utilisateur actuel, sur lequel votre application et le terminal Visual Studio s’exécutent, disposent de droits d’administrateur SQL sur le serveur SQL Server. Pour administrer le serveur, vous devez utiliser PowerShell dans le terminal Visual Studio ou d’autres outils de ligne de commande tels que `dotnet-ef` . Actuellement SQL Server Management Studio et d’autres outils d’administration à distance ne sont pas disponibles.
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Découvrez l’avantage du Support de la communauté Azure inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 43633e20bbf10988092a2d98d7d0a5ddd9b08601
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473333"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672105"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum du Support de la communauté Azure dans les abonnements Visual Studio
 Obtenez de l’aide directement de la part de l’équipe Azure au sein de forums de support sélectionnés via la Communauté Azure.  L’avantage Communauté Azure vous offre l’accès à une collection de forums axés sur les rubriques relatives à Azure.
@@ -24,7 +24,7 @@ Obtenez de l’aide directement de la part de l’équipe Azure au sein de forum
         - [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)  
         - [Gestion des API Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)  
         - [Azure App Service - Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
-        - [Sauvegarde Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
+        - [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
         - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)  
         - [portail de gestion Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)  
@@ -78,7 +78,7 @@ La disponibilité de l’avantage Azure Community dépend de votre niveau d’ab
 |                                       Plateformes MSDN (Standard)                                       |    Licences en volume, Détail     |   Disponible    |    Oui     |
 | Visual Studio Enterprise (Cloud mensuel), Visual Studio Professional (Cloud mensuel)|        Tous        | Non disponible |     Non     |
 
-<sup>1</sup>*comprend : la revente interdite (NFR), Microsoft FTE, MVP (Most Valuable Professional), le directeur régional (RD), le BizSpark, imagine, Microsoft Certified TRAINer (MCT* )  
+<sup>1</sup>  *comprend : la revente interdite (NFR), Microsoft FTE, MVP (Most Valuable Professional), le directeur régional (RD), le BizSpark, imagine, Microsoft Certified TRAINer (MCT). Exclut : NFR de base*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.

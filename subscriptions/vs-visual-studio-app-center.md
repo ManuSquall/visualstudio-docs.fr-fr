@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85d8a8aeda72e9a5c8fc94e98d1cbec22af32221
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537771"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672707"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -50,7 +50,7 @@ La mise en route de Visual Studio App Center est simple.
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Inclus                                                            |Oui |
 ||
 
-<sup>1</sup>  *comprend : non pour la revente (NFR), FTE, Visual Studio Industry Partner (VSIP), imaginez, Microsoft Partner Network (MPN), MCT Software & services, MCT Software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (RD).*
+<sup>1</sup>  *comprend : non pour la revente (NFR), FTE, Visual Studio Industry Partner (VSIP), imaginez, Microsoft Partner Network (MPN), MCT Software & services, MCT Software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (RD).  Exclut : NFR de base*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -71,7 +71,7 @@ Vous devriez à présent être en mesure d’accéder au portail App Center et d
 - Besoin d’aide avec App Center ?
   - Pour obtenir des conseils et des réponses de l’équipe d’App Center, accédez au centre d’aide [App Center Help Center](https://intercom.help/appcenter/).
   - Consultez la [documentation complète sur App Center](/appcenter/).
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez la [prise en charge des abonnements](https://my.visualstudio.com/gethelp)Visual Studio Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

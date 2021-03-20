@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: En savoir plus sur l’avantage CODE magazine inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597398"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672039"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazine de CODE inclus dans les abonnements Visual Studio
 
@@ -58,7 +58,7 @@ Une fois votre commande d’abonnement terminée, une page de confirmation s’a
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 | Visual Studio Enterprise NFR<sup>1</sup> | NFR | Non disponible | N/A |
 
-<sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner), FTE, BizSpark, imaginez, imagine Premium, Microsoft Partner Network (MPN), le MVP (Most Valuable Professional), le directeur régional (RD), MCT Software & Services Developer, MCT Software & services.*
+<sup>1</sup>  * comprend : la revente interdite (NFR), le programme VSIP (Visual Studio Industry Partner), ETP, BizSpark, imagine, l’imagine Premium, le Microsoft Partner Network (MPN), le MVP (Most Valuable Professional), le directeur régional, les services mct Software & Developer, mct Software & services.  
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -74,7 +74,7 @@ R : le magazine de CODE recueille votre adresse, que l’abonnement soit destin
 
 ## <a name="support-resources"></a>Ressources de support
 - Vous avez des questions concernant votre abonnement CODE magazine ?  Contactez le [magazine de code](https://www.codemag.com/contact) par e-mail ou par téléphone, ou soumettez une demande de support en ligne.
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

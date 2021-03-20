@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: dcf242dc09c833b091454ea1863184229e3b71c0
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537888"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672915"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -79,7 +79,7 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 
-<sup>1</sup>  *exclut : NFR, les partenaires de l’industrie Visual Studio, les Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (plus précieux Professional), RD (Regional Director).  Services de & de logiciel MCT.*
+<sup>1</sup>  *exclut : NFR, NFR de base, Visual Studio Industry Partner, Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (le plus précieux Professional), RD (Regional Director).  Services de & de logiciel MCT.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -94,7 +94,7 @@ R : Non, l’offre LinkedIn Learning est réservée uniquement aux nouveaux abo
 - Besoin d’aide avec LinkedIn Learning ?  Consultez les ressources suivantes :
   - Aide sur [l’utilisation de LinkedIn Learning](https://www.linkedin.com/help/learning).
   - Aide sur des questions générales relatives à [LinkedIn](https://www.linkedin.com/help/linkedin), telles que la création de comptes et de profils, ou la gestion de votre réseau.
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

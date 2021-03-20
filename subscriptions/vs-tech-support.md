@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 77856cf8a1f3497f66e89110e7b951c768da8c28
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537966"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672131"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
 L’avantage Support technique dans les abonnements Visual Studio permet de résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les **environnements hors production** pour les produits se trouvant toujours dans la phase de support standard du [cycle de vie du support](https://support.microsoft.com/lifecycle/search). Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, tandis que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux (pendant un an à compter de l’activation de l’avantage). L’avantage doit être activé quand l’abonnement est actif.
@@ -116,12 +116,15 @@ Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnemen
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
-<sup>1</sup> *comprend : imagine Premium, BizSpark. Exclut : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, imagine standard, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & services.*
+<sup>1</sup> *comprend : imagine Premium, BizSpark. Exclut : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, imagine standard, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & services. Exclut : NFR de base*
 
 <sup>2</sup> *Inclut : Imagine Standard.*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
+- 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
 - [Documentation Azure DevOps](/azure/devops/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: def7e206fee75dcc76212df2163e41a8b1a96a83
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537680"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671805"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -51,14 +51,14 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
-<sup>1</sup>  *comprend : Microsoft Partner Network (Enterprise).  Exclut : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, imagine, le MVP (Most Valuable Professional), Bureau régional.  Services de & de logiciel MCT.*
+<sup>1</sup>  *comprend : Microsoft Partner Network (Enterprise).  Exclut : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, imagine, le MVP (Most Valuable Professional), Bureau régional.  MCT Software & services, NFR de base.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide avec WhiteSource Bolt ?  Conversez en direct avec un représentant WhiteSource Bolt sur https://www.whitesourcesoftware.com/vse_whitesource_bolt/
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez la [prise en charge des abonnements](https://my.visualstudio.com/gethelp)Visual Studio Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

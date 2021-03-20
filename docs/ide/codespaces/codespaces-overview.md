@@ -11,25 +11,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 374e07735667a2a8891824b23d49b061651b3b95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911729"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672785"
 ---
 # <a name="what-is-github-codespaces-preview"></a>Qu’est-ce que GitHub Codespaces ? (Préversion)
 
+> [!Important] 
+> Depuis le 12 avril 2021, la connexion à GitHub Codespaces à partir de Visual Studio 2019 ne sera plus prise en charge et cette version préliminaire privée s’est terminée. Nous nous concentrons sur les expériences en constante évolution d’une boucle interne basée sur le Cloud et de solutions VDI optimisées pour un large éventail de charges de travail Visual Studio. Nous vous encourageons à participer au [Forum](https://developercommunity.visualstudio.com/home) de la communauté des développeurs pour Visual Studio afin d’obtenir des informations sur les futures versions préliminaires et les informations de feuille de route. 
+
 Bienvenue dans Codespaces ! Nous sommes heureux que vous soyez ici.
 
-GitHub Codespaces fournit un environnement de développement basé sur le Cloud pour toutes les activités, qu’il s’agisse d’un projet à long terme ou d’une tâche à long terme telle que la révision d’une demande de tirage (pull request). Vous pouvez utiliser un codeSpace dans Visual Studio 2019 Preview (s'[inscrire à la version bêta publique limitée](https://github.com/features/codespaces/signup-vs)).
+GitHub Codespaces fournit un environnement de développement basé sur le Cloud pour toutes les activités, qu’il s’agisse d’un projet à long terme ou d’une tâche à long terme telle que la révision d’une demande de tirage (pull request).
 
 En outre, GitHub Codespaces offre un grand nombre des avantages de DevOps, tels que la répétabilité et la fiabilité, &mdash; qui ont généralement été réservés aux charges de travail de production &mdash; dans un environnement de développement. Vous pouvez également personnaliser GitHub Codespaces de sorte que les outils, les processus et les configurations que vous préférez et que vous utilisez soient également là.
 
 Ce document explique les concepts clés et présente les fonctionnalités de Codespaces. Si vous envisagez de commencer, consultez [utiliser Visual Studio avec un codeSpace](use-visual-studio-with-codespaces.md).
-
-> [!IMPORTANT]
-> Vous devez vous inscrire à la [version bêta publique](https://github.com/features/codespaces/signup-vs) limitée pour utiliser GitHub Codespaces. Pendant la période bêta, GitHub n’apporte aucune garantie quant à la disponibilité de Codespaces. Pour plus d’informations sur la jointure de la version bêta, consultez [à propos de Codespaces](https://docs.github.com/github/developing-online-with-codespaces/about-codespaces#joining-the-beta).
 
 ## <a name="concepts-and-features"></a>Concepts et fonctionnalités
 

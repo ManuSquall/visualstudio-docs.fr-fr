@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Découvrez comment télécharger et installer l’IDE Visual Studio inclus dans votre abonnement Visual Studio
-ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2cff154f61d662f180fe5087a877073a9d84e27c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538057"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672000"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Avantage Visual Studio 2019
 
@@ -69,7 +69,7 @@ Pour télécharger l’IDE :
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Oui         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 
-<sup>1</sup>  *comprend : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (le plus précieux Professional), RD (Regional Director).  Exclut : services de & de logiciel MCT.*
+<sup>1</sup>  *comprend : la revente interdite (NFR), le BizSpark de base, le programme VSIP (Visual Studio Industry Partner), le Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer,, imagine, MVP (le plus précieux), le directeur régional (RD).  Exclut : services de & de logiciel MCT.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -80,7 +80,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Si vous avez besoin d’aide avec l’IDE Visual Studio, consultez les ressources suivantes :
   - Support technique : [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Documentation](/visualstudio/)
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://my.visualstudio.com/gethelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
