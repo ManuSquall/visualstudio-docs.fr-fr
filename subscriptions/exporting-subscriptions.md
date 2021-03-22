@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Découvrez comment exporter une liste d’abonnés et des informations de leurs attributions d’abonnement.
-ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 991128fc0f45b0caa0727c8ab418ba632d90e60c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250030"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776816"
 ---
 # <a name="export-subscription-information"></a>Exporter les informations d’abonnement
 Dans le [portail d’administration](https://manage.visualstudio.com)des abonnements Visual Studio, vous pouvez exporter une liste de vos abonnés et des détails sur leurs affectations. Ces informations comprennent : nom, adresse e-mail, adresse e-mail alternative, niveau d’abonnement, date d’attribution, état d’activation, date d’expiration, champ de référence, si les téléchargements sont activés, pays, langue, état de l’abonnement et GUID d’abonnement.  La liste est exportée en tant que fichier CSV qui peut être facilement ouvert dans Microsoft Excel pour la création de graphiques, de tableaux croisés dynamiques et d’autres artefacts.
@@ -33,7 +33,7 @@ Pour effectuer l’exportation :
 > ![Exporter des abonnés](_img/exporting-subscriptions/exporting-subscriptions.png "Cliquez sur Exporter pour télécharger la liste complète de vos abonnements attribués.")
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Prise en charge des abonnements](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
-ms.date: 06/24/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: En savoir plus sur et installer des applications Microsoft 365 pour l’entreprise
-ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: e1d629aae2d3c9e5d906a5593c287bd0b3250446
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537823"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776712"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Applications Microsoft 365 pour l’entreprise dans les abonnements Visual Studio
 Les applications Microsoft 365 pour l’entreprise (anciennement Office 365 Pro plus) sont disponibles dans les abonnements Visual Studio sélectionnés. 
@@ -34,7 +34,7 @@ Le processus d’activation de vos applications Microsoft 365 pour l’abonnemen
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 des applications pour les informations des clients d’entreprise](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Entrer vos informations de contact")
 
-1. Dans la boîte de dialogue « créer votre ID utilisateur », créez votre nom d’utilisateur et votre mot de passe pour votre locataire, puis sélectionnez **créer mon gratuit**.
+1. Dans la boîte de dialogue « créer votre ID utilisateur », créez votre nom d’utilisateur et votre mot de passe pour votre locataire, puis sélectionnez **créer mon compte**.
    > [!div class="mx-imgBorder"]
    > ![Applications de Microsoft 365 pour la création d’ID d’utilisateur d’entreprise](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Créer votre ID d’utilisateur et votre mot de passe")
 
@@ -74,7 +74,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support
 - Pour obtenir un support technique avec n’importe quel composant de Microsoft 365 apps pour l’entreprise, consultez https://support.microsoft.com/allproducts le produit et sélectionnez-le.
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://aka.ms/vssubscriberhelp)Visual Studio.
 - Vous avez des questions concernant l’environnement IDE Visual Studio, Azure DevOps ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi

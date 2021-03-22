@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Découvrir en quoi consiste la disponibilité des produits dans les téléchargements de logiciels pour les abonnements Visual Studio
-ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 8188395c236ae116c36da7f60f0afb8042cb81b3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005857"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776621"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilité des produits pour les téléchargements de logiciels inclus dans les abonnements Visual Studio
 Dans le cadre de vos avantages réservés aux abonnés, vous avez accès à un large éventail de téléchargements de logiciels.
@@ -37,6 +37,9 @@ Le nombre et le type de téléchargements dépendent de votre niveau d’abonnem
 > Si vous avez plusieurs abonnements associés à la même adresse e-mail, les logiciels disponibles dépendent du **plus haut** niveau d’abonnement dont vous disposez.  Par exemple, si vous avez un abonnement Visual Studio Enterprise et un abonnement Visual Studio Test Professional, vous avez accès aux logiciels fournis avec l’abonnement Visual Studio Enterprise, quel que soit l’abonnement utilisé dans le portail des abonnements. 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
+
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

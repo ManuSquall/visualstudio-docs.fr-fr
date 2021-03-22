@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005831"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776751"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 
@@ -71,11 +71,10 @@ Cette restriction à un usage interne signifie principalement que les partenaire
 Avec les abonnements Visual Studio offerts par le biais du réseau MPN, l’utilisateur sous licence doit se connecter à Visual Studio à l’aide de la même identité/connexion que celle utilisée pour activer l’abonnement Visual Studio. Les clés de produit ne sont pas proposées pour déverrouiller le produit. la connexion est la seule option pour l’exécution de Visual Studio. Les abonnés Visual Studio peuvent travailler en mode hors connexion pendant 30 jours avant que Visual Studio ne cesse de fonctionner. Quand vous travaillez en ligne, Visual Studio actualise silencieusement et régulièrement l’état de la licence utilisateur pour s’assurer que l’abonnement est toujours valide.
 
 ## <a name="resources"></a>Ressources
-
 - [Guide des programmes Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Affecter des abonnements Visual Studio à des employés MPN](manage-mpn-subscriptions.md)
 - [Conditions d’utilisation](https://www.microsoft.com/useterms/) : les abonnements Visual Studio offerts par le biais du réseau MPN sont soumis au CLUF des abonnements Visual Studio relatif à la revente interdite.
-
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

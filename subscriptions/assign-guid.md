@@ -3,15 +3,15 @@ title: Assigner des GUID spécifiques à des abonnés Visual Studio | Microsoft 
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 02/18/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent avoir un GUID d’abonnement spécifique aux abonnés
-ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249681"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776648"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Affecter des abonnements spécifiques dans le portail d’administration des abonnements Visual Studio
 
@@ -63,7 +63,7 @@ La dernière étape consiste à télécharger le modèle d' **Ajout en bloc** , 
 R : Si vous souhaitez modifier le GUID affecté à un utilisateur, vous devez d’abord supprimer l’abonnement de cet utilisateur.  Pour plus d’informations, consultez notre article sur la [suppression des abonnements](delete-license.md) pour plus d’informations.  Après avoir supprimé l’abonnement pour cet utilisateur, utilisez la procédure décrite ci-dessus pour exporter la liste et télécharger les nouvelles informations d’abonnement.  
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Prise en charge des abonnements](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)
@@ -78,5 +78,3 @@ Maintenant que vous avez attribué des abonnements aux utilisateurs, Découvrez 
 - [Modifier des abonnements](edit-license.md)
 - [Supprimer des abonnements](delete-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)
-
-

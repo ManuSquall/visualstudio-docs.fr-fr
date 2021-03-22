@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/05/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: En savoir plus sur la gestion des abonnements Visual Studio dans un contrat Microsoft Products and services (MPSA)
-ms.openlocfilehash: 49f18b540d27678b46a5fa111c76a069b705309d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 63124e8853184fde04db7bc202e5acea3cfbe89f
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249464"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776530"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 Si vous avez acheté des abonnements Visual Studio via le programme MPSA, vous devez connaître quelques éléments avant de pouvoir devenir administrateur des abonnements Visual Studio et affecter des abonnements à vos utilisateurs. Si vous avez déjà été configuré en tant qu’administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com/)des abonnements Visual Studio.
@@ -56,6 +56,9 @@ Pour obtenir une explication plus détaillée de ce processus, vous pouvez utili
 
 > [!NOTE]
 > Lorsque vous terminez le processus de prise de contrôle de domaine, vous devez respecter les critères des cinq étapes décrites dans la section relative à l’Association de pré-locataires (gérée). Une fois les critères remplis, il est nécessaire de contacter le support MPSA pour approvisionner d’autres administrateurs d’abonnements Visual Studio.
+
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur l’administration des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: En savoir plus sur la responsabilité des administrateurs pour suivre les attributions d’utilisateurs et traiter les commandes.
-ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 9ba54d13f4481f68d13e43a2e21f62036d23cab3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249491"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776985"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Effectuer le suivi de l’attribution des utilisateurs et traiter les commandes
 L’administrateur des abonnements Visual Studio doit suivre l’utilisation de Visual Studio et traiter les commandes pour toute augmentation de l’utilisation selon la planification dans le contrat de licence en volume ou le contrat de produits et services Microsoft. Le nouveau portail d’administration des abonnements Visual Studio facilite cette opération grâce à un dispositif de suivi utile qui affiche vos licences disponibles et utilisées.
@@ -38,7 +38,7 @@ Vous pouvez assigner des abonnements par le biais de programmes tels que Open Li
 Les contrats entreprise Microsoft, MPSA et SELECT plus vous donnent la flexibilité nécessaire pour utiliser et attribuer une licence à Visual Studio dans le temps. Les administrateurs Visual Studio doivent effectuer un True-Up annuel pour mettre leurs licences logicielles à l’usage maximal établi au cours de la période du contrat.
 
 ## <a name="resources"></a>Ressources
-- Vous avez besoin d’aide ?  Contactez le support pour les [abonnements](https://visualstudio.microsoft.com/subscriptions/support/).
+- Vous avez besoin d’aide ?  Contactez le support pour les [abonnements](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

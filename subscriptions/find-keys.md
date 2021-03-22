@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Découvrir comment rechercher, réclamer et exporter des clés de produit dans les abonnements Visual Studio
-ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249269"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776569"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Recherche et réclamation de clés de produit dans les abonnements Visual Studio
 Cet article explique comment localiser, réclamer et exporter des clés de produit à partir de https://my.visualstudio.com/productkeys.  Pour plus d’informations sur l’activation d’un produit avec une clé, les versions commerciales et de licence en volume des clés, ainsi que les limites de la revendication de clé de produit quotidienne, consultez la [vue d’ensemble des clés de produit](product-keys.md).
@@ -67,7 +67,7 @@ Vous pouvez exporter une liste des clés que vous avez demandées.  Cela compren
 Pour exporter vos clés, sélectionnez le lien **exporter toutes les clés** à l’extrême droite de la page clés de produit.  Un fichier. xml intitulé KeysExport.xml est créé, et vous pouvez choisir d’ouvrir ou d’enregistrer le fichier.  Vous devez ouvrir le fichier avec une application prenant en charge les fichiers .xml.  Par exemple, vous pouvez ouvrir le fichier en tant que classeur en lecture seule dans Excel.
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements Visual Studio](https://my.visualstudio.com/gethelp)
+- [Prise en charge des abonnements Visual Studio](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

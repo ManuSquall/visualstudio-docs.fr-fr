@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 12/02/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent résoudre les abonnements sur-alloués
-ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537745"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776556"
 ---
 # <a name="over-allocated-subscriptions"></a>Abonnements alloués
 Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. C’est ce que l’on appelle « sur-allocation ».  
@@ -45,4 +45,4 @@ Si votre organisation a un Contrat Entreprise (EA), les administrateurs peuvent 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - En savoir plus sur la gestion des [abonnements Visual Studio avec Github Enterprise](assign-github.md).
-- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://aka.ms/vsadminhelp)Visual Studio.

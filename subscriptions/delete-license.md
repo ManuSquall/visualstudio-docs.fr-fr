@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent supprimer des affectations d’abonnements dans le portail d’administration des abonnements Visual Studio
-ms.openlocfilehash: efd0e149f390dd21a286b6ab7405ec36a43b8f78
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: d0ce93855cf56dab5e1a333e41e24ac2a368a540
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225974"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776931"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Supprimer des attributions dans les abonnements Visual Studio
 Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple quand il sort de l’entreprise, termine un projet ou bascule vers un nouveau rôle, vous pouvez supprimer son abonnement et l’attribuer à une autre personne. Notez que lorsque vous réattribuez un abonnement, tous les avantages de l’abonné ne sont pas réinitialisés.  Le nouvel utilisateur peut demander les clés non demandées et afficher celles précédemment demandées, mais le nombre maximal de demandes autorisées n’est **pas** réinitialisé.  Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés. 
@@ -36,7 +36,7 @@ Regardez cette vidéo ou lisez la suite pour apprendre à supprimer des affectat
    > Si vous avez ajouté des affectations d’abonnement par le biais de Azure Active Directory groupes de sécurité, la suppression de la suppression dans le portail d’administration peut prendre jusqu’à 24 heures.  Pour plus d’informations sur l’utilisation des groupes de Azure Active Directory pour gérer les abonnements, consultez [notre article](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) . 
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)
+- [Prise en charge des abonnements](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904680"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776830"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -70,8 +70,8 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 
 1. Sélectionnez votre nom dans l’angle supérieur droit du portail de l’abonné.
 2. Sélectionnez le bouton **modifier le profil** .
-3. Sous l’onglet **À propos de** , vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences** , vous pouvez sélectionner la langue, les modèles de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur par défaut.
-4. Une fois les modifications finalisées, sélectionnez **Enregistrer** .
+3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences** , vous pouvez sélectionner la langue, les modèles de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur par défaut.
+4. Une fois les modifications finalisées, sélectionnez **Enregistrer**.
 5. Sélectionnez le bouton **précédent** de votre navigateur pour revenir à la page des avantages.
 
 ### <a name="setting-communications-preferences"></a>Définition des préférences de communication
@@ -89,8 +89,8 @@ Pour ajouter un autre compte :
 
 1. Connectez-vous au [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs) à l’aide de votre compte Microsoft (MSA).
 2. Sélectionnez l'onglet **Abonnements** .
-3. Sous **Liens connexes** , choisissez **Ajouter un autre compte** .
-4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis sélectionnez **Ajouter** .
+3. Sous **Liens connexes**, choisissez **Ajouter un autre compte**.
+4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis sélectionnez **Ajouter**.
 
 Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en sélectionnant l’onglet **abonnements** et en choisissant l’option appropriée dans la section **liens connexes** .
 
@@ -99,7 +99,7 @@ Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q : Si je ne renouvelle pas mon abonnement, combien de temps Microsoft conserve mes données ?
 R : En fonction du canal d’achat, Microsoft conserve les données des clients pendant une durée définie.
 
-| Channel                                                | Durée (jours) |
+| Canal                                                | Durée (jours) |
 |--------------------------------------------------------|-----------------|
 |    Vente au détail (par exemple, via le Microsoft Store)               |    360          |
 |    Centre de gestion des licences en volume (VLSC)              |    180          |
@@ -112,6 +112,9 @@ R : En fonction du canal d’achat, Microsoft conserve les données des clients
 > [!NOTE]
 > - Si vous choisissez de fermer votre compte Microsoft ou Azure AD, vos données personnelles deviennent immédiatement anonymes.
 > - Nous ne supprimons pas entièrement toutes vos données personnelles si vous avez des abonnements actifs.
+
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

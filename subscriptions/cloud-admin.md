@@ -1,18 +1,18 @@
 ---
 title: Configuration des administrateurs pour les abonnements Visual Studio mensuels | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Configuration des administrateurs pour les abonnements mensuels
-ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 220f5986bb06b638504379b63e911f9bb62926b5
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249537"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776946"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Configurer des administrateurs pour les abonnements mensuels Visual Studio
 
@@ -60,8 +60,7 @@ Le nouvel administrateur peut maintenant se connecter au [portail d’administra
 Pour plus d’informations sur les abonnements mensuels Visual Studio, consultez la [vue d’ensemble](vscloud-overview.md) sous achat d’abonnements. Pour acheter des abonnements mensuels Visual Studio, visitez le Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 
 ## <a name="resources"></a>Ressources
-- [Prise en charge des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)
-
+- [Prise en charge des abonnements](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

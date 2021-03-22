@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Découvrir comment utiliser les clés de produit pour prendre en charge les démonstrations Internet via les services Terminal Server et activer l’accès des Services Bureau à distance
-ms.openlocfilehash: 9a63436e38779a51ba414969b36a2bb166e6cab9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c074dfe12ed7c1fea5ad60f7e0c8019e133a6d1b
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904619"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776543"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet via les services Terminal Server
 Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrations Internet de vos programmes aux utilisateurs finaux par le biais des services Terminal Server (Windows Server 2003 ou Windows Server 2008) ou des services Bureau à distance (Windows Server 2008 R2 ou versions ultérieures). Jusqu’à 200 utilisateurs anonymes peuvent ainsi accéder simultanément à votre démonstration. Votre démonstration ne doit pas utiliser de données de production. Les abonnés Visual Studio sont autorisés à démontrer leurs applications aux utilisateurs finaux. Les services Terminal Server ou Bureau à distance sont les seuls moyens pour les utilisateurs finaux sans abonnement Visual Studio d’interagir avec l’application démontrée quand le logiciel est concédé sous licence par le biais d’abonnements Visual Studio.
@@ -35,8 +35,11 @@ Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se
 - 200 connexions utilisateur au maximum peuvent être utilisées simultanément pour les démonstrations de l’application.
 - Les clés de produit permettant d’activer les connexions utilisateur doivent être obtenues par un abonné Visual Studio.
 
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vssubscriberhelp).
+
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Windows Server](/windows-server/)
+- [Documentation Windows Server](/windows-server/)
 - [Documentation de Visual Studio](/visualstudio/)
 - [Documentation Azure DevOps](/azure/devops/)
 - [Documentation Azure](/azure/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 99c22d74a9a6fb57e79f699e548de928ef1ebcb6
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189041"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776998"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio : pourquoi les comptes personnels s’affichent-ils pour mes abonnés ?
 Une fois que les sociétés ont migré du centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio, les administrateurs ont été surpris de trouver que l’adresse de messagerie de connexion pour certains abonnés affiche une adresse de messagerie personnelle comme Hotmail ou Outlook.  
@@ -49,6 +49,9 @@ Ensuite, cliquez sur **Continuer** pour accéder à la liste des modifications �
 
 > [!NOTE]
 > Lorsque vous modifiez l’adresse de messagerie de connexion, vous ne pouvez mettre à jour que l’e-mail utilisé par l’abonné pour se connecter à son abonnement https://my.visualstudio.com . Si l’abonné a déjà activé des avantages tels qu’Azure ou Pluralsight à l’aide de l’autre adresse de messagerie, il doit continuer à utiliser ces adresses de messagerie pour y accéder. Pour les nouveaux avantages auxquels ils accèdent, ils doivent utiliser la nouvelle adresse de messagerie. 
+
+## <a name="support-resources"></a>Ressources de support
+- Pour obtenir de l’aide sur l’administration des abonnements Visual Studio, contactez le [support des abonnements Visual Studio](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](/visualstudio/)

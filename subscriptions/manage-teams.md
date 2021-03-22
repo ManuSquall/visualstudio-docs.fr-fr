@@ -1,18 +1,18 @@
 ---
 title: Gestion des grandes équipes et des sous-traitants dans les abonnements Visual Studio | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: En savoir plus sur la responsabilité des administrateurs pour gérer les abonnements pour les équipes de grande taille, ainsi que pour les prestataires externes.
-ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: b54dc7a6a90556e73e1bebdd918435e9ce56a596
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904669"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776803"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
 Les administrateurs des abonnements Visual Studio sont chargés de s’assurer que chaque utilisateur qui interagit avec les logiciels sous licence Visual Studio possède une licence appropriée avec son propre abonnement Visual Studio.
@@ -31,7 +31,7 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 
 ## <a name="resources"></a>Ressources
 - [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Prise en charge des abonnements et de l’administration de Visual Studio](https://aka.ms/vsadminhelp)
 - [Termes du contrat de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
