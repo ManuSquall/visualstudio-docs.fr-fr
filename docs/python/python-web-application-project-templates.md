@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939537"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805989"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -56,6 +56,7 @@ Tous les modèles de **\<Framework> projet Web** créent une application Web de 
 | **Projet web Flask** | Génère une application dont les fichiers statiques sont contenus dans le dossier *static*. Le code contenu dans *views.py* gère le routage, et les modèles de page utilisant le moteur Jinja sont contenus dans le dossier *templates*. Le fichier *runserver.py* fournit le code de démarrage. Consultez [Découvrir Flask - Étape 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
 | **Projet web Flask/Jade** | Génère la même application que le modèle de **projet Web** de la fiole, mais à l’aide de l’extension Jade pour le moteur de création de modèles Jinja. |
 
+::: moniker range="vs-2017"
 ### <a name="polls-group"></a>Groupe Sondages
 
 Les modèles de **\<framework> projet Web d’interrogation** créent une application Web de démarrage via laquelle les utilisateurs peuvent voter sur différentes questions de sondage. Chaque application repose sur la structure des modèles de projet **Web** pour utiliser une base de données afin de gérer les sondages et les réponses des utilisateurs. Les applications contiennent les modèles de données appropriés et une page d’application spéciale (/seed) qui charge les sondages à partir d’un fichier *samples.json*.
@@ -66,6 +67,7 @@ Les modèles de **\<framework> projet Web d’interrogation** créent une applic
 | **Projet web Django de sondage** | Génère un projet Django et une application Django contenant trois pages et une base de données SQLite. Inclut des personnalisations de l’interface administrative Django pour permettre à un administrateur authentifié de créer et de gérer des sondages. Pour plus d’informations, consultez [Modèles Django](python-django-web-application-project-template.md) et [Apprendre Django - Étape 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
 | **Projet web Flask de sondage** | Génère une application qui peut s’exécuter sur une base de données en mémoire, MongoDB ou Stockage Table Azure, qui est configurée à l’aide de la variable d’environnement `REPOSITORY_NAME`. Les modèles de données et le code de magasin de données sont contenus dans le dossier *models* et le fichier *settings.py* contient le code permettant de déterminer quel magasin de données est utilisé. L’application utilise le moteur Jinja pour les modèles de page. Consultez [Découvrir Flask - Étape 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
 | **Projet web Flask/Jade de sondage** | Génère la même application que le modèle de **projet Web de la fiole sondage** , mais à l’aide de l’extension Jade pour le moteur de création de modèles Jinja. |
+::: moniker-end
 
 ## <a name="install-project-requirements"></a>Installer les spécifications du projet
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942658"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806067"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 
@@ -24,13 +24,22 @@ ms.locfileid: "99942658"
 
 Dans ce tutoriel, vous allez apprendre à :
 
-> [!div class="checklist"]
-> - créer un projet Django de base dans un référentiel Git à l’aide du modèle « Projet web Django vide » (étape 1) ;
-> - créer une application Django d’une page et à afficher cette page à l’aide d’un modèle (étape 2) ;
-> - prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle (étape 3) ;
-> - utiliser le modèle de projet Web de Django pour créer une application de plusieurs pages et une conception réactive (étape 4) ;
-> - authentifier les utilisateurs (étape 5) ;
-> - utiliser le modèle de sondages du projet web Django pour créer une application utilisant des modèles des migrations de bases de données et des personnalisations de l’interface d’administration (étape 6).
+::: moniker range="vs-2017"
+- créer un projet Django de base dans un référentiel Git à l’aide du modèle « Projet web Django vide » (étape 1) ;
+- créer une application Django d’une page et à afficher cette page à l’aide d’un modèle (étape 2) ;
+- prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle (étape 3) ;
+- utiliser le modèle de projet Web de Django pour créer une application de plusieurs pages et une conception réactive (étape 4) ;
+- authentifier les utilisateurs (étape 5) ;
+- utiliser le modèle de sondages du projet web Django pour créer une application utilisant des modèles des migrations de bases de données et des personnalisations de l’interface d’administration (étape 6).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- créer un projet Django de base dans un référentiel Git à l’aide du modèle « Projet web Django vide » (étape 1) ;
+- créer une application Django d’une page et à afficher cette page à l’aide d’un modèle (étape 2) ;
+- prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle (étape 3) ;
+- utiliser le modèle de projet Web de Django pour créer une application de plusieurs pages et une conception réactive (étape 4) ;
+- authentifier les utilisateurs (étape 5) ;
+::: moniker-end
 
 ## <a name="prerequisites"></a>Prérequis
 
