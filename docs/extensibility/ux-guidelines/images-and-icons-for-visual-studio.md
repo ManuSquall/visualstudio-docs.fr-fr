@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31ed0ccb09074798ddf56f601e9ad26facd505f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c7bc09147c2c9a6cf36a1a967241219df9e9bce
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952536"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884159"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Utilisation d’images dans Visual Studio
@@ -97,7 +97,7 @@ ms.locfileid: "99952536"
 
 ### <a name="style-details"></a>Détails du style
 
-#### <a name="layout"></a>Mise en page
+#### <a name="layout"></a>Layout
  Empilez les éléments comme indiqué pour les icônes standard 16x16 :
 
  ![Pile de disposition pour les icônes 16x16](../../extensibility/ux-guidelines/media/0404-15_layoutstack.png "0404-15_LayoutStack")<br />Pile de disposition pour les icônes 16x16
@@ -259,7 +259,7 @@ ms.locfileid: "99952536"
 ### <a name="base-palette"></a>Palette de base
  Toutes les icônes standard contiennent trois couleurs de base. Les icônes ne contiennent pas de dégradés ou de ombres portées, avec une ou deux exceptions pour les icônes d’outils 3D.
 
-|Usage|Nom|Valeur (thème clair)|Echantillon|Exemple|
+|Utilisation|Nom|Valeur (thème clair)|Echantillon|Exemple|
 |-----------|----------|---------------------------|------------|-------------|
 |Arrière-plan/sombre|VS BG|424242/66, 66, 66|![Échantillon 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Exemple de palette de base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Premier plan/clair|VS FG|F0EFF1/240 239 241|![Échantillon F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -272,7 +272,7 @@ ms.locfileid: "99952536"
 #### <a name="action-modifiers"></a>Modificateurs d’action
  Les quatre couleurs ci-dessous indiquent les types d’actions requis par les modificateurs d’action :
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |Positif|CONTRE-action en vert|388A34/56138, 52|![Échantillon 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Négatif|CONTRE-action rouge|A1260D/161, 38, 13|![Échantillon A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -307,7 +307,7 @@ ms.locfileid: "99952536"
 #### <a name="special-cases"></a>Cas particuliers
  Dans certains cas, un modificateur d’action coloré peut être utilisé indépendamment comme icône autonome. La couleur utilisée pour l’icône reflète les actions auxquelles l’icône est associée. Cette utilisation est limitée à un petit sous-ensemble d’icônes, notamment :
 
-|Exécuter|Arrêter|DELETE|Enregistrer|Naviguer vers l'arrière|
+|Exécuter|Arrêter|Supprimer|Enregistrer|Naviguer vers l'arrière|
 |-|-|-|-|-|
 |![Icône d'exécution](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icône d’arrêt-carré rouge plein.](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Icône Supprimer](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Icône Enregistrer](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Icône Naviguer vers l'arrière](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
@@ -315,14 +315,14 @@ ms.locfileid: "99952536"
 
 #### <a name="folder"></a>Dossier
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|Exemple|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|Exemple|
 |-----------|----------|--------------------------|------------|-------------|
 |Dossiers|Dossier|DCB67A/220 182 122|![Échantillon DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icône de couleur de dossier](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Langages Visual Studio
  Chacun des langages ou plateformes courants disponibles dans Visual Studio est associé à une couleur. Ces couleurs sont utilisées sur l’icône de base, ou sur les modificateurs de langue qui s’affichent dans le coin supérieur droit d’une icône composée.
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|HTML HTML WPF Blue|0095D7/0149 215|![Échantillon 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|RPC violet|9B4F96/155, 79150|![Échantillon 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -336,18 +336,18 @@ ms.locfileid: "99952536"
 
 ##### <a name="examples-of-icons-with-language-modifiers"></a>Exemples d’icônes avec modificateurs de langage
 
-|VB|C#|F#|JavaScript|Python|
+|VB|C#|C++|F#|JavaScript|Python|
 |-|-|-|-|-|-|
 |![Icône Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")|![Icône de&#35; C](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")|![Icône de&#43;&#43; C](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")|![Icône F&#35;](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")|![Icône JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")|![Icône Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")|
 
 |HTML|WPF|ASP|CSS|TypeScript|
-|-|-|-|-|-|-|
-|![Icône HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![Icône WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![Icône ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![Icône CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![Icône TypeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
+|-|-|-|-|-|
+|![Icône HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![Icône WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![Icône ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![Icône CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![Icône de machine à écrire](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript|
 
 #### <a name="intellisense"></a>IntelliSense
  Les icônes IntelliSense utilisent une palette de couleurs exclusives. Ces couleurs permettent aux utilisateurs de faire rapidement la distinction entre les différents éléments de la liste contextuelle IntelliSense.
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |Classe, événement|Action VS orange|C27D1A/194125, 26|![Échantillon C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Méthode d’extension, méthode, module, délégué|VS action Violette|652D90/101, 45144|![Échantillon 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -357,7 +357,7 @@ ms.locfileid: "99952536"
 
 ##### <a name="examples-of-intellisense-icons"></a>Exemples d’icônes IntelliSense
 
-|Class|Événement privé|Délégué|Méthode Friend|Champ|
+|Classe|Événement privé|Délégué|Méthode Friend|Champ|
 |-|-|-|-|-|
 |![Icône de classe IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")|![Icône d'événement privé IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![Icône de délégué IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![Icône friend de méthode IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![Icône de champ](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")|
 
@@ -368,7 +368,7 @@ ms.locfileid: "99952536"
 ### <a name="notifications"></a>Notifications
  Les notifications dans Visual Studio sont utilisées pour indiquer l’État. La palette de notifications utilise les quatre couleurs suivantes, ainsi que les options de remplissage de premier plan noir ou blanc, pour définir des notifications avec les niveaux d’état suivants.
 
-|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
+|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |État : neutre|Bleu de notification (VS Blue)|1BA1E2/27 161 226|![Échantillon 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |État : positif|Vert de notification (VS vert)|339933/51153, 51|![Échantillon 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|

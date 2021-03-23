@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536862"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884081"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Comment Visual Studio génère des applications conteneurisées
 
@@ -92,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>Préchauffage de projet
 
-Le *préchauffage de projet* fait référence à une série d’étapes qui se produisent lorsque le profil de l’ancrage est sélectionné pour un projet (autrement dit, quand un projet est chargé ou que la prise en charge de l’ancrage est ajoutée) afin d’améliorer les performances des exécutions suivantes (**F5** ou **CTRL** + **F5**). Cela peut être configuré sous **Outils**  >  **options**des  >  **conteneurs**. Voici les tâches qui s’exécutent en arrière-plan :
+Le *préchauffage de projet* fait référence à une série d’étapes qui se produisent lorsque le profil de l’ancrage est sélectionné pour un projet (autrement dit, quand un projet est chargé ou que la prise en charge de l’ancrage est ajoutée) afin d’améliorer les performances des exécutions suivantes (**F5** ou **CTRL** + **F5**). Cela peut être configuré sous **Outils**  >  **options** des  >  **conteneurs**. Voici les tâches qui s’exécutent en arrière-plan :
 
 - Vérifiez que le Bureau de l’ordinateur de veille est installé et en cours d’exécution.
 - Assurez-vous que l’ordinateur de bureau de l’arrimeur est défini sur le même système d’exploitation que le projet.
@@ -107,7 +107,7 @@ Pour que le débogage fonctionne dans des conteneurs, Visual Studio utilise le m
 
 |Volume|Description|
 |-|-|
-| **Débogueur distant** | Contient les bits requis pour exécuter le débogueur dans le conteneur en fonction du type de projet. Cela est expliqué dans plus |détails dans la section [débogage](#debugging) .
+| **Débogueur distant** | Contient les bits requis pour exécuter le débogueur dans le conteneur en fonction du type de projet. Cette procédure est expliquée plus en détail dans la section [débogage](#debugging) .|
 | **Dossier d’application** | Contient le dossier du projet dans lequel se trouve le fichier dockerfile.|
 | **Dossier source** | Contient le contexte de build qui est passé aux commandes de l’ancrage.|
 | **Dossiers de packages NuGet** | Contient les packages NuGet et les dossiers de secours qui sont lus à partir du fichier *obj \{ Project}. csproj. NuGet. g. props* dans le projet. |

@@ -11,12 +11,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab5ddea8ddb3fdd741f4df3b3b53f4239d016049
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81311e9dea2c5367b44cdf2cc8e2327a8aff5617
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928967"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884107"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application .NET Framework autonome (cliente) et pour collecter des données de concurrence de processus et de threads
@@ -39,7 +39,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
    - L’option [/start](../profiling/start.md) initialise le profileur.
 
-     | | |
+     | Commande | Description |
      |-------------------------------------| - |
      | **/start:concurrency** | Active la collecte de données relatives aux conflits de ressources et à l’exécution des threads. |
      | **/start:concurrency,resourceonly** | Active la collecte de données relatives aux conflits de ressources uniquement. |

@@ -21,18 +21,18 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3faea797d57ca8874a198e5ee1bf76708ee20e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d7ce643f0684520da52a450ff40c60928808d26
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917557"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884094"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
 Vous pouvez effectuer un profilage sur des nœuds de calcul de clusters HPC Microsoft Windows suivant la méthode par échantillonnage des Outils de profilage de Visual Studio. Pour plus d’informations sur HPC, consultez [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) sur le site web de Microsoft.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :
 
@@ -52,7 +52,7 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-| | |
+|Paramètre | Description |
 |------------------| - |
 | *Nœud principal* | Nom du nœud principal du cluster. |
 | *%FxPath%* | Chemin du programme d’installation du .NET Framework 4. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
