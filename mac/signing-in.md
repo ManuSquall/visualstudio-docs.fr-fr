@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 86d701e50b4d9f5b8e4c9af0c736c117cd2e91be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b4c3aa608969d9f62e2d5ab3bd3d98ef79236d9
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950531"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999626"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Se connecter à Visual Studio pour Mac
 
@@ -21,7 +21,7 @@ La connexion à Visual Studio pour Mac vous permet [d’activer votre abonnement
 
 * **Connexion automatique à Azure** dans l’IDE sans avoir à fournir à nouveau les informations d’identification pour le même compte.
 
-Quand vous lancez Visual Studio pour Mac pour la première fois, vous êtes invité à vous connecter en utilisant un compte Microsoft. Utilisez un compte Microsoft qui est connecté à la licence que vous voulez utiliser. Si vous n’avez pas de compte Microsoft, consultez [S’inscrire pour obtenir un compte Microsoft](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account).
+Quand vous lancez Visual Studio pour Mac pour la première fois, vous êtes invité à vous connecter en utilisant un compte Microsoft. Utilisez un compte Microsoft qui est connecté à la licence que vous voulez utiliser. Si vous n’avez pas de compte Microsoft, consultez [S’inscrire pour obtenir un compte Microsoft](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf).
 
 Si vous décidez de ne pas vous connecter directement, vous pouvez utiliser une copie d’évaluation pendant 30 jours. Au terme des 30 jours, vous devez vous connecter pour continuer à utiliser votre copie de Visual Studio pour Mac.
 
