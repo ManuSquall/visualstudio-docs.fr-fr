@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2 interface
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 871f7ea5671fa4f3c615d84e0591bd331f945ccc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 318644353ff3643e92b2a7186359661b403db486
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163133"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077718"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Cette interface est utilisée pour représenter et obtenir des informations à partir d’un serveur sur un ordinateur sur le réseau.
@@ -53,7 +53,7 @@ IDebugCoreServer2 : IUknown
 ## <a name="remarks"></a>Notes
  Cette interface est également utilisée par Visual Studio pour parcourir les processus qui s’exécutent sur des ordinateurs sur le réseau.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

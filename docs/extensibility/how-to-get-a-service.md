@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60e6093eb439aa3b0e2a0a86e0d21d8ace95e00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9096250f72e6bf64b2c6b76eeaa313ee7769dd51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911746"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070087"
 ---
 # <a name="how-to-get-a-service"></a>Comment : obtenir un service
 
@@ -31,9 +31,9 @@ Lorsque Visual Studio charge un <xref:Microsoft.VisualStudio.Shell.Package> , il
 
 1. Chaque extension Visual Studio commence par un projet de déploiement VSIX, qui contient les composants d’extension. Créez un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `GetServiceExtension` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
-2. Ajoutez maintenant un modèle d’élément de commande personnalisé nommé **GetServiceCommand**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *GetServiceCommand.cs*. Pour plus d’informations sur la création d’une commande personnalisée, [créez une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Ajoutez maintenant un modèle d’élément de commande personnalisé nommé **GetServiceCommand**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *GetServiceCommand. cs*. Pour plus d’informations sur la création d’une commande personnalisée, [créez une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-3. Dans *GetServiceCommand.cs*, supprimez le corps de la `MenuItemCommand` méthode et ajoutez le code suivant :
+3. Dans *GetServiceCommand. cs*, supprimez le corps de la `MenuItemCommand` méthode et ajoutez le code suivant :
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;

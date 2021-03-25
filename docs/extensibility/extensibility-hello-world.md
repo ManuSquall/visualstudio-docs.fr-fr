@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e943da6745832cbe59cfe94013650a503265636
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec465eda5a0bd7d017c3822390d68b43f76b5c47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903291"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070178"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Didacticiel-créer votre première extension : Hello World
 
@@ -26,7 +26,7 @@ Dans le processus, vous allez apprendre à :
 * **[Créer un projet d’extensibilité](#create-an-extensibility-project)**
 * **[Ajouter une commande personnalisée](#add-a-custom-command)**
 * **[Modifier le code source](#modify-the-source-code)**
-* **[Exécutez le script](#run-it)**
+* **[Exécuter](#run-it)**
 
 Pour cet exemple, vous allez utiliser Visual C# pour ajouter un bouton de menu personnalisé nommé « disons Hello World ! » Cela ressemble à ceci :
 
@@ -78,7 +78,7 @@ Vous devez maintenant voir le projet HelloWorld dans **Explorateur de solutions*
 
 Étape 3. Sélectionnez la section **extensibilité** , puis choisissez **commande**.
 
-Étape 4. Dans le champ **nom** en bas, entrez un nom de fichier tel que *Command.cs*.
+Étape 4. Dans le champ **nom** en bas, entrez un nom de fichier tel que *Command. cs*.
 
 ![commande personnalisée](media/hello-world-vsix-command.png)
 
@@ -120,7 +120,7 @@ Votre nouveau fichier de commandes est visible dans **Explorateur de solutions**
   ...
 ```
 
-Étape 3. Revenez à **Explorateur de solutions** et recherchez le fichier *Command.cs* . Dans la `Execute` méthode, remplacez la chaîne `message` par `string.Format(..)` `Hello World!` .
+Étape 3. Revenez à **Explorateur de solutions** et recherchez le fichier *Command. cs* . Dans la `Execute` méthode, remplacez la chaîne `message` par `string.Format(..)` `Hello World!` .
 
 ```csharp
   ...

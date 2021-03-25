@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ddff439aba67248bd2eb706a85c5f91b4bf1628d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144427"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085284"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 Spécifie le type d’erreur d’un point d’arrêt.
@@ -100,7 +100,7 @@ Ces valeurs peuvent être combinées avec une opération de bits `OR` and utilis
 
 Un type d’erreur de point d’arrêt est composé d’un type et d’un niveau de gravité. Cela signifie qu’un type d’erreur de point d’arrêt n’est jamais simplement un type (par exemple, `BPET_TYPE_ERROR` ,) ou une gravité (par exemple, `BPET_SEV_GENERAL` ) par lui-même. `BPET_GENERAL_WARNING` et `BPET_GENERAL_ERROR` fournissent des valeurs prédéfinies pour les points d’arrêt d’avertissement et d’erreur généraux.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

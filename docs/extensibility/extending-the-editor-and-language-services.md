@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b1e46db4f38f37296798a645d6547cdd6f017f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d85b018b4e0ea7d5ed1c91e617afcb2759d49b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895724"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070113"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Étendre l’éditeur et les services de langage
 Vous pouvez ajouter des fonctionnalités du service de langage (par exemple, IntelliSense) à votre propre éditeur et étendre la plupart des fonctionnalités de l’éditeur de code Visual Studio.  Pour obtenir une liste complète de ce que vous pouvez étendre, consultez [services de langage et points d’extension](../extensibility/language-service-and-editor-extension-points.md)de l’éditeur.
@@ -30,7 +30,7 @@ Vous pouvez ajouter des fonctionnalités du service de langage (par exemple, Int
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Prise en main du service de langage et des extensions de l’éditeur](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Explique comment créer une extension de l’éditeur.|
 |[Dans l’éditeur](../extensibility/inside-the-editor.md)|Décrit la structure générale de l’éditeur et répertorie certaines de ses fonctionnalités.|
@@ -55,7 +55,7 @@ Vous pouvez ajouter des fonctionnalités du service de langage (par exemple, Int
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Fournit des informations sur le Managed Extensibility Framework (MEF).|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Fournit des informations sur le Windows Presentation Foundation (WPF).|
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
  L’éditeur Visual Studio comprend les espaces de noms suivants.
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938133"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070139"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres propriétés, Liste des tâches, sortie et options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations sur votre fenêtre outil dans une nouvelle page d' **options** et un nouveau paramètre dans la page **Propriétés** , et comment écrire dans les fenêtres de **liste des tâches** et de **sortie** .
@@ -63,7 +63,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 ### <a name="customize-the-constructor"></a>Personnaliser le constructeur
 
-1. Dans le fichier *TodoWindowControl.Xaml.cs* , ajoutez la directive using suivante :
+1. Dans le fichier *TodoWindowControl. Xaml. cs* , ajoutez la directive using suivante :
 
     ```csharp
     using System;
@@ -81,7 +81,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-3. Dans *TodoWindow.cs*, modifiez le constructeur TodoWindowControl pour inclure le paramètre TodoWindow. Le code doit ressembler à ceci :
+3. Dans *TodoWindow. cs*, modifiez le constructeur TodoWindowControl pour inclure le paramètre TodoWindow. Le code doit ressembler à ceci :
 
     ```csharp
     public TodoWindow() : base(null)
@@ -95,7 +95,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     ```
 
 ## <a name="create-an-options-page"></a>Créer une page d’options
- Vous pouvez fournir une page dans la boîte de dialogue **options** afin que les utilisateurs puissent modifier les paramètres de la fenêtre outil. La création d’une page d’options nécessite à la fois une classe qui décrit les options et une entrée dans le fichier *TodoListPackage.cs* ou *TodoListPackage. vb* .
+ Vous pouvez fournir une page dans la boîte de dialogue **options** afin que les utilisateurs puissent modifier les paramètres de la fenêtre outil. La création d’une page d’options nécessite à la fois une classe qui décrit les options et une entrée dans le fichier *TodoListPackage. cs* ou *TodoListPackage. vb* .
 
 1. Ajoutez une classe nommée `ToolsOptions.cs`. Faites en sorte que la `ToolsOptions` classe hérite de <xref:Microsoft.VisualStudio.Shell.DialogPage> .
 
@@ -127,7 +127,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
 ### <a name="make-the-options-page-available-to-users"></a>Rendre la page Options accessible aux utilisateurs
 
-1. Dans *TodoWindowPackage.cs*, ajoutez un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> à la `TodoWindowPackage` classe :
+1. Dans *TodoWindowPackage. cs*, ajoutez un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> à la `TodoWindowPackage` classe :
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -152,7 +152,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
      ![Fenêtre Propriétés](../extensibility/media/t5properties.png "T5Properties")
 
-2. Ajoutez les directives using suivantes au fichier *TodoItem.cs* .
+2. Ajoutez les directives using suivantes dans le fichier *TodoItem. cs* .
 
     ```csharp
     using System.ComponentModel;
@@ -232,7 +232,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-5. Étant donné que les instances de la `TodoItem` classe seront stockées dans la zone de liste et que la zone de liste appellera la `ToString` fonction, vous devez surcharger la `ToString` fonction. Ajoutez le code suivant à *TodoItem.cs*, après le constructeur et avant la fin de la classe.
+5. Étant donné que les instances de la `TodoItem` classe seront stockées dans la zone de liste et que la zone de liste appellera la `ToString` fonction, vous devez surcharger la `ToString` fonction. Ajoutez le code suivant à *TodoItem. cs*, après le constructeur et avant la fin de la classe.
 
     ```csharp
     public override string ToString()
@@ -241,7 +241,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-6. Dans *TodoWindowControl.Xaml.cs*, ajoutez des méthodes stub à la `TodoWindowControl` classe pour `CheckForError` les `UpdateList` méthodes et. Placez-les après le ProcessDialogChar et avant la fin du fichier.
+6. Dans *TodoWindowControl. Xaml. cs*, ajoutez des méthodes stub à la `TodoWindowControl` classe pour `CheckForError` les `UpdateList` méthodes et. Placez-les après le ProcessDialogChar et avant la fin du fichier.
 
     ```csharp
     public void CheckForErrors()
@@ -285,7 +285,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-4. Ajoutez les directives d’utilisation suivantes à *TodoWindowControl.Xaml.cs*:
+4. Ajoutez les directives using suivantes à *TodoWindowControl. Xaml. cs*:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -353,7 +353,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 
      Maintenant que vous avez une classe que la fenêtre **Propriétés** peut utiliser, vous pouvez intégrer la fenêtre **Propriétés** à la fenêtre outil. Quand l’utilisateur clique sur un élément de la zone de liste dans la fenêtre outil, la fenêtre **Propriétés** doit être mise à jour en conséquence. De même, lorsque l’utilisateur modifie un élément ToDo dans la fenêtre **Propriétés** , l’élément associé doit être mis à jour.
 
-7. À présent, ajoutez le reste du code de la fonction UpdateList dans *TodoWindowControl.Xaml.cs*. Il doit supprimer et rajouter les TodoItem modifiés à partir de la zone de liste.
+7. À présent, ajoutez le reste du code de la fonction UpdateList dans *TodoWindowControl. Xaml. cs*. Il doit supprimer et rajouter les TodoItem modifiés à partir de la zone de liste.
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -378,7 +378,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Ajoutez du texte à la fenêtre sortie et aux éléments de la Liste des tâches
  Pour la **liste des tâches**, vous créez un nouvel objet de type Task, puis vous ajoutez cet objet Task à la **liste des tâches** en appelant sa `Add` méthode. Pour écrire dans la fenêtre **sortie** , vous appelez sa `GetPane` méthode pour obtenir un objet Pane, puis vous appelez la `OutputString` méthode de l’objet Pane.
 
-1. Dans *TodoWindowControl.Xaml.cs*, dans la `button1_Click` méthode, ajoutez le code pour obtenir le volet **général** de la fenêtre **sortie** (qui est la valeur par défaut) et y écrire. La méthode doit ressembler à ceci :
+1. Dans *TodoWindowControl. Xaml. cs*, dans la `button1_Click` méthode, ajoutez le code pour obtenir le volet **général** de la fenêtre **sortie** (qui est la valeur par défaut) et y écrire. La méthode doit ressembler à ceci :
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)

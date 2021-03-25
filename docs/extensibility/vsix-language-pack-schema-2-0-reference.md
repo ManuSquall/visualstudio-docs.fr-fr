@@ -10,15 +10,15 @@ helpviewer_keywords:
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
-ms.openlocfilehash: 5a12fe1be4030332e804f38cee1e0eb646356d79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e7107cb90a79e8cd1a052cd73706d95a782781d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971867"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062276"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Informations de référence sur le schéma du module linguistique VSIX 2,0
 
@@ -32,7 +32,7 @@ L’élément racine du fichier de module linguistique est `<PackageLanguagePack
 
 Dans l' `<PackageLanguagePackManifest>` élément, l’élément suivant doit exister :
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |`<Metadata>`| Élément conteneur pour toutes les métadonnées de package localisées
 
@@ -40,7 +40,7 @@ Dans l' `<PackageLanguagePackManifest>` élément, l’élément suivant doit ex
 
 Dans l' `<Metadata>` élément, vous pouvez avoir les éléments suivants :
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |`<DisplayName>`|Nom localisé de l’extension à installer|
 |`<Description>`|Description localisée de l’extension à installer|
@@ -67,7 +67,7 @@ Dans l' `<Metadata>` élément, vous pouvez avoir les éléments suivants :
 
 ## <a name="see-also"></a>Voir aussi
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Localisation de packages VSIX](../extensibility/localizing-vsix-packages.md)|Montre comment fournir la prise en charge de l’installation localisée pour un package VSIX.|
 |[Informations de référence sur le schéma d’extension VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifeste VSIX décrit le contenu d’un fichier de déploiement *. vsix* . Le fichier de déploiement vous permet d’installer une extension Visual Studio à l’aide de la boîte de dialogue **extensions et mises à jour** .|

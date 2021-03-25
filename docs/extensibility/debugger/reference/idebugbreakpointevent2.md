@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointEvent2 interface
 ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ff9d1f83baeec275f285caa4aaca692e20958d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 29dd8aa27c6b73d09036905a8c6e43af878419eb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143335"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054540"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 Le moteur DE débogage (DE) envoie cette interface au gestionnaire de débogage de session (SDM) lorsqu’un programme s’arrête à un point d’arrêt.
@@ -42,7 +42,7 @@ IDebugBreakpointEvent2 : IUnknown
 |------------|-----------------|
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Crée un énumérateur pour tous les points d’arrêt qui ont été déclenchés à l’emplacement de code actuel.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

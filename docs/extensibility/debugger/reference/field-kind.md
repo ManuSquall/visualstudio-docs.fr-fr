@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2476b819d940b5fb6014d00e1bdf920f02a46696
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150859"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085206"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 Spécifie le type de champ contenu dans un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -230,7 +230,7 @@ Retourné à partir d’un appel à la méthode [GetKind](../../../extensibility
 
 Selon le type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelé sur l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour une forme d’interface plus spécifique. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD` , vous pouvez appeler `QueryInterface` sur I `DebugField` pour obtenir l’interface [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : SH. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 019efb11d7a31af875425888a1f70423bca76ca9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946642"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069801"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exposer des événements dans le kit de développement logiciel Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet d’utiliser l’automatisation pour les événements source. Nous vous recommandons d’utiliser des événements source pour les projets et les éléments de projet.
@@ -70,7 +70,7 @@ ms.locfileid: "99946642"
 
  *AutomationEvents. h* et *AutomationEvents. cpp* contiennent des déclarations et des implémentations des classes dans le tableau suivant.
 
-|Class|Description|
+|Classe|Description|
 |-----------|-----------------|
 |`CAutomationEvents`|Implémente un objet racine d’événement, récupéré à partir de l' `DTE.Events` objet.|
 |`CProjectsEventsContainer` et `CProjectItemsEventsContainer`|Implémentez les objets de source d’événements qui déclenchent les événements correspondants.|

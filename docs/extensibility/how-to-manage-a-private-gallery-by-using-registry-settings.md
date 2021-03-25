@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09a24198d5b3c001f363f3a9eecf1dcd2760889f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5981dc4399e09df207b154b900fa163895c344c9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850633"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070061"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procédure : gérer une galerie privée à l’aide des paramètres du Registre
 Si vous êtes administrateur ou développeur d’une extension de Shell isolé, vous pouvez contrôler l’accès aux contrôles, aux modèles et aux outils de la Galerie Visual Studio, de la Galerie d’exemples ou de galeries privées. Pour rendre une galerie disponible ou non, créez un fichier *. pkgdef* qui décrit les clés de Registre modifiées et leurs valeurs.
