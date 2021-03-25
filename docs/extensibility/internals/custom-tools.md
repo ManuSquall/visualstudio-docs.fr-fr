@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdadad602a256b4740b4c4204704ca73864d612
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d714822605178382ec2ef3574db617f7986cf888
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903023"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091043"
 ---
 # <a name="custom-tools"></a>Outils personnalisés
 Les *outils personnalisés* vous permettent d’associer un outil à un élément d’un projet et d’exécuter cet outil à chaque fois que le fichier est enregistré. Certains outils personnalisés, parfois appelés « *générateurs de fichiers uniques »*, sont souvent utilisés pour implémenter des traducteurs qui génèrent du code à partir de données, et vice versa. Par exemple, les générateurs de fichier unique créent [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] le code source à partir des fichiers *. Settings* et *. resx* . Le code source généré fournit un accès fortement typé aux données dans les fichiers *. Settings* et *. resx* . Les [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] types de projets et prennent en charge les outils personnalisés [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Vos propres types de projets peuvent également prendre en charge des outils personnalisés.
@@ -45,7 +45,7 @@ Les *outils personnalisés* vous permettent d’associer un outil à un élémen
 
  Montre comment rendre persistante une propriété d’élément de projet, telle que l’auteur d’un fichier source, dans le fichier projet.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Fournit des détails sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> , qui transforme un fichier d’entrée unique en un seul fichier de sortie qui peut être compilé ou ajouté à un projet.
 
  <xref:EnvDTE.ProjectItem> Explique l' `ProjectItem` interface, qui représente un élément dans un projet.

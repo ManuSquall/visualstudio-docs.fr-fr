@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2 interface
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c19b4dc3967cf7001144d38114a1f873776cb2b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e0202185d760a1e3334996906807e5922fe61e0a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149585"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084218"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Cette interface est utilisée par les nœuds de programme pour spécifier tous les moteurs de débogage possibles pouvant déboguer ce programme.
@@ -46,7 +46,7 @@ IDebugProgramEngines2 : IUnknown
 ## <a name="remarks"></a>Notes
  Une fois qu’un utilisateur est choisi par l’utilisateur, ce choix est inscrit auprès du nœud de programme en appelant [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Le moteur sélectionné devient le moteur retourné par [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

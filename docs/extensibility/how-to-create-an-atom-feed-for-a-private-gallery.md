@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81167b1e2e9f7959398b30b89796913520c48fac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a83d5aa68f6f631243fbbfcad7cf28b25e7bc70
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967447"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057375"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Comment : créer un flux Atom pour une galerie privée
 Vous pouvez créer un flux Atom (RSS) à un emplacement intranet qui contient des extensions et ajouter le flux aux **extensions et aux mises à jour** en tant que galerie privée. Pour plus d’informations, consultez [Galeries privées](../extensibility/private-galleries.md).
