@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2fa3bec68a40ca2157281205781900b6f4d050
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f02a8dd1497680239db9363a2e0682082f0c68d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883348"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057336"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procédure : utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.

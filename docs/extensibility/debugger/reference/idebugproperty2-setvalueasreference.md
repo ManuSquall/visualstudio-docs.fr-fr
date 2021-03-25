@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsReference method
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5b9529a4e4cd56a2b354eaa7f847db4d9d82be1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8b370b4caa43ce6522b415233714eb15899b3051
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166747"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064772"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Affecte à la valeur de cette propriété la valeur de la référence donnée.
@@ -62,7 +62,7 @@ dans Durée à prendre pour définir la valeur, en millisecondes. Une valeur typ
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur, généralement l’un des éléments suivants :
 
-|Erreur|Description|
+|Error|Description|
 |-----------|-----------------|
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|La définition de la valeur d’une référence n’est pas prise en charge.|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|La valeur ne peut pas être définie, car cette propriété fait référence à une méthode.|

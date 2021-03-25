@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dbc6b9646bcdec8cbdfae9d262397eb0ff74bdc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848206"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090770"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Zone de test 8 : Commutation de plug-in
 L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) dispose de l’interface utilisateur pour modifier le plug-in de contrôle de code source actuel. Cette zone de test fournit des cas de test pour le processus de sélection du plug-in à utiliser pour le contrôle de code source de la solution.

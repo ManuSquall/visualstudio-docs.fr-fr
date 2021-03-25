@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a5520a8a47b4b356a79832b619395f86e8231d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: daf0115161963448d47cb6721c92d0f9ffe623a0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945784"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057583"
 ---
 # <a name="group-element"></a>élément Group
 Définit un groupe de commandes VSPackage.
@@ -40,14 +40,14 @@ Définit un groupe de commandes VSPackage.
 |---------------|-----------------|
 |guid|Obligatoire. GUID de l’identificateur de la commande GUID/ID.|
 |id|Obligatoire. ID de l’identificateur de la commande GUID/ID.|
-|priority|Facultatif. Valeur numérique qui spécifie la priorité.|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|priority|Optionnel. Valeur numérique qui spécifie la priorité.|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|Parent|Facultatif. Élément parent du bouton.|
+|Parent|Optionnel. Élément parent du bouton.|
 |Annotation|Commentaire facultatif.|
 
 ### <a name="parent-elements"></a>Éléments parents

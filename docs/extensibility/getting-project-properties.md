@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968188"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057661"
 ---
 # <a name="get-project-properties"></a>Obtient les propriétés du projet
 
@@ -38,7 +38,7 @@ Cette procédure pas à pas montre comment afficher les propriétés d’un proj
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Pour afficher les propriétés d’un projet dans une fenêtre outil
 
-1. Dans le fichier ProjectPropertiesToolWindowCommand.cs, ajoutez les directives using suivantes.
+1. Dans le fichier ProjectPropertiesToolWindowCommand. cs, ajoutez les directives using suivantes.
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ Cette procédure pas à pas montre comment afficher les propriétés d’un proj
 
     ```
 
-2. Dans *ProjectPropertiesToolWindowControl. Xaml*, supprimez le bouton existant et ajoutez un TreeView à partir de la boîte à outils. Vous pouvez également supprimer le gestionnaire d’événements Click du fichier *ProjectPropertiesToolWindowControl.Xaml.cs* .
+2. Dans *ProjectPropertiesToolWindowControl. Xaml*, supprimez le bouton existant et ajoutez un TreeView à partir de la boîte à outils. Vous pouvez également supprimer le gestionnaire d’événements Click du fichier *ProjectPropertiesToolWindowControl. Xaml. cs* .
 
-3. Dans *ProjectPropertiesToolWindowCommand.cs*, utilisez la `ShowToolWindow()` méthode pour ouvrir le projet et lire ses propriétés, puis ajoutez les propriétés à l’arborescence. Le code de ShowToolWindow doit ressembler à ce qui suit :
+3. Dans *ProjectPropertiesToolWindowCommand. cs*, utilisez la `ShowToolWindow()` méthode pour ouvrir le projet et lire ses propriétés, puis ajoutez les propriétés à l’arborescence. Le code de ShowToolWindow doit ressembler à ce qui suit :
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

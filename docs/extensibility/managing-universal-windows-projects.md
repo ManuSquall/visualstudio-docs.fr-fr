@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943242"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090640"
 ---
 # <a name="manage-universal-windows-projects"></a>Gérer les projets Windows universels
 
@@ -31,7 +31,7 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
 
 2. Ajoutez une référence à *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* et à *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (dans la section **Extensions** ).
 
-3. Ouvrez *TestUniversalProject.cs* et ajoutez les `using` directives suivantes :
+3. Ouvrez *TestUniversalProject. cs* et ajoutez les `using` directives suivantes :
 
     ```csharp
     using EnvDTE;
@@ -235,7 +235,7 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
     ```
 
     > [!IMPORTANT]
-    > Si l’utilisateur a ouvert un projet d’application Windows universelle C++ dans l’instance expérimentale, le code ci-dessus lève une exception. Il s'agit d'un problème connu. Pour éviter cette exception, remplacez le `foreach` bloc ci-dessus par ce qui suit :
+    > Si l’utilisateur a ouvert un projet d’application Windows universelle C++ dans l’instance expérimentale, le code ci-dessus lève une exception. Il s’agit d’un problème connu. Pour éviter cette exception, remplacez le `foreach` bloc ci-dessus par ce qui suit :
 
     ```csharp
     var importingProjects = sharedAssetsProject.EnumImportingProjects();
@@ -425,9 +425,9 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
 
       Dans cette procédure, vous ajoutez un écouteur d’événements à un projet partagé et à un projet de plateforme. Ensuite, lorsque vous renommez un fichier dans un projet partagé et un autre fichier dans un projet de plateforme, vous pouvez voir les événements qui sont déclenchés pour chaque opération de changement de nom.
 
-2. Ajoutez un écouteur d’événements. Ajoutez un nouveau fichier de classe au projet et appelez-le *HierarchyEventListener.cs*.
+2. Ajoutez un écouteur d’événements. Ajoutez un nouveau fichier de classe au projet et appelez-le *HierarchyEventListener. cs*.
 
-3. Ouvrez le fichier *HierarchyEventListener.cs* et ajoutez les directives d’utilisation suivantes :
+3. Ouvrez le fichier *HierarchyEventListener. cs* et ajoutez les directives d’utilisation suivantes :
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ Les applications Windows universelles sont des applications qui ciblent à la fo
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Générez et exécutez le projet. Créez une application de concentrateur universel C# dans l’instance expérimentale, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject** et vérifiez le texte dans le volet de sortie général. Le nom du premier élément dans le projet partagé (nous pensons qu’il s’agit du fichier *app. Xaml* ) doit être modifié. vous devez voir que l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> événement a été déclenché. Dans ce cas, étant donné que l’attribution d’un nouveau nom à *app. Xaml* entraîne également le renommage de *app.Xaml.cs* , vous devez voir quatre événements (deux pour chaque projet de plateforme). (Les événements DTE n’effectuent pas le suivi des éléments dans le projet partagé.) Vous devez voir deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événements (un pour chacun des projets de plateforme), mais aucun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement.
+11. Générez et exécutez le projet. Créez une application de concentrateur universel C# dans l’instance expérimentale, accédez au menu **Outils** et cliquez sur **appeler TestUniversalProject** et vérifiez le texte dans le volet de sortie général. Le nom du premier élément dans le projet partagé (nous pensons qu’il s’agit du fichier *app. Xaml* ) doit être modifié. vous devez voir que l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> événement a été déclenché. Dans ce cas, étant donné que si vous renommez *app. Xaml* , *app. Xaml. cs* est également renommé, vous devriez voir quatre événements (deux pour chaque projet de plateforme). (Les événements DTE n’effectuent pas le suivi des éléments dans le projet partagé.) Vous devez voir deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événements (un pour chacun des projets de plateforme), mais aucun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement.
 
 12. Essayez à présent de renommer un fichier dans un projet de plateforme, et vous pouvez voir la différence dans les événements qui se sont déclenchés. Ajoutez le code suivant dans `ShowMessageBox` après l’appel à `ModifyFileName` .
 

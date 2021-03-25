@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb683c99614797fa8b05eae87c758ec33f675c99
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943392"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057453"
 ---
 # <a name="guidsymbol-element"></a>Élément GuidSymbol
 L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. L’ID provient d’un `IDSymbol` élément dans l' `GuidSymbol` élément. L' `GuidSymbol` élément a un `name` attribut qui fournit un nom convivial pour le GUID, qui est contenu dans l' `value` attribut.
@@ -40,7 +40,7 @@ L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représent
 |Attribut|Description|
 |---------------|-----------------|
 |name|Obligatoire. Nom du symbole GUID.|
-|valeur|Obligatoire. GUID du symbole GUID.|
+|value|Obligatoire. GUID du symbole GUID.|
 
 ### <a name="child-elements"></a>Éléments enfants
 

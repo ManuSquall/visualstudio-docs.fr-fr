@@ -8,17 +8,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c57bd9f8b71f861fd5be4176211af6907b27e74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839558"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090835"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 L’analyseur est le cœur du service de langage. Les classes de langages MPF (Managed package Framework) requièrent un analyseur de langage pour sélectionner des informations sur le code affiché. Un analyseur sépare le texte en jetons lexicals, puis identifie ces jetons par type et par fonctionnalité.
@@ -50,7 +50,7 @@ namespace MyNamespace
 |MyNamespace|espace de noms|
 |MyClass|class|
 |MyFunction|method|
-|arg1|parameter|
+|arg1|paramètre|
 |var1|variable locale|
 
  Le rôle de l’analyseur est d’identifier les jetons. Certains jetons peuvent avoir plusieurs types. Une fois que l’analyseur a identifié les jetons, le service de langage peut utiliser ces informations pour fournir des fonctionnalités utiles, telles que la mise en surbrillance de la syntaxe, la correspondance des accolades et les opérations IntelliSense.
