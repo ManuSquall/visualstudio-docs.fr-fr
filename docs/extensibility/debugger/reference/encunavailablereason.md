@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1f80dc1454cb1c15feddd099411bcb339dbc58c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e63ad7994d485bb39f8ec789d8906cd7d5946840
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151002"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095983"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Représente les raisons pour lesquelles **modifier & continuer** n’est pas disponible.
@@ -78,7 +78,7 @@ Modifier & Continuer n’est pas disponible lors du traitement du code Windows 6
 ## <a name="remarks"></a>Notes
 Cette énumération est destinée à un usage interne uniquement par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . Les méthodes [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) et [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implémentées par un fournisseur de ports personnalisé doivent toujours retourner `E_NOTIMPL` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. idl
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

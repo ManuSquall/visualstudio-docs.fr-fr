@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f64e2e8ec365daa84cbd1d4f7e3e9bdc43391d5e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6eeee3e31c898660930b676df716fe25769bbb8b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170430"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096003"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 Spécifie les critères de comparaison de deux contextes de document.
@@ -65,7 +65,7 @@ Passé comme argument à la méthode [compare](../../../extensibility/debugger/r
 
 Ces valeurs sont utilisées pour spécifier des critères de comparaison pour rechercher le premier contexte de document dans une liste. Un contexte de document reçoit une liste de contextes de document à comparer par rapport à la `IDebugDocumentContext2::Compare` méthode. Le premier contexte de document dans la liste pour lequel l’opérateur de comparaison est `true` est ensuite retourné.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop
