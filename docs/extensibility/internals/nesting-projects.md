@@ -10,17 +10,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306099f1fc65a211943e4fb25a5cd73ad6195ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30b562cac794b7ab960f055fe67a5d0cc4ec871f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895672"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063216"
 ---
 # <a name="nesting-projects"></a>Imbriquer des projets
 Les développeurs d’applications d’entreprise qui utilisent votre package VS peuvent facilement regrouper des types similaires de projets dans à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’aide de l' *imbrication de projet*. Par exemple, le projet de modèle d’entreprise utilise des projets imbriqués pour regrouper des projets en catégories. Les projets de façade métier, les projets d’interface utilisateur Web, etc., sont regroupés dans une même catégorie.

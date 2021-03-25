@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895607"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063082"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Rouages du système, seconde partie
 
@@ -31,7 +31,7 @@ Dans [la génération d’un nouveau projet : sous le capot,](../../extensibili
 ### <a name="template-parameter-replacement"></a>Remplacement des paramètres de modèle
  Lorsque le modèle copie un modèle d’élément dans un nouveau projet, il remplace tous les paramètres de modèle par des chaînes pour personnaliser le fichier. Un paramètre de modèle est un jeton spécial qui est précédé et suivi d’un signe dollar, par exemple, $date $.
 
- Examinons un modèle d’élément de projet standard. Extrayez et examinez Program.cs dans le dossier Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip
+ Examinons un modèle d’élément de projet standard. Extrayez et examinez le fichier Program. cs dans le dossier Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  Cela indique au nouveau modèle de projet de créer le fichier de projet. csproj simple en copiant et en personnalisant l’élément de modèle fichier WindowsApplication. csproj.
 
 ### <a name="designers-and-references"></a>Concepteurs et références
- Vous pouvez voir dans la Explorateur de solutions que le dossier Propriétés est présent et qu’il contient les fichiers attendus. Mais qu’en est-il des références de projet et des dépendances de fichier de concepteur, comme Resources.Designer.cs à Resources. resx et Form1.Designer.cs à Form1.cs ?  Celles-ci sont configurées dans le fichier. csproj simple lorsqu’elles sont générées.
+ Vous pouvez voir dans la Explorateur de solutions que le dossier Propriétés est présent et qu’il contient les fichiers attendus. Mais qu’en est-il des références de projet et des dépendances de fichier de concepteur, telles que Resources. Designer. cs vers Resources. resx et Form1. Designer. cs vers Form1. cs ?  Celles-ci sont configurées dans le fichier. csproj simple lorsqu’elles sont générées.
 
  Voici le \<ItemGroup> de simple. csproj qui crée les références de projet :
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Vous pouvez voir qu’il s’agit des six références de projet qui s’affichent dans la Explorateur de solutions. Voici une section d’une autre \<ItemGroup> . De nombreuses lignes de code ont été supprimées pour plus de clarté. Cette section rend Settings.Designer.cs dépendant des paramètres. Settings :
+ Vous pouvez voir qu’il s’agit des six références de projet qui s’affichent dans la Explorateur de solutions. Voici une section d’une autre \<ItemGroup> . De nombreuses lignes de code ont été supprimées pour plus de clarté. Cette section fait en sorte que Settings. Designer. cs dépende des paramètres. Settings :
 
 ```xml
 <ItemGroup>
