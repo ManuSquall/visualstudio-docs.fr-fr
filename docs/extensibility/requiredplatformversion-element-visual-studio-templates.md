@@ -7,17 +7,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f281e51bd07c76d63bc0247d9d7f62fe0390283
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 8b1d7e3b8cc67f839977eb1e53d80731e59c064e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221780"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068425"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
 
@@ -61,7 +61,7 @@ Spécifie la version minimale du système d’exploitation requise par le modèl
 
  Ce texte spécifie la version minimale du système d’exploitation requise par le modèle.
 
-## <a name="example"></a>Exemple : 
+## <a name="example"></a>Exemple
 
  Cet exemple spécifie que le modèle de projet cible [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou version ultérieure.
 

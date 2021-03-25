@@ -28,12 +28,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932009"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094976"
 ---
 # <a name="midl-task"></a>MIDL (tâche)
 
@@ -79,7 +79,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre de **chaîne** facultatif.
 
-     Spécifie les options à transmettre au préprocesseur C/C++. Spécifiez une liste d’options de préprocesseur séparées par des espaces.
+     Spécifie les options à transmettre au préprocesseur C/C++. Spécifiez une liste d’options de préprocesseur séparées par des espaces. Doit contenir l' `/E` option.
 
      Pour plus d’informations, consultez l’option **/cpp_opt** dans la page [Informations de référence sur la ligne de commande MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -93,7 +93,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
     |Valeur|Option de ligne de commande|
     |-----------|--------------------------|
-    |**Abonné**|**/char signed**|
+    |**Signé**|**/char signed**|
     |**Non signé**|**/char unsigned**|
     |**R**|**/char ascii7**|
 

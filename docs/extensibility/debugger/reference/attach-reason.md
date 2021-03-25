@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f6fa83fb537f05a2c073e3693dab964fa58af464
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9da162dd2c477d5b901be6c622e2456f44d26a35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144609"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085427"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
 Spécifie la raison pour laquelle le moteur de débogage (DE) doit être attaché à un nœud de programme.
@@ -58,7 +58,7 @@ Attachement en raison d’une demande de l’utilisateur.
 ## <a name="remarks"></a>Notes
 Ces valeurs sont utilisées comme paramètre pour les méthodes d' [attachement](../../../extensibility/debugger/reference/idebugengine2-attach.md) et d' [attachement](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

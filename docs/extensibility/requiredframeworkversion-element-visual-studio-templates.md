@@ -10,17 +10,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3700735f987da7320d569b2cee020f0d8a072bdc
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 661e4067ac0191444be8ec7f1136f805ea8b39b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221794"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068451"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Élément RequiredFrameworkVersion (modèles Visual Studio)
 
@@ -62,7 +62,7 @@ Spécifie la version minimale du .NET Framework requis par le modèle. Cela entr
 
 `RequiredFrameworkVersion` est un élément facultatif. Utilisez cet élément uniquement si le modèle prend en charge une version minimale spécifique (et les versions ultérieures, le cas échéant) du .NET Framework. Si vous spécifiez l' `RequiredFrameworkVersion` élément et que votre modèle ne prend pas en charge une version minimale spécifique du .NET Framework, la liste déroulante **version du Framework cible** s’affiche lorsqu’elle n’est pas applicable.
 
-## <a name="example"></a>Exemple : 
+## <a name="example"></a>Exemple
 
 L’exemple suivant illustre les métadonnées pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modèle de classe standard.
 
