@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 601e40762adc665f6241bb00a4b683b81e7fbd80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88eacbdbcc50dc843769cdcf4701ba1a2bfe895a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970021"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061067"
 ---
 # <a name="properties-window-buttons"></a>Boutons de la fenêtre Propriétés
 Selon le langage de développement et le type de produit, certains boutons s’affichent par défaut dans la barre d’outils de la fenêtre **Propriétés** . Dans tous les cas, les boutons **classer**, classer par **alphabet**, **Propriétés** et **pages de propriétés** s’affichent. En Visual C# et Visual Basic, le bouton **événements** s’affiche également. Dans certains projets Visual C++, les boutons **VC + +** et les **remplacements VC** s’affichent. Des boutons supplémentaires peuvent s’afficher pour d’autres types de projets. Pour plus d’informations sur les boutons de la fenêtre **Propriétés** , consultez [fenêtre Propriétés](../../ide/reference/properties-window.md).

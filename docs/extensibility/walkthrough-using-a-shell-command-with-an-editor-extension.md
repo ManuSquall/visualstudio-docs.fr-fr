@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f36d141c75b43dfaf90960261e40c4a619069802
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061990"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : utiliser une commande d’interpréteur de commandes avec une extension d’éditeur
 À partir d’un VSPackage, vous pouvez ajouter des fonctionnalités telles que des commandes de menu à l’éditeur. Cette procédure pas à pas montre comment ajouter un ornement à une vue de texte dans l’éditeur en appelant une commande de menu.
@@ -614,7 +614,7 @@ ms.locfileid: "99888912"
 
     - Microsoft. VisualStudio. Text. UI. WPF
 
-2. Ouvrez le fichier *AddAdornment.cs* et ajoutez les `using` directives suivantes.
+2. Ouvrez le fichier *AddAdornment. cs* et ajoutez les `using` directives suivantes.
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;

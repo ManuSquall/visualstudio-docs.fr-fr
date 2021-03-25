@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad912c7225cb1a8c3d6ca294a4031c19bcd47e9a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f7534173fe927f1486e3f3c190ff2e427bb51bec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226551"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052916"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Cette interface représente une collection d’objets qui implémentent l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -43,7 +43,7 @@ IEnumDebugFields : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Récupère le jeu d’objets [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) suivant de l’énumération.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Ignore un nombre spécifié d’entrées.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Rétablit la première entrée de l’énumération.|
-|[Répliqué](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Récupère une copie de l’énumération actuelle.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Récupère une copie de l’énumération actuelle.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Récupère le nombre d’entrées dans l’énumération.|
 
 ## <a name="remarks"></a>Notes

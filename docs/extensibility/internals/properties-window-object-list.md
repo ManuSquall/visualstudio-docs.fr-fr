@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ffc64876e015ba2139022698576e04b12625e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 489ea25e0b06ab69650d4b48a306483945b34598
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945641"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060976"
 ---
 # <a name="properties-window-object-list"></a>Liste d’objets de la fenêtre Propriétés
 La liste d’objets de la fenêtre **Propriétés** est une liste déroulante qui vous permet de remplacer la sélection par d’autres objets disponibles dans une ou plusieurs fenêtres sélectionnées. La sélection d’un autre objet dans cette liste déclenche un appel à <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> pour informer l’environnement qu’un nouvel objet a été sélectionné. Les informations affichées dans la fenêtre **Propriétés** sont ensuite modifiées pour afficher les propriétés associées à l’objet nouvellement sélectionné.

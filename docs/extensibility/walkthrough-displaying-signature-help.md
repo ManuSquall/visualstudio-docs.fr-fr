@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8933822ee5bb63b341ff51296ba2884fef2aeb75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a9aedc6324eb1d4a57517a10b80348841fa72df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935909"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078498"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procédure pas à pas : afficher l’aide sur les signatures
 L’aide sur la signature (également appelée *informations sur les paramètres*) affiche la signature d’une méthode dans une info-bulle lorsqu’un utilisateur tape le caractère de début de liste de paramètres (généralement une parenthèse ouvrante). Comme un paramètre et un séparateur de paramètres (généralement une virgule) sont tapés, l’info-bulle est mise à jour pour afficher le paramètre suivant en gras. Vous pouvez définir l’aide de la signature des manières suivantes : dans le contexte d’un service de langage, définissez votre propre extension de nom de fichier et le type de contenu, ainsi que la signature d’affichage pour ce type, ou affichez l’aide de signature pour un type de contenu existant (par exemple, « texte »). Cette procédure pas à pas montre comment afficher l’aide sur la signature pour le type de contenu « text ».

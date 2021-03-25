@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b1006f74cd2de03b4fe74e090d7ffcd1c921e5d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887079"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069645"
 ---
 # <a name="extend-properties"></a>Étendre les propriétés
 La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fenêtre **Propriétés** est un Explorateur de propriétés universel pour les composants COM et com+ et prend en charge tous les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produits. La fenêtre **Propriétés** fonctionne avec les `ITypeInfo` informations de type et les métadonnées com+ pour répertorier les propriétés au moment du design de l’objet actuellement sélectionné dans toute autre fenêtre de l’environnement de développement intégré (IDE).

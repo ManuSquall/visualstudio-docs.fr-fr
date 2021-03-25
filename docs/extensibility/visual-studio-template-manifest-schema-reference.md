@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925834"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062497"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Référence de schéma du manifeste de modèle Visual Studio
 Ce schéma décrit le format des fichiers manifeste de modèle Visual Studio (*. vstman*) qui sont générés pour les modèles de projet ou d’élément Visual Studio. Le schéma décrit également l’emplacement et d’autres informations pertinentes sur le modèle.
@@ -32,7 +32,7 @@ Ce schéma décrit le format des fichiers manifeste de modèle Visual Studio (*.
 
 - **Version**: chaîne représentant la version du manifeste de modèle. Obligatoire.
 
-- **Paramètres régionaux**: chaîne représentant les paramètres régionaux ou les paramètres régionaux du manifeste de modèle. La valeur des paramètres régionaux s’applique à tous les modèles. Vous devez utiliser un manifeste distinct pour chaque paramètre régional. Facultatif.
+- **Paramètres régionaux**: chaîne représentant les paramètres régionaux ou les paramètres régionaux du manifeste de modèle. La valeur des paramètres régionaux s’applique à tous les modèles. Vous devez utiliser un manifeste distinct pour chaque paramètre régional. Optionnel.
 
 ### <a name="child-elements"></a>Éléments enfants
 
@@ -70,11 +70,11 @@ Ce schéma décrit le format des fichiers manifeste de modèle Visual Studio (*.
 
 - **RelativePath**: chemin d’accès du modèle. Il ne peut y avoir qu’une seule entrée par chemin d’accès, donc la première est gagnante pour tous les manifestes.
 
-- **LocalizedName**: élément **NameDescriptionIcon** qui spécifie le nom localisé. Facultatif.
+- **LocalizedName**: élément **NameDescriptionIcon** qui spécifie le nom localisé. Optionnel.
 
-- **SortOrder**: chaîne qui spécifie l’ordre de tri. Facultatif.
+- **SortOrder**: chaîne qui spécifie l’ordre de tri. Optionnel.
 
-- **ParentFolderOverrideName**: nom substitué du dossier parent. Facultatif. Cet élément a un attribut **Name** , qui est une valeur de chaîne qui spécifie le nom.
+- **ParentFolderOverrideName**: nom substitué du dossier parent. Optionnel. Cet élément a un attribut **Name** , qui est une valeur de chaîne qui spécifie le nom.
 
 ### <a name="parent-element"></a>Élément parent
  **VSTemplateManifest**
@@ -84,9 +84,9 @@ Ce schéma décrit le format des fichiers manifeste de modèle Visual Studio (*.
 
 ### <a name="attributes"></a>Attributs
 
-- **Package**: valeur de chaîne qui spécifie le package. Facultatif.
+- **Package**: valeur de chaîne qui spécifie le package. Optionnel.
 
-- **ID**: valeur de chaîne qui spécifie l’ID. Facultatif.
+- **ID**: valeur de chaîne qui spécifie l’ID. Optionnel.
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.

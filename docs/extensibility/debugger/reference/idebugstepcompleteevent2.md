@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStepCompleteEvent2 interface
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f366b9eb1d9406ba5207016ca97ea40d1fd48529
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 38791456500fc5996345314a0a779f5ccd03d940
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149533"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053189"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) quand le programme en cours de débogage effectue une pas à pas détaillé, un pas à pas principal ou une étape en dehors d’une ligne de code source ou d’instruction ou d’instruction.
@@ -38,7 +38,7 @@ IDebugStepCompleteEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Une fois l’étape terminée, le programme en cours de débogage est suspendu une fois de plus, et l’IDE met à jour toutes ses fenêtres.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

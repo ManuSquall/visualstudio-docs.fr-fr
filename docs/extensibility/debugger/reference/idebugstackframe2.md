@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2 interface
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ec53e89afb43187c641058620df53c4a61d6cc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f9675627bf3044258a532ca91768619f2c6de3ba
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145909"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053254"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Cette interface représente un frame de pile unique dans une pile des appels dans un thread particulier.
@@ -54,7 +54,7 @@ IDebugStackFrame2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est obtenue uniquement lorsque le programme en cours de débogage a été arrêté à un point d’arrêt (provoqué par un point d’arrêt défini par l’utilisateur ou une exception). À partir de cette interface, un contexte d’expression peut être obtenu pour évaluer des expressions, une liste de registres peut être retournée, ou la pile des appels peut être obtenue et examinée.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

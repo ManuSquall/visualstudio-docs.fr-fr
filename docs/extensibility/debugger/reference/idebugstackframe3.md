@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3 interface
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d70095db80b8bbd349509de2858b641c520b0623
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4049b728842e630a0f0b300130362b8efa8ceec0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159768"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053202"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Cette interface étend [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) pour gérer les exceptions interceptées.
@@ -55,7 +55,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  Un moteur de débogage indique qu’il prend en charge l’interception des exceptions en affectant la valeur 1 à « metricExceptions » au moment de l’exécution à l’aide de la `SetMetric` fonction. Pour plus d’informations, consultez la page [applications auxiliaires du kit de développement logiciel (SDK) pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

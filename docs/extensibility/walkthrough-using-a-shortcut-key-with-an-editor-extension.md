@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931264"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061951"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procédure pas à pas : utiliser une touche de raccourci avec une extension d’éditeur
 Vous pouvez répondre aux touches de raccourci dans votre extension d’éditeur. La procédure pas à pas suivante montre comment ajouter un ornement de vue à un affichage de texte à l’aide d’une touche de raccourci. Cette procédure pas à pas est basée sur le modèle de l’éditeur d’ornements Viewport et vous permet d’ajouter l’ornement à l’aide du caractère +.
@@ -47,7 +47,7 @@ Vous pouvez répondre aux touches de raccourci dans votre extension d’éditeur
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-Dans le fichier de classe KeyBindingTestTextViewCreationListener.cs, modifiez le nom du AdornmentLayer de **KeyBindingTest** en **PurpleCornerBox**:
+Dans le fichier de classe KeyBindingTestTextViewCreationListener. cs, remplacez le nom du AdornmentLayer **KeyBindingTest** par **PurpleCornerBox**:
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ Le gestionnaire de commandes est une implémentation de <xref:Microsoft.VisualSt
    }
    ```
 
-   7. Copiez la définition de la couche d’ornement à partir du fichier *KeyBindingTestTextViewCreationListener.cs* vers *KeyBindingCommandHandler.cs* , puis supprimez le fichier *KeyBindingTestTextViewCreationListener.cs* :
+   7. Copiez la définition de la couche d’ornement à partir du fichier *KeyBindingTestTextViewCreationListener. cs* vers *KeyBindingCommandHandler. cs* , puis supprimez le fichier *KeyBindingTestTextViewCreationListener. cs* :
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ Le gestionnaire de commandes est une implémentation de <xref:Microsoft.VisualSt
 
 L’ornement d’origine est apparu sur chaque caractère’a’dans un fichier texte. Maintenant que nous avons modifié le code pour ajouter l’ornement en réponse au **+** caractère, il ajoute l’ornement uniquement sur la ligne où le **+** caractère est tapé. Nous pouvons modifier le code d’ornement afin que l’ornement apparaisse une fois de plus sur chaque « a ».
 
-Dans le fichier *KeyBindingTest.cs* , modifiez la `CreateVisuals()` méthode pour itérer au sein de toutes les lignes de la vue afin de décorer le caractère « a ».
+Dans le fichier *KeyBindingTest. cs* , modifiez la `CreateVisuals()` méthode pour effectuer une itération dans toutes les lignes de la vue afin de décorer le caractère « a ».
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

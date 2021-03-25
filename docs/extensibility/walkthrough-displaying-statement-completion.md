@@ -7,20 +7,20 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c797de1e68b275fa1a36ec8fa1f97f665cfd18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33ef62a1d2df4b426d76bd294d00a21f1629174b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873916"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078472"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procédure pas à pas : afficher la saisie semi-automatique des instructions
 Vous pouvez implémenter la saisie semi-automatique des instructions basées sur le langage en définissant les identificateurs pour lesquels vous souhaitez fournir la saisie semi-automatique, puis en déclenchant une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définir votre propre extension de nom de fichier et le type de contenu, puis afficher la saisie semi-automatique uniquement pour ce type. Ou vous pouvez déclencher l’achèvement d’un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « texte » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.

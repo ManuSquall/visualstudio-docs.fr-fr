@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5afe5df8808ee8b0c8ad13c494e58aea903fff89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a218cc3923f26c048bcf40894d66fccea2526aa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926059"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062640"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Lignes directrices pour l’expérience utilisateur dans Visual Studio
 Suivez les instructions de l’expérience utilisateur de Visual Studio si vous concevez de nouvelles fonctionnalités pour Visual Studio. Ces instructions contiennent des informations sur les modèles utilisateur communs et les modèles d’interaction afin que les concepteurs de nouvelles interfaces utilisateur puissent créer des expériences utilisateur qui sont transparents et cohérentes dans l’environnement de développement.

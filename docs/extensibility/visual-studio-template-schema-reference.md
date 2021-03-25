@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 458f3245517dd874a086932c65806978b5a1cf85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 423e92eef6f9b712bd7705acbf9d95d5a01f44f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925871"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062445"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Référence du schéma de modèle Visual Studio
 Cette section contient des informations sur les éléments XML des fichiers *. vstemplate* , qui sont des fichiers qui stockent les métadonnées des modèles de projet, des modèles d’élément et des Starter Kits.
@@ -53,7 +53,7 @@ Cette section contient des informations sur les éléments XML des fichiers *. v
 |[Nom](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> id|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
-|[Projet](../extensibility/project-element-visual-studio-templates.md)|Dossier<br /><br /> ProjectItem|Fichier<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
+|[Projet](../extensibility/project-element-visual-studio-templates.md)|Dossier<br /><br /> ProjectItem|File<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|
 |[ProjectItem (Modèles d'élément)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Sous-type<br /><br /> CustomTool<br /><br /> itemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
 |[ProjectItem (modèles de projet)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
@@ -63,7 +63,7 @@ Cette section contient des informations sur les éléments XML des fichiers *. v
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
 |[Référence](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
-|[Informations de référence](../extensibility/references-element-visual-studio-templates.md)|Référence|--|
+|[Informations de référence](../extensibility/references-element-visual-studio-templates.md)|Informations de référence|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Version|
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Package|
