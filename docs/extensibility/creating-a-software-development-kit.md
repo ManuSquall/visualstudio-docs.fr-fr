@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74e31cb8fddb00e8a6771a6ad3065bce57cc8bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc762912abdc58b33e49406dd46cadd152f732b6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902237"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089366"
 ---
 # <a name="create-a-software-development-kit"></a>Créer un kit de développement logiciel
 
@@ -37,7 +37,7 @@ Les kits de développement logiciel (SDK) de plateforme sont requis pour dévelo
 
 Tous les kits de développement logiciel de plateforme seront installés dans *HKLM\Software\Microsoft\Microsoft SDK \\ [TPI] \V [TPV] \\ @InstallationFolder = [root SDK]*. En conséquence, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] Kit de développement logiciel (SDK) est installé sur *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
-### <a name="layout"></a>Mise en page
+### <a name="layout"></a>Layout
 
 Les kits de développement Platform SDK présentent la disposition suivante :
 

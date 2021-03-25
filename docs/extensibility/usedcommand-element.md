@@ -8,17 +8,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3f4a5f39e7cb999d9b3a86aa791464fca25645
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30ff89cba5dbc1e54afaf51fb659e07c29e53009
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934101"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060222"
 ---
 # <a name="usedcommand-element"></a>Élément UsedCommand
 Permet à un VSPackage d’accéder à une commande définie dans un autre fichier. vsct. Par exemple, si votre VSPackage utilise la commande de **copie** standard, qui est définie par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, vous pouvez ajouter la commande à un menu ou une barre d’outils sans la réimplémenter.
@@ -38,7 +38,7 @@ Permet à un VSPackage d’accéder à une commande définie dans un autre fichi
 |---------------|-----------------|
 |guid|Obligatoire. GUID de la paire d’ID GUID qui identifie la commande.|
 |id|Obligatoire. ID de la paire d’ID GUID qui identifie la commande.|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 997f4e32007af641b24ba933d2c891e447382786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3d4b962475e2f0705d8a46624a8f47d802ff2f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895828"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075157"
 ---
 # <a name="extend-projects"></a>Étendre des projets
 Les projets et les solutions sont la manière dont Visual Studio organise les fichiers de code et de ressources en unités de compilation et de déploiement. Vous trouverez plus d’informations sur les projets dans les [projets (kit de développement logiciel Visual Studio)](../extensibility/extending-projects.md).

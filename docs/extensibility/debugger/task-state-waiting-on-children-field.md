@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1533ef28b32450d9b039c27e49ba655dddfd6ebe
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 955523b58703023add8b4bf312a98df8f792d3ef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223201"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075287"
 ---
 # <a name="task_state_waiting_on_children-field"></a>Champ TASK_STATE_WAITING_ON_CHILDREN
 La tâche a terminé l’exécution de son délégué et attend implicitement la fin des tâches enfants attachées.

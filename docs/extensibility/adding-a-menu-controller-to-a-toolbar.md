@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 304f4ea11abc332c01603f96b6b67c0bd22e38c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951522"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060066"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Ajouter un contrôleur de menu à une barre d’outils
 Cette procédure pas à pas s’appuie sur la procédure pas à pas [Ajouter une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) et montre comment ajouter un contrôleur de menu à la barre d’outils de la fenêtre outil. Les étapes décrites ici peuvent également être appliquées à la barre d’outils créée dans la procédure pas à pas [Ajouter une barre d’outils](../extensibility/adding-a-toolbar.md) .
@@ -112,7 +112,7 @@ Les contrôleurs de menu peuvent apparaître dans les menus, mais ils sont le pl
 
 ## <a name="implement-the-menu-controller-commands"></a>Implémenter les commandes de contrôleur de menu
 
-1. Dans *TWTestCommandPackageGuids.cs*, ajoutez des ID de commande pour vos trois éléments de menu après les ID de commande existants.
+1. Dans *TWTestCommandPackageGuids. cs*, ajoutez des ID de commande pour vos trois éléments de menu après les ID de commande existants.
 
     ```csharp
     public const int cmdidMCItem1 = 0x130;
@@ -120,7 +120,7 @@ Les contrôleurs de menu peuvent apparaître dans les menus, mais ils sont le pl
     public const int cmdidMCItem3 = 0x132;
     ```
 
-2. Dans *TWTestCommand.cs*, ajoutez le code suivant en haut de la `TWTestCommand` classe.
+2. Dans *TWTestCommand. cs*, ajoutez le code suivant en haut de la `TWTestCommand` classe.
 
     ```csharp
     private int currentMCCommand; // The currently selected menu controller command

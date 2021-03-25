@@ -8,17 +8,17 @@ helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3f938eb31c06e1e88af21b058b4475bc192d49c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f38bee1b62340f7d557ac2e5190fc5c48d9268fe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874407"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060144"
 ---
 # <a name="about-file-name-extensions"></a>À propos des extensions de nom de fichier
 Lorsque vous inscrivez une extension de fichier d’un VSPackage, vous l’associez à une version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Cela est important si plusieurs versions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sont installées sur un ordinateur.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2d812dbee833358f682b5227785c78322efe44a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068061"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Modifier le texte d’une commande de menu
 Les étapes suivantes montrent comment modifier l’étiquette de texte d’une commande de menu à l’aide du <xref:System.ComponentModel.Design.IMenuCommandService> service.
@@ -41,7 +41,7 @@ Les étapes suivantes montrent comment modifier l’étiquette de texte d’une 
     </Button>
     ```
 
-3. Dans le fichier *ChangeMenuText.cs* , créez un gestionnaire d’événements qui sera appelé avant l’affichage de la commande de menu.
+3. Dans le fichier *ChangeMenuText. cs* , créez un gestionnaire d’événements qui sera appelé avant l’affichage de la commande de menu.
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)

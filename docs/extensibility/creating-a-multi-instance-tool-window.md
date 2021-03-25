@@ -8,17 +8,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923265"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089353"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Créer une fenêtre outil à instances multiples
 Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celle-ci puissent être ouvertes simultanément. Par défaut, une seule instance peut être ouverte pour les fenêtres outil.
@@ -34,7 +34,7 @@ Lorsque vous utilisez une fenêtre outil à instances multiples, vous pouvez aff
 
 ## <a name="make-a-tool-window-multi-instance"></a>Rendre une fenêtre outil multi-instance
 
-1. Ouvrez le fichier *MIToolWindowPackage.cs* et recherchez l' `ProvideToolWindow` attribut. et le `MultiInstances=true` paramètre, comme indiqué dans l’exemple suivant :
+1. Ouvrez le fichier *MIToolWindowPackage. cs* et recherchez l' `ProvideToolWindow` attribut. et le `MultiInstances=true` paramètre, comme indiqué dans l’exemple suivant :
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -46,7 +46,7 @@ Lorsque vous utilisez une fenêtre outil à instances multiples, vous pouvez aff
     {. . .}
     ```
 
-2. Dans le fichier *MIToolWindowCommand.cs* , recherchez la `ShowToolWindos()` méthode. Dans cette méthode, appelez la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode et affectez `create` à son indicateur la valeur `false` afin qu’elle itère au sein des instances de fenêtre outil existantes jusqu’à ce qu’un disponible `id` soit trouvé.
+2. Dans le fichier *MIToolWindowCommand. cs* , recherchez la `ShowToolWindos()` méthode. Dans cette méthode, appelez la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode et affectez `create` à son indicateur la valeur `false` afin qu’elle itère au sein des instances de fenêtre outil existantes jusqu’à ce qu’un disponible `id` soit trouvé.
 
 3. Pour créer une instance de fenêtre outil, appelez la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode et affectez `id` à sa valeur disponible et à son indicateur la valeur `create` `true` .
 

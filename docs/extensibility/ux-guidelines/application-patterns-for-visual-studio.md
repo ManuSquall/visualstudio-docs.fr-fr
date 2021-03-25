@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892591"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060235"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interactions entre les fenêtres
@@ -117,7 +117,7 @@ Voici des exemples de fenêtres d’outils de liste navigable : Explorateur de 
 
 | Fenêtre outil | Fonction |
 | --- | --- |
-| Aide | Une fenêtre qui permet aux utilisateurs d’accéder à différentes méthodes d’obtention d’aide, à partir de la section « Comment faire ? » vidéos sur les forums MSDN. |
+| Help | Une fenêtre qui permet aux utilisateurs d’accéder à différentes méthodes d’obtention d’aide, à partir de la section « Comment faire ? » vidéos sur les forums MSDN. |
 | Aide dynamique | Fenêtre outil qui affiche des liens vers les rubriques d’aide applicables à la sélection actuelle. |
 | Explorateur d'objets | Un jeu de frames à deux colonnes avec une liste de composants d’objets hiérarchiques dans le volet gauche et les propriétés et méthodes de l’objet dans la colonne de droite. |
 
@@ -153,7 +153,7 @@ Voici des exemples de fenêtres d’outils de liste navigable : Explorateur de 
 | --- | --- |
 | Autos ||
 | Immédiat ||
-| Output | La fenêtre sortie peut être utilisée chaque fois que vous avez des événements textuels ou un État à déclarer. |
+| Sortie | La fenêtre sortie peut être utilisée chaque fois que vous avez des événements textuels ou un État à déclarer. |
 | Mémoire ||
 | Points d’arrêt ||
 | Exécution en cours ||
@@ -417,7 +417,7 @@ N’utilisez pas de touches d’accès pour les boutons **OK**, **Annuler** ou *
 
 | Nom du bouton | Raccourci clavier |
 | --- | --- |
-| OK | Entrez |
+| Ok | Entrez |
 | Annuler | Échap |
 | Aide | F1 |
 
@@ -537,7 +537,7 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 | Ctrl + Maj + glisser | Cible | Ajoute une référence à l’élément d’origine | Ajoute une référence à l’élément d’origine |
 | Ctrl + Maj + glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
 | Ctrl + Maj + glisser | Résultats | `DROPEFFECT_LINK` est retourné en tant qu’action de `::Drop` et l’élément reste à l’emplacement d’origine dans le stockage | `DROPEFFECT_LINK` est retourné en tant qu’action de `::Drop` et l’élément reste à l’emplacement d’origine dans le stockage |
-| Ctrl + Maj + glisser | Remarque | Identique au comportement de glisser-déplacer pour les raccourcis dans l’Explorateur Windows. ||
+| Ctrl + Maj + glisser | Notes | Identique au comportement de glisser-déplacer pour les raccourcis dans l’Explorateur Windows. ||
 | Couper/coller | Action | Déplacer | Lien |
 | Couper/coller | Cible | Ajoute une référence à l’élément d’origine | Ajoute une référence à l’élément d’origine |
 | Couper/coller | Source | Conserve la référence à l’élément d’origine|Conserve l’élément d’origine |

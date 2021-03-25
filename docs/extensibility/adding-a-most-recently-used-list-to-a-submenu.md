@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb238afb0f583f1b913fbd87f4f50e43679ebd7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951548"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060014"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Ajouter une liste des derniers fichiers utilisés à un sous-menu
 Cette procédure pas à pas s’appuie sur les démonstrations dans [Ajouter un sous-menu à un menu](../extensibility/adding-a-submenu-to-a-menu.md)et montre comment ajouter une liste dynamique à un sous-menu. La liste dynamique forme la base de la création d’une liste des derniers fichiers utilisés.
@@ -83,14 +83,14 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 
 ## <a name="filling-the-mru-list"></a>Remplissage de la liste des fichiers récents
 
-1. Dans *TestCommandPackageGuids.cs*, ajoutez les lignes suivantes après les ID de commande existants dans la `TestCommandPackageGuids` définition de classe.
+1. Dans *TestCommandPackageGuids. cs*, ajoutez les lignes suivantes après les ID de commande existants dans la `TestCommandPackageGuids` définition de classe.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. Dans *TestCommand.cs* , ajoutez l’instruction using suivante.
+2. Dans *test. cs* , ajoutez l’instruction using suivante.
 
     ```csharp
     using System.Collections;

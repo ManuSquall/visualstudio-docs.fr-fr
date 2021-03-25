@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15d28ff154629d07c643430b210d6106ac99978c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887365"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089431"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Créer un système de projet de base, partie 1
 Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources. Les projets apparaissent en tant qu’enfants des solutions dans le **Explorateur de solutions**. Les projets vous permettent d’organiser, de générer, de déboguer et de déployer du code source et de créer des références à des services Web, des bases de données et d’autres ressources.
@@ -80,7 +80,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
 
 4. Enregistrez l’icône et fermez l’éditeur d’icône.
 
-5. Dans le dossier *Templates\Projects\SimpleProject* , ajoutez un élément de **classe** nommé *Program.cs*.
+5. Dans le dossier *Templates\Projects\SimpleProject* , ajoutez un élément de **classe** nommé *Program. cs*.
 
 6. Remplacez le code existant par les lignes suivantes.
 
@@ -103,11 +103,11 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
    ```
 
    > [!IMPORTANT]
-   > Il ne s’agit pas de la forme finale du code *Program.cs* . les paramètres de remplacement seront traités dans une étape ultérieure. Vous pouvez voir des erreurs de compilation, mais tant que le **BuildAction** du fichier est de type **contenu**, vous devez être en mesure de générer et d’exécuter le projet comme d’habitude.
+   > Il ne s’agit pas de la forme finale du code *Program. cs* . les paramètres de remplacement seront traités dans une étape ultérieure. Vous pouvez voir des erreurs de compilation, mais tant que le **BuildAction** du fichier est de type **contenu**, vous devez être en mesure de générer et d’exécuter le projet comme d’habitude.
 
 7. Enregistrez le fichier .
 
-8. Copiez le fichier *AssemblyInfo.cs* du dossier *Properties* dans le dossier *Projects\SimpleProject* .
+8. Copiez le fichier *AssemblyInfo. cs* du dossier *Properties* dans le dossier *Projects\SimpleProject* .
 
 9. Dans le dossier *Projects\SimpleProject* , ajoutez un fichier XML nommé *SimpleProject. MyProj*.
 
@@ -156,9 +156,9 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
 
 11. Enregistrez le fichier .
 
-12. Dans la fenêtre **Propriétés** , affectez à l' **Action de génération** *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico* et *SimpleProject. MyProj* la valeur **contenu**, puis affectez à leurs propriétés **inclure dans VSIX** la **valeur true**.
+12. Dans la fenêtre **Propriétés** , affectez à l' **action de génération** *AssemblyInfo. cs*, *Program. cs*, *SimpleProject. ico* et *SimpleProject. MyProj* la valeur **contenu**, puis affectez à la propriété **inclure dans VSIX** la **valeur true**.
 
-    Ce modèle de projet décrit un projet Visual C# de base qui a à la fois une configuration de débogage et une configuration Release. Le projet comprend deux fichiers sources, *AssemblyInfo.cs* et *Program.cs*, ainsi que plusieurs références d’assembly. Lorsqu’un projet est créé à partir du modèle, la valeur ProjectGuid est automatiquement remplacée par un nouveau GUID.
+    Ce modèle de projet décrit un projet Visual C# de base qui a à la fois une configuration de débogage et une configuration Release. Le projet comprend deux fichiers sources, *AssemblyInfo. cs* et *Program. cs*, et plusieurs références d’assembly. Lorsqu’un projet est créé à partir du modèle, la valeur ProjectGuid est automatiquement remplacée par un nouveau GUID.
 
     Dans **Explorateur de solutions**, le dossier de **modèles** développé doit se présenter comme suit :
 
@@ -190,7 +190,7 @@ Templates
        }
    ```
 
-2. Ajoutez une classe au dossier Top *SimpleProject* nommé *SimpleProjectFactory.cs*.
+2. Ajoutez une classe au dossier Top *SimpleProject* nommé *SimpleProjectFactory. cs*.
 
 3. Ajoutez les directives using suivantes :
 
@@ -212,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>Pour inscrire le modèle de projet
 
-1. Dans *SimpleProjectPackage.cs*, ajoutez un <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribut à la `SimpleProjectPackage` classe, comme suit.
+1. Dans *SimpleProjectPackage. cs*, ajoutez un <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribut à la `SimpleProjectPackage` classe, comme suit.
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -271,7 +271,7 @@ Templates
 
 ### <a name="to-initialize-the-project-factory"></a>Pour initialiser la fabrique de projet
 
-1. Dans le fichier *SimpleProjectPackage.cs* , ajoutez la `using` directive suivante.
+1. Dans le fichier *SimpleProjectPackage. cs* , ajoutez la `using` directive suivante.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -299,7 +299,7 @@ Templates
     }
     ```
 
-5. Dans *SimpleProjectFactory.cs*, ajoutez la `using` directive suivante après les `using` directives existantes.
+5. Dans *SimpleProjectFactory. cs*, ajoutez la `using` directive suivante après les `using` directives existantes.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -339,7 +339,7 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>Pour tester l’implémentation de la fabrique de projets
 
-1. Dans le fichier *SimpleProjectFactory.cs* , définissez un point d’arrêt sur la ligne suivante dans le `SimpleProjectFactory` constructeur.
+1. Dans le fichier *SimpleProjectFactory. cs* , définissez un point d’arrêt sur la ligne suivante dans le `SimpleProjectFactory` constructeur.
 
     ```csharp
     this.package = package;
@@ -418,7 +418,7 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Pour connecter la classe de fabrique de projets et la classe de nœud
 
-1. Dans le fichier *SimpleProjectFactory.cs* , ajoutez la `using` directive suivante :
+1. Dans le fichier *SimpleProjectFactory. cs* , ajoutez la `using` directive suivante :
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
@@ -462,7 +462,7 @@ Templates
 
 3. Dans la fenêtre **Propriétés** , remplacez l' **action de génération** de l’image bitmap par **ressource incorporée**.
 
-4. Dans *SimpleProjectNode.cs*, ajoutez les `using` directives suivantes :
+4. Dans *SimpleProjectNode. cs*, ajoutez les `using` directives suivantes :
 
    ```csharp
    using System.Drawing;
@@ -564,7 +564,7 @@ Templates
 
 ### <a name="to-substitute-template-parameters"></a>Pour remplacer les paramètres de modèle
 
-1. Dans le fichier *SimpleProjectNode.cs* , ajoutez la `using` directive suivante.
+1. Dans le fichier *SimpleProjectNode. cs* , ajoutez la `using` directive suivante.
 
    ```csharp
    using System.IO;
@@ -605,7 +605,7 @@ Templates
 
    - `nameSpace` reçoit la valeur de l' \<RootNamespace> élément dans le fichier de modèle de projet *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . Dans ce cas, la valeur est `MyRootNamespace`.
 
-   - `className` reçoit la valeur du nom de fichier source de la classe, sans l’extension de nom de fichier. Dans ce cas, le premier fichier à copier dans le dossier de destination est *AssemblyInfo.cs*; par conséquent, la valeur de className est `AssemblyInfo` .
+   - `className` reçoit la valeur du nom de fichier source de la classe, sans l’extension de nom de fichier. Dans ce cas, le premier fichier à copier dans le dossier de destination est *AssemblyInfo. cs*; par conséquent, la valeur de className est `AssemblyInfo` .
 
 4. Supprimez le point d’arrêt et appuyez sur **F5** pour continuer l’exécution.
 
@@ -638,4 +638,4 @@ Templates
 
     ![Commande de projet simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   Félicitations ! Vous avez implémenté un système de projet managé de base.
+   Félicitations ! Vous avez implémenté un système de projet managé de base.

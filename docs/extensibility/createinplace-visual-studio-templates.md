@@ -11,17 +11,17 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa138923f8d23c59613ce1bbc51460fd3c8c9acb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3da93439b245c2f8f23a8fa5b79d9fef3a48a9d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870335"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089483"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Élément CreateInPlace (modèles Visual Studio)
 Spécifie s’il faut créer le projet et effectuer le remplacement des paramètres à l’emplacement spécifié, ou effectuer le remplacement des paramètres dans un emplacement temporaire, puis enregistrer le projet à l’emplacement spécifié.
@@ -55,7 +55,7 @@ Spécifie s’il faut créer le projet et effectuer le remplacement des paramèt
 
  Le texte doit être `true` ou `false`. Si `true` , le projet est créé et le remplacement de paramètre est effectué à l’emplacement spécifié dans la boîte de dialogue **nouveau projet** . Si `false` la valeur est, le remplacement des paramètres est effectué dans un emplacement temporaire et le projet est ensuite copié à l’emplacement spécifié.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `CreateInPlace` est un élément facultatif. La valeur par défaut est `true`.
 
 ## <a name="example"></a>Exemple

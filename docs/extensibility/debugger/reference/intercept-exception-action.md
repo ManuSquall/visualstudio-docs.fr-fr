@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5e1038ac2515198d5eb20b66f346f7a6798c25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c5a3d0d946e05ce249fa4b74dd31e7fef891e7a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852789"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082619"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
 Spécifie les actions à effectuer lors de l’interception des exceptions.
@@ -49,10 +49,10 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 `IEA_INTERCEPT`\
 Permet d’intercepter l’exception actuelle. Il s’agit de la seule valeur prise en charge pour l’instant et doit être spécifiée.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Ces valeurs sont passées à la méthode [InterceptCurrentException,](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

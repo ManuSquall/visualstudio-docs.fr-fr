@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 752a912fd9a565e4b3e8dcb5c4c142e8f37dffc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a84fa551a4a3ea10b212832c0891fb0d7d19b2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934036"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060183"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 Il existe deux types de banques de paramètres :
@@ -33,12 +33,12 @@ Il existe deux types de banques de paramètres :
 
 1. Chaque extension Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources d’extension. Créez un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `SettingsStoreExtension` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** sous **Visual C#/extensibilité**.
 
-2. Ajoutez maintenant un modèle d’élément de commande personnalisé nommé **SettingsStoreCommand**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par **SettingsStoreCommand.cs**. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Ajoutez maintenant un modèle d’élément de commande personnalisé nommé **SettingsStoreCommand**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par **SettingsStoreCommand. cs**. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 ## <a name="using-the-configuration-settings-store"></a>Utilisation du magasin des paramètres de configuration
  Cette section montre comment détecter et afficher les paramètres de configuration.
 
-1. Dans le fichier SettingsStorageCommand.cs, ajoutez les directives d’utilisation suivantes :
+1. Dans le fichier SettingsStorageCommand. cs, ajoutez les directives d’utilisation suivantes :
 
    ```
    using System.Collections.Generic;

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896258"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089340"
 ---
 # <a name="create-a-settings-category"></a>Créer une catégorie de paramètres
 
@@ -50,7 +50,7 @@ Pour démarrer cette procédure pas à pas, vous devez d’abord terminer la pre
     > [!NOTE]
     > Parmi ces trois, seul le nom de la catégorie n’apparaît pas dans l’Assistant **importation et exportation de paramètres** .
 
-3. Dans *MyToolsOptionsPackage.cs*, ajoutez une `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.
+3. Dans *MyToolsOptionsPackage. cs*, ajoutez une `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.
 
     ```csharp
     public class OptionPageGrid : DialogPage
