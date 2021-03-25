@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc0636334cfde4452f427285bfe21141bc7614e1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58b524de5d2d230e240ae7338190568ccfe6fb2a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170729"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096484"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 Cette structure décrit un contexte de mémoire ou un contexte de code.
@@ -79,7 +79,7 @@ Cette structure est retournée à partir d’un appel à la méthode [GetInfo](.
 
 Une utilisation classique de cette structure est la prise en charge d’une fenêtre de débogage de la **mémoire** .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

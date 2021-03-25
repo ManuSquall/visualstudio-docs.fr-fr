@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad000d486b0808ea4ddc3311daa7178c6eda1231
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931290"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080318"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : afficher les suggestions d’ampoules
 Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.
@@ -74,7 +74,7 @@ Les ampoules sont des icônes de l’éditeur Visual Studio qui se développent 
 
 ## <a name="implement-the-light-bulb-source-provider"></a>Implémenter le fournisseur de la source de l’ampoule
 
-1. Dans le fichier de classe *LightBulbTest.cs* , supprimez la classe LightBulbTest. Ajoutez une classe nommée **TestSuggestedActionsSourceProvider** qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> . Exportez-le avec un nom de **test actions suggérées** et un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « Text ».
+1. Dans le fichier de classe *LightBulbTest. cs* , supprimez la classe LightBulbTest. Ajoutez une classe nommée **TestSuggestedActionsSourceProvider** qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> . Exportez-le avec un nom de **test actions suggérées** et un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « Text ».
 
     ```csharp
     [Export(typeof(ISuggestedActionsSourceProvider))]

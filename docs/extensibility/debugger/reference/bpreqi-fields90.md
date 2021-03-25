@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5405f728cf979738de5a830421c4306c5e398bb2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e977d6e85430dbd9f1931bd4fb62c02f22181d5a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151082"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067606"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 Énumère les valeurs valides qui spécifient les informations à récupérer sur une demande de point d’arrêt. Cette énumération étend l’énumération [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) .
@@ -123,7 +123,7 @@ Initialisez ou utilisez le `bstrMacroTracepoint` champ de la `BP_REQUEST_INFO2` 
 `BPREQI90_ALLFIELDS`\
 Spécifie tous les champs de la `BP_REQUEST_INFO2` structure.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : Msdbg90. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

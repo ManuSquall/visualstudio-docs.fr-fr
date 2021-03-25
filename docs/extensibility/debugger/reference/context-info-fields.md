@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 401195d5b03f87ba1ea5c66811570a720e53bdae
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 878dfb4e2f684b7a28b06820e110b22cdae962b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170768"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096445"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 Spécifie les informations à récupérer sur un contexte de mémoire.
@@ -79,7 +79,7 @@ Ces indicateurs sont également utilisés pour indiquer les champs de la `CONTEX
 
 Ces valeurs peuvent être combinées avec une opération or au niveau du bit.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugArrayObject2 interface
 ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e6bb73834f53e22df63682663539b5f01685b30
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 169f4df61bcd4a58e74e0d83cee362b3926d2b36
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174122"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067567"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -44,7 +44,7 @@ IDebugArrayObject2 : IDebugArrayObject
 ## <a name="remarks"></a>Notes
  Un évaluateur d’expression utilise cette interface pour représenter des tableaux managés dans une arborescence d’analyse.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : EE. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

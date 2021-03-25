@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e66a0066abca5fb657960f2042b738a10e59ca
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a52856cfa70491b7a7daa9079c111b1430475d22
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169728"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053709"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Cette interface représente un point d’arrêt qui est prêt à être lié à un emplacement de code.
@@ -57,7 +57,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  Un point d’arrêt en attente peut potentiellement produire plus d’un point d’arrêt lié. Par exemple, un point d’arrêt dans un modèle de style C++ peut produire un point d’arrêt lié pour chaque instance unique de ce modèle.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

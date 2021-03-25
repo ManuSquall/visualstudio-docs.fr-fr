@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c519ccfe70ba5685dec8230bf3e4fcb0eb768921
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151842"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073675"
 ---
 # <a name="idebugfield"></a>IDebugField
 Cette interface représente un champ, autrement dit, une description d’un symbole ou d’un type.
@@ -63,7 +63,7 @@ weather stormy;
 
  Si un champ représente un symbole ou un type peut être déterminé en appelant [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) et en examinant le résultat [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) . Si le `FIELD_KIND_TYPE` bit est défini, le champ est un type et, si le `FIELD_KIND_SYMBOL` bit est défini, il s’agit d’un symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : SH. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

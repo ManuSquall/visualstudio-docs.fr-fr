@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f5a34513130ea112393ffbb4935093bcea6e797
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936000"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061535"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance SDK pour le débogage
 Ces fonctions et déclarations sont des fonctions d’assistance globales pour l’implémentation de moteurs de débogage, d’évaluateur d’expression et de fournisseurs de symboles en C++.
@@ -419,7 +419,7 @@ HRESULT EnumMetricSections(
 |*[types d’exception]*|Titre général pour la sous-clé identifiant la classe des exceptions qui peuvent être gérées. Les noms typiques sont les exceptions **C++**, les **Exceptions Win32**, les **exceptions du Common Language Runtime** et les **contrôles de Run-Time natifs**. Ces noms sont également utilisés pour identifier une classe particulière d’exception pour l’utilisateur.|
 |*titre*|Nom d’une exception : par exemple, **_com_error** ou **un arrêt de contrôle**. Ces noms sont également utilisés pour identifier une exception particulière pour l’utilisateur.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  Ces fichiers se trouvent dans le [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] répertoire d’installation du kit de développement logiciel (SDK) (par défaut, *[lecteur]* \Program Files\Microsoft Visual Studio 2010 SDK \\ ).
 
  En-tête : includes\dbgmetric.h

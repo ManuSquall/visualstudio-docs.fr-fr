@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2 interface
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3efe419eaf037602ce1148c898c6c30dd86d23b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e39a469d04ac14f3ed36366d035bf4ca01a9d2ef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149572"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087325"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 Cette interface permet au gestionnaire de débogage de session (SDM) de s’attacher à un programme et d’obtenir le nœud de programme associé à un programme.
@@ -46,7 +46,7 @@ IDebugProgramEx2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est privée entre le SDM et le programme.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : Portpriv. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop
