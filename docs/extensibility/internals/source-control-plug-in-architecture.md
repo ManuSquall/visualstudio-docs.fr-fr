@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669ef527e65e56612199b8303f7cc99e8b993b50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fe51878603996044535b0abfb70302ef9027c03
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846398"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064252"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architecture du plug-in de contrôle de code source
 Vous pouvez ajouter la prise en charge du contrôle de code source à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) en implémentant et en attachant un plug-in de contrôle de code source. L’IDE se connecte au plug-in de contrôle de code source via l’API de contrôle de code source bien définie Plug-In. L’IDE expose les fonctionnalités de contrôle de version du système de contrôle de code source en fournissant une interface utilisateur (IU) composée de barres d’outils et de commandes de menu. Le plug-in de contrôle de code source implémente la fonctionnalité de contrôle de code source.
@@ -27,7 +27,7 @@ Vous pouvez ajouter la prise en charge du contrôle de code source à l' [!INCLU
 
  La spécification de l’API de plug-in de contrôle de code source vous permet de tirer parti de n’importe quel système de contrôle de code source de votre choix si vous créez une DLL de contrôle de code source avec l’ensemble requis de fonctions implémentées conformément à l’API de plug-in de contrôle de code source.
 
-## <a name="components"></a>Composants
+## <a name="components"></a>Components
  Le package de l’adaptateur de contrôle de code source du diagramme est le composant de l’IDE qui traduit la demande de l’utilisateur d’une opération de contrôle de code source en un appel de fonction pris en charge par le plug-in de contrôle de code source. Pour que cela se produise, l’IDE et le plug-in de contrôle de code source doivent avoir une boîte de dialogue efficace qui transmet les informations entre l’IDE et le plug-in. Pour que cette boîte de dialogue ait lieu, ils doivent tous les deux parler le même langage. L’API de plug-in de contrôle de code source décrite dans cette documentation est le vocabulaire commun de cet échange.
 
  ![Diagramme de l’architecture de contrôle du code source](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch") Diagramme d’architecture montrant l’interaction entre le plug-in de contrôle de code source et VS

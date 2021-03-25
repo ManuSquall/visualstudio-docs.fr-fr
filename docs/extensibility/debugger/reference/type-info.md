@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e6b37fbc4d2d812bfa10d8f05455050bb5a239d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b83c4a829a050b9e78b65a9a68be96d2397ea8c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223418"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070737"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Cette structure spécifie différents genres d’informations sur le type d’un champ.
@@ -83,7 +83,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_PDB`|[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)|
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
-## <a name="example"></a>Exemple : 
+## <a name="example"></a>Exemple
  Cet exemple montre comment interpréter le `unionmember` membre de la `TYPE_INFO` structure en C#. Cet exemple illustre l’interprétation d’un seul type ( `TYPE_KIND_METADATA` ), mais les autres sont interprétés exactement de la même façon.
 
 ```csharp

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a615c076fd34d7bc230efb0f36683b7167b66566
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3d09046d70d6bc766d17963ea4cdd6469c0981fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167852"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083672"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Cette interface marshale les interfaces relatives au programme à travers les limites du processus.
@@ -45,7 +45,7 @@ IDebugProviderProgramNode2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est implémentée lorsque le s’exécute dans un espace de processus distinct du programme en cours de débogage : par exemple, lorsque le DE est exécuté dans l’espace de processus Visual Studio au lieu de l’espace de processus du programme en cours de débogage.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

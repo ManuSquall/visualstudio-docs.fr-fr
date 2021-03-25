@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be0f746a849a8370b145a46f9fbf6340a1dc98fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69beed934764defe7e3926ba46e5e70f87a031ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961077"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070620"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Feuille de route pour l’extension du débogueur
 Cette documentation fournit des informations de référence et de guide pour l’extension du [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] débogueur avec le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .

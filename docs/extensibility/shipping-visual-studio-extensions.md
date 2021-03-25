@@ -9,17 +9,17 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c88c80ffbc1e80815b8370a940a75c0eb197ff78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938094"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090133"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Publication d’extensions Visual Studio
 Une fois que vous avez terminé le développement de votre extension, vous pouvez l’installer sur d’autres machines, la partager avec vos amis et vos collègues, ou la publier sur le Visual Studio Marketplace. Dans cette section, nous expliquons toutes les choses que vous devez effectuer pour publier et gérer votre extension : utilisation des fichiers. vsix, publication, localisation et mise à jour.
@@ -49,7 +49,7 @@ Une fois que vous avez terminé le développement de votre extension, vous pouve
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Explique comment utiliser le modèle de projet VSIX pour installer un modèle de projet personnalisé.|
 |[Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Décrit les composants d’un package VSIX.|

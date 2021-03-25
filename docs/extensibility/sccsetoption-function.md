@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 031de256b231bbd95e7535af80448db5140cba7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221377"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090146"
 ---
 # <a name="sccsetoption-function"></a>Fonction SccSetOption
 Cette fonction définit des options qui contrôlent le comportement du plug-in de contrôle de code source.
@@ -49,7 +49,7 @@ dans Paramètres de l’option.
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|L’option a été correctement définie.|
 |SCC_I_SHARESUBPROJOK|Retourné si `nOption` a `SCC_OPT_SHARESUBPROJ` la valeur et que le plug-in de contrôle de code source permet à l’IDE de définir le dossier de destination.|

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyCreateEvent2 interface
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a8a4317ec3e1c2c83becf0bffb5274ae5a44cf4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6197420428bf07cecf2bfe891e06ddb7a830ea30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168047"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083880"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) lorsqu’elle crée une propriété associée à un document spécifique.
@@ -45,7 +45,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Si un document ou un script spécifique est associé à une propriété, le DE peut envoyer cet événement au SDM afin de mettre à jour la fenêtre **documents de script** avec le nom du document. Le SDM appellera [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) avec l’argument `guidDocument` pour récupérer un `VARIANT` contenant un pointeur [IUnknown](/cpp/atl/iunknown) . Le SDM appellera [QueryInterface](/cpp/atl/queryinterface) sur ce pointeur pour récupérer l’interface [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) utilisée pour mettre à jour la fenêtre **documents de script** .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

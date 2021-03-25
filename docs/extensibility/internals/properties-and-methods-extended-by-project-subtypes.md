@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d5d81135a2571db3c84b67acb2fa08e4f83f57d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f32c489ba2907cabff47b916039f96754d403455
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970060"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064239"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propriétés et méthodes étendues par les sous-types de projets
 Un sous-type de projet a beaucoup de puissance pour influencer le comportement du projet, car il est construit comme un agrégateur d’un projet de base. Cette section résume certaines des fonctionnalités qui peuvent être améliorées ou modifiées par les sous-types de projet.
@@ -28,9 +28,9 @@ Un sous-type de projet a beaucoup de puissance pour influencer le comportement d
 
 |Méthodes substituées par l’agrégation|Sous-type de projet|
 |---------------------------------------|---------------------|
-|À partir de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> :<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|Permet à un sous-type de projet de<br /><br /> -Modifier la légende et l’icône du nœud de projet.<br />-Remplace complètement l’objet de projet `Browse` .<br />-Contrôler si le projet peut être renommé.<br />-Contrôle de l’ordre de tri.<br />-Contrôle le contexte utilisateur pour l’aide dynamique.|
-|À partir de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> :<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetItemContext%2A>|Permet à un sous-type de projet de contrôler les services contextuels fournis aux concepteurs et aux éditeurs.|
-|À partir de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> :<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|Permet à un sous-type de projet de<br /><br /> -Participez au routage des commandes pour les commandes de projet.<br />-Ajouter, supprimer ou désactiver les commandes ambiantes de projet et Explorateur de solutions les commandes actives.|
+|À partir de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|Permet à un sous-type de projet de<br /><br /> -Modifier la légende et l’icône du nœud de projet.<br />-Remplace complètement l’objet de projet `Browse` .<br />-Contrôler si le projet peut être renommé.<br />-Contrôle de l’ordre de tri.<br />-Contrôle le contexte utilisateur pour l’aide dynamique.|
+|À partir de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetItemContext%2A>|Permet à un sous-type de projet de contrôler les services contextuels fournis aux concepteurs et aux éditeurs.|
+|À partir de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|Permet à un sous-type de projet de<br /><br /> -Participez au routage des commandes pour les commandes de projet.<br />-Ajouter, supprimer ou désactiver les commandes ambiantes de projet et Explorateur de solutions les commandes actives.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>|Permet au sous-type de projet de filtrer ce que l’utilisateur voit dans la boîte de dialogue **Ajouter un nouvel élément** .|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGeneratorFactory>|Permet à un sous-type de projet de<br /><br /> -Déterminer le générateur par défaut en fonction d’une extension de fichier.<br />-Mappez un nom de générateur lisible à un objet COM.|
 

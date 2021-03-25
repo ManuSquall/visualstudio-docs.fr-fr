@@ -8,24 +8,24 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58c46da9023cc64246f1ea9ee4bde1ec866c545d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967421"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090354"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Rendre persistante la propriété d’un élément de projet
 Vous pouvez conserver une propriété que vous ajoutez à un élément de projet, telle que l’auteur d’un fichier source. Pour ce faire, vous pouvez stocker la propriété dans le fichier projet.
 
  La première étape de la persistance d’une propriété dans un fichier projet consiste à obtenir la hiérarchie du projet en tant qu' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface. Vous pouvez obtenir cette interface à l’aide de l’Automation ou à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Une fois que vous obtenez l’interface, vous pouvez l’utiliser pour déterminer l’élément de projet actuellement sélectionné. Une fois que vous disposez de l’ID d’élément de projet, vous pouvez utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> pour ajouter la propriété.
 
- Dans les procédures suivantes, vous conservez la propriété *vspkg.cs* `Author` avec la valeur `Tom` dans le fichier projet.
+ Dans les procédures suivantes, vous conservez la propriété *vspkg. cs* `Author` avec la valeur `Tom` dans le fichier projet.
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Pour obtenir la hiérarchie du projet avec l’objet DTE
 
@@ -119,7 +119,7 @@ Vous pouvez conserver une propriété que vous ajoutez à un élément de projet
 
 1. Démarrez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , puis ouvrez ou créez une solution.
 
-2. Sélectionnez l’élément de projet VsPkg.cs dans **Explorateur de solutions**.
+2. Sélectionnez l’élément de projet VsPkg. cs dans **Explorateur de solutions**.
 
 3. Utilisez un point d’arrêt ou déterminez si votre VSPackage est chargé et que SetItemAttribute s’exécute.
 
