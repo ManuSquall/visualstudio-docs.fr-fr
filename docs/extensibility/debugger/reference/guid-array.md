@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbdc8465bef0795649fef5b169a221a3e7b7178c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 504c917d9fb2b1e2cd15ac8154faf70eaf98beec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162418"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054580"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 Décrit un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
@@ -52,7 +52,7 @@ Tableau qui contient des identificateurs uniques.
 ## <a name="remarks"></a>Notes
 Cette structure est retournée par la méthode [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

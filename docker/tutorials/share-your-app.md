@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841703"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061782"
 ---
 # <a name="share-your-app"></a>Partager votre application
 
@@ -24,7 +24,7 @@ Maintenant que nous avons créé une image, nous allons la partager ! Pour part
 
 Pour envoyer une image, vous devez d’abord créer un référentiel sur le hub d’ancrage.
 
-1. Accédez au [Hub de l’ancreur](https://hub.docker.com) et connectez-vous si nécessaire.
+1. Accédez au [Hub de l’ancreur](https://hub.docker.com/signup/msftedge?utm_source=msftedge) et connectez-vous si nécessaire.
 
 1. Cliquez sur le bouton **créer un référentiel** .
 

@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus interface
 ms.assetid: c3a25f27-327a-4bdb-b026-27d436ddcd0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27fc3fb25b738db20d480a7a4542884dcb76123a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f365bcadba5349ae43e1b75683ec100fdabbf338
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154028"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094014"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
 Représente un champ dynamique pour un objet [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .
@@ -35,7 +35,7 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 |[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Récupère un type en fonction de son type primitif.|
 |[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Récupère un type en fonction de son jeton.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : SH. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

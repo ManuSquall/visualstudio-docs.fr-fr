@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89342f5d26c5aeec41222bba12a29f534798782b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a7ebfa6b5d1cc2a0fe1a03c9e70952c5cec1a74e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143353"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054528"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Cette interface indique au gestionnaire de débogage de session (SDM) qu’un point d’arrêt en attente n’a pas pu être lié à un programme chargé, en raison d’un avertissement ou d’une erreur.
@@ -47,7 +47,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 
  Par exemple, lorsque l’analyse ou l’évaluation de la condition associée au point d’arrêt en attente échoue, un avertissement indique que le point d’arrêt en attente ne peut pas être lié pour l’instant. Cela peut se produire si le code pour le point d’arrêt n’a pas encore été chargé.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb33bcbdff14b0f95aab5d8f300473c13d4c342f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d00c970c522adf232f9a18b762c7d6cf3cf3b794
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152908"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084894"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Cette interface est utilisée par le moteur de débogage (DE) pour envoyer des événements de débogage au gestionnaire de débogage de session (SDM).
@@ -47,7 +47,7 @@ IDebugEventCallback2 : IUnknown
 
  Si un package implémente [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) dans du code managé, il est vivement recommandé de <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> l’appeler sur les différentes interfaces passées à l' [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

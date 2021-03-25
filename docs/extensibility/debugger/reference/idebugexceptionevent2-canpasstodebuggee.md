@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b56996a5fa7cbf3c08842b783aa2d5dfc1131b8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7fbc5cd55516f018a0a0877a114169a436b97fe1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152882"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084842"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 Détermine si le moteur de débogage (DE) prend en charge l’option de passage de cette exception au programme en cours de débogage au moment de la reprise de l’exécution.

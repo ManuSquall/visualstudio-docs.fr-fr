@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9811312188e63017e074d12be6dfa67ab6929aa6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a65c29a1925c8d0c1de97f87707f191713c2bb03
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162444"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054593"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 Spécifie le type de nom des fichiers à récupérer.
@@ -78,7 +78,7 @@ Obtient l’URL de la page de démarrage pour les processus.
 ## <a name="remarks"></a>Notes
 Ces valeurs sont passées en tant que paramètres aux méthodes [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)et [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) pour spécifier le genre de nom à retourner.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

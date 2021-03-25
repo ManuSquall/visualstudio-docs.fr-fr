@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6e52ae6477b49325d4b8a4d81192fe2ecf736163
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153376"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092655"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 Cette interface offre une prise en charge du débogage multithread.
@@ -47,7 +47,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio appelle cette interface en réponse à un événement [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) et définit les États « surveiller les threads » et « surveiller l’évaluation des expressions sur le thread » du programme. L' [arrêt](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) est appelé chaque fois que le programme doit être arrêté. Cette méthode donne au programme la possibilité d’arrêter tous les threads.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

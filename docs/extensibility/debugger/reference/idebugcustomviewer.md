@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d262869d24c50c543159952506a40be753b4be4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3c44706549d7d638a8fbf3686de57780ffa6bf4e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150690"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077549"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Cette interface permet à un évaluateur d’expression (EE) d’afficher la valeur d’une propriété dans le format requis.
@@ -51,7 +51,7 @@ Les [applications auxiliaires du kit de développement logiciel (SDK) pour la fo
 
 Normalement, une visionneuse personnalisée fournit une vue en lecture seule des données, étant donné que l’interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) fournie à [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) n’a aucune méthode permettant de modifier la valeur de la propriété, sauf en tant que chaîne. Afin de prendre en charge la modification des blocs de données arbitraires, EE implémente une interface personnalisée sur le même objet qui implémente l' `IDebugProperty3` interface. Cette interface personnalisée fournit ensuite les méthodes nécessaires pour modifier un bloc de données arbitraire.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

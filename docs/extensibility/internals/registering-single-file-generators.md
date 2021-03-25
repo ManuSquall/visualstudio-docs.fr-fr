@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee110defb06d308c017230a36cebc2b04b3c63b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837238"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062679"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , vous devez l’inscrire afin qu’il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puisse l’instancier et l’associe à un type de projet particulier.
@@ -42,7 +42,7 @@ Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-
 
    - (Par défaut)
 
-        Facultatif. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif, mais recommandé.
+        Optionnel. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif, mais recommandé.
 
    - CLSID
 

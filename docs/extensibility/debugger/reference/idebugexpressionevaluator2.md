@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2 interface
 ms.assetid: cebe649f-1c77-4d33-854f-30d4f00eceb4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 150ede0d3063fa8905b7cdfa5d67da16c0f68eed
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3689f667508f6453f0e4cd4181d14f42ca7b7541
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152232"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077302"
 ---
 # <a name="idebugexpressionevaluator2"></a>IDebugExpressionEvaluator2
 > [!IMPORTANT]
@@ -45,7 +45,7 @@ IDebugExpressionEvaluator2 : IDebugExpressionEvaluator
 |[SetIDebugIDECallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setidebugidecallback.md)|Permet à un moteur de débogage de passer un rappel à l’évaluateur d’expression pendant l’initialisation.|
 |[Terminer](../../../extensibility/debugger/reference/idebugexpressionevaluator2-terminate.md).|Arrête et nettoie l’évaluateur d’expression.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : EE. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

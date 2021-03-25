@@ -8,17 +8,17 @@ helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1009df1ce71e5ab46c0e9d100a79562f77460c0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ffaeb6d43597e93586db79c305b654b42bf6dbb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911781"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062796"
 ---
 # <a name="project-persistence"></a>Persistance d’un projet
 La persistance est un facteur clé de la conception de votre projet. La plupart des projets utilisent des éléments de projet qui représentent des fichiers ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend également en charge les projets dont les données ne sont pas basées sur des fichiers. Les fichiers appartenant au projet et au fichier projet doivent être rendus persistants. L’IDE indique au projet de s’enregistrer lui-même ou un élément de projet.

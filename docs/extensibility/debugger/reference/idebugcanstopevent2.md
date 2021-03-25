@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e73d881b1aef09d13d7b7138348d5198c8322694
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154845"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085011"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Cette interface est utilisée pour demander au gestionnaire de débogage de session (SDM) s’il doit s’arrêter à l’emplacement de code actuel.
@@ -50,7 +50,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="remarks"></a>Notes
  Le DE envoie cette interface si l’utilisateur effectue un pas à pas détaillé dans une fonction et que le DE ne trouve pas d’informations de débogage ou si des informations de débogage existent, mais que ne sait pas si le code source peut être affiché pour cet emplacement.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop
