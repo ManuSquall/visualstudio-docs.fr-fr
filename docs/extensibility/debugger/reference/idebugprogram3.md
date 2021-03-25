@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3 interface
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c16184a017e5e97f81afbab5d4d2579796e4217
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 339aff9bdd41a27f48ef1a7ef1e01d9529835403
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149598"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084335"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Cette interface représente un programme qui s’exécute dans un processus et étend l' [exécution](../../../extensibility/debugger/reference/idebugprogram2-execute.md) en fournissant des informations de thread.
@@ -40,7 +40,7 @@ IDebugProgram3 : IDebugProgram3
 |------------|-----------------|
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Exécute le programme. Le thread est retourné pour fournir les informations du débogueur sur le thread affiché par l’utilisateur lors de l’exécution.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

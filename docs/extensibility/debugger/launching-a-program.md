@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a21036d3a9661306d1efff5a66ae47f8f7404209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945914"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094716"
 ---
 # <a name="launch-a-program"></a>Lancer un programme
 Les utilisateurs qui souhaitent déboguer un programme peuvent appuyer sur **F5** pour exécuter le débogueur à partir de l’IDE. Cela commence une série d’événements qui aboutissent au final à la connexion de l’IDE à un moteur de débogage (DE), qui est à son tour connecté, ou attaché, au programme comme suit :

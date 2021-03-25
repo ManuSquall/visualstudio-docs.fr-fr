@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2 interface
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 760d77ced3cc07da2dd02c21cf3ed0200df14231
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8e4ffa8de4b245071f1893eae5f5427a9dccd353
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166565"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066878"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 Cette interface représente un flux d’instructions.
@@ -52,7 +52,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="remarks"></a>Notes
  Le flux de code machine peut être créé pour représenter la totalité de l’espace d’adressage ou simplement une fonction ou un module dans l’espace. Chaque instruction est représentée par une structure [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) retournée par un appel à la méthode [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

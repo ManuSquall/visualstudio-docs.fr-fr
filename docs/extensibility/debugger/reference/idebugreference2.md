@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f6b1c30b2da2862e17a1ebf16cc41008341127c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165850"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075755"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Cette interface représente une référence à une propriété de frame de pile ou à une autre propriété.
@@ -66,7 +66,7 @@ IDebugReference2 : IUnknown
 
  Une `IDebugProperty2` interface peut être considérée comme une valeur avec un nom, un type et une adresse. Un `IDebugReference2` , en revanche, peut être considéré comme un type et une adresse.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

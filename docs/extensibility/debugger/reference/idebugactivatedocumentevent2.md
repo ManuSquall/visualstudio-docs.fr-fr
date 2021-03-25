@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugActivateDocumentEvent2 interface
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 557cb86765c06c8589f30a013a1087764f3f909e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dbf24620b3dfa508a52463598219be4b2d7439a8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145454"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094397"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 Le moteur de débogage (DE) utilise cette interface pour demander le chargement d’un document.
@@ -46,7 +46,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Une erreur d’analyse se produit généralement dans le code de script d’une page HTML dans le cas où cette interface est utilisée : le script DE envoie cette interface au SDM afin que le document avec l’erreur d’analyse puisse être affiché.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop
