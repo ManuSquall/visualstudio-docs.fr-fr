@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - dwTYPE_KIND enumeration
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f51a84951cdfe09e13454035c3219324e9a68368
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 25b7fd89de0af624425767f21b81780459068372
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170326"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095951"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 Spécifie comment interpréter le type d’un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
@@ -59,7 +59,7 @@ L' `TYPE_INFO` Union doit être interprétée comme une structure de [BUILT_TYPE
 ## <a name="remarks"></a>Notes
 Les valeurs de cette énumération apparaissent dans le `dwKind` champ de la structure [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) et sont utilisées pour déterminer comment interpréter le `type` membre Union. La `TYPE_INFO` structure est retournée par un appel à la méthode [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : SH. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2080eba4b8319045dcd4d3603d1e6441fafed97d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 32e75b938f45df5d4fa91bec4b59964dfc6a54e5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095925"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Énumère les valeurs valides pour les indicateurs qui contrôlent l’évaluation de l’expression. Cette énumération étend l’énumération [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) .
@@ -96,7 +96,7 @@ Autorise la création de variables implicites.
 `EVAL90_FORCE_EVALUATION_NOW`\
 Force l’évaluation à se produire immédiatement. Cela est utile lors de la maintenance d’une demande, par exemple une demande de l’utilisateur.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : Msdbg90. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -1,5 +1,6 @@
 ---
 title: 'IDebugProgramNode2 :: Attach_V7 | Microsoft Docs'
+description: Cette méthode d’interface est une ancienne méthode d’attachement déconseillée utilisée avant Visual Studio 2005.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b143477dc558b20a302a54d5baecc64d02d33ea3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c949bba45457917e4dd00bdc05bc300f3a38eb7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898640"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053592"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
@@ -56,11 +57,11 @@ dans Interface [IDebugEventCallback2](../../../extensibility/debugger/reference/
 `dwReason`\
 dans Valeur de l’énumération [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) qui spécifie la raison de l’attachement.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 
 Une implémentation doit toujours retourner `E_NOTIMPL` .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 > [!WARNING]
 > À compter de Visual Studio 2005, cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL` . Consultez l’interface [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) pour une autre approche si le nœud de programme doit indiquer qu’il n’est pas possible de l’attacher à ou si le nœud de programme est simplement défini pour le programme `GUID` . Sinon, implémentez la méthode [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .

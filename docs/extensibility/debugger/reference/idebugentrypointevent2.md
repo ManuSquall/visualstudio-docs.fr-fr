@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da733292407c93327374a4c6fa54c558d3202caa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ccc928b3d0ca9106b6f83a4c398a694ba429ce8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153389"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065986"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 Le moteur DE débogage (DE) envoie cette interface au gestionnaire de débogage de session (SDM) quand le programme est sur le point d’exécuter sa première instruction de code utilisateur.
@@ -40,7 +40,7 @@ IDebugEntryPointEvent2 : IUnknown
 
  Lors de l’envoi du `IDebugEntryPointEvent2` , la position de code actuelle doit se trouver à la première instruction du code utilisateur, comme `main` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop
