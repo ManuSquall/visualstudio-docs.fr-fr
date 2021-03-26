@@ -9,18 +9,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e5305927ceb634c64e52bb64ce57197f1b6be4c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879174"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097602"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Ajouter un contrôle utilisateur à la page de démarrage
 
@@ -108,7 +108,7 @@ Pour implémenter un contrôle utilisateur WPF, générez l’interface utilisat
 
 1. Dans le concepteur XAML, double-cliquez sur le bouton **définir une adresse** que vous avez ajouté au contrôle.
 
-    Le fichier *UserControl1.cs* s’ouvre dans l’éditeur de code.
+    Le fichier *UserControl1. cs* s’ouvre dans l’éditeur de code.
 
 2. Renseignez le gestionnaire d’événements SetButton_Click comme suit.
 

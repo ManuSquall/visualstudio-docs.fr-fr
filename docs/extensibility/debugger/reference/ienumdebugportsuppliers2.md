@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893135291be3126055fa139dacaf3cc12141d8f4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 82841ab033091d2fd3c88c64dfb81d1f5d2e2468
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224484"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073441"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Cette interface énumère les fournisseurs de port.
@@ -43,7 +43,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Récupère un nombre spécifié de fournisseurs de ports dans une séquence d’énumération.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|Ignore un nombre spécifié de fournisseurs de ports dans une séquence d’énumération.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|Réinitialise une séquence d'énumération.|
-|[Répliqué](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Obtient le nombre de fournisseurs de port dans un énumérateur.|
 
 ## <a name="remarks"></a>Notes

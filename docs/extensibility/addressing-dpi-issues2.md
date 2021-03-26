@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cf7b4fe19cdefe11b77de1418b16454089f45c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876158"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097511"
 ---
 # <a name="address-dpi-issues"></a>Problèmes d’adresse DPI
 Un nombre grandissant d’appareils sont fournis avec des écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). L’utilisation d’une application sur ces ordinateurs nécessite que le contenu soit mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance d’affichage normale pour l’appareil. À partir de 2014, la cible principale pour les affichages à haute densité est celle des appareils informatiques mobiles (tablettes, ordinateurs portables à ouverture latérale et téléphones).

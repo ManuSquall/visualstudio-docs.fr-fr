@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointBoundEvent2
 ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3969010a59e66a8931c7f99d337b6f2ad373ccc4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 80f4214139b1698ebc5de25fef923615b407063a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143569"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088716"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 Cette interface indique au gestionnaire de débogage de session (SDM) qu’un point d’arrêt en attente a été correctement lié à un programme chargé.
@@ -46,7 +46,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Chaque fois qu’un point d’arrêt est lié, un événement est envoyé au SDM. Si le point d’arrêt ne peut pas être lié, un [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) est envoyé ; dans le cas contraire, un `IDebugBreakpointBoundEvent2` est envoyé.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

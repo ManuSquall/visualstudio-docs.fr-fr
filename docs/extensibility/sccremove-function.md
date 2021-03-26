@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f55b82ae428870f1d5a08feaa3ae1ef7eb0b5f4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d80daf83458c9e05ef0a081348080579e7fafef4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221416"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073870"
 ---
 # <a name="sccremove-function"></a>Fonction SccRemove
 Cette fonction supprime les fichiers du système de contrôle de code source.
@@ -69,7 +69,7 @@ dans Options spécifiques au plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|La suppression a réussi.|
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 360778e4dbc89130e8a533640fefb188047fe8ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943366"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074078"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de mot dans un service de langage hérité
 La saisie semi-automatique des mots remplit les caractères manquants sur un mot partiellement typé. S’il n’existe qu’une seule exécution possible, le mot est terminé lorsque vous entrez le caractère de fin. Si le mot partiel correspond à plusieurs possibilités, une liste des saisies semi-automatiques possibles s’affiche. Un caractère de fin peut être n’importe quel caractère qui n’est pas utilisé pour les identificateurs.

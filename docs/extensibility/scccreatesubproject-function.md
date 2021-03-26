@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 70568c27afb4bdb5794db64322113dffbd824452
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221611"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074000"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject fonction)
 Cette fonction crée un sous-projet portant le nom donné sous un projet parent existant spécifié par l' `lpParentProjPath` argument.
@@ -66,10 +66,10 @@ dans Nom de sous-projet suggéré (jusqu’à SCC_PRJPATH_SIZE, y compris la mar
 
 [in, out] Chaîne de sortie identifiant le chemin d’accès du sous-projet (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Le sous-projet a été créé avec succès.|
 |SCC_E_INITIALIZEFAILED|Impossible d’initialiser le projet parent.|

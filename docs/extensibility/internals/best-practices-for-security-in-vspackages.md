@@ -9,17 +9,17 @@ helpviewer_keywords:
 - security best practices, VSPackages
 - best practices, security
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4e706a115e8cec3b13ef58cf6cdef61912f5810
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cca66d6c1fce0deb8103a7d626c16a4e81bc7b5f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905983"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086207"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Meilleures pratiques pour la sécurité dans les VSPackages
 Pour installer le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] sur votre ordinateur, vous devez être en cours d’exécution dans un contexte avec des informations d’identification d’administration. Le VSPackage est l’unité de base de sécurité et de déploiement d’une [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] application. [](../../extensibility/internals/vspackages.md) Un VSPackage doit être inscrit à l’aide de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , qui requiert également des informations d’identification d’administration.

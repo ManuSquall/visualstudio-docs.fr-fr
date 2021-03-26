@@ -7,23 +7,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565f73b9809f3f18fe6828a19860a46b14ff07e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f773148f11a115ee82c8ee84a8d4668001908000
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839465"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095197"
 ---
 # <a name="managing-configuration-options"></a>Gestion des options de configuration
 Lorsque vous créez un nouveau type de projet, vous devez gérer les paramètres de configuration de projet et de solution qui déterminent la façon dont votre projet sera généré, empaqueté, déployé et exécuté. Les rubriques suivantes traitent de la configuration des projets et des solutions.
 
 ## <a name="in-this-section"></a>Dans cette section
-- [Vue d'ensemble](../../extensibility/internals/configuration-options-overview.md)
+- [Vue d’ensemble](../../extensibility/internals/configuration-options-overview.md)
 
  Décrit comment les projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peuvent prendre en charge plusieurs configurations.
 

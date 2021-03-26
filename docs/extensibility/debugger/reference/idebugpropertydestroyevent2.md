@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2 interface
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f5a726d8d77a3d12f1d390f70f7bbc30a3abb4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d9d0e0751b184ddbf6ebc62e12ed1d3a9bca853c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167995"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083802"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) lorsqu’une propriété qui est associée à un document spécifique est sur le point d’être détruite.
@@ -45,7 +45,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Pour plus d’informations sur la raison de l’utilisation de ces événements, consultez les notes relatives à [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

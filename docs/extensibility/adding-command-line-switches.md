@@ -10,17 +10,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 826029154763a98279b5e5446317802531b08bfe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939225"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097563"
 ---
 # <a name="add-command-line-switches"></a>Ajouter des commutateurs de ligne de commande
 Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lors de l’exécution de *devenv.exe* . Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommée **AddCommandSwitchPackage** sans arguments et avec le VSPackage chargé automatiquement.

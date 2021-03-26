@@ -10,17 +10,17 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ba0eb2324812ca7536b361d602bb683d627c743
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951535"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097615"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Ajouter un menu contextuel dans une fenêtre outil
 Cette procédure pas à pas permet de placer un menu contextuel dans une fenêtre outil. Un menu contextuel est un menu qui s’affiche lorsqu’un utilisateur clique avec le bouton droit sur un bouton, une zone de texte ou un arrière-plan de fenêtre. Les commandes d’un menu contextuel se comportent comme des commandes sur d’autres menus ou barres d’outils. Pour prendre en charge un menu contextuel, spécifiez-le dans le fichier *. vsct* et affichez-le en réponse à un clic droit de la souris.
@@ -114,7 +114,7 @@ Un menu contextuel, tel que celui illustré dans cette procédure pas à pas, pe
     </Buttons>
     ```
 
-5. Dans *ShortcutMenuCommand.cs*, ajoutez les définitions pour le GUID du jeu de commandes, le menu contextuel et les éléments de menu.
+5. Dans *ShortcutMenuCommand. cs*, ajoutez les définitions pour le GUID du jeu de commandes, le menu contextuel et les éléments de menu.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -129,9 +129,9 @@ Un menu contextuel, tel que celui illustré dans cette procédure pas à pas, pe
 ## <a name="implementing-the-shortcut-menu"></a>Implémentation du menu contextuel
  Cette section implémente le menu contextuel et ses commandes.
 
-1. Dans *ShortcutMenu.cs*, la fenêtre outil peut recevoir le service de commande de menu, mais le contrôle qu’il contient ne le peut pas. Les étapes suivantes montrent comment rendre le service de commande de menu accessible au contrôle utilisateur.
+1. Dans *MenuContextuel. cs*, la fenêtre outil peut accéder au service de commande de menu, mais le contrôle qu’il contient ne le peut pas. Les étapes suivantes montrent comment rendre le service de commande de menu accessible au contrôle utilisateur.
 
-2. Dans *ShortcutMenu.cs*, ajoutez les directives d’utilisation suivantes :
+2. Dans *MenuContextuel. cs*, ajoutez les directives d’utilisation suivantes :
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -159,7 +159,7 @@ Un menu contextuel, tel que celui illustré dans cette procédure pas à pas, pe
     }
     ```
 
-5. Dans *ShortcutMenuControl.Xaml.cs*, ajoutez un champ privé pour le service de commande de menu et modifiez le constructeur de contrôle pour qu’il prenne le service de commande de menu. Utilisez ensuite le service de commande de menu pour ajouter les commandes de menu contextuel. Le constructeur ShortcutMenuControl doit maintenant ressembler au code suivant. Le gestionnaire de commandes sera défini ultérieurement.
+5. Dans *ShortcutMenuControl. Xaml. cs*, ajoutez un champ privé pour le service de commande de menu et modifiez le constructeur de contrôle pour qu’il prenne le service de commande de menu. Utilisez ensuite le service de commande de menu pour ajouter les commandes de menu contextuel. Le constructeur ShortcutMenuControl doit maintenant ressembler au code suivant. Le gestionnaire de commandes sera défini ultérieurement.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -207,7 +207,7 @@ Un menu contextuel, tel que celui illustré dans cette procédure pas à pas, pe
     </UserControl>
     ```
 
-7. Dans *ShortcutMenuControl.Xaml.cs*, ajoutez un stub pour le gestionnaire d’événements.
+7. Dans *ShortcutMenuControl. Xaml. cs*, ajoutez un stub pour le gestionnaire d’événements.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)

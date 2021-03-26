@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 451e0bab9568d794205e38e3573265c20c259961
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a590dc8bc1313e5c32b26465ae3dd346ed0564fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943333"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074013"
 ---
 # <a name="keybindings-element"></a>KeyBindings (élément)
 L’élément KeyBindings groupe les éléments KeyBinding et d’autres regroupements de combinaisons de touches.
@@ -41,7 +41,7 @@ L’élément KeyBindings groupe les éléments KeyBinding et d’autres regroup
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

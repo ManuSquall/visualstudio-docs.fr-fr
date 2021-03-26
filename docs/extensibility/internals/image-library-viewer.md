@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d60443e97bc557bc964d59750417b2662e4c3c8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840117"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085973"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 L’outil visionneuse d’images Visual Studio peut charger et Rechercher des manifestes d’image, ce qui permet à l’utilisateur de les manipuler de la même façon que dans Visual Studio. L’utilisateur peut modifier l’arrière-plan, les tailles, les PPP, le contraste élevé et d’autres paramètres. L’outil affiche également les informations de chargement pour chaque manifeste d’image et affiche des informations sur la source de chaque image dans le manifeste de l’image. Cet outil est utile pour :
@@ -70,7 +70,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 </Symbols>
 ```
 
-|**Sous-élément**|**Definition**|
+|**Sous-élément**|**Définition**|
 |-|-|
 |Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel.|
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID.|
@@ -110,7 +110,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 </Image>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
 |id|Souhaitée La partie ID du moniker d’image|
@@ -126,14 +126,14 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
  </Source>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Uri|Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’autorité application:///<br /><br /> -Référence de ressource de composant absolue<br /><br /> -Chemin d’accès à un fichier contenant une ressource native|
 |Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> - *Clair*: la source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Dark*: la source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *HighContrast*: la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: la source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> -*HighContrastDark*: la source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut **Background** est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **Background** est *clair*, *Dark*, *HighContrastLight* ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si **Background** est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
 
  Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :
 
-|**Element**|**Attributs (tous obligatoires)**|**Definition**|
+|**Element**|**Attributs (tous obligatoires)**|**Définition**|
 |-|-|-|
 |\<Size>|Valeur|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|
 |\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images comprises entre MinSize et MaxSize (en unités de périphérique). L’image sera carrée.|
@@ -146,7 +146,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Type|Souhaitée Type de la ressource native (XAML ou PNG)|
 |id|Souhaitée La partie ID d’entier de la ressource native|
@@ -162,7 +162,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
  </ImageList>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
 |id|Souhaitée La partie ID du moniker d’image|

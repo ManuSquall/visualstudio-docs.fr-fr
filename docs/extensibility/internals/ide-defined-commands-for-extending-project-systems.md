@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a08d60a52ed970781ceafdb15d0d5c64440f0cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fedca7081c531fef257e20e64426f8b35e88e87
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968071"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085999"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Commandes définies par l’IDE pour l’extension des systèmes de projet
 Lorsque vous souhaitez étendre des systèmes de projet, vous pouvez utiliser des commandes et des groupes de commandes fournis par l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bfcb9fdd7eff132d02c7d14be729cd871c8dd8e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a92a3ca34e6314463bbfecbd8c4236789f213635
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905918"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086103"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Correspondance des accolades dans un service de langage hérité
 La correspondance des accolades permet au développeur de suivre les éléments de langage qui doivent se produire ensemble, tels que des parenthèses et des accolades. Quand un développeur entre une accolade fermante, l’accolade ouvrante est mise en surbrillance.

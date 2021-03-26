@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d9d42e796f1ec2176e9de79ca392aab070581324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221338"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073831"
 ---
 # <a name="sccrename-function"></a>Fonction SccRename
 Cette fonction renomme un fichier dans le système de contrôle de code source.
@@ -54,7 +54,7 @@ dans Nom de fichier complet du fichier renommé.
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|L’opération de changement de nom s’est terminée avec succès.|
 |SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert sous le contrôle de code source.|

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - user interfaces, updating
 - commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd088d6887e7c7b60ea5a4101de050149583c5a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5aecf97683ff22b8c384acf1c8ffb83e671fa57
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893449"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073727"
 ---
 # <a name="updating-the-user-interface"></a>Mise à jour de l'interface utilisateur
 Après avoir implémenté une commande, vous pouvez ajouter du code pour mettre à jour l’interface utilisateur avec l’état de vos nouvelles commandes.
