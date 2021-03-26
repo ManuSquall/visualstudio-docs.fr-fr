@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9be8b97b3e37a224b12781e66543f7ab126f2c6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1085275427aeb02a767a66088ee58ced890dcb05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958529"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056855"
 ---
 # <a name="create-a-source-control-vspackage"></a>Créer un VSPackage de contrôle de code source
 Cette documentation contient des liens vers la vue d’ensemble de l’architecture d’un package de contrôle de code source intégré à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , l’API définie par les interfaces à implémenter et les services à consommer, ainsi qu’un exemple qui illustre une implémentation de package de contrôle de code source simple.
@@ -26,7 +26,7 @@ Cette documentation contient des liens vers la vue d’ensemble de l’architect
  Avec un VSPackage de contrôle de code source, vous pouvez créer un chemin d’intégration profond pour l’intégration du contrôle de code source à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Elle permet au package de contourner l’interface utilisateur du contrôle de code source par défaut hébergée par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , de répondre aux demandes de contrôle de code source du système de projet et d’interagir avec des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] composants tels que **Explorateur de solutions**. Le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] permet aux [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partenaires de créer un VSPackage qui peut s’intégrer à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’aide d’un modèle de service.
 
 ## <a name="in-this-section"></a>Dans cette section
-- [Bien démarrer](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
+- [Prise en main](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
  Décrit le package de contrôle de code source, qui est une alternative plus avancée au plug-in de contrôle de code source pour l’implémentation des fonctionnalités de contrôle de code source dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 

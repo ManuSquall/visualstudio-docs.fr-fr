@@ -11,17 +11,17 @@ helpviewer_keywords:
 - createexpinstance
 - createexpinst
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0010c4a98d0ea50ec7feb2f7a379f3c84bc3d53
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884583"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056985"
 ---
 # <a name="createexpinstance-utility"></a>Utilitaire CreateExpInstance
 Utilisez l’utilitaire **CreateExpInstance** pour créer, réinitialiser ou supprimer une instance expérimentale de Visual Studio. Vous pouvez utiliser l’instance expérimentale pour déboguer et tester des extensions Visual Studio sans modifier le produit sous-jacent.
@@ -43,7 +43,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/RootSuffix** Suffixe à ajouter au nom du répertoire de l’instance expérimentale.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Quand vous travaillez sur une extension Visual Studio, vous pouvez appuyer sur F5 pour ouvrir l’instance expérimentale par défaut et installer l’extension actuelle. Si aucune instance expérimentale n’est disponible, Visual Studio en crée une qui a les paramètres par défaut.
 
  L’emplacement par défaut de l’instance expérimentale dépend du numéro de version de Visual Studio. Par exemple, pour Visual Studio 2015, l’emplacement est *%LocalAppData%\Microsoft\VisualStudio\14.0Exp \\*. Tous les fichiers de l’emplacement du répertoire sont considérés comme faisant partie de cette instance. Les instances expérimentales supplémentaires ne seront pas chargées par Visual Studio, sauf si le nom du répertoire est remplacé par l’emplacement par défaut.

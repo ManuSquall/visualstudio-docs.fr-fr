@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c53191c5f6e02c0b37d29f89a65119f1edab92ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895750"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063316"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -461,7 +461,7 @@ Remarque : les variables notées par « {n} » ont des dépendances de code, 
 | ViewColorizedText | Afficher les couleurs |
 | CombinedVBTabDisplayLanguage | Visual Basic (exemple) |
 | VBDeclaration | Déclaration |
-| VBUsage | Utilisation |
+| VBUsage | Usage |
 | Fonctionnalités : | **Commentaires, pieds de page et logo** |
 | Utilisez : | Fournissez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique en cours par courrier électronique.  Texte de copyright du contenu.  Définition du logo. |
 | **Element** | **Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)** |
@@ -565,7 +565,7 @@ Le fichier branding.js contient du code JavaScript utilisé par les éléments d
 
 Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios de communication des informations clés pour aider les utilisateurs du contenu, par exemple une page d’accueil contenant une section décrivant les jeux de contenu installés et des pages indiquant à l’utilisateur quand les rubriques sont introuvables dans l’ensemble de rubriques local. Ces fichiers HTM peuvent être modifiés par produit.  Les fournisseurs de l’interpréteur de commandes ISO sont en mesure de prendre le package de personnalisation par défaut et de modifier le comportement et le contenu de ces pages en fonction de leurs besoins.  Ces fichiers font référence à leur package de personnalisation respectif pour que les balises de personnalisation obtiennent le contenu correspondant à partir du fichier branding.xml.
 
-|**Fichier**|**Utilisation**|**Source de contenu affichée**|
+|**File**|**Utilisation**|**Source de contenu affichée**|
 |-|-|-|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise \<HomePageTitle>|
@@ -599,7 +599,7 @@ Personnalisation des fichiers. CSS inclut les définitions pour la présentation
 
 Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres graphiques.  La liste complète des fichiers graphiques dans le package de personnalisation de la visionneuse d’aide Visual Studio est indiquée ci-dessous.
 
-|**Fichier**|**Utilisation**|**Exemples**|
+|**File**|**Utilisation**|**Exemples**|
 |-|-|-|
 |clear.gif|Utilisé pour restituer la zone réductible||
 |footer_slice.gif|Présentation du pied de page||
@@ -706,7 +706,7 @@ Cette procédure pas à pas montre comment incorporer du contenu d’aide dans u
 
 2. [Redistribution de Shell isolé Visual Studio 2013](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Vue d'ensemble**
+**Vue d’ensemble**
 
 L' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] interpréteur de commandes est une version de l' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE sur laquelle vous pouvez baser une application. De telles applications contiennent l’interpréteur de commandes isolé avec les extensions que vous créez. Utilisez les modèles de projet Shell isolé, inclus dans le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Kit de développement logiciel (SDK), pour générer des extensions.
 

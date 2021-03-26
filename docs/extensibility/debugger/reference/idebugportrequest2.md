@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2 interface
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ca2d1d59c66c87c2dbb0fc256481d35ad590dbe
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 035b6364b3a1dea400c96bcf179d57d6b4808ad5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142620"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072219"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Cette interface décrit un port. Cette description est utilisée pour ajouter le port à un fournisseur de port.
@@ -45,7 +45,7 @@ IDebugPortRequest2 : IUnknown
 ## <a name="remarks"></a>Notes
  En général, un moteur de débogage n’interagit pas avec un fournisseur de port et n’a pas d’utilisation pour cette interface.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

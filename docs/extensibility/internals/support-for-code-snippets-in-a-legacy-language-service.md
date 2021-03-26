@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9578159554f77a9ad7553a56c054a863b3b63fd5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888145"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080760"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 Un extrait de code est un morceau de code qui est inséré dans le fichier source. L’extrait de code est un modèle XML avec un ensemble de champs. Ces champs sont mis en surbrillance après l’insertion de l’extrait de code et peuvent avoir des valeurs différentes en fonction du contexte dans lequel l’extrait de code est inséré. Immédiatement après l’insertion de l’extrait, le service de langage peut formater l’extrait de code.

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf2694b26305cdaefefd61dc1119b7b019b12d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910986"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080786"
 ---
 # <a name="solution-configuration"></a>Configuration de la solution
 Les configurations de solution stockent les propriétés au niveau de la solution. Ils dirigent le comportement de la clé de **démarrage** (F5) et des commandes de **génération** . Par défaut, ces commandes génèrent et démarrent la configuration Debug. Les deux commandes s’exécutent dans le contexte d’une configuration de solution. Cela signifie que l’utilisateur peut s’attendre à ce que la touche F5 démarre et génère la configuration de la solution active par le biais des paramètres. L’environnement est conçu pour optimiser les solutions plutôt que les projets lorsqu’il s’agit de générer et d’exécuter.

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884531"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056881"
 ---
 # <a name="createpkgdef-utility"></a>Utilitaire CreatePkgDef
 Accepte un fichier. dll pour une extension Visual Studio en tant que paramètre et crée un fichier *. pkgdef* pour accompagner le fichier *. dll* . Le fichier *. pkgdef* contient toutes les informations qui seraient autrement écrites dans le registre système lorsque l’extension est installée.
@@ -39,7 +39,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 Obligatoire. Définit le nom du fichier de sortie *. pkgdef* sur &lt; filename &gt; .
 
 **/codebase**\
-Facultatif. Force l’inscription avec l’utilitaire **code base** .
+Optionnel. Force l’inscription avec l’utilitaire **code base** .
 
 **/assembly**\
 Force l’inscription avec l’utilitaire d' **assembly** .

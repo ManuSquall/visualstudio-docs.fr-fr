@@ -6,17 +6,17 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875521"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060583"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs Roslyn et bibliothèque prenant en charge le code pour ImmutableArrays
 
@@ -66,7 +66,7 @@ Placez le signe insertion de l’éditeur sur la ligne qui déclare `b1` . Vous 
 
 Dans le menu principal, choisissez **fichier**  >  **nouveau**  >  **projet**. Dans la boîte de dialogue **nouveau projet** , sous projets **C#** dans la barre de navigation de gauche, choisissez **extensibilité**, puis dans le volet droit, choisissez le modèle **de projet analyseur avec correction de code** . Entrez un nom et confirmez la boîte de dialogue.
 
-Le modèle ouvre un fichier *DiagnosticAnalyzer.cs* . Choisissez cet onglet de mémoire tampon de l’éditeur. Ce fichier contient une classe d’analyseur (formée du nom que vous avez donné au projet) qui dérive de `DiagnosticAnalyzer` (un type d’API Roslyn). Votre nouvelle classe a une `DiagnosticAnalyzerAttribute` déclaration que votre analyseur est en rapport avec le langage C# afin que le compilateur Découvre et charge votre analyseur.
+Le modèle ouvre un fichier *DiagnosticAnalyzer. cs* . Choisissez cet onglet de mémoire tampon de l’éditeur. Ce fichier contient une classe d’analyseur (formée du nom que vous avez donné au projet) qui dérive de `DiagnosticAnalyzer` (un type d’API Roslyn). Votre nouvelle classe a une `DiagnosticAnalyzerAttribute` déclaration que votre analyseur est en rapport avec le langage C# afin que le compilateur Découvre et charge votre analyseur.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]

@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29bd3fb882be6529daa0d26ab4cde23c11d0bc0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: da7c08363d07e577d11259b8633aa15ac3cd0eb0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167059"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071764"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 Fournit la prise en charge des paramètres régionaux pour un fournisseur de port.
@@ -37,7 +37,7 @@ IDebugPortSupplierLocale2 : IUnknown
 |------------|-----------------|
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Définit les paramètres régionaux pour le fournisseur de port.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : Portpriv. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

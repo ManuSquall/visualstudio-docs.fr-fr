@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8db7c2321d5a309f66b85a3f177e20cb3f9b1244
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fa17984c9b7f3e87d4a7118188ecc6ca79c5deef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150391"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071933"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Cette interface permet à un appelant de déterminer si un fournisseur de ports peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur, puis obtenir la liste de ces ports conservés.
@@ -48,7 +48,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
  En général, un moteur de débogage n’interagit pas avec un fournisseur de port et n’a pas d’utilisation pour cette interface.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

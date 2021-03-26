@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef557c0c679fad0dff25a51a8529270e4bd7ced2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884726"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057141"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Commandes qui doivent être exécutées après l’installation
 Si vous déployez votre extension par le biais d’un fichier *. msi* , vous devez exécuter **devenv/setup** dans le cadre de votre installation afin que Visual Studio puisse découvrir vos extensions.

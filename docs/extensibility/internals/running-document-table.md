@@ -11,17 +11,17 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863a9b1cdb68218539045c9154fc18d845495222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615910684fd79d3cbd8d8a1e012c239e27abc180
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902895"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080968"
 ---
 # <a name="running-document-table"></a>Exécution de la table de document
 L’IDE gère la liste de tous les documents actuellement ouverts dans une structure interne appelée table de document en cours d’exécution (RDT). Cette liste comprend tous les documents ouverts en mémoire, que ces documents soient actuellement modifiés ou non. Un document est un élément qui est rendu persistant, y compris les fichiers d’un projet ou le fichier projet principal (par exemple, un fichier. vcxproj).
