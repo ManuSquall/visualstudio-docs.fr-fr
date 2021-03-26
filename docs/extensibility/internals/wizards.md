@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 828a08cfe2841595e0ed3a9f1e3d79973a6e6756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5c5cb9649689f711844f97e0b57ab23248e9a00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943379"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074156"
 ---
 # <a name="wizards"></a>Assistants
 Une fois que vous avez créé un Assistant, vous souhaitez généralement l’ajouter à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) afin que d’autres utilisateurs puissent l’utiliser. L’Assistant ajouté apparaît alors dans les boîtes de dialogue **Ajouter un nouveau projet** ou **Ajouter un nouvel élément** . Pour afficher les boîtes de dialogue **Ajouter un nouveau projet** ou **Ajouter un nouvel élément** , cliquez avec le bouton droit sur une solution ouverte dans **Explorateur de solutions**, pointez sur **Ajouter**, puis cliquez sur **nouveau projet** ou **nouvel élément**.

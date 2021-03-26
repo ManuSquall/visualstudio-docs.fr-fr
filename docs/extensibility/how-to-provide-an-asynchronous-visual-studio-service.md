@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbdd539437bce6f160dfa8661f514bf9f40b134
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9973bb86296442f4b936ddb54ff645d74d7ab74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965328"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074936"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Comment : fournir un service Visual Studio asynchrone
 Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilisateur, vous devez créer un service asynchrone et charger le package sur un thread d’arrière-plan. À cet effet, vous pouvez utiliser un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> plutôt qu’un <xref:Microsoft.VisualStudio.Shell.Package> et ajouter le service avec les méthodes asynchrones spéciales du package asynchrone.
@@ -26,9 +26,9 @@ Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilis
 
 1. Créez un projet VSIX (**fichier**  >  **nouveau**  >  **projet**  >  **Visual C#**  >  **extensibilité**  >  **VSIX**). Nommez le projet **TestAsync**.
 
-2. Ajoutez un VSPackage au projet. Sélectionnez le nœud du projet dans le **Explorateur de solutions** puis cliquez sur **Ajouter**  >  **un nouvel élément**  >  **Visual C#** extensibilité des éléments Visual C#  >    >  **package Visual Studio**. Nommez ce fichier *TestAsyncPackage.cs*.
+2. Ajoutez un VSPackage au projet. Sélectionnez le nœud du projet dans le **Explorateur de solutions** puis cliquez sur **Ajouter**  >  **un nouvel élément**  >  **Visual C#** extensibilité des éléments Visual C#  >    >  **package Visual Studio**. Nommez ce fichier *TestAsyncPackage. cs*.
 
-3. Dans *TestAsyncPackage.cs*, modifiez le package de sorte qu’il hérite de `AsyncPackage` au lieu de `Package` :
+3. Dans *TestAsyncPackage. cs*, modifiez le package de sorte qu’il hérite de `AsyncPackage` au lieu de `Package` :
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -122,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>Ajouter un service
 
-1. Dans *TestAsyncPackage.cs*, supprimez la `Initialize()` méthode et substituez la `InitializeAsync()` méthode. Ajoutez le service et ajoutez une méthode de rappel pour créer les services. Voici un exemple de l’initialiseur asynchrone qui ajoute un service :
+1. Dans *TestAsyncPackage. cs*, supprimez la `Initialize()` méthode et remplacez la `InitializeAsync()` méthode. Ajoutez le service et ajoutez une méthode de rappel pour créer les services. Voici un exemple de l’initialiseur asynchrone qui ajoute un service :
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -173,15 +173,15 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Utiliser un service asynchrone dans un gestionnaire de commandes
  Voici un exemple d’utilisation d’un service asynchrone dans une commande de menu. Vous pouvez utiliser la procédure indiquée ici pour utiliser le service dans d’autres méthodes non asynchrones.
 
-1. Ajoutez une commande de menu à votre projet. (Dans le **Explorateur de solutions**, sélectionnez le nœud du projet, cliquez avec le bouton droit, puis sélectionnez **Ajouter**  >  . **Nouvel élément**  >  **Extensibilité**  >  **Commande personnalisée**.) Nommez le fichier de commande *TestAsyncCommand.cs*.
+1. Ajoutez une commande de menu à votre projet. (Dans le **Explorateur de solutions**, sélectionnez le nœud du projet, cliquez avec le bouton droit, puis sélectionnez **Ajouter**  >  . **Nouvel élément**  >  **Extensibilité**  >  **Commande personnalisée**.) Nommez le fichier de commande *TestAsyncCommand. cs*.
 
-2. Le modèle de commande personnalisé rajoute la `Initialize()` méthode au fichier *TestAsyncPackage.cs* pour initialiser la commande. Dans la `Initialize()` méthode, copiez la ligne qui initialise la commande. Il doit se présenter comme suit :
+2. Le modèle de commande personnalisé rajoute la `Initialize()` méthode au fichier *TestAsyncPackage. cs* afin d’initialiser la commande. Dans la `Initialize()` méthode, copiez la ligne qui initialise la commande. Il doit se présenter comme suit :
 
     ```csharp
     TestAsyncCommand.Initialize(this);
     ```
 
-     Déplacez cette ligne vers la `InitializeAsync()` méthode dans le fichier *AsyncPackageForService.cs* . Étant donné qu’il s’agit d’une initialisation asynchrone, vous devez basculer vers le thread principal avant d’initialiser la commande à l’aide de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . Elle doit maintenant ressembler à ceci :
+     Déplacez cette ligne vers la `InitializeAsync()` méthode dans le fichier *AsyncPackageForService. cs* . Étant donné qu’il s’agit d’une initialisation asynchrone, vous devez basculer vers le thread principal avant d’initialiser la commande à l’aide de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . Elle doit maintenant ressembler à ceci :
 
     ```csharp
 
@@ -204,7 +204,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 3. Supprimez la `Initialize()` méthode.
 
-4. Dans le fichier *TestAsyncCommand.cs* , recherchez la `MenuItemCallback()` méthode. Supprimez le corps de la méthode.
+4. Dans le fichier *TestAsyncCommand. cs* , recherchez la `MenuItemCallback()` méthode. Supprimez le corps de la méthode.
 
 5. Ajoutez une directive using :
 

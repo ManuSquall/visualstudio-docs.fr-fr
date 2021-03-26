@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074273"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procédure pas à pas : création d’un service de langage hérité
 L’utilisation des classes de langage de Managed package Framework (MPF) pour implémenter un service de langage dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] est simple. Vous avez besoin d’un VSPackage pour héberger le service de langage, le service de langage lui-même et un analyseur pour votre langue.
@@ -68,11 +68,11 @@ L’utilisation des classes de langage de Managed package Framework (MPF) pour i
 
 4. Assurez-vous que **classe** est sélectionné dans la liste modèles.
 
-5. Entrez **MyLanguageService.cs** pour le nom du fichier de classe, puis cliquez sur **Ajouter**.
+5. Entrez **MyLanguageService. cs** pour le nom du fichier de classe, puis cliquez sur **Ajouter**.
 
      Vous pouvez utiliser le nom de votre choix. Ces procédures sont décrites ici `MyLanguageService` comme nom.
 
-6. Dans le fichier MyLanguageService.cs, ajoutez les `using` directives suivantes.
+6. Dans le fichier MyLanguageService. cs, ajoutez les `using` directives suivantes.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
@@ -88,7 +88,7 @@ L’utilisation des classes de langage de Managed package Framework (MPF) pour i
 
 ### <a name="register-the-language-service"></a>Inscrire le service de langage
 
-1. Ouvrez le fichier MyLanguagePackagePackage.cs et ajoutez les `using` directives suivantes :
+1. Ouvrez le fichier MyLanguagePackagePackage. cs et ajoutez les `using` directives suivantes :
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]

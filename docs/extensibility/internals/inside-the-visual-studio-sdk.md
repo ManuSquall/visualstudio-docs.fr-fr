@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839857"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074702"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 
@@ -64,7 +64,7 @@ Cette section fournit des informations détaillées sur les extensions Visual St
 
  Certaines fenêtres outil sont ancrées ensemble sur un volet unique qui affiche la fenêtre outil Explorateur de solutions et masque les autres fenêtres outil, mais les met à disposition en cliquant sur les onglets. L’image montre deux autres fenêtres outil, la **liste d’erreurs** et la fenêtre **sortie** , ancrées ensemble sur un seul volet.
 
- Le volet document principal, qui affiche plusieurs fenêtres d’éditeur, s’affiche également. Bien que les fenêtres outil n’aient généralement qu’une seule instance (par exemple, vous ne pouvez ouvrir qu’une seule **Explorateur de solutions**), les fenêtres de l’éditeur peuvent avoir plusieurs instances, chacune d’elles étant utilisée pour modifier un document distinct, mais toutes sont ancrées dans le même volet. L’image montre un volet de document qui a deux fenêtres d’éditeur, une fenêtre de concepteur de formulaires. Toutes les fenêtres du volet de document sont disponibles en cliquant sur les onglets, mais la fenêtre de l’éditeur qui contient le fichier EditorPane.cs est visible et active.
+ Le volet document principal, qui affiche plusieurs fenêtres d’éditeur, s’affiche également. Bien que les fenêtres outil n’aient généralement qu’une seule instance (par exemple, vous ne pouvez ouvrir qu’une seule **Explorateur de solutions**), les fenêtres de l’éditeur peuvent avoir plusieurs instances, chacune d’elles étant utilisée pour modifier un document distinct, mais toutes sont ancrées dans le même volet. L’image montre un volet de document qui a deux fenêtres d’éditeur, une fenêtre de concepteur de formulaires. Toutes les fenêtres du volet de document sont disponibles en cliquant sur les onglets, mais la fenêtre de l’éditeur qui contient le fichier légende. cs est visible et active.
 
  Quand vous étendez Visual Studio, vous pouvez créer des fenêtres outil qui permettent aux utilisateurs de Visual Studio d’interagir avec votre extension. Vous pouvez également créer vos propres éditeurs qui permettent aux utilisateurs de Visual Studio de modifier des documents. Étant donné que vos fenêtres outil et éditeurs seront intégrés à Visual Studio, vous n’avez pas à les programmer pour les ancrer ou les afficher correctement dans un onglet. Lorsqu’ils sont correctement inscrits dans Visual Studio, ils disposent automatiquement des fonctionnalités standard des fenêtres outil et des fenêtres de document dans Visual Studio. Pour plus d’informations, consultez [extension et personnalisation des fenêtres outil](../../extensibility/extending-and-customizing-tool-windows.md).
 

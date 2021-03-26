@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6c93d90771eeffbfe28ae91781403019743afa9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944893"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089145"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Créer une extension avec un VSPackage
 
@@ -29,7 +29,7 @@ Cette procédure pas à pas vous montre comment créer un projet VSIX et ajouter
 
 1. Créez un projet VSIX nommé **FirstPackage**. Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **package Visual Studio**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstPackage.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **package Visual Studio**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstPackage. cs*.
 
 3. Générez le projet et commencez le débogage.
 
@@ -41,7 +41,7 @@ Cette procédure pas à pas vous montre comment créer un projet VSIX et ajouter
 
 À ce stade, l’extension ne se charge pas, car il n’y a rien qui la force à se charger. Vous pouvez généralement charger une extension quand vous interagissez avec son interface utilisateur (en cliquant sur une commande de menu, en ouvrant une fenêtre outil) ou en spécifiant que le VSPackage doit se charger dans un contexte d’interface utilisateur spécifique. Pour plus d’informations sur le chargement des VSPackages et des contextes d’interface utilisateur, consultez [chargement des VSPackages](../extensibility/loading-vspackages.md). Pour cette procédure, nous allons vous montrer comment charger un VSPackage quand une solution est ouverte.
 
-1. Ouvrez le fichier *FirstPackage.cs* . Recherchez la déclaration de la `FirstPackage` classe. Remplacez les attributs existants par les attributs suivants :
+1. Ouvrez le fichier *FirstPackage. cs* . Recherchez la déclaration de la `FirstPackage` classe. Remplacez les attributs existants par les attributs suivants :
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]

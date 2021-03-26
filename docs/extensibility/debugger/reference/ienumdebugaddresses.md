@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses interface
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea9e4115c1664e1dcd05041f7ece056b5de01dae
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 29b927f9b614e95be51bd285e36ab1e01c09f568
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083126"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Cette interface représente une collection d’objets qui implémentent l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
@@ -43,7 +43,7 @@ IEnumDebugAdresses : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Récupère le jeu d’objets [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) suivant de l’énumération.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Ignore un nombre spécifié d’entrées.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Rétablit la première entrée de l’énumération.|
-|[Répliqué](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Récupère une copie de l’énumération actuelle.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Récupère une copie de l’énumération actuelle.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Récupère le nombre d’entrées dans l’énumération.|
 
 ## <a name="remarks"></a>Notes
