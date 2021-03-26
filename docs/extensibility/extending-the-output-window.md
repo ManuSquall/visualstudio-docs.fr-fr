@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf875d070d27d307380f23e71af2bda7c4a205b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961766"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075032"
 ---
 # <a name="extend-the-output-window"></a>Étendre la fenêtre sortie
 La fenêtre **sortie** est un ensemble de volets de texte en lecture/écriture. Visual Studio contient les volets intégrés suivants : la **génération**, dans laquelle les projets communiquent des messages sur les builds, et **général**, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communique les messages relatifs à l’IDE. Les projets obtiennent une référence au volet de **génération** automatiquement via les <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> méthodes d’interface, et Visual Studio offre un accès direct au volet **général** par le biais du <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> service. Outre les volets intégrés, vous pouvez créer et gérer vos propres volets personnalisés.
@@ -35,14 +35,14 @@ La fenêtre **sortie** est un ensemble de volets de texte en lecture/écriture. 
 
     2. EnvDTE80
 
-3. Dans *TestOutput.cs*, ajoutez l’instruction using suivante :
+3. Dans *TestOutput. cs*, ajoutez l’instruction using suivante :
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. Dans *TestOutput.cs*, supprimez la `ShowMessageBox` méthode. Ajoutez le stub de méthode suivant :
+4. Dans *TestOutput. cs*, supprimez la `ShowMessageBox` méthode. Ajoutez le stub de méthode suivant :
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

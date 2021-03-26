@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc495727fd06bec0d20cab25a7cd8c4716bcc19e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e4a4895997e5c7511c694511000f7a0ac671db2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938380"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089743"
 ---
 # <a name="combo-element"></a>Élément combo
 Définit les commandes qui s’affichent dans une zone de liste déroulante. Il existe quatre types de zones de liste déroulante, comme suit : DropDownCombo, DynamicCombo, IndexCombo et MRUCombo.
@@ -44,15 +44,15 @@ Définit les commandes qui s’affichent dans une zone de liste déroulante. Il 
 |id|Obligatoire. ID de l’identificateur de la commande GUID/ID.|
 |defaultWidth|Obligatoire. Entier qui spécifie une largeur en pixels pour la zone de liste déroulante.|
 |idCommandList|Obligatoire. ID qui est envoyé à la cible de commande active pour récupérer la liste des éléments à afficher dans la zone de liste déroulante. L’ID sera dans la même portée GUID que le contrôle.|
-|priority|Facultatif. Valeur numérique qui spécifie la priorité.|
-|type|Facultatif. Valeur énumérée qui spécifie le type de bouton.<br /><br /> S’il n’est pas spécifié, utilise le bouton.<br /><br /> DropDownCombo<br /> Le VSPackage est chargé de remplir le contenu de cette zone de liste déroulante. L’utilisateur ne peut pas taper quoi que ce soit dans la zone de texte de cette liste déroulante.<br /><br /> DynamicCombo<br /> Le VSPackage est chargé de remplir le contenu de cette zone de liste déroulante. L’utilisateur peut modifier cette liste déroulante et également sélectionner des éléments.<br /><br /> IndexCombo<br /> Identique à DynamicCombo, sauf qu’il déclenche l’index de l’élément plutôt que son texte.<br /><br /> MRUCombo<br /> Rempli par l’environnement de développement intégré (IDE) pour le compte du VSPackage.  L’utilisateur peut modifier cette zone de liste déroulante. L’IDE se souvient des 16 dernières entrées par zone de liste déroulante.<br /><br /> Lorsque l’utilisateur sélectionne un nom dans la zone de liste déroulante ou entre un nouveau, l’IDE notifie le VSPackage approprié.|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|priority|Optionnel. Valeur numérique qui spécifie la priorité.|
+|type|Optionnel. Valeur énumérée qui spécifie le type de bouton.<br /><br /> S’il n’est pas spécifié, utilise le bouton.<br /><br /> DropDownCombo<br /> Le VSPackage est chargé de remplir le contenu de cette zone de liste déroulante. L’utilisateur ne peut pas taper quoi que ce soit dans la zone de texte de cette liste déroulante.<br /><br /> DynamicCombo<br /> Le VSPackage est chargé de remplir le contenu de cette zone de liste déroulante. L’utilisateur peut modifier cette liste déroulante et également sélectionner des éléments.<br /><br /> IndexCombo<br /> Identique à DynamicCombo, sauf qu’il déclenche l’index de l’élément plutôt que son texte.<br /><br /> MRUCombo<br /> Rempli par l’environnement de développement intégré (IDE) pour le compte du VSPackage.  L’utilisateur peut modifier cette zone de liste déroulante. L’IDE se souvient des 16 dernières entrées par zone de liste déroulante.<br /><br /> Lorsque l’utilisateur sélectionne un nom dans la zone de liste déroulante ou entre un nouveau, l’IDE notifie le VSPackage approprié.|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|Parent|Facultatif. Élément parent du bouton.|
+|Parent|Optionnel. Élément parent du bouton.|
 |CommandFlag|Obligatoire. Consultez [élément indicateur de commande](../extensibility/command-flag-element.md). Les valeurs CommandFlag valides pour un bouton sont les suivantes.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> -Touches filtres<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> -Nocustom<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
 |Chaînes|Obligatoire. Consultez l' [élément Strings](../extensibility/strings-element.md). L’élément ButtonText enfant doit être défini.|
 |Annotation|Commentaire facultatif.|

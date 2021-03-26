@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91e61c2fc125829d3c9dacf942635021b8e3886
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1bd22a779cd0a474b5df03d2315402dbe1a25239
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149715"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081514"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Cette interface permet au gestionnaire de débogage de session (SDM) de notifier à un processus qu’il est attaché ou détaché du processus.
@@ -54,7 +54,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est privée entre le SDM et le processus.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : Portpriv. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

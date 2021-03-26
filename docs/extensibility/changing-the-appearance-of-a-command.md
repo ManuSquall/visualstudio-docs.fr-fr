@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b6911d865b253ff82ffcc6c4911e0989f109f28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911228"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089821"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modifier l’apparence d’une commande
 Vous pouvez fournir des commentaires à votre utilisateur en modifiant l’apparence d’une commande. Par exemple, vous souhaiterez peut-être qu’une commande ait un aspect différent lorsqu’elle n’est pas disponible. Vous pouvez rendre les commandes disponibles ou non disponibles, les masquer ou les afficher, ou les activer ou les désactiver dans le menu.
@@ -38,19 +38,19 @@ Pour modifier l’apparence d’une commande, effectuez l’une des actions suiv
 
 1. Suivez les instructions dans [modifier le texte d’une commande de menu](../extensibility/changing-the-text-of-a-menu-command.md) pour créer un élément de menu nommé `New Text` .
 
-2. Dans le fichier *ChangeMenuText.cs* , ajoutez l’instruction using suivante :
+2. Dans le fichier *ChangeMenuText. cs* , ajoutez l’instruction using suivante :
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. Dans le fichier *ChangeMenuTextPackageGuids.cs* , ajoutez la ligne suivante :
+3. Dans le fichier *ChangeMenuTextPackageGuids. cs* , ajoutez la ligne suivante :
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. Dans le fichier *ChangeMenuText.cs* , remplacez le code dans la méthode méthode ShowMessageBox par ce qui suit :
+4. Dans le fichier *ChangeMenuText. cs* , remplacez le code dans la méthode méthode ShowMessageBox par ce qui suit :
 
     ```csharp
     private void Execute(object sender, EventArgs e)

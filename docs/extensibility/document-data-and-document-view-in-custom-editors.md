@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89f2903b2ec1308692f629c40af06f89706a427b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 391bec513f1f6d32d7ff2f87d70abdbf491ab8be
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968292"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091238"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Données de document et vue de document dans les éditeurs personnalisés
 Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme les noms le suggèrent, l’objet de données de document représente les données textuelles à afficher. De même, l’objet de vue de document (ou « View ») représente une ou plusieurs fenêtres dans lesquelles afficher l’objet de données de document.

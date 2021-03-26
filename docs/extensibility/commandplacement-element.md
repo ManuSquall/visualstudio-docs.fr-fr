@@ -8,17 +8,17 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77c7ae72f9c4c776dd8535e54112dc43833705cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73d97e32314de0b01bf26025c1fee412de7d9795
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876106"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089613"
 ---
 # <a name="commandplacement-element"></a>Élément Commandplacement ayant
 L’élément Commandplacement ayant permet d’inclure des boutons, des groupes et des menus dans plusieurs groupes ou menus. À l’aide de l’élément Commandplacement ayant, il n’est pas nécessaire de redéfinir complètement ces éléments pour modifier l’apparence d’une interface utilisateur.
@@ -43,7 +43,7 @@ L’élément Commandplacement ayant permet d’inclure des boutons, des groupes
 |guid|Obligatoire. GUID du jeu de commandes, tel que défini dans l' [élément Symbols](../extensibility/symbols-element.md).|
 |id|Obligatoire. ID du menu, du groupe ou de la commande à placer, tel que défini dans le `Symbols Element` .|
 |priority|Obligatoire. Détermine la position visuelle de l’élément dans son élément parent.|
-|Condition|Facultatif. Consultez [Aattributes conditionnel](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [Aattributes conditionnel](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dccdeb09a938b3b0bbbab803faeed538001b825
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851437"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089249"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Créer un contrôle de boîte à outils WPF
 
@@ -33,7 +33,7 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
 
 1. Créez un projet VSIX nommé `MyToolboxControl` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** en recherchant « VSIX ».
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de **contrôle de boîte à outils WPF** nommé `MyToolboxControl` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **contrôle de boîte à outils WPF**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *MyToolboxControl.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de **contrôle de boîte à outils WPF** nommé `MyToolboxControl` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **contrôle de boîte à outils WPF**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *MyToolboxControl. cs*.
 
     La solution contient maintenant un contrôle utilisateur, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> qui ajoute le contrôle à la **boîte à outils** et une entrée de ressource **Microsoft. VisualStudio. ToolboxControl** dans le manifeste VSIX pour le déploiement.
 
@@ -57,9 +57,9 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
 
 ## <a name="renaming-the-control"></a>Attribution d’un nouveau nom au contrôle
 
- Par défaut, votre contrôle s’affiche dans la **boîte à outils** en tant que **MyToolboxControl** dans un groupe nommé **MyToolboxControl. MyToolboxControl**. Vous pouvez modifier ces noms dans le fichier *MyToolboxControl.Xaml.cs* .
+ Par défaut, votre contrôle s’affiche dans la **boîte à outils** en tant que **MyToolboxControl** dans un groupe nommé **MyToolboxControl. MyToolboxControl**. Vous pouvez modifier ces noms dans le fichier *MyToolboxControl. Xaml. cs* .
 
-1. Ouvrez *MyToolboxControl.Xaml.cs* dans le mode Code.
+1. Ouvrez *MyToolboxControl. Xaml. cs* en mode Code.
 
 2. Recherchez la `MyToolboxControl` classe et renommez-la TestControl. (Le moyen le plus rapide consiste à renommer la classe, puis à sélectionner **Renommer** dans le menu contextuel et à effectuer les étapes. (Pour plus d’informations sur la commande **Rename** , consultez [refactorisation de changement de nom (C#)](../ide/reference/rename.md).)
 

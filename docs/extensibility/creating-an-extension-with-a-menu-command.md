@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ada5870bc06465b97bdf767eb64910f62e15f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de79662494a3228dd301e8d08480c6aa0a0192a2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944906"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089210"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Créer une extension avec une commande de menu
 
@@ -36,13 +36,13 @@ Cette procédure pas à pas montre comment créer une extension avec une command
 
 ::: moniker range="vs-2017"
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand. cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **FirstCommand**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >  **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à extensibilité **Visual C#**  >   et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *FirstCommand. cs*.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Maintenant, accédez au menu **Outils** de l’instance expérimentale. La comma
 
 À présent, nous allons mettre à jour le gestionnaire de commandes pour démarrer le bloc-notes.
 
-1. Arrêtez le débogage et revenez à votre instance de travail de Visual Studio. Ouvrez le fichier *FirstCommand.cs* et ajoutez l’instruction using suivante :
+1. Arrêtez le débogage et revenez à votre instance de travail de Visual Studio. Ouvrez le fichier *FirstCommand. cs* et ajoutez l’instruction using suivante :
 
     ```csharp
     using System.Diagnostics;
