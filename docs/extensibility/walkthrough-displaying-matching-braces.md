@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0950f6b8ed647a3922fe63e365a97ea0a888ec6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961727"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078615"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procédure pas à pas : afficher les accolades correspondantes
 Implémentez des fonctionnalités basées sur le langage, telles que la correspondance d’accolades en définissant les accolades que vous souhaitez mettre en correspondance, et en ajoutant une balise de marqueur de texte aux accolades correspondantes lorsque le signe insertion se trouve sur l’une des accolades. Vous pouvez définir des accolades dans le contexte d’un langage, définir votre propre extension de nom de fichier et type de contenu, et appliquer les balises uniquement à ce type ou appliquer les balises à un type de contenu existant (tel que « texte »). La procédure pas à pas suivante montre comment appliquer des balises correspondantes au type de contenu « text ».

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bd568e53c3a74819f642f0593524b314e065afb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ce9bc00f24278fd2c0533052d7bd5e944b1ebf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951561"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078342"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Ajouter un menu à la barre de menus de Visual Studio
 
@@ -45,13 +45,13 @@ En suivant cette procédure pas à pas, vous pouvez créer un menu nommé **test
 
 ::: moniker range="vs-2017"
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **test**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >   **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *TestCommand.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **test**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >   **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande personnalisée**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *test. cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **test**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >   **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *TestCommand.cs*.
+2. Lorsque le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisé nommé **test**. Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter**  >   **un nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément** , accédez à **Visual C#/extensibilité** et sélectionnez **commande**. Dans le champ **nom** en bas de la fenêtre, remplacez le nom du fichier de commandes par *test. cs*.
 
 ::: moniker-end
 

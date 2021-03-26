@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetParentProjectPath function
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 305f226117bbb9cf906231a0b9bbaa24c1d87a8e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220610"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063979"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath fonction)
 Cette fonction détermine le chemin d’accès au projet parent d’un projet spécifié. Cette fonction est appelée lorsque l’utilisateur ajoute un projet Visual Studio au contrôle de code source.
@@ -61,10 +61,10 @@ dans Chaîne identifiant le chemin d’accès au projet (jusqu’à SCC_PRJPATH_
 
 [in, out] Chaîne de sortie identifiant le chemin d’accès au projet parent (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Le chemin d’accès au projet parent a été obtenu avec succès.|
 |SCC_E_INITIALIZEFAILED|Impossible d’initialiser le projet.|

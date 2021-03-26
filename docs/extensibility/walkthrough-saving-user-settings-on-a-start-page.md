@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: e32db6c2aecde61598036b8ba2ed21141e41a4af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888938"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078329"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Procédure pas à pas : enregistrer les paramètres utilisateur sur une page de démarrage
 
@@ -79,7 +79,7 @@ Pour plus d’informations sur la façon de rendre des paramètres persistants, 
 
 1. Dans le volet XAML, cliquez avec le bouton droit sur l' `Click` attribut de l' <xref:System.Windows.Controls.Button> élément, puis cliquez sur **naviguer vers le gestionnaire d’événements**.
 
-     Cette étape ouvre *myControl.Xaml.cs* et crée un gestionnaire de stub pour l' `Button_Click` événement.
+     Cette étape ouvre *myControl. Xaml. cs* et crée un gestionnaire de stubs pour l' `Button_Click` événement.
 
 2. Ajoutez les `using` directives suivantes au début du fichier.
 

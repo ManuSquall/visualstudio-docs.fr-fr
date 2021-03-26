@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 537793165f3a3b46d7f00c19dd2f093f0442326d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f94d481a2884c64cb42b170d9d1abfa25c913a9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886923"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069138"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procédure pas à pas : obtention d’une liste d’extraits de code installés (implémentation héritée)
 Un extrait de code est un morceau de code qui peut être inséré dans la mémoire tampon source à l’aide d’une commande de menu (qui permet de choisir parmi une liste d’extraits de code installés) ou en sélectionnant un raccourci d’extrait dans une liste de saisie semi-automatique IntelliSense.

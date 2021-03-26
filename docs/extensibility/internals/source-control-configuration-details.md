@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a3a2f33fcbb94d1e863daf69b8561f7bad4f2a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5c93e690922057116b395bed3881627e8a37847
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846502"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069346"
 ---
 # <a name="source-control-configuration-details"></a>Détails de configuration du contrôle de code source
 Pour implémenter le contrôle de code source, vous devez configurer correctement votre système ou éditeur de projet pour effectuer les opérations suivantes :

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, what's new in API v1.2
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a7c1b57f509689d103a9f90a49c83a9489ac74f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90df3c62d658f1c71957b00ee6e005f20777d463
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941578"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069047"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>&#39;nouveautés de l’API de plug-in de contrôle de code source version 1,2
 Cette section met en évidence les fonctionnalités avancées de contrôle de code source dans l’API de plug-in de contrôle de code source version 1,2. La liste suivante répertorie les nouvelles fonctionnalités de la version 1,2 :

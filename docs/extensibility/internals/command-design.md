@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b7e0f214f50831392b5f0f5633d7c06ba03f37c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0acef6dd38238ef58f1dd66f7d8de35318e4ffc6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940133"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078927"
 ---
 # <a name="command-design"></a>Conception de commande
 Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où elle doit apparaître, quand elle est disponible et comment elle doit être gérée.
@@ -62,7 +62,7 @@ Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où ell
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Implémentation de la commande](../../extensibility/internals/command-implementation.md)|Décrit comment implémenter des commandes dans un VSPackage.|
 |[Disponibilité des commandes](../../extensibility/internals/command-availability.md)|Décrit comment Visual Studio Context détermine les commandes disponibles.|

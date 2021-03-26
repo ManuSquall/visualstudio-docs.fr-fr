@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f78db8ba9a29b40d111dc5a82827395b100302b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4d0b173f362418171def93ee92e3883b2910ad18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169481"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087338"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Cette interface représente un port de débogage sur un ordinateur.
@@ -52,7 +52,7 @@ IDebugPort2 : IUnknown
 ## <a name="remarks"></a>Notes
  Le port local permet d’accéder à tous les processus et programmes en cours d’exécution sur l’ordinateur local. D’autres ports peuvent représenter une connexion de câble série à un appareil Windows CE ou une connexion réseau à un ordinateur non-DCOM. L' `IDebugPort2` interface permet de rechercher le nom et l’identificateur d’un port et d’énumérer tous les processus en cours d’exécution sur le port. Les fonctionnalités de lancement et de fin des processus sur le port sont implémentées dans l' `IDebugPortEx2` interface.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

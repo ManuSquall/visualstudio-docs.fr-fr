@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a549a4f90cca6c17f3ad634551740f91fbe7da6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 155e662eae0dda6689a233e31fd62bb72259ae8b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846411"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069333"
 ---
 # <a name="source-control-integration-essentials"></a>Éléments fondamentaux de l’intégration du contrôle de code source
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge deux types d’intégration du contrôle de code source : un plug-in de contrôle de code source qui fournit des fonctionnalités de base et est généré à l’aide de l’API de plug-in de contrôle de code source (anciennement appelée API MSSCCI) et une solution d’intégration de contrôle de code source basée sur VSPackage qui fournit des fonctionnalités plus robustes.
@@ -53,6 +53,6 @@ ms.locfileid: "99846411"
    Pour plus d’informations, consultez [création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d'ensemble](../../extensibility/internals/source-control-integration-overview.md)
+- [Vue d’ensemble](../../extensibility/internals/source-control-integration-overview.md)
 - [Création d’un plug-in de contrôle de code source](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md)
