@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c79d27c01035f83b506ffad4ec138c8c68f98d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840598"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097030"
 ---
 # <a name="evaluate-expressions"></a>Évaluer les expressions
 Les expressions sont créées à partir de chaînes transmises à partir des fenêtres **automatique**, **Espion**, **Espion express** ou **immédiat** . Lorsqu’une expression est évaluée, elle génère une chaîne imprimable qui contient le nom et le type de variable ou d’argument et sa valeur. Cette chaîne s’affiche dans la fenêtre IDE correspondante.

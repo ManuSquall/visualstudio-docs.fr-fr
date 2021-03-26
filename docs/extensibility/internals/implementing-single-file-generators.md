@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], extensibility
 - projects [Visual Studio SDK], managed custom tools
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e353101c7932e06042b451360b7ca040adcb303f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a46ebce9a554c90e23f9ce5f29680fc3ef86b337
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839948"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085830"
 ---
 # <a name="implementing-single-file-generators"></a>Implémentation de générateurs de fichier unique
 Un outil personnalisé (parfois appelé générateur de fichier unique) peut être utilisé pour étendre les [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] systèmes de projet et dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Un outil personnalisé est un composant COM qui implémente l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface. À l’aide de cette interface, un outil personnalisé transforme un fichier d’entrée unique en un seul fichier de sortie. Le résultat de la transformation peut être du code source, ou toute autre sortie utile. Deux exemples de fichiers de code générés par un outil personnalisé sont générés par du code en réponse à des modifications dans un concepteur visuel et des fichiers générés à l’aide d’Web Services Description Language (WSDL).

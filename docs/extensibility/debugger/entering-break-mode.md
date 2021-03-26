@@ -8,17 +8,17 @@ helpviewer_keywords:
 - break mode
 - debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ec09994f6998f87daafc690b1908b31e54706b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e8af8aa2765e199e8e278982669f68b3019b6c2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840650"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097212"
 ---
 # <a name="enter-break-mode"></a>Passer en mode arrêt
 Les informations suivantes décrivent le processus qui se produit lorsqu’un point d’arrêt est rencontré après un pas à pas détaillé dans une fonction, en cours d’exécution jusqu’à la ligne de code source qui contient le curseur, ou en cours d’exécution jusqu’à un point d’arrêt.

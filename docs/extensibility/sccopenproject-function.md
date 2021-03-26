@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: baada63e84e95fd466e0e5640c592dfe303d8e1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221546"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063758"
 ---
 # <a name="sccopenproject-function"></a>Fonction SccOpenProject
 Cette fonction ouvre un projet de contrôle de code source existant ou en crée un.
@@ -79,7 +79,7 @@ dans Signale si un nouveau projet doit être créé si le projet est inconnu du 
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Réussite de l’ouverture du projet.|
 |SCC_E_INITIALIZEFAILED|Impossible d’initialiser le projet.|

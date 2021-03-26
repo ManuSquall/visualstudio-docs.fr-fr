@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject interface
 ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9a579212a34a10fc9999867d88dfbd277a9c3fe
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0fabd43fe6f7d8ee8e5cddc6cc655088bf4a9abf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150586"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063550"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -53,7 +53,7 @@ IDebugFunctionObject : IDebugObject
 ## <a name="remarks"></a>Notes
  Cette interface permet à l’évaluateur d’expression de représenter des fonctions dans une arborescence d’analyse. Les `Create` méthodes de cette interface sont utilisées pour construire des objets représentant les paramètres d’entrée de la méthode. La fonction peut ensuite être exécutée en appelant la méthode [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) , qui retourne un objet représentant la valeur de retour de la fonction.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : EE. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

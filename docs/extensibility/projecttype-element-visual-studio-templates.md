@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a90c8de2fca62ef303ce8055993d8e2f6d230493
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d494d27b2a3302d0beff68b770d0172edb520f35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910894"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068684"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType, élément (modèles Visual Studio)
 Classe le modèle de projet de manière à ce qu’il apparaisse sous le groupe spécifié dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .

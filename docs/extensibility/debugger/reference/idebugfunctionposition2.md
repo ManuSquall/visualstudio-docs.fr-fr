@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2 interface
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a5717023eea18060834d1beade25199d5b0c3f3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e5afd44827d8d9b6f244bc914728bd090261ab25
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165525"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063472"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Cette interface représente une position abstraite d’une fonction dans un document source.
@@ -46,7 +46,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="remarks"></a>Notes
  La position représentée par cette interface est basée sur du texte, en particulier une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

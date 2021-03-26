@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 9f266fbe27cb509d2d6dca47a913261eea7f937c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220584"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063823"
 ---
 # <a name="sccinitialize-function"></a>Fonction SccInitialize
 Cette fonction initialise le plug-in de contrôle de code source et fournit des fonctionnalités et des limites à l’environnement de développement intégré (IDE).
@@ -74,7 +74,7 @@ dans Nom du programme appelant le plug-in de contrôle de code source.
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Initialisation du contrôle de code source réussie.|
 |SCC_E_INITIALIZEFAILED|Le système n’a pas pu être initialisé.|

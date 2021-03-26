@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccWillCreateSccFile function
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee01478858615aad135d07a5c10d5d6c58280926
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221286"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063719"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Fonction SccWillCreateSccFile
 Cette fonction détermine si le plug-in de contrôle de code source prend en charge la création du MSSCCPRJ. Fichier SCC pour chacun des fichiers donnés.
@@ -54,7 +54,7 @@ dans Tableau de noms de fichiers qualifiés complets à vérifier (le tableau do
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Réussite.|
 |SCC_E_INVALIDFILEPATH|L’un des chemins d’accès dans le tableau n’est pas valide.|
