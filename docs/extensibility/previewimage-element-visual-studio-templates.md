@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e306f6453ca3abbc2ad881821254ca88a160d01b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fc7a370885d24a586262bebd4182daacd84a9b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967278"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090224"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
 Spécifie l’image d’aperçu, sous la forme d’un nom de fichier, pour l’image d’aperçu qui s’affichera dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .

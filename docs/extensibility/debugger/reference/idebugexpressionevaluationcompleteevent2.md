@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluationCompleteEvent2
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a56cb564470263c9ae98fb0adda84881f25209c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b30b61c0b7a9a9f3e06465a6b194c882213afb34
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152596"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092200"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) lorsque l’évaluation de l’expression asynchrone est terminée.
@@ -48,7 +48,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 
  Si l’évaluation n’a pas réussi, `DEBUG_PROPINFO_VALUE` les `DEBUG_PROPINFO_ATTRIB` indicateurs et ne sont pas définis dans la structure [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) retournée par [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (l’objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) est créé par le de et retourné dans l' `IDebugExpressionEvaluationCompleteEvent2` événement si l’évaluation a échoué).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08d430a2c4e803126e99d37fb7ef30336bde503b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 85e0dd1c334ce57b5e466ab66a74db4b29a40adc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152700"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092434"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Cette méthode évalue l’expression de façon synchrone.
@@ -62,7 +62,7 @@ dans Ce paramètre est toujours une valeur null.
 ## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Voici quelques exemples de codes d’erreur :
 
-|Erreur|Description|
+|Error|Description|
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|Une autre expression est actuellement en cours d’évaluation, et l’évaluation d’expression simultanée n’est pas prise en charge.|
 |E_EVALUATE_TIMEOUT|Expiration du délai d’évaluation.|

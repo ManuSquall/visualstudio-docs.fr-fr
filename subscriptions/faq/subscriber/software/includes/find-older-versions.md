@@ -5,15 +5,17 @@ ms.topic: include
 ms.assetid: 611a9d9f-0b72-4dd1-ac5a-987a52433627
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/28/2021
+ms.date: 03/24/2021
 ms.faqid: q2_4
-ms.openlocfilehash: 746b2543624cb2320fe1ce809ccda095d95a25c5
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: bf585013ecf2fd4c0233c7fa31a6462477769a19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99105341"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105105780"
 ---
 ## <a name="where-can-i-find-older-versions-of-visual-studio"></a>Où puis-je trouver des versions antérieures de Visual Studio ? 
 
-Une liste des clés de produit disponibles avec votre abonnement Visual Studio est accessible dans le portail abonnements sous l’onglet clés de produit dans <https://my.visualstudio.com/productkeys> .
+Si vous recherchez des versions antérieures de Visual Studio 2019, vous trouverez des liens de téléchargement vers les versions, ainsi que des instructions dans l’article sur les [versions de Visual studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/history?branch=updates%2Fhistory) .
+
+Si vous avez besoin de versions antérieures de Visual Studio, telles que Visual Studio 2017, consultez [téléchargements plus anciens de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).
