@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c688da1c850743f92fb9b87f7f5d72fb66d946d6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 828d6b9afc659a09a4f1091c741e6246512de025
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170443"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096172"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
 Spécifie la portée du flux de code machine.
@@ -65,7 +65,7 @@ Passé comme argument à la méthode [GetDisassemblyStream](../../../extensibili
 
 Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

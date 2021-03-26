@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessCreateEvent2
 ms.assetid: c660439d-8b23-4dbb-923e-ebb5e1d7edf5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40720b1e236a239037cbef81cf00a2e985e9581e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 146d38788e6a9c41fa96729da3922828a057d853
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169143"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076431"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 Cette interface est envoyée lorsqu’un processus est lancé.
@@ -35,7 +35,7 @@ IDebugProcessCreateEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Notes pour les appelants
  Le fournisseur DE ports ou le fournisseur DE port personnalisé crée et envoie cet objet d’événement pour signaler la création d’un processus. Le DE envoie cet événement à l’aide de la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu’il est attaché au programme en cours de débogage. Le fournisseur de port personnalisé envoie cet événement à l’aide de l’interface [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

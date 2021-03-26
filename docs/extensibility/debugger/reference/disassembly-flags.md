@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aeaf00e7073cd1146dcc5856684ed7209e7d800
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 28335176a70213f61bfbb77bf6f91cc6155902e7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096198"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 Spécifie les indicateurs du code machine.
@@ -75,7 +75,7 @@ Utilisé comme `dwFlags` membre de la structure [DisassemblyData](../../../exten
 
 Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

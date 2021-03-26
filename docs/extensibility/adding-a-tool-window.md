@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951431"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085518"
 ---
 # <a name="add-a-tool-window"></a>Ajouter une fenêtre outil
 
@@ -117,7 +117,7 @@ Ajoutez une commande à la barre d’outils, qui s’affiche sous forme de bouto
     </Button>
     ```
 
-3. Ouvrez *FirstToolWindowCommand.cs* et ajoutez les lignes suivantes dans la classe juste après les champs existants.
+3. Ouvrez *FirstToolWindowCommand. cs* et ajoutez les lignes suivantes dans la classe juste après les champs existants.
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -143,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>Instancier la fenêtre outil et la barre d’outils
 Ajoutez une barre d’outils et une commande de menu qui appelle la boîte de dialogue **ouvrir un fichier** et qui lit le fichier multimédia sélectionné.
 
-1. Ouvrez *FirstToolWindow.cs* et ajoutez les `using` directives suivantes :
+1. Ouvrez *FirstToolWindow. cs* et ajoutez les `using` directives suivantes :
 
     ```csharp
     using System.ComponentModel.Design;
@@ -188,7 +188,7 @@ Ajoutez une barre d’outils et une commande de menu qui appelle la boîte de di
     }
     ```
 
-6. Ajoutez la commande de menu à la barre d’outils. Dans la classe FirstToolWindowCommand.cs, ajoutez la directive using suivante :
+6. Ajoutez la commande de menu à la barre d’outils. Dans la classe FirstToolWindowCommand. cs, ajoutez la directive using suivante :
 
     ```csharp
     using System.Windows.Forms;
@@ -255,9 +255,9 @@ Ajoutez une barre d’outils et une commande de menu qui appelle la boîte de di
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>Définir la position par défaut de la fenêtre outil
 
-Ensuite, spécifiez un emplacement par défaut dans l’IDE pour la fenêtre outil. Les informations de configuration de la fenêtre outil se trouvent dans le fichier *FirstToolWindowPackage.cs* .
+Ensuite, spécifiez un emplacement par défaut dans l’IDE pour la fenêtre outil. Les informations de configuration de la fenêtre outil se trouvent dans le fichier *FirstToolWindowPackage. cs* .
 
-1. Dans *FirstToolWindowPackage.cs*, recherchez l' <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attribut sur la `FirstToolWindowPackage` classe, qui passe le type FirstToolWindow au constructeur. Pour spécifier une position par défaut, vous devez ajouter des paramètres à l’exemple de constructeur suivant.
+1. Dans *FirstToolWindowPackage. cs*, recherchez l' <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attribut sur la `FirstToolWindowPackage` classe, qui passe le type FirstToolWindow au constructeur. Pour spécifier une position par défaut, vous devez ajouter des paramètres à l’exemple de constructeur suivant.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),

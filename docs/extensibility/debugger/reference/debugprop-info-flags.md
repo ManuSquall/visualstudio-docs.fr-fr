@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63467e93b80648e6a00728dc66971b7c9b3c9b24
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 84e52867c44fa1387aaf7501a827168651099e9c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170521"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096211"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 Spécifie les informations à récupérer sur un objet de propriété de débogage.
@@ -118,7 +118,7 @@ Ces valeurs sont également utilisées pour le `dwFields` membre de la `DEBUG_PR
 
 Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

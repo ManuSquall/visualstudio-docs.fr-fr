@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 13e780dd5d6825515673547aae8f3dc16edd885c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170586"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096289"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contient des informations sur une propriété de débogage.
@@ -79,7 +79,7 @@ Une propriété est un objet d’une nature hiérarchique qui a un nom, un type 
 
 Cette structure est transmise à la méthode [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) où elle est remplie. Cette structure est également retournée dans le cadre d’une liste de cette structure à partir de l’interface [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) qui, à son tour, est retournée à partir d’un appel aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) et [EnumProperties,](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

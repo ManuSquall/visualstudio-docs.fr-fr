@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bbc321d7ff7e335b28f6bc7430fb0f8dce3d57c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: be67fd18c6cac7217da0d79aaef766e942e15fb9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221702"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085674"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc fonction)
 Cette fonction permet à l’utilisateur de rechercher des fichiers qui se trouvent déjà dans le système de contrôle de code source, puis de faire de ces fichiers une partie du projet actuel. Par exemple, cette fonction peut obtenir un fichier d’en-tête commun dans le projet actif sans copier le fichier. Le tableau de retour des fichiers, `lplpFileNames` , contient la liste des fichiers que l’utilisateur souhaite ajouter au projet IDE.
@@ -54,7 +54,7 @@ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut u
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Les fichiers ont été correctement localisés et ajoutés au projet.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée sans effet.|

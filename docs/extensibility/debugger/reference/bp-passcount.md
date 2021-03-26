@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c1e44ede0f39b3d1b33967311365508da6a701d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: afb94436897224bc9c6896a601447e9d9a1c8b6f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144154"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096731"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 Décrit le nombre et les conditions sur lesquelles un point d’arrêt conditionnel est déclenché.
@@ -54,7 +54,7 @@ Cette structure est un membre de la structure [BP_REQUEST_INFO](../../../extensi
 
 Cette structure est également transmise en tant que paramètre aux méthodes[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) et[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

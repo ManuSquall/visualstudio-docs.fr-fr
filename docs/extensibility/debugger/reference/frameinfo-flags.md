@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4029212aae6d4557e17c42a0c0e024a83c94b0a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d4214dd81945c3e7e2711a500e2e3a2b173e33e0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150820"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059260"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 Spécifie les informations à récupérer sur un objet de frame de pile.
@@ -200,7 +200,7 @@ Ces indicateurs sont passés aux méthodes [EnumFrameInfo](../../../extensibilit
 
 Ces indicateurs sont également utilisés pour indiquer les champs de la structure [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) qui sont utilisés et valides lorsque la structure est retournée. Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

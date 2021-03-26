@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3fb9208619639a8f1c767cbf12a2de0ed24768f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 05dbf0552242bdc1a21ec6dd81a592711f50f391
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220870"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085635"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject fonction)
 Cette fonction ferme un projet et marque la fin d’une session particulière.
@@ -34,10 +34,10 @@ SCCRTN SccCloseProject (
 ### <a name="parameters"></a>Paramètres
  pvContext la structure du contexte du plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Le projet a été correctement fermé.|
 |SCC_E_PROJNOTOPEN|Aucun projet n’est actuellement ouvert.|

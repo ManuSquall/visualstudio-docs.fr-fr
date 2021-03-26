@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27b695b2777aa32f77d49ced7b74436ce870df80
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 056e918642e75bbd74c310499544cb2500428646
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220974"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060469"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC fonction)
 Cette fonction ajoute une liste de fichiers du contrôle de code source au projet actuellement ouvert.
@@ -76,10 +76,10 @@ dans Commentaire à appliquer à chacun des fichiers ajoutés.
 
 [in, out] Tableau d’indicateurs qui sont définis pour indiquer la réussite (valeur différente de zéro ou TRUE) ou l’échec (zéro ou FALSe) pour chaque fichier (la taille du tableau doit être au moins `cFiles` longue).
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert.|
 |SCC_E_OPNOTPERFORMED|La connexion n’est pas vers le même projet que celui spécifié par `lpAuxProjPath.`|

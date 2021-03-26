@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa46f2c8becc7359bb08046369c9349861c63314
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a20473d2076932987ecc352c8719f1d9133ed198
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162808"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066514"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Cette interface représente une position dans un document de fichier source.
@@ -49,7 +49,7 @@ IDebugDocumentContext2 : IUnknown
 |[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Compare ce contexte de document à un tableau de contextes de document donné.|
 |[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Déplace le contexte de document d’un nombre donné d’instructions ou de lignes.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

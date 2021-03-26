@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REFERENCE_INFO structure
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e210875f88a7c8246eff3bfcf0721d6866602b7e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 729dab8cc7a8b2960c699cce503400d97c6fa398
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170534"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096237"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 Décrit une référence.
@@ -77,7 +77,7 @@ Objet [IDebugReference2](../../../extensibility/debugger/reference/idebugreferen
 ## <a name="remarks"></a>Notes
 Cette structure est passée à un appel à la méthode [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) à remplir. Cette structure est également retournée dans le cadre d’une liste à partir de l’interface [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) qui, à son tour, est retournée à partir d’un appel à la méthode [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

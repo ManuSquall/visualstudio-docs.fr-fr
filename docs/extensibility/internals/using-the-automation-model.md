@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], automation model
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e856153462819599124f3dce2e16c6de9f01cdfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a25936e0be16231bbe315a2bd29a0d495115f392
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883088"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085804"
 ---
 # <a name="using-the-automation-model"></a>Utilisation du modèle d’automatisation
 Une fois que vous avez connecté votre VSPackage à Automation, vous pouvez obtenir les propriétés et les méthodes en appelant la <xref:EnvDTE.DTEClass.GetObject%2A> méthode sur l' <xref:EnvDTE._DTE> objet, en passant une chaîne représentant l’objet que vous souhaitez récupérer.

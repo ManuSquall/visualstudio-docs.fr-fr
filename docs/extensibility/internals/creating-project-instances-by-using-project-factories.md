@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e90b12b12589fff89f4df1241eb73504e8bdb74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40b7c3fbe5b5b7fd59fe0e57376290181f3e9a20
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903142"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056795"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Créer des instances de projet à l’aide de fabriques de projets
 Les types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilisent une *fabrique de projets* pour créer des instances d’objets de projet. Une fabrique de projet est semblable à une fabrique de classe standard pour les objets COM cocreatables. Toutefois, les objets de projet ne peuvent pas coexister ; ils peuvent uniquement être créés à l’aide d’une fabrique de projets.

@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9442dcdd460e1213c3c07ee87a5ea2e0d7099072
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886871"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085700"
 ---
 # <a name="web-project-essentials"></a>Éléments fondamentaux de projet web
 Les projets Web créent des applications Web. Vous pouvez utiliser un projet Web pour créer une application Web qui a des pages Web intelligentes. Une page Web intelligente contient du code côté serveur qui restitue la page Web à la demande.
 
  À l’aide de langages de programmation traditionnels, tels que [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] , vous pouvez créer des pages Web intelligentes pour collecter et traiter les informations d’un utilisateur, les stocker dans une base de données, etc.
 
-- Le modèle code-behind associe les fichiers de code source dépendants aux pages Web avec l’extension de fichier. aspx ou. asmx. Par exemple, Hello. aspx peut avoir le fichier de code source dépendant hello.aspx.cs.
+- Le modèle code-behind associe les fichiers de code source dépendants aux pages Web avec l’extension de fichier. aspx ou. asmx. Par exemple, Hello. aspx peut avoir le fichier de code source dépendant Hello. aspx. cs.
 
 - Le code côté serveur associé à une page Web intelligente est compilé dans un fichier exécutable qui se trouve dans le dossier/bin du site Web.
 

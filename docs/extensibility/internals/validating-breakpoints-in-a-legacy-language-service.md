@@ -8,17 +8,17 @@ helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 593663c4906cc669c52336ffe6689e8de9fcde48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86029300c34e111344157bf39a15dceab8c1b77a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941591"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085791"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validation des points d’arrêt dans un service de langage hérité
 Un point d’arrêt indique que l’exécution du programme doit s’arrêter à un point particulier lorsqu’il est exécuté dans un débogueur. Un utilisateur peut placer un point d’arrêt sur n’importe quelle ligne du fichier source, puisque l’éditeur n’a aucune connaissance de ce qui constitue un emplacement valide pour un point d’arrêt. Quand le débogueur est lancé, tous les points d’arrêt marqués (appelés points d’arrêt en attente) sont liés à l’emplacement approprié dans le programme en cours d’exécution. En même temps, les points d’arrêt sont validés pour s’assurer qu’ils marquent des emplacements de code valides. Par exemple, un point d’arrêt sur un commentaire n’est pas valide, car il n’y a pas de code à cet emplacement dans le code source. Le débogueur désactive les points d’arrêt non valides.

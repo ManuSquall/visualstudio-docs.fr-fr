@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateData element [Visual Studio project templates]
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 423bcc7b3d902488f268b2d0706cb5126125f37d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5bc7f9b94553bda2bd2fcf020264ddb0d850c32
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895386"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085570"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData, élément (modèles Visual Studio)
 Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .
@@ -78,7 +78,7 @@ Définit la catégorie du modèle et comment il s’affiche dans la boîte de di
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Élément requis.<br /><br /> Contient toutes les métadonnées pour le modèle de projet, le modèle d’élément ou le starter kit.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `TemplateData` est un élément obligatoire.
 
  Si vous n’incluez pas d’élément facultatif, la valeur par défaut de cet élément est utilisée.

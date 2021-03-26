@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5af4c0efe53625063d4bb714f3d323bef28c5954
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170970"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096614"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 Structure qui décrit un tableau de chaînes.
@@ -54,7 +54,7 @@ Cette structure est retournée par la méthode [EnumPersistedPorts](../../../ext
 
  [C++ uniquement] Chaque chaîne individuelle doit être libérée à l’aide de `SysFreeString` , et le `Members` tableau doit être libéré avec `CoTaskMemFree` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : msdbg. h
 
 Espace de noms : Microsoft. VisualStudio. Debugger. Interop

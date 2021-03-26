@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2 interface
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e162e276fc93c9e2c0d4333ac0f5c2630f75618e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f5406c70703b594236dba47539e5cc76bbe67a73
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152947"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065760"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Cette interface est utilisée pour communiquer les informations de débogage critiques, telles que l’arrêt à un point d’arrêt et les informations non critiques, telles qu’un message de débogage.
@@ -45,7 +45,7 @@ IDebugEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Les interfaces d’événements plus spécifiques, telles que [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), ne dérivent pas de l’interface IDebugEvent2, mais elles sont implémentées en tant qu’interface distincte sur le même objet que `IDebugEvent2` .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

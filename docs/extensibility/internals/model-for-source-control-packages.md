@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4e437afdfa0d3de03da6814e221840cbd0763fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895659"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063199"
 ---
 # <a name="model-for-source-control-packages"></a>Modèle des packages de contrôle de code source
 Le modèle suivant représente un exemple d’implémentation de contrôle de code source. Dans le modèle, vous voyez les interfaces que vous devez implémenter et les services d’environnement que vous devez appeler. Comme tous les services, vous appelez en fait les méthodes d’une interface particulière que vous obtenez par le biais du service. Les noms des classes sont identifiés pour vous permettre de voir plus facilement comment le contrôle de code source est exécuté.
