@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1328a97742a4672cdc71805c4c674d66fe05e817
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ab605db6a49b8b7cc9893692ff1bb9e6da15171f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154611"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088144"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Cette interface donne accès aux informations sur le serveur dans lequel le processus s’exécute.
@@ -52,7 +52,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="remarks"></a>Notes
  Un fournisseur de port personnalisé reçoit l’interface [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) sur un appel à l' [événement](../../../extensibility/debugger/reference/idebugportevents2-event.md). L' `IDebugCoreServer3` interface peut être obtenue à partir de cette interface.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg. h
 
  Espace de noms : Microsoft. VisualStudio. Debugger. Interop

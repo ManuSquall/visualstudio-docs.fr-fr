@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8de88b75b7013b75a35c9e92dc662598185e92b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898111"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080552"
 ---
 # <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
 Cette zone de test du plug-in de contrôle de code source traite de l’envoi d’éléments mis à jour à la Banque des versions via la commande **Archiver** .

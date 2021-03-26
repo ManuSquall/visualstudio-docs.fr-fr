@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4938d90c3122d7aa42582e68aa087a9068a1ac4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699d38f712885d1e2b08a111baa7db75fb7829da
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869438"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056127"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation, élément (modèles Visual Studio)
 Spécifie si la case à cocher **Placer le code dans un fichier distinct** est activée dans la boîte de dialogue **Ajouter un nouvel élément** .
@@ -56,7 +56,7 @@ Spécifie si la case à cocher **Placer le code dans un fichier distinct** est a
 
  Le texte doit être `true` ou `false` , indiquant si la case à cocher **Placer le code dans un fichier distinct** est activée dans la boîte de dialogue **Ajouter un nouvel élément** .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  `SupportsCodeSeparation` est un élément facultatif. La valeur par défaut est `false`.
 
  L' `SupportsCodeSeparation` élément est uniquement disponible pour les modèles d’élément Web.

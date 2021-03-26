@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 799d51c607ce720502c269cf82fe5a857ec7a826
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 172e0ec5fdba4b91c3cf86ea964b4a98a23a5fa8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220831"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060339"
 ---
 # <a name="sccget-function"></a>SccGet fonction)
 Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués en lecture seule.
@@ -61,10 +61,10 @@ dans Indicateurs de commande ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
 
 dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Réussite de l’opération d’extraction.|
 |SCC_E_FILENOTCONTROLLED|Le fichier n'est pas soumis au contrôle de code source.|

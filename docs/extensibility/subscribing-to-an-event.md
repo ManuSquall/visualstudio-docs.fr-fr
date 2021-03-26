@@ -8,17 +8,17 @@ helpviewer_keywords:
 - running document table (RDT), responding to events
 - running document table (RDT), subscribing to events
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8477f252259f0ca436c4d4f34325c6dbb45565b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a887e7d50f14c76cf993eae64b0efd88dee2181
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847971"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056283"
 ---
 # <a name="subscribing-to-an-event"></a>Abonnement à un événement
 Cette procédure pas à pas explique comment créer une fenêtre outil qui répond aux événements dans une table de document en cours d’exécution (RDT). Une fenêtre outil héberge un contrôle utilisateur qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> . La <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> méthode connecte l’interface aux événements.
@@ -47,7 +47,7 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     </Grid>
     ```
 
-2. Ouvrez le fichier RDTExplorerWindow.cs en mode Code. Ajoutez les directives d’utilisation suivantes au début du fichier.
+2. Ouvrez le fichier RDTExplorerWindow. cs en mode Code. Ajoutez les directives d’utilisation suivantes au début du fichier.
 
     ```csharp
     using Microsoft.VisualStudio;

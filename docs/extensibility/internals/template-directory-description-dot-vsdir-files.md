@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdd21dfa9fe5aae11553bb0268017690aba46fe9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898233"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080500"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Fichiers de description de répertoire de modèles (.Vsdir)
 Un fichier de description de répertoire de modèles (. vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) d’afficher des dossiers, des fichiers Assistant. vsz et des fichiers modèles associés à votre projet dans des boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers. vsdir d’un emplacement référencé sont fusionnés, bien qu’un seul fichier. vsdir soit généralement fourni pour décrire plusieurs dossiers, assistants ou fichiers de modèles.

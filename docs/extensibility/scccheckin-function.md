@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a835ead5fb0404b78d9e9c9ecc92ee0c73eaf252
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d6864549c6825092b6ad26be199f8c7b5ea6bab6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220857"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060430"
 ---
 # <a name="scccheckin-function"></a>SccCheckin fonction)
 Cette fonction Archive les fichiers précédemment extraits dans le système de contrôle de code source, en stockant les modifications et en créant une nouvelle version. Cette fonction est appelée avec un nombre et un tableau de noms des fichiers à archiver.
@@ -66,10 +66,10 @@ dans Indicateurs de commande, 0 ou `SCC_KEEP_CHECKEDOUT` .
 
 dans Options spécifiques au plug-in SCC.
 
-## <a name="return-value"></a>Valeur retournée
+## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Le fichier a été archivé avec succès.|
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous le contrôle de code source.|

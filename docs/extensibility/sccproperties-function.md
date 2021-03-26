@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 410febfbbb79cb352b6247139a11b1c49f3cde9c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 56306bb7c248ea500e16964c0929f34a27187298
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220532"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056517"
 ---
 # <a name="sccproperties-function"></a>Fonction SccProperties
 Cette fonction affiche les propriétés du contrôle de code source pour un fichier ou un projet.
@@ -49,7 +49,7 @@ dans Nom de chemin d’accès qualifié complet du fichier ou du projet.
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Les propriétés ont été correctement affichées.|
 |SCC_I_RELOADFILE|Le système de gestion de version a modifié les propriétés du fichier, de sorte que l’IDE doit recharger ce fichier.|

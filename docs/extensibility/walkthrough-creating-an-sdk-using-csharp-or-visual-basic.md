@@ -5,20 +5,20 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ce834a2c949c55a6deeb6b7c7d0a9751771e316
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838693"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080396"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : création d’un kit de développement logiciel à l’aide de C# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement logiciel (SDK) de bibliothèque mathématique simple à l’aide de Visual C#, puis à empaqueter le kit de développement logiciel en tant qu’extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :
@@ -41,7 +41,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nœud de projet **SimpleMath** , puis choisissez **Propriétés**.
 
-5. Renommez **Class1.cs** en **Arithmetic.cs** et mettez-le à jour pour qu’il corresponde au code suivant :
+5. Renommez **Class1. cs** en **Arithmetic. cs** et mettez-le à jour pour qu’il corresponde au code suivant :
 
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
@@ -234,7 +234,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
     </Page>
     ```
 
-11. Mettez à jour **MainPage.Xaml.cs** pour qu’il corresponde au code suivant :
+11. Mettez à jour **MainPage. Xaml. cs** pour qu’elle corresponde au code suivant :
 
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]

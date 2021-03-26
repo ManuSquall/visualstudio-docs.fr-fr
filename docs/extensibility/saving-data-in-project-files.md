@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project files
 - project files, saving data
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c18923a7866f2bb141371c4c703377e298c1e61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24f3f0b84f22532187537c31ba6e47a823eef8f7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926909"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060495"
 ---
 # <a name="save-data-in-project-files"></a>Enregistrer des données dans les fichiers projet
 Un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet. Managed package Framework (MPF) fournit deux interfaces pour accomplir cette tâche :

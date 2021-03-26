@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6923eb7a534a4cacf8062883d073ddddc9395e17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56880cab310367a5c4da3af0cf310867a5519495
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892552"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080604"
 ---
 # <a name="supporting-source-control"></a>Prise en charge du contrôle de code source
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge les extractions de fichiers, les archivages et d’autres opérations de contrôle de code source pour votre projet ou votre éditeur. En tant que client de contrôle de code source, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est conçu pour interagir avec un package de contrôle de code source, tel que [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , qui fournit des fonctionnalités d’archivage, de contrôle de version et de contrôle pour un ensemble de fichiers défini dynamiquement.
@@ -31,7 +31,7 @@ ms.locfileid: "99892552"
 
  Fournit des questions dont les réponses modifient la façon dont vous implémentez un type de projet.
 
-- [Détails de configuration](../../extensibility/internals/source-control-configuration-details.md)
+- [Détails de la configuration](../../extensibility/internals/source-control-configuration-details.md)
 
  Décrit comment la prise en charge du contrôle de code source modifie l’implémentation d’un type de projet.
 
@@ -43,7 +43,7 @@ ms.locfileid: "99892552"
 
  Décrit comment inscrire un projet lorsqu’un utilisateur l’ajoute à un système de contrôle de code source.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Informations de référence
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> Indique à l’environnement ou au package de contrôle de code source qu’un fichier va être modifié en mémoire ou enregistré.
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> Permet aux projets et aux hiérarchies de s’inscrire auprès du contrôle de code source et d’obtenir des informations sur l’état du contrôle de code source.

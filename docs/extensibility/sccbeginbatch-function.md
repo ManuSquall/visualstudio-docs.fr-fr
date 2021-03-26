@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b52b82919b10e58772343aee42cb8723b10d6ca3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5af4d8fb1d8524f16493603bb5d46ee4bdbd03ba
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221650"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060443"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch fonction)
 Cette fonction démarre une séquence de traitement par lots des opérations de contrôle de code source. Le [SccEndBatch](../extensibility/sccendbatch-function.md) sera appelé pour terminer le traitement. Ces lots ne peuvent pas être imbriqués.
@@ -35,7 +35,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>Valeur renvoyée
  L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|Valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Le traitement des opérations a commencé.|
 |SCC_E_UNKNOWNERROR|Échec non spécifique.|

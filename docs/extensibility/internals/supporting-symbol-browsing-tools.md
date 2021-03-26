@@ -15,17 +15,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377cdd9875ebc2fddd80c673e53ecb318d171e47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d54f56ae3bc5fd5956f67400d84edfd4c8c9e55c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875560"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080565"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Prise en charge des outils de consultation de symbole
 Les outils **Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et rechercher les **résultats de symboles** fournissent des fonctionnalités de navigation de symboles dans Visual Studio. Ces outils affichent des arborescences hiérarchiques de symboles et affichent les relations entre les symboles dans l’arborescence. Les symboles peuvent représenter des espaces de noms, des objets, des classes, des membres de classe et d’autres éléments de langage contenus dans différents composants. Les composants incluent les projets Visual Studio, les composants .NET Framework externes et les bibliothèques de types (. tlb). Pour plus d’informations, consultez [affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).
